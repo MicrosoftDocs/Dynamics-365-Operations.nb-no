@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781350"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060338"
 ---
 # <a name="party-and-global-address-book"></a>Part og global adressebok
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-*Part* og *global adressebok* er konsepter i Finance and Operations-programmer. En part kan være en organisasjon eller en person. Det er praktisk å lagre og administrere egenskapene til en part globalt, for eksempel navn, språk, kontakter og adresser. Når en egenskapsverdi endres ett sted, gjenspeiles den alle steder der parten er involvert.
+
+*Part* og *global adressebok* er konsepter i økonomi- og driftsapper. En part kan være en organisasjon eller en person. Det er praktisk å lagre og administrere egenskapene til en part globalt, for eksempel navn, språk, kontakter og adresser. Når en egenskapsverdi endres ett sted, gjenspeiles den alle steder der parten er involvert.
 
 ## <a name="party"></a>Part
 
@@ -46,7 +46,7 @@ Følgende bilde viser datamodellen for part.
 > [!TIP]
 > Når du prøver å opprette en ny kontopost, bruker du **Part** -feltet til å søke etter posten per navn. Hvis du finner posten, trenger du da bare å velge posten. Systemet fyller automatisk ut alle dataene fra parten. Du trenger ikke angi alle de nødvendige feltene manuelt. Du finner denne virkemåten på **Konto-**, **Kontakt-** og **Leverandør**-sidene som følger med.
 
-Ikke alle partsroller i Finance and Operations-apper støttes av dobbel skriving. Hvis du vil ha en fullstendig liste over partsroller, kan du se [Oversikt over global adressebok](../../../fin-ops/organization-administration/overview-global-address-book.md).
+Ikke alle partsroller i økonomi- og driftsapper støttes av dobbel skriving. Hvis du vil ha en fullstendig liste over partsroller, kan du se [Oversikt over global adressebok](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
 ### <a name="global-address-book"></a>Global adressebok
 
@@ -75,7 +75,7 @@ Det finnes to typer **Kontakt**-rader:
 |----------|-------------|
 | En person som er kunde (for eksempel en salgbar kontakt eller B2C-kunde) | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, og der **Er kunde**-feltet er angitt til **Ja**. |
 | En person som er leverandør (for eksempel en enkelt innehaver som leverandør) | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, og der **Er leverandør**-feltet er angitt til **Ja**. |
-| En person som er både en kunde og en leverandør | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, **Er kunde**-feltet er angit til **Ja** og **Er leverandør**-feltet er angitt til **Ja**. En person kan være både en produsent for ett produkt og en forbruker for et annet produkt. Både Finance and Operations-apper dobbel skriving støtter denne relasjonen. |
+| En person som er både en kunde og en leverandør | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, **Er kunde**-feltet er angit til **Ja** og **Er leverandør**-feltet er angitt til **Ja**. En person kan være både en produsent for ett produkt og en forbruker for et annet produkt. Både økonomi- og driftsapper og dobbel skriving støtter denne relasjonen. |
 | En person som er kontaktperson for en organisasjon, men ikke kunde eller leverandør | En ustripet kontaktoppføring der **Firma**-feltet er tomt, **Er kunde**-feltet er angitt til **Nei** og **Er leverandør**-feltet er angitt til **Nei**. |
 
 ## <a name="contact-for-party-table"></a>Kontakt for part-tabell
@@ -142,7 +142,7 @@ Du kan bruke **Ny elektronisk adresse**-knappen over rutenettet til å opprette 
 Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige versjoner blir alle felter for elektroniske adresser og postadresser fjernet fra andre faner, for eksempel fanene **Sammendrag** og **Detaljer**. Kontaktdetaljer som vises i kategorien **Detaljer**, er skrivebeskyttede kopier av den primære elektroniske adressen, som primærtelefon, primær-e-post, primærfaks og primær Twitter-ID. I løpet av kvalifiseringsprosessen kan du oppgi både et bedriftstelefonnummer og et mobiltelefonnummer. Forretningstelefonnummeret regnes som primær telefon hvis **IsMobile=Nei**, og mobiltelefonnummeret regnes som sekundær telefon hvis **IsMobile=Ja**.
 
 > [!TIP]
-> Bruk kategoriene **Adresser** og **Elektroniske adresser** på skjemaene **Konto** og **Kontakt** til å administrere post- og elektroniske adresser. Dette sikrer at adressedata synkroniseres med Finance and Operations-apper.
+> Bruk kategoriene **Adresser** og **Elektroniske adresser** på skjemaene **Konto** og **Kontakt** til å administrere post- og elektroniske adresser. Dette sikrer at adressedata synkroniseres med økonomi- og driftsapper.
 
 ## <a name="setup"></a>Installasjon
 
@@ -230,7 +230,7 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
 
 12. Kjør tilordningene i følgende rekkefølge. Hvis du får en feilmelding som angir at "prosjektvalidering mislyktes. Manglende målfelt...", åpner du kartet og velger **Oppdater tabeller**. Deretter kjører du kartet.
 
-    Finance and Operations-app | Kundeengasjementsapp  
+    Økonomi- og driftsapper | Kundeengasjementsapp  
     ----------------------------|------------------------
     [CDS-parter](mapping-reference.md#220) | msdyn_parties
     [Postadressesteder for CDS](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
 
 En samling tabelltilordninger fungerer sammen for samhandling mellom parter og den globale adresseboken, som vist i følgende tabell.
 
-| Finance and Operations-app | Kundeengasjementsapp | beskrivelse |
+| Økonomi- og driftsapper | Kundeengasjementsapp | Beskrivelse |
 |----------------------------|-------------------------|-------------|
 | [Kontaktpersontitler](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Kunder V3](mapping-reference.md#101) | kontoer |
@@ -295,10 +295,10 @@ Hvis du vil ha mer informasjon, kan du se [Referanse for lesetilgang til skrivet
 
 ## <a name="known-issues-and-limitations"></a>Kjente problemer og begrensninger
 
-+ Når du oppretter en kunde sammen med adresse og lagrer den i Finance and Operations-apper, kan det hende at adressen ikke synkroniseres med **Adresse**-tabellen. Dette skyldes et sekvenseringsproblem med plattform for dobbel skriving. Det er mulig å omgå dette ved å opprette kunden først og lagre den. Deretter legger du til adressen.
-+ Når en kundepost har en primæradresse i Finance and Operations-apper, og du oppretter en ny kontakt for denne kunden, arver kontaktposten en primæradresse fra den tilknyttede kundeposten. Dette skjer også for leverandørkontakten. Dataverse støtter for øyeblikket ikke denne virkemåten. Hvis dobbel skriving er aktivert, vil en kundekontakt som arves med en primæradresse fra Finance and Operations-appen, synkroniseres med Dataverse sammen med adressen.
++ Når du oppretter en kunde sammen med adresse og lagrer den i økonomi- og driftsapper, kan det hende at adressen ikke synkroniseres med **Adresse**-tabellen. Dette skyldes et sekvenseringsproblem med plattform for dobbel skriving. Det er mulig å omgå dette ved å opprette kunden først og lagre den. Deretter legger du til adressen.
++ Når en kundepost har en primæradresse i økonomi- og driftsapper, og du oppretter en ny kontakt for denne kunden, arver kontaktposten en primæradresse fra den tilknyttede kundeposten. Dette skjer også for leverandørkontakten. Dataverse støtter for øyeblikket ikke denne virkemåten. Hvis dobbel skriving er aktivert, vil en kundekontakt som arves med en primæradresse fra økonomi- og driftsappen, synkroniseres med Dataverse sammen med adressen.
 + Elektroniske adresser angitt i elektronisk adresse-fanen i **Konto**, **Kontakt** og **Leverandør**-skjemaer, kommer fra `msdyn_partyelectronicaddress`-tabellen. Denne informasjonen flyter ikke til de tilknyttede transaksjonene, for eksempel salgsordre, tilbud og bestilling. Vi planlegger å løse dette problemet i en trinnvis frigivelse. De eksisterende dataene i de elektroniske adressefeltene i konto- og kontaktpostene vil fortsatt fungere på transaksjoner som salgsordre, tilbud og bestilling.
-+ I Finance and Operations-apper kan du opprette en kontaktpost fra **Legg til kontakt**-skjemaet. Når du prøver å opprette en ny kontakt fra **Vis kontakt**-skjemaet, mislykkes handlingen. Dette er et kjent problem.
++ I økonomi- og driftsapper kan du opprette en kontaktpost fra **Legg til kontakt**-skjemaet. Når du prøver å opprette en ny kontakt fra **Vis kontakt**-skjemaet, mislykkes handlingen. Dette er et kjent problem.
 
     ![Kjent problem med Legg til kontakt.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ Hvis du vil ha mer informasjon, kan du se [Referanse for lesetilgang til skrivet
 
     ![Kjent problem med adresse.](media/party-gab-address-issue.png)
 
-+ Du kan ikke angi en fremtidig datert postadresse ved hjelp av en Finance and Operations-app med dobbel skriving, fordi Dataverse ikke støtter datoeffektivitet. Hvis du angir en fremtidig datert postadresse ved hjelp av en Finance and Operations-app, synkroniseres den til Dataverse fullt, og du ser adressen i brukergrensesnittet umiddelbart. Alle oppdateringer til denne posten vil føre til en feil når den er fremtidig datert og ikke gjeldende i Finance and Operations-appen.
++ Du kan ikke angi en fremtidig datert postadresse ved hjelp av en økonomi- og driftsapp med dobbel skriving, fordi Dataverse ikke støtter datogyldighet. Hvis du angir en fremtidig datert postadresse ved hjelp av en økonomi- og driftsapp, synkroniseres den fullstendig til Dataverse, og du ser adressen i brukergrensesnittet umiddelbart. Alle oppdateringer til denne posten vil føre til en feil når den er fremtidig datert og ikke gjeldende i økonomi- og driftsappen.

@@ -2,7 +2,7 @@
 title: Feilsøke konfigurasjonsproblemer for Finance Insights
 description: Dette emnet viser problemer som kan oppstå når du bruker Finance Insights-funksjoner. Det forklarer også hvordan du retter disse problemene.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968842"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064872"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Feilsøke konfigurasjonsproblemer for Finance Insights
 
@@ -92,3 +92,25 @@ Trinnene nedenfor bør være fullført.
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Feil: "Vi fant ingen data for det valgte filterområdet. Velg et annet filterområde, og prøv på nytt." 
+
+### <a name="resolution"></a>Oppløsning
+
+Kontroller oppsettet for dataintegratoren for å validere at det fungerer som forventet og oppdatere dataene fra AI Builder tilbake til Finance.  
+Hvis du vil ha mer informasjon, kan du se [Opprett et dataintegreringsprosjekt](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Symptom: Opplæring av kundebetalingsprognose mislyktes, og AI Builder-feilen fastslår: "Prognosen kan bare ha 2 distinkte resultatverdier for å lære opp modellen. Tilordne de to resultater og lær opp på nytt," "Opplæringsrapportproblem: IsNotMinRequiredDistinctNonNullValues".
+
+### <a name="resolution"></a>Oppløsning
+
+Denne feilen viser at det ikke er nok historiske transaksjoner i det siste året som representerer hver kategori som er beskrevet i kategoriene **Til planlagt tid**, **Forsinket** og **Svært sent**. Du kan løse denne feilen ved å justere transaksjonsperioden **Svært sent**. Hvis justering av transaksjonsperioden **Svært sent** ikke løser opp feilen, er ikke **Kundebetalingsforutsigelser** den beste løsningen å bruke, siden den trenger data i hver kategori til opplæringsformål.
+
+Hvis du vil ha mer informasjon om hvordan du justerer kategoriene **Til planlagt tid**, **Forsinket** og **Svært sent**, kan du se [Aktiver kundebetalingsprognoser](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Symptom: Modellopplæring mislyktes
+
+### <a name="resolution"></a>Oppløsning
+
+Modellopplæringen **Kontantstrømprognose** krever data som strekker seg over mer enn ett år og inneholder mer enn 100 transaksjoner. Disse transaksjonene må påvirke likviditetskontoer som er inkludert i kontantstrømprognoseoppsettet.
+
+**Kundebetalingsforutsigelser** krever minst 100 kundefaktura- og betalingstransaksjoner i de siste seks til ni månedene for å opprette forutsigelser.  

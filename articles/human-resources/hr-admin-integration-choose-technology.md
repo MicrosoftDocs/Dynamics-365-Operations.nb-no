@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414720"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065047"
 ---
 # <a name="choose-a-data-integration-technology"></a>Velg en dataintegreringsteknologi
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dette emnet inneholder informasjon om integrering med data som administreres av Dynamics 365 Human Resources. Den beskriver forskjellige typer integreringsteknologi som hjelper deg med å finne ut hvilke typer som passer best til dine behov.
 
@@ -68,7 +71,7 @@ Dataverse-tabeller og tilknyttede API-er er det beste alternativet for å få ti
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-enheter
 
-Human Resources, bygd primært på samme plattform som Finance and Operations-apper, fungerer som et [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kjent som DIXF (rammeverk for dataimport-/eksport). Human Resources inneholder et sett med dataenheter som du kan bruke til å importere og eksportere Human Resources-data. Dataverse-tabeller er det foretrukne grensesnittet for dataintegrering for Human Resources, men DMF-enhetene vil likevel være nyttige i enkelte tilfeller, for eksempel:
+Human Resources, bygd primært på samme plattform som økonomi- og driftsapper, fungerer som et [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kjent som DIXF (rammeverk for dataimport-/eksport). Human Resources inneholder et sett med dataenheter som du kan bruke til å importere og eksportere Human Resources-data. Dataverse-tabeller er det foretrukne grensesnittet for dataintegrering for Human Resources, men DMF-enhetene vil likevel være nyttige i enkelte tilfeller, for eksempel:
 
 - Dataverse-tabeller er ikke tilgjengelige ennå.
 
@@ -111,7 +114,7 @@ BYOD er egnet for rapportering av løsninger, dataintegreringer, datamashup, som
 
 ### <a name="odata-enabled-entities"></a>OData-aktiverte enheter
 
-De fleste DMF-enheter aktiveres også for tilgang via tjenesten for personaldata (OData). Dokumentasjonen som er angitt for [Finance and Operations OData-tjenesten](/dynamics365/unified-operations/dev-itpro/data-entities/odata), gjelder for Human Resources, bortsett fra oppretting av dine egne OData-eksponerte enheter.
+De fleste DMF-enheter aktiveres også for tilgang via tjenesten for personaldata (OData). Dokumentasjonen som er angitt for [OData-tjenesten for økonomi og drift](/dynamics365/unified-operations/dev-itpro/data-entities/odata), gjelder for Human Resources, bortsett fra oppretting av dine egne OData-eksponerte enheter.
 
 Selv om Dataverse og OData-implementeringen som leveres av Dataverse (via [Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))), foretrekkes over tjenesten Human Resourcesdata, har Human Resourcesdata i øyeblikket mer fullstendig enhetsdekning for personaldataene.
 

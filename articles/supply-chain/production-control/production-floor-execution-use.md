@@ -2,7 +2,7 @@
 title: Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 description: Dette emnet beskriver hvordan du bruker grensesnittet for produksjonsutførelse fra synspunktet til en arbeider.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920654"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075025"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -138,6 +138,65 @@ I dette tilfellet kan arbeideren angi koproduktet og antallet som skal rapporter
 Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere svinn som ble produsert ved å velge en jobb i fanen **Aktive jobber** og deretter velge **Rapportere svinn**. I dialogboksen **Rapportere svinn** angir arbeideren deretter svinnantall ved hjelp av det numeriske tastaturet. Arbeideren velger også en årsak (*ingen*, *maskin*, *operatør* eller *materiale*).
 
 ![Dialogboksen Rapportere svinn.](media/pfei-report-scrap-dialog.png "Dialogboksen Rapportere svinn")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Justere materialforbruk og foreta materialreserveringer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeidere kan justere materialforbruket for hver produksjonsjobb. Denne funksjonaliteten brukes i scenarioer der det faktiske antallet materialer som ble forbrukt av en produksjonsjobb, var mer eller mindre enn det planlagte antallet. Det må derfor justeres for å holde lagernivåene gjeldende.
+
+Arbeidere kan også reservere bunke- og serienumre for materialer. Denne funksjonaliteten brukes i scenarioer der en arbeider må angi hvilke materialparti- eller serienumre som ble forbrukt, for å oppfylle materialsporingskravene.
+
+Arbeidere kan angi antallet som skal justeres, ved å velge **Juster materiale**. Denne knappen er tilgjengelig på følgende steder:
+
+- I dialogboksen **Rapporter svinn**
+- I dialogboksen **Rapporter fremdrift**
+- På verktøylinjen til høyre
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Justere materialforbruk fra dialogboksene Rapporter svinn og Rapporter fremdrift
+
+Når en arbeider har angitt antallet som skal rapporteres i dialogboksen **Rapporter fremdrift** eller **Rapporter svinn**, blir knappen **Juster materiale** tilgjengelig. Når brukeren velger denne knappen, vises dialogboksen **Juster materiale**. Denne dialogboksen viser en liste over varene som ifølge planen skal forbrukes når antallet for gode varer eller svinn rapporteres for jobben.
+
+Listen i dialogboksen viser følgende informasjon:
+
+- **Produktnummer** – Produktstandarden og produktvarianten.
+- **Produktnavn** – Produktnavnet.
+- **Forslag** – Det estimerte antallet materialer som vil bli forbrukt når fremdrift eller svinn rapporteres for det angitte antallet for jobben.
+- **Forbruk** – Det faktiske antallet materialer som vil bli forbrukt når fremdrift eller svinn rapporteres for det angitte antallet for jobben.
+- **Reservert** – Antall materialer som er fysisk reservert på lager.
+- **Enhet** – Stykklisteenheten (BOM).
+
+Høyre side i dialogboksen viser følgende informasjon:
+
+- **Produktnummer** – Produktstandarden og produktvarianten.
+- **Estimert** – Det estimerte antallet som skal forbrukes.
+- **Startet** – Antallet som er startet på produksjonsjobben.
+- **Restantall** – Av det estimerte antallet, antallet som gjenstår å forbrukes.
+- **Frigitt antall** – Antallet som er forbrukt.
+
+Følgende handlinger kan utføres:
+
+- Arbeideren kan angi antallet som skal justeres for et materiale, ved å velge **Juster forbru**. Når antallet er bekreftet, oppdateres antallet i **Forbruk**-kolonnen med det justerte antallet.
+- Når arbeideren velger **Juster materiale**, opprettes det en plukklistejournal for produksjon. Denne journalen inneholder de samme varene og antallene som listen **Juster materiale**.
+- Når arbeideren justerer et antall i dialogboksen **Juster materiale**, oppdateres **Forslag**-feltet på den tilhørende journallinjen med det samme antallet. Hvis arbeideren velger **Avbryt** i dialogboksen **Juster materiale**, slettes plukklisten.
+- Hvis arbeideren velger **OK**, slettes ikke plukklisten. Den posteres når jobben rapporteres i dialogboksen **Rapporter svinn** eller **Rapport fremdrift**.
+- Hvis arbeideren velger **Avbryt** i dialogboksen **Rapporter fremdrift** eller **Rapporter svinn**, slettes plukklisten.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Justere materiale fra verktøylinjen til høyre
+
+Knappen **Juster materiale** kan konfigureres slik at den vises på verktøylinjen til høyre. (Hvis du vil ha mer informasjon, kan du se [Utforme grensesnittet for produksjonsutførelse](production-floor-execution-tabs.md).) En arbeider kan velge **Juster materiale** for en produksjonsjobb som pågår. I dette tilfellet vises dialogboksen **Juster materiale**, der arbeideren kan foreta de ønskede justeringene. Når dialogboksen åpnes, opprettes det en produksjonsplukkliste som inneholder linjer for de justerte antallene for produksjonsordren. Hvis arbeideren velger **Poster nå**, bekreftes justeringen og plukklisten posteres. Hvis arbeideren velger **Avbryt nå**, slettes plukklisten, og ingen justering foretas.
+
+### <a name="reserve-materials"></a>Reserver materialer
+
+I dialogboksen **Juster materiale** kan en arbeider utføre og justere materialreserveringer ved å velge **Reserver materiale**. Dialogboksen **Reserver materiale** som vises, viser den fysisk tilgjengelige beholdningen for varen for hver lagrings- og sporingsdimensjon.
+
+Hvis materialet er aktivert for de avanserte lagerprosessene, viser listen bare den fysisk tilgjengelige beholdningen for produksjonsinngangsstedet for materialet. Produksjonsinngangsstedet er definert på ressursen der produksjonsjobben er planlagt. Hvis varenummeret er parti- eller serienummerkontrollert, vises den fullstendige listen over fysisk tilgjengelige bunke- og serienumre. Når du skal angi et antall som skal reserveres, kan du velge **Reserver materiale**. Hvis du vil fjerne en eksisterende reservasjon, kan du velge **Fjern reservasjon**.
+
+Hvis du vil ha mer informasjon om hvordan du definerer produksjonsinngangsstedet, kan du se følgende blogginnlegg: [Oppsett av produksjonsinngangsstedet](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Reservasjoner som en arbeider foretar i dialogboksen **Reserver materiale**, blir værende når arbeideren velger **Avbryt** i dialogboksen **Rapporter fremdrift** eller **Rapporter svinn**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Fullføre en jobb og starte en ny jobb
 

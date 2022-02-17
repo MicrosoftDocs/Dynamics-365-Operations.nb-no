@@ -1,5 +1,5 @@
 ---
-title: Konfigurere hjelpeopplevelsen for Finance and Operations-apper
+title: Konfigurere hjelpeopplevelsen for økonomi- og driftsapper
 description: Dette emnet inneholder informasjon om komponentene i hjelpesystemet for noen Microsoft Dynamics 365-apper.
 author: margoc
 ms.date: 08/11/2021
@@ -15,22 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594863"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071014"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjelpeopplevelsen for Finance and Operations-apper
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjelpeopplevelsen for økonomi- og driftsapper
 
 [!include [banner](../includes/banner.md)]
 
-I dette emnet vil du finne en oversikt over komponentene i hjelpesystemet for Finance and Operations-apper, for eksempel Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Emnet forklarer også hvordan du kobler disse komponentene og gir et sammendrag av prosessen med å opprette tilpasset hjelp.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+I dette emnet vil du finne en oversikt over komponentene i hjelpesystemet for økonomi- og driftsapper, for eksempel Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources. Emnet forklarer også hvordan du kobler disse komponentene og gir et sammendrag av prosessen med å opprette tilpasset hjelp.
 
 ## <a name="help-architecture"></a>Hjelpearkitektur
 
-Finance and Operations-apper omfatter begrepsmessige oversikter og andre emner som publiseres til nettstedet for [Microsoft Dynamics 365-dokumentasjon](/dynamics365/). Du får tilgang til dette innholdet fra **Hjelp**-ruten i produktet. Illustrasjonen nedenfor viser delene av hjelpesystemet.
+Økonomi- og driftsapper omfatter begrepsmessige oversikter og andre emner som publiseres til nettstedet for [Microsoft Dynamics 365-dokumentasjon](/dynamics365/). Du får tilgang til dette innholdet fra **Hjelp**-ruten i produktet. Illustrasjonen nedenfor viser delene av hjelpesystemet.
 
 [![Hjelpearkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -60,7 +63,7 @@ Hvis du vil konfigurere oppgavelinjer for en løsning, følger du denne fremgang
 2. Velg BPM-bibliotekene (i det valgte prosjektet) du vil hente oppgaveregistreringer fra.
 3. Angi visningsrekkefølge for BPM-bibliotekene. Visningsrekkefølgen definerer hvilken rekkefølge oppgaveregistreringer fra bibliotekene skal vises i, i **Hjelp**-ruten.
 
-Etter at du har fullført disse trinnene, kan du åpne **Hjelp**-ruten og velge fanen **Oppgaveveiledninger**. Du ser nå oppgaveveiledningene som gjelder for siden du er på i Finance and Operations-apper. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket.
+Når du har fullført disse trinnene, kan du åpne **Hjelp**-vinduet og velge **Oppgaveveiledning**-fanen. Du ser nå oppgavelinjene som gjelder for siden du er på for øyeblikket i økonomi- og driftsapper. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket.
 
 ### <a name="showing-translated-task-guides"></a>Vise oversatte oppgaveveiledninger
 
@@ -84,7 +87,7 @@ Hvis du er partner og du hever nivået for et bibliotek til et firmabibliotek og
 
 ### <a name="connect-a-custom-help-site"></a>Koble til et tilpasset hjelpeområde
 
-Finance and Operations-apper blir sjelden brukt i sin bruksklare form. Løsningen er i stedet tilpasset og utvidet for å tilpasses organisasjonens behov. Du kan også tilpasse og utvide hjelpeopplevelsen. Du kan for eksempel legge til tilpasset hjelp i **Hjelp**-ruten i produktet.
+Økonomi- og driftsapper blir sjelden brukt i sin bruksklare form. Løsningen er i stedet tilpasset og utvidet for å tilpasses organisasjonens behov. Du kan også tilpasse og utvide hjelpeopplevelsen. Du kan for eksempel legge til tilpasset hjelp i **Hjelp**-ruten i produktet.
 
 Microsoft tilbyr et verktøysett som hjelper deg med å distribuere og koble til tilpasset i **Hjelp**-ruten. Hvis du vil ha informasjon om hvordan du kan sette opp en tilpasset hjelpløsning som er koblet til **Hjelp**-ruten, kan du se [Oversikt over tilpasset hjelp](../../dev-itpro/help/custom-help-overview.md).
 

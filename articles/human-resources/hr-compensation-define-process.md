@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 883948c6e3f7b205d7e0f1f2b6adef1173616dc1
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 188a87f580c274e073710601ef306139f723c797
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431131"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071534"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definer kompensasjonsprosess og beregn resultater
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -40,13 +43,13 @@ Kompensasjonsprosesser brukes til å fastslå nye kompensasjonsbeløp og -bonuse
     * Aktiveringsdatoen for transaksjonen er datoen de nye kompensasjonssatsene skal tre i kraft. Mange firmaer inkluderer noen måneder mellom slutten på en syklus og tidspunktet de nye kompensasjonssatsene trer i kraft. Den ekstra tiden brukes til å behandle og gjennomgå den nye kompensasjonen.  
 8. Angi en dato i feltet **Aktiveringsdato for transaksjon**.
     * Tidspunktdatoen brukes for variable kompensasjonsplaner som bestemmer den ansattes belønningsbeløp basert på kompensasjonssatsen til den ansatte på dette tidspunktet.  
-    * Den faste lønnen for klassifisert ansettelsesdato brukes med faste kompensasjonsplaner med en ansettelsesregel med prosent.  Ansatte som er ansatt mellom syklusens startdato og den klassifiserte ansettelsesdatoen for fast lønn får 100 % av den beregnede kompensasjonsøkningen i stedet for klassifisert prosent.  
+    * Den faste lønnen for klassifisert ansettelsesdato brukes med faste kompensasjonsplaner med en ansettelsesregel med **prosent**. Ansatte som er ansatt mellom syklusens startdato og den klassifiserte ansettelsesdatoen for fast lønn får 100 % av den beregnede kompensasjonsøkningen i stedet for klassifisert prosent.  
 9. Angi en dato i feltet **Fast lønn for klassifisert ansettelsesdato**.
     * Tidsfristen for gjennomgang er datoen da alle prosessresultater må være gjennomgått, slik at de kan lastes inn i den ansattes kompensasjonspost før aktiveringsdatoen for transaksjonen. Dette feltet er kun veiledende.  
 10. Angi en dato i feltet **Tidsfrist for gjennomgang**.
 11. Klikk på **Lagre**.
 
-## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a>Konfigurere kompensasjonsplanene og -handlingene for en kompensasjonsprosess
+## <a name="set-up-the-compensation-plans-and-actions-for-a-compensation-process"></a>Konfigurere kompensasjonsplanene og -handlingene for en kompensasjonsprosess
 1. Klikk på **Oppsett**.
     * **Oppsett**-siden brukes til å velge hvilke planer som skal behandles i denne kompensasjonsprosessen, og hvilke handlinger som skal utføres mot hver plan.  
 2. Angi eller velg en verdi i **Plan**-feltet.
@@ -56,7 +59,7 @@ Kompensasjonsprosesser brukes til å fastslå nye kompensasjonsbeløp og -bonuse
 6. Klikk på **Legg til**.
 7. Velg en handlingstype for **personlig tillegg** i **Handling**-feltet.
     * Kompensasjonshandlinger kan kjedes sammen ved hjelp av feltet **Bruk forrige resultat** for å angi om den valgte handlingen skal bruke grunnlønnen til den ansatte eller resultatet av forrige handling som utgangspunkt for handlingens beregning.  
-8. Velg **Ja** i feltet Bruk forrige resultat.
+8. Velg **Ja** i feltet **Bruk forrige resultat**.
 9. Klikk på **Legg til**.
 10. Velg en **generell** handlingstype i **Handling**-feltet.
     * Forskjellige kompensasjonshandlingstyper aktiverer forskjellige felt. For en generell kompensasjonshandlingstype kan en økningsprosent eller et økningsbeløp angis.  
@@ -85,7 +88,7 @@ Kompensasjonsprosesser brukes til å fastslå nye kompensasjonsbeløp og -bonuse
 1. Klikk **Prosessresultater**.
 2. Klikk **Ansattresultater**.
 3. Finn og velg ønsket post i listen.
-4. Utvid delen for fast kompensasjon.
+4. Utvid delen for **fast kompensasjon**.
     * Utvid hurtigfanene for å vise resultatene av prosessen. Hvis **Aktiver anbefalinger** ble avmerket for en kompensasjonshandling, aktiveres **Anbefaling**-feltene for denne handlingen.  
 5. Finn og velg ønsket post i listen.
     * Resultatene for én enkelt ansatt kan vises ved å klikke **Vis resultater**.  

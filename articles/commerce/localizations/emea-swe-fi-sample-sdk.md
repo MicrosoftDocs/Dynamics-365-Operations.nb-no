@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c0e301305fb0d99ab2f8c811f9f560bc5008e02b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944896"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077044"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Distribusjonsretningslinjer for eksempel på kontrollenhetsintegrering for Sverige (eldre)
 
@@ -193,7 +193,7 @@ Formålet med filtypen som er en regnskapsdokumentleverandør, er å generere se
 
 CRT-utvidelsen er **Runtime.Extensions.DocumentProvider.CleanCashSample**.
 
-Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Bilagsregistreringsprosess og regnskapsintegreringeseksempler for regnskapsenheter](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Bilagsregistreringsprosess og regnskapsintegreringeseksempler for regnskapsenheter og -tjenester](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Forespørselsbehandler
 

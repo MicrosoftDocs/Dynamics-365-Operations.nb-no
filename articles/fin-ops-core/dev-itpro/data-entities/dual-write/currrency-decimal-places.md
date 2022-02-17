@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
-ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
+ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "7917736"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061842"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutadatatype for dobbelt skriving
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Du kan øke antallet desimaler som støttes for valutaverdier, til maksimalt 10. Standardgrensen er fire desimalplasser. Hvis du øker antallet desimaler, bidrar du til å hindre tap av data når du bruker toveisskriving for å synkronisere data. Økningen i antall desimalplasser er en endring som velges. Hvis du vil implementere den, må du be om hjelp fra Microsoft.
 
@@ -29,7 +29,7 @@ Prosessen med å endre antall desimaler har to trinn:
 1. Be om migrering fra Microsoft.
 2. Endre antall desimaler i Dataverse.
 
-Finance and Operations-appen og Dataverse må støtte samme antall desimalplasser i valutaverdier. Ellers kan det oppstå tap av data når denne informasjonen synkroniseres mellom apper. Migreringsprosessen konfigurerer måten valuta og valutakursverdier lagres på, på nytt, men den endrer ikke data. Når migreringen er fullført, kan antall desimaler for valutakoder og prissetting økes, og dataene som brukere legger inn og viser, kan ha større desimalpresisjon.
+Økonomi- og driftsappen og Dataverse må støtte samme antall desimalplasser i valutaverdier. Ellers kan det oppstå tap av data når denne informasjonen synkroniseres mellom apper. Migreringsprosessen konfigurerer måten valuta og valutakursverdier lagres på, på nytt, men den endrer ikke data. Når migreringen er fullført, kan antall desimaler for valutakoder og prissetting økes, og dataene som brukere legger inn og viser, kan ha større desimalpresisjon.
 
 Migreringen er valgfri. Hvis du kan dra nytte av støtte for flere desimaler, anbefaler vi at du vurderer migreringen. Organisasjoner som ikke krever verdier som har mer enn fire desimalplasser, trenger ikke å migrere.
 
@@ -37,7 +37,7 @@ Migreringen er valgfri. Hvis du kan dra nytte av støtte for flere desimaler, an
 
 Lagring for eksisterende valutakolonner i Dataverse kan ikke støtte flere enn fire desimalplasser. I løpet av migreringsprosessen kopieres derfor valutaverdier til nye interne kolonner i databasen. Denne prosessen skjer kontinuerlig til alle data er migrert. Internt, på slutten av migreringen, erstatter de nye lagringstypene de gamle lagringstypene, men dataverdiene er uendret. Valutakolonnene kan da støtte opptil 10 desimalplasser. Under migreringsprosessen kan Dataverse fortsatt brukes uten avbrudd.
 
-Samtidig endres valutakursene, slik at de støtter opptil 12 desimalplasser i stedet for den gjeldende grensen på 10. Denne endringen er nødvendig, slik at antall desimaler er det samme i både Finance and Operations-appen og Dataverse.
+Samtidig endres valutakursene, slik at de støtter opptil 12 desimalplasser i stedet for den gjeldende grensen på 10. Denne endringen er obligatorisk, slik at antall desimaler er det samme i både økonomi- og driftsappen og Dataverse.
 
 Migreringen endrer ikke data. Når kolonnene for valuta og valutakurs er konvertert, kan administratorer konfigurere systemet til å bruke opptil 10 desimaler for valutakolonner ved å angi antall desimalplasser for hver transaksjonsvaluta og for prissetting.
 

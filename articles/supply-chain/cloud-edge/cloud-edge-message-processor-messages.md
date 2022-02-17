@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471650"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069435"
 ---
 # <a name="message-processor-messages"></a>Meldinger for meldingsprosessor
 
@@ -29,7 +29,7 @@ ms.locfileid: "7471650"
 
 Meldinger for meldingsprosessoren brukes når du kjører skalaenheter for sky og kant for [produksjonsarbeidsmengder](cloud-edge-workload-manufacturing.md) og [lagerstyringsarbeidsbelastninger](cloud-edge-workload-warehousing.md).
 
-En stor datamengde utveksles mellom distribusjonsmiljøene for skalering og vektenhet for å holde dem synkronisert, men bare noen få av disse datautvekslingene behandles av *meldingsprosessoren*. Du kan vise meldingene som behandles av meldingsbehandleren, ved å gå til **Systemadministrasjon > Meldingsprosessor > Meldinger for meldingsprosessor**.
+Distribusjonsmiljøer for senter og skalaenheter utveksler en stor mengde data for å holde seg synkronisert. Noen av de utvekslede dataene vil utløse tilleggslogikk i *meldingsprosessoren*. Du kan vise meldingene som har blitt behandlet av meldingsprosessoren, ved å gå til **Systemadministrasjon > Meldingsprosessor > Meldinger for meldingsprosessor**.
 
 ## <a name="message-grid-columns-and-filters"></a>Meldingsrutenettkolonner og -filtre
 

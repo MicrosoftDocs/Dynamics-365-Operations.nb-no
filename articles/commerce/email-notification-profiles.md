@@ -2,7 +2,7 @@
 title: Definere en profil for e-postvarsling
 description: Dette emnet beskriver hvordan du oppretter en e-postvarslingsprofil i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 02/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a92c21a93766e6583882f50222837366ed4c9a24c2bbfd93933763bd4ffa46bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a7d796a173a6f9dfcd62e1f73e078cac614145e
+ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771037"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8087873"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Definere en profil for e-postvarsling
 
@@ -27,7 +27,7 @@ ms.locfileid: "6771037"
 
 Dette emnet beskriver hvordan du oppretter en e-postvarslingsprofil i Microsoft Dynamics 365 Commerce.
 
-Når du oppretter kanaler, kan du definere en e-postvarslingsprofil. På den måten kan e-postmeldinger sendes til kunder for ulike transaksjonshendelser, for eksempel opprettelse av ordre, forsendelsesstatus og betalingsfeil.
+Når du oppretter kanaler, kan du definere en e-postvarslingsprofil. Profilen for e-postvarsling definerer hendelsene i en salgstransaksjon (for eksempel ordre opprettet, ordre pakket og ordre fakturert) som du sender meldinger til kundene for. 
 
 Hvis du vil ha ytterligere informasjon om e-postkonfigurasjon, kan du se [Konfigurere og sende e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -43,7 +43,7 @@ Hvis du vil opprette en e-postvarslingsprofil, følger du disse trinnene.
 
 ### <a name="create-an-email-template"></a>Opprett en e-postmal
 
-Før en e-postvarslingstype kan aktiveres, må du opprette en e-postmal for organisasjonen i Commerce Headquarters. Denne malen definerer e-postemnet, avsenderen, standardspråket og e-postteksten for hvert språk du vil støtte.
+Før en e-postvarslingstype kan aktiveres, må du opprette en e-postmal for organisasjonen i Commerce Headquarters for hver varslingstype du vil støtte. Denne malen definerer e-postemnet, avsenderen, standardspråket og e-postteksten for hvert støttede språk.
 
 Hvis du vil opprette en e-postmal, følger du disse trinnene.
 
@@ -61,6 +61,8 @@ Bildet nedenfor viser noen eksempelinnstillinger for e-postmal.
 
 ![Innstillinger for e-postmal.](media/email-template.png)
 
+Hvis du vil ha mer informasjon om oppretting av e-postmaler, kan du se [Opprett e-postmaler for transaksjonshendelser](email-templates-transactions.md). 
+
 ### <a name="create-an-email-event"></a>Opprette en e-posthendelse
 
 Hvis du vil opprette en e-posthendelse, følger du disse trinnene.
@@ -76,10 +78,12 @@ Bildet nedenfor viser noen eksempelinnstillinger for hendelsesvarsling.
 
 ![Innstillinger for hendelsesvarsling.](media/email-notification-profile.png)
 
+> [!NOTE]
+> Den kundeopprettede varslingstypen krever at det implementeres en tilpasning før det kan sendes en e-postvarsling.
+
 ### <a name="next-steps"></a>Neste trinn
 
 Før du kan sende e-post, må du konfigurere tjenesten for utgående e-post og sette opp en satsvis jobb. Hvis du vil ha mer informasjon, kan du se [Konfigurere og sende e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -2,7 +2,7 @@
 title: Konfigurasjon for Finance Insights
 description: Dette emnet forklarer konfigurasjonstrinnene som gjør at systemet kan bruke funksjonene i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/19/2021
+ms.date: 01/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
-ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "7827034"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051376"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurasjon for Finance Insights
 
@@ -100,6 +100,9 @@ Når tillegget er installert, kan det ta opptil en time før du kan aktivere Fin
 
    Når prosessen **Statuskontroll for klargjøring av innsikt** er kjørt, kan du aktivere Finance Insights-funksjoner i arbeidsområdet **Funksjonsbehandling**.
 
+> [!NOTE]
+> Hvis prosessen **Statuskontroll for klargjøring av innsikt** ikke kjører, går du til **Systemadministrasjon** > **Forespørsler** > **Satsvise jobber**. I feltet **Avspørringssystem for prosessautomatisering** endrer du verdien til **Venter** for å starte prosessen. 
+> 
 ## <a name="feedback-and-support"></a>Tilbakemelding og støtte
 
 Hvis du er interessert i å gi tilbakemelding eller trenger kundestøtte, kan du sende en e-postmelding til [Finance Insights (forhåndsversjon)](mailto:fiap@microsoft.com).

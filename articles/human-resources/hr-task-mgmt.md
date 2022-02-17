@@ -15,14 +15,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 614f37236bbd0239925e37ebf29f59ac006d09cd
-ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
+ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "7948796"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087223"
 ---
 # <a name="task-management"></a>Oppgavebehandling
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 Ved hjelp av oppgavebehandling kan du opprette oppgaver som må fullføres for å ansette person (pålasting), avslutte ansettelse (avlasting) og overføre ansatt (overganger). Oppgavebehandling bruker sjekklistekonseptet. En sjekkliste er en liste over pålastings-, avlastings- og overgangsoppgaver. Oppgavebehandling bruker sjekklister til å gruppere oppgaver sammen, og til å tilordne dem til enkeltpersoner eller grupper. Sjekklistefunksjonaliteten for pålasting, avlasting og overganger ligner hverandre.
 

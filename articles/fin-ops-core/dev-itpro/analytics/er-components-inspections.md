@@ -2,7 +2,7 @@
 title: Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 description: Dette emnet forklarer hvordan du undersøker de konfigurerte komponentene for elektronisk rapportering (ER) for å forhindre kjøretidsproblemer som kan oppstå.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488120"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074797"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 
 [!include[banner](../includes/banner.md)]
 
-Alle konfigurerte komponenter i [ER-](general-electronic-reporting.md)[format](general-electronic-reporting.md#FormatComponentOutbound) og [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components) kan [valideres](er-fillable-excel.md#validate-an-er-format) på utformingstidspunktet. Under denne valideringen kjører en konsekvenskontroll for å forhindre kjøretidsproblemer som kan oppstå, for eksempel kjøringsfeil og ytelsesreduksjon. For hvert problem som blir funnet, vises banen til et problemelement. For enkelte problemer er en automatisk reparasjon tilgjengelig.
+Alle konfigurerte komponenter i [ER-](general-electronic-reporting.md)[format](er-overview-components.md#format-components-for-outgoing-electronic-documents) og [modelltilordning](er-overview-components.md#model-mapping-component) kan [valideres](er-fillable-excel.md#validate-an-er-format) på utformingstidspunktet. Under denne valideringen kjører en konsekvenskontroll for å forhindre kjøretidsproblemer som kan oppstå, for eksempel kjøringsfeil og ytelsesreduksjon. For hvert problem som blir funnet, vises banen til et problemelement. For enkelte problemer er en automatisk reparasjon tilgjengelig.
 
 Som standard brukes valideringen automatisk i følgende tilfeller for en ER-konfigurasjon som inneholder de tidligere nevnte ER-komponentene:
 
@@ -236,6 +236,15 @@ Tabellen nedenfor gir en oversikt over inspeksjonene som ER gir. Hvis du vil ha 
 <td>Feil</td>
 <td>Det er mer enn to områdekomponenter uten replikering. Fjern unødvendige komponenter.</td>
 </tr>
+<tr>
+<td><a href='#i18'>Utføring av et uttrykk med ORDERBY-funksjon</a></td>
+<td>Kjøring</td>
+<td>Feil</td>
+<td>
+<p>Listeuttrykket for ORDERBY-funksjonen kan ikke spørres.</p>
+<p><b>Kjøretidsfeil:</b> Sortering støttes ikke. Valider konfigurasjonen for å få flere detaljer om dette.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -365,7 +374,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 8. Gi det nye nestede feltet navnet **$AccNumber**, og konfigurer det, slik at det inneholder uttrykket `TRIM(Vendor.AccountNum)`.
 9. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at `FILTER(Vendor, Vendor.AccountNum="US-101")`-uttrykket i **Leverandør**-datakilden kan spørres.
 
-    ![Verifisering av uttrykket kan spørres på siden Modelltilordningsutforming.](./media/er-components-inspections-04.gif)
+    ![Verifisering av uttrykket som har FILTER-funksjonen, kan spørres på siden Modelltilordningsutforming.](./media/er-components-inspections-04.gif)
 
 10. Legg merke til at det oppstår en valideringsfeil, fordi **Leverandør**-datakilden inneholder et nestet felt av typen **Beregnet felt** som ikke tillater at uttrykket for datakilden **FilteredVendor** oversettes til den direkte SQL-setningen.
 
@@ -671,19 +680,19 @@ Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer adv
 
 ![Kjøretidsfeil som oppstår under formattilordningskjøring på siden Formatutforming.](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution&quot;></a>Automatisk løsning
+### <a name="automatic-resolution"></a>Automatisk løsning
 
 Ingen alternativer for automatisk korrigering av dette problemet er tilgjengelig.
 
-### <a name=&quot;manual-resolution&quot;></a>Manuell løsing
+### <a name="manual-resolution"></a>Manuell løsing
 
-#### <a name=&quot;option-1&quot;></a>Alternativ 1
+#### <a name="option-1"></a>Alternativ 1
 
 Fjern **Buffer**-flagget fra **Leverandør**-datakilden. Datakilden **FilteredVendor** vil deretter bli kjørbar, men **Leverandør**-datakilden som det refereres til i tabellen VendTable, vil bli brukt hver gang **FilteredVendor**-dsatakilden kalles.
 
-#### <a name=&quot;option-2&quot;></a>Alternativ 2
+#### <a name="option-2"></a>Alternativ 2
 
-Endre uttrykket for **FilteredVendor**-datakilden fra `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfellet vil datakilden **Leverandør** som det henvises til i tabellen VendTable, bare brukes i det første kallet til **Leverandør**-datakilden. Valget av poster vil imidlertid bli utført i minnet. Derfor kan denne fremgangsmåten føre til dårlig ytelse.
+Endre uttrykket for **FilteredVendor**-datakilden fra `FILTER(Vendor, Vendor.AccountNum="US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfellet vil datakilden **Leverandør** som det henvises til i tabellen VendTable, bare brukes i det første kallet til **Leverandør**-datakilden. Valget av poster vil imidlertid bli utført i minnet. Derfor kan denne fremgangsmåten føre til dårlig ytelse.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Manglende binding
 
@@ -892,6 +901,47 @@ Ingen alternativer for automatisk korrigering av dette problemet er tilgjengelig
 #### <a name="option-1"></a>Alternativ 1
 
 Endre det konfigurerte formatet ved å endre egenskapen **Replikeringsretning** for alle inkonsekvente **Excel\\-område**-komponenter.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a>Utføring av et uttrykk med ORDERBY-funksjon
+
+Den innebygde [ORDERBY](er-functions-list-orderby.md) ER-funksjonen brukes til å sortere postene for en ER-datakilde for typen **[Postliste](er-formula-supported-data-types-composite.md#record-list)** som er angitt som et argument for funksjonen.
+
+Argumenter for `ORDERBY`-funksjonen kan [angis](er-functions-list-orderby.md#syntax-2) til å sortere poster for apptabeller, visninger eller dataenheter ved å plassere ett enkelt databasekall for å hente de sorterte dataene som en liste over poster. En datakilde for **Postliste**-typen brukes som et argument av funksjonen, og angir appkilden for kallet.
+
+ER kontrollerer om en direkte databasespørring kan opprettes til en datakilde som det refereres til i `ORDERBY`-funksjonen. Hvis en direktespørring ikke kan opprettes, oppstår det en valideringsfeil i ER-modelltilordningsutforming. Meldingen du mottar, sier at ER-uttrykket som inneholder funksjonen `ORDERBY`, ikke kan kjøres under kjøring.
+
+Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
+
+1. Start med å konfigurere ER-modelltilordningskomponenten.
+2. Legg til en datakilde av typen **Dynamics 365 for Operations \\ Tabellposter**.
+3. Gi den nye datakilden navnet **Leverandør**. I **Table**-feltet velger du **VendTable** for å angi at denne datakilden skal be om tabellen **VendTable**.
+4. Legg til en datakilde av typen **Beregnet felt**.
+5. Gi den nye datakilden navnet **OrderedVendors**, og konfigurer den slik at den inneholder uttrykket `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+ 
+    ![Konfigurer datakildene på siden Modelltilordningsutforming.](./media/er-components-inspections-18-1.png)
+
+6. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at uttrykket i **OrderedVendors**-datakilden kan spørres.
+7. Endre **Leverandør**-datakilden ved å legge til et nestet felt av typen **Beregnet felt** for å hente det relevante leverandørkontonummeret.
+8. Gi det nye nestede feltet navnet **$AccNumber**, og konfigurer det, slik at det inneholder uttrykket `TRIM(Vendor.AccountNum)`.
+9. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at uttrykket i **Leverandør**-datakilden kan spørres.
+
+    ![Verifisering av at uttrykket i leverandørdatakilden kan spørres på siden Modelltilordningsutforming.](./media/er-components-inspections-18-2.png)
+
+10. Legg merke til at det oppstår en valideringsfeil, fordi **Leverandør**-datakilden inneholder et nestet felt av typen **Beregnet felt** som ikke tillater at uttrykket for datakilden **OrderedVendors** oversettes til den direkte databasesetningen. Den samme feilen skjer ved kjøretid hvis du ignorerer valideringsfeilen og velger **Kjør** for å kjøre denne modelltilordningen.
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Ingen alternativer for automatisk korrigering av dette problemet er tilgjengelig.
+
+### <a name="manual-resolution"></a>Manuell løsing
+
+#### <a name="option-1"></a>Alternativ 1
+
+I stedet for å legge til et nestet felt av typen **Beregnet felt** i datakilden **Leverandør** legger du til det nestede feltet **$AccNumber** i datakilden **FilteredVendors** og konfigurerer feltet, slik at det inneholder uttrykket `TRIM(FilteredVendor.AccountNum)`. På denne måten kan uttrykket `ORDERBY("Query", Vendor, Vendor.AccountNum)` kjøres på databasenivå, og beregnningen av det nestede feltet **$AccNumber** kan utføres etterpå.
+
+#### <a name="option-2"></a>Alternativ 2
+
+Endre uttrykket for **FilteredVendors**-datakilden fra `ORDERBY("Query", Vendor, Vendor.AccountNum)` til `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Vi ikke anbefaler at du endrer uttrykket for en tabell som har et stort datavolum (transaksjonstabell), fordi alle postene vil bli hentet, og sorteringen av nødvendige poster vil bli utført i minnet. Derfor kan denne fremgangsmåten føre til dårlig ytelse.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

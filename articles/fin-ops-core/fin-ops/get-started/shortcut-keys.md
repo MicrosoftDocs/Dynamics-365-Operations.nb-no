@@ -1,6 +1,6 @@
 ---
 title: Hurtigtaster
-description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med Finance and Operations-apper.
+description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
 author: jasongre
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913524"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070989"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
 [!include [banner](../includes/banner.md)]
 
-Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effektivt i Finance and Operations-apper.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effektivt i økonomi- og driftsapper.
 
 > [!NOTE]
 > Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.

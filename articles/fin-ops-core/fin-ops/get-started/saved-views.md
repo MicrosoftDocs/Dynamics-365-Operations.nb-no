@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: d6a7b1b21816db43a92364584e15ec04b891c611
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487847"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065712"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="introduction"></a>Innledning
 
@@ -212,7 +215,7 @@ Hvis du vil ha en liste over kjente problemer med lagrede visninger, kan du se [
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan aktiverer jeg lagrede visninger i miljøet?
 
 > [!NOTE]
-> Funksjonen **Lagrede visninger** krever at tilpassingssystemet i Finance and Operations er aktivert. Hvis tilpassing er deaktivert for hele miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten nedenfor. 
+> Funksjonen **Lagrede visninger** krever at tilpassingssystemet i økonomi og drift er aktivert. Hvis tilpassing er deaktivert for hele miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten nedenfor. 
 
 Du kan aktivere og deaktivere funksjonen **Lagrede visninger** via Funksjonsbehandling i alle miljøer. Etter at den er aktivert, aktiveres lagrede visninger i alle påfølgende brukerøkter.
 

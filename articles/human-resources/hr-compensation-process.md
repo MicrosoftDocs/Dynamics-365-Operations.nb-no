@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 413143afb578aed29ce0836aaa3ac98ffc0c6cc3
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484102"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071582"
 ---
 # <a name="process-compensation"></a>Behandle kompensasjon
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,10 +44,10 @@ Når du har lagret parameterne for prosesshendelsen, kan du klikke **Oppsett** f
 
 Klikk **Legg til**-knappen i **Planer**-kategorien for å legge til en kompensasjonsplan i prosesshendelsen. Kolonnene **Bruk annen utnyttelse**, **Utnyttelsesfaktor**, og **Utnyttelsesbeskrivelse** brukes bare i variable kompensasjonsplaner og dekkes ikke i dette emnet.
 
-Lagre posten, og klikk deretter **Legg til**-knappen i kategorien **Handlinger** for å legge til handlinger for fast kompensasjon for den valgte planen. Bruk alternativet **Aktiver anbefaling** til å angi et annet beløp enn den beregnede retningslinjeøkningen for handlingen. Hvis du vil beregne en handling som er basert på resultatet fra den forrige handlingen for å koble flere kompensasjonshandlinger, merker du av for **Bruk forrige resultat**-alternativet. Handlinger for fast kompensasjon er typer kompensasjonslogikk som du kan gi beskrivende navn til. For planene Klasse og Segment kan du bare legge til handlinger for fast kompensasjon som er av følgende typer:
+Lagre posten, og klikk deretter **Legg til**-knappen i kategorien **Handlinger** for å legge til handlinger for fast kompensasjon for den valgte planen. Bruk alternativet **Aktiver anbefaling** til å angi et annet beløp enn den beregnede retningslinjeøkningen for handlingen. Hvis du vil beregne en handling som er basert på resultatet fra den forrige handlingen for å koble flere kompensasjonshandlinger, merker du av for **Bruk forrige resultat**-alternativet. Handlinger for fast kompensasjon er typer kompensasjonslogikk som du kan gi beskrivende navn til. For planene **Klasse** og **Segment** kan du bare legge til handlinger for fast kompensasjon som er av følgende typer:
 
-| Type handling for fast kompensasjon | Funksjonalitet                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Type handling for fast kompensasjon | Funksjonalitet                  |
+|-------------------------------|-------------------------------------------------------------------------|
 | Egenkapital                        | Egenkapitalhandlinger sammenligner den ansattes betalingssats per syklusens sluttdato med det laveste referansepunktet for nivået som er angitt på den ansattes jobb. Hvis den ansattes lønnssats er mindre enn det minste referansepunktet, beregnes tillegget som er nødvendig for å få den ansatte til det minste punktet i området.                                                                                |
 | Personlig tillegg                         | Personlige handlinger vil beregne en økning som er basert på den ansattes lønnssats per syklusens sluttdato og økningsprosenten funnet i budsjettet med fast økning for den ansattes avdeling, fagforening og plassering.                                                                                                                                                                                         |
 | Generelt                       | Generell handlinger vil beregne en økning som er basert på enten en prosent eller gi ansatte et flatt beløp. Dette bestemmes basert på innstillingene under **Fast kompensasjon** i kategorien **Generelt**.                                                                                                                                                                                                                        |
@@ -53,12 +56,12 @@ Lagre posten, og klikk deretter **Legg til**-knappen i kategorien **Handlinger**
 
 Du kan bare legge til **Fast kompensasjon**-handlinger av typen trinnvis plan.
 
-| Type handling for fast kompensasjon | Funksjonalitet                                                                                                                                                                                           |
-|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Type handling for fast kompensasjon | Funksjonalitet                |
+|--------------------------------|------------------------------|
 | Trinn                           | I kategorien **Generelt** angir du om denne trinnhandlingen skal flytte de ansatte fremover 0 trinn 1 trinn eller to trinn.                                                                                  |
 |                                | **0 trinn** - De ansatte vil motta lønnssatsen for det aktuelle trinnet de er på.                                                                                                                      |
 |                                | **1 trinn** - Systemet kontrollerer om den ansatte allerede er på siste referansepunkt for nivået.                                                                                             |
-|                                | **2 trinn** - Systemet flytter den ansatte fremover to trinn på det gjeldende nivået. Systemet kan bare flytte den ansatte ett eller ingen trinn når de har nådd det siste referansepunktet for nivået. |
+|                                | **2 trinn** – Den ansatte flyttes fremover to trinn på det gjeldende nivået. Den ansatte kan bare flyttes ett eller ingen trinn når de har nådd det siste referansepunktet for nivået. |
 
 ## <a name="run-the-compensation-process"></a>Kjøre kompensasjonsprosessen
 Når prosesshendelsen er definert med nødvendige datofelt, planer og handlinger, kan du klikke **Kjør prosess** på siden **Prosesshendelse**, som åpner dialogboksen **Kjør prosesshendelser for kompensasjon**. Klikk dialogboksen **Vis resultater for hendelsesbehandling** for å se hvordan kompensasjonsbeløp ble beregnet for hver ansatt. Hvis du velger **OK**, kjøres kompensasjonsprosessen for alle ansatte i de valgte kompensasjonsplanene per syklusens sluttdato.

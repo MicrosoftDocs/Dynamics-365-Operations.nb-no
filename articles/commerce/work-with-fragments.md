@@ -2,7 +2,7 @@
 title: Arbeide med fragmenter
 description: Dette emnet beskriver hvorfor, når og hvordan du bruker fragmenter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35a19f064b63ce476252064253032d35697bd69c84c4c93db1d0349a57527c2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776200"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090750"
 ---
 # <a name="work-with-fragments"></a>Arbeide med fragmenter 
 
@@ -121,6 +121,20 @@ Følg denne fremgangsmåten for å redigere et nytt fragment i Commerce-områdeb
 1. Rediger fragmentets modulegenskaper og struktur etter behov. Prosessen ligner på redigeringsprosessen for moduler som redigeres i sideredigeringsvisning.
 
 Du kan også redigere et fragment ved å velge det på en side, i en mal, eller i et overordnet fragment, og deretter velge **Rediger fragment** i egenskapsruten til høyre.
+
+### <a name="rename-a-fragment"></a>Gi nytt navn til et fragment
+
+Følg denne fremgangsmåten for å gi nytt navn til et eksisterende fragment i områdebygger.
+
+1. Velg **Fragmenter** i navigasjonsruten til venstre.
+1. Velg navnet på fragmentet du vil gi nytt navn til.
+1. Velg **Rediger** for å begynne å redigere fragmentet. Legg merke til at du ikke kan redigere et fragment hvis noen andre allerede redigerer fragmentet.
+1. Velg pennesymbolet ved siden av navnet på fragmentet i egenskapsruten.
+1. Rediger navnet på fragmentet etter behov.
+1. Merk av for å bekrefte navneendringen.
+1. Velg **Fullfør redigering**.
+
+Du kan gi fragmentet et nytt navn etter at det er opprettet ved å redigere det og deretter velge pennesymbolet ved siden av navnet på fragmentet i egenskapsruten.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

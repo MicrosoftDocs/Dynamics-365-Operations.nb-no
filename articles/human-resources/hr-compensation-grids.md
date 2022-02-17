@@ -2,7 +2,7 @@
 title: Konfigurer kompensasjonsrutenett
 description: Kompensasjonsrutenett brukes til å definere og vedlikeholde lønn-strukturer for faste kompensasjonsplaner.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483823"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071518"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurer kompensasjonsrutenett
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -67,28 +70,16 @@ Kompensasjonsrutenett brukes til å definere og vedlikeholde lønn-strukturer fo
 7. Velg et alternativ i feltet **Justeringstype**.
 8. Angi et tall i **Justeringsbeløp**-feltet.
 9. Finn og velg ønsket post i listen.
-10. Finn og velg ønsket post i listen.
-11. Finn og velg ønsket post i listen.
-12. Finn og velg ønsket post i listen.
-13. Klikk **Bruk på rutenett**.
-14. Finn og velg ønsket post i listen.
-15. Finn og velg ønsket post i listen.
-16. Finn og velg ønsket post i listen.
-17. Klikk **Bruk på rutenett**.
-18. Finn og velg ønsket post i listen.
-19. Finn og velg ønsket post i listen.
-20. Klikk **Bruk på rutenett**.
-21. Finn og velg ønsket post i listen.
-22. Klikk Bruk på rutenett.
+10. Klikk **Bruk på rutenett**.
     * Nå skal vi bruke masseendringsfunksjonen til å justere Minimum og maksimum referansepunkt for hvert nivå. Dette eksemplet bruker en 50 % spredning slik Minimum referansepunkt blir justert -20 % og maksimalt blir justert +20 %.  
-23. Angi et tall i **Justeringsbeløp**-feltet.
-24. Angi eller velg en verdi i feltet **Referansepunkt**.
-25. Merk eller fjern merking for alle rader i listen.
-26. Klikk **Bruk på rutenett**.
-27. Angi et tall i **Justeringsbeløp**-feltet.
-28. Angi eller velg en verdi i feltet **Referansepunkt**.
-29. Merk eller fjern merking for alle rader i listen.
-30. Klikk **Bruk på rutenett**.
+11. Angi et tall i **Justeringsbeløp**-feltet.
+12. Angi eller velg en verdi i feltet **Referansepunkt**.
+13. Merk eller fjern merking for alle rader i listen.
+14. Klikk **Bruk på rutenett**.
+15. Angi et tall i **Justeringsbeløp**-feltet.
+16. Angi eller velg en verdi i feltet **Referansepunkt**.
+17. Merk eller fjern merking for alle rader i listen.
+18. Klikk **Bruk på rutenett**.
 
 
 

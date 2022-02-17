@@ -2,7 +2,7 @@
 title: Definere en B2C-leier i Commerce
 description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952450"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092465"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -109,7 +109,7 @@ Hvis du vil opprette B2C-programmet, gjør du følgende:
 1. For **URI for omadressering** angir du de dedikerte svar-URL-ene som typen **Web**. For informasjon om URL-adresser for svar, og hvordan du kan formatere dem, se [URL-adresser for svar](#reply-urls) nedenfor. En URL-adresse for omdirigering av URI/svar må angis for å aktivere omdirigeringer fra Azure AD B2C tilbake til området når en bruker godkjenner det. Svar/URLen kan legges til under registreringsprosessen, eller den kan legges til senere ved å velge koblingen **Legg til en omdirigerings-URI** fra **Oversikt**-menyen i B2C-programmets **Oversikt**-del.
 1. For **Tillatelser** velger du **Gi administratorsamtykke til openid- og offline_access-tillatelser**.
 1. Velg **Registrer**.
-1. Velg det nyopprettede programmet, og naviger til **API-tillatelser**-menyen. 
+1. Velg det nyopprettede programmet, og naviger til **Godkjenning**-menyen. 
 1. Hvis det angis en svar-URL-adresse, går du til **Implisitt tildeling og hybridflyter** og velger både **Tilgangstokener** og **ID-tokener**-alternativene for å aktivere dem for programmet, og deretter velger du **Lagre**. Hvis en URL-adresse for svar ikke ble lagt inn under registreringen, kan den også legges til på denne siden ved å velge **Legg til en plattform**, velge **Web** og deretter angi omadresserings-URI for programmet. Delen **Implisitt tildeling og hybridflyt** vil deretter være tilgjengelig for å velge både alternativene **Tilgangstokener** og **ID-tokener**.
 1. Gå til **Oversikt**-menyen i Azure-portalen, og kopier **Program-ID-en (klient)**. Noter denne ID-en for senere trinn i oppsettet (som blir referert til senere som **Klient-GUID**).
 
@@ -309,19 +309,15 @@ Når installasjonen av Azure AD B2C-leieren er fullført, må du konfigurere B2C
 
 Følg denne fremgangsmåten for å samle inn nødvendig programinformasjon.
 
-1. I Azure-portalen går du til **Hjem \> Azure AD B2C-programmer**.
-1. Velg programmet, og velg deretter **Egenskaper** i navigasjonsruten til venstre for å hente programdetaljene.
-1. I **Program-ID**-boksen samler du inn program-IDen til B2C-programmet som ble opprettet i B2C-leieren. Dette vil senere angis som **Klient-GUID** i områdebygger.
-1. Under **Svar-URL** samler du inn URL-adressen for svar.
-1. Gå til **Hjem \> Azure AD B2C – brukerflyter (policyer)**, og hent deretter navnene på hver brukerflytpolicy.
+1. I Azure-portalen går du til **Hjem \> Azure AD B2C-appregistreringer**.
+1. Velg appen, og velg deretter **Oversikt** i navigasjonsruten til venstre for å hente appdetaljene.
+1. I referansen for **App-ID (klient)** samler du inn app-ID-en til B2C-appen som ble opprettet i B2C-leieren. Dette vil senere angis som **Klient-GUID** i områdebygger.
+1. Velg **URI-er for omadressering**, og samle inn svaradressen som vises for området ditt (svaradressen som angis i oppsettet).
+1. Gå til **Hjem \> Azure AD B2C – brukerflyter**, og hent deretter de fullstendige navnene på hver brukerflytpolicy.
 
-Bildet nedenfor viser et eksempel på siden **Azure AD B2C-programmer**.
+Bildet nedenfor viser et eksempel på oversiktssiden **Azure AD B2C-appregistreringer**.
 
-![Gå til B2C-programmet i leieren.](./media/B2CImage_19.png)
-
-Bildet nedenfor viser et eksempel på et programs **Egenskaper**-side i Azure AD B2C. 
-
-![Kopier program-IDen fra egenskapene for B2C-programmet.](./media/B2CImage_21.png)
+![Oversiktssiden Azure AD B2C-appregistreringer med app-ID-en (klient) uthevet](./media/ClientGUID_Application_AzurePortal.png)
 
 Bildet nedenfor viser et eksempel på brukerflytpolicyer på siden **Azure AD B2C – brukerflyter (policyer)**.
 
@@ -363,7 +359,7 @@ Følg denne fremgangsmåten for å knytte B2C-programmet til området og kanalen
 1. Velg **Områdeinnstillinger** i navigasjonsruten til venstre for å utvide den.
 1. Velg **Kanaler** under **Områdeinnstillinger**.
 1. Velg din kanal i hovedvinduet under **Kanaler**.
-1. I ruten kanalegenskaper til høyre velger du B2C-programnavnet fra rullegardinmenyen **Velg B2C-program**.
+1. I ruten kanalegenskaper til høyre velger du B2C-appnavnet fra rullegardinmenyen **Velg B2C-app**.
 1. Velg **Lukk**, og velg deretter **Lagre og publiser**.
 
 ## <a name="additional-b2c-information"></a>Ekstra B2C-informasjon

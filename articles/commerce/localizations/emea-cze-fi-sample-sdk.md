@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 18126f53dc314eca3e874e914346b860d7138109
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: adafde2123afdc793a6ef4edf8fa16b857c55bf8
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7945020"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076942"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Distribusjonsretningslinjer for eksempel på integrering av regnskapsregistreringstjenesten for Tsjekkia (eldre)
 
@@ -155,7 +155,7 @@ Den forrige fremgangsmåten aktiverer utvidelsene som er komponenter i eksemplet
 
 ## <a name="design-of-extensions"></a>Utforming av utvidelser
 
-Eksemplet på integrering av regnskapsregistreringstjenesten for Tsjekkia er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md). Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Oversikt over eksempelutforming av en regnskapsintegrering](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Eksemplet på integrering av regnskapsregistreringstjenesten for Tsjekkia er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md). Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Oversikt over eksempelutforming av en regnskapsintegrering](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime-utvidelsesutforming
 

@@ -2,27 +2,24 @@
 title: Forbedringer for utdragsposteringsfunksjonalitet
 description: Dette emnet beskriver forbedringene som er gjort i funksjonen for utdragspostering.
 author: analpert
-ms.date: 12/03/2021
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9a5a7d6394a87eccde8e1c364caaaabdb0297fd2
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982209"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087609"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer for utdragsposteringsfunksjonalitet
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver det første settet med forbedringer som er gjort i funksjonen for utdragspostering. Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -53,12 +50,24 @@ Som en del av forbedringene for funksjonen for utdragspostering har tre nye para
 
 - **Deaktivering av opptelling kreves** – når dette alternativet er satt til **Ja**, fortsetter posteringsprosessen for et utdrag, selv om forskjellen mellom det talte beløpet og transaksjonsbeløpet på utdraget er utenfor terskelen som er definert i den **Utdrag** hurtigfane for butikker.
 
+> [!NOTE]
+> Fra og med utgivelsen av Commerce versjon 10.0.14, når funksjonen **Detaljhandelsutdrag – feedbasert** er aktivert, er den satvise jobben **Poster beholdning** ikke lenger aktuell og kan ikke kjøres.
+
 I tillegg er følgende parametere introdusert i hurtigfanen **Satsvis behandling** i kategorien **Postering** på siden **Parametere for Commerce**: 
 
 - **Maksimalt antall parallell kontoutdragspostering** – Dette feltet definerer antall satsvise oppgaver som skal brukes til å postere flere utdrag. 
 - **Maks. tråd for ordrebehandling per utdrag** – Dette feltet viser det maksimale antallet tråder som brukes av den satsvise jobben for utdragspostering for å opprette og fakturere salgsordrer for ett enkelt utdrag. Det totale antallet tråder som vil bli brukt av utdragsposteringsprosessen, beregnes basert på verdien i denne parameteren multiplisert med verdien i parameteren **Maksimalt antall parallell kontoutdragspostering**. Hvis du angir verdien for denne parameteren for høyt, kan det ha negativ innvirkning på ytelsen til utdragsposteringsprosessen.
 - **Maks. transaksjonslinjer inkludert i aggregering** – Dette feltet definerer antall transaksjonslinjer som skal inkluderes i en enkelt aggregert transaksjon før det opprettes en ny. Aggregerte transaksjoner opprettes basert på forskjellige aggregeringskriterier, for eksempel kunde, forretningsdato eller finansdimensjoner. Det er viktig å merke seg at linjene fra en enkelt transaksjon ikke vil bli delt på tvers av forskjellige aggregerte transaksjoner. Dette betyr at det er en mulighet for at antall linjer i en aggregert transaksjon er litt høyere eller lavere, basert på faktorer som antall forskjellige produkter.
 - **Maksimalt antall tråder for å validere butikktransaksjoner** – Dette feltet definerer antall tråder som skal brukes til å validere transaksjoner. Validering av transaksjoner er et obligatorisk trinn som må inntreffe før transaksjonene kan overføres til utdragene. Du må også definere et **Gavekortprodukt** i hurtigfanen **Gavekort** i kategorien **Postering** på siden **Parametere for Commerce**. Dette må defineres selv om gavekort ikke brukes av organisasjonen.
+
+Følgende tabell viser de anbefalte verdiene for de foregående parameterne. Disse verdiene bør testes og tilpasses distribusjonskonfigurasjonen og tilgjengelig infrastruktur. Enhver økning i de anbefalte verdiene kan gå ut over annen satsvis behandling og bør valideres.
+
+| Parameter | Anbefalt verdi | Detaljer |
+|-----------|-------------------|---------|
+| Maksimalt antall parallell kontoutdragspostering | <p>Sett denne parameteren til antallet satsvise oppgaver som er tilgjengelige for den satsvise gruppen som kjører **Utdrag**-jobben.</p><p>**Generell regel:** Multipliser antallet virtuelle AOS-servere (Application Object Server) med antallet satsvise oppgaver som er tilgjengelige per virtuelle AOS-server.</p> | Denne parameteren er ikke aktuell når funksjonen **Detaljhandelsutdrag – feedbasert** er aktivert. |
+| Maksimal tråd for ordrebehandling per utdrag | Start testing av verdier fra **4**. Verdien bør vanligvis ikke overskride **8**. | Denne parameteren angir antallet tråder som brukes til å opprette og postere salgsordrer. Den representerer antallet tråder som er tilgjengelige for postering per utdrag. |
+| Maksimalt antall transaksjonslinjer som er inkludert i aggregering | Start testing av verdier fra **1000**. Mindre ordrer kan gi bedre ytelse, avhengig av konfigurasjonen av hovedkontoret. | Denne parameteren bestemmer antall linjer som skal inkluderes i hver salgsordre under utdragspostering. Når dette nummeret nås, blir linjer delt inn i en ny ordre. Selv om antall salgslinjer ikke vil være nøyaktige, fordi delingen skjer på salgsordrenivå, vil den være nær nummeret som er angitt. Denne parameteren brukes til å generere salgsordrer for handelstransaksjoner som ikke har en navngitt kunde. |
+| Maksimalt antall tråder for å validere butikktransaksjoner | Vi anbefaler at du angir denne parameteren til **4**, og at du bare øker den hvis du ikke oppnår akseptabel ytelse. Antallet tråder som denne prosessen bruker, kan ikke overskride antall prosessorer som er tilgjengelige for den satsvise serveren. Hvis du tilordner for mange tråder her, kan du påvirke annen satsvis behandling. | Denne parameteren styrer antall transaksjoner som kan valideres samtidig for en angitt butikk. |
 
 > [!NOTE]
 > Alle innstillingene og parameterne som er knyttet til utdragsposteringer, og som er definert for butikker og på siden **Parametere for Commerce**, gjelder for den forbedrede funksjonen for utdragspostering.

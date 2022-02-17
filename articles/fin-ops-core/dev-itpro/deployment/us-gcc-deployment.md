@@ -9,18 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 17702ada5bf75a44652e194c2555a83e76e7a36b
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817446"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062292"
 ---
 # <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance og Dynamics 365 Supply Chain Management i US Government Community Cloud (GCC)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Utvalgte Microsoft Dynamics 365 United States (US) Government-produkter er tilgjengelige for kvalifiserte myndigheter og private enheter. Disse enhetene er begrenset til følgende typer:
 
@@ -38,9 +38,9 @@ Når den innledende innføringen er fullført, følger du instruksjonene i [Pros
 
 ## <a name="environment-deployment"></a>Distribuere miljøet
 
-Når du har fullført prosjektinnføring, kan du se gjennom tilleggsfunksjonene i LCS som beskrives i [Lifecycle Services (LCS) for Finance and Operations-appkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Deretter kan du gå videre til miljødistribusjon.
+Når du har fullført prosjektinnføring, kan du se gjennom tilleggsfunksjonene i LCS som beskrives i [Lifecycle Services (LCS) for Finance og Operations-appkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Deretter kan du gå videre til miljødistribusjon.
 
-- Hvis du vil distribuere Microsoft-administrerte miljøer via LCS, følger du instruksjonene i [Lifecycle Services (LCS) for Finance and Operations-appkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Hvis du vil distribuere Microsoft-administrerte miljøer via LCS, følger du instruksjonene i [Lifecycle Services (LCS) for Finance og Operations-appkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - For skybaserte miljøer kan du se [Distribuere og få tilgang til utviklingsmiljøer](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Du må også fullføre Resource Manager-innføringsprosessen for koblingene dine, som beskrevet i [Fullfør jobbintroduksjonsprosessen for Azure Resource Manager for Lifecycle Services-prosjekter for amerikanske myndigheter](arm-onbarding-us-goverment.md).
 
 > [!NOTE]

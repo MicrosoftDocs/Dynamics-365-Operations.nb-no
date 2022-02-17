@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bd9c39bb3b5e221694fe20a8085c9099040cb422
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: b7c2423faa4a0c50d9d319a9e6f489e2946c36a7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431099"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071600"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Registrere en ansatt i en fast kompensasjonsplan
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -30,9 +33,9 @@ Kompensasjons- og fordelsansvarlig kan knytte ansatte til faste kompensasjonspla
 2. I **Handling**-feltet velger du en fast kompensasjonshandling av typen **Ansette/ansette på nytt** for å beskrive endringen i den ansattes kompensasjon.
 3. Klikk koblingen i den valgte raden i listen.
 4. Klikk på rullegardinknappen i **Stilling**-feltet for å åpne oppslaget.
-5. Klikk koblingen i den valgte raden i listen.
-    * Nivået som vises er fra kompensasjonsnivået for jobben på stillingen. Nivået må angis for jobben før kompensasjon kan tilordnes til ansatt.  
-6. I **Plan**-feltet velger du den faste kompensasjonsplanen for den ansatte. Plan-oppslaget er filtrert for bare å vise planene som den ansatte er kvalifisert for basert på rettighetsreglene.
+5. Klikk på koblingen i den valgte raden i listen.
+    * Nivået som vises, er fra hurtigfanen **Kompensasjon** > **Nivå**-feltet fra **jobben** som er tilordnet til **stillingen**. Nivået må angis for jobben før kompensasjon kan tilordnes til ansatt.  
+6. I **Plan**-feltet velger du den faste kompensasjonsplanen for den ansatte. **Plan**-oppslaget er filtrert for bare å vise planene som den ansatte er kvalifisert for basert på **rettighetsreglene**.
 7. Finn og velg ønsket post i listen.
     * Datoene **Effektiv** og **Utløp** for kompensasjon hentes fra start- og sluttdatoene for arbeiderens stillingstilordning. Du kan endre disse datoene etter behov.  
     * Hvis den faste kompensasjonsplanen er en trinnplan, velger du trinnet som inneholder den riktige lønnssatsen for den ansatte. Hvis den faste kompensasjonsplanen er en klasse- eller segmentplan, angir du lønnssatsen for den ansatte. Lønnssatsen blir validert mot toleranseinnstillinger for planen, og minimum og maksimum referansepunkt for jobbens kompensasjonsnivå.  

@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431468"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071505"
 ---
 # <a name="edit-personal-information"></a>Rediger personlige opplysninger
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ Parametere angitt på siden **Parametere for global adressebok** bestemmer hvilk
     - Hvis du vil legge til et identifikasjonsnummer, velger du **Ny**. Fyll ut feltene etter behov, og velg **Lagre**.
     - Hvis du vil redigere et nummer, velger du **Rediger**. Rediger feltene etter behov, og velg **Lagre**.
 
-7. Hvis du vil endre metodene du blir betalt med, velger du kategorien **Min betalingsinformasjon**. Denne kategorien er bare tilgjengelig hvis betalingsmåter er aktivert i skjemaet **Personalparametere**. Personale kan aktivere **Bankoverføring**, **Kasse**, **Sjekk**, **Elektronisk betaling** eller **Annet**. Personale kan også deaktivere validering av elektronisk betaling (brukt for amerikanske lønn), og validering av bankkonto- og registreringsnummer.
+7. Hvis du vil endre metodene du blir betalt med, velger du kategorien **Min betalingsinformasjon**. Denne kategorien er bare tilgjengelig hvis betalingsmåter er aktivert på siden **Human Resources-parametere**. Personale kan aktivere **Bankoverføring**, **Kasse**, **Sjekk**, **Elektronisk betaling** eller **Annet**. Personale kan også deaktivere validering av elektronisk betaling (brukt for amerikanske lønn), og validering av bankkonto- og registreringsnummer.
 
 8. Hvis du vil endre bildet som vises i Human Resources for profilen din, velger du kategorien **Bilde**. Avhengig av organisasjonens innstillinger kan det hende at bilder rutes for godkjenning.
 

@@ -10,30 +10,30 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 3fe1b7707df72927fba78ee9659502cc62471799
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924872"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063268"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separert programiverksettingspakke med dobbel skriving
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Tidligere var pakken for programiverksetting for dobbel skriving var en enkelt pakke som inneholder følgende løsninger:
 
-- Dynamics 365 Notater
-- Dynamics 365 Finance and Operations-fellesanker
-- Enhetstilordninger for dobbel skriving for Dynamics 365 Finance and Operations
+- Dynamics 365 Notes
+- Dynamics 365 Finance og Operations-fellesanker
+- Enhetstilordninger for dobbel skriving for Dynamics 365 Finance og Operations
 - Aktivabehandlingsappen for Dynamics 365
 - Aktivabehandling for Dynamics 365
 - HCM Felles
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations-felles
+- Dynamics 365 Finance og Operations-felles
 - Dynamics 365 Company
 - Valutakurser
 - Field Service Common
@@ -51,7 +51,7 @@ Med programkjernepakken for dobbel skriving kan brukere installere og konfigurer
 | Unikt navn                           | Vis navn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations-felles |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance og Operations-felles |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Enhetstilordninger for programkjerne for dobbel skriving   |
 | msdyn_DualWriteAppCoreAnchor          | Programkjerneanker for dobbel skriving        |

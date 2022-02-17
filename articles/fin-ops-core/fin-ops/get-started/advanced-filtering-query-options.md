@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8bbecf85a13056225b0d35023d759456cade40fe10ca1978058abd8e47693ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740914"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070015"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avansert syntaks for filtrering og spørring
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren **treff** i Filter-ruten eller rutenettet for kolonnehodefiltre.
 
@@ -119,9 +122,9 @@ Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjen
 <td>To påfølgende doble anførselstegn (<strong>""</strong>) finner rader uten verdi for den gjeldende kolonnen.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations spørring</span>) (Finance and Operations spørring mellom parenteser)</td>
+<td>(<span class="code">Økonomi- og driftsspørring</span>) (Økonomi- og driftsspørring mellom parentesene)</td>
 <td>Samsvarer med en definert spørring</td>
-<td>Skriv inn en spørring som en SQL-setning mellom parenteser ved hjelp av Finance and Operations-spørringsspråket.</td>
+<td>Skriv inn en spørring som en SQL-setning mellom parenteser ved hjelp av spørringsspråket for økonomi og drift.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        som et eksempel på syntaksen for en filterbetingelse for et felt fra rotdatakilden i tillegg til et felt fra en annen datakilde (for eksempel Alle kunder-siden)</td>
 </tr>

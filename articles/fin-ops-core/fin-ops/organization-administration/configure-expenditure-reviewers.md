@@ -9,15 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ceb0a60ccf3d1c989d8663e933faaa5e430d314695e20990c9086cd1b8325ff1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773733"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070152"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurere utgiftskontrollører
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Du kan definere dynamiske utgiftskontrollører for å rute utgifter til gjennomgang basert på brukeren som er tilordnet til en prosjektrolle eller finansdimensjonen der utgiften belastes. Arbeidsflytprosessen bruker den angitte eieren av prosjektrollen eller finansdimensjonen til å avgjøre hvem utgiften skal sendes til.
 

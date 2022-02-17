@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 1fd15b5d664fead10949750678a2d3eab967af22
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781398"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063678"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Oppsett av dobbel skriving fra Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dette emnet forklarer hvordan du aktiverer dobbel skriving fra Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -53,18 +53,18 @@ Følg denne fremgangsmåten for å konfigurere en dobbelt skriving fra LCS-siden
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Koble til Power Platform-miljø.":::
 
-8. Når koblingen er fullført, vises en hyperkobling. Bruk koblingen til å logge deg på administrasjonsområdet for dobbel skriving i Finance and Operations-miljøet. Derfra kan du definere enhetstilordninger.
+8. Når koblingen er fullført, vises en hyperkobling. Bruk koblingen til å logge deg på administrasjonsområdet for dobbel skriving i økonomi- og driftsmiljøet. Derfra kan du definere enhetstilordninger.
 
 ## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Konfigurere dobbel skriving for et eksisterende Dataverse-miljø
 
 Hvis du vil definere skrivetilgang for et eksisterende Dataverse-miljø, må du opprette en Microsoft [støtteforespørsel](../../lifecycle-services/lcs-support.md). Denne forespørselen må inneholde følgende:
 
-+ Finance and Operations-miljø-ID.
++ ID-en for økonomi- og driftsmiljøet.
 + Miljønavnet fra Lifecycle Services.
 + Dataverse-organisasjons-IDen eller Power Platform-miljø-IDen fra Power Platform-administrasjonssenteret. Be om at IDen er forekomsten som brukes for Power Platform-integrering, i forespørselen.
 
 > [!NOTE]
-> Du kan ikke koble fra miljøer ved hjelp av LCS. Hvis du vil oppheve koblingen til et miljø, åpner du arbeidsområdet **Dataintegrering** i Finance and Operations-miljøet, og deretter velger du **Koble fra**.
+> Du kan ikke koble fra miljøer ved hjelp av LCS. Hvis du vil oppheve koblingen til et miljø, åpner du arbeidsområdet **Dataintegrering** i økonomi- og driftsmiljøet, og deretter velger du **Koble fra**.
 
 ## <a name="linking-mismatch"></a>Koblingskonflikt
 

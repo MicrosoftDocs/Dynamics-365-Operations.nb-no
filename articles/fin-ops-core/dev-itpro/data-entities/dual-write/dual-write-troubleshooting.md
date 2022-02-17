@@ -1,6 +1,6 @@
 ---
 title: Generell feilsøking
-description: Dette emnet inneholder generell feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Dataverse.
+description: Dette emnet inneholder generell feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: bcedb9f6e8fb15210512ed6a376d4329759593e4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781180"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062344"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dette emnet inneholder generell feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Dataverse.
+
+Dette emnet inneholder generell feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse.
 
 > [!IMPORTANT]
 > Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
@@ -44,37 +44,37 @@ Følg denne fremgangsmåten for å se sporingsloggen.
 2. Finn sporingsloggene der **Typenavn**-kolonnen er satt til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dobbeltklikk et element for å vise hele loggen, og se deretter gjennom **Meldingsblokk**-teksten i hurtigfanen **Utførelse**.
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere feilsøkingsmodus for å feilsøke problemer med direkte synkronisering i Finance and Operations-apper
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktiver feilsøkingsmodus for å feilsøke problemer med direkte synkronisering i økonomi- og driftsapper
 
 **Nødvendig rolle for å vise feilene:** Systemadministrator
 
-Dobbel skriving-feil som kommer fra Dataverse, kan vises i Finance and Operations-appen. Du kan aktivere detaljert logging for feil ved å følge disse trinnene:
+Dobbel skriving-feil som kommer fra Dataverse, kan vises i økonomi- og driftsappen. Du kan aktivere detaljert logging for feil ved å følge disse trinnene:
 
-1. For alle prosjektkonfigurasjoner i Finance and Operations-apper finnes det et **IsDebugMode**-flagg i **DualWriteProjectConfiguration**-tabellen.
-2. Åpne **DualWriteProjectConfiguration** ved hjelp av Excel-tillegget. Hvis du vil bruke tillegget, aktiverer du utformingsmodus i Finance and Operations Excel-tillegget og legger til **DualWriteProjectConfiguration** i arket. Hvis du vil ha mer informasjon, kan du se [Vis og oppdater enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
+1. For alle prosjektkonfigurasjoner i økonomi- og driftsapper finnes det et **IsDebugMode**-flagg i **DualWriteProjectConfiguration**-tabellen.
+2. Åpne **DualWriteProjectConfiguration** ved hjelp av Excel-tillegget. Hvis du vil bruke tillegget, aktiverer du utformingsmodus i Excel-tillegget for økonomi og drift og legger til **DualWriteProjectConfiguration** i arket. Hvis du vil ha mer informasjon, kan du se [Vis og oppdater enhetsdata med Excel](../../office-integration/use-excel-add-in.md).
 3. Sett **IsDebugMode** til **Ja** i prosjektet.
 4. Kjør scenariet som genererer feil.
 5. De detaljerte loggene lagres i tabellen **DualWriteErrorLog**.
 6. Hvis du vil slå opp data i tabelleseren, bruker du følgende kobling: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog` og erstatter `999` etter behov.
 7. Oppdater på nytt etter [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), som er tilgjengelig for plattformoppdatering 37 og senere. Hvis du har denne reparasjonen installert, vil feilsøkingsmodusen registrere flere logger.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontrollere synkroniseringsfeil på den virtuelle maskinen for Finance and Operations-appen
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Kontroller synkroniseringsfeil på den virtuelle maskinen for økonomi- og driftsappen
 
 **Nødvendig rolle for å vise feilene:** Systemadministrator
 
 1. Logg på Microsoft Dynamics Lifecycle Services (LCS).
 2. Åpne LCS-prosjektet du har valgt til å utføre testing av dobbel skriving for.
 3. Velg flisen **Skybaserte miljøer**.
-4. Bruk Eksternt skrivebord for å logge på den virtuelle maskinen for Finance and Operations-appen. Bruk den lokale kontoen som vises i LCS.
+4. Bruk Eksternt skrivebord for å logge på den virtuelle maskinen for økonomi- og driftsappen. Bruk den lokale kontoen som vises i LCS.
 5. Åpne hendelseslisten.
 6. Velg **Program- og tjenestelogger \> Microsoft \> Dynamics \> AX-DualWriteSync \> Drift**.
 7. Se gjennom listen over nylige feil.
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Koble fra og koble til et annet Dataverse-miljø fra en Finance and Operations-app
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Fjern tilknytningen til og koble til et annet Dataverse-miljø fra en økonomi- og driftsapp
 
-**Nødvendig rolle for å koble fra miljøet:** Systemansvarlig for enten Finance and Operations-app eller Dataverse.
+**Nødvendig rolle for å koble fra miljøet:** Systemansvarlig for enten økonomi- og driftsappen eller Dataverse.
 
-1. Logg på Finance and Operations-appen.
+1. Logg på økonomi- og driftsappen.
 2. Gå til **Arbeidsområder \> Databehandling**, og velg flisen **Dobbel skriving**.
 3. Velg alle kjørende tilordninger, og klikk på **Stopp**.
 4. Klikk på **Koble fra miljø**.

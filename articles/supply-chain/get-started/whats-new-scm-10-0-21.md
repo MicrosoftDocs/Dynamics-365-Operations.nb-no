@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777943"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075305"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -39,7 +39,6 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 | Lager&nbsp;og&nbsp;logistikk | [Poster lagerbeholdninger ved hjelp av koder som er koblet til motkontoer](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Årsakskoder for lagertelling](../warehousing/reason-codes-for-counting-journals.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Eksportpolicy for data som salgstilbud henviser til](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Velg om endringer i data som refereres av tilbud, vil føre til at disse tilbudene (eller linjene) skal inkluderes i den neste trinnvise eksporten. De trinnvise eksportene vil gå raskere hvis du velger ikke å ta med slike tilbud eller linjer.<br><br>Denne funksjonen legger til en innstilling kalt **Hopp over referansedata for salgstilbud under endringssporing** til siden **Kundeparametere**. |
 | Lager&nbsp;og&nbsp;logistikk | [Forseglet bud](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Forseglede bud for tilbudsforespørsler](../procurement/sealed-bidding.md) |
-| Lager&nbsp;og&nbsp;logistikk | [Skann strekkoder i lageret ved hjelp av standardene i GS1-format](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-strekkoder og QR-koder](../warehousing/gs1-barcodes.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Ikke-forpliktende reservasjon for tillegget Lagersynlighet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Lagersynlighetsreservasjoner](../inventory/inventory-visibility-reservations.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Forbedringer i fradrag og faktisk vekt for Rabattbehandling](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Behandle fradrag med arbeidsområdet for fradrag](../rebate-management/deduction-workbench.md )<br><br>[Behandle, gjennomgå og postere rabatter](../rebate-management/process-review-post.md)<br><br>[Rabattbehandlingsavtaler](../rebate-management/rebate-management-deals.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Trinninstruksjoner for lagerapp](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
@@ -138,9 +137,9 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformoppdateringer for Finance and Operations-apper
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for Finance and Operations-apper
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.21 av Finance and Operations-apper (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.21 av økonomi- og driftsapper (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 

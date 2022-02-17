@@ -13,14 +13,17 @@ ms.search.industry: Service industries
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10e33b9216838313e8f294f4f0f196b07a3d5cc9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: c57ba991de366b4a0e1aa02971a107bed488f914
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964940"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070481"
 ---
 # <a name="enter-project-timesheets"></a>Angi prosjekttimeregistreringer
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Denne prosedyren lar deg opprette en timeregistrering ved hjelp av en tomt timeregistreringsside. Den nye timeregistreringen kan baseres på informasjon fra en tidligere timeregistrering, eller fra prosjekt- og aktivitetstilordninger på **Mine favoritter**-siden. Som standard viser **Alle timeregistreringer**-listesiden alle timeregistreringene dine for den gjeldende perioden. Du kan bruke **Vis**-feltet på **Mine timeregistreringer**-siden til å filtrere timeregistreringslisten etter tidsperiode eller prosjekt, eller til å vise timeregistreringer som ble opprettet på vegne av andre arbeidere. Demonstrasjonsdatafirmaet **USSI** ble brukt til å opprette denne fremgangsmåten.
 

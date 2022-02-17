@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: bff3a6ad74d50e7b706d4df92b17a4a3af36521b
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944821"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076994"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Distribusjonsretningslinjer for eksempel på bilagsskriverintegrering for Sverige (eldre)
 
@@ -116,7 +116,7 @@ I forrige fremgangsmåte aktiverer utvidelsene som er komponenter i eksemplet p�
 
 ## <a name="design-of-extensions"></a>Utforming av utvidelser
 
-Eksemplet på integrering av bilagsskriver for Polen er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md). Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Oversikt over eksempelutforming av en regnskapsintegrering](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Eksemplet på integrering av bilagsskriver for Polen er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md). Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Oversikt over eksempelutforming av en regnskapsintegrering](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime-utvidelsesutforming
 
@@ -124,7 +124,7 @@ Formålet med filtypen som er en regnskapsdokumentleverandør, er å generere sk
 
 CRT-utvidelsen er **Runtime.Extensions.DocumentProvider.PosnetSample**. Denne utvidelsen genererer et sett med skriverspesifikke kommandoer i JSON-formatet (JavaScript Object Notation) som er definert av POSNET-spesifikasjon 19-3678.
 
-Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Bilagsregistreringsprosess og regnskapsintegreringeseksempler for regnskapsenheter](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Hvis du vil ha mer informasjon om utformingen av regnskapsintegreringsløsningen, kan du se [Bilagsregistreringsprosess og regnskapsintegreringeseksempler for regnskapsenheter og -tjenester](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Forespørselsbehandler
 

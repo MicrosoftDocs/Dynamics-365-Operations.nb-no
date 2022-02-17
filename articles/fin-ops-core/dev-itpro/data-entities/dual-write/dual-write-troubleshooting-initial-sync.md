@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 241277ada768cc6497035cc377d0e158646a42d6
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 030e565ffff561f6c1efbdd0de9928f70c7c46c0
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781120"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063064"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøke problemer under første synkronisering
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Dataverse. Det inneholder informasjon som kan hjelpe deg med å løse problemer som kan oppstå under første synkronisering.
+
+Dette emnet inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Det inneholder informasjon som kan hjelpe deg med å løse problemer som kan oppstå under første synkronisering.
 
 > [!IMPORTANT]
 > Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
 
-## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Se etter innledende synkroniseringsfeil i en Finance and Operations-app
+## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Sjekke feil ved innledende synkronisering i en økonomi- og driftsapp
 
 Når du har aktivert tilordningsmalene, skal statusen for tilordningene være **Kjører**. Hvis statusen er **Kjører ikke**, oppstod det feil under første synkronisering. Hvis du vil vise feilene, velger du fanen **Detaljer om innledende synkronisering** på siden **Dobbel skriving**.
 
@@ -63,7 +63,7 @@ at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.\<ExecuteAsync
 
 Hvis denne feilen oppstår konsekvent, og du ikke kan fullføre den første synkroniseringen, følger du denne fremgangsmåten for å løse problemet.
 
-1. Logg på den virtuelle maskinen for Finance and Operations-appen.
+1. Logg på den virtuelle maskinen for økonomi- og driftsappen.
 2. Åpne Microsoft Management Console.
 3. I **Tjenester**-ruten kontrollerer du at tjenesten for rammeverk for dataimport/-eksport for Microsoft Dynamics 365. Start den på nytt hvis den er stoppet, fordi den første synkroniseringen krever det.
 
@@ -75,7 +75,7 @@ Du kan få følgende feilmelding under innledende synkronisering:
 
 Følg fremgangsmåten nedenfor for å løse problemet.
 
-1. Logg på Finance and Operations-appen.
+1. Logg på økonomi- og driftsappen.
 2. På siden **Azure Active Directory-programmer** sletter du **DtAppID**-klienten, og deretter legger du den til på nytt.
 
 ![DtAppID-klient i listen over Azure AD-programmer.](media/aad_applications.png)
@@ -102,9 +102,9 @@ Her er noen eksempler:
 
 Hvis rader i leverandørtabellen har verdier i kolonnene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**, følger du disse trinnene for å fullføre den innledende synkroniseringen.
 
-1. I Finance and Operations-appen sletter du kolonnene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilordningen, og deretter lagrer du tilordningen.
+1. I økonomi- og driftsappen sletter du kolonnene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilordningen, og deretter lagrer du tilordningen.
 
-    1. På siden for tilordning med dobbeltskriving for **Leverandører V2 (msdyn\_vendors)**, i fanen **Tabelltilordninger** i filteret til venstre velger du **Finance and Operations-apper.Vendors V2**. I filteret til høyre velger du **Sales.Vendor**.
+    1. På siden for tilordning med dobbeltskriving for **Leverandører V2 (msdyn\_vendors)**, i fanen **Tabelltilordninger** i filteret til venstre velger du **Økonomi- og driftsapper.Vendors V2**. I filteret til høyre velger du **Sales.Vendor**.
     2. Søk etter **primarycontactperson** for å finne kildekolonnen **PrimaryContactPersonId**.
     3. Velg **Handlinger**, og velg deretter **Slett**.
 
@@ -149,9 +149,9 @@ Her er noen eksempler:
 
 Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og **InvoiceAccount**, følger du disse trinnene for å fullføre den innledende synkroniseringen. Du kan bruke denne fremgangsmåten for alle de kunderettede tabellene, for eksempel **Kontoer** og **Kontakter**.
 
-1. I Finance and Operations-appen sletter du kolonnene **ContactPersonID** og **InvoiceAccount** fra tilordningen **Kunder V3 (kontoer)**, og deretter lagrer du tilordningen.
+1. I økonomi- og driftsappen sletter du kolonnene **ContactPersonID** og **InvoiceAccount** fra tilordningen **Kunder V3 (kontoer)**, og deretter lagrer du tilordningen.
 
-    1. I filteret til venstre i fanen **Tabelltilordninger** på siden for tilordning med dobbeltskriving for **Kunder V3 (kontoer)** velger du **Finance and Operations-app.Customers V3**. I filteret til høyre velger du **Dataverse .Account**.
+    1. I filteret til venstre i fanen **Tabelltilordninger** på siden for tilordning med dobbeltskriving for **Kunder V3 (kontoer)** velger du **Økonomi- og driftsapp.Customers V3**. I filteret til høyre velger du **Dataverse .Account**.
     2. Søk etter **contactperson** for å finne kildekolonnen **ContactPersonID**.
     3. Velg **Handlinger**, og velg deretter **Slett**.
 
@@ -182,16 +182,16 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
     > Det er to tilordninger med samme navn. Sørg for å velge tilordningen med følgende beskrivelse i fanen **Detaljer**: **Dual-write template for sync between FO.CDS Vendor Contacts V2 to CDS.Contacts. Krever ny pakke \[Dynamics365SupplyChainExtended\].**
 
 5. Legg kolonnene **InvoiceAccount** og **ContactPersonId** tilbake i tilordningen **Kunder V3 (Kontoer)** igjen, og lagre deretter tilordningen. Både kolonnen **InvoiceAccount** og kolonnen **ContactPersonId** er nå en del av modus for direkte synkronisering igjen. I neste trinn skal du utføre den innledende synkroniseringen for disse kolonnene.
-6. Kjør den innledende synkroniseringen på nytt for **Kunder V3 (Kontoer)**-tilordningen. Siden endringssporing er slått av, synkroniseres dataene for **InvoiceAccount** og **ContactPersonId** fra Finance and Operations-appen til Dataverse.
-7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Dataverse til Finance and Operations-appen, må du bruke et dataintegrasjonsprosjekt.
+6. Kjør den innledende synkroniseringen på nytt for **Kunder V3 (Kontoer)**-tilordningen. Siden endringssporing er slått av, synkroniseres dataene for **InvoiceAccount** og **ContactPersonId** fra økonomi- og driftsappen til Dataverse.
+7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Dataverse til økonomi- og driftsappen, må du bruke et dataintegrasjonsprosjekt.
 
-    1. Under Power Apps oppretter du et dataintegrasjonsprosjekt mellom **Sales.Account** og **Finance and Operations apps.Kunder V3**-tabeller. Dataretningen må være fra Dataverse til Finance and Operations-appen. Fordi **InvoiceAccount** er et nytt attributt med dobbeltskriving, kan det hende du bør hoppe over innledende synkronisering for dette attributtet. Hvis du vil ha mer informasjon, se [Integrere data i Dataverse](/power-platform/admin/data-integrator).
+    1. I Power Apps oppretter du et dataintegrasjonsprosjekt mellom **Sales.Account** og **Økonomi- og driftsapper.Customers V3**-tabeller. Dataretningen må være fra Dataverse til økonomi- og driftsappen. Fordi **InvoiceAccount** er et nytt attributt med dobbeltskriving, kan det hende du bør hoppe over innledende synkronisering for dette attributtet. Hvis du vil ha mer informasjon, se [Integrere data i Dataverse](/power-platform/admin/data-integrator).
 
         Illustrasjonen nedenfor viser et prosjekt som oppdaterer **CustomerAccount** og **ContactPersonId**.
 
         ![Dataintegrasjonsprosjekt for å oppdatere CustomerAccount og ContactPersonId.](media/cust_selfref6.png)
 
-    2. Legg til firmakriteriene i filteret på Dataverse-siden, slik at bare radene som samsvarer med filterkriteriene, blir oppdatert i Finance and Operations-appen. Velg filterknappen for å legge til et filter. Deretter, i dialogboksen **Rediger spørring**, kan du legge til en filterspørring som for eksempel **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Legg til firmakriteriene i filteret på Dataverse-siden, slik at bare radene som samsvarer med filterkriteriene, blir oppdatert i økonomi- og driftsappen. Velg filterknappen for å legge til et filter. Deretter, i dialogboksen **Rediger spørring**, kan du legge til en filterspørring som for eksempel **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [MERK] Hvis filterknappen ikke finnes, oppretter du en støtteforespørsel for å be dataintegreringsgruppen aktivere filterfunksjonen i leieren din.
 
@@ -201,7 +201,7 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
 
     Den innledende synkroniseringen av radene er nå fullført.
 
-8. I Finance and Operations-appen aktiverer du endringssporing på nytt for **Kunder V3**-tabellen.
+8. I økonomi- og driftsappen aktiverer du endringssporing på nytt for **Kunder V3**-tabellen.
 
 ## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Innledende synkroniseringsfeil på kart med mer enn ti oppslagsfelt
 
@@ -227,9 +227,9 @@ Du kan få følgende feilmelding når du prøver å kjøre det innledende settet
 
 *Finner ikke partnummer i Dataverse .*
 
-Det finnes et områdesett i **DirPartyCDSEntity** i Finance and Operations-apper som filtrerer parter av typen **Person** og **Organisasjon**. Derfor vil en innledende synkronisering av tilordningen **CDS-parter – msdyn_parties** ikke synkronisere parter av andre typer, inkludert **Juridisk enhet** og **Driftsenhet**. Når den innledende synkroniseringen kjører for **Postadressesteder for CDS-part (msdyn_partypostaladdresses)** eller **Partskontakter V3 (msdyn_partyelectronicaddresses)**, kan du få feilen.
+Det finnes et områdesett i **DirPartyCDSEntity** i økonomi- og driftsapper som filtrerer parter av typen **Person** og **Organisasjon**. Derfor vil en innledende synkronisering av tilordningen **CDS-parter – msdyn_parties** ikke synkronisere parter av andre typer, inkludert **Juridisk enhet** og **Driftsenhet**. Når den innledende synkroniseringen kjører for **Postadressesteder for CDS-part (msdyn_partypostaladdresses)** eller **Partskontakter V3 (msdyn_partyelectronicaddresses)**, kan du få feilen.
 
-Vi jobber med en løsning for å fjerne partstypeutvalget for Finance and Operations-enheten, slik at parter av alle typer kan synkroniseres mot Dataverse.
+Vi jobber med en løsning for å fjerne partstypeutvalget for økonomi- og driftsenheten, slik at parter av alle typer kan synkroniseres mot Dataverse.
 
 ## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Er det noen ytelsesproblemer når du kjører innledende synkronisering for kunde- eller kontaktdata?
 

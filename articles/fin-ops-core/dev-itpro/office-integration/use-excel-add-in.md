@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592671"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068798"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Vise og oppdatere enhetsdata med Excel 
 
@@ -28,7 +28,10 @@ ms.locfileid: "7592671"
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Excel-tillegget for Microsoft Dynamics. Hvis du vil åpne enhetsdataene, kan du starte fra enten Excel eller Finance and Operations-apper.
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+
+Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Excel-tillegget for Microsoft Dynamics. Hvis du vil åpne enhetsdataene, kan du starte fra enten Excel eller økonomi- og driftsapper.
 
 Ved å åpne enhetsdata i Excel, kan du raskt og enkelt vise, oppdatere og redigere dataene ved hjelp Excel-tillegget. Dette tillegget krever Microsoft Excel 2016 eller nyere.
 
@@ -37,15 +40,15 @@ Ved å åpne enhetsdata i Excel, kan du raskt og enkelt vise, oppdatere og redig
 
 Hvis du vil vite mer om hvordan du bruker Excel-tillegget, kan du se den korte videoen [Opprette en Excel-mal for hode- og linjemønstre](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Åpne enhetsdata i Excel når du starter fra en Finance and Operations-app
-1. På en side i en Finance and Operations-app velger du **Åpne i Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Åpne enhetsdata i Excel når du starter fra en økonomi- og driftsapp
+1. Velg **Åpne i Microsoft Office** på en side i en økonomi- og driftsapp.
 
     Hvis rotdatakilden (tabell) for siden er den samme som rotdatakilden for alle enheter, genereres standard **Åpne i Excel**-alternativer for siden. **Åpne i Excel**-alternativer finnes på ofte brukte sider, som **Alle leverandører** og **Alle kunder**.
  
 2. Velg et **Åpne i Excel**-alternativ, og åpne arbeidsboken som genereres. Denne arbeidsboken har bindingsinformasjonen for enheten, en peker til miljøet og en peker til Excel-tillegget.
 3. I Excel velger du **Aktivere redigering** for å aktivere kjøring av Excel-tillegget. Excel-tillegg kjøres i en rute til høyre i Excel-vinduet.
 4. Hvis du kjører Excel-tillegget for første gang, velger du **Klarer tillegget**.
-5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på Finance and Operations-appen. Excel-tillegget bruker en tidligere påloggingskontekst fra nettleseren og logger deg automatisk på, hvis det er mulig. (Hvis du vil ha mer informasjon om nettleseren som brukes basert på operativsystemet, kan du se [Nettlesere som brukes av Office-tillegg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.)) For å sikre at påloggingen var vellykket, kontrollerer du brukernavnet i øvre høyre hjørne i Excel-tillegget. 
+5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på økonomi- og driftsappen. Excel-tillegget bruker en tidligere påloggingskontekst fra nettleseren og logger deg automatisk på, hvis det er mulig. (Hvis du vil ha mer informasjon om nettleseren som brukes basert på operativsystemet, kan du se [Nettlesere som brukes av Office-tillegg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.)) For å sikre at påloggingen var vellykket, kontrollerer du brukernavnet i øvre høyre hjørne i Excel-tillegget. 
 
 Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at det ikke vises data i arbeidsboken før Excel-tillegget leser dem inn.
 
@@ -54,7 +57,7 @@ Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at 
 2. Søk etter nøkkelordet **Dynamics** i Office Store, og velg deretter **Legg til** ved siden av **Microsoft Dynamics Office-tillegg** (Excel-tillegget).
 3. Hvis du kjører Excel-tillegget for første gang, velger du **Klarer tillegget** for å aktivere kjøring av Excel-tillegget. Excel-tillegg kjøres i en rute til høyre i Excel-vinduet.
 4. Velg **Legg til serverinformasjon** for å åpne **Alternativer**-ruten.
-5. I nettleseren kopierer du nettadressen fra målforekomsten av Finance and Operations-appen, limer den inn i **Server-URL**-feltet og sletter deretter alt etter vertsnavnet. Den resulterende nettadressen skal bare inneholde vertsnavnet.
+5. I nettleseren kopierer du nettadressen fra målforekomsten av økonomi- og driftsappen, limer den inn i **Server-URL**-feltet, og sletter deretter alt etter vertsnavnet. Den resulterende nettadressen skal bare inneholde vertsnavnet.
 
     Hvis nettadressen for eksempel er `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, sletter du alt unntatt `https://xxx.dynamics.com`.
 
@@ -73,7 +76,7 @@ Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at 
 Når Excel-tillegget har lest inn enhetsdata i arbeidsboken, kan du oppdatere dataene når som helst ved å velge **Oppdater** i Excel-tillegget.
 
 ## <a name="edit-entity-data-in-excel"></a>Redigere enhetsdata i Excel
-Du kan endre enhetsdata som du trenger, og deretter publisere dem tilbake til Finance and Operations-apper ved å velge **Publiser** i Excel-tillegget. Hvis du vil redigere en post, merker du en celle i regnearket og endre deretter celleverdien. Hvis du vil legge til en ny post, gjør du ett av følgende:
+Du kan endre enhetsdata som du trenger, og deretter publisere dem tilbake til økonomi- og driftsapper ved å velge **Publiser** i Excel-tillegget. Hvis du vil redigere en post, merker du en celle i regnearket og endre deretter celleverdien. Hvis du vil legge til en ny post, gjør du ett av følgende:
 
 - Klikk på hvor som helst i datakildetabellen, og velg deretter **Ny** i Excel-tillegget.
 - Klikk hvor som helst i den siste raden i datakildetabellen, og trykk deretter på Tab-tasten til markøren flyttes ut av den siste kolonnen i denne raden og det opprettes en ny rad.

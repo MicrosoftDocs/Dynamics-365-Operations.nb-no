@@ -2,7 +2,7 @@
 title: Distribuer kantskalaenheter på egendefinert maskinvare ved hjelp av LBD
 description: Dette emnet beskriver hvordan du klargjør kantskalaenheter ved hjelp av egendefinert maskinvare og distribusjon som er basert på lokale forretningsdata (LBD).
 author: cabeln
-ms.date: 11/29/2021
+ms.date: 01/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 1204b65e76c107c29a94a61c321064a87c7571fb
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920679"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024548"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Distribuer kantskalaenheter på egendefinert maskinvare ved hjelp av LBD
 
@@ -26,6 +26,13 @@ Kantskalaenheter spiller en viktig rolle i den distribuerte hybridtopologien for
 Kantskalaenheter kan distribueres ved å opprette et lokalt forretningsdatamiljø [lokalt miljø](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) og deretter konfigurere det til å fungere som en vektenhet i den distribuerte hybridtopologien for forsyningskjedeadministrasjon. Dette oppnås ved å knytte det lokale LBD-miljøet til et Supply Chain Management-miljø i skyen, som er konfigurert til å fungere som et senter.  
 
 Dette emnet beskriver hvordan du konfigurerer et lokal LBD-miljø som en kantskalaenhet og deretter knytter det til et senter.
+
+## <a name="infrastructure-considerations"></a>Infrastrukturhensyn
+
+Kantskalaenheter kjøres i lokale miljøer, slik at infrastrukturkravene er ganske like. Det er imidlertid bestemte forskjeller som bør merkes:
+
+- Kantskalaenheter bruker ikke Financial Reporting, så de trenger ikke Financial Reporting-noder.
+- Produksjons- og lagerbelastningen er ikke databehandlingsintensive, så vurder derfor å beregne databehandlingskraften for AOS-noder i henhold til dette.
 
 ## <a name="deployment-overview"></a>Oversikt over distribusjon
 

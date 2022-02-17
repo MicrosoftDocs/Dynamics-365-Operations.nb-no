@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 23ac3067c03bf2cf336848301e8c27b60da8dc8c
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2a9753e220e62794b157340c9f8e6f8a053e9ba7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964837"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067989"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifisere og distribuere verktøy for kandidatvalg
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Det kan være vanskelig finne en kvalifisert samling kandidater til ledige stillinger, spesielt når en stilling krever et unikt sett med ferdigheter. Kandidater med ferdighetene du trenger, kan imidlertid allerede være ansatt i organisasjonen. Du kan søke etter en bestemt kvalifikasjon blant eksisterende ansatte eller nye søkere. Dette gjør at en rekrutterer raskt kan samle og sile søkere som har søkt en ledig stillig nå eller tidligere, eller finne potensielle kandidater fra det eksisterende utvalget av ansatte. Bruk denne prosedyren for å lære hvordan funksjonen for kompetansesøk kan hjelpe deg med å finne riktig person for en ledig stilling. Demonstrasjonsdatafirmaet **USMF** ble brukt til å opprette denne fremgangsmåten.
 

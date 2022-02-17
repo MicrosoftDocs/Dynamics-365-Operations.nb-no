@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753032"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063243"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
-> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra Finance and Operations-apper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
+> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra økonomi- og driftsapper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
 
 Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 
@@ -37,7 +37,7 @@ Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
 
@@ -302,7 +302,7 @@ Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en
 | **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden. |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Advarselen er en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper. |
+| **Status**                         | Avskrevet: Advarselen er en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av økonomi- og driftsapper. |
 
 #### <a name="complete-list"></a>Fullstendig liste
 Hvis du vil ha tilgang til den fullstendige listen over APIer som kan avskrives, kan du se [Avskriving av metoder og metadataelementer](deprecation-deletion-apis.md).
@@ -361,7 +361,7 @@ Funksjon for å opprette maler for nye registre for fortjenesteavgift. Denne fun
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen er ikke kompatibel med Finance and Operations-utvidelsesmodellen. |
 | **Erstattet med en annen funksjon?**   | Nei |
-| **Berørte produktområder**         | Avgift |
+| **Berørte produktområder**         | Mva |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Fjernet fra og med Finance and Operations 8.1 med Platform update 20. |
 
@@ -379,7 +379,7 @@ Landsspesifikk modul for Russland for behandling av informasjon om stabsadminist
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med Platform update 15
 Ingen funksjoner er fjernet eller avskrevet med denne versjonen. Plattformoppdatering 15 er kumulativ og inneholder nye eller endrede funksjoner fra plattformoppdatering 13, plattformoppdatering 14 og plattformoppdatering 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med Platform update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 med Platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger 
 Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Oversikt over produktanbefalinger](../../../commerce/product-recommendations.md).  
@@ -401,7 +401,7 @@ Muligheten til å introdusere egendefinerte funksjoner som skal brukes i ER-uttr
 | **Erstattet med en annen funksjon?**   | Ingen. Når det er behov for en ny innebygd funksjon, må en ny utvidelsesforespørsel adresseres til ER-rammeverksteamet.<br><br>Som en midlertidig løsning mens den forespurte funksjonen er under utvikling i ER-teamet, kan den nødvendige logikken programmeres som en metode for en egendefinert programklasse. Denne metoden kan være tilgjengelig i et ER-uttrykk som en egenskap i den tilføyde ER-datakilden for **Program\Klasse**-typen som refererer til denne egendefinerte programklassen.  |
 | **Berørte produktområder**         | Rammeverk for elektronisk rapportering                                                      |
 | **Distribusjonsalternativ**              | Alle                                                                                      |
-| **Status**                         | Fjernet fra og med Finance and Operations, Enterprise edition 7.3.    |
+| **Status**                         | Fjernet fra og med Finance and Operations, Enterprise Edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Lager per varegruppe- og Lager per lagerdimensjon-aldersfordelte saldolister
 
@@ -498,7 +498,7 @@ Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktan
 | **Status**                         |Fjernet fra og med 15. februar 2018. Dette påvirker kunder som kjører Dynamics 365 for Retail 7.2 og senere. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition juli 2017 med plattformoppdatering 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition juli 2017 med Platform update 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valutaomregning for regnskap og rapporteringsvalutaer
 
@@ -519,7 +519,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Duplikat funksjonalitet.       |
-| **Erstattet med en annen funksjon?**   | Ja. Funksjonen har blitt erstattet med en annen Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Oversikt over Installere og konfigurere lagerappen](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Oversikt over Installere og konfigurere lagerappen](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Berørte produktområder**         | Lagerstyring, transportstyring     |
 | **Distribusjonsalternativ**              | Portal for lagermobilenheter (WMDP) var en frittstående komponent som var beregnet for selvdrevet lokal distribusjon.               |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er 4. kvartal 2019.   |

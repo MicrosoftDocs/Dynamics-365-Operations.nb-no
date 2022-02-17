@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902002"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069385"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og koble til mobilappen Lagerstyring
 
@@ -143,6 +143,10 @@ Godkjenning med Azure AD er en sikker metode for å koble en mobil enhet til Sup
 Sertifikater kan brukes som hemmeligheter for å bevise appens identitet når det bes om en token. Fellesdelen av sertifikatet lastes opp til appregistreringen i Azure-portalen, mens det fullstendige sertifikatet må distribueres på hver enhet der mobilappen Lagerstyring er installert. Organisasjonen din er ansvarlig for å administrere sertifikatet når det gjelder rotasjon og så videre. Du kan bruke selvsignerte sertifikater, men du bør alltid bruke sertifikater som ikke kan eksporteres.
 
 Du må angi at sertifikatet skal være tilgjengelig lokalt på hver enhet der du kjører mobilappen Lagerstyring. Hvis du vil ha informasjon om hvordan du behandler sertifikater for Intune-kontrollerte enheter hvis du bruker Intune, kan du se [Bruke sertifikater til godkjenning i Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurer Warehouse Management-mobilappen for sky- og kantskalaenheter
+
+Det kreves noen ekstra trinn hvis du planlegger å kjøre Warehouse Management-mobilappen mot en sky- eller kantskalaenhet. For instruksjoner kan du se [Konfigurere Warehouse Management-mobilappen for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurere appen ved å importere tilkoblingsinnstillinger
 
@@ -306,5 +310,6 @@ Hvis en enhet går tapt eller blir en sikkerhetsrisiko, må du fjerne tilgangen 
 
 - [Brukinnstillinger for mobilenhet](mobile-device-user-settings.md)
 - [Tilordne trinnikoner og -titler for mobilappen Warehouse Management](step-icons-titles.md)
+- [Konfigurer Warehouse Management-mobilappen for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

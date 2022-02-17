@@ -2,7 +2,7 @@
 title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 11/08/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777991"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075428"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet beskriver hvordan du kan tilpasse appen og dekker følgende emner: 
 
@@ -120,7 +124,9 @@ Følgende verktøy er tilgjengelige på **Tilpassing**-verktøylinjen:
 - Bruk **Velg**-verktøyet til å velge og endre egenskapene for et element. Hvis du vil bruke dette verktøyet, velger du knappen **Velg** på verktøylinjen og velger deretter ønsket element. Egenskapsvinduet for elementet vises, der du kan endre egenskapene for elementet. Du kan gjenta prosessen for andre elementer som kan tilpasses på siden. Vær oppmerksom på at noen personlige egenskaper kanskje ikke er tilgjengelige i noen scenarioer. Du kan for eksempel ikke låse et felt som er nødvendig.
 - Bruk **Skjul**-verktøyet for å skjule et element på siden. Hvis du vil bruke dette verktøyet, velger du knappen **Skjul** på verktøylinjen, og deretter velger du elementet som skal skjules. Når du bruker **Skjul**-verktøyet, vil alle elementer som ligger skjult, gjøres synlige, men de vises i en skyggelagt container. Deretter kan du få et element synlig ved å merke det. Hvis du vil se hvordan siden vil se ut når elementer er skjult, bytter du til et annet tilpasningsverktøy eller lukker verktøylinjen for tilpasning.
 - Bruk verktøyet **Legg til et felt** for å legge til felt på siden. Når du bruker dette verktøyet, kan du bare legge til felt som er del av sidedefinisjonen. Hvis du vil ha informasjon om hvordan du oppretter nye felt som ikke er en del av den gjeldende sidedefinisjonen, kan du se [Opprette og arbeide med egendefinerte felt](user-defined-fields.md). Når du har valgt knappen **Legg til et felt** på verktøylinjen, må du først velge rutenettet eller delen der du vil legge til et felt. En dialogboks viser listen over felt som er knyttet til det valgte rutenettet eller den valgte delen. I dialogboksen velger du ett eller flere felt du vil legge til fra listen **Anbefalte felt** eller **Alle felt**. Når du har valgt de ønskede feltene, velger du **Oppdater**. Hvis du vil fjerne et felt som du la til tidligere, gjentar du prosessen, men fjerner merkingen av feltet i dialogboksen.
-    - Listen over **Anbefalte felt** viser felt som tidligere er lagt til av andre brukere i organisasjonen. Denne listen over felt oppdateres basert på gjentakelsesfrekvensen for den **satsvise jobben Anbefaling**. Det finnes en lignende erfaring når du legger til nye filterfelt ved hjelp av Filter-ruten på en side.
+
+    Listen over **Anbefalte felt** viser felt som tidligere er lagt til av andre brukere i organisasjonen. Denne listen over felt oppdateres basert på gjentakelsesfrekvensen for den **satsvise jobben Anbefaling**. Det finnes en lignende erfaring når du legger til nye filterfelt ved hjelp av Filter-ruten på en side.
+
 - Bruk **Flytt**-verktøyet når du vil flytte et element til et annet sted i den gjeldende gruppen med elementer. Legg merke til at du ikke kan flytte et element utenfor den overordnede gruppen. Hvis du vil bruke dette verktøyet, velger du knappen **Flytt** på verktøylinjen, og deretter velger du elementet som skal flyttes. Når du velger et element, bestemmer appen stedene der elementet kan flyttes. Disse stedene kalles *slippsoner*. Når du drar elementet rundt i gjeldende gruppe, vises hver "slippsone" som en farget, fet linje ved siden av området der elementet kan slippes.
 - Bruk **Hopp over**-verktøyet for å fjerne et element fra sidens tastaturtabulatorsekvens. Når du velger **Hopp over**-knappen på verktøylinjen, vil alle elementer som hoppes over, vises i en skyggelagt container. Du kan interaktivt fjerne eller legge til felt i kategorisekvensen.
 - Bruk **Vis i hode**-verktøyet når du vil at et felt skal vises i sammendragsdelen i hurtigfanen. Når du velger knappen **Vis i hode** på verktøylinjen, vil alle felt som er merket som sammendragsfelt, vises med en skyggelagt beholder. Du kan interaktivt legge til felt i hurtigfanen Sammendrag og fjerne felt fra sammendraget ved å velge feltene.
@@ -152,7 +158,10 @@ For enkelte sider som inneholder lister, er tilpasningsfunksjonen **Legg til i a
 
 - Hvis du vil legge til et arbeidsområde, sorterer eller filtrerer du først på siden, slik at den viser informasjonen slik du vil at den skal vises i arbeidsområdet. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Liste**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan velge hvilke kolonner som skal vises i listen i arbeidsområdet. Du kan også angi etiketten som brukes for listen i arbeidsområdet.
 - Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen på siden slik at den viser dataene som skal oppsummeres, eller som du vil ha rask tilgang til. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Flis**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for flisen i arbeidsområdet. Du kan også angi om ruten skal vise et tall. Når flisen er lagt til i arbeidsområdet, kan du velge den for å åpne den gjeldende siden fra arbeidsområdet. Deretter kan du vise den filtrerte listen som er knyttet til brikken.
-- Hvis du vil legge til en kobling i et arbeidsområde, filtrerer du først filteret på siden slik at den viser dataene du er interessert i. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Kobling**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for koblingen. Du kan også angi en etikett for en ny inndeling som inneholder denne koblingen.
+- Hvis du vil legge til en kobling i et arbeidsområde, filtrerer du først filteret på siden slik at den viser dataene du er interessert i. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Kobling**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for koblingen. Du kan også angi en etikett for delen der denne koblingen kan plasseres. Hvis delen ikke finnes, opprettes det en ny del.
+
+> [!NOTE]
+> Når du konfigurerer listen, flisen eller koblingen fra og med versjon 10.0.25, kan det hende at du også må velge arbeidsområdevisningene du vil legge til elementet i, hvis funksjonen **(Forhåndsversjon) Støtte for lagrede visninger for arbeidsområder** er aktivert. De tilgjengelige arbeidsområdevisningene vises i delen **Alternativer for arbeidsområde** i hver **Konfigurer**-dialogboks. 
 
 Når du har lagt til listen, flisen eller koblingen i et arbeidsområde, kan du åpne arbeidsområdet og endre rekkefølgen på elementene i den etter ønske.
 
@@ -221,7 +230,7 @@ Hvis lagrede visninger ikke er aktivert, følger du fremgangsmåten nedenfor for
 En annen måte å dele tilpasninger på, er ved eksport og import. Enkeltbrukere, eller en administrator som handler på deres vegne, kan bruke denne metoden til å eksportere tilpasningene eller visningene, og deretter gi den eksporterte filen til andre brukere for å importere. Brukere kan eventuelt gi sine eksporterte tilpasninger til en bruker med administratorrettigheter, og denne brukeren kan deretter bruke **Tilpassing**-administrasjonssiden til å bruke tilpasningsfilen for mange brukere samtidig.
 
 > [!IMPORTANT]
-> Etter hvert som tilpasningene beholdes på tvers av oppdateringer, er det unødvendig og svært lite anbefalt å importere alle tilpasninger etter en serviceoppdatering eller andre tidspunkt.   
+> Etter hvert som tilpasningene beholdes på tvers av oppdateringer, er det unødvendig og svært lite anbefalt å importere alle tilpasninger etter en serviceoppdatering eller andre tidspunkt.
 
 #### <a name="export"></a>Eksporter
 
@@ -271,11 +280,8 @@ For kunder som har aktivert **Lagrede visninger**-funksjonen, kan du se "Behandl
 For kunder som ennå ikke har aktivert funksjonen [Lagrede visninger](saved-views.md), har denne siden fire kategorier:
 
 - **Bruk** – Du kan importere eller velge en tilpasning for én eller flere brukere. Hvis du vil bruke en tilpasning på én eller flere brukere, må du først velge en rolle og brukere som har denne rollen. Velg deretter en eksisterende tilpasning som skal brukes på de valgte brukerne, eller importer en tilpasningsfil. Tilpasningen blir godkjent og brukes for alle de valgte brukerne neste gang de åpner den valgte siden.
-
 - **Fjern** – Du kan fjerne alle tilpasninger for en side eller et arbeidsområde for én eller flere brukere. Velg først en side eller et arbeidsområde for å se en liste over brukerne som har tilpasset den. Velg deretter brukerne som skal ha fjernet tilpasninger for denne siden eller arbeidsområdet, og velg deretter **Fjern**. Alle tilpasninger som de valgte brukerne har brukt på den valgte siden eller arbeidsområdet, slettes. Du kan ikke angre denne handlingen. Hvis en tilpasning ble lagret for siden eller arbeidsområdet, kan tilpasningen importeres på nytt.
-
 - **Brukere** – Velg en bruker for å vise en liste over sider som brukeren har tilpasset. Du kan deretter aktivere eller deaktivere den valgte brukerens mulighet til å bruke tilpassinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller fjerne en tilpassing for brukeren. I tillegg kan du tilbakestille bildeforklaringer for funksjonen for brukeren. Hvis brukeren tidligere har ignorert alle popup-vinduer som introduserer nye funksjoner, vil de da vises igjen neste gang brukeren støter på disse funksjonene.
-
 - **System** – Du kan midlertidig deaktivere tilpasninger for alle brukere i systemet. I dette tilfellet slettes alle personlige tilpasninger for alle brukere, og alle sidene tilbakestilles til standardtilstanden. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt. Du kan også permanent slette alle tilpasninger for alle brukere i systemet. Tilpasninger som er slettet, kan ikke gjenopprettes. Før du utfører denne oppgaven må du eksportere tilpasninger du kanskje vil bruke senere.
 
 ## <a name="personalizing-inventory-dimensions"></a>Tilpasse lagerdimensjoner
