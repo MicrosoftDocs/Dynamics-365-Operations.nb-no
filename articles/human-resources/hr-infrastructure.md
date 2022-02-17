@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec6d47c44136f7a105a702358370dd676d9339c1
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: a80bedd0224f1e31dfec4e9f4c39ad1ed75d7f2f
+ms.sourcegitcommit: 948978183a1da949e35585b28b8e85a63b6c12b1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018354"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "8024573"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge---release-10025-update"></a>Sammenslåing av Dynamics 365 Human Resources-infrastruktur – oppdatering av versjon 10.0.25
 
@@ -53,7 +53,7 @@ Sammenslåingen vil gi konsistens for Human Resources-brukere på følgende måt
     | Skriv ut ytelsesvurderinger | Du kan skrive ut prestasjonsvurderinger i PDF-format. | Generelt tilgjengelig | 
     | Egendefinerte koblinger i **Lederselvbetjening** | Du kan opprette egendefinerte koblinger som vises i delen **Beslektede koblinger** i **Lederselvbetjening**. | Generelt tilgjengelig | 
     | Visning av kompensasjon på tvers av firmaer | Brukere kan vise kompensasjonsplaner i **Lederselvbetjening** på tvers av alle juridiske enheter, uten å måtte bytte firmaer. | Generelt tilgjengelig | 
-    | Konfigurer flere kompensasjonsnivåer etter jobb\*&dagger; | Jobber støtter nå flere kompensasjonsnivåer. | Generelt tilgjengelig | 
+    | Konfigurer flere kompensasjonsnivåer etter jobb\*&dagger; | Jobber støtter nå flere kompensasjonsnivåer. | Forhåndsversjon | 
     | Oppgavebehandling\* | Du kan opprette sjekklister og oppgaver for pålasting, avlasting og overgangsprosessen. | Forhåndsversjon | 
     | Strømlinjeformet ansattpost | Denne funksjonen gir en oppdatert brukeropplevelse på den eksisterende **Arbeider**-siden. | Forhåndsversjon | 
     | Forbedringer av brukeropplevelsen for personale | Se tabellen i neste del.  | Forhåndsversjon | 

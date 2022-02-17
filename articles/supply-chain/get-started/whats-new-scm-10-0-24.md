@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a254e20dd7fcc29ca520282b4bf9fcd903e4de58
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986309"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087556"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.24 (februar 2022)
 
@@ -34,6 +34,7 @@ Denne tabellen viser funksjonene i denne versjonen. Dette emnet kan være oppdat
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
 | Distribuert hybridtopologi | [Utvidede lagerkjøringsbelastninger på skalaenheter](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring](../cloud-edge/cloud-edge-workload-warehousing.md) | Aktivert som standard. |
+| Distribuert hybridtopologi | [Starte produksjonsordre på Warehouse Management-arbeidsbelastning for sky- og kantskalaenhet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-manufacturing-execution-workloads-scale-units) | [Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funksjonsbehandling (*Start produksjonsordre på Warehouse Management-arbeidsbelastning for sky- og kantskalaenhet*)  |
 | Planlegging | [Planleggingsoptimaliseringsstøtte for gjenbestillingsmargin og avgangsmargin](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Sikkerhetsmarginer](../master-planning/planning-optimization/safety-margins.md) | Aktivert som standard. |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funksjonsforbedringer inkludert i denne versjonen
@@ -47,7 +48,6 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre dette i [
 | Produksjonskontroll | Kontroll av materialtilgjengelighet etter behov for produksjonsordrer | Denne funksjonen gjør det raskere å åpne siden **Produksjonsordrer som skal frigis**, som er tilgjengelig fra arbeidsområdet **Produksjonsstyring**. Uten denne funksjonen kontrollerer systemet automatisk om materialer er tilgjengelige for alle oppførte produksjonsordrer så snart du åpner siden, noe som kan ta lang tid hvis du har et stort antall ordrer. Når denne funksjonen er aktivert, gir systemet i stedet en verktøylinjeknapp, som du kan bruke til å starte materialkontrollen bare for valgte ordrer og ved behov. |
 | Produksjonskontroll | (Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke-lager) | Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Denne funksjonen støtter bare varer som ikke er aktivert til å bruke avanserte lagerprosesser (WMS). Støtte for WMS-aktiverte varer er planlagt for en fremtidig frigivelse.<p>Noen produsenter, spesielt de som finnes i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeiderne kan for eksempel bruke en vekt til å veie mengden material som brukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere hvilke partinumre som ble forbrukt under produksjonen av hvert produkt. |
 | Produksjonskontroll | Ferdigmelde arbeidsbelastning for warehouse management for sky- og kantskalaenhet | Denne funksjonen gjør at ansatte kan bruke mobilappen Warehouse Management til å ferdigmelde en produksjons- eller partiordre når appen kjører mot en Warehouse Management-arbeidsbelastning på en sky- eller kantskalaenhet. Hvis du vil ha mer informasjon, kan du se [Ferdigmeld og plasser på en skalaenhet](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Produksjonskontroll | Starte produksjonsordre på Warehouse Management-arbeidsbelastning for sky- og kantskalaenhet | Denne funksjonen gjør at ansatte kan bruke Warehouse Management-mobilappen til å starte en produksjons- eller partiordre når appen kjører mot en Warehouse Management-arbeidsbelastning på en sky- eller kantskalaenhet. |
 | Lagerstyring | Nye sider for arbeidsområde for lastplanlegging | Aktiverer to nye arbeidsområdesider for lastplanlegging: **arbeidsområde for planlegging av innkommende last** og **arbeidsområde for planlegging av utgående last**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og oppdaterte dokumentasjonsressurser
@@ -70,7 +70,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. Disse emn
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for Finance and Operations-apper
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.24 av Finance and Operations-apper (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.24 av økonomi- og driftsapper (februar 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 

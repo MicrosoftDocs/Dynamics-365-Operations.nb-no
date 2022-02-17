@@ -16,20 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345305"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068850"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
 
-> [!WARNING]
-> Arbeidsbelastningen for produksjonsutførelse er tilgjengelig som forhåndsversjon på dette tidspunktet.
+> [!IMPORTANT]
+> Arbeidsbelastningen for produksjonsutførelse er for øyeblikket kun tilgjengelig som forhåndsversjon.
+>
 > Noen forretningsfunksjoner støttes ikke fullstendig i den offentlige forhåndsversjonen når arbeidsbelastningsskalaenheter brukes.
+>
+> Du kan ikke kjøre forhåndsversjonen av arbeidsbelastningen for produksjonskjøring på en skalaenhet der også arbeidsbelastningen for lagerkjøring er installert.
 
 Ved produksjonsutførelse leverer skalaenheter følgende funksjoner:
 
@@ -128,6 +131,22 @@ I gjeldende utgivelse støttes operasjoner med ferdigmeld og plasser (for ferdig
 ### Customize report as finished and putaway functionality
 
  -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktiver og bruk startoperasjonen på en skalaenhet
+
+I gjeldende utgivelse støttes startoperasjonen produksjon og partiordrer av [arbeidsmengden for lagerkjøring](cloud-edge-workload-warehousing.md) (ikke arbeidsmengden for produksjonskjøring). Du må derfor utføre disse oppgavene hvis du vil bruke denne funksjonaliteten når du er koblet til en skalaenhet:
+
+- Installer både arbeidsmengden for lagerkjøring og arbeidsmengden for produksjonskjøring på skalaenheten.
+- Aktiver funksjonen *Starte produksjonsordre på Warehouse Management-arbeidsbelastning for sky- og kantskalaenhet* i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Bruk Warehouse Management-mobilappen til å starte produksjons- eller partiordren.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Aktiver og bruk materialforbruk på en skalaenhet
+
+I den gjeldende versjonen støttes flyten i Warehouse Management-mobilappen for registrering av materialforbruk av [arbeidsmengden for lagerkjøring](cloud-edge-workload-warehousing.md) (ikke arbeidsmengden for produksjonskjøring). Du må derfor utføre disse oppgavene hvis du vil bruke denne funksjonaliteten når du er koblet til en skalaenhet:
+
+- Installer både arbeidsmengden for lagerkjøring og arbeidsmengden for produksjonskjøring på skalaenheten.
+- Aktiver funksjonen *Registrer materialforbruk i mobilappen på en skalaenhet* i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Bruk Warehouse Management-mobilappen til å registrere materialforbruk.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

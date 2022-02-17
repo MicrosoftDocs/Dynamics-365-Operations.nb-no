@@ -8,21 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmApplicant, LogisticsContactInfoGrid, HRMApplication,  DirPartyTable
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5305ded440dce0cf057e5fbe4df72635ce0e7b6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964712"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075456"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Angi søker- og søknadsdata manuelt
 
-[!include [banner](../../includes/banner.md)]
+> [!IMPORTANT]
+> Funksjonaliteten som er nevnt i dette emnet, er for øyeblikket tilgjengelig for Human Resources-kunder i Finance-infrastrukturen.  
+
 
 Denne fremgangsmåten viser hvordan du vedlikeholder informasjon om søkere og søknader manuelt. Du kan angi og vedlikeholde personlige opplysninger, intervjudatoer og -klokkeslett, referanser, kompetanser og overnattingsforespørsler for søkere. Du kan også oppdatere status for søkerens søknader om ansettelse og opprette brev eller e-postmeldinger for å kommunisere med søkere. Når du oppretter en søkerpost, opprettes en personpost for den søkeren i den globale adresseboken. Demonstrasjonsdatafirmaet **USMF** ble brukt til å opprette denne fremgangsmåten.
 

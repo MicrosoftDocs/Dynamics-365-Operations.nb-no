@@ -1,6 +1,6 @@
 ---
 title: Integrert original for leverandør
-description: Dette emnet beskriver integrering av leverandørdata mellom Finance and Operations-apper og Dataverse .
+description: Dette emnet beskriver integreringen av leverandørdata mellom Finance and Operations-apper og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fce5e072d39533fa5d54fe34e90c7aca9d01d67e
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7794f33aed7364b76a7d5ffd08a068342887e468
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782483"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063168"
 ---
 # <a name="integrated-vendor-master"></a>Integrert original for leverandør
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Begrepet *leverandør* refererer til en leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Selv om *leverandør* er et etablert begrep i Microsoft Dynamics 365 Supply Chain Management-, finnes det ikke noe leverandørbegrep i kundeengasjementsapper i Dynamics 365. Du kan imidlertid overbelaste tabellen **Konto/kontakt** for å lagre leverandørinformasjon. Den integrerte leverandørstandarden innfører et eksplisitt leverandørbegrep i kundeengasjementsapper. Du kan enten bruke den nye leverandørutformingen eller butikkleverandørdataene i tabellen **Konto/kontakt**. Dobbel skriving støtter begge metoder.
 
@@ -37,7 +37,7 @@ Hvis du ikke vil fortsette å lagre leverandørdata i tabellen **Konto/kontakt**
 ![Utvidet flyt for leverandørdata.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
-> Hvis du bruker Power Apps-portaler for selvbetjeningsleverandører, kan leverandørinformasjonen flyte direkte til Finance and Operations-apper.
+> Hvis du bruker Power Apps-portaler for selvbetjeningsleverandører, kan leverandørinformasjonen flyte direkte til økonomi- og driftsapper.
 
 ## <a name="templates"></a>Maler
 

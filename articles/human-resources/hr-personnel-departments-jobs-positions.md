@@ -2,7 +2,7 @@
 title: Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
 description: Dette emnet beskriver konseptuell informasjon om avdelinger, jobber og stillinger, som er organisasjonselementer som vedlikeholdes i Personale.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731814"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071550"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,30 +51,16 @@ En avdeling er en driftsenhet som representerer en kategori eller et funksjonsom
 
 ## <a name="jobs-and-positions"></a>Jobber og stillinger
 En jobb er en samling oppgaver og ansvarsområder som kreves av en person som utfører en jobb. En stilling er én enkeltforekomst av en jobb. Ansvarsområder, jobboppgaver, jobbfunksjoner, ferdigheter, utdanningsinformasjon og sertifikater som kreves for en jobb, er også nødvendig for stillinger som er tilknyttet en jobb.
+
 ### <a name="job-tasks"></a>Jobboppgaver
+
 Du kan opprette jobboppgaver som beskriver de grunnleggende oppgavene som må fullføres av en arbeider i en stilling for jobben. Den samme jobboppgaven kan legges til flere jobber, og stillinger for disse jobbene arver disse jobboppgavene. Eksempler på jobboppgaver er oppført i tabellen nedenfor.
 
-<table>
-<thead>
-<tr class="header">
-<th>Jobb</th>
-<th>Jobboppgave</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Salgssjef</td>
-<td><ul>
-<li><span class="input">Ytelsesgjennomgang</span> – Vurder jobbytelsen til hver enkelt selger.</li>
-<li><span class="input">Fraværsgjennomgang</span> – Godkjenn eller avvis fraværsforespørsler eller registreringer for hver selger.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Regnskapsfører</td>
-<td><span class="input">Finansrapport</span> – Vis ukentlige finansrapporter til økonomisjef.</td>
-</tr>
-</tbody>
-</table>
+| Jobb           | Jobboppgave                                                |
+|---------------|-------------------------------------------------------------|
+| Salgssjef | Ytelsesgjennomgang – Vurder jobbytelsen til hver enkelt selger.    |
+| Regnskapsfører    | Fraværsgjennomgang – Godkjenn eller avvis fraværsforespørsler eller registreringer for hver selger. |
+
 
 ### <a name="job-functions"></a>Jobbfunksjoner
 

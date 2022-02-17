@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
+ms.openlocfilehash: 1cf4ed8d2373a71594b9b03306c582ed998b6e39
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431190"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071521"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Opprette egendefinerte koblinger i selvbetjeningen for ledere
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,11 +39,11 @@ Hvis du vil bruke denne funksjonen, aktiverer du **Egendefinerte koblinger Leder
 
 1. I **Parametere for Personal** velger du **Lederselvbetjening**.
 
-2. Under **Konfigurere koblinger for ledere** kan du legge til, redigere eller fjerne en kobling. Du kan også gruppere koblingene sammen slik at de vises i en gruppe i Lederselvbetjening.
+2. Under **Konfigurere koblinger for ledere** kan du legge til, redigere eller fjerne en kobling. Du kan også gruppere koblingene sammen slik at de vises i en gruppe i **Lederselvbetjening**.
 
    ![Konfigurere egendefinerte koblinger i selvbetjeningen for ledere.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. Hvis du vil se koblingene, går du til kategorien **Mitt team** i Ansattselvbetjening.
+3. Hvis du vil se koblingene, går du til kategorien **Mitt team** i **Ansattselvbetjening**.
 
    ![Vise egendefinerte koblinger i selvbetjeningen for ledere.](./media/hr-employee-manager-self-service-custom-links-view.png)
 

@@ -4,18 +4,19 @@ description: Dette emnet inneholder informasjon om sky- og kantskalaenheter for 
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733445"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065770"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaleringsenheter i en distribuert hybridtopologi
 
@@ -51,8 +52,7 @@ Du kan konfigurere sentermiljøet og skyskalaenhetene for utvalgte arbeidsbelast
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for lagerstyring i en skalaenhet
 
-Ved hjelp av Warehouse Management-arbeidsflyten kan du kjøre Warehouse Management-prosesser på en isolert distribusjon.
-Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](cloud-edge-workload-warehousing.md).
+Warehouse Management-arbeidsbelastningen er den første distribuerte arbeidsbelastningen for skalaenheter som lanseres for allmenn tilgjengelighet. På denne måten kan lageroperasjonene skalere og kjøre i et robust miljø ved å bruke isolerte vedlikeholdsvinduer. Warehouse Management-arbeidsbelastningen støtter de fleste Warehouse Management-prosesser for bedriftssenteret. Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for produksjonskjøring i en skalaenhet
 

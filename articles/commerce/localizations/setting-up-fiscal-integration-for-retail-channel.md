@@ -1,31 +1,43 @@
 ---
 title: Definere økonomisk integrering for handelskanaler
 description: Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for handelskanaler.
-author: josaw
-ms.date: 08/10/2021
+author: EvgenyPopovMBS
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-ms.reviewer: josaw
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: epopov
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 38ad2cc3dc7e511ac6e2ac9484d10ebd2d1d425d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343319"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8076969"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Definere økonomisk integrering for handelskanaler
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for handelskanaler. Hvis du vil ha mer informasjon om regnskapsintegrering, kan du se [Oversikt over regnskapsintegrering for handelskanaler](fiscal-integration-for-retail-channel.md).
+
+## <a name="set-up-commerce-parameters"></a>Konfigurer handelsparametere
+
+1. På siden **Delte handelsparametere**, i **Generelt**-fanen, angir du **Aktiver regnskapsintegrering** til **Ja**.
+1. I kategorien **Nummerserier** definerer du nummersekvenser for følgende referanser:
+
+    - Nummer for teknisk profil for regnskap
+    - Gruppenummer for regnskapskobling
+    - Nummer for registreringsprosess
+
+1. På **Handelsparametere**-siden definerer du nummersekvensen for nummer for funksjonell profil for regnskap.
+
+    > [!NOTE]
+    > Nummerserier er valgfrie. Numre for alle regnskapsintegrasjonsenheter kan genereres fra nummerserier eller manuelt.
+
+## <a name="set-up-a-fiscal-registration-process"></a>Definere en bilagsregistreringsprosess
 
 Fremgangsmåten for å definere regnskapsintegreringen omfatter følgende hovedoppgaver:
 
@@ -35,116 +47,147 @@ Fremgangsmåten for å definere regnskapsintegreringen omfatter følgende hovedo
 - Tilordne bilagsregistreringsprosessen til funksjonalitetsprofiler for salgssted (POS).
 - Tilordne tekniske profiler for kobling til maskinvareprofiler.
 
-## <a name="set-up-a-fiscal-registration-process"></a>Definere en bilagsregistreringsprosess
+### <a name="upload-configurations-of-fiscal-document-providers"></a>Last opp konfigurasjoner av leverandører av regnskapsdokumenter
 
-Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følgende innstillinger:
+En leverandør for regnskapsdokumentet er ansvarlig for å generere regnskapsdokumenter som representerer transaksjoner og hendelser som er registrert på salgsstedet i et format som også brukes for samhandlingen med en regnskapsenhet eller -tjeneste. For eksempel kan en regnskapsdokumentleverandør generere en representasjon av en bilagskvittering i XML-format.
 
-1. Oppdater handelsparametere.
+Følg trinnene nedenfor for å laste opp konfigurasjoner av leverandører av regnskapsdokumenter.
 
-    1. På siden **Delte handelsparametere**, i **Generelt**-fanen, angir du **Aktiver regnskapsintegrering** til **Ja**. I kategorien **Nummerserier** definerer du nummersekvenser for følgende referanser:
+1. I Commerce-hovedkvarteret går du til siden **Leverandører for regnskapsdokument** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Leverandører for regnskapsdokument**).
+1. Last opp en XML-konfigurasjon for hver enhet eller tjeneste du planlegger å bruke.
 
-        - Nummer for teknisk profil for regnskap
-        - Gruppenummer for regnskapskobling
-        - Nummer for registreringsprosess
+> [!TIP]
+> Ved å velge **Vis** kan du vise alle funksjonelle profiler som er knyttet til gjeldende finansdokumentleverandør.
 
-    1. På **Handelsparametere**-siden definerer du nummersekvensen for nummer for funksjonell profil for regnskap.
+> [!NOTE]
+> Datatilordning regnes som en del av en regnskapsdokumentleverandør. Hvis du vil definere forskjellige datatilordninger for samme tilkobling (for eksempel tilstandsspesifikke reguleringer), bør du opprette forskjellige regnskapsdokumentleverandører.
 
-    > [!NOTE]
-    > Nummerserier er valgfrie. Numre for alle regnskapsintegrasjonsenheter kan genereres fra nummerserier eller manuelt.
+### <a name="upload-configurations-of-fiscal-connectors"></a>Last opp konfigurasjoner av regnskapskontakter
 
-1. Last opp konfigurasjoner av regnskapskoblinger og leverandører av regnskapsdokument.
+En regnskapskobling er ansvarlig for kommunikasjonen med en regnskapsenhet eller -tjeneste. En regnskapskobling kan for eksempel sende en bilagskvittering som en regnskapsdokumentleverandør opprettet i et XML-format til en bilagsskriver. Hvis du vil ha mer informasjon om regnskapsintegreringskomponentene, se [Bilagsregistreringsprosess og regnskapsintegreringeseksempler for regnskapsenheter og -tjenester](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
-    En leverandør for regnskapsdokumentet er ansvarlig for å generere regnskapsdokumenter som representerer transaksjoner og hendelser som er registrert på salgsstedet i et format som også brukes for samhandlingen med en regnskapsenhet eller -tjeneste. For eksempel kan en regnskapsdokumentleverandør generere en representasjon av en bilagskvittering i XML-format.
+Følg trinnene nedenfor for å laste opp konfigurasjoner av regnskapskoblinger.
 
-    En regnskapskobling er ansvarlig for kommunikasjonen med en regnskapsenhet eller -tjeneste. En regnskapskobling kan for eksempel sende en bilagskvittering som en regnskapsdokumentleverandør opprettet i et XML-format til en bilagsskriver. Hvis du vil ha mer informasjon om regnskapsintegreringskomponentene, se [Bilagsregistreringsprosess og regnskapsintegreringeseksempler for regnskapsenheter](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+1. I Commerce-hovedkvarteret går du til siden **Regnskapskoblinger** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Regnskapskoblinger**).
+1. Last opp en XML-konfigurasjon for hver enhet eller tjeneste du planlegger å bruke til regnskapsintegreringsformål.
 
-    1. På siden **Regnskapskoblinger** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Regnskapskoblinger**) laster du opp en XML-konfigurasjon for hver enhet eller tjeneste du planlegger å bruke for regnskapsintegreringsformål.
+> [!TIP]
+> Ved å velge **Vis** kan du vise alle funksjonelle og tekniske profiler som er knyttet til gjeldende regnskapskobling.
 
-        > [!TIP]
-        > Ved å velge **Vis** kan du vise alle funksjonelle og tekniske profiler som er knyttet til gjeldende regnskapskobling.
+For eksempler på konfigurasjoner av regnskapskoblinger og regnskapsdokumentleverandører, se [Eksempler på regnskapsintegrering i SDK for Commerce](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
 
-    1. På siden **Leverandører for regnskapsdokument** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Leverandører for regnskapsdokument**) laster du opp en XML-konfigurasjon for hver enhet eller tjeneste du planlegger å bruke.
+### <a name="create-connector-functional-profiles"></a>Opprett funksjonsprofiler for kobling
 
-        > [!TIP]
-        > Ved å velge **Vis** kan du vise alle funksjonelle profiler som er knyttet til gjeldende finansdokumentleverandør.
+Hvis du vil opprette funksjonsprofiler for koblinger, gjør du følgende.
 
-    For eksempler på konfigurasjoner av regnskapskoblinger og regnskapsdokumentleverandører, se [Eksempler på regnskapsintegrering i SDK for Commerce](fiscal-integration-for-retail-channel.md#fiscal-integration-samples-in-the-commerce-sdk).
+1. I Commerce-hovedkvarteret går du til siden **Funksjonsprofiler for kobling** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Funksjonsprofiler for kobling**).
+1. Opprett en funksjonsprofil for kobling for hver kombinasjon av en regnskapskobling og en finansdokumentleverandør som er relatert til denne regnskapskoblingen, ved å følge trinnene nedenfor:
 
-    > [!NOTE]
-    > Datatilordning regnes som en del av en regnskapsdokumentleverandør. Hvis du vil definere forskjellige datatilordninger for samme tilkobling (for eksempel tilstandsspesifikke reguleringer), bør du opprette forskjellige regnskapsdokumentleverandører.
+    1. Velg et tilkoblingsnavn.
+    1. Velg en dokumentleverandør.
 
-1. Opprett funksjonelle profiler for kobling og tekniske profiler for kobling.
+#### <a name="change-data-mapping-parameters-in-a-connector-functional-profile"></a>Endre datatilordningparametrene i en funksjonell profil for kobling
 
-    1. På siden **Funksjonelle profiler for kobling** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Funksjonelle profiler for kobling**), opprett en funksjonell profil for kobling for hver kombinasjon av regnskapskobling og finansdokumentleverandør som er knyttet til denne regnskapskoblingen.
+Du kan endre datatilordningparametrene i en funksjonell profil for kobling. Følgende tabell gir noen eksempler på datatilordningsparametere i en funksjonsprofil for kobling.
 
-        1. Velg et tilkoblingsnavn.
-        1. Velg en dokumentleverandør.
+| Parameter | Format | Eksempel |
+|-----------|--------|---------|
+| Mva-satsinnstillinger | verdi: VATrate | 1 : 2000, 2 : 1800 |
+| Tilordning av mva-koder | VATcode : verdi | vat20: 1, vat18: 2 |
+| Tilordning av betalingsmiddeltyper | TenderType: verdi | Kontant: 1, kort: 2 |
 
-        Du kan endre datatilordningparametrene i en funksjonell profil for kobling. Hvis du vil gjenopprette standardparameterne som er definert i konfigurasjon av regnskapsdokumentleverandør, velger du **Oppdater**.
+Hvis du vil gjenopprette standardparameterne som er definert i konfigurasjon av regnskapsdokumentleverandør, velger du **Oppdater** på siden **Funksjonsprofiler for kobling**.
 
-        **Eksempler**
+> [!NOTE]
+> Funksjonelle profiler for kobling er firmaspesifikke. Hvis du planlegger å bruke samme kombinasjon av regnskapskobling og finansdokumentleverandør for forskjellige firmaer, bør du opprette en funksjonell profil for kobling for hvert firma.
 
-        | Parameter  | Format | Eksempel |
-        |---|--------|---------|
-        | **Mva-satsinnstillinger** | verdi: VATrate | 1 : 2000, 2 : 1800 |
-        | **Tilordning av mva-koder** | VATcode : verdi | vat20: 1, vat18: 2 |
-        | **Tilordning av betalingsmiddeltyper** | TenderType: verdi | Kontant: 1, kort: 2 |
+### <a name="create-connector-technical-profiles"></a>Opprett tekniske profiler for kobling
 
-        > [!NOTE]
-        > Funksjonelle profiler for kobling er firmaspesifikke. Hvis du planlegger å bruke samme kombinasjon av regnskapskobling og finansdokumentleverandør i forskjellige firmaer, bør du opprette en funksjonell profil for kobling for hvert firma.
+Hvis du vil opprette tekniske profiler for koblinger, gjør du følgende.
 
-    1. På siden **Tekniske profiler for kobling** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Tekniske profiler for kobling**) oppretter du en teknisk profil for kobling for hver regnskapskobling.
+1. I Commerce-hovedkvarteret går du til siden **Tekniske profiler for kobling** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Tekniske profiler for kobling**).
+1. Opprett en teknisk profil for kobling for hver regnskapskobling ved å følge denne fremgangsmåten:
 
-        1. Velg et tilkoblingsnavn.
-        1. Velg en tilkoblingstype. For enheter som er koblet til en maskinvarestasjon, velger du **Lokal**.
+    1. Velg et tilkoblingsnavn.
+    1. Velg en tilkoblingstype:
 
-            > [!NOTE]
-            > Bare lokale koblinger støttes.
+        - Velg **Lokal** for enheter eller tjenester som er koblet til en maskinvarestasjon, eller som finnes i det lokale nettverket.
+        - Velg **Ekstern** for eksterne tjenester.
+        - For interne koblinger i Commerce Runtime (CRT) velger du **Intern**. 
 
-        Parameterne i kategoriene **Enhet** og **Innstillinger** i en teknisk profil for kobling kan endres. Hvis du vil gjenopprette standardparameterne som er definert i konfigurasjon for regnskapskobling, velger du **Oppdater**. Når en ny versjon av en XML-konfigurasjon er lastet inn, får du en melding om at gjeldende regnskapskobling eller regnskapsdokumentleverandør allerede er i bruk. Denne prosedyren overstyre ikke manuelle endringer som tidligere ble gjort i funksjonelle profiler for kobling og tekniske profiler for kobling. For å bruke standardsettet med parametere fra en ny konfigurasjon klikker du på siden **Funksjonelle profiler for kobling** eller siden **Tekniske profiler for kobling** og velger **Oppdater**.
+    1. Velg en koblingsplassering:
 
-1. Opprett grupper for regnskapskobling.
+        - Hvis koblingen befinner seg på maskinvarestasjonen, velger du **Maskinvarestasjon**.
+        - Hvis koblingen finnes i kassen på salgsstedet, velger du **Kasse**.
 
-    En gruppe for regnskapskobling kombinerer funksjonelle profiler for regnskapskoblinger som utfører identiske funksjoner, og brukes på samme trinn i en regnskapsregistreringsprosess. Hvis for eksempel flere bilagsskrivermodeller kan brukes i en butikk, kan regnskapskoblinger for disse bilagsskriverne kombineres i en gruppe for regnskapskobling.
+Parameterne i kategoriene **Enhet** og **Innstillinger** i en teknisk profil for kobling kan endres. Hvis du vil gjenopprette standardparameterne som er definert i konfigurasjon for regnskapskobling, velger du **Oppdater**. Når en ny versjon av en XML-konfigurasjon lastes inn, får du en melding om at gjeldende regnskapskobling eller regnskapsdokumentleverandør allerede er i bruk. Denne prosedyren overstyre ikke manuelle endringer som tidligere ble gjort i funksjonelle profiler for kobling og tekniske profiler for kobling. For å bruke standardsettet med parametere fra en ny konfigurasjon velger du **Oppdater** på siden **Funksjonelle profiler for kobling** eller siden **Tekniske profiler for kobling**.
 
-    1. På siden **Gruppe for regnskapskobling** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Grupper for regnskapskobling**) oppretter du en ny gruppe for regnskapskobling.
-    1. Legg til funksjonelle profiler i koblingsgruppen. I kategorien **Funksjonelle profiler** velger du **Legg til** og velger et profilnummer. Hver regnskapskobling i en koblingsgruppe kan bare ha én funksjonsprofil.
-    1. Hvis du vil avbryte bruken av den funksjonelle profilen, må du sette **Deaktiver** til **Ja**. Denne endringen påvirker bare den gjeldende koblingsgruppen. Du kan fortsette å bruke den samme funksjonsprofilen i andre tilkoblingsgrupper.
+Følg denne fremgangsmåten hvis du må definere spesifikke parametere for en individuell POS-kasse eller -butikk.
 
-1. Opprett en bilagsregistreringsprosess.
+1. Velg menyelementet **Overstyr**.
+1. Opprett en ny post på **Overstyr**-siden.
+1. Velg en butikk eller en POS-kasse. Du kan overstyre parametere for den valgte tekniske profilen for en enkelt POS-kasse eller alle POS-kasser i en enkelt butikk.
+1. Angi parametere for den valgte POS-kassen eller butikken på **Enhet**-fanen.
 
-    En bilagsregistreringsprosess er definert av rekkefølgen på registreringstrinnene og koblingsgruppen som brukes for hvert trinn.
+### <a name="create-fiscal-connector-groups"></a>Opprett grupper for regnskapskobling
 
-    1. På siden **Bilagsregistreringsprosess** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Bilagsregistreringsprosesser**) oppretter du en ny post for hver unike prosess i bilagsregistreringen.
-    1. Legg til registreringstrinn i prosessen:
+En gruppe for regnskapskobling kombinerer funksjonelle profiler for regnskapskoblinger som utfører identiske funksjoner, og brukes på samme trinn i en regnskapsregistreringsprosess. Hvis for eksempel flere bilagsskrivermodeller kan brukes i en butikk, kan regnskapskoblinger for disse bilagsskriverne kombineres i en gruppe for regnskapskobling.
 
-        1. Velg **Legg til**.
-        1. Velg en regnskapskoblingstype.
-        1. I feltet **Gruppenummer** velger du riktig gruppe for regnskapskobling.
+Hvis du vil opprette en regnskapskobling, gjør du følgende.
 
-1. Tilordne enheter av bilagsregistreringsprosessen til POS-profiler.
+1. Gå til siden **Gruppe for regnskapskobling** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Grupper for regnskapskobling**).
+1. Opprett en ny gruppe for regnskapskobling.
+1. Legg til funksjonelle profiler i koblingsgruppen. I kategorien **Funksjonelle profiler** velger du **Legg til** og velger et profilnummer. Hver regnskapskobling i en koblingsgruppe kan bare ha én funksjonsprofil.
+1. Hvis du vil avbryte bruken av den funksjonelle profilen, må du sette **Deaktiver** til **Ja**. Denne endringen påvirker bare den gjeldende koblingsgruppen. Du kan fortsette å bruke den samme funksjonsprofilen i andre tilkoblingsgrupper.
 
-    1. På siden **Funksjonalitetsprofiler for salgssted** (**Retail og Commerce \> Kanaloppsett \> POS-oppsett \> POS-profiler \> Funksjonalitetsprofiler**) tilordnes bilagsregistreringsprosessen til en funksjonalitetsprofil for salgssted. Velg **Rediger** og deretter i kategorien **Bilagsregistreringsprosess** i feltet **Prosessnummer** velger du en prosess.
-    1. På siden **Maskinvareprofil for salgssted** (**Retail og Commerce \> Kanaloppsett \> POS-oppsett \> POS-profiler \> Maskinvareprofiler**) tilordner du tekniske profiler for kobling til en maskinvareprofil. Velg **Rediger**, legg til en linje i kategorien **Eksterne regnskapsenheter** og deretter, i feltet **Profilnummer**, velger du en teknisk profil for kobling.
+### <a name="create-a-fiscal-registration-process"></a>Opprett en bilagsregistreringsprosess
 
-    > [!NOTE]
-    > Du kan legge til flere tekniske profiler i den samme maskinvareprofilen. En maskinvareprofil eller funksjonalitetsprofil for salgssted skal imidlertid bare ha ett skjæringspunkt med en gruppe for regnskapskobling.
+En bilagsregistreringsprosess er definert av rekkefølgen på registreringstrinnene og koblingsgruppen som brukes for hvert trinn.
 
-    Bilagsregistreringsflyten er definert av renskapsregistreringsprosessen og også av noen parametere for regnskapsintegreringskomponenter: Commerce Runtime-utvidelsen for regnskapsdokumentleverandøren og Maskinvarestasjon-utvidelsen for regnskapskoblingen.
+Følg denne fremgangsmåten for å opprette en bilagsregistreringsprosess.
 
-    - Abonnementet for hendelser og transaksjoner til regnskapsregistrering er forhåndsdefinert i regnskapsdokumentleverandøren.
-    - Regnskapsdokumentleverandøren er også ansvarlig for å identifisere regnskapskoblingen som brukes til regnskapsregistrering. Den samsvarer med de funksjonelle profilene for kobling som er inkludert i gruppen for regnskapskobling som er angitt for gjeldende trinn i regnskapsregistreringsprosessen for teknisk profil for kobling som er tilordnet til maskinvareprofilen for maskinvarestasjonen som salgsstedet er koblet til.
-    - Regnskapsdokumentleverandøren bruker innstillingene for datatilordning fra regnskapsdokumentleverandørkonfigurasjonen for å transformere transaksjons-/hendelsesdata som for eksempel avgifter og betalinger når det genereres et regnskapsdokument.
-    - Når regnskapsdokumentleverandøren genererer et regnskapsdokument, kan regnskapskoblingen enten sende det til regnskapsenheten som den er, eller analysere det og gjøre det om til en sekvens med kommandoer for API-enheten, avhengig av hvordan kommunikasjonen håndteres.
+1. I Commerce-hovedkvarteret går du til siden **Bilagsregistreringsprosess** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Bilagsregistreringsprosess**).
+1. Opprett en ny post for hver unike bilagsregistreringsprosess.
+1. Bruk denne fremgangsmåten til å legge til registreringstrinn i prosessen:
 
-1. På siden **Bilagsregistreringsprosess** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Bilagsregistreringsprosesser**) velger du **Valider** for å validere regnskapsregistreringsprosessen.
+    1. Velg **Legg til**.
+    1. Velg en regnskapskoblingstype.
+    1. I feltet **Gruppenummer** velger du riktig gruppe for regnskapskobling.
 
-    Vi anbefaler at du kjører denne typen validering i følgende tilfeller:
+### <a name="assign-entities-of-the-fiscal-registration-process-to-pos-profiles"></a>Tilordne enheter av bilagsregistreringsprosessen til POS-profiler
 
-    - Når du har fullført alle innstillinger for en ny registreringsprosess, inkludert når du tilordner registreringsprosesser til salgsstedsfunksjonalitetsprofiler og maskinvareprofiler.
-    - Når du endrer en eksisterende regnskapsregistreringsprosess, og disse endringene kan føre til at en annen registreringskobling velges ved kjøretid (for eksempel hvis du endrer koblingsgruppen for et trinn i regnskapsregistreringsprosessen, aktiverer en funksjonell profil for kobling i en tilkoblingsgruppe eller legger til en ny funksjonell profil for kobling i en koblingsgruppe).
-    - Når du gjør endringer i tilordningen av tekniske profiler for kobling til maskinvareprofiler.
+Gjør følgende for å tilordne enheter av bilagsregistreringsprosessen til POS-profiler.
 
+1. I Commerce-hovedkvarteret går du til siden **Funksjonalitetsprofiler for salgssted** (**Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Funksjonalitetsprofiler**). 
+1. Tilordne bilagsregistreringsprosessen til en funksjonalitetsprofil for salgssted.
+1. Velg **Rediger** og deretter i kategorien **Bilagsregistreringsprosess** i feltet **Prosessnummer** velger du en prosess.
+1. Gå til siden **Maskinvareprofil for salgssted** (**Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Maskinvareprofiler**).
+1. Tilordne tekniske profiler for kobling til en maskinvareprofil. 
+1. Velg **Rediger**, og legg deretter til en linje på fanen **Eksterne regnskapsenheter**. 
+1. Velg en teknisk profil for kobling i feltet **Profilnummer**.
+
+> [!NOTE]
+> Du kan legge til flere tekniske profiler i den samme maskinvareprofilen. En maskinvareprofil eller funksjonalitetsprofil for salgssted skal imidlertid bare ha ett skjæringspunkt med en gruppe for regnskapskobling.
+
+Bilagsregistreringsflyten er definert av renskapsregistreringsprosessen og også av noen parametere for regnskapsintegreringskomponenter: CRT-utvidelsen for regnskapsdokumentleverandøren og Maskinvarestasjon-utvidelsen for regnskapskoblingen.
+
+- Abonnementet for hendelser og transaksjoner til regnskapsregistrering er forhåndsdefinert i regnskapsdokumentleverandøren.
+- Regnskapsdokumentleverandøren er også ansvarlig for å identifisere regnskapskoblingen som brukes til regnskapsregistrering. Den samsvarer med de funksjonelle profilene for kobling som er inkludert i gruppen for regnskapskobling som er angitt for gjeldende trinn i regnskapsregistreringsprosessen for teknisk profil for kobling som er tilordnet til maskinvareprofilen for maskinvarestasjonen som salgsstedet er koblet til.
+- Regnskapsdokumentleverandøren bruker innstillingene for datatilordning fra regnskapsdokumentleverandørkonfigurasjonen for å transformere transaksjons-/hendelsesdata som for eksempel avgifter og betalinger når det genereres et regnskapsdokument.
+- Når regnskapsdokumentleverandøren genererer et regnskapsdokument, kan regnskapskoblingen enten sende det til regnskapsenheten som den er, eller analysere det og gjøre det om til en sekvens med kommandoer for API-enheten, avhengig av hvordan kommunikasjonen håndteres.
+
+### <a name="validate-the-fiscal-registration-process"></a>Valider regnskapsregistreringsprosessen
+
+Det anbefales at du validerer bilagsregistreringsprosessen i følgende tilfeller:
+
+- Du har fullført alle innstillingene for en ny registreringsprosess. Disse innstillingene omfatter tilordning av registreringsprosesser til POS-funksjonalitetsprofiler og maskinvareprofiler.
+- Du har foretatt endringer i en eksisterende bilagsregistreringsprosess, og disse endringene kan føre til at en annen regnskapskobling blir valgt ved kjøretid. (Du har for eksempel endret koblingsgruppen for et trinn i bilagsregistreringsprosessen, aktivert en koblingsfunksjonsprofil i en koblingsgruppe eller lagt til en ny koblingsfunksjonsprofil i en koblingsgruppe.)
+- Du har foretatt endringer i tilordningen av tekniske profiler for kobling til maskinvareprofiler.
+
+Følg denne fremgangsmåten for å validere bilagsregistreringsprosessen.
+
+1. I Commerce-hovedkvarteret går du til siden **Bilagsregistreringsprosess** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Bilagsregistreringsprosess**).
+1. Velg **Valider** for å validere bilagsregistreringsprosessen.
 1. På siden **Distribusjonsplan** kjører du **1070**- og **1090**-jobber for å overføre data til kanaldatabasen.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Konfigurere bilagstekster for rabatter
@@ -176,22 +219,26 @@ I noen tilfeller må en spesiell tekst skrives ut på en bilagskvittering hvis e
 
 Feilbehandlingsalternativene som er tilgjengelige i regnskapsintegrasjonen, defineres i bilagsregistreringsprosessen. Hvis du vil ha mer informasjon om feilbehandling i regnskapsintegreringen, kan du se [Feilbehandling](fiscal-integration-for-retail-channel.md#error-handling).
 
+Følg denne fremgangsmåten for å angi innstillinger for feilhåndtering.
+
 1. På siden **Bilagsregistreringsprosess** (**Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Bilagsregistreringsprosesser**) kan du angi følgende parametere for hvert trinn i bilagsregistreringsprosessen.
 
     - **Tillat overhopping** – Denne parameteren aktiverer **Hopp over**-alternativet i dialogboksen for feilbehandling.
     - **Tillat Merk som registrert** – Denne parameteren aktiverer **Merk som registrert**-alternativer i dialogboksen for feilbehandling.
+    - **Tillat utsettelse** – Denne parameteren aktiverer **Utsett**-alternativet i dialogboksen for feilbehandling.
     - **Fortsett ved feil** – Hvis denne parameteren er aktivert, vil bilagsregistreringsprosessen fortsette på salgsstedskassen hvis bilagsregistrering av en transaksjon eller hendelsen mislykkes. Hvis ikke, for å kjøre bilagsregistrering av neste transaksjon eller hendelse, må operatøren prøve å kjøre den mislykkede bilagsregistreringen på nytt, hoppe over den eller merke transaksjonen eller hendelsen som registrert. Hvis du vil ha mer informasjon, se [Valgfri bilagsregistrering](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
     > [!NOTE]
     > Hvis parameteren **Fortsett ved feil** er aktivert, deaktiveres parameteren **Tillat overhopping** og **Tillat Merk som registrert** automatisk.
 
-1. Alternativene **Hopp over** og **Merk som registrert** i dialogboksen for feilbehandling krever tillatelsen **Tillat å hoppe over registrering eller merke som registrert**. Derfor må du på siden **Tillatelsesgrupper** (**Retail og Commerce \> Ansatte \> Tillatelsesgrupper**) aktivere tillatelsen **Tillat å hoppe over registrering eller merke som registrert**.
-1. Alternativene **Hopp over** og **Merk som registrert** lar operatorer angi tilleggsinformasjon når bilagsregistreringen mislykkes. Hvis du vil gjøre denne funksjonaliteten tilgjengelig, må du angi infokodene **Hopp over** og **Merk som registrert** i en gruppe for regnskapskobling. Informasjonen som operatorene angir, lagres deretter som en infokodetransaksjon som er knyttet til regnskapstransaksjon. Hvis du vil ha mer informasjon om infokoder, kan du se [Informasjonskoder og informasjonskodegrupper](../info-codes-retail.md).
+1. Alternativene **Hopp over** og **Merk som registrert** i dialogboksen for feilbehandling krever at tillatelsen **Tillat å hoppe over registrering eller merke som registrert** er aktivert. Du kan aktivere denne tillatelsen ved å gå til siden **Tillatelsesgrupper** (**Detaljhandel og handel \> Ansatte \> Tillatelsesgrupper**), og angi alternativet **Tillat å hoppe over registrering eller merke som registrert** til **Ja**.
+1. **Utsette**-alternativet i dialogboksen for feilbehandling krever at tillatelsen **Tillat utsettelse** er aktivert. Du kan aktivere tillatelsen ved å gå til siden **Tillatelsesgrupper** (**Detaljhandel og handel \> Ansatte \> Tillatelsesgrupper**), og angi alternativet **Tillat utsettelse** til **Ja**.
+1. Alternativene **Hopp over**, **Merk som registrert** og **Utsett** lar operatorer angi tilleggsinformasjon når bilagsregistreringen mislykkes. Hvis du vil gjøre denne funksjonaliteten tilgjengelig, må du angi infokodene **Hopp over**, **Merk som registrert** og **Utsett** i en gruppe for regnskapskobling. Informasjonen som operatorene angir, lagres deretter som en infokodetransaksjon som er knyttet til regnskapstransaksjon. Hvis du vil ha mer informasjon om infokoder, kan du se [Informasjonskoder og informasjonskodegrupper](../info-codes-retail.md).
 
     > [!NOTE]
     > **Produkt**-utløserfunksjonen støttes ikke for informasjonskodene som brukes til **Hopp over** og **Merk som registrert** i grupper for regnskapskobling.
 
-    - På siden **Gruppe for regnskapskobling** i fanen **Infokoder** velger du infokoder eller informasjonskodegrupper i feltene **Hopp over** og **Merk som registrert**.
+    - På siden **Gruppe for regnskapskobling** på fanen **Infokoder** velger du infokoder eller informasjonskodegrupper i feltene **Hopp over**, **Merk som registrert** og **Utsett**.
 
     > [!NOTE]
     > Ett regnskapsdokument og ett ikke-regnskapsdokument kan genereres på et hvilket som helst trinn i bilagsregistreringsprosessen. En finansdokumentleverandørutvidelse identifiserer hver type transaksjon eller hendelse som er relatert til regnskapsdokumenter eller ikke-regnskapsdokumenter. Feilhåndteringsfunksjonen gjelder bare for regnskapsdokumenter.

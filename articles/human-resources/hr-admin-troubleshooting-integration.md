@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413417"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071116"
 ---
 # <a name="integration-with-finance-faq"></a>Vanlige spørsmål om integrasjon med Finance
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dette emnet gir svar på vanlige spørsmål som er tilknyttet hvilke data som synkroniseres når Dynamics 365 Human Resources er integrert med Dynamics 365 Finance.
 
@@ -86,7 +89,7 @@ Det kreves ingen spesielle oppsett for unntaksbehandling. Dataintegratoren finne
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kan jeg konfigurere toveis integrasjon?
 
-Nei, integrasjon er for tiden énveis (Human Resources til Finance and Operations). Det finnes imidlertid en standardmal som er tilgjengelig for å sende data fra Human Resources til Finance.
+Nei, integrasjon er énveis (fra Human Resources til økonomi og drift). Det finnes imidlertid en standardmal som er tilgjengelig for å sende data fra Human Resources til Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jeg tillate sletting av oppføringer som en del av min integrasjon?
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774855"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074973"
 ---
 # <a name="safety-margins"></a>Sikkerhetsmarginer
 
@@ -61,9 +61,6 @@ Legg merke til at en mottaksmargin ikke brukes når lagerbeholdningen brukes som
 
 ### <a name="reorder-margin"></a>Gjenbestillingsmargin
 
-> [!NOTE]
-> **Kommer snart:** Denne funksjonen støttes ennå ikke for planleggingsoptimalisering. Før den støttes, vil alle verdier som angis for **Gjenbestillingsmargin lagt til vareleveringstiden**, behandles som *0* (null).
-
 Illustrasjonen nedenfor uthever gjenbestillingsmarginen.
 
 ![Gjenbestillingsmargin.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ Illustrasjonen nedenfor uthever gjenbestillingsmarginen.
 Gjenbestillingsmarginen legges til før varens leveringstid for alle planlagte ordrer under hovedplanlegging. Derfor sikres tilleggstiden for en forsyningsordre. Denne marginen brukes vanligvis som en buffer for å sikre tiden for godkjenningsprosesser eller andre interne prosesser som kreves ved opprettingen av forsyningsordrer. Gjenbestillingsmarginen plasseres mellom forsyningens *ordredato* og *startdato*.
 
 ### <a name="issue-margin"></a>Avgangsmargin
-
-> [!NOTE]
-> **Kommer snart:** Denne funksjonen støttes ennå ikke for planleggingsoptimalisering. Før den støttes, vil alle verdier som angis for **Avgangsmargin trukket fra behovsdato**, behandles som *0* (null).
 
 Illustrasjonen nedenfor uthever avgangsmarginen.
 

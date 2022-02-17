@@ -2,7 +2,7 @@
 title: Opprette et e-handelsområde
 description: Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 author: bicyclingfool
-ms.date: 07/02/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 60fea46da2d1ac9b319ed0a7b832809da70baa6eb8ae22319321200fb938c70e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737634"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090775"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
 
@@ -48,8 +48,15 @@ Gjør følgende for å opprette området.
 | Domene                              | Velg et domenenavn som skal være domene for denne nettbutikken. Hvis du ikke har konfigurert noen domener i LCS, kan du la dette feltet stå tomt. Når domenet er konfigurert i LCS, må du legge det til i nettbutikken under **Områdeinnstillinger**.  |
 | Bane                              | Når området støtter mer enn ett språk for et gitt domenenavn, kan du bruke banefeltet til å opprette en unik område-URL-adresse for dette domenet og denne språkkombinasjonen. Hvis språket du angav i **Standardspråk**-feltet, er det eneste språket du vil støtte for dette domenet eller vil fortsette å være standardspråket etter at du har lokalisert området til flere språk, anbefaler vi at du lar dette feltet stå tomt. |
 
-
 Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken din, ved å velge kategorien **Produker**. Du skal se sortimentet av produkter som er tilordnet nettbutikken. Du kan også bruke rullegardinmenyen øverst til venstre på siden for å få tilgang til de tildelte produktene etter kategori.
+
+## <a name="rename-your-site"></a>Gi nytt navn til nettstedet ditt
+
+Hvis du vil gi et nytt navn til nettstedet ditt i områdebygger, følger du denne fremgangsmåten.
+
+1. Hvis du vil åpne områdelistevisning, velger du **Områdeveksling** øverst til høyre, og deretter velger du **Behandle områder**. 
+1. Merk av i avmerkingsboksen ved siden av området du vil gi nytt navn, og velg deretter **Gi nytt navn** på kommandolinjen.
+1. I dialogboksen **Nytt områdeavn** skriver du inn det nye områdenavnet og velger deretter **OK**. Områdelisten oppdateres for å vise områdets nye navn.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

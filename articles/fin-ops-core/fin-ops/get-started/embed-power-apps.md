@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488060"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065125"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bygge inn lerretsapper fra Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power Apps er en tjeneste som lar utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Finance and Operations-apper støtter integrasjon med Power Apps. Lerretsapper som du, organisasjon din eller det videre økosystemet utvikler, kan bygges inn i Finance and Operations-apper for å øke produktets funksjonalitet. Du kan for eksempel bygge en lerretsapp fra Power Apps for å supplere en Finance and Operations-app med informasjon som hentes fra et annet system.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Microsoft Power Apps er en tjeneste som lar utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Økonomi- og driftsapper støtter integrering med Power Apps. Lerretsapper som du, organisasjon din eller det bredere økosystemet utvikler, kan bygges inn i økonomi- og driftsapper for å øke produktets funksjonalitet. Du kan for eksempel bygge en lerretsapp fra Power Apps for å supplere en økonomi- og driftsapp med informasjon som hentes fra et annet system.
 
 Hvis du vil vite mer om innebygging av lerretsapper, kan du se den korte videoen [Slik bygger du inn lerretsapper](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
@@ -32,7 +35,7 @@ Hvis du vil vite mer om innebygging av lerretsapper, kan du se den korte videoen
 
 Før du bygger inn en lerretsapp fra Power Apps i klienten, må du først finne eller lage en app med ønskede visuelle effekter og/eller funksjonalitet. Dette emnet inneholder ikke en detaljert beskrivelse av prosessen for bygging av apper. Hvis du ikke har brukt Power Apps, se [Power Apps-dokumentasjonen](/powerapps/).
 
-Det finnes tre måter å bygge inn en app på i en Finance and Operations-app. Du kan bruke fremgangsmåten som passer best til scenariet. 
+Det finnes tre måter å bygge inn en app på i en økonomi- og driftsapp. Du kan bruke fremgangsmåten som passer best til scenariet. 
 
 - Bygg inn lerretsappen i **Power Apps**-knappen i den standard handlingsruten på en side. Apper du legger til på denne måten, vises som elementer på **Power Apps**-menyknappen, og appene åpnes i sideruter. 
 - Bygg inn lerretsappen direkte på en eksisterende side som en ny kategoriside (pivotfane, hurtigfane, blad eller arbeidsområde).
@@ -65,7 +68,7 @@ Fremgangsmåten nedenfor viser hvordan du bygger inn en lerretsapp på en eksist
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Bygg inn en lerretsapp som en helsideopplevelse fra instrumentbordet
 
-Det kan hende at du vil bygge inn en lerretsapp fra instrumentbordet hvis appen ikke er relatert til en eksisterende side, eller hvis du bare vil legge inn appen som en fullsideopplevelse i Finance and Operations-appen.
+Det kan hende at du vil bygge inn en lerretsapp fra instrumentbordet hvis appen ikke er relatert til en eksisterende side, eller hvis du bare vil legge inn appen som en fullsideopplevelse i økonomi- og driftsappen.
 
 > [!NOTE]
 > Du må aktivere funksjonen **Fullsideapper** i funksjonsadministrasjon for å gjøre denne funksjonen tilgjengelig. 
@@ -83,7 +86,7 @@ Når du bygger inn en lerretsapp, må du angi følgende parametere:
 
 - **Navn** – Angi teksten som skal vises for knappen eller fanen som skal inneholde den innebygde appen. Ofte vil du kanskje gjenta navnet på appen i dette feltet.
 - **App-ID** – Angi GUID-en (globalt unik identifikator) for lerretsappen du vil bygge inn. Hvis du vil hente denne verdien, finner du appen på [make.powerapps.com](https://make.powerapps.com), og deretter ser du i feltet **App-ID** under **Detaljer**.
-- **Inndatakontekst for app** – Du kan også velge feltet som inneholder dataene du vil sende til appen som inndata. Hvis du vil ha mer informasjon om hvordan appen får tilgang til data som er sendt fra Finance and Operations-apper, kan du se delen [Bygg en app som benytter data som sendes fra Finance and Operations-apper](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senere i dette emnet.
+- **Inndatakontekst for app** – Du kan også velge feltet som inneholder dataene du vil sende til appen som inndata. For informasjon om hvordan appen kan få tilgang til dataene som sendes fra økonomi- og driftsapper, kan du se delen [Lage en app som bruker data som sendes fra økonomi- og driftsapper](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senere i dette emnet.
 
     Fra og med versjon 10.0.19 blir også den gjeldende juridiske enheten sendt som kontekst til lerretsappen via URL-parameteren **cmp**. Denne virkemåten vil ikke påvirke lerretsappen før appen bruker denne informasjonen.
 
@@ -104,15 +107,15 @@ Når du har bygd inn en lerretsapp på en side og bekreftet at den fungerer som 
     - Hvis funksjonen **Lagrede visninger** er deaktivert, kan systemadministratoren gi en tilpasning som inkluderer lerretsappen, til det aktuelle settet med brukere via **Tilpasning**-siden. Du kan også eksportere personlige tilpasninger for siden og sende dem til én eller flere brukere. Hver av disse brukerne kan deretter importere tilpasningen. Tilpasning-verktøylinjen inneholder knapper som lar deg eksportere og importere tilpasninger.
 
 > [!NOTE]
-> Hvis lerretsappen er delt med eksterne brukere, kan ikke disse brukerne bruke den innebygde appen i Finance and Operations-apper. De kan imidlertid få tilgang til appen direkte i Power Apps. Eksterne brukere inkluderer gjester og brukere som ikke hører til i Microsoft 365 Azure Directory der Finance and Operations-appen distribueres.
+> Hvis lerretsappen er delt med eksterne brukere, kan ikke disse brukerne bruke den innebygde appen i økonomi- og driftsapper. De kan imidlertid få tilgang til appen direkte i Power Apps. Eksterne brukere inkluderer gjester og brukere som ikke hører til i Microsoft 365 Azure Directory der økonomi- og driftsappen distribueres.
 
 Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om tilpassing av funksjonene i produktet og hvordan de brukes.
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Bygge en lerretsapp som bruker data som sendes fra Finance and Operations-apper
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Lage en lerretsapp som bruker data som sendes fra økonomi- og driftsapper
 
-Når du bygger en lerretsapp som skal bygges inn i en Finance and Operations-app, er en viktig del av prosessen å bruke inndataene fra denne Finance and Operations-appen. Fra Power Apps-utviklingsopplevelsen kan inndataene sendt fra en Finance and Operations-app åpnes ved hjelp av variabelen **Param ("EntityId")**. I tillegg, fra og med versjon 10.0.19, blir også den gjeldende juridiske enheten sendt til lerretsappen via **Param("cmp")**-variabelen. 
+Når du bygger en lerretsapp som skal bygges inn i en økonomi- og driftsapp, er en viktig del av prosessen å bruke inndataene fra denne økonomi- og driftsappen. Fra Power Apps-utviklingsopplevelsen kan inndataene sendt fra en økonomi- og driftsapp åpnes ved hjelp av variabelen **Param("EntityId")**. I tillegg, fra og med versjon 10.0.19, blir også den gjeldende juridiske enheten sendt til lerretsappen via **Param("cmp")**-variabelen. 
 
-I appens OnStart-funksjon kan du for eksempel sette inndataene fra Finance and Operations-apper til en variabel som ser slik ut:
+I funksjonen OnStart for appen kan du for eksempel sette inndataene fra økonomi- og driftsapper til en variabel som ser slik ut:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -122,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Vise en lerretsapp
 
-Hvis du vil vise en innebygd lerretsapp på en side i Finance and Operations-apper, går du til en side med en innebygd app. Husk at apper kan åpnes ved hjelp av **Power Apps**-knappen i standardhandlingsruten. De kan også vises direkte på siden som en ny fane eller hurtigfane eller et blad eller som en ny inndeling i et arbeidsområde. Når brukere først prøver å laste inn en app på en side, blir de bedt om å logge på. Dette trinnet sikrer at brukerne har de nødvendige tillatelsene til å bruke appen.
+Hvis du vil vise en innebygd lerretsapp på en side i økonomi- og driftsapper, går du til en side med en innebygd app. Husk at apper kan åpnes ved hjelp av **Power Apps**-knappen i standardhandlingsruten. De kan også vises direkte på siden som en ny fane eller hurtigfane eller et blad eller som en ny inndeling i et arbeidsområde. Når brukere først prøver å laste inn en app på en side, blir de bedt om å logge på. Dette trinnet sikrer at brukerne har de nødvendige tillatelsene til å bruke appen.
 
 ## <a name="editing-an-embedded-app"></a>Redigere en innebygd app
 
