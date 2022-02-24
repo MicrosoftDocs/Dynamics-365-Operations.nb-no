@@ -2,9 +2,11 @@
 title: Glidende gjennomsnitt
 description: Glidende gjennomsnitt er en uavbrutt kostmetode basert på gjennomsnittsprinsippet , der kostnadene for lageravganger ikke endres når innkjøpskostnaden endres. Forskjellen kapitaliseres og baseres på en proporsjonal beregning. Beløpet som gjenstår utgiftsføres.
 author: AndersGirke
+manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6721c01fd0ad3eec30de99dee3b5e98de6bd3b52
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0957fee111ec1fd5bb66951126869cf46d88b36e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567541"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967489"
 ---
 # <a name="moving-average"></a>Glidende gjennomsnitt
 
@@ -152,6 +154,3 @@ I dette eksemplet med glidende gjennomsnitt skrives lagerverdirapporten ut for �
 
 > [!NOTE]
 > Du kan ikke avstemme økonomi med lager ved hjelp av **Sortering etter transaksjonstidspunkt**. Rapporten må skrives ut ved hjelp av **Posteringsdato**-alternativet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

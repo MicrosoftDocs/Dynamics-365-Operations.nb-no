@@ -1,34 +1,34 @@
 ---
 title: Formidle veiledninger for blandet virkelighet for arbeidere i produksjonen
 description: Dette emnet beskriver hvordan du integrerer produksjonsstyringsmodulen i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides.
-author: johanhoffmann
+author: cabeln
+manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "61943"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 703f2cb9a1ea8691420765a8598d59f3e6cc6488
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 727a3bc50ea55259c7260a9d060dac59473ee3c1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062958"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645150"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Formidle veiledninger for blandet virkelighet for arbeidere i produksjonen
 
-[!include [banner](../includes/banner.md)]
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Arbeidere i produksjonsprosesser vil dra nytte av relevante instruksjoner som gis til riktig tid i sammenheng med arbeidet. *Instruksjoner* gjelder for flere arbeidsområder, inkludert: samling, tjeneste, operasjoner, sertifisering og sikkerhet. På tvers av alle disse kjernefunksjonene kan pågående opplæringsinstruksjoner bidra til å gi ansatte muligheten til å oppnå mer og arbeide bedre.
 
@@ -60,7 +60,7 @@ Underdelene nedenfor beskriver noen få utvalgte scenarier der selskaper på tve
 
 ### <a name="assembly"></a>Samling
 
-![Bruke veiledninger i monteringsoppgaver.](media/instruction-guides-hero-assembly.png "Bruke veiledninger i serviceoppgaver")
+![Bruke veiledninger i monteringsoppgaver](media/instruction-guides-hero-assembly.png "Bruke veiledninger i serviceoppgaver")
 
 Instruksjoner i monteringsoperasjoner viser arbeidere verktøyene og delene de trenger, og hvordan de brukes i virkelige arbeidssituasjoner.
 
@@ -68,7 +68,7 @@ Produksjonsledere kan opprette og tilordne veiledninger, for eksempel [produksjo
 
 ### <a name="service"></a>Service
 
-![Bruke veiledninger i serviceoppgaver.](media/instruction-guides-hero-service.png "Bruke veiledninger i serviceoppgaver")
+![Bruke veiledninger i serviceoppgaver](media/instruction-guides-hero-service.png "Bruke veiledninger i serviceoppgaver")
 
 Utstyr teknikere med veiledende instruksjoner på jobbområdet, og eliminer behovet for å planlegge ekstra besøk.
 
@@ -76,7 +76,7 @@ Serviceledere kan tilordne veiledninger, for eksempel for bestemte [produkter](.
 
 ### <a name="quality"></a>Kvalitet
 
-![Bruk veiledninger i kvalitetssikringsoppgaver.](media/instruction-guides-hero-quality.png "Bruk veiledninger i kvalitetssikringsoppgaver")
+![Bruk veiledninger i kvalitetssikringsoppgaver](media/instruction-guides-hero-quality.png "Bruk veiledninger i kvalitetssikringsoppgaver")
 
 Distribusjon av nye prosesser og sikre økt konsekvens ved å gjøre den ansattes kunnskap om til et verktøy som kan gjentas.
 
@@ -84,13 +84,13 @@ Kvalitetssikringsledere kan tilordne veiledninger, for eksempel for [produkter](
 
 ### <a name="certifications"></a>Sertifiseringer
 
-![Bruk veiledninger for sertifiseringsrelaterte oppgaver.](media/instruction-guides-hero-certification.png "Bruk veiledninger for sertifiseringsrelaterte oppgaver")
+![Bruk veiledninger for sertifiseringsrelaterte oppgaver](media/instruction-guides-hero-certification.png "Bruk veiledninger for sertifiseringsrelaterte oppgaver")
 
 Sørg for at alle ansatte oppfyller høye standarder ved raskt å identifisere hvem som trenger hjelp og hvor.
 
 ### <a name="safety"></a>Sikkerhet
 
-![Bruk veiledninger i instruksjoner for jobbsikkerhet.](media/instruction-guides-hero-safety.png "Bruk veiledninger i instruksjoner for jobbsikkerhet")
+![Bruk veiledninger i instruksjoner for jobbsikkerhet](media/instruction-guides-hero-safety.png "Bruk veiledninger i instruksjoner for jobbsikkerhet")
 
 Angi instruksjoner som veileder virtuelt gjennom farlige prosedyrer før det prøves i det fysiske miljøet. Med en metode for blandet virkelighet kan arbeidere oppleve farlige prosedyrer virtuelt.
 
@@ -105,8 +105,8 @@ Hvis du vil aktivere instruksjoner i produksjonsprosesser, inneholder Supply Cha
 Hvis du vil bruke denne funksjonen, må systemet inneholde følgende:
 
 - Dynamics 365 Supply Chain Management versjon 10.0.15 eller senere
-- [Dobbel skriving](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md) for Supply Chain Management-apper.
-- [Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) versjon 400.0.1.48 eller nyere
+- [Dobbel skriving](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write) for Supply Chain Management-apper.
+- [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) versjon 400.0.1.48 eller nyere
 
 ### <a name="turn-on-the-feature"></a>Aktivere funksjonen
 
@@ -122,24 +122,24 @@ Hvis du vil gjøre funksjonen tilgjengelig på systemet, må du aktivere konfigu
 
 Hvis du vil konfigurere hvordan veiledninger skal vises i produksjonen, kan du gå til **Blandet virkelighet \> Dynamics 365 Guides \> Konfigurer integrering av veiledning**.
 
-![Konfigurere integrering av veiledning for produksjon.](media/instruction-guides-configure-integration.png "Konfigurere integrering av veiledning for produksjon")
+![Konfigurere integrering av veiledning for produksjon](media/instruction-guides-configure-integration.png "Konfigurere integrering av veiledning for produksjon")
 
-Angi følgende felter:
+Angi følgende felt:
 
 - **URL-adresse for Microsoft Dataverse** – Angi URL-adressen til Microsoft Dataverse-miljøet der du oppretter Guides. Formatet er contoso.crm4.dynamics.com, der den første delen av URL-adressen vanligvis kalles etter organisasjonen (for eksempel contoso.), den andre delen er spesifikk for dataområdet i miljøet (for eksempel crm4.), og den siste delen er domenet (for eksempel dynamics.com). En måte å finne riktig URL-adresse på, er å gå til [home.dynamics.com](https://home.dynamics.com/) og deretter åpne Guides-appen. Når Guides åpnes, vil du se URL-adressen i adresselinjen i nettleseren (ta bare den primære URL-adressen, som skal ligne på det forrige eksemplet). Denne verdien brukes til å skrive adresser for veiledningene og blir kodet i QR-kodene.
-- **QR-kodestørrelse** – Angi størrelsen på den gjengitte QR-koden. Det anbefales at du velger en størrelse som fyller meste parten av skjermen, men ikke mer. Vanligvis er *15* en god verdi.
+- **QR-kodestørrelse** – Angi størrelsen på den gjengitte QR-koden. Vi anbefaler at du velger en størrelse som fyller meste parten av skjermen, men ikke mer. Vanligvis er *15* en god verdi.
 - **Feilkorrigeringsnivå for QR-kode** – Angi detaljnivået for QR-koden. Høyere detaljnivå kan bidra til å øke kodens pålitelighet, men **QR-kodestørrelse** må være stor nok til å støtte detaljnivået som kreves av det valgte korrigeringsnivået.
 
 > [!TIP]
 > - QR-kodestørrelser som er for store for skjermen, vil ta litt lengre tid å gjengi og deretter skaleres ned for å få plass til skjermen. Dette har ingen fordeler.
 > - QR-kodestørrelser som er for små, kan redusere muligheten for HoloLens til å lese koden på riktig måte i enkelte miljøer.
-> - Det anbefales at du tester innstillingene for hver enhet som vil vise QR-koder for HoloLens-brukere. Velg innstillinger som gir deg tilstrekkelig lesbarhet i produksjonsmiljøet.  
+> - Vi anbefaler at du tester innstillingene for hver enhet som vil vise QR-koder for HoloLens-brukere. Velg innstillinger som gir deg tilstrekkelig lesbarhet i produksjonsmiljøet.  
 
 ## <a name="get-an-overview-of-all-guide-assignments"></a>Få en oversikt over alle tilordning av veiledninger
 
 Bruk siden **Alle veiledninger** til å vise listen over alle tilgjengelige veiledninger i organisasjonen og alle tildelinger til produksjonsprosessene og ressurser. Hvis du vil åpne den, kan du gå til **Blandet virkelighet \> Veiledninger \> Alle veiledninger**. Listen øverst viser alle tilgjengelige veiledninger, og du kan bruke feltet her til å filtrere listen. Listen nederst viser alle tilordning av veiledninger og har en verktøylinje for å behandle dem.
 
-![Behandle veiledninger.](media/instruction-guides-allguides.png "Behandle veiledninger")
+![Behandle veiledninger](media/instruction-guides-allguides.png "Behandle veiledninger")
 
 Delene nedenfor beskriver objekttypene du kan tilordne veiledninger til. Hver tilordnet veiledning inneholder instruksjoner som automatisk knyttes til de respektive produksjonsjobbene og vil være tilgjengelig i produksjonen.
 
@@ -160,7 +160,7 @@ Slik legger du en veiledning til en ressurs:
 1. Vis hurtigfanen **Tilknyttede veiledninger**.
 1. Velg **Legg til** fra verktøylinjen **Tilknyttede veiledninger**. Det blir lagt til en ny linje i rutenettet.
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne. Hvis du har et stort antall veiledninger, kan du filtrere listen for å finne den du leter etter.
-    ![Behandle veiledninger.](media/instruction-guides-allguides.png "Behandle veiledninger")
+    ![Behandle veiledninger](media/instruction-guides-allguides.png "Behandle veiledninger")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Knytte en veiledning til en ressursgruppe
 
@@ -181,7 +181,7 @@ Slik legger du en veiledning til en ressursgruppe:
 1. Vis hurtigfanen **Tilknyttede veiledninger**.
 1. Velg **Legg til** fra verktøylinjen **Tilknyttede veiledninger**. Det blir lagt til en ny linje i rutenettet.
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne. Hvis du har et stort antall veiledninger, kan du filtrere listen for å finne den du leter etter.
-    ![Legge en veiledning til en ressursgruppe.](media/instruction-guides-resourcegroup.png "Legge en veiledning til en ressursgruppe")
+    ![Legge en veiledning til en ressursgruppe](media/instruction-guides-resourcegroup.png "Legge en veiledning til en ressursgruppe")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Knytte en veiledning til et frigitt produkt
 
@@ -197,11 +197,11 @@ Slik legger du en veiledning til et frigitt produkt:
 
 1. Gå til **Behandling av produksjonsinformasjon \> Produkter \> Frigitte produkter**.
 1. Åpne produktet du vil tilordne en veiledning til.
-1. Åpne fanen **Utvikling** i handlingsruten, og velg **Tilknyttede veiledninger** fra **Vis**-gruppen.
+1. Åpne kategorien **Utvikling** i handlingsruten, og velg **Tilknyttede veiledninger** fra **Vis**-gruppen.
 1. Siden **Tilknyttede veiledninger** åpnes for det valgte produktet.
 1. Velg **Legg til** I handlingsruten for å legge til en ny linje i rutenettet. 
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne.
-    ![Legge en veiledning til et frigitt produkt.](media/instruction-guides-ReleasedProduct-AddGuides.png "Legge en veiledning til et frigitt produkt")
+    ![Legge en veiledning til et frigitt produkt](media/instruction-guides-ReleasedProduct-AddGuides.png "Legge en veiledning til et frigitt produkt")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Knytte en veiledning til en formel
 
@@ -222,11 +222,11 @@ Slik legger du en veiledning til en formel:
 
 1. Gå til **Behandling av produksjonsinformasjon \> Stykklister og formler \> Formler**.
 1. Åpne formelen du vil tilordne en veiledning til.
-1. Åpne fanen **Topptekst** over den øverste hurtigfanen.
+1. Åpne kategorien **Topptekst** over den øverste hurtigfanen.
 1. Vis hurtigfanen **Tilknyttede veiledninger**.
 1. Velg **Legg til** fra verktøylinjen **Tilknyttede veiledninger**. Det blir lagt til en ny linje i rutenettet.
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne.
-    ![Legge en veiledning til en formel.](media/instruction-guides-Formula.png "Legge en veiledning til en formel")
+    ![Legge en veiledning til en formel](media/instruction-guides-Formula.png "Legge en veiledning til en formel")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Knytte en veiledning til en formelversjon
 
@@ -248,14 +248,14 @@ Slik legger du en veiledning til en formelversjon:
 
 1. Gå til **Behandling av produksjonsinformasjon \> Stykklister og formler \> Formler**.
 1. Åpne formelen som inneholder en versjon du vil tilordne en veiledning til.
-1. Åpne fanen **Topptekst** over den øverste hurtigfanen.
+1. Åpne kategorien **Topptekst** over den øverste hurtigfanen.
 1. I hurtigfanen **Formelversjoner** velger du versjonen du vil tilordne en veiledning til.
 1. Velg **Tilknyttede veiledninger** på verktøylinjen **Formelversjoner**.
-    ![Åpne veiledningene som er knyttet til en valgt formelversjon.](media/instruction-guides-FormulaVersion.png "Åpne veiledningene som er knyttet til en valgt formelversjon")
+    ![Åpne veiledningene som er knyttet til en valgt formelversjon](media/instruction-guides-FormulaVersion.png "Åpne veiledningene som er knyttet til en valgt formelversjon")
 1. Siden **Tilknyttede veiledninger** åpnes for formelversjonen.
 1. Velg **Legg til** I handlingsruten for å legge til en ny linje i rutenettet. 
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne.
-    ![Legge en veiledning til en formelversjon.](media/instruction-guides-FormulaVersionAddGuide.png "Legge en veiledning til en formelversjon")
+    ![Legge en veiledning til en formelversjon](media/instruction-guides-FormulaVersionAddGuide.png "Legge en veiledning til en formelversjon")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Knytte en veiledning til en stykkliste
 
@@ -274,11 +274,11 @@ Slik legger du en veiledning til en stykkliste:
 
 1. Gå til **Behandling av produksjonsinformasjon \> Stykklister og formler \> Stykklister**.
 1. Åpne stykklisten du vil tilordne en veiledning til.
-1. Åpne fanen **Topptekst** over den øverste hurtigfanen.
+1. Åpne kategorien **Topptekst** over den øverste hurtigfanen.
 1. Vis hurtigfanen **Tilknyttede veiledninger**.
 1. Velg **Legg til** fra verktøylinjen **Tilknyttede veiledninger**. Det blir lagt til en ny linje i rutenettet.
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne.
-    ![Legge en veiledning til en stykkliste.](media/instruction-guides-BOM.png "Legge en veiledning til en stykkliste")
+    ![Legge en veiledning til en stykkliste](media/instruction-guides-BOM.png "Legge en veiledning til en stykkliste")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Knytte en veiledning til en stykklisteversjon
 
@@ -297,14 +297,14 @@ Slik legger du en veiledning til en stykklisteversjon:
 
 1. Gå til **Behandling av produksjonsinformasjon \> Stykklister og formler \> Stykklister**.
 1. Åpne stykklisten som inneholder en versjon du vil tilordne en veiledning til.
-1. Åpne fanen **Topptekst** over den øverste hurtigfanen.
+1. Åpne kategorien **Topptekst** over den øverste hurtigfanen.
 1. I hurtigfanen **Stykklisteversjoner** velger du versjonen du vil tilordne en veiledning til.
 1. Velg **Tilknyttede veiledninger** på verktøylinjen **Stykklisteversjoner**.
-    ![Åpne veiledningene som er knyttet til en valgt stykklisteversjon.](media/instruction-guides-BOMVersion.png "Åpne veiledningene som er knyttet til en valgt stykklisteversjon")
+    ![Åpne veiledningene som er knyttet til en valgt stykklisteversjon](media/instruction-guides-BOMVersion.png "Åpne veiledningene som er knyttet til en valgt stykklisteversjon")
 1. Siden **Tilknyttede veiledninger** åpnes for stykklisteversjonen.
 1. Velg **Legg til** I handlingsruten for å legge til en ny linje i rutenettet.
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne.
-    ![Legge en veiledning til en stykklisteversjon.](media/instruction-guides-BOMVersionAddGuide.png "Legge en veiledning til en stykklisteversjon")
+    ![Legge en veiledning til en stykklisteversjon](media/instruction-guides-BOMVersionAddGuide.png "Legge en veiledning til en stykklisteversjon")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Knytte en veiledning til en rute
 
@@ -325,7 +325,7 @@ Slik legger du en veiledning til en rute:
 1. Vis hurtigfanen **Tilknyttede veiledninger**.
 1. Velg **Legg til** fra verktøylinjen **Tilknyttede veiledninger**. Det blir lagt til en ny linje i rutenettet.
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne.
-    ![Legge en veiledning til en rute.](media/instruction-guides-Route.png "Legge en veiledning til en rute")
+    ![Legge en veiledning til en rute](media/instruction-guides-Route.png "Legge en veiledning til en rute")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Knytte en veiledning til en ruteversjon
 
@@ -343,11 +343,11 @@ Slik legger du en veiledning til en ruteversjon:
 1. Åpne ruten du vil tilordne en veiledning til.
 1. I hurtigfanen **Versjoner** velger du versjonen du vil tilordne en veiledning til.
 1. Velg **Tilknyttede veiledninger** på verktøylinjen **Versjoner**.
-    ![Åpne veiledningene som er knyttet til en valgt ruteversjon.](media/instruction-guides-RouteVersion.png "Åpne veiledningene som er knyttet til en valgt ruteversjon")
+    ![Åpne veiledningene som er knyttet til en valgt ruteversjon](media/instruction-guides-RouteVersion.png "Åpne veiledningene som er knyttet til en valgt ruteversjon")
 1. Siden **Tilknyttede veiledninger** åpnes for stykklisteversjonen.
 1. Velg **Legg til** I handlingsruten for å legge til en ny linje i rutenettet.
 1. For den nye linjen bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne.
-    ![Legge en veiledning til en ruteversjon.](media/instruction-guides-RouteVersionAddGuide.png "Legge en veiledning til en ruteversjon")
+    ![Legge en veiledning til en ruteversjon](media/instruction-guides-RouteVersionAddGuide.png "Legge en veiledning til en ruteversjon")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Knytte en veiledning til en ruteoperasjonsrelasjon
 
@@ -366,12 +366,12 @@ Slik legger du en veiledning til en ruteoperasjonsrelasjon:
 
 1. Gå til **Produksjonskontroll \> Alle ruter**.
 1. Åpne ruten du vil tilordne en veiledning til.
-1. Åpne fanen **Rute** i handlingsruten, og gå til **Vedlikehold**-gruppen og velg **Rutedetaljer**.
+1. Åpne kategorien **Rute** i handlingsruten, og gå til **Vedlikehold**-gruppen og velg **Rutedetaljer**.
 1. Siden **Rutedetaljer** åpnes for den valgte ruten.
 1. I rutenettet øverst velger du operasjonen du vil gi veiledning for.
 1. I rutenettet nederst velger du en spesifikk relasjon (eller den generelle **Alle**-relasjonen).
-    ![Velg en operasjon og deretter en relasjon.](media/instruction-guides-RouteOperationRelation.png "Velg en operasjon og deretter en relasjon")
-1. Over rutenettet nederst åpner du fanen **Tilknyttede veiledninger**.  ![Tilknyttede veiledninger-fanen.](media/instruction-guides-RouteOperationRelation-AddGuide.png "fanen Tilknyttede veiledninger")
+    ![Velg en operasjon og deretter en relasjon](media/instruction-guides-RouteOperationRelation.png "Velg en operasjon og deretter en relasjon")
+1. Over rutenettet nederst åpner du kategorien **Tilknyttede veiledninger**. Kategorien ![Tilknyttede veiledninger](media/instruction-guides-RouteOperationRelation-AddGuide.png "Kategorien Tilknyttede veiledninger")
 1. Velg **Legg til** fra verktøylinjen øverst i rutenettet nederst for å legge til en ny linje i rutenettet.
 1. For den nye raden bruker du rullegardinlisten i **Navn**-kolonnen til å velge veiledningen du vil tilordne. I resten av raden merker du av for hver kontekst der den valgte veiledningen skal være tilgjengelig.
 
@@ -382,11 +382,11 @@ Slik legger du en veiledning til en ruteoperasjonsrelasjon:
 
 Når en arbeider åpner en jobbliste i kjøringsgrensesnittet for produksjon, finner Supply Chain Management de relevante veiledningene for jobbene som vises. Bruk **Veiledninger**-knappen til å vise de relevante veiledningene.
 
-![Veiledninger-knappen i kjøringsgrensesnittet for produksjon.](media/instruction-guides-Shopfloor1.png "Veiledninger-knappen i kjøringsgrensesnittet for produksjon")
+![Veiledninger-knappen i kjøringsgrensesnittet for produksjon](media/instruction-guides-Shopfloor1.png "Veiledninger-knappen i kjøringsgrensesnittet for produksjon")
 
 Deretter må du ta på en HoloLens og gå til den aktuelle veiledningen ved å se på QR-koden og aktivere den aktuelle veiledningen.
 
-![QR-kode for å gå til veiledninger ved hjelp av en HoloLens.](media/instruction-guides-Shopfloor2.png "QR-kode for å gå til veiledninger ved hjelp av en HoloLens")
+![QR-kode for å gå til veiledninger ved hjelp av en HoloLens](media/instruction-guides-Shopfloor2.png "QR-kode for å gå til veiledninger ved hjelp av en HoloLens")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>Løse logikken for valg av veiledninger
 
@@ -409,7 +409,4 @@ Når Supply Chain Management genererer jobbene for produksjonen, vil det samle d
 - Hvis du knytter en ruteversjon eller formelversjon til en rute eller produksjonsordre, vil eventuelle veiledninger som er knyttet til denne versjonen, og også veiledningene som er knyttet til den overordnede ruten eller formelen til denne versjonen, vises for jobben.
 - Hvis du definerer flere ruteoperasjonsrelasjoner som omfatter *Alle*-relasjonen og tilordner veiledninger til disse, vil bare veiledningene fra den mest spesifikke relasjonen vises for jobben.  
 
-![Diagram for å løse de relevante veiledningene.](media/instruction-guides-Resolve.png "Diagram for å løse de relevante veiledningene")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![Diagram for å løse de relevante veiledningene](media/instruction-guides-Resolve.png "Diagram for å løse de relevante veiledningene")

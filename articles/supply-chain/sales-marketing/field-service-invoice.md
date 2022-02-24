@@ -1,33 +1,36 @@
 ---
 title: Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Supply Chain Management
 description: Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere avtalefakturaer i Dynamics 365 Field Service til friktekstfakturaer i Dynamics 365 Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70f1c072c3a2a1b201aac1f1d2beea9979a3b792
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2d0f671d4b824cb5d38a5d11c4b06b2e97bd0c8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060770"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528251"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere avtalefakturaer i Dynamics 365 Field Service til friktekstfakturaer i Dynamics 365 Supply Chain Management.
 
@@ -50,25 +53,25 @@ Følgende synkronisering er påkrevd før synkronisering av avtalefakturaer kan 
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Field Service  | Supply Chain Management                 |
+| Field Service  | Forsyningskjedeadministrasjon                 |
 |----------------|----------------------------------------|
-| fakturaer       | Fakturahoder i fritekst for Dataverse-kunde |
-| invoicedetails | Fakturalinjer i fritekst for Dataverse-kunde   |
+| fakturaer       | Fakturahoder i fritekst for CDS-kunde |
+| invoicedetails | Fakturalinjer i fritekst for CDS-kunde   |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
-Fakturaer som opprettes fra en avtale i Field Service, kan synkroniseres til Supply Chain Management via et Microsoft Dataverse-dataintegreringsprosjekt. Oppdateringer av disse fakturaene synkroniseres til fritekstfakturaene i Supply Chain Management hvis regnskapsstatusen for fritekstfakturaene er **Pågår**. Når fritekstfakturaene blir postert i Supply Chain Management, og regnskapsstatusen oppdateres til **Fullført**, kan du ikke lenger synkronisere oppdateringer fra Field Service.
+Fakturaer som opprettes fra en avtale i Field Service, kan synkroniseres til Supply Chain Management via et Common Data Service-dataintegreringsprosjekt. Oppdateringer av disse fakturaene synkroniseres til fritekstfakturaene i Supply Chain Management hvis regnskapsstatusen for fritekstfakturaene er **Pågår**. Når fritekstfakturaene blir postert i Supply Chain Management, og regnskapsstatusen oppdateres til **Fullført**, kan du ikke lenger synkronisere oppdateringer fra Field Service.
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning for Field Service
 
-Kolonnen **Har linjer med avtaleopprinnelse** er lagt til i **Faktura**-tabellen. Denne kolonnen kan garantere at bare fakturaer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturaen inneholder minst én fakturalinje som stammer fra en avtale.
+**Har linjer med avtaleopprinnelse**-feltet er lagt til i **Faktura**-enheten. Dette feltet kan garantere at bare fakturaer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturaen inneholder minst én fakturalinje som stammer fra en avtale.
 
-Kolonnen **Har avtaleopprinnelse** er lagt til i **Fakturalinje**-tabellen. Denne kolonnen bidrar til å garantere at bare fakturalinjer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturalinjen stammer fra en avtale.
+**Har avtaleopprinnelse**-feltet er lagt til i **Fakturalinje**-enheten. Dette feltet kan garantere at bare fakturalinjer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturalinjen stammer fra en avtale.
 
-**Fakturadato** er et obligatorisk felt i Supply Chain Management. Kolonnen må derfor ha en verdi i Field Service før synkroniseringen utføres. For å imøtekomme dette kravet legges følgende logikk til:
+**Fakturadato** er et obligatorisk felt i Supply Chain Management. Feltet må derfor ha en verdi i Field Service før synkroniseringen utføres. For å imøtekomme dette kravet legges følgende logikk til:
 
-- Hvis **Fakturadato**-kolonnen er tom i **Faktura**-tabellen (det vil si hvis den ikke har en verdi), blir den satt til gjeldende dato når en fakturalinje som stammer fra en avtale, legges til.
-- Brukeren kan endre **Fakturadato**-kolonnen. Men når brukeren prøver å lagre en faktura som stammer fra en avtale, får vedkommende en forretningsprosessfeil hvis **Fakturadato**-kolonnen er tom på fakturaen.
+- Hvis **Fakturadato**-feltet er tomt på **Faktura**-enheten (det vil si hvis det ikke har en verdi), blir den satt til gjeldende dato når en fakturalinje som stammer fra en avtale, er lagt til.
+- Brukeren kan endre **Fakturadato**-feltet. Men når brukeren prøver å lagre en faktura som stammer fra en avtale, får han eller hun en forretningsprosessfeil hvis **Fakturadato**-feltet er tomt på fakturaen.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
@@ -100,11 +103,8 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Avtalefakturaer (Field Service til Supply Chain Management): Fakturahoder
 
-[![Maltilordning i Dataintegrering for fakturahoder.](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Maltilordning i Dataintegrering](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Avtalefakturaer (Field Service til Supply Chain Management): Fakturalinjer
 
-[![Maltilordning i Dataintegrering for fakturalinjer.](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Maltilordning i Dataintegrering](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)

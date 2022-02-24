@@ -1,10 +1,12 @@
 ---
 title: Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap
-description: Dette emnet forklarer hvordan du kan overføre tilgangsnivåsikkerhet i Kostnadsregnskap til radnivåsikkerhet i Microsoft Power BI.
+description: Dette emnet forklarer hvordan du kan overføre tilgangsnivåsikkerhet i Kostnadsregnskap til radnivåsikkerhet i Microsoft Power BI. Denne funksjonaliteten lar brukere bare se Power BI-data som de har tilgang til.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f519a38b381da0efc1e91ba0f2015780d086550c3e38810e6845a0fc07976767
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751497"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682195"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Definere sikkerhet for Power BI-innhold for analyse av kostnadsregnskap
 
@@ -29,7 +31,7 @@ Dette emnet forklarer hvordan du kan overføre tilgangsnivåsikkerhet i Kostnads
 
 ## <a name="overview"></a>Oversikt
 
-Innholdet **Kostregnskapsanalyse** for Microsoft Power BI bruker radnivåsikkerhet for Power BI til å begrense brukertilgangen. Sikkerheten er basert på organisasjonshierarkiet for tilgangsnivå som er definert i parametere for kostnadsregnskapet. Hvis du vil ha mer informasjon om **Kostregnskapsanalyse**-innhold for Power BI, kan du se [Kostnadsregnskapsanalyse-innhold for Power BI.](cost-accounting-analysis-content-pack.md)
+**Kostregnskapsanalyse**-innholdet for Microsoft Power BI bruker Power BI-radnivåsikkerhet til å begrense brukertilgangen. Sikkerheten er basert på organisasjonshierarkiet for tilgangsnivå som er definert i parametere for kostnadsregnskapet. Hvis du vil ha mer informasjon om **Kostregnskapsanalyse**-innhold for Power BI, kan du se [Kostnadsregnskapsanalyse-innhold for Power BI.](cost-accounting-analysis-content-pack.md)
 
 ## <a name="setup"></a>Installasjon
 For å overføre tilgangsnivåsikkerhet til Power BI må eieren av Power BI-innholdet følge fremgangsmåten nedenfor.
@@ -42,11 +44,11 @@ For å overføre tilgangsnivåsikkerhet til Power BI må eieren av Power BI-innh
 3. Finn datasettet for **Kostnadsregnskapsanalyse**-innhold for Power BI.
 4. Åpne sikkerhetssiden.
 
-    ![Åpne sikkerhetssiden.](./media/CA-picture-1.png)
+    ![Åpne sikkerhetssiden](./media/CA-picture-1.png)
 
 5. Rollen **Kontroller for kostnadsobjekt** er allerede opprettet. Legg til andre medlemmer som er en del av organisasjonshierarkiet for tilgangsnivået for kostnadsregnskap.
 
-    ![Legge til medlemmer.](./media/CA-picture-2.png)
+    ![Legge til medlemmer](./media/CA-picture-2.png)
 
 Brukere som legges til i rollen **Kontroller for kostnadsobjekt**, kan bare se dataene som de har tillatelse til å se i henhold til definisjonen i organisasjonshierarkiet for tilgangsnivået for kostnadsregnskap.
 
@@ -61,6 +63,3 @@ Vi antar at organisasjonen vil begrense tilgang til data. Hvis sikkerhetsparamet
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 Hvis du vil ha mer informasjon om radnivåsikkerhet i Power BI, kan du se [Administrere sikkerhet for modellen i Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

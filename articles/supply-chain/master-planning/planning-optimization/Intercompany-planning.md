@@ -2,13 +2,16 @@
 title: Konsernintern planlegging
 description: Dette emnet beskriver konsernintern planlegging og forklarer hvordan du konfigurerer konsernintern planlegging med planleggingsoptimalisering i Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
+manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2bf69a5d0d6e070374277e2d82d5fbf6eb4b8704895ffe31aa7e2d2d3546bb16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 25c80ce27498131c6eb92174ab14a592bfa9915a
+ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777917"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672200"
 ---
 # <a name="intercompany-planning"></a>Konsernintern planlegging
 
@@ -45,8 +48,8 @@ Hvis du kjører hovedplanlegging fra en hovedplan som inkluderer planlagt nedstr
 
 Hvis du vil bruke konsernintern planlegging, må du klargjøre systemet på følgende måte:
 
-1. De relevante produktene må frigis i alle de relevante firmaene. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
-1. Nedstrømsetterspørsel må dekkes av innkjøp fra en leverandør som har en konsernintern relasjon til oppstrømsfirmaet, og relevante standard lagerdimensjoner (område og lager) på kunden. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. De relevante produktene må frigis i alle de relevante firmaene. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. Nedstrømsetterspørsel må dekkes av innkjøp fra en leverandør som har en konsernintern relasjon til oppstrømsfirmaet, og relevante standard lagerdimensjoner (område og lager) på kunden. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
 1. Hovedplanen i oppstrømsfirmaet må inkludere planlagt nedstrømsetterspørsel, og det relevante firmaet og hovedplanen må være angitt i nedstrømsplanene.
 
 ## <a name="include-planned-downstream-demand"></a>Inkluder planlagt nedstrøms etterspørsel
@@ -68,7 +71,7 @@ Følg disse trinnene for å vise informasjon om utligning på flere nivåer.
 
 1. Gå til **Hovedplanlegging \> Hovedplanlegging \> Planlagte ordrer**.
 1. Velg eller åpne en planlagt ordre.
-1. På handlingsruten, i fanen **Vis** i **Krav**-gruppen, velger du **Utligning på flere nivåer**.
+1. På handlingsruten, i kategorien **Vis** i **Krav**-gruppen, velger du **Utligning på flere nivåer**.
 
 ### <a name="intercompany-example-that-involves-two-companies"></a>Konserninternt eksempel som omfatter to firmaer
 
@@ -76,7 +79,7 @@ I dette eksemplet opprettes det en produksjonsordre i USMF-firmaet for å dekke 
 
 Illustrasjonen nedenfor viser hvordan dette eksemplet kan vises på siden **Utligning med flere nivåer** for den planlagte produksjonsordren.
 
-![Konserninternt eksempel som omfatter to firmaer.](media/IntercompanyPlanning1.png)
+![Konserninternt eksempel som omfatter to firmaer](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Konserninternt eksempel som omfatter tre firmaer
 
@@ -84,7 +87,4 @@ I dette eksemplet opprettes det et bestillingsforslag i USMF-firmaet for å dekk
 
 Illustrasjonen nedenfor viser hvordan dette eksemplet kan vises på siden **Utligning med flere nivåer** for den planlagte produksjonsordren.
 
-![Konserninternt eksempel som omfatter tre firmaer.](media/IntercompanyPlanning2.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Konserninternt eksempel som omfatter tre firmaer](media/IntercompanyPlanning2.png)

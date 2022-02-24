@@ -2,9 +2,11 @@
 title: Reiseregning og utlegg for Power BI-innhold
 description: Dette emnet beskriver hva som er inkludert i Power BI-innholdspakken for reiseregning.
 author: panolte
+manager: AnnBe
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: TrvExpenseWorkspace, ExpenseWorkspace
 audience: Application User, IT Pro
@@ -14,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 178a65c44abd0c9c068d4da1f2684a60062da595247560de4cb81d97ab7b6521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d580502a08c2c176a000616abc3513cc45bd58a6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769904"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016458"
 ---
 # <a name="expense-management-power-bi-content"></a>Reiseregning og utlegg for Power BI-innhold
 
@@ -41,7 +43,7 @@ To Power BI-innholdspakker er tilgjengelige for bruk med reiseregninger i versjo
 Alle beløpene vises i selskapsvalutaen. Data for alle firmaer som vises, men hvis nødvendig kan du legge et firmafilter. 
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
-Du finner Power BI-innholdet Expense Admin Dashboard.pbix og Expense Personal Dashboard.pbix i biblioteket Delte aktiva i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
+Du finner Power BI-innholdet Expense Admin Dashboard.pbix og Expense Personal Dashboard.pbix i biblioteket Delte aktiva i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 Innholdet er tilgjengelig fra arbeidsområdet for reiseregninger som innebygd Power Bi-innhold. En utgiftseier får tilgang til personlige utgifter for seg selv, men bare regnskapsassistenter og -ledere hos leverandører har tilgang til admin-innhold for å vise alle brukerens utgiftsdata.
 
 ## <a name="refreshing-the-power-bi-content"></a>Oppdatere Power BI-innhold
@@ -91,6 +93,3 @@ Innholdet inneholder et sett med rapportsider. Hver side består av et sett med 
 | Ansattstatistikk | Reiseregninger etter kosttype            |
 |                     | Personlige utgifter                       |
 |                     | Reiseregninger etter statistikkgruppe     |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

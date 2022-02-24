@@ -1,10 +1,12 @@
 ---
 title: Manuell avskrivning
 description: Denne artikkelen gir en oversikt over den manuelle avskrivningsmetoden.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 228e6c94042942a26793eb0bebc1186dd4767e7f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674833"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969035"
 ---
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
@@ -28,13 +30,13 @@ ms.locfileid: "7674833"
 
 Denne artikkelen gir en oversikt over den manuelle avskrivningsmetoden.
 
-Når du definerer en avskrivningsprofil for anleggsmiddel og velger **Manuelt** i feltet **Metode** på siden **Avskrivningsprofiler**, bestemmes avskrivningen for anleggsmidler som er tilordnet avskrivningsprofilen, av prosenten du angir for hvert intervall i kalenderåret. Intervallene du angir prosenter for, posteres i henhold til verdien du velger i **Periodefrekvens** i **Generelt**-hurtigfanen av på siden **Avskrivningsprofiler**. Her er verdiene du kan velge:
+Når du definerer en avskrivningsprofil for anleggsmiddel og velger **Manuelt** i feltet **Metode** på siden **Avskrivningsprofiler**, bestemmes avskrivningen for anleggsmidler som er tilordnet avskrivningsprofilen, av prosenten du angir for hvert intervall i kalenderåret. Intervallene du angir prosenter for, posteres i henhold til verdien du velger i **Periodefrekvens** i **Generelt**-hurtigkategorien av på siden **Avskrivningsprofiler**. Her er verdiene du kan velge:
 
-- Årlig
-- Månedlig
-- Kvartalsvis
-- Halvårlig
-- Daglig
+-   Årlig
+-   Månedlig
+-   Kvartalsvis
+-   Halvårlig
+-   Daglig
 
 Når du velger posteringsfrekvens, klikker du **Manuelle planer** og angir prosenter for hvert posteringsintervall. De manuelle planene og posteringsintervallene definerer sammen avskrivningsbeløpet, som vist i eksemplene senere i denne artikkelen. Manuell avskrivning beregnes alltid som en prosent av anskaffelsesprisen. For manuell avskrivning inneholder ikke prosentene du angir i intervallene, totalt 100 prosent. Manuell avskrivning er en fleksibel avskrivningsmetode som ofte brukes til å definere en ekstraordinær avskrivningsprofil på siden **Tablåer**, for eksempel en avskrivning som ikke er periodisk, for bestemte formål (for eksempel avgift).
 
@@ -73,6 +75,3 @@ Den totale prosenten for alle intervallene behøver ikke å være 100. Imidlerti
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

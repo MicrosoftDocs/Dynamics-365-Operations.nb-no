@@ -1,40 +1,39 @@
 ---
-title: Oversikt over administrasjon
-description: Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/11/2021
-ms.topic: overview
+title: Oversikt
+description: Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a403390132443f29f12e11914b7a0f08faffa973
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068415"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527867"
 ---
-# <a name="administration-overview"></a>Oversikt over administrasjon
+# <a name="overview"></a>Oversikt
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
+Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.
 
 - [Systemkrav](hr-admin-system-requirements.md)
 
-- Konfigurere og administrere forekomster
+- Definere og administrere forekomster
   - [Klargjøre Human Resources](hr-admin-setup-provision.md)
   - [Kopier en forekomst](hr-admin-setup-copy-instance.md)
   - [Fjerne en forekomst](hr-admin-setup-remove-instance.md)
@@ -42,15 +41,15 @@ Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigu
 
 - Konfigurere dataintegrering
   - [Velg en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)
-  - [Konfigurere Dataverse-integrering](hr-admin-integration-common-data-service.md)
+  - [Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)
   - [Konfigurere integrering med Finance](hr-admin-integration-finance.md)
   - [Konfigurere integrering med Dayforce](hr-admin-integration-dayforce.md)
   - [Opprette en app for regelmessig dataeksport](hr-admin-integration-recurring-data-export.md)
-  - Integrer med Office
-    - [Opplæring i Office-integrering](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Oppdatere enhetsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Opprette opplevelser for Åpne i Excel](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Feilsøke Office-integrering](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+  - Integrere med Office
+    - [Opplæring i Office-integrering](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Oppdatere enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Opprette opplevelser for Åpne i Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Feilsøke Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Behandle funksjoner](hr-admin-manage-features.md)
 
@@ -85,7 +84,7 @@ Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigu
   - [Lage dokumentasjon eller opplæring med Oppgaveregistrering](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Feilsøke Human Resources
-  - [Få kundestøtte](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+  - [Få kundestøtte](hr-admin-troubleshooting-support.md)
   - [Optimalisere ytelsen med oppgaver for automatisk opprydding](hr-admin-troubleshooting-batch-history.md)
   - [Analyserapporter blir ikke oppdatert](hr-admin-troubleshooting-analytic-reports.md)
   - [Kan ikke opprette et miljø i administrasjonssenteret for Power Apps](hr-admin-troubleshooting-power-apps.md)
@@ -98,19 +97,8 @@ Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigu
   - [Rapporteringsalternativer](hr-admin-troubleshooting-reporting.md)
   - [Vanlige spørsmål om integrering](hr-admin-troubleshooting-integration.md)
 
-## <a name="additional-resources"></a>Tilleggsressurser
-
-### <a name="elearning-courses"></a>e-læringskurs
-Gå til [Dynamics 365 Human Resources på Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) for elektroniske kurs og opplæring.
-
-### <a name="videos"></a>Videoer
-
-Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
 ## <a name="see-also"></a>Se også
 
-- [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)
+- [Hva er nytt eller endret i Human Resources](hr-admin-whats-new.md)
 - [Utviklerveiledning](hr-developer-overview.md)
 - [Brukerveiledning](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

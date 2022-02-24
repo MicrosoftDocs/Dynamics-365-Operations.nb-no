@@ -2,30 +2,36 @@
 title: Bygge egendefinerte svarsider for 4xx/5xx-statuskodefeil
 description: Dette emnet beskriver hvordan du bygger egendefinerte svarsider for 4xx- og 5xx-statuskodefeil ved hjelp av redigeringsverktøyene i Microsoft Dynamics 365 Commerce.
 author: v-chgri
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16cd6c3dab5502826119b6a517414d23e168e79708e306897b04c7ba8c80404b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 060f5e5616624279711f61f582e6a898c7eb7785
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741147"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414613"
 ---
 # <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Bygge egendefinerte svarsider for 4xx/5xx-statuskodefeil
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du bygger egendefinerte svarsider for 4xx- og 5xx-statuskodefeil ved hjelp av redigeringsverktøyene i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Hvis en forespørsel ikke lykkes, utsteder serveren svar på HTTP-statuskodefeil. Statuskoden 404 registreres og returneres hvis en side ikke blir funnet, og 500 statuskoden fanges opp og returneres hvis det oppstår en serverfeil. I Dynamics 365 Commerce kan programbrukere bygge egendefinerte svarsider for statuskodefeil som vises for brukere for disse statuskodefeilsvarene.
 
@@ -77,6 +83,3 @@ Følg denne fremgangsmåten for å opprette en omadressering for svarsiden for s
 [Legg til en ny områdeside](add-new-page.md)
 
 [Opprette en URL-adresse for side](create-page-url.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -56,6 +56,3 @@ Denne ukens endringer løser et problem der kalenderdager ikke kunne genereres.
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Gjeldende saldorapport i permisjon PBI dobler ansattes saldo (385581)
 
 Denne endringen korrigerer den gjeldende saldorapporten i dette scenariet.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

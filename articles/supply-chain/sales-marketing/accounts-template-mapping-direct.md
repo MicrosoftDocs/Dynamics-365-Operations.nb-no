@@ -1,36 +1,39 @@
 ---
 title: Synkronisere kontoer direkte fra Sales til kunder i Supply Chain Management
 description: Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere forretningsforbindelser fra Dynamics 365 Sales til Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b3257f4582ede6cd1be8e593a5ed99f5ffd0ca6f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 8aa03f94e0fb89a6d34ce014dbb6004a1a666327
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063091"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529216"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Synkronisere kontoer direkte fra Sales til kunder i Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere forretningsforbindelser direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 
@@ -38,7 +41,7 @@ Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronis
 
 Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales.  Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
-[![Dataflyt i Kundeemne til kontanter.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
@@ -53,7 +56,7 @@ Ingen synkroniseringsoppgaver kreves før konto-/kundesynkronisering kan utføre
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Salg    | Supply Chain Management |
+| Salg    | Forsyningskjedeadministrasjon |
 |----------|------------------------|
 | Kontoer | Kunder V2           |
 
@@ -63,11 +66,11 @@ Kontoer administreres i Sales og synkroniseres med Supply Chain Management som k
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemnet til kontanter løsning for Sales
 
-**Kontonummer**-kolonnen er bare tilgjengelig på **Konto**-siden. Det er gjort en naturlig og unik nøkkel for å støtte integrering. Funksjonen for naturlig nøkkel i CRM-løsningen (Customer Relationship Management) kan påvirke kunder som allerede bruker **Kontonummer**-kolonnen, men som ikke bruker unike **Kontonummer**-verdier per konto. Integreringsløsningen støtter for øyeblikket ikke denne saken.
+**Kontonummer**-feltet er bare tilgjengelig på **Konto**-siden. Det er gjort en naturlig og unik nøkkel for å støtte integrering. Funksjonen for naturlig nøkkel i CRM-løsningen (Customer Relationship Management) kan påvirke kunder som bruker allerede **Kontonummer**-feltet, men som ikke bruker unike **Kontonummer**-verdier per konto. Integreringsløsningen støtter for øyeblikket ikke denne saken.
 
 Når en ny konto opprettes, hvis en **Kontonummer**-verdi ikke finnes fra før, den genereres automatisk ved hjelp av en nummerserie. Verdien består av **ACC**, etterfulgt av en økende nummerserie og et suffiks på seks tegn. Her er et eksempel: **ACC-01000-BVRCPS**
 
-Når integreringsløsningen brukes for Sales, angir et oppgraderingsskript **Kontonummer**-kolonnen for eksisterende kontoer i Sales. Hvis det finnes ingen **Kontonummer**-verdier, nummerserien som ble omtalt tidligere brukes.
+Når det brukes integration-løsning for Sales, angir et oppgraderingsskript **Kontonummer** for eksisterende kontoer i Sales. Hvis det finnes ingen **Kontonummer**-verdier, nummerserien som ble omtalt tidligere brukes.
 
 ## <a name="preconditions-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
@@ -92,14 +95,14 @@ Når integreringsløsningen brukes for Sales, angir et oppgraderingsskript **Kon
 ## <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
 
 > [!NOTE]
-> Kolonnene **Betalingsbetingelser**, **Fraktvilkår**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke inkludert i standardtilordningene. Hvis du vil tilordne disse kolonnene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som tabellen synkroniseres mellom.
+> Feltene **Betalingsbetingelser**, **Fraktvilkår**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke inkludert i standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
 
 Følgende illustrasjoner viser et eksempel på en tilordning av malen i Dataintegrering. 
 
 > [!NOTE]
-> Tilordningen viser hvilken kolonneinformasjon som vil bli synkronisert fra Sales til Supply Chain Management.
+> Tilordningen viser hvilken feltinformasjon som vil bli synkronisert fra Sales til Supply Chain Management.
 
-![Maltilordning i Dataintegrering.](./media/accounts-direct-template-mapping-data-integrator-1.png)
+![Maltilordning i Dataintegrering](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
 ## <a name="related-topics"></a>Relaterte emner
 
@@ -114,6 +117,3 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 
 [Synkronisere salgsfakturahoder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

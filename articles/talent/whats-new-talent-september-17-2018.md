@@ -54,6 +54,3 @@ Plattformoppdatering 18 for Finance and Operations er nå en del av Talent-utgiv
 ## <a name="bug-fixes"></a>Feilrettinger
 
 Denne versjonen inneholder flere ekstra feilrettinger, inkludert referanser til ACA og ADA, og I9 er nå bare aktivert i firmaer i USA.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Utforme konfigurasjoner for å generere dokumenter med programdata
-description: Dette emnet beskriver hvordan du utformer konfigurasjoner for elektronisk rapportering (ER) for å generere et elektronisk dokument. (Del 1 – importere konfigurasjoner).
+description: 'For å fullføre trinnene i denne fremgangsmåten, må du først fullføre prosedyren "ER generere dokumenter med oppdatering av programdata (del 1: importere konfigurasjoner)".'
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f335721ee97919af20e73fc9da6c9bf07dcae50aca8f8904d144d75c2f4d7b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726267"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684601"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Utforme konfigurasjoner for å generere dokumenter med programdata
 
@@ -35,27 +37,24 @@ Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig el
 
 
 
-Før du begynner, må du endre land konteksten for firmaets DEMF fra DEU (Tyskland) til BEL (Belgia). Klikk på Organisasjonsadministrasjon > Organisasjoner > Juridiske enheter for å oppdatere landkoden i primæradressen for den juridiske enheten DEMF. Start programmet på nytt.
+Før du begynner, må du endre land konteksten for firmaets DEMF fra DEU (Tyskland) til BEL (Belgia). Klikk Organisasjonsadministrasjon > Organisasjoner > Juridiske enheter for å oppdatere landkoden i primæradressen for den juridiske enheten DEMF. Start programmet på nytt.
 
 
 ## <a name="run-imported-er-format"></a>Kjør importert ER-format
 1. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
 2. Utvid 'Intrastat (modell)' i treet.
 3. Velg 'Intrastat (modell)\Intrastat (format)' i treet.
-4. Klikk på Kjør.
+4. Klikk Kjør.
     * Kjør utkastversjonen av formatkonfigurasjonen ER å generere Intrastat-rapporten.  
 5. Skriv inn 'intrastat.xml' i feltet Angi filnavn.
     * Angi navnet på filen.  
-6. Klikk på OK.
+6. Klikk OK.
     * Se gjennom den genererte XML-filen.  
 7. Lukk siden.
 8. Gå til Avgift > Deklareringer > Utenrikshandel > Intrastat.
     * Åpmne dette skjemaet for å vise Intrastat-transaksjonene som er inkludert i det genererte elektroniske dokumentet.  
-9. Klikk på Intrastat-arkiv.
+9. Klikk Intrastat-arkiv.
     * Fordi det utførte ER-fomatet ikke inneholder innstillinger for oppdatering av programdata, ble detaljer om den fullførte Intrastat-rapporten ikke arkivert.  
 10. Lukk siden.
 11. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

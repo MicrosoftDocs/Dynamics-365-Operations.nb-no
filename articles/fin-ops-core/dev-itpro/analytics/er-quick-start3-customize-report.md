@@ -2,27 +2,27 @@
 title: Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 description: Dette emnet beskriver hvordan du tilpasser det Microsoft-leverte formatet for elektronisk rapportering (ER) som brukes til å generere et egendefinert elektronisk dokument.
 author: NickSelin
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3c867af3b4d93e5a124d14e88eae60ff45987aebc639bd78806ff7a12009447
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47bb8a2a9adab4ec963a1d0b95e783299aab3819
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770002"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683023"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 
@@ -108,7 +108,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende Finance-foreko
 5. Velg versjon **11.2.2** på hurtigfanen **Versjoner**.
 6. Velg **Importer** for å laste ned den valgte versjonen fra det globale repositoriet.
 
-![Konfigurasjonsrepositorium-side.](./media/er-quick-start3-import-solution1.png)
+![Konfigurasjonsrepositorium-side](./media/er-quick-start3-import-solution1.png)
 
 > [!TIP]
 > Hvis du har problemer med å få tilgang til det [globale repositoriet](er-download-configurations-global-repo.md), kan du [laste ned konfigurasjoner](download-electronic-reporting-configuration-lcs.md) fra Microsoft Dynamics Lifecycle Services (LCS) i stedet.
@@ -122,7 +122,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende Finance-foreko
 
 Legg merke til at i tillegg til det valgte ER-formatet for **Peppol-salgsfaktura**, ble andre ER-konfigurasjoner importert. Fordi nye versjoner av ER-konfigurasjoner stadig publiseres til det globale repositoriet og LCS, for å holde de tilsvarende løsningene kompatible med nye krav, ble de nyeste versjonene av den nødvendige [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components)-konfigurasjonen og de tilhørende [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components)-konfigurasjonene importert.
 
-![Siden Konfigurasjoner.](./media/er-quick-start3-imported-solution1a.png)
+![Siden Konfigurasjoner](./media/er-quick-start3-imported-solution1a.png)
 
 Følg fremgangsmåten nedenfor for å simulere tilstanden som ER-konfigurasjoner i gjeldende Finance-forekomst vil være hvis du har importert versjon **11.2.2** til ER-formatet **Peppol-salgsfaktura** tidligere (for eksempel 7. august 2019).
 
@@ -136,7 +136,7 @@ Kontroller deretter at følgende konfigurasjoner er tilgjengelige i konfigurasjo
     - Versjon 11 inneholder versjon 10 av [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponenten som representerer datastrukturen i fakturaens forretningsdomene. Denne ER-konfigurasjonen er importert som en overordnet til **Peppol salgsfaktura** ER-formatet som ble valgt for import.
     - Versjon 50 inneholder versjon 31 av datamodell ER-komponenten. Denne ER-konfigurasjonen er importert som en overordnet av 7. august 2019-versjonen av **Fakturamodelltilordning** ER- modelltilordingskonfigurasjonen.
 
-    ![ER-modelltilordningskonfigurasjon på konfigurasjonssiden.](./media/er-quick-start3-imported-solution1b1.png)
+    ![ER-modelltilordningskonfigurasjon på konfigurasjonssiden](./media/er-quick-start3-imported-solution1b1.png)
 
     > [!TIP]
     > Hvis du ikke ser versjon 50 av denne datamodellen, åpner du det globale repositoriet og importerer versjon 50.19 av ER-konfigurasjonen **Fakturamodelltilordning**.
@@ -145,7 +145,7 @@ Kontroller deretter at følgende konfigurasjoner er tilgjengelige i konfigurasjo
 
     - Versjon 50.19 er importert som siste implementering av versjon 50 av ER-datamodellkonfigurasjonen **Fakturamodell**. Den inneholder to [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponenter som beskriver hvordan datamodellen fylles ut med programdata ved kjøring.
 
-    ![ER-modelltilordningskonfigurasjon Fakturamodelltilordning på konfigurasjonssiden.](./media/er-quick-start3-imported-solution1b2.png)
+    ![ER-modelltilordningskonfigurasjon Fakturamodelltilordning på konfigurasjonssiden](./media/er-quick-start3-imported-solution1b2.png)
 
     > [!TIP]
     > Hvis du ikke ser versjon 50.19 av denne modelltilordningen, åpner du det globale repositoriet og importerer versjon 50.19 av ER-konfigurasjonen **Fakturamodelltilordning**.
@@ -158,7 +158,7 @@ Kontroller deretter at følgende konfigurasjoner er tilgjengelige i konfigurasjo
 
     - Versjon 11.2.2 inneholder format- og formattilordnings ER-komponenter som ble konfigurert til å generere e-fakturaer i Pan-European Public Procurement OnLine (PEPPOL)-format.
 
-    ![ER-formatkonfigurasjon for Peppol-salgsmodell på konfigurasjonssiden.](./media/er-quick-start3-imported-solution1b3.png)
+    ![ER-formatkonfigurasjon for Peppol-salgsmodell på konfigurasjonssiden](./media/er-quick-start3-imported-solution1b3.png)
 
 ## <a name="configure-the-accounts-receivable-parameters"></a><a name="ConfigureAR1"></a>Konfigurere kundeparameterne
 
@@ -166,7 +166,7 @@ Kontroller deretter at følgende konfigurasjoner er tilgjengelige i konfigurasjo
 2. I kategorien **Elektroniske dokumenter** i hurtigfanen **Elektronisk rapportering** i feltet **Salgs- og fritekstfaktura** velger du **Peppol-salgsfaktura**.
 3. Velg **Lagre**.
 
-![Kategorien Elektroniske dokumenter på kundeparametere-siden.](./media/er-quick-start3-configure-ar1.png)
+![Kategorien Elektroniske dokumenter på kundeparametere-siden](./media/er-quick-start3-configure-ar1.png)
 
 ## <a name="configure-the-legal-entity-parameters"></a><a name="ConfigureLE"></a>Konfigurere parameterne for juridisk enhet
 
@@ -218,7 +218,7 @@ Du kan nå bruke standard ER-konfigurasjonene du importerte, til å sende en fri
 
 5. Velg **Lagre**.
 
-![Siden Fritekstfaktura.](./media/er-quick-start3-add-invoice.png)
+![Siden Fritekstfaktura](./media/er-quick-start3-add-invoice.png)
 
 Hvis du vil ha mer informasjon, kan du se [Opprette en fritekstfaktura](../../../finance/accounts-receivable/create-free-text-invoice-new.md).
 
@@ -228,14 +228,14 @@ Hvis du vil ha mer informasjon, kan du se [Opprette en fritekstfaktura](../../..
 2. På siden **Fritekstfaktura** i handlingsruten velger du **Poster**.
 3. I dialogboksen **Poster fritekstfaktura** velger du **OK**.
 
-![Siden Detaljer for fritekstfaktura.](./media/er-quick-start3-post-invoice.png)
+![Siden Detaljer for fritekstfaktura](./media/er-quick-start3-post-invoice.png)
 
 ### <a name="send-a-posted-invoice"></a>Sende en postert faktura
 
 1. Gå til **Kunder** \> **Fakturaer** \> **Alle fritekstfakturaer**.
 2. På siden **Fritekstfaktura** i handlingsruten i **Dokument**-gruppen velger du **Send** \> **Opprinnelig**.
 
-    ![Forhåndsvisning av den opprinnelige fakturaen.](./media/er-quick-start3-send-invoice.png)
+    ![Forhåndsvisning av den opprinnelige fakturaen](./media/er-quick-start3-send-invoice.png)
 
 3. Lukk siden **Fritekstfaktura**.
 
@@ -245,12 +245,12 @@ Hvis du vil ha mer informasjon, kan du se [Opprette en fritekstfaktura](../../..
 2. På siden **Elektroniske rapporteringsjobber** velger du den opprinnelige posten som har oppgavebeskrivelsen **Send eFaktura-XML**.
 3. Velg **Vis filer** for å få tilgang til listen over genererte filer.
 
-    ![Siden Elektroniske rapporteringsjobber.](./media/er-quick-start3-jobs-list.png)
+    ![Siden Elektroniske rapporteringsjobber](./media/er-quick-start3-jobs-list.png)
 
 4. Velg **Åpne** for å laste ned e-faktura-XML-filen som genereres.
 5. Analyser XML-filen for e-faktura. Legg merke til at kundeavgiftsskjemaet for øyeblikket er representert av **schemeID** og **schemeAgencyID**-XML-attributtene. Legg også merke til at **cbc:CustomizationID** XML-elementet inneholder følgende tekst: `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0`.
 
-    ![Forhåndsvisning av den genererte XML-filen for e-faktura.](./media/er-quick-start3-e-invoice1.png)
+    ![Forhåndsvisning av den genererte XML-filen for e-faktura](./media/er-quick-start3-e-invoice1.png)
 
 ## <a name="add-a-custom-database-field"></a><a name="AddCustomField"></a>Legge til et egendefinert databasefelt
 
@@ -282,7 +282,7 @@ Følg denne fremgangsmåten for å utføre tilpassingen.
 12. I meldingsboksen som vises, velger du **Ja** for å bekrefte at du vil opprette en ny **FederalTaxID**-feltoppføring for **Kunder**-tabellen.
 13. Velg **Sett inn** for å <a name="insert_custom_field"></a>legge til feltet **FederalTaxID\_Custom** på gjeldende side.
 
-    ![Alle kunder-siden.](./media/er-quick-start3-create-new-field.gif)
+    ![Alle kunder-siden](./media/er-quick-start3-create-new-field.gif)
 
 14. Lukk siden **Alle kunder**.
 
@@ -312,7 +312,7 @@ Som en bruker i rollen som funksjonsrådgiver for elektronisk rapportering, kan 
 
 Nå kan du bruke ER-datamodellutformingen til å redigere versjon 50.1 av ER-konfigurasjonen **Fakturamodell (Litware)** i **Utkast** [status](general-electronic-reporting.md#component-versioning).
 
-![Versjon 50.1 av ER-konfigurasjonen på Konfigurasjoner-siden.](./media/er-quick-start3-added-custom-model.png)
+![Versjon 50.1 av ER-konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start3-added-custom-model.png)
 
 #### <a name="configure-a-custom-data-model"></a>Konfigurere en tilpasset datamodell
 
@@ -328,7 +328,7 @@ Du må endre den egendefinerte datamodellen ved å legge til et nytt felt for å
 8. I **Varetype**-feltet godtar du standardverdien, **Streng**.
 9. Velg **Legg til**, og velg deretter **Lagre**.
 
-    ![Siden Datamodellutforming.](./media/er-quick-start3-add-data-model-field.png)
+    ![Siden Datamodellutforming](./media/er-quick-start3-add-data-model-field.png)
 
     > [!NOTE]
     > Feltene **Etikett** og **Beskrivelse** beskriver formålet med det nye feltet. Du kan fylle ut disse feltene på flere språk. Hvis du vil ha mer informasjon, se [Utforme flerspråklige rapporter i elektronisk rapportering](er-design-multilingual-reports.md).
@@ -345,7 +345,7 @@ Du må [fullføre](general-electronic-reporting.md#component-versioning) arbeide
 
 Statusen for versjon 50.1 endres fra **Utkast** til **Fullført**, og versjonen blir skrivebeskyttet. En ny redigerbar versjon, 50.2, har blitt lagt til og har statusen **Utkast**. Du kan bruke denne versjonen til å gjøre ytterligere endringer i ER-datamodellkonfigurasjonen.
 
-![Versjon 50.1 fullført på konfigurasjonssiden.](./media/er-quick-start3-completed-custom-model1.png)
+![Versjon 50.1 fullført på konfigurasjonssiden](./media/er-quick-start3-completed-custom-model1.png)
 
 ### <a name="customize-the-model-mapping-configuration"></a>Tilpasse modelltilordningskonfigurasjonen
 
@@ -365,7 +365,7 @@ Som en bruker i rollen som utvikler av elektronisk rapportering, kan du utforme 
 
 7. Velg **Opprett konfigurasjon** for å legge til den nye ER-konfigurasjonen.
 
-![Legge til en tilpasset modelltilordningskonfigurasjon på konfigurasjonssiden.](./media/er-quick-start3-adding-custom-mapping.png)
+![Legge til en tilpasset modelltilordningskonfigurasjon på konfigurasjonssiden](./media/er-quick-start3-adding-custom-mapping.png)
 
 #### <a name="configure-a-custom-model-mapping"></a>Konfigurere en tilpasset modelltilordning
 
@@ -376,7 +376,7 @@ Du må endre den egendefinerte modelltilordningen og angi hvordan det egendefine
 3. Velg **Utforming** i handlingsruten.
 4. På siden **Tilordning av modell til datakilde** velger du **Kundefaktura**-tilordningen.
 
-    ![Siden Tilordning av modell til datakilde.](./media/er-quick-start3-select-customer-mapping.png)
+    ![Siden Tilordning av modell til datakilde](./media/er-quick-start3-select-customer-mapping.png)
 
 5. Velg **Utforming**.
 6. På siden **Modelltilordningsutforming** i **Datakilder**-ruten utvider du **CustInvoiceJour**-datakilden som representerer **CustInvoiceJour**-programtabellen.
@@ -386,7 +386,7 @@ Du må endre den egendefinerte modelltilordningen og angi hvordan det egendefine
 10. I **Datamodell**-ruten utvider du **Kundeinformasjon (kunde)**, og velger **FederalTaxID\_Litware**-datamodellfeltet.
 11. Velg **Bind**.
 
-    ![Modellkartleggingsutforming-siden.](./media/er-quick-start3-customize-model-mapping.gif)
+    ![Modellkartleggingsutforming-siden](./media/er-quick-start3-customize-model-mapping.gif)
 
 12. Velg **Lagre**.
 13. Lukk siden **Modelltilordningsutforming**.
@@ -402,7 +402,7 @@ Du må [fullføre](general-electronic-reporting.md#component-versioning) arbeide
 
 Statusen for versjon 50.19.1 endres fra **Utkast** til **Fullført**, og versjonen blir skrivebeskyttet. En ny redigerbar versjon, 50.19.2, har blitt lagt til og har statusen **Utkast**. Du kan bruke denne versjonen til å gjøre ytterligere endringer i ER-modelltilordningskonfigurasjonen.
 
-![Versjon 50.19.1 fullført på konfigurasjonssiden.](./media/er-quick-start3-completed-custom-mapping1.png)
+![Versjon 50.19.1 fullført på konfigurasjonssiden](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
 > Den støttede [livssyklus](general-electronic-reporting-manage-configuration-lifecycle.md) for konfigurasjon dekker ikke livssyklusen for databaseendringer. Hvis du eksporterer versjon 50.19.1 av konfigurasjonen **Fakturamodelltilordning (Litware)** fra gjeldende Finance-forekomst og prøver å importere den til en annen forekomst som ikke inneholder det egendefinerte **FederalTaxID\_Custom**-feltet i **CustTable**-tabellen, vil det oppstå et unntak. Unntaket vil føre til at den importerte ER-konfigurasjonen ikke er kompatibel med metadataene for mål-Finance-forekomsten.
@@ -426,11 +426,11 @@ Som en bruker i rollen som funksjonsrådgiver for elektronisk rapportering, kan 
 7. I feltet **Datamodell** velger du **InvoiceCustomer**-rotdefinisjonen.
 8. Velg **Opprett konfigurasjon** for å legge til den nye ER-konfigurasjonen.
 
-![Legge til en tilpasset formatkonfigurasjon på konfigurasjonssiden.](./media/er-quick-start3-adding-custom-format.png)
+![Legge til en tilpasset formatkonfigurasjon på konfigurasjonssiden](./media/er-quick-start3-adding-custom-format.png)
 
 Nå kan du bruke ER-operasjonsutformingen til å redigere versjon 11.2.2.1 av ER-konfigurasjonen **Peppol-salgsfaktura (Litware)** i **Utkast** [status](general-electronic-reporting.md#component-versioning).
 
-![Versjon 11.2.2.1 av ER-konfigurasjonen på Konfigurasjoner-siden.](./media/er-quick-start3-added-custom-format.png)
+![Versjon 11.2.2.1 av ER-konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start3-added-custom-format.png)
 
 #### <a name="configure-a-custom-format"></a>Konfigurere et tilpasset format
 
@@ -446,7 +446,7 @@ Du må endre det egendefinerte formatet ved å legge til et nytt format-element 
 8. I formattreet under **XMLHeader** \> **Faktura** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** \> **cbc:ID** velger du **FederalTaxID**.
 9. Velg **Flytt opp**.
 
-![Nytt formatelement på Formatutforming-siden.](./media/er-quick-start3-customized-format.png)
+![Nytt formatelement på Formatutforming-siden](./media/er-quick-start3-customized-format.png)
 
 #### <a name="configure-a-custom-format-mapping"></a>Konfigurere en tilpasset formattilordning
 
@@ -454,7 +454,7 @@ Du må endre det egendefinerte formatet ved å legge til et nytt format-element 
 2. Under **Faktura** utvider du **Kundeinformasjon (kunde)**, og velger **FederalTaxID\_Litware**.
 3. Velg **Bind**.
 
-    ![Formatutformingsside.](./media/er-quick-start3-customized-format-mapping.png)
+    ![Formatutformingsside](./media/er-quick-start3-customized-format-mapping.png)
 
 4. Velg **Faktura**-datakilden for **Modell**-typen, og velg deretter **Rediger**.
 5. I **Versjon**-feltet velger du versjon **1** av den egen definerte datamodellen, og deretter velger du **OK**.
@@ -471,7 +471,7 @@ Du må [fullføre](general-electronic-reporting.md#component-versioning) arbeide
 
 Statusen for versjon 11.2.2.1 endres fra **Utkast** til **Fullført**, og versjonen blir skrivebeskyttet. En ny redigerbar versjon, 11.2.2.2, har blitt lagt til og har statusen **Utkast**. Du kan bruke denne versjonen til å gjøre ytterligere endringer i den egendefinerte ER-formatkonfigurasjonen.
 
-![Versjon 11.2.2.1 fullført på konfigurasjonssiden.](./media/er-quick-start3-completed-custom-format1.png)
+![Versjon 11.2.2.1 fullført på konfigurasjonssiden](./media/er-quick-start3-completed-custom-format1.png)
 
 ## <a name="configure-the-accounts-receivable-parameters-to-start-to-use-custom-er-configurations"></a><a name="ConfigureAR2"></a>Konfigurere kundeparameterne for å starte å bruke de egendefinerte ER-konfigurasjonene
 
@@ -479,7 +479,7 @@ Statusen for versjon 11.2.2.1 endres fra **Utkast** til **Fullført**, og versjo
 2. I kategorien **Elektroniske dokumenter** i hurtigfanen **Elektronisk rapportering** i feltet **Salgs- og fritekstfaktura** velger du **Peppol-salgsfaktura (Litware)**.
 3. Velg **Lagre**.
 
-![Siden Kundeparametere, kategorien Elektroniske dokumenter, hurtigfanen Elektronisk rapportering.](./media/er-quick-start3-configure-ar2.png)
+![Siden Kundeparametere, kategorien Elektroniske dokumenter, hurtigfanen Elektronisk rapportering](./media/er-quick-start3-configure-ar2.png)
 
 ## <a name="update-a-customer-record-by-adding-a-federal-tax-identification-code"></a><a name="ConfigureCustomer2"></a>Oppdatere en kundepost ved å legge til et føderalt skattenummer
 
@@ -488,7 +488,7 @@ Statusen for versjon 11.2.2.1 endres fra **Utkast** til **Fullført**, og versjo
 3. I **Generelt**-hurtigfanen i feltet **Federal Tax ID** angir du **LITWARE-6789**.
 4. Velg **Lagre**.
 
-    ![DE-014-kundedetaljerside.](./media/er-quick-start3-added-tax-id-value.png)
+    ![DE-014-kundedetaljerside](./media/er-quick-start3-added-tax-id-value.png)
 
 5. Lukk siden **Alle kunder**.
 
@@ -509,7 +509,7 @@ Statusen for versjon 11.2.2.1 endres fra **Utkast** til **Fullført**, og versjo
 4. Velg **Åpne** for å laste ned e-faktura-XML-filen som genereres.
 5. Analyser XML-filen for e-faktura. Legg merke til at i samsvar med tilpassingen, inkluderer kundeavgiftsskjemaet det egendefinerte **FederalTaxID** XML-attributtet i tillegg til **schemeID** og **schemeAgencyID** XML-attributtene. Verdien til dette nye XML-attributtet angis av **LITWARE-6789** ID for føderal skatt som ble angitt for en fakturert kunde.
 
-    ![Forhåndsvisning av den genererte XML-filen med tilpassingene.](./media/er-quick-start3-e-invoice2.png)
+    ![Forhåndsvisning av den genererte XML-filen med tilpassingene](./media/er-quick-start3-e-invoice2.png)
 
 ## <a name="import-the-latest-versions-of-standard-er-configurations"></a><a name="ImportERConfigurations2"></a>Importer de siste versjonene av standard ER-konfigurasjoner
 
@@ -522,7 +522,7 @@ Hvis du vil beholde settet med standard ER-konfigurasjoner i Finance-forekomsten
 5. I hurtigfanen **Versjoner** velger du versjon **32.6.7** av den valgte ER-formatkonfigurasjonen som er utgitt for å støtte elektroniske fakturaer for kunder i PEPPOL BIS 3-format. Hvis du vil ha mer informasjon, kan du se [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Velg **Importer** for å laste ned den valgte versjonen fra det globale repositoriet til den gjeldende forekomsten av Finance.
 
-![Versjon 32.6.7 valgt på siden Konfigurasjonsrepositorium.](./media/er-quick-start3-import-solution2.png)
+![Versjon 32.6.7 valgt på siden Konfigurasjonsrepositorium](./media/er-quick-start3-import-solution2.png)
 
 Hvis du vil ha informasjon om hvordan denne prosessen kan automatiseres, se [Importere oppdaterte versjoner av ER-konfigurasjoner](er-download-updated-versions-global-repo.md).
 
@@ -543,13 +543,13 @@ Kontroller at følgende ER-konfigurasjoner til slutt er tilgjengelige i konfigur
 
     - Versjon 206 (eller senere) inneholder versjon 24 (eller senere) av datamodell ER-komponenten som representerer datastrukturen i fakturaens forretningsdomene. Denne ER-konfigurasjonen er importert som en overordnet av den sist tilgjengelige ER-modelltilordningsversjonen av **Fakturamodelltilordning**.
 
-    ![Versjon 206 på konfigurasjonssiden.](./media/er-quick-start3-imported-solution2b1.png)
+    ![Versjon 206 på konfigurasjonssiden](./media/er-quick-start3-imported-solution2b1.png)
 
 - **Fakturamodelltilordning** ER-modelltilordningskonfigurasjon:
 
     - Versjon 206.132 (eller senere) er importert som siste implementering av versjon 206 av ER-datamodellkonfigurasjonen **Fakturamodell**. Den inneholder flere modelltilordning ER-komponenter som beskriver hvordan datamodellen fylles ut med programdata ved kjøring.
 
-    ![Versjon 206.132 på konfigurasjonssiden.](./media/er-quick-start3-imported-solution2b2.png)
+    ![Versjon 206.132 på konfigurasjonssiden](./media/er-quick-start3-imported-solution2b2.png)
 
 - **UBL-salgsfaktura** ER-formatkonfigurasjon:
 
@@ -559,7 +559,7 @@ Kontroller at følgende ER-konfigurasjoner til slutt er tilgjengelige i konfigur
 
     - Versjon 32.6.7 inneholder format- og formattilordnings ER-komponenter som ble konfigurert til å generere e-fakturaer i PEPPOL-format.
 
-    ![Versjon 32.6.7 på konfigurasjonssiden.](./media/er-quick-start3-imported-solution2b3.png)
+    ![Versjon 32.6.7 på konfigurasjonssiden](./media/er-quick-start3-imported-solution2b3.png)
 
 ## <a name="adopt-the-changes-to-the-new-standard-er-configurations-in-your-custom-er-configurations"></a><a name="RebaseCustomERConfigurations"></a>Ta i bruk endringene i de nye versjonene av standard ER-konfigurasjonene i dine tilpassede ER-konfigurasjoner
 
@@ -579,7 +579,7 @@ Kontroller at følgende ER-konfigurasjoner til slutt er tilgjengelige i konfigur
 
 Statusen for versjon 206.2 endres fra **Utkast** til **Fullført**, og versjonen blir skrivebeskyttet. En ny redigerbar versjon, 206.3, har blitt lagt til og har statusen **Utkast**. Du kan bruke denne versjonen til å gjøre ytterligere endringer i ER-datamodellkonfigurasjonen.
 
-![Versjon 206.2 fullført på konfigurasjonssiden.](./media/er-quick-start3-completed-custom-model2.png)
+![Versjon 206.2 fullført på konfigurasjonssiden](./media/er-quick-start3-completed-custom-model2.png)
 
 ### <a name="adopt-your-custom-er-model-mapping"></a>Ta i bruk den tilpassede ER-modelltilordningen
 
@@ -592,12 +592,12 @@ Statusen for versjon 206.2 endres fra **Utkast** til **Fullført**, og versjonen
 
     Legg merke til at noen rebaseringskonflikter ble oppdaget. Du må nå løse disse konfliktene manuelt.
 
-    ![Melding om rebaseringskonflikt på konfigurasjonssiden.](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
+    ![Melding om rebaseringskonflikt på konfigurasjonssiden](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. Velg **Utforming** i handlingsruten, og velg deretter **Kundefaktura** i listen over tilordninger.
 6. For hver rebaseringskonflikt velger **Behold egen verdi**, fordi du må beholde versjonsnummeret for den egendefinerte datamodellen for hver komponent som er nevnt.
 
-    ![Rebaseringskonflikter på siden Modelltilordningsutforming.](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
+    ![Rebaseringskonflikter på siden Modelltilordningsutforming](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
 7. Velg **Lagre**, og lukk deretter siden **Modelltilordningsutforming**.
 8. I listen over tilordninger velger du **Prosjektfaktura**.
@@ -611,7 +611,7 @@ Statusen for versjon 206.2 endres fra **Utkast** til **Fullført**, og versjonen
 
 Statusen for versjon 206.132.2 endres fra **Utkast** til **Fullført**, og versjonen blir skrivebeskyttet. En ny redigerbar versjon, 206.132.3, har blitt lagt til og har statusen **Utkast**. Du kan bruke denne versjonen til å gjøre ytterligere endringer i ER-modelltilordningskonfigurasjonen.
 
-![Versjon 206.132.2 fullført på konfigurasjonssiden.](./media/er-quick-start3-completed-custom-mapping2.png)
+![Versjon 206.132.2 fullført på konfigurasjonssiden](./media/er-quick-start3-completed-custom-mapping2.png)
 
 ### <a name="adopt-your-custom-er-format"></a>Ta i bruk det egendefinert ER-formatet
 
@@ -639,7 +639,7 @@ Statusen for versjon 206.132.2 endres fra **Utkast** til **Fullført**, og versj
 
 Statusen for versjon 32.6.7.2 endres fra **Utkast** til **Fullført**, og versjonen blir skrivebeskyttet. En ny redigerbar versjon, 32.6.7.3, har blitt lagt til og har statusen **Utkast**. Du kan bruke denne versjonen til å gjøre ytterligere endringer i den egendefinerte ER-formatkonfigurasjonen.
 
-![Versjon 32.6.7.2 fullført på konfigurasjonssiden.](./media/er-quick-start3-completed-custom-format2.png)
+![Versjon 32.6.7.2 fullført på konfigurasjonssiden](./media/er-quick-start3-completed-custom-format2.png)
 
 ## <a name="process-a-customer-invoice-by-using-new-versions-of-the-custom-er-configurations"></a><a name="ProcessInvoice3"></a>Behandle en kundefaktura ved hjelp av nye versjoner av tilpassede ER-konfigurasjoner
 
@@ -662,15 +662,12 @@ Statusen for versjon 32.6.7.2 endres fra **Utkast** til **Fullført**, og versjo
 4. Velg **Åpne** for å laste ned e-faktura-XML-filen som genereres.
 5. Analyser XML-filen for e-faktura. Legg merke til at i samsvar med tilpassingen, inkluderer kundeavgiftsskjemaet fremdeles det egendefinerte **FederalTaxID** XML-attributtet i tillegg til **schemeID** og **schemeAgencyID** XML-attributtene. I tillegg, fordi endringene i den nye versjonen av det grunnleggende **UBL-salgsfaktura**-formatet ble flettet med tilpassingen, er teksten i **cbc:CustomizationID** XML-elementet endret fra `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` til `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0`.
 
-    ![Forhåndsvisning av den genererte XML-filen med tilpassingene.](./media/er-quick-start3-e-invoice3.png)
+    ![Forhåndsvisning av den genererte XML-filen med tilpassingene](./media/er-quick-start3-e-invoice3.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 - [Laste ned ER-konfigurasjoner fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](er-download-configurations-global-repo.md)
-- [Opprett en fritekstfaktura](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
-- [Opprette og arbeide med egendefinerte felt](../../fin-ops/get-started/user-defined-fields.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+- [Opprett en fritekstfaktura](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
+- [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)

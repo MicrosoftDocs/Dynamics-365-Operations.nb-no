@@ -1,28 +1,28 @@
 ---
 title: Oversikt over innkjøpspolicyer
 description: Denne artikkelen inneholder informasjon om innkjøpspolicyer. En innkjøpspolicy er en samling av regler som styrer rekvisisjonsprosessen. Innkjøpspolicyer hjelpe innkjøpsadministratorer med å implementere sin innkjøpsstrategi ved å opprette en policystruktur som er i samsvar med organisasjonens krav til strategiske innkjøp.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "11614"
-- intro-internal
+ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cc150ae1a912fbfb4daf505e4240786c2f380a3
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: def842116e0c6c57d407cb4fb30a26a9e17d9a2c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982283"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022212"
 ---
 # <a name="purchasing-policies-overview"></a>Oversikt over innkjøpspolicyer
 
@@ -134,7 +134,7 @@ Konsolideringsregel for bestillingsopprettelse og behov definerer policyreglene 
 -   I fanen **Pristoleranse** kan du definere regler for å rute godkjente innkjøpsrekvisisjoner tilbake via gjennomgangsprosessen, når prisen på en vare i en innkjøpskatalog øker. Angi deretter det maksimale beløpet som nettobeløpet for en linjevare i en innkjøpsrekvisisjon kan øke, fra tidspunktet innkjøpsrekvisisjonen godkjennes til tidspunktet bestillingen opprettes. Nettobeløpet beregnes ved å bruke følgende formel: (\[Antall × (enhetspris-rabatt) ÷ prisenhet\] + innkjøpstillegg) × (100-rabattprosent) ÷ 100. Innkjøpsrekvisisjonslinjer som overskrider pristoleransen du har angitt, blir låst for manuell behandling. Reglene du konfigurerer i fanen **Feilbehandling**, bestemmer hvordan innkjøpsrekvisisjonslinjene behandles.
 -   I fanen **Feilbehandling** kan du konfigurere behandlingsregelen som skal brukes for en innkjøpsrekvisisjon hvis den ikke kan valideres når bestillingen opprettes, på grunn av en leverandørfeil eller en pristoleransefeil. Velg ett av følgende alternativer:
     -   **Ingen handling** – innkjøpsrekvisisjonslinjene forblir på siden **Frigi godkjente innkjøpsrekvisisjoner**. Statusen for innkjøpsrekvisisjonslinjene blir værende **Godkjent**. Feilene må imidlertid løses før en bestilling kan genereres for innkjøpsrekvisisjonslinjene.
-    -   **Avbryt innkjøpsrekvisisjonslinjen** – innkjøpsrekvisisjonslinjene avbrytes. Bestilleren kan opprette en ny innkjøpsrekvisisjon for de annullerte linjene hvis vedkommende fortsatt ønsker å rekvirere linjevarene.
+    -   **Avbryt innkjøpsrekvisisjonslinjen** – innkjøpsrekvisisjonslinjene avbrytes. Bestilleren kan opprette en ny innkjøpsrekvisisjon for de annullerte linjene hvis han eller hun fortsatt ønsker å rekvirere linjevarene.
     -   **Opprett en ny innkjøpsrekvisisjonslinje** – innkjøpsrekvisisjonslinjene avbrytes. Deretter genereres nye innkjøpsrekvisisjoner som bare inneholder innkjøpsrekvisisjonslinjene som ikke ble validert. De nye innkjøpsrekvisisjonene som er generert, har statusen **Utkast**. Disse innkjøpsrekvisisjonene kan sendes inn på nytt for gjennomgang etter at valideringsfeilene er løst. Klargjøreren for innkjøpsrekvisisjonslinjene blir varslet om at linjene er annullert, og at nye innkjøpsrekvisisjoner ble generert for de mislykkede innkjøpsrekvisisjonslinjene.
 -   I fanen **Manuell bestillingsopprettelse** kan du definere parameterne som bestemmer om en innkjøpsrekvisisjon må behandles manuelt, eller om den kan konverteres automatisk til en bestilling. Parameterne kan gjelde for interne katalogvarer, eksterne katalogvarer eller ikke-katalogvarer. Velg ett av følgende alternativer:
     -   **Opprett bestillinger manuelt** – manuelt opprette bestillinger for alle innkjøpsrekvisisjoner.
@@ -150,6 +150,3 @@ Konsolideringsregel for bestillingsopprettelse og behov definerer policyreglene 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

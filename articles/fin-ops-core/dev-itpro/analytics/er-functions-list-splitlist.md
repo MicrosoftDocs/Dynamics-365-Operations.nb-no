@@ -2,8 +2,11 @@
 title: SPLITLIST ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen SPLITLIST.
 author: NickSelin
-ms.date: 03/15/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef0b548173a01cc5a15fcfb743dfb29397c1349b3c2926fa6401399459d07026
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d0f527dcf313a6a5e3b6601cac9a0f6495f66833
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776128"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680346"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST ER-funksjonen
 
@@ -27,16 +30,10 @@ ms.locfileid: "6776128"
 
 `SPLITLIST`-funksjonen deler den angitte listen i underlister (eller grupper), der hver inneholder det angitte antallet poster. Deretter returneres resultatet som en ny *postliste*-verdi som består av partiene.
 
-## <a name="syntax-1"></a>Syntaks 1
+## <a name="syntax"></a>Syntaks
 
 ```vb
 SPLITLIST (list, number)
-```
-
-## <a name="syntax-2"></a>Syntaks 2
-
-```vb
-SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumenter
@@ -48,10 +45,6 @@ Den gyldige banen til en datakilde av *Postliste*-datatypen.
 `number`: *Heltall*
 
 Maksimalt antall poster per parti.
-
-`on-demand reading flag`: *Boolsk*
-
-En *boolsk* verdi som angir om elementer i underlister skal genereres ved behov.
 
 ## <a name="return-values"></a>Returverdier
 
@@ -71,8 +64,6 @@ Listen over partier som returneres, inneholder følgende elementer:
 
     Nummeret for gjeldende parti i den returnerte listen.
 
-Når flagget for lesing ved behov er satt til **Sann**, genereres underlister etter forespørsel som tillater reduksjon i minneforbruk, men som kan føre til ytelsesreduksjon hvis elementer ikke brukes sekvensielt.
-
 ## <a name="example"></a>Eksempel
 
 I følgende illustrasjon opprettes en **Linjer**-datakilde som en postliste med tre poster. Denne listen er delt inn i partier, der hvert inneholder opptil to poster.
@@ -90,6 +81,3 @@ Følgende illustrasjon viser resultatet når det utformede formatet kjøres.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

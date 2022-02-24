@@ -57,6 +57,3 @@ Titler er utvidet i denne oppdateringen. Feltet er nå 65 tegn. Denne endringen 
 ## <a name="benefit-enrollment-status-report"></a>Statusrapport for fordelsregistrering
 
 Innebygd rapportering om åpen registrering for fordeler hjelper deg med å forstå hvor ansatte er i den åpne registreringsprosessen. Du finner ut hvor mange ansatte som har fullført prosessen, som for øyeblikket fullfører den, og som ikke har startet. I tillegg kan du raskt vise alle problemer som oppstår under registrering av ansatte, og en fullstendig logg over alle innsendinger fra ansatte. Du kan derfor lett kontrollere og overvåke innsendinger fra ansatte.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,6 +72,3 @@ Hvis du vil ha mer informasjon om hvordan du publiserer endringer, kan du se [Kl
 ### <a name="view-extended-information-for-performance-in-manager-self-service"></a>Vise utvidet informasjon for prestasjon i lederselvbetjening
 
 Et nytt alternativ lar ledere vise prestasjonen til både direkte underordnede og deres underordnede. For øyeblikket kan linjeledere tilordne og oppdatere prestasjonsmål og utstede nye vurderinger. I tillegg kan linjeledere og deres ansatte vedlikeholde og oppdatere prestasjonsjournaler for å bidra til å sikre at prestasjonsvurderingsprosessen går knirkefritt. Når denne endringen er implementert, kan ledere vise og vedlikeholde prestasjonsrelatert informasjon for både direkte underordnede og deres underordnede.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

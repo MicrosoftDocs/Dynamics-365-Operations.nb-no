@@ -2,13 +2,16 @@
 title: Konfigurere og arbeide med telefonsenterordresperringer
 description: Dette emnet beskriver hvordan du arbeider med sperringer på ordrer ved hjelp av Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762602"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414660"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurere og arbeide med ordresperrer i telefonsenter
 
@@ -43,7 +46,7 @@ Ordrer som telefonsenterbrukere oppretter i bakhandelsprogrammet, kan settes på
 
 Under ordreregistrering, men før bestillingen legges inn og bekreftes, ønsker telefonsenterbrukere kanskje å sette en ordre på vent manuelt for å hindre at den blir frigitt til lageret for videre behandling. Kunden som plasserer ordren er eksempelvis kanskje ikke klar til å forplikte seg til den, eller kritiske data som kreves for å behandle ordren, mangler kanskje.
 
-På siden for ordreregistrering kan telefonsenterbrukeren sette en ordre på vent ved å bruke **Ordresperrer**-alternativet på **Salgsordre**-kategorien på ordreregistreringsmenyen. Brukeren kan også velge **Sperre**-menyelementet på **Salgsordresammendrag**-siden som vises når brukeren velger **Fullført** på en salgsordre via et telefonsenter.
+På siden for ordreregistrering kan telefonsenterbrukeren sette en ordre på vent ved å bruke **Ordresperrer**-alternativet på **Salgsordre**-kategorien på ordreregistreringsmenyen. Brukeren kan også velge **Sperre**-menyelementet på **Salgsordresammendrag**-siden som vises når han eller hun velger **Fullført** på en salgsordre via et telefonsenter.
 
 I begge tilfeller vises siden **Ordresperrer**. Deretter kan brukeren velge **Ny** for å opprette en sperring for ordren. I **Sperrekode**-feltet bør brukeren velge koden som best beskriver årsaken til sperringen. I **Årsakskode**-feltet kan brukeren også velge en tilleggskode for å gi et ekstra nivå for beskrivelsen av sperringen.
 
@@ -53,7 +56,7 @@ Når sperreinformasjonen er angitt og lagret, kan brukeren lukke **Ordresperrer*
 
 Hvis **Aktiver ordrefullføring**-flagget er aktivert i telefonsenterkanal, må ikke betalingen brukes på en ordre som er satt på vent. Men for en salgsordre som ikke er satt på vent, kan ikke brukere forlate siden salgsordreregistrering før betalingen er brukt. Betalingen vil selvfølgelig være nødvendig før ordrensperren frigis.
 
-I tillegg kan telefonsenterbrukere legge en manuell svindelsperre på ordrer som er mistenkelige av en eller annen grunn. Ordrer kan også plasseres på vent automatisk når de oppfyller aktive vilkår og regler for svindel. Hvis du vil ha mer informasjon om denne typen ordresperre, se [Konfigurere svindelvarsler](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+I tillegg kan telefonsenterbrukere legge en manuell svindelsperre på ordrer som er mistenkelige av en eller annen grunn. Ordrer kan også plasseres på vent automatisk når de oppfyller aktive vilkår og regler for svindel. Hvis du vil ha mer informasjon om denne typen ordresperre, se [Konfigurere svindelvarsler](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Vise og behandle ordrer på vent
 
@@ -100,6 +103,3 @@ Hvis brukerne vil fjerne en sperring, men gjør flere endringer i bestillingen f
 ## <a name="reporting-options"></a>Rapporteringsalternativer
 
 Gå til **Retail og Commerce** \> **Forespørsler og rapporter** \> **Telefonsenterrapporter** \> **Rapport for ordresperre** for å kjøre en rapport om ordresperrer etter datointervall, sperrekode eller andre relaterte kriterier.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

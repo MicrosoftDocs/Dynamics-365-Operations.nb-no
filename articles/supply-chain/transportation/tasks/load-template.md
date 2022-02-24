@@ -2,28 +2,29 @@
 title: Lastmaler
 description: Dette emnet beskriver hvordan du konfigurerer lastmaler og hvordan du knytter en lastmal til en ny last.
 author: Henrikan
+manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 694860d1ade74f9fd51a8ac579aa69fe7fb673a8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea7f5244b483a1b9d6c55227c676a3878a71d83
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569919"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646420"
 ---
 # <a name="load-templates"></a>Lastmaler
-
-[!include [banner](../../includes/banner.md)]
 
 Når du oppretter en ny last, kan du tilordne en lastmal. Lastmalen inneholder informasjon om utstyr og om mål, for eksempel høyde, bredde, dybde og mengde for lasten.
 
@@ -53,6 +54,3 @@ Dette emnet beskriver hvordan du konfigurerer lastmaler og hvordan du knytter en
 1. I handlingsruten, på **Forsyning og behov**-fanen, i **Legg til**-gruppen, velg **Til ny last**.
 1. I dialogboksen **Lastmal**, i **Lastmal-ID**-feltet, velger du malen som skal brukes.
 1. Velg **OK** for å bruke malen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

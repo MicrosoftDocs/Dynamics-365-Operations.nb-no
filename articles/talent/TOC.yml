@@ -1,11 +1,9 @@
-- name: Avvikling av Dynamics 365 Talent
-  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
+- name: Dynamics 365 for Talent
+  href: talent-welcome.md
   items:
-    - name: Startside for Dynamics 365 Talent
-      href: ./index.md
-    - name: Kom i gang
+    - name: Komme i gang
       items:
-        - name: Kom i gang med Talent
+        - name: Komme i gang med Talent
           href: talent-get-started.md
         - name: Nyheter eller endringer i Talent
           href: whats-new.md
@@ -152,8 +150,8 @@
           href: modular-app-tech-faq.md
         - name: Eksportere data fra Attract og Onboard
           href: attract-onboard-export-data.md
-        - name: Bygg inn lerretsapper fra Power Apps
-          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+        - name: Bygge inn lerretsapper fra Power Apps
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Få kundestøtte for Talent
           href: talent-support.md
     - name: Bemanne organisasjonen med Attract

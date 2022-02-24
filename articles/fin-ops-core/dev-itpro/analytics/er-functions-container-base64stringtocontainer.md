@@ -2,8 +2,11 @@
 title: ER-funksjonen Base64StringToContainer
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen (Elektronisk rapportering) Base64StringToContainer.
 author: NickSelin
+manager: kfend
 ms.date: 12/14/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3e813c628bfe783fb8e93fc5d7e8b275405245c42710f9ea691d4c06afff0d84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e92ae41a3e0f03cb14d4791ab768f096f2a0523
+ms.sourcegitcommit: e8a46e127d70986539c138b27a641bff6f6874d0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772038"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4739101"
 ---
 # <a name="base64stringtocontainer-er-function"></a>ER-funksjonen Base64StringToContainer
 
 [!include [banner](../includes/banner.md)]
 
-[Funksjonen](er-formula-language.md#Functions) `BASE64STRINGTOCONTAINER` konverterer de angitte inndataene for *Streng*-typen til et dataelement av typen *[Beholder](er-functions-category-container.md)*.
+[Funksjonen](er-formula-language.md#functions) `BASE64STRINGTOCONTAINER` konverterer de angitte inndataene for *Streng*-typen til et dataelement av typen *[Beholder](er-functions-category-container.md)*.
 
 ## <a name="syntax"></a>Syntaks
 
@@ -72,11 +75,8 @@ Du definerer de følgende datakildene i modelltilordningen:
 
 I dette eksemplet koder datakilden **\#MediaAsBase64String** det binære innholdet i det gjeldende medievedlegget som tekst som representerer en Base64-gruppe med binær-til-tekst-kodingsoppsett. Datakilden **\#BlobFomBase64** dekoder Base64-strengen og returnerer en binær verdi i BLOB-format.
 
-![Eksempeldatakilder på siden ER-utforming av modelltilordning.](./media/er-functions-container-base64stringtocontainer-1.png)
+![Eksempeldatakilder på siden ER-utforming av modelltilordning](./media/er-functions-container-base64stringtocontainer-1.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Containerfunksjoner](er-functions-category-container.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Beholderfunksjoner](er-functions-category-container.md)

@@ -1,10 +1,12 @@
 ---
 title: Kjøpsavtaler
 description: Denne artikkelen inneholder informasjon om kjøpsavtaler. En kjøpsavtale er en kontrakt som forplikter en organisasjon til å kjøpe et bestemt antall eller beløp ved hjelp av flere bestillinger over tid. I bytte mot denne forpliktelsen mottar kjøperen spesialpriser og -rabatter.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570501"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017193"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
@@ -102,13 +104,12 @@ Hvis du oppretter en konsernintern bestilling som bruker den konserninterne kjø
 ## <a name="financial-dimensions-on-purchase-agreements"></a>finansdimensjoner i kjøpsavtaler
 Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en kjøpsavtale. Hvis du endrer dimensjonene i overskriften for avtalen eller avtalelinjen, vil endringen ikke påvirke frigitte ordrer, men den vil vises på alle nye ordrer.
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
-- [Opprette en kjøpsavtale](tasks/create-purchase-agreement.md)
-- [Bruk en kjøpsavtale ved oppretting av en bestilling](tasks/create-purchase-release-order-purchase-agreement.md)
+[Opprette en kjøpsavtale](tasks/create-purchase-agreement.md)
+
+[Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

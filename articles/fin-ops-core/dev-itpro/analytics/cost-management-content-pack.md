@@ -2,9 +2,11 @@
 title: Power BI-innholdet Kostnadsstyring
 description: Dette emnet beskriver hva som er inkludert i Kostnadsbehandling-innhold for Power BI.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
@@ -16,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: bd5558c89130b48595a9b889072a18a4416b5bd7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752646"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683901"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-innholdet Kostnadsstyring
 
@@ -30,6 +32,11 @@ ms.locfileid: "7752646"
 ## <a name="overview"></a>Oversikt
 
 Microsoft Power BI-innholdet for **Kostnadsstyring** er ment for lagerregnskapsførere eller personer i organisasjonen som er ansvarlig for eller interessert i statusen til lageret eller varer i arbeid (VIA), eller som er ansvarlig for eller er interessert i å analysere avvik i standard kostpris.
+
+> [!NOTE]
+> Power BI-innholdet **Kostnadsbehandling** som er beskrevet i dette emnet, gjelder for Dynamics 365 Finance and Operations 8.0.
+> 
+> Power BI-innholdspakken for **Kostnadsstyring**, tilgjengelig på AppSource-nettstedet, er foreldet. Hvis du vil ha mer informasjon om denne avskrivingen, kan du se [Funksjoner som er fjernet eller avskrevet for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Power BI-innholdet gir et kategoriserte format som hjelper deg å overvåke ytelsen til beholdninger og visualisere hvordan kostnadene flyter gjennom dem. Du kan få innsikt, for eksempel omsetningshastighet, antall dager beholdningen er på lager, presisjon og ABC-klassifisering på det foretrukne aggregerte nivået (firma, vare, varegruppe eller område). Informasjonen som gjøres tilgjengelig, kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 
@@ -200,6 +207,3 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Juridiske enheter                                          | Navn på juridiske enheter                              |
 | Økonomiske kalendere                                        | Regnskapskalender, år, kvartal, periode, måned   |
 | Nettsted                                                    | ID, navn, adresse, delstat og land               |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

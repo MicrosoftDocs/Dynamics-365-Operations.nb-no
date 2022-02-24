@@ -2,13 +2,16 @@
 title: Delvis lokasjonssyklustelling
 description: Syklustellingsplaner styrer de faktiske telleoperasjonene. Du kan be om at bare bestemte produkter og produktvarianter telles, i stedet for all lagerbeholdning på et sted.
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f06b39f3c2d2f5a0bdfef1da9395c71686ed46968a1143305b5a10787f7e85f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a541818a72f5c24db8784071f447c83a2aa4edfd
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778440"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666752"
 ---
 # <a name="partial-location-cycle-counting"></a>Delvis lokasjonssyklustelling
 
@@ -46,7 +49,7 @@ Før delvis syklustellingsarbeid kan behandles, må du, som et minimum velge **V
 For den delvise syklusopptellingsprosessen blir ikke dato-/klokkeslettverdien for **Siste syklustelling** oppdatert for den siste syklusen for lokasjonen, selv om alle varene på en gitt lokasjon telles. Det delvise syklusantallet bruker ikke parameteren **Dager mellom syklustellinger** på siden **Planer for syklustelling**. Delvis syklusantall støtter ikke opptelling av flere elementer samtidig på samme sted. Funksjonaliteten for delvis syklustelling kan resultere i at samme sted telles flere ganger for en vare når **Behandle syklustellingsplan** kjøres. Hvis du vil unngå dette scenarioet, angir du filtre i feltet **Velg lokasjoner**.
 
 > [!NOTE]
-> Mobilappen Lagerstyring har ikke knappen **Legg til LP eller vare** når du bruker en delvis syklusopptellingsprosess.
+> Lagerappen har ikke knappen **Legg til LP eller vare** når du bruker en delvis syklusopptellingsprosess.
 
 ## <a name="example"></a>Eksempel
 
@@ -59,6 +62,3 @@ I dette eksemplet må bare varenummeret A0001 telles i lager 61.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Syklustelling](cycle-counting.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

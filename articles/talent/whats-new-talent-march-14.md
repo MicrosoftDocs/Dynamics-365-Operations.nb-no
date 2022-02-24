@@ -71,6 +71,3 @@ Med Platform update 24 for Finance and Operations kan brukere opprette varslings
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Kontroller av dupliserte ansatte: Endringer i grensesnittet
 Med denne endringen oppdages duplikater når du angir navnefelt, og statusen viser hvor mange som ble funnet. Du kan velge den angitte lenken for å åpne en ny side for å vurdere om du vil bruke resultatet som ble funnet. For å unngå å forstyrre dataregistreringen åpnes duplikatskjemaet ikke automatisk.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

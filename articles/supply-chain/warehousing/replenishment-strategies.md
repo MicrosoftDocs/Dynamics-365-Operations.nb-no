@@ -2,22 +2,25 @@
 title: Etterfyllingsstrategier
 description: Dette emnet inneholder informasjon om etterfyllingsstrategier, og forklarer hvordan du kan bruke Etterfyllingsstrategi-feltet på linje for etterfyllingsmaler for bølgebehov til å velge hvordan etterfylling skal utføres.
 author: mirzaab
+manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574167"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646139"
 ---
 # <a name="replenishment-strategies"></a>Etterfyllingsstrategier
 
@@ -45,7 +48,7 @@ Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administr
 
 For å gå tilgang til malene går du til **Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler**. I **Oversikt**-delen kan du velge eller opprette en etterfyllingsmal for bølgebehov der feltet **Etterfyllingstype** er satt til *Bølgebehov*. Deretter definerer du linjene for etterfyllingsmalen i delen **Detaljer for etterfyllingsmal**. For hver linje velger du etterfyllingsstrategien du vil bruke, i feltet **Etterfyllingsstrategi**.
 
-![Etterfyllingsmaler-siden.](media/ReplenTempWaveDmdMaxLocCap.png "Etterfyllingsmaler-siden")
+![Etterfyllingsmaler-siden](media/ReplenTempWaveDmdMaxLocCap.png "Etterfyllingsmaler-siden")
 
 Hvis kolonnen **Etterfyllingsstrategi** ikke vises i rutenettet i delen **Detaljer for etterfyllingsmal**, må du kontrollere at funksjonen er aktivert, og at den valgte etter fyllingsmalen har etterfyllingstypen for *Bølgebehov*.
 
@@ -85,7 +88,7 @@ Hvis du angir etterfyllingsstrategien til *Maksimal stedskapasitet* i stedet, f�
 - **Etterfyllingsarbeid 1:** Plukk 4 esker fra bulklokasjonen, og plasser dem på lokasjon Plukk-001.
 - **Etterfyllingsarbeid 2:** Plukk 5 esker fra bulklokasjonen, og plasser dem på lokasjon Plukk-002.
 
-[![Eksempel 1.](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
+[![Eksempel 1](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
@@ -109,9 +112,6 @@ Avhengig av innstillingen for alternativet **Tillat deling** i lokasjonsdirektiv
 
 Resultatene er forskjellige på grunn av informasjonen som er tilgjengelig når du oppretter arbeidet. Når **Tillat deling** er satt til *Ja* i lokasjonsdirektivene for etterfyllingsplukking, vet du at du har klart å finne 160 stk. Du kan derfor opprette arbeid for dette antallet. Når alternativet **Tillat deling** er satt til *Nei*, vet du imidlertid ikke om eksistensen av 160 stk. Fordi det ekstra antallet du har bestemt å etterfylle, var 3 esker, dropper du det ekstra antallet og prøver det opprinnelige antallet på nytt.
 
-[![Eksempel 2.](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
+[![Eksempel 2](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
 
 For å få maksimumsantallet til etterfyllingslokasjonene må du derfor sette alternativet **Tillat deling** til *Ja* i lokasjonsdirektivene for etterfyllingsplukking.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

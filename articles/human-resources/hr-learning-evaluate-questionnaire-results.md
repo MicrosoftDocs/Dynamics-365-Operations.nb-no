@@ -1,35 +1,33 @@
 ---
 title: Vise og evaluere resultatene i spørreskjemaer
-description: Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut.
-author: twheeloc
-ms.date: 10/28/2021
+description: Denne artikkelen forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ceb21af75dca2756d8e07f315ddee0246554c854
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070708"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419953"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Vise og evaluere resultatene i spørreskjemaer
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
+Denne artikkelen forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
 
 Etter at respondentene har fylt ut et spørreskjema, kan du vise og evaluere spørreskjemaresultatene på følgende måter:
 
@@ -74,5 +72,3 @@ Du kan bruke spørreskjemastatistikk til å analysere resultatene av et utfylt s
 -   Velg eller kontroller vilkår for å analysere resultatene etter respondent eller spørreskjemaets kjennetegn. Hvis du for eksempel velger **Postnummer**, kan du analysere sammenhengen mellom respondentens plassering og riktige svar.
 
 Innstillingene du definerer, lagres og kan brukes til å beregne resultatene på nytt periodisk.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

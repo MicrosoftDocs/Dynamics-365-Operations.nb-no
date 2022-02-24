@@ -2,30 +2,36 @@
 title: Definere et lager
 description: Dette emnet beskriver hvordan du definerer et lager som skal brukes med en ny kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734025"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414636"
 ---
 # <a name="warehouse-set-up"></a>Lageroppsett
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du definerer et lager som skal brukes med en ny kanal i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Hver handelskanal krever at et konfigurert lager er tilknyttet. Fremgangsmåtene nedenfor angir minimumskonfigurasjonen som kreves for å definere et lager for en handelskanal. Hvis du vil ha mer informasjon om lageroppsett, kan du se [Oversikt over lagerstyring](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
@@ -45,9 +51,9 @@ Følg denne fremgangsmåten for å konfigurere et lagerområde.
 
 Bildet nedenfor viser et eksempel på et lagerområde.
 
-![Eksempel på lagerområde.](media/warehouse-site.png)
+![Eksempel på lagerområde](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse&quot;></a>Definere et lager
+## <a name="set-up-a-warehouse"></a>Definere et lager
 
 Følg denne fremgangsmåten for å definere et lager.
 
@@ -61,14 +67,14 @@ Følg denne fremgangsmåten for å definere et lager.
     - Hvis du vil angi et **Transittlager**, må du først følge disse trinnene for å opprette et ekstra lager, der **Type** er satt til **Transitt**.
 1. Velg **Lagre** i handlingsruten.
 
-## <a name=&quot;set-up-inventory-aisles&quot;></a>Definer lagerganger
+## <a name="set-up-inventory-aisles"></a>Definer lagerganger
 
 Hvis du vil konfigurere lagerganger, følger du disse trinnene.
 
 1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Kanaloppsett \> Lokasjonsoppsett \> Lagerganger**.
 1. I handlingsruten velger du **Ny**.
 1. I rullegardinlisten **Lager** velger du lageret som ble opprettet tidligere.
-1. I **Gang**-feltet skriver du inn et navn (for eksempel &quot;Std").
+1. I **Gang**-feltet skriver du inn et navn (for eksempel "Std").
 1. I **Navn**-feltet skriver du inn et navn (for eksempel "Standard gang").
 1. Velg **Lagre** i handlingsruten.
 
@@ -98,7 +104,7 @@ Følg denne fremgangs måten for å definere lagerbeholdningslokasjoner for stan
     
 Følgende bilde viser et oppsett av en lagerlokasjon i San Francisco.
 
-![Eksempel på lagerlokasjonsoppsett.](media/warehouse-inventory-locations.png)
+![Eksempel på lagerlokasjonsoppsett](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Komplett lageroppsett
 
@@ -121,7 +127,7 @@ Følg fremgangsmåten nedenfor for å fullføre lageroppsettet.
 
 Følgende bilde viser detaljer for et konfigurert lager.
 
-![Eksempel på konfigurert lager.](media/warehouse-sample.png)
+![Eksempel på konfigurert lager](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -141,6 +147,3 @@ Følgende bilde viser detaljer for et konfigurert lager.
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

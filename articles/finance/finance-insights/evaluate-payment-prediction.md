@@ -1,30 +1,34 @@
 ---
-title: Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
+title: Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
 description: Dette emnet beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+manager: AnnBe
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: d761e31c4e4169b09711e351948390d2d40f3739
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969118"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644975"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
+# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan du evaluerer en forutsigelsesmodell etter at du har aktivert Finance Insights og deretter generert og kalibrert den første modellen. Dette emnet omhandler modeller for å forutsi kundebetalinger. Det beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 
@@ -32,32 +36,32 @@ Dette emnet forklarer hvordan du evaluerer en forutsigelsesmodell etter at du ha
 
 På siden **Parametere for økonomisk innsikt** i Microsoft Dynamics 365 Finance vises koblingen **Forbedre modellnøyaktighet** ved siden av poengsummen for nøyaktighet.
 
-[![Forbedre modellnøyaktighet-kobling.](./media/prediction-model.png)](./media/prediction-model.png)
+[![Forbedre modellnøyaktighet-kobling](./media/prediction-model.png)](./media/prediction-model.png)
 
 Denne koblingen tar deg til AI Builder, der du kan lære mer om den gjeldende modellen og forbedre den. Illustrasjonen nedenfor viser siden som er åpen.
 
-[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Siden som åpnes, viser følgende informasjon:
 
-- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](/ai-builder/prediction-performance) i AI Builder-dokumentasjonen.
+- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](https://docs.microsoft.com/ai-builder/prediction-performance) i veiviseren for AI Builder.
 - Delen **Data med mest innflytelse** viser hvor viktige forskjellige inndatatyper er for modellen din. Du kan evaluere denne listen og de tilsvarende prosentandelene for å fastslå om informasjonen samsvarer med det du vet om firmaet og markedet.
 
-    [![Delene Ytelse og Data med mest innflytelse for forutsigelsesmodellen.](./media/models.png)](./media/models.png)
+    [![Delene Ytelse og Data med mest innflytelse for forutsigelsesmodellen](./media/models.png)](./media/models.png)
 
 - I **Ytelse**-delen velger du **Se detaljer** for å lære mer om klassen og andre hensyn. I illustrasjonen nedenfor viser detaljene at modellen bruker mindre informasjon enn det som anbefales. Derfor har systemet generert en advarsel.
 
-    [![Advarsler om modellens ytelse.](./media/details.png)](./media/details.png)
+    [![Advarsler om modellens ytelse](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Graver dypere
 
 Selv om nøyaktighet er et godt utgangspunkt for evaluering av en modell, og ytelsesklassen gir perspektiv, gir AI Builder mer detaljerte måledata som du kan bruke i evalueringen. Hvis du vil laste ned detaljene, velger du ellipseknappen (**...**) i **Ytelse**-delen ved siden av **Bruk modell**-knappen, og deretter velger du alternativet for **Last ned detaljerte mål**.
 
-[![Kommandoen Last ned detaljerte mål.](./media/performance.png)](./media/performance.png)
+[![Kommandoen Last ned detaljerte mål](./media/performance.png)](./media/performance.png)
 
 Følgende illustrasjon viser formatet du kan laste ned dataene i.
 
-[![Format for nedlastede data.](./media/data-format.png)](./media/data-format.png)
+[![Format for nedlastede data](./media/data-format.png)](./media/data-format.png)
 
 Hvis du vil ha en dypere analyse av resultatene, er et godt utgangspunkt å gå gjennom matrisen "Forvirringsmatrise". Her finner du for eksempel dataene som vises for denne måleverdien i den forrige illustrasjonen.
 
@@ -65,7 +69,7 @@ Hvis du vil ha en dypere analyse av resultatene, er et godt utgangspunkt å gå 
 
 Du kan utvide disse dataene på følgende måte.
 
-| &nbsp;                   | Forventet Til planlagt tid | Forventet Forsinket | Forventet Svært sent |
+|                          | Forventet Til planlagt tid | Forventet Forsinket | Forventet Svært sent |
 |--------------------------|-------------------|----------------|---------------------|
 | Faktisk betaling Til planlagt tid   | **71**            | 0              | 21                  |
 | Faktisk forsinket betaling      | 5                 | **0**          | 27                  |
@@ -95,4 +99,5 @@ Når du har forstått resultatene av den første modellen bedre, vil du kanskje 
 
 Hvis du vil ha mer informasjon om hvordan du evaluerer prediksjonsmodellene, kan du se [Resultat av maskinlæringsmodeller](/confusion-matrix.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+#### <a name="privacy-notice"></a>Personvernerklæring
+Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.

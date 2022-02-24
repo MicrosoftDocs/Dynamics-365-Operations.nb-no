@@ -2,9 +2,11 @@
 title: NO-00003 Betalingsformater for kunde og leverandør
 description: Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er.
 author: epodkolz
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Norway
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 78ff1085a40c65b7ad65d18c79a9f2cf79141481c9a17180a7786923918fc42c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3158c0d5ee972b884e92ac75cc5c644f6e4b6e4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754151"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968301"
 ---
 # <a name="no-00003-customer-and-vendor-payment-formats"></a>NO-00003 Betalingsformater for kunde og leverandør
 
@@ -90,6 +92,3 @@ Denne oppgaven ble opprettet med demodatafirmaet DEMF med land/område for prim�
 2. Klikk Vis filtre.
 3. Bruk følgende filtre: Angi en filterverdi for "" i feltet "Betalings-ID" ved hjelp av filteroperatoren "er ikke".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

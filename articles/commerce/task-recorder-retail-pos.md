@@ -2,13 +2,16 @@
 title: Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 description: Dette emnet beskriver hvordan du bruker Oppgaveopptaker i Retail Modern POS og Cloud POS.
 author: mugunthanm
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730761"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414705"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 
@@ -31,7 +34,7 @@ Dette emnet beskriver hvordan du bruker Oppgaveopptaker i Retail Modern POS og C
 
 ## <a name="overview"></a>Oversikt
 
-Oppgaveopptaker i Retail Modern POS og Cloud POS er en ny løsning som ble bygd med fokus på høy hastighet. Den gir et fleksibelt Application Program Interface (API) for fleksibilitet og sømløs integrasjon med forbrukere av forretningsprosessregistreringer. I tillegg er Oppgaveopptaker-integrasjon med verktøyet Forretningsprosessmodelerer (BPM) på Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) implementert. Derfor kan brukere fortsette å produsere rike forretningsprosessdiagrammer fra opptak for å analysere og utforme programmene.
+Oppgaveopptaker i Retail Modern POS og Cloud POS er en ny løsning som ble bygd med fokus på høy hastighet. Den gir et fleksibelt Application Program Interface (API) for fleksibilitet og sømløs integrasjon med forbrukere av forretningsprosessregistreringer. I tillegg er Oppgaveopptaker-integrasjon med verktøyet Forretningsprosessmodelerer (BPM) på Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) implementert. Derfor kan brukere fortsette å produsere rike forretningsprosessdiagrammer fra opptak for å analysere og utforme programmene.
 
 ## <a name="architecture"></a>Arkitektur
 
@@ -55,14 +58,14 @@ Følg denne fremgangsmåten for å opprette en ny registrering ved hjelp av oppg
 1. Start Retail Modern POS eller Cloud POS, og logg på.
 2. På **Innstillinger**-siden, i delen **Oppgaveopptaker**, klikker du **Åpne Oppgaveregistrering**. Ruten **Oppgaveopptaker** vises. Du kan klikke **Lukk**-knappen (**X**) i øvre høyre hjørne for å lukke ruten **Oppgaveopptaker** før du begynner et nytt opptak. For å åpne ruten igjen gjentar du trinn 2.
 
-    [![Rute for oppgaveopptaker.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Rute for oppgaveopptaker](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Skriv inn et navn på og en beskrivelse av opptaket, og klikk deretter **Start**. Opptaksøkten begynner når du klikker **Start**.
 
     > [!NOTE]
     > Hvis du klikker **Lukk**-knappen (**X**) i øvre høyre hjørne når et opptak pågår, lukkes ruten **Oppgaveopptak**, men opptaksøkten avsluttes ikke. For å åpne ruten for oppgaveopptaker på nytt kan du klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen.
     >
-    > [![Spørsmålstegn.](./media/help.jpg)](./media/help.jpg)
+    > [![Spørsmålstegn](./media/help.jpg)](./media/help.jpg)
 
 4. Når du har klikket **Start**, går oppgaveopptak inn i opptaksmodus. Ruten for **oppgaveopptak** viser informasjon og kontroller som er knyttet til opptaksprosessen.
 5. Utfør handlingene du vil utføre i grensesnittet for Retail Modern POS eller Cloud POS.
@@ -72,7 +75,7 @@ Følg denne fremgangsmåten for å opprette en ny registrering ved hjelp av oppg
 
 Når du har avsluttet opptaksøkten, vises flere alternativer, slik at du kan laste ned opptaket.
 
-[![Nedlastingsalternativer.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Nedlastingsalternativer](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Lagre på denne PC-en
 
@@ -88,7 +91,7 @@ Rå opptaksfilen er nyttig for utviklerscenarioer, for eksempel generering av te
 
 ## <a name="recording-controls"></a>Opptakskontroller
 
-[![Opptakskontroller.](./media/controls.jpg)](./media/controls.jpg)
+[![Opptakskontroller](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Stopp
 
@@ -117,17 +120,17 @@ Du kan angi begynnelsen og slutten av et sett med grupperte trinn ved hjelp av k
 
 En merknad er tilleggstekst du legger til et trinn i en registrering. Du kan for eksempel bruke merknader til å gi brukeren mer kontekst eller instruksjoner. Du kan legge til merknader før eller etter et trinn. Du kan legge til en merknad til et hvilket som helst trinn ved å klikke knappen **Rediger** (blyantsymbol) til høyre for trinnet.
 
-[![Rediger-knappen for et trinn.](./media/annotate.jpg)](./media/annotate.jpg)
+[![Rediger-knappen for et trinn](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Tekster og merknader
 
 Du kan bruke feltene **Tekster** og **Merknader** til å legge til tekst som skal knyttes til et trinn i en oppgaveveiledning.
 
-[![Tekst og merknader-felt.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Tekst og merknader-felt](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Tekst
 
-Teksten du skriver inn i **Tekst**-feltet, vises *over* trinnteksten i oppgaveveiledningen. Denne plasseringen er egnet for tekst som du vil at brukeren leser før brukeren fullfører trinnet.
+Teksten du skriver inn i **Tekst**-feltet, vises *over* trinnteksten i oppgaveveiledningen. Denne plasseringen er egnet for tekst som du vil at brukeren leser før han eller hun fullfører trinnet.
 
 #### <a name="notes"></a>Notater
 
@@ -135,14 +138,11 @@ Teksten du skriver inn i **Merknader**-feltet, vises *under* trinnteksten i oppg
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjelp i Retail Modern POS og Cloud POS
 
-Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i Retail Modern POS og Cloud POS, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](../fin-ops-core/fin-ops/get-started/help-connect.md). Hjelp for Retail Modern POS og Cloud POS søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Commerce, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen.
+Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i Retail Modern POS og Cloud POS, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](../fin-and-ops/get-started/help-connect.md). Hjelp for Retail Modern POS og Cloud POS søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Commerce, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen.
 
-[![Hjelp-knappen.](./media/help.jpg)](./media/help.jpg)
+[![Hjelp-knappen](./media/help.jpg)](./media/help.jpg)
 
 Når du klikker en oppgaveveiledning i søkeresultatene, kan du se trinnene som et hjelpeemne eller eksportere trinnene til et Word-dokument.
 
 > [!NOTE]
 > Hjelp i Retail Modern POS og Cloud POS henter ikke frem oppgaveveiledninger i henhold til hvilket skjema du bruker eller hva du holder på med. Du må skrive inn prosessnavnet i søkeboksen, og deretter klikke **Søk**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

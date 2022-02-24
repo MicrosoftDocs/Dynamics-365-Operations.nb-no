@@ -1,24 +1,26 @@
 ---
 title: Opprette en innkjøpsreturordre
 description: Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjelp av Kreditnota-handlingen, for å kopiere linjer fra et leverandørfakturadokument til en ny bestilling.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea0d227966b69063993acf14e68cd069681357f1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 10b3e695ffcd44909be4781eac5d4eaeef199b03
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569415"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017065"
 ---
 # <a name="create-a-purchase-return-order"></a>Opprette en innkjøpsreturordre
 
@@ -65,6 +67,3 @@ Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjel
 4. Skriv inn en verdi i feltet **Produktkvittering**. Dette feltet brukes til å angi en referanse som skal brukes som bilag for produktkvitteringsjournalen.  
 5. Klikk på **OK**. Varene er nå registrert som mottatt som sendt i innkjøpsreturordren, og en produktkvitteringsjournal er opprettet. Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt eller returnert, og når.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

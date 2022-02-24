@@ -33,6 +33,3 @@ Hver uke er det nye versjoner av Talent. Disse versjonene er oppført i innholds
 
 Innholdsfortegnelsen vil fortsette å bli oppdatert hver uke, så kom tilbake for å finne alle nye funksjoner og endringer i de siste versjonene av Talent.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

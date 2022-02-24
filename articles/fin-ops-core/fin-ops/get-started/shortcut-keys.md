@@ -1,10 +1,12 @@
 ---
 title: Hurtigtaster
-description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
+description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med Finance and Operations-apper.
 author: jasongre
-ms.date: 12/10/2021
+manager: AnnBe
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,21 +16,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070989"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798232"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effektivt i økonomi- og driftsapper.
+Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effektivt i Finance and Operations-apper.
 
 > [!NOTE]
 > Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
@@ -130,10 +129,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="grid-shortcuts"></a>Rutenettsnarveier
 
-| Hvis du vil gjøre dette                                                                                                             | Trykk                            |
+| Hvis du vil gjøre dette                                                                                                             | Trykk                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Loddrett rulling                                                                                                     | Musehjul                     |
-| Vannrett rulling                                                                                                   | Skift + musehjul             |
 | Gå til neste/forrige kolonne                                                                                       | Tab / Skift+Tab                 |
 | Gå til neste/forrige rad                                                                                          | Pil ned / Pil opp           |
 | Flytt til neste/forrige rad uten å velge<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote> | Ctrl+Pil opp / Ctrl+Pil ned |
@@ -145,24 +142,22 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå til den første posten                                                                                               | CTRL+HOME                       |
 | Gå til den siste posten                                                                                                | CTRL+END                        |
 | Merk eller tøm alle rader                                                                                               | Ctrl+Skift+M                    |
-| Gå til den første markerte raden                                                                                           | Alt+Skift+M, F                  |
-| Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                  |
-| Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                  |
-| Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                  |
+| Gå til den første markerte raden                                                                                           | Alt+Skift+M, F                    |
+| Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                    |
+| Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                    |
+| Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                    |
 | Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
-| Flytt den gjeldende kolonnen til neste/forrige posisjon (med fokus i overskriftsraden)                                   | Ctrl+Skift+Pil høyre / Ctrl+Skift+Pil venstre |
-| Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Angi                           |
-| Endre størrelsen på den gjeldende kolonnen for å få plass til innholdet (med fokus i overskriftsraden)                                           | A (eller dobbeltklikk på kolonneskaleringshåndtaket) |
+| Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Enter                           |
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
 
-| Hvis du vil gjøre dette                                                                   | Trykk                          |
+| Hvis du vil gjøre dette                                                                   | Trykk                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åpne hyperkoblingen                                                           | Ctrl+Enter                    |
-| Angi øktdatoen i et datofelt                                       | D                             |
-| Angi gjeldende dato i et datofelt                                       | T                             |
+| Angi øktdatoen i et datofelt                                       | D                         |
+| Angi gjeldende dato i et datofelt                                       | T                         |
 | Åpne oppslag, kombinasjonsboks, datovelger, rullegardinboks                         | Alt+Pil ned                |
 | Lukk oppslag, kombinasjonsboks, datovelger, rullegardinboks                        | ESC                           |
 | Flytt fokus til et oppslag (når oppslaget allerede er åpent)                   | Alt+Pil ned                |
@@ -209,8 +204,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Bruk Flytteverktøyet (når du er i personliggjøringsmodus)                                                                       | M                                   |
 | Velg den nåværende kontrollen som den som skal flyttes (når du bruker Flytteverktøyet, og ingen kontroll er valgt for å flytte ennå)  | Mellomrom eller Enter                      |
 | Fjern kontrollen som skal flyttes (når du bruker Flytteverktøyet)                                                                   | ESC                                 |
-| Flytt den valgte kontrollen til neste posisjon (når du bruker Flytteverktøyet)                                              | Tab eller Pil høyre eller Pil ned    |
-| Flytt den valgte kontrollen til forrige posisjon (når du bruker Flytteverktøyet)                                          | Skift + Tab eller Pil venstre eller Pil opp |
+| Flytt til neste posisjon for den valgte kontrollen (når du bruker Flytteverktøyet)                                          | Tab eller Pil høyre eller Pil ned    |
+| Flytt til forrige posisjon for den valgte kontrollen (når du bruker Flytteverktøyet)                                      | Skift + Tab eller Pil venstre eller Pil opp |
 | Bruk Skjulverktøyet (når du er i personliggjøringsmodus)                                                                       | H                                   |
 | Bytt om for om nåværende kontroll er synlig eller skjult (når du bruker skjermverktøyet)                                     | Mellomrom eller Enter                      |
 | Bruk Hopp over-verktøyet (når du er i personliggjøringsmodus)                                                                       | K                                   |
@@ -260,6 +255,3 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 [Hurtigtaster for analyse for manglende konto](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

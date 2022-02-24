@@ -1,35 +1,33 @@
 ---
 title: Opprette en fordelsplan
-description: Dette emnet viser hvordan du definerer fordelsplaner i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/23/2021
+description: Definer fordelsplaner i Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanListPage, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d3163bf30af9ed0eac2c753ed4aabb15d568ff4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: bcbf4c1a7f136e5563bf1210b6c09228dad95dea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065332"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419848"
 ---
-# <a name="create-a-benefit-plan"></a>Opprett en fordelsplan
+# <a name="create-a-benefits-plan"></a>Opprette en fordelsplan
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dette emnet viser hvordan du definerer fordelsplaner i Dynamics 365 Human Resources.
+Denne artikkelen viser deg hvordan du definerer fordelsplaner i Dynamics 365 Human Resources.
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
@@ -46,8 +44,9 @@ Dette emnet viser hvordan du definerer fordelsplaner i Dynamics 365 Human Resour
    | **Programmet** | Angir et program du kan tilordne planen i. |
    | **Bunt** | Angir en bunt du kan tilordne planen i. |
    | **Mester** | Angir om planen er hovedplanen i bunten den er tilordnet til. |
+   | **Status** | Viser den gjeldende statusen for fordelsplanen. Standardverdien er Aktiv. Hvis du endrer statusen til Inaktiv, vil ikke planen være tilgjengelig som et valg under registreringen. |
    | **Gyldig fra-dato og -klokkeslett** | Datoen og klokkeslettet når planen starter. Standardverdien er gjeldende systemdato. |
-   | **Gyldig til-dato og -klokkeslett** | Datoen og klokkeslettet når planen slutter. Standardverdien er 12/31/2154, som i praksis betyr aldri. |
+   | **Gyldig til-dato og -klokkeslett** | Datoen og klokkeslettet når planen slutter (statusen settes til Inaktiv). Standardverdien er 12/31/2154, som i praksis betyr aldri. |
 
 4. I kategorien **Konfigurasjon** angir du verdier for følgende felt, avhengig av hvilken type plan du oppretter:
 
@@ -55,18 +54,18 @@ Dette emnet viser hvordan du definerer fordelsplaner i Dynamics 365 Human Resour
    | --- | --- | --- |
    | Medisinsk (medisinsk, tannlege, syn, HMO) | COBRA | Angir om planen er COBRA-berettiget (Consolidated Omnibus Budget Reconciliation Act). |
    | Medisinsk (medisinsk, tannlege, syn, HMO) | HIPAA | Angir om planen er HIPAA-berettiget (Health Insurance Portability and Accountability Act). |
-   | Medisinsk (medisinsk, tannlege, syn, HMO)<br><br>Annet (PTO, helse)<br><br>Andre<br><br>Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv)<br><br>Sparinger (for eksempel 401(k))<br><br>FSA | Kvalifisert før skatt | Angir om det kan gjøres bidrag til planen før avgifter brukes. |
-   | Medisinsk (medisinsk, tannlege, syn, HMO)<br><br>Annet (PTO, helse)<br><br>Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv)<br><br>Sparinger (for eksempel 401(k))<br><br>FSA | Kvalifisert etter skatt | Angir om det kan gjøres bidrag til planen etter avgifter brukes. |
-   | Medisinsk (medisinsk, tannlege, syn, HMO)<br><br>Annet (PTO, helse)<br><br>Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv)<br><br>Sparinger (for eksempel 401(k))<br><br>FSA | Bidragsyter | Angir hvem som bidrar til planen – den ansatte, arbeidsgiveren eller begge. |
-   | Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv) | Minimumsdekning | Minimumsbeløpet for forsikringsdekning som kreves for planen. |
-   | Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv) | Maksimumsdekning | Maksimumsbeløpet for forsikringsdekning som kreves for planen. |
-   | Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv) | Bruk dekningstrinn | Angir om det skal bekreftes at dekningsbeløpet samsvarer med et gyldig trinnvis beløp. |
-   | Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv) | Trinnvist beløp | Det trinnvise beløpet for forsikringsdekning for planen. Hvis for eksempel det trinnvise beløpet er 1000, kan en ansatt ikke ha forsikring på $200 500 forsikring, de må runde av oppover til $201 000 eller nedover til $200 000. |
-   | Langsiktig uførhet<br><br>ADD (enkelt liv, frivillig liv) | Trinnvis retning | Angir avrundingsretningen (opp eller ned) når dekningsbeløpet ikke oppfyller den trinnvise beløpsverdien. |
+   | <ul><li>Medisinsk (medisinsk, tannlege, syn, HMO)</li><li>Annet (PTO, helse)</li><li>Andre</li><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li><li>Sparinger (for eksempel 401(k))</li><li>FSA</li></ul> | Kvalifisert før skatt | Angir om det kan gjøres bidrag til planen før avgifter brukes. |
+   | <ul><li>Medisinsk (medisinsk, tannlege, syn, HMO)</li><li>Annet (PTO, helse)</li><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li><li>Sparinger (for eksempel 401(k))</li><li>FSA</li></ul> | Kvalifisert etter skatt | Angir om det kan gjøres bidrag til planen etter avgifter brukes. |
+   | <ul><li>Medisinsk (medisinsk, tannlege, syn, HMO)</li><li>Annet (PTO, helse)</li><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li><li>Sparinger (for eksempel 401(k))</li><li>FSA</li></ul> | Bidragsyter | Angir hvem som bidrar til planen – den ansatte, arbeidsgiveren eller begge. |
+   | <ul><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li></ul> | Minimumsdekning | Minimumsbeløpet for forsikringsdekning som kreves for planen. |
+   | <ul><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li></ul> | Maksimumsdekning | Maksimumsbeløpet for forsikringsdekning som kreves for planen. |
+   | <ul><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li></ul> | Bruk dekningstrinn | Angir om det skal bekreftes at dekningsbeløpet samsvarer med et gyldig trinnvis beløp. |
+   | <ul><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li></ul> | Trinnvist beløp | Det trinnvise beløpet for forsikringsdekning for planen. Hvis for eksempel det trinnvise beløpet er 1000, kan en ansatt ikke ha forsikring på $200 500 forsikring, de må runde av oppover til $201 000 eller nedover til $200 000. |
+   | <ul><li>Langsiktig uførhet</li><li>ADD (enkelt liv, frivillig liv)</li></ul> | Trinnvis retning | Angir avrundingsretningen (opp eller ned) når dekningsbeløpet ikke oppfyller den trinnvise beløpsverdien. |
    | ADD (enkelt liv, frivillig liv) | Forsikringsbarhetsbevis | Angir om en ansatt må oppgi bevis på at vedkommende kan forsikres. |
    | ADD (enkelt liv, frivillig liv) | Beløp | Beløpet i regnskapsvaluta. Dette feltet er bare aktivt hvis det er merket av for Bevis på forsikringsrett. |
-   | Sparinger (for eksempel 401(k))<br><br>FSA | Årlig minimumsbidrag | Minimum bidragsbeløp som kreves for planen. |
-   | Sparinger (for eksempel 401(k))<br><br>FSA | Årlig maksimumsbidrag | Maksimum bidragsbeløp som kreves for planen. |
+   | <ul><li>Sparinger (for eksempel 401(k))</li><li>FSA</li></ul> | Årlig minimumsbidrag | Minimum bidragsbeløp som kreves for planen. |
+   | <ul><li>Sparinger (for eksempel 401(k))</li><li>FSA</li></ul> | Årlig maksimumsbidrag | Maksimum bidragsbeløp som kreves for planen. |
    | Sparinger (for eksempel 401(k)) | Årlig maksimumsbeløp for arbeidsgiver | Maksimumsbeløpet en arbeidsgiver kan bidra med mot spareplanen for en ansatt i en fordelsperiode. Du må merke av for Match ansatt for å kunne bruke dette feltet. |
    | Sparinger (for eksempel 401(k)) | Arbeidsgiversamsvar | Angir om arbeidsgiveren bidrar til spareplanen til en ansatt. |
    | Sparinger (for eksempel 401(k)) | Prosent for arbeidsgiversamsvar | Prosentandelen av et ansattbidrag som arbeidsgiveren vil matche. |
@@ -121,7 +120,7 @@ Du kan vise de registrerte arbeiderne som er registrert i en valgt fordelsplan.
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
-2. På **Fordeler**-fanen på navigasjonslinjen velger du **Registrerte arbeidere**.
+2. Velg **Registrerte arbeidere**.
 
 ## <a name="attach-coverage-options"></a>Tilknytt dekningsalternativer
 
@@ -129,7 +128,7 @@ Du kan legge til dekningsalternativer i den valgte fordelsplanen. Når du legger
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
-2. På **Fordeler**-fanen på navigasjonslinjen velger du **Tilknytt dekningsalternativer**.
+2. Velg **Legg ved dekningsalternativer**.
 
 ## <a name="override-eligibility-rules"></a>Overstyre rettighetsregler
 
@@ -137,7 +136,7 @@ Du kan legge til arbeidere i en plan som unntak i rettighetsreglene. Hver arbeid
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
-2. På **Fordeler**-fanen på navigasjonslinjen velger du **Overstyr rettighetsregler**.
+2. Velg **Overstyr rettighetsregler**.
 
 ## <a name="view-attached-periods"></a>Vise tilknyttede perioder
 
@@ -145,21 +144,18 @@ Du kan vise en liste over de tilgjengelige fordelsperiodene.
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
-2. Velg fanen **Perioder** i navigasjonsfeltet.
+2. Velg **Perioder**.
 
-## <a name="view-plan-description"></a>Vis planbeskrivelse
+## <a name="view-plan-information"></a>Vise planinformasjon
 
-Du kan gi en beskrivelse av planen for å hjelpe de ansatte med sine fordelsvalg. Planbeskrivelsen du angir her, vises i Ansattselvbetjening når du holder musepekeren over planen i listen over dekningsalternativer.
+Du kan gi en beskrivelse av planen for å hjelpe de ansatte med sine fordelsvalg. Planinformasjonen du angir her, vises i Ansattselvbetjening når du holder musepekeren over planen i listen over dekningsalternativer.
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
-2. På **Fordeler**-fanen på navigasjonslinjen velger du **Planbeskrivelse**.
+2. Velg **Planinformasjon**.
 
 ## <a name="view-flex-credit-programs"></a>Vis fleksikredittprogrammer
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
-2. På **Fordeler**-fanen på navigasjonslinjen velger du **Fleksikredittprogrammer**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+2. Velg **Fleksible kredittprogrammer**.

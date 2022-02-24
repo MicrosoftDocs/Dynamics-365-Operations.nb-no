@@ -1,10 +1,12 @@
 ---
 title: Oppdatere vedlikeholdsbudsjetter
 description: Dette emnet forklarer hvordan du oppdaterer et vedlikeholdsbudsjett i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 87c054cb96d56e40e35ee44142396f59d61395263ff41232423f6c7911478b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b04549700b51f73a3629fe9cd67a3e1f6c1bafbb
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724946"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021037"
 ---
 # <a name="update-maintenance-budgets"></a>Oppdatere vedlikeholdsbudsjetter
 
@@ -72,6 +74,3 @@ På siden **Vedlikeholdsbudsjettlinjer** kan du manuelt legge til en ny budsjett
 
 - Du vet at reparasjon av enkelte aktiva er for øyeblikket i planleggingsfasen, men tilknyttede jobber er ennå ikke opprettet i Aktivastyring. Du vil imidlertid at budsjettkostnader for disse jobbene skal være med i vedlikeholdsbudsjettet.
 - Det er opprettet nye aktiva eller aktivatyper siden du opprettet vedlikeholdsbudsjettet, men vedlikeholdsplaner er ennå ikke definert for disse aktivaene eller aktivatypene. Du vil imidlertid at budsjettkostnader for disse aktivatypene skal være med i vedlikeholdsbudsjettet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

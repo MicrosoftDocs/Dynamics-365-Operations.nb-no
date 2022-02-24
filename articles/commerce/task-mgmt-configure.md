@@ -2,29 +2,34 @@
 title: Konfigurere oppgavebehandling
 description: Dette emnet beskriver hvordan du konfigurerer funksjoner for oppgavebehandling i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730809"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414709"
 ---
 # <a name="configure-task-management"></a>Konfigurere oppgavebehandling
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du konfigurerer funksjoner for oppgavebehandling i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Før Dynamics 365 Commerce-ledere og -ansatte kan bruke funksjonene for oppgavestyring i Commerce, må oppgavebehandling være konfigurert. Konfigurasjonstrinn omfatter å gi tillatelser til ledere og ansatte, distribuere tillatelser til salgsstedsklienter (POS), definere POS-varslinger og konfigurere **Oppgaver**-flisen på startsiden for et POS-program.
 
@@ -44,7 +49,7 @@ Følg denne fremgangsmåten for å konfigurere tillatelser for oppgavebehandling
 
 Følgende illustrasjon viser hvordan du konfigurerer tillatelser for oppgavebehandling for butikkledere.
 
-![Konfigurere tillatelser for oppgavebehandling for butikkledere.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurere tillatelser for oppgavebehandling for butikkledere](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurere tillatelser for ansatte
 
@@ -78,7 +83,7 @@ Hvis du vil konfigurere POS-varslinger for oppgaver, gjør du følgende.
 
 Følgende illustrasjon viser operasjonen **Oppgavebehandling** på siden **POS-operasjoner**.
 
-![Operasjonen Oppgavebehandling på siden POS-operasjoner.](media/HQ-POS-Tasks-Notifications.png)
+![Operasjonen Oppgavebehandling på siden POS-operasjoner](media/HQ-POS-Tasks-Notifications.png)
 
 Hvis du vil ha mer informasjon om hvordan du konfigurerer POS-varslinger, kan du se [Vise ordrevarslinger på salgsstedet (POS)](notifications-pos.md).
 
@@ -95,7 +100,7 @@ Gjør følgende for å konfigurere **Oppgaver**-flisen på startsiden for et POS
 
 Illustrasjonen nedenfor viser et eksempel på en **Oppgaver**-flis på en POS-startside.
 
-![Oppgaver-flis på en POS-startside.](media/POS-home-screen-tasks-button-image.png)
+![Oppgaver-flis på en POS-startside](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -106,6 +111,3 @@ Illustrasjonen nedenfor viser et eksempel på en **Oppgaver**-flis på en POS-st
 [Tilordne oppgavelister til butikker eller ansatte](task-mgmt-assign-lists.md)
 
 [Oppgavebehandling på salgsstedet](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

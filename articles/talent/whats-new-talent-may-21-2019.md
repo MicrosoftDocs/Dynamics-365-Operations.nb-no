@@ -63,6 +63,3 @@ Organisasjoner kan kreve årsakskoder for bestemte fraværstyper når ansatte se
 ### <a name="provide-a-leave-and-absence-transaction-list-for-hr"></a>Angi en transaksjonsliste for permisjon og fravær for HR
 
 Muligheten for å spore ansattes fravær og forstå hvordan fravær beregnes, hjelper ikke bare HR med å svare på ansattspørsmål, men sørger også for nøyaktige fraværstildelinger for ansatte. HR har nå en ny oversikt over transaksjonene (tildelinger, avsetninger, justeringer og forespørsler), slik at HR-ansatte kan vise årsakene bak fridagssaldoer.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

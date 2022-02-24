@@ -1,10 +1,12 @@
 ---
 title: Innkommende og utgående aktiva
 description: Dette emnet forklarer hvordan du registrerer innkommende og utgående aktiva i Aktivabehandling.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759629"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018077"
 ---
 # <a name="inbound-and-outbound-assets"></a>Innkommende og utgående aktiva
 
@@ -42,7 +44,7 @@ Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgåen
 3. Velg **Oppdater tilstand for vedlikeholdsforespørsel**.
 4. Velg **Inngående** (eller en annen livssyklustilstand som du har opprettet for innkommende aktiva), og velg deretter **OK**.
 
-![Registrer aktiva som inngående.](media/07-manage-maintenance-requests.png)
+![Registrer aktiva som inngående](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrer innkommende aktiva som mottatt
 
@@ -51,7 +53,7 @@ Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgåen
 3. Velg **Motta aktiva**.
 4. Angi dato og klokkeslett i feltet **Mottatt**. Velg deretter **OK**. Posten fjernes fra listesiden **Innkommede aktiva**.
 
-![Registrer innkommende aktiva som mottatt.](media/08-manage-maintenance-requests.png)
+![Registrer innkommende aktiva som mottatt](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrer aktiva som utgående
 
@@ -68,6 +70,3 @@ Når du har fullført vedlikeholds- eller reparasjonsjobben, kan du registrere a
 2. Velg aktivumet eller vedlikeholdsforespørselen.
 3. Velg **Lever aktiva**.
 4. Angi dato og klokkeslett i feltet **Levert**. Velg deretter **OK**. Posten fjernes fra listesiden **Utgående aktiva**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

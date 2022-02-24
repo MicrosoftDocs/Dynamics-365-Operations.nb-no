@@ -1,24 +1,26 @@
 ---
 title: Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 description: Dette emnet forklarer hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir kontrakten til én av leverandørene.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579478"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016684"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 
@@ -32,7 +34,7 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Angi et svar som en leverandør
 
-1. Gå til **Leverandørsamarbeid \> Arbeidsområder \> Leverandørbud**.
+1. Velg **Leverandørbud** på instrumentbordet.
 2. I listen **Invitasjoner til nytt bud** finner du en tilbudsforespørsel som nettopp ble sendt. Velg tilbudsforespørselen for å gå gjennom forespørselen.
 3. Velg **Vedlegg i tilbudsforespørsel** for å se gjennom vedlegg som er lagt til.
 4. Velg **Bud** hvis du vil at feltene skal være redigerbare. Legg merke til at **Bud pågår**-feltet er satt til **Leverandør oppdaterer**.
@@ -104,6 +106,3 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 ## <a name="view-the-purchase-order-that-is-generated"></a>Vise bestillingen som er generert
 
 Velg **Bestilling** i fanen **Generelt** i handlingsruten. Siden som vises, angir bestillingen som ble generert da du godtok budet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

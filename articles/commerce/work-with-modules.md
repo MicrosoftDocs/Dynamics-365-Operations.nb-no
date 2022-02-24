@@ -2,30 +2,35 @@
 title: Arbeide med moduler
 description: Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728270"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414661"
 ---
 # <a name="work-with-modules"></a>Arbeide med moduler
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Moduler er logiske byggeblokker som utgjør sidestrukturen, og de har forskjellige formål og omfang. Noen moduler er containere på høyt nivå, og det eneste formålet er å oppbevare og organisere andre moduler (underordnede moduler). Andre moduler, for eksempel en enkel bildeplasseringsmodul, har et svært bestemt formål. Andre moduler, for eksempel en karusellmodul, faller et sted mellom disse to kategoriene.
 
@@ -53,7 +58,7 @@ De fleste av de typiske, daglige side- og innholdsredigeringsaktivitetene omfatt
 
 Illustrasjonen nedenfor viser hvordan moduler er nestet i overordnede containermodulspor.
 
-![Neste moduler.](../commerce/media/basic-module-nesting.png)
+![Neste moduler](../commerce/media/basic-module-nesting.png)
 
 ## <a name="add-or-remove-modules"></a>Legge til eller fjerne moduler
 
@@ -168,6 +173,3 @@ Hvis du vil konfigurere en containermodul på en side, følger du disse trinnene
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

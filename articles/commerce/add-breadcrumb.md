@@ -2,12 +2,15 @@
 title: Brødsmulemodul
 description: Dette emnet dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ba857ef7a796336bab3709817b5ba48fd3fa845667e4b9c40596cfe450290f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720018"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517166"
 ---
-# <a name="breadcrumb-module"></a>Søkebanemodul
+# <a name="breadcrumb-module"></a>Brødsmulemodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Brødsmulemoduler brukes til å levere sekundær navigasjon på områdesider. De vises vanligvis øverst på en side, under overskriften. Selv om brødsmulemoduler kan legges til på en hvilken som helst side, brukes de oftest på sider for produktdetaljer (PDP-sider) for å vise produktkategorihierarkiet og gi en rask metode for å bevege seg rundt på et område. En brødsmulemodul kan også brukes til å vise en "Tilbake til resultatene"-kobling når en bruker åpner en PDP fra en søke- eller listeside. På denne måten kan brukere raskt gå tilbake til den filtrerte listesiden for å fortsette å handle.
 
@@ -37,7 +42,7 @@ På sider som inneholder produktkategorikontekst, for eksempel PDP-er og kategor
 
 Bildet nedenfor viser et eksempel på en brødsmulemodul som viser kategorihierarkiet på en PDP.
 
-![Eksempel på en brødsmulemodul.](./media/ecommerce-breadcrumb.PNG)
+![Eksempel på en brødsmulemodul](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Innstillinger for brødsmulemoduler
 
@@ -90,6 +95,3 @@ Hvis du vil legge til en brødsmulemodul på en PDP og angi de nødvendige egens
 [Kjøpsboksmodul](add-buy-box.md)
 
 [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

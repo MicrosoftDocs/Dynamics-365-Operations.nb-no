@@ -2,30 +2,36 @@
 title: Administrere robots.txt-filer
 description: Dette emnet beskriver hvordan du administrerer robots.txt-filer i Microsoft Dynamics 365 Commerce.
 author: BrianShook
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e1078de354a96cc50b7c1b79a864db5041ea5069df650670e65531faaeb32e0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754398"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517458"
 ---
 # <a name="manage-robotstxt-files"></a>Administrere robots.txt-filer
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du administrerer robots.txt-filer i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Robotutelukkelsestandarden, eller robots.txt, er en standard som nettsteder bruker for å kommunisere med Web-roboter. Den instruerer Web-roboter om alle områder av et nettsted som ikke bør besøkes. Roboter brukes ofte av søkemotorer til å indeksere nettsteder.
 
@@ -101,6 +107,3 @@ Hvis du vil slette en robots.txt-fil i Commerce, gjør du følgende:
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

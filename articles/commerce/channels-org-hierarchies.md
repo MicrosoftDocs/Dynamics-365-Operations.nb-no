@@ -2,30 +2,36 @@
 title: Definere organisasjonshierarkier
 description: Dette emnet beskriver hvordan du setter opp organisasjonshierarkier i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746022"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414605"
 ---
 # <a name="set-up-organization-hierarchies"></a>Definere organisasjonshierarkier
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du setter opp organisasjonshierarkier i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Før du oppretter kanaler, må du definere organisasjonshierarkiene dine.
 
@@ -54,7 +60,7 @@ Bruk følgende fremgangsmåte for å opprette et organisasjonshierarki.
 
 Det følgende bildet viser et eksempel på et organisasjonshierarki som er opprettet for et fiktivt "Adventure Works"-sett med butikker.
 
-![Eksempel på organisasjonshierarki.](media/organizational-hierarchies.png)
+![Eksempel på organisasjonshierarki](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Legge til organisasjoner i et hierarki
 
@@ -67,7 +73,7 @@ Hvis du vil legge til organisasjoner i et hierarki, følger du disse trinnene.
 
 Det følgende bildet viser en juridisk enhet som er lagt til i hierarkiroten med fire kostsentre som er lagt til for kanalene "Kjøpesenter", "Utsalgssted", "Nett" og "Telefonsenter". Det kan også legges til diverse typer detaljhandel-, telefonsenter- og Internett-kanaler.
 
-![Eksempel på hierarkiutformer.](media/hierarchy-designer.png)
+![Eksempel på hierarkiutformer](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -82,6 +88,3 @@ Det følgende bildet viser en juridisk enhet som er lagt til i hierarkiroten med
 [Oversikt over kanaler](channels-overview.md)
 
 [Forutsetninger for kanaloppsett](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

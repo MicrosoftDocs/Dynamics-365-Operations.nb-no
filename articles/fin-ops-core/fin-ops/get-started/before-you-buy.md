@@ -2,9 +2,11 @@
 title: Før du kjøper
 description: Trinnvis veiledning som kan brukes når du vurderer å kjøpe Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce.
 author: ShellyBakke
-ms.date: 11/30/2021
+manager: AnnBe
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874590"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798555"
 ---
 # <a name="before-you-buy"></a>Før du kjøper
 
@@ -42,7 +44,7 @@ Følgende hensyn må tas når du velger lokal som distribusjonsalternativ:
 - [Systemkrav for lokale distribusjoner](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> Lokale distribusjoner støttes ikke på noen offentlig skyinfrastruktur, inkludert Microsoft Azure. De støttes imidlertid for kjøring på [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) og [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
+> Lokale distribusjoner støttes ikke på noen offentlig skyinfrastruktur, inkludert Microsoft Azure.
 
 For mer informasjon, se [Distribusjonsalternativer](../../dev-itpro/deployment/choose-deployment-type.md).
 
@@ -86,11 +88,8 @@ For tilleggsressurser, se:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Trinn fire: Lære om FastTrack og planlegge distribusjonen
 
-Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for å hjelpe deg med å gå til Dynamics 365 smidig og trygt, slik at du raskere kan realisere forretningsverdier. Når du deltar i programmet FastTrack, får du veiledning om anbefalte fremgangsmåter og hvordan du planlegger for vellykket høyt volum. Du vil også lære måter å aktivere nye brukere og ttvid egenskaper – alle i ditt eget tempo. I tillegg har du tilgang til Microsoft tekniske ressurser for å gjøre opplevelsen med Dynamics 365 vellykket. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](/dynamics365/fasttrack/).
+Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for å hjelpe deg med å gå til Dynamics 365 smidig og trygt, slik at du raskere kan realisere forretningsverdier. Når du deltar i programmet FastTrack, får du veiledning om anbefalte fremgangsmåter og hvordan du planlegger for vellykket høyt volum. Du vil også lære måter å aktivere nye brukere og ttvid egenskaper – alle i ditt eget tempo. I tillegg har du tilgang til Microsoft tekniske ressurser for å gjøre opplevelsen med Dynamics 365 vellykket. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du oppgraderer fra Dynamics AX 2012 eller migrerer fra AX 2009
 
 Hvis du er en kunde som oppgraderer fra Microsoft Dynamics AX 2012 eller migrerer fra Microsoft Dynamics AX 2009, kan du være kvalifisert for en lengre prøveversjon. Kontakt <daxcf@microsoft.com> for mer informasjon.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

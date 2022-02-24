@@ -1,10 +1,12 @@
 ---
 title: Typer meldinger
 description: Dette emnet forklarer hvordan du definerer typer meldinger i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f51c90f72120d236ae9acf3fbcb8ac98fdc8cdf3d3bd032b3a3a3d317483b070
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 56a83457097b64d195eec53000b29b2f16251772
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721493"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019335"
 ---
 # <a name="maintenance-request-types"></a>Typer meldinger
 
@@ -41,7 +43,4 @@ En type melding definerer tilknytningen med en livssyklusgruppe for meldinger (l
 
 Illustrasjonen nedenfor viser et eksempel på siden **Typer meldinger**.
 
-![Siden Typer meldinger.](media/07-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Siden Typer meldinger](media/07-setup-for-requests.png)

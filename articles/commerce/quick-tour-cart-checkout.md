@@ -2,30 +2,35 @@
 title: Oversikt over sider for handlekurv og kasse
 description: Dette emnet inneholder en oversikt over sider for handlekurv og kasse i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982974"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414750"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversikt over sider for handlekurv og kasse
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet inneholder en oversikt over sider for handlekurv og kasse i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Handlekurvsiden for et e-handelsområde viser alle varene som en kunde har lagt til i handlekurven. Handlekurvsiden bygges ved hjelp av handlemodulen. Handlekurvmodulen er en container som er vert for alle modulene som kreves for å vise varer i handlekurven. Handlekurvmodulen kan også bruke de andre modulene for å vise ordresammendraget og eventuelle kampanjekoder som er brukt på kundeordren.
 
@@ -37,7 +42,7 @@ Handlekurvsidene fungerer som handlepose og inneholder alle varene som er lagt t
 
 Illustrasjonen nedenfor viser et eksempel på en handlekurvside som ble bygd ved hjelp av modulbiblioteket og "Fabrikam"-temaet.
 
-![Eksempel på en handlekurvside.](./media/cart2.PNG)
+![Eksempel på en handlekurvside](./media/cart2.PNG)
 
 Hovedområdet på en handlekurvside viser alle varene som en kunde har lagt til i handlekurven. Alle gjeldende rabatter vises. Disse rabattene inkluderer komplekse rabatter. Eksempler inkluderer "Kjøp 3 varer og få 10 % avslag" eller "Kjøp en flaske og en ryggsekk for å få 10 % rabatt". Ordresammendragmodulen viser beløpet som forfaller etter at rabatter, levering, avgifter og så videre er påført. Det finnes også en promokodemodul som lar kunden bruke eller fjerne kampanjekoder.
 
@@ -53,7 +58,7 @@ Utsjekkingssiden er der kunder angir informasjonen som kreves for å legge inn e
 
 Illustrasjonen nedenfor viser et eksempel på en utsjekkingsside som ble bygd ved hjelp av modulbiblioteket.
 
-![Eksempel på en utsjekkingsside.](./media/Checkout.PNG)
+![Eksempel på en utsjekkingsside](./media/Checkout.PNG)
 
 Hoveddelen av utsjekkingssiden er der all ordreinformasjon samles inn. Denne informasjonen omfatter leveringsadresse, leveringsalternativer og betalingsinformasjon. Kassen har en trinnvis flyt, fordi informasjonen må angis i en bestemt rekkefølge for å kunne behandles. Leveringsadressen må for eksempel angis før forsendelseskostnadene kan beregnes og betalingen kan autoriseres.
 
@@ -83,7 +88,7 @@ Kunden kan fullføre utsjekkingsprosessen som en gjestebruker eller som en pålo
 
 ### <a name="order-summary"></a>Ordresammendrag
 
-Utsjekkingen viser et sammendrag av linjevarene i handlekurven, slik at kunden kan kontrollere ordren før han eller hun plasserer ordren. Linjeelementene kan ikke redigeres i løpet av utsjekkingsflyten. En kobling til handlekurven vises imidlertid i tilfelle brukeren ønsker å gå tilbake og redigere linjeelementer.
+Utsjekkingen viser et sammendrag av linjevarene i handlekurven, slik at kunden kan kontrollere ordren før han eller hun utfører den. Linjeelementene kan ikke redigeres i løpet av utsjekkingsflyten. En kobling til handlekurven vises imidlertid i tilfelle brukeren ønsker å gå tilbake og redigere linjeelementer.
 
 Etter at kunden har gitt leverings- og faktureringsinformasjon, viser ordresammendraget beløpet som forfaller etter fordelspoeng, gavekort og andre betalinger er brukt.
 
@@ -102,6 +107,3 @@ Hvis du vil ha mer informasjon om hvordan du redigerer en kasseside, se [Legge t
 [Oversikt over produktdetaljsider](quick-tour-pdp.md)
 
 [Oversikt over kontobehandlingssider](quick-tour-account-management.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

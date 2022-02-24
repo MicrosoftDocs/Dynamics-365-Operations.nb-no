@@ -2,33 +2,30 @@
 title: Oversikt over arbeidsflytsystem
 description: Dette emnet beskriver arbeidsflytsystemet.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "56381"
-- intro-internal
+ms.custom: 56381
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067939"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797002"
 ---
 # <a name="workflow-system-overview"></a>Oversikt over arbeidsflytsystem
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet beskriver arbeidsflytsystemet.
 
@@ -44,7 +41,7 @@ Workflow er et system som kjører på Application Object Server (AOS). Arbeidsfl
 
 En arbeidsflyt representerer en forretningsprosess. Det definerer hvordan et dokument går eller flyttes gjennom systemet ved å vise hvem som må utføre en oppgave, ta avgjørelser eller godkjenne et dokument. Illustrasjonen nedenfor viser for eksempel en arbeidsflyt for reiseregninger.
 
-![Arbeidsflyt med elementer som er tilordnet til brukere.](./media/workflow_user.gif)
+![Arbeidsflyt med elementer som er tilordnet til brukere](./media/workflow_user.gif)
 
 Hvis du vil forstå denne arbeidsflyten bedre, kan vi anta at Erik sender en reiseregningsrapport på NOK 42 000. I denne situasjonen må Henrik gå gjennom kvitteringene som Erik sendte til ham. Deretter må Dag og Jorunn godkjenne reiseregningsrapporten. La oss nå anta at Erik sender en reiseregningsrapport på NOK 11 000. I denne situasjonen må Henrik se gjennom kvitteringene, og Dag, Jorunn og Karen må godkjenne reiseregningsrapporten.
 
@@ -74,6 +71,3 @@ Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:
 + [Konfigurere parallelle avdelinger i en arbeidsflyt](configure-parallel-branch-workflow.md)
 + [Konfigurere arbeidsflyter for linjeelement](configure-line-item-workflow.md)
 + [Vanlige spørsmål om arbeidsflyt](workflow-FAQ.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

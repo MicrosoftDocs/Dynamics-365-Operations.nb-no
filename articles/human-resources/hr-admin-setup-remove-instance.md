@@ -1,32 +1,33 @@
 ---
 title: Fjerne en forekomst
-description: Dette emnet leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/11/2021
+description: Denne artikkelen leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393503"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419929"
 ---
 # <a name="remove-an-instance"></a>Fjerne en forekomst
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dette emnet forklarer prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
+Denne artikkelen leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 
 ## <a name="remove-a-test-drive-environment"></a>Fjerne et testversjonsmiljø
 
@@ -41,7 +42,7 @@ Det eksisterende testversjonsmiljøet fjernes. Når det fjernes, kan du registre
 
 ## <a name="remove-a-production-environment"></a>Fjerne et produksjonsmiljø
 
-Dette emnet antar at du har kjøpt Human Resources via en Cloud Solution Provider (CSP) eller en enterprise architecture (EA)-avtale. 
+Denne artikkelen antar at du har kjøpt Human Resources gjennom en Cloud Solution Provider (CSP)- eller en enterprise architecture (EA)-avtale. 
 
 Siden et enkelt Human Resources-miljø er inkludert i et enkelt Power Apps-miljø, finnes det to alternativer du bør vurdere. Første alternativ er å fjerne hele Power Apps-miljøet. Det andre alternativet er å fjerne bare Human Resources. Det første alternativet bør velges når du har opprettet et Power Apps-miljø uttrykkelig for klargjøring av Human Resources, og du akkurat har begynt implementering, eller du ikke har noen etablerte integreringer. Det andre alternativet er riktig når du har et etablert Power Apps-miljø fylt ut med rike data som brukes i Power Apps og Power Automate.
 
@@ -80,10 +81,7 @@ Slik gjenoppretter du miljøet:
 
 1. Følg instruksjonene i [Gjenopprette Power Apps-miljøet](/power-platform/admin/recover-environment.md).
 
-2. Kontakt kundestøtte for å gjenopprette personalmiljøet. For mer informasjon, se [Få kundestøtte](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+2. Kontakt kundestøtte for å gjenopprette personalmiljøet. For mer informasjon, se [Få kundestøtte](hr-admin-troubleshooting-support.md).
 
 > [!Warning]
 > Power Apps-miljøer lagres bare i sju dager etter sletting. Du må gjenopprette miljøet i løpet av denne perioden på sju dager.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

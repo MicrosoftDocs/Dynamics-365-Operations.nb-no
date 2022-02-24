@@ -1,32 +1,30 @@
 ---
 title: Feilsøke analyserapporter
-description: Dette emnet forklarer hvordan du feilsøker og diagnostiserer problemer hvis en kundes dataendringer ikke vises i noen av kundens arbeidsområder.
-author: twheeloc
-ms.date: 08/19/2021
+description: Denne artikkelen forklarer hva du gjør hvis en kundes dataendringer ikke vises i noen av kundens arbeidsområder.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6ea04c06858cc98b0e233b9133d9dfbebfe59fd6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067735"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419925"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Feilsøke analyserapporter
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Avgang**
 
@@ -44,7 +42,4 @@ Dette problemet kan bare være et spørsmål om tidsberegning. Følg denne fremg
 1. Finn **Distribuer mål**-jobben i listen.
 1. Velg **Rediger** øverst på siden, og angi planlagt startdato/-klokkeslett til en verdi som vil oppdatere analysen slik at den er nærmere gjeldende tidspunkt.
 
-![Satsvise jobber.](media/batch-jobs.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Satsvise jobber](media/batch-jobs.png)

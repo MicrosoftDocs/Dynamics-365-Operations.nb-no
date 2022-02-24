@@ -2,9 +2,11 @@
 title: Dato avveid gjennomsnitt
 description: Dato avveid gjennomsnitt er en lagermodell basert på avveid gjennomsnitt-prinsippet, hvor frigivelser fra lageret verdsettes til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden.
 author: AndersGirke
+manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572031"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963744"
 ---
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 
@@ -39,7 +41,7 @@ Avveid gjennomsnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 
 
 Når lagerlukking pågår, utføres beregningen hver dag i hele lukkingsperioden, som vist i illustrasjonen nedenfor. 
 
-![Dato avveid gjennomsnitt for daglig beregningsmodell.](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Dato avveid gjennomsnitt for daglig beregningsmodell](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagertransaksjoner som forlater lageret, for eksempel salgsordrer, lagerjournaler og produksjonsordrer, forekommer til en estimert kostpris på posteringsdatoen. Denne estimerte kostprisen kalles også glidende gjennomsnitt av kostpris. På datoen for lagerlukking analyserer systemet lagertransaksjonene for tidligere perioder, tidligere dager og gjeldende dato. Denne analysen brukes til å avgjøre hvilket av de følgende prinsippene for lukking som skal brukes:
 
@@ -72,7 +74,7 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 -   2b. Økonomisk lageravgang oppdateres med et antall på 2 til kostpris USD 10,00 per stykk.
 -   3. Lagerlukkingen er utført med metoden for direkte utligning for å utligne økonomiske lagertilganger mot økonomiske lageravganger.
 
-![Direkte utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkte utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til illustrasjonen:**
 
@@ -126,7 +128,7 @@ Systemet genererer og posterer den summerte lageroverføringstransaksjonen. I ti
 
 Illustrasjonen nedenfor viser denne serien av transaksjoner og virkningen av å bruke lagermodellen for avveid gjennomsnitt og prinsippet for summert utligning, men uten å bruke alternativet **Ta med fysisk verdi**. 
 
-![Summert utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Summert utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til illustrasjonen**
 
@@ -175,7 +177,7 @@ Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert.
 
 Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene med USD 27,50. Diagrammet nedenfor viser denne serien av transaksjoner og virkningen av å bruke lagermodellen med dato for avveid gjennomsnitt og merking.
 
-![Dato for avveid gjennomsnitt med merking.](./media/weightedaveragedatewithmarking.gif) 
+![Dato for avveid gjennomsnitt med merking](./media/weightedaveragedatewithmarking.gif) 
 
 **Nøkkel til illustrasjonen:**
 
@@ -193,6 +195,3 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,36 +1,39 @@
 ---
 title: Synkronisere produkter direkte fra Supply Chain Management til produkter i Sales
 description: Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere produkter fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: dd84f96a5597c480648ae30b6d0274e15d750ff6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 6ffd55585ff43f993876de6c669eb61e74a9fd79
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062469"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527320"
 ---
 # <a name="synchronize-products-directly-from-supply-chain-management-to-products-in-sales"></a>Synkronisere produkter direkte fra Supply Chain Management til produkter i Sales
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere produkter direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
 
@@ -38,7 +41,7 @@ Dette emnet beskriver malene og de underliggende oppgavene som brukes til å syn
 
 Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
-[![Dataflyt i Kundeemne til kontanter.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
@@ -53,7 +56,7 @@ Ingen synkroniseringsoppgaver kreves før produktsynkronisering kan utføres.
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Supply Chain Management    | Salg    |
+| Forsyningskjedeadministrasjon    | Salg    |
 |----------------------------|----------|
 | Salgbare frigitte produkter | Produkter |
 
@@ -104,7 +107,7 @@ Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Datainteg
 > [!NOTE]
 > Tilordningen viser hvilken feltinformasjon som vil bli synkronisert fra Sales til Supply Chain Management.
 
-![Maltilordning i Dataintegrator.](./media/products-direct-template-mapping-data-integrator-1.png)
+![Maltilordning i Dataintegrator](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
 ## <a name="related-topics"></a>Relaterte emner
@@ -121,6 +124,3 @@ Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Datainteg
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

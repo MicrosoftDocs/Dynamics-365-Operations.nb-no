@@ -1,14 +1,17 @@
 ---
-title: Avanserte automatiske tillegg for omnikanal
-description: Dette emnet beskriver funksjoner for å håndtere andre ordregebyrer for handelskanalordrer ved hjelp av funksjoner for avanserte automatiske gebyrer.
+title: Avanserte automatiske gebyrer for omnikanal
+description: Dette emnet beskriver funksjoner for å håndtere flere ordregebyrer for handelskanalordrer ved hjelp av funksjoner for avanserte automatiske gebyrer.
 author: hhaines
+manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743437"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4414794"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avanserte automatiske tillegg for omnikanal
 
@@ -29,9 +32,9 @@ ms.locfileid: "6743437"
 
 Dette emnet gir informasjon om konfigurasjon og distribusjon av funksjonene for avanserte automatiske gebyrer som er tilgjengelige i Dynamics 365 for Retail versjon 10.0.
 
-Når funksjonene for avanserte automatiske gebyrer er aktivert, kan ordrer som opprettes i en støttet handelskanal (salgssted, telefonsenter og online), dra nytte av konfigurasjonene for [automatisk gebyrer](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) som er definert i ERP-programmet for både hode- og linjenivårelaterte gebyrer.
+Når funksjonene for avanserte automatiske gebyrer er aktivert, kan ordrer som opprettes i en støttet handelskanal (salgssted, telefonsenter og online), dra nytte av konfigurasjonene for [automatisk gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) som er definert i ERP-programmet for både hode- og linjenivårelaterte gebyrer.
 
-I versjoner før Retail versjon 10.0 er konfigurasjoner for [automatiske gebyrer](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) bare tilgjengelige for ordrer som er opprettet i e-handels- og telefonsenterkanaler. I versjon 10.0 og senere kan ordrer opprettet på salgsstedet bruke konfigurasjonene for automatiske gebyrer. På denne måten kan ekstra tillegg systematisk legges til salgstransaksjonene.
+I versjoner før Retail versjon 10.0 er konfigurasjoner for [automatiske gebyrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) bare tilgjengelige for ordrer som er opprettet i e-handels- og telefonsenterkanaler. I versjon 10.0 og senere kan ordrer opprettet på salgsstedet dra nytte av konfigurasjonene for automatiske gebyrer. På denne måten kan flere tillegg systematisk legges til salgstransaksjonene.
 
 Ved bruk av versjoner før versjon 10.0 blir brukeren for salgsstedet bedt om å angi et fraktgebyr manuelt under opprettingen av en salgsstedstransaksjon av typen Send alle eller Valgt for forsendelse. Ettersom funksjonene for tilleggene i programmet brukes i forhold til hvordan gebyrene skrives til ordren, tilbys det ingen systematisk beregning. Beregningen er avhengig av brukerens inndata for å bestemme verdien på tillegget. Gebyrene kan bare legges til som en enkelt forsendelsesrelatert gebyrkode og kan ikke redigeres eller endres enkelt på salgsstedet etter at de er opprettet.
 
@@ -39,11 +42,11 @@ Bruken av manuelle ledetekster for å legge til forsendelseskostnader er fremdel
 
 Med funksjonen for avanserte automatiske gebyrer kan brukerne for salgsstedet ha systematiske beregninger for alle definerte tillegg basert på tabellene med oppsett for automatiske gebyrer. I tillegg vil brukere ha muligheten for å legge til eller redigere et ubegrenset antall tilleggskostnader og gebyrer i en salgstransaksjon for salgsstedet på hode- eller linjenivået (for hentesalg eller kundeordre).
 
-## <a name="enable-advanced-auto-charges"></a>Aktivere avanserte automatiske gebyrer
+## <a name="enabling-advanced-auto-charges"></a>Aktivere avanserte automatiske gebyrer
 
 På siden **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Handelsparametere** går du til kategorien **Kundeordrer**. I hurtigfanen **Gebyrer** setter du **Bruk avanserte automatiske gebyrer** til **Ja**.
 
-![Parameter for avanserte automatiske gebyrer.](media/advancedchargesparameter.png)
+![Parameter for avanserte automatiske gebyrer](media/advancedchargesparameter.png)
 
 Når avanserte automatiske gebyrer er aktivert, blir brukere ikke lenger bedt om å angi en forsendelseskostnad manuelt på salgsstedsterminalen når de oppretter en kundeordre av typen Send alle eller Valgt for forsendelse. Ordregebyrer for salgssted beregnes systematisk og legges til salgsstedstransaksjonen (hvis det finnes en tilsvarende tabell for automatiske gebyrer som samsvarer med kriteriet for ordren som opprettes). Brukere kan også legge til eller vedlikeholde hode- eller linjenivågebyrer manuelt via salgsstedsoperasjoner som nylig er lagt til, som kan legges til skjermoppsettene for salgsstedet.
 
@@ -51,9 +54,9 @@ Når avanserte automatiske gebyrer er aktivert, brukes ikke lenger eksisterende 
 
 Før du aktiverer denne funksjonen, må du passe på at du har testet og lært opp dine ansatte siden den aktiverte funksjonen tte vil endre forretningsprosessflyten for hvordan forsendelseskostnader eller andre gebyrer beregnes og legges til salgsordrer for salgsstedet. Pass på at du forstår virkningen prosessflyten har på opprettingen av transaksjoner fra salgssted. For telefonsenter- og e-handelsorder er virkningen av å aktivere avanserte automatiske gebyrer minimal. Telefonsenter- og e-handelsprogrammer vil fortsatt ha samme virkemåte som de har hatt tidligere knyttet til tabellene for automatiske gebyrer for å beregne ekstra ordregebyrer. Brukere av telefonsenterkanaler vil fortsatt ha muligheten til å redigere manuelt systemberegnede automatiske gebyrer på hode- eller linjenivå, eller legge til flere tillegg på hode- eller linjenivå manuelt.
 
-## <a name="add-pos-operations"></a>Legge til salgsstedsoperasjoner
+## <a name="additional-pos-operations"></a>Flere salgsstedsoperasjoner
 
-For at avanserte automatiske gebyrer skal fungere riktig i ditt salgsstedsprogrammiljø, er det lagt til nye salgsstedsoperasjoner. Disse operasjonene må legges til i [skjermoppsettene for salgssted](/dynamics365/unified-operations/retail/pos-screen-layouts) og distribueres til salgsstedsenhetene når du distribuerer avanserte automatiske gebyrer. Hvis disse operasjonene ikke legges til, kan ikke brukere behandle eller vedlikeholde tillegg i salgsstedstransaksjonene, og vil ikke ha noen måte å justere eller endre gebyrverdiene på som beregnes systematisk basert på konfigurasjoner for automatiske gebyrer. Som minimum anbefales det at du distribuerer **Behandle tillegg**-operasjonen til salgsstedsoppsettet.
+For at avanserte automatiske gebyrer skal fungere riktig i ditt salgsstedsprogrammiljø, er det lagt til nye salgsstedsoperasjoner. Disse operasjonene må legges til i [skjermoppsettene for salgssted](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) og distribueres til salgsstedsenhetene når du distribuerer avanserte automatiske gebyrer. Hvis disse operasjonene ikke legges til, kan ikke brukere behandle eller vedlikeholde tillegg i salgsstedstransaksjonene, og vil ikke ha noen måte å justere eller endre gebyrverdiene på som beregnes systematisk basert på konfigurasjoner for automatiske gebyrer. Som minimum anbefales det at du distribuerer **Behandle tillegg**-operasjonen til salgsstedsoppsettet.
 
 De nye operasjonene er følgende:
 
@@ -74,7 +77,7 @@ I denne delen vises brukseksempler for å hjelpe deg med å forstå konfigurasjo
 
 #### <a name="use-case-scenario"></a>Bruksscenario
 
-En forhandler ønsker å legge til tillegg for frakt automatisk når transaksjoner opprettes i en handelskanal som krever forsendelse av varer til kunden. Forhandleren tilbyr to leveringsmåter: landtransport og fly. Hvis en kunde velger landtransportlevering og ordreverdien er mindre enn NOK 1000, vil forhandleren belaste kunden med et fraktgebyr på NOK 100. Hvis ordren er over USD 100 og kunden velger forsendelse på land, vil kunden ikke bli belastet med ekstra fraktgebyrer . Hvis kunden velger leveringsmåten for fly for alle ordrer, uavhengig av deres totale verdi, tilfaller det et fraktgebyr på NOK 200.
+En forhandler ønsker å legge til tillegg for frakt automatisk når transaksjoner opprettes i en handelskanal som krever forsendelse av varer til kunden. Forhandleren tilbyr to leveringsmåter: landtransport og fly. Hvis en kunde velger landtransportlevering og ordreverdien er mindre enn NOK 1000, vil forhandleren belaste kunden med et fraktgebyr på NOK 100. Hvis ordren er over NOK 1000 og kunden velger forsendelse på land, vil kunden ikke bli belastet med ekstra fraktgebyrer. Hvis kunden velger leveringsmåten for fly for alle ordrer, uavhengig av deres totale verdi, tilfaller det et fraktgebyr på NOK 200.
 
 #### <a name="setup-and-configuration"></a>Oppsett og konfigurasjon
 
@@ -86,7 +89,7 @@ Konfigurer to ulike automatiske gebyrer på hodenivå. Konfigurer ett for «over
 
 I linjedelen på siden **Automatiske gebyrer** for gebyrene for levering på land definerer du et gebyr som skal brukes for ordrer mellom NOK 0,10 og 1000, som NOK 100,00. Opprett en ny gebyrlinje for å angi at ordrer over NOK 1000,10 ikke har gebyrer.
 
-![Eksempel på to tabeller for automatiske gebyrer.](media/headerchargesexample.png)
+![Eksempel på to tabeller for automatiske gebyrer](media/headerchargesexample.png)
 
 I linjedelen i skjemaet for automatiske gebyrer for gebyrene for levering med fly definerer du et gebyr på NOK 200,00 som skal brukes for alle ordrer (mellom en verdi på NOK 0,10 og NOK 99 999 990).
 
@@ -106,7 +109,7 @@ I telefonsenterscenarier har brukeren kontroll over innstillingen for leveringsm
 
 #### <a name="use-case-scenario"></a>Bruksscenario 
 
-En forhandler ønsker å legge til en ekstraavgift for kunden for oppsettsgebyrer når kunden kjøper en bestemt modell av en datamaskin. Denne datamaskinen krever ekstra konfigurasjonshandlinger som ikke er valgfrie, og som forhandleren utfører for kunden. Forhandleren har informert kunder om at det er tilleggsgebyr for dette oppsettet. Forhandleren foretrekker å håndtere tilleggene som er knyttet til dette gebyret, separat fra produktsalgsprisen for regnskapsrapporteringsformål. Et oppsettsgebyr på NOK 199,90 skal belastes kunden når denne bestemte datamaskinen kjøpes i en handelskanal.
+En forhandler ønsker å legge til en tilleggsavgift for kunden for oppsettsgebyrer når kunden kjøper en bestemt modell av en datamaskin. Denne datamaskinen krever ekstra konfigurasjonshandlinger som ikke er valgfrie, og som forhandleren utfører for kunden. Forhandleren har informert kunder om at det er tilleggsgebyr for dette oppsettet. Forhandleren foretrekker å håndtere tilleggene som er knyttet til dette gebyret, separat fra produktsalgsprisen for regnskapsrapporteringsformål. Et oppsettsgebyr på NOK 199,90 skal belastes kunden når denne bestemte datamaskinen kjøpes i en handelskanal.
 
 #### <a name="setup-and-configuration"></a>Oppsett og konfigurasjon
 
@@ -116,7 +119,7 @@ Gå til **Kunder \> Oppsett for tillegg \> Automatiske gebyrer**.
 
 Sett **Nivå**-rullegardinmenyen til **Linje**, og opprett en ny post for automatiske gebyrer for alle kunder og for det bestemte produktet eller produktgruppen der konfigurasjonsgebyret belastes.
 
-![Eksempel på én tabell for automatiske gebyrer på linjenivå.](media/linechargesexample.png)
+![Eksempel på én tabell for automatiske gebyrer på linjenivå](media/linechargesexample.png)
 
 Send prisene til Commerce Scale Unit / kanaldatabasen slik at salgsstedet kan bruke dem ved å kjøre jobben **1040 distribusjonsplan**.
 
@@ -136,13 +139,13 @@ En forhandler gjør et unntak fra vanlige prosesser ved å tilby å en spesiell 
 
 Kontroller at tilleggskoden som skal brukes i dette scenariet, er riktig konfigurert ved å gå til **Kunder \> Oppsett for tillegg \> Tillegg** for å definere en passende tilleggskode for scenariet.
 
-![Eksempel på gebyrer.](media/chargesexample.png)
+![Eksempel på gebyrer](media/chargesexample.png)
 
 Hvis tillegget skal betraktes som et forsendelsesrelatert tillegg for forsendelsesrelaterte rabatter og tilbud, setter du **Forsendelsesgebyr** for tilleggskoden til **Ja**. Hvis dette gebyret også kan refunderes systematisk under behandlingen av en returtransaksjon i salgsstedprogrammet, setter du **Refunderbar** til **Ja**. **Refunderbar**-flagget er bare tilgjengelig når **Bruk avanserte automatiske gebyrer**-parameteren er satt til **Ja**.
 
 Send prisene til Commerce Scale Unit / kanaldatabasen slik at salgsstedet kan bruke dem ved å kjøre jobben **1040 distribusjonsplan**.
 
-**Legg til hodegebyrer**-operasjonen må konfigureres i [skjermoppsettet for salgssted](/dynamics365/unified-operations/retail/pos-screen-layouts) slik at en knapp som er tilgjengelig for brukeren fra salgsstedet, kan kalle denne operasjonen (operasjon 141). Endringene i skjermoppsettet må distribueres til handelsekanalen og via funksjonen for distribusjonsplan.
+**Legg til hodegebyrer**-operasjonen må konfigureres i [skjermoppsettet for salgssted](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) slik at en knapp som er tilgjengelig for brukeren fra salgsstedet, kan kalle denne operasjonen (operasjon 141). Endringene i skjermoppsettet må distribueres til handelsekanalen og via funksjonen for distribusjonsplan.
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Salgsbehandling av manuelle hodegebyrer
 
@@ -164,7 +167,7 @@ Hvis tillegget skal betraktes som et forsendelsesrelatert tillegg for forsendels
 
 Send prisene til Commerce Scale Unit / kanaldatabasen slik at salgsstedet kan bruke dem ved å kjøre jobben **1040 distribusjonsplan**.
 
-**Legg til linjegebyrer**-operasjonen må konfigureres i [skjermoppsettet for salgssted](/dynamics365/unified-operations/retail/pos-screen-layouts) slik at en knapp som er tilgjengelig for brukeren fra salgsstedet, kan kalle denne operasjonen (operasjon 140). Endringene i skjermoppsettet må distribueres til handelsekanalen og via funksjonen for distribusjonsplan.
+**Legg til linjegebyrer**-operasjonen må konfigureres i [skjermoppsettet for salgssted](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) slik at en knapp som er tilgjengelig for brukeren fra salgsstedet, kan kalle denne operasjonen (operasjon 140). Endringene i skjermoppsettet må distribueres til handelsekanalen og via funksjonen for distribusjonsplan.
 
 #### <a name="sales-processing-of-the-manual-line-charge"></a>Salgsbehandling av manuelle linjegebyrer
 
@@ -176,7 +179,7 @@ Den samme fremgangsmåten kan brukes i telefonsenteret ved hjelp av funksjonen V
 
 ### <a name="editing-charges-on-a-pos-sales-transaction"></a>Redigere tillegg i en salgstransaksjon for salgssted
 
-**Behandle tillegg**-operasjonen (142) skal legges til [skjermoppsettet for salgssted](/dynamics365/unified-operations/retail/pos-screen-layouts) slik at en bruker kan vise og redigere eller overstyre systemberegnede eller manuelt opprettede hode- eller linjenivåtillegg. Hvis operasjonen ikke legges til, vil ikke brukere kunne justere verdien på gebyrene i salgsstedstransaksjonen. De vil heller ikke kunne vise detaljene om tilleggene, for eksempel typen tilleggskode som er knyttet til tillegget.
+**Behandle tillegg**-operasjonen (142) skal legges til [skjermoppsettet for salgssted](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) slik at en bruker kan vise og redigere eller overstyre systemberegnede eller manuelt opprettede hode- eller linjenivåtillegg. Hvis operasjonen ikke legges til, vil ikke brukere kunne justere verdien på gebyrene i salgsstedstransaksjonen. De vil heller ikke kunne vise detaljene om tilleggene, for eksempel typen tilleggskode som er knyttet til tillegget.
 
 På **Behandle tillegg**-siden i POS kan brukeren vise både hode- og linjenivåtilleggsdetaljer. Brukeren kan bruke funksjonen **Rediger** som er tilgjengelig på denne siden, for å endre beløpet som belastes på en bestemt gebyrlinje. Når en gebyrlinje blir overskrevet manuelt, blir den ikke systematisk beregnet på nytt med mindre brukeren starter operasjonen **Beregn gebyrer på nytt**.
 
@@ -197,7 +200,7 @@ Tillegg blir ikke systematisk refundert til **Returordrer** som er opprettet i C
 De følgende kvitteringselementene er lagt til på kvitteringslinjen og bunnteksten for å støtte funksjonen for avanserte automatiske gebyrer.
 
 - **Forsendelseskostnader for linje** – Dette linjenivåelementet kan brukes til å oppsummere bestemt tilleggskoder som er brukt på salgslinjen. Bare tilleggskoder som er flagget som **Forsendelse**-tillegg på **Tilleggskode**-siden, vises her.
-- **Andre tillegg for linje** – Dette linjenivåelementet kan brukes til å oppsummere ikke-forsendelsesbestemte tilleggskoder som er brukt på salgslinjen. **Andre tillegg for linje** er tilleggskoder der **Forsendelse**-flagget på **Tilleggskode**-siden ikke er aktivert.
+- **Andre tillegg for linje** – Dette linjenivåelementet kan brukes til å oppsummere ikke-forsendelsesbestemte tilleggskoder som er brukt på salgslinjen. Dette er tilleggskoder der **Forsendelse**-flagget på **Tilleggskode**-siden ikke er aktivert.
 - **Detaljer for forsendelseskostnader for ordre** – Dette elementet på bunntekstnivå viser beskrivelsene av gebyrkodene som er brukt i ordren som er flagget som **Forsendelse**-tillegg på oppsettssiden for **Tilleggskode**.
 - **Forsendelseskostnader for ordre** – Dette elementet på bunntekstnivå viser kroneverdien av kostnadene knyttet til forsendelsen.
 - **Detaljer for andre kostnader for ordre** – Dette elementet på bunntekstnivå viser beskrivelsen av gebyrkodene som er brukt i ordren som ikke er flagget som forsendelsesrelaterte tillegg.
@@ -219,6 +222,3 @@ Hvis brukere overstyrer de beregnede kostnadene manuelt eller legger til et manu
 
 [Fordele hodegebyrer til samsvarende salgslinjer](pro-rate-charges-matching-lines.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Vanlige spørsmål om arbeidsflyt
 description: Dette emnet gir svar på vanlige spørsmål om arbeidsflytsystemet.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -12,19 +14,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe11942ca41dd8c0ca23d94006569c50a4501a52
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065586"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797397"
 ---
 # <a name="workflow-faq"></a>Vanlige spørsmål om arbeidsflyt
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet gir svar på vanlige spørsmål om arbeidsflytsystemet.
 
@@ -48,9 +47,9 @@ Det er viktig å være oppmerksom på følgende vedrørende tilføying av varsle
     - I en fremtidig oppdatering kommer vi til å legge til en Handlingssenter-melding slik at en bruker tilordnes et arbeidselement for arbeidsflyt. 
 - Legge til varslinger i arbeidsflyter
     - Handlingssenter-meldinger kan opprettes for bestemte brukere, for eksempel en melding som er opprettet fra en arbeidsflyt i X++.
-    - [Arbeidsflyter har forretningshendelser](../../dev-itpro/business-events/business-events-workflow.md) som kunden kan bruke til å utløse flyter som har varslingene de ser etter.   
+    - [Arbeidsflyter har forretningshendelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) som kunden kan bruke til å utløse flyter som har varslingene de ser etter.   
 
-Hvis en bruker ikke får riktig varsling fra handlingssenteret når de tilordnes et arbeidselement for arbeidsflyt, bruker du [Forretningshendelser for arbeidsflyt](../../dev-itpro/business-events/business-events-workflow.md) med Microsoft Power Automate til å gi flere eller andre varslinger.
+Hvis en bruker ikke får riktig varsling fra handlingssenteret når de tilordnes et arbeidselement for arbeidsflyt, bruker du [Forretningshendelser for arbeidsflyt](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) med Microsoft Power Automate til å gi flere eller andre varslinger.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Hvorfor kan ikke arbeidsflytredigering starte under AD FS?
 Når du kjører under Active Directory Federation Services (AD FS) i et oppgradert miljø, kan redigeringsprogrammet for arbeidsflyt ha problemer med å starte. I så fall må du kontrollere at URL-en "https://dynamicsaxworkfloweditor/" er lagt til i egenskapen **Microsoft Dynamics 365 for Operations Lokalt - Arbeidsflyt - Opprinnelig program** i ADFS-innstillingene.
@@ -60,6 +59,3 @@ Standard feltverdi for **Antall arbeidsflytvarer per satsvis oppgave** på siden
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Hva er funksjonen for forbedret feil i arbeidsflyten?
 Funksjonen for forbedret feil i arbeidsflyten i versjon 10.0.13 legger til feilkoder for å skille ulike klasser av arbeidsflytfeil. Feilmeldingene som rapporteres, vil for det meste være like, med mindre forskjeller for å få dem til å bli klarere.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

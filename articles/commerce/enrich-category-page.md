@@ -2,36 +2,42 @@
 title: Supplere en kategorimålside
 description: Dette emnet dekker supplering av kategorisider i Dynamics 365 Commerce.
 author: v-chgri
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771013"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414644"
 ---
 # <a name="enrich-a-category-landing-page"></a>Supplere en kategorimålside
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker supplering av kategorisider i Dynamics 365 Commerce.
 
+## <a name="overview"></a>Oversikt
+
 Commerce leverer en standard kategorimålside som brukes når kategoridata vises. En standard kategoriside inneholder nødvendige elementer, for eksempel presiseringer, kategoriserte produktplasseringer, sorteringsalternativer, et valgsammendrag og sidenummereringskontroller. 
 
 I stedet for å bruke standard kategoriside kan det imidlertid være lurt å bruke en "supplert" kategorimålside med mer innhold og mer spesifikke elementer. Et typisk supplement kan involvere å legge til kategorispesifikt markedsføringsinnhold på kategorisiden. Dette innholdet kan inkludere produktplassering på tvers av kategorier for kryssalgsformål, redigeringslister, bilder, videoer og annen tekst. Du kan enten endre standard kategoriside eller definere en annen kategoriside for en bestemt kategori.
 
-![Supplere kategorimålside.](./media/CategoryLandingPages.png)
+![Supplere kategorimålside](./media/CategoryLandingPages.png)
 
 I Commerce-områdebyggeren inneholder siden **Produkter** en liste over kategorier fra kanalen som er tilordnet området. Hvis statusen **Supplert** er valgt for en kategoriside, er denne kategorisiden supplert. Hvis ikke brukes standard kategoriside og -innhold for kategorien. Du kan forhåndsvise både de supplerte og de ikke-supplerte produktsidene for en kategori ved å velge kategorinavnet.
 
@@ -59,8 +65,3 @@ Gjør følgende for å gjøre en kategoriside rikere:
 [Supplere en produktside](enrich-product-page.md)
 
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
-
-[Opprette dynamiske e-handelssider basert på URL-parametere](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

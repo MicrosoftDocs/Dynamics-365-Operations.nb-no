@@ -2,9 +2,11 @@
 title: Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker
 description: Dette emnet gir en oversikt over hvordan sertifikater brukes i detaljhandelsbutikker.
 author: josaw
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719936"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018874"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker
 
@@ -79,7 +81,7 @@ Når du legger til en ny linje på siden **Innstillinger for sertifikatprofil**,
 - **Key Vault-sertifikat** – Dette feltet er obligatorisk hvis du setter feltet **Plasseringstype** til **Key Vault**. Bruk det til å angi en sertifikathemmelighet for Key Vault.
 
     > [!NOTE]
-    > Før du bruker et Key Vault-sertifikat i sertifikatprofiler, må du laste opp et sertifikat til lagringsplassen for Key Vault og følge instruksjonene i [Konfigurere Azure Key Vault-klient](../../finance/localizations/setting-up-azure-key-vault-client.md).
+    > Før du bruker et Key Vault-sertifikat i sertifikatprofiler, må du laste opp et sertifikat til lagringsplassen for Key Vault og følge instruksjonene i [Konfigurere Azure Key Vault-klient](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client).
 
 - **Butikknavn** – Dette feltet er valgfritt, og er bare tilgjengelig hvis du setter **Plasseringstype**-feltet til **Lokalt sertifikat**. Bruk det til å angi et standard butikknavn som skal brukes til å søke i lokale sertifikater.
 - **Butikkplassering** – Dette feltet er valgfritt, og er bare tilgjengelig hvis du setter **Plasseringstype**-feltet til **Lokalt sertifikat**. Bruk det til å angi et standard butikkplassering som skal brukes til å søke i lokale sertifikater.
@@ -119,6 +121,3 @@ Hvis en ny versjon av sertifikatet introduseres, men det ikke kan oppdateres i a
 
 > [!NOTE]
 > I Commerce Runtime kalles den nye versjonen av sertifikatet først. Hvis sertifikatet ennå ikke er oppdatert i en bestemt butikk eller på en bestemt terminal, vil den tidligere versjonen bli kalt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

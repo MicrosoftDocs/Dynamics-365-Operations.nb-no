@@ -2,27 +2,29 @@
 title: Definere en enhet for å kjøre grensesnittet for produksjonsutførelse
 description: Grensesnittet for produksjonsutførelse defineres for hver enhet på produksjonsgulvet. Firmaer konfigurerer vanligvis hver enhet på forskjellig måte, avhengig av hvilket formål enheten tjener. Et firma kan for eksempel ha én enhet i mottaksområdet, der arbeidere stempler inn og ut, og en annen i Shop Floor, der arbeiderne administrerer jobbene sine.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752838"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966285"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Definere en enhet for å kjøre grensesnittet for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Grensesnittet for produksjonsutførelse defineres for hver enhet på produksjonsgulvet. Firmaer konfigurerer vanligvis hver enhet på forskjellig måte, avhengig av hvilket formål enheten tjener. Et firma kan for eksempel ha én enhet i mottaksområdet, der arbeidere stempler inn og ut, og en annen i Shop Floor, der arbeiderne administrerer jobbene sine.
 
@@ -70,13 +72,10 @@ Du vil ofte kjøre grensesnittet for produksjonsutførelse på en enhet som bare
 
 Den øvre delen av illustrasjonen nedenfor viser hvordan grensesnittet ser ut som standard. Den nedre delen viser hvordan den ser ut i full skjermmodus når navigasjonsruten er skjult.
 
-![Standard i forhold til fullskjerm-grensesnitt.](media/pfei-full-screen.png "Standard i forhold til fullskjerm-grensesnitt")
+![Standard i forhold til fullskjerm-grensesnitt](media/pfei-full-screen.png "Standard i forhold til fullskjerm-grensesnitt")
 
 ## <a name="extend-the-session-past-12-hours"></a>Utvide økten utover 12 timer
 
 Som standard blir grensesnittet for produksjonsutførelse automatisk avlogget hvis ingen bruker det i 12 timer. En bruker av Supply Chain Management må deretter logge på på nytt. Du kan imidlertid forlenge tidsavbruddsgrensen til opptil 90 dager.
 
 Hvis du vil forlenge grensen for tidsavbrudd, logger du på Supply Chain Management og går til **Systemadministrasjon \> Brukere \> Øktutvidelser**. Angi brukerkontoen Supply Chain Management som brukes til å logge på enheten, og hvor mange timer økten skal være aktiv.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

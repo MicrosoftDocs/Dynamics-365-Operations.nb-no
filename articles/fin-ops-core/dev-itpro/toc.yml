@@ -2,7 +2,7 @@
   items:
     - name: Utvikling og administrasjon for Finance and Operations-apper
       items:
-        - name: Dokumentasjon for programmet Finance and Operations
+        - name: Dokumentasjon for Finance and Operations-app
           href: ../fin-ops/index.md
         - name: Utvikling og administrasjon for Finance and Operations-apper
           href: index.md
@@ -12,18 +12,16 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter eller endringer i Plattformoppdateringer
               items:
-                - name: Nyheter eller endringer på startsiden for plattformoppdateringer
+                - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Plattformoppdateringer for versjon 10.0.25 (april 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Plattformoppdateringer for versjon 10.0.24 (februar 2022)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Plattformoppdateringer for versjon 10.0.23 (januar 2022)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
+                - name: Plattformoppdateringer for 10.0.16 (februar 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
+                - name: Plattformoppdateringer for 10.0.15 (januar 2021)
+                  href: get-started/whats-new-platform-updates-10-0-15.md
+                - name: Plattformoppdateringer for 10.0.14 (november 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
-                - name: Funksjoner som er fjernet eller avskrevet på startsiden
-                  href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: Fjernede eller avskrevne Platform-funksjoner
                   href: get-started/removed-deprecated-features-platform-updates.md
                 - name: Fjernede eller avskrevne funksjoner i tidligere versjoner
@@ -32,6 +30,40 @@
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Slutten av vanlig støtte for Microsoft Dynamics AX 2009 og 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
+        - name: Forretningshendelser
+          items:
+            - name: Oversikt over forretningshendelser
+              href: business-events/home-page.md
+            - name: Forretningshendelser for applikasjon
+              href: business-events/app-business-events.md
+            - name: Forretningshendelser for arbeidsflyt
+              href: business-events/business-events-workflow.md
+            - name: Varsler som forretningshendelser
+              href: business-events/alerts-business-events.md
+            - name: Forretningshendelser i Microsoft Flow
+              href: business-events/business-events-flow.md
+            - name: Dokumentasjon for utvikling av forretningshendelser
+              href: business-events/business-events-dev-doc.md
+            - name: Feilsøke forretningshendelser
+              href: business-events/troubleshooting.md
+            - name: Brukstilfeller for forretningshendelser
+              href: business-events/potential-use-cases.md
+            - name: Opplæringer
+              items:
+                - name: Forretningshendelser og Microsoft Flow
+                  href: business-events/how-to/how-to-flow.md
+                - name: Forretningshendelser og Azure Event Grid
+                  href: business-events/how-to/how-to-eventgrid.md
+                - name: Forretningshendelser og Azure Service Bus
+                  href: business-events/how-to/how-to-servicebus.md
+                - name: Forretningshendelser og arbeidsflytgodkjenninger
+                  href: business-events/how-to/how-to-workflow.md
+                - name: Forretningshendelser og Microsoft Forms Pro
+                  href: business-events/how-to/FormsPro.md
+                - name: Forretningshendelser og Azure Event Hubs
+                  href: business-events/how-to/event-hub.md
+                - name: Forretningshendelser i regnskapsperiodeavslutning
+                  href: business-events/how-to/period-close.md
         - name: Kontinuerlig levering
           items:
             - name: Startside for kontinuerlig levering
@@ -44,11 +76,11 @@
               href: dev-tools/manage-runtime-packages.md
             - name: Alt-i-ett-distribuerbare pakker
               href: dev-tools/aio-deployable-packages.md
-            - name: Oppdater modellversjoner i automatisert build
+            - name: Oppdatere modellversjoner i det automatiske bygget
               href: dev-tools/version-models-build.md
         - name: Dataintegrering
           items:
-            - name: Integrering mellom Finance and Operations-apper og tredjepartstjenester
+            - name: Velge en strategi for dataintegrering (import og eksport)
               href: data-entities/integration-overview.md
             - name: Prioritetsbasert begrensning
               hreF: data-entities/priority-based-throttling.md
@@ -86,66 +118,186 @@
                       href: data-entities/develop-composite-data-entities.md
                     - name: Konfigurere økonomisk datadeling mellom firmaer
                       href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-                    - name: Opprett postmaler for å forenkle dataregistrering
+                    - name: Opprette postmaler for å forenkle dataregistrering
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-                    - name: Opprett poster ved hjelp av postmaler
+                    - name: Opprette poster ved hjelp av postmaler
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Dataintegrator
+                - name: Dataintegrering ved hjelp av Common Data Service
                   items:
-                    - name: Konfigurer et kundeemne til kontanter-scenario
+                    - name: Oversikt over dataintegrering ved hjelp av Common Data Service
+                      href: data-entities/data-integration-cds.md
+                    - name: Integrering med dobbel skriving
                       items:
-                        - name: Kundeemne til kontanter
-                          href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkroniser kontoer direkte fra Sales til kunder i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
-                          href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations
-                          href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations
-                          href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
-                          href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Konfigurere integrering med Field Service
+                        - name: Startside for dobbel skriving
+                          href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Nyheter eller endringer i dobbel skriving
+                          href: data-entities/dual-write/whats-new-dual-write.md
+                        - name: Oversikt over dobbel skriving
+                          href: data-entities/dual-write/dual-write-overview.md
+                        - name: Oppsett for dobbel skriving
+                          items:
+                            - name: Systemkrav for dobbel skriving
+                              href: data-entities/dual-write/dual-write-system-req.md
+                            - name: Veiledning for hvordan du konfigurerer dobbel skriving
+                              href: data-entities/dual-write/connection-setup.md
+                            - name: Hensyn ved innledende synkronisering
+                              href: data-entities/dual-write/initial-sync-guidance.md
+                            - name: Oppsett av dobbel skriving fra Lifecycle Services
+                              href: data-entities/dual-write/lcs-setup.md
+                            - name: Aktivere dobbel skriving for eksisterende apper i Finance and Operations
+                              items:
+                                - name: Aktivere dobbel skriving for eksisterende apper i Finance and Operations
+                                  href: data-entities/dual-write/enable-dual-write.md
+                                - name: Systemkrav og forutsetninger
+                                  href: data-entities/dual-write/requirements-and-prerequisites.md
+                                - name: Bruke veiviseren for dobbel skriving til å koble miljøer
+                                  href: data-entities/dual-write/link-your-environment.md
+                                - name: Aktivere enhetstilordning for dobbel skriving
+                                  href: data-entities/dual-write/enable-entity-map.md
+                            - name: Overføring av valutadatatype for dobbel skriving
+                              href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Definere tilordningen for salgsordrens statusfelt
+                              href: data-entities/dual-write/sales-status-map.md
+                            - name: Filtrere konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
+                        - name: Håndtere dobbel skriving
+                          items:
+                            - name: Tilpasse enhets- og felttilordninger
+                              href: data-entities/dual-write/customizing-mappings.md
+                            - name: Håndtere flere enhetstilordninger
+                              href: data-entities/dual-write/multiple-entity-maps.md
+                            - name: Rediger en juridisk enhet etter oppsett av dobbel skriving
+                              href: data-entities/dual-write/edit-legal-entity.md
+                            - name: Feilbehandling og varselvarslinger
+                              href: data-entities/dual-write/errors-and-alerts.md
+                            - name: Håndtering av applivssyklus
+                              href: data-entities/dual-write/app-lifecycle-management.md
+                        - name: Tilordne begreper mellom apper
+                          items:
+                            - name: Integrert original for kunde
+                              href: data-entities/dual-write/customer-mapping.md
+                            - name: Leverandørintegrering
+                              items:
+                                - name: Integrert original for leverandør
+                                  href: data-entities/dual-write/vendor-mapping.md
+                                - name: Bytte mellom leverandørutforminger
+                                  href: data-entities/dual-write/vendor-switch.md
+                            - name: Kundefordelskort og belønningspoeng
+                              href: data-entities/dual-write/loyalty-mapping.md
+                            - name: Produktintegrering
+                              items:
+                                - name: Samlet produktopplevelse
+                                  href: data-entities/dual-write/product-mapping.md
+                                - name: Integrerte områder og lagre
+                                  href: data-entities/dual-write/sites-warehouses-mapping.md
+                            - name: Firmaintegrering
+                              items:
+                                - name: Firmabegrep i Common Data Services
+                                  href: data-entities/dual-write/company-data.md
+                                - name: Oppstartsprogram med firmadata
+                                  href: data-entities/dual-write/bootstrap-company-data.md
+                            - name: Organisasjonshierarki på Common Data Service
+                              href: data-entities/dual-write/organization-mapping.md
+                            - name: Økonomi- og avgiftsdata
+                              items:
+                                - name: Tilgang til referanse for økonomi- og avgiftsdata
+                                  href: data-entities/dual-write/finance-tax-reference.md
+                                - name: Integrert finans
+                                  href: data-entities/dual-write/ledger-mapping.md
+                                - name: Integrert original for avgift
+                                  href: data-entities/dual-write/tax-mapping.md
+                            - name: Kundeemne til kontanter i dobbel skriving
+                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synkronisere med prissettingsmotoren i Dynamics 365 Supply Chain Management ved forespørsel
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Bruke prissettingsmotoren for Dynamics 365 Commerce med Dynamics 365 Sales
+                              href: data-entities/dual-write/commerce-pricing.md
+                            - name: Interne aktiva for betjening
+                              href: data-entities/dual-write/in-house-assets.md
+                            - name: 'Integrert arbeider, jobb og stilling'
+                              href: data-entities/dual-write/integrated-hr.md
+                            - name: Lagertilgjengelighet
+                              href: data-entities/dual-write/inventory-availability.md
+                        - name: Støtte for dobbelt skriving
+                          items:
+                            - name: Støtte for Field Service-løsninger og Project Service Automation-løsninger
+                              href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Feilsøking
+                              items:
+                                - name: Kontrollere at dobbel skriving er konfigurert i apper i Finance and Operations og Common Data Service
+                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                                - name: Feilsøke problemer under førstegangsinstallasjon
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                                - name: Feilsøke problemer under førstegangssynkronisering
+                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                                - name: Feilsøke problemer med modulen Dobbel skriving i apper i Finance and Operations
+                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                                - name: Feilsøke problemer med direkte synkronisering
+                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                                - name: Feilsøke problemer i forbindelse med forståelse av løsningen
+                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                                - name: Feilsøke problemer i forbindelse med oppgraderinger av apper i Finance and Operations
+                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                                - name: Generell feilsøking
+                                  href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Vanlige spørsmål for dobbel skriving
+                          href: data-entities/dual-write/dual-write-faq.md
+                    - name: Integrering med Power Platform
                       items:
-                        - name: Oversikt over å konfigurere integrering med Field Service
-                          href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: "Synkronisere produkter\_i Finance and Operations til produkter i Field Service"
-                          href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Finance and Operations
-                          href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Synkronisere lageroverføringer og -justeringer fra Field Service til Finance and Operations
-                          href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Synkronisere informasjon om lagernivå fra Finance and Operations til Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Synkronisere produkter med lagerenhet fra Finance and Operations til Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Synkronisere prosjektliste fra Finance and Operations til Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Synkronisere lagre fra Finance and Operations til Field Service
-                          href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synkronisere arbeidsordrer med prosjekt fra Field Service til Finance and Operations
-                          href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Konfigurere integrering av Project Service Automation
-                      items:
-                        - name: Oversikt over Project Service Automation
-                          href: /dynamics365/project-operations/prod-pma/PSA-integration
-                        - name: Parametere for integrering av Project Service Automation
-                          href: /dynamics365/project-operations/prod-pma/PSA-parameters
-                        - name: Synkronisere prosjektkontrakter og prosjekter
-                          href: /dynamics365/project-operations/prod-pma/project-contracts-templates
-                        - name: Synkronisere prosjektoppgaver
-                          href: /dynamics365/project-operations/prod-pma/project-tasks-template
-                        - name: Synkronisere prosjektutgiftskategorier
-                          href: /dynamics365/project-operations/prod-pma/project-categories-templates
-                        - name: Synkronisere prosjektestimater fra og til prosjektprognoser
-                          href: /dynamics365/project-operations/prod-pma/project-estimates-templates
-                        - name: Synkronisere faktiske prosjektdata til prosjektintegreringsjournalen
-                          href: /dynamics365/project-operations/prod-pma/project-actuals-templates
+                        - name: Konfigurere et kundeemne til kontanter-scenario
+                          items:
+                            - name: Kundeemne til kontanter
+                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                            - name: Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                            - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
+                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                            - name: Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                            - name: Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations
+                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                            - name: Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations
+                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                            - name: Synkronisere fakturahoder og -linjer direkte fra Finance and Operations til Sales
+                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                        - name: Konfigurere integrering med Field Service
+                          items:
+                            - name: Oversikt over å konfigurere integrering med Field Service
+                              href: ../../supply-chain/sales-marketing/field-service.md
+                            - name: Synkronisere produkter i Finance and Operations til produkter i Field Service
+                              href: ../../supply-chain/sales-marketing/field-service-product.md
+                            - name: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                            - name: Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Finance and Operations
+                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                            - name: Synkronisere lageroverføringer og -justeringer fra Field Service til Finance and Operations
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                            - name: Synkronisere informasjon om lagernivå fra Finance and Operations til Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                            - name: Synkronisere produkter med lagerenhet fra Finance and Operations til Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                            - name: Synkronisere prosjektliste fra Finance and Operations til Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                            - name: Synkronisere lagre fra Finance and Operations til Field Service
+                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                            - name: Synkronisere arbeidsordrer med prosjekt fra Field Service til Finance and Operations
+                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                        - name: Konfigurere integrering av Project Service Automation
+                          items:
+                            - name: Oversikt over Project Service Automation
+                              href: ../../finance/project-management/PSA-integration.md
+                            - name: Parametere for integrering av Project Service Automation
+                              href: ../../finance/project-management/PSA-parameters.md
+                            - name: Synkronisere prosjektkontrakter og prosjekter
+                              href: ../../finance/project-management/project-contracts-templates.md
+                            - name: Synkronisere prosjektoppgaver
+                              href: ../../finance/project-management/project-tasks-template.md
+                            - name: Synkronisere prosjektutgiftskategorier
+                              href: ../../finance/project-management/project-categories-templates.md
+                            - name: Synkronisere prosjektestimater fra og til prosjektprognoser
+                              href: ../../finance/project-management/project-estimates-templates.md
+                            - name: Synkronisere faktiske prosjektdata til prosjektintegreringsjournalen
+                              href: ../../finance/project-management/project-actuals-templates.md
             - name: Bruke eksterne webtjenester
               href: data-entities/consume-external-web-service.md
             - name: Elektronisk meldingssystem
@@ -186,12 +338,8 @@
               items:
                 - name: Oversikt over dataimport- og -eksportjobber
                   href: data-entities/data-import-export-job.md
-                - name: Synkronisere dato og klokkeslett i importjobber
-                  href: data-entities/data-synchronize-date-and-time.md
-                - name: Importer bilag ved hjelp av enheten Økonomijournal
+                - name: Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimaliser dataoverføring for Finance and Operations-apper
-                  href: sysadmin/optimize-data-migration.md
             - name: Utvikling for dataenheter
               items:
                 - name: Utformingsprinsipper og anbefalte fremgangsmåter for dataenheter
@@ -232,16 +380,14 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Oversikt over Eksporter til Azure Data Lake
-              href: data-entities/Azure-Data-Lake-GA-version-overview.md
-            - name: Installer tillegget Eksporter til Azure Data Lake
+            - name: Oversikt over Azure Data Lake
+              href: data-entities/azure-data-lake-overview.md
+            - name: Konfigurere eksport til Azure Data Lake
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-apper i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
-            - name: Gjør enhetslager tilgjengelig som Data Lake
+            - name: Gjøre enhetslager tilgjengelig som Data Lake
               href: data-entities/entity-store-data-lake.md
-            - name: Endre data i Azure Data Lake
-              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Databaseflyttingsoperasjoner
           items:
             - name: Oversikt
@@ -324,27 +470,19 @@
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
                     - name: Oppdatere et miljø
                       href: deployment/updateenvironment-newinfrastructure.md
-                    - name: Feilsøk miljøer som distribueres gjennom distribusjon av selvbetjening
+                    - name: Feilsøke miljøer som distribueres gjennom distribusjon av selvbetjening
                       href: deployment/troubleshoot-newinfrastructure.md
-                    - name: Vanlige spørsmål om planlagt vedlikehold i selvbetjeningsmiljøer
-                      href: deployment/plannedmaintenance-selfservice.md
-                    - name: Forretningskontinuitet og nødgjenoppretting
-                      href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Fullfør jobbintroduksjonsprosessen for Azure Resource Manager
+                - name: Fullføre jobbintroduksjon for Azure Resource Manager
                   href: deployment/arm-onboarding.md
-                - name: Fullfør jobbintroduksjonsprosessen for Azure Resource Manager for LCS-prosjekter for amerikanske myndigheter
-                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute og Finance and Operations
                   href: deployment/expressroute.md
-                - name: Arkitektur for Finance and Operations
+                - name: Finance and Operations-arkitektur
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Ta i bruk oppdateringer i skymiljøer
                   href: deployment/apply-deployable-package-system.md
-                - name: Bruk oppdateringer og utvidelser på Commerce Scale Unit (sky)
+                - name: Bruke oppdateringer og utvidelser på Commerce Scale Unit (sky)
                   href: deployment/Update-retail-channel.md
-                - name: Automatisk oppdatering for Commerce Scale Unit (sky)
-                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
-                - name: Initialiser Commerce Scale Unit (sky)
+                - name: Initialisere Commerce Scale Unit (sky)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Overføre kanaler til en annen Commerce Scale Unit
                   href: deployment/Reassign-CSU.md
@@ -358,27 +496,23 @@
                   items:
                     - name: Oversikt over lokal distribusjon
                       href: deployment/on-premises-overview.md
-                    - name: Planlegg og klargjør for lokale distribusjoner
+                    - name: Planlegge og klargjøre for lokale distribusjoner
                       href: deployment/plan-onprem-deployment.md
-                    - name: Programvare som støtter Microsoft Dynamics 365 Finance + Operations (on-premises)
-                      href: deployment/onprem-compatibility.md
                     - name: Krav til maskinvarestørrelse
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Autentisering i Dynamics 365 Finance + Operations (on-premises)
+                    - name: Godkjenning i Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/authentication-onprem.md
-                - name: Konfigurer og distribuer lokale miljøer
+                - name: Konfigurere og distribuere lokale miljøer
                   items:
-                    - name: Konfigurer lokale prosjekter i LCS
+                    - name: Konfigurere lokale prosjekter i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: "Definere og distribuere lokale miljøer (Platform update\_41 og nyere)"
-                      href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: "Definere og distribuere lokale miljøer (Platform update\_12 til 40)"
+                    - name: Konfigurere og distribuere lokale miljøer
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø
                       href: deployment/deploy-retail-onprem.md
                     - name: Utvikle og distribuere tilpassede modeller til lokale miljøer
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Miljøoperasjoner
+                - name: Miljøvedlikehold
                   items:
                     - name: Bruke oppdateringer i en lokal distribusjon
                       href: deployment/apply-updates-on-premises.md
@@ -388,8 +522,6 @@
                       href: user-interface/client-disconnected.md
                     - name: Konfigurere bare satsvise og interaktive AOS-noder i lokale distribusjoner
                       href: deployment/onprem-batchonly.md
-                    - name: Konfigurere høy tilgjengelighet for SSRS-noder (SQL Server Reporting Services)
-                      href: deployment/onprem-SSRSHA.md
                     - name: Konfigurere proxyer for lokale miljøer
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokal diagnostikk
@@ -402,25 +534,21 @@
                       href: lifecycle-services/reconfigure-environment.md
                     - name: Distribuere lokale distribusjoner på nytt
                       href: deployment/redeploy-on-prem.md
-                    - name: 'Fjern og installer på nytt, eller legg til en AOS-node'
+                    - name: 'Fjerne og installere på nytt, eller legge til en AOS-node'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
-                    - name: Bruk den samme AD FS-forekomsten på nytt for flere miljøer
+                    - name: Bruke den samme AD FS-forekomsten på nytt for flere miljøer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Oppgrader SQL Server-forekomsten for miljøer i Microsoft Dynamics 365 Finance + Operations (on-premises)
-                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
                     - name: Kompatibilitet med AD FS Microsoft 365
                       href: deployment/onprem-adfscompatibility.md
                     - name: Lokal agent og skript for distribusjon før og etter
                       href: lifecycle-services/pre-post-scripts.md
-                    - name: Distribusjonskonfigurasjoner for den lokale agenten
-                      href: deployment/onprem-localagent-options.md
-                    - name: Oppdater den lokale agenten
+                    - name: Oppdatere den lokale agenten
                       href: lifecycle-services/update-local-agent.md
                 - name: Feilsøking
                   items:
-                    - name: Feilsøk lokale distribusjoner
+                    - name: Feilsøke lokale distribusjoner
                       href: deployment/troubleshoot-on-prem.md
                     - name: Skript for å løse problemer i lokale miljøer
                       href: deployment/onprem-tsg-implementations.md
@@ -428,15 +556,13 @@
               items:
                 - name: Opprette distribuerbare pakker med modeller
                   href: deployment/create-apply-deployable-package.md
-                - name: Installer distribuerbare pakker fra kommandolinjen
+                - name: Installere distribuerbare pakker fra kommandolinjen
                   href: deployment/install-deployable-package.md
-                - name: Avinstaller en pakke
+                - name: Avinstallere en pakke
                   href: deployment/uninstall-deployable-package.md
-                - name: Kjør egendefinerte X++-skript uten nedetid
-                  href: deployment/run-custom-scripts.md
-                - name: Feilsøk problemer med pakkeprogram
+                - name: Feilsøke problemer med pakkeprogram
                   href: deployment/deployable-package-troubleshooting.md
-            - name: Distribuer tilpasset hjelp
+            - name: Distribuere tilpasset hjelp
               items:
                 - name: Oversikt over tilpasset hjelp
                   href: help/custom-help-overview.md
@@ -460,19 +586,9 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: Språk og nasjonale beskrivelser på tvers av produkter og hjelp
                   href: help/language-locale.md
-                - name: 'Utvid, tilpass og samarbeid om hjelpen'
+                - name: 'Utvide, tilpasse og samarbeide om hjelpen'
                   href: help/contributor-guide.md
-            - name: Distribusjonshensyn
-              items:
-                - name: Distribusjonsalternativer for nasjonal og lokal sky for Dynamics 365 Finance og Dynamics 365 Supply Chain Management
-                  href: deployment/deployment-options-geo.md
-                - name: Finance og Supply Chain Management i Government Community Cloud (GCC) for USA
-                  href: deployment/us-gcc-deployment.md
-                - name: Finance and Supply Chain Management styrt av 21Vianet i Kina
-                  href: deployment/china-local-deployment.md
-                - name: Finance and Operations-apper i Frankrike
-                  href: deployment/france-local-deployment.md
-        - name: Utvikle og tilpass
+        - name: Utvikle og tilpasse
           items:
             - name: Startside for å utvikle og tilpasse
               href: dev-tools/developer-home-page.md
@@ -480,15 +596,17 @@
               href: dev-tools/application-stack-server-architecture.md
             - name: Få evalueringskopier
               href: dev-tools/get-evaluation-copy.md
-            - name: Registrer deg for forhåndsversjonsabonnementer
+            - name: Registrere deg for forhåndsvisningsabonnementer
               href: dev-tools/sign-up-preview-subscription.md
             - name: Distribuere og få tilgang til utviklingsmiljøer
               items:
                 - name: Utviklingsmiljøer
                   href: dev-tools/access-instances.md
-                - name: Konfigurer utviklingsmiljøer med én boks
+                - name: Konfigurere utviklingsmiljøer med én boks
                   href: dev-tools/configure-developer-vm.md
-                - name: Vanlige spørsmål om utvikling og bygging av VM-er som ikke tillater administratortilgang
+                - name: Opprette nye brukere på en utviklingsmaskiner
+                  href: dev-tools/enable-development-machine.md
+                - name: Vanlige spørsmål om utviklings- og bygg-VM-er som ikke tillater administratortilgang
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Gi nytt navn til lokale miljøer for å få tilgang til Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
@@ -512,12 +630,8 @@
                   href: dev-tools/pipeline-asset-upload.md
                 - name: Distribuere aktiva ved hjelp av Azure Pipelines
                   href: dev-tools/pipeline-deploy-asset.md
-                - name: Opprett en LCS-tilkobling (Lifecycle Services) i Azure Pipelines
+                - name: Opprette en LCS-tilkobling (Lifecycle Services) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
-                - name: Oppdater LCS-tilkoblingsgodkjenningsoppgaver til MSAL i Azure Pipelines
-                  href: dev-tools/pipeline-lcs-connection-update.md
-                - name: Oppdater den driftede forekomsten av Azure Pipeline for nye NuGet-pakker
-                  href: dev-tools/pipeline-nuget-split.md
                 - name: Oppdatere et eldre forløp i Azure Pipelines
                   href: dev-tools/pipeline-msbuild-update.md
             - name: Eksempel på flåtestyringsprogram
@@ -547,7 +661,7 @@
                     - name: Oversikt over å opprette modeller og datamodellelementer
                       href: dev-tools/create-data-model-elements.md
                     - name: Gi navn til retningslinjer for utvidelser
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: extensibility/NamingGuidelines.md
                     - name: Deaktivere modelltilpassings- og avskrivningsfunksjonalitet
                       href: dev-tools/lock-models.md
                 - name: Rapport for tilpassingsanalyse
@@ -562,32 +676,30 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller og pakker
                   href: dev-tools/models.md
-                - name: Prosjekttype i Finance and Operations
+                - name: Prosjekttype for Finance and Operations
                   href: dev-tools/projects.md
                 - name: Verktøytillegg for Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
-                - name: Oppdater utviklingsverktøyene for Visual Studio
+                - name: Oppdatere utviklingsverktøyene for Visual Studio
                   href: dev-tools/update-development-tools.md
             - name: Programmeringsspråk for X++
               items:
-                - name: Språkstøtte for X++
-                  items:
-                    - name: Visual Studio-krav for X++
-                      href: dev-tools/developer-tools-vs2017.md
-                    - name: Feilsøk X++-kode
-                      href: dev-tools/debug-xpp.md
-                    - name: EventHandlerResult-klasser i forespørsels- eller svarscenarioer
-                      href: dev-tools/event-handler-result-class.md
-                    - name: Skrive forretningslogikk ved hjelp av C#- og X++-kildekode
-                      href: dev-tools/write-business-logic.md
-                    - name: LINQ-leverandør for C#
-                      href: dev-tools/linq-provider-c.md
-                    - name: Skrive regler for anbefalt fremgangsmåte
-                      href: dev-tools/author-best-practice-rules.md
-                    - name: Egenskaper for Programutforsker
-                      href: dev-ref/application-explorer-aot-properties.md
-                    - name: SysSetupConfigAttribute-attributtet
-                      href: dev-tools/syssetupconfigattribute.md
+                - name: X++ og feilsøkerfunksjoner
+                  href: dev-tools/new-x-debugger-features.md
+                - name: Feilsøke X++-kode
+                  href: dev-tools/debug-xpp.md
+                - name: EventHandlerResult-klasser i forespørsels- eller svarscenarier
+                  href: dev-tools/event-handler-result-class.md
+                - name: Skrive forretningslogikk ved hjelp av C#- og X++-kildekode
+                  href: dev-tools/write-business-logic.md
+                - name: Endringer i X++- og X++-kompilatoren
+                  href: dev-tools/programming-language-support.md
+                - name: LINQ-leverandør for C#
+                  href: dev-tools/linq-provider-c.md
+                - name: Skrive regler for anbefalt fremgangsmåte
+                  href: dev-tools/author-best-practice-rules.md
+                - name: Egenskaper for Programutforsker
+                  href: dev-ref/application-explorer-aot-properties.md
                 - name: Språkreferanse for X++
                   items:
                     - name: Oversikt over språkreferanse for X++
@@ -632,7 +744,7 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: Biblioteker
                           href: dev-ref/xpp-library-objects.md
-                        - name: Arrangementer og delegater
+                        - name: Hendelser
                           href: dev-ref/xpp-events.md
                     - name: Datavalg og redigering for X++
                       items:
@@ -696,9 +808,63 @@
                       href: dev-ref/xpp-string-run-time-functions.md
                 - name: Systemtabeller
                   href: dev-ref/system-tables.md
+                - name: Systemklasser
+                  items:
+                    - name: Liste over systemklasser
+                      href: dev-ref/system-classes/toc.yml
+                    - name: Systemklasser gruppert alfabetisk
+                      items:
+                        - name: A-klasser
+                          href: dev-ref/a-classes.md
+                        - name: B-klasser
+                          href: dev-ref/b-classes.md
+                        - name: C-klasser
+                          href: dev-ref/c-classes.md
+                        - name: D-klasser
+                          href: dev-ref/d-classes.md
+                        - name: E-klasser
+                          href: dev-ref/e-classes.md
+                        - name: F-klasser
+                          href: dev-ref/f-classes.md
+                        - name: G-klasser
+                          href: dev-ref/g-classes.md
+                        - name: H-klasser
+                          href: dev-ref/h-classes.md
+                        - name: I-klasser
+                          href: dev-ref/i-classes.md
+                        - name: J-klasser
+                          href: dev-ref/j-classes.md
+                        - name: K-klasser
+                          href: dev-ref/k-classes.md
+                        - name: L-klasser
+                          href: dev-ref/l-classes.md
+                        - name: M-klasser
+                          href: dev-ref/m-classes.md
+                        - name: N-klasser
+                          href: dev-ref/n-classes.md
+                        - name: O-klasser
+                          href: dev-ref/o-classes.md
+                        - name: P-klasser
+                          href: dev-ref/p-classes.md
+                        - name: Q-klasser
+                          href: dev-ref/q-classes.md
+                        - name: R-klasser
+                          href: dev-ref/r-classes.md
+                        - name: S-klasser
+                          href: dev-ref/s-classes.md
+                        - name: T-klasser
+                          href: dev-ref/t-classes.md
+                        - name: U-klasser
+                          href: dev-ref/u-classes.md
+                        - name: V-klasser
+                          href: dev-ref/v-classes.md
+                        - name: W-klasser
+                          href: dev-ref/w-classes.md
+                        - name: X-klasser
+                          href: dev-ref/x-classes.md
             - name: Utvidelsesmulighet
               items:
-                - name: Startside med utvidelsesmulighet
+                - name: Startside med utvidelsesmuligheter
                   href: extensibility/extensibility-home-page.md
                 - name: Innføring og Komme i gang
                   items:
@@ -834,13 +1000,15 @@
                       href: extensibility/compatibility-checker-tool.md
             - name: Ytelse
               items:
-                - name: Registrer sporinger ved hjelp av Trace Parser
+                - name: Registrere sporinger ved hjelp av Trace Parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Testing av én bruker med SDK for ytelse og oppgaveopptaker
+                - name: Testing av én bruker med oppgaveopptaker og SDK for Performance
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Flerbrukertesting med SDK for ytelse
-                  href: perf-test/perfsdk-multi-user-testing.md
-                - name: Feilsøkingsveiledning for testing med SDK for ytelse
+                - name: Testing av flere brukere med SDK for Performance og en lokal testkontroller
+                  href: perf-test/multi-user-testing-local-test-controller.md
+                - name: Testing av flere brukere med SDK for Performance og Azure DevOps
+                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Feilsøkingsveiledning for testing av én eller flere brukere med SDK for Performance
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: SDK for Performance og testing av flere brukere i lokale miljøer
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -854,15 +1022,13 @@
                   href: perf-test/testing-validation.md
                 - name: Teste prosjekter i Visual Studio
                   href: perf-test/testing-support.md
-                - name: Distribuer og bruk et miljø som støtter sammenhengende automatisering av bygging og testing
+                - name: Distribuere miljøer som støtter sammenhengende automatisering av bygging og testing
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering ved hjelp av klasse- og metodeattributter
                   href: perf-test/systest-filtering.md
-                - name: SysTestRow-attributt for testing av flere verdier
-                  href: perf-test/systest-row.md
                 - name: Bibliotek for aksepttest
                   items:
-                    - name: Bibliotekressurser for aksepttest
+                    - name: Biblioteksressurser for aksepttest
                       href: perf-test/acceptance-test-library.md
                     - name: Navigasjonskonsepter
                       href: perf-test/concepts-navigation.md
@@ -886,16 +1052,10 @@
                       href: perf-test/atl-faq.md
             - name: Datoeffektivitet
               href: dev-tools/date-effectivity.md
-            - name: Utvikling for uavhengige programvareleverandører
-              items:
-                - name: Startside for ISV-utvikling
-                  href: dev-tools/isv-dev-home-page.md
-                - name: Koble X++-moduler til pakker ved hjelp av ISV Studio
-                  href: dev-tools/isv-studio-solutions.md
-                - name: ISV-lisensiering
-                  href: dev-tools/isv-licensing.md
-                - name: ISV-lisensiering lokalt
-                  href: dev-tools/isv-licensing-on-prem.md
+            - name: ISV-lisensiering
+              href: dev-tools/isv-licensing.md
+            - name: ISV-lisensiering lokalt
+              href: dev-tools/isv-licensing-on-prem.md
         - name: "EUs personvernforordning\_(GDPR)"
           items:
             - name: Oversikt over EUs personvernforordning (GDPR)
@@ -928,18 +1088,12 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS for partnere
                   href: lifecycle-services/getting-started-lcs.md
-                - name: RESTful API-er
-                  items:
-                    - name: Start og stopp miljøer
-                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
-                    - name: Hent miljømetadata
-                      href: lifecycle-services/api/v1/reference-environment-metadata.md
-                    - name: Hent miljøhistorikk
-                      href: lifecycle-services/api/v1/reference-environment-history.md
-                    - name: Hent ZIP for miljøets RSAT-sertifikat
-                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Nyheter eller endringer i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
+                - name: Kjente problemer
+                  href: lifecycle-services/known-issues.md
+                - name: Fjernede eller utgåtte funksjoner i Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Brukerveiledning for Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Prosjektinnføring
@@ -988,12 +1142,10 @@
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
                 - name: Vanlige spørsmål om vinduet Planlagt vedlikehold
                   href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: Overvåkning og diagnose
-              items:
-                - name: Verktøy for overvåking og diagnose
-                  href: lifecycle-services/monitoring-diagnostics.md
-                - name: Bruke Azure Data Explorer til å søke i råinformasjonslogger
-                  href: lifecycle-services/azure-data-explorer.md
+            - name: Overvåke og diagnostisere
+              href: lifecycle-services/monitoring-diagnostics.md
+            - name: Konsekvensanalyserapport
+              href: lifecycle-services/impact-analysis-report.md
             - name: Starte miljøtjenester på nytt
               href: lifecycle-services/restart-environment-services.md
             - name: "Rapportere en\_produksjonsnedetid"
@@ -1006,249 +1158,37 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: Veiledning for spørringen
               href: lifecycle-services/querycookbook.md
-            - name: Utløpte abonnementer og datasletting
-              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Oversikt over Dynamics 365 Translation Service
                   href: lifecycle-services/translation-service-overview.md
-                - name: Oversett brukergrensesnittfiler
+                - name: Oversette brukergrensesnittfiler
                   href: lifecycle-services/use-translation-service.md
-                - name: Oversett dokumentasjonsfiler
+                - name: Oversette dokumentasjonsfiler
                   href: lifecycle-services/use-translation-service-ua.md
-                - name: Filer for oversettingsminne
+                - name: Filer for oversettelsesminne
                   href: lifecycle-services/use-translation-service-tm.md
-                - name: Azure DevOps-utvidelse (forhåndsversjon)
-                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-integrering
           items:
-            - name: Oversikt
+            - name: Microsoft Power Platform-integrering med Finance and Operations
               href: power-platform/overview.md
-            - name: Aktiver Power Platform-integreringen
-              href: power-platform/enable-power-platform-integration.md
-            - name: Godkjenning og autorisasjon
-              href: power-platform/authentication-and-authorization.md
-            - name: Dobbel skriving
-              items:
-                - name: Startside for dobbel skriving
-                  href: data-entities/dual-write/dual-write-home-page.md
-                - name: Nyheter eller endringer i dobbel skriving
-                  href: data-entities/dual-write/whats-new-dual-write.md
-                - name: Oversikt over dobbel skriving
-                  href: data-entities/dual-write/dual-write-overview.md
-                - name: Oppsett for dobbel skriving
-                  items:
-                    - name: Systemkrav for dobbel skriving
-                      href: data-entities/dual-write/dual-write-system-req.md
-                    - name: Veiledning for hvordan du konfigurerer dobbel skriving
-                      href: data-entities/dual-write/connection-setup.md
-                    - name: Hensyn ved innledende synkronisering
-                      href: data-entities/dual-write/initial-sync-guidance.md
-                    - name: Grenser for direktesynkronisering
-                      href: data-entities/dual-write/sync-limits.md
-                    - name: Oppsett av dobbel skriving fra Lifecycle Services
-                      href: data-entities/dual-write/lcs-setup.md
-                    - name: Aktiver dobbel skriving for eksisterende Finance and Operations-apper
-                      items:
-                        - name: Aktiver dobbel skriving for eksisterende Finance and Operations-apper
-                          href: data-entities/dual-write/enable-dual-write.md
-                        - name: Systemkrav og forutsetninger
-                          href: data-entities/dual-write/requirements-and-prerequisites.md
-                        - name: Bruk veiviseren for dobbel skriving til å koble miljøer
-                          href: data-entities/dual-write/link-your-environment.md
-                        - name: Aktiver enhetstilordning for dobbel skriving
-                          href: data-entities/dual-write/enable-entity-map.md
-                    - name: Separert programiverksettingspakke med dobbel skriving
-                      href: data-entities/dual-write/separated-solutions.md
-                    - name: Overføring av valutadatatype for dobbel skriving
-                      href: data-entities/dual-write/currrency-decimal-places.md
-                    - name: Definer tilordningen for salgsordrens statusfelter
-                      href: data-entities/dual-write/sales-status-map.md
-                    - name: Filtrere konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
-                      href: data-entities/dual-write/filtering-intercompany-orders.md
-                - name: Håndtere dobbel skriving
-                  items:
-                    - name: Tilpasse enhets- og felttilordninger
-                      href: data-entities/dual-write/customizing-mappings.md
-                    - name: Veiledning for tilpassing av dobbel skriving
-                      href: data-entities/dual-write/custom-best-practices.md
-                    - name: Håndtere flere enhetstilordninger
-                      href: data-entities/dual-write/multiple-entity-maps.md
-                    - name: Rediger en juridisk enhet etter oppsett av dobbel skriving
-                      href: data-entities/dual-write/edit-legal-entity.md
-                    - name: Stopp dobbel skriving midlertidig for vedlikehold
-                      href: data-entities/dual-write/pause-for-maintenance.md
-                    - name: Feilbehandling og varselvarslinger
-                      href: data-entities/dual-write/errors-and-alerts.md
-                    - name: Håndtering av applivssyklus
-                      href: data-entities/dual-write/app-lifecycle-management.md
-                    - name: Brukerangitt teameier
-                      href: data-entities/dual-write/user-specified-team-owner.md
-                    - name: Fjern kobling til og koble til miljøer for dobbel skriving på nytt
-                      href: data-entities/dual-write/relink-environments.md
-                - name: Tilordne begreper mellom apper
-                  items:
-                    - name: Integrert original for kunde
-                      href: data-entities/dual-write/customer-mapping.md
-                    - name: Leverandørintegrering
-                      items:
-                        - name: Integrert original for leverandør
-                          href: data-entities/dual-write/vendor-mapping.md
-                        - name: Bytte mellom leverandørutforminger
-                          href: data-entities/dual-write/vendor-switch.md
-                    - name: Kundefordelskort og belønningspoeng
-                      href: data-entities/dual-write/loyalty-mapping.md
-                    - name: Produktintegrering
-                      items:
-                        - name: Samlet produktopplevelse
-                          href: data-entities/dual-write/product-mapping.md
-                        - name: Integrerte områder og lagre
-                          href: data-entities/dual-write/sites-warehouses-mapping.md
-                    - name: Firmaintegrering
-                      items:
-                        - name: Firmabegrep i Dataverse
-                          href: data-entities/dual-write/company-data.md
-                        - name: Initialisere firmadata
-                          href: data-entities/dual-write/bootstrap-company-data.md
-                    - name: Organisasjonshierarki på Dataverse
-                      href: data-entities/dual-write/organization-mapping.md
-                    - name: Økonomi- og avgiftsdata
-                      items:
-                        - name: Tilgang til referanse for økonomi- og avgiftsdata
-                          href: data-entities/dual-write/finance-tax-reference.md
-                        - name: Integrert finans
-                          href: data-entities/dual-write/ledger-mapping.md
-                        - name: Integrert original for avgift
-                          href: data-entities/dual-write/tax-mapping.md
-                    - name: Integrere innkjøp i Supply Chain Management med Field Service
-                      href: data-entities/dual-write/scm-field-service-procurement.md
-                    - name: Synkronisere med prissettingsmotoren i Supply Chain Management ved forespørsel
-                      href: data-entities/dual-write/pricing-engine.md
-                    - name: Kundeemne til kontanter i dobbel skriving
-                      href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                    - name: Bruke prissettingsmotoren for Dynamics 365 Commerce med Dynamics 365 Sales
-                      href: data-entities/dual-write/commerce-pricing.md
-                    - name: Interne aktiva for betjening
-                      href: data-entities/dual-write/in-house-assets.md
-                    - name: Lagertilgjengelighet
-                      href: data-entities/dual-write/inventory-availability.md
-                    - name: 'Integrert arbeider, jobb og stilling'
-                      href: data-entities/dual-write/integrated-hr.md
-                    - name: Part og global adressebok
-                      href: data-entities/dual-write/party-gab.md
-                    - name: Bruk av Microsoft Power Apps-portaler med partdatamodellen
-                      href: data-entities/dual-write/party-gab-portal.md
-                    - name: Oppgrader til parten og den globale adressebokmodellen
-                      href: data-entities/dual-write/upgrade-party-gab.md
-                    - name: Vis partdata
-                      href: data-entities/dual-write/view-party.md
-                    - name: Merknadsintegrering
-                      href: data-entities/dual-write/notes-integration.md
-                    - name: Tilordningsreferanse
-                      href: data-entities/dual-write/mapping-reference.md
-                - name: Støtte for dobbelt skriving
-                  items:
-                    - name: Støtte for Field Service- og Project Service Automation-løsninger
-                      href: data-entities/dual-write/field-service-project-service-automation.md
-                    - name: Overfør kundeemne til kontantdata fra dataintegrator til dobbel skriving
-                      href: data-entities/dual-write/migrate-prospect-to-cash.md
-                    - name: Feilsøking
-                      items:
-                        - name: Generell feilsøking
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
-                        - name: Feilsøk problemer under førstegangsinstallasjon
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                        - name: Feilsøk problemer under førstegangssynkronisering
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Feilsøk problemer med direkte synkronisering
-                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Feilsøk problemer med dobbel skriving i Finance and Operations-apper
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                        - name: Feilsøk problemer med part og global adressebok
-                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
-                        - name: Feilsøk problemer i forbindelse med forståelse av løsningen
-                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Feilsøk problemer fra oppgraderinger av Finance and Operations-apper
-                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Bekreft konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                        - name: Feilkoder for tilstandskontroll for tabelltilordning
-                          href: data-entities/dual-write/table-map-health-check.md
-                - name: Vanlige spørsmål for dobbel skriving
-                  href: data-entities/dual-write/dual-write-faq.md
-            - name: Virtuelle enheter
-              items:
-                - name: Oversikt over virtuelle enheter
-                  href: power-platform/virtual-entities-overview.md
-                - name: Enhetsmodellering
-                  href: power-platform/entity-modeling.md
-                - name: Håndtering av applivssyklus
-                  href: power-platform/application-lifecycle-management.md
-                - name: Konfigurer virtuelle enheter i Dataverse
-                  href: power-platform/admin-reference.md
-                - name: Aktiver virtuelle enheter for Dataverse
-                  href: power-platform/enable-virtual-entities.md
-                - name: Power Apps-portaler med Finance and Operations
-                  href: power-platform/power-portal-reference.md
-                - name: Vanlige spørsmål om virtuelle enheter for Finance and Operations
-                  href: power-platform/faq.md
-            - name: Forretningshendelser
-              items:
-                - name: Oversikt over forretningshendelser
-                  href: business-events/home-page.md
-                - name: Administrering av endepunkt for forretningshendelser
-                  href: business-events/managing-business-event-endpoints.md
-                - name: Forretningshendelser for applikasjon
-                  href: business-events/app-business-events.md
-                - name: Forretningshendelser for arbeidsflyt
-                  href: business-events/business-events-workflow.md
-                - name: Satsvise forretningshendelser
-                  href: business-events/system-business-events.md
-                - name: Varsler som forretningshendelser
-                  href: business-events/alerts-business-events.md
-                - name: Datahendelser
-                  href: business-events/data-events.md
-                - name: Forretningshendelser i Power Automate
-                  href: business-events/business-events-flow.md
-                - name: Dokumentasjon for utvikling av forretningshendelser
-                  href: business-events/business-events-dev-doc.md
-                - name: Feilsøke forretningshendelser
-                  href: business-events/troubleshooting.md
-                - name: Brukstilfeller for forretningshendelser
-                  href: business-events/potential-use-cases.md
-                - name: Opplæringer
-                  items:
-                    - name: Forretningshendelser og Power Automate
-                      href: business-events/how-to/how-to-flow.md
-                    - name: Forretningshendelser og Azure Event Grid
-                      href: business-events/how-to/how-to-eventgrid.md
-                    - name: Forretningshendelser og Azure Service Bus
-                      href: business-events/how-to/how-to-servicebus.md
-                    - name: Forretningshendelser og Azure Service Bus-kø
-                      href: business-events/how-to/how-to-servicebus-queue.md
-                    - name: Forretningshendelser og arbeidsflytgodkjenninger
-                      href: business-events/how-to/how-to-workflow.md
-                    - name: Forretningshendelser og Microsoft Forms Pro
-                      href: business-events/how-to/FormsPro.md
-                    - name: Forretningshendelser og Azure Event Hubs
-                      href: business-events/how-to/event-hub.md
-                    - name: Abonner på hendelser i Dataverse
-                      href: business-events/how-to/how-to-dataverse-events.md
-                    - name: Forretningshendelser i regnskapsperiodeavslutning
-                      href: business-events/how-to/period-close.md
-            - name: Tilleggsprogrammer
-              items:
-                - name: Oversikt over tillegg
-                  href: power-platform/add-ins-overview.md
-            - name: Policyer og kommunikasjon
-              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
+            - name: Enhetsmodellering
+              href: power-platform/entity-modeling.md
+            - name: Håndtering av applivssyklus
+              href: power-platform/application-lifecycle-management.md
+            - name: Administratorreferanse for Finance and Operations og Common Data Service
+              href: power-platform/admin-reference.md
+            - name: Power Apps-portaler med Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Vanlige spørsmål om virtuelle enheter for Finance and Operations
+              href: power-platform/faq.md
         - name: Mobil plattform
           items:
             - name: Ressurser for mobil plattform
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: Kom i gang
+            - name: Komme i gang
               items:
-                - name: Kom i gang med mobil plattform
+                - name: Komme i gang med mobile platform
                   href: mobile-apps/platform/mobile-platform-getting-started.md
                 - name: Hensyn om arkitektur og utforming
                   href: mobile-apps/platform/mobile-platform-architecture.md
@@ -1472,31 +1412,23 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Installasjon og konfigurasjon
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Bruk Regression Suite Automation Tool
+            - name: Bruke Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
-            - name: Vedlikehold testtilfeller i Regression Suite Automation Tool
-              href: perf-test/rsat/rsat-maintain-test-cases.md
-            - name: Valider forventede verdier
+            - name: Validere forventede verdier
               href: perf-test/rsat/rsat-validate-expected.md
             - name: Kjedetesttilfeller
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Avledede testtilfeller
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Oppgrader parameterfilene
-              href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Opplæring for Regression Suite Automation Tool
-              href: perf-test/rsat/rsat-tutorial.md
-            - name: Konfigurer brukere som ikke er administratorer
-              href: perf-test/rsat/rsat-configure-nonadmin.md
+            - name: Opplæring og andre funksjoner for Regression Suite Automation Tool
+              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Anbefalte fremgangsmåter
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostisk testing ved hjelp av Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Kjør Regression Suite Automation Tool (RSAT) med parallell utføring
-              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Feilsøking
               href: perf-test/rsat/rsat-troubleshooting.md
-        - name: Frigi løsninger ved hjelp av Lifecycle Services
+        - name: Utgaveløsninger ved hjelp av Lifecycle Services
           items:
             - name: Utvikle og frigi
               href: lcs-solutions/lcs-solutions-app-source.md
@@ -1535,20 +1467,18 @@
             - name: Få støtte for Finance and Operations og Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Oversikt over Dynamics 365-støtte
-              href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Få støtte for Finance and Operations styrt av 21Vianet i Kina
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
+            - name: Få støtte for Finance and Operations som styres av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurer teknisk støtte for Finance and Operations-apper
+            - name: Konfigurere kundestøtte for Finance and Operations-apper
               href: lifecycle-services/support-experience.md
-            - name: Administrer støtteopplevelser for Finance and Operations-apper
+            - name: Behandle kundestøtteopplevelser for Finance and Operations-apper
               href: lifecycle-services/cloud-powered-support-lcs.md
-            - name: Produksjonsstøtte og -overvåking
-              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Systemadministrasjon
           items:
             - name: Startside for systemadministrasjon
               href: sysadmin/system-administration-home-page.md
-            - name: Legg til koblinger i juridiske vilkår og personvernerklæring
+            - name: Legge til koblinger i juridiske vilkår og personvernerklæring
               href: sysadmin/legal-terms-privacy-statement.md
             - name: Rapport for lisenskoder og konfigurasjonsnøkler
               href: sysadmin/license-codes-configuration-keys-report.md
@@ -1560,8 +1490,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: Eksportere B2B-brukere til Azure AD
               href: sysadmin/implement-b2b.md
-            - name: Datavedlikehold
-              href: sysadmin/DataMaintenancePortal.md
             - name: Sikkerhet
               items:
                 - name: Rollebasert sikkerhet
@@ -1578,8 +1506,6 @@
                   href: sysadmin/tasks/create-new-users.md
                 - name: Behandling av brukerøkt
                   href: sysadmin/user-session-management.md
-                - name: Blokkere tilgang etter lokasjon med betinget tilgang for Azure AD
-                  href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: Masseimportere brukere
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Definere arbeidsdeling
@@ -1598,8 +1524,6 @@
                   href: sysadmin/create-simple-security-policy.md
             - name: Overholde lisenskravene for brukere
               href: sysadmin/stay-compliant-user-license-requirement.md
-            - name: Vise status for uavhengig programvareleverandør
-              href: sysadmin/view-isv-license-status.md
             - name: Prosessautomatisering
               href: sysadmin/process-automation.md
             - name: Satsvis behandling
@@ -1608,30 +1532,26 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: Satsvis behandling og satsvise servere
                   href: sysadmin/batch-server-overview.md
-                - name: Opprett satsvise jobber
+                - name: Opprette satsvise jobber
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Aktiver satsvise nye forsøk
-                  href: sysadmin/retryable-batch.md
-                - name: Kopier en satsvis jobb
+                - name: Kopiere en satsvis jobb
                   href: sysadmin/copy-batch-job.md
-                - name: Prioritetsbasert partiplanlegging
-                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktive satsvise perioder
                   href: sysadmin/activeperiod.md
                 - name: Støtte for sommertid for aktive partiperioder
                   href: sysadmin/batch-active-period-dst.md
                 - name: Sikkerhetsrolle for satsvis behandling
                   href: sysadmin/runby.md
+                - name: Satsvis jobb for å håndtere defragmentering av SQL-indeks
+                  href: sysadmin/batch-job-SQL-defragmentation.md
                 - name: Konfigurere satsvise varsler
                   href: sysadmin/alerts.md
                 - name: Forbedrede partiskjemaer
                   href: sysadmin/enhanced-forms.md
-                - name: Rydde i partiloggen
+                - name: Rydde opp i partiloggen
                   href: sysadmin/batch-history-cleanup.md
                 - name: Avbryte en satsvis jobb under utførelse
                   href: sysadmin/batch-abort.md
-                - name: Satsvis OData-API
-                  href: sysadmin/batch-odata-api.md
             - name: Optimaliseringsrådgiver
               items:
                 - name: Oversikt over optimaliseringsrådgiver
@@ -1666,10 +1586,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-oppgradering – Oppgradere sjekkliste for dataoppgradering på forhånd
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: Oppgrader fra AX 2012 – SQL-transaksjonsbasert replikering
-                  href: database/replication-setup.md
-                - name: Oppgrader fra AX 2012 – Dataoppgradering i selvbetjeningsmiljøer
-                  href: migration-upgrade/data-upgrade-self-service.md
+                - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer ved hjelp av dacpac-process
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer
+                  href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012-oppgradering – Lokale miljøer
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012-oppgradering – Testing av overgang
@@ -1678,16 +1598,16 @@
                   href: migration-upgrade/app-validation-process.md
                 - name: AX 2012-oppgradering – Funksjonstestklareringer
                   href: migration-upgrade/upgrade-functional-validation.md
-                - name: AX 2012-oppgradering – Klargjør for å aktivere
+                - name: AX 2012-oppgradering – Klargjøre for å aktivere
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012-oppgradering – Aktivering
                   href: migration-upgrade/2012-upgrade-cutover.md
-                - name: Oppgrader fra AX 2012 – Vanlige spørsmål om dataoppgradering
-                  href: migration-upgrade/upgrade-faq.md
                 - name: Endringer som påvirker oppgradering fra AX 2012
                   items:
-                    - name: Gjør skilletegnet for kontoplan unikt
+                    - name: Gjøre skilletegnet for kontoplan unikt
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
+                    - name: Oppgradere enkeltjournalbilag og valutarevalueringer
+                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Datamodell for planlegging av prosjektressurs
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: Endringer i delsystem for arbeidsflyt

@@ -1,10 +1,12 @@
 ---
 title: Hovedplanlegging for områdedekning, lager ikke obligatorisk
 description: Dette emnet beskriver hvordan en vare som har et områdedimensjonssett for dekning planlegges.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 2474
 ms.assetid: 316da918-67ae-43c5-baea-00ae559e29b0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484b178f3ac43f727fd6acb5deb40b7907c931ec
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fe5cb5f9d21afcd12f3041bb9acc89fff360c95e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579622"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970462"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Hovedplanlegging for områdedekning, lager ikke obligatorisk
 
@@ -41,11 +43,12 @@ Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det
 -   Påfyllingsrelasjoner er definert for lageret. Klikk på **Lagerstyring &gt; Oppsett &gt; Lageroppdeling &gt; Lagre**. På **Hovedplanlegging**-fanen kan du se feltgruppen **Hovedlager**.
 -   Standard ordretype er satt til Produksjon, Bestilling eller Kanban. Klikk på **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg varen, og klikk deretter **Plan &gt; Standard ordreinnstillinger**. I **Standard ordreinnstillinger**-skjemaet kan du se feltet **Standard ordretype**.
 
-![Behov for sitedekning, lager ikke obligatorisk.](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
+![Behov for sitedekning, lager ikke obligatorisk    ](./media/multisitedemandexplosionscenarioforsitecoveragewarehousenotmandatory.jpg)
 
 
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Oversikt over hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
 
@@ -59,6 +62,3 @@ Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

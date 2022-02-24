@@ -104,6 +104,3 @@ Denne versjonen gir nå mulighet til å bruke sjekklister for ansatte som er ans
 Denne funksjonaliteten er nå tilgjengelig i sandkassemiljøer. Hvis du vil aktivere denne funksjonen, går du til **Systemadministrasjon > Koblinger > Oppsett > Systemparametere> Forhåndsvisningsfunksjoner**. Velg **Utvidet arbeiderskjema og navigering**. Dette vil aktivere disse endringene for alle brukere. Du kan når som helst deaktivere dette alternativet.
 
 Hvis du vil ha mer informasjon, se [Strømlinjeformet ansattoppføring og navigasjon](./streamlined-employee-entry.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

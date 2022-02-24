@@ -6,19 +6,19 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
+ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 74d349f6c870c638ee42086e47635817366c3a1a
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 8e487de874fd9b65dc6913cbacf724686f23d33c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402598"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970019"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Opplæringskatalog for Dynamics 365 Commerce-administratorer
 
@@ -30,23 +30,20 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 | Innhold  | beskrivelse  | Formater  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Denne opplæringen tar deg med på en reise som begynner med å vise deg hvordan digitale transformasjoner og funksjonaliteten i forretningsprogrammer kan forvandle virksomheten din. Vi vil beskrive hvordan Dynamics 365 og Power Platform hjelper deg med å ta veloverveide avgjørelser basert på organisasjonens behov og mål, gjennom fire byggeblokker for digitale transformasjoner – moderne, enhetlig, intelligent og tilpassbar.| Gratis, selvbetjent elektronisk læringsforløp | 6.5 timer |
-| [Komme i gang med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)| Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
-| [Komme i gang med Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybasert løsning som er utviklet for e-handel, fysiske butikker og omnikanal-forhandlere, for å bidra til å beskytte inntektene og ryktet ved å tilby verktøy og muligheter til å redusere svindel og misbruk, redusere driftsutgifter og øke akseptansrater, samtidig som brukerkontoer beskyttes mot svindeleksponering. | Gratis, selvbetjent elektronisk læringsforløp | 35 minutter |
+| [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Denne opplæringen tar deg med på en reise som begynner med å vise deg hvordan digitale transformasjoner og funksjonaliteten i forretningsprogrammer kan forvandle virksomheten din. Vi vil beskrive hvordan Dynamics 365 og Power Platform hjelper deg med å ta veloverveide avgjørelser basert på organisasjonens behov og mål, gjennom fire byggeblokker for digitale transformasjoner – moderne, enhetlig, intelligent og tilpassbar.| Gratis, selvbetjent elektronisk læringsforløp | 6.5 timer |
+| [Komme i gang med Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/)| Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
+| [Komme i gang med Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybasert løsning som er utviklet for e-handel, fysiske butikker og omnikanal-forhandlere, for å bidra til å beskytte inntektene og ryktet ved å tilby verktøy og muligheter til å redusere svindel og misbruk, redusere driftsutgifter og øke akseptansrater, samtidig som brukerkontoer beskyttes mot svindeleksponering. | Gratis, selvbetjent elektronisk læringsforløp | 35 minutter |
 
 ## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
 | Innhold  | beskrivelse  | Format  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Distribuere og utvide Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer   |
-| [Konfigurere og bruke salgssted (POS) i Dynamics 365 Commerce](/learn/paths/configure-use-pos-commerce/)         | Transaksjonsdata opprettes ved salgsstedet (POS) og lastes deretter opp til Dynamics 365 Commerce Headquarters for behandling. Dette læreprogrammet beskriver hvordan du installerer og aktiverer POS, i tillegg til hvordan du oppretter daglige transaksjoner i POS. | Gratis, selvbetjent elektronisk læringsforløp | 4.5 timer |
-| [Konfigurere og arbeide med telefonsentre i Dynamics 365 Commerce](/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce er en omnikanalløsning som leverer en telefonsenterkanal med muligheter til spesifikke standardinnstillinger for ordrebehandling og data som brukes som standard i salgsordrene som opprettes av telefonsenterbrukere.                                  | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
+| [Distribuere og utvide Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer   |
+| [Konfigurere og bruke salgssted (POS) i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Transaksjonsdata opprettes ved salgsstedet (POS) og lastes deretter opp til Dynamics 365 Commerce Headquarters for behandling. Dette læreprogrammet beskriver hvordan du installerer og aktiverer POS, i tillegg til hvordan du oppretter daglige transaksjoner i POS. | Gratis, selvbetjent elektronisk læringsforløp | 4.5 timer |
+| [Konfigurere og arbeide med telefonsentre i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce er en omnikanalløsning som leverer en telefonsenterkanal med muligheter til spesifikke standardinnstillinger for ordrebehandling og data som brukes som standard i salgsordrene som opprettes av telefonsenterbrukere.                                  | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
 
 ## <a name="e-commerce"></a>e-handel<a name="e-commerce"></a>
 
 | Innhold  | beskrivelse  | Formater  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Konfigurere og arbeide med e-Handel i Dynamics 365 Commerce](/learn/paths/configure-work-e-commerce/)              | Internett-kanalene og e-handelsområdet Dynamics 365 Commerce gjør det mulig for forhandlere å skape en tilstedeværelse på nettet for merket sitt. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+| [Konfigurere og arbeide med e-Handel i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/)              | Internett-kanalene og e-handelsområdet Dynamics 365 Commerce gjør det mulig for forhandlere å skape en tilstedeværelse på nettet for merket sitt. |

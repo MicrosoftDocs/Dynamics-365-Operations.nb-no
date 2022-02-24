@@ -1,10 +1,12 @@
 ---
 title: Innkjøp
 description: Dette emnet beskriver innkjøp i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2b5e160beb4743db2530b91020f21b686d84237b17cfa7ff7f0cc1da97695d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743656"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020210"
 ---
 # <a name="procurement"></a>Innkjøp
 
@@ -36,7 +38,7 @@ Listesiden **Innkjøpsrekvisisjon for arbeidsordre** (**Aktivastyring** > **Fell
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Innkjøpsrekvisisjon for arbeidsordre**.
 
-![Figur 1.](media/08-work-orders.png)
+![Figur 1](media/08-work-orders.png)
 
 
 Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøp for arbeidsordre**) viser en liste over innkjøpsordrer som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i fanen **Innkjøp for arbeidsordre** i handlingsrutefanen til å utføre forskjellige handlinger:
@@ -47,7 +49,7 @@ Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Felles** > **Inn
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Innkjøp for arbeidsordre**.
 
-![Figur 2.](media/09-work-orders.png)
+![Figur 2](media/09-work-orders.png)
 
 
 På listesiden **Innkjøp for arbeidsordre** og listesiden **Innkjøpsrekvisisjon for arbeidsordre** vises et symbol som er knyttet til leveringsdatokontroll på høyre side av hver linje. Hvis symbolet er et utropstegn i en rød sirkel, betyr det at levering av den tilknyttede bestillingen eller innkjøpsrekvisisjonen kan bli forsinket.
@@ -93,10 +95,7 @@ Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en bestillings
 
 Illustrasjonen nedenfor viser et eksempel på siden **Bestilling**, med fokus på **Aktivitetsnummer**.
 
-![Figur 3.](media/10-work-orders.png)
+![Figur 3](media/10-work-orders.png)
 
 Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en linje for arbeidsordreinnkjøpsrekvisisjon, velger du innkjøpsrekvisisjonsposten på listesiden **Innkjøpsrekvisisjon for arbeidsordre**, og deretter velger du koblingen for innkjøpsrekvisisjonen i kolonnen **Innkjøpsrekvisisjon**. Du finner feltet **Aktivitetsnummer** i fanen **Prosjekt** på hurtigfanen **Linjedetaljer**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

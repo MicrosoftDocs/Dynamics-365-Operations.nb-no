@@ -1,10 +1,12 @@
 ---
 title: Lån av gjenstander
 description: Dette emnet beskriver hvordan du registrerer lån av aktiva i Aktivumbehandling.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752856"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022338"
 ---
 # <a name="asset-loans"></a>Lån av gjenstander
 
@@ -44,7 +46,7 @@ Hvis firmaet ditt mottar aktiva for reparasjons- eller vedlikeholdsjobber fra en
 
 Hvis du vil vise en liste over alle aktivumene du har lånt ut til andre lokasjoner eller kunder, velger du **Anleggsmiddelbehandling** \> **Felles** \> **Lån av gjenstander** \> **Alle lån av gjenstander**. Hvis det er merket av for **Avsluttet** for et aktivum, er aktivumet registrert som returnert til firmaet.
 
-![Behandle vedlikeholdsforespørsler.](media/06-manage-maintenance-requests.png)
+![Behandle vedlikeholdsforespørsler](media/06-manage-maintenance-requests.png)
 
 På siden **Aktive lån av gjenstander** kan du vise en liste over alle lånegjenstander som ennå ikke er returnert til selskapet.
 
@@ -55,6 +57,3 @@ På siden **Aktive lån av gjenstander** kan du vise en liste over alle lånegje
 3. Angi dato og klokkeslett i feltet **Returnert**.
 4. Velg **OK**.
 5. Oppdater listesiden **Aktive lån av gjenstander**, og legg merke til at lånet av gjenstander ikke lenger vises i listen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

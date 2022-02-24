@@ -1,10 +1,12 @@
 ---
 title: Arbeidstidskontroll
 description: Dette emnet beskriver arbeidstidskontroll i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90c4f649cc9ea45341ede923294a7c5a892cd68714db356c3799430d18f5de60
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742782"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018477"
 ---
 # <a name="work-hour-control"></a>Arbeidstidskontroll
 
@@ -66,11 +68,8 @@ Skjermbildet nedenfor viser et eksempel på beregning av **timekontroll for akti
 - Feltet **Faktiske timer** viser posterte timer på arbeidsordrer. 
 - Feltet **Igangsatte timer** viser totalt antall timer som firmaet har forpliktet seg til i forhold til arbeidsordrer.
 
-![Eksempel på beregning av timekontroll for aktivum.](media/04-controlling-and-reporting.png)
+![Eksempel på beregning av timekontroll for aktivum](media/04-controlling-and-reporting.png)
 
 En annen måte å gjøre en timeberegning på er å velge flere aktiva i **Alle aktiva** eller **Aktive aktiva**. Deretter klikker du på knappen **Timekontroll** i hurtigfanen **Generelt**. De valgte anleggsmidlene settes automatisk inn i **Aktivum**-feltet i hurtigfanen **Poster som skal inkluderes**. Klikk på **OK** i dialogboksen **Timekontroll for aktivum**, og beregningen for de valgte anleggsmidlene vises. Den samme fremgangsmåten kan brukes for arbeidssteder i **Alle arbeidssteder** eller **Aktive arbeidssteder**, og for arbeidsordrer i **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

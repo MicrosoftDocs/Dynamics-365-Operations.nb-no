@@ -91,6 +91,3 @@ Ansettelsesprosessmalen krever tilbudsaktiviteten. Hvis du vil bruke den integre
 > Den integrerte tilbudsadministrasjonsappen er bare tilgjengelig med tillegget for omfattende ansettelse. For mer informasjon, se [Hvilken versjon av Microsoft Dynamics 365 Talent - Attract](./attract-comprehensive-hiring.md).
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

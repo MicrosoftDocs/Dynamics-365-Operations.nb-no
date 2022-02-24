@@ -2,9 +2,11 @@
 title: Frigi produktstrukturer
 description: Dette emnet beskriver hvordan du kan frigir produktstrukturer i tillegg til å frigi produkter sammen med de tekniske versjonene. På denne måten kan du sikre at teknisk relevante produktdata enkelt kan brukes på nytt i ulike juridiske enheter.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567493"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967238"
 ---
 # <a name="release-product-structures"></a>Frigi produktstrukturer
 
@@ -75,6 +77,8 @@ Hvis du vil ha et eksempel på hvordan du kan godtar et produkt, kan du se [Se g
 
 Ikke alle driftsfirmaer trenger de samme produktdataene. Vanligvis vil driftsfirmaer som produserer tekniske produkter, kreve en stykkliste, mens driftsfirmaet som bare selger tekniske produkter, ikke krever en stykkliste. Du kan bruke frigivelsespolicyer til å fastsette parameterne som brukes til frigivelsen av produkter.
 
+For tekniske produkter tilordnes frigivelsespolicyen i kategorien for teknisk produkt, og feltet er obligatorisk. For standardprodukter tilordnes policyen til det delte produktet, og feltet er valgfritt.
+
 Hvis du vil ha mer informasjon om kategorier for teknisk produkt, kan du se [Utviklingsversjoner og utviklingsproduktkategorier](engineering-versions-product-category.md).
 
 Under frigivelsesprosessen kan du påvirke innstillingene.
@@ -103,7 +107,6 @@ Angi følgende felter på hurtigfanen **Generelt** til en produktfrigivelsespoli
 | Felt | beskrivelse |
 |---|---|
 | Produkttype | Velg om policyen gjelder for produkter av typen *Vare* eller *Tjeneste*. Du kan ikke endre denne innstillingen etter at du har lagret posten. |
-| Produksjonstype | Dette feltet vises bare når du har aktivert [formelendringsbehandling](manage-formula-changes.md) i systemet. Velg produksjonstypen som denne frigivelsespolicyen gjelder for:<ul><li>**Koprodukt** – Bruk denne frigivelsespolicyen til å administrere koprodukter. Koprodukter produseres under prosessproduksjon, og er ikke versjonsbaserte eller tekniske produkter. Frigivelsespolicyer for koprodukter kan hjelpe deg med å sikre at viktige innstillinger, for eksempel **Lagringsdimensjonsgruppe** og **Sporingsdimensjonsgruppe**, konfigureres ved å bruke en frigitt produktmal før de frigis til et firma.</li><li>**Biprodukt** – Bruk denne frigivelsespolicyen til å administrere biprodukter. Biprodukter produseres under prosessproduksjon og er ikke versjonsbaserte eller tekniske produkter. Frigivelsespolicyer for biprodukter kan hjelpe deg med å sikre at viktige innstillinger, for eksempel **Lagringsdimensjonsgruppe** og **Sporingsdimensjonsgruppe**, konfigureres ved å bruke en frigitt produktmal før de frigis til et firma.</li><li>**Ingen** – Bruk denne policyen til å administrere standardprodukter som ikke er versjonsbaserte eller tekniske produkter, koprodukter eller biprodukter.</li><li>**Planleggingselement** – Bruk denne frigivelsespolicyen til å administrere planleggingselementer som produseres ved hjelp av prosessproduksjon. Planleggingselementer bruker formler. De ligner formelvarer, men de brukes til å produsere bare koprodukter og biprodukter, ikke ferdige produkter.</li><li>**Stykkliste** – Bruk denne frigivelsespolicyen til å administrere tekniske produkter, som ikke bruker formler og vanligvis (men ikke nødvendigvis) omfatter stykklister.</li><li>**Formel** – Bruk denne frigivelsespolicyen til å administrere ferdige varer som produseres ved hjelp av prosessproduksjon. Disse varene vil ha en formel, men ikke en stykkliste.</li></ul> |
 | Bruk maler | Velg ett av følgende alternativer for å angi om og hvordan produktfrigivelsesmaler skal brukes når policyen brukes:<ul><li>**Alltid** – Et malfrigitt produkt alltid må brukes for frigivelser. Hvis du velger dette alternativet, bruker du **Alle produkt**-hurtigfanen til å angi malen som skal brukes for hvert firma du frigir til. Hvis du ikke angir en mal for hvert firma som er oppført i hurtigfanen **Alle produkter**, vil du få en feilmelding når du prøver å lagre policyen.</li><li>**Valgfritt** – Hvis et malfrigitt produkt er angitt for et firma som er oppført i hurtigfanen **Alle produkter**, vil denne malen bli brukt når du frigir til dette firmaet. Hvis ikke vil ingen mal bli brukt. Hvis du velger dette alternativet, kan du lagre policyen uten å tilordne maler til alle firmaer. (Ingen advarsel vil bli vist.)</li><li>**Aldri** – Ingen malfrigitte produkter blir brukt for noen firmaer som du frigir til, selv om en mal er angitt for firmaer som er oppført i hurtigfanen **Alle produkter**. Malkolonnene vil ikke være tilgjengelige.</li></ul> |
 | Aktive | Bruk dette alternativet til å opprettholde frigivelsespolicyene. Angi til *Ja* for alle frigivelsespolicyene du bruker. Angi til *Nei* for å merke en frigivelsespolicy som inaktiv når den ikke brukes. Legg merke til at du ikke kan deaktivere en frigivelsespolicy som er tilordnet til en kategori for teknisk produkt, og du kan bare slette inaktive frigivelsespolicyer. |
 
@@ -156,6 +159,3 @@ Denne virkemåten gjelder bare når et produkt velges direkte for frigivelse. Pr
 Produkt X er for eksempel tilordnet til produkteiergruppen *Designkabinetter*. Produkt X er også en del av stykklisten for produkt Y, som er tilordnet til produkteiergruppen *Designhøyttalere*. Hvis en bruker fra produkteiergruppen *Designhøyttalere* frigir produkt Y og stykklisten, blir produkt X frigitt sammen med produkt Y.
 
 Hvis du vil ha mer informasjon, kan du se [Produkteiere](product-owner.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

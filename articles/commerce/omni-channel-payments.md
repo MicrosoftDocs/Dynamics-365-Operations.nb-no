@@ -1,28 +1,29 @@
 ---
 title: Oversikt over betalinger for omnikanal
 description: Dette emnet gir en oversikt over omnikanalinnbetalinger i Dynamics 365 Commerce.
-author: BrianShook
+author: rubendel
+manager: AnnBe
 ms.date: 09/17/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom:
-- "141393"
-- intro-internal
+ms.search.scope: Operations, Retail
+ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 593a647caeaf7d06aa1f2067954466db7dac6a1d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984172"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414765"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversikt over betalinger for omnikanal
 
@@ -45,11 +46,11 @@ Dette emnet gir en oversikt over omnikanalinnbetalinger i Dynamics 365 Commerce.
 
 Vanligvis beskriver begrepet *omnikanalbetalinger* muligheten til å opprette en ordre i én kanal og fylle den ut i en annen kanal. Nøkkelen til omnikanalbetalingsstøtte er å bevare betalingsdetaljer sammen med resten av ordredetaljene, og deretter bruke betalingsdetaljene når ordren tilbakekalles eller behandles i en annen kanal. Et klassisk eksempel er scenarioet "Kjøp på nett, hent i butikk". I dette scenarioet legges betalingsdetaljene til når ordren opprettes på nettet. De kalles deretter tilbake på salgsstedet for å belaste kundens betalingskort på hentetidspunktet. 
 
-Alle scenarioene som beskrives i dette emnet, kan implementeres ved hjelp av standard SDK for betalinger som leveres med Commerce. [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) gir en enkel implementering av alle scenarioer som er beskrevet her. 
+Alle scenarioene som beskrives i dette emnet, kan implementeres ved hjelp av standard SDK for betalinger som leveres med Commerce. [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) gir en enkel implementering av alle scenarioer som er beskrevet her. 
 
 ### <a name="prerequisites"></a>Forutsetninger
 
-Alle scenarioer som beskrives i dette emnet, krever en betalingskobling som støtter omnikanalbetalinger. Den medfølgende Adyen-tilkoblingen kan også brukes, fordi den støtter scenarioene som er tilgjengelige via betalings-SDK-en. Hvis du vil ha mer informasjon om hvordan du implementerer betalingskoblinger og Retail-SDK-en generelt, kan du gå til [Startside for detaljhandel for IT-teknikere og utviklere](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Alle scenarioer som beskrives i dette emnet, krever en betalingskobling som støtter omnikanalbetalinger. Den medfølgende Adyen-tilkoblingen kan også brukes, fordi den støtter scenarioene som er tilgjengelige via betalings-SDK-en. Hvis du vil ha mer informasjon om hvordan du implementerer betalingskoblinger og Retail-SDK-en generelt, kan du gå til [Startside for detaljhandel for IT-teknikere og utviklere](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### <a name="supported-versions"></a>Støttede versjoner
 
@@ -59,14 +60,14 @@ Omnikanalbetalingsfunksjonene som beskrives i dette emnet, er utgitt som en del 
 
 Betalings-SDK-en er avhengig av to sett med APIer (Application Programming Interface) for betalinger. Det første settet med APIer heter **iPaymentProcessor**. Den brukes til å implementere "kort finnes ikke"-betalingskoblinger som kan brukes i telefonsentre og med e-handelsplattformen til Microsoft Dynamics. Hvis du vil ha mer informasjon om **iPaymentProcessor**-grensesnittet, kan du se hvitboken [Implementere en betalingskobling og betalingsenhet](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf), som dekker betalinger. 
 
-Det andre settet med APIer heter **iNamedRequestHandler**. Det støtter implementering av "kort finnes"-betalingsintegreringer som bruker en betalingsterminal. Hvis du vil ha mer informasjon om **iNamedRequestHandler**-grensesnittet, kan du se [Opprette en betalingsintegrering for en betalingsterminal](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
+Det andre settet med APIer heter **iNamedRequestHandler**. Det støtter implementering av "kort finnes"-betalingsintegreringer som bruker en betalingsterminal. Hvis du vil ha mer informasjon om **iNamedRequestHandler**-grensesnittet, kan du se [Opprette en betalingsintegrering for en betalingsterminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
 
 ### <a name="setup-and-configuration"></a>Oppsett og konfigurasjon
 
 Følgende komponenter og oppsettrinn kreves:
 
-- **eCommerce-integrering:** En integrering med Commerce er nødvendig for å støtte scenarier der en ordre kommer fra en nettbutikkfasade. Hvis du vil ha mer informasjon om Retail e-Commerce-SDK-en, kan du se [SDK for e-Commerce-plattformen](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I et demonstrasjonsmiljø støtter referansebutikkfasaden omnikanalbetalingsscenarioer. 
-- **Konfigurasjon av onlinebetalinger:** Oppsettet for Internett-kanalen må inkludere en betalingskobling som er oppdatert for å støtte omnikanalbetalinger. Alternativt kan en medfølgende betalingskobling brukes. Hvis du vil ha informasjon om hvordan du konfigurerer Adyen-betalingskoblingen for nettbutikker, se [Adyen-betalingskobling](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). I tillegg til eCommerce-oppsettrinnene som beskrives i dette emnet, må parameteren **Tillat lagring av betalingsinformasjon i e-handel** settes til **sann** i innstillingene for Adyen-koblingen. 
+- **eCommerce-integrering:** En integrering med Commerce er nødvendig for å støtte scenarier der en ordre kommer fra en nettbutikkfasade. Hvis du vil ha mer informasjon om Retail e-Commerce-SDK-en, kan du se [SDK for e-Commerce-plattformen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). I et demonstrasjonsmiljø støtter referansebutikkfasaden omnikanalbetalingsscenarioer. 
+- **Konfigurasjon av onlinebetalinger:** Oppsettet for Internett-kanalen må inkludere en betalingskobling som er oppdatert for å støtte omnikanalbetalinger. Alternativt kan en medfølgende betalingskobling brukes. Hvis du vil ha informasjon om hvordan du konfigurerer Adyen-betalingskoblingen for nettbutikker, se [Adyen-betalingskobling](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). I tillegg til eCommerce-oppsettrinnene som beskrives i dette emnet, må parameteren **Tillat lagring av betalingsinformasjon i e-handel** settes til **sann** i innstillingene for Adyen-koblingen. 
 - **Omnikanalbetalingskonfigurasjon:** I back office gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**. I kategorien **Omnikanal-betalinger** setter du alternativet **Bruk betalinger for omnikanal** til **Ja**. I Commerce versjon 10.0.12 og senere er denne innstillingen i arbeidsområdet **Funksjonsbehandling**. Velg funksjonen **Omnikanal-betalinger**, og klikk på **Aktiver nå**. 
 - **Betalingstjenester:** Telefonsenteret bruker standard betalingskobling på **Betalingstjenester**-siden for å behandle betalinger. Hvis du vil ha støtte for scenarioer som "Bestille på telefonsenter og hente i butikk", må denne standard betalingskoblingen være Adyen-betalingskoblingen eller en betalingskobling som oppfyller implementeringskravene for omnikanalbetalinger.
 - **EFT-tjeneste:** Betalinger via en betalingsterminal må defineres i hurtigfanen **EFT-tjeneste** i maskinvareprofilen. Adyen-koblingen støtter standard omnikanalbetalingsscenarier. Andre betalingskoblinger som støtter **iNamedRequestHandler**-grensesnittet, kan også brukes hvis de støtter omnikanalbetalinger.
@@ -221,7 +222,7 @@ Enkelte kort kan ikke brukes til omnikanalbetalinger fordi de ikke støtter utst
 
 ### <a name="using-a-different-card"></a>Bruke et annet kort
 
-En kunde som kommer til butikken for ordreplukking, har muligheten til å bruke et annet kort. Når kassereren mottar meldingen **Bruk tilgjengelig betalingsmåte** når ordren plukkes, kan kassereren spørre om kunden ønsker å bruke det samme kortet. Hvis kunden har mistet kortet som ble brukt til å opprette ordren, og vil betale for ordren ved å bruke et annet kort, kan kassereren velge **Bruk en annen betalingsmåte**. Hvis kunden senere kommer tilbake for å hente flere varer for den samme ordren, og hvis den opprinnelige kortautorisasjonen fremdeles er gyldig, kan kassereren på nytt spørre om kunden ønsker å bruke dette kortet.
+En kunde som kommer til butikken for ordreplukking, har muligheten til å bruke et annet kort. Når kassereren mottar meldingen **Bruk tilgjengelig betalingsmåte** når ordren plukkes, kan han eller hun spørre om kunden ønsker å bruke det samme kortet. Hvis kunden har mistet kortet som ble brukt til å opprette ordren, og vil betale for ordren ved å bruke et annet kort, kan kassereren velge **Bruk en annen betalingsmåte**. Hvis kunden senere kommer tilbake for å hente flere varer for den samme ordren, og hvis den opprinnelige kortautorisasjonen fremdeles er gyldig, kan kassereren på nytt spørre om kunden ønsker å bruke dette kortet.
 
 ### <a name="invalid-authorizations"></a>Ugyldige godkjenninger
 
@@ -233,10 +234,7 @@ Når en ordre som har flere betalingsmidler og flere linjer, blir plukket, motta
 
 ## <a name="related-topics"></a>Relaterte emner
 
-- [Vanlige spørsmål om betalinger](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](./cpe-bopis.md)
+- [Vanlige spørsmål om betalinger](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

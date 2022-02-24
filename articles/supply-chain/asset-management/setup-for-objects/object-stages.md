@@ -1,10 +1,12 @@
 ---
 title: Livssyklustilstander for aktiva
 description: Dette emnet forklarer livssyklustilstander for aktiva og livssyklusmodeller i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722469"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016558"
 ---
 # <a name="asset-lifecycle-states"></a>Livssyklustilstander for aktiva
 
@@ -61,12 +63,9 @@ Når du har opprettet de nødvendige livssyklustilstandene for aktiva, kan du de
 
 5. I hurtigfanen **Livssyklustilstander** velger du livssyklustilstandene for aktiva som skal inkluderes i livssyklusmodellen for aktiva:
 
-    - Hvis du vil bruke en livssyklustilstand for modellen, velger du den i delen **Gjenværende livssyklustilstander**, og deretter velger du pil høyre ![Pil høyre.](media/15-setup-for-objects.png) for å flytte den til delen **Valgte livssyklustilstander**.
-    - Hvis du vil bruke alle tilgjengelige livssyklustilstander for modellen, velger du **Alle tilgjengelige livssyklustilstander**-knappen ![Alle tilgjengelige livssyklustilstander.](media/20-setup-for-objects.png). Alle livssyklustilstander overføres til delen **Valgte livssyklustilstander**.
-    - Hvis du vil fjerne en livssyklustilstand fra modellen, velger du den i delen **Valgte livssyklustilstander**, og deretter velger du pil venstre ![Pil venstre.](media/16-setup-for-objects.png) for å flytte den til delen **Gjenværende livssyklustilstander**.
+    - Hvis du vil bruke en livssyklustilstand for modellen, velger du den i delen **Gjenværende livssyklustilstander**, og deretter velger du pil høyre ![Pil høyre](media/15-setup-for-objects.png) for å flytte den til delen **Valgte livssyklustilstander**.
+    - Hvis du vil bruke alle tilgjengelige livssyklustilstander for modellen, velger du **Alle tilgjengelige livssyklustilstander**-knappen ![Alle tilgjengelige livssyklustilstander](media/20-setup-for-objects.png). Alle livssyklustilstander overføres til delen **Valgte livssyklustilstander**.
+    - Hvis du vil fjerne en livssyklustilstand fra modellen, velger du den i delen **Valgte livssyklustilstander**, og deretter velger du pil venstre ![Pil venstre](media/16-setup-for-objects.png) for å flytte den til delen **Gjenværende livssyklustilstander**.
 
 6. Velg **Oppdateringer av livssyklustilstander** for å definere livssyklustilstander for aktiva som kan følge en valgt livssyklustilstand.
 7. Du bruker hurtigfanen **Aktiva** hvis du håndterer aktiva du mottar for reparasjon. I delen **Innkommende/utgående** kan du velge livssyklustilstander for aktiva for å angi arbeidsflyten for et aktivum du mottar for reparasjon. Hvis du tilbyr lån av aktiva til kunder eller avdelinger i **Lån**-delen, kan du velge livssyklustilstander for lånte aktiva.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

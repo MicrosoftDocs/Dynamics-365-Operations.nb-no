@@ -2,9 +2,11 @@
 title: Generere dokumenter som inneholder programdata
 description: 'For å fullføre trinnene i denne fremgangsmåten, må du først fullføre prosedyren "ER generere dokumenter med oppdatering av programdata (del 4: endre format)".'
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0166e0afb542baea063f2d563e1eaeb0cdbfd6f62d77898fd9916afbeca90e48
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2643c85e64373e30aab16be686c50cd224490fe
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726243"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684481"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generere dokumenter som inneholder programdata
 
@@ -76,6 +78,3 @@ Se gjennom den genererte XML-filen.
 6. Lukk siden.
 7. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

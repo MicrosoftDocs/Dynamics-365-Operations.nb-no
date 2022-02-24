@@ -2,9 +2,11 @@
 title: Power BI-innholdet Organisasjonsopplæring
 description: Dette emnet beskriver Finance and Operations – Organisasjonsopplæringsinnhold for Power BI.
 author: jcart1106
+manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cd48c12ea3ea31904c437f678888a51e5381cfcfbeef0e1c709858b0c6cb857d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bbbb3069ffc43062e456721e189f671398514cfd
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763554"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685841"
 ---
 # <a name="organizational-training-power-bi-content"></a>Power BI-innholdet Organisasjonsopplæring
 
@@ -55,6 +57,3 @@ Programdata brukes til å fylle ut rapporter i Organisasjonsopplæring-innholdsp
 | Training\_Position        | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Fornavn, etternavn og fullt navn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Tittel og ansiennitetsdato                                         | Training\_CourseAttendees |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

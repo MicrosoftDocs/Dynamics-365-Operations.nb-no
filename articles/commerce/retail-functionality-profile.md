@@ -2,30 +2,36 @@
 title: Opprette en funksjonalitetsprofil for Retail
 description: Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9043486050e230fd9ecdefaaa65427264c8e40f5c3e8602c923bbede595a7243
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717628"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414514"
 ---
 # <a name="create-a-retail-functionality-profile"></a>Opprette en funksjonalitetsprofil for Retail
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Funksjonalitetsprofilen for handel inneholder ulike innstillinger som brukes for Internett-kanaler. Hver kanal må angi en funksjonalitetsprofil.
 
@@ -47,7 +53,7 @@ Hvis du vil opprette en funksjonalitetsprofil, gjør du følgende.
   
 Bildet nedenfor viser et eksempel på en funksjonalitetsprofil.
   
-![Eksempel på funksjonalitetsprofil.](media/retail-functionality-profile.png)
+![Eksempel på funksjonalitetsprofil](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -58,6 +64,3 @@ Bildet nedenfor viser et eksempel på en funksjonalitetsprofil.
 [Oversikt over skjermoppsett](pos-screen-layouts.md)       
 
 [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

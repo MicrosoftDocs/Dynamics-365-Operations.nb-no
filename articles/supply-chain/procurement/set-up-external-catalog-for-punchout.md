@@ -1,10 +1,12 @@
 ---
 title: Definere en ekstern katalog for PunchOut e-Procurement
 description: Dette emnet beskriver bruken av en ekstern katalog for å samle inn tilbudsinformasjon fra en leverandør og legge den til i en rekvisisjon.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f1065c68723baa395bc06be6313e45a44661ea3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566918"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016383"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Definere en ekstern katalog for PunchOut e-Procurement
 
@@ -110,5 +112,3 @@ Hvis et produkt fra den eksterne leverandørkatalogen er forespurt, kan den ekst
 
 - [Kjøp av cXML-forbedringer](purchasing-cxml-enhancements.md)
 - [Bruke eksterne kataloger for PunchOut e-Procurement](use-external-catalogs-for-punchout.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

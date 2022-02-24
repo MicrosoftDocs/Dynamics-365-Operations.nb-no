@@ -2,31 +2,35 @@
 title: Oversikt over produktinformasjon
 description: Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene.
 author: t-benebo
+manager: tfehr
 ms.date: 06/01/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace, EcoResProductVariantPerCompanyImagePart, EcoResProductRelationType,EcoResProductAvailabilityPart,  EcoResProductReleasedSelect, EcoResProductLookup, EcoResProductVariantsPendingReleaseFormPart, EcoResProductSearchLookup, EcoResProductNumberRename, EcoResDimensionBasedConfigWorkspace, EcoResProductVariantImagePart, EcoResProductImagePart, EcoResProductVariantsPerCompanyPart, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleaseSessions, EcoResProductVariantMaintainWorkspaceConfiguration, EcoResProductProcessManufacturingWorkspaceConfiguration, EcoResProductMasterVariantsPart, EcoResProductDiscreteManufacturingWorkspaceConfiguration, EcoResProductVariantAvailabilityPart, EcoResProductInformationFactBox, EcoResProductLookupTest, EcoResProductImageTest, EcoResProductReleasedRecentlyCreatedFormPart, EcoResPhysicalProductDimensions, PdsMRCRegulatedListItem, EcoResProductAvailabilityPart, PdsMRCRestrictionList, InventItemIdLookupAllocationId, EcoResProductAvailability, EcoResProductEntityAttributeTableFieldAssociation, EcoResProductImagePart, EcoResProductRelation, EcoResProductReleaseAddProduct, EcoResProductPerCompanyListPage, EcoResProductParameters, PdsMRCRestrictedItemByCountryState, EngChgCasePreview, InventTablePreview, PdsMRCItemDetails, EngChgCaseAssociate, PdsMRCCustomerHistory, PdsMRCVendorHistory, PdsMRCRestrictedCountryStateByItem, InventItemIdGroupLookup, InventLocationLookup, PdsMRCValidityIntervalbyCountry, PdsMRCValidityIntervalbyCountry, PdsMRCEventTracker, PdsMRCReportingCountry, PdsMRCDocument, PdsMRCReportingList, PdsMRCItemCAS, GraphicsTestForm, EngChgPicklist
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063322"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527392"
 ---
 # <a name="product-information-overview"></a>Oversikt over produktinformasjon
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene. 
 
@@ -55,7 +59,7 @@ Et produkt er først og fremst definert av produktnummer, navn og beskrivelse. A
 
 Produktdefinisjonen kan opprettes i Supply Chain Management. Den kan også importere fra administrasjon av produktlivssyklus (PLM), administrasjon av produktdata (PDM) eller behandling av produktinformasjon (PIM). Når det brukes mer enn én forekomst av Supply Chain Management, brukes én forekomst vanligvis som samme mal for produktdataene for alle andre forekomster. Denne metoden støttes av en rekke dataenheter som muliggjør eksport og import av produktdefinisjonsdata fra én forekomst til en annen.
 
-For å støtte distribusjonen av produktdata for mange forekomster lar Supply Chain Management deg bruke Microsoft Dataverse. Produktdefinisjonene kan eksporteres fra en forekomst av Supply Chain Management til Microsoft Dataverse. Produktdefinisjonene kan deretter brukes til å klargjøre andre forretningsprogrammer, for eksempel Dynamics 365 Sales, med produktdata.
+For å støtte distribusjonen av produktdata for mange forekomster lar Supply Chain Management deg bruke Common Data Service. Produktdefinisjonene kan eksporteres fra en forekomst av Supply Chain Management til Common Data Service. Produktdefinisjonene kan deretter brukes til å klargjøre andre forretningsprogrammer, for eksempel Dynamics 365 Sales, med produktdata.
 
 Legg merke til at produktopplysninger endres hver dag i dynamiske og fleksible organisasjoner. Vedlikehold av nøyaktige og faktiske produktdata er derfor en viktig forretningsprosess i seg selv.
 
@@ -92,6 +96,3 @@ Arbeidsområdet består av et sammendrag av fliser og to lister. Listen **Åpne 
 ### <a name="manually-creating-a-new-released-product"></a>Manuell oppretting av et nytt frigitt produkt
 
 Du kan manuelt opprette et frigitt produkt i en enkelt kjøring, avhengig av organisasjonens forretningsprosesser og eventuelle regler for hvorvidt denne funksjonen skal brukes. Denne funksjonen oppretter et nytt produkt, og frigjør det automatisk til den gjeldende juridiske enheten. For å opprette et nytt produkt klikker du **Frigitte produkter** i arbeidsområdet **Vedlikehold av frigitt produkt** eller på listesiden **Frigitt produkt**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

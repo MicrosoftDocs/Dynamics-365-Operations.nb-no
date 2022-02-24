@@ -80,6 +80,3 @@ Hvis du har problemer med å postere jobber til LinkedIn, se [Feilsøke integrer
 [Finne kandidater med LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Feilsøke integrering med LinkedIn](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

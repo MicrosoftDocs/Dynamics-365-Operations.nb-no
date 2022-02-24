@@ -2,9 +2,11 @@
 title: Økonomisk avstemming i detaljhandelbutikker
 description: Dette emnet beskriver økonomisk avstemming i detaljhandelbutikker for salgssted for Microsoft Dynamics 365 Commerce.
 author: anpurush
+manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2afe967248136e9b658e1ee18053a54ab3f0d325c088a5eb2e522fac335c01f0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ddefcdc2b2bbb5fe25e9a87396802cbbbfef72c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752465"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965083"
 ---
-# <a name="financial-reconciliation-in-retail-stores"></a>Økonomisk avstemming i detaljhandelsbutikker
+# <a name="financial-reconciliation-in-retail-stores"></a>Økonomisk avstemming i detaljhandelbutikker
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 Commerce versjon 10.0.10 og tidligere versjoner er det funksjonalitet på salgsstedsklienten som leverer prosesser på slutten av dagen i detaljhandelbutikker, der selgere og butikkledere utfører operasjoner på slutten av dagen. De kan for eksempel utføre kasseoppgjør, lukke usporede skift, avstemme skifttransaksjoner og lukke skift. Det er imidlertid ingen funksjon i salgsstedet for å fullføre finansinformasjonen for skift, slik at den kan brukes til å postere økonomien i Commerce Headquarters. Butikkledere er vanligvis ansvarlige for å fullføre denne oppgaven. Før de kan godkjenne et skift, må de se gjennom informasjonen, foreta eventuelle rettelser som kreves, og fullføre totalene for det skiftet. De fullførte totalene skal deretter posteres i finansmoduler i Commerce Headquarters.
+I Microsoft Dynamics 365 Commerce, versjon 10.0.10 og tidligere versjoner er det funksjonalitet på salgsstedsklienten som leverer prosesser på slutten av dagen i detaljhandelbutikker, der selgere og butikkledere utfører operasjoner på slutten av dagen. De kan for eksempel utføre kasseoppgjør, lukke usporede skift, avstemme skifttransaksjoner og lukke skift. Det er imidlertid ingen funksjon i salgsstedet for å fullføre finansinformasjonen for skift, slik at den kan brukes til å postere økonomien i Commerce Headquarters. Butikkledere er vanligvis ansvarlige for å fullføre denne oppgaven. Før de kan godkjenne et skift, må de se gjennom informasjonen, foreta eventuelle rettelser som kreves, og fullføre totalene for det skiftet. De fullførte totalene skal deretter posteres i finansmoduler i Commerce Headquarters.
 
 I tillegg kan butikkledere i versjon 10.0.10 og tidligere versjoner gå gjennom og gjøre noen justeringer i utdragslinjer i Commerce Headquarters. Funksjonen er imidlertid begrenset, og butikkledere har sjelden tilgang til Commerce Headquarters-klienten. I tillegg kan du bare foreta finanshandelsutdrag og -justering når utdrag opprettes i Commerce Headquarters. Denne prosessen er imidlertid som regel en nattprosess. Derfor må butikkledere vente på skiftavloggingen når det opprettes finanshandelsutdrag i Commerce Headquarters.
 
@@ -59,6 +61,3 @@ Når det brukes fordeling av feedbasert postering, slik at posteringen av transa
 Detaljer om økonomisk avstemming for et skift synkroniseres til Commerce Headquarters ved hjelp av P-jobben.
 
 Finanshandelsutdrag i Commerce Headquarters kan ikke beregne totaler til å vise detaljene på utdragslinjene. I stedet brukes de avsluttende beløpene i salgsstedsklienten til å opprette og postere finanshandelsutdrag.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

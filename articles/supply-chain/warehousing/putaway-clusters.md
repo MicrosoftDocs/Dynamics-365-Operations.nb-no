@@ -2,22 +2,25 @@
 title: Plasseringsgrupper
 description: Plasseringsgrupper tilbyr en måte for å plukke flere nummerskilter samtidig og deretter ta dem med for plassering på forskjellige steder. De kan være veldig nyttige for detaljhandelsfirmaer, der nummerskilter vanligvis ikke er fulle paller med lager.
 author: Mirzaab
+manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c3496d43fa3791f765abfb1eb25c45f1f21b972f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573015"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512336"
 ---
 # <a name="putaway-clusters"></a>Plasseringsgrupper
 
@@ -228,7 +231,7 @@ Dette scenarioet simulerer behandling av plasseringsgruppe.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Motta og sorter lageret i en gruppe
 
-1. Logg på mobilappen Lagerstyring som en bruker som er konfigurert for lager *61*.
+1. Logg på lagerappen som en bruker som er konfigurert for lager *61*.
 1. I hovedmenyen velger du **Innkommende**.
 1. Velg **Motta og sorter gruppe** på **Innkommende**-menyen.
 1. I **Ponum**-feltet angir du bestillingsnummeret.
@@ -270,7 +273,7 @@ Før varene i gruppen kan plasseres, må gruppen lukkes.
 
 #### <a name="put-the-cluster-away"></a>Plasser gruppen
 
-1. Logg på mobilappen Lagerstyring som en bruker som er konfigurert for lager *61*.
+1. Logg på lagerappen som en bruker som er konfigurert for lager *61*.
 1. I hovedmenyen velger du **Innkommende**.
 1. I menyen **Innkommende** velger du **Gruppeplassering**.
 1. Velg **Gruppe-ID**, og angi gruppe-ID-en du angav tidligere for den lukkede gruppen.
@@ -284,7 +287,7 @@ Før varene i gruppen kan plasseres, må gruppen lukkes.
 
     Du har standardalternativer for å overstyre eller overføre dette trinnet.
 
-    ![Gruppeplassering: plasser-side.](media/Cluster_putaway-Put.png "Gruppeplassering: plasser-side")
+    ![Gruppeplassering: plasser-side](media/Cluster_putaway-Put.png "Gruppeplassering: plasser-side")
 
 1. Velg **OK** for å bekrefte plasseringen av gruppen.
 
@@ -293,6 +296,3 @@ Før varene i gruppen kan plasseres, må gruppen lukkes.
 ## <a name="notes-and-tips"></a>Merknader og tips
 
 For tilfeller der gruppe-ID-en blir det overordnede nummerskiltet for en nestet pall, gis plasseringsposisjonen automatisk når gruppe-ID-en skannes. Det må ikke skannes flere nummerskilter, selv om det er angitt manuell generering av nummerskilter.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

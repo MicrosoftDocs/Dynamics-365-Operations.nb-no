@@ -1,10 +1,12 @@
 ---
 title: Fjernede eller avskrevne funksjoner i tidligere versjoner
-description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner.
+description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 author: sericks007
-ms.date: 02/16/2021
+manager: AnnBe
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,21 +16,21 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063243"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679962"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
-> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra økonomi- og driftsapper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
+> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra Finance and Operations-apper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
 
 Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 
@@ -37,7 +39,7 @@ Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
+Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
 
@@ -84,7 +86,7 @@ Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske 
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Utgått: Innen 1. oktober 2020 planlegger vi å ikke lenger støtte **setUtcString()**-metoden. Utviklere bør i stedet bruke **setUtcDateTime()**-metoden. |
 
-### <a name="blocklist-report-it--feature-reference-it-00001"></a>Blokkeringslisterapport (IT) – funksjonsreferanse IT-00001
+### <a name="blacklist-report-it--feature-reference-it-00001"></a>Svartelisterapport (IT) – funksjonsreferanse IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +94,7 @@ Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske 
 | **Erstattet med en annen funksjon?**   | Nei |
 | **Berørte produktområder**         | Italiensk lokalisering |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Vi planlegger å slutte å støtte denne rapporten innen 1. oktober 2020. |
+| **Status**                         | Utgått: Innen 1. oktober 2020 planlegger vi å ikke lenger støtte **Svartelisterapport (IT) – funksjonsreferanse IT-00001**. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Lokal avgiftsrapport – funksjonsreferanse IT-00003
 
@@ -104,39 +106,6 @@ Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske 
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Utgått: Innen 1. oktober 2020 planlegger vi å ikke lenger støtte **Lokal avgiftsrapport – funksjonsreferanse IT-00003**. |
 
-## <a name="october-2019-deprecation-announcement"></a>Avskrivningskunngjøring for oktober 2019
-
-### <a name="flowchart-diagrams-in-business-process-modeler"></a>Flytskjemadiagrammer for Forretningsprosessmodelerer
-
-<table>
-<tbody>
-<tr>
-<td><strong>Årsak til avskrivning/fjerning</strong></td>
-<td>Vi avskriver flytskjemakomponenten i BPM (Forretningsprosessmodelerer), fordi eldre utforming forårsaket lav bruk.</td>
-</tr>
-<tr>
-<td><strong>Erstattet med en annen funksjon?</strong></td>
-<td>Nei</td>
-</tr>
-<tr>
-<td><strong>Berørte områder</strong></td>
-<td>Forretningsprosessmodelerer</td>
-</tr>
-<tr>
-<td><strong>Status</strong></td>
-<td>Avskrevet: Komponenten flytdiagram i BPM forventes å bli fjernet i 2020. Følgende funksjonalitet vil være utilgjengelig:
-<ul>
-<li>Alle flytskjemaer vil være skrivebeskyttede og ikke tilgjengelige for redigering. Figuregenskapene som er knyttet til flytskjemaaktiviteter, vil heller ikke være tilgjengelige. Disse flytskjemaene inneholder både standard flytskjemaer som genereres automatisk og tilpassede flytskjemaer som endres basert på disse standard flytskjemaene.</li>
-<li>Prosesstrinnene vil være skrivebeskyttede og ikke tilgjengelige for redigering.</li>     
-<li>Den eldre funksjonen for tilpassings-/gapanalyse vil ikke være tilgjengelig. Derfor blir ingen gapliste automatisk opprettet eller tilgjengelig for eksport.
-<p><strong>Merk:</strong> Denne funksjonen ble tidligere avskrevet og erstattet av Microsoft Azure DevOps-integrasjoner.</p>
-</li>
-<li>Versjonsloggen for flytskjemaet vil ikke være tilgjengelig.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 med Platform update 29
 
@@ -180,7 +149,7 @@ Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Hodejustering med andre Dynamics- og Office-produkter. Hvis du vil ha mer informasjon, kan du se [Oppdatert navigasjonsfelt som justeres etter Office-hodet](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Årsak til avskrivning/fjerning** | Hodejustering med andre Dynamics- og Office-produkter. Hvis du vil ha mer informasjon, kan du se [Oppdatert navigasjonsfelt som justeres etter Office-hodet](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Erstattet med en annen funksjon?**   | Fra og med plattformoppdatering 24 ble et navigasjonsfelt med ny design og søkefunksjon introdusert. |
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
@@ -194,7 +163,7 @@ Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Eldre virkemåte for standardhandlinger i rutenett fører til at en uventet kolonne har standardhandlingskobling etter at rutenettkolonner er omorganisert via tilpasning. Den nye funksjonen for treg standardhandling retter opp dette. Hvis du vil ha mer informasjon, se [Trege standardhandlinger i rutenett](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Årsak til avskrivning/fjerning** | Eldre virkemåte for standardhandlinger i rutenett fører til at en uventet kolonne har standardhandlingskobling etter at rutenettkolonner er omorganisert via tilpasning. Den nye funksjonen for treg standardhandling retter opp dette. Hvis du vil ha mer informasjon, se [Trege standardhandlinger i rutenett](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Erstattet med en annen funksjon?**   | Fra Platform update 21 ble en funksjon for "trege standardhandlinger" innført. Denne funksjonen kan aktiveres på **Alternativer for klientytelse**-siden. |
 | **Berørte produktområder**         | Rutenett i webklienten |
 | **Distribusjonsalternativ**              | Alle |
@@ -205,7 +174,7 @@ Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske 
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | "Er en av"-filtreringsopplevelse gikk gjennom en ny utforming i Platform update 22, og planen er at dette skal være eneste "er en av"-filtreringsopplevelse. |
-| **Erstattet med en annen funksjon?**   | Fra Platform update 22 ble en forbedret "er en av"-filtreringsopplevelse tilgjengelig på **Alternativer for klientytelse**-siden. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelse](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Erstattet med en annen funksjon?**   | Fra Platform update 22 ble en forbedret "er en av"-filtreringsopplevelse tilgjengelig på **Alternativer for klientytelse**-siden. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Fra april 2020 blir den forbedrede "er en av"-opplevelsen standard virkemåte, uten en mekanisme for å gå tilbake til den gamle virkemåten. |
@@ -216,7 +185,7 @@ Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten ha
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen aktiveres alltid når parameteren er fjernet. |
-| **Erstattet med en annen funksjon?**   | Nei. Funksjonen for å støtte prosjektbaserte salgsordrer som har flere finansieringskilder, vil alltid være aktivert.   |
+| **Erstattet med en annen funksjon?**   | Nr. Funksjonen for å støtte prosjektbaserte salgsordrer som har flere finansieringskilder, vil alltid være aktivert.   |
 | **Berørte produktområder**         |Parameteren **Tillat salgsordrer for prosjekter med flere finansieringskilder** blir fjernet. Fremgangsmåtene nedenfor endres når parameteren blir fjernet: **ctrlSalesOrderTable**-metoden i **ProjStatusType**-klassen, **valider**-metoden for **ProjId**-feltet og **kjør**-metoden i **SalescreateOrder**-skjemaet. De følgende metodene avskrives når parameteren blir fjernet: **IsSalesOrderAllowedForMultipleFundingSources** i **ProjTable**-tabellfilen, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled**-metoden i **ProjTable**-tabellfilen, **AllowSalesOrdersForMultipleFundingSources**-datafeltet i **ProjParameters**-skjemaet og **ProjParameterEntity**-filer, **IsAssociatedToMultipleFundingSourcesContract** privat metode i **ProjTable**-tabellfilen. |
 | **Distribusjonsalternativ**              | Alle  |
 | **Status**                         | Avskrivingen planlegges for april 2020-frigivelsesbølgen. |
@@ -262,7 +231,7 @@ Støtte for opprettelse av prosjektbaserte salgsordrer der prosjektkontrakten ha
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Når du bruker funksjonen **Gi primærnøkkelen nytt navn** til å endre Itemid for et frigitt produkt, oppdateres bare direkte referanser til sekundærnøkkel. Alle andre referanser til det frigitte produktet, for eksempel fra produksjonsordrer, vil beholde det gamle ItemId. Det kan derfor være inkonsekvente data som til slutt vil blokkere forretningsprosesser. |
-| **Erstattet med en annen funksjon?**   | Nei. |
+| **Erstattet med en annen funksjon?**   | Nr. |
 | **Berørte produktområder**         | Behandling av produktinformasjon |
 | **Distribusjonsalternativ**              | Alle  |
 | **Status**                         | Fjernet fra og med Finance and Operations 10.0.0 med Platform update 24.|
@@ -302,7 +271,7 @@ Innebygde nøkkelytelsesindikatorer (KPIer) kan modelleres i Visual Studio av en
 | **Erstattet med en annen funksjon?**   | Advarselen vil bli erstattet av en kompileringsfeil i fremtiden. |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Advarselen er en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av økonomi- og driftsapper. |
+| **Status**                         | Avskrevet: Advarselen er en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper. |
 
 #### <a name="complete-list"></a>Fullstendig liste
 Hvis du vil ha tilgang til den fullstendige listen over APIer som kan avskrives, kan du se [Avskriving av metoder og metadataelementer](deprecation-deletion-apis.md).
@@ -360,26 +329,16 @@ Funksjon for å opprette maler for nye registre for fortjenesteavgift. Denne fun
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen er ikke kompatibel med Finance and Operations-utvidelsesmodellen. |
-| **Erstattet med en annen funksjon?**   | Nei |
-| **Berørte produktområder**         | Mva |
+| **Erstattet med en annen funksjon?**   | Nr. |
+| **Berørte produktområder**         | Avgift |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Fjernet fra og med Finance and Operations 8.1 med Platform update 20. |
 
-### <a name="payroll-and-human-resources-for-russia"></a>Lønn og personale for Russland
-Landsspesifikk modul for Russland for behandling av informasjon om stabsadministrasjon, timeregistreringsdetaljer for ansatte, lønnsregnskap og oppretting av lønnsoppgaver. 
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Lønn er ikke inkludert i det globale strategiske fokuset i Dynamics 365-porteføljen. Partnere og ISV-er står best stilt til å tilby lønnsfunksjonalitet som samsvarer med lokale forskrifter og skatteoppdateringer.|
-| **Erstattet med en annen funksjon?**   | Nei|
-| **Berørte produktområder**         | Russisk administrasjon av lønn og personale |
-| **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er en av de fremtidige oppdateringene for versjon 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med Platform update 15
 Ingen funksjoner er fjernet eller avskrevet med denne versjonen. Plattformoppdatering 15 er kumulativ og inneholder nye eller endrede funksjoner fra plattformoppdatering 13, plattformoppdatering 14 og plattformoppdatering 15.
 
-## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise Edition 7.3 med Platform update 12
+## <a name="finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Finance and Operations, Enterprise edition 7.3 med Platform update 12
 
 ### <a name="personalized-product-recommendations"></a>Personlige produktanbefalinger 
 Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktanbefalinger på en salgsstedsenhet. Hvis du vil ha mer informasjon, kan du se [Oversikt over produktanbefalinger](../../../commerce/product-recommendations.md).  
@@ -387,7 +346,7 @@ Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktan
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Vi fjerner gjeldende versjon av produktanbefalingstjenesten fordi vi utformer denne funksjonen på nytt med en bedre algoritme og nyere detaljhandelsorienterte funksjoner.  |
-| **Erstattet med en annen funksjon?**   | Nei. Etter våren 2018 planlegger vi imidlertid å få tilbake denne funksjonen for å dra nytte av en ny anbefalingstjeneste.   |
+| **Erstattet med en annen funksjon?**   | Nr. Etter våren 2018 planlegger vi imidlertid å få tilbake denne funksjonen for å dra nytte av en ny anbefalingstjeneste.   |
 | **Berørte produktområder**         | Personlige produktanbefalinger i POS                                                    |
 | **Distribusjonsalternativ**              | Alle                                                                                      |
 | **Status**                         |Fjernet fra og med 15. februar 2018. Dette påvirker kunder som kjører Dynamics 365 for Operations 1611 og senere.  |
@@ -401,7 +360,7 @@ Muligheten til å introdusere egendefinerte funksjoner som skal brukes i ER-uttr
 | **Erstattet med en annen funksjon?**   | Ingen. Når det er behov for en ny innebygd funksjon, må en ny utvidelsesforespørsel adresseres til ER-rammeverksteamet.<br><br>Som en midlertidig løsning mens den forespurte funksjonen er under utvikling i ER-teamet, kan den nødvendige logikken programmeres som en metode for en egendefinert programklasse. Denne metoden kan være tilgjengelig i et ER-uttrykk som en egenskap i den tilføyde ER-datakilden for **Program\Klasse**-typen som refererer til denne egendefinerte programklassen.  |
 | **Berørte produktområder**         | Rammeverk for elektronisk rapportering                                                      |
 | **Distribusjonsalternativ**              | Alle                                                                                      |
-| **Status**                         | Fjernet fra og med Finance and Operations, Enterprise Edition 7.3.    |
+| **Status**                         | Fjernet fra og med Finance and Operations, Enterprise edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Lager per varegruppe- og Lager per lagerdimensjon-aldersfordelte saldolister
 
@@ -455,7 +414,7 @@ Disse avgiftene har blitt sammenfattet i indisk GST.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Årsak til fjerning eller avskrivning**       | Mangel på kundebruk                                                  |
-| **Erstattet med en annen funksjon?**            | Nei                                                                      |
+| **Erstattet med en annen funksjon?**            | Antall                                                                      |
 | **Berørte produktområder**                  | Indisk kildeskatt                                                  |
 | **Distribusjonsalternativ**                       | Alle moduler                                                                    |
 | **Status**                                  | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.   |        
@@ -467,7 +426,7 @@ Brukere kan laste ned dette fra den offentlige portalen.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Årsak til fjerning eller avskrivning**       | Mangel på kundebruk                                                  |
-| **Erstattet med en annen funksjon?**            | Nei                                                                      |
+| **Erstattet med en annen funksjon?**            | Antall                                                                      |
 | **Berørte produktområder**                  | Indisk kildeskatt                                                  |
 | **Distribusjonsalternativ**                       | Alle moduler                                                                   |
 | **Status**                                  | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.     |    
@@ -478,7 +437,7 @@ Brukere kan laste ned dette fra den offentlige portalen.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Årsak til fjerning eller avskrivning**       | Mangel på kundebruk                                                  |
-| **Erstattet med en annen funksjon?**            | Nei                                                                      |
+| **Erstattet med en annen funksjon?**            | Antall                                                                      |
 | **Berørte produktområder**                  | Importer og eksporter                                                       |
 | **Distribusjonsalternativ**                       | Alle moduler                                                                    |
 | **Status**                                  | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.  |    
@@ -492,13 +451,13 @@ Fra 15. februar 2018 vil forhandlere ikke lenger kunne vise personlige produktan
 |  &nbsp; |  &nbsp;|
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Vi fjerner gjeldende versjon av produktanbefalingstjenesten fordi vi utformer denne funksjonen på nytt med en bedre algoritme og nyere detaljhandelsorienterte funksjoner.  |
-| **Erstattet med en annen funksjon?**   | Nei. Etter våren 2018 planlegger vi imidlertid å få tilbake denne funksjonen for å dra nytte av en ny anbefalingstjeneste.   |
+| **Erstattet med en annen funksjon?**   | Nr. Etter våren 2018 planlegger vi imidlertid å få tilbake denne funksjonen for å dra nytte av en ny anbefalingstjeneste.   |
 | **Berørte produktområder**         | Personlige produktanbefalinger i POS                                                    |
 | **Distribusjonsalternativ**              | Alle                                                                                      |
 | **Status**                         |Fjernet fra og med 15. februar 2018. Dette påvirker kunder som kjører Dynamics 365 for Retail 7.2 og senere. |
 
 
-## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise Edition juli 2017 med Platform update 8
+## <a name="finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Finance and Operations, Enterprise edition juli 2017 med plattformoppdatering 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Valutaomregning for regnskap og rapporteringsvalutaer
 
@@ -519,7 +478,7 @@ Portal for lagermobilenheter (WMDP) var en frittstående komponent som var bereg
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Duplikat funksjonalitet.       |
-| **Erstattet med en annen funksjon?**   | Ja. Denne funksjonen er erstattet med Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Oversikt over Installere og konfigurere lagerappen](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Erstattet med en annen funksjon?**   | Ja. Funksjonen har blitt erstattet med en annen Finance and Operations - Warehousing. Hvis du vil ha mer informasjon om oppsett og forutsetninger, kan du se [Oversikt over Installere og konfigurere lagerappen](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Berørte produktområder**         | Lagerstyring, transportstyring     |
 | **Distribusjonsalternativ**              | Portal for lagermobilenheter (WMDP) var en frittstående komponent som var beregnet for selvdrevet lokal distribusjon.               |
 | **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er 4. kvartal 2019.   |
@@ -531,7 +490,7 @@ En samsvarsregele ble brukt til å velge og merke et bankdokument når dokumente
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Begrenset bruk.                                                                         |
-| **Erstattet med en annen funksjon?**   | Nei. Kolonnefiltrering skal brukes til å finne dokumenter for avstemming. |
+| **Erstattet med en annen funksjon?**   | Nr. Kolonnefiltrering skal brukes til å finne dokumenter for avstemming. |
 | **Berørte produktområder**         | Kontant- og bankbehandling                                                               |
 | **Distribusjonsalternativ**              | Alle                                                                                    |
 | **Status**                         | Fjernet fra og med juli 2017.                                                               |
@@ -578,7 +537,7 @@ Dette verktøyet brukes når en kontoplan i Spania krever store endringer. Bruke
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Begrenset bruk                                                  |
-| **Erstattet med en annen funksjon?**   | Nei                                                             |
+| **Erstattet med en annen funksjon?**   | Antall                                                             |
 | **Berørte produktområder**         | Økonomimodul                                                 |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. |
 
@@ -622,7 +581,7 @@ EDIVAT er en foreldet belgisk standard for elektronisk deklarering via sikker e-
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonaliteten brukes ikke lenger.                           |
-| **Erstattet med en annen funksjon?**   | Nei                                                             |
+| **Erstattet med en annen funksjon?**   | Antall                                                             |
 | **Berørte produktområder**         | Økonomimodul                                                 |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. |
 
@@ -655,7 +614,7 @@ Et verktøy brukes for å konfigurere datainnsamling for regnskaps- og avgiftsra
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Begrenset bruk                                                                            |
-| **Erstattet med en annen funksjon?**   | Nei. Verktøyet vil bli erstattet av elektroniske rapporteringskonfigurasjoner i fremtidige versjoner. |
+| **Erstattet med en annen funksjon?**   | Nr. Verktøyet vil bli erstattet av elektroniske rapporteringskonfigurasjoner i fremtidige versjoner. |
 | **Berørte produktområder**         | Økonomi                                                                           |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.                           |
 
@@ -688,7 +647,7 @@ Isabel er rammeverket for elektroniske banktjenester i Europa og de facto standa
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Integrasjon med Isabel-klienten er avsluttet.   |
-| **Erstattet med en annen funksjon?**   | Nei. Betalingsformatene som brukes ikke lenger brukes erstattes av ISO20022 Betalingsformat for kredittoverføring for Belgia. |
+| **Erstattet med en annen funksjon?**   | Nr. Betalingsformatene som brukes ikke lenger brukes erstattes av ISO20022 Betalingsformat for kredittoverføring for Belgia. |
 | **Berørte produktområder**         | Leverandører     |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.    |
 
@@ -699,7 +658,7 @@ Denne funksjonen brukes til endringer i kontoplanen og regnskapsreglene i Spania
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Begrenset bruk                                                  |
-| **Erstattet med en annen funksjon?**   | Nei                                                             |
+| **Erstattet med en annen funksjon?**   | Antall                                                             |
 | **Berørte produktområder**         | Økonomimodul                                                 |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. |
 
@@ -765,7 +724,7 @@ Ytelsesstyring omfatter målstyring og integrasjon med ytelsesvurderinger.
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Ytelsesstyring ble endret, og antall målsider ble redusert for å forenkle prosessen.                 |
-| **Erstattet med en annen funksjon?**   | Nei. Mål er synlige for lederselvbetjeningsportalen, og endres og vises av lederen. |
+| **Erstattet med en annen funksjon?**   | Nr. Mål er synlige for lederselvbetjeningsportalen, og endres og vises av lederen. |
 | **Berørte produktområder**         | Forvaltning av menneskelig kapital       |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations versjon 1611.    |
 
@@ -787,7 +746,7 @@ Radiofrekvensidentifisering (RFID) er en datainnsamlingsteknikk som bruker elekt
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Lav kundebruk og begrenset funksjonssett.   |
-| **Erstattet med en annen funksjon?**   | Nei                                              |
+| **Erstattet med en annen funksjon?**   | Antall                                              |
 | **Berørte produktområder**         | Lagerstyring                            |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations 1611. |
 
@@ -798,7 +757,7 @@ Latvisk lovgivning angir bestemte regler for nummerering av salgsfakturaer. Funk
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fakturanummerering for delstat trenger ikke lenger å vedlikeholdes. Rapport om brukte fakturanumre er ikke lenger nødvendig. |
-| **Erstattet med en annen funksjon?**   | Nei       |
+| **Erstattet med en annen funksjon?**   | Antall       |
 | **Berørte produktområder**         | Kunder    |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.  |
 
@@ -860,7 +819,7 @@ Lønnsinformasjon i Personale
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Liten bruk                                                           |
-| **Erstattet med en annen funksjon?**   | Nei                                                                  |
+| **Erstattet med en annen funksjon?**   | Antall                                                                  |
 | **Berørte produktområder**         | Personale                                                     |
 | **Status**                         | Fjernet fra og med Dynamics 365 for Operations versjon 1611 |
 
@@ -883,7 +842,7 @@ En arbeidsflyt for behandling av opprettelsen av ansattes mål er en av flere ar
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Ytelsesforbedring        |
-| **Erstattet med en annen funksjon?**   | Nei                             |
+| **Erstattet med en annen funksjon?**   | Antall                             |
 | **Berørte produktområder**         | Leverandørreskontro               |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
@@ -916,7 +875,7 @@ Når konfigurasjonsnøkkelen **Stykklisteversjoner** ble deaktivert, ble stykkli
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Bruk av en konfigurasjonsnøkkel for å styre stykklisteversjoner kan ikke skaleres i et skymiljø. |
-| **Erstattet med en annen funksjon?**   | Nei                                                                                      |
+| **Erstattet med en annen funksjon?**   | Antall                                                                                      |
 | **Berørte produktområder**         | Behandling av produktinformasjon, Lagerstyring                                    |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                          |
 
@@ -927,7 +886,7 @@ Spesifikk betalingsmåte for brasilianske firmaer
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Støtte for den brasilianske Bordero-metoden for betalingsmåte er fjernet fra brasiliansk lokalisering |
-| **Erstattet med en annen funksjon?**   | Nei   |
+| **Erstattet med en annen funksjon?**   | Antall   |
 | **Berørte produktområder**         | Leverandører   |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. |
 
@@ -938,7 +897,7 @@ Utdrag for føderal skatt for ICMS-avgift
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Dette utdraget gjelder ikke lenger i enkelte delstater i Brasil. |
-| **Erstattet med en annen funksjon?**   | Nei. Brukere kan bruke det generelle elektroniske rapporteringsverktøyet for å konfigurere utdraget hvis det er nødvendig i bestemte situasjoner. |
+| **Erstattet med en annen funksjon?**   | Nr. Brukere kan bruke det generelle elektroniske rapporteringsverktøyet for å konfigurere utdraget hvis det er nødvendig i bestemte situasjoner. |
 | **Berørte produktområder**         | Regnskapsbøker    |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.   |
 
@@ -949,7 +908,7 @@ Utdrag for føderal skatt for ICMS-avgift
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Denne eventualitetsmetoden er ikke lenger tilgjengelig i alle delstater i Brasil |
-| **Erstattet med en annen funksjon?**   | Nei                                                                          |
+| **Erstattet med en annen funksjon?**   | Antall                                                                          |
 | **Berørte produktområder**         | Kunder                                                         |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.              |
 
@@ -1000,7 +959,7 @@ Overholdelsessenteret var et Enterprise Portal-område for administrasjon av kra
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Mangel på kundebruk. Microsoft SharePoint inkluderer samme funksjon som var tilgjengelig i overholdelsessenteret. |
-| **Erstattet med en annen funksjon?**   | Nei   |
+| **Erstattet med en annen funksjon?**   | Antall   |
 | **Berørte produktområder**         | Samsvar og interne kontroller  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
 
@@ -1011,7 +970,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen har blitt erstattet med en annen funksjon. |
-| **Erstattet med en annen funksjon?**   | Dataverse                                      |
+| **Erstattet med en annen funksjon?**   | Common Data Service                                      |
 | **Berørte produktområder**         | Connector for Dynamics                         |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.                           |
 
@@ -1029,7 +988,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Bunkegrupper ble brukt til å vise én eller flere bunker i faktaboksområdet. Det var begrenset opptak, og det var også ytelsesproblemer fordi en postendring i et overordnet skjema forårsaket én spørring per bunke i bunkegruppen. |
-| **Erstattet med en annen funksjon?**   | Nei      |
+| **Erstattet med en annen funksjon?**   | Antall      |
 | **Berørte produktområder**         | Alle moduler    |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.  |
 
@@ -1047,7 +1006,7 @@ Dette verktøyet ble brukt til å integrere viktige data fra Microsoft Dynamics 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Støtte for dansk sjekkformatoppsett er avsluttet, og rapporten har blitt fjernet fra DK-lokalisering. |
-| **Erstattet med en annen funksjon?**   | Nei    |
+| **Erstattet med en annen funksjon?**   | Antall    |
 | **Berørte produktområder**         | Alle moduler    |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.  |
 
@@ -1079,7 +1038,7 @@ Dynamics AX 2012 tillot lagring av vedlegg i databasen og delte filer. Ingen av 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Finner ingen bruk av funksjonen. |
-| **Erstattet med en annen funksjon?**   | Nei                                     |
+| **Erstattet med en annen funksjon?**   | Antall                                     |
 | **Berørte produktområder**         | Timeregistrering                    |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.         |
 
@@ -1099,7 +1058,7 @@ I Dynamics AX 2012 R3 kan Retail Modern POS kobles direkte til kanaldatabasen p�
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Direkte databasetilkobling krevde protokoller med lavere sikkerhet, og ble hovedsakelig brukt til å oppnå den høyeste ytelsen. På grunn av ytelses- og sikkerhetsforbedringene som er utført i Finance and Operations, fører denne funksjonen nå til flere problemer enn den løser. |
-| **Erstattet med en annen funksjon?**   | Nei. Nå støttes bare standard kommunikasjon for detaljhandelsserver.  |
+| **Erstattet med en annen funksjon?**   | Nr. Nå støttes bare standard kommunikasjon for detaljhandelsserver.  |
 | **Berørte produktområder**         | Kanaldatabase/Retail Modern POS   |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.  |
 
@@ -1137,7 +1096,7 @@ Denne funksjonaliteten leverte XBRL-utdata (eXtensible Business Reporting Langua
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Lav kundebruk og begrenset funksjonssett  |
-| **Erstattet med en annen funksjon?**   | Nei              |
+| **Erstattet med en annen funksjon?**   | Antall              |
 | **Berørte produktområder**         | Samsvar og interne kontroller, leverandører  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
@@ -1193,7 +1152,7 @@ Generering av forhåndsmerknad kan ikke kan utføres ved hjelp av et parti, men 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | XML-format for rapportering av tysk EU-salgsliste støttes ikke lenger. Bare ELMA5-tekstfilformatet kan brukes til å sende rapportering av EU-salgsliste til det tyske skattekontoret. |
-| **Erstattet med en annen funksjon?**   | Nei         |
+| **Erstattet med en annen funksjon?**   | Antall         |
 | **Berørte produktområder**         | Mva        |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen.   |
 
@@ -1246,7 +1205,7 @@ Denne funksjonen aktiverte genereringen av meksikanske elektroniske fakturaer ve
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Metoden er ikke lenger gjeldende. Generering av elektroniske fakturaer ved hjelp av metoden CFD ble avskrevet av skattemyndighetene og erstattet med CFDI-metoden (Comprobante Fiscal Digital a través de Internet), der signeringen delegeres til tredjepartsleverandøren (PAC). Den månedlige rapporten er fjernet, og et forespørselsalternativ lar brukerne be om historiske transaksjoner. |
-| **Erstattet med en annen funksjon?**   | Nei    |
+| **Erstattet med en annen funksjon?**   | Antall    |
 | **Berørte produktområder**         | Kunder, Prosjekt   |
 | **Status**                         | Avskrevet: En dato for fjerning er ikke angitt for denne funksjonen. |
 
@@ -1278,7 +1237,7 @@ Lager- og lagerstyringsjournaler støtter ikke lenger muligheten til å merke en
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Finner ingen bruk av funksjonen. |
-| **Erstattet med en annen funksjon?**   | Nei                                     |
+| **Erstattet med en annen funksjon?**   | Antall                                     |
 | **Berørte produktområder**         | Lagerstyring                   |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.         |
 
@@ -1311,7 +1270,7 @@ Med denne funksjonen kan du endre navnet på en av de tre standard produktdimens
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Den gjeldende versjonen av Dynamics AX støtter ikke etikettendringer under kjøring. |
-| **Erstattet med en annen funksjon?**   | Nei                                                                            |
+| **Erstattet med en annen funksjon?**   | Antall                                                                            |
 | **Berørte produktområder**         | Behandling av produktinformasjon                                                |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.                                                |
 
@@ -1322,7 +1281,7 @@ I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kom
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | På grunn av nye sikkerhetskrav støttes nå bare sikret kommunikasjon ved hjelp av TLS 1.2 (eller høyere, hvis tilgjengelig). Det selvbetjente installasjonsprogrammet konfigurerer automatisk datamaskinen for denne kommunikasjonen. |
-| **Erstattet med en annen funksjon?**   | Nei. Nå støttes bare standard HTTPS-kommunikasjon. |
+| **Erstattet med en annen funksjon?**   | Nr. Nå støttes bare standard HTTPS-kommunikasjon. |
 | **Berørte produktområder**         | Detaljhandelsserver  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0. |
 
@@ -1340,7 +1299,7 @@ I Dynamics AX 2012 R3 kunne detaljhandelsserveren fungerer ved hjelp av HTTP-kom
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Lav kundebruk og begrenset funksjonssett |
-| **Erstattet med en annen funksjon?**   | Nei                                           |
+| **Erstattet med en annen funksjon?**   | Antall                                           |
 | **Berørte produktområder**         | Amerikansk merverdiavgift                                 |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.               |
 
@@ -1351,7 +1310,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Microsoft Azure-infrastrukturen som brukes av Dynamics AX, har nye funksjoner som kan brukes i stedet (for eksempel Azure-områder). |
-| **Erstattet med en annen funksjon?**   | Nei   |
+| **Erstattet med en annen funksjon?**   | Antall   |
 | **Berørte produktområder**         | Personalerekruttering, saksbehandling, forespørsel om tilbud, leverandørregistrering, samarbeidsområder for salgsmuligheter og kampanjer  |
 | **Status**                         | Fjernet fra og med Dynamics AX 7.0.    |
 
@@ -1376,7 +1335,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 
 ### <a name="virtual-company-accounts"></a>Virtuelle firmakontoer
 
-Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firmaer-funksjonen lar brukere definere tabeller som kan deles av et sett med firmaer. Hvis du vil ha en beskrivelse av funksjonen, kan du se [Firmakontoer og virtuelle firmakontoer](../../fin-ops/get-started/ax4-content-retired.md). Funksjonen fungerer ved å gruppere tabeller i samlinger som tilordnes til virtuelle firmaer, som er grupper av eksisterende "virkelige" firmaer. Spørringer opprettes slik at alle selskaper i det virtuelle firmaet kan få tilgang til dataene i tabellene til de tilknyttede tabellsamlingene.
+Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firmaer-funksjonen lar brukere definere tabeller som kan deles av et sett med firmaer. Hvis du vil ha en beskrivelse av funksjonen, kan du se [Firmakontoer og virtuelle firmakontoer](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funksjonen fungerer ved å gruppere tabeller i samlinger som tilordnes til virtuelle firmaer, som er grupper av eksisterende "virkelige" firmaer. Spørringer opprettes slik at alle selskaper i det virtuelle firmaet kan få tilgang til dataene i tabellene til de tilknyttede tabellsamlingene.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1392,7 +1351,7 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Finance and Operations er kompatibel med nettbrett. Nettbrettappen er ikke lenger nødvendig.    |
-| **Erstattet med en annen funksjon?**   | Nei.          |
+| **Erstattet med en annen funksjon?**   | Nr.          |
 | **Berørte produktområder**         | Reiseregning og utlegg   |
 | **Status**                         | Fjernet: Denne funksjonen er bare tilgjengelig for Dynamics AX 2012 R3. |
 
@@ -1414,6 +1373,3 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 |     <strong>Berørte produktområder</strong>     |                                              Økonomimodul                                              |
 |             <strong>Status</strong>             |                                      Fjernet fra og med Dynamics AX 2012                                      |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

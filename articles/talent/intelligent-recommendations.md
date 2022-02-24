@@ -56,6 +56,3 @@ Anbefalingene vises som kort i **Jobbkandidat**-kategorien for alle jobber som h
 > Hvis du nylig startet ved hjelp av Attract, må du vente til du har 10 eller flere søkere som har fulle profiler eller CVer, før du kan bruke denne funksjonen.
 
 Hvis du vil unngå potensielle avvik i anbefalingene, skanner Attract bare kandidatprofiler for ferdigheter, kvalifikasjoner og andre nøkkelord som samsvarer med jobbeskrivelsen. I tillegg fjerner Attract personlig identifiserbar informasjon fra kandidatprofiler før evaluering.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

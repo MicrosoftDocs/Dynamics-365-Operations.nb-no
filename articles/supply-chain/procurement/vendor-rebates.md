@@ -1,24 +1,26 @@
 ---
 title: Leverandørrabatter
 description: Dette emnet gir en oversikt over de vanligste oppgavene du kanskje vil utføre når du jobber med leverandørrabatter. Leverandørrabatter hjelper bedrifter bedre å håndtere sine leverandørrabattprogrammer ved å automatisere oppgaver som kreves for å administrere, spore og kreve rabatter som er opptjent.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566869"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966661"
 ---
 # <a name="vendor-rebates"></a>Leverandørrabatter
 
@@ -53,7 +55,7 @@ En leverandørrabattavtale er en oversikt over en kontrakt med en leverandør so
 
 Hvis du vil åpne siden **Leverandørrabattavtaler**, velg **Anskaffelse og innkjøp** &gt; **Leverandørrabatter** &gt; **Rabattavtaler**.
 
-![Kjøpsavtale.](media/purchase-agreement.PNG)
+![Kjøpsavtale](media/purchase-agreement.PNG)
 
 På siden **Leverandørrabattavtaler** kan du se informasjon om de forhandlede betingelsene for en leverandøravtale.
 
@@ -129,7 +131,7 @@ Når krav er godkjent kan de behandles som leverandørgjeld. En kreditnota (leve
 
     En rabattopptjeningsjournal er oppført for kravsbeløpet. Denne posteringen debiterer den opptjente leverandørrabatt-mottakskontoen for forventet leverandørkreditt og krediterer den midlertidige opptjente leverandørrabatter-mottakskontoen for forventet gevinst.
 
-    ![Melding.](media/message.png)
+    ![Melding](media/message.png)
 
 5. I rabattlisten velger du linjen, og deretter velger du **Rabatt-transaksjoner** i Handlingsvinduet for å se og navigere til journalbatchnummer for denne rabattopptjeningsposten.
 
@@ -164,6 +166,3 @@ Prosessen for å håndtere leverandørrabatter innebærer flere manuelle sporing
 - Genererer nøyaktige rabattkrav
 - Å påløpe forventet fordring og foreløpig gevinst i hovedboken
 - Oppdaterer leverandørbalansen og resultatregnskapet med godtgjørelse som er forfalt
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

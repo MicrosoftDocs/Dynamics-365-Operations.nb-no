@@ -113,5 +113,3 @@ Nedlastingen er en ZIP-fil som inneholder:
 ## <a name="see-also"></a>Se også
 
 [Trekke tilbake Dynamics 365 Talent: Attract- og Dynamics 365 Talent: Onboard-apper](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

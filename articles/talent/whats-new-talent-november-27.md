@@ -62,6 +62,3 @@ Med denne oppdateringen vises avsluttede ansatte som er ansatt på nytt, bare é
 
 - **Problem**: Når du legger til en ny tilknytning til en arbeider, nedtones **Ny** og **Rediger**-knappene. 
 - **Løsning:** Før du åpner vedleggssiden må du kontrollere at faktaboksene på **Arbeider**-siden er lukket. Hvis faktaboksene er lukket når **Arbeider**-siden lastes, blir vedleggsknappene aktivert. (Dette problemet vil bli løst i neste plattformoppdatering.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

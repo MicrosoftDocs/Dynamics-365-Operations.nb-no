@@ -1,31 +1,29 @@
 ---
 title: Opprette prestasjonsvurderinger
 description: Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066956"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419887"
 ---
 # <a name="create-performance-reviews"></a>Opprette prestasjonsvurderinger
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen. Denne fremgangsmåten ble opprettet med demonstrasjonsdatafirmaet USMF.
@@ -68,18 +66,15 @@ Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver form
 30. Velg kategorien **Vurderinger**.  
 
     - I **Vurderingsdetaljer**-hurtigfanen kan ansatte vurdere seg selv og lederen vurdere den ansatte. Hvis det brukes vekter, beregnes vektverdien av poengsummene automatisk.  
-    - Hvis du vil vise denne delen, aktiverer du parameterinnstillingene for å vise ansattvurderinger på siden **Delte parametere for Human resources**.  
+    - Hvis du vil se denne delen, kan du aktivere parameterinnstillingene til å vise ansattvurderinger.  
 
-31. Velg fanen **Godkjenninger**. Hvis vurderingen bruker arbeidsflyt, vises godkjenningene bare etter at arbeidsflyten er fullført. Hvis det ikke brukes arbeidsflyt, er både arbeideren og lederen oppført her. Avmerkingsboksen **Obligatorisk** for **Godkjenninger** merkes på basis av innstillingene for vurderingstypen.  
-32. Velg fanen **Generelt**.
+31. Velg fanen **Godkjenninger**. Hvis vurderingen bruker arbeidsflyt, vises godkjenningene bare etter at arbeidsflyten er fullført. Hvis det ikke brukes arbeidsflyt, er både arbeideren og lederen oppført her. Avmerkingsboksen for nødvendig merkes på basis av innstillingene for vurderingstypen.  
+32. Velg kategorien **Generelt**.
 
     - Ytelsesperioden oppretter standard start- og sluttdatoer. Disse datoene kan redigeres.  
-    - Statusene kontrollerer tilgangen til vurderingen. **Ikke startet**-statusen tillater alle å redigere vurderingen. **Pågår**-statusen lar bare den ansatte vise og redigere vurderingen. **Klar til vurdering** lar bare lederen vise og redigere vurderingen. Med **Endelig vurdering**-statusen kan begge ansatte og lederen vise og redigere gjennomgangen hvis alternativet **Tillat redigering i endelig vurdering** er valgt i gjennomgangstype. Statusen **Fullført** og **Annullert** gjør at vurderingen blir skrivebeskyttet. Hvis en gjennomgang blir **Avvist** og sendes tilbake til den ansatte, kan både den ansatte og den overordnede utføre nødvendige endringer, slik at den ansatte kan sende på nytt.
+    - Statusene kontrollerer tilgangen til vurderingen. **Ikke startet**-statusen tillater alle å redigere vurderingen. **Pågår**-statusen lar bare den ansatte vise og redigere vurderingen. **Klar til vurdering** lar bare lederen vise og redigere vurderingen. **Endelig vurdering**-statusen lar både den ansatte og lederen vise vurderingen og også redigere den hvis dette er angitt for vurderingstypen. Statusen **Fullført** og **Annullert** gjør at vurderingen blir skrivebeskyttet. Hvis en gjennomgang blir **Avvist** og sendes tilbake til den ansatte, kan både den ansatte og den overordnede utføre nødvendige endringer, slik at den ansatte kan sende på nytt.
 
 33. Skriv inn en verdi i feltet **Oversikt**.
 34. Velg fanen **Gjennomgang**. Etter hvert som vurderingen endrer status, kan den ansatte og lederen legge til kommentarer for hvert mål eller hver kompetanse.  
 35. Velg kategorien **Godkjenninger**. Arbeideren og sjefen kan godkjenne gjennomgangen. Når alle nødvendige godkjenninger er foretatt, endres statusen til **Fullført**, og da kan det ikke gjøres flere endringer.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

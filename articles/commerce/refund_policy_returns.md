@@ -2,28 +2,33 @@
 title: Opprette og oppdatere en retur- og refusjonspolicy for en kanal
 description: Dette emnet beskriver hvordan du definerer en retur- og refusjonspolicy for en kanal.
 author: ShalabhjainMSFT
-ms.date: 07/13/2021
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
-ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
+ms.openlocfilehash: c2a9325f09ffe43c3436b7e0ca2ab511e1f57f83
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7388939"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414744"
 ---
-# <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Opprette og oppdatere en retur- og refunderingspolicy for en kanal
+# <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Opprette og oppdatere en retur- og refusjonspolicy for en kanal
 
 [!include [banner](includes/banner.md)]
+
+## <a name="overview"></a>Oversikt
 
 Kanalreturpolicyen i Dynamics 365 Commerce gjør det mulig for forhandlere å angi håndhevelser der betalingsmidler kan tillates for å behandle en retur på en salgsstedsenhet (POS).  
 
@@ -34,14 +39,14 @@ Omfanget av policyen er for øyeblikket begrenset til å angi betalingsmidlene s
 - Hvis et innkjøp ble foretatt ved hjelp av et gavekort, er butikkpolicyen å bare behandle refusjoner til et nytt gavekort eller gi butikkreditt. 
 - Hvis et salg er produsert ved hjelp av kontanter, er alternativene som er tillatt for refusjon, kontanter, gavekort og kundekonto, men ikke kredittkort. 
 
+
 ## <a name="enable-return-policy"></a>Aktivere returpolicy
 
-Hvis du vil aktivere funksjonen for kanalreturpolicy i Commerce Headquarters, gjør du følgende.
+Hvis du vil aktivere returpolicyfunksjonaliteten for en kanal, gjør du følgende:
 
 1. Gå til arbeidsområdet **Funksjonsbehandling** i Dynamics 365 Commerce.
-1. Søk etter funksjonen **Aktiver kanalreturpolicyer** i listen over funksjonsnavn.
-1. Velg **Aktiver nå**.
-1. På **Distribusjonsplan**-siden kjører du **1110**-jobben (global konfigurasjon) for å distribuere funksjonsendringen.
+2. Søk etter funksjonen **Aktiver kanalreturpolicyer** i listen over funksjonsnavn.
+3. Velg **Aktiver nå**. 
 
 ## <a name="configure-return-policy"></a>Konfigurere returpolicy
 
@@ -49,56 +54,53 @@ Følg denne fremgangsmåten for å konfigurere en returpolicy for en detaljhande
 
 1. Gå til **Retail og Commerce** \> **Kanaloppsett** \> **Returner** \> **Kanalreturpolicy**.
 
-1. Velg **Ny** for å opprette en ny returpolicymal. Hvis du vil bruke en eksisterende mal, velger du malen i den venstre ruten. For nye maler legger du til et navn og en beskrivelse som gjør det enklere å identifisere policyen når den brukes i kanalen.
+2. Velg **Ny** for å opprette en ny returpolicymal. Hvis du vil bruke en eksisterende mal, velger du malen i den venstre ruten. For nye maler legger du til et navn og en beskrivelse som gjør det enklere å identifisere policyen når den brukes i kanalen.
 
-   ![Legg til ny returpolicy.](media/Return-policy-page1.png)
+   ![Legg til ny returpolicy](media/Return-policy-page1.png "Legge til ny returpolicy")
      
    
-1. I delen **Tillatte betalingsmåter for refusjoner** definerer du **Tillatte** returbetalingsmidler som er spesifikke for hver betalingsmåte.
-   ![Angi tillatte betalingsmåter per betalingstype.](media/Return-policy-page2.png)
+3. I delen **Tillatte betalingsmåter for refusjoner** definerer du **Tillatte** returbetalingsmidler som er spesifikke for hver betalingsmåte.
+   ![Legge til betalingsmåter](media/Return-policy-page2.PNG "Angi tillatte betalingsmåter per betalingstype")
    
     > [!IMPORTANT]
     > - Betalingsmåtene er avledet fra betalingsmåtene som er angitt for organisasjonen.
     > - Hvis du legger til en tillatt returbetalingstype for hver oppførte betalingsmåte, må du sørge for at returer kan gjøres til den tillatte returbetalingstypen.
     
-1. Knytt returpolicymalen til butikkene der den skal brukes. Velg **Legg til** i kategorien **Detaljhandelskanaler**, og knytt til de tilgjengelige kanalene. 
+4. Knytt returpolicymalen til butikkene der den skal brukes. Velg **Legg til** i kategorien **Detaljhandelskanaler**, og knytt til de tilgjengelige kanalene. 
 
     - I dialogboksen **Velg organisasjonsnoder** velger du butikkene, områdene og organisasjonene som malen skal knyttes til.
     - Bare én returpolicymal kan knyttes til hver butikk.
     - Bruk pilknappene til å velge butikker, områder eller organisasjoner.
     - Ikrafttredelsesdatoen på policyen vil være datoen da policyene brukes på kanalene og kanaljobbene kjøres. 
 
-    ![Dialogboksen Velg organisasjonsnoder.](media/Return-policy-page3.png)
+    ![Dialogboksen Velg organisasjonsnoder](media/Return-policy-page3.PNG "Dialogboksen Velg organisasjonsnoder")
 
-1. På siden **Distribusjonsplan** kjører du jobben **1070** for å vise at kanalreturpolicyen er tilgjengelig for salgsstedet.
+5. På siden **Distribusjonsplan** kjører du jobben **1070** for å vise at kanalreturpolicyen er tilgjengelig for salgsstedet.
 
 ## <a name="preview-the-channel-return-policy-in-the-pos"></a>Forhåndsvise kanalreturpolicyen på salgsstedet
 
 Følg trinnene i et av følgende eksempler for å vise de tillatte returbetalingsmidlene på salgsstedet.
 
 1. Logg deg på salgsstedet som en kasserer eller en leder.
-1. Under **Skift og skuff** velger du **Vis Journal**.
-1. Velg transaksjonen som er del av returen. 
-1. Velg varene som skal refunderes, og velg deretter betalingsmåten.  
-    - Hvis valgt betalingsmiddelet er i listen over tillatte returbetalingstyper, kan kassereren fullføre transaksjonen.
-    - Hvis det valgte betalingsmiddelet ikke er tillatt, vises en feilmelding.
-    - Velg **Beløp å betale** for å vise en liste over alle tillatte returbetalingstyper.
+2. Under **Skift og skuff** velger du **Vis Journal**.
+3. Velg transaksjonen som er del av returen. 
+4. Velg varene som skal refunderes, og velg deretter betalingsmåten.  
+- Hvis valgt betalingsmiddelet er i listen over tillatte returbetalingstyper, kan kassereren fullføre transaksjonen.
+- Hvis det valgte betalingsmiddelet ikke er tillatt, vises en feilmelding.
+- Velg **Beløp å betale** for å vise en liste over alle tillatte returbetalingstyper.
 
 - eller -
 
 1. Logg deg på salgsstedet som en kasserer eller en leder.
-1. Velg **Returtransaksjon**, og angi kvitterings-ID-en ved hjelp av strekkodeskanning eller manuell oppføring. 
-1. Velg transaksjonen som er del av returen. 
-1. Velg varene som skal refunderes, og velg deretter betalingsmåten.  
-    - Hvis valgt betalingsmiddelet er i listen over tillatte returbetalingstyper, kan kassereren fullføre transaksjonen.
-    - Hvis det valgte betalingsmiddelet ikke er tillatt, vises en feilmelding.
-    - Velg **Beløp å betale** for å vise en liste over alle tillatte returbetalingstyper.
+2. Velg **Returtransaksjon**, og angi kvitterings-ID-en ved hjelp av strekkodeskanning eller manuell oppføring. 
+3. Velg transaksjonen som er del av returen. 
+4. Velg varene som skal refunderes, og velg deretter betalingsmåten.  
+- Hvis valgt betalingsmiddelet er i listen over tillatte returbetalingstyper, kan kassereren fullføre transaksjonen.
+- Hvis det valgte betalingsmiddelet ikke er tillatt, vises en feilmelding.
+- Velg **Beløp å betale** for å vise en liste over alle tillatte returbetalingstyper.
 
-![Refusjonstype ikke tillatt.](media/Return-policy-page6.png)
-
-
-
-![Refusjonstyper tillatt.](media/Return-policy-page5.png)
+![Refusjon ikke tillatt](media/Return-policy-page6.png "Refusjonstype ikke tillatt")
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+![Liste over betalingsmåter](media/Return-policy-page5.PNG "Refusjonstyper tillatt")

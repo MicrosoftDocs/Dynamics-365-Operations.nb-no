@@ -2,26 +2,29 @@
 title: Behandling av skift og kassaskuff
 description: Dette emnet beskriver hvordan du definerer og bruker skift på salgssteder i Commerce.
 author: jblucher
+manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2ac42c92d38299c20bfcb293ac062aa9e4b1c628
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 32b7be42509a2c857f1357eb64a6b488f9cd2269
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779750"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414718"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Behandling av skift og kassaskuff
 
@@ -45,7 +48,7 @@ Dette er vanligvis brukt oftest. Det brukes forsatt mye. I et "fast kasse"-skift
 
 I et "flytende kasse"-skift kan skiftet og kassen flyttes fra én kasse til en annen. Selv om en kasse bare kan ha ett aktivt skift per kasse, kan skift stoppes og startes opp igjen senere eller på en annen kasse.
 
-En butikk har for eksempel to kasser. Hver kasse åpnes ved starten av dagen når kassereren åpner et nytt skift og angir startbeløpet. Når én kasserer er klar til å ta en pause, stopper kassereren skiftet sitt og fjerner kassen fra kassaskuffen. Denne kassen blir da tilgjengelig for andre kasserere. En annen kasserer kan logge på og åpne sitt eget skift på kassen. Etter at pausen til den første kassereren er avsluttet, kan denne kassereren gjenoppta skiftet sitt når en av de andre kassene blir tilgjengelig. "Flytense kasse"-skift krever ikke noen spesiell konfigurasjon eller tillatelse.
+En butikk har for eksempel to kasser. Hver kasse åpnes ved starten av dagen når kassereren åpner et nytt skift og angir startbeløpet. Når én kasserer er klar til å ta en pause, stopper kassereren hans eller hennes skift og kassen og fjerner kassen fra kassaskuffen. Denne kassen blir da tilgjengelig for andre kasserere. En annen kasserer kan logge på og åpne sitt eget skift på kassen. Etter at den pausen til den første kassereren er avsluttet, kan denne kassereren gjenoppta hans eller hennes skift når en av de andre kassene blir tilgjengelig. "Flytense kasse"-skift krever ikke noen spesiell konfigurasjon eller tillatelse.
 
 ### <a name="single-user"></a>Enkeltbruker
 
@@ -84,7 +87,7 @@ Denne operasjonen er ofte den første operasjonen som utføres et nylig åpnet s
 
 ### <a name="tender-removal"></a>Fjerning av betalingsmidler
 
-*Fjerning av betalingsmidler* er ikke-salgstransaksjoner som utføres i et aktivt skift for å redusere pengebeløpet i kassaskuffen. Denne operasjonen brukes vanligvis sammen med en flytoppføringsoperasjon i et annet skift. Kasse 1 har for eksempel lite vekslepenger, så brukeren på kasse 2 utfører en fjerning av betalingsmidler for å redusere beløpet i kassaskuffen. Brukeren i kasse 1 gjør deretter en flytoppføring for å øke beløpet i kassaskuffen sin.
+*Fjerning av betalingsmidler* er ikke-salgstransaksjoner som utføres i et aktivt skift for å redusere pengebeløpet i kassaskuffen. Denne operasjonen brukes vanligvis sammen med en flytoppføringsoperasjon i et annet skift. Kasse 1 har for eksempel lite vekslepenger, så brukeren på kasse 2 utfører en fjerning av betalingsmidler for å redusere beløpet i kassaskuffen. Brukeren i kasse 1 gjør deretter en flytoppføring for å øke beløpet i hans eller hennes kassaskuff.
 
 ### <a name="suspend-shift"></a>Avbryt skift
 
@@ -154,7 +157,4 @@ Gå til **Retail og Commerce \> Kanaler \> Butikker \> Alle butikker \> Utdrag/a
 
 Dette oppsettet bidrar til at Back Office-utdrag inneholder de samme transaksjonene som skift på salgsstedet, og at dataene blir summert etter dette skiftet.
 
-Hvis du vil ha mer informasjon om utdrag og avslutingsmetoder, kan du se [Butikkonfigurasjoner for detaljhandelsutdrag](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Hvis du vil ha mer informasjon om utdrag og avslutingsmetoder, kan du se [Butikkonfigurasjoner for detaljhandelsutdrag](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).

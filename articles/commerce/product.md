@@ -2,9 +2,11 @@
 title: Legge til produktanbefalinger i POS
 description: Dette emnet beskriver hvordan du bruker produktanbefalinger på en salgsstedsenhet (POS).
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 29f502df7c158611df4eb2ddd5ac0e6bd6b4fe628113b2c544e33ba9c41cbcc7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08784385dd1fead13f538b4e856b4bac6651a560
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763746"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969932"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Legge til produktanbefalinger i POS
 
@@ -39,7 +41,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
 
     - Hvis en butikkansatt besøker en **Produktdetaljer**-side når vedkommende ser på tidligere transaksjoner på tvers av forskjellige kanaler, foreslår anbefalingstjenesten flere varer som sannsynligvis kjøpes sammen.
 
-    [![Anbefalinger på siden Produktdetaljer.](./media/proddetails.png)](./media/proddetails.png)
+    [![Anbefalinger på siden Produktdetaljer](./media/proddetails.png)](./media/proddetails.png)
 
 2. På **Transaksjon**-siden:
 
@@ -48,7 +50,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
     > [!NOTE]
     > For å vise anbefalinger på **Transaksjon**-siden må forhandler oppdatere skjermvisningen i Dynamics 365 Commerce. **Anbefalinger**-kontrollen må slippes på **Transaksjon**-siden.
 
-    [![Anbefalinger på siden Transaksjoner.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Anbefalinger på siden Transaksjoner](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurere Commerce for å aktivere anbefalinger for salgssted
 
@@ -89,6 +91,3 @@ Gjør følgende for å konfigurere produktanbefalinger:
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

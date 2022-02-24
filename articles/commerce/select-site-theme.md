@@ -2,30 +2,35 @@
 title: Velge et områdetema
 description: Dette emnet beskriver hvordan du angir eller endrer områdets tema i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964787"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556435"
 ---
 # <a name="select-a-site-theme"></a>Velge et områdetema
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du angir eller endrer områdets tema i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Området og stilen for et oppsett (for eksempel skrifter, størrelser og farger) defineres av temaet du velger, og gjelder for området. Et tema opprettes og distribueres av en utvikler i firmaet. Hvis du vil ha en oversikt over temaer, se [Temaoversikt](e-commerce-extensibility/theming.md). Hvis du vil ha mer informasjon om hvordan du oppretter og distribuerer temaer, kan du se [Opprette et nytt tema](e-commerce-extensibility/create-theme.md).
 
@@ -51,6 +56,8 @@ Følg denne fremgangsmåten for å velge temaet som skal brukes på området.
 
 [Legge til et favorittikon](add-favicon.md)
 
+[Legge til en velkomstmelding](add-welcome-message.md)
+
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
 [Legge til språk på området](add-languages-to-site.md)
@@ -61,6 +68,3 @@ Følg denne fremgangsmåten for å velge temaet som skal brukes på området.
 
 [Opprett et nytt tema](e-commerce-extensibility/create-theme.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

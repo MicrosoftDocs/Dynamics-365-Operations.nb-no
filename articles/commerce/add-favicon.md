@@ -2,30 +2,35 @@
 title: Legge til et favorittikon
 description: Dette emnet forklarer hvordan du legger til et favorittikon på området.
 author: bicyclingfool
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964738"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414578"
 ---
 # <a name="add-a-favicon"></a>Legge til et favorittikon
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet forklarer hvordan du legger til et favorittikon på området.
+
+## <a name="overview"></a>Oversikt
 
 Et favorittikon er en liten grafikkfil som vises i en webleserkategori, i adressefeltet, i leserloggen og i bokmerker eller favoritter, blant andre steder. Vi anbefaler at du legger til et favorittikon på området, fordi det representerer og forsterker et merke, og bidrar til å identifisere området fra andre områder som kundene besøker.
 
@@ -61,7 +66,7 @@ For å opprette et fragment som inneholder en metakode for favorittikon, følger
 1. I dialogboksen **Nytt fragment** velger du **Metakoder** som modulen som fragmentet er basert på.
 1. Angi et navn på fragmentet, og velg deretter **OK**.
 1. Velg det underordnede **Standard metakoder** i fragmenthierarkitreet.
-1. I ruten til høyre under **Metakoder** velger du **Legg til**, og deretter skriver du inn HTML-strengen du opprettet tidligere for favorittikonet. 
+1. I ruten til høyre under **Metakoder** velger du **Legg til**, og deretter skriver du inn HTML-strengen du opprettet tidligere for favorittikonet. 
 1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere fragmentet.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Legge til metakodefragmentet i HTML-hodedelen på sidene
@@ -86,12 +91,11 @@ Når du forhåndsviser sider som er basert på malen som du la til metakodefragm
 
 [Arbeide med CSS-overstyringsfiler](css-override-files.md)
 
+[Legge til en velkomstmelding](add-welcome-message.md)
+
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
 [Legge til språk på området](add-languages-to-site.md)
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

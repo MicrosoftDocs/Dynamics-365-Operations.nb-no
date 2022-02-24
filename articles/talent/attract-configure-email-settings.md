@@ -89,6 +89,3 @@ Du kan laste opp et bilde av firmaets logo og annen informasjon som en varemerke
     ![Legge til koblinger i firmaets personvernpolicy og vilkår for bruk for bunnteksten i e-postmeldinger](./media/attract-admin-email-footer.png)
 
 4. Velg **Lagre** for å lagre innstillingene for e-postmal.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

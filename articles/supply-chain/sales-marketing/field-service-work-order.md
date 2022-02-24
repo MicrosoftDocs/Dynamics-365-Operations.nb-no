@@ -1,37 +1,40 @@
 ---
 title: Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management
 description: Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b7b311701aff12d58392fc036d0f1174678b7dc3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061315"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528929"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet drøfter maler og underliggende oppgaver som brukes til å synkronisere arbeidsordrer i Dynamics 365 Field Service til salgsordrer i Dynamics 365 Supply Chain Management.
 
-[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
@@ -57,15 +60,15 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsordreh
 
 ## <a name="entity-set"></a>Enhetssett
 
-| **Field Service** | **Supply Chain Management** |
+| **Field Service** | **Forsyningskjedeadministrasjon** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | Dataverse-salgsordrehoder |
-| msdyn_workorderservices | Dataverse-salgsordrelinjer   |
-| msdyn_workorderproducts | Dataverse-salgsordrelinjer   |
+| msdyn_workorders        | CDS-salgsordrehoder |
+| msdyn_workorderservices | CDS-salgsordrelinjer   |
+| msdyn_workorderproducts | CDS-salgsordrelinjer   |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
-Arbeidsordrer opprettes i Field Service. Hvis arbeidsordene inkluderer bare eksternt vedlikeholdte produkter, og hvis **Arbeidsordrestatus**-verdien er forskjellig fra **Åpen – uplanlagt** og **Lukket – avbrutt**, kan arbeidsordrene synkroniseres til Supply Chain Management via et Microsoft Dataverse-dataintegreringsprosjekt. Oppdateringer av arbeidsordene synkroniseres som salgsordrer i Supply Chain Management. Disse oppdateringene inneholder informasjon om opprinnelsestypen og status.
+Arbeidsordrer opprettes i Field Service. Hvis arbeidsordene inkluderer bare eksternt vedlikeholdte produkter, og hvis **Arbeidsordrestatus**-verdien er forskjellig fra **Åpen – uplanlagt** og **Lukket – avbrutt**, kan arbeidsordrene synkroniseres til Supply Chain Management via et Common Data Service-dataintegreringsprosjekt. Oppdateringer av arbeidsordene synkroniseres som salgsordrer i Supply Chain Management. Disse oppdateringene inneholder informasjon om opprinnelsestypen og status.
 
 ## <a name="estimated-versus-used"></a>Estimert kontra brukt
 
@@ -88,21 +91,21 @@ Tabellen nedenfor gir en oversikt over de forskjellige kombinasjonene for produk
 | Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Tilordnet <br>(Field Service) |Synkroniseringsverdi <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Åpen – planlagt   | Estimert   | Ja       | Estimert                       |
-| Åpen – planlagt   | Estimert   | Nei        | Brukt                            |
+| Åpen – planlagt   | Estimert   | Antall        | Brukt                            |
 | Åpen – planlagt   | Brukt        | Ja       | Brukt                            |
-| Åpen – planlagt   | Brukt        | Nei        | Brukt                            |
+| Åpen – planlagt   | Brukt        | Antall        | Brukt                            |
 | Åpen – pågår | Estimert   | Ja       | Estimert                       |
-| Åpen – pågår | Estimert   | Nei        | Brukt                            |
+| Åpen – pågår | Estimert   | Antall        | Brukt                            |
 | Åpen – pågår | Brukt        | Ja       | Brukt                            |
-| Åpen – pågår | Brukt        | Nei        | Brukt                            |
+| Åpen – pågår | Brukt        | Antall        | Brukt                            |
 | Åpne – fullført   | Estimert   | Ja       | Estimert                       |
-| Åpne – fullført   | Estimert   | Nei        | Brukt                            |
+| Åpne – fullført   | Estimert   | Antall        | Brukt                            |
 | Åpne – fullført   | Brukt        | Ja       | Brukt                            |
-| Åpne – fullført   | Brukt        | Nei        | Brukt                            |
+| Åpne – fullført   | Brukt        | Antall        | Brukt                            |
 | Lukket – postert    | Estimert   | Ja       | Brukt                            |
-| Lukket – postert    | Estimert   | Nei        | Brukt                            |
+| Lukket – postert    | Estimert   | Antall        | Brukt                            |
 | Lukket – postert    | Brukt        | Ja       | Brukt                            |
-| Lukket – postert    | Brukt        | Nei        | Brukt                            |
+| Lukket – postert    | Brukt        | Antall        | Brukt                            |
 
 Tabellen nedenfor gir en oversikt over de forskjellige kombinasjonene for servicelinjer.
 
@@ -169,7 +172,7 @@ Hvis du vil ha mer informasjon om hvordan du oppretter riktig salgsopprinnelseso
 
 ### <a name="status"></a>Status
 
-Når salgsordren stammer fra en arbeidsordre, vises feltet **Status for ekstern arbeidsordre** i **Oppsett**-fanen i salgsordrehodet. Dette feltet viser systemstatusen fra arbeidsordren i Field Service, for å spore statusen for synkronisert arbeidsordre for salgsordrer i Supply Chain Management. Dette feltet kan også hjelpe brukeren av Supply Chain Management å bestemme når salgsordren skal leveres eller faktureres.
+Når salgsordren stammer fra en arbeidsordre, vises feltet **Status for ekstern arbeidsordre** i **Oppsett**-kategorien i salgsordrehodet. Dette feltet viser systemstatusen fra arbeidsordren i Field Service, for å spore statusen for synkronisert arbeidsordre for salgsordrer i Supply Chain Management. Dette feltet kan også hjelpe brukeren av Supply Chain Management å bestemme når salgsordren skal leveres eller faktureres.
 
 **Status for ekstern arbeidsordre**-feltet kan ha følgende verdier:
 
@@ -245,31 +248,28 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 
 Filter: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) og (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Maltilordning i dataintegrering for arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004)
 
-[![Maltilordning i dataintegrering for arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
 
-[![Maltilordning i dataintegrering for arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineEstimate
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og (msdyn_linestatus eq 690970000) and (msdynce_headersystemstatus ne 690970004) og (msdyn_allocated eq true)
 
-[![Maltilordning i dataintegrering for arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineUsed
 
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
-[![Maltilordning i dataintegrering for arbeidsordrer til salgsordrer (Field Service til Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Maltilordning i Dataintegrering](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)

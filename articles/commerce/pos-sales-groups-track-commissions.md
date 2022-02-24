@@ -2,12 +2,15 @@
 title: Spore provisjoner på salgssted (POS) ved hjelp av salgsgrupper
 description: Det er vanlig praksis i detaljhandelen å spore salg etter kontakten som har jobbet med kunden – med assistanse, oppsalg, kryssalg og behandling av transaksjonen.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 261234
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca77ad5564cc93e9fcf335b5a49548f91c7c13face41fd73477ae4083f78be57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: afbf69c072ae205e973203d97a5fbca7504ae04f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770915"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414529"
 ---
 # <a name="track-commissions-in-the-point-of-sale-pos-by-using-sales-groups"></a>Spore provisjoner på salgssted (POS) ved hjelp av salgsgrupper
 
@@ -69,7 +72,7 @@ Det finnes en rekke innstillinger for funksjonalitetsprofiler for en butikk som 
 
 ## <a name="displaying-the-sales-representative-information-on-the-pos-transactions-screen"></a>Vise informasjon om selger på skjermbildet for transaksjoner på salgssted
 
-Oppsettet og innholdet på skjermen for transaksjoner på salgssted kan konfigureres ved hjelp av skjermoppsettdesigneren og tilordnede skjermoppsett til butikker, kasser eller arbeidere. **Selger**-feltet kan legges til kategorien Linjer i ruten Mottak.  Dette viser ID-en til angitt salgsgruppe for hver linje i skjermbildet for transaksjonen.
+Oppsettet og innholdet på skjermen for transaksjoner på salgssted kan konfigureres ved hjelp av skjermoppsettdesigneren og tilordnede skjermoppsett til butikker, kasser eller arbeidere.**Selger**-feltet kan legges til kategorien Linjer i ruten Mottak.Dette viser ID-en til angitt salgsgruppe for hver linje i skjermbildet for transaksjonen.
 
 ## <a name="adding-sales-representative-operations-to-pos-button-grids"></a>Legge til selgeroperasjoner for POS-knappegrupper
 
@@ -77,14 +80,11 @@ Salgssted gjør det mulig for brukere å konfigurere knapperutenett, som er inkl
 
 | Operasjon                                 | beskrivelse |
 |-------------------------------------------|-------------|
-| Angi selger på linje          | Denne salgsstedsoperasjonen viser en liste over berettigede salgsgrupper (ID: navn) for butikken. Hvis du velger en salgsgruppe fra listen, angis verdien på den gjeldende transaksjonslinjen. |
+| Angi selger på linje          | Denne salgsstedsoperasjonen viser en liste over berettigede salgsgrupper (ID: navn) for butikken.Hvis du velger en salgsgruppe fra listen, angis verdien på den gjeldende transaksjonslinjen. |
 | Fjern selger på linje        | Denne salgsstedsoperasjonen fjerner verdien for den gjeldnede salgsgruppen fra den gjeldende transaksjonslinjen. |
-| Angi selger i transaksjon   | Denne salgsstedsoperasjonen viser en liste over berettigede salgsgrupper (ID: navn) for butikken. Hvis du velger en salgsgruppe fra listen, angis standardverdien på den gjeldende transaksjonen. Eventuelle eksisterende linjer uten en salgsgruppe tilordnet angis, i tillegg til eventuelle senere tilføyde linjer. |
+| Angi selger i transaksjon   | Denne salgsstedsoperasjonen viser en liste over berettigede salgsgrupper (ID: navn) for butikken.Hvis du velger en salgsgruppe fra listen, angis standardverdien på den gjeldende transaksjonen. Eventuelle eksisterende linjer uten en salgsgruppe tilordnet angis, i tillegg til eventuelle senere tilføyde linjer. |
 | Fjern selger i transaksjon | Denne salgsstedsoperasjonen fjerner verdien for den gjeldende standardsalgsgruppen fra den gjeldende transaksjonen. Den påvirker ikke linjer som allerede finnes i transaksjonen. |
 
 ## <a name="calculating-commissions"></a>Beregne provisjon
 
-Provisjon beregnes for arbeidere i de angitte salgsgruppene samtidig som postering av utdrag eller salgsordre. Provisjonsbeløpet bestemmes basert på arbeiderens provisjonsandel, som definert i salgsgruppen og tilknyttede provisjon beregningsinnstillingene for kunde og/eller produkter på transaksjonen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Provisjon beregnes for arbeidere i de angitte salgsgruppene samtidig som postering av utdrag eller salgsordre.Provisjonsbeløpet bestemmes basert på arbeiderens provisjonsandel, som definert i salgsgruppen og tilknyttede provisjon beregningsinnstillingene for kunde og/eller produkter på transaksjonen.

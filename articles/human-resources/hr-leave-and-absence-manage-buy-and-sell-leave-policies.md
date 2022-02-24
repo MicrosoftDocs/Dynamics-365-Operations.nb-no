@@ -1,33 +1,31 @@
 ---
 title: Administrere policyer for kjøp og salg av permisjon
 description: Du kan gjøre det mulig for ansatte å kjøpe og selge permisjon i Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeaveBuySellPolicy, LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fe7ce7eafdec175e3395a6ac37b33cb2bb8dbda
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066681"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419947"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>Administrere policyer for kjøp og salg av permisjon
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan la de ansatte kjøpe og selge permisjon ved å opprette en policy for å kjøpe og selge permisjon. Du kan konfigurere disse policyene til å bruke arbeidsflyt for godkjenninger, angi maksimumsbeløp og -satser og angi satser for kjøp og salg. 
 
@@ -82,6 +80,3 @@ Du kan la de ansatte kjøpe og selge permisjon ved å opprette en policy for å 
 [Avsett permisjons- og fraværsplaner](hr-leave-and-absence-accrue.md)</br>
 [Kjøp og selg permisjon](hr-employee-self-service-buy-sell-leave.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,6 +61,3 @@ Følgende data er tilgjengelige med prosessovervåking.
 |Logg for stillingssøknad | Stillingssøknad (msdyn_JobapplicatonId)<br></br>Status (msdyn_status) <br></br>Statusårsak (msdyn_statusreason) <br></br>Avvisningsårsak (msdyn_rejectionreason) |
 | Logg for ledig stilling | Ledig stilling (msdyn_JobopeningId) <br></br>Status (msdyn_jobopeningstatus) <br></br>Statusårsak (msdyn_jobopeningstatusreason) |
 | Kandidatlogg | Kandidat (msdyn_CandidateId) |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

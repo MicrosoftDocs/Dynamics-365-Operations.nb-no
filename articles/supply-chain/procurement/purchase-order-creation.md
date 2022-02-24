@@ -1,10 +1,12 @@
 ---
 title: Opprette bestillinger
 description: Denne artikkelen beskriver prosessen og alternativene når du oppretter en bestilling manuelt.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b8e00316b45126b028b6d9812a455ef0e53f19
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575518"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022287"
 ---
 # <a name="create-purchase-orders"></a>Opprette bestillinger
 
@@ -65,7 +67,7 @@ Noen ganger vil du kanskje dele antallet du har bestilt, slik at ulike deler av 
 Tillegg kan legges automatisk til bestillingslinjer hvis automatiske tillegg er definert for leverandøren eller leverandørtilleggsgruppen, og for varen eller varens kostnadsgruppe. Imidlertid legges vanligvis tillegg til manuelt på ordrelinjenivå. Hvis du vil legge til et tillegg, åpner du siden **Vedlikehold tillegg** ved hjelp av handlingen **Vedlikehold tillegg** på siden **Finans** -menyen i visningen **Linjer**. Fordelen med å legge til tillegg direkte på ordrelinjenivå er at tillegget kan tildeles som en lagerkost. Hvis du vil definere tilleggskoder for kontoproduktkostnader, bruker du debetalternativet **Vare**. Disse tilleggstypene må tildeles fra bestillingshodet til linjene før ordren kan bekreftes. Du kan for eksempel tilordne tillegg basert på antallet på hver linje. Kategorien for tillegg påvirker også hvordan tillegg etterberegnes. Faste tillegg angir for eksempel et fast beløp, og prosenttillegg beregnes som en prosent av nettobeløpet for ordrelinjen. Bestillinger kan tilordnes til en last, og lasten kan inneholde et estimat over den forventede kostnaden for transportkostnadene. Du kan tildele denne utgiften fra lasten tilbake til bestillingslinjene.
 
 ## <a name="purchase-order-actions"></a>Bestillingshandlinger
-Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](../../fin-ops-core/fin-ops/get-started/action-search.md) for å finne det relevante menyelementet.  
+Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](../../fin-and-ops/get-started/action-search.md) for å finne det relevante menyelementet.  
 
 Du kan konfigurere produkter i ordren, slik at de har tilleggsvarer. Tilleggsvarer er varer som må eller kan kjøpes sammen med andre produkter. Tilleggsprodukter kan legges til kostnadsfritt som medfølgende produkter, eller du kan avgjøre om du vil legge dem til i ordren eller ikke. Du kan se gjennom tilleggsvarene etter hver ordrelinje som legges til. Du vil imidlertid sannsynligvis finne det enklere å se gjennom og legge til relevante tilleggsvarer for alle ordrelinjene ved hjelp av siden **Tilleggsvarer**, som du kan åpne i handlingsruten.  
 
@@ -80,7 +82,8 @@ Bestillinger kan konfigureres til å kreve at budsjettmidler fordeles til ordren
 
 Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempel ha mer informasjon om produkter eller tjenester, eller det kan hende du må få godkjenning av forbruket. Det er flere måter å holde tilbake en ordre. Du kan for eksempel vente med å bekrefte ordren. Hvis en arbeidsflyt for endringsadministrasjon brukes, sender du ikke ordren til godkjenning. Hvis du må blokkere alle ordrer for en bestemt leverandør, kan du også merke leverandør som **På vent** for behandling på leverandørstandarden. Det finnes også situasjoner som kan hindre at ordren blir behandlet. Behandling kan for eksempel hindres hvis kredittgrenser er overskredet, eller hvis nødvendige budsjettmidler er ikke tilgjengelige.
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Oversikt over bestilling](purchase-order-overview.md)
 
@@ -92,6 +95,3 @@ Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempe
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

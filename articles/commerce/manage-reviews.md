@@ -1,13 +1,16 @@
 ---
 title: Administrere vurderinger og anmeldelser
-description: Dette emnet forklarer hvordan du behandler vurderinger og omtaler i områdebyggeren for Microsoft Dynamics 365 Commerce.
+description: Dette emnet forklarer hvordan du behandler vurderinger og omtaler i Microsoft Dynamics 365 Commerce-områdebygger.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968233"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414666"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du behandler vurderinger og omtaler i områdebyggeren for Microsoft Dynamics 365 Commerce.
+Dette emnet forklarer hvordan du behandler vurderinger og omtaler i Microsoft Dynamics 365 Commerce-områdebygger.
+
+## <a name="overview"></a>Oversikt
 
 Dynamics 365 Commerce bruker Microsoft Azure Cognitive Service til å automatisk moderere vurderingstekst ved å fjerne upassende ord. I tillegg kan moderatorer bruke Dynamics 365 Commerce-områdebygger til å implementere følgende manuelle oppgaver:
 
@@ -43,7 +48,7 @@ Gjør følgende for å lese en omtale i Commerce-områdebygger:
 
 Flere filtre gjør at du kan begrense omtalene etter periode, rangering, kanal eller betydning (fjernet, svart på eller rapportert).
 
-![Startside for sensur.](media/rnr-moderation-home.png) 
+![Startside for sensur](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Svare på en omtale 
 
@@ -57,7 +62,7 @@ Gjør følgende for å svare på en omtale i Commerce-områdebygger:
 1. Skriv inn svarteksten og navnet som skal vises for svareren. Standard svarnavn er **Moderator**.
 1. Når du er ferdig, velg du **Legg inn svar**.
 
-![Svare på en omtale.](media/rnr-moderation-response.png) 
+![Svare på en omtale](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Fjerne en omtale 
 
@@ -80,7 +85,7 @@ Gjør følgende for å finne og slette kundedata i Commerce-områdebygger:
 1. Hvis kunden har omtaleaktivitet (for eksempel innsending av omtaler, stemmer om nyttigheten til en annen kundes omtale eller merknader om en annen kundes omtale), vises resultatene. For hvert element er det en **Slett**-knapp.
 1. Velg **Slett** for hvert element som må slettes. Velg **Ja** når du blir bedt om å bekrefte. 
     
-![Slette kundedata.](media/rnr-moderation-delete-reviews.png) 
+![Slette kundedata](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Det kan ta opptil sju dager før data blir fjernet fra systemet. Moderatorer bør varsle kunder om denne forsinkelsen.
@@ -104,19 +109,19 @@ Gjør følgende for å vise trender for vurderinger og omtaler i Commerce-områd
 1. Gå til **Hjem \> Omtaler \> Rapportering**.
 1. Velg **PowerBI-mal** for å laste ned malen.
 
-    ![Last ned Power BI-malen.](media/rnr-moderation-reports.png) 
+    ![Last ned Power BI-malen](media/rnr-moderation-reports.png) 
 
 1. Åpne den nedlastede malen ved hjelp av Power BI-appen. Lukk dialogboksen **Tilgang til webinnhold** som vises, og lukk deretter "Oppdater"-feilmeldingen som vises.
 1. Gå til **Hjem**, velg **Rediger spørringer**, og velg deretter **Innstillinger for datakilde**.
 1. Velg **Endre kilde** i dialogboksen **Innstillinger for datakilde**.
 1. I feltet **URL** angir du banen til omtaledataene du lastet ned i forrige prosedyre (for eksempel **c:\\reviews\\ReviewsData.csv**).
 
-    ![URL-felt i dialogboks for kommadelte verdier.](media/rnr-powerbi-datasource-settings.png) 
+    ![URL-felt i dialogboks for kommadelte verdier](media/rnr-powerbi-datasource-settings.png) 
 
 1. Velg **OK**, og velg deretter **Bruk endringer**. Det vil ta ett til to minutter å bruke endringene i datakilden.
 1. Velg **Trendark** for å vise trender for vurderinger og omtaler.
 
-    ![Trender for vurderinger og omtaler.](media/rnr-powerbi-dashboard-template.png) 
+    ![Trender for vurderinger og omtaler](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -127,14 +132,3 @@ Gjør følgende for å vise trender for vurderinger og omtaler i Commerce-områd
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
 
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
-
-[Aktivere manuell publisering av vurderinger og vurderinger av en moderator](manual-publish-rating-reviews.md)
-
-[Importer og eksporter vurderinger og omtaler](import-export-reviews.md)
-
-[Konfigurer tjeneste-til-tjeneste-godkjenning](service-to-service-auth.md)
-
-[Vanlige spørsmål om rangeringer og anmeldelser](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

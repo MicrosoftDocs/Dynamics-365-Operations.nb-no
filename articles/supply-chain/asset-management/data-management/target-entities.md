@@ -1,10 +1,12 @@
 ---
 title: Målenheter
 description: Dette emnet beskriver hvordan du får oversikt over målenheter i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c2d08781ff75b2435e9b71531ce77a59dbee2d90e647087d7c2c58bb4b1227e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb22c5b604f9bc7aacad014385b036e78d9110e6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772574"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017218"
 ---
 # <a name="target-entities"></a>Målenheter
 
@@ -34,13 +36,13 @@ I arbeidsområdet **Databehandling** kan du få en oversikt over målenheter, re
 
 2. Klikk på **Dataenheter** i delen **Importer/eksporter**. 
 
-    ![Figur 1.](media/01-data-management.png)
+    ![Figur 1](media/01-data-management.png)
 
 3. På **Målenheter**-siden søker du etter "aktivastyring" i filteret, og trykker på Enter for å vise en liste over enhetene som er knyttet til Aktivastyring.
 
     Figuren nedenfor viser noen av aktivastyringsenhetene.
 
-   ![Figur 2.](media/02-data-management.png)
+   ![Figur 2](media/02-data-management.png)
 
 4. Velg en enhet, og klikk på **Endre måltilordning**.
 
@@ -48,8 +50,5 @@ I arbeidsområdet **Databehandling** kan du få en oversikt over målenheter, re
 
     I figuren nedenfor vises en visualisering av feltene som er knyttet til aktivatypeenheten.
 
-    ![Figur 3.](media/03-data-management.png)
+    ![Figur 3](media/03-data-management.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -142,6 +142,3 @@ Når kandidater har søkt på én eller flere jobber, kan de velge **Søknader**
 ## <a name="internal-jobs"></a>Interne stillinger
 
 Jobber som er merket som interne og er postert til Attract-karriereområdet, vises for øyeblikket ikke på karriereområdet. De er bare tilgjengelige via den direkte **Søk**-URL-adressen som kan kopieres fra programmet Attract.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

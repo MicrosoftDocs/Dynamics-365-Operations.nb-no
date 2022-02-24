@@ -2,12 +2,15 @@
 title: Kartmodul
 description: Dette emnet dekker kartmoduler og beskriver hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747399"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665426"
 ---
 # <a name="map-module"></a>Kartmodul
 
@@ -29,7 +32,9 @@ ms.locfileid: "6747399"
 
 Dette emnet dekker kartmoduler og beskriver hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
 
-En kartmodul viser plasseringen av butikker på et interaktivt kart som gjengis ved hjelp av [Bing Maps V8-webkontrollen](/bingmaps/v8-web-control/). En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for Commerce Headquarters. Kartmoduler gir forskjellige visninger, for eksempel veier, fra luften og på gatenivå, som brukerne kan velge for å vise kartstedene. De tillater også samhandlinger, som å zoome og bruke brukerens plassering.
+## <a name="overview"></a>Oversikt
+
+En kartmodul viser plasseringen av butikker på et interaktivt kart som gjengis ved hjelp av [Bing Maps V8-webkontrollen](https://docs.microsoft.com/bingmaps/v8-web-control/). En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for Commerce Headquarters. Kartmoduler gir forskjellige visninger, for eksempel veier, fra luften og på gatenivå, som brukerne kan velge for å vise kartstedene. De tillater også samhandlinger, som å zoome og bruke brukerens plassering.
 
 En kartmodul fungerer sammen med butikkvelgermodulen for å bestemme de geografiske lokasjonene til butikkene som må gjengis på et kart. Butikkvelgeren og kartmodulene fungerer sammen når en bruker velger en butikk i en av disse modulene på en områdeside. Kartmoduler kan utvides for andre scenarier, utover samhandling med butikkvelgermoduler. Modultilpassing er imidlertid nødvendig.
 
@@ -38,7 +43,7 @@ En kartmodul fungerer sammen med butikkvelgermodulen for å bestemme de geografi
 
 Bildet nedenfor viser et eksempel på en kartmodul som brukes på en side med butikkplasseringer.
 
-![Eksempel på en butikkvelgermodul.](./media/ecommerce-Storelocator.PNG)
+![Eksempel på en butikkvelgermodul](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 
@@ -76,7 +81,4 @@ Hvis du vil ha detaljert informasjon om hvordan du konfigurerer en kartmodul på
 
 [Behandle Bing-kart for organisasjonen](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8-webkontrollen](/bingmaps/v8-web-control/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Bing Maps V8-webkontrollen](https://docs.microsoft.com/bingmaps/v8-web-control/)

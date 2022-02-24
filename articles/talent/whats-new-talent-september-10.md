@@ -98,6 +98,3 @@ Denne versjonen inneholder flere andre feilrettinger:
 - Når en entreprenør ansettes, skal kategorien **Kompensasjon** ikke skal være tilgjengelig på forespørsels-/handlingssiden.
 - Under Be om avslutning-prosessen kan du ikke fortsette før alle nødvendige felt inneholder data.
 - Problemer med sorteringsrekkefølge og datovisning i analyse av personaladministrasjon er løst.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

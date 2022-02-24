@@ -1,10 +1,12 @@
 ---
 title: Definere et lager ved hjelp av en mal for lagerkonfigurasjon
 description: Dette emnet forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
@@ -13,21 +15,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d533eed984c188c5b6520232f2b875bddd1f57bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571095"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967136"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Definere et lager ved hjelp av en mal for lagerkonfigurasjon
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon. Det finnes flere forhåndsdefinerte konfigurasjonsmaler som du kan bruke. Hvis du vil ha informasjon om hvordan du bruker disse malene, se [Konfigurasjonsdatamaler](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+Dette emnet forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon. Det finnes flere forhåndsdefinerte konfigurasjonsmaler som du kan bruke. Hvis du vil ha informasjon om hvordan du bruker disse malene, se [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scenarier der konfigurasjonsmaler kan være nyttige
 
@@ -88,13 +90,10 @@ Du kan laste ned en zip-fil for datapakken. Denne filen inneholder alle dataene 
 4. Velg **+ Legg til fil**, og last opp zip-filen for datapakken.
 5. Velg **Import**. I **Utvidet**-visningen kan du bruke **Filter**-alternativet for raskt å få oversikt over problemer som kan oppstå under importen.
 
-**Vis utførelseslogg** gir deg detaljert informasjon om hver dataenhet som importeres. Du kan bruke oppsamling datavisningen for å gå raskt til målet dataene. På denne måten kan du se hva de importerte dataene ser slik på de tilknyttede sidene i programmet. Når du bruker standard datamalene, fungerer importsekvensen for hver dataenhet på den forhåndsdefinerte måten, for å garantere at alle avhengige data importeres først. Hvis egendefinerte enheter inngår i prosjektet, må du kontrollere at den riktige rekkefølgen er definert. Hvis du vil ha mer informasjon, kan du se [Konfigurasjonsdatamaler](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+**Vis utførelseslogg** gir deg detaljert informasjon om hver dataenhet som importeres. Du kan bruke oppsamling datavisningen for å gå raskt til målet dataene. På denne måten kan du se hva de importerte dataene ser slik på de tilknyttede sidene i programmet. Når du bruker standard datamalene, fungerer importsekvensen for hver dataenhet på den forhåndsdefinerte måten, for å garantere at alle avhengige data importeres først. Hvis egendefinerte enheter inngår i prosjektet, må du kontrollere at den riktige rekkefølgen er definert. Hvis du vil ha mer informasjon, kan du se [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md).
 
 Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne 3-minutters lange YouTube-videoen om [hvordan du bruker lagermalen til å kopiere konfigurasjonen for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Relaterte emne
 
-[Konfigurasjonsdatamaler](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md)

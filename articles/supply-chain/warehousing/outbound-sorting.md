@@ -2,9 +2,11 @@
 title: Utgående sortering
 description: Dette emnet inneholder informasjon om utgående sortering. Denne funksjonaliteten gjør det enklere å håndtere små containere og hjelper lagerarbeidere å planlegge og organisere pallkapasitet på lastebilen.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 004224090d8244028b6df7f32e1853ad60371cea
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 2b0049269b69c0777420b3ecd9b1f649c4a1ab11
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575201"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963416"
 ---
 # <a name="outbound-sorting"></a>Utgående sortering
 
@@ -664,6 +666,3 @@ Du må fylle ut det sorterte lagerplukkingsarbeidet. Når det er fullført, blir
     Arbeidet er fullført.
 
 På dette tidspunktet og fremover gjelder alle andre lagerprosesser.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

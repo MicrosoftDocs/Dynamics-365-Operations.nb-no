@@ -1,54 +1,69 @@
 ---
-title: Aktiver kontantstrømprognose
+title: Aktivere kontantstrømprognose (forhåndsversjon)
 description: Dette emnet forklarer hvordan du aktiverer funksjonen for kontantstrømprognoser i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+manager: AnnBe
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cfcdbe76d640d1786b4622febf9157f5fb1c42f9
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: 321c716c10b136769ea3a48a3b60a8a717798338
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969143"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646235"
 ---
-# <a name="enable-cash-flow-forecasting"></a>Aktiver kontantstrømprognose
+# <a name="enable-cash-flow-forecasting-preview"></a>Aktivere kontantstrømprognose (forhåndsversjon)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan du aktiverer funksjonen for kontantstrømprognoser i Finance Insights.
 
 > [!NOTE]
 > For å kunne bruke betalingsprognoser i kontantstrømmen må du konfigurere funksjonen for kundebetalingsprognoser som beskrevet i [Aktivere kundebetalingsprognoser](enable-cust-paymnt-prediction.md).
+
+1. Bruk informasjon fra miljøsiden i Microsoft Dynamics Lifecycle Services (LCS) til å koble til den primære forekomsten av Azure SQL for dette miljøet. Kjør følgende Transact-SQL-kommando (T-SQL) for å aktivere testversjoner for sandkassemiljøet. (Det kan hende at du må aktivere tilgang for IP-adressen din i LCS før du kan koble til Application Object Server \[AOS\] eksternt.)
+
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
+
+    > [!NOTE]
+    > Hvis distribusjonen av Microsoft Dynamics 365 Finance er en Service Fabric-distribusjon, kan du hoppe over dette trinnet. Finance Insights-teamet skal allerede ha aktivert testversjonen for deg. Hvis du ikke ser funksjonene i arbeidsområdet **Funksjonsbehandling**, eller hvis du får problemer når du prøver å aktivere dem, kontakter du <fiap@microsoft.com>.
   
-1. Åpne arbeidsområdet **Funksjonsbehandling**, og følg denne fremgangsmåten:
+2. Åpne arbeidsområdet **Funksjonsbehandling**, og følg denne fremgangsmåten:
 
     1. Velg **Se etter oppdateringer**.
-    2. På **Alle**-fanen søker du etter **Kontantstrømprognoser**. Hvis du ikke funner denne funksjonen, søker du etter **(Forhåndsversjon) Kontantstrømprognoser**. 
-    3. Aktivere funksjonen.
+    2. Aktiver følgende funksjoner:
 
-2. Gå til **Kontant- og bankbehandling \> Oppsett for kontantstrømprognose**, og legg til likviditetskontoene som skal tas med i prognosene. Definer også likviditetskontoen for betalinger på fanene **Kunder** og **Leverandører**. Pass på at kontantstrømprognosen beregnes på nytt.
+        - Ny rutenettkontroll
+        - Gruppering i rutenett (forhåndsversjon) 
+        - Kundebetalingsforutsigelser (forhåndsversjon)
+        - Kontantstrømprognoser (forhåndsversjon)
+
+3. Gå til **Kontant- og bankbehandling \> Oppsett for kontantstrømprognose**, og legg til likviditetskontoene som skal tas med i prognosene.
 
     > [!NOTE]
     > Hvis likviditetskontoer ikke er opprettet, kan ikke kontantstrømmen genereres.
-    >
-    > Hvis du vil ha mer informasjon om hvordan du definerer kontantstrømprognoser, kan du se [Kontantstrømprognose](../cash-bank-management/cash-flow-forecasting.md).
 
-3. Gå til **Kontant- og bankbehandling \> Oppsett \> Finance Insights (forhåndsversjon) \> Kontantstrømprognoser (forhåndsversjon)**, og følg denne fremgangsmåten:
+4. Gå til **Kontant- og bankbehandling \> Oppsett \> Finance Insights (forhåndsversjon) \> Kontantstrømprognoser (forhåndsversjon)**, og følg denne fremgangsmåten:
 
     1. Velg **Aktiver funksjon** i fanen **Kontantstrømprognose**.
     2. Velg **Opprett prognosemodell**.
 
 Hvis du vil ha mer informasjon om funksjonen for kontantstrømprognose, kan du se [Kontantstrømprognose](cash-flow-forecast-intro.md).
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+## <a name="privacy-notice"></a>Personvernerklæring
+
+Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.

@@ -2,29 +2,36 @@
 title: Oversikt over skybaserte søk
 description: Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
+manager: annbe
 ms.date: 06/29/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983675"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414521"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversikt over skybaserte søk
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Produktoppdaging bidrar til å garantere at kunder raskt og enkelt kan finne produkter ved å bla gjennom kategorier, søke og filtrere. Forhandlere vurderer produktgjenkjenning som et primært verktøy for kundeinteraksjon på tvers av alle kanaler.
 
@@ -40,7 +47,7 @@ Søkerelevans og ytelse er nøkkelfaktorer i omnikanalopplevelsen, fordi produkt
 
 Illustrasjonen nedenfor viser et eksempel på vanlig bla- og søkefunksjonalitet.
 
-![Målside for søk.](./media/SearchLanding.png)
+![Målside for søk](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Filterbasert navigasjon og valgsammendrag 
 
@@ -50,7 +57,7 @@ Ved hjelp av filterbasert navigasjon kan du konfigurere ulike presiseringer for 
 
 Illustrasjonen nedenfor viser et eksempel på hvordan filterbasert navigasjon brukes i et søk.
 
-![Valgsammendrag.](./media/ChoiceSummary.png)
+![Valgsammendrag](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Dyptgående automatiske forslag
 
@@ -60,7 +67,7 @@ Dynamics 365 Commerce støtter også funksjonalitet for nøkkelordtreff i ulike 
 
 Illustrasjonen nedenfor viser et eksempel der det brukes dyptgående automatiske forslag.
 
-![dyptgående automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
+![dyptgående automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sorter
 
@@ -68,13 +75,10 @@ Bedre sortering i Dynamics 365 Commerce lar kundene sortere, søke etter og bla 
 
 >[!NOTE]
 >Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det under **Handelsparametere > Konfigurasjonsparametere** finnes en oppføring for ProductSearch. UseAzureSearch satt til true. 
-![Konfigurasjonsparametere for skydrevet søk.](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurasjonsparametere for skydrevet søk](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over standard kategorimålside og søkeresultatside](category-search-page-overview.md)
 
 [Behandle metadata for søkemotor](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Innholdsblokkmodul
 description: Dette emnet dekker innholdsblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,21 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726445"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414582"
 ---
 # <a name="content-block-module"></a>Innholdsblokkmodul
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker innholdsblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 En innholdsblokkmodul brukes til å markedsføre produkter eller kampanjer ved hjelp av en kombinasjon av bilder og tekst. En forhandler kan for eksempel legge til en innholdsblokkmodul på startsiden for et område for e-handel for å fremme et nytt produkt og tiltrekke oppmerksomheten til kundene.
 
@@ -46,15 +52,15 @@ I tillegg kan temaet vise forskjellige egenskaper for hvert oppsett. En temautvi
 
 Bildet nedenfor viser et eksempel på en innholdsblokkmodul med et hovedbanneroppsett.
 
-![Eksempel på en hovedbannermodul.](./media/Hero.PNG)
+![Eksempel på en hovedbannermodul](./media/Hero.PNG)
 
 Bildet nedenfor viser et eksempel på en innholdsblokkmodul med et funksjonsoppsett.
 
-![Eksempler på funksjonsmoduler.](./media/Feature.PNG)
+![Eksempler på funksjonsmoduler](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Egenskaper for innholdsblokkmodul
 
-| Egenskapsnavn  | Verdier | beskrivelse |
+| Egenskapsnavn  | Verdier | Beskrivelse |
 |----------------|--------|-------------|
 | Bilde          | Bildefil | Et bilde kan brukes til å vise et produkt eller en kampanje. Et bilde kan lastes opp til bildegalleriet, eller det kan brukes et eksisterende bilde. |
 | Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Alle hovedbannermoduler kan ha en overskrift. Som standard brukes **H2**-overskriftskoden for overskriften. Koden kan imidlertid endres for å oppfylle tilgjengelighetskravene. |
@@ -101,6 +107,3 @@ Hvis du vil legge til en hovedbannermodul på en ny side og angi de nødvendige 
 [Tekstblokkmodul](add-content-rich-block.md)
 
 [Videospillermodul](add-video-player.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

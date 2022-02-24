@@ -2,12 +2,15 @@
 title: Konfigurere og behandle en utveksling i en returordre
 description: Dette emnet forklarer hvordan du konfigurerer en utveksling ved en retur i Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/28/2021
+manager: AnnBe
+ms.date: 11/12/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6d7688e78a375bc262b1156c5439c0fff7cd1f0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758342"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459639"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurere og behandle en utveksling i en returordre
 
@@ -30,14 +33,11 @@ I tidligere versjoner av Dynamics 365 Commerce ble returer mot kundeordrer behan
 
 Funksjonaliteten er imidlertid lagt til for å støtte scenarier der utvekslinger blir utført på returordrer. Commerce bruker nå salgsordredokumentet i stedet for returordredokumentet til å behandle disse transaksjonstypene.
 
-## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurer Commerce til å støtte utvekslinger på returordrer
+## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurere Commerce til å støtte utvekslinger på returordrer
 
-> [!NOTE]
-> I Commerce, versjon 10.0.20 og nyere er en ny funksjon kalt Enhetlig returbehandling i salgssted tilgjengelig. Hvis du aktiverer denne funksjonen, er ikke konfigurasjonstrinnene nedenfor nødvendige. **Behandle returer som salgsordrer** blir en permanent konfigurert innstilling, og du kan ikke endre den.
+Følg denne fremgangsmåten for å konfigurere systemet til å støtte utvekslinger på returordrer.
 
-Følg denne fremgangsmåten for å konfigurere systemet til å støtte utvekslinger på returordrer (hvis du ikke har aktivert funksjonen **Enhetlig returbehandling i salgssted**.
-
-1. Gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Commerce-parametere**. Sett alternativet **Behandle returordrer som salgsordrer** til **Ja** i hurtigfanen **Kundeordrer**.
+1. Gå til **Detaljhandel og handel \> Hovedkvarteroppsett \> Parametere \> Handelsparametere**. Sett alternativet **Behandle returordrer som salgsordrer** til **Ja** i hurtigkategorien **Kundeordrer**.
 2. Kjør jobben **Distribusjonsplan for global konfigurasjon** (**1110**).
 
 ## <a name="make-an-exchange"></a>Gjøre en utveksling
@@ -51,6 +51,3 @@ For å gi deg bedre oversikt over de ulike beløpene for handlekurven, er tre ny
 - **Brukt innbetaling** – Innbetalingsbeløpet som brukes for en transaksjon når brukeren utfører en kundeordrehenting. Hvis det ikke finnes overstyring av innbetaling, og en innbetaling på 10 prosent er konfigurert, vil beløpet i dette feltet være 90 prosent av totalbeløpet for kundeordren.
 - **Utfør beløp** – Det totale beløpet for linjer der leveringsmåten ble satt til **Utfør** når kundeordren ble opprettet eller redigert, eller under en kundeordreutveksling. Beløpet i dette feltet inneholder avgifter og tillegg.
 - **Returbeløp** – Det totale beløpet for linjer som har negative antall under kundeordreutvekslingen. Beløpet i dette feltet inneholder avgifter og tillegg.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

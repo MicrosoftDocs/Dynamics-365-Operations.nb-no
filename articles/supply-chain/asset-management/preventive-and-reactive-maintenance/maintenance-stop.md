@@ -1,10 +1,12 @@
 ---
 title: Vedlikeholdsnedetid
 description: Dette emnet forklarer hvordan nedetid ved vedlikehold brukes til å få en oversikt over kapasiteten som kreves for å utføre vedlikeholdsjobber på bestemte aktiva i en bestemt periode.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727924"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017965"
 ---
 # <a name="maintenance-downtime-activities"></a>Vedlikeholdsnedetid
 
@@ -40,7 +42,7 @@ Når det er valgt aktiva i en registrering av vedlikeholdsnedetid, inkluderes al
 
 Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** for å åpne en liste over alle aktivitetene for vedlikeholdsnedetid og se informasjon om aktivitetene. Klikk på en kobling i kolonnen **Aktiviteter for vedlikeholdsnedetid** for å åpne detaljvisningen. Illustrasjonen nedenfor viser et eksempel på listen **Aktiviteter for vedlikeholdsnedetid**.
 
-![Figur 1.](media/19-preventive-maintenance.png)
+![Figur 1](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Opprette en aktivitet for vedlikeholdsnedetid
@@ -61,7 +63,7 @@ Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid
 
 Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for vedlikeholdsnedetid**.
 
-![Figur 2.](media/20-preventive-maintenance.png)
+![Figur 2](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Vedlikeholdsjobbene for arbeidsordrer og vedlikeholdsplanlinjene som er relatert til de valgte aktivaene, oppdateres automatisk hvis nye arbeidsordrer eller vedlikeholdsplanlinjer opprettes etter at du har opprettet aktiviteten for vedlikeholdsnedetid. Hvis du for eksempel planlegger vedlikeholdsplaner eller vedlikeholdsrunder for de tilknyttede aktivaene to dager etter at aktiviteten for vedlikeholdsnedetid ble opprettet, legges nye vedlikeholdsplanlinjer automatisk til i vedlikeholdsnedetidsaktiviteten.
@@ -72,7 +74,7 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 10. Klikk på **OK** for å starte beregningen. Totalt antall timer vises i oversikten **Kapasitetsbelastning**. I fanen **Kapasitetsbelastning** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosetimer. Illustrasjonen nedenfor viser resultatet av en **Kapasitetsbelastning**-beregning.
 
-![Figur 3.](media/21-preventive-maintenance.png)
+![Figur 3](media/21-preventive-maintenance.png)
 
 11. Når du har fått en oversikt over kapasitetsbelastningen, hvis du vil foreta justeringer på vedlikeholdsjobber for arbeidsordrer eller vedlikeholdsplanlinjer, går du tilbake til detaljvisningen **Aktiviteter for vedlikeholdsnedetid** og velger linjene du vil justere i hurtigfanene **Resulterende vedlikeholdsjobber for arbeidsordrer** og **Vedlikeholdsplanlinjer**.
 
@@ -89,11 +91,8 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 16. Klikk på **OK** for å starte beregningen. Totalt antall vareprognoser vises i oversikten **Vareprognose**. I fanen **Vareprognose** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosevarer. Illustrasjonen nedenfor viser resultatet av en **Vareprognose**-beregning.
 
-![Figur 4.](media/22-preventive-maintenance.png)
+![Figur 4](media/22-preventive-maintenance.png)
 
 - Du kan kopiere aktiva fra én aktivitet for vedlikeholdsnedetid til en annen. I **Alle aktiviteter for vedlikeholdsnedetid** velger du **Kopier aktiviteter for vedlikeholdsnedetid**-knappen, gjør valgene i feltene **Fra aktiviteter for vedlikeholdsnedetid** og **Til aktiviteter for vedlikeholdsnedetid**, og klikker på **OK**.
 - I **Alle aktiviteter for vedlikeholdsnedetid** klikker du på knappen **Vedlikeholdsplanlinjer** eller **Aktive arbeidsordrer** for å åpne de tilknyttede listene og vise linjene som er knyttet til den valgte aktiviteten for vedlikeholdsnedetid.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

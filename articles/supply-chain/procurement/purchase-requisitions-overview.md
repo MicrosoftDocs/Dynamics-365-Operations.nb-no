@@ -1,28 +1,28 @@
 ---
 title: Oversikt over innkjøpsrekvisisjoner
 description: Dette emnet beskriver arbeidsflyten for innkjøpsrekvisisjoner og de ulike statusene som en innkjøpsrekvisisjon kan ha.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "2174"
-- intro-internal
+ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982908"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020085"
 ---
 # <a name="purchase-requisition-overview"></a>Oversikt over innkjøpsrekvisisjoner
 
@@ -49,7 +49,7 @@ Du kan konfigurere arbeidsflytprosessen for innkjøpsrekvisisjon for å sende en
 
 Diagrammet nedenfor viser statusene som er tilordnet til en innkjøpsrekvisisjon og en innkjøpsrekvisisjonslinje når de flyttes i arbeidsflytprosessen.  
 
-[![Statuser for innkjøpsrekvisisjonshode og -linjer.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Statuser for innkjøpsrekvisisjonshode og -linjer](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Relasjoner mellom status for innkjøpsrekvisisjonshode og linjer
 
@@ -181,7 +181,7 @@ Hvis du vil opprette en bestilling for innkjøpsrekvisisjonslinjer som ikke er k
 
 Prosessen for behovskonsolidering starter når en innkjøpsrekvisisjon er godkjent i en arbeidsflyt, og, hvis budsjettkontroll er er konfigurert for organisasjonen, når budsjettreservasjonene og forhåndsdisposisjoner er registrert. Diagrammet nedenfor viser prosessflyten for behovskonsolidering.  
 
-[![Prosessflyt for behovskonsolidering.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Prosessflyt for behovskonsolidering](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Hvis du vil konsolidere godkjente innkjøpsrekvisisjonslinjer, gjør du følgende:
 
@@ -192,7 +192,8 @@ Hvis du vil konsolidere godkjente innkjøpsrekvisisjonslinjer, gjør du følgend
 5.  Opprette bestillinger for konsoliderte innkjøpsrekvisisjonslinjer eller for innkjøpsrekvisisjonslinjer i en konsolideringsmulighet.
 
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Opprette en rekvisisjon for forbruk](tasks/create-requisition-consumption.md)
 
@@ -200,6 +201,3 @@ Hvis du vil konsolidere godkjente innkjøpsrekvisisjonslinjer, gjør du følgend
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

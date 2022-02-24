@@ -1,13 +1,16 @@
 ---
-title: Dataverse-tabeller
-description: Microsoft Dynamics 365 Human Resources bruker Dataverse til å aktivere scenarioer for utvidbarhet og integrering.
+title: Common Data Service-enheter
+description: Microsoft Dynamics 365 Human Resources bruker Common Data Service til å aktivere scenarioer for utvidbarhet og integrering.
 author: andreabichsel
-ms.date: 01/25/2021
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,32 +18,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6774fad3543d80d04faacf5960c8037f1734f084
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 988fa0b6d39a49b973626a8a0abe83c546f42297
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066831"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4530012"
 ---
-# <a name="dataverse-tables"></a>Dataverse-tabeller
+# <a name="common-data-service-entities"></a>Common Data Service-enheter
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
+Microsoft Dynamics 365 Human Resources bruker Common Data Service til å aktivere scenarioer for utvidbarhet og integrering.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Hvis du vil ha mer informasjon om Common Data Service, kan du se [Hva er Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
-Microsoft Dynamics 365 Human Resources bruker Dataverse til å aktivere scenarioer for utvidbarhet og integrering.
+Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 
-> [!NOTE]
-> Human Resources-enheter tilsvarer Dataverse-tabeller. Hvis du vil ha mer informasjon om Dataverse (tidligere Common Data Service) og terminologioppdateringer, kan du se [Hva er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+## <a name="benefit-entities"></a>Fordelsenheter
 
-Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
-
-## <a name="benefit-tables"></a>Fordelstabeller
-
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
-| Beregningsfrekvens for fordeler | cdm_benefitcalculationfrequency |
+| Fordelsberegningsfrekvens | cdm_benefitcalculationfrequency |
 | Lønnsperiode i fordelsberegningsfrekvens | cdm_benefitcalculationfrequencypayperiod |
 | Beregningssats for fordeler | cdm_benefitcalculationrate |
 | Detaljer om beregningssats for fordeler | cdm_benefitcalculationratedetail |
@@ -48,9 +47,9 @@ Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 | Fordelsplan | cdm_benefitplan (ikke aktivert for støtte for egendefinerte felt) |
 | Fordelstype | cdm_benefittype |
 
-## <a name="business-process-tasks-tables"></a>Tabeller for forretningsprosessoppgaver
+## <a name="business-process-tasks-entities"></a>Enheter for forretningsprosessoppgaver
 
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
 | Forretningsprosesskalender | cdm_businessprocesscalendar |
 | Tilordning av forretningsprosessgruppe | cdm_businessprocessgroupassignment |
@@ -59,11 +58,11 @@ Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 | Topptekst for sjekklistemal | cdm_businessprocesstemplateheader |
 | Oppgave for sjekklistemal | cdm_businessprocesstemplatetask |
 
-## <a name="compensation-tables"></a>Kompensasjonstabeller
+## <a name="compensation-entities"></a>Kompensasjonsenheter
 
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
-| Fast kompensasjonsplan | cdm_compensationfixedplan |
+| Fast plan for kompensasjon | cdm_compensationfixedplan |
 | Kompensasjonsrutenett | cdm_compensationgrid |
 | Kompensasjonsnivå | cdm_compensationlevel |
 | Kompensasjon, lønnsfrekvens | cdm_compensationpayfrequency |
@@ -78,9 +77,9 @@ Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 | Overdragelsesregel | cdm_vestingrule |
 | Fast kompensasjon for arbeider | cdm_workerfixedcompensation |
 
-## <a name="organization-tables"></a>Organisasjonstabeller
+## <a name="organization-entities"></a>Organisasjonsenheter
 
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
 | Avdeling | cdm_department |
 | Ansettelse | cdm_employment |
@@ -96,11 +95,11 @@ Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 | Stillingstittel | cdm_title |
 
 > [!NOTE]
-> Finansdimensjoner for **Stillingstype**, **Stillingstilordning** og **Ansettelse** gir enveis integrering til Dataverse. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Dataverse til Human Resources. 
+> Finansdimensjoner for **Stillingstype**, **Stillingstilordning** og **Ansettelse** gir enveis integrering til Common Data Service. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Common Data Service til Human Resources. 
 
-## <a name="leave-and-absence-tables"></a>Tabeller for permisjon og fravær
+## <a name="leave-and-absence-entities"></a>Permisjons- og fraværsenheter
 
-| Navn | Tabell |
+| Navn | Entity |
 | --- | --- |
 | Banktransaksjon for permisjon | cdm_leavebanktransaction |
 | Permisjonsregistrering | cdm_leaveenrollment |
@@ -110,9 +109,9 @@ Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 | Permisjonstype | cdm_leavetype |
 | Årsakskode for permisjonstype | cdm_leavetypereasoncode |
 
-## <a name="payroll-tables"></a>Lønnstabeller
+## <a name="payroll-entities"></a>Lønnsenheter
 
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
 | Lønnssyklus | cdm_paycycle |
 | Lønnsperiode | cdm_payperiod |
@@ -120,11 +119,11 @@ Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 | Bankkontobetaling | cdm_bankaccountdisbursement |
 | Avgiftsområde | cdm_taxregion |
 
-## <a name="worker-tables"></a>Arbeidertabeller
+## <a name="worker-entities"></a>Arbeiderenheter
 
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
-| Worker | cdm_worker |
+| Arbeider | cdm_worker |
 | Arbeideradresse | cdm_workeraddress |
 | Arbeiderens personopplysninger | cdm_workerpersonaldetail |
 | Personidentifikasjonsnummer for arbeider | cdm_workerpersonidentificationnumber |
@@ -136,55 +135,48 @@ Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 | Tidsintervall for arbeidskalender | cdm_workcalendartimeinterval (ikke aktivert for støtte for egendefinerte felt) |
 | Bankkonto for arbeider | cdm_workerbankaccount |
 
-## <a name="worker-setup-tables"></a>Tabeller for arbeideroppsett
+## <a name="worker-setup-entities"></a>Enheter for arbeideroppsett
 
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
 | Veteranstatus | cdm_veteranstatus |
 | Etnisk opprinnelse | cdm_ethnicorigin |
 | Årsakskode | cdm_reasoncode |
 | Utstedende byrå for personidentifikasjon | cdm_personidentificationissuingagency |
 
-## <a name="competency-tables"></a>Kompetansetabeller
+## <a name="competency-entities"></a>Kompetanseenheter
 
-| Navn | Tabell |
+| Navn | Enhet |
 | --- | --- |
 | Kompetansetype | cdm_skilltype |
 
-## <a name="table-relationship-models"></a>Tabellrelasjonsmodeller
+## <a name="entity-relationship-models"></a>Enhetsrelasjonsmodeller
 
-### <a name="worker"></a>Worker
+### <a name="worker"></a>Arbeider
 
-![Arbeider.](./media/HCMCommon-worker-entity-diagram.png)
+![Arbeider](./media/HCMCommon-worker-entity-diagram.png)
 
 ### <a name="job-and-job-position"></a>Jobb og stilling
 
-![Jobb og stilling.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Jobb og stilling](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
 ### <a name="benefits"></a>Fordeler
 
-![Fordeler.](./media/HCMCommon-benefits-entity-diagram.png)
+![Fordeler](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### <a name="compensation"></a>Kompensasjon
 
-![Kompensasjon.](./media/HCMCommon-compensation-entity-diagram.png)
+![Kompensasjon](./media/HCMCommon-compensation-entity-diagram.png)
 
-### <a name="leave"></a>Ferie
+### <a name="leave"></a>Permisjon
 
-![Ferie.](./media/HCMCommon-leave-entity-diagram.png)
+![Permisjon](./media/HCMCommon-leave-entity-diagram.png)
 
 ### <a name="work-calendar"></a>Arbeidskalender
 
-![Arbeidskalender.](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Arbeidskalender](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## <a name="see-also"></a>Se også
 
-[Velg en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)<br>
-[Konfigurere Dataverse-integrering](hr-admin-integration-common-data-service.md)<br>
-[Konfigurere virtuelle Dataverse-tabeller](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Vanlige spørsmål om virtuelle tabeller for Human Resources](hr-admin-virtual-entity-faq.md)<br>
-[Hva er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologioppdateringer](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Velge en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)</br>
+[Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)

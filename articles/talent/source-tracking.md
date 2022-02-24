@@ -102,6 +102,3 @@ For å unngå negativ påvirkning på brukergrensesnittet må du ikke redigere e
 - **Annet**
 
 I stedet kan du utvide **TalentSource**-opplistingen for å legge til andre kildetyper.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

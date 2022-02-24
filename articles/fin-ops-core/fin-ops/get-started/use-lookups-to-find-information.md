@@ -1,10 +1,12 @@
 ---
 title: Finne informasjon ved hjelp av oppslag
-description: I dette emnet får du lære mer om oppslagsfunksjoner, og du får flere nyttige tips for å bruke oppslag i systemet på best mulig måte.
+description: Mange felt har oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte.
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d75e66e8fb9f1a227c9dd15f92ca5db433c0db4a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069304"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798149"
 ---
 # <a name="find-information-by-using-lookups"></a>Finne informasjon ved hjelp av oppslag
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Mange felt har oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte.
 
@@ -47,15 +46,15 @@ Anta for eksempel at et oppslagsfelt kalles **By**.
 
 Når fokus er i **By**-feltet, kan du begynne å søke etter byen som du vil bruke, ved å skrive inn noen få bokstaver, for eksempel "col." Når at har sluttet å skrive, åpnes oppslaget automatisk, filtrert etter byene som begynner med "col".
 
-[![Eksempel på forutseende oppslag.](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
+[![Eksempel på forutseende oppslag](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png)
 
 Markøren er på dette tidspunktet fremdeles i oppslagsfeltet. Hvis du fortsetter å skrive slik at verdien er "colum", justeres innholdet oppslag automatisk for å gjenspeile den siste verdien i kontrollen.
 
-![Eksempel på oppdatering av oppslagsfilter.](./media/updatefilterlookupexample.png)
+![Eksempel på oppdatering av oppslagsfilter](./media/updatefilterlookupexample.png)
 
 Selv om fokus fremdeles er i oppslagskontrollen, kan du også bruke **pil opp** eller **pil ned** til å merke raden som du vil velge. Hvis du trykker på **Angi**, velges den merkede raden fra oppslaget, og verdien i kontrollen oppdateres.
 
-![Endre valg i oppslag.](./media/changingselectionlookup.png)
+![Endre valg i oppslag](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Skrive inn mer enn ID-er
 
@@ -65,25 +64,22 @@ La oss for eksempel se på **Kundekonto**-feltet ved oppretting av en salgsordre
 
 Hvis brukeren begynte å skrive inn en **konto-ID** i oppslagskontrolle, åpnes rullegardinmenyen automatisk som beskrevet i den forrige delen, og brukeren ser oppslaget som vist nedenfor.
 
-[![Kontekstavhengig oppslag når det angis en kundekonto-ID.](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
+[![Kontekstavhengig oppslag når det angis en kundekonto-ID](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
 Brukeren kan imidlertid nå også angi begynnelsen på et **kontonavnet**. Hvis dette blir funnet, vil brukeren se oppslaget nedenfor. Legg merke til hvordan **Navn**-kolonnen flyttes slik at det er den første kolonnen i oppslaget, og hvordan oppslaget sorteres og filtreres basert på **Navn**-kolonnen.
 
-[![Kontekstavhengig oppslag når det angis et kundenavn.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Kontekstavhengig oppslag når det angis et kundenavn](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
 ## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Bruke kolonneoverskriftene i rutenett for mer avansert filtrering og sortering
 
 Oppslagsforbedringene som er beskrevet i de forrige to delene, forbedre betydelig brukeres mulighet til å navigere i oppslagsradene basert på et "begynner med"-søk for **ID**- eller **Navn**-feltet i oppslaget. Det finnes imidlertid situasjoner der mer avansert filtrering (eller sortering) er nødvendig for å finne den riktige raden. I slike tilfeller må brukeren bruke filtrerings- og sorteringsalternativene i kolonneoverskriftene i rutenettet i oppslaget. Anta for eksempel at en ansatt angir en salgsordrelinje som må riktig "kabel" som produkt. Det er ikke særlig nyttig å skrive inn "kabel" i **Varenummer**-kontrollen, fordi det ikke finnes produktnavn som begynner med "kabel".
 
-![Oppslag med tomt element.](./media/emptyitemlookup.png)
+![Oppslag med tomt element](./media/emptyitemlookup.png)
 
 Brukeren må i stedet fjerne verdien i oppslagskontrollen, åpne rullegardinmenyen for oppslaget og filtrere rullegardinmenyen ved hjelp av kolonneoverskriften i rutenett, som vist nedenfor. En bruker som bruker mus (eller berøring) kan ganske enkelt klikk på (eller berøre) en kolonneoverskrift for å få tilgang til filtrerings- og sorteringsalternativene for den aktuelle kolonnen. En bruker som bruker tastatur trenger bare å trykke på **Alt**+**Pil** **ned** en gang til for å flytte fokus til rullegardinmenyen, og deretter kan brukeren bruker Tab-tasten for å gå til riktig kolonne og trykke på **Ctrl**+**G** for å åpne rullegardinmenyen for kolonneoverskriften i rutenettet.
 
-[![Oppslag for rutenettfilterelement.](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
+[![Oppslag for rutenettfilterelement](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png)
 
 Når filteret er brukt (se bildet nedenfor), kan brukeren søke etter og merke raden som vanlig.
 
-![Elementoppslag med filterredigering.](./media/filtereditemlookup.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Elementoppslag med filterredigering](./media/filtereditemlookup.png)

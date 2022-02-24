@@ -2,9 +2,11 @@
 title: " Definere kanalattributter"
 description: Forbedre kanalen ved å legge til kanal- og produktattributter.
 author: jashanno
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttributeGroupAttribute, RetailAddChannelItems, RetailCatalogProductAttributeValue, RetailMedia
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e99c59eba133427dad6d6a27a96b64f06621c932924293e3978d7f540e86153e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f50e925689f11f67285c956aec1a7ece235cdb74
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726413"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964701"
 ---
 # <a name="define-channel-attributes"></a> Definere kanalattributter
 
@@ -31,7 +33,7 @@ Forbedre kanalen ved å legge til kanal- og produktattributter. Du må legge til
 ## <a name="define-channel-product-attribute"></a>Definer kanalproduktattributt.
 1. Gå til Detaljhandel og handel > Kanaloppsett > Kanalkategorier og produktattributter.
 2. Velg Contoso Retail\Mote\Houston i treet.
-3. Klikk på Rediger.
+3. Klikk Rediger.
 4. Angi eller velg en verdi i Kategorihierarki-feltet.
     * Navigasjonshierarkiet brukes til å navigere produktet i kanalene.  
 5. Vis Attributtgruppe-delen.
@@ -69,6 +71,3 @@ Forbedre kanalen ved å legge til kanal- og produktattributter. Du må legge til
 33. Klikk OK.
 34. Klikk Lagre.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

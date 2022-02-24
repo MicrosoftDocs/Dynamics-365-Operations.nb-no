@@ -1,28 +1,28 @@
 ---
 title: Startside for budsjettering
 description: Dette emnet gir en oversikt over komponenter i budsjetteringsfunksjonaliteten, budsjetteringsverktøy og rapporteringsfunksjoner i Microsoft Dynamics 365 Finance.
-author: panolte
-ms.date: 04/29/2021
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 08/09/2017
+ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "106043"
-- intro-internal
+ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: panolte
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: af006a94d29781473c164d108fb48ca7d00d169d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983958"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962916"
 ---
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
@@ -30,11 +30,12 @@ ms.locfileid: "7983958"
 
 Dette emnet gir en oversikt over komponenter i budsjetteringsfunksjonaliteten, budsjetteringsverktøy og rapporteringsfunksjoner. 
 
-## <a name="components-of-budgeting-functionality"></a>Komponenter i budsjetteringsfunksjonaliteten
+<a name="components-of-budgeting-functionality"></a>Komponenter i budsjetteringsfunksjonaliteten
+-------------------------------------
 
 Ressursplanleggingssyklusen for et selskap består vanligvis av planlegging, budsjettering og prognoseaktiviteter.
 
-[![Komponenter i budsjetteringsfunksjonaliteten.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Komponenter i budsjetteringsfunksjonaliteten](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Prosessene for både langsiktig strategisk planlegging og årlig budsjettplanlegging støttes gjennom et budsjettplandokument. Budsjettplandokumenter er tett integrert med Microsoft Excel. Brukere kan konfigurere et ubegrenset antall monetære og kvantitative scenarier og kan også definere et organisasjonshierarki for budsjettering for å støtte metoder for budsjettering ovenfra og nedenfra. Når et budsjett er opprettet og godkjent i programmet, kan du konvertere budsjettplanen til en budsjettregisteroppføring. Budsjettregisteroppføringer har verktøy for å vedlikeholde budsjettet og holde beløp sporbare via budsjettkoder. Budsjettregisteroppføringer gjør at du kan endre opprinnelige budsjetter, utføre overføringer og overføre budsjettbeløp fra forrige år. Et firma kan aktivere budsjettkontroll basert på det etablerte budsjettet. Nivået av kontroll avhenger av organisasjonskulturen og modenhetsnivået for organisasjonen. Organisasjoner som har et lavt modenhetsnivå, kan la budsjettet være "som det er" og være mer reaktive enn proaktive hvis et budsjett ikke oppfyller forventningene. Andre organisasjoner kan aktivere policyer for budsjettkontroll som hindrer brukere fra å foreta kjøp hvis budsjettmidler ikke er tilgjengelige.
 
@@ -48,7 +49,7 @@ Svært modne organisasjoner kan opprette en organisasjonskultur der ansatte har 
 -   [Budsjettplanleggingsmaler for Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budsjetteringsverktøy
-[![Budsjetteringsverktøy.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budsjetteringsverktøy](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Ytterligere funksjoner for planlegging og budsjettering er tilgjengelige og er integrert med finansbudsjetter.
 
@@ -69,6 +70,3 @@ Du kan for eksempel definere hvem som skal foreta budsjettering, hva som skal bu
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,25 +1,28 @@
 ---
 title: Filformater for betalingsmåter
 description: Dette emnet beskriver to metoder for å få filformater du kan bruke for betalingsmåter.
-author: anasyash
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 262514
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
-ms.author: anasyash
+ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca396424256660f251d6889afffb3e90bb76fd54
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 36f12fbc21fe782555c348f8a401e7aef6219f41
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592560"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408305"
 ---
 # <a name="file-formats-for-methods-of-payment"></a>Filformater for betalingsmåter
 
@@ -36,7 +39,7 @@ Det finnes to metoder du kan bruke til å få filformater for bruk med betalings
 
 ### <a name="method-1-electronic-reporting-file-formats"></a>Metode 1: formater for elektronisk rapportering
 
-For filformater som er basert på ER-konfigurasjoner, må du importere konfigurasjonene fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Når du har importert rapporteringskonfigurasjoner for disse filformatene, kan du velge de importerte formatene på siden **Betalingsmåter**. Prosessen med å importere og velge filformater for Europa ligner på fremgangsmåten for Japan. Hvis du vil ha mer informasjon, se [Aktivere JBA-betalingsfilformatet](tasks/jba-payment-file-format.md)
+For filformater som er basert på ER-konfigurasjoner, må du importere konfigurasjonene fra Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Når du har importert rapporteringskonfigurasjoner for disse filformatene, kan du velge de importerte formatene på siden **Betalingsmåter**. Prosessen med å importere og velge filformater for Europa ligner på fremgangsmåten for Japan. Hvis du vil ha mer informasjon, se [Aktivere JBA-betalingsfilformatet](tasks/jba-payment-file-format.md)
 
 ### <a name="method-2-x-file-formats"></a>Metode 2: X++-filformater
 
@@ -52,6 +55,3 @@ For å velge filformatene som er basert på X++-kode, kan du fullføre trinnene 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

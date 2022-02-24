@@ -151,6 +151,3 @@ De oppdaterte tilordningene skal se ut som følgende bilder.
 ![Arbeidere til arbeider-oppgaven](./media/WorkerMapping.png)
 
 ![Endring av Kjønn-feltet](./media/WorkerTransform.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

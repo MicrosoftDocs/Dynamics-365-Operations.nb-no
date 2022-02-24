@@ -2,30 +2,35 @@
 title: Oversikt over oppgavebehandling
 description: Dette emnet gir en oversikt over oppgavebehandling for ledere og arbeidere i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7cdcc0ba6a9f5a3d9dd4ea781adc9e81c45e3d02
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 3891d846f51b5335809876a6557dfb5a031272c8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985399"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414708"
 ---
 # <a name="task-management-overview"></a>Oversikt over oppgavebehandling
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir en oversikt over oppgavebehandling for ledere og arbeidere i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 I et detaljhandelsmiljø er det alltid vanskelig å sørge for at oppgavene utføres av den riktige personen til riktig tid. Forhandlerne må kunne varsle arbeidere om kommende oppgaver og gi relatert forretningskontekst, slik at oppgavene kan fullføres korrekt og til rett tid.
 
@@ -37,7 +42,7 @@ Butikkledere kan bruke oppgavebehandling til å tilordne oppgaver til enkeltarbe
 
 Følgende illustrasjon viser begrepsmessig arkitektur for oppgavebehandling i Commerce.
 
-![Begrepsmessig arkitektur for oppgavebehandling.](media/Tasks-management-conceptual-architecture.png)
+![Begrepsmessig arkitektur for oppgavebehandling](media/Tasks-management-conceptual-architecture.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -48,6 +53,3 @@ Følgende illustrasjon viser begrepsmessig arkitektur for oppgavebehandling i Co
 [Tilordne oppgavelister til butikker eller ansatte](task-mgmt-assign-lists.md)
 
 [Oppgavebehandling på salgsstedet](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

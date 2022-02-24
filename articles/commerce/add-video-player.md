@@ -2,30 +2,36 @@
 title: Videospillermodul
 description: Dette emnet dekker videospillermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731725"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414599"
 ---
 # <a name="video-player-module"></a>Videospillermodul
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker videospillermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Videospillermodulen brukes til å støtte videoavspilling. Den kan legges til på en hvilken som helst side, forutsatt at videoinnhold lastes opp til og er tilgjengelig i innholdsbehandlingssystemet (CMS). Videospillermodulen støtter MP4-medietypen.
 
@@ -43,16 +49,12 @@ Videospiller-modulen støtter også sekundære lydspor. Når en video er lastet 
 
 Bildet nedenfor viser et eksempel på en videospillermodul på en hjemmeside.
 
-![Eksempel på en videospillermodul.](./media/ecommerce-videoplayer.PNG)
+![Eksempel på en videospillermodul](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Egenskaper for videospillermodul
 
 | Egenskapsnavn         | Verdi                               | beskrivelse |
 |-----------------------|-------------------------------------|-------------|
-| Overskrift               | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Som standard brukes **H2**-overskriftskoden, men koden kan endres for å imøtekomme tilgjengelighetskrav. |
-| Rik tekst             | Avsnittstekst | Modulen støtter avsnittstekst i rikt tekstformat. Noen grunnleggende funksjoner for rik tekst støttes, for eksempel hyperkoblinger og fet, understreket og kursivert tekst. Noen av disse funksjonene kan overstyres av sidetemaet som brukes på modulen. |
-| Sammenkobling                  | Koblingstekst, URL for kobling, ARIA (Accessible Rich Internet Applications) og **Åpne kobling i ny kategori**-velger | Modulen støtter én eller flere "handlingsoppfordring"-koblinger. Hvis en kobling er lagt til, er det nødvendig med en koblingstekst, en URL-adresse og en ARIA-etikett. ARIA-etiketter bør være beskrivende for å oppfylle tilgjengelighetskravene. Koblinger kan konfigureres slik at de åpnes i en ny fane. |
-| Undertekst              | Overskrift, tekst eller koblinger | Du kan legge til mer kontekst for videospillermodulen, for eksempel en forfatter eller et designernavn, eller koblinger til personlige blogger. |
 | Automatisk avspilling             | **Sann** eller **Usann**               | Når verdien settes til **Sann**, spilles videoen automatisk. |
 | Demp                  | **Sann** eller **Usann**               | Når verdien settes til **Sann**, dempes lyden. For denne spilleren er standardverdien **Usann**. I Chrome-leseren dempes autokjørvideoer som standard, og lyden spilles av bare hvis brukeren spiller av videoen manuelt. |
 | Løkke                  | **Sann** eller **Usann**               | Når verdien settes til **Sann**, gjentas videoen i en løkke. |
@@ -62,9 +64,6 @@ Bildet nedenfor viser et eksempel på en videospillermodul på en hjemmeside.
 | Kontroller for videospiller | **Sann** eller **Usann**               | Når verdien settes til **Sann**, vises alle videospillerkontroller. Disse kontrollene inkluderer knapper for spill av og pause, en fremdriftsindikator og alternativer for teksting for hørselshemmede. |
 | Skjul plakatbilde     | **Sann** eller **Usann**               | En video kan ha en plakatramme. Når verdien for denne egenskapen er satt til **Sann**, er plakatrammen skjult. |
 | Maskenivå            | Et tall fra **0** til **100** | Masken som brukes på videoen for styling. |
-
-> [!IMPORTANT]
-> Egenskapene **Overskrift**, **Rik tekst**, **Kobling** og **Undertekst** er tilgjengelig fra Dynamics 365 Commerce 10.0.20-versjonen.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Legge til en videospillermodul på en side
 
@@ -107,6 +106,3 @@ Hvis du vil legge til en videospillermodul på en ny side og angi de nødvendige
 [Tekstblokkmodul](add-content-rich-block.md)
 
 [Innholdsblokkmodul](add-hero-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

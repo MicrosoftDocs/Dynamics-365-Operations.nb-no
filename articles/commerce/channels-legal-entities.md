@@ -2,30 +2,36 @@
 title: Opprett juridiske enheter
 description: Dette emnet beskriver hvordan du oppretter juridiske enheter i Microsoft Dynamics 365 Commerce, som må opprettes og konfigureres før du oppretter kanaler.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28cbcc42505f1dc90c420adc812735841541c8e0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740437"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414608"
 ---
 # <a name="create-legal-entities"></a>Opprett juridiske enheter
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter juridiske enheter i Microsoft Dynamics 365 Commerce, som må opprettes og konfigureres før du oppretter kanaler.
+
+## <a name="overview"></a>Oversikt
 
 En juridisk enhet er en organisasjon som har en registrert eller lovfestet juridisk struktur. Juridiske enheter kan inngå juridiske kontrakter og er påkrevd for å klargjøre oppgjør som rapporterer om prestasjonen.
 
@@ -44,7 +50,7 @@ Hvis du vil opprette en ny juridisk enhet i Dynamics 365 Commerce, gjør du føl
 1. Angi eller velg en verdi i **Land/område**-feltet.
 1. Velg **OK**. 
 
-   ![Opprette juridisk enhet.](media/legal-entities.png)
+   ![Opprette juridisk enhet](media/legal-entities.png)
 
 1. I **Generelt**-seksjonen angir du følgende generelle informasjon om den juridiske enheten: 
    1. Angi et søkenavn hvis et søkenavn er påkrevd. Et søkenavn er et alternativt navn som kan brukes til å søke etter den juridiske enheten. 
@@ -67,7 +73,7 @@ Hvis du vil opprette en ny juridisk enhet i Dynamics 365 Commerce, gjør du føl
 
 Bildet nedenfor viser et detaljer om et eksempel på en juridisk enhet.
 
-![Generell del om juridisk enhet.](media/legal-entities-general.png)
+![Generell del om juridisk enhet](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -80,6 +86,3 @@ Bildet nedenfor viser et detaljer om et eksempel på en juridisk enhet.
 [Oversikt over kanaler](channels-overview.md)
 
 [Forutsetninger for kanaloppsett](channels-prerequisites.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

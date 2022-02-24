@@ -1,10 +1,12 @@
 ---
 title: Foreta manuelle justeringer i basislinjeprognosen
 description: Dette emnet forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: afdcbb98c96b2a685f64a16886b9a064ed13c2c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778039"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967036"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
 
@@ -67,13 +69,14 @@ Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk forma
 
 **Merknader:**
 
--   Hvis du aktiverer **Prognosemodellvalg på detaljer om behovsprognose** fra Funksjonsbehandling, vil du kunne velge prognosemodeller som skal inkluderes for den historiske prognosen, på siden **Detaljer om behovsprognose**. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
+-   Hvis du aktiverer **Prognosemodellvalg på detaljer om behovsprognose** fra Funksjonsbehandling, vil du kunne velge prognosemodeller som skal inkluderes for den historiske prognosen, på siden **Detaljer om behovsprognose**.
 -   Konfidensintervallet som vises i delen **Prognose** på siden, representerer forskjellen mellom den øvre grensen for konfidensintervallet og den nedre grensen for konfidensintervallet. Hvis du vil se verdiene for øvre og nedre grense, holder du musepekeren over diagrammet i delen **Grafisk presentasjon av historisk behov og prognose**.
 -   Hvis du bruker behovsprognose og Microsoft Azure Machine Learning, kan du angi konfidensnivåprosenten som prognosen som genereres, skal ha. Konfidensintervallet består av et verdiområde som fungerer som gode estimater for behovsprognosen. En konfidensnivåprosent på 95 angir at det er 5 prosent risiko for at behovsprognosen faller utenfor området for konfidensintervallet.
 
 Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om behovsprognose** ved å endre verdiene i **Prognose**-raden i delen **Prognose**.
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
 
@@ -81,6 +84,3 @@ Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om beh
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

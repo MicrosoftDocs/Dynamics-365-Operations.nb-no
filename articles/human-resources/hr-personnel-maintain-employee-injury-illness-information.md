@@ -1,86 +1,95 @@
 ---
 title: Vedlikeholde informasjon om ansattskade og -sykdom
-description: Denne oppgaven beskriver hvordan du oppretter et skade- eller sykdomstilfelle.
-author: twheeloc
-ms.date: 11/03/2021
+description: Vi anbefaler at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her.
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 06307331db4d420e99de21c0eb0b3cf1c233f0d5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 367834e7e02d2061732f46d8e697044e7c49b884
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066656"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419859"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Vedlikeholde informasjon om ansattskade og -sykdom
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Det anbefales at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her. 
+Vi anbefaler at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her. 
 
 
 
-Oppgaveveiledningen beskriver de grunnleggende trinnene for oppretting av en skade- eller sykdomssak. I tillegg til detaljene for skaden eller sykdommen, spores en saksstatus. Som standard har saker statusen **Åpen**. Du kan administrere statusen ved å bruke menyelementet **Saksstatus** øverst på siden.
+Oppgaveveiledningen dekker de grunnleggende trinnene for oppretting av en skade- eller sykdomssak. I tillegg til å spore detaljene for skaden eller sykdommen, finner du en saksstatus som også spores.  Saksstandardene med statusen Åpen.  Statusene kan administreres fra menyelementet Saksstatus øverst på siden.
 
-1. Gå til **Personale \> Arbeidere \> Skade og sykdom \> Ulykkes- eller sykdomstilfeller**.
-2. Velg **Ny**.
-3. I **Saksbeskrivelse**-feltet angir du en verdi (for eksempel **Håndleddskade**).
-4. I **Arbeider**-feltet angir eller velger du en verdi (for eksempel **Ana Bowman**).
-5. I feltet **Dato og klokkeslett for tilfellet** angir du en dato og et klokkeslett (for eksempel 20. januar 2016, klokken 10:00).
-6. Angi eller velg en verdi i feltet **Skade- eller sykdomstype** (for eksempel **Brudd**).
-7. Angi eller velg en verdi i **Kroppsdel**-feltet (for eksempel **Håndledd**).
-8. Angi eller velg en verdi i **Utfallstype**-feltet (for eksempel **Terapi**).
-9. Angi dato og klokkeslett i feltet **Dato og klokkeslett rapportert**.
+1. Gå til Personale > Arbeidere > Skade og sykdom > Ulykkes- eller sykdomstilfeller.
+2. Klikk Ny.
+3. Skriv inn en verdi i feltet Saksbeskrivelse.
+    * Eksempel: Håndleddskade  
+4. Angi eller velg en verdi i Arbeider-feltet.
+    * Eksempel: Ahmed Barnett  
+5. Angi dato og klokkeslett i feltet Dato og klokkeslett for tilfellet.
+    * Eksempel: 20.01.2016 10:00:00  
+6. Angi eller velg en verdi i feltet Skade- eller sykdomstype.
+    * Eksempel: Brudd  
+7. Angi eller velg en verdi i Kroppsdel-feltet.
+    * Eksempel: Håndledd  
+8. Angi eller velg en verdi i Utfallstype-feltet.
+    * Eksempel: Psykolog  
+9. Angi dato og klokkeslett i feltet Dato og klokkeslett rapportert.
+    * Datoen og klokkeslettet som rapporteres, må være senere enn datoen og klokkeslettet for hendelsen.  
+10. Angi eller velg en verdi i feltet Person som rapporterte sak.
+    * Dette kan være en ansatt eller et annet vitne til hendelsen.  Eksempel: Ahmed Barnett  
+11. Utvid Tilfelle-delen.
+12. Angi en verdi i feltet Hvor tilfellet inntraff.
+    * Eksempel: Lager  
+13. Velg Ja i feltet På arbeidsstedet.
+    * Hvis hendelsen inntraff på arbeidsstedet, velger du ja.  
+14. Angi dato og klokkeslett i feltet Dato og klokkeslett for arbeidsstart.
+    * Angi datoen og klokkeslettet som den påvirkede personen startet arbeidet på, før den inntrufne hendelsen.  
+15. Angi en verdi i feltet Jobb eller oppgave for ansatt.
+    * Angi jobben eller oppgaven som arbeideren utførte da hendelsen oppstod.  Eksempel: Laste bokser  
+16. Skriv inn en verdi i feltet Årsak til tilfelle.
+    * Angi årsaken til hendelsen.  Eksempel: Skled på vått gulv  
+17. Angi eller velg en verdi i Alvorlighetsnivå-feltet.
+18. Angi en verdi i feltet Handling som må iverksettes.
+    * Eksempel: Rydde opp søl umiddelbart  
+19. Angi en verdi i feltet Dager forventet borte fra arbeid.
+    * Angi hvor mange dager som personen er forventet å være borte fra arbeid.  Når personen kommer tilbake på jobb, oppdaterer du feltet Dager borte fra arbeid med faktisk antall fraværsdager.  
+20. Utvid delen Skade- eller sykdomskostnader.
+21. Klikk Legg til.
+22. Angi en dato i Dato-feltet.
+23. Angi eller velg en verdi i Kostnadstype-feltet.
+    * Eksempel: Terapi Du kan også skrive inn i et beløp og legge ved relevant dokumentasjon til kostnaden, for eksempel fakturaer og legens merknader.  
+24. Klikk Legg til.
+25. Angi en dato i Dato-feltet.
+26. Angi eller velg en verdi i Kostnadstype-feltet.
+    * Eksempel: Lege  
+27. Utvid delen Skade- eller sykdomsbehandlinger.
+28. Klikk Legg til.
+29. Angi dato og klokkeslett i Behandlingsdato-feltet.
+30. Angi eller velg en verdi i Behandlingstype-feltet.
+    * Eksempel: Skinne  
+31. Du kan også angi Ja for delen Sykebesøk på intensivavdeling.
+32. Skriv inn en verdi i Behandlingskommentarer-feltet.
+    * Eksempel: Skinne i to uker  
+33. Skriv inn en verdi i feltet Navn på lege.
+    * Eksempel: Dr. Anderson  
+34. Angi en verdi i feltet Behandlingsfasilitet og -sted.
+    * Eksempel: Almegt. legevakt  
+35. Skriv inn en verdi i Behandlingsdetaljer-feltet.
+    * Eksempel: Røntgenbilder bekrefter brudd, bruk skinne  
+36. Klikk Lagre.
+    * Saksstatusen kan oppdateres når som helst.  Sett saken til arbeid pågår hvis behandlingen av skaden eller sykdommen pågår.  Når du lukker hendelsen, kan du bare legge til eller fjerne kostnader, behandlinger eller arkiveringer knyttet til hendelsen.  Hvis du vil endre annen informasjon, åpner du saken på nytt.  
 
-    Datoen og klokkeslettet for rapporteringen må være senere enn datoen og klokkeslettet for hendelsen.
-
-10. Angi eller velg en verdi i feltet **Person som rapporterte sak**, (for eksempel **Ana Bowman**).
-
-    Den angitte personen kan være en ansatt eller et annet vitne til hendelsen.
-
-11. I **Tilfelle**-delen, i feltet **Hvor tilfellet inntraff**, angir du en verdi (for eksempel **Lager**).
-12. I feltet **På arbeidsstedet** velger du **Ja** hvis tilfellet inntraff på arbeidsstedet.
-13. I feltet **Dato og klokkeslett for arbeidsstart** angir du datoen og klokkeslettet da den berørte personen begynte å arbeide, før tilfellet inntraff.
-14. I feltet **Jobb eller oppgave for ansatt** angir du jobben eller oppgaven som arbeideren utførte da tilfellet inntraff (for eksempel **Laste bokser**). 
-15. I feltet **Årsak til tilfelle** angir du årsaken til tilfellet (for eksempel **Skled på vått gulv**).
-16. Angi eller velg en verdi i **Alvorlighetsnivå**-feltet.
-17. I feltet **Handling som må iverksettes**, angir du en verdi (for eksempel **Rydde opp søl umiddelbart**).
-18. I feltet **Dager forventet borte fra arbeid** angir du antall dager personen forventes å være borte fra arbeid.
-
-    Når personen kommer tilbake på jobb, oppdaterer du feltet **Dager borte fra arbeid** med det faktiske antallet dager personen hadde fravær.
-
-19. I delen **Skade- eller sykdomskostnader** velger du **Legg til**.
-20. Angi en dato i **Dato**-feltet.
-21. Angi eller velg en verdi i **Kostnadstype**-feltet (for eksempel **Terapi**).
-
-    Du kan også skrive inn i et beløp og legge ved relevant dokumentasjon til kostnaden (for eksempel fakturaer og legens merknader).
-
-22. Velg **Legg til**.
-23. Angi en dato i **Dato**-feltet.
-24. Angi eller velg en verdi i **Kostnadstype**-feltet (for eksempel **Lege**).
-25. I delen **Skade- eller sykdomsbehandlinger** velger du **Legg til**.
-26. Angi dato og klokkeslett i **Behandlingsdato**-feltet.
-27. Angi eller velg en verdi i **Behandlingstype**-feltet (for eksempel **Skinne**).
-28. Valgfritt: Angi angi **Ja** for delen **Sykebesøk på intensivavdeling**.
-29. Angi eller velg en verdi i **Behandlingskommentarer**-feltet (for eksempel **Skinne i 2 uker**).
-30. I feltet **Navn på lege** angir du en verdi (for eksempel **Dr. Anderson**).
-31. I feltet **Behandlingsfasilitet og -sted** skriver du inn en verdi (for eksempel **Almegt. legevakt**).
-32. I **Behandlingsdetaljer**-feltet angir du en verdi (for eksempel **Røntgenbilder bekrefter brudd, bruk skinne**).
-33. Velg **Lagre**.
-
-Saksstatusen kan oppdateres når som helst. Hvis behandlingen av skaden eller sykdommen pågår, setter du statusen til **Pågår**. Når du har lukket hendelsen, kan du bare legge til eller fjerne kostnader, behandlinger eller arkiveringer som er knyttet til hendelsen. Hvis du vil endre annen informasjon, må du åpne saken på nytt.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

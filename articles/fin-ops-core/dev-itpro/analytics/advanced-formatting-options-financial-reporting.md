@@ -1,10 +1,12 @@
 ---
 title: Avanserte formateringsalternativer i finansrapportering
-description: Dette emnet beskriver avanserte formateringsfunksjoner, inkludert filtre, begrensninger, rader som ikke skrives ut, og betingelsessetninger i beregninger.
-author: panolte
+description: Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger.
+author: ryansandness
+manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e15869fdd598aeec7ef616f6d54593c7551cb906ab53763a64f4202473bcd926
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760132"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683169"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avanserte formateringsalternativer i finansrapportering
 
@@ -52,7 +54,7 @@ Avansert celleplassering, eller *fremtvinging*, omfatter plassering av bestemte 
 > I mange tilfeller må du konfigurere rapportdefinisjonen slik at kolonneberegninger utføres før radberegninger. Følg fremgangsmåten nedenfor for å fullføre denne konfigurasjonen.
 >
 > 1. Åpne rapportdefinisjonen i Rapportutforming.
-> 2. I fanen **Innstillinger**, under **Beregningsprioritet**, velger du **Utfør kolonneberegning først og deretter rad**.
+> 2. I kategorien **Innstillinger**, under **Beregningsprioritet**, velger du **Utfør kolonneberegning først og deretter rad**.
 
 ## <a name="designing-the-report"></a>Utforme rapporten
 
@@ -156,7 +158,7 @@ Du kan angi kontrollkoder for utskrift for hver kolonne ved hjelp av **Utskrifts
 2. Dobbeltklikk cellen **Utskriftskontroll**.
 3. I dialogboksen **Utskriftkontroll** velger du en kontrollkode for utskrift eller trykker og holder CTRL--tasten for å velge flere koder. Du kan også skrive inn kontrollkoder for utskrift direkte i **Utskriftskontroll**-cellen. Bruk komma for å atskill flere kontrollkoder for utskrift.
 4. Velg alternativer for betinget utskrift.
-5. Klikk på **OK**.
+5. Klikk **OK**.
 
 ### <a name="regular-print-control-codes"></a>Vanlige kontrollkoder for utskrift
 
@@ -281,10 +283,10 @@ Hvis du vil begrense en beregning til én enkelt rapporteringsenhet i et rapport
 > [!NOTE]
 > Hvis du vil bruke denne funksjonen, må et rapporteringstre være tilknyttet raddefinisjonen.
 
-Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske data. Beregningen registreres i cellen **Relaterte formler/rader/enheter** i raddefinisjonen og typebegrensningen for de økonomiske dataene. Beregningen må bruke en betinget beregning som begynner med en **IF \@Unit**-konstruksjon. Her er et eksempel: IF @Unit(SALG) THEN @100 ELSE 0. Denne beregningen inkluderer beløpet fra rad 100 i alle kolonner i rapporten, men bare for SALG-enheten. Hvis flere enheter har navnet SALG, vises beløpet i hver av disse enhetene. Rad 100 kan også være en rad med økonomiske data og kan defineres som en rad som ikke skal skrives ut. I slike tilfeller vil ikke beløpet vises i alle enheter i treet. Du kan også begrense beløpet til én enkelt kolonne i rapporten, for eksempel kolonne H, ved hjelp av en kolonnebegrensning for bare å skrive ut verdien i denne kolonnen i rapporten. Du kan inkludere **OR**-kombinasjoner i en **IF**-setning. Her er et eksempel: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. Du kan angi en enhet i beregningstypebegrensning på én av følgende måter:
+Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske data. Beregningen registreres i cellen **Relaterte formler/rader/enheter** i raddefinisjonen og typebegrensningen for de økonomiske dataene. Beregningen må bruke en betinget beregning som begynner med en **IF @Unit**-konstruksjon. Her er et eksempel: IF @Unit(SALG) THEN @100 ELSE 0. Denne beregningen inkluderer beløpet fra rad 100 i alle kolonner i rapporten, men bare for SALG-enheten. Hvis flere enheter har navnet SALG, vises beløpet i hver av disse enhetene. Rad 100 kan også være en rad med økonomiske data og kan defineres som en rad som ikke skal skrives ut. I slike tilfeller vil ikke beløpet vises i alle enheter i treet. Du kan også begrense beløpet til én enkelt kolonne i rapporten, for eksempel kolonne H, ved hjelp av en kolonnebegrensning for bare å skrive ut verdien i denne kolonnen i rapporten. Du kan inkludere **OR**-kombinasjoner i en **IF**-setning. Her er et eksempel: IF @Unit(SALG) OR @Unit(SALGVEST) THEN 5 ELSE @100. Du kan angi en enhet i en beregningstypebegrensning på én av følgende måter:
 
-- Angi et enhetsnavn for å inkludere enheter som samsvarer. **IF \@Unit(SALES)** muliggjør for eksempel beregningen for alle enheter med navnet SALES, selv om det finnes flere SALES-enheter i rapporteringstreet.
-- Angi navnet på firmaet og enhetsnavnet for å begrense beregningen til bestemte enheter i et bestemt firma. Skriv for eksempel **IF @Unit (ACME:SALES)** for å begrense beregningen til SALES-enheter i ACME-firmaet.
+- Angi et enhetsnavn for å inkludere enheter som samsvarer. **IF @Unit(SALG)** muliggjør beregningen for alle enheter med navnet SALG, selv om det finnes flere SALG-enheter i rapporteringstreet.
+- Angi navnet på firmaet og enhetsnavnet for å begrense beregningen til bestemte enheter i et bestemt firma. Skriv for eksempel **IF @Unit(TINDE:SALG**) for å begrense beregningen til SALG-enheter i TINDE-firmaet.
 - Angi den fullstendige hierarkikoden fra rapporteringstreet for å begrense beregningen til en bestemt enhet. Skriv for eksempel **IF @Unit(SAMMENDRAG^TINDE^VESTKYST^SALG)**.
 
 > [!NOTE]
@@ -292,9 +294,9 @@ Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske d
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Begrense en beregning til en rapporteringsenhet
 
-1. Klikk på **Raddefinisjoner** i Rapportutforming, og åpne deretter raddefinisjonen som skal endres.
+1. Klikk **Raddefinisjoner** i Rapportutforming, og åpne deretter raddefinisjonen som skal endres.
 2. Dobbeltklikk **Formatkode**-cellen, og velg deretter **CAL**.
-3. Klikk på cellen **Relaterte formler/rader/enheter**, og angi deretter en betinget beregning som begynner med en **IF \@Unit**-konstruksjon.
+3. Klikk cellen **Relaterte formler/rader/enheter**, og angi deretter en betinget beregning som begynner med en **IF @Unit**-konstruksjon.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-setninger i en kolonnedefinisjon
 
@@ -308,5 +310,3 @@ En **IF/THEN/ELSE**-setning gjør det mulig for alle beregninger å være avheng
 Du kan utforme rapporter ved hjelp av dimensjonsverdier som inneholder et ampersandtegn (&).
 
 I et **Kobling til finansdimensjon**-felt kan du angi en verdi som **'Resultat'**. Hvis du inkluderer enkle anførselstegn (' ') på begge sider av dimensjonsverdien, betyr det at du bruker litteralverdien, for eksempel å inkludere ampersandtegnet (&).
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Telefonsenterkataloger
 description: Dette emnet beskriver telefonsenterspesifikke funksjoner for kataloger i Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 16231
 ms.assetid: f28a827c-3a50-4d5e-83eb-e5a768db70a1
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9abe493746719d2e229ef09c2eb5f436b91b2171
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742518"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4414791"
 ---
 # <a name="call-center-catalogs"></a>Telefonsenterkataloger
 
@@ -39,7 +42,7 @@ Direkte til kunde-markedsføringsfirmaer er svært fokuserte på å spore respon
 
 Gå til **Retail og Commerce** \> **Kataloger og sortimenter** \> **Alle kataloger** for å konfigurere katalogen.
 
-Når du oppretter en ny katalog, må du først koble katalogen til én eller flere kanaler. Dette gjøres i hurtigkategorien **Commerce-kanaler** i skjemaet **Katalogoppsett**. Klikk **Legg til**, og velg én eller flere kanaler. Bare varer som er knyttet til den valgte kanalen [sortimenter](/dynamics365/unified-operations/retail/assortments), kan brukes ved opprettelse av katalogen.
+Når du oppretter en ny katalog, må du først koble katalogen til én eller flere kanaler. Dette gjøres i hurtigkategorien **Commerce-kanaler** i skjemaet **Katalogoppsett**. Klikk **Legg til**, og velg én eller flere kanaler. Bare varer som er knyttet til den valgte kanalen [sortimenter](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments), kan brukes ved opprettelse av katalogen.
 
 Hvis du vil legge til produkter i en katalog, må du velge et navigasjonshierarki. Navigasjonshierarkiet støtter kategoristrukturen for katalogen. Du må velge blant navigasjonshierarkier som er koblet til kanalene valgt i hurtigkategorien **Commerce-kanaler** på **Katalog**-siden. Hvis en navigasjonskanal ikke ble koblet til en kanal tidligere, kan du gå til **Retail og Commerce** \> **Kanaloppsett** \> **Kanalkategorier og produktattributter** for å koble en navigasjonshierarkistandard til hver av kanalene.
 
@@ -98,6 +101,3 @@ I **Kataloger**-kategorien er også alternativer for konfigurasjon av en **Betal
 ## <a name="additional-notes"></a>Tilleggsmerknader
 
 For øyeblikket, når en kildekode-ID brukes for en salgsordre i telefonsenteret, brukes den til å drive priser, kampanjer, skript og mersalg/kryssalg som er katalogspesifikke. Systemet vil ikke forby eller hindre et produkt som ikke er i katalogen, i å bli bestilt på salgsordren. Hvis en vare er bestilt som ikke er en del av katalogen, bruker systemet først **Prisgruppen** som er definert i telefonsenterkanalen (**Retail og Commerce** \> **Kanaler** \> **Telefonsentre** \> **Alle telefonsentre**), for varepris eller kampanjer. Hvis det ikke finnes noen bestemt kanalpris, brukes basissalgsprisen for varen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

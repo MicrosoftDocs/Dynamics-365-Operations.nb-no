@@ -1,10 +1,12 @@
 ---
 title: Avansert syntaks for filtrering og spørring
-description: Dette emnet beskriver alternativene for filtrering og spørringer for dialogboksen Avansert filtrering/sortering som samsvarer med operatoren treff i Filter-ruten eller rutenettet for kolonnehodefiltre.
+description: Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren treff i Filterr-ruten eller rutenettet for kolonnehodefiltre.
 author: jasongre
+manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysQueryForm
 audience: Application User
@@ -15,19 +17,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 650f1c209b1797973634c788645a4659bff28f13
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070015"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798677"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avansert syntaks for filtrering og spørring
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjengelige når du bruker operatoren **treff** i Filter-ruten eller rutenettet for kolonnehodefiltre.
 
@@ -122,9 +121,9 @@ Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjen
 <td>To påfølgende doble anførselstegn (<strong>""</strong>) finner rader uten verdi for den gjeldende kolonnen.</td>
 </tr>
 <tr>
-<td>(<span class="code">Økonomi- og driftsspørring</span>) (Økonomi- og driftsspørring mellom parentesene)</td>
+<td>(<span class="code">Finance and Operations spørring</span>) (Finance and Operations spørring mellom parenteser)</td>
 <td>Samsvarer med en definert spørring</td>
-<td>Skriv inn en spørring som en SQL-setning mellom parenteser ved hjelp av spørringsspråket for økonomi og drift.</td>
+<td>Skriv inn en spørring som en SQL-setning mellom parenteser ved hjelp av Finance and Operations-spørringsspråket.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        som et eksempel på syntaksen for en filterbetingelse for et felt fra rotdatakilden i tillegg til et felt fra en annen datakilde (for eksempel Alle kunder-siden)</td>
 </tr>
@@ -243,6 +242,3 @@ Se tabellen i den neste delen hvis du vil ha mer informasjon om <strong>SysQuery
 </tr>
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

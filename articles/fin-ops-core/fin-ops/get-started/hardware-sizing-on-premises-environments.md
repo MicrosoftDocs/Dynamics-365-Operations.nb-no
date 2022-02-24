@@ -2,9 +2,11 @@
 title: Krav til størrelsesangivelse for maskinvare for lokale miljøer
 description: Dette emnet viser kravene til størrelsesangivelse for maskinvare for et lokalt miljø.
 author: sericks007
-ms.date: 06/02/2021
+manager: AnnBe
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9d4f2e59d4dd78d15d561ff0da47e4b9b1a2fce3
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763440"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798310"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til størrelsesangivelse for maskinvare for lokale miljøer
 
@@ -36,7 +38,7 @@ Når du har gått gjennom dokumentasjonen, kan du starte prosessen med å beregn
 
 Alle faktorene som vises i den følgende illustrasjonen, bidrar til størrelse. Jo mer detaljert informasjon som samles inn, jo mer nøyaktig kan du bestemme størrelse. Maskinvarestørrelse, uten støttedata, vil sannsynlig bli unøyaktig. Det absolutte minstekravet for nødvendige data er toppverdi for transaksjonslinjer per time.
 
-[![Størrelsesangivelse for maskinvare for lokale miljøer.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Størrelsesangivelse for maskinvare for lokale miljøer](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Sett fra venstre mot høyre, er den første og viktigste faktoren som kreves for å beregne nøyaktig størrelse, en transaksjonsprofil eller en transaksjonenkarakterisering. Det er viktig at du alltid finner toppverdien for transaksjonsvolum per time. Hvis det finnes flere perioder med stor belastning, må disse periodene defineres korrekt.
 
@@ -132,15 +134,10 @@ I de fleste tilfeller, med mindre brukes ofte, skal anbefalte minimumskravene ve
 
 For utgivelsen med generell tilgjengelighet, kan bare én SSRS-node distribueres. Overvåk din SSRS-node under testing og øk antall tilgjengelige kjerner for SSRS etter behovet. Pass på at du har en forhåndskonfigurert sekundær node som er tilgjengelig på en virtuell vert som er forskjellig fra SSRS VM. Dette er viktig hvis det er et problem med den virtuelle maskinen som er vert for SSRS eller den virtuelle verten. Hvis dette er tilfellet, må de erstattes.
 
-Fra og med versjon 10.0.17 går det an å konfigurere flere SSRS-noder for å oppnå høy tilgjengelighet. Hvis du vil ha mer informasjon, kan du se [Konfigurere høy tilgjengelighet for SSRS-noder (SQL Server Reporting Services)](../../dev-itpro/deployment/onprem-ssrsha.md).
-
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Tjenesten Orchestrator styrer distribusjonen og den tilknyttede kommunikasjonen med LCS. Denne tjenesten brukes som den primære Service Fabric-tjenesten og krever minst tre virtuelle maskiner. Denne tjenesten er plassert side om side med Service Fabric-orkestreringstjenester. Denne må også skaleres i henhold til toppbelastningen i klyngen. For mer informasjon se [Planlegge og klargjøre distribusjonen av den frittstående Service Fabric-klyngen](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Tjenesten Orchestrator styrer distribusjonen og den tilknyttede kommunikasjonen med LCS. Denne tjenesten brukes som den primære Service Fabric-tjenesten og krever minst tre virtuelle maskiner. Denne tjenesten er plassert side om side med Service Fabric-orkestreringstjenester. Denne må også skaleres i henhold til toppbelastningen i klyngen. For mer informasjon se [Planlegge og klargjøre distribusjonen av den frittstående Service Fabric-klyngen](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering og overabonnering
 
 Bedriftskritiske tjenester som AOS skal ligge på virtuelle verter som har dedikerte ressurser – kjerner, minne og diskplass.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

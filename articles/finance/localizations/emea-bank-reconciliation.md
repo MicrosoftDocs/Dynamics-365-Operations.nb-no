@@ -1,25 +1,28 @@
 ---
 title: Bankkontoutdrag og betalingsavstemming for EU
 description: Dette emnet gir en oversikt over funksjonaliteten som du kan bruke til å avstemme betalingsinformasjon fra banker i formatene som brukes av europeiske land.
-author: anasyash
+author: neserovleo
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 267994
 ms.search.region: Belgium, Norway, Sweden, Switzerland
-ms.author: anasyash
+ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: afad3639836d8473ab420f68164c68772ca62db6
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 3fbdefce85fbd7aee228cdcb58f29007478c1485
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592513"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408298"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankkontoutdrag og betalingsavstemming for EU
 
@@ -56,6 +59,3 @@ I tillegg til et bankkontoutdrag kan banker gi bestemte meldinger som inneholder
 -   (SVE) BankGirot-retur – returformat for leverandørbetalinger, som tilsvarer Bankgirot-eksportformat
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

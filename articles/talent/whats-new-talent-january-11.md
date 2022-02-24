@@ -67,6 +67,3 @@ Når **Ansattselvbetjening**-arbeidsområdet er valgt som første oppstartsside 
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Avslutningsårsakskode oppdaterer stillingstilordningspost
 Avslutningsårsakskoden oppdaterer nå stillingstilordningen når en ansatt slutter og stillingen avsluttes. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

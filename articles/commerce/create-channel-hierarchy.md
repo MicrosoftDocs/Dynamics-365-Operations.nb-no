@@ -2,26 +2,29 @@
 title: Opprette et kanalnavigasjonshierarki
 description: Dette emnet beskriver hvordan du oppretter et kanalnavigeringshierarki i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/27/2021
+manager: annbe
+ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d522838bdddf6cda6d7e451b27183f733e3de53df865d49cdadf846cf99cc953
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749961"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414540"
 ---
-# <a name="create-a-channel-navigation-hierarchy"></a>Opprett et hierarki for kanalnavigasjon
+# <a name="create-a-channel-navigation-hierarchy"></a>Opprette et kanalnavigasjonshierarki
 
 
 [!include [banner](includes/banner.md)]
@@ -49,7 +52,7 @@ Følg denne fremgangsmåten for å opprette et kanalnavigasjonshierarki.
 
 Bildet nedenfor viser et eksempel på en rotnode.
 
-![Eksempel på rotnode.](media/create-channel-hierarchy-1.png)
+![Eksempel på rotnode](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Opprette navigasjonskategorinoder
 
@@ -65,7 +68,7 @@ Hvis du vil opprette eventuelle ekstra navigasjonskategorinoder for å represent
 
 Følgende bilde viser et eksempel på et fullført kanalnavigasjonshierarki.
 
-![Eksempel på kanalhierarki.](media/create-channel-hierarchy-2.png)
+![Eksempel på kanalhierarki](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Legge til produkter i kategorinoder
 
@@ -77,11 +80,11 @@ Hvis du vil legge til produkter i kategorinoder, følger du disse trinnene.
 1. Velg **Lagre** i handlingsruten.
 
 > [!NOTE]
-> Tilføying av produkter i en node i kanalnavigasjonshierarkiet er ikke tilstrekkelig for produktene som vises på en valgt kanal. Produktene må også være sortert til en kanal. Hvis du vil ha mer informasjon om sortimenter, kan du se [Sortimentstyring](assortments.md).
+> Tilføying av produkter i en node i kanalnavigasjonshierarkiet er ikke tilstrekkelig for produktene som vises på en valgt kanal. Produktene må også være sortert til et produkt.
 
 Det følgende bildet viser en eksempelnode med produkter lagt til.
 
-![Produkter lagt til i en kategorinode.](media/create-channel-hierarchy-3.png)
+![Produkter lagt til i en kategorinode](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Legge til produktattributtgrupper i kategorinoder
 
@@ -97,13 +100,10 @@ Hvis du vil legge til en attributtgruppe i en kategorinode, følger du disse tri
 
 Det følgende bildet viser en eksempelnode med produktattributtgrupper lagt til.
 
-![Produktattributtgrupper i en node.](media/create-channel-hierarchy-4.png)
+![Produktattributtgrupper i en node](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Definere sortimenter](set-up-assortments.md)
 
 [Administrere attributter og attributtgrupper](attribute-attributegroups-lifecycle.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

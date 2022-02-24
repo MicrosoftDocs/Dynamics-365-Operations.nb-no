@@ -2,25 +2,28 @@
 title: Finansrapport for resultatregnskap
 description: Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten.
 author: jcart1106
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 12294
 ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 118c7207f6efc252c0265d6c8f7b949c0e178203bf8523585aa2bfc53a69a6a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 429283865c66ca5f03608e4a02c3aba5bb5ea7e3
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746398"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645583"
 ---
 # <a name="income-statement-financial-report"></a>Finansrapport for resultatregnskap
 
@@ -28,7 +31,8 @@ ms.locfileid: "6746398"
 
 Denne artikkelen beskriver standardrapporten for inntektsregnskap. Den beskriver også byggeblokker som er knyttet til denne rapporten. 
 
-## <a name="default-income-statement-report"></a>Standardrapport for resultatregnskap
+<a name="default-income-statement-report"></a>Standardrapport for resultatregnskap
+-------------------------------
 
 | Standardrapport             | Resultat                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -56,7 +60,8 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 
 
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Oversikt over finansrapportering](financial-reporting-getting-started.md)
 
@@ -66,6 +71,3 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

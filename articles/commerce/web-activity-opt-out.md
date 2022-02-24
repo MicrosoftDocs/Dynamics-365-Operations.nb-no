@@ -2,29 +2,34 @@
 title: Velge bort samling for webaktivitetshendelse
 description: I dette emnet finner du informasjon om hvordan du kan la besøkende på nettstedet velge bort en samling for webaktivitetshendelse i Microsoft Dynamics 365 Commerce.
 author: aamiral
+manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: sericks
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d71a184b541f243ccc23914ac2e7c663e5ba61be0a27cf8d41e368fe6a384b9f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b0e48307527a8fea729d8dfdcdbc6337be0faf1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729836"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414663"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Velge bort samling for webaktivitetshendelse
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan la kundene velge bort samling for webaktivitetshendelse i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Dynamics 365 Commerce lar områdeadministratorer analysere webaktiviteten til brukere av sine områder for e-handel. På denne måten kan de bedre forstå hvordan områdene brukes, og de kan optimalisere områdene for å gi en forbedret brukeropplevelse og oppfylle forretningsmålene.
 
@@ -40,7 +45,7 @@ I Kontobehandling i Commerce Headquarters (HQ) kan administratorer velge bort p�
 1. I HQ-klienten søker du etter og velger en kunde på siden **Alle kunder**.
 1. På siden for kundedetaljer setter du alternativet **Ikke spor webaktivitet** til **Ja** i delen **Personvern** i hurtigkategorien **Detaljhandel**.
 
-    ![Personverninnstillinger.](media/Disablepersonalizationpart2.png)
+    ![Personverninnstillinger](media/Disablepersonalizationpart2.png)
 
 1. Velg **Lagre**, og lukk deretter siden.
 
@@ -51,6 +56,3 @@ Administratorer kan la godkjente brukere velge bort samling for webaktivitshende
 ### <a name="custom-extensions"></a>Egendefinerte tillegg
 
 Administratorer kan opprette egne tillegg for å administrere bortvalgsopplevelsen for brukere. Hvis du vil ha mer informasjon, kan du se [Kalle API-er for Retail Server](e-commerce-extensibility/call-retail-server-apis.md) og [Utvidelsesmulighet for Internett-kanal](e-commerce-extensibility/overview.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

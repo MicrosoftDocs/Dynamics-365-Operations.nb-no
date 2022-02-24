@@ -1,10 +1,12 @@
 ---
 title: Utforme ER-uttrykk for å kalle programklassemetoder
-description: Dette emnet beskriver hvordan du bruker den eksisterende programlogikken i konfigurasjoner for elektronisk rapportering på nytt ved å kalle opp nødvendige metoder for programklasser.
+description: Denne veiledningen gir informasjon om hvordan du bruker den eksisterende programlogikken i elektronisk rapportering (ER)-konfigurasjoner på nytt ved å kalle nødvendige metoder for programklasser i ER-uttrykk.
 author: NickSelin
-ms.date: 11/02/2021
+manager: AnnBe
+ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,180 +14,146 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751712"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682027"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Utforme ER-uttrykk for å kalle programklassemetoder
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker den eksisterende programlogikken i [elektronisk rapportering (ER)](../general-electronic-reporting.md)-konfigurasjoner på nytt ved å kalle nødvendige metoder for programklasser i ER-uttrykk. Verdier til argumenter for oppkallsklasser kan defineres dynamisk ved kjøretid. Verdier kan for eksempel være basert på informasjon i analysedokumentet for å sikre at det er riktig.
+Denne veiledningen gir informasjon om hvordan du bruker den eksisterende programlogikken i elektronisk rapportering (ER)-konfigurasjoner på nytt ved å kalle nødvendige metoder for programklasser i ER-uttrykk. Verdier for argumenter for kallklasser kan defineres dynamisk under kjøring: for eksempel basert på informasjon i analysedokumentet for å sikre nøyaktighet. I denne veiledningen skal du opprette de nødvendige ER-konfigurasjonene for eksempelfirmaet, Litware, Inc. Denne fremgangsmåten er opprettet for brukere som har tilordnet rollen som Systemansvarlig eller Utvikler av elektronisk rapportering. 
 
-I dette emnet skal du for eksempel utforme en prosess som analyserer innkommende bankkontoutdrag for en oppdatering av programdata. Du mottar de innkommende bankkontoutdragene som tekstfiler (TXT) som inneholder IBAN-koder (internasjonalt bankkontonummer). Som en del av prosessen med å importer bankkontoutdrag må du validere riktigheten av IBAN-koden ved hjelp av logikken som allerede finnes.
+Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. Du må også laste ned og lagre følgende fil lokalt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
-## <a name="prerequisites"></a>Forutsetninger
+For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "ER Opprette en konfigurasjonsleverandør og merke den som aktiv.
 
-Fremgangsmåtene i dette emnet er ment for brukere som har blitt tilordnet rollen som **Systemansvarlig** eller **Utvikler av elektronisk rapportering**.
-
-Prosedyrene kan fullføres ved hjelp av et hvilket som helst datasett.
-
-For å fullføre dem må du laste ned og lagre følgende fil lokalt: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
-
-I dette emnet skal du opprette de nødvendige ER-konfigurasjonene for eksempelfirmaet Litware, Inc. Før du kan fullføre prosedyrene i dette emnet, må du derfor fullføre følgende trinn:
-
-1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurasjoner** må du bekreftet av konfigurasjonsleverandøren for eksempelfirmaet **Litware, Inc.** er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i [Opprett konfigurasjonsleverandører og merk dem som aktive](er-configuration-provider-mark-it-active-2016-11.md).
+1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
+    * Kontroller at konfigurasjonsleverandøren for eksempelfirma Litware, Inc. er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".   
+    * Du utformer en prosess for å analysere innkommende bankkontoutdrag for en oppdatering av programdata. Du vil motta innkommende bankkontoutdrag som TXT-filer som inneholder IBAN-koder. Som en del av importprosessen for bankkontoutdrag må du validere riktigheten av disse IBAN-kodene ved hjelp av logikken som allerede finnes.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Importere en ny ER-konfigurasjon
-
-1. På siden **Lokaliseringskonfigurasjoner**, i delen **Konfigurasjonsleverandører**, velger du flisen **Microsoft**-konfigurasjonsleverandøren.
-2. Velg **Repositorier**.
-3. På siden **Lokaliseringsrepositorier** velger du **Vis filtre**.
-4. Hvis du vil velge oppføringen for Globalt repositorium, legger du til et **Navn**-filterfelt.
-5. Angi **Global** i **Navn**-feltet. Deretter velger du filteroperatoren **inneholder**.
-6. Velg **Bruk**.
-7. Velg **[Åpne](../er-download-configurations-global-repo.md#open-configurations-repository)** for å gå gjennom listen over ER-konfigurasjoner i det valgte repositoriet.
-8. På siden **Konfigurasjonsrepositorium**, i konfigurasjonstreet, velger du **Betalingsmodell**.
-9. På hurtigfanen **Versjoner**, hvis **Importer**-knappen er tilgjengelig, velger du den og velger deretter **Ja**.
-
-    Hvis **Importer**-knappen ikke er tilgjengelig, har du allerede importert den valgte versjonen av ER-konfigurasjonen **Betalingsmodell**.
-
-10. Lukk siden **Konfigurasjonsrepositorium**, og lukk deretter siden **Lokaliseringsrepositorier**.
+1. Finn og velg ønsket post i listen.
+    * Velg flisen Microsoft-leverandør.  
+2. Klikk Repositorier.
+3. Klikk Vis filtre.
+4. Legg til et "Typenavn"-filterfelt. I Navn-feltet angir du verdien "ressurser", velger "inneholder"-filteroperatoren og klikker på Bruk.
+5. Klikk Åpne.
+6. Velg Betalingsmodell i treet.
+    * Hvis Importer-knappen på hurtigfanen Versjoner ikke er aktivert, har du allerede importert versjon 1 av ER-konfigurasjonen "Betalingsmodell". Du kan hoppe over resten trinnene i denne underoppgaven.   
+7. Klikk Importer.
+8. Klikk Ja.
+9. Lukk siden.
+10. Lukk siden.
 
 ## <a name="add-a-new-er-format-configuration"></a>Legg til en ny ER-formatkonfigurasjon
+1. Klikk Rapporteringskonfigurasjoner.
+    * Legg til et nytt ER-format for å analysere innkommende bankkontoutdrag i TXT-format.  
+2. Velg Betalingsmodell i treet.
+3. Klikk Opprett konfigurasjon for å åpne dialogmenyen.
+4. I feltet Ny angir du Format basert på datamodell PaymentModel.
+5. Skriv inn 'Importformat for bankkontoutdrag (eksempel)' i Navn-feltet.
+    * Importformat for bankkontoutdrag (eksempel)  
+6. Velg Ja i feltet Støtter dataimport.
+7. Klikk Opprett konfigurasjon.
 
-Legg til et nytt ER-format for å analysere innkommende bankkontoutdrag i TXT-format.
+## <a name="design-the-er-format-configuration---format"></a>Utforme ER-formatkonfigurasjonen – format
+1. Klikk Utforming.
+    * Det utformede formatet representerer den forventet strukturen for den eksterne filen i TXT-format.  
+2. Klikk Legg til rot for å åpne dialogmenyen.
+3. Velg Tekst\Sekvens i treet.
+4. Skriv inn Rot i Navn-feltet.
+    * Rot  
+5. Velg Ny linje - Windows (CR LF) i Spesialtegn-feltet.
+    * Alternativet Ny linje - Windows (CR LF) er valgt i Spesialtegn-feltet. Basert på denne innstillingen, betraktes hver linje i analysefilen som en egen oppføring.  
+6. Klikk OK.
+7. Klikk Legg til for å åpne nedtrekksdialogen.
+8. Velg Tekst\Sekvens i treet.
+9. I Navn-feltet skriver du inn Rader.
+    * Rader  
+10. Velg "Én mange" i feltet Multiplisitet.
+    * Alternativet Én mange er valgt i feltet Multiplisitet. Basert på denne innstillingen, forventes det at minst én linje vises i analysefilen.  
+11. Klikk OK.
+12. Velg Rot\Rader i treet.
+13. Klikk Legg sekvens.
+14. I Navn-feltet skriver du inn Felt.
+    * Felt  
+15. Velg "Nøyaktig én" i feltet Multiplisitet.
+16. Klikk OK.
+17. I treet velger du Rot\Rader\Felt.
+18. Klikk Legg til for å åpne nedtrekksdialogen.
+19. Velg Tekst\Streng i treet.
+20. I Navn-feltet skriver du IBAN.
+    * IBAN  
+21. Klikk OK.
+    * Det er konfigurert at hver linje i analysefilen inneholder den eneste IBAN-koden.  
+22. Klikk Lagre.
 
-1. På siden **Lokaliseringskonfigurasjoner** velger du flisen **Rapporteringskonfigurasjoner**.
-2. På **Konfigurasjoner**-siden, i konfigurasjonstreet i venstre rute, velger du **Betalingsmodell**.
-3. Velg **Opprett konfigurasjon**. 
-4. Følg disse trinnene i rullegardinboksen:
-
-    1. I **Ny**-feltet angir du **Format basert på datamodell PaymentModel**.
-    2. I **Navn**-feltet skriver du inn **Importformat for bankkontoutdrag (eksempel)**.
-    3. Velg **Ja** i feltet **Støtter dataimport**.
-    4. Velg **Opprett konfigurasjon** for å fullføre opprettingen av konfigurasjonen.
-
-## <a name="design-the-er-format-configuration--format"></a>Utforme ER-formatkonfigurasjonen – format
-
-Utform et ER-format som representerer den forventet strukturen for den eksterne filen i TXT-format.
-
-1. Velg **Utforming** for formatkonfigurasjonen **Importformat for bankkontoutdrag (eksempel)** som du la til.
-2. På siden **Formatutforming** i formatstrukturtreet i venstre rute velger du **Legg til rot**.
-3. Følg denne fremgangsmåten i dialogboksen som vises:
-
-    1. I treet velger du **Tekst\\Sekvens** for å legge til en **Sekvens**-formatkomponent.
-    2. I **Navn**-feltet skriver du inn **Rot**.
-    3. Velg **Ny linje - Windows (CR LF)** i **Spesialtegn**-feltet. Basert på denne innstillingen, blir hver linje i analysefilen betraktet som en egen oppføring.
-    4. Velg **OK**.
-
-4. Velg **Legg til**.
-5. Følg denne fremgangsmåten i dialogboksen som vises:
-
-    1. Velg **Tekst\\Sekvens** i treet.
-    2. Angi **Rader** i **Navn**-feltet.
-    3. Velg **Én mange** i feltet **Multiplisitet**. Basert på denne innstillingen, forventes det at minst én linje vises i analysefilen.
-    4. Velg **OK**.
-
-6. I treet velger du **Rot\\Rader**, og deretter velger du **Legg til sekvens**.
-7. Følg denne fremgangsmåten i dialogboksen som vises:
-
-    1. Angi **Felter** i **Navn**-feltet.
-    2. Velg **Nøyaktig én** i feltet **Multiplisitet**.
-    3. Velg **OK**.
-
-8. I treet velger du **Rot\\Rader\\Felter**, og deretter velger du **Legg til**.
-9. Følg denne fremgangsmåten i dialogboksen som vises:
-
-    1. Velg **Tekst\\Streng** i treet.
-    2. Angi **IBAN** i **Navn**-feltet.
-    3. Velg **OK**.
-
-10. Velg **Lagre**.
-
-Konfigurasjonen er nå satt opp slik at hver linje i analysefilen inneholder kun IBAN-koden.
-
-![Formatkonfigurasjonen Importformat for bankkontoutdrag (eksempel) på Formatutforming-siden.](../media/design-expressions-app-class-er-01.png)
-
-## <a name="design-the-er-format-configuration--mapping-to-a-data-model"></a>Utforme ER-formatkonfigurasjonen – tilordning til en datamodell
-
-Utform en ER-formattilordning som bruker informasjon fra analysefilen til å fylle ut en datamodell.
-
-1. På siden **Formatutforming** velger du **Tilordne format til modell** i handlingsruten.
-2. På siden **Tilordning av modell til datakilde** velger du **Ny** i handlingsruten.
-3. I **Definisjon**-feltet velger du **BankToCustomerDebitCreditNotificationInitiation**.
-4. I feltet **Navn** angir du **Tilordning til datamodell**.
-5. Velg **Lagre**.
-6. Velg **Utforming**.
-7. På siden **Modelltilordningsutforming**, i treet **Datakildetyper**, velger du **Dynamics 365 for Operations\\Klasse**.
-8. I **Datakilder**-delen velger du **Legg til rot** for å legge til en datakilde som kaller den eksisterende applogikken for validering av IBAN-koder.
-9. Følg denne fremgangsmåten i dialogboksen som vises:
-
-    1. I **Navn**-feltet skriver du inn **Sjekk\_koder**.
-    2. I **Klasse**-feltet angir eller velger du **ISO7064**.
-    3. Velg **OK**.
-
-10. Følg disse trinnene i treet **Datakildetyper**.
-
-    1. Utvid **format**-datakilden.
-    2. Utvid **format\\Rot: Sequence(Root)**.
-    3. Utvid **format\\Rot: Sequence(Root)\\Rader: Sequence 1..\* (Rader)**.
-    4. Utvid **format\\Rot: Sequence(Root)\\Rader: Sequence 1..\* (Rader)\\Felter: Sequence 1..1 (Fields)**.
-
-11. Følg disse trinnene i treet **Datamodell**.
-
-    1. Utvid **Betalinger**-feltet for datamodellen.
-    2. Utvid **Betalinger\\Creditor Account(CreditorAccount)**.
-    3. Utvid **Betalinger\\Creditor Account(CreditorAccount)\\Identifikasjon**.
-    4. Utvid **Betalinger\\Creditor Account(CreditorAccount)\\Identifikasjon\\IBAN**.
-
-12. Følg denne fremgangsmåten for å binde komponenter i det konfigurerte formatet til datamodellfelter:
-
-    1. Velg **format\\Rot: Sequence(Root)\\Rader: Sequence 1..\* (Rader)**.
-    2. Velg **Betalinger**.
-    3. Velg **Bind**. Basert på denne innstillingen blir hver linje i analysefilen betraktet som en egen betaling.
-    4. Velg **format\\Rot: Sequence(Root)\\Rader: Sequence 1..\* (Rader)\\Felter: Sequence 1..1 (Felter)\\IBAN: String(IBAN)**.
-    5. Velg **Betalinger\\Creditor Account(CreditorAccount)\\Identifikasjon\\IBAN**.
-    6. Velg **Bind**. Basert på denne innstillingen blir **IBAN**-feltet for datamodellen fylt ut med verdien fra analysefilen.
-
-    ![Binding av formatkomponenter til datamodellfelter på siden Modelltilordningsutforming.](../media/design-expressions-app-class-er-02.png)
-
-13. På **Valideringer**-fanen følger du disse trinnene for å legge til en [valideringsregel](../general-electronic-reporting-formula-designer.md#Validation) som viser en feilmelding for enhver linje i analysefilen som inneholder en ugyldig IBAN-kode:
-
-    1. Velg **Ny**, og velg deretter **Rediger betingelse**.
-    2. På siden **Formelutforming** i **Datakilde**-treet utvider du datakilden **Sjekk\_koder** som representerer appklassen **ISO7064**, for å vise de tilgjengelige metodene for denne klassen.
-    3. Velg **Sjekk\_koder\\verifyMOD1271\_36**.
-    4. Velg **Legg til datakilde**.
-    5. I **Formel**-feltet angir du følgende [uttrykk](../general-electronic-reporting-formula-designer.md#Binding): **Sjekk\_koder.verifyMOD1271\_36(format.Root.Rows.Fields.IBAN)**.
-    6. Velg **Lagre**, og lukk deretter siden.
-    7. Velg **Rediger melding**.
-    8. På **Formeltutforming**-siden i **Formel**-feltet skriver du inn **CONCATENATE("Ugyldig IBAN-kode er funnet:&nbsp;", format.Root.Rows.Fields.IBAN)**.
-    9. Velg **Lagre**, og lukk deretter siden.
-
-    Basert på disse innstillingene vil valideringsbetingelsen returnere *[FALSE](../er-formula-supported-data-types-primitive.md#boolean)* for en ugyldig IBAN-kode ved å kalle opp den eksisterende **verifyMOD1271\_36**-metoden for appklassen **ISO7064**. Legg merke til at verdien til IBAN-koden defineres dynamisk under kjøring som argumentet for kallmetoden basert på innholdet i tekstfilen for analyse.
-
-    ![Valideringsregel på siden Modelltilordningsutforming.](../media/design-expressions-app-class-er-03.png)
-
-14. Velg **Lagre**.
-15. Lukk siden **Modelltilordningsutforming**, og lukk deretter siden **Tilordning av modell til datakilde**.
+## <a name="design-the-er-format-configuration--mapping-to-data-model"></a>Utforme ER-formatkonfigurasjonen – tilordne til datamodell
+1. Klikk Tilordne format til modell.
+2. Klikk Ny.
+3. I Definisjon-feltet skriver du inn BankToCustomerDebitCreditNotificationInitiation.
+    * BankToCustomerDebitCreditNotificationInitiation  
+4. ResolveChanges definisjonen.
+5. Skriv inn Tilordning til datamodell i Navn-feltet.
+    * Tilordning til datamodell  
+6. Klikk Lagre.
+7. Klikk Utforming.
+8. Velg Dynamics 365 for Operations\Klasse i treet.
+9. Klikk Legg til rot.
+    * Legg til en ny datakilde for å kalle den eksisterende programlogikken for validering av IBAN-koder.  
+10. I Navn-feltet skriver du inn check_codes.
+    * check_codes  
+11. Skriv inn ISO7064 i feltet Klasse.
+    * ISO7064  
+12. Klikk OK.
+13. Utvid 'format' i treet.
+14. Utvid 'format\Rot: Sequence(Root) i treet.
+15. I treet velger du "format\Rot: Sequence(Root)\Rader: Sekvens 1..* (Rader)'.
+16. Klikk Bind.
+17. I treet utvider du "format\Rot: Sequence(Root)\Rader: Sekvens 1..* (Rader)'.
+18. Utvid format\Rot: Sequence(Root)\Rader: Sekvens 1..* (Rader)\Felt: Sekvens 1..1 (Felt)" i treet.
+19. Velg format\Rot: Sequence(Root)\Rader: Sekvens 1..* (Rader)\Felt: Sekvens 1..1 (Felt)\IBAN: String(IBAN) i treet.
+20. Utvid Betalinger = format.Root.Rows i treet.
+21. Utvid Betalinger = format.Root.Rows\Creditor Account(CreditorAccount) i treet.
+22. Utvid Betalinger = format.Root.Rows\Creditor Account(CreditorAccount)\Identification i treet.
+23. Velg Betalinger = format.Root.Rows\Creditor Account(CreditorAccount)\Identification\IBAN i treet.
+24. Klikk Bind.
+25. Klikk kategorien Valideringer.
+26. Klikk Ny.
+    * Legg til en ny valideringsregel som viser en feil for alle linjer i analysefilen som inneholder ugyldig IBAN-kode.  
+27. Klikk Rediger betingelse.
+28. Utvid check_codes i treet.
+29. Velg check_codes\verifyMOD1271_36.
+30. Klikk Legg til datakilde.
+31. I Formel-feltet skriver du inn 'check_codes.verifyMOD1271_36('.
+    * check_codes.verifyMOD1271_36(  
+32. Utvid 'format' i treet.
+33. Utvid 'format\Rot: Sequence(Root) i treet.
+34. I treet utvider du "format\Rot: Sequence(Root)\Rader: Sekvens 1..* (Rader)'.
+35. Utvid format\Rot: Sequence(Root)\Rader: Sekvens 1..* (Rader)\Felt: Sekvens 1..1 (Felt)" i treet.
+36. Velg format\Rot: Sequence(Root)\Rader: Sekvens 1..* (Rader)\Felt: Sekvens 1..1 (Felt)\IBAN: String(IBAN) i treet.
+37. Klikk Legg til datakilde.
+38. I Formel-feltet skriver du inn 'check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)'.
+    * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
+39. Klikk Lagre.
+40. Lukk siden.
+    * Valideringsbetingelsen er konfigurert til å returnere FALSE for en ugyldig IBAN-kode ved å kalle den eksisterende metoden "verifyMOD1271_36" i programklassen "ISO7064". Legg merke til at verdien til IBAN-koden defineres dynamisk under kjøring som argumentet for kallmetoden basert på innholdet i TXT-filen for analyse.   
+41. Klikk Rediger melding.
+42. Angi 'CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)' i Formel-feltet.
+    * CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)  
+43. Klikk Lagre.
+44. Lukk siden.
+45. Klikk Lagre.
+46. Lukk siden.
 
 ## <a name="run-the-format-mapping"></a>Kjøre formattilordningen
+For testformål kan du utføre formattilordningen med filen SampleIncomingMessage.txt som du lastet ned. De genererte utdataene omfatter informasjon som importeres fra den valgte TXT-filen og fylles ut i den egendefinerte datamodellen under den reelle importen.   
+1. Klikk Kjør.
+    * Klikk Bla gjennom og gå til SampleIncomingMessage.txt-filen som du lastet ned tidligere.  
+2. Klikk OK.
+    * Gå gjennom utdataene i XML-format, som representerer dataene som er importert fra den valgte filen og overført til datamodellen. Vær oppmerksom på at bare 3 linjer i den importerte TXT-filen ble behandlet. IBAN-koden på linje 4 som ikke er gyldig, ble hoppet over, og en feilmelding gis i infologgen.  
 
-For testformål kan du kjøre formattilordningen ved å bruke filen SampleIncomingMessage.txt som du lastet ned tidligere. De genererte utdataene omfatter informasjon som er importert fra den valgte tekstfilen, og som sendes til den egendefinerte datamodellen under den reelle importen.
-
-1. Velg **Kjør** på siden **Tilordning av modell til datakilde**.
-2. På siden **Parametere for elektronisk rapport** velger du **Bla gjennom**. Bla til filen **SampleIncomingMessage.txt** som du lastet ned, og velg den.
-3. Velg **OK**.
-4. Legg merke til at siden **Tilordning av modell til datakilde** viser en feilmelding om en ugyldig IBAN-kode.
-
-    ![Resultat av kjøring av formattilordningen på siden Tilordning av modell til datakilde.](../media/design-expressions-app-class-er-04.png)
-
-5. Gå gjennom utdataene i XML-format, som representerer dataene som er importert fra den valgte filen og overført til datamodellen. Legg merke til at bare tre linjer i den importerte tekstfilen ble behandlet uten feil. IBAN-koden på linje 4 er ikke gyldig og ble hoppet over.
-
-    ![XML-utdata.](../media/design-expressions-app-class-er-05.png)
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,28 +1,29 @@
 ---
 title: Startside for kontant- og bankbehandling
 description: Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene.
-author: roschlom
+author: panolte
+manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21941"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883700"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459661"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
 
@@ -34,11 +35,11 @@ Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. 
 
 **Forretningsprosesser**
 
-[![Forretningsprosess.](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![Forretningsprosess](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Kontantrabatt](cash-discounts.md)
 -   [Oversikt over utligning](settlement-overview.md)
--   [Konfigurer utligning](configure-settlement.md)
+-   [Konfigurere utligning](configure-settlement.md)
 -   [Revaluering av utenlandsk valuta for leverandører og kunder](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 -   [Purringer](letters-of-credit.md)
 -   [Purringer og importsamlinger](letters-of-credit-import-collections.md)
@@ -83,9 +84,9 @@ Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. 
 
 ### <a name="additional-resources"></a>Tilleggsressurser
 
-#### <a name="whats-new-and-in-development"></a>Nyheter og under utvikling
+#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
+Gå til [Lanseringsplaner for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
 
 #### <a name="blogs"></a>Blogger
 
@@ -99,6 +100,3 @@ Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance. For å få tilgang 
 #### <a name="videos"></a>Videoer
 
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

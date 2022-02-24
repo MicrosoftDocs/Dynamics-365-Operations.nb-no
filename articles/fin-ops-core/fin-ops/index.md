@@ -1,27 +1,29 @@
 ---
-title: Dokumentasjon for programmet Finance and Operations
+title: Dokumentasjon for Finance and Operations-app
 description: Dokumentasjon for Finance and Operations-apper.
-author: tonyafehr
-ms.date: 04/13/2021
+author: robinarh
+manager: AnnBe
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
-ms.reviewer: tfehr
-ms.custom: intro-internal
+ms.reviewer: rhaertle
+ms.custom: 62303
 ms.search.region: Global
-ms.author: tfehr
+ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075403"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694392"
 ---
-# <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for programmet Finance and Operations
+# <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for Finance and Operations-app
 
 [!include [banner](includes/banner.md)]
 
@@ -39,14 +41,14 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Før du kjøper</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrer deg for et forhåndsversjonsabonnement</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Velg et distribusjonsalternativ</a></p>
- <p><a href="get-started/purchase-on-premises.md">Kjøp Finance and Operations (on-premises)</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrere deg for et forhåndsvisningsabonnement</a></p>
+ <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Velge et distribusjonsalternativ</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Kjøpe Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementering av livssyklus</a></h3>
-<p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
-<p><a href="imp-lifecycle/onboard.md">Innføring av et prosjekt</a></p>
-<p><a href="imp-lifecycle/prepare-go-live.md">Klargjør for aktivering</a></p>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="imp-lifecycle/onboard.md">Introdusere et prosjekt</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Klargjøre for aktivering</a></p>
 
 <h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Oppdatering av én versjonstjeneste</a></h3>
 <p><a href="get-started/one-version.md">Vanlige spørsmål om oppdatering av én versjonstjeneste</a></p>
@@ -74,24 +76,22 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <p><a href="../../finance/cash-bank-management/cash-bank-management.md">Kontant- og bankbehandling</a></p>
 <p><a href="../../finance/general-ledger/audit-policy-rules.md">Samsvar</a></p>
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Kostnadsregnskap</a></p>
-<p><a href="../../finance/fixed-assets/fixed-assets.md">Faste objekter</a></p>
+<p><a href="../../finance/fixed-assets/fixed-assets.md">Anleggsmidler</a></p>
 <p><a href="../../finance/general-ledger/general-ledger.md">Økonomimodul</a></p>
-<p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Prosjektstyring</a></p>
+<p><a href="../../finance/project-management/overview-project-management-accounting.md">Prosjektstyring</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale forskriftsmessige funksjoner</a></p>
 
-<h3><a href="hr/hr-landing-page.md">Human Resources</a></h3>
-<p><a href="../../human-resources/hr-employee-manager-self-service-overview.md">Ansattselvbetjening</a></p>
-<p><a href="../../human-resources/hr-personnel-departments-jobs-positions.md">Personaladministrasjon</a></p>
-<p><a href="../../human-resources/hr-leave-and-absence-overview.md">Permisjon og fravær</a></p>
+<h3><a href="hr/hr-landing-page.md">Personale</a></h3>
 <p><a href="../../human-resources/hr-benefits-manage-program.md">Fordeler</a></p>
-<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Ansattutvikling</a></p>
-<p><a href="../../human-resources/hr-learning-courses.md">Læring</a></p>
- <p><a href="hr/localizations/noam-usa-payroll.md">Amerikansk lønn</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Utvikling og opplæring for ansatte</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Spørreskjemaer</a></p>
+<p><a href="hr/manage-recruiting-process.md">Rekruttering</a></p>
+<p><a href="hr/localizations/noam-usa-payroll.md">Amerikansk lønn</a></p>
 
 </td>
 <td>
-<h3><a href="../../supply-chain/index.md">Administrasjon av forsyningskjede</a></h3>
+<h3><a href="../../supply-chain/index.md">Forsyningskjedeadministrasjon</a></h3>
 <p><a href="../../supply-chain/cost-management/costing-sheets.md">Kostnadsstyring</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Lagerstyring</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Hovedplanlegging</a></p>
@@ -128,11 +128,16 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 </td>
 <td>
 <h3>Relaterte produkter</h3>
-<h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
-<p><a href="../../commerce/call-center-functionality.md">Telefonsenter</p>
-<p><a href="../../commerce/define-maintain-retail-channels.md">Kanaloppsett og -behandling</p>
-<p><a href="../../commerce/retail-peripherals-overview.md">MPOS og Cloud POS</p>
-<p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Utvikling og administrasjon av Commerce</p>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
+<p><a href="../../retail/call-center-functionality.md">Telefonsenter</p>
+<p><a href="../../retail/define-maintain-retail-channels.md">Kanaloppsett og -behandling</p>
+<p><a href="../../retail/retail-peripherals-overview.md">MPOS og Cloud POS</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Utvikling og administrasjon av Commerce</p>
+
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Administratorveiledning</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Utviklerveiledning</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Brukerveiledning</a></p>
 
 
 </td>
@@ -140,6 +145,3 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

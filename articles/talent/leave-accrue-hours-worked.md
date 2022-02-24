@@ -102,6 +102,3 @@ En enkelt dato kan bare ha én av hver type knyttet til seg.
 | 000337                | 8/8/2018             | Vanlig               | 8                    |
 | 000337                | 7/8/2018             | Vanlig               | 8                    |
 | 000337                | 9/8/2018             | Vanlig               | 8                    |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

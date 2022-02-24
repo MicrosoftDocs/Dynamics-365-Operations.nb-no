@@ -1,38 +1,39 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (18. februar 2020)?
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 18. februar 2020.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9cce93aab902a8ca269cf22e1999716fe49f3ed8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063010"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526984"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (18. februar 2020)?
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Denne artikkelen beskriver funksjoner som enten er nye eller endret i Dynamics 365 Human Resources. Endringer gjelder for Build-nummeret 8.1.2903. Tallene i parentes i noen overskrifter refererer til støttenumre i LCS.
 
 ## <a name="platform-update-32"></a>Plattform update 32 
 
-Platform Update 32 er nå tilgjengelig. Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Platform Update 32 for økonomi- og driftsapper (februar 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Platform Update 32 er nå tilgjengelig. Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Platform Update 32 for Finance and Operations (februar 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>Søkeverdier huskes ved endring av visningsalternativer i strømlinjeformet ansatt-skjemaet (383833)
 
@@ -42,17 +43,17 @@ Det nye **Arbeider**-skjemaet husker nå søkeverdier når du endrer visningsalt
 
 Faste og variable kompensasjonsstyringsfliser viser nå de riktige postene i det nye **Arbeider**-skjemaet. Gjelder bare den forhåndsvisningsfunksjonen for strømlinjeformede ansatte. Du kan aktivere denne forhåndsvisningsfunksjonen **Funksjonsbehandling**. Hvis du vil ha mer informasjon, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Tomt Status-felt for enkelte oen permisjonsforespørselsposter i Dataverse (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Tomt Status-felt for enkelte oen permisjonsforespørselsposter i Common Data Service (414915)
 
-Denne endringen løser et problem i Dataverse når **Status**-feltet i en permisjonsforespørsel er angitt til **Gjennomgang**. Dataverse gjenspeiler nå statusen.
+Denne endringen løser et problem i Common Data Service når **Status**-feltet i en permisjonsforespørsel er angitt til **Gjennomgang**. Common Data Service gjenspeiler nå statusen.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>Kompetansegapanalyse er bare mulig for tilordnet jobb (411390)
 
 Du kan nå foreta en kompetansegapanalyse på en hvilken som helst jobb som er definert i Human Resources.
 
-## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>Systemvaluta synkroniseres ikke fra Dataverse til Human Resources i nye miljøer (418011)
+## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>Systemvaluta synkroniseres ikke fra Common Data Service til Human Resources i nye miljøer (418011)
 
-Systemvalutaen i Dataverse kan nå synkroniseres til Human Resources.
+Systemvalutaen i Common Data Service kan nå synkroniseres til Human Resources.
 
 ## <a name="in-preview"></a>I forhåndsvisning
 
@@ -62,9 +63,9 @@ Systemvalutaen i Dataverse kan nå synkroniseres til Human Resources.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="updated-dataverse-solution"></a>Oppdatert Dataverse-løsning
+### <a name="updated-common-data-service-solution"></a>Oppdatert Common Data Service-løsning
 
-En ny Dataverse-løsning vil snart være tilgjengelig med følgende endringer:
+En ny Common Data Service-løsning vil snart være tilgjengelig med følgende endringer:
 
 | Beskrivelse | Vekslepenger |
 | ----------------------------------------- | --- |
@@ -75,13 +76,11 @@ En ny Dataverse-løsning vil snart være tilgjengelig med følgende endringer:
 | Nye enheter for oppsett av variabel kompensasjon | **Type variabel kompensasjonsplan**</br>**Variabel plan for kompensasjon**</br>**Overdragelsesregler**</br>**Nivå for variabel kompensasjonsplan** |
 | Ny enhet, **Ansettelse i arbeiderkalender** | **Arbeidskalenderenhet** lagt til |
 | Ny enhet, **Lønnstillingsdetaljer** | **Lønnsstillingsdetaljer** lagt til |
-| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Dataverse. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
+| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Common Data Service. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
 
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Personale?](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

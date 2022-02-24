@@ -46,6 +46,3 @@ Denne versjonen inneholder flere andre feilrettinger.
 ## <a name="known-issue"></a>Kjent problem
 
 -   **Problem:** Når du legger til en ny tilknytning til en arbeider, er knappenei **Ny** og **Rediger** nedtonet. **Løsning:** Før du åpner vedleggssiden, må du kontrollere at faktaboksene på **Arbeider**-siden er lukket. Hvis faktaboksene er lukket når **Arbeider**-siden lastes, blir vedleggsknappene aktivert. (Dette problemet vil bli løst i neste plattformoppdatering.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

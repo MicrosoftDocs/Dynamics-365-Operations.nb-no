@@ -1,29 +1,30 @@
 ---
 title: Startside for offentlig sektor
-description: Dynamics 365 Finance støtter forretningsprosesser i offentlig sektor. Disse prosessene omfatter budsjetterings-, innkjøps-, leverandør- og kundeoppgaver.
-author: v-kiarnd
+description: Microsoft Dynamics 365 Finance aktiverer forretningsprosesser som er felles for både offentlig og privat sektorer, for eksempel budsjettering, kjøp og leverandør- og kundeoppgaver.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "20691"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 20691
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
-ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
+ms.openlocfilehash: f4a3722cf286909c83b5154137c86508929a2691
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "7817747"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459614"
 ---
 # <a name="public-sector-home-page"></a>Startside for offentlig sektor
 
@@ -59,18 +60,17 @@ Konfigurasjonsnøkkelen **Offentlig sektor** kan aktivere sider og kontroller so
 ## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a>Hvordan er konfigurasjonsnøkkelen Offentlig sektor relatert til andre konfigurasjonsnøkler?
 Følgende tabell inneholder informasjon om forholdet mellom denne konfigurasjonsnøkkelen og andre konfigurasjonsnøkler.
 
-|   **Detalj**         |              **Beskrivelse**                                                                                                                                                                                        |
+|            |                                                                                                                                                                                                                     |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Detalj** | **Beskrivelse**                                                                                                                                                                                                     |
 | Overordnet nøkkel | Ingen                                                                                                                                                                                                                |
 | Underordnede nøkler | Konfigurasjonsnøkkelen **Avansert finansoppføring** (AdvancedLedgerEntry), konfigurasjonsnøkkelen **Offentlig sektor 1099G** (Tax1099G), konfigurasjonsnøkkelen **Offentlig sektor 1099S** (Tax1099S), konfigurasjonsnøkkelen **Fransk forskriftsmessig** |
 
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Planlegge for funksjonalitet for offentlig sektor](plan-public-sector-functionality.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

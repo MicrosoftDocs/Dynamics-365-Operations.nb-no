@@ -2,13 +2,16 @@
 title: Begrense betalingsmåter for returer uten en kvittering
 description: Dette emnet beskriver hvordan bestemte betalingstyper kan være begrenset for refusjon hvis returer gjøres uten et mottak.
 author: rapraj
+manager: AnnBe
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: 716b3a924da14d94061966d0d671003a6e2b90f88a3c0c4064191b47d8930f93
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dfc49e3c3132fe2687ea71e5da75fe31753d57f9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773844"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414637"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrense betalingsmåter for returer uten en kvittering
 
@@ -38,7 +41,7 @@ Du må fullføre følgende oppgaver hvis du vil definere betalingsmåter.
 3. Definere betalingsmåter i butikker. Knytt betalingsmåter til hver butikk, og angi deretter de butikkspesifikke innstillingene for hvert betalingsmåte.
 4. Definer kortbetalingsmåter for butikker. Fullfør kortoppsettet for alle kortbetalingsmåter som butikken godtar.
 
-![Butikkoppsett.](media/NoReceiptReturns1.png "Oppsett av detaljhandel") 
+![Butikkoppsett](media/NoReceiptReturns1.png "Oppsett av detaljhandel") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrense betalingsmåter for returer uten en kvittering
@@ -49,15 +52,12 @@ Standardverdien for av/på er **Nei**, som sikrer at betalingsmåten er tillatt 
 
 Når **Begrens for refusjoner uten kvittering** er satt til **Ja**, tillates ikke den valgte betalingsmåten for refusjoner. 
 
-![Butikkbetalingsmåte.](media/NoReceiptReturns3.png "Betalingsmåte for detaljhandel") 
+![Butikkbetalingsmåte](media/NoReceiptReturns3.png "Betalingsmåte for detaljhandel") 
 
 > [!NOTE]
 > Når en kasserer legger til en betalingsmåte som er begrenset for refusjon uten kvittering, vises en melding for å bekrefte de akseptable betalingsmåtene.
 
-![Akseptable betalingsmåter.](media/NoReceiptReturns4.png "Akseptable betalingsmåter") 
+![Akseptable betalingsmåter](media/NoReceiptReturns4.png "Akseptable betalingsmåter") 
 
 Hvis en transaksjon har både en retur med kvittering og en retur uten kvittering, fremtvinges ikke begrensningsbetingelsene, fordi transaksjonen vil være en returarbeidsflyt med kvittering. 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

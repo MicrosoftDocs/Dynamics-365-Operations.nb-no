@@ -2,12 +2,15 @@
 title: Behandling av distribuert ordre (DOM)
 description: Dette emnet beskriver DOM-funksjonaliteten i Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/08/2021
+manager: AnnBe
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 442a7449e0b28e1086d50ab68dbaf85370fce8ea6e178dd91ad972a2b47d7de3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717703"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4459666"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
@@ -34,47 +37,42 @@ DOM optimaliserer oppfyllelse av ordrer på tvers av et avansert nettverk av sys
 
 Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
-![Livssyklus for salgsordre i konteksten til DOM.](./media/flow.png "Livssyklus for salgsordre i konteksten til DOM")
+![Livssyklus for salgsordre i konteksten til DOM](./media/flow.png "Livssyklus for salgsordre i konteksten til DOM")
 
 ## <a name="set-up-dom"></a>Definer DOM
 
 1. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**.
-2. Vis **Handel**-noden i fanen **Konfigurasjonsnøkler**, og merk deretter av for **Behandling av distribuert ordre**.
+2. Vis **Handel**-noden i kategorien **Konfigurasjonsnøkler**, og merk deretter av for **Behandling av distribuert ordre**.
 3. Gå til **Detaljhandel og handel \> Behandling av distribuert ordre \> Oppsett \> DOM-parametere**.
-4. Angi følgende verdier i fanen **Generelt**:
+4. Angi følgende verdier i kategorien **Generelt**:
 
     - **Aktiver behandling av distribuert ordre** – Sett dette alternativet til **Ja**.
     - **Bekreft bruk av Bing-kart for DOM** – Sett dette alternativet til **Ja**.
 
-
         > [!NOTE]
-        > Du kan sette dette alternativet til **Ja** bare hvis alternativet **Aktiver Bing-kart** i fanen **Bing-kart** på siden **Delte handelsparametere** (**Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**) også er satt til **Ja**, og hvis en gyldig nøkkel er angitt i feltet **Nøkkel for Bing-kart**.
-        >
-        > Med portalen [Utviklersenter for Bing-kart](https://www.bingmapsportal.com/) kan du begrense tilgangen på API-nøklene for Bing-kart til et sett med domener du angir. Ved hjelp av denne funksjonen kan kunder definere et strengt sett med referanseverdier eller IP-adresseområder som nøkkelen vil bli validert mot. Forespørsler som stammer fra tillatelseslisten din, behandles på vanlig måte, mens forespørsler utenfra listen din vil returnere en tilgang som ikke fikk svar. Det er valgfritt å legge til domenesikkerhet i API-nøkkelen, og nøkler som forblir uendret, vil fortsette å fungere. Tillatelseslisten for en nøkkel er uavhengig av alle de andre nøklene, noe som gjør at du kan ha atskilte regler for hver av nøklene dine. Distribuert ordrebehandling støtter ikke oppsett av domeneegenskaper som det refereres til.
-
+        > Du kan sette dette alternativet til **Ja** bare hvis alternativet **Aktiver Bing-kart** i kategorien **Bing-kart** på siden **Delte handelsparametere** (**Detaljhandel og handel \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**) også er satt til **Ja**, og hvis en gyldig nøkkel er angitt i feltet **Nøkkel for Bing-kart**.
 
     - **Oppbevaringsperiode i dager** – Angi hvor lenge oppfyllelsesplanene som DOM-kjøringer genererer, skal beholdes i systemet. Den satsvise jobben **Oppsett for jobb for sletting av DOM-oppfyllelsesdata** sletter alle oppfyllelsesplaner som er eldre enn antallet dager du angir her.
     - **Avvisningsperiode (i dager)** – Angi hvor lang tid det må gå før en avvist ordrelinje kan tilordnes til samme lokasjon.
 
-5. Angi følgende verdier i fanen **Problemløser**:
+5. Angi følgende verdier i kategorien **Problemløser**:
 
     - **Maksimalt antall forsøk på automatisk oppfyllelse** – Angi hvor mange ganger DOM-motoren skal forsøke å formidle en ordrelinje til en lokasjon. Hvis DOM-motoren ikke kan formidle en ordrelinje til en lokasjon på det angitte antallet forsøk, blir ordrelinjen flagget som et unntak. Motoren vil deretter hoppe over den linjen i senere kjøringer til statusen tilbakestilles manuelt.
     - **Områderadius for lokal butikk** – Angi en verdi. Dette feltet bidrar til å fastslå hvordan lokasjoner blir gruppert og vurdert som like når det gjelder avstand. Hvis du for eksempel angir **100**, vurderes hver butikk eller distribusjonssenter innen en avstand på 100 km av oppfyllelsesadressen som like når det gjelder avstand.
     - **Problemløsertype** – Velg en verdi. To typer i problemløsere følger med Commerce: **Produksjonsproblemløser** og **Forenklet problemløser**. For alle maskiner som kjører DOM (det vil si alle servere som er en del av DOMBatch-gruppen), må **Produksjonsproblemløser** velges. Produksjonsproblemløseren krever den spesielle lisensnøkkelen som er lisensiert og distribuert i produksjonsmiljøer som standard. For ikke-produksjonsmiljøer må denne lisensnøkkelen distribueres manuelt. Hvis du vil distribuere lisensnøkkelen manuelt, gjør du følgende:
 
         1. I Microsoft Dynamics Lifecycle Services åpner du det delte aktivabiblioteket, velger **Modell** som aktivatype og laster ned **DOM-lisensfilen**.
-        1. Start Microsoft IIS-behandling, høyreklikk på **AOSService-nettsted**, og velg deretter **Utforsk**. Et Windows Utforsker-vindu åpnes på **\<AOS service root\>\\webroot**. Noter deg banen for \<AOS Service root\> fordi du skal bruke den i neste trinn.
-        1. Kopier konfigurasjonsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
-        1. Gå til klienten Hovedkvarter og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i fanen **Problemløser**, og bekreft at det ikke vises noen feilmeldinger.
-
+        2. Start Microsoft IIS-behandling, høyreklikk på **AOSService-nettsted**, og velg deretter **Utforsk**. Et Windows Utforsker-vindu åpnes på **\<AOS service root\>\\webroot**. Noter deg banen for \<AOS Service root\> fordi du skal bruke den i neste trinn.
+        3. Kopier konfigurasjonsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Gå til klienten Hovedkvarter og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i kategorien **Problemløser**, og bekreft at det ikke vises noen feilmeldinger.
 
         > [!NOTE]
         > Den forenklede problemløseren blir formidlet slik at forhandlere kan teste DOM-funksjonen uten å måtte distribuere spesiallisensen. Organisasjoner bør ikke bruke den forenklede problemløseren i produksjonsmiljøer.
         >
-        > Produksjonsproblemløseren forbedrer ytelse (for eksempel hvor mange ordrer og ordrelinjer som kan behandles i en kjøring) og sammenfall av resultater (ettersom en bunke med ordrer kanskje ikke gir det beste resultatet i noen scenarioer). Noen regler, for eksempel regelen **Delvise ordrer** og regelen **Maksimalt antall steder** krever produksjonsproblemløseren.
+        > Selv om den forenklede problemløseren har samme sett med funksjoner som produksjonsproblemløseren, finnes er begrensninger når det gjelder ytelse (hvor mange ordrer og ordrelinjer som kan behandles i en kjøring) og sammenfall i resultatene (en bunke med ordrer gir kanskje ikke det best resultat i enkelte tilfeller).
      
-6. Gå tilbake til **Retail og Commerce \> Behandling av distribuert ordre \> Oppsett \> DOM-parametere**.
-7. I fanen **Nummerserier** tilordner du de nødvendige nummerseriene for de ulike DOM-enhetene.
+6. Gå tilbake til **Detaljhandel og handel \> Behandling av distribuert ordre \> Oppsett \> DOM-parametere**.
+7. I kategorien **Nummerserier** tilordner du de nødvendige nummerseriene for de ulike DOM-enhetene.
 
     > [!NOTE]
     > Før nummerseriene kan tilordnes til enheter, må de defineres på siden **Nummerserier** (**Organisasjonsstyring \> Nummerserier \> Nummerserier**).
@@ -123,7 +121,7 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
         \* Hvis **Oppfyll delvise ordrer** er satt til **Nei**, vil **Oppfyll delvise linjer** alltid bli vurdert til å settes til **Nei**, uavhengig av hvordan verdien faktisk er satt.
 
         > [!NOTE]
-        > I Retail versjon 10.0.5 ble verdien for parameteren **Bare oppfylle ordre fra én lokasjon** endret til **Maksimale oppfyllelseslokasjoner**. I stedet for å tillate at en bruker konfigurerer om ordrer bare kan oppfylles fra én lokasjon, eller oppfylles fra så mange lokasjoner som mulig, kan brukere nå angi om oppfyllelse kan være fra et bestemt sett med lokasjoner (opptil 5) eller fra så mange steder som den kan oppfylles. Dette gir større fleksibilitet når det gjelder hvor mange lokasjoner ordren kan oppfylles fra. Denne regelen fungerer bare med produksjonsproblemløseren. 
+        > I Retail versjon 10.0.5 ble verdien for parameteren **Bare oppfylle ordre fra én lokasjon** endret til **Maksimale oppfyllelseslokasjoner**. I stedet for å tillate at en bruker konfigurerer om ordrer bare kan oppfylles fra én lokasjon, eller oppfylles fra så mange lokasjoner som mulig, kan brukere nå angi om oppfyllelse kan være fra et bestemt sett med lokasjoner (opptil 5) eller fra så mange steder som den kan oppfylles. Dette gir større fleksibilitet når det gjelder hvor mange lokasjoner ordren kan oppfylles fra.
 
    - **Regel for frakoblet oppfyllelseslokasjon** – Denne regelen lar organisasjoner angi en lokasjon eller en gruppe lokasjoner som frakoblet eller utilgjengelig for DOM, slik at ordrer ikke kan tilordnes til de lokasjonene for oppfyllelse.
     - **Regel for maksimalt antall avvisninger** – Denne regelen lar organisasjoner definere en terskel for avvisninger. Når terskelen er nådd, vil DOM-prosessoren merke en ordre eller en ordrelinje som et unntak, og utelate den fra videre behandling.
@@ -156,17 +154,17 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
     > 
     > Hvis du vil bruke denne funksjonen effektivt, må du kontrollere at det finnes én oppfyllelsesgruppe som inneholder alle forsendelsene, og deretter knytter du denne oppfyllelsesgruppen til oppfyllelsesprofilen.
     
-    6. Velg **Legg til** i hurtigfanen **Juridiske enheter**, og velg deretter en juridisk enhet.
-    7. Velg **Legg til** i hurtigfanen **Regler**, og velg deretter regelen som skal kobles til profilen.
+    6. Velg **Legg til** i hurtigkategorien **Juridiske enheter**, og velg deretter en juridisk enhet.
+    7. Velg **Legg til** i hurtigkategorien **Regler**, og velg deretter regelen som skal kobles til profilen.
     8. Gjenta de forrige to trinnene til alle de nødvendige reglene er knyttet til profilen.
     9. Velg **Lagre**.
-    10. Velg **Leveringsmåter** i fanen **Oppsett** i handlingsruten.
+    10. Velg **Leveringsmåter** i kategorien **Oppsett** i handlingsruten.
     11. Velg **Ny** på siden **Leveringsmåter**.
     12. Velg den juridiske enheten i **Firma**-feltet. Listen over selskaper er begrenset til de juridiske enhetene du har lagt til tidligere.
     13. Velg leveringsmåten som skal knyttes til denne profilen, i feltet **Leveringsmåte**. En leveringsmåte kan ikke være knyttet til flere aktive profiler.
     14. Gjenta de forrige to trinnene til alle de nødvendige leveringsmåtene er knyttet til profilen.
     15. Lukk siden **Leveringsmåter**.
-    16. Velg **Salgsordreopprinnelser** i fanen **Oppsett** i handlingsruten.
+    16. Velg **Salgsordreopprinnelser** i kategorien **Oppsett** i handlingsruten.
     17. Velg **Ny** på siden **Salgsopprinnelser**.
     18. Velg den juridiske enheten i **Firma**-feltet. Listen over selskaper er begrenset til de juridiske enhetene du har lagt til tidligere.
     19. Velg salgsopprinnelsen skal knyttes til denne profilen, i feltet **Salgsopprinnelse**. En salgsopprinnelse kan ikke være knyttet til flere aktive profiler.
@@ -179,8 +177,8 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 DOM kjøres bare i en satsvis jobb. Hvis du vil konfigurere den satsvise jobben for DOM-kjøringer, gjør du følgende.
 
 1. Gå til **Detaljhandel og handel \> Behandling av distribuert ordre \> Satsvis behandling \> Oppsett for DOM-prosessorjobb**.
-1. Velg en profil som DOM må kjøres for, i feltet **Oppfyllelsesprofil** i hurtigfanen **Parametere**.
-1. Velg en konfigurert satsvis gruppe i feltet **Satsvis gruppe** i hurtigfanen **Kjør i bakgrunnen**.
+1. Velg en profil som DOM må kjøres for, i feltet **Oppfyllelsesprofil** i hurtigkategorien **Parametere**.
+1. Velg en konfigurert satsvis gruppe i feltet **Satsvis gruppe** i hurtigkategorien **Kjør i bakgrunnen**.
 1. Skriv inn et navn for den satsvise jobben i feltet **Oppgavebeskrivelse**.
 1. Velg **Regelmessighet** og definer regelmessigheten for den satsvise jobben.
 1. Velg **OK**.
@@ -200,7 +198,7 @@ Under behandling vil DOM vurdere ordren og ordrelinjene som beskrevet her:
 
 Etter at DOM har tatt i bruk reglene, lagerbegrensningene og optimaliseringen, velges lokasjonen som er nærmest kundens leveringsadresse.
 
-![Salgsordrekriterier.](./media/ordercriteria.png "Salgsordrekriterier")
+![Salgsordrekriterier](./media/ordercriteria.png "Salgsordrekriterier")
 
 ## <a name="results-of-dom-runs"></a>Resultater av DOM-kjøringer
 
@@ -223,8 +221,8 @@ Hvis du vil vise alle oppfyllelsesplanene som er generert, gjør du følgende.
 ## <a name="order-line-actions-and-statuses"></a>Handlinger og statuser for ordrelinje
 
 Følgende beskriver innstillinger på ordrelinjen. Hvis du vil åpne ordrelinjen, går du til **Detaljhandel og handel \> Kunder \> All salgsordrer**.
-- Hvis du setter alternativet **Utelat fra DOM-behandling** i fanen **Generelt** på salgsordrelinjen til **Ja**, blir ordren eller ordrelinjen utelatt fra DOM-behandlingen.
-- Feltet **DOM-status** i fanen **Generelt** for salgsordrelinjen kan settes til én av følgende verdier:
+- Hvis du setter alternativet **Utelat fra DOM-behandling** i kategorien **Generelt** på salgsordrelinjen til **Ja**, blir ordren eller ordrelinjen utelatt fra DOM-behandlingen.
+- Feltet **DOM-status** i kategorien **Generelt** for salgsordrelinjen kan settes til én av følgende verdier:
 
     - **Ingen** – Ordrelinjen har aldri blitt formidlet.
     - **Fullført** – Ordrelinjen er formidlet og knyttet til en lokasjon.
@@ -236,7 +234,7 @@ Følgende beskriver innstillinger på ordrelinjen. Hvis du vil åpne ordrelinjen
         - **Spesifikt unntak for ordrelinje** – Det finnes flere unntak på ordrelinjen.
 
 - Under registrering av salgsordren, kan DOM kjøres i en interaktiv modus. Mens du registrerer en ordrelinje, kan du velge **Oppdater linje** etter at du har angitt produkt og antall, og deretter velger du **Foreslå oppfyllelseslokasjon** under **DOM**. Dermed vises det en liste over lokasjoner som er basert på DOM-regler som kan oppfylle antallet på ordrelinjen. Denne listen er sortert etter avstand. Velg en lokasjon for å angi det aktuelle området og lageret på salgsordrelinjen. For at denne funksjonen skal fungere, må det finnes en eksisterende, aktiv oppfyllelsesprofil som samsvarer med salgsopprinnelsen og leveringsmodusen på salgslinjen.
-- Hvis du vil vise DOM-kjøringsloggene for en salgsordrelinje, velger du **Salgsordrelinje**, og deretter velger du **Vis DOM-logger** under **DOM**. DOM-loggene viser alle hendelsene og loggene som ble generert av DOM-kjøringen. Loggene kan hjelpe deg med å forstå hvorfor en bestemt lokasjon ble tilordnet til ordrelinjen, og hvilke regler og begrensninger som ble vurdert som en del av tilordningen. DOM-loggene er også tilgjengelige i fanen **Behandle** på nivå i salgsordrehodet.
+- Hvis du vil vise DOM-kjøringsloggene for en salgsordrelinje, velger du **Salgsordrelinje**, og deretter velger du **Vis DOM-logger** under **DOM**. DOM-loggene viser alle hendelsene og loggene som ble generert av DOM-kjøringen. Loggene kan hjelpe deg med å forstå hvorfor en bestemt lokasjon ble tilordnet til ordrelinjen, og hvilke regler og begrensninger som ble vurdert som en del av tilordningen. DOM-loggene er også tilgjengelige i kategorien **Behandle** på nivå i salgsordrehodet.
 
 ## <a name="run-a-clean-up-job-for-dom-fulfillment-plans"></a>Kjøre en oppryddingsjobb for DOM-oppfyllelsesplaner
 
@@ -254,6 +252,3 @@ Her er et par ting du bør vurdere når du bruker DOM-funksjonen:
 - DOM ser for øyeblikket bare på ordrer som er opprettet fra handelskanaler. Salgsordrer blir identifisert som salgsordrer når alternativet **Handelssalg** er satt til **Ja**.
 - Microsoft har ikke testet DOM med avanserte lagerstyringsfunksjoner. Kunder og partnere må være forsiktige med å fastslå om DOM er kompatibel med de avanserte funksjonene og prosessene for lagerstyring som er relevante for dem.
 - DOM er tilgjengelig bare på skyversjonen av Commerce. Funksjonen støttes ikke i lokale distribusjoner.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

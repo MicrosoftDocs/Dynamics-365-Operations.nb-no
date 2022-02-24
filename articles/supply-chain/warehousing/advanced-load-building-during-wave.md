@@ -2,23 +2,26 @@
 title: Avansert lastplanlegging under en bølge
 description: Dette emnet inneholder informasjon om avansert bølgelastplanlegging, som automatisk tilordner forsendelser til eksisterende bølger under bølgekjøring. Du kan derfor opprette meningsfylte laster som representerer lastebiler, uten å måtte bruke arbeidsområdet for lastplanlegging.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574743"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654204"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avansert lastplanlegging under en bølge
 
@@ -236,7 +239,7 @@ Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i dette
 1. Velg **Reservasjon** på **Beholdning**-menyen over rutenettet.
 1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**.
 1. Velg **Lukk**-knappen (**X**) øverst til høyre på siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten. Systemet oppretter en forsendelse og legger den til en ny last, fordi ingen eksisterende last inneholder lastlinjer som har dette ordrenummeret.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten. Systemet oppretter en forsendelse og legger den til en ny last, fordi ingen eksisterende last inneholder lastlinjer som har dette ordrenummeret.
 
     Du mottar informasjonsmeldinger som angir arbeid, bølge og forsendelse som er opprettet for denne ordren.
 
@@ -247,6 +250,3 @@ Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i dette
 1. I salgsordren du nettopp opprettet, velger du **Legg til** på **Salgsordrelinjer**-hurtigfanen for å legge til en ny linje.
 1. På den nye linjen angir du **Varenummer**-feltet til *M9200* og **Antall**-feltet til *1*.
 1. Gjenta linjer 6 til og med 9 for å reservere linjen og frigi den til lageret. Som tidligere oppretter systemet en **ny** forsendelse for linjen du la til. Men fordi varen kommer fra **CarAudio**-varegruppen, **kan den ikke overføre betingelsene du angir for samlegruppen for last**. Derfor **legges den til en ny last**. Hvis du ikke hadde angitt en samlegruppe for lastplanleggingsmalen, ville denne forsendelsen ha blitt lagt til i den første lasten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

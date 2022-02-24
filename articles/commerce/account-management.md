@@ -2,12 +2,15 @@
 title: Kontobehandlingssider og -moduler
 description: Dette emnet dekker kontobehandlingssider og -moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 03/17/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716256"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414564"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontobehandlingssider og -moduler
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker kontobehandlingssider og -moduler i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Kontobehandling refererer til en gruppe med sider som brukes til å behandle informasjon som er relatert til brukerkontoer i Dynamics 365 Commerce. Kontobehandlingssidene inkluderer målsiden for kontostyring, brukerprofilside, brukeradresseside, ordreloggside, ordredetaljerside, loyalitetsside og ønskelisteside.
 
@@ -49,9 +54,9 @@ Siden for ordrehistorikk bruker ordreloggmodulen til å vise alle de siste ordre
 
 Ordredetaljer-siden inneholder detaljert informasjon for hver ordre og er tilgjengelig fra ordrehistorikksiden. Den bruker ordredetaljermodulen, som krever salgs-IDen eller transaksjons-IDen for å hente ordredetaljene.
 
-### <a name="my-profile-page"></a>Min profilside
+### <a name="user-profile-page"></a>Brukerprofilside
 
-Min profil-siden viser brukerens kontoprofildetaljer ved hjelp av kontoprofilmodulen. Siden viser e-postadressen som er knyttet til brukerens konto, i tillegg til innstillinger som er angitt for kontoen. Hvis du definerer egendefinerte kundeattributter, viser også delen Tilleggsinformasjon disse attributtene. Brukere kan redigere navn, innstillinger eller tilleggsinformasjon (hvis tilgjengelig).
+Siden brukerprofil viser brukerkontodetaljer, for eksempel brukerens navn og e-postadresse. Den bruker brukerprofildetaljene og brukerprofilredigeringsmodulene. Selv om epostadresse ikke kan fjernes, kan den redigeres. Brukerprofilsiden viser også brukerpreferansene som gjør en bruker i stand til å velge/velge bort bestemte funksjoner, for eksempel tilpassing av anbefalingslister. 
 
 ### <a name="user-address-page"></a>Brukeradresseside
 
@@ -84,6 +89,3 @@ For å bli med i et fordelsprogram kan det opprettes en markedsføringsside med 
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

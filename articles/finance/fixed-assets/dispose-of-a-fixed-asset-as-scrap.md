@@ -2,9 +2,11 @@
 title: Fjerne et anleggsmiddel som svinn
 description: Emnet beskriver prosessen med å eliminere transaksjoner for et anleggsmiddel som er fjernet som svinn.
 author: moaamer
+manager: Ann Beebe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 90eb791bae2bbe70cf9fe7127a98962305449e1d0b370cfa001afbd3654046ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dee4468079a9ad500f513900cec090acf6026ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752924"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969134"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Fjerne et anleggsmiddel som svinn
 
@@ -43,7 +45,7 @@ Emnet beskriver prosessen med å eliminere transaksjoner for et anleggsmiddel so
 Før du avhender et anleggsmiddel som svinn, må du opprette finanskontoer som er knyttet til anleggsmiddelets anskaffelsesverdi, avskrivning for inneværende år, avskrivning for tidligere år og netto bokført verdi for anleggsmiddelet. Transaksjonstypene for anleggsmiddel vises på siden **Posteringsprofil for anleggsmidler**. Gå til **Anleggsmidler \> Oppsett \> Posteringsprofiler for anleggsmidler**, and deretter velger du **Svinn** i feltet over rutenettet i hurtigfanen **Avhending**. Illustrasjonen nedenfor viser en liste over transaksjonstyper for anleggsmidler på siden **Posteringsprofiler for anleggsmidler**.
 
 
-[![Avhende et anleggsmiddel som svinn, fig. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+[![Avhende et anleggsmiddel som svinn, fig. 1](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 I eksemplet nedenfor ble et anleggsmiddel anskaffet 1. januar 2018, og det blir kassert 31. mars 2019.
 
@@ -58,27 +60,24 @@ Netto bokført verdi = anskaffelsespris – avskrivning
 
 I dette eksemplet ble anleggsmiddelet anskaffet og avskrevet i 15 måneder, fra januar 2018 til mars 2019. Derfor er netto bokført verdi for anleggsmiddelet 9 000,00 USD (24 000,00 USD – 15 000,00 USD).
 
-[![Eksempel på avskrivning av anleggsmiddel.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
+[![Eksempel på avskrivning av anleggsmiddel](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
 Hvis du vil opprette en avhendingsjournal, går du til **Anleggsmidler \> Journaloppføringer \> Anleggsmiddeljournal** og velger **Linjer** i handlingsruten. Velg **Avhending – svinn**, og velg deretter en ID for anleggsmiddel. Hvis du ikke avhende anleggsmiddelet fullstendig, angir du ikke en verdi i **Debet**- eller **Kredit**-feltet.
 
-[![Anleggsmiddeljournal.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
+[![Anleggsmiddeljournal](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 Svinntransaksjonen for avhending av anleggsmidler endrer feltverdiene for anleggsmiddeltablået på følgende måter:
 
 - I **Saldo**-delen oppdateres **Status**-feltet til **Kassert**.
 - I **Avgang**-delen blir feltet **Avhendingsdato** satt til datoen da anleggsmiddelet ble kassert.
 
-[![Detaljer i anleggsmiddeljournal.](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Detaljer i anleggsmiddeljournal](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 Illustrasjonen nedenfor viser anleggsmiddelsaldoen.
 
-[![Anleggsmiddelsaldo.](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
+[![Anleggsmiddelsaldo](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
 
 Illustrasjonen nedenfor viser bilaget som er postert.
 
-[![Netto bokført verdi.](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Netto bokført verdi](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)

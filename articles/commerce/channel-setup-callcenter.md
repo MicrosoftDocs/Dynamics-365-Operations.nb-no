@@ -2,26 +2,29 @@
 title: Definere en telefonsenterkanal
 description: Dette emnet beskriver hvordan du oppretter en ny telefonsenterkanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744540"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4414796"
 ---
-# <a name="set-up-a-call-center-channel"></a>Konfigurere en telefonsenterkanal
+# <a name="set-up-a-call-center-channel"></a>Definere en telefonsenterkanal
 
 
 [!include [banner](includes/banner.md)]
@@ -54,11 +57,11 @@ Hvis du vil opprette og konfigurere en ny telefonsenterkanal, gjør du følgende
 
 Bildet nedenfor viser opprettelsen av en ny telefonsenterkanal.
 
-![Ny telefonsenterkanal.](media/channel-setup-callcenter-1.png)
+![Ny telefonsenterkanal](media/channel-setup-callcenter-1.png)
 
 Bildet nedenfor viser et eksempel på en telefonsenterkanal.
 
-![Eksempel på telefonsenterkanal.](media/channel-setup-callcenter-2.png)
+![Eksempel på telefonsenterkanal](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Ekstra kanaloppsett
 
@@ -66,7 +69,7 @@ Andre oppgaver som kreves for oppsett av telefonsenterkanal, omfatter definere b
 
 Bildet nedenfor viser oppsettsalternativene **Leveringsmåter** og **Betalingsmåter** i kategorien **Oppsett**.
 
-![Ekstra konfigurasjonshandlinger for telefonsenterkanal.](media/channel-setup-callcenter-3.png)
+![Ekstra konfigurasjonshandlinger for telefonsenterkanal](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Definere betalingsmåter
 
@@ -81,7 +84,7 @@ Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalin
 
 Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.
 
-![Eksempel på betalingsmåter.](media/channel-setup-callcenter-payments.png)
+![Eksempel på betalingsmåter](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Definer leveringsmåter
 
@@ -97,7 +100,7 @@ Følg denne fremgangsmåten for å endre eller legge til en leveringsmåte som s
 
 Bildet nedenfor viser et eksempel på en leveringsmåte.
 
-![Definer leveringsmåter.](media/channel-setup-retail-7.png)
+![Definer leveringsmåter](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Definere kanalbrukere
 
@@ -133,6 +136,3 @@ Hvis du vil definere en prisgruppe, gjør du følgende:
 [Definere og arbeide med svindelvarsler](set-up-fraud-alerts.md)
 
 [Definere kontinuitetsprogrammer for telefonsentre](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

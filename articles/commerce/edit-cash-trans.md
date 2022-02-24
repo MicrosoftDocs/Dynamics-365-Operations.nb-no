@@ -2,12 +2,15 @@
 title: Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
 description: Dette emnet beskriver hvordan du redigerer og kontrollerer hentesalgs- og kassastyringstransaksjoner i Microsoft Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -15,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 85c4bd4c03b6ac09f2226d1767deabde1879f869e4b7c4d45e4d4c2a1d8effb3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15d23bfd591558e7330a273065429256c2e17d64
+ms.sourcegitcommit: ce51ff2b6099c75dceb99de6dea9d53baf99772d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765344"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "4459675"
 ---
 # <a name="edit-and-audit-cash-and-carry-and-cash-management-transactions"></a>Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
 
@@ -118,6 +121,3 @@ Hvis du vil redigere transaksjoner som ikke er koblet til et utdrag i Commerce H
 [Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](create-excel-edit.md)
 
 [Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](add-fields-excel.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

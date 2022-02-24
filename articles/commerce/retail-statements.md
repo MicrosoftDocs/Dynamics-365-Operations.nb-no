@@ -2,13 +2,16 @@
 title: Detaljhandelsutdrag
 description: Dette emnet beskriver hvordan utdrag opprettes og posteres.
 author: ashishmsft
+manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 64b6fbda9f0396eb4ee6e2e248941f1429d4485278180d5c70dac6dd837a4537
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4409811d2ef60174a316db10307dc7af4697398c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738702"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414763"
 ---
 # <a name="retail-statements"></a>Detaljhandelsutdrag
 
@@ -31,7 +34,7 @@ I Dynamics 365 Commerce brukes posteringsprosessen for utdraget til å ta hensyn
 
 Illustrasjonen nedenfor viser utdragposteringsprosessen. I denne prosessen vil transaksjoner som registreres i salgsstedet, overføres til klienten ved hjelp av planleggeren i Commerce. Når klienten mottar transaksjonene, kan du opprette, beregne og bokføre transaksjonskontoutdraget for butikken.
 
-[![Utdragsposteringsprosess.](./media/retail-statements.png)](./media/retail-statements.png)
+[![Utdragsposteringsprosess](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>Opprette og postere utdrag
 
@@ -85,6 +88,3 @@ Når du posterer et utdrag, opprettes salgsordrer og fakturaer for salgene i utd
 - Salg der en kunde ble lagt til for transaksjonen i POS, genererer separate salgsordrer og fakturaer, én for hver unike kunde.
 
 Betalingsjournaler opprettes automatisk for betalingene i utdraget, og lageret oppdateres for salgsstedsbutikken.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

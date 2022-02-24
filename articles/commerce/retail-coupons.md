@@ -1,26 +1,29 @@
 ---
 title: Definere kuponger for detaljhandelssalg
-description: Dette emnet gir en oversikt over kuponger, og forklarer hvordan du foretar oppsettet i Dynamics 365 Commerce.
-author: josaw1
-ms.date: 10/05/2021
+description: Dette emnet gir en oversikt over kuponger, og forklarer hvordan du foretar oppsettet.
+author: scott-tucker
+manager: AnnBe
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603129"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414573"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Definere kuponger for detaljhandelssalg
 
@@ -38,10 +41,6 @@ Hvis du vil opprette en kupong, oppretter du rabatten og kupongen separat. Deret
 
 > [!NOTE]
 > Når en kupong er koblet til en rabatt, blir flere felt på rabattsiden i Commerce skrivebeskyttet, fordi de styres av kuponginnstillingene. Disse feltene omfatter feltene for status og standard datointervall.
-> 
-> Når du bruker kupongen i telefonsenterkanalen, må du velge **Omberegn**-knappen **(Selg-fanen > Beregn > Omberegn)** for at rabatten som er knyttet til kupongen, skal bli brukt. Dette tilleggstrinnet blir fjernet i en fremtidig versjon.
-
-Hvis du vil bruke en kupong på en salgstransaksjon i salgssted, kan du bruke **kupongkode** eller **kupongstrekkode**. Hvis du vil bruke **kupongkode**, må operasjonen **Legg til kupongkode** være konfigurert i **salgsstedstransaksjonens** [skjermoppsett](pos-screen-layouts.md). Velg **Legg til kupongkode**, og angi kupongkoden. Du kan også bruke **kupongstrekkode** ved å skanne strekkoden eller angi strekkoden ved hjelp av det numeriske tastaturet på **Transaksjon**-skjermbildet.
 
 ### <a name="limited-use-coupons"></a>Kuponger med begrenset bruk
 
@@ -83,6 +82,3 @@ Kupongfunksjonen består av flere forskjellige funksjoner. Commerce Headquarters
 - **Hovedkontor oppdateres delvis, men Commerce Scale Unit og POS oppdateres ikke.** I en Hovedkontor-oppdatering oppdateres kupong- og rabattsidene, og utsalgsprismotoren oppdateres også. Hvis bare én av de to komponentene oppdateres, vil enkelte av sidene i Commerce ikke stemme overens med prisberegningsdataene. Derfor kan uventede kontantberegninger eller feil oppstå under rabattberegninger.
 - **Hovedkontor oppdateres, men Commerce Scale Unit og POS oppdateres ikke (N-1).** Fordi ikke alle butikker kan oppdateres samtidig, anbefaler vi at du oppdaterer Hovedkontor før du oppdaterer butikker. I scenarioet med N-1 vil ikke ny funksjonalitet som er knyttet til kuponger, være tilgjengelig i butikker som ennå ikke er oppdatert. Kupongfunksjonen introduserer for eksempel "utelat" linjer. Hvis du utelater linjer i en rabatt, kan de ikke brukes i en butikk som kjører en tidligere versjon.
 - **Hovedkontor oppdateres ikke, men Commerce Scale Unit og POS oppdateres (N+1).** Fordi den oppdaterte prismotoren i Commerce Scale Unit kan håndtere eldre rabattkoder under prisberegninger, skal ikke oppdateringen ha noen funksjonell innvirkning i dette scenariet.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

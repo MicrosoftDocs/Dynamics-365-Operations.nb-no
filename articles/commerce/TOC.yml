@@ -4,10 +4,8 @@
       items:
         - name: Startside for Dynamics 365 Commerce
           href: index.md
-        - name: Kom i gang
+        - name: Komme i gang
           items:
-            - name: Tjenestebeskrivelse
-              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
             - name: Før du kjøper
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
             - name: Oppdatering av én versjonstjeneste
@@ -70,10 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Kjøp Finance + Operations (on-premises)
+                - name: Kjøpe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementeringsveiledning for Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
+                - name: Finance and Operations-apper styrt av 21Vianet i Kina
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
+                - name: Finance and Operations-apper i Frankrike
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Få kundestøtte
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Oppgradering og N-1-støtte
@@ -92,17 +94,15 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.25 (april 2022)
-                      href: get-started/whats-new-commerce-10-0-25.md
-                    - name: Commerce 10.0.24 (februar 2022)
-                      href: get-started/whats-new-commerce-10-0-24.md
-                    - name: Commerce 10.0.23 (januar 2022)
-                      href: get-started/whats-new-commerce-10-0-23.md
+                    - name: Commerce 10.0.16 (februar 2021)
+                      href: get-started/whats-new-commerce-10-0-16.md
+                    - name: Commerce 10.0.15 (januar 2021)
+                      href: get-started/whats-new-commerce-10-0-15.md
+                    - name: Commerce 10.0.14 (november 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
-                    - name: Funksjoner som er fjernet eller avskrevet på startsiden
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
-                    - name: Fjernede eller avskrevne funksjoner i Finance and Operations
+                    - name: Funksjoner som er fjernet eller avskrevet i Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
                     - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
                       href: get-started/removed-deprecated-features-commerce.md
@@ -120,12 +120,14 @@
                   href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Vise og eksportere feltbeskrivelser
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/commerce/toc.json
-                - name: Oppgaveopptaker
+                - name: Oppgaveregistrering
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/commerce/toc.json
-                - name: Lag dokumentasjon eller opplæring med oppgaveopptaker
+                - name: Lage dokumentasjon eller opplæring med Oppgaveregistrering
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/commerce/toc.json
                 - name: Videoer
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/commerce/toc.json
+                - name: Ordliste
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/commerce/toc.json
             - name: Læringskatalog
               items:
                 - name: Startside for læringskatalog
@@ -176,58 +178,18 @@
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
                 - name: Rutenettfunksjoner
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
-                - name: Opprett og arbeid med egendefinerte felter
+                - name: Opprette og arbeide med egendefinerte felt
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Bygg inn lerretsapper fra Power Apps
+                - name: Bygge inn lerretsapper fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
-                - name: Bygg inn tredjepartsapper
-                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
-                - name: Finn informasjon ved hjelp av oppslag
+                - name: Finne informasjon ved hjelp av oppslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Endre datoen for en økt
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/commerce/toc.json
-                - name: Angi en brukers foretrukne tidssone
+                - name: Angi en brukers foretrukkede tidssone
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
                 - name: Forstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
-            - name: Implementering av livssyklusadministrasjon
-              items:
-                - name: Startside for implementering av livssyklus for ressurs
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Arkitektur for Finance and Operations-apper
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Microsoft FastTrack
-                  href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
-                - name: Jobbintroduksjon for et implementeringsprosjekt
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
-                - name: Miljøplanlegging
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Klargjør for aktivering
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Vanlige spørsmål om aktivering
-                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
-                - name: Sende en serviceforespørsel
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure AD-leiere'
-                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytte miljøer mellom datasentre
-                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytte lisenser mellom avtaletyper
-                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytte LCS-implementeringsprosjekter til forskjellige Azure AD-leiere
-                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Flytte LCS-implementeringsprosjekter fra lokalt til skyen
-                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
-                - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
-                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementer Commerce-prosjekter for Finance and Operations
-                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-                - name: 'Definer nye miljøer, Azure DevOps og grener for prosjekter'
-                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-                - name: Oppdatere kode og miljøer for Commerce-prosjekter
-                  href: dev-itpro/updating-environments.md
-                - name: Testings- og ytelsesproblemer
-                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Oversikt over arkitektur
           items:
             - name: Arkitektur
@@ -238,7 +200,7 @@
                   href: arch-auth-flow.md
                 - name: Versjonskontrollkrav for Dynamics 365 Commerce-komponent
                   href: arch-component-versioning.md
-                - name: Arkitekturen i hodeløs handel
+                - name: Arkitektur for Commerce Scale Unit
                   href: dev-itpro/retail-server-architecture.md
                 - name: Velg topologi i butikk
                   href: dev-itpro/retail-in-store-topology.md
@@ -250,15 +212,11 @@
                       href: dev-itpro/define-retail-channel-communications-cdx.md
                     - name: Feilsøke Commerce Data Exchange
                       href: dev-itpro/CDX-Troubleshooting.md
-                    - name: Sortere Commerce Data Exchange-pakker etter primærindeks
-                      href: CDX-package-sort.md
                 - name: Arkitektur for Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Frakoblet implementering og feilsøking for Commerce
-                  href: dev-itpro/implementation-considerations-offline.md
-                - name: Publisere en nettbutikkatalog
+                - name: Publiseringsarkitektur for nettbutikk
                   href: dev-itpro/retail-online-store-publishing-architecture.md
-                - name: Innhold for Retail Channel Performance Power BI
+                - name: Power BI-innhold for Retail Channel Performance
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: PA-DSS-sertifisering (Payment Application Data Security Standards)
                   href: dev-itpro/PA-DSS-Certification.md
@@ -282,9 +240,7 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfigurasjon og installasjon av Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
-                - name: Massedistribusjon av forseglede Commerce-selvbetjeningskomponenter
-                  href: dev-itpro/Enhanced-Mass-Deployment.md
-                - name: Massedistribusjon av gamle selvbetjeningskomponenter
+                - name: Massedistribusjon av selvbetjeningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Hendelser for Commerce-komponent for diagnose og feilsøking
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -292,6 +248,44 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
                 - name: Initialisere data for utgangsverdi i nye Commerce-miljøer
                   href: enable-configure-retail-functionality.md
+            - name: Implementering av livssyklusadministrasjon
+              items:
+                - name: Startside for implementering av livssyklus for ressurs
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
+                - name: Arkitektur for Finance and Operations-apper
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Jobbintroduksjon for et implementeringsprosjekt
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
+                - name: Miljøplanlegging
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
+                - name: Klargjøre for aktivering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
+                - name: Vanlige spørsmål om aktivering
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Sende en serviceforespørsel
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Vanlige spørsmål om abonnementer, LCS-prosjekter og Azure AD-leiere'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte miljøer mellom datasentre
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte lisenser mellom avtaletyper
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte LCS-implementeringsprosjekter til forskjellige Azure AD-leiere
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Flytte LCS-implementeringsprosjekter fra lokalt til skyen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Flere LCS-prosjekter og -produksjonsmiljøer på én Azure AD-leier
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementere prosjekter for Finance and Operations Commerce
+                  href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+                - name: 'Definere nye miljøer, Azure DevOps og grener for Commerce-prosjekter'
+                  href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+                - name: Oppdatere kode og miljøer for Commerce-prosjekter
+                  href: dev-itpro/updating-environments.md
+                - name: Testings- og ytelsesproblemer
+                  href: dev-itpro/retail-implementation-testing-performance.md
         - name: Definere kanaler
           items:
             - name: Oversikt over kanaler
@@ -372,15 +366,17 @@
                       href: pos-operations.md
                     - name: Enhetsaktivering av en tilpasset Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Konfigurer Azure Active Directory-godkjenning for salgsstedspålogging
+                    - name: Aktiver godkjenning av Azure Active Directory for salgsstedspålogging
                       href: aad-pos-logon.md
-                    - name: Produkt- og kundesøk i salgssted
+                    - name: Produkt- og kundesøk på salgsstedet
                       href: POS-search-improvements.md
-                    - name: Søk etter produkter og produktvarianter under ordreregistrering
+                    - name: Søke etter produkter og produktvarianter under ordreregistrering
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Forbedringer for kontanttransaksjoner
                       href: cash-mgmt.md
-                    - name: Suspender og gjenoppta transaksjoner i salgsstedet
+                    - name: Lageroppslag i salgsstedet
+                      href: product-variants-POS.md
+                    - name: Suspendere og gjenoppta transaksjoner i salgsstedet
                       href: pos-suspend-recall-transactions.md
                     - name: Frakoblet funksjonalitet for salgssted
                       href: pos-offline-functionality.md
@@ -412,7 +408,7 @@
                           href: demo-data.md
                         - name: Visuelle konfigurasjoner av brukergrensesnittet for salgssted
                           href: pos-screen-layouts.md
-                        - name: Installer utforming av oppsett for salgssted
+                        - name: Installere utforming av oppsett for salgssted
                           href: install-pos-layout-designer.md
                         - name: Velge varslingsinnstillinger
                           href: Notifications-POS.md
@@ -508,26 +504,16 @@
                       href: payment-methods.md
                     - name: Betalingsmåter i telefonsentre
                       href: work-with-payments.md
-                    - name: Refundering av betalingsbehandling i telefonsentre
-                      href: call-center-refund-payments.md
-                    - name: 'Kredittkortoppsett, godkjenning og registrering'
+                    - name: 'Kredittkortoppsett, autorisasjon og registrering'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere kontantstørrelser for salgsstedet
                       href: cash-denominations.md
-                    - name: Konfigurer kredittkortbehandling
+                    - name: Konfigurere kredittkortbehandling
                       href: tasks/configure-credit-card-processing.md
                     - name: Hopp over dialogboksen Endre forfall på salgsstedet
                       href: dev-itpro/skip-change-due.md
-                    - name: Dynamics 365 Payment Connector for Adyen
-                      items:
-                        - name: Oversikt over Dynamics 365 Payment Connector for Adyen
-                          href: dev-itpro/adyen-connector.md
-                        - name: Konfigurer Dynamics 365 Payment Connector for Adyen
-                          href: dev-itpro/adyen-connector-setup.md
-                        - name: Vanlige spørsmål om Dynamics 365 Payment Connector for Adyen
-                          href: dev-itpro/adyen-connector-faq.md
-                        - name: Feilsøk problemer med Dynamics 365 Payment Connector for Adyen
-                          href: dev-itpro/adyen-connector-troubleshoot.md
+                    - name: Betalingskobling for Ayden
+                      href: dev-itpro/adyen-connector.md
                     - name: Lagre betalingsmåter på nett med Adyen-koblingen
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Sterk kundegodkjenning (SCA) ved hjelp av Adyen-koblingen
@@ -542,35 +528,21 @@
                       href: duplicate-payment-protection.md
                     - name: Oversikt over betalinger for omnikanal
                       href: omni-channel-payments.md
-                    - name: Flere tilgjengelige betalingsmåter for henting i butikk
-                      href: dev-itpro/multiple-payments-pickup.md
                     - name: Commerce-ordrebetalinger for omnikanal
                       href: dev-itpro/commerce-payments.md
-                    - name: Arkiver transaksjonsdata for kredittkort
-                      href: dev-itpro/archive-cc-data.md
                     - name: Behandle kredittkort uten maskinvarestasjon
                       href: dev-itpro/cnp-pos.md
                     - name: Dynamics 365 Payment Connector for PayPal
                       href: paypal.md
                     - name: Støtte for lommebokbetaling
                       href: wallets.md
-                    - name: Utvidede betalinger i butikkfrontkassen
-                      href: dev-itpro/enhanced-sca.md
                     - name: Vanlige spørsmål om betalinger
                       href: dev-itpro/payments-retail.md
-                - name: E-post og varslinger
-                  items:
-                    - name: Konfigurer kvitteringsmeldinger for å bruke egendefinerte oppsett og maler
-                      href: configure-emailed-receipt-formats.md
-                    - name: Legge til en QR-kode eller strekkode i e-postmeldinger med transaksjon og kvittering
-                      href: add-qr-code-barcode-email.md
                 - name: Behandle Bing-kart for organisasjonen
                   href: dev-itpro/manage-bing-maps.md
-                - name: Opprett og oppdater tidsrom for kundehenting
+                - name: Opprette og oppdatere tidsrom for kundehenting
                   href: dev-itpro/pickup-timeslots.md
-                - name: Konfigurer produktdimensjonsverdier som skal vises som prøver
-                  href: dev-itpro/dimensions-swatch.md
-        - name: Bruk produktene og tjenestene dine i varehandel
+        - name: Bruke produktene og tjenestene dine i varehandel
           items:
             - name: 'Kategorier, produkter og sortimenter'
               items:
@@ -650,11 +622,9 @@
                   href: tender_based_discounts.md
                 - name: Oversikt over leveringsrabatt
                   href: retail-shipping-discount.md
-                - name: Konfigurer gave med innkjøpskampanjer
-                  href: gift-with-purchase.md
-                - name: Konfigurer kuponger
+                - name: Konfigurere kuponger
                   href: retail-coupons.md
-                - name: Vis rabatter i salgssted
+                - name: Vise rabatter i salgssted
                   href: discounts-pos.md
                 - name: Prisrapporter
                   href: price-report.md
@@ -662,8 +632,6 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: Opprette forretningsavtaler ved hjelp av kategoriprisregler
                   href: tasks/category-pricing-rules-trade-agreements.md
-                - name: Forsinke beregning av nøyaktig pris og rabatt
-                  href: delayed-price-calculation.md
             - name: Anbefalinger
               items:
                 - name: Oversikt over produktanbefalinger
@@ -680,8 +648,6 @@
                       href: personalization-gdpr.md
                 - name: Aktivere Kjøp lignende utseender-anbefalinger
                   href: shop-similar-looks.md
-                - name: Aktivere anbefalinger av typen Kjøp lignende beskrivelse
-                  href: shop-similar-description.md
                 - name: Salgsstedsopplevelser
                   items:
                     - name: Legge til produktanbefalinger på salgssted
@@ -708,14 +674,6 @@
                   href: configure-ratings-reviews.md
                 - name: Synkronisere produktvurderinger
                   href: sync-product-ratings.md
-                - name: Aktiver manuell publisering av rangeringer og anmeldelser av en moderator
-                  href: manual-publish-rating-reviews.md
-                - name: Importer og eksporter rangeringer og anmeldelser
-                  href: import-export-reviews.md
-                - name: Konfigurer tjeneste-til-tjeneste-autentisering
-                  href: service-to-service-auth.md
-                - name: Vanlige spørsmål om rangeringer og anmeldelser
-                  href: ratings-reviews-faq.md
             - name: Administrer lageret ditt
               items:
                 - name: Lager
@@ -734,15 +692,13 @@
                       href: pos-inbound-inventory-operation.md
                     - name: Utgående lageroperasjon i salgsstedet
                       href: pos-outbound-inventory-operation.md
-                    - name: Beregn lagertilgjengelighet for detaljhandelskanaler
+                    - name: Beregne lagertilgjengelighet for detaljhandelskanaler
                       href: calculated-inventory-retail-channels.md
-                    - name: Lageroppslagsoperasjon i salgsstedet
-                      href: pos-inventory-lookup-operation.md
                 - name: Bestillinger
                   items:
                     - name: Oversikt over bestilling
                       href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-                    - name: Opprett bestillinger
+                    - name: Opprette bestillinger
                       href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
                     - name: Mottaksseddel mot bestillinger
                       href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
@@ -756,7 +712,7 @@
           items:
             - name: Kundeordrer
               items:
-                - name: Kundeordrer i POS
+                - name: Kundeordrer på salgssted (POS)
                   href: customer-orders-overview.md
                 - name: Hybride kundeordrer
                   href: hybrid-customer-orders.md
@@ -764,10 +720,6 @@
                   href: enhancedorderrecall.md
                 - name: Aktivere flere leveringsmåter for plukking
                   href: multiple-pickup-modes.md
-                - name: Behandle en kundeordreplukking i POS
-                  href: process-order-pickup-POS.md
-                - name: Aktivere ordreoppslag for gjestebetalinger
-                  href: order-lookup-guest.md
             - name: Salgsordrer
               items:
                 - name: Opprette telefonsenterordrer
@@ -788,23 +740,15 @@
                   href: order-fulfillment-overview.md
                 - name: Definere ordreoppfyllelse for butikker
                   href: order-fulfillment-pos-setup.md
-                - name: Vis ordrevarslinger i salgssted
+                - name: Vise ordrevarslinger i salgssted
                   href: notifications-pos.md
-                - name: Selg kontinuitetsprogrammer og prosessalgsordrer
+                - name: Selge kontinuitetsprogrammer og prosessalgsordrer
                   href: tasks/use-continuity-program.md
-                - name: Aktiver innsjekkingsmeldinger for kunde i salgsstedet
-                  href: enable-customer-check-in.md
-            - name: Returer og refusjoner
+            - name: Returer
               items:
-                - name: Opprett returer i salgsstedet
-                  href: POS-returns.md
-                - name: Returner serienummerkontrollerte produkter i salgsstedet
-                  href: POS-serial-returns.md
                 - name: Sammenkoblede refunderinger
                   href: dev-itpro/linked-refunds.md
-                - name: Behandle ikke-sammenkoblede refunderinger med Dynamics 365 Commerce Payment Connector for Adyen
-                  href: dev-itpro/unlinked-refunds.md
-                - name: Selg og gå tilbake til produkter som ikke er inkludert i et butikksortiment
+                - name: Selge og gå tilbake til produkter som ikke er inkludert i et butikksortiment
                   href: sell-return-outside-assortments.md
                 - name: Konfigurere og behandle en utveksling i en returordre
                   href: orderexchanges.md
@@ -812,21 +756,15 @@
                   href: payment-methods-restrictions.md
                 - name: 'Returnere varer på tvers av flere kunder, ordrer og fakturaer'
                   href: multireturn.md
-                - name: Opprett og oppdater en retur- og refunderingspolicy for en kanal
+                - name: Opprette og oppdatere en retur- og refunderingspolicy for en kanal
                   href: refund_policy_returns.md
         - name: Behandle kundene dine
           items:
-            - name: Kundeadministrasjon i butikker
-              href: customer-mgmt-stores.md
-            - name: Opprettingsmodus for asynkron kunde
-              href: async-customer-mode.md
-            - name: Konverter asynkrone kunder til synkrone kunder
-              href: convert-async-to-sync.md
             - name: Kundeaktiviteter
               items:
                 - name: Oversikt over kundeaktiviteter
                   href: clienteling-overview.md
-            - name: Fordeler
+            - name: Fordel
               items:
                 - name: Fordelsoversikt
                   href: set-up-customer-loyalty-program.md
@@ -838,15 +776,15 @@
                   href: tasks/define-loyalty-schemes.md
                 - name: Behandle justeringer av fordelspoeng
                   href: tasks/process-loyalty-reward-point-adjustments.md
-        - name: Styr økonomien din
+        - name: Styre økonomien din
           items:
             - name: Oversikt over kontoutdrag
               href: retail-statements.md
-            - name: Valider butikktransaksjoner for utdragsberegning
+            - name: Konsekvenskontroll for transaksjon
               href: valid-checker.md
-            - name: Deaktiver regler i konsekvenskontroll for detaljhandelstransaksjon
+            - name: Deaktivere regler i konsekvenskontroll for detaljhandelstransaksjon
               href: disable-consistency-check-rule.md
-            - name: Rediger og overvåk detaljhandelstransaksjoner
+            - name: Redigere og overvåke detaljhandelstransaksjoner
               items:
                 - name: Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
                   href: edit-cash-trans.md
@@ -858,7 +796,7 @@
                   href: create-excel-edit.md
                 - name: Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
                   href: add-fields-excel.md
-            - name: Fordel feedbasert ordreoppretting for detaljhandelstransaksjoner
+            - name: Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
               href: trickle-feed.md
             - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
               href: tasks/create-calculate-post-statement-retail-store.md
@@ -890,22 +828,6 @@
               href: task-mgmt-assign-lists.md
             - name: Oppgavebehandling på salgsstedet
               href: task-mgmt-pos.md
-            - name: Integrering med Dynamics 365 Commerce og Microsoft Teams
-              items:
-                - name: Oversikt over integrering med Commerce og Teams
-                  href: commerce-teams-integration.md
-                - name: Aktivere integrering med Commerce og Teams
-                  href: enable-teams-integration.md
-                - name: Klargjøre Teams fra Commerce
-                  href: provision-teams-from-commerce.md
-                - name: Synkronisere oppgavebehandling mellom Teams og Commerce-salgssted
-                  href: synchronize-tasks-teams-pos.md
-                - name: Administrere brukerroller i Teams
-                  href: manage-user-roles-teams.md
-                - name: Tilordne butikker og team hvis det finnes eksisterende team i Teams
-                  href: map-stores-existing-teams.md
-                - name: Vanlige spørsmål om integrering med Commerce og Teams
-                  href: teams-integration-faq.md
         - name: Administrere e-handelsområdet ditt
           items:
             - name: Oversikt over e-handelsområde
@@ -924,28 +846,18 @@
                   href: manage-robots-txt-files.md
                 - name: Laste opp masseomdirigeringer for URL-adresse
                   href: upload-bulk-redirects.md
-                - name: Konfigurer en B2C-leier i Commerce
+                - name: Konfigurere en B2C-leier i Commerce
                   href: set-up-B2C-tenant.md
-                - name: Definer egendefinerte sider for brukerpålogginger
+                - name: Definere egendefinerte sider for brukerpålogginger
                   href: custom-pages-user-logins.md
-                - name: Aktiver automatisk kobling av identitetsposter til kundekontoer
-                  href: identity-record-linking.md
-                - name: Konfigurer flere B2C-leiere i et Commerce-miljø
+                - name: Konfigurere flere B2C-leiere i et Commerce-miljø
                   href: configure-multi-B2C-tenants.md
                 - name: Domener i Dynamics 365 Commerce
                   href: domains-commerce.md
-                - name: Implementeringsalternativer for innholdsleveringsnettverk
-                  href: cdn-options.md
                 - name: Legge til støtte for et innholdsleveringsnettverk (CDN)
                   href: add-cdn-support.md
                 - name: Aktivere stedsbasert butikkregistrering
                   href: enable-store-detection.md
-                - name: Digitale gavekort for e-handel
-                  href: digital-gift-cards.md
-                - name: Konfigurere et produkt som skal kjøpes gratis
-                  href: configure-free-product.md
-                - name: Webleserkrav for Dynamics 365 Commerce-områder
-                  href: browser-requirements.md
             - name: Oversikt over eksempelområde
               items:
                 - name: Oversikt over startside
@@ -962,21 +874,15 @@
                   href: authoring-home-overview.md
                 - name: Behandle brukere og roller
                   href: manage-ecommerce-users-roles.md
-                - name: Bruk lagerinnstillinger
+                - name: Bruke lagerinnstillinger
                   href: inventory-settings.md
-                - name: Bruk innstillinger for legg til produkt i handlekurv
-                  href: add-cart-settings.md
                 - name: Vurderinger for søkemotoroptimalisering (SEO) for området
                   href: search-engine-optimization-considerations.md
                 - name: Behandle policy for innholdssikkerhet (CSP)
                   href: manage-csp.md
-                - name: Velg bort samling for nettaktivitetshendelse
+                - name: Velge bort samling for webaktivitetshendelse
                   href: web-activity-opt-out.md
-                - name: Bruk måleenhetsinnstillinger
-                  href: unit-of-measure.md
-                - name: Bruk visningsinnstillinger for produktdimensjoner
-                  href: dimension-settings.md
-            - name: Administrer områdeinnholdet ditt
+            - name: Administrere områdeinnholdet ditt
               items:
                 - name: Måter å legge til innhold på
                   href: add-manage-content.md
@@ -994,17 +900,19 @@
                       href: add-logo.md
                     - name: Velge et områdetema
                       href: select-site-theme.md
-                    - name: Arbeid med CSS-overstyringsfiler
+                    - name: Arbeide med CSS-overstyringsfiler
                       href: css-override-files.md
-                    - name: Arbeid med forhåndsinnstillinger for stil
+                    - name: Arbeide med forhåndsinnstillinger for stil
                       href: style-presets.md
-                    - name: Legg til et favorittikon
+                    - name: Legge til et favorittikon
                       href: add-favicon.md
-                    - name: Legg til en opphavsrettserklæring
+                    - name: Legge til en velkomstmelding
+                      href: add-welcome-message.md
+                    - name: Legge til en opphavsrettserklæring
                       href: add-copyright-notice.md
-                    - name: Legg til språk
+                    - name: Legge til språk
                       href: add-languages-to-site.md
-                    - name: Legg til skript kode i områdes ID-er for å støtte telemetri
+                    - name: Legge til skript kode i områdes ID-er for å støtte telemetri
                       href: add-telemetry.md
                 - name: Moduler
                   items:
@@ -1040,25 +948,17 @@
                       href: enrich-category-page.md
                     - name: Kontrollere tilgjengelighet for sideinnhold
                       href: verify-accessibility.md
-                    - name: Opprette dynamiske e-handelssider basert på URL-parametere
-                      href: create-dynamic-pages.md
                 - name: Områdenavigering
                   items:
-                    - name: Tilpass områdenavigering
+                    - name: Tilpasse områdenavigering
                       href: customize-site-navigation.md
-                    - name: Opprett en nettadresse for side
+                    - name: Opprette en URL-adresse for side
                       href: create-page-URL.md
-                - name: Adventure Works-tema
-                  items:
-                    - name: Oversikt over Adventure Works-tema
-                      href: adventure-works-theme.md
-                    - name: Installer Adventure Works-teamet
-                      href: install-adventure-works.md
-            - name: Administrer digitale aktiva
+            - name: Administrere digitale aktiva
               items:
                 - name: Oversikt over behandling av digitale aktiva
                   href: dam-overview.md
-                - name: Last opp bilder
+                - name: Laste opp bilder
                   href: dam-upload-images.md
                 - name: Laste opp video
                   href: dam-upload-video.md
@@ -1108,32 +1008,12 @@
                       href: add-hero-module.md
                     - name: Videospillermodul
                       href: add-video-player.md
-                    - name: Aktiv bildemodul
-                      href: active-image-module.md
-                    - name: Bildelistemodul
-                      href: image-list-module.md
-                    - name: Interaktiv funksjonsmodul
-                      href: interactive-feature-module.md
-                    - name: Abonnementsmodul
-                      href: subscribe-module.md
-                    - name: Flislistemodul
-                      href: tile-list-module.md
                 - name: Moduler for topptekst og bunntekst
                   items:
                     - name: Topptekstmodul
                       href: author-header-module.md
                     - name: Bunntekstmodul
                       href: author-footer-module.md
-                - name: 'Moduler for side, metadata og skript'
-                  items:
-                    - name: Standard sidemodul
-                      href: default-page-module.md
-                    - name: Moduler for sidesammendrag
-                      href: page-summary-module.md
-                    - name: Modul for metakoder
-                      href: metatags-module.md
-                    - name: Eksterne og innebygde skriptmoduler
-                      href: script-module.md
                 - name: Moduler for produktdetaljside
                   items:
                     - name: Kjøpsboksmodul
@@ -1158,16 +1038,12 @@
                       href: ship-address-module.md
                     - name: Leveringsalternativmodul
                       href: delivery-options-module.md
-                    - name: Modul for henteinformasjon
+                    - name: Hente informasjonsmodul
                       href: pickup-info-module.md
-                    - name: Modul for innsjekking for henting
-                      href: check-in-pickup-module.md
                     - name: Modul for ordredetaljer
                       href: order-confirmation-module.md
                     - name: Gavekortmodul
                       href: add-giftcard.md
-                    - name: Ordreoppslagsmodul
-                      href: order-lookup-module.md
                 - name: Butikksøkmoduler
                   items:
                     - name: Kartmodul
@@ -1178,16 +1054,10 @@
                   items:
                     - name: Kontobehandlingssider og -moduler
                       href: account-management.md
-                - name: Identitetsbehandlingsmoduler
-                  items:
-                    - name: Identitetsbehandlingssider og -moduler
-                      href: identity-mgmt-modules.md
                 - name: Produktsamlingsmoduler
                   items:
                     - name: Produktsamlingsmoduler
                       href: product-collection-module-overview.md
-                    - name: Hurtigvisningsmodul
-                      href: quick-view-module.md
                 - name: Navigasjonsmoduler
                   items:
                     - name: Søkebanemodul
@@ -1196,17 +1066,11 @@
                       href: nav-menu-module.md
                     - name: Områdevelgermodul
                       href: site-selector.md
-                    - name: Modul for land-/områdeplukker
-                      href: country-region-picker-module.md
-                - name: Søke etter moduler
-                  items:
-                    - name: Modul for søkeresultater
-                      href: search-result-module.md
                 - name: Samsvarsmoduler
                   items:
                     - name: Samtykkemodul for informasjonskapsler
                       href: cookie-consent-module.md
-            - name: Søk
+            - name: Søke
               items:
                 - name: Oversikt over standard kategorimålside og søkeresultatside
                   href: category-search-page-overview.md
@@ -1216,17 +1080,11 @@
               items:
                 - name: Generere rapporter om Internett-kanal
                   href: generate-reports.md
-            - name: Målretting
-              items:
-                - name: 'Målretting av enheter, markeder og geografisk plassering'
-                  href: targeting-overview.md
-                - name: Konfigurere registrering og omdirigering av georeplikering
-                  href: geo-detection-redirection.md
             - name: Eksperimentering
               items:
                 - name: Eksperimentering i Dynamics 365 Commerce
                   href: experimentation-overview.md
-                - name: Finne en hypotese og bestem måledata for et eksperiment
+                - name: Finne en hypotese og bestemme mål for et eksperiment
                   href: experimentation-identify.md
                 - name: Definere et eksperiment
                   href: experimentation-setup.md
@@ -1248,18 +1106,6 @@
           items:
             - name: Dynamics 365 Fraud Protection-integrering med Dynamics 365 Commerce
               href: dev-itpro/DFP.md
-        - name: E-handel for B2B
-          items:
-            - name: Definere et e-handelsområde for B2B
-              href: b2b/set-up-b2b-site.md
-            - name: Opprette navnemodellhierarkier for B2B-organisasjoner
-              href: b2b/org-model.md
-            - name: Administrere forretningspartnerbrukere på e-handelsområder for B2B
-              href: b2b/manage-b2b-users.md
-            - name: Konfigurere kundekontobetalingsmetoden for e-handelsområder for B2B
-              href: b2b/payment-method.md
-            - name: Angi produktantallsgrenser for e-handelsområder for B2B
-              href: b2b/quantity-limits.md
         - name: Overvåkning og analyse
           items:
             - name: Overvåke salgs- og marginytelse
@@ -1270,80 +1116,26 @@
               href: sales-performance-products.md
             - name: Vurdere kunde- og produktlønnsomhet
               href: assess-customer-product-profitability.md
-            - name: Analyser butikkytelse
+            - name: Analysere butikkytelse
               href: store-performance-information.md
-            - name: 'Definer RFM-analyse (Nyheter, Hyppighet og Økonomisk)'
+            - name: 'Definere RFM-analyse (Nyheter, Hyppighet og Økonomisk)'
               href: set-up-rfm-analysis.md
-            - name: Konfigurer Microsoft Clarity i Dynamics 365 Commerce
-              href: set-up-clarity.md
-            - name: Commerce-analyse (forhåndsversjon)
-              href: commerce-analytics.md
         - name: Globalisering
           items:
             - name: Oversikt over økonomisk integrering for Commerce-kanal
               href: localizations/fiscal-integration-for-retail-channel.md
-            - name: Definer økonomisk integrering for Commerce-kanal
+            - name: Definere økonomisk integrering for Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
-            - name: Definer kompileringskontroll for eksempel på økonomisk integrering
-              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker
               href: localizations/certificate-profiles-for-retail-stores.md
-            - name: Regulatory Configuration Service (RCS)
-              items:
-                - name: Oversikt over Regulatory Configuration Service (RCS)
-                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: (RCS) Regulatory Configuration Service (RCS) – globaliseringsfunksjoner
-                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                - name: Opprett ER-konfigurasjoner i Regulatory Configuration Service (RCS) og last dem opp til det globale repositoriet
-                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service (RCS) – lagringsavvik for Lifecycle Services
-                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
-                - name: Laste ned ER-konfigurasjoner til Commerce
-                  items:
-                    - name: Laste ned konfigurasjoner fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Importere konfigurasjoner fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Globalt repositorium (GR)
-                      items:
-                        - name: Importere konfigurasjoner fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Importere oppdaterte versjoner av ER-konfigurasjoner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Forbedret filtrering for å finne konfigurasjoner i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Laste opp konfigurasjoner til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                        - name: Del konfigurasjoner i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: Avslutt konfigurasjoner i det globale RCS-repositoriet
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Østerrike
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
                   href: localizations/emea-aut-fi-sample.md
-                - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Østerrike (eldre)
-                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasil
               items:
                 - name: Commerce-lokalisering for Brasil
                   href: localizations/latam-bra-commerce-localization.md
-                - name: Konfigurer og distribuer Commerce-lokalisering for Brasil
-                  href: localizations/latam-bra-deployment.md
-                - name: Funksjonaliteten for NFC-e-regnskapsdokument i Commerce-salgssted for Brasil
-                  href: localizations/latam-bra-nfce.md
-                - name: Administrer kundeinformasjon i salgssted for Brasil
-                  href: localizations/latam-bra-customer-information.md
-                - name: Annullering og retur av NFC-e-dokumenter i Commerce-salgssted for Brasil
-                  href: localizations/latam-bra-nfce-cancel-return.md
-                - name: Utsatt registrering av NFC-e-dokumenter utstedt i frakoblet eventualitetsmodus
-                  href: localizations/latam-bra-nfce-contingency-mode.md
-                - name: Poster brasilianske regnskapsdokumenter via detaljhandelsutdrag i Commerce Headquarters
-                  href: localizations/latam-bra-retail-statements.md
-                - name: Funksjonaliteten for CF-e-regnskapsdokument og integrering med SAT i Commerce POS for Brasil
-                  href: localizations/latam-bra-cf-e-sat.md
-                - name: Dynamics 365 Payment Connector for Adyen i Commerce POS for Brasil
-                  href: localizations/latam-bra-adyen.md
             - name: Øst-Europa
               items:
                 - name: Felles
@@ -1360,34 +1152,22 @@
                   items:
                     - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia
                       href: localizations/emea-cze-fi-sample.md
-                    - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Tsjekkia (gamle)
-                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polen
                   items:
                     - name: Eksempel på integrering av bilagsskriver for Polen
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Kundeinformasjonsbehandling for Polen
                       href: localizations/emea-pol-customer-information.md
-                    - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Polen (gamle)
-                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Frankrike
               items:
                 - name: Kassefunksjonalitet
                   href: localizations/emea-fra-cash-registers.md
                 - name: Retningslinjer for distribusjon for kassaapparater
-                  href: localizations/emea-fra-fi-deployment.md
-                - name: Kontroll av regnskapsarkiv og dataintegritet
-                  href: localizations/emea-fra-fiscal-archive.md
-                - name: Overføring fra eldre funksjonalitet for Frankrike
-                  href: localizations/emea-fra-fi-migration.md
-                - name: Retningslinjer for distribusjon for kassaapparater (gamle)
                   href: localizations/emea-fra-deployment.md
             - name: Tyskland
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tyskland
                   href: localizations/emea-deu-fi-sample.md
-                - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Tyskland (gamle)
-                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: India
               items:
                 - name: GST-integrering (Goods and Services Tax) for kasser
@@ -1396,18 +1176,12 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Støtte for oppgradering og N-1 for India
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: Generer QR-koder og skrive dem ut på kvitteringer for India
-                  href: localizations/ind-generate-qr-code-print-receipt.md
-                - name: GST-integrering (Goods and Services Tax) for e-handelsområder
-                  href: localizations/apac-ind-e-commerce.md
             - name: Italia
               items:
                 - name: Eksempel på integrering av bilagsskriver for Italia
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Kundeinformasjonsbehandling for Italia
                   href: localizations/emea-ita-customer-information.md
-                - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Italia (gamle)
-                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexico
               items:
                 - name: Globale CFDI-e-fakturaer for Mexico
@@ -1417,35 +1191,13 @@
                 - name: Kassefunksjonalitet
                   href: localizations/emea-nor-cash-registers.md
                 - name: Retningslinjer for distribusjon for kassaapparater
-                  href: localizations/emea-nor-fi-deployment.md
-                - name: Retningslinjer for distribusjon for kassaapparater (gamle)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
-            - name: Russland
-              items:
-                - name: Commerce-lokalisering for Russland
-                  href: localizations/rus-commerce-localization.md
-                - name: Konfigurer Commerce-lokalisering for Russland
-                  href: localizations/rus-commerce-setup.md
-                - name: Forskuddsbetalinger i Commerce for Russland
-                  href: localizations/rus-commerce-prepayments.md
-                - name: Forenklet kundeadresseformat i Commerce-salgssted for Russland
-                  href: localizations/rus-simplified-address.md
-                - name: Eksempel på integrering av bilagsskriver for Russland
-                  href: localizations/rus-fpi-sample.md
-                - name: Kundeinformasjonsbehandling for Russland
-                  href: localizations/rus-customer-information.md
-            - name: Saudi-Arabia
-              items:
-                - name: Generer QR-koder og skriv dem ut på kvitteringer for Saudi-Arabia
-                  href: localizations/emea-sau-qr-code.md
             - name: Sverige
               items:
                 - name: Kassefunksjonalitet
                   href: localizations/emea-swe-cash-registers.md
                 - name: Eksempel på integrering med kontrollenheter for Sverige
                   href: localizations/emea-swe-fi-sample.md
-                - name: Retningslinjer for distribusjon av eksempel integrering med kontrollenheter for Sverige (gamle)
-                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: Eksempel for Retail POS-integrering med kontrollenheter (eldre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering og Power BI-integreringer
@@ -1548,25 +1300,21 @@
           items:
             - name: Oversikt over elektronisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: Komponenter for elektronisk rapportering
-              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurasjoner
               items:
                 - name: Opprette konfigurasjoner
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
-                - name: Definere avhengigheten av ER-konfigurasjonene i andre komponenter
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
                 - name: Klargjøre komponenter i den elektroniske rapporteringsløsningen
                   items:
                     - name: Utforme domenespesifikk datamodell
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Klargjøre programspesifikke metadata
                       items:
-                        - name: Klargjøre programmetadataene i ER som skal brukes i RCS
+                        - name: (ER) Klargjøre programmetadataene som skal brukes i RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/commerce/toc.json
-                        - name: Få tilgang til programmetadata i RCS ved hjelp av ER-konfigurasjon
+                        - name: (RCS) Få tilgang til programmetadata ved hjelp av ER-konfigurasjon
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: Få tilgang til programmetadata i RCS ved hjelp av tilkoblede programmer
+                        - name: (RCS) Få tilgang til programmetadata ved hjelp av tilkoblede programmer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/commerce/toc.json
                         - name: Definere modelltilordninger og velge datakilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1578,13 +1326,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Teste den klargjorte ER-løsningen i målprogrammet
                       items:
-                        - name: Importere konfigurasjoner fra RCS
+                        - name: (ER) Importere konfigurasjoner fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                         - name: Generere elektroniske dokumenter for betalinger ved hjelp av en formatkonfigurasjon
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet'
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/commerce/toc.json
-            - name: Formeldesignere i ER
+            - name: Formeldesignere i elektronisk rapportering
               items:
                 - name: Formeldesigner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/commerce/toc.json
@@ -1594,28 +1342,14 @@
               items:
                 - name: Formelspråk
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
-                - name: Datatyper som støttes for ER-formler
-                  items:
-                    - name: Primitive datatyper
-                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
-                    - name: Sammensatte datatyper
-                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: Funksjoner
                   items:
-                    - name: Container
-                      items:
-                        - name: Containerfunksjoner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/commerce/toc.json
-                        - name: Base64StringToContainer
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
                     - name: Dato og klokkeslett
                       items:
                         - name: Dato- og klokkeslettfunksjoner
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/commerce/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/commerce/toc.json
-                        - name: ChangeTimeZone
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/commerce/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/commerce/toc.json
                         - name: DateTimeFormat
@@ -1637,13 +1371,9 @@
                         - name: NullDateTime
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/commerce/toc.json
                         - name: SessionNow
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/fcommerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/commerce/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
-                        - name: Today
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
-                        - name: WeekNum
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
                     - name: List
                       items:
                         - name: Listefunksjoner
@@ -1670,8 +1400,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
-                        - name: ListDistinct
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/commerce/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/commerce/toc.json
                         - name: ListOfFields
@@ -1700,22 +1428,14 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/commerce/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/commerce/toc.json
-                        - name: Contains
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/commerce/toc.json
-                        - name: EndsWith
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/commerce/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/commerce/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/commerce/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/commerce/toc.json
-                        - name: StartsWith
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/commerce/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/commerce/toc.json
-                        - name: ValueInLarge
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/commerce/toc.json
                     - name: Matematiske
                       items:
                         - name: Matematiske funksjoner
@@ -1762,8 +1482,6 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/commerce/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/commerce/toc.json
-                        - name: NewGUID
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/commerce/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
                         - name: NumeralsToText
@@ -1842,79 +1560,103 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/commerce/toc.json
                         - name: 'Type: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Container: Base64StringToContainer'
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Dato og klokkeslett: DateTimeValue'
+                        - name: 'Date and Time: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Dato og klokkeslett: DateToDateTime'
+                        - name: 'Date and Time: DateToDateTime'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Dato og klokkeslett: DateValue'
+                        - name: 'Date and Time: DateValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Liste: List'
+                        - name: 'List: List'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Liste: ListOfFields'
+                        - name: 'List: ListOfFields'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Liste: Split'
+                        - name: 'List: Split'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Liste: StringJoin'
+                        - name: 'List: StringJoin'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Tekst: Char'
+                        - name: 'Text: Char'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Tekst: GuidValue'
+                        - name: 'Text: GuidValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Tekst: NumberFormat'
+                        - name: 'Text: NumberFormat'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Tekst: QrCode'
+                        - name: 'Text: QrCode'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Tekst: Text'
+                        - name: 'Text: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
-            - name: Utform ER-formater til å generere utgående dokumenter i ulike formater
+            - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
+            - name: Velge datamodelldefinisjoner når du oppretter formater
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
+            - name: Forbedrede filtreringsalternativer for å finne konfigurasjoner i det globale repositoriet
+              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Generere rapporter ved å legge til innhold som rå XML
+              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
+            - name: (ER) Kryssfirmadatakilder i elektronisk rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
+            - name: 'Utforme ER-formater til å generere utgående, elektroniske dokumenter i ulike formater'
               items:
-                - name: Utform en konfigurasjon for generering av rapporter i OPENXML-format
+                - name: (ER) Utforme en konfigurasjon for generering av rapporter i OPENXML-format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
-                - name: Utform konfigurasjoner til å generere utgående dokumenter i Excel-format
-                  items:
-                    - name: Utform en konfigurasjon til å generere dokumenter i Excel-format
-                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json
-                    - name: Endre ER-formater ved å bruke Excel-maler på nytt
-                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legg til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
-                      items:
-                        - name: Utforme formater for dynamisk å legge til kolonner i Excel-rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
-                        - name: Kjøre formater for dynamisk å legge til kolonner i Excel-rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utforme et ER-format for å paginere genererte dokumenter i Excel
-                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Utforme konfigurasjoner til å generere rapporter i Word-format
-                  items:
-                    - name: Utforme en ny ER-konfigurasjon for å generere rapporter i Word-format
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruke ER-konfigurasjoner på nytt med Excel-maler for å generere rapporter i Word-format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: Skjule Word-innholdskontroller i genererte rapporter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/commerce/toc.json
+                - name: (ER) Utforme konfigurasjoner til å generere rapporter i Word-format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
                 - name: Utforme konfigurasjoner til å fylle ut PDF-maler
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/commerce/toc.json
-                - name: Bygge inn bilder og figurer
+            - name: Bygge inn bilder og figurer
+              items:
+                - name: (ER) Bygge inn bilder og figurer i dokumenter du genererer
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/commerce/toc.json
+                - name: Eksempel på innebygging av bilder og figurer
                   items:
-                    - name: Bygge inn bilder og figurer i dokumenter du genererer
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/commerce/toc.json
-                    - name: Eksempel på innebygging av bilder og figurer
-                      items:
-                        - name: Utforme konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/commerce/toc.json
-                        - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: Generer rapporter i Office-formater som har innebygde bilder
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utforme et ER-format for å generere en rapport i Excel med innebygde bilder i topptekster og bunntekster
-                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Del opp genererte XML-filer basert på filstørrelse og innholdsmengde
-                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
-                - name: Skjule stykklistetegn i genererte filer
-                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/commerce/toc.json
-            - name: Oppdatere programdata ved hjelp av ER
+                    - name: Utforme konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/commerce/toc.json
+                    - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Generere rapporter i Office-formater som har innebygde bilder
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+            - name: Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt
+              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
+            - name: Definere avhengigheten av ER-konfigurasjonene i andre komponenter
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
+            - name: Utforme en ER-løsning for å bruke finansdimensjoner
+              items:
+                - name: Utforme datamodeller til å bruke finansdimensjoner som datakilder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/commerce/toc.json
+                - name: Tilordne modeller for å bruke finansdimensjoner som datakilder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/commerce/toc.json
+                - name: Utforme rapporter for å bruke finansdimensjoner som datakilder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
+                - name: Kjøre rapporter som bruker finansdimensjoner som datakilder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
+            - name: Utforme ER-formater til å utføre telling og summering ved hjelp av informasjon fra genererte utdata
+              items:
+                - name: Opprette formater til å utføre telling og summering
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere format til å utføre telling og summering
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
+                - name: Bruke beregninger til å generere utdataene for telling og summering
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
+                - name: Kjøre formater for å utføre telling og summering
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
+            - name: Legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+              items:
+                - name: Utforme formater for å legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
+                - name: Kjøre formater for å legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
+            - name: Bruke dokumentbehandlingsfiler i formatutdata
+              items:
+                - name: Klargjøre datamodeller til å bruke dokumentbehandlingsfiler i ER-utdata
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/commerce/toc.json
+                - name: Utvide datamodeller til å bruke dokumentbehandlingsfiler i ER-utdata
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/commerce/toc.json
+                - name: Opprette formater til å bruke dokumentbehandlingsfiler i ER-utdata
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/commerce/toc.json
+                - name: Kjøre formater for å bruke dokumentbehandlingsfiler i ER-utdata
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
+                - name: Endre og kjøre formater for å bruke dokumentbehandlingsfiler i ER-utdata
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
+            - name: Oppdatere programdata ved hjelp av elektronisk rapportering
               items:
                 - name: Generere elektroniske dokumenter og oppdatere programdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/commerce/toc.json
@@ -1934,162 +1676,62 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere dataimport fra manuelt valgte filer
                   items:
-                    - name: Opprett konfigurasjoner for å importere data fra en ekstern XML-fil
+                    - name: Opprette konfigurasjoner for å importere data fra en ekstern XML-fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/commerce/toc.json
-                    - name: Importer data fra manuelt valgte filer i satsvis modus
-                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurer dataimport i satsvis modus fra SharePoint-plasserte filer
+                - name: Konfigurere dataimport i satsvis modus fra SharePoint-plasserte filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/commerce/toc.json
-                - name: Importer filer i XML-format
+                - name: Importere filer i XML-format
                   items:
                     - name: Importere filer i XML-format med valgfrie attributter
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere ER-formater til å importere XML-formatfiler med valgfrie attributter
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
+            - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
+              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
+            - name: Støtte for parametriserte kall av ER-datakilder av felttypen Beregnet
+              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurasjonslivssyklus
               items:
                 - name: Administrere konfigurasjonslivssyklus
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Lifecycle Services (LCS)
+                - name: Laste opp konfigurasjoner til Lifecycle Services
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Importere konfigurasjoner fra Lifecycle Services
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Laste ned konfigurasjoner fra Lifecycle Services
+                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
+                - name: Importere konfigurasjoner
+                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
+                - name: Laste ned ER-konfigurasjoner fra RCS-repositoriet
                   items:
-                    - name: Laste opp konfigurasjoner til LCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
-                    - name: Importere konfigurasjoner fra LCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
-                    - name: Laste ned konfigurasjoner fra LCS
-                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Importere konfigurasjoner (LBD)
-                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service (RCS)
-                  items:
-                    - name: Oversikt over Regulatory Configuration Service (RCS)
-                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-                    - name: Laste ned ER-konfigurasjoner til Commerce
-                      items:
-                        - name: Laste ned konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: Importere konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Globalt repositorium (GR)
-                      items:
-                        - name: Importere konfigurasjoner fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Importere oppdaterte versjoner av ER-konfigurasjoner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Forbedret filtrering for å finne konfigurasjoner i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Laste opp konfigurasjoner til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                        - name: Dele konfigurasjoner i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: Avslutte konfigurasjoner i det globale RCS-repositoriet
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
-            - name: Hurtigstartveiledninger
-              items:
-                - name: 'Endre formatet for ER til å generere et egendefinert, elektronisk dokument'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/commerce/toc.json
-                - name: Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Justere en ER-løsning til å generere et egendefinert, elektronisk dokument'
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/commerce/toc.json
+                    - name: Laste ned konfigurasjoner fra ER-repositoriet til RCS-typen
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importere konfigurasjoner fra RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
             - name: Opplæringer
               items:
-                - name: Finne ut hvordan du bruker datakilder
+                - name: Bruke datakilder for sammenføyning til å hente data fra flere programtabeller
+                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere modelltilordninger for landkontekstavhengig ER
+                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
+                - name: Definere parameterne for et ER-format per juridisk enhet
+                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
+                - name: Utsette utføring av ER-formatelementer
                   items:
-                    - name: Bruke sammenføyning til å hente data fra flere tabeller
-                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruke rå-XML å legge til innhold
-                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
-                    - name: Støtte for parametriserte kall for datakilder av typen Beregnet felt
-                      items:
-                        - name: Forbedre brukeropplevelsen og vedlikeholdsfunksjonen
-                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/commerce/toc.json
-                        - name: Forbedre ytelsen til datatilgang
-                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/commerce/toc.json
-                    - name: ER-datakilder på tvers av firmaer
-                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruke datakilder av typen detaljer for finansdimensjoner
-                      items:
-                        - name: Utforme datamodeller
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/commerce/toc.json
-                        - name: Tilordne modeller for å bruke finansdimensjoner
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/commerce/toc.json
-                        - name: Utform rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
-                        - name: Kjør rapporter
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruk de genererte utdataene som en datakilde til å utføre opptelling og summering
-                      items:
-                        - name: Opprette formater
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
-                        - name: Konfigurere format til å utføre telling og summering
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
-                        - name: Generere utdataene for opptelling og summering
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
-                        - name: Kjøre formater for å utføre telling og summering
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruke dokumentrelasjonene til å få tilgang til dokumentbehandlingsfiler
-                      items:
-                        - name: Klargjøre datamodeller
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/commerce/toc.json
-                        - name: Utvide datamodeller for å bruke dokumentbehandlingsfiler
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/commerce/toc.json
-                        - name: Opprette formater
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/commercetoc.json
-                        - name: Kjør formater for å bruke dokumentbehandlingsfiler
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
-                        - name: Endre og kjør formater for å bruke dokumentbehandlingsfiler
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruk BARCODE til å generere strekkodebilder
-                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
-                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Bruke datakilder for DATAINNSAMLING i ER-formater
-                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
-                    - name: Feilsøke datakilder
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere modelltilordninger
-                  items:
-                    - name: Konfigurere modelltilordninger for landkontekstavhengig ER
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
-                    - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
-                    - name: Behandle flere avledede tilordninger for én modellrot
-                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere formater
-                  items:
-                    - name: Velge modelldefinisjoner når du oppretter formater
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
-                    - name: Definere parameterne for et ER-format per juridisk enhet
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utsette utføring av ER-formatelementer
-                      items:
-                        - name: Utsette utføring av et sekvenselement
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/commerce/toc.json
-                        - name: Utsette kjøring av et XML-element
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/commerce/toc.json
-                    - name: Utforme flerspråklige rapporter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/commerce/toc.json
-                    - name: Komprimere store utgående dokumenter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/commerce/toc.json
-                - name: Kontroller konfigurerte ER-komponenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/commerce/toc.json
-                - name: Relativ bane i databindinger
-                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/commerce/toc.json
-            - name: Bruke ER-løsninger i Commerce
+                    - name: Utsette kjøringen av sekvenselementer i ER-formater
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+                    - name: Utsette kjøringen av XML-elementer i ER-formater
+                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
+            - name: Bruke elektroniske rapporteringsløsninger i Finance and Operations
               items:
-                - name: Konfigurer rammeverket
+                - name: Konfigurere rammeverket
                   items:
-                    - name: Konfigurer rammeverket for elektronisk rapportering
+                    - name: Konfigurere rammeverket for elektronisk rapportering
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
                     - name: Sikkerhetskopiere og gjenopprette ER-maler
-                      items:
-                        - name: Sikkerhetskopiere ER-maler
-                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
-                        - name: Opprydding av ER-overføring
-                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
                     - name: Opprette konfigurasjonsleverandører og merke dem som aktive
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/commerce/toc.json
                 - name: Mål
@@ -2112,79 +1754,41 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere mål
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere handlingsavhengige mål
-                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere postspesifikke ER-mål for utskriftsbehandling
-                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/commerce/toc.json
                 - name: Definere en referanse til et ER-format
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: Validere genererte rapporter automatisk
                   items:
-                    - name: Spor genererte rapportresultater og sammenlign dem med grunnlinjeverdier
-                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: Forbedre sporing av resultatene av genererte ER-rapporter for å sammenligne med grunnlinjeverdier
+                    - name: Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commerce/toc.json
+                    - name: Forbedringer i sporing av resultater av genererte ER-rapporter og sammenligninger med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
-                    - name: Automatiser testing med ER
+                    - name: Automatisere testing med elektronisk rapportering
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
-                - name: Automatiser forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
+                - name: Automatisere forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
                   items:
-                    - name: Konfigurer ER for å hente data til Power BI
+                    - name: Konfigurere elektronisk rapportering for å hente data til Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
-                    - name: Generer skjemaer for fritekstfaktura (FTI) som kan skrives ut
+                    - name: Generere skjemaer for fritekstfaktura (FTI) som kan skrives ut
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Utform effektive ER-løsninger
+                - name: Spore kjøring av ER-formater for å feilsøke ytelsesproblemer
+                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: Behandling av forretningsdokument
                   items:
-                    - name: Spor kjøring av ER-formater for å feilsøke ytelsesproblemer
-                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-                    - name: Feilsøk ytelsesproblemer i ER-konfigurasjoner
-                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Behandling av forretningsdokument (BDM)
-                  items:
-                    - name: BDM-oversikt
+                    - name: Oversikt over administrasjon av forretningsdokument
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
-                    - name: Nytt dokumentbrukergrensesnitt i BDM
+                    - name: Nytt dokumentbrukergrensesnitt i Forretningsdokumentbehandling
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/commerce/toc.json
-                    - name: Redigere maler for forretningsdokumenter i BDM
-                      items:
-                        - name: Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
-                        - name: Oppdatere strukturen for en forretningsdokumentmal
-                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/commerce/toc.json
+                    - name: Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
             - name: API for ER-rammeverk
               items:
-                - name: Utvide listen over innebygde funksjoner
+                - name: Utvide listen over funksjoner for elektronisk rapportering
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: API-endringer
-                  items:
-                    - name: Programoppdatering 7.3
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
-                    - name: Programoppdatering 10.0.11
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: Programoppdatering 10.0.17
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
-                    - name: Programoppdatering 10.0.19
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
-                    - name: Programoppdatering 10.0.21
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.json
-                    - name: Programoppdatering 10.0.23
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/commerce/toc.json
-                    - name: Programoppdatering 10.0.25
-                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/commerce/toc.json
+                - name: API-endringer for elektronisk rapporteringsrammeverk for Application update 7.3
+                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
                 - name: Angi en egendefinert lagerplassering for genererte dokumenter
-                  items:
-                    - name: Abonnere på en hendelse for å be om svar fra abonnementsbehandlingen
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
-                    - name: Deleger opprettingen av et ER-mål til en egendefinert målfabrikk
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
-                    - name: Implementer et egendefinert mål for genererte dokumenter
-                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
-                - name: Initialisere datakildeverdier av typen USER INPUT PARAMETER fra kildekoden
-                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
-                - name: Endre kode for å gjøre det mulig for brukere å konfigurere og bruke navngitte ER-mål
-                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
-                - name: Implementer en egendefinert ER-kilde for innkommende dokumenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
-        - name: Mobilappen Finance and Operations (Dynamics 365)
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
+        - name: Mobilapp for Finance and Operations (Dynamics 365)
           items:
             - name: Startside for mobilapp
               href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
@@ -2226,15 +1830,15 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/commerce/toc.json
             - name: Opplæring i Office-integrering
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
-            - name: Åpne enhetsdata i Excel og oppdater dem ved hjelp av Excel-tillegg
+            - name: Åpne enhetsdata i Excel og oppdatere dem ved hjelp av Excel-tillegg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: Vanlige spørsmål om funksjonen Åpne i Excel
+            - name: Opprette opplevelser for Åpne i Excel
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
-            - name: Legg til maler på menyen Åpne linjer i Excel
+            - name: Legge til maler på menyen Åpne linjer i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
-            - name: Tilpass menyen Åpne i Microsoft Office
+            - name: Tilpasse menyen Åpne i Microsoft Office
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurer og send e-post
+            - name: Konfigurere og sende e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Opprette e-postmaler for transaksjonshendelser
               href: email-templates-transactions.md
@@ -2274,8 +1878,6 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere den globale adresseboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
-                - name: Adresseoppsett
-                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Vanlige spørsmål om adressebøker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere adressebøker
@@ -2300,15 +1902,13 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere automatiserte oppgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurer godkjenningsprosesser
+                    - name: Konfigurere godkjenningsprosesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurer godkjenningstrinn
+                    - name: Konfigurere godkjenningstrinn
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurer utgiftskontrollører
-                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurer manuelle beslutninger
+                    - name: Konfigurere manuelle beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurer betingede beslutninger
+                    - name: Konfigurere betingede beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere parallelle aktiviteter
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/commerce/toc.json
@@ -2340,7 +1940,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
                     - name: Opprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Tilknytt en arbeidsflytdokumentklasse til en arbeidsflyttype
+                    - name: Tilknytte en arbeidsflytdokumentklasse til en arbeidsflyttype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
                 - name: Rapport for arbeidsflyttyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
@@ -2376,27 +1976,21 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/commerce/toc.json
                 - name: Bruke en postmal til å opprette en ny post
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurer dokumentstyring
+            - name: Konfigurere dokumentstyring
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/commerce/toc.json
-            - name: Konfigurer og send e-post
+            - name: Konfigurere og sende e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
             - name: Dato-/klokkeslettdata og tidssoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: Utvidelsesmulighet
           items:
-            - name: Commerce-utvikling og -utvidelse
-              items:
-                - name: Commerce for IT-eksperter og utviklere
-                  href: dev-itpro/dev-retail-home-page.md
-                - name: Modernisering av Commerce-teknologistakken i butikk (teknisk dokument)
-                  href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Definer et lokalt utviklingsmiljø
-                  href: dev-itpro/setup-local-dev-env.md
+            - name: Utvikling og utvidelse av handel
+              href: dev-itpro/dev-retail-home-page.md
             - name: Utvidelsesmulighet for Internett-kanal
               items:
                 - name: Oversikt over utvidelsesmulighet for Internett-kanal
                   href: e-commerce-extensibility/overview.md
-                - name: Kom i gang
+                - name: Komme i gang
                   items:
                     - name: Komme i gang med omfattende elektronisk utvikling av e-handel
                       href: e-commerce-extensibility/sdk-getting-started.md
@@ -2436,13 +2030,11 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: Modulfilen props.autogenerated.ts
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
-                    - name: Forhåndsinnstilte modulkonfigurasjoner
-                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Utvikle moduler
                   items:
-                    - name: Opprett en ny modul
+                    - name: Opprette en ny modul
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: Klon en modulbibliotekmodul
+                    - name: Klone en modulbibliotekmodul
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Legge til modulkonfigurasjonsfelt
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2466,11 +2058,7 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Appinnstillinger
                       href: e-commerce-extensibility/app-settings.md
-                    - name: Konfigurer globale konfigurasjonsinnstillinger for områdebygger basert på aktiverte funksjoner
-                      href: e-commerce-extensibility/config-settings-for-features.md
-                    - name: Fil for plattformerinnstillinger
-                      href: e-commerce-extensibility/platform-settings.md
-                    - name: Utvid en moduldefinisjon
+                    - name: Utvide en moduldefinisjon
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Oversikt over API for informasjonskapsel
                       href: e-commerce-extensibility/cookie-api-overview.md
@@ -2478,15 +2066,11 @@
                       href: e-commerce-extensibility/interactive-components.md
                     - name: Simulere den påloggede statusen under lokal utvikling
                       href: e-commerce-extensibility/mock-sign-in.md
-                    - name: Konfigurere modulegenskaper som skal vises basert på kontekst
-                      href: e-commerce-extensibility/configure-properties-context.md
-                    - name: Globaliser moduler ved hjelp av CultureInfoFormatter-klassen
+                    - name: Globalisere moduler ved hjelp av CultureInfoFormatter-klassen
                       href: e-commerce-extensibility/globalize-modules.md
-                    - name: Konfigurer Azure Key Vault for sikker nøkkelbehandling
+                    - name: Konfigurere Azure Key Vault for sikker nøkkelbehandling
                       href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Bildekomponent
-                      href: e-commerce-extensibility/image-component.md
-                - name: Utarbeid datahandlinger
+                - name: Utarbeide datahandlinger
                   items:
                     - name: Oversikt over datahandlinger
                       href: e-commerce-extensibility/data-actions.md
@@ -2500,7 +2084,7 @@
                       href: e-commerce-extensibility/event-based-data-actions.md
                     - name: Kjernedatahandlinger
                       href: e-commerce-extensibility/core-data-actions.md
-                    - name: Kalle API-er for Commerce Scale Unit
+                    - name: Kalle API-er for Retail Server
                       href: e-commerce-extensibility/call-retail-server-apis.md
                     - name: Kalle API-er for utvidelse av Retail-server
                       href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2520,8 +2104,6 @@
                       href: e-commerce-extensibility/data-action-overrides.md
                     - name: Datahandlingsbindinger
                       href: e-commerce-extensibility/data-action-hooks.md
-                    - name: Anropsdatahandlinger på serversiden ved hjelp av AJAX
-                      href: e-commerce-extensibility/data-actions-with-ajax.md
                 - name: Utvikle temaer
                   items:
                     - name: Temaoversikt
@@ -2546,14 +2128,8 @@
                       href: e-commerce-extensibility/script-injector.md
                 - name: Koblinger
                   items:
-                    - name: Konfigurer og aktiver koblinger
+                    - name: Konfigurer og aktivere koblinger
                       href: e-commerce-extensibility/connectors.md
-                - name: Ytelse
-                  items:
-                    - name: Konfigurer sidebufring
-                      href: e-commerce-extensibility/page-caching.md
-                    - name: Buffer for datahandlingsforekomst
-                      href: e-commerce-extensibility/instance-cache.md
                 - name: Telemetri og analyse
                   items:
                     - name: Telemetrilogger
@@ -2570,45 +2146,39 @@
                       href: e-commerce-extensibility/best-practices-dev.md
                     - name: Vanlige spørsmål om SDK for Dynamics 365 Commerce online
                       href: e-commerce-extensibility/sdk-faq.md
-                    - name: Feilsøking av anbefalte fremgangsmåter for utvikling av Dynamics 365 Commerce
-                      href: e-commerce-extensibility/debugging-best-practices.md
-                    - name: Test e-handelsnettsteder for minnelekkasjer
-                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: SDK for Retail
               items:
-                - name: Overfør til SDK for Commerce
-                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: Arkitektur for SDK for Retail
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Konfigurer en kompileringskontroll for uavhengig emballasje-SDK
-                  href: dev-itpro/build-pipeline.md
+                - name: Kommende endringer i SDK for Retail
+                  href: dev-itpro/UpcomingSDKChanges.md
+                - name: Viktige utviklings- og ALM-endringer fra versjon 10.0.10 til 10.0.13
+                  href: dev-itpro/dev-changes-10-13.md
+                - name: Slå sammen byggesystemene for Commerce og Finance and Operations
+                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Overføre SDK for Retail fra Visual Studio 2015 til Visual Studio 2017
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Eksempler på utvidelsesmulighet for SDK for Retail
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
                 - name: Opprette distribuerbare pakker
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-                - name: Utvikling i skydriftede miljøer uten administratortilgang
+                - name: Utvikling i skydriftede utviklingsmiljøer uten administratortilgang
                   href: dev-itpro/cloud-dev-box.md
-                - name: Konfigurer kompileringskontroll for SDK for Commerce
+                - name: Konfigurere versjonsforløp for SDK for Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: Last ned eksempler og pakker fra GitHub og NuGet
+                - name: Laste ned eksempler og pakker fra GitHub og NuGet
                   href: dev-itpro/retail-sdk/sdk-github.md
-                - name: Konfigurer en build-agent for Visual Studio 2017 for å bygge Modern POS
-                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Vanlige spørsmål om SDK for Retail
                   href: dev-itpro/retail-sdk/sdk-faq.md
-            - name: Utvidelsesmulighet for salgssted
+            - name: Utvidelsesmuligheter for salgssted
               items:
                 - name: Skjermoppsett for salgssted
                   href: pos-screen-layouts.md
-                - name: Store Commerce-app i Microsoft Dynamics 365 Commerce
-                  href: dev-itpro/store-commerce.md
                 - name: Åpne URL-adresse på salgssted
                   href: Open-URL-in-POS.md
-                - name: Installer utforming av oppsett for salgssted
+                - name: Installere utforming av oppsett for salgssted
                   href: install-pos-layout-designer.md
-                - name: Utvid skjermvisningen for doble salgssteder
+                - name: Utvide skjermvisningen for POS Dual
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Legge til egendefinerte kontroller i salgsstedsvisninger
                   href: dev-itpro/pos-custom-control.md
@@ -2646,7 +2216,7 @@
                   href: dev-itpro/pos-custom-transaction-column.md
                 - name: Kalle API-er for salgssted eller operasjoner fra salgsstedsutvidelser
                   href: dev-itpro/pos-api-extension.md
-                - name: Salgsstedsutløsere
+                - name: Utløsere og utskrift for Modern POS (MPOS)
                   href: dev-itpro/pos-trigger-printing.md
                 - name: Legge til egendefinerte kontroller i salgsstedsvisninger som ikke er skjermutformingsbaserte
                   href: dev-itpro/pos-control-non-screen.md
@@ -2656,54 +2226,22 @@
                   href: implementation-considerations-devices.md
                 - name: Visningshendelser og -behandlinger for salgsstedshandlekurv
                   href: dev-itpro/cart-view-handlers.md
-                - name: Legg til egendefinerte knapper i topptekstlinjen for salgssted
+                - name: Legge til egendefinerte knapper i topptekstlinjen for salgssted
                   href: dev-itpro/pos-header-bar.md
-                - name: Salgsstedsuavhengig emballasje-SDK
-                  items:
-                    - name: Oversikt over salgsstedsutvidelse
-                      href: dev-itpro/pos-extension/pos-extension-overview.md
-                    - name: Kom i gang med salgsstedsutvidelser
-                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
-                    - name: Opprett et pakkeprosjekt for salgsstedsutvidelse
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Opprett en .appx-fil for Modern POS-utvidelsespakke
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Feilsøk salgsstedsutvidelser
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
-                    - name: Utvidelsespakking og -distribusjon
-                      items:
-                        - name: Opprett en Modern POS-utvidelsespakke
-                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
-                        - name: Kodesignering av en utvidelsespakke for Modern POS (MSIX)
-                          href: dev-itpro/pos-extension/mpos-extension-signing.md
-                        - name: Opprett en utvidelsespakke for Cloud POS
-                          href: dev-itpro/pos-extension/cpos-extension-package.md
-                    - name: Overfør en salgsstedsutvidelse til uavhengig pakkemodell
-                      href: dev-itpro/pos-extension/migrate-pos-extension.md
-                    - name: Utviklingsveiledning for salgsstedsutvidelse
-                      items:
-                        - name: Grunnleggende om salgsstedsutvidelse
-                          href: dev-itpro/pos-extension/pos-extension-basics.md
-                        - name: Opprett en egendefinert visning i salgssted
-                          href: dev-itpro/pos-extension/custom-pos-view.md
-                        - name: Bruk salgsstedskontroller i utvidelser
-                          href: dev-itpro/pos-extension/controls-pos-extension.md
-                        - name: Oppgaver
-                          items:
-                            - name: Bruk Knockout.js i salgsstedsutvidelser
-                              href: dev-itpro/pos-extension/knockout-pos-extension.md
-                            - name: 'Bruk egendefinerte, hodeløse Commerce API-er'
-                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Utvidelsesmulighet for Hardware Station
               items:
+                - name: Hardware Station og utvidelsesmulighet
+                  href: dev-itpro/hardware-station-extensibility.md
                 - name: Integrere salgssted med en ny maskinvareenhet
                   href: dev-itpro/hardware-device-extension.md
-            - name: Utvidelsesmulighet for Retail Server
+            - name: Utvidelsesmuligheter for Retail Server
               items:
                 - name: Kunde-og forbruker-API-er for Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Opprette utvidelses-API for Retail Server (SDK for Retail versjon 10.0.11 og nyere)
+                - name: 'Opprette nytt utvidelses-API for Retail Server (SDK for Retail, versjon 10.0.11 og nyere)'
                   href: dev-itpro/retail-server-icontroller-extension.md
+                - name: 'Opprette nytt utvidelses-API for Retail Server (SDK for Retail, versjon 10.0.11 og eldre)'
+                  href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript og C#-proxyer
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Bruke API-er for Retail Server i eksterne apper
@@ -2728,15 +2266,13 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Utvidelser for kanaldatabase
                   href: dev-itpro/channel-db-extensions.md
-                - name: Fjern Cloud Scale Unit-utvidelser
-                  href: dev-itpro/retail-sdk/remove-csu-package.md
-                - name: Aktiver egendefinert CDX-synkronisering via utvidelse
+                - name: Aktivere egendefinert CDX-synkronisering via utvidelse
                   href: dev-itpro/cdx-extensibility.md
                 - name: Definere og angi ordreattributter
                   href: dev-itpro/order-attributes.md
                 - name: Kundeattributter
                   href: dev-itpro/customer-attributes.md
-                - name: Kvitteringstillegg
+                - name: CRT SDK-eksempler
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Logge utvidelseshendelser til Application Insights
                   href: dev-itpro/commerce-application-insights.md
@@ -2746,7 +2282,7 @@
                   href: dev-itpro/extended-columns.md
                 - name: Utvide Commerce Data Exchange – sanntidstjeneste
                   href: dev-itpro/extend-commerce-data-exchange.md
-            - name: Utvidelsesmulighet for betalingskobling
+            - name: Utvidelsesmuligheter for betalingskobling
               items:
                 - name: Opprette en betalingsintegrering for en betalingsterminal
                   href: dev-itpro/end-to-end-payment-extension.md
@@ -2762,13 +2298,13 @@
                   href: dev-itpro/create-windows-installer-payment-connector.md
                 - name: Betalingsdatabruk
                   href: payment-connector-data-fields.md
-                - name: Aktiver duplisert betalingsbeskyttelse for betalingskobling
+                - name: Aktivere duplisert betalingsbeskyttelse for betalingskobling
                   href: dev-itpro/duplicate-payments-protection.md
-                - name: Opprett Commerce-betalingspakke for distribusjon i Finance and Operations
+                - name: Opprette betalingspakke for Programutforsker i Service Fabric-distribusjoner
                   href: dev-itpro/payment-connector-package.md
             - name: Utvidelsesmulighet for e-handel med tredjepart
               items:
-                - name: Konfigurer nettbutikker
+                - name: Konfigurere nettbutikker
                   href: dev-itpro/configure-online-store.md
                 - name: Konfigurere godkjenningsleverandører
                   href: dev-itpro/configure-authentication-providers.md
@@ -2776,57 +2312,7 @@
                   href: dev-itpro/ecommerce-platform-sdk.md
             - name: Lokalisere utvidelsesressurser og etikettfiler for Commerce
               href: dev-itpro/extension-resource-localization.md
-        - name: Feilsøking
-          items:
-            - name: Ordrebehandling
-              items:
-                - name: Betalingstype må være kredittkortfeil
-                  href: troubleshoot/payment-type-credit-card-error.md
-                - name: Avgifter på elektroniske ordrer beregnes feil
-                  href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Ordresynkroniseringsfeil relatert til standard betalingstjeneste
-                  href: troubleshoot/synchronization-error.md
-            - name: Behandling av betalinger
-              items:
-                - name: Refusjon på returordre avvises
-                  href: troubleshoot/refund-declined.md
-                - name: Dynamics 365 Payment Connector for Adyen
-                  items:
-                    - name: Feilsøke problemer med Dynamics 365 Payment Connector for Adyen
-                      href: troubleshoot/adyen-support.md
-                    - name: Lagring for mitt neste betalingsalternativ vises ikke
-                      href: troubleshoot/next-payment-link-not-appearing.md
-                    - name: Registreringsside for kredittkort viser feil ved betaling
-                      href: troubleshoot/credit-card-entry-form-error.md
-                    - name: Betalinger utlignes automatisk før ordrer faktureres eller sendes
-                      href: troubleshoot/payments-auto-settled.md
-            - name: Administrasjon av e-handelsområde
-              items:
-                - name: Kan ikke konfigurere sikkerhetsgruppe for områdebygger under første distribusjon
-                  href: troubleshoot/security-group-site-builder.md
-                - name: Produkter og kategorier vises ikke i områdebygger
-                  href: troubleshoot/products-categories-unavailable.md
-                - name: Produkter og kategorier som mangler etter miljøkopi
-                  href: troubleshoot/missing-products-categories.md
-                - name: Begrense tilgang til butikkfasade under testing eller utvikling
-                  href: troubleshoot/restrict-access-storefront.md
-                - name: Påloggingskobling omdirigerer tilbake til e-handelsområde
-                  href: troubleshoot/sign-in-redirects-back.md
-                - name: Kundeposter vises ikke i Commerce Headquarters
-                  href: troubleshoot/customer-record-not-appearing.md
-                - name: Alternativet Plukk opp dette vises ikke
-                  href: troubleshoot/pickup-store-link-missing.md
-                - name: Detaljhandelsbutikk vises ikke i listen over butikker
-                  href: troubleshoot/pickup-store-missing.md
-                - name: Varer uten lager kan sjekkes ut
-                  href: troubleshoot/items-without-inventory-checked-out.md
-                - name: Filtrering av vurderinger vises på søkeresultater og kategorisider når vurderinger og anmeldelser av løsningsforklaringer ikke er aktivert
-                  href: troubleshoot/hide-ratings-refiner.md
-            - name: Feilsøking av SDK
-              items:
-                - name: Konfigurer et utviklingsmiljø for e-handel for feilsøking mot Retail Server VM på Lag 1
-                  href: troubleshoot/set-up-dev-environment-debugging.md
-    - name: Utvikling og administrasjon for økonomi- og driftsapper
+    - name: Utvikling og administrasjon av Finance and Operations-apper
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

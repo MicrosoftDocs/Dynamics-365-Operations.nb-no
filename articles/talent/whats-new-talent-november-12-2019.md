@@ -60,6 +60,3 @@ Alle nye funksjoner blir forhåndsvist i minst 30 dager, og vanligvis 30-60 dage
 Noen ganger vil en integrert funksjon være aktivert som standard og kan ikke deaktiveres (for eksempel arbeidsområdet **Funksjonsbehandling**).
  
 Når en funksjon er generelt tilgjengelig, kan den aktiveres eller deaktiveres i produksjonsmiljøer. Arbeidsområdet for **funksjonsbehandling** angir når en forhåndsvisningsfunksjon blir obligatorisk. Denne datoen er vanligvis 1. oktober eller 1. april for å justeres med de halvårlige frigivelsesplanene. De kan ikke deaktivere obligatoriske funksjoner. Før den blir obligatorisk, kan du slå en funksjon på og av i alle miljøer.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

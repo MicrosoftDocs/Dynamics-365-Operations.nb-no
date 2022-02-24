@@ -59,6 +59,3 @@ I denne versjonen er stillingsseriefeltet lagt til på siden **Behandle endringe
 Denne funksjonaliteten er nå tilgjengelig i sandkassemiljøer. Hvis du vil aktivere denne funksjonen, går du til **Systemadministrasjon > Koblinger > Oppsett > Systemparametere> Forhåndsvisningsfunksjoner**. Velg **Utvidet arbeiderskjema og navigering**. Dette vil aktivere disse endringene for alle brukere. Du kan når som helst deaktivere dette alternativet.
 
 Hvis du vil ha mer informasjon, se [Strømlinjeformet ansattoppføring og navigasjon](./streamlined-employee-entry.md). Hvis du vil vise endringene, kan du se videoen [Oversikt over Dynamics 365 for Talent 2019-utgivelsen Wave 2](https://aka.ms/ROGT19RW2ROV).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

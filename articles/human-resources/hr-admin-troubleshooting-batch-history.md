@@ -1,32 +1,30 @@
 ---
 title: Optimalisere ytelsen med oppgaver for automatisk opprydding
-description: Dette emnet forklarer hvordan du forbedrer ytelsen i Microsoft Dynamics 365 Human Resources ved å rydde opp i loggen for satsvise jobber.
-author: twheeloc
-ms.date: 08/21/2021
+description: Denne artikkelen beskriver hvordan du løser visse ytelsesproblemer med Microsoft Dynamics 365 Human Resources ved å rydde opp i loggen for satsvise jobber.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a293b128364b8b0b293da03495d55e46f6b01fd6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: a983fde8ba393ab25f2b330014e04a1379f0e4d0
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066099"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419840"
 ---
-# <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimalisere ytelsen med oppgaver for automatisk opprydding
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimalisere ytelsen med automatiske ryddeoppgaver
 
 **Avgang**
 
@@ -38,34 +36,31 @@ Satsvise jobber som kjører ofte, kan føre til uholdbar vekst i loggen for sats
 
 **Oppløsning**
 
-Planlegg en automatisk oppgave som skal rydde opp i loggen for satsvise jobber. Det anbefales at du konfigurerer at oppgaven skal kjøre ukentlig, men du må kanskje kjøre oppryddingen oftere eller sjeldnere, avhengig av miljøet. Fremgangsmåten nedenfor inneholder anbefalte innstillinger, men du kan endre disse i henhold til dine behov.
+Planlegg en automatisk oppgave som skal rydde opp i loggen for satsvise jobber. Vi anbefaler at du konfigurerer at oppgaven skal kjøre ukentlig, men du må kanskje kjøre oppryddingen oftere eller sjeldnere, avhengig av miljøet. Fremgangsmåten nedenfor inneholder anbefalte innstillinger, men du kan endre disse i henhold til dine behov.
 
 1. Velg **Systemadministrasjon** i Human Resources.
 
 2. I **Søk**-feltet angir **Opprydding av historikk for satsvis jobb**.
 
-   ![Søk etter opprydding i logg for satsvis jobb.](media/talent-batch-history-cleanup-search-bar.png)
+   ![Søk etter opprydding i logg for satsvis jobb](media/talent-batch-history-cleanup-search-bar.png)
 
 3. Angi **30** i **Historikkgrense (dager)**.
 
-   ![Sett historikkgrense til 30.](media/talent-batch-history-cleanup-history-limit.png)
+   ![Sett historikkgrense til 30](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Velg **Kjør i bakgrunnen**, og velg deretter **Regelmessighet**.
 
-   ![Angi regelmessighet.](media/talent-batch-history-cleanup-recurrence.png)
+   ![Angi regelmessighet](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Under **Definer regelmessighet** angir du **Startdato** og **Starttidspunkt** som skal utføres utenom arbeidstiden eller i helgen, og deretter velger du **INGEN SLUTTDATO**. 
 
-   ![Definere startdato og -klokkeslettet for regelmessighet.](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definere startdato og -klokkeslettet for regelmessighet](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Under **MØNSTER FOR REGELMESSIGHET** velger du **Dager** og setter **GJENTA ETTER ANGITT INTERVALL** til **7**.
 
-   ![Sette opprydding til å gjentas ukentlig.](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Sette opprydding til å gjentas ukentlig](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Velg **OK**.
 
 8. Endre eventuelle andre parametere under **Kjør i bakgrunnen** etter behov, og velg deretter **OK.**
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

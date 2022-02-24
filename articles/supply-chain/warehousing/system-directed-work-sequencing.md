@@ -2,9 +2,11 @@
 title: Systemstyrt arbeidssekvensiering
 description: Dette emnet inneholder informasjon om systemstyrt arbeidssekvensering. Med denne funksjonaliteten kan du sortere og filtrere arbeidsordrene som systemet viser for brukere for kjøring. Det er nyttig i scenarier der det kreves tilleggskriterier for å styre lagerplukkprosessen.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577822"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970212"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrt arbeidssekvensiering
 
@@ -302,6 +304,3 @@ De systemstyrte arbeidssekvensspørringene er *inklusive*. Det er viktig at du h
 I eksemplet fra dette scenariet ble derfor arbeids-ID *4* også hentet av spørringen. Når den ble opprettet, ble to linjer lagt til: én for 25 ea og en annen for 10 ea. Arbeidet ble fortsatt presentert for brukeren fordi minst én arbeidslinje har et antall på mindre enn 20 ea.
 
 Avhengig av scenariet kan du forhindre denne virkemåten ved å bruke arbeidspauser.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

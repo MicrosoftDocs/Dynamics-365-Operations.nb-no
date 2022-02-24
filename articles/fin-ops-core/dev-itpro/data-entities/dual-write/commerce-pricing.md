@@ -2,19 +2,28 @@
 title: Bruke prissettingsmotoren i Dynamics 365 Commerce med Dynamics 365 Sales
 description: Dette emnet beskriver hvordan du bruker prissettingsmotoren i Microsoft Dynamics 365 Commerce til å opprette salgstilbud i Dynamics 365 Sales.
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: shajain
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c3f1527e5f37bebba57661ca86b1a3aae7e62da0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2020-11-03
+ms.openlocfilehash: fad5c21d75db62b85efe803f1667dd3f9164a5fc
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416761"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594924"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>Bruke prissettingsmotoren i Dynamics 365 Commerce med Dynamics 365 Sales
 
@@ -24,7 +33,7 @@ Dette emnet beskriver hvordan du bruker prissettingsmotoren i Microsoft Dynamics
 
 Prissettingsmotoren i Dynamics 365 Commerce støtter de fleste prisscenarioene for bedrift-til-kunde (B2C), for eksempel priser på butikknivå, tilknytningsbasert og lojalitetsbasert prissetting, samlerabatter, kvantumsrabatter og terskelrabatter. Prissettingsmotoren bruker komplekse regler til å bestemme den beste prisen for et gitt tilbud eller ordre.
 
-Når du bruker [dobbel skriving](./dual-write-overview.md), har du tre alternativer for prissettingsbehovene dine. Du kan bruke den statiske prissettingen som kommer fra prislisten i Dynamics 365 Sales, prissettingsmotoren i Dynamics 365 Supply Chain Management eller prissettingsmotoren i Dynamics 365 Commerce. Blant disse alternativene er prissettingsmotoren i Commerce best egnet i B2C-scenarioer.
+Når du bruker [dobbel skriving](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview), har du tre alternativer for prissettingsbehovene dine. Du kan bruke den statiske prissettingen som kommer fra prislisten i Dynamics 365 Sales, prissettingsmotoren i Dynamics 365 Supply Chain Management eller prissettingsmotoren i Dynamics 365 Commerce. Blant disse alternativene er prissettingsmotoren i Commerce best egnet i B2C-scenarioer.
 
 ## <a name="use-the-commerce-pricing-engine-in-sales"></a>Bruk prissettingsmotoren i Commerce i Sales
 
@@ -35,7 +44,7 @@ Når brukere starter et tilbud i Sales, kopierer rammeverket for dobbel skriving
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-- Før du kan bruke prissettingsmotoren i Commerce i Sales, må du følge fremgangsmåten i [Kundeemne til kontanter i dobbel skriving](./dual-write-prospect-to-cash.md).
+- Før du kan bruke prissettingsmotoren i Commerce i Sales, må du følge fremgangsmåten i [Kundeemne til kontanter i dobbel skriving](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/).
 - Du må deaktivere evaluering av forretningsavtale for manuell registrering ved å følge disse trinnene:
 
     1. Gå til **Kunder \> Oppsett \> Kundeparametere** i Commerce-miljøet ditt.
@@ -43,7 +52,4 @@ Når brukere starter et tilbud i Sales, kopierer rammeverket for dobbel skriving
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Kundeemne til kontanter i dobbel skriving](./dual-write-prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[Kundeemne til kontanter i dobbel skriving](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)

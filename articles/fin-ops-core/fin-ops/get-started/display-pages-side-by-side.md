@@ -2,9 +2,11 @@
 title: Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu
 description: Denne artikkelen forklarer hvordan du viser sider side ved side.
 author: aneesmsft
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068065"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798409"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Denne artikkelen forklarer hvordan du viser sider side ved side.
 
@@ -49,6 +48,3 @@ Før du bruker funksjonen **Åpne i nytt vindu**, konfigurerer du popup-blokkeri
 Funksjonen **Åpne i nytt vindu** er bare tilgjengelig når det er flere sider åpne i vinduet. I tillegg lukkes popup-vinduet automatisk når ingen flere sider er åpne (det vil si når du lukker den siste siden i dette vinduet). Systemet lukker også åpne sider når du går til et annet område i programmet. Hvis du har popup-vinduer åpne og går til et annet område i programmet, lukkes derfor popup-vinduene automatisk fordi systemet lukket sidene i disse vinduene.
 
 Den øverste linjen i popup-vinduene viser informasjon om firmaet siden ble åpnet i, og er skrivebeskyttet. Popup-vinduene er også avhengig av hovednettleservinduet. Hvis hovedvinduet lukkes eller oppdateres, blir alle åpne popup-vinduer skrivebeskyttet. Hvis dette skjer, kan du fortsatt vise informasjonen i disse vinduene, men du kan ikke bruke den.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,12 +2,15 @@
 title: Sosial deling-modul
 description: Dette emnet dekker moduler for sosial deling for informasjonskapsel og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730953"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4414774"
 ---
-# <a name="social-share-module"></a>Modul for sosial deling
+# <a name="social-share-module"></a>Sosial deling-modul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker moduler for sosial deling for informasjonskapsel og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Med moduler for sosial deling kan brukere dele URL-adresser på områdesidene for e-handel på sosiale medier, for eksempel Facebook Twitter, Pinterest og LinkedIn. URL-adresser til områdesider kan også deles via e-post. Moduler for sosial deling brukes vanligvis på sider for produktdetaljer (PDP-er) for å hjelpe brukere med å dele produktinformasjon.
 
@@ -36,7 +41,7 @@ Hver sosiale medieplattform kan spore informasjonskapsler, så denne modulen kre
 
 Illustrasjonen nedenfor viser et eksempel på en modul for sosial deling som brukes på en produktdetaljside.
 
-![Eksempel på en modul for sosial deling.](./media/ecommerce-socialshare.png)
+![Eksempel på en modul for sosial deling](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Egenskaper for modul for sosial deling
 
@@ -77,6 +82,3 @@ Hvis du vil legge til en modul for sosial deling i en kjøpsboksmodul, gjør du 
 [Kjøpsboksmodul](add-buy-box.md)
 
 [Informasjonskapselsamsvar](cookie-compliance.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

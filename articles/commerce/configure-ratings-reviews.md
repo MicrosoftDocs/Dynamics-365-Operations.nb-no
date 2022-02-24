@@ -2,30 +2,35 @@
 title: Konfigurere vurderinger og anmeldelser
 description: Dette emnet beskriver hvordan du konfigurerer e-handelområdet til å vise kundevurderinger og -omtaler i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968108"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414546"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurere vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du konfigurerer e-handelområdet til å vise kundevurderinger og -omtaler i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Vurderinger og evalueringer på e-handelswebområder hjelper kunder med å lære om produkter før de tar en avgjørelse, ved å vise dem hva andre kunder mener om disse produktene. For webområder for e-handel er også vurderinger og gjennomganger en mekanisme for å samle kundetilbakemeldinger om produkter. 
 
@@ -44,7 +49,7 @@ Følg denne fremgangsmåten for å konfigurere et område for å vise vurderinge
 
 Illustrasjonen nedenfor viser hvordan denne konfigurasjonen ser ut i Dynamics 365 Commerce.
 
-![Konfigurere et område for å vise vurderinger og omtaler.](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurere et område for å vise vurderinger og omtaler](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Koble en produktvurdering til omtaledelen i en PDP
 
@@ -58,7 +63,7 @@ Følg denne fremgangsmåten for å koble en produktomtale til **Vurderinger**-de
 
 Illustrasjonen nedenfor viser hvordan denne konfigurasjonen ser ut i Dynamics 365 Commerce.
 
-![Koble en produktvurdering til omtaledelen i en PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Koble en produktvurdering til omtaledelen i en PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurere koblingen for siden for personvern og policy
 
@@ -73,7 +78,7 @@ Følg disse trinnene for å konfigurere koblingen for siden for personvern og po
 
 Illustrasjonen nedenfor viser hvordan denne konfigurasjonen ser ut i Dynamics 365 Commerce.
 
-![Konfigurere koblingen for siden for personvern og policy.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfigurere koblingen for siden for personvern og policy](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurere vurderings- og omtalemoduler på sider med produktdetaljer
 
@@ -87,17 +92,6 @@ Hvis du vil ha informasjon om hvordan du konfigurerer vurderings- og omtalemodul
 
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
+[Konfigurere vurderings- og omtalemoduler på sider med produktdetaljer](ratings-reviews-modules.md)
+
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
-
-[Aktivere manuell publisering av vurderinger og vurderinger av en moderator](manual-publish-rating-reviews.md)
-
-[Importer og eksporter vurderinger og omtaler](import-export-reviews.md)
-
-[Konfigurer tjeneste-til-tjeneste-godkjenning](service-to-service-auth.md)
-
-[Vanlige spørsmål om rangeringer og anmeldelser](ratings-reviews-faq.md)
-
-[Vurderings- og omtalemoduler](ratings-reviews-modules.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

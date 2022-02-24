@@ -1,13 +1,16 @@
 ---
 title: Velge å bruke vurderinger og anmeldelser
-description: Dette emnet forklarer hvordan du velger å bruke vurderinger og omtaler på området for Microsoft Dynamics 365 Commerce.
+description: Dette emnet forklarer hvordan du velger å bruke vurderinger og omtaler på Microsoft Dynamics 365 Commerce-området.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fd6715539693389f25800a40c0beffcdc1b0de72
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968009"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414652"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Velge å bruke vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du velger å bruke vurderinger og omtaler på området for Microsoft Dynamics 365 Commerce.
+Dette emnet forklarer hvordan du velger å bruke vurderinger og omtaler på Microsoft Dynamics 365 Commerce-området.
+
+## <a name="overview"></a>Oversikt
 
 Løsningen for vurderinger og omtaler er en omnikanalløsning som du kan gjøre tilgjengelig i Dynamics 365 Commerce ved å bruke Microsoft Dynamics Lifecycle Services (LCS). LCS er en administrasjonsportal som forhandlere bruker for å administrere sine miljøer fra klargjøring til avvikling.
 
@@ -41,7 +46,7 @@ Følg denne fremgangsmåten for å velge å bruke vurderinger og omtaler på omr
 1. Sett alternativet **Aktiver tjenesten for vurderinger og omtale** til **Ja**.
 1. I **Moderator for AAD-sikkerhetsgruppe for vurderinger og omtaler (sikkerhetsgruppeobjekt-ID)** angir du IDen til Microsoft Azure Active Directory (Azure AD)-sikkerhetsgruppen som inkluderer moderatorene for vurderinger og omtaler.
 
-    ![Velge å bruke vurderinger og anmeldelser.](media/LCS_RnR_Preference.png)
+    ![Velge å bruke vurderinger og anmeldelser](media/LCS_RnR_Preference.png)
 
 1. Fullfør initialiseringsprosessen for e-handel.
 
@@ -58,13 +63,4 @@ Følg denne fremgangsmåten for å velge å bruke vurderinger og omtaler på omr
 
 [Synkronisere produktvurderinger i Dynamics 365 Commerce](sync-product-ratings.md)
 
-[Aktivere manuell publisering av vurderinger og vurderinger av en moderator](manual-publish-rating-reviews.md)
 
-[Importer og eksporter vurderinger og omtaler](import-export-reviews.md)
-
-[Konfigurer tjeneste-til-tjeneste-godkjenning](service-to-service-auth.md)
-
-[Vanlige spørsmål om rangeringer og anmeldelser](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

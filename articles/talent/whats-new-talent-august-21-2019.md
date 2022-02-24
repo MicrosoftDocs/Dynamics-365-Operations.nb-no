@@ -70,6 +70,3 @@ Et nytt alternativ lar ledere vise prestasjonen til både direkte underordnede o
 #### <a name="platform-update-29-for-finance-and-operations"></a>Plattform Update 29 for Finance and Operations
 
 Hvis du vil ha mer informasjon om Platform update 29 for Finance and Operations, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 Finance and Operations Platform Update 29 (oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

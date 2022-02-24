@@ -1,35 +1,33 @@
 ---
-title: Opprette spørreskjemaer
-description: Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema.
-author: twheeloc
-ms.date: 10/28/2021
+title: Utforme spørreskjemaer
+description: Denne artikkelen beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065207"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419957"
 ---
-# <a name="create-questionnaires"></a>Opprette spørreskjemaer
+# <a name="design-questionnaires"></a>Utforme spørreskjemaer
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
+Denne artikkelen beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
 
 Et nøye utformet spørreskjema kan være med på å øke kvaliteten på dataene du samler inn. Gjennom nøye utforming kan du bedre velge de riktige alternativene til rett tid for et spørreskjema. Følgende punkt kan gjøre det enklere å planlegge et effektivt spørreskjema:
 
@@ -66,7 +64,7 @@ Enkelte forutsetninger er nødvendige før du kan opprette spørreskjemaer, spø
 
 ### <a name="questionnaire-types"></a>Spørreskjematyper
 
-**Spørreskjematyper** er obligatoriske og må tilordnes når du oppretter et spørreskjema. **Spørreskjematyper** gjør det enklere å administrere og klassifisere spørreskjemaer. Bruk spørreskjematyper til å klassifisere spørreskjemaer og skille dem fra hverandre. Hvis du for eksempel har flere spørreskjemaer for å velge mellom, kan du filtrere dem etter type for å gjøre det enklere å finne et bestemt spørreskjema. Her er noen eksempler på spørreskjematyper:
+Spørreskjematyper er obligatoriske og må tilordnes når du oppretter et spørreskjema. Spørreskjematyper gjør det enklere å administrere og klassifisere spørreskjemaer. Bruk spørreskjematyper til å klassifisere spørreskjemaer og skille dem fra hverandre. Hvis du for eksempel har flere spørreskjemaer for å velge mellom, kan du filtrere dem etter type for å gjøre det enklere å finne et bestemt spørreskjema. Her er noen eksempler på spørreskjematyper:
 
 -   Personaleutvikling
 -   Kundeundersøkelser
@@ -74,9 +72,9 @@ Enkelte forutsetninger er nødvendige før du kan opprette spørreskjemaer, spø
 
 ### <a name="question-types"></a>Spørsmålstyper
 
-**Spørsmålstyper** er obligatoriske og må tilordnes når du lager et spørsmål. 
+Spørsmålstyper er obligatoriske og må tilordnes når du lager et spørsmål. 
 
-Bruk **spørsmålstyper** til å kategorisere spørsmål for rapportering. **Spørsmålstyper** gjør det også enklere å finne spørsmål, fordi du kan bruke typer som filtre på **Spørsmål**-siden. Her er noen eksempler på spørsmålstyper:
+Bruk spørsmålstyper til å kategorisere spørsmål for rapportering. Spørsmålstyper gjør det også enklere å finne spørsmål, fordi du kan bruke typer som filtre på **Spørsmål**-siden. Her er noen eksempler på spørsmålstyper:
 
 -   Personale
 -   Forretningsadministrasjon
@@ -93,9 +91,9 @@ Nummerseriekodene brukes til å organisere spørsmål og svar. Basert på disse 
 Du bør definere alle parametere før du begynner å opprette dataene. Du kan endre innstillingene for spørreskjemaparametere når som helst.
 
 ## <a name="questionnaire-components"></a>Spørreskjemakomponenter
-Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet. Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
+Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet.  Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
 
-[![Spørreskjemakomponenter.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![Spørreskjemakomponenter](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Svargrupper og svar
 
@@ -108,7 +106,7 @@ Hvis du vil bruke en liste over mulige svar for lukkede spørsmål, kan du lage 
 
 Svargrupper og svar er komponenter som utgjør hoveddelen av informasjon som spørsmål lages fra. Etter at du har opprettet en svargruppe, kan du tilordne svargruppen til et spørsmål i **Svargruppe**-feltet på **Spørsmål**-siden. 
 
-En **svargruppe** kan brukes til flere spørsmål i det samme spørreskjemaet og kan også brukes i flere spørreskjemaer. 
+En svargruppe kan brukes til flere spørsmål i det samme spørreskjemaet og kan også brukes i flere spørreskjemaer. 
 
 > [!NOTE]
 > Hvis du endrer svarteksten i svargrupper som allerede er brukt i fullførte spørreskjemaer, kan data bli vanskelige å evaluere, og spørreskjemaresultater slutter kanskje å være gyldige. Hvis du må endre en svargruppe, bør du vurdere å opprette en ny svargruppe i stedet for å endre en eksisterende. Du kan ikke slette svargrupper som er knyttet til et spørsmål eller svar, eller som er besvart.
@@ -174,7 +172,7 @@ Du kan ikke slette følgende typer spørsmål i et spørreskjema:
 
 ### <a name="result-groups"></a>Resultatgrupper
 
-**Resultatgrupper** er valgfrie når du knytter spørsmål til et spørreskjema. 
+Resultatgrupper er valgfrie når du knytter spørsmål til et spørreskjema. 
 
 En resultatgruppe brukes til å beregne poeng og kategorisere resultatene i et spørreskjema. Hvis du bruker resultatgrupper, kan du utføre følgende oppgaver:
 
@@ -238,5 +236,3 @@ Hvis du vil bruke betingede spørsmål til å opprette et spørsmålshierarki i 
 En juridisk enhet tilbyr både varer og tjenester til kunder. Som vanlig i slike tilfeller kjøper enkelte kunder bare varer, noen bare tjenester og andre både varer og tjenester. Når den juridiske enheten distribuerer en undersøkelse om kundetilfredshet, bruker den en betinget struktur på spørreskjemaet, slik at kunder som bare kjøper tjenester, ikke trenger å svare på spørsmål om varer. 
 
 Alternativt kan du definere du et spørreskjema slik at hvis en respondent velger svar A på spørsmål 1, er spørsmål 2 det neste spørsmålsrekkefølgen. Hvis respondenten i stedet velger svar B på spørsmål 1, er spørsmål 5 det neste spørsmålet.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

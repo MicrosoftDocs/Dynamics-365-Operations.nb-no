@@ -1,10 +1,12 @@
 ---
 title: Vedlikeholdsstatus
 description: Dette emnet forklarer hvordan du beregner vedlikeholdsstatus i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 138e2e72fbf761d209d288c2bd778c08519b9c69b0715f4466d4838255a2a31e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752015"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018502"
 ---
 # <a name="maintenance-status"></a>Vedlikeholdsstatus
 
@@ -57,14 +59,11 @@ I Aktivastyring kan du foreta en oversiktsberegning for en spesifikk periode for
 
 I skjermbildet nedenfor er knappene **År** og **Måned** aktivert. Når alternativene for **Grupper etter** er valgt, får du en generell oversikt på månedlig basis av arbeidsmengde og gjennomstrømning relatert til vedlikeholdsforespørsler og arbeidsordrer. 
 
-![Eksempel på månedlig arbeidsmengde.](media/13-controlling-and-reporting.png)
+![Eksempel på månedlig arbeidsmengde](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Eksempel 2
 
 I skjermdumpen nedenfor er informasjon om arbeidssteder lagt til. Nå er det mulig å sammenligne arbeidsmengde og gjennomstrømming mellom arbeidssteder, som kan representere geografiske steder, fabrikker eller arbeidsområder. 
 
-![Eksempel på månedlig arbeidsmengde med funksjonsplasseringer.](media/14-controlling-and-reporting.png)
+![Eksempel på månedlig arbeidsmengde med funksjonsplasseringer](media/14-controlling-and-reporting.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

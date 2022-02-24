@@ -2,26 +2,28 @@
 title: Startside for kostnadsstyring
 description: Med kostnadsstyring kan du håndtere vurderingen og regnskapet for råvarer, halvferdige varer, ferdigvarer og aktiva i arbeid.
 author: AndersGirke
+manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83881e6b3bb588dad61fd14aa4db28aa76305925aab3ee08e2ebe7e001f2aff2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: dc146f8a3707e830ff574964c5a8865271e69b50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739113"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967689"
 ---
 # <a name="cost-management-home-page"></a>Startside for kostnadsstyring
 
@@ -43,7 +45,7 @@ Du får tilgang til Lagerregnskap og Produksjonsregnskap fra **Kostnadsadministr
 
 Produksjonsregnskap lar deg håndtere [Etterkalkulering av jobbordre](production-order-cost-analysis.md) i produksjonsordrer og partiordrer, samt [Backflush-etterkalkulering](backflush-costing.md) i lean manufacturing.
 
-[Kostnadsbehandling-innhold for Power BI](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) gir ledere innsikt i beholdning og VIA-lager, og hvordan kostnadsflyten går gjennom dem etter kategori over tid. Informasjonen kan også brukes som et detaljert supplement til regnskapsoppgjøret.
+[Kostnadsbehandling-innhold for Power BI](../../dev-itpro/analytics/cost-management-content-pack.md) gir ledere innsikt i beholdning og VIA-lager, og hvordan kostnadsflyten går gjennom dem etter kategori over tid. Informasjonen kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 
 ### <a name="additional-resources"></a>Tilleggsressurser
 
@@ -57,10 +59,8 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 
 #### <a name="blogs"></a>Blogger
 
-Du kan finne meninger, nyheter og annen informasjon om kostnadsstyring, i [Dynamics AX Manufacturing R&D-teambloggen](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av kostnadsstyring, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
+Du kan finne meninger, nyheter og annen informasjon om kostnadsstyring, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av kostnadsstyring, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
 
 #### <a name="task-guides"></a>Oppgaveveiledninger
 
 Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

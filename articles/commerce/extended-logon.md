@@ -1,27 +1,30 @@
 ---
 title: Definere utvidet påloggingsfunksjonalitet for MPOS og Cloud POS
 description: Dette emnet dekker alternativene for å definere utvidet pålogging for Cloud POS og Retail Modern POS (MPOS).
-author: boycezhu
-ms.date: 09/07/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycez
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478677"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414600"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS
 
@@ -51,7 +54,7 @@ Når alternativet **Stabspålogging med kort krever passord** er aktivert, velge
 
 ## <a name="assigning-an-extended-logon"></a>Tilordne en utvidet pålogging
 
-Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS. Søk deretter etter en arbeider ved å angi arbeiderens operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK**-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
+Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS. Søk deretter etter en arbeider ved å angi hans eller hennes operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK**-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
 
 ## <a name="deleting-an-extended-logon"></a>Slette en utvidet pålogging
 
@@ -59,13 +62,8 @@ Du kan slette den utvidede påloggingen som er tilordnet til en arbeider, ved å
 
 ## <a name="extending-extended-logon"></a>Utvide utvidet pålogging
 
-Utvidet pålogging gjør at bare fem signifikante tegn kan være den unike identifikatoren ut av boksen. Hvis du for eksempel konfigurerer to kort med IDene "1234567" og "1234578", anses begge å være "12345". Du kan lage en utvidelse for å støtte flere tegn. Hvis du vil ha detaljerte instruksjoner, kan du kontrollere [Utvide den utvidede påloggingsfunksjonen for MPOS og Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
-
 Påloggingstjenesten kan utvides for å støtte flere utvidede påloggingsenheter, for eksempel håndholdte skannere. Hvis du vil ha mer informasjon, kan du se i dokumentasjonen for utvidelsesmuligheter for salgssted.
 
 ## <a name="using-extended-logon"></a>Bruke utvidet pålogging
 
-Når utvidet pålogging er konfigurert, og en arbeider er tilordnet til en strekkode eller magnetstripe, trenger arbeideren bare å dra eller skanne arbeiderens kort mens Salgsstedets påloggingsside vises. Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Når utvidet pålogging er konfigurert, og en arbeider er tilordnet til en strekkode eller magnetstripe, trenger arbeideren bare å dra eller skanne hans eller hennes kort mens Salgsstedets påloggingsside vises. Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.

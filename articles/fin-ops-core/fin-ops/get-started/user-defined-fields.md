@@ -2,9 +2,11 @@
 title: Opprette og arbeide med egendefinerte felt
 description: Dette emnet forklarer hvordan du oppretter egendefinerte felt via brukergrensesnittet for å tilpasse programmet slik at det passer for bedriften.
 author: jasongre
-ms.date: 05/24/2021
+manager: AnnBe
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
@@ -13,23 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 2ab1c402d99c1d9b7d7dc06e64c93fe43c5a1e9f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: eee5b072f999aab7d4a5e72888abad3915e03d5b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071191"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798124"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Opprette og arbeide med egendefinerte felt
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
 Selv om det er et omfattende sett med felt som standard for å administrere mange forretningsprosesser, har et firma noen ganger behov for å spore ytterligere informasjon i systemet. Selv om programmerere kan brukes til å legge til disse feltene som utvidelser i utviklerverktøy, gjør funksjonen egendefinerte felt det mulig å legge til felt direkte fra brukergrensesnittet, slik at du kan skreddersy programmet slik at det passer til bedriften din ved hjelp av Webleseren.
 
-*Bare brukere med spesialtilgang har tilgang til denne funksjonen.*
+Muligheten til å legge til egendefinerte felt er tilgjengelig i plattformoppdateringen 13 og senere. Bare brukere med spesialtilgang har tilgang til denne funksjonen.
 
 Denne videoen viser hvor enkelt det er å legge til et egendefinert felt på en side: [Legge til egendefinerte felt](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
@@ -49,9 +48,8 @@ Trinnene nedenfor beskriver prosessen for å opprette et egendefinert felt og pl
     Hvis du ikke ser **Opprett nytt felt**-knappen, har du ikke de nødvendige tillatelsene til å bruke denne funksjonen.
 
 7. Angi følgende informasjon i dialogboksen **Opprett nytt felt**.
-   
-    1. Velg databasetabellen der dette feltet skal legges til. Legg merke til at bare tabeller som støtter egendefinerte felt, vises i fra rullegardinlisten. Se delen nedenfor for tekniske detaljer om støttede tabeller.
 
+    1. Velg databasetabellen der dette feltet skal legges til. Legg merke til at bare tabeller som støtter egendefinerte felt, vises i fra rullegardinlisten. Se delen nedenfor for tekniske detaljer om støttede tabeller.
     2. Velg datatypen for det nye feltet. Tilgjengelige datatyper er avmerkingsboks, dato, dato/klokkeslett, desimal, tall, plukkliste og tekst.
 
         - Hvis du velger datatypen tekst, kan du også angi den maksimale lengden på teksten som kan angis i dette feltet.
@@ -64,15 +62,11 @@ Trinnene nedenfor beskriver prosessen for å opprette et egendefinert felt og pl
 10. Klikk på **Sett inn** for å sette inn de merkede feltene i det valgte området i skjemaet.
 11. **Valgfritt:** Aktiver **Flytt**-modus fra tilpassingsverktøylinjen for å flytte de nye feltene til ønsket plassering i det valgte området. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du bruker de ulike tilpassingsfunksjonene for å optimalisere et skjema for din personlige bruk.
 
-> [!WARNING]
-> Muligheten til å angi verdier i et egendefinert felt som legges til en side, er avhengig av om tabellen som er knyttet til det egendefinerte feltet, kan redigeres eller være skrivebeskyttet. Når den tilknyttede tabellen er skrivebeskyttet, blir også alle felt som er koblet til denne tabellen, inkludert eventuelle egendefinerte felt, skrivebeskyttet.
-
-
 ## <a name="sharing-custom-fields-with-other-users"></a>Dele egendefinerte felt med andre brukere
 
-Når du har opprettet et egendefinert felt og vist det på en side, kan det hende at du vil gi denne oppdaterte sidevisningen som inneholder det nye feltet, til andre brukere i systemet. Dette kan gjøres på to forskjellige måter ved hjelp av tilpassingsfunksjonene i produktet:
+Når du har opprettet et egendefinert felt og vist det i et skjema, kan det hende at du vil gi denne oppdaterte sidevisningen som inneholder det nye feltet, til andre brukere i systemet. Dette kan gjøres på to forskjellige måter ved hjelp av tilpassingsfunksjonene i produktet:
 
-- Den anbefalte ruten er å **publisere en [lagret visning](saved-views.md)** med det egendefinerte feltet lagt til på siden for riktig sett med brukere. Hvis funksjonen for lagret visning ikke er aktivert, kan systemadministrator bruke tilpasningen for de ønskede brukerne fra tilpasningsskjemaet. Hvis du vil ha mer informasjon, kan du se [Tilpasse brukeropplevelsen](personalize-user-experience.md).
+- Den anbefalte måten er via systemadministratoren, som kan overføre en tilpassing til alle brukere eller en undergruppe av brukere. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon.
 - Du kan også eksportere endringene (kalt *tilpasninger*), sende dem til én eller flere brukere, og få hver av disse brukerne til å importere endringene. Med **Behandle**-alternativet på tilpassingsverktøylinjen kan du eksportere og importere tilpasninger.
 
 ## <a name="managing-custom-fields"></a>Behandle egendefinerte felt
@@ -143,10 +137,6 @@ I enkelte sjeldne tilfeller kan du bestemme at et egendefinert felt ikke lenger 
 
 ## <a name="appendix"></a>Tillegg
 
-### <a name="why-cant-i-enter-a-value-in-my-custom-field"></a>Hvorfor kan jeg ikke angi en verdi i det egendefinerte feltet? 
-
-Hvis du ikke kan skrive inn en verdi i det egendefinerte feltet når siden er i redigeringsmodus, kan dette skyldes at tabellen som feltet ble lagt til i, for øyeblikket er skrivebeskyttet. Alle feltene i en tabell blir skrivebeskyttet hvis backing-tabellen for øyeblikket er konfigurert som skrivebeskyttet på siden.   
-
 ### <a name="who-can-create-custom-fields"></a>Hvem kan opprette egendefinerte felt?
 
 Som en beskyttelse av systemet kan bare systemansvarlige opprette egendefinerte felt som standard. De privilegerte brukerne som organisasjonen anser som nødvendige, kan imidlertid gis rettigheter til å opprette egendefinerte felt av en systemansvarlig ved hjelp av sikkerhetsrollen **Privilegert bruker for kjøretidstilpasning**. Brukere uten denne sikkerhetsrollen kan ikke opprette egendefinerte felt, men vil fremdeles kunne se og samhandle med egendefinerte felt som er lagt til av andre brukere i systemet.
@@ -172,6 +162,3 @@ Av ytelsesårsaker og tekniske årsaker er det bare tabeller som oppfyller følg
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jeg referere til egendefinerte felt fra utviklerverktøy?  
 
 Egendefinerte felt kan bare administreres gjennom brukergrensesnittet og kan ikke refereres til av koden. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

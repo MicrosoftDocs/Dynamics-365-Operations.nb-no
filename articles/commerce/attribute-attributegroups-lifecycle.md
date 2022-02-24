@@ -2,13 +2,16 @@
 title: Administere attributter og attributtgrupper
 description: Dette emnet beskriver hvordan du bruker attributter til å beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
 author: ashishmsft
+manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727660"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414625"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Administere attributter og attributtgrupper
 
@@ -42,8 +45,8 @@ Et vanlig TV-produkt kan for eksempel ha følgende attributter.
 |            | DVI-innganger               | 0–10                        | 1             |
 |            | Komposittinnganger         | 0–10                        | 2             |
 |            | Komponentinnganger         | 0–10                        | 1             |
-| LCD-SKJERM        | 3D Ready                 | Ja eller Nei                   | Ja           |
-|            | 3D Enabled               | Ja eller Nei                   | Nei            |
+| LCD-SKJERM        | 3D Ready                 | Ja eller No                   | Ja           |
+|            | 3D Enabled               | Ja eller No                   | Antall            |
 | Plasma     | Driftstemperatur fra      | 0–43 grader              | 32            |
 |            | Driftstemperatur til        | 0–43 grader              | 100           |
 | Projektor | Garanti for projiseringsrør | 6, 12 eller 18 måneder         | 12            |
@@ -70,7 +73,7 @@ Attributter er basert på *attributtyper*. Attributtypen identifiserer datatypen
     - Gi navn til en attributtype **form**, og legg til følgende verdier: **oval**, **firkantet**, og **rektangulært**.
     - Gi navn til den andre attributtypen **solbrillemerke**, og legg til følgende verdier: **Ray ban**, **Aviator**, og **Oakley**.
 
-![Attributtyper.](media/AttributeType.png)
+![Attributtyper](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Definer attributter
 
@@ -79,7 +82,7 @@ Attributter er basert på *attributtyper*. Attributtypen identifiserer datatypen
 3. Opprett et attributt som heter **Glass**.
 4. Angi **Attributtype** til **Form**.
 
-![Attributter.](media/Attribute.png)
+![Attributter](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Attributtmetadata
 
@@ -101,7 +104,7 @@ Her er de gjenværende alternativene for attributtet metadata på siden **Attrib
 
 Disse alternativene er egentlig beregnet for å forbedre søkefunksjonen for nettbutikkfasaden. Selv om Commerce ikke inneholder nettbutikkfasade, er eCommerce Publishing Software Development Kit (SDK) inkludert. Kunder kan bruke denne SDK for å plassere varer i en søkeindeks etter eget valg. Selv om den unike produktinformasjonen blir importert, skal kunder fortsatt kunne skille mellom søkbare data, data som kan inngå i spørringen, og så videre. På den måten kan de bygge en optimal indeks for å være sikker på at de bare indeksere attributter som *etter deres synspunktt*, skal indekseres.
 
-Hvis du vil ha informasjon om hensikten med resten av alternativene, se [oversikt over søkeskjemaet i SharePoint Server 2013](/SharePoint/search/search-schema-overview).
+Hvis du vil ha informasjon om hensikten med resten av alternativene, se [oversikt over søkeskjemaet i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Filterinnstillinger for attributtfilter.
 
@@ -134,7 +137,7 @@ Siden **Innstillinger for filtervisning** inneholder følgende felt:
     - 200 – 500
     - 500 eller mer
 
-![Innstillinger for attributtfilter.](media/AttributeFilterSettings.PNG)
+![Innstillinger for attributtfilter](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Attributtgrupper
 
@@ -142,7 +145,7 @@ Etter at attributtene er definert, kan de tilordnes attributtgrupper. En *attrib
 
 Du kan også angi standardverdier for attributter som er inkludert i en attributtgruppe. Du kan for eksempel legge til et attributt for farge i en attributtgruppe, og velge **blå** som standard attributtverdi. I så fall, når attributtgruppen legges til et produkt som inkluderer farge som ett av attributtene, vises **blå** som standardfarge for produktet.
 
-![Attributtgrupper.](media/AttributeGroup.png)
+![Attributtgrupper](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Opprette en attributtgruppe
 
@@ -155,7 +158,7 @@ Du kan også angi standardverdier for attributter som er inkludert i en attribut
 
 Én eller flere attributtgrupper kan knyttes til kategorinoder i følgende typer kategorihierarkier: hierarki for Commerce-produkt, kanalnavigasjonshierarkiet for kategorier og ekstra hierarki for produktkategori. Etter at varer er kategorisert, arver de attributtene som er inkludert i attributtgruppene.
 
-![Produkthierarki – Produktattributtgrupper.](media/AGRetailProdHierarchy.PNG)
+![Produkthierarki – Produktattributtgrupper](media/AGRetailProdHierarchy.PNG)
 
 Følg denne fremgangsmåten for å tilordne attributtgrupper til kategorier i hierarki for Commerce-produkt.
 
@@ -200,7 +203,7 @@ Følg denne fremgangsmåten for å tilordne attributtgrupper til kategorier i hi
     3. Velg kategorinoden **Tilbehør** velg kategorien **Moteriktige solbriller** og på hurtigfanen **Kanalproduktattributter** Velger du **Inkluder attributt** for hvert attributt.
     4. Velg kategorinoden **Herreklær**, så kategorien **Bokser**, og på hurtigfanen **Kanalproduktattributter** Velger du **Inkluder attributt** for hvert attributt.
 
-![Kanalkategorier og produktattributter - Attributtgrupper.](media/CCPAttrGrp.png)
+![Kanalkategorier og produktattributter - Attributtgrupper](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Overstyre attributtverdier
 
@@ -214,7 +217,7 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 4. Velg det nødvendige produktet i rutenettet. I handlingsruten, i **Produkt**-kategorien og **Oppsett**-gruppen, velger du **Produktattributter**.
 5. Marker et attributt i venstre rute, og oppdater deretter verdien i den høyre ruten.
 
-![Siden med produktdetaljert – Produktattributtgrupper.](media/ProdDetailsProdAttrValues.png)
+![Siden med produktdetaljert – Produktattributtgrupper](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Overstyre attributtverdier for produkter i en katalog
 
@@ -233,7 +236,7 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
     > [!NOTE]
     > Hvis delte produktmedier og delte produktattributter opprettes, gjelder de for alle produkter.
 
-![Produktattributtverdi for grupper.](media/CatalogProdAttrValues.png)
+![Produktattributtverdi for grupper](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Overstyre attributtverdier for produkter i en kanal
 
@@ -254,6 +257,3 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 
     > [!NOTE]
     > Hvis delte produktmedier og delte produktattributter opprettes, gjelder de for alle produkter.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

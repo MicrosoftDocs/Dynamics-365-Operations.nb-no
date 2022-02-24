@@ -1,33 +1,31 @@
 ---
-title: Behandle endringer i levetidshendelse
-description: Dette emnet beskriver hvordan du behandler endringer i livshendelser i Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 08/23/2021
+title: Behandle endringer i levetidshendelser
+description: Behandle endringer i levetidshendelser i Microsoft Dynamics 365 Human Resources.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb894d9886c095d760efe66abcf773a975a99caa
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 39d1e94347809a1756fc4f66e5edc345c70eaf39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067610"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419844"
 ---
-# <a name="process-life-event-changes"></a>Behandle endringer i levetidshendelse
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="process-life-event-changes"></a>Behandle endringer i levetidshendelser
 
 Behandle endringer i levetidshendelser i Microsoft Dynamics 365 Human Resources for to endringer i levetidshendelse:
 
@@ -54,6 +52,3 @@ Behandle endringer i levetidshendelser i Microsoft Dynamics 365 Human Resources 
    4. Velg **OK**. Prosessen vil kjøre med parameterne du angir.
 
 4. Velg **OK**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

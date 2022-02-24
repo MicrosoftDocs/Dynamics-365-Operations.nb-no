@@ -1,42 +1,36 @@
 ---
-title: Opprett dekningsalternativer
-description: Dette emnet beskriver dekningsalternativene i Microsoft Dynamics 365 Human Resources for en deltakers valg i en fordelsplan eller et program.
-author: twheeloc
-ms.date: 08/24/2021
+title: Opprette dekningsalternativer
+description: Dekningsalternativer i Microsoft Dynamics 365 Human Resources er nivåer av dekning for en deltakers valg i en fordelsplan eller et program.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 01eb0c56578cf6f6b070c4a05768ec5361993555
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8690dbe00c2316ccf745f5222c3cbaa9c3379f85
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065874"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419940"
 ---
-# <a name="create-coverage-options"></a>Opprett dekningsalternativer
+# <a name="create-coverage-options"></a>Opprette dekningsalternativer
 
+Dekningsalternativer i Microsoft Dynamics 365 Human Resources er nivåer av dekning for en deltakers valg i en fordelsplan eller et program. Dekningsalternativer kan for eksempel inkludere **Bare ansatte** for en medisinsk plan, eller **2x lønn** for en forsikringsplan for livstid. Når det er definert, kan du bruke alternativer for fordelsdekning på nytt. Du kan knytte et alternativ til én eller flere planer.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Når du har definert dekningsalternativer, knytter du dekningsalternativene til en fordelsplantype. Plantypen knyttes deretter til en fordelsplan eller et program. Dekningsalternativer som er knyttet til en plantype, er tilgjengelige for alle planer som opprettes med denne plantypen. 
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Dekningsalternativer bestemmer hvem som bør dekkes, eller hvor mye dekning som er tilgjengelig i en forsikringsplan. For en medisinsk plan kan du for eksempel ha et **Bare ansatt**-alternativ, et **Ansatt + 1**-alternativ, og et **Familie**-alternativ. For livsforsikring kan du tilby dekning for **1 x lønn** eller **2 x lønn**.
-
-Når alternativer for fordelsdekning er definert, kan du bruke dem på nytt. Du kan knytte et alternativ til én eller flere planer.
-
-> [!IMPORTANT]
-> Når du har definert dekningsalternativer, knytter du dem til en fordelsplantype. Plantypen knyttes deretter til en fordelsplan eller et program. Dekningsalternativer som er knyttet til en plantype, er tilgjengelige for alle planer som opprettes med denne typen.
-
-## <a name="create-coverage-options"></a>Opprette dekningsalternativer
 1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Dekningsalternativer**.
 
 2. Velg **Ny**.
@@ -47,9 +41,9 @@ Når alternativer for fordelsdekning er definert, kan du bruke dem på nytt. Du 
    | --- | --- |
    | **Dekningsalternativ** | Et unikt navn på dekningsalternativet. |
    | **Beskrivelse** | En beskrivelse av dekningsalternativet. |
-   | **Dekningskode** | Dekningskoder som tilordner minimums- og maksimumsbeløp for hver enkelt berettigede, dekkede persontype. En dekningskode angir hvem som er dekket av eller hvor mye dekning som er tillatt for en plantype. Du kan uttrykke dekningsbeløpet som et valutabeløp eller en prosent. For eksempel:<ul><li>**Emp+1** – for å være kvalifisert må den ansatte ha én avhengig valgt (hvis flere er valgt, er de ikke lenger kvalifisert).</li><li>**Emp+family** – for å være kvalifisert må den ansatte ha minst to avhengige valgt.</li></ul> |
+   | **Dekningskode** | Dekningskoder som tilordner minimums- og maksimumsbeløp for hver enkelt berettigede, dekkede persontype. En dekningskode angir hvem som er dekket av eller hvor mye dekning som er tillatt for en plantype. Du kan uttrykke dekningsbeløpet som et valutabeløp eller en prosent. For eksempel:</br></br>- **Emp+1** – for å være kvalifisert må den ansatte ha én avhengig valgt (hvis flere er valgt, er de ikke lenger kvalifisert).</br></br>- **Emp+familie** – for å være kvalifisert må den ansatte ha minst to avhengige valgt. |
    | **Maksimalt antall** | Det maksimale antall avhengige. |
-   | **Status** | Statusen for dekningsalternativet. Hvis statusen for dekningsalternativet er satt til **Inaktiv**, kan ikke dekningsalternativet velges på plantyper. |
+   | **Status** | Statusen for dekningsalternativet. Hvis statusen for dekningsalternativet er satt til Inaktiv, kan ikke dekningsalternativet velges på plantyper. |
    | **Prosent** | Prosentbeløpet. Dette feltet er bare aktivt hvis % x lønn ble valgt i Dekningskode-feltet. |
    | **Divisor** | Divisoren som skal brukes i beregningen når du velger dekningskoden % x lønn. |
    | **Minste prosentandel** | Minimumsprosenten når du velger kode for prosentdekning. |
@@ -61,10 +55,7 @@ Når alternativer for fordelsdekning er definert, kan du bruke dem på nytt. Du 
 
    | Felt | Beskrivelse |
    | --- | --- |
-   | **Tillat bidragsbeløp fra ansatt** | Angir om ansatte skal kunne endre dekningsbeløpet i fordeler selvbetjent når de velger fordeler. Hvis du merker av i denne avmerkingsboksen, beregner systemet fordelsplanparametere basert på dekningsbeløpet den ansatte legger inn i fordeler selvbetjent. |
-   | **Tillat dekningsbeløp fra ansatt** | Angir om ansatte skal kunne endre dekningsbeløpet i fordeler selvbetjent når de velger fordeler. Hvis du merker av i denne avmerkingsboksen, beregner systemet fordelsplanparametere basert på dekningsbeløpet den ansatte legger inn på i Ansattselvbetjening. |
+   | **Tillat bidragsbeløp fra ansatt** | Angir om ansatte skal kunne endre dekningsbeløpet på fordeler selvbetjent når de velger fordeler. Hvis du merker av i denne avmerkingsboksen, beregner systemet fordelsplanparametere basert på dekningsbeløpet den ansatte legger inn på fordeler selvbetjent. |
+   | **Tillat dekningsbeløp fra ansatt** | Angir om ansatte skal kunne endre dekningsbeløpet på fordeler selvbetjent når de velger fordeler. Hvis du merker av i denne avmerkingsboksen, beregner systemet fordelsplanparametere basert på dekningsbeløpet den ansatte legger inn på i Ansattselvbetjening. |
 
 6. Velg **Lagre**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

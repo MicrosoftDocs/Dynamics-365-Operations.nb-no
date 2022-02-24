@@ -2,24 +2,26 @@
 title: Startside for mobilapp
 description: Dette emnet beskriver Finance and Operations-mobilappen (Dynamics 365) og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
+ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729714"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683464"
 ---
 # <a name="mobile-app-home-page"></a>Startside for mobilapp
 
@@ -27,7 +29,8 @@ ms.locfileid: "6729714"
 
 Dette emnet beskriver **Finance and Operations-mobilappen (Dynamics 365)** og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 
-## <a name="overview"></a>Oversikt
+<a name="overview"></a>Oversikt
+--------
 
 Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på mobilenheter. Når IT-administrator har aktivert mobile arbeidsområder for organisasjonen, kan brukere logger på appen og umiddelbart begynne å kjøre forretningsprosesser fra mobilenhetene. Mobilappen inneholder følgende funksjoner som kan hjelpe med å øke produktiviteten:
 
@@ -39,7 +42,7 @@ Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på
 ## <a name="elements-of-the-mobile-app"></a>Elementer i mobilappen
 Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, arbeidsområder, sider og handlinger. 
 
-[![Navigasjonsbegreper i mobilappen.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Navigasjonsbegreper i mobilappen](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Når du starter appen, går du til **instrumentbord**.
 2. På instrumentbordet kan du se en liste over **arbeidsområder** som er publisert.
@@ -53,7 +56,7 @@ Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, 
 ## <a name="implementation-process"></a>Implementeringsprosess
 Illustrasjonen nedenfor viser prosessen med implementing av både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder. 
 
-[![Implementeringsprosess for mobilapper.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Implementeringsprosess for mobilapper](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å implementere både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder. Tallene i den første kolonnen samsvarer med de nummererte trinnene i den forrige illustrasjonen.
 
@@ -90,8 +93,8 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilt arbeidsområde for lagerbeholdning</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobile arbeidsområder for salgsordrer</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilt arbeidsområde for leverandørsamarbeid</a></li>
-<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
-<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Mobilt arbeidsområde for reiseregninger og utlegg</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilt arbeidsområde for registrering av prosjekttid</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobilt arbeidsområde for reiseregninger og utlegg</a></li>
 
 </ul></td>
 </tr>
@@ -148,6 +151,3 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 
 ## <a name="troubleshooting"></a>Feilsøking
 [Ressurser for mobil plattform](platform/mobile-platform-home-page.md#troubleshooting-the-app)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

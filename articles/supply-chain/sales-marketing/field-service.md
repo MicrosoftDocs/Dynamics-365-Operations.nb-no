@@ -1,41 +1,45 @@
 ---
 title: Oversikt over integrering med Microsoft Dynamics 365 Field Service
 description: Dette emnet inneholder en oversikt over integreringen med Microsoft Dynamics 365 Field Service.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9428308211d51e7de8c61fb9aadef6ce1fd9886f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 18eef310470cafd9d59bb1c848bbaeb8bf5b9fa1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062681"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528905"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Oversikt over integrering med Microsoft Dynamics 365 Field Service
 
 [!include[banner](../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Supply Chain Management gjør det mulig å synkronisere forretningsprosesser mellom Dynamics 365 Supply Chain Management og Dynamics 365 Field Service. Intregrasjonsscenarioene konfigureres ved hjelp av utvidbare Dataintegrator-maler og Microsoft Dataverse for å gjøre det mulig med synkronisering av forretningsprosesser.
-Standardmaler kan brukes til å lage tilpassede integreringsprosjekter der flere standard og egendefinerte kolonner og tabeller kan tilordnes for å justere integreringen og oppfylle spesifikke forretningsbehov. 
+Supply Chain Management gjør det mulig å synkronisere forretningsprosesser mellom Dynamics 365 Supply Chain Management og Dynamics 365 Field Service. Intregrasjonsscenarioene konfigureres ved hjelp av utvidbare Dataintegrator-maler og Common Data Service for å gjøre det mulig med synkronisering av forretningsprosesser.
+Standardmaler kan brukes til å lage tilpassede integreringsprosjekter der flere standard og egendefinerte felt, og enheter, kan tilordnes for å justere integreringen og oppfylle spesifikke forretningsbehov. 
 
 Field Service-integreringen bygger på eksisterende kundeemne til kontanter-funksjonalitet.
 
-![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/field-service-integration.png)
+![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/field-service-integration.png)
 
-Den første fasen av integreringen mellom Field Service og Supply Chain Management fokuserer på kunne la arbeidsordrer og avtaler i Field Service faktureres i Supply Chain Management. Den støttede flyten starter i Field Service, der informasjonen fra arbeidsordrer synkroniseres til Supply Chain Management som salgsordrer. I Supply Chain Management faktureres salgsordrene for å generere fakturadokumenter. I tillegg synkroniseres informasjonen fra avtalefakturaer i Field Service til Supply Chain Management. Microsoft Dynamics 365 Data integrator synkroniserer data ved hjelp av prosjekter som kan tilpasses. Standardmaler kan brukes til å lage tilpassede integreringsprosjekter der flere standard og egendefinerte kolonner og tabeller kan tilordnes for å justere integreringen og oppfylle spesifikke behov.
+Den første fasen av integreringen mellom Field Service og Supply Chain Management fokuserer på kunne la arbeidsordrer og avtaler i Field Service faktureres i Supply Chain Management. Den støttede flyten starter i Field Service, der informasjonen fra arbeidsordrer synkroniseres til Supply Chain Management som salgsordrer. I Supply Chain Management faktureres salgsordrene for å generere fakturadokumenter. I tillegg synkroniseres informasjonen fra avtalefakturaer i Field Service til Supply Chain Management. Microsoft Dynamics 365 Data integrator synkroniserer data ved hjelp av prosjekter som kan tilpasses. Standardmaler kan brukes til å lage tilpassede integreringsprosjekter der flere standard og egendefinerte felt, og enheter, kan tilordnes for å justere integreringen og oppfylle spesifikke behov.
 
 Den første fasen av integreringen mellom Field Service og Supply Chain Management gjør det mulig med synkronisering av følgende elementer:
 
@@ -57,7 +61,7 @@ Den ekstra funksjonaliteten i andre fase fokuserer på å gi teknikere innsikt i
 - Supply Chain Management-prosjekter koblet til Dynamics 365 Field Service-arbeidsordrer
 - Dynamics 365 Field Service-arbeidsordrer med kobling til Supply Chain Management-prosjekter bruker dette prosjektnummeret i salgsordren for å tillate fakturering fra prosjektet. 
 
-![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service, inkludert lager- og prosjektinformasjon.](./media/FSv2overview.png)
+![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Den andre fasen av integreringen mellom Field Service og Supply Chain Management gjør det mulig med synkronisering med følgende maler:
 - Lagre (Supply Chain Management til Field Service) – Lagre fra Supply Chain Management til Field Service [Avansert spørring] 
@@ -65,7 +69,7 @@ Den ekstra funksjonaliteten i andre fase fokuserer på å gi teknikere innsikt i
 - Lagerjustering (Field Service til Supply Chain Management) – Lagerjusteringer fra Field Service til Supply Chain Management [Avansert spørring] 
 - Lageroverføringer (Field Service til Supply Chain Management) – Lageroverføringer fra Field Service til Supply Chain Management [Avansert spørring] 
 - Prosjekter (Supply Chain Management til Field Service) – Prosjektliste fra Supply Chain Management til Field Service 
-- Arbeidsordrer med prosjekt (Field Service til Supply Chain Management) – Arbeidsordrer i Field Service til salgsordrer i Supply Chain Management, med støtte for prosjekt [Avansert spørring] 
+- Arbeidsordrer med prosjekt (Field Service til Supply Chain Management) - Arbeidsordrer i Field Service til salgsordrer i Supply Chain Management, med støtte for prosjekt [Avansert spørring] 
 - Field Service-produkter med lagerenhet (Supply Chain Management til Sales) – Salgbare frigitte produkter i Supply Chain Management til Sales-produkter for Field Service, inkludert lagerenhet 
 
 ## <a name="system-requirements"></a>Systemkrav
@@ -81,6 +85,3 @@ For å bruke Field Service-integrasjonsløsningen må du installere følgende ko
 - Field Service (versjon 8.2.0.286) eller en nyere versjon på Dynamics 365 9.1.x – utgitt november 2018
 - Prospect to Cash (P2C)-løsningen for Dynamics 365, versjon 1.15.0.1 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Field Service Integration, Project and Inventory-løsningen for Dynamics 365, versjon 2.0.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

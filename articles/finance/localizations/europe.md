@@ -1,23 +1,26 @@
 ---
 title: Oversikt over Europa
 description: Dette emnet inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 Finance for Europa.
-author: kfend
-ms.date: 01/15/2022
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Operations
 ms.search.region: global
-ms.author: kfend
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982100"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512217"
 ---
 # <a name="europe-overview"></a>Oversikt over Europa
 
@@ -38,7 +41,6 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Rapportering av EU-salgsliste](emea-eu-sales-list.md)
 - [Valutakursjusteringer](emea-exchange-rate-adjustments.md)
 - [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md)
-- [Finansretningslinjer (globalisering) om Brexits innvirkning](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integrering av økonomisk service (ESR)](emea-fiscal-service-integration.md)
 - [Avhending av anleggsmidler i Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generere et overføringsdokument for en intern lageroverføring](tasks/transfer-document-internal-inventory-transfer.md)
@@ -63,7 +65,6 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Fakturabehandling](emea-invoice-processing.md)
 - [Utstede et EU-innførselssertifikat](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Standarder som støttes for elektronisk fakturering](emea-oioubl-standards-electronic-invoicing.md)
-- [Tvunget generering av elektroniske fakturaer](emea-eur-forced-einvoices.md)
 - [Opprinnelig fakturareferanse (Øst-Europa)](tasks/ee-00004-original-invoice-reference.md)
 - [Partssøk ved hjelp av mva-ID](tasks/eur-00015-party-search-vat-id.md)
 - [Verktøy for generering av betalingsreferanse](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -93,13 +94,8 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
   - [Opprette og sende inn mva-rapport](tasks/create-submit-vat-report.md)
   - [Vise transaksjoner ved utligning for Øst-Europa](emea-transactions-settlement-form.md)
   - [Avgiftspunktdato (dato i mva-register)](emea-tax-point-date.md)
-  - [Dato for mva-register for leverandør](emea-date-vendor-VAT-register.md)
-- [Utvidelse av funksjonen Finansårsak](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Oversikt over elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
-- [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Oversikt over elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)

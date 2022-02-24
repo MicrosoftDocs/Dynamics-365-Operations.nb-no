@@ -86,6 +86,3 @@ I denne ukens utgivelse synkroniseres adressedata nå med Common Data Service ve
 ### <a name="print-performance-reviews"></a>Skrive ut prestasjonsvurderinger
 
 Se [Skrive ut prestasjonsvurderinger](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) i Dynamics 365: 2019-frigivelsesbølge 2-planen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

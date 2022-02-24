@@ -1,31 +1,37 @@
 ---
-title: Oversikt over redigering av side
+title: Oversikt over redigeringsside
 description: Dette emnet inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
 author: brendans
+manager: annbe
 ms.date: 10/31/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414623"
 ---
-# <a name="authoring-page-overview"></a>Oversikt over redigering av side
+# <a name="authoring-page-overview"></a>Oversikt over redigeringsside
 
   
  [!include [banner](includes/banner.md)]
 
 Dette emnet inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Webområder kan opprettes for å støtte ulike forretningsbehov. De kan representere en hel bedrift, tilby en enkelt kanal i firmaet eller målrette en bestemt målgruppe eller et spesifikt segment av en målgruppe. Det kan for eksempel hende at en klesprodusent har et webområde som viser frem alle merkene i selskapet. Den samme klesprodusenten kan da ha et separat webområde for hver av disse merkene, og også et sett med webområder som har luksus, utendørsmote og barnemote.
 
@@ -39,7 +45,7 @@ For øyeblikket består redigeringssiden av de følgende delene.
 
 Følgende illustrasjon viser redigeringssiden.
 
-![Dynamics 365 Commerce-redigeringsside.](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce-redigeringsside](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Bruk Hjem-knappen til å velge et verktøy
 
@@ -116,6 +122,3 @@ Når redigeringsverktøyet er lastet, kan du velge **Hjem** for å gå tilbake t
 [Vurderinger for søkemotoroptimalisering (SEO) for området](search-engine-optimization-considerations.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,24 +2,27 @@
 title: Kassemodul
 description: Dette emnet beskriver hvordan du legger til en kassemodul på en side og angir de nødvendige egenskapene.
 author: anupamar-ms
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28d58caba71ea98ccf163e756e879587aa254bb3
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715512"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4414802"
 ---
 # <a name="checkout-module"></a>Kassemodul
 
@@ -27,13 +30,15 @@ ms.locfileid: "6715512"
 
 Dette emnet beskriver hvordan du legger til en kassemodul på en side og angir de nødvendige egenskapene.
 
+## <a name="overview"></a>Oversikt
+
 En kassemodul er en spesialcontainer som er vert for alle modulene som kreves for å opprette en ordre. Den viser en trinnvis flyt som en kunde bruker til å angi all relevant informasjon for å foreta et kjøp. Den henter forsendelsesadressen, leveringsmetoden og faktureringsinformasjonen. Den gir også et ordresammendrag og annen informasjon som er knyttet til en kundeordre.
 
 En kassemodul gjengir data basert på handlekurv-IDen. Denne handlekurv-IDen lagres som en informasjonskapsel i leseren. En handlekurv-ID kreves for å gjengi informasjon i kassemodulen, for eksempel varene i ordren, totalbeløpet og rabattene. 
 
 Bildet nedenfor viser et eksempel på en Fabrikam-kassemodul på en kasseside.
 
-![Eksempel på en kassemodul.](./media/Checkout.PNG)
+![Eksempel på en kassemodul](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Egenskaper i kassemodulen
 
@@ -52,13 +57,13 @@ En kassemodul viser et ordresammendrag og inneholder funksjonalitet for å legge
 
     Bildet nedenfor viser et eksempel på en leveringsadressemodul på en kasseside.
 
-    ![Eksempel på en leveringsadressemodul.](./media/ecommerce-shippingaddress.PNG)
+    ![Eksempel på en leveringsadressemodul](./media/ecommerce-shippingaddress.PNG)
 
 - **Leveringsalternativer** – I denne modulen kan en kunde velge en leveringsmodus for en ordre. Hvis du vil ha mer informasjon om denne modulen, kan du se [Modul for leveringsalternativer](delivery-options-module.md).
 
     Bildet nedenfor viser et eksempel på en leveringsalternativer-modul på en kasseside.
  
-    ![Eksempel på en modul for leveringsalternativer.](./media/ecommerce-deliveryoptions.PNG)
+    ![Eksempel på en modul for leveringsalternativer](./media/ecommerce-deliveryoptions.PNG)
 
 - **Container for betalingsdel** – Denne modulen er en container som du kan sette flere moduler i for å opprette en del innenfor betalingsflyten. Du kan for eksempel plassere alle betalingsrelaterte moduler i denne containeren for å vise dem som én inndeling. Denne modulen har bare innvirkning på oppsettet for flyten.
 
@@ -70,7 +75,7 @@ En kassemodul viser et ordresammendrag og inneholder funksjonalitet for å legge
 
     Følgende bilde viser et eksempel på en gavekort-, fordelspoeng- og betalingsmodul på en kasseside.
 
-    ![Eksempel på en gavekort-, fordelspoeng- og betalingsmodul på en kasseside.](./media/ecommerce-payments.PNG)
+    ![Eksempel på en gavekort-, fordelspoeng- og betalingsmodul på en kasseside](./media/ecommerce-payments.PNG)
 
 - **Kontaktinformasjon** – Ved hjelp av denne modulen kan en kunde legge til eller endre kontaktinformasjonen (e-postadresse) for en ordre.
 
@@ -80,7 +85,7 @@ En kassemodul viser et ordresammendrag og inneholder funksjonalitet for å legge
 
     Bildet nedenfor viser et eksempel på vilkår på en kasseside.
 
-    ![Eksempel på vilkår på en betalingsside.](./media/ecommerce-checkout-terms.PNG)
+    ![Eksempel på vilkår på en betalingsside](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
 
@@ -122,6 +127,3 @@ Hvis du vil legge til en kassemodul på en ny side og angi de nødvendige egensk
 [Ordredetaljermodul](order-confirmation-module.md)
 
 [Gavekortmodul](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,25 +1,27 @@
 ---
 title: Mobilt arbeidsområde for leverandørsamarbeid
 description: Dette emnet gir informasjon om det mobile arbeidsområdet for leverandørsamarbeid. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577030"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020842"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
@@ -57,7 +59,7 @@ Det mobile arbeidsområdet for **leverandørsamarbeid** gjør det mulig for en l
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Forutsetninger hvis du bruker Supply Chain Management
-Hvis Supply Chain Management har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Hvis Supply Chain Management har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 
@@ -77,7 +79,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 <td>KB 3216943 er en binær oppdatering som er nødvendig hvis du bruker plattformoppdatering 3. Systemansvarlig må følge disse trinnene for å implementere denne KB-en.
 <ol>
 <li>Laste ned KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Installer den binære oppdateringen, som leveres som en distribuerbar pakke. Hvis du vil ha informasjon om hvordan du bruker en distribuerbar pakke, kan du se <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Bruke en distribuerbar pakke</a>.</li>
+<li>Installer den binære oppdateringen, som leveres som en distribuerbar pakke. Hvis du vil ha informasjon om hvordan du bruker en distribuerbar pakke, kan du se <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Bruke en distribuerbar pakke</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +87,14 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 <td>Systemansvarlig</td>
 <td>KB 4013633 er en X++-oppdatering eller metadatahurtigreparasjon som inneholder det mobile arbeidsområdet for <strong>lagerbeholdning</strong>. Systemadministrator må følge trinnene nedenfor for å implementere KB 4013633.
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Last ned hurtigreparasjonen for metadata fra LCS</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installer hurtigreparasjonen for metadata</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Bruk den distribuerbare pakken</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Last ned hurtigreparasjonen for metadata fra LCS</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installer hurtigreparasjonen for metadata</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Bruk den distribuerbare pakken</a>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Det mobile arbeidsområdet for <strong>leverandørsamarbeid</strong> må publiseres.</td><td>Systemansvarlig</td>
-<td>Se <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere et mobilt arbeidsområde</a>.</td>
+<td>Se <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publisere et mobilt arbeidsområde</a>.</td>
 </tr>
 <tr class="even">
 <td>Leverandørbrukeren må ha tilgang til webgrensesnittet for leverandørsamarbeid i webklienten og må angi en bruker for leverandørsamarbeid.</td><td>Innkjøpsansvarlige og systemansvarlig</td>
@@ -120,12 +122,12 @@ Laste ned og installere Finance and Operations-mobilappen:
 4.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 5.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
-    [![Hent for å oppdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Bruk det mobile arbeidsområdet for leverandørsamarbeid
 Når du velger arbeidsområdet for **leverandørsamarbeid**, vises følgende alternativer.
 
-![Mobilt arbeidsområde for leverandørsamarbeid.](./media/vendor-collaboration-mobile-app.png)
+![Mobilt arbeidsområde for leverandørsamarbeid](./media/vendor-collaboration-mobile-app.png)
 
 Arbeidsområdet for **leverandørsamarbeid** inneholder følgende sider.
 
@@ -167,6 +169,3 @@ Alle endringer som er gjort i bestillingslinjesvaret, vises. Imidlertid blir ikk
 
 ### <a name="open-confirmed-orders"></a>Åpne bekreftede ordrer
 Når bestillingen er bekreftet av kunden (noe som betyr at status for bestillingen er endret til **Bekreftet**-status), vises den i den åpne bekreftede bestillingen. Den forblir i listen til den er registrert som mottatt av kunden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

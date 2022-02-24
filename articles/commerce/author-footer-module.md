@@ -2,24 +2,27 @@
 title: Bunntekstmodul
 description: Dette emnet dekker bunntekstmoduler og hvordan du redigerer dem i Dynamics 365 Commerce.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 42a71ea9498461febca80952acc3158517918332
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719992"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414624"
 ---
 # <a name="footer-module"></a>Bunntekstmodul  
 
@@ -27,11 +30,13 @@ ms.locfileid: "6719992"
 
 Dette emnet dekker bunntekstmoduler og beskriver hvordan du oppretter dem i Microsoft Dynamics 365 Commerce.
 
+## <a name="overview"></a>Oversikt
+
 Bunntekstmodulen er en spesialcontainer som brukes til å være vert for modulene som vises i bunnteksten på siden. Den kan for eksempel inneholde koblinger til ulike sider på området, for eksempel sider for **Kontakt oss** og **Butikkpolicyer**.
 
 Bildet nedenfor viser et eksempel på en bunntekstmodul på en områdeside.
 
-![Eksempel på en bunntekstmodul.](./media/ecommerce-footer.PNG)
+![Eksempel på en bunntekstmodul](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Egenskaper for bunntekstmodul 
 
@@ -82,6 +87,3 @@ Ved å legge til fragmentet i sidemaler garanteres det at bunnteksten gjengis p�
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

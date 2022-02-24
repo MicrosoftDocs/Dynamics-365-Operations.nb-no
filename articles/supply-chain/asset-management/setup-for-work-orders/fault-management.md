@@ -1,10 +1,12 @@
 ---
 title: Feilstyring
 description: Dette emnet beskriver feilstyring i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetFaultArea, EntAssetFaultDesigner, EntAssetFaultCopyFromObjectType, EntAssetFaultRemedy, EntAssetObjectFaultRelationRequestInfoPart, EntAssetObjectFaultRelationWorkOrderInfoPart, EntAssetFaultCreateCombinations, EntAssetObjectFaultSymptom, EntAssetObjectFaultSymptomListPage, EntAssetFaultType, EntAssetFaultSymptom, EntAssetFaultCause
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 149d4fc8026a2a1878155d2b708cf3a79dd0e5af966db4e7f9339d8ca582da70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 176fbebcf88e7557bf2bafc56524cd2ec015220e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711959"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020970"
 ---
 # <a name="fault-management"></a>Feilstyring
 
@@ -106,7 +108,7 @@ I feilutformingen definerer du feildata for anleggsmiddeltyper.
 
 7. Velg **Lagre** for å lagre endringene.
 
-![Siden Feilutforming.](media/21-setup-for-work-orders.png)
+![Siden Feilutforming](media/21-setup-for-work-orders.png)
 
 ## <a name="create-fault-causes"></a>Opprette feilårsaker
 
@@ -130,6 +132,3 @@ Følg denne fremgangsmåten for å opprette en liste over forslag til løsning o
 
 > [!NOTE]
 > Du kan endre navnene på feilsymptomer, områder, typer, årsaker og løsninger etter behov. Navneendringene gjenspeiles automatisk i relaterte feilregistreringer.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

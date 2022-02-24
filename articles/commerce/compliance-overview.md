@@ -2,25 +2,29 @@
 title: Oversikt over samsvar
 description: Dette emnet er en oversikt over samsvarsveiledningen som leveres med Microsoft Dynamics 365 Commerce, for å hjelpe deg med å gjøre firmaets nettsteder kompatible.
 author: BrianShook
+manager: annbe
 ms.date: 01/08/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3d90bbce5949468966d995710cdad69484aa90c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983298"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414643"
 ---
-# <a name="compliance-overview"></a>Samsvarsoversikt
+# <a name="compliance-overview"></a>Oversikt over samsvar
 
 
 [!include [banner](includes/banner.md)]
@@ -42,6 +46,3 @@ Hvis du vil vite mer om de grunnleggende prinsippene som Microsoft bruker, kan d
 [Legge til en side for personvernpolicy](add-privacy-page.md)
 
 [Erstatte bruker-IDer knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

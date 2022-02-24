@@ -1,54 +1,55 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (06. august 2020)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 6. august 2020.
-author: andreabichsel
-ms.date: 08/06/2020
+author: darinkramer
+manager: AnnBe
+ms.date: 8/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 94ec9b44e21715363116427839badacd14a3d6f8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062192"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528431"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (06. august 2020)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Human Resources. Endringer gjelder for Build-nummeret 8.1.3444. Tallene i parentes i noen overskrifter refererer til støttenumre i LCS.
 
 ## <a name="platform-update-1001236-is-now-available"></a>Platform Update 10.0.12(36) er nå tilgjengelig
 
-Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.12 av økonomi- og driftsapper (august 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.12 av Finance and Operations-apper (august 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Data Management Framework (DMF)-enheter for Fordelsbehandling
  
 Enheter for fordelsstyring frigis. DMF-enheter gjør det mulig å importere og eksportere data slik at du enkelt kan konfigurere fordelsbehandling. En mal for fordelsbehandling vil være tilgjengelig for å flytte data. Malen eksporterer og importerer data på en sekvensiell måte for å respektere dataavhengigheter. Hvis du vil ha mer informasjon, kan du se:
 
-- [Støtte for DMF-enheter](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) i Dynamics 365-planen for lanseringsbølge 1 i 2020
-- [Oversikt over databehandling](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
+- [Støtte for DMF-enheter](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) i Dynamics 365-planen for lanseringsbølge 1 i 2020
+- [Oversikt over databehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire oppretter en arbeidsflyt for innkjøp og salg av permisjonsforespørsler (446557)
 
 Hvis du vil ha mer informasjon, kan du se:
 
-- [Tillate ansatte å kjøpe og selge](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365-planen for lanseringsbølge 2 i 2020
-- [Administrere policyer for kjøp og salg av permisjon](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
-- [Kjøp og selg permisjon](./hr-employee-self-service-buy-sell-leave.md)
+- [Tillate ansatte å kjøpe og selge](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365-planen for lanseringsbølge 2 i 2020
+- [Administrere policyer for kjøp og salg av permisjon](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
+- [Kjøp og selg permisjon](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>Postadresser for arbeidere v2-enheten har tilgang på tvers av juridiske enheter med begrenset tilgang (459126)
@@ -61,7 +62,7 @@ Når du bruker plassholderen til å åpne en ytelsesgjennomgang i gjennomgangsar
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>Nye enheter for kjøp og salg av permisjon (473180)
 
-Enheter for dataadministrasjonsrammeverket er nå tilgjengelige for kjøp og salg av permisjon. Hvis du vil ha mer informasjon, kan du se [Oversikt over databehandling](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+Enheter for dataadministrasjonsrammeverket er nå tilgjengelige for kjøp og salg av permisjon. Hvis du vil ha mer informasjon, kan du se [Oversikt over databehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>Når du viser postinformasjon og bruker avanserte filtre, kan en bruker få tilgang til andre ansattes poster (472490)
 
@@ -95,9 +96,9 @@ Med denne endringen er oppdaging av sirkelreferanse i stillingshierarki begrense
 
 Noen organisasjoner tilbyr en fordel som gjør det mulig for ansatte å kjøpe eller selge permisjon. Denne prosessen behandles ofte manuelt. Denne funksjonen automatiserer behandling av policyer og forespørsler for personalavdelingen. Den strømlinjeformer permisjonsstyringsprosessen og bidrar til å eliminere feil. Hvis du vil ha mer informasjon, kan du se:
 
-- [Tillate ansatte å kjøpe og selge](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365-planen for lanseringsbølge 2 i 2020
-- [Administrere policyer for kjøp og salg av permisjon](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
-- [Kjøp og selg permisjon](./hr-employee-self-service-buy-sell-leave.md)
+- [Tillate ansatte å kjøpe og selge](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) i Dynamics 365-planen for lanseringsbølge 2 i 2020
+- [Administrere policyer for kjøp og salg av permisjon](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
+- [Kjøp og selg permisjon](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Permisjonsavsetning for ett enkelt firma eller én enkelt plan
 
@@ -125,15 +126,15 @@ Du kan opprette en regel for å utsette permisjonsavsetninger for ansatte med pe
 
 Du kan gjøre felt obligatoriske ved hjelp av tilpasningsfunksjonene i Human Resources. Denne funksjonen krever **Lagrede visninger**. Hvis du vil ha mer informasjon om lagrede visninger, kan du se:
 
-- [Lagrede visninger – generell tilgjengelighet](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365-planen for lanseringsbølge 2 i 2020
-- [Bygge skjemaer som benytter lagrede visninger fullt ut](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
+- [Lagrede visninger – generell tilgjengelighet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) i Dynamics 365-planen for lanseringsbølge 2 i 2020
+- [Bygge skjemaer som benytter lagrede visninger fullt ut](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
 
 ### <a name="human-resources-application-in-teams"></a>Human Resources-søknad i Teams
 
 Ansatte kan se og be om fravær fra jobb i Microsoft Teams. De kan kommunisere med en robot for å opprette permisjonsforespørsler. Hvis du vil ha mer informasjon, kan du se:
 
-- [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 1 i 2020
-- [Human Resources-app i Teams](./hr-admin-teams-leave-app.md)
+- [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 1 i 2020
+- [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>DMF-enhet tilgjengelig for avsetningssuspensjoner
 
@@ -141,9 +142,9 @@ En DMF-enhet er nå tilgjengelig for avsetningssuspensjoner.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-## <a name="checklist-entities-included-in-dataverse"></a>Sjekklisteenheter inkludert i Dataverse
+## <a name="checklist-entities-included-in-common-data-service"></a>Sjekklisteenheter inkludert i Common Data Service
 
-Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Dataverse.
+Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Common Data Service.
 
 ## <a name="known-issues"></a>Kjente problemer
 
@@ -171,9 +172,6 @@ Arbeidsområdet **Funksjonsbehandling** viser kanskje funksjoner som er deaktive
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

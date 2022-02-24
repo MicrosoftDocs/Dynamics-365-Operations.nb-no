@@ -2,9 +2,11 @@
 title: Avstemme bankkontoutdrag med avansert bankavstemming
 description: Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 Finance. Dette emnet beskriver avstemmingsprosessen.
 author: saraschi2
+manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92c04a47b134584280736f4d3d2fa401d2a2a9b7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714454"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969434"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag ved hjelp av avansert bankavstemming
 
@@ -28,7 +30,8 @@ ms.locfileid: "6714454"
 
 Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Dynamics 365 Finance. Dette emnet beskriver avstemmingsprosessen.  
 
-## <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
+<a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
+-----------------------------------
 
 Du importerer bankkontoutdraget ved hjelp av handlingen **Importer utdrag** på siden **Bankkontoutdrag**. På bankkontoutdraget identifiseres bankkontoen av en kombinasjon av verdier som er angitt for bankkontodetaljene. Disse verdiene inkluderer banknavn, bankkontonummer, rutenummer, SWIFT-kode (Society for Worldwide Interbank Financial Telecommunication) og IBAN (International Bank Account nummer). 
 
@@ -92,6 +95,3 @@ Bankkontoutdragstransaksjoner du merket som **Ny** på avstemmingsregnearket, po
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -98,6 +98,3 @@ Et nytt alternativ lar ledere vise prestasjonen til både direkte underordnede o
 ### <a name="print-performance-reviews"></a>Skrive ut prestasjonsvurderinger
 
 Ansatte, ledere og Personale kan skrive ut prestasjonsvurderingen for en ansatt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

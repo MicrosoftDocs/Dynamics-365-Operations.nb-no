@@ -41,6 +41,3 @@ Nye alternativer er lagt til for permisjon og fravær (**Personale**-parametere)
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Arbeideransettelseshandlinger står fast i "Arbeidsflyt fullført"-tilstand
 Endringer er gjort for å løse et problem der et lite antall arbeidsprosesser ble fullført med en "Arbeidsflyt fullført"-status. Nye arbeidsflyter skal nå flyttes til en "Fullført"-tilstand når arbeidsflyten er fullført. Arbeidsflyter med en Arbeidsflyt fullført-status blir overført til en feilstatus for å tillate oppdatering eller fjerning hvis nødvendig. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

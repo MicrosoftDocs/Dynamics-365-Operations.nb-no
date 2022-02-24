@@ -46,6 +46,3 @@ Hvis du vil ha informasjon, kan du se delen "Gi tilgang til utviklingsmiljøet" 
 **Langsiktig løsning**
 
 Microsoft vurderer å tilordne de nødvendige rettighetene til Onboard og Attract automatisk når en bruker legges til i Human Resources.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

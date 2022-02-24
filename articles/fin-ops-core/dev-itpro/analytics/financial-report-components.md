@@ -1,10 +1,12 @@
 ---
 title: Komponenter for finansrapport
-description: Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering.
+description: Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Artikkelen beskriver hvordan du organiserer og låser byggeblokker og hvordan du arbeider med byggeblokkgrupper.
 author: aprilolson
+manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8512559ea33f16f3558b277999cc86240ee8277d1b3b0d6bf2aecba32df8e09f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761446"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682727"
 ---
 # <a name="financial-report-components"></a>Komponenter for finansrapport
 
@@ -73,8 +75,8 @@ Du kan vise alle byggeblokker som er tilordnet til en byggeblokkgruppe. Du kan o
 
 1. Klikk **Byggeblokkgrupper** på **Firma**-menyen i Rapportutforming.
 2. I dialogboksen **Byggeblokkgrupper** velger du byggeblokken som skal vises.
-3. Klikk på **Vis** for å åpne dialogboksen **Vis byggeblokkgruppe**, der du kan vise innholdet i byggeblokkgruppen.
-4. Klikk på **Lukk** for å lukke dialogboksene.
+3. Klikk **Vis** for å åpne dialogboksen **Vis byggeblokkgruppe**, der du kan vise innholdet i byggeblokkgruppen.
+4. Klikk **Lukk** for å lukke dialogboksene.
 
 ### <a name="export-a-building-block-group"></a>Eksportere en byggeblokkgruppe
 
@@ -85,7 +87,7 @@ Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en by
 3. I dialogboksen **Eksporter** velger rapportdefinisjonene som skal eksporteres:
 
     - Hvis du vil eksportere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
-    - Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle fanen og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten.
+    - Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle kategorien og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten.
 
     > [!NOTE]
     > Når du velger rapporter som skal eksporteres, velges de tilknyttede radene, kolonnene, trærne og dimensjonssettene.
@@ -93,7 +95,7 @@ Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en by
 4. Når du er ferdig med å velge elementene som skal eksporteres, velger **Eksporter**.
 5. I dialogboksen **Lagre som** velger du plasseringen byggeblokkgruppen skal eksporteres til.
 6. I **Filnavn**-feltet angir du et navn på filen. Rapportutforming legger automatisk til filtypen TDBX.
-7. Klikk på **Lagre**. Byggeblokkgruppen lagres på plasseringen som du angav.
+7. Klikk **Lagre**. Byggeblokkgruppen lagres på plasseringen som du angav.
 
 ### <a name="import-a-building-block-group"></a> Importere en byggeblokkgruppe
 
@@ -119,11 +121,8 @@ Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til bygg
 1. På **Verktøy**-menyen i Rapportutforming klikker du **Utsjekkede elementer**.
 2. Velg **Vis elementer fra alle brukere** i dialogboksen **Utsjekkede elementer**. Listen oppdateres for å vise alle byggeblokker som er sjekket ut, og brukerne som har sjekket dem ut.
 3. Merk en byggeblokk, og klikk deretter **Angre utsjekking**.
-4. Klikk på **Ja** for å sjekke inn byggeblokken.
+4. Klikk **Ja** for å sjekke inn byggeblokken.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

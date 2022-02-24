@@ -1,41 +1,40 @@
 ---
 title: Ytelsesstyring
-description: Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede.
-author: twheeloc
-ms.date: 08/26/2021
-ms.topic: overview
+description: Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.
+author: andreabichsel
+manager: AnnBe
+ms.date: 07/28/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
-ms.custom:
-- "221024"
-- intro-internal
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Talent
+ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa4d90d568697526adeef52443a01c3251696bf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984752"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419904"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.  
 
-Som diagrammet nedenfor viser, er det tre sider som brukes til å administrere prosessen:
+Som diagrammet nedenfor viser, er det tre sider som kan hjelpe deg med å administrere prosessen:
 
 -   Ytelsesjournal
 -   Mål
 -   Medarbeidersamtale
 
-Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. [![Oversikt over ytelsesprosess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. [![Oversikt over ytelsesprosess](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Ytelsesjournal
 
@@ -43,7 +42,7 @@ Som ansatt, før du fullfører vurderingen, samler du ofte informasjon om aktivi
 
 Det finnes to versjoner av ytelsesjournalen: ansattversjonen som er tilgjengelig via arbeidsområdet **Ansattselvbetjening** (**ESS**), og lederversjonen som er tilgjengelig via arbeidsområdet **Lederselvbetjening** (**MSS**). Ansatte kan opprette journaler for seg selv, og kan velge å dele dem med lederen. Ledere kan opprette journaler for teamet, og kan velge å dele dem med de ansatte. 
 
-Når **Ytelsesjournal** åpnes fra **ESS**-arbeidsområdet, kan du angi følgende informasjon:
+Når den åpnes fra **ESS**-arbeidsområdet, kan du angi følgende informasjon på siden til **ytelsesjournalen**:
 
 -   En tittel på aktiviteten
 -   En beskrivelse av aktiviteten, som inneholder detaljert informasjon om aktiviteten
@@ -57,7 +56,7 @@ Du kan også koble ytelsesjournalen til et eksternt webområde ved å lagre URL-
 
 ### <a name="send-feedback"></a>Send tilbakemelding
 
-Ytelsesjournalen inneholder en tilleggsfunksjon som heter **Send tilbakemelding**. Når du klikker **Send tilbakemelding**, kan du velge en ansatt og gi tilbakemelding til den ansatte via e-post. Meldingen sendes til den ansatte som mottar tilbakemeldingen, lederen til denne ansatte, den ansatte som sender tilbakemeldingen, og lederen til denne ansatte. Det opprettes en ytelsesjournaloppføring for hver person som mottar tilbakemeldingen.
+Ytelsesjournalen inneholder en tilleggsfunksjon som heter Tilbakemelding. Når du klikker **Send tilbakemelding**, kan du velge en ansatt og gi tilbakemelding til den ansatte via e-post. Meldingen sendes til den ansatte som mottar tilbakemeldingen, lederen til denne ansatte, den ansatte som sender tilbakemeldingen, og lederen til denne ansatte. Det opprettes en ytelsesjournaloppføring for hver person som mottar tilbakemeldingen.
 
 ## <a name="goals"></a>Mål
 
@@ -86,7 +85,7 @@ Du kan opprette en mal fra et mål, og deretter bruke malen til å opprette nye 
 
 Ytelsesvurderinger er også kjent som diskusjoner. De er fleksible nok til å støtte fortløpende tilbakemelding, utviklingsplaner og mer formelle vurderinger. Du kan raskt opprette mindre møter for to personer, for eksempel et én-til-én-møte, eller du kan lage en mer omfattende vurdering som samsvarer med vurderingsprosessen i firmaet. 
 
-Et møte av typen én-til-én er en enkel vurdering, og krever et kort navn, en lengre beskrivelse av innholdet i møtet og datoen for møtet samt vurderingsperioden som diskuterer. Ledere vil også se navnet på personen som vurderingen opprettes for. 
+Et møte av typen én-til-én er en enkel vurdering, og krever et kort navn, en lengre beskrivelse av innholdet i møtet og datoen for møtet. En enkel vurdering inneholder den samme informasjonen samt vurderingsperioden som diskuteres. Ledere vil også se navnet på personen som vurderingen opprettes for. 
 
 Hvis du vil ha mer detaljerte vurderinger, kan du trekke inn aktive og fullførte mål, og angi kommentarer om dem. Alle ytelsesjournalaktiviteter og målinger som er knyttet til et mål, vil vises i vurderingen. Når vurderingen er fullført, lagres et øyeblikksbilde av målingene for å bevare historikken for disse elementene på tidspunktet for vurderingen. 
 
@@ -94,7 +93,7 @@ Du kan også bruke **Kompetanser**-delen for å diskutere, gjennomgå og vurdere
 
 Du kan opprette nye vurderinger som er basert på maler som du har opprettet. Du kan for eksempel ha en mal for én-til-én-vurderinger, utviklingsplaner eller periodiske vurderinger. Du kan velge malen når du oppretter en ny vurdering.
 
-Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 > [!NOTE]
 > Muligheten til å skrive ut ytelsesgjennomganger er bare tilgjengelig i personalmiljøet. Den er ikke tilgjengelig i Dynamics 365 Finance.
@@ -121,11 +120,11 @@ Du kan bruke en vurdering på mål eller kompetanser som er i vurderingen. Du ka
 
 ### <a name="sign-offs"></a>Godkjenninger
 
-Ansatte og/eller ledere vises i vurderingen basert på vurderingsparameterne du angir. Vurderingene kan være obligatoriske eller valgfrie. Når alle nødvendige godkjenninger er foretatt, merkes vurderingen med statusen **Fullført**.
+Ansatte og/eller ledere vises i vurderingen basert på vurderingsparameterne du angir. Vurderingene kan være obligatoriske eller valgfrie. Når alle nødvendige godkjenninger er foretatt, merkes vurderingen med statusen Fullført.
 
 ### <a name="attachments"></a>Vedlegg
 
-Du kan knytte et dokument til en vurdering i **Vedlegg**-delen på siden med **Vurderinger**. Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument.
+Du kan knytte et dokument til en vurdering i **Vedlegg**-delen på siden med **vurderinger**. Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument.
 
 ## <a name="workflow-for-performance-management"></a>Arbeidsflyt for ytelsesstyring
 
@@ -149,20 +148,18 @@ Arbeidsflyten Vurdering av arbeider har to elementer:
 
 2.  Endelig vurdering. Legg til dette elementet for å kontrollere statusendringen fra **Klar til vurdering** til **Endelig vurdering**. Endre tilordningen for å bruke lederhierarkiet der ledernivå på Employee.line = 1, hvis du vil at lederen skal godkjenne den endelige gjennomgangen. Endre tilordningen til arbeidsflytbrukeren hvis du vil at den ansatte skal godkjenne den. Hvis du vil at både overordnet og ansatt skal godkjenne den, legger du til to trinn i arbeidsflyten og gjør riktig tilordning for hvert trinn i den rekkefølgen som godkjenningene skal gjøres i.
 
-## <a name="setup"></a>Installasjon
+## <a name="setup"></a>Konfigurer
 
 Det finnes tre sider som hjelper deg med å angi informasjon som kreves for å fullføre ytelsesprosessen: siden **Målinger**, **Kildetyper for ytelsesjournal** og **Vurderingstyper**.
 
 ### <a name="measurements"></a>Mål
 
-På **Målinger**-siden kan du opprette standardmålinger som skal brukes på siden for **ytelsesmål** og **vurderinger**. Du kan opprette målinger som er datoer, beløp, antall eller prosenter, eller målinger som er basert på en vurderingsmodell.
+På Målinger-siden kan du opprette standardmålinger som skal brukes på siden for **ytelsesmål** og **vurderinger**. Du kan opprette målinger som er datoer, beløp, antall eller prosenter, eller målinger som er basert på en vurderingsmodell.
 
 ### <a name="performance-journal-source-types"></a>Kildetyper for ytelsesjournal
 
-**Kildetyper for ytelsesjournaler** beskriver hvor ytelsesjournalene kommer fra. Du kan se om et journalelement kan vises som standard bare av lederen, bare av den ansatte, eller både overordnet og ansatt. Du kan ikke deaktivere kildetyper på dette tidspunktet.
+Kildetyper for ytelsesjournaler beskriver hvor ytelsesjournalene kommer fra. Du kan se om et journalelement kan vises som standard bare av lederen, bare av den ansatte, eller både overordnet og ansatt. Du kan ikke deaktivere kildetyper på dette tidspunktet.
 
 ### <a name="review-types"></a>Vurderingstyper
 
-**Vurderingstyper** styrer virkemåten til en vurdering. Du kan aktivere eller deaktivere arbeidsflyten for en vurdering. Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes. Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Ytelsesvurderingstyper kan hjelpe deg med å styre virkemåten til en vurdering. Du kan aktivere eller deaktivere arbeidsflyten for en vurdering. Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes. Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.

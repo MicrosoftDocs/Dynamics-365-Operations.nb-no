@@ -71,6 +71,3 @@ Følg denne fremgangsmåten for å opprette en mal for ansettelsesprosess.
     - Hvis du vil fjerne en aktivitet, utvider du den og velger deretter papirkurv-knappen på overskriften for aktiviteten.
 
 8. Velg **Lagre**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

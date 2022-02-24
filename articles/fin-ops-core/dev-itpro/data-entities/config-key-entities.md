@@ -1,32 +1,31 @@
 ---
 title: Konfigurasjonsnøkler og dataenheter
 description: Dette emnet beskriver forholdet mellom konfigurasjonsnøkler og dataenheter.
-author: peakerbl
+author: Sunil-Garg
+manager: AnnBe
 ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.custom: 25341
 ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: e9cc92563c426136b2543511ad943fd64b335b70
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e6145a2f6925932361851735df55374dda8ca03d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065745"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679387"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurasjonsnøkler og dataenheter
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Før du bruker dataenheter til å importere eller eksportere data, anbefaler vi at du først bestemmer virkningen av konfigurasjonsnøklene i dataenheter som du har tenkt å bruke.
 
@@ -55,24 +54,24 @@ Tabellen nedenfor viser hvordan konfigurasjonsnøkkelverdier i de forskjellige a
 ### <a name="entity-list-refresh"></a>Oppdatering av enhetsliste
 Når enhetslisten oppdateres, bygger rammeverket for databehandling metadata for konfigurasjonsnøkkelen for kjøretidsbruk. Disse metadataene bygges ved hjelp av logikken som er beskrevet ovenfor. Vi anbefaler sterkt at du venter til enhetslisten er ferdig oppdatert før du bruker jobber og enheter i rammeverket for databehandling. Hvis du ikke venter, kan det være at metadataene for konfigurasjonsnøkkelen ikke er oppdatert, noe som kan føre til uventede resultater. Når enhetslisten oppdateres, vises følgende melding på enhetslistesiden.
 
-![Oppdatering av enhetsliste.](./media/Entity_refresh_list.png)
+![Oppdatering av enhetsliste](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Listesiden for dataenhet
 Listesiden for dataenhet i arbeidsområdet for databehandling viser konfigurasjonsnøkkelinnstillingene for enhetene. Start fra denne siden for å forstå effekten konfigurasjonsnøklene har på dataenheten.
 
 Denne informasjonen vises ved hjelp av metadataene som bygges under enhetsoppdateringen. Konfigurasjonsnøkkelkolonnen viser navnet på konfigurasjonsnøkkelen som er knyttet til dataenheten. Hvis denne kolonnen er tom, betyr det at det ikke er noen konfigurasjonsnøkkel knyttet til dataenheten. Kolonnen med status for konfigurasjonsnøkkel viser tilstanden for konfigurasjonsnøkkelen. Hvis den er merket av her, betyr det at nøkkelen er aktivert. Hvis den er tom, betyr det enten at nøkkelen er deaktivert eller at det ikke er noen nøkkel som er tilknyttet.
 
-![Enhetslistesiden.](./media/Data_entity_list_page.png)
+![Enhetslistesiden](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Målfelt
 Det neste trinnet er å drille ned i dataenheten for å vise virkningen av konfigurasjonsnøkler på tabeller og felt. Målfeltskjemaet for en dataenhet viser konfigurasjonsnøkkel og nøkkelstatusinformasjonen for relaterte tabeller og felt i dataenheten. Hvis selve dataenheten har konfigurasjonsnøkkelen deaktivert, vises en advarsel om at tabellene og feltene i målfeltskjemaet for denne enheten ikke blir tilgjengelig i det hele tatt, uavhengig av status for konfigurasjonsnøkkelen.
 
-![Målfelt.](./media/Target_fields_1.png)
+![Målfelt](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Underordnede enheter 
 Enkelte enheter har andre enheter som datakilder eller er sammensatte dataenheter: konfigurasjonsnøkkelinformasjon for disse enhetene vises i skjemaet for underordnede enheter. Bruk dette skjemaet på lignende måte på enhetslistesiden som er beskrevet ovenfor. Målfeltskjemaet for den underordnede enheten fungerer også som det er beskrevet ovenfor.
 
-![Målfelt.](./media/Target_fields_2.png)
+![Målfelt](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Bruke dataenheter
 Når du har forstått hele virkningen, om noen, av konfigurasjonsnøkler på dataenhetene som du vil bruke, kan du nå fortsette og bruke dataenhetene ved å legge dem til dataprosjekter. 
@@ -94,7 +93,4 @@ Ved hjelp av konfigurasjonsnøkkelmetadataene som er bygd under enhetslisteoppda
 ### <a name="managing-configuration-key-changes"></a>Administrasjon av konfigurasjonsnøkkelendringer
 Når du oppdaterer konfigurasjonsnøkler på enhets-, tabell- og feltnivået, må enhetslisten i rammeverket for databehandling oppdateres. Denne prosessen sikrer at rammeverket henter de nyeste konfigurasjonsnøkkelinnstillingene. Inntil enhetslisten oppdateres, vises følgende advarsel på enhetslistesiden. De oppdaterte konfigurasjonsnøkkelendringene trer i kraft umiddelbart etter at enhetslisten oppdateres. Vi anbefaler at du validerer eksisterende dataprosjekter og jobber for å forsikre deg om at de fungerer som forventet når konfigurasjonsnøkkelendringene trer i kraft.
 
-![Målfelt.](./media/Target_fields_3.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Målfelt](./media/Target_fields_3.png)

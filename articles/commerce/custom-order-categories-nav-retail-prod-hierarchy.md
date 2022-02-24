@@ -2,30 +2,33 @@
 title: Endre sorteringsrekkefølgen for varehandelsenheter
 description: I dette emnet forklares begrepene som er relatert til å styre visningsrekkefølgen for ulike varehandelsrelaterte enheter i Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 audience: Application User, Merchandising manager, Catalog manager
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: b983cb5c63db171c76d34375a93a2b9086185d3a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779548"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414651"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Endre sorteringsrekkefølgen for varehandelsenheter
 
 
-[!Include [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Forhandlere vurderer produktgjenkjenning som et primært verktøy for kundeinteraksjon på tvers av alle kanaler. Forskjellige funksjoner kan hjelpe kunder å oppdage produkter på en enkel måte. De kan for eksempel bla gjennom kategorier, søke og filtrere.
 
@@ -51,9 +54,9 @@ Før du kan fullføre denne prosedyren, må du installere demodata i miljøet.
 
 Visningsrekkefølgen for kanalnavigasjonshierarkiet vil gjenspeiles i hovedkontoret for handelsprodukthierarkiet og frigitte produkter etter kategori.
 
-![Egendefinert sortering av produkthierarki med negative verdier.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Egendefinert sortering av produkthierarki med negative verdier](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Egendefinert sortering av frigitte produkter etter kategori basert på produkthierarkiet.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Egendefinert sortering av frigitte produkter etter kategori basert på produkthierarkiet](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Konfigurer visningsrekkefølgen for kategorier i kanalnavigasjonshierarkiet
 
@@ -77,14 +80,11 @@ Før du kan fullføre denne prosedyren, må du installere demodata i miljøet.
 
 Visningsrekkefølgen for kanalnavigasjonshierarkiet gjenspeiles i hovedkontor, katalog og kanaler.
 
-![Egendefinert sortering av navigasjonshierarki for kanal.](./media/ChannelNavCustomSorted.png)
+![Egendefinert sortering av navigasjonshierarki for kanal](./media/ChannelNavCustomSorted.png)
 
-![Egendefinert sortering av navigasjonshierarki for katalog basert på kanalnavigasjonshierarkiet.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Egendefinert sortering av navigasjonshierarki for katalog basert på kanalnavigasjonshierarkiet](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![Salgssted med egendefinert sortering av kategorier.](./media/POSChannelCategoriesCustomSorted.png)
+![Salgssted med egendefinert sortering av kategorier](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Funksjonen for egendefinert sortering er deaktivert som standard. Hvis du vil vite hvordan du aktiverer denne funksjonen og andre funksjoner, kan du se [Funksjonsbehandling](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> Funksjonen for egendefinert sortering er deaktivert som standard. Hvis du vil vite hvordan du aktiverer denne funksjonen og andre funksjoner, kan du se [Funksjonsbehandling](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

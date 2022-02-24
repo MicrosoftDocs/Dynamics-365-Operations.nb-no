@@ -2,9 +2,11 @@
 title: Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
 description: Dette emnet beskriver hvordan du oppretter en Excel-arbeidsbok, slik at du kan redigere detaljhandelstransaksjoner i Microsoft Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bfc3f6898087445e0276994ceeb52c178785bf3604fa163939327e99a0564f64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73a3387d1e7251168002ff683b5b58e0c82a620c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753114"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965383"
 ---
 # <a name="create-an-excel-workbook-to-edit-retail-transactions"></a>Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
 
@@ -76,6 +78,3 @@ Hvis du vil opprette og konfigurere en Excel-arbeidsbok slik at du kan redigere 
 [Redigere finansdimensjoner for detaljhandelstransaksjoner](edit-financial-dim.md)
 
 [Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](add-fields-excel.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

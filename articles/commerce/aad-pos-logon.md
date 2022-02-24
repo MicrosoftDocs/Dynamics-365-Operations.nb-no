@@ -1,103 +1,76 @@
 ---
-title: Konfigurere Azure Active Directory-godkjenning for salgsstedspålogging
-description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory som godkjenningsmetoden på Microsoft Dynamics 365 Commerce-salgsstedet.
+title: Aktivere Azure Active Directory-godkjenning for POS-pålogging
+description: Dette emnet forklarer hvordan du konfigurerer påloggingsopplevelsen for Microsoft Dynamics 365 Commerce salgssted (POS) slik at den bruker Azure Active Directory-godkjenning.
 author: boycezhu
-ms.date: 04/23/2021
+manager: annbe
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: 6946cb5f8bc8aa451f72d1eebcd324f408ad5f7a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402157"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414566"
 ---
-# <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurere Azure Active Directory-godkjenning for salgsstedspålogging
-
+# <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Aktivere Azure Active Directory-godkjenning for POS-pålogging
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) som godkjenningsmetoden på Microsoft Dynamics 365 Commerce-salgsstedet.
 
-Forhandlere som bruker Dynamics 365 Commerce sammen med andre Microsoft-skytjenester, for eksempel Microsoft Azure, Microsoft 365 og Microsoft Teams, vil vanligvis bruke Azure AD til sentralisert behandling av brukerlegitimasjonen for å få en sikker og sømløs påloggingsopplevelse på tvers av programmer. For å bruke Azure AD-godkjenning for Commerce POS, må du først konfigurere Azure AD som godkjenningsmetode i Commerce Headquarters.
+Mange kunder som bruker Microsoft Dynamics 365 Commerce, bruker også andre Microsoft Cloud-tjenester, og de kan bruke Azure Active Directory (Azure AD) til å administrere brukerlegitimasjon for disse tjenestene. I slike tilfeller vil kundene kanskje bruke samme Azure AD-konto på tvers av programmer. Dette emnet forklarer hvordan du konfigurerer påloggingsopplevelsen for Commerce salgssted (POS) slik at den bruker Azure AD-godkjenning.
 
-## <a name="configure-pos-authentication-method"></a>Konfigurere godkjenningsmetode for salgssted
+## <a name="configure-azure-ad-authentication"></a>Konfigurere Azure AD-godkjenning
 
-Følg denne fremgangsmåten for å konfigurere godkjenningsmetode på salgssted i Commerce Headquarters.
-    
-1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Funksjonsprofiler**, og velg funksjonalitetsprofil for å endre.
-1. Velg et alternativ for ønsket godkjenningsmetode fra rullegardinlisten **Metode for påloggingsgodkjenning** i hurtigkategorien **Funksjoner** i delen **Stabspålogging på salgssted**.
+Hvis du vil gjøre Azure AD tilgjengelig som godkjenningsmetode for POS-pålogging for en butikk, må du konfigurere innstillingene for butikkens funksjonalitetsprofil og deretter bruke denne innstillingen på POS-klienter.
 
-    **Metode for påloggingsgodkjenning** har tre alternativer:
-    
-    - **Personal-ID og passord** - Dette standardalternativet krever at POS-brukere angir en personal-ID og passord for å logge seg på salgsstedet, og at lederen skal overstyre funksjonene.
-    - **Azure AD uten enkel pålogging** – Dette alternativet krever at POS-brukere bruker Azure AD-legitimasjon for å logge seg på salgsstedet og få tilgang til funksjonaliteten for lederoverstyring. Når salgsstedsklienten oppdateres eller åpnes på nytt, må salgsstedsbrukeren angi Azure AD-legitimasjonen for å kunne logge seg på igjen.
-    - **Azure AD med enkel pålogging** – Når dette alternativet er valgt, kan POS-brukere logge seg på Cloud POS (CPOS) med aktiv Azure AD-legitimasjon som brukes av andre webprogrammer i den samme webleseren, eller logge seg på Modern POS (MPOS) med Azure AD-legitimasjon som er logget på Windows. Begge metodene tillater pålogging uten at du trenger å angi Azure AD-legitimasjon på påloggingsskjermen for salgssted. Tilgangen til overstyringsfunksjonaliteten i POS-behandling vil imidlertid fortsatt kreve at du logger deg på med Azure AD-legitimasjon.
+Hvis du vil konfigurere en funksjonalitetsprofil, gjør du følgende.
 
-1. Gå til **Retail og Commerce > IT for Retail og Commerce > Distribusjonsplan**, og kjør jobben **1070 (Kanalkonfigurasjon)** for å synkronisere de nyeste innstillingene for funksjonalitetsprofilen til POS-klienter.
+1. Gå til **Retail og Commerce** \> **Kanaloppsett** \> **Salgsstedsoppsett** \> **Salgsstedsprofiler** \> **Funksjonalitetsprofiler**.
+1. Velg funksjonalitetsprofilen du vil endre.
+1. I hurtigfanen **Funksjoner**, i delen **Stabspålogging på salgssted**, endrer du verdien i feltet **Metode for påloggingsgodkjenning** fra **ID og passord for personale** til **Azure Active Directory**.
+
+Alle funksjonalitetsprofiler bruker som standard **ID og passord for personale** som godkjenningsmetode for POS. Derfor må du endre verdien i feltet **Metode for påloggingsgodkjenning** hvis du vil bruke Azure AD. Hver detaljhandelsbutikk som er koblet til den valgte funksjonalitetsprofilen, påvirkes av denne endringen.
+
+Følg denne fremgangsmåten for å bruke innstillingene på salgsstedsklienter.
+
+1. Gå til **Retail og Commerce** \> **IT for Retail og Commerce** \> **Distribusjonsplan**.
+1. Kjør distribusjonsplanen **1070** (**Kanalkonfigurasjon**).
 
 > [!NOTE]
-> - Alternativet for godkjenningsmetode **Azure AD uten enkel pålogging** erstatter alternativet **Azure Active Directory** i Commerce-versjon 10.0.18 og tidligere.
-> - Azure AD-godkjenning krever en aktiv Internett-tilkobling og vil ikke fungere når salgsstedet er frakoblet.
+> Azure AD-godkjenning krever en Internett-tilkobling. Den vil ikke fungere når salgssted er i frakoblet modus.
+> 
+> For øyeblikket støtter ikke **Lederoverstyring**-funksjonen Azure AD som godkjenningsmetode. Det kreves en operatør-ID og et passord selv om Azure AD er konfigurert som godkjenningsmetode for salgsstedspålogging.
 
-## <a name="associate-azure-ad-accounts-with-pos-users"></a>Knytte Azure AD-kontoer til salgsstedsbrukere
+## <a name="associate-an-azure-ad-account-with-a-worker"></a>Knytt en Azure AD-konto til en arbeider
 
-For å bruke Azure AD som godkjenningsmetode for salgssted, må du knytte Azure AD-kontoer til salgsstedsbrukere i Commerce Headquarters. 
+Før en butikkarbeider kan bruke en Azure AD-konto til å logge seg på POS-programmet, må Azure AD-kontoen knyttes til denne arbeideren.
 
-Følg denne fremgangsmåten for å knytte kontoer for Azure AD til salgsstedsbrukere i Commerce Headquarters.
-    
-1. Gå til **Retail og Commerce > Ansatte > Arbeidere**, og åpne en arbeiderpost.
-1. I handlingsruten velger du kategorien **Commerce** og deretter under **Ekstern identitet** velger du **Tilknytt eksisterende ID**. 
+Følg denne fremgangsmåten for å knytte en Azure AD-konto til en arbeider.
+
+1. Gå til **Detaljhandel og handel** \> **Ansatte** \> **Arbeidere**.
+1. Åpne detaljersiden for en arbeider.
+1. I handlingsruten, i kategorien **Commerce** i gruppen **Ekstern identitet** velger du **Tilknytt eksisterende identitet**.
 1. I dialogboksen **Bruk eksisterende eksterne ID** velger du **Søk ved hjelp av e-post**, angir en Azure AD-e-postadresse og velger **Søk**.
 1. Velg den returnerte Azure AD-kontoen, og velg deretter **OK**.
 
-Etter konfigurasjonstrinnene over vil feltene **Alias**, **UPN** og **Ekstern underidentifikator** i kategorien **Commerce** på arbeiderens detaljside fylles ut.
-
-Du må kjøre **1060 (Stab)** i **Retail og Commerce > Retail og Commerce IT > Distribusjonsplan** for å synkronisere den siste salgsstedsbrukeren og Azure AD-kontodataene til kanalen.
+Feltene **Alias**, **UPN** og **Ekstern underidentifikator** i kategorien **Commerce** på arbeiderens detaljside fylles ut.
 
 > [!NOTE]
-> Det er en anbefalt fremgangsmåte, etter at arbeiderinformasjon som passord, POS-tillatelse, tilknyttet Azure AD-konto eller adressebok for ansatt er oppdatert i Commerce Headquarters, at du kjører **1060 (stab)** for å synkronisere den nyeste arbeiderinformasjonen til kanalen. Salgsstedsklienten kan deretter hente de riktige dataene for brukergodkjenning og godkjenningskontroller.
-
-## <a name="pos-lock-register-and-sign-out-with-azure-ad-authentication"></a>Låsregistrering og -utlogging for salgssted med Azure AD-godkjenning
-
-Følgende skjer når salgsstedet er konfigurert til å bruke Azure AD-godkjenningsmetoden:
-
-- Funksjonen for **Lås kasse** er ikke tilgjengelig i salgsstedsprogrammet. 
-- **Automatisk lås**-funksjonen vil fungere som **Automatisk avlogging**-funksjonen.
-- Hvis salgsstedsbrukeren velger **Logg av**, blir brukeren bedt om å logge seg på med Azure AD-legitimasjon neste gang salgsstedet starter, uansett om en enkel pålogging er aktivert.
-
-## <a name="manager-override-functionality-with-azure-ad-authentication"></a>Funksjonalitet for Lederoverstyring med Azure AD-godkjenning
-
-Når salgsstedet er konfigurert til å bruke Azure AD-godkjenning, vil funksjonalitete for lederoverstyring åpne en dialogboks som ber lederbrukeren om Azure AD-legitimasjon. Når lederpålogging er godkjent, blir lederens Azure AD-legitimasjon slettet, og den forrige brukerens Azure AD-legitimasjon blir brukt for påfølgende salgsstedsoperasjoner.
-
-> [!NOTE]
-> - I Commerce-versjoner 10.0.18 og tidligere støtter ikke funksjonen for lederoverstyring Azure AD. En personell-ID og -passord kreves selv om salgsstedet er konfigurert til å bruke Azure AD-godkjenningsmetoden.
-> - Når du bruker CPOS med Safari-webeseren på en Apple iOS-enhet, må du først slå av **Blokker popup-vinduer** i Safari-innstillinger for at funksjonen for lederoverstyring skal fungerer med Azure AD-godkjenning. 
-
-## <a name="security-best-practices-for-azure-ad-based-pos-authentication-on-shared-devices"></a>Anbefalte fremgangsmåter for sikkerhet for Azure AD-basert salgsstedsgodkjenning på delte enheter
-
-Mange forhandlere konfigurerer butikkmiljøet på en måte som gjør det nødvendig for flere brukere å få tilgang til salgsstedsprogrammet fra en delt fysisk enhet. I den sammenhengen kan det, selv om enkel pålogging gir en nyttig og sømløs godkjenningsopplevelse, også føre til at det opprettes sikkerhetshull der den gjeldende salgsstedsbrukeren ikke innser at en annen brukers legitimasjon brukes til å utføre transaksjoner eller operasjoner på salgsstedet. Før du konfigurerer salgsstedssystemet for å bruke Azure AD-godkjenningsmetoden anbefales det på det sterkeste at du går gjennom sikkerhetspolicyen og den delte enhetens påloggingsinnstillinger for å avgjøre hvilket alternativ som passer best.
-
-- Hvis detaljhandelsmiljøet bruker en delt konto (for eksempel en lokal konto) for fysisk enhetspålogging, anbefales det å bruke alternativet **Azure AD uten enkel pålogging**. Dette sikrer at hver salgsstedsbruker eksplisitt angir legitimasjon for Azure AD for å logge seg på salgsstedsprogrammet.
-- Hvis detaljhandelsmiljøet krever at ansatte bruker sine egne Azure AD-kontoer for å logge seg på salgsstedssystemet og er vert for den fysiske enheten, anbefales det å bruke alternativet **Azure AD med enkel pålogging**.
+> Når en arbeiderpost er oppdatert, for eksempel hvis en ny Azure AD-konto er tilknyttet, endres et passord eller hvis en adressebok for ansatte blir oppdatert, anbefales det at du kjører **1060** (**Personale**) distribusjonsplan for å synkronisere den nyeste ansattinformasjonen til kanalen. På denne måten kan POS-appen hente de riktige dataene for brukergodkjenning og godkjenningskontroll.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[ Konfigurere en arbeider](tasks/worker.md)
+[Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS](extended-logon.md)
 
 [Opprette en funksjonalitetsprofil for Retail](retail-functionality-profile.md)
 
-
-[Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS](extended-logon.md)
-
-[Anbefalte fremgangsmåter for Cloud POS i delte miljøer](dev-itpro/secure-retail-cloud-pos.md)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[ Konfigurere en arbeider](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)

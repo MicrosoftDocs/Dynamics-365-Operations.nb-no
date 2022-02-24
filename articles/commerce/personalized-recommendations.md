@@ -2,13 +2,16 @@
 title: Aktivere personlige produktanbefalinger
 description: Dette emnet beskriver hvordan du gjør tilpassede produktanbefalinger tilgjengelig for kunder i Microsoft Dynamics 365 Commerce.
 author: bebeale
+manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,18 +19,20 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 74bf2c96d744b8101151be9288a956d46ce3b6885f0cb593dc1b78728b018fb4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770963"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414615"
 ---
-# <a name="enable-personalized-recommendations"></a>Aktivere personlige anbefalinger
+# <a name="enable-personalized-recommendations"></a>Aktivere tilpassede anbefalinger
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du gjør tilpassede produktanbefalinger tilgjengelig for kunder i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 I Dynamics 365 Commerce kan forhandlere få tilpassede produktanbefalinger (også kjent som personalisering). På denne måten kan tilpassede anbefalinger bygges inn i kundeopplevelsen på nettet og ved salgsstedet (POS). Når funksjonaliteten for personalisering er aktivert, kan systemet tilknytte en brukers innkjøps- og produktinformasjon, slik at de genererer indivduelle produktanbefalinger.
 
@@ -50,7 +55,7 @@ Følg denne fremgangsmåten for å aktivere tilpassing.
 1. Velg funksjonen **Personlige produktanbefalinger**.
 1. I egenskapsruten **Personlige produktanbefalinger** velger du **Aktiver nå**.
 
-![Aktivere tilpassing.](./media/FeatureManagement_Personalized.PNG)
+![Aktivere tilpassing](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Når du aktiverer tilpassing, startes prosessen for generering av tilpassede produktanbefalingslister. Det kan være nødvendig med opptil én dag før listene er tilgjengelige og synlige på Internett og salgsstedet.
@@ -73,7 +78,7 @@ Før "Plukkinger for deg"-listen kan vises på en e-handelsside, må følgende b
 
 Illustrasjonen nedenfor viser et eksempel på en "Plukkinger for deg"-liste på en nettbutikkside.
 
-!["Plukkinger for deg"-liste på Internett.](./media/picksforyou.png)
+!["Plukkinger for deg"-liste på Internett](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>"Anbefalt for kunde"-lister på salgsstedet
 
@@ -81,7 +86,7 @@ For å forbedre klientopplevelsen kan forhandlerne personliggjøre eksisterende 
 
 Illustrasjonen nedenfor viser et eksempel på en "Anbefalt for kunde"-liste på en salgsstedsterminal.
 
-!["Anbefalt for kunde"-liste på salgsstedet.](./media/picksonpos.png)
+!["Anbefalt for kunde"-liste på salgsstedet](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Bruke tilpassing på eksisterende anbefalingslister
 
@@ -89,7 +94,7 @@ Forhandlere kan bruke tilpassing for eksisterende anbefalingslister, for eksempe
 
 En pålogget bruker har for eksempel allerede kjøpt den svarte klokken og de brune arbeidsstøvlene som vises i listen "Tendenser – standard" i følgende illustrasjon. Derfor vil brukeren se nye produkter i stedet for disse produktene, som vist i listen "Tendenser – tilpasset".
 
-![Bruke tilpassing.](./media/applypersonalization.png)
+![Bruke tilpassing](./media/applypersonalization.png)
 
 Hvis du vil bruke tilpassing på en eksisterende anbefalingsliste i områdebygger for handel, følger du denne fremgangsmåten.
 
@@ -99,7 +104,7 @@ Hvis du vil bruke tilpassing på en eksisterende anbefalingsliste i områdebygge
 1. I dialogboksen **Velg produktlistekonfigurasjon**, under **Type**, velger du listetypen.
 1. Merk av for **Bruk tilpassing**, og velg deretter **OK**.
 
-    ![Bruke tilpassing på en tendensliste.](./media/ApplyPersonalizationToTrending.PNG)
+    ![Bruke tilpassing på en tendensliste](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Lagre siden, fullfør redigeringen av den, og publiser den. Når siden er publisert, vil påloggede brukere se tilpassede tendenslister.
 
@@ -126,6 +131,3 @@ Hvis du vil bruke tilpassing på en eksisterende anbefalingsliste i områdebygge
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

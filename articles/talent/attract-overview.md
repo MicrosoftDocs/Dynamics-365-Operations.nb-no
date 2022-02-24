@@ -49,6 +49,3 @@ Så snart de har blitt lagt til en jobb, mottar kandidater en e-post med en kobl
 
 ## <a name="analytic-reports"></a>Analyserapporter
 Ansettelsesteam kan vise viktige mål for ansettelsesprosess for en enkelt jobb eller aggregert på tvers av alle jobber med [analyserapporter i Attract](analytic-reports.md). Denne funksjonen er for øyeblikket i [forhåndsvisning](access-preview-feature.md) for kunder med [Hvilken versjon av Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

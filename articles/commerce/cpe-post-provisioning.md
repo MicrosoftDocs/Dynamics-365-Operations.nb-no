@@ -1,31 +1,36 @@
 ---
 title: Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du konfigurerer et evalueringsmiljø i Microsoft Dynamics 365 Commerce etter klargjøring.
+description: Dette emnet forklarer hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø etter klargjøring.
 author: psimolin
-ms.date: 12/10/2021
+manager: annbe
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913733"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414537"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer et evalueringsmiljø i Microsoft Dynamics 365 Commerce etter klargjøring.
+Dette emnet forklarer hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø etter klargjøring.
+
+## <a name="overview"></a>Oversikt
 
 Fullfør prosedyrene i dette emnet bare etter at evalueringsmiljøet i Commerce er klargjort. Hvis du vil ha informasjon om hvordan du klargjør Commerce-evalueringsmiljøet, kan du se [Klargjøre et Commerce-evalueringsmiljø](provisioning-guide.md).
 
@@ -39,7 +44,6 @@ Når evalueringsmiljøet i Commerce er klargjort ende til ende, må du fullføre
 1. Velg miljøet fra listen.
 1. Velg **Logg på miljøet** i miljøinformasjonen til høyre. Du vil bli sendt til Commerce Headquarters.
 1. Kontroller at den juridiske enheten **USRT** er valgt i øvre høyre hjørne.
-2. Gå til **Handelsparametere > Konfigurasjonsparametre**, og kontroller at det finnes en oppføring for **ProductSearch.UseAzureSearch** satt til **sann**. Hvis denne oppføringen mangler, kan du legge til denne oppføringen og kjøre **kanaldatabase > fullstendig synkronisering** for Commerce Scale Unit som er knyttet til webområdet for eCommerce.
 
 Under aktiviteter etter klargjøring i Commerce Headquarters må du kontrollere at den juridiske enheten **USRT** alltid er valgt.
 
@@ -107,12 +111,6 @@ Følg disse trinnene for å aktivere jobber i Commerce.
     1. Velg **Endre status** i kategorien **Satsvis jobb** i handlingsruten.
     1. Velg **Avbryt**, og velg deretter **OK**.
 
-1. Hvis statusen for jobben er **Holdt tilbake**, utfører du følgende trinn:
-
-    1. Velg posten.
-    1. Velg **Endre status** i kategorien **Satsvis jobb** i handlingsruten.
-    1. Velg **Venter**, og velg deretter **OK**.
-
 Du kan også angi et intervall for regelmessighet til ett (1) minutt for følgende jobber:
 
 * Behandle e-postvarslingsjobb for detaljistordre
@@ -135,7 +133,7 @@ Hvis du vil kjøre full datasynkronisering i Commerce, gjør du følgende i Comm
 Hvis du skal utføre testtransaksjoner på området, kan du bruke denne testkredittkortinformasjonen:
 
 - **Kortnummer:** 4111-1111-1111-1111
-- **Utløpsdato:** 10/30
+- **Utløpsdato:** 10/20
 - **Verdi for kortbekreftelse (CVV-kode):** 737
 
 > [!IMPORTANT]
@@ -146,9 +144,6 @@ Hvis du skal utføre testtransaksjoner på området, kan du bruke denne testkred
 Når klargjøringen og konfigurasjonstrinnene er fullført, er du klar til å bruke evalueringsmiljøet. Bruk URL-adressen for Commerce-områdebygger for å gå til redigeringsopplevelsen. Bruk URL-adressen for Commerce-området for å gå til kundeområdet for detaljhandel.
 
 Hvis du vil konfigurere valgfrie funksjoner for Commerce-evalueringsmiljøet, kan du se [Konfigurere valgfrie funksjoner for et Commerce-evalueringsmiljø](cpe-optional-features.md).
-
-> [!NOTE]
-> Commerce-evalueringsmiljøer leveres med en forhåndslastet Azure Active Directory (Azure AD) B2C-leier (business-to-consumer) til demonstrasjonsformål. Det er ikke nødvendig å konfigurere din egen Azure AD B2C-leier for evalueringsmiljøer. Hvis du imidlertid konfigurerer evalueringsmiljøet til å bruke din egen Azure AD B2C-leier, må du legge til ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som en svar-URL i Azure AD B2C-appen via Azure Portal.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -162,15 +157,10 @@ Hvis du vil konfigurere valgfrie funksjoner for Commerce-evalueringsmiljøet, ka
 
 [Vanlige spørsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Konfigurer en B2C-leier i Commerce](set-up-B2C-tenant.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

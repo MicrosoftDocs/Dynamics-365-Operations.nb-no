@@ -2,13 +2,16 @@
 title: Justere resultater for AI-ML-basert produktanbefaling
 description: Dette emnet beskriver hvordan du skreddersyr produktanbefalingsresultater basert på kunstig intelligens-maskinopplæring (AI-ML) til virksomheten.
 author: bebeale
+manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc6a793061a3e644599f0882ff163f5f57b2162d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748528"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414729"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Justere resultater for AI-ML-basert produktanbefaling
 
@@ -51,7 +54,7 @@ Avhengig av virksomheten kan bestselgerlisten gi forskjellige resultater enn ten
 
 Produktlisten for "Bestselgere" har én parameter som kan endres:
 
-![Eksempel standardparameter for bestselgerliste.](./media/examplebestsellingparameters.PNG)
+![Eksempel standardparameter for bestselgerliste](./media/examplebestsellingparameters.PNG)
 
 1. **Inkluder salg fra X dager** – Salgstransaksjoner som har oppstått innen det angitte antallet dager før gjeldende dato, kan brukes til å bestille produkter. Standardverdien ovenfor foreslår at alle innkjøp som er gjort for et produkt i løpet av de siste 30 dagene, blir brukt til å bestemme plasseringen av produktet i produktlisten for bestselgere. 
 
@@ -65,13 +68,13 @@ Produktlisten for "Bestselgere" har én parameter som kan endres:
 1.  Hvis du vil legge til produkter i tabellen, velger du **Legg til linje**. 
 1.  Under Produkt-kolonnen søker du etter et produkt etter **navn** eller **produktnummer**.
 
-    ![Eksempel på å søke etter et produkt i den listen over nye produkter.](./media/examplenewlistconfiguration1.png)
+    ![Eksempel på å søke etter et produkt i den listen over nye produkter](./media/examplenewlistconfiguration1.png)
 
 1.  Velg ett av to alternativer under Linjetype-kolonnen:
     -   **Inkluder** – tvinger frem et produkt til fronten av listen
     -   **Ekskluder** – fjerner et produkt fra å vises i listen
     
-    ![Eksempel på å inkludere eller ekskludere et produkt fra listen over nye produkter.](./media/examplenewlistconfiguration2.png)
+    ![Eksempel på å inkludere eller ekskludere et produkt fra listen over nye produkter](./media/examplenewlistconfiguration2.png)
 
 1.  Når du endrer **Visningsrekkefølge**, endres visningsrekkefølgen for produkter merket **inkluder**, i listen.
     - Hvis to produkter har samme verdi for **visningsrekkefølge**, kan den endelige rekkefølgen for disse to resultatene avvike fra backoffice.
@@ -87,11 +90,11 @@ Et *seed-produkt* er produktet du vil generere resultater for. I forbindelse med
 Følg disse trinnene for å legge til eller fjerne resultater for et seed-produkt manuelt:
 1.  Velg **seed-produkt**. 
 1.  Under **Produkt**-kolonnen søker du etter et produkt etter **Navn** eller **Produktnummer**.
-![Eksempel på søk etter produkt på listen Ofte kjøpt sammen.](./media/exampleFBTlistconfiguration1.png)
+![Eksempel på søk etter produkt på listen Ofte kjøpt sammen](./media/exampleFBTlistconfiguration1.png)
 1. Velg ett av to alternativer under **Linjetype**-kolonnen:
     - **Inkluder** – tvinger frem et produkt til fronten av listen
     - **Ekskluder** – fjerner et produkt fra å vises i listen     
-![Eksempel på å inkludere eller ekskludere et produkt på listen Ofte kjøpt sammen.](./media/exampleFBTlistconfiguration2.png)
+![Eksempel på å inkludere eller ekskludere et produkt på listen Ofte kjøpt sammen](./media/exampleFBTlistconfiguration2.png)
 1.  Slik fjerner du produkter fra tabellen: Merk linjen for å fjerne, og velg Fjern.
 
 
@@ -118,6 +121,3 @@ Følg disse trinnene for å legge til eller fjerne resultater for et seed-produk
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

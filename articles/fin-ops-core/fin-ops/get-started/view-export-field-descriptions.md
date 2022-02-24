@@ -2,9 +2,11 @@
 title: Vise og eksportere feltbeskrivelser
 description: Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser.
 author: rschloma
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
@@ -15,19 +17,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 39dd9a86ffb04d18f61c75fb2c9634e441dc823b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069279"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797905"
 ---
 # <a name="view-and-export-field-descriptions"></a>Vise og eksportere feltbeskrivelser
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser.
 
@@ -46,7 +45,7 @@ Du kan vise feltbeskrivelser ved å holde pekeren over et felt. Hvis ingen beskr
 
 Illustrasjonen nedenfor viser feltbeskrivelsen som vises når du holder pekeren over feltet **Lås varer under opptelling**.
 
-[![Eksempel på en feltbeskrivelse.](./media/field-description.png)](./media/field-description.png)
+[![Eksempel på en feltbeskrivelse](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Bruk siden Feltbeskrivelser til å vise og eksportere felthjelp
 
@@ -108,6 +107,3 @@ Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tilpasse feltbeskrivelser](../../dev-itpro/user-interface/customize-field-help.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

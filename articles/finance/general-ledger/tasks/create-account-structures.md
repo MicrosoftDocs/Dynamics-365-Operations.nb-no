@@ -1,10 +1,12 @@
 ---
-title: Opprett kontostrukturer
-description: Denne prosedyren går gjennom oppretting av en kontostruktur.
+title: Opprette kontostrukturer
+description: Denne oppgaveveiledningen går gjennom oppretting av en kontostruktur.
 author: aprilolson
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate
 audience: Application User
@@ -13,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 4a8df7d7d9c4555bf46ac1cc3f71695837b1369b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394545"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968593"
 ---
-# <a name="create-account-structures"></a>Opprett kontostrukturer
+# <a name="create-account-structures"></a>Opprette kontostrukturer
 
 [!include [banner](../../includes/banner.md)]
 
-Denne prosedyren går gjennom oppretting av en kontostruktur. Trinnene bruker demonstrasjonsdatafirmaet USMF.
+Denne oppgaveveiledningen går gjennom oppretting av en kontostruktur. Trinnene bruker demonstrasjonsdatafirmaet USMF.
 
 1. Gå til **Navigasjonsrute > Moduler > Økonomimodul > Kontoplan > Strukturer > Konfigurer kontostrukturer**.
 2. Klikk **Ny** i **handlingsruten** for å åpne dialogboksen for rullegardinlisten.
@@ -58,6 +60,3 @@ Denne prosedyren går gjennom oppretting av en kontostruktur. Trinnene bruker de
 29. Klikk **Aktiver** i **handlingsruten**.
 30. Klikk **Aktiver**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

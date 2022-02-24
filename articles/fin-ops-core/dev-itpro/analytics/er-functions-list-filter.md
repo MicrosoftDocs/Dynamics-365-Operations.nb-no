@@ -2,8 +2,11 @@
 title: FILTER ER-funksjon
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen FILTER.
 author: NickSelin
-ms.date: 12/14/2021
+manager: kfend
+ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: 55fa3d4ad4427e2a45f7c5fce679c50a91c40b6d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922429"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679444"
 ---
 # <a name="filter-er-function"></a>FILTER ER-funksjon
 
@@ -49,17 +52,11 @@ Et gyldig betingelsesuttrykk som brukes til å filtrere poster i den angitte lis
 
 Den resulterende listen over oppføringer.
 
-## <a name="usage-notes"></a><a name="usage-notes"></a>Bruksnotater
+## <a name="usage-notes"></a>Bruksnotater
 
 Denne funksjonen er ulik [WHERE](er-functions-list-where.md)-funksjonen fordi den angitte betingelsen brukes på en ER-datakilde av typen *Tabellposter* på databasenivået. Listen og betingelsen kan defineres ved hjelp av tabeller og relasjoner.
 
 Hvis ett av eller begge argumentene som er konfigurert for denne funksjonen (`list` og `condition`), ikke tillater at denne forespørselen skal oversettes til det direkte SQL-kallet, utløses et unntak ved utformingstid. Dette unntaket informerer brukeren om at enten `list` eller `condition` ikke kan brukes til å spørre databasen.
-
-> [!NOTE]
-> `FILTER`-funksjonen har en annen funksjon enn `WHERE`-funksjonen når [`VALUEIN`](er-functions-logical-valuein.md)-funksjonen brukes til å angi utvalgskriteriene.
-> 
-> - Hvis `VALUEIN`-funksjonen brukes i området for `WHERE`-funksjonen, og det andre argumentet for å henvise til en datakilde som ikke returnerer noen poster, vurderes den boolske *[usann](er-formula-supported-data-types-primitive.md#boolean)*-verdien som `VALUEIN``VALUEIN` returnerer. Uttrykket `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` returnerer derfor ingen leverandørposter hvis **VendGroups**-datakilden ikke returnerer noen leverandørgruppeposter.
-> - Hvis `VALUEIN`-funksjonen brukes i området for `FILTER`-funksjonen, og det andre argumentet for å henvise til en datakilde som ikke returnerer noen poster, ignoreres den boolske *[usann](er-formula-supported-data-types-primitive.md#boolean)*-verdien som `VALUEIN``VALUEIN` returnerer. Uttrykket `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` returnerer derfor alle leverandørposter hvis **Leverandører**-datakilden, selv om **VendGroups**-datakilden ikke returnerer noen leverandørgruppeposter.
 
 ## <a name="example-1"></a>Eksempel 1
 
@@ -76,6 +73,3 @@ Du angir datakilde **DS** av *Beregnet felt*-typen som inneholder uttrykket `SPL
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

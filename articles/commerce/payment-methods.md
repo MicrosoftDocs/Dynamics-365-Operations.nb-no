@@ -1,14 +1,17 @@
 ---
 title: Betalingsmåter
 description: Hver betalingstype en forhandler godtar, må konfigureres når systemet defineres. Denne artikkelen beskriver betalingstypene som du kan sette opp og beskriver fremgangsmåten for hvordan du definerer dem.
-author: BrianShook
-ms.date: 11/03/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderTypeTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 2b56609de3b2620dcc605c6c6d697cb74c8ed6c1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779576"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414655"
 ---
 # <a name="payment-methods"></a>Betalingsmåter
 
@@ -46,11 +49,3 @@ Du må fullføre følgende oppgaver hvis du vil definere betalingsmåter.
 2. Opprett korttyper og kortnumre for hele organisasjonen. Hvis kredittkortene eller debetkortene godtas, må du opprette én betalingsmetode for kort og deretter opprette korttypene og kortnumrene for hele organisasjonen.
 3. Definere betalingsmåte i butikker Knytt betalingsmåter til hver butikk, og angi deretter de butikkspesifikke innstillingene for hvert betalingsmåte.
 4. Definer kortbetalingsmåter for butikker. Fullfør kortoppsettet for alle kortbetalingsmåter som butikken godtar.
-
-## <a name="handle-change-tendering-for-payment-methods"></a>Håndter endring av betaling for betalingsmetoder
-
-Noen betalingsmetoder støtter ikke direkte endring av betaling hvis midler forfaller tilbake til kunder under salgsstedstransaksjoner. Det er bare betalingsmetodene **Kontant** og **Valuta** som kan brukes til endring av betaling. 
-
-For å håndtere tilfeller der endring av betaling kreves under en transaksjon, men betalingsmetoden ikke støtter dette, kan du definere en betalingsmetode for **endring av betaling**. Når du definerer betalingsmetoder for butikken, velger du betalingsmetoden som skal brukes. Deretter, i **Endre**-delen, i feltet **Endre betaling**, angir du et betalingsalternativ for å endre betaling. Du kan for eksempel angi **1** for å angi at kontanter kan brukes som et alternativ for endring av betaling.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

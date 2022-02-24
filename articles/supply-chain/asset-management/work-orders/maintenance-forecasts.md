@@ -1,10 +1,12 @@
 ---
 title: Vedlikeholdsprognoser
 description: Dette emnet beskriver vedlikeholdsprognoser i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6503d5110a4cb5e4041afa7b4e80395b2974a64e5a150eb6bfce1f32a6703e06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c60834a1f818b142a0f2f022d66fe1f42edeb536
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761860"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020872"
 ---
 # <a name="maintenance-forecasts"></a>Vedlikeholdsprognoser
 
@@ -102,7 +104,7 @@ Hvis du vil ha en oversikt som viser hvor varen på den valgte linjen brukes i f
 
 Illustrasjonen nedenfor viser et eksempel på siden **Prognose for vedlikehold av arbeidsordre**.
 
-![Figur 1.](media/06-work-orders.png)
+![Figur 1](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk oppdatering av arbeidsordreprognoser
@@ -120,7 +122,4 @@ Hvis timekostnader, varekost og utgifter oppdateres i andre moduler i Microsoft 
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Oppdater arbeidsordreprognose**.
 
-![Figur 2.](media/07-work-orders.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Figur 2](media/07-work-orders.png)

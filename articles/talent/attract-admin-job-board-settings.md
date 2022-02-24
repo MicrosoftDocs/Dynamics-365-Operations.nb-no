@@ -51,6 +51,3 @@ Du vil gjerne vise ledige stillingene for så mange kvalifiserte kandidater som 
 
 > [!NOTE]
 > Microsoft og Attract er ikke er involvert i å opprette og vedlikeholde disse verdiene. Det er ditt ansvar å holde dem oppdatert i Attract og arbeide sammen med Broadbean for å løse problemer som involverer legitimasjonen.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

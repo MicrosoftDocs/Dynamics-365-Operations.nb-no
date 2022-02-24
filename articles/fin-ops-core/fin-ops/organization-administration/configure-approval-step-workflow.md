@@ -2,9 +2,11 @@
 title: Konfigurere godkjenningstrinn i en arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer egenskapene for et godkjenningstrinn.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070783"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797102"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurere godkjenningstrinn i en arbeidsflyt
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet forklarer hvordan du konfigurerer egenskapene for et godkjenningstrinn.
 
@@ -159,7 +158,7 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
 
     - **Én enkelt godkjenner** – Handlingen som utføres på dokumentet, bestemmes av den første personen som svarer. Erik har for eksempel sendt en reiseregning på NOK 15 000. Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn. Hvis Jorunn er den første personen som svarer på dokumentet, brukes handlingen hun bestemmer seg for, på dokumentet. Hvis Jorunn avviser dokumentet, avvises det og sendes tilbake til Erik. Hvis Jorunn godkjenner dokumentet, sendes det til Karen for godkjenning.
 
-        ![Arbeidsflyt som har en godkjenningsprosess.](./media/workflow_multipleusersinstep.gif)
+        ![Arbeidsflyt som har en godkjenningsprosess](./media/workflow_multipleusersinstep.gif)
 
     - **Flertallet av godkjennere** – Handlingen som skal brukes på dokumentet, fastsettes når de fleste av godkjennerne svarer. Erik har for eksempel sendt en reiseregning på NOK 15 000. Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn. Hvis Jorunn og Johanne er de første to godkjennerne som svarer, utføres handlingen de gjør, på dokumentet.
 
@@ -277,6 +276,3 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
 
 5. Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
 6. Hvis brukerne i videresendingsbanen ikke svarer innen tidsfristen, vil systemet automatisk utføre en handling med dokumentet. Hvis du vil angi handlingen systemet skal utføre, merker du **Handling**-raden, og velger deretter en handling i fanen **Avslutt handling**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

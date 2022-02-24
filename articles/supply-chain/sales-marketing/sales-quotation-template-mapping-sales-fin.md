@@ -1,44 +1,47 @@
 ---
 title: Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Supply Chain Management
 description: Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 362b6c290b1784d05e42ecb650911cc51aa8478a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061990"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527344"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkronisere salgstilbudshoder og -linjer direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
-> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
+> Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
 Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data for kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
-[![Dataflyt i Kundeemne til kontanter.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Mal og oppgaver
 
@@ -58,10 +61,10 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgstilbud
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Salg        | Supply Chain Management     |
+| Salg        | Forsyningskjedeadministrasjon     |
 |--------------|----------------------------|
-| Tilbud       | Dataverse-salgstilbudshode |
-| QuoteDetails | Dataverse-salgstilbudslinjer  |
+| Tilbud       | CDS-salgstilbudshode |
+| QuoteDetails | CDS-salgstilbudslinjer  |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
@@ -130,16 +133,13 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i datainte
 
 ### <a name="quoteheader"></a>QuoteHeader
 
-![Maltilordning i dataintegrator, QuoteHeader.](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
+![Tilordninge mal i dataintegrator](./media/sales-quotation-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="quoteline"></a>QuoteLine
 
-![Maltilordning i dataintegrator, QuoteLine.](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
+![Tilordninge mal i dataintegrator](./media/sales-quotation-direct-template-mapping-data-integrator-2.png)
 
 ## <a name="related-topics"></a>Relaterte emner
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

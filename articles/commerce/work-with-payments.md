@@ -2,13 +2,16 @@
 title: Betalingsmåter i telefonsentre
 description: Dette emnet beskriver de ulike betalingsmåtene som du kan bruke i et telefonsenter i Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b89daf41c8a14f5e03dc2a67c95e9d1fed2d5cab891ae65e20655c285b1f6ac2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7636f5c664634c680edf2ff9d8bae5ebb9035af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762578"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414659"
 ---
 # <a name="payment-methods-in-call-centers"></a>Betalingsmåter i telefonsentre
 
@@ -49,7 +52,4 @@ Når betalingsmåter defineres, bør de kobles til en finans- eller bankkonto. H
 
 For behandling av refundering bruker telefonsenteren også noen av betalingsmåtene som er definert i kunder. Hvis du vil konfigurere disse betalingsmåtene, kan du gå til **Retail og Commerce** \> **Kanaloppsett** \> **Telefonsenteroppsett** \> **Refunderingsmetoder for telefonsenter**. Du må fullføre denne konfigurasjonen for å behandle refunderingssjekker til kunder. Hvis en kunde for eksempel opprinnelig har betalt for en ordre ved bruk av kontanter eller sjekk, kan brukeren sende kunden refunderingssjekk via kunder. I dette tilfellet må betalingstypene kontanter og sjekkbetaling i telefonsenteret tilordnes til den riktige betalingsmåten i kunder for å garantere at refunderingen behandles på riktig måte.
 
-I tillegg, hvis en bruker behandler en returordre som en telefonsenterbruker i Commerce, men brukeren ikke kan koble returen til et opprinnelig salg, må betalingsmåten **Retur** defineres i parameterne for telefonsenter. Gå til **Retail og Commerce** \> **Kanaloppsett** \> **Telefonsenteroppsett** \> **Parametere for telefonsenter**, og kontroller deretter at en betalingsmåte er definert i kategorien **RMA/retur** under **Betalingsmåte**. Betalingsmåten blir betalingsmåten som brukes til refunderinger. Den vil vanligvis defineres som en sjekkmetode eller en kundekontometode.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+I tillegg, hvis en bruker behandler en returordre som en telefonsenterbruker i Commerce, men han eller hun ikke kan koble returen til et opprinnelig salg, må betalingsmåten **Retur** defineres i parameterne for telefonsenter. Gå til **Retail og Commerce** \> **Kanaloppsett** \> **Telefonsenteroppsett** \> **Parametere for telefonsenter**, og kontroller deretter at en betalingsmåte er definert i kategorien **RMA/retur** under **Betalingsmåte**. Betalingsmåten blir betalingsmåten som brukes til refunderinger. Den vil vanligvis defineres som en sjekkmetode eller en kundekontometode.

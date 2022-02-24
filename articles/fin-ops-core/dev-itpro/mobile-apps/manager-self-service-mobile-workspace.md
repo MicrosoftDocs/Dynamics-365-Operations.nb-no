@@ -1,10 +1,12 @@
 ---
 title: Mobilt arbeidsområde for mitt team
-description: Dette emnet inneholder informasjon om i det mobile arbeidsområdet Mitt team, hvor ledere kan se sine direkte underordnede og utvidede stab.
+description: Dette emnet inneholder informasjon om i det mobile arbeidsområdet Mitt team, hvor ledere kan se sine direkte underordnede og utvidede stab. Brukere kan også sende ros til personer i rapporteringskjeden sin.
 author: ShielaSogge
+manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767118"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680976"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilt arbeidsområde for mitt team
 
@@ -78,7 +80,7 @@ Laste ned og installere Finance and Operations-mobilappen:
 3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
-[![Hent for å oppdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Vise teammedlemmer ved hjelp av det mobile arbeidsområdet for Mitt team
 1.  Velg arbeidsområdet **Mitt team** i mobilappen. Det vises en liste over teammedlemmer. Listen viser også hvert teammedlems tittel og eventuelle direkte underordnede som medlemmet har.
@@ -95,6 +97,3 @@ Laste ned og installere Finance and Operations-mobilappen:
 1.  Velg **Send ros**. 
 1. Skriv inn den rosende teksten du vil sende. 
 1. Velg **Ferdig**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

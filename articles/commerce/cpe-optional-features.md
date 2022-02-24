@@ -1,31 +1,34 @@
 ---
 title: Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
+manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728297"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414539"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -100,7 +103,7 @@ E-postmalen for hver transaksjonshendelse du vil sende e-postmeldinger for, må 
 
 Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilder. Eller kanskje du vil oppdatere koblingene i malene slik at de går til evalueringsmiljøet. Trinnene nedenfor forklarer hvordan du laster ned standardmaler, tilpasser dem og oppdaterer malene i systemet.
 
-1. Bruk en webleser og last ned ZIP-filen [Microsoft Dynamics 365 Commerce Evaluering av standard e-postmaler](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
+1. Bruk en webleser og last ned [zip-fil med standard e-postmaler for Microsoft Dynamics 365 Commerce-evaluering](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
 
     - Ordrebekreftelsesmal
     - Utsted gavekort-mal
@@ -131,7 +134,7 @@ Når e-posten gjengis, ersattes disse tokenene med de faktiske verdiene som gjel
 
 Følgende tokener gjelder for den overordnede salgsordren.
 
-| Navnet på tokenet | Token |
+| Navnet på tokenet | Token  |
 |-------------------|-------|
 | Ordrenummer      | %salesid% |
 | Kundens navn   | %customername% |
@@ -157,7 +160,7 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 | Produktnavn           | %lineproductname% |
 | beskrivelse            | %lineproductdescription% |
 | Antall               | %linequantity% |
-| Linjeenhetspris        | %lineprice% (verifiser) |
+| Linjeenhetspris        | %lineprice% (kontroller) |
 | linjevaresum        | %linenetamount% |
 | linjerabatt          | %linediscount% |
 | Forsendelsesdato              | %lineshipdate% |
@@ -177,13 +180,10 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 
 [Vanlige spørsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

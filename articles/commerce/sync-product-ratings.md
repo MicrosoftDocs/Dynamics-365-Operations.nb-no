@@ -2,12 +2,15 @@
 title: Synkronisere produktvurderinger i Dynamics 365 Commerce
 description: Dette emnet beskriver hvordan du synkroniserer produktvurderinger i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967956"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414711"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronisere produktvurderinger i Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du synkroniserer produktvurderinger i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Hvis du vil bruke produktvurderinger i omnikanaler, for eksempel ved salgsstedet og i telefonsentre, må produktvurderingene fra vurderings- og omtaletjenesten importeres til handelskanaldatabasen. Når produktvurderinger gjøres tilgjengelig i omnikanaler, kan de hjelpe kundene indirekte i løpet av samhandlingen med salgspartnere.
 
@@ -57,7 +62,7 @@ Følg denne fremgangsmåten for å kontrollere at **RetailProductRating**-deljob
 
 Illustrasjonen nedenfor viser et eksempel på deljobbdetaljer i Commerce.
 
-![Detaljer i RetailProductRating-deljobben.](media/rnr-hq-ratings-sub-job.png)
+![Detaljer i RetailProductRating-deljobben](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Hvis du ikke finner deljobben **RetailProductRating** kan det hende at du allerede har kjørt jobben **Synkroniser produktvurderinger** og jobben **1040 CDX** før du initialiserte handelsplanleggeren. I dette tilfellet følger du denne fremgangsmåten for å kjøre jobben **Fullstendig datasynkronisering**.
@@ -81,7 +86,7 @@ Følg denne fremgangsmåten for å importere produktvurderinger til Commerce fra
 
 Illustrasjonen nedenfor viser et eksempel på konfigurasjon av satsvis jobb i Commerce.
 
-![Konfigurasjon av den satsvise jobben for synkroniserings produktvurderinger.](media/rnr-hq-batchjob-recurrence.png)
+![Konfigurasjon av den satsvise jobben for synkroniserings produktvurderinger](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Kontrollere at den satsvise jobben for synkronisering av produktvurdering er vellykket
 
@@ -93,7 +98,7 @@ Følg denne fremgangsmåten for å kontrollere at den satsvise jobben for **Synk
 
 Følgende illustrasjon viser et eksempel på detaljene for den satsvise jobben i Commerce når den satsvise jobben er planlagt å kjøres med totimersintervaller.
 
-![Detaljer for den satsvise jobben for synkronisering av produktvurderinger.](media/rnr-hq-batchjob-status-checking.png)
+![Detaljer for den satsvise jobben for synkronisering av produktvurderinger](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Gjør produktvurderinger tilgjengelige på salgsstedet
 
@@ -111,15 +116,15 @@ Følg denne fremgangsmåten for å slå på produktvurderinger på salgsstedet:
 
 Følgende illustrasjon viser et eksempel på konfigurasjon av handelsparametere for å slå på produktvurderinger på salgsstedet.
 
-![Konfigurasjon av handelsparametere for produktvurderinger på salgsstedet.](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfigurasjon av handelsparametere for produktvurderinger på salgsstedet](media/rnr-hq-enable-ratings-in-pos.png)
 
 Illustrasjonen nedenfor viser et eksempel på produktvurderinger på salgsstedet.
 
-![Produktvurderinger på salgsstedet.](media/rnr-pos-catalog-ratings.png)
+![Produktvurderinger på salgsstedet](media/rnr-pos-catalog-ratings.png)
 
 Illustrasjonen nedenfor viser et eksempel på produktvurderinger i telefonsenterkanaler.
 
-![Produktvurderinger i en telefonsenterkanal.](media/rnr-call-center-ratings.png)
+![Produktvurderinger i en telefonsenterkanal](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -130,16 +135,3 @@ Illustrasjonen nedenfor viser et eksempel på produktvurderinger i telefonsenter
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
-
-[Synkronisere produktvurderinger](sync-product-ratings.md)
-
-[Aktivere manuell publisering av vurderinger og vurderinger av en moderator](manual-publish-rating-reviews.md)
-
-[Importer og eksporter vurderinger og omtaler](import-export-reviews.md)
-
-[Konfigurer tjeneste-til-tjeneste-godkjenning](service-to-service-auth.md)
-
-[Vanlige spørsmål om rangeringer og anmeldelser](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

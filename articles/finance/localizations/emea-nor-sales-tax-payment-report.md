@@ -6,18 +6,21 @@ ms.author: epodkolz
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
+manager: annbe
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 86b29f9443582cf253a6d3afda0644d92240a9cee1625321ab277110a0ad6618
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0500c4ea22c2a4579d43081d5608fb01656b0ba7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750301"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408307"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 
@@ -85,7 +88,7 @@ Her er et eksempel for rapportering hver andre måned.
 ## <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurere ER modellen og formatet for rapporten
 Hvis du vil kontrollere eller endre rapporteringsformatene, må du bruke elektronisk rapporteringsfunksjonalitet (ER). Du kan finne MVA-oppgaveformatet for juridiske enheter som har en primæradresse i Norge i på siden **Konfigurasjoner** (**Organisasjonsstyring** > **Elektronisk rapportering** > **Konfigurasjoner**). I treet for ER-modeller utvider du noden **MVA-deklarerasjonsmodell** og velger deretter **MVA-deklarasjon (NO)**.
 
-Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i modelltreet. For mer informasjon, se [Elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i modelltreet. For mer informasjon, se [Elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 > [!NOTE]
 > Samme MVA-deklarasjonsmodell brukes for Østerrike, Tsjekkia, Estland, Finland, Latvia, Litauen og Norge. Denne modellen samler avgiftsdata som kreves for MVA-deklarerasjonen.
@@ -114,6 +117,3 @@ Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i mod
 
 > [!NOTE]
 > Du kan kombinere flere mva-betalinger og skrive ut én kombinert rapport/XML-fil som inneholder summerte data for alle valgte oppføringer. Du kan kombinere bare poster som er knyttet til en utligningsperiode, og som har samme verdier for **Fra-dato** og **Til-dato**. Du kan for eksempel kombinere en **Originalversjon**-post med dens **Rettelser/Siste rettelser**-post.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

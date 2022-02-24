@@ -1,10 +1,12 @@
 ---
 title: Registrere forbruk
 description: Dette emnet forklarer hvordan du registrerer forbruk i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765591"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020787"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -54,7 +56,7 @@ I noen tilfeller kan du legge til eller slette prognoselinjer i en arbeidsordre.
 
 Skjermbildet nedenfor viser et eksempel på time- og vareregistreringer for en arbeidsordre i **Arbeidsordrejournaler**.
 
-![Figur 1.](media/01-consumption.png)
+![Figur 1](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Dele timer i arbeidsordrer med flere arbeidsordrejobber
@@ -73,13 +75,13 @@ Hvis en arbeidsordre inneholder flere arbeidsordrejobber, kan du registrere arbe
 
 6. Sett inn antall arbeidstimer som skal deles, i **Timer**-feltet.
 
-    ![Figur 2.](media/02-consumption.png)
+    ![Figur 2](media/02-consumption.png)
 
 7. Klikk på **OK**.
 
 *Eksempel:* I skjermbildet nedenfor vises journallinjer for en arbeidsordre som inneholder tre arbeidsordrejobber. Den første linjen som inneholder tre arbeidstimer, er delt, og én arbeidstime er registrert på hver arbeidsordrejobb. Når de tre timeregistreringslinjene er opprettet, bestemmer du hva du skal gjøre med den opprinnelige timeregistreringslinjen (den første linjen i eksemplet). Du kan beholde den slik den er, eller slette den. 
 
-![Figur 3.](media/03-consumption.png)
+![Figur 3](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Finansdimensjoner på forbruksregistreringer
 
@@ -92,6 +94,3 @@ Når du utfører forbruksregistreringer, legges finansdimensjoner som er knyttet
 >[!NOTE]
 >For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standard oppsett med andre Finance and Operations-apper.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Skjermoppsett for demonstrasjonsdata i Moderne salgssted (MPOS) og Skysalgssted
 description: Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Dynamics 365 Commerce.
 author: josaw1
+manager: AnnBe
 ms.date: 10/05/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761668"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4414800"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Skjermoppsett for demonstrasjonsdata i Moderne salgssted (MPOS) og Skysalgssted
 
@@ -33,13 +36,13 @@ Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet me
 
 Eksempelskjermoppsett som er inkludert i Handel-demonstrasjonsdata har innhold som er optimalisert for forskjellige segmenter for detaljhandel, butikkarbeiderroller og enheter. Ett enkelt oppsett kan inneholde flere oppsettstørrelser og kombinasjoner av knappegrupper for å sikre dekning når butikkarbeidere flytter mellom enheter og stasjoner. Dette emnet fremhever forskjellene mellom disse oppsettene, operasjonene som de gir og de helhetlige opplevelsene som de leverer.
 
-![Oppsett for demonstrasjonsdata på tvers av enheter.](../commerce/media/demo-screen-layouts-fig-1-1.png)
+![Oppsett for demonstrasjonsdata på tvers av enheter](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Innholdet i en skjermoppsett-ID
 
 Hvis du vil finne skjermoppsett, går du til **Detaljhandel og handel** \> **Kanaloppsett** \> **Oppsett av salgssted** \> **Salgssted** \> **Skjermoppsett**.
 
-![Skjermoppsett-side.](../commerce/media/demo-screen-layouts-fig-2-1.png)
+![Skjermoppsett-side](../commerce/media/demo-screen-layouts-fig-2-1.png)
 
 Skjermoppsett-ID-er kan inneholde opptil ti tegn. ID-en er en streng som består av tre typer informasjon i denne rekkefølgen:
 
@@ -47,12 +50,12 @@ Skjermoppsett-ID-er kan inneholde opptil ti tegn. ID-en er en streng som består
 2. Oppsettversjon
 3. Egenskap
 
-### <a name="company"></a>Bedrift
+### <a name="company"></a>Firma
 
-| Brev | Bedrift         |
+| Brev | Firma         |
 |--------|-----------------|
 | A      | Adventure Works |
-| F      | Fabrikam        |
+| Ø      | Fabrikam        |
 | K      | Contoso         |
 
 ### <a name="layout-version"></a>Oppsettversjon
@@ -79,7 +82,7 @@ F4MGR
 
 Illustrasjonen nedenfor viser et eksempel på velkomstskjermen for Fabrikam-butikksjef.
 
-![Velkomstskjermen for Fabrikam-butikksjefen.](../commerce/media/demo-screen-layouts-fig-2-2.png)
+![Velkomstskjermen for Fabrikam-butikksjefen](../commerce/media/demo-screen-layouts-fig-2-2.png)
 
 ## <a name="layout-sizes"></a>Oppsettstørrelser
 
@@ -108,7 +111,7 @@ Tabellen nedenfor viser oppsettstørrelsene som finnes for vanlige skjermoppløs
 > [!TIP]
 > POS velger automatisk oppsettstørrelser basert på den nærmeste størrelsen som er tilgjengelig for skjermoppløsningen for gjeldende appvindu. Hvis du vil finne skjermoppsett-ID og oppsettoppløsning som brukes for øyeblikket i Moderne salgssted (MPOS) eller Detaljhandel-skysalgssted (CPOS), kan du åpne siden **Innstillinger** og se i delen **Øktinformasjon**. Du kan også se den faktiske vindusoppløsningen for gjeldende appe eller nettleserramme. Når du har denne informasjonen, kan du finne kilden til oppsettinnholdet ved å gå til **Kanaloppsett** \> **Salgsstedsoppsett** \> **Salgssted** \> **Skjermoppsett**.
 
-![Skjermoppsett og oppsettoppløsninger/-størrelser i Handel og Salgssted.](../commerce/media/demo-screen-layouts-fig-3-1.png)
+![Skjermoppsett og oppsettoppløsninger/-størrelser i Handel og Salgssted](../commerce/media/demo-screen-layouts-fig-3-1.png)
 
 ## <a name="companies-and-brands"></a>Firmaer og merker
 
@@ -129,19 +132,19 @@ Illustrasjonene nedenfor viser eksempler på velkomstsiden og transaksjonssiden 
 
 ### <a name="adventure-works"></a>Adventure Works
 
-![Velkomstside for Adventure Works med demonstrasjonsdata.](../commerce/media/demo-screen-layouts-fig-4-1a.png)
+![Velkomstside for Adventure Works med demonstrasjonsdata](../commerce/media/demo-screen-layouts-fig-4-1a.png)
 
-![Transaksjonsside for Adventure Works med demonstrasjonsdata.](../commerce/media/demo-screen-layouts-fig-4-1b.png)
+![Transaksjonsside for Adventure Works med demonstrasjonsdata](../commerce/media/demo-screen-layouts-fig-4-1b.png)
 
 ### <a name="fabrikam"></a>Fabrikam
 
-![Velkomstside for Fabrikam med demonstrasjonsdata.](../commerce/media/demo-screen-layouts-fig-4-2a.png)
+![Velkomstside for Fabrikam med demonstrasjonsdata](../commerce/media/demo-screen-layouts-fig-4-2a.png)
 
-![Transaksjonsside for Fabrikam med demonstrasjonsdata.](../commerce/media/demo-screen-layouts-fig-4-2b.png)
+![Transaksjonsside for Fabrikam med demonstrasjonsdata](../commerce/media/demo-screen-layouts-fig-4-2b.png)
 
 ### <a name="contoso"></a>Contoso
 
-![Oppsett for demonstrasjonsdata for Contoso.](../commerce/media/demo-screen-layouts-fig-4-3.png)
+![Oppsett for demonstrasjonsdata for Contoso](../commerce/media/demo-screen-layouts-fig-4-3.png)
 
 ## <a name="user-sign-in-matrix"></a>Matrise for brukerpålogging
 
@@ -157,7 +160,7 @@ Brukere er angitt for de forskjellige skjermoppsettene. Ved å bruke tabellen ne
 | Fabrikam        | F3STK            | Lagermedarbeider   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikksjef | 000100, 000111         |
 | Contoso         | C3CSH            | Kasserer       | 000110, 000120         |
-| Contoso         | Gjelder ikke   | Lagermedarbeider   | Gjelder ikke         |
+| Contoso         | Gjelder ikke her   | Lagermedarbeider   | Gjelder ikke her         |
 
 > [!TIP]
 > Aktivere en kasse på den tilsvarende butikklokasjonen for best mulig resultat, og angi firmaet til personen som du vil bruke når du logger på. På denne måten kan bidra til å garantere at den visuelle profilen og merkebildene er justert på tvers av opplevelsen. Hvis du for eksempel er interessert i å vise et Fabrikam-oppsett for en kasserer, kan du aktivere en kasse i Houston-butikken.
@@ -168,11 +171,8 @@ Brukere er angitt for de forskjellige skjermoppsettene. Ved å bruke tabellen ne
 
 <!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 Commerce.](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce](../commerce/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../commerce/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 
 <!-- END HIDDEN CONTENT -->
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

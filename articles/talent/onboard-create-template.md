@@ -62,6 +62,3 @@ Microsoft Dynamics 365 Talent: Onboard inneholder ulike maler som kan hjelpe deg
 - [Hva er nytt eller endret i Dynamics 365 Talent](./whats-new.md)
 - [Lanseringsplaner](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Få kundestøtte for Microsoft Dynamics 365 Talent](./talent-support.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

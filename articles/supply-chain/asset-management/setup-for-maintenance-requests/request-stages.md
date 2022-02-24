@@ -1,10 +1,12 @@
 ---
 title: Livssyklustilstander for melding
 description: Dette emnet beskriver hvordan du definerer livssyklustilstander for meldinger i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ece0fc1121211706350d804fec59e72ef08282fcba4e65f557a510834738b11
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3c2f717969b938d05e68ac775d31b6a5d5ec26a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743680"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022086"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Livssyklustilstander for melding
 
@@ -48,7 +50,7 @@ Livssyklustilstander for meldinger definerer stadiene som en forespørsel kan g�
 
 Illustrasjonen nedenfor viser et eksempel på siden **Livssyklustilstander for melding**.
 
-![Siden Livssyklustilstander for melding.](media/02-setup-for-requests.png)
+![Siden Livssyklustilstander for melding](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Livssyklustilstander for meldinger, livssyklustilstandsgrupper og -typer er knyttet til, og brukes på samme måte som, livssyklustilstander for arbeidsordre, livssyklustilstandsgrupper og -typer. 
@@ -66,9 +68,9 @@ Når du har opprettet livssyklustilstandene som kreves for meldingene dine, kan 
 
 5. I hurtigfanen **Livssyklustilstander** velger du livssyklustilstandene som skal inkluderes i livssyklusmodellen:
 
-    - Hvis du vil inkludere en livssyklustilstand i livssyklusmodellen, velger du den i delen **Gjenværende livssyklustilstander**, og deretter velger du pil høyre ![Pil høyre.](media/03-setup-for-requests.png) for å flytte den til delen **Valgte livssyklustilstander**.
-    - Hvis du vil inkludere alle tilgjengelige livssyklustilstander i livssyklusmodellen, velger du **Velg alle tilgjengelige tilstander**-knappen ![Velg alle tilgjengelige tilstander.](media/04-setup-for-requests.png). Alle livssyklustilstander flyttes til delen **Valgte livssyklustilstander**.
-    - Hvis du vil fjerne en livssyklustilstand fra livssyklusmodellen, velger du den i delen **Valgte livssyklustilstander**, og deretter velger du pil venstre ![Pil venstre.](media/05-setup-for-requests.png) for å flytte den til delen **Gjenværende livssyklustilstander**.
+    - Hvis du vil inkludere en livssyklustilstand i livssyklusmodellen, velger du den i delen **Gjenværende livssyklustilstander**, og deretter velger du pil høyre ![Pil høyre](media/03-setup-for-requests.png) for å flytte den til delen **Valgte livssyklustilstander**.
+    - Hvis du vil inkludere alle tilgjengelige livssyklustilstander i livssyklusmodellen, velger du **Velg alle tilgjengelige tilstander**-knappen ![Velg alle tilgjengelige tilstander](media/04-setup-for-requests.png). Alle livssyklustilstander flyttes til delen **Valgte livssyklustilstander**.
+    - Hvis du vil fjerne en livssyklustilstand fra livssyklusmodellen, velger du den i delen **Valgte livssyklustilstander**, og deretter velger du pil venstre ![Pil venstre](media/05-setup-for-requests.png) for å flytte den til delen **Gjenværende livssyklustilstander**.
 
 6. I hurtigfanen **Generelt** er feltene i delen **Oppdateringer** relevante hvis du bruker depotreparasjon.
 
@@ -77,7 +79,4 @@ Når du har opprettet livssyklustilstandene som kreves for meldingene dine, kan 
 
 Illustrasjonen nedenfor viser et eksempel på siden **Livssyklusmodeller for melding**.
 
-![Siden Livssyklusmodeller for melding.](media/06-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Siden Livssyklusmodeller for melding](media/06-setup-for-requests.png)

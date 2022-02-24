@@ -2,9 +2,11 @@
 title: Tilordne brukere til sikkerhetsroller
 description: Brukere må tilordnes sikkerhetsroller for å få tilgang til Finance and Operations-apper.
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d65c4dafda63b7a54dd343652b0f4b498e064f4aee0fba43c34d40d73ac5062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748342"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679870"
 ---
 # <a name="assign-users-to-security-roles"></a>Tilordne brukere til sikkerhetsroller
 
@@ -55,6 +57,3 @@ Brukere som manuelt tilordnes til sikkerhets roller, må også fjernes manuelt a
 2. I treet velger du en rolle, og i menyen **Tilordne/utelate brukere manuelt** velger du **Tilordne/utelate brukere manuelt**.
 4. I listen **Tilordne brukere til, eller utelat brukere fra rolle** vises brukere som ikke er tilordnet rollen, i modusen **Tilordningsmodus** er angitt til **Ingen**. Velg én eller flere brukere som skal tilordnes rollen.
 5. I **Handlingsrute** velger du **Tilordne til rolle**. **Tilordningsmodus** er oppdatert til **Manuell**, og brukerne har nå en ny rolle tilordnet.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

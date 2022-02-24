@@ -2,29 +2,36 @@
 title: Produktsamlingsmoduler
 description: Dette emnet gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 01/28/2021
-ms.topic: overview
+manager: annbe
+ms.date: 09/15/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984550"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414515"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Produktgjenkjenning er et primærverktøy som forhandlere bruker for å engasjere seg med kundene på et webområde for e-handel. Produktsamlingsmoduler hjelper forhandlere med å bygge overbevisende handleopplevelser ved å tilby et intuitivt, visuelt grensesnitt som kan brukes til å utforme produktsamlinger raskt.
 
@@ -39,7 +46,7 @@ Kildene for produktsamlinger kan være lister med følgende fire typer:
 
 Følgende illustrasjon viser de ulike typene produktsamlinger som brukes på et e-handelsområde.
 
-![Eksempel på de ulike typene produktsamlinger på et e-handelsområde.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Eksempel på de ulike typene produktsamlinger på et e-handelsområde](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Bruk alltid produktsamlingsmoduler til å vise en gruppe med produkter av en lignende type.
@@ -60,10 +67,6 @@ Følgende tabell beskriver ulike typer produktsamlingsmoduler i Dynamics 365 Com
 | Kjøpes ofte sammen | Kunstig intelligens / maskinlæring | Denne modulen bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale relaterte varer som kjøpes ofte sammen med et gitt produkt. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
 | Andre liker også           | Kunstig intelligens / maskinlæring | Denne modulen bruker maskinopplæring til å analysere forbrukskjøpsmønstre og anbefale varer som er relatert til et gitt produkt. Denne listen kan vise personlige resultater for en pålogget bruker hvis områdeforfatteren velger dette alternativet. |
 | Plukkinger for deg              | Kunstig intelligens / maskinlæring | Denne modulen bruker maskinlæring til å analysere kjøpsmønstrene for den påloggede brukeren og gi personlige anbefalinger som er basert på disse kjøpsmønstrene. For en gjestebruker vil denne listen være skjult. |
-
-## <a name="supported-modules"></a>Støttede moduler 
-
-Produktsamlingsmodulen støtter [hurtigvisningsmodulen](quick-view-module.md), som gjør det mulig for brukere å vise produktinformasjon og legge til varer i handlekurven fra en produktsamlingsside.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Legge til en produktsamlingsmodul på en kategoriside
 
@@ -106,8 +109,3 @@ Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen 
 [Kjøpsboksmodul](add-buy-box.md)
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
-
-[Hurtigvisningsmodul](quick-view-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

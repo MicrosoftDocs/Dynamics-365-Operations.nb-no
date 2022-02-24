@@ -2,23 +2,26 @@
 title: Føre utsatt inntekt
 description: Dette emnet inneholder informasjon om hvordan du fører inntekt ved hjelp av funksjonen Inntektsføring.
 author: kweekley
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: f6b221104d7012d82a0021b6d8f9cc10fe44cb7b8f3473ab8e7ae7a89be0a5e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726116"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459643"
 ---
 # <a name="recognize-deferred-revenue"></a>Føre utsatt inntekt
 
@@ -36,7 +39,7 @@ Det finnes to måter å få tilgang til detaljene i inntektsføringsplanen på.
 - Du kan åpne inntektsføringsplanen direkte fra en fakturert salgsordre. I dette tilfellet filtreres informasjonen i inntektsplanen for å vise detaljene bare for den valgte salgsordren. Denne fremgangsmåten er nyttig når du skal validere tidsplandetaljene for en salgsordre.
 - Du kan åpne tidsplanen for inntektsføring fra siden **Inntektsføring \>Periodiske oppgaver**. Denne fremgangsmåten brukes ofte når inntekt føres på slutten av en periode. Når siden åpnes for første gang, vises ingen informasjon. Bruk filtrene over rutenettet til å definere kriterier for tidsplandetaljene som skal vises. Du kan filtrere etter fakturadatoene ved å angi et datointervall, en salgsordre, en kunde, en prosjekt-ID eller en status.
 
-[![Illustrasjon av siden Inntektsplaner.](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
+[![Side for inntektsplaner](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 Hurtigfanen **Finansdimensjon** under rutenettet viser finansdimensjonene til salgsordrelinjen. Disse dimensjonene ble vurdert under postering til utsatt inntekt. De tas også hensyn til når inntekten føres. Dimensjonsverdiene som brukes, er avhengig av kontostrukturen som er tilordnet til inntekten og de utsatt inntektshovedkontoene.
 
@@ -46,7 +49,7 @@ Du fører inntekt ved å kjøre prosessen **Opprett journal** fra siden **Føre 
 
 Hvis du vil definere kriteriene for valg og postering av inntekt, velger du **Opprett journal** for å åpne dialogboksen **Opprett journal**.
 
-[![Opprett alternativer for journalparametere.](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
+[![Opprette alternativer for journalparametere](./media/revenue-recognition-create-journal.png)](./media/revenue-recognition-create-journal.png)
 
 I dialogboksen bruker du alternativene i feltgruppen **Behandlingsdato** til å definere posteringsdatoen som brukes når inntekten føres. Hvis du velger **Valgt dato**, kan du angi en posteringsdato i feltet **Transaksjonsdato**. Hvis du velger **Inntektsplandato**, brukes ikke transaksjonsdatoen. I stedet brukes verdien i feltet **Føringsdato** på hver linje i planen som posteringsdatoen.
 
@@ -56,11 +59,11 @@ Når du er ferdig med å definere datoene, velger du **OK** i dialogboksen for �
 
 Når prosessen er kjørt, merkes linjene i planen som ble overført til journalen, som **Behandlet**. Flagget **Behandlet** angir at linjene er overført til journalen, men de kan være posterte eller uposterte. Når journalen for inntektsføringen er postert, blir flagget **Behandlet** værende. Hvis journalen for inntektsføring er slettet, eller hvis en linje slettes, fjernes flagget **Behandlet**. På den måten kan linjen føres når prosessen **Opprett journal** kjøres på nytt.
 
-[![Side for inntektsføringsplaner.](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
+[![Side for inntektsføringsplaner](./media/revenue-recognition-rev-recog-schedule-02.png)](./media/revenue-recognition-rev-recog-schedule-02.png)
 
 Åpne **Linjer** på siden **Journal for inntektsføring** (**Inntektsføring \> Journaloppføringer \> Journal for inntektsføring**) for å vise detaljene for hva som blir ført. En egen transaksjon opprettes alltid for hver linje i planen som blir ført, selv om alle linjene posteres på samme dato ved hjelp av de samme finanskontoene.
 
-[![Siden Journalbilag.](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
+[![Siden Journalbilag](./media/revenue-recognition-journal-voucher.png)](./media/revenue-recognition-journal-voucher.png)
 
 Kolonnen **Konto** viser den utsatte finanskontoen for inntekt. Denne finanskontoen kan ikke redigeres. Denne begrensningen bidrar til å garantere at den riktige utsatte inntektsfinanskontoen frigis. Denne finanskontoen valideres ikke mot kontostrukturen, fordi den kan ha blitt endret siden postering til den refererte inntektsfinanskontoen sist oppstod.
 
@@ -82,7 +85,7 @@ Noen redigeringer er tillatt på linjene i tidsplanen. Følgende felt kan endres
 
 - **På vent** – dette flagget kan angis eller fjernes før linjen behandles. Hvis du vil fjerne flagget, merker du raden og velger **Fjern sperre**. Inntekt kan ikke føres på linjer som er på vent. Linjer kan settes på vent hvis inntektsplanen er satt opp for automatiske sperringer.
 
-    [![Inntektsplaner – rediger tidsplanlinjer.](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+    [![Inntektsplaner – redigere tidsplanlinjer](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 - **Føringsdato** – føringsdatoen kan endres før linjen behandles. Når prosessen som oppretter journalen for å føre inntekten, kjøres, angis det en dato i feltet **Før inntekt per dato**. Datoen sammenlignes med datoen i feltet **Føringsdato** for å bestemme hvilke linjer som skal føres.
 - **Beløp som skal frigis** – beløpet som blir frigitt, kan endres før linjen behandles. Du kan redusere inntektsbeløpet som føres, men du kan ikke øke det. Dette feltet gjør det mulig for en organisasjon å føre deler av inntekten på føringsdatoen. Hvis beløpet endres, viser beløpet i feltet **Restbeløp** hvor mye inntekt som fortsatt må føres.
@@ -94,18 +97,15 @@ Detaljene for inntektsplanen blir opprettet basert på inntektsplanen som er til
 
 Hvis du vil endre tidsplanen, velger du en hvilken som helst tidsplanlinje for varen du vil endre. I illustrasjonen nedenfor er linjen for vare S0008, som ble postert ved hjelp av en inntektsplan på 12 måneder, valgt. Når du velger **Oppdater kontraktsbetingelser**, viser en dialogboks kontraktens start- og sluttdatoer og inntektsplanen.
 
-[![Start- og sluttdatoer for kontrakt.](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
+[![Start- og sluttdatoer for kontrakt](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule.png)
 
 Endre start- og sluttdatoene for kontrakten slik at de gjenspeiler riktig datointervall. Når du endrer datointervallet, må verdien i feltet **Antall forekomster** samsvare med en inntektsplan som er definert i systemet. I dette eksemplet må det defineres en tidsplan for en 24-måneders inntekt, fordi kontrakten er endret til en 24-måneders kontrakt. Ettersom det finnes en inntektsplan på 24 måneder, angis den som standard, og kontrakten kan endres. Hvis en inntektsplan som har et tilsvarende antall forekomster, ikke finnes, kan ikke kontrakten endres. Når du er ferdig med å oppdatere kontraktsvilkårene og inntektsplanen etter behov, velger du **OK** i dialogboksen for å lagre endringene.
 
-[![Oppdatert datointervall for kontrakt.](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
+[![Oppdatert datointervall for kontrakt](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)](./media/revenue-recognition-rev-revenue-schedule-update-cntrct-dates-schedule-02.png)
 
 Kontraktsendringene har følgende innvirkning på detaljene for inntektsplanen:
 
 - Hvis det ikke er noen inntekt for produktet, fjernes alle de forrige planleggingsdetaljene og de erstattes med de nye tidsplandetaljene for inntekt. Vare S0008 hadde for eksempel opprinnelig 12 linjer i tidsplandetaljene. Disse 12 linjene fjernes og erstattes med 24 linjer, basert på den nye inntektsplanen.
 - Hvis det er ført inntekt for produktet, ble deler av inntekten feilaktig ført fordi føringen var basert på feil inntektsplan. Disse linjene må tilbakeføres og føres på nytt basert på den nye planen. I dette scenariet opprettes det nye inntektsplanlinjer som har negative beløp på den opprinnelige føringsdatoen. Nye linjer opprettes deretter for å føre beløpene basert på den nye inntektsplanen. 8. august 2019 førte du for eksempel en inntekt på USD 10,53. Den 8. september 2019 førte du en inntekt på USD 13,16. Derfor opprettes det to nye linjer på samme dato. En linje gjelder for USD 10,53, og den andre linjen gjelder for USD 13,16. Tjuefire nye linjer opprettes, og den totale utsatte inntekten på USD 160,61 tildeles på tvers av dem. Du kan postere tilbakeføringslinjene ved å kjøre prosessen **Opprett journal**.
 
-[![Inntektsføringsplan.](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Inntektsføringsplan](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)

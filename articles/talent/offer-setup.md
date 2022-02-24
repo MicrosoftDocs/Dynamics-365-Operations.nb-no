@@ -209,6 +209,3 @@ Det er flere deler av tilbudsopprettingsprosessen som kan konfigureres av en Att
 
 
 Hvis du vil vite mer om tilbudsopprettingsprosessen, kan du se [Opprette, godkjenne og signere tilbud](./creating-offers.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,6 +85,3 @@ Det finnes flere årsaker til hvorfor du ikke kan se alle Attract-funksjonene so
 
 - Din kollega arbeider med en prøveversjon eller en lisens for Attract med tillegget for omfattende ansettelse, mens du arbeider med den grunnleggende versjonen av Attract.
 - Du har Attract med tillegget for omfattende ansettelse, men du ikke er tilordnet de riktige rollene, slik at du kan bruke alle funksjonene. Hvis du vil ha mer informasjon, kan du se [Administrasjon av sikkerhet og rolle i Attract](security-attract.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -157,6 +157,3 @@ Kandidater er personer som er lagt til i en talentsamling, men som ikke er knytt
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil – kandidatdetaljer | Opprette, lese, oppdatere og slette | Opprette, lese, oppdatere og slette | Ingen tilgang   |
 | Dokumenter                   | Opprette, lese, oppdatere og slette | Opprette, lese, oppdatere og slette | Ingen tilgang   |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

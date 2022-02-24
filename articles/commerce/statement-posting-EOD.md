@@ -1,25 +1,31 @@
 ---
 title: Forbedringer for utdragsposteringsfunksjonalitet
 description: Dette emnet beskriver forbedringene som er gjort i funksjonen for utdragspostering.
-author: analpert
-ms.date: 01/31/2022
+author: josaw1
+manager: AnnBe
+ms.date: 05/14/2019
 ms.topic: article
-audience: Application User, Developer, IT Pro
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
-ms.author: analpert
+ms.search.industry: retail
+ms.author: anpurush
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087609"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414715"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer for utdragsposteringsfunksjonalitet
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver det første settet med forbedringer som er gjort i funksjonen for utdragspostering. Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -50,24 +56,12 @@ Som en del av forbedringene for funksjonen for utdragspostering har tre nye para
 
 - **Deaktivering av opptelling kreves** – når dette alternativet er satt til **Ja**, fortsetter posteringsprosessen for et utdrag, selv om forskjellen mellom det talte beløpet og transaksjonsbeløpet på utdraget er utenfor terskelen som er definert i den **Utdrag** hurtigfane for butikker.
 
-> [!NOTE]
-> Fra og med utgivelsen av Commerce versjon 10.0.14, når funksjonen **Detaljhandelsutdrag – feedbasert** er aktivert, er den satvise jobben **Poster beholdning** ikke lenger aktuell og kan ikke kjøres.
-
 I tillegg er følgende parametere introdusert i hurtigfanen **Satsvis behandling** i kategorien **Postering** på siden **Parametere for Commerce**: 
 
 - **Maksimalt antall parallell kontoutdragspostering** – Dette feltet definerer antall satsvise oppgaver som skal brukes til å postere flere utdrag. 
 - **Maks. tråd for ordrebehandling per utdrag** – Dette feltet viser det maksimale antallet tråder som brukes av den satsvise jobben for utdragspostering for å opprette og fakturere salgsordrer for ett enkelt utdrag. Det totale antallet tråder som vil bli brukt av utdragsposteringsprosessen, beregnes basert på verdien i denne parameteren multiplisert med verdien i parameteren **Maksimalt antall parallell kontoutdragspostering**. Hvis du angir verdien for denne parameteren for høyt, kan det ha negativ innvirkning på ytelsen til utdragsposteringsprosessen.
 - **Maks. transaksjonslinjer inkludert i aggregering** – Dette feltet definerer antall transaksjonslinjer som skal inkluderes i en enkelt aggregert transaksjon før det opprettes en ny. Aggregerte transaksjoner opprettes basert på forskjellige aggregeringskriterier, for eksempel kunde, forretningsdato eller finansdimensjoner. Det er viktig å merke seg at linjene fra en enkelt transaksjon ikke vil bli delt på tvers av forskjellige aggregerte transaksjoner. Dette betyr at det er en mulighet for at antall linjer i en aggregert transaksjon er litt høyere eller lavere, basert på faktorer som antall forskjellige produkter.
 - **Maksimalt antall tråder for å validere butikktransaksjoner** – Dette feltet definerer antall tråder som skal brukes til å validere transaksjoner. Validering av transaksjoner er et obligatorisk trinn som må inntreffe før transaksjonene kan overføres til utdragene. Du må også definere et **Gavekortprodukt** i hurtigfanen **Gavekort** i kategorien **Postering** på siden **Parametere for Commerce**. Dette må defineres selv om gavekort ikke brukes av organisasjonen.
-
-Følgende tabell viser de anbefalte verdiene for de foregående parameterne. Disse verdiene bør testes og tilpasses distribusjonskonfigurasjonen og tilgjengelig infrastruktur. Enhver økning i de anbefalte verdiene kan gå ut over annen satsvis behandling og bør valideres.
-
-| Parameter | Anbefalt verdi | Detaljer |
-|-----------|-------------------|---------|
-| Maksimalt antall parallell kontoutdragspostering | <p>Sett denne parameteren til antallet satsvise oppgaver som er tilgjengelige for den satsvise gruppen som kjører **Utdrag**-jobben.</p><p>**Generell regel:** Multipliser antallet virtuelle AOS-servere (Application Object Server) med antallet satsvise oppgaver som er tilgjengelige per virtuelle AOS-server.</p> | Denne parameteren er ikke aktuell når funksjonen **Detaljhandelsutdrag – feedbasert** er aktivert. |
-| Maksimal tråd for ordrebehandling per utdrag | Start testing av verdier fra **4**. Verdien bør vanligvis ikke overskride **8**. | Denne parameteren angir antallet tråder som brukes til å opprette og postere salgsordrer. Den representerer antallet tråder som er tilgjengelige for postering per utdrag. |
-| Maksimalt antall transaksjonslinjer som er inkludert i aggregering | Start testing av verdier fra **1000**. Mindre ordrer kan gi bedre ytelse, avhengig av konfigurasjonen av hovedkontoret. | Denne parameteren bestemmer antall linjer som skal inkluderes i hver salgsordre under utdragspostering. Når dette nummeret nås, blir linjer delt inn i en ny ordre. Selv om antall salgslinjer ikke vil være nøyaktige, fordi delingen skjer på salgsordrenivå, vil den være nær nummeret som er angitt. Denne parameteren brukes til å generere salgsordrer for handelstransaksjoner som ikke har en navngitt kunde. |
-| Maksimalt antall tråder for å validere butikktransaksjoner | Vi anbefaler at du angir denne parameteren til **4**, og at du bare øker den hvis du ikke oppnår akseptabel ytelse. Antallet tråder som denne prosessen bruker, kan ikke overskride antall prosessorer som er tilgjengelige for den satsvise serveren. Hvis du tilordner for mange tråder her, kan du påvirke annen satsvis behandling. | Denne parameteren styrer antall transaksjoner som kan valideres samtidig for en angitt butikk. |
 
 > [!NOTE]
 > Alle innstillingene og parameterne som er knyttet til utdragsposteringer, og som er definert for butikker og på siden **Parametere for Commerce**, gjelder for den forbedrede funksjonen for utdragspostering.
@@ -125,17 +119,9 @@ Et utdrag går gjennom ulike operasjoner (for eksempel, Opprett, Beregn, Slett o
 
 ### <a name="aggregated-transactions"></a>Aggregerte transaksjoner
 
-I løpet av posteringsprosessen samles hentesalgstransaksjoner etter kunde og produkt. Derfor reduseres antall salgsordrer og linjer som opprettes. De samlede transaksjonene lagres i systemet og brukes til å opprette salgsordrer. Hver samlet transaksjon oppretter én tilsvarende salgsordre i systemet. 
+Under posteringsprosessen samles salgstransaksjonene basert på konfigurasjonen. Disse samlede transaksjonene lagres i systemet og brukes til å opprette salgsordrer. Hver samlet transaksjon oppretter én tilsvarende salgsordre i systemet. Du kan vise de samlede transaksjonene ved hjelp av **Aggregerte transaksjoner**-knappen i gruppen **Utførelsesdetaljer** av utdraget.
 
-Hvis et utdrag ikke er postert fullt ut, kan du vise oppsamlete transaksjoner i utdraget. Velg **Aggregerte transaksjoner** i gruppen **Utførelsesdetaljer** i fanen **Utdrag** i handlingsruten.
-
-![Akkumulerte transaksjoner-knappen for et utdrag som ikke er postert helt.](media/aggregated-transactions.png)
-
-For posterte utdrag kan du vise aggregerte transaksjoner på siden **Posterte utdrag**. I handlingsruten velger du **Forespørsler** og deretter **Aggregerte transaksjoner**.
-
-![Aggregerte transaksjoner-kommando for posterte utdrag.](media/aggregated-transactions-posted-statements.png)
-
-Hurtigfanen **Salgsordredetaljer** for en aggregert transaksjon viser følgende informasjon:
+Kategorien **Salgsordredetaljer** for en aggregert transaksjon viser følgende informasjon:
 
 - **Post-ID** – ID-en for den aggregerte transaksjonen.
 - **Utdragsnummer** – utdraget som den aggregerte transaksjonen tilhører.
@@ -144,26 +130,10 @@ Hurtigfanen **Salgsordredetaljer** for en aggregert transaksjon viser følgende 
 - **Antall aggregerte linjer** – totalt antall linjer for den aggregerte transaksjonen og salgsordren.
 - **Statusr** – forrige status for den aggregerte transaksjonen.
 - **Faktura-ID** – når salgsordren for den aggregerte transaksjonen er fakturert, er dette ID-en for salgsfakturaen. Hvis dette feltet er tomt, er fakturaen for salgsordren ikke postert.
-- **Feilkode** – Dette feltet er angitt hvis aggregeringen har en feilstatus.
-- **Feilmelding** – Dette feltet er angitt hvis aggregeringen har en feilstatus. Den viser detaljer om hva som forårsaket at prosessen mislyktes. Du kan bruke informasjonen i feilkoden til å løse problemet, og deretter starte prosessen på nytt manuelt. Alt etter løsningstypen kan det hende at akkumulert salg må slettes og behandles på et nytt utdrag.
 
-![Felt i hurtigfanen Salgsordredetaljer for en akkumulert transaksjon.](media/aggregated-transactions-error-message-view.png)
+Kategorien **Transaksjonsdetaljer** for en aggregert transaksjon viser alle transaksjoner som har blitt hentet til den aggregerte transaksjonen. De aggregerte linjene på den aggregerte transaksjonen viser alle de aggregerte postene fra transaksjoner. De aggregerte linjene viser også detaljer, for eksempel vare, variant, antall, pris, nettobeløp, enhet og lager. I utgangspunktet tilsvarer hver aggregerte linje én salgsordrelinje.
 
-Hurtigfanen **Transaksjonsdetaljer** for en aggregert transaksjon viser alle transaksjoner som har blitt hentet til den aggregerte transaksjonen. De aggregerte linjene på den aggregerte transaksjonen viser alle de aggregerte postene fra transaksjoner. De aggregerte linjene viser også detaljer, for eksempel vare, variant, antall, pris, nettobeløp, enhet og lager. I utgangspunktet tilsvarer hver aggregerte linje én salgsordrelinje.
-
-![Hurtigfanen Transaksjonsdetaljer for en akkumulert transaksjon.](media/aggregated-transactions-sales-details.png)
-
-I noen situasjoner kan aggregerte transaksjoner ikke postere den konsoliderte salgsordren. I disse situasjonene vil en feilkode bli knyttet til utdragsstatusen. Hvis du bare vil vise aggregerte transaksjoner som har feil, kan du aktivere filteret **Vis bare feil** i visningen for aggregerte transaksjoner ved å merke av for boksen. Ved å aktivere dette filteret begrenser du resultatene til aggregerte transaksjoner som har feil som krever løsning. Hvis du vil ha informasjon om hvordan du løser disse feilene, kan du se [Redigere og overvåke nettordretransaksjoner og asynkrone kundeordretransaksjoner](edit-order-trans.md).
-
-![Merk av for filteret Vis bare feil i visningen for akkumulerte transaksjoner.](media/aggregated-transactions-failure-view.png)
-
-På siden **Aggregerte transaksjoner** kan du laste ned XML for en bestemt aggregert transaksjon ved å velge **Eksporter aggregerte data**. Du kan se gjennom XMLen i et hvilket som helst XML-format for å se de faktiske dataene som omfatter oppretting og postering av salgsordrer. Funksjonen for å laste ned XML for aggregerte transaksjoner er ikke tilgjengelig for utdrag som er postert.
-
-![Eksporter aggregerte data-knappen på siden Aggregerte transaksjoner.](media/aggregated-transactions-export.png)
-
-Hvis du ikke kan reparere feilen ved å rette data i salgsordren eller dataene som støtter salgsordren, er knappen **Slett kundeordre** tilgjengelig. Hvis du vil slette en ordre, velger du den oppsamlede transaksjonen som mislyktes, og deretter velger du **Slett kundeordre**. Både dem aggregerte transaksjonen og den tilsvarende salgsordren slettes. Nå kan du se gjennom transaksjonene ved hjelp av redigerings- og revisjonsfunksjonen. Et alternativ er å behandling på nytt via et nytt utdrag. Når alle feil er løst, kan du fortsette utdragsposteringen ved å kjøre funksjonen for postering av utdrag for det relevante utdraget.
-
-![Slett kundeordre-knappen i den akkumulerte transaksjonsvisningen.](media/aggregated-transactions-delete-cust-order.png)
+Fra siden **Aggregerte transaksjoner** kan du laste ned XML for en bestemt aggregert transaksjon ved hjelp av knappen **Eksporter XML for salgsordre**. Du kan bruke XML-filen til å feilsøke problemer som involverer oppretting av salgsordre og postering. Bare last ned XML-filen, last den opp til et testmiljø og feilsøk problemet i testmiljøet. Funksjonen for å laste ned XML for aggregerte transaksjoner er ikke tilgjengelig for utdrag som er postert.
 
 Visningen av aggregerte transaksjoner gir følgende fordeler:
 
@@ -204,6 +174,3 @@ Andre forbedringer i bakgrunnen som brukerne kan se er gjort i funksjonen for ut
 
     - Gå til **Retail og Commerce** \> **Hovedkvarteroppsett** \> **Parametere** \> **Parametere for Commerce**. Deretter, på **Postering**-fanen på hurtigfanen **Lageroppdatering** i feltet **Detaljnivå**, velger du **Sammendrag**.
     - Gå til **Retail og Commerce** \> **Hovedkvarteroppsett** \> **Parametere** \> **Parametere for Commerce**. Deretter, på **Postering**-fanen på hurtigfanen **Aggregering**, angir du **Bilagstransaksjoner** til **Ja**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,28 +1,29 @@
 ---
 title: Startside for leverandører
 description: Dette emnet gir en oversikt over leverandører.
-author: sunfzam
+author: ShylaThompson
+manager: AnnBe
 ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21901"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 21901
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 6a6f53007f8bd04724c43c518c5a9b10856b68d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595293"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459644"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for leverandører
 
@@ -30,13 +31,13 @@ ms.locfileid: "7595293"
 
 Dette emnet gir en oversikt over leverandører. 
 
-Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via en dataenhet. Når fakturaene er registrert eller mottatt, kan du se gjennom og godkjenne fakturaene ved hjelp av en fakturagodkjenningsjournal eller siden **Leverandørfaktura**. Du kan bruke fakturakontroll, leverandørfakturapolicyer og arbeidsflyt til å automatisere kontrollprosessen slik at fakturaer som oppfyller bestemte kriterier, godkjennes automatisk, og de gjenværende fakturaene flagges for gjennomgang av en autorisert bruker.
+Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via en dataenhet. Når fakturaene er registrert eller mottatt, kan du se gjennom og godkjenne fakturaene ved hjelp av en fakturagodkjenningsjournal eller siden **Leverandørfaktura**. Du kan bruke fakturasamsvar, leverandørfakturapolicyer og arbeidsflyt til å automatisere kontrollprosessen slik at fakturaer som oppfyller bestemte kriterier, godkjennes automatisk, og de gjenværende fakturaene flagges for gjennomgang av en autorisert bruker.
 
 **Forretningsprosesser**
 
-[![Diagram med forretningsprosesser.](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Diagram med forretningsprosesser](./media/AP-process.PNG)](./media/AP-process.PNG)
 
-## <a name="set-up-accounts-payable"></a>Definer leverandør
+## <a name="set-up-accounts-payable"></a>Definere Leverandør
 
 Definer leverandørgrupper, leverandører, posteringsprofiler, ulike betalingsalternativer og parametere i forbindelse med leverandører, tillegg, leveranser og mål, egenveksler, og annen type informasjon om leverandører. 
 
@@ -120,9 +121,9 @@ Emnene nedenfor gir informasjon om utligninger. Utligning er prosessen med å ut
 
 ### <a name="additional-resources"></a>Tilleggsressurser
 
-#### <a name="whats-new-and-in-development"></a>Nyheter og under utvikling
+#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
+Gå til [Lanseringsplaner for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
 
 #### <a name="blogs"></a>Blogger
 
@@ -144,6 +145,3 @@ Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 You
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,30 +1,29 @@
 ---
 title: Oversikt over dataimport- og -eksportjobber
 description: Bruk arbeidsområdet for dataadministrasjon for å opprette og administrere dataimport- og -eksportjobber.
-author: peakerbl
-ms.date: 10/21/2021
-ms.topic: overview
+author: Sunil-Garg
+manager: AnnBe
+ms.date: 11/02/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071091"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684066"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 For å opprette og administrere dataimport- og -eksportjobber bruker du arbeidsområdet **Dataadministrasjon**. Som standard oppretter dataimporterings- og eksportprosessen et oppstartstabell for hver enhet i måldatabasen. Staging-tabeller lar deg verifisere, rydde opp eller konvertere data før du flytter den.
 
@@ -69,10 +68,7 @@ Når du velger et foretak, må du velge formatet for dataene som skal eksportere
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-I/T-                     |
 | XML                    | \-I/T-                                      | XML-attributt for XML-element |
-| Skilletegn, fastsatt bredde | Komma, semikolon, tab, loddrett strek, kolon | \-I/T-                     |
-
-> [!NOTE]
-> Det er viktig å velge riktig verdi for **Radskilletegn**, **Kolonneskilletegn** og **Tekstkvalifikator** hvis **Filformat**-alternativet er satt til **Avgrenset**. Kontroller at dataene ikke inneholder tegnet som brukes som skilletegn eller kvalifikator, da dette kan føre til feil under import og eksport.
+| Skilletegn, fastsatt bredde | Komma, semikolon, tab, loddrett strek, kolon | \-I/T                     |
 
 ### <a name="sequence-the-entities"></a>Sekvenser enhetene
 Enheter kan sekvenseres i et dataskjema, eller i import- og eksportjobber. Når du kjører en jobb som inneholder mer enn én dataenhet, må du sørge for at dataenhetene er riktig sekvensert. Du sekvenserer enhetene primært for å adressere noen funksjonelle avhengigheter mellom enheter. Hvis enheter ikke har noen funksjonelle avhengigheter, kan de planlegges for parallell import eller eksport.
@@ -112,7 +108,7 @@ Det er to tilordningsvisninger: **Tilordningsvisualisering**, som er standard vi
 
 Du kan generere en tilordning på siden ved å velge **Generer kildetilordning**. En generert tilordning oppfører seg som en automatisk tilordning. Derfor må du manuelt tilordne alle felt som ikke er tilordnet.
 
-![Datatilordning.](./media/dixf-map.png)
+![Datatilordning](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Bekreft sikkerheten for import- eller eksportjobben
 Tilgang til arbeidsområdet **Dataadministrasjon** kan være begrenset, så ikke-administratorbrukere kan kun ha tilgang til spesifikke datajobber. Tilgang til et datajobb innebærer full tilgang til utførelsesloggen for den jobben og tilgang til staging-tabellene. Derfor må du sørge for at det er riktig tilgangskontroll på plass når du oppretter en datajobb.
@@ -138,7 +134,7 @@ Du kan kjøre en jobb én gang ved å velge **Import** eller **Eksport**-knappen
 ## <a name="validate-that-the-job-ran-as-expected"></a>Bekreft at jobben kjørte som forventet.
 Jobbhistorikken er tilgjengelig for feilsøking og etterforskning på både import- og eksportjobber. Historiske jobber er organisert av tidsintervall.
 
-![Jobbhistorikkperioder.](./media/dixf-job-history.md.png)
+![Jobbhistorikkperioder](./media/dixf-job-history.md.png)
 
 Hver jobbkjøring gir følgende detaljer:
 
@@ -167,7 +163,19 @@ Hvis du vil importere data raskere, kan parallell behandling av importering av f
     - Angi antall poster for importterskel i feltet **Antall poster for importterskel**. Dette bestemmer antallet poster som skal behandles av en tråd. Hvis en fil har 10 K poster, vil et postantall på 2500 med et oppgaveantall på 4 bety at hver tråd vil behandle 2500 poster.
     - I feltet **Antall importoppgaver** angir du antallet importoppgaver. Dette må ikke overskride maksimalt antall bunketråder som er tilordnet for satsvis behandling i **Systemadministrasjon \>Serverkonfigurasjon**.
 
-## <a name="job-history-clean-up"></a>Opprydding i jobblogg 
+## <a name="clean-up-the-staging-tables"></a>Rydd opp i staging-tabellene
+Starter i Platform-oppdatering 29, denne funksjonaliteten er avverget. Dette er erstattet av en ny versjon av jobbhistorie oppryddingsfunksjonalitet forklart nedenfor.
+
+Du kan rydde opp i staging-tabellene ved å bruke **Rydd opp i staging**-funksjonen i **Dataadministrasjon**-arbeidsområdet. Du kan bruke følgende alternativer for å velge hvilke oppføringer som skal slettes fra hvilke staging-tabeller:
+
+- **Enhet** – Kun hvis en enhet er gitt, vil alle oppføringer fra den enhetens staging-tabeller slettes. Velg dette alternativet for å rydde opp i alle data for enheten på tvers av alle dataprosjekter og alle jobber.
+- **Jobb-ID** – Kun hvis en Jobb-ID er gitt, vil alle oppføringer for alle enheter i den valgte jobben slettes fra de passende staging-tabellene.
+- **Dataprosjekter** – Hvis kun ett dataprosjekt er valgt, vil alle oppføringer for alle enheter på tvers av jobber for valgte dataprosjekter slettes.
+
+Du kan også kombinere alternativene for å ytterligere begrense oppføringssettet som er slettet.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Opprydding i jobbhistorie (tilgjengelig i plattformoppdatering 29 og senere)
+
 Oppryddingsfunksjonen for jobblogg i dataadministrasjon må brukes til å planlegge en periodisk opprydding av kjøringsloggen. Denne funksjonaliteten erstatter den tidligere oppryddingsfunksjonaliteten for oppsamlingstabellen, som nå er foreldet. De følgende tabellene vil bli fjernet av oppryddingsprosessen.
 
 -   Alle oppsamlingstabeller
@@ -203,10 +211,16 @@ Når du planlegger oppryddingsprosessen, må du angi følgende parametere for å
 > [!NOTE]
 > Hvis poster i oppsamlingstabellene ikke ryddes opp fullstendig, kontrollerer du at oppryddingsjobben er planlagt å kjøres i regelmessighet. Som forklart ovenfor, vil jobben bare rydde opp så mange utførelses-ID-er som mulig i løpet av de angitte maksimale timene, i alle oppryddingskjøringer. Hvis du vil fortsette oppryddingen av alle gjenværende oppsamlingsposter, må jobben planlegges å kjøre med jevne mellomrom.
 
-## <a name="job-history-clean-up-and-archival"></a>Opprydding og arkivering av jobbhistorikk 
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Opprydding i og arkivering av jobblogg (tilgjengelig som forhåndsversjon i Platform update 39 eller versjon 10.0.15)
 Funksjonen for opprydding i og arkivering av jobblogg erstatter de tidligere versjonene av oppryddingsfunksjonen. Denne delen forklarer disse nye funksjonene.
 
-En av hovedendringene i oppryddingsfunksjonen er bruken av systemets satsvise jobb for å rydde opp i loggen. Bruken av systemets satsvise jobb gjør at Finance and Operations-apper kan få den satsvise jobben for opprydding planlagt automatisk så snart systemet er klart. Det er ikke lenger nødvendig å planlegge den satsvise jobben manuelt. I denne standardmodusen for kjøring kjøres den satsvise jobben hver time fra midnatt, og kjøringsloggen for de siste sju dagene beholdes. Den tømte loggen arkiveres for fremtidig henting. Fra og med versjon 10.0.20 er denne funksjonen alltid på.
+En av hovedendringene i oppryddingsfunksjonen er bruken av systemets satsvise jobb for å rydde opp i loggen. Bruken av systemets satsvise jobb gjør at Finance and Operations-apper kan få den satsvise jobben for opprydding planlagt automatisk så snart systemet er klart. Det er ikke lenger nødvendig å planlegge den satsvise jobben manuelt. I denne standardmodusen for kjøring kjøres den satsvise jobben hver time fra kl. 00:00, og kjøringsloggen for de siste sju dagene beholdes. Den tømte loggen arkiveres for fremtidig henting.
+
+> [!NOTE]
+> Siden denne funksjonaliteten er en forhåndsversjon, vil ikke systemets satsvise jobb slette noen kjøringslogger før den aktiveres via testversjonen DMFEnableExecutionHistoryCleanupSystemJob. Når funksjonen er allment tilgjengelig i en fremtidig versjon, er ikke denne testversjonen nødvendig, og systemets satsvise jobb begynner å tømme og arkivere etter at systemet er klart, basert på den definerte tidsplanen som forklart ovenfor. 
+
+> [!NOTE]
+> I en fremtidig versjon blir de tidligere versjonene av oppryddingsfunksjonen fjernet fra Finance and Operations-apper.
 
 Den andre endringen i oppryddingsprosessen er arkivering av den tømte kjøringsloggen. Oppryddingsjobben arkiverer de slettede postene i BLOB-lageret som DIXF bruker til vanlige integreringer. Den arkiverte filen er i DIXF-pakkeformatet, og er tilgjengelig i sju dager i BLOB-lageret, der det kan lastes ned. Standardlevetiden på sju dager for den arkiverte filen kan endres til maksimalt 90 dager i parameterne.
 
@@ -229,6 +243,3 @@ Hvis du vil laste ned den arkiverte kjøringsloggen, går du til arbeidsområdet
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

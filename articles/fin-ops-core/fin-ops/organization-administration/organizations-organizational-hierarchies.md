@@ -1,28 +1,28 @@
 ---
 title: Oversikt over organisasjoner og organisasjonshierarkier
-description: Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten.
+description: En organisasjon er en gruppe personer som jobber sammen for å utføre en forretningsprosess eller oppnå et mål. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten.
 author: sericks007
-ms.date: 01/03/2022
-ms.topic: overview
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
-ms.custom:
-- "17291"
-- intro-internal
+ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 368569f2cdd389b6fc99ddcf05f35cc9a750ec9e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7992083"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797052"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversikt over organisasjoner og organisasjonshierarkier
 
@@ -54,7 +54,7 @@ Driftsenhetstypene omfatter kostsentre, forretningsenheter, verdistrømmer, avde
 | Forretningsenhet       | En delvis uavhengig driftsenhet som er opprettet for å nå strategiske forretningsmål. | Brukes for finansrapportering som er basert på bransjer eller produktlinjer som organisasjonen leverer, uavhengig av juridiske enheter. |
 | Verdistrøm        | En driftsenhet som styrer én eller flere produksjonsflyter. | Brukes vanligvis i lean manufacturing til å styre aktivitetene og flytene som kreves for å forsyne forbrukere med et produkt eller en tjeneste. |
 | Avdeling          | En driftsenhet som representerer en kategori eller en funksjonell del i en organisasjon som utfører en bestemt oppgave, for eksempel salg eller regnskap. | Brukes for å rapportere om funksjonsområder. En avdeling kan ha resultatansvar, og kan bestå av en gruppe kostsentre. |
-| Detaljhandelkanal      | En driftsenhet som representerer en fysisk butikk, nettbutikk, markedsplass eller et telefonsenter. | Brukes for behandling og driftskontroll av én eller flere butikker i eller på tvers av juridiske enheter. |
+| Handelskanal      | En driftsenhet som representerer en fysisk butikk, nettbutikk eller markedsplass på Internett. | Brukes for behandling og driftskontroll av én eller flere butikker i eller på tvers av juridiske enheter. |
 
 ### <a name="teams"></a>Team
 
@@ -64,19 +64,6 @@ Et team er en organisasjon der medlemmene deler et felles ansvar, en felles inte
 
 Definer organisasjonshierarkier for å vise og rapportere for bedriften fra ulike perspektiver. Du kan for eksempel definere et hierarki av juridiske enheter for avgiftsrapportering, juridisk eller lovpålagt rapportering. Definer et hierarki som er basert på driftsenheter, for å rapportere finansinformasjon som ikke er lovpålagt, men som brukes til internkontroll. Du kan for eksempel opprette et innkjøpshierarki for å styre innkjøpspolicyer, -regler og -forretningsprosesser.
 
-> [!NOTE]
-> Når en driftsenhet er lagt til i et hierarki, kan ikke driftsenheten slettes. 
-
 Hvert hierarki er tilordnet et formål. Formålet med et hierarki bestemmer hvilke organisasjonstyper som kan inkluderes i hierarkiet. Formålet bestemmer også bruksscenariene for hierarkiet.
 
 Organisasjoner i et hierarki kan dele parametere, policyer og transaksjoner. En organisasjon kan arve eller overstyre parameterne for den overordnede organisasjonen. Delte hoveddata, for eksempel produkter og adressebøker, gjelder imidlertid for hele organisasjonen og kan ikke overstyres for individuelle organisasjoner. Oppretting av organisasjoner og hierarkier krever nøye planlegging. Hvis du vil ha mer informasjon, kan du se [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md).
-
-## <a name="additional-resources"></a>Tilleggsressurser
-- [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md)
-- [Opprette et organisasjonshierarki](tasks/create-organization-hierarchy.md)
-- [Opprette en ny juridisk enhet](tasks/create-legal-entity.md)
-- [Opprette en driftsenhet](tasks/create-operating-unit.md)
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

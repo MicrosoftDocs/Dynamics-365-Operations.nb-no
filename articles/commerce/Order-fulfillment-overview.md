@@ -1,25 +1,27 @@
 ---
 title: Butikkordreoppfyllelse
 description: Dette emnet gir en oversikt over butikkordreoppfyllelse.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 10/30/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983348"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965408"
 ---
 # <a name="store-order-fulfillment"></a>Butikkordreoppfyllelse
 
@@ -33,7 +35,7 @@ Ordrefullføringen på salgsstedet gir et enkelt arbeidsområde på salgsstedet 
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Tilgang til enhetlig ordreoppfyllelse på salgsstedet
 
-Ordreoppfyllelse [Operasjons-ID 928](pos-operations.md) kan brukes til å få tilgang til arbeidsområdet for butikkordreoppfyllelse på salgsstedet.
+Ordreoppfyllelse [Operasjons-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) kan brukes til å få tilgang til arbeidsområdet for butikkordreoppfyllelse på salgsstedet.
 
 Ordreoppfyllelsesoperasjonen har ikke sin egen standard tillatelse, men i fremtiden vil brukerne kunne bruke tillatelsen **Tillat henting av ordre** for å starte operasjonen fra salgsstedet.
 
@@ -93,7 +95,7 @@ Når en ordre er godtatt, kan linjer velges og merkes som **Plukking**. Å merke
 
 Plukklister kan skrives ut på salgsstedet for å hjelpe ansatte å utføre plukkeprosessen. En utskrevet plukkliste kan tas med av arbeideren som utfører plukkingen, og etter hvert som varene plukkes, kan arbeideren merke dem manuelt som plukket på plukklisten.
 
-Plukklisteformatet konfigureres i Commerce og legges til kvitteringsprofilen. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsprofiler, kan du se [Kvitteringsmaler og utskrift](receipt-templates-printing.md).
+Plukklisteformatet konfigureres i Commerce og legges til kvitteringsprofilen. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsprofiler, kan du se [Kvitteringsmaler og utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Hvis linjene er valgt, og en plukkliste skrives ut for disse linjene, oppdateres de automatisk med **Plukking**-statusen.
 
@@ -119,7 +121,7 @@ Ordrelinjer kan pakkes når som helst etter at ordrelinjen er godtatt.
 - **Resulterende status:** Pakket eller delvis pakket
 - **Resulterende back office-status:** Levert eller delvis levert
 
-Denne handlingen merker linjene som pakket eller delvis pakket og skriver ut en følgeseddel. En følgeseddel kan skrives ut for å validere produktene som er pakket sammen. Følgeseddelformatet konfigureres i Commerce og legges til kvitteringsprofilen. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsprofiler, kan du se [Kvitteringsmaler og utskrift](receipt-templates-printing.md).
+Denne handlingen merker linjene som pakket eller delvis pakket og skriver ut en følgeseddel. En følgeseddel kan skrives ut for å validere produktene som er pakket sammen. Følgeseddelformatet konfigureres i Commerce og legges til kvitteringsprofilen. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsprofiler, kan du se [Kvitteringsmaler og utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Handling: Merk som pakket**
 
@@ -215,6 +217,3 @@ Ordreoppfyllelse på salgsstedet omfatter filtrering for å hjelpe brukeren med 
 - Opprettet dato
 - Leveringsdato
 - Mottaksdato
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

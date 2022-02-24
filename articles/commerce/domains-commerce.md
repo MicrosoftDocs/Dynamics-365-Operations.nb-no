@@ -2,24 +2,27 @@
 title: Domener i Dynamics 365 Commerce
 description: Dette emnet beskriver hvordan domener behandles i Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+manager: AnnBe
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733997"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517361"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -38,7 +41,7 @@ Når du klargjør et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services (L
 
 Illustrasjonen nedenfor viser LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet. 
 
-![LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet](./media/Domains_ProvisioningeCommerceScreen.png)
 
 Du kan opprette en serviceforespørsel for å legge til flere domener i et miljø hvis klargjøring allerede har skjedd. Hvis du vil opprette en serviceforespørsel i LCS, kan du i miljøet gå til **Kundestøtte \> Kundestøtteproblemer** og velge **Send en hendelse**.
 
@@ -56,7 +59,7 @@ Når du konfigurerer et område i områdebyggeren for første gang, vises dialog
 
 Følgende illustrasjon viser dialogboksen **Konfigurer området** for et område kalt "standard" når du åpner området for første gang i områdebyggeren.
 
-![**Dialogboksen Konfigurer område**.](./media/Domains_SetupyoursiteScreen.png)
+![**Dialogboksen Konfigurer område**](./media/Domains_SetupyoursiteScreen.png)
 
 Ved hjelp av boksen **Velg et domene** kan du knytte et av de støttede vertsnavnene som er oppgitt for området i LCS, til området i områdebyggeren.
 
@@ -79,11 +82,11 @@ Når området er satt opp med en bane, vil alle URL-adresser som er tilknyttet s
 
 Den følgende illustrasjonen viser dialogboksen **Ny URL-adresse** i områdebyggeren med eksempel på uthevet URL-adressebane. 
 
-![Dialogboksen **Ny URL-adresse** i områdebyggeren.](./media/Domains_PageSetup2a.png)
+![Dialogboksen **Ny URL-adresse** i områdebyggeren](./media/Domains_PageSetup2a.png)
 
 Den følgende illustrasjonen viser siden **URL-adresser** i områdebyggeren med eksempel på uthevet URL-adresse i listen.
 
-![Kjør brukerflyt-alternativet policyflyt.](./media/Domains_URLsInSiteBuilder2a.png)
+![Kjør brukerflyt-alternativet policyflyt](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domener i områdebyggeren
 
@@ -151,7 +154,7 @@ Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domene
 
   [Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
 
-  [Definere en kanal for nettbutikk](./channel-setup-online.md)
+  [Definere en kanal for nettbutikk](online-stores.md)
 
   [Opprette et e-handelsområde](create-ecommerce-site.md)
 
@@ -170,6 +173,3 @@ Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domene
   [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
   [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

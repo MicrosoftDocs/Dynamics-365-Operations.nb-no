@@ -2,9 +2,11 @@
 title: Arbeide med lokasjonsdirektiver
 description: Dette emnet beskriver hvordan du arbeider med lokasjonsdirektiver. Lokasjonsdirektiver er brukerdefinerte regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse.
 author: Mirzaab
+manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e3139f62ca73f461ff4a4b5114f5e7ba181d3b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575249"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963316"
 ---
 # <a name="work-with-location-directives"></a>Arbeide med lokasjonsdirektiver
 
@@ -44,14 +46,14 @@ Før du kan opprette et lokasjonsdirektiv, må du følge denne fremgangsmåten f
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
 1. Opprett et lager.
 1. På hurtigfanen **Lager** setter du alternativet **Bruk lagerstyringsprosesser** til *Ja*.
-1. Opprett lokasjoner, lokasjonstyper, lokasjonsprofiler og lokasjonsformater. Hvis du vil ha mer informasjon, kan du se [Konfigurere lokasjoner i et WMS-aktivert lager](./tasks/configure-locations-wms-enabled-warehouse.md).
-1. Opprett steder, soner og sonegrupper. Hvis du vil ha mer informasjon, kan du se [Lageroppsett](../../commerce/channels-setup-warehouse.md) og [Konfigurere lokasjoner i et WMS-aktivert lager](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Opprett lokasjoner, lokasjonstyper, lokasjonsprofiler og lokasjonsformater. Hvis du vil ha mer informasjon, kan du se [Konfigurere lokasjoner i et WMS-aktivert lager](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Opprett steder, soner og sonegrupper. Hvis du vil ha mer informasjon, kan du se [Lageroppsett](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) og [Konfigurere lokasjoner i et WMS-aktivert lager](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 
 ## <a name="work-order-types-for-location-directives"></a>Arbeidsordretyper for lokasjonsdirektiver
 
 Mange av feltene som kan angis for lokasjonsdirektiver, er felles for alle arbeidsordretyper. Andre felter er imidlertid spesifikke for bestemte arbeidsordretyper.
 
-![Arbeidsordretyper for lokasjonsdirektiver.](media/Location_Directives_Work_Order_Types.png "Arbeidsordretyper for lokasjonsdirektiver")
+![Arbeidsordretyper for lokasjonsdirektiver](media/Location_Directives_Work_Order_Types.png "Arbeidsordretyper for lokasjonsdirektiver")
 
 > [!NOTE]
 > To arbeidsordretyper, *Annullert arbeid* og *Syklustelling*, brukes bare av systemet. Lokasjonsdirektiver kan ikke opprettes for disse arbeidsordretypene.
@@ -143,14 +145,14 @@ Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretype
 - **Direktivkode** – Velg direktivkoden som skal knyttes til en arbeidsmal eller etterfyllingsmal. På siden **Direktivkode** kan du opprette nye koder som kan brukes til å koble arbeidsmaler eller etterfyllingsmaler til lokasjonsdirektiver. Direktivkoder kan også brukes til å opprette en kobling mellom en hvilken som helst linje i en arbeidsmal og et lokasjonsdirektiv (for eksempel en rampedør eller en stadieplassering).
 
     > [!TIP]
-    > Hvis en direktivkode er angitt, søker ikke systemet etter lokasjonsdirektiver etter sekvensnummer når arbeid må genereres. Det vil i stedet søke etter direktivkode. På denne måten kan du være mer nøyaktig angående lokasjonsdirektivet som brukes for et spesifikt trinn i en arbeidsmal, for eksempel trinnet for oppsamling av materialer.
+    > Hvis en direktivkode er angitt, søker ikke systemet etter lokasjonsdirektiver etter sekvensnummer når arbeid må genereres. Det vil i stedet søke etter direktivkode. På denne måten kan du være mer nøyaktig angående lokasjonsmalen som brukes for et spesifikt trinn i en arbeidsmal, for eksempel trinnet for oppsamling av materialer.
 
 - **Flere SKU-er** – Sett dette alternativet til *Ja* for å aktivere flere lagerenheter (SKU-er) som skal brukes på en lokasjon. Flere SKU-er må for eksempel være aktivert for rampedørplasseringen. Hvis du aktiverer flere SKU-er, blir plasseringen angitt i arbeid som forventet. Plasseringslokasjonen kan imidlertid bare håndtere en plassering for flere varer (hvis arbeid inneholder forskjellige SKU-er som må plukkes og plasseres). Det vil ikke være mulig å behandle en enkelt SKU-plassering. Hvis du setter dette alternativet til *Nei*, vil plasseringslokasjonen bare angis hvis plasseringen bare har én SKU-type.
 
     > [!IMPORTANT]
     > Hvis du skal kunne utføre både plasseringer med flere varer og enkelt-SKU-plasseringer, må du angi to linjer som har samme struktur og oppsett, men du må sette alternativet **Flere SKU-er** til *Ja* for en linje og *Ingen* for den andre. For plasseringsoperasjoner må du derfor ha to identiske lokasjonsdirektiver, selv om du ikke må skille mellom én eller flere SKU-er i en arbeids-ID. Hvis du ikke definerer begge disse plasseringsdirektivene, vil det komme uventede forretningsprosesslokasjoner fra lokasjonsdirektivet som er brukt. Du må bruke et lignende oppsett for lokasjonsdirektiver som har **arbeidstypen** *plukk* hvis du må behandle ordrer som omfatter flere SKU-er.
 
-    Bruk alternativet **Flere SKU-er** for arbeidslinjer som behandler mer enn ett varenummer. (Varenummeret vil være tomt i arbeidsdetaljene, og det vil bli vist som **Flere** på behandlingssidene i mobilappen Lagerstyring.)
+    Bruk alternativet **Flere SKU-er** for arbeidslinjer som behandler mer enn ett varenummer. (Varenummeret vil være tomt i arbeidsdetaljene, og det vil bli vist som **Flere** på behandlingssidene i lagerappen.)
 
     I et typisk eksempelscenario er en arbeidsmal satt opp slik at den har mer enn ett plukk/plasser-par. I dette tilfellet vil du kanskje søke etter en bestemt oppsamlingslokasjon som skal brukes for linjer med **arbeidstypen** *Plasser*.
 
@@ -169,7 +171,7 @@ Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretype
     > [!NOTE]
     > Dette feltet er bare tilgjengelig for valgte arbeidsordretyper der etterfyllingen er tillatt. Hvis du vil ha en fullstendig liste, kan du se [Felter som er spesifikke for arbeidsordretyper](#fields-specific-types).
 
-- **Disposisjonskode** – Dette feltet brukes til lokasjonsdirektiver som har arbeidsordretypen *Bestillinger*, *Plasser ferdigvarer* eller *Returordrer* og arbeidstypen *Plasser*. Bruk det til å lede flyten til å bruke et bestemt lokasjonsdirektiv, avhengig av disposisjonskoden som en arbeider som er valgt i mobilappen Lagerstyring. Du kan for eksempel sende returnerte varer til en inspeksjonslokasjon før de returneres til lager. En disposisjonskode kan knyttes til en lagerstatus. På denne måten kan det brukes til å endre lagerstatusen som en del av en mottaksprosess. Du kan for eksempel ha en disposisjonskode, *Spørsmål og svar*, som setter lagerstatusen til *Spørsmål og svar*. Du kan deretter ha et eget lokasjonsdirektiv for å flytte lageret til en karantenelokasjon.
+- **Disposisjonskode** – Dette feltet brukes til lokasjonsdirektiver som har arbeidsordretypen *Bestillinger*, *Plasser ferdigvarer* eller *Returordrer* og arbeidstypen *Plasser*. Bruk det til å lede flyten til å bruke et bestemt lokasjonsdirektiv, avhengig av disposisjonskoden som en arbeider som er valgt i lagerappen. Du kan for eksempel sende returnerte varer til en inspeksjonslokasjon før de returneres til lager. En disposisjonskode kan knyttes til en lagerstatus. På denne måten kan det brukes til å endre lagerstatusen som en del av en mottaksprosess. Du kan for eksempel ha en disposisjonskode, *Spørsmål og svar*, som setter lagerstatusen til *Spørsmål og svar*. Du kan deretter ha et eget lokasjonsdirektiv for å flytte lageret til en karantenelokasjon.
 
     > [!NOTE]
     > Dette feltet er bare tilgjengelig for valgte arbeidsordretyper der etterfyllingen er tillatt. Hvis du vil ha en fullstendig liste, kan du se [Felter som er spesifikke for arbeidsordretyper](#fields-specific-types).
@@ -237,7 +239,7 @@ Du kan definere flere lokasjonsdirektivhandlinger for hver linje. Et serienummer
     - **Avrund oppover til fullstendig nummerskilt og FEFO-parti** – Denne strategien kombinerer elementene i strategiene *FEFO-partireservering* og *Avrund oppover til et fullstendig nummerskilt*. Den er bare gyldig for varer med partiaktiverte satsvise jobber og lokasjonsdirektiver som har arbeidstypen *Plukk*. Linjen må være partiaktivert for å kunne bruke strategien *FEFO-partireservering*, og strategien *Avrund oppover til et fullstendig nummerskilt* kan bare brukes til etterfylling. Hvis denne strategien konfigureres sammen med en lokasjonsbeholdningsgrense, kan det føre til at den valgte plasseringen for plassering av arbeid blir overbelastet, og at lagergrenser ignoreres.
     - **Avrund oppover til et fullstendig nummerskilt** – Denne strategien brukes til å avrunde lagerantallet oppover, slik at det tilsvarer nummerskiltantallet som er tilordnet varene som må plukkes. Du kan bare bruke denne strategien for etterfyllingslokasjonsdirektiver av typen *plukk*. Hvis denne strategien konfigureres sammen med en lokasjonsbeholdningsgrense, kan det føre til at den valgte plasseringen for plassering av arbeid blir overbelastet, og at lagergrenser ignoreres.
     - **Nummerskiltledet** – Bruk strategien når du frigir ordren til lageret for å opprette plukk- og plasseringsarbeidet. Du kan bruke denne tilnærmingen for flere nummerskilter. Denne strategien vil prøve å reservere og opprette plukkarbeid mot lokasjonene som inneholder de forespurte nummerskiltene som er knyttet til overføringsordrelinjene. Hvis disse handlingene ikke kan fullføres, men du likevel vil opprette et plukkarbeid, bør du imidlertid gå tilbake til en annen strategi for lokasjonsdirektivhandlinger. Avhengig av forretningsprosesskravene kan det også være lurt å søke etter lager i et annet område av lageret.
-    - **Tom plassering med innkommende arbeid** – Bruk denne strategien til å finne tomme lokasjoner. En lokasjon anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid. Du kan bare bruke denne strategien for lokasjonsdirektiver av arbeidstypen *Plasser*.
+    - **Tom plassering med innkommende arbeid** – Bruk denne strategien til å finne tomme lokasjoner. En lokasjon anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid. Du kan bare bruke denne strategien for lokasjonsdirektiver av arbeidstypen *plukk*.
     - **Lokasjon med aldersfordelt FIFO** – Bruk først inn, først ut-strategien (FIFO) til å levere både partisporingsvarer og ikke-partisporingsvarer, basert på datoen da beholdningen ble registrerte på lageret. Denne funksjonen kan være spesielt nyttig for ikke-partisporingslageret, der ingen utløpsdato er tilgjengelig for sortering. FIFO-strategien finner lokasjonen som inneholder den eldste aldersfordelingsdatoen, og den tildeler plukking basert på den aldersfordelingsdatoen.
     - **Lokasjon med aldersfordelt LIFO** – Bruk sist inn, sist ut-strategien (LIFO) til å levere både partisporingsvarer og ikke-partisporingsvarer, basert på datoen da beholdningen ble registrerte på lageret. Denne funksjonen kan være spesielt nyttig for ikke-partisporingslageret, der ingen utløpsdato er tilgjengelig for sortering. LIFO-strategien finner lokasjonen som inneholder den nyeste aldersfordelingsdatoen, og den tildeler plukking basert på den aldersfordelingsdatoen.
 
@@ -249,12 +251,9 @@ I dette scenariet må du definere to lokasjonsdirektivhandlinger. Den første ha
 
 ## <a name="next-step"></a>Neste trinn
 
-Når du har opprettet lokasjonsdirektiver, kan du knytte hver direktivkode til en arbeidsmalkode for arbeidsoppretting. Hvis du vil ha mer informasjon, kan du se [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](./control-warehouse-location-directives.md).
+Når du har opprettet lokasjonsdirektiver, kan du knytte hver direktivkode til en arbeidsmalkode for arbeidsoppretting. Hvis du vil ha mer informasjon, kan du se [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - Video: [Dyp dykk i konfigurasjon av lagerstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjelpeemne: [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](control-warehouse-location-directives.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

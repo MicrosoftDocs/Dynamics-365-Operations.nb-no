@@ -1,10 +1,12 @@
 ---
 title: Livssyklustilstander for arbeidssted
 description: Dette emnet beskriver hvordan du konfigurerer tilstander for arbeidssteder og livssyklusmodeller i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16fbef7b390fd7a6c00bc5e4bdac28aee458613e4dc69941f26c7f7732e58de0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739185"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021287"
 ---
 # <a name="functional-location-lifecycle-states"></a>Livssyklustilstander for arbeidssted
 
@@ -56,10 +58,7 @@ Når du har opprettet livssyklustilstandene som kreves for arbeidsstedene, kan d
 1. Velg **Aktivastyring** > **Oppsett** > **Arbeidssteder** > **Livssyklusmodeller**.
 2. Velg **Ny** for å opprette en ny livssyklusmodell.
 3. Sett inn livssyklusmodell-ID-en i feltet **Livssyklusmodell** og et navn på livssyklusmodellen i **Navn**-feltet. I feltene **Arbeidsstedstyper** og **Livssyklustilstander** kan du se antallet arbeidsstedstyper som bruker livssyklusmodellen og antallet tilstander som er valgt i livssyklusmodellen.
-4. I hurtigfanen **Livssyklustilstander** velger du tilstandene som skal inkluderes i modellen. Denne gjøres ved å klikke på en tilstand i delen **Gjenværende livssyklustilstander** og klikke på ![fremoverpilen](media/02-setup-for-functional-locations.png) knapp.
-5. Hvis du vil velge alle tilgjengelige tilstander for en modell, klikker du knappen for å ![velge alle tilgjengelige tilstander](media/03-setup-for-functional-locations.png) . Alle tilstdnder overføres til delen **Valgte livssyklustilstander**.
-6. Hvis du vil fjerne en valgt tilstand fra modellen, velger du tilstanden i delen **Valgte livssyklustilstander**, og deretter velger du ![tilbakepilen.](media/04-setup-for-functional-locations.png) knapp.
+4. I hurtigfanen **Livssyklustilstander** velger du tilstandene som skal inkluderes i modellen. Denne gjøres ved å klikke på en tilstand i delen **Gjenværende livssyklustilstander** og klikke på ![fremoverpilen](media/02-setup-for-functional-locations.png).
+5. Hvis du vil velge alle tilgjengelige tilstander for en modell, klikker du knappen for å ![velge alle tilgjengelige tilstander](media/03-setup-for-functional-locations.png). Alle tilstdnder overføres til delen **Valgte livssyklustilstander**.
+6. Hvis du vil fjerne en valgt tilstand fra modellen, velger du tilstanden i delen **Valgte livssyklustilstander**, og deretter velger du ![tilbakepilen](media/04-setup-for-functional-locations.png).
 7. Velg **Oppdateringer av livssyklustilstander** for å definere hvilke livssyklustilstander som kan følge en valgt tilstand.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

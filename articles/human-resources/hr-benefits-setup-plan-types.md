@@ -1,52 +1,39 @@
 ---
-title: Oversikt over plantype
-description: En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler.
-author: twheeloc
-ms.date: 08/24/2021
-ms.topic: overview
+title: Opprette plantyper
+description: En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b247b3a044a073c2a4d2d9c2ab8507fa2ebe864c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 88a6d89bf98ea145bbb6a4eb8f4e052e5f4088e5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067560"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419917"
 ---
-# <a name="plan-type-overview"></a>Oversikt over plantype
+# <a name="create-plan-types"></a>Opprette plantyper
 
+En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen. Plantypen Enkelt liv ville for eksempel ha plantypekoden Liv fordi den er en type livsforsikringsplan og må følge reglene som er angitt for livsplantypekoden. En annen plantype kan være Ekstra liv, også med plantypekoden Liv.
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+Hver plantype angir om en ansatt kan registrere seg i én plan av typen eller flere. En ansatt kan for eksempel sannsynligvis registrere seg både for polisene Enkelt liv og Ekstra liv av plantypen Liv. En ansatt kan sannsynligvis registrere seg for bare én polise av typen Medisinsk.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Hvis en plantype omfatter kontakter, angir plantypen om kontakter er mottakere eller avhengige. En Enkelt liv-plantype vil for eksempel ha mottakere, mens en Enkel medisin-plantype vil ha avhengige. I noen tilfeller kan det hende at en plan ikke har noen personlige kontakter. For eksempel en fleksibel forbrukskonto eller et parkeringsfradrag.
 
-En plantype er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen. Plantypen **Enkelt liv** ville for eksempel ha plantypekoden **Liv** fordi den er en type livsforsikringsplan og må følge reglene som er angitt for plantypekoden **Liv**. En annen plantype kan være **Ekstra liv**. Denne plantypen vil også ha plantypkoden **Liv**.
-
-Hver plantype angir om en ansatt kan registrere seg i én plan av typen eller flere. En ansatt kan for eksempel sannsynligvis registrere seg både for polisene **Enkelt liv** og **Ekstra liv** av plantypen Liv. En ansatt kan sannsynligvis registrere seg for bare én polise av typen Medisinsk.
-
-Hvis en plantype omfatter kontakter, angir plantypen om kontakter er mottakere eller avhengige. En **Enkelt liv**-plantype vil for eksempel ha mottakere, mens en Enkel medisin-plantype vil ha avhengige. I noen tilfeller kan det hende at en plan ikke har noen personlige kontakter. For eksempel en fleksibel forbrukskonto eller et parkeringsfradrag.
-
-
-En plantype kan definere dekningsalternativer. Dekningsalternativene er definert på siden **Dekningsalternativer**. Et dekningsalternativ kan angi fordelsbeløpet eller hvilke kontakter som er berettiget til plantypen. Hvis kontakttypen for eksempel er **Mottaker**, bør dekningsalternativet definere vilkårene for hva mottakeren kan motta når fordelen utnyttes. Hvis kontakt typen er **Avhengig**, bør dekningsalternativet definere forholdet mellom den avhengige og den ansatte. 
-
-> [!IMPORTANT]
-> Siden **Plantyper** inneholder nøkkeldata som påvirker alternativene som er tilgjengelige når en ny fordelsplan opprettes:
->
-> - **Plantypekode** – Dette feltet påvirker hva som vises i kategorien **Konfigurasjon** når den faktiske fordelen er definert.  
-> - **Samtidig registrering** – Dette feltet avgjør om flere registreringer er tillatt. (For en medisinsk plan er dette feltet vanligvis satt til **Én registrering**.)
-> - **Kontakttype** – Dette feltet gjør det mulig å legge til avhengige eller mottakere i en plan. Hvis den er satt til **Ingen**, har ikke ansatte som har registrert seg i fordeler, muligheten til å velge enten en mottaker eller en avhengig.
-> - **Dekningsalternativer** – Bruk dette feltet til å koble dekningsalternativene til plantypene. Den definerer enten personene som skal dekkes av denne plantypen, eller dekningsbeløpene som er tilgjengelige for denne plantypen. Du kan for eksempel angi at dekningen for en medisinsk plantype bare skal være tilgjengelig for den ansatte, den ansatte og en annen person, eller den ansatte og deres familie.
-
-## <a name="create-plan-types"></a>Opprette plantyper
+En plantype kan definere dekningsalternativer. Dekningsalternativene er definert i skjemaet Dekningsalternativ. Et dekningsalternativ kan angi fordelsbeløpet eller hvilke kontakter som er berettiget til plantypen. Hvis kontakttypen for eksempel er Mottaker, bør dekningsalternativet definere vilkårene for hva mottakeren kan motta når fordelen utnyttes. Hvis kontakt typen er Avhengig, bør dekningsalternativet definere forholdet mellom den avhengige og den ansatte. 
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Plantyper**.
 
@@ -76,6 +63,3 @@ En plantype kan definere dekningsalternativer. Dekningsalternativene er definert
    | **Rapporteringsvindu** | Angir rapporteringsvinduet (i dager) for levetidshendelsen. **Obs**! Hvis du ikke angir et beløp, antar systemet at rapporteringsvinduet er null, og livshendelsen behandles ikke. |
 
 5. Velg **Lagre**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

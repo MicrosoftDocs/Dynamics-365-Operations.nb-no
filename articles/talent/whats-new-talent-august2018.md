@@ -85,6 +85,3 @@ Mer informasjon om denne funksjonen er tilgjengelig i [Opplæring i Office-integ
 ## <a name="other-fixes"></a>Andre reparasjoner
 
 Denne versjonen inkluderer en rekke feilrettinger, nye enheter, reparasjoner for eksisterende enheter og lokaliserte etikettendringer.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

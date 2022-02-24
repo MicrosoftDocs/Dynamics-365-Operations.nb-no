@@ -80,6 +80,3 @@ I mange organisasjoner har kompensasjons- og fordelsansvarlige bare tilgang til 
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Plattform Update 24 for Finance and Operations
 Hvis du vil ha mer informasjon om Platform Update 24 for Finance and Operations, kan du se [Hva er nytt eller endret i Finance and Operations Platform Update 24 (mars 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

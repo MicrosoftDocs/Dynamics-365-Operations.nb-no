@@ -2,13 +2,16 @@
 title: Definere og arbeide med telefonsentersvindelvarsler
 description: Dette emnet forklarer hvordan du definerer regler for å varsle kundeservicerepresentanter om potensiell falsk informasjon når ordrer behandles. Du kan definere spesifikke koder som brukes til å sette mistenkelige ordrer på vent automatisk eller manuelt.
 author: josaw1
+manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 79103
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763674"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414723"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Definere og arbeide med telefonsentersvindelvarsler
 
@@ -34,13 +37,13 @@ Dette emnet beskriver hvordan du definerer kriterier og regler for å sette pote
 
 ## <a name="turning-on-the-fraud-check-feature"></a>Aktivere svindelkontrollfunksjonen
 
-Hvis du vil bruke funksjonen for svindel, må du sette **Aktiver ordrefullføring**-alternativet på kanalen til **Ja** når telefonsenterkanalen er [definert](/dynamics365/unified-operations/retail/set-up-order-processing-options). Når ordrefullføring er aktivert, må telefonsenterbrukere velge **Fullført** på siden for salgsordrer for alle salgsordrer som opprettes. Fullføringshandlingen fører til at **Salgsordresammendrag**-siden åpnes. Når brukere angir de påkrevde betalingsdataene på siden **Salgsordresammendrag**, velger de **Send** for å fullføre bestillingen. Når bestillingen er sendt, utløses funksjonen for svindelkontroll, og eventuelle regler som er aktive i systemet, godkjennes automatisk.
+Hvis du vil bruke funksjonen for svindel, må du sette **Aktiver ordrefullføring**-alternativet på kanalen til **Ja** når telefonsenterkanalen er [definert](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). Når ordrefullføring er aktivert, må telefonsenterbrukere velge **Fullført** på siden for salgsordrer for alle salgsordrer som opprettes. Fullføringshandlingen fører til at **Salgsordresammendrag**-siden åpnes. Når brukere angir de påkrevde betalingsdataene på siden **Salgsordresammendrag**, velger de **Send** for å fullføre bestillingen. Når bestillingen er sendt, utløses funksjonen for svindelkontroll, og eventuelle regler som er aktive i systemet, godkjennes automatisk.
 
-Telefonsenterbrukere kan også manuelt sette salgsordrer på vent for svindelgjennomgang før de velger **Send**. Velg **Sperre** \> **Manuell sperre for svindel** for å sette en salgsordre på vent manuelt på siden for **Salgsordresammendrag**. Du blir deretter bedt om å angi en kommentar som forklarer hvorfor du setter ordren på vent. Denne kommentaren vises i [ordresperrer](/dynamics365/unified-operations/retail/work-with-order-holds) arbeidsområdet for å gi kontekst til brukeren som gjennomgår ordrer som er satt på vent, for å finne ut om ordren skal frigis.
+Telefonsenterbrukere kan også manuelt sette salgsordrer på vent for svindelgjennomgang før de velger **Send**. Velg **Sperre** \> **Manuell sperre for svindel** for å sette en salgsordre på vent manuelt på siden for **Salgsordresammendrag**. Du blir deretter bedt om å angi en kommentar som forklarer hvorfor du setter ordren på vent. Denne kommentaren vises i [ordresperrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) arbeidsområdet for å gi kontekst til brukeren som gjennomgår ordrer som er satt på vent, for å finne ut om ordren skal frigis.
 
 I tillegg til å konfigurere **Aktiver ordrefullføring**-alternativet på kanalen må du konfigurere svindelkontrollfunksjonen i telefonsenterparameterne. Gå til **Retail og Commerce** \> **Kanaloppsett** \> **Telefonsenteroppsett** \> **Telefonsenterparametere**. På siden **Telefonsenterparametere** i kategorien **Sperrer** sett alternativet **Svindelkontroll** til **Ja**.
 
-I kategorien **Sperrer** bør du også definere [sperrekoder](/dynamics365/unified-operations/retail/work-with-order-holds) som skal brukes på en ordre som er enten settes på vent for svindelgjennomgang manuelt eller automatisk. Angi sperrekoder i feltene **Manuell sperrekode for svindel** og **Sperrekode for svindel**. Det kan være nyttig å opprette to unike sperrekoder, slik at brukere som jobber i sperrearbeidsområdet, enkelt kan filtrere og skille automatiske sperrer fra manuelle sperrer.
+I kategorien **Sperrer** bør du også definere [sperrekoder](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) som skal brukes på en ordre som er enten settes på vent for svindelgjennomgang manuelt eller automatisk. Angi sperrekoder i feltene **Manuell sperrekode for svindel** og **Sperrekode for svindel**. Det kan være nyttig å opprette to unike sperrekoder, slik at brukere som jobber i sperrearbeidsområdet, enkelt kan filtrere og skille automatiske sperrer fra manuelle sperrer.
 
 For at svindelkontrollfunksjonen skal fungere effektivt, må du også angi **Minste poengsum**-feltet. Alle svindelkriterier og -regler som er definert i systemet, har en poengsum. Når en salgsordre kontrolleres for svindeltreff, legges resultatene sammen for å gi rekkefølgen en total svindelpoengsum hvis ett eller flere treff blir funnet. Hvis den totale svindelpoengsummen for en ordre overskrider verdien av **Minste poengsum**-feltet, settes ordren automatisk på vent. Du kan eventuelt bruke de andre poengsumrelaterte feltene i kategorien **Sperrer** for å definere poengsum for e-post, telefonpoengsum, poengsum for postnummer/postkode og poengsum for utvidet postnummer/postkode. Hvis du ikke angir en poengsum for noen av disse statistiske svindelkriteriene når du definerer dem på siden **Statiske svindeldata**, vil systemet gi dem en poengsum ved å bruke standard poengsum du angav i kategorien **Sperrer** på siden **Telefonsenterparametere**.
 
@@ -65,7 +68,4 @@ Ordren er lagret, men **Ikke behandle**-flagget er angitt på den. Dette flagget
 
 Hvis du vil vise og behandle ordrene som er på vent for svindelgjennomgang, kan du gå til **Retail og Commerce** \> **Kunder** \> **Ordresperrer**. På siden **Ordresperrer** velger du en oppføring i listen, og deretter klikker du på **Ordresperre** for å se en mer detaljert visning som inneholder informasjon om årsaken til at sperringen. I hurtigkategorien **Svindeldetaljer** kan du vise de systematiske svindelkriteriene som var et treff for bestillingen, og resultatene som ble brukt. Hvis ordren ble satt på vent manuelt, kan du gå gjennom eventuelle kommentarer som ble angitt av brukeren som satte ordren på vent, ved å se på **Svindelmerknader**-delen på **Notater**-hurtigkategorien.
 
-Du finner mer informasjon om hvordan du arbeider med sperreordrer, ved å se [Ordresperrer](/dynamics365/unified-operations/retail/work-with-order-holds).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Du finner mer informasjon om hvordan du arbeider med sperreordrer, ved å se [Ordresperrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).

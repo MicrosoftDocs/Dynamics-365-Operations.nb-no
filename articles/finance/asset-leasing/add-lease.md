@@ -2,25 +2,27 @@
 title: Legge til eller kopiere leieavtaler (forhåndsversjon)
 description: Dette emnet beskriver hvordan du oppretter en ny leieavtale ved å angi informasjon for den i Aktivaleie, eller kopierer informasjon fra en eksisterende leieavtale.
 author: moaamer
-ms.date: 01/11/2022
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: abbf04d009a4b347792cd8b317e334da2a4cbbee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967932"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969609"
 ---
 # <a name="add-or-copy-leases-preview"></a>Legge til eller kopiere leieavtaler (forhåndsversjon)
 
@@ -35,19 +37,6 @@ Følg disse trinnene for å opprette en leieavtale i Aktivaleie.
 1. I handlingsruten på siden **Leiesammendrag** i velger du **Ny**.
 2. Angi leieavtaleinformasjonen. Obligatoriske felt har røde kantlinjer.
 
-Startdatoen for leiebetalingen kan ikke være tidligere enn startdatoen for leien. Hvis du angir en startdato for leiebetalingen som er tidligere enn startdatoen for leien, får du en feilmelding.
-
-Som standard er alternativet **Oppdeling av betalingsbeløp** på hurtigfanen **Generelt** på siden **Leiedetaljer** angitt til **Nei** hvis alternativet **Tillat oppdeling av betaling** på siden **Parametere for aktivaleie** er satt til **Ja**. 
-
-Hvis alternativet **Oppdeling av betalingsbeløp** er satt til **Ja**, er **Betalingsbeløp**-feltet på hurtigfanen **Linjer i betalingsplan** låst. Dette blir angitt til totalen for betalingsbeløpene som angis senere i katalogen **Oppdeling av betalingsbeløp**.
-
-Velg **Oppdelin av betalingsbeløp** for å åpne en side der du kan legge til de spesifiserte betalingstypene. Knappen **Legg til totaler i betalingsbeløp** flytter totalene til **Betalingsbeløp**-feltet.
-
-> [!NOTE]
-> Hvis du legger til et spesisert betalingsbeløp og deretter velger **Esc**-tasten, blir ikke de angitte beløpene lagt til i **Betalingsbeløp**-feltet på hurtigfanen **Linjer i betalingsplan**. I stedet lagres de i dialogboksen **Oppdeling av betalingsbeløp**. Hvis du vil at dialogboksen skal vise totalbeløpet, velger du **Beløp**-kolonnen, velger og holder (eller høyreklikker) og velger deretter **Summer denne kolonnen**. 
-
-Knappen **Kopier linje** kopierer den spesifiserte betalingsoppdelingen.
-
 ## <a name="create-a-lease-schedule"></a>Opprette en leieplan
 
 Når du er ferdig å registrere informasjon for leieavtalen, kan du følge disse trinnene for å opprette en leieplan.
@@ -61,9 +50,6 @@ Når du er ferdig å registrere informasjon for leieavtalen, kan du følge disse
     Siden **Tablådetaljer** viser hvordan leieavtalen gjøres rede for av tablåene som er tilordnet den. Herfra kan du vise leieplanene.
 
     Betalingsplanen inneholder inndataene fra fanen **Linjer i betalingsplan** på siden **Legg til leieavtale**. Du kan fortsatt endre hvert betalingsbeløp og hver variable betaling. Leieforpliktelsen beregnes på grunnlag av den endrede betalingsplanen.
-
-    > [!NOTE]
-    > Startdatoen for leiebetalingen må være den samme eller en senere dato enn startdatoen for leien. Du får en feilmelding hvis startdato for leiebetalingen er tidligere enn startdatoen for leien. 
 
 4. Når du er ferdig å se gjennom betalingsplanen, velger du **Bekreft tidsplan**. Etter at tidsplanen er bekreftet, er ikke leieavtalen lenger tilgjengelig for redigering.
 
@@ -102,6 +88,3 @@ Alle journaloppføringer som opprettes i Aktivaleie, befinner seg i journalen fo
 
 > [!NOTE]
 > Du kan ikke opprette journalen for aktivaleie manuelt. Den blir automatisk opprettet når leieplaner opprettes.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

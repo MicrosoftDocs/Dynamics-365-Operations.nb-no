@@ -1,32 +1,30 @@
 ---
 title: Klientfrakoblinger
-description: Dette emnet forklarer hva du gjør hvis kunden kobles fra miljøet og ikke vet hvorfor.
-author: twheeloc
-ms.date: 08/19/2021
+description: Denne artikkelen forklarer hva du gjør hvis kunden kobles fra hans eller hennes miljø og ikke vet hvorfor.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b15c5db19f1b07e3d469986ac700138ecb1d1525
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071141"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4419979"
 ---
 # <a name="client-disconnects"></a>Klientfrakoblinger
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Miljødetaljer** 
 
@@ -34,7 +32,7 @@ Dette problemet kan oppstå i alle miljøer.
  
 **Symptom** 
 
-Kunden kobles fra miljøet og vet ikke hvorfor. Kunden mottar én av følgende feilmeldinger:
+Kunden kobles fra hans eller hennes miljø og vet ikke hvorfor. Kunden mottar én av følgende feilmeldinger:
 
 - Forbindelsen er brutt. Klikk Lukk for å fortsette å arbeide.
 - Det virker som du har mistet nettverkstilkoblingen. Klikk Prøv på nytt for å prøve på nytt.
@@ -54,6 +52,3 @@ Microsoft Dynamics 365 Human Resources kobler fra brukere når to forskjellige �
 Kontroller at bare ett miljø er åpent om gangen for en bestemt webleser. Brukere kan åpne flere økter i samme miljø (det vil si flere faner i samme webleser).
 
 Brukere som vil hoppe mellom to miljøer samtidig, bør åpne hvert miljø i en annen webleser. (For eksempel kan bruker A vise miljø 1 i Chrome og miljø 2 i Microsoft Edge.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

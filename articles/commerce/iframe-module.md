@@ -2,12 +2,15 @@
 title: Iframe-modul
 description: Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/04/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754020"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665402"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 En iFrame-modul gir en iFrame (innebygd ramme) som er vert for eksternt innhold på et område. Den kan for eksempel brukes til å være vert for en YouTube-video eller PDF-filvisning på en områdeside. 
 
@@ -37,7 +42,7 @@ En iFrame-modul krever en mål-URL-adresse. Deretter er den vert for innholdet p
 
 Det følgende bildet viser eksempler på iFrame-moduler som viser eksterne videoer på områdesider.
 
-![Eksempel på iFrame-moduler som viser eksterne videoer.](./media/ecommerce-iframe.PNG)
+![Eksempel på iFrame-moduler som viser eksterne videoer](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>Egenskaper for iFrame-modul
 
@@ -66,15 +71,9 @@ Følg denne fremgangsmåten for å legge til en iFrame-modul på en side for å 
 1. Angi andre egenskaper, for eksempel **Overskrift** og **Høyde** etter behov.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 1. Gå til markedsføringssiden på området. Du skal se at videoen gjengis i iFrame-modulen.
-
-> [!NOTE]
-> Siden iFrame-modulen er vert for eksternt innhold, må forfattere på området kontrollere at innhold som er vert for en iFrame-modul, ikke bryter policyene for innholdsbegrensning i det aktuelle markedet. Hvis det er et innholdsbrudd på en side som bruker iFrame-modulen, kan forfatter av området fjerne iFrame-modulen ved å åpne siden i områdekonfiguratoren, velge **Fjern modul** i iFrame-modulsporet og deretter lagre og publisere siden på nytt.
-
+ 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

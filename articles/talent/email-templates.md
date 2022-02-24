@@ -81,6 +81,3 @@ Når ansettelsesteamet sender en e-post, kan den bruke malene som administratore
 
 > [!NOTE] 
 > Du kan opprette flere maler for e-postmeldinger som sendes automatisk. Imidlertid du kan angi bare én mal som den aktive malen. Siden denne prosessen blir utløst av hendelser, kan bare administratoren avgjøre hvilken mal som skal brukes, på grunnlag av kombinasjonen **Standard**- og **Sendt automatisk**-kort i malbiblioteket.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

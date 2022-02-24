@@ -1,10 +1,12 @@
 ---
 title: Parametere i Aktivastyring
 description: I Aktivastyring må generelle parametere knyttet til aktiva, arbeidsordrer og arbeidsordreplanlegging defineres.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1deef00f01d83bc809a004265c386ba9d300df5fa4a1be245812ed5632059f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751967"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020660"
 ---
 # <a name="asset-management-parameters"></a>Parametere i Aktivastyring
 
@@ -99,11 +101,8 @@ Feltene som er beskrevet i listen nedenfor, er knyttet til beregnede vurderingsr
 
 ## <a name="the-document-types-tab"></a>Fanen Dokumenttyper
 
-Velg dokumenttypene som skal være tilgjengelige for utskrift av vedlegg som er knyttet til en arbeidsordrerapport. Denne gjøres ved å velge en en dokumenttype i delen **Tilgjengelig** og velge ![fremoverpilen.](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, velger du dokumenttypen i delen **Valgt** og velger ![tilbakepilen](media/16-setup-for-objects.png).
+Velg dokumenttypene som skal være tilgjengelige for utskrift av vedlegg som er knyttet til en arbeidsordrerapport. Denne gjøres ved å velge en en dokumenttype i delen **Tilgjengelig** og velge ![fremoverpilen](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, velger du dokumenttypen i delen **Valgt** og velger ![tilbakepilen](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Fanen Nummerserier
 
 Velg de nødvendige nummerseriene i denne delen. Det finnes to nummerserier for anleggsmidler: én for manuelt opprettede anleggsmidler, og én for anleggsmidler som er opprettet ved hjelp av ventende anleggsmidler.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

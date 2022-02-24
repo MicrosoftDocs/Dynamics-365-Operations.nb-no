@@ -2,9 +2,11 @@
 title: Opprett en Internett-funksjonalitetsprofil
 description: Dette emnet beskriver hvordan du oppretter en Internett-funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,18 +16,21 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d6dcbb5b9ea01035396e90a6809cb1568c3a4fc86def41cf36732588b5046da7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b0afeabfecb60672156692f3cd809445624020c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716200"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969982"
 ---
-# <a name="create-an-online-functionality-profile"></a>Opprette en nettbasert funksjonalitetsprofil
+# <a name="create-an-online-functionality-profile"></a>Opprett en Internett-funksjonalitetsprofil
+
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet viser en oversikt over hvordan du konfigurerer en Internett-funksjonalitetsprofil for Microsoft Dynamics 365 Commerce.
+
+## <a name="overview"></a>Oversikt
 
 Internett-funksjonalitetsprofilen inneholder ulike innstillinger som brukes for Internett-kanaler. Hver Internett-kanal må angi en Internett-funksjonalitetsprofil.
 
@@ -42,7 +47,7 @@ Prosedyren nedenfor forklarer hvordan du oppretter en Internett-funksjonalitetsp
 
 Bildet nedenfor viser et eksempel på en Internett-funksjonalitetsprofil.
   
-![Eksempel på Internett-funksjonalitetsprofil.](media/online-functionality-profile.png)
+![Eksempel på Internett-funksjonalitetsprofil](media/online-functionality-profile.png)
 
 ## <a name="functions"></a>Funksjoner
 
@@ -61,6 +66,3 @@ Bildet nedenfor viser et eksempel på en Internett-funksjonalitetsprofil.
 [Definere en detaljhandelskanal](channel-setup-retail.md)
 
 [Definere en telefonsenterkanal](channel-setup-callcenter.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

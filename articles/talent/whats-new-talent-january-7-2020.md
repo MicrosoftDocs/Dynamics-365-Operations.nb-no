@@ -53,6 +53,3 @@ Denne endringen legger til et slettealternativ i skjemaet **Arbeidere uten anset
 5. Angi **Slett**-tillatelsen som skal gis.
 6. Velg kategorien **Upubliserte objekter**.
 7. Velg **Publiser alle**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

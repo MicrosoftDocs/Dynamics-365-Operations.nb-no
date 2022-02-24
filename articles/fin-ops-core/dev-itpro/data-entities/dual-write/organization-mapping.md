@@ -2,25 +2,34 @@
 title: Organisasjonshierarki i Dataverse
 description: Dette emnet beskriver integreringen av organisasjonsdata mellom Finance and Operations-apper og Dataverse.
 author: RamaKrishnamoorthy
+manager: AnnBe
 ms.date: 07/15/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5132fd85fdf2c08ccded9db590328c394a2f984e
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062092"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744699"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisasjonshierarki i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Fordi Dynamics 365 Finance er et finansielt system, er *organisasjon* et kjernekonsept, og systemoppsettet starter med konfigurasjonen av et organisasjonshierarki. Forretningsøkonomi kan deretter spores på organisasjonsnivå og også på et hvilket som helst nivå i organisasjonshierarkiet.
 
@@ -30,25 +39,37 @@ Selv om Dataverse ikke har konseptet med et organisasjonshierarki, har det noen 
 
 Et forretningsøkosystem som består av Finance and Operations-apper og Dataverse, vil fortsatt ha et organisasjonshierarki. Dette organisasjonshierarkiet er bygd på Finance and Operations-apper, men det eksponeres i Dataverse for informasjons- og utvidelsesformål. Illustrasjonen nedenfor viser informasjon om organisasjonshierarkiet som vises i Dataverse, som en énveis dataflyt fra Finance and Operations-apper til Dataverse.
 
-![Bilde av arkitektur.](media/dual-write-data-flow.png)
+![Bilde av arkitektur](media/dual-write-data-flow.png)
 
-Tabelltilordninger for organisasjonshierarki er tilgjengelige for enveissynkronisering av data fra økonomi- og driftsapper til Dataverse.
+Tabeltilordninger for organisasjonshierarki er tilgjengelige for enveissynkronisering av data fra Finance and Operations-apper til Dataverse.
 
 ## <a name="templates"></a>Maler
 
 Produktinformasjonen inneholder all informasjonen som er knyttet til produktet og definisjonen, for eksempel produktdimensjonene eller sporings- og lagerdimensjonene. Som følgende tabell viser opprettes en samling tabelltilordning for å synkronisere produkter og beslektet informasjon.
 
-Finance and Operations-apper | Kundeengasjementsapper     | beskrivelse
+Finance and Operations-apper | Andre Dynamics 365-apper | beskrivelse
 -----------------------|--------------------------------|---
-[Juridiske enheter](mapping-reference.md#102) | cdm_companies | Gir toveis synkronisering av informasjon om juridisk enhet (firma).
-[Juridiske enheter](mapping-reference.md#142) | msdyn_internalorganizations |
-[Driftsenhet](mapping-reference.md#143) | msdyn_internalorganizations |
-[Organisasjonshierarki – publisert](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte tabellen for organisasjonshierarkiet.
-[Formål for organisasjonshierarki](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | Denne malen gir enveis synkronisering av formålstabellen for organisasjonshierarkiet.
-[Type organisasjonshierarki](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | Denne malen gir enveis synkronisering av typetabellen for organisasjonshierarkiet.
+Formål for organisasjonshierarki | msdyn_internalorganizationhierarchypurposes | Denne malen gir enveis synkronisering av formålstabellen for organisasjonshierarkiet.
+Type organisasjonshierarki | msdyn_internalorganizationhierarchytypes | Denne malen gir enveis synkronisering av typetabellen for organisasjonshierarkiet.
+Organisasjonshierarki – publisert | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte tabellen for organisasjonshierarkiet.
+Driftsenhet | msdyn_internalorganizations |
+Juridiske enheter | msdyn_internalorganizations |
+Juridiske enheter | cdm_companies | Gir toveis synkronisering av informasjon om juridisk enhet (firma).
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
+
+[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
+
+[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 ## <a name="internal-organization"></a>Intern organisasjon
 
 Informasjon om intern organisasjon i Dataverse kommer fra to tabeller, **driftsenhet** og **juridiske enheter**.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
+
+[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
+
+[!include [Legal entities](includes/LegalEntities-Companies.md)]

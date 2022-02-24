@@ -2,19 +2,28 @@
 title: Definere tilordningen for salgsordrens statuskolonner
 description: Dette emnet beskriver hvordan du definerer salgsordrestatuskolonnene for dobbel skriving.
 author: dasani-madipalli
+manager: tonyafehr
 ms.date: 06/25/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: damadipa
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 53d824ca2fb1eadf34e62bf9c08b837db3efaf42
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782290"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744305"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Definere tilordningen for salgsordrens statuskolonner
 
@@ -93,7 +102,7 @@ Følg denne fremgangsmåten for å aktivere attributtet **IsSOPIntegrationEnable
 1. I en webleser kan du gå til `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Erstatt **\<test-name\>** med firmaets kobling til Sales.
 2. På siden som åpnes, finner du **organizationid**, og noter verdien.
 
-    ![Finne organizationid.](media/sales-map-orgid.png)
+    ![Finne organizationid](media/sales-map-orgid.png)
 
 3. I Sales åpner du leserkonsollen og kjører følgende skript: Bruk **organizationid**-verdien fra trinn 2.
 
@@ -112,35 +121,32 @@ Følg denne fremgangsmåten for å aktivere attributtet **IsSOPIntegrationEnable
     );
     ```
 
-    ![JavaScript-kode i leserkonsollen.](media/sales-map-script.png)
+    ![JavaScript-kode i leserkonsollen](media/sales-map-script.png)
 
 4. Kontroller at **IsSOPIntegrationEnabled** er satt til **sann**. Bruk URL-adressen fra trinn 1 til å kontrollere verdien.
 
-    ![Kontroller at IsSOPIntegrationEnabled er satt til sann.](media/sales-map-integration-enabled.png)
+    ![Kontroller at IsSOPIntegrationEnabled er satt til sann](media/sales-map-integration-enabled.png)
 
 Følg denne fremgangsmåten for å aktivere attributtet **isIntegrationUser**.
 
 1. I Sales kan du gå til **Innstilling \> Tilpasning \> Tilpass systemet**, velge **Brukertabell** og deretter åpne **Skjema \> Bruker**.
 
-    ![Åpne brukerskjemaet.](media/sales-map-user.png)
+    ![Åpne brukerskjemaet](media/sales-map-user.png)
 
 2. I Feltutforsker finner du **Modusen Integreringsbruker** og dobbeltklikker den for å legge den til i skjemaet. Lagre endringene.
 
-    ![Legge til kolonnen Integreringsbruker i skjemaet.](media/sales-map-field-explorer.png)
+    ![Legge til kolonnen Integreringsbruker i skjemaet](media/sales-map-field-explorer.png)
 
 3. I Sales går du til **Innstilling \> Sikkerhet \> Brukere** og endrer visningen fra **Aktiverte brukere** til **Programbrukere**.
 
-    ![Endre visning fra Aktiverte brukere til Programbrukere.](media/sales-map-enabled-users.png)
+    ![Endre visning fra Aktiverte brukere til Programbrukere](media/sales-map-enabled-users.png)
 
 4. Velg de to oppføringene for **DualWrite IntegrationUser**.
 
-    ![Liste over programbrukere.](media/sales-map-user-mode.png)
+    ![Liste over programbrukere](media/sales-map-user-mode.png)
 
 5. Endre verdien for kolonnen **Integreringsbruker** til **Ja**.
 
-    ![Endre verdien for kolonnen Integreringsbruker.](media/sales-map-user-mode-yes.png)
+    ![Endre verdien for kolonnen Integreringsbruker](media/sales-map-user-mode-yes.png)
 
 Salgsordrene er nå tilordnet.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

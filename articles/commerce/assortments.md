@@ -2,22 +2,25 @@
 title: Sortimentstyring
 description: Dette emnet beskriver de grunnleggende begrepene for sortimentstyring i Dynamics 365 Commerce, og gir informasjon om implementering av prosjekt.
 author: jblucher
+manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717777"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414570"
 ---
 # <a name="assortment-management"></a>Sortimentstyring
 
@@ -35,27 +38,27 @@ Den generelle produktsammensetningen av en kanal bestemmes av de publiserte sort
 
 I eksemplet nedenfor er en unik sortiment konfigurert for hver butikk. I dette tilfellet er bare produkt 1 tilgjengelig i butikk 1, og bare produkt 2 er tilgjengelig i butikk 2.
 
-![Hvert produkt er tilgjengelig i én butikk.](./media/Managing-assortments-figure1.png)
+![Hvert produkt er tilgjengelig i én butikk](./media/Managing-assortments-figure1.png)
 
 Hvis du vil gjøre produkt 2 tilgjengelig i butikk 1, kan du legge produktet til sortiment 1.
 
-![Produkt 2 lagt til i sortiment 1.](./media/Managing-assortments-figure2.png)
+![Produkt 2 lagt til i sortiment 1](./media/Managing-assortments-figure2.png)
 
 Du kan også legge butikk 1 til sortiment 2.
 
-![Butikk 1 lagt til i sortiment 2.](./media/Managing-assortments-figure3.png)
+![Butikk 1 lagt til i sortiment 2](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisasjonshierarkier
 
 I tilfeller der flere kanaler deler samme produktsortimentene, kan du konfigurere sortimentene ved hjelp av organisasjonshierarkiet for sortimenter i Commerce. Når noder fra dette hierarkiet legges til, er alle kanaler i denne noden og de underordnede nodene inkludert.
 
-![Organisasjonshierarki.](./media/Managing-assortments-figure4.png)
+![Organisasjonshierarki](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorier
 
 På samme måte kan du på produkt-siden inkludere produktgrupper ved hjelp av kategorihierarkier for produkter. Du kan konfigurere sortimenter ved å inkludere én eller flere kategorihierarkinoder. I så fall omfatter sortimentet alle produkter i kategorinoden og de underordnede nodene.
 
-![Produktkategorier.](./media/Managing-assortments-figure5.png)
+![Produktkategorier](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Ekskluderte produkter eller kategorier
 
@@ -64,7 +67,7 @@ I tillegg til å inkludere produkter og kategorier i sortimenter, kan du bruke a
 > [!NOTE]
 > Hvis et produkt per definisjon er både inkludert og ekskludert i én eller flere sortimenter, skal produktet alltid regnes som ekskludert.
 
-![Ekskludert produkt.](./media/Managing-assortments-figure6.png)
+![Ekskludert produkt](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globale og frigitte produkter
 
@@ -104,6 +107,3 @@ Vurder følgende implementeringskrav når du planlegger og behandler sortimenter
 - **Salg og returer utenfor sortimenter** – denne funksjonen hjelper forhandlerne å administrere sortimenter effektiv, ved at de kan begrense antall tilgjengelige produkter til produkter som hører til kjerneutvalget for butikken. Denne funksjonen bidrar også til å håndtere tilfeller der et produkt ved en feiltakelse ble utelatt fra et utvalg, eller der et produkt ble returnert utenfor de effektive datoene for sortimentet.
 
 Hvis produktdataen ikke eksisterer i kanalens database, foretar POS et sanntidsanrop til hovedkontoret for å hente den nødvendige informasjonen, slik at produktet kan solges, returneres eller legges til en kundeordre. Produktinformasjon som hentes på denne måten er bare tilgjengelig i løpet av transaksjonen. Produktet blir ikke lagt til sortimentdefinisjonen. Derfor foretas sanntidsanrop etter behov.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

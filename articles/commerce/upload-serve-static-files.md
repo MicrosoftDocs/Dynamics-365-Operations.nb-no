@@ -1,31 +1,35 @@
 ---
 title: Laste opp og betjene statiske filer
-description: Dette emnet beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
+description: Dette emnet beskriver hvordan du laster opp en statisk fil til Microsoft Dynamics 365 Commerce-områdebytter, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
 author: StuHarg
+manager: annbe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 981bbf03480abfd812b4020173b7acfdad0fef14
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714689"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594988"
 ---
 # <a name="upload-and-serve-static-files"></a>Laste opp og betjene statiske filer
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Dette emnet beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
+Dette emnet beskriver hvordan du laster opp en statisk fil til Microsoft Dynamics 365 Commerce-områdebytter, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
 
 Noen tredjepartskontakter krever at en fil blir lagret og betjent fra e-handelsområdet. Disse koblingene forventer at filen blir returnert ved forespørsler til en bestemt URL-bane for tilbakeringing og et filnavn. Dette emnet beskriver derfor hvordan du laster opp og betjener en statisk fil med en brukerdefinert URL-adresse og et filnavn på et Dynamics 365 Commerce-e-handelsområde.
 
@@ -103,6 +107,3 @@ Hvis du vil endre URL-banen, følger du denne fremgangsmåten.
 [Beskjære bilder](dam-crop-images.md)
 
 [Tilpasse bildefokuspunkter](dam-custom-focal-point.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

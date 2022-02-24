@@ -66,6 +66,3 @@ Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre l�
 ### <a name="videos"></a>Videoer
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

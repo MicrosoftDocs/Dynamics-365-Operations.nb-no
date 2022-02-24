@@ -2,27 +2,27 @@
 title: Oversikt over budsjettplanlegging
 description: Dette emnet beskriver budsjettplanlegging. Det inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
 author: panolte
+manager: AnnBe
 ms.date: 01/11/2018
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "17251"
-- intro-internal
+ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982071"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019234"
 ---
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
@@ -42,7 +42,7 @@ En organisasjon kan konfigurere budsjettplanlegging, og deretter konfigurere bud
 - **Budsjettplanleggingsstadier** – Budsjettplanleggingsstadier definerer trinnene som en budsjettplan følger fra start til endelig godkjenning. Budsjettplanleggingsstadier ordnes i arbeidsflyter for budsjettplanlegging.
 - **Arbeidsflyter for budsjettplanlegging** – Arbeidsflyter for budsjettplanlegging består av og definerer budsjettplanleggingsstadier. Arbeidsflyter for budsjettplanlegging er knyttet til budsjetteringsarbeidsflyter. Budsjetteringsarbeidsflyter er automatiserte og manuelle prosesser som flytter budsjettplaner gjennom budsjettplanleggingsstadiene.
 
-[![Budsjettplanleggingsterminologi.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Budsjettplanleggingsterminologi](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Vanlige oppgaver
 
@@ -67,17 +67,17 @@ Et valgfritt men anbefalt første trinn, er å opprette et skjema som viser orga
 
 Illustrasjonen nedenfor viser et generelt eksempel, der separate arbeidsflyter for budsjettplanlegging er opprettet for forskjellige nivåer i organisasjonen. Stadier defineres i hver arbeidsflyt, og bestemte scenarier tilordnes hvert stadium for å inneholde budsjettdataene. Oppgaver fullføres for å flytte dataene fra ett stadium til det neste. Beløp kan for eksempel tildeles eller samles til ulike kontoer, godkjenninger eller andre gjennomganger. I denne illustrasjonen angir kursiv et scenario som ikke kan redigeres i løpet av stadiet, eller data som er historisk eller har blitt godkjent på et tidligere stadium og derfor ikke bør endres.
 
-[![Generisk skjema for budsjettplanlegging.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Generisk skjema for budsjettplanlegging](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 Følgende illustrasjon viser et eksemplet der firmaets hovedkontor beregner beløpene for opprinnelig budsjett og distribuerer dem til salgsavdelingen. Salgsavdelingene vil deretter beregne og sende sine prognoser til hovedkontor, der budsjettansvarlig samler og justerer prognosen. Til slutt sender budsjettansvarlig de justerte budsjettbeløpene til økonomisjefen for gjennomgang, endelige justeringer og godkjenning.
 
-[![Eksempel på budsjettplanleggingsskjema.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Eksempel på budsjettplanleggingsskjema](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Organisasjonshierarki for budsjettplanlegging
 
 På siden **Organisasjonshierarki** kan du angi et organisasjonshierarki som en budsjettplanleggingshierarki for hver budsjettplanleggingsprosess. Budsjettplanleggingshierarkiet trenger ikke samsvarer med standard organisasjonshierarki som brukes til andre formål. Siden dette hierarkiet brukes til å samle og distribuere data, vil du kanskje det har en annen struktur. I eksempelskjemaet er salgsavdelingen under et hovedkontornivå som inkluderer budsjettet- og økonomiavdeling. Denne strukturen avviker sannsynlig fra strukturen som brukes til å administrere driften for salgsavdelingene. Bare ett organisasjonshierarki kan tilordnes hver budsjettplanleggingsprosess.
 
-Hvis du vil ha mer informasjon, kan du se [Organisasjoner og organisasjonshierarkier](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
+Hvis du vil ha mer informasjon, kan du se [Organisasjoner og organisasjonshierarkier](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Brukersikkerhet
 
@@ -95,7 +95,7 @@ En anbefalt fremgangsmåte er å opprette en budsjettplanleggingsarbeidsflyt for
 
 Du oppretter budsjetteringsarbeidsflyten for budsjettplanlegging på siden **Budsjetteringsarbeidsflyter**. Prosessen ligner på prosessen for å opprette andre arbeidsflyter. Illustrasjonen nedenfor viser et eksempel på en arbeidsflyt for Hovedkontor.
 
-[![Arbeidsflyt for budsjettering for budsjettplanlegging.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Arbeidsflyt for budsjettering for budsjettplanlegging](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Arbeidsflyten inneholder følgende elementer:
 
@@ -143,11 +143,11 @@ Når du definerer en stadiefordeling, kan du knytte arbeidsflyten for budsjettpl
 
 I eksempelskjemaet som vises tidligere i dette emnet, blir det utført en tildeling for å overføre beløp fra en budsjettplan og scenarier i grunnlinjestadiet for hovedkontoret til en annen budsjettplan og scenarier i estimatstadiet for salgsavdelinger. Illustrasjonen nedenfor viser den aktuelle delen av eksempelskjemaet.
 
-[![Stadiefordeling.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Stadiefordeling](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 I eksempelskjemaet utføres i tillegg en aggregering fra budsjettplaner og scenarioer i innsendtstadiet for salgsavdelinger til en overordnet plan i opprullingsstadiet for hovedkontor. Illustrasjonen nedenfor viser den aktuelle delen av eksempelskjemaet.
 
-[![Samling.](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Samling](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Prioriteter
 
@@ -165,7 +165,7 @@ I tillegg til kolonner for budsjettbeløp, kan du definere kolonner for prosjekt
 
 I eksempelskjemaet vil du kanskje opprette kolonner for scenariene "PY-salg,"kontrakter" og "prognose". (Illustrasjonen nedenfor viser den aktuelle delen av skjemaet). Du kan deretter velge ut én eller alle scenariene inn i separate kolonner for hvert kvartal av regnskapsåret, slik at salgsavdelingslederen nøyaktig kan angi prognosebeløp for hver periode.
 
-[![Illustrasjon av deler av skjemaet for å legge til kolonner.](./media/columns.png)](./media/columns.png)
+[![Kolonner](./media/columns.png)](./media/columns.png)
 
 Du kan også angi om hvert oppsettelement (kolonne) kan redigeres, og om de er tilgjengelige i alle regnearkmaler som opprettes for dette oppsettet. I oppsettet som brukes for estimatstadiet i eksempelskjemaet, kan prognosekolonnene redigeres, mens kolonnene for PY-salg og kontrakter.
 
@@ -203,7 +203,4 @@ På **Handlinger**-menyen kan du også opprette en ny prosess ved å kopiere en 
 
 En annen nyttig kommando på **Handlinger**-menyen er **Vis budsjettprosesstatus**. Denne kommandoen viser grafisk budsjettplanene i en prosess, sammen med relevante data, for eksempel planens arbeidsflytstatus, sammendrag etter beløp og enhet, og ettklikksnavigering for budsjettplanene.
 
-[![Status for budsjettplanleggingsprosess.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[![Status for budsjettplanleggingsprosess](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)

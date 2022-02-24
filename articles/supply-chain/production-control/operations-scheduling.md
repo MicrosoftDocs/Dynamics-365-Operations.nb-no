@@ -1,10 +1,12 @@
 ---
 title: Grovplanlegging
 description: Dette emnet gir informasjon om grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574575"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966411"
 ---
 # <a name="operations-scheduling"></a>Grovplanlegging
 
@@ -74,12 +76,10 @@ Når du kjører grovplanlegging, kan du avbryte bestemte deler av ruten. Disse d
 ## <a name="finite-materials"></a>Begrensede materialer
 Hvis du arbeider med begrenset materiale, avhenger planlegging også av tilgjengeligheten av materialene som kreves for produksjonen. Hvis det ikke er nok tilgjengelige komponenter for produksjonen, kan produksjonen forsinkes. Du kan basere planleggingen på bruk av materialer ved å angi materialene som må være tilgjengelige for produksjon. Når du optimaliserer både ressurskapasitet og tilgjengeligheten av materialer, beregnes produksjonen i henhold til disse begrensningene. En produksjonsordre kan ikke planlegges å starte før kapasitet og materialer er tilgjengelige samtidig og i nødvendige mengder.
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Alternativer for grovplanlegging](operation-scheduling-options.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

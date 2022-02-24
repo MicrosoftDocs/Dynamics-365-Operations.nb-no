@@ -2,29 +2,34 @@
 title: Oppgavebehandling på salgsstedet
 description: Dette emnet beskriver oppgavebehandling i Microsoft Dynamics 365 Commerce POS-programmet (salgssted).
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cc685fcd584fe2ab5cd9282e8fbefbd284d5b2a2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772112"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414706"
 ---
 # <a name="task-management-in-pos"></a>Oppgavebehandling på salgsstedet
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver oppgavebehandling i Microsoft Dynamics 365 Commerce POS-programmet (salgssted).
+
+## <a name="overview"></a>Oversikt
 
 Dynamics 365 Commerce POS-programmet har funksjoner for oppgavebehandling som gjør at butikkledere og arbeidere kan administrere oppgaver og oppdatere oppgavestatus. Butikkarbeidere kan få tilgang til oppgaver enten ved å velge **Oppgaver**-flisen på POS-startsiden eller ved å velge oppgavevarslinger. Som standard blir butikkarbeidere tatt til kategorien **Mine oppgaver**, der de kan vise oppgavene som er tilordnet dem. De kan imidlertid enkelt bytte til kategoriene **Forfalte oppgaver**, **Åpne oppgaver** og **Oppgavelister**.
 
@@ -44,11 +49,11 @@ Butikkarbeidere kan utføre følgende oppgaveoperasjoner i POS-programmet ved hj
 
 Følgende illustrasjon viser kategorien **Mine oppgaver** i Commerce POS-programmet.
 
-![Mine oppgaver-kategorien i Commerce POS-programmet.](media/POS-task-management.png)
+![Mine oppgaver-kategorien i Commerce POS-programmet](media/POS-task-management.png)
 
 Illustrasjonen nedenfor viser kategorien **Oppgavelister**.
 
-![Oppgavelister-kategorien i Commerce POS-programmet.](media/POS-task-lists-management.png)
+![Oppgavelister-kategorien i Commerce POS-programmet](media/POS-task-lists-management.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -59,6 +64,3 @@ Illustrasjonen nedenfor viser kategorien **Oppgavelister**.
 [Opprette oppgavelister og legge til oppgaver](task-mgmt-create-lists.md)
 
 [Tilordne oppgavelister til butikker eller ansatte](task-mgmt-assign-lists.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

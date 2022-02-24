@@ -2,9 +2,11 @@
 title: Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten
 description: Dette emnet forklarer hvordan du laster ned elektroniske rapporteringskonfigurasjoner (ER) fra det globale repositoriet for konfigurasjonstjenesten.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605337"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679564"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigurasjoner (ER)](general-electronic-reporting.md#Configuration) fra det globale repositoriet for konfigurasjonstjenesten. Hvis du vil ha mer informasjon, kan du se [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurasjonstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigurasjoner (ER)](general-electronic-reporting.md#Configuration) fra det globale repositoriet for konfigurasjonstjenesten. Hvis du vil ha mer informasjon, kan du se [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurasjonstjeneste](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Åpne konfigurasjonsrepositoriet
 
@@ -40,7 +42,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 3. I delen **Konfigurasjonsleverandører** velger du **Microsoft**-flisen.
 3. På **Microsoft**-flisen velger du **Repositorier**.
 
-    ![Arbeidsområdet Elektronisk rapportering.](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Arbeidsområdet Elektronisk rapportering](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. På **Konfigurasjonsrepositorier**-siden i rutenettet velger du det eksisterende repositoriet for **Global**-typen. Hvis dette repositoriet ikke vises i rutenettet, gjør du følgende:
 
@@ -52,7 +54,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 
 5. Velg **Åpne** for å vise listen over ER-konfigurasjoner for det valgte repositoriet.
 
-    ![Konfigurasjonsrepositorier-side.](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfigurasjonsrepositorier-side](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Importere én enkelt konfigurasjon
 
@@ -63,7 +65,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
     > [!NOTE]
     > **Importer**-knappen er ikke tilgjengelig for ER-konfigurasjonsversjoner som allerede finnes i den gjeldende Finance-forekomsten.
 
-    ![Side for konfigurasjonsrepositorium, Konfigurasjoner-hurtigfane.](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfigurasjonsrepositorium-side](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importere filtrerte konfigurasjoner
 
@@ -77,7 +79,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 4. I **Konfigurasjoner**-hurtigkategorien velger du **Importer** for å laste ned de filtrerte konfigurasjonene fra det globale repositoriet til den gjeldende forekomsten.
 5. I **Konfigurasjoner**-hurtigkategorien velger du **Nullstill filter** for å tømme de angitte utvalgsbetingelsene.
 
-    ![Siden for konfigurasjonsrepositorium, Versjoner-hurtigfane, Importer-knapp.](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurasjonsrepositorium-side](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Avhengig av ER-innstillingene valideres konfigurasjonene når de er importert. Du kan få beskjed om eventuelle problemer som oppdages. Du må løse problemene før du kan bruke den importerte konfigurasjonsversjonen. Hvis du vil ha mer informasjon, se listen over relaterte ressurser for dette emnet.
@@ -88,6 +90,3 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

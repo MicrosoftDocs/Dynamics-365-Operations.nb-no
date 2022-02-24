@@ -2,23 +2,26 @@
 title: Hva er nytt eller endret i Dynamics 365 Retail
 description: Denne siden peker til ressurser som gir deg informasjon om de nye funksjonene i de siste versjonene av Microsoft Dynamics 365 Retail.
 author: sericks007
+manager: AnnBe
 ms.date: 10/20/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 7c2fa01a0d15142bd7a4d5f46572953706037fd6bf9638e975f75c5514293612
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec4750d712c82ae909b0d4d7f52cc9f7f44d0875
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777554"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414732"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Hva er nytt og endret i Dynamics 365 Retail
 
@@ -42,6 +45,3 @@ Denne siden peker til ressurser som gir deg informasjon om de nye funksjonene og
 | Dynamics 365 for Retail – 7.3.2.5 | 7.3.21971.64091 | 2018. juni | [KB 4342134 Microsoft Dynamics 365 for Retail versjon 7.3.2.5 – feilrettingspakke 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \*Koblingen peker til en Knowledge Base (KB)-artikkel. Du må logge på Lifecycle Services (LCS) for å vise KB-artikkelen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

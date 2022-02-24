@@ -1,27 +1,30 @@
 ---
 title: Koble eksterne enheter til salgsstedet
 description: Dette emnet beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414563"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Koble eksterne enheter til salgsstedet
 
@@ -78,7 +81,7 @@ Mens selve maskinvarestasjonen er angitt på kanalnivå og inkluderer forekomsts
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med tilkoblede eksterne enheter
 
-[![Tradisjonelt fast salgssted.](./media/traditional-300x279.png)](./media/traditional.png)
+[![Tradisjonelt fast salgssted](./media/traditional-300x279.png)](./media/traditional.png)
 
 Hvis du vil koble MPOS til enheter på salgssted i et tradisjonelt scenario for fast salgssted, må du først gå til kassen og tilordne en maskinvareprofil til den. Du kan finne kassen på salgsstedet under **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Kasser**. 
 
@@ -97,7 +100,7 @@ Til slutt går du til MPOS og bruker operasjonen **Velg maskinvarestasjon** for 
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS en frittstående maskinvarestasjon
 
-[![Delte eksterne enheter.](./media/shared-300x254.png)](./media/shared.png)
+[![Delte eksterne enheter](./media/shared-300x254.png)](./media/shared.png)
 
 I dette scenariet er en frittstående maskinvarestasjon delt mellom MPOS- og Cloud POS-klienter. Dette scenariet krever at du oppretter en profil for maskinvarestasjon for å angi nedlastingspakken, port og maskinvareprofil som maskinvarestasjonen bruker. Du kan finne profilen for maskinvarestasjon på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Salgsstedsprofiler** &gt; **Maskinvarestasjonsprofiler**. 
 
@@ -202,6 +205,3 @@ Aktiveringsrelatert tilleggsinformasjon inkluderer arbeideren som endret aktiver
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alle endringer i en klient på salgsstedet, unntatt endringer i statusen for enhetsaktivering, må synkroniseres til kanaldatabasen for å tre i kraft. Hvis du vil synkronisere endringer til kanaldatabasen, går du til **Detaljhandel og handel** &gt; **IT for detaljhandel og handel** &gt; **Distribusjonsplan**, og kjører den påkrevde distribusjonsplanen. For klientendringer må du kjøre distribusjonsplanene **Kasser** og **Kanalkonfigurasjon**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

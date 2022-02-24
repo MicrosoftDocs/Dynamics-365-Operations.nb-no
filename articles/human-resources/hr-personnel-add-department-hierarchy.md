@@ -1,33 +1,31 @@
 ---
 title: Opprette avdelinger og inkludere dem i avdelingshierarkiet
-description: En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon. En avdeling er ansvarlig for et bestemt område i organisasjonen, for eksempel salg, regnskap eller Personale.
-author: twheeloc
-ms.date: 10/28/2021
+description: En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon. En avdeling er ansvarlig for et bestemt område i organisasjonen, for eksempel salg, regnskap eller Personale. Du kan bruke avdelinger til å rapportere om funksjonsområder. Avdelinger kan ha ansvar for fortjeneste og tap.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8571b254a3dcdeaf562a97f165b8124f04ae7e6d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068900"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4419827"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Opprette avdelinger og inkludere dem i avdelingshierarkiet
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon. En avdeling er ansvarlig for et bestemt område i organisasjonen, for eksempel salg, regnskap eller Personale. Du kan bruke avdelinger til å rapportere om funksjonsområder. Avdelinger kan ha ansvar for fortjeneste og tap.
 
@@ -35,15 +33,15 @@ En avdeling kan inneholde en gruppe med kostsentre. Stillinger kan tilordnes til
 
 | Felt               | Beskrivelse                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Navn**                | Skriv inn et navn for avdelingen.                                                                                                                                                                                  |
-| **Avdelingsnummer**   | Det kan hende at en standardverdi genereres automatisk hvis en nummerseriekode er tilordnet til **Organisasjonsnummer**-referansen på siden **Nummerserier**.                                                 |
-| **Søkenavn**         | Angi et navn eller akronym som kan brukes til å søke etter avdelingen.                                                                                                                                            |
-| **Notat**                | Angi eventuell tilleggsinformasjon her.                                                                                                                                                                            |
-| **I hierarki**        | En merket boks indikerer at avdelingen er inkludert i avdelingshierarkiet. Hvis du vil ha informasjon om hvordan du legger til en avdeling i avdeling-hierarkiet, kan du se informasjonen senere i denne artikkelen. |
-| **DUNS-nummer**         | DUNS står for Data Universal Number System. Dette er et nisifret nummer som utstedes av Dun & Bradstreet.                                                                                                     |
-| **Leder**             | Angi personen som administrerer avdelingen.                                                                                                                                                                    |
-| **Adresser**           | Legg til adresseinformasjonen for avdelingen. Legg for eksempel til postadressen til bygningen som avdelingen er i.                                                                          |
-| **Kontaktinformasjon** | Legg til kontaktinformasjonen for avdelingen. Legg for eksempel til et telefonnummer for brukerstøtten i avdelingen.                                                                                           |
+| Navn                | Skriv inn et navn for avdelingen.                                                                                                                                                                                  |
+| Avdelingsnummer   | Det kan hende at en standardverdi genereres automatisk hvis en nummerseriekode er tilordnet til **Organisasjonsnummer**-referansen på siden **Nummerserier**.                                                 |
+| Søkenavn         | Angi et navn eller akronym som kan brukes til å søke etter avdelingen.                                                                                                                                            |
+| Notat                | Angi eventuell tilleggsinformasjon her.                                                                                                                                                                            |
+| I hierarki        | En merket boks indikerer at avdelingen er inkludert i avdelingshierarkiet. Hvis du vil ha informasjon om hvordan du legger til en avdeling i avdeling-hierarkiet, kan du se informasjonen senere i denne artikkelen. |
+| DUNS-nummer         | DUNS står for Data Universal Number System. Dette er et nisifret nummer som utstedes av Dun & Bradstreet.                                                                                                     |
+| Leder             | Angi personen som administrerer avdelingen.                                                                                                                                                                    |
+| Adresser           | Legg til adresseinformasjonen for avdelingen. Legg for eksempel til postadressen til bygningen som avdelingen er i.                                                                          |
+| Kontaktinformasjon | Legg til kontaktinformasjonen for avdelingen. Legg for eksempel til et telefonnummer for brukerstøtten i avdelingen.                                                                                           |
 
 Bruk følgende fremgangsmåte for å legge til en avdeling i avdelingshierarkiet.
 
@@ -55,7 +53,4 @@ Bruk følgende fremgangsmåte for å legge til en avdeling i avdelingshierarkiet
 6.  Når du er klar, klikker du **Publiser** i hierarkidesigneren. Du kan angi en gyldig dato som angir når hierarkiet skal publiseres. Hvis du vil legge til en ny avdeling i begynnelsen av neste kalenderår, kan du for eksempel angi gyldighetsdatoen til 1. januar i det nye kalenderåret. Hierarkiendringene vil tre i kraft på denne datoen.
 
 ## <a name="steps-for-creating-a-department"></a>Fremgangsmåter for å opprette en avdeling
-Se artikkelen [Definere nye avdelinger](./hr-personnel-define-departments.md) for trinnvis fremgangsmåte for å opprette en ny avdeling. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Se artikkelen [Definere nye avdelinger](../fin-and-ops/hr/tasks/define-new-departments.md) for trinnvis fremgangsmåte for å opprette en ny avdeling. 

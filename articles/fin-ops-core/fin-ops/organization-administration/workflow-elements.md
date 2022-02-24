@@ -2,9 +2,11 @@
 title: Arbeidsflytelementer
 description: Dette emnet beskriver de ulike elementene som utgjør en arbeidsflyt.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9491b8ee6da69ba93c830bf0721c1d58fd4385b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b259d733076193cda793a227bd0bb71c232339d1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070456"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797582"
 ---
 # <a name="workflow-elements"></a>Arbeidsflytelementer
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet beskriver de ulike elementene som utgjør en arbeidsflyt.
 
@@ -63,7 +62,7 @@ En *godkjenningsprosess* er en prosess som består av separate trinn. I hvert go
 
 Du kan opprette en arbeidsflyt for å behandle dokumenter eller linjeelementene på et dokument. Du har for eksempel opprettet en godkjenningsarbeidsflyt for timeregistreringer. (Vi refererer til denne arbeidsflyten som *dokumentarbeidsflyten*.) Du kan legge til et *arbeidsflyt for linjeelementer*-elementet som arbeidsflyten for dokumentet. Når linjeelementet kjøres, sendes hvert linjeelement for dokumentet til behandling. Du vil kanskje at alle linjeelementene skal behandles av den samme arbeidsflyten for linjeelement, eller du vil kanskje at hvert linjeelement skal behandles av en annen arbeidsflyt for linjeelement. La oss si at en ansatt har sendt en timeregistrering som ligner den følgende illustrasjonen.
 
-![Arbeidsflyt med linjeelementer.](./media/workflow_lineitemworkflow.gif)
+![Arbeidsflyt med linjeelementer](./media/workflow_lineitemworkflow.gif)
 
 I dette scenariet vil du kanskje opprette følgende arbeidsflyter for linjeelementer:
 
@@ -90,6 +89,3 @@ En *parallellaktivitet* er et arbeidsflytelement som omfatter to eller flere arb
 ### <a name="subworkflow"></a>Underarbeidsflyt
 
 En *underarbeidsflyt* er en arbeidsflyt som kjøres i en annen arbeidsflyt.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
