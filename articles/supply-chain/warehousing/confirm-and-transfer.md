@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592634"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103595"
 ---
 # <a name="confirm-and-transfer"></a>Bekreft og overfør
 
@@ -53,12 +53,9 @@ Du kan bare dele last som oppfyller alle disse kriteriene:
 >
 > Bruk *Bekreft og overfør*-funksjonen i situasjoner der laster vanligvis planlegges og opprettes før, men der det av og til oppstår unntak der lasten ikke passer til den tilgjengelige transporten (for eksempel en lastebil).
 
-## <a name="turn-on-confirm-and-transfer"></a>Aktiver bekreft og overfør
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Bekreft og overfør
 
-Før du kan bruke funksjonen *Bekreft og overfør*, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Bekreft og overfør*
+Du må aktivere funksjonen *Bekreft og overfør* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Bekreft og overfør* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Konfigurer bekreft og overfør
 

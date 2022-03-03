@@ -2,7 +2,7 @@
 title: Synkroniser oppgavebehandling mellom Microsoft Teams og Dynamics 365 Commerce POS
 description: Dette emnet beskriver hvordan du synkroniserer oppgavebehandling mellom Microsoft Teams og Dynamics 365 Commerce-salgsstedet (POS).
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f9abebbf8d6c5dd6695b9697361e1a9a9e6005dc3ded16c4211c9c5c9e34a0b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c07ca28b45335de5e327305b7426d1b6de8ce5c7
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730881"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323503"
 ---
 # <a name="synchronize-task-management-between-microsoft-teams-and-dynamics-365-commerce-pos"></a>Synkroniser oppgavebehandling mellom Microsoft Teams og Dynamics 365 Commerce POS
 
@@ -54,6 +54,9 @@ Hvis du vil ha mer informasjon, kan du se [Publiser oppgavelister for å opprett
 ## <a name="link-pos-and-teams-for-task-management"></a>Koble POS og Teams for oppgavebehandling
 
 Hvis du vil koble POS- og Microsoft Teams-programmene for oppgavebehandling i Commerce Headquarters, følger du trinnene nedenfor.
+
+> [!NOTE]
+> Før du prøver å integrere oppgavebehandling med Microsoft Teams, må du kontrollere at du har aktivert [Integrering av Dynamics 365 Commerce med Microsoft Teams](enable-teams-integration.md). 
 
 1. Gå til **Retail og Commerce \> Oppgavebehandling \> Oppgaveintegrering med Microsoft Teams**.
 1. I handlingsruten velger du **Rediger**.

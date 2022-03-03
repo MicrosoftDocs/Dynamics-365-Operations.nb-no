@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b5f9f41bdadc76064aa9aee92e27e6b504baf461
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986022"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105443"
 ---
 # <a name="tax-calculation-overview"></a>Oversikt over avgiftsberegning
 
@@ -76,6 +76,7 @@ Vi anbefaler at du importerer og konfigurerer avgiftsberegningskonfigurasjonen m
 | 10.0.22         | Konfigurasjon 40.48.215 for avgiftsberegning |
 | 10.0.23         | Konfigurasjon 40.50.221 for avgiftsberegning |
 | 10.0.24         | Konfigurasjon 40.50.225 for avgiftsberegning |
+| 10.0.25         | Konfigurasjon 40.50.225 for avgiftsberegning |
 
 
 ## <a name="data-flow"></a>Dataflyt

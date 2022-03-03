@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1438ed6bcec485ff9665ffd9659c938f5cac478
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778137"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103169"
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåke en kjøring av hovedplanlegging
 
@@ -28,12 +28,11 @@ ms.locfileid: "7778137"
 
 På siden **Vis fremdrift for hovedplanlegging** kan du vise detaljer om historisk hovedplanlegging som kjøres som et Gantt-diagram. Denne funksjonaliteten kan hjelpe deg med å forstå tiden som brukes på de forskjellige fasene av hovedplanlegging. For en gjeldende aktiv planleggingsjobb kan du bruke siden **Vis fremdrift for hovedplanlegging** til å spore fremdriften og vise den estimerte gjenværende tiden.
 
-### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Aktivere og bruke fremdrifsvisualiseringsfunksjonen for hovedplan
+### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Fremdriftsvisualisering for hovedplan
 
-Hvis du vil bruke denne funksjonen, gjør du følgende.
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Fremdriftsvisualisering for hovedplan* i arbeidsområdet [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-1. I arbeidsområdet **Funksjonsbehandling** i **Ny**-fanen velger du **Fremdrifsvisualisering for hovedplan** i listen. Hvis funksjonen ikke vises i **Ny**-fanen, ser du i fanene **Ikke aktivert** og **Alle**.
-1. Velg **Aktiver nå**. Du kan også velge **Tidsplan**, og deretter velge tidspunktet når du vil at funksjonen skal aktiveres. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
+### <a name="use-the-master-plan-progress-visualization-feature"></a>Bruke funksjonen Fremdriftsvisualisering for hovedplan
 
 Siden **Vis fremdrift for hovedplanlegging** kan vise både historiske planleggingsjobber og aktive planleggingsjobber. 
 

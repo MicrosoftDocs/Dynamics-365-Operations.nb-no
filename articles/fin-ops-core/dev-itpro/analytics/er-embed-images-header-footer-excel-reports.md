@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 20bcf26e1510634c5ee7043576a480ce15889923
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344126"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323792"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Utforme et ER-format for å generere en rapport i Excel-format med innebygde bilder i topptekster og bunntekster
 
@@ -153,9 +153,9 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av
 3. I konfigurasjonstreet i venstre rute på **Konfigurasjoner**-siden utvider du **Fakturamodell**.
 4. I tillegg til det valgte ER-formatet for **Fritekstfaktura (Excel)**, ble andre ER-konfigurasjoner importert. Kontroller at følgende ER-konfigurasjoner er tilgjengelige i konfigurasjonstreet:
 
-    - **Fakturamodell** – denne konfigurasjonen inneholder ER-komponenten for [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) som representerer datastrukturen til faktureringsforretningsdomenet.
-    - **Fakturamodelltilordning** – denne konfigurasjonen inneholder ER-komponenten for [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components) som beskriver hvordan datamodellen fylles ut med programdata ved kjøring.
-    - **Fritekstfaktura (Excel)** – Denne konfigurasjonen inneholder [formatet](general-electronic-reporting.md#FormatComponentOutbound) og formatet som tilordner ER-komponenter. Formatkomponenten angir rapportoppsettet, basert på en mal i Excel-format. Formattilordningskomponenten inneholder modelldatakilden og angir hvordan denne datakilden brukes til å rapportoppsettet fylles ut under kjøring.
+    - **Fakturamodell** – denne konfigurasjonen inneholder ER-komponenten for datamodell som representerer datastrukturen til faktureringsforretningsdomenet.
+    - **Fakturamodelltilordning** – denne konfigurasjonen inneholder ER-komponenten for modelltilordning som beskriver hvordan datamodellen fylles ut med programdata ved kjøring.
+    - **Fritekstfaktura (Excel)** – denne konfigurasjonen inneholder ER-komponentene for format og formattilordning. Formatkomponenten angir rapportoppsettet, basert på en mal i Excel-format. Formattilordningskomponenten inneholder modelldatakilden og angir hvordan denne datakilden brukes til å rapportoppsettet fylles ut under kjøring.
 
 ![Importerte ER-konfigurasjoner på konfigurasjonssiden.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777608"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103069"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Nummerskiltmottak via mobilappen Lagerstyring
 
@@ -77,15 +77,13 @@ Når denne funksjonen er aktivert, vil menyelementer på mobilenheter for mottak
 - **Vis et detaljert sammendrag** – Ved nummerskiltmottak får arbeiderne se en ekstra side som viser hele forhåndsvarselet om forsendelse.
 - **Hopp over sammendrag** – Arbeiderne ser ikke hele forhåndsvarselet om forsendelse. Lagerarbeiderne kan heller ikke angi en disposisjonskode eller legge til unntak under mottaksprosessen.
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* være aktivert i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
+Hvis du vil bruke denne funksjonaliteten, må funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* være aktivert for systemet. Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret
 
 En mottaksprosess for nummerskilt kan ikke brukes hvis et forhåndsvarsel for forsendelse inneholder en nummerskilt-ID som allerede finnes og har fysiske lagerbeholdningsdata på en annen lagerlokasjon enn lagerlokasjonen der registreringen av nummerskiltet skjer.
 
-For scenarier for overføringsordrer der transittlageret ikke sporer nummerskilt (og derfor ikke ikke sporer fysisk lagerbeholdning per nummerskilt), kan du bruke de funksjonen *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret* å hindre fysiske lagerbeholdningsoppdateringer av nummerskilt som er under transitt.
-
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må du aktivere funksjonen *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret* i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+For scenarier for overføringsordrer der transittlageret ikke sporer nummerskilt (og derfor ikke ikke sporer fysisk lagerbeholdning per nummerskilt), kan du bruke de funksjonen *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret* å hindre fysiske lagerbeholdningsoppdateringer av nummerskilt som er under transitt. Hvis du vil gjøre denne funksjonaliteten tilgjengelig, må funksjonen *Hindre at nummerskilt som er sendt med overføringsordrer, brukes i andre lagre enn mållageret* aktiveres for systemet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter den i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Følg denne fremgangsmåten for å administrere funksjonaliteten når denne funksjonen er tilgjengelig.
 

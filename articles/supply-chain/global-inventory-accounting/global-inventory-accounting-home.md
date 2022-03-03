@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 268ee58583306bdd99e5d5cd5bb436a328a5648b
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 7312ab2491814e7cd266e39820f0e87e79dd84e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860489"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103570"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startside for Globalt lagerregnskap
 
@@ -47,7 +47,6 @@ Globalt lagerregnskap er for øyeblikket tilgjengelig i følgende geografiske Az
 - Storbritannia
 - Australia
 - Canada
-- Sør-Amerika
 
 Hvis du prøver å installere tillegget fra et annet geografisk område, vil Microsoft Dynamics Lifecycle Services (LCS) vise en melding om at det geografiske området ikke støttes. Globalt lagerregnskap støtter ikke lokale distribusjoner av Supply Chain Management.
 

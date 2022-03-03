@@ -1,12 +1,10 @@
 ---
 title: Sende ER-måltype per e-post
-description: Dette emnet forklarer hvordan du konfigurerer et e-postmål for hver MAPPE- eller FIL-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter.
+description: Dette emnet forklarer hvordan du konfigurerer et e-postmål for hver MAPPE- eller FIL-komponent i et ER-format (Elektronisk rapportering).
 author: NickSelin
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690132"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324014"
 ---
 # <a name="email-er-destination-type"></a>Sende ER-måltype per e-post
 
@@ -44,28 +42,59 @@ Du kan også [gruppere](#grouping) flere **Mappe** eller **Fil**-komponenter sam
 
 Flere grupper med komponenter kan konfigureres for én enkelt ER-formatkonfigurasjon. På denne måten kan du konfigurere et e-postmål for hver gruppe med komponenter, og et e-postmål for hver komponent.
 
+## <a name="enable-an-email-destination"></a>Aktiver et e-postmål
+
+Følg denne fremgangsmåten for å sende en eller flere utdatafiler med e-post.
+
+1. På siden **Mål for elektronisk rapportering** i hurtigfanen **Filmål** velger du en komponent eller en gruppe komponenter i rutenettet.
+2. Velg **Innstillinger**, og i dialogboksen **Innstillinger for mål** som vises, i fanen **E-post**, setter du alternativet **Aktivert** til **Ja**.
+
+[![Sette alternativet Enabled til Ja for et e-postmål.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+
 ## <a name="configure-an-email-destination"></a>Konfigurere et e-postmål
 
-Hvis du vil sende en utdatafil eller flere utdatafiler via e-post, går du til siden **Mål for elektronisk rapportering** og hurtigfanen **Fildestinasjon** og velger en komponent eller komponentgruppe i rutenettet, og deretter velger du **Innstillinger**. I dialogboksen **Innstillinger for mål** som vises, i kategorien **E-post**, setter du alternativet **Aktivert** til **Ja**. Du kan deretter angi e-postmottakere og redigere emnet og brødteksten i e-postmeldingen. Du kan enten definere konstant tekst for e-postemnet og meldingsteksten, eller du kan bruke ER-[formler](er-formula-language.md) for å opprette e-posttekster dynamisk.
+### <a name="email-content"></a>E-postinnhold
 
-Du kan konfigurere e-postadresser for ER på to måter. Konfigurasjonen kan fullføres på samme måte som Utskriftsbehandling-funksjonen fullfører den, eller du kan løse en e-postadresse ved å bruke en direkte referanse til ER-konfigurasjonen via en formel.
+Du kan redigere emnet og brødteksten i e-postmeldingen.
 
-[![Sette alternativet Enabled til Ja for et e-postmål](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+I **Emne**-feltet skriver du inn teksten i e-postemnet som skal vises i emnefeltet til en elektronisk melding som genereres ved kjøretid. I **Brødtekst**-feltet skriver du inn brødteksten i e-posten som skal vises i brødtekstfeltet for en elektronisk melding. Du kan definere konstant tekst for e-postemnet og meldingsteksten, eller du kan bruke ER-[formler](er-formula-language.md) for å opprette e-posttekst ved kjøretid. Den konfigurerte formelen må returnere en verdi av typen [Streng](er-formula-supported-data-types-primitive.md#string).
+
+Teksten i e-postmeldingen skrives i testkformat eller HTML-format, avhengig av e-postklienten. Du kan bruke alle oppsett, stiler og merking som HTML og linjebundne gjennomgripende stilark (CSS) er tillatt for.
+
+> [!NOTE]
+> E-postklienter bruker oppsetts- og stilbegrensninger som kan kreve endringer i HTML-koden, og CSS som du bruker til meldingsteksten. Det anbefales at du gjør deg kjent med de anbefalte fremgangsmåtene for å opprette HTML som de mest populære e-postklientene støtter.
+>
+> Bruk riktig koding til å implementere en vognretur, avhengig av tekstformateringen. Hvis du vil ha mer informasjon, kan du se definisjonen av datatypen [Streng](er-formula-supported-data-types-primitive.md#string).
+
+### <a name="email-addresses"></a>E-postadresser
+
+Du kan angi e-postsenderen og e-postmottakerne. Som standard sendes det en e-post på vegne av den gjeldende brukeren. Hvis du vil angi en annen e-post sender, må du konfigurere **Fra**-feltet.
+
+> [!NOTE]
+> Når et e-postmål er konfigurert, er **Fra**-feltet bare synlig for brukere som har sikkerhetsprivilegium `ERFormatDestinationSenderEmailConfigure`, **Konfigurer avsender-e-postadressen for ER-formatmål**.
+>
+> Når et e-postmål tilbys for endring ved [kjøretid](electronic-reporting-destinations.md#security-considerations), er **Fra**-feltet bare synlig for brukere som har sikkerhetsprivilegium `ERFormatDestinationSenderEmailMaintain`, **Vedlikehold avsender-e-postadressen for ER-formatmål**.
+>
+> Når **Fra**-feltet er konfigurert til å bruke en annen e-postadresse enn den gjeldende brukerens, må enten **Send som** eller **Send på vegne av**-tillatelse [angis](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) riktig på forhånd. Ellers skjer dette unntaket ved kjøretid: Kan ikke sende e-post som \<from email account\> fra kontoen \<current user account\>. Kontroller Send som-tillatelsene på \<from email account\>.
+
+Du kan konfigurere **Fra**-feltet til å returnere mer enn én e-postadresse. I dette tilfellet brukes den første adressen i listen som en e-postsenderadresse.
+
+Hvis du vil angi e-postmottakere, må du konfigurere **Til**- og **Kopi**-feltene (valgfritt).
+
+Du kan konfigurere e-postadresser for ER på to måter. Konfigurasjonen kan fullføres på samme måte som Utskriftsbehandling-funksjonen, eller du kan løse en e-postadresse ved å bruke en direkte referanse til ER-konfigurasjonen via en formel.
 
 ## <a name="email-address-types"></a>Typer e-postadresser
 
-Hvis du velger **Rediger** ved siden av **Til**- eller **Kopi**-feltet i dialogboksen **Målinnstillinger**, vises dialogboksen **E-post til**. Velg **Legg til**, og velg deretter typen e-postadresse som skal brukes. To typer støttes for øyeblikket: **E-post for utskriftsbehandling** og **E-post for konfigurasjon**.
+Hvis du velger **Rediger** ved siden av **Fra**-, **Til**- eller **Kopi**-feltet i dialogboksen **Målinnstillinger**, vises passende dialogboksen **E-post fra**, **E-post til** eller **E-postkopi**. Der kan du konfigurere e-postsenderen og e-postmottakerne. Velg **Legg til**, og velg deretter typen e-postadresse som skal brukes. To typer støttes for øyeblikket: **E-post for utskriftsbehandling** og **E-post for konfigurasjon**.
 
-[![Velge type e-postadresse](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Velge type e-postadresse.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>E-post for utskriftsbehandling
 
-Hvis du velger **E-post for utskriftsbehandling** som typen e-postadresse, kan du angi faste e-postadresser i dialogboksen **E-post til** ved å angi følgende felt:
+Hvis du velger **E-post for utskriftsbehandling** som typen e-postadresse, kan du angi faste e-postadresser i dialogboksen **E-post fra**, **E-post til** eller **E-postkopi** ved å angi følgende felt:
 
 - Velg feltet **E-postkilde** og deretter **Ingen**.
 - I feltet for **Flere e-postadressene, atskilt med ";"** angir du de faste e-postadressene.
-
-![Konfigurere en fast e-postadresse](./media/er_destinations-emailfixedaddress.png)
 
 Du kan også hente e-postadresser fra kontaktdetaljene for parten du genererer et utgående dokument for. Hvis du vil bruke e-postadresser som ikke er faste, går du til feltet **E-postkilde** og velger [rollen](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) til parten for et filmål. Følgende roller støttes:
 
@@ -78,6 +107,7 @@ Du kan også hente e-postadresser fra kontaktdetaljene for parten du genererer e
 - Søker
 - Potensiell leverandør
 - Sperret leverandør
+- Juridisk enhet
 
 Hvis du for eksempel vil konfigurere et e-postmål for et ER-format som brukes til å behandle leverandørbetalinger, velger du **Leverandør**-rollen.
 
@@ -88,11 +118,9 @@ Når du har valgt den ønskede rollen, velger du **Bind**-knappen (kjedesymbol) 
 
 På siden **Formelutforming**, i feltet **Formel**, angir du en dokumentspesifikk referanse til en støttet rolle. I stedet for å skrive inn referansen, går du til ruten **Datakilde** og velger datakildenoden som representerer en konto for den konfigurerte rollen, og deretter velger du **Legg til datakilde** for å oppdatere formelen. Hvis du for eksempel konfigurerer e-postmålet for konfigurasjonen **ISO 20022 Kredittoverføring** som brukes til å behandle leverandørbetalinger, er noden som representerer en leverandørkonto `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![Konfigurere en e-postkildekonto](./media/er_destinations-emaildefineaddresssource.gif)
+![Konfigurere en e-postkildekonto.](./media/er_destinations-emaildefineaddresssource.gif)
 
 Hvis kontonumrene til den konfigurerte rollen er unike for hele forekomsten av Microsoft Dynamics 365 Finance, kan feltet for **firma for e-postkilde** i dialogboksen **E-post til** være tomt.
-
-![Tomt Firma for e-postkilde-felt](./media/er_destinations-emaildefineaddresssourceformula.png)
 
 Du kan også ha en situasjon der forskjellige parter i den [globale adresseboken](../../fin-ops/organization-administration/overview-global-address-book.md) er registrert i forskjellige firmaer ([juridiske enheter](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) på en slik måte at alle bruker samme kontonummer til å fylle den konfigurerte rollen. I dette tilfellet er ikke kontonumrene for den konfigurerte rollen unike for hele Finance-forekomsten. Derfor, for å eksplisitt velge en part, kan du ikke angi bare et kontonummer. Du må også angi firmaet som parten er registrert for, i området, for å fylle den konfigurerte rollen. Velg **Bind**-knappen (kjedesymbol) ved siden av feltet for **Firma for e-postkilde** i dialogboksen **E-post til** for å åpne siden for [Formeldesigner](general-electronic-reporting-formula-designer.md). Du kan deretter bruke denne siden til å konfigurere en formel som returnerer, ved kjøretid, koden til firmaet som den ønskede kilden må finnes i området til.
 
@@ -110,13 +138,11 @@ Hvis du vil angi hvilke typer e-postadresser som må brukes ved kjøring, går d
 > [!NOTE]
 > Hvis det er valgt formål i feltet **Formål**, og alternativet **Primærkontakt** er satt til **Ja** samtidig, vil alle e-postmeldinger som oppfyller minst ett konfigurert kriterium, bli brukt under kjøring.
 
-![Konfigurere en konto for e-postkildeattributter](./media/er_destinations-emaildefineaddresssourceattributes.png)
-
 ### <a name="configuration-email"></a>E-post for konfigurasjon
 
-Velg **Konfigurer e-post** som e-postadressetype hvis konfigurasjonen du bruker, har en node i datakildene som returnerer enten én e-postadresse eller flere e-postadresser som er atskilt med semikolon (;). Du kan bruke [datakilder](general-electronic-reporting.md#FormatComponentOutbound) og [funksjoner](er-formula-language.md#functions) i formeldesigneren for å hente en riktig formatert e-postadresse eller riktig formaterte e-postadresser som er atskilt med semikolon. Hvis du for eksempel bruker **ISO 20022 Kredittoverføring**-konfigurasjonen, er noden som representerer den primære e-postadressen for en leverandør fra leverandørens kontaktopplysninger som følgebrevet skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Velg **Konfigurer e-post** som e-postadressetype hvis konfigurasjonen du bruker, har en node i datakildene som returnerer enten én e-postadresse eller flere e-postadresser som er atskilt med semikolon (;). Du kan bruke datakilder og [funksjoner](er-formula-language.md#Functions) i formeldesigneren for å hente en riktig formatert e-postadresse eller riktig formaterte e-postadresser som er atskilt med semikolon. Hvis du for eksempel bruker **ISO 20022 Kredittoverføring**-konfigurasjonen, er noden som representerer den primære e-postadressen for en leverandør fra leverandørens kontaktopplysninger som følgebrevet skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![Konfigurere en e-postadressekilde](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Konfigurere en e-postadressekilde.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Gruppere formatkomponenter
 
@@ -134,14 +160,17 @@ Hvis du vil dele opp gruppen for formatkomponenter, går du til hurtigfanen **Fi
 
 Følgende illustrasjon viser strukturen til et ER-format som ble konfigurert til å produsere en zippet utgående fil som inneholder et purrebrev og riktige kundefakturaer i PDF-format.
 
-[![Struktur for et ER-format som genererer utgående dokumenter](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Struktur for et ER-format som genererer utgående dokumenter.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 Følgende illustrasjon viser prosessen, som beskrevet i dette emnet, med gruppering av individuelle komponenter og aktivering av **E-post**-målet for den nye gruppen, slik at det sendes en purrenota sammen med riktig kundefaktura som e-postvedlegg.
 
-[![Gruppere individuelle komponenter og aktivere e-postmålet](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Gruppere individuelle komponenter og aktivere e-postmålet.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920729"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102719"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -35,17 +35,15 @@ I dette emnet beskrives hver metode i detalj.
 
 De fleste planlagte bestillingsfunksjoner er tilgjengelige i alle standardinstallasjoner av Microsoft Dynamics 365 Supply Chain Management som bruker Planleggingsoptimalisering. Noen av funksjonene som er beskrevet i dette emnet, må imidlertid aktiveres i Funksjonsadministrasjon før du kan bruke dem.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Aktivere parallellisert autorisasjon av planlagte bestillinger
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallellisert autorisering av planlagte bestillinger
 
-Parallell autorisering gjør det raskere å autorisere prosessen ved å parallellisere den over flere tråder. Denne fremgangsmåten kan være nyttig når mange planlagte bestillinger autoriseres.
-
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, kan du gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Parallell autorisering av planlagte bestillinger*. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
+Parallell autorisering gjør det raskere å autorisere prosessen ved å parallellisere den over flere tråder. Denne fremgangsmåten kan være nyttig når mange planlagte bestillinger autoriseres. Du må aktivere funksjonen *Parallell autorisering av planlagte bestillinger* for systemet for å kunne bruke denne funksjonaliteten. Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan du aktivere eller deaktivere denne funksjonaliteten ved å gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søke etter funksjonen *Parallell autorisering av planlagte bestillinger*.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Aktivere autorisering av planlagt bestilling med filtrering
 
 Med autorisering av planlagt bestilling med filtrering kan du definere logiske kriterier for å velge hvilke planlagte bestillinger som skal autoriseres. Du kan også forhåndsvise hvilke planlagte bestillinger som er valgt, kjøre prosessen i bakgrunnen og/eller planlegge det som en satsvis jobb.
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, kan du gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Autorisering av planlagt bestilling med filtrering*.
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Autorisering av planlagt bestilling med filtrering* i arbeidsområdet [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivere automatisk autorisasjon for planleggingsoptimalisering
 

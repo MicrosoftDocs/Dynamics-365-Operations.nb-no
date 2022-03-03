@@ -2,27 +2,27 @@
 title: Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
 description: Dette emnet forklarer hvordan du utformer en ER-løsning (elektronisk rapportering) for å skrive ut en egendefinert rapport.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680248"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323848"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
 
@@ -121,19 +121,19 @@ De følgende trinnene forklarer hvordan en bruker en rolle som systemansvarlig, 
 
 - [Tilleggsressurser](#References)
 
-I dette eksemplet skal du opprette en ny ER-løsning for [Spørreskjema](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires)-modulen. Denne nye ER-løsningen lar deg utforme en rapport ved å bruke et Microsoft Excel-regneark som en mal. Deretter kan du generere **Spørreskjema**-rapporten i Excel- eller PDF-format, i tillegg til å generere den eksisterende SQL Server Reporting Services-rapporten (SSRS). Du kan også endre den nye rapporten senere på forespørsel. Ingen koding er nødvendig.
+I dette eksemplet skal du opprette en ny ER-løsning for [Spørreskjema](../../../human-resources/hr-learning-questionnaires.md)-modulen. Denne nye ER-løsningen lar deg utforme en rapport ved å bruke et Microsoft Excel-regneark som en mal. Deretter kan du generere **Spørreskjema**-rapporten i Excel- eller PDF-format, i tillegg til å generere den eksisterende SQL Server Reporting Services-rapporten (SSRS). Du kan også endre den nye rapporten senere på forespørsel. Ingen koding er nødvendig.
 
 1. Hvis du vil kjøre den eksisterende rapporten, går du til **Spørreskjema** \> **Utforming** \> **Spørreskjemaer-rapporten**.
 
-    ![Velge menyelementet Spørreskjemaer-rapport i Spørreskjema-modulen for å kjøre den eksisterende SSRS-rapporten](./media/er-quick-start1-application-menu-origin.png)
+    ![Velge menyelementet Spørreskjemaer-rapport i Spørreskjema-modulen for å kjøre den eksisterende SSRS-rapporten.](./media/er-quick-start1-application-menu-origin.png)
 
 2. I dialogboksen **Spørreskjemaer-rapport** angir du utvalgskriterier. Bruk et filter slik at rapporten bare inneholder **SBCCrsExam**-spørreskjemaet.
 
-    ![Angi utvalgskriterier i dialogboksen Spørreskjemaer-rapport](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![Angi utvalgskriterier i dialogboksen Spørreskjemaer-rapport.](./media/er-quick-start1-ssrs-report-dialog.png)
 
 Følgende illustrasjon viser den genererte versjonen av SSRS-rapporten for **SBCCrsExam**-spørreskjemaet.
 
-![Generert SSRS-rapport](./media/er-quick-start1-ssrs-report.png)
+![Generert SSRS-rapport.](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>Konfigurere ER-rammeverket
 
@@ -181,13 +181,13 @@ Hvis du ha mer informasjon om ER-konfigurasjonsleverandører, kan du se [Opprett
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Utforme en domenespesifikk datamodell
 
-Du må opprette en ny ER-konfigurasjon som inneholder en komponent av typen [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) for bedriftsdomenet **Spørreskjema**. Denne datamodellen vil senere bli brukt som datakilde når du utformer et ER-format for å generere **Spørreskjema**-rapporten.
+Du må opprette en ny ER-konfigurasjon som inneholder en datamodellkomponent for bedriftsdomenet **Spørreskjema**. Denne datamodellen vil senere bli brukt som datakilde når du utformer et ER-format for å generere **Spørreskjema**-rapporten.
 
 Ved å fullføre trinnene under [Importere en ny datamodellkonfigurasjon](#ImportDataModel) kan du importere den nødvendige datamodellen fra den angitte XML-filen. Du kan også fullføre trinnene i delen [Opprett en ny datamodellkonfigurasjon](#DesignDataModel) for å utforme denne datamodellen fra grunnen av.
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importere en ny datamodellkonfigurasjon
 
-1. Last ned filen [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml), og lagre den på den lokale datamaskinen.
 2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 3. I arbeidsområdet **Elektronisk rapportering** velger du **Rapporteringskonfigurasjoner**.
 4. I handlingsruten velger du **Kurs** \> **Last fra XML-fil**.
@@ -273,7 +273,7 @@ For å fortsette hopper du over neste prosedyre, [Opprett en ny datamodellkonfig
 
     Følgende illustrasjon viser den fullførte, redigerbare datamodellen på siden **Datamodellutforming**.
 
-    ![Konfigurert datamodell i ER-datamodellutforming](./media/er-quick-start1-model2.png)
+    ![Konfigurert datamodell i ER-datamodellutforming.](./media/er-quick-start1-model2.png)
 
 7. Lagre endringene.
 8. Lukk siden **Datamodellutforming**.
@@ -287,7 +287,7 @@ For å fortsette hopper du over neste prosedyre, [Opprett en ny datamodellkonfig
 
 Statusen til versjon 1 av denne konfigurasjonen endres fra **Utkast** til **Fullført**. Versjon 1 kan ikke lenger endres. Denne versjonen inneholder den konfigurerte datamodellen og kan brukes som basis for andre ER-konfigurasjoner. Versjon 2 av denne konfigurasjonen opprettes og har statusen **Utkast**. Du kan redigere denne versjonen for å justere **Spørreskjema**-datamodellen.
 
-![Versjoner av den redigerbare ER-konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start1-model-configuration.png)
+![Versjoner av den redigerbare konfigurasjonen på Konfigurasjoner-siden.](./media/er-quick-start1-model-configuration.png)
 
 Hvis du vil ha mer informasjon om versjonskontroll for ERkonfigurasjoner, kan du se [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -296,13 +296,13 @@ Hvis du vil ha mer informasjon om versjonskontroll for ERkonfigurasjoner, kan du
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Utforme en modelltilordning for den konfigurerte datamodellen
 
-Som en bruker med rollen som utvikler av elektronisk rapportering må du opprette en ny ER-konfigurasjon som inneholder en [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components)-komponent for **Spørreskjema**-datamodellen. Fordi denne komponenten implementerer den konfigurerte datamodellen for Finance, er den Finance-spesifikk. Du må konfigurere komponenten for modelltilordning for å angi appobjektene som må brukes til å fylle ut den konfigurerte datamodellen med appdata ved kjøring. For å fullføre denne oppgaven må du være oppmerksom på implementeringsdetaljene for datastrukturen i **Spørreskjema**-bedriftsdomenet i Finance.
+Som en bruker med rollen som utvikler av elektronisk rapportering må du opprette en ny ER-konfigurasjon som inneholder en komponent for modelltilordning for **Spørreskjema**-datamodellen. Fordi denne komponenten implementerer den konfigurerte datamodellen for Finance, er den Finance-spesifikk. Du må konfigurere komponenten for modelltilordning for å angi appobjektene som må brukes til å fylle ut den konfigurerte datamodellen med appdata ved kjøring. For å fullføre denne oppgaven må du være oppmerksom på implementeringsdetaljene for datastrukturen i **Spørreskjema**-bedriftsdomenet i Finance.
 
 Ved å fullføre trinnene under [Importere en ny modelltilordningskonfigurasjon](#ImportModelMapping) som følger, kan du importere den nødvendige modelltilordningskonfigurasjonen fra den angitte XML-filen. Du kan også fullføre trinnene i delen [Opprette en ny modelltilordningskonfigurasjon](#CreateModelMapping) for å utforme denne modelltilordningen fra grunnen av.
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importere en ny modelltilordningskonfigurasjon
 
-1. Last ned filen [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml), og lagre den på den lokale datamaskinen.
 2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 3. I arbeidsområdet **Elektronisk rapportering** velger du **Rapporteringskonfigurasjoner**.
 4. I handlingsruten velger du **Kurs** \> **Last fra XML-fil**.
@@ -368,7 +368,7 @@ Du må konfigurere datakilder for å få tilgang til apptabellene som inneholder
     2. Velg **Legg til**.
     3. Angi **\$ResultGroup** i **Navn**-feltet.
     4. Velg **Rediger formel**.
-    5. I [ER-formelredigeringsprogram](general-electronic-reporting-formula-designer.md), i **Formel**-feltet, angir du **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** til å bruke [banen](er-formula-language.md#paths) til én-til-mange-relasjonen mellom tabellene KMCollection og KMQuestionResultGroup.
+    5. I [ER-formelredigeringsprogram](general-electronic-reporting-formula-designer.md), i **Formel**-feltet, angir du **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** til å bruke [banen](er-formula-language.md#Paths) til én-til-mange-relasjonen mellom tabellene KMCollection og KMQuestionResultGroup.
     6. Velg **Lagre**, og lukk formelredigeringsprogrammet.
     7. Velg **OK** for å legge til det nye beregnede feltet.
 
@@ -441,7 +441,7 @@ Du kan legge til ER-etiketter for å konfigurere noen av datakildene til returve
 5. Lukk dialogboksen **Tekstoversettelse**.
 6. Velg **Avbryt**.
 
-![Legge til ER-etiketter for den redigerbare modelltilordningen](./media/er-quick-start1-adding-labels.png)
+![Legge til ER-etiketter for den redigerbare modelltilordningen.](./media/er-quick-start1-adding-labels.png)
 
 Du har angitt ER-etiketter bare for standardspråket. Hvis du vil ha informasjon om hvordan ER-etiketter kan oversettes til andre språk, kan du se [Utforme flerspråklige rapporter](er-design-multilingual-reports.md).
 
@@ -475,7 +475,7 @@ Fordi du må transformere resultatene av sammenligningen mellom opplistingsverdi
     8. Velg **Lagre**, og lukk formelredigeringsprogrammet.
     9. Velg **OK** for å legge til den nye datakilden.
 
-![Konfigurert modelltilordning i ER-modelltilordningsutforming](./media/er-quick-start1-added-data-sources.png)
+![Konfigurert modelltilordning i ER-modelltilordningsutforming.](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Binde datakilder til datamodellfelt
 
@@ -526,7 +526,7 @@ Du må binde de konfigurerte datakildene til feltene i datamodellen for å angi 
 
     Den følgende illustrasjonen viser den endelige tilstanden til den konfigurerte modelltilordningen på siden **Modelltilordningsutforming**.
 
-    ![Fullstendig konfigurert modelltilordning i ER-modelltilordningsutforming](./media/er-quick-start1-mapping2.png)
+    ![Fullstendig konfigurert modelltilordning i ER-modelltilordningsutforming.](./media/er-quick-start1-mapping2.png)
 
 7. Lagre endringene.
 8. Lukk siden **Modelltilordningsutforming**.
@@ -540,7 +540,7 @@ Du må binde de konfigurerte datakildene til feltene i datamodellen for å angi 
 
 Statusen til versjon 1.1 av denne konfigurasjonen endres fra **Utkast** til **Fullført**. Versjon 1.1 kan ikke lenger endres. Denne versjonen inneholder den konfigurerte modelltilordningen og kan brukes som basis for andre ER-konfigurasjoner. Versjon 1.2 av denne konfigurasjonen opprettes og har statusen **Utkast**. Du kan redigere denne versjonen for å justere konfigurasjonen **Spørreskjematilordning**.
 
-![Versjoner av den redigerbare ER-konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start1-mapping-configuration.png)
+![Versjoner av den redigerbare ER-konfigurasjonen på Konfigurasjoner-siden.](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > Den konfigurerte modelltilordningen er den Finance-spesifikke implementeringen av den abstrakte datamodellen som representerer bedriftsdomenet **Spørreskjema**.
@@ -549,32 +549,32 @@ Statusen til versjon 1.1 av denne konfigurasjonen endres fra **Utkast** til **Fu
 
 ER-rammeverket bruker forhåndsdefinerte maler til å generere rapporter i Microsoft Office-formater (Excel-arbeidsbøker eller Word-dokumenter). Mens den påkrevde rapporten genereres, fylles det ut en mal med nødvendige data i samsvar med den konfigurerte dataflyten. Derfor må du først utforme en mal for den egendefinerte rapporten. Denne malen må utformes som en Excel-arbeidsbok, der strukturen representerer oppsettet til en egendefinert rapport. Du må gi navn til alle Excel-elementer du planlegger å fylle ut med nødvendige data.
 
-1. Last ned filen [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx), og lagre den på den lokale datamaskinen.
 2. Åpne filen i Excel, og gå gjennom strukturen til arbeidsboken.
 
 Som den følgende illustrasjonen viser, er den nedlastede malen utformet for å skrive ut bestemte spørreskjemaer som presenterer spørsmålene i et spørreskjema sammen med riktige svar.
 
-![Excel-mal for utskrift av angitte spørreskjemaer](./media/er-quick-start1-template-layout.png)
+![Excel-mal for utskrift av angitte spørreskjemaer.](./media/er-quick-start1-template-layout.png)
 
 Excel-navn er lagt til denne malen for å fylle ut spørreskjemadetaljene. Du kan bruke Navnebehandling til å se gjennom Excel-navnene.
 
-![Bruke Navnebehandling til å se gjennom Excel-navn i den angitte Excel-malen](./media/er-quick-start1-template-names.png)
+![Bruke Navnebehandling til å se gjennom Excel-navn i den angitte Excel-malen.](./media/er-quick-start1-template-names.png)
 
 Rapportetiketter er lagt til som fast tekst på norsk. Du kan erstatte rapportetikettene med nye Excel-navn som fyller ut etikettene med språkavhengig tekst, ved å bruke [etiketter](#AddMmLabels) i ER-format, som du gjorde for språkavhengige uttrykk i den konfigurerte modelltilordningen. I dette tilfellet må ER-etiketter legges til i det redigerbare ER-formatet.
 
 Som den følgende illustrasjonen viser, er det egendefinerte rapporthodet angitt for at Excel skal kunne utføre sideveksling.
 
-![Egendefinert rapporthode i den angitte Excel-malen](./media/er-quick-start1-template-header.png)
+![Egendefinert rapporthode i den angitte Excel-malen.](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Utforme et format
 
-Som en bruker med rollen som funksjonsrådgiver for elektronisk rapportering må du opprette en ny ER-konfigurasjon som inneholder en komponent av typen [format](general-electronic-reporting.md#FormatComponentOutbound). Du må konfigurere formatkomponenten til å angi hvordan en rapportmal skal fylles ut med nødvendige data ved kjøring.
+Som en bruker med rollen som funksjonsrådgiver for elektronisk rapportering må du opprette en ny ER-konfigurasjon som inneholder en komponent av typen format. Du må konfigurere formatkomponenten til å angi hvordan en rapportmal skal fylles ut med nødvendige data ved kjøring.
 
 Ved å fullføre trinnene under [Importere en konstruert formatkonfigurasjon](#FormatImport) kan du importere det nødvendige formatet fra den angitte XML-filen. Du kan også fullføre trinnene i delen [Opprette en ny formatkonfigurasjon](#FormatCreate) for å utforme dette formatet fra grunnen av.
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Importere en konstruert formatkonfigurasjon
 
-1. Last ned filen [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml), og lagre den på den lokale datamaskinen.
 2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 3. I arbeidsområdet **Elektronisk rapportering** velger du **Rapporteringskonfigurasjoner**.
 4. I handlingsruten velger du **Kurs** \> **Last fra XML-fil**.
@@ -614,11 +614,11 @@ For å fortsette hopper du over neste prosedyre, [Opprette en ny formatkonfigura
     2. Finn og velg den lokalt lagrede filen **Questionnaires report template.xslx**, og velg deretter **Åpne**.
     3. Velg **OK** for å importere malen.
 
-    ![Importere en rapportmal](./media/er-quick-start1-template-import.png)
+    ![Importere en rapportmal.](./media/er-quick-start1-template-import.png)
 
 Formatet **Excel\\Fil** legges automatisk til i det redigerbare formatet som et rotelement.. I tillegg legges enten formatelementet **Excel\\Område** eller formatelementet **Excel\\Celle** til automatisk for hvert gjenkjente Excel-navn på den importert malen. Formatet **Excel\\Heode** som har det nestede **Streng**-elementet, legges til automatisk for å gjenspeile hodeinnstillingene i den importerte malen.
 
-![Formatstruktur som inkluderer automatisk tilføyde elementer i ER-operasjonsutforming](./media/er-quick-start1-template-import2.png)
+![Formatstruktur som inkluderer automatisk tilføyde elementer i ER-operasjonsutforming.](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Konfigurere et format
 
@@ -629,12 +629,12 @@ Formatet **Excel\\Fil** legges automatisk til i det redigerbare formatet som et 
 
     Hvis du vil ha informasjon om hvordan du angir språk- og kulturkontekster for en ER-prosess, kan du se [Utforme flerspråklige rapporter](er-design-multilingual-reports.md).
 
-    ![Konfigurere språk- og kulturinnstillinger for den utformede rapporten i ER-operasjonsutforming](./media/er-quick-start1-template-format-structure1.png)
+    ![Konfigurere språk- og kulturinnstillinger for den utformede rapporten i ER-operasjonsutforming.](./media/er-quick-start1-template-format-structure1.png)
 
 5. Utvid rotnoden i formattreet, og velg deretter **ResultsGroup**.
 6. På **Format**-fanen i feltet **Replikeringsretning** velger du **Ingen replikering** fordi du ikke forventer å ha flere resultatgrupper for ett enkelt spørreskjema.
 
-    ![Definere replikeringsretningen for Område-formatelementer i ER-operasjonsutforming](./media/er-quick-start1-template-format-structure2.png)
+    ![Definere replikeringsretningen for Område-formatelementer i ER-operasjonsutforming.](./media/er-quick-start1-template-format-structure2.png)
 
 7. Velg **Lagre**.
 
@@ -654,7 +654,7 @@ Du må angi en databinding for et formatelement som brukes til å fylle ut titte
 
 5. Lukk formelredigeringsprogrammet.
 
-    ![Konfigurere bindingen for å fylle ut tittelen til en generert rapport](./media/er-quick-start1-add-report-title-label.png)
+    ![Konfigurere bindingen for å fylle ut tittelen til en generert rapport.](./media/er-quick-start1-add-report-title-label.png)
 
 Du kan bruke denne metoden til å endre alle andre etiketter for gjeldende malspråk. Hvis du vil ha informasjon om hvordan de tilføyde etikettene for en enkelt ER-konfigurasjon kan oversettes til alle støttede språk, kan du se [Utforme flerspråklige rapporter](er-design-multilingual-reports.md).
 
@@ -664,7 +664,7 @@ Du kan bruke denne metoden til å endre alle andre etiketter for gjeldende malsp
 2. Velg **Rediger**.
 3. Se gjennom informasjonen i dialogboksen **Egenskaper for datakilde**. Denne datakilden representerer versjon 1 av datamodellkomponenten **Spørreskjemaer** som ligger i ER-konfigurasjonen **Spørreskjemamodell**.
 
-![Egenskaper for modelldatakilden i ER-operasjonsutforming](./media/er-quick-start1-model-data-source.png)
+![Egenskaper for modelldatakilden i ER-operasjonsutforming.](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Binde formatelementer til datakildefelt
 
@@ -680,11 +680,11 @@ Hvis du vil angi hvordan en mal skal fylles ut ved kjøring, må du binde hvert 
 
     Formatelementet for **Spørreskjema**-området konfigureres som vertikalt replikert. Når det er bundet til en datakilde av typen **Postliste**, gjentas det aktuelle **Spørreskjema**-området for Excel-malen for hver post i den bundne datakilden.
  
-    ![Binde formatelementet Spørreskjema-område til de riktige datakildene for postliste i ER-operasjonsutforming](./media/er-quick-start1-bindings1.png)
+    ![Binde formatelementet Spørreskjema-område til de riktige datakildene for postliste i ER-operasjonsutforming.](./media/er-quick-start1-bindings1.png)
 
     Siden **Spørreskjema**-området i Excel-malen er definert fra rad 5 til og med rad 14, gjentas disse radene for hvert rapporterte spørreskjema.
 
-    ![Rader i Excel-malen som blir gjentatt i en generert rapport for hver post i datakildene for postliste](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Rader i Excel-malen som blir gjentatt i en generert rapport for hver post i datakildene for postliste.](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. Konfigurer lignende bindinger for de gjenværende formatelementene, som beskrevet i følgende tabell.
 
@@ -720,7 +720,7 @@ Hvis du vil angi hvordan en mal skal fylles ut ved kjøring, må du binde hvert 
 
 Den følgende illustrasjonen viser den endelige tilstanden til de konfigurerte databindingene på siden **Formatutforming**.
 
-![Konfigurerte databindinger i ER-datamodellutforming](./media/er-quick-start1-bindings2.png)
+![Konfigurerte databindinger i ER-datamodellutforming.](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > Hele samlingen av angitte datakilder og bindinger representerer en formattilordningskomponent i det konfigurerte formatet. Denne formattilordningen kalles når du kjører det konfigurerte formatet for rapportgenerering.
@@ -740,9 +740,9 @@ Du kan nå kjøre et designet format for testformål fra **Konfigurasjoner**-sid
 
 Som [standard](electronic-reporting-destinations.md#default-behavior) leveres en generert rapport som en Excel-fil du kan laste ned. Illustrasjonen nedenfor viser to sider i den genererte rapporten i Excel-format.
 
-![Eksempel på en generert rapport i Excel-format, side 1](./media/er-quick-start1-report1a.png)
+![Eksempel på en generert rapport i Excel-format, side 1.](./media/er-quick-start1-report1a.png)
 
-![Eksempel på en generert rapport i Excel-format, side 2](./media/er-quick-start1-report1b.png)
+![Eksempel på en generert rapport i Excel-format, side 2.](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Justere et designet format
 
@@ -763,7 +763,7 @@ Spørsmålene er ikke riktig sortert i en generert rapport. Du kan endre rekkef�
 1. På siden **Formatutforming** velger du rotelementet **Rapport**.
 2. På **Tilordning**-fanen i formattreet utvider du **Rapport\\Spørreskjema\\Spørsmål**.
 
-    ![Spørsmål-formatelement for Område-typen i ER-operasjonsutforming](./media/er-quick-start1-bindings3.png)
+    ![Spørsmål-formatelement for Område-typen i ER-operasjonsutforming.](./media/er-quick-start1-bindings3.png)
 
 3. På **Tilordning**-fanen velger du **model.Questionnaire**.
 4. Velg **Legg til** \> **Funksjoner\\Beregnet felt**, og skriv deretter inn **OrderedQuestions** i **Navn**-feltet.
@@ -776,7 +776,7 @@ Spørsmålene er ikke riktig sortert i en generert rapport. Du kan endre rekkef�
 11. Velg **Bind**, og bekreft deretter at den gjeldende banen **model.Questionnaire.Questions** er erstattet av den nye banen **model.Questionnaire.OrderedQuestions** i alle bindinger av nestede elementer.
 12. Velg **Lagre**.
 
-![Binde Spørsmål-formatelementet til den konfigurerte OrderedQuestions-datakilden i ER-operasjonsutforming](./media/er-quick-start1-bindings4.png)
+![Binde Spørsmål-formatelementet til den konfigurerte OrderedQuestions-datakilden i ER-operasjonsutforming.](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Kjøre et endret format fra ER
 
@@ -790,7 +790,7 @@ Du kan nå kjøre et endret format for testformål fra ER-rammeverket.
 
 Den følgende illustrasjonen viser en generert rapport i Excel-format der spørsmålene er riktig sortert.
 
-![Generert rapport i Excel-format som har spørsmål som er riktig sortert](./media/er-quick-start1-report2.png)
+![Generert rapport i Excel-format som har spørsmål som er riktig sortert.](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Fullføre formatutformingen
 
@@ -801,7 +801,7 @@ Den følgende illustrasjonen viser en generert rapport i Excel-format der spørs
 
 Statusen til versjon 1.1 av denne konfigurasjonen endres fra **Utkast** til **Fullført**. Versjon 1.1 kan ikke lenger endres. Denne versjonen inneholder formatet som er konfigurert, og kan brukes til å skrive ut den egendefinerte rapporten. Versjon 1.2 av denne konfigurasjonen opprettes og har statusen **Utkast**. Du kan redigere denne versjonen for å justere formatet til **Spørreskjema**-rapporten.
 
-![Versjoner av den redigerbare ER-konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start1-format-configuration.png)
+![Redigerbar ER-konfigurasjon på Konfigurasjoner-siden.](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Det konfigurerte formatet er din utforming av **Spørreskjema**-rapporten og inneholder ingen relasjoner til de Finance-spesifikke artefaktene.
@@ -1051,7 +1051,7 @@ Bygg prosjektet for å gjøre et nytt menyelement tilgjengelig for brukere.
 
 1. Gå til **Spørreskjema** \> **Utforming** \> **Spørreskjemarapport (drevet av ER)**.
 
-    ![Velge menyelementet Spørreskjemarapport (drevet av ER) i Spørreskjema-modulen for å kjøre det konfigurerte ER-formatet](./media/er-quick-start1-application-menu-modified.png)
+    ![Velge menyelementet Spørreskjemarapport (drevet av ER) i Spørreskjema-modulen for å kjøre det konfigurerte ER-formatet.](./media/er-quick-start1-application-menu-modified.png)
 
 2. I feltet **Formattilordning** i dialogboksen velger du **Spørreskjemarapport**.
 3. Velg **OK**.
@@ -1059,7 +1059,7 @@ Bygg prosjektet for å gjøre et nytt menyelement tilgjengelig for brukere.
 5. Velg **OK** for å bekrefte filtreringsalternativet.
 6. Velg **OK** for å kjøre rapporten.
 
-    ![Angi utvalgskriteriene i dialogboksen Elektronisk rapport](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Angi utvalgskriteriene i dialogboksen Elektronisk rapport.](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Gå gjennom den genererte rapporten.
 
@@ -1084,7 +1084,7 @@ Du kan endre den konfigurerte ER-løsningen slik at den bruker dataleverandørkl
 
 Den tilføyde datakilden inneholder informasjon om post-ID-en for den kjørende ER-formattilordningen.
 
-![Tilføyd datakilde i ER-modelltilordningsutformingen](./media/er-quick-start1-mapping3.png)
+![Tilføyd datakilde i ER-modelltilordningsutformingen.](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Legge til en datakilde for å få tilgang til ER-formattilordningsposter
 
@@ -1119,7 +1119,7 @@ Fortsett med å redigere den valgte modelltilordningen, slik at navnet på det k
 
 Fordi du brukte **FormatName**-feltet, viser den konfigurerte modelltilordningen nå navnet på et ER-format som kaller opp denne modelltilordningen under utføring.
 
-![Binde datamodellfeltet til metoden for den tilføyde datakilden i ER-modelltilordningsutformingen](./media/er-quick-start1-mapping4.png)
+![Binde datamodellfeltet til metoden for den tilføyde datakilden i ER-modelltilordningsutformingen.](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>Fullføre utformingen av modelltilordningen
 
@@ -1156,7 +1156,7 @@ Du kan endre det konfigurerte ER-formatet slik at navnet vises i bunnteksten til
 
 Det konfigurerte formatet er nå endret slik at navnet blir angitt i bunnteksten for en generert rapport ved hjelp av **Bunntekst\\Streng**-elementet.
 
-![Legge til Bunntekst-formatelementet i det konfigurerte formatet i ER-operasjonsutformingen](./media/er-quick-start1-template-format-structure3.png)
+![Legge til Bunntekst-formatelementet i det konfigurerte formatet i ER-operasjonsutformingen.](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>Fullføre formatutformingen
 
@@ -1178,7 +1178,7 @@ Statusen til versjon 1.2 av denne konfigurasjonen endres fra **Utkast** til **Fu
 
 Legg merke til at bunnteksten i den genererte rapporten inneholder navnet på ER-formatet som ble brukt til å generere den.
 
-![Generert rapport i Excel-format](./media/er-quick-start1-report4.png)
+![Generert rapport i Excel-format.](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Kjøre et format fra ER
 
@@ -1199,7 +1199,7 @@ Legg merke til at bunnteksten i den genererte rapporten ikke inneholder navnet p
 3. På hurtigfanen **Filmål** konfigurerer du **Skjerm**-[målet](er-destination-type-screen.md) for **Rapport**-formatkomponenten som er [lagt til](#AddFormatRootElement) som rotelement for det konfigurerte ER-formatet **Spørreskjemarapport**.
 4. På hurtigfanen **PDF-konverteringsinnstillinger** konfigurerer du målet for å konvertere en rapport til [PDF-format](electronic-reporting-destinations.md#OutputConversionToPDF) som bruker sideretningen **Liggende**.
 
-![Konfigurere det egendefinerte Skjerm-målet for ER-formatet på målsiden for elektronisk rapportering](./media/er-quick-start1-destination.png)
+![Konfigurere det egendefinerte Skjerm-målet for ER-formatet på målsiden for elektronisk rapportering.](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Kjøre et format fra appen for å forhåndsvise det som et PDF-dokument
 
@@ -1211,12 +1211,12 @@ Legg merke til at bunnteksten i den genererte rapporten ikke inneholder navnet p
 
     På hurtigfanen **Mål** kan du merke deg at **Utdata**-feltet er angitt til **Skjerm**. Hvis du vil endre det konfigurerte målet, velger du **Endre**.
 
-    ![Dialogboksen for ER-rapportkjøretid, der du kan endre det konfigurerte målet](./media/er-quick-start1-run-settings.png)
+    ![Dialogboksen for ER-rapportkjøretid, der du kan endre det konfigurerte målet.](./media/er-quick-start1-run-settings.png)
 
 6. Velg **OK** for å kjøre rapporten.
 7. Se gjennom den genererte rapporten i PDF-format.
 
-    ![Forhåndsvisning på skjermen av den genererte rapporten i PDF-format](./media/er-quick-start1-preview-PDF.png)
+    ![Forhåndsvisning på skjermen av den genererte rapporten i PDF-format.](./media/er-quick-start1-preview-PDF.png)
 
 ## <a name="additional-resources"></a><a name="References"></a>Tilleggsressurser
 
@@ -1233,3 +1233,6 @@ Legg merke til at bunnteksten i den genererte rapporten ikke inneholder navnet p
 - [IF-funksjonen](er-functions-logical-if.md)
 - [ORDERBY-funksjonen](er-functions-list-orderby.md)
 - [SESSIONNOW-funksjonen](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

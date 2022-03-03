@@ -2,7 +2,7 @@
 title: Avgifter på elektroniske ordrer beregnes feil
 description: Dette emnet gir feilsøkingsveiledning som kan hjelpe når avgifter på nettordrer beregnes feil, eller når mva-gruppen på salgslinje ikke er riktig angitt.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e51ae789dad2c7b5118be2cf8a88f4e4090a8c74c8259b4eaaddad1a134af80a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e4361b436cc78eccaff29dfa2927d342e26072d
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715266"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8312037"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Avgifter på elektroniske ordrer beregnes feil
 
@@ -33,6 +33,17 @@ Dette emnet gir feilsøkingsveiledning som kan hjelpe når avgifter på nettordr
 Når en e-handelsordre blir lagt inn, blir avgiftene feil beregnet, eller mva-gruppen på salgslinjen er feil angitt.
 
 ## <a name="resolution"></a>Oppløsning
+
+### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurere generelle mva-grupper i Commerce Headquarters
+
+Hvis du vil konfigurere generelle mva-grupper i Commerce Headquarters, gjør du følgende.
+
+1. Gå til **Avgift \> Indirekte avgifter \> Merverdiavgift \> Mva-gruppe**.
+1. Velg mva-gruppen du vil konfigurere, i venstre navigasjonsrute.
+1. Konfigurer avgiftene for mva-gruppen i hurtigfanen **Destinasjonsbasert avgift for detaljhandel**.
+
+> [!NOTE]
+> For forsendelse som ikke omfatter merverdiavgift som fastsettes av kundens adresse, fastsetter leveringsadressen for linjen og de destinasjonsbaserte avgiftene som er konfigurert for mva-gruppen, mva-gruppen. Hvis du vil ha mer informasjon, kan du se [Definere avgifter for nettbutikker basert på destinasjon](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ### <a name="configure-the-sales-tax-for-a-retail-store-in-commerce-headquarters"></a>Konfigurere merverdiavgift for en detaljhandelsbutikk i Commerce Headquarters
 
@@ -57,17 +68,6 @@ Hvis du vil konfigurere merverdiavgift for en kundes adresse i Commerce Headquar
 
 > [!NOTE]
 > For forsendelse som omfatter merverdiavgift på kundens adresse, bestemmer leveringsadressen for linjen mva-gruppen for linjen. Hvis kunden sender til en eksisterende adresse som har en mva-gruppe som allerede er konfigurert, vil den eksisterende avgiftsgruppen bli brukt. Som standard har ikke adresser noen mva-gruppe når de opprettes.
-
-### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Konfigurere generelle mva-grupper i Commerce Headquarters
-
-Hvis du vil konfigurere generelle mva-grupper i Commerce Headquarters, gjør du følgende.
-
-1. Gå til **Avgift \> Indirekte avgifter \> Merverdiavgift \> Mva-gruppe**.
-1. Velg mva-gruppen du vil konfigurere, til venstre.
-1. Konfigurer avgiftene for mva-gruppen i hurtigfanen **Destinasjonsbasert avgift for detaljhandel**.
-
-> [!NOTE]
-> For forsendelse som ikke innbærer merverdiavgift på kundens adresse, bestemmer leveringsadressen for linjen og de destinasjonsbaserte avgiftene som er konfigurert for mva-gruppen, mva-gruppen. Hvis du vil ha mer informasjon, kan du se [Definere avgifter for nettbutikker basert på destinasjon](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

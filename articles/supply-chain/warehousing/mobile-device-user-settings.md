@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901902"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103719"
 ---
 # <a name="mobile-device-user-settings"></a>Brukinnstillinger for mobilenhet
 
@@ -39,12 +39,9 @@ Denne funksjonen kan hjelpe arbeidere med å komme i gang raskere hver gang de b
 > [!IMPORTANT]
 > Funksjonen for *brukerinnstillinger for mobilenhet* gjelder bare for den nye mobilappen Lagerstyring. Den fungerer ikke med den gamle lagerappen.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>Aktivere funksjonen for brukerinnstillinger for mobilenhet
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen for brukerinnstillinger for mobilenhet
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen*
+Du må aktivere funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Opprette og administrere brukerinnstillinger
 

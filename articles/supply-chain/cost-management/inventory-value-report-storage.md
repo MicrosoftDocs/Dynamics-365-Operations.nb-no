@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 7978c7b326ef1b62f76711ac187c28539eb1f449
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798327"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103946"
 ---
 # <a name="inventory-value-reports"></a>Lagerverdirapporter
 
@@ -53,12 +53,9 @@ Rapporten for **oppbevaring av lagerverdi** er nyttig når utdataene inneholder 
 > [!NOTE]
 > Rapporten for **oppbevaring av lagerverdi** inkluderer ikke delsummer som er definert i rapportoppsettet. Den inkluderer heller ikke saldoer i økonomimodulen, selv om disse saldoene er definert i rapportoppsettet. Avstemming til økonomimodulen må gjøres ved hjelp av råbalanser. Standard **Lagerverdi**-rapport inneholder imidlertid disse delsummene og saldoene.
 
-## <a name="turn-on-the-inventory-value-report-storage-feature"></a>Aktiver funksjonen for oppbevaring av lagerverdi
+## <a name="turn-the-inventory-value-report-storage-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Lagring av lagerverdirapport
 
-Standard **Lagerverdi**-rapport er aktivert som standard. Hvis du imidlertid vil generere den mer avanserte rapporten for **oppbevaring av lagerverdi**, må du aktivere funksjonen i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Kostnadsstyring*
-- **Funksjonsnavn :** *Rapport for oppbevaring av lagerverdi*
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Lagring av lagerverdirapport* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="define-inventory-value-report-configurations"></a><a name="report-configuration"></a>Definer konfigurasjoner for lagerverdirapporten
 

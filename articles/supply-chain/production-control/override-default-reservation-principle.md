@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 959b8b85fe55ed5e0a93b5b614c3f6166bbd2bb6ef07e9d0f0f4c2b1ea3c4659
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b12740e58b2bf8667bee8a2c51917d69771779f2
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721325"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103369"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Overstyre standard reserveringsprinsipp for materialer i produksjon
 
@@ -31,12 +31,9 @@ Når du oppretter en ny produksjonsordre eller partiordre, blir du bedt om å ve
 
 Hvis du for eksempel har råvarer eller ingredienser som krever plukkarbeid, må stykkliste- eller formellinjer som opprettes for disse produktene, reserveres fysisk siden fysisk reservering er en forutsetning for generering av lagerarbeid. Hvis du vil at reserveringen skal skje automatisk, kan du vanligvis velge et av følgende reserveringsprinsipper: *anslag*, *planlegging*, *frigivelse* eller *start*. Hvis du på den annen side har materialer eller ingredienser som ikke krever plukkarbeid, fordi de forbrukes direkte fra en lokasjon, velger du vanligvis det *manuelle* reserveringsprinsippet, som ikke foretar noen fysiske reserveringer eller genererer noe plukkingsarbeid.
 
-## <a name="turn-on-the-feature"></a>Aktivere funksjonen
+## <a name="turn-the-override-default-production-reservation-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Overstyr standard produksjonsreservasjon
 
-Før du kan bruke funksjonen må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Produksjonskontroll*
-- **Funksjonsnavn:** *Overstyr standard produksjonsreservering*
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Overstyr standard produksjonsreservasjon* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tilordne en policy for produksjonsreservering til en varemodellgruppe
 

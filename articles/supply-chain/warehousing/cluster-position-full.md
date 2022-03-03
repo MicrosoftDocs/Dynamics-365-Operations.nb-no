@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574263"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102844"
 ---
 # <a name="cluster-position-full"></a>Gruppestilling full
 
@@ -28,12 +28,9 @@ Funksjonen *Gruppeposisjon full* gir et alternativ til mer rigid håndhevelse av
 
 Denne funksjonen gir mulighet til å kjøre knappen **Full** på en av arbeidsenhetene i en gruppe. I eldre versjoner var dette alternativet bare tilgjengelig for vanlig ordreplukking, ikke for gruppeplukking. Denne funksjonen er imidlertid forskjellig fra standardknappen **Full** ved at den avbryter det gjenstående arbeidet. Den foreslår ikke at brukeren legger til en ny hylle i den samme gruppen, og den oppretter ikke automatisk nytt arbeid.
 
-## <a name="turn-on-the-cluster-position-full-feature"></a>Aktivere funksjonen Gruppeposisjon full
+## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Gruppestilling full
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Gruppeposisjon full*
+Du må aktivere funksjonen *Gruppestilling full* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Gruppestilling full* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Installasjon
 

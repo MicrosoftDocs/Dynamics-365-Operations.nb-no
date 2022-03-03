@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1e648b5db9405e749fbd24502f65f344d0549b0f13b48e98c38d1476866db01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729992"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103269"
 ---
 # <a name="warehouse-app-event-processing"></a>Behandling av lagerapphendelse
 
@@ -26,12 +26,9 @@ ms.locfileid: "6729992"
 
 Satsvise jobber som kjører i Supply Chain Management, kan bruke data fra en kø for behandling av hendelser som utstedes av mobilappen Lagerstyring, for å reagere etter behov på signaliserte hendelser. Denne funksjonen legger til relevante hendelser i køen som svar på bestemte typer handlinger utført av arbeidere ved hjelp av appen. Et eksempel er at når du bruker funksjonen *Opprette og behandle overføringsordre fra lagerappen*, blir overføringsordrehodet og -linjene opprettet og oppdatert i serverdelen når systemet kjører den satsvise jobben **Behandle lagerapphendelser**.
 
-## <a name="enable-the-process-warehouse-app-events-feature"></a>Aktivere funksjonen Behandle lagerapphendelser
+## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Behandle lagerapphendelser
 
-Før du kan bruke denne funksjonen, må du aktivere den i systemet. Administratorer kan bruke siden for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis det er nødvendig. Funksjonen Behandle lagerapphendelser er oppført som :
-
-- **Modul** – lagerstyring
-- **Funksjonsnavn** – Behandle lagerapphendelser
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Behandle lagerapphendelser* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Konfigurere en satsvis jobb for å behandle lagerapphendelser
 

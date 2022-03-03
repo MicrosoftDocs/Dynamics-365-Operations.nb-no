@@ -2,32 +2,34 @@
 title: Produktklargjøring
 description: I dette emnet finner du informasjon om hvordan du kan bruke klargjøringskontroller til å sikre at de nødvendige hoveddataene fullføres for et produkt før det brukes i transaksjoner.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: f7ab6165e85cd2b1165292b74cd036f1233b22b4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967264"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103019"
 ---
 # <a name="product-readiness"></a>Produktklargjøring
 
 [!include [banner](../includes/banner.md)]
 
-Du an bruke klargjøringskontroller til å sikre at alle de nødvendige hoveddataene er angitt for et produkt før det brukes i transaksjoner. Når det brukes klargjøringskontroller, er en bruker eller et team ansvarlig for å validere bestemte forhåndsdefinerte produktrelaterte data. Hvis det er en åpen klargjøringskontroll for et produkt, kan ikke produktet frigis eller brukes i transaksjoner.
+Du an bruke klargjøringskontroller til å sikre at alle de nødvendige hoveddataene er angitt for et produkt før det brukes i transaksjoner. Når det brukes klargjøringskontroller, er en bruker eller et team ansvarlig for å validere bestemte forhåndsdefinerte produktrelaterte data.
 
-Avmerkingsboksen **Aktiv** for et teknisk produkt, en variant eller en versjon er bare tilgjengelig etter at alle de påkrevde dataene er angitt og kontrollert, og etter at alle klargjøringskontrollene er behandlet. På dette tidspunktet kan produktet, versjonen eller varianten frigis til andre firmaer og brukes i transaksjoner. Du kan opprette klargjøringskontroller for nye produkter, nye varianter og nye tekniske versjoner.
+Du kan merke av for **Aktiv** for et teknisk produkt, en variant eller en versjon etter at alle de påkrevde dataene er angitt og kontrollert, og etter at alle klargjøringskontrollene er behandlet. Hvis én eller flere sjekker ikke er behandlet for produktet, versjonen eller varianten, vil du få en ledetekst om at ikke alle kontrollene er fullført når du prøver å merke av for **Aktiv**.
+
+Du kan opprette klargjøringskontroller for tekniske produkter, varianter og versjoner. Du kan også bruke beredskapskontroller på standardprodukter (ikke-tekniske produkter) (se også [Beredskapskontroller av standardprodukter](#standard-products)). 
+
+Du kan bruke standardprodukter i transaksjoner selv om ikke alle beredskapskontroller er fullført. Hvis du har behov for å blokkere et produkt fra å bli brukt i transaksjoner, bruker du livssyklusstatusen. Du kan tilordne en livssyklusstatus som blokkerer et produkt fra å brukes i transaksjoner, og deretter tilordne en ny livssyklusstatus som tillater de nødvendige transaksjonene, når alle beredskapskontroller er fullført.
 
 ## <a name="types-of-readiness-checks"></a>Typer klargjøringskontroller
 
@@ -37,22 +39,29 @@ Det finnes tre typer klargjøringskontroller:
 - **Manuell kontroll** – En bruker bekrefter om posten er gyldig. En klargjøringskontroll kan for eksempel kreve validering av standard ordreinnstillinger. I noen tilfeller, for eksempel når produktet fremdeles utvikles og derfor ikke vil bli plassert på lager, kreves det ingen standard ordreinnstillinger. Standard ordreinnstillinger kan imidlertid være nødvendige for et annet produkt av samme type, fordi produktet kan holdes på lager. Brukeren er ansvarlig for å vite hvordan de skal avgjøre om det kreves en klargjøringskontroll.
 - **Sjekkliste** – Brukeren svarer på en rekke spørsmål fra en sjekkliste, og systemet fastsetter om svarene oppfyller forventningene. Sjekklisten kan ha et hvilket som helst emne. Den kan for eksempel brukes til å fastslå om markedsføringsmateriell eller produktdokumentasjon er fullført.
 
-## <a name="how-readiness-checks-are-created-for-a-new-product-variant-or-version"></a>Slik opprettes klargjøringskontroller for et nytt produkt, en ny variant eller en versjon
+<a name="checks-engineering"></a>
 
-Når du oppretter et nytt teknisk **produkt**, bestemmer systemet om det er konfigurert en policy for klargjøringskontroll for kategorien for teknisk produkt. (Policyer for klargjøringskontroll kan brukes på det frigitte produktnivået, det frigitte variantnivået og nivået for teknisk versjon.) Hvis en policy er konfigurert, skjer følgende hendelser:
+## <a name="how-readiness-checks-are-created-for-a-new-engineering-product-variant-or-version"></a>Slik opprettes klargjøringskontroller for et nytt teknisk produkt, en ny variant eller en versjon
+
+Policyer for klargjøringskontroll kan brukes på nivået for frigitt produkt, på nivået for frigitt variant og på nivået for teknisk versjon.
+
+Når du oppretter et nytt *teknisk produkt*, bestemmer systemet om en [policy for beredskapskontroll er gjeldende](#assign-policy). Hvis en beredskapskontrollpolicy er gjeldende, skjer følgende hendelser:
 
 - Klargjøringskontroller opprettes for produktet i henhold til gjeldende policy.
-- Den tekniske versjonen er satt til inaktiv for å blokkere produktet fra å bli brukt. Alle versjonene for det bestemte produktet som er involvert, angis som inaktive.
+- Den tekniske versjonen er satt til inaktiv for å blokkere produktet fra å bli brukt. Alle ingeniørversjoner for produktet settes til inaktiv.
 
-Hvis det opprettes en ny **variant** for et produkt, kontrollerer systemet om det er definert klargjøringskontroller i kategorien for teknisk produkt. (Klargjøringskontroller kan brukes på det frigitte variantnivået og nivået for teknisk versjon.) Hvis en klargjøringskontroll er konfigurert, skjer følgende hendelser:
+Hvis det opprettes en ny *variant* for et produkt, kontrollerer systemet om en beredskapskontrollpolicy gjelder for det. (Klargjøringskontroller kan brukes på nivået for frigitte variant og på nivået for teknisk versjon.) Hvis en policy er gjeldende, skjer følgende hendelser:
 
-- Klargjøringskontroller er opprettet for produktet.
+- Klargjøringskontroller opprettes for produktet i henhold til gjeldende policy.
+- Den tekniske versjonen og varianten settes til inaktiv for å blokkere produktet fra å bli brukt.
+
+Hvis en ny teknisk *versjon* opprettes for et produkt, kontrollerer systemet om en beredskapskontrollpolicy gjelder for det. (Klargjøringskontroller kan brukes på nivået for frigitt versjon.) Hvis en policy er gjeldende, skjer følgende hendelser:
+
+- Klargjøringskontroller opprettes for produktet i henhold til gjeldende policy.
 - Den tekniske versjonen er satt til inaktiv for å blokkere produktet fra å bli brukt.
 
-Hvis det opprettes en ny teknisk **versjon** for et produkt, kontrollerer systemet om det er definert klargjøringskontroller i kategorien for teknisk produkt. (Klargjøringskontroller kan brukes på nivået for teknisk versjon.) Hvis en klargjøringskontroll er konfigurert, skjer følgende hendelser:
-
-- Klargjøringskontroller er opprettet for produktet.
-- Den tekniske versjonen er satt til inaktiv for å blokkere produktet fra å bli brukt.
+> [!NOTE]
+> Du kan også sette opp beredskapskontrollpolicyer for standardprodukter (ikke-tekniske). Hvis du vil ha mer informasjon, kan du se [Klargjøringskontroller for standardprodukter](#standard-products) senere i dette emnet.
 
 ## <a name="view-readiness-checks"></a>Vis klargjøringskontroller
 
@@ -69,7 +78,7 @@ Hvis du vil vise de åpne klargjøringskontrollene som er tilordnet deg, følger
 - Gå til **Behandling av teknisk endring \> Felles \> Produktklargjøring \> Min åpne klargjøringskontroller**.
 - Gå til **Behandling av produktinformasjon \> Arbeidsområder \> Produktklargjøring for stykkproduksjon**.
 
-Oppsettet som angir hvem det er tilordnet klargjøringskontroller til, gjøres for kategorien for teknisk produkt. Klargjøringskontroller kan tilordnes til en person eller et team. Hvis det er tilordnet en klargjøringskontroll til et team, er det én person i teamet som må behandle klargjøringskontrollen. Hvis du vil ha mer informasjon, kan du se [Tekniske versjoner og kategorier for teknisk produkt](engineering-versions-product-category.md).
+Oppsettet som angir hvem det er tilordnet klargjøringskontroller til, gjøres for klargjøringspolicyen. Klargjøringskontroller kan tilordnes til en person eller et team. Hvis det er tilordnet en klargjøringskontroll til et team, er det én person i teamet som må behandle klargjøringskontrollen.
 
 ## <a name="process-open-readiness-checks"></a>Behandle åpne klargjøringskontroller
 
@@ -94,9 +103,7 @@ Når alle de åpne klargjøringskontrollene for et nytt produkt, variant eller v
 
 ## <a name="create-and-manage-product-readiness-policies"></a>Opprett og behandle policyer for produktklargjøring
 
-Bruk policyer for produktklargjøring til å administrere klargjøringskontrollene som gjelder for et produkt. Fordi en klargjøringspolicy er tilordnet den tekniske kategorien, vil alle kontrollene i klargjøringspolicyen gjelde for alle tekniske produkter som er basert på den tekniske kategorien. Hvis du vil ha mer informasjon, kan du se [Tekniske versjoner og kategorier for teknisk produkt](engineering-versions-product-category.md).
-
-Hver klargjøringspolicy inneholder et sett med klargjøringskontroller. Når en klargjøringspolicy er tilordnet en kategori for teknisk produkt, vil alle produktene som er opprettet fra denne kategorien for teknisk produkt, ha klargjøringskontrollene som er angitt i klargjøringspolicyen.
+Bruk policyer for produktklargjøring til å administrere klargjøringskontrollene som gjelder for et produkt. Hver klargjøringspolicy inneholder et sett med klargjøringskontroller. Når en klargjøringspolicy er tilordnet en kategori for teknisk produkt eller et delt produkt, vil alle produktene som er relatert til kategorien eller det delte produktet, ha klargjøringskontrollene som er inkludert i klargjøringspolicyen.
 
 Hvis du vil arbeide med produktklargjøringspolicyer, går du til **Behandling av teknisk endring \> Oppsett \> Produktklargjøringspolicyer**. Følg deretter ett av disse trinnene.
 
@@ -120,7 +127,7 @@ Angi følgende felter på hurtigfanen **Generelt** til en produktklargjøringspo
 | Felt | beskrivelse |
 |---|---|
 | Produkttype | Velg om policyen gjelder for produkter av typen *Vare* eller *Tjeneste*. Du kan ikke endre denne innstillingen etter at du har lagret posten. |
-| Aktive | Bruk dette alternativet til å opprettholde klargjøringspolicyene. Angi til *Ja* for alle klargjøringspolicyene du bruker. Angi til *Nei* for å merke en klargjøringspolicy som inaktiv når den ikke brukes. Legg merke til at du ikke kan deaktivere en klargjøringspolicy som er tilordnet til en kategori for teknisk produkt, og du kan bare slette inaktive frigivelsespolicyer. |
+| Aktive | Bruk dette alternativet til å opprettholde klargjøringspolicyene. Angi til *Ja* for alle klargjøringspolicyene du bruker. Angi til *Nei* for å merke en klargjøringspolicy som inaktiv når den ikke brukes. Legg merke til at du ikke kan deaktivere en klargjøringspolicy som er tilordnet til en kategori for teknisk produkt eller et delt produkt, og du kan bare slette inaktive frigivelsespolicyer. |
 
 ### <a name="readiness-control-fasttab"></a>Hurtigfanen Klargjøringskontroll
 
@@ -144,6 +151,51 @@ For hver rad du legger til, angir du følgende felter:
 | Bedrift | Hvis du setter **Utfør i**-feltet til *Ett firma*, velger du firmaet. |
 | Eiertype | Velg om klargjøringskontroller som raden genererer, skal tilordnes til en person eller et team. |
 | Eier | Velg personen eller teamet som klargjøringskontroller som raden genererer, tilordnes til. |
-| Spørreskjema | Velg spørreskjemaet som skal brukes for sjekklisten. Sjekklisten er en lokal sjekkliste i firmaet der klargjøringskontrollen utføres. Systemet må kunne vurdere om sjekklisten er riktig besvart. Sjekklisten må derfor konfigureres slik at det utføres en evaluering basert på riktige svar. Hvis du vil ha mer informasjon om hvordan du oppretter spørreskjemaer, kan du se [Bruke spørreskjemaer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) og det tilknyttede emner. |
+| Spørreskjema | Velg spørreskjemaet som skal brukes for sjekklisten. Sjekklisten er en lokal sjekkliste i firmaet der klargjøringskontrollen utføres. Systemet må kunne vurdere om sjekklisten er riktig besvart. Sjekklisten må derfor konfigureres slik at det utføres en evaluering basert på riktige svar. Hvis du vil ha mer informasjon om hvordan du oppretter spørreskjemaer, kan du se [Bruke spørreskjemaer](/dynamicsax-2012/appuser-itpro/using-questionnaires) og det tilknyttede emner. |
 | Automatisk godkjenning | Poster for klargjøringskontroll omfatter avmerkingsboksen **Godkjent** som angir godkjenningsstatusen. Merk av for **Automatisk godkjenning** for kontroller som skal settes til godkjent umiddelbart etter at den tilordnede brukeren har fullført dem. Fjern merket i denne avmerkingsboksen for å kreve eksplisitt godkjenning som et ekstra trinn. |
 | Obligatorisk | Merk av i denne avmerkingsboksen for kontroller som må fullføres av den tilordnede brukeren. Du kan ikke hoppe over obligatoriske kontroller. |
+
+<a name="assign-policy"></a>
+
+## <a name="assign-readiness-policies-to-standard-and-engineering-products"></a>Tilordne beredskapspolicyer til standardprodukter og tekniske produkter
+
+Når du oppretter et nytt produkt basert på en teknisk kategori, oppretter du både et *frigitt produkt* og et relatert *delt produkt*. Måten klargjøringspolicyer løses på for et frigitt produkt, er avhengig av om funksjonen *Produktklargjøringskontroller* er aktivert for systemet (se delen [Klargjøringskontroller for standardprodukter](#standard-products) senere i dette emnet hvis du vil ha informasjon om denne funksjonen og hvordan du aktiverer eller deaktiverer den).
+
+- Når funksjonen for *Produktklargjøringskontroller* er slått *av* på systemet, angis beredskapspolicyen og vises bare på poster for [teknisk kategori](engineering-versions-product-category.md). Hvis du vil vite hvilke policyer som gjelder for et frigitt produkt, kontrollerer systemet feltet **Policy for produktklargjøring** for den relaterte tekniske kategorien. Du kan endre beredskapspolicyen for et eksisterende produkt ved å redigere den tilknyttede tekniske kategorien (ikke det delte produktet).
+- Når funksjonen *Produktklargjøringskontroller* er *på*, legger den til et felt **Policy for produktklargjøring** på **Produkt**-siden (der delte produkter er definert) og til **Frigitt produkt**-siden (der verdien er skrivebeskyttet og hentes fra det relaterte delte produktet). Systemet finner beredskapspolicyen for et frigitt produkt ved å kontrollere det relaterte delte produktet. Når du bruker en teknisk kategori til å opprette et nytt teknisk produkt, oppretter systemet både et delt produkt og et frigitt produkt og kopierer en eventuell innstilling for **Policy for produktklargjøring** for den tekniske kategorien til det nye delte produktet. Du kan deretter endre beredskapspolicyen for et eksisterende produkt ved å redigere det relaterte delte produktet (ikke den frigitte tekniske kategorien).
+
+Hvis du vil tilordne en klargjøringspolicy til et delt produkt, gjør du følgende.
+
+1. Gå til **Produktinformasjon \> Produkter \> Produkter**.
+1. Åpne eller opprett produktet du vil tilordne en beredskapspolicy til.
+1. I hurtigkategorien **Generelt** angir feltet **Policy for produktklargjøring** til navnet på policyen som skal gjelde for produktet.
+
+Hvis du vil tilordne en klargjøringspolicy til en teknisk kategori, følger du disse trinnene.
+
+1. Gå til **Styring av teknisk endring \> Oppsett \> Detaljer om kategori for teknisk produkt**.
+1. Åpne eller opprett den tekniske kategorien du vil tilordne en beredskapspolicy til.
+1. I hurtigkategorien **Generelt** angir feltet **Policy for produktklargjøring** til navnet på policyen som skal gjelde for den tekniske kategorien.
+
+<a name="standard-products"></a>
+
+## <a name="readiness-checks-on-standard-products"></a>Beredskapskontroller av standardprodukter
+
+Du kan aktivere produktberedskapskontroller for standardprodukter (ikke-tekniske produkter) ved å aktivere funksjonen for *Produktklargjøringskontroller* i Funksjonsbehandling. Denne funksjonen gjør noen små endringer i beredskapskontrollsystemet, slik at det støtter standardprodukter.
+
+### <a name="enable-or-disable-readiness-checks-on-standard-products"></a>Aktivere eller deaktivere klargjøringskontroller for standardprodukter
+
+Denne funksjonen krever at funksjonene *Behandling av teknisk endring* og *Produktklargjøringskontroller* er aktivert for systemet. Hvis du vil ha mer informasjon om hvordan du aktiverer eller deaktiverer disse funksjonene, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
+
+### <a name="create-readiness-policies-for-standard-products"></a>Opprette beredskapspolicyer for standardprodukter
+
+Du oppretter beredskapspolicyer for standardprodukter på samme som for tekniske produkter. Se informasjonen tidligere i dette emnet.
+
+### <a name="assign-readiness-policies-to-standard-products"></a>Tilordne beredskapspolicyer til standardprodukter
+
+Hvis du vil tilordne en beredskapspolicy til et standardprodukt, åpner du det relaterte delte produktet og setter feltet **Policy for produktklargjøring** til navnet på policyen som skal gjelde. Hvis du vil ha mer informasjon, kan du se delen [Tilordne beredskapspolicyer til standardprodukter og tekniske produkter](#assign-policy) tidligere i dette emnet.
+
+### <a name="view-and-process-readiness-checks-on-standard-products"></a>Vise og behandle beredskapskontroller av standardprodukter
+
+Når denne funksjonen er aktivert, viser og behandler du beredskapskontroller for standardprodukter på samme vis som du gjør for tekniske produkter. Se informasjonen tidligere i dette emnet.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

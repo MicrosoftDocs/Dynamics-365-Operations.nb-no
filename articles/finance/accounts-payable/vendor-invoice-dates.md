@@ -2,25 +2,25 @@
 title: Datoer for leverandørfaktura
 description: Dette emnet beskriver datoene som vises på leverandørfakturaer. Det forklarer også hvordan du konfigurerer systemet slik at posteringsdatoen justeres automatisk.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647904"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105470"
 ---
 # <a name="vendor-invoice-dates"></a>Datoer for leverandørfaktura
 
@@ -50,6 +50,9 @@ Følg denne fremgangsmåten for å aktivere systemet for automatisk justering av
     - **Endre alltid posteringsdatoen til systemdato** – Systemet endrer automatisk posteringsdatoen til systemdatoen under postering.
     - **Endre posteringsdato til systemdato når posteringsdatoperioden er lukket eller på vent** – Systemet endrer posteringsdatoen til systemdatoen under postering, men bare hvis den tilsvarende perioden for posteringsdatoen har statusen **Lukket** eller **På vent**.
     - **Endre posteringsdato til den første dagen i den nye perioden når posteringsdatoperioden er lukket eller på vent** – Systemet endrer posteringsdatoen til den første dagen i den nye perioden, men bare hvis den tilsvarende perioden for posteringsdatoen har statusen **Lukket** eller **På vent**.
+
+> [!NOTE]
+> Hvis den nye posteringsdatoen som ble justert automatisk, er i et nytt regnskapsår, blir ikke posteringsdatoen for fakturaen oppdatert. Brukeren får feilmeldingen «Regnskapsåret er endret. Kontroller og angi posteringsdatoen på nytt.» Posteringsdatoen for faktura må oppdateres til den nye datoen for regnskapsår for at posteringen skal kunne utføres.
 
 ## <a name="impact-of-posting-date-changes"></a>Virkningen av posteringsdatoendringer
 

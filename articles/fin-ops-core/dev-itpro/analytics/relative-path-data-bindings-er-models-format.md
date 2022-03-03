@@ -13,21 +13,21 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 686600e857c7b5aab74d80b7bc31c6bbaaf8d2336d57ff5839752d0ff33def84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
+ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741686"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8313573"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Bruke en relativ bane i databindinger for ER-modeller og -formater
 
 [!include[banner](../includes/banner.md)]
 
-Med verktøyet for elektronisk rapportering (ER) kan brukere definere elektroniske formatstrukturer og deretter beskrive hvordan disse strukturene skal fylles ved hjelp av data og algoritmer som finnes i programmet. Hvis du vil ha mer informasjon, kan du se [Opprette ER-konfigurasjoner (elektronisk rapportering)](electronic-reporting-configuration.md). Hvis du vil angi dataflyten for å hente Finance and Operations-data og bruke dem til å generere et elektronisk dokument, må du gjøre følgende:
+Med verktøyet for elektronisk rapportering (ER) kan brukere definere elektroniske formatstrukturer og deretter beskrive hvordan disse strukturene skal fylles ved hjelp av data og algoritmer som finnes i programmet. Hvis du vil ha mer informasjon, kan du se [Opprette ER-konfigurasjoner (elektronisk rapportering)](electronic-reporting-configuration.md). Hvis du vil angi dataflyten for å hente økonomi- og driftsdata og bruke dem til å generere et elektronisk dokument, må du gjøre følgende:
 
-- Bind konfigurerte datakilder til elementer i den utformede domenespesifikke [datamodellen](general-electronic-reporting.md#data-model-and-model-mapping-components). Modellstrukturen og de valgte datakildene kan være del av en kompleks hierarkisk struktur. Endelige bindinger kan på grunn av dette være ganske store og inneholde mange elementer av forskjellige typer (for eksempel relasjoner, tabeller og metoder). Bindingene kan bli mindre lesbare og svært vanskelige å se gjennom og forstå, særlig for ikke-eiere. 
-- Bind datamodellelementer til [formatkomponenter](general-electronic-reporting.md#FormatComponentOutbound) for å definere hvilke data som skal fylles inn fra datamodellen i det genererte formatets utdata.
+- Bind konfigurerte datakilder til elementer i den utformede domenespesifikke datamodellen. Modellstrukturen og de valgte datakildene kan være del av en kompleks hierarkisk struktur. Endelige bindinger kan på grunn av dette være ganske store og inneholde mange elementer av forskjellige typer (for eksempel relasjoner, tabeller og metoder). Bindingene kan bli mindre lesbare og svært vanskelige å se gjennom og forstå, særlig for ikke-eiere. 
+- Bind datamodellelementer til formatkomponenter for å definere hvilke data som skal fylles inn fra datamodellen i det genererte formatets utdata.
 
 Funksjonen for [relativ bane](er-formula-language.md#relative-path) har blitt utgitt for å forbedre anvendeligheten av ER-tilordningsutforminger. Alternativet for relativ bane er som standard aktivert for nye forekomster av programmet der ER-utformingsopplevelsen er gjeldende (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Vi implementerte parameteren for relativ bane, slik at brukerne kan fortsette å bruke hele banen når de arbeider med denne presentasjonen av ER-bindinger.
 

@@ -2,11 +2,9 @@
 title: Oppryddingsjobb for lagerstyringsposter
 description: Dette emnet beskriver oppryddingsjobben for lageroppføringer, som bidrar til å forbedre systemytelsen ved å identifisere og slette relaterte, men overflødige poster.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -14,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014489"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103869"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Oppryddingsjobb for lagerstyringsposter
+
+[!include [banner](../includes/banner.md)]
 
 Ytelsen til spørringer som brukes til å beregne lagerbeholdning, påvirkes av antall poster i tabellene som er involvert. Én måte å forbedre ytelsen på, er ved å redusere antall poster databasen må vurdere.
 
@@ -58,7 +58,7 @@ Ytelsesforbedringen som oppryddingsjobben gir, skal imidlertid veie opp for diss
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Gjør innstillingen for maksimal utførelsestid tilgjengelig.
 
-Som standard er innstillingen **Maksimal utførelsestid** ikke tilgjengelig. Hvis du vil bruke den, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere den tilknyttede funksjonen i systemet. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Innstillingen **Maksimal kjøringstid** er bare tilgjengelig når funksjonen *Maksimal kjøringstid for jobben Opprydding i beholdningsoppføringer for lagerstyring* er aktivert. Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Maksimal kjøringstid for jobben Opprydding i beholdningsoppføringer for lagerstyring* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Maksimal utførelsestid for oppryddingsjobb for lagerbeholdning*
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

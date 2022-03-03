@@ -2,7 +2,7 @@
 title: Aktiver Dynamics 365 Commerce- og Microsoft Teams-integrering
 description: Dette emnet beskriver hvordan du aktiverer Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 9910ee48a0792c89a4e04ec8685fd02484e45575d70b06454dea56a89ee8c914
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52b1a889a15cfe2e6e104e38b7d257f80762954f
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775344"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323436"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Aktiver Dynamics 365 Commerce- og Microsoft Teams-integrering
 
@@ -38,15 +38,23 @@ Før du kan aktivere Microsoft Teams-integrering med Commerce, må du registrere
 Følg denne fremgangsmåten for å registrere Teams-programmet med leieren i Azure-portalen.
 
 1. følg trinnene i [Hurtigstart: Registrer en app i Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app) for å registrere Teams-appen med leieren i Azure-portalen.
-1. Kopier verdien for **App-ID (klient)** fra **Oversikt**-siden for den registrerte appen. Du bruker denne verdien for å aktivere Teams-integrering i Commerce Headquarters.
-1. Kopier sertifikatverdien som ble angitt da du [la til et sertifikat](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) i trinn 1. Sertifikatet kalles også offentlig nøkkel eller programnøkkel. Du bruker denne verdien for å aktivere Teams-integrering i Commerce Headquarters.
+1. Velg appen du opprettet i forrige trinn, i **Appregistrering**-fanen. Velg deretter **Legg til en plattform** i **Godkjenning**-fanen.
+1. Velg **Nett** i dialogboksen. Angi deretter en nettadresse i formatet **\<HQUrl\>/oauth** i feltet **Nettadresser for omadressering**. Erstatt **\<HQUrl\>** med nettadressen for Commerce Headquarters (for eksempel `https://hxennugbjtweufmdeo385f47fadb6aa9a0aos.cloudax.int.dynamics.com/oauth`).
+1. Kopier verdien for **Program-ID (klient)** på **Oversikt**-siden for den registrerte appen. Du må oppgi denne verdien for å aktivere Teams-integrering i Commerce Headquarters i den neste delen.
+1. Følg instruksjonene i [Legge til en klienthemmelighet](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret) for å legge til en klienthemmelighet. Kopier deretter verdien for **Hemmelig verdi** for klienten. Du må oppgi denne verdien for å aktivere Teams-integrering i Commerce Headquarters i den neste delen.
+1. Velg **API-tillatelser**, og velg deretter **Legg til en tillatelse**.
+1. Velg **Microsoft Graph** i dialogboksen **Be om API-tillatelser**, velg **Delegerte tillatelser**, utvid **Gruppe**, velg **Group.ReadWrite.All**, og velg deretter **Legg til tillatelser**.
+1. Velg **Legg til en tillatelse** i dialogboksen **Be om API-tillatelser**, velg **Microsoft Graph**, velg **Programtillatelser**, utvid **Gruppe**, velg **Group.ReadWrite.All**, og velg deretter **Legg til tillatelser**.
+1. Velg **Legg til en tillatelse** i dialogboksen **Be om API-tillatelser**. Søk etter **Microsoft Teams Retail Service** i fanen **API-er organisasjonen min bruker**, og velg den.
+1. Velg **Delegerte tillatelser**, utvid **TaskPublishing**, velg **TaskPublising.ReadWrite.All**, og velg deretter **Legg til tillatelser**. Hvis du vil ha mer informasjon, kan du se [Konfigurere et klientprogram for å få tilgang til en nett-API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis).
 
 Følg denne fremgangsmåten for å aktivere Teams-integrering i Commerce Headquarters.
 
 1. Gå til **Retail og Commerce \> Kanaloppsett \> Konfigurasjon av Microsoft Teams-integrering**.
 1. I handlingsruten velger du **Rediger**.
 1. Sett alternativet **Aktiver Microsoft Teams-integrering** til **Ja**.
-1. I feltene **App-ID** og **Appnøkkel** angir du verdiene du fikk da du registrerte Teams-appen i Azure-portalen.
+1. I feltet **Program-ID** angir du verdien for **Program-ID (klient)** du fikk da du registrerte Teams-programmet i Azure-portalen.
+1. I feltet **Programnøkkel** angir du verdien for **Hemmelig verdi** du fikk da du la til en klienthemmelighet i Azure-portalen.
 1. Velg **Lagre** i handlingsruten.
 
 Illustrasjonen nedenfor viser et eksempel på konfigurasjonen av Teams-integrering i Commerce Headquarters.

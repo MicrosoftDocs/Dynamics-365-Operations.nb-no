@@ -2,7 +2,7 @@
 title: Produktstatuser og transaksjoner
 description: Dette emnet beskriver hvordan du kan kontrollere hvilke transaksjoner som er tillatt for hver status når et teknisk produkt går gjennom livssyklusen.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 12f95feda887b5f1284624e5f072b498a78d00e1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
+ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574647"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8322750"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktstatuser og transaksjoner
 
@@ -93,5 +93,13 @@ La oss for eksempel anta at du bare vil selge én variant (rød) av et gitt prod
 - Tilordne produktet en livssyklusstatus som tillater prosessen. Tilordne for eksempel t-skjorteproduktet livssyklusstatusen til *Kan selges*, som tillater *Salgsordre*-forretningsprosessen.
 - Tilordne den salgbare varianten en livssyklusstatus som tillater prosessen. Du kan for eksempel også tilordne den røde varianten livssyklusstatusen *Salgbar*.
 - Alle andre varianter tilordnes en annen livssyklusstatus der prosessen er blokkert. Tilordne for eksempel den hvite varianten (og alle andre varianter) livssyklusstatusen *Ikke salgbar*, som blokkerer forretningsprosessen *Salgsordre*.
+
+## <a name="default-product-lifecycle-states"></a>Standard produktstatuser
+
+Standardstatusen for en teknisk versjon angis av den tekniske kategorien for den. Statusen brukes som standard når du oppretter en ny teknisk versjon, inkludert første versjon av et nytt produkt.
+
+Når du oppretter et nytt produkt eller teknisk produkt, kan du også angi standardstatusen ved å angi den på det malfrigitte produktet i frigivelsespolicyen som er tilordnet til produktet.
+
+I dette tilfellet kan produktet ha en annen status enn versjonen når du oppretter et nytt teknisk produkt.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

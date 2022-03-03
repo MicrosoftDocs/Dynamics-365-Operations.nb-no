@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4b7c01a21dcbe7543332439ee6fd371b426851f4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579934"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103519"
 ---
 # <a name="wave-creation-and-processing"></a>Bølgeoppretting og -behandling
 
@@ -190,9 +190,9 @@ Om nødvendig kan du avbryte en bølge som er behandlet. Hvis du vil avbryte en 
 
 Bruk siden **Detaljer om satsvis jobb for bølge** til å inspisere de satsvise joggene og relaterte oppgaver knyttet til en bølge. Dette er særlig nyttig for feilsøking av en bølge som har mislyktes. Uten denne funksjonen vil bare administratorer vanligvis ha tilgang til detaljer om satsvise jobber. Siden **Detaljer om satsvis jobb for bølge** kan bli gjort tilgjengelig for ikke-administratorbrukere og fungerer som en skrivebeskyttet vising av satsvise jobber og relaterte oppgaver.
 
-### <a name="enable-the-wave-batch-job-details-page"></a>Aktiver siden Detaljer om satsvis jobb for bølge
+### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Aktivere eller deaktivere siden Detaljer om satsvis jobb for bølge
 
-Hvis systemet ikke allerede inkluderer siden **Detaljer om satsvis jobb for bølge**, kan du gå til [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Detaljer om satsvis jobb for bølge*.
+Fra og med Supply Chain Management versjon 10.0.25 er siden **Detaljer om satsvis jobb for bølge** aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Detaljer om satsvis jobb for bølge* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Bruk siden Detaljer om satsvis jobb for bølge
 

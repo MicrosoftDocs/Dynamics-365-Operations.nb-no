@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72c372a4d9b6af337731ff0bbd750b3b58f27bb79cb3813a0b5e4f79707d9f5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96fdf33f4cc5f22015c00c57858bd438e6465764
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730613"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323646"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Støttede primitive datatyper for formler i elektronisk rapportering
 
@@ -101,7 +101,7 @@ Sammenlignings [operatorer](er-formula-language.md#Operators) er den eneste type
 
 ## <a name="enumeration"></a><a name="enumeration"></a>Opplisting
 
-Den primitive datatypen *opplisting* er en liste over litteraler. Du kan bruke opplistinger som er definert i [kildekoden](../dev-ref/xpp-data-primitive.md#enum) for programmet. Du kan også innføre dine egne opplistinger i ER-[datamodellen](general-electronic-reporting.md#data-model-and-model-mapping-components) og ER-[format](general-electronic-reporting.md#FormatComponentOutbound)komponentene.
+Den primitive datatypen *opplisting* er en liste over litteraler. Du kan bruke opplistinger som er definert i [kildekoden](../dev-ref/xpp-data-primitive.md#enum) for programmet. Du kan også innføre dine egne opplistinger i ER-datamodellen og ER-formatkomponentene.
 
 En *opplisting* for program kan brukes i uttrykk i enhver ER-modelltilordning og ethvert ER-format.
 

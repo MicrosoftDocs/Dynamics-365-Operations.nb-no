@@ -2,23 +2,23 @@
 title: Definere validering av leverandørfakturakontroll
 description: Dette emnet gir informasjon om hvordan du definerer validering av leverandørfakturakontroll.
 author: abruer
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 017b0197563b9d7fd03f5fc927353be8d16586090f467cff792016431e0fafad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722869"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182561"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Definere validering av leverandørfakturakontroll
 
@@ -54,7 +54,7 @@ Det finnes fire ulike kontrollvalideringstyper.
 12. I feltet **Toleranse for total innkjøpspris** angir du et beløp i regnskapsvalutaen. Dette feltet er tilgjengelig når **Beløp** eller **Prosent og beløp** er angitt i feltet **Tilpass samlet pris**.
 13. I feltet **Vis ikon for totalprissamsvar** velger du når et ikon skal vises hvis et avvik for fakturakontroll overskrider toleransen for netto enhetspris. Ikonet kan vises når et positivt avvik overskrider toleransen, eller når enten et positivt eller et negativt avvik overskrider toleransen.
 Toleransen er for eksempel 5 prosent, og linjeprissummen, basert på bestillingen, er 10,00. Derfor vises et ikon for prissamsvar hvis linjeprissummen på fakturaen overskrider 10,50. Hvis du velger **Hvis større eller mindre enn toleransen**, vises også et ikon hvis linjeprissummen på fakturaen er mindre enn 9,50.
-13. Angi samsvar av tillegg.
+13. Angi **Samsvar av tillegg**.
 14. Når du skal samsvare faktiske tillegg med forventede tillegg basert på opplysningene i bestillingen, merker du av for **Samsvar tillegg**.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Definere toleranseprosenter for enhetspris
@@ -75,7 +75,7 @@ Negative prisavvik er som standard tillatt. Du kan imidlertid ikke angi et negat
 
 ## <a name="set-up-matching-policy-override"></a>Konfigurere overstyring av kontrollpolicy
 
-Gå til **Leverandører > Oppsett > Fakturakontrolloppsett > Kontrollpolicy** for å definere standardoppføringen for Kontrollpolicy-feltet for linjer i bestillingsskjemaet. Dette er en valgfri konfigurasjon. Bruk dette skjemaet til å definere toveis eller treveis kontroll for varer, leverandører eller kombinasjoner av vare og leverandør. Disse oppføringene gjør at du kan definere mer detaljerte kontrollpolicyer enn kontrollpolicyen for juridisk enhet du definerte på siden **Leverandørparametere**. Standard linjekontrollpolicy for juridisk enhet gjelder for alle varer og leverandører, unntatt de som det er angitt en annen linjekontrollpolicy for på denne siden.
+Gå til **Leverandører > Oppsett > Fakturakontrolloppsett > Kontrollpolicy** for å definere standardoppføringen for **Kontrollpolicy**-feltet for linjer på **Bestilling**-siden. Dette er en valgfri konfigurasjon. Bruk denne siden til å definere toveis eller treveis samsvar for varer, leverandører eller kombinasjoner av vare og leverandør. Disse oppføringene gjør at du kan definere mer detaljerte kontrollpolicyer enn kontrollpolicyen for juridisk enhet du definerte på siden **Leverandørparametere**. Standard linjekontrollpolicy for juridisk enhet gjelder for alle varer og leverandører, unntatt de som det er angitt en annen linjekontrollpolicy for på denne siden.
 
 På denne siden velger du **Kontrollpolicynivå**. Velg nivået i kontrollpolicyhierarkiet du vil angi linjekontrollpolicyer for.
 

@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f146eca39ef3aa690eb69283371d40c5c6d439bd868f1aa4763ffa76c8f682
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eaf48306607b27c70359e0d0faee4c92f4b82cac
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757055"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182610"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Opprette konsolideringsgrupper og flere konsolideringskontoer
 
@@ -28,21 +28,20 @@ Denne fremgangsmåten viser hvordan du oppretter en konsolideringskontogruppe og
 
 
 ## <a name="create-a-consolidation-account-group"></a>Opprette en konsernkontogruppe
-1. Gå til Økonomimodul > Kontoplan > Kontoer > Konsolideringskontogrupper.
-2. Klikk Ny.
-3. Angi en unik identifikator for konsolideringskontogruppen i feltet Konsolideringskontogruppe.
-4. Skriv inn en verdi i Navn-feltet.
+1. Gå til **Økonomimodul > Kontoplan > Kontoer > Konsolideringskontogrupper**.
+2. Klikk på **Ny**.
+3. Angi en unik identifikator for konsolideringskontogruppen i feltet **Konsolideringskontogruppe**.
+4. Skriv inn en verdi i **Navn**-feltet.
 
 ## <a name="add-accounts-to-consolidation-account-group"></a>Legge til kontoer i konsolideringskontogruppe
-1. Lukk siden.
-2. Gå til Økonomimodul > Kontoplan > Kontoer > Flere konsolideringskontoer.
-3. Klikk Ny.
-4. Klikk rullegardinknappen i feltet Hovedkonto for å åpne oppslaget.
-5. Velg hovedkontoen som du vil tilordne, i listen.
-6. Klikk rullegardinknappen i feltet Konsolideringskontogruppe for å åpne oppslaget.
-7. Klikk konsolideringskontogruppen i listen.
-8. Angi en verdi i Konsolideringskonto-feltet.
-9. Skriv inn en verdi i feltet Navn på konsolideringskonto.
+1. Gå til Økonomimodul > Kontoplan > Kontoer > Flere konsolideringskontoer.
+2. Klikk på Ny.
+3. Klikk på rullegardinknappen i feltet Hovedkonto for å åpne oppslaget.
+4. Velg hovedkontoen som du vil tilordne, i listen.
+5. Klikk på rullegardinknappen i feltet Konsolideringskontogruppe for å åpne oppslaget.
+6. Klikk på konsolideringskontogruppen i listen.
+7. Angi en verdi i Konsolideringskonto-feltet.
+8. Skriv inn en verdi i feltet Navn på konsolideringskonto.
 
 
 

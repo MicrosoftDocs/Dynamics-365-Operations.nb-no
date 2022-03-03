@@ -2,7 +2,7 @@
 title: Mva-beregning på generelle journallinjer
 description: Dette emnet beskriver hvordan merverdiavgift beregnes for ulike kontotyper (leverandør, kunde, finans og prosjekt) på generelle journallinjer.
 author: EricWangChen
-ms.date: 04/22/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488317"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311960"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mva-beregning på generelle journallinjer
 [!include [banner](../includes/banner.md)]
@@ -77,19 +77,9 @@ Diagrammet nedenfor illustrerer regelen grafisk.
 
 ### <a name="account-type-is-customer"></a>Kontotype er Kunde
 
-Hvis et bilag har journallinje der kontotypen er **Kunde**, vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for kundekontoer.
+Hvis et bilag har en journallinje der kontotypen er **Kunde**, bruker alle journallinjene i bilaget samme mva-retning. 
 
-•   Hvis mva-koden er avgiftsfritak, er mva-retningen avgiftsfritt kjøp.
-
-•   Hvis mva-koden er Mva-transaksjoner innenfor EU, er mva-retningen innkommende merverdiavgift.
-
-•   Hvis mva-koden er snudd avregning, er mva-retningen innkommende merverdiavgift.
-
-I andre tilfeller er mva-retningen Utgående merverdiavgift.
-
-Diagrammet nedenfor illustrerer regelen grafisk.
-
-![Muligheter for avgiftsretning for kundekontoer.](media/Sales-Tax-Direction-Customer.jpg)
+Hvis mva-koden er avgiftsfritak, er mva-retningen Avgiftsfritt salg. I andre tilfeller er mva-retningen Utgående merverdiavgift.
 
 ### <a name="account-type-is-ledger"></a>Kontotype er Finans
 

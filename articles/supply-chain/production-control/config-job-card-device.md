@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777746"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103444"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobbkort for enheter
 
@@ -34,21 +34,19 @@ Noen få av innstillingene som er beskrevet i dette emnet, må være aktivert i 
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding som er lagt til jobbkortenheten (per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
-1. Aktiver automatisk generering av nummerskiltnummer ved ferdigrapportering i jobbkortenheten
+1. *Nummerskilt for ferdigmelding lagt til i jobbkortenheten*<br>(Fra og med Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
+1. *Aktiver automatisk generering av nummerskiltnummer ved ferdigrapportering i jobbkortenheten*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
 
 ### <a name="print-label"></a>Skriv ut etikett
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding som er lagt til jobbkortenheten (per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
-1. Skriv ut etikett fra jobbkortenhet
+1. *Nummerskilt for ferdigmelding lagt til i jobbkortenheten*<br>(Fra og med Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
+1. *Skriv ut etikett fra jobbkortenhet*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
 
 ### <a name="allow-locking-of-touch-screen"></a>Tillate låsing av berøringsskjerm
 
-Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Hvis du vil bruke den, må du aktivere følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres* i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="manage-your-device-configurations"></a>Administrere enhetskonfigurasjoner
 

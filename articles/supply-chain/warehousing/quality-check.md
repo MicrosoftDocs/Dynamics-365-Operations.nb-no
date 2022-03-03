@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a3a565ea566dd2bf4d8c793b3340c78c9f4ed0a2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0848eeb2ad073915ad90d2fd2a4a91f0f420c0ab
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565309"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103294"
 ---
 # <a name="quality-check"></a>Kvalitetskontroll
 
@@ -39,12 +39,9 @@ Når du bruker denne funksjonen, skjer ankomsten og kvalitetskontrollen på føl
 
 Denne prosessen kan også konfigureres slik at alle skannede nummerskilt sendes umiddelbart til kvalitetskontrollokasjonen.
 
-## <a name="turn-on-the-quality-check-feature"></a>Aktiver funksjonen Kvalitetskontroll
+## <a name="turn-the-quality-check-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Kvalitetskontroll
 
-Før du kan bruke funksjonen *Kvalitetskontroll*, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Kvalitetskontroll*
+Du må aktivere funksjonen *Kvalitetskontroll* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Kvalitetskontroll* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Konfigurer funksjonen for eksempelscenarioet
 

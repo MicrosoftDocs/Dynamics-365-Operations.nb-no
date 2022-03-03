@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0389db98c00f8ad98a9cf919a21110c31206949199f06328782d25e9c415b315
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d30dd5ba29ee34784921047627642644c0c4ab2
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762169"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182485"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generere og postere gjentakende fritekstfakturaer
 
@@ -30,17 +30,17 @@ Gjentakende fakturaer brukes til å fakturere kunder regelmessig for det samme b
 ## <a name="generate-recurring-invoices"></a>Generer gjentakende fakturaer
 
 ## <a name="post-recurring-invoices"></a>Poster gjentakende fakturaer
-1. Gå til Kunder > Fakturaer > Gjentakende fakturaer > Poster gjentakende fakturaer.
+1. Gå til **Kunder > Fakturaer > Gjentakende fakturaer > Poster gjentakende fakturaer**.
     * Bruk denne siden til å vise og skrive ut gjentakende fakturaer som allerede er generert.  
-2. Klikk koblingen i den valgte raden i listen.
+2. Klikk på koblingen i den valgte raden i listen.
     * Velg den gjentakende fakturagruppen.  
-3. Klikk Totaler.
+3. Klikk på **Totaler**.
     * Kontroller totaler for den gjentakende fakturagruppen.  
-4. Klikk Lukk.
-    * Hver linje nedenfor er en gjentakende fritekstfaktura. Du kan velge en linje og klikke Detaljer-knappen for å vise detaljer for fritekstfaktura.  
-5. Klikk Valider.
+4. Klikk på **Lukk**.
+    * Hver linje nedenfor er en gjentakende fritekstfaktura. Du kan velge en linje og klikke på **Detaljer**-knappen for å vise detaljer for fritekstfaktura.  
+5. Klikk på **Valider**.
     * Kontroller at de valgte fakturaene ikke inneholder feil, men ikke poster fakturaene.  
-6. Klikk Poster.
+6. Klikk på **Poster**.
     * Poster de valgte fakturaene.  
 
 

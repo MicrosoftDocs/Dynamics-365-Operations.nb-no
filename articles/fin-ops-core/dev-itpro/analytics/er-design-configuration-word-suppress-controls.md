@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: cfabd6f544dca6f48448da4ef9ff8383c6583f8488a718a7c971ff7b39c1f2cb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737981"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323931"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Skjule Word-innholdskontroller i genererte rapporter
 
 [!include [banner](../includes/banner.md)]
 
-Hvis du vil generere rapporter som Microsoft Word-dokumenter, må du utforme en mal for rapportene som et Word-dokument. Denne malen må inneholde Word-innholdskontroller som plassholdere for data som fylles ut ved kjøretid. Hvis du vil bruke Word-dokumentet som opprettes som en mal for rapportene dine, kan du [konfigurere](er-design-configuration-word.md) en ny løsning for [Elektronisk rapportering (ER)](general-electronic-reporting.md)[løsning](er-quick-start1-new-solution.md). Løsningen må inneholde en ER-[konfigurasjon](general-electronic-reporting.md#Configuration) som inneholder en komponent for ER-[format](general-electronic-reporting.md#FormatComponentOutbound). Dette ER-formatet må konfigureres til å bruke den utformede malen for rapportgenerering.
+Hvis du vil generere rapporter som Microsoft Word-dokumenter, må du utforme en mal for rapportene som et Word-dokument. Denne malen må inneholde Word-innholdskontroller som plassholdere for data som fylles ut ved kjøretid. Hvis du vil bruke Word-dokumentet som opprettes som en mal for rapportene dine, kan du [konfigurere](er-design-configuration-word.md) en ny løsning for [Elektronisk rapportering (ER)](general-electronic-reporting.md)[løsning](er-quick-start1-new-solution.md). Løsningen må inneholde en ER-[konfigurasjon](general-electronic-reporting.md#Configuration) som inneholder en komponent for ER-format. Dette ER-formatet må konfigureres til å bruke den utformede malen for rapportgenerering.
 
 I versjon 10.0.6 og senere av Dynamics 365 Finance kan du konfigurere formler i ER-formatet for å vise informasjon om enkelte Word-innholdskontroller i genererte dokumenter.
 

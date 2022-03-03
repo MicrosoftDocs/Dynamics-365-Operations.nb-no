@@ -2,11 +2,9 @@
 title: Behandle flere avledede tilordninger for én modellrot
 description: Dette emnet beskriver hvordan du kan administrere flere avledede tilordninger som ble konfigurert for én modellrot.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4826115"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324118"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Behandle flere avledede tilordninger for én modellrot
 
 [!include [banner](../includes/banner.md)]
 
-En komponent i en data[modell](general-electronic-reporting.md#data-model-and-model-mapping-components) for [elektronisk rapportering (ER)](general-electronic-reporting.md) brukes i alle konfigurerte komponenter for ER-[formater](general-electronic-reporting.md#FormatComponentOutbound) som datakilde for å generere utgående dokumenter. Hvis du vil beskrive ett bedriftsdomene, konfigurerer du en datamodellkomponent som har mange rotdefinisjoner. 
+En datamodellkomponent for [elektronisk rapportering (ER)](general-electronic-reporting.md) brukes i alle konfigurerte komponenter for ER-format som datakilde for å generere utgående dokumenter. Hvis du vil beskrive ett bedriftsdomene, konfigurerer du en datamodellkomponent som har mange rotdefinisjoner. 
 
-Hver rotdefinisjon lar deg representere data i dette domenet på måten som passer best for bestemte rapporteringsformål. For hver rotdefinisjon kan du konfigurere en komponent for ER-[modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components) som en implementering av datamodellen som gjelder spesifikt for Microsoft Dynamics 365 Finance. På denne måten beskriver du hvordan datamodellen skal fylles ut ved kjøretid.
+Hver rotdefinisjon lar deg representere data i dette domenet på måten som passer best for bestemte rapporteringsformål. For hver rotdefinisjon kan du konfigurere en komponent for ER-modelltilordning som en implementering av datamodellen som gjelder spesifikt for Microsoft Dynamics 365 Finance. På denne måten beskriver du hvordan datamodellen skal fylles ut ved kjøretid.
 
 Komponenter for ER-modelltilordning kan være i [konfigurasjoner](general-electronic-reporting.md#Configuration) for ER-datamodell og konfigurasjoner for ER-modelltilordning. Én ER-konfigurasjon kan inneholde mange tilordningskomponenter, der hver enkelt er konfigurert for én rotdefinisjon. Én ER-konfigurasjon kan også inneholde bare én tilordningskomponent som er konfigurert for én rotdefinisjon.
 
@@ -57,7 +55,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av
 2. På siden **Lokaliseringskonfigurasjoner**, i delen **Konfigurasjoner**, velger du flisen **Rapporteringskonfigurasjoner**.
 3. I konfigurasjonstreet i venstre rute på **Konfigurasjoner**-siden utvider du **Fakturamodell**.
 
-    ![Se gjennom de importerte konfigurasjoner på Konfigurasjoner-siden](./media/er-multiple-model-mappings-image1.png)
+    ![Se gjennom de importerte konfigurasjoner på Konfigurasjoner-siden.](./media/er-multiple-model-mappings-image1.png)
 
 4. Se gjennom formatet **Fritekstfaktura (Excel)**:
 
@@ -68,7 +66,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av
     
        Det gjeldende ER-formatet er konfigurert slik at det bruker rotdefinisjonen **InvoiceCustomer** for **Fakturamodell**. Når dette formatet kjøres og datakilden **Modell** kalles opp, brukes modelltilordningen som er konfigurert for rotdefinisjonen **InvoiceCustomer**, til å få tilgang til programdata og fylle ut datamodellen.
 
-        ![Se gjennom modelldatakilden på Formatutforming-siden](./media/er-multiple-model-mappings-image2.png)
+        ![Se gjennom modelldatakilden på Formatutforming-siden.](./media/er-multiple-model-mappings-image2.png)
 
     6. Lukk **Formatutforming**-siden.
 
@@ -81,7 +79,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av
         + Modelltilordningen **Kundefaktura** er konfigurert for rotdefinisjonen **InvoiceCustomer** for **Fakturamodell**. Når ER-formatet **Fritekstfaktura (Excel)** kjøres, kan derfor modelltilordningen **Kundefaktura** for denne ER-konfigurasjonen velges for å få tilgang til programdata og fylle ut datamodellen.
         + Modelltilordningen **Prosjektfaktura** er konfigurert for rotdefinisjonen **InvoiceProject** for **Fakturamodell**. Når ER-formatet **Prosjektfaktura (Excel)** kjøres, kan derfor modelltilordningen **Prosjektfaktura** for denne ER-konfigurasjonen velges for å få tilgang til programdata og fylle ut datamodellen.
 
-        ![Fakturamodelltilordning på siden Modell til datakildetilordning](./media/er-multiple-model-mappings-image3.png)
+        ![Fakturamodelltilordning på siden Modell til datakildetilordning.](./media/er-multiple-model-mappings-image3.png)
 
     4. Lukk siden **Tilordning av modell til datakilde**.
     5. I hurtigfanen **Versjoner** velger du **Slett** for å slette alle versjonene av denne ER-konfigurasjonen som er nyere enn versjon 240.175.
@@ -92,7 +90,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av
     2. Velg **Utforming** i handlingsruten.
     3. Legg merke til at den gjeldende konfigurasjonen for ER-modelltilordning på siden **Modell til datakildetilordning** inneholder modelltilordningen **InvoiceProject**, og at denne modelltilordningen er konfigurert for rotdefinisjonen **InvoiceProject** for **Fakturamodell**. Når ER-formatet **Prosjektfaktura (Excel)** kjøres, velger du modelltilordningen **InvoiceProject** for denne ER-konfigurasjonen for å få tilgang til programdata og fylle ut datamodellen.
 
-        ![Modelltilordning for prosjektfaktura på siden Modell til datakildetilordning](./media/er-multiple-model-mappings-image4.png)
+        ![Modelltilordning for prosjektfaktura på siden Modell til datakildetilordning.](./media/er-multiple-model-mappings-image4.png)
 
     4. Lukk siden **Tilordning av modell til datakilde**.
     5. I hurtigfanen **Versjoner** velger du **Slett** for å slette alle versjonene av denne ER-konfigurasjonen som er nyere enn versjon 226.35.
@@ -117,7 +115,7 @@ Denne delen beskriver hvordan du [tilpasser](er-quick-start3-customize-report.md
 
 7. Velg **Utforming** i handlingsruten for å se gjennom modelltilordningene for denne konfigurasjonen.
 
-    ![Se gjennom fakturamodelltilordningene på siden Modell til datakildetilordning](./media/er-multiple-model-mappings-image5.png)
+    ![Se gjennom fakturamodelltilordningene på siden Modell til datakildetilordning.](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > Du kan nå åpne enhver av komponentene for ER-modelltilordning for denne ER-konfigurasjonen i utformingen for å konfigurere den egendefinerte logikken. Hvis du vil ha mer informasjon, kan du se [Tilpasse modelltilordningskonfigurasjonen](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -128,7 +126,7 @@ Du har nå konfigurasjonene **Fakturamodelltilordning** og **Fakturamodelltilord
  
 > Det finnes flere modelltilordninger for datamodellen \<model name\> ( \<root descriptor\>) i konfigurasjonene \<configuration names separated by commas\>. Angi én av konfigurasjonene som standard.
 
-![Åpne formatet for redigering på Konfigurasjoner-siden](./media/er-multiple-model-mappings-image6.gif)
+![Åpne formatet for redigering på Konfigurasjoner-siden.](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>Tilpasse konfigurasjonen for Modelltilordning for prosjektfaktura (RDP)
 
@@ -140,7 +138,7 @@ Du har nå konfigurasjonene **Fakturamodelltilordning** og **Fakturamodelltilord
 6. Sett alternativet **Kjør utkast** til **Ja** for konfigurasjonen **Modelltilordning for prosjektfaktura (Litware)** som for øyeblikket er valgt i konfigurasjonstreet.
 7. Velg **Utforming** i handlingsruten for å se gjennom modelltilordningene for denne konfigurasjonen.
 
-    ![Se gjennom de tilpassede modelltilordningene for prosjektfaktura på siden Modell til datakildetilordning](./media/er-multiple-model-mappings-image7.png)
+    ![Se gjennom de tilpassede modelltilordningene for prosjektfaktura på siden Modell til datakildetilordning.](./media/er-multiple-model-mappings-image7.png)
 
 8. Lukk siden **Tilordning av modell til datakilde**.
 
@@ -151,7 +149,7 @@ Du har nå konfigurasjonene **Fakturamodelltilordning**, **Modelltilordning for 
 1. Velg **Fakturamodelltilordning (Litware)** i konfigurasjonstreet i venstre rute på **Konfigurasjoner**-siden.
 2. Sett alternativet **Standard for modelltilordning** til **Ja**.
 
-    ![Angi modelltilordningen som standard modelltilordning på Konfigurasjoner-siden](./media/er-multiple-model-mappings-image8.png)
+    ![Angi modelltilordningen som standard modelltilordning på Konfigurasjoner-siden.](./media/er-multiple-model-mappings-image8.png)
 
     På grunn av denne innstillingen brukes modelltilordningen **Kundefakturakopi** når du kjører **Fritekstfaktura (Excel)**, eller når du redigerer eller validerer den. Modelltilordningen **Kundefaktura** fra konfigurasjonen **Fakturamodelltilordning** ignoreres.
 
@@ -169,7 +167,7 @@ Du har nå konfigurasjonene **Fakturamodelltilordning**, **Modelltilordning for 
 5. På siden **Modell til datakildetilordning** velger du **Rediger** for å gjøre siden redigerbar etter behov.
 6. Velg modelltilordningen **Prosjektfakturakopi**, og merk deretter av for **Er slettet** for den.
 
-    ![Angi modelltilordningen som virtuelt slettet på siden Modell til datakildetilordning](./media/er-multiple-model-mappings-image9.png)
+    ![Angi modelltilordningen som virtuelt slettet på siden Modell til datakildetilordning.](./media/er-multiple-model-mappings-image9.png)
 
     På grunn av denne innstillingen behandles konfigurasjonen **Fakturamodelltilordning (Litware)** som om den ikke har noen modelltilordning for rotdefinisjonen **InvoiceProject**. Modelltilordningen **InvoiceProject Copy** utstedes som standard. Konfigurasjonen **Modelltilordning for prosjektfaktura (Litware)**, som inneholder denne modelltilordningen, er merket som standardkonfigurasjon. Siden den er merket som standard, har den en høyere prioritet enn modelltilordningen **InvoiceProject** fra konfigurasjonen **Modelltilordning for prosjektfaktura (RDP)**.
 
@@ -182,3 +180,6 @@ Modelltilordningen **InvoiceProject Copy** i konfigurasjonen **Modelltilordning 
 - [Administrere ER-modelltilordning i separate ER-konfigurasjoner](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurere modelltilordninger for landkontekstavhengig ER](er-country-dependent-model-mapping.md)
 - [Endringer i API-en for rammeverket for elektronisk rapportering](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

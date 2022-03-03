@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: d8bc4f0a981b75c1b65d51aa1d8fada9c2187e22
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921221"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323416"
 ---
 # <a name="credit-management-parameters-setup"></a>Oppsett av parametere for kredittbehandling
 
@@ -50,7 +50,8 @@ Du kan også definere antall løpedager før kredittreglene kontrolleres på nyt
 
 Hvis du ikke angir antall løpedager, blir kredittreglene kontrollert på hvert posteringstrinn som er definert for å kjøre kredittbehandlingsregler. Hvis du frigir salgsordren uten å postere og deretter kjører samme ordrebehandlingstrinn på nytt, blir kredittreglene kontrollert på nytt. En ordre settes for eksempel på vent etter en bekreftelse, og du frigir den enten med eller uten postering. I dette tilfellet vil ordren settes på vent igjen hvis du bekrefter den på nytt. Bruk løpedager hvis ordren skal gå videre til neste behandlingstrinn uten å settes på vent igjen.
 
-Du kan ikke angi løpedager for noen posteringskontrollpunkt, men ikke for andre. Du må definere alle posteringskontrollpunkt slik at de har løpedager, eller du må definere dem alle slik at de ikke har løpedager.
+> [!Note]
+> Hvis det er angitt en respittdag for ett posteringskontrollpunkt, må alle kontrollpunkter som er merket for postering, ha respittdager.
 
 - Merk av for **Postering** for å kjøre kredittbehandlingsreglene når posteringskontrollpunktet som vises på linjen, kjøres. Hvis du ikke merker av i avmerkingsboksen, kontrolleres reglene bare én gang under hele posteringsprosessen.
 - Hvis du merker av for **Postering**, angir du antall løpedager som skal gå før blokkeringsreglene kontrolleres på nytt. Du kan ikke legge til løpedager hvis avmerkingsboksen **Postering** ikke er merket.

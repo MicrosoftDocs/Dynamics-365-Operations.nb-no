@@ -2,22 +2,22 @@
 title: Oppsett for kredittbehandling
 description: Dette emnet beskriver oppsettet som kreves for kredittbehandling.
 author: JodiChristiansen
-ms.date: 09/04/2019
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b9e756b678786d2c5a8c5bb9e890ce988090c09
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753674"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182460"
 ---
 # <a name="credit-management-setup"></a>Oppsett for kredittbehandling 
 
@@ -39,7 +39,7 @@ Du kan sette en salgsordre på vent hvis betalingsbetingelsene for ordren ikke s
 
 Hvis rangeringene for betalingsbetingelsene er aktive, og hvis betalingsbetingelsene i ordren har høyere rangering enn standard betalingsvilkår for kunden, blir salgsordren satt på vent.
 
-Du kan definere rangeringer av betalingsbetingelser ved å gå til **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \>Ranger betalingsbetingelser**  
+Du kan definere rangeringer av betalingsbetingelser ved å gå til **Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Ranger betalingsbetingelser**.  
 
 ### <a name="ranking-settlement-discounts"></a>Rangere utligningsrabatter
 
@@ -86,7 +86,7 @@ Du kan opprette kontostatuser på **Kontostatuser**-siden (**Credit and collecti
 
 ## <a name="scoring-groups"></a>Poengberegningsgrupper
 
-Du kan definere poengberegningsgrupper for å definere risikofaktorer og kriteriene som brukes til å måle dem. Når informasjon om en kunde brukes på en poengberegningsgruppe, beregnes en poengsum for hver risikofaktor og brukes til å plassere kunden i en risikogruppe. Risikogruppen kan brukes til å identifisere kredittverdighet og beregne automatiske kredittgrenser.
+Du kan definere **Poengberegningsgrupper** for å definere risikofaktorer og kriteriene som brukes til å måle dem. Når informasjon om en kunde brukes på en poengberegningsgruppe, beregnes en poengsum for hver risikofaktor og brukes til å plassere kunden i en risikogruppe. Risikogruppen kan brukes til å identifisere kredittverdighet og beregne automatiske kredittgrenser.
 
 Du kan opprette poengberegningsgrupper på siden **Poengberegningsgrupper** (**Kreditt og innkreving \> Oppsett \> Kredittbehandlingsoppsett \> Risiko \> Poengberegningsgrupper**).
 

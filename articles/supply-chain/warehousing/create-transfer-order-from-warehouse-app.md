@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: cbaeb120032bf2239fd9a5bce39fd7936229b308
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777821"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102944"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Opprette overføringsordrer fra lagerappen
 
@@ -26,19 +26,14 @@ ms.locfileid: "7777821"
 
 Denne funksjonen lar lagerarbeidere opprette og behandle overføringsordrer direkte fra mobilappen Lagerstyring. Arbeideren begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen for å legge til nummerskilt i overføringsordren. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene.
 
-## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktiver overføringsordrene fra lagerappfunksjonen
+## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivere eller deaktivere denne funksjonen
 
 Før du kan bruke denne funksjonen, må den og forutsetningene være aktivert i systemet. Administratorer kan bruke siden for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis det er nødvendig.
 
-1. Først aktiverer du funksjonen [Behandle lagerapphendelser](warehouse-app-events.md), som er oppført i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) som:
-    - **Modul** – lagerstyring
-    - **Funksjonsnavn** – Behandle lagerapphendelser
-1. Deretter aktiverer du funksjonen *Opprett overføringsordrer fra lagerappen*, som er oppført som:
-    - **Modul** – lagerstyring
-    - **Funksjonsnavn** – Opprette og behandle overføringsordre fra lagerappen
-1. Hvis du vil automatisere behandlingen av de utgående forsendelsene, må du også aktivere funksjonen [Bekreft utgående forsendelser fra satsvise jobber](confirm-outbound-shipments-from-batch-jobs.md). Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Administratorer kan bruke siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere eller deaktivere den hvis det er nødvendig. Her vises funksjonen som:
-    - **Modul** – lagerstyring
-    - **Funksjonsnavn** – Bekreft utgående forsendelser fra satsvise jobber
+1. Aktiver følgende to funksjoner (i rekkefølge) i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Fra og med Supply Chain Management versjon 10.0.25 er begge disse funksjonene aktivert som standard.
+    1. *Behandle lagerapphendelser*
+    1. *Opprett og behandle overføringsordrer fra lagerappen*
+1. Hvis du vil automatisere behandlingen av utgående forsendelser, må du også aktivere funksjonen [Bekreft utgående forsendelser fra satsvise jobber](confirm-outbound-shipments-from-batch-jobs.md).
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Definere et menyelement for mobilenhet for å opprette overføringsordrer
 

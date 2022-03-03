@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: d860c2b9fe01231e8e47b085f93c79c5a7dc449e
-ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
+ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7941250"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323985"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsavhengige ER-mål
 
 [!include [banner](../includes/banner.md)]
 
-Du kan konfigurere [mål](electronic-reporting-destinations.md) for hver utdatakomponent (mappe eller fil) i en [konfigurasjon](general-electronic-reporting.md#Configuration) for et [ER](general-electronic-reporting.md)-[format](general-electronic-reporting.md#FormatComponentOutbound) (Elektronisk rapportering) som brukes til å generere et utgående dokument. Brukere som kjører et ER-format av denne typen og har nødvendige tilgangsrettigheter, kan også endre de konfigurerte målinnstillingene ved kjøretid.
+Du kan konfigurere [mål](electronic-reporting-destinations.md) for hver utdatakomponent (mappe eller fil) i en [konfigurasjon](general-electronic-reporting.md#Configuration) for et [ER-format (Elektronisk rapportering)](general-electronic-reporting.md) som brukes til å generere et utgående dokument. Brukere som kjører et ER-format av denne typen og har nødvendige tilgangsrettigheter, kan også endre de konfigurerte målinnstillingene ved kjøretid.
 
 I Microsoft Dynamics 365 Finance **versjon 10.0.17 og nyere** kan et ER-format kjøres ved å [klargjøre](er-apis-app10-0-17.md) en handlingskode som brukeren utfører ved å kjøre dette ER-formatet. I **Kunder**-modulen i innstillingene for utskriftsbehandling kan du for eksempel velge et ER-format som genererer et bestemt forretningsdokument, for eksempel en fritekstfaktura. Du kan deretter velge **Vis** for å forhåndsvise fakturaen eller **Skriv ut** for å sende den til en skriver. Hvis en brukerhandling sendes for det kjørende ER-formatet ved kjøretid, kan du konfigurere ulike ER-mål for ulike brukerhandlinger. Dette emnet beskriver hvordan du konfigurerer ER-mål for denne typen ER-format.
 

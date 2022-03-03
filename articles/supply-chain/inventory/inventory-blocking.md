@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b6169362c9e8cb3a9ace2f300dd9d80aa9cd085
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 606bc23f552b57d0f4e3fdad28d1144cdf43e5d5
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568885"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103544"
 ---
 # <a name="inventory-blocking"></a>Lagerblokkering
 
@@ -96,13 +96,11 @@ Når **Reserver bestilte varer** er deaktivert, kan ikke de forventede mottakene
 
 Legg merke til forskjellen i transaksjonsstatus og dimensjoner mellom de to tilfellene. Av denne grunnen anbefales det at du aktiverer alternativet **Reserver bestilte varer**.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
+### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Funksjonen Deaktiver forventede mottak fra kvalitetsordrer med utvalg fra blokkert beholdning
 
-### Disable expected receipts from quality orders that sample blocked inventory feature
+For å forenkle lagertransaksjonene i tilfeller der kvalitetsordrer med utvalg fra beholdning som er blokkert på grunn av beholdningsstatus, har systemet en funksjon som deaktiverer forventede mottak fra slike kvalitetsordrer. Siden det forventede mottaket blokkeres øyeblikkelig av blokkering av beholdningsstatus, reduseres ikke lagerbeholdning på grunn av denne endringen.
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
-
--->
+Denne funksjonen deaktivert som standard. Administratorer kan aktivere eller deaktivere den ved å søke etter funksjonen *Deaktiver forventede mottak fra kvalitetsordrer med utvalg fra blokkert beholdning* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

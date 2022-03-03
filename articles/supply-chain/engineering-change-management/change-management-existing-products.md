@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f0fba0a9234e5b7cb055f7b97578bff72f1d06ac
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571983"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103619"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktiver endringsstyring på eksisterende produkter
 
@@ -27,12 +27,9 @@ Dette emnet beskriver hvordan du kan aktivere endringsbehandling for eksisterend
 
 Når du aktiverer endringsbehandling for et eksisterende produkt, kan du opprette versjoner av produktet og spore endringer som gjøres i det gjennom hele produktets levetid. Derfor kan du spore disse endringene ved hjelp av endringsordrer. Hvis du vil aktivere endringsbehandling, må du konvertere de relevante produktene til *byggeteknikkvarer* (også omtalt som tekniske produkter). Byggeteknikkprodukter er produkter som er versjonsstyrt og administrert gjennom endringsadministrasjon. Det formidles en veiviser som leder deg gjennom konverteringsprosessen.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funksjonen i systemet
+## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funksjonen
 
-Hvis du vil bruke denne funksjonen, må du utføre følgende oppgaver:
-
-1. Aktiver funksjonen for endringsbehandling i ingeniørvirksomhet og konfigurasjonsnøkkelen som beskrevet i [Oversikt over styring av teknisk endring](product-engineering-overview.md).
-1. Aktiver funksjonen *Aktiver endringsbehandling for eksisterende produkter* i funksjonsstyring. Hvis du vil ha mer informasjon, kan du se [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Funksjonaliteten som beskrives i dette emnet, krever at funksjonene *Behandling av teknisk endring* og *Aktiver endringsstyring på eksisterende produkter* er aktivert for systemet. Hvis du vil ha mer informasjon om hvordan du aktiverer eller deaktiverer disse funksjonene, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Begrensninger og avmålinger
 
