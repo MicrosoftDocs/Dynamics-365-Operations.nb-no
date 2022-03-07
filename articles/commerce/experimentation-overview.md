@@ -2,28 +2,24 @@
 title: Eksperimentering i Dynamics 365 Commerce
 description: Eksperimentering gjør det mulig å opprette, redigere og administrere sideoppsett og innholdsbehandling i områdebygger. Støtte for ende-til-ende-eksperimentering er aktivert for e-handelssider og enheter på en side.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4414783"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986547"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimentering i Dynamics 365 Commerce
 Bruk eksperimentering i Dynamics 365 Commerce for å validere hypoteser om effektiviteten til dine e-handelssider og ta avgjørelser med datadrevet selvtillit. Commerce støtter A/B-testing for sider, moduler og fragmenter, og lar deg måle virkningen av foreslåtte endringer på nettstedet ditt.
@@ -42,7 +38,7 @@ Du kan opprette, redigere og behandle side- og innholdsbehandling, kalt **varias
 ## <a name="experimentation-lifecycle"></a>Livssyklus for eksperimentering
 Konfigurasjon av et eksperiment, oppretting av variasjoner og kjøring av et eksperiment er en gjentakende prosess. Diagrammet nedenfor illustrerer livssyklusen for eksperimentering i Commerce og tredjepartstjenesten. 
 
-[ ![Livssyklus for eksperimentering](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Livssyklus for eksperimentering.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Hvis du vil finne ut mer om hvert trinn i eksperimenteringsprosessen, kan du se emnene nedenfor.
 - [Identifisere en hypotese og fastslå måledataene for et eksperiment](experimentation-identify.md)
@@ -57,3 +53,6 @@ Hvis du vil finne ut mer om hvert trinn i eksperimenteringsprosessen, kan du se 
 
 ## <a name="next-step"></a>Neste trinn
 [Identifisere en hypotese og fastslå suksessmåledataene for et eksperiment](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

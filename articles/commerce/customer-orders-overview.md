@@ -2,29 +2,28 @@
 title: Kundeordrer på salgssted (POS)
 description: Dette emnet gir informasjon om kundeordrer på salgssted (POS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 author: josaw1
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414630"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349632"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer på salgssted (POS)
 
@@ -45,29 +44,30 @@ Før du prøver å bruke kundebestillingsfunksjonalitet i POS, må du sørge for
 
 ### <a name="configure-modes-of-delivery"></a>Konfigurere leveringsmåter
 
-Hvis du vil bruke kundeordrer, må du konfigurere leveringsmåter som butikkanalen kan bruke. Du må definere minst én leveringsmåte som kan brukes når ordrelinjer sendes til en kunde fra en butikk. Du må også definere minst én hentemåte som kan brukes når ordrelinjer hentes fra butikken. Leveringsmåter defineres på siden **Leveringsmåter** i Commerce Headquarters. Hvis du vil ha mer informasjon om hvordan du konfigurerer leveringsmåter for handelskanaler, kan du se [Definere leveringsmåter](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+Hvis du vil bruke kundeordrer, må du konfigurere leveringsmåter som butikkanalen kan bruke. Du må definere minst én leveringsmåte som kan brukes når ordrelinjer sendes til en kunde fra en butikk. Du må også definere minst én hentemåte som kan brukes når ordrelinjer hentes fra butikken. Leveringsmåter defineres på siden **Leveringsmåter** i Commerce Headquarters. Hvis du vil ha mer informasjon om hvordan du konfigurerer leveringsmåter for handelskanaler, kan du se [Definere leveringsmåter](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Siden leveringsmåter](media/customer-order-modes-of-delivery.png)
+![Siden leveringsmåter.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Definere oppfyllelsesgrupper
 
-Noen butikker eller lagerlokasjoner vil kanskje ikke kunne innfri kundeordrer. Ved å konfigurere oppfyllelsesgrupper kan en organisasjon angi hvilke butikker og lagerlokasjoner som skal vises som alternativer for brukere som oppretter kundeordrer i POS. Oppfyllelsesgrupper konfigureres på siden **Oppfyllelsesgrupper**. Organisasjoner kan opprette så mange oppfyllelsesgrupper de krever. Når en oppfyllelsesgruppe er definert, er den koblet til en butikk ved hjelp av en knapp i kategorien **Oppsett** i handlingsruten på siden **Butikker**.
+Noen butikker eller lagerlokasjoner vil kanskje ikke kunne innfri kundeordrer. Ved å konfigurere oppfyllelsesgrupper kan en organisasjon angi hvilke butikker og lagerlokasjoner som skal vises som alternativer for brukere som oppretter kundeordrer i POS. Oppfyllelsesgrupper konfigureres på siden **Oppfyllelsesgrupper**. Organisasjoner kan opprette så mange oppfyllelsesgrupper de krever. Når en oppfyllelsesgruppe er definert, kobles den til en butikk ved å velge **Gruppetilordning for oppfyllelse** i kategorien **Oppsett** i handlingsruten på siden **Butikker**.
 
-I Commerce versjon 10.0.12 og nyere kan organisasjoner definere om lager- eller butikkombinasjonene som er definert i oppfyllelsesgrupper, kan brukes til forsendelse, henting eller begge deler. Derfor har butikken mer fleksibilitet for å styre lager- og butikkalternativene som vises for brukere som oppretter en ordre for henting i forhold til en ordre for forsendelse. Hvis du vil dra nytte av disse konfigurasjonsalternativene, må du aktivere funksjonen **Mulighet til å angi lokasjoner, som Forsendelse eller Henting, som er aktivert i en oppfyllelsesgruppe**. Hvis et lager som er knyttet til en oppfyllelsesgruppe, ikke er en butikk, kan det bare konfigureres som forsendelseslokasjon. Det kan ikke brukes når ordrer for henting er konfigurert i POS.
+I Commerce versjon 10.0.12 og nyere kan organisasjoner definere om lager- eller lager og butikk-kombinasjonene som er definert i oppfyllelsesgrupper, kan brukes til forsendelse, henting eller begge deler. Dette gir ekstra fleksibilitet for virksomheten, slik at du kan bestemme hvilke lagre som kan velges ved oppretting av en kundeordre for varer som skal sendes, i forhold til hvilke butikker som kan velges ved oppretting av en kundeordre for plukking av varer. For å bruke disse konfigurasjonsalternativene, aktiverer du funksjonen **Mulighet til å angi lokasjoner, som Forsendelse eller Henting, som er aktivert i en oppfyllelsesgruppe**. Hvis et lager som er knyttet til en oppfyllelsesgruppe, ikke er en butikk, kan det bare konfigureres som forsendelseslokasjon. Det kan ikke brukes når ordrer for henting er konfigurert i POS.
 
-![Siden oppfyllelsesgrupper](media/customer-order-fulfillment-group.png)
+![Siden oppfyllelsesgrupper.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Konfigurere kanalinnstillinger
 
 Når du arbeider med kundeordrer i POS, må du vurdere noen av innstillingene til butikkanalen. Disse innstillingene finner du på siden **Butikker** i Commerce Headquarters.
 
-- **Lager** – Dette feltet angir lageret som brukes til å oppfylle ordrer som er konfigurert for forsendelse fra butikken.
+- **Lager** – Dette feltet angir lageret som skal brukes ved avvikling av lager for kontantoppdretting og hentingsordrer for kunder som er knyttet til denne butikken. Den beste fremgangsmåten er å oppmuntre til bruk av unike lagre for hver butikkkanal, for å unngå konflikt mellom forretningslogikkproblemer i hele butikkene.
+- **Forsendelseslager** – Dette feltet angir lageret som skal brukes ved avvik i lageret for kundeordrer som skal sendes fra den valgte butikken. Hvis funksjonen **Mulighet til å angi lokasjoner, som Forsendelse eller Plukking, som er aktivert i en oppfyllelsesgruppe**, er aktivert i miljøet ditt, kan POS-brukere velge et bestemt lager som skal sendes fra i POS, i stedet for å velge en butikk det skal sendes fra. Når denne funksjonen er aktivert, er derfor ikke forsendelseslageret lenger i bruk, siden brukeren vil plukke det bestemte lageret for å levere ordren fra når ordren opprettes.
 - **Tilordning for oppfyllelsesgruppe** – Velg denne knappen (i kategorien **Oppsett** i handlingsruten) for å koble til oppfyllelsesgruppene det refereres til, for å vise alternativer for hentelokasjoner eller forsendelsesopprinnelse når kundeordrer opprettes i POS.
 - **Bruk destinasjonsbasert avgift** – Dette alternativet angir om forsendelsesadressen brukes til å fastslå avgiftsgruppen som er brukt på ordrelinjer som er sendt til kundens adresse.
 - **Bruk kundebasert avgift** – Dette alternativet angir om mva-gruppen som er definert for kundens leveringsadresse, brukes til å definere avgift for kundeordrer som opprettes i POS for levering til kundens hjem.
 
-![Butikkanaloppsett på siden Butikker](media/customer-order-all-stores.png)
+![Butikkanaloppsett på siden Butikker.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Definere kundeordreparametere
 
@@ -80,26 +80,29 @@ Før du prøver å opprette kundeordrer i POS, må du konfigurere de aktuelle pa
 - **Prosent for annulleringstillegg** – Hvis et tillegg skal brukes når en kundebestilling annulleres, angir du beløpet for det tillegget.
 - **Kode for annulleringstillegg** – Angi kundetilleggskoden som skal brukes når det blir brukt et annulleringstillegg på annullerte kundeordrer i POS. Tilleggskoden definerer den økonomiske posteringslogikken for annulleringstillegget.
 - **Kode for forsendelsestillegg** – Hvis alternativet **Bruk avanserte automatiske tillegg** er satt til **Ja**, har denne parameterinnstillingen ingen virkning. Hvis alternativet er satt til **Nei**, blir brukerne bedt om å angi et forsendelsestillegg manuelt når de oppretter kundeordrer i POS. Bruk denne parameteren til å tilordne en kundetilleggskode som skal brukes for ordrer når brukere angir et forsendelsestillegg. Tilleggskoden definerer den økonomiske posteringslogikken for forsendelsestillegget.
-- **Bruk avanserte automatiske tillegg** – Sett dette alternativet til **Ja** for å bruke systemberegnede automatiske tillegg når kundeordrer opprettes i POS. Disse automatiske tilleggene kan brukes til å beregne forsendelsestillegg eller andre ordre- eller varespesifikke tillegg. Hvis du vil ha mer informasjon om hvordan du konfigurerer og bruker avanserte automatiske tillegg, kan du se [Avanserte automatiske tillegg for omnikanal](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
+- **Bruk avanserte automatiske tillegg** – Sett dette alternativet til **Ja** for å bruke systemberegnede automatiske tillegg når kundeordrer opprettes i POS. Disse automatiske tilleggene kan brukes til å beregne forsendelsestillegg eller andre ordre- eller varespesifikke tillegg. Hvis du vil ha mer informasjon om hvordan du konfigurerer og bruker avanserte automatiske tillegg, kan du se [Avanserte automatiske tillegg for omnikanal](./omni-auto-charges.md).
 
-![Kategorien kundeordrer på siden Handelsparametere](media/customer-order-parameters.png)
+![Kategorien kundeordrer på siden Handelsparametere.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Oppdatere transaksjonsskjermoppsett i POS
 
-Kontroller at [skjermoppsettet](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) i POS er konfigurert til å støtte oppretting og behandling av kundeordrer, og at alle påkrevde POS-operasjoner er konfigurert. Her er noen av POS-operasjonene som anbefales for å støtte oppretting og administrasjon av kundeordrer på riktig måte:
+Kontroller at [skjermoppsettet](./pos-screen-layouts.md) i POS er konfigurert til å støtte oppretting og behandling av kundeordrer, og at alle påkrevde POS-operasjoner er konfigurert. Her er noen av POS-operasjonene som anbefales for å støtte oppretting og administrasjon av kundeordrer på riktig måte:
 - **Send alle produkter** – Denne operasjonen brukes til å angi at alle linjene i transaksjonskurven skal sendes til et mål.
 - **Send alle valgte produkter** – Denne operasjonen brukes til å angi at valgte linjer i transaksjonskurven skal sendes til et mål.
 - **Hent alle produkter** – Denne operasjonen brukes til å angi at alle linjene i transaksjonskurven blir hentet fra en valgt butikklokasjon.
 - **Hent alle valgte produkter** – Denne operasjonen brukes til å angi at valgre linjer i transaksjonskurven blir hentet fra en valgt butikklokasjon.
 - **Utlever alle produkter** – Denne operasjonen brukes til å angi at alle linjene i transaksjonskurven skal utføres. Hvis denne operasjonen brukes i POS, blir kundeordren konvertert til en hentesalgstransaksjon.
-- **Utlever valgte produkter** – Denne operasjonen brukes til å angi at de valgte linjene i transaksjonskurven skal utføres av kunden på kjøpstidspunktet. Denne operasjonen er bare nyttig i et scenario for [hybrid ordre](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders).
+- **Utlever valgte produkter** – Denne operasjonen brukes til å angi at de valgte linjene i transaksjonskurven skal utføres av kunden på kjøpstidspunktet. Denne operasjonen er bare nyttig i et scenario for [hybrid ordre](./hybrid-customer-orders.md).
 - **Tilbakekall ordre** – Denne operasjonen brukes til å søke etter og hente kundeordrer, slik at POS-brukere kan redigere, annullere eller utføre oppgaver knyttet til oppfyllelse i dem etter behov.
 - **Endre leveringsmåte** – Denne operasjonen kan brukes til raskt å endre leveringsmåten for linjer som allerede er konfigurert for forsendelse, uten at brukerne må gå gjennom flyten Lever alle produkter eller Send valgte produkter på nytt.
 - **Overstyring av innbetaling** – Denne operasjonen kan brukes til å endre innbetalingsbeløpet som kunden skal betale for den valgte kundeordren.
 
-![Operasjoner på transaksjonsskjermbildet i POS](media/customer-order-screen-layout.png)
+![Operasjoner på transaksjonsskjermbildet i POS.](media/customer-order-screen-layout.png)
 
-## <a name="working-with-customer-orders-in-pos"></a>Arbeide med kundeordrer i POS
+## <a name="work-with-customer-orders-in-pos"></a>Arbeide med kundeordrer på salgssted
+
+> [!NOTE]
+> Inntektsføringsfunksjonalitet støttes for øyeblikket ikke for bruk i Commerce-kanaler (e-commerce, salgssted, telefonsenter). Varer som konfigureres med inntektsføringen, skal ikke legges til i ordrer som opprettes i Commerce-kanaler. 
 
 ### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Opprette en kundeordre for produkter som skal leveres til kunden
 
@@ -118,7 +121,7 @@ Kontroller at [skjermoppsettet](https://docs.microsoft.com/dynamics365/commerce/
 2. Legg til produkter i handlevognen.
 3. Velg **Valgt for henting** eller **Hent alle** for å starte ordrehentingskonfigurasjonen.
 4. Velg butikklokasjonen der kunden skal hente de valgte varene.
-5. Velg en hentedato.
+5. Velg en dato for når varen skal hentes.
 6. Bruk betalingsfunksjonene til å betale for alle beregnede beløp som forfaller, eller bruke operasjonen **Overstyring av innbetaling** til å endre beløpene som forfaller, og deretter bruke betalingen.
 7. Hvis hele ordresummen ikke ble betalt, velger du om kunden skal utføre betalingen senere (ved henting), eller om et kredittkort skal tokeniseres nå, og deretter brukes og registreres ved henting.
 
@@ -127,12 +130,10 @@ Kontroller at [skjermoppsettet](https://docs.microsoft.com/dynamics365/commerce/
 Detaljhandelsesordre som er opprettet i den nettbaserte kanalen eller butikkanalen, kan kalles tilbake og redigeres i POS etter behov.
 
 > [!IMPORTANT]
-> Ordrer som opprettes i en telefonsenterkanal, kan ikke redigeres via POS hvis innstillingen [Aktiver ordreoppfylelse](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) er aktivert for telefonsenterkanalen. Hvis du vil sikre riktig betalingsbehandling, må ordrer som kom fra en telefonsenterkanal, og som bruker funksjonen for å aktivere ordreoppfyllelse, redigeres via telefonsenterappen i Commerce Headquarters.
+> Ikke alle detaljordrer kan redigeres via salgsstedsprogrammet. Ordrer som opprettes i en telefonsenterkanal, kan ikke redigeres via POS hvis innstillingen [Aktiver ordreoppfylelse](./set-up-order-processing-options.md#enable-order-completion) er aktivert for telefonsenterkanalen. Hvis du vil sikre riktig betalingsbehandling, må ordrer som kom fra en telefonsenterkanal, og som bruker funksjonen for å aktivere ordreoppfyllelse, redigeres via telefonsenterappen i Commerce Headquarters.
 
-I Commerce versjon 10.0.13 og tidligere kan brukere redigere støttede kundeordrer via POS bare hvis ordrene er helt åpne. Hvis noen av linjene i en ordre allerede er behandlet for oppfyllelse (plukking, pakking og så videre), blir ordren låst for redigering i POS.
+I versjon 10.0.17 og senere kan brukere redigere kvalifiserte ordrer via salgsstedsprogrammet, selv om ordren er delvis oppfylt. Ordrer som er helt fakturert, kan imidlertid fremdeles ikke redigeres via POS. For aktivere denne funksjonen aktiverer du funksjonen **Rediger delvis fullførte ordrer i Point of Sale** i arbeidsområdet **Funksjonsbehandling**. Hvis denne funksjonen ikke er aktivert, eller hvis du bruker versjon 10.0.16 eller tidligere, kan brukere bare redigere kundeordrer på salgsstedet hvis ordren er helt åpen. Hvis funksjonen er aktivert, kan du begrense hvilke butikker som kan redigere delvis fullførte ordrer. Alternativet for å deaktivere denne funksjonen for bestemte butikker kan konfigureres ved hjelp av **Funksjonalitetsprofil** i hurtigfanen **Generelt**.
 
-> [!NOTE]
-> I Commerce versjon 10.0.14 lar en funksjon som er frigitt i [offentlig forhåndsvisning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms), POS-brukere redigere kundeordrer via POS, selv om noen av ordrene allerede er oppfylt. Ordrer som er helt fakturert, kan imidlertid fremdeles ikke redigeres via POS. Hvis du vil teste denne forhåndsvisningsfunksjonen og gi ekstra tilbakemelding, aktiverer du funksjonen **(forhåndsvisning) Rediger delvis fullførte ordrer i Point of Sale** i arbeidsområdet **Funksjonsbehandling**. Kundeordrer som kom fra en telefonsenterkanal, og som bruker funksjonen for å aktivere ordreoppfyllelse, kan ikke redigeres selv etter at denne funksjonen er aktivert.
 
 1. Velg **Tilbakekall ordre**.
 2. Bruk **Søk** til å angi filtre for å finne ordren, og velg deretter **Bruk**.
@@ -154,7 +155,7 @@ I Commerce versjon 10.0.13 og tidligere kan brukere redigere støttede kundeordr
 
 ## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>Fullføre kundeordreforsendelsen eller hente fra POS
 
-Etter at en ordre er opprettet, vil varene bli hentet av kunden fra en butikklokasjon eller levert, avhengig av konfigurasjonen av ordren. Hvis du vil ha mer informasjon om denne prosessen, kan du se dokumentasjonen for å [oppfyllelse av butikkordre](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview).
+Etter at en ordre er opprettet, vil varene bli hentet av kunden fra en butikklokasjon eller levert, avhengig av konfigurasjonen av ordren. Hvis du vil ha mer informasjon om denne prosessen, kan du se dokumentasjonen for å [oppfyllelse av butikkordre](./order-fulfillment-overview.md).
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynkron transaksjonsflyt for kundeordrer
 
@@ -170,3 +171,6 @@ Når alternativet **Opprett kundeordre i asynkron modus** er satt til **Ja**, op
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Hybride kundeordrer](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

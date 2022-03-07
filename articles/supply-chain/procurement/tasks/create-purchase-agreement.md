@@ -1,26 +1,24 @@
 ---
 title: Opprette en kjøpsavtale
 description: Dette emnet fører deg gjennom oppretting av en kjøpsavtale.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, AgreementConfirmRunForm, PurchAgreementHistory
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92c9b429a05a2c25672cc14a0c9ee7adfef42631
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 8085f5d30e1fbbc11b3bc4f86899a54615b039bb3e72fbeafb9bd74e87c1fbfa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016837"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717202"
 ---
 # <a name="create-a-purchase-agreement"></a>Opprette en kjøpsavtale
 
@@ -71,3 +69,6 @@ Dette emnet fører deg gjennom oppretting av en kjøpsavtale. Dette gjøres vanl
 5. Velg **Innkjøpsavtalebekreftelser**. Med alternativet **Forhåndsvis/Skriv ut** kan du generere et dokument for kjøpsavtalen som du deretter kan skrive ut eller sende til leverandøren. Hvis du oppdaterer avtalen senere, og bekrefter den på nytt, vil begge versjoner vises her.  
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

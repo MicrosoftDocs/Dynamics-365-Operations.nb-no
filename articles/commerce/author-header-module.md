@@ -2,27 +2,24 @@
 title: Topptekstmodul
 description: Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
+ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4414779"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712796"
 ---
 # <a name="header-module"></a>Topptekstmodul
 
@@ -30,15 +27,13 @@ ms.locfileid: "4414779"
 
 Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversikt
-
 I Dynamics 365 Commerce vises et topptekstområde som et sidefragment som inkluderer topptekst, promobanner og samtykkingsmoduler for informasjonskapsler. 
 
 Topptekstmodulen inneholder en områdelogo, koblinger til navigasjonshierarkiet, koblinger til andre sider på området, en handlekurvikonmodul, et ønskelistesymbol, påloggingsalternativer og søkefelt. En topptekstmodul optimaliseres automatisk for enheten som området vises på (altså for en skrivebordsenhet eller mobilenhet). På en mobilenhet er for eksempel navigasjonsfeltet skjult i en **Meny**-knapp (som også kalles en *hamburgermeny*).
 
 Bildet nedenfor viser et eksempel på en topptekstmodul på en hjemmeside.
 
-![Eksempel på en topptekstmodul](./media/ecommerce-header.png)
+![Eksempel på en topptekstmodul.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Egenskaper for en topptekstmodul
 
@@ -63,9 +58,16 @@ Følgende moduler kan brukes i en topptekstmodul:
 - **Butikkvelger** - Butikkvelgermodulen kan tas med i en hodemoduls butikkvelgerspor. Det gjør det mulig for brukere å søke etter og finne nærliggende butikker. Brukere kan også angi en foretrukket butikk. Denne butikken vil deretter bli vist i hodet. Når butikkvelgermodulen er inkludert i hodemodulen, må **Modus**-egenskapen angis til **Søk etter butikker**. Hvis du vil ha mer informasjon, se [Butikkvelgermodul](store-selector.md).
 
 > [!NOTE]
-> - Støtte for bruk av handlekurvikon-modulen i hodemoduler er tilgjengelig i Dynamics 365 Commerce 10.0.11-versjonen.
-> - Støtte for bruk av områdevelgermodulen i hodemoduler er tilgjengelig i Dynamics 365 Commerce 10.0.14-versjonen.
-> - Støtte for bruk av butikkvelgermodulen i hodemoduler er tilgjengelig i Dynamics 365 Commerce 10.0.15-versjonen.
+> - Støtte for bruk av handlekurvikon-modulen i hodemoduler er tilgjengelig fra Dynamics 365 Commerce 10.0.11-versjonen.
+> - Støtte for bruk av områdevelger-modulen i hodemoduler er tilgjengelig fra Dynamics 365 Commerce 10.0.14-versjonen.
+> - Støtte for bruk av butikkvelger-modulen i hodemoduler er tilgjengelig fra Dynamics 365 Commerce 10.0.15-versjonen.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Hodemodulen i Adventure Works-emnet
+
+I Adventure Works-emnet støtter hodemodulen **Mobillogo**-egenskapen. Ved hjelp av denne egenskapen kan det angis en logo for mobilvisningsrapporter. **Mobillogo**-egenskapen er tilgjengelig som moduldefinisjonsnummer.
+
+> [!IMPORTANT]
+> Adventure Works-temaet er tilgjengelig fra Dynamics 365 Commerce-10.0.20-versjonen.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Opprette et topptekstfragment for en side
 
@@ -119,3 +121,6 @@ For å sikre at det vises en topptekst på hver side, kan du følge denne fremga
 [Områdevelgermodul](site-selector.md)
 
 [Butikkvelgermodul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: ISEMPTY ER-funksjon
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen ISEMPTY.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dbba375104b57f9fb09ed4e330d85181ec0dff8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9c33e8b613bf5bf5bc17a42a7668d4cc4ee58e53
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684889"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750442"
 ---
 # <a name="isempty-er-function"></a>ISEMPTY ER-funksjon
 
@@ -59,3 +57,6 @@ Uttrykket `ISEMPTY (SPLIT ("",1))` returnerer **SANN**.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

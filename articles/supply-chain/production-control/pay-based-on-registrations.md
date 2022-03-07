@@ -2,11 +2,9 @@
 title: Lønn basert på registreringer
 description: Dette emnet forklarer hvordan lønn beregnes basert på arbeiderregistreringer.
 author: johanhoffmann
-manager: tfehr
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966386"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715728"
 ---
 # <a name="pay-based-on-registrations"></a>Lønn basert på registreringer
 
@@ -122,7 +120,7 @@ I henhold til fleksiprofilen er tiden mellom 06:00 AM og 07:00 AM en periode av 
 
 #### <a name="calculation-of-flex-"></a>Beregning av Fleksi-
 
-Fordi arbeideren jobber i perioden Fleksi-, beregnes ikke Fleksi-. Fleksi- beregnes bare hvis arbeideren er fraværende under perioden Fleksi-. Hvis arbeideren jobber i perioden Fleksi-, får hun lønnssatsen som er definert for standardtid. Hvis arbeideren er fraværende i løpet av perioden Fleksi-, trekkes de 45 minuttene fra fleksikontoen hennes.
+Fordi arbeideren jobber i perioden Fleksi-, beregnes ikke Fleksi-. Fleksi- beregnes bare hvis arbeideren er fraværende under perioden Fleksi-. Hvis arbeideren jobber i perioden Fleksi-, får vedkommende lønnssatsen som er definert for standardtid. Hvis arbeideren er fraværende i løpet av perioden Fleksi-, trekkes de 45 minuttene fra fleksikontoen til vedkommende.
 
 #### <a name="calculation-of-time"></a>Beregning av tid
 
@@ -170,9 +168,9 @@ Hvis du vil konfigurere systemet slik at det klart skiller mellom normaltid og o
 
 På siden **Beregningsparametere** velger du **Overtid** som profilspesifikasjonstypen, og setter alternativet **Lønnstid** til **Ingen**, som vist her.
 
-| Reg. spesifikasjon | Type profilspesifikasjon | Beregning   |     | Betalt         |     |
+| Reg. spesifikasjon | Type profilspesifikasjon | Beregning   | Innstilling | Betalt         | Innstilling |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Driftstid       | Overtid                   | Normaltid | Ja | Lønnstid     | Antall  |
+| Driftstid       | Overtid                   | Normaltid | Ja | Lønnstid     | Nei  |
 |                    |                            | Lønnstid      | Ja | Lønn overtid | Ja |
 
 Når du har justert beregningsparameterne, genereres følgende lønnsposter.
@@ -468,11 +466,11 @@ Eksemplene nedenfor viser lønnsposter og oppføringer for godkjenning som er ge
 
 ### <a name="scenario-1-the-worker-clocks-in-later-than-planned"></a>Scenario 1: Arbeideren stempler inn senere enn planlagt
 
-Arbeideren stempler inn klokken 08:30 AM. Fordi det planlagte innstemplingstidspunktet er 07:00 AM, er han 1,50 time for sent til arbeidet. Fordi 1,50 time regnes som fraværstid, blir arbeideren bedt om å velge en fraværskode. Arbeideren forlater arbeidet kl. 03:30 PM, som er planlagt utstemplingstidspunkt. Når arbeiderens registreringer er beregnet og godkjent, vises fraværsregistreringen, sammen med fraværskoden som arbeideren valgte ved innstempling, for tiden mellom 07:00 AM og 08:30 AM.
+Arbeideren stempler inn klokken 08:30 AM. Fordi det planlagte innstemplingstidspunktet er 07:00 AM, er vedkommende 1,50 time for sen til arbeidet. Fordi 1,50 time regnes som fraværstid, blir arbeideren bedt om å velge en fraværskode. Arbeideren forlater arbeidet kl. 03:30 PM, som er planlagt utstemplingstidspunkt. Når arbeiderens registreringer er beregnet og godkjent, vises fraværsregistreringen, sammen med fraværskoden som arbeideren valgte ved innstempling, for tiden mellom 07:00 AM og 08:30 AM.
 
-I tidsprofilen kan du konfigurere registreringstypen **Innstempling** slik at det er en toleranse når arbeidere er for sent på jobb. Hvis du for eksempel setter inn en toleranse på 5, blir arbeideren bare bedt om å angi en fraværskode hvis han stempler inn etter 07:05 AM.
+I tidsprofilen kan du konfigurere registreringstypen **Innstempling** slik at det er en toleranse når arbeidere er for sent på jobb. Hvis du for eksempel setter inn en toleranse på 5, blir arbeideren bare bedt om å angi en fraværskode hvis vedkommende stempler inn etter 07:05 AM.
 
-Fordi arbeideren ikke har en god grunn til å komme for sent, velger han i dette tilfellet en fraværskode som er definert for ugyldig fravær. En fraværskode vurderes som gjeldende for ugyldig fravær hvis innstillingen for fratrekk i overtid er aktivert for fraværsgruppen som fraværskoden er knyttet til. Hvis du vil angi innstillingen, velger du **Timeregistrering** &gt; **Oppsett** &gt; **Grupper** &gt; **Fraværsgrupper**, og merker deretter av for **Trekk fra overtid**.
+Fordi arbeideren ikke har en god grunn til å komme for sent, velger vedkommende i dette tilfellet en fraværskode som er definert for ugyldig fravær. En fraværskode vurderes som gjeldende for ugyldig fravær hvis innstillingen for fratrekk i overtid er aktivert for fraværsgruppen som fraværskoden er knyttet til. Hvis du vil angi innstillingen, velger du **Timeregistrering** &gt; **Oppsett** &gt; **Grupper** &gt; **Fraværsgrupper**, og merker deretter av for **Trekk fra overtid**.
 
 Slik vises arbeiderens registreringer for dagen på **Godkjenn**-siden etter beregning.
 
@@ -528,7 +526,7 @@ Her er den resulterende lønnsposten når registreringene er overført.
 
 ### <a name="scenario-4-the-worker-clocks-in-late-and-clocks-out-after-the-planned-clock-out-time-during-an-overtime-period"></a>Scenario 4: Arbeideren stempler inn sent og stemper ut etter før det planlagte utstemplingstidspunktet i en overtidsperiode
 
-Arbeideren stempler inn sent klokken 09:30 AM, og deretter, for å kompensere for sent fremmøte, arbeider han overtid og stempler ut klokken 05:00 PM. Fordi arbeideren kom for sent og kompenserte ved å arbeide lenger, vil ikke firmaet gi arbeideren overtidsbetaling for timene han har arbeidet mellom den planlagte utstemplingen kl. 03:30 PM og den faktiske utstemplingen kl. 05:00 PM, selv om denne perioden er definert som overtid i tidsprofilen.
+Arbeideren stempler inn sent klokken 09:30 AM, og deretter, for å kompensere for sent fremmøte, arbeider vedkommende overtid og stempler ut klokken 05:00 PM. Fordi arbeideren kom for sent og kompenserte ved å arbeide lenger, vil ikke firmaet gi arbeideren overtidsbetaling for timene vedkommende har arbeidet mellom den planlagte utstemplingen kl. 03:30 PM og den faktiske utstemplingen kl. 05:00 PM, selv om denne perioden er definert som overtid i tidsprofilen.
 
 For å håndtere denne situasjonen kan du definere fraværskoden til å redusere overtidstimene med timer med ugyldig fravær som arbeideren har samme dag. Velg **Timeregistrering** &gt; **Oppsett** &gt; **Grupper** &gt; **Fraværsgrupper**, og merker deretter av for **Trekk fra overtid** for å trekke fra overtid fra timer med ugyldig fravær.
 
@@ -550,7 +548,7 @@ Hvis det er merket av for **Trekk fra overtid** for den valgte fraværskoden, tr
 
 Her trekkes 1,5 timer med ugyldig fravær, fra 07:00 AM til 09:30 AM, fra 2 timer med overtid, fra 03:30 PM til 05:30 PM. Resultatet av registreringen er 1,5 timer normaltid og 0,5 timer overtid.
 
-Derimot, hvis merket for **Trekk fra overtid** er fjernet for den valgte fraværskoden, gis overtidsbetalingen til arbeideren, selv om han kom for sent og hadde et ugyldig fravær. I dette tilfellet genereres følgende lønnsposter når registreringene er overført.
+Derimot, hvis merket for **Trekk fra overtid** er fjernet for den valgte fraværskoden, gis overtidsbetalingen til arbeideren, selv om vedkommende kom for sent og hadde et ugyldig fravær. I dette tilfellet genereres følgende lønnsposter når registreringene er overført.
 
 | Lønnstype     | Lønnstype | Lønnsenheter | Sats |
 |---------------|----------|-----------|------|
@@ -561,7 +559,7 @@ Derimot, hvis merket for **Trekk fra overtid** er fjernet for den valgte fravær
 
 Følgende eksempel viser hvordan en arbeiders fleksikonto kan reduseres ved å konverterte fraværsperioden til en Fleksi- periode.
 
-Arbeideren stempler inn 07:00 AM og stempler ut 01:00 PM. Hun har inngått en avtale med sin overordnede om at hun kan gå hjem for helgen hvis hun trekker disse timene fra fleksikontoen. Når arbeideren stempler ut klokken 01:00 PM, blir hun bedt om å velge en fraværskode, fordi fraværsperioden for den gjenstående delen av arbeidsdagen som påvirkes, ikke er i en planlagt Fleksi- periode. For å konvertere den gjenstående delen av arbeidsdagen til en Fleksi- periode, kan arbeideren velge en fraværskode som er konfigurert til å redusere hennes fleksikonto.
+Arbeideren stempler inn 07:00 AM og stempler ut 01:00 PM. Arbeideren har en avtale om å reise hjem til helgen hvis vedkommende trekker disse timene fra fleksikontoen. Når arbeideren stempler ut klokken 01:00 PM, blir vedkommende bedt om å velge en fraværskode, fordi fraværsperioden for den gjenstående delen av arbeidsdagen som påvirkes, ikke er i en planlagt Fleksi- periode. For å konvertere den gjenstående delen av arbeidsdagen til en Fleksi- periode, kan arbeideren velge en fraværskode som er konfigurert til å redusere vedkommendes fleksikonto.
 
 Hvis du vil redusere saldoen for fleksible timer for arbeidere som registrerer fravær for en arbeidsdag, velger du **Timeregistrering** &gt; **Oppsett** &gt; **Grupper** &gt; **Fraværsgrupper**, og merker av for **Reduser fleksi**.
 
@@ -579,7 +577,7 @@ Hvis arbeideren velger en fraværskode for ugyldig fravær, ser den resulterende
 |---------------|----------|-----------|------|
 | Normaltid | 1 201     | 6,00      | 10   |
 
-Hvis arbeideren velger en fraværskode for gyldig fravær, og fraværskoden er konfigurert til å redusere hennes fleksikonto, ser de resulterende lønnspostene slik ut når registreringer overføres.
+Hvis arbeideren velger en fraværskode for gyldig fravær, og fraværskoden er konfigurert til å redusere vedkommendes fleksikonto, ser de resulterende lønnspostene slik ut når registreringer overføres.
 
 | Lønnstype     | Lønnstype | Lønnsenheter | Sats |
 |---------------|----------|-----------|------|
@@ -588,7 +586,7 @@ Hvis arbeideren velger en fraværskode for gyldig fravær, og fraværskoden er k
 I dette tilfellet reduseres arbeiderens fleksisaldo med antall timer mellom det faktiske utstemplingstidspunktet og det planlagte utstemplingstidspunktet (det vil si 2,5 timer fra 01:00 PM til 03:30 PM).
 
 > [!NOTE]
-> Vi anbefaler ikke at du merker av for både **Trekk fra fleksi** og **Trekk fra overtid** for en fraværskode, fordi dette oppsettet vil trekke fra de ugyldige timene fra arbeiderens overtidstimer og samtidig redusere arbeiderens fleksikonto.
+> Det anbefales ikke at du merker av for både **Trekk fra fleksi** og **Trekk fra overtid** for en fraværskode, fordi dette oppsettet vil trekke fra de ugyldige timene fra arbeiderens overtidstimer og samtidig redusere arbeiderens fleksikonto.
 
 ### <a name="scenario-6-there-is-no-planned-absence-for-the-day-and-no-worker-attendance-for-the-day"></a>Scenario 6: Det finnes ingen planlagt fravær for dagen, og ingen arbeiders fremmøte for dagen
 
@@ -598,3 +596,6 @@ Hvis arbeideren ikke kommer på jobb i en arbeidsdag, og det er ingen planlagt f
 - Sett inn fravær automatisk
 
 Når de daglige registreringene er beregnet for en arbeider som er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fleksitid automatisk**, som en standard fraværskode. Hvis arbeideren ikke er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fravær automatisk**. Hvis et firma har en kombinasjon av arbeidere som er aktivert for fleksible timer og arbeidere som ikke er aktivert for fleksible timer, må begge parametere defineres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

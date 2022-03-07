@@ -2,24 +2,24 @@
 title: Opprette et opprinnelig budsjett og deretter tilbakeføre foreløpige budsjettposter i offentlig sektor
 description: Dette emnet gir informasjon om hvordan du oppretter og tilbakefører en opprinnelig budsjettoppføring ved hjelp av budsjettmodell og dimensjonsverdier som har foreløpige budsjettbeløp.
 author: twheeloc
-ms.date: 02/14/2022
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7758a1c9edfa129ba8b63a146b38ed3f119fd051
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: f0120e4aa895d70da418c643a81bd0046a96c031de0ca660e31bb3e0d8f8c2df
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744256"
 ---
 # <a name="create-an-original-budget-and-then-reverse-preliminary-budget-entries-in-the-public-sector"></a>Opprette et opprinnelig budsjett og deretter tilbakeføre foreløpige budsjettposter i offentlig sektor
 
@@ -27,26 +27,26 @@ ms.locfileid: "8119433"
 
 Når du oppretter en opprinnelig budsjettpost og bruker budsjettmodellen og dimensjonsverdiene som inneholder de foreløpige budsjettbeløpene, kan de foreløpige budsjettbeløpene tilbakeføres. Denne prosedyren ble opprettet med demonstrasjonsfirmadataene for PSUS i partisjonen for offentlig sektor.
 
-1. Gå til **Budsjettering > Budsjettregisteroppføringer**.
-2. Klikk på **Ny**.
-3. Klikk på rullegardinknappen i **Budsjettmodell**-feltet for å åpne oppslaget.
+1. Gå til Budsjettering > Budsjettregisteroppføringer.
+2. Klikk Ny.
+3. Klikk rullegardinknappen i Budsjettmodell-feltet for å åpne oppslaget.
 4. Finn og velg ønsket post i listen.
-5. Klikk på rullegardinknappen i **Budsjettkode**-feltet for å åpne oppslaget.
-6. Klikk på **Opprinnelig budsjett** i listen.
-7. Klikk på **Lagre**.
-8. Klikk på **Legg til linje**.
+5. Klikk rullegardinknappen i Budsjettkode-feltet for å åpne oppslaget.
+6. Klikk Opprinnelig budsjett i listen.
+7. Klikk Lagre.
+8. Klikk Legg til linje.
 9. Valgfritt: Hvis du vil endre datoen fra den som står i hodet, angir du en ny dato. Denne datoen bestemmer regnskapsperioden budsjettett registreres på.
-10. Klikk på rullegardinknappen i feltet **Kontostruktur** for å åpne oppslaget.
+10. Klikk rullegardinknappen i feltet Kontostruktur for å åpne oppslaget.
 11. Finn og velg ønsket post i listen.
-12. Angi de ønskede verdiene i **Dimensjonsverdier**-feltet.
-13. Angi et tall i **Beløp**-feltet.
-14. Klikk på rullegardinknappen i **Valuta**-feltet for å åpne oppslaget.
-15. Klikk på koblingen i den valgte raden i listen.
-16. Klikk på **Lagre**.
-17. Klikk på **Oppdater budsjettsaldoer**.
-    * Valgfritt: Du kan velge alternativet **Tilbakefør foreløpig budsjett**. Vær oppmerksom på at du kan tilbakeføre alle foreløpige budsjettposter, eller bare de foreløpige budsjettpostene med budsjettkoden du angir.  
-    * Klikk på **Lås opp**-ikonet øverst på siden for å gjøre valgfrie valg.  
-18. Klikk på **Oppdater**.
+12. Angi de ønskede verdiene i Dimensjonsverdier-feltet.
+13. Angi et tall i Beløp-feltet.
+14. Klikk rullegardinknappen i Valuta-feltet for å åpne oppslaget.
+15. Klikk koblingen i den valgte raden i listen.
+16. Klikk Lagre.
+17. Klikk Oppdater budsjettsaldoer.
+    * Valgfritt: Du kan velge alternativet for å tilbakeføre foreløpig budsjett. Vær oppmerksom på at du kan tilbakeføre alle foreløpige budsjettposter, eller bare de foreløpige budsjettpostene med budsjettkoden du angir.  
+    * Klikk Lås opp-ikonet øverst på siden for å gjøre valgfrie valg.  
+18. Klikk Oppdater.
 
 
 

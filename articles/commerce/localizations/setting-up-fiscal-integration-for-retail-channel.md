@@ -2,11 +2,9 @@
 title: Definere økonomisk integrering for handelskanaler
 description: Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for handelskanaler.
 author: josaw
-manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2ac8dc8787ab0bdb796ec849f9ede3f697b09680
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017899"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193650"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Definere økonomisk integrering for handelskanaler
 
@@ -88,7 +86,7 @@ Før du bruker regnskapsintegreringsfunksjonaliteten, bør du konfigurere følge
 
         **Eksempler**
 
-        |   | Formater | Eksempel |
+        | Parameter  | Format | Eksempel |
         |---|--------|---------|
         | **Mva-satsinnstillinger** | verdi: VATrate | 1 : 2000, 2 : 1800 |
         | **Tilordning av mva-koder** | VATcode : verdi | vat20: 1, vat18: 2 |
@@ -225,3 +223,6 @@ For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge 
     1. Velg oppsettet som skal oppdateres.
     2. Legg til en ny knapp, og angi **Fullfør bilagsregistreringsprosess**-knappeegenskapen.
     3. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringene dine til kanaldatabasen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Prisjusteringer og rabatter
 description: Denne artikkelen inneholder informasjon om prisjusteringer og rabatter i Dynamics 365 Commerce.
 author: scott-tucker
-manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
-ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
+ms.openlocfilehash: 96a695df250cda514b7bd8b9716c0f03fb2bfd28d3af4daedaf1335c3099fbb6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4584321"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748504"
 ---
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringer og rabatter
 
@@ -51,3 +48,13 @@ Det finnes mange typer rabatter:
 - **Leveringsrabatt** – En rabatt som brukes når totalen for transaksjonen er mer enn et bestemt beløp og en bestemt leveringsmåte (for eksempel forsendelse på to dager eller over natten) brukes på ordren.
 
 Både prisjusteringer og rabatter kan knyttes til prisgrupper. Prisgrupper kan deretter knyttes til kanaler, kataloger, tilknytninger og fordelsprogrammer.
+
+> [!NOTE]
+> Samlerabatten og terskelrabatten har henholdsvis egenskapene «Regn med ikke-rabatterte produkter» og «Tell ikke-rabatterte produkter mot terskel». Hvis disse egenskapene er aktivert, kan en vare som ikke kvalifiserer for rabatt, likevel bidra til å kvalifisere en transaksjon for rabatten, men den ikke-kvalifiserte varen blir ikke rabattert. 
+> 
+> Hvis du for eksempel oppretter en samlerabatt med to linjer, A og B, der en kunde skal få 10 % rabatt på begge varene, men der det er merket av for Hindre alle rabatter for vare A, gjør dette vanligvis at vare A ikke blir tatt med i rabatten. Hvis egenskapen «Regn med ikke-rabatterte produkter» er aktivert, kan imidlertid vare A brukes til å kvalifisere for samlerabatten, men rabatten på 10 % brukes bare på vare B. En tilsvarende logikk gjelder for terskelrabatten. 
+>
+> Egenskapen «Tell ikke-rabatterte produkter mot terskel» har imidlertid en tilleggsfunksjon sammenlignet med egenskapen «Regn med ikke-rabatterte produkter» for samlerabatten. Hvis terskelrabatten er aktivert og det finnes en vare som har en eksisterende rabatt som gjør at andre rabatter ikke kan gjelde for varen, kvalifiserer prisen som betales for denne varen, mot terskelen, men tilleggsrabatten blir ikke gjeldende for denne varen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

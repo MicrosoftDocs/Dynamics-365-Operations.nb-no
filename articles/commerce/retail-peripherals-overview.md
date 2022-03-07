@@ -2,28 +2,27 @@
 title: Eksterne enheter
 description: Dette emnet forklarer begrepene som er knyttet til eksterne enheter i Commerce.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 268444
+ms.custom:
+- "268444"
+- intro-internal
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: df7cb4810b83d74725df3d59b7b08da1e8cf4a53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414764"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345038"
 ---
 # <a name="peripherals"></a>Eksterne enheter
 
@@ -122,7 +121,7 @@ For å garantere at et størst mulig utvalg av enheter kan brukes med Commerce, 
 -   **Kontrollobjekt** – Kontrollobjektet for en enhetsklasse (for eksempel linjevisningsenheter) inneholder grensesnittet for programmet. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) leverer et standardisert sett med OPOS-kontrollobjekter som kalles Common Control Objects (CCO-er). CCOs brukes til å teste POS-komponenten i Commerce. Derfor bidrar testingen til å garantere at hvis Commerce støtter en enhetsklasse gjennom OPOS, kan mange enhetstyper støttes, forutsatt at produsenten leverer et tjenesteobjekt som er bygget for OPOS. Du trenger ikke å eksplisitt teste hver enhetstype.
 -   **Tjenesteobjekt** – Tjenesteobjektet leverer kommunikasjon mellom kontrollobjektet (CCO) og enheten. Tjenesteobjektet for en enhet leveres vanligvis av enhetsprodusenten. I noen tilfeller må du imidlertid laste ned tjenesteobjektet fra produsentens nettsted. Et nyere tjenesteobjekt kan for eksempel være tilgjengelig. Hvis du vil finne adressen til produsentens nettsted, kan du se i maskinvaredokumentasjonen.
 
-[![Kontrollobjekt og tjenesteobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Støtte for OPOS-implementering av OLE for POS bidrar til å garantere at hvis enhetsprodusentene og POS-utgivere implementerer standarden på riktig måte, kan POS-systemer og støttede enheter samarbeide, selv om de ikke var tidligere testet sammen. 
+[![Kontrollobjekt og tjenesteobjekt.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Støtte for OPOS-implementering av OLE for POS bidrar til å garantere at hvis enhetsprodusentene og POS-utgivere implementerer standarden på riktig måte, kan POS-systemer og støttede enheter samarbeide, selv om de ikke var tidligere testet sammen. 
 
 > [!NOTE]
 > OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Commerce må først støtte denne enhetstypen, eller klassen, gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
@@ -146,6 +145,9 @@ Når det gjelder eksterne enheter, er UWP relatert til Windows-støtte for Plug 
 
 Tastaturkortleserenheter sender data til datamaskinen som om dataene ble skrevet på et tastatur. Feltet som er aktivt på salgsstedet vil derfor motta dataene som skannes eller leses. I enkelte tilfeller kan denne virkemåten føre til at feil type data skannes inn i feil felt. En strekkode kan for eksempel skannes inn i et felt som er ment for registrering av kredittkortdata. I mange tilfeller er det logisk at det er salgsstedet som bestemmer om dataene som skannes eller leses, er en strekkode eller kortlesing. Derfor behandles dataene på riktig måte. Når enheter konfigureres som OPOS-enheter i stedet for tastaturkortleserenheter, er det imidlertid mer kontroll over hvordan dataene fra disse enhetene kan brukes, fordi mer er "kjent" om enheten som dataene kommer fra. Data fra en strekkodeskanner gjenkjennes for eksempel automatisk som en strekkode, og den tilknyttede posten i databasen finnes enklere og raskere enn hvis et søk etter en generell streng blir brukt, noe som er tilfelle for tastaturkortleserenheter.
 
+> [!NOTE]
+> Når tastaturkortleserskannere brukes på salgsstedet, må de programmeres for å kunne sende en vognretur, eller en **Enter**-hendelse, etter det sist skannede tegnet. Hvis denne konfigurasjonen ikke utføres, vil ikke tastaturkortleserskannere fungere riktig. Se i dokumentasjonen som leveres av enhetsprodusenten, for informasjon om hvordan du legger til vognreturhendelsen.  
+
 ### <a name="native-printer"></a>Opprinnelig skriver
 
 Opprinnelige skrivere (eller "Enhet" som typen heter i maskinvareprofilen) kan konfigureres til å be brukeren om å velge en skriver som er konfigurert for datamaskinen. Når en skriver av **Enhet**-typen er konfigurert og Modern POS oppdager en utskriftskommando, blir brukeren bedt om å velge en skriver i en liste. Denne virkemåten er forskjellig fra virkemåten for Windows-drivere, fordi **Windows**-skrivertypen i maskinvareprofilen ikke viser en liste over skrivere. I stedet kreves det at en navngitt skriver angis i **Enhetsnavn**-feltet.
@@ -158,7 +160,7 @@ Nettverksadresserbare kassaskuffer, kvitteringsskrivere og betalingsterminaler k
 
 ### <a name="dedicated"></a>Dedikert
 
-Modern POS-klienter for Windows og Android inkluderer **dedikerte** eller innebygde maskinvarestasjoner. Disse klientene kan kommunisere direkte med eksterne enheter ved hjelp av forretningslogikk som er innebygd i applikasjonene. Android-programmet støtter bare nettverksenheter. Hvis du vil ha mer informasjon om støtte for eksterne enheter for Android, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Modern POS-klienter for Windows og Android inkluderer **dedikerte** eller innebygde maskinvarestasjoner. Disse klientene kan kommunisere direkte med eksterne enheter ved hjelp av forretningslogikk som er innebygd i applikasjonene. Android-programmet støtter bare nettverksenheter. Hvis du vil ha mer informasjon om støtte for eksterne enheter for Android, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](./dev-itpro/hybridapp.md).
 
 Hvis du vil bruke den dedikerte maskinvarestasjonen, tilordner du en maskinvareprofil til en kasse som skal bruke Modern POS for Windows-eller Android-programmer. Deretter oppretter du en maskinvarestasjon av **Dedikert**-typen for butikken der kassen skal brukes. Start Modern POS i ikke-skuff-modus, og bruk operasjonen **Administrer maskinvarestasjoner** for å aktivere funksjonene for maskinvarestasjoner. Den dedikerte maskinvarestasjonen er aktiv som standard. Deretter logger du av Modern POS, logger deg deretter på igjen og åpner et skift. De eksterne enhetene som er konfigurert i maskinvareprofilen, kan nå brukes. 
 
@@ -199,7 +201,7 @@ Hvis du vil ha mer informasjon, kan du se [Konfigurere, installere og aktivere M
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Oppsett og konfigurasjon av Modern POS for Android og iOS
 
-For informasjon, se [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+For informasjon, se [Definere POS Hybrid-app på Android og iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Oppsett og konfigurasjon av OPOS-enhet
 
@@ -494,7 +496,7 @@ Denne konfigurasjonen er mest vanlig konfigurasjonen for tradisjonelle, fast kas
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Moderne POS for Android med en IPC-maskinvarestasjon (innebygd)
 
-**Nytt for 10.0.8** – Epson-nettverksskrivere og kassaskuffer som er koblet til disse skriverne via DK-porten, støttes nå for Modern POS for Android-appen. Hvis du vil ha mer informasjon, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+**Nytt for 10.0.8** – Epson-nettverksskrivere og kassaskuffer som er koblet til disse skriverne via DK-porten, støttes nå for Modern POS for Android-appen. Hvis du vil ha mer informasjon, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-klienter som har en forpliktet delt IIS-maskinvarestasjon
 
@@ -614,6 +616,9 @@ De eksterne enhetene nedenfor ble testet ved hjelp av IPC-maskinvarestasjonen so
 | Star         | TSP650II | Egendefinert    | Tilkoblet via nettverket   |
 | Star         | mPOP     | OPOS      | Tilkoblet via Bluetooth |
 | HP           | F7M67AA  | OPOS      | USB-drevet             |
+
+> [!NOTE]
+> Skriveren Star TSP 100 støttes ikke av den innebygde maskinvarestasjonen. Den innebygde maskinvarestasjonen bruker en 64-biters prosess, som ikke er kompatibel med eksisterende TP 100-drivere. 
 
 #### <a name="bar-code-scanner"></a>Strekkodeleser
 
@@ -763,10 +768,9 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestas
 | Epson        | TM-T88V  | OPOS      |                           |
 | Epson        | TM-T88   | Egendefinert    | Tilkoblet via nettverket     |
 | Star         | TSP650II | Egendefinert    | Tilkoblet via nettverket     |
-| Star         | TSP100   | OPOS      | Krever TSP650II-drivere |
 | HP           | F7M67AA  | OPOS      | USB-drevet               |
 
-#### <a name="payment-terminal"></a>Betalingsterminal
+#### <a name="payment-terminal"></a>Betalingsterminal 
 
 | Produsent | Modell | Grensesnitt | Kommentarer                                                                       |
 |--------------|-------|-----------|--------------------------------------------------------------------------------|
@@ -831,9 +835,11 @@ De eksterne enhetene nedenfor ble testet ved hjelp av en delt IIS-maskinvarestas
     6.  Når DLL-vertene er avsluttet, starter du Modern POS på nytt.
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Ekstern simulator for Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

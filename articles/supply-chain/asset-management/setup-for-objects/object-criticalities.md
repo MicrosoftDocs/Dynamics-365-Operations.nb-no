@@ -1,12 +1,10 @@
 ---
 title: Type kritisk aktivitet for aktiva
 description: Emnet forklarer typer kritsk aktivitet for aktiva i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776926"
 ---
 # <a name="asset-criticality-types"></a>Type kritisk aktivitet for aktiva
 
@@ -42,7 +40,7 @@ Hvis du vil definere kritikalitet, må du først opprette kritikalitetstypene so
 4. I **Navn**-feltet angir du et navn på kritikalitetstypen.
 5. Angi en faktor i feltet **Faktor**. Denne faktoren brukes under beregning av arbeidsordreplanlegging for å bestemme kritikalitetsposten som skal brukes. (Posten som har den høyeste faktoren er alltid brukt.) Denne innstillingen er relevant hvis, som vist i illustrasjonen nedenfor, det opprettes kritikalitetslinjer som har samme kritikalitetsverdi.
 
-    ![Siden Type kritisk aktivitet](media/23-setup-for-objects.png)
+    ![Siden Type kritisk aktivitet.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Definer kritiske forhold omkring aktiva
 
@@ -61,3 +59,6 @@ Hvis du vil definere kritikalitet, må du først opprette kritikalitetstypene so
 - Kritikaliteten i en arbeidsordre beregnes på nytt hver gang en arbeidsordrelinje legges til eller slettes fra arbeidsordren.
 - Hvis en arbeidsordre inneholder flere arbeidsordrejobber, brukes alltid den høyeste kritikaliteten i henhold til **Faktor**-feltet på siden **Kritikalitetstyper** i arbeidsordren.
 - Vanligvis kan aktivakritikalitet endres over en periode. Kritikalitet kan påvirkes ved kjøp av nytt utstyr, saneringer, og så videre. Vurder å reevaluere aktivakritikalitetene med jevne mellomrom (for eksempel én gang per år eller hvert annet år) for å sikre at kritikalitetsdefinisjonene samsvarer med det gjeldende produksjonsoppsettet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

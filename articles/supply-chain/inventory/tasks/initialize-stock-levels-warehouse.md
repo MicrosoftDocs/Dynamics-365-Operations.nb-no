@@ -1,7 +1,7 @@
 ---
 title: Initialisere lagernivåer i lageret
 description: Denne prosedyren viser hvordan du får lagerbeholdningen oppdatert manuelt ved hjelp av en varetilgangsjournal.
-author: yufeihuang
+author: perlynne
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 264dabf9c1c10c3d2cee3e0c942abbfa249f21f5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0746b799c701c569f0ae5c657ac3302ab6626287
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565885"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823487"
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a>Initialisere lagernivåer i lageret
 

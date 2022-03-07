@@ -1,27 +1,25 @@
 ---
 title: Planlegge kapasitet for arbeidsmengde
 description: Dette emnet forklarer hvordan du definerer og planlegger arbeidsmengdekapasiteten for ansatte i et lager eller et helt lager.
-author: MarkusFogelberg
-manager: tfehr
+author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8db243949b2aeee0a8263276234d439652905449
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f66eb1b2f35d19aba0f4f8f2804577a62ac14e79
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965583"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7901952"
 ---
 # <a name="schedule-workload-capacity"></a>Planlegge kapasitet for arbeidsmengde
 
@@ -79,3 +77,6 @@ Hvis denne informasjonen ikke blir korrekt spesifisert, vil du motta en melding 
 3. I feltet **Ordretype** velger du **Planlagt og bekreftet**, **Planlagt** eller **Bekreftet** for å angi hvilke typer ordrer som skal prosjekteres i rapporten.
 4. Velg en belastningstype i **Belastningstype**-feltet for å angi om arbeidsmengdekapasiteten skal prosjekteres for volum eller vekt.
 5. I feltet **Arbeidsmengdekapasitet** velger du et arbeidsmengdekapasitetsoppsett.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

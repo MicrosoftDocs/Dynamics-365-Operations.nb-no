@@ -2,24 +2,22 @@
 title: Mva-rapport for Finland
 description: Dette emnet gir informasjon om hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
 author: anasyash
-ms.author: AnnBe
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-manager: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
+ms.author: anasyash
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b42f03d9bcbf5c45505eb8e99a800e89a48ca85
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3e640333d067cdc977b2dbffac2395e47faf1cf9
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016768"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592507"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 
@@ -173,7 +171,7 @@ Følgende tabell viser hvordan du tilordner koder for mva-rapportering til mva-k
 4. Gå til **Avgift** \> **Deklareringer** \> **Merverdiavgift** \> **Utlign og poster merverdiavgift**. I dialogboksen **Rapporter merverdiavgift for utligningsperioden** i feltet **Mva-betalingsversjon** velger du **Opprinnelig**.
 5. Skriv ut rapporten og se gjennom dataene.
 
-![Rapporteringsdata for merverdiavgift, opprinnelig versjon](media/1_Sales_tax_reporting.png)
+![Rapporteringsdata for merverdiavgift, opprinnelig versjon.](media/1_Sales_tax_reporting.png)
 
 6. Poster den nye transaksjonen. Gå for eksempel til **Kunder** \> **Fakturaer** \> **Alle fritekstfakturaer**.
 
@@ -184,11 +182,11 @@ Følgende tabell viser hvordan du tilordner koder for mva-rapportering til mva-k
 7. Gå til **Avgift** \> **Deklareringer** \> **Merverdiavgift** \> **Utlign og poster merverdiavgift**. I dialogboksen **Rapporter merverdiavgift for utligningsperioden** i feltet **Mva-betalingsversjon** velger du **Siste rettelser**.
 8. Gå til **Avgift** \> **Deklareringer** \> **Merverdiavgift** \> **Rapporter merverdiavgift for utligningsperioden**. I dialogboksen **Rapporter merverdiavgift for utligningsperioden** i feltet **Mva-betalingsversjon** velger du **Rettelser**.
 
-![Rettelser av mva-betalingsversjon](media/2_Sales_tax_reporting.png)
+![Rettelser av mva-betalingsversjon.](media/2_Sales_tax_reporting.png)
 
 9. Gå til **Avgift** \> **Deklareringer** \> **Merverdiavgift** \> **Rapporter merverdiavgift for utligningsperioden**. I dialogboksen **Rapporter merverdiavgift for utligningsperioden** i feltet **Mva-betalingsversjon** velger du **Total liste**.
 
-![Total liste over versjoner av mva-betalinger i utligningsperioden](media/3_Sales_tax_reporting.png)
+![Total liste over versjoner av mva-betalinger i utligningsperioden.](media/3_Sales_tax_reporting.png)
 
 ## <a name="additional-information"></a>Tilleggsinformasjon
 
@@ -198,11 +196,14 @@ Hvis du definerer snudd avregning i henhold til [Snudd avregning](emea-reverse-c
 2. I dialogboksen angir du feltene **Utligningsperiode** og **Fra-dato**.
 3. Velg **OK**, og se over rapportresultatet.
 
-![Mva-betaling etter rapporteringskode](media/4_Reverse_charge.png)
+![Mva-betaling etter rapporteringskode.](media/4_Reverse_charge.png)
 
 
 ## <a name="report-a-vat-declaration-to-the-tax-authority"></a>Rapportere en mva-deklarering til skattemyndighetene
 
 Når du har generert den finske mva-rapporten, bruker du dataene på den til å fylle ut den selvvurderte avgiftsrapporten for den finske skatteetaten i det offisielle formatet. Illustrasjonen nedenfor viser for eksempel hva den finske egenvurderte avgiftsrapporten har sett ut siden 2019.
 
-![Finsk selvvurdert avgiftsrapport](media/5_Finnish_VAT_declaration.png)
+![Finsk selvvurdert avgiftsrapport.](media/5_Finnish_VAT_declaration.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

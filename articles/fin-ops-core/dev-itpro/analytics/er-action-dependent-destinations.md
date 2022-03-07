@@ -2,9 +2,11 @@
 title: Konfigurere handlingsavhengige ER-mål
 description: Dette emnet forklarer hvordan du konfigurerer handlingsavhengige mål for et ER-format (Elektronisk rapportering) som er konfigurert til å generere utgående dokumenter.
 author: NickSelin
+manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: ea7543fddef085cfd1e92edf0b1dabf6d0aac38a
+ms.sourcegitcommit: 5264aaec3723c40a219e4d2867afe1ba9cc5f2a2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323985"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5153645"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsavhengige ER-mål
 
 [!include [banner](../includes/banner.md)]
 
-Du kan konfigurere [mål](electronic-reporting-destinations.md) for hver utdatakomponent (mappe eller fil) i en [konfigurasjon](general-electronic-reporting.md#Configuration) for et [ER-format (Elektronisk rapportering)](general-electronic-reporting.md) som brukes til å generere et utgående dokument. Brukere som kjører et ER-format av denne typen og har nødvendige tilgangsrettigheter, kan også endre de konfigurerte målinnstillingene ved kjøretid.
+Du kan konfigurere [mål](electronic-reporting-destinations.md) for hver utdatakomponent (mappe eller fil) i en [konfigurasjon](general-electronic-reporting.md#Configuration) for et [ER](general-electronic-reporting.md)-[format](general-electronic-reporting.md#FormatComponentOutbound) (Elektronisk rapportering) som brukes til å generere et utgående dokument. Brukere som kjører et ER-format av denne typen og har nødvendige tilgangsrettigheter, kan også endre de konfigurerte målinnstillingene ved kjøretid.
 
 I Microsoft Dynamics 365 Finance **versjon 10.0.17 og nyere** kan et ER-format kjøres ved å [klargjøre](er-apis-app10-0-17.md) en handlingskode som brukeren utfører ved å kjøre dette ER-formatet. I **Kunder**-modulen i innstillingene for utskriftsbehandling kan du for eksempel velge et ER-format som genererer et bestemt forretningsdokument, for eksempel en fritekstfaktura. Du kan deretter velge **Vis** for å forhåndsvise fakturaen eller **Skriv ut** for å sende den til en skriver. Hvis en brukerhandling sendes for det kjørende ER-formatet ved kjøretid, kan du konfigurere ulike ER-mål for ulike brukerhandlinger. Dette emnet beskriver hvordan du konfigurerer ER-mål for denne typen ER-format.
 
@@ -60,7 +62,7 @@ Hvis du velger dokumenttypen **Hvilken som helst**, blir **Identifisert automati
     - Når **Send**-handlingen angis ved kjøretid, brukes ER-målet **E-post**.
     - Når **Skriv ut**-handlingen angis ved kjøretid, brukes ER-målet **Skriver**.
 
-Du kan for eksempel bruke ER-formatet **Fritekstfaktura (Excel)** til å skrive ut en [fritekstfaktura](../../../finance/accounts-receivable/create-free-text-invoice-new.md) når du posterer den. Hvis du vil rute et generert dokument, må du konfigurere ER-mål for dette ER-formatet. Det kan for eksempel hende at du må konfigurere disse ER-målene for å kunne gjøre følgende med et generert dokument:
+Du kan for eksempel bruke ER-formatet **Fritekstfaktura (Excel)** til å skrive ut en [fritekstfaktura](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) når du posterer den. Hvis du vil rute et generert dokument, må du konfigurere ER-mål for dette ER-formatet. Det kan for eksempel hende at du må konfigurere disse ER-målene for å kunne gjøre følgende med et generert dokument:
 
 - arkivere dokumentet hvis ER-formatet kjøres, men ingen handlingskode er angitt (for eksempel når dokumentet blir sendt elektronisk)
 - forhåndsvise dokumentet i en nettleser når en bruker utfører **Vis**-handlingen.
@@ -69,11 +71,11 @@ Du kan for eksempel bruke ER-formatet **Fritekstfaktura (Excel)** til å skrive 
 
 Illustrasjonen nedenfor viser hvordan du kan oppnå denne konfigurasjonen av ER-mål som sett med individuelle målposter, når hver post er konfigurert for en individuell brukerhandling:
 
-![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for en individuell brukerhandling.](./media/er-destination-action-dependent-01.png)
+![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for en individuell brukerhandling](./media/er-destination-action-dependent-01.png)
 
 Illustrasjonen nedenfor viser hvordan du kan oppnå den samme alternative konfigurasjonen av ER-mål som sett med individuelle målposter, når hver post er konfigurert for et enkeltmål:
 
-![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for et enkeltmål.](./media/er-destination-action-dependent-01a.png)
+![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for et enkeltmål](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Hvis det angis en handlingskode for det kjørende ER-formatet, men ingen mål er konfigurert for denne handlingskoden, brukes den [standard](electronic-reporting-destinations.md#default-behavior) målvirkemåten.
@@ -82,9 +84,9 @@ Illustrasjonen nedenfor viser hvordan du kan oppnå den samme alternative konfig
 
 Hvis brukerhandlinger er klargjort av brukere som har de aktuelle [tillatelsene](electronic-reporting-destinations.md#security-considerations) til å endre konfigurerte målinnstillinger ved kjøretid, når et ER-format kjøres, vises det en dialogboks der du kan endre de konfigurerte målinnstillingene. Denne dialogboksen er valgfri, og utseendet avhenger av hvordan oppkallet som ER-rammeverket utfører for å kjøre et ER-format, er implementert. Hvis denne dialogboksen vises, blir ER-målet i den aktivert i henhold til brukerhandlingen som angis.
 
-Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronisk rapporteringsformat** som vises når en fritekstfaktura [posteres](../../../finance/accounts-receivable/create-free-text-invoice-new.md) og ER-formatet **Fritekstfaktura (Excel)** kjøres for å generere dette dokumentet, hvis **Skriver**-handlingen ble klargjort og ER-mål ble konfigurert for dette formatet som vist tidligere i dette emnet.
+Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronisk rapporteringsformat** som vises når en fritekstfaktura [posteres](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) og ER-formatet **Fritekstfaktura (Excel)** kjøres for å generere dette dokumentet, hvis **Skriver**-handlingen ble klargjort og ER-mål ble konfigurert for dette formatet som vist tidligere i dette emnet.
 
-![Dialogboks der du kan endre de opprinnelig konfigurerte ER-målene for kjøring av ER-format.](./media/er-destination-action-dependent-02.gif)
+![Dialogboks der du kan endre de opprinnelig konfigurerte ER-målene for kjøring av ER-format](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Hvis du har konfigurert ER-mål for flere komponenter i det kjørende ER-formatet, vises et eget alternativ for hver konfigurerte komponent i ER-formatet.
@@ -103,7 +105,7 @@ Følg denne fremgangsmåten for å kontrollere brukerhandlingskoden som angis.
 6. Filtrer ER-kjøringsloggene på siden **Feilsøkingslogger for konfigurasjon** for å finne loggen for ER-formatkjøring.
 7. Se gjennom loggoppføringene som må inneholde posten som viser den angitte brukerhandlingskoden, hvis det er angitt en handling for ER-formatkjøringen.
 
-    ![Siden Kjøringslogger for elektronisk rapportering, som inneholder informasjon om brukerhandlingskoden som er angitt for den filtrerte kjøringen av et ER-format.](./media/er-destination-action-dependent-03.png)
+    ![Siden Kjøringslogger for elektronisk rapportering, som inneholder informasjon om brukerhandlingskoden som er angitt for den filtrerte kjøringen av et ER-format](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Liste over forretningsdokumenter (bølge 1)</a>
 
@@ -115,6 +117,7 @@ Følgende liste over forretningsdokumenter styres av funksjonen **Rut utdata fra
 - Innkjøpsforespørsel for bestilling
 - Salgsordrebekreftelse
 - Purrenota
+- Kontoutskrift for kunde
 - Rentenota
 - Betalingsmelding for leverandør
 - Tilbudsforespørsel
@@ -126,6 +129,3 @@ Følgende liste over forretningsdokumenter styres av funksjonen **Rut utdata fra
 [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [API-endringer for elektronisk rapporteringsrammeverk for Application update 10.0.17](er-apis-app10-0-17.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

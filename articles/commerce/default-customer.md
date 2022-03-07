@@ -10,28 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414558"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477906"
 ---
 # <a name="create-a-default-customer"></a>Opprette en standardkunde
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter en standardkunde som skal brukes ved opprettelse av en kanal i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Når du oppretter en kanal, må du angi en standardkunde. En standardkunde kan enkelt opprettes etter at du først har opprettet kundegruppen og kundeadresseboken.
 
@@ -113,3 +109,6 @@ Bildet nedenfor viser et eksempel på kundekonfigurasjon.
 [Oversikt over kanaler](channels-overview.md)
 
 [Forutsetninger for kanaloppsett](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

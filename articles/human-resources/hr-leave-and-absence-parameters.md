@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: db96073f0a16f1c710fbfebb2d08a1d693eab1e1
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4419983"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463388"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere permisjons- og fraværsparametere
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, kan det være lurt å kontrollere innstillingene for alle relaterte personaleparametere, inkludert:
 
@@ -92,3 +94,6 @@ Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, 
 ## <a name="see-also"></a>Se også
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

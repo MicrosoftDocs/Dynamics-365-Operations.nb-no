@@ -1,26 +1,29 @@
 ---
 title: Alternativer for transaksjon av anleggsmiddel
 description: Dette emnet beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
-author: moaamer
-ms.date: 08/10/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 23061
 ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c5530bb7b0472aad75ec04c00ba828b8efb877d
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: 6f08750c369475f9d8be3c723aaf4eb6cf36eb7c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891578"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446333"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativer for transaksjon av anleggsmiddel
 
@@ -46,7 +49,7 @@ Når en bestilling eller Lager til anleggsmidler-journalen brukes til anskaffels
 ## <a name="general-ledger"></a>Økonomimodul
 Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du kan også bruke journaler i Anleggsmidler til å postere anleggsmiddeltransaksjoner.
 
-### <a name="options-for-entering-fixed-asset-transaction-types"></a>Alternativer for å angi anleggsmiddeltransaksjonstyper
+## <a name="options-for-entering-fixed-asset-transaction-types"></a>Alternativer for å angi anleggsmiddeltransaksjonstyper
 
 
 | transaksjonstype                    | Modul                   | Opsjoner                                   |
@@ -57,26 +60,11 @@ Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du
 |                                     | Innkjøp og leverandører | Bestilling                            |
 | Avskrivning                        | Anleggsmidler             | Anleggsmidler                              |
 |                                     | Økonomimodul           | Økonomijournal                           |
-| Avhending                            | Faste objekter             | Faste objekter                              |
-|                                     | Økonomimodul           | Økonomijournal                           |
-|                                     | Kundereskontro      | Fritekstfaktura                         |
+| Avhending                            | Anleggsmidler             | Anleggsmidler                              |
+| ** **                               | Økonomimodul           | Økonomijournal                           |
+| ** **                               | Kundereskontro      | Fritekstfaktura                         |
 
-Den gjenværende verdien oppdateres ikke for nedskrivningsperioder for et anleggsmiddel når en journallinje for avskrivningstransaksjonstype opprettes manuelt eller importeres via en dataenhet. Den gjenværende verdien oppdateres når avskrivningsforslagsprosessen brukes til å opprette journallinjen.
+
+Den gjenværende verdien for nedskrivningsperioder for anleggsmiddelet oppdateres ikke når en journallinje for avskrivningstransaksjonstype opprettes manuelt eller importeres via en dataenhet. Denne verdien oppdateres når avskrivningsforslagsprosessen brukes til å opprette journallinjen.
 
 Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-integration.md).
-
-Systemet hindrer postering av avskrivning til samme periode to ganger. Hvis for eksempel to brukere oppretter avskrivningsforslag separat for januar, posteres avskrivningen fra den første brukeren i den første journalen. Når den andre brukeren posterer avskrivning i den andre journalen, kontrollerer systemet datoen da avskrivningen sist ble kjørt, og vil ikke postere avskrivningen for samme periode en gang til.
-
-### <a name="transactions-that-require-a-different-voucher-number"></a>Transaksjoner som krever ulike bilagsnumre
-
-Følgende anleggsmiddeltransaksjoner bruker forskjellige bilagsnumre:
-
-- En ekstra anskaffelse gjøres på et anleggsmiddel og "oppsamlingsavskrivning" beregnes.
-- Et anleggsmiddel er delt.
-- En parameter for å beregne avskrivning ved avhending aktiveres, og deretter avhendes anleggsmiddelet.
-- Servicedatoen for et anleggsmiddel er før anskaffelsesdatoen. Derfor posteres en avskrivningsjustering.
-
-> [!NOTE]
-> Når du angir transaksjoner, må du kontrollere at alle transaksjonene gjelder det samme anleggsmidlet. Bilaget blir ikke postert hvis det inneholder mer enn ett anleggsmiddel, selv om **Nytt bilag**-feltet er satt til **Bare ett bilagsnummer** på **Journalnavn**-siden i økonomimodulen. Hvis du tar med flere anleggsmidler i bilaget, vises meldingen "Det kan bare være én anleggsmiddeltransaksjon per bilag", og du vil ikke kunne postere bilaget.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

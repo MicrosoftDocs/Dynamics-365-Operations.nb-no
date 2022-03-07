@@ -2,11 +2,9 @@
 title: Administrere ansattpermisjon
 description: Administrere ansattpermisjon i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: bf27f2a235ddb6c37601ce9d2dd7ceb356a511d9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4419982"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794691"
 ---
 # <a name="manage-employee-leave"></a>Administrere ansattpermisjon
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan behandle en ansatts permisjon etter permisjonstype. Dette inkluderer utløp av permisjonsregistrering og justering av permisjonstypesaldoer. 
 
@@ -56,3 +56,6 @@ Du kan inkludere en årsakskode og kommentar når du justerer en ansatts permisj
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

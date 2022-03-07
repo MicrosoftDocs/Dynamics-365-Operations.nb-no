@@ -2,11 +2,9 @@
 title: Opprette et avskrivningsforslag
 description: Dette emnet beskriver hvordan satsvise avskrivningsforslag fungerer, og forklarer hvordan du foreslår avskrivning for anleggsmidler.
 author: abruer
-manager: AnnBe
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b3d62e982d26afbec7ac04dd80592a73f4a3286f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 013c768c8a016f399a27b1488ad0d5b339fdf7cb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968910"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813585"
 ---
 # <a name="create-a-depreciation-proposal"></a>Opprette et avskrivningsforslag
 
@@ -47,3 +45,6 @@ Dette emnet beskriver hvordan satsvise avskrivningsforslag fungerer, og forklare
 3. Velg **Linjer**.
 4. Velg **Poster**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

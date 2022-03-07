@@ -1,25 +1,28 @@
 ---
 title: Avstemme frakt manuelt
 description: Denne fremgangsmåten viser hvordan du avstemmer frakt manuelt.
-author: Henrikan
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1342f8b26d3f629c9fe4439761ffc26372dce061
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: fc4fc51955544df4d0156a4c83bcc5b5a0e13df3
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573111"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4434782"
 ---
 # <a name="reconcile-freight-manually"></a>Avstemme frakt manuelt
 
@@ -35,29 +38,26 @@ Denne fremgangsmåten viser hvordan du avstemmer frakt manuelt. Dette gjøres va
 
 ## <a name="create-a-carrier-invoice"></a>Opprette en transportørfaktura
 Hvis du avstemmer frakt manuelt og ikke mottar transportørfakturaer automatisk, kan du opprette en faktura basert på fraktbrevet.  
-1. Klikk på Relatert informasjon.
-2. Klikk på Detaljer for fraktbrev.
-3. Klikk på Generer fraktbrevfaktura.
+1. Klikk Relatert informasjon.
+2. Klikk Detaljer for fraktbrev.
+3. Klikk Generer fraktbrevfaktura.
 4. Skriv inn en verdi i Faktura-feltet.
-5. Klikk på OK.
+5. Klikk OK.
 
 ## <a name="reconcile-the-invoice"></a>Avstemme fakturaen
 Når du avstemmer en transportørfaktura og et fraktbrev, gjøres dette linje for linje.  
-1. Klikk på Samsvar fraktbrev og fakturaer.
+1. Klikk Samsvar fraktbrev og fakturaer.
 2. Vis delen Fakturadetaljer.
 3. Utvid delen Detaljer for ikke-samsvart fraktbrev.
 4. Merk den valgte raden i listen.
-5. Klikk på Samsvar.
+5. Klikk Samsvar.
 6. Utvid delen Detaljer for samsvart fraktbrev.
 
 ## <a name="submit-the-invoice-for-approval"></a>Send fakturaen til godkjenning
-1. Klikk på Send til godkjenning.
+1. Klikk Send til godkjenning.
 2. Lukk siden.
 3. Fjern merket for Skjul godkjent. 
-4. Klikk på Leverandørfakturajournaler.
-5. Klikk på for å følge koblingen i Referansejournalnummeret-feltet.
-6. Klikk på Linjer.
+4. Klikk Leverandørfakturajournaler.
+5. Klikk for å følge koblingen i Referansejournalnummeret-feltet.
+6. Klikk Linjer.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

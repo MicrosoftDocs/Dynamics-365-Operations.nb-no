@@ -1,7 +1,7 @@
 ---
 title: Kanban-jobbplanlegging for Lean manufacturing
 description: Denne artikkelen inneholder informasjon om visuell kontroll over planlegging av kanban-jobb og forskjellige måter å planlegge kanban-jobber.
-author: johanhoffmann
+author: cvocph
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 52961
 ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f70c3cf44ce90b13250836013636920267d2016d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 25d3de7d9d49cbd05f7d3d3daa42f51e60dc0f8e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570231"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825849"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-jobbplanlegging for Lean manufacturing
 
@@ -65,7 +65,8 @@ Tilgjengelig kapasitet per dag eller uke er definert av kalenderen som er tilord
 
 Listesiden **Kanban-jobbplanlegging** inneholder en faktaboks som viser tilgjengelig og bestilt periodekapasitet for den valgte arbeidscellen. Avhengig av de valgte tidsplanperiodene i produksjonsflytmodellen viser periodene dager eller uker.
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 
 

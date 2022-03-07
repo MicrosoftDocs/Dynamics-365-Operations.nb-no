@@ -1,7 +1,7 @@
 ---
 title: Bruke sporing for nedbryting
 description: Denne artikkelen beskriver hvordan du kan bruke sporing til å undersøke årsakene til resultatet av en ordrenedbryting.
-author: ChristianRytt
+author: roxanadiaconu
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c42eaf4c9218a186bca30848bc7b09c634f9a69e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6c24a976063a6a87718368822b224290181147fa7c640f973184a234cc726ed3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762920"
 ---
 # <a name="use-tracing-for-explosion"></a>Bruke sporing for nedbryting
 

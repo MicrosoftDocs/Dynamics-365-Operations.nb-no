@@ -2,16 +2,13 @@
 title: Program for salgssted (POS) og språkinnstillinger for bruker
 description: Dette emnet beskriver hvordan du endrer språkinnstillinger i Modern POS (MPOS) og Cloud POS.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49bfcaa4c05ea8e6cc6bf0a8f855f2474cea35bc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 099d16f63e03ecbc8bf911fe4385b35fac7c67f763c17379cdc6b6229abdea16
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774539"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Program for salgssted (POS) og språkinnstillinger for bruker
 
@@ -60,8 +57,11 @@ POS-brukerens språkinnstilling bestemmer oversettelser som brukes i brukergrens
 
 Salgsstedsbrukerens språkinnstillinger settes fra **Alle arbeidere** på siden **Arbeider** under **Retail og Commerce &gt; Språk**. Den angis ikke i hovedprofilkategorien. Denne innstillingen brukes ikke av salgssted. Hvis brukerens språk ikke er angitt eller den er satt til et språk der oversettelsene ikke er tilgjengelige, tilbakestiller Salgsstedet til butikkens språk.
 
-|             | Språket i Brukergrensesnittet                  | Data-språk (produkter, kvitteringsformater, linjevisning, osv.) |
+| &nbsp;      | Språket i Brukergrensesnittet                  | Data-språk (produkter, kvitteringsformater, linjevisning, osv.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Firma** | Standard                    | Standard                                                       |
 | **Butikk**   | Overstyrer firma          | Overstyrer firma                                             |
 | **Bruker**    | Overstyrer butikk eller firma | Aldri                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016937"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237382"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversikt over tilbudsforespørsler (RFQ-er)
 
@@ -80,23 +80,23 @@ Du velger malen som skal brukes for e-postvarsling som sendes til leverandører,
 - %Årsak til retur av bud%
 - %Årsak til endring%
 - %Endring klargjort av%
-- %Firma%
+- %Company%
 - %RFQ-saksnavn%
 - %Dato og klokkeslett for utløpsdato%
-- %Dato%
+- %Date%
 
-Tokenet %Årsak til retur av bud% og %Årsak til endring% erstattes med tekst som innkjøpsansvarlig kan skrive inn når han eller hun fullfører endringen i veiviseren for **endring**. Verdiene for tokenet %Endring klargjort av% og %Firma% hentes automatisk fra tilbudsforespørselen. Tokenet %Dato% erstattes av dagens dato.
+Tokenet %Årsak til retur av bud% og %Årsak til endring% erstattes med tekst som innkjøpsansvarlig kan skrive inn når han eller hun fullfører endringen i veiviseren for **endring**. Verdiene for tokenene %Endring klargjort av% og %Company% hentes automatisk fra tilbudsforespørselen. Tokenet %Date% erstattes av dagens dato.
 
 Hvis du vil avbryte en tilbudsforespørsel etter at den er sendt, kan du gjøre det fra tilbudsforespørselssaken. En e-postmal kreves for å sende annulleringsmeldingen til leverandørens kontaktpersoner. Malen må være valgt på siden **Parametere for innkjøp og leverandører**. Når malen er opprettet, kan den inneholde følgende erstatningstokener:
 
 - %Årsak til annullering%
 - %RFQ-sak%
 - %Tilbudsforespørsel annullert av%
-- %Firma%
+- %Company%
 - %RFQ-saksnavn%
-- %Dato%
+- %Date%
 
-Tokenet % Årsak til annullering% erstattes med tekst som den innkjøpsansvarlige kan skrive inn i veiviseren for **annullering**. Tokenet %Dato% erstattes av dagens dato.
+Tokenet % Årsak til annullering% erstattes med tekst som den innkjøpsansvarlige kan skrive inn i veiviseren for **annullering**. Tokenet %Date% erstattes av dagens dato.
 
 Hvis du vil bruke årsakskoder på et bud for å angi hvorfor det ble avvist eller godtatt, må du definere årsakskoder på **Leverandørårsaker**-siden.
 
@@ -246,3 +246,6 @@ I eksemplet nedenfor du kan se den høyeste og laveste statusen på tilbudsfores
 | Godta et av budene. (eller minst én linje) |                          Mottatt                           |                           Godtatt                           |                    Mottatt                    |                    Godtatt                     |                   Mottatt                   |                   Godtatt                    |
 |           Avvis alle de andre budene.           |                          Avslått                           |                           Godtatt                           |                    Avslått                    |                    Godtatt                     |                   Avslått                   |                   Godtatt                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

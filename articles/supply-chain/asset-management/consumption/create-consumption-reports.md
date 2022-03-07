@@ -1,10 +1,12 @@
 ---
 title: Opprette forbruksrapporter
 description: Dette emnet forklarer hvordan du oppretter forbruksrapporter i Aktivastyring.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e54511932ee9487cccae12a479dd210b5978c593dd7000ec2dfe09c3c4014670
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e32924c71fd221caee4a7f413908120014ec8c5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711983"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022539"
 ---
 # <a name="create-consumption-reports"></a>Opprette forbruksrapporter
 
@@ -75,6 +77,3 @@ Når du har bokført forbruk på arbeidsordrer, kan du skrive ut en forbruksrapp
 >[!NOTE]
 >Du kan også generere en [arbeidsordrerapport](../work-orders/work-order-report.md), som inneholder flere arbeidsordredetaljer.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

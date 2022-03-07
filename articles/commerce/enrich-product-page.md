@@ -2,36 +2,30 @@
 title: Supplere en produktside
 description: Dette emnet beskriver hvordan du supplerer en produktside i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0c663498a65832c68b80ea7166da34914ceefb8c70d6a598f3fa648b199ef156
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414568"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777602"
 ---
 # <a name="enrich-a-product-page"></a>Supplere en produktside
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du supplerer en produktside i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Som standard bruker webområdet en generell side til å vise produktdata. Denne siden inneholder grunnleggende informasjon om produktet og kontrollene som kreves for å selge den. Du kan imidlertid supplere informasjonen som kommer fra Commerce Scale Unit, med tilleggsbilder eller -tekst for et bestemt produkt. Denne prosessen kalles å supplere produktsiden.
 
@@ -73,3 +67,8 @@ Følg denne fremgangsmåten for å supplere en produktside.
 [Supplere en kategorimålside](enrich-category-page.md)
 
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
+
+[Opprette dynamiske e-handelssider basert på URL-parametere](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

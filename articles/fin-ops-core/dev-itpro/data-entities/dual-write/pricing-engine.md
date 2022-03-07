@@ -4,17 +4,24 @@ description: Dette emnet beskriver hvordan du bruker prissettingsmotoren i Micro
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 134bfc2ec0e69938c945e384a98676d3708c8e17
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2020-03-10
+ms.openlocfilehash: bf4154816f01040a236dde77b92ee69396158614
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7783313"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750770"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synkronisere med prismotoren for Supply Chain Management ved behov
 
@@ -41,7 +48,7 @@ Microsoft Dynamics 365 Supply Chain Management inkluderer en prissettingsmotor s
     + Total avgift
     + Totalbeløp
     
-5. For å sikre at systemet vurderer handelsavtaler for å beregne prisen:
+5. For å sikre at systemet vurderer handels- og salgsavtaler for å beregne prisen:
     1. Gå til Supply Chain Management-miljøet.
     2. Gå til **Kunder \> Oppsett \> Kundeparametere**.
     3. Velg fanen **Priser** i sidenavigasjonsfeltet.
@@ -51,7 +58,7 @@ Microsoft Dynamics 365 Supply Chain Management inkluderer en prissettingsmotor s
 
 Når du velger **Prisordre** i Sales, kalles **Summer**-funksjonen i fanen **Salgsordre \> Vis** i Supply Chain Management for den tilknyttede salgsordren. Verdiene i ordretotalen i Sales brukes til å fylle ut de tilsvarende kolonnene i Supply Chain Management.
 
-Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen de eksisterende forretningsavtalene for kunden og produktene som er oppført i salgsordren. Denne informasjonen brukes til å beregne totalene. Når **Prisordre** er valgt, gjenspeiler Sale automatisk alle oppsett som er utført i Supply Chain Management.
+Når salgsordretotalen beregnes i Supply Chain Management, evaluerer beregningen de eksisterende forretningsavtalene og salgsavtalene for kunden og produktene som er oppført i salgsordren. Denne informasjonen brukes til å beregne totalene. Når **Prisordre** er valgt, gjenspeiler Sale automatisk alle oppsett som er utført i Supply Chain Management.
 
 ## <a name="limitations"></a>Begrensninger
 
@@ -60,7 +67,6 @@ Når kolonnene i Sales fylles ut, gjelder følgende begrensninger:
 + Oppsettet av gebyrer og gebyrfordelinger i Supply Chain Management replikeres ikke i Sales.
 + Prissetting tar ikke hensyn til spesielle detaljhandelpriser som er angitt i **Detaljhandelskanal**-kolonnen på salgsordrelinje-siden i Supply Chain Management.
 + Rabatter som er definert i delen **Handelsrabattbehandling** i Supply Chain Management, vurderes ikke.
-+ Prissetting vurderer ikke salgsavtaler.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

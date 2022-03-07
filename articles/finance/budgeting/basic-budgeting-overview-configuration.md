@@ -1,36 +1,38 @@
 ---
 title: Oversikt over budsjettering
-description: Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 Finance, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram.
-author: panolte
-ms.date: 04/29/2021
-ms.topic: overview
+description: Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 Finance, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem inn fra et tredjepartsprogram.
+author: ShylaThompson
+manager: AnnBe
+ms.date: 01/11/2018
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "60113"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: panolte
+ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e881a878265062dc5ce8cec68a45237711f385d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986516"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446407"
 ---
-# <a name="budgeting-overview"></a>Oversikt over budsjettering 
+# <a name="budgeting-overview"></a>Oversikt over budsjettering
 
 [!include [banner](../includes/banner.md)]
 
-Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 Finance, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem ned fra et tredjepartsprogram.
+Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 Finance, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem inn fra et tredjepartsprogram.
 
-## <a name="overview"></a>Oversikt
+<a name="overview"></a>Oversikt
+--------
 
 Det godkjente budsjettet for en juridisk enhet vedlikeholdes i et dokument som kalles en *budsjettregisteroppføring*. Linjene i et dokument for budsjettregisteroppføring er kjent som *budsjettkonto*-oppføringer, og inneholder informasjon om finansdimensjoner, datoer og beløpene for det godkjente budsjettet. Budsjettregisteroppføringsdokumentet er integrert med grunnleggende finansrapporter og forespørselssider der faktiske finansbeløp sammenlignes med budsjetterte beløp. 
 
@@ -38,7 +40,7 @@ Det finnes flere metoder for å opprette budsjettregisteroppføringer:
 
 -   Manuelt registrere dokumentinformasjon på siden **Budsjettregisteroppføringer**.
 -   Bruk Microsoft Excel-malen som du kan åpne ved å klikke **Åpne i Excel**-knappen på siden **Budsjettregisteroppføringer**.
--   Bruk dataenheten **Budsjettkontooppføringer** i Databehandling for å importere budsjettregisteroppføringer. Du bør vurdere å bruke denne metoden og aktivere parameteren **Settbasert behandling** når du må importere mange budsjettkontooppføringer i systemet.
+-   Bruk dataenheten **Budsjettkontooppføringer** i Databehandling for å importere budsjettregisteroppføringer. Du bør vurdere å bruke denne metoden og aktivere **parameteren** **Settbasert** behandling når du må importere mange budsjettkontooppføringer i systemet.
 -   Hvis firmaet bruker funksjonaliteten for planlegging av budsjett til å klargjøre budsjettdata, kan du bruke den periodiske prosessen **Generer budsjettregisteroppføring**.
 
 Budsjettregisteroppføringen anses som fullført når budsjettsaldoene har blitt oppdatert. På siden **Budsjettregisteroppføringer** klikker du **Oppdater budsjettsaldoer** for den valgte budsjettregisteroppføringer eller flere oppføringer. Når du har oppdatert budsjettsaldoene, endres statusen for budsjettregisteroppføringen til **Fullført**. Fullført budsjettregisteroppføring kan ikke åpnes for redigering igjen. Hvis budsjettdataene må justeres, må du derfor opprette en ny budsjettregisteroppføring i stedet for å rette data i en fullført budsjettregisteroppføring.
@@ -72,7 +74,7 @@ Funksjonalitet som ble introdusert i Microsoft Dynamics 365 Finance versjon 10.0
 
 Med funksjonen for **Budsjettregisteroppføringer bare for antall** kan du postere en budsjettregistreringsoppføring med bare antall-beløp. Du kan for eksempel postere en budsjettoppføring med et antall på 32 og en pris på null, som resulterer i et beløp på null. Du kan deretter bruke dette antallet i konteksten til en regnskapsrapport for å bestemme en pris per antall. Vær oppmerksom på at ingen forespørsler eller rapporter ble oppdatert som en del av denne funksjonen. Funksjonen gjør det bare mulig å postere et beløp på null.
 
-Funksjonen for **Standard beløpstype for budsjettregisteroppføringer** tillater at standard beløpstype i en budsjettregisteroppføring er en annen beløpstype enn utgift. Linjen for budsjettregisteroppføring vil nå være utgift som standard når hovedkontotypen er utgift. Den vil være inntekt som standard når hovedkontotypen er inntekt, og den vil være utgift som standard for alle andre kontotyper.
+Funksjonen for **Standard beløpstype for budsjettregisteroppføringer** tillater at standard beløpstype i en budsjettregisteroppføring er en annen beløpstype enn utgift. Linjen for budsjettregisteroppføring vil nå være utgift som standard når hovedkontotypen er utgift. Den vil være inntekt som standard når hovedkontotypen er utgift og vil være utgift som standard for alle andre kontotyper.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Bruke arbeidsområder og forespørselssider til å spore budsjett i forhold til faktisk
 Budsjettlederen kan gå gjennom gjeldende tilstand for et budsjett i arbeidsområdet **Finansbudsjetter og prognoser**. Kategoriene for **utgifter over budsjett** og **omsetning under budsjett** gir en rask oversikt over kombinasjonene av finansdimensjoner der budsjettmål ikke oppfylles, eller er nærmer seg terskelen. Du kan tilpasse budsjetterskelprosenten og finansdimensjonssettene som brukes i disse kategoriene ved å klikke **Konfigurer mitt arbeidsområde**. Kan du klikke **Enhetsledere** for å se arbeidere som er ansvarlige for bestemte finansdimensjonskombinasjoner som er valgt i disse kategoriene. Hvis du for eksempel ser at Utgiftsbudsjett for driftsavdelingen overskrider budsjetterskelen, kan du enkelt finne og kontakte lederen for driftsavdelingen for å diskutere saken. 
@@ -86,6 +88,3 @@ Et firma som bruker funksjonaliteten for budsjettplanlegging, kan opprette og br
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

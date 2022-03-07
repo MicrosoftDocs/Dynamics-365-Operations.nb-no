@@ -2,11 +2,9 @@
 title: Vanlige spørsmål for adressebøker
 description: Dette emnet inneholder svar på vanlige spørsmål knyttet til adressebøker.
 author: msftbrking
-manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796904"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463634"
 ---
 # <a name="address-books-faq"></a>Vanlige spørsmål om adressebøker
 
@@ -67,3 +65,13 @@ Du kan angi partsposter i den globale adresseboken eller på den rette enhetssid
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jeg oversette adresseinformasjon for partsposter?
 
 Du kan definere oversettelser av adresseinformasjon, slik at informasjonen vises på ditt brukerspråk (systemspråk) i programmet, men på et annet språk på dokumenter som salgsordrer. Du kan angi oversettelser for land-/områdenavn, adresseformål og navnerekkefølger. Systemspråket ditt er eksempelvis dansk, og du oppretter en salgsordre for en kunde i Frankrike. I så fall kan du vise kundeposten på dansk i programmet, men vise adresseinformasjonen på fransk på den utskrevne salgsordren. Når du definerer oversettelser, bør du angi en oversettelse for hvert element i listen. Alle elementer som du ikke angir en oversettelse for, vises på systemspråket. Systemspråket ditt er eksempelvis dansk, og du sender et dokument til en kunde i Spania. Hvis du ikke har angitt spanske (ESP) oversettelser for adresseinformasjonen, vil denne informasjonen vises på dansk både i programmet og på det utskrevne dokumentet.
+
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Når jeg har importert adresser, hvorfor kan jeg ikke redigere postene?
+
+Når du importerer adresser, finnes det et felt med navnet **IsLocationOwner**. Dette feltet angir om parten som er knyttet til lokasjonen (adressen), er eieren av adressen. Hvis parten er eier av adressen, kan adressen redigeres når parten brukes i den globale adresseboken eller fra hovedpostsiden (for eksempel kunde, leverandør eller arbeider). Hvis parten ikke eier adressen, kan ikke posten redigeres. 
+
+Når du importerer adresser, bør **IsLocationOwner**-feltet settes til **Ja** hvis du vil at adressen skal kunne redigeres ved hjelp av den tilknyttede parten. Hvis dette feltet importeres feil, kan stedseieren oppdateres i den globale adresseboken.
+
+Hvis du vil ha mer informasjon om hvordan du endrer lokasjonseieren for en importert adresse, kan du se [Administrere lokasjonseiere](./global-address-book-location-owner.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

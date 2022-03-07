@@ -2,36 +2,30 @@
 title: Arbeide med CSS-overstyringsfiler
 description: Dette emnet beskriver hvorfor, når og hvordan du bruker gjennomgripende stilark (CSS-overstyringsfiler) i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ec43b16b1df07400cffe597378ad4035e4d07e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414647"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964610"
 ---
 # <a name="work-with-css-override-files"></a>Arbeide med CSS-overstyringsfiler
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvorfor, når og hvordan du bruker gjennomgripende stilark (CSS-overstyringsfiler) i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Permanente områdestiler bør vanligvis håndteres gjennom et områdetema. Temaer gir grunnleggende CSS og stilinnstillinger for modulene på en hvilken som helst side på nettstedet. Temaene opprettes ved hjelp av Dynamics 365 Commerce Online Software Development Kit (SDK), og de distribueres til nettstedene gjennom Microsoft Dynamics Lifecycle Services (LCS). Feilsøkingsfunksjoner for temaer og modulgrensesnittkonfigurasjoner i SDK hjelper nettstedsutviklere med å opprette tilpasningsmulige og sammenhengende områdeutformingspakker. Når disse utformingspakkene distribueres til et område, kan områdeforfattere fokusere på å opprette, redigere og publisere innhold i stedet for områdeutvikling.
 
@@ -107,10 +101,11 @@ Følg denne fremgangsmåten for å deaktivere en CSS-overstyringsfil på nettste
 
 [Legge til et favorittikon](add-favicon.md)
 
-[Legge til en velkomstmelding](add-welcome-message.md)
-
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
 [Legge til språk på området](add-languages-to-site.md)
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

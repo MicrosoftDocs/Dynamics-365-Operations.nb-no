@@ -2,29 +2,30 @@
 title: Ytelsesstyring
 description: Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
-ms.custom: 221024
+ms.search.scope: Human Resources
+ms.custom:
+- "221024"
+- intro-internal
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc0821a2e3974bee93fc40241fd141374906c456e73730d82d902924b56c0a04
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419904"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732183"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.  
 
@@ -34,7 +35,7 @@ Som diagrammet nedenfor viser, er det tre sider som kan hjelpe deg med å admini
 -   Mål
 -   Medarbeidersamtale
 
-Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. [![Oversikt over ytelsesprosess](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. [![Oversikt over ytelsesprosess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Ytelsesjournal
 
@@ -93,7 +94,7 @@ Du kan også bruke **Kompetanser**-delen for å diskutere, gjennomgå og vurdere
 
 Du kan opprette nye vurderinger som er basert på maler som du har opprettet. Du kan for eksempel ha en mal for én-til-én-vurderinger, utviklingsplaner eller periodiske vurderinger. Du kan velge malen når du oppretter en ny vurdering.
 
-Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Muligheten til å skrive ut ytelsesgjennomganger er bare tilgjengelig i personalmiljøet. Den er ikke tilgjengelig i Dynamics 365 Finance.
@@ -163,3 +164,5 @@ Kildetyper for ytelsesjournaler beskriver hvor ytelsesjournalene kommer fra. Du 
 ### <a name="review-types"></a>Vurderingstyper
 
 Ytelsesvurderingstyper kan hjelpe deg med å styre virkemåten til en vurdering. Du kan aktivere eller deaktivere arbeidsflyten for en vurdering. Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes. Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

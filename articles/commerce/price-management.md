@@ -2,27 +2,24 @@
 title: Prisstyring av detaljsalg
 description: Dette emnet beskriver begrepene for å opprette og administrere salgspriser i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759291"
 ---
 # <a name="retail-sales-price-management"></a>Salgsprisbehandling for Retail
 
@@ -43,21 +40,21 @@ Følgende termer brukes i dette emnet.
 
 ## <a name="price-groups"></a>Prisgrupper
 
-Prisgrupper er kjernen i pris- og rabattstyring i Commerce. Prisgrupper brukes til å tilordne priser og rabatter til handelsenheter (dvs. kanaler, kataloger og fordelsprogrammer). Siden prisgrupper brukes for all prissetting og alle rabatter, er det svært viktig at du planlegger hvordan du skal bruke dem før du begynner.
+Prisgrupper er kjernen i pris- og rabattstyring i Commerce. Prisgrupper brukes til å tilordne priser og rabatter til Commerce-enheter (dvs. kanaler, kataloger og fordelsprogrammer). Siden prisgrupper brukes for all prissetting og alle rabatter, er det svært viktig at du planlegger hvordan du skal bruke dem før du begynner.
 
-En prisgruppe er bare et navn, en beskrivelse, og eventuelt en prissettingsprioritet. Det viktigste å huske om prisgrupper er at de brukes til å behandle mange-til-mange-relasjoner som rabatter og priser har med handelsenheter.
+En prisgruppe er bare et navn, en beskrivelse, og eventuelt en prissettingsprioritet. Det viktigste å huske om prisgrupper er at de brukes til å behandle mange-til-mange-relasjoner som rabatter og priser har med Commerce-enheter.
 
-Illustrasjonen nedenfor viser hvordan prisgrupper brukes. I denne illustrasjonen ser du at "Prisgruppe" bokstavelig talt er i sentrum av pris- og rabattstyring. Handelsenhetene som du kan bruke til å administrere differensielle priser og rabatter, vises til venstre, og de faktiske pris- og rabattpostene er til høyre.
+Illustrasjonen nedenfor viser hvordan prisgrupper brukes. I denne illustrasjonen ser du at "Prisgruppe" bokstavelig talt er i sentrum av pris- og rabattstyring. Commerce-enhetene som du kan bruke til å administrere differensielle priser og rabatter, vises til venstre, og de faktiske pris- og rabattpostene er til høyre.
 
-![Prisgrupper](./media/PriceGroups.png "Prisgrupper")
+![Prisgrupper.](./media/PriceGroups.png "Prisgrupper")
 
-Når du oppretter prisgrupper, bør du ikke bruke en enkelt prisgruppe for flere typer enheter for handel. Hvis ikke kan det være vanskelig å finne ut hvorfor en bestemt pris eller rabatt blir brukt på en transaksjon.
+Når du oppretter prisgrupper, bør du ikke bruke en enkelt prisgruppe for flere typer Commerce-enheter. Hvis ikke kan det være vanskelig å finne ut hvorfor en bestemt pris eller rabatt blir brukt på en transaksjon.
 
 Som den røde stiplede linjen i illustrasjonen viser, støtter Commerce hovedfunksjonaliteten til Microsoft Dynamics 365 for en prisgruppe som er angitt direkte for en kunde. I dette tilfellet får du imidlertid bare salgsprisforretningsavtaler. Hvis du vil bruke kundespesifikke priser, anbefaler vi at du ikke definere prisgrupper direkte for kunden. I stedet bør du bruke tilknytninger. 
 
 Merk deg at hvis prisgruppen er angitt for kunden, blir denne prisgruppen knyttet til salgsordretoppteksten for ordrene som er opprettet for denne kunden. Hvis brukeren endrer prisgruppen i ordretoppteksten, blir den gamle prisgruppen erstattet med den nye prisgruppen bare for den gjeldende ordren. Den gamle prisgruppen vil for eksempel ikke påvirke gjeldende ordre, men den vil fortsatt være knyttet til kunden for fremtidige ordrer.
 
-De følgende delene gir mer informasjon om handelsenhetene som du kan bruke til å angi ulike priser når prisgruppene brukes. Konfigurasjonen av priser og rabatter for alle disse enhetene gjøres i to trinn. Denne fremgangsmåten kan utføres i begge rekkefølger. Den logiske rekkefølgen er imidlertid å definere prisgruppene på enhetene først, fordi dette er sannsynligvis et engangs oppsett som utføres under implementering. Deretter, når priser og rabatter opprettes, kan du angi prisgruppene på disse prisene og rabattene individuelt.
+De følgende delene gir mer informasjon om Commerce-enhetene som du kan bruke til å angi ulike priser når prisgruppene brukes. Konfigurasjonen av priser og rabatter for alle disse enhetene gjøres i to trinn. Denne fremgangsmåten kan utføres i begge rekkefølger. Den logiske rekkefølgen er imidlertid å definere prisgruppene på enhetene først, fordi dette er sannsynligvis et engangs oppsett som utføres under implementering. Deretter, når priser og rabatter opprettes, kan du angi prisgruppene på disse prisene og rabattene individuelt.
 
 ### <a name="channels"></a>Kanaler
 
@@ -217,20 +214,21 @@ Når du angir salgspriser i Dynamics 365, angir du ikke om prisverdien er inklus
 
 Hvis du arbeider med både inklusive og eksklusive typer mva, er det svært viktig at du setter priser riktig, fordi totalbeløpet som kunden betaler, endres hvis innstillingen **Pris inkluderer merverdiavgift** på kanalen endres.
 
-## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Forskjeller mellom prissetting for detaljhandel og prissetting for ikke-detaljehandel
+## <a name="differences-between-commerce-pricing-and-non-commerce-pricing"></a>Forskjeller mellom Commerce-prissetting og prissetting for ikke-Commerce
 
-En enkelt prissettingsmotor brukes til å beregne priser på tvers av alle kanaler: Telefonsenter, Detaljhandelbutikk og Nettbutikker. Dette bidrar til å muliggjøre enhetlig handel.
+En enkelt prissettingsmotor brukes til å beregne priser på tvers av alle kanaler: telefonsenter, detaljhandelsbutikk og nettbutikker. Dette bidrar til å muliggjøre enhetlig Commerce.
 
-Prissetting er utformet for å fungere med detaljhandelsenheter i stedet for enheter som ikke gjelder for detaljhandel. Det er spesielt utformet for å angi priser per butikk, ikke etter lager.
+Prissetting er utformet for å fungere med Commerce-enheter i stedet for enheter som ikke gjelder for Commerce. Det er spesielt utformet for å angi priser per butikk, ikke etter lager.
 
-Prissettingsmotoren **støtter ikke** følgende prissettingsfunksjoner:
+Commerce-prismotoren **støtter ikke** følgende prissettingsfunksjoner:
 
 - Angivelse av priser etter lagringsdimensjoner for område eller område og lager støttes ikke. Hvis du bare angir områdedimensjonen i forretningsavtalene, ignorerer prissettingsmotoren ignorere området og bruker forretningsavtalen på alle områder. Hvis du angir både område og lager, er virkemåten udefinert/ikke testet fordi det forventes at forhandlere bruker butikkprisgruppene til å kontrollere prisene for hver butikk/lager.
 - Attributtbasert prissetting støttes ikke.
 - Leverandørrabatt-overføring støttes ikke.
+- Den generiske valutafunksjonen støttes ikke, selv om en handelsavtale har aktivert alternativet **Ta med generisk valuta**, men denne forretningsavtalen anses bare som gyldig for valutaen som er definert i forretningsavtalen.
 - Standard prismotor for Supply Chain Management støtter prisberegningen basert på den "Ønsket forsendelsesdato" og "Ønsket mottaksdato" sammen med gjeldende dato. Prissetting for detaljhandel støtter imidlertid ikke disse verdiene for øyeblikket. Årsaken er at kunder ikke forventer at den ønskede leveringsdatoen påvirker vareprisen i B2C-scenarier. I noen tilfeller har forhandlere både B2B- og B2C-operasjoner. For B2B-operasjoner er det vanlig å endre priser på grunnlag av leveringsdatoene. Disse forhandlerne kan bruke prissetting i Supply Chain Management for B2B-virksomheten sin og prissetting for detaljhandel for B2C-virksomheten. Prissetting for detaljhandel gjelder bare hvis programbrukeren legges til som en kundesenterbruker, slik at forhandlerne kan tilordne bestemte brukere som skal arbeide med prissetting i Supply Chain Management og tilordne noen arbeidere som jobber med prissetting for detaljhandel, og som derfor bør legges til som kundesenterbrukere. I tillegg må **Bruk dagens dato for å beregne priser**-egenskapen i **Handelsparametere > Prissetting og rabatter > Diverse** være aktivert. På denne måten kan de beholde den siste kundeparameterverdien for "Ønsket forsendelsesdato" eller "Ønsket mottaksdato" for prissetting i Supply Chain Management, men detaljhandelsprisen vil fortsatt bruke dagens dato for beregning av prissetting.
 
-I tillegg støtter **bare** prissettingsmotoren følgende prissettingsfunksjoner:
+I tillegg støtter **bare** Commerce-prismotoren følgende prissettingsfunksjoner:
 
 - Prisen er basert på produktdimensjoner, i rekkefølge fra den mest spesifikke variantprisen til minst spesifikke variantprisen til produktstandardprisen. En pris som er angitt ved hjelp av to produktdimensjoner (for eksempel farge og størrelse), brukes før en pris som angis ved hjelp av bare én produktdimensjon (for eksempel størrelse).
 - Samme prisgruppe kan brukes til å kontrollere priser og rabatter.
@@ -239,4 +237,7 @@ I tillegg støtter **bare** prissettingsmotoren følgende prissettingsfunksjoner
 
 Pris er en av de viktigste faktorene som styrer kjøpsavgjørelsene for mange kunder, og mange kunder sammenligner priser på ulike områder før de gjør et kjøp. For å bidra til å sikre at de gir konkurransedyktige priser, følger forhandleren nøye med på konkurrentene og utfører ofte kampanjer. For å hjelpe disse forhandlerne med å tiltrekke seg kunder, er det svært viktig at produktsøket, bla gjennom-funksjonen, listene og produktlister-siden viser de mest nøyaktige prisene.
 
-I en kommende frigivelse av Commerce vil API-et for **GetActivePrices** returnere priser som inkluderer enkle rabatter (for eksempel rabatter som ikke er avhengige av andre varer i handlekurven). På denne måten er prisene som vises, nær det faktiske beløpet kundene skal betale for varer. Denne API-en inneholder alle typer enkle rabatter: tilknytningsbaserte, lojalitetsbaserte, katalogbaserte og kanalbaserte rabatter. I tillegg vil API-en returnere navnene og gyldighetsinformasjonen for de brukte rabattene, slik at forhandlerne kan gi en mer detaljert beskrivelse av prisen og skape en følelse av viktighet hvis rabattgyldigheten utløper snart.
+API-en for **GetActivePrices** i Commerce returnere priser som inkluderer enkle rabatter (for eksempel rabatter som ikke er avhengige av andre varer i handlekurven). På denne måten er prisene som vises, nær det faktiske beløpet kundene skal betale for varer. Denne API-en inneholder alle typer enkle rabatter: tilknytningsbaserte, lojalitetsbaserte, katalogbaserte og kanalbaserte rabatter. I tillegg vil API-en returnere navnene og gyldighetsinformasjonen for de brukte rabattene, slik at forhandlerne kan gi en mer detaljert beskrivelse av prisen og skape en følelse av viktighet hvis rabattgyldigheten utløper snart.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

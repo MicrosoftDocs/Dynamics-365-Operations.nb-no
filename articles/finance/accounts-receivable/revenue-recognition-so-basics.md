@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e2eafc6785aaf9bc7421bc80c90fa4a7f98a2d4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6212ecbf1883405d7ca8cb1dba752b778e4d901c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459616"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995548"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Inntektsføring av salgsordrer
 
@@ -48,7 +47,7 @@ Det finnes to begreper for inntektsføring:
 
     I dette eksemplet er den første varen, S0001 tilordnet en **1O** (en-forekomst) inntektsplan. Denne linjen representerer et scenario for milepæltype, der inntekten vil bli ført etter at installasjonen skjer i fremtiden. Derfor utsettes inntekt til installasjonen er fullført.
 
-    Den andre varen, S0008, er en servicevare som er definert som en PCS-vare. De opprettholdte utviklingstjenestene leveres til kunden i løpet av en periode på 12 måneder. Derfor tilordnes en **12M**-inntektsplan til produktet som standard. Siden denne varen er en PCS-vare, må kontraktens start- og sluttdatoer defineres. Som standard er start- og sluttdatoen for kontrakten funnet i vare detaljer – kategorien Oppsett. I inntektsplanen defineres oppsettet for **12M**, slik at kontrakts vilkårene automatisk fylles ut som vist i følgende illustrasjon.
+    Den andre varen, S0008, er en servicevare som er definert som en PCS-vare. De opprettholdte utviklingstjenestene leveres til kunden i løpet av en periode på 12 måneder. Derfor tilordnes en **12M**-inntektsplan til produktet som standard. Siden denne varen er en PCS-vare, må kontraktens start- og sluttdatoer defineres. Som standard er start- og sluttdatoen for kontrakten funnet i vare detaljer – fanen Oppsett. I inntektsplanen defineres oppsettet for **12M**, slik at kontrakts vilkårene automatisk fylles ut som vist i følgende illustrasjon.
 
     [![Inntektsplaner](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
 
@@ -56,7 +55,7 @@ Det finnes to begreper for inntektsføring:
 
 ## <a name="confirm-the-sales-order"></a>Bekrefte salgsordren
 
-Hvis du vil vise flere detaljer om inntektsprisen og inntektsplanen, bruker du knappene i gruppen **Inntektsføring** i kategorien **Behandle** i handlingsruten i salgsordren. Ettersom salgsordren ikke er bekreftet på dette tidspunktet, er ikke knappene som brukes til inntektsføring, tilgjengelige. Disse knappene blir tilgjengelige eller ikke tilgjengelige etter hvert som salgsordren går gjennom stadiene som fører til oppfyllelse.
+Hvis du vil vise flere detaljer om inntektsprisen og inntektsplanen, bruker du knappene i gruppen **Inntektsføring** i fanen **Behandle** i handlingsruten i salgsordren. Ettersom salgsordren ikke er bekreftet på dette tidspunktet, er ikke knappene som brukes til inntektsføring, tilgjengelige. Disse knappene blir tilgjengelige eller ikke tilgjengelige etter hvert som salgsordren går gjennom stadiene som fører til oppfyllelse.
 
 [![Topptekst i salgsordre](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 

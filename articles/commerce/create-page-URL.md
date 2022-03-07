@@ -2,11 +2,9 @@
 title: Opprette en URL-adresse for side
 description: Dette emnet dekker de grunnleggende konseptene og prosedyrene for oppretting av en URL-adresse på området.
 author: bicyclingfool
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 062a49df93e442dbe402ac9a78244c966958aaa2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 923723ce6e3f92c5186cd8a562a6e3fee3fdf70dfe8db29c86192cb1db515b1a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717729"
 ---
 # <a name="create-a-page-url"></a>Opprette en URL-adresse for side
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker de grunnleggende konseptene og prosedyrene for oppretting av en URL-adresse på området.
-
-## <a name="overview"></a>Oversikt
 
 Den fullstendige eller absolutte URL-adressen som peker til en side på området, består av forskjellige deler. For eksempel har URL-adressen `https://www.contoso.com/en-us/contactus` følgende deler:
 
@@ -106,3 +101,6 @@ Hvis du vil omadressere en URL-adresse til en annen URL-adresse, følger du diss
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Legge til språk på området](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

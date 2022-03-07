@@ -2,16 +2,13 @@
 title: Hovedplanlegging med behovsprognoser
 description: Dette emnet forklarer hvordan du inkluderer behovsprognoser under hovedplanlegging med Planleggingsoptimalisering.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
-ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666728"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867253"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hovedplanlegging med behovsprognoser
 
@@ -89,9 +86,9 @@ Når du inkluderer en prognose i en hovedplan, kan du velge hvordan prognosekrav
 
 For å inkludere en prognose i en hovedplan og velge metoden som brukes til å redusere prognosebehove, går du til **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**. I feltet **Prognosemodell** velger du en prognisemodell. I feltet **Metode som brukes til å redusere prognosebehov** velger du en metode. Følgende alternativer er tilgjengelige:
 
-- None
+- Ingen
 - Prosent – reduksjonsnøkkel
-- Transaksjoner – reduksjonsnøkkel (støttes ikke med Planleggingsoptimalisering ennå)
+- Transaksjoner – reduksjonsnøkkel
 - Transaksjoner – dynamisk periode
 
 De følgende delene gir mer informasjon om hvert alternativ.
@@ -140,32 +137,85 @@ I dette tilfellet, hvis du kjører prognoseplanlegging 1. januar, forbrukes beho
 
 #### <a name="transactions--reduction-key"></a>Transaksjoner – reduksjonsnøkkel
 
-Hvis du velger **Transaksjoner - reduksjonsnøkkel**, reduseres prognosebehovene av transaksjonene som skjer i periodene som er definert av reduksjonsnøkkelen.
+Hvis du angir **metoden som brukes til å redusere prognosebehov**-feltet til *Transaksjoner - reduksjonsnøkkel*, reduseres prognosekravene av kvalifiserte behovstransaksjoner som oppstår i periodene som er definert reduksjonsnøkkelen.
+
+Det kvalifiserte behovet defineres av feltet **Reduser prognose etter**-feltet på **Dekningsgrupper**-siden. Hvis du setter feltet **Reduser prognose etter** til *Ordrer*, betraktes bare salgsordretransaksjoner som kvalifisert behov. Hvis du setter den til *Alle transaksjoner*, betraktes alle ikke-konserninterne avgangslagertransaksjoner som kvalifisert behov. Hvis konserninterne salgsordrer også skal vurderes som kvalifisert behov, angir du alternativet **Ta med konserninterne ordrer** til *Ja*.
+
+Prognosereduksjon starter med den første (tidligste) behovsprognoseposten i reduksjonsnøkkelperioden. Hvis antallet kvalifiserte lagertransaksjoner er mer enn antallet behovsprognoselinjer i samme reduksjonsnøkkelperiode, vil saldoen i lagertransaksjonsantallet brukes til å redusere behovsprognoseantallet i forrige periode (hvis det er en prognose som ikke er brukt).
+
+Hvis det ikke gjenstår en prognose som ikke er forbrukt, i den forrige reduksjonsnøkkelperioden, blir saldoen for lagertransaksjonsantall brukt til å redusere prognoseantallet i neste måned (hvis det finnes en ikke-brukt prognose).
+
+Verdien til **Prosent**-feltet på reduksjonsnøkkellinjene vil ikke brukes når **Metode som brukes til å redusere prognosebehov**-feltet er satt til *Transaksjoner – reduksjonsnøkkel*. Bare datoene brukes til å definere reduksjonsnøkkelperioden.
+
+> [!NOTE]
+> Alle prognoser som posteres på eller før dagens dato, blir ignorert og vil ikke bli brukt til å opprette planlagte bestillinger. Hvis for eksempel behovsprognosen for måneden genereres 1. januar, og du kjører hovedplanlegging som omfatter behovsprognoser 2. januar, vil beregningen ignorere behovsprognoselinjen som er datert 1. januar.
 
 ##### <a name="example-transactions--reduction-key"></a>Eksempel: Transaksjoner – reduksjonsnøkkel
 
 Dette eksemplet viser hvordan faktiske ordrer som skjer i periodene som er definert av reduksjonsnøkkelen, reduserer behovene i behovsprognosen.
 
-Du velger for eksempel **Transaksjoner – reduksjonsnøkkel** i feltet **Metode som brukes til å redusere prognosebehov** -feltet på siden **Hovedplaner**.
+[![Faktiske ordrer og prognose før hovedplanlegging kjøres.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Følgende salgsordrer finnes den 1. januar.
+Du velger for eksempel *Transaksjoner – reduksjonsnøkkel* i feltet **Metode som brukes til å redusere prognosebehov** -feltet på siden **Hovedplaner**.
 
-| Måned    | Antall stykker som er bestilt |
-|----------|--------------------------|
-| Januar  | 956                      |
-| Februar | 1,176                    |
-| Mars    | 451                      |
-| April    | 119                      |
+Følgende behovsprognoselinjer finnes den 1. april.
 
-Hvis du bruker den samme behovsprognosen på 1 000 stykker per måned som ble brukt i forrige eksempel, overføres følgende behovsantall til hovedplanen:
+| Dato     | Antall stykker som anslått |
+|----------|-----------------------------|
+| 5. april  | 100                         |
+| 12. april | 100                         |
+| 19. april | 100                         |
+| 26. april | 100                         |
+| 3. mai    | 100                         |
+| 10. mai   | 100                         |
+| 17. mai   | 100                         |
 
-| Måned                | Antall stykker som kreves |
-|----------------------|---------------------------|
-| Januar              | 44                        |
-| Februar             | 0                         |
-| Mars                | 549                       |
-| April                | 881                       |
-| Mai til desember | 1 000                     |
+Følgende salgsordrelinjer finnes i april.
+
+| Dato     | Antall stykker som er forespurt |
+|----------|----------------------------|
+| 27. april | 240                        |
+
+[![Planlagt forsyning generert basert på aprilordrer.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Følgende behovsantall overføres til hovedplanen når hovedplanleggingen kjøres 1. april. Som du ser, ble prognosetransaksjonene for april redusert med behovsantallet på 240 i en serie, fra og med den første av disse transaksjonene.
+
+| Dato     | Antall stykker som kreves |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| 3. mai    | 100                       |
+| 10. mai   | 100                       |
+| 17. mai   | 100                       |
+
+Anta nå at nye ordrer ble importert for maiperioden.
+
+Følgende salgsordrelinjer finnes i mai.
+
+| Dato   | Antall stykker som er forespurt |
+|--------|----------------------------|
+| 4. mai  | 80                         |
+| 11. mai | 130                        |
+
+[![Planlagt forsyning generert basert på april- og mai-ordrer.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Følgende behovsantall overføres til hovedplanen når hovedplanleggingen kjøres 1. april. Som du ser, ble prognosetransaksjonene for april redusert med behovsantallet på 240 i en serie, fra og med den første av disse transaksjonene. I mai ble imidlertid prognosetransaksjonene redusert med totalt 210, fra og med den første behovsprognosetransaksjonen i mai. Totalene per periode beholdes imidlertid (400 i april og 300 i mai).
+
+| Dato     | Antall stykker som kreves |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| 3. mai    | 0                         |
+| 4. mai    | 80                        |
+| 10. mai   | 0                         |
+| 11. mai   | 130                       |
+| 17. mai   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transaksjoner – dynamisk periode
 
@@ -250,7 +300,7 @@ Derfor opprettes følgende planlagte ordrer:
 En prognosereduksjonsnøkkel brukes i metodene **Transaksjoner – reduksjonsnøkkel** og **Prosent – reduksjonsnøkkel** for å redusere prognosebehovene. Følg denne fremgangsmåten for å opprette og definere en reduksjonsnøkkel.
 
 1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Reduksjonsnøkler**.
-2. Velg **By**, eller trykk **Ctrl + N** for å opprette en reduksjonsnøkkel.
+2. Velg **Ny** for å opprette en reduksjonsnøkkel.
 3. I **Reduksjonsnøkkel**-feltet skriver du inn en unik identifikator for prognosereduksjonsnøkkelen. Angi deretter et navn i **Navn**-feltet. 
 4. Definer periodene og reduksjonsnøkkelprosenten i hver periode:
 
@@ -263,14 +313,81 @@ En prognosereduksjonsnøkkel brukes i metodene **Transaksjoner – reduksjonsnø
 En prognosereduksjonsnøkkel må tilordnes til en dekningsgruppe for varen. Følg denne fremgangsmåten hvis du vil tilordne en reduksjonsnøkkel til varens dekningsgruppe.
 
 1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Dekningsgrupper**.
-2. På **Andre**-hurtigkategorien i feltet **Reduksjonsnøkkel** velger reduksjonsnøkkelen som skal tilordnes dekningsgruppen. Reduksjonsnøkkelen gjelder deretter for alle varer som tilhører en dekningsgruppe.
+2. På **Andre**-hurtigfanen i feltet **Reduksjonsnøkkel** velger reduksjonsnøkkelen som skal tilordnes dekningsgruppen. Reduksjonsnøkkelen gjelder deretter for alle varer som tilhører en dekningsgruppe.
 3. Hvis du vil bruke en reduksjonsnøkkel for å beregne prognosereduksjon under hovedplanlegging, må du definere denne innstillingen i oppsettet av prognoseplanen eller hovedplanen. Gå til ett av følgende steder:
 
-    - Hovedplanlegging \> Oppsett \> Planer \> Prognoseplaner
-    - Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner
+    - **Hovedplanlegging \> Oppsett \> Planer \> Prognoseplaner**
+    - **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**
 
-4. På siden **Prognoseplaner** eller **Hovedplaner**, i **Generelt**-hurtigkategorien i feltet **Metode som brukes til å redusere prognosebehov**, velger du enten **Prosent – reduksjonsnøkkel** eller **Transaksjoner – reduksjonsnøkkel**.
+4. På siden **Prognoseplaner** eller **Hovedplaner**, i **Generelt**-hurtigfanen i feltet **Metode som brukes til å redusere prognosebehov**, velger du enten **Prosent – reduksjonsnøkkel** eller **Transaksjoner – reduksjonsnøkkel**.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Redusere en prognose etter transaksjoner
 
-Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper**, i **Andre**-hurtigkategorien i feltet **Reduser prognose etter**, velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
+Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper**, i **Andre**-hurtigfanen i feltet **Reduser prognose etter**, velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
+
+## <a name="forecast-models-and-submodels"></a>Prognosemodeller og undermodeller
+
+Denne delen beskriver hvordan du oppretter prognosemodeller og hvordan du kombinerer flere prognosemodeller ved å definere undermodeller.
+
+En *prognosemodell* gir navn til og identifiserer en bestemt prognose. Når du har opprettet prognosemodellen, kan du legge til prognoselinjer i den. Hvis du vil legge til prognoselinjer for flere varer, bruker du siden **Behovsprognoselinjer**. Hvis du vil legge til prognoselinjer for en bestemt valgt vare, bruker du siden **Frigitte produkter**.
+
+En prognosemodell kan omfatte prognoser fra andre prognosemodeller. Hvis du vil oppnå dette resultatet, legger du til andre prognosemodeller som *undermodeller* for en overordnet prognosemodell. Du må opprette hver relevante modell før du kan legge den til som undermodell for en overordnet prognosemodell.
+
+Resultatstrukturen gir deg en kraftig måte å kontrollere prognoser på, fordi den lar deg kombinere (samle) inndataene fra flere individuelle prognoser. Derfor er det enkelt å kombinere prognoser for simuleringer fra et planleggingspunkt. Du kan for eksempel definere en simulering som er basert på kombinasjonen av en vanlig prognose med prognosen for en vårkampanje.
+
+### <a name="submodel-levels"></a>Undermodellnivåer
+
+Det er ingen begrensninger på antall undermodeller som kan legges til en overordnet prognosemodell. Strukturen kan imidlertid bare være ett nivå lavt. Med andre ord kan ikke en prognosemodell som er undermodell for en annen prognosemodell, ha sine egne undermodeller. Når du legger til undermodeller i en prognosemodell, kontrollerer systemet om prognosemodellen allerede er en undermodell av en annen prognosemodell.
+
+Hvis hovedplanleggingen finner en undermodell som har sine egne undermodeller, får du en feilmelding.
+
+#### <a name="submodel-levels-example"></a>Eksempel på undermodellnivåer
+
+Prognosemodell A har prognosemodell B som undermodell. Derfor kan ikke prognosemodell B ha sine egne undermodeller. Hvis du prøver å legge til en undermodell i prognosemodell B, får du følgende feilmelding: Prognosemodell B er en undermodell for modell A.
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Samling av prognoser på tvers av prognosemodeller
+
+Prognoselinjer som forekommer på samme dag, vil bli aggregert over prognosemodellen og dens undermodeller.
+
+#### <a name="aggregation-example"></a>Eksempel på samling
+
+Prognosemodell A har prognosemodell B og C som undermodeller.
+
+- Prognosemodell A omfatter en etterspørselsprognose for 2 stykker (stk) den 15. juni.
+- Prognosemodell B omfatter en etterspørselsprognose for 3 stk den 15. juni.
+- Prognosemodell C omfatter en etterspørselsprognose for 4 stk den 15. juni.
+
+Den resulterende behovsprognosen vil være ett enkelt behov for 9 stk (2 + 3 + 4) den 15. juni.
+
+> [!NOTE]
+> Hver undermodell bruker egne parametere, og ikke parameterne for den overordnede prognosemodellen.
+
+### <a name="create-a-forecast-model"></a>Opprette en prognosemodell
+
+Hvis du vil opprette en prognosemodell, gjør du følgende.
+
+1. Gå til **Hovedplanlegging \> Oppsett \> Behovsprognose \> Prognosemodeller**.
+1. Velg **Ny** i handlingsruten.
+1. Angi følgende felt for den nye prognosemodellen:
+
+    - **Modell** – Angi en unik identifikator for modellen.
+    - **Navn** – Angi et beskrivende navn for modellen.
+    - **Stoppet** – Vanligvis bør du sette dette alternativet til *Nei*. Sett det til *Ja* bare hvis du vil hindre redigering av alle prognoselinjer som er tilordnet modellen.
+
+    > [!NOTE]
+    > Feltet **Ta med i kontantstrømprognoser** og feltene i hurtigfanen **Prosjekt** er ikke knyttet til hovedplanlegging. Derfor kan du ignorere dem i denne sammenhengen. Du må bare ta hensyn til dem når du arbeider med prognoser for modulen **Prosjektstyring og regnskap**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Tilordne undermodeller til en prognosemodell
+
+Hvis du vil tilordne undermodeller til en prognosemodell, gjør du følgende.
+
+1. Gå til **Lagerstyring \> Oppsett \> Prognose \> Prognosemodeller**.
+1. I listen velger du prognosemodellen du vil definere en undermodell for.
+1. I hurtigfanen **Undermodell** velger du **Legg til** for å legge til en rad i rutenettet.
+1. I den nye raden angir du følgende felter:
+
+    - **Undermodell** – Velg prognosemodellen som skal legges til som undermodell. Denne prognosemodellen må allerede finnes, og den må ikke ha noen egne undermodeller.
+    - **Navn** – Angi et beskrivende navn for undermodellen. Dette navnet kan for eksempel angi undermodellens relasjon til den overordnede prognosemodellen.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

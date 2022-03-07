@@ -1,24 +1,27 @@
 ---
 title: Definere regler for salgsprovisjon
 description: Denne fremgangsmåten viser hvordan du konfigurerer og aktiverer salgprovisjonsberegning og sporing.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended, CommissionEmplSalesGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f42f2fbe22124dbaaf2c4bd2f4394f734d166d5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2b1ea016817462269a13e450c8c7576546c7f0eb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578902"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434333"
 ---
 # <a name="set-up-sales-commission-rules"></a>Definere regler for salgsprovisjon
 
@@ -51,9 +54,9 @@ Denne fremgangsmåten viser hvordan du konfigurerer og aktiverer salgprovisjonsb
 19. Klikk på **Ny**.
 20. Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.
 21. Bruk **hurtigfilteret** for å søke etter poster. Du kan for eksempel filtrere på Navn-feltet med verdien Susan Burk.
-22. Klikk på **Velg**.
+22. Klikk **Velg**.
 23. Sett **Provisjonsandel** til 50.
-24. Klikk på **Lagre**.
+24. Klikk **Lagre**.
 25. Gå til **Salg og markedsføring > Provisjoner > Provisjonsberegning**. Du kan definere provisjonssatsen som ansatt skal motta for en salgstransaksjon når den inneholder forhåndangitt kombinasjon av kunde og produkt, på siden **Provisjonsberegning**. Som en del av provisjonssatsoppsettet, må du angi grunnlaget for provisjonsberegning og om den skal inkludere eller ekskludere rabatter. Du kan også angi en gyldighetsperiode for når provisjonssatsen er aktiv.  
 26. Klikk på **Ny**.
 27. Velg Gruppe i **Varekode**-feltet.
@@ -67,7 +70,7 @@ Denne fremgangsmåten viser hvordan du konfigurerer og aktiverer salgprovisjonsb
     - Behold alternativet "Før linjerabatt".  
     - Behold alternativet "Omsetning" som grunnlag for beregning av provisjonsverdi.    
 35. Angi et tall i feltet Provisjonssats i prosent.
-36. Klikk på **Lagre**.
+36. Klikk **Lagre**.
 
 ## <a name="setting-up-commission-posting"></a>Definere provisjonspostering
 1. Gå til **Navigasjonsrute > Salg og markedsføring > Provisjoner > Provisjonspostering**. Provisjonsgebyrer betales til ansatte, og må derfor defineres til å sikre riktig økonomisk postering til de aktuelle kontoene i **økonomimodulen**. Dette gjøres på siden **Provisjonspostering**. Gå gjennom oppsettet som er tilgjengelig for det gjeldende firmaet. Vanligvis posteres provisjonsbeløpene til en dedikert utgiftskonto og motregnes til en egen konto for leverandører. Hvis du ikke har satt opp regler for provisjonspostering, vil systemet ikke kunne fullføre fakturering av en salgsordre som har kvalifiserte provisjoner.  
@@ -76,23 +79,20 @@ Denne fremgangsmåten viser hvordan du konfigurerer og aktiverer salgprovisjonsb
 ## <a name="assign-a-commission-group-to-a-customer-and-a-product"></a>Tilordne en Provisjonsgruppe til en kunde og et produkt
 1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Kunder > Alle kunder**.
 2. Finn og velg ønsket post i listen.
-3. Klikk på koblingen i den valgte raden i listen.
-4. Klikk på **Rediger**.
+3. Klikk koblingen i den valgte raden i listen.
+4. Klikk **Rediger**.
 5. Vis delen **Standarder for salgsordrer**.
 6. Klikk på rullegardinknappen i feltet **Provisjonsgruppe** for å åpne oppslaget.
 7. Velg gruppen du opprettet tidligere, i listen.
 8. Klikk på rullegardinknappen i feltet **Salgsgruppe** for å åpne oppslaget.
 9. Finn og velg ønsket post i listen.
-10. Klikk på **Lagre**.
+10. Klikk **Lagre**.
 11. Gå til **Navigasjonsrute > Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter**.
 12. Bruk **filteret** for å søke etter poster. Du kan for eksempel filtrere på Varenummer-feltet med verdien T0020.
-13. Klikk på koblingen i den valgte raden i listen.
-14. Klikk på **Rediger**.
+13. Klikk koblingen i den valgte raden i listen.
+14. Klikk **Rediger**.
 15. Vis **Selg**-delen.
 16. Klikk på rullegardinknappen i feltet **Provisjonsgruppe** for å åpne oppslaget.
 17. Velg provisjonsgruppen du opprettet tidligere, i listen.
 18. Velg **Lagre**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

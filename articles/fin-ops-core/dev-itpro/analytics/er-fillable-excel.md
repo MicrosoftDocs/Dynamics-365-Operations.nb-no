@@ -2,7 +2,7 @@
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952658"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488144"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
 [!include[banner](../includes/banner.md)]
 
-Du kan utforme en formatkonfigurasjon for [Elektronisk rapportering (ER)](general-electronic-reporting.md) som har en ER-formatkomponent som du kan konfigurere til å generere et utgående dokument i et Microsoft Excel-arbeidsbokformat. Spesielle formatkomponenter for ER må brukes til dette formålet.
+Du kan utforme en konfigurasjon av format for [Elektronisk rapportering (ER)](general-electronic-reporting.md) som har en [formatkomponent](general-electronic-reporting.md#FormatComponentOutbound) for ER som du kan konfigurere til å generere et utgående dokument i et Microsoft Excel-arbeidsbokformat. Spesielle formatkomponenter for ER må brukes til dette formålet.
 
 Hvis du vil ha mer informasjon om denne funksjonen, kan du følge fremgangsmåten i emnet [Utforme en konfigurasjon for generering av rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
 
@@ -85,8 +85,6 @@ I fanen **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskape
 
 Komponenten **Område** angir et Excel-område som må kontrolleres av denne ER-komponenten. Navnet på området er definert i egenskapen **Excel-område** for denne komponenten.
 
-### <a name="replication"></a>Replikering
-
 Egenskapen **Replikeringsretning** angir om og hvordan området skal gjentas i et generert dokument:
 
 - Hvis egenskapen **Replikeringsretning** er satt til **Ingen replikering**, blir ikke det riktige Microsoft Excel-området gjentatt i det genererte dokumentet.
@@ -94,8 +92,6 @@ Egenskapen **Replikeringsretning** angir om og hvordan området skal gjentas i e
 - Hvis egenskapen **Replikeringsretning** er satt til **Horisontal**, blir ikke det riktige Microsoft Excel-området gjentatt i det genererte dokumentet. Hvert replikerte område er plassert til høyre for det opprinnelige området i en Excel-mal. Antall repetisjoner defineres av antall poster i en datakilde for typen **Postliste** som er bundet til denne ER-komponenten.
 
 Hvis du vil finne ut mer om horisontal replikering, kan du følge trinnene i [Bruke vannrett utvidbare områder for å legge til kolonner i Excel-rapporter dynamisk](tasks/er-horizontal-1.md).
-
-### <a name="nested-components"></a>Nestede komponenter
 
 Komponenten **Område** kan ha andre nestede komponenter som brukes til å angi verdier i de riktige navngitte områdene i Excel.
 
@@ -109,40 +105,11 @@ Komponenten **Område** kan ha andre nestede komponenter som brukes til å angi 
     > [!NOTE]
     > Bruk dette mønsteret til å la Excel formatere angitte verdier basert på den nasjonale innstillingen til den lokale datamaskinen som åpner det utgående dokumentet.
 
-### <a name="enabling"></a>Aktiverer
-
 I fanen **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskapen **Aktivert** for en **Område**-komponent for å angi om komponenten må plasseres i et generert dokument:
 
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Sann** under kjøring, eller hvis ingen uttrykk er konfigurert i det hele tatt, vil det aktuelle området bli fylt ut i det genererte dokumentet.
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Usann** under kjøring, og hvis området ikke representerer hele rader eller kolonner, vil ikke det aktuelle området fylles ut i det genererte dokumentet.
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Usann** under kjøring, og hvis området representerer hele rader eller kolonner, vil det genererte dokumentet inneholde de radene og kolonnene som skjulte rader og kolonner.
-
-### <a name="resizing"></a>Endring av størrelse
-
-Du kan konfigurere Excel-malen til å bruke cellene til å presentere tekstdata. For å sikre at hele teksten i en celle er synlig i et generert dokument, kan du konfigurere denne cellen til å vise teksten automatisk inni den. Du kan også konfigurere raden som inneholder denne cellen, slik at den automatisk justerer høyden hvis den brutte teksten ikke er fullt synlig. Hvis du vil ha mer informasjon, kan du se delen "Bryt tekst i en celle" i [Reparer data som er avkortet i celler](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
-
-> [!NOTE]
-> På grunn av en kjent [Excel-begrensning](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), selv om du konfigurerer cellene til å bryte tekst, og du konfigurerer at radene som inneholder disse cellene, skal automatisk justere høyden slik at den passer til den tekstbrytingen, kan det hende at du ikke kan bruke Excel-funksjonene **Beste tilpasning** og **Bryt tekst** for flettede celler og radene som inneholder dem. 
-
-Per Dynamics 365 Finance-versjon 10.0.23 kan du tvinge ER til å beregne høyden på hver rad i et generert dokument som ble konfigurert slik at den automatisk passer høyden på innholdet i nestede celler hver gang raden inneholder minst én flettet celle som ble konfigurert til å bryte teksten i den. Den beregnede høyden brukes deretter til å endre størrelsen på raden for å sikre at alle cellene i raden er synlige i det genererte dokumentet. Følg denne fremgangsmåten for å begynne å bruke denne funksjonaliteten når du kjører alle ER-formater som er konfigurert til å bruke Excel-maler til å generere utgående dokumenter.
-
-1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurasjoner**, i delen **Relaterte koblinger**, velger du flisen **Parametere for elektronisk rapportering**.
-3. På **Parametere for elektronisk rapportering**-siden, på **Kjøretid**-fanen angir du **Tilpass radhøyde automatisk** til **Ja**.
-
-Når du vil endre denne regelen for ett enkelt ER-format, oppdaterer du utkastversjonen av dette formatet ved å følge disse trinnene.
-
-1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurasjoner**, i delen **Konfigurasjoner**, velger du **Rapporteringskonfigurasjoner**.
-3. På **Konfigurasjoner**-siden, i treet med konfigurasjoner i den venstre ruten, velger du en ER-konfigurasjon som er utformet for å bruke en Excel-mal til å generere utgående dokumenter.
-4. I hurtigfanen **Versjoner** velger du konfigurasjonsversjonen med statusen **Utkast**.
-5. Velg **Utforming** i handlingsruten.
-6. På siden **Formatutforming** i formattreet i venstre rute velger du Excel-komponenten som er knyttet til en Excel-mal.
-7. På **Format**-fanen, i feltet **Juster radhøyde**, velger du en verdi for å angi om ER skal tvinges, ved kjøretid, til å endre høyden på rader i et utgående dokument som er generert av det redigerte ER-formatet:
-
-    - **Standard** – Bruk den generelle innstillingen som er konfigurert i feltet **Tilpass radhøyde automatisk** på siden **Parametere for elektronisk rapportering**.
-    - **Ja** – Overstyr den generelle innstillingen, og endre radhøyden ved kjøretid.
-    - **Nei** – Overstyr den generelle innstillingen, men uten å endre radhøyden ved kjøretid.
 
 ## <a name="cell-component"></a>Komponenten Celle
 
@@ -330,56 +297,6 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 6. Generer et utskrivbart FTI-dokument, og gå gjennom bunnteksten til det genererte dokumentet.
 
     ![Gjennomgang av bunnteksten til et generert dokument i Excel-format.](./media/er-fillable-excel-footer-4.gif)
-
-## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Eksempel 2: Ordne EPPlus-problem med flettede celler
-
-Du kan kjøre et ER-format for å generere et utgående dokument i et Excel-arbeidsbokformat. Når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert i arbeidsområdet **Funksjonsbehandling**, brukes [EPPlus-biblioteket](https://www.nuget.org/packages/epplus/4.5.2.1) til å lage Excel-utdata. På grunn av kjent [Excel-virkemåte](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) og en begrensning av EPPlus-biblioteket, kan du imidlertid oppleve følgende unntak: "Kan ikke slette/overskrive sammenslåtte celler. Et område er delvis flettet med det andre flettede området." Hvis du vil vite hva slags Excel-maler som kan forårsake dette unntaket, og hvordan du kan løse problemet, kan du fullføre eksemplet nedenfor.
-
-1. Opprett en ny Excel-arbeidsbok i Excel-skrivebordsprogrammet.
-2. I regnearket **Ark1** legger du til **ReportTitle**-navnet for cellen **A2**.
-3. Slå sammen cellene **A1** og **A2**.
-
-    ![Gå gjennom resultatene av å flette cellene A1 og A2 i den utformede Excel-arbeidsboken i skrivebordsprogrammet i Excel.](./media/er-fillable-excel-example2-1.png)
-
-3. På siden **Konfigurasjoner** [leger du til et nytt ER-format](er-fillable-excel.md#add-a-new-er-format) for å generere et utgående dokument i Excel-arbeidsbokformat.
-4. På siden **Formatutforming**-siden [importerer](er-fillable-excel.md#template-import) du den utformede Excel-arbeidsboken til det tillagte ER-formatet som en ny mal for utgående dokumenter.
-5. I fanen **Tilordninge** konfigurerer du bindingen for komponenten **ReportTitle** for [Celle](er-fillable-excel.md#cell-component)-typen.
-6. Kjøre det konfigurerte ER-formatet. Legg merke til at følgende unntak: "Kan ikke slette/overskrive sammenslåtte celler. Et område er delvis flettet med det andre flettede området."
-
-    ![Ser gjennom resultatene av å kjøre det konfigurerte ER-formatet på Formatutforming-siden.](./media/er-fillable-excel-example2-2.png)
-
-Du kan løse problemet på en av følgende måter:
-
-- **Enklere, men ikke anbefalt**: I arbeidsområdet for **Funksjonsbehandling** kan du slå av funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering**. Selv om denne fremgangsmåten er enklere, kan du oppleve andre problemer hvis du bruker den, fordi enkelte ER-funksjoner bare støttes når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert.
-- **Anbefalt:** Følg disse trinnene:
-
-    1. I Excel-skrivebordsprogrammet endrer du Excel-arbeidsboken på en av følgende måter:
-
-        - I regnearket **Ark1** fjerner du sammenslåing av celler **A1** og **A2**.
-        - Endre referansen for **ReportTitle**-navnet fra **=Sheet1!$A$2** til **=Sheet1!$A$1**.
-
-        ![Gå gjennom resultatene av å endre referansen i den utformede Excel-arbeidsboken i Excel-skrivebordsprogrammet.](./media/er-fillable-excel-example2-3.png)
-
-    2. På **Formatutforming**-siden [importerer](er-fillable-excel.md#template-import) du den endrede Excel-arbeidsboken til det redigerbare ER-formatet for å oppdatere den eksisterende malen.
-    3. Kjør det modifiserte ER-formatet.
-
-        ![Se gjennom det generert dokumentet i Excel-skrivebordprogrammet.](./media/er-fillable-excel-example2-4.png)
-
-## <a name="limitations"></a>Begrensninger
-
-### <a name="known-epplus-library-limitations"></a>Kjente EPPlus-bibliotekbegrensninger
-
-#### <a name="external-data-sources"></a>Eksterne datakilder
-
-Hvis en av malene inneholder en pivottabell som er basert på en PowerPivot-modell som refererer til en [ekstern datakilde](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b), og funksjonen **Aktiver bruk av EPPlus-bibliotek i rammeverket for elektronisk rapportering** er aktivert, får du følgende feilmelding når du kjører et ER-format som bruker malen til å generere et utgående dokument i Excel-format: Cachesource er ikke et regneark. Du har følgende alternativer for å løse dette problemet:
-
-- **Anbefales:** Utform Excel-løsningen du bruker på nytt:
-
-    1. Isoler delen som inneholder pivoter i en separat Excel-arbeidsbok (arbeidsbok A). 
-    2. Bruk ER til å generere en ny Excel-arbeidsbok (arbeidsbok B) fra Finance som inneholder de nødvendige detaljene. 
-    3. Se i arbeidsbok B i arbeidsbok A så snart arbeidsbok B er generert.
-
-- Slå av funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** for å bruke et annet alternativ enn EPPlus. 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

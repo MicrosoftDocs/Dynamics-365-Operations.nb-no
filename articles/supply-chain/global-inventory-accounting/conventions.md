@@ -10,18 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 7844671202a03533eb6215f557a206c13978e902
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 97c27006ce95d0cd4551fec209f40328779b435b
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860698"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678597"
 ---
 # <a name="conventions"></a>Konvensjoner
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 En konvensjon er en container for et sett med policyer som påvirker systemvirkemåten. På grunnlag av forretningskravene må du definere konvensjoner ved å bruke en kombinasjon av de forskjellige policyene som fastsetter hvordan kostnader skal regnskapsførers i globalt lagerregnskap. Du kan knytte hver konvensjon til én eller flere finansmoduler for å sikre konsekvens i regnskapspolicyer som gjelder i alle finansmodulene.
 

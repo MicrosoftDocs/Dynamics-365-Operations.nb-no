@@ -2,11 +2,9 @@
 title: Definere ordreoppfyllelse for butikker
 description: Dette emnet gir en oversikt over hvordan butikkordreoppfyllelse settes opp.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
@@ -16,18 +14,16 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d6cfa0d1eba4ccb0b24839b7cc632835b17107e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 246a79f6f1578e81510d4a57ee12f0e0497bff84
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965327"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193185"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Definere ordreoppfyllelse for butikker
 
 [!include [banner](includes/banner.md)]
-
-## <a name="overview"></a>Oversikt
 
 Mange forhandlere vil optimalisere ordreoppfyllelsen ved å la butikker oppfylle ordrer. Ordreoppfyllelse på butikknivå kan bidra til å forenkle scenarier med for store lagre for en bestemt butikk, eller det kan være nødvendig med hensyn til logistikk i tilfeller der en butikk har ekstra kapasitet eller befinner seg nærmere avstand for levering til kunden. For å løse dette behovet, er en enhetlig ordreoppfyllelsesoperasjon tilgjengelig på salgsstedet.
 
@@ -37,9 +33,9 @@ Ordrefullføringen på salgsstedet gir et enkelt arbeidsområde på salgsstedet 
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Konfigurere ordreoppfyllelsesoperasjonen
 
-Ordreoppfyllelse [Operasjons-ID 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations) kan brukes til å få tilgang til arbeidsområdet for butikkordreoppfyllelse på salgsstedet.
+Ordreoppfyllelse [Operasjons-ID 928](pos-operations.md) kan brukes til å få tilgang til arbeidsområdet for butikkordreoppfyllelse på salgsstedet.
 
-Følg trinnene i [Legge til operasjonen i en knappegruppe](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) for å angi hvilken parameter du vil bruke når ordreoppfyllelse startes på salgsstedet. Som standard er **Alle ordrer** valgt når du har angitt ordeoppfyllelsesoperasjonene. Når operasjonen er konfigurert med denne parameteren, vises alle ordrelinjer for oppfyllelse i gjeldende butikk. Også **Ordrer som skal leveres** er tilgjengelig, som kan tilordnes til en knapp og brukes når brukeren bare ønsker å se ordrene som skal leveres fra butikken. Til slutt er det **Ordrer for plukking**. Når denne aktiveres på salgsstedet, vises bare ordrene som skal plukkes i butikken. De forskjellige parameterne kan tilordnes til forskjellige knapper for å gi brukeren en rekke måter å vise ordreoppfyllelse på.
+Følg trinnene i [Legge til operasjonen i en knappegruppe](pos-screen-layouts.md) for å angi hvilken parameter du vil bruke når ordreoppfyllelse startes på salgsstedet. Som standard er **Alle ordrer** valgt når du har angitt ordeoppfyllelsesoperasjonene. Når operasjonen er konfigurert med denne parameteren, vises alle ordrelinjer for oppfyllelse i gjeldende butikk. Også **Ordrer som skal leveres** er tilgjengelig, som kan tilordnes til en knapp og brukes når brukeren bare ønsker å se ordrene som skal leveres fra butikken. Til slutt er det **Ordrer for plukking**. Når denne aktiveres på salgsstedet, vises bare ordrene som skal plukkes i butikken. De forskjellige parameterne kan tilordnes til forskjellige knapper for å gi brukeren en rekke måter å vise ordreoppfyllelse på.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Gi brukere tilgang til ordreoppfyllelse på salgsstedet
 
@@ -108,9 +104,9 @@ Som standard vil ordrer ha statusen **Godkjent**. Ordrestatusen kan vises som en
 
 - **Rediger** – Hvis en ordrestatus er venter, kan den bare redigeres på salgsstedet. Ordrer som allerede er delvis plukket, pakket eller fakturert, kan ikke redigeres fra ordreoppfyllelsesvisningen.
 - **Godta** – Hvis **Godta manuelt** er konfigurert på kanalnivået, må linjer først godkjennes før de kan gå gjennom ordrefullføringsprosessen.
-- **Velg** – Plukkalternativet støtter flere handlinger. **Plukking** oppdaterer statusen for ordrelinjen, slik at andre i butikken ikke prøver å plukke den samme linjen. **Skriv ut plukkliste** skriver ut en plukkliste for den valgte linjen eller linjene og oppdaterer statusen til **Plukking**. Plukklisteformater styres som en del av kvitteringsformater. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsformater, kan du se [Kvitteringsmaler og utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). Til slutt **Merk som plukket** indikerer at linjen er plukket. **Merk som plukket** starter tilsvarende lagertransaksjoner i back office. Valg av handlinger kan utføres samtidig for flere ordrelinjer på tvers av ordrer og for alle leveringsmåter.
+- **Velg** – Plukkalternativet støtter flere handlinger. **Plukking** oppdaterer statusen for ordrelinjen, slik at andre i butikken ikke prøver å plukke den samme linjen. **Skriv ut plukkliste** skriver ut en plukkliste for den valgte linjen eller linjene og oppdaterer statusen til **Plukking**. Plukklisteformater styres som en del av kvitteringsformater. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsformater, kan du se [Kvitteringsmaler og utskrift](receipt-templates-printing.md). Til slutt **Merk som plukket** indikerer at linjen er plukket. **Merk som plukket** starter tilsvarende lagertransaksjoner i back office. Valg av handlinger kan utføres samtidig for flere ordrelinjer på tvers av ordrer og for alle leveringsmåter.
 - **Avvis** – Linjer eller delvise linjer kan avvises. Dette gjør at de kan tildeles på nytt fra back office til en annen butikk eller annet lager. Linjene kan bare avvises hvis de ennå ikke er plukket eller pakket. Hvis du vil avvise en linje som allerede er plukket eller pakket, må linjen være uplukket eller upakket fra back office.
-- **Pakke** – Pakkealternativet støtter to handlinger: **Skriv ut følgeseddel** skriver ut en følgeseddel for de valgte linjene, og **Merk som pakket** vil merke linjene som pakket og merke linjene som levert i back office. Bare ordrelinjer som tilhører den samme ordren og har samme leveringsmåte kan pakkes samtidig. Følgeseddelformater styres som en del av kvitteringsformater. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsformater, kan du se [Kvitteringsmaler og utskrift](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+- **Pakke** – Pakkealternativet støtter to handlinger: **Skriv ut følgeseddel** skriver ut en følgeseddel for de valgte linjene, og **Merk som pakket** vil merke linjene som pakket og merke linjene som levert i back office. Bare ordrelinjer som tilhører den samme ordren og har samme leveringsmåte kan pakkes samtidig. Følgeseddelformater styres som en del av kvitteringsformater. Hvis du vil ha mer informasjon om hvordan du konfigurerer kvitteringsformater, kan du se [Kvitteringsmaler og utskrift](receipt-templates-printing.md).
 - **Send** – Forsendelseshandlingen markerer valgte linjer som **Levert** i back office. Når en linje er fullstendig levert, vises den ikke lenger i ordreoppfyllelsesvisningen.
 - **Plukk** – Plukkhandlingen legger til linjene i transaksjonsvisningen for plukking. Hvis det finnes andre linjer i ordren som for øyeblikket ikke blir plukket, legges de til i transaksjonsvisningen med antall null. Når en linje er fullstendig plukket, vises den ikke lenger i ordreoppfyllelsesvisningen.
 
@@ -130,3 +126,6 @@ Ordreoppfyllelse på salgsstedet omfatter filtrering for å hjelpe brukeren med 
 - Opprettet dato
 - Leveringsdato
 - Mottaksdato
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: Dedikerte betalingsterminaler og spørringer for en skriver og kassaskuff
 description: Dette emnet gir informasjon om muligheten til å ha en dedikert betalingsterminal og å be brukeren velge en kassaskuff og en kvitteringsskriver.
 author: rubendel
-manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a3c7eb9580f9155dd33f6351f37eb1edd269a3d
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414670"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018639"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerte betalingsterminaler og spørringer for en skriver og kassaskuff
 
@@ -53,13 +50,13 @@ Funksjonaliteten som beskrives i dette emnet, støttes av Moderne salgssted for 
 
 Denne funksjonaliteten støtter nettverksaktiverte betalings terminaler og kvitteringsskrivere. Du kan gi kassaskuffstøtte ved å koble kassaskuffen til den nettverksaktiverte kvitteringsskriveren via d/k-porten.
 
-Kunderettet støtte for denne funksjonaliteten leveres av [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Det kan imidlertid hende at andre betalingskoblinger støttes via Commerce-SDK for betalinger. Støttede kvitteringsskrivere inkluderer nettverksaktiverte kvitteringsskrivere fra Star Micronics og Epson.
+Kunderettet støtte for denne funksjonaliteten leveres av [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3). Det kan imidlertid hende at andre betalingskoblinger støttes via Commerce-SDK for betalinger. Støttede kvitteringsskrivere inkluderer nettverksaktiverte kvitteringsskrivere fra Star Micronics og Epson.
 
 For å konfigurere Star Micronics-kvitteringsskrivere bruker du verktøyet Star Micronics Printer Utility for å konfigurere enheten slik at den kan brukes over nettverket. Dette verktøyet oppgir også IP-adressen til enheten.
 
 Hvis du vil konfigurere skrivere med Epson-kvitteringer, bruker du Epson ePOS-verktøyet til å konfigurere enheten til å bruke nettverks protokoller.
 
-Hvis du vil ha mer informasjon om hvordan du konfigurerer nettverksenheter, kan du se [Oversikt over støtte for eksterne nettverksenheter](https://go.microsoft.com/fwlink/?linkid=2129965).
+Hvis du vil ha mer informasjon om hvordan du konfigurerer nettverksenheter, kan du se [Oversikt over støtte for eksterne nettverksenheter](./dev-itpro/network-peripherals.md).
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>Konfigurer en dedikert betalingsterminal og en spørring for en skriver og kassaskuff
 
@@ -76,11 +73,11 @@ Følg denne fremgangsmåten for å konfigurere maskinvareprofilen som er tilordn
 3. Tilordne et maskinvareprofilnummer, og angi en beskrivelse. Denne maskinvareprofilen tilordnes selve registret. Derfor vil en beskrivelse som for eksempel **Dedikert med reserve** være tilstrekkelig.
 4. Konfigurer følgende enhetstyper i hurtigkategoriene for ulike enhetstyper.
 
-    | Enhet | Type | Enhetsnavn | Flere detaljer |
+    | Enhet | Type | Enhetsnavn | Ytterligere detaljer |
     |---|---|---|---|
-    | Skriver | Tilbakefall | *Vilkårlig* | Enhetsnavnet skiller mellom store og små bokstaver. **Kvitteringsprofil-ID-en** må være den samme som **Kvitteringsprofil-ID-en** som er tilordnet nettverksskriveren som er konfigurert i maskinvareprofilen som er tilordnet maskinvarestasjonen på kanalnivået. |
-    | Kassaskuff | Tilbakefall | *Vilkårlig* | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
-    | EFT-tjeneste | Adyen | Gjelder ikke | Hvis du vil ha informasjon om hvordan du konfigurerer den bruksklare Adyen-betalingskoblingen, kan du se [Adyen-betalingskobling i Dynamics 365](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andre betalingskoblinger kan være støttet via [Commerce-SDK for betalinger](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension). |
+    | Skriver | Nettverk | *Vilkårlig* | Enhetsnavnet skiller mellom store og små bokstaver. **Kvitteringsprofil-ID-en** må være den samme som **Kvitteringsprofil-ID-en** som er tilordnet nettverksskriveren som er konfigurert i maskinvareprofilen som er tilordnet maskinvarestasjonen på kanalnivået. |
+    | Kassaskuff | Nettverk | *Vilkårlig* | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
+    | EFT-tjeneste | Adyen | Gjelder ikke | Hvis du vil ha informasjon om hvordan du konfigurerer den bruksklare Adyen-betalingskoblingen, kan du se [Adyen-betalingskobling i Dynamics 365](./dev-itpro/adyen-connector.md?tabs=8-1-3). Andre betalingskoblinger kan være støttet via [Commerce-SDK for betalinger](./dev-itpro/end-to-end-payment-extension.md). |
     | PIN-kodetastatur | Nettverk | **MicrosoftAdyenDeviceV001** | Ingen. |
 
 5. I Dynamics 365 Commerce søker du etter **Registre**.
@@ -88,7 +85,7 @@ Følg denne fremgangsmåten for å konfigurere maskinvareprofilen som er tilordn
 7. Tilordne maskinvareprofilen du nettopp opprettet, til kassen som skal bruke en dedikert betalingsterminal. Enheten som er tilordnet denne kassen, må enten bruke moderne Modern POS for Windows-programmet eller Modern POS for Android-programmet.
 8. Velg **Lagre**.
 9. I handlingsruten går du til **Kasser**-kategorien og velger **Konfigurer IP-adresser**.
-10. I hurtigkategorien for **PIN-kodetastatur** angir du IP-adressen til betalingsterminalen. Hvis du vil ha informasjon om hvordan du får tak i IP-adressen for betalingsterminalen ved å bruke Adyen-koblingen, se [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
+10. I hurtigkategorien for **PIN-kodetastatur** angir du IP-adressen til betalingsterminalen. Hvis du vil ha informasjon om hvordan du får tak i IP-adressen for betalingsterminalen ved å bruke Adyen-koblingen, se [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3).
 11. Velg **Lagre**.
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>Konfigurere en maskinvareprofil for kvitteringsskriveren og kassaskuffen
@@ -103,7 +100,7 @@ Følg denne fremgangsmåten for å konfigurere maskinvareprofilen som brukes til
     | Enhet | Type | beskrivelse | Flere detaljer |
     |---|---|---|---|
     | Skriver | Nettverk | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. **Kvitteringsprofil-ID-en** må være den samme som **Kvitteringsprofil-ID-en** som er tilordnet skriveren som er konfigurert i maskinvareprofilen som er tilordnet kassen. |
-    | Kassaskuff | Nettverk | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
+    | Kassaskuff | Tilbakefall | **Epson** eller **Star** | Enhetsnavnet skiller mellom store og små bokstaver. Angi alternativet **Bruk delte skift** til **Ja**. |
 
 5. Velg **Lagre**.
 
@@ -151,6 +148,9 @@ Butikkmedarbeidere blir bare bedt om å velge en maskinvarestasjon én gang per 
 
 ## <a name="related-articles"></a>Relaterte artikler
 
-- [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Oversikt over støtte for eksterne nettverksenheter](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [Definere POS Hybrid-app på Android og iOS](./dev-itpro/hybridapp.md)
+- [Dynamics 365 Payment Connector for Adyen](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [Oversikt over støtte for eksterne nettverksenheter](./dev-itpro/network-peripherals.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

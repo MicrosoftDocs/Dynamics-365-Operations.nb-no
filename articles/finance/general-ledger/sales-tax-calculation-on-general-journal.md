@@ -1,26 +1,28 @@
 ---
 title: Mva-beregning på generelle journallinjer
 description: Dette emnet beskriver hvordan merverdiavgift beregnes for ulike kontotyper (leverandør, kunde, finans og prosjekt) på generelle journallinjer.
-author: EricWangChen
-ms.date: 02/16/2022
+author: EricWang
+manager: Ann Beebe
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: wangchen
+ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: e420632c248b5b43d4983c5eb483cac580e67f20
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311960"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975564"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mva-beregning på generelle journallinjer
 [!include [banner](../includes/banner.md)]
@@ -55,7 +57,7 @@ I andre tilfeller er mva-retningen innkommende merverdiavgift.
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 
-![Muligheter for avgiftsretning for prosjektkontoer.](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheter for avgiftsretning for prosjektkontoer](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Kontotype er Leverandør
 
@@ -73,13 +75,23 @@ I andre tilfeller er mva-retningen innkommende merverdiavgift.
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 
-![Muligheter for avgiftsretning for leverandørkontoer.](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheter for avgiftsretning for leverandørkontoer](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Kontotype er Kunde
 
-Hvis et bilag har en journallinje der kontotypen er **Kunde**, bruker alle journallinjene i bilaget samme mva-retning. 
+Hvis et bilag har journallinje der kontotypen er **Kunde**, vil alle journallinjene i bilaget bruke samme mva-retning. Punktene nedenfor viser de mulige avgiftsretningene for kundekontoer.
 
-Hvis mva-koden er avgiftsfritak, er mva-retningen Avgiftsfritt salg. I andre tilfeller er mva-retningen Utgående merverdiavgift.
+•   Hvis mva-koden er avgiftsfritak, er mva-retningen avgiftsfritt kjøp.
+
+•   Hvis mva-koden er Mva-transaksjoner innenfor EU, er mva-retningen innkommende merverdiavgift.
+
+•   Hvis mva-koden er snudd avregning, er mva-retningen innkommende merverdiavgift.
+
+I andre tilfeller er mva-retningen Utgående merverdiavgift.
+
+Diagrammet nedenfor illustrerer regelen grafisk.
+
+![Muligheter for avgiftsretning for kundekontoer](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Kontotype er Finans
 
@@ -93,7 +105,7 @@ Hvis journalbeløpet imidlertid er debet (positivt), er mva-retningen Innkommend
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 
-![Muligheter for avgiftsretning for finanskontoer.](media/Sales-Tax-Direction-Ledger.jpg)
+![Muligheter for avgiftsretning for finanskontoer](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Overstyre mva-retningen
 
@@ -105,9 +117,9 @@ Gå til **Økonomimodul \> Kontoplan \> Kontoer \> Hovedkontoer**, og velg hurti
 
 Denne delen beskriver hvordan fortegnet for mva-beløpet beregnes.
 
-![Siden Mva-transaksjoner.](media/sales-tax-amount-sign.jpg)
+![Siden Mva-transaksjoner](media/sales-tax-amount-sign.jpg)
 
-Tabellen nedenfor viser den generelle regelen for å fastslå mva-retningen og fortegnet for mva-beløp i den midlertidige mva-tabellen.
+Tabellen nedenfor viser den generelle regelen for å fastslå fortegnet for mva-beløp i den midlertidige mva-tabellen.
 
 | Journallinjebeløp | Mva-retning  | Fortegn for mva-beløp |
 |---------------------|----------------------|-----------------------|
@@ -116,7 +128,7 @@ Tabellen nedenfor viser den generelle regelen for å fastslå mva-retningen og f
 | Negativ            | Innkommende merverdiavgift | Negativ              |
 | Negativ            | Utgående merverdiavgift    | Positiv              |
 
-Det finnes en spesialregel for bilag som bare har **Prosjekt**- eller **Finans**-linjer når det velges en mva-gruppe eller en mva-gruppe for vare på **Finans**-linjen. Denne regelen styres ved hjelp av funksjonen **Aktiver uavhengig beregning av merverdiavgift for generelle journaler**. Når denne funksjonen er deaktivert, bruker avgiftsbeløpet **Finans**-linjen debet-/kreditretningen for **Prosjekt**-linjen. Når denne funksjonen er aktivert, bruker avgiftsbeløpet **Finans**-linjen sin egen debet-/kreditretning. Tabellene nedenfor viser regelen for hvert scenario. 
+Det finnes en spesialregel for bilag som bare har **Prosjekt**- eller **Finans**-linjer når det velges en mva-gruppe eller en mva-gruppe for vare på **Finans**-linjen. Denne regelen styres ved hjelp av funksjonen Aktiver uavhengig beregning av merverdiavgift for generelle journaler. Når denne funksjonen er deaktivert, bruker avgiftsbeløpet **Finans**-linjen debet-/kreditretningen for **Prosjekt**-linjen. Når denne funksjonen er aktivert, bruker avgiftsbeløpet **Finans**-linjen sin egen debet-/kreditretning. Tabellene nedenfor viser regelen for hvert scenario. 
 
 **Regel når funksjonen er aktivert**
 
@@ -144,6 +156,3 @@ Tabellen nedenfor viser den generelle regelen.
 | Innkommende merverdiavgift | Negativ              | Konto for innkommende merverdiavgift | Negativ (kredit)  |
 | Utgående merverdiavgift    | Positiv              | Konto for utgående merverdiavgift    | Negativ (kredit)  |
 | Utgående merverdiavgift    | Negativ              | Konto for utgående merverdiavgift    | Positive (debet)  |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

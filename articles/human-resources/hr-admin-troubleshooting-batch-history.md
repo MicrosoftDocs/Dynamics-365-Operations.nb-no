@@ -2,29 +2,28 @@
 title: Optimalisere ytelsen med oppgaver for automatisk opprydding
 description: Denne artikkelen beskriver hvordan du løser visse ytelsesproblemer med Microsoft Dynamics 365 Human Resources ved å rydde opp i loggen for satsvise jobber.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Human Resources
+ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a983fde8ba393ab25f2b330014e04a1379f0e4d0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 767358705e6f43322c819116d47f4f348ca0966c7859c9f6f22a0f8004615319
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419840"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744852"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optimalisere ytelsen med automatiske ryddeoppgaver
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Avgang**
 
@@ -36,31 +35,34 @@ Satsvise jobber som kjører ofte, kan føre til uholdbar vekst i loggen for sats
 
 **Oppløsning**
 
-Planlegg en automatisk oppgave som skal rydde opp i loggen for satsvise jobber. Vi anbefaler at du konfigurerer at oppgaven skal kjøre ukentlig, men du må kanskje kjøre oppryddingen oftere eller sjeldnere, avhengig av miljøet. Fremgangsmåten nedenfor inneholder anbefalte innstillinger, men du kan endre disse i henhold til dine behov.
+Planlegg en automatisk oppgave som skal rydde opp i loggen for satsvise jobber. Det anbefales at du konfigurerer at oppgaven skal kjøre ukentlig, men du må kanskje kjøre oppryddingen oftere eller sjeldnere, avhengig av miljøet. Fremgangsmåten nedenfor inneholder anbefalte innstillinger, men du kan endre disse i henhold til dine behov.
 
 1. Velg **Systemadministrasjon** i Human Resources.
 
 2. I **Søk**-feltet angir **Opprydding av historikk for satsvis jobb**.
 
-   ![Søk etter opprydding i logg for satsvis jobb](media/talent-batch-history-cleanup-search-bar.png)
+   ![Søk etter opprydding i logg for satsvis jobb.](media/talent-batch-history-cleanup-search-bar.png)
 
 3. Angi **30** i **Historikkgrense (dager)**.
 
-   ![Sett historikkgrense til 30](media/talent-batch-history-cleanup-history-limit.png)
+   ![Sett historikkgrense til 30.](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Velg **Kjør i bakgrunnen**, og velg deretter **Regelmessighet**.
 
-   ![Angi regelmessighet](media/talent-batch-history-cleanup-recurrence.png)
+   ![Angi regelmessighet.](media/talent-batch-history-cleanup-recurrence.png)
 
 5. Under **Definer regelmessighet** angir du **Startdato** og **Starttidspunkt** som skal utføres utenom arbeidstiden eller i helgen, og deretter velger du **INGEN SLUTTDATO**. 
 
-   ![Definere startdato og -klokkeslettet for regelmessighet](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definere startdato og -klokkeslettet for regelmessighet.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. Under **MØNSTER FOR REGELMESSIGHET** velger du **Dager** og setter **GJENTA ETTER ANGITT INTERVALL** til **7**.
 
-   ![Sette opprydding til å gjentas ukentlig](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Sette opprydding til å gjentas ukentlig.](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Velg **OK**.
 
 8. Endre eventuelle andre parametere under **Kjør i bakgrunnen** etter behov, og velg deretter **OK.**
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

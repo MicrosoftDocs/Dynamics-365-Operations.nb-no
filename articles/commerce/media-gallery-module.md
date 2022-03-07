@@ -2,35 +2,31 @@
 title: Mediegallerimodul
 description: Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 809916118d8eb709c0bde31bb23fa8daa1f7e60c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414740"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022526"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Mediegallerimoduler viser ett eller flere bilder i en gallerivisning. Mediegallerimoduler støtter miniatyrbilder, som kan ordnes enten vannrett (som en rad under bildet) eller loddrett (som en kolonne ved siden av bildet). Mediegallerimoduler inneholder også funksjoner som gjør at bilder kan zoomes (forstørres) eller vises i fullskjermmodus. For å bli gjengitt i en mediegallerimodul må et bilde være tilgjengelig i mediebiblioteket i Commerce-områdebygger. Mediegallerimoduler støtter for øyeblikket bare bilder.
 
@@ -54,11 +50,13 @@ I eksemplet i følgende illustrasjon er en kjøpeboks på en PDP som er vert for
 |---------------|--------|-------------|
 | Bildekilde | **Sidekontekst** eller **Produkt-ID** | Standardverdien er **Sidekontekst**. Hvis **Sidekontekst** er valgt, forventer modulen at siden oppgir produkt-ID-informasjon. Hvis **Produkt-ID** er valgt, må produkt-ID-en for et bilde angis som verdien for egenskapen **Produkt-ID**. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.12. |
 | Produkt-ID | En produkt-ID | Denne egenskapen gjelder bare hvis verdien for egenskapen **Bildekilde**-egenskapen er **Produkt-ID**. |
-| Bildezoom | **Innebygd** eller **Container** | Denne egenskapen lar brukeren zoome bilder i mediagallerimodulen. Et bilde kan zoomes enten innebygd eller i en separat container ved siden av bildet. Denne funksjonen er tilgjengelig i 10.0.12 |
-| Zoomeskala | Et desimaltall | Denne egenskapen angir skaleringsfaktoren for zooming av bilder. Hvis for eksempel verdien er satt til **2,5**, forstørres bildene 2,5 ganger.|
-| Fullskjerm | **Sann** eller **Usann** | Denne egenskapen angir om bilder kan vises i fullskjermmodus. I fullskjermmodus kan bilder også bli ytterligere forstørret hvis zoomefunksjonen er slått på. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.13. |
+| Bildezoom | **Innebygd** eller **Container** | Denne egenskapen lar brukeren zoome bilder i mediagallerimodulen. Et bilde kan zoomes enten innebygd eller i en separat container ved siden av bildet. Denne funksjonen er tilgjengelig i 10.0.12. |
+| Zoomfaktor | Et desimaltall | Denne egenskapen angir skaleringsfaktoren for zooming av bilder. Hvis for eksempel verdien er satt til **2,5**, forstørres bildene 2,5 ganger. |
+| Fullskjerm | **Sann** eller **Usann** | Denne egenskapen angir om bilder kan vises i fullskjermmodus. I fullskjermmodus kan bilder også bli ytterligere forstørret hvis zoomefunksjonen er slått på. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.13-versjonen. |
+| Kvalitet for zoomet bilde | Et tall fra 1 til og med 100 som representerer en prosent, og som velges ved hjelp av en trackbar-kontroll | Denne egenskapen definerer bildekvaliteten for bilder som zoomes inn. Du kan angi en oppløsning på 100 prosent for å sikre at et zoomet bilde alltid bruker høyest mulig oppløsning. Denne egenskapen gjelder ikke PNG-filer fordi de bruker format uten datatap. Denne funksjonen er tilgjengelig fra og med Commerce versjon 10.0.19-versjonen. |
 | Bilder | Bilder som er valgt fra mediebiblioteket i områdebygger | I tillegg til å bli gjengitt fra et produkt kan bilder kurateres for en mediegallerimodul. Disse bildene blir føyd til alle tilgjengelige produktavbildninger. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.12. |
 | Miniatyrbilderetning | **Loddrett** eller **Vannrett** | Denne egenskapen angir om miniatyrbilder skal vises i en loddrett stripe eller en vannrett stripe. |
+| Skjul hovedproduktbilder for variant | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann** når en variant er valgt, skjules bilder av hovedproduktet hvis varianten ikke har noen bilder. Denne egenskapen påvirker ikke produkter som ikke har noen varianter. |
 
 Illustrasjonen nedenfor viser et eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige.
 
@@ -104,3 +102,6 @@ Følg disse trinnene for å legge til en mediegallerimodul på en markedsføring
 [Beholdermodul](add-container-module.md)
 
 [Laste opp bilder](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

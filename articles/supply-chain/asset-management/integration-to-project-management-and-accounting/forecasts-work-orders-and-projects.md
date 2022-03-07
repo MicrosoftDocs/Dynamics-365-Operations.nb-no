@@ -1,12 +1,10 @@
 ---
 title: Prognoser, arbeidsordrer og prosjekter
 description: Dette emnet beskriver prognoser og arbeidsordreintegrering med modulen Prosjektstyring og regnskap i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjCostInfoPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f062b5463b54e9bcf32ed6f17263811c4bb24138
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6b53dcf4e8796f808283b7bd5ea92b869ee0e59aac5359d74bcdc5de37ea7352
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770342"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognoser, arbeidsordrer og prosjekter
 
@@ -60,13 +58,13 @@ Noe av denne informasjonen finnes kanskje ikke i en arbeidsordre. Derfor utføre
 
 I illustrasjonen nedenfor, på grunn av hvordan aktivatypen **Lastebilmotor** er konfigurert, vil for eksempel alle arbeidsordrejobber som opprettes med aktivatypen **Lastebilmotor**, være et underprosjekt med prosjekt-ID-000186.
 
-![Figur 1](media/01-integration-to-pma.png)
+![Figur 1.](media/01-integration-to-pma.png)
 
 Formålet med prosjekt-ID/en i arbeidsordrejobben og det relaterte aktivitetsnummeret, er å spore kostnader som er knyttet til arbeidsordrejobben, og aktivumet som er valgt for det, i modulen **Prosjektstyring og regnskap**. (Hvis du vil vise prosjekt-ID-en og aktivitetsnummeret, velger du **Aktivabehandling** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**, og deretter velger du arbeidsordren. I hurtigfanen **Linjedetaljer** viser feltet **Prosjekt-ID** prosjekt-ID-en, og feltet **Aktivitetsnummer** viser aktivitetsnummeret.) Hvis du vil ha mer informasjon om kostnadskontroll i Aktivastyring, kan du se [Kostnads- og datokontroll](../controlling-and-reporting/cost-and-date-control.md).
 
 Illustrasjonen nedenfor vises en grafisk oversikt over arbeidsordreprosjekter og relaterte prosjektaktiviteter.
 
-![Figur 2](media/02-integration-to-pma.png)
+![Figur 2.](media/02-integration-to-pma.png)
 
 Når en ny arbeidsordrejobb blir opprettet i en arbeidsordre, opprettes det automatisk et arbeidsordreprosjekt for jobben. Finansdimensjonene for anleggsmiddelet som er relatert til arbeidsordrejobben, overføres automatisk til arbeidsordreprosjektet.
 
@@ -88,15 +86,18 @@ For å bidra til å sikre riktig bruk av livssyklustilstander for arbeidsordre o
 
 Illustrasjonene nedenfor viser tilknytningene mellom arbeidsordreprosjektgrupper, tilknyttede prosjekttyper, prosjektstadier og livssyklustilstander for arbeidsordre.
 
-![Figur 3](media/03-integration-to-pma.png)
+![Figur 3.](media/03-integration-to-pma.png)
 
-![Figur 4](media/04-integration-to-pma.png)
+![Figur 4.](media/04-integration-to-pma.png)
 
-![Figur 5](media/05-integration-to-pma.png)
+![Figur 5.](media/05-integration-to-pma.png)
 
 Hvis du vil ha mer informasjon om hvordan du definerer arbeidsordreprosjekter, kan du se [Prosjektoppsett for arbeidsordre](../setup-for-work-orders/work-order-project-setup.md). Hvis du vil ha mer informasjon om hvordan du oppretter livssyklustilstander for arbeidsordrer, kan du se [i Livssyklustilstand for arbeidsordre](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Illustrasjonen nedenfor viser en grafisk oversikt over de ulike prosjektene som er opprettet i modulen **Aktivastyring** for å muliggjøre integrering med modulen **Prosjektstyring og regnskap**. Den viser også arbeidsprosessene som prosjektene er relatert til.
 
-![Figur 6](media/06-integration-to-pma.png)
+![Figur 6.](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

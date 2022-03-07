@@ -2,32 +2,28 @@
 title: Tilpasse transaksjons-e-poster etter leveringsmåte
 description: Dette emnet beskriver hvordan du definerer egendefinerte e-postmaler for bestemte meldingstyper og leveringsmåter i Microsoft Dynamics 365 Commerce.
 author: stuharg
-manager: annbe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Commerce, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: faf5fba70bf9297727464e6046806696ab725001
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: d15e7c5c7050ad373cb45da72de59416e85a5f2034f7a11b007d497b2e2b98bd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594987"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749913"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Tilpasse transaksjons-e-poster etter leveringsmåte
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du definerer egendefinerte e-postmaler for bestemte meldingstyper og leveringsmåter i Microsoft Dynamics 365 Commerce.
 
@@ -73,3 +69,6 @@ Følg denne fremgangsmåten for å konfigurere e-postmaler for bestemte levering
 [Opprette telefonsenterordrer](tasks/create-call-center-orders.md)
 
 [Endre leveringsmodus i salgssted](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

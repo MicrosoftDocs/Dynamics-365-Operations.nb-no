@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: bc1a8570e60e2b17f27c3e63c5ff847b3cb7a2dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345525"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358464"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Beregne TDS for fakturaer ved hjelp av journaler
 
@@ -65,6 +65,6 @@ Begynn ved å åpne **Økonomijournaler**-siden (**Økonomimodul > Journaloppfø
 
 8. Angi de andre nødvendige opplysningene. Valider og poster journalen. TDS-beløpet som er beregnet for innkjøpsfakturaer, posteres på leverandørreskontroen. TDS-beløpet som beregnes for salgsfakturaer, posteres på kundereskontroen som er definert for hver TDS-avgiftskode i TDS-gruppen. Leverandørreskontroene eller kundereskontroene for TDS-avgiftskoder defineres på siden **Kildeskattkoder**.
 
-9. Velg **Postert kildeskatt** for å åpne siden **Kildeskattransaksjoner**. I **Verdi**-feltet vises den totale prosentsatsen som brukes til å beregne TDS for transaksjonen.
+9. Velg **Postert kildeskatt** for å åpne siden **Kildeskatt** **transaksjoner**. I **Verdi**-feltet vises den totale prosentsatsen som brukes til å beregne TDS for transaksjonen.
 
    Feltene i fanene **Oversikt**, **Generelt** og **Beløp** på siden Kildeskattransaksjoner viser det beregnede TDS-beløpet og de justerte TDS-beløpsdetaljene for hver TDS-avgiftskode som er knyttet til TDS-gruppen.

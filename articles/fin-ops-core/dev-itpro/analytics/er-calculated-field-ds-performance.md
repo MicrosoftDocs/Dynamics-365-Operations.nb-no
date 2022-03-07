@@ -1,12 +1,10 @@
 ---
 title: Forbedre ytelsen for ER-løsninger ved å legge til datakilder med parameterisert BEREGNET FELT
-description: Dette emnet beskriver hvordan du kan forbedre ytelsen til ER-løsninger (Electroinic Reporting) ved å legge til datakilder med parameterisert BEREGNET FELT.
+description: Dette emnet beskriver hvordan du kan forbedre ytelsen til ER-løsninger (Electronic Reporting) ved å legge til datakilder med parameterisert BEREGNET FELT.
 author: NickSelin
-manager: AnnBe
-ms.date: 09/02/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 940b696a06fb46bcd0557f059327cd4340448137
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681286"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944849"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Forbedre ytelsen for ER-løsninger ved å legge til datakilder med parameterisert BEREGNET FELT
 
@@ -246,9 +244,9 @@ Du må laste ned følgende filer og lagre dem lokalt.
 
 | Fil                                        | Innhold |
 |---------------------------------------------|---------|
-| Ytelsesforbedringsmodell, versjon 1     | [Eksempel ER-datamodellkonfigurasjon](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Tilordning for ytelsesforbedring, versjon.1.1 | [Eksempel ER-modelltilordningskonfigurasjon](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Format for ytelsesforbedring, versjon.1.1  | [Eksempel ER-formatkonfigurasjon](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Ytelsesforbedringsmodell, versjon 1     | [Eksempel ER-datamodellkonfigurasjon](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
+| Tilordning for ytelsesforbedring, versjon.1.1 | [Eksempel ER-modelltilordningskonfigurasjon](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
+| Format for ytelsesforbedring, versjon.1.1  | [Eksempel ER-formatkonfigurasjon](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
 
 ## <a name="appendix-2-configure-the-er-framework"></a><a name="appendix2"></a>Tillegg 2: Konfigurere ER-rammeverket
 
@@ -300,3 +298,6 @@ Hvis du ha mer informasjon om ER-konfigurasjonsleverandører, kan du se [Opprett
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 - [Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer](trace-execution-er-troubleshoot-perf.md)
 - [Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

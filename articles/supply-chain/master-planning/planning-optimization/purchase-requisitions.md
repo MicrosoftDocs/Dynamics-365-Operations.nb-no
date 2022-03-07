@@ -2,11 +2,13 @@
 title: Innkjøpsrekvisisjoner
 description: Dette emnet beskriver hvordan innkjøpsrekvisisjoner støttes i planleggingsoptimalisering.
 author: ChristianRytt
+manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ReqPlanSched, ReqGroup
+ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,16 +18,14 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1d6fd4be0ee1913264c4a565234cfdf711365792
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8075f8d7c3868c6d6012edbce17dbbb4749209ab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570870"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992351"
 ---
 # <a name="purchase-requisitions"></a>Innkjøpsrekvisisjoner
-
-[!include [banner](../../includes/banner.md)]
 
 Hovedplanlegging kan etterfylle godkjente innkjøpsrekvisisjoner. Brukere trenger derfor ikke å bruke en arbeidsflyt til å opprette bestillinger for å dekke innkjøpsrekvisisjoner. Innkjøpsrekvisisjoner kan i stedet dekkes av hovedplanlegging. På grunn av denne funksjonaliteten kan en innkjøpsrekvisisjon produsere en bestilling, en overføringsordre eller en produksjonsordre, avhengig av verdien for **Type planlagt bestilling** som er angitt for det tilknyttede produktet.
 
@@ -44,7 +44,7 @@ Følg denne fremgangsmåten for å inkludere rekvisisjoner under dekningsberegni
 
 ### <a name="set-the-approved-requisitions-time-fence-for-a-coverage-group"></a>Angi horisonten for godkjente rekvisisjoner for en dekningsgruppe
 
-1. Gå til **Hovedplanlegging** \> **Oppsett** \> **Dekning** \> **Dekningsgrupper**.
+1. Gå til **Hovedplanlegging** \> **Oppsett** \> **Dekning** \> **Dekningsgruppe**.
 1. Opprett eller velg en dekningsgruppe.
 1. Angi antallet dager som skal tas med i horisonten, i feltet **Godkjente rekvisisjoner - horisont (dager)** i hurtigfanen **Annet**.
 1. Gjenta trinn 2 og 3 for hver ytterligere dekningsgruppe der du vil angi en horisont for godkjente rekvisisjoner.
@@ -101,6 +101,3 @@ Når hovedplanlegging kjører, opprettes det to planlagte bestillinger: én for 
 > Når en planlagt bestilling som er utlignet mot en innkjøpsrekvisisjon, autoriseres, beholder planleggingsmotoren utligningen mot innkjøpsrekvisisjonen. Hvis den autoriserte bestillingen senere mangler noe av antallet som kreves for å oppfylle innkjøpsrekvisisjonen, oppretter systemet en ny planlagt bestilling for differansen.
 
 Hvis du vil ha mer informasjon om innkjøpsrekvisisjoner, kan du se [Oversikt over innkjøpsrekvisisjon](../../procurement/purchase-requisitions-overview.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Konfigurere den globale adresseboken
 description: Bruk denne fremgangsmåten til å angi standardverdier og sikkerhetspolicyer for den globale adresseboken.
 author: msftbrking
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dcee425fc1225dcfcf8ba4282f4176acfeaa268
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 34b0ab8b2d3ffa840e20d73716265c445e77189044840fd6850c5bffb3e3365b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796808"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759071"
 ---
 # <a name="configure-the-global-address-book"></a>Konfigurere den globale adresseboken
 
@@ -45,3 +43,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppg
 13. Finn og velg ønsket post i listen. Trykk på SKIFT-tasten for å velge flere roller som du vil legge til i **Valgte roller**-ruten, og klikk deretter pilen for å legge til de valgte rollene.  
 14. Klikk på **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

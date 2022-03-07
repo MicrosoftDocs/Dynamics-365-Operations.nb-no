@@ -1,10 +1,12 @@
 ---
 title: Standard ordreinnstillinger for dimensjoner og produktvarianter
 description: Standard ordreinnstillinger definerer området og lageret der varene hentes fra eller lagres, minimumsantall, maksimumsantall, flere og standardantall som skal brukes for handel, eller lagerstyring, leveringstider, stoppflagget og metoden for ordrebekreftelsen.
-author: johanhoffmann
+author: t-benebo
+manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fef622b05c56844b8927a4efcffd5a1944726cd4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102770"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246267"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standard ordreinnstillinger for dimensjoner og produktvarianter
 
@@ -115,7 +117,7 @@ Du kan definere regler for ordreinnstillinger for en aktiv produktdimensjon elle
 
 Tenk deg følgende eksempelprodukt:
 
-| Element                                                | Verdi                                   |
+|                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
 | **Produktnavn**                                    | Fotoelektrisk sensor                    |
 | **Varenummer**                                     | XW56                                    |
@@ -186,9 +188,12 @@ Du kan velge hvor streng systemet skal være ved validering av antall som er ang
 
 Streng validering gjelder verdier for **Standard ordreantall** som er angitt på hurtigfanene **Bestilling**, **Lager** og **Salgsordre** på siden **Standard ordreinnstillinger**. Hver hurtigfane har sin egen **Flere**-innstilling, som brukes til å validere verdien for **Standard ordreantall** som er angitt for hurtigfanen.
 
-### <a name="turn-the-strict-validation-option-on-or-off"></a>Aktivere eller deaktivere det strenge valideringsalternativet
+### <a name="enable-the-strict-validation-option"></a>Aktivere det strenge valideringsalternativet
 
-Du må aktivere funksjonen *Streng validering av standard ordreantall* for systemet for å kunne bruke streng validering. Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan du aktivere eller deaktivere denne funksjonaliteten ved å gå til [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søke etter funksjonen *Streng validering av standard ordreantall*.
+Før du kan bruke det strenge valideringsalternativet, må det være aktivert i systemet. Administratorer kan bruke siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis det er nødvendig. Her vises funksjonen som:
+
+- **Modul** - *Behandling av produktinformasjon*
+- **Funksjonsnavn** - *Streng validering for standard ordreantall*
 
 ### <a name="set-the-validation-option"></a>Angi valideringsalternativet
 

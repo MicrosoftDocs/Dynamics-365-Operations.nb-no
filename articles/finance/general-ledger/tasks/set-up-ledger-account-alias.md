@@ -2,11 +2,9 @@
 title: Definere et finanskontoalias
 description: Denne fremgangsmåten viser hvordan du oppretter et kontoalias som inneholder en snarvei for å angi et kontonummer.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08fcbc4e7e593c7d1a632183409ae85423545263
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 60e1dc0e61fd11e5498966031fbe7e6e65af2c6f57a820e1c99df05c6ad7f8f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745802"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Definere et finanskontoalias
 
@@ -40,3 +38,6 @@ Denne fremgangsmåten viser hvordan du oppretter et kontoalias som inneholder en
 9. Velg dimensjonen som skal ha fokus når aliaset brukes, i feltet Innledende fokus.
     * Når du har skrevet inn snarveien, og kontoen og dimensjonene er utfylt, flyttes markøren eller fokus til feltet Innledende fokus.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

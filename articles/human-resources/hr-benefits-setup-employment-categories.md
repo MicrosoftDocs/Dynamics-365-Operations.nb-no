@@ -2,7 +2,7 @@
 title: Opprette ansettelseskategorier
 description: Ansettelseskategorier kan defineres i Dynamics 365 Human Resources for å samsvare med arbeiderne.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: da9e4fb146b9ede8036c07aede8c7584e41923ad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 723f2c2c42e9529169fc70358b235fad967a1b79
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419943"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466092"
 ---
 # <a name="create-employment-categories"></a>Opprette ansettelseskategorier
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Definer ansettelseskategorier i Dynamics 365 Human Resources for å samsvare med arbeiderne.
 
@@ -36,3 +38,6 @@ Definer ansettelseskategorier i Dynamics 365 Human Resources for å samsvare med
 3. Angi verdier for **Arbeidertype**, **Ansettelseskategori** og **Beskrivelse**.
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

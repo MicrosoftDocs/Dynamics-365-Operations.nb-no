@@ -1,12 +1,10 @@
 ---
 title: Leverandørsamarbeid med eksterne leverandører
 description: Dette emnet forklarer hvordan innkjøpsagenter samarbeide med eksterne leverandører for å utveksle informasjon om bestillinger og forsendelseslager.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3b679f8daed1e09c832a5d138473cccba03552f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016759"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576982"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
@@ -35,7 +33,7 @@ Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grense
 > [!NOTE]
 > Informasjonen om leverandørsamarbeid i dette emnet gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
 
-Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
+Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definere informasjonen som vises til leverandører når de svarer på bestillinger
 
@@ -242,7 +240,7 @@ For offentlig sektor gjør den utvidede funksjonaliteten at en tilbudsforespørs
 - Publisert linje i tilbudsforespørsler
 - Publiserte hodevedlegg for tilbudsforespørsler
 
-Med disse enhetene kan personer som ikke er klargjorte brukere i Supply Chain Management, men som har anonym tilgang til det eksterne området, vise arbeid som er tilgjengelig og lukket. I tillegg gjør den utvidede funksjonaliteten i **Send og publiser** det mulig for brukeren som definerer parametere for tilbudsforespørssaken, å definere en e-postmal. Deretter, når innkjøpsansvarlig oppretter tilbudsforespørselssaken, må han eller hun velge e-postmalen for å sende den nødvendige informasjonen til leverandørene i tilbudsforespørselssaken. 
+Med disse enhetene kan personer som ikke er klargjorte brukere i Supply Chain Management, men som har anonym tilgang til det eksterne området, vise arbeid som er tilgjengelig og lukket. I tillegg gjør den utvidede funksjonaliteten i **Send og publiser** det mulig for brukeren som definerer parametere for tilbudsforespørssaken, å definere en e-postmal. Deretter, når innkjøpsansvarlig oppretter tilbudsforespørselssaken, må vedkommende velge e-postmalen for å sende den nødvendige informasjonen til leverandørene i tilbudsforespørselssaken. 
 
 Brukeren som definerer parametere for tilbudsforespørselsprosessen, kan opprette flere e-postmaler. Disse e-postmaler kan inneholde både statisk tekst og følgende erstatningstokener. Tokene erstattes med kontekstavhengige verdier når det opprettes en e-post.
 
@@ -258,3 +256,6 @@ Brukeren som definerer parametere for tilbudsforespørselsprosessen, kan opprett
 - %createddate%
 
 Hvis en endring er nødvendig, og sendes etter at tilbudsforespørselen er sendt, sendes tilbudsforespørselen på nytt til alle inviterte leverandører. Det publiserte dokumentet oppdateres også på siden **Åpne publiserte tilbudsforespørsler**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

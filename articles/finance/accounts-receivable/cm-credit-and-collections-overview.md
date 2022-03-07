@@ -3,21 +3,22 @@ title: Oversikt over kreditt og innkreving
 description: Dette emnet gir en oversikt over funksjonen for kreditt og innkreving.
 author: JodiChristiansen
 ms.date: 09/04/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 293a6c507c6abd6009a23403384c3b58a1a55a52
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 8d7c04c11c16871b67e60e957d1b8f25ee309fde
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982618"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753640"
 ---
 # <a name="credit-and-collections-overview"></a>Oversikt over kreditt og innkreving
 

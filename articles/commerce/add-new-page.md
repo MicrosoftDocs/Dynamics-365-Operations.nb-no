@@ -2,36 +2,30 @@
 title: Legg til en ny områdeside
 description: Dette emnet beskriver hvordan du legger til en ny områdeside i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b0f1e290526c25aa6e6300c65e24044a325bee53
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414590"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090725"
 ---
 # <a name="add-a-new-site-page"></a>Legg til en ny områdeside
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du legger til en ny områdeside i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Når du har opprettet maler og fragmenter for området, er neste trinn å begynne å opprette sider som bruker dem. For å komme i gang må du velge en mal eller et oppsett, et sidenavn og en side-URL-adresse.
 
@@ -39,11 +33,11 @@ Når du har opprettet maler og fragmenter for området, er neste trinn å begynn
 
 Du kan enten bruke en mal eller et oppsett for den nye siden. For mer informasjon, se [Oversikt over maler og oppsett](templates-layouts-overview.md).
 
-## <a name="page-name"></a>Sidenavn
+## <a name="specify-the-page-name"></a>Angi sidenavnet
 
-Sidenavnet må være unikt for siden. Det bør være beskrivende, slik at du enkelt kan finne det, og andre personer vet hva siden er ment for. Velg sidenavnet nøye, fordi det ikke kan endres senere.
+Sidenavnet må være unikt for nettstedet ditt og bør være beskrivende, slik at du enkelt kan finne det, og andre personer vet hva siden er ment for. Du kan gi siden nytt navn senere ved å redigere den og deretter velge pennesymbolet ved siden av sidenavnet i egenskapsruten.
 
-## <a name="page-url"></a>URL-adresse for side
+## <a name="specify-the-page-url"></a>Angi URL-adressen for siden
 
 Du kan velge å angi en URL-adresse til den nye siden. Når du oppretter en side, kan du angi en streng som skal brukes til å opprette en fullstendig URL-adresse. Denne strengen kalles en relativ URL-adresse eller en URL-plassholder. En fullstendig URL-adresse genereres deretter på grunnlag av URL-plassholderen, og den nye siden tilordnes. Du kan endre URL-plassholderen senere, før du publiserer siden. Hvis du vil ha mer informasjon, kan du se [Opprette en URL-adresse for side](create-page-URL.md).
 
@@ -91,3 +85,8 @@ Følg denne fremgangsmåten for å legge til en ny områdeside på området.
 [Supplere en kategorimålside](enrich-category-page.md)
 
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
+
+[Opprette dynamiske e-handelssider basert på URL-parametere](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

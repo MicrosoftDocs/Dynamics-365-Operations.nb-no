@@ -2,9 +2,11 @@
 title: Gruppestilling full
 description: Dette emnet inneholder informasjon om funksjonen Gruppeposisjon full. Denne funksjonen gir et alternativ til mer rigid håndhevelse av arbeidsstoppregler når gruppueplukking brukes, ettersom det muliggjør en større margin med feil i de volumetriske begrensningene i beholdere eller transportkasser.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 9c90380cb5d109e331a2552ba779525b66d10fa6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001105"
 ---
 # <a name="cluster-position-full"></a>Gruppestilling full
 
@@ -28,9 +30,12 @@ Funksjonen *Gruppeposisjon full* gir et alternativ til mer rigid håndhevelse av
 
 Denne funksjonen gir mulighet til å kjøre knappen **Full** på en av arbeidsenhetene i en gruppe. I eldre versjoner var dette alternativet bare tilgjengelig for vanlig ordreplukking, ikke for gruppeplukking. Denne funksjonen er imidlertid forskjellig fra standardknappen **Full** ved at den avbryter det gjenstående arbeidet. Den foreslår ikke at brukeren legger til en ny hylle i den samme gruppen, og den oppretter ikke automatisk nytt arbeid.
 
-## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Gruppestilling full
+## <a name="turn-on-the-cluster-position-full-feature"></a>Aktivere funksjonen Gruppeposisjon full
 
-Du må aktivere funksjonen *Gruppestilling full* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Gruppestilling full* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Lagerstyring*
+- **Funksjonsnavn:** *Gruppeposisjon full*
 
 ## <a name="setup"></a>Installasjon
 
@@ -208,7 +213,7 @@ To arbeids-ID-er bør være opprettet, og hver av dem har to plukklinjer. Følg 
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Flytutføring for mobilenhet – behandling av arbeidsbekreftelse for produktet
 
-1. Logg på mobilappen Lagerstyring som en bruker som er aktivert i lager *61*.
+1. Logg på lagerappen som en bruker på lageret *61*.
 1. Gå til **Utgående \> Oppretting av gruppeplukking**.
 
     Siden **OPPGAVE: Tilordne arbeid til gruppe** vises.
@@ -270,6 +275,3 @@ I dette scenarioet er gruppeplukkingen fullført, og brukeren blir omdirigert ti
     Du mottar meldingen Gruppe fullført.
 
 Du kan nå bruke menyelementet **Salgsplukking** til å plukke restantallet. Du kan deretter bruke menyelementet **Salgslasting** til å flytte varene fra lokasjonsplasseringen til lasterampen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Kontantstrømprognose
 description: Dette emnet gir en oversikt over prosessen for kontantstrømprognose. Det forklarer også hvordan kontantstrømprognose er integrert med andre moduler i systemet.
-author: panolte
-ms.date: 02/16/2022
+author: JodiChristiansen
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5a46946ff2c3569dab0ce8b53b3cddcf18318cbf
-ms.sourcegitcommit: 465c84eb5cdc211692e2ae09b45d1400f9a315ee
+ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8314729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779452"
 ---
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruke verktøy for kontantstrømprognose til å analysere kommende kontantstrøm- og valutabehov, slik at kan du estimere firmaets fremtidige behov for kontanter. Hvis du vil ha en prognose over kontantstrømmen, må du utføre følgende oppgaver:
 
@@ -37,7 +36,6 @@ Når du har fullført disse oppgavene, kan du beregne og analysere prognoser for
 Kontantstrømprognose kan integreres med økonomi, leverandører, kunder, budsjettering og lagerstyring. Prognoseprosessen bruker transaksjonsinformasjon som er registrert i systemet, og beregningsprosessen lager prognose for forventet kontantinnvirkning for hver transaksjon. Følgende transaksjonstyper vurderes når kontantstrømmen beregnes:
 
 - **Salgsordrer** – salgsordrer som ikke er fakturert ennå, og som resulterer i et fysisk eller økonomisk salg.
-- **Fritekstfakturaer** – Fritekstfakturaer som ikke er postert ennå, og som resulterer i økonomisk salg. 
 - **Bestillinger** – bestillinger som ikke er fakturert ennå, og som resulterer i et fysisk eller økonomisk innkjøp.
 - **Kunder** – åpne kundetransaksjoner (fakturaer som ennå ikke er betalt).
 - **Leverandører** – åpne leverandørtransaksjoner (fakturaer som ennå ikke er betalt).
@@ -45,9 +43,7 @@ Kontantstrømprognose kan integreres med økonomi, leverandører, kunder, budsje
 - **Budsjettregisteroppføringer** – budsjettregisteroppføringer som er valgt for kontantstrømprognoser.
 - **Behovsprognoser** – linjer for lagerprognosemodell som er valgt for kontantstrømprognoser.
 - **Forsyningsprognoser** – linjer for lagerprognosemodell som er valgt for kontantstrømprognoser.
-- **Ekstern datakilde** – Eksterne data som er angitt eller importert til kontantstrømprognoser ved hjelp av regnearkmaler.
 - **Prosjektprognoser** – Prosjektstyring og regnskapsprognoser ved hjelp av prognosemodell.
-- **Betalinger til skattemyndighetene i kontantstrøm** – Forutsette betalingsbeløp for skattemyndighetene og tidsmåling som resulterer i økonomiske betalinger. Aktiver funksjonen Betalinger til skattemyndighetene i kontantstrøm.
 
 ## <a name="configuration"></a>Konfigurasjon
 
@@ -87,24 +83,16 @@ Du kan overstyre standardinnstillingen for **Likviditetskonto**-feltet for beste
 
 ### <a name="budgeting"></a>Budsjettering
 
-Budsjetter som opprettes fra budsjettmodeller, kan tas med i kontantstrømprognoser. Velg budsjettmodellene som skal tas med i prognosen, i **Budsjettering**-fanen på siden **Oppsett for kontantstrømprognose**. Nye budsjettregisteroppføringer tas som standard med i prognoser etter at budsjettmodellen er aktivert for kontantstrømprognose.
+Budsjetter som opprettes fra budsjettmodeller, kan tas med i kontantstrømprognoser. Velg budsjettmodellene som skal tas med i prognosen, i **Budsjettering**-fanen på siden **Oppsett for kontantstrømprognose**. Nye budsjettregisteroppføringer tas som standard med i prognoser etter at budsjettmodellen er aktivert for kontantstrømprognose. Inkludering i kontantstrømprognoser kan overskrives i individuelle budsjettregisteroppføringer.
 
-Budsjettregisteroppføringer kan inkluderes i kontantstrømprognosen enkeltvis ved tilpasning. Når du legger til kolonnen "Ta med i kontantstrømprognoser" på siden **Budsjettregisteroppføring**, overskrives innstillingene på siden **Oppsett for kontantstrømprognose** slik at den inkluderer en individuell budsjettregisteroppføring i prognosen.
-
-
-### <a name="inventory-management"></a>Beholdningsstyring
+### <a name="inventory-management"></a>Lagerstyring
 
 Prognoser for lagerforsyning og -behov kan tas med i kontantstrømprognoser. Velg prognosemodellen som skal tas med i kontantstrømprognosen, i **Lagerstyring**-fanen på siden **Oppsett for kontantstrømprognose**. Inkludering i kontantstrømprognoser kan overskrives på individuelle forsynings- og behovsprognoselinjer.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Definere dimensjoner for kontantstrømprognoser
-En ny fane på siden  **Oppsett for kontantstrømprognose**  lar deg styre hvilke finansdimensjoner som skal brukes i arbeidsområdet  **Kontantstrømprognose** . Denne fanen vises bare når funksjonen for kontantstrømprognose er aktivert.
+En ny fane på siden **Oppsett for kontantstrømprognose** lar deg styre hvilke finansdimensjoner du vil bruke i arbeidsområdet **Kontantstrømprognose**. Denne fanen vises bare når funksjonen for kontantstrømprognose er aktivert. 
 
 I fanen **Dimensjoner** velger du dimensjoner som skal brukes til filtrering, fra listen over dimensjoner, og bruker piltastene til å flytte dem til høyre kolonne. Du kan bare velge to dimensjoner til filtrering av data for kontantstrømprognose. 
-
-### <a name="setting-up-external-source"></a>Definering av ekstern kilde
-Eksterne data kan angis i eller importeres til kontantstrømprognoser når Finance Insights er konfigurert. Før eksterne data legges inn eller importeres, må eksterne kilder defineres. Definer eksterne kontantstrømkategorier i kategorien **Ekstern kilde**. En kategori kan være **Utgående** eller **Innkommende**. **Likviditet** må velges som posteringstype. I rutenettet **Innstillinger for juridisk enhet** velger du de juridiske enhetene og de tilsvarende hovedkontoene som de eksterne kontantstrømkategoriene gjelder for.
-
-Hvis du vil ha mer informasjon, kan du se [Eksterne data i kontantstrømprognoser](../../finance/finance-insights/external-data-in-cash-flow.md). 
 
 ### <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
 
@@ -113,10 +101,6 @@ I versjon 10.0.17 aktiverer en ny funksjon integrering med prosjektstyring og re
 Når funksjonen for kontantstrømprosjektprognose er aktivert, kan kontantstrømprognosen vises for hvert prosjekt på **Alle prosjekter**-siden. Velg **Kontantstrømprognose** i **Prognose**-gruppen i **Plan**-fanen i handlingsruten. I arbeidsområdene for **Kontantstrømoversikt** (se delen [Rapportering](#reporting) senere i dette emnet) viser transaksjonstypen for prosjektprognose innflytene (prognoseinntekt for prosjekt) og utflytene (prognosekostnader for prosjekt). Beløpene kan bare inkluderes hvis feltet **Prosjektfase** i arbeidsområdene **Kontantstrømoversikt** er angitt til **Pågår**.
 
 Prosjekttransaksjoner er fremdeles inkludert i kontantstrømprognosen på flere måter, uansett om funksjonen **Prosjektprognose for kontantstrøm** er aktivert. Posterte prosjektfakturaer tas med i prognosen som en del av åpne kundetransaksjoner. Prosjektstartede salgsordrer og bestillinger tas med i prognosen som åpne ordrer etter at de er registrert i systemet. Du kan også overføre prosjektprognoser til en finansbudsjettmodell. Denne finansbudsjettmodellen tas deretter med i kontantstrømprognosen som en del av budsjettregisteroppføringene. Hvis du har aktivert funksjonen **Prosjektprognose for kontantstrøm**, må du ikke overføre prosjektprognoser til en budsjettmodell i finans, fordi denne handlingen vil føre til at prosjektprognosene telles to ganger.
-
-### <a name="sales-tax-authority-payments"></a>Betalinger til skattemyndighet 
-
-Funksjonen for kontantstrøm for betalinger til skattemyndighet forutser kontantstrømeffekten av mva-betalinger. Den bruker ubetalte mva-transaksjoner, utligningsperioder for mva og betalingsbetingelsene for avgiftsperioden for å forutse datoen og beløpet for kontantstrømbetalinger. 
 
 ### <a name="calculation"></a>Beregning
 
@@ -160,7 +144,7 @@ Arbeidsområdet **Kontantstrømoversikt – alle firmaer** viser analyse for kon
 
 Arbeidsområdet **Kontantstrømoversikt – gjeldende firma** viser analyse for kontantstrømprognose i firmaets definerte regnskapsvaluta. Regnskapsvalutaen som brukes for analysen, er definert på **Finans**-siden. Arbeidsområdet viser en oversikt over kontantstrømprognose og bankkontosaldoer for gjeldende firma. Et diagram over kontant innflyt og utflyt gir en oversikt over fremtidige kontantbevegelser og -saldoer i regnskapsvalutaen, sammen med detaljert informasjon om de anslåtte transaksjonene. De anslåtte valutasaldoene vises også.
 
-Hvis du vil ha mer informasjon om analyse for kontantstrømprognose, kan du se [Power BI-innholdet Kontantstrømoversikt](Cash-Overview-Power-BI-content.md).
+Hvis du vil ha mer informasjon om analyse for kontantstrømprognose, kan du se emnet [Power BI-innholdet Kontantstrømoversikt](./cash-overview-power-bi-content.md).
 
 Du kan også vise kontantstrømprognosedata for bestemte kontoer, ordrer og varer på følgende sider:
 

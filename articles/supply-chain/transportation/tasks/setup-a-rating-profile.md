@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSRatingProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c54e7457813774027debd301d9a0bf8ce1b6d47
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5f754a8b86b0d369af03812a831d77a8a6fa8154
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646419"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233517"
 ---
 # <a name="rating-profiles"></a>Vurderingsprofiler
 
@@ -61,3 +60,6 @@ På siden **Vurderingsprofiler** kan du se gjennom alle tilgjengelige vurderings
 
 > [!NOTE]
 > Profiler som opprettes på **Transportører**-siden, vises også på **Vurderingsprofiler**-siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Konfigurere finansposteringsgrupper for merverdiavgift
 description: Merverdiavgiften beregnes og posteres til hovedkontoer som er angitt i finansposteringsgrupper.
 author: twheeloc
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6cc96cbdb11f24d727bddfa5fd4aaa579537802a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e779887a650f4ca79ea4c9f0d69a5abb5533ac69abab38e1fae38e745e4157bd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754176"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Konfigurere finansposteringsgrupper for merverdiavgift
 
@@ -41,3 +39,6 @@ Merverdiavgiften beregnes og posteres til hovedkontoer som er angitt i finanspos
 11. Velg hovedkontoen for å postere kontorabatt for **mva-koder** knyttet til denne **finansposteringsgruppen**, i feltet **Kundekontantrabatt**. Dette er valgfritt, og hvis ingen kontoer angis, brukes hovedkontoen i **kontantrabattkoder**. Det kan være nyttig å bruke ulike kontoer per **finansposteringsgruppe** hvis du bruker alternativet Tilbakefør merverdiavgift på kontantrabatt på **mva-grupper**.  
 12. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

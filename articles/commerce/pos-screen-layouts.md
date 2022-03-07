@@ -2,16 +2,13 @@
 title: Visuelle konfigurasjoner av POS-brukergrensesnittet
 description: Dette emnet inneholder informasjon om skjermoppsett for Dynamics 365 Commerce POS-opplevelser.
 author: boycezhu
-manager: annbe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
@@ -19,14 +16,14 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
+ms.openlocfilehash: 17379dc97c7a8b22912482a7aeebd0d8ac08dc496fa7b1661952bca10a21c75b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4414776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765886"
 ---
-# <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurasjoner av POS-brukergrensesnittet
+# <a name="pos-user-interface-visual-configurations"></a>Visuelle konfigurasjoner av brukergrensesnittet for salgssted
 
 [!include [banner](includes/banner.md)]
 
@@ -35,15 +32,15 @@ Brukergrensesnittet for Microsoft Dynamics 365 Commerce salgssted (POS) kan konf
 
 Illustrasjonen nedenfor viser forholdet mellom de forskjellige enhetene som utgjør de konfigurerbare delene av brukergrensesnittet for salgsstedet.
 
-![Enheter for skjermoppsett for salgssted](../commerce/media/POS-layout-configuration-entities-diagram.png)
+![Enheter for skjermoppsett for salgssted.](../commerce/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Visuell profil
 
 Visuelle profiler tilordnes til kasser, og de brukes til å angi de visuelle elementene som er kassespesifikke og delt på tvers av brukere. Alle brukere som logger på kassen ser samme tema, oppsett, farger og bilder.
 
-![Velkomstskjerm for salgsstedet med lyst tema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
+![Velkomstskjerm for salgsstedet med lyst tema.](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![Transaksjonsskjermbilde for salgssted med mørkt temaet](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
+![Transaksjonsskjermbilde for salgssted med mørkt temaet.](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 - **Profilnummer** – Profilnummeret er den unike ID-en for den visuelle profilen.
 - **Beskrivelse** – Du kan angi et beskrivende navn som vil hjelpe deg med å finne den riktige profilen for din situasjon.
@@ -68,15 +65,15 @@ Du må kjøre distribusjonsplanjobben **1090** (**Registre**) for å synkroniser
 
 Oppsett for skjermkonfigurasjoner bestemmer handlinger, innhold og plassering av brukergrensesnittkontroller i **velkomstskjermen** og **Transaksjon**-skjermbildet for salgsstedet.
 
-![Visning for skjermoppsett for salgssted](../commerce/media/POS-Screen-Layout-View.png)
+![Visning for skjermoppsett for salgssted.](../commerce/media/POS-Screen-Layout-View.png)
 
 - **Velkomstskjerm** – Velkomstskjermbildet er siden som brukerne ser når de logger på salgsstedet for første gang. Velkomstskjermbildet kan bestå av et varemerke og knappegrupper som gir tilgang til salgsstedsoperasjoner. Operasjoner som ikke er spesifikke for den gjeldende transaksjonen er vanligvis plassert på dette skjermbildet.
 
-    ![Velkomstskjerm for salgssted](../commerce/media/POS-Welcome-Screen.png)
+    ![Velkomstskjerm for salgssted.](../commerce/media/POS-Welcome-Screen.png)
 
 - **Transaksjoneskjermbilde** – **Transaksjon**-skjermbildet er hovedskjermbildet for salgsstedet for behandling av salgstransaksjoner og ordrer. Innhold og oppsett konfigureres ved å bruke utforming av skjermoppsett.
 
-    ![Transaksjonsskjermbilde for salgssted](../commerce/media/POS-Transaction-Screen.png)
+    ![Transaksjonsskjerm for salgssted.](../commerce/media/POS-Transaction-Screen.png)
 
 - **Standard startskjermbilde** – Noen forhandlere foretrekker at kasserere går direkte til **Transaksjon**-skjermbildet etter pålogging. Innstillingen **Standard startskjermbilde** lar deg angi standard skjermbilde som vises etter pålogging for hvert skjermoppsett.
 
@@ -92,7 +89,7 @@ De fleste delene av brukergrensesnittet for salgsstedet er responsive, og oppset
 
 Ved oppstart velger salgsstedsprogrammet automatisk den nærmeste oppsettstørrelsen som er konfigurert for enheten. Et skjermoppsettet kan også inneholde konfigurasjoner for både liggende og stående modus, og for enheter i full størrelse og kompakte enheter. Derfor kan brukere tilordnes til ett enkelt skjermoppsettet som fungerer på tvers av ulike størrelser og formfaktorer som brukes i butikken.
 
-![Oppsettstørrelser for salgssted](../commerce/media/POS-Screen-Layout-Sizes.png)
+![Oppsettstørrelser for salgssted.](../commerce/media/POS-Screen-Layout-Sizes.png)
 
 - **Navn** – Du kan angi et beskrivende navn som identifiserer skjermstørrelsen.
 - **Oppsettype** – Programmet for salgsstedet kan vise brukergrensesnittet i ulike modi for å levere den beste brukeropplevelsen på en bestemt enhet.
@@ -105,7 +102,7 @@ Ved oppstart velger salgsstedsprogrammet automatisk den nærmeste oppsettstørre
 > [!TIP]
 > Du kan finne ut oppsettstørrelsen som kreves for en skjerm på salgsstedet ved å vise oppløsningen i programmet. Start salgsstedet, og gå til **Innstillinger \> Øktinformasjon**. Salgsstedet viser skjermoppsettet som er lastet inn, oppsettstørrelsen og oppløsningen på programvinduet.
 
-![Informasjonssiden for salgsstedsøkt viser skjermoppsettet som er lastet inn, oppsettstørrelsen og oppløsningen på programvinduet](../commerce/media/POS-Session-Information.png)
+![Informasjonssiden for salgsstedsøkt viser skjermoppsettet som er lastet inn, oppsettstørrelsen og oppløsningen på programvinduet.](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Knappegrupper
 
@@ -115,7 +112,10 @@ Plasseringen av knappegrupper er angitt i utforming av skjermoppsett i oppsett f
 
 Knappegrupper i oppsett for kompakt salgssted plasseres automatisk fra topp mot bunn, fra det laveste nummeret (transaksjonsskjerm 1) til det høyeste nummeret. Det er tilgang til dem fra **Handlinger**-menyen.
 
-![Knappegrupper for kompakt oppsett](../commerce/media/Compact-View-Button-Grids.png)
+![Knappegrupper for kompakt oppsett.](../commerce/media/Compact-View-Button-Grids.png)
+
+> [!NOTE]
+> Knappestørrelsene i utformingen tilpasses størrelsen på vinduet, og derfor kan det hende at de ikke gjenspeiler de faktiske knappene som gjengis på salgsstedet. Hvis du vil simulere knappegruppeoppsettet, kan du justere utformingsvinduene til samme størrelse som salgsstedet.
 
 ### <a name="images"></a>Bilder
 
@@ -132,7 +132,7 @@ Utforming av skjermoppsett lar deg konfigurere forskjellige eler av **Transaksjo
 
 Utformingen for fullstendig oppsett lar brukere dra grensesnittkontroller til **Transaksjon**-skjermbildet for salgsstedet og konfigurere innstillingene for disse kontrollene.
 
-![Utforming for fullstendig oppsett for salgssted (liggende)](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
+![Utforming for fullstendig oppsett for salgssted (liggende).](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
 
 - **Importere oppsett / eksporter oppsett** – Du kan eksportere og importere utforminger for oppsett for skjermbilde for salgssted som XML-filer, slik at du enkelt kan bruke på nytt og dele dem på tvers av miljøer. Det er viktig at du importerer oppsettutforminger for riktige oppsettstørrelser. Hvis ikke kan det hende grensesnittelementer ikke passer på skjermen.
 - **Liggende/stående** – Hvis salgsstedsenheten lar brukere bytte mellom liggende og stående modus, må du definere et skjermoppsett for hver modus. Salgsstedet oppdager skjermrotering automatisk og viser riktig utformingen.
@@ -140,11 +140,11 @@ Utformingen for fullstendig oppsett lar brukere dra grensesnittkontroller til **
 - **Utformingszoom** – Du kan zoome utformingsvisningen inn og ut for å vise innholdet på skjermen for salgsstedet. Denne funksjonen er nyttig når skjermoppløsningen på salgsstedet er svært forskjellig fra oppløsningen på skjermen som skal brukes i utformingen.
 - **Vis/skjul navigasjonsfelt** – For oppsett for fullstendig salgssted kan du velge om navigasjonsfeltet til venstre vises på **Transaksjon**-skjermen. Denne funksjonen er nyttig for skjermer med lavere oppløsning. Hvis du vil angi synligheten, høyreklikker du på navigasjonsfeltet i utforming og merker av for **Alltid synlig**. Hvis navigasjonsfeltet er skjult, har salgsstedsbrukere fremdeles tilgang til det ved hjelp av menyen øverst til venstre.
 
-    ![Vis/skjul navigasjonsfelt](../commerce/media/Navigation-Bar.PNG)
+    ![Vis/skjul navigasjonsfelt.](../commerce/media/Navigation-Bar.PNG)
 
 - **Salgsstedskontrollerer** – Utforming for salgssted støtter følgende kontroller. Du kan konfigurere mange kontroller ved å høyreklikke og ved hjelp av hurtigmenyen.
 
-    ![Brukergrensesnittkontroller for salgssted](../commerce/media/POS-UI-Controls.png)
+    ![Brukergrensesnittkontroller for salgssted.](../commerce/media/POS-UI-Controls.png)
 
     - **Numerisk tastatur** – Det numeriske tastaturet er den primære mekanisme for brukerinndata i **Transaksjon**-skjermbilde for salgssted. Du kan konfigurere kontrollen slik at hele talltastaturet vises. Dette alternativet er perfekt for enheter med berøringsskjerm. Du kan også konfigurere den slik at bare inndatafeltet vises. I så fall brukes et fysisk tastatur for inndata. Innstillingene for det numeriske tastaturet er bare tilgjengelige i det fullstendige oppsettet. For kompakte oppsett vises alltid det fullstendige talltastaturet på **Transaksjon**-skjermen.
     - **Totalerpanel** – Du kan konfigurere totalerpanelet i én eller to kolonner, slik at verdiene vises, for eksempel linjeantall, rabattbeløp, tillegg, delsum og mva. Kompakte oppsett støtter bare én kolonne.
@@ -159,13 +159,13 @@ Utformingen for fullstendig oppsett lar brukere dra grensesnittkontroller til **
 
 På samme måte som utforming for fullstendig oppsett kan du med utforming for kompakt oppsett konfigurere skjermoppsettet for salgsstedet for telefoner og små nettbrett. I dette tilfellet er imidlertid selve oppsettet fast. Du kan konfigurere kontrollene i oppsettet ved å høyreklikke og ved hjelp av hurtigmenyen. Du kan imidlertid ikke bruke dra og slipp-operasjoner for mer innhold.
 
-![Utforming for kompakt oppsett](../commerce/media/Compact-Layout-Designer.png)
+![Utforming for kompakt oppsett.](../commerce/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Utforming for knappegruppe
 
 Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på velkomstskjermbildet for salgsstedet og **Transaksjon**-skjermen for både fullstendige og kompakte oppsett. Du kan bruke samme knappegruppen på tvers av oppsett og oppsettyper. På samme måte som utforming for skjermoppsett bruker utforming for knappegruppe ClickOnce-distribusjonsteknologi til å laste ned, installere og starte den nyeste versjonen av appen hver gang brukeren åpner den. Husk å sjekke nettleserkravene for ClickOnce. Noen nettlesere, for eksempel Google Chrome, krever tillegg.
 
-![Utforming for knappegruppe](../commerce/media/Button-Grid-Designer.png)
+![Utforming for knappegruppe.](../commerce/media/Button-Grid-Designer.png)
 
 - **Ny knapp** – Klikk for å legge til en ny knapp i knappegruppen. Som standard vises nye knapper i hjørnet øverst til venstre i gruppen. Du kan imidlertid endre knappene ved å dra dem i oppsettet.
 
@@ -178,7 +178,7 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
     > [!IMPORTANT]
     > Noen innstillinger for knappegruppe gjelder bare for Enterprise POS, ikke for Modern POS eller Cloud POS.
 
-    ![Knappegenskaper for knappegruppe](../commerce/media/Button-grid-button-properties.png)
+    ![Knappegenskaper for knappegruppe.](../commerce/media/Button-grid-button-properties.png)
 
     - **Handling** – I listen over aktuelle POS-operasjoner velger du operasjonen som startes når knappen klikkes på salgsstedet.
 
@@ -190,7 +190,7 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
     - **Verktøytips** – Angi ekstra hjelpeteksten som vises når brukere holder pekeren over knappen.
     - **Størrelse i kolonner / Størrelse i rader** – Du kan angi hvor høy og bred knapppen er.
 
-        ![Knappestørrelser for salgssted i rader og kolonner](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+        ![Knappestørrelser for salgssted i rader og kolonner.](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
     - **Egendefinert skrift** – Når du merker av for **Aktiver egendefinert skrift for POS**, kan du angi en annen skrift enn standard systemskrift for salgsstedet.
     - **Egendefinert tema** – Salgsstedsknapper bruker som standard uthevingsfargen fra den visuelle profilen. Når du merker av for **Bruk egendefinert tema**, kan du angi flere farger.
@@ -200,8 +200,11 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
 
     - **Knappebilde** – Knapper kan inneholde bilder eller ikoner. Velg blant de tilgjengelige bildene som er angitt under **Retail og Commerce \> Kanaloppsett \> Salgsstedsoppsett \> Salgssted \> Bilder**.
 
-![Eksempel på knappegruppe på salgssted](../commerce/media/Example-Button-Grid-In-POS.png)
+![Eksempel på knappegruppe på salgssted.](../commerce/media/Example-Button-Grid-In-POS.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Installere utforming av oppsett for salgssted (POS) for detaljhandel](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

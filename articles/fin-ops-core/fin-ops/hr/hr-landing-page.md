@@ -1,28 +1,28 @@
 ---
-title: Oversikt over personale
-description: Personale forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Det inneholder også et rammeverk for personalansatte til å administrere områder under oppsyn. Disse områdene omfatter ansattrekruttering og oppbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon.
+title: Oversikt over Human Resources
+description: Human Resources strømlinjeformer rutinemessige arkiveringsoppgaver, automatiserer prosesser i forbindelse med bemanning i organisasjonen og gir et rammeverk for personale som kan styre områder med oversyn.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.custom: 20931
+ms.custom:
+- "20931"
+- intro-internal
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2c23cda87060ecb129befcc67c5b54f2f062bb3
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9cd7ce1268dd1aeae142e85fdd3ea2d9faa0a659
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797823"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983135"
 ---
-# <a name="human-resources-overview"></a>Oversikt over personale
+# <a name="human-resources-overview"></a>Oversikt over Human Resources
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,38 +44,38 @@ Med Personale kan du fullføre disse oppgavene:
 
 Når du arbeider med Personale, må du bestemme hvordan du vil strukturere organisasjonen ved hjelp av elementer, for eksempel avdelinger, jobber og stillinger. Disse er blant de grunnleggende elementene du må konfigurere i Personale. Enkeltansatte tilordnes til stillinger som er knyttet til jobber.
 
-- [Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger](../../../talent/departments-jobs-positions.md)
-- [Definere firmaspesifikke parametere for Personale (HR)](../../../talent/set-up-company-specific-hr-parameters.md)
-- [Definere parametere for Personale (HR) på tvers av juridiske enheter](../../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger](../../../human-resources/hr-personnel-departments-jobs-positions.md)
+- [Definere firmaspesifikke parametere for Personale (HR)](../../../human-resources/hr-setup-parameters.md)
+- [Definere parametere for Personale (HR) på tvers av juridiske enheter](../../../human-resources/hr-setup-shared-parameters.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekruttere, ansette og motivere ansatte
 
 Rekrutteringsprosjekter behandler innholdet som brukes i annonser for ledige stillinger, og kan hjelpe deg med å administrere søknader for ledige stillinger. Du kan bruke dem til å spore svar på jobbposteringer for et bestemt rekrutteringsprosjekt eller bestemte søkere, og oppdatere statusen for ledige stillinger. Du kan også ansette enkeltsøkere eller administrere masseansettelsesprosjekter, som forenkler ansettelse av flere arbeidere, for eksempel for å oppfylle sesongbaserte behov.
 
 - [Administrere rekrutteringsprosesser](manage-recruiting-process.md)
-- [Masseansettelsesprosjekter](mass-hire-projects.md) 
+- [Masseansettelsesprosjekter](../../../human-resources/hr-personnel-mass-hire-projects.md) 
 
 Når du har ansatt en stab, kan du definere planer for å behandle kompensasjon effektivt og rettferdig, samt administrere elementer, for eksempel datamaskiner eller telefoner, som organisasjonen låner ut til sine ansatte. Du kan opprette faste og variable kompensasjonsplaner, i tillegg til å definere reglene som gjelder kompensasjonsplanen for å oppfylle kriteriene for denne planen.
 
-- [Kompensasjonsplaner](../../../talent/compensation-plans.md)
-- [Opprette planer for fast kompensasjon](../../../talent/create-fixed-compensation-plans.md)
-- [Opprette variable kompensasjonsplaner](../../../talent/create-variable-compensation-plans.md)
+- [Kompensasjonsplaner](../../../human-resources/hr-compensation-overview.md)
+- [Opprette planer for fast kompensasjon](../../../human-resources/hr-compensation-fixed-plans.md)
+- [Opprette variable kompensasjonsplaner](../../../human-resources/hr-compensation-variable-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Utvikle og lære opp ansatte
 
 For å hjelpe de ansatte til å nå sine karrieremål samtidig som de oppfyller kritiske forretningsbehov, kan du definere mål, opprette medarbeiderevalueringer og spore tilbakemeldinger for å hjelpe ansatte med å utvikle nødvendige kvalifikasjoner. For å hjelpe ansatte med å utvikle nødvendige kvalifikasjoner kan også definere instruktører, kurstyper, kurs, kursbeskrivelser, agendaer, sporinger og økter før du tilordner en instruktør til et kurs eller registrerer noen for et kurs. Instruktører må allerede finnes som arbeidere, søkere eller kontakter.
 
-- [Ytelsesstyring](../../../talent/performance-management-overview.md)
-- [Justere ferdigheter med forretningsbehov for arbeidsstyrke](../../../talent/skills.md)
-- [Definere opplæringskurs](../../../talent/courses.md)
+- [Ytelsesstyring](../../../human-resources/hr-develop-performance-management-overview.md)
+- [Justere ferdigheter med forretningsbehov for arbeidsstyrke](../../../human-resources/hr-develop-skills.md)
+- [Definere opplæringskurs](../../../human-resources/hr-learning-courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Opprette og vedlikeholde fordeler
 
 I tillegg til å kompensere dine ansatte med lønn og bonuser, kan du utvikle fordelsprogrammer som sykeforsikring og pensjonsplaner. Du kan også administrere fordeler, for eksempel låneprogrammer, der firmaet låner ut elementer, for eksempel datamaskiner eller telefoner, til sine ansatte.
 
-- [Definere og administrere et fordelsprogram](../../../talent/manage-benefit-program.md)
-- [Policyer for fordelsrettigheter](../../../talent/benefit-eligibility-policies.md)
-- [Administrere varer som er lånt ut til arbeidere](../../../talent/loan-items.md)
+- [Definere og administrere et fordelsprogram](../../../human-resources/hr-benefits-management-overview.md)
+- [Policyer for fordelsrettigheter](../../../human-resources/hr-benefits-eligibility-policies.md)
+- [Administrere varer som er lånt ut til arbeidere](../../../human-resources/hr-personnel-loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Opprettholde sikkerhet på arbeidsplassen og overholdelse
 
@@ -89,7 +89,10 @@ Microsoft Dynamics AX kan bidra til å vedlikeholde et sikkert arbeidsmiljø som
 
 Du kan utforme og administrere spørreskjemaer for å samle inn informasjon som brukes til forskjellige formål. Spørreskjema-funksjonen lar deg utforme og lage spørreskjemaer. Når et spørreskjema er klart, distribuerer du det til mange eller til et bestemt sett av respondentene, for utfylling. Når respondentene har avgitt svarene, kan du gå gjennom og analysere resultatene.
 
-- [Spørreskjemaer](../../../talent/questionnaires.md)
-- [Utforme spørreskjemaer](../../../talent/design-questionnaires.md)
-- [Distribuere og planlegge spørreskjemaer](../../../talent/distribute-questionnaires.md)
-- [Vise og evaluere resultatene i spørreskjemaer](../../../talent/evaluate-questionnaire-results.md)
+- [Spørreskjemaer](../../../human-resources/hr-learning-questionnaires.md)
+- [Utforme spørreskjemaer](../../../human-resources/hr-learning-design-questionnaires.md)
+- [Distribuere og planlegge spørreskjemaer](../../../human-resources/hr-learning-distribute-questionnaires.md)
+- [Vise og evaluere resultatene i spørreskjemaer](../../../human-resources/hr-learning-evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

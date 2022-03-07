@@ -1,12 +1,10 @@
 ---
 title: Godkjenne og bekrefte bestillinger
 description: Dette emnet beskriver statusene som en bestilling går gjennom når den er opprettet, og effekten av å aktivere endringsadministrasjon på bestillinger.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eafce0be07ae21e5bc2db2cf5bb694a9d71a6269
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7ae625950e62b2bf5ec092ccda414ee306c62d79
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018451"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570543"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
@@ -43,8 +41,8 @@ Når endringsadministrasjon er aktivert, går bestillinger gjennom seks godkjenn
 | Godkjenningsstatus | Beskrivelse                                                                      | Be om endring er aktivert |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
 | Utkast           | Bestillingen er et utkast og er ikke sendt til godkjenning i arbeidsflyten for bestilling.     | Nei                        |
-| Til vurdering       | Bestillingen ble sendt til godkjenning i arbeidsflyten for bestilling. Venter på godkjenning.       | Antall                        |
-| Avslått        | Bestillingen ble avvist under godkjenningsprosessen.                                 | Antall                        |
+| Til vurdering       | Bestillingen ble sendt til godkjenning i arbeidsflyten for bestilling. Venter på godkjenning.       | Nei                        |
+| Avslått        | Bestillingen ble avvist under godkjenningsprosessen.                                 | Nei                        |
 | Godkjent        | Bestillingen ble godkjent.                                                             | Ja                       |
 | Bekreftet       | Bestillingen ble bekreftet. En bestilling kan ikke bekreftes før den er godkjent.        | Ja                       |
 | Sluttført       | Bestillingen ble gjort endelig. Den er nå økonomisk lukket og kan ikke lenger endres. | Nei                        |
@@ -85,8 +83,7 @@ Hvis du vil annullere hele antallet på en bestillingslinje, må du annullere le
 
 Hvis en bestilling er under endringsstyring, må endringer, for eksempel annullering av ordren eller leveringsresten, sendes til arbeidsflytsystemet og godkjennes før prosessen kan fullføres og lagertransaksjonene kan oppdateres som annullert.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over bestilling](purchase-order-overview.md)
 
@@ -98,3 +95,6 @@ Hvis en bestilling er under endringsstyring, må endringer, for eksempel annulle
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

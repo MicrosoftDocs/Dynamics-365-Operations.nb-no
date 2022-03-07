@@ -2,30 +2,28 @@
 title: Forskriftsmessig jobbkategori
 description: I dette emnet beskrives alternativsettet for Forskriftsmessig jobbkategori for Dynamics 365 Human Resources.
 author: jaredha
+manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b182e109220238a33d3af73cb859bee89e59dda6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 4b68103bafae4b963ba4ece3f288c6398b343edc
+ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066224"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5126128"
 ---
 # <a name="regulatory-job-category"></a>Forskriftsmessig jobbkategori
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emnet beskrives alternativsettet for Forskriftsmessig jobbkategori for Dynamics 365 Human Resources.
 
@@ -51,6 +49,3 @@ Denne opplistingen angir alternativsettet for verdier for alternativsettet for f
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for rekrutteringsforespørsel](hr-admin-integration-ats-api-recruiting-request-example-query.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

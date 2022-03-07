@@ -2,15 +2,12 @@
 title: Trekkspillmodul
 description: Dette emnet dekker trekkspillmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2bb18539f610e5af05f8d9a20a0ba9f34db5c94f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa2515a0cbc5b69a1a69e15ec9e1ba2739fa2fbeffb5b0eb22b49fd8cab18e6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719533"
 ---
-# <a name="accordion-module"></a>Trekkspillmodul
+# <a name="accordion-module"></a>Samsvarsmodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker trekkspillmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Slike moduler er beholder-lignende moduler som brukes til å organisere informasjonen eller modulene på en side gjennom en skuffelignende funksjon. En trekkspillmodul kan brukes på en hvilken som helst side.
 
@@ -39,7 +34,7 @@ I hver trekkspillmodul kan én eller flere trekkspillelementmoduler legges til. 
 
 Bildet nedenfor viser et eksempel på en trekkspillmodul som brukes til å organisere informasjon på en side med vanlige spørsmål om en butikk.
 
-![Eksempel på en trekkspillmodul](./media/ecommerce-accordion.PNG)
+![Eksempel på en trekkspillmodul.](./media/ecommerce-accordion.PNG)
 
 ## <a name="accordion-module-properties"></a>Egenskaper for trekkspillmoduler
 
@@ -87,3 +82,6 @@ Hvis du vil legge til en trekkspillmodul på en side med vanlige spørsmål, og 
 [Kategorimodul](add-tab.md)
 
 [Tekstblokkmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

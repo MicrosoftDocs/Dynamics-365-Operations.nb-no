@@ -15,21 +15,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1857d2e35e369bcd0c8f02a059a307f31da8b3b9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 40fc4c06c563415cd5b1a13c145b778276274fd97279dc9f56ff5e3f8954dc76
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732015"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimaliser virtuelle Dataverse-tabellspørringer
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="issue"></a>Problem
 
@@ -50,12 +47,12 @@ En årsak til treg ytelse med virtuelle Dataverse-tabeller for Human Resources e
 Et eksempel der du kan se denne innvirkningen, er i spørringer mot Arbeider-enheten (**mshr_hcmworkerentity**) eller Basisarbeider-enheten (**mshr_hcmworkerbaseentity**). Det kan hende at du ytelsesproblemet manifesterer seg selg på noen måter:
 
 - **Treg spørringsutførelse:** Spørringen mot den virtuelle tabellen kan returnere de forventede resultatene, men ta lengre tid enn forventet for å fullføre utføringen av spørringen.
-- **Tidsavbrudd for spørring**: Spørringen kan bli tidsavbrutt og returnere følgende feil: "Et token ble hentet for å kalle økonomi og drift, men økonomi og drift returnerte en feil av typen InternalServerError."
+- **Tidsavbrudd for spørring:** Spørringen kan tidsavbrudd og returnere følgende feil: "Et token ble hentet for å kalle Finance and Operations, men Finance and Operations returnerte en feil av typen InternalServerError."
 - **Uventet feil**: Spørringen kan returnere feiltype 400 med følgende melding: "Det oppstod en uventet feil."
 
   ![Feiltype 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Begrensning**: Spørringen kan overbruke serverressurser og blir underlagt begrensning. I dette tilfellet returnerer spørringen følgende feil: "Et token ble hentet for å kalle økonomi og drift, men økonomi og drift returnerte en feil av type 429." Hvis du vil ha mer informasjon om begrensning i Human Resources, kan du se [Vanlige spørsmål om begrensning](./hr-admin-integration-throttling-faq.md).
+- **Begrensning**: Spørringen kan overbruke serverressurser og blir underlagt begrensning. I dette tilfellet returnerer spørringen følgende feil: "Et token ble hentet for å kalle Finance and Operations, men Finance and Operations returnerte en feil av type 429". Hvis du vil ha mer informasjon om begrensning i Human Resources, kan du se [Vanlige spørsmål om begrensning](./hr-admin-integration-throttling-faq.md).
 
   ![Feiltype 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -123,7 +120,7 @@ Hvis du opplever noen av indikasjonene nevnt ovenfor på treg ytelse når du byg
    > [!NOTE]
    > Hvis du tidligere mottok en feil av type 429 fra spørringen før oppdatering, kan det hende at du må vente på perioden for nye forsøk før du oppdaterer spørringen for at den skal fullføres etterfølgende.
 
-10. Klikk på **Lukk og bruk** på handlingsbåndet i Power Query-redigering.
+10. Klikk **Lukk og bruk** på handlingsbåndet i Power Query -redigering.
 
 Deretter kan du begynne å bygge Power BI-rapportenmot kolonnene som er valgt i den virtuelle tabellen.
 

@@ -14,17 +14,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: Platform update 42
-ms.openlocfilehash: 859f039a928cdc57c9f227885d0f00ef79980f28
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d0b12908993070a41d21ac57d6fb504fc6e3b06a
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070406"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053521"
 ---
 # <a name="reset-stuck-batch-jobs"></a>Tilbakestille satsvise jobber som står fast
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -49,7 +46,7 @@ Når en satsvis jobb blir stående fast i en **Kjører**- eller **Avbryter**-til
 
 5. På siden **Velg ny status** velger du **Venter** og velger deretter **OK**.
 
-   ![Velge en ny status for den satsvise jobben.](./media/hr-admin-reset-batch-job-status.png)
+   ![Velge en ny status for den satsvise jobben](./media/hr-admin-reset-batch-job-status.png)
 
 ## <a name="see-also"></a>Se også
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 20085c51230d3ceca46c5119fecbc3cf3291ecd4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103494"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578566"
 ---
 # <a name="location-product-dimension-mixing"></a>Kombinasjon av produktdimensjoner for lokasjon
 
@@ -26,9 +26,12 @@ ms.locfileid: "8103494"
 
 kombinasjon av produktdimensjoner for lokasjon er lokasjonsprofilfunksjonalitet som bidrar til å forbedre lokasjonsstyringen når produktvarianter eller produkter som har dimensjoner, brukes, for eksempel i motebransjen. Den lar deg bestemme om konfigurasjoner, farger, stiler og størrelser kan blandes for en bestemt lokasjonsprofil, eller om bare én av disse dimensjonene eller en kombinasjon av dem kan legges til samme lokasjon.
 
-## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Kombinasjon av produktdimensjoner for lokasjon
+## <a name="turn-on-the-location-product-dimension-mixing-feature"></a>Slå på funksjonen for kombinasjon av produktdimensjoner for lokasjon
 
-Du må aktivere funksjonen *Kombinasjon av produktdimensjoner for lokasjon* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Kombinasjon av produktdimensjoner for lokasjon* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruke kombinasjon av produktdimensjoner for lokasjon, må funksjonen aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+
+- **Modul:** *Lagerstyring*
+- **Funksjonsnavn:** *Kombinasjon av produktdimensjoner for lokasjon*
 
 ## <a name="setup"></a>Installasjon
 

@@ -2,11 +2,9 @@
 title: Oversikt over kontobehandlingssider
 description: Dette emnet gir en oversikt over kontohandlingssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e194004476545fb142f71aa4bd889dbbc70c6ed4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969857"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984525"
 ---
 # <a name="account-management-pages-overview"></a>Oversikt over kontobehandlingssider
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir en oversikt over kontohandlingssider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Med kontobehandlingssider kan kunder vise informasjon som er knyttet til kontoene sine og ordrene. Kontobehandlingssidene inkluderer målsiden for kontostyring og sider for brukerprofil, adresser, ordrelogg, ordredetaljer, loyalitetspoeng og ønskeliste.
 
@@ -39,7 +35,7 @@ Når en kunde logger på og velger **Min konto**, åpnes målsiden for kontostyr
 
 Illustrasjonen nedenfor viser et eksempel på målsiden for kontobehandling.
 
-![Eksempel på målside for kontobehandling](./media/Account-Management.PNG)
+![Eksempel på målside for kontobehandling.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Min profilside
 
@@ -47,15 +43,15 @@ Siden **Min profil** viser kundens kontoinformasjon, for eksempel navn og telefo
 
 Illustrasjonen nedenfor viser et eksempel på en **Min profil**-side som ble bygd ved hjelp av modulbiblioteket.
 
-![Eksempel på en Min profil-side](./media/Account-Management-MyProfile.PNG)
+![Eksempel på en Min profil-side.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Siden Adresser
 
-Siden **Adresser** lar kunden legge til adresser på hans eller hennes konto. Den viser også en liste over adresser som kunden tidligere har lagt til eller lagret for kontoen. Disse adressene er adresser som kunden har angitt enten på denne siden eller når de legger inn en ordre.
+Siden **Adresser** lar kunden legge til adresser på kontoen sin. Den viser også en liste over adresser som kunden tidligere har lagt til eller lagret for kontoen. Disse adressene er adresser som kunden har angitt enten på denne siden eller når de legger inn en ordre.
 
 Illustrasjonen nedenfor viser et eksempel på siden **Adresser**.
 
-![Eksempel på en Adresser-side](./media/Account-Management-Address.png)
+![Eksempel på en Adresser-side.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Sidene Ordrehistorikk og Ordredetaljer
 
@@ -63,11 +59,11 @@ Siden **Ordrehistorikk** viser et sammendrag av alle ordrer som kunden har sendt
 
 Illustrasjonen nedenfor viser et eksempel på siden **Ordrehistorikk**.
 
-![Eksempel på en Ordrehistorikk-side](./media/Account-Management-OrderHistory.PNG)
+![Eksempel på en Ordrehistorikk-side.](./media/Account-Management-OrderHistory.PNG)
 
 Illustrasjonen nedenfor viser et eksempel på siden **Ordredetaljer**.
 
-![Eksempel på en Ordredetaljer-side](./media/Account-Management-OrderDetails.PNG)
+![Eksempel på en Ordredetaljer-side.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Siden Fordelsprogram
 
@@ -75,15 +71,15 @@ Med **Fordelsprogram** kan kunden bli medlem av et fordelsprogram. Når en kunde
 
 Illustrasjonen nedenfor viser et eksempel på en **Fordelsprogram**-side.
 
-![Eksempel på en side for fordelsprogram](./media/Account-Management-Loyalty.PNG)
+![Eksempel på en side for fordelsprogram.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Ønskelisteside
 
-**Ønskeliste**-siden viser en liste over varene som kunden har lagt til hans eller hennes ønskeliste. Både produkter og produktvarianter kan legges til i ønskelisten. Fra denne siden kan kunden fjerne en vare fra ønskelisten eller legge til en vare direkte i handlekurven.
+**Ønskeliste**-siden viser en liste over varene som kunden har lagt til ønskelisten. Både produkter og produktvarianter kan legges til i ønskelisten. Fra denne siden kan kunden fjerne en vare fra ønskelisten eller legge til en vare direkte i handlekurven.
 
 Illustrasjonen nedenfor viser et eksempel på en **Ønskeliste**-side.
 
-![Eksempel på en Ønskeliste-side](./media/Account-Management-Wishlist.PNG)
+![Eksempel på en Ønskeliste-side.](./media/Account-Management-Wishlist.PNG)
 
 Hvis du vil ha mer informasjon om kontobehandlingsmoduler og hvordan du redigerer dem, kan du se [Kontobehandling](account-management.md).
 
@@ -95,3 +91,6 @@ Hvis du vil ha mer informasjon om kontobehandlingsmoduler og hvordan du redigere
 
 [Oversikt over sider for handlekurv og kasse](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

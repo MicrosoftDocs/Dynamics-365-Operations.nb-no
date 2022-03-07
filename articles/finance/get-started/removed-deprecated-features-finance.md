@@ -2,25 +2,22 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689500"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890959"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 
@@ -34,13 +31,109 @@ Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerni
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
 > [!NOTE]
-> Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+> Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.24
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Rapport for mva-betaling for Sverige (utforming basert på rapporteringskoder)
+
+[Mva-rapport for Sverige](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [mva-deklarering for Sverige](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi å ikke lenger å støtte mva-rapporten for Sverige (svensk rapportoppsett). Nye ER-formater for **MVA-deklarering XML (SE**) og **MVA-deklarering Excel (SE)** introduseres under **Avgiftsdeklarering**-modellen. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Mva-oppgave for Østerrike (utforming basert på rapporteringskoder)
+
+[Mva-oppgavedetaljer for Østerrike](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [mva-deklarering for Østerrike](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatet **Mva-deklarering (AT)** under **MVA-deklarasjonsmodell**. Nye formater for **MVA-deklarering XML (AT)** og **MVA-deklarering Excel (AT)** introduseres under **Avgiftsdeklarering**-modellen. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-deklarering for Tyskland (design basert på rapporteringskoder)
+
+[Mva-oppgave](../localizations/emea-de-vat-declaration.md)</br>
+[Oppsett for elektronisk avgiftsdeklarering for Tyskland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Elektronisk overføring av mva-deklarering (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [mva-deklarering for Tyskland](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatet **Elster (DE)** og **Elster-modell**. Nye formater for **MVA-deklarering XML (DE)** og **MVA-deklarering Excel (DE)** introduseres under **Avgiftsdeklarering**-modellen. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-deklarering for Nederland (design basert på rapporteringskoder)
+
+[OB-deklarering](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [Mva-deklarering for Nederland](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatene **OB-deklarering (NL)** og **OB-deklareringsmodell**. Nye formater for **MVA-deklarering XML (NL)** og **MVA-deklarering Excel (NL)** introduseres under **Avgiftsdeklarering**-modellen. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.20
+
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>Formatkonfigurasjon for elektronisk rapportering (ER) "RTIR-spørring om fakturadataforespørsel (HU)"
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Utelatt fra behandling av elektroniske meldinger for samhandling med ungarsk elektronisk faktureringssystem |
+| **Erstattet med en annen funksjon?**   | Nei |
+| **Berørte produktområder**         | Søknad |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Etter 15. april 2022 planlegger vi ikke lenger å støtte formatkonfigurasjonen "RTIR-spørring om fakturadataforespørsel (HU)". |
+
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>Elektronisk rapportering-formatet for Frankrike "Fransk FEC-revisjonsfil" under formatet "Tysk revisjonsfilutdata"
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattes med nytt "FEC-revisjonsfil (FR)"-format |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Søknad |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. mai 2022 planlegger vi å ikke lenger støtte det elektroniske rapporteringsformatet "Fransk FEC-revisjonsfil" under formatet "Tysk revisjonsfilutdata". Nytt FEC-revisjonsfil (FR)-format introduseres i stedet under "Dataeksportmodellen". |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.17
+
+### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-repositorium som lagringsalternativ for elektroniske rapporteringskonfigurasjoner
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattes med det nye globale RCS-repositoriet (Regulatory Configuration Service) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Dynamics 365 Finance, Supply Chain Management og Project Operations-produkter|
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. april 2022 planlegger vi ikke lenger å støtte repositoriet Microsoft Dynamics Lifecycle Services (LCS) som et lagringsalternativ for ER-konfigurasjoner (Electronic Reporting). Nye Microsoft ER-konfigurasjoner blir publisert for nedlasting utelukkende fra det globale repositoriet. Du kan få tilgang til det globale repositoriet fra Dynamics 365-produktene og RCS. Hvis du vil ha mer informasjon, kan du se [Importere ER-konfigurasjoner fra RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md) og [Regulatory Configuration Service – avskrivning av lager for Lifecycle Services](../localizations/rcs-lcs-repo-dep-faq.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.16
 
+### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>"MVA-deklarering (CZ)" og "Kontrolloppgaveeksport (CZ)" Formater for elektronisk rapportering for Den tsjekkiske republikk
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattes med nye formater |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Søknad |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 22. januar 2022 planlegger vi å ikke lenger støtte formater for elektronisk rapportering for "MVA-deklarering (CZ)", "Kontrolloppgaveeksport (CZ)". Nye formater for MVA-deklarering XML (CZ), MVA-deklarering Excel (CZ), MVA-kontrolloppgave XML (CZ) introduseres i stedet under "Mvh-deklarering"-modellen. |
+
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>"Format for eksport av finanstransaksjon (BE)" Elektronisk rapporteringsformat og tilsvarende "modell for eksport av finanstransaksjon (BE)" for Belgia
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Erstattet med nytt ER-format under modellen "Standard revisjonsfil (SAF-T)".  |
 | **Erstattet med en annen funksjon?**   | Ja |
@@ -50,7 +143,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>"VAT 100"-rapport for Storbritannia i SSRS-format
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Erstattet med nytt ER-format – "Mva-deklarering Excel (UK)"-formatet under "Mva-deklareringsmodell".  |
 | **Erstattet med en annen funksjon?**   | Ja |
@@ -62,7 +155,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-støtte for Dynamics 365 er avskrevet
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter. |
 | **Erstattet med en annen funksjon?**   | Vi anbefaler at kundene går over til Microsoft Edge.|
@@ -72,21 +165,21 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.12
 
-### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polske SSRS-rapporter: register for utgående mva, register for inngående mva, sammendrag av mva-register for EU – funksjonsreferanser PL-00014
+### <a name="not-deprecated-polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Ikke avskrevet: Polske SSRS-rapporter: register for utgående mva, register for inngående mva, sammendrag av mva-register for EU – funksjonsreferanser PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Ikke lovpålagt.  |
 | **Erstattet med en annen funksjon?**   | Ja (Excel-format for standard revisjonsfil med mva-deklarering - JPK_VDEK) |
 | **Berørte produktområder**         | Søknad |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Innen 1. juli 2021 vi planlegger å ikke lenger kunne støtte SSRS-rapportene **: register for utgående mva, register for inngående mva, sammendrag av mva-register for EU – funksjonsreferanser PL-00014**. Excel-formateringseksempel for standard revisjonsfil med mva-deklarering (JPK_VDEK) blir introdusert i stedet. |
+| **Status**                         | Ikke avskrevet: Fra og med 27. april 2021 planlegger vi å fortsette å støtte SSRS-rapportene **: register for utgående mva, register for inngående mva, sammendrag av mva-register for EU – funksjonsreferanser PL-00014**. Excel-formateringseksempel for standard revisjonsfil med mva-deklarering (JPK_VDEK) er også introdusert. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.11
 
 ### <a name="norwegian-standard-main-accounts"></a>Norske standard hovedkontoer
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Utform på nytt  |
 | **Erstattet med en annen funksjon?**   | Ja (erstattet med programspesifikke parametere i ER-formatet) |
@@ -97,7 +190,8 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.7
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Dialogboksen Endring av arbeidsflytforespørsel inneholder ikke lenger en rullegardinliste for brukervalg
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Endret til funksjonen med kontogruppevalg.  |
 | **Erstattet med en annen funksjon?**   | Ja |
@@ -107,3 +201,6 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidligere kunngjøringer om fjernede eller avskrevne funksjoner
 Hvis du vil lære mer om funksjoner som er fjernet eller avskrevet i tidligere versjoner, kan du se [Fjernede eller avskrevne funksjoner i tidligere versjoner](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Endre leveringsmodus i POS
 description: Dette emnet beskriver hvordan du konfigurerer og bruker endre leveringsmodus i POS.
 author: hhainesms
-manager: annbe
 ms.date: 03/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: ''
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 6bfe27a7b4a768da00c67e307a0bd7e57b333d11
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714046"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Endre leveringsmodus i POS
 
@@ -33,7 +31,7 @@ I Dynamics 365 Commerce versjon 10.0.10 og senere er **Endre leveringsmodus** (6
 
 Med funksjonen for endring av leveringsmåte kan du endre leveringsmåten for én eller flere forsendelseskonfigurerte salgslinjer på POS-transaksjonen. I tidligere versjoner av Commerce måtte du gå gjennom de fullstendige konfigurasjonsflytene **Send alle** eller **Valgt for forsendelse** hvis du ville endre leveringsmåten for en eksisterende linje som ble konfigurert for forsendelse. Denne prosessen var tidkrevende, og kunne føre til utilsiktede endringer i leveringsopprinnelsen eller leveringsdatoen for linjen. De nye funksjonene gir en alternativ metode for effektiv oppdatering av leveringsmåten på disse salgslinjene.
 
-Hvis du vil ha mer informasjon om hvordan du legger til en operasjon på en knapp i POS-rutenettet, kan du se [Skjermoppsett for salgssted](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts).
+Hvis du vil ha mer informasjon om hvordan du legger til en operasjon på en knapp i POS-rutenettet, kan du se [Skjermoppsett for salgssted](pos-screen-layouts.md).
 
 Når denne funksjonen er konfigurert i POS-feltet og du velger **Endre leveringsmåte**, åpnes en listeside som gir deg muligheten til å velge linjene i transaksjonen du vil endre leveringsmåten for. Du kan velge noen av eller alle linjene, eller avslutte uten å gjøre noen endringer. Salgslinjene som tidligere ble konfigurert for forsendelse, er de eneste linjene i listen som du kan endre. Hvis du vil endre en linje som er utpekt til plukking eller utlevering, må du bruke operasjonene **Send alle** eller **Valgt for forsendelse**. Hvis du derimot vil endre en linje som er utpekt som en forsendelse til en plukking eller utlevering, må du bruke operasjonene **Plukk alle**, **Plukk valgte produkter**, **Utlevering av alle** eller **Utlevering av valgte**.
 
@@ -46,3 +44,6 @@ Når du har valgt den nye leveringsmåten, vises transaksjonssiden. Hvis du vil 
 [Opprette telefonsenterordrer](tasks/create-call-center-orders.md)
 
 [Tilpasse transaksjons-e-poster etter leveringsmåte](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

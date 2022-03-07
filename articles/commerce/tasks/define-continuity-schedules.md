@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: MCRContinuitySchedule, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 06fd1e23ad84fdc5e94e309717d5a96fbff45035
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f385d97ce8c458ada944609e165ebd0db500b546
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414689"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5229942"
 ---
 # <a name="define-continuity-schedules"></a> Definere kontinuitetsplaner
 
@@ -64,3 +63,6 @@ Dette emnet hjelper med å konfigurere et kontinuitetsprogram (også kjent som r
     * Når denne varen selges i et telefonsenter, brukes mer forretningslogikk fra det valgte kontinuitetsprogrammet.  
 7. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,28 +1,26 @@
 ---
 title: Innføring i arbeidsordrer
 description: Dette emnet gir en oversikt over arbeidsordrer i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 378fc6d55deada95e94f91ed3f73f2518efbeb1f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3891ea08a484950d8fef57d6229117e90ed93a92ab800f9de3ad82db3aff956d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754710"
 ---
 # <a name="introduction-to-work-orders"></a>Innføring i arbeidsordrer
 
@@ -53,7 +51,7 @@ Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Alle arbeidsordrer**.
 
-![Figur 1](media/01-work-orders.png)
+![Figur 1.](media/01-work-orders.png)
 
 Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Aktive arbeidsordrer** for å se en liste over aktive arbeidsordrer. 
 
@@ -71,7 +69,7 @@ Her er noen måter du kan bruke siden **Alle arbeidsordrer** på:
 
 Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Alle arbeidsordrer**.
 
-![Figur 2](media/02-work-orders.png)
+![Figur 2.](media/02-work-orders.png)
 
 
 Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kort hvilke knapper som er knyttet til Aktivastyring:
@@ -118,3 +116,6 @@ Knappene i gruppen **Prosjekt** i fanen **Arbeidsordre** i handlingsruten er rel
 >[!NOTE]
 >For å inkludere prognoser som er opprettet i en arbeidsordre når du kjører hovedplanlegging, bruker du prognosemodellen som er valgt på siden **Aktivabehandlingsparametere**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

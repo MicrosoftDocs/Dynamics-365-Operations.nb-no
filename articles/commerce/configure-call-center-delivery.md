@@ -2,11 +2,9 @@
 title: Konfigurere leveringsmåter og tillegg for telefonsenter
 description: Dette emnet beskriver hvordan du setter opp leveringsmåter og levering og tillegg for en telefonsenterordre i Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963116"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748577"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere leveringsmåter og tillegg for telefonsenter
 
@@ -67,11 +65,11 @@ I **Linjer**-delen kan du definere én eller flere tillegg per valuta, etter beh
 
 Firmaer konfigurerer ofte fordelte tillegg. I slike tilfeller er beløpet som kunder betaler for levering, basert på ordreverdien. For å konfigurere fordelte tillegg angir du verdier i feltene **Fra beløp** og **Til beløp** i tillegg til å definere selve tillegget i **Gebyrverdi**-feltet. For eksempel for alle ordrer som har en verdi som er mindre enn $50, krever en forhandler $5.95 for frakt på land. For ordrer som har en verdi som er lik eller større enn $50, men mindre enn $100, krever en forhandleren $7.95. For ordrer som har en verdi som er lik eller større enn $100, gir forhandleren gratis frakt. Illustrasjonen nedenfor viser konfigurasjonen av disse tilleggene.
 
-![Eksempel på fast fordelte tillegg](media/fixedtieredcharges.png)
+![Eksempel på fast fordelte tillegg.](media/fixedtieredcharges.png)
 
 Du kan bruke en blanding av kategorier for tillegg, avhengig av dine forretningsbehov. For eksempel for alle ordrer som har en verdi som er mindre enn $100, er det et fast tillegg på $9.95 for frakt. For ordrer som har en verdi som er lik eller større enn $100, beregnes leveringstillegg med en sats på 5 prosent av ordreverdien. Illustrasjonen nedenfor viser konfigurasjonen av disse tilleggene.
 
-![Eksempel på blandede fordelte tillegg](media/mixedtieredcharges.png)
+![Eksempel på blandede fordelte tillegg.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Bruk leveringsmåter under ordreregistrering i et telefonsenter
 
@@ -94,3 +92,6 @@ Eventuelt kan du knytte en kode for ekspeder til en hvilken som helst leveringsm
 For eksempel for ordrer som skal sendes med fly neste dag, må plukking gjøres i lageret kl. 13:00 hver dag. I dette tilfellet kan du opprette en ekspederingskode, og denne koden kan kobles til en hvilken som helst neste dag-leveringsmåte som er konfigurert i systemet. Når lageret oppretter plukkbølgen sin, kan riktig ekspederingskode i **Ekspeder**-feltet brukes som filter, slik at plukking bare utføres for ordrer som har leveringsmåter som er knyttet til koden.
 
 I tillegg, når det angis en telefonsenterordre, kan en ekspederingskode brukes manuelt på salgsordrehodet eller en individuell salgsordrelinje. Igjen, koden kan brukes til sorterings- eller rapporteringsformål. Noen ganger må en ordre håndteres forsiktig på grunn av problemer med kundeservice. I dette tilfellet kan en bestemt ekspederingskode brukes på ordrehodet eller -linjene for å identifisere og prioritere ordren under prosessen med å utføre.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

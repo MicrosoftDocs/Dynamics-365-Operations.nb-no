@@ -2,11 +2,9 @@
 title: Integrert original for leverandør
 description: Dette emnet beskriver integrering av leverandørdata mellom Finance and Operations-apper og Dataverse .
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 07/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f2fc88ed0c0f4dbec55f8ca251cca3d071760b55
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744521"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346502"
 ---
 # <a name="integrated-vendor-master"></a>Integrert original for leverandør
 
@@ -41,11 +39,11 @@ I begge fremgangsmåtene er leverandørdataene integrert i Dynamics 365 Supply C
 
 Hvis du ikke vil lagre leverandørdata i tabellen **Konto/kontakt** i Dataverse, kan du bruke den nye leverandørutformingen.
 
-![Flyt for leverandørdata](media/dual-write-vendor-data-flow.png)
+![Flyt for leverandørdata.](media/dual-write-vendor-data-flow.png)
 
 Hvis du ikke vil fortsette å lagre leverandørdata i tabellen **Konto/kontakt**, kan du bruke den utvidede leverandørutformingen. Hvis du vil bruke den utvidede leverandørutformingen, må du konfigurere leverandørarbeidsflytene i løsningspakken med dobbel skriving. Hvis du vil ha mer informasjon, se [Bytte mellom leverandørutforminger](vendor-switch.md).
 
-![Utvidet flyt for leverandørdata](media/dual-write-vendor-detail.jpg)
+![Utvidet flyt for leverandørdata.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > Hvis du bruker Power Apps-portaler for selvbetjeningsleverandører, kan leverandørinformasjonen flyte direkte til Finance and Operations-apper.
@@ -75,3 +73,6 @@ Navnevedlegg                | msdyn\_nameaffixes          | Malen [navnevedlegg]
 [!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
 
 [!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

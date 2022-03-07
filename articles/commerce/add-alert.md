@@ -2,15 +2,12 @@
 title: Kampanjebannermodul
 description: Dette emnet dekker kampanjebannermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f781ed22852cb2108850e7dc6762aa6a9ba0db97574cb0dcc7959f8926e47a08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414559"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718786"
 ---
-# <a name="promo-banner-module"></a>Kampanjebannermodul
+# <a name="promo-banner-module"></a>Promobannermodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker kampanjebannermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Kampanjebannermoduler brukes til å vise meldinger med innebygd informasjon på en side. De kan brukes til å vise kampanjer på hele området som vises på alle sider av et e-handelsområde. 
 
@@ -51,7 +46,7 @@ Kampanjebannere kan brukes i områdehodet til å vise kampanjer eller meldinger 
 
 Bildet nedenfor viser et eksempel på en kampanjebanner.
 
-![Eksempel på en kampanjebannermodul](./media/ecommerce-Promobanner.PNG)
+![Eksempel på en kampanjebannermodul.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Egenskaper for kampanjebannermodul
 
@@ -64,6 +59,10 @@ Bildet nedenfor viser et eksempel på en kampanjebanner.
 | Vis karusellflipper     | **Sann** eller **Usann**              | En verdi som angir om karusellflipperne skal vises, slik at kunder manuelt kan gå gjennom flere bannerelementer. |
 | Tekstjustering            | **Høyre**, **Venstre** eller **Midtstilt** | Tekstjusteringen i kampanjebannermodulen. |
 | Sammenkobling                      | En URL                              | URL-adresse for valgfri kobling. |
+|Tekstjustering             | **Høyre**, **Venstre** eller **Midtstilt** | Denne egenskapen er tilgjengelig som emneutvidelse i Adventure Works-emnet. Den gjør det mulig for en bruker å angi tekstjusteringen i kampanjebanneret. |
+
+> [!IMPORTANT]
+> Adventure Works-temaet er tilgjengelig fra Dynamics 365 Commerce-10.0.20-versjonen.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Legge til en kampanjebannermodul på en side 
 
@@ -84,7 +83,6 @@ Hvis du vil legge til en kampanjebannermodul på en side og angi de nødvendige 
 > [!NOTE]
 > Et kampanjebanner brukes vanligvis i sporet for sideoverskrift eller et spor for underoverskrift.
 
-
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over modulbibliotek](starter-kit-overview.md)
@@ -96,3 +94,6 @@ Hvis du vil legge til en kampanjebannermodul på en side og angi de nødvendige 
 [Innholdsblokkmodul](add-hero-module.md)
 
 [Videospillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: EntAssetCounter
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5318bac961682f88e192ac70c4993c62b69b399c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 23a94415a662059ddbd41cc6a0ba9dab24aae44e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020891"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434226"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuell oppdatering av anleggsmiddeltellere
 
@@ -34,11 +35,11 @@ Tellere brukes til å opprette registreringer for aktiva, for eksempel registrer
 
 Tellertypen som er valgt for en teller, kan være satt til å arve tellerverdier. Med andre ord er alternativet **Arv aktivatellerverdier** satt til **Ja** i hurtigfanen **Generelt** på siden **Tellere** (**Aktivabehandling** > **Oppsett** > **Aktivatyper** > **Tellere**). I dette tilfellet oppdateres alle underordnede aktiva som bruker den samme tellertypen, automatisk når du oppretter en ny tellerlinje av denne typen.
 
-På siden **Alle aktiva** oppretter du tellerregistreringer for timer eller antall for et aktivum basert på avlesningene for aktivumet.
+På siden **Alle aktiva** oppretter du tellerregistreringer for timer eller antall for et aktivum basert på avlesningene for aktivaet.
 
 1. Velg **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva**.
 
-2. Velg aktivumet, og deretter velger du **Tellere**, i handlingsruten, fanen **Aktiva** i gruppen **Forebyggende**. Siden **Aktivatellere** viser en liste over alle tidligere tellerregistreringer som er gjort for det valgte aktivumet.
+2. Velg aktivumet, og deretter velger du **Tellere**, i handlingsruten, kategorien **Aktiva** i gruppen **Forebyggende**. Siden **Aktivatellere** viser en liste over alle tidligere tellerregistreringer som er gjort for det valgte aktivumet.
 
 3. Velg **Ny** for å opprette en registrering. Aktiva-ID angis automatisk i **Aktiva**-feltet.
 

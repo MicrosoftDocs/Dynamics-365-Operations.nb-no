@@ -1,10 +1,12 @@
 ---
 title: 150 prosent saldoavskrivning
-description: Dette emnet gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
-author: moaamer
+description: Denne artikkelen gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
+author: saraschi2
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,21 +14,21 @@ ms.reviewer: roschlom
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8a794e9d5f01e4cd8844b5388b37970607d0be
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: cc7fa705681c3f1fde96cabc430dad1dd0045b4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883318"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009324"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>150 prosent saldoavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
+Denne artikkelen gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger verdien **150 % saldoverdi** i **Metode**-feltet på **Avskrivningsprofiler**-siden, avskrives anleggsmidler som er tildelt avskrivningsprofilen, med den samme prosenten i hver avskrivningsperiode. Denne prosenten beregnes på grunnlag av anleggsmidlets levetid. Hvis anleggsmidlet for eksempel har en levetid på fem år, beregnes prosenten som 30 prosent (150 % ÷ 5). 
 
@@ -64,7 +66,7 @@ Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer t
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Eksempel på 150 % redusert saldoavskrivning
 
-| &nbsp;                         | &nbsp; |
+|                                |        |
 |--------------------------------|--------|
 | Anskaffelseskostnad               | 11 000 |
 | Restverdi                  | 1 000  |
@@ -85,6 +87,3 @@ Metoden 150 % saldoavskrivning dividerer 150 prosent med antall levetidsår. Avs
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

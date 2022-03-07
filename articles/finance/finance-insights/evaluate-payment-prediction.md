@@ -2,28 +2,25 @@
 title: Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
 description: Dette emnet beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: d761e31c4e4169b09711e351948390d2d40f3739
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644975"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186744"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
 
@@ -44,7 +41,7 @@ Denne koblingen tar deg til AI Builder, der du kan lære mer om den gjeldende mo
 
 Siden som åpnes, viser følgende informasjon:
 
-- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](https://docs.microsoft.com/ai-builder/prediction-performance) i veiviseren for AI Builder.
+- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](/ai-builder/prediction-performance) i veiviseren for AI Builder.
 - Delen **Data med mest innflytelse** viser hvor viktige forskjellige inndatatyper er for modellen din. Du kan evaluere denne listen og de tilsvarende prosentandelene for å fastslå om informasjonen samsvarer med det du vet om firmaet og markedet.
 
     [![Delene Ytelse og Data med mest innflytelse for forutsigelsesmodellen](./media/models.png)](./media/models.png)
@@ -69,7 +66,7 @@ Hvis du vil ha en dypere analyse av resultatene, er et godt utgangspunkt å gå 
 
 Du kan utvide disse dataene på følgende måte.
 
-|                          | Forventet Til planlagt tid | Forventet Forsinket | Forventet Svært sent |
+| &nbsp;                   | Forventet Til planlagt tid | Forventet Forsinket | Forventet Svært sent |
 |--------------------------|-------------------|----------------|---------------------|
 | Faktisk betaling Til planlagt tid   | **71**            | 0              | 21                  |
 | Faktisk forsinket betaling      | 5                 | **0**          | 27                  |
@@ -99,5 +96,4 @@ Når du har forstått resultatene av den første modellen bedre, vil du kanskje 
 
 Hvis du vil ha mer informasjon om hvordan du evaluerer prediksjonsmodellene, kan du se [Resultat av maskinlæringsmodeller](/confusion-matrix.md)
 
-#### <a name="privacy-notice"></a>Personvernerklæring
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

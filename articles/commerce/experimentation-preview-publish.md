@@ -2,15 +2,12 @@
 title: Forhåndsvise og publisere et eksperiment
 description: Dette emnet beskriver hvordan du forhåndsviser og publiserer et eksperiment fra Dynamics 365 Commerce.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: f1a565917ab7a048d4d455bc0a0fbd9316237aeb
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
+ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4414782"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740389"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Forhåndsvise og publisere et eksperiment
 
 Dette emnet beskriver hvordan du forhåndsviser og publiserer eksperimentet i Dynamics 365 Commerce etter at du har [koblet til eksperimentet og redigert variasjonene](experimentation-connect-edit.md). Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
 
-[ ![Brukerreise for eksperimentering – forhåndsvise og publisere](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
+[ ![Brukerreise for eksperimentering – forhåndsvise og publisere.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
 ## <a name="preview-your-experiment-variations"></a>Forhåndsvise eksperimentvariasjonene
 Du kan forhåndsvise variasjonene og fortsette å redigere dem til de ser ut slik du ønsker.
@@ -60,3 +57,6 @@ Når du bruker publiseringsgrupper med eksperimenter, er det noen viktige hensyn
 
 ## <a name="next-step"></a>Neste trinn
 [Kjør og Overvåk et eksperiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

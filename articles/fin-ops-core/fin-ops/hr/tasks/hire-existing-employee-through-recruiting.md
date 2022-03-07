@@ -1,42 +1,52 @@
 ---
 title: Ansette eksisterende ansatte via rekruttering
 description: Noen ganger kan ledige stillinger fylles av kandidater som allerede er ansatte i organisasjonen.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/10/2017
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797265"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074919"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Ansette eksisterende ansatte via rekruttering
 
 [!include [banner](../../includes/banner.md)]
 
-Noen ganger kan ledige stillinger fylles av kandidater som allerede er ansatte i organisasjonen. Denne prosedyren går gjennom trinnene for å ansette en eksisterende ansatt gjennom rekrutteringsprosessen. I denne prosedyren er et rekrutteringsprosjekt allerede definert, og en eksisterende ansatt har allerede sendt en søknad for rekrutteringsprosjektet. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+> [!IMPORTANT]
+> Funksjonaliteten som er nevnt i dette emnet, er for øyeblikket tilgjengelig for Human Resources-kunder i Finance-infrastrukturen.  
 
-1. Gå til Personale > Rekruttering > Søknader > Søknader.
-2. Finn søknaden for den ansatte du vil ansette, i listen. Eksempel: 00002 John Emory
-3. Klikk på Søknadsstatus.
-    * Søknadsstatus angir hvor en søknad er i rekrutteringsprosessen.  Hvert av disse trinnene er valgfrie. Vanligvis vil en søknad flytte statusene i følgende rekkefølge: mottatt, bekreftet og intervjuet. Etter intervjuprosessen foretas en beslutning om ansettelse.  
-4. Klikk på Endre stilling.
-5. Velg stillingen som du skal ansette den ansatte i.
-6. I feltet Ny startdato for tilordning angir du datoen da ansatt skal begynne å arbeide i den nye stillingen.  
-7. I feltet Sluttdato for tilordning angir du datoen da ansatt skal slutte å arbeide i den gjeldende stillingen.
-    * Startdatoen for den nye stillingen og sluttdatoen for den gamle stillingen kan overlappe. Dette kan skje når en person utfører oppgavene for begge stillinger i løpet av en overgangsperiode.  
-8. Hvis du vil, kan du velge en årsakskode. Eksempel: Omorganisering
-9. Klikk på Endre stilling.
-    * Du kan også endre kompensasjon på dette tidspunktet. Hvis du ikke tilordner kompensasjon på dette tidspunktet, kan du endre den ved å gå til arbeiderskjemaet, velge fanen Kompensasjon og velge Fast plan. Når du har valgt Endre stilling, oppdateres statusen for søknaden til Ansatt.  
 
+Noen ganger kan ledige stillinger fylles av kandidater som allerede er ansatte i organisasjonen. Denne prosedyren går gjennom trinnene for å ansette en eksisterende ansatt gjennom rekrutteringsprosessen. I denne prosedyren er et rekrutteringsprosjekt allerede definert, og en eksisterende ansatt har allerede sendt en søknad for rekrutteringsprosjektet. Demonstrasjonsdatafirmaet **USMF** ble brukt til å opprette denne fremgangsmåten.
+
+1. Gå til **Personale \> Rekruttering \> Søknader \> Søknader**.
+2. Finn søknaden for den ansatte du vil ansette, i listen. Velg for eksempel **00002 John Emory**.
+3. Velg **Søknadsstatus**.
+
+    Søknadsstatus angir hvor en søknad er i rekrutteringsprosessen. Hvert trinn er valgfritt. Vanligvis vil en søknad flyttes gjennom statusene i følgende rekkefølge: **Mottatt**, **Bekreftet** og **Intervjuet**. Etter intervjuprosessen foretas en beslutning om ansettelse.
+
+4. Velg **Endre stilling**.
+5. Velg stillingen som du skal ansette den ansatte for.
+6. I feltet **Ny startdato for tilordning** angir du datoen når den ansatte skal starte begynne i den nye stillingen.
+7. I feltet **Sluttdato for tilordning** angir du datoen når den ansatte skal slutte i den nåværende stillingen.
+
+    Startdatoen for den nye stillingen og sluttdatoen for den gamle stillingen kan overlappe. Denne overlappingen kan inntreffe når en person utfører oppgavene for begge stillinger i løpet av en overgangsperiode.
+
+8. Valgfritt: Velg en årsakskode. Du kan for eksempel velge **Omorganisering**.
+9. Velg **Endre stilling**.
+
+    På dette tidspunktet kan du også endre kompensasjonen. Hvis du ikke gjør det nå, kan du endre det senere ved å velge **Fast plan** på **Kompensasjon**-fanen på **Arbeider**-siden.
+
+    Når du har valgt **Endre stilling**, oppdateres statusen for søknaden til **Ansatt**.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

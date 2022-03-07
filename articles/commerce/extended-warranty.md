@@ -2,11 +2,9 @@
 title: Opprette og konfigurere utvidede garantier
 description: Dette emnet dekker utvidede garantier og beskriver hvordan du oppretter og konfigurerer dem i Microsoft Dynamics 365 Commerce.
 author: sijoshi
-manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965126"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745386"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Opprette og konfigurere utvidede garantier
 
@@ -83,7 +81,7 @@ Følg denne fremgangsmåten for å opprette en garantivare i Commerce.
 
     For en garanti på to år kan du for eksempel sette **Tidsenhet**-feltet til **År** og feltet **Tidslengde** til **2**. Du kan også sette feltet **Tidsenhet** til **Måned(er)** og feltet **Tidslengde** til **24**, som vist i følgende illustrasjon.
 
-    ![Siden produktdetaljer for en garantivare](./media/ew-time-properties.png)
+    ![Siden produktdetaljer for en garantivare.](./media/ew-time-properties.png)
 
 1. Velg **Lagre** for å lagre garantivaren.
 1. Frigi garantiproduktet til firmaet slik at det kan selges. Hvis du vil ha mer informasjon, kan du se [Definere detaljhandelsprodukter](set-up-retail-products.md).
@@ -96,7 +94,7 @@ Følg denne fremgangsmåten for å opprette en garantivare i Commerce.
 
     Følgende illustrasjon viser for eksempel at feltet **Prisområdebase** er satt til **Basispris**, feltet **Nedre grense** er satt til USD 500, og **Øvre grense**-feltet er satt til USD 1000.
     
-    ![Siden Detaljer om frigitt produkt for en garantivare](./media/ew-release-product-details.png)
+    ![Siden Detaljer om frigitt produkt for en garantivare.](./media/ew-release-product-details.png)
 
 1. Plasser garantivaren i kanalen der den skal selges. Hvis du vil ha mer informasjon, kan du se [Definere sortimenter](set-up-assortments.md).
 
@@ -163,11 +161,11 @@ To salgsstedsoperasjoner lar salgsmedarbeideren selge garantivarer under arbeids
 
 Følgende illustrasjon viser et eksempel på en salgsstedsterminalside med en ledetekst for å legge til en garantivare for det gjeldende kjøpet av en garantiberettiget vare.
 
-![Eksempel på en ledetekst for å legge til en garantivare for det gjeldende kjøpet](./media/ew-sell-warranty.png)
+![Eksempel på en ledetekst for å legge til en garantivare for det gjeldende kjøpet.](./media/ew-sell-warranty.png)
 
 Følgende illustrasjon viser et eksempel på funksjonen for å legge til en garantivare for en garantiberettiget vare som er solgt tidligere.
 
-![Eksempel på funksjonen for å legge til en garantivare for en tidligere solgt garantiberettiget vare](./media/ew-add-warranty-existing.png)
+![Eksempel på funksjonen for å legge til en garantivare for en tidligere solgt garantiberettiget vare.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Behandle garantitransaksjoner
 
@@ -238,3 +236,6 @@ En garanti er en tjeneste som er tilgjengelig for et bestemt, unikt produkt. I D
 [Definere sortimenter](set-up-assortments.md)
 
 [Oversikt over nummerserier](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

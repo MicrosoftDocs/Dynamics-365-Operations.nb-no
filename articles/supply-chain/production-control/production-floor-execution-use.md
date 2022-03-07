@@ -2,7 +2,7 @@
 title: Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 description: Dette emnet beskriver hvordan du bruker grensesnittet for produksjonsutførelse fra synspunktet til en arbeider.
 author: johanhoffmann
-ms.date: 01/24/2022
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075025"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569343"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -93,6 +93,7 @@ I **Min maskin**-fanen kan arbeidere velge et aktivum som er koblet til en maski
 1. **Registrer nedetid** – Velg denne knappen for å åpne en dialogboks der du kan registrere nedetid for maskin. Du kan velge en årsakskode og angi en dato / et tidsrom for nedetiden. Registreringen av nedetid for maskin brukes til å beregne effektiviteten til maskinaktivumet.
 1. **Vis eller rediger** – Velg denne knappen for å åpne en dialogboks der du kan redigere eller vise eksisterende poster for nedetid.
 
+
 ## <a name="starting-and-completing-production-jobs"></a>Starte og fullføre produksjonsjobber
 
 Arbeidere starter en produksjonsjobb ved å velge en jobb i **Alle jobber**-fanen og deretter velge **Start jobb** for å åpne **Start jobb**-dialogboksen.
@@ -109,94 +110,11 @@ Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere k
 
 ![Dialogboksen Rapportfremdrift.](media/pfei-report-progress-dialog.png "Dialogboksen Rapportfremdrift")
 
-## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Rapportering korrekte antall varer på partiordrer som har koprodukter og biprodukter
-
-Ansatte kan å bruke grensesnittet for produksjonsgulvutførelse til å rapportere fremdrift for partiordrer. Denne rapporten inkluderer rapportering på koprodukter og biprodukter.
-
-Noen produsenter, spesielt i prosessindustri, bruker partiordrer til å administrere produksjonsprosessene. Partiordrer opprettes fra formler, og disse formlene kan defineres slik at de har koprodukter og biprodukter som utlevering. Når tilbakemelding om disse partiordrene er rapportert, må mengden utlevering registreres på formelvaren, og også på koproduktene og biproduktene.
-
-Når en arbeider fullfører eller delvis fullfører en jobb i en partiordre, kan de rapportere korrekt antall eller svinn for hvert produkt som er definert som utlevering for ordren. Produkter som er definert som utlevering for en partiordre, kan være av typen *Formel*, *Koprodukt* eller *Biprodukt*.
-
-Hvis en arbeider skal rapportere korrekt antall varer på produktene, velger han eller hun en jobb i kategorien **Aktive jobber**, og velger deretter **Rapportfremgang**.
-
-I dialogboksen **Rapportfremgang** kan deretter arbeideren velge blant produktene som er definert som utdata for partiordren det skal rapporteres om. Arbeideren kan velge ett eller flere produkter i listen, og deretter velge **Rapportfremdrift**. For hvert produkt er antallet tomt som standard, og arbeideren kan bruke det numeriske tastaturet til å angi antallet. Arbeideren kan bruke knappene **Forrige** og **Neste** til å flytte mellom de valgte produktene. Når antallet er angitt for hvert produkt, kan arbeideren oppdatere statusen for jobben til *Pågår*, *Stoppet* eller *Fullført*.
-
-![Rapporter koprodukter og biprodukter.](media/report-co-by-products.png "Rapportere koprodukter og biprodukter")
-
-### <a name="reporting-on-batch-orders-for-planning-items"></a>Rapportering av partiordrer for planleggingselementer
-
-Når en arbeider fullfører en jobb i en partiordre for et planleggingselement, rapporterer de bare antall på koprodukter og biprodukter, fordi planleggingselementer ikke inneholder en vare av *Formel*-typen.
-
-### <a name="reporting-co-product-variation"></a>Rapportering av koproduktvariasjon
-
-Hvis det opprettes en partiordre fra en formelversjon der alternativet **Koproduktvariasjoner** er satt til *Ja*, kan arbeideren rapportere på koprodukter som ikke er en del av definisjonen for partiordrene. Denne funksjonaliteten brukes i scenarier der uventede produktutdata kan forekomme i produksjonsprosessen.
-
-I dette tilfellet kan arbeideren angi koproduktet og antallet som skal rapporteres, ved å velge **Koproduktvariasjoner** i dialogboksen Rapportfremgang. Arbeideren kan deretter velge blant alle de frigitte produktene som er definert som koprodukter.
-
 ## <a name="reporting-scrap"></a>Rapportere svinn
 
 Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere svinn som ble produsert ved å velge en jobb i fanen **Aktive jobber** og deretter velge **Rapportere svinn**. I dialogboksen **Rapportere svinn** angir arbeideren deretter svinnantall ved hjelp av det numeriske tastaturet. Arbeideren velger også en årsak (*ingen*, *maskin*, *operatør* eller *materiale*).
 
 ![Dialogboksen Rapportere svinn.](media/pfei-report-scrap-dialog.png "Dialogboksen Rapportere svinn")
-
-## <a name="adjust-material-consumption-and-make-material-reservations"></a>Justere materialforbruk og foreta materialreserveringer
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
-Arbeidere kan justere materialforbruket for hver produksjonsjobb. Denne funksjonaliteten brukes i scenarioer der det faktiske antallet materialer som ble forbrukt av en produksjonsjobb, var mer eller mindre enn det planlagte antallet. Det må derfor justeres for å holde lagernivåene gjeldende.
-
-Arbeidere kan også reservere bunke- og serienumre for materialer. Denne funksjonaliteten brukes i scenarioer der en arbeider må angi hvilke materialparti- eller serienumre som ble forbrukt, for å oppfylle materialsporingskravene.
-
-Arbeidere kan angi antallet som skal justeres, ved å velge **Juster materiale**. Denne knappen er tilgjengelig på følgende steder:
-
-- I dialogboksen **Rapporter svinn**
-- I dialogboksen **Rapporter fremdrift**
-- På verktøylinjen til høyre
-
-### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Justere materialforbruk fra dialogboksene Rapporter svinn og Rapporter fremdrift
-
-Når en arbeider har angitt antallet som skal rapporteres i dialogboksen **Rapporter fremdrift** eller **Rapporter svinn**, blir knappen **Juster materiale** tilgjengelig. Når brukeren velger denne knappen, vises dialogboksen **Juster materiale**. Denne dialogboksen viser en liste over varene som ifølge planen skal forbrukes når antallet for gode varer eller svinn rapporteres for jobben.
-
-Listen i dialogboksen viser følgende informasjon:
-
-- **Produktnummer** – Produktstandarden og produktvarianten.
-- **Produktnavn** – Produktnavnet.
-- **Forslag** – Det estimerte antallet materialer som vil bli forbrukt når fremdrift eller svinn rapporteres for det angitte antallet for jobben.
-- **Forbruk** – Det faktiske antallet materialer som vil bli forbrukt når fremdrift eller svinn rapporteres for det angitte antallet for jobben.
-- **Reservert** – Antall materialer som er fysisk reservert på lager.
-- **Enhet** – Stykklisteenheten (BOM).
-
-Høyre side i dialogboksen viser følgende informasjon:
-
-- **Produktnummer** – Produktstandarden og produktvarianten.
-- **Estimert** – Det estimerte antallet som skal forbrukes.
-- **Startet** – Antallet som er startet på produksjonsjobben.
-- **Restantall** – Av det estimerte antallet, antallet som gjenstår å forbrukes.
-- **Frigitt antall** – Antallet som er forbrukt.
-
-Følgende handlinger kan utføres:
-
-- Arbeideren kan angi antallet som skal justeres for et materiale, ved å velge **Juster forbru**. Når antallet er bekreftet, oppdateres antallet i **Forbruk**-kolonnen med det justerte antallet.
-- Når arbeideren velger **Juster materiale**, opprettes det en plukklistejournal for produksjon. Denne journalen inneholder de samme varene og antallene som listen **Juster materiale**.
-- Når arbeideren justerer et antall i dialogboksen **Juster materiale**, oppdateres **Forslag**-feltet på den tilhørende journallinjen med det samme antallet. Hvis arbeideren velger **Avbryt** i dialogboksen **Juster materiale**, slettes plukklisten.
-- Hvis arbeideren velger **OK**, slettes ikke plukklisten. Den posteres når jobben rapporteres i dialogboksen **Rapporter svinn** eller **Rapport fremdrift**.
-- Hvis arbeideren velger **Avbryt** i dialogboksen **Rapporter fremdrift** eller **Rapporter svinn**, slettes plukklisten.
-
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Justere materiale fra verktøylinjen til høyre
-
-Knappen **Juster materiale** kan konfigureres slik at den vises på verktøylinjen til høyre. (Hvis du vil ha mer informasjon, kan du se [Utforme grensesnittet for produksjonsutførelse](production-floor-execution-tabs.md).) En arbeider kan velge **Juster materiale** for en produksjonsjobb som pågår. I dette tilfellet vises dialogboksen **Juster materiale**, der arbeideren kan foreta de ønskede justeringene. Når dialogboksen åpnes, opprettes det en produksjonsplukkliste som inneholder linjer for de justerte antallene for produksjonsordren. Hvis arbeideren velger **Poster nå**, bekreftes justeringen og plukklisten posteres. Hvis arbeideren velger **Avbryt nå**, slettes plukklisten, og ingen justering foretas.
-
-### <a name="reserve-materials"></a>Reserver materialer
-
-I dialogboksen **Juster materiale** kan en arbeider utføre og justere materialreserveringer ved å velge **Reserver materiale**. Dialogboksen **Reserver materiale** som vises, viser den fysisk tilgjengelige beholdningen for varen for hver lagrings- og sporingsdimensjon.
-
-Hvis materialet er aktivert for de avanserte lagerprosessene, viser listen bare den fysisk tilgjengelige beholdningen for produksjonsinngangsstedet for materialet. Produksjonsinngangsstedet er definert på ressursen der produksjonsjobben er planlagt. Hvis varenummeret er parti- eller serienummerkontrollert, vises den fullstendige listen over fysisk tilgjengelige bunke- og serienumre. Når du skal angi et antall som skal reserveres, kan du velge **Reserver materiale**. Hvis du vil fjerne en eksisterende reservasjon, kan du velge **Fjern reservasjon**.
-
-Hvis du vil ha mer informasjon om hvordan du definerer produksjonsinngangsstedet, kan du se følgende blogginnlegg: [Oppsett av produksjonsinngangsstedet](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
-
-> [!NOTE]
-> Reservasjoner som en arbeider foretar i dialogboksen **Reserver materiale**, blir værende når arbeideren velger **Avbryt** i dialogboksen **Rapporter fremdrift** eller **Rapporter svinn**.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Fullføre en jobb og starte en ny jobb
 

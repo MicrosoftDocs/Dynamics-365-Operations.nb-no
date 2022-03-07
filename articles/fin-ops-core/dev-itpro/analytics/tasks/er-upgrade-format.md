@@ -1,12 +1,10 @@
 ---
 title: ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet
-description: De fremgangsmåten nedenfor forklarer hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan vedlikeholde en formatkonfigurasjon for elektronisk rapportering (ER).
+description: Dette emnet beskriver hvordan du vedlikeholder en formatkonfigurasjon for elektronisk rapportering (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720814"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet
 
@@ -34,13 +32,13 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
 
     I dette eksemplet fungerer eksempelfirmaet Litware, Inc. (https://www.litware.com) som en konfigurasjonsleverandør som støtter formatkonfigurasjoner for elektroniske betalinger for et bestemt land.    Eksempelfirmaet Proseware, Inc (http://www.proseware.com) fungerer som en kunde i formatkonfigurasjonen som Litware, Inc. har angitt Proseware, Inc. bruker formater i bestemte områder i dette landet.  
-2. Klikk Rapporteringskonfigurasjoner.
-3. Klikk Vis filtre.
+2. Klikk på Rapporteringskonfigurasjoner.
+3. Klikk på Vis filtre.
 4. Bruk følgende filtre: Angi filterverdien "BACS (britisk fiktivt)" i Navn-feltet ved hjelp av filteroperatoren "begynner med".
   
     Den valgte formatkonfigurajonen BBS (Storbritannia fiktiv) eies av leverandøren Litware, Inc.  
 
-5. Klikk Vis filtre.
+5. Klikk på Vis filtre.
 6. Finn og velg ønsket post i listen.
 
     Versjonen av formatet med statusen Fullført brukes av Proseware, Inc. for tilpassing.  
@@ -52,14 +50,14 @@ For å gjøre dette må Proseware, Inc. opprette en konfigurasjon ved hjelp av L
 
 1. Lukk siden.
 2. Velg Proseware, Inc. for å gjøre dette til en aktiv leverandør.
-3. Klikk Angi som aktiv
-4. Klikk Rapporteringskonfigurasjoner.
+3. Klikk på Angi som aktiv
+4. Klikk på Rapporteringskonfigurasjoner.
 5. Vis Betalinger (forenklet model) i treet.
 6. Velg Betalinger (forenklet model)\BBS (Storbritannia fiktiv) i treet.
 
     Velg konfigurasjonen BBS (Storbritannia fiktivt) fra Litware, Inc. Proseware, Inc. bruker versjon 1.1 som grunnlag for den tilpassede versjonen.  
 
-7. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
+7. Klikk på Opprett konfigurasjon for å åpne nedtrekksdialogen.
 
     Det lar deg opprette en ny konfigurasjon for et egendefinert betalingsformat.  
 
@@ -72,35 +70,35 @@ For å gjøre dette må Proseware, Inc. opprette en konfigurasjon ved hjelp av L
 
     Den aktive konfigurasjonsleverandøren (Proseware, Inc.) angis automatisk her. Denne leverandøren vil kunne vedlikeholde denne konfigurasjonen. Andre leverandører kan bruke denne konfigurasjonen, men kan ikke vedlikeholde den.  
 
-11. Klikk Opprett konfigurasjon.
+11. Klikk på Opprett konfigurasjon.
 
 ## <a name="customize-your-format-for-the-electronic-document"></a>Tilpasse formatet for det elektroniske dokumentet
-1. Klikk Utforming.
-2. Klikk Vis/skjul.
-3. Klikk Vis/skjul.
+1. Klikk på Utforming.
+2. Klikk på Vis/skjul.
+3. Klikk på Vis/skjul.
 4. Velg Xml\Melding\Betalinger\Vare\Leverandør\Bank i treet.
-5. Klikk Legg til for å åpne nedtrekksdialogen.
+5. Klikk på Legg til for å åpne nedtrekksdialogen.
 6. Velg XML\Element i treet.
 7. I Navn-feltet skriver du IBAN.
-8. Klikk OK.
+8. Klikk på OK.
 9. Velg Xml\Melding\Betalinger\Vare\Leverandør\Bank\IBAN i treet.
-10. Klikk Legg til for å åpne nedtrekksdialogen.
+10. Klikk på Legg til for å åpne nedtrekksdialogen.
 11. Velg Tekst\Streng i treet.
-12. Klikk OK.
+12. Klikk på OK.
 13. Velg Xml\Melding\Betalinger\Vare\Leverandør\Navn\Streng i treet.
 14. Angi 60 i feltet Maksimumslengde.
-15. Klikk kategorien Tilordning.
+15. Klikk på fanen Tilordning.
 16. Utvid noden 'model' i treet.
 17. Utvid modell\Betalinger i treet.
 18. Utvid modell\Betalinger\Kreditor i treet.
 19. Utvid modell\Betalinger\Kreditor\Konto i treet.
 20. I treet velger du modell\Betalinger\Kreditor\Konto\IBAN.
 21. Velg Xml\Melding\Betalinger\Vare = modell.Betalinger\Leverandør\Bank\IBAN\Streng i treet.
-22. Klikk Bind.
-23. Klikk Lagre.
+22. Klikk på Bind.
+23. Klikk på Lagre.
 
 ## <a name="validate-the-customized-format"></a>Validere det egendefinerte formatet
-1. Klikk Valider.
+1. Klikk på Valider.
 
     Validere oppsett for egendefinert format og endringer for datatilordning for å sikre at alle bindinger er i orden.  
 
@@ -109,13 +107,13 @@ For å gjøre dette må Proseware, Inc. opprette en konfigurasjon ved hjelp av L
 ## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a>Endre statusen for gjeldende versjon av egendefinert formatkonfigurasjon
 Endre statusen for utformet formatkonfigurasjon fra Utkast til Fullført for å gjøre den tilgjengelig for generering av betalingsdokument.  
 
-1. Klikk Endre status.
+1. Klikk på Endre status.
 
     Legg merke til at gjeldende versjon av den valgte konfigurasjonen har statusen Utkast.  
 
-2. Klikk Fullført.
+2. Klikk på Fullført.
 3. Skriv inn en verdi i feltet Beskrivelse.
-4. Klikk OK.
+4. Klikk på OK.
 5. Finn og velg ønsket post i listen.
 
     Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.1.1. Dette betyr at det er versjon 1 av egendefinerte BBS-format (Storbritannia fiktivt egendefinert), som er basert på versjon 1 av BBS-format (Storbritannia fiktivt), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
@@ -130,8 +128,8 @@ I virkelige relaterte prosesser for klargjøring av tjeneste kan hver versjon av
 
 1. Lukk siden.
 2. Velg Litware, inc-leverandør.
-3. Klikk Angi som aktiv
-4. Klikk Rapporteringskonfigurasjoner.
+3. Klikk på Angi som aktiv
+4. Klikk på Rapporteringskonfigurasjoner.
 5. Vis Betalinger (forenklet model) i treet.
 6. Velg Betalinger (forenklet model)\BBS (Storbritannia fiktiv) i treet.
 
@@ -146,44 +144,44 @@ Gå ut ifra at det finnes nye landsspesifikke krav som skal støttes av Litware,
 - Velg utkastversjonen av den ønskede konfigurasjonen for å introdusere nødvendige endringer.  
 
 
-1. Klikk Utforming.
-2. Klikk Vis/skjul.
-3. Klikk Vis/skjul.
+1. Klikk på Utforming.
+2. Klikk på Vis/skjul.
+3. Klikk på Vis/skjul.
 4. Velg Xml\Melding\Betalinger\Vare\Leverandør\Bank i treet.
-5. Klikk Legg til for å åpne nedtrekksdialogen.
+5. Klikk på Legg til for å åpne nedtrekksdialogen.
 6. Velg XML\Element i treet.
 7. I Navn-feltet skriver du inn SWIFT.
-8. Klikk OK.
+8. Klikk på OK.
 9. Velg Xml\Melding\Betalinger\Vare\Leverandør\Bank\SWIFT i treet.
-10. Klikk Legg til for å åpne nedtrekksdialogen.
+10. Klikk på Legg til for å åpne nedtrekksdialogen.
 11. Velg Tekst\Streng i treet.
-12. Klikk OK.
+12. Klikk på OK.
 13. Velg Xml\Melding\Betalinger\Vare\Leverandør\Navn\Streng i treet.
 14. Angi 100 i feltet Maksimumslengde.
-15. Klikk kategorien Tilordning.
+15. Klikk på fanen Tilordning.
 16. Utvid noden 'model' i treet.
 17. Utvid modell\Betalinger i treet.
 18. Utvid modell\Betalinger\Kreditor i treet.
 19. Utvid modell\Betalinger\Kreditor\Agent i treet.
 20. I treet velger du modell\Betalinger\Kreditor\Agent\SWIFT.
 21. Velg Xml\Melding\Betalinger\Vare = modell.Betalinger\Leverandør\Bank\SWIFT\Streng i treet.
-22. Klikk Bind.
-23. Klikk Lagre.
+22. Klikk på Bind.
+23. Klikk på Lagre.
 
 ## <a name="validate-the-localized-format"></a>Validere det lokaliserte formatet
-1. Klikk Valider.
+1. Klikk på Valider.
 2. Lukk siden.
 
 ## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Endre statusen for gjeldende versjon av basisformatkonfigurasjonen
 Endre statusen for den oppdaterte grunnleggende formatkonfigurasjonen fra Utkast til Fullført for å gjøre den tilgjengelig for generering av betalingsdokumenter og oppdateringer av formatkonfigurasjoner som er avledet fra den.  
 
-1. Klikk Endre status.
+1. Klikk på Endre status.
 
     Legg merke til at gjeldende versjon av den valgte konfigurasjonen har statusen Utkast.  
 
-2. Klikk Fullført.
+2. Klikk på Fullført.
 3. Skriv inn en verdi i feltet Beskrivelse.
-4. Klikk OK.
+4. Klikk på OK.
 5. Finn og velg ønsket post i listen.
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Endre basisversjonen for den egendefinerte formatkonfigurasjonen
@@ -194,8 +192,8 @@ For å gjøre dette må Proseware, Inc. endre den grunnleggende konfigurasjonsve
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
 2. Velg Proseware, Inc.-leverandøren for å merke den som aktiv.
-3. Klikk Angi som aktiv
-4. Klikk Rapporteringskonfigurasjoner.
+3. Klikk på Angi som aktiv
+4. Klikk på Rapporteringskonfigurasjoner.
 5. Vis Betalinger (forenklet model) i treet.
 6. Vis Betalinger (forenklet model)\BBS (Storbritannia fiktiv) i treet.
 7. Velg Betalinger (forenklet model)\BBS (Storbritannia fiktiv)\BBS (Storbritannia fiktiv egendefinert) i treet.
@@ -204,42 +202,45 @@ For å gjøre dette må Proseware, Inc. endre den grunnleggende konfigurasjonsve
 
     Bruk utkastversjonen av den valgte konfigurasjonen for å introdusere nødvendige endringer.  
 
-8. Klikk Rebaser.
+8. Klikk på Rebaser.
 
     Velg den nye versjonen 1.2 av den grunnleggende konfigurasjonen som skal brukes som nytt grunnlag for oppdatering av konfigurasjonen.  
 
-9. Klikk OK.
+9. Klikk på OK.
 
     Vær oppmerksom på at det er oppdaget noen konflikter under sammenslåing av den egendefinerte versjonen og en ny grunnleggende versjon, som representerer noen formatendringer som ikke kan slås sammen automatisk.  
 
 ## <a name="resolve-rebase-conflicts"></a>Løse rebaseringskonflikter
-1. Klikk Utforming.
+1. Klikk på Utforming.
     
     Vær oppmerksom på at endringer i leverandørens tekstlengdegrense ikke kunne løses automatisk. Dette vises derfor i en konfliktliste. Følgende alternativer er tilgjengelige for hver konflikt av typen Oppdatering: – Bruk en tidligere basisverdi (knappen øverst i rutenettet) for å vise forrige basisversjonsverdi (0 i vårt tilfelle).  - Bruk en basisverdi (knappen øverst i rutenettet) for å vise den nye basisversjonverdien (100 i vårt tilfelle).  - Behold en egen (egendefinert) verdi (60 i vårt tilfelle).  Klikk Bruk basisverdi for å bruke den landspesifikke grensen på 100 tegn for tekstlengden for leverandørens navn.  
 
     Merk at Proseware, Inc. og Litware, Inc. har egendefinerte og lokale versjoner av dette formatet som bruker IBAN- og SWIFT-koder med relaterte komponenter som slås sammen automatisk i administrasjonsformat.  
 
-2. Klikk Bruk basisverdi.
+2. Klikk på Bruk basisverdi.
 
     Klikk Bruk basisverdi for å bruke den landspesifikke grensen på 100 tegn for leverandørnavn.  
 
-3. Klikk Lagre.
+3. Klikk på Lagre.
 
     Lagring av formatet fjerner løste konflikter fra listen over konflikter.  
 
 4. Lukk siden.
 
 ## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a>Endre statusen for den nye versjonen av den egendefinerte formatkonfigurasjonen
-1. Klikk Endre status.
+1. Klikk på Endre status.
 
     Endre statusen for den oppdaterte, egendefinert formatkonfigurasjonen fra Utkast til Fullført. Dette vil gjøre formatkonfigurasjonen tilgjengelig for generering av betalingsdokumenter. Legg merke til at gjeldende versjon av den valgte konfigurasjonen har statusen Utkast.  
 
-2. Klikk Fullført.
+2. Klikk på Fullført.
 3. Skriv inn en verdi i feltet Beskrivelse.
-4. Klikk OK.
+4. Klikk på OK.
 
     Vær oppmerksom på at den opprettede konfigurasjonen lagres som fullført versjon 1.2.2: versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv egendefinert), som er basert på versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det egendefinerte formatet for generering av betalingsfiler
 Fullfør trinnene i fremgangsmåten "Bruke opprettet format til å generere elektroniske dokumenter for betalinger" i en parallel Finance and Operations-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

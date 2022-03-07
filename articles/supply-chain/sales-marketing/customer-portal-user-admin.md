@@ -1,30 +1,28 @@
 ---
-title: Opprette og administrere brukere av kundeportalen
+title: Opprett og administrer brukere av kundeportalen (inneholder video)
 description: Dette emnet beskriver hvordan du oppretter brukerkontoer i kundeportalen og angir tillatelser for dem.
-author: dasani-madipalli
-manager: tfehr
+author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528299"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062496"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Opprette og administrere brukere av kundeportalen
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 I standardimplementeringen kan ikke brukerne selv registrere seg på nettsteder som opprettes ved hjelp av kundeportalen. For å logge på og bruke et nettsted må brukerne inviteres av administratoren. Microsoft har med vilje blokkert muligheten for at brukere kan registrere seg selv.
 
@@ -35,38 +33,38 @@ Når brukere registrerer seg selv, opprettes det automatisk kontaktoppføringer 
 ## <a name="video"></a>Video
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-Videoen [Inviter kunder til å registrere seg og bruke kundeportalen din](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), tilgjengelig på YouTube.
+Videoen [Inviter kunder til å registrere seg og bruke kundeportalen din](https://youtu.be/drGUYHX9QIQ) (vist ovenfor) er inkludert i [spillelisten for økonomi og drift](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), tilgjengelig på YouTube.
 
 ## <a name="prerequisite-setup"></a>Forutsetninger for konfigurasjon
 
-Kontakter i Power Apps-portaler lagres som poster i **Kontakter**-enheten i Common Data Service. Med dobbeltskrivetilgang synkroniseres disse postene til Microsoft Dynamics 365 Supply Chain Management etter behov.
+Kontakter i Power Apps-portaler lagres som poster i **Kontakter**-tabellen i Microsoft Dataverse. Med dobbeltskrivetilgang synkroniseres disse postene til Microsoft Dynamics 365 Supply Chain Management etter behov.
 
-![Systemdiagram for kontakter i kundeportalen](media/customer-portal-contacts.png "Systemdiagram for kontakter i kundeportalen")
+![Systemdiagram for kontakter i kundeportalen.](media/customer-portal-contacts.png "Systemdiagram for kontakter i kundeportalen")
 
-Før du begynner å invitere nye kunder, må du kontrollere at du har aktivert **Kontakt**-enhetstilordningen i dobbeltskriving.
+Før du begynner å invitere nye kunder, må du kontrollere at du har aktivert **Kontakt**-tabelltilordningen i dobbel skriving.
 
 ## <a name="the-invitation-process"></a>Invitasjonsprosessen
 
-Hvis du vil invitere en eksisterende kontakt til kunde portalen, følger du fremgangsmåten i [Invitere kontakter til portalene dine](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) i dokumentasjonen for Power Apps-portaler.
+Hvis du vil invitere en eksisterende kontakt til kunde portalen, følger du fremgangsmåten i [Invitere kontakter til portalene dine](/powerapps/maker/portals/configure/invite-contacts) i dokumentasjonen for Power Apps-portaler.
 
-Før du inviterer en kunde til å bli med på kundeportalen, må du kontrollere at kundens [kontaktoppføring](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) er tilgjengelig og konfigurert på følgende måte:
+Før du inviterer en kunde til å bli med på kundeportalen, må du kontrollere at kundens [kontaktoppføring](/powerapps/maker/portals/configure/configure-contacts) er tilgjengelig og konfigurert på følgende måte:
 
 1. I **Firma**-feltet angir du den juridiske enheten du vil at kunden skal tilhøre i Supply Chain Management.
 2. I **Kontonummer**-feltet angir du kontonummeret du vil at kunden skal ha i Supply Chain Management.
 
 Når en kontakt er opprettet, skal du kunne se den i Supply Chain Management.
 
-Hvis du vil ha mer informasjon, kan du se [Konfigurere en kontakt for bruk i en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) i dokumentasjonen for Power Apps-portaler.
+Hvis du vil ha mer informasjon, kan du se [Konfigurere en kontakt for bruk i en portal](/powerapps/maker/portals/configure/configure-contacts) i dokumentasjonen for Power Apps-portaler.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Standard nettroller og enhetstillatelser
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Standard nettroller og tabelltillatelser
 
-Brukerroller i Power Apps-portaler defineres av [nettroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [enhetstillatelser](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Noen få roller er definert som standard i kundeportalen. Du kan opprette nye roller, og du kan endre eller fjerne eksisterende roller.
+Brukerroller i Power Apps-portaler defineres av [nettroller](/powerapps/maker/portals/configure/create-web-roles) og [tabelltillatelser](/powerapps/maker/portals/configure/assign-entity-permissions). Noen få roller er definert som standard i kundeportalen. Du kan opprette nye roller, og du kan endre eller fjerne eksisterende roller.
 
 ### <a name="out-of-box-web-roles"></a>Standard nettroller
 
 Denne delen beskriver nettrollene som leveres med kundeportalen.
 
-Hvis du vil ha mer informasjon om hvordan du endrer standardbrukerrollene, kan du se [Opprette nettroller for portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles)og [Legge til postbasert sikkerhet ved hjelp av enhetstillatelser for portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentasjonen for Power Apps-portaler.
+Hvis du vil ha mer informasjon om hvordan du endrer de bruksklare brukerrollene, kan du se [Opprette nettroller for portaler](/powerapps/maker/portals/configure/create-web-roles) og [Legge til postbasert sikkerhet ved hjelp av tabelltillatelser for portaler](/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentasjonen for Power Apps-portaler.
 
 #### <a name="administrator"></a>Administrator
 
@@ -90,9 +88,12 @@ Tabellen nedenfor viser hvilke salgsordrer brukerne har i hver enkelt nettrolle 
 
 | Salgsordre | Administrator | Kunderepresentant for kunde&nbsp;X | Autorisert bruker: Janne | Autorisert bruker: Stig | Uautorisert bruker: Mari |
 |---|---|---|---|---|---|
-| Kunde&nbsp;X bestiller:&nbsp;Janne | Ja | Ja | Ja | Nr. | Nr. |
-| Kunde&nbsp;X bestiller:&nbsp;Stig | Ja | Ja | Nr. | Ja | Nr. |
-| Kunde&nbsp;Y bestiller&nbsp;Mari | Ja | Nr. | Nr. | Nr. | Nr. |
+| Kunde&nbsp;X bestiller:&nbsp;Janne | Ja | Ja | Ja | Nei | Nei |
+| Kunde&nbsp;X bestiller:&nbsp;Stig | Ja | Ja | Nei | Ja | Nei |
+| Kunde&nbsp;Y bestiller&nbsp;Mari | Ja | Nei | Nei | Nei | Nei |
 
 > [!NOTE]
 > Selv om både Stig og Janne er kontakter som arbeider for kunde X, kan de bare se de ordrene de selv har plassert, og ingen andre. Selv om Mari har en ordre i systemet, kan hun ikke se denne ordren i kundeportalen, fordi hun er en uautorisert bruker. (I tillegg må hun ha lagt inn ordren via en annen kanal enn kundeportalen.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Vedlikeholdsstatus
 description: Dette emnet forklarer hvordan du beregner vedlikeholdsstatus i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1b0c8b6a81fd863d66ca01689262f0ec08a94d76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018502"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354982"
 ---
 # <a name="maintenance-status"></a>Vedlikeholdsstatus
 
@@ -59,11 +57,14 @@ I Aktivastyring kan du foreta en oversiktsberegning for en spesifikk periode for
 
 I skjermbildet nedenfor er knappene **År** og **Måned** aktivert. Når alternativene for **Grupper etter** er valgt, får du en generell oversikt på månedlig basis av arbeidsmengde og gjennomstrømning relatert til vedlikeholdsforespørsler og arbeidsordrer. 
 
-![Eksempel på månedlig arbeidsmengde](media/13-controlling-and-reporting.png)
+![Eksempel på månedlig arbeidsmengde.](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Eksempel 2
 
 I skjermdumpen nedenfor er informasjon om arbeidssteder lagt til. Nå er det mulig å sammenligne arbeidsmengde og gjennomstrømming mellom arbeidssteder, som kan representere geografiske steder, fabrikker eller arbeidsområder. 
 
-![Eksempel på månedlig arbeidsmengde med funksjonsplasseringer](media/14-controlling-and-reporting.png)
+![Eksempel på månedlig arbeidsmengde med funksjonsplasseringer.](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,17 +1,14 @@
 ---
 title: Behandle brukere og roller for e-handel
-description: Dette emnet forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for Microsoft Dynamics 365 Commerce-området.
+description: Dette emnet forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for området for Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,19 +16,19 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a1f9abae20d0f2e71790a3b27337338dc042b52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff0d3e607eb905eb9264bbb9ba151fbd527a81a2c72252252f2a45edc201e1b4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715412"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Behandle brukere og roller for e-handel
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for Microsoft Dynamics 365 Commerce-området.
+Dette emnet forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for området for Microsoft Dynamics 365 Commerce.
 
 For å kontrollere brukertilgang og gi brukere tillatelse til å utføre bestemte oppgaver, bruker områderedigeringsmiljøet sikkerhetsgrupper som du oppretter i Microsoft Azure Active Directory (Azure AD). Du tilordner først en ny eller eksisterende sikkerhetsgruppe fra Azure AD til hver rolle i redigeringsmiljøet. Deretter kan du gi eller oppheve tillatelser for enkeltbrukere ved å legge til disse brukerne i en passende sikkerhetsgruppe eller fjerne dem fra en sikkerhetsgruppe.
 
@@ -71,3 +68,6 @@ Når området er opprettet, har bare brukere som er i sikkerhetsgruppene som er 
 [Vurderinger for søkemotoroptimalisering (SEO) for området](search-engine-optimization-considerations.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

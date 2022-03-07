@@ -2,9 +2,11 @@
 title: Opprette kundebetalingsgebyrer
 description: Opprett betalingsgebyrer for kundebetalinger.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 15151987bb398de404994cdd416916c00a8dd1773bbf6d654f6a40160a2f4a49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99201039c30cd9d8e900662cd9e33b0a5db8e55a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768369"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012120"
 ---
 # <a name="establish-customer-payment-fees"></a>Opprette kundebetalingsgebyrer
 
@@ -48,6 +50,3 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 18. Velg valutaen for gebyret i **Gebyrvaluta**-feltet. Dette er valutaen som gebyret skal opprettes i.  
 19. Klikk **Lagre**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

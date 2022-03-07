@@ -2,11 +2,9 @@
 title: ROUNDAMOUNT ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen ROUNDAMOUNT.
 author: NickSelin
-manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15a84b086b324ec390d88e8b2617022ad4773977
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cce35a33ca179ad85bbde879122d3afbeefe5ee7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683069"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745669"
 ---
 # <a name="roundamount-er-function"></a>ROUNDAMOUNT ER-funksjonen
 
@@ -91,3 +89,6 @@ Hvis **model.RoundOff**-parameteren er satt til **RoundOffType.RoundUp**, return
 [Andre funksjoner (spesifikke for forretningsområder)](er-functions-category-other.md)
 
 [Matematiske funksjoner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

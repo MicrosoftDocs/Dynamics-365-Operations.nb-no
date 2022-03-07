@@ -2,26 +2,23 @@
 title: Inntektsføringsoppsett
 description: Dette emnet beskriver alternativene for inntektsføringsoppsett og deres betydning.
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 294ad788c97850880b479d3c3c44cc19d55e9a6e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459628"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837159"
 ---
 # <a name="revenue-recognition-setup"></a>Inntektsføringsoppsett
 [!include [banner](../includes/banner.md)]
@@ -30,6 +27,8 @@ Den nye modulen **Inntektsføring** har blitt lagt til, og den omfatter menyelem
 
 > [!NOTE]
 > Funksjonen Inntektsføring kan ikke aktiveres via Funksjonsbehandling. For øyeblikket må du bruke konfigurasjonsnøkler for å aktivere den.
+
+> Inntektsføring, inkludert buntfunksjonalitet, innhold som ikke støttes for bruk i Commerce-kanaler (e-handel, salgssted, telefonsenter). Varer som konfigureres med inntektsføring, bør ikke legges til i ordrer eller transaksjoner som er opprettet i Commerce-kanaler.
 
 Modulen **Inntektsføring** har følgende alternativer for oppsett:
 
@@ -62,7 +61,7 @@ Journalen defineres på siden **Journalnavn** (**Inntektsføring \> Oppsett \> J
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametere for inntektsføring
 
-Innstillinger for inntektsføring blir konfigurert i kategorien **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**). Følgende innstillinger er tilgjengelige:
+Innstillinger for inntektsføring blir konfigurert i fanen **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**). Følgende innstillinger er tilgjengelige:
 
 - **Journalnavn for inntektsføring** – velg journalen som ble opprettet for inntektsføring. Journalen er nødvendig når inntekt føres fra inntektsplanen, eller når du tildeler en salgsordre på nytt som allerede er fakturert.
 - **Aktiver rabattildelingsmetode** – sett dette alternativet **Ja** for å bestemme inntektsprisen gjennom tildeling av den rimelige markedsverdien som er definert i inntektsprisen for hvert frigitt produkt. Denne tildelingen omfatter tildeling av alle linjerabatter på tvers av varene. Hvis dette alternativet er satt til **Nei**, bruker systemet medianprisen som er definert i inntektsprisen for hvert frigitt produkt. Hvis dette alternativet er satt til **Nei**, men ingen medianpris er angitt for de frigitte produktene, oppstår det ikke tildeling av inntektsprisen.
@@ -138,7 +137,7 @@ Varegrupper og frigitte produkter kan defineres ved hjelp av medianprismetoden e
     - **Maksimumstoleranse** – angi prosentandelen over medianprisen som er tillatt.
     - **Minimumstoleranse** – angi prosentandelen under medianprisen som er tillatt.
 
-Når du er ferdig med å konfigurere innstillingene for det frigitte produktet, må du definere inntektsprisen manuelt ved å registrere gjennomsnittsprisen eller medianprisen (hvis du bruker medianprismetoden) på siden **Inntektspriser** (gå til **Inntektsføring \> Oppsett \> Lageroppsett \> Frigitte produkter**, og velg deretter **Inntektspriser** i gruppen **Inntektsføring** i kategorien **Selg** i handlingsruten).
+Når du er ferdig med å konfigurere innstillingene for det frigitte produktet, må du definere inntektsprisen manuelt ved å registrere gjennomsnittsprisen eller medianprisen (hvis du bruker medianprismetoden) på siden **Inntektspriser** (gå til **Inntektsføring \> Oppsett \> Lageroppsett \> Frigitte produkter**, og velg deretter **Inntektspriser** i gruppen **Inntektsføring** i fanen **Selg** i handlingsruten).
 
 [![Inntektspriser](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
@@ -151,13 +150,13 @@ Inntektsprisen som er definert manuelt på denne siden, brukes til å bestemme i
 - **Pris for inntektstildeling** – avhengig av verdien du valgte i feltet **Beløp eller prosent av liste**, angir du et beløp eller en prosent som skal representere inntektsprisen som brukes til å fordele inntekten på tvers av varene på salgsordren.
 - **Fra-dato** og **Til-dato** – angi datointervallet som inntektsprisen er aktiv for. Disse feltene er valgfrie.
 
-Hvis alternativet **Aktiver rabattildelingsmetode** på siden **Parametere for økonomimodul** er satt til **Ja**, og hvis feltet **Inntektstype** for det frigitte produktet er satt til **Støtte etter kontrakt**, må du også angi varene som støttes av det frigitte produktet. Dette oppsettet gjøres på siden **Oppsettsgrunnlag** (gå til **Inntektsføring \> Oppsett \> Lageroppsett \> Frigitte produkter**, og velg deretter **Oppsettsgrunnlag** i gruppen **Inntektsføring** i kategorien **Selg** i handlingsruten).
+Hvis alternativet **Aktiver rabattildelingsmetode** på siden **Parametere for økonomimodul** er satt til **Ja**, og hvis feltet **Inntektstype** for det frigitte produktet er satt til **Støtte etter kontrakt**, må du også angi varene som støttes av det frigitte produktet. Dette oppsettet gjøres på siden **Oppsettsgrunnlag** (gå til **Inntektsføring \> Oppsett \> Lageroppsett \> Frigitte produkter**, og velg deretter **Oppsettsgrunnlag** i gruppen **Inntektsføring** i fanen **Selge** i handlingsruten).
 
 På siden **Oppsettsgrunnlag** legger du til en post for hver vare gruppe som varen støtter. Når inntektstildelingen skjer, fordeles inntektsprisen på tvers av de grunnleggende og uviktige delene av PCS-varen.
 
 ### <a name="posting-profiles"></a>Posteringsprofiler
 
-Tre ekstra posteringstyper støtter muligheten til å utsette inntekten. Disse posteringstypene defineres i kategorien **Salgsordre** på siden **Postering** (**Inntektsføring \> Oppsett \> Lager- og produktoppsett \> Postering**).
+Tre ekstra posteringstyper støtter muligheten til å utsette inntekten. Disse posteringstypene defineres i fanen **Salgsordre** på siden **Postering** (**Inntektsføring \> Oppsett \> Lager- og produktoppsett \> Postering**).
 
 - **Utsatt inntekt** – angi hovedkontoen for inntektsprisen som posterer til utsatt inntekt (i stedet for inntekt). Inntektsprisen utsettes hvis salgsordrelinjen har en inntektsplan.
 - **Utsatt kost for solgte varer** – angi hovedkontoen for kostnadene for solgte varers beløp som posterer til utsatt kost for solgte varer hvis inntekten også utsettes.
@@ -180,7 +179,7 @@ Når du definerer en buntvare, må du angi en verdi i to felt på siden **Frigit
 - I hurtigfanen **Utvikle** i feltet **Produksjonstype** må du definere varen som en stykklistevare.
 - I hurtigfanen **Generelt** i feltet **Bunt** må du merke av for vare som en buntvare.
 
-Komponentene må deretter tilordnes til den overordnede varen for bunt/stykkliste på siden **Stykklisteversjoner** (gå til **Inntektsføring \> Oppsett \> Lager- og produktoppsett \> Frigitte produkter**, og klikk deretter **Stykklisteversjoner** i gruppen **Stykkliste** i kategorien **Utvikle** i handlingsruten). Hvis du vil ha mer informasjon, kan du se dokumentasjonen for oppsett av stykklister.
+Komponentene må deretter tilordnes til den overordnede varen for bunt/stykkliste på siden **Stykklisteversjoner** (gå til **Inntektsføring \> Oppsett \> Lager- og produktoppsett \> Frigitte produkter**, og klikk deretter **Stykklisteversjoner** i gruppen **Stykkliste** i fanen **Utvikle** i handlingsruten). Hvis du vil ha mer informasjon, kan du se dokumentasjonen for oppsett av stykklister.
 
 [![Frigitte produkter, tidsplaner for stykkliste](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
@@ -192,3 +191,6 @@ Inntektsføring kan også brukes for salgsordrer som opprettes via et Etter regn
 
 - **Utsatt fakturainntekt** (under **Inntektskontoer**) – angi hovedkontoen for inntektsprisen som posterer til utsatt inntekt (i stedet for inntekt). Inntektsprisen utsettes hvis salgsordrelinjen har en inntektsplan.
 - **Utsatt kostnad** (under **Kostnadskontoer**) – angi hovedkontoen for kostnadene for solgte varers beløp som posterer til utsatt kost for solgte varer hvis inntekten også utsettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

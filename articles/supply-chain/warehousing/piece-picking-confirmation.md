@@ -1,10 +1,12 @@
 ---
 title: Stykkplukkingsbekreftelse
-description: Med stykkplukking kan du bekrefte hver del av lagerbeholdningen gjennom plukkings- og tellingsarbeid på en mobil enhet.
+description: Dette emnet beskriver hvordan du definerer og bruker stykkplukkingsbekreftelse fra en mobilenhet.
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a925685b80c635cf036f19748e16d415953ed5fdda7b81498baeade35ccbfcab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 852bd29ae18b4903906aa7fb97a06389cd7cd3bc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766008"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232869"
 ---
 # <a name="piece-picking-confirmation"></a>Stykkplukkingsbekreftelse
 
@@ -27,7 +29,7 @@ ms.locfileid: "6766008"
 
 Med stykkplukking kan du bekrefte hver del av lagerbeholdningen gjennom plukkings- og tellingsarbeid på en mobil enhet. For plukking kan du kontrollere hvor mye arbeid som skal behandles opptil antallet som er angitt på arbeid som skal plukkes. For opptellingsarbeid kan du skanne lageret du teller opp, og spore totalbeløpet.
 
-Når du aktiverer stykkplukking, velges produktbekreftelse automatisk. For arbeidstypen plukk kan du angi et maksimalt antall stykker. Dette gjør at du kan angi et maksimalt antall enheter som må bekreftes under arbeidsprosessen. Maksimalt antall er basert på den gjeldende arbeidsenheten som behandles. Opptellingsarbeidstypen tillater ikke et maksimum.
+Når du aktiverer stykkplukking, velges produktbekreftelse automatisk. For arbeidstypen plukk aktiveres et maksimalt antall stykker. Dette gjør at du kan angi et maksimalt antall enheter som må bekreftes under arbeidsprosessen. Maksimalt antall er basert på den gjeldende arbeidsenheten som behandles. Opptellingsarbeidstypen tillater ikke et maksimum.
 
 Du kan også bruke antall og måleenhet som er tilknyttet en skannet strekkode. Dette vil fungere for mottak på innkommende flyter inkludert mottak av kombinerte skiltnumre, bestillingsvare, overføringsordrevare og lastvare. Det fungerer også for stykkplukking der skanning av strekkoden vil legge til antallet i totalt antall bekreftede stykker som er konvertert mellom måleenheten på strekkoden og arbeidsenheten. Hvis det, ved telling av måleenheten på strekkoden, bekreftes at antallet er tillatt for opptelling på sekvensgruppen, legges antallet til totalantallet.
 

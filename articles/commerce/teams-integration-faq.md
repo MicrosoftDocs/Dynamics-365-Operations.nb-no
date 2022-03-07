@@ -2,9 +2,11 @@
 title: Vanlige spørsmål om Dynamics 365 Commerce- og Microsoft Teams-integrering
 description: Dette emnet inneholder svar på vanlige spørsmål knyttet til Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -13,16 +15,17 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae4a7f9d9576c9d0408f562eb05bc309d0fbca0ecb8530e8c032b2bb80f12ff4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 26e1dc53126c0615332457aa785415c4c7112bbd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773820"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842721"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Vanlige spørsmål om Dynamics 365 Commerce- og Microsoft Teams-integrering
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet inneholder svar på vanlige spørsmål knyttet til Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
 
@@ -45,7 +48,7 @@ Følg denne fremgangsmåten for å tilordne rollen Retail-oppgaveleder til en an
 
 I Commerce Headquarters er hver organisasjons hierarki knyttet til ett eller flere formål. Kontroller at hierarkiet du vil klargjøre i Microsoft Teams, har formålet **Detaljhandelsrapportering** knyttet til seg, som vist i følgende eksempelbilde. 
 
-![Eksempel på et organisasjonshierarkiformål i Commerce Headquarters.](media/d365-commerce-organization-hierarchies-purpose.png)
+![Eksempel på et organisasjonshierarkiformål i Commerce Headquarters](media/d365-commerce-organization-hierarchies-purpose.png)
 
 ### <a name="how-do-i-enable-retail-store-workers-to-sign-in-to-commerce-point-of-sale-pos-using-azure-active-directory-azure-ad"></a>Hvordan aktiverer jeg detaljhandelsarbeidere for å logge seg på Commerce POS (salgssted) ved hjelp av Azure Active Directory (Azure AD)?
 

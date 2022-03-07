@@ -1,35 +1,32 @@
 ---
-title: Knytte et Dynamics 365 Commerce-nettsted til en nettkanal
-description: Dette emnet forklarer hvordan du knytter Microsoft Dynamics 365 Commerce-området til én eller flere nettbutikker.
+title: Knytte et Dynamics 365 Commerce-område til en nettkanal
+description: Dette emnet forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ROBOTS: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6ae02d34499275fa303358f7dae4d3835d438e1
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: 60ead45e6e2b7fea8f04371310ff4315205e11f6e0968e5f8bbc6a29c5f26e18
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737659"
 ---
-# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Knytte et Dynamics 365 Commerce-nettsted til en nettkanal
+# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Knytte et Dynamics 365 Commerce-område til en nettkanal
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du knytter Microsoft Dynamics 365 Commerce-området til én eller flere nettbutikker. 
+Dette emnet forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker. 
 
 Når du har klargjort Dynamics 365 Commerce-e-handelsmiljøet ved hjelp av portalen for Microsoft Dynamics Lifecycle Services (LCS), er du klar til å opprette ditt første nettsted for e-handel. Som en del av opprettelsen av første område, kan du knytte området til en nettbutikk som er opprettet tidligere. Dette trinnet binder området til en Internett-kanal og lar området vise navigasjonshierarkiet, produkter, kategorier, priser, leveringsalternativer og alt annet som du definerte i nettbutikken.
 
@@ -58,3 +55,6 @@ Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

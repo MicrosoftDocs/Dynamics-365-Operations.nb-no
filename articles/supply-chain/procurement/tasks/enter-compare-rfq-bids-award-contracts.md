@@ -1,26 +1,24 @@
 ---
 title: Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 description: Dette emnet forklarer hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir kontrakten til én av leverandørene.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016684"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811996"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 
@@ -106,3 +104,6 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 ## <a name="view-the-purchase-order-that-is-generated"></a>Vise bestillingen som er generert
 
 Velg **Bestilling** i fanen **Generelt** i handlingsruten. Siden som vises, angir bestillingen som ble generert da du godtok budet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

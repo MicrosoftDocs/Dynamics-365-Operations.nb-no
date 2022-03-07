@@ -2,36 +2,30 @@
 title: Legge til støtte for et innholdsleveringsnettverk (CDN)
 description: Dette emnet beskriver hvordan du legger til et innholdsleveringsnettverk (CDN) i Microsoft Dynamics 365 Commerce-miljøet.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: caed13c37c9043a2acea751c8a8b15261f26ecb2e10b6e64c0ce50f6ce9a68de
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722060"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Legge til støtte for et innholdsleveringsnettverk (CDN)
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du legger til et innholdsleveringsnettverk (CDN) i Microsoft Dynamics 365 Commerce-miljøet.
-
-## <a name="overview"></a>Oversikt
 
 Når du definerer et e-handelsmiljø i Dynamics 365 Commerce, kan du konfigurere det slik at det fungerer med CDN-tjenesten. 
 
@@ -45,11 +39,7 @@ I tillegg betjenes *statistiske filer* (JavaScript- eller Cascading Style Sheets
 
 ## <a name="set-up-ssl"></a>Definer SSL
 
-For å sikre at SSL er konfigurert, og at statistiske filer bufres, må du konfigurere CDN slik at det er tilknyttet vertsnavnet som Commerce har generert for miljøet ditt. Du må også bufre det følgende mønsteret bare for statistiske filer: 
-
-/\_msdyn365/\_scnr/\*
-
-Når du har klargjort handelsmiljøet med det tilpassede domenet som er oppgitt, eller etter at du har angitt det egendefinerte domenet for miljøet ditt ved å bruke en tjenesteforespørsel, kan du peke det tilpassede domenet til vertsnavnet eller endepunktet som Commerce laget.
+Når du har klargjort handelsmiljøet med det tilpassede domenet som er oppgitt, eller etter at du har angitt det egendefinerte domenet for miljøet ditt ved å bruke en tjenesteforespørsel, må du arbeide med Commerce-introduksjonsgruppen for å planlegge DNS-endringene.
 
 Som tidligere nevnt støtter det genererte vertsnavnet eller endepunktet bare et SSL-sertifikat for \*.commerce.dynamics.com. Den støtter ikke SSL for egendefinerte domener.
 
@@ -57,7 +47,7 @@ Som tidligere nevnt støtter det genererte vertsnavnet eller endepunktet bare et
 
 Alle CDN-tjenester kan brukes med et handelsmiljø. Her er to eksempler:
 
-- **Microsoft Azure Front Door Service** – Azure CDN-løsningen. Hvis du vil ha mer informasjon om Azure Front Door Service, se [Dokumentasjon for Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/).
+- **Microsoft Azure Front Door Service** – Azure CDN-løsningen. Hvis du vil ha mer informasjon om Azure Front Door Service, se [Dokumentasjon for Azure Front Door Service](/azure/frontdoor/).
 - **Akamai Dynamic Site Accelerator** – For mer informasjon, se [Dynamic Site Accelerator](https://www.akamai.com/us/en/products/performance/dynamic-site-accelerator.jsp).
 
 ## <a name="cdn-setup"></a>CND-oppsett
@@ -66,28 +56,33 @@ Installasjonsprosessen for CDN består av disse generelle trinnene:
 
 1. Legg til en frontvert.
 1. Konfigurer et serverdelsutvalg.
-1. Definer regler for ruting og bufring.
+1. Angi regler for ruting.
 
 ### <a name="add-a-front-end-host"></a>Legg til en frontvert
 
 Alle CDN-tjenester kan brukes, men for eksempel i dette emnet brukes Azure Front Door Service. 
 
-Hvis du vil ha informasjon om hvordan du konfigurerer Azure Front Door Service, se [Hurtigstart: Opprette en hovedinngang for et høyt tilgjengelig globalt webprogram](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
+Hvis du vil ha informasjon om hvordan du konfigurerer Azure Front Door Service, se [Hurtigstart: Opprette en hovedinngang for et høyt tilgjengelig globalt webprogram](/azure/frontdoor/quickstart-create-front-door).
 
 ### <a name="configure-a-backend-pool-in-azure-front-door-service"></a>Konfigurere et serverdelsutvalg i Azure Front Door Service
 
 Følg disse trinnene for å konfigurere et serverdelsutvalg i Azure Front Door Service.
 
-1. Legg til **&lt;ecom-leier-navn&gt;.commerce.dynamics.com** til et serverdelsutvalg som en egendefinert vert som har et tomt serverdelvertshode.
+1. Legg til **&lt;ecom-leier-navn&gt;.commerce.dynamics.com** i et serverdelutvalg som en egendefinert vert som har et serverdelvertshode som er det samme som **&lt;ecom-leier-navn&gt;.commerce.dynamics.com**.
 1. Under **Belastningsfordeling** lar du standardverdiene være.
+1. Deaktiver tilstandskontroll for serverdelutvalget.
 
 Følgende illustrasjon viser dialogboksen **Legg til en serverdel** i Azure Front Door Service, der vertsnavnet for serverdelen er angitt.
 
-![Legge til en dialogboks for serverdelsutvalg](./media/CDN_BackendPool.png)
+![Legge til en dialogboks for serverdelsutvalg.](./media/CDN_BackendPool.png)
 
 Følgende illustrasjon viser dialogboksen **Legg til et serverdelutvalg** i Azure Front Door Service med standardverdier for belastningsfordeling.
 
-![Legge til en dialogboks for serverdelsutvalg (fortsettelse)](./media/CDN_BackendPool_2.png)
+![Legge til en dialogboks for serverdelsutvalg (fortsettelse).](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Pass på at du deaktiverer **Helsetilstand** når du setter opp din egen Azure Front Door Service for Commerce.
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Definere regler i Azure Front Door Service
 
@@ -97,31 +92,13 @@ Følg disse trinnene for å opprette en rutingsregel i Azure Front Door Service.
 1. Angi **standard** i feltet **Navn**.
 1. I feltet **Godkjent protokoll** velger du **HTTP og HTTPS**.
 1. I feltet **Frontverter** angir du **dynamics-ecom-leiernavn.azurefd.net**.
-1. Under **Mønstre som skal samsvare** angir du **/\** _ i det øvre feltet.
-1. Under _*Rutedetaljer** angir du alternativet **Rutetype** til **Videresend**.
+1. Under **Mønstre som skal samsvare** angir du **/\*** i det øvre feltet.
+1. Under **Rutedetaljer** angir du alternativet **Rutetype** til **Fremover**.
 1. I feltet **Serverdelsutvalg** velger du **ecom-backend**.
 1. I feltet **Videresendingsprotokoll** velger du alternativet **Samsvar forespørsel**. 
 1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
 1. Angi at alternativet **Bufring** skal være **Deaktivert**.
 
-Følg disse trinnene for å opprette en bufringsregel i Azure Front Door Service.
-
-1. Legg til en bufringsregel.
-1. Angi **statistiske filer** i feltet **Navn**.
-1. I feltet **Godkjent protokoll** velger du **HTTP og HTTPS**.
-1. I feltet **Frontverter** angir du **dynamics-ecom-leiernavn.azurefd.net**.
-1. Under **Mønstre som skal samsvare** i det øvre feltet angir du **/\_msdyn365/\_scnr/\** _.
-1. Under _*Rutedetaljer** angir du alternativet **Rutetype** til **Videresend**.
-1. I feltet **Serverdelsutvalg** velger du **ecom-backend**.
-1. I feltet **Videresendingsprotokoll** velger du alternativet **Samsvar forespørsel**.
-1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
-1. Angi at alternativet **Bufring** skal være **Deaktivert**.
-1. Velg **Bufre hver unike URL-adresse** i **Hurtigbufring for spørringsstreng**.
-1. I feltet **Dynamisk komprimering** velger du alternativet **Aktivert**.
-
-Følgende illustrasjon viser dialogboksen **Legg til en regel** i Azure Front Door Service.
-
-![Dialogboksen Legg til en regel](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Hvis domenet du skal bruke, allerede er aktivt og direkte, oppretter du en støtteforespørsel fra **Støtte**-flisen i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) for å få hjelp til de neste trinnene. Hvis du vil ha mer informasjon, kan du se [Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
@@ -130,36 +107,21 @@ Hvis domenet er nytt og det ikke er et direkte domene som allerede finnes, kan d
 
 Følgende illustrasjon viser dialogboksen **CNAME-konfigurasjon** i Azure Front Door Service.
 
-![Dialogboksen CNAME-konfigurasjon](./media/CNAME_Configuration.png)
+![Dialogboksen CNAME-konfigurasjon.](./media/CNAME_Configuration.png)
 
 Du kan bruke Azure Front Door Service til å administrere sertifikatet, eller du kan bruke ditt eget sertifikat for det egendefinerte domenet.
 
 Den følgende illustrasjonen viser dialogboksen for **HTTPS for egendefinert domene** i Azure Front Door Service.
 
-![Dialogboksen for HTTPS for egendefinert domene](./media/Custom_Domain_HTTPS.png)
+![Dialogboksen for HTTPS for egendefinert domene.](./media/Custom_Domain_HTTPS.png)
 
-Hvis du vil ha detaljerte instruksjoner om hvordan du legger til et tilpasset domene i Azure Front Door, kan du se [Legge til et egendefinert domene i Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-custom-domain).
+Hvis du vil ha detaljerte instruksjoner om hvordan du legger til et tilpasset domene i Azure Front Door, kan du se [Legge til et egendefinert domene i Front Door](/azure/frontdoor/front-door-custom-domain).
 
 CDN skal nå være riktig konfigurert slik at det kan brukes sammen med ditt handelsområde.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Konfigurere domenenavnet](configure-your-domain-name.md)
+[Implementeringsalternativer for innholdsleveringsnettverk](cdn-options.md)
 
-[Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
 
-[Opprette et e-handelsområde](create-ecommerce-site.md)
-
-[Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
-
-[Administrere robots.txt-filer](manage-robots-txt-files.md)
-
-[Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
-
-[Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
-
-[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
-
-[Konfigurere flere B2C-leiere i et Commerce-miljø](configure-multi-B2C-tenants.md)
-
-[Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

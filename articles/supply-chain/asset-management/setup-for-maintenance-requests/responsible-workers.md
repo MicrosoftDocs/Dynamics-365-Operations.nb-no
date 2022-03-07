@@ -1,12 +1,10 @@
 ---
 title: Ansvarlige vedlikeholdspersoner
 description: Dette emnet forklarer hvordan du ansvarlige vedlikeholdspersoner i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkerResponsible
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 137ed393f28131262584d5a2ae414092b124ea0e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1f1398ae255e6b7809c743aa4a9efa7adf24ae7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021961"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349848"
 ---
 # <a name="responsible-maintenance-workers"></a>Ansvarlige vedlikeholdspersoner
 
@@ -52,4 +50,7 @@ Før du kan definere ansvarlige vedlikeholdspersoner, må du definere arbeidere 
 
 Illustrasjonen nedenfor viser et eksempel på siden **Ansarlige vedlikeholdspersoner**.
 
-![Siden Ansvarlige vedlikeholdspersoner](media/08-setup-for-requests.png)
+![Siden Ansvarlige vedlikeholdspersoner.](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

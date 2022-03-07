@@ -2,7 +2,7 @@
 title: Fordelsrettighetsprosess
 description: Denne prosedyren viser hvordan fordelsrettighetsprosessen fungerer.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: d23dcf4a16979b14ddf58b54e812f21e6698dfc7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3720adf26d2cb942bc5d9f6988641bf5e504a852
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419813"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465132"
 ---
 # <a name="benefit-eligibility-process"></a>Fordelsrettighetsprosess
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne prosedyren viser hvordan fordelsrettighetsprosessen fungerer. Når prosessen er fullført, kan du vise resultatene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
@@ -54,3 +56,6 @@ Denne prosedyren viser hvordan fordelsrettighetsprosessen fungerer. Når prosess
 25. Åpne kolonnefilteret for status.
 26. Sorter fra A til Å
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

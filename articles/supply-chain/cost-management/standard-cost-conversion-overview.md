@@ -3,27 +3,25 @@ title: Oversikt  over standard kostnadskonvertering
 description: Denne artikkelen inneholder en prosessoversikt som hjelper deg med å definere og kjøre en standard kostnadskonvertering. Trinnene skal fullføres etter at du har oppfylt forhåndskravene for en standard kostnadskonvertering.
 author: AndersGirke
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "78212"
-- intro-internal
+ms.custom: 78212
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9796449bee4361b2b871af10d30341c2f0760ab1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: fdcb45918b404f8a47f27bcea7c02a8397c9336f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982695"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821447"
 ---
 # <a name="standard-cost-conversion-overview"></a>Oversikt  over standard kostnadskonvertering
 
@@ -94,7 +92,8 @@ I rapporten **Avviksanalyserapport** kan du analysere revalueringsavvik, og i ra
 -   Analyser tilbakedaterte lagerbevegelser. Bruk **Lagerverdi**-rapporten til å vise tilbakedaterte lagerbevegelser som ble angitt etter konverteringen. Fra-datoen og til-datoen i rapporten bør stemme overens med startdatoen for overgangen og konverteringsdatoen (minus én dag). Rapportens utvalgskriterier bør gjenspeile de konverterte varene. Rapporten viser lagerbevegelser som ble utført for standardkostnad i løpet av overgangsperioden.
 
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Forutsetninger for standard kostnadskonvertering](prerequisites-standard-cost-conversion.md)
 

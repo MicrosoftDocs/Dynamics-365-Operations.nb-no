@@ -2,11 +2,9 @@
 title: Kostnadsanalyse for produksjonsordrer
 description: Denne artikkelen inneholder informasjon om kostnadsanalysen som du kan utføre for fullførte og gjeldende produksjonsordrer. Du kan analysere de estimerte kostnadene og faktiske kostnadene ved hjelp av siden Prisberegning eller rapporten Kostnadsestimater og etterkalkuleringer. Du kan vise informasjon om de estimerte og faktiske kostnadene (og antallene) for hver komponentvare, rutingoperasjon og indirekte kostnad.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1b0690a683cdefaeb5e441d3e2ea467a680a8fc1dd0905b6a94fd72bcbf36e1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734265"
 ---
 # <a name="production-order-cost-analysis"></a>Kostnadsanalyse for produksjonsordrer
 
@@ -43,7 +41,7 @@ Avvikene gjenspeiler en sammenligning av de rapporterte produksjonsaktivitetene 
 
 Diagrammet nedenfor viser de fire avvikene som utgjør differansen mellom en produksjonsordres faktiske kostnader og de beregnede kostnadene i varens kostnadspost når produksjonsordren avsluttes. 
 
-![Avvik som ta hensyn til forskjeller i en fullført produksjonsordre](./media/control.jpg) 
+![Avvik som ta hensyn til forskjeller i en fullført produksjonsordre.](./media/control.jpg) 
 
 Du kan analysere produksjonsavvikene ved hjelp av siden **Avvik** eller rapporten **Produksjonsavvik**. Bruk visningsalternativene til å vise detaljer om avvik etter vare og operasjonsressurs eller etter kostnadsgruppe. Policyen for nedbryting av kostnader i lagerparameterne bestemmer om avvikene spores etter kostgruppe. Du kan også bruke visningsalternativene **enkelt**, **flere** og **totalt** til å vise summerte avvik. Informasjonen om detaljerte avvik kan hkelpe deg med å forstå hva som er kilden til de enkelte avvikene. For å forutsi avvik før du avslutter en produksjonsordre, kan du analysere den detaljerte informasjonen i rapporten **Kostnadsestimater og etterkalkuleringer**.
 
@@ -57,10 +55,12 @@ Egne rapporter inneholder informasjon om hver transaksjonstype. Bruk disse rappo
 -   **Ferdigvarer i arbeid**− Denne rapporten viser gjeldende produksjonsordrer og ferdigmeldingstransaksjonene per en angitt transaksjonsdato.
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Vanlige kilder til produksjonsavvik](common-sources-of-production-variances.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,36 +2,25 @@
 title: Feilsøke problemer med direkte synkronisering
 description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med direkte synkronisering.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 2dbb32647e362df05d28bbd7d845e0e4f776d8c9
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744619"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416711"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Feilsøke problemer med direkte synkronisering
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon mellom Finance and Operations-apper og Dataverse. Det inneholder særlig informasjon som kan hjelpe deg med å løse problemer med direkte synkronisering.
 
@@ -75,21 +64,21 @@ Hvis det finnes data på begge sider, og du har bekreftet at problemet ikke er r
 
 Du kan få en feilmelding av typen "Ugyldig forespørsel" som ligner på følgende eksempel når du oppretter data i en Finance and Operations-app.
 
-![Eksempel på feilmeldingen om Ugyldig forespørsel](media/error_record_id_source.png)
+![Eksempel på feilmeldingen om Ugyldig forespørsel.](media/error_record_id_source.png)
 
 Hvis du vil løse problemet, må du tilordne den riktige sikkerhetsrollen til teamet for den tilordnede forretningsenheten for Dynamics 365 Sales eller Dynamics 365 Customer Service for å aktivere den manglende rettigheten.
 
 1. I Finance and Operations-appen finner du forretningsenheten som er tilordnet i tilkoblingssettet for dataintegrering.
 
-    ![Organisasjonstilordning](media/mapped_business_unit.png)
+    ![Organisasjonstilordning.](media/mapped_business_unit.png)
 
-2. Logg deg på miljøet i den modelldrevne appen i Dynamics 365, naviger til **Innstilling \> Sikkerhet**, og finn teamet til den tilordnede forretningsenheten.
+2. Logg deg på miljøet i kundeengasjementsappen, naviger til **Innstilling \> Sikkerhet**, og finn teamet til den tilordnede forretningsenheten.
 
-    ![Team til den tilordnede forretningsenheten](media/setting_security_page.png)
+    ![Team til den tilordnede forretningsenheten.](media/setting_security_page.png)
 
 3. Åpne siden for teamet for redigering, og velg deretter **Behandle roller** for å åpne dialogboksen **Administrere teamroller**.
 
-    ![Knappen Behandle roller](media/manage_team_roles.png)
+    ![Knappen Behandle roller.](media/manage_team_roles.png)
 
 4. Tilordne rollen med lese/skrivetilgang for de relevante tabellene, og velg deretter **OK**.
 
@@ -101,7 +90,7 @@ Du kan få følgende feilmelding når du oppretter data i en Finance and Operati
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Kan ikke generere nyttelast for enhet CustCustomerV3Entity**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Oppretting av nyttelast mislyktes med feilen Ugyldig URI: URI-en er tom."}\],"isErrorCountUpdated":true}*
 
-Slik ser feilen ut i den modelldrevne appen i Dynamics 365:
+Slik ser feilen ut i kundeengasjementsappen:
 
 *Det oppstod en uventet feil fra ISV-kode. (ErrorType = ClientError) Uventet unntak fra plugin-modul (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: kan ikke behandle enhetskonto - Et tilkoblingsforsøk mislyktes fordi den tilkoblede parten ikke svarte riktig etter en tidsperiode, eller opprettet tilkobling mislyktes fordi den tilkoblede verten ikke svarer*
 
@@ -127,3 +116,5 @@ Følg fremgangsmåten nedenfor for å løse problemet.
 
 3. Kontroller at **externalenvironmentURL**-kolonnen har riktig Dataverse- eller app-URL-adresse. Slett eventuelle duplikate rader som peker til feil Dataverse-URL-adresse. Slett de tilsvarende radene i DUALWRITEPROJECTFIELDCONFIGURATION- og DUALWRITEPROJECTCONFIGURATION-tabellen.
 4. Stopp tabelltilordningen, og start den deretter på nytt
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

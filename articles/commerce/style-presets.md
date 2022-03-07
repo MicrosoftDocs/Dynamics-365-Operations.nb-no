@@ -1,36 +1,31 @@
 ---
 title: Arbeide med forhåndsinnstillinger for stil
-description: Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i Microsoft Dynamics 365 Commerce områdebygger.
+description: Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 250f2386cefee8bef45df66c4eef31b4e7fc2686
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414712"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964859"
 ---
 # <a name="work-with-style-presets"></a>Arbeide med forhåndsinnstillinger for stil
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i Microsoft Dynamics 365 Commerce områdebygger.
-
-## <a name="overview"></a>Oversikt
+Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i områdebyggeren for Microsoft Dynamics 365 Commerce.
 
 En forhåndsinnstilling for stil er et lagret sett med alle redigerbare stilverdier i hele temaet for området. Den kan brukes til øyeblikkelig å endre utseendet på et område i områdebygger. Med forhåndsinnstillinger for stil kan Commerce-områdebyggere raskt endre, forhåndsvise og aktivere et sett med stilverdier for hele området uten å måtte bruke CSS eller distribuere temaer. Skriftstiler, knappestiler og områdefarger er vanlige eksempler på stilvariabler som kan behandles gjennom forhåndsinnstillinger for stil.
 
@@ -121,10 +116,11 @@ Stilverdiene for forhåndsinnstillingen aktiveres på hele den brukerrettede del
 
 [Legge til et favorittikon](add-favicon.md)
 
-[Legge til en velkomstmelding](add-welcome-message.md)
-
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
 [Legge til språk på området](add-languages-to-site.md)
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

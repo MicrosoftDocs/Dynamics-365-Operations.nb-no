@@ -1,17 +1,14 @@
 ---
-title: Vise rabatter i POS
+title: Vise rabatter i salgssted
 description: I dette emnet finner du informasjon om hvordan Microsoft Dynamics 365 Commerce hjelper selgere med å lære om kampanjer og hvordan de kan brukes for krysssalg- og videresalgsbevegelser.
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414648"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731673"
 ---
 # <a name="show-discounts-in-pos"></a>Vise rabatter i POS
 
@@ -36,7 +33,7 @@ Kampanjer spiller en viktig rolle i motivering av kunder som foretar innkjøpsav
 
 Commerce inkluderer en operasjon med navnet Vis alle rabatter. Denne operasjonen viser alle rabattene som i øyeblikket kjøres i en butikk. Operasjonen Vis alle rabatter kan tilordnes en knapp i salgsstedet (POS), og denne knappen kan legges til på **velkomstsiden** eller **transaksjonssiden**. Illustrasjonen nedenfor viser et eksempel på siden **Alle rabatter** som åpnes.
 
-![Siden Alle rabatter](./media/View_all_discounts.png "Siden Alle rabatter")
+![Siden Alle rabatter.](./media/View_all_discounts.png "Siden Alle rabatter")
 
 For å vise rabatter ser systemet etter alle rabattene som samsvarer med én eller flere av følgende betingelser:
 
@@ -64,8 +61,11 @@ Illustrasjonene nedenfor viser logikken som bestemmer hvilke rabatter som vises 
 
 Følgende illustrasjon viser logikken som brukes når samtidighetskontrollen for rabatt er satt til **Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter**.
 
-![Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter](./media/Model_1.png "Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter").
+![Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter.](./media/Model_1.png "Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter").
 
 Følgende illustrasjon viser logikken som brukes når samtidighetskontrollen for rabatt er satt til **Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter**.
 
-![Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter](./media/Model_2.png "Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter").
+![Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter.](./media/Model_2.png "Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

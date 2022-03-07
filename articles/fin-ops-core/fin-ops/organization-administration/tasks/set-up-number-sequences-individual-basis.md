@@ -1,26 +1,24 @@
 ---
 title: Konfigurere nummerserier enkeltvis
 description: Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis.
-author: sericks007
-manager: AnnBe
+author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails
 audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: sericks
+ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 260fae39d9a98feb7bfa82188c5b05de9a533136
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796636"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777919"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere nummerserier enkeltvis
 
@@ -32,7 +30,7 @@ Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis. Nummerseri
 2. Velg **Nummerserie**.
 3. Skriv inn en verdi i feltet **Nummerseriekode**.
 4. Skriv inn en verdi i **Navn**-feltet.
-5. I hurtigfanen **Omfangsparametere** velger du et omfang for nummerserien og velger omfangsverdier fra rullegardinlisten. Omfanget angir hvilke organisasjoner som bruker nummerserien. Nummerserier som har et annet omfang enn **Delt**, kan i tillegg ha segmenter som samsvarer med omfanget. En nummerserie med omfanget **Juridisk enhet** kan for eksempel inneholder et segment for en juridisk enhet. Hvis du vil ha mer informasjon om omfang, kan du se [Oversikt over nummerserie](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
+5. I hurtigfanen **Omfangsparametere** velger du et omfang for nummerserien og velger omfangsverdier fra rullegardinlisten. Omfanget angir hvilke organisasjoner som bruker nummerserien. Nummerserier som har et annet omfang enn **Delt**, kan i tillegg ha segmenter som samsvarer med omfanget. En nummerserie med omfanget **Juridisk enhet** kan for eksempel inneholder et segment for en juridisk enhet. Hvis du vil ha mer informasjon om omfang, kan du se [Oversikt over nummerserie](../number-sequence-overview.md). 
 6. Utvid seksjonen **Segmenter**.
     - Definer formatet for nummerserien ved å legge til, fjerne og ordne segmenter.  
     - Nummerserier for alle områder kan inneholde *Konstant-segmenter* og *Alfanumerisk-segmenter*. Konstant-segmenter inneholder et sett med alfanumeriske tegn som ikke endres. Bruk denne segmenttypen til å legge til en bindestrek eller andre skilletegn mellom nummerseriesegmenter. Alfanumerisk-segmenter inneholder en kombinasjon av nummertegn (#) og &-tegn. Disse tegnene representerer bokstaver og tall som økes hver gang et nummer i serien brukes. Bruk nummertegnet (#) for å angi økende tall og et &-tegn for å angi økende bokstaver. Formatet `#####_2014` oppretter for eksempel serien `00001_2014`, `00002_2014` og så videre. Det må finnes minimum ett alfanumerisk segment. Omfangselementer, for eksempel firma eller juridisk enhet, er ikke obligatorisk. Hvis du ikke inkluderer omfangselementer i formatet, genereres det imidlertid tall per omfang for den valgte referansen.  
@@ -40,3 +38,6 @@ Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis. Nummerseri
 8. Utvid delen **Generelt**. I hurtigfanen Generelt angir du om en nummerserie er manuell, sammenhengende eller ikke-sammenhengende. Angi i tillegg det minste og største tallet som kan brukes i nummerserien. Det anbefales ikke at du endrer ikke-sammenhengende nummerserier til sammenhengende nummerserier. Nummerserien vil ikke være virkelig sammenhengende. Denne endringen kan også føre til duplikatnøkkelbrudd i databasen. Sammenhengende nummerserier har i tillegg en større innvirkning på ytelsen.   
 9. Klikk på **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

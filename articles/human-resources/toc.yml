@@ -1,42 +1,68 @@
 - name: Dynamics 365 Human Resources
-  href: hr-welcome.md
+  href: ./index.md
   items:
     - name: Nyheter
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
-        - name: 2. desember 2020
-          href: hr-whats-new-2020-12-02.md
-        - name: 22. oktober 2020
-          href: hr-whats-new-2020-10-22.md
-        - name: 6. oktober 2020
-          href: hr-whats-new-2020-10-06.md
-        - name: 26. september 2020
-          href: hr-whats-new-2020-09-26.md
-        - name: 16. september 2020
-          href: hr-whats-new-2020-09-16.md
-        - name: 3. september 2020
-          href: hr-whats-new-2020-09-03.md
-        - name: 20. august 2020
-          href: hr-whats-new-2020-08-20.md
-        - name: 6. august 2020
-          href: hr-whats-new-2020-08-06.md
-        - name: 23. juli 2020
-          href: hr-whats-new-2020-07-23.md
-        - name: 8. juli 2020
-          href: hr-whats-new-2020-07-08.md
-        - name: 25. juni 2020
-          href: hr-whats-new-2020-06-23.md
-        - name: 11. juni 2020
-          href: hr-whats-new-2020-06-11.md
-        - name: 28. mai 2020
-          href: hr-whats-new-2020-05-28.md
-        - name: 14. mai 2020
-          href: hr-whats-new-2020-05-14.md
-        - name: 1. mai 2020
-          href: hr-whats-new-2020-05-01.md
+        - name: 09. august 2021
+          href: hr-whats-new-2021-08-09.md
+        - name: 26. juli 2021
+          href: hr-whats-new-2021-07-26.md
+        - name: 12. juli 2021
+          href: hr-whats-new-2021-07-12.md
+        - name: 22. juni 2021
+          href: hr-whats-new-2021-06-22.md
+        - name: 20. mai 2021
+          href: hr-whats-new-2021-05-20.md
+        - name: 3. mai 2021
+          href: hr-whats-new-2021-05-03.md
+        - name: 19. april 2021
+          href: hr-whats-new-2021-04-19.md
+        - name: 5. april 2021
+          href: hr-whats-new-2021-04-05.md
+        - name: 22. mars 2021
+          href: hr-whats-new-2021-03-22.md
+        - name: 8. mars 2021
+          href: hr-whats-new-2021-03-08.md
+        - name: 22. februar 2021
+          href: hr-whats-new-2021-02-22.md
+        - name: 28. januar 2021
+          href: hr-whats-new-2021-01-28.md
+        - name: 21. januar 2021
+          href: hr-whats-new-2021-01-21.md
         - name: Nyhetsarkiver 2020
           items:
+            - name: 2. desember 2020
+              href: hr-whats-new-2020-12-02.md
+            - name: 22. oktober 2020
+              href: hr-whats-new-2020-10-22.md
+            - name: 6. oktober 2020
+              href: hr-whats-new-2020-10-06.md
+            - name: 26. september 2020
+              href: hr-whats-new-2020-09-26.md
+            - name: 16. september 2020
+              href: hr-whats-new-2020-09-16.md
+            - name: 3. september 2020
+              href: hr-whats-new-2020-09-03.md
+            - name: 20. august 2020
+              href: hr-whats-new-2020-08-20.md
+            - name: 6. august 2020
+              href: hr-whats-new-2020-08-06.md
+            - name: 23. juli 2020
+              href: hr-whats-new-2020-07-23.md
+            - name: 8. juli 2020
+              href: hr-whats-new-2020-07-08.md
+            - name: 25. juni 2020
+              href: hr-whats-new-2020-06-23.md
+            - name: 11. juni 2020
+              href: hr-whats-new-2020-06-11.md
+            - name: 28. mai 2020
+              href: hr-whats-new-2020-05-28.md
+            - name: 14. mai 2020
+              href: hr-whats-new-2020-05-14.md
+            - name: 1. mai 2020
+              href: hr-whats-new-2020-05-01.md
             - name: 13. april 2020
               href: hr-whats-new-2020-04-13.md
             - name: 3. april 2020
@@ -77,110 +103,114 @@
               href: hr-admin-setup-update-process.md
         - name: Konfigurere dataintegrering
           items:
-            - name: Velge en dataintegreringsteknologi
+            - name: Velg en dataintegreringsteknologi
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurer Common Data Service-integrering
+            - name: Vanlige spørsmål om begrensning
+              href: hr-admin-integration-throttling-faq.md
+            - name: Konfigurer Dataverse-integrering
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service-enheter
+            - name: Dataverse-tabeller
               href: hr-developer-entities.md
-            - name: Konfigurere virtuelle enheter i Common Data Service
+            - name: Konfigurer virtuelle Dataverse-tabeller
               href: hr-admin-integration-common-data-service-virtual-entities.md
-            - name: Konfigurere integrering med Finance
+            - name: Vanlige spørsmål om virtuelle tabeller for Human Resources
+              href: hr-admin-virtual-entity-faq.md
+            - name: Konfigurer integrering med Finance
               href: hr-admin-integration-finance.md
-            - name: Konfigurere integrering med Dayforce
+            - name: Konfigurer integrering med Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Opprette en app for regelmessig dataeksport
               href: hr-admin-integration-recurring-data-export.md
             - name: Integrere med LinkedIn Talent Hub
               href: hr-admin-integration-linkedin.md
-            - name: Integrere med Office
+            - name: Integrer med Office
               items:
                 - name: Opplæring i Office-integrering
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
-                - name: Oppdatere enhetsdata i Excel
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
-                - name: Opprette opplevelser for Åpne i Excel
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
-                - name: Feilsøke Office-integrering
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
-        - name: Konfigurere databehandling
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                - name: Oppdater enhetsdata i Excel
+                  href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                - name: Vanlige spørsmål om funksjonen Åpne i Excel
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                - name: Feilsøk Office-integrering
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+        - name: Konfigurer databehandling
           items:
             - name: Oversikt over databehandlingsrammeverk
-              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Dataenheter
               items:
                 - name: Oversikt over dataenheter
-                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Prosjekter for konfigurasjonsdata
-                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Kopiere konfigurasjonsdata mellom firmaer eller juridiske enheter
                   items:
                     - name: Oversikt over å kopiere konfigurasjonsdata
-                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Konfigurasjonsdatapakker
-                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Konfigurasjon av datapakker (bare versjon fra juli 2017)
-                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurasjonsdatamaler
-                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Spore endringer i en enhet
-                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Finne informasjon om standard dataenheter
-                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Datamaler med flere regneark
-                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Aktivere endringssporing for enheter
-                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurasjonsnøkler og dataenheter
-                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurasjonsdatapakker
-                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Dataimport- og -eksportjobber
               items:
                 - name: Oversikt over dataimport- og -eksportjobber
-                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal
-                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Utvikling for dataenheter
               items:
                 - name: Utformingsprinsipper og anbefalte fremgangsmåter for dataenheter
-                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Opprette nye dataenheter
-                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Dataenhetsegenskaper
-                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Opprette beregnede kolonner og virtuelle felt
-                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Virkemåte på tvers av firmaer
-                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Behandle lands-/områdekoder
-                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Arvemønstre
-                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Regler for dataenhetsveiviser
-                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Metadataegenskaper
-                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: 'Valideringer, standarder og utilordnede felt'
-                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Sikkerhet og dataenheter
-                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Bruke tredjepartsverktøy til testing av tjenester
-                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Opprette skrivebeskyttede enheter som viser finansdimensjoner
-                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Vise din egen database
-              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Optimalisere satsvise BYOD-jobber
               href: hr-admin-integration-byod-batch-jobs.md
             - name: Oppdatering av automatisert enhetslager
-              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Automatisering av dataoppgave
-              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Arbeidsområde for sjekkliste for datavalidering
-              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Feilbeskrivelser for databehandling
-              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Behandle funksjoner
           href: hr-admin-manage-features.md
         - name: Konfigurere og administrere databaselogging
@@ -213,11 +243,11 @@
               href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
             - name: Lagrede visninger
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
-            - name: Opprette og arbeide med egendefinerte felt
+            - name: Opprett og arbeid med egendefinerte felt
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: Bygge inn lerretsapper fra Power Apps
+            - name: Bygg inn lerretsapper fra Power Apps
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
-            - name: Finne informasjon ved hjelp av oppslag
+            - name: Finn informasjon ved hjelp av oppslag
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
             - name: Endre datoen for en økt
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
@@ -227,10 +257,12 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Human Resources-app i Teams
           href: hr-admin-teams-leave-app.md
-        - name: Klargjøre for aktivering
+        - name: Klargjør for aktivering
           href: hr-admin-go-live-prepare.md
         - name: Vanlige spørsmål om aktivering
           href: hr-admin-go-live-faq.md
+        - name: Vanlige spørsmål om Human Resources-infrastruktursammenslåing
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentasjonsressurser
           items:
             - name: Hjelpesystem
@@ -253,6 +285,8 @@
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optimalisere ytelsen med oppgaver for automatisk opprydding
               href: hr-admin-troubleshooting-batch-history.md
+            - name: Tilbakestille satsvise jobber som står fast
+              href: hr-admin-troubleshooting-batch-execution.md
             - name: Analyserapporter blir ikke oppdatert
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Kan ikke opprette et miljø i administrasjonssenteret for Power Apps
@@ -279,32 +313,40 @@
           href: hr-developer-overview.md
         - name: Utvide med Power Apps og Power Automate
           href: hr-developer-power-apps.md
-        - name: Common Data Service-enheter
+        - name: Dataverse-tabeller
           href: hr-developer-entities.md
         - name: Tilpassede felt
           href: hr-developer-custom-fields.md
         - name: Konfigurere dataintegrering
           items:
-            - name: Velge en dataintegreringsteknologi
+            - name: Velg en dataintegreringsteknologi
               href: hr-admin-integration-choose-technology.md
-            - name: Konfigurer Common Data Service-integrering
+            - name: Konfigurer Dataverse-integrering
               href: hr-admin-integration-common-data-service.md
-            - name: Konfigurere integrering med Finance
+            - name: Konfigurer virtuelle Dataverse-tabeller
+              href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Konfigurer integrering med Finance
               href: hr-admin-integration-finance.md
-            - name: Konfigurere integrering med Dayforce
+            - name: Konfigurer integrering med Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Opprette en app for regelmessig dataeksport
               href: hr-admin-integration-recurring-data-export.md
-            - name: Integrere med Office
+            - name: Integrer med Office
               items:
                 - name: Opplæring i Office-integrering
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Oppdatere enhetsdata i Excel
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Opprette opplevelser for Åpne i Excel
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Feilsøke Office-integrering
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+                - name: Oppdater enhetsdata i Excel
+                  href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+                - name: Opprett opplevelser for Åpne i Excel
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+                - name: Feilsøk Office-integrering
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+        - name: Feilsøk utvikling med virtuelle Dataverse-tabeller
+          items:
+            - name: Optimaliser virtuelle Dataverse-tabellspørringer
+              href: hr-developer-optimize-virtual-table-queries.md
+            - name: Vanlige spørsmål om virtuelle tabeller for Human Resources
+              href: hr-admin-virtual-entity-faq.md
         - name: API-referanse for enhet
           items:
             - name: Godkjenning
@@ -315,15 +357,151 @@
                   items:
                     - name: Oversikt over MyLeaveRequests
                       href: hr-developer-api-myleaverequests-overview.md
-                    - name: Sende en permisjonsforespørsel til arbeidsflyt
+                    - name: Send en permisjonsforespørsel til arbeidsflyt
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: API for ATS-integrering
+          items:
+            - name: Innledning
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Server-til-server-autorisasjon for ATS-integreringer
+              href: hr-admin-integration-ats-api-s2s-auth.md
+            - name: Rekrutteringsforespørsel og relaterte enheter
+              items:
+                - name: Rekrutteringsforespørsel
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: Rekrutteringsforespørselsutdanning
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: Rekrutteringsforespørselssted
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: Rekrutteringsforespørselsstilling
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: Rekrutteringsforespørselskompetanse
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Eksempelspørring for rekrutteringsforespørsel
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Alternativsett for rekrutteringsforespørsel
+              items:
+                - name: Jobbfritaksstatus
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Status for rekrutteringsforespørselsstilling
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Rekrutteringsforespørselsstatus
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Forskriftsmessig jobbkategori
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: Ansettelseskandidat og relaterte enheter
+              items:
+                - name: Ansettelseskandidat
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Attesttype
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Partskontakt
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Person
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Personadresse
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Personsertifikat
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Personutdanning
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: Personidentifikasjonsnummer
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Personyrkeserfaring
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Personscreening
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Personkompetanse
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Vurderingsnivå
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Screeningtyper
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Eksempelspørring for ansettelseskandidat
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Alternativsett for kandidat
+              items:
+                - name: Søkerintegreringsresultat
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Tom Ja Nei
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Fullføringsstatus
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Kontakttype
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Utdanningskredittbasis
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Kjønn
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Sivilstand
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Måneder i året
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Nei Ja
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Periodeenhet
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Screeningfrekvens
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Screeningfrekvens genererer fra
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Kompetansenivåtype
+                  href: hr-admin-integration-ats-api-skill-level-type.md
+        - name: API for lønnsintegrering
+          items:
+            - name: Innledning
+              href: hr-admin-integration-payroll-api-introduction.md
+            - name: Generer og gå gjennom lønnsenheter
+              href: hr-admin-integration-payroll-api-generate-review-entities.md
+            - name: Parametere for lønnsintegrering
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Lønnsenheter
+              items:
+                - name: Lønnsansatt
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Adresse til lønnsarbeider
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Fast kompensasjonsplan for lønn
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Variabel kompensasjonsplan for lønn
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Lønnsstilling
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Lønnsstillingsjobb
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Permisjons- og fraværsrelaterte enheter
+              items:
+                - name: Permisjonssaldo
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Permisjonstype
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Permisjonsforespørsel
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Fordelsrelaterte enheter
+              items:
+                - name: Fordelsplan for lønnsarbeider
+                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Alternativsett
+              items:
+                - name: Kjønn
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Nei Ja
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Belønningstype
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Prosesstype
+                  href: hr-admin-integration-payroll-api-process-type.md
+                - name: Type dekning for fordelsplan
+                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+                - name: Planstatus for fordelsansatt
+                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
     - name: Brukerveiledning
       items:
         - name: Oversikt
           href: hr-hrpro-overview.md
-        - name: Definere Human Resources
+        - name: Definer Human Resources
           items:
-            - name: Konfigurere parametere for Human Resources
+            - name: Konfigurer parametere for Human Resources
               href: hr-setup-parameters.md
             - name: Konfigurere delte parametere for Human Resources
               href: hr-setup-shared-parameters.md
@@ -385,13 +563,13 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurere automatiserte oppgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere godkjenningsprosesser
+                    - name: Konfigurer godkjenningsprosesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere godkjenningstrinn
+                    - name: Konfigurer godkjenningstrinn
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere manuelle beslutninger
+                    - name: Konfigurer manuelle beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere betingede beslutninger
+                    - name: Konfigurer betingede beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurere parallelle aktiviteter
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
@@ -423,7 +601,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
                     - name: Opprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Tilknytte en arbeidsflytdokumentklasse til en arbeidsflyttype
+                    - name: Tilknytt en arbeidsflytdokumentklasse til en arbeidsflyttype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
                 - name: Rapport for arbeidsflyttyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
@@ -439,12 +617,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Varselmeldinger til klient via e-post
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Elektroniske signaturer
-              items:
-                - name: Oversikt over elektroniske signaturer
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Definere elektroniske signaturer
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Saksbehandling
               items:
                 - name: Oversikt over saksbehandling
@@ -465,21 +637,25 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
             - name: Dato-/klokkeslettdata og tidssoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
-        - name: Administrere medarbeidere
+        - name: Administrer medarbeidere
           items:
-            - name: Organisere arbeidsstyrken
+            - name: Organiser arbeidsstyrken
               href: hr-personnel-departments-jobs-positions.md
-            - name: Definere komponentene for en jobb
+            - name: Arbeidsområde for medarbeiderbehandling
+              href: hr-personnel-personnel-management-workspace.md
+            - name: Definer komponentene for en jobb
               href: hr-personnel-jobs.md
-            - name: Definere avdelinger
+            - name: Definer avdelinger
               href: hr-personnel-define-departments.md
-            - name: Legge til en avdeling i et hierarki
+            - name: Legg til en avdeling i et hierarki
               href: hr-personnel-add-department-hierarchy.md
-            - name: Definere jobber
+            - name: Definer jobber
               href: hr-personnel-define-jobs.md
-            - name: Opprette en arbeidstidskalender
+            - name: Stillinger
+              href: hr-personnel-positions.md
+            - name: Opprett en arbeidstidskalender
               href: hr-personnel-create-working-time-calendar.md
-            - name: Rekruttere jobbkandidater
+            - name: Rekrutter jobbkandidater
               href: hr-personnel-recruit.md
             - name: Vanlige spørsmål om medarbeiderhandlinger
               href: hr-personnel-actions-faq.md
@@ -491,9 +667,11 @@
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Angi arbeiderinformasjon
               href: hr-personnel-enter-worker-information.md
+            - name: Arbeidere uten ansettelse
+              href: hr-personnel-workers-without-employment.md
             - name: Utlånsvarer til arbeidere
               href: hr-personnel-loan-item-worker.md
-            - name: Opprette utlånsvarer
+            - name: Opprett utlånsvarer
               href: hr-personnel-create-loan-items.md
             - name: Behandle utlånsvarer
               href: hr-personnel-loan-items.md
@@ -525,16 +703,20 @@
               href: hr-compensation-enroll-employees-fixed.md
             - name: Registrere ansatte i en variabel kompensasjonsplan
               href: hr-compensation-enroll-employees-variable.md
-            - name: Definere kompensasjonsprosess og beregne resultater
+            - name: Definer kompensasjonsprosess og beregn resultater
               href: hr-compensation-define-process.md
             - name: Behandle kompensasjonsplaner
               href: hr-compensation-process.md
-        - name: Administrere fordeler
+            - name: Merk en ansatt som Klar til betaling
+              href: hr-compensation-payroll.md
+        - name: Administrer fordeler
           items:
             - name: Fordelsbehandling
               items:
                 - name: Oversikt over fordelsbehandling
                   href: hr-benefits-management-overview.md
+                - name: Arbeidsområde for fordelsbehandling
+                  href: hr-benefits-management-workspace.md
                 - name: Konfigurere fordelsbehandling
                   items:
                     - name: Konfigurere fordelsstyringsparametre per firma
@@ -545,21 +727,21 @@
                       href: hr-benefits-setup-eligibility-rules.md
                     - name: Konfigurere alternativer for personlige kontaktrettigheter
                       href: hr-benefits-setup-contact-eligibility-options.md
-                    - name: Opprette dekningsalternativer
+                    - name: Opprett dekningsalternativer
                       href: hr-benefits-setup-coverage-options.md
-                    - name: Definere betalingshyppigheter
+                    - name: Definer betalingshyppigheter
                       href: hr-benefits-setup-payment-frequencies.md
-                    - name: Konfigurere hendelsestyper for levetid
+                    - name: Konfigurer hendelsestyper for levetid
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Opprette plantyper
+                    - name: Oversikt over plantype
                       href: hr-benefits-setup-plan-types.md
                     - name: Definer årsakskoder
                       href: hr-benefits-setup-reason-codes.md
-                    - name: Definere lagkoder
+                    - name: Definer lagkoder
                       href: hr-benefits-setup-tier-codes.md
-                    - name: Konfigurere satser
+                    - name: Konfigurer satser
                       href: hr-benefits-setup-rates.md
-                    - name: Konfigurere fradrag
+                    - name: Konfigurer fradrag
                       href: hr-benefits-setup-deductions.md
                     - name: Konfigurere ventedager
                       href: hr-benefits-setup-waiting-days.md
@@ -591,6 +773,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Behandle satsendringer
                       href: hr-benefits-process-rate-changes.md
+                - name: ACA-rapportering
+                  href: hr-benefits-management-aca-reports.md
             - name: Definere og administrere et fordelsprogram
               href: hr-benefits-manage-program.md
             - name: Policyer for fordelsrettighet
@@ -635,15 +819,17 @@
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Vise analyse for permisjon og fravær
               href: hr-leave-and-absence-analytics.md
-            - name: Administrere forespørsler om permisjon og fravær
+            - name: Administrer forespørsler om permisjon og fravær
               href: hr-employee-self-service-manage-requests.md
-            - name: Be om fridager
+            - name: Be om fritid
               href: hr-employee-self-service-request-time-off.md
-            - name: Vise team- og firmakalendere
+            - name: Vis team- og firmakalendere
               href: hr-employee-self-service-calendar.md
-            - name: Administrere policyer for kjøp og salg av permisjon
+            - name: Konfigurer fraværsbehandlingsrollen
+              href: hr-configure-absence-manager.md
+            - name: Administrer policyer for kjøp og salg av permisjon
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
-            - name: Opprette arbeidsflyter for kjøps- og salgspermisjon
+            - name: Opprett arbeidsflyter for kjøps- og salgspermisjon
               href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Kjøpe og selge permisjon
               href: hr-employee-self-service-buy-sell-leave.md
@@ -653,13 +839,19 @@
           items:
             - name: Oversikt over ytelsesstyring
               href: hr-develop-performance-management-overview.md
-            - name: Justere kompetanser for arbeidsstyrke
-              href: hr-develop-skills.md
-            - name: Legge til i ytelsesloggen
+            - name: Kompetanse
+              items:
+                - name: Konfigurer kompetanse
+                  href: hr-develop-skills.md
+                - name: Angi kompetanse
+                  href: hr-develop-enter-skills.md
+                - name: Tilordne kompetanse
+                  href: hr-develop-map-skills.md
+            - name: Legg til i ytelsesjournalen
               href: hr-develop-add-performance-journal.md
-            - name: Opprette et mål
+            - name: Opprett et mål
               href: hr-develop-create-goal.md
-            - name: Opprette en prestasjonsvurdering
+            - name: Opprett en prestasjonsvurdering
               href: hr-develop-create-performance-review.md
         - name: Opprett kurs
           items:
@@ -691,5 +883,73 @@
               href: hr-employee-manager-self-service-custom-links.md
             - name: Endre navn på arbeidsområde for selvbetjening for ansatte
               href: hr-employee-self-service-workspace-name.md
-            - name: Redigere personlige opplysninger
+            - name: Rediger personlige opplysninger
               href: hr-employee-manager-self-service-edit-personal-information.md
+            - name: Begrens redigering av personlige opplysninger
+              href: hr-employee-self-service-restrict-editing.md
+        - name: Bruk arbeidsflytsystemet
+          items:
+            - name: Oversikt over arbeidsflytsystem
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arkitektur i arbeidsflytsystemet
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbeidsflytelementer
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbeidsflythandlinger
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Opprette arbeidsflyter
+              items:
+                - name: Oversikt over å opprette arbeidsflyter
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere egenskaper for arbeidsflyt
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere manuelle oppgaver
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere automatiserte oppgaver
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer godkjenningsprosesser
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer godkjenningstrinn
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer utgiftskontrollører
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer manuelle beslutninger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer betingede beslutninger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere parallelle aktiviteter
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere parallelle avdelinger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere arbeidsflyter for linjeelement
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere den satsvise jobben Meldingsbehandling for arbeidsflyt som kritisk
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Delegere arbeidselementer i en arbeidsflyt
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vise arbeidsflytlogg
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere systemet til å sende arbeidsflytrelatert e-post til brukere
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbeidsflyttyper
+              items:
+                - name: Opprette en arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sjekkliste for arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en arbeidsflytkategori
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en spørring for en arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprett en ny arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en arbeidsflytdokumentklasse
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en SubmitToWorkflow-klasse
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tilknytt en arbeidsflytdokumentklasse til en arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Rapport for arbeidsflyttyper
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vanlige spørsmål om arbeidsflyt
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

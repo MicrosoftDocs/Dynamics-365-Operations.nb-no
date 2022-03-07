@@ -2,35 +2,30 @@
 title: Opprette oppgavelister og legge til oppgaver
 description: Dette emnet beskriver hvordan du oppretter oppgavelister og legger til oppgaver i dem i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 1cab31784db9f3242dce20e98762088436a5a8f8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414707"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756531"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Opprette oppgavelister og legge til oppgaver
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter oppgavelister og legger til oppgaver i dem i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 En *oppgave* definerer en bestemt del av arbeidet eller en handling som noen må fullføre på eller før en angitt forfallsdato. I Dynamics 365 Commerce kan en oppgave inneholde detaljerte instruksjoner og informasjon om en kontaktperson. Den kan også inneholde koblinger til Back-Office-operasjoner, salgsstedsoperasjoner (POS) eller områdesider, for å forbedre produktiviteten og gi den konteksten som oppgaveeieren trenger for å fullføre oppgaven effektivt.
 
@@ -54,7 +49,7 @@ Hvis du vil legge til oppgaver i en oppgaveliste, følger du disse trinnene.
 1. I dialogboksen **Opprett en ny oppgave** skriver du inn et navn på oppgaven i **Navn**-feltet.
 1. I feltet **Forfallsdato samsvarer ikke med måldato** angir du en positiv eller negativ heltallsverdi. Angi for eksempel **-2** hvis oppgaven skal fullføres to dager før oppgavelistens forfalls dato.
 1. I feltet **Merknader** angir du detaljerte instruksjoner.
-1. I feltet **Kontaktperson** angir du navnet på en emneekspert som oppgaveeieren kan kontakte hvis han eller hun trenger hjelp.
+1. I feltet **Kontaktperson** angir du navnet på en emneekspert som oppgaveeieren kan kontakte hvis oppgaveeieren trenger hjelp.
 1. I feltet **Oppgavekobling** angir du en kobling basert på typen oppgave.
 
 > [!TIP]
@@ -75,7 +70,7 @@ Hvis du vil legge til oppgavekoblinger mens du oppretter en oppgave, følger du 
 
 Følgende illustrasjon viser valget av oppgavekoblinger i dialog boksen **Rediger oppgave**.
 
-![Velge oppgavekoblinger i dialogboksen Rediger oppgave](media/HQ-POS-Tasks-Linking.png)
+![Velge oppgavekoblinger i dialogboksen Rediger oppgave.](media/HQ-POS-Tasks-Linking.png)
 
 ### <a name="configure-a-pos-operation-so-that-it-can-be-linked-to-a-task"></a>Konfigurere en POS-operasjon slik at den kan kobles til en oppgave
 
@@ -93,3 +88,6 @@ Gjør følgende for å konfigurere en POS-operasjon slik at den kan kobles til e
 [Tilordne oppgavelister til butikker eller ansatte](task-mgmt-assign-lists.md)
 
 [Oppgavebehandling på salgsstedet](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,6 +5,7 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -15,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: cc5167be43cccfd024ffdc65eb5f4dcac7e187288522d95be2385f8e7fdf106e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43fe90cf99ddbe42dc89685e7fc747ded5a285c0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718653"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801657"
 ---
 # <a name="payments-are-automatically-settled-before-orders-are-invoiced-or-shipped"></a>Betalinger utlignes automatisk før ordrer faktureres eller sendes
 
@@ -43,7 +44,7 @@ Hvis du vil konfigurere manuell henting for e-handelsbetalinger i Adyen-portalen
 1. Velg **Konto** i det øverste navigasjonsfeltet, og velg deretter **Innstillinger**.
 1. Velg **manuell** i feltet **Opptaksforsinkelse**.
 
-    ![Innstillingen Opptaksforsinkelse i Adyen-portalen.](media/adyen-capture-delay.jpg)
+    ![Innstillingen Opptaksforsinkelse i Adyen-portalen](media/adyen-capture-delay.jpg)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

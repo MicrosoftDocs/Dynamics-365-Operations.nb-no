@@ -2,14 +2,11 @@
 title: Vise og behandle adresseendringer
 description: Dette emnet forklarer hvordan du kan vise og behandle adresseendringer i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
@@ -17,14 +14,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
+ms.openlocfilehash: f9cd6c86d65bced0323097e8388b14eff98345a14b94beb8a469c8c5f482c36b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152059"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6725018"
 ---
 # <a name="view-and-manage-address-changes"></a>Vise og behandle adresseendringer
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emnet finner du informasjon om hvordan du kan vise og behandle adresseendringer på den selvbetjente siden **Rediger personopplysninger** for ansatte eller på **Arbeider**-detaljsiden i Dynamics 365 Human Resources.
 
@@ -125,6 +124,9 @@ HR-personale kan vise og overvåke adresseendringer fra arbeidsområdet **Person
 Når du velger **Adresseendringer**-flisen, viser en ny side detaljene for alle adresseendringer. Du kan også velge **Inkluder fremtidige adresseendringer** i øvre høyre hjørne for å vise adresseendringer med en fremtidig dato.
 
 > [!NOTE]
-> Hvis du vil motta et varsel eller en e-postmelding om disse adresseendringene, kan du opprette en ny varslingsregel på **Alternativer**-fanen i handlingsruten. Hvis du vil ha mer informasjon om varslingsregler, kan du se [Opprette varslingsregler](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> Hvis du vil motta et varsel eller en e-postmelding om disse adresseendringene, kan du opprette en ny varslingsregel på **Alternativer**-fanen i handlingsruten. Hvis du vil ha mer informasjon om varslingsregler, kan du se [Opprette varslingsregler](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> Hvis du vil konfigurere en arbeidsflyt for adresseendringene, kan du velge alternativet **Send eksternt** i varslingsregelen og deretter bruke Power Automate til å utløse forretningshendelsen og konfigurere en arbeidsflyt. Hvis du vil ha mer informasjon, kan du se [Varsler som forretningshendelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> Hvis du vil konfigurere en arbeidsflyt for adresseendringene, kan du velge alternativet **Send eksternt** i varslingsregelen og deretter bruke Power Automate til å utløse forretningshendelsen og konfigurere en arbeidsflyt. Hvis du vil ha mer informasjon, kan du se [Varsler som forretningshendelser](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

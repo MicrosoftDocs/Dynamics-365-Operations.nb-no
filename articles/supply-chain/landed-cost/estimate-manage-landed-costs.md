@@ -2,9 +2,11 @@
 title: Estimere og behandle netto innkjøpspris
 description: Systemet bruker det automatiske kostnadsoppsettet til å fastslå et estimat for netto innkjøpspris. Dette emnet beskriver hvordan du kan definere ulike scenarioer for å gi et mer nøyaktig estimat.
 author: sherry-zheng
+manager: tfehr
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 audience: Application User
@@ -13,17 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-26
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5a8df57eaa779fe7b1f709a59372d9c634447c4a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: cbd652f2b29f7a78ad9e4e1d3dda4a3ef8a9f3f3
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565813"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501276"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Estimere og behandle netto innkjøpspris
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Systemet bruker det [automatiske kostnadsoppsettet](auto-cost-setup.md) til å fastslå et estimat for netto innkjøpspris. I tillegg kan du definere ulike scenarioer for å gi et mer nøyaktig estimat. Disse scenarioene blir lagret. Du kan derfor gå gjennom dem senere og sammenligne dem med faktiske data i en rapport. Du kan også oppdatere vareprisen.
 

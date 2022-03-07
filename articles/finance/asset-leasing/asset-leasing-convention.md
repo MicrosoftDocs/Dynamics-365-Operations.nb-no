@@ -2,9 +2,11 @@
 title: Leiekonvensjoner for aktiva
 description: Dette emnet beskriver konvensjoner for leide aktiva.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 1/14/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetLease
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: afc432d448f3b013dd8732120d7e8a50a9169343c705a75465e669156fd5e052
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7072c34ccbffc6bf135f55fd594cac4d9ea5a463
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740032"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237522"
 ---
 # <a name="asset-leasing-conventions"></a>Leiekonvensjoner for aktiva
 

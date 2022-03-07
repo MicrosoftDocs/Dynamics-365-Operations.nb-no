@@ -2,35 +2,30 @@
 title: Containermodul
 description: Dette emnet dekker containermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715446"
 ---
-# <a name="container-module"></a>Containermodul
+# <a name="container-module"></a>Beholdermodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker containermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 En containermodul er en modul som er vert for andre moduler i den. Hovedformålet med en containermodul er å definere, gjennom egenskapene som er angitt for den, oppsettet til modulene som den inneholder. Disse modulene kan for eksempel vises side ved side i et oppsett med to kolonner, tre kolonner, fire kolonner eller seks kolonner. De kan også begrenses til bredden på containeren, eller de kan fylle skjermen. En overskrift kan også legges til i hver containermodul.
 
@@ -47,7 +42,7 @@ Tre containermoduler støttes: container, container med 2 spor og container med 
 
 Bildet nedenfor viser et eksempel på en beholdermodul som inneholder en karusellmodul i Commerce-områdebygger. I dette eksemplet er **Bredde**-egenskapen for beholdermodulen satt til **Fyll skjerm**.
 
-![Eksempel på en beholdermodul](./media/ecommerce-container.PNG)
+![Eksempel på en beholdermodul.](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Egenskaper for containermodul
 
@@ -142,3 +137,6 @@ Hvis du vil legge til en containerspillermodul på en ny side og angi de nødven
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,37 +1,39 @@
 ---
-title: Behandle funksjoner
-description: Lær hvordan du aktiverer eller deaktiverer nye funksjoner i Dynamics 365 Human Resources.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Vedlikeholde funksjoner i Human Resources
+description: Dette emnet beskriver funksjonen Funksjonsbehandling og hvordan du kan bruke den.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2d5a27c02df841dfbb17a9375aaf75f93d05cd8e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419933"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069713"
 ---
-# <a name="manage-features"></a>Behandle funksjoner
+# <a name="manage-features-in-human-resources"></a>Vedlikeholde funksjoner i Human Resources
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Som en del av vår kontinuerlige distribusjonen av ny funksjonalitet for Microsoft Dynamics 365 Human Resources vil vi at kunder får nye funksjoner så snart som mulig. Vi tilbyr forhåndsversjon av funksjoner, som nesten er klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
 
-Hvis du vil ha mer informasjon om nye funksjoner i Human Resources, kan du se [Hva er nytt i Human Resources](hr-admin-whats-new.md) og [lanseringsplan for Dynamics 365 og Power Platform ](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Hvis du vil ha mer informasjon om nye funksjoner i Human Resources, kan du se [Hva er nytt i Human Resources](hr-admin-whats-new.md) og [lanseringsplan for Dynamics 365 og Power Platform ](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-Arbeidsområdet **Funksjonsbehandling** inneholder en liste over funksjoner som leveres i hver utgivelse. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Arbeidsområdet **Funksjonsbehandling** inneholder en liste over funksjoner som leveres i hver utgivelse. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Alle nye funksjoner blir forhåndsvist i minst 30 dager, og vanligvis 30-60 dager. Større funksjoner er vanligvis tilgjengelig i oktober og april i hvert år etter forhåndsvisningsperioden. Så snart du ser nye funksjoner i arbeidsområdet for **funksjonsbehandling**, kan du aktivere dem. Det kan hende at noen funksjoner er aktivert som standard.
 
@@ -70,7 +72,7 @@ Fordelsbehandling erstatter funksjonalitet i arbeidsområdet **Fordeler**. Når 
 - **Policyer for fordelsrettigheter**
 - **Rettighetshendelser**
 
-Du kan vise informasjonen i disse skjemaene i skrivebeskyttet modus. Hvis du vil redigere informasjonen, må du først deaktivere Fordelsbehandling (gjelder kun for **Sandkasse**-miljøer).
+Du kan vise informasjonen på disse sidene i skrivebeskyttet modus. Hvis du vil redigere informasjonen, må du først deaktivere Fordelsbehandling (gjelder kun for **Sandkasse**-miljøer).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Aktivere eller deaktivere permisjon og fravær
 
@@ -93,4 +95,6 @@ Ikke ta med personlige data (informasjon som kan identifisere deg) i tilbakemeld
 ## <a name="see-also"></a>Se også
 
 - [Hva er nytt i Human Resources](hr-admin-whats-new.md)
-- [Lanseringsplan for Dynamics 365 og Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Lanseringsplan for Dynamics 365 og Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

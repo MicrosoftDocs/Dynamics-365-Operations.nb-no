@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 267994
 ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3fbdefce85fbd7aee228cdcb58f29007478c1485
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5410cd29c59c6c655c22e82eca43b5132b98ff0f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408298"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209879"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankkontoutdrag og betalingsavstemming for EU
 
@@ -59,3 +58,6 @@ I tillegg til et bankkontoutdrag kan banker gi bestemte meldinger som inneholder
 -   (SVE) BankGirot-retur – returformat for leverandørbetalinger, som tilsvarer Bankgirot-eksportformat
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

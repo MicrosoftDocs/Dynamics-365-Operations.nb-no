@@ -2,7 +2,7 @@
 title: Opprette en permisjons- og fraværsplan
 description: Opprett permisjonsplaner i Dynamics 365 Human Resources for ulike typer permisjon.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f90e49c6191134a99b306fdc9de6b46c07844dea
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419945"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463412"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Opprette en permisjons- og fraværsplan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Definer permisjons- og fraværsplaner i Dynamics 365 Human Resources for hver permisjonstype du tilbyr. Permisjons- og fraværsplaner kan avsettes med forskjellige frekvenser, for eksempel årlig, månedlig eller annenhver måned. Du kan også definere en plan som et tilskudd, der en enkelt avsetning skjer på en bestemt dato. Du kan for eksempel opprette en plan som gir flytende ferier årlig.
 
@@ -383,3 +385,6 @@ Prognosesaldo (30) = avsetningsbeløp (10 x 1) + gjeldende saldo (40) – overf�
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Konfigurere permisjons- og fraværstyper](hr-leave-and-absence-types.md)
 - [Avsette permisjons- og fraværsplaner](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

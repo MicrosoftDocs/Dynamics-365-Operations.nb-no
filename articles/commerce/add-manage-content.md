@@ -1,36 +1,31 @@
 ---
 title: Måter å legge til innhold på
-description: Dette emnet gir en oversikt og koblinger for hvor og hvordan du kan begynne å behandle innhold ved hjelp av webredigeringsverktøysettet for Microsoft Dynamics 365 Commerce-områdebygger.
+description: Dette emnet gir en oversikt og koblinger for hvor og hvordan du kan begynne å behandle innhold ved hjelp av webredigeringsverktøysettet for områdebygger for Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 802a41b8c55e65eee58d26137c2f160b69847010
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f8a2dbb7bc7659e2e23b0ba6e2b5645dbe508ef9c9bda10df3bad8d04a6cfb32
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414591"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727684"
 ---
 # <a name="ways-to-add-content"></a>Måter å legge til innhold på
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over og koblinger til dokumentasjon om hvordan du kan behandle innhold ved hjelp av webredigeringsverktøysettet for Microsoft Dynamics 365 Commerce-områdebygger.
-
-## <a name="overview"></a>Oversikt
+Dette emnet gir en oversikt over og koblinger til dokumentasjon om hvordan du kan behandle innhold ved hjelp av webredigeringsverktøysettet for områdebygger for Microsoft Dynamics 365 Commerce.
 
 Det er mange måter å endre utseendet, følelsen og innholdet på området på. Avhengig av det nødvendige tilpassingsnivået kan mange av disse endringene implementeres av ikke-utviklere i områdebygger, webredigeringsverktøysettet som følger med Dynamics 365 Commerce. Ved hjelp av områdebygger kan du bygge maler, velge temaer samt velge og konfigurere moduler uten å skrive kode. Utviklingsferdigheter kreves derimot for å opprette nye temaer eller moduler, fordi arbeidsflyten for SDK for e-handel og Microsoft Dynamics Lifecycle Services-arbeidsflytdistribusjonen (LCS) må brukes.
 
@@ -57,3 +52,6 @@ Velg ett av følgende emner for å komme i gang.
 [Dokumentere statuser og livssyklus](document-states-overview.md)
 
 [Aktivere og bruke deling på tvers av kanal](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

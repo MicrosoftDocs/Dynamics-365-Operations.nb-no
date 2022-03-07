@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 272261f9ba189bec55e856aa617bf5716e3f4fa261ef7bfd7269184a09a51a2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770743"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816274"
 ---
 # <a name="revenue-recognition-bundles"></a>Inntektsføringsbunter
 
@@ -59,15 +59,15 @@ Følgende grunnleggende salgspriser er definert for komponentvarer:
 
 En salgsordre angis for kunden US-004, Cave Wholesales. Den eneste linjen som angis, er for buntvaren Bærbar datamaskin. Standard enhetspris for den overordnede linjen kan tas fra en rekke steder, for eksempel handelsavtalen eller den grunnleggende salgsprisen. I dette eksemplet ble USD 2 300 angitt som enhetspris manuelt.
 
-[![Buntvaren Bærbar datamaskin i en salgsordre.](./media/bundle-01.png)](./media/bundle-01.png)
+[![Buntvaren Bærbar datamaskin i en salgsordre](./media/bundle-01.png)](./media/bundle-01.png)
 
 Salgsordren inneholder en bunt, og derfor må den bekreftes. Bekreftelsesdialogboksen viser komponentene i bunten.
 
-[![Dialogboksen Bekreft salgsordre som viser komponentvarer.](./media/bundle-02.png)](./media/bundle-02.png)
+[![Dialogboksen Bekreft salgsordre som viser komponentvarer](./media/bundle-02.png)](./media/bundle-02.png)
 
 Den utskrevne bekreftelsesrapporten vil imidlertid vise den overordnede varen til bunten, ettersom denne rapporten er det eksterne dokumentet for kunden.
 
-[![Bekreftelsesrapport som viser bare den overordnede varen.](./media/bundle-03.png)](./media/bundle-03.png)
+[![Bekreftelsesrapport som viser bare den overordnede varen](./media/bundle-03.png)](./media/bundle-03.png)
 
 Etter at salgsordren er bekreftet, vises den overordnede varen fremdeles på salgsordren, men statusen er endret til **Avbrutt**. I tillegg spores nettobeløpet i feltet **Nettobeløp for bunt**. Dette beløpet kreves for å skrive ut fakturaen, fordi fakturaen viser den overordnede varen, ikke komponentvarene.
 
@@ -95,19 +95,19 @@ Et delvis beløp kan bare sendes og faktureres hvis antallet reduseres for alle 
 
 Det siste trinnet er å fakturere salgsordren. Fakturadialogboksen viser komponentvarene under fakturering.
 
-[![Dialogboksen Faktura som viser komponentvarer.](./media/bundle-06.png)](./media/bundle-06.png)
+[![Dialogboksen Faktura som viser komponentvarer](./media/bundle-06.png)](./media/bundle-06.png)
 
 Fakturaen som er skrevet ut, vil imidlertid bare vise den overordnede varen.
  
-[![Utskrevet faktura som viser bare den overordnede varen.](./media/bundle-07.png)](./media/bundle-07.png)
+[![Utskrevet faktura som viser bare den overordnede varen](./media/bundle-07.png)](./media/bundle-07.png)
 
 Fakturajournalen som opprettes etter at posteringen skjer, omfatter ikke den overordnede varen fra bunten, fordi denne varen har statusen **Avbrutt**.
 
-[![Fakturajournal som ikke omfatter den overordnede varen.](./media/bundle-08.png)](./media/bundle-08.png)
+[![Fakturajournal som ikke omfatter den overordnede varen](./media/bundle-08.png)](./media/bundle-08.png)
 
 Det er viktig at fakturajournalen ikke inneholder den overordnede varen fra bunten, fordi prosesser som utføres etter at fakturaen er postert, er basert på den fakturajournalen. Hvis du for eksempel oppretter en kreditnota fra fanen **Selge** i handlingsruten, vil kreditnotaen som opprettes, inkludere komponentvarene og ikke den overordnede varen.
 
-[![Kreditnota som viser komponentvarene, men ikke den overordnede varen.](./media/bundle-09.png)](./media/bundle-09.png)
+[![Kreditnota som viser komponentvarene, men ikke den overordnede varen](./media/bundle-09.png)](./media/bundle-09.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

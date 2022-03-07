@@ -1,12 +1,10 @@
 ---
 title: Historikk for aktivahendelse
 description: Dette emnet forklarer hvordan du får tilgang til hendelsesloggen for aktiva i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea71dee6f653f73a86d31e82cf3541b4447bd552
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 09ef901cd65953d026c2aaa73656654e8745e438
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019520"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838592"
 ---
 # <a name="asset-event-history"></a>Historikk for aktivahendelse
 
@@ -48,3 +46,6 @@ Tidslinjen oppdateres hver gang siden åpnes. Det inneholder følgende informasj
 - Arbeidsordrer, inkludert bokførte varer og notater
 - Feil
 - Betingelsesvurderinger
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

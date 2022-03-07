@@ -2,11 +2,9 @@
 title: Planlegge organisasjonshierarkiet
 description: Før du setter opp organisasjoner og organisasjonshierarkier, må du sørge for at du forstår hvordan du best kan modellere virksomheten din.
 author: sericks007
-manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694695"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6771878"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlegge organisasjonshierarkiet
 
@@ -166,7 +164,7 @@ Driftsenheter bruker landkonteksten for den overordnede juridiske enheten. Drift
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Hvis organisasjonen er modellert som en juridisk enhet
 
-For land/områder som støttes, kan de fleste lovbestemte rapporter opprettes. Hvis du vil ha informasjon om hvilke rapporter som er tilgjengelige for hvert land/område, kan du se [Microsoft Dynamics-lokaliseringsportalen](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (CustomerSource-pålogging kreves.)
+For land/områder som støttes, kan de fleste lovbestemte rapporter opprettes. 
 
 > [!NOTE]
 > Et posteringslag i økonomimodulen lar deg opprette justeringsoppføringer i et overordnet firma som bruker en annen regnskapsstandard enn det underordnede firmaet. For et firma som bruker generelt godtatt regnskapspraksis i Storbritannia (UK GAAP), kan du for eksempel gjør justeringer i posteringslaget. Disse oppføringene kan konsolideres til et morselskap som bruker generelt godkjente regnskapsprinsipper (kalt GAAP) i USA. Justeringspostene har ingen innvirkning UK GAAP-rapportering.
@@ -241,3 +239,6 @@ Vurder følgende anbefalte fremgangsmåter når du implementerer et organisasjon
 - Før du modellerer store omstruktureringsscenarier, bruker du hierarkiets gyldighetsdatoer til å foreta en konsekvensanalyse og en valideringstest.
 - Bruk kladdemodus for å endre et hierarki før du publiserer en ny versjon i et produksjonsmiljø.
 - Begrense antall personer som har tillatelse til å legge til eller fjern organisasjoner fra et hierarki i et produksjonsmiljø. Et mindre antall reduserer sjansen for at kostbare feil kan oppstå, og at det må gjøres rettelser.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

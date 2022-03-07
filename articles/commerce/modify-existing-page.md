@@ -2,36 +2,30 @@
 title: Endre en eksisterende områdeside
 description: Dette emnet beskriver hvordan du endrer en eksisterende områdeside i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0039489c266840e5341f2e322fa7783216ac9bb3ebcecff840f591beec9f79c4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414724"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751549"
 ---
 # <a name="modify-an-existing-site-page"></a>Endre en eksisterende områdeside
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du endrer en eksisterende områdeside i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Når du må endre en side, er det første trinnet å åpne den i sideredigeringsprogrammet. Gå til området som inneholder siden, og finn siden du vil bruke, i listen over sider. Hvis du ikke finner siden, kan du bruke redigeringsverktøyets omfattende søkefunksjonalitet. Skriv inn det nøyaktige sidenavnet, eller skriv inn de første bokstavene i objektet og deretter en stjerne (\*). Det vises en filtrert liste over sider. Du kan bruke denne listen til å finne siden du vil bruke. Når du har funnet riktig side, velger du sidenavnet for å åpne siden i sideredigeringsprogrammet.
 
@@ -87,3 +81,8 @@ Følgende eksempel viser hvordan du endrer startsiden ved å endre videoen som v
 [Supplere en kategorimålside](enrich-category-page.md)
 
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
+
+[Opprette dynamiske e-handelssider basert på URL-parametere](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

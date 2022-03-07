@@ -1,7 +1,7 @@
 ---
 title: Forsinkelsestoleranse (negative dager)
 description: Dette emnet gir informasjon om forsinkelsestoleranseberegningen og hvordan den påvirker oppretting av planlagte bestillinger i planleggingsoptimaliseringen.
-author: ChristianRytt
+author: crytt
 ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
@@ -10,16 +10,17 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ccf827983694eab2037c73aa3251846b051e66f1
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 748e047e89747f2eabccc04a40c79bcb1e6f3dea
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678573"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306469"
 ---
 # <a name="delay-tolerance-negative-days"></a>Forsinkelsestoleranse (negative dager)
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Med funksjonaliteten for forsinkelsestoleranse kan planleggingsoptimalisering vurdere verdien for **Negative dager** som er angitt for dekningsgrupper. Den brukes til å forlenge toleranseperioden for forsinkelsestoleranse som brukes under hovedplanlegging. På denne måten kan du unngå å opprette nye forsyningsordrer hvis eksisterende forsyning vil være i stand til å dekke behovet etter en kort forsinkelse. Formålet med funksjonen er å fastslå om det er fornuftig å opprette en ny forsyningsordre for et gitt behov.
 

@@ -1,25 +1,23 @@
 ---
 title: Definere et innkjøpskategorihierarki
 description: Denne prosedyren viser deg hvordan du oppretter nye noder i et innkjøpskategorihierarki og hvordan du konfigurerer en innkjøpskategori som skal brukes i en innkjøpsprosess.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb37b2761708770b82f23cfbed86248d30a59410
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a625ae5acc6d47b40a31b986da25df8f2d3fdbc8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017323"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577078"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Definere et innkjøpskategorihierarki
 
@@ -44,3 +42,6 @@ Denne prosedyren viser deg hvordan du oppretter nye noder i et innkjøpskategori
 4. Velg produktene du vil legge til i innkjøpskategorien.
 5. Velg pilen for å legge til produktene i **Valgt**-tabellen.
 6. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

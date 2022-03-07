@@ -1,7 +1,7 @@
 ---
 title: Salgsreturer
 description: Dette emnet inneholder informasjon om prosessen for returordrer. Det inneholder informasjon om kundereturer og deres innvirkning på lagerantall for etterkalkulering og lagerbeholdning.
-author: Mirzaab
+author: omulvad
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 511652c50354a440d6a165d82cb9563ce1136040
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359059"
 ---
 # <a name="sales-returns"></a>Salgsreturer
 

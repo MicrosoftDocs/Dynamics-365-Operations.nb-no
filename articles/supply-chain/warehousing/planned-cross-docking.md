@@ -2,11 +2,9 @@
 title: Planlagt direkteoverføring
 description: Dette emnet beskriver avansert, planlagt direkteoverføring, hvor lagerantallet som kreves for en ordre, blir dirigert rett fra mottak eller oppretting til riktig utleveringsport eller oppstillingsområde. All gjenværende beholdning fra den inngående kilden dirigeres til den riktige lagringslokasjonen via den vanlige plasseringsprosessen.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970312"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573039"
 ---
 # <a name="planned-cross-docking"></a>Planlagt direkteoverføring
 
@@ -30,19 +28,21 @@ Dette emnet beskriver avansert, planlagt direkteoverføring. Planlagt direkteove
 
 Direkteoverføring la arbeiderne hoppe over den inngående plasseringen og utgående plukking av lageret som allerede er merket for en utgående ordre. Derfor reduseres antall ganger beholdningen berøres, der det er mulig. Fordi det i tillegg er mindre samhandling med systemet, økes tids- og plassbesparelsene på lageret.
 
-Før direkteoverføring kan kjøres, må brukeren konfigurere en ny direkteoverføringsmal der forsyningskilden og andre sett med krav for direkteoverføring er angitt. Når den utgående ordren opprettes, må linjen merkes mot en inngående ordre som inneholder den samme varen.
+Før du kan kjøre direkteoverføring, må du konfigurere en ny direkteoverføringsmal der forsyningskilden og andre sett med krav for direkteoverføring er angitt. Når den utgående ordren opprettes, må linjen merkes mot en inngående ordre som inneholder den samme varen. Du kan velge direktivkodefeltet i malen for direkteoverføring, på samme måte som du oppretter etterfylling og bestillinger.
 
 På tidspunktet for mottak av inngående ordre, identifiserer direkteoverføringsoppsettet automatisk behovet for direkteoverføring og oppretter bevegelsesarbeidet for det nødvendige antallet, basert på oppsettet til lokasjonsdirektivet.
 
 > [!NOTE]
-> Lagertransaksjoner avregistreres **ikke** når direkteoverføringsarbeid blir avbrutt, selv om innstillingen for denne funksjonen er aktivert i lagestyringsparametere.
+> Lagertransaksjoner avregistreres *ikke* når direkteoverføringsarbeid blir avbrutt, selv om innstillingen for denne funksjonen er aktivert i lagestyringsparametere.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Aktivere funksjonen for planlagt direkteoverføring
+## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivere funksjonene for planlagt direkteoverføring
 
-Før du kan bruke avansert, planlagt direkteoverføring, må funksjonen aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funksjoner i følgende rekkefølge:
 
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Planlagt direkteoverføring*
+1. *Planlagt direkteoverføring*
+1. *Kryssoverføringsmaler med lokasjonsdirektiver*
+    > [!NOTE]
+    > Ved hjelp av denne funksjonen kan **Direktivkode**-feltet angis i malen for direkteoverføring, på samme måte som du oppretter etterfyllingsmaler. Hvis du aktiverer denne funksjonen, kan du legge til en direktivkode på arbeidsmallinjene for direkteoverføring for den endelige *Plasser*-linjen. Dette sikrer at den endelige plasseringslokasjonen kan bestemmes under oppretting av arbeidsprosesser før du vurderer arbeidsmaler.
 
 ## <a name="setup"></a>Installasjon
 
@@ -90,6 +90,10 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 
         Dette alternativet angir om forsyningen skal valideres på nytt under mottak. Hvis dette alternativet er satt til *Ja*, kontrolleres både vinduet maksimal tid og området for utløpsdager.
 
+    - **Direktivkode:** La dette feltet stå tomt
+
+        Dette alternativet aktiveres av funksjonen *Kryssoverføringsmaler med lokasjonsdirektiver*. Systemet bruker lokasjonsdirektiver til å bidra til å finne den beste lokasjonen å flytte lageret for direkteoverføring til. Du kan definere alternativet ved å tilordne en direktivkode til hver relevante direkteoverføringsmal. Hvis en direktivkode er angitt, søker systemet etter lokasjonsdirektiver per direktivkode når arbeid må genereres. På denne måten kan du begrense lokasjonsdirektiver som brukes for en bestemt direkteoverføringsmal.
+
     - **Validerer tidsvindu:** *Ja*
 
         Dette alternativet angir om maksimalt tidsvindu skal evalueres når en forsyningskilde velges. Hvis dette alternativet er satt til *Ja*, blir feltene som er relatert til maksimale og minimale tidsvinduer, tilgjengelige.
@@ -112,6 +116,9 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 
     - **Sekvensnummer:** *1*
     - **Forsyningskilde:** *Bestilling*
+
+> [!NOTE]
+> Du kan definere en spørring til å kontrollere når en bestemt direkteoverføringsmal brukes. Spørringen for maler for direkteoverføring har bare *InventTable*-tabellen (varer) og den internkoblede *WHSInventTable-tabellen* (WHS-varer). Hvis du vil legge til andre tabeller i spørringen, kan du koble dem sammen ved bare å bruke *eksisterende koblinger* eller *ikke-eksisterende koblinger*. Når du filtrerer på de sammenføyde tabellene, blir det hentet en post fra hovedtabellen for hver samsvarende post i den sammenføyde tabellen. Hvis koblingstypen er *kobling finnes*, avsluttes søket etter at det første samsvaret er funnet. Hvis du for eksempel deltar i salgsordrelinjetabellen til varetabellen, validerer og returnerer systemet varer der minst én salgsordrelinje har den definerte betingelsen. I utgangspunktet hentes dataene fra den overordnede tabellen (varer), ikke fra den underordnede tabellen (salgsordrelinje). Derfor kan du ikke filtrere etter kildedokumenter, for eksempel salgsordrelinjer eller kunder, med en gang.
 
 ### <a name="create-a-work-class"></a>Opprette en arbeidsklasse
 
@@ -147,6 +154,9 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Arbeidsklasse-ID:** *CrossDock*
 
 1. Velg **Lagre**, og Bekreft at det er merket av for **Gyldig** for *51 Direkteoverføring*-malen.
+1. Valgfritt: Velg **Rediger spørring** hvis du vil angi kriterier som skal bestemme når og hvor arbeidsmalen skal brukes.
+
+    Du kan definere en spørring til å kontrollere når en bestemt arbeidsmal brukes. Du kan for eksempel angi at en mal bare kan brukes for arbeid på et bestemt sted. Hvis du vil at arbeidsmalen for direkteoverføring skal brukes på en bestemt lokasjon, må du filtrere på **Start lokasjon**-feltet, ikke **Lokasjon**-feltet, fordi arbeidsoppretting for de innkommende prosessene (innkjøp, direkteoverføring og etterfylling) starter fra plasseringslinjen. Når arbeid opprettes, setter lokasjonsdirektivet **Lokasjon**-feltet til plasseringslokasjonen. Plukklokasjonen lagres imidlertid i **Startlokasjon**-feltet.
 
 > [!NOTE]
 > Arbeidsklasse-ID-en for *Plukk*- og *Plasser*-arbeidstypene må være like.
@@ -314,4 +324,7 @@ For øyeblikket har begge arbeids-ID-ene samme målnummerskilt. Hvis du vil full
 
 Illustrasjonen nedenfor viser hvordan det fullførte direkteoverføringsarbeidet kan vises i Microsoft Dynamics 365 Supply Chain Management.
 
-![Direkteoverføringsarbeid fullført](media/PlannedCrossDockingWork.png "Direkteoverføringsarbeid fullført")
+![Direkteoverføringsarbeid fullført.](media/PlannedCrossDockingWork.png "Direkteoverføringsarbeid fullført")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

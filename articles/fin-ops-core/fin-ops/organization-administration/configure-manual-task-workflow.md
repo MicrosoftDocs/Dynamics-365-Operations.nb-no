@@ -2,11 +2,9 @@
 title: Konfigurere manuelle oppgaver i en arbeidsflyt
 description: Dette emnet forklarer hvordan du konfigurerer egenskapene for en manuell oppgave.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f61e0f7ee16519767192fb379f20c1ed20b69caa
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 726abcf20789fb3a7a9a3adbebf17249042910d1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798811"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066474"
 ---
 # <a name="configure-manual-tasks-in-a-workflow"></a>Konfigurere manuelle oppgaver i en arbeidsflyt
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet forklarer hvordan du konfigurerer egenskapene for en manuell oppgave.
 
@@ -381,3 +382,6 @@ Når den manuelle oppgaven tilordnes en bruker, må brukeren utføre en handling
 5. Merk av for **Deleger** hvis brukeren skal kunne tilordne oppgaven til andre brukere.
 6. Merk av for **Tilordne på nytt** hvis brukeren skal kunne tilordne oppgaven på nytt til andre brukere i arbeidselementkøen.
 7. Merk av for **Frigi** hvis brukeren skal kunne tilordne oppgaven på nytt til arbeidselementkøen. En annen bruker kan deretter fullføre oppgaven.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

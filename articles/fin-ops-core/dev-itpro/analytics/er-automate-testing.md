@@ -2,11 +2,9 @@
 title: Automatisere testing med elektronisk rapportering
 description: Dette emnet beskriver hvordan du kan bruke grunnlinjefunksjonen for elektronisk rapportering (ER) til å automatisere testing av en funksjonalitet.
 author: NickSelin
-manager: AnnBe
 ms.date: 07/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0d029773d9aa59b27f80d2f670984a352e163122
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681454"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743877"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisere testing med elektronisk rapportering
 
@@ -380,3 +378,6 @@ Som du har sett, kan derfor virkemåten til alle ER-format evalueres automatisk 
 - [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md)
 - [ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet](tasks/er-upgrade-format.md)
 - [ER Importere en konfigurasjon fra Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

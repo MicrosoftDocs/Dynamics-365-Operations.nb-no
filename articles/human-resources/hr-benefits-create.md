@@ -2,28 +2,27 @@
 title: Opprett en ny fordel
 description: Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: f9618e62e33655bfc1a0653cb767abe0094d1e79
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6296a7b3bfd802230ccf2fc8166c46be9e5227d93ae8dac77f75b09b15507e26
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764938"
 ---
 # <a name="create-a-new-benefit"></a>Opprett en ny fordel
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.
 
@@ -53,3 +52,6 @@ Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når 
 6. Angi dato og klokkeslett i Gyldig-feltet.
 7. Klikk Opprett fordel.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

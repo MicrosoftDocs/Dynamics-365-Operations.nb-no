@@ -1,34 +1,31 @@
 ---
 title: Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø
-description: Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i et Microsoft Dynamics 365 Commerce-evalueringsmiljø etter at det er klargjort.
+description: Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at det er klargjort.
 author: rubendel
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 219504da62fd4637ed01f9acbab32f873cef81b0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414541"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795961"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i et Microsoft Dynamics 365 Commerce-evalueringsmiljø etter at miljøet er klargjort.
+Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at miljøet er klargjort.
 
 ## <a name="prerequisite"></a>Forutsetning
 
@@ -164,3 +161,6 @@ For alle generelle problemer bør du alltid se hendelsesloggene for maskinvarest
 [Lagre betalingsmåter på nett med Adyen-koblingen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Oversikt over betalinger for omnikanal](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

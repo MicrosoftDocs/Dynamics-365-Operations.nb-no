@@ -1,12 +1,10 @@
 ---
 title: Feilanalyse av aktivum
 description: Dette emnet beskriver feilanalyse for aktiva i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectFaultCalculate
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 880ed35a9780185836218a5c2a7addb2a47eabd737d6bec99794ecb7a0959791
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022387"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779284"
 ---
 # <a name="asset-fault-analysis"></a>Feilanalyse av aktivum
 
@@ -62,7 +60,7 @@ I skjermbildet nedenfor er det bare merket av for **Symptom**-knappen.
 - Feilregistreringer er gjort på tre feilsymptomer: "Luftlekkasje", "Sikring er gått" og "Fastkjørt utstyr".  
 - I kolonnen **Sannsynlighets-%** utgjør alle prosentdeler samlet 100 %. Sannsynlighet er basert på alle **Symptom**-registreringer i denne feilanalysen.
 
-![Figur 1](media/06-controlling-and-reporting.png)
+![Figur 1.](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Gruppere etter symptomer og tidsperiode
 
@@ -71,7 +69,7 @@ I skjermbildet nedenfor er **År** og **Måned** lagt til for å vise hvordan du
 - Feilsymptomene vises nå som registreringer per år/måned.  
 - Hvis du legger til alle prosentdeler for hver måned i kolonnen **Sannsynlighets-%**, blir det 100 % til sammen. Sannsynlighet er basert på alle **Symptom**-registreringene i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på et feilsymptom som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for dette feilsymptomet på.
 
-![Figur 2](media/07-controlling-and-reporting.png)
+![Figur 2.](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Gruppere etter flere symptomer og aktiva
 
@@ -86,7 +84,7 @@ I skjermbildet nedenfor ble **Aktiva** og **Aktivatype** lagt til for å gi mer 
 - Feilsymptomene er nå delt opp i kombinasjoner av **Aktiva** / **Aktivatype** / **Symptom**.  
 - Hvis du i kolonnen **Sannsynlighets-%** legger til alle prosentdeler for kombinasjonen av **Aktiva** / **Aktivatype** / **Symptom**, utgjør de 100 % til sammen. Sannsynlighet er basert på alle **Symptom**-registreringer i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på et feilsymptom som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for dette feilsymptomet på.
 
-![Figur 3](media/08-controlling-and-reporting.png)
+![Figur 3.](media/08-controlling-and-reporting.png)
 
 **Grupper etter to symptomer, aktiva og aktivatype**
 
@@ -94,7 +92,7 @@ I skjermbildet nedenfor ble **Område** lagt til i **Symptom**, **Aktiva** og **
 
 - Hvis du i kolonnen **Sannsynlighets-%** legger til alle prosentdeler for kombinasjonen av **Aktiva** / **Aktivatype** / **Symptom** for et aktivum, utgjør de 100 % til sammen. Sannsynlighet er basert på kombinasjonen av **Symptom** og **Område** i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på et feilområde som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for dette feilområdet på.  
 
-![Figur 4](media/09-controlling-and-reporting.png)
+![Figur 4.](media/09-controlling-and-reporting.png)
 
 **Grupper etter tre symptomer, aktiva og aktivatyper**
 
@@ -102,9 +100,12 @@ I skjermbildet nedenfor ble **Type** lagt til, og den mest detaljerte beregninge
  
 - Hvis du i kolonnen **Sannsynlighets-%** legger til alle prosentdeler for kombinasjonen av **Aktiva** / **Aktivatype** / **Symptom** for et aktivum, utgjør de 100 % til sammen. Sannsynlighet er basert på kombinasjonen av **Symptom**, **Område** og **Type** i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på en feiltype som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for denne feiltypen på.
 
-![Figur 5](media/10-controlling-and-reporting.png)
+![Figur 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]
 >Hvis du vil ha en oversikt over alle feilregistreringer som er opprettet på arbeidsordrer og meldinger, klikker du **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Aktivafeil**. På siden **Aktivafeil** velger du en registrering av aktivafeil og utvider ruten **Beslektet informasjon** for å se informasjon om den beslektede arbeidsordren eller meldingen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,11 @@
 title: Bruke arbeidsflyter for godkjenning av leie
 description: Dette emnet forklarer hvordan du bruker arbeidsflyter til å godkjenne leie av aktiva, og hvordan du sporer status og historikk for arbeidsflyter.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: WorkflowTableListPageRnr
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 33faf7aa6bc9e5df4b8b0f004692b2c1803c6994264c7b9a8e3eb404387f6800
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f9fc8e337206111b0f2ac1cca87131abe7f283c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726092"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827536"
 ---
 # <a name="use-lease-approval-workflows"></a>Bruke arbeidsflyter for godkjenning av leie
 

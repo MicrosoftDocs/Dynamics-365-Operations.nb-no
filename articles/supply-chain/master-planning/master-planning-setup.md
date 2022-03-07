@@ -1,14 +1,17 @@
 ---
 title: Definere hovedplanlegging
 description: Dette emnet beskriver diverse viktige strategier og parametere som brukes til å definere hovedplanlegging.
-author: ChristianRytt
+author: t-benebo
+manager: tfehr
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580726"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434222"
 ---
 # <a name="set-up-master-planning"></a>Definere hovedplanlegging
 
@@ -106,11 +109,11 @@ I hurtigfanen **Generelt** på **Hovedplaner**-siden (**Hovedplanlegging \> Opps
 
 ### <a name="operations-scheduling"></a>Grovplanlegging
 
-Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid. Grovplanlegging deler ikke operasjonene for produksjonsruten inn i jobber. Hvis du vil ha mer informasjon om grovplanlegging, kan du se [Grovplanlegging](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid. Grovplanlegging deler ikke operasjonene for produksjonsruten inn i jobber. Hvis du vil ha mer informasjon om grovplanlegging, kan du se [Grovplanlegging](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Finplanlegging
 
-Finplanlegging er en mer detaljert planleggingsmetode der hver operasjon deles inn i individuelle oppgaver eller jobber. Finplanlegging omfatter informasjon om kapasitet. Den brukes vanligvis til å planlegge enkeltjobber på shop floor i en umiddelbar eller kortsiktig tidsramme. Hvis du vil ha mer informasjon om finplanlegging, kan du se [Finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Finplanlegging er en mer detaljert planleggingsmetode der hver operasjon deles inn i individuelle oppgaver eller jobber. Finplanlegging omfatter informasjon om kapasitet. Den brukes vanligvis til å planlegge enkeltjobber på shop floor i en umiddelbar eller kortsiktig tidsramme. Hvis du vil ha mer informasjon om finplanlegging, kan du se [Finplanlegging](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Horisonter i dager
 
@@ -158,7 +161,7 @@ Handlingsmeldinger foreslår endringer som kan gjøres i den eksisterende forsyn
 
 Når du setter alternativet **Handlingsmelding** til **Ja**, kan du overstyre handlingsmeldingshorisonten som defineres for varen under hovedplanlegging. I dette tilfellet angir du antall dager som hovedplanleggingen skal generere handlingsmeldinger for krav. Handlingsmeldingshorisonten beregnes fremover fra og med gjeldende dato.
 
-Hvis du vil ha mer informasjon om handlingsmeldinger, kan du se [Handlingsmeldinger](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Hvis du vil ha mer informasjon om handlingsmeldinger, kan du se [Handlingsmeldinger](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Beregningen av handlingsmeldinger forårsaker en lengre kjøretid for hovedplanlegging. Hvis handlingsmeldinger ikke analyseres og brukes regelmessig (daglig, ukentlig og så videre), bør du vurdere å deaktivere beregningen under hovedplanleggingskjøringen. Hvis du vil deaktivere beregningen, kan du sette **Handlingsmelding**-horisonten til **0** (null) på **Hovedplaner**-siden for hovedplanen du kjører. Kontroller også at innstillingen **Handlingsmelding** er deaktivert for alle dekningsgruppene.
@@ -203,7 +206,7 @@ Positive dager angir hvor langt inn i fremtiden hovedplanleggingen vurderer gjel
 
 De positive dagene påvirker også handlingsmeldingene. Systemet kan for eksempel anbefale at du øker et bestillingsforslag, slik at det omfatter et behov som er innenfor antall positive dager i fremtiden. Hvis de positive dagene settes til **100**, og hvis det er behov for en vare om 30 dager fra gjeldende dato, oppretter systemet en planlagt ordre for å oppfylle dette behovet. Hvis det er behov for den samme varen om 90 dager fra gjeldende dato, anbefaler systemet at du øker antallet for ordren om 30 dager fra den gjeldende datoen, slik at ordren også dekker behovet om 90 dager. Hvis det imidlertid er behov for varen om 150 dager fra gjeldende dato, anbefaler ikke systemet at du øker antallet i ordren som allerede var planlagt. Det blir i stedet opprettet en ny planlagt ordre.
 
-Som regel settes positive dager til et tall som er mellom den lengste leveringstiden for varene og dekningshorisonten. Det anbefales at du tilordner varer som fremskaffes eller produseres jevnlig, til en dekningsgruppe der de positive dagene er lik varens leveringstid.
+Som regel settes positive dager til et tall som er mellom den lengste leveringstiden for varene og dekningshorisonten. Vi anbefaler at du tilordner varer som fremskaffes eller produseres jevnlig, til en dekningsgruppe der de positive dagene er lik varens leveringstid.
 
 ### <a name="negative-days"></a>Negative dager
 
@@ -213,7 +216,7 @@ La oss si at du har en salgsordre for en vare om 15 dager fra gjeldende dato. Du
 
 De negative dagene påvirker også ytelsen til hovedplanleggingen. Hvis de negative dagene settes til et høyt tall, genereres det mange handlingsmeldinger.
 
-Det anbefales at du setter negative dager til et tall som er mindre enn leveringstiden for varen.
+Vi anbefaler at du setter negative dager til et tall som er mindre enn leveringstiden for varen.
 
 ### <a name="dynamic-negative-days"></a>Dynamiske negative dager
 
@@ -223,7 +226,4 @@ Leveringstid + Negative dager + Gjeldende dato - Behovsdato
 
 Systemet bruker bare de planlagte forsyningsordrene som er innenfor denne horisonten, og det oppretter en ny planlagt ordre utenfor den. Fordelen med dynamiske negative dager er at de tar med den individuelle produktleveringstiden, for å bruke eksisterende ordrer på nytt og unngå å opprette nye planlagte ordrer som ender opp med en senere dag på grunn av forsinkelser forårsaket av leveringstiden. 
 
-Hvis du vil ha mer informasjon, kan du se [Negative dager og dynamiske negative dager](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Hvis du vil ha mer informasjon, kan du se [Negative dager og dynamiske negative dager](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).

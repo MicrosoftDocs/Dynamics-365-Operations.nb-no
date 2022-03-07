@@ -2,27 +2,23 @@
 title: Oversikt over standard kategorimålside og søkeresultatside
 description: Dette emnet gir en oversik over standard kategorimålside og søkeresultatside i Dynamics 365 Commerce.
 author: ashishmsft
-manager: annbe
 ms.date: 06/30/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6f61ee8ec212185e195e2cf1a9d6d25c31e4f672
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414610"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982440"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversikt over standard kategorimålside og søkeresultatside
 
@@ -34,7 +30,7 @@ Dette emnet gir en oversik over standard kategorimålside og søkeresultatside i
 
 Standard kategorimålside er siden som brukere av webområder vanligvis kommer til når de velger en kategori i navigasjonshierarkiet. Kategorisiden lar deg bla gjennom, og du kan også sortere og presisere de kategoriserte produktene.
 
-![Standard kategorimålside](./media/SimpleCategoryLandingDressCategory.png)
+![Standard kategorimålside.](./media/SimpleCategoryLandingDressCategory.png)
 
 Øverst på siden er det en topptekst som viser alle produktkategoriene og andre sider som varehandelslederen har kategorisert. Konfigurasjon utføres som en del av konfigurasjonen av kanalnavigeringshierarkiet. På bunnen av siden er det en bunntekst som inneholder hurtigkoblinger til ulike emner som en kunde kan være interessert i.
 
@@ -58,7 +54,7 @@ Følgende komponenter er grunnleggende for en kategori:
 
 Hvis du vil at en kategorimålside skal ha en mer skreddersydd opplevelse for en bestemt kategori, kan du "supplere" kategorimålsiden for denne kategorien. Du kan for eksempel legge til en markedsføringsvideo og enkelte kategoribeskrivelser for å få en kundes oppmerksomhet. Hvis du vil ha mer informasjon, se [Supplere en kategorimålside](enrich-category-page.md).
 
-![Supplere kategorimålside](./media/CategoryLandingPages.png)
+![Supplere kategorimålside.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Automatisk foreslå og søke på resultatsider
 
@@ -72,11 +68,11 @@ Her er noen av forslagstypene som kan vises:
 - **Produkter** gir deg direkte koblinger til siden for produktdetaljer.
 - **Søkeforslag for kategoriområde** viser ulike kategorier og lar brukere søke etter nøkkelordet i en bestemt kategori.
 
-![Dyptgående automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
+![Dyptgående automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
 
 Når brukere velger et av nøkkelordene eller kategorisøkforslag for område, eller når det ikke er forslag til søkeordet de legger inn, omdirigeres de til en søkeresultatside. Brukerne kan deretter bla gjennom, sortere og begrense listen over søkeresultater for å finne ønsket element.
 
-![Søkemålside](./media/SearchLanding.png)
+![Søkemålside.](./media/SearchLanding.png)
 
 Følgende komponenter er grunnleggende for en søkeresultatside:
 
@@ -97,7 +93,7 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
 
 >[!NOTE]
 >Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det under **Handelsparametere > Konfigurasjonsparametere** finnes en oppføring for ProductSearch. UseAzureSearch satt til true. 
-![Konfigurasjonsparametere for skydrevet søk](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurasjonsparametere for skydrevet søk.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -111,3 +107,6 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
 
 [Oversikt over kontobehandlingssider](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

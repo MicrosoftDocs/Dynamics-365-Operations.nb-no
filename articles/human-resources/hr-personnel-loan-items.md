@@ -1,35 +1,38 @@
 ---
 title: Administrere varer som er lånt ut til arbeidere
 description: Utlånsvarer er poster som hjelper ledere med å spore fysiske varer som firmaet låner ut til arbeidere.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5915df388da7ce8b90cdcb0e859268c00003110c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9093944a2e225565fc8fdba8f9a487303369c251
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419881"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067282"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Administrere varer som er lånt ut til arbeidere
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Utlånsvarer er poster som hjelper ledere med å spore fysiske varer som firmaet låner ut til arbeidere. 
 
-Punktene nedenfor viser eksempler på elementer som et firma kan låne ut til ansatte:
+Her er noen eksempler på varer som et firma kan låne ut til ansatte:
+
 -   Mobiltelefoner
 -   Biler
 -   Datamaskinutstyr
@@ -38,20 +41,21 @@ Hver fysiske vare må ha en tilsvarende utlånsvare. Hver utlånsvarepost må be
 
 Når du låner ut en vare, må du registrere datoen da varen ble utlånt, og den planlagte returdatoen. Når varen returneres, må du registrere den faktiske returdatoen.
 
-Ansatte kan vise postene for varene som er lånt ut til dem, ved hjelp av området for ansattselvbetjening. De kan også redigere eksisterende poster eller angi nye elementer for lån, hvis de har mottatt flere fysiske elementer.  Arbeidsflyten kan defineres til å Ruteendringer for nye eller eksisterende utlånsvarer gjennom en godkjenningsprosess. 
+Ansatte kan bruke arbeidsområdet **Ansattselvbetjening** til å vise postene for varene som er lånt ut til dem. De kan også redigere eksisterende poster eller angi nye elementer for lån, hvis de har mottatt flere fysiske elementer. En arbeidsflyt kan defineres til å rute endringer for nye eller eksisterende utlånsvarer gjennom en godkjenningsprosess. 
 
 Ledere kan vise utlånte varer til sine direkte underordnede. De kan også få tilgang til å legge til nye utlånsvarer på vegne av ansatte.
 
- <a name="account-for-lost-or-misplaced-loan-items"></a> Konto for utlånsvarer som er mistet eller kommet bort
------------------------------------------
+##  <a name="account-for-lost-or-misplaced-loan-items"></a> Konto for utlånsvarer som er mistet eller kommet bort
 
 Hvis en vare skades eller kommer bort, må du registrere en fiktiv returpost. Deretter kan du enten slette varen eller beholde den i oversikten, og endre beskrivelsen for å vise at varen ikke er tilgjengelig.
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Personale](index.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

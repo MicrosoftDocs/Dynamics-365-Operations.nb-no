@@ -1,37 +1,37 @@
 ---
-title: Oversikt over oppgradering av avskrivningstablå
-description: Dette emnet beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer.
-author: moaamer
+title: Oversikt over oppgradering for avskrivningstablå
+description: I tidligere versjoner var det to vurderingskonsepter for anleggsmidler, verdimodeller og avskrivningstablåer.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
-ms.custom:
-- "221624"
-- intro-internal
+ms.custom: 221624
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eaa47b47a93deda24a6c76572881d1e5bba29c52
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ffaeafa987c85aee17404fbfcf8c69c9699e2f3b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985089"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994996"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering av avskrivningstablå
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. Verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Med tablåfunksjonalitet kan du bruke ett enkelt sett med sider, forespørsler og rapporter for alle organisasjonens anleggsmiddelprosesser. Dette emnet inneholder noe du bør vurdere før du oppgraderer. 
+I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen. 
 
-Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes til et tablå bok med alternativet Poster til økonomimodul satt til Ingen. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til Ingen. Avskrivningstablåtransaksjoner vil bli flyttet til anleggsmiddeltransaksjoner.
+Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes til et tablå bok med alternativet **Poster til økonomimodul** satt til **Ingen**. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til **Ingen**. Avskrivningstablåtransaksjoner vil bli flyttet til anleggsmiddeltransaksjoner. 
 
-Før du kjører dataoppgraderingen, må du forstå de to alternativene som er tilgjengelige for oppgradering av journallinjer for avskrivningstablå til transaksjonsbilag, og nummerserien som brukes for bilagsserien.
+Før du kjører dataoppgraderingen, må du forstå de to alternativene som er tilgjengelige for oppgradering av journallinjer for avskrivningstablå til transaksjonsbilag, og nummerserien som brukes for bilagsserien. 
 
 Alternativ 1: **Systemdefinert nummerserie** – Dette er standardalternativet for å optimalisere ytelsen til dataoppgraderingen. Oppgraderingen kan ikke bruke rammeverket for nummerserie, men vil i stedet tildele bilag med en settbasert tilnærmingsmåte. Etter oppgraderingen vil den nye nummerserien opprettes med **Neste nummerserie** basert på riktig måte på de oppgraderte transaksjonene Nummerserien brukes som standard i formatet FADBUpgr\#\#\#\#\#\#\#\#\#. Det finnes noen få tilgjengelige parametere for å justere formatet når du bruker denne fremgangsmåten:
 
@@ -42,19 +42,19 @@ Alternativ 1: **Systemdefinert nummerserie** – Dette er standardalternativet f
     -   Konstantnavn: **NumberSequenceDefaultParameterPrefix**
     -   Standardverdi: "FADBUpgr"
 -   **Alfanumerisk lengde** – Lengden på det alfanumeriske segmentet i nummerserien.
-    -   Konstantnavn: **NumberSequenceDefaultParameterAlpanumericLength**
+    -   Konstantnavn: **NumberSequenceDefaultParameterAlpanumericLength **
     -   Standardverdi: 9
 -   **Startnummer** – Det første tallet som skal brukes i nummerserien.
-    -   Konstantnavn: **NumberSequenceDefaultParameterStartNumber**
+    -   Konstantnavn: **NumberSequenceDefaultParameterStartNumber **
     -   Standardverdi: 1
 
 Alternativ 2: **Eksisterende brukerdefinert nummerserie** - Dette alternativet lar deg definere nummerserien som skal brukes for oppgraderingen. Vurder å bruke dette alternativet hvis du har behov for avansert nummerseriekonfigurasjon. Hvis du vil bruke en nummerserie, må du endre oppgraderingsklassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med følgende informasjon:
 
 -   **Nummerseriekode** – Koden til nummerserien.
-    -   Konstantnavn: **NumberSequenceExistingCode**
+    -   Konstantnavn: **NumberSequenceExistingCode **
     -   Standardverdi: Ingen standard. Dette må oppdateres til nummerseriekoden.
 -   **Felles nummerserie** – En boolsk verdi for å identifisere omfanget for nummerserien. Bruk "true" for nummerserier som deles på tvers av alle firmaer, og "false" for et firmaomfang. Når du bruker "false", må nummerserien med det angitte navnet finnes i hvert firma som inneholder avskrivningstablåtransaksjoner. Det finnes delte nummerserier i hver partisjon som inneholder avskrivningstablåtransaksjoner.
-    -   Konstantnavn: **NumberSequenceExistingIsShared**
+    -   Konstantnavn: **NumberSequenceExistingIsShared **
     -   Standardverdi: true
 
 Parameterne er plassert i begynnelsen av klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 
@@ -82,6 +82,3 @@ For begge fremgangsmåtene vil skriptet for dataoppgradering også bruke nummers
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

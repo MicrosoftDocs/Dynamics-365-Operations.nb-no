@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 187363db3030ee0741f0c7e7746295b88320162c156120112332bb78593bb673
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744660"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>Fysisk restantall i enheten kan ikke være null
 
@@ -63,10 +63,10 @@ Bruke følgende prosedyre til å gå gjennom belastningslinjene, og gjør juster
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
 1. Velg lasten som følgeseddelen ikke kan genereres for.
-1. I handlingsruten, i fanen **Send og motta** i gruppen **Omvendt**, velger du **Reverser forsendelsesbekreftelse**.
-1. I fanen **Lastlinjer** velger du lastlinjen for varen som overskrider overleveringen.
+1. I handlingsruten, i fanen **Send og motta** i gruppen  **Omvendt**, velger du  **Reverser forsendelsesbekreftelse**.
+1. I fanen  **Lastlinjer** velger du lastlinjen for varen som overskrider overleveringen.
 1. Velg **Reduser plukket antall** for å justere det plukkede antallet.
-1. Velg **Ordre** i fanen **Linjedetaljer**.
+1. Velg  **Ordre** i kategorien **Linjedetaljer**.
 1. Angi **Antall**-feltet til det plukkede antallet (det vil si til verdien til feltet **Antall for arbeid opprettet**), slik at generering av følgeseddel kan fortsette.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Gjennomgå lastlinjene, og juster for å sikre at enheten og mengden justeres med desimalpresisjonen til enheten

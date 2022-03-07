@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 7fd1fc4756e74a5d07ffae533b6b9837b960f17a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798207"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693756"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Dataagnostisk testing ved hjelp av Regression Suite Automation Tool
 
@@ -44,7 +44,7 @@ Selv om den funksjonelle valideringen av et ERP-program ikke kan være fullstend
     - o Angi de unike ID-ene, for eksempel fakturanumre, i nummerserien eller ved å bruke Microsoft Excel-funksjoner som = TEXT(NOW(),"ååååmmddttmm"). Denne funksjonen vil gi et unikt nummer hvert minutt, som gjør at du kan spore når handlingen skjedde. Dette kan for eksempel brukes for variabler som produktkvitteringsnumre og leverandørfakturanumre. Disse testene fortsetter å arbeide med samme database på nytt uten å kreve noen gjenopprettinger.
     - Du bør alltid sette **Redigeringsmodus** for miljøet til **Lese** eller **Redigere** som første testtilfelle, fordi standardalternativet **Automatisk**. Alternativet **Automatisk** bruker alltid den forrige innstillingen og kan føre til upålitelige tester. 
  
-    [![Siden Alternativer, fanen Ytelse](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Siden Alternativer, kategorien Ytelse](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Valider bare etter at du har filtrert etter en bestemt transaksjon i stedet for å bruke generell validering. For antall poster filtrerer du for eksempel etter transaksjonsnummeret eller transaksjonsdatoen, slik at valideringen utelater alle andre transaksjoner. 
     - Hvis du kontrollerer en kundesaldo eller budsjettkontroll, må du først lagre verdien og deretter legge til transaksjonsverdien for å validere det forventede resultatet i stedet for å validere en fast forventet verdi. 

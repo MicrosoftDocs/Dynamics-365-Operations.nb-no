@@ -2,34 +2,25 @@
 title: Migrering av valutadatatype for dobbelt skriving
 description: Dette emnet beskriver hvordan du endrer antallet desimaler som dobbelt skriving støtter for valuta.
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744381"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061842"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutadatatype for dobbelt skriving
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Du kan øke antallet desimaler som støttes for valutaverdier, til maksimalt 10. Standardgrensen er fire desimalplasser. Hvis du øker antallet desimaler, bidrar du til å hindre tap av data når du bruker toveisskriving for å synkronisere data. Økningen i antall desimalplasser er en endring som velges. Hvis du vil implementere den, må du be om hjelp fra Microsoft.
 
@@ -38,7 +29,7 @@ Prosessen med å endre antall desimaler har to trinn:
 1. Be om migrering fra Microsoft.
 2. Endre antall desimaler i Dataverse.
 
-Finance and Operations-appen og Dataverse må støtte samme antall desimalplasser i valutaverdier. Ellers kan det oppstå tap av data når denne informasjonen synkroniseres mellom apper. Migreringsprosessen konfigurerer måten valuta og valutakursverdier lagres på, på nytt, men den endrer ikke data. Når migreringen er fullført, kan antall desimaler for valutakoder og prissetting økes, og dataene som brukere legger inn og viser, kan ha større desimalpresisjon.
+Økonomi- og driftsappen og Dataverse må støtte samme antall desimalplasser i valutaverdier. Ellers kan det oppstå tap av data når denne informasjonen synkroniseres mellom apper. Migreringsprosessen konfigurerer måten valuta og valutakursverdier lagres på, på nytt, men den endrer ikke data. Når migreringen er fullført, kan antall desimaler for valutakoder og prissetting økes, og dataene som brukere legger inn og viser, kan ha større desimalpresisjon.
 
 Migreringen er valgfri. Hvis du kan dra nytte av støtte for flere desimaler, anbefaler vi at du vurderer migreringen. Organisasjoner som ikke krever verdier som har mer enn fire desimalplasser, trenger ikke å migrere.
 
@@ -46,7 +37,7 @@ Migreringen er valgfri. Hvis du kan dra nytte av støtte for flere desimaler, an
 
 Lagring for eksisterende valutakolonner i Dataverse kan ikke støtte flere enn fire desimalplasser. I løpet av migreringsprosessen kopieres derfor valutaverdier til nye interne kolonner i databasen. Denne prosessen skjer kontinuerlig til alle data er migrert. Internt, på slutten av migreringen, erstatter de nye lagringstypene de gamle lagringstypene, men dataverdiene er uendret. Valutakolonnene kan da støtte opptil 10 desimalplasser. Under migreringsprosessen kan Dataverse fortsatt brukes uten avbrudd.
 
-Samtidig endres valutakursene, slik at de støtter opptil 12 desimalplasser i stedet for den gjeldende grensen på 10. Denne endringen er nødvendig, slik at antall desimaler er det samme i både Finance and Operations-appen og Dataverse.
+Samtidig endres valutakursene, slik at de støtter opptil 12 desimalplasser i stedet for den gjeldende grensen på 10. Denne endringen er obligatorisk, slik at antall desimaler er det samme i både økonomi- og driftsappen og Dataverse.
 
 Migreringen endrer ikke data. Når kolonnene for valuta og valutakurs er konvertert, kan administratorer konfigurere systemet til å bruke opptil 10 desimaler for valutakolonner ved å angi antall desimalplasser for hver transaksjonsvaluta og for prissetting.
 
@@ -84,14 +75,28 @@ Det er noen av begrensninger:
 
 Når migreringen er fullført, kan administratorer angi valutapresisjonen. Gå til **Innstillinger \> Administrasjon**, og velg **Systeminnstillinger**. I **Generelt**-fanen endrer du verdien for kolonnen **Sett valutapresisjonen som brukes for prissetting i hele systemet**, som vist i illustrasjonen nedenfor.
 
-![Systeminnstillinger for valuta](media/currency-system-settings.png)
+![Systeminnstillinger for valuta.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Forretningsstyring: Valutaer
 
 Hvis du krever at valutapresisjonen for en bestemt valuta er forskjellig fra valutapresisjonen som brukes til prissetting, kan du endre den. Gå til **Innstillinger \> Forretningsstyring**, velg **Valutaer**, og velg valutaen som skal endres. Deretter setter du **Valutapresisjon**-kolonnen til ønsket antall desimalplasser, som vist i følgende illustrasjon.
 
-![Valutainnstillinger for en bestemt nasjonal innstilling](media/specific-currency.png)
+![Valutainnstillinger for en bestemt nasjonal innstilling.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>tabeller: Valuta-kolonne
+### <a name="tables-currency-column"></a>Tabeller: Valuta-kolonne
 
 Antallet desimaler som kan konfigureres for bestemte valutakolonner, er begrenset til fire.
+
+### <a name="default-currency-decimal-precision"></a>Standard valutadesimalpresisjon
+Hvis du vil ha forventet virkemåte for standard valutadesimalpresisjon under overførings- og ikke-overføringsscenarioer, kan du se følgende tabell. 
+
+| Opprettingsdato  | Valutadesimalfelt    | Eksisterende organisasjon (Valuta-feltet ikke overført) | Eksisterende organisasjon (Valuta-feltet overført) | Ny organisasjonsopprettede poster build 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Valutafelt opprettet før build 9.2.21111.00146  |     |  |       |
+|    | Maks presisjon synlig i grensesnitt   | 4 sifre    | 10 sifre    | I/T    |
+| | Maks presisjon synlig i resultatgrensesnittet for database og DB-spørringer         | 4 sifre   | 10 sifre   | I/T    |
+| Valutafelt opprettet etter build 9.2.21111.00146 |    |  |     |   |
+|   | Maks desimalpresisjon synlig i grensesnitt     | 4 sifre   | 10 sifre   | 10 sifre     |
+|          | Maks desimalpresisjon synlig i resultatgrensesnittet for database og DB-spørringer | 10 sifre. Bare 4 er imidlertid signifikante med alle nuller utover de 4 desimaltallene. Dette gjør det mulig med en enklere og raskere overføring av organisasjon om nødvendig. | 10 sifre      | 10 sifre     |
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: Kopiere kunder ved hjelp av delte nummerserier
 description: Dette emnet forklarer hvordan du bruker delte nummerserier til å kopiere en kunde til en annen juridisk enhet og samtidig beholde samme kunde-ID.
-author: mikefalkner
-manager: aolson
+author: abruer
 ms.date: 08/31/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 91f7568ea8364f97de7e514fb207191ee00041a5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a93f0519b292c12ea31a8faf3bff051fc111216
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459602"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753495"
 ---
 # <a name="copy-customers-by-using-shared-number-sequences"></a>Kopiere kunder ved hjelp av delte nummerserier
 
@@ -31,7 +28,7 @@ Du kan bruke delte nummerserier til å tilordne kunde-IDer. Delte nummerserier l
 
 ## <a name="setup"></a>Oppsett
 
-Funksjonen er aktivert når du bruker en delt nummerserie til å tilordne kunde-ID-er. Du må bruke samme nummerserie i alle juridiske enheter som du vil kopiere en kunde til. Du kan endre kundenummerserien på siden **Kundeparametere** for hver juridiske enhet. Velg **Leverandører** \> **Parametere**, og velg deretter kategorien **Nummerserier**.
+Funksjonen er aktivert når du bruker en delt nummerserie til å tilordne kunde-ID-er. Du må bruke samme nummerserie i alle juridiske enheter som du vil kopiere en kunde til. Du kan endre kundenummerserien på siden **Kundeparametere** for hver juridiske enhet. Velg **Leverandører** \> **Parametere**, og velg deretter fanen **Nummerserier**.
 
 Du kan også definere kundenummerserier for hver kundegruppe. Disse nummerseriene må også være delt. Nummerrekkefølgen for en kundegruppe brukes først. Hvis ingen nummerserie er angitt for en kundegruppe, brukes nummerserien som er angitt på siden **Kundeparametere**.
 
@@ -45,9 +42,9 @@ Hvis du oppretter en ny kunde, kan du fortsette å fylle ut alle feltene på van
 
 Hvis du vil kopiere en kunde, går du til feltet **Navn** og angir ett eller flere tegn som representerer kunden som du leter etter. En dialogboks for søk viser en liste over parter som kan representere kunden du leter etter. Når du velger en av partene, vises tilleggsinformasjon til høyre i dialogboksen:
 
-- Kategorien **Generelt** viser partens telefonnummer og adresse.
-- Kategorien **Roller** viser rollene som den valgte parten kan ha, og den juridiske enheten der den har hver rolle.
-- Kategorien **ID for mva-registrering** viser ID-er for mva-registrering som er tilordnet til parten.
+- Fanen **Generelt** viser partens telefonnummer og adresse.
+- Fanen **Roller** viser rollene som den valgte parten kan ha, og den juridiske enheten der den har hver rolle.
+- Fanen **ID for mva-registrering** viser ID-er for mva-registrering som er tilordnet til parten.
 
 Du kan kopiere en part bare hvis den har en kunderollen og hvis den har denne rollen i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg denne fremgangsmåten når du finner en part som oppfyller disse kriteriene.
 
@@ -61,7 +58,10 @@ Når du kopierer en kunde, prøver systemet å lagre den nye kundeinformasjonen.
 
 ## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a>Kopiere en kunde ved hjelp av søkefunksjonen for mva-organisasjonsnummer
 
-Du kan også kopiere kunder ved hjelp av søkefunksjonen for mva-organisasjonsnummer i **Registrering**-gruppen i kategorien **Kunde** i handlingsruten på siden **Alle kunder**. Dialogboksen for **søk etter mva-organisasjonsnummer** som vises, viser mva-organisasjonsnumre, kunde-ID, kundenavn og den juridiske enheten der ID-en for mva-organisasjonsnummeret brukes. Du kan kopiere en kunde bare hvis den er i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg fremgangsmåten nedenfor når du har valgt en kunde som oppfyller dette kriteriet.
+Du kan også kopiere kunder ved hjelp av søkefunksjonen for mva-organisasjonsnummer i **Registrering**-gruppen i fanen **Kunde** i handlingsruten på siden **Alle kunder**. Dialogboksen for **søk etter mva-organisasjonsnummer** som vises, viser mva-organisasjonsnumre, kunde-ID, kundenavn og den juridiske enheten der ID-en for mva-organisasjonsnummeret brukes. Du kan kopiere en kunde bare hvis den er i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg fremgangsmåten nedenfor når du har valgt en kunde som oppfyller dette kriteriet.
 
 1. Alternativet **Kopier kunde** vises. Dette alternativet er satt til **Nei** som standard. Hvis du vil kopiere kunden til gjeldende juridisk enhet, setter du alternativet til **Ja**. 
 2. Velg **Velg**. Den nye kunden opprettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

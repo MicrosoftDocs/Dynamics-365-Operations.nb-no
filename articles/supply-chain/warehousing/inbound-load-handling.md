@@ -1,38 +1,38 @@
 ---
 title: Lagerhåndtering av innkommende laster for bestillinger
 description: Dette emnet beskriver lagerhåndteringsprosessen for innkommende laster for bestillinger.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778065"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235346"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
-[!include [banner](../includes/banner.md)]
-
 Dette emnet beskriver lagerhåndteringsprosessen for innkommende laster for bestillinger.
 
-For hver innkommende last bør systemet allerede inneholde en tilknyttet salgsordre, og kan også inneholde en relatert lastespesifikasjon og/eller transportplan. Hvis du vil ha mer informasjon om hvordan du oppretter og behandler innkommende laster, kan du se [Forretningsprosess: planlegging av transport for innkommende laster](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+For hver innkommende last bør systemet allerede inneholde en tilknyttet salgsordre, og kan også inneholde en relatert lastespesifikasjon og/eller transportplan. Hvis du vil ha mer informasjon om hvordan du oppretter og behandler innkommende laster, kan du se [Forretningsprosess: planlegging av transport for innkommende laster](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Oversikt: Hvordan innkommende laster opprettes, registreres og mottas
 
 Illustrasjonen nedenfor viser den vanlige flyten for håndtering av innkommende laster som har bestillingsantall når de kommer til lageret.
 
-![Prosessen for behandling av innkommende laster.](media/inbound-process.png "Prosessen for behandling av innkommende laster")
+![Prosessen for behandling av innkommende laster](media/inbound-process.png "Prosessen for behandling av innkommende laster")
 
 1. **Leverandøren bekrefter bestillingen.**
 
@@ -40,11 +40,11 @@ Illustrasjonen nedenfor viser den vanlige flyten for håndtering av innkommende 
 
 1. **En inngående lastepost opprettes for å planlegge ankomsten og innholdet.**
 
-    Den innkommende lasteposten representerer en leverandørforsendelse av én eller flere bestillinger. Lasten forventes å ankomme lageret som én fysisk transportenhet (for eksempel et vognlass). Den innkommende lasteposten brukes til planlegging, og logistikkkoordinatoren kan spore lastens fremdrift fra leverandøren. Den brukes også til å registrere ordrelinjeantall og behandle fremdriften via lageroperasjoner, for eksempel ankomst og plasseringsarbeid. Laster kan enten opprettes automatisk eller manuelt, og de kan være basert på enten en bestilling eller en avansert forsendelsesmerknad (ASN) fra leverandøren. Hvis du vil ha mer informasjon, kan du se [Opprette eller endre en innkommende last](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Den innkommende lasteposten representerer en leverandørforsendelse av én eller flere bestillinger. Lasten forventes å ankomme lageret som én fysisk transportenhet (for eksempel et vognlass). Den innkommende lasteposten brukes til planlegging, og logistikkkoordinatoren kan spore lastens fremdrift fra leverandøren. Den brukes også til å registrere ordrelinjeantall og behandle fremdriften via lageroperasjoner, for eksempel ankomst og plasseringsarbeid. Laster kan enten opprettes automatisk eller manuelt, og de kan være basert på enten en bestilling eller en avansert forsendelsesmerknad (ASN) fra leverandøren. Hvis du vil ha mer informasjon, kan du se [Opprette eller endre en innkommende last](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Leverandøren bekrefter lastfordeling.**
 
-    Når leverandøren fordeler lasten, bekrefter logistikk koordinatoren i det mottakende lageret lasteforsendelsen. Hvis mottaksfirmaet bruker modulen **Transportstyring**, utløser inngående forsendelsesbekreftelse andre lastebehandlingsprosesser som er knyttet til innkommende laster. Hvis du vil ha mer informasjon, se [Bekrefte en last for forsendelse](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Når leverandøren fordeler lasten, bekrefter logistikk koordinatoren i det mottakende lageret lasteforsendelsen. Hvis mottaksfirmaet bruker modulen **Transportstyring**, utløser inngående forsendelsesbekreftelse andre lastebehandlingsprosesser som er knyttet til innkommende laster. Hvis du vil ha mer informasjon, se [Bekrefte en last for forsendelse](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Lasten ankommer lageret, og arbeidere registrerer antall.**
 
@@ -66,7 +66,7 @@ Når en innkommende last først ankommer lageret, må lagermedarbeidere registre
 
 - **En meny for mobilenheter som er konfigurert til å støtte mottak av laster**
 
-    [Mobilappen Lagerstyring](../warehousing/install-configure-warehouse-management-app.md) for mobilenheter støtter følgende arbeidsopprettelsesprosesser:
+    [Lagerappen](install-configure-warehousing-app.md) for mobilenheter støtter følgende arbeidsopprettelsesprosesser:
 
     - Mottak av lastvare
     - Mottak og plassering av lastvare
@@ -129,7 +129,7 @@ Tabellen nedenfor forklarer hvilke alternativer som er tilgjengelige for feltet 
 | Verdi | beskrivelse |
 |---|---|
 | Tillat | Arbeidere kan registrere mottak av antall som overskrider det gjenstående uregistrerte antallet for en valgt last, men bare hvis det totale registrerte antallet ikke overskrider antallet på bestillingslinjen som er knyttet til lasten (etter justering for overleveringsprosenten). |
-| Blokker | <p>Arbeidere kan ikke registrere mottak av antall som overskrider det gjenstående uregistrerte antallet for en valgt last (etter justering for overleveringsprosenten). En arbeider som prøver å registrere mottakene, får en feil og kan ikke fortsette før vedkommende registrerer et antall som er lik eller mindre enn det gjenstående uregistrerte lastantallet.</p><p>Som standard kopieres verdien for overleveringsprosenten på en lastlinje fra den tilknyttede bestillingslinjen. Når feltet <b>Overmottak for last</b> er satt til <i>Blokker</i>, bruker systemet verdien for overleveringsprosent til å beregne det totale antallet som kan registreres for en lastlinje. Denne verdien kan imidlertid overskrives for individuelle laster etter behov. Denne virkemåten blir relevant ved mottaksflyter der noe av eller hele det overskytende antallet som representerer overleveringsprosenten på ordrelinjen, blir distribuert uproporsjonalt på tvers av flere laster. Her er et eksempelscenario:</p><ul><li>Det finnes flere laster for én bestillings linje.</li><li>Bestillingslinjen har en overleveringsprosent som er mer enn 0 (null).</li><li>Antall er allerede registrert mot en eller flere laster uten å ta hensyn til overleveringsprosenten.</li><li>Overleveringsantallet kommer i den siste lasten.</li></ul><p>I dette scenariet kan en mobilenhet brukes til å registrere det ekstra antallet for den siste lasten bare hvis lagersjefen øker overleveringsprosenten for den relevante lastlinjen fra standardverdien til en verdi som er stor nok, slik at hele overleveringen kan registreres med den endelige lasten.</p> |
+| Blokker | <p>Arbeidere kan ikke registrere mottak av antall som overskrider det gjenstående uregistrerte antallet for en valgt last (etter justering for overleveringsprosenten). En arbeider som prøver å registrere mottakene, får en feil og kan ikke fortsette før han eller hun registrerer et antall som er lik eller mindre enn det gjenstående uregistrerte lastantallet.</p><p>Som standard kopieres verdien for overleveringsprosenten på en lastlinje fra den tilknyttede bestillingslinjen. Når feltet <b>Overmottak for last</b> er satt til <i>Blokker</i>, bruker systemet verdien for overleveringsprosent til å beregne det totale antallet som kan registreres for en lastlinje. Denne verdien kan imidlertid overskrives for individuelle laster etter behov. Denne virkemåten blir relevant ved mottaksflyter der noe av eller hele det overskytende antallet som representerer overleveringsprosenten på ordrelinjen, blir distribuert uproporsjonalt på tvers av flere laster. Her er et eksempelscenario:</p><ul><li>Det finnes flere laster for én bestillings linje.</li><li>Bestillingslinjen har en overleveringsprosent som er mer enn 0 (null).</li><li>Antall er allerede registrert mot en eller flere laster uten å ta hensyn til overleveringsprosenten.</li><li>Overleveringsantallet kommer i den siste lasten.</li></ul><p>I dette scenariet kan en mobilenhet brukes til å registrere det ekstra antallet for den siste lasten bare hvis lagersjefen øker overleveringsprosenten for den relevante lastlinjen fra standardverdien til en verdi som er stor nok, slik at hele overleveringen kan registreres med den endelige lasten.</p> |
 | Blokker bare for lukkede laster | Arbeidere kan overskride lastlinjeantall for åpne laster, men ikke for laster som har statusen _Mottatt_. |
 
 > [!NOTE]
@@ -218,7 +218,7 @@ For produktkvitteringspostering av flere registrerte lastantall mot en last som 
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Postere registrerte antall fra Bestilling-siden
 
-For produktkvitteringspostering av registrerte antall fra **Bestilling**-siden må brukeren fullføre følgende oppgaver før vedkommende velger handlingen **Produktkvittering**:
+For produktkvitteringspostering av registrerte antall fra **Bestilling**-siden må brukeren fullføre følgende oppgaver før han eller hun velger handlingen **Produktkvittering**:
 
 - Angi **Antall**-feltet i **Parametere**-delen i fanen **Innstillinger** til _Registrert antall_.
 - Angir numrene på bestillingene som skal tas med i posteringen, i feltet **Produktkvittering**.
@@ -267,7 +267,7 @@ Disse scenarioene krever funksjonen _Flere produktkviteringsposteringer per last
 
 1. Åpne arbeidsområdet **Funksjonsbehandling**. (Hvis du vil ha fullstendig informasjon om hvordan du finner og bruker dette arbeidsområdet, kan du se [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Kontroller at funksjonen _Tilknytt lagertransaksjoner for bestilling med last_ er aktivert. Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen. Funksjonen er imidlertid fortsatt oppført i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på følgende måte:
+1. Aktiver funksjonen _Tilknytt lagertransaksjoner for bestilling med last_, som er oppført på følgende måte:
 
     - **Modul:** _Lagerstyring_
     - **Funksjonsnavn:** _Tilknytt lagertransaksjoner for bestilling med last_
@@ -285,7 +285,7 @@ For å arbeide deg gjennom disse scenarioene ved å bruke de angitte eksempelpos
 
 Før lagermottaksassistenter kan bruke en mobilenhet til å registrere innkommende beholdning som er knyttet til en last, må du opprette et menyelement for mobilenheter for dette formålet.
 
-I denne delen skal du opprette et menyelement på en mobilenhet og legge det til på en eksisterende meny. En lagerarbeider kan deretter velge menyelementet i mobilappen Lagerstyring.
+I denne delen skal du opprette et menyelement på en mobilenhet og legge det til på en eksisterende meny. En lagerarbeider kan deretter velge menyelementet i lagerappen.
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**, og kontroller at menyen på mobilenheten inkluderer et menyelement med følgende innstillinger:
 
@@ -295,7 +295,7 @@ I denne delen skal du opprette et menyelement på en mobilenhet og legge det til
 
     Du kan la alle andre innstillinger være som standardverdiene.
 
-    ![Innstillinger for menyelementer på mobilenhet.](media/inbound-mobile-menu-items.png "Innstillinger for menyelementer på mobilenhet")
+    ![Innstillinger for menyelementer på mobilenhet](media/inbound-mobile-menu-items.png "Innstillinger for menyelementer på mobilenhet")
 
     Hvis du vil ha mer informasjon om hvordan du definerer menyelementer for mobilenheter, kan du se [Definere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md).
 
@@ -330,7 +330,7 @@ I denne fremgangsmåten oppretter du en bestilling og en tilknyttet last manuelt
     - På hurtigfanen **Last** er feltet **Laststatus** satt til _Åpen_.
     - I delen **Lastlinjer** finnes det en enkelt linje der **Antall**-feltet er satt til _10_ og feltet **Antall for arbeid opprettet** er satt til _0_ (null).
 
-    ![Lastdetaljer.](media/inbound-load-details.png "Lastdetaljer")
+    ![Lastdetaljer](media/inbound-load-details.png "Lastdetaljer")
 
 1. I handlingsruten, i fanen **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**. Legg merke til at **Laststatus** er endret til _Sendt_.
 1. Noter verdien for **Last-ID**, slik at du kan bruke den i neste fremgangsmåte.

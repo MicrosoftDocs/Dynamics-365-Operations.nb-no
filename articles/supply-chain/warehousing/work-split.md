@@ -2,11 +2,9 @@
 title: Oppdelt arbeid
 description: Dette emnet gir informasjon om funksjonen for oppdelt arbeid. Med denne funksjonen kan du dele opp store arbeidsordrer i flere mindre arbeidsordrer som deretter kan tilordnes til flere lagerarbeidere. På denne måten kan det samme arbeidet plukkes samtidig av flere lagerarbeidere.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,15 +12,17 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8a530f3887c3c66295177d480a8c486dd0984153
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965533"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778263"
 ---
 # <a name="work-split"></a>Oppdelt arbeid
+
+[!include [banner](../includes/banner.md)]
 
 Med funksjonen for oppdelt arbeid kan du dele opp store arbeids-ID-er (det vil si arbeidsordrer som har flere linjer) i flere mindre arbeids-ID- som deretter kan tilordnes til flere lagerarbeidere. På denne måten kan det samme arbeidsopprettelsesnummeret plukkes samtidig av flere lagerarbeidere.
 
@@ -33,7 +33,7 @@ Med funksjonen for oppdelt arbeid kan du dele opp store arbeids-ID-er (det vil s
 
 Før du kan bruke funksjonen for oppdelt arbeid, må du aktivere funksjonen og den nødvendige funksjonen i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonene og aktivere dem hvis den kreves.
 
-Først aktiverer du den nødvendige funksjonen *Organisasjonsomfattende arbeidsblokkering* hvis den ikke allerede er aktivert. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Først aktiverer du den nødvendige funksjonen *Organisasjonsomfattende arbeidsblokkering* hvis den ikke allerede er aktivert. Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen. Funksjonen er imidlertid fortsatt oppført i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Organisasjonsomfattende arbeidsblokkering*
@@ -53,7 +53,7 @@ Funksjonen *Oppdelt arbeid* legger til følgende to knapper i fanen **Arbeid** i
 - **Del arbeid** – Del opp gjeldende arbeids-ID i flere mindre arbeids-ID-er som kan behandles av individuelle arbeidere.
 - **Avbryt arbeidsoppdelingsøkt** – Avbryt arbeidsoppdelingsøkten, og gjør arbeidet tilgjengelig for behandling.
 
-![Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt](media/Work_split_buttons.png "Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt")
+![Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt.](media/Work_split_buttons.png "Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt")
 
 > [!IMPORTANT]
 > Knappen **Del arbeid** er ikke tilgjengelig hvis noen av følgende betingelser er oppfylt:
@@ -69,7 +69,7 @@ Funksjonen *Oppdelt arbeid* legger til følgende to knapper i fanen **Arbeid** i
 >
 > - Arbeidet deles for øyeblikket av en annen bruker. Hvis du prøver å åpne delingssiden for arbeid som allerede deles av en annen bruker, får du følgende feilmelding: Arbeidet med ID \#\#\#\# deles for øyeblikket. Prøv på nytt om noen minutter. Hvis du fortsatt får denne meldingen, kontakter du en overordnet.
 
-En ny arbeidsblokkeringsårsak, *Del arbeid*, angir når arbeids-ID-en er i ferd med å deles opp. Det vises både på siden **Del arbeid** og i lagerappen hvis en bruker prøver å kjøre arbeidet. Når det brukes blokkeringsårsaker, endres navnet på det **Blokkert bølge**-feltet fra arbeids-ID-en til **Blokkert**.
+En ny arbeidsblokkeringsårsak, *Del arbeid*, angir når arbeids-ID-en er i ferd med å deles opp. Det vises både på siden **Del arbeid** og i mobilappen Lagerstyring hvis en bruker prøver å kjøre arbeidet. Når det brukes blokkeringsårsaker, endres navnet på det **Blokkert bølge**-feltet fra arbeids-ID-en til **Blokkert**.
 
 ## <a name="initiate-a-work-split"></a>Starte en arbeidsoppdeling
 
@@ -96,7 +96,7 @@ Følg denne fremgangsmåten for å dele arbeid.
 
     Feltet **Arbeidsblokkeringsårsak** for gjeldende arbeid vil bli satt til *Delt arbeid*, og arbeidet blir blokkert.
 
-    ![Blokkeringsårsak](media/Blocking_reason.png "Blokkeringsårsak")
+    ![Blokkeringsårsak.](media/Blocking_reason.png "Blokkeringsårsak")
 
 1. Velg linjene som skal fjernes fra den gjeldende arbeids-ID-en, og legg til en ny arbeids-ID. Følgende hendelser skjer:
 
@@ -147,10 +147,13 @@ Hvis du vil fullføre deling av arbeidet, må du fjerne blokkeringsårsaken *Del
 
 Når blokkeringsårsaken *Delt arbeid* er fjernet, kan arbeidet kjøres på mobilenheten, forutsatt at statusen **Blokkert** er satt til *Nei* på arbeids-ID-en.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Brukerblokkering i lagerappen
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Brukerblokkering i mobilappen Lagerstyring
 
-Hvis du prøver å bruke lagerappen til å kjøre plukkarbeid mot en arbeids-ID som deles, får du følgende feilmelding: Arbeidet med ID \#\#\#\# deles for øyeblikket. Hvis du får denne meldingen, velger du **Avbryt**. Deretter kan du fortsette å behandle annet arbeid.
+Hvis du prøver å bruke mobilappen Lagerstyring til å kjøre plukkarbeid mot en arbeids-ID som deles, får du følgende feilmelding: Arbeidet med ID \#\#\#\# deles for øyeblikket. Hvis du får denne meldingen, velger du **Avbryt**. Deretter kan du fortsette å behandle annet arbeid.
 
 ## <a name="other-blocked-operations"></a>Andre blokkerte operasjoner
 
 Alle operasjoner som endrer arbeidslinjer, arbeidslagertransaksjoner eller etterfyllingskoblinger som er relatert til arbeid som deles, vil mislykkes, og følgende feilmelding vises: Arbeidet med ID \#\#\#\# deles nå.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

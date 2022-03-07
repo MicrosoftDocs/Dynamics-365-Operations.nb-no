@@ -2,34 +2,29 @@
 title: Tilordne oppgavelister til butikker eller ansatte
 description: Dette emnet beskriver hvordan du tilordner oppgavelister til butikker eller ansatte i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730833"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Tilordne oppgavelister til butikker eller ansatte
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du tilordner oppgavelister til butikker eller ansatte i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Ved hjelp av oppgavebehandling i Dynamics 365 Commerce kan du tilordne en oppgaveliste til flere butikker eller ansatte, eller til en kombinasjon av butikker og ansatte. Det kan for eksempel hende at en regional leder for 20 butikker vil tilordne oppgavelisten **Forberedelser for høytiden** til alle de 20 butikkene.
 
@@ -50,7 +45,7 @@ Følg denne fremgangs måten for å starte prosessen med å tilordne en oppgavel
 
 Illustrasjonen nedenfor viser et eksempel på hvordan du finner og velger butikker i dialogboksen **Start prosess**.
 
-![Finne og velge butikker i dialogboksen Start prosess](media/HQ-Assign-Tasks-Lists.png)
+![Finne og velge butikker i dialogboksen Start prosess.](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>Tilordne oppgavelister regelmessig
 
@@ -67,7 +62,7 @@ Forhandleren har noen ganger gjentakende oppgaver, for eksempel "Sjekkliste for 
 
 Illustrasjonen nedenfor viser et eksempel på hvordan du kan angi frekvenskriterier i dialogboksen **Definer regelmessighet**.
 
-![Angi frekvenskriterier i dialogboksen Definer regelmessighet](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Angi frekvenskriterier i dialogboksen Definer regelmessighet.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>Status for sporing av oppgaveliste
 
@@ -92,3 +87,6 @@ Følg denne fremgangsmåten for å spore statusen for alle oppgaver som er tilor
 [Opprette oppgavelister og legge til oppgaver](task-mgmt-create-lists.md)
 
 [Oppgavebehandling på salgsstedet](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

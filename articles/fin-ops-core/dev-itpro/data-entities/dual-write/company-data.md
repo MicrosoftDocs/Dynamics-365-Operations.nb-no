@@ -2,11 +2,9 @@
 title: Bedriftskonsept i Dataverse
 description: Dette emnet beskriver integreringen av firmadata mellom Finance and Operations og Dataverse .
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bbe634b87b3cb30ed993f9b3afeb4321d70f07e6
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 1c3af66c0b8daa120c6ba19bd910f7531ffada0e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744885"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751416"
 ---
 # <a name="company-concept-in-dataverse"></a>Bedriftskonsept i Dataverse
 
@@ -102,3 +100,6 @@ Hvis du vil bruke filtrering basert på firmakonteksten i de egendefinerte skjem
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Bruk firmakontekst":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

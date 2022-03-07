@@ -2,11 +2,9 @@
 title: LIFO-dato med fysisk verdi og merking
 description: Sist inn, først ut etter dato (LIFO-dato) er en lagermodell basert på LIFO-prinsippet. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen. Med LIFO-datoen, hvis det ikke er et mottak før avgangen, utlignes avgangen mot alle mottak som skjer etter datoen for avgangen. Flere avganger på samme dato kan utlignes i rekkefølgen siste avgang, siste mottak.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967639"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567565"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-dato med fysisk verdi og merking
 
@@ -57,7 +55,9 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithoutincludephysicalvalue.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. 
+
+![LIFO-dato når alternativet Ta med fysisk verdi ikke brukes.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -92,7 +92,9 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 20,00. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithincludephysicalvalue.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. 
+
+![LIFO-dato når alternativet Ta med fysisk verdi brukes.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -138,7 +140,7 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 
 Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene med USD 27,50. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mellom avganger og tilganger brukes. ![LIFO-dato med merking](./media/lifodatewithmarking.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mellom avganger og tilganger brukes. ![LIFO-dato med merking.](./media/lifodatewithmarking.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -156,3 +158,6 @@ Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mel
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,34 +1,29 @@
 ---
 title: Meldinger
 description: Dette emnet gir en oversikt over administrasjon av meldinger i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e0071ae745987a1217525b2841e3320933a9242
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6d247457b83036dba2fad8fd9f94e04c29a3aa5e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019635"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985259"
 ---
 # <a name="maintenance-requests"></a>Meldinger
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Meldinger er notater eller deklarasjoner som opprettes for å varsle en leder eller planlegger at et aktivum kan kreve en vedlikeholds- eller reparasjonsjobb, men uten å opprette en arbeidsordre. Hvis innholdet i en melding anses som gyldig, kan en arbeidsordre opprettes basert på meldingen.
 
@@ -44,7 +39,7 @@ Meldinger kan opprettes for alle aktiva i Aktivastyring. Ulike typer meldinger k
 
 Hvis du vil vise meldinger, velger du **Aktivastyring** \> **Felles** \> **Vedlikeholdsanmondninger** \> **Alle meldinger**, **Aktive meldinger** eller **Mine vedlikeholdsforespørsler for arbeidssted**. Hver listeside viser noe av informasjonen som er knyttet til en melding.
 
-![Vis forespørsler om vedlikehold](media/01-manage-maintenance-requests.png)
+![Vis meldinger.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Bruk listesiden **Mine vedlikeholdsforespørsler for arbeidssted** for å vise en liste over vedlikeholdsforespørsler som inneholder enten arbeidssteder som du er knyttet til som arbeider, eller aktiva som er installert på arbeidssteder som du knyttet til som arbeider. (Hvis du vil ha informasjon om hvordan du definerer arbeidssteder for vedlikeholdspersoner, kan du se [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).)
@@ -53,7 +48,7 @@ Hvis du vil vise meldinger, velger du **Aktivastyring** \> **Felles** \> **Vedli
 
 Hvis du vil åpne detaljvisningen for en post, går du til listesiden **Alle meldinger**, og i rutenettvisningen velger du en kobling i kolonnen **Melding**.
 
-![Vise detaljer for vedlikeholdsforespørsel](media/02-manage-maintenance-requests.png)
+![Vise detaljer for vedlikeholdsforespørsel.](media/02-manage-maintenance-requests.png)
 
 Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kort hvilke knapper som er knyttet til Aktivastyring.
 
@@ -72,3 +67,6 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Send ut aktivumlån                  | Velg et aktivumlån som skal være en midlertidig erstatning for aktivumet som er valgt i den valgte meldingen. |
 | Returner lån av gjenstander                | Registrer aktivumlånet som returnert. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

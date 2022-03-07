@@ -2,11 +2,9 @@
 title: Opprette fordelsplaner for ansatte
 description: Du kan opprette fordelsplaner for arbeidere i Microsoft Dynamics 365 Human Resources for å velge fordelsplaner for ansatte og for å bekrefte valg av fordelsplaner.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ebd19cba8dd7cac8ccf6d17d4206731be87a225
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: baa131b3bcab73d29c7059f6595f1e8943f8164f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419845"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804943"
 ---
 # <a name="create-worker-benefit-plans"></a>Opprette fordelsplaner for ansatte
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan opprette fordelsplaner for arbeidere i Microsoft Dynamics 365 Human Resources for å velge fordelsplaner for ansatte og for å bekrefte valg av fordelsplaner. Vanligvis velger de ansatte fordelsplaner ved hjelp av Ansattselvbetjening, og deretter bekrefter en fordelsadministrator valgene. 
 
@@ -49,3 +49,6 @@ Du kan opprette fordelsplaner for arbeidere i Microsoft Dynamics 365 Human Resou
    | Planer | Hurtigkategorien Planer inneholder planene som oppfyller filtervilkårene du angav. De relevante konfigurasjonsalternativene som ble angitt av personalavdelingen, og registreringsvalgene som ble valgt av de ansatte, inkluderes på hver linje. Kvalifisert-feltet angir om det er en valideringskonflikt med planvalget. |
 
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

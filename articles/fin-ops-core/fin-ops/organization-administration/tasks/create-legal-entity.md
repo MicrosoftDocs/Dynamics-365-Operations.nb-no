@@ -2,11 +2,9 @@
 title: Opprette en ny juridisk enhet
 description: En juridisk enhet er en organisasjon som identifiseres via registrering hos en juridisk myndighet.
 author: sericks007
-manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, OMNewLegalEntity
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c4801480ea22dd0edcc0efb42c50055730acc13e
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796760"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747447"
 ---
 # <a name="create-a-legal-entity"></a>Opprette en ny juridisk enhet
 
@@ -45,3 +43,6 @@ En juridisk enhet er en organisasjon som identifiseres via registrering hos en j
 15. Vis delen **Avgiftsregistrering**. I delen **Avgiftsregistrering** skriver du inn registreringsnumrene som brukes til å rapportere til skattemyndighetene.
 16. Vis delen **1099-avgift**. I delen **1099-avgift** skriver du inn 1099-informasjon for den juridiske enheten.  
 17. Klikk på **Lagre**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

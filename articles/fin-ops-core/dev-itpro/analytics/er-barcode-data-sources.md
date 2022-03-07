@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: e0ba43ff1bab391d141f28289144cc552ee28609
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323958"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351824"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Bruke strekkodedatakilder for å generere strekkodebilder
 
 [!include[banner](../includes/banner.md)]
 
-Du kan bruke rammeverket [Elektronisk rapportering (ER)](general-electronic-reporting.md) til å utforme ER-formatkomponenter du kan kjøre for å generere elektroniske og utskrivbare utgående dokumenter du trenger. Hvis du vil generere et utgående dokument i Microsoft Office-format, må du angi oppsettet for rapporten ved å bruke enten et Microsoft Excel-dokument eller et Microsoft Word-dokument som en rapportmal. Med [ER-operasjonsutforming](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) kan du legge ved et Excel- eller Word-dokument som en mal for et ER-format. Følgende navngitte elementer i den tilknyttede malen er knyttet til elementene i den konfigurerte formatkomponenten:
+Du kan bruke rammeverket [Elektronisk rapportering (ER)](general-electronic-reporting.md) til å utforme [ER-formatkomponenter](general-electronic-reporting.md#FormatComponentOutbound) som du kan kjøre for å generere elektroniske og utskrivbare utgående dokumenter som du trenger. Hvis du vil generere et utgående dokument i Microsoft Office-format, må du angi oppsettet for rapporten ved å bruke enten et Microsoft Excel-dokument eller et Microsoft Word-dokument som en rapportmal. Med [ER-operasjonsutforming](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) kan du legge ved et Excel- eller Word-dokument som en mal for et ER-format. Følgende navngitte elementer i den tilknyttede malen er knyttet til elementene i den konfigurerte formatkomponenten:
 
 - Innholdskontroller i Word
 - Navngitte ark, områder, celler, figurer og bilder i Excel
@@ -123,7 +123,7 @@ I tillegg laster du ned følgende Excel-fil som inneholder den endrede malen for
 
 | Innholdsbeskrivelse | Filnavn                 |
 |---------------------|---------------------------|
-| Rapportmal     | [Sjekkmal Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
+| Rapportmal     | [Sjekkmal Excel.xlsx](https://download.microsoft.com/download/1/f/6/1f671963-73aa-48d5-ae69-45f21fe7dfb4/Cheque%20template.xlsx) |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Aktivere en konfigurasjonsleverandør
 
@@ -251,7 +251,7 @@ Hvis du vil fortsette å arbeide med den gjeldende kladdeversjonen, men du må b
 3. På siden **Konfigurasjoner**, i konfigurasjonstreet, utvider du **Modell for sjekker** og velger **Utskriftsformat for sjekker**.
 4. I hurtigfanen **Versjoner** velger du posten med statusen **Utkast**.
 5. Velg **Endre status**, og velg deretter **Fullfør**.
-6. Klikk på **OK** i dialogboksen.
+6. Klikk **OK** i dialogboksen.
 
 Statusen for gjeldende versjon endres fra **Utkast** til **Fullført**, og det opprettes en ny versjon med statusen **Utkast**. Du kan bruke den nye kladdeversjonen til å legge til flere endringer.
 

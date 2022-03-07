@@ -2,25 +2,25 @@
 title: Komme i gang med leasing av aktiva
 description: Dette emnet beskriver funksjonen for leasing av aktiva og går gjennom fremgangsmåten for å opprette leasing av aktiva og vise informasjon for leasingavtalene.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: AssetLeaseLeasingWorkspace
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 72c362e651787d2ff120944925e3bc35523f0059
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982015"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814134"
 ---
 # <a name="asset-leasing-get-started"></a>Komme i gang med leasing av aktiva
 
@@ -28,14 +28,12 @@ ms.locfileid: "7982015"
 
 Dette emnet beskriver funksjonen for leasing av aktiva og går gjennom fremgangsmåten for å opprette leasing av aktiva og vise informasjon for leasingavtalene. Emnet definerer også terminologien som brukes i brukergrensesnittet og i dokumentasjonen. Leasing av aktiva er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leasede aktiva i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Leasing av aktiva registrerer og behandler informasjon om leasing og beregner journaloppføringer gjennom livssyklusen til leasingen fra innledende gjenkjenning, månedlige journaloppføringer, til skader og avslutning av leasingen. Leasing av aktiva integreres sømløst med andre komponenter i Dynamics 365 Finance, inkludert anleggsmidler, leverandører og økonomimodulen.
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I arbeidsområdet **Funksjonsbehandling** finner og velger du funksjonen **Aktivaleie**, og deretter klikker du på knappen **Aktiver nå**.
-
 Hvis du vil ha mer informasjon om regnskapsstandarder, se standard dokumentasjonen for IFRS 16 og US GAAP ASC 842.
 
 ## <a name="asset-leasing-elements"></a>Elementer i leasing av aktiva
 Diagrammet nedenfor viser hovedelementene i forretningsprosessen for leasingavtaler.
 
-[![Elementer i leasing av aktiva.](./media/overview-01.png)](./media/overview-01.png)
+[![Elementer i leasing av aktiva](./media/overview-01.png)](./media/overview-01.png)
 
 Leasing av aktiva inneholder følgende hovedkomponenter:
 
@@ -54,7 +52,7 @@ Leie av anleggsmidler tilordner leieinformasjon, betalingsplaner, start- og slut
 
 Diagrammet nedenfor viser leietablået, leieavtalen, beregnet betalingsplan, klassifiseringstestene for leieavtaler og leietablåer, og de tilsvarende regnskapstransaksjonene.
 
-[![Leie, leietablå og betalingsplan.](./media/overview-02.png)](./media/overview-02.png)
+[![Leie, leietablå og betalingsplan](./media/overview-02.png)](./media/overview-02.png)
 
 - **Leietablå** – Leieavtaler omfatter all informasjon om leiekontrakt, for eksempel leievilkår, virkelig verdi og leiebetalinger. Det inneholder også regnskapsstandarden du følger, leietype og terskler som vurderes i klassifiseringstester for leie. Leietablået inneholder også leietransaksjonene som er postert til økonomimodulen. 
   
@@ -117,7 +115,7 @@ Den første perioden starter med perioden null, hvis annuitetstypen er annuitets
 
 Klassifiseringstestene omfatter overføring av eierskap, kjøpsalternativ, leieperiode, netto nåverdi og unikt anleggsmiddel. Diagrammet nedenfor illustrerer klassifiseringtesten for leien.
 
-[![Klassifiseringstest for leie.](./media/overview-03.png)](./media/overview-03.png)
+[![Klassifiseringstest for leie](./media/overview-03.png)](./media/overview-03.png)
 
 Hver leietype håndterer regnskap forskjellig for ulike leietransaksjoner. Transaksjonene omfatter innledende gjenkjenning, renteutgift, forfallsbetaling for leie og leieavskrivning, og de er basert på regnskapsstandardene du følger (IFRS 16 eller ASC 842). Finanskontoer defineres under leieposteringsprofilen for hver transaksjonstype og regnskapsrammeverk.
 
@@ -232,7 +230,7 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
 
    Siden **Betalingsplan** viser en liste over fremtidige betalingsplaner for en leie-ID. Velg **Bekreft plan** for å postere transaksjonene for **opprinnelige gjenkjenning**. 
 
-[![Funksjon for opprinnelig gjenkjenning.](./media/overview-13.png)](./media/overview-13.png)
+[![Funksjon for opprinnelig gjenkjenning](./media/overview-13.png)](./media/overview-13.png)
 
 8. Velg **Opprinnelig gjenkjenning** for å opprette en opprinnelig føringsjournal. 
 
@@ -246,7 +244,7 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
 
    Siden **Tidsplan for avskrivning av anleggsmidler** viser avskrivningstransaksjonene for den valgte leie-ID-en. 
 
-   [![Transaksjonsside for bruksrettseiendel.](./media/overview-20.png)](./media/overview-20.png)
+   [![Transaksjonsside for bruksrettseiendel](./media/overview-20.png)](./media/overview-20.png)
 
    Siden **Transaksjoner for bruksrettseiendel** viser opprinnelig gjenkjenning, akkumulert avskrivning og anleggsmiddelsaldo. 
 

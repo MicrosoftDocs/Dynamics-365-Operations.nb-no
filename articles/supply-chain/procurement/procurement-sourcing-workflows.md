@@ -1,12 +1,10 @@
 ---
 title: Arbeidsflyter for innkjøp og leverandører
 description: Noen organisasjoner krever at innkjøpsrekvisisjoner og bestillinger er godkjent av en annen bruker enn den som registrerte transaksjonen. Hvis du vil konfigurere en godkjenningsprosess, kan du opprette en arbeidsflyt.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af614b7f29144d02a853ef15b008f2a21d3d3aa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019760"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909237"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Arbeidsflyter for innkjøp og leverandører
 
@@ -49,7 +47,7 @@ Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.
 | Arbeidsflyt for søknad om tillegging av leverandører | Opprett arbeidsflyter for gjennomgang og godkjenning for å legge til nye leverandører via leverandørforespørsler. |
 
 > [!IMPORTANT]
-> Når du legger til en ny arbeidsflyt, kan det hende at du også ser følgende foreldede arbeidsflyter som vises i dialogboksen **Opprett arbeidsflyt**. Disse er knyttet til funksjonaliteten *bekreftelse på mottak* som var tilgjengelig i [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), men som nå er avskrevet. Disse arbeidsflytene støttes ikke.
+> Når du legger til en ny arbeidsflyt, kan det hende at du også ser følgende foreldede arbeidsflyter som vises i dialogboksen **Opprett arbeidsflyt**. Disse er knyttet til funksjonaliteten *bekreftelse på mottak* som var tilgjengelig i [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), men som nå er avskrevet. Disse arbeidsflytene støttes ikke.
 > 
 > - Varslingsarbeidsflyt for forfallsdato for levering
 > - Varslingsarbeidsflyt for fakturamottak
@@ -79,3 +77,6 @@ Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 - [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
 - [Ønske leverandører velkommen](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

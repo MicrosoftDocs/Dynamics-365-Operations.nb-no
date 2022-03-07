@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d5aa579394a0e3bd4c27cd44c9ff98951b3bfe1c
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: c2b12798a6ef9c2d4aa022e0c270d8191b2cf4e7fc844042ed88c4eb9f5b98a5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741914"
 ---
 # <a name="putaway-clusters"></a>Plasseringsgrupper
 
@@ -25,9 +25,12 @@ ms.locfileid: "8103669"
 
 Plasseringsgrupper tilbyr en måte for å plukke flere nummerskilter samtidig og deretter ta dem med for plassering på forskjellige steder. Denne prosessen blir ofte referert til som en *melkerute*. Plasseringsgrupper kan være veldig nyttige for detaljhandelsfirmaer, der nummerskilter vanligvis ikke er fulle paller med lager. 
 
-## <a name="turn-the-cluster-putaway-feature-on-or-off"></a>Aktivere eller deaktivere Gruppeplasseringsfunksjon
+## <a name="turn-on-the-cluster-putaway-feature"></a>Aktiver gruppeplasseringsfunksjonen
 
-Du må aktivere funksjonen *Gruppeplasseringsfunksjon* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Gruppeplasseringsfunksjon* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+
+- **Modul:** *Lagerstyring*
+- **Funksjonsnavn:** *Gruppeplasseringsfunksjon*
 
 ## <a name="setup-for-the-example-scenario"></a>Konfigurer for eksempelscenarioet
 

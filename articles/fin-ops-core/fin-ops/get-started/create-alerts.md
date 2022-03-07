@@ -1,28 +1,26 @@
 ---
 title: Opprette varslingsregler
-description: Dette emnet gir informasjon om varsler, og forklarer hvordan du oppretter en varslingsregel, slik at du får melding om hendelser, for eksempel en dato som kommer eller en bestemt endring som forekommer.
-author: tjvass
-manager: AnnBe
+description: Dette emnet gir informasjon om varsler og forklarer hvordan du oppretter en varslingsregel.
+author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 597785e65f127794ca84fe3053a664f717b056bd7374e0396732d4bcf59a743c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798433"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736204"
 ---
-# <a name="create-alert-rules"></a>Opprette varslingsregler
+# <a name="create-alert-rules"></a>Opprette varselregler
 
 [!include [banner](../includes/banner.md)]
 
@@ -102,3 +100,8 @@ Du kan ikke opprette varsler for enkelte sekundære datakilder i skjemaer. Når 
     ```
 2. Opprett et varsel fra SysTableBrowser-skjemaet.
 
+### <a name="change-based-alerts-do-not-work-for-batch-status-changes"></a>Endringsbaserte varsler fungerer ikke for endringer i satsvis status
+Endringsbaserte varsler fungerer ikke med endringer i satsvis status fordi den er slått av av ytelseshensyn. I stedet bør du konfigurere funksjonen **Satsvise varsler**. Hvis du vil ha mer informasjon, kan du se [Konfigurere varsler for partiforbedrede skjemaer](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

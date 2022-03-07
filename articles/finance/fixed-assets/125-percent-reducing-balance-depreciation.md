@@ -1,12 +1,10 @@
 ---
 title: 125 prosent redusert saldoavskrivning
-description: Denne artikkelen gir en oversikt over avskrivningsmetoden 125 prosent saldoavskrivning.
-author: saraschi2
-manager: AnnBe
+description: Dette emnet gir en oversikt over avskrivningsmetoden 125 prosent saldoavskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9511917d72a1bb45daf2ce7e4b56d94c17825daf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969234"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883524"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>125 prosent redusert saldoavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen gir en oversikt over avskrivningsmetoden 125 prosent saldoavskrivning.
+Dette emnet gir en oversikt over avskrivningsmetoden 125 prosent saldoavskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger verdien **125 % saldoverdi** i **Metode**-feltet på **Avskrivningsprofiler**-siden, avskrives anleggsmidler som er tildelt til avskrivningsprofilen, med den samme prosenten i hver avskrivningsperiode. Denne prosenten beregnes på grunnlag av anleggsmidlets levetid. Hvis anleggsmidlet for eksempel har en levetid på fem år, beregnes prosenten som 25 prosent (125 % ÷ 5).
 
@@ -66,7 +64,7 @@ Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer t
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Eksempel på 125 % saldoverdiavskrivning
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anskaffelseskostnad               | 11 000 |
 | Restverdi                  | 1 000  |
@@ -87,3 +85,6 @@ Metoden 125 % saldoavskrivning dividerer 125 prosent med antall levetidsår. Avs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

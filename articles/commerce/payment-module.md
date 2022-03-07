@@ -2,27 +2,24 @@
 title: Betalingsmodul
 description: Dette emnet dekker betalingsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 11/18/2020
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 27b73f7a05605e4e3ee8f8b72400172b7a8bfc33
-ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
+ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4581918"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952475"
 ---
 # <a name="payment-module"></a>Betalingsmodul
 
@@ -49,7 +46,7 @@ Adyen-betalingskoblingen støtter også sterk kundegodkjenning (SCA). En del av 
 
 Følgende illustrasjon viser et eksempel på en gavekort-, fordels- og Adyen-betalingsmodul på en kasseside.
 
-![Eksempel på en gavekort-, fordelspoeng- og Adyen-betalingsmodul på en kasseside](./media/ecommerce-payments.PNG)
+![Eksempel på en gavekort-, fordelspoeng- og Adyen-betalingsmodul på en kasseside.](./media/ecommerce-payments.PNG)
 
 ## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector for PayPal
 
@@ -62,10 +59,10 @@ Når betalingsmodulen er konfigurert til å bruke PayPal-betalingskoblingen, vis
 PayPal-betalingskoblingen krever ikke en faktureringsadressemodul fordi alle faktureringsrelaterte opplysninger håndteres av PayPal i dens iframe. Du trenger imidlertid modulene leveringsadresse og leveringsalternativer.
 
 Følgende illustrasjon viser et eksempel på to betalingsmoduler på en utsjekkingsside, en som er konfigurert med Adyen-betalingskoblingen og den andre med PayPal-betalingskoblingen.
-![Eksempel på Adyen- og PayPay-betalingsmoduler på en kasseside](./media/ecommerce-paypal.png)
+![Eksempel på Adyen- og PayPay-betalingsmoduler på en kasseside.](./media/ecommerce-paypal.png)
 
 Følgende illustrasjon viser et eksempel på PayPal iframe som aktiveres ved hjelp av PayPal-knappen. 
-![Eksempel på Paypal iframe på en utsjekkingsside](./media/ecommerce-paypal-iframe.png)
+![Eksempel på Paypal iframe på en utsjekkingsside.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Egenskaper for betalingsmodul
 
@@ -79,7 +76,7 @@ Følgende illustrasjon viser et eksempel på PayPal iframe som aktiveres ved hje
 |Er primærbetaling|  **Sann** eller **Usann** | Hvis den er **sann**, vil eventuelle feilmeldinger bli generert fra primærbetalingskoblingen på betalingssiden. Hvis både Adyen- og PayPal-betalingskoblingene er konfigurert, setter du Adyen til **sann**, som ble lagt til i Commerce-utgivelsen 10.0.14.|
 
 Følgende illustrasjon viser et eksempel på **Støttede betalingsmiddeltyper**-verdien som er satt til PayPal i betalingskoblingskonfigurasjonen i Commerce Headquarters.
-![Eksempel på støttede betalingsmiddeltyper i Commerce Headquarters](./media/ecommerce-paymenttendertypes.png)
+![Eksempel på støttede betalingsmiddeltyper i Commerce Headquarters.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Faktureringsadresse
 
@@ -93,7 +90,24 @@ På samme måte som betalingsmoduler er en egenskap for **Støttede betalingsmid
 
 En betalingsmodul kan bare legges til i en kassemodul. Hvis du vil ha mer informasjon om hvordan du konfigurerer en betalingsmodul for en kasseside, se [Kassemodul](add-checkout-module.md).
 
-Hvis det er behov for både Adyen- og PayPal-betalingskoblingene, legger du til begge modulene i betalingsdelen. Kontroller at egenskapsverdien **Støttede betalingsmiddeltyper** er konfigurert for PayPal, og la den stå tom for Adyen. Sett også egenskapen **Er primærbetaling** til **Sann** for Adyen.
+## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Konfigurere betalingskontaktene Adyen og PayPal når begge brukes
+
+Hvis betalingskontaktene Adyen og PayPal vil bli brukt for området, følger du denne fremgangsmåten i Commerce-områdebyggeren for å legge til betalingsmoduler for hver kobling i utsjekkingsmodulen, og deretter konfigurere egenskapene for hver modul.
+
+1. Følg denne fremgangsmåten i egenskapsruten for PayPal-betalingsmodulen:
+
+    1. I feltet for egenskapen **Støttede betalingsmiddeltyper**, angir du **PayPal**.
+    1. Fjern merket i avmerkingsboksen for egenskapen **Er primærbetaling**.
+    1. Merk av for egenskapen **Bruk koblings-ID**.
+
+1. Følg denne fremgangsmåten i egenskapsruten for Adyen-betalingsmodulen:
+
+    1. La feltet for egenskapen **Støttede betalingsmiddeltyper** stå tom.
+    1. Merk av i avmerkingsboksen for egenskapen **Er primærbetaling**.
+    1. Merk av for egenskapen **Bruk koblings-ID**.
+
+> [!NOTE]
+> Når du konfigurerer Adyen- og PayPal-koblingene som skal brukes sammen, må konfigurasjonen **Dynamics 365 Payment Connector for Adyen** være i første posisjon i den elektroniske kanalens koblingskonfigurasjon for **Betalingskontoer** i Commerce Headquarters. Hvis du vil bekrefte eller endre koblingsrekkefølgen, kan du gå til **Nettbutikker** og velge kanalen for området. I kategorien for **Oppsett** i hurtigkategorien **Betalingskontoer** under **Kobling** kontrollerer du at **Dynamics 365 Payment Connector for Adyen**-konfigurasjonen er i første posisjon (det vil si på den øverste linjen), og at **Dynamics 365 Payment Connector for PayPal**-konfigurasjonen står på den andre linjen. Legg til eller fjern koblinger etter behov for å bestille dem på nytt.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -118,3 +132,6 @@ Hvis det er behov for både Adyen- og PayPal-betalingskoblingene, legger du til 
 [Dynamics 365 Payment Connector for PayPal](paypal.md)
 
 [Sterk kundegodkjenning ved hjelp av Adyen](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

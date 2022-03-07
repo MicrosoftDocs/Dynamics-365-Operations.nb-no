@@ -2,11 +2,9 @@
 title: Betalingsmiddelbaserte rabatter
 description: Dette emnet gir en oversikt over funksjoner som gjør det mulig for forhandlerne å konfigurere rabatter for bestemte betalingsmidler.
 author: bebeale
-manager: AnnBe
 ms.date: 10/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTenderDiscount
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 9f6747ff9d68c29612346254928e869d6d34d433
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 52b9510b2c22157aec27b865115273064bb0e803443306ea20468b93a2ea3ca7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962941"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719471"
 ---
 # <a name="tender-based-discounts"></a>Betalingsmiddelbaserte rabatter
 
@@ -71,3 +69,6 @@ Forhandlere velger ofte å utelate noen produkter, for eksempel nye varer eller 
 
 > [!NOTE]
 > Når konfigurasjonen **Hindre alle rabatter** er satt til **Ja**, vil det ikke bli brukt noen rabatter på produktet. Ikke engang betalingsbaserte rabatter vil bli brukt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Sende en mva-retur til webtjeneste Altinn
 description: Dette emnet beskriver hvordan du sender en mva-retur til Altinn-webtjenesten i Norge.
 author: liza-golub
-ms.date: 12/13/2021
+ms.date: 11/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: fd201ed282f6277f11d50c10f7e1e743d1e87ea3
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: e2cce251edeea451e3a96eb6fb3a1338c08e248e
+ms.sourcegitcommit: a11e8f4e764ff0bb210875401ae0671bc6412bde
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922401"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866806"
 ---
 # <a name="submit-a-vat-return-to-the-altinn-web-service"></a>Sende en mva-retur til webtjeneste Altinn
 
@@ -88,12 +88,6 @@ Følg denne fremgangsmåten for å legge til en fritekstnota som er begrenset ti
 3. I kolonnen **Feltverdi** velger du en **fritekstnota** i oppslagsfeltet.
 4. Velg **Vedlegg**, og velg deretter **Ny** \> **Notat** i handlingsruten.
 5. I **Notat**-feltet angir du notatet din. Dette notatet blir inkludert i mva-returen i XML-format når det genereres.
-
-Følg denne fremgangsmåten for å inkludere en betalings-ID, eller et KID-nummer, i den digitale mva-returen. Dette KID-nummeret kan bare brukes når verdien `<fastsattMerverdiavgift>` (total merverdiavgift \[mva\] for rapporteringsperioden) er negativ.
-
-1. Velg den elektroniske meldingen på hurtigfanen **Meldinger** som det skal angis KID-nummer for.
-2. I hurtigfanen **Tilleggsfelt for melding** velger du tilleggsfeltet **NO mva-betalings-ID**.
-3. Angi KID-nummeret i **Feltverdi**-kolonnen.
 
 ## <a name="mark-the-message-as-ready-to-generate-the-vat-return"></a><a id="ready-to-generate"></a>Merk meldingen som klar til å generere mva-returen
 

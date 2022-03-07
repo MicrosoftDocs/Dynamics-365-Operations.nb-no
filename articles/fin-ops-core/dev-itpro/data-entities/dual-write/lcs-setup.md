@@ -1,92 +1,70 @@
 ---
 title: Oppsett av dobbel skriving fra Lifecycle Services
-description: Dette emnet forklarer hvordan du konfigurerer en dobbel skriving-tilkobling mellom et nytt Finance and Operations-miljø og et nytt Dataverse-miljø fra Microsoft Dynamics Lifecycle Services (LCS).
+description: Dette emnet forklarer hvordan du konfigurerer en tilkobling med dobbel skriving fra Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
-manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25db9c58c3d09e44dcf11b48cae1a9eda4241c35
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683531"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359369"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Oppsett av dobbel skriving fra Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
-
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer en dobbel skriving-tilkobling mellom et nytt Finance and Operations-miljø og et nytt Dataverse-miljø fra Microsoft Dynamics Lifecycle Services (LCS).
+Dette emnet forklarer hvordan du aktiverer dobbel skriving fra Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Du må være administrator for å kunne konfigurere en tilkobling med dobbel skriving.
+Du må fullføre Power Platform-integreringen som beskrevet i følgende emner:
 
-+ Du må ha tilgang til leieren.
-+ Du må være administrator i både Finance and Operations-miljøer og Dataverse-miljøer.
++ [Power Platform-integrering - Aktiver under miljødistribusjon](../../power-platform/overview.md#enable-during-environment-deployment)
++ [Power Platform-integrering - Konfigurere etter miljødistribusjon](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a>Konfigurere en tilkobling med dobbel skriving
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Konfigurere dobbel skriving for nye Dataverse-miljøer
 
-Hvis du vil konfigurere en tilkobling med dobbel skriving, gjør du følgende.
+Følg denne fremgangsmåten for å konfigurere en dobbelt skriving fra LCS-siden **Miljødetaljer**:
 
-1. Gå til prosjektet I LCS.
-2. Velg **Konfigurer** for å distribuere et nytt miljø.
-3. Velg versjonen. 
-4. Velg topologien. Hvis bare én topologi er tilgjengelig, velges den automatisk.
-5. Fullfør de første trinnene i veiviseren for **distribusjonsinnstillinger**.
-6. Følg deretter at av disse trinnene i fanen **Dataverse**:
+1. På siden **Miljødetaljer** utvides delen **Power Platform-integrering**.
 
-    - Hvis et Dataverse-miljø allerede er klargjort for leieren, kan du velge det.
+2. Velg knappen for **App med dobbel skriving**.
 
-        1. Sett alternativet **Konfigurere Dataverse** til **Ja**.
-        2. I feltet **tilgjengelige miljøer** velger du miljøet som skal integreres med Finance and Operations-dataene. Listen inneholder alle miljøer der du har administrative rettigheter.
-        3. Merk av for **Godta** for å angi at du godtar vilkårene og betingelsene.
+    ![Power Platform-integrering.](media/powerplat_integration_step2.png)
 
-        ![Dataverse-fanen når et Dataverse-miljø allerede er klargjort for leieren](../dual-write/media/lcs_setup_1.png)
+3. Gå gjennom vilkårene og betingelsene, og merk deretter av for **Konfigurer**.
 
-    - Hvis leieren ikke allerede har et Dataverse-miljø, blir et nytt miljø klargjort.
+4. Velg **OK** for å fortsette.
 
-        1. Sett alternativet **Konfigurere Dataverse** til **Ja**.
-        2. Skriv inn et navn for Dataverse-miljøet.
-        3. Velg regionen som miljøet skal distribueres i.
-        4. Velg standard språk og valuta for miljøet.
+5. Du kan overvåke fremdriften ved å oppdatere siden med miljødetaljer regelmessig. Oppsettet tar vanligvis 30 minutter eller mindre.  
 
-            > [!NOTE]
-            > Du kan ikke endre språket og valutaen senere.
+6. Når installasjonen er fullført, får du en melding om prosessen var vellykket eller om det oppstod en feil. Hvis installasjonen mislyktes, vises det en relatert feilmelding. Du må korrigere eventuelle feil før du går til neste trinn.
 
-        5. Merk av for **Godta** for å angi at du godtar vilkårene og betingelsene.
+7. Velg **Koble til Power Platform-miljø** for å opprette en kobling mellom Dataverse og databasene for det gjeldende miljøet. Dette tar vanligvis 5 minutter eller mindre.
 
-        ![Dataverse-kategorien når leieren ikke allerede har et Dataverse-miljø](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Koble til Power Platform-miljø.":::
 
-7. Fullfør resten av trinnene i veiviseren for **Distribusjonsinnstillinger**.
-8. Når miljøet har statusen **Distribuert**, åpner du siden for miljødetaljer. Delen **Dataverse-miljøinformasjon** viser navnene på Finance and Operations-miljøet og Dataverse-miljøet som er koblet.
+8. Når koblingen er fullført, vises en hyperkobling. Bruk koblingen til å logge deg på administrasjonsområdet for dobbel skriving i Finance and Operations-miljøet. Derfra kan du definere enhetstilordninger.
 
-    ![Delen Dataverse-miljøinformasjon](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Konfigurere dobbel skriving for et eksisterende Dataverse-miljø
 
-9. En administrator av Finance and Operations-miljøet må logge på LCS og velge **Kobling til CDS for apper** for å fullføre koblingen. Siden for miljødetaljer viser administratorens kontaktinformasjon.
+Hvis du vil definere skrivetilgang for et eksisterende Dataverse-miljø, må du opprette en Microsoft [støtteforespørsel](../../lifecycle-services/lcs-support.md). Denne forespørselen må inneholde følgende:
 
-    Når koblingen er fullført, oppdateres statusen til **Miljøkoblingen er fullført**.
-
-10. Hvis du vil åpne arbeidsområdet **Dataintegrering** i Finance and Operations-miljøet og kontrollere hvilke maler som er tilgjengelige, velger du **Kobling til CDS for apper**.
-
-    ![Knappen Kobling til CDS for apper i delen Dataverse-miljøinformasjon](../dual-write/media/lcs_setup_4.png)
++ Finance and Operations-miljø-ID.
++ Miljønavnet fra Lifecycle Services.
++ Dataverse-organisasjons-IDen eller Power Platform-miljø-IDen fra Power Platform-administrasjonssenteret. Be om at IDen er forekomsten som brukes for Power Platform-integrering, i forespørselen.
 
 > [!NOTE]
 > Du kan ikke koble fra miljøer ved hjelp av LCS. Hvis du vil oppheve koblingen til et miljø, åpner du arbeidsområdet **Dataintegrering** i Finance and Operations-miljøet, og deretter velger du **Koble fra**.
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

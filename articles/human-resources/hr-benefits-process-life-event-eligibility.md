@@ -1,33 +1,35 @@
 ---
-title: Behandle rettighet for levetidshendelser
-description: Denne artikkelen viser deg hvordan du kjører prosessen for rettigheter som gjelder levetidshendelser.
-author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+title: Behandle rettighet for levetidshendelse
+description: Dette emnet forklarer hvordan du behandler rettighet for livshendelser.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17ecef1412eb0232fbb4782bd9d2d79f210c7e80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3086718ed8dc0a8da988eb2d4cd07a2fff38e52c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419842"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065899"
 ---
-# <a name="process-life-event-eligibility"></a>Behandle rettighet for levetidshendelser
+# <a name="process-life-event-eligibility"></a>Behandle rettighet for levetidshendelse
 
-Denne artikkelen viser deg hvordan du kjører prosessen for rettigheter som gjelder levetidshendelser.
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dette emnet forklarer hvordan du behandler for rettigheter for livshendelser.
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Behandling**, velger du **Behandling av rettighet for levetidshendelse**.
 
@@ -48,3 +50,6 @@ Denne artikkelen viser deg hvordan du kjører prosessen for rettigheter som gjel
    4. Velg **OK**. Prosessen vil kjøre med parameterne du angir.
 
 4. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 6febc340f140d0b3a3f08ea32a59d9eb4e6e5204
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: fa6054dc26e4306ec16e37b0e6c320342ed40fe0
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920454"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6249150"
 ---
 # <a name="picked-quantity-isnt-sufficient-during-packing-slip-generation"></a>Plukket antall er ikke tilstrekkelig under følgeseddelgenerering
 
@@ -66,8 +66,8 @@ Bruk fremgangsmåten nedenfor til å justere lastlinjeantallet.
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
 1. Velg lasten som følgeseddelen ikke kan genereres for.
-1. I handlingsruten, i fanen **Send og motta** i gruppen **Omvendt**, velger du **Reverser forsendelsesbekreftelse**.
-1. I fanen **Lastlinjer** velger du lastlinjen for varen som forårsaker problemet.
+1. I handlingsruten, i fanen **Send og motta** i gruppen  **Omvendt**, velger du  **Reverser forsendelsesbekreftelse**.
+1. I fanen  **Lastlinjer** velger du lastlinjen for varen som forårsaker problemet.
 1. Velg **Reduser plukket antall** for å justere det plukkede antallet.
 1. Angi feltet **Reduser lastlinje** for å gjenspeile justeringer på lastlinjen.
 
@@ -79,5 +79,5 @@ Bruk fremgangsmåten nedenfor til å tilbakeføre plukkregistreringen.
 
 1. Gå til **Kunder \> Ordrer \> Alle ordrer**.
 1. Velg salgsordren du ikke kan postere en følgeseddel for lasten for.
-1. I fanen **Salgsordrelinjer** velger du salgsordrelinjen som plukkregistreringen ble utført for.
+1. I fanen **Salgsordrelinjer** velger du salgsordrelinjen som plukkregistreringen ble utført for.
 1. Velg **Oppdater linje \> Plukk** for å fjerne merket for varene.

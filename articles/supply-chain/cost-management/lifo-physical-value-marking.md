@@ -2,11 +2,9 @@
 title: LIFO med fysisk verdi og merking
 description: LIFO ("Last in, First out") er en lagermodell der de siste (nyeste) tilgangene tas ut først. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35650dc02ec923994026a3ab7f66dea5a81ed20d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0dfb68803bcced86397d58241887588ee556d32076505dfd64457b3870a236cf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967614"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767490"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk verdi og merking
 
@@ -55,7 +53,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. 
 
-![LIFO uten ta med fysisk verdi](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO uten ta med fysisk verdi.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -91,7 +89,7 @@ Transaksjonen 6a justeres mot tilgangstransaksjonen 4b. Systemet vil ikke utlign
 
 Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. 
 
-![LIFO med ta med fysisk verdi](./media/lifowithincludephysicalvalue.gif) 
+![LIFO med ta med fysisk verdi.](./media/lifowithincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -135,7 +133,7 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 
 Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger. 
 
-![LIFO med merking](./media/lifowithmarking.gif) 
+![LIFO med merking.](./media/lifowithmarking.gif) 
 
 **Nøkkel til diagram**
 
@@ -150,3 +148,6 @@ Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjo
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

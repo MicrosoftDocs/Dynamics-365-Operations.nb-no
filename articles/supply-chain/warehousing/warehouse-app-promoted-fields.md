@@ -1,26 +1,28 @@
 ---
 title: Konfigurere forfremmede felt for trinn i mobilappen Warehouse Management
 description: Dette emnet beskriver hvordan du forfremmer og uthever bestemt informasjon for trinn i oppgaveflytene for mobilappen Warehouse Management.
-author: Mirzaab
+author: MarkusFogelberg
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 392fc4d7e4f423b38e8394fa25d2e42de913bfc6
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920329"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860464"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurere forfremmede felt for trinn i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until GA with 10.0.23 -->
 
 > [!IMPORTANT]
 > Funksjonene som er beskrevet i dette emnet, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
