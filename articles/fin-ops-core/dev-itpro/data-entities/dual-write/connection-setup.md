@@ -2,28 +2,19 @@
 title: Veiledning for oppsett av dobbel skriving
 description: Dette emnet beskriver scenariene som støttes for oppsett av dobbel skriving.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 10/12/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 6450ef7b0a59df3a8da2c8bed3aa9c0b14a9cc97
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744859"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417063"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Veiledning for oppsett av dobbel skriving
 
@@ -138,3 +129,6 @@ Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se
 Hvis du vil ha et eksempel, kan du se [Aktivere tabelltilordningen Kunder V3 til kontakter](enable-entity-map.md#enable-table-map)
 
 Hvis du vil ha en alternativ tilnærming som er basert på datavolumer i hver enhet som må kjøre en innledende synkronisering, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

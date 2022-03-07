@@ -2,11 +2,9 @@
 title: Oversikt over maler og oppsett
 description: Dette emnet dekker maler og oppsett i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 12/12/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,27 +14,27 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 835b283ea93f761791745a41c74b6a12c11eea02
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 888f5295dce601d4ce5d823f14169bbcdfe48d6b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962966"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986100"
 ---
 # <a name="templates-and-layouts-overview"></a>Oversikt over maler og oppsett
 
 
 [!include [banner](includes/banner.md)]
 
-Maler er et grunnleggende element i Microsoft Dynamics 365 Commerce-sidemodellen. Hvis målet er å oppnå størst mulig effektivitet og konsekvens for arbeidsflyter for områderedigering, er det viktig at du lærer deg hvordan du kan dra nytte av maler for webområdet ditt. Tidlige avgjørelser om malstruktur er viktig og kan påvirke kostnadene og fleksibiliteten for daglige, sesongbaserte og områdeomfattende merkeoppdateringer. Godt strukturerte maler har også andre fordeler. De hjelper for eksempel med å forbedre resultatene av søkemotoroptimalisering (SEO) på tvers av hele området og minimere antall feil.
+Maler er et grunnleggende element i sidemodellen for Microsoft Dynamics 365 Commerce. Hvis målet er å oppnå størst mulig effektivitet og konsekvens for arbeidsflyter for områderedigering, er det viktig at du lærer deg hvordan du kan dra nytte av maler for webområdet ditt. Tidlige avgjørelser om malstruktur er viktig og kan påvirke kostnadene og fleksibiliteten for daglige, sesongbaserte og områdeomfattende merkeoppdateringer. Godt strukturerte maler har også andre fordeler. De hjelper for eksempel med å forbedre resultatene av søkemotoroptimalisering (SEO) på tvers av hele området og minimere antall feil.
 
 En god måte å begynne å arbeide med maler på er å forstå de funksjonelle fordelene med maler og oppsett, forskjellen mellom dem og hierarkiet.
 
 Følgende illustrasjon viser sidemodellhierarkiet bak en gjengitt webside.
 
-![Diagram for sidemodell](../commerce/media/page-model-diagram.png)
+![Diagram for sidemodell.](../commerce/media/page-model-diagram.png)
 
-| Enhet        | Basisfunksjon |
+| Entity        | Basisfunksjon |
 |---------------|----------------|
 | Mal      | Maler definerer modulalternativene og grunnstruktur for et sett med oppsett og sideforekomster. |
 | Utseende        | Oppsett definerer det endelige utvalget og ordningen av moduler for en side eller et sett med sider. |
@@ -100,7 +98,7 @@ Forhåndsinnstilt oppsett og egendefinerte oppsett redigeres i forskjellige dele
 
 Følgende illustrasjoner viser scenarier for forhåndsinnstilte og egendefinerte oppsett.
 
-![Forhåndsinnstilte og egendefinerte oppsettsscenarier](../commerce/media/template-figure1.png)
+![Forhåndsinnstilte og egendefinerte oppsettsscenarier.](../commerce/media/template-figure1.png)
 
 Hvis du vil begynne å bruke forhåndsinnstilte oppsett, se [Arbeide med forhåndsinnstilte oppsett](work-with-layouts.md).
 
@@ -111,3 +109,6 @@ Hvis du vil begynne å bruke forhåndsinnstilte oppsett, se [Arbeide med forhån
 [Arbeide med forhåndsinnstilte oppsett](work-with-layouts.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

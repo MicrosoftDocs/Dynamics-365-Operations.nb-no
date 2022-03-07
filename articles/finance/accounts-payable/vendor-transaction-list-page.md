@@ -1,10 +1,12 @@
 ---
 title: Listeside for leverandørtransaksjoner
 description: Dette emnet gir informasjon om listesiden for leverandørtransaksjoner for Microsoft Dynamics 365 Finance.
-author: sunfzam
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTrans
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6029e67cbbe72bbe95082cb7146834c0d7318261
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 17059dc2343df66e899a3c22908875be6b6de4ef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754078"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993244"
 ---
 # <a name="vendor-transactions-list-page"></a>Listeside for leverandørtransaksjoner
 
@@ -94,6 +96,3 @@ Hvert felt har en forskjellig effekt på transaksjonen når du redigerer det:
 - **Rediger vilkårene for kontantrabatt:** Kontantrabattene endres, basert på basisdatoen og vilkårene for kontantrabatt.
 
 Når du er ferdig med å redigere betalingsinnstillingene, velger du **Lukk** for å lagre endringene.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 572d104bbc7024da1ea4b219fd3f544f36a88ccddcf1aa5d18065e2e08b93bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754224"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216592"
 ---
 # <a name="set-up-fixed-assets"></a>Definere anleggsmidler
 
@@ -32,7 +32,7 @@ Parametere kontrollerer den generelle virkemåten i anleggsmidler. Med anleggsmi
 
 Anleggsmidler blir tilordnet til en gruppe når de opprettes. Som standard tilordnes deretter tablåer som er tilordnet anleggsmiddelgruppen, til anleggsmidlet. Tablåer som er konfigurert til å postere til økonomimodulen, er tilknyttet en posteringsprofil. Finanskontoer er definert for hvert tablå i posteringsprofilen, og brukes ved postering av anleggsmiddeltransaksjoner.
 
-![Anleggsmiddelkomponenter.](./media/FAComponents_Updated.png)
+![Anleggsmiddelkomponenter](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Avskrivningsprofiler
 

@@ -2,9 +2,11 @@
 title: Gå gjennom innkrevingsinformasjon
 description: Dette emnet forklarer hvordan du går gjennom innkrevingsinformasjon og forskjellige oppsettsalternativer og innkrevingstransaksjoner.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 59fcaef39460761dbe68273aecb5cbff8850ef031d43393277a17d07dd92db3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9bbfb6537118a9936c127018427b0516e7ea002a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778392"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971534"
 ---
 # <a name="review-collections-information"></a>Gå gjennom innkrevingsinformasjon
 
@@ -140,6 +142,3 @@ Dette emnet forklarer hvordan du går gjennom innkrevingsinformasjon og forskjel
 5. Velg **Vis liste**.
 - Velg en kundekonto eller godta standardoppføringen. Som standard er dette den valgte kundekontoen på listesiden eller i skjemaet som du åpnet dette skjemaet fra. Hvis du åpnet skjemaet fra en listeside, er kundene i listen kundene som er inkludert i purringspuljen som brukes på listesiden.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

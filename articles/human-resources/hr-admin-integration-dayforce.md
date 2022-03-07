@@ -1,33 +1,32 @@
 ---
-title: Konfigurere integrasjon med Dayforce
-description: Integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i denne artikkelen. Du må konfigurere integreringen i både Human Resources og Dayforce før du kan behandle en lønnskjøring.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+title: Konfigurer integrering med Dayforce
+description: Dette emnet beskriver konfigurasjonstrinnene som kreves for integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: PersonnelIntegrationConfiguration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f92850a741f2a0d4d1c2636cbbdf21fe95f307df
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419817"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559467"
 ---
-# <a name="configure-integration-with-dayforce"></a>Konfigurere integrasjon med Dayforce
+# <a name="configure-integration-with-dayforce"></a>Konfigurer integrering med Dayforce
 
-Integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i denne artikkelen. Du må konfigurere integreringen i både Human Resources og Dayforce før du kan behandle en lønnskjøring.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i dette emnet. Du må konfigurere integreringen i både Human Resources og Dayforce før du kan behandle en lønnskjøring.
 
 Når du bruker en tjeneste som Dayforce til å fullføre lønnskjøringer, må du aktivere integrering i Human Resources. Integreringen krever bestemte data fra Human Resources. Derfor må du kontrollere at data som tilordnes til Dayforce, er konfigurert i Human Resources på en måte som støtter integreringen. Integrasjonen bruker følgende brede datakategorier:
 
@@ -36,7 +35,7 @@ Når du bruker en tjeneste som Dayforce til å fullføre lønnskjøringer, må d
 - Lønnsdata, for eksempel lønnssykluser, lønnsperioder og inntektskoder
 - Arbeiderdata
 
-Denne artikkelen beskriver trinnene du må følge for å aktivere integreringen. Den beskriver også hvilke typer data og konfigurasjonsdetaljer som integreringen krever.
+Dette emnet beskriver trinnene du må følge for å aktivere integreringen, og forklarer datatypene og konfigurasjonsdetaljene som integreringen krever.
 
 ## <a name="enable-the-integration"></a>Aktivere integrasjonen
 
@@ -51,10 +50,10 @@ Følg denne fremgangsmåten for å aktivere integrasjonen i Human Resources.
 
 Når integreringen er slått på, opprettes dataeksportpakken og -filene, og frekvensen angis. Du kan endre denne frekvensen etter behov.
 
-Hvis du vil ha mer informasjon om Azure Storage-kontoer og Azure Storage-tilkoblingsstrenger, kan du se følgende Azure-artikler:
+Hvis du vil ha mer informasjon om Azure Storage-kontoer og Azure Storage-tilkoblingsstrenger, kan du se følgende Azure-emner:
 
-- [Om Azure Storage-kontoer](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurere Azure Storage-tilkoblingsstrenger](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Om Azure Storage-kontoer](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurere Azure Storage-tilkoblingsstrenger](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniske detaljer når lønnsintegrasjon er aktivert
 
@@ -122,12 +121,12 @@ Dayforce oppretter følgende fradrag, basert på lønnsinnvirkning som er define
 | Bare bidrag          | Et arbeidsgiverfradrag opprettes.             |
 | Fradrag og bidrag | Fradrag for ansatte og arbeidsgivere opprettes. |
 
-Hvis du vil ha mer informasjon om hvordan du definerer og administrerer et program for fordeler, kan du se følgende artikler:
+Hvis du vil ha mer informasjon om hvordan du definerer og administrerer et program for fordeler, kan du se følgende emner:
 
-- [Levere et program for ansattfordeler](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Opprett en ny fordel](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definere rettighetsregler og policyer for fordel](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Registrere og fjerne fordeler fra arbeidere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Levere et program for ansattfordeler](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Opprette en ny fordel](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definere rettighetsregler og policyer for fordel](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Registrere og fjerne fordeler fra arbeidere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensasjon 
 
@@ -135,22 +134,22 @@ Kompensasjonsstyring brukes til å kontrollere levering av grunnlønn og bonuser
 
 Dayforce bruker kompensasjonsinformasjon til å beregne timesats eller årlig sats for en ansatt. Planer for faste kompensasjoner og konverteringer av lønnssats er påkrevd. Ansatte må tilknyttes en plan for fast kompensasjon.
 
-Hvis du vil ha mer informasjon om kompensasjonsplaner, kan du se følgende artikler:
+Hvis du vil ha mer informasjon om kompensasjonsplaner, kan du se følgende emner:
 
-- [Opprette planer for fast kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Opprette variable kompensasjonsplaner](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Utvikle struktur og planer for lønn/kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Behandle kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Definere kompensasjonsprosess og beregne resultater](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Registrere en ansatt i en fast kompensasjonsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Registrere en ansatt i en variabel kompensasjonsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Opprette planer for fast kompensasjon](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Opprette variable kompensasjonsplaner](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Utvikle struktur og planer for lønn/kompensasjon](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Behandle kompensasjon](/dynamics365/unified-operations/talent/process-compensation)
+- [Definere kompensasjonsprosess og beregne resultater](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Registrere en ansatt i en fast kompensasjonsplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Registrere en ansatt i en variabel kompensasjonsplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Jobber 
 
-En jobb er en samling oppgaver og ansvarsområder som kreves av en person som utfører en jobb. Hvis du vil ha mer informasjon, kan du se følgende artikler:
+En jobb er en samling oppgaver og ansvarsområder som kreves av en person som utfører en jobb. Hvis du vil ha mer informasjon, se følgende emner:
 
-- [Definere komponentene for en jobb](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Definere nye jobber](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Definere komponentene for en jobb](/dynamics365/unified-operations/talent/create-job)
+- [Definere nye jobber](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Stillinger
 
@@ -172,19 +171,19 @@ Ha følgende data og konfigurasjon i bakhodet når du definerer stillinger:
 
 Hvis flere stillinger i samme avdeling er knyttet til den samme jobben, konsolideres de til én stilling i Dayforce.
 
-Hvis du vil ha mer informasjon, kan du se følgende artikler:
+Hvis du vil ha mer informasjon, se følgende emner:
 
-- [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Definere stillinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Definere stillinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Avdelinger
 
 En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon. En avdeling er ansvarlig for et bestemt område i organisasjonen, for eksempel salg, regnskap eller Personale. Du kan bruke avdelinger til å rapportere om funksjonsområder. Avdelinger kan ha ansvar for fortjeneste og tap.
 
-Hvis du vil ha mer informasjon, kan du se følgende artikler:
+Hvis du vil ha mer informasjon, se følgende emner:
 
-- [Opprette en avdeling og knytte den til avdelingshierarkiet](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definere nye avdelinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Opprette en avdeling og knytte den til avdelingshierarkiet](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definere nye avdelinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Lønnssykluser og lønnsperioder
 
@@ -370,7 +369,7 @@ Hvis du skal generere lønn for ansatte i USA og Canada, konfigureres følgende 
 - Kostnadssentre må være angitt som finansdimensjoner og må være det første elementet i standard finansdimensjonsstreng.
 
 > [!NOTE] 
-> Du kan konfigurere Human Resources slik at det kreves at stillinger spesifiserer en avdeling. For å gjøre dette går du til **HR delte stillinger > Stillinger > Avdelinger må oppgis for stillinger**. Vi anbefaler at denne innstillingen iverksettes for integreringen.
+> Du kan konfigurere Human Resources slik at det kreves at stillinger spesifiserer en avdeling. For å gjøre dette går du til **HR delte stillinger > Stillinger > Avdelinger må oppgis for stillinger**. Det anbefales at denne innstillingen iverksettes for integreringen.
 
 ### <a name="job-types"></a>Jobbtyper
 
@@ -676,3 +675,6 @@ Ansatte kan deklarere passinformasjon. Denne informasjonen er av **Pass**-identi
 
 Ansatte kan angi flere identifikasjonsnumre for identifikasjonstypen **Pass**. Men bare den gjeldende aktive passoppføringen er integrert i Dayforce. Hvis alle passoppføringer er utløpt, er passet som sist ble utstedt, integrert i Dayforce.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

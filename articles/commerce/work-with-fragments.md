@@ -2,35 +2,30 @@
 title: Arbeide med fragmenter
 description: Dette emnet beskriver hvorfor, når og hvordan du bruker fragmenter i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 10/16/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4414772"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090750"
 ---
 # <a name="work-with-fragments"></a>Arbeide med fragmenter 
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvorfor, når og hvordan du bruker fragmenter i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Fragmenter muliggjør en sentralisert redigeringsopplevelse for modulkonfigurasjoner som må brukes på nytt på hele området. Topptekst, bunntekst og bannere er for eksempel ofte konfigurert som fragmenter, fordi de deles på tvers av mange sider. Du kan betrakte fragmenter som små websider som kan settes inn i andre sider på området. Fragmenter har sin egen livssyklus. De opprettes, refereres til, oppdateres og slettet med andre ord som uavhengige enheter i redigeringsverktøyene.
 
@@ -67,7 +62,7 @@ Følg denne fremgangsmåten for å konvertere en tidligere konfigurert modul til
 1. I dialogboksen **Lagre som fragment** angir du et navn på fragmentet.
 1. Velg **OK** for å lagre modulkonfigurasjonen som et fragment som kan legges til andre sider.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Opprett et nytt fragment
 
@@ -78,7 +73,7 @@ Følg denne fremgangsmåten for å opprette et nytt fragment i Commerce-områdeb
 1. Velg en modultype for fragmentet.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Når du velger en generisk containermodultype, får du størst fleksibilitet når du må oppdatere og konfigurere fragmentet senere.
 
@@ -93,14 +88,14 @@ Følg denne fremgangsmåten for å legge til et fragment i en side i Commerce-om
 1. I disposisjonsruten til venstre eller direkte i den visuelle sidebyggeren, velger du en container eller et spor der underordnede moduler kan legges til.
 1. Velg ellipsen (**...**) ved siden av navnet på containeren eller sporet.  Hvis du bruker den visuelle sidebyggeren, kan du eventuelt velge plusstegnet (**+**).  
 1. Velg **Legg til fragment**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Hvis containeren eller sporet ikke støtter nye underordnede moduler, er alternativet **Legg til fragment** ikke tilgjengelig.
     
 1. Søk etter og velg et fragment du vil legge til, i dialogboksen **Velg fragment**. Hvis det ikke finnes noen tilgjengelige fragmenter, kan det være at du først må opprette et fragment fra en modultype som valgt container eller spor støtter.
 1. Velg det ønskede fragmentet for å legge det til i containeren eller sporet på siden.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Modulene som er tillatt i en container eller et spor, er definert av malen for siden eller modulenes egne definisjoner.
@@ -127,6 +122,20 @@ Følg denne fremgangsmåten for å redigere et nytt fragment i Commerce-områdeb
 
 Du kan også redigere et fragment ved å velge det på en side, i en mal, eller i et overordnet fragment, og deretter velge **Rediger fragment** i egenskapsruten til høyre.
 
+### <a name="rename-a-fragment"></a>Gi nytt navn til et fragment
+
+Følg denne fremgangsmåten for å gi nytt navn til et eksisterende fragment i områdebygger.
+
+1. Velg **Fragmenter** i navigasjonsruten til venstre.
+1. Velg navnet på fragmentet du vil gi nytt navn til.
+1. Velg **Rediger** for å begynne å redigere fragmentet. Legg merke til at du ikke kan redigere et fragment hvis noen andre allerede redigerer fragmentet.
+1. Velg pennesymbolet ved siden av navnet på fragmentet i egenskapsruten.
+1. Rediger navnet på fragmentet etter behov.
+1. Merk av for å bekrefte navneendringen.
+1. Velg **Fullfør redigering**.
+
+Du kan gi fragmentet et nytt navn etter at det er opprettet ved å redigere det og deretter velge pennesymbolet ved siden av navnet på fragmentet i egenskapsruten.
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over maler og oppsett](templates-layouts-overview.md)
@@ -136,3 +145,6 @@ Du kan også redigere et fragment ved å velge det på en side, i en mal, eller 
 [Arbeide med forhåndsinnstilte oppsett](work-with-layouts.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

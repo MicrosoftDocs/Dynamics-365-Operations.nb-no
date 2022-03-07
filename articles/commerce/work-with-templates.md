@@ -2,36 +2,30 @@
 title: Arbeide med maler
 description: Dette emnet beskriver hvordan du arbeider med maler i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414657"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090800"
 ---
 # <a name="work-with-templates"></a>Arbeide med maler
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du arbeider med maler i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Som diskutert i [Oversikt over maler og oppsett](templates-layouts-overview.md) definerer maler settet med alternativer som er tilgjengelig for nedstrømsforfattere. Maler er nyttige for en bedrifts webredigeringsgruppe av flere årsaker, og godt strukturerte maler kan hjelpe deg med alle disse målene:
 
@@ -55,7 +49,7 @@ Som diskutert i [Oversikt over maler og oppsett](templates-layouts-overview.md) 
 
 Maler endres ved hjelp av redigeringsprogrammet for maler.
 
-Bruk en av en av fremgangsmåtene nedenfor for å åpne malredigeringsprogrammet:
+Følg ett av disse trinnene for å åpne malredigeringsprogrammet i Commerce Site Builder:
 
 - Velg **Maler** i navigasjonsruten for området, og velg deretter malen du vil endre.
 - Velg toppnoden i disposisjonstreet til venstre i sideredigeringen for en eksisterende side. Deretter velger du **Rediger mal** i egenskapsruten til høyre.
@@ -72,7 +66,7 @@ Disposisjonstrevisningen til venstre viser modulalternativene og strukturene som
 
 ## <a name="create-a-new-template"></a>Opprett en ny mal
 
-Hvis du vil opprette en ny mal, følger du trinnene nedenfor.
+Følg denne fremgangsmåten for å opprette en ny mal i områdebygger.
 
 1. Velg **Maler** i navigasjonsruten for området for å åpne malinspeksjonsvisningen.
 1. Velg **Ny mal**.
@@ -91,7 +85,7 @@ Malen er nå teknisk gyldig, og den kan lagres, sjekkes inn og brukes til å opp
 
 ## <a name="add-a-header-and-a-footer"></a>Legge til topptekst og bunntekst
 
-Hvis området ditt allerede har et topptekstfragment, følger du denne fremgangsmåten for å legge til en topptekst og en bunntekst i en mal.
+Hvis området ditt allerede har et topptekstfragment, følger du denne fremgangsmåten i områdebygger for å legge til en topptekst og en bunntekst i en mal.
 
 1. Utvid **Brødtekst**-sporet og dens underordnede sidemodul i disposisjonstreet.
 1. Velg **Topptekst**-sporet.
@@ -104,7 +98,7 @@ Hvis området ditt ikke har et topptekstfragment ennå, se [Opprette et fragment
 
 ## <a name="change-the-template-theme"></a>Endre maltemaet
 
-Følg denne fremgangsmåten for å angi standardtemaet for alle sider som bruker en mal.
+Følg denne fremgangsmåten i områdebygger for å angi standardtemaet for alle sider som bruker en mal.
 
 1. Utvid **Brødtekst**-sporet i disposisjonstreet til venstre.
 1. I **Brødtekst**-sporet velger du sidecontainermodulen (for eksempel **Standardside**).
@@ -116,7 +110,7 @@ Alle nye sider vil nå bruke det valgte temaet som standard. Hvis du vil hindre 
 
 Du kan legge til HTML-**&lt;skript&gt;**-elementer som inneholder JavaScript, i malen din. På denne måten kan du gi standard skriptkodeoppførsel til HTML-hodet og start- og sluttdelen av brødteksten på sidene dine.
 
-Hvis du vil legge til et skript i en mal, følger du disse trinnene.
+Hvis du vil legge til et skript i en mal i områdebygger, følger du disse trinnene.
 
 1. I disposisjonstreet til venstre velger du sporet der du vil legge til **&lt;skript&gt;**-elementet (for eksempel HTML-hodet og start- og sluttdelen av brødteksten).
 1. Velg ellipseknappen for sporet, og velg deretter **Legg til modul**.
@@ -129,7 +123,7 @@ Hvis du vil legge til et skript i en mal, følger du disse trinnene.
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Lagre, sjekke inn, forhåndsvise og publisere en mal
 
-Hvis du vil lagre og sjekke inn en mal, følger du disse trinnene:
+Hvis du vil lagre og sjekke inn en mal i områdebygger, følger du disse trinnene.
 
 1. Velg **Lagre** øverst i malredigeringsprogrammet. Lagrede endringer påvirker ikke nedstrømssider før de er sjekket inn.
 1. Velg **Fullfør redigering**. Dine endringer er nå synlige for nedstrøms arbeidsflyter.
@@ -145,8 +139,23 @@ Når du har forhåndsvist endringene i malen, følger du en av disse fremgangsm�
 > [!WARNING]
 > Når en mal eller en annen CMS-vare (Content Management System) er publisert, er den synlig på Internett. Ikke publiser dokumenter eller aktiva før du er klar til å offentliggjøre dem. Dokumentversjoner som er lagret og sjekket inn, men som ikke er publisert, er bare synlige for godkjente systembrukere.
 
+## <a name="rename-a-template"></a>Gi nytt navn til en mal
+
+Følg denne fremgangsmåten for å gi nytt navn til en eksisterende mal i områdebygger.
+
+1. Velg **Maler** i navigasjonsruten til venstre.
+1. Velg navnet på malen du vil gi nytt navn til.
+1. Velg **Rediger** for å begynne å redigere malen. Legg merke til at du ikke kan redigere en mal hvis noen andre allerede redigerer malen.
+1. Velg pennesymbolet ved siden av navnet på malen i egenskapsruten.
+1. Rediger navnet på malen etter behov.
+1. Merk av for å bekrefte navneendringen.
+1. Velg **Fullfør redigering**.
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over maler og oppsett](templates-layouts-overview.md)
 
 [Arbeide med forhåndsinnstilte oppsett](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

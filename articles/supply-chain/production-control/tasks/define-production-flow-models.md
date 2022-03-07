@@ -1,25 +1,27 @@
 ---
 title: Definere produksjonsflytmodeller
 description: Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean manufacturing er beregnet og opprettholdt.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fb12be6f744cee8af3a845d6b278d1f1462ec5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579142"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977869"
 ---
 # <a name="define-production-flow-models"></a>Definere produksjonsflytmodeller
 
@@ -43,6 +45,3 @@ Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean 
 8. Velg et alternativ i feltet Reaksjon på kapasitetsmangel.
     * Alternativene omfatter: Utsett – utsetter fullstendig behovet for planleggingshendelsen på neste tilgjengelige produksjonsdag, med tilgjengelig kapasitet. Avbryt – Avslutter automatisk planlegging for planleggingshendelsen og lar de relaterte jobbene være uplanlagt.   Legg til for ønsket dag - planlegg de ønskede jobbene for den ønskede perioden. Dette overbelaster cellen for denne dagen og krever at planleggeren ser gjennom og foretar en manuell samhandling.   Distribuer til tilgjengelig perioder - distribuer de ulike jobbene for planleggingshendelsen til alle tilgjengelige produksjonsdager, med start fra den første tilgjengelige dagen. Minste distribusjonsantall er kanban-jobbantallet. Distribusjonen tilordner minste planleggingsantall (kanban-antall) til hver dag med nok tilgjengelig gjennomstrømning.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

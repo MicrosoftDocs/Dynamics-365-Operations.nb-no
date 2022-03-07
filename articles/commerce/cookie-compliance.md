@@ -10,21 +10,20 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 10a58cf7197d2a8596107a42174b35350e72ae11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414544"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5215703"
 ---
-# <a name="cookie-compliance"></a>Samsvar for informasjonskapsel
+# <a name="cookie-compliance"></a>Informasjonskapselsamsvar
 
 [!include [banner](includes/banner.md)]
 
@@ -73,3 +72,6 @@ Hvis en funksjon i et e-handelsområde eller en modul bruker en ikke-vesentlig i
 [Samtykkemodul for informasjonskapsel](cookie-consent-module.md) 
  
 [Topptekstmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

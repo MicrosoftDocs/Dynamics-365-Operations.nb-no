@@ -1,16 +1,13 @@
 ---
 title: Laste opp videoer
-description: Dette emnet beskriver hvordan du laster opp videoer i områdebygger for Microsoft Dynamics 365 Commerce.
+description: Dette emnet beskriver hvordan du laster opp videoer i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
-ms.date: 03/03/2020
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8dd9e710f9a6ea593a0673e7902fadf84ca05cff
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: f481e5d3f323b0c86d637b67c119d13b956d5714dc0d990004834e2be05b370e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594314"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735636"
 ---
 # <a name="upload-videos"></a>Laste opp videoer
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du laster opp videoer i områdebygger for Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
+Dette emnet beskriver hvordan du laster opp videoer i områdebyggeren for Microsoft Dynamics 365 Commerce.
 
 Med mediebiblioteket for Commerce-områdebygger kan du laste opp videoer. Du bør alltid laste opp den versjonen av en video med den høyeste bithastigheten og oppløsningen, fordi videoen automatisk vil bli konvertert til å passe for forskjellige visningsporter og deres stoppunkter.
 
@@ -40,7 +35,7 @@ Med mediebiblioteket for Commerce-områdebygger kan du laste opp videoer. Du bø
 Når du laster opp en video, kan følgende informasjon angis.
 
 - **Tittel, beskrivelse, nøkkelord**: metadata for videoen.
-- **Generer undertekster automatisk**: angir om teksting for hørselshemmede skal genereres automatisk for videoen.
+- **Generer teksting for hørselshemmede automatisk**: angir om teksting for hørselshemmede skal genereres automatisk for videoen (bare engelsk støttes). 
 - **Teksting for hørselshemmede**: angir hvilken teksting for hørselshemmede som skal brukes.
 - **Vanlig lyd**: angir det vanlige lydsporet som skal brukes.
 - **Miniatyrbilde**: angir miniatyrbildet for videoen. Bildet blir generert automatisk hvis det ikke angis.
@@ -73,3 +68,6 @@ Hvis du laster opp flere typer aktiva samtidig (for eksempel bilder og videoer),
 [Tilpasse bildefokuspunkter](dam-custom-focal-point.md)
 
 [Last opp og betjen statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

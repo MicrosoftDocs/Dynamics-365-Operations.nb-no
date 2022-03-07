@@ -2,28 +2,19 @@
 title: Feilsøke problemer knyttet til løsningsbevissthet
 description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer knyttet til løsningsbevissthet.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 79b2920b80ce4a8b419c2a146e15babc061cf64d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: ec5afd92a71c8b12c913de78a513abb0959df88a
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683575"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782067"
 ---
 # <a name="troubleshoot-issues-related-to-solution-awareness"></a>Feilsøke problemer knyttet til løsningsbevissthet
 
@@ -45,3 +36,6 @@ På siden **Dobbel skriving** kan du få en feilmelding som ligner på følgende
 *Finner ikke enheten med\_navnet msdyn dualwriteentitymap med namemapping='Logisk i MetadataCache.*
 
 Hvis du vil løse problemet, må du kontrollere at kjerneløsningen for dobbel skriving er installert i Dataverse. Kjernløsningen for dobbel skriving er en forutsetning for løsningsbevissthet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

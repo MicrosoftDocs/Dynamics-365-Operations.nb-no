@@ -1,12 +1,10 @@
 ---
 title: Laste opp bilder
-description: Dette emnet beskriver hvordan du laster opp bilder i områdebygger for Microsoft Dynamics 365 Commerce.
+description: Dette emnet beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
-ms.date: 03/03/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 69b812c58739357dfdb3f9e65e34e5d54d890284
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963016"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891528"
 ---
 # <a name="upload-images"></a>Laste opp bilder
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du laster opp bilder i områdebygger for Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
+Dette emnet beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
 
 Med mediebiblioteket for Commerce-områdebygger kan du laste opp bilder, enten enkeltvis eller flere samtidig ved hjelp av mapper. Du bør alltid laste opp den versjonen av bildet med høyest oppløsning og kvalitet, fordi bildeskaleringskomponenten automatisk vil optimalisere bildet for forskjellige visningsporter og deres stoppunkter.
 
@@ -45,7 +41,8 @@ Når du laster opp et bilde, kan følgende informasjon angis.
 - **Publiser aktiva etter opplasting**: Når det er merket av i denne avmerkingsboksen, publiseres bildet eller bildene umiddelbart etter opplastingen.
 
 > [!NOTE]
-> Bilderessurser med en kategori som er tilordnet, blir også automatisk merket med kategorien som et nøkkelord for å hjelpe å søke etter anleggsmidler for en bestemt kategori.
+> - Bilderessurser med en kategori som er tilordnet, blir også automatisk merket med kategorien som et nøkkelord for å hjelpe å søke etter anleggsmidler for en bestemt kategori.
+> - Produktdetaljsider genererer **alt-tekst** dynamisk ved hjelp av produktnavnet, slik at endring av **alt-tekst** for et produktbilde ikke har noen innvirkning på det gjengitte bildet.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Navnekonvensjoner for omni-kanals bilder 
 
@@ -56,9 +53,17 @@ Standard navnekonvensjon varierer avhengig av kategorien:
 - Kategori bilder bør ha navnet "**/Categories/\{CategoryName\}.png**"
 - Kundebilder bør gis navnet "**/Customers/\{CustomerNumber\}.jpg**"
 - Bilde for ansatte bør ha navnet "**/Workers/\{WorkerNumber\}.jpg**"
-- Produktbilder bør ha navnet "**/Products/\{ProductNumber\}_000_001.png**"
+- Produktbilder bør ha navnet "**/Products/\{ProductNumber\}\_000_001.png**"
     - 001 er bildesekvensen, og det kan være 001, 002, 003, 004 eller 005
-- Produktvariantbilder bør ha navnet "**/Products/\{ProductNumber\}\_\{Size\}\_\{Color\}\_\{Style\}\_000_001.png**"
+- Produktvariantbilder bør ha navnet "**/Produkter/\{Produktnummer\} \^ \{Stil\} \^ \{Størrelse\} \^ \{Farge\} \^\_000_001.png**"
+    - For eksempel: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
+- Produktvariantbilder med konfigurasjonsdimensjon bør ha navnet "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
+    - For eksempel: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> For produktvariantbilder må det være to mellomrom mellom karetene i filnavnet hvis dimensjonsverdien er tom.
+
+I eksemplene ovenfor brukes standardkonfigurasjonen. Skilletegnet og dimensjonene kan konfigureres, og den nøyaktige navngivningen som kreves, kan variere mellom distribusjonene. En metode som kan brukes til å identifisere den nøyaktige navngivningskonvensjonen som kreves, er å bruke utviklerkonsollen i webleseren til å kontrollere bildeforespørsler for produktvariantene mens du endrer produktdimensjonene på siden med produktdetaljer (PDP) for produktmodeller.
 
 ## <a name="upload-an-image"></a>Laste opp et bilde
 
@@ -96,3 +101,6 @@ Hvis du vil masseopplaste en mappe med bilde i områdebygger, følger du disse t
 [Tilpasse bildefokuspunkter](dam-custom-focal-point.md)
 
 [Last opp og betjen statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

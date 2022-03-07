@@ -1,12 +1,10 @@
 ---
 title: Kalender for vedlikeholdspersoner og planlegging
 description: Dette emnet forklarer kalenderen for vedlikeholdspersoner i forbindelse med planlegging i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorker
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c8856d0c7a7b76318755dc6bcdbb1859de1fa20a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3e5cc7d21a9993985d1ad1fc2684777ff7ceb138
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021485"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354138"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalender for vedlikeholdspersoner og planlegging
 
@@ -34,7 +32,10 @@ Når du planlegger arbeidsordrer, oppretter du en plan for vedlikeholdspersoner,
 
 Skjermbildet nedenfor viser et eksempel på en vedlikeholdsperson som er knyttet til en ressurs som bruker arbeidstidskalenderen "Produksjon".
 
-![Figur 1](media/01-work-order-scheduling.png)
+![Figur 1.](media/01-work-order-scheduling.png)
 
 Kalenderoppsett for verktøy og aktiva er ikke nødvendig i forbindelse med arbeidsordreplanlegging. Det antas at verktøy og aktiva er tilgjengelige hele døgnet for vedlikehold.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

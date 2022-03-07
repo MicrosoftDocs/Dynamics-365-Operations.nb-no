@@ -1,12 +1,10 @@
 ---
 title: Vedlikeholdsrunder
 description: Dette emnet beskriver vedlikeholdsrunder i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 24f019547b9edc932c203d5dc8c73013007af599
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018552"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361048"
 ---
 # <a name="maintenance-rounds"></a>Vedlikeholdsrunder
 
@@ -82,7 +80,7 @@ I **Aktivastyring** kan du opprette vedlikeholdsrunder for ulike aktiva, der du 
 
 Illustrasjonen nedenfor viser et eksempel på en vedlikeholdsrunding som inneholder tre aktiva.
 
-![Figur 1](media/13-preventive-maintenance.png)
+![Figur 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Planlegg vedlikeholdsrunder
@@ -108,11 +106,14 @@ Når du har definert en vedlikeholdsrunde, kjører du en planleggingsjobb for å
 
 De to illustrasjonene nedenfor viser en planlagt jobb dialogboksen **Planlegg vedlikeholdsrunder** og linjer for vedlikeholdsplan som er opprettet i **Alle vedlikeholdsplaner**, som er basert på den planlagte jobben.
 
-![Figur 2](media/14-preventive-maintenance.png)
+![Figur 2.](media/14-preventive-maintenance.png)
 
-![Figur 3](media/15-preventive-maintenance.png)
+![Figur 3.](media/15-preventive-maintenance.png)
 
 - Når arbeidsordrer opprettes manuelt for aktiva som dekkes av en leverandørgaranti, vises en dialogboks for å gjøre brukeren oppmerksom på garantien. Opprettingen av arbeidsordren kan deretter avbrytes. Kontrollen av en garantirelasjon utelates for arbeidsordrer som opprettes automatisk.  
 - Du kan sette opp en satsvis jobb i hurtigfanen **Kjør i bakgrunnen** for å planlegge runder med jevne mellomrom.  
 - Hvis en runde er inkludert i flere arbeidsordrepuljer (se [Arbeidsordrepuljer](../work-orders/work-order-pools.md)), vises én post for hver pulje i **Åpne vedlikeholdsplanpuljer**. Dette gjøres for å optimalisere filtreringsalternativene for arbeidsordrepuljer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

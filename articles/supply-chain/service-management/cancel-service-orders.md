@@ -1,7 +1,7 @@
 ---
 title: Annuller serviceordrer
 description: Du kan annullere en serviceordre eller serviceordrelinje fra selve serviceordren, eller du kan annullere flere serviceordrer ved å kjøre en periodisk jobb.
-author: kamaybac
+author: ShylaThompson
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cca6c34bb43702e2c33935a73dc24f1a630065c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 779f535ac617d3f3940cc1b226fa53dc72e3411a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571527"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831608"
 ---
 # <a name="cancel-service-orders"></a>Annuller serviceordrer   
 

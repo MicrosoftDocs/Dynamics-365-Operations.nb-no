@@ -1,12 +1,10 @@
 ---
 title: Konfigurere hjelpeopplevelsen for Finance and Operations-apper
-description: Dette emnet inneholder informasjon om komponentene i hjelpesystemet for noen Microsoft Dynamics 365-apper. Det forklarer også hvordan du kobler disse appene og gir et sammendrag av prosessen med å opprette tilpasset hjelp.
+description: Dette emnet inneholder informasjon om komponentene i hjelpesystemet for noen Microsoft Dynamics 365-apper.
 author: margoc
-manager: AnnBe
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714529"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjelpeopplevelsen for Finance and Operations-apper
 
@@ -34,7 +32,7 @@ I dette emnet vil du finne en oversikt over komponentene i hjelpesystemet for Fi
 
 Finance and Operations-apper omfatter begrepsmessige oversikter og andre emner som publiseres til nettstedet for [https://docs.microsoft.com/dynamics365](/dynamics365/). Du får tilgang til dette innholdet fra **Hjelp**-ruten i produktet. Illustrasjonen nedenfor viser delene av hjelpesystemet.
 
-[![Hjelpearkitektur](./media/help-architecture.png)](./media/help-architecture.png)
+[![Hjelpearkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
 Hjelpesystemet i produktet trekker ut artikler fra docs.microsoft.com og andre tilkoblede nettsteder. Den henter også inn oppgaveveiledninger som er lagret i forretningsprosessmodelereren (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -49,14 +47,14 @@ På siden **Systemparametere** kan systemadministratorer konfigurere tilgang til
 > - Hvis du vil konfigurere Hjelp, må du logge på med en konto i samme leier som leieren der appen er distribuert.
 > - Et LCS-biblioteket kan ikke kobles til fra en forekomst av appen som kjører på en virtuell harddisk (VHD).
 
-[![Skjemaet Systemparametere med innstillinger for hjelp](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Skjemaet Systemparametere med innstillinger for hjelp.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Hvis du vil konfigurere oppgavelinjer for en løsning, følger du denne fremgangsmåten på siden **Systemparametere**.
 
 > [!IMPORTANT]
 > Første gang du åpner fanen **Hjelp**, må du koble til Lifecycle Services. Husk å velge koblingen i midten av skjemaet, vent på tilkoblingen, lukk dialogboksen og velg **OK** for å få tilgang til siden **Systemparametere**.
 >
-> [![Koble til LCS](./media/connect-to-lcs-crop-1024x365.png "Koble til LCS")](./media/connect-to-lcs-crop.png)
+> [![Koble til LCSKoble til LCS](./media/connect-to-lcs-crop-1024x365.png "Koble til LCSKoble til LCS."](./media/connect-to-lcs-crop.png)
 
 1. Velg Lifecycle Services-prosjektet du vil koble til.
 2. Velg BPM-bibliotekene (i det valgte prosjektet) du vil hente oppgaveregistreringer fra.
@@ -99,3 +97,6 @@ Hvis du vil samarbeide med Microsoft om verktøy og prosesser for å tilpasse hj
 [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)  
 [Lage dokumentasjon eller opplæring med Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Tilpasset hjelp for GitHub-repositorium](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Grovplanlegging
 description: Dette emnet gir informasjon om grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966411"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817875"
 ---
 # <a name="operations-scheduling"></a>Grovplanlegging
 
@@ -83,3 +81,6 @@ Hvis du arbeider med begrenset materiale, avhenger planlegging også av tilgjeng
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

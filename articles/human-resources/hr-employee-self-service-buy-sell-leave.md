@@ -1,31 +1,33 @@
 ---
-title: Kjøp og selg permisjon
-description: I Dynamics 365 Human Resources kan du sende forespørsler om å kjøpe og selge permisjon basert på retningslinjene for kjøp og salg som er satt opp av firmaet.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+title: Kjøpe og selge permisjon
+description: Dette emnet beskriver hvordan du sender forespørsler om å kjøpe og selge permisjon i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ESSLeaveBuyRequestEntry, EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e3a10d183c50f4db31f5c08eb6c0ab8cff79b23e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2ddc50540ba0686f18b6e8875e40f11c378c448f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419968"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067485"
 ---
-# <a name="buy-and-sell-leave"></a>Kjøp og selg permisjon
+# <a name="buy-and-sell-leave"></a>Kjøpe og selge permisjon
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I Dynamics 365 Human Resources kan du sende forespørsler om å kjøpe og selge permisjon basert på retningslinjene for kjøp og salg som er satt opp av firmaet.  
 
@@ -49,7 +51,16 @@ Saldoene blir enten automatisk oppdaterte eller går gjennom en godkjenningspros
 
 Saldoene blir enten automatisk oppdaterte eller går gjennom en godkjenningsprosess før oppdatering. Dette avhenger av hvordan kjøpspolicyen er konfigurert.
 
+
+## <a name="troubleshooting"></a>Feilsøking 
+
+Hvis arbeidsflyten for kjøp eller salg av permisjonsforespørsel mislykkes, kan brukere med rettigheten **EssLeaveBuySellRequestApprover** se gjennom meldingsloggen for alle forespørsler om kjøp og salg av permisjon. Hvis du vil gjøre dette, kan du gå til **Permisjon og fravær > Koblinger > Forepørsel om kjøp og salg av permisjon > Meldingslogg** (øverst til venstre). **Meldingsloggen** viser brukere hvordan transaksjonene ble behandlet og den tilknyttede arbeidsflytloggen.
+
+
 ## <a name="see-also"></a>Se også
 
 [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)</br>
 [Administrere policyer for kjøp og salg av permisjon](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,60 +1,61 @@
 ---
-title: Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale
+title: Bruk en kjøpsavtale ved oppretting av en bestilling
 description: Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter en bestilling.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c095eaf1a93d6f1a803c6c9618c930fb2eda2d2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 130524dc8e0c8724e35bf13c6b250ab721383711
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021070"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570375"
 ---
-# <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale
+# <a name="apply-a-purchase-agreement-when-creating-a-purchase-order"></a>Bruk en kjøpsavtale ved oppretting av en bestilling
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter en bestilling. Kjøpsavtalen må brukes når du oppretter bestillingen, fordi det finnes generelle vilkår som bør kopieres til bestillingshodet. Denne oppgaven vil vanligvis utføres av en innkjøpsagent. Som en forutsetning for denne veiledningen må du ha en gyldig kjøpsavtale med en produktantallsforpliktelse for en leverandør og varer. Den samme fremgangsmåten kan brukes hvis du har en kjøpsavtale med andre former for forpliktelser. Du kan bruke denne veiledningen i USMF-demodatafirmaet. Hvis du bruker USMF, kan du kjøre veiledningen "Opprette en kjøpsavtale" først for å definere de nødvendig forutsetningene for denne veiledningen.
-
+Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter en bestilling. Kjøpsavtalen må brukes når du oppretter bestillingen, fordi det finnes generelle vilkår som bør kopieres til bestillingshodet. Denne oppgaven vil vanligvis utføres av en innkjøpsagent. Som en forutsetning for denne veiledningen må du ha en gyldig kjøpsavtale med en produktantallsforpliktelse for en leverandør og varer. Den samme fremgangsmåten kan brukes hvis du har en kjøpsavtale med andre former for forpliktelser.
 
 ## <a name="create-a-purchase-order"></a>Opprette en bestilling
-1. I **navigasjonsruten** går du til **Arbeidsområder > Bestillingsklargjøring**. 
-2. Klikk på **Ny bestilling**.
-3. Klikk på rullegardinknappen i **Leverandørkonto**-feltet for å åpne oppslaget.
-4. Finn og velg ønsket post i listen.
-5. Klikk på koblingen i den valgte raden i listen.
-6. Vis hurtigfanen **Generelt**.
-7. Klikk på rullegardinknappen i feltet **Kjøpsavtale** for å åpne oppslaget. Alle tilgjengelige avtaler for leverandøren vises her. Finn den gyldige avtalen du vil bruke.  
-8. Klikk på koblingen i den valgte raden i listen.
-9. Klikk på **Ja**.
-10. Klikk på **OK**.
 
-## <a name="add-a-line"></a>Legge til en linje
-1. Skriv inn en verdi i **Varenummer**-feltet. Hvis det finnes bestemte dimensjoner for lager eller lokasjon for forpliktelsen, må du angi de samme verdiene på bestillingslinjen for å ta i bruk avtalen.  
-2. Klikk på rullegardinknappen i **Område**-feltet for å åpne oppslaget. Området kan allerede være fylt ut med standardverdien fra bestillingen, eller fra leverandøren. Hvis dette er tilfelle, kan du hoppe over dette trinnet.  
-3. Finn og velg ønsket post i listen.
-4. Klikk på koblingen i den valgte raden i listen.
-5. Angi et tall i **Antall**-feltet. Valider at prisen er kopiert fra forpliktelsen.  
+1. Gå til **Produksjon og leverandører \> Arbeidsområder \> Bestillingsklargjøring**.
+1. Velg **Ny bestilling** i handlingsruten.
+1. Dialogboksen **Opprett bestilling** åpnes. Velg en **leverandørkonto**. Undersøk og juster de andre adressefeltene etter behov.
+1. Vis hurtigfanen **Generelt**.
+1. I **Kjøpsavtale**-feltet finner og velger du den gjeldende avtalen du vil bruke. Alle tilgjengelige avtaler for leverandøren vises her.  
+1. Velg **Ja**.
+1. Velg **OK**.
+
+## <a name="add-a-line"></a>Legg til en linje
+
+1. Skriv inn en verdi i **Varenummer**-feltet. Hvis det finnes bestemte dimensjoner for lager eller lokasjon for forpliktelsen, må du angi de samme verdiene på bestillingslinjen for å ta i bruk avtalen.
+1. Velg rullegardinknappen i **Område**-feltet for å åpne oppslaget. Området kan allerede være fylt ut med standardverdien fra bestillingen, eller fra leverandøren. Hvis dette er tilfelle, kan du hoppe over dette trinnet.  
+1. Finn og velg ønsket post i listen.
+1. Velg koblingen i den valgte raden i listen.
+1. Angi et tall i **Antall**-feltet. Valider at prisen er kopiert fra forpliktelsen.  
 
 ## <a name="look-up-the-commitment"></a>Slå opp forpliktelsen
-1. Klikk på **Oppdater linje**.
-2. Klikk på **Vedlagt**. Her finner du detaljer for kjøpsavtalen. Du kan for eksempel se prisen og om prisen og rabatten er fast, noe som betyr at hvis du endrer prisen eller rabatten i bestillingen til en annen verdi enn i forpliktelsen, fjernes koblingen slik at bestillingslinjen ikke oppfyller forpliktelsen. Du kan også se om Maks. håndheves-alternativet er valgt, noe som betyr at antallet på forpliktelsen ikke kan overskrides ved å summere alle kjøpene som oppfyller forpliktelsen.  
-3. Lukk siden.
+
+1. Velg **Oppdater linje**.
+1. Velg **Vedlagt**. Her finner du detaljer for kjøpsavtalen. Du kan for eksempel se prisen og om prisen og rabatten er fast, noe som betyr at hvis du endrer prisen eller rabatten i bestillingen til en annen verdi enn i forpliktelsen, fjernes koblingen slik at bestillingslinjen ikke oppfyller forpliktelsen. Du kan også se om Maks. håndheves-alternativet er valgt, noe som betyr at antallet på forpliktelsen ikke kan overskrides ved å summere alle kjøpene som oppfyller forpliktelsen.  
+1. Lukk siden.
 
 ## <a name="look-up-the-purchase-agreement"></a>Slå opp kjøpsavtalen
-1. Klikk på **Generelt** i **handlingsruten**.
-2. Klikk på **Kjøpsavtale**.
-3. Lukk siden.
-4. Lukk siden.
 
+1. Klikk på **Generelt** i **handlingsruten**.
+1. Velg **Kjøpsavtale**.
+1. Lukk siden.
+1. Lukk siden.
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

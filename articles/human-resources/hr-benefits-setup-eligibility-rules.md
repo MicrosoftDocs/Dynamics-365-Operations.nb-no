@@ -2,15 +2,12 @@
 title: Konfigurere rettighetsregler og -alternativer
 description: Angi rettighetsregler og alternativer i Fordelsbehandling i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,16 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70054acafc3aec35fd985c0ca81e928519ddd0a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3aae50b8f7fac6991f187ced44f7d122eb7ed40824bd2d53265fa06bfa87dd6a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756130"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer
+# <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer 
 
-Når du har konfigurert de nødvendige parameterne for Fordelsbehandling i Microsoft Dynamics 365 Human Resources, kan du opprette rettighetsregler, pakker, perioder og programmer som du vil knytte til dine fordelsplaner.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Når du har konfigurert de nødvendige parameterne for Fordelsbehandling, kan du opprette rettighetsregler, pakker, perioder og programmer som du vil knytte til dine fordelsplaner.
+
+Rettighetsregler brukes til å fastslå om ansatte er kvalifisert for en plan. Ansatte må oppfylle minst én regel for å være kvalifisert for fordelen. Du har for eksempel to regler i en plan. Den første regelen (linje 1) angir at ansatttypen må være **Ansatt**. Den andre regelen (linje 2) angir at ansatttypen må være heltidsansatt. Derfor er ansatte som oppfyller regel 1, kvalifiserte selv om de bare er ansatt på deltid.
+
+Du kan imidlertid definere én enkelt regel som har flere betingelser. Ansatte må da oppfylle alle betingelsene for regelen for å være kvalifisert for fordelen. Du har for eksempel en regel som kalles **Heltidsansatt**. Denne regelen angir at ansattypet må være **Ansatt** *og* den ansatte må være ansatt på heltid. Ansatte må derfor oppfylle begge betingelsene for regelen for å være kvalifisert.
+
+> [!IMPORTANT]
+> Minst én rettighetsregel må knyttes til hver fordelsplan. Du kan knytte flere regler til en fordel.
 
 ## <a name="create-an-eligibility-rule"></a>Opprette en rettighetsregel
 
@@ -39,9 +45,9 @@ Under åpen registrering kan ansatte velge fordelsplaner. Hvis de ikke er berett
 
 2. I kategorien **Rettighetsregler** velger du **Ny** for å opprette en rettighetsregel. Hvis du vil se planer som er knyttet til en rettighetsregel, velger du **Tilknyttede planer**.
 
-3. Angi verdier for de følgende feltene:
+3. Angi verdier for de følgende feltene.
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- |
    | **Rettighetsregel** | En unik identifikator for rettighetsregelen. |
    | **Beskrivelse** | En beskrivelse av rettighetsregelen. |
@@ -57,9 +63,9 @@ Under åpen registrering kan ansatte velge fordelsplaner. Hvis de ikke er berett
    | **Registreringsperiode** | Tidsperioden når ny ansettelsesregistrering tillates. Hvis du også angir dette i parametere, overstyrer parameterinnstillingen dette. |
    | **Bruk tidligere ansettelsesstatus** | Angir om en ansatts tidligere ansettelsesstatus skal brukes som en del av regelen for fordelsrettigheten. Du kan for eksempel angi en rettighetsregel som frafaller en dekningsventeperiode for alle ansatte som har gått fra statusen **Lagt bort** til statusen **Ansatt** innen 90 dager etter forrige ansettelse. |
 
-4. Under **Tilleggskriterier** velger du følgende alternativer og legger til informasjon etter behov:
+4. Under **Tilleggskriterier** velger du følgende alternativer og legger til informasjon etter behov.
 
-   | Alternativ | Beskrivelse |
+   | Alternativ | beskrivelse |
    | --- | --- |
    | **Kvalifisert alder** | Angir aldersområdet eller -områdene som kreves for å oppfylle rettighetsregelen. |
    | **Kvalifisert avdeling** | Angir avdelingen eller avdelingene som en ansatt må være i for å tilfredsstille rettighetsregelen. |
@@ -73,12 +79,12 @@ Under åpen registrering kan ansatte velge fordelsplaner. Hvis de ikke er berett
    | **Kvalifisert stillingstype** | Angir stillingstypen(e) som oppfyller rettighetsregelen. For eksempel fulltid. |
    | **Kvalifisert stat** | Angir delstatene eller provinsene som oppfyller rettighetsregelen. For eksempel Nord-Dakota USA eller Britisk Columbia, Canada. |
    | **Kvalifiserte ansettelsesbetingelser** | Angir ansettelsesvilkårene som oppfyller rettighetsregelen. For eksempel, frivillig eller gruppekontrakt. |
-   | **Kvalifisert fagforening** | Angir fagforeningsmedlemskapene som oppfyller rettighetsregelen. For eksempel Forklift Drivers of America. </br></br>Når du bruker en fagforeningsbasert rettighetsregel, må fagforeningsposten ha sluttdatoen fylt ut. Du kan ikke la dette stå tomt. |
+   | **Kvalifisert fagforening** | Angir fagforeningsmedlemskapene som oppfyller rettighetsregelen. For eksempel Forklift Drivers of America.</br></br>Når du bruker en fagforeningsbasert rettighetsregel, må fagforeningsposten ha sluttdatoen fylt ut. Du kan ikke la dette stå tomt. |
    | **Berettiget postnummer** | Angir postnumrene som oppfyller rettighetsregelen. For eksempel 58104. |
 
-5. Under **Flere detaljer** kan du vise følgende tilleggsdetaljer:
+5. Under **Flere detaljer** kan du vise følgende tilleggsdetaljer.
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- |
    | **Felt for kvalifisert bruker** | Angir flere rettighetsregler basert på kundedefinerte felt. |
    | **Rettighetstype** | Angir den valgte kriteriekategorien under **Tilleggskriterier**. |
@@ -87,6 +93,72 @@ Under åpen registrering kan ansatte velge fordelsplaner. Hvis de ikke er berett
 
 6. Velg **Lagre**.
 
+## <a name="using-custom-fields-in-eligibility-rules"></a>Bruke egendefinerte felt i rettighetsregler
+
+[Egendefinerte felt](hr-developer-custom-fields.md) kan opprettes i Human Resources for å spore tilleggsinformasjon. Disse feltene kan legges til direkte i brukergrensesnittet, og en kolonne legges dynamisk til i den underliggende tabellen.  
+
+Egendefinerte felt kan brukes i berettigelsesprosessen. Rettighetsregler kan bruke én eller flere egendefinerte feltverdier til å fastsette en ansatts berettigelse.  Hvis du vil legge til et egendefinert felt i en eksisterende regel eller opprette en ny regel, kan du gå til **Fordelsbehandling > Koblinger > Oppsett > Rettighetsregler > Rettighet for egendefinert felt**. På denne siden kan du opprette en regel som bruker ett eller flere egendefinerte felt, og du kan definere flere verdier for hvert egendefinerte felt for å fastslå berettigelse.
+
+Følgende tabeller støtter egendefinerte felt som kan brukes til berettigelsesbehandling:
+
+- Arbeider (HcmWorker)  
+- Jobb (HcmJob)  
+- Stilling (HcmPosition)  
+- Stillingsdetaljer (HcmPositionDetail)  
+- Stillingstilordning  
+- Ansettelse (HcmEmployment)  
+- Ansettelsesdetaljer (HcmEmploymentDetails)  
+- Jobbdetaljer (HcmJobDetails)  
+
+Følgende egendefinerte felttyper støttes i berettigelsesbehandling:
+
+- Tekst  
+- Plukkliste  
+- Antall  
+- Desimal  
+- Avmerkingsboks  
+
+Tabellen nedenfor viser informasjon om skjemafeltet for berettigelse av brukerdefinerte felt.
+
+| Felt  | beskrivelse |
+|--------|-------------|
+| Navn | Navn på kriteriene som opprettes. |
+| Tabellnavn | Tabellnavnet som inneholder det egendefinerte feltet som brukes for rettighetsregelen. |
+| Feltnavn | Feltet som skal brukes for rettighetsregelen. |
+| Operatortype | Viser operatoren som brukes i konfigurasjonen av berettigelse av egendefinerte felt. |
+| Verdi | Viser verdien som brukes i konfigurasjonen av berettigelse av egendefinerte felt. |
+
+## <a name="eligibility-logic"></a>Rettighetslogikk
+
+Følgende deler beskriver hvordan fordelsrettigheter behandles.
+
+### <a name="rules-assigned-to-a-plan"></a>Regler som tilordnes en plan 
+Når flere rettighetsregler er tilordnet en fordelsplan, må en ansatt oppfylle minst én regel for å være kvalifisert til å være med i fordelsplanen.  I følgende eksempel må den ansatte enten oppfylle kravene i **Jobbtype**-regelen eller regelen **Aktive ansatte**.
+
+![Den ansatte må enten oppfylle kravene i Jobbtype-regelen eller regelen Aktive ansatte.](media/RulesAssignedToAPlan.png)
+ 
+### <a name="criteria-within-an-eligibility-rule"></a>Kriterier i en rettighetsregel 
+I en regel definerer du kriteriene som utgjør regelen. I eksempelet over er kriteriene for **Jobbtype**-regel der Jobbtype = Direktører. Derfor må den ansatte være et styremedlem for å være kvalifisert. Dette er en regel der det bare er ett kriterium i regelen.
+
+Du kan definere regler som har flere kriterier. Når du definerer flere kriterier i en rettighetsregel, må en ansatt oppfylle hvert kriterium i regelen for å være kvalifisert for fordelsplanen. 
+
+Regelen **Aktive ansatte** over består for eksempel av følgende kriterier. For at den ansatte skal være kvalifisert basert på **Aktiv ansatt**-regelen, må den ansatte være ansatt i juridisk enhet USMF *og* ha stillingstypen heltid.  
+
+![Kriterier i en rettighetsregel.](media/CriteriaWithinAnEligibilityRule.png) 
+ 
+### <a name="multiple-conditions-within-criteria"></a>Flere betingelser innenfor kriterier
+
+Reglene kan utvides ytterligere for å bruke flere betingelser innenfor ett enkelt kriterium. Den ansatte må oppfylle minst én bestemt betingelse for å være kvalifisert. Hvis du vil bygge på eksemplet ovenfor, kan regelen for **Aktive ansatte** utvides ytterligere til å omfatte ansatte som også er deltidsansatte. Derfor må den ansatte nå være en ansatt i USMF *og* enten heltids- eller deltidsansatt.  
+
+![Flere betingelser innenfor kriterier.](media/MultipleConditionsWithinCriteria.png) 
+ 
+### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Rettighetsbetingelser innenfor et egendefinert feltkriterium 
+I likhet ovenstående kan egendefinerte felt brukes ved oppretting av rettighetsregler og arbeid på samme måte. Det kan for eksempel hende at du vil tilby internettrefusjon til de ansatte i Fargo og København som jobber hjemmefra, fordi internettkostnadene er høyere på disse stedene. Du gjør dette ved å opprette to egendefinerte felt: **Kontoradresse** (plukkliste) og **Jobber hjemmefra** (avmerkingsboks). Deretter oppretter du en regel som kalles **WFH-ansatte**. Kriteriet for regelen er der **Kontoradresse = Fargo** eller **København**, *og* der arbeid **Jobber hjemmefra = Ja**.
+
+Egendefinerte rettighetsregler må defineres som angitt i følgende bilde. 
+
+![Rettighetsbetingelser innenfor et egendefinert feltkriterium.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+ 
 ## <a name="configure-bundles"></a>Konfigurere bunter
 
 Bunter er et sett med relaterte fordelsplaner. Du kan bruke fordelsbunter til å gruppere fordelsplaner som en ansatt må velge for å registrere seg i bestemte fordelsplaner som kan være avhengige av andre fordelsplanregistreringer. Eksempler på når du kanskje vil bruke en bunt, omfatter følgende:
@@ -99,9 +171,9 @@ Bunter er et sett med relaterte fordelsplaner. Du kan bruke fordelsbunter til å
 
 2. I **Bunter**-kategorien velger du **Ny** for å opprette en bunt. Hvis du vil se planer som er knyttet til en bunt, velger du **Tilknyttede planer**.
 
-3. Angi verdier for de følgende feltene:
+3. Angi verdier for de følgende feltene.
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- |
    | **Bunt** | En unik ID for bunten. |
    | **Beskrivelse** | En beskrivelse av bunten. |
@@ -119,9 +191,9 @@ Perioder definerer når fordeler er i kraft, og når ansatte har tillatelse til 
 
 2. I **Perioder**-kategorien velger du **Ny** for å opprette en periode. Hvis du vil kjøre en prosess som knytter alle gyldige, aktive fordelsplaner til fordelsperioden, velger du **Tilknytt planer**. Hvis du vil se planer som er knyttet til en bunt, velger du **Tilknyttede planer**. 
 
-3. Angi verdier for de følgende feltene:
+3. Angi verdier for de følgende feltene.
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- |
    | **Periode** | En unik ID for perioden. |
    | **Gyldig fra-dato og -klokkeslett** | Startdatoen og klokkeslettet da fordelsperioden er aktiv. |
@@ -141,9 +213,9 @@ Du kan bruke fleksible kredittprogrammer til å registrere ansatte i fordeler i 
 
 2. I kategorien **Perioder** velger du **Fleksible kredittprogrammer**.
 
-3. Velg et fleksibelt kredittprogram som skal brukes. Feltene inneholder følgende informasjon:
+3. Velg et fleksibelt kredittprogram som skal brukes. Feltene inneholder følgende informasjon.
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- |
    | ID for fordelskreditt | Den unike ID-en til det fleksible kredittprogrammet. |
    | Beskrivelse | En beskrivelse av det fleksible kredittprogrammet. | 
@@ -163,11 +235,11 @@ Programmer er et sett med fordelsplaner som deler et felles sett med rettighetsr
 
 2. I **Programmer**-kategorien velger du **Ny** for å opprette et program. Hvis du vil opprette unntak for ansatte som ikke oppfyller rettighetsregelkravene, velger du **Overstyr rettighetsregler**. Hvis du vil se planer som er knyttet til et program, velger du **Tilknyttede planer**.
 
-3. Angi verdier for de følgende feltene:
+3. Angi verdier for de følgende feltene.
 
-   | Felt | Beskrivelse |
+   | Felt | beskrivelse |
    | --- | --- |
-   | **Programmet** | En unik ID for programmet. |
+   | **Program** | En unik ID for programmet. |
    | **Beskrivelse** | En beskrivelse av programmet. | 
    | **Gyldig fra-dato og -klokkeslett** | Datoen og klokkeslettet programmet blir aktivt. |
    | **Gyldig til-dato og -klokkeslett** | Datoen og klokkeslettet programmet utløper. Standardverdien er 12/31/2154, som i praksis betyr aldri. |
@@ -176,3 +248,6 @@ Programmer er et sett med fordelsplaner som deler et felles sett med rettighetsr
    | **Rettighetsregler** | Velg rettighetsreglene som skal brukes for fordelsprogrammet. Du definerer rettighetsreglene i kategorien **Rettighetsregler** på denne siden. |
    
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

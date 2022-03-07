@@ -2,11 +2,9 @@
 title: Overvåkingspolicyregler
 description: Du kan bruke overvåkingspolicyer for å evaluere reiseregninger, leverandørfakturaer og bestillinger for å være sikker på at de samsvarer med policyregler du oppretter. Alle reglene som er knyttet til en overvåkingspolicy, kjøres i satsvis modus i henhold til en tidsplan du angir.  Hver policyregel er en forekomst av en policyregeltype. For hver policyregeltype kan bare én policyregel være aktiv om gangen.
 author: panolte
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bbf93f5b8b2f8d95102a52178b096d7e334894483c0ac0bacc62653aea845022
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021247"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744312"
 ---
 # <a name="audit-policy-rules"></a>Overvåkingspolicyregler
 
@@ -30,8 +28,7 @@ ms.locfileid: "5021247"
 
 Du kan bruke overvåkingspolicyer for å evaluere reiseregninger, leverandørfakturaer og bestillinger for å være sikker på at de samsvarer med policyregler du oppretter. Alle reglene som er knyttet til en overvåkingspolicy, kjøres i satsvis modus i henhold til en tidsplan du angir.  Hver policyregel er en forekomst av en policyregeltype. For hver policyregeltype kan bare én policyregel være aktiv om gangen. 
 
-<a name="queries-and-query-types"></a>Spørringer og spørringstyper
------------------------
+## <a name="queries-and-query-types"></a>Spørringer og spørringstyper
 
 Når du oppretter en overvåkingspolicyregel, velger du først en policyregeltype. Policyregeltypen angir applikasjonsobjekttre (AOT)-spørringen som skal brukes som utgangpunkt for å opprette policyregelen. Det angir også hvilken spørringstype som skal brukes for policyregelen. Spørringen bestemmer kildedokumentet som policyregelen evaluerer. Det angir også feltene du velger i kildedokumentet, som identifiserer den juridiske enheten og datoen som skal brukes når dokumenter velges for overvåking. Spørringstypen styrer standardfeltene på spørringssiden og siden Overvåkingspolicyregel. Tabellen nedenfor viser de spørringstypene som er tilgjengelige for overvåkingspolicyregler.
 
@@ -93,10 +90,12 @@ Alle policyreglene for en bestemt overvåkingspolicy deler de samme satsvise par
 
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Brudd på og saker for overvåkingspolicy](audit-policy-violations-cases.md)
 [Definere overvåkingspolicyer for kildedokumenter](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

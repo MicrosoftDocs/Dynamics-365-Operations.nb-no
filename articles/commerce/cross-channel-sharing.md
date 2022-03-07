@@ -1,36 +1,31 @@
 ---
 title: Aktivere og bruke deling på tvers av kanal
-description: Dette emnet beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i Microsoft Dynamics 365 Commerce-områdebygger.
+description: Dette emnet beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i områdebyggeren i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4414773"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742422"
 ---
-# <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruke deling på tvers av kanal
+# <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruke krysskanaldeling
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i Microsoft Dynamics 365 Commerce-områdebygger.
-
-## <a name="overview"></a>Oversikt
+Dette emnet beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i områdebyggeren i Microsoft Dynamics 365 Commerce.
 
 Deling på tvers av kanaler lar forhandleren bruke på nytt og dele innhold mellom flere kanaler på et område. Denne muligheten er nyttig når områdekanalene har et kompatibelt originalspråk, eller når de har flere felles innholdselementer.
 
@@ -53,15 +48,15 @@ Følg denne fremgangsmåten for å aktivere deling på tvers av kanaler i Commer
 1. Gå til **Områdeinnstillinger \> Funksjoner**.
 1. Sett alternativet for funksjonen **På tvers av kanal** til **På**.
 
-    ![Alternativ for på tvers av kanal satt til På i Commerce-områdebygger](./media/enabling-cross-channel-sharing.png)
+    ![Alternativ for på tvers av kanal satt til På i Commerce-områdebygger.](./media/enabling-cross-channel-sharing.png)
 
 Når du har aktivert deling på tvers av kanaler, vil informasjon om på tvers av kanal vises i **Kanaler**-delen under **Områdeinnstillinger \> Funksjoner**, som vist i eksemplet nedenfor.
 
-![Kanalinformasjon som er synlig etter at deling på tvers av kanal er aktivert](./media/channels-cross-channel.png)
+![Kanalinformasjon som er synlig etter at deling på tvers av kanal er aktivert.](./media/channels-cross-channel.png)
 
 Etter at du har aktivert deling på tvers av kanaler, vil **Kanal**-feltet øverst til høyre i Commerce-områdebygger inneholde et alternativ for **nettbutikk på tvers av kanal** som du kan bruke til å administrere innhold på tvers av kanaler, som vist i illustrasjonen nedenfor.
 
-![Alternativet for nettbutikk på tvers av kanaler i Kanaler-feltet etter at deling på tvers av kanal er aktivert](./media/cross-channel-dropdown.png)
+![Alternativet for nettbutikk på tvers av kanaler i Kanaler-feltet etter at deling på tvers av kanal er aktivert.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Opprette og bruke innhold på tvers av kanal
 
@@ -137,3 +132,6 @@ Hvis du nå bruker den primære URL-adressen til kanalen og går til URL-adresse
 [Dokumentere statuser og livssyklus](document-states-overview.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eff30383e06677793313e8abac0339c6032c2a7f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0d5ac48dd390e2f57a7312e3c54af53dd49fd4f7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965836"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434500"
 ---
 # <a name="return-cost-price-and-return-lot-id"></a>Returkostpris og returparti-ID        
 
@@ -40,7 +41,7 @@ Hvis du vil bruke en annen kostnad enn gjeldende kostnad for returer fra en kund
 
 Som standard når du legger varer til en returordre blir varene returnert til lager med den gjeldende kostprisen. Bruk følgende fremgangsmåte for å angi en annen returkostpris.
 
-1.  Klikk på **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Alle returordrer**.
+1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Alle returordrer**.
 
 2.  I **handlingsturen** i **Ny**-gruppen klikker du **Returordre**.
 
@@ -48,15 +49,15 @@ Som standard når du legger varer til en returordre blir varene returnert til la
 
 4.  I skjemaet **Returordre - autorisasjonsreturnr.: %1, %2**, velg en vare, og angi et negativt antall i **Antall**-feltet.
 
-5.  Klikk på hurtigfanen **Linjedetaljer**.
+5.  Klikk hurtigfanen **Linjedetaljer**.
 
-6.  Gå til fanen **Generelt**, og angi en verdi i feltet **Returkostpris**. Denne verdien brukes når varene er returnert til lager. Hvis du ikke angir en verdi, brukes den gjeldende kostprisen når varene er returnert til lager.
+6.  Gå til kategorien **Generelt**, og angi en verdi i feltet **Returkostpris**. Denne verdien brukes når varene er returnert til lager. Hvis du ikke angir en verdi, brukes den gjeldende kostprisen når varene er returnert til lager.
 
 ## <a name="method-2-automatically-generate-the-cost-price-based-on-the-customer-invoice-line"></a>Metode 2: Automatisk generere kostprisen, basert på kundefakturalinjen
 
 Dette er den foretrukne metoden for å opprette returlinjer. Hvis du vil bruke kostnaden for produktene samtidig som da du solgte produktene til kunden, oppretter du en returordre og angir en salgslinje som skal returneres.
 
-1.  Klikk på **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Alle returordrer**.
+1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Alle returordrer**.
 
 2.  I **handlingsturen** i **Ny**-gruppen klikker du **Returordre**.
 

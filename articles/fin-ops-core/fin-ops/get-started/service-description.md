@@ -2,19 +2,19 @@
 title: Tjenestebeskrivelse for Finance and Operations apper
 description: Dette emnet inneholder tjenestebeskrivelsen for Finance and Operations apper.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952372"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898395"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjenestebeskrivelse for Finance and Operations apper
 
@@ -117,7 +117,7 @@ Finance and Operations-apper leveres fra flere steder i Azure-områder over hele
 ### <a name="countryregion-specific-considerations"></a>Lands-/områdespesifikke hensyn
 
 - Kunder i regulerte industri- eller forretningsorganisasjoner som gjør forretninger med enheter i Frankrike, som krever lokal datalagring, bør se gjennom [Finance and Operations i Frankrike](../../dev-itpro/deployment/france-local-deployment.md).
-- Kunder som har operasjoner i Kina, bør gjennomgå [Azure Kina-strategiplan](/azure/china/) og [Finance and Operations styrt av 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
+- Kunder som har operasjoner i Kina, bør gjennomgå [Finance and Operations styrt av 21Vianet i Kina](../../dev-itpro/deployment/china-local-deployment.md).
 - Kunder som har operasjoner i Russland, bør gjennomgå den [russiske loven om lokalisering av personlige data](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>EUs personvernforordning (GDPR)
@@ -356,7 +356,6 @@ Microsoft har forpliktet seg til en tilgjengelighetsrate på 99,9 prosent per m�
 - **[Lisensieringsveiledning](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Bruk denne veiledningen til å finne ut mer om hvordan du lisensierer Dynamics 365.
 - **[Kundestøtte](https://dynamics.microsoft.com/support/)** – Få bransjeledende støtte for Dynamics 365-appene.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Administrer livssyklusen til programmet, og gå mot forutsigbare, gjentakbare implementeringer av høy kvalitet.
-- **[Implementeringsveiledning for Dynamics 365](https://aka.ms/D365ImplementationGuideFlip)** – Implementeringsveiledningen for Dynamics 365 dokumenterer tidstestede Success by Design-prinsipper og inneholder en veiledning for å utforme, bygge, teste og distribuere Dynamics 365-løsninger.
 
 ## <a name="definitions"></a>Definisjoner
 
@@ -429,10 +428,6 @@ Serviceavtalen gjelder for Microsofts onlinetjenester. Hvis du vil ha mer inform
 ### <a name="service-update"></a>Serviceoppdatering
 
 Microsofts Finance and Operations tjenestemiljøer på konsekvent basis gjennom serviceoppdateringer. Kundene definerer sin egen serviceoppdateringskalender basert på deres forretningsbehov. Hvis du vil ha mer informasjon, kan du se [Oppdatering av én versjonstjeneste](../../dev-itpro/lifecycle-services/oneversion-overview.md).
-
-### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
-
-Rammeverket som systematisk styrer en implementering gjennom en serie med vurderinger på kritiske stadier for å sikre optimal arkitektur, sikkerhet, ytelse og brukeropplevelse for en Dynamics 365-løsning.
 
 ### <a name="user"></a>Bruker
 

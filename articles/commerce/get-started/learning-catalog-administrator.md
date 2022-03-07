@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8e487de874fd9b65dc6913cbacf724686f23d33c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: be3e54e412cf8fc4b19f0b6c72908e01ff32d18a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970019"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251459"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Opplæringskatalog for Dynamics 365 Commerce-administratorer
 
@@ -47,3 +47,6 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold  | beskrivelse  | Formater  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Konfigurere og arbeide med e-Handel i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/)              | Internett-kanalene og e-handelsområdet Dynamics 365 Commerce gjør det mulig for forhandlere å skape en tilstedeværelse på nettet for merket sitt. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

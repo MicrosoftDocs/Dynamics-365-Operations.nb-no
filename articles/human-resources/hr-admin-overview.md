@@ -1,31 +1,30 @@
 ---
-title: Oversikt
+title: Oversikt over administrasjon
 description: Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527867"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765620"
 ---
-# <a name="overview"></a>Oversikt
+# <a name="administration-overview"></a>Oversikt over administrasjon
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,15 +40,15 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
 
 - Konfigurere dataintegrering
   - [Velg en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)
-  - [Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)
+  - [Konfigurere Dataverse-integrering](hr-admin-integration-common-data-service.md)
   - [Konfigurere integrering med Finance](hr-admin-integration-finance.md)
   - [Konfigurere integrering med Dayforce](hr-admin-integration-dayforce.md)
   - [Opprette en app for regelmessig dataeksport](hr-admin-integration-recurring-data-export.md)
   - Integrere med Office
-    - [Opplæring i Office-integrering](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Oppdatere enhetsdata i Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Opprette opplevelser for Åpne i Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Feilsøke Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Opplæring i Office-integrering](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Oppdatere enhetsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Opprette opplevelser for Åpne i Excel](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Feilsøke Office-integrering](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Behandle funksjoner](hr-admin-manage-features.md)
 
@@ -84,7 +83,7 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
   - [Lage dokumentasjon eller opplæring med Oppgaveregistrering](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Feilsøke Human Resources
-  - [Få kundestøtte](hr-admin-troubleshooting-support.md)
+  - [Få kundestøtte](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Optimalisere ytelsen med oppgaver for automatisk opprydding](hr-admin-troubleshooting-batch-history.md)
   - [Analyserapporter blir ikke oppdatert](hr-admin-troubleshooting-analytic-reports.md)
   - [Kan ikke opprette et miljø i administrasjonssenteret for Power Apps](hr-admin-troubleshooting-power-apps.md)
@@ -102,3 +101,5 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
 - [Hva er nytt eller endret i Human Resources](hr-admin-whats-new.md)
 - [Utviklerveiledning](hr-developer-overview.md)
 - [Brukerveiledning](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

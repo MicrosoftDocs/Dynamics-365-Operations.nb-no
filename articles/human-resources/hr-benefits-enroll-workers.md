@@ -1,33 +1,35 @@
 ---
 title: Registrere og fjerne fordeler fra arbeidere
-description: Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én eller flere fordeler, samt hvordan flere arbeidere kan registreres i en fordel.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Denne prosedyren viser hvordan du kan registrere én enkelt arbeider i én eller flere fordeler, samt hvordan flere arbeidere kan registreres i en fordel.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 36fd724ff27cbb646f3f8a35ca1b30dc86a5afe4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b99db1e480ea4a53d2bda609eb08105509d95f4
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419812"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065382"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Registrere og fjerne fordeler fra arbeidere
 
 
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én eller flere fordeler, samt hvordan flere arbeidere kan registreres i en fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
+
+Denne prosedyren viser hvordan du kan registrere én enkelt arbeider i én eller flere fordeler, samt hvordan flere arbeidere kan registreres i en fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
 
 ## <a name="enroll-a-single-worker-in-benefits"></a>Registrere én arbeider i fordeler
@@ -58,3 +60,6 @@ Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én ell
 14. Klikk koblingen i den valgte raden i listen.
 15. På denne siden kan du se hvilke ansatte som er registrert i fordelen, i tillegg til ansatte som ikke er registrert.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

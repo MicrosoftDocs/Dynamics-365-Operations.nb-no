@@ -1,7 +1,7 @@
 ---
 title: Serviceordrer
-description: Dette emnet gir en oversikt over hvordan du jobber med serviceordrer.
-author: kamaybac
+description: En serviceordre representerer et besøk av en servicetekniker hos en kunde på en bestemt dato.
+author: ShylaThompson
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e47c3f998b563c775da77c48edcb7b8abcba4a04
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566125"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824492"
 ---
-# <a name="service-orders"></a>Serviceordrer
+# <a name="service-orders"></a>Serviceordrer   
 
 [!include [banner](../includes/banner.md)]
+
 
 En serviceordre representerer et besøk av en servicetekniker hos en kunde på en bestemt dato. Hver serviceordre består av en eller flere serviceordrelinjer. Serviceordrelinjer representerer antall arbeidstimer som må utføres av serviceteknikere, og relaterte varer, utgifter og gebyrer.
 
@@ -38,19 +39,19 @@ Du kan også opprette serviceordrer enkeltvis, uten å knytte dem til en avtale.
 
 
 > [!NOTE]
-> Hvis du vil opprette serviceordrer som ikke er knyttet til en serviceavtale, må du merke av for **Tillat uten serviceavtale** på siden **Servicestyringsparametere**.
+> <P>Hvis du vil opprette serviceordrer som ikke er knyttet til en serviceavtale, må du merke av for <STRONG>Tillat uten serviceavtale</STRONG> i skjemaet <STRONG>Servicestyringsparametere</STRONG>.</P>
 
-### <a name="scenario"></a>Scenario
+**Scenario**
 
 Dette scenariet beskriver en annen situasjon der det er nyttig å opprette en serviceordre som ikke er knyttet til en serviceavtale.
 
-Firmaets fordelingsansvarlig mottar en telefon med forespørsel om øyeblikkelig hjelp med en heis. Det er ikke tid til å opprette en serviceavtale og et prosjekt for servicen. Derfor fordelingsansvarlig oppretter en serviceordre direkte i **Serviceordrer**-siden, knytter serviceordren til et eksisterende prosjekt, og oppretter serviceordrelinjene. Fordelingsansvarlig oppretter også en oppgave eller en objektrelasjon for en eksisterende serviceordre for å registrere arbeid som ikke er tilknyttet serviceavtalen. Hvis du vil ha mer informasjon, se [Opprette serviceordrer manuelt](create-service-orders-manually.md) og [Opprette serviceoppgaverelasjoner](create-service-task-relations.md).
+Firmaets fordelingsansvarlig mottar en telefon med forespørsel om øyeblikkelig hjelp med en heis. Det er ikke tid til å opprette en serviceavtale og et prosjekt for servicen. Derfor fordelingsansvarlig oppretter en serviceordre direkte i **Serviceordrer**-skjemaet, knytter serviceordren til et eksisterende prosjekt, og oppretter serviceordrelinjene. Fordelingsansvarlig oppretter også en oppgave eller en objektrelasjon for en eksisterende serviceordre for å registrere arbeid som ikke er tilknyttet serviceavtalen. Hvis du vil ha mer informasjon, se [Opprette serviceordrer manuelt](create-service-orders-manually.md) og [Opprette serviceoppgaverelasjoner](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Overvåk fremdriften til serviceordren
 
 Hvis du vil overvåke fremdriften til en salgsordre gjennom ulike grupper og arbeidsprosesser, kan du sette opp et system med stadier og årsakskoder for serviceordrer. For hvert stadium kan du angi handlingene som er tillatt. Hvis du vil ha mer informasjon, kan du se [Opprette årsakskoder](create-reason-codes.md).
 
-### <a name="example"></a>Eksempel
+**Eksempel**
 
 En serviceordre godkjennes av fordelingsansvarlig. Fordelingsansvarlig oppdaterer stadiet til serviceordren og angir en årsakskode som indikerer at serviceordren er frigitt til serviceteknikeren. Serviceteknikeren reiser til kundens sted og utfører servicen.
 
@@ -58,7 +59,7 @@ En serviceordre godkjennes av fordelingsansvarlig. Fordelingsansvarlig oppdatere
 
 Du kan angi lagervarer som kreves for serviceordrer. Serviceordren må imidlertid være tilknyttet et prosjekt. Varebehov for serviceordrer behandles via et prosjekt. 
 
-### <a name="example"></a>Eksempel
+**Eksempel**
 
 Serviceordrene som er opprettet fra serviceavtalen behandles av fordelingsansvarlig. For den første serviceordren oppdager fordelingsansvarlig at serviceteknikeren trenger en viktig reservedel som ikke finnes i lagerbeholdningen. Derfor oppretter fordelingsansvarlig et varebehov for reservedelen direkte fra serviceordren.
 
@@ -72,7 +73,7 @@ En av de andre serviceordrene som ble generert for januar, foreldes fordi jobben
 
 ## <a name="post-from-projects"></a>Postere fra prosjekter
 
-På slutten av hver uke vil fordelingsansvarlig postere alle serviceordrer som er tilknyttet et bestemt prosjekt. Derfor fordelingsansvarlig finner det relevante prosjektet i **Prosjekter**-siden og posterer serviceordrene som er fullført. Hvis du vil ha mer informasjon, se [Postere serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+På slutten av hver uke vil fordelingsansvarlig postere alle serviceordrer som er tilknyttet et bestemt prosjekt. Derfor fordelingsansvarlig finner det relevante prosjektet i **Prosjekter**-skjemaet og posterer serviceordrene som er fullført. Hvis du vil ha mer informasjon, se [Postere serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Slett serviceordrer
 

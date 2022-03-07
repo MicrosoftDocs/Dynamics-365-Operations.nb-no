@@ -2,9 +2,11 @@
 title: Definere etterdaterte sjekker
 description: Dette emnet forklarer hvordan du angir om du vil postere journaloppføringer for etterdaterte sjekker og hvilke posteringsjournaler som skal brukes til å slette oppføringer og leverandørbetalinger.
 author: kweekley
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fc1798836d9b905d991adb4c87d55ddce41d260bdbfdad6bf0c4b4feb846ee57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b677056f11a8733bf90f18110b8ee47f6447503b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743079"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976297"
 ---
 # <a name="set-up-postdated-checks"></a>Definere etterdaterte sjekker
 
@@ -51,14 +53,6 @@ Rollen til denne prosedyren er kasserer. Denne fremgangsmåten bruker demonstras
     * Motkontoen for betalingsmetoden vil være en bank.  
 17. Angi ønskede verdier i feltet Betalingskonto.
     * Velg bankkontoen som brukes til å trekke fakturabeløpet.  
-18. Klikk på Lagre.
+18. Klikk Lagre.
 19. Lukk siden.
-> [!NOTE]
-> Hvis du vil postere en etterdatert sjekk til en bankkonto når øktdatoen er senere enn eller lik forfallsdatoen, må du aktivere funksjonen for **Validering av modenhetsdato for postering av betalingsjournal med etterdaterte sjekker til bankkonto**. Ved hjelp av denne funksjonen kan du postere betalingsjournaler for leverandører eller kunder med etterdaterte sjekker når øktdatoen er senere enn eller lik forfallsdatoen.
-> 
-> Når du definerer **Betalingsmåte** (**Leverandør > Betalingsoppsett > Betalingsmåter**), må du ikke fylle ut **Mellomkonto**. I dette tilfellet blir motkontoen fylt ut med bankkontoen, som er definert i **Betalingsmåte**.
->  
-> Når funksjonen er aktivert og øktdatoen er tidligere enn forfallsdatoen, vises følgende feilmelding ved postering av en betalingsjournal: "Forfallsdatoen må være tidligere eller lik øktdatoen hvis motkontotypen er Bank". Hvis funksjonen ikke er aktivert, kan du postere en betalingsjournal med en etterdatert sjekk når øktdatoen er tidligere enn modenhetsdatoen.
-> Denne funksjonen er tilgjengelig i versjon 10.0.21 eller senere.    
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

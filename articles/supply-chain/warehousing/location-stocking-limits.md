@@ -2,26 +2,23 @@
 title: Lokasjon – lagringsgrenser
 description: Dette emnet beskriver funksjonaliteten til lagringsgrenser for lokasjon.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 208662f38b06b1f230bdde5247946a9fefd57cea
-ms.sourcegitcommit: d2dea9ce480f35d0c0b10615c18862695e107d55
+ms.openlocfilehash: 239b9fa8d8e34a92d453d3387881cff7b0a11f28a3c3b1e19891ea3bd78c3d7c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "4607285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714168"
 ---
 # <a name="location-stocking-limits"></a>Lokasjon – lagringsgrenser
 
@@ -84,7 +81,7 @@ I dette eksemplet skal du kjøre en bestillingsmottaksflyt for to linjer. Du må
 
 Du vil først motta et antall på *4* av enheten *PL* i størrelse *S*, og se over plasseringslinjelokasjonene for arbeidet som opprettes. Du vil deretter motta et antall på *4* av enheten *PL* i størrelse *L*, og se over plasseringslinjelokasjonene for arbeidet som opprettes.
 
-1. I lagerappen logger du deg på ved å bruke *24* som bruker-ID og *1* som passord.
+1. I mobilappen Lagerstyring logger du deg på ved å bruke *24* som bruker-ID og *1* som passord.
 1. Velg **Inngående** \> **Kjøpsmottak**.
 1. Motta *4* *PL* av varenummer *D0013* i størrelse *S*.
 1. Se gjennom det plasseringsarbeidet som ble opprettet. Du skal se følgende resultat:
@@ -104,3 +101,6 @@ Hvis du vil forklare denne tydelige feilen, må du forstå utvalgskriteriene for
 
 > [!NOTE]
 > Du kan ikke bruke lagringsgrenser for lokasjon til å styre for eksempel etterfylling av varer som har ulike antall på samme lokasjon. I dette tilfellet bruker du en *etterfyllingsmal*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

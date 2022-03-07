@@ -11,18 +11,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773302"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Komme i gang med Globalt lagerregnskap
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Ved hjelp av Globalt lagerregnskap kan du utføre flere lagerregnskap i Globalt lagerregnskap-finanskontoer du har definert. Du må knytte hver finanskonto for Globalt lagerregnskap til en *konvensjon*. En konvensjon er en samling av følgende typer regnskapspolicyer:
 
@@ -61,9 +60,9 @@ Før du kan aktivere tilleggfunksjonalitet, må du integrere med Microsoft Power
 1. Merk av for avmerkingsboksen i dialogboksen for **Oppsett av Power Platform-miljø**, og velg deretter **Oppsett**. Vanligvis tar oppsettet mellom 60 og 90 minutter.
 1. Når oppsettet av Microsoft Power Platform-miljøet er fullført, viser siden navnet på miljøet. I tillegg viser delen **Power Platform-integrering** setningen "Power Platform-miljøoppsettet er fullført." Globalt lagerregnskap krever ikke et program med dobbel skriving.
 
-Hvis du vil ha mer informasjon, kan du se [Konfigurere etter miljødistribusjon](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
+Hvis du vil ha mer informasjon, kan du se [Konfigurere etter miljødistribusjon](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
 
-### <a name="set-up-dataverse"></a>Definer Dataverse
+### <a name="set-up-dataverse"></a>Konfigurere Dataverse
 
 Før du definerer Dataverse, kan du legge til serviceprinsippene for Globalt lagerregnskap i leietakeren ved å følge disse trinnene.
 
@@ -108,7 +107,7 @@ Følg denne fremgangsmåten for å installere tillegget, slik at du kan bruke Gl
 1. Gå til **Detaljerte opplysninger**.
 1. Gå til **Power Platform-integreringen**, og velg **Oppsett**.
 1. Merk av for avmerkingsboksen i dialogboksen for **Oppsett av Power Platform-miljø**, og velg deretter **Oppsett**. Vanligvis tar oppsettet mellom 60 og 90 minutter.
-1. Når oppsettet av Microsoft Power Platform-miljøet er fullført, går du til hurtigfanen **Miljøtillegg** og velger **Installer et nytt tillegg**.
+1. Når oppsettet av Microsoft Power Platform-miljøet er fullført, går du til hurtigkategorien **Miljøtillegg** og velger **Installer et nytt tillegg**.
 1. Velg **Globalt lagerregnskap**.
 1. Følg installasjonsveiledningen, og godta vilkårene.
 1. Velg **Installer**.

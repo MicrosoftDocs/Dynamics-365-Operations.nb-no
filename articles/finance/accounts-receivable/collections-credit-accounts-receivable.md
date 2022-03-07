@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b143ebead89804af57e7d2dbfa6f7d366c1ae664573776d78bff44763ddeb819
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723925"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814254"
 ---
 # <a name="collections-in-accounts-receivable"></a>Innkrevinger i Kunder
 
@@ -99,7 +99,8 @@ Avskrivningstransaksjonen opprettes i transaksjonsvalutaen.
 
 For mer informasjon, se [Opprette en avskrivningsjournal for en kunde](tasks/create-write-off-journal-customer.md).
 
-## <a name="process-not-sufficient-funds-nsf-payments"></a>Behandle betalinger uten dekning  
+<a name="process-not-sufficient-funds-nsf-payments"></a>Behandle betalinger uten dekning  
+--------------------------------------------
 
 Du kan behandle betalinger uten dekning ved å klikke Betaling uten dekning på Innkrevinger-siden. Når du klikker denne knappen, blir betalingen avbrutt. Hvis det forekommer et gebyr for betalingen uten dekning for kunden, blir det opprettet en tilleggstransaksjon i en betalingsjournal. Gebyrbeløpet er basert på innstillingene for de automatiske tilleggene. De automatiske tilleggene som gjelder for betalinger uten dekning, angis av gebyrgruppen som er valgt på Bankkontoer-siden for den aktuelle bankkontoen.
 

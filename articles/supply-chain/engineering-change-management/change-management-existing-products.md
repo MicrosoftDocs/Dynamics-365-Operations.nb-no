@@ -2,34 +2,40 @@
 title: Aktiver endringsstyring på eksisterende produkter
 description: Dette emnet beskriver hvordan du kan aktivere endringsbehandling for eksisterende produkter. Den beskriver også tilfeller der evnen til å aktivere endringsbehandling er begrenset.
 author: t-benebo
+manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 8b9f34f5980937da62610d9668a95816ba6054ef
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103619"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500868"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktiver endringsstyring på eksisterende produkter
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du kan aktivere endringsbehandling for eksisterende produkter. Den beskriver også tilfeller der evnen til å aktivere endringsbehandling er begrenset.
 
 Når du aktiverer endringsbehandling for et eksisterende produkt, kan du opprette versjoner av produktet og spore endringer som gjøres i det gjennom hele produktets levetid. Derfor kan du spore disse endringene ved hjelp av endringsordrer. Hvis du vil aktivere endringsbehandling, må du konvertere de relevante produktene til *byggeteknikkvarer* (også omtalt som tekniske produkter). Byggeteknikkprodukter er produkter som er versjonsstyrt og administrert gjennom endringsadministrasjon. Det formidles en veiviser som leder deg gjennom konverteringsprosessen.
 
-## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funksjonen
+## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funksjonen i systemet
 
-Funksjonaliteten som beskrives i dette emnet, krever at funksjonene *Behandling av teknisk endring* og *Aktiver endringsstyring på eksisterende produkter* er aktivert for systemet. Hvis du vil ha mer informasjon om hvordan du aktiverer eller deaktiverer disse funksjonene, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
+Hvis du vil bruke denne funksjonen, må du utføre følgende oppgaver:
+
+1. Aktiver funksjonen for endringsbehandling i ingeniørvirksomhet og konfigurasjonsnøkkelen som beskrevet i [Oversikt over styring av teknisk endring](product-engineering-overview.md).
+1. Aktiver funksjonen *Aktiver endringsbehandling for eksisterende produkter* i funksjonsstyring. Hvis du vil ha mer informasjon, kan du se [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Begrensninger og avmålinger
 
@@ -44,9 +50,7 @@ Hvis du har et atskilt produkt, kan du derfor bare endre det til et teknisk prod
 
 En *kategori for teknisk produkt* må tilordnes hvert tekniske produkt. Du gjør denne tilordningen når du kjører veiviseren **Konverter til teknisk produkt**. Kategorier for teknisk produkt må finnes for alle relevante standardprodukter *før* du kan konvertere disse produktene.
 
-Kategorien for teknisk produkt danner et grunnlag for oppretting av et teknisk produkt, og den fastsetter et sett med standardverdier og policyer. Tekniske attributter og deres standardverdier (som definert for den tekniske kategorien) brukes også for det resulterende tekniske produktet. Du kan redigere attributtverdiene og/eller legge til flere tekniske attributter i det resulterende produktet etter behov.
-
-Kategorien for det tekniske produktet må samsvare produktet du tilordner den til. Produkttypen og dimensjonsgruppen må for eksempel samsvare med både produktet og dens kategori for teknisk produkt. Hvis du vil ha mer informasjon, kan du se [Tekniske versjoner og kategorier for teknisk produkt](engineering-versions-product-category.md).
+Kategorien for teknisk produkt danner et grunnlag for oppretting av et teknisk produkt, og den fastsetter et sett med standardverdier og policyer. Kategorien for det tekniske produktet må samsvare produktet du tilordner den til. Produkttypen og dimensjonsgruppen må for eksempel samsvare med både produktet og dens kategori for teknisk produkt. Hvis du vil ha mer informasjon, kan du se [Tekniske versjoner og kategorier for teknisk produkt](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Veiviseren **Konverter til teknisk produkt** kan bare konvertere produkt til tekniske produkter der versjonen ikke er spores i transaksjoner. Derfor må alternativet **Spor versjon i transaksjoner** settes til *Nei* for kategorier for teknisk produkt som du oppretter for å konvertere eksisterende produkter.

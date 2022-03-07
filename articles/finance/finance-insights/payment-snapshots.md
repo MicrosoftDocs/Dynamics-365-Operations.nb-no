@@ -2,28 +2,25 @@
 title: Oversikt over øyeblikksbilder (forhåndsversjon)
 description: Dette emnet beskriver øyeblikksbildefunksjonen, som gjør at du kan lagre en kontantflytprognose for analyse eller sammenligning med faktiske data senere. Når du genererer en kontantstrømprognose, kan du lagre denne prognosen som et øyeblikksbilde. Du kan deretter bruke disse øyeblikksbildene til å redigere kontoene som var inkludert i prognosen, eller sammenligne prognosen i øyeblikksbildet med faktiske data.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 05/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f0d0bdde8b69148c72b8c645e040f0e596ecba92
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 07854d47fa2e42ea0d49cde193a2040415acf089
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645631"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827248"
 ---
 # <a name="snapshots-overview-preview"></a>Oversikt over øyeblikksbilder (forhåndsversjon)
 
@@ -48,3 +45,6 @@ Hvis du vil sammenligne faktiske økonomiske resultater med en prognose som ble 
 
 #### <a name="privacy-notice"></a>Personvernerklæring
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

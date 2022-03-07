@@ -2,15 +2,12 @@
 title: Forbedringer for kontanttransaksjoner
 description: Dette emnet beskriver forbredringer for kontanttransaksjoner i POS for Dynamics 365 Commerce.
 author: anpurush
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0c561c39dfcbfa739c5a22394c05191e7f9bc107
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 509b70b65469bf14714ceaa390f450ddde1d8b76
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414609"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794403"
 ---
 # <a name="cash-management-improvements"></a>Forbedringer for kontanttransaksjoner
 
@@ -62,3 +59,6 @@ I Retail versjon 10.0.3 og senere er følgende funksjoner knyttet til kontanttra
 - Hvis den valgte transaksjonen ikke balanseres under avstemming, må brukeren angi en beskrivelse av årsaken til at den ikke er avstemt. Brukere kan velge en enkelttransaksjon og avstemme den mot relevant årsaksbeskrivelse.
 - Brukere kan fortsette å avstemme og fjerne avstemming av transaksjoner til skiftet er lukket. Når et skift er lukket, kan ikke transaksjonene være uavstemt.
 - Når en bruker velger å lukke et skift, validerer Commerce at det ikke er noen uavstemte kontantstyringstransaksjoner i skiftet. Brukere kan ikke lukke et skift hvis det finnes uavstemte transaksjoner.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

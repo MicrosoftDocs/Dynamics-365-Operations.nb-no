@@ -1,12 +1,10 @@
 ---
 title: Nedetid ved vedlikehold for arbeidsordrer
 description: Dette emnet beskriver hvordan du oppretter registreringer av nedetid ved vedlikehold for aktivumet som er valgt i en arbeidsordre.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 09c20020e5e0b957785a88ad511cedfec50a5f29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020917"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344622"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Nedetid ved vedlikehold for arbeidsordrer
 
@@ -47,7 +45,7 @@ Du kan opprette registreringer av nedetid ved vedlikehold for aktivumet som er v
 
 Illustrasjonen nedenfor viser et eksempel på siden **Årsakskoder for nedetid ved vedlikehold**.
 
-![Figur 1](media/15-work-orders.png)
+![Figur 1.](media/15-work-orders.png)
 
 Når du har opprettet årsakskodene for vedlikeholdsnedetid som du vil bruke, kan du opprette registreringer for nedetid ved vedlikehold for arbeidsordrer og aktiva.
 
@@ -73,18 +71,21 @@ Når du har opprettet årsakskodene for vedlikeholdsnedetid som du vil bruke, ka
 
 Illustrasjonen nedenfor viser et eksempel på en registreringer for nedetid ved vedlikehold.
 
-![Figur 2](media/16-work-orders.png)
+![Figur 2.](media/16-work-orders.png)
 
 Kalenderen som brukes til å beregne en registrering av nedetid ved vedlikehold er avhengig av hva du velger i oppsettet for aktiva og parametere. Hvis en ressurs er valgt for et aktiva i feltet **Ressurs** i hurtigfanen **Anleggsmiddel** på siden **Alle aktiva**, brukes kalenderoppsettet for den tilknyttede ressursgruppen, som vist i følgende illustrasjon.
 
-![Figur 3](media/17-work-orders.png)
+![Figur 3.](media/17-work-orders.png)
 
 Hvis det ikke er valgt en ressurs for aktivumet, brukes standardkalenderen som er valgt på siden **Aktivabehandlingsparametere**, som vist i følgende illustrasjon.
 
-![Figur 4](media/18-work-orders.png)
+![Figur 4.](media/18-work-orders.png)
 
 Klikk på **Aktivabehandling** > **Forespørsler** > **Nedetid ved vedlikehold** hvis du vil se en oversikt over alle registreringer av vedlikeholdsnedetid.
 
 >[!NOTE]
 >Alle kalendere som brukes i modulen **Aktivastyring**, defineres i **Organisasjonsstyring** > **Oppsett** > **Kalendere** > **Kalendere**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

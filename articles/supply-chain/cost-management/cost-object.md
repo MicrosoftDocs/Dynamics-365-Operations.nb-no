@@ -2,11 +2,9 @@
 title: Kostnadsobjekter
 description: Denne artikkelen inneholder informasjon om kostnadsobjekter, og forklarer hvordan kostnader og antall akkumuleres. Et kostnadsobjekt er en enhet som kostnader og antall akkumuleres for. En kostnadsobjektenhet kan være et produkt eller produktvarianter, for eksempel varianter for stil og farge.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65a0f72f8d97bda36bacd691d545807c413f8825
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c6829f24b8efa29b39f5ed742d8ca99e09bcef01
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967664"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910359"
 ---
 # <a name="cost-objects"></a>Kostnadsobjekter
 
@@ -69,15 +67,18 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
 <a name="additional-resources"></a>Tilleggsressurser
 --------
 
-[Produktdimensjonsgruppe](https://technet.microsoft.com/library/aa499382.aspx)
+[Produktdimensjonsgruppe](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Lagringsdimensjonsgruppe](https://technet.microsoft.com/library/hh209317.aspx)
+[Lagringsdimensjonsgruppe](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Sporingsdimensjonsgruppe](https://technet.microsoft.com/library/hh209465.aspx)
+[Sporingsdimensjonsgruppe](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[Hva er nytt eller endret?](../../fin-and-ops/get-started/whats-new-changed.md)
+[Hva er nytt eller endret?](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Kostnadsoppføringer](cost-entries.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

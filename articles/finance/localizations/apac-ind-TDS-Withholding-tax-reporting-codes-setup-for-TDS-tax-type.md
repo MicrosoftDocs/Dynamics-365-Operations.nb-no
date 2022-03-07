@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 4c24e5da90e21c11c8026e63506d34b3323fe998ea59fb99e890d2daf5f6300e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f9325d182f89b98e8b943ae047c55e7e1aeb02f
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738434"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023488"
 ---
 # <a name="set-up-withholding-tax-reporting-codes-for-the-tds-tax-type"></a>Definere rapporteringskoder for kildeskatt for TDS-avgiftstypen
 
@@ -31,7 +31,7 @@ Kildeskattrapporteringskoder brukes til å generere From 26Q- og Form 27Q-oppgav
 
 1. Gå til **Avgift \> > Oppsett \> > Kildeskatt \> >Rapporteringskoder for kildeskatt**.
 
-    [![Siden for rapporteringskoder for kildeskatt.](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
+    [![Siden for rapporteringskoder for kildeskatt](./media/apac-ind-TDS-16.png)](./media/apac-ind-TDS-16.png)
 
 2. Velg **TDS** i **Avgiftstype**-feltet for å definere rapporteringskoder for kildeskatt for TDS-avgiftstypen.
 3. I feltet **Komponent for kildeskatt** velger du TDS-komponenten som du definerer rapporteringskoden for kildeskatt for. Feltet **Komponentgruppe for kildeskatt** viser TDS-komponentgruppen som ble definert for TDS-komponenten du definerer.

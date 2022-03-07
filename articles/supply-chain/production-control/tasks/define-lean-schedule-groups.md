@@ -1,25 +1,28 @@
 ---
 title: Definere lean-planleggingsgrupper
 description: Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-planleggingen.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9d16c0d3192773c32c8dcc57a430607c6b60f97
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: a9ad470d81d94a0af1c4c4dc6c5072354cfd96d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574455"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434110"
 ---
 # <a name="define-lean-schedule-groups"></a>Definere lean-planleggingsgrupper
 
@@ -30,13 +33,13 @@ Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-
 
 ## <a name="define-lean-scheduling-group"></a>Definere lean-planleggingsgruppe
 1. Gå til Behandling av produktinformasjon > Lean manufacturing > Lean-planleggingsgrupper.
-2. Klikk på Ny.
+2. Klikk Ny.
 3. Skriv inn en verdi i feltet Tidsplangruppe.
     * En planleggingsgruppegruppe kan defineres som global gruppe eller spesifikk for en arbeidscelle. I dette enkle eksemplet definerer vi en global gruppe, og arbeidscellen beholdes tom. Innstillingene for denne gruppen gjelder for alle arbeidsceller som ikke har bestemte planleggingsgrupper.  
 4. Velg en farge fra fargevalget.
     * Fargene brukes til å utheve jobbene på listesiden for Kanban-tidsplan eller Kanban-prosesstavlen.  
 5. Merk den valgte raden i listen.
-6. Klikk på koblingen i den valgte raden i listen.
+6. Klikk koblingen i den valgte raden i listen.
 
 ## <a name="associate-product"></a>Tilknytte produkt
 1. Tilknytte et bestemt produkt
@@ -50,9 +53,6 @@ Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-
 1. Tilknytte en varefordelingsnøkkel
     * Legg til en tilknytning i en varetildelingsnøkkel ved hjelp av varerelasjonstypen Gruppe.   Legg merke til at for denne prosessen må du ha en en varefordelingsnøkkel for prognose definert i dataene.  
 2. Velg Gruppe i feltet Type varerelasjon
-3. Klikk på rullegardinknappen i feltet Varefordelingsnøkkel for å åpne oppslaget.
-4. Klikk på koblingen i den valgte raden i listen.
+3. Klikk rullegardinknappen i feltet Varefordelingsnøkkel for å åpne oppslaget.
+4. Klikk koblingen i den valgte raden i listen.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,40 +2,36 @@
 title: Leverandørsamarbeid med kunder
 description: Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med bestillinger og overvåke forsendelseslager.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
-ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
+ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654346"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777627"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverandørsamarbeid med kunder
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverandører kan utføre en rekke forretningsprosesser fra følgende arbeidsområder:
 
 - **Bestillingsbekreftelse** – overvåke og svare på bestillinger (POs).
 - **Leverandørbud** – vise tilbudsforespørsler (RFQ-er), og svare på dem ved å legge inn bud.
 - **Leverandørinformasjon** – vise og oppdatere hoveddata for leverandør.
-- **Fakturering** – arbeide med fakturaer. Dette emnet dekker ikke arbeidsområdet **Fakturering**. Hvis du vil ha mer informasjon om dette arbeidsområdet, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturering** – arbeide med fakturaer. Dette emnet dekker ikke arbeidsområdet **Fakturering**. Hvis du vil ha mer informasjon om dette arbeidsområdet, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Leverandører kan også overvåke informasjon om forsendelseslager.
 
@@ -106,7 +102,7 @@ Personer som arbeider i offentlig sektor, kan se åpne og utløpte tilbudsforesp
 
     Hvis du er invitert til å by, finner du den samme tilbudsforespørselen på siden **Invitasjoner til nytt bud**. Noen ganger vil du kanskje by på en åpen tilbudsforespørsel, men du har ikke blitt invitert til å by. Du kan i så fall kanskje invitere deg selv, forutsatt at kunden har aktivert personlig invitasjon for tilbudsforespørselssaken.
 
-    Forbedre tilgjengeligheten til koblingen **Åpne publiserte tilbudsforespørsler** ved å aktivere funksjonen **Vis Åpne publiserte tilbudsforespørsler-koblingen som en flis**. Denne funksjonen konverterer koblingen til en flis og flytter den til en fremtredende plassering, slik at den er lett å finne.
+    Forbedre tilgjengeligheten til koblingen **Åpne publiserte tilbudsforespørsler** ved å aktivere funksjonen **Vis Åpne publiserte tilbudsforespørsler-koblingen som en flis**. Denne funksjonen konverterer koblingen til en flis og flytter den til en fremtredende plassering, slik at den er lett å finne. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 
 - Velg koblingen **Lukkede publiserte tilbudsforespørsler** for å se en liste over lukkede tilbudsforespørsler som er tilgjengelige for offentligheten. En lukket tilbudsforespørsel er en tilbudsforespørsel som er utløpt. Du kan finne utløpsdatoen og -klokkeslettet i hodet i tilbudsforespørselen.
 
@@ -147,3 +143,6 @@ Tilgjengelig informasjon er leverandørnavnet, adresser, kontaktinformasjon, kon
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

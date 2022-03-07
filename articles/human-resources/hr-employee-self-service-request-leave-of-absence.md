@@ -2,15 +2,12 @@
 title: Be om permisjon
 description: Send en permisjonsforespørsel.
 author: andreabichsel
-manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ESSLeaveofAbsenceRequestEntry, EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1f50e45a9acaf5295b40648ea5701885ae0ea844
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419967"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056330"
 ---
 # <a name="request-a-leave-of-absence"></a>Be om permisjon
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan sende en permisjonsforespørsel og se statusen på forespørslene i Dynamics 365 Human Resources.
 
@@ -53,3 +52,6 @@ Du kan sende en permisjonsforespørsel og se statusen på forespørslene i Dynam
 ## <a name="see-also"></a>Se også
 
 [Suspender permisjon](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

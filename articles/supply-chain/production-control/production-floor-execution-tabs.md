@@ -2,30 +2,27 @@
 title: Utform grensesnittet for produksjonsutførelse
 description: Dette emnet beskriver hvordan du utformer innholdet i brukergrensesnittet for hver konfigurasjon.
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664278"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814686"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Utform grensesnittet for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan utforme innholdet i brukergrensesnittet for hver konfigurasjon som brukes av grensesnittet for produksjonsutførelse. Arbeidere i én arbeidscelle kan for eksempel trenge å åpne jobbinstruksjoner i produksjonen, mens det ikke er nødvendig med instruksjoner i en annen arbeidscelle. I dette tilfellet bør det opprettes to konfigurasjoner, en med en knapp for å åpne dokumentvedlegg og en uten denne knappen.
 
@@ -46,7 +43,7 @@ Følgende elementer vises i illustrasjonen:
 
 Hvis du vil opprette og konfigurere en ny fane, gjør du følgende:
 
-1. Gå til **Produksjonskontroll &gt; Oppsett &gt; Produksjonsutførelse**.
+1. Gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurere produksjonsutførelse**.
 
 1. Velg **Utform faner** i handlingsruten for å åpne siden **Utform faner**.
 
@@ -57,7 +54,7 @@ Hvis du vil opprette og konfigurere en ny fane, gjør du følgende:
 1. Velg følgende innstillinger i toppteksten på siden:
 
     - **Fanenavn** – Angi et navn på fanen.
-    - **Hovedvisning** – Velg mellom de to forhåndsdefinerte jobblistene (*Aktive jobber* eller *Alle jobber*).
+    - **Hovedvisning** – Velg mellom de to forhåndsdefinerte jobblistene (*Aktive jobber*, *Alle jobber* eller *Min maskin*).
     - **Detaljvisning** – Velg mellom en tom verdi eller **Jobbdetaljer**. Hvis du velger den tomme verdien, vil det ikke være noen detaljert visning i fanen. Hvis du velger **Jobbdetaljer**, vil den detaljerte visningen inneholde en detaljert beskrivelse av jobben som er valgt i jobblisten i hovedvisningen.
 
 1. Under **Primær verktøylinje** velger du hvilke knapper som skal være tilgjengelige på den primære verktøylinjen. Kolonnen **Tilgjengelige handlinger** viser en liste over alle knappene som kan legges til. Kolonnen **Valgte handlinger** viser en liste over alle knappene som er inkludert i den gjeldende konfigurasjonen. Bruk knappene mellom kolonnene til å flytte valgte elementer mellom kolonnene etter behov. Bruk opp- og ned-knappene ved siden av kolonnen **Valgte handlinger** til å angi i hvilken rekkefølge knappene skal vises i, i brukergrensesnittet.
@@ -68,7 +65,7 @@ Hvis du vil opprette og konfigurere en ny fane, gjør du følgende:
 
 Etter at du har utformet alle fanene du trenger, kan du knytte dem til en konfigurasjon.
 
-1. Gå til **Produksjonskontroll &gt; Oppsett &gt; Konfigurer produksjonsutførelse**.
+1. Gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurere produksjonsutførelse**.
 
     ![Konfigurer produksjonsutførelse](media/pfe-config-prod-floor-execution.png "Konfigurer produksjonsutførelse")
 
@@ -79,3 +76,6 @@ Etter at du har utformet alle fanene du trenger, kan du knytte dem til en konfig
 1. Fortsett å legge til flere faner etter behov.
 
 1. Bruk knappene **Flytt opp** og **Flytt ned** på verktøylinjen til å ordne fanene etter behov. Fanene blir vist fra venstre mot høyre i den rekkefølgen som vises i skjermbildet ovenfor (fanen øverst vises til venstre).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,16 +11,17 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d8e2a42d8e12a5a9cf18e876b6f9e45ecb877881
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: d2e1e4596a6052ea80d6e578dccf2564269d97444cd5b302acb5968cca2c884f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500029"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782593"
 ---
 # <a name="update-tracking-for-put-away"></a>Oppdateringssporing for plassering
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Den periodiske oppgaven *Oppdateringssporing for plassering* er utformet for å kjøres som en regelmessig satsvis jobb hver natt. Den identifiserer hvilke reiser som har mottatt alle lagertransaksjonene, og hvilke reiser som ikke har noen verdi for den faktiske sluttdatoen. Deretter settes den faktiske sluttdatoen til gjeldende dato etter behov.
 

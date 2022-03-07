@@ -2,11 +2,9 @@
 title: Delegere arbeidselementer i en arbeidsflyt
 description: Hvis du planlegger å være borte fra kontoret eller av andre grunner ikke er tilgjengelig til å behandle arbeidselementer, kan du delegere eller tilordne arbeidselementer til andre brukere.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserSetup, WorkflowDelegationUserListLookup
 audience: Application User
@@ -15,16 +13,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48d8fd06217d318fa8208e11ffa5624f6be25be1
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 128dce6a1b852d908e01c348cb767088031b11a5
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796712"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070103"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegere arbeidselementer i en arbeidsflyt
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 ## <a name="manually-delegate-a-work-item"></a>Delegere et arbeidselement manuelt
 
@@ -60,3 +61,6 @@ Hvis du planlegger å være borte fra kontoret eller å ikke være tilgjengelig 
 8. Angi dato og klokkeslett i feltet **Sluttdato/-klokkeslett**.
 9. Merk av for **Aktivert** for å aktivere denne delegeringsregelen. 
 10. Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet **Kommentar**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

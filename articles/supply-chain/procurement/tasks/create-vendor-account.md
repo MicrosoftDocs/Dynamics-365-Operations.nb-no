@@ -1,26 +1,24 @@
 ---
 title: Opprette en leverandørkonto
 description: Denne fremgangsmåten viser hvordan du oppretter en leverandørkonto, og legger til en adresse og kontaktinformasjon.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e7f5723fc2aa50fc66c825eb09a01e45833b817e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 560fa38dbc1d38e49d76e70b0c9d3c13191745a28192cc5c815b6c172d390410
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758454"
 ---
 # <a name="create-a-vendor-account"></a>Opprette en leverandørkonto
 
@@ -58,3 +56,6 @@ Denne fremgangsmåten viser hvordan du oppretter en leverandørkonto, og legger 
 7. Lukk siden.
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

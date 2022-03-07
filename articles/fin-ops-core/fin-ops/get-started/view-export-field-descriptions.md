@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39dd9a86ffb04d18f61c75fb2c9634e441dc823b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: f7a9e12eae7065bb37fc0ddbb579a0437120c165
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797905"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693527"
 ---
 # <a name="view-and-export-field-descriptions"></a>Vise og eksportere feltbeskrivelser
 
@@ -55,7 +55,7 @@ Siden **Feltbeskrivelser** lar deg vise og eksportere feltbeskrivelser. Du kan s
 
 Følg fremgangsmåten nedenfor for å vise beskrivelsene for en side.
 
-- Skriv inn navn på siden i feltet **Velg en side**. Klikk på eventuelt pilen for å åpne en liste over alle sidene, og bla deretter gjennom eller filtrer listen.
+- Skriv inn navn på siden i feltet **Velg en side**. Klikk eventuelt pilen for å åpne en liste over alle sidene, og bla deretter gjennom eller filtrer listen.
 
 Du kan bruke navnet på siden som vises i brukergrensesnittet (for eksempel **Kunder**), eller kodenavnet (navn på applikasjonsobjekttre) som er tilgjengelig når du høyreklikker på en side (for eksempel **CustTable**).
 
@@ -68,7 +68,7 @@ Hvis du setter alternativet **Inkluder felt uten beskrivelse** til **Ja**, vises
 Følg fremgangsmåten nedenfor for å eksportere beskrivelsene for en side.
 
 1. Velg en siden i feltet **Velg en side**.
-2. Klikk på **Åpne i Microsoft Office** i øvre høyre hjørne, og klikk deretter **FieldDescriptionTmp**.
+2. Klikk **Åpne i Microsoft Office** i øvre høyre hjørne, og klikk deretter **FieldDescriptionTmp**.
 
 ### <a name="searching-for-a-page"></a>Søke etter en side
 
@@ -98,11 +98,11 @@ Gi oss tilbakemelding ved å legge til en kommentar for dette emnet. Hvis du kan
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Jeg finner ikke et felt på siden Feltbeskrivelser
 
-Hvis du vil vise alle feltene på en side, kan du angi **Ja** for alternativet **Inkluder felt uten beskrivelse**. Klikk på feltet **Velg en side** for å kontrollere at du har valgt den riktige siden. Hvis navnet du skrev inn er en del av et annet feltnavn, har du kanskje valgt siden som har det lengste navnet.
+Hvis du vil vise alle feltene på en side, kan du angi **Ja** for alternativet **Inkluder felt uten beskrivelse**. Klikk feltet **Velg en side** for å kontrollere at du har valgt den riktige siden. Hvis navnet du skrev inn er en del av et annet feltnavn, har du kanskje valgt siden som har det lengste navnet.
 
 ### <a name="i-cant-find-a-page-on-the-field-descriptions-page"></a>Jeg finner ikke en side på siden Feltbeskrivelser
 
-Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se avsnittet Søke etter sider tidligere i denne artikkelen. Hvis du har skrevet inn det nøyaktige navnet på siden, kan det hende at feltbeskrivelsene ikke vises hvis det finnes flere sider med samme navn. Klikk på pilen i feltet **Velg en side** for å åpne en filtrert liste over sidene som er tilgjengelige.
+Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se avsnittet Søke etter sider tidligere i denne artikkelen. Hvis du har skrevet inn det nøyaktige navnet på siden, kan det hende at feltbeskrivelsene ikke vises hvis det finnes flere sider med samme navn. Klikk pilen i feltet **Velg en side** for å åpne en filtrert liste over sidene som er tilgjengelige.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

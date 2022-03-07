@@ -2,11 +2,9 @@
 title: Sky- og kantskalaenheter for arbeidsbelastninger for produksjonskjøring
 description: Dette emnet beskriver hvordan arbeidsbelastninger for produksjonskjøringer fungerer med sky- og kantskalaenheter.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,22 +16,25 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967774"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068850"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Sky- og kantskalaenheter for arbeidsbelastninger for produksjonskjøring
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-> [!WARNING]
+> [!IMPORTANT]
+> Arbeidsbelastningen for produksjonsutførelse er for øyeblikket kun tilgjengelig som forhåndsversjon.
+>
 > Noen forretningsfunksjoner støttes ikke fullstendig i den offentlige forhåndsversjonen når arbeidsbelastningsskalaenheter brukes.
+>
+> Du kan ikke kjøre forhåndsversjonen av arbeidsbelastningen for produksjonskjøring på en skalaenhet der også arbeidsbelastningen for lagerkjøring er installert.
 
-Når det gjelder produksjonskjøring, gir sky- og kantskalaenheter følgende funksjoner, selv når kantenhetene ikke er koblet til senteret:
+Ved produksjonsutførelse leverer skalaenheter følgende funksjoner:
 
 - Maskinoperatører og produksjonsledere har tilgang til driftsproduksjonsplanen.
 - Maskinoperatører kan holde planen oppdatert ved å kjøre separat og behandle produksjonsjobber.
@@ -46,7 +47,7 @@ Dette emnet beskriver hvordan arbeidsbelastninger for produksjonskjøringer fung
 
 Som den følgende illustrasjonen viser, er produksjonslivssyklusen delt inn i tre faser: *planlegge*, *kjøre* og *fullføre*.
 
-[![Produksjonskjøringsfaser når ett enkelt miljø brukes](media/mes-phases.png "Produksjonskjøringsfaser når ett enkelt miljø brukes")](media/mes-phases-large.png)
+[![Produksjonskjøringsfaser når ett enkelt miljø brukes](media/mes-phases.png "Produksjonskjøringsfaser når ett enkelt miljø brukes.")](media/mes-phases-large.png)
 
 _Planlegge_-fasen omfatter produktdefinisjon, planlegging, oppretting og planlegging av ordrer og frigivelse. Frigivelsestrinnet viser overgangen fra _Planlegg_-fasen til _Kjøre_-fasen. Når en produksjonsordre frigis, vil produksjonsordrejobbene være synlige på produksjonsgulvet og klare til kjøring.
 
@@ -56,7 +57,7 @@ Når en produksjonsjobb er merket som fullført, flyttes den fra _Kjøre_-fasen 
 
 Som den følgende illustrasjonen viser, blir _Kjøre_-fasen delt som en egen arbeidsbelastning når du bruker skalaenheter.
 
-[![Produksjonskjøringsfaser når skalaenheter brukes](media/mes-phases-workloads.png "Produksjonskjøringsfaser når skalaenheter brukes")](media/mes-phases-workloads-large.png)
+[![Produksjonskjøringsfaser når skalaenheter brukes](media/mes-phases-workloads.png "Produksjonskjøringsfaser når skalaenheter brukes.")](media/mes-phases-workloads-large.png)
 
 Modellen går nå fra en enkelt forekomstinstallasjon til en modell som er basert på senteret og skalaenhetene. _Planlegge_- og _Fullføre_-fasene kjører som Back-Office-operasjoner på senteret, og arbeidsbelastningen for produksjonskjøring kjører på skalaenhetene. Data overføres asynkront mellom senteret og skalaenhetene.
 
@@ -73,6 +74,7 @@ Følgende produksjonskjøringsoppgaver kan for øyeblikket kjøres på arbeidsbe
 - Rapporter svinn
 - Indirekte aktivitet
 - Bryt
+- Ferdigmeld og plasser (krever at du også kjører arbeidsmengden for lagerkjøring på skalaenheten, se også [Ferdigmeld og plasser på en skalaenhet](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeide med arbeidsbelastninger for produksjonskjøring på senteret
 
@@ -88,7 +90,7 @@ Selv om jobben vanligvis kjører automatisk, kan du kjøre den manuelt når som 
 
 Hvis du vil se gjennom registreringsbehandlingsloggen, logger du deg på senteret og går til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Logg over råregistreringsbehandling**. Siden **Logg for råregistreringsbehandling** viser en liste over behandlede råregistreringer og statusen for hver registrering.
 
-![Siden Logg for råregistreringsbehandling](media/mes-processing-log.png "Siden Logg for råregistreringsbehandling")
+![Siden Logg for råregistreringsbehandling.](media/mes-processing-log.png "Siden Logg for råregistreringsbehandling")
 
 Du kan arbeide med en hvilken som helst registrering i listen ved å velge den og deretter velge en av følgende knapper i handlingsruten:
 
@@ -109,3 +111,43 @@ Hvis du vil se gjennom historikken for produksjonsjobber som er behandlet på en
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobben Behandle produksjonssenter til skalaenhet
 
 Jobben _Behandle produksjonssenter til skalaenhet_ behandler data fra senteret til skalaenheten. Denne jobben startes automatisk når arbeidsbelastningen for produksjonskjøring distribueres. Du kan imidlertid kjøre den manuelt når som helst ved å gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Behandle produksjonssenter til skalaenhet**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Ferdigmeld og plasser på en skalaenhet
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+I gjeldende utgivelse støttes operasjoner med ferdigmeld og plasser (for ferdige produkter, koprodukter og biprodukter) av [arbeidsmengden for lagerkjøring](cloud-edge-workload-warehousing.md) (ikke arbeidsmengden for produksjonskjøring). Du må derfor gjøre følgende hvis du vil bruke denne funksjonaliteten når du er koblet til en skalaenhet:
+
+- Installer både arbeidsmengden for lagerkjøring og arbeidsmengden for produksjonskjøring på skalaenheten.
+- Bruk mobilappen Warehouse Management til å ferdigmelde og behandle plasseringsarbeidet. Grensesnittet for produksjonsutførelse støtter ikke disse prosessene for øyeblikket.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
+
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Aktiver og bruk startoperasjonen på en skalaenhet
+
+I gjeldende utgivelse støttes startoperasjonen produksjon og partiordrer av [arbeidsmengden for lagerkjøring](cloud-edge-workload-warehousing.md) (ikke arbeidsmengden for produksjonskjøring). Du må derfor utføre disse oppgavene hvis du vil bruke denne funksjonaliteten når du er koblet til en skalaenhet:
+
+- Installer både arbeidsmengden for lagerkjøring og arbeidsmengden for produksjonskjøring på skalaenheten.
+- Aktiver funksjonen *Starte produksjonsordre på Warehouse Management-arbeidsbelastning for sky- og kantskalaenhet* i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Bruk Warehouse Management-mobilappen til å starte produksjons- eller partiordren.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Aktiver og bruk materialforbruk på en skalaenhet
+
+I den gjeldende versjonen støttes flyten i Warehouse Management-mobilappen for registrering av materialforbruk av [arbeidsmengden for lagerkjøring](cloud-edge-workload-warehousing.md) (ikke arbeidsmengden for produksjonskjøring). Du må derfor utføre disse oppgavene hvis du vil bruke denne funksjonaliteten når du er koblet til en skalaenhet:
+
+- Installer både arbeidsmengden for lagerkjøring og arbeidsmengden for produksjonskjøring på skalaenheten.
+- Aktiver funksjonen *Registrer materialforbruk i mobilappen på en skalaenhet* i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Bruk Warehouse Management-mobilappen til å registrere materialforbruk.
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

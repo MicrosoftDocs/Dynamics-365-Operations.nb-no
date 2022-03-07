@@ -1,97 +1,77 @@
 ---
 title: Utligninger
 description: Dette emnet forklarer hvordan du bruker siden Utligninger til å utligne finanstransaksjoner og tilbakeføre utligninger.
-author: kweekley
-ms.date: 01/31/2022
+author: mikefalkner
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: kweekley
+ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: e98b012210338e7f18cb874eefbc8a023aa4428b
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 7ec52495fba19c69a22d6403ed15cbe33fca542cd5476b5560033e7798f72383
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779866"
 ---
 # <a name="ledger-settlements"></a>Utligninger
 
 [!include [banner](../includes/banner.md)]
 
-Utligning er prosessen ved å samsvare debet- og kredittransaksjoner i økonomimodulen. Utligningen av debet- og kreditbeløpene brukes til å avstemme saldoen i finanskontoen med de detaljerte transaksjonene som utgjør denne saldoen.
+Med utligninger kan du samsvare debet- og kredittransaksjoner i økonomimodulen og merke dem som utlignet. På denne måten kan du kontrollere at relaterte transaksjoner er fjernet. Du kan også tilbakeføre utligninger hvis de ble opprettet ved en feiltakelse.
 
-Utlignede transaksjoner kan utelates fra forespørsler og rapporter. På denne måten er det enklere å analysere de åpne finanstransaksjonene som utgjør saldoen for finanskontoen.
+## <a name="enable-advanced-ledger-settlements"></a>Aktivere avanserte utligninger
 
-> [!IMPORTANT] 
-> Modulene Leverandører (AP) og Kunder (AR) har også utligning av fakturaer og betalinger. Når utligning skjer i AR- og AP-underhovedbøkene, utlignes ikke de tilsvarende hovedbokoppføringene automatisk.
+Siden for avanserte utligninger gir flere muligheter for filtrering og valg av transaksjoner. Gjør følgende for å aktivere siden for avanserte utligninger.
 
-## <a name="ledger-settlement-features"></a>Funksjoner for hovedbokutligning
-I Microsoft Dynamics 365 Finance versjon 10.0.21 ble alternativet **Aktiver avanserte utligninger** fjernet fra siden **Parametere for økonomimodul**. Avansert utligning er nå alltid aktivert.
-I Finance versjon 10.0.25 ble funksjonen **Forståelse av finansutligning og årsavslutning** innført. Denne funksjonen endrer den grunnleggende funksjonaliteten både i utligning og årsavslutning for økonomimodulen. Før du aktiverer denne funksjonen i arbeidsområdet **Funksjonsbehandling**, kan du se, [Forståelse av finansutligning og årsavslutning](awareness-between-ledger-settlement-year-end-close.md).
+1. Velg **Økonomimodul** \> **Finansoppsett** \> **Parametere for økonomimodul**. 
+2. I fanen **Finansutligninger** setter du alternativet **Avanserte utligninget** til **Ja** for å aktivere funksjonen for avansert utligning. Siden **Finansutligninger** vil bli brukt når du velger **Utligninger** i **Periodiske oppgaver**. 
+3. Du må angi listen over kontoer som skal brukes for utligninger for hver kontoplan. Denne listen brukes til å filtrere listen over transaksjoner som vises på siden **Utligninger**. I listen **Kontoplan** velger du en kontoplan, og deretter velger du **Ny** for å legge til nye kontoer i listen.
 
-## <a name="set-up-ledger-settlement"></a>Konfigurerer utligning i hovedbok
-Du må velge hovedkontoene du vil utføre hovedbokutligning for. Det er to måter å velge disse hovedkontoene på.
+## <a name="settle-transactions-by-using-the-advanced-ledger-settlements-page"></a>Utlign transaksjoner ved hjelp av siden for avanserte utligninger
 
-1. Gå til **Økonomimodul** > **Finansoppsett** > **Parametere for økonomimodul**.
-2. På **Utligninger**-fanen velger du kontoplanene du vil velge hovedkontoene fra.
-3. Velg hovedkontoene du vil utføre hovedbokutligning for. Fordi kontoplaner er globale, vil alle firmaer som de valgte kontoplanene er tilordnet til, ha de samme hovedkontoene valgt for hovedbokutligning.
-
-  - eller -
-
-1. Gå til **Økonomimodul** > **Periodiske oppgaver** > **Utligninger**.
-2. Velg **Utligningskontoer**.
-3. I dialogboksen velger du kontoplanene og hovedkontoene du vil utføre hovedbokutligning for. Denne dialogboksen er en snarvei. Eventuelle hovedkontoer du legger til her, gjenspeiles også på siden **Parametere for økonomimodul**.
-
-Du kan bruke de samme grunnleggende fremgangsmåtene for å fjerne hovedkontoer fra finansutligning når som helst. Fjerning av en hovedkonto har ingen innvirkning på tidligere finansutligninger. Hovedkontoen og transaksjonene vil imidlertid ikke lenger vises på siden **Utligning**.
-
-## <a name="settle-transactions"></a><a name="settle-transactions"></a>Utlign transaksjoner
 Hvis du vil utligne finanstransaksjoner, følger du disse trinnene.
 
-1. Gå til **Økonomimodul** > **Periodiske oppgaver** > **Utligninger**.
+1. Velg **Økonomimodul** \> **Periodiske oppgaver** \> **Utligninger**.
 2. Definer filtrene øverst på siden:
 
-    - Velg et datoområde. Du kan også velge en datointervallkode for å automatisk fylle ut datoområdet. Vi anbefaler ikke at du utligner transaksjoner som på går over flere regnskapsår.
-    - Endre posteringslaget etter behov. Du kan ikke utligne transaksjoner som er i forskjellige posteringslag.
-    - Velg et finansdimensjonsett for å vise hovedkontoen og dimensjonene separat.
+    - Velg et datointervall, eller velg **Datointervallkode** for å automatisk fylle ut datointervallet.
+    - Endre posteringslaget etter behov.
+    - Velg et finansdimensjonsett for å vise finanskontoen og dimensjonene separat.
 
-3. Velg **Vis transaksjoner** for å vise alle transaksjonene som samsvarer med filtrene du angav, og listen over kontoer som du angav da du konfigurerte kontoplanen i den forrige delen.
-
-    - Hvis du endrer noen av filtrene eller dimensjonssettene, må du velge **Vis transaksjoner** på nytt.
-    - Hvis du vil filtrere transaksjonene til en enkelt hovedkonto, bruker du filteret i feltet **Finanskonto**. Vi anbefaler ikke at du utfører hovedbokutligning for transaksjoner som posteres til ulike hovedkontoer.
-
-4. Velg linjer for utligning. Verdien i feltet **Valgt beløp** øverst på siden økes eller reduseres for å gjenspeile det totale beløpet på de valgte linjene.
-5. Når du er ferdig med å velge transaksjoner, velger du **Merk som valgt**. For hver valgte transaksjon vises det en hake i **Merket**-kolonnen. I tillegg økes eller reduseres verdien i feltet **Merket beløp** over rutenettet for å gjenspeile det totale beløpet på de merkede linjene.
-6. Når verdien i feltet **Merket beløp** er **0** (null), velger du **Utligne merkede transaksjoner**. Statusen for de merkede transaksjonene oppdateres til **Utlignet**.
-
-    > [!IMPORTANT]
-    > Alle transaksjoner du har merket for utligning for den aktive juridiske enheten, blir utlignet, selv om de ikke vises i øyeblikket på Utligning-siden fordi du brukte et filter.
+3. Velg **Vis transaksjoner** for å vise alle transaksjonene som samsvarer med filtrene du angav, og listen over kontoer som du angav da du konfigurerte kontoplanen i den forrige delen. Hvis du endrer noen av filtrene eller dimensjonssettene, må du velge **Vis transaksjoner** på nytt.
+4. Velg én eller flere linjer som du vurderer for utligning. Verdien for feltet **Valgt beløp** øverst på siden økes eller reduseres med det totale beløpet på linjene som du har valgt.
+5. Når du er ferdig med å velge transaksjoner, velger du **Merk som valgt**. Det vises en hake i **Merket**-kolonnen for hver transaksjon du har valgt. I tillegg økes eller reduseres verdien for feltet **Merket beløp** over rutenettet med det totale beløpet på linjene du merket.
+6. Når **Merket beløp**-verdien er **0** (null), velger du **Utligne merkede transaksjoner**. Statusen for de merkede transaksjonene oppdateres til **Utlignet**.
 
 ## <a name="make-transactions-easier-to-find"></a>Gjøre det enklere å finne transaksjoner
-Siden **Utligninger** inkluderer funksjoner som gjør det enklere å vise transaksjoner som er nødvendige for utligning.
 
-- Bruk filteret **Merket** til å filtrere transaksjoner basert på om **Merket**-avmerkingsboksen for transaksjonene er merket av.
-- Bruk **Status**-filteret til å filtrere transaksjoner basert på statusen.
-- Velg **Sorter etter absolutt beløp** for å sortere beløpene etter absolutt verdi. På denne måten kan du gruppere debet- og kreditoppføringer som har samme beløp.
+Siden **Finansutligninger** inkluderer funksjoner som gjør det enklere å vise transaksjoner som er nødvendige for utligning.
+
+- Knappen **Fjern merket** sletter feltet **Merket** for alle linjer som er valgt.
+- Filteret **Merket** lar deg filtrere transaksjoner basert på om **Merket**-feltet for transaksjonene er merket eller fjernet.
+- Filteret **Status** lar deg filtrere transaksjoner basert på om den tilhørende statusen er **Utlignet** eller **Ikke utlignet**.
+- Knappen **Sorter etter absolutt beløp** lar deg sortere beløpene etter absoluttverdi, slik at du kan gruppere debet og kreditt som har samme beløp.
 
 ## <a name="reverse-a-settlement"></a>Tilbakeføre en utligning
+
 Du kan tilbakeføre en utligning som ble gjort ved en feiltakelse.
 
-1. Følg trinn 1 til 3 i delen [Utligne transaksjoner](#settle-transactions) for å vise transaksjonene du er interessert i.
+1. Følg trinn 1 til 3 i delen "Utlign transaksjoner ved hjelp av siden for avanserte utligninger" for å vise transaksjonene du leter etter.
 2. Velg **Utlignet** i **Status**-filteret.
-3. Velg linjer for tilbakeføring.
-4. Velg **Tilbakefør merkede transaksjoner**. Statusen for alle transaksjoner som har samme utlignings-ID, oppdateres til **Ikke utlignet**.
+3. Velg én eller flere linjer som du vurderer for tilbakeføring. Verdien for feltet **Valgt beløp** øverst på siden økes eller reduseres med det totale beløpet på linjene som du har valgt.
+4. Når du er ferdig med å velge transaksjoner, velger du **Merk som valgt**. Det vises en hake i **Merket**-kolonnen for hver transaksjon du har valgt. I tillegg økes eller reduseres verdien for feltet **Merket beløp** øverst på siden med det totale beløpet på linjene du merket.
+5. Når **Merket beløp**-verdien er **0** (null), velger du **Tilbakefør merkede transaksjoner**. Statusen for de merkede transaksjonene oppdateres til **Ikke utlignet**.
 
-    > [!IMPORTANT]
-    > Alle transaksjoner som har samme utlignings-ID, blir tilbakeført, selv om de ikke er merket. Fire linjer ble for eksempel merket og utlignet. Alle de fire linjene har samme utlignings-ID. Hvis du merker én av disse fire linjene og deretter velger **Tilbakefør merkede transaksjoner**, tilbakeføres alle de fire linjene.
+## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Oppdater listen over kontoer som er inkludert i listen over transaksjoner
 
-
-
+Velg **Utligningskontoer** for å åpne en dialogboks der du kan redigere kontoene som er inkludert i listen over transaksjoner. Velg **Ny** for å legge til nye kontoer i listen. Denne listen brukes til å filtrere listen over transaksjoner som vises på siden **Utligninger**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

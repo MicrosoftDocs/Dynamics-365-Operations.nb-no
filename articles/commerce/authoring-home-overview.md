@@ -1,37 +1,32 @@
 ---
-title: Oversikt over redigeringsside
+title: Oversikt over redigering av side
 description: Dette emnet inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b5e1e7dd669a9608d385086cf24d388b065c9ca6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414623"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799883"
 ---
-# <a name="authoring-page-overview"></a>Oversikt over redigeringsside
+# <a name="authoring-page-overview"></a>Oversikt over redigering av side
 
   
  [!include [banner](includes/banner.md)]
 
 Dette emnet inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Webområder kan opprettes for å støtte ulike forretningsbehov. De kan representere en hel bedrift, tilby en enkelt kanal i firmaet eller målrette en bestemt målgruppe eller et spesifikt segment av en målgruppe. Det kan for eksempel hende at en klesprodusent har et webområde som viser frem alle merkene i selskapet. Den samme klesprodusenten kan da ha et separat webområde for hver av disse merkene, og også et sett med webområder som har luksus, utendørsmote og barnemote.
 
@@ -122,3 +117,6 @@ Når redigeringsverktøyet er lastet, kan du velge **Hjem** for å gå tilbake t
 [Vurderinger for søkemotoroptimalisering (SEO) for området](search-engine-optimization-considerations.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Definer kanalspesifikke rabatter
 description: Forhandlere angir ofte ulike rabatter i forskjellige kanaler. Dette emnet beskriver begrepene du trenger å kjenne til for å opprette en rabatt for en bestemt kanal.
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 539a6f2df46450c5e0fd18ba69501432d6f3fbdd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14b6f8f4a7d344111718fad94418bc3dbb5c9b1e113c0fd613350c49a2511d4f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759317"
 ---
 # <a name="define-channel-specific-discounts"></a>Definere kanalspesifikke rabatter
 
@@ -40,7 +37,7 @@ Handel bruker prisgrupper til å definere kanalspesifikke rabatter. Prisgrupper 
 
 ## <a name="price-groups"></a>Prisgrupper
 
-[![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Prisgrupper.](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Diagrammet over illustrerer relasjonen mellom enheter som kan være på en transaksjon (kanal, katalog, tilknytning, kunde, fordelskort) og de ulike typene rabatter som kan konfigureres. Alle transaksjoner skjer i en kanal, slik at kanalen er garantert å finnes på en transaksjon. De gjenværende enhetene er valgfrie. Det er en kobling til en relatert prisgruppe på hver hoveddataside der du kan vise og legge til prisgrupper etter behov. En prisgruppe brukes til å relatere fire forskjellige typer enheter til rabatter, prisjusteringer og forretningsavtaler. Vi anbefaler at du planlegger en strategi for hvordan du navngir prisgrupper for å holde orden på dem. Ett alternativ er å bruke en bokstav eller tallprefiks eller suffiks til å skille mellom de ulike typene. For eksempel 1-xxxxx for kanalprisgrupper og 2-xxxxx i katalogprisgrupper. Det er fire forespørselssider som fokuserer på hver handelsenhet som kan ha rabatter som er knyttet til dem.
 
@@ -62,3 +59,6 @@ Følgende eksempel viser oppgavene med å konfigurere en kanalrabatt.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Prisjusteringer og rabatter](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

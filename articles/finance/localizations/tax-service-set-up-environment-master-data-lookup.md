@@ -2,7 +2,7 @@
 title: Aktiver hoveddataoppslag for mva-beregningskonfigurasjon
 description: Dette emnet beskriver hvordan du konfigurerer og aktiverer oppslagsfunksjonen for hoveddata i avgiftsberegning.
 author: kai-cloud
-ms.date: 11/22/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,21 +15,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867358"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749516"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktiver hoveddataoppslag for mva-beregningskonfigurasjon 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer og aktiverer oppslagsfunksjonen for hoveddata i avgiftsberegning. En rullegardinliste er tilgjengelig for å velge verdier i mva-beregningskonfigurasjonen for felter som **Juridisk enhet**, **Leverandørkonto**, **Varekode** og **Leveringsbetingelse**. Disse verdiene kommer fra det tilkoblede Microsoft Dynamics 365 Finance-miljøet ved hjelp av Microsoft Dataverse-datakilden.
-
-> [!NOTE] 
-> Funksjonen for hoveddataoppslag for avgiftsberegning er valgfri funksjonalitet. Du kan hoppe over følgende trinn hvis du deaktiverer funksjonen **Støtte for Dataverse-datakilder for avgiftstjeneste** i RCS (Regulatory Configuration Service). I så fall vil imidlertid ikke rullegardinlisten være tilgjengelig i konfigurasjonen for avgiftsberegningen.
+Dette emnet beskriver hvordan du konfigurerer og aktiverer oppslagsfunksjonen for hoveddata i avgiftsberegning. En rullegardinliste er tilgjengelig for å velge verdier i mva-beregningskonfigurasjonen for felter som **Leverandørkonto**, **Varekode** og **Leveringsbetingelse**. Disse verdiene kommer fra det tilkoblede Microsoft Dynamics 365 Finance-miljøet ved hjelp av Microsoft Dataverse-datakilden.
 
 1. Konfigurer Microsoft Power Platform-integreringen i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Microsoft Power Platform-integrering – oversikt over tillegg](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Når du har fullført dette trinnet, vises navnet på et Microsoft Power Platform-miljø i **Power Platform Integrering**-delen.
 2. Gå til [Microsoft Power Platform administrasjonssenteret](https://admin.powerplatform.microsoft.com/environments), og velg miljønavnet. Miljø-URL-en er angitt.

@@ -2,11 +2,9 @@
 title: Sikkerhetsdiagnostikk for oppgaveregistreringer
 description: Dette emnet inneholder informasjon om hvordan du analyserer og administrerer krav til sikkerhetstillatelse basert på et oppgaveopptak.
 author: Peakerbl
-manager: AnnBe
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: 88eb90b35f1a9754cc4daa01d8f40cdf712db4f8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 44af35f16f6e9ff89b30bc10eef3f16ecdfaf907c4c6e22aa5775d1941fb6a5d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745126"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Sikkerhetsdiagnostikk for oppgaveregistreringer
 
@@ -41,7 +39,7 @@ Dette emnet inneholder informasjon om hvordan du analyserer og administrerer kra
 
 4. Velg en bruker i feltet **Bruker-ID**. Hvis brukeren ikke har tillatelser for noen menyelementer, vil feltet **Manglende tillatelser** oppdateres til **Ja**.
   
-  ![Side for elementdetaljer for sikkerhetsmeny](../media/Security-Menu-Item-Details.png)
+  ![Side for elementdetaljer for sikkerhetsmeny.](../media/Security-Menu-Item-Details.png)
 
 5. Velg **Legg til referanse** for å vise en liste over sikkerhetsobjektene, inkludert roller, plikter og rettigheter, som gir den manglende tillatelsen.
 6. Velg et sikkerhetsobjekt fra listen:
@@ -49,3 +47,6 @@ Dette emnet inneholder informasjon om hvordan du analyserer og administrerer kra
     - Hvis **Rolle** er valgt, velger du **Legg til rolle for bruker**. Dette vil åpne siden **Tilordne brukere til roller**. Hvis du vil ha mer informasjon, kan du se siden [Tilordne brukere til sikkerhetsroller](assign-users-security-roles.md).
     - Hvis **Plikt** er valgt, velger du **Legg til plikt i rollen**, velger rollene som plikten skal legges til, og velg deretter **OK**.
     - Hvis **Rettighet** er valgt, velger du **Legg til rettighet i plikter**, velger rollene som plikten skal legges til, og velg deretter **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

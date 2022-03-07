@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075305"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715260"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -39,6 +39,7 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 | Lager&nbsp;og&nbsp;logistikk | [Poster lagerbeholdninger ved hjelp av koder som er koblet til motkontoer](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Årsakskoder for lagertelling](../warehousing/reason-codes-for-counting-journals.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Eksportpolicy for data som salgstilbud henviser til](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Velg om endringer i data som refereres av tilbud, vil føre til at disse tilbudene (eller linjene) skal inkluderes i den neste trinnvise eksporten. De trinnvise eksportene vil gå raskere hvis du velger ikke å ta med slike tilbud eller linjer.<br><br>Denne funksjonen legger til en innstilling kalt **Hopp over referansedata for salgstilbud under endringssporing** til siden **Kundeparametere**. |
 | Lager&nbsp;og&nbsp;logistikk | [Forseglet bud](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sealed-bidding) | [Forseglede bud for tilbudsforespørsler](../procurement/sealed-bidding.md) |
+| Lager&nbsp;og&nbsp;logistikk | [Skann strekkoder i lageret ved hjelp av standardene i GS1-format](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-strekkoder og QR-koder](../warehousing/gs1-barcodes.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Ikke-forpliktende reservasjon for tillegget Lagersynlighet](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Lagersynlighetsreservasjoner](../inventory/inventory-visibility-reservations.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Forbedringer i fradrag og faktisk vekt for Rabattbehandling](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Behandle fradrag med arbeidsområdet for fradrag](../rebate-management/deduction-workbench.md )<br><br>[Behandle, gjennomgå og postere rabatter](../rebate-management/process-review-post.md)<br><br>[Rabattbehandlingsavtaler](../rebate-management/rebate-management-deals.md) |
 | Lager&nbsp;og&nbsp;logistikk | [Trinninstruksjoner for lagerapp](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
@@ -69,10 +70,10 @@ Denne tabellen viser funksjonene som er aktivert som standard i 10.0.21. De fles
 | Annullering av overføringsordre | 01.09.2021 | 13.07.2020 | Aktivert som standard | Lagerstyring |
 | Lås opp lagerjournal | 01.09.2021 | 17.08.2020 | Aktivert som standard | Lagerstyring |
 | Lagrede visninger for lagerstyring | 01.09.2021 | 30.09.2020 | Aktivert som standard | Lagerstyring |
-| Navigasjon til stykklisteversjon fra stykklistelinjer | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
-| Bruker måleenhet og enhetsantall i lagerjournaler | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
+| Navigasjon til stykklisteversjon fra stykklistelinjer. | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
+| Bruker måleenhet og enhetsantall i lagerjournaler. | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
 | Tillat tomme verdier for partiattributter | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
-| Øk linjenumre automatisk for ordrelinjer for lageroverføring | 01.09.2021 | 11.10.2019 | Aktivert som standard | Lagerstyring |
+| Øk linjenumre automatisk for ordrelinjer for lageroverføring. | 01.09.2021 | 11.10.2019 | Aktivert som standard | Lagerstyring |
 | Beholdningsjournal - godkjenn - arbeidsflyt | 01.09.2021 | 06.01.2020 | Aktivert som standard | Lagerstyring |
 | Aktiver funksjon for advarsel om parametere for lagerkvalitetsstyring | 01.09.2021 | 07.10.2019 | Aktivert som standard | Lagerstyring |
 | Opprett overføringsordre fra salgslinje | 01.09.2021 | 31.08.2019 | Aktivert som standard | Lagerstyring |
@@ -92,12 +93,12 @@ Denne tabellen viser funksjonene som er aktivert som standard i 10.0.21. De fles
 | Lagrede visninger for frigitte produkter | 01.09.2021 | 30.09.2020 | Aktivert som standard | Behandling av produktinformasjon |
 | Forbedringer i dialogboksene Godkjenn og Overfør jobber | 01.09.2021 | 11.10.2019 | Aktivert som standard | Produksjonskontroll |
 | Nummerskilt for ferdigmelding lagt til i jobbkortenheten | 01.09.2021 | 31.08.2019 | Aktivert som standard | Produksjonskontroll |
-| Den nye knappen Stopp pause er lagt til på siden Jobbkortterminal | 01.09.2021 | 19.02.2020 | Aktivert som standard | Produksjonskontroll |
+| Den nye knappen Stopp pause er lagt til på siden Jobbkortterminal. | 01.09.2021 | 19.02.2020 | Aktivert som standard | Produksjonskontroll |
 | Aktiver delvis mottak av underleveransevarer, og rett opp et problem med beregning av svinn for stykklistelinjer av typen Leverandør. | 01.09.2021 | 11.11.2019 | Aktivert som standard | Produksjonskontroll |
 | Lagrede visninger for produksjonskontroll | 01.09.2021 | 17.08.2020 | Aktivert som standard | Produksjonskontroll |
 | Dynamics 365 Guides for Produksjon | 01.09.2021 | 13.07.2020 | Aktivert som standard | Produksjonskontroll |
 | Produksjonsutførelse | 01.09.2021 | 30.09.2020 | Aktivert som standard | Produksjonskontroll |
-| Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres | 01.09.2021 | 10.05.2020 | Aktivert som standard | Produksjonskontroll |
+| Funksjon for låsing av jobbkortenheten og jobbkortterminalen slik at de kan rengjøres. | 01.09.2021 | 10.05.2020 | Aktivert som standard | Produksjonskontroll |
 | Gebyrtildeling i en salgsordre | 01.09.2021 | 30.09.2020 | Aktivert som standard | Salg og markedsføring |
 | Begrens antall salgsordrer som kan velges for postering | 01.09.2021 | 01.09.2021 | Aktivert som standard | Salg og markedsføring |
 | Rydd opp i oppdateringshistorikk for salgsordre | 01.09.2021 | 01.09.2021 | Aktivert som standard | Salg og markedsføring |
@@ -137,9 +138,9 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for Finance and Operations-apper
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformoppdateringer for Finance and Operations-apper
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.21 av økonomi- og driftsapper (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.21 av Finance and Operations-apper (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 

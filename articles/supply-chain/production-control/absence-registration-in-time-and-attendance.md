@@ -2,11 +2,9 @@
 title: Fraværsregistrering i timeregistrering
 description: Dette emnet beskriver hvordan du håndterer fraværsregistreringer i Timeregistrering.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730232"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Fraværsregistrering i timeregistrering
 
@@ -103,8 +101,11 @@ Tidsregistreringer for arbeider må beregnes og godkjennes før de kan overføre
 
 En godkjenner kan endre tidsregistreringer for en arbeider. Godkjenneren kan også endre alle fravær som arbeideren har registrert. Hvis godkjenneren manuelt angir en tidsperiode som har en fraværskode, overstyres ikke fraværskoden for denne perioden av standard fraværskode fra Parametere for timeregistrering.
 
-En arbeider stempler for eksempel inn 10:00 og velger en fraværskode som angir at hun kommer for sent. Senere informerer arbeideren sin overordnede om at hun hadde en legeavtale fra 08:00 til 10:00. Legeavtalen skal ikke føre til trekk i lønn for arbeideren. I dette tilfellet kan derfor overordnede justere de to timene med fravær fra 08:00 til 10:00 ved å manuelt angi en fraværskode som angir sykdom for disse to timene.
+En arbeider stempler for eksempel inn 10:00 og velger en fraværskode som indikerer at vedkommende kommer for sent. Senere informerer arbeideren sin overordnede om en legeavtale fra 08:00 til 10:00. Legeavtalen skal ikke føre til trekk i lønn for arbeideren. I dette tilfellet kan derfor overordnede justere de to timene med fravær fra 08:00 til 10:00 ved å manuelt angi en fraværskode som angir sykdom for disse to timene.
 
 ### <a name="calculate-and-approve-absence"></a>Beregne og godkjenne fravær
 
 - Velg **Timeregistrering** &gt; **Gjennomgå og godkjenn** &gt; **Godkjenn eller beregn**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

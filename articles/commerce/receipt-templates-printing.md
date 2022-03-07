@@ -1,30 +1,27 @@
 ---
 title: Definer og utforme kvitteringsformater
 description: Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Dynamics 365 Commerce inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/20/2017
+author: BrianShook
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dac0ad75ff35367b5d6ac84c75c68e22e2cb0cb1
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414748"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779407"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Definer og utforme kvitteringsformater
 
@@ -46,6 +43,15 @@ Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å s
     - **Ikke skriv ut** – Kvitteringen skrives ikke ut.
     - **Spør bruker** – Brukeren blir spurt om å skrive ut kvitteringen.
     - **Etter behov** – Dette alternativet brukes bare for gavekvitteringer. Når dette alternativet er valgt, kan brukeren skrive ut en gavekvittering fra siden **Endre**, hvis en gavekvittering er nødvendig.
+
+## <a name="print-images"></a>Skrive ut bilder
+
+Kvitteringsutformingen inneholder en **Logo**-variabel. Du kan bruke denne variabelen til å angi et bilde som skal skrives ut på kvitteringer. Bilder som skrives ut på kvitteringer ved å bruke **Logo**-variabelen, bør være monokrome punktgrafikkfiltyper (BMP). Hvis et punktgrafikkbilde er angitt i kvitteringsdesigneren, men du ikke skriver ut dokumentet når kvitteringen sendes til skriveren, kan det være ett av følgende problemer:
+
+- Filstørrelsen er for stor, eller pikslersdimensjonene til bildets størrelse er ikke kompatibel med skriveren. I dette tilfellet kan du forsøke å redusere oppløsningen eller dimensjonene i bildefilen.
+- Noen OPOS-skriverdrivere (Object Linking and Embedding for Point of Sale) implementerer ikke **PrintMemoryBitmap**-metoden som maskinvarestasjoner bruker til å skrive ut logobilder. I dette tilfellet kan du prøve å legge til følgende flagg i **HardwareStation.Extension.config**-filen for den dedikerte eller delte maskinvarestasjonen:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Utforme et kvitteringsformat
 
@@ -82,3 +88,6 @@ Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen.
 
 > [!NOTE]
 > Hvis det brukes to skrivere, kan én skriver brukes til å skrive ut standard 40-kolonners termiske kvitteringer. Den andre skriveren brukes vanligvis til å skrive ut helsides kvitteringstyper som trenger mer informasjon. Disse kvitteringstypene omfatter kundeordrekvitteringer og kundefakturaer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

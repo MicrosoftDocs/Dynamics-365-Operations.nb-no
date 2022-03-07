@@ -2,9 +2,11 @@
 title: Beregningsmåter av merverdiavgift i grunnlagsfeltet
 description: Denne artikkelen beskriver alternativene i Opprinnelse-feltet på siden for mva-koder, og hvordan mva beregnes basert på det valgte alternativet for en mva-kode.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ac37858c68996c6c8140303327003d93bd357b512f9c634650b7e9df1284496
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: be935b80e06158d9634989ba03747f4a59247f8e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769752"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204936"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beregningsmåter av merverdiavgift i grunnlagsfeltet
 
@@ -52,7 +54,8 @@ Hvis nettobeløpet er 10,00, er AVGIFT 1 1,00 (10,00 x 10%) og AVGIFT 2 = 2,00 (
 | Bare én avgiftskode med opprinnelse = prosenten av bruttobeløpet kan brukes for en transaksjon. Hvis mer enn én eller slik avgiftskode bestemmes for en transaksjon, vises en feil om at merverdiavgift ikke kan beregnes. |
 
 
-## <a name="percentage-of-sales-tax"></a>Prosent av merverdiavgift
+<a name="percentage-of-sales-tax"></a>Prosent av merverdiavgift
+-----------------------
 
 Når du velger prosent av merverdiavgift i grunnlagsfeltet, beregnes merverdiavgift som en prosent av merverdiavgiften som er valgt i feltet Merverdiavgift på merverdiavgift. Merverdiavgiften som er valgt i feltet Merverdiavgift på merverdiavgift, beregnes først. Den andre merverdiavgiften beregnes deretter basert på det første mva-beløpet.
 ### <a name="example"></a>Eksempel
@@ -118,7 +121,8 @@ Dokumentet / journalen er satt til Beløp inkludert merverdiavgift = Nei Transak
 
 
 
-## <a name="additional-resources"></a>Tilleggsressurser
+<a name="additional-resources"></a>Tilleggsressurser
+--------
 
 [Mva-satser basert på feltene grensegrunnlag og beregningsmetoder](marginal-base-field.md)
 

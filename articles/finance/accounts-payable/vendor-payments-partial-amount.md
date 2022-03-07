@@ -2,9 +2,11 @@
 title: Leverandørbetalinger for et delbeløp
 description: Du kan eventuelt opprette en betaling til en leverandør som er mindre enn beløpet i en faktura. Denne artikkelen beskriver de ulike alternativene for håndtering av dette.
 author: abruer
+manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd7b7092e0d0baf48a805bbb0cefb0eb77e49946c6dbc44c9f954781ca1259e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00a3cc8480b4d171c1f2b3cda4e8707893c6a05b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777246"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991206"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Leverandørbetalinger for et delbeløp
 
@@ -28,7 +30,8 @@ ms.locfileid: "6777246"
 
 Du kan eventuelt opprette en betaling til en leverandør som er mindre enn beløpet i en faktura. Denne artikkelen beskriver de ulike alternativene for håndtering av dette. Hvilke alternativer som er tilgjengelige, avhenger av dine forretningsbehov og konfigurasjon. 
 
-## <a name="cash-discount-amounts"></a>Kontantrabattbeløp
+<a name="cash-discount-amounts"></a>Kontantrabattbeløp
+---------------------
 
 En leverandør kan tilby deg en kontantrabatt for å betale en faktura før forfallsdatoen. Du kan for eksempel registrere en faktura for 100,00 som angir en kontantrabatt på 2 prosent hvis fakturaen er betalt innen 10 dager. Forfallsdatoen er om 30 dager. Hvis et betalingsforslag bruker kontantrabatten som et kriterium for å velge en faktura, og hvis forslaget kjøres på eller før kontantrabattdatoen, velges fakturaen for betaling, og betalingen opprettes for 98,00. En kontantrabatt kan også brukes for en engangsbetaling som ble opprettet manuelt.
 
@@ -50,6 +53,3 @@ Du kan foreta en delbetaling der beløpet som fremdeles skal utlignes, er svært
 
 
 Hvis du vil ha mer informasjon, kan du se [Oversikt over leverandørbetaling](../cash-bank-management/tasks/vendor-payment-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

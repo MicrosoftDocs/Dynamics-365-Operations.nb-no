@@ -1,10 +1,12 @@
 ---
 title: Kredittgrenser for salgsordrer
 description: Dette emnet beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre.
-author: JodiChristiansen
-ms.date: 07/20/2021
+author: mikefalkner
+manager: AnnBe
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -12,16 +14,15 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39f053404348b57de0ad623869ebd7c6cc7a150b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723973"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228203"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredittgrenser for salgsordrer
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre. Blokkeringsreglene for kredittbehandling kan gjelde for en individuell kunde eller en gruppe kunder. Blokkeringsregler definerer svar på følgende omstendigheter:
 
@@ -42,11 +43,6 @@ I tillegg finnes det to parametere som kontrollerer andre scenarier som vil blok
 
 Når en kunde starter en salgstransaksjon, blir informasjonen i salgsordren vurdert mot et sett med blokkeringsregler som hjelper med å bestemme om kreditten til kunden skal forlenges og salget skal gå videre. Du kan også definere utelatelser som overstyrer blokkeringsreglene og tillater at en salgsordre behandles. Du kan definere blokkeringsregler og utelatelsesregler på siden **Kredittbehandling > Oppsett > Oppsett for kredittbehandling > Blokkeringsregler**.
 
-Per versjon 10.0.21 har blokkeringsreglene i Kredittstyring blitt endret på følgende måter, for å gi mer fleksibilitet:
-
-- Utvidbarhetsforespørsler er aktivert, slik at du kan opprette dine egne blokkeringsregler.
-- Avmerkingsboksen **Frigi salgsordre** er nå tilgjengelig for alle blokkeringsregler. Tidligere var den bare tilgjengelig for blokkeringsregelen for salgsordre. Når det er merket av for denne boksen, vil ekskluderingsregelen frigi salgsordren uten å vurdere andre regler som kan blokkere salgsordrer. Denne avmerkingsboksen er bare tilgjengelig for typen **utelatelsesregel**.
-
 ### <a name="days-overdue"></a>Dager etter forfall
 
 Åpne fanen **Dager etter forfall** hvis blokkeringsregelen gjelder for kunde med én eller flere fakturaer som er forfalt for et bestemt antall dager.
@@ -63,7 +59,7 @@ Per versjon 10.0.21 har blokkeringsreglene i Kredittstyring blitt endret på fø
 5. Velg en **Verditype**. Standardoppføringen er et fast antall dager. Hvis du oppretter en utelatelse, kan du angi et fast antall dager eller et beløp i stedet. 
 6. Angi antall dager **Forfalt** som skal være tillatt for den valgte blokkeringsregelen, før en ordre settes på kredittbehandlingssperre for gjennomgang. Antall dager forfalt representerer et ekstra antall respittdager som legges til antall dager utover forfallsdatoen for betaling som fakturaen kan ha før den regnes som forfalt. Hvis du har angitt **Verditype** som et beløp for en utelatelse, angir du et beløp og en valuta for dette beløpet.
 
-### <a name="account-status"></a>Kontostatus
+### <a name="accounts-status"></a>Kontostatus
 
 Åpne kategorien **Kontostatus** hvis blokkeringsregelen gjelder for en kunde med den valgte kontostatusen.
 1. Velg regeltypen du konfigurerer.  **Blokkering** vil opprette en regel som blokkerer en ordre. **Utelatelse** oppretter en regel som utelater en regel fra å blokkere en ordre. 
@@ -108,7 +104,7 @@ Velg **Betalingsbetingelser** hvis blokkeringsregelen gjelder for den valgte bet
    - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
    - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
 5. Angi **Forfalt beløp** for den valgte blokkeringsregelen før en ordre settes på kredittbehandlingssperre for gjennomgang. 
-6. Velg **Verditype** som definerer verditypen som skal brukes til også å teste hvor mye av kredittgrensen som er brukt. Blokkeringsregler og utelatelsesregler tillater bare en prosent for **Forfalt beløp**. Terskelen er knyttet til kredittgrensen.
+6. Velg **Verditype** som definerer verditypen som skal brukes til også å teste hvor mye av kredittgrensen som er brukt. Blokkeringsregler krever en prosent, men en utelatelse kan ha et fast beløp eller en fast prosentsats. Terskelen er knyttet til kredittgrensen.
 7. Angi **Terskel for kredittgrense**-verdien for den valgte regelen før en kunde settes på kredittbehandlingssperre. Dette kan være et beløp eller en prosent basert på verditypevalget i verditype.
 8. Regelen kontrollerer om **Forfalt beløp** er overskredet og om **Terskel for kredittgrense** er overskredet. 
 
@@ -128,6 +124,8 @@ Velg **Salgsordre** hvis blokkeringsregelen gjelder for verdien for salgsordren.
    - Velg **Blokkering** for å opprette en regel som blokkerer en ordre. 
    - Velg **Utelatelse** for å opprette en regel som utelater en annen regel fra å blokkere en ordre. 
 5. Angi **Salgsordrebeløp** for den valgte blokkeringsregelen før en ordre settes på kredittbehandlingssperre. 
+
+Salgsordreregelen inneholder en tilleggsinnstilling som overstyrer alle andre regler. Hvis du vil opprette en utelatelse som vil frigi salgsordren uten å ta hensyn til andre regler, merker du av for **Frigi salgsordre** på utelatelseslinjen.
 
 ### <a name="credit-limit-used"></a>Kredittgrense brukt
 

@@ -1,6 +1,6 @@
 ---
 title: Tilpasse områdenavigering
-description: Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonshierarki for å organisere produktene for weblesing på Microsoft Dynamics 365 Commerce-området.
+description: Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonshierarki for å organisere produktene for weblesing på området i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
 ms.date: 09/15/2020
@@ -10,26 +10,25 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cfd0a9559eb2b596adb822b228929e6855711bb4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414629"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222615"
 ---
 # <a name="customize-site-navigation"></a>Tilpasse områdenavigering
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonshierarki for å organisere produktene for weblesing på Microsoft Dynamics 365 Commerce-området.
+Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonshierarki for å organisere produktene for weblesing på området i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
@@ -110,3 +109,6 @@ Hvis du vil legge til egendefinerte navigasjonsalternativer i navigasjonsmenyen,
 [Opprette en URL-adresse for side](create-page-url.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

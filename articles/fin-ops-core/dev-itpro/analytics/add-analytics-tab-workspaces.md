@@ -1,25 +1,23 @@
 ---
 title: Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
 description: Dette emnet forklarer hvordan du bygger inn en Power BI-rapport i kategorien Analyse i et arbeidsområde.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760158"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
 
@@ -28,7 +26,7 @@ ms.locfileid: "4680942"
 > [!NOTE]
 > Denne funksjonen støttes i Finance and Operations (versjon 7.2 og senere).
 
-## <a name="introduction"></a>Innledning
+## <a name="introduction"></a>Innføring
 Dette emnet forklarer hvordan du bygger inn en Microsoft Power BI-rapport i kategorien **Analyse** i et arbeidsområde. For eksempelet som er angitt her, vil vi utvide arbeidsområdet **Reservasjonsbehandling** i programmet Fleet Management til å bygge inn et analytisk arbeidsområde på en **Analyse**-kategori.
 
 ## <a name="prerequisites"></a>Forutsetninger
@@ -56,11 +54,11 @@ Følg denne fremgangsmåten for å legge til en .pbix-fil som en artefakt i et V
 3. I dialogboksen **Legg til nytt element** under **Operations-artefakter** velger du **Ressurs**-malen.
 4. Angi et navn som skal brukes til å referere til rapporten i X++-metadataene, og klikk deretter **Legg til**.
 
-    ![Dialogboksen Legg til nytt element](media/analytical-workspace-add.png)
+    ![Dialogboksen Legg til nytt element.](media/analytical-workspace-add.png)
 
 5. Finn .pbix-filen som inneholder definisjonen av den analytiske rapporten, og klikk deretter **Åpne**.
 
-    ![Velge en Ressursfil-dialogboks](media/analytical-workspace-select-resource.png)
+    ![Velge en Ressursfil-dialogboks.](media/analytical-workspace-select-resource.png)
 
 Nå som du har lagt til .pbix-filen som en Dynamics 365-ressurs, kan du bygge inn rapportene i arbeidsområder og legge til direkte koblinger ved å bruke menyelementer.
 
@@ -69,7 +67,7 @@ I dette eksemplet vil vi utvide arbeidsområdet **Reservasjonsbehandling** i Fle
 
 Illustrasjonen nedenfor viser hvordan **FMClerkWorkspace**-skjemaet ser ut i utformingen i Microsoft Visual Studio.
 
-![FMClerkWorkspace-skjemaet før endringer](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-skjemaet før endringer.](media/analytical-workspace-definition-before.png)
 
 Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasjonsbehandling**-arbeidsområdet.
 
@@ -94,7 +92,7 @@ Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasj
 
 Illustrasjonen nedenfor viser hvordan utformingen ser ut etter at endringene er brukt.
 
-![FMClerkWorkspace etter endringer](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace etter endringer.](media/analytical-workspace-definition-after.png)
 
 Nå som du har lagt til skjemakontrollene som skal brukes til å bygge inn arbeidsområderapporten, må du definere størrelsen på den overordnede kontrollen, slik at den passer for oppsettet. Som standard er både **filterrutesiden** og **kategorisiden** synlig i rapporten. Du kan imidlertid endre synligheten for disse kontrollene etter behov for rapportens målbruker.
 
@@ -144,7 +142,7 @@ Gjør følgende for å legge til forretningslogikk som initialiserer rapportvisn
 
 Du har nå fullført oppgaven med å legge til forretningslogikk for å initialisere den innebygde rapportvisningskontrollen. Illustrasjonen nedenfor viser hvordan arbeidsområdet ser ut etter at endringene er brukt.
 
-![Rapport som er innebygd i arbeidsområdet](media/analytical-workspace-final.png)
+![Rapport som er innebygd i arbeidsområdet.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Du kan få tilgang til den eksisterende operasjonelle visningen ved hjelp av arbeidsområde-kategoriene under sidetittelen.
@@ -175,3 +173,6 @@ public static void initializeReportControl(
 | showFilterPane   | En boolsk verdi som angir om filtreringsruten skal vises (**true**) eller skjules (**false**).     |
 | showNavPane      | En boolsk verdi som angir om navigasjonsruten skal vises (**true**) eller skjules (**false**). |
 | defaultFilters   | Standardfiltrene for Power BI-rapporten.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

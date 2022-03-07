@@ -2,11 +2,9 @@
 title: Startside for budsjettering
 description: Dette emnet gir en oversikt over komponenter i budsjetteringsfunksjonaliteten, budsjetteringsverktøy og rapporteringsfunksjoner i Microsoft Dynamics 365 Finance.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af006a94d29781473c164d108fb48ca7d00d169d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 049388c66fae193d2e7f8758e8965634a97428ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962916"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822113"
 ---
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
@@ -70,3 +68,6 @@ Du kan for eksempel definere hvem som skal foreta budsjettering, hva som skal bu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

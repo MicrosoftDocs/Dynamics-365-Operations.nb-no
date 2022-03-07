@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 595de6292b81ca78bf08a66f61850c3b5a537396
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324118"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354397"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Behandle flere avledede tilordninger for én modellrot
 
 [!include [banner](../includes/banner.md)]
 
-En datamodellkomponent for [elektronisk rapportering (ER)](general-electronic-reporting.md) brukes i alle konfigurerte komponenter for ER-format som datakilde for å generere utgående dokumenter. Hvis du vil beskrive ett bedriftsdomene, konfigurerer du en datamodellkomponent som har mange rotdefinisjoner. 
+En komponent i en data[modell](general-electronic-reporting.md#data-model-and-model-mapping-components) for [elektronisk rapportering (ER)](general-electronic-reporting.md) brukes i alle konfigurerte komponenter for ER-[formater](general-electronic-reporting.md#FormatComponentOutbound) som datakilde for å generere utgående dokumenter. Hvis du vil beskrive ett bedriftsdomene, konfigurerer du en datamodellkomponent som har mange rotdefinisjoner. 
 
-Hver rotdefinisjon lar deg representere data i dette domenet på måten som passer best for bestemte rapporteringsformål. For hver rotdefinisjon kan du konfigurere en komponent for ER-modelltilordning som en implementering av datamodellen som gjelder spesifikt for Microsoft Dynamics 365 Finance. På denne måten beskriver du hvordan datamodellen skal fylles ut ved kjøretid.
+Hver rotdefinisjon lar deg representere data i dette domenet på måten som passer best for bestemte rapporteringsformål. For hver rotdefinisjon kan du konfigurere en komponent for ER-[modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components) som en implementering av datamodellen som gjelder spesifikt for Microsoft Dynamics 365 Finance. På denne måten beskriver du hvordan datamodellen skal fylles ut ved kjøretid.
 
 Komponenter for ER-modelltilordning kan være i [konfigurasjoner](general-electronic-reporting.md#Configuration) for ER-datamodell og konfigurasjoner for ER-modelltilordning. Én ER-konfigurasjon kan inneholde mange tilordningskomponenter, der hver enkelt er konfigurert for én rotdefinisjon. Én ER-konfigurasjon kan også inneholde bare én tilordningskomponent som er konfigurert for én rotdefinisjon.
 

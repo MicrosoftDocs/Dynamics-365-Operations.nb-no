@@ -2,11 +2,9 @@
 title: Avsetning av abonnementer
 description: Med serviceabonnementer kan du manuelt avsette omsetning i periodene etter datoen da du fakturerte en gebyrtransaksjon.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6d0d6c25cc8a19f5ebea3477cd2c957876752fd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6a2b581c8ae52f4c379e8e511dc898a8d106d149
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966086"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908066"
 ---
 # <a name="accruing-subscriptions"></a>Avsetning av abonnementer 
 
@@ -43,7 +41,7 @@ Hvis du krediterer fakturerte abonnementsbeløp, kan du bruke to metoder for å 
 
   - Du kan få de påløpte beløpene tilbakeført på datoen når kreditnotaen posteres eller på den opprinnelige posteringsdatoen for avsetningen.
 
-Hvis du vil ha mer informasjon, kan du se [Abonnementsparametere (skjema)](https://technet.microsoft.com/library/aa619615.aspx).
+Hvis du vil ha mer informasjon, kan du se [Abonnementsparametere (skjema)](/dynamicsax-2012//subscription-parameters-form).
 
 ## <a name="setup-requirements"></a>Installasjonskrav
 
@@ -151,3 +149,6 @@ Du kan styre antallet finanstransaksjoner som opprettes når du posterer påløp
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

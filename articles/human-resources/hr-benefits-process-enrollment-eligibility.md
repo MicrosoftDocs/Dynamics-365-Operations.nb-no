@@ -2,15 +2,12 @@
 title: Fordelsregistreringsrettighet
 description: Denne artikkelen beskriver hvordan du kjører prosessen for registreringsrettighet.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4dd63e755f0afdbce411b3001410d2e56036e432
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419847"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6054266"
 ---
 # <a name="process-enrollment-eligibility"></a>Fordelsregistreringsrettighet
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne artikkelen beskriver hvordan du kjører prosessen for registreringsrettighet.
 
@@ -72,3 +71,6 @@ Denne artikkelen beskriver hvordan du viser resultater av en rettighetsprosess.
    | **Resultatstatus** | Dette vil være Kvalifisert eller Ikke kvalifisert. Resultatstatusen vil være Ikke kvalifisert hvis arbeideren ikke oppfyller rettighetsregelkriteriene, hvis arbeideren mangler nødvendig informasjon, for eksempel en betalingsfrekvens eller fast kompensasjon, eller hvis det mangler informasjon i fordelsplanen, og som forhindrer at arbeidere registreres. |
    | **Resultatmelding** | Indikerer hvorfor en arbeider ikke er kvalifisert for en fordelsplan, eller om rettighetsregelen ble bestått. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Sette opp recency-, frekvens- og pengeanalyse (RFM)
 description: Dette emnet forklarer hvordan du setter opp en recency-, frekvens- og pengeanalyse (RFM) av kundene dine.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRRFMDefinition
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 78943
 ms.assetid: 8ff9aac3-5ada-4150-85fd-18901c926d53
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414719"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765227"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Sette opp recency-, frekvens- og pengeanalyse (RFM)
 
@@ -36,7 +33,7 @@ Recency-, frekvens- og pengeanalyse (RFM) er et markedsføringsverktøy organisa
 
 - Det første sifferet er kundens recency-vurderingen, som er hvor nylig kunden har gjort et kjøpt fra din organisasjon.
 - Det andre sifferet er kundens frekvensrangering, som er hvor ofte kunden kjøper fra organisasjonen.
-- Det tredje sifferet er kundens pengerangering, som er hvor mye kundene bruker når de foretar kjøp fra organisasjonen.
+- Det tredje sifferet er kundens pengerangering, som er hvor mye kundene bruker når kunden foretar kjøp fra organisasjonen.
 
 Organisasjonen har for eksempel satt vurderingene på en skala fra 1 til 5, der 5 er den høyeste klassifiseringen. I dette tilfellet forteller en kunde vurdering på 535 deg følgende informasjon om kunden:
 
@@ -97,3 +94,6 @@ Bruk denne fremgangsmåten for å vise eller tømme loggen for en RFM-analysepos
 2. Velg posten du vil vise, på siden **RFM-analyse**.
 3. Hvis du vil vise posthistorikken, velger du hurtigfanen **Historikk**.
 4. Hvis du vil slette historikken for posten, velger du **Tøm historikk**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

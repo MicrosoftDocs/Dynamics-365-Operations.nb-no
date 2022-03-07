@@ -1,25 +1,25 @@
 ---
 title: Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool
 description: Dette emnet er en opplæring i hvordan du konfigurerer og installerer RSAT (Regression Suite Automation Tool).
-author: tonyafehr
+author: robinarh
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: 21761, NotInToc
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: fc9b330926dfc12890d0bc32e68b4b531616fc2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781997"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357558"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool
 

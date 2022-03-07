@@ -2,11 +2,9 @@
 title: Tilgjengelighetsfunksjoner
 description: Dette emnet beskriver funksjonaliteten som er utviklet for å hjelpe brukere som har ulike funksjonshemminger.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 7381f9b9e84a970e01d44238d9891b5edc0d2d5b24e5140518d3ef302be1c123
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798701"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740201"
 ---
 # <a name="accessibility-features"></a>Tilgjengelighetsfunksjoner
 
@@ -54,13 +52,13 @@ Alle handlinger som angis på en side, er tilgjengelige fra et tastatur via tabu
 
 Du vil kjøre **Logg for e-postvarsling**-handlingen som vises i **E-postvarsling**-gruppen i **Ordre**-fanen i handlingsruten.
 
-![Handlingen Logg for e-postvarsling i handlingsruten](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Handlingen &quot;Logg for e-postvarsling&quot; i handlingsruten")
+![Handlingen Logg for e-postvarsling i handlingsruten.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Handlingen &quot;Logg for e-postvarsling&quot; i handlingsruten")
 
 Ett alternativ er å bruke tastaturet. Trykk på Ctrl+F6 for å flytte fokus til handlingsruten, og trykk deretter Tab gjentatte ganger for å gå gjennom alle fanene og handlingene til **Logg for e-postvarsling**-handlingen har fokus.
 
 Du kan imidlertid også kjøre handlingen mer direkte. Trykk på Ctrl+apostrof (') fra hvor som helst på siden for å vise søkeboksen for handlinger.
 
-![Søkeboks for handlinger](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søkeboks for handlinger")
+![Søkeboks for handlinger.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Søkeboks for handlinger")
 
 I søkeboksen skriver du inn ord som beskriver handlingen. Handlingen blir gjort tilgjengelig for deg, og du kan kjøre den direkte. Hvis du for eksempel skriver inn **e-post**, **vars** (ett delvis ord) eller **logg**, kan du "hoppe" til funksjonen Logg for e-postvarsling.
 
@@ -97,3 +95,6 @@ På smarttelefoner og andre små skjermer vil kontrollene og skjemaoppsettet res
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Veiledning for å hjelpe utviklere og kunder å ta med tilgjengelighetshensyn i sine tilpassinger
 
 Hvis du vil vite mer om Microsofts anbefalte fremgangsmåter for hvordan du aktiverer tilgjengelighet, kan du se [Tilgjengelighet i skjemaer, produkter og kontroller](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

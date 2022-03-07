@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a5ced6311f32405e544e66d18c912ce40deb177f
-ms.sourcegitcommit: 33a746e41cd6f7b6b056b19b550a84f6a1b905d4
+ms.openlocfilehash: 53bce671d6aca35335a3b3ef557a94fa60da1edc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "4512923"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251193"
 ---
 # <a name="e-commerce-site-overview"></a>Oversikt over e-handelsområde
 
@@ -121,3 +120,6 @@ Hvis du vil ha informasjon om hvordan du administrerer områdeinnhold, kan du se
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
 
 [Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

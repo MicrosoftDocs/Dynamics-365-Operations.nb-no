@@ -2,7 +2,7 @@
 title: Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 description: Dette emnet forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
 author: liza-golub
-ms.date: 01/20/2022
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: a76fdd5d1c3214d121c9db5619859a29f70e2baa
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: 1a40666261e7908430fba254f8375ece7ea68e46
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018421"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922376"
 ---
 # <a name="prepare-your-environment-to-interoperate-with-id-porten-and-altinn-web-services"></a>Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 
@@ -240,17 +240,6 @@ Tabellen nedenfor viser oppslagsresultatene for **StandardTaxCodes_Lookup**.
 
 > [!IMPORTANT]
 > Det er viktig at du definerer betingelser for alle mva-koder som brukes i avgiftstransaksjoner i løpet av rapporteringsperioden. Hvis det ikke er definert et passende oppslagsresultat for en mva-kode som brukes i transaksjoner i løpet av rapporteringsperioden, stoppes genereringen av en mva-retur. 
-
-> [!NOTE]
-> Dokumenter som er underlagt følgende `mvaKode`-verdier, må rapporteres i mva-returen ved hjelp av to linjer: en der retningen er **Utgående merverdiavgift**, og en der den er **Inngående merverdiavgift**. Vi anbefaler at du posterer disse dokumentene ved hjelp av [avregningsmekanismen for mva/GST-skjemaet](emea-reverse-charge.md).
->
-> - **81** – Kjøp av varer fra utlandet med fradrag (standardsats) / Fradrag på kjøp av varer fra utlandet med fradrag (standardsats).
-> - **83** – Kjøp av varer fra utlandet med fradrag (medium sats) / Fradrag på kjøp av varer fra utlandet med fradrag (medium sats).
-> - **86** – Kjøp av tjenester fra utlandet med fradrag (standardsats) / Fradrag på kjøp av tjenester fra utlandet med fradrag (standardsats).
-> - **88** – Kjøp av tjenester fra utlandet med fradrag (lav sats) / Fradrag på kjøp av tjenester fra utlandet med fradrag (lav sats). 
-> - **91** – Kjøp av utslippskvoter og gull / Fradrag ved kjøp av utslippskvoter og gull. 
->
-> Mekanismen for snudd avregning gjør det mulig å postere et dokument som har to mva-transaksjoner: en der retningen er **Utgående merverdiavgift**, og en der den er **Innkommende merverdiavgift**. Disse transaksjonene rapporteres deretter i mva-returen som to linjer.
 
 ## <a name="import-a-package-of-data-entities-that-includes-a-predefined-em-setup"></a><a id="em-setup"></a>Importere en pakke med dataenheter som inkluderer et forhåndsdefinert EM-oppsett
 

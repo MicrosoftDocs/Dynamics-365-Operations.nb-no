@@ -1,12 +1,10 @@
 ---
 title: Planlegg arbeidsordrer
 description: Dette emnet forklarer hvordan du planlegger arbeidsordrer i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020235"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347122"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -58,7 +56,7 @@ Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planleggin
 
 *Eksempel:* I figuren nedenfor vil formelen som er satt inn i **Forventet start**-feltet, generere arbeidsordreplanlegging for alle arbeidsordrer med forventet startdato en uke fra nå og senere. Denne formelen kan være nyttig når du kjører arbeidsordreplanlegging fortløpende, men vil sikre at arbeidsordrene som er planlagt for de neste 5-6 dagene, ikke planlegges på nytt.
 
-![Figur 1](media/03-work-order-scheduling.png)
+![Figur 1.](media/03-work-order-scheduling.png)
 
 Arbeidsordretypen som er knyttet til arbeidsordrer, kan definere planlegging for én vedlikeholdsperson (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Arbeidsordretyper** > **Én vedlikeholdsperson**-veksleknappen satt til Ja). Dette betyr at hvis arbeidsordretypen brukes i en arbeidsordre, settes veksleknappen **Én vedlikeholdsperson** automatisk til Ja på detaljsiden **Alle arbeidsordrer** > **Hode**-visningen > **Tidsplan**-hurtigfanen. Under arbeidsordreplanleggingen vil alle arbeidsordrejobber som opprettes i arbeidsordren, bli planlagt til samme vedlikeholdsperson. Hvis det er nødvendig, kan du redigere valget på **Én vedlikeholdsperson**-veksleknappen i **Alle arbeidsordrer** slik at du kan planlegge flere arbeidere eller én arbeider for arbeidsordrejobbene.
 
@@ -137,3 +135,6 @@ Slik viser og arbeider du med Gantt-diagrammet:
     - Hvis du vil endre planene for en vist arbeidsordre, velger du og drar den til riktig ny dato og nytt klokkeslett.
 
 1. Hvis du har gjort endringer, velger du **Lagre** i handlingsruten for å lagre dem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

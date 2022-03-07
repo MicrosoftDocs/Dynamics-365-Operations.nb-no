@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 92c7c8f0df3e6acde7cd9b1299f799ace35ca6a86c801a0a333321c56d8502eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778146"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023465"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Definere utligningsperioder for kildeskatt for TCS-avgiftstypen
 
@@ -31,7 +31,7 @@ Dette emnet forklarer hvordan du konfigurerer utligningsperioder for TDS-utligni
 
 1. Gå til **Avgift \> Indirekte avgifter \> Kildeskatt \> Utligningsperioder for kildeskatt**.
 
-    [![Siden Utligningsperioder for kildeskatt.](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![Siden Utligningsperioder for kildeskatt](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. Velg **TDS** i **Avgiftstype**-feltet for å definere utligningsperioder for kildeskatt for TDS-avgiftstypen.
 3. Velg **Ny** for å opprette en linje.
@@ -47,6 +47,6 @@ Dette emnet forklarer hvordan du konfigurerer utligningsperioder for TDS-utligni
     > [!NOTE]
     > Hvis du vil kjøre den periodiske TDS-utligningsprosessen, går du til **Økonomimodul \> Periodisk \> Kildeskatt \> Kildeskattbetaling**.
 
-    [![Siden Kildeskattbetaling.](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![Siden Kildeskattbetaling](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. Lukk siden.

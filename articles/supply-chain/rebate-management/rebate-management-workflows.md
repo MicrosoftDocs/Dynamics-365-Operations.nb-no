@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7f18c3bd95901303379c460d026bc944cee809b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: ee342de6d069131e230120c5d65aef58da8e632a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576670"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020393"
 ---
 # <a name="rebate-management-deal-workflows"></a>Arbeidsflyter for rabattbehandlingsavtale
 
@@ -27,12 +27,12 @@ ms.locfileid: "7576670"
 
 Når du skal godkjenne rabattavtaler, bruker Rabattbehandling den samme arbeidsflytplattformen som andre Finance and Operations-apper. To jobbprosesser er tilknyttet hver arbeidsflyt:
 
-- Ett av elementene i arbeidsflyten godkjenner avtalen.
 - Ett av elementene i arbeidsflyten aktiverer avtalen, slik at bruker- eller arbeidsflytprosessen kan godkjenne transaksjonene.
+- Ett av elementene i arbeidsflyten godkjenner avtalen.
 
 Før du kan bruke en rabattavtale, må den være aktiv i **Rabattbehandling**-modulen. Hvis du vil aktivere en avtale, må du først opprette og konfigurere en *arbeidsflyt for rabattbehandlingsavtale*.
 
-Brukere kan ikke godkjenne avtaler manuelt. Arbeidsflyten må alltid brukes.
+Når en arbeidsflyt er aktivert for Rabattbehandling, kan brukere ikke godkjenne avtaler manuelt. Arbeidsflyten må alltid brukes.
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Opprett og administrer arbeidsflyter for rabattbehandlingsavtale
 
@@ -42,17 +42,4 @@ For å arbeide med arbeidsflyter for rabattbehandlingsavtale må du gå til **Ra
 
 Hvis du vil aktivere en avtale via en arbeidsflyt, åpner du avtalen (for eksempel på siden **Alle rabattbehandlingsavtaler**). Velg deretter **Arbeidsflyt \> Send inn** i handlingsruten. Etter at den nye avtalen er behandlet og godkjent via arbeidsflyten, vil den være aktiv og klar til bruk.
 
-Når en avtale er aktivert, kan du ikke endre mesteparten av oppsettet. Hvis du må endre en aktiv avtale, må du først deaktivere den og deretter opprette en ny avtale. Hvis den nye avtalen kommer til å ligne på den gamle avtalen, kan du opprette den ved å kopiere den gamle avtalen.
-
-Du kan endre følgende innstillinger for en avtale etter at den er aktivert:
-
-- Avstem etter
-- Akkumulert garanti
-- Posteringsprofil
-- Posteringsprofil for garanti
-- Dokumentmerknader
-- Valuta.
-- Fra dato
-- Til dags dato
-
-I tillegg kan rabattlinjer fjernes.
+Når en avtale er aktivert, kan du ikke endre oppsettet. Hvis du må endre en aktiv avtale, må du deaktivere den og deretter opprette en ny avtale. Hvis den nye avtalen kommer til å ligne på den gamle avtalen, kan du opprette den ved å kopiere den gamle avtalen.

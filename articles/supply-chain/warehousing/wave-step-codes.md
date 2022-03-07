@@ -1,10 +1,12 @@
 ---
 title: Bølgetrinnkoder
 description: Dette emnet inneholder en oversikt over bølgetrinnkoder og hvordan de brukes.
-author: Mirzaab
+author: josaw1
+manager: tfehr
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c32e795fcb12be02d9c9324051101fa378935303
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 08b40c076e288592f6a4cd628b9acd8a2eaedb7e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572247"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998409"
 ---
 # <a name="wave-step-codes"></a>Bølgetrinnkoder
 
@@ -90,6 +92,3 @@ Fremgangsmåten nedenfor hjelper deg med å garantere at etterfyllings malen du 
 6. I feltet **Bølgetrinnkode** velger du bølgetrinnkoden du valgte i etterfyllingsmalen.
 
 Du utfører disse trinnene for hver juridiske enhet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

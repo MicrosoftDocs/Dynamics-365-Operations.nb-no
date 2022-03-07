@@ -6,20 +6,18 @@ ms.topic: article
 ms.date: 07/27/2020
 ms.author: margoc
 ms.prod: ''
-ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: c3fc8cf49b62515f41712e594076c31ae5d7654b
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: 9d38b9bfd6a9b9d0b39103e82dedad4542931af1
+ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668987"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5637344"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Opplæringskatalog for brukere av Dynamics 365 Supply Chain Management
 
@@ -43,7 +41,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Konfigurere organisasjonen i Finance and Operations-apper](https://docs.microsoft.com/learn/paths/configure-your-organization-finance-ops/) | Som en funksjonell konsulent som arbeider med Finance and Operations-apper, må du forstå hvordan du oppretter en organisasjon for kunden. Dette læringsforløpet viser deg blant annet hvordan du konfigurerer juridiske enheter, implementerer sikkerhetsinnstillinger, tilpasser brukergrensesnittet for brukere, utformer og bygger mobilapper og implementerer vanlige integreringer. | Gratis, selvbetjent elektronisk læringsforløp | 12 timer |
 | [Konfigurere og arbeide med analyse og rapportering i Finance and Operations-apper](https://docs.microsoft.com/learn/paths/configure-analytics-reporting-finance-operations/) | Bedriftsledere kan ta viktige avgjørelser i firmaet hvis de har nøyaktig innsikt i underliggende økonomiske data og driftsdata. En bedriftsbruker kan også konfigurere og bruke verktøyet for elektronisk rapportering uten en enkelt kodelinje, til å ta i bruk nye forskriftsmessige krav og generere forretningsdokumenter i det nødvendige formatet for å utveksle informasjon med offentlige instanser, banker og andre parter. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer |
 
-## <a name="supply-chain-management"></a>Forsyningskjedeadministrasjon<a name="supply-chain-management"></a>
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="supply-chain-management"></a>
 
 | Innhold | beskrivelse  | Formater   | Lengde    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
@@ -69,3 +67,6 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold | beskrivelse  | Formater  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Grunnleggende om Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Vis at du forstår Microsoft Dynamics 365, Power Platform, skybegreper, lisensieringsalternativer og alternativer for distribusjon og frigivelse. | Eksamen: kostnaden varierer etter område |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

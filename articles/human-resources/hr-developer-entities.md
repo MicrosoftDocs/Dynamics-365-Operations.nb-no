@@ -1,12 +1,10 @@
 ---
-title: Common Data Service-enheter
-description: Microsoft Dynamics 365 Human Resources bruker Common Data Service til å aktivere scenarioer for utvidbarhet og integrering.
+title: Dataverse-tabeller
+description: Microsoft Dynamics 365 Human Resources bruker Dataverse til å aktivere scenarioer for utvidbarhet og integrering.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,28 +16,29 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 988fa0b6d39a49b973626a8a0abe83c546f42297
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e316cda9b9c5361c0a2837e7ed6c050e76cc39b9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4530012"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793615"
 ---
-# <a name="common-data-service-entities"></a>Common Data Service-enheter
+# <a name="dataverse-tables"></a>Dataverse-tabeller
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Microsoft Dynamics 365 Human Resources bruker Common Data Service til å aktivere scenarioer for utvidbarhet og integrering.
+Microsoft Dynamics 365 Human Resources bruker Dataverse til å aktivere scenarioer for utvidbarhet og integrering.
 
-Hvis du vil ha mer informasjon om Common Data Service, kan du se [Hva er Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+> [!NOTE]
+> Human Resources-enheter tilsvarer Dataverse-tabeller. Hvis du vil ha mer informasjon om Dataverse (tidligere Common Data Service) og terminologioppdateringer, kan du se [Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
-Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
+Følgende Dataverse-tabeller er tilgjengelige på Human Resources-enheter.
 
-## <a name="benefit-entities"></a>Fordelsenheter
+## <a name="benefit-tables"></a>Fordelstabeller
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
-| Fordelsberegningsfrekvens | cdm_benefitcalculationfrequency |
+| Beregningsfrekvens for fordeler | cdm_benefitcalculationfrequency |
 | Lønnsperiode i fordelsberegningsfrekvens | cdm_benefitcalculationfrequencypayperiod |
 | Beregningssats for fordeler | cdm_benefitcalculationrate |
 | Detaljer om beregningssats for fordeler | cdm_benefitcalculationratedetail |
@@ -47,9 +46,9 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 | Fordelsplan | cdm_benefitplan (ikke aktivert for støtte for egendefinerte felt) |
 | Fordelstype | cdm_benefittype |
 
-## <a name="business-process-tasks-entities"></a>Enheter for forretningsprosessoppgaver
+## <a name="business-process-tasks-tables"></a>Tabeller for forretningsprosessoppgaver
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
 | Forretningsprosesskalender | cdm_businessprocesscalendar |
 | Tilordning av forretningsprosessgruppe | cdm_businessprocessgroupassignment |
@@ -58,11 +57,11 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 | Topptekst for sjekklistemal | cdm_businessprocesstemplateheader |
 | Oppgave for sjekklistemal | cdm_businessprocesstemplatetask |
 
-## <a name="compensation-entities"></a>Kompensasjonsenheter
+## <a name="compensation-tables"></a>Kompensasjonstabeller
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
-| Fast plan for kompensasjon | cdm_compensationfixedplan |
+| Fast kompensasjonsplan | cdm_compensationfixedplan |
 | Kompensasjonsrutenett | cdm_compensationgrid |
 | Kompensasjonsnivå | cdm_compensationlevel |
 | Kompensasjon, lønnsfrekvens | cdm_compensationpayfrequency |
@@ -77,9 +76,9 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 | Overdragelsesregel | cdm_vestingrule |
 | Fast kompensasjon for arbeider | cdm_workerfixedcompensation |
 
-## <a name="organization-entities"></a>Organisasjonsenheter
+## <a name="organization-tables"></a>Organisasjonstabeller
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
 | Avdeling | cdm_department |
 | Ansettelse | cdm_employment |
@@ -95,11 +94,11 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 | Stillingstittel | cdm_title |
 
 > [!NOTE]
-> Finansdimensjoner for **Stillingstype**, **Stillingstilordning** og **Ansettelse** gir enveis integrering til Common Data Service. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Common Data Service til Human Resources. 
+> Finansdimensjoner for **Stillingstype**, **Stillingstilordning** og **Ansettelse** gir enveis integrering til Dataverse. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Dataverse til Human Resources. 
 
-## <a name="leave-and-absence-entities"></a>Permisjons- og fraværsenheter
+## <a name="leave-and-absence-tables"></a>Tabeller for permisjon og fravær
 
-| Navn | Entity |
+| Navn | Tabell |
 | --- | --- |
 | Banktransaksjon for permisjon | cdm_leavebanktransaction |
 | Permisjonsregistrering | cdm_leaveenrollment |
@@ -109,9 +108,9 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 | Permisjonstype | cdm_leavetype |
 | Årsakskode for permisjonstype | cdm_leavetypereasoncode |
 
-## <a name="payroll-entities"></a>Lønnsenheter
+## <a name="payroll-tables"></a>Lønnstabeller
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
 | Lønnssyklus | cdm_paycycle |
 | Lønnsperiode | cdm_payperiod |
@@ -119,11 +118,11 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 | Bankkontobetaling | cdm_bankaccountdisbursement |
 | Avgiftsområde | cdm_taxregion |
 
-## <a name="worker-entities"></a>Arbeiderenheter
+## <a name="worker-tables"></a>Arbeidertabeller
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
-| Arbeider | cdm_worker |
+| Worker | cdm_worker |
 | Arbeideradresse | cdm_workeraddress |
 | Arbeiderens personopplysninger | cdm_workerpersonaldetail |
 | Personidentifikasjonsnummer for arbeider | cdm_workerpersonidentificationnumber |
@@ -135,26 +134,26 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 | Tidsintervall for arbeidskalender | cdm_workcalendartimeinterval (ikke aktivert for støtte for egendefinerte felt) |
 | Bankkonto for arbeider | cdm_workerbankaccount |
 
-## <a name="worker-setup-entities"></a>Enheter for arbeideroppsett
+## <a name="worker-setup-tables"></a>Tabeller for arbeideroppsett
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
 | Veteranstatus | cdm_veteranstatus |
 | Etnisk opprinnelse | cdm_ethnicorigin |
 | Årsakskode | cdm_reasoncode |
 | Utstedende byrå for personidentifikasjon | cdm_personidentificationissuingagency |
 
-## <a name="competency-entities"></a>Kompetanseenheter
+## <a name="competency-tables"></a>Kompetansetabeller
 
-| Navn | Enhet |
+| Navn | Tabell |
 | --- | --- |
 | Kompetansetype | cdm_skilltype |
 
-## <a name="entity-relationship-models"></a>Enhetsrelasjonsmodeller
+## <a name="table-relationship-models"></a>Tabellrelasjonsmodeller
 
-### <a name="worker"></a>Arbeider
+### <a name="worker"></a>Worker
 
-![Arbeider](./media/HCMCommon-worker-entity-diagram.png)
+![Worker](./media/HCMCommon-worker-entity-diagram.png)
 
 ### <a name="job-and-job-position"></a>Jobb og stilling
 
@@ -178,5 +177,12 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 
 ## <a name="see-also"></a>Se også
 
-[Velge en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)</br>
-[Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)
+[Velge en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)<br>
+[Konfigurere Dataverse-integrering](hr-admin-integration-common-data-service.md)<br>
+[Konfigurere virtuelle Dataverse-tabeller](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Vanlige spørsmål om virtuelle tabeller for Human Resources](hr-admin-virtual-entity-faq.md)<br>
+[Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologioppdateringer](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
 description: Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. Denne artikkelen inneholder informasjon om kostnadskategorier som må du definere for disse typene produksjonsarbeid for produksjon og prosjekter.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjCategory
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 59bf9c165af83aeb66586adc2d2bfc1bb5068601
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bffb56fa195c040520ad35bbadaa90816f14dc2a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967864"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839469"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
 
@@ -43,3 +41,6 @@ Tilleggsknappene på **Kostnadskategorier**-siden gir tilgang til prosjektrelate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

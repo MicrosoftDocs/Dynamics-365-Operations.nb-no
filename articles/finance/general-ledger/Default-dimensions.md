@@ -2,9 +2,11 @@
 title: Finansdimensjoner og postering
 description: Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal. Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner. Dette emnet beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9e7416c1ed69fa9783694e2adee7ada4e25e14054daeb1761428855690eb522f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 086270fda7da17c60239c7c86e9ff4ab3f31ef77
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778972"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225253"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finansdimensjoner og postering 
 
@@ -71,29 +73,29 @@ Folk har ofte spørsmål om rekkefølgen de forskjellige komponentene kjører i.
 
 Illustrasjonen nedenfor viser den faste standarddimensjonen som er angitt for hovedkontoen 401100.
 
-[![Standard finansdimensjoner.](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Standard finansdimensjoner](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 I dette svært enkle eksemplet skal vi registrere en økonomijournal der avdelingsdimensjonen er satt til å bruke standardverdien **023** (Operasjoner). Vi vil registrere og postere en finanskonto. Illustrasjonen nedenfor viser standard finansdimensjonen i økonomimodulhodet.
 
-[![Økonomijournaler.](./media/general-journal.png)](./media/general-journal.png)
+[![Økonomijournaler](./media/general-journal.png)](./media/general-journal.png)
 
 Standarddimensjonen i journalhodet fører til at avdeling 023 brukes som standard på salgskontolinjen. Illustrasjonen nedenfor viser den økonomijournallinjen, der standarddimensjonsverdien **023** fra hodet brukes.
 
-[![Journalbilag.](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Journalbilag](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Når linjen posteres, brukes imidlertid den faste dimensjonen, og linjen posteres til avdeling 022. Illustrasjonen nedenfor viser det posterte bilaget, der den faste dimensjonen brukes for salgskontoen.
 
-[![Bilagstransaksjoner med fast dimensjon brukt.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Bilagstransaksjoner](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
 Dette eksemplet bruker samme oppsett som det første eksemplet. Vi vil imidlertid legge til en annen komponent og bruke avdelingsdimensjonen som balansedimensjon. I illustrasjonen nedenfor er **Avdeling** angitt som den balanserende finansdimensjonen for USMF-finans.
 
-[![Illustrasjon som viser Avdeling som balanserende finansdimensjon.](./media/ledger.png)](./media/ledger.png)
+[![Finans](./media/ledger.png)](./media/ledger.png)
 
 Når det samme journalhodeoppsettet brukes, og den samme transaksjonen posteres, brukes den faste dimensjonen først. Balanseringslogikken brukes deretter for å garantere at hver avdeling har en balansert oppføring. Illustrasjonen nedenfor viser bilagstransaksjonene som inkluderer balanseoppføringen etter at den faste dimensjonen er brukt.
 
-[![Bilagstransaksjoner etter at balanseringsoppføringen er brukt.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bilagstransaksjoner](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Eksempel 3
 
@@ -101,11 +103,11 @@ I dette eksemplet skal vi legge til en avansert regel. Den avanserte regelen ang
 
 Dette eksemplet er viktig på grunn av rekkefølgen. Kontostrukturen bestemmes når hovedkontoen er angitt. Hvis du refererer til kontostrukturoppsettet, kan systemet fastslå at hovedkontoen, forretningsenheten, avdelingen og kostsenteret er relevante. Den avanserte regelen er ennå ikke utløst fordi faste dimensjoner ikke brukes før standarddimensjoner er brukt for journalbilaget under postering. I illustrasjonen nedenfor vies ikke kundesegmentet fordi kriteriene for den avanserte regelen ikke er oppfylt.
 
-[![Finanskonto.](./media/drop-down.png)](./media/drop-down.png)
+[![Finanskonto](./media/drop-down.png)](./media/drop-down.png)
 
 Posteringen vil ikke lykkes fordi den faste dimensjonen ble brukt på slutten av prosessen. Dimensjonsvalidering bestemmer at kundesegmentet er nødvendig hvis hovedkontoen er 401100 og avdelingen 022. Postering kan ikke skje på grunn av valideringsfeilen. Illustrasjonen nedenfor viser meldingen som vises når dimensjonsvalidering angir at kunde er et nødvendig segment.
 
-[![Meldingsdetaljer.](./media/message.png)](./media/message.png)
+[![Meldingsdetaljer](./media/message.png)](./media/message.png)
 
 I dette eksemplet må du overskrive standardverdien slik at den avanserte regelen utløses og du kan angi kundesegmentet. Denne løsningen er imidlertid ikke alltid mulig, og noen brukere er ikke en gang klar over posteringsreglene. Det er derfor viktig at du forstår rekkefølgen som standarddimensjoner brukes i når du setter opp kontoplanen.
 
@@ -119,11 +121,11 @@ Noen av følgende ressurser refererer til en tidligere versjon av programvaren. 
 
 [Planlegge kontoplanen](plan-chart-of-accounts.md) 
 
-[Planlegging av kontoplanen i AX 2012 (blogg)](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – Denne koblingen går til del 1 av en serie på sju deler.
+[Planlegging av kontoplanen i AX 2012 (blogg)](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Denne koblingen går til del 1 av en serie på sju deler.
 
-[Dimensjonen som fører til regnskapsdistribusjoner](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
+[Dimensjonen som fører til regnskapsdistribusjoner](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Dimensjonen som fører til dimensjonsrammeverk](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimensjonen som fører til dimensjonsrammeverk](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

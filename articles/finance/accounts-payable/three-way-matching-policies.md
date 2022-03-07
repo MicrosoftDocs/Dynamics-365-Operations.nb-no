@@ -2,25 +2,25 @@
 title: Treveis kontrollpolicyer
 description: Dette emnet inneholder eksempler på treveis samsvar.
 author: abruer
-ms.date: 02/11/2022
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cffdc06216ce8ab1bfb79265f265bec1aee334c5
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109999"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027800"
 ---
 # <a name="three-way-matching-policies"></a>Treveis kontrollpolicyer
 
@@ -28,11 +28,12 @@ ms.locfileid: "8109999"
 
 Dette emnet inneholder eksempler på treveis samsvar.
 
-## <a name="example-three-way-matching-for-items"></a>Eksempel: Treveis kontrollpolicyer for varer
+<a name="example-three-way-matching-for-items"></a>Eksempel: Treveis kontrollpolicyer for varer
+-------------------------------------
 
-**Sammendrag:** Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kalt Fabrikam. Ken bestemmer seg for at alle leverandørfakturaer som er basert på bestillinger, skal sammenlignes med bestillingslinjer (toveis kontroll). For innkjøp av varer som skal brukes som anleggsmidler, skal fakturaer sammenlignes med både bestillingslinjene og produktkvitteringslinjene (treveis samsvar).
+**Sammendrag:** Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kalt Fabrikam. Ken bestemmer seg for at alle leverandørfakturaer som er basert på bestillinger, skal sammenlignes med bestillingslinjer (toveis kontroll). For innkjøp av varer som skal brukes som anleggsmidler, skal fakturaer sammenlignes med både bestillingslinjene og produktkvitteringslinjene (treveis kontroll).
 
-Fabrikam opererer med flere juridiske enheter og ansatte i alle deler av verden. Når antall transaksjoner øker, øker også avvik mellom kvitteringer og fakturaer. Dette fører til at anleggsmidler avskrives. Fakturaer fra leverandører blir betalt, men prosessen omfatter ikke identifikasjon av avvik når det mottas færre varer enn bestilt, eller når varene ikke mottas i det hele tatt. Forbruket øker også fordi ansatte fremdeles trenger verktøy og andre materialer for å gjøre jobben sin. Ken ønsker å være sikker på at leverandørene sender produktene som er bestilt, og at varene mottas av ansatte i Fabrikam. Ken krever derfor toveis og treveis samsvar for alle juridiske enheter i organisasjonen. Fakturakontroll sørger for at problemer med varer som har forsvunnet eller ikke er mottatt, kan spores og løses. 
+Fabrikam opererer med flere juridiske enheter og ansatte i alle deler av verden. Når antall transaksjoner øker, øker også avvik mellom kvitteringer og fakturaer. Dette fører til at anleggsmidler avskrives. Fakturaer fra leverandører blir betalt, men prosessen omfatter ikke identifikasjon av avvik når det mottas færre varer enn bestilt, eller når varene ikke mottas i det hele tatt. Forbruket øker også fordi ansatte fremdeles trenger verktøy og andre materialer for å gjøre jobben sin. Ken ønsker å være sikker på at leverandørene sender produktene som er bestilt, og at varene mottas av ansatte i Fabrikam. Ken krever derfor toveis og treveis kontroll for alle juridiske enheter i organisasjonen. Fakturakontroll sørger for at problemer med varer som har forsvunnet eller ikke er mottatt, kan spores og løses. 
 
 Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller med å oppfylle dette:
 
@@ -42,15 +43,15 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 ### <a name="prerequisites"></a>Forutsetninger
 
--   Ken angir **Treveis samsvar** for **Kontrollpolicy** på nivået for juridisk enhet.
--   Ken setter veksleknappen **Status for automatisk oppdatering av hodekontroll** på nivået for juridisk enhet til **Ja**.
--   Ken setter feltet **Tilpass samlet pris** for den juridiske enheten til **Prosent** og angir 15 % som **Toleranseprosent**.
--   Ken setter kontrollpolicyen på varenivå for vare 1500 – CNC Milicron maskin til **Treveis samsvar**. Denne varen en anleggsmiddelvare som skal brukes til produksjon i Fabrikam. Fakturaer for denne varen sammenlignes med bestillingslinjer for priser og med produktkvitteringer for antall.
+-   Ken setter kontrollpolicyen for det juridiske enhetsnivået til treveis kontroll.
+-   Ken angir statusen for automatisk oppdatering av hodekontroll for den juridiske enheten til Ja.
+-   Ken setter feltet Tilpass samlet pris for den juridiske enheten til Prosent og setter inn 15 % som toleranseprosent.
+-   Ken setter kontrollpolicyen på varenivå for vare 1500 – CNC Milicron maskin til Treveis samsvar. Denne varen en anleggsmiddelvare som skal brukes til produksjon i Fabrikam. Fakturaer for denne varen sammenlignes med bestillingslinjer for priser og med produktkvitteringer for antall.
 -   Tony angir en innkjøpsrekvisisjon for fem CNC Milicron maskiner. Alicia, en kontormedarbeider hos Fabrikam, utsteder en bestilling til en juridisk enhet kalt Contoso for levering av varene.
 
     | Varenummer                 | Antall | Enhetspris | Nettobeløp | Tilleggskode        | Gebyrverdi |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – CNC Milicron maskin | 5        | 8 000,00   | 40 000,00  | Forsendelse og behandling | 3 000,00      |
+    | 1500 – CNC Milicron maskin | 5        | 8 000,00   | 40 000,00  | Forsendelse og behandling | 3,000.00      |
 
 -   Magnus, en regnskapsmedarbeider hos Contoso, ser gjennom forsendelser for uken. Arnie velger forsendelsestransaksjoner for å fakturere Fabrikam for levering av CNC Milicron-maskinene. Magnus inkluderer et tillegg for forsendelse og håndtering. Fabrikam anser tillegget som en del av anleggsmiddelkostnaden.
 
@@ -65,7 +66,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 Papirfakturaen fra Contoso inneholder følgende informasjon.
 
-| Vare                        | Antall | Enhetspris | Nettobeløp |
+| Element                        | Antall | Enhetspris | Nettobeløp |
 |-----------------------------|----------|------------|------------|
 | 1500 – CNC Milicron maskin | 5        | 8 100.00   | 40,500.00  |
 | Forsendelse og behandling       |          |            | 4,000.00   |
@@ -83,7 +84,7 @@ Fordi denne linjen består fakturakontrollprosessen, kan fakturaen posteres.
 ## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Eksempel: Treveis samsvar for vare- og leverandørkombinasjoner
 Sammendrag: Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kalt Fabrikam. Ken bestemmer seg for at alle fakturaer som er basert på bestillinger, skal sammenlignes med bestillingslinjer (toveis kontroll). Cassie er regnskapsføreren i Malaysia-kontoret til Fabrikam. Hun angir at valgte varer som bestilles fra bestemte leverandører i Malaysia, bør kontrolleres mot både bestillingslinjer og produktkvitteringslinjene (treveis samsvar). Hun kan også overstyre kontrollpolicyen til et høyere kontrollnivå for bestemte bestillinger. 
 
-Volumet og beløpene er små, og det har vært problemer med leveringen fra noen leverandører i Malaysia. Derfor setter Cassie kontrollnivået for enkelte vare- og leverandørkombinasjoner som er kjøpt i Malaysia, til treveis samsvar. 
+Volumet og beløpene er små, og det har vært problemer med leveringen fra noen leverandører i Malaysia. Derfor setter Cassie kontrollnivået for enkelte vare- og leverandørkombinasjoner som er kjøpt i Malaysia, til treveis kontroll. 
 
 Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller med å oppfylle dette:
 -   Ken er kontrolleren til Fabrikam-organisasjonen. Ken kan hjelpe personer i organisasjonen med å identifisere og løse problemer med bestilling, mottak og betaling av varer (varer og tjenester) fra leverandører.
@@ -91,11 +92,11 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 ### <a name="prerequisites"></a>Forutsetninger
 
--   Ken setter **Kontrollpolicy** på nivået for juridisk enhet til **Toveis samsvar**.
--   Ken setter feltet **Tilpass samlet pris** for den juridiske enheten til **Prosent** og angir **10 %** som **Toleranseprosent**.
+-   Ken setter kontrollpolicyen for det juridiske enhetsnivået til toveis kontroll.
+-   Ken setter feltet Tilpass samlet pris for den juridiske enheten til Prosent og setter inn 10 % som toleranseprosent.
 -   Ken setter enhetsprisetoleransen for alle varer til 2 %.
--   Cassie setter **Kontrollpolicy** på nivået for vare- og leverandørkombinasjon for vare PH2500 – datamaskin og leverandøren Contoso til **Treveis samsvar**.
--   Alicia, en kontormedarbeider på Malaysia-kontoret til Fabrikam, sender bestillinger på tre varer til Contoso, som vist i følgende tabell. Når hun oppretter bestillingen, overstyrer hun **Kontrollpolicy** for den trådløse musen til treveis samsvar i stedet for toveis.
+-   Cassie setter kontrollpolicyen for vare- og leverandørskombinasjonsnivået for vare PH2500 – datamaskin og leverandøren Contoso til treveis samsvar.
+-   Alicia, en kontormedarbeider på Malaysia-kontoret til Fabrikam, sender bestillinger på tre varer til Contoso, som vist i følgende tabell. Når hun oppretter bestillingen, overstyrer hun kontrollpolicyen for den trådløse musen til treveis kontroll i stedet for toveis.
 
     | Varenummer           | Antall | Enhetspris | Nettobeløp | Kontrollpolicy (standardoppføring) | Kontrollpolicy (på bestillingslinjen) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -114,7 +115,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 Papirfakturaen fra Contoso inneholder følgende informasjon.
 
-| Vare                  | Antall | Enhetspris | Nettobeløp |
+| Element                  | Antall | Enhetspris | Nettobeløp |
 |-----------------------|----------|------------|------------|
 | PH2500 – datamaskin     | 2        | 2 500,00   | 5 000,00   |
 | MM01 – trådløs mus | 2        | 41.00      | 82.00      |
@@ -134,7 +135,7 @@ Merk følgende:
 -   I linjen for MM01 – trådløs mus inneholder kolonnen Samsvar i antall i produktkvittering et varselikon fordi fakturalinjen ikke er kontrollert mot en produktkvittering. Enhetsprissamsvar-kolonnen inneholder et advarselsikon fordi nettopristoleransen på 2 % er overskredet.
 -   I linjen for USB-enhet er kolonnen Samsvar i antall i produktkvittering tom fordi toveis samsvar ikke har samsvar mellom antallet på fakturalinjen og produktkvitteringslinjen.
 
-Hvis godkjenning er nødvendig for at fakturaer kan posteres med fakturauoverensstemmelser, må **Godkjenn postering med samsvarende avvik** på siden **Fakturakontrolldetaljer** velges før fakturaen kan posteres med prissamsvarsfeil og antallssamsvarsfeil. Hvis godkjenning ikke kreves, kan fakturabehandlingen fortsette hvis det ikke er andre posteringsfeil.
+Hvis godkjenning er nødvendig for at fakturaer kan posteres med fakturauoverensstemmelser, må Godkjenn postering med samsvarende avvik på siden Fakturakontrolldetaljer velges før fakturaen kan posteres med prissamsvarsfeil og antallsamsvarsfeil. Hvis godkjenning ikke kreves, kan fakturabehandlingen fortsette hvis det ikke er andre posteringsfeil.
 
 
 Hvis du vil ha mer informasjon, kan du se [Oversikt over samsvar for leverandørfaktura](accounts-payable-invoice-matching.md).

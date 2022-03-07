@@ -1,27 +1,30 @@
 ---
 title: Produktdataenheter
 description: Dette emnet inneholder informasjon om de ulike enhetene som kan brukes til å importere og eksportere produktdata.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: 2784e552d7984bbea9c74ad800c6305ab2a216e9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 20d067effc6139084c5d89b5d4698e1adf2bbf9f
+ms.sourcegitcommit: e9776095b92d19f214cd6765bbe9bf111432a699
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567157"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "4434879"
 ---
 # <a name="product-data-entities"></a>Produktdataenheter
 
@@ -42,11 +45,8 @@ Du må bruke dataenheter til å importere og eksportere produktdata. Tabellen ne
 | Frigitte spesifikke produkter V2 | `EcoResDistinctProductV2Entity` | Denne enheten brukes til å eksportere spesifikke produkter. Disse spesifikke produktene kan være produkter, undertypeprodukter og produktvarianter. |
 | Frigitte produktstandarder V2 | `EcoResProductMasterV2Entity` | Denne enheten brukes til å importere og eksportere produktstandarder. Den er ikke aktivert for databehandling. |
 | Vare – strekkode | `EcoResProductBarcodeEntityV3` | Denne enheten brukes til å eksportere produkter og strekkoder. Denne enheten tillater ikke endringssporing, oppdateringer eller slettinger. Hvis du vil bruke endringssporing, oppdateringer eller slettinger på strekkoder, må du bruke **Vare – strekkodetilknytning**. |
-| Tilknytning for vare – strekkode | `EcoResProductBarcodeAssociationEntity` | Denne enheten brukes til å eksportere produkter og strekkoder. Den tillater endringssporing, oppdateringer og slettinger. Hvis du vil bruke enheten, må funksjonen *Vare – strekkodeforbedringer* være aktivert i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Enhetsnøkkelen er `AssociationID`, som oppretter tilknytningen mellom strekkoden og produktet. Hvis du vil legge til støtte for denne nøkkelen, blir `InventitemBarcodeAssociation`-tabellen fylt ut for eksisterende varestrekkodedata når du aktiverer funksjonen. Tabellen fylles ut ved hjelp av en satsvis jobb, og hvis strekkodetabellen har mange oppføringer, kan det ta lang tid å kjøre den satsvise jobben. Det anbefales derfor at du planlegger å aktivere funksjonen (og dermed kjøre den satsvise jobben) på et tidspunkt som passer forretningstidsplanen din. |
+| Tilknytning for vare – strekkode | `EcoResProductBarcodeAssociationEntity` | Denne enheten brukes til å eksportere produkter og strekkoder. Den tillater endringssporing, oppdateringer og slettinger. Hvis du vil bruke enheten, må funksjonen *Vare – strekkodeforbedringer* være aktivert i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Enhetsnøkkelen er `AssociationID`, som oppretter tilknytningen mellom strekkoden og produktet. Hvis du vil legge til støtte for denne nøkkelen, blir `InventitemBarcodeAssociation`-tabellen fylt ut for eksisterende varestrekkodedata når du aktiverer funksjonen. Tabellen fylles ut ved hjelp av en satsvis jobb, og hvis strekkodetabellen har mange oppføringer, kan det ta lang tid å kjøre den satsvise jobben. Vi anbefaler derfor at du planlegger å aktivere funksjonen (og dermed kjøre den satsvise jobben) på et tidspunkt som passer forretningstidsplanen din. |
 | Tilstander for produktlivssyklus | `EcoResProductLifecycleSateEntity` | Denne enheten brukes til å importere og eksportere de ulike produktlivssyklustilstandene som kan tilordnes til et produkt. |
 
 > [!NOTE]
 > Du kan bruke dataenheten **Frigitte produkter v2** til å importere produkter til systemet bare hvis det delte produktet allerede er opprettet. Hvis du vil importere produkter til systemet, må du ellers bruke dataenheten **Produktoppretting**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

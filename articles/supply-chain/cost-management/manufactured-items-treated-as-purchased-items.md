@@ -2,11 +2,9 @@
 title: Definere produkter som kan være produsert eller fremskaffet
 description: 'Produkter kan ha forskjellige kildeinndelinger: de kan være produsert eller fremskaffet (kjøpt). Denne artikkelen beskriver noen vanlige poeng som må vurderes når du konfigurerer produkter som støtter flere leverandører.'
 author: cvocph
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7acf4952c1dbb33f4ec615d1ecb9d508a9e7b980
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2052d72774068b8f1cbfd8e2e2bdb57424a6452c32ace83a6985e91aea88600b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761122"
 ---
 # <a name="set-up-products-that-can-be-produced-or-procured"></a>Definere produkter som kan være produsert eller fremskaffet
 
@@ -41,3 +39,6 @@ Du kan hindre at slike beregninger utføres ved å velge flagget for **Stopp ned
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

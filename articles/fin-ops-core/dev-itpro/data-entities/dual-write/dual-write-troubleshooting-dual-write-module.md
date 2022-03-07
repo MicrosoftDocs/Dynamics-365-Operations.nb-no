@@ -1,12 +1,11 @@
 ---
-title: Feilsøke problemer med dobbel skriving-modulen i Finance and Operations-apper
+title: Feilsøke problemer med dobbel skriving i Finance and Operations-apper
 description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med dobbel skriving-modulen i Finance and Operations-apper.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,14 +17,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9bff8ad0c5716648dec6eadfb21412a2b17f155e
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683629"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561232"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Feilsøke problemer med dobbel skriving-modulen i Finance and Operations-apper
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøke problemer med dobbel skriving i Finance and Operations-apper
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +43,7 @@ Hvis du ikke kan åpne **Dobbel skriving**-siden ved å velge **Dobbel skriving*
 
 **Påkrevd legitimasjon for å løse problemet:** Den samme brukeren som konfigurere dobbelt skriving.
 
-Du kan få følgende feilmelding når du prøver å konfigurere en ny enhet for dobbel skriving. Den eneste brukeren som kan opprette en tilordning, er brukeren som konfigurere dobbelt skriving-forbindelsen.
+Du kan få følgende feilmelding når du prøver å konfigurere en ny tabell for dobbel skriving. Den eneste brukeren som kan opprette en tilordning, er brukeren som konfigurere dobbelt skriving-forbindelsen.
 
 *Svarstatuskoden indikerer ikke fullført: 401 (uautorisert)*
 
@@ -77,7 +76,7 @@ Denne feilen oppstår når det koblede Dataverse-miljøet ikke er tilgjengelig.
 
 Du kan løse problemet ved å opprette en støtteforespørsel for data integrasjonsgruppen. Knytt til nettverkssporingen slik at dataintegrasjonsgruppen kan merke tilordningene som **Kjører ikke** i serverdelen.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Feil under forsøk på å starte en tabelltilordning
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Feil under forsøk på å starte en tabelltilordning
 
 Det kan hende du får en feilmelding som nedenfor når du forsøker å angi denne tilstanden for en tilordning til **Kjører**:
 
@@ -86,4 +85,7 @@ Det kan hende du får en feilmelding som nedenfor når du forsøker å angi denn
 Hurtigreparasjonen for denne feilen er avhengig av årsaken til feilen:
 
 + Hvis tilordningen har avhengige tilordninger, må du sørge for å aktivere de avhengige tilordningene for denne tabelltilordningen.
-+ Tilordningen kan mangle kilde- eller målfelt. Hvis et felt i Finance and Operations-appen mangler, følger du trinnene i delen [Problem med manglende enhetsfelt på tilordninger](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Hvis det mangler et felt i Dataverse, klikker du på **Oppdater tabeller**-knappen for tilordningen, slik at feltene fylles ut automatisk i tilordningen på nytt.
++ Tilordningen kan mangle kilde- eller målkolonner. Hvis en kolonne i Finance and Operations-appen mangler, følger du trinnene i delen [Problemer med manglende tabellkolonner i tilordninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis det mangler en kolonne i Dataverse, klikker du på **Oppdater tabeller**-knappen for tilordningen, slik at kolonnene fylles ut automatisk i tilordningen på nytt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

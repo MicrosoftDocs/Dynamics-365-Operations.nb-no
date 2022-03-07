@@ -2,28 +2,25 @@
 title: Likviditetsbeholdning (forhåndsversjon)
 description: Dette emnet beskriver hvordan funksjonen Kontantstrømprognose forutsier en organisasjons likviditetsbeholdning for bestemte tider. Det beskriver også alternativene som er tilgjengelige for å vise prognoser for forskjellige perioder.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 64b8dcd43024e5c26d33bf12c5fe198711adde56
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645896"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186498"
 ---
 # <a name="cash-position-preview"></a>Likviditetsbeholdning (forhåndsversjon)
 
@@ -34,7 +31,7 @@ Likviditetsbeholdning er prosjekteringen av kontantstrøm som forutsies på kort
 
 Når systemet forutsier kundebetalinger, bruker det betalingsprognosene fra funksjonen for kundebetalingsprognose. Uten betalingsprognoser blir gjennomsnittstiden som kreves for å konvertere en kundefaktura til en betaling for hver kunde, brukt til å beregne en betalingsdato. Når det gjelder åpne kundeordrer, beregner systemet fakturadatoen ved hjelp av gjennomsnittlig antall dager for ordrelinjer per kunde som skal faktureres. Deretter bruker det fakturadatoen som inndata for funksjonen for betalingsprognose. Funksjonen for kundebetalingsprognose beregner en betalingsdato for hver ordrelinje. 
 
-<*Trenger tekst fra Jarek eller Dave om hvordan betalingsprognoser konverteres til en dato*> Betalingsdatoen for utestående fakturaer blir anslått [*estimert*] fra betalingsprognosene ved å velge en dato som samsvarer med det 50. persentil av den kumulative distribusjonsfunksjonen som er hentet fra sannsynlighetene for den forutsagte samlingen.
+Betalingsdatoen for utestående fakturaer blir anslått fra betalingsprognosene ved å velge en dato som samsvarer med det 50. persentil av den kumulative distribusjonsfunksjonen som er hentet fra sannsynlighetene for den forutsagte samlingen.
 
 En lignende tilnærming brukes til å forutsi betalinger til leverandører. For hver leverandør beregner systemet gjennomsnittstiden det tar å konvertere en leverandørfaktura til en betaling. Dette antallet dager brukes deretter til å beregne betalingsdatoen. Når det gjelder åpne leverandørordrer, beregner systemet fakturadatoen ved å vurdere gjennomsnittlig antall dager som kreves for å konvertere ordrelinjer til en faktura for hver leverandør. Systemet beregner deretter betalingsdatoen ved hjelp av gjennomsnittstiden det tar å konvertere en leverandørfaktura til en betaling for hver leverandør.
 
@@ -51,3 +48,5 @@ Hvis du vil lagre og redigere likviditetsbeholdningen, oppretter du et øyeblikk
 
 #### <a name="privacy-notice"></a>Personvernerklæring
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

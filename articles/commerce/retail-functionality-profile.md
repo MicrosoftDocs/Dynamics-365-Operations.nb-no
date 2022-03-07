@@ -2,36 +2,30 @@
 title: Opprette en funksjonalitetsprofil for Retail
 description: Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b8d481597485775796290f61de19ef7682cb9f43
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414514"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792004"
 ---
 # <a name="create-a-retail-functionality-profile"></a>Opprette en funksjonalitetsprofil for Retail
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter en funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Funksjonalitetsprofilen for handel inneholder ulike innstillinger som brukes for Internett-kanaler. Hver kanal må angi en funksjonalitetsprofil.
 
@@ -64,3 +58,6 @@ Bildet nedenfor viser et eksempel på en funksjonalitetsprofil.
 [Oversikt over skjermoppsett](pos-screen-layouts.md)       
 
 [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

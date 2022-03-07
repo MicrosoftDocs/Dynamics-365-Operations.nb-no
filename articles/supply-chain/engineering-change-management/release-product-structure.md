@@ -2,11 +2,9 @@
 title: Frigi produktstrukturer
 description: Dette emnet beskriver hvordan du kan frigir produktstrukturer i tillegg til å frigi produkter sammen med de tekniske versjonene. På denne måten kan du sikre at teknisk relevante produktdata enkelt kan brukes på nytt i ulike juridiske enheter.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967238"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841991"
 ---
 # <a name="release-product-structures"></a>Frigi produktstrukturer
 
@@ -76,8 +74,6 @@ Hvis du vil ha et eksempel på hvordan du kan godtar et produkt, kan du se [Se g
 ## <a name="release-policies"></a>Frigivelsespolicyer
 
 Ikke alle driftsfirmaer trenger de samme produktdataene. Vanligvis vil driftsfirmaer som produserer tekniske produkter, kreve en stykkliste, mens driftsfirmaet som bare selger tekniske produkter, ikke krever en stykkliste. Du kan bruke frigivelsespolicyer til å fastsette parameterne som brukes til frigivelsen av produkter.
-
-For tekniske produkter tilordnes frigivelsespolicyen i kategorien for teknisk produkt, og feltet er obligatorisk. For standardprodukter tilordnes policyen til det delte produktet, og feltet er valgfritt.
 
 Hvis du vil ha mer informasjon om kategorier for teknisk produkt, kan du se [Utviklingsversjoner og utviklingsproduktkategorier](engineering-versions-product-category.md).
 
@@ -159,3 +155,6 @@ Denne virkemåten gjelder bare når et produkt velges direkte for frigivelse. Pr
 Produkt X er for eksempel tilordnet til produkteiergruppen *Designkabinetter*. Produkt X er også en del av stykklisten for produkt Y, som er tilordnet til produkteiergruppen *Designhøyttalere*. Hvis en bruker fra produkteiergruppen *Designhøyttalere* frigir produkt Y og stykklisten, blir produkt X frigitt sammen med produkt Y.
 
 Hvis du vil ha mer informasjon, kan du se [Produkteiere](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

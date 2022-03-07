@@ -2,15 +2,12 @@
 title: Iframe-modul
 description: Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.openlocfilehash: 570901e3afca82abd21172df4c0b6fc575b57262f2b5d1decad11cabc00db31d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767296"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 En iFrame-modul gir en iFrame (innebygd ramme) som er vert for eksternt innhold på et område. Den kan for eksempel brukes til å være vert for en YouTube-video eller PDF-filvisning på en områdeside. 
 
@@ -42,7 +37,7 @@ En iFrame-modul krever en mål-URL-adresse. Deretter er den vert for innholdet p
 
 Det følgende bildet viser eksempler på iFrame-moduler som viser eksterne videoer på områdesider.
 
-![Eksempel på iFrame-moduler som viser eksterne videoer](./media/ecommerce-iframe.PNG)
+![Eksempel på iFrame-moduler som viser eksterne videoer.](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>Egenskaper for iFrame-modul
 
@@ -77,3 +72,6 @@ Følg denne fremgangsmåten for å legge til en iFrame-modul på en side for å 
 [Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

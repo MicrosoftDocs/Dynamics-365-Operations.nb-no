@@ -1,12 +1,10 @@
 ---
 title: Registrere forbruk
 description: Dette emnet forklarer hvordan du registrerer forbruk i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020787"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837903"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -94,3 +92,6 @@ Når du utfører forbruksregistreringer, legges finansdimensjoner som er knyttet
 >[!NOTE]
 >For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standard oppsett med andre Finance and Operations-apper.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

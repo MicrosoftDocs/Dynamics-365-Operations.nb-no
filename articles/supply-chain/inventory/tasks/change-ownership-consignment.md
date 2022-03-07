@@ -1,25 +1,27 @@
 ---
 title: Endre eierskap for forsendelseslager basert på produksjonsbehov
 description: Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra leverandøren til den juridiske enheten når det er behov for beholdningen i produksjonen.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e735a9003f2859ed173f399525297506ec458e8d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 1a4130670d2291fef16c9ff5482995a709b03cd3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565837"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000190"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Endre eierskap for forsendelseslager basert på produksjonsbehov
 
@@ -52,6 +54,3 @@ Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra 
 2. Klikk på OK.
 3. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

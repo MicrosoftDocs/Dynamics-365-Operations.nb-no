@@ -2,16 +2,13 @@
 title: Utgående lageroperasjon på salgsstedet
 description: Dette emnet beskriver funksjonene til utgående lageroperasjoner på salgsstedet (POS).
 author: hhaines
-manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +16,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414530"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581144"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Utgående lageroperasjon på salgsstedet
+# <a name="outbound-inventory-operation-in-pos"></a>Utgående lageroperasjon i salgsstedet
 
 [!include [banner](includes/banner.md)]
 
@@ -74,7 +71,7 @@ De satsvise jobbene du oppretter, vil bli brukt til å behandle dokumenter som m
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Forutsetning: Legg til utgående operasjon i oppsett for POS-skjerm
 
-Før organisasjonen kan bruke funksjonaliteten for utgående operasjoner, må den konfigurere POS-operasjonen **Utgående operasjon** på ett eller flere av [POS-skjermoppsettene](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Før du distribuerer den nye operasjonen i et produksjonsmiljø, må du kontrollere at du tester den grundig og lære opp brukerne for å bruke den.
+Før organisasjonen kan bruke funksjonaliteten for utgående operasjoner, må den konfigurere POS-operasjonen **Utgående operasjon** på ett eller flere av [POS-skjermoppsettene](/dynamics365/unified-operations/retail/pos-screen-layouts). Før du distribuerer den nye operasjonen i et produksjonsmiljø, må du kontrollere at du tester den grundig og lære opp brukerne for å bruke den.
 
 ## <a name="overview"></a>Oversikt
 
@@ -119,7 +116,7 @@ I visningen **Fullstendig ordreliste** kan du manuelt velge en linje i listen og
 
 ### <a name="over-delivery-shipping-validations"></a>Valideringer av overleveringsforsendelser
 
-Valideringer skjer under mottaksprosessen for dokumentlinjene. De omfatter valideringer for overlevering. Hvis en bruker prøver å motta mer beholdning enn det som ble bestilt på en bestilling, men enten overlevering ikke er konfigurert, eller hvis antallet som er mottatt, overskrider den overleveringstoleransen som er konfigurert for bestillingslinjen, får brukeren en feil og ikke tillatt å motta det overflødige antallet.
+Valideringer skjer under fullføringsprosessen for dokumentlinjene. De omfatter valideringer for overlevering. Hvis en bruker prøver å semde mer beholdning enn det som ble bestilt på en overføringsordre, men enten overlevering ikke er konfigurert, eller hvis antallet som sendes, overskrider den overleveringstoleransen som er konfigurert for overføringslinjen, får brukeren en feil og ikke tillatt å levere det overflødige antallet.
 
 ### <a name="underdelivery-close-lines"></a>Lukke linjer for underlevering
 
@@ -193,3 +190,6 @@ Fullstendig sendte overføringsordrer flyttes til kategorien **Fullstendig** i d
 ## <a name="related-topics"></a>Relaterte emner
 
 [Inngående lageroperasjon på salgsstedet](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

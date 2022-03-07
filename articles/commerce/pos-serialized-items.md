@@ -2,31 +2,28 @@
 title: Arbeide med serialiserte varer på salgsstedet
 description: Dette emnet forklarer hvordan du administrerer serialiserte varer i salgsstedsprogrammet.
 author: boycezhu
-manager: annbe
-ms.date: 08/21/2020
+ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6ba01abc3d1a4496ec586a621aa03b4981f84d76
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5725943fd249e1b5d66b08b829c2eb58b6aad3ee24db9ca83bbde9be906bbf82
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737584"
 ---
 # <a name="work-with-serialized-items-in-the-pos"></a>Arbeide med serialiserte varer på salgsstedet
 
 [!include [banner](includes/banner.md)]
 
-Mange forhandlere selger produkter som krever en seriell kontroll. Disse produktene blir referert til som *serialiserte varer*. Noen forhandlere vil kanskje vedlikeholde serienumre i butikk- eller lagerbeholdningen til sporingsformål. Andre forhandlere kan ønske å registrere serienumre under salgsprosessen for service- og garantiformål. Dette emnet forklarer hvordan du administrerer serialiserte varer i Microsoft Dynamics 365 Commerce-salgsstedsprogrammet.
+Mange forhandlere selger produkter som krever en seriell kontroll. Disse produktene blir referert til som *serialiserte varer*. Noen forhandlere vil kanskje vedlikeholde serienumre i butikk- eller lagerbeholdningen til sporingsformål. Andre forhandlere kan ønske å registrere serienumre under salgsprosessen for service- og garantiformål. Dette emnet forklarer hvordan du administrerer serialiserte varer i salgsstedsprogrammet for Microsoft Dynamics 365 Commerce.
 
 ## <a name="serial-number-configurations"></a>Konfigurasjoner av serienumre
 
@@ -90,8 +87,52 @@ Hvis du vil aktivere for eksempel validering som en forutsetning, må du planleg
 - **Detaljhandel og handel** > **IT for Detaljhandel og handel** > **Produkter og beholdning** > **Produkttilgjengelighet med sporingsdimensjoner**
 - **Detaljhandel og handel** > **Distribusjonsplaner** > **1130** (**Produkttilgjengelighet**)
 
+## <a name="sell-serialized-items-in-pos"></a>Selge serialiserte varer på salgssted
+
+Salgsstedsprogrammet har alltid støttet salg av serialiserte varer, men i Commerce versjon 10.0.17 og senere kan organisasjoner aktivere funksjonalitet som forbedrer forretningslogikken som utløses ved salg av produkter som er konfigurert for serienummersporing.
+
+Når funksjonen for **Utvidet serienummervalidering i ordrehenting og ordreoppfyllelse for salgssted er aktivert**, evalueres følgende produktkonfigurasjoner når du selger serialiserte produkter på salgsstedet:
+
+- Oppsett av **Serietype** for produktet (**aktiv** eller **aktiv i salg**).
+- **Tom avgang tillatte**-innstillinger for produktet.
+- **Fysisk negativt lager**-innstillinger for produktet og/eller salgslageret.
+
+### <a name="active-serial-configurations"></a>Aktive konfigurasjoner av serienumre
+
+Når varer selges på salgsstedet som er konfigurert med en **Aktiv** serienummersporingsdimensjon, starter salgsstedet valideringslogikk som hindrer brukere i å fullføre salget av en serialisert vare med et serienummer som ikke finnes i salgslagerets gjeldende lager. Det finnes to unntak fra denne valideringsregelen:
+
+- Hvis varen også er konfigurert med **Tom avgang** aktivert, kan brukere hoppe over registreringen av serienummeret og selge varen uten serienummerbetegnelse.
+- Hvis varen og/eller salgslageret er konfigurert med **Fysisk negativt lager** aktivert, godtar og selger programmet et serienummer som ikke kan bekreftes å være på lageret det selges mot. Ved hjelp av denne konfigurasjonen kan lagertransaksjonen for dette bestemte vare-/serienummeret være negativt, og systemet vil derfor tillate salg av ukjente serienumre.
+
+> [!IMPORTANT]
+> For å sikre at salgsstedsprogrammet kan validere riktig om serienumrene som selges for **Aktiv**-serietypevarer, er på salgslagerets lager, er det nødvendig at organisasjoner kjører jobben **Produkttilgjengelighet med sporingsdimensjoner** i Commerce Headquarters og den tilhørende distribusjonsjobben for produkttilgjengelighet, **1130**, via Commerce Headquarters hyppig. Ettersom nytt serialisert lager mottas til salgslagre, må lagerstandarden ofte oppdatere kanaldatabasen med de mest oppdaterte lagertilgjengelighetsdataene for at salgsstedet skal kunne validere tilgjengelighet for lagernumre som selges. Jobben **Produkttilgjengelighet med sporingsdimensjoner** tar et øyeblikksbilde av hovedlageret, inkludert serienumre, for alle firmalagre. Distribusjonsjobben **1130** tar et øyeblikksbilde av lageret og deler det med alle konfigurerte kanaldatabaser.
+
+### <a name="active-in-sales-process-serial-configurations"></a>Aktiv i salgsprosess-seriekonfigurasjoner
+
+Varer som er konfigurert med seriedimensjonen **Aktiv i salgsprosess**, går ikke gjennom noen lagervalideringslogikk, fordi denne konfigurasjonen innebærer at lagerserienumrene ikke er forhåndsregistrert på lager, og serienumrene registreres bare på salgstidspunktet.  
+
+Hvis **Tom avgang tillatt** også er konfigurert for **Aktiv i salgsprosess**-konfigurerte varer, kan serienummeroppføringen hoppes over. Hvis **Tom avgang tillatt** ikke er konfigurert, krever programmet at brukeren angir et serienummer, selv om det ikke vil bli validert mot tilgjengelig lager.
+
+### <a name="apply-serial-numbers-during-creation-of-pos-transactions"></a>Bruke serienumre under oppretting av POS-transaksjoner
+
+Salgsstedsprogrammet ber brukere om henting av serienummer umiddelbart ved salg av en serialisert vare, men programmet gir brukerne muligheten til å hoppe over registreringen av serienumre opptil et bestemt tidspunkt i salgsprosessen. Når brukeren begynner å registrere betaling, iverksetter programmet og krever serienummer for varer som ikke er konfigurert til å oppfylles gjennom fremtidige forsendelser eller plukkinger. Serialiserte varer som er konfigurert for hentesalg eller utlevering, krever at brukeren registrerer serienummeret (eller godtar å la det stå tomt hvis varekonfigurasjonen tillater det) før salget fullføres.
+
+Når det gjelder serialiserte varer som er solgt for fremtidig plukking eller forsendelse, kan salgsstedsbrukere hoppe over å angi serienummeret i utgangspunktet, og likevel fullføre opprettelsen av kundeordren.   
+
+> [!NOTE]
+> Når du selger eller oppfyller serialiserte produkter via salgsstedsprogrammet, fremtvinges antallet "1" for de serialiserte varene på salgstransaksjonen. Dette er et resultat av hvordan serienummerinformasjonen spores på salgslinjen. Ved salg eller fullføring av en transaksjon for flere serialiserte varer via salgsstedet, må hver salgslinje bare konfigureres med antallet "1". 
+
+### <a name="apply-serial-numbers-during-customer-order-fulfillment-or-pickup"></a>Bruke serienumre under innfrielse eller plukking av kundeordre
+
+Når du oppfyller kundeordrelinjer for serialiserte produkter ved hjelp av operasjonen **Ordreoppfyllelse** på salgsstedet, iverksetter POS registrering av serienummeret før endelig innfrielse. Hvis et serienummer ikke er angitt under den innledende ordrefangsten, må det registreres under plukk-, pakke- eller forsendelsesprosessen på salgsstedet. En validering utføres på hvert trinn, og brukeren vil bare bli bedt om serienummerdata hvis den mangler eller ikke lenger er gyldig. Hvis for eksempel en bruker hopper over plukk- eller pakketrinnene og øyeblikkelig starter en forsendelse, og det ikke er registrert et serienummer for linjen, vil salgsstedet kreve at serienummeret angis før det endelige fakturatrinnet er fullført. Når du utfører registrering av serienummeret under innfrielsesoperasjoner for ordre på salgsstedet, gjelder alle reglene som er nevnt tidligere i dette emnet, fremdeles. Bare serialiserte varer konfigurert som **Aktiv**, går gjennom en beholdningsvalidering for serienummer. Varer som er konfigurert som **Aktiv i salgsprosess**, blir ikke validert. Hvis **Fysisk negativt lager** er tillatt for **Aktive** produkter, blir et hvilket som helst serienummer godtatt, uavhengig av lagertilgjengelighet. Hvis **Tom avgang tillatt** er konfigurert, kan en bruker la serienumrene stå tomme hvis det er ønskelig under plukk-, pakke- og forsendelsestrinnene for både **Aktiv**- og **Aktiv i salgsprosess**-varer.
+
+Valideringer for serienumre skjer også når en bruker utfører plukkoperasjonene på kundeordrer på salgsstedet. Salgsstedsprogrammet tillater ikke at plukkinger fullføres på et serialisert produkt med mindre det overfører valideringene som nevnt tidligere. Valideringene er alltid basert på produktets sporingsdimensjon og salgslagerkonfigurasjoner. 
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Inngående lageroperasjon i salgsstedet](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
+[Inngående lageroperasjon i salgsstedet](./pos-inbound-inventory-operation.md)
 
-[Utgående lageroperasjon i salgsstedet](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+[Utgående lageroperasjon i salgsstedet](./pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

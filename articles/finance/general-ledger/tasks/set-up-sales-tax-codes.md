@@ -2,23 +2,26 @@
 title: Definer mva-koder
 description: Dette emnet forklarer hvordan du definerer merverdiavgiftskoder i Dynamics 365 Finance.
 author: twheeloc
-ms.date: 09/27/2021
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 3dad006b486f7cd6714c713a3bd83a95fdf0d2b5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562108"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446302"
 ---
 # <a name="set-up-sales-tax-codes"></a>Definer mva-koder
 
@@ -38,19 +41,8 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 8. I **handlingsruten** øverst i grensesnittet velger du **Mva-kode**.
 9. Velg **Verdier**.
 10. Angi verdien for denne mva-koden i **Verdi**-kolonnen.
-
-    Hvis **Beløp per enhet** er valg i hurtigfanen **Beregning** i **Opprinnelse**-feltet, ganges verdien med antallet på transaksjonen for å beregne mva-beløpet.  Hvis mva-koden ikke er en enhetsbasert avgift, er verdien en prosent som er brukt på opprinnelsen for denne mva-koden for å beregne mva-beløpet.     
-
+    - Hvis Beløp per enhet er valg i hurtigfanen **Beregning** i Opprinnelse-feltet, ganges verdien med antallet på transaksjonen for å beregne mva-beløpet.  Hvis mva-koden ikke er en enhetsbasert avgift, er verdien en prosent som er brukt på opprinnelsen for denne mva-koden for å beregne mva-beløpet.     
 11. Velg **Lagre**.
 12. Lukk siden.
 13. Velg **Lagre**.
 
-Fra og med Microsoft Dynamics 365 Finance versjon 10.0.22, hvis du bruker [Avgiftstjeneste](../../localizations/global-tax-calcuation-service-overview.md), og funksjonen [**Støtte for flere mva-registreringsnumre**](../../localizations/emea-multiple-vat-registration-numbers.md) er aktivert i arbeidsområdet **Funksjonsbehandling**, kan du bruke feltet **Type avgift** til å angi typen avgiftskode. Følgende verdier er tilgjengelige:
-
-- Standard mva.
-- Redusert mva.
-- Mva-0 %
-- Forbrukeravgift
-- Annet
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

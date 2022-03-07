@@ -2,11 +2,9 @@
 title: Mobilt arbeidsområde for firmakatalog
 description: Dette emnet gir informasjon om det mobile arbeidsområdet for firmakatalog, som lar brukere vise og kontakte andre ansatte i organisasjonen.
 author: jcart1106
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0b397f3a222ff6957ad4904df90c5db218903090
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683438"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748203"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilt arbeidsområde for firmakatalog
 
@@ -45,7 +43,7 @@ Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende foruts
 <tr class="header">
 <th>Forutsetning</th>
 <th>Rolle</th>
-<th>Beskrivelse</th>
+<th>beskrivelse</th>
 </tr>
 </thead>
 <tbody>
@@ -89,3 +87,6 @@ Laste ned og installere Finance and Operations-mobilappen:
 1.  Velg arbeidsområdet **Firmakatalog** i mobilappen.
 2.  I **Søk**-feltet skriver du inn den ansattes fornavn, etternavn, tittel eller avdeling for å starte søket.
 3.  Velg en ansatt. Siden **Ansattprofil** vises. Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

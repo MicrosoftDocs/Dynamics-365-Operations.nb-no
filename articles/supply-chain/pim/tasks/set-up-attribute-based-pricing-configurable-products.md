@@ -1,24 +1,26 @@
 ---
 title: Definere attributtbasert prissetting for konfigurerbare produkter
 description: Dette emnet forklarer hvordan du setter opp attributtbasert prising.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4acd7b423396124dd1059602f5aa6460ec5e259
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b2f9a78902ff1a0333c46c8ad9142338678b6e7d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578158"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986785"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Definere attributtbasert prissetting for konfigurerbare produkter
 
@@ -28,18 +30,17 @@ Dette emnet forklarer hvordan du setter opp attributtbasert prising. Det er en f
 
 
 ## <a name="create-a-new-price-model"></a>Opprette en ny prismodell
-
-1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
-1. I listen velger du linjen med **High-end-høyttaler**, men ikke velg koblingen for navnet.
-1. Velg **Modell** i handlingsruten.
-1. Velg **Prismodeller**.
-1. Velg **Ny**.
-1. Skriv inn en verdi i feltet **Prismodellnavn**. Bruk et navn som gjør det enkelt å identifisere modellen.  
-1. Skriv inn en verdi i **Beskrivelse**-feltet.
-1. Velg **Lagre**.
+1. Velg **Definisjon av produktvariantmodell** på startsiden.
+2. Velg **Produktkonfigurasjonsmodeller** i **koblinger**-delen.
+3. I listen velger du linjen med **High-end-høyttaler**, men ikke velg koblingen for navnet.
+4. Velg **Modell** i handlingsruten.
+5. Velg **Prismodeller**.
+6. Velg **Ny**.
+7. Skriv inn en verdi i feltet **Prismodellnavn**. Bruk et navn som gjør det enkelt å identifisere modellen.  
+8. Skriv inn en verdi i **Beskrivelse**-feltet.
+9. Velg **Lagre**.
 
 ## <a name="add-price-elements"></a>Legge til priselementer
-
 1. Velg **Rediger**. Hver komponent i en produktmodell kan ha et basispriselement og et hvilket som helst antall prisuttrykksregler. Du kan også legge til priser i ulike valutaer.  
 2. Skriv inn en verdi i feltet **Basisprisuttrykk**. Skriv for eksempel 100. Et basisprisuttrykk kan være en numerisk verdi, eller det kan bestå av den aritmetiske beregningen som omfatter ett eller flere attributter.  
 3. Velg **Legg til**.
@@ -50,6 +51,3 @@ Dette emnet forklarer hvordan du setter opp attributtbasert prising. Det er en f
 8. Skriv inn en verdi i feltet **Uttrykk**. Skriv for eksempel `50`. 
 9. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

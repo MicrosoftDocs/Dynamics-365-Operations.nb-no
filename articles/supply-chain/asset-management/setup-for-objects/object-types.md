@@ -1,12 +1,10 @@
 ---
 title: Aktivatyper
 description: Dette emnet forklarer hvordan du oppretter aktivatyper i Aktivastyring. Det beskriver også elementene som er relatert til aktivatyper.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017423"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347170"
 ---
 # <a name="asset-types"></a>Aktivatyper
 
@@ -47,9 +45,9 @@ Først definerer du de nødvendige aktivatypene. Deretter oppretter du aktivamod
 7. Velg **Lagre**.
 8. I hurtigfanen **Vedlikeholdsjobbtyper** velger du vedlikeholdsjobbtypene som skal relateres til aktivatypen.
 
-    - Hvis du vil velge en vedlikeholdsjobbtype, velger du den i feltet **Gjenværende vedlikeholdsjobbtyper**, og deretter velger du pil høyre ![Pil høyre](media/29-setup-for-objects.png) for å flytte den til delen **Valgte vedlikeholdsjobbtyper**.
-    - Hvis du vil velge alle tilgjengelige vedlikeholdsjobbtyper, velger du ![Videresend alle-pilknappen](media/30-setup-for-objects.png). Alle vedlikeholdsjobbtyper overføres fra feltet **Gjenværende vedlikeholdsjobbtyper** til feltet **Valgte vedlikeholdsjobbtyper**.
-    - Hvis du vil avbryte valget av en vedlikeholdsjobbtype, velger du den i feltet **Valgte vedlikeholdsjobbtyper**, og deretter velger du pil venstre ![Pil venstre](media/31-setup-for-objects.png) for å flytte den til feltet **Gjenværende vedlikeholdsjobbtyper**.
+    - Hvis du vil velge en vedlikeholdsjobbtype, velger du den i feltet **Gjenværende vedlikeholdsjobbtyper**, og deretter velger du pil høyre ![Pil høyre-knappen.](media/29-setup-for-objects.png) for å flytte den til delen **Valgte vedlikeholdsjobbtyper**.
+    - Hvis du vil velge alle tilgjengelige vedlikeholdsjobbtyper, velger du ![Videresend alle-pilknappen.](media/30-setup-for-objects.png) . Alle vedlikeholdsjobbtyper overføres fra feltet **Gjenværende vedlikeholdsjobbtyper** til feltet **Valgte vedlikeholdsjobbtyper**.
+    - Hvis du vil avbryte valget av en vedlikeholdsjobbtype, velger du den i feltet **Valgte vedlikeholdsjobbtyper**, og deretter velger du pil venstre ![Pil venstre-knappen.](media/31-setup-for-objects.png) for å flytte den til delen **Gjenværende vedlikeholdsjobbtyper**.
 
 9. Du kan også velge tellere som skal være knyttet til aktivatypen. På hurtigfanen **Tellere** foretar du valg ved hjelp av metodene som er beskrevet for vedlikeholdsjobbtyper i trinn 8. Hvis du vil ha informasjon om hvordan du definerer tellere, se [Tellere](counters.md).
 10. Du kan også velge attributtypene som skal være knyttet til aktivatypen. På hurtigfanen **Attributtyper** foretar du valg ved hjelp av metodene som er beskrevet for vedlikeholdsjobbtyper i trinn 8. Hvis du vil opprette den foretrukne sekvensen med attributtverdier, velger du en attributtype i feltet **Valgte attributtyer** og bruker pil opp og pil ned til å flytte den. Sekvensen av attributtyper vises på aktiva som bruker denne aktivatypen. Hvis du vil ha mer informasjon om aktivaattributter, se [Vedlikeholdsattributtyper](../setup-for-functional-locations/specification-types.md).
@@ -96,3 +94,6 @@ På siden **Reservedeler** kan du også opprette nye reservedeler for eksisteren
 
 Hvis du vil se om reservedelen på den valgte linejn brukes et annet sted i Aktivastyring (for eksempel i forbindelse med aktiva og arbeidsordrer), velger du **Vare der brukt** for å åpne siden **Vare der brukt**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

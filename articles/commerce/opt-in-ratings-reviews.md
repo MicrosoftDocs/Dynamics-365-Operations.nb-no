@@ -2,7 +2,7 @@
 title: Velge å bruke vurderinger og anmeldelser
 description: Dette emnet forklarer hvordan du velger å bruke vurderinger og omtaler på området for Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/16/2020
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 19c3e8b32654f7c4b7803c547e9d5692f9fc461b
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: fd6715539693389f25800a40c0beffcdc1b0de72
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311935"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968009"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>Velge å bruke vurderinger og anmeldelser
 
@@ -39,9 +39,9 @@ Følg denne fremgangsmåten for å velge å bruke vurderinger og omtaler på omr
 1. Følg fremgangsmåten i [Distribuere et nytt e-handelsområde](deploy-ecommerce-site.md).
 1. Mens du fortsatt er i LCS, kan du gå til **Konfigurasjon av distribusjon av Retail \> Andre innstillinger**.
 1. Sett alternativet **Aktiver tjenesten for vurderinger og omtale** til **Ja**.
-1. I feltet **Moderator for AAD-sikkerhetsgruppe for vurderinger og omtaler** angir du ID-en til sikkerhetsgruppen for Microsoft Azure Active Directory (Azure AD) som omfatter moderatorene for vurderinger og omtaler.
+1. I **Moderator for AAD-sikkerhetsgruppe for vurderinger og omtaler (sikkerhetsgruppeobjekt-ID)** angir du IDen til Microsoft Azure Active Directory (Azure AD)-sikkerhetsgruppen som inkluderer moderatorene for vurderinger og omtaler.
 
-    ![Velge å bruke vurderinger og anmeldelser.](media/LCS_RnR_Preference_2.png)
+    ![Velge å bruke vurderinger og anmeldelser.](media/LCS_RnR_Preference.png)
 
 1. Fullfør initialiseringsprosessen for e-handel.
 

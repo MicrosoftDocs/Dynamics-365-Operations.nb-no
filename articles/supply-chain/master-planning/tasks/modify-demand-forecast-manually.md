@@ -1,5 +1,5 @@
 ---
-title: 'Veiledning: Endre en behovsprognose manuelt'
+title: Endre en behovsprognose manuelt
 description: Dette emnet viser hvordan du endrer prognosen for en vare.
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -10,19 +10,19 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f48e1689d21fd0085ec38aab8f5171997fbf432
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
+ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567205"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889030"
 ---
-# <a name="guide-modify-a-demand-forecast-manually"></a>Veiledning: Endre en behovsprognose manuelt
+# <a name="modify-a-demand-forecast-manually"></a>Endre en behovsprognose manuelt
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Denne fremgangsmåten er ment for produksjonsplanleggeren.
+Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne fremgangsmåten er ment for produksjonsplanleggeren.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Endre prognosen for en utvalgt vare
 
@@ -36,9 +36,9 @@ Slik endrer du prognosen for en utvalgt vare:
 1. Fyll ut de andre feltene etter behov.
 1. Velg **Lagre** i handlingsruten.
 
-## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Endre prognosen for én eller flere varer med Microsoft Excel
+## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Endre prognosen for én eller flere varer i Microsoft Excel
 
-Slik endrer du prognosen for én eller flere varer med Microsoft Excel:
+Slik endrer du prognosen for én eller flere varer i Microsoft Excel:
 
 1. Gjør ett av følgende:
     - Åpne **Behovsprognose**-siden for en hvilken som helst vare (det spiller ingen rolle hvilken), som beskrevet i forrige del.

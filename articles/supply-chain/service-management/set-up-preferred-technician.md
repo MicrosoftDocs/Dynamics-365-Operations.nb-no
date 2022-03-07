@@ -1,26 +1,29 @@
 ---
 title: Definere en foretrukket tekniker
 description: Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en serviceavtale eller serviceordre.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable, SMADispatchBoard
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dac9af5b0b83875d362f1a9db60c99436d1bb699
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 850d91372fb1a918840ebc316a4479f4a70bdc24
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575009"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434086"
 ---
 # <a name="set-up-a-preferred-technician"></a>Definere en foretrukket tekniker 
 
@@ -37,23 +40,23 @@ Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en se
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Tilordne en foretrukket tekniker til en serviceavtale
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**. Dobbeltklikk en serviceavtale for å åpne detaljskjemaet.
+1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**. Dobbeltklikk en serviceavtale for å åpne detaljskjemaet.
 
-2.  I fanen **Generelt** velger du feltet **Foretrukket tekniker**, og deretter velger du et medlem i det aktuelle fordelingsteamet som den foretrukne teknikeren for serviceavtalen.
+2.  I kategorien **Generelt** velger du feltet **Foretrukket tekniker**, og deretter velger du et medlem i det aktuelle fordelingsteamet som den foretrukne teknikeren for serviceavtalen.
 
 ## <a name="assign-a-preferred-technician-to-a-service-order"></a>Tilordne en foretrukket tekniker til en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
+1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
     
 
     > [!NOTE]
-    > <P>I skjemaet <STRONG>Tjenestefordeling</STRONG> angir du et datointervall for fordelingsaktiviteter du vil vise. Velg også om lukkede aktiviteter skal vises og om fordelingsaktivitetslisten skal begrenses til grupper du tilhører eller har tillatelse til å overvåke. Klikk på <STRONG>OK</STRONG> for å åpne skjemaet <STRONG>Tjenestefordeling</STRONG>.</P>
+    > <P>I skjemaet <STRONG>Tjenestefordeling</STRONG> angir du et datointervall for fordelingsaktiviteter du vil vise. Velg også om lukkede aktiviteter skal vises og om fordelingsaktivitetslisten skal begrenses til grupper du tilhører eller har tillatelse til å overvåke. Klikk <STRONG>OK</STRONG> for å åpne skjemaet <STRONG>Tjenestefordeling</STRONG>.</P>
 
 
 
 2.  Velg serviceaktivitetslinjen du vil endre.
 
-3.  I fanen **Relatert** bruker du **Arbeider**-listen til å tilordne et medlem av korrekt fordelingsgruppe til foretrukket tekniker for serviceutkallingen.
+3.  I kategorien **Relatert** bruker du **Arbeider**-listen til å tilordne et medlem av korrekt fordelingsgruppe til foretrukket tekniker for serviceutkallingen.
 
 ## <a name="see-also"></a>Se også
 
@@ -65,6 +68,3 @@ Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en se
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

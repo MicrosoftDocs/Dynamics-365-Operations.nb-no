@@ -2,11 +2,8 @@
 title: DATEFORMAT ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen DATEFORMAT.
 author: NickSelin
-manager: kfend
-ms.date: 01/04/2021
-ms.topic: article
+ms.date: 09/08/2021
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc1671f818bc2c4d8a78d0a35337298e83c5060
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: 4a6c113f5f8147cbeaab103e86a44d4c66272c13
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4826017"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485498"
 ---
 # <a name="dateformat-er-function"></a>DATEFORMAT ER-funksjonen
 
 [!include [banner](../includes/banner.md)]
 
-`DATEFORMAT`-funksjonen returnerer en *Streng*-verdi som viser en gitt datoverdi som tekst i angitt format og i en valgfri angitt [kultur](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) og [egendefinert](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).
+`DATEFORMAT`-funksjonen returnerer en *[Streng](er-formula-supported-data-types-primitive.md#string)*-verdi som viser en gitt datoverdi som tekst i angitt format og i en valgfri angitt [kultur](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) og [egendefinert](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Syntaks 1
 
@@ -44,20 +41,20 @@ DATEFORMAT (date, format, culture)
 
 ## <a name="arguments"></a>Argumenter
 
-`date`: *Dato*
+`date`: *[Dato](er-formula-supported-data-types-primitive.md#date)*
 
 En datoverdi som representerer datoen som skal formateres.
 
 `format`: *Streng*
 
-Formatet til utdatastrengen.
+Formatet til utdatastrengen. Hvis du vil ha informasjon om hvilke formater som støttes, kan du se [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) og [egendefinert](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 > [!NOTE]
-> Det skilles mellom små og store bokstaver i formatstrengen når du bruker et standardformat eller et egendefinert format. Den [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) formatangivelsen «d» returnerer for eksempel datoen ved hjelp av det korte datomønsteret, mens den standard formatangivelsen «D» returnerer ved hjelp av mønsteret med lang dato. Den [egendefinerte](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx) formatangivelsen «M» returnerer måneden fra 1 til og med 12, mens den egendefinerte formatangivelsen «m» returnerer minuttet fra 0 til og med 59.
+> Det skilles mellom små og store bokstaver i formatstrengen når du bruker et standardformat eller et egendefinert format. Den [standard](/dotnet/standard/base-types/standard-date-and-time-format-strings) formatangivelsen «d» returnerer for eksempel datoen ved hjelp av det korte datomønsteret, mens den standard formatangivelsen «D» returnerer ved hjelp av mønsteret med lang dato. Den [egendefinerte](/dotnet/standard/base-types/custom-date-and-time-format-strings) formatangivelsen «M» returnerer måneden fra 1 til og med 12, mens den egendefinerte formatangivelsen «m» returnerer minuttet fra 0 til og med 59.
 
 `culture`: *Streng*
 
-Kulturen som skal brukes til formatering.
+Kulturen som skal brukes til formatering. Hvis du vil ha informasjon om de støttede språkene, kan du se [kultur](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Returverdier
 
@@ -80,3 +77,6 @@ Hvis kulturen ikke er definert som et argument for den kalte funksjonen, definer
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Dato- og klokkeslettfunksjoner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

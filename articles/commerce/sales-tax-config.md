@@ -2,15 +2,12 @@
 title: Konfigurer merverdiavgift for nettordrer
 description: Dette emnet gir en oversikt over valg av mva-grupper for ulike nettordretyper i Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,68 +15,73 @@ ms.search.industry: Retail
 ms.author: gmohanv
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 40c20bf13779f73289e43df21b763e1b864686a7
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 5801bbfb5b5850cb4c9ae06140bff5adca9b368febdc06d69c538fc49f9ee40a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4530203"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772967"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurer merverdiavgift for nettordrer
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over valg av avgiftsgrupper for ulike nettordretyper. 
+Dette emnet gir en oversikt over valg av mva-gruppe for ulike nettordretyper ved hjelp av enten destinasjonsbaserte eller kundekontobaserte mva-innstillinger. 
 
-Det kan hende at e-handelskanalen vil støtte alternativer som levering eller henting for nettordrer. Mva-relevansen er basert på alternativet som er valgt av nettbrukerne. Når en områdekunde velger å kjøpe en vare på nettet og mottar den levert til en adresse, blir merverdiavgiften bestemt på grunnlag av kundens mva-gruppe for leveringsadresse. Når en kunde velger å hente en kjøpt vare i en butikk, bestemmes merverdiavgiften basert på innstillingen for mva-gruppen for butikken den hentes i. 
+Du kan få e-handelskanalen til å støtte alternativer som levering eller henting for nettordrer. Mva-relevansen er basert på alternativet som er valgt av nettkundene dine. 
 
-## <a name="orders-shipped-to-a-customer-address"></a>Bestillinger sendt til en kundeadresse 
+## <a name="destination-based-taxes-for-online-orders"></a>Destinasjonsbaserte avgifter for nettordrer
 
-Vanligvis defineres avgifter for nettbestillinger som sender til kundeadresser, av destinasjonen. Hver mva-gruppe har en destinasjonsbasert mva-konfigurasjon der virksomheten kan definere måldetaljer som land/område, fylke, region og poststed i et hierarkisk skjema. Når en nettordre bestilles, bruker Commerce-avgiftsmotoren leveringsadressen for hver linjevare i ordren, og finner mva-grupper med samsvarende målbaserte avgiftskriterier. For en nettordre med en leveringsadresse for linjevare til San Francisco, California, vil avgiftsmotoren for eksempel finne mva-gruppen og mva-koden for California, og deretter beregne merverdiavgift for hver linjevare i henhold til dette.  
+Vanligvis defineres avgifter for nettbestillinger som sender til kundeadresser, av destinasjonen. Hver mva-gruppe har en destinasjonsbasert mva-konfigurasjon der virksomheten kan definere måldetaljer som land eller område, fylke, region og poststed i et hierarkisk skjema.
 
-## <a name="customer-based-tax-groups"></a>Kundebaserte avgiftsgrupper
+### <a name="orders-delivered-to-customer-address"></a>Bestillinger levert til kundeadresse
 
-I Commerce Headquarters finnes det to steder der kundeavgiftsgrupper er konfigurert:
+Når en nettordre bestilles, bruker Commerce-avgiftsmotoren leveringsadressen for hver linjevare i ordren, og finner mva-grupper med samsvarende målbaserte avgiftskriterier. For en nettordre med en leveringsadresse for linjevare til San Francisco, California, vil avgiftsmotoren for eksempel finne mva-gruppen og mva-koden for California, og deretter beregne merverdiavgift for hver linjevare i henhold til dette.
 
-- **Kundens profil**
-- **Kundens leveringsadresse**
+### <a name="order-pick-up-in-store"></a>Hent ordre i butikk
 
-### <a name="if-a-customers-profile-has-a-tax-group-configured"></a>Hvis en kundes profil har en avgiftsgruppe konfigurert
+For ordrelinjer der henting i butikk eller henting utenfor butikk angitt, vil avgiftsgruppen fra det valgte butikken for henting, bli brukt. Hvis du vil ha mer informasjon om hvordan du konfigurerer mva for en gitt butikk, kan du se [Angi andre mva-alternativer for butikker](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
-En kundes profilpost i hovedkontoret kan ha en avgiftsgruppe konfigurert, men for nettordrer vil ikke avgiftsgruppen som er konfigurert i en kundes profil, bli brukt av avgiftsmotoren. 
+## <a name="customer-account-based-taxes-for-online-orders"></a>Avgifter basert på kundekonto for nettordrer
 
-### <a name="if-a-customers-shipping-address-has-a-tax-group-configured"></a>Hvis en kundes leveringsadresse har en avgiftsgruppe konfigurert
+Det kan være et forretningsscenario der du vil konfigurere en mva-gruppe for en bestemt kundekonto i Commerce Headquarters. Det finnes to steder i Headquarters der du kan konfigurere merverdiavgift for en kundekonto. Hvis du vil ha tilgang til disse, må du først gå til en kundedetaljside ved å gå til **Retail og Commerce \> Kunder \> Alle kunder** og deretter velge en kunde.
 
-Hvis kundens leveringsadressepost har en avgiftsgruppe konfigurert, og en nettordre (eller linjevare) skal sendes til kundens leveringsadresse, vil avgiftsgruppen som er konfigurert i kundens adressepost, bli brukt av avgiftsmotoren til avgiftsberegning.
+De to stedene der du konfigurerer merverdiavgift for en kundekonto, er følgende:
 
-#### <a name="configure-a-tax-group-for-a-customers-shipping-address-record"></a>Konfigurer en avgiftsgruppe for en kundes leveringsadressepost
+- **Mva-gruppen** på hurtigfanen **Faktura og levering** på kundedetaljersiden. 
+- **Merverdiavgift** på hurtigfanen **Generelt** på siden **Administrer adresser**. Du kan gå dit fra kundedetaljsiden ved å velge en spesifikk adresse på hurtigfanen **Adresser** og deretter velge **Avansert**.
 
-Følg denne fremgangsmåten for å konfigurere en avgiftsgruppe for kundens leveringsadressepost i Commerce Headquarters.
+> [!TIP]
+> Hvis du bare vil bruke destinasjonsbaserte avgifter for ordrer fra nettkunder og unngå kundekontobaserte avgifter, må du sørge for at feltet **Mva-gruppe** er tomt på hurtigfanen **Faktura og levering** på kundedetaljsiden. For å sikre at nye kunder som registrerer seg ved hjelp av nettkanalen, ikke arver innstillingene for mva-gruppen fra standardinnstillingene for kunder eller kundegrupper, må du sørge for at feltet **Mva-gruppe** også er tomt for standard kundeinnstillinger og kundegruppeinnstillinger i nettkanalen (**Retail og Commerce \> Kunder \> Kundegrupper**).
 
-1. Gå til **Alle kunder**, og velg deretter ønsket kunde. 
-1. Velg ønsket adresse i hurtigfanen **Adresser**, og velg deretter **Flere alternativer \> Avansert**. 
-1. Angi merverdiavgiftsverdien etter behov under fanen **Generelt** på **Administrer adresser**-siden.
+## <a name="determine-destination-based-tax-or-customer-account-based-tax-applicability"></a>Fastslå relevans for destinasjonsbasert avgift eller kundekontobasert avgift 
 
-> [!NOTE]
-> Avgiftsgruppen defineres ved hjelp av leveringsadressen for ordrelinjen, og de destinasjonsbaserte avgiftene konfigureres ved selve avgiftsgruppen. Hvis du vil ha mer informasjon, kan du se [Definere avgifter for nettbutikker basert på destinasjon](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+Tabellen nedenfor beskriver om destinasjonsbaserte avgifter eller kundekontobaserte avgifter skal gjelde for nettordrer. 
 
-## <a name="order-pickup-in-store"></a>Hent ordre i butikk
-
-For ordrelinjer der henting i butikk eller henting utenfor butikk angitt, vil avgiftsgruppen fra det valgte butikken for henting, bli brukt. Hvis du vil ha mer informasjon om hvordan du konfigurerer avgiftsgruppen for en gitt butikk, kan du se [Angi andre mva-alternativer for butikker](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
-
-> [!NOTE]
-> Når en ordrelinje hentes i en butikk, vil kundens adresseavgiftsinnstillinger (hvis konfigurert) bli ignorert av avgiftsmotoren, og avgiftskonfigurasjonen til butikken det hentes i, blir brukt. 
+| Kundetype | Leveringsadresse                   | Kunde > Faktura og levering > Mva-gruppe? | Adresse til kundekonto i Headquarters? | Kundeadresse > Avansert > Generelt > Mva-gruppe?                                              | Brukt mva-gruppe      |
+|---------------|------------------------------------|-----------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------|
+| Gjest         | Manhattan, NY                      | Nei (tom)                                                | Nei (tom)                              | Nei (tom)                                                                                                   | NY (destinasjonsbaserte avgifter) |
+| Logget på     | Austin, TX                          | Nei (tom)                                             | Ja                               | None<br/><br/>Ny adresse lagt til via nettkanalen.                                                            | TX (destinasjonsbaserte avgifter) |
+| Logget på     | San Francisco, CA (henting i butikk) | Ja (NY)                                            | Gjelder ikke                              | Gjelder ikke                                                                                                    | CA (destinasjonsbaserte avgifter) |
+| Logget på     | Houston, TX                         | Ja (NY)                                            | Ja                               | Ja (NY)<br/><br/>Ny adresse lagt til via nettkanalen og mva-gruppe arvet fra kundekontoen. | NY (kundekontobaserte avgifter)  |
+| Logget på     | Austin, TX                          | Ja (NY)                                            | Ja                               | Ja (NY)<br/><br/>Ny adresse lagt til via nettkanalen og mva-gruppe arvet fra kundekontoen. | NY (kundekontobaserte avgifter)  |
+| Logget på     | Sarasota, FL                       | Ja (NY)                                            | Ja                               | Ja (WA)<br/><br/>Manuelt angitt til WA.                                                                          | WA (kundekontobaserte avgifter)  |
+| Logget på     | Sarasota, FL                       | Nei (tom)                                                | Ja                               | Ja (WA)<br/><br/>Manuelt angitt til WA.                                                                          | WA (kundekontobaserte avgifter)  |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over merverdiavgift](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json) 
+[Definere avgifter for nettbutikker basert på destinasjon](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination)
 
-[Beregningsmåter for merverdiavgift i grunnlagsfeltet](https://docs.microsoft.com/dynamics365/finance/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/commerce/toc.json) 
+[Oversikt over merverdiavgift](../finance/general-ledger/indirect-taxes-overview.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[ Mva-tilordning og overstyringer](https://docs.microsoft.com/dynamics365/supply-chain/procurement/tasks/sales-tax-assignment-overrides?toc=/dynamics365/commerce/toc.json) 
+[Beregningsmåter for merverdiavgift i grunnlagsfeltet](../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Hele beløp og alternativer for intervallberegning for mva-koder](https://docs.microsoft.com/dynamics365/finance/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/commerce/toc.json) 
+[ Mva-tilordning og overstyringer](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
+
+[Hele beløp og alternativer for intervallberegning for mva-koder](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
 [Beregning av mva-fritak](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

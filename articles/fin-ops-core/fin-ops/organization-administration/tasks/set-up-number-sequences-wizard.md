@@ -2,11 +2,9 @@
 title: Konfigurere alle nødvendige nummerserier ved hjelp av en veiviser
 description: Dette emnet beskriver hvordan du definerer alle nødvendige nummerserier samtidig ved å bruke en veiviser.
 author: sericks007
-manager: AnnBe
 ms.date: 07/18/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 684983d1ea54264cc378ded8e9dca3cf9ec2c901
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: cd335f73b2851352dce1eb36c5e5e6838f8611c8ed9fa8cb65fd1c826530f857
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799038"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749490"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>Konfigurere alle nødvendige nummerserier ved hjelp av en veiviser
 
@@ -38,3 +36,6 @@ Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og t
 4. Velg **Neste**.
 5. Velg **Fullfør**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
