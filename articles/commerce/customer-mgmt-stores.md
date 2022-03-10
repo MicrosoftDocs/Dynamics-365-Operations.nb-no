@@ -1,8 +1,8 @@
 ---
 title: Kundebehandling i butikker
 description: Dette emnet beskriver hvordan forhandlere kan aktivere kundebehandlingsfunksjoner ved salgsstedet (POS) i Microsoft Dynamics 365 Commerce.
-author: josaw1
-ms.date: 09/01/2021
+author: gvrmohanreddy
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 395bc7049ba32c1e572730e482b81613a4873c59
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 29e45419f712e25092b473e34144ac1146e4ed9b
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675231"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913632"
 ---
 # <a name="customer-management-in-stores"></a>Kundebehandling i butikker
 
@@ -42,38 +42,13 @@ Forhandlere kan bruke siden **Alle butikker** i Commerce Headquarters (**Detaljh
 
 Salgsmedarbeidere kan registrere flere adresser for en kunde. Kundens navn og telefonnummer arves fra kontaktinformasjonen som er tilknyttet hver adresse. Hurtigfanen **Adresser** i en kundepost inneholder feltet **Formål** som salgsmedarbeidere kan redigere. Hvis kundetypen er **Person**, er standardverdien **Hjem**. Hvis kundetypen er **Organisasjon**, er standardverdien **Virksomhet**. Andre verdier som dette feltet støtter, omfatter **Hjem**, **Kontor** og **Postboks**. Verdien i feltet **Land** for en adresse blir arvet fra den primære adressen som er angitt på siden **Driftsenhet** i Commerce Headquarters under **Organisasjonsstyring \> Organisasjoner \> Driftsenheter**.
 
-## <a name="sync-customers-and-async-customers"></a>Synkronisere kunder og Async-kunder
 
-> [!IMPORTANT]
-> Hvis POS kobles fra, oppretter systemet automatisk kundene asynkront, selv om opprettingsmodus for Async-kunde er deaktivert. Uansett hva du velger mellom synkron og asynkron kundeoppretting, må derfor Commerce Headquarters-administratorer opprette og planlegge en gjentakende satsvis jobb for **P-jobben**, jobben **Synkroniser kunder og forretningspartnere fra asynkron modus** (tidligere kalt jobben **Synkronisere kunder og forretningspartnere fra asynkron modus**), og **1010**-jobben, slik at alle Async-kunder blir konvertert til Synkroniser-kunder i Commerce Headquarters.
-
-I Commerce finnes det to måter å opprette kunder på: Synkron (eller Synkron) og Asynkron (eller Asynkron). Som standard opprettes kunder synkront. De opprettes med andre ord i Commerce Headquarters i sanntid. Det kan være nyttig å synkronisere kundeopprettingsmodus, fordi nye kunder umiddelbart kan søke på tvers av kanaler. Den har imidlertid også en tilbaketrekking. Ettersom modusen genererer kall i [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) til Commerce Headquarters, kan ytelsen påvirkes hvis det utføres mange samtidige kundeopprettingsanrop.
-
-Hvis alternativet **Opprett kunde i asynkron modus** er satt til **Ja** i butikkens funksjonalitetsprofil (**Detaljhandel og handel \> Kanaloppsett \> Oppsett av nettbutikk \> Funksjonsprofiler**), brukes ikke kall i Real-time Service til å opprette kundeposter i kanaldatabasen. Opprettingsmodus for asynkron kunde påvirker ikke ytelsen til Commerce Headquarters. En midlertidig, globalt unik ID tilordnes hver nye Async-kundepost og brukes som kundekonto-ID. Denne GUID-en vises ikke for POS-brukere. I stedet vil disse brukerne se **Venter på synkronisering** som kundekonto-ID-en. 
-
-### <a name="convert-async-customers-to-sync-customers"></a>Konvertere Async-kunder til Sync-kunder
-
-Hvis du vil konvertere Async-kunder til Sync-kunder, må du først kjøre **P-jobben** for å sende Async-kundene til Commerce Headquarters. Deretter kjører du jobben **Synkroniser kunder og forretningspartnere fra asynkron modus** (tidligere kalt jobben **Synkroniser kunder og forretningspartnere fra asynkron modus**) for å opprette kundekonto-IDer. Til slutt kjører du jobben **1010** for å synkronisere de nye kundekonto-ID-ene til kanalene.
-
-### <a name="async-customer-limitations"></a>Async-kundebegrensninger
-
-Async-kundefunksjonaliteten har følgende begrensninger:
-
-- Async-kundeposter kan ikke redigeres med mindre kunden er opprettet i Commerce Headquarters, og den nye kundekonto-IDen er synkronisert tilbake til kanalen. Adressen kan derfor ikke lagres for en Async-kunde før denne kunden er synkronisert til Commerce Headquarters, fordi tillegget av en kundeadresse implementeres internt som en redigeringsoperasjon i kundeprofilen. Hvis imidlertid funksjonen **Aktiver asynkron oppretting for kundeadresser** er aktivert, kan også kundeadressene lagres for Async-kunder.
-- Ansettelsesforhold kan ikke knyttes til Async-kunder. Derfor arver ikke nye Async-kunder ansettelsesforhold fra standardkunden.
-- Fordelskort kan ikke utstedes til Async-kunder med mindre den nye kundekonto-IDen er synkronisert tilbake til kanalen.
-- Sekundære e-postadresser og telefonnumre kan ikke registreres for Async-kunder.
-
-Selv om noen av begrensningene ovenfor kan gjøre det lettere for deg å velge alternativet Synkroniser kunde for virksomheten, arbeider Commerce-teamet for å sikre at Async-kundefunksjonene samsvarer bedre med funksjonene for synkronisering av kunder. Fra Commerce-versjon 10.0.22 lagrer for eksempel den nye funksjonen **Aktiver asynkron oppretting for kundeadresser** du kan aktivere i arbeidsområde **Funksjonsbehandling**, nylig opprettede kundeadresse asynkront for både Sync-kunder og Async-kunder. For å lagre disse adressene i kundeprofilen i Commerce Headquarters må du planlegge en gjentakende satsvis jobb for **P-jobben**, jobben **Synkroniser kunder og forretningspartnere fra Async-modus** og jobben **1010**, slik at alle Async-kunder konverteres til Sync-kunder i Commerce Headquarters.
-
-### <a name="customer-creation-in-pos-offline-mode"></a>Kundeoppretting i frakoblet modus i POS
-
-Hvis POS kobles fra, oppretter systemet automatisk kundene asynkront, selv om opprettingsmodus for Async-kunde er deaktivert. Som nevnt tidligere må derfor Commerce Headquarters-administratorer opprette og planlegge en gjentakende satsvis jobb for **P-jobben**, jobben **Synkroniser kunder og forretningspartnere fra Async-modus** og jobben **1010**, slik at alle Async-kunder konverteres til Sync-kunder i Commerce Headquarters.
-
-> [!NOTE]
-> Hvis alternativet **Filtrer delte kundedatatabeller** er satt til **Ja** på siden **Handelskanalskjema** (**Detaljhandel og handel \> Hovedkvarteroppsett \> Handelsplanlegger \> Kanaldatabasegruppe**), blir ikke kundeposter opprettet i frakoblet modus i POS. Hvis du vil ha mer informasjon, kan du se [Utelatelse av frakoblede data](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
+
+[Asynkron kundeopprettingsmodus](async-customer-mode.md)
+
+[Konvertere asynkron-kunder til synkron-kunder](convert-async-to-sync.md)
 
 [Kundeattributter](dev-itpro/customer-attributes.md)
 

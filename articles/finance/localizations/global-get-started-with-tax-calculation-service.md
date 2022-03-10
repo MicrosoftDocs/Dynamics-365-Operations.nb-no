@@ -2,55 +2,106 @@
 title: Kom i gang med avgiftsberegning
 description: Dette emnet forklarer hvordan du konfigurerer avgiftsberegning.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e72b81d4a109db2dd8b4c6ca2ca0b030220e25f3
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216725"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952527"
 ---
-# <a name="get-started-with-the-tax-calculation-preview"></a>Kom i gang med avgiftsberegning (forhåndsversjon)
+# <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Delene i dette emnet veileder deg gjennom utforming på høyt nivå og konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) og Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
-Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Først veileder den deg gjennom konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) og Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Deretter gjennomgås de vanlige prosessen for bruk av funksjonene for avgiftsberegning i Finance- og Supply Chain Management-transaksjoner.
+Oppsettet består av tre hovedtrinn.
 
-Oppsettet består av fire hovedtrinn:
-
-1. I LCS installerer du avgiftsberegning.
+1. I LCS installerer du tillegget for avgiftsberegning.
 2. I RCS konfigurerer du funksjonen for avgiftsberegning. Dette oppsettet er ikke spesifikt for en juridisk enhet. Det kan deles på tvers av juridiske enheter i Finance og Supply Chain Management.
 3. I Finance og Supply Chain Management definerer du parametere for avgiftsberegning etter juridisk enhet.
-4. I Finance og Supply Chain Management oppretter du transaksjoner, for eksempel salgsordrer, og bruker avgiftsberegning til å bestemme og beregne avgifter.
+
+## <a name="high-level-design"></a>Utforming på høyt nivå
+
+### <a name="runtime-design"></a>Kjøretidsutforming
+
+Illustrasjonen nedenfor viser kjøretidsutforming på høyt nivå av avgiftsberegning. Fordi avgiftsberegning kan integreres med flere Dynamics 365-apper, bruker illustrasjonen integreringen med Finance som et eksempel.
+
+1. En transaksjon, for eksempel en salgsordre eller en bestilling, opprettes i Finance.
+2. Finance bruker automatisk standardverdiene for mva-gruppen og mva-gruppen for vare.
+3. Når **Utgående merverdiavgift**-knappen er valgt for transaksjonen, utløses avgiftsberegningen. Finance sender deretter nyttelasten til avgiftsberegningstjenesten.
+4. Avgiftsberegningstjenesten samsvarer med nyttelasten med forhåndsdefinerte regler i avgiftsfunksjonen for å finne en mer nøyaktig mva-gruppe og mva-gruppe for vare samtidig.
+
+    - Hvis nyttelasten kan samsvares med matrisen for **Anvendelse av avgiftsgruppe**, overstyrer den mva-gruppeverdien med verdien i mva-gruppen som samsvarer i relevansregelen. Ellers fortsetter den å bruke mva-gruppeverdien fra Finance.
+    - Hvis nyttelasten kan samsvares med matrisen for **Anvendelse av vareavgiftsgruppe**, overstyrer den varens mva-gruppeverdi med den samsvarende mva-gruppen for vare i relevansregelen. Ellers fortsetter den å bruke mva-gruppeverdien for vare fra Finance.
+
+5. Avgiftsberegningstjenesten fastsetter endelige avgiftskoder ved å bruke skjæringspunktet mellom mva-gruppen og varens mva-gruppe.
+6. Avgiftsberegningstjenesten beregner avgift basert på de endelige avgiftskodene som er bestemt.
+7. Avgiftsberegningstjeneste returnerer resultatet av avgiftsberegningen til Finance.
+
+![Kjøretidsutforming for avgiftsberegning.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Konfigurasjon på høyt nivå
+
+Følgende trinn gir en oversikt på høyt nivå over konfigurasjonsprosessen for avgiftsberegningstjenesten.
+
+1. I LCS installerer du tillegget **Avgiftsberegning** i LCS-prosjekt.
+2. I RCS oppretter du funksjonen for **Avgiftsberegning**.
+3. I RCS konfigurerer du funksjonen for **Avgiftsberegning**:
+
+    1. Velg avgiftskonfigurasjonsversjonen.
+    2. Opprett avgiftskoder.
+    3. Opprett en avgiftsgruppe.
+    4. Opprett en vareavgiftgruppe.
+    5. Valgfritt: Opprett avgiftsgrupperelevans hvis du vil overstyre standard mva-gruppe som angis fra hoveddataene for kunde eller leverandør.
+    6. Valgfritt: Opprett varegrupperelevans hvis du vil overstyre standard mva-gruppe for vare som angis fra hoveddataene for vare.
+
+4. I RCS fullfører og publiserer du funksjonen **Avgiftsberegning**.
+5. Velg den publiserte funksjonen **Avgiftsberegning** i Finance.
+
+Når du har fullført disse trinnene, blir følgende oppsett automatisk synkronisert fra RCS til Finance.
+
+- Mva-koder
+- Mva-grupper
+- Vare, mva-grupper
+
+De gjenværende delene i dette emnet gir mer detaljerte konfigurasjonstrinn.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være på plass:
+Før du kan fullføre de gjenværende trinnene i dette emnet må følgende forutsetninger være på plass:<!--TO HERE-->
 
-- Du har tilgang til LCS-kontoen din, og du har distribuert et LCS-prosjekt med et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.18 med [KB4616360](https://fix.lcs.dynamics.com/Issue/Details?kb=4616360&bugId=568738&dbType=3&qc=1f1c04ff39adad74ef871f539e8d73e14c1893ef7cc4b6e3f7d5c5864ec2781a) eller senere.
-- Du har tilgang til RCS-kontoen din.
-- Du har kontaktet Microsoft for å aktivere testversjonering i det distribuerte Finance- eller Supply Chain Management-miljøet.
+- Du må ha tilgang til LCS-kontoen din, og du må ha distribuert et LCS-prosjekt som har et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.21 eller senere.
+- Du må opprette et RCS-miljø for din organisasjon, og du må ha tilgang til kontoen. Hvis du vil ha mer informasjon om hvordan du oppretter et RCS-miljø, kan du se [Oversikt over Regulatory Configuration Service](rcs-overview.md).
+- Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte Finance- eller Supply Chain Management-miljøet, basert på dine forretningsbehov:
+
+    - Avgiftsberegningstjeneste
+    - Støtte for flere mva-registreringsnumre
+    - Avgift i overføringsordre
+
+- Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte RCS-miljøet.
+
+    - Globaliseringsfunksjoner
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>Konfigurer avgiftsberegning i LCS
 
 1. Logg på [LCS](https://lcs.dynamics.com)
 2. Fullfør oppsettet for Microsoft Power Platform-integrering. Hvis du vil ha mer informasjon, kan du se [Oversikt over tillegg](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
-3. Velg ett av de distribuerte ikke-produksjonsmiljøene, og velg deretter **Installer et nytt tillegg**.
-4. Velg **Avgiftsberegning (forhåndsversjon)**.
+3. Velg ett av de distribuerte miljøene, og velg deretter **Installer et nytt tillegg**.
+4. Velg **Avgiftsberegning**.
 5. Les og godta betingelsene, og velg deretter **Installer**.
 
 ## <a name="set-up-tax-calculation-in-rcs"></a>Konfigurer avgiftsberegning i RCS
@@ -64,8 +115,8 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 5. Velg **Global** i **Type**-feltet.
 6. Velg **Åpne**.
 7. Gå til **Avgiftsdatamodell**, utvid filtreet, og velg deretter **Avgiftskonfigurasjon**.
-8. Velg den siste versjonen, og velg deretter **Importer**.
-9. Gå tilbake til arbeidsområdet **Globaliseringsfunksjoner (forhåndsversjon)**, velg **Funksjoner**, velg flisen **Avgiftsberegning**, og velg deretter **Legg til**.
+8. Velg riktig [versjon av avgiftskonfigurasjonen](global-tax-calcuation-service-overview.md#versions) basert på Finance-versjonen, og velg deretter **Importer**.
+9. I arbeidsområdet **Globaliseringsfunksjoner** velger du **Funksjoner**, flisen **Avgiftsberegning** og deretter **Legg til**.
 10. Velg en av følgende funksjonstyper:
 
     - **Ny funksjon** – Opprett et funksjonsoppsett som har tomt innhold.
@@ -73,20 +124,28 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 
 11. Angi et navn på og en beskrivelse av den nye funksjonen, og velg deretter **Opprett funksjon**.
 
-    Når funksjonen er opprettet, opprettes det automatisk en utkastversjon.
+    Når funksjonen er opprettet, opprettes det automatisk en utkastversjon. Du kan velge **Hent denne versjonen** for å basere utkastversjonen på nytt for en hvilken som helst fullført versjon.
 
 12. Velg utkastversjonen av funksjonen, og velg deretter **Rediger**. Siden **Oppsett for avgiftsberegning** fylles ut.
 13. Velg **Konfigurasjonsversjon**. Du skal se konfigurasjonsversjonen du importerte i trinn 8.
 
-    Microsoft oppgir en standard mva-konfigurasjon for tillegget for avgiftsberegning. Denne konfigurasjonen dekker det meste av kravene til mva-beregningsvirkemåte. Den vil bli oppdatert basert på tilbakemeldinger fra markedet. Hvis du må utvide konfigurasjonen for å oppfylle bestemte krav, kan du se [Slik bygger du utvidelse i avgiftstjeneste](./tax-service-add-data-fields-tax-integration-by-extension.md) for informasjon om hvordan du genererer og velger din egen avgiftskonfigurasjon.
+    Microsoft oppgir en standard mva-konfigurasjon for avgiftsberegning. Denne konfigurasjonen dekker det meste av kravene til mva-beregningsvirkemåte. Den vil bli oppdatert basert på tilbakemeldinger fra markedet. Hvis du må utvide konfigurasjonen for å oppfylle bestemte krav, kan du se [Slik bygger du utvidelse i avgiftstjeneste](./tax-service-add-data-fields-tax-integration-by-extension.md) for informasjon om hvordan du genererer og velger din egen avgiftskonfigurasjon.
 
-    Når du har valgt **Konfigurasjonsversjon**, vises flere ekstra faner:
+14. Når du har valgt **Konfigurasjonsversjon**, vises flere ekstra faner. Følg rekkefølgen som vises her, for å fullføre det obligatoriske faneoppsettet.
 
-    - **Avgiftskoder** – Denne kategorien er obligatorisk. Den brukes til å vedlikeholde hoveddata for avgiftskoder. Alle avgiftskoder som opprettes på denne fanen, synkroniseres automatisk med Finance når du aktiverer gjeldende versjon av mva-funksjonsoppsettet i den juridiske enheten.
-    - **Relevans for avgiftskoder** – Denne kategorien er obligatorisk. Den brukes til å definere en matrise som bestemmer mva-koden, mva-gruppen og mva-gruppen for varen. Mva-koden som bestemmes, brukes til å beregne mva-beløpet. Verdiene i feltene **Mva-kode**, **Mva-gruppe** og **Mva-gruppe for vare** returneres til Finance.
-    - **Relevans for mva-registreringsnummer for kunde** – Denne fanen er valgfri. Hvis du har flere avgiftsregistreringsnumre for én kunde, kan avgiftsberegning automatisk fastsette riktig avgiftsregistreringsnummer. I matrisen i denne kategorien definerer du reglene som tillegget bruker til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standard avgiftsregistreringsnummer på avgiftspliktige dokumenter for salgstransaksjoner.
-    - **Relevans for mva-registreringsnummer for leverandør** – Denne fanen er valgfri. Hvis du har flere avgiftsregistreringsnumre for én leverandør, kan avgiftsberegning automatisk fastsette riktig avgiftsregistreringsnummer. I matrisen i denne kategorien definerer du reglene som tillegget bruker til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standard avgiftsregistreringsnummer på avgiftspliktige dokumenter for kjøpstransaksjoner.
-    - **Relevans for listekode** – Denne fanen er valgfri. Den kan hjelpe deg med å fastslå verdien i **Listekode**-feltet automatisk ved hjelp av mer fleksible og konfigurerbare regler. I matrisen i denne kategorien kan du definere reglene som tillegget bruker til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standardkoden på avgiftspliktige dokumenter.
+    **Obligatorisk oppsett**
+
+    - **Avgiftskoder** – Vedlikehold hoveddata for avgiftskoder. Alle avgiftskoder som opprettes på denne fanen, synkroniseres automatisk med Finance når du aktiverer gjeldende versjon.
+    - **Avgiftsgruppe** – Definer hoveddataene for avgiftsgruppen og avgiftskodene under gruppen.
+    - **Vareavgiftsgruppe** – Definer hoveddataene for vareavgiftsgruppen og avgiftskodene under gruppen.
+
+    **Valgfritt oppsett**
+
+    - **Anvendelse av avgiftsgruppe** – Definer en matrise som bestemmer avgiftsgruppen. Hvis ingen anvendelsesregler i denne matrisen samsvarer med det avgiftspliktige dokumentet fra Dynamics 365, bruker Avgiftsberegning standardverdien på den avgiftspliktige dokumentlinjen.
+    - **Anvendelse av vareavgiftsgruppe** – Definer en matrise som bestemmer vareavgiftsgruppen. Hvis ingen anvendelsesregler i denne matrisen samsvarer med det avgiftspliktige dokumentet fra Dynamics 365, bruker Avgiftsberegning standardverdien på den avgiftspliktige dokumentlinjen.
+    - **Relevans for mva-registreringsnummer for kunde** – Hvis du har flere avgiftsregistreringsnumre for én kunde, kan Avgiftsberegning automatisk fastsette riktig avgiftsregistreringsnummer. I matrisen i denne kategorien definerer du reglene som skal brukes til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standard avgiftsregistreringsnummer på avgiftspliktige dokumenter for salgstransaksjoner.
+    - **Relevans for mva-registreringsnummer for leverandør** – Hvis du har flere avgiftsregistreringsnumre for én leverandør, kan Avgiftsberegning automatisk fastsette riktig avgiftsregistreringsnummer. I matrisen i denne kategorien definerer du reglene som skal brukes til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standard avgiftsregistreringsnummer på avgiftspliktige dokumenter for kjøpstransaksjoner.
+    - **Relevans for listekode** – Fastslå verdien i **Listekode**-feltet automatisk ved hjelp av mer fleksible og konfigurerbare regler. I matrisen i denne kategorien definerer du reglene som skal brukes til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standardkoden på avgiftspliktige dokumenter.
 
 14. På **Avgiftskoder**-fanen velger du **Legg til** og angir deretter avgiftskoden og en beskrivelse.
 15. Velg **Avgiftskomponent**. Avgiftskomponenten er en gruppe med metoder som ble definert i den forrige versjonen av den valgte avgiftskonfigurasjonen. Følgende avgiftskomponenter er tilgjengelige:
@@ -100,86 +159,88 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 16. Velg **Lagre**. Flere felter blir tilgjengelige, basert på avgiftskomponenten du valgte.
 17. Bruk følgende alternativer til å identifisere avgiftskodens natur:
 
-    - Er Fritak
-    - Er Bruk avgift
-    - Er Snudd avregning
+    - Er fritak
+    - Er bruk avgift
+    - Er snudd avregning
     - Ekskluder fra grunnlagsbeløpsberegning
 
-    For et use tax-scenario definerer du en enkelt mva-kode som har en positiv mva-sats, og merker den som **Er Use tax**.
+    For et use tax-scenario definerer du en enkelt mva-kode som har en positiv mva-sats, og merker den som **Er bruk avgift**.
 
     For et scenario for snudd avregning definerer du to avgiftskoder, en som har en positiv mva-sats, og den andre har en negativ mva-sats, men samme satsverdi. Merk den negative avgiftskoden som **Er snudd avgift**. Hvis du vil ha mer informasjon om løsningen for snudd avregning i Finance, kan du se [Mekanisme for snudd avregning for MVA/GST-skjema](emea-reverse-charge.md).
-    
-    For enkelte avgiftstyper som skal utelates i beregningen av avgiftsgrunnlagsbeløpet for pris inklusive transaksjoner, for eksempel egendefinert avgift i noen land, merker du av for **Ekskluder fra grunnlagsbeløpsberegning**.
+
+    For enkelte avgiftstyper som skal utelates fra beregningen av avgiftsgrunnlagsbeløpet for pris inklusive transaksjoner, (for eksempel egendefinert avgift i noen land eller områder), merker du av for **Ekskluder fra grunnlagsbeløpsberegning**. Hvis du vil ha mer informasjon om denne parameteren, kan du se [Beregning av avgift på toppen av prisen når Priser inkluderer mva. er aktivert](global-exclude-from-tax-base-amount-calculation.md).
 
     Vedlikehold mva-satser og mva-beløpsgrensene for denne avgiftskoden.
 
 18. Gjenta trinn 14 til og med 17 for å legge til alle andre avgiftskoder som kreves.
-19. På fanen **Relevans for avgiftskoder** velger du kolonnene som kreves for å bestemme riktig avgiftskode, og deretter velger du **Legg til**.
-20. Angi eller velg verdier for hver kolonne. Feltene **Mva-kode**, **Mva-gruppe** og **Mva-gruppe for vare** blir utdataene for denne matrisen.
-21. Gjenta trinn 19 til og med 20 for å definere bruk av registreringsnumre for kundeavgift, leverandøravgiftsnumre og listekoder.
-22. Velg **Lagre**, og lukk deretter siden.
-23. Velg **Endre status** \> **Fullført**. Når statusen er endret til **Fullført**, kan du ikke lenger redigere versjonen.
-24. Velg **Endre status** \> **Publiser**. Denne versjonen av oppsettet av avgiftsfunksjonen blir skjøvet til det globale repositoriet, og vil være synlig for hver juridiske enhet i Finance.
+19. På fanen **Avgiftsgruppe** velger du kolonnen **Avgiftsgruppe**, legger den til i matrisen som inndatabetingelsen og legger deretter til linjer for å vedlikeholde hoveddataene for avgiftsgruppen.
 
-## <a name="dynamics-365-setup"></a>Dynamics 365-oppsett
+    Her er et eksempel:
 
-Når du har fullført oppsettet i RCS, som beskrevet i den forrige delen, vil du ha en publisert versjon av mva-funksjonen. Følg denne fremgangsmåten for å konfigurere avgiftsberegning i Finance.
+    | Avgiftsgruppe    | Mva-koder           |
+    | ------------ | ------------------- |
+    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_EU       | DEU_Exempt          |
+    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_EU       | BEL_Exempt          |
+
+20. På fanen **Vareavgiftsgruppe** velger du kolonnen **Vareavgiftsgruppe**, legger den til i matrisen som inndatabetingelsen og legger deretter til linjer for å vedlikeholde hoveddataene for vareavgiftsgruppen.
+
+    Her er et eksempel:
+
+    | Vareavgiftsgruppe | Mva-koder                                    |
+    | -------------- | -------------------------------------------- |
+    | Full           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
+    | Redusert        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
+
+21. På fanen **Relevans for avgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftsgruppe, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Avgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes avgiftsgruppen på transaksjonslinjen.
+
+    Her er et eksempel:
+
+    | Forretningsprosess | Send fra | Send til | Avgiftsgruppe    |
+    | ---------------- | --------- | ------- | ------------ |
+    | Salg            | DEU       | DEU     | DEU_Domestic |
+    | Salg            | DEU       | FRA     | DEU_EU       |
+    | Salg            | BEL       | BEL     | BEL_Domestic |
+    | Salg            | BEL       | FRA     | BEL_EU       |
+
+22. På fanen **Relevans for vareavgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftskode, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Vareavgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes vareavgiftsgruppen på transaksjonslinjen.
+
+    Her er et eksempel:
+
+    | Varekode | Vareavgiftsgruppe |
+    | --------- | -------------- |
+    | D0001     | Full           |
+    | D0003     | Redusert        |
+
+    Hvis du vil ha mer informasjon om hvordan avgiftskoder bestemmes i Avgiftsberegning, kan du se [Logikk for fastsettelse av avgiftsgruppe og vareavgiftsgruppe](global-sales-tax-group-determination.md).
+
+23. Angi relevansen for registreringsnumre for kundeavgift, leverandøravgiftsnumre og listekoder, basert på forretningsbehovene.
+24. Velg **Lagre**, og lukk deretter siden.
+25. Velg **Endre status** \> **Fullført**. Når statusen er endret til **Fullført**, kan du ikke lenger redigere versjonen.
+26. Velg **Endre status** \> **Publiser**. Denne versjonen av oppsettet av avgiftsfunksjonen blir skjøvet til det globale repositoriet, og vil være synlig for hver juridiske enhet i Finance.
+
+## <a name="set-up-tax-calculation-in-dynamics-365"></a>Konfigurer avgiftsberegning i Dynamics 365
+
+Når du har fullført oppsettet i RCS, vil du ha en publisert versjon av mva-funksjonen. Følg denne fremgangsmåten for å konfigurere avgiftsberegning i Finance.
 
 Oppsettet i denne delen utføres av en juridisk enhet. Du må konfigurere det for hver juridiske enhet du vil aktivere avgiftsberegning for i Finance.
 
-1. I Finance går du til **Avgift** \> **Oppsett** \> **Avgiftskonfigurasjon** \> **Oppsett av avgiftsberegning (forhåndsversjon)**.
+1. I Finance går du til **Avgift** \> **Oppsett** \> **Avgiftskonfigurasjon** \> **Parametere for avgiftsberegning**.
 2. Angi følgende felt i fanen **Generelt**:
 
-    - **Aktiver avgiftsberegning** – Merk av i denne boksen for å aktivere avgiftsberegning for den juridiske enheten. Hvis det ikke er aktivert for gjeldende juridisk enhet, vil den juridiske enheten fortsette å bruke den eksisterende avgiftsmotoren til å bestemme og beregne avgift.
+    - **Aktiver tjeneste for avgiftsberegning** – Merk av i denne boksen for å aktivere avgiftsberegning for den juridiske enheten. Hvis det ikke er aktivert for gjeldende juridisk enhet, vil den juridiske enheten fortsette å bruke den eksisterende avgiftsmotoren til å bestemme og beregne avgift.
     - **Funksjonsoppsett** – Velg et oppsett og en versjon for den juridiske enheten. Hvis du vil ha mer informasjon om hvordan du setter opp og fullfører en publisert avgiftsfunksjon, kan du se den forrige delen av dette emnet.
     - **Forretningsprosess** – Velg forretningsprosessene som skal aktiveres.
-    - **Aktiver avgiftskodejustering** – Sett dette alternativet til **Ja** for å aktivere avgiftskodejusteringer på mva-siden.
 
-3. I kategorien **Beregning** definerer du den forventede avrundingsregelen for den juridiske enheten.
-4. I kategorien **Feilbehandling** definerer du den forventede metoden for feilbehandling for den juridiske enheten. Tre alternativer er tilgjengelige for hver resultatkode:
+3. I kategorien **Beregning** definerer du den forventede avrundingsregelen for den juridiske enheten. Hvis du vil ha mer informasjon om avrundingslogikken, kan du se [Avrundingsregler for avgiftsberegning](https://go.microsoft.com/fwlink/?linkid=2166988).
+4. I kategorien **Feilbehandling** definerer du den forventede metoden for feilbehandling for den juridiske enheten. Tre alternativer er tilgjengelige:
 
     - Ingen
     - Advarsel
     - Feil
 
-5. Lagre oppsettet.
-6. Gjenta trinn 1 til og med 5 for hver ekstra juridiske enhet.
+    Du kan definere en metode for feilhåndtering for hver resultatkode i **Detaljer**-delen. Hvis enkelte resultatkoder ikke er synkronisert fra avgiftsberegningstjenesten, kan du imidlertid definere en standardmetode i **Generelt**-delen.
 
-## <a name="transaction-processing"></a>Transaksjonsbehandling
-
-Når du har fullført alle oppsettprosedyrene, kan du bruke avgiftsberegning til å bestemme og beregne avgifter i Finance. Fremgangsmåten for å behandle transaksjoner forblir de samme. Følgende transaksjoner støttes i Finance versjon 10.0.18:
-
-- Salgsprosess
-
-    - Salgstilbud
-    - Salgsordre
-    - Bekreftelse
-    - Plukkliste
-    - Følgeseddel
-    - Salgsfaktura
-    - Kreditnota
-    - Returordre
-    - Hodegebyr
-    - Linjetillegg
-
-- Innkjøpsprosess
-
-    - Bestilling
-    - Bekreftelse
-    - Tilgangsliste
-    - Produktkvittering
-    - Innkjøpsfaktura
-    - Hodegebyr
-    - Linjetillegg
-    - Kreditnota
-    - Returordre
-    - Innkjøpsrekvisisjon
-    - Belastning på innkjøpsrekvisisjonslinje
-    - Tilbudsforespørsel
-    - Belastning på tilbudsforespørselshode
-    - Belastning på tilbudsforespørselslinje
-
-- Beholdningsprosess
-
-    - Overføringsordre – send
-    - Overføringsordre – motta
+5. På fanen **Flere mva-registreringer** kan du aktivere mva-deklarering, EU-salgsliste og Intrastat separat for å fungere i et scenario med flere mva-registreringer. Hvis du vil ha mer informasjon om mva-rapportering for flere mva-registreringer, kan du se [Rapportering for flere mva-registreringer](emea-reporting-for-multiple-vat-registrations.md).
+6. Lagre oppsettet, og gjenta de forrige trinnene for hver juridiske enhet. Når en ny versjon blir publisert, og du vil at den skal brukes, angir du feltet **Funksjonsoppsett** på **Generelt**-fanen på siden **Parametere for avgiftsberegning** (se trinn 2).

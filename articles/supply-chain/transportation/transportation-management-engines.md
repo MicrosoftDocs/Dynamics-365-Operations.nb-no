@@ -1,7 +1,7 @@
 ---
 title: Transportbehandlingsmotorer
 description: Transportbehandlingsmotorer definerer logikken som brukes til å generere og behandle transportsatser i transportbehandling.
-author: MarkusFogelberg
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ec8714ef208b25284f218e81dda0ff94ed49d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bce886b8029b3a00c6572642d339efa9dcad4267
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828375"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580126"
 ---
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
@@ -43,8 +43,7 @@ Tabellen nedenfor viser transportbehandlingsmotorene som er tilgjengelige.
 | **Fraktbrevtype**            | Standardiserer fraktfakturaen og fraktbrevlinjene og brukes til automatisk fraktbrevsamsvar.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilke motorer må konfigureres for å vurdere en forsendelse?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilke motorer må konfigureres for å vurdere en forsendelse?
 
 Hvis du vil rangere en forsendelse ved hjelp av en bestemt leverandør, må du konfigurere flere transportbehandlingsmotorer. **Ratemotor** er obligatorisk, men andre transportbehandlingsmotorer kan være nødvendige for å støtte **Ratemotor**. **Ratemotoren** kan for eksempel brukes til å hente data fra **kjørelengdemotoren** for beregning av satsen basert på antall kilometer mellom kilden og målet.
 
@@ -62,8 +61,7 @@ I de fleste tilfeller kan du klikke **Parametere**-knappen i oppsettskjemaene fo
 |  <em>MileageEngineCode</em>  |                       Kode for kjørelengdemotor som identifiserer posten for kjørelengdemotor i databasen.                        |
 | <em>ApportionmentEngine</em> |                        Kode for generell motor som identifiserer fordelingsmotoren i databasen.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan brukes metadata i transportbehandlingsmotorer?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan brukes metadata i transportbehandlingsmotorer?
 
 Transportbehandlingsmotorer som er avhengige av data som er definert i Supply Chain Management kan bruke forskjellige dataskjemaer. Transportbehandlingssystemet aktiverer ulike transportbehandlingsmotorer til å bruke de samme generelle fysiske databasetabellene. Hvis du vil sikre at kjøretidstolkingen av motordataene er riktig, kan du definere metadata for databasetabellene. Dette reduserer kostnadene ved bygging av nye transportbehandlingsmotorer fordi flere tabell- og skjemastrukturer ikke er nødvendig i Operations.
 
@@ -96,6 +94,12 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | 3        | Første målpostnummer | Tildeling | Streng    | Postnummer    | Valgt  |
 | 4        | Siste målpostnummer   | Tildeling | Streng    | Postnummer    | Valgt  |
 | 5        | Målland           | Tildeling | Streng    | Land/område |           |
+
+### <a name="whitepaper"></a>Hvitbok
+
+Hvis du vil ha mer informasjon, kan du laste ned følgende hvitbok (skrevet for å støtte AX2012, men gjelder fortsatt for Dynamics 365 Supply Chain Management)
+
+- [Transportstyringsmotorer](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

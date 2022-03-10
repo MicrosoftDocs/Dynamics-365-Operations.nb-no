@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 27e9e977193f9ff5c8188b780e8de955742c4ebe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595268"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323881"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Utforme en ny ER-konfigurasjon for å generere rapporter i Word-format
 
@@ -28,7 +28,7 @@ Hvis du vil generere rapporter som Microsoft Word-dokumenter, må du utforme en 
 
 ![Eksempelmal for kontrollrapporten i skrivebordsversjonen av Word.](./media/er-design-configuration-word-image1.png)
 
-Hvis du vil bruke et Word-dokument som en mal for rapporter i Word-format, kan du konfigurere en ny [løsning](er-quick-start1-new-solution.md) for [Elektronisk rapportering (ER)](general-electronic-reporting.md). Denne løsningen må inneholde en ER-[konfigurasjon](general-electronic-reporting.md#Configuration) som inneholder en komponent for ER-[format](general-electronic-reporting.md#FormatComponentOutbound).
+Hvis du vil bruke et Word-dokument som en mal for rapporter i Word-format, kan du konfigurere en ny [løsning](er-quick-start1-new-solution.md) for [Elektronisk rapportering (ER)](general-electronic-reporting.md). Denne løsningen må inneholde en ER-[konfigurasjon](general-electronic-reporting.md#Configuration) som inneholder en komponent for ER-format.
 
 > [!NOTE]
 > Når du oppretter en ny ER-formatkonfigurasjon for å generere rapporter i Word-format, må du enten velge **Word** som formattype i rullegardinboksen **Opprett konfigurasjon** eller la **Formattype**-feltet stå tomt.

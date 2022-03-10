@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7ba42df021eddccbae389321b38828c7a92e50c8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.dyn365.ops.version: 10.0.18
+ms.openlocfilehash: 18d03ad89942997d8b5e794bb8d79a67821ef2c4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020513"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580558"
 ---
 # <a name="rebate-management-deals"></a>Rabattbehandlingsavtaler
 
@@ -102,6 +102,7 @@ Når du har opprettet en avtale som beskrevet i den forrige delen, kan du åpne 
         - *Alle* – Avtalelinjen gjelder for alle varer.
 
     - **Varerelasjon** – Hvis du valgte *Tabell* i **Varekode**-feltet, velger du varen som avtalelinjen gjelder for. Hvis du valgte *Gruppe*, velger du varegruppen. Hvis du valgte *Alle*, er dette feltet utilgjengelig.
+    - **Enhetstype** – Velg enhetstypen som gjelder for avtalelinjen (*Lagerenhet* eller *Faktisk vektenhet*). Legg merke til at dette feltet kan være tomt for eldre poster. I dette tilfellet antas *lagerenhetsverdien*.
     - **(Lagerstyringsparametere)** – I de gjenværende feltene på avtalelinjen angir du verdier for lagerstyringsparameterne som skal brukes til å definere varene som er inkludert i avtalen (for eksempel varestørrelse, farge, stil, område og lager). Hvis du vil legge til eller fjerne dimensjoner, velger du **Vis dimensjoner** i handlingsruten.
 
 1. Velg **Lagre** i handlingsruten.

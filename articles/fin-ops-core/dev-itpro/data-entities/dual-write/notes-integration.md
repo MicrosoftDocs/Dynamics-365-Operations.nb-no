@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: c73da804d724ea75ae6ccd479d1b7f3cf02d48c4
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782362"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062781"
 ---
 # <a name="note-integration"></a>Merknadsintegrering
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 I forretningsprosesser samler Microsoft Dynamics 365-brukere ofte inn informasjon om kundene sine. Denne informasjonen registreres som aktiviteter og merknader. Dette emnet beskriver integreringen av merknadsdata i dobbel skriving.
 
@@ -30,7 +30,7 @@ Kundeopplysninger kan klassifiseres på følgende måter:
 + **Informasjon som kan behandles for en Dynamics 365-bruker** – En kunde som kjøper en Surface-enhet, legger for eksempel inn spesielle instruksjoner som indikerer at enheten skal pakkes inn i gave før levering. Disse instruksjonene er informasjon som kan behandles, og som bør behandles av Contoso-ansatte som er ansvarlig for emballasje.
 + **Informasjon som ikke kan behandles**– En kunde besøker for eksempel Contoso-butikken, og uttrykker interesse for *Halo*-spill og spilltilbehør i samtalen med butikkmedarbeideren. Butikkmedarbeideren noterer seg denne informasjonen. Produktanbefalingsmotoren bruker deretter informasjonen til å foreta anbefalinger til kunden.
 
-Som regel registreres informasjon som kan behandles, som *aktiviteter* i Finance and Operations-apper og Customer Engagement-apper. Informasjon som ikke kan behandles, blir lagret som *merknader* i Finance and Operations-apper, og som *kommentarer* i Customer Engagement-apper.
+Som regel registreres informasjon som kan behandles, som *aktiviteter* i økonomi- og driftsapper og Customer Engagement-apper. Informasjon som ikke kan behandles, blir lagret som *merknader* i økonomi- og driftsapper, og som *kommentarer* i Customer Engagement-apper.
 
 > [!TIP]
 > Selv om notater er beregnet på informasjon som ikke kan behandles, vil ikke appene hindre deg i å bruke dem til å lagre og håndtere informasjon som kan behandles, hvis du vil bruke dem på denne måten.
@@ -39,7 +39,7 @@ Microsoft frigir funksjonalitet for merknadsintegrering. (Funksjonalitet for akt
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Opprette en merknad i en Customer Engagement-app
 
-Følg denne fremgangsmåten for å opprette et notat i en Customer Engagement-app og deretter synkronisere den med en Finance and Operations-app.
+Følg denne fremgangsmåten for å opprette et notat i en Customer Engagement-app og deretter synkronisere den med en økonomi- og driftsapp.
 
 1. Åpne kontoposten for en kunde i Customer Engagement-appen.
 2. I ruten **Tidslinje** velger du plusstegnet (**+**), og deretter velger du **Merknad** for å opprette en merknad.
@@ -54,7 +54,7 @@ Følg denne fremgangsmåten for å opprette et notat i en Customer Engagement-ap
 
     ![Ny merknad på kundetidslinjen.](media/notes-ce-3.png)
 
-4. Logg på Finance and Operations-appen og åpne den samme kundeposten. Legg merke til knappen **Vedlegg** (binderssymbol) i øvre høyre hjørne viser at posten har en tilknytning.
+4. Logg på økonomi- og driftsappen og åpne den samme kundeposten. Legg merke til knappen **Vedlegg** (binderssymbol) i øvre høyre hjørne viser at posten har en tilknytning.
 
     ![Varsling om en tilknytning.](media/notes-ce-4.png)
 
@@ -62,17 +62,17 @@ Følg denne fremgangsmåten for å opprette et notat i en Customer Engagement-ap
 
     ![Merknad fra Customer Engagement-appen.](media/notes-ce-5.png)
 
-Alle oppdateringer av merknaden synkroniseres frem og tilbake mellom Finance and Operations-appen og Customer Engagement-appen.
+Alle oppdateringer av merknaden synkroniseres frem og tilbake mellom økonomi- og driftsappen og Customer Engagement-appen.
 
-## <a name="create-a-note-in-a-finance-and-operations-app"></a>Opprette en merknad i en Finance and Operations-app
+## <a name="create-a-note-in-a-finance-and-operations-app"></a>Opprett en merknad i en økonomi- og driftsapp
 
-Du kan også opprette en merknad i en Finance and Operations-app, og den blir synkronisert til en Customer Engagement-app.
+Du kan også opprette en merknad i en økonomi- og driftsapp, og den blir synkronisert til en Customer Engagement-app.
 
-Følg denne fremgangsmåten for å opprette et notat i en Finance and Operations-app og deretter synkronisere den med en Customer Engagement-app.
+Følg denne fremgangsmåten for å opprette et notat i en økonomi- og driftsapp og deretter synkronisere den med en Customer Engagement-app.
 
-1. Velg **Ny** \> **merknad** på siden **Vedlegg** i Finance and Operations-appen.
+1. I økonomi- og driftsappen, på **Vedlegg**-siden, velger du **Ny** \> **Merknad**.
 
-    ![Oppretting av en merknad i Finance and Operations-appen.](media/notes-fo-1.png)
+    ![Opprett en merknad i økonomi- og driftsappen.](media/notes-fo-1.png)
 
 2. Skriv inn en tittel og et kort sett med instruksjoner, og velg deretter **Lagre**.
 
@@ -84,17 +84,17 @@ Følg denne fremgangsmåten for å opprette et notat i en Finance and Operations
 
 Du kan klassifisere en merknad som enten intern eller ekstern.
 
-- Åpne merknaden på siden **Vedlegg** i Finance and Operations-appen, og velg deretter **Intern** eller **Ekstern** i feltet **Begrensning**.
+- I økonomi- og driftsappen, på **Vedlegg**-siden, åpner du merknaden, og deretter, i **Begrensning**-feltet, velger du **Intern** eller **Ekstern**.
 
     ![Restriksjonsfelt.](media/notes-fo-4.png)
 
 Du kan også opprette en URL.
 
-1. Velg **Ny** \> **URL** på siden **Vedlegg** i Finance and Operations-appen.
+1. I økonomi- og driftsappen, på **Vedlegg**-siden, velger du **Ny** \> **URL-adresse**.
 2. Angi en tittel og URL-adressen.
 3. Velg **Intern** eller **Ekstern** i feltet **Begrensning**.
 
-    ![Oppretting av en URL-adresse i Finance and Operations-appen.](media/notes-fo-5.png)
+    ![Opprett en URL-adresse i økonomi- og driftsappen.](media/notes-fo-5.png)
 
 4. Velg **Lagre**.
 
@@ -109,7 +109,7 @@ Du kan også opprette en URL.
 
 Merknadsintegrering inkluderer en samling tabelltilordninger som fungerer sammen under datasamhandling, som vist i følgende tabell.
 
-| Finance and Operations-app | Kundeengasjementsapp | beskrivelse |
+| Økonomi- og driftsapper | Kundeengasjementsapp | Beskrivelse |
 |----------------------------|-------------------------|-------------|
 | [Kundevedlegg](mapping-reference.md#230) | Merknader | Virksomheter som bruker ren tekst og URL-adresser, til å registrere kundespesifikk informasjon (for både organisasjoner og personer). |
 | [Vedlegg for leverandørdokument](mapping-reference.md#231) | Merknader | Virksomheter som bruker ren tekst og URL-adresser, til å registrere leverandørspesifikk informasjon (for både organisasjoner og personer). |

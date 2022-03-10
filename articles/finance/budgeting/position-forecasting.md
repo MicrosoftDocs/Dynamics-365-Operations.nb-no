@@ -1,7 +1,7 @@
 ---
 title: Stillingsprognose
 description: Utgifter som er knyttet til arbeidere utgjør ofte en stor del av organisasjonens kostnader. Stillingsprognoser lar deg planlegge disse utgiftene og inkludere dem i planleggingen av budsjetter.
-author: ShylaThompson
+author: panolte
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76919c6289fe0c2367cedecc64bbdae9ee86e63
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d43d0f92e666dd512fc6f2681aa8c7b6446edd5c
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358517"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595492"
 ---
 # <a name="position-forecasting"></a>Stillingsprognose
 

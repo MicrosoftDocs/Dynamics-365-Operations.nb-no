@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ba583c2c9bcaaf106af75f8ac41f79bebc2c363
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748399"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068065"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Denne artikkelen forklarer hvordan du viser sider side ved side.
 

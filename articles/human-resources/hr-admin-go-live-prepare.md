@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: ff7d689129a4015b6085685f4b19ae61bdd549d2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892759"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066399"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Klargjøre for å aktivere med Human Resources
 
@@ -29,11 +28,14 @@ ms.locfileid: "5892759"
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 Dette emnet beskriver hvordan du klargjør for aktivering med et Dynamics 365 Human Resources-prosjekt ved hjelp av Microsoft Dynamics Lifecycle Services (LCS). 
 
 Denne grafikken viser fasene i aktiveringsprosessen. 
 
-![Aktiveringsprosessen](./media/hr-admin-go-live-prepare-process.png)
+![Aktiveringsprosessen.](./media/hr-admin-go-live-prepare-process.png)
 
 Følgende tabell viser alle trinnene i prosessen, forventet varighet og hvem som er ansvarlig for handlingen.
 

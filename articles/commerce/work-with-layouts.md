@@ -2,36 +2,30 @@
 title: Arbeide med forhåndsinnstilte oppsett
 description: Dette emnet beskriver hvordan du arbeider med forhåndsinnstilte oppsett i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414662"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090851"
 ---
 # <a name="work-with-preset-layouts"></a>Arbeide med forhåndsinnstilte oppsett
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du arbeider med forhåndsinnstilte oppsett i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Før du fullfører prosedyrene i dette emnet, må du lese [Forhåndsinnstilte og egendefinerte oppsett](templates-layouts-overview.md#preset-and-custom-layouts). Du finner en generell oversikt i [Oversikt over maler og oppsett](templates-layouts-overview.md).
 
@@ -97,15 +91,30 @@ Hvis du vil forhåndsvise endringene, kan du enten åpne en eksisterende side so
 
 Når du har forhåndsvist endringene i det forhåndsinnstilte oppsettet, følger du en av disse fremgangsmåtene for å publisere oppsettet på ditt aktive område:
 
-* Gå til **Oppsett**, velg oppsettet, og velg deretter **Publiser**.
-* Velg oppsettnavnet for å åpne redigeringsprogrammet for oppsett, og velg deretter **Publiser**.
-* Publiser en side som refererer til det upubliserte oppsettet. Oppsettet vil automatisk bli publisert.
+1. Gå til **Oppsett**, velg oppsettet, og velg deretter **Publiser**.
+1. Velg oppsettnavnet for å åpne redigeringsprogrammet for oppsett, og velg deretter **Publiser**.
+1. Publiser en side som refererer til det upubliserte oppsettet. Oppsettet vil automatisk bli publisert.
 
 > [!WARNING]
 > Du kan referere til forhåndsinnstilte oppsett på flere sider. Når du publiserer et forhåndsinnstilt oppsett, må du være oppmerksom på at du kan påvirke oppsettet på flere sider.
+
+## <a name="rename-a-preset-layout"></a>Gi nytt navn til et forhåndsinnstilt oppsett
+
+Hvis du vil gi et nytt navn til et forhåndsinnstilt oppsett i områdebygger, følger du denne fremgangsmåten.
+
+1. Velg **Oppsett** i navigasjonsruten til venstre.
+1. Velg navnet på oppsettet du vil gi nytt navn til.
+1. Velg **Rediger** for å begynne å redigere oppsettet.
+1. Velg pennesymbolet ved siden av navnet på oppsettet i egenskapsruten.
+1. Rediger navnet på oppsettet etter behov.
+1. Merk av for å bekrefte navneendringen.
+1. Velg **Fullfør redigering**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over maler og oppsett](templates-layouts-overview.md)
 
 [Arbeide med maler](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Konfigurere et utviklingsmiljø for e-handel for feilsøking mot en virtuell maskin for Retail Server på Lag 1
 description: Dette emnet forklarer hvordan du konfigurerer et utviklingsmiljø for e-handel for feilsøking mot en virtuell maskin (VM) for Retail Server på Lag 1.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 35380a559a4f1b22bdf04ff25cb2bbfc51aff45b
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 0f5586112d168f8fa84f97d110403b0bec82e5cca4e963a92f1c283a17c972ca
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715314"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>Konfigurere et utviklingsmiljø for e-handel for feilsøking mot en virtuell maskin for Retail Server på Lag 1
 
@@ -40,13 +38,13 @@ Når du feilsøker mot et Lag 1-miljø, ettersom området nå kaller en annen Re
 
 Illustrasjonen nedenfor viser et eksempel på en feil som kan oppstå når en variant er valgt på en produktdetaljerside.
 
-![Feil når en variant er valgt på en produktdetaljerside](media/unhandled-rejection-error.jpg)
+![Feil når en variant er valgt på en produktdetaljerside.](media/unhandled-rejection-error.jpg)
 
 Illustrasjonen nedenfor viser et eksempel på en lignende feil i webleserens feilsøkingsverktøy (F12 Developer Tools). Feilmeldingen nevner et brudd på direktivet for innholdssikkerhetspolicy.
 
-![Feil under feilsøkingsverktøy](media/debugger-tools-error.JPG)
+![Feil under feilsøkingsverktøy.](media/debugger-tools-error.JPG)
 
-## <a name="resolution"></a>Oppløsning
+## <a name="resolution"></a>Løsning
 
 ### <a name="disable-the-content-security-policy-for-the-site-in-commerce-site-builder"></a>Deaktivere innholdssikkerhetspolicy for området i Commerce-områdebyggeren
 

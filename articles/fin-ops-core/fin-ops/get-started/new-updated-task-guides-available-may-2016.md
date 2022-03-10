@@ -2,11 +2,9 @@
 title: Nye eller oppdaterte oppgaveveiledninger (mai 2016)
 description: Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt til Microsoft (mai 2016 – alle språk) APQC Unified Library for Microsoft Dynamics AX. Det ble ikke utgitt nytt bibliotek for Komme i gang.
 author: josaw1
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +14,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: d17c038081b5c9b94337549334c2c61421dc01ff
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 38c50dd80a68c5ccdab59f6da039cbd209f06067addce341a931ddb1d127438e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713314"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>Nye eller oppdaterte oppgaveveiledninger (mai 2016)
 
@@ -193,3 +191,6 @@ Denne artikkelen viser nye eller oppdaterte oppgaveveiledninger som ble utgitt t
 [Nye eller oppdaterte oppgaveveiledninger (august 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (november 2016)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

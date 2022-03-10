@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 3d197046bd547757f32712a50949b41897f6fedf
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 3d60265df7ff1f447e20866b8b8a447d88db8cc4b3dccedebc0f18ce8f0f70dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746326"
 ---
 # <a name="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher"></a>Avgift posteres til feil finanskonto i bilaget
 
@@ -30,26 +30,26 @@ Under postering kan avgift posteres til feil finanskonto i bilaget. Hvis du vil 
 
 1. Velg transaksjonen du vil arbeide med, på **Bilagstransaksjoner**-siden, og velg deretter **Postert merverdiavgift**.
 
-    [![Postert merverdiavgift-knappen på bilagstransaksjonssiden](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![Postert merverdiavgift-knappen på bilagstransaksjonssiden.](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. Se gjennom verdien i **Mva-kode**-feltet. I dette eksemplet er den **Mva 19**.
 
-    [![Mva-kode-feltet på siden Postert merverdiavgift](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![Mva-kode-feltet på siden Postert merverdiavgift.](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## <a name="check-the-ledger-posting-group-of-the-tax-code"></a>Kontroller finansposteringsgruppen for mva-koden
 
 1. Gå til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Mva-koder**.
 2. Søk etter og velg avgiftskoden, og gå deretter gjennom verdien i feltet **Finansposteringsgruppe**. I dette eksemplet er den **Mva**.
 
-    [![Feltet Finansposteringsgruppe på siden Mva-koder](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![Feltet Finansposteringsgruppe på siden Mva-koder.](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. Verdien i feltet **Finansposteringsgruppe** er en kobling. Hvis du vil vise detaljer om gruppens konfigurasjon, velger du koblingen. Du kan også velge og holde (eller høyreklikke) i feltet og velge **Vis detaljer**.
 
-    [![Vis detaljer-kommando](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![Vis detaljer-kommando.](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. I feltet **Utgående merverdiavgif** må du kontrollere at kontonummeret er riktig i henhold til transaksjonstypen. Hvis ikke velger du riktig konto. I dette eksemplet skal merverdiavgiften for salgsordren posteres til betalingskonto for merverdiavgift 222200.
 
-    [![Feltet Konto, utgående mva på siden Finansposteringsgrupper](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png).
+    [![Feltet Konto, utgående mva på siden Finansposteringsgrupper.](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png).
 
     Følgende tabell inneholder informasjon om hvert felt på siden **Finansposteringsgrupper**.
 
@@ -71,11 +71,11 @@ I koden bestemmes posteringskontoen av finansdimensjonen. Finansdimensjonen lagr
 
 1. Legg til et stoppunkt ved metodene **Tax::saveAndPost()** og **Tax::post()** for en salgsordre. Vær oppmerksom på verdien til **\_LedgerDimension**.
 
-    [![Eksempel på salgsordrekode som har et stoppunkt](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![Eksempel på salgsordrekode som har et stoppunkt.](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
     Legg til et stoppunkt ved metodene **TaxPost::saveAndPost()** og **TaxPost::postToTaxTrans()** for en bestilling. Vær oppmerksom på verdien til **\_LedgerDimension**.
 
-    [![Eksempel på bestillingskode som har et stoppunkt](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![Eksempel på bestillingskode som har et stoppunkt.](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. Kjør følgende SQL-spørring for å finne visningsverdien til kontoen i databasen, basert på post-IDen som er lagret av finansdimensjonen.
 
@@ -83,7 +83,7 @@ I koden bestemmes posteringskontoen av finansdimensjonen. Finansdimensjonen lagr
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![Visningsverdi for post-IDen](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![Visningsverdi for post-IDen.](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
 3. Undersøk kallstakken for å finne ut hvor **_ledgerDimension**-verdien er tilordnet. Vanligvis kommer verdien fra **TmpTaxWorkTrans**. I dette tilfellet bør du legge til et stoppunkt ved **TmpTaxWorkTrans::insert()** og **TmpTaxWorkTrans::update()** for å finne hvor verdien er tilordnet.
 

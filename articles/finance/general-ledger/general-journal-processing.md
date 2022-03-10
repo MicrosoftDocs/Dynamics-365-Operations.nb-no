@@ -1,29 +1,26 @@
 ---
 title: Behandling av generell journal
 description: Dette emnet beskriver funksjoner i Microsoft Dynamics 365 Finance som kan hjelpe med å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.
-author: ShylaThompson
-manager: AnnBe
+author: kweekley
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446509"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726783"
 ---
 # <a name="general-journal-processing"></a>Behandling av generell journal
 
@@ -45,14 +42,14 @@ På siden **Journalnavn** kan du definere følgende elementer:
 
 Et journalnavn kan bare brukes til justeringer. I så fall kan du angi at bare **Finans**-kontotypen er gyldig på tvers av alle firmaer. 
 
-[![Journalkontrollkontotyper](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Journalkontrollkontotyper.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Et journalnavn kan bare brukes bare for et bestemt segment eller et område for hovedkontoer. 
 
-[![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Journalkontrollsegment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Alternativet **Automatisk tilbakeføring** er tilgjengelig i økonomijournaler. Du har for eksempel en justering av avsetning der det faktiske dokumentet ikke har blitt behandlet ennå, som vist i illustrasjonen nedenfor.
-[![Tilbakeføring for økonomijournal](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Tilbakeføring for økonomijournal.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Microsoft Excel-tillegget for journaloppføring gir et ekstra nivå med automatisering og gjør dataregistrering enklere. Handlingen **Åpne linjer i Excel** er tilgjengelig på sidene **Økonomijournal** og **Journalbilag**. 
 
@@ -105,3 +102,6 @@ Muligheten til å tilbakekalle en journal i en arbeidsflyt som har statusen uopp
 
 ## <a name="delete-journal-lines"></a>Slett journallinjer
 Muligheten til å slette alle journallinjer raskt aktiveres i en journal under **Funksjoner** > **Slett journallinjer**. Hvis du vil aktivere denne funksjonen, velger du **Slett ytelsesoptimaliseringer for journal** under **Funksjonsbehandling**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

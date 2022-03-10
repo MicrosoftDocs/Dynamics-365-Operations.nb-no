@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: af67d320f14fc6c3d28eec47de402ba645eea06d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836788"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714986"
 ---
 # <a name="create-maintenance-requests"></a>Opprette vedlikeholdsforespørsler
 
@@ -30,7 +30,7 @@ ms.locfileid: "5836788"
 
 Vedlikeholdsforespørsler kan brukes hvis vedlikeholdspersoner eller produksjonsarbeidere oppdager at utstyr krever reparasjon, men reparasjonsjobben kan ikke utføres med en gang.
 
-**Eksempel:** Mens en vedlikeholdsperson foretar en reparasjon, oppdager hun at et annet aktivum på samme lokasjon må ha service. Vedlikeholdspersonen har imidlertid ikke tid eller nødvendige reservedeler til å utføre reparasjonsjobben. Derfor oppretter hun en vedlikeholdsforespørsel på aktivumet og angir en kort beskrivelse av problemet.
+**Eksempel:** Mens en vedlikeholdsperson foretar en reparasjon, oppdager vedkommende at et annet aktivum på samme lokasjon må ha service. Vedlikeholdspersonen har imidlertid ikke tid eller nødvendige reservedeler til å utføre reparasjonsjobben. Derfor oppretter vedkommende en vedlikeholdsforespørsel på aktivumet og angir en kort beskrivelse av problemet.
 
 Delen **Aktive vedlikeholdsforespørsler** i ruten **Relatert informasjon** til høyre for **Alle aktiva** eller **Aktive aktiva**-siden (**Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**) viser vedlikeholdsforespørslene som er knyttet til det valgte aktivumet.
 
@@ -52,7 +52,7 @@ Delen **Aktive vedlikeholdsforespørsler** i ruten **Relatert informasjon** til 
 11. Angi eventuelle tilleggsmerknader i feltet **Notater**.
 12. Velg **OK**.
 
-![Opprett forespørsel om vedlikehold](media/03-manage-maintenance-requests.png)
+![Opprett melding.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Påfølgende behandling av vedlikeholdsforespørsler
 
@@ -67,7 +67,7 @@ I detaljvisningen kan du oppdatere forskjellig informasjon. Her er noen eksemple
 - Velg en vedlikeholdsjobbtype og, hvis denne informasjonen er relevant, en relatert vedlikeholdsjobbvariant og et jobbfag.
 - Angi geografiske koordinater i feltene **Breddegrad** og **Lengdegrad**. Alle koordinater som legges til i en vedlikeholdsforespørsel, overføres automatisk til en relatert arbeidsordre. 
 
-![Oppdatere vedlikeholdsforespørsel](media/04-manage-maintenance-requests.png)
+![Oppdatere vedlikeholdsforespørsel.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Hvis du velger et aktivum når du oppretter en vedlikeholdsforespørsel, kan du legge til én feil i aktivumet. Etter at vedlikeholdsforespørselen er opprettet, kan du legge til flere feil, etter behov. Hvis du vil legge til feil, velger du **Aktivafeil** på siden **Alle vedlikeholdsforespørsler**.

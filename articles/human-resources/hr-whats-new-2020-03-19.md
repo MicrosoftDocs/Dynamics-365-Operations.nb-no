@@ -1,33 +1,32 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (19. mars 2020)?
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 19. mars 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 902539a5abecba6ad99718afbb37613838450032
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0bea115ed111d1309e19631c1cc08fdbab0dca3f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526871"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062040"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-19-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (19. mars 2020)?
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Denne artikkelen beskriver funksjoner som enten er nye eller endret i Dynamics 365 Human Resources. Endringer gjelder for Build-nummeret 8.1.3014. Tallene i parentes i noen overskrifter refererer til støttenumre i Lifecycle Services (LCS).
 
@@ -53,7 +52,7 @@ Nå kan du justere saldoer for permisjonsplaner som ble opprettet med forhåndsv
 
 For ansatte med et avsluttet ansettelsesforhold, vises den primære stillingen som var aktiv ved avslutningen, i enheten. For integreringer vil det ikke lenger opprettes en duplikat post for den ansattes tilordning for arbeiderstilling. 
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service-løsningen er nå tilgjengelig med følgende endringer:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse-løsningen er nå tilgjengelig med følgende endringer:
 
 | beskrivelse | Vekslepenger |
 | --- | --- |
@@ -65,12 +64,12 @@ For ansatte med et avsluttet ansettelsesforhold, vises den primære stillingen s
 | Nye enheter for oppsett av variabel kompensasjon | <ul><li>**Type variabel kompensasjonsplan**</li><li>**Variabel plan for kompensasjon**</li><li>**Overdragelsesregler**</li><li>**Nivå for variabel kompensasjonsplan**</li></ul> |
 | Ny enhet, **Ansettelse i arbeiderkalender** | <ul><li>**Arbeidskalenderenhet** lagt til</li></ul> |
 | Ny enhet, **Lønnstillingsdetaljer** | <ul><li>**Lønnsstillingsdetaljer** lagt til</li></ul> |
-| Ny **Tittel**-enhet | <ul><li>**Tittel** lagt til</li></ul>Den nye **Tittel**-enheten er inkludert i Common Data Service, men refereres ikke til fra **Stilling**- eller **Jobb**-enhetene på dette tidspunktet. |
+| Ny **Tittel**-enhet | <ul><li>**Tittel** lagt til</li></ul>Den nye **Tittel**-enheten er inkludert i Dataverse, men refereres ikke til fra **Stilling**- eller **Jobb**-enhetene på dette tidspunktet. |
 
 > [!NOTE]
-> Finansdimensjoner for både stillinger og ansettelse tilbyr en-veis integrering for oppdateringer fra Human Resources til Common Data Service. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Common Data Service til Human Resources.
+> Finansdimensjoner for både stillinger og ansettelse tilbyr en-veis integrering for oppdateringer fra Human Resources til Dataverse. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Dataverse til Human Resources.
 
-De neste ukene vil disse enhetsendringene være tilgjengelige i alle miljøer. Slik installerer du den nyeste Common Data Service-løsningen for Human Resources manuelt:
+De neste ukene vil disse enhetsendringene være tilgjengelige i alle miljøer. Slik installerer du den nyeste Dataverse-løsningen for Human Resources manuelt:
 
 1.  Gå til [Power Platform-administrasjonssenteret](https://admin.powerplatform.microsoft.com).
 
@@ -127,6 +126,8 @@ Følgende forhåndsversjonsfunksjoner er tilgjengelige fra 3. februar 2020:
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

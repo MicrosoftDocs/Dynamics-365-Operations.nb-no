@@ -1,8 +1,8 @@
 ---
-title: Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
+title: Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
 description: Dette emnet beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186744"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969118"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan du evaluerer en forutsigelsesmodell etter at du har aktivert Finance Insights og deretter generert og kalibrert den første modellen. Dette emnet omhandler modeller for å forutsi kundebetalinger. Det beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 
@@ -33,32 +32,32 @@ Dette emnet forklarer hvordan du evaluerer en forutsigelsesmodell etter at du ha
 
 På siden **Parametere for økonomisk innsikt** i Microsoft Dynamics 365 Finance vises koblingen **Forbedre modellnøyaktighet** ved siden av poengsummen for nøyaktighet.
 
-[![Forbedre modellnøyaktighet-kobling](./media/prediction-model.png)](./media/prediction-model.png)
+[![Forbedre modellnøyaktighet-kobling.](./media/prediction-model.png)](./media/prediction-model.png)
 
 Denne koblingen tar deg til AI Builder, der du kan lære mer om den gjeldende modellen og forbedre den. Illustrasjonen nedenfor viser siden som er åpen.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Siden som åpnes, viser følgende informasjon:
 
-- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](/ai-builder/prediction-performance) i veiviseren for AI Builder.
+- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](/ai-builder/prediction-performance) i AI Builder-dokumentasjonen.
 - Delen **Data med mest innflytelse** viser hvor viktige forskjellige inndatatyper er for modellen din. Du kan evaluere denne listen og de tilsvarende prosentandelene for å fastslå om informasjonen samsvarer med det du vet om firmaet og markedet.
 
-    [![Delene Ytelse og Data med mest innflytelse for forutsigelsesmodellen](./media/models.png)](./media/models.png)
+    [![Delene Ytelse og Data med mest innflytelse for forutsigelsesmodellen.](./media/models.png)](./media/models.png)
 
 - I **Ytelse**-delen velger du **Se detaljer** for å lære mer om klassen og andre hensyn. I illustrasjonen nedenfor viser detaljene at modellen bruker mindre informasjon enn det som anbefales. Derfor har systemet generert en advarsel.
 
-    [![Advarsler om modellens ytelse](./media/details.png)](./media/details.png)
+    [![Advarsler om modellens ytelse.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Graver dypere
 
 Selv om nøyaktighet er et godt utgangspunkt for evaluering av en modell, og ytelsesklassen gir perspektiv, gir AI Builder mer detaljerte måledata som du kan bruke i evalueringen. Hvis du vil laste ned detaljene, velger du ellipseknappen (**...**) i **Ytelse**-delen ved siden av **Bruk modell**-knappen, og deretter velger du alternativet for **Last ned detaljerte mål**.
 
-[![Kommandoen Last ned detaljerte mål](./media/performance.png)](./media/performance.png)
+[![Kommandoen Last ned detaljerte mål.](./media/performance.png)](./media/performance.png)
 
 Følgende illustrasjon viser formatet du kan laste ned dataene i.
 
-[![Format for nedlastede data](./media/data-format.png)](./media/data-format.png)
+[![Format for nedlastede data.](./media/data-format.png)](./media/data-format.png)
 
 Hvis du vil ha en dypere analyse av resultatene, er et godt utgangspunkt å gå gjennom matrisen "Forvirringsmatrise". Her finner du for eksempel dataene som vises for denne måleverdien i den forrige illustrasjonen.
 

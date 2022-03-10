@@ -2,11 +2,9 @@
 title: Konfigurere produktfiltre for lagertransaksjoner
 description: Dette emnet beskriver hvordan du konfigurerer produktfiltre og filterkoder for å kategorisere lagervarer i et lager. Du kan også bruke filtre til å angi hvilke kunder som kan bestille en bestemt vare, og hvilke varer som kan kjøpes fra en bestemt leverandør.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
-ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 922ff818e069f41c139cc00db9161dc6e113888b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973741"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567685"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurere produktfiltre for lagertransaksjoner
 
@@ -48,11 +46,11 @@ Produktfiltre har opptil ti egenskaper for **Filtertittel**, som er opplistingsv
 1. Velg en verdi i **Filtertittel**-feltet.
 1. Angi en verdi i **Filterkode**-feltet.
 
-    ![Definere et produktfilter](media/Product_Filters10.png "Definere et produktfilter")
+    ![Definere et produktfilter.](media/Product_Filters10.png "Definere et produktfilter")
 
 1. Skriv inn et navn for koden i feltet **Beskrivelse**. *Kode 2* kan for eksempel representere leverandører. Du kan deretter opprette et produktfilter for en bestemt leverandør eller leverandørgruppe. Hvis du vil ha mer informasjon, kan du se [Konfigurere leverandørfilterkoder](#vendor-product-filters) senere i dette emnet.
 
-    ![Sett med produktfiltre](media/Product_Filters.png "Sett med produktfiltre")
+    ![Sett med produktfiltre.](media/Product_Filters.png "Sett med produktfiltre")
 
 ## <a name="set-up-product-filter-groups"></a>Konfigurere produktfiltergrupper
 
@@ -71,7 +69,7 @@ Hvis du vil konfigurere filtergrupper, følger du denne fremgangsmåten.
 1. Velg varegruppen som produktfilteret skal gjelde for, i **Varegruppe**-feltet.
 1. I feltene **Kode 1** til og med **Kode 10** velger du filterkodene som skal tas med i gruppen, etter behov.
 
-    ![Varegruppe](media/ProdFilterGroup.png "Varegruppe")
+    ![Varegruppe.](media/ProdFilterGroup.png "Varegruppe")
 
 > [!NOTE]
 > Hvis du får en feilmelding når du lukker siden, kan det hende at det mangler et kodeoppsett. På **Varegrupper**-siden kan du gjøre kodene obligatorisk for en varegruppe ved å merke av for **Tilordne filterkode 1 for varegruppe**, **Tilordne filterkode 2 for varegruppe** og så videre.
@@ -90,7 +88,7 @@ Hvis du vil konfigurere filterkoder for varegrupper, følger du denne fremgangsm
 
     Hvis du vil oppdatere et frigitt produkt, åpner du siden **Detaljer om frigitt produkt** og velger deretter **Rediger** i handlingsruten. Filtrene som er knyttet til koder, blir deretter tilgjengelige i hurtigfanen **Lager**.
 
-    ![Varegrupper](media/ItemGroup10.png "Varegrupper")
+    ![Varegrupper.](media/ItemGroup10.png "Varegrupper")
 
 1. I delen **Varegruppefilter** merker du av for filtrene som må samsvare for at filtergruppen skal være standard filtergruppe for en vare.
 
@@ -165,3 +163,6 @@ Hvis du vil konfigurere leverandørfilterkoder, følger du denne fremgangsmåten
 ## <a name="see-also"></a>Se også
 
 [Hvis du vil ha mer informasjon, kan du se blogginnlegget WMS – filterkoder for lager](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

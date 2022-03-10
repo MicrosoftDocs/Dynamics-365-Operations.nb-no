@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907969"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474609"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.17. (april 2021)
 
@@ -35,7 +35,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 Denne versjonen inneholder følgende funksjoner:  Følg koblingene til [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
-De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem. Noen av funksjonene i listen kan fortsatt være i forhåndsversjon, men de fleste er nå allment tilgjengelige.
+De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
 ### <a name="asset-management"></a>Ressursbehandling
 
@@ -52,6 +52,8 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 - [Landingskostnad](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Hvis du vil ha mer informasjon, kan du se [Modulen Netto innkjøpspris](../landed-cost/landed-cost-overview.md).
 
 - [Pakking i forhold til lagringsdimensjoner](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Hvis du vil ha mer informasjon, kan du se [Angi ulike dimensjoner for pakking og lagring](../warehousing/packing-vs-storage-dimensions.md).
+
+- [Parallell bølgetildeling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - For mer informasjon se [Bølgetildeling](../warehousing/wave-allocation-method.md).
 
 - [Lagrede visninger for lager og logistikk](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Hvis du vil ha mer informasjon, kan du se [Standard lagrede visninger for Supply Chain Management](saved-views-scm.md).
 
@@ -71,13 +73,13 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 
 - [Funksjoner for aktivastyring i grensesnittet for produksjonsutførelse](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Hvis du vil ha mer informasjon, kan du se [Konfigurere grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md).
 
-- Enhetlig nummerserie for jobb-ID-er<br> - Hvis du vil ha mer informasjon, kan du se 
+- [Produksjonsutførelse med skalaenheter i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for produksjonsutførelse for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 - [Overstyre standard reserveringsprinsipp for materialer i produksjon](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Hvis du vil ha mer informasjon, kan du se [Overstyre standard reserveringsprinsipp for materialer i produksjon](../production-control/override-default-reservation-principle.md).
 
 - [Lagrede visninger for produksjonskontroll](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Hvis du vil ha mer informasjon, kan du se [Standard lagrede visninger for Supply Chain Management](saved-views-scm.md).
 
-- [Produksjonsutførelse med skalaenheter i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for produksjonsutførelse for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- Enhetlig nummerserie for jobb-ID-er<br> - Hvis du vil ha mer informasjon, kan du se [Enhetlig nummerserie for jobb-ID-er](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Planlegging
 
@@ -97,10 +99,6 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 
 Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikke nødvendigvis knyttet til de nye funksjonene som er lagt til for denne versjonen, som oppført i den forrige delen, men de kan hjelpe deg med å få mer ut av eksisterende funksjoner.
 
-### <a name="cost-management"></a>Kostnadsstyring
-
-- [Feilsøke kostnadsstyring](../cost-management/troubleshoot-costmanagement.md)
-
 ### <a name="asset-management"></a>Ressursbehandling
 
 - [Konfigurere mobilt arbeidsområde for aktivabehandling](../asset-management/set-up-asset-management-mobile.md)
@@ -112,8 +110,6 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 - [Delvis lokasjonssyklustelling](../warehousing/partial-location-cycle-counting.md)
 
 - [Plukklinjegruppering](../warehousing/pick-line-grouping.md)
-
-- [Feilsøke lageroperasjoner](../inventory/troubleshoot-inventory-operations.md)
 
 - [Lagersporing](../warehousing/warehouse-slotting.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e744ade8b02b288821dd9142c85092d384db4b2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 485d8f0aee791aa577432947d74b08caf484da0a3056d8119579e9d659ca3d57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730512"
 ---
 # <a name="view-financial-reports"></a>Vise finansrapporter
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816961"
 
 Dette emnet beskriver hvordan du kan vise og utforske finansrapporter. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
 
-<a name="financial-reporting-overview"></a>Oversikt over finansrapportering
-----------------------------
+## <a name="financial-reporting-overview"></a>Oversikt over finansrapportering
 
 ## <a name="open-a-financial-report"></a>Åpne en finansrapport
 Hvis du vil åpne en rapport, velger du rapportnavnet. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du for eksempel åpner en rapport for første gang i august 2015, genereres rapporten for 31. juli 2015. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
@@ -76,10 +75,9 @@ Når du har fullført angivelse av utskriftsalternativene, klikker du **Skriv ut
 ## <a name="export-a-financial-report"></a>Eksportere en finansrapport
 Klikk **Eksport** i handlingsruten for å eksportere en finansrapport. Rapporten eksporteres til Microsoft Excel, og nettleseren ber deg om å åpne eller lagre den eksporterte filen. Eksportinnstillingene som er definert i rapportutformingen, brukes på den eksporterte rapporten.    
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
-[Finansrapportering](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Finansrapportering](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

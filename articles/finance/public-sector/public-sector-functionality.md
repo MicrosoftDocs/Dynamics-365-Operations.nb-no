@@ -1,29 +1,29 @@
 ---
 title: Startside for offentlig sektor
-description: Dynamics 365 Finance støtter forretningsprosesser i offentlig sektor. Disse omfatter budsjetterings-, innkjøps-, leverandør- og kundeoppgaver.
-author: ShylaThompson
-manager: AnnBe
+description: Dynamics 365 Finance støtter forretningsprosesser i offentlig sektor. Disse prosessene omfatter budsjetterings-, innkjøps-, leverandør- og kundeoppgaver.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 20691
+ms.custom:
+- "20691"
+- intro-internal
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d4b499337d26e2209ee73f2f8ea93f55a124652
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218738"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817747"
 ---
 # <a name="public-sector-home-page"></a>Startside for offentlig sektor
 
@@ -65,8 +65,7 @@ Følgende tabell inneholder informasjon om forholdet mellom denne konfigurasjons
 | Underordnede nøkler | Konfigurasjonsnøkkelen **Avansert finansoppføring** (AdvancedLedgerEntry), konfigurasjonsnøkkelen **Offentlig sektor 1099G** (Tax1099G), konfigurasjonsnøkkelen **Offentlig sektor 1099S** (Tax1099S), konfigurasjonsnøkkelen **Fransk forskriftsmessig** |
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Planlegge for funksjonalitet for offentlig sektor](plan-public-sector-functionality.md)
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 14e86a49777eefefae711bfe0d756361b09d69c2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778455"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952683"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrer med tredjeparts produksjonsutførelsessystemer
 
@@ -37,10 +37,17 @@ Illustrasjonen nedenfor viser en vanlig samling forretningshendelser, prosesser 
 
 ## <a name="turn-on-the-mes-integration-feature"></a>Aktiver funksjonen for MES-integrering
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke denne funksjonen må en administrator aktivere den i systemet som beskrevet i følgende prosedyre.
 
-- **Modul:** *Produksjonskontroll*
-- **Funksjonsnavn:** *Integrering av produksjonsutførelsessystem*
+1. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**.
+1. Kontroller at lisensnøkkelen **Timeregistrering** er aktivert (vises med en hake). Denne lisensnøkkelen er nødvendig, fordi den kontrollerer funksjonaliteten og dataene i produksjonsutførelsen. Hvis tilgangen ikke er aktivert, går du gjennom følgende trinn:
+    1. Sett systemet i vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+    1. Merk av for **Timeregistrering** på siden **Lisenskonfigurasjon**.
+    1. Deaktiver vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
+1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
+1. Aktiver funksjonen som er oppført på følgende måte (se også [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
+    - **Modul:** *Produksjonskontroll*
+    - **Funksjonsnavn:** *Integrering av produksjonsutførelsessystem*
 
 ## <a name="processes-available-for-mes-integration"></a>Tilgjengelige prosesser for MES-integrering
 
@@ -191,7 +198,7 @@ Følgende tabell viser feltene som hver linje i `RouteCardLines`-delen av `ProdP
 
 | Feltnavn | Status | Type |
 |---|---|---|
-| `OperationNumber` | Obligatorisk | Obligatorisk, heltall |
+| `OperationNumber` | Obligatorisk | Heltall |
 | `OperationPriority` | Valgfri | Enum (Primary \| Secondary1 \| Secondary2 \| ... \| Secondary20) |
 | `OperationId` | Valgfri | Streng |
 | `OperationsResourceId` | Valgfri | Streng |

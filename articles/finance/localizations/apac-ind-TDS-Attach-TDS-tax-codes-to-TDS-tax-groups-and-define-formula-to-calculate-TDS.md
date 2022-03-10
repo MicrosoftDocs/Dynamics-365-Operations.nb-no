@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ec0d683153bd5ab731035159d32881fbdb352d70
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345234"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Knytte TDS-avgiftskoder til TDS-avgiftsgrupper og definere formelen for beregning av TDS
 
@@ -33,7 +33,7 @@ Følg denne fremgangsmåten for å konfigurere en TDS-avgiftsgruppe, knytte TDS-
 
 1. Gå til **Avgift \> Indirekte avgifter \> Kildeskatt \> Kildeskattgrupper**.
 
-    [![Siden Kildeskattgrupper](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Siden Kildeskattgrupper.](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
 2. Velg **Ny** i handlingsruten for å opprette en kildeskattgruppe for TDS, og angi de nødvendige detaljene.
 3. I feltet **Avgiftstype** velger du **TDS**.
@@ -43,7 +43,7 @@ Følg denne fremgangsmåten for å konfigurere en TDS-avgiftsgruppe, knytte TDS-
 7. Merk av for **Avgiftsfri** hvis du vil unngå at avgiftsgruppen beregnes i transaksjoner.
 8. Velg **Utforming** i handlingsruten for å åpne formeldesigneren, slik at du kan definere formelen for beregning av TDS for TDS-avgiftsgruppen. **Avgifter**-fanen på **Utforming**-siden viser TDS-avgiftskodene som er valgt for TDS-avgiftsgruppen.
 
-    [![Utforming-siden](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    [![Utforming-siden.](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
 9. Trykk på **ALT+N** i **Beregning**-fanen for å opprette en linje. **ID**-feltet viser den automatisk genererte prioritets-ID-en for TDS-beregningen.
 10. Velg TDS-avgiftskoden som formelen skal defineres for, i **Avgiftskode**-feltet. Alle TDS-avgiftskodene som er valgt for TDS-avgiftsgruppen, kan velges i dette feltet.
@@ -55,7 +55,7 @@ Følg denne fremgangsmåten for å konfigurere en TDS-avgiftsgruppe, knytte TDS-
     > [!NOTE]
     > Feltet **Skattbart grunnlag** kan ikke settes til **Ekskl. bruttobeløp** for TDS-avgiftskoden som har prioritets-ID-en **1**.
 
-12. TDS-beregningen er basert på formelen som er definert i feltet **Beregningsuttrykk** for hver avgiftskode som er knyttet til TDS-avgiftsgruppen. Velg plusstegnet (**+**), minustegnet (**-**), multiplikasjonstegnet (**\**_) eller divisjonstegnet (_*/**) for å angi beregningsuttrykket for den valgte TDS-avgiftskoden i feltet **Beregningsuttrykk**.
+12. TDS-beregningen er basert på formelen som er definert i feltet **Beregningsuttrykk** for hver avgiftskode som er knyttet til TDS-avgiftsgruppen. Velg plusstegnet (+), minustegnet (-), multiplikasjonstegnet (\*) eller divisjonstegnet (/) for å angi beregningsuttrykket for den valgte TDS-avgiftskoden i feltet **Beregningsuttrykk**.
 
     > [!NOTE]
     > Ingen beregningsuttrykk kan defineres for TDS-avgiftskoden som har prioritets-ID-en **1**.

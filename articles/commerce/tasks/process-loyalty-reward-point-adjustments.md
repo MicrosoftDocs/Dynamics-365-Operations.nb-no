@@ -2,11 +2,9 @@
 title: " Behandle justeringer av fordelspoeng"
 description: Denne prosedyren beskriver hvordan du slår opp fordelskortinformasjon og justerer fordelspoeng.
 author: scott-tucker
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailLoyaltyCards, RetailLoyaltyCardRewardPointTrans, RetailLoyaltyCardRewardPointAdjustment, RetailAffiliationLookup
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40f66e51c08e574049097a6e2602998875a897e9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 07008234255102e6094e362edcadb116158e9ee770d782fbb654bfc1ce000285
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991341"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757351"
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a> Behandle justeringer av fordelspoeng
 
@@ -49,3 +47,6 @@ Denne prosedyren beskriver hvordan du slår opp fordelskortinformasjon og juster
 15. Klikk Korttransaksjoner.
 16. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

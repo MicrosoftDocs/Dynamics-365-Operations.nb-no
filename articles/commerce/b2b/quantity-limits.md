@@ -2,11 +2,9 @@
 title: Angi produktantallsgrenser for B2B-e-handelsområder
 description: Dette emnet beskriver hvordan du konfigurerer produktantallsgrenser for bedrift-til-bedrift-e-handelsområder (B2B).
 author: josaw1
-manager: AnnBe
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailOperations
 audience: Application User, IT Pro
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e70648da2cc1c526625b6e34fd0867d40abb5a85
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 2c8adaad2afee3b735c69a501d7949a807f4e770
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035947"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323386"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Angi produktantallsgrenser for B2B-e-handelsområder
 
@@ -77,10 +75,13 @@ Følg disse trinnene for å slå på funksjonen for antallsbegrensninger for B2B
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Definere et B2B-e-handelsområde](set-up-b2b-site.md)
+[Definere et e-handelsområde for B2B](set-up-b2b-site.md)
 
-[Opprette organisasonsmodellhierarkier for B2B-organisasjoner](org-model.md)
+[Administrere B2B-forretningspartnere ved hjelp av kundehierarkier](partners-customer-hierarchies.md)
 
-[Administrere forretningspartnerbrukere på B2B-e-handelsområder](manage-b2b-users.md)
+[Administrere forretningspartnerbrukere på e-handelsområder for B2B](manage-b2b-users.md)
 
 [Konfigurere kundekontobetalingsmetode for B2B-e-handelsområder](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

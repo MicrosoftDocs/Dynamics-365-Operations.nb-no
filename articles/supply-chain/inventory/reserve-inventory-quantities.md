@@ -1,29 +1,26 @@
 ---
 title: Reservere lagerantall
 description: Dette emnet beskriver de forskjellige alternativene som er tilgjengelige for reservering av lager.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea7311ce34fec476ad9953e954a07a86acd13afc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0cf6f14e30f84f48428b351287eb1c65915a14c1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434680"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571143"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantall
 
@@ -49,12 +46,12 @@ Policyer for lagerreservasjon settes på sidene **Varemodellgrupper**, **Paramet
 
 Delen **Beholdningspolicyer** inneholder policyene for lagerreservasjon som vises nedenfor.
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Policy for reservasjon**  | **Beskrivelse**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO-datokontrollert    | Hvis du velger alternativet **FIFO-datokontrollert** kontrolleres lagerreservasjonen av en sorteringsdato i henhold til FIFO-prinsippet. Partier reserveres, basert på den tidligste datoen for mottak av varer, i henhold til prinsippet først-inn-først-ut (FIFO).                                                                                                                                                                                                                                                                       |
 | Bakover fra forsendelsesdato | Dette alternativet er bare tilgjengelig hvis du har valgt alternativet **FIFO-datokontrollert**. Hvis du velger **Bakover fra forsendelsesdato**, reserveres lageret bakover fra den ønskede forsendelsesdatoen i henhold til prinsippet om sist-inn-først-ut (LIFO). Hvis ingen mottak er tilgjengelige før forsendelsesdatoen, brukes FIFO-reservering.                                                                                                                                                                                                           |
-| Varesalgreservasjon  | Bestemmer om varereservasjon er manuell eller automatisk. Hvis en reservasjon er automatisk, reserveres lageret når ordrelinjer opprettes. Det er mulig å reservere på varenummernivå for stykklister (alternativet **Automatisk**), eller for enkeltvarene i en stykkliste (alternativet **Nedbryting**). Standardverdien for **Varesalgreservasjon** kan arves fra **Kundeparametere**. På denne siden settes verdien i Reservering-feltet i **delen** **Salg - standardverdier** i kategorien **Generelt**. |
+| Varesalgreservasjon  | Bestemmer om varereservasjon er manuell eller automatisk. Hvis en reservasjon er automatisk, reserveres lageret når ordrelinjer opprettes. Det er mulig å reservere på varenummernivå for stykklister (alternativet **Automatisk**), eller for enkeltvarene i en stykkliste (alternativet **Nedbryting**). Standardverdien for **Varesalgreservasjon** kan arves fra **Kundeparametere**. På denne siden settes verdien i Reservering-feltet i **delen** **Salg - standardverdier** i fanen **Generelt**. |
 | Samme partivalg    | Samme partireservasjon gjør at du kan reservere beholdning for en salgsordrelinje mot ett lagerparti. Hvis du vil bruke dette alternativet, må du også sette alternativet **Konsolider krav** til **Ja**. Det finnes flere innstillinger som kreves for sporingsdimensjonsgruppen og lagringsdimensjonsgruppen. Hvis du vil ha mer informasjon, kan du se [Reservere samme parti for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).                                                          |
 | Konsolider krav | Dette alternativet ligner på alternativet **Samme partivalg**, og det konsoliderer lageret som er reservert for salgsordrelinjer til ett krav.                                                                                                                                                                                                                                                                                                                                                                                      |
 | FEFO-datokontrollert    | Dette alternativet gjør det mulig å reservere partier som er nær sin utløpsdato eller best før-dato. Du må også sette **Plukkekriterier**-feltet for å velge en **utløpsdato** eller **best før-dato**.                                                                                                                                                                                                                                                                                                                              |
@@ -77,9 +74,12 @@ En salgsordre som skal reserveres automatisk og leveres 4. april 2016, reservere
 ### <a name="policies-on-the-inventory-and-warehouse-management-parameter-page"></a>Policyer på siden Parametere for beholdnings- og lagerstyring
 
 Det finnes to alternativer relatert til reservasjoner for siden **Parametere for beholdnings- og lagerstyring**:
--   Alternativet **Reserver bestilte varer** i kategorien **Generelt** lar deg reservere varemottak som er bestilt mot vareavganger i Kunder, Prosjektstyring og regnskap og Produksjonskontroll. Hvis du ikke velger dette alternativet, kan du bare reservere varer som er fysisk mottatt. Hvis en bestemt vare er definert til å godta negativ beholdning, er ikke dette feltet relevant.
--   Alternativet **Reserver varer automatisk** i kategorien **Transport** fastsetter standardinnstillingen hvis varene reserveres automatisk for overføringsordrer. Standardinnstillingen kan overstyres på individuelle overføringsordrer.
+-   Alternativet **Reserver bestilte varer** i fanen **Generelt** lar deg reservere varemottak som er bestilt mot vareavganger i Kunder, Prosjektstyring og regnskap og Produksjonskontroll. Hvis du ikke velger dette alternativet, kan du bare reservere varer som er fysisk mottatt. Hvis en bestemt vare er definert til å godta negativ beholdning, er ikke dette feltet relevant.
+-   Alternativet **Reserver varer automatisk** i fanen **Transport** fastsetter standardinnstillingen hvis varene reserveres automatisk for overføringsordrer. Standardinnstillingen kan overstyres på individuelle overføringsordrer.
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Policyer for lagerreservasjon på siden Produksjonsparametere
 
-Verdien for **Reservering**-feltet i kategorien **Generelt** på siden **Produksjonsparametere** bestemmer standardpunktet i produksjonsprosessen der lageret skal reserveres. Lageret kan for eksempel reserveres når arbeid planlegges eller når arbeid startes.
+Verdien for **Reservering**-feltet i fanen **Generelt** på siden **Produksjonsparametere** bestemmer standardpunktet i produksjonsprosessen der lageret skal reserveres. Lageret kan for eksempel reserveres når arbeid planlegges eller når arbeid startes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

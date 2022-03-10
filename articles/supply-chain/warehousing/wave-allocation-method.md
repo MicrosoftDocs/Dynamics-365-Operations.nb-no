@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fd874f3c6c1f4d25b3257d6465686dcb8e95b933
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 527bd24d7f2e9a05f6e617c222005186520f9968
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576022"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103795"
 ---
 # <a name="wave-allocation"></a>Bølgetildeling
 
@@ -67,7 +67,7 @@ Slik konfigurerer du parallell behandling:
 
 ## <a name="enable-or-disable-parallelization-across-all-legal-entities"></a>Aktivere eller deaktivere parallellisering på tvers av alle juridiske enheter
 
-Vi anbefaler at du angir at `allocateWave`-metoden skal kjøres parallelt på tvers av alle juridiske enheter, fordi dette bidrar til å forbedre ytelsen til bølgebehandlingen. Fra og med Supply Chain Management versjon 10.0.17 er funksjonen *Bølgeparallellisering for Tildel bølge-metoden* aktivert som standard for alle nye og oppdaterte installasjoner, og kan ikke slås av på nytt. Når denne funksjonen er aktivert, skjer følgende:
+Vi anbefaler at du angir at `allocateWave`-metoden skal kjøres parallelt på tvers av alle juridiske enheter, fordi dette bidrar til å forbedre ytelsen til bølgebehandlingen. Fra og med Supply Chain Management versjon 10.0.17 er funksjonen *Bølgeparallellisering for Tildel bølge-metoden* aktivert som standard for alle nye og oppdaterte installasjoner, og kan ikke deaktiveres igjen. Når denne funksjonen er aktivert, skjer følgende:
 
 - `allocateWave`-metoden oppdateres slik at den inneholder en oppgavekonfigurasjonsinnstilling som lar deg bruke siden **Bølgebehandlingsmetoder** til å definere antall oppgaver som skal kjøres samtidig, tilsvarende antall parallelle prosesser. Tiden som brukes i tildelingsbølgetrinnet (som vanligvis er 30 % til 60 % av den totale behandlingstiden), reduseres med en faktor som til sammen tilsvarer antall oppgaver. Du kan også velge hvilket parti som skal tilordnes til å behandle disse oppgavene. Det er viktig å merke seg at alle juridiske enheter vil bli konfigurert til å behandle bølger satsvis. For lagre som allerede er konfigurert til å behandle bølger i satsvis behandling, og for lagre som allerede er konfigurert til å bruke `allocateWave`-metoden parallelt, beholdes den eksisterende konfigurasjonen.
 - Alle nye juridiske enheter er som standard konfigurert til å behandle bølger satsvis. Alle nye lagre med alternativet **Lagerstyringsprosesser** aktivert vil ha `allocateWave`-metoden konfigurert til å kjøres parallelt som standard.
@@ -77,7 +77,7 @@ Parallell tildelingsbehandling krever bølgebehandling for å kjøre satsvis. De
 
 Om nødvendig kan du angre hver av innstillingene som er gjort som standard, når funksjonen *Bølgeparallellisering for Tildel bølge-metoden* er aktivert automatisk for forekomsten. Slik gjør du det:
 
-- Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**. På **Bølgebehandling**-fanen bruker du de foretrukne verdiene for **Behandle bølger satsvis** og **Vent på lås (ms)**.
+- Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**. På **Bølgebehandling**-fanen bruker du de foretrukne verdiene for **Behandle bølger satsvis** og **Vent på lås (ms)**.
 - Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**. Velg `allocateWave`-metoden. I handlingsruten velger du **Oppgavekonfigurasjon** for å åpne en side som fører opp hvert lager, der metoden er angitt til å kjøre parallelt. Endre eller slett antall satsvise oppgaver og den tilordnede bølgegruppen for hvert oppførte lager etter behov.
 
 ## <a name="troubleshooting"></a>Feilsøking

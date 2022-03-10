@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103634"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102719"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -35,23 +35,21 @@ I dette emnet beskrives hver metode i detalj.
 
 De fleste planlagte bestillingsfunksjoner er tilgjengelige i alle standardinstallasjoner av Microsoft Dynamics 365 Supply Chain Management som bruker Planleggingsoptimalisering. Noen av funksjonene som er beskrevet i dette emnet, må imidlertid aktiveres i Funksjonsadministrasjon før du kan bruke dem.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Aktivere parallellisert autorisasjon av planlagte bestillinger
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallellisert autorisering av planlagte bestillinger
 
-Parallell autorisering gjør det raskere å autorisere prosessen ved å parallellisere den over flere tråder. Denne fremgangsmåten kan være nyttig når mange planlagte bestillinger autoriseres.
-
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, kan du gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Parallell autorisering av planlagte bestillinger*.
+Parallell autorisering gjør det raskere å autorisere prosessen ved å parallellisere den over flere tråder. Denne fremgangsmåten kan være nyttig når mange planlagte bestillinger autoriseres. Du må aktivere funksjonen *Parallell autorisering av planlagte bestillinger* for systemet for å kunne bruke denne funksjonaliteten. Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan du aktivere eller deaktivere denne funksjonaliteten ved å gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søke etter funksjonen *Parallell autorisering av planlagte bestillinger*.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Aktivere autorisering av planlagt bestilling med filtrering
 
 Med autorisering av planlagt bestilling med filtrering kan du definere logiske kriterier for å velge hvilke planlagte bestillinger som skal autoriseres. Du kan også forhåndsvise hvilke planlagte bestillinger som er valgt, kjøre prosessen i bakgrunnen og/eller planlegge det som en satsvis jobb.
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, kan du gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Autorisering av planlagt bestilling med filtrering*.
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Autorisering av planlagt bestilling med filtrering* i arbeidsområdet [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivere automatisk autorisasjon for planleggingsoptimalisering
 
 Automatisk autorisering gjør det mulig å autorisere planlagte bestillinger som en del av hovedplanlegging-prosessen under horisonten for autorisering. Automatisk autorisering støttes alltid for planleggingsmotoren som er innebygd i Supply Chain Management. Hvis du også vil bruke det med planleggingsoptimalisering, må du aktivere funksjonen.
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, kan du gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Automatisk autorisasjon med planleggingsoptimalisering*.
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, kan du gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Automatisk autorisasjon med planleggingsoptimalisering*. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 
 ## <a name="manually-firm-planned-orders"></a>Autorisere planlagte ordrer manuelt
 
@@ -81,7 +79,10 @@ Hvis du vil autorisere planlagte bestillinger manuelt, finner du og velger de pl
     - **Grupper etter periode** (i **Bestillinger**-delen) – Velg perioden du vil gruppere planlagte bestillinger etter. Hvis du vil velge dette alternativet, må du også velge alternativet **Grupper etter leverandør**.
     - **Grupper etter periode** (i **Overføringer**-delen) – Velg perioden du vil gruppere planlagte overføringer etter. Ordrene blir gruppert basert på verdiene **Fra lager** og **Til lager**.
 
-    ![Parametere-hurtigfanen i dialogboksen Autorisasjon](./media/manual-firming.png "Parametere-hurtigfanen i dialogboksen Autorisasjon")
+    > [!NOTE]
+    > Hvert av alternativene Grupper etter fører til at systemet konverterer hver planlagte bestilling til en linje i den enkelte bestillingen som er resultatet av grupperingen.
+
+    ![Parametere-hurtigfanen i dialogboksen Autorisasjon.](./media/manual-firming.png "Parametere-hurtigfanen i dialogboksen Autorisasjon")
 
 1. I hurtigfanen **Kjør i bakgrunnen** definerer du jobben slik at den kjøres i satsvis modus. Det er imidlertid ingen vits i å definere en gjentakende tidsplan når du gjør manuell autorising. Feltene fungerer på samme måte som de fungerer for andre typer [bakgrunnsjobber](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. For manuell autorisering vil imidlertid den satsvise jobben bare behandle de valgte planlagte ordrene. Den behandler ikke ordrer som passer til filtrene som for øyeblikket brukes på siden.
 1. Velg **OK** for å bruke innstillingene og generere de autoriserte ordrene.
@@ -102,7 +103,7 @@ Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som
 
 Både planleggingsoptimalisering og den innebygde planleggingsmotoren kan brukes til automatisk autorisering av planlagte bestillinger. Det er imidlertid noen viktige forskjeller. Mens planleggingsoptimalisering for eksempel bruker ordredatoen (det vil si startdatoen) for å bestemme hvilke planlagte bestillinger som skal autoriseres, bruker den innebygde planleggingsmotoren behovsdatoen (det vil si sluttdatoen). Følgende tabell viser en oversikt over forskjellene.
 
-| | Planleggingsoptimalisering | Innebygd planleggingsmotor |
+| Funksjon | Planleggingsoptimalisering | Innebygd planleggingsmotor |
 |---|---|---|
 | **Datogrunnlag** | Automatisk autorisasjon er basert på ordredatoen (Startdato). | Automatisk autorisasjon er basert på behovsdatoen (sluttdato). |
 | **Leveringstid** | Fordi ordredatoen (Startdato) utløser autorisering, trenger du ikke å ta hensyn til leveringstiden som en del av autorisasjonshorisonten. | Hvis du vil ha hjelp til å sikre at ordrer blir autorisert til rett tid, må autorisasjonshorisonten være lenger enn leveringstiden. |
@@ -124,8 +125,6 @@ Hvis du setter alle de tidligere nevnte tidshorisontene til *0* (null), blir aut
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>Autorisere planlagte ordrer ved hjelp av en spørring
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Spørringsbasert autorisering lar deg planlegge autorisering basert på kriterier som er definert på forhånd. I motsetning til automatisk autorisering tillater spørringsbasert autorisering automatisert autorisering av ulike delsett av ordrer på ulike tidspunkt. I tillegg kan du bruke enten manuelle eller automatiserte operasjoner til å autorisere ulike typer planlagte bestillinger. Du kan også forhåndsvise hvilke autoriserte ordrer som er valgt, basert på innstillingene. Derfor kan du bekrefte at valget passer til dine forventninger.
 
 Du kan kombinere automatisk autorisering med spørringsbasert autorising. En spørringsbasert autoriseringsjobb har for eksempel en fremoverhorisont som er lengre enn horisonten for en samsvarende automatisk autorisering av dekningskonfigurasjonen. Derfor vil den spørringsbaserte autoriseringsjobben behandle de planlagte bestillingene før automatisk autorisering utløses. Du kan dra nytte av denne virkemåten til å planlegge ordrer for bestemte leverandører på en annen måte enn ordrer for lignende produkter fra andre leverandører.
@@ -142,15 +141,15 @@ Følg denne fremgangsmåten for å autorisere en planlagt bestilling ved hjelp a
     - **Autorisasjonshorisont antall dager forover** – Velg hvor langt inn i fremtiden de ulike behovene og andre hensyn må beregnes ved hjelp av hovedplanlegging.
     - **Autorisasjonshorisont antall dager bakover** – Velg hvor langt tilbake i tid de ulike behovene og andre hensyn må beregnes ved hjelp av hovedplanlegging.
 
-    ![Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling](./media/planned-order-firming-main-1.png "Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling")
+    ![Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling.](./media/planned-order-firming-main-1.png "Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling")
 
 1. Hvis du vil angi hvilke poster som skal være med i ordren, velger du **Filter**-knappen i hurtigfanen **Poster som skal inkluderes**. Det vises en standard dialogboks for spørring der du kan definere utvalgskriterier, sorteringskriterier og koblinger. Feltene fungerer på samme måte som for andre typer spørringer i Supply Chain Management. Feltene her er skrivebeskyttet, og viser verdier som er knyttet til spørringen.
 
-    ![Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling](./media/planned-order-firming-main-2.png "Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling")
+    ![Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling.](./media/planned-order-firming-main-2.png "Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling")
 
 1. Velg **Forhåndsvis** for å forhåndsvise innholdet i den autoriserte ordren, basert på innstillingene dine så langt. Listen over planlagte bestillinger som skal autoriseres, vises som en melding. Du kan deretter justere innstillingene etter behov til forhåndsvisningen viser den autoriserte ordren slik du har til hensikt å gjøre.
 
-    ![Eksempel på forhåndsvisning av autorisert ordre](./media/planned-order-firming-preview.png "Eksempel på forhåndsvisning av autorisert ordre")
+    ![Eksempel på forhåndsvisning av autorisert ordre.](./media/planned-order-firming-preview.png "Eksempel på forhåndsvisning av autorisert ordre")
 
     > [!WARNING]
     > Denne funksjonen vil autorisere alle planlagte bestillinger som samsvarer med filterkriteriene. Ukritisk autorisering av planlagte bestillinger kan føre til at det opprettes mange uønskede innkjøps-, overførings- og produksjonsordrer. Før du fortsetter, må du alltid bruke **Forhånds**-knappen til å validere postene som skal tas med.

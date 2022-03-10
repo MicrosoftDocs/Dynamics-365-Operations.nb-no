@@ -7,27 +7,29 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea6fc745ffb5892a32196394cb28cb5e646b7639
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: edb8687b9dae0afc1bc15a3a5c197e14e7e8cf1e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795075"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069227"
 ---
 # <a name="example-query-for-candidate-to-hire"></a>Eksempelspørring for Kandidat for ansettelse
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet inneholder en eksempelspørring for Kandidat for ansettelse-enheten i Dynamics 365 Human Resources.
 
-Dette emnet gir et eksempel på hvordan du kan bruke *dybdeinnlegg* til å opprette alle detaljene til en ny kandidatpost i én enkelt API-operasjon. Hvis du vil ha mer informasjon om dybdeinnlegg, kan du se [Opprette relaterte enhetsposter i én operasjon](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
+Dette emnet gir et eksempel på hvordan du kan bruke *dybdeinnlegg* til å opprette alle detaljene til en ny kandidatpost i én enkelt API-operasjon. Hvis du vil ha mer informasjon om dybdeinnlegg, kan du se [Opprette relaterte enhetsposter i én operasjon](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).
 
 Enheten **mshr_hcmcandidatetohireentity** er unik på grunn av relasjonen til enheten **mshr_dirpersonentity**. Mange av egenskapene i **mshr_hcmcandidatetohireentity** (for eksempel **mshr_firstname**, **mshr_lastname** og **mshr_birthdate**) avledes fra posten **mshr_dirpersonentity**. Hvis du posterer en ny kandidatpost til **mshr_hcmcandidatetohireentity** uten å bruke dybdeinnlegg, kan du definere verdier for disse egenskapene direkte i posten **mshr_hcmcandidatetohireentity**. Den tilknyttede **mshr_dirpersonentity**-posten opprettes implisitt med de definerte verdiene for egenskapene. Du kan deretter opprette andre relaterte enhetsposter (for eksempel ferdigheter eller utdanning) som separate API-kall.
 

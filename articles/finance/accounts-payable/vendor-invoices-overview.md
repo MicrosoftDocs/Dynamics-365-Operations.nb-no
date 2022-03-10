@@ -3,7 +3,7 @@ title: Oversikt over leverandørfakturaer
 description: Dette emnet inneholder generell informasjon om leverandørfakturaer.
 author: abruer
 ms.date: 06/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 613760166769e9885b32317c3ef1cb02e88ff2f9
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337309"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985343"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
@@ -72,12 +72,9 @@ Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen f
 Nedenfor finner du flere måter du kan forhindre at en faktura sendes til en arbeidsflyt på.
 
 - **Fakturatotal og den registrerte totalen er ikke like.** Personen som sendte fakturaen, vil motta et varsel om at totalene ikke er like. Varselet gir en mulighet til å rette saldoene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturatotal og registrert fakturatotal ikke er like** på siden **Funksjonsbehandling** er slått på. 
-
 - **Fakturaen inneholder utildelte tillegg.** Personen som sendte fakturaen, mottar et varsel om at fakturaen har utildelte tillegg, slik at de kan rette opp fakturaen før den sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når det finnes utildelte tillegg på en leverandørfaktura** på siden **Funksjonsbehandling** er slått på.
-
 - **Fakturaen inneholder samme fakturanummer som en annen postert faktura.** Personen som sendte fakturaen, vil få en melding som indikerer at det ble funnet en faktura med et duplikatnummer. Duplikatnummeret kan korrigeres før du sender fakturaen til arbeidsflyten på nytt. Dette varselet vises når parameteren **Kontroller fakturanummeret som er brukt** i Leverandører er satt til **Avvis duplikat**. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturanummeret allerede finnes på en postert faktura, og systemet ikke er konfigurert til å godta dupliserte fakturanumre** på siden **Funksjonsbehandling** er slått på.
-
-- **Fakturaen inneholder en linje der fakturaantallet er mindre enn det samsvarte produktmottaksantallet.** Personen som sender fakturaen eller prøver å postere, vil få en melding om at antallene ikke er det samme. Denne meldingen gir en mulighet til å rette verdiene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis paramenteren **Blokker postering og innsending av leverandørfakturaer til arbeidsflyt** på siden **Funksjonsbehandling** aktiveres og parameteren **Blokker postering og innsending til arbeidsflyt** på siden **Leverandørparametere** er aktivert.  
+- **Fakturaen inneholder en linje der fakturaantallet er mindre enn det samsvarte produktmottaksantallet.** Personen som sender fakturaen eller prøver å postere, vil få en melding om at antallene ikke er det samme. Denne meldingen gir en mulighet til å rette verdiene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis paramenteren **Blokker postering og innsending av leverandørfakturaer til arbeidsflyt** på siden **Funksjonsbehandling** aktiveres og parameteren **Blokker postering og innsending til arbeidsflyt** på siden **Leverandørparametere** er aktivert.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Samsvare leverandørfakturaer med produktkvitteringer
 
@@ -122,9 +119,32 @@ En arbeidsflytforekomst som er stoppet på grunn av en uopprettelig feil, vil ha
 Du kan bruke siden **Arbeidsflytlogg** for å tilbakestille arbeidsflytstatusen til **Utkast**. Du kan åpne denne siden fra **Leverandørfaktura** eller fra **Felles > Forespørsler > Arbeidsflyt**. Hvis du vil tilbakestille arbeidsflytstatusen til **Utkast**, velger du **Tilbakekall**. Du kan også tilbakestille arbeidsflytstatusen til Utkast ved å velge handlingen **Tilbakekall** på siden **Leverandørfaktura** eller **Ventende leverandørfakturaer**. Når arbeidsflytstatusen er tilbakestilt til **Utkast**, blir den tilgjengelig for redigering på siden **Leverandørfaktura**.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Vise fakturatotalen på siden Ventende leverandørfakturaer
+
 Du kan vise fakturatotalen på siden **Ventende leverandørfakturaer** ved å aktivere parameteren **Vis fakturatotal på listen over leverandørfakturaer på vent** på siden **Leverandørparametere**. 
 
+## <a name="vendor-open-transactions-report"></a>Rapport om åpne transaksjoner for leverandør
 
+Rapporten **Åpne transaksjoner for leverandører** gir detaljert informasjon om de åpne transaksjonene for hver leverandør per datoen du angir. Denne rapporten brukes ofte i revisjonsprosedyren for kontroll av saldoer mellom leverandørboktransaksjoner og finanskontotransaksjoner.
+
+Rapporten inneholder følgende detaljer for hver transaksjon:
+
+- Fakturanummer
+- Transaksjonsdato
+- Bilagsnummer
+- Transaksjonsbeløp i transaksjonsvalutaen og regnskapsvalutaen
+- Kreditsaldoen i transaksjonsvalutaen og regnskapsvalutaen
+- Debetsaldoen i transaksjonsvalutaen og regnskapsvalutaen
+- Delsumbeløp i regnskapsvalutaen
+- Forfallsdato for betaling
+
+### <a name="filter-the-data-on-the-report"></a>Filtrere dataene i rapporten
+
+Når du genererer rapporten **Åpne transaksjoner for leverandører**, er følgende parametere tilgjengelige. Du kan bruke dem til å filtrere dataene som skal inkluderes i rapporten.
+
+- **Ekskluder fremtidig utligning** – Merk av i denne avmerkingsboksen for å ekskludere transaksjoner som utlignes etter datoen som er angitt i feltet **Åpne transaksjoner per**.
+- **Åpne transaksjoner per** – Angi en dato for å ta med transaksjoner som er åpne per denne datoen. Hvis du ikke angir en dato, blir dette feltet satt til maksimumsdatoen. (Maksimumsdatoen er den siste datoen systemet vil godta, 31. desember, 2154.) Neste gang rapporten kjøres, vil dette feltet bli satt til den siste datoen som ble angitt.
+
+Du kan bruke filtrene under feltet **Post som skal inkluderes** til ytterligere å begrense transaksjonsdataene som inkluderes i rapporten.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

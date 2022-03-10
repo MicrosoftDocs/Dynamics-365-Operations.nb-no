@@ -1,22 +1,22 @@
 ---
 title: Kategoriforespørsler fra leverandører
 description: Dette emnet beskriver hvordan leverandører kan be om innkjøpskategorier for kontoen. Det beskriver også godkjenningsprosessen som er fullført av innkjøpsagenter.
-author: kamaybac
+author: Henrikan
 ms.date: 04/19/2021
 ms.topic: article
 ms.search.form: VendRequestNewCategory
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb3555e6d923fe37479c3204f0b78f7cdf510118
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938522"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103118"
 ---
 # <a name="category-requests-from-vendors"></a>Kategoriforespørsler fra leverandører
 
@@ -26,20 +26,17 @@ Ved hjelp av kategoriforespørselsprosessen kan leverandører be om at nye innkj
 
 Kategoriforespørsler startes av leverandører i arbeidsområdet **Leverandøropplysninger**. De sendes deretter til byrået for gjennomgang og godkjenning. Godkjente kategorier legges til i listen over innkjøpskategorier for leverandørens konto.
 
-## <a name="turn-on-the-feature-in-your-system"></a>Aktivere funksjonen i systemet
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Kategoriforespørsler fra leverandører
 
-Hvis systemet ikke allerede inneholder funksjonen som er beskrevet i dette emnet, kan du gå til [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Tillat leverandører å søke etter innkjøpskategorier gjennom leverandørsamarbeidsfunksjonen*.
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter tillat leverandører å søke etter funksjonen *Tillat leverandører å søke om innkjøpskategorier gjennom leverandørsamarbeid* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Når funksjonen er aktivert, kan du fremdeles legge til innkjøpskategorier manuelt i leverandørkontoer. Hvis du vil ha mer informasjon, kan du se [Godkjenne leverandører for spesifikke innkjøpskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+Hvis denne funksjonen er aktivert, kan du fremdeles legge til innkjøpskategorier manuelt i leverandørkontoer. Hvis du vil ha mer informasjon, kan du se [Godkjenne leverandører for spesifikke innkjøpskategorier](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## <a name="vendor-collaboration-requirements"></a>Krav til leverandørsamarbeid
 
 Før en leverandør kan samhandle med kategoriforespørsler, må det konfigureres for leverandørsamarbeid.
 
-Leverandøren må ha minst én bruker for leverandørsamarbeid. Bare leverandørbrukere som har én eller begge av følgende sikkerhetsroller, kan opprette og sende kategoriforespørsler:
-
-- Leverandørkontakt (ekstern)
-- Leverandøradministrasjon (ekstern)
+Leverandøren må ha minst én bruker for leverandørsamarbeid. Bare leverandørbrukere med sikkerhetsrollen *Leverandøradministrasjon (ekstern)* kan opprette og sende kategoriforespørsler.
 
 Hvis du vil ha mer informasjon, se [Definere og vedlikeholde leverandørsamarbeid](set-up-maintain-vendor-collaboration.md).
 

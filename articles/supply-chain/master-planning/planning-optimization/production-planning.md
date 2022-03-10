@@ -2,30 +2,27 @@
 title: Produksjonsplanlegging
 description: Dette emnet beskriver planlegging for produksjon, og forklarer hvordan du endrer planlagte produksjonsordrer ved å bruke planleggingsoptimalisering.
 author: ChristianRytt
-ms.date: 12/15/2020
+ms.date: 06/01/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 22b78f44940f71097ca8b1cdb74edb06274bba75
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 85167e3de5f586c341143a43412501377a6c689e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839229"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570903"
 ---
 # <a name="production-planning"></a>Produksjonsplanlegging
 
-Planleggingsoptimalisering støtter flere produksjonsscenarioer. Hvis du går over fra den eksisterende, innebygde hovedplanleggingsmotoren, er det viktig at du er oppmerksom på noen endrede virkemåter.
+[!include [banner](../../includes/banner.md)]
+
+Planleggingsoptimalisering støtter flere produksjonsscenarioer. Hvis du går over fra den eksisterende, innebygde hovedplanleggingsmotoren, er det viktig å være oppmerksom på noen endrede virkemåter.
 
 Følgende video gir en kort innføring i noen av begrepene som omhandles i dette emnet: [Dynamics 365 Supply Chain Management: Planlegge optimaliseringsforbedringer](https://youtu.be/u1pcmZuZBTw).
 
@@ -79,11 +76,44 @@ Du kan bruke **Nedbryting**-siden til å analysere behovet som er nødvendig for
 
 ## <a name="filters"></a><a name="filters"></a>Filtre
 
-Når det gjelder planleggingsscenarioer som omfatter produksjon, anbefaler vi at du unngår filtrerte kjøringer av hovedplanlegging. For å sikre at planleggingsoptimalisering har informasjonen som trengs for å beregne riktig resultat, må du ta med alle produkter som har en hvilken som helst tilknytning til produkter i hele stykklistestrukturen for den planlagte bestillingen.
+For å sikre at planleggingsoptimalisering har informasjonen den trenger til å beregne riktig resultat, må du ta med alle produkter som har en hvilken som helst tilknytning til produkter i hele stykklistestrukturen for den planlagte bestillingen. Når det gjelder planleggingsscenarioer som omfatter produksjon, anbefaler vi derfor at du unngår filtrerte kjøringer av hovedplanlegging.
 
-Selv om avhengige underordnede varer automatisk blir oppdaget og tatt med i kjøringer av hovedplanlegging når den innebygde hovedplanleggingsmotoren brukes, utfører ikke planleggingsoptimalisering denne handlingen.
+Selv om avhengige underordnede varer automatisk blir oppdaget og tatt med i kjøringer av hovedplanlegging når den innebygde hovedplanleggingsmotoren brukes, utfører ikke planleggingsoptimalisering denne handlingen for øyeblikket.
 
-Hvis for eksempel én bolt fra stykklistestrukturen for produkt A også brukes til å produsere produkt B, må alle produkter i stykklistestrukturen for produktene A og B tas med i filteret. Siden det kan bli svært komplekst å sikre at alle produkter er en del av filteret, anbefaler vi at du unngår filtrerte kjøringer av hovedplanlegging når produksjonsordrer er involvert.
+Hvis for eksempel én bolt fra stykklistestrukturen for produkt A også brukes til å produsere produkt B, må alle produkter i stykklistestrukturen for produktene A og B tas med i filteret. Siden det kan bli komplekst å sikre at alle produkter er en del av filteret, anbefaler vi at du unngår filtrerte kjøringer av hovedplanlegging når produksjonsordrer er involvert. Ellers gir hovedplanlegging uønskede resultater.
 
+### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Grunner til å unngå filtrerte kjøringer av hovedplanlegging
+
+Når du kjører filtrert hovedplanlegging for et produkt, oppdager ikke planleggingsoptimalisering (i motsetning til den innebygde hovedplanleggingsmotoren) alle delproduktene og råvarene i stykklistestrukturen til dette produktet, og tar dem derfor ikke med i kjøringen av hovedplanleggingen. Selv om planleggingsoptimalisering finner det første nivået i stykklistestrukturen til produktet, laster den ikke inn noen produktinnstillinger (for eksempel standard ordretype eller varedekning) fra databasen.
+
+Data for kjøringen lastes inn på forhånd i planleggingsoptimalisering, og filtrene brukes. Dette betyr at hvis et delprodukt eller en råvare som er tatt med i et bestemt produkt, ikke er en del av filteret, registreres ikke informasjon om det/den for kjøringen. Hvis delproduktet eller råvaren også er inkludert i et annet produkt, fjerner en filtrert kjøring som bare omfatter det opprinnelige produktet og komponentene, eksisterende planlagt behov som er opprettet for dette andre produktet.
+
+Denne logikken kan føre til at filtrerte kjøringer av hovedplanlegging kan gi uventede resultater. De følgende delene gir eksempler som illustrerer de uventede resultatene som kan forekomme.
+
+### <a name="example-1"></a>Eksempel 1
+
+Ferdigvaren *FG* består av følgende komponenter:
+
+- råvaren *R*
+- delproduktet *S1*, som består av delproduktet *S2*
+
+Det finnes lagerbeholdning for råvaren *R*, mens delprodukt *S1* ikke finnes på lageret.
+
+Når du foretar en filtrert kjøring av hovedplanlegging for ferdigvaren *FG*, får du en planlagt produksjonsordre for ferdigvaren *FG*, et bestillingsforslag for råvaren *R* og et bestillingsforslag for delproduktet *S1*. Dette er et uønsket resultat, fordi planleggingsoptimalisering har ignorert eksisterende forsyning for råvare *R*, og delproduktet *S1* må produseres ved hjelp av *S2* i stedet for å bestilles direkte. Dette skjedde fordi planleggingsoptimalisering bare har listen over komponenter for ferdigvaren *FG* uten relatert informasjon, for eksempel eksisterende forsyning av komponentene eller standard ordreinnstillinger.
+
+### <a name="example-2"></a>Eksempel 2
+
+Basert på forrige eksempel ser vi at en ytterligere ferdigvare, *FG2*, også bruker også delproduktet *S1*. Det finnes en planlagt bestilling for ferdigvaren *FG2*, og det finnes planlagt behov for alle komponentene, inkludert *S1*.
+
+Du beslutter å rette de uønskede resultatene av den filtrerte kjøringen av hovedplanlegging i forrige eksempel, ved å legge til alle delproduktene og råvarene fra stykklistestrukturen til ferdigvaren *FG* i filteret og deretter kjøre en full, ny generering.
+
+Når du kjører den fulle, nye genereringen, sletter systemet alle eksisterende resultater for alle de inkluderte produktene, og genererer resultatene på nytt basert på de nye beregningene. Dette betyr at eksisterende planlagt behov for produktet *S1* slettes og deretter opprettes på nytt, der det bare tas hensyn til krav til ferdigvaren *FG*, mens kravene til ferdigvaren *FG2* ignoreres. Dette skjer fordi at når du kjører planleggingsoptimalisering, blir ikke det planlagte behovet for andre planlagte produksjonsordrer tatt med, bare det planlagte behovet som genereres under kjøringen, brukes.
+
+> [!NOTE]
+> Hvis den eksisterende planlagte ordren for ferdigvare *FG2* har statusen *Godkjent*, blir det godkjente planlagte behovet tatt med, selv når det overordnede produktet ikke blir lagt til i filteret.
+
+Med mindre du legger til alle komponentene i ferdigvaren *FG*, ferdigvaren *FG2* og alle andre produkter som disse komponentene er en del av (sammen med komponentene deres), gir derfor den filtrerte kjøringen av hovedplanleggingen uønskede resultater.
+
+Siden det kan bli komplekst å sikre at alle produkter er en del av filteret, anbefaler vi at du unngår filtrerte kjøringer av hovedplanlegging når produksjonsordrer er involvert.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

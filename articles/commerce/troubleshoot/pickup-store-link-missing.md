@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 46eeed18bb547035603d7e9a01e8f131a2393f01
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 836f767caae8e32c156a1c13d1e2864a4d3cdd92e7a11814a2585c9e907575dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733827"
 ---
 # <a name="pick-this-up-option-doesnt-appear-on-cart-or-product-details-pages"></a>Alternativet Hent vises ikke på handlekurv- eller produktdetaljsidene
 
@@ -35,9 +34,9 @@ Knappen **Hent** vises ikke på handlekurv- eller produktdetaljsidene.
 
 Illustrasjonen nedenfor viser et eksempel på en side som inneholder knappen **Hent**.
 
-![Knappen Hent](media/pickup-button-missing.jpg)
+![Knappen Hent.](media/pickup-button-missing.jpg)
 
-## <a name="resolution"></a>Oppløsning
+## <a name="resolution"></a>Løsning
 
 ### <a name="enable-the-bopis-extension-in-commerce-site-builder"></a>Aktivere BOPIS-tillegget i Commerce-områdebyggeren
 

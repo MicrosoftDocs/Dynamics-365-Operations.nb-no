@@ -2,11 +2,9 @@
 title: Lagermerking med planleggingsoptimalisering
 description: Dette emnet inneholder informasjon om alternativene som er tilgjengelige for merking av lager i autoriserte ordrer når du bruker planleggingsoptimalisering.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 236e1955dd80564e748aab1c595b017cb78e9418
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dc94ca8b15d626d8ff64f50718d7d2e3e0326144465f3d27787805220842849f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711911"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Lagermerking med planleggingsoptimalisering
 
@@ -48,3 +46,6 @@ Når du autoriserer en planlagt bestilling, inneholder dialogboksen **Autoriseri
 - **Nei** – Det brukes ingen lagermerking.
 - **Standard** – Lagermerking oppdateres i forhold til utligningen. En kravordre (behov) merkes mot en innfrielsesordre (forsyning). Hvis det gjenstår varer på innfrielsesordren, blir den ikke merket, og referanseinformasjonen er tom. Hvis for eksempel en salgsordre for 100 ea utlignes mot en bestilling for 150 ea, vil referanseinformasjon bare bli tilordnet salgsordren.
 - **Utvidet** – Både kravordren (behov) og innfrielsesordren (forsyning) merkes, uansett om det gjenstår kvanta på innfrielsesordren. Hvis for eksempel en salgsordre for 100 ea utlignes mot en bestilling for 150 ea, vil referanseinformasjon bli tilordnet både salgsordren og bestillingen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.22 (november 2021)
+title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.22. (november 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.22.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3f5166338aebe784fe7f95372a437d4ed660de77
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579718"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778163"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.22 (november 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.22. (november 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.22. Denne versjonen har et build-nummer 10.0.995, og er tilgjengelig som følger:
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.22. Denne versjonen har et build-nummer 10.0.995, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** september 2021
 - **Allmenn tilgjengelighet for versjon (selvoppdatering):** oktober 2021
@@ -40,13 +39,11 @@ Denne tabellen viser funksjonene i denne versjonen. *Funksjon*-kolonnen gir kobl
 
 Denne tabellen viser funksjonsforbedringer i denne versjonen. Hvert av disse forbedringene gir en trinnvis forbedring av en eksisterende funksjon. Siden de bare er forbedringer vises de ikke i [frigivelsesplanen](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). For å sikre at disse forbedringene ikke kommer i konflikt med eksisterende tilpasninger eller innstillinger, er imidlertid hver av dem slått av som standard (med mindre annet er angitt). Hvis du vil bruke noen av disse funksjonene, må du uttrykkelig aktivere dem i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funksjonsområde | Funksjonsnavn i funksjonsbehandling | Mer informasjon |
+| Modul | Funksjonsnavn i funksjonsbehandling | Mer informasjon |
 |---|---|---|
-| Kostnadsstyring | Opprette tilknyttede bilag for standard kostnadsavrundingsrevalueringer | <p>Når det utføres en økonomisk lagerpostering (for eksempel en salgsordrefaktura eller lagertransaksjon), fører denne funksjonen til at systemet oppretter et separat bilag for eventuelle relaterte standard kostnadsavrundingsrevalueringer og knytter det til det økonomiske posteringsbilaget som et tilknyttet bilag.</p><p>Uten denne funksjonen registrerer systemet standard kostnadsavrundingsrevalueringer på samme bilagspostering. Denne virkemåten kan noen ganger forårsake motstridende datoinformasjon, fordi revalueringene bruker økt- eller systemdatoen, mens økonomiske posteringer bruker posteringsdatoen.</p> |
 | Distribuert hybridtopologi | *(Ingen funksjonsbehandling er nødvendig.)* | <p>Denne versjonen utvider funksjonene for utgående belastningsplanlegging for lagerstyringens arbeidsmengde for sky- og kantskaleringsenheter.</p><p>Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Styring av teknisk endring | Variantgenerering for tekniske produkter | <p>Ved hjelp av denne funksjonen kan du generere flere varianter for et teknisk produkt, basert på farge-, størrelses-, stil- eller konfigurasjonsdimensjoner.</p><p>Hvis du vil ha mer informasjon, kan du se [Generere varianter for tekniske produkter](../engineering-change-management/engineering-variants.md).</p> |
 | Lagerstyring | Integrering av lagersynlighet med reservasjonsmotkonto | <p>Denne funksjonen kan bare aktiveres etter at funksjonen *Integrering av lagersynlighet* er aktivert. Den gir funksjonalitet for å motpostere reserveringer som gjøres på lagersynlighet.</p><p>Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](../inventory/inventory-visibility-reservations.md).</p> |
-| Salg og markedsføring | Begrens antall salgsordrer som kan velges for postering | <p>Denne funksjonen er automatisk aktivert. Den legger til feltet **Maks. antall salgsordrer for postering** på siden **Kundeparametere**. Ved hjelp av dette feltet kan du definere maksimalt antall salgsordrer som kan velges ved postering av bekreftelser, plukklister, følgesedler og fakturaer fra listesiden for salgsordrer. Standardverdien er *100*.</p><p>Funksjonen bidrar til å forbedre ytelsen på listesiden for salgsordrer når et betydelig antall salgsordrer velges. Den har ingen innvirkning på antall salgsordrer som kan behandles av en periodisk oppgave.</p> |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og oppdaterte dokumentasjonsressurser
 
@@ -63,7 +60,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. Disse emn
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformoppdateringer for Finance and Operations-apper
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.22 av Finance and Operations-apper (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.22 av Finance and Operations-apper (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 

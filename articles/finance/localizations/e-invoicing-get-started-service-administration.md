@@ -1,123 +1,118 @@
 ---
-title: Komme i gang med tjenesteadministrasjon for tillegget for Elektronisk fakturering
-description: Dette emnet beskriver hvordan du kommer i gang med tillegget Elektronisk fakturering.
+title: Komme i gang med tjenesteadministrasjon for elektronisk fakturering
+description: Dette emnet beskriver hvordan du kommer i gang med elektronisk fakturering.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: f77c8fd1696b74f852d04cc0a696d4816ef9af1f
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592532"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463815"
 ---
-# <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Komme i gang med tjenesteadministrasjon for tillegget for Elektronisk fakturering
+# <a name="get-started-with-electronic-invoicing-service-administration"></a>Komme i gang med tjenesteadministrasjon for elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="prerequisites"></a>Forutsetninger
 
 Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være på plass:
 
 - Du må ha tilgang til kontoen for Microsoft Dynamics Lifecycle Services (LCS).
-- Du må ha et LCS-prosjekt som inkluderer versjon 10.0.17 eller senere av Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. I tillegg må disse appene distribueres i én av følgende Azure-geografier:
+- Du må ha et LCS-prosjekt som inkluderer versjon 10.0.17 eller senere av Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management. I tillegg må disse appene distribueres i én av følgende Azure-geografier:
 
-    - USA øst
-    - USA vest
-    - EU nord
-    - EU vest
+    - USA
+    - Europa
+    - Storbritannia
+    - Asia
 
 - Du må ha tilgang til RCS-kontoen (Regulatory Configuration Services) for Dynamics 365.
 - Du må aktivere globaliseringsfunksjonen for kontoen for RCS i Funksjonsbehandling. Hvis du vil ha mer informasjon, kan du se [Regulatory Configuration Services (RCS) – globaliseringsfunksjoner](rcs-globalization-feature.md).
 - Du må opprette en Key Vault og en lagringskonto i Azure. Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
-## <a name="install-the-add-on-for-microservices-in-lifecycle-services"></a>Installere tillegget for mikrotjenester i Lifecycle Services
+## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Installere tilleggsprogrammet for mikrotjenester i Lifecycle Services
 
-1. Logg på LCS-kontoen.
-2. Velg flisen **Administrasjon av forhåndsvisningsfunksjoner**.
-3. Velg delen **Funksjoner i offenlig forhåndsversjon** velger du **E-faktureringstjeneste**.
-4. Kontroller at alternativet **Forhåndsversjon aktivert** er satt til **Ja**.
-5. Velg LCS-distribusjonsprosjektet på LCS-instrumentbordet. LCS-prosjektet må kjøre.
-7. I fanen **Miljøtillegg** velger du **Installer et nytt tillegg**.
-8. Velg **e-faktureringstjenester**, og i feltet **ID for AAD-program** angir du **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Dettee er en fast verdi.
-10. I feltet **AAD-leier-ID** angir du leier-IDen for kontoen for Azure-abonnementet.
-11. Gå gjennom vilkårene og betingelsene og merk deretter av i avmeringsboksen.
-12. Velg **Installer**.
+1. Logg på LCS-kontoen, og velg LCS-prosjektet på LCS-prosjektbordet.
+2. Velg distribusjonsprosjektet på **Miljøer**-instrumentbordet i prosjektet. Miljøet du velger, må kjøre.
+3. I fanen **Power Platform-integrasjon** i feltgruppen **Miljøtillegg** velger du **Installer et nytt tillegg**.
+4. Velg **Elektronisk fakturering**.
+5. I feltet **App-ID for AAD** angir du **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Dettee er en fast verdi.
+6. I feltet **AAD-leier-ID** angir du leier-IDen for kontoen for Azure-abonnementet. Leietakeren Azure Active Directory (Azure AD) du angir, skal være den samme leietakeren som brukes for RCS.
+7. Gå gjennom vilkårene og betingelsene og merk deretter av i avmeringsboksen.
+8. Velg **Installer**. Installasjonen kan ta opptil flere minutter.
 
 
-## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Konfigurere parametere for RCS-integrasjon med Elektronisk fakturering-tillegget
+## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Konfigurere parametere for RCS-integrasjon med elektronisk fakturering
 
 1. Logg på RCS-kontoen.
-2. I delen **Relaterte koblinger** i arbeidsområdet **Elektronisk rapportering** velger du **Parametere for elektronisk rapportering**.
-3. I kategorien **E-faktureringstjeneste**, i feltet **URI for endepunkt for tjeneste**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
+2. I arbeidsområdet **Globaliseringsfunksjoner** i delen **Relaterte innstillinger** velger du koblingen **Parametere for elektronisk rapportering**.
+3. I kategorien **Elektronisk fakturering**, i feltet **URI for endepunkt for tjeneste**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
 
     | Datasenter Azure-geografi | URI for tjenestesluttpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | USA øst                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | USA vest                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | EU nord                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | EU vest                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | USA              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Storbritannia             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. Kontroller at feltet **Program-ID** er satt til **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Denne verdien er en fast verdi.
-5. I feltet **ID for LCS-miljø** angir du IDen for LCS-abonnementskontoen.
+5. I feltet **ID for LCS-miljø** angir du ID-en for LCS-miljøet.
 6. Velg **Lagre**, og lukk deretter siden.
 
-## <a name="create-key-vault-secret"></a>Opprette Key Vault-hemmelighet
+## <a name="create-key-vault-references"></a>Opprette Key Vault-referanser
 
 1. Logg på RCS-kontoen.
-2. I arbeidsområdet **Globaliseringsfunksjon** velger du tittelen **Tillegg for elektronisk fakturering** i delen **Miljø**.
+2. I arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering** i delen **Miljø**.
 3. På siden for **Miljøkonfigurasjon**, i handlingsruten, velger du **Tjenestemiljø**, og deretter velger du **Key Vault-parametere**.
-4. Velg **Ny** for å opprette en Key Vault-nøkkel.
-5. I **Navn**-feltet angir du navnet på Key Vault-hemmeligheten. Angi en beskrivelse i **Beskrivelse**-feltet.
-6. Lim inn hemmeligheten fra Azure Key Vault i feltet **URI for Key Vault**.
+4. Velg **Ny** for å opprette en Key Vault-referanse.
+5. I **Navn**-feltet angir du navnet på Key Vault-referansen. Angi en beskrivelse i **Beskrivelse**-feltet.
+6. Lim inn hemmeligheten fra Azure Key Vault i feltet **URI for Key Vault**. Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 7. Velg **Lagre**.
 
 ## <a name="create-storage-account-secret"></a>Opprette hemmelighet for lagringskonto
 
-1. Gå til **Systemadministrasjon** > **Oppsett** > **Key Vault-parametere**, og velg en Key Vault-hemmelighet.
-2. Velg **Legg til** i delen **Sertifikater**.
-3. I feltet **Navn** angir du navnet på lagringskontonavnet og en beskrivelse i feltet **Beskrivelse**.
-4. I feltet **Type** velger du **Sertifikat**.
-5. Velg **Lagre**, og lukk deretter siden.
+1. På siden **Miljøkonfigurasjon**, i handlingsruten, velger du **Tjenestemiljø** > **Key Vault-parametere**.
+2. Velg en **Key Vault-referanse**, gå til **Sertifikater**-delen, og velg **Legg til**.
+3. I **Navn**-feltet angir du navnet på lagringskontohemmeligheten. Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+4. Angi en beskrivelse i **Beskrivelse**-feltet.
+5. Velg **Hemmelighet** i **Type**-feltet.
+6. Velg **Lagre**, og lukk deretter siden.
 
 ## <a name="create-a-digital-certificate-secret"></a>Opprette et digitalt sertifikat og opprette et digitalt sertifikat
 
-1. Gå til **Systemadministrasjon** > **Oppsett** > **Key Vault-parametere**, og velg en Key Vault-hemmelighet.
-2. Velg **Legg til** i delen **Sertifikater**.
-3. I feltet **Navn** angir du navnet på den digitale sertifikathemmeligheten, og i feltet **Beskrivelse** angir du en beskrivelse.
-4. I feltet **Type** velger du **Sertifikat**.
-5. Velg **Lagre**, og lukk deretter siden.
-
-## <a name="create-an-electronic-invoicing-add-on-environment"></a>Opprette et miljø for tillegget Elektronisk fakturering
-
-1. Logg på RCS-kontoen.
-2. I arbeidsområdet **Globaliseringsfunksjon** velger du tittelen **Tillegg for elektronisk fakturering** i delen **Miljø**.
+1. På siden **Miljøkonfigurasjon**, i handlingsruten, velger du **Tjenestemiljø**, og deretter velger du **Key Vault-parametere**.
+2. Velg en **Key Vault-referanse**, gå til **Sertifikater**-delen, og velg **Legg til**.
+3. I **Navn**-feltet angir du navnet på hemmeligheten for det digitale sertifikatet. Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+4. Angi en beskrivelse i **Beskrivelse**-feltet.
+5. I feltet **Type** velger du **Sertifikat**.
+6. Velg **Lagre**, og lukk deretter siden.
 
 ## <a name="create-a-service-environment"></a>Opprette et tjenestemiljø
 
-1. Velg **Tjenestemiljø** på siden **Miljøoppsett** i handlingsruten.
-2. Velg **Ny** for å opprette et nytt tjenestemiljø.
-3. I **Navn**-feltet angir du navnet på e-fakturamiljøet. Angi en beskrivelse i **Beskrivelse**-feltet.
-4. I feltet **Lagring av for SAS-tokenhemmelighet** velger du navnet på lagringskontohemmeligheten som må brukes til å godkjenne tilgang til lagringskontoen.
-5. I **Brukere**-delen velger du **Legg til** for å legge til en bruker som har tillatelse til å sende elektroniske fakturaer gjennom miljøet og også koble seg til lagringskontoen.
-6. I **Bruker-ID**-feltet angir du aliaset til brukeren. Angi brukerens e-postadresse i feltet **E-post**.
-7. Velg **Lagre**.
-8. Hvis den land/område-spesifikke fakturaen krever en sertifikatkjede for å bruke digitale signaturer, velger du **Kjede av sertifikater** og deretter, i handlingsruten, velger du **Key Vault-hemmeligheter**, og følg deretter denne fremgangsmåten:
+1. Logg på RCS-kontoen.
+2. I arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering** i delen **Miljø**.
+3. Velg **Tjenestemiljø** på siden **Miljøoppsett** i handlingsruten.
+4. Velg **Ny** for å opprette et nytt tjenestemiljø.
+5. I **Navn**-feltet angir du navnet på e-fakturamiljøet. Angi en beskrivelse i **Beskrivelse**-feltet.
+6. I feltet **Lagring av for SAS-tokenhemmelighet** velger du navnet på lagringskontohemmeligheten som må brukes til å godkjenne tilgang til lagringskontoen.
+7. I **Brukere**-delen velger du **Legg til** for å legge til en bruker som har tillatelse til å sende elektroniske fakturaer gjennom miljøet og også koble seg til lagringskontoen.
+8. I **Bruker-ID**-feltet angir du aliaset til brukeren. Angi brukerens e-postadresse i feltet **E-post**.
+9. Velg **Lagre**.
+10. Hvis den land/område-spesifikke fakturaen krever en sertifikatkjede for å bruke digitale signaturer, velger du **Kjede av sertifikater** og deretter, i handlingsruten, velger du **Key Vault-hemmeligheter**, og følg deretter denne fremgangsmåten:
 
     1. Velg **Ny** for å opprette en kjede av sertifikater.
     2. I **Navn**-feltet angir du navnet på kjeden av sertifikater. Angi en beskrivelse i **Beskrivelse**-feltet.
@@ -125,7 +120,8 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
     4. Bruk knappene **Opp** eller **Ned** for å endre posisjonen til sertifikatene i kjeden.
     5. Velg **Lagre**, og lukk deretter siden.
     6. Lukk siden.
-9. På siden **Tjenestemiljø**, i handlingsruten, velger du **Publiser** for å publisere miljøet til skyen. Verdien i feltet **Status** endres til **Publisert**.
+
+11. På siden **Tjenestemiljø**, i handlingsruten, velger du **Publiser** for å publisere miljøet til skyen. Verdien i feltet **Status** endres til **Publisert**.
 
 ## <a name="create-a-connected-application"></a>Opprette et tilkoblet program
 
@@ -144,28 +140,37 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 3. Velg et tjenestemiljø i feltet **Servicemiljø**.
 4. Velg **Lagre**, og lukk deretter siden.
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance-and-supply-chain-management"></a>Konfigurere integrasjonen av tillegget Elektronisk fakturering i Finance og Supply Chain Management
+## <a name="set-up-electronic-invoicing-integration-in-finance-and-supply-chain-management"></a>Konfigurere integrasjon av elektronisk fakturering i Finance og Supply Chain Management
 
-### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Aktivere funksjonen for integrering av tillegget Elektronisk fakturering
+### <a name="turn-on-the-electronic-invoicing-integration-feature"></a>Aktivere funksjonen for integrering av Elektronisk fakturering
 
 1. Logg på Finance- eller Supply Chain Management-forekomsten din.
-2. I arbeidsområdet **Funksjonsbehandling** søker du etter funksjonen **Integrasjon av tillegget Elektronisk fakturering**. Hvis denne funksjonen ikke vises på siden, velger du **Se etter oppdateringer**.
+2. I arbeidsområdet **Funksjonsbehandling** søker du etter funksjonen **Integrasjon av Elektronisk fakturering**. Hvis denne funksjonen ikke vises på siden, velger du **Se etter oppdateringer**.
 3. Velg funksjonen, og velg deretter **Aktiver nå**.
 
 ### <a name="set-up-the-service-endpoint-url"></a>Konfigurer URL-adressen for endepunkt for tjeneste
 
 1. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument**.
-2. I kategorien **Innsendingstjeneste**, i feltet **URL for endepunkt for tjeneste**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
+2. I kategorien **Elektronisk fakturering**, i feltet **URL for endepunkt**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
 
-    | Datasenter Azure-geografi | URL for tjenestesluttpunkt                                                       |
+    | Datasenter Azure-geografi | URI for tjenestesluttpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | USA øst                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | USA vest                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | EU nord                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | EU vest                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | USA              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Storbritannia             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Asia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. I **Miljø**-feltet angir du navnet på miljøet for tillegget Elektronisk fakturering.
+3. I **Miljø**-feltet angir du navnet på tjenestemiljøet som er publisert i Elektronisk fakturering.
 4. Velg **Lagre**, og lukk deretter siden.
 
+### <a name="enable-flighting-keys-for-finance-or-supply-chain-management-version-10017"></a>Aktivere testversjoneringsnøkler for Finance eller Supply Chain Management versjon 10.0.17
+
+1. Utfør følgende SQL-kommando:
+
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
+    
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
+
+2. Utfør en IISreset-kommando for alle AOS-er.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

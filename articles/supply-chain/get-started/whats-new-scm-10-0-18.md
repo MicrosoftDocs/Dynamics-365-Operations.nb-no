@@ -1,12 +1,10 @@
 ---
-title: Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.18 (mai 2021)
+title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.18 (mai 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
-manager: annbe
 ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,19 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0a75cd0b02c48421edebac0b83576095bea65bb6
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 8c68b8ed1703f2cd49d47fad73485e9e4093aa82b902a484fb79bad4dd2dcbfb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773567"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.18 (mai 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.18 (mai 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.18. Denne versjonen har et build-nummer 10.0.793, og er tilgjengelig som følger:
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.18. Denne versjonen har et build-nummer 10.0.793, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** Mars 2021
 - **Allmenn tilgjengelighet av versjon (selvoppdatering):** April 2021
@@ -36,15 +33,25 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
+Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
-- Automatisk frigivelse av bestillinger (utvidelse for [Lagerkjøring med skalaenheter i skyen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatisk frigivelse av bestillinger (utvidelse for [Lagerkjøring med skalaenheter i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Ytelsesforbedringer og arkivering av bedriftsskala](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Hvis du vil ha mer informasjon, kan du se [Arkivere lagertransaksjoner](../inventory/archive-inventory-transactions.md)
+- [Opprett og vis sertifiseringer i grensesnittet for leverandørsamarbeid](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - Hvis du vil ha mer informasjon, kan du se [Vedlikehold leverandørsertifisering](../../finance/public-sector/manage-vendor-certification.md).
 
-- [Rabattbehandling](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)
+- [Ytelsesforbedringer og arkivering av bedriftsskala](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Hvis du vil ha mer informasjon, kan du se [Arkiver lagertransaksjoner](../inventory/archive-inventory-transactions.md).
 
-- Forenklet grensesnitt for bare inn- og utstempling (utvidelse for [Forbedret grensesnitt for produksjonsgulvutførelse for produksjon](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Hvis du vil ha mer informasjon, kan du se [Konfigurere grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md).
+- [Rabattbehandling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over rabattbehandlingsmodul](../rebate-management/rebate-management-overview.md).
+
+- [Policy for eksport av salgsdataenhet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Registrering av ordrereturlinje med desimalpresisjon med og uten faktisk vekt](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Salgsordrebekreftelse med ett klikk](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Policy for sletting av salgsordre til bestillingslinje](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
+- Forenklet grensesnitt for bare inn- og utstempling (utvidelse for [Forbedret grensesnitt for produksjonsgulvutførelse for produksjon](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Hvis du vil ha mer informasjon, kan du se [Konfigurere grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md).
 
 De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
@@ -71,7 +78,7 @@ Hvis du vil ha informasjon om feilrettinger som er inkludert i hver av oppdateri
 
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2021-frigivelsesbølge 1-planen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2021-frigivelsesbølge 1-planen](/dynamics365-release-plan/2021wave1/). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

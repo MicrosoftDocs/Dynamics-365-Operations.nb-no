@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647566"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075506"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste over ER-funksjoner for tekstkategorien
 
@@ -35,6 +35,7 @@ Tekstfunksjoner for elektronisk rapportering (ER) kan brukes til å utføre oper
 | [Sammenslåing](er-functions-text-concatenate.md) | Denne funksjonen returnerer alle de angitte tekststrengene som en *streng*-verdi etter at de er føyd sammen til én streng. |
 | [Format](er-functions-text-format.md) | Denne funksjonen returnerer den angitte strengen som en *streng*-verdi etter at den er formatert ved å erstatte forekomster av **%N** med *N*-te argumentet. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Denne funksjonen søker etter en bestemt *opplistings*-verdi i den angitte opplistingsdatakilden ved hjelp av opplistingsnavnet som er angitt som en *streng*-verdi. Hvis *opplistings*-verdien blir funnet, returnerer funksjonen den. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Denne funksjonen søker etter en bestemt etikett for å returnere en *[Streng](er-formula-supported-data-types-primitive.md#string)*-verdi som representerer oversettelsen av den spesifiserte etiketten på det spesifiserte språket. |
 | [GuidValue](er-functions-text-guidvalue.md) | Denne funksjonen konverterer de angitte inndataene for *Streng*-datatypen til et dataelement av *GUID*-typen. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Denne funksjonen analyserer data i JavaScript Object Notation (JSON)-format som brukes av den angitte banen, og henter en skalarverdi som er basert på den angitte IDen. Den returnerer deretter den utpakkede skalerbare verdien som en *streng*-verdi. |
 | [Venstre](er-functions-text-left.md) | Denne funksjonen returnerer en *streng*-verdi som viser det angitte antallet tegn fra starten av den angitte strengen. |

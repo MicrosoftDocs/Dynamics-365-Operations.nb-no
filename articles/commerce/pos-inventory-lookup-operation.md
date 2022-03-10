@@ -2,7 +2,7 @@
 title: Lageroppslag på salgsstedet
 description: Dette emnet beskriver hvordan du bruker lageroppslagsoperasjonen på Dynamics 365 Commerce-salgsstedet til å vise tilgjengelighet av lagerbeholdning av produkter på tvers av butikker og lagre.
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343842"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lageroppslag på salgsstedet
 
@@ -38,9 +38,9 @@ Når lageroppslagsoperasjonen startes fra POS-programmet, bruker POS-kassereren 
 
 For et enkeltprodukt gir lageroppslagsoperasjonen en lageroppslagsliste som viser følgende produktinformasjon for en liste over lokasjoner:
 
-- **Lager** - Refererer til det "fysisk tilgjengelige" antallet for et produkt.
-- **Reservert** - Refererer til det "fysisk reserverte" antallet som hentes fra hovedkontoret.
-- **Bestilt** - Refererer til det "bestilt i alt"-antallet som hentes fra hovedkontoret.
+- **Lager** – Refererer til det "fysisk tilgjengelige" antallet for et produkt.
+- **Reservert** – Refererer til det "fysisk reserverte" antallet som hentes fra hovedkontoret.
+- **Bestilt** – Refererer til det "bestilt i alt"-antallet som hentes fra hovedkontoret.
 - **Enhet** – Refererer til lagermåleenheten som er konfigurert i hovedkontoret.
 
 Listevisningen over lokasjoner omfatter alle butikker og lagre som er konfigurert i innfrielsesgruppene som den gjeldende butikken er koblet til, som vist i eksempelet nedenfor.
@@ -52,25 +52,26 @@ Listevisningen over lokasjoner omfatter alle butikker og lagre som er konfigurer
 
 Følgende handlinger er tilgjengelige på applinjen for salgsstedet:
 
-- **Sortering** – Denne handlingen gjørdet mulib for salgsstedsbrukeren å sortere dataene i listevisningen basert på ulike kriterier. Lokasjonsbasert sortering er standard sorteringsalternativ. 
-  - **Geolokasjon** (fra lokasjonen som ligger nærmest, til lokasjonen som ligger lengst borte, sammenlignet med den gjeldende butikken)
-  - **Navn** (i stigende eller synkende rekkefølge)
-  - **Butikknummer** (i stigende eller synkende rekkefølge)
-  - **Lager** (i synkende rekkefølge)
-  - **Reservert** (i synkende rekkefølge)
-  - **Bestilt** (i synkende rekkefølge)
+- **Sortering** – Denne handlingen gjør det mulig for salgsstedsbrukeren å sortere dataene i listevisningen basert på ulike kriterier. Lokasjonsbasert sortering er standard sorteringsalternativ.
+
+    - **Geolokasjon** (fra lokasjonen som ligger nærmest, til lokasjonen som ligger lengst borte, basert på avstanden til den gjeldende butikken)
+    - **Navn** (i stigende eller synkende rekkefølge)
+    - **Butikknummer** (i stigende eller synkende rekkefølge)
+    - **Lager** (i synkende rekkefølge)
+    - **Reservert** (i synkende rekkefølge)
+    - **Bestilt** (i synkende rekkefølge)
+
 - **Filter** – Ved hjelp av denne handlingen kan POS-brukeren vise filtrerte data for en bestemt plassering.
 - **Vis butikktilgjengelighet** – Denne handlingen gjør det mulig for POS-brukeren å vise ATP-antallene (available-to-promise) for et produkt i den valgte butikken.
 - **Vis butikklokasjon** – Denne handlingen åpner en egen side for å vise kartvisning, adresse og åpningstider for den valgte butikken.
-- **Hent i butikk** - Denne handlingen oppertter en kundeordre for produktvarianten som plukkes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
-- **Send produkt** - Denne handlingen oppretter en kundeordre for produktet som skal sendes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
+- **Hent i butikk** – Denne handlingen oppertter en kundeordre for produktvarianten som plukkes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
+- **Send produkt** – Denne handlingen oppretter en kundeordre for produktet som skal sendes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
 - **Vis alle varianter** – For et produkt med varianter bytter denne handlingen fra en listevisning til en matrisevisning som viser lagerinformasjon for alle varianter av produktet.
 - **Legg til transaksjon** – Denne handlingen legger til produktet i handlekurven og sender brukeren videre til transaksjonsskjermbildet.
 
 > [!NOTE]
-> Når det gjelder en lokasjonsbasert sortering, bestemmes avstanden mellom en lokasjon og den gjeldende butikken av koordinatene (bredde og lengde) som er definert i Commerce Headquarters. For en butikk er lokasjonsinformasjonen definert i primæradressen til driftsenheten som er tilknyttet butikken. For et lager som ikke er butikk, defineres lokasjonsinformasjonen i lageradressen. Hvis den gjeldende butikken ikke har definerte koordinater, vil det lokasjonsbaserte sorteringsalternativet vise den gjeldende butikken øverst i listen, og deretter sortere andre lokasjoner etter navn.
-
-> [!NOTE]
+> Den lokasjonsbaserte sorteringen som ble innført i Commerce versjon 10.0.17, viser den gjeldende butikken øverst. For andre lokasjoner bestemmes avstanden mellom lokasjonen og den gjeldende butikken av koordinatene (bredde og lengde) som er definert i Commerce Headquarters. For en butikk er lokasjonsinformasjonen definert i primæradressen til driftsenheten som er tilknyttet butikken. For et lager som ikke er butikk, defineres lokasjonsinformasjonen i lageradressen. Før versjon 10.0.17 viser listevisningen alltid den gjeldende butikken øverst, og sorterer andre lokasjoner alfabetisk.
+>
 > **Vis butikktilgjengelighet**, **Vis butikklokasjon**, **Hent i butikk** og **Send produkt** er ikke tilgjengelig for ikke-butikklokasjoner.
 
 ## <a name="inventory-lookup-matrix-view-for-variants"></a>Matrisevisning av lageroppslag for varianter
@@ -94,11 +95,11 @@ Visningsrekkefølgen for dimensjonsverdiene i matrisevisningen er basert på kon
 Følgende handlinger er tilgjengelige i matrisevisningscellen:
 
 - **Selg nå** – Denne handlingen legger til den valgte varianten i handlekurven og sender brukeren videre til transaksjonsskjermbildet.
-- **Hent i butikk** - Denne handlingen oppertter en kundeordre for den valgte varianten som plukkes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
-- **Send produkt** - Denne handlingen oppretter en kundeordre for den valgte varianten som skal sendes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
-- **Tilgjengelighet** - Denne handlingen tar brukeren til en egen side som viser ATP-antallene for den valgte varianten i den valgte butikken.
-- **Vis alle lokasjoner** - Denne handlingen bytter til standard lagertilgjengelighetslistevisning som viser lagerinformasjon for den valgte varianten.
-- **Vis produktdetaljer** - Denne handlingen omdirigerer brukeren til produktdetaljersiden (PDP) for den valgte varianten.
+- **Hent i butikk** – Denne handlingen oppertter en kundeordre for den valgte varianten som plukkes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
+- **Send produkt** – Denne handlingen oppretter en kundeordre for den valgte varianten som skal sendes fra den valgte butikken, og omdirigerer brukeren til skjermbildet for transaksjonen.
+- **Tilgjengelighet** – Denne handlingen tar brukeren til en egen side som viser ATP-antallene for den valgte varianten i den valgte butikken.
+- **Vis alle lokasjoner** – Denne handlingen bytter til standard lagertilgjengelighetslistevisning som viser lagerinformasjon for den valgte varianten.
+- **Vis produktdetaljer** – Denne handlingen omdirigerer brukeren til produktdetaljersiden (PDP) for den valgte varianten.
 
 ## <a name="access-inventory-lookup-from-other-pages-in-pos"></a>Få tilgang til lageroppslag fra andre sider på salgsstedet
 
@@ -124,7 +125,5 @@ I Commerce versjon 10.0.9 og tidligere hentes **tilgjengelig fysisk** verdi i la
 [Visuelle konfigurasjoner av brukergrensesnittet for salgssted](pos-screen-layouts.md)
 
 [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

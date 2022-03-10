@@ -1,7 +1,7 @@
 ---
 title: Installere og koble til mobilappen Lagerstyring
 description: Dette emnet beskriver hvordan du installerer mobilappen Lagerstyring på hver av mobilenhetene og konfigurerer den slik at den kobler til Microsoft Dynamics 365 Supply Chain Management-miljøet ditt.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 810592bcbe11b03753c12ab7bfe6160d3e9233ee
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049322"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103419"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og koble til mobilappen Lagerstyring
 
@@ -39,12 +39,9 @@ Mobilappen Lagerstyring er tilgjengelig for operativsystemene Windows og Google 
 - Windows 10 (Universal Windows Platform \[UWP\]) oktober 2018-oppdatering 1809 (build 10.0.17763) eller nyere
 - Android 4.4 eller nyere
 
-## <a name="turn-on-the-feature"></a>Aktivere funksjonen
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>Aktivere eller deaktivere funksjoner for mobilappen Warehouse Management i Supply Chain Management
 
-Før du kan bruke appen, må en relatert funksjon aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen*
+Du må aktivere funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* for systemet for å kunne bruke mobilappen Warehouse Management. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Hente mobilappen Lagerstyring
 
@@ -78,28 +75,28 @@ For at mobilappen Lagerstyring skal kunne kommunisere med en bestemt Supply Chai
 1. Skriv inn navnet og passordet for brukeren som har tilgang til Azure-abonnementet.
 1. I Azure-portalen velger du **Azure Active Directory** i navigasjonsruten til venstre.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
 
 1. Sørg for at du arbeider med forekomsten av Azure AD som brukes av Supply Chain Management.
 1. I listen **Behandle** velger du **Appregistreringer**.
 
-    ![Appregistreringer](media/app-connect-azure-register.png "Appregistreringer")
+    ![Appregistreringer.](media/app-connect-azure-register.png "Appregistreringer")
 
 1. På verktøylinjen velger du **Ny registrering** for å åpne veiviseren **Registrere en app**.
 1. Angi et navn for appen, velg alternativet **Bare kontoer i denne organisasjonskatalogen**, og velg deretter **Registrer**.
 
-    Veiviseren ![Registrere en app](media/app-connect-azure-register-wizard.png "Veiviseren Registrere en app")
+    ![Veiviseren Registrere en app.](media/app-connect-azure-register-wizard.png "Veiviseren Registrere en app")
 
 1. Den nye appregistreringen åpnes. Noter verdien i **App-ID (klient)** ettersom du vil trenge den senere. Det vil bli referert til denne ID-en senere i dette emnet som *klient-ID-en*.
 
-    ![App-ID (klient)](media/app-connect-azure-app-id.png "App-ID (klient)")
+    ![App-ID (klient).](media/app-connect-azure-app-id.png "App-ID (klient)")
 
 1. I listen **Behandle** velger du **Sertifikat og hemmeligheter**. Deretter velger du en av de følgende knappene, avhengig av hvordan du vil konfigurere appen for godkjenning. (Hvis du vil ha mer informasjon, kan du se delen [Godkjenne ved å bruke et sertifikat eller en klienthemmelighet](#authenticate) senere i dette emnet.)
 
     - **Laste opp sertifikat** – Last opp et sertifikat som skal brukes som hemmelighet. Denne metoden anbefales ettersom den er sikrere og også kan automatiseres fullstendig. Hvis du kjører mobilappen Lagerstyring på Windows-enheter, noterer du verdien for **Avtrykk** som vises etter at du har lastet opp sertifikatet. Du vil trenge denne verdien når du konfigurerer sertifikatet på Windows-enheter.
     - **Ny klient hemmelighet** – Opprett en nøkkel ved å angi en nøkkelbeskrivelse og en varighet i delen **Passord**, og velg deretter **Legg til**. Ta en kopi av nøkkelen og lagre den på en sikker måte.
 
-    ![Sertifikat og hemmeligheter](media/app-connect-azure-authentication.png "Sertifikat og hemmeligheter")
+    ![Sertifikat og hemmeligheter.](media/app-connect-azure-authentication.png "Sertifikat og hemmeligheter")
 
 Hvis du vil ha mer informasjon om hvordan du definerer webtjenesteapper i Azure AD, kan du se følgende ressurser:
 
@@ -109,7 +106,7 @@ Hvis du vil ha mer informasjon om hvordan du definerer webtjenesteapper i Azure 
     - [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app)
     - [Fremgangsmåte: Bruke portalen til å opprette en Azure AD-app og tjenestekontohaver som har tilgang til ressurser](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Opprette og konfigurere en brukerkonto i Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Opprette og konfigurere en brukerkonto i Supply Chain Management
 
 Hvis du vil at Supply Chain Management skal kunne bruke Azure AD-appen, gjør du følgende.
 
@@ -117,17 +114,24 @@ Hvis du vil at Supply Chain Management skal kunne bruke Azure AD-appen, gjør du
 
     1. I Supply Chain Management går du til **Systemadministrasjon \> Brukere \> Brukere**.
     1. Opprett en bruker.
-    1. Tilordne mobilenhetsbrukeren for lagerstyring.
+    1. Tilordne rollen som *bruker av lagermobilenhet* til brukeren.
 
-    ![Tilordne mobilenhetsbrukeren for lagerstyring](media/app-connect-app-users.png "Tilordne mobilenhetsbrukeren for lagerstyring")
+    ![Tilordne mobilenhetsbrukeren for lagerstyring.](media/app-connect-app-users.png "Tilordne mobilenhetsbrukeren for lagerstyring")
 
 1. Knytt Azure AD-programmet til brukeren av mobilappen Lagerstyring:
 
     1. Gå til **Systemadministrasjon \> Oppsett \> Azure Active Directory-apper**.
-    1. Opprett en linje.
-    1. Angi klient-ID-en som du noterte i den forrige delen, gi den et navn, og velg brukeren du nettopp opprettet. Det anbefales at du merker alle enhetene dine. Hvis en enhet går tapt, kan du enkelt fjerne dens tilgang til Supply Chain Management fra denne siden.
+    1. Velg **Ny** i handlingsruten for å opprette en linje.
+    1. I **Klient-ID**-feltet angir du klient-IDen du noterte deg i forrige del.
+    1. Angi et navn i **Navn**-feltet.
+    1. Velg bruker-IDen du nettopp opprettet i **Bruker-ID**-feltet.
 
-    ![Azure Active Directory-apper](media/app-connect-aad-apps.png "Azure Active Directory-bruksområder")
+    ![Azure Active Directory-apper.](media/app-connect-aad-apps.png "Azure Active Directory-bruksområder")
+
+> [!TIP]
+> En måte å bruke disse innstillingene på, er å opprette en klient-ID i Azure for hver av de fysiske enhetene dine, og deretter legge til hver klient-ID på **Azure Active Directory-programmer**-siden. Hvis en enhet går tapt, kan du enkelt fjerne dens tilgang til Supply Chain Management ved å fjerne klient-ID fra denne siden. (Denne fremgangsmåten fungerer fordi tilkoblingslegitimasjonen som lagres på hver enhet, også angir en klient-ID, som beskrevet senere i dette emnet.)
+>
+> I tillegg er standardspråket, nummerformatet og tidssoneinnstillingene for hver klient-ID fastsatt av innstillingene som er angitt for **bruker-ID**-verdien som er tilordnet her. Derfor kan du bruke disse innstillingene til å opprette standardinnstillinger for hver enhet eller samling enheter, basert på klient-IDen. Disse standardinnstillingene vil imidlertid overstyres hvis de også er definert for *lagerappbrukerkontoen* som en arbeider bruker til å logge på enheten. (Hvis du vil ha mer informasjon, kan du se [Brukerkontoer for mobilenhet](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Godkjenne ved hjelp av et sertifikat eller en klienthemmelighet
 
@@ -136,6 +140,10 @@ Godkjenning med Azure AD er en sikker metode for å koble en mobil enhet til Sup
 Sertifikater kan brukes som hemmeligheter for å bevise appens identitet når det bes om en token. Fellesdelen av sertifikatet lastes opp til appregistreringen i Azure-portalen, mens det fullstendige sertifikatet må distribueres på hver enhet der mobilappen Lagerstyring er installert. Organisasjonen din er ansvarlig for å administrere sertifikatet når det gjelder rotasjon og så videre. Du kan bruke selvsignerte sertifikater, men du bør alltid bruke sertifikater som ikke kan eksporteres.
 
 Du må angi at sertifikatet skal være tilgjengelig lokalt på hver enhet der du kjører mobilappen Lagerstyring. Hvis du vil ha informasjon om hvordan du behandler sertifikater for Intune-kontrollerte enheter hvis du bruker Intune, kan du se [Bruke sertifikater til godkjenning i Microsoft Intune](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurer Warehouse Management-mobilappen for sky- og kantskalaenheter
+
+Det kreves noen ekstra trinn hvis du planlegger å kjøre Warehouse Management-mobilappen mot en sky- eller kantskalaenhet. For instruksjoner kan du se [Konfigurere Warehouse Management-mobilappen for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurere appen ved å importere tilkoblingsinnstillinger
 
@@ -150,7 +158,7 @@ Du kan importere tilkoblingsinnstillinger fra enten en fil eller en QR-kode. I b
 | ConnectionName | Angi navnet på tilkoblingsstrengen. Maksimumslengden er 20 tegn. Ettersom denne verdien er den unike identifikatoren for en tilkoblingsinnstilling, må du kontrollere at den er unik i listen. Hvis det allerede finnes en tilkobling med samme navn på enheten, vil den bli overstyrt av innstillingene fra den importerte filen. |
 | ActiveDirectoryClientAppId | Angi klient-ID-en du noterte deg da du konfigurerte Azure AD i delen [Opprette en webtjenesteapp i Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Angi rot-URL-adressen til Supply Chain Management. |
-| ActiveDirectoryTenant | Angi Azure AD-leieren du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Angi Azure AD-domenenavnet du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Hvis du vil ha mer informasjon om hvordan du finner Azure AD-domenenavnet, kan du se [Finn viktige ID-er for en bruker](/partner-center/find-ids-and-domain-names). |
 | Bedrift | Angi den juridiske enheten i Supply Chain Management du vil koble appen til. |
 | ConnectionType | (Valgfritt) Angi om tilkoblingsinnstillingen skal bruke et sertifikat eller klienthemmelighet til å koble til et miljø. Gyldige verdier er *certificate* og *clientsecret*. Standardverdien er *certificate*.<p>**Obs!** Klienthemmeligheter kan ikke importeres.</p> |
 | IsEditable | (Valgfritt) Angi om appbrukeren skal kunne redigere tilkoblingsinnstillingen. Gyldige verdier er *true* og *false*. Standardverdien er *true*. |
@@ -213,30 +221,30 @@ Gjør følgende for å importere tilkoblingsinnstillinger fra en fil eller en QR
 
 1. Start mobilappen Lagerstyring på mobilenheten. Første gang du starter appen, vises det en velkomstmelding. Velg **Velg en tilkobling**.
 
-    ![Velkomstmelding](media/app-configure-welcome-screen.png "Velkomstmelding")
+    ![Velkomstmelding.](media/app-configure-welcome-screen.png "Velkomstmelding")
 
 1. Hvis du importerer tilkoblingsinnstillingene fra en fil og standardnavnet og -plasseringen ble brukt da filen ble lagret, kan det hende at appen allerede har funnet filen. I dette tilfellet kan du gå videre til trinn 4. Hvis ikke velger du **Konfigurer tilkobling** og fortsetter deretter til trinn 3.
 
-    ![Konfigurer tilkobling](media/app-configure-set-up-connection.png "Konfigurer tilkobling")
+    ![Konfigurer tilkobling.](media/app-configure-set-up-connection.png "Konfigurer tilkobling")
 
 1. Velg **Legg til fra fil** eller **Legg til fra QR-kode** i dialogboksen **Tilkoblingsoppsett**, avhengig av hvordan du vil importere innstillingene:
 
     - Hvis du importerer tilkoblingsinnstillingene fra en fil, velger du **Legg til fra fil**, blar til filen på den lokale enheten og velger den. Hvis du velger en egendefinert plassering, lagrer appen den og bruker den automatisk neste gang.
     - Hvis du importerer tilkoblingsinnstillingene ved å skanne en QR-kode, velger du **Legg til fra QR-kode**. Appen ber deg om å få tillatelse til å bruke enhetens kamera. Når du har gitt tillatelse, startes kameraet slik at du kan bruke det til skanning. Avhengig av kvaliteten på enhetens kamera og kompleksiteten i QR-koden, kan det være vanskelig å få en riktig skanning. I så fall kan du forsøke å redusere kompleksiteten i QR-koden ved bare å generere én tilkobling per QR-kode. (For øyeblikket kan du bare bruke enhetskameraet til å skanne QR-koden.)
 
-    ![Menyen Tilkoblingsoppsett](media/app-configure-connection-setup-flyout.png "Menyen Tilkoblingsoppsett")
+    ![Menyen Tilkoblingsoppsett.](media/app-configure-connection-setup-flyout.png "Menyen Tilkoblingsoppsett")
 
 1. Etter at tilkoblingsinnstillingene er lastet inn, vises den valgte tilkoblingen.
 
-    ![Tilkoblingsinnstillinger lastet](media/app-configure-select-connection.png "Tilkoblingsinnstillinger lastet")
+    ![Tilkoblingsinnstillinger lastet.](media/app-configure-select-connection.png "Tilkoblingsinnstillinger lastet")
 
 1. Hvis du bruker en Android-enhet og bruker et sertifikat for godkjenning, ber enheten deg om å velge sertifikatet.
 
-    ![Velge sertifikatledetekst på en Android-enhet](media/app-configure-select-certificate.png "Velge sertifikatledetekst på en Android-enhet")
+    ![Velge sertifikatledetekst på en Android-enhet.](media/app-configure-select-certificate.png "Velge sertifikatledetekst på en Android-enhet")
 
 1. Appen kobler seg til Supply Chain Management-serveren og viser påloggingssiden.
 
-    ![Påloggingsside](media/app-configure-sign-in-page.png "Påloggingsside")
+    ![Påloggingsside.](media/app-configure-sign-in-page.png "Påloggingsside")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Konfigurere appen manuelt
 
@@ -246,15 +254,15 @@ Hvis du ikke har en fil eller QR-kode, kan du konfigurere appen manuelt på enhe
 1. Hvis appen startes i **Demonstrasjonsmodus**, velger du **Tilkoblingsinnstillinger**. Hvis **Pålogging**-siden vises når appen startes, velger du **Bytt tilkobling**.
 1. Velg **Konfigurer tilkobling**.
 
-    ![Konfigurer tilkobling](media/app-configure-set-up-connection.png "Konfigurer tilkobling")
+    ![Konfigurer tilkobling.](media/app-configure-set-up-connection.png "Konfigurer tilkobling")
 
 1. Velg **Angi manuelt**.
 
-    ![Menyen Tilkoblingsoppsett](media/app-configure-connection-setup-flyout.png "Menyen Tilkoblingsoppsett")
+    ![Menyen Tilkoblingsoppsett.](media/app-configure-connection-setup-flyout.png "Menyen Tilkoblingsoppsett")
 
     Siden **Ny tilkobling** vises og inneholder innstillingene som kreves for å angi tilkoblingsdetaljene manuelt.
 
-    ![Manuelle tilkoblingsfelt](media/app-configure-input-manually.png "Manuelle tilkoblingsfelt")
+    ![Manuelle tilkoblingsfelt.](media/app-configure-input-manually.png "Manuelle tilkoblingsfelt")
 
 1. Angi følgende informasjon:
 
@@ -268,7 +276,7 @@ Hvis du ikke har en fil eller QR-kode, kan du konfigurere appen manuelt på enhe
         > [!IMPORTANT]
         > Ikke avslutt denne verdien med en skråstrek (/).
 
-    - **Active Directory-leier** – Angi Azure AD-leieren du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active Directory-leier** – Angi Azure AD-domenenavnet du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Hvis du vil ha mer informasjon om hvordan du finner Azure AD-domenenavnet, kan du se [Finn viktige ID-er for en bruker](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Ikke avslutt denne verdien med en skråstrek (/).
@@ -299,5 +307,6 @@ Hvis en enhet går tapt eller blir en sikkerhetsrisiko, må du fjerne tilgangen 
 
 - [Brukinnstillinger for mobilenhet](mobile-device-user-settings.md)
 - [Tilordne trinnikoner og -titler for mobilappen Warehouse Management](step-icons-titles.md)
+- [Konfigurer Warehouse Management-mobilappen for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

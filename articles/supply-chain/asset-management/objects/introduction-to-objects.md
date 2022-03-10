@@ -1,29 +1,28 @@
 ---
 title: Introduksjon til aktiva
 description: Dette emnet gir en oversikt over aktiva i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26b8e3aaa2b249d09b304242155d646483cbe971
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767514"
 ---
 # <a name="introduction-to-assets"></a>Introduksjon til aktiva
 
@@ -61,8 +60,8 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Prosjekttransaksjoner | Vis alle posterte transaksjoner som er knyttet til arbeidsordrer som er opprettet for aktivumet.                                                                                       |
 | Aktivummål       | Opprett eller vis aktivummål på aktivumet.                                                                                                               |
 | Vedlikeholdsplan | Åpne listesiden **Åpne vedlikeholdsplan**, der du kan vise vedlikeholdsplaner, vedlikeholdsforespørsler og vedlikeholdsrunder som er knyttet til aktivumet, og som har statusen **Opprettet**. |
-| Oppdater tilstand for aktivum   | Oppdatere livsløpstilstanden for aktivumet. Du kan velge flere aktiva på listesiden **Alle aktiva** og deretter oppdatere livsløpstilstanden for alle aktivaene samtidig.              |
-| Logg for livsløpstilstand  | Åpne en logg som viser livsløpstilstandene til det valgte aktivumet.                                                                                                                 |
+| Oppdater tilstand for aktivum   | Oppdatere livssyklustilstanden for aktivumet. Du kan velge flere aktiva på listesiden **Alle aktiva** og deretter oppdatere livssyklustilstanden for alle aktivaene samtidig.              |
+| Logg for livssyklustilstand  | Åpne en logg som viser livssyklustilstandene til det valgte aktivumet.                                                                                                                 |
 | Aktivadokumenter      | Vis en liste over dokumentene som er knyttet til et aktivum. Disse dokumentene er definert i **Aktivastyring** \> **Oppsett** \> **Aktivadokumenter**.                 |
 | Attributter           | Opprett eller vis aktivaattributter.                                                                                                                             |
 | Bilde                | Velg et bilde for aktivumet.                                                                                                                                   |
@@ -78,3 +77,6 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Reservedeler          | Vis en liste over godkjente og alternative reservedeler som kan brukes for aktivumet.                                                                               |
 | Aktivumforbruk    | Skriv ut en rapport som viser forbruksregistreringer for aktivumet.                                                                                                |
 | Aktivumfeil          | Skriv ut en rapport som viser feilregistreringer for aktivumet.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

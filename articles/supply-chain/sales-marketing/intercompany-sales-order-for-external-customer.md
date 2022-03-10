@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548441"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075000"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Opprette og fakturere en konsernintern salgsordre for en ekstern kunde
 
@@ -75,5 +75,18 @@ Gjør følgende i juridisk enhet B. Dette tilsvarer merket 2 i illustrasjonen.
 1. Velg salgsordren, og klikk deretter **OK**.
 
 Kundefakturaen for den konserninterne salgsordren posteres automatisk i juridisk enhet B. Den konserninterne leverandørfakturaen opprettes deretter automatisk og posteres i juridisk enhet A. Hvis den opprinnelige salgsordren er definert som en direktelevering, opprettes kundefakturaen for den opprinnelige salgsordren i juridisk enhet A.
+
+> [!NOTE]
+> For konserninterne salgsscenarioer kunne tidligere ikke den konserninterne salgsordren faktureres hvis arbeidsflyten for leverandørfaktura ble konfigurert i det konserninterne innkjøpsfirmaet. Derfor måtte arbeidsflyten for leverandørfaktura slås av for det konserninterne innkjøpsfirmaet. 
+> 
+> Denne begrensningen er løst av en nylig funksjon i versjon 10.0.25. Konserninterne salgsordrer kan nå faktureres når arbeidsflyten for leverandørfaktura er konfigurert i det konserninterne innkjøpsfirmaet.
+> 
+> Følg disse trinnene for å aktivere denne funksjonen.
+>
+> 1. Velg den juridiske enheten for konserninternt salg.  
+> 2. Gå til **Kunder \> Kunder \> Alle kunder**.
+> 3. Velg kunden for det konserninterne innkjøpsfirmaet.
+> 4. Gå til **Generelt \> Oppsett \> Konsernintern**.
+> 5. På fanen **Bestillingspolicyer** velger du parameteren **Omgå arbeidsflyt for leverandørfaktura for konserninterne leverandørfakturaer**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

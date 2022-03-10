@@ -1,29 +1,26 @@
 ---
 title: Import leverandørkataloger
 description: Dette emnet beskriver prosessen for å importere leverandørkatalogdata.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7ed2c50b28fdbd1baf4caa0a8a7f2f05d6a53fd6
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: fb7e9735ac29fae50a4a3874b713a9a75799605c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434829"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570399"
 ---
 # <a name="import-vendor-catalogs"></a>Import leverandørkataloger
 
@@ -70,3 +67,6 @@ Filmalen for katalogimport er en XSD-fil som bruker til å opprette en PriKat-fi
 3. Velg plasseringen der du vil lagre katalogfilmalen og filen, i dialogboksen **Lagre som**.
 
 Hvis du vil ha mer informasjon og eksempler, kan du se dette blogginnlegget: [Leverandørkataloger i Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

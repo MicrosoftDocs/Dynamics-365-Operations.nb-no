@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e86294b8b467367d954013764a029f7b20270b95
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: f0a8f5948d9e30eb220aa8177a4b9718223a4f9d
+ms.sourcegitcommit: 5bfd6511d710deb539b4030eb0e9c48d25513595
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860673"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8013840"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Aktivere Power BI for Globalt lagerregnskap
 
@@ -51,7 +51,8 @@ Gjør følgende for å konfigurere Power BI-integrasjonen.
 
     1. Gå til **Mitt arbeidsområde**, finn datasettet for Globalt lagerregnskap, og velg deretter **Innstillinger** på **Alternativer**-menyen.
     1. I **Innstillinger for Globalt lagerregnskap** utvider du **Parametere** og oppdaterer alle parametere etter behov. Pass særlig på at du kontrollerer følgende innstillinger:
-        1. Overskriv standardverdiene for **Dataverse-nettadresse** og **miljø-ID** ved hjelp av verdiene som finnes på **Miljødetaljer**-siden i LCS (i delen **Power Platform-integrering**).
+        1. Overskrif standardverdiene for **URL-adresse for Dataverse** ved å bruke verdiene under **Informasjon om Power Platform-miljøet** i LCS (i delen **Power Platform-integrering**).
+        1. Overskriv standardverdiene for **Miljø-ID** ved å bruke verdiene under **Miljødetaljer** i LCS (i delen **Administrer miljø**).
         1. Velg koblingen **Rediger legitimasjon** ved siden av **CDS**-etiketten i delen **Datakildelegitimasjon**. Logg deg deretter på Dataverse-kontoen ved hjelp av **OAuth2**-godkjenningsmetoden.
     1. Kontroller at Power BI-rapportene som finnes under **Mitt arbeidsområde \> Rapporter \> Globalt lagerregnskap** nå fungerer som de skal, og viser innhold fra systemet.
 

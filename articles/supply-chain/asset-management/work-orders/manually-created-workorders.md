@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8962cbbc8f413093eef0fb3783aa6ced22f7bc2d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750106"
 ---
 # <a name="manually-created-work-orders"></a>Manuelt opprettede arbeidsordrer
 
@@ -111,7 +111,7 @@ Du kan opprette en arbeidsordre som er knyttet til en eksisterende arbeidsordre.
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Opprett relatert arbeidsordre**.
 
-![Figur 1](media/03-work-orders.png)
+![Figur 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >Hvis du har definert en relatert arbeidsordremaske i **Aktivabehandlingsparametere** > **Arbeidsordrer**-fanen > **Relatert arbeidsordremaske**-feltet, blir det opprettet arbeidsordre-ID-er i samsvar med maskeoppsettet. Hvis det ikke er definert en tilknyttet arbeidsordremaske, vil den neste tilgjengelige arbeidsordre-ID-en brukes for tilknyttede arbeidsordrer.
@@ -137,7 +137,7 @@ Du kan opprette en ny arbeidsordre fra en eksisterende arbeidsordre raskt. Denne
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Kopier arbeidsordre**.
 
-![Figur 2](media/04-work-orders.png)
+![Figur 2.](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Opprette en arbeidsordre basert på en melding
@@ -157,7 +157,7 @@ Illustrasjonen nedenfor viser et eksempel på dialogboksen **Kopier arbeidsordre
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Opprett arbeidsordre**.
 
-![Figur 3](media/05-work-orders.png)
+![Figur 3.](media/05-work-orders.png)
 
 
 >[!NOTE]

@@ -11,18 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475042"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061710"
 ---
 # <a name="inventory-visibility-reservations"></a>Lagersynlighetsreservasjoner
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Dette emnet beskriver hvordan du definerer reserveringsfunksjonen for å opprette reserveringer, forbruke reserveringer og/eller ikke reservere angitte lagerantall ved hjelp av Lagersynlighet.
 

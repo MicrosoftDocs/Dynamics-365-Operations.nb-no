@@ -1,29 +1,27 @@
 ---
-title: Arbeidsområde for leverandørfakturaoppføring
+title: Arbeidsområde for automatisering av leverandørfaktura
 description: Dette emnet beskriver hvordan du konfigurerer arbeidsområdet som er relatert til leverandørfakturaer, og som viser informasjonen som er tilgjengelig via Microsoft Power BI.
 author: abruer
-manager: AnnBe
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 04aca717c3f255799699d63fb74ee0b543f8c8ba
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993269"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182585"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Arbeidsområde for leverandørfakturaoppføring
+# <a name="vendor-invoice-automation-workspace"></a>Arbeidsområde for automatisering av leverandørfaktura
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -32,11 +30,11 @@ Dette emnet beskriver hvordan du konfigurerer arbeidsområdet som er relatert ti
 
 ## <a name="overview"></a>Oversikt
 
-Arbeidsområdet for **leverandørfakturaoppføring** viser informasjon som er knyttet til behandling av leverandørfaktura. Det inneholder en **Mitt arbeid**-visning og en **Analyse – alle selskaper**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. Siden **Analyse – alle selskaper** bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørfakturaer.
+Arbeidsområdet for **automatisering av leverandørfaktura** viser informasjon som er knyttet til behandling av leverandørfaktura. Det inneholder en **Mitt arbeid**-visning og en **Analyse – alle selskaper**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. Siden **Analyse – alle selskaper** bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørfakturaer.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Angi at arbeidsområdet skal vise Power BI-innhold
 
-Du må fullføre oppsettet før data kan vises i Power BI-visualiseringer i arbeidsområdet for **leverandørfakturaoppføring**.
+Du må fullføre oppsettet før data kan vises i Power BI-visualiseringer i arbeidsområdet for **Automatisering av leverandørfaktura**.
 
 1. I arbeidsområdet for **funksjonsbehandling** filtrerer du listen for å finne funksjonen **Automatisering av leverandørfaktura**.
 3. Velg **Aktiver nå**.
@@ -56,20 +54,20 @@ Hvis du vil vise informasjonen som vises i arbeidsområdet, må du ha sikkerhets
 
 ### <a name="company-selection"></a>Firmavalg
 
-Når funksjonen **Automatiser leverandørfakturaer** er aktivert, vises **Firma**-feltet øverst i arbeidsområdet. Valget i **Firma**-feltet påvirker alle opplysningene som vises i arbeidsområdet. Som standard viser visningen informasjon for firmaet du logget deg på. Hvis du velger et annet firma i **Firma**-feltet, kan du vise informasjon for dette firmaet på arbeidsområdet. Du kan deretter velge en flis i arbeidsområdet for å gå til den tilknyttede siden i det valgte firmaet.
+Når funksjonen **Automatisering av leverandørfaktura** er aktivert, vises **Firma**-feltet øverst i arbeidsområdet. Valget i **Firma**-feltet påvirker alle opplysningene som vises i arbeidsområdet. Som standard viser visningen informasjon for firmaet du logget deg på. Hvis du velger et annet firma i **Firma**-feltet, kan du vise informasjon for dette firmaet på arbeidsområdet. Du kan deretter velge en flis i arbeidsområdet for å gå til den tilknyttede siden i det valgte firmaet.
 
 ### <a name="summary-tiles"></a>Sammendrag-fliser
 
 Flisene i delen **Sammendrag av utestående fakturaer** i **Mitt arbeid**-visningen gir en oversikt over statusen til leverandørfakturaene. Du kan vise journaler som ennå ikke er bokført og fakturaer som er på vent. I tillegg er det fire fliser som er knyttet til funksjonen for automatisering av leverandørfaktura:
 
-- Manuelt samsvar for mottak kreves
-- Samsvarsvalidering mislyktes
-- Fakturaer ble ikke sendt til arbeidsflyt
-- Fakturaer ble ikke importert
+- **Manuelt samsvar for mottak kreves**
+- **Samsvarsvalidering mislyktes**
+- **Fakturaer ble ikke sendt til arbeidsflyt**
+- **Fakturaer ble ikke importert**
 
-(Disse fire flisene krever at funksjonen for automatisering av leverandørfaktura er aktivert i funksjonsbehandling.)
+(Disse fire flisene krever at funksjonen for automatisering av leverandørfaktura er aktivert i **Funksjonsbehandling**.)
 
-Hvis du vil bruke flisen **Gjenopprett leverandørfakturaer**, må du aktivere funksjonen i leverandørparametere. Gå til **Leverandører \> Leverandørparametere**, og deretter, i kategorien **Faktura**, angir du alternativet **Tillat gjenoppretting av leverandørfaktura** til **Ja**.
+Hvis du vil bruke flisen **Gjenopprett leverandørfakturaer**, må du aktivere funksjonen i **Leverandørparametere**. Gå til **Leverandører \> Leverandørparametere**, og deretter, i kategorien **Faktura**, angir du alternativet **Tillat gjenoppretting av leverandørfaktura** til **Ja**.
 
 Når funksjonen er slått på, vil du også se tre fliser gruppert på arbeidsområdet i en del som kalles **Journaler**. Flisene har tittelen **Journaler**, **Journaler - tilordnet til meg** og **Fakturapulje**. 
 
@@ -116,3 +114,6 @@ Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside
 | Fakturaer som ikke ble importert | <ul><li>Fakturaer som ikke ble importert</li><li>Fakturaer som ikke ble importert av firma</li></ul> |
 | Årsaker til automatiseringsfeil | <ul><li>Fakturaer som mislyktes</li><li>Fakturaer som mislyktes av firma</li><li>Fakturaer som mislyktes av leverandørgruppe</li></ul> |
 | Arbeidsflytstatus                | <ul><li>Fakturaer i arbeidsflyt</li><li>Arbeidsflytforekomster for leverandfaktura</li><li>Tilordning per godkjenner</li><li>Arbeidsflyt for leverandørfaktura per firma</li><li>Gjennomsnittlig antall dager i arbeidsflyt etter godkjenner</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Power BI-innholdet Opplæring
 description: Dette emnet beskriver Power BI-innholdet Opplæring.
 author: jcart1106
-manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -14,18 +12,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46b7a442470d1fe78ebc5c9d5a0c6e155c0d9918
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6236868dca26be8cf54ad3cf73e846f2e689af8635e212c493b65a5d1aaa62ed
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685255"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742344"
 ---
 # <a name="learning-power-bi-content"></a>Power BI-innholdet Opplæring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Microsoft Power BI-innholdet **Opplæring**.
+Dette emnet beskriver Microsoft Power BI-innholdet i **Opplæring**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som er inkludert i Power BI-innholdet
 
@@ -62,3 +60,6 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Opplæri
 | Posisjon         | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Kursagenda, kursdeltakere |
 | Navn på ansatt    | Fornavn, etternavn og fullt navn                             | Kursdeltakere |
 | Ansattittel   | Tittel og ansiennitetsdato                                         | Kursdeltakere |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
