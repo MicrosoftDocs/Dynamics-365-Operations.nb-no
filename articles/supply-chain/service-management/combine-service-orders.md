@@ -1,12 +1,10 @@
 ---
 title: Kombiner serviceordrer
 description: Du kan kombinere serviceordrer.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55de251f7f9cdbae99eaec13d4ddd7d3bf26b2bb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5df9571cb1330489651a28462b747cacd7ac7e46
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996688"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580462"
 ---
 # <a name="combine-service-orders"></a>Kombiner serviceordrer   
 
@@ -43,14 +41,14 @@ Når du oppretter serviceordrelinjer automatisk i **Serviceavtaler**-skjemaet, k
 
 Du kan opprette en serviceavtale med startdatoen 31. mars 2007. I **Kombiner serviceordrer**-feltet angir du **Etter serviceobjekt**. Deretter oppretter du følgende serviceavtalelinjer:
 
-<table style="width:100%;">
+<table>
 <colgroup>
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -112,3 +110,6 @@ Serviceordrelinjene blir gruppert ytterligere i serviceordrer i henhold til even
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

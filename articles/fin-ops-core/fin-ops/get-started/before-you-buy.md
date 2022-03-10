@@ -2,11 +2,9 @@
 title: Før du kjøper
 description: Trinnvis veiledning som kan brukes når du vurderer å kjøpe Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce.
 author: ShellyBakke
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694142"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874590"
 ---
 # <a name="before-you-buy"></a>Før du kjøper
 
@@ -30,7 +28,7 @@ Ny i Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 3
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trinn én: Prøve Finance and Operations gratis i 30 dager
 
-Du kan prøve Dynamics 365 for Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dager via en enkel e-postregistrering. Prøveversjonen av Finance and Operations-apper omfatter komme i gang oppgaveveiledninger som inneholder trinnvise instruksjoner som gir deg muligheten til å vise bestemte scenarier i bruk. Produktet er tilgjengelig til å utforske og øvelsesscenarier, men ikke kan tilpasses. Demodata er inkludert for å forenkle bruken av produktet og gjøre opplevelsen gir mer mening. En påminnelse e-post sendes 3 dager før utløpsdato for prøveversjon. Få informasjon her: [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Du kan prøve Dynamics 365 for Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dager via en enkel e-postregistrering. Prøveversjonen av Finance and Operations-apper omfatter komme i gang oppgaveveiledninger som inneholder trinnvise instruksjoner som gir deg muligheten til å vise bestemte scenarier i bruk. Produktet er tilgjengelig til å utforske og øvelsesscenarier, men ikke kan tilpasses. Demodata er inkludert for å forenkle bruken av produktet og gjøre opplevelsen gir mer mening. En påminnelse e-post sendes 3 dager før utløpsdato for prøveversjon. Få informasjon ved å [registrere deg for forhåndsversjonsabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trinn to: Velge et alternativ for distribusjon
 
@@ -44,7 +42,7 @@ Følgende hensyn må tas når du velger lokal som distribusjonsalternativ:
 - [Systemkrav for lokale distribusjoner](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> Lokale distribusjoner støttes ikke på noen offentlig skyinfrastruktur, inkludert Microsoft Azure.
+> Lokale distribusjoner støttes ikke på noen offentlig skyinfrastruktur, inkludert Microsoft Azure. De støttes imidlertid for kjøring på [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) og [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
 
 For mer informasjon, se [Distribusjonsalternativer](../../dev-itpro/deployment/choose-deployment-type.md).
 
@@ -88,8 +86,11 @@ For tilleggsressurser, se:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Trinn fire: Lære om FastTrack og planlegge distribusjonen
 
-Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for å hjelpe deg med å gå til Dynamics 365 smidig og trygt, slik at du raskere kan realisere forretningsverdier. Når du deltar i programmet FastTrack, får du veiledning om anbefalte fremgangsmåter og hvordan du planlegger for vellykket høyt volum. Du vil også lære måter å aktivere nye brukere og ttvid egenskaper – alle i ditt eget tempo. I tillegg har du tilgang til Microsoft tekniske ressurser for å gjøre opplevelsen med Dynamics 365 vellykket. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
+Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for å hjelpe deg med å gå til Dynamics 365 smidig og trygt, slik at du raskere kan realisere forretningsverdier. Når du deltar i programmet FastTrack, får du veiledning om anbefalte fremgangsmåter og hvordan du planlegger for vellykket høyt volum. Du vil også lære måter å aktivere nye brukere og ttvid egenskaper – alle i ditt eget tempo. I tillegg har du tilgang til Microsoft tekniske ressurser for å gjøre opplevelsen med Dynamics 365 vellykket. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du oppgraderer fra Dynamics AX 2012 eller migrerer fra AX 2009
 
 Hvis du er en kunde som oppgraderer fra Microsoft Dynamics AX 2012 eller migrerer fra Microsoft Dynamics AX 2009, kan du være kvalifisert for en lengre prøveversjon. Kontakt <daxcf@microsoft.com> for mer informasjon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

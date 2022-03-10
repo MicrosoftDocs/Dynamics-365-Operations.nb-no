@@ -1,29 +1,26 @@
 ---
 title: Integrering av anleggsmidler
 description: Anleggsmidler kan integreres med økonomi, lagerstyring, kunder og leverandører. Du kan også konfigurere Anleggsmidler slik at det integreres med bestillinger.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fb1348a3a3c47e5fd7df46d9ce4af3725d8896b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e53d171ba0b9be7bbfffa25c27bd21fe036acee
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446379"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674781"
 ---
 # <a name="fixed-assets-integration"></a>Integrering av anleggsmidler
 
@@ -31,8 +28,7 @@ ms.locfileid: "4446379"
 
 Anleggsmidler kan integreres med økonomi, lagerstyring, kunder og leverandører. Du kan også konfigurere Anleggsmidler slik at det integreres med bestillinger.
 
-<a name="general-ledger"></a>Økonomimodul
---------------
+## <a name="general-ledger"></a>Økonomimodul
 
 I Økonomimodul summeres vanligvis verdien for alle anleggsmidler i flere hovedkontoer som er nødvendige for finansrapportering. På **Anleggsmidler**-siden kan du imidlertid opprette mange anleggsmiddelposter. Disse oppføringene kan inneholde informasjon som anskaffelsespris, avskrivning og vurdering. Hver gang du posterer en transaksjon for et anleggsmiddel, oppdateres de riktige hovedkontoene. Hovedkontoene for anleggsmidler viser alltid den oppdaterte verdien for anleggsmidlene.
 
@@ -95,3 +91,6 @@ Hvis du vil ha mer informasjon, se [Skaffe anleggsmidler ved hjelp av innkjøp](
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

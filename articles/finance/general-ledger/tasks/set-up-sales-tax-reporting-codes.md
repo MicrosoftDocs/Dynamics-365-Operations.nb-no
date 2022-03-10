@@ -2,11 +2,9 @@
 title: Definer mva-rapporteringskoder
 description: Mva-rapporteringskodene refererer til et feltnummer som er oppført på en mva-rapport.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxReportCollection
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 821d4abcffbca624382aa7709c02b857fcb6e349
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b7d12ffa90bde30518780d750e74d20db89f007044f8622480b8bd6e629e00dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994521"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728751"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Definer mva-rapporteringskoder
 
@@ -38,3 +36,6 @@ Denne registreringen bruker demonstrasjonsfirmaet DEMF.
 6. I feltet **Kort beskrivelse** skriver du inn en kort beskrivelse for intern bruk.
 7. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

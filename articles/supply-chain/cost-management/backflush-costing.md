@@ -1,12 +1,10 @@
 ---
 title: Backflush-etterkalkulering
 description: Dette emnet introduserer konseptet med backflush-etterkalkuleringen som skal brukes for Lean manufacturing.
-author: cvocph
-manager: tfehr
+author: AndersGirke
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanCosting, LeanCostingTimeBucket
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: b01b1c501c992683b4b2f597cf8da2cb269020b1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d158908182a35b7b4cbf0ad8a5d1fc7df37815d3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011878"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579838"
 ---
 # <a name="backflush-costing"></a>Backflush-etterkalkulering
 
@@ -36,7 +34,7 @@ Med etterkalkulering for Lean manufacturing kan produksjonsflyten bruke kostnads
 ## <a name="configuring-backflush-costing"></a>Konfigurere backflush-etterkalkulering
 For å aktivere etterkalkulering må du fullføre følgende oppsett:
 
--   **Definer VIA-kontoer for produksjonsgruppen og produksjonsflyten.** VIA-kontoene for produksjonsflyten er angitt i produksjonsgruppen. Avvik beregnes i produksjonsflyten for backflush-etterkalkulering som differansen i VIA-verdien før og etter at backflush-etterkalkuleringen kjøres for hver produksjonsflyt. Vi anbefaler derfor at du oppretter en VIA-konto for hver produksjonsflyt.
+-   **Definer VIA-kontoer for produksjonsgruppen og produksjonsflyten.** VIA-kontoene for produksjonsflyten er angitt i produksjonsgruppen. Avvik beregnes i produksjonsflyten for backflush-etterkalkulering som differansen i VIA-verdien før og etter at backflush-etterkalkuleringen kjøres for hver produksjonsflyt. Det anbefales derfor at du oppretter en VIA-konto for hver produksjonsflyt.
 -   **Tilordne en kostnadskategori til ressursgruppen.** Du må tilordne en kostnadskategori til kjøretidskategorien for arbeidscellen. Hvis du vil finne avvik etter aktivitet, bør du opprette en kostnadskategori for hver arbeidscelle. Kostnadskategorier for oppsett og antall vurderes ikke i etterkalkulering for lean manufacturing. VIA-kontoene per ressursgruppe ignoreres i backflush-etterkalkuleringen. For aktiviteter i underleveranser kreves det ikke noen kostnadskategori. Kostgruppen som er tilordnet den aktive tjenesten, brukes i stedet.
 -   **Tilordne kostnadsgrupper.** Hvis du vil aktivere segmentering av kostbidrag i en produksjonsflyt, må du tilordne kostgrupper etter kostgruppetype:
     -   **Kostgruppen direkte materialer** - Direkte materialer krever en kostgruppe som identifiserer materialkategorien for etterkalkulering. Denne kostgruppen aktiverer en aggregert visning av kostnader, VIA og avvik etter direkte materialer.
@@ -125,3 +123,6 @@ Kjør backflush-etterkalkulering for periodisk å verdiberegne VIA og produsere 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Kontantrabatt
 description: Kontantrabatter konfigureres og deles for leverandører og kunder.  Den tilgjengelige kontantrabatten kan defineres på kundefaktura eller leverandørfaktura, og brukes hvis fakturaen betales innen kontantrabattdatoen.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CashDisc
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d4f6d5bdf4f2fdc4529d9f51515ed2ac4b5b3b5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 91249186b6f2c7647991d7adb1a2fffd87de65f226345e74cc41460b68a7e6fb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985318"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775152"
 ---
 # <a name="cash-discounts"></a>Kontantrabatt
 
@@ -65,3 +63,6 @@ Det posteres en faktura på USD 1 000 med vilkårene for kontantrabatt på 20D2%
 > [!NOTE]
 > Hvis alternativet Beregn kontantrabatter for delvise betalinger velges på siden Kundeparametere eller Leverandørparametere, brukes valutakursen som er i kraft på datoen for hver delbetaling. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

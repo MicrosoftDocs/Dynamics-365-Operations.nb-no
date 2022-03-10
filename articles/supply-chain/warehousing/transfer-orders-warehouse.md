@@ -2,11 +2,9 @@
 title: Definere lagre for overføringsordrer
 description: Dette emnet beskriver hvordan du kan definere lagre for overføringsordrer.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 7dfb215683b4ee5d186626492bd90116d1a06a1d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6de9df2749836c68bc4e9f92a6934516ff9c1d469374f0d63173a209c841ba38
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756733"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Definere lagre for overføringsordrer 
 
@@ -52,3 +50,6 @@ Du må også definere leveringstiden for transport mellom lagrene på siden **Tr
 2. I **Mottakspunkt**-feltet velger du **lager**.
 3. Velg **Leverende lager**, **Mottakende lager** og **Transportdager**. 
 4. (Valgfritt) Du kan også angi transporttiden, avhengig av leveringsmåten, under **Transportdager per leveringsmåte**-fanen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

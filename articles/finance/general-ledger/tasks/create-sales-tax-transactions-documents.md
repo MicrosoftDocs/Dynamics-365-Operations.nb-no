@@ -2,11 +2,9 @@
 title: Opprette mva-transaksjoner på dokumenter
 description: Merverdiavgift på dokumenter blir beregnet ved hjelp av en mva-gruppe og en mva-gruppe for vare på dokumentlinjer.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTrans
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3cc70915902863d85aa75af7f4c03e5b83c7cb22
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c60913bda66e5facdf05106f621005b06ac4cf9c2d13b9df36eef42615395fa9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729684"
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Opprette mva-transaksjoner på dokumenter
 

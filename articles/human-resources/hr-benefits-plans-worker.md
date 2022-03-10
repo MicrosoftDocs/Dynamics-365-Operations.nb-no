@@ -1,29 +1,28 @@
 ---
-title: Opprette fordelsplaner for ansatte
-description: Du kan opprette fordelsplaner for arbeidere i Microsoft Dynamics 365 Human Resources for å velge fordelsplaner for ansatte og for å bekrefte valg av fordelsplaner.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Opprette fordelsplaner for arbeidere
+description: Dette emnet beskriver hvordan du oppretter, velger og bekrefter fordelsplaner for arbeidere i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitPlanEmployee, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: baa131b3bcab73d29c7059f6595f1e8943f8164f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 701bc6f1bb3ef684b163c32032e1094c8ae4deb0
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804943"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417498"
 ---
-# <a name="create-worker-benefit-plans"></a>Opprette fordelsplaner for ansatte
+# <a name="create-worker-benefit-plans"></a>Opprette fordelsplaner for arbeidere
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

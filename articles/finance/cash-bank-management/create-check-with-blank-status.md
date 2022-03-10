@@ -2,11 +2,9 @@
 title: Opprette sjekker som har tom status
 description: Dette emnet beskriver hvordan du oppretter en tom sjekk for en bankkonto på Sjekker-siden.
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankChequeTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 94d3a4ac8a3906e48f5a6053c031001c111549ad
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3c431ed975aecf116fbf626018038b112a0a8cca063e1462e31e206480643e11
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720556"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Opprette sjekker som har tom status
 

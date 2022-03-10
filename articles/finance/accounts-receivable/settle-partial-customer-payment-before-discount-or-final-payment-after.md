@@ -2,11 +2,9 @@
 title: Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 description: Denne artikkelen beskriver virkningen av utligning av betalinger mot fakturaer for kunder. Scenariet fokuserer på virkningen i underfinan, ikke i økonomimodulen.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad922bc6c9378078012b7a838909e4074b48f263
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 10ba8d59855b60b3d05b4c6b44c98905e10487ecdcf7bc459acca73c12bc72d1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979070"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740176"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 
@@ -48,7 +46,7 @@ Fabrikam selger varer til kunden 4027. Fabrikam tilbyr en kontantrabatt på 1 pr
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Hvis du ikke endrer verdien for **Beløp som skal utlignes** til 297,00, vil verdiene for **Kontantrabattbeløp** som vises, variere. Imidlertid vil 3,00 behandles som kontantrabatten når betalingen er postert, fordi utligning justerer automatisk verdien for **Beløp som skal utlignes** for deg.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
 | Kontantrabattbeløp         | 10,00     |
@@ -73,10 +71,10 @@ Den 11. juli, som er etter rabattperioden, betaler kunde 4027 resten av denne fa
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
-| Kontantrabattbeløp         | 0,00      |
+| Kontantrabattbeløp         | 0.00      |
 | Bruk kontantrabatt            | Normal    |
 | Kontantrabatt brukt          | 3,00      |
 | Kontantrabattbeløp som skal brukes | 0,00      |
@@ -89,15 +87,15 @@ Hvis Magnus endrer verdien i feltet **Bruk kontantrabatt** til **Alltid**, ovest
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
-| Kontantrabattbeløp         | 7,00      |
+| Kontantrabattbeløp         | 7.00      |
 | Bruk kontantrabatt            | Alltid    |
 | Kontantrabatt brukt          | 3,00      |
 | Kontantrabattbeløp som skal brukes | 7,00      |
 
-Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fordi han ikke lar denne kunden bruke den gjenværende kontantrabatten på 7,00. Magnus posterer deretter betalingen. Når Magnus åpner siden **Kundetransaksjoner**, ser han at fakturaen har en saldo på 0,00. Han ser også at det finnes to betalinger. Én betaling er på 297,00 og har en kontantrabatt på 3,00, og den andre betalingen er på 700,00.
+Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fordi han ikke lar denne kunden bruke den gjenværende kontantrabatten på 7,00. Magnus posterer deretter betalingen. Når Magnus åpner siden **Kundetransaksjoner**, har fakturaen en saldo på 0,00. Det finnes to betalinger. Én betaling er på 297,00 og har en kontantrabatt på 3,00, og den andre betalingen er på 700,00.
 
 | Bilag    | transaksjonstype | Dato      | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -110,3 +108,6 @@ Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

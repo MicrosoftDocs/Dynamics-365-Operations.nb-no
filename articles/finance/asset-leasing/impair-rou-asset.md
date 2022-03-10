@@ -2,32 +2,30 @@
 title: Forringe bruksrettseiendeler
 description: Dette emnet beskriver funksjonaliteten som registrerer en verdiforringelse og justerer avskrivningsplanen for aktiva for et Accounting Standards Codification-emne 842 (ASC 842) for gjeldende leie.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446606"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947346"
 ---
 # <a name="impair-right-of-use-assets"></a>Forringe bruksrettseiendeler
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Hvis det ikke er mulig å gjenopprette det indirekte beløpet for en bruksrettseiendel, må du kanskje teste om aktivaet er forringet. Hvis du mener at aktivaet er forringet, kan aktivaleie registrere forringelsen og justere avskrivningsplanen i henhold til dette. Dette emnet beskriver funksjonaliteten som registrerer verdiforringelsen og justerer avskrivningsplanen for et Accounting Standards Codification-emne 842 (ASC 842) for gjeldende leie. Den samme metoden gjelder også for International Financial Reporting Standard 16 (IFRS 16) for leieavtaler.
 
@@ -40,13 +38,18 @@ Den gjenstående saldoen for bruksrettseiendelen vil bli nedbetalt lineært for 
 3. I dialogboksen som vises, i feltet **Verdiforringelsesbeløp**, angir du beløpet for verdiforringelse. Hvis du vil redusere bruksrettseiendelen, bør du angi en positiv verdi.
 4. I feltet **Transaksjonsdato** angir du datoen da verdiforringelsen skal posteres.
 5. I feltet **Gjenstående perioder** angir du det gjenstående antallet måneder som skal nedbetales.
-6. Aktiver parameteren **Post** hvis du vil at systemet automatisk skal postere journaloppføringen for verdiforringelsesutgiften. Hvis du lar denne parameteren være deaktivert, oppretter systemet posten, men posterer den ikke. Du kan deretter bokføre posten fra siden **Journaler for leie av anleggsmidler**.
-7. Sett alternativet **Forhåndsvis for postering** til **Ja** for å vise den foreslåtte posten før den opprettes eller posteres.
-8. Sett alternativet for **Lukk bok** til **Ja** for å lukke leietablået. Du kan ikke angre denne handlingen. Oppføringer kan ikke posteres mot lukkede leieavtaler, og lukkede leieavtaler kan ikke justeres.
-9. Velg **OK** for å opprette eller postere verdiforringelsen.
-10. Hvis du vil vise avskrivningsplanen for det forringede aktivaet, åpner du avskrivningsplanen for aktivaet for leietablået. Aktivaet blir nå avskrevet på et lineært grunnlag over det antallet måneder du har angitt i feltet **Gjenstående perioder**.
-11. Hvis du vil vise journaloppføringen for verdiforringelsesutgiften, velger du **Journal for aktivaleie** i handlingsruten i tablået for forringet leieavtale. Systemet oppretter en journaloppføring som debiterer posteringskontoen for verdiforringelsesutgiften og krediterer posteringskontoen for leieaktiva.
-12. Hvis du vil vise den bokførte verdien for bruksrettseiendelen, velger du **Aktivatransaksjoner** i handlingsruten for leietablået.
+6. Sett alternativet **Forhåndsvis** til å vise den foreslåtte aktivasaldoen og finansoppføringen før de opprettes eller posteres.
+7. Sett alternativet for **Lukk bok** til **Ja** for å lukke leietablået. Du kan angre denne handlingen ved å bruke statusen **Åpne leie på nytt**. Oppføringer kan ikke posteres mot lukkede leieavtaler, og lukkede leieavtaler kan ikke justeres. 
+8. Velg **Poster** for å opprette eller postere verdiforringelsen.
+
+    > [!NOTE]
+    > Når transaksjonen for nedskrivning er postert, opprettes en ny bokversjon.
+
+    > Hvis leien klassifiseres som gjeldende leie, beregnes den månedlige avskrivningen etter verdiforringelse ved hjelp av lineær avskrivning.
+
+9. Hvis du vil vise avskrivningsplanen for det forringede aktivaet, åpner du avskrivningsplanen for aktivaet for leietablået. Aktivaet blir nå avskrevet på et lineært grunnlag over det antallet måneder du har angitt i feltet **Gjenstående perioder**.
+10. Hvis du vil vise journaloppføringen for verdiforringelsesutgiften, velger du **Journal for aktivaleie** i handlingsruten i tablået for forringet leieavtale. Systemet oppretter en journaloppføring som debiterer posteringskontoen for verdiforringelsesutgiften og krediterer posteringskontoen for leieaktiva. 
+11. Hvis du vil vise den bokførte verdien for bruksrettseiendelen, velger du **Aktivatransaksjoner** i handlingsruten for leietablået.
 
 ## <a name="example-of-rou-asset-impairment"></a>Eksempel på verdiforringelse for bruksrettseiendel
 
@@ -95,10 +98,14 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
     | Transaksjonsdato       | 1/1/2022 |
     | Gjenstående perioder      | 84       |
     | Poster                   | Ja      |
-    | Forhåndsvis for postering | Nr.       |
-    | Lukk tablå             | Nr.       |
+    | Forhåndsvis for postering | Nei       |
+    | Lukk tablå             | Nei       |
 
 6. En journaloppføringen for verdiforringelsesutgift er opprettet og postert. For å vise det går du til journalen for aktivaleie i leietablået. Legg merke til at beløpet for verdiforringelsen ble debitert til posteringskontoen for verdiforringelsesutgift, og at posteringskontoen for bruksrettseiendel ble kreditert.
+
 7. Hvis du vil vise nettoinnvirkning for verdiforringelsen, går du til tabellene for gjeld og anleggsmiddeltransaksjoner. Legg merke til at verdiforringelseutgiften har redusert bruksrettseiendelen, men det indirekte beløpet for leieforpliktelse er ikke endret.
 
 Verdiforringelsen har én annen effekt som du bør vurdere. Fordi beløpet for bruksrettseiendelen nå er mye mindre enn leieforpliktelsen, må beløpet avskrives på en annen måte enn før. Spesielt avskrives aktivaet nå på en lineær måte i løpet av de gjenværende 84 månedene i leieavtalen, som begynner på transaksjonsdatoen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

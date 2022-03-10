@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4afc19ed103f204fec61ab20b88f767ad5f05b38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777578"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Kjør og Overvåk et eksperiment
 
@@ -28,7 +28,7 @@ Dette emnet beskriver hvordan du kjører og overvåker eksperimentet i en tredje
 
 Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
 
-[ ![Brukerreise for eksperimentering – kjøre og overvåke](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
+[ ![Brukerreise for eksperimentering – kjøre og overvåke.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
 Når du har publisert variasjonene, fullføres alle trinnene du må gjøre i Commerce for å kjøre eksperimentet. Neste trinn avgjør hvilken variasjon som skal vises for hver bruker når de ber om en side. Tredjepartstjenesten avgjør dette, men først må du aktivere eksperimentet i tjenesten. Siden trinnene for aktivering av et eksperiment varierer fra tjeneste til tjeneste, må du følge instruksjonene som er inkludert i tjenesten eller fra leverandøren. Hvis eksperimentet ikke er aktivert, vil brukere bare se standardversjonen av siden (ingen variasjoner vil bli vist).
 

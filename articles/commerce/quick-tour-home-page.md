@@ -2,11 +2,9 @@
 title: Oversikt over startside
 description: Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c7f9762b5e00a04f189874a3695c33fe989b579c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979859"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984500"
 ---
 # <a name="home-page-overview"></a>Oversikt over startside
 
@@ -29,13 +27,11 @@ ms.locfileid: "4979859"
 
 Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Oversikt
-
 Startsiden er standardsiden kunder går til når de besøker et område for e-handel. Denne siden viser vanligvis produkter og kampanjer ved hjelp av en kombinasjon av markedsføringsmoduler. Startsiden bør inneholde mange bilder og tekst for å holde kundene engasjert.
 
 Illustrasjonen nedenfor viser et eksempel på en startside som ble bygd ved hjelp av modulbiblioteket og "Fabrikam"-temaet.
 
-![Eksempel på en startside](./media/Homepage2.PNG)
+![Eksempel på en startside.](./media/Homepage2.PNG)
 
 Toppen av startsiden har en topptekst som viser alle produktkategoriene og andre sider som forhandleren vil at kunder skal bla gjennom. Bunnen på startsiden har en bunntekst som inneholder hurtigkoblinger til ulike emner som kan være av interesser for kunder.
 
@@ -45,13 +41,13 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 
     Illustrasjonen nedenfor viser et eksempel på en startside der det første elementet i hoveddelen er et hovedbanneroppsett av en innholdsblokkmodul som heter "Nye varer".
 
-    ![Eksempel på en hovedbannermodul](./media/Hero.PNG)
+    ![Eksempel på en hovedbannermodul.](./media/Hero.PNG)
 
 - **Funksjon** – Et funksjonsoppsett av en innholdsblokkmodul brukes til å markedsføre produkter eller kampanjer ved hjelp av en kombinasjon av bilder og tekst. Funksjonsoppsett kan brukes uavhengig, eller de kan være plassert i en karusellmodul.
 
     Illustrasjonen nedenfor viser et eksempel på et funksjonsoppsett av en innholdsblokkmodul på en startside.
 
-    ![Eksempler på funksjonsmoduler](./media/Feature.PNG)
+    ![Eksempler på funksjonsmoduler.](./media/Feature.PNG)
 
 - **Tittel** – Et titteloppsett av en innholdsblokkmodul brukes til å vise flere produkter eller produktkategorier ved å bruke en kombinasjon av bilder og tekst i et oppsett med flere kolonner. I illustrasjonen av en startside som vises tidligere i dette emnet, brukes et flisoppsett for gjengivelsen av tre kolonner for varegruppene **Produkter for kvinner**, **Produkter for menn** og **Tilbehør**.
 - **Videospiller** – En videospillermodul kan brukes til å vise videoinnhold på startsiden. Illustrasjonen av en startside som vises tidligere i dette emnet, inneholder en videospillermodul.
@@ -60,7 +56,7 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 
     Illustrasjonen nedenfor viser et eksempel på produktanbefalingsmoduler på en startside.
 
-    ![Eksempler på produktanbefalingsmoduler](./media/Recommendations.PNG)
+    ![Eksempler på produktanbefalingsmoduler.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Alle modulene som vises her, kan brukes på hvilke som helst områdessider. Plasseringen på hjemmesiden er imidlertid viktig, fordi siden er der kundene først samhandler med området.
@@ -72,3 +68,6 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 [Oversikt over sider for handlekurv og kasse](quick-tour-cart-checkout.md)
 
 [Oversikt over kontobehandlingssider](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

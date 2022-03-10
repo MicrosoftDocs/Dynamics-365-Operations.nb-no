@@ -2,11 +2,9 @@
 title: Velge bort personlige produktanbefalinger
 description: Dette emnet beskriver hvordan du kan la kundene velge bort mottak av personlige anbefalinger i Microsoft Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,20 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e822d0097443d7da347c29ebfa63ad6a2d7cbf8b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772943"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Velge bort personlige produktanbefalinger
+# <a name="opt-out-of-personalized-recommendations"></a>Velge bort personlige anbefalinger
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan la kundene velge bort mottak av personlige anbefalinger i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Under kontooppretting konfigureres nye kunder automatisk for å motta personlige anbefalinger. Dynamics 365 Commerce har imidlertid flere metoder som forhandlere kan bruke til å la brukere velge bort mottak av disse anbefalingene og begrense behandlingen av sine personlige data. Godkjente brukere som velger bort mottak av personlige anbefalinger, vil umiddelbart stoppe å se personlige lister. I tillegg vil alle personlige data som samles inn for personlig tilpasning, bli fjernet fra tilpassede anbefalingsmodeller.
 
@@ -48,11 +44,11 @@ I Kontobehandling i Commerce-administrasjonskontoret kan forhandlere velge bort 
 1. Fra startsiden til administrasjonskontoret søker du etter **alle kunder**.
 1. Søk etter og velg en kunde, og velg deretter hurtigfanen **Detaljhandel**.
 
-    ![Hurtigfanen Detaljhandel](./media/Disablepersonalizationpart1.png)
+    ![Hurtigfanen Detaljhandel.](./media/Disablepersonalizationpart1.png)
 
 1. Under **Personvern** angir du alternativet **Deaktiver tilpassing** til **Ja**.
 
-    ![Personverninnstillinger](./media/Disablepersonalizationpart2.png)
+    ![Personverninnstillinger.](./media/Disablepersonalizationpart2.png)
 
 1. Velg **Lagre**, og lukk siden.
 
@@ -103,3 +99,6 @@ Følgende eksempel viser hvordan en forhandler kan utføre denne oppgaven.
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

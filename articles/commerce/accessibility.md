@@ -2,11 +2,9 @@
 title: Tilgjengelighetsfunksjoner og egenskaper
 description: Dette emnet gir informasjon om tilgjengelighetsfunksjonene og egenskapene i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 094ad8d34e13051ce7596be462070ead4cbc4f14
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206661"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716282"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funksjoner og egenskaper for tilgjengelighet
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet gir informasjon om tilgjengelighetsfunksjonene og egenskapene i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Tilgjengelighetsfunksjoner og -egenskaper gir alle brukere de funksjonelle midlene til å få tilgang til og utføre handlinger slik at de kan oppnå målene sine. Dette brede utvalget av brukere kan kreve hjelpeverktøy for brukere med ulike nedsatte funksjoner.
 
@@ -100,11 +95,11 @@ Hvis du vil angi **Minimumsalder**-attributtet for en videoressurs, følger du d
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Tilgjengelighet i skjemaer, produkter og kontroller](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+[Tilgjengelighet i skjemaer, produkter og kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
 
 [Microsoft Accessibility Center](https://www.microsoft.com/accessibility)
 
-[Dynamics 365 Accessibility Center](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
+[Dynamics 365 Accessibility Center](/dynamics365/get-started/accessibility/index)
 
 [Samsvarsoversikt](compliance-overview.md)
 

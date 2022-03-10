@@ -2,11 +2,9 @@
 title: Konfigurere landkontekstsavhengige ER-modelltilordninger
 description: Dette emnet beskriver hvordan du kan definere ER-modelltilordninger slik at de avhenger av land/område-konteksten til den juridiske enheten som styrer bruken.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680883"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605377"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurere landkontekstsavhengige ER-modelltilordninger
 
@@ -50,7 +48,7 @@ Noen trinn i dette emnet krever at du kjører et ER-format. I noen tilfeller på
 
 Følg trinnene i [Tillegg 1](#appendix1) i dette emnet for å utforme de nødvendige ER-komponentene. Du har nå modelltilordningskonfigurasjonen **Tilordning (generelt)** som inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
 
-![Siden ER-konfigurasjoner](./media/RCS-Context-specific-mapping-Tree.PNG)
+![ER-konfigurasjonsside, format for å lære tilordningskonfigurasjon.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>Kjøre det konfigurerte formatet
 
@@ -63,7 +61,7 @@ Legg merke til at webleseren tilbyr å laste ned tekstfilen som ble generert av 
 
 Følg trinnene i [Tillegg 2](#appendix2) i dette emnet for å utforme de nødvendige ER-komponentene. Du har nå modelltilordningskonfigurasjonene **Tilordning (generelt)** og **Tilordning (generelt) egendefinert** som hver inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
 
-![Siden ER-konfigurasjoner](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![ER-konfigurasjonsside, Tilordning av generell egendefinert konfigurasjon.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>Kjøre det konfigurerte formatet
 
@@ -73,7 +71,7 @@ Følg trinnene i [Tillegg 2](#appendix2) i dette emnet for å utforme de nødven
 
 Varsel om at utføringen av det valgte ER-formatet er mislykket. En feilmelding informerer deg om at det finnes mer enn én modelltilordning for modellen **Modell for å lære om tilordninger** og **Inngangspunkt 1**-definisjon i modelltilordningskonfigurasjonene **Tilordning (generelt)** og **Tilordning (generelt) egendefinert**. Meldingen anbefaler også at du velger en av disse konfigurasjonene som standardkonfigurasjon.
 
-![Siden ER-konfigurasjoner](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![ER-konfigurasjonsside med feilmelding.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Definere en konfigurasjon for standardtilordning
 
@@ -84,7 +82,7 @@ Følg denne fremgangsmåten for å definere modelltilordningskonfigurasjonen **T
 3.  Sett alternativet **Standard for modelltilordning** til **Ja**.
 4.  Velg **Lagre**.
 
-![Siden ER-konfigurasjoner](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![ER-konfigurasjonsside, standard for glidebryter for modelltilordning er satt til Ja.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Kjøre det konfigurerte formatet
 
@@ -103,7 +101,7 @@ Følg trinnene i [Tillegg 3](#appendix3) i dette emnet for å utforme de nødven
 
 Legg merke til at versjon 1 av **Tilordning (FR)**-modelltilordningskonfigurasjonen er konfigurert slik at den bare gjelder for ER-formater for modellen **Modell for å lære om tilordninger** som kjøres i økonomifirmaer som har fransk land/område-kontekst.
 
-![Siden ER-konfigurasjoner](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![ER-konfigurasjonsside, konfigurasjon av tabelltilordning (FR).](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>Kjøre det konfigurerte formatet
 
@@ -123,7 +121,7 @@ Følg denne fremgangsmåten for definere den egendefinerte modelltilordningskonf
 3.  Sett alternativet **Standard for modelltilordning** til **Ja**.
 4.  Velg **Lagre**.
 
-![Siden ER-konfigurasjoner](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![ER-konfigurasjonsside, tilordningskonfigurasjon (FR), standard for glidebryter for modelltilordning er satt til Ja.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>Kjøre det konfigurerte formatet
 
@@ -197,7 +195,7 @@ I tabellen angir et plusstegn (+) tilstedeværelsen av en modelltilordningskonfi
 1.  I navigasjonsruten går du til **Moduler \> Organisasjonsstyring \> Elektronisk rapportering \> Feilsøkingslogger for konfigurasjon**.
 2.  Velg knappen **Last inn denne siden på nytt**.
 
-![Siden ER-kjøringslogger](./media/RCS-Context-specific-mapping-DebugLog.PNG)
+![Siden ER-kjøringslogger.](./media/RCS-Context-specific-mapping-DebugLog.PNG)
 
 Legg merke til at en ny post er lagt til i ER-feilsøkingsloggen for det utførte ER-formatet. Siden **Nivå**-feltet for denne posten er satt til **Informasjon**, er posten veiledende. Siden Formatkomponent-feltet er satt **Tilordningskonfigurasjon**, informerer posten deg om en modelltilordning som ble brukt under utførelsen av ER-formatet **Format for å lære om tilordninger** (valgt i feltet **Konfigurasjonsnavn**). Innholdet i feltet **Generert tekst** informerer deg om at tilordningskomponenten **Tilordning (FR)** som befinner seg i konfigurasjonen **Tilordning (FR)**, er brukt til å kjøre denne rapporten.
 
@@ -238,7 +236,7 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 14. Skriv inn **Funksjonsbeskrivelse** i **Navn**-feltet i rullegardinboksen.
 15. Velg **Legg til**.
 
-    ![Siden ER-datamodellutforming](./media/RCS-Context-specific-mapping-Model.PNG)
+    ![Siden ER-datamodellutforming.](./media/RCS-Context-specific-mapping-Model.PNG)
 
 16. Velg **Lagre**.
 17. Lukk siden.
@@ -278,7 +276,7 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 5.  Velg **Lagre**.
 6.  Lukk siden **Formelutforming**.
 
-    ![Siden ER-utforming av modelltilordning](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![Utformingsside for ER-modelltilordning, definisjon av oppføringspunkt 1.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.  Velg **Lagre**.
 8.  Lukk siden **Modelltilordningsutforming**.
@@ -291,12 +289,12 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 15. Velg **Lagre**.
 16. Lukk siden **Formelutforming**.
 
-    ![Siden ER-utforming av modelltilordning](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![Utformingsside for ER-modelltilordning, definisjon av oppføringspunkt 2.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17. Velg **Lagre**.
 18. Lukk siden **Modelltilordningsutforming**.
 
-    ![Siden ER-modelltilordninger](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![Siden for ER-modelltilordninger med definisjoner av oppføringspunkt.](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Lukk siden **Modelltilordninger**.
 
@@ -337,7 +335,7 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 2.  Velg **Funksjonsbeskrivelse**-feltet.
 3.  Velg **Bind**.
 
-    ![Side med ER-formatutforming](./media/RCS-Context-specific-mapping-Format.PNG)
+    ![Side med ER-formatutforming.](./media/RCS-Context-specific-mapping-Format.PNG)
 
 4.  Velg **Lagre**.
 5.  Lukk siden.
@@ -371,7 +369,7 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 6.  Velg **Lagre**.
 7.  Lukk siden.
 
-    ![Siden ER-utforming av modelltilordning](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![Utformingsside for ER-modelltilordning, egendefinert formel for generisk funksjonalitet 1.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.  Velg **Lagre**.
 9.  Lukk siden.
@@ -382,12 +380,12 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 14. Velg **Lagre**.
 15. Lukk siden.
 
-    ![Siden ER-utforming av modelltilordning](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![Utformingsside for ER-modelltilordning, egendefinert formel for generisk funksjonalitet 2.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16. Velg **Lagre**.
 17. Lukk siden.
 
-    ![Siden ER-modelltilordninger](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![ER-modell til tilordningsside for datakilde for tilordning av (generell) kopitilordning.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Lukk siden.
 
@@ -434,7 +432,7 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 7.  Velg **Lagre**.
 8.  Lukk siden.
 
-    ![Siden ER-utforming av modelltilordning](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![Utformingsside for ER-modelltilordning, formel for FR-funksjonalitet 1.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.  Velg **Lagre**.
 10. Lukk siden.
@@ -446,12 +444,12 @@ Legg merke til at utkastversjon 1 av denne ER-konfigurasjonen er klar til redige
 16. Velg **Lagre**.
 17. Lukk siden.
 
-    ![Siden ER-utforming av modelltilordning](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![Utformingsside for ER-modelltilordning, formel for FR-funksjonalitet 2.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18. Velg **Lagre**.
 19. Lukk siden.
 
-    ![Siden ER-modelltilordninger](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![Tilordningsside for ER-modell til datakilde.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Lukk siden.
 
@@ -496,3 +494,6 @@ Kontroller at den delte modelltilordningskonfigurasjonen ikke er merket som stan
 - Minst én versjon av ER-modellkonfigureringskonfigurasjonen har enten **Fullført** eller **Delt** status. I dette tilfellet vil versjonen med det høyeste versjonsnummeret bli brukt til ER-format-utførelse.
 - Alternativet **Kjøringsutkast** for ER-modelltilordningskonfigurasjonen er aktivert. I dette tilfellet vil versjonen som har **Utkast**-status, bli brukt til ER-format-utførelse.
 > Alternativet **Kjøringsutkast** blir tilgjengelig på **Konfigurasjoner**-siden for hver ER-modelltilordningskonfigurasjon når ER-brukerparameteren **Kjøringsinnstilling** er aktivert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

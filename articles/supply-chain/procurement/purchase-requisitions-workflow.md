@@ -1,12 +1,10 @@
 ---
 title: Arbeidsflyten for innkjøpsrekvisisjon
 description: Arbeidsflytprosessen flytter innkjøpsrekvisisjoner gjennom vurderingsprosessen, fra den innledende statusen Utkast til den endelige statusen Godkjent. Når en innkjøpsrekvisisjon sendes til gjennomgang, starter arbeidsflytprosessen. Når en innkjøpsrekvisisjon er godkjent, kan en bestilling genereres for innkjøpsrekvisisjonslinjene og sendes til leverandøren for å bli oppfylt.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67bad698584c4a49cc5ce82682bb32cd1e32bbd5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5215919"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569463"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
@@ -53,7 +51,7 @@ Illustrasjonen nedenfor viser hvordan en innkjøpsrekvisisjon kan flyte gjennom 
 -   **Innkjøpsagent** – brukeren som foretar en gjennomgang av innkjøp og kan godkjenne dokumentet.
 -   **Bestillerens leder** – brukeren som foretar en ledergjennomgang og kan se gjennom og godkjenne dokumentet.
 
-![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjon](./media/purchreqworkflowoverview_submission.gif)  
+![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjon.](./media/purchreqworkflowoverview_submission.gif)  
 I dette eksemplet omfatter arbeidsflytprosessen for innkjøpsrekvisisjonen følgende trinn:
 
 1.  Klargjøreren sender en innkjøpsrekvisisjon til gjennomgang.
@@ -76,7 +74,7 @@ I dette eksemplet er følgende roller inkludert i arbeidsflytprosessen:
 -   **Avdelingsleder** – brukeren som foretar en utgiftsgjennomgang og kan se gjennom og godkjenne dokumentet.
 -   **Gruppeleder** – brukeren som foretar en signaturfullmaktsgjennomgang og kan se gjennom og godkjenne dokumentet.
 
-![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjonslinje](./media/purchreqlineworkflowoverview.gif)  
+![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjonslinje.](./media/purchreqlineworkflowoverview.gif)  
 I dette eksemplet omfatter arbeidsflytprosessen for innkjøpsrekvisisjonslinjene følgende trinn:
 
 1.  Klargjøreren sender en innkjøpsrekvisisjon til gjennomgang. Hver linje rutes til kontrolløren som er konfigurert til å motta den i arbeidsflytprosessen.
@@ -107,8 +105,7 @@ Du kan definere utgiftskontrollører på siden **Kontrollører av innkjøpsrekvi
 
 Hvis du vil bruke en av utgiftskontrollørene som du definerer i en arbeidsflyt, må du angi alternativet **Type deltaker** til **Utgiftsdeltakere** i **Tildeling**-egenskapene for det aktuelle arbeidsflytelementet.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Opprette en rekvisisjon for forbruk](tasks/create-requisition-consumption.md)
 

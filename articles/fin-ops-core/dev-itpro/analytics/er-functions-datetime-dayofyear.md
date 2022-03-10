@@ -2,9 +2,7 @@
 title: DAYOFYEAR ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen DAYOFYEAR.
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba63c96355a6a7a1eccaddf39e47a3edb2d1e651
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ab252b6194267836ba9e1d85f3b96fb100c9f598c783bd9c849c6490c2e54e21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712315"
 ---
 # <a name="dayofyear-er-function"></a>DAYOFYEAR ER-funksjonen
 

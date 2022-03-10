@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777627"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022980"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverandørsamarbeid med kunder
 
@@ -78,7 +78,7 @@ Hvis du bruker forsendelseslager, kan du bruke grensesnittet for leverandørsama
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Arbeide med tilbudsforespørsler i arbeidsområdet Leverandørbud
 
-I arbeidsområdet **Leverandørbud** kan du vise tilbudsforespørsler som firmaet ditt har blitt invitert til å svare på. Du kan også svare på tilbudsforespørsler. 
+I arbeidsområdet **Leverandørbud** kan du vise tilbudsforespørsler som firmaet ditt har blitt invitert til å svare på. Du kan også svare på tilbudsforespørsler.
 
 Arbeidsområdet viser også alle tilbudsforespørsler som du har tapt eller vunnet. Hvis systemet er konfigurert for offentlig sektor, vises dessuten tilbudsforespørsler som er offentlig tilgjengelige, i arbeidsområdet.
 
@@ -100,9 +100,17 @@ Personer som arbeider i offentlig sektor, kan se åpne og utløpte tilbudsforesp
 
 - Velg koblingen **Åpne publiserte tilbudsforespørsler** for å se en liste over åpne tilbudsforespørsler som er tilgjengelige for offentligheten. En åpen tilbudsforespørsel er en tilbudsforespørsel som ennå ikke er utløpt. Du kan finne utløpsdatoen og -klokkeslettet i hodet i tilbudsforespørselen.
 
-    Hvis du er invitert til å by, finner du den samme tilbudsforespørselen på siden **Invitasjoner til nytt bud**. Noen ganger vil du kanskje by på en åpen tilbudsforespørsel, men du har ikke blitt invitert til å by. Du kan i så fall kanskje invitere deg selv, forutsatt at kunden har aktivert personlig invitasjon for tilbudsforespørselssaken.
+    Hvis du er invitert til å by, finner du den samme tilbudsforespørselen på siden **Invitasjoner til nytt bud**. Noen ganger vil du kanskje by på en åpen tilbudsforespørsel, men du har ikke blitt invitert til å by. Du kan i så fall kanskje invitere deg selv, forutsatt at kunden har aktivert personlig invitasjon for tilbudsforespørselssaken. 
 
-    Forbedre tilgjengeligheten til koblingen **Åpne publiserte tilbudsforespørsler** ved å aktivere funksjonen **Vis Åpne publiserte tilbudsforespørsler-koblingen som en flis**. Denne funksjonen konverterer koblingen til en flis og flytter den til en fremtredende plassering, slik at den er lett å finne. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
+    Siden **Invitasjoner til nytt bud** kan ha et filter som lar deg vise de åpne tilbudsforespørslene, og identifisere de som inneholder linjer som samsvarer med de godkjente innkjøpskategoriene. For å gjøre dette filteret tilgjengelig må du aktivere funksjonen *La leverandører søke etter tilbudsforespørsler etter innkjøpskategori* i systemet. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+
+    - **Modul:** *Leverandører*
+    - **Funksjonsnavn:** *La leverandører søke etter tilbudsforespørsler etter innkjøpskategori* <!-- KFM: I don't see this here, is this right? -->
+
+    Du kan forbedre tilgjengeligheten til koblingen **Åpne publiserte tilbudsforespørsler** ved å aktivere funksjonen *Vis Åpne publiserte tilbudsforespørsler-koblingen som en flis*. Denne funksjonen konverterer koblingen til en flis og flytter den til en fremtredende plassering, slik at den er lett å finne. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. (Per Supply Chain Management versjon 10.0.21 er funksjonen aktivert som standard.) Der vises funksjonen på følgende måte:
+
+    - **Modul:** *Innkjøp og leverandører*
+    - **Funksjonsnavn:** *Vis koblingen Åpne publiserte tilbudsforespørsler som en flis*
 
 - Velg koblingen **Lukkede publiserte tilbudsforespørsler** for å se en liste over lukkede tilbudsforespørsler som er tilgjengelige for offentligheten. En lukket tilbudsforespørsel er en tilbudsforespørsel som er utløpt. Du kan finne utløpsdatoen og -klokkeslettet i hodet i tilbudsforespørselen.
 

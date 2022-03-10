@@ -2,11 +2,9 @@
 title: Aktiver anbefalinger av typen "kjøp lignende utseende"
 description: Dette emnet beskriver hvordan du aktiverer produktanbefalinger av typen "kjøp lignende utseende" i Microsoft Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d0b3585ce326e47b119b3f6c41436b9e6494ec87
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: e70365be8484d71ef9e0e9823b0a4406b0fd2761439780cafc30e1284bda1f20
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722006"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Aktivere Kjøp lignende utseender-anbefalinger
 
@@ -70,7 +68,7 @@ Hvis du vil aktivere anbefalingsfunksjonen "kjøp lignende utseende" i Commerce 
 
 Illustrasjonen nedenfor viser funksjonen **Kjøp lignende utseende** på siden **Funksjonsbehandling** i Commerce Headquarters.
 
-![Funksjonen Kjøp lignende utseende på siden Funksjonsbehandling i Commerce Headquarters](./media/enableshopsimilarlooks.png)
+![Funksjonen Kjøp lignende utseende på siden Funksjonsbehandling i Commerce Headquarters.](./media/enableshopsimilarlooks.png)
 
 Når de foregående oppgavene er fullført, forbedres POS-terminaler automatisk med et kontekstavhengig **Kjøp lignende produkter**-panelet. Ved å velge **Se mer** kan brukere av salgsstedsterminaler tas til en dedikert "kjøp likt utseende"-side som kan filtreres ytterligere.
 

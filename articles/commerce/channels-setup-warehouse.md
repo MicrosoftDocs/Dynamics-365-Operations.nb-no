@@ -2,11 +2,9 @@
 title: Definere et lager
 description: Dette emnet beskriver hvordan du definerer et lager som skal brukes med en ny kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 772c7584549b30a34e371a7911131edc01214ed8
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734025"
 ---
 # <a name="warehouse-set-up"></a>Lageroppsett
 
@@ -47,7 +45,7 @@ Følg denne fremgangsmåten for å konfigurere et lagerområde.
 
 Bildet nedenfor viser et eksempel på et lagerområde.
 
-![Eksempel på lagerområde](media/warehouse-site.png)
+![Eksempel på lagerområde.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Definere et lager
 
@@ -100,7 +98,7 @@ Følg denne fremgangs måten for å definere lagerbeholdningslokasjoner for stan
     
 Følgende bilde viser et oppsett av en lagerlokasjon i San Francisco.
 
-![Eksempel på lagerlokasjonsoppsett](media/warehouse-inventory-locations.png)
+![Eksempel på lagerlokasjonsoppsett.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Komplett lageroppsett
 
@@ -123,7 +121,7 @@ Følg fremgangsmåten nedenfor for å fullføre lageroppsettet.
 
 Følgende bilde viser detaljer for et konfigurert lager.
 
-![Eksempel på konfigurert lager](media/warehouse-sample.png)
+![Eksempel på konfigurert lager.](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -1,38 +1,40 @@
 ---
 title: Lagre oppgaveveiledninger i LCS og spille dem av på nytt
-description: Denne artikkelen forklarer hvordan du lagrer oppgaveveiledninger til Microsoft Dynamics Lifecycle Services (LCS) og deretter spiller dem av på nytt.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Dette emnet forklarer hvordan du lagrer oppgaveveiledninger til Microsoft Dynamics Lifecycle Services (LCS) og deretter spiller dem av på nytt.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b55937c0867117809471f50f1987f7bf12a4b25d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54251aed1a54f626e5cd6cbd983e3eb4589a02e8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419901"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068365"
 ---
 # <a name="save-task-guides-to-lcs-and-replay-them"></a>Lagre oppgaveveiledninger i LCS og spille dem av på nytt
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Miljødetaljer** 
 
 Microsoft Dynamics 365 Human Resources, som ble distribuert via Microsoft Dynamics Lifecycle Services (LCS)
 
-**Avgang**
+**Problem**
 
-Kunden ønsker å lagre nye oppgaveopptak til vedkommendes LCS-prosjekt og deretter spille av de lagrede oppgaveveiledningene på nytt.
+Kunden ønsker å lagre nye oppgaveopptak til LCS-prosjektet og deretter spille av de lagrede oppgaveveiledningene på nytt.
 
 **Oppløsning**
 
@@ -53,7 +55,7 @@ Følg disse trinnene for å lagre oppgaveopptak til LCS.
 10. Opprett et oppgaveopptak.
 11. Når du er ferdig, velger **Lagre i Lifecycle Services**.
 
-    ![Lagre i Lifecycle Services](media/task-guides.png)
+    ![Lagre i Lifecycle Services.](media/task-guides.png)
 
 12. Velg BPM-biblioteket og noden for å lagre oppgaveopptaket.
 
@@ -63,3 +65,6 @@ Følg denne fremgangsmåten for å spille av en oppgaveveiledningen på nytt fra
 2. Velg **Åpne fra LCS**.
 3. Velg biblioteket og BPM-noden som har den lagrede oppgaveveiledningen.
 4. Åpne oppgaveveiledningen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

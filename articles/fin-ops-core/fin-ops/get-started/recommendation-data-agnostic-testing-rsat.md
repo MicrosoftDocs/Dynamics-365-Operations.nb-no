@@ -2,11 +2,9 @@
 title: Dataagnostisk testing ved hjelp av Regression Suite Automation Tool
 description: Dette emnet beskriver anbefalinger for dataagnostisk testing ved hjelp Regression Suite Automation Tool.
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7fd1fc4756e74a5d07ffae533b6b9837b960f17a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763416"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Dataagnostisk testing ved hjelp av Regression Suite Automation Tool
 
@@ -32,7 +30,7 @@ Selv om den funksjonelle valideringen av et ERP-program ikke kan være fullstend
 - ATL-rammeverk
 - Regression Suite Automation Tool (RSAT)
 
-[![Pyramide for testklassifisering](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Pyramide for testklassifisering.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Oversikt
 -   **SysTest-rammeverk** – SysTest-rammeverket er pålitelig for skriving av enhetstester. Fordi enhetstester vanligvis tester en metode eller funksjon, bør de alltid være dataaknostisk og bare avhengige av inndataene som leveres som en del av testen.
@@ -44,8 +42,11 @@ Selv om den funksjonelle valideringen av et ERP-program ikke kan være fullstend
     - o Angi de unike ID-ene, for eksempel fakturanumre, i nummerserien eller ved å bruke Microsoft Excel-funksjoner som = TEXT(NOW(),"ååååmmddttmm"). Denne funksjonen vil gi et unikt nummer hvert minutt, som gjør at du kan spore når handlingen skjedde. Dette kan for eksempel brukes for variabler som produktkvitteringsnumre og leverandørfakturanumre. Disse testene fortsetter å arbeide med samme database på nytt uten å kreve noen gjenopprettinger.
     - Du bør alltid sette **Redigeringsmodus** for miljøet til **Lese** eller **Redigere** som første testtilfelle, fordi standardalternativet **Automatisk**. Alternativet **Automatisk** bruker alltid den forrige innstillingen og kan føre til upålitelige tester. 
  
-    [![Siden Alternativer, kategorien Ytelse](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Siden Alternativer, fanen Ytelse.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Valider bare etter at du har filtrert etter en bestemt transaksjon i stedet for å bruke generell validering. For antall poster filtrerer du for eksempel etter transaksjonsnummeret eller transaksjonsdatoen, slik at valideringen utelater alle andre transaksjoner. 
     - Hvis du kontrollerer en kundesaldo eller budsjettkontroll, må du først lagre verdien og deretter legge til transaksjonsverdien for å validere det forventede resultatet i stedet for å validere en fast forventet verdi. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

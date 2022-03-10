@@ -1,12 +1,10 @@
 ---
 title: Hurtigtaster
-description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med Finance and Operations-apper.
+description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
 author: jasongre
-manager: AnnBe
-ms.date: 10/05/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 5243ea35138aa37d9fc54821e0923d0fa47c95de
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798232"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119558"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
 [!include [banner](../includes/banner.md)]
 
-Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effektivt i Finance and Operations-apper.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Med hurtigtaster blir det enklere å registrere data raskt og effektivt i økonomi- og driftsapper. 
 
 > [!NOTE]
 > Hurtigtastene som er beskrevet her, gjelder amerikansk tastaturoppsett. Hvis du bruker et tastatur med en annen utforming, kan tastene være plassert annerledes.
@@ -36,11 +37,11 @@ Noen av snarveiene på denne siden er *nøkkelkombinasjoner*, noe som betyr at d
 
 ## <a name="finding-a-shortcut"></a>Finne en hurtigtast
 
-Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden.
+Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i brukergrensesnittet. Høyreklikk på en kontroll, og velg **Vis snarveier**. Da åpnes en dialogboks som viser hurtigtastene du kan bruke, avhengig av hvor du er på siden. Du kan alternativt trykke på ALT+SKIFT+K for å åpne denne dialogboksen (og trykke på ALT+SKIFT+K en gang til for å vise alle tilgjengelige hurtigtaster for siden).    
 
 ## <a name="action-shortcuts"></a>Handlingssnarveier
 
-| Hvis du vil gjøre dette                                      | Trykk                            |
+| Hvis du vil gjøre dette                                      | Trykk                             |
 |-------------------------------------------------|----------------------------------|
 | Åpent handlingssøk                              | Ctrl+' eller Alt+Q                  |
 | Flytt til standard handlingsrute                | Alt+M,A eller Ctrl+F6               |
@@ -105,7 +106,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå til neste post (utenfor et rutenett)      | Ctrl+Pil ned   |
 | Gå til første post (utenfor et rutenett)     | CTRL+HOME         |
 | Gå til siste post (utenfor et rutenett)      | CTRL+END          |
-| Lukk skjemaet (klikk Tilbake)                   | ESC               |
+| Lukk skjemaet (klikk på Tilbake)                   | ESC               |
 | Lukk skjemaet med eksplisitt lagring             | Skift+Esc         |
 | Lukk skjemaet og forkast eventuelle ulagrede endringer | Alt+Skift+Q       |
 
@@ -129,8 +130,10 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="grid-shortcuts"></a>Rutenettsnarveier
 
-| Hvis du vil gjøre dette                                                                                                             | Trykk                           |
+| Hvis du vil gjøre dette                                                                                                             | Trykk                            |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Loddrett rulling                                                                                                     | Musehjul                     |
+| Vannrett rulling                                                                                                   | Skift + musehjul             |
 | Gå til neste/forrige kolonne                                                                                       | Tab / Skift+Tab                 |
 | Gå til neste/forrige rad                                                                                          | Pil ned / Pil opp           |
 | Flytt til neste/forrige rad uten å velge<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote> | Ctrl+Pil opp / Ctrl+Pil ned |
@@ -142,22 +145,24 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå til den første posten                                                                                               | CTRL+HOME                       |
 | Gå til den siste posten                                                                                                | CTRL+END                        |
 | Merk eller tøm alle rader                                                                                               | Ctrl+Skift+M                    |
-| Gå til den første markerte raden                                                                                           | Alt+Skift+M, F                    |
-| Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                    |
-| Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                    |
-| Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                    |
+| Gå til den første markerte raden                                                                                           | Alt+Skift+M, F                  |
+| Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                  |
+| Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                  |
+| Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                  |
 | Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
-| Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Enter                           |
+| Flytt den gjeldende kolonnen til neste/forrige posisjon (med fokus i overskriftsraden)                                   | Ctrl+Skift+Pil høyre / Ctrl+Skift+Pil venstre |
+| Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Angi                           |
+| Endre størrelsen på den gjeldende kolonnen for å få plass til innholdet (med fokus i overskriftsraden)                                           | A (eller dobbeltklikk på kolonneskaleringshåndtaket) |
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
 
-| Hvis du vil gjøre dette                                                                   | Trykk                         |
+| Hvis du vil gjøre dette                                                                   | Trykk                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åpne hyperkoblingen                                                           | Ctrl+Enter                    |
-| Angi øktdatoen i et datofelt                                       | D                         |
-| Angi gjeldende dato i et datofelt                                       | T                         |
+| Angi øktdatoen i et datofelt                                       | D                             |
+| Angi gjeldende dato i et datofelt                                       | T                             |
 | Åpne oppslag, kombinasjonsboks, datovelger, rullegardinboks                         | Alt+Pil ned                |
 | Lukk oppslag, kombinasjonsboks, datovelger, rullegardinboks                        | ESC                           |
 | Flytt fokus til et oppslag (når oppslaget allerede er åpent)                   | Alt+Pil ned                |
@@ -204,8 +209,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Bruk Flytteverktøyet (når du er i personliggjøringsmodus)                                                                       | M                                   |
 | Velg den nåværende kontrollen som den som skal flyttes (når du bruker Flytteverktøyet, og ingen kontroll er valgt for å flytte ennå)  | Mellomrom eller Enter                      |
 | Fjern kontrollen som skal flyttes (når du bruker Flytteverktøyet)                                                                   | ESC                                 |
-| Flytt til neste posisjon for den valgte kontrollen (når du bruker Flytteverktøyet)                                          | Tab eller Pil høyre eller Pil ned    |
-| Flytt til forrige posisjon for den valgte kontrollen (når du bruker Flytteverktøyet)                                      | Skift + Tab eller Pil venstre eller Pil opp |
+| Flytt den valgte kontrollen til neste posisjon (når du bruker Flytteverktøyet)                                              | Tab eller Pil høyre eller Pil ned    |
+| Flytt den valgte kontrollen til forrige posisjon (når du bruker Flytteverktøyet)                                          | Skift + Tab eller Pil venstre eller Pil opp |
 | Bruk Skjulverktøyet (når du er i personliggjøringsmodus)                                                                       | H                                   |
 | Bytt om for om nåværende kontroll er synlig eller skjult (når du bruker skjermverktøyet)                                     | Mellomrom eller Enter                      |
 | Bruk Hopp over-verktøyet (når du er i personliggjøringsmodus)                                                                       | K                                   |
@@ -251,7 +256,14 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Vis/skjul den animerte popup-meldingen (under avspilling av en oppgaveveiledning)              | Alt+R,C                    |
 | Vis mer/mindre informasjon i den animert popup-meldingen (under avspilling av en oppgaveveiledning) | Alt+R,M                    |
 
+## <a name="focus-management"></a>Fokusadministrasjon 
+Fokusadministrasjon beskriver hvordan brukerfokus håndteres i et program. Økonomi- og driftsapper har spesialiserte fokusvirkemåter som er beregnet på å optimalisere brukerproduktiviteten, særlig i scenarioer med dataregistrering. Fokusvirkemåter omfatter følgende:  
+
+-  Når en side lastes inn, har den første inndatakontrollen som kan redigeres på siden, fokus og kan ta imot brukerinndata med en gang. Hvis det ikke er noen inndatakontroll som kan redigeres på siden, er tilbakefallsalternativet for innledende fokus den første inndatakontrollen på siden fulgt av den første fokusbare kontrollen på siden.   
+-  Når du klikker på en knapp, blir vanligvis handlingen behandlet og fokuset returnert til siden. Når dette skjer, har fokuset en tendens til å gå tilbake til knappekontrollen som ble valgt. Dette gjelder i økonomi- og driftsapper, **unntatt** når knappen er i handlingsruten eller på en verktøylinje. Når handlingene fullføres i disse tilfellene, går fokuset tilbake til den siste kontrollen *utenfor* handlingsruten (eller verktøylinjen) som hadde fokus før knappen ble klikket.
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Hurtigtaster for analyse for manglende konto](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

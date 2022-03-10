@@ -1,8 +1,8 @@
 ---
 title: Konfigurere og administrere databaselogging
 description: Du kan spore endringer i tabeller og felt i Dynamics 365 Human Resources med databaselogging.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae974436469c00a3df6fd40d9d60521a0883a917
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054818"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066449"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurere og administrere databaselogging
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -93,14 +96,14 @@ Du kan slette hele eller deler av databaseloggene ved hjelp av følgende alterna
 Gjør følgende for å konfigurere opprydding i databaselogg: 
 
 1. Gå til **Systemadministrasjon > Koblinger > Database > Databaselogg**. Velg **Opprydding i logg**.
-
-2. Velg en metode for valg av logger du vil slette, ved å angi ett av følgende alternativer:
+2. Velg **Filtrer** under overskriften **Poster som skal inkluderes**.
+3. Velg metoden som skal brukes til å velge loggene som skal slettes. Angi et av følgende alternativer:
 
    - Tabell-ID
    - Loggtype
    - Opprettingsdato og -klokkeslett
 
-3. Bruk kategorien **Opprydding i databaselogg** for å bestemme når du vil kjøre loggoppryddingsoppgaven. Som standard er databaselogger tilgjengelige i 30 dager.
+4. Bruk kategorien **Opprydding i databaselogg** for å bestemme når du vil kjøre loggoppryddingsoppgaven. Som standard er databaselogger tilgjengelige i 30 dager.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Generer finansrapporter
 description: Dette emnet inneholder generell informasjon generering av finansrapporter.
 author: jinniew
-ms.date: 03/08/2021
+ms.date: 02/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6cde37124d4a3337bca2a9b445af5fdfd87f453
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750016"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119533"
 ---
 # <a name="generate-financial-reports"></a>Generer finansrapporter
 
@@ -28,14 +28,27 @@ ms.locfileid: "5750016"
 
 Dette emnet inneholder generell informasjon generering av finansrapporter.
 
-Hvis du vil generere en rapport, åpner du rapportdefinisjonen og velger deretter **Generer** på verktøylinjen. Siden **Status for rapportkø** åpnes og angir plasseringen av rapporten i køen. Den genererte rapporten åpnes i webvisningsprogrammet som standard.
+Hvis du vil generere en rapport, åpner du rapportdefinisjonen og velger **Generer** på verktøylinjen. Siden **Status for rapportkø** åpnes og angir hvor rapporten er i køen.
 
-Følgende alternativer er tilgjengelige for generering av rapporter:
+Etter hvert som rapportgenereringen fremskrider, vises kanskje følgende statusindikatorer for rapportkø på siden **Status for rapportkø**.
+
+| Status          | Tilstand | Beskrivelse|
+|-----------------|--------|--------------------|
+| Køing        | Midlertidig |Rapportdefinisjonen valideres før rapporten legges i genereringskøen.                    |
+| Satt i kø          | Midlertidig | Rapporten går inn i rapportgenereringskøen og venter på behandling.                      |
+| Behandler      | Midlertidig | Denne statusen følger vanligvis statusen **Satt i kø**, og går vanligvis over til tilstanden **Avsluttende** når behandlingen er fullført.       |
+| Etterbehandles | Midlertidig | Denne statusen følger statusen **Behandler** og angir at alle rapportdataene samles inn, men at avledede handlinger, for eksempel beregning og opprulling, blir utført.            |
+| Annullerer      | Midlertidig | Rapporteringen avbrytes fordi brukeren har bedt om det. Denne tilstanden er et resultat av at en bruker har bedt om avbrudd for en rapport i tilstanden **Satt i kø** eller **Behandler**. Systemet prøver å sette rapporten i tilstanden **Avbrutt** med mindre systemet har kommet for langt og må fullføre den i en annen tilstand. |
+| Avbrutt        | Avsluttende | Rapporten er ferdigbehandlet, men ble ikke fullført på grunn av en brukerforespurt stopp.            |
+| Fullført       | Avsluttende | Rapporten er klar til bruk.                      |
+| Mislykket          | Avsluttende | Rapporten er ferdigbehandlet, men mislyktes og må ikke brukes. |
+
+Den genererte rapporten åpnes i webvisningsprogrammet som standard. Følgende alternativer er tilgjengelige for generering av rapporter:
 
 - Konfigurere en tidsplan for å generere en rapport eller en gruppe rapporter automatisk
 - Se etter manglende kontoer eller dataene i en rapport, og validere nøyaktigheten til en rapport
 
-Når du genererer en rapport, brukes alternativene du har angitt i kategorien Rapportdefinisjon.
+Når du genererer en rapport, brukes alternativene du har angitt i fanene Rapportdefinisjon.
 
 ## <a name="generate-a-financial-report"></a>Generer en finansrapport
 
@@ -61,7 +74,7 @@ Rapportgrupper er en effektiv måte å generere flere rapporter på samtidig. La
 4. Lagre rapportgruppen.
 
 ## <a name="schedule-report-generation"></a>Planlegge rapportgenerering
-Mange firmaer har et kjernesett med rapporter som kjører i planlagte intervaller for å justeres mot forretningsprosessene. Du kan planlegge at en rapport skal genereres regelmessig, for eksempel daglig, ukentlig, månedlig eller årlig. Dette kan være én rapport eller en gruppe med rapporter som inkluderer flere firmaer. Du må angi legitimasjonen for hvert av firmaene som er angitt, for eksempel firmaene i en definisjon av rapporteringstre. Hvis legitimasjonen ikke er gyldig, viser rapporten bare informasjonen som du har tilgang til, for eksempel firmaet du er logget på. Utdatainformasjon leses først fra rapportgruppen og deretter fra de enkelte rapportene.
+Mange firmaer har et kjernesett med rapporter som kjører i planlagte intervaller for å justeres mot forretningsprosessene. Du kan planlegge at en rapport skal genereres regelmessig, for eksempel daglig, ukentlig, månedlig eller årlig. Dette kan være én rapport eller en gruppe med rapporter som inkluderer flere firmaer. Du må angi legitimasjonen for hvert av firmaene som er angitt, for eksempel firmaene i en definisjon av rapporteringstre. Hvis legitimasjonen ikke er gyldig, viser rapporten bare informasjonen du har tilgang til, for eksempel firmaet du er logget på. Utdatainformasjon leses først fra rapportgruppen og deretter fra de enkelte rapportene.
 
 Når rapporttidsplaner opprettes og lagres, vises de i navigasjonsruten under Rapporttidsplaner. Du kan opprette mapper for å ordne rapportene. Hvis én rapport i en plan ikke kjører, fortsetter alle andre rapporter å kjøre.
 
@@ -105,7 +118,7 @@ Hvis du vil slette en rapporttidsplan, må du være eier av rapporttidsplanen el
 
 Hvis du ikke angir legitimasjoner som kreves for alle firmaer i rapportene, får du en feilmelding når du lagrer rapporttidsplanen: "Du må angi legitimasjon for firmaene som finnes i denne rapporttidsplanen. Velg Tillatelser for å angi legitimasjonen."
 
-En bruker logger for eksempel på Firma A ved hjelp av påloggingsinformasjon og passord. Brukeren oppretter en tidsplan for en rapport som bruker en rapporteringtredefinisjon til å samle inn data fra flere firmaer. Når rapportplanen lagres, blir brukeren bedt om å angi legitimasjonen for de andre firmaene som er angitt i definisjonen av rapporteringstre. Når legitimasjonen utløper, genereres ikke de berørte rapportene i rapporttidsplanen før legitimasjonene er blitt oppdaterte. Det vises en melding i rapportkøen for å angi at tillatelsene må oppdateres. Rapporttidsplanen mislykkes hvis en av følgende situasjoner oppstår (fordi de krever legitimasjon):
+En bruker logger for eksempel på Firma A ved hjelp av påloggingsinformasjon og passord. Brukeren oppretter en tidsplan for en rapport som bruker en rapporteringtredefinisjon til å samle inn data fra flere firmaer. Når rapportplanen lagres, blir brukeren bedt om å angi legitimasjonen for de andre firmaene som er angitt i definisjonen av rapporteringstre. Når legitimasjonen utløper, genereres ikke de berørte rapportene i rapporttidsplanen før legitimasjonen er oppdatert. Det vises en melding i rapportkøen for å angi at tillatelsene må oppdateres. Rapporttidsplanen mislykkes hvis en av følgende situasjoner oppstår (fordi de krever legitimasjon):
 
 - Et nytt firma er lagt til i et rapporttre for en enkeltrapport.
 - En rapport i en rapportgruppe har blitt endret.
@@ -116,12 +129,12 @@ Velg **Tillatelser** i dialogboksen **Rapportplanlegging**, og angi deretter rik
 ## <a name="missing-account-analysis-feature"></a>Funksjonen Analyse av manglende konto
 Du kan søke etter finansielle kontoer og dimensjoner som mangler på tvers av alle raddefinisjoner, rapporteringstredefinisjoner og rapportdefinisjoner i en byggeblokkgruppe. Dette er nyttig når du oppretter eller oppdaterer flere kontoer eller byggeblokker i løpet av en kort tidsperiode, og du vil kontrollere at all ny informasjon inkluderes i rapportene.
 
-Manglende kontoer finnes ved å bruke de laveste og høyeste verdiene fra raddefinisjonen eller rapporteringtredefinisjonen, og viser deretter en liste over kontoer som ikke er i raddefinisjonen eller rapporteringstredefinisjonen, men som er i de økonomiske dataen. Hvis en manglende konto er større eller mindre enn verdiene i raddefinisjonen, inkluderes ikke den kontoen i listen over manglende kontoer.
+Hvilke kontoer som mangler, fastsettes ved å bruke de laveste og høyeste verdiene fra raddefinisjonen eller rapporteringstredefinisjonen, og deretter vises en liste over kontoer som ikke er i raddefinisjonen eller rapporteringstredefinisjonen, men som er i de økonomiske dataene. Hvis en manglende konto er større eller mindre enn verdiene i raddefinisjonen, tas ikke denne kontoen med i listen over manglende kontoer.
 
 > [!TIP]
 > Ved validering må denne prosessen kjøres før du genererer månedlige rapporter, og når du oppretter nye byggeblokker.
 
-Rapporter som har områder med verdier har mindre sannsynlig for å mangle kontoer. Hvis det er mulig, bruker du områder i byggeblokken for å ta med nye kontoer når de opprettes. Hvis en rapportdefinisjon er satt til firmaet @ANY, kan du logge på et bestemt firma og kjøre en analyse av manglende konto for det firmaet.
+Rapporter som har områder med verdier har mindre sannsynlig for å mangle kontoer. Hvis det er mulig, bruker du områder i byggeblokken til å ta med nye kontoer når de opprettes. Hvis en rapportdefinisjon er satt til firmaet @ANY, kan du logge på et bestemt firma og kjøre en analyse av manglende konto for det firmaet.
 
 > [!NOTE]
 > Hvis et nytt firma er lagt til, må du legge til det nye firmaet i rapporteringstrærne i eksisterende rapporter, hvis ikke inkluderes ikke firmaet i analysen for manglende kontoer.
@@ -134,7 +147,7 @@ Rapporter som har områder med verdier har mindre sannsynlig for å mangle konto
 4. I feltet **Grupper etter** velger du et alternativ for å sortere resultatet. Du kan sortere resultater i henhold til byggeblokkene som påvirkes, eller du kan sortere resultater etter dimensjons- og verdisett.
 5. Se gjennom resultatene som vises. Når du velger et element i den øverste ruten, viser den nederste ruten tilleggsinformasjon om unntaket. Dette inkluderer relaterte dimensjoner, verdier og rapporter.
 6. Hvis du vil åpne det påvirkede elementet, velger du det tilknyttede ikonet som vises i listeruten, eller høyreklikker elementet og velger **Åpne**. Hvis du vil velge flere elementer, holder du nede **CTRL**-tasten mens du merker elementene i den nedre ruten.
-7. Hvis det returneres verdier, byggeblokker eller rapporter som ikke skal inkluderes i analysen, høyreklikker du elementet og velger **Utelat**, eller merker av for **Utelat** ved siden av elementet for å fjerne det fra listen. Utelatte elementer inkluderes ikke når listen oppdateres. Hvis du vil velge flere elementer, holder du nede **CTRL**-tasten mens du merker elementene i den nedre ruten. Hvis du vil vise alle elementer, inkludert resultater som du tidligere valgte å utelate fra analysen, merker du av for **Vis ekskluderte byggeblokker og verdier**, og deretter klikker du **Oppdater**.
+7. Hvis det returneres verdier, byggeblokker eller rapporter som ikke skal tas med i analysen, høyreklikker du på elementet og velger **Utelat**, eller merker av for **Utelat** ved siden av elementet for å fjerne det fra listen. Utelatte elementer tas ikke med når listen oppdateres. Hvis du vil velge flere elementer, holder du nede **CTRL**-tasten mens du merker elementene i den nedre ruten. Hvis du vil vise alle elementer, inkludert resultater som du tidligere valgte å utelate fra analysen, merker du av for **Vis ekskluderte byggeblokker og verdier**, og deretter klikker du **Oppdater**.
 8. Velg **Oppdater** for å oppdatere unntak du har angitt. Velg **Ja** for å utføre en fullstendig oppdatering av resultatene, eller velg **Nei** for å utføre en delvis oppdatering av angitte elementer.
 
     > [!NOTE]

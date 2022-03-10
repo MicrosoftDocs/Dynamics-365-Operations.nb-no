@@ -2,7 +2,7 @@
 title: Aktiver kundebetalingsprognoser
 description: Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5002fc79842bef150892347a7ff4702b07cfe5be
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: b83d1230c94462ca722ad7ceb7b2185afd636aae
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968893"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109610"
 ---
 # <a name="enable-customer-payment-predictions"></a>Aktiver kundebetalingsprognoser
 
@@ -46,6 +46,10 @@ Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundeb
     2. Velg koblingen **Vis datafeltene som brukes i prognosemodellen** på fanen **Kundebetalingsforutsigelser** på siden **Finance Insights-konfigurasjon** for å åpne siden **Datafelter for prognosemodell**. Der kan du vise standardlisten over felt som brukes til å opprette en prognosemodell basert på kunstig intelligens (AI) for kundebetalingsprognoser.
 
         Hvis du vil bruke standardlisten over felt til å opprette en prognosemodell, lukker du siden **Datafelter for prognosemodell**, og deretter setter du alternativet **Aktiver funksjon** til **Ja** på siden **Finance Insights-konfigurasjon**.
+        
+   > [!NOTE]
+   > Funksjonen **Kundebetalingsforutsigelser** krever flere enn 100 transaksjoner i de siste seks til ni månedene. Transaksjonene kan omfatte fritekstfakturaer, salgsordrer og kundebetalinger. Disse dataene må være spredt på tvers av innstillingene **Til planlagt tid**, **Forsinket** eller **Svært sent**.    
+     
 
     3. Angi transaksjonsperioden «svært sent» for å definere hva prognosesamlingen **Svært sent** betyr for firmaet.
 

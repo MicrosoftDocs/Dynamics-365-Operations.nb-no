@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b2b22d6e18974ed600dae6501ec103a49876d2db
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345918"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324093"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 
@@ -120,7 +120,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende Finance-foreko
 3. På **Konfigurasjoner**-siden utvider du hurtigfanen **Konfigurasjonskomponenter**.
 4. Utvid **Fakturamodell** i konfigurasjonstreet i venstre rute, og utvid deretter **UBL-salgsfaktura**.
 
-Legg merke til at i tillegg til det valgte ER-formatet for **Peppol-salgsfaktura**, ble andre ER-konfigurasjoner importert. Fordi nye versjoner av ER-konfigurasjoner stadig publiseres til det globale repositoriet og LCS, for å holde de tilsvarende løsningene kompatible med nye krav, ble de nyeste versjonene av den nødvendige [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components)-konfigurasjonen og de tilhørende [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components)-konfigurasjonene importert.
+Legg merke til at i tillegg til det valgte ER-formatet for **Peppol-salgsfaktura**, ble andre ER-konfigurasjoner importert. Fordi nye versjoner av ER-konfigurasjoner stadig publiseres til det globale repositoriet og LCS, for å holde de tilsvarende løsningene kompatible med nye krav, ble de nyeste versjonene av den nødvendige datamodell-konfigurasjonen og de tilhørende modelltilordning-konfigurasjonene importert.
 
 ![Siden Konfigurasjoner.](./media/er-quick-start3-imported-solution1a.png)
 
@@ -133,7 +133,7 @@ Kontroller deretter at følgende konfigurasjoner er tilgjengelige i konfigurasjo
 
 - **Fakturamodell**-ER-datamodellkonfigurasjon (opprinnelig kalt **Kundefakturamodell**):
 
-    - Versjon 11 inneholder versjon 10 av [datamodell](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponenten som representerer datastrukturen i fakturaens forretningsdomene. Denne ER-konfigurasjonen er importert som en overordnet til **Peppol salgsfaktura** ER-formatet som ble valgt for import.
+    - Versjon 11 inneholder versjon 10 av datamodell ER-komponenten som representerer datastrukturen i fakturaens forretningsdomene. Denne ER-konfigurasjonen er importert som en overordnet til **Peppol salgsfaktura** ER-formatet som ble valgt for import.
     - Versjon 50 inneholder versjon 31 av datamodell ER-komponenten. Denne ER-konfigurasjonen er importert som en overordnet av 7. august 2019-versjonen av **Fakturamodelltilordning** ER- modelltilordingskonfigurasjonen.
 
     ![ER-modelltilordningskonfigurasjon på konfigurasjonssiden.](./media/er-quick-start3-imported-solution1b1.png)
@@ -143,7 +143,7 @@ Kontroller deretter at følgende konfigurasjoner er tilgjengelige i konfigurasjo
 
 - **Fakturamodelltilordning** ER-modelltilordningskonfigurasjon (opprinnelig kalt **Modelltilordning for kundefaktura**):
 
-    - Versjon 50.19 er importert som siste implementering av versjon 50 av ER-datamodellkonfigurasjonen **Fakturamodell**. Den inneholder to [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-komponenter som beskriver hvordan datamodellen fylles ut med programdata ved kjøring.
+    - Versjon 50.19 er importert som siste implementering av versjon 50 av ER-datamodellkonfigurasjonen **Fakturamodell**. Den inneholder to modelltilordning ER-komponenter som beskriver hvordan datamodellen fylles ut med programdata ved kjøring.
 
     ![ER-modelltilordningskonfigurasjon Fakturamodelltilordning på konfigurasjonssiden.](./media/er-quick-start3-imported-solution1b2.png)
 
@@ -152,7 +152,7 @@ Kontroller deretter at følgende konfigurasjoner er tilgjengelige i konfigurasjo
 
 - **UBL-salgsfaktura** ER-formatkonfigurasjon:
 
-    - Versjon 11.2 inneholder [format](general-electronic-reporting.md#FormatComponentOutbound) og formattilordning ER-komponenter. Formatkomponenten angir rapportoppsettet. Formattilordningskomponenten inneholder modelldatakilden og angir hvordan denne datakilden brukes til å rapportoppsettet fylles ut under kjøring. Dette ER-formatet ble konfigurert til å generere e-fakturaer i Universal Business Language (UBL)-format. Den er importert som en overordnet til **Peppol salgsfaktura** ER-formatet som ble valgt for import.
+    - Versjon 11.2 inneholder format og formattilordning ER-komponenter. Formatkomponenten angir rapportoppsettet. Formattilordningskomponenten inneholder modelldatakilden og angir hvordan denne datakilden brukes til å rapportoppsettet fylles ut under kjøring. Dette ER-formatet ble konfigurert til å generere e-fakturaer i Universal Business Language (UBL)-format. Den er importert som en overordnet til **Peppol salgsfaktura** ER-formatet som ble valgt for import.
 
 - **Peppol-salgsfaktura** ER-formatkonfigurasjon:
 

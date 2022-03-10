@@ -1,12 +1,10 @@
 ---
 title: Opprette et purreforløp
-description: Bruk denne oppgaveveiledningen til å opprette et purreforløp.
-author: mikefalkner
-manager: AnnBe
-ms.date: 07/22/2019
+description: Bruk denne prosedyren til å opprette et purreforløp.
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
@@ -15,28 +13,28 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2500bdaa7107c24f7cb95249208b7ac2a2958fed
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971559"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921205"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Opprette et purreforløp
 
 [!include [banner](../../includes/banner.md)]
 
-Bruk denne oppgaveveiledningen til å opprette et purreforløp. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
+Bruk denne prosedyren til å opprette et purreforløp. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 
 1. I navigasjonsruten går du til **Moduler > Kreditt og innkreving > Oppsett > Definer purreforløp**.
 2. Klikk på **Ny**.
 3. I **Purreforløp**-feltet angir du en sekvens-ID som representerer rekkefølgen. Den brukes når du oppretter en posteringsprofil.
 4. Skriv inn en verdi i **Beskrivelse**-feltet.  Betalingsbetingelsene er valgfrie. Hvis du angir en verdi her, bruker purregebyrfakturaen disse betalingsbetingelsene i stedet for betalingsbetingelsene som er lagret med kunden.  
 5. I **Purrekode**-feltet velger du koden for den første purringen du vil sende. Den første purringen opprettes i henhold til forfallsdatoen på fakturaen, verdien du angir for respittperioden i Dager-feltet på denne linjen, og annen informasjon du angir på denne linjen.  
-6. Skriv inn en verdi i **Beskrivelse**-feltet. Valutaen for gebyret er som standard kundevalutaen. Denne valutakoden kan være forskjellig fra fakturavalutaen.  
-7. Klikk på **Legg til** for å legge til den neste purringen som skal sendes i sekvensen. I mange tilfeller er den første purringen bare en advarsel. Du kan legge til gebyrer om nødvendig.  
-8. I Purrekode-feltet velger du koden for den neste purringen som skal sendes i sekvensen.
-9. Skriv inn en verdi i **Beskrivelse**-feltet.
+6. Skriv inn en verdi i **Beskrivelse**-feltet. 
+7. Standardvalutaen for gebyret er standard for juridisk enhet. Denne valutakoden kan være forskjellig fra fakturavalutaen.   
+8. Klikk på **Legg til** for å legge til den neste purringen som skal sendes i sekvensen. I mange tilfeller er den første purringen bare en advarsel. Du kan legge til gebyrer om nødvendig.  
+9. I **Purrekode**-feltet velger du koden for den neste purringen som skal sendes i sekvensen.
 10. Velg inntektskontoen som skal brukes for gebyrer, i **Hovedkonto**-feltet.
 11. Angi gebyret som skal belastes når denne purringen posteres.
 12. Klikk rullegardinknappen i feltet **Merverdiavgiftsgruppe for vare** for å åpne oppslaget. Velg en mva-gruppe for vare hvis merverdiavgift må beregnes på gebyret.  
@@ -58,3 +56,6 @@ Bruk denne oppgaveveiledningen til å opprette et purreforløp. Denne oppgaven b
 26. Utvid **Merknad**-hurtigfanen.
 27. Angi teksten som skal vises på purringen for valgt purrekode. Du kan oversette denne teksten til flere språk ved hjelp av Oversettelser-menyen over notat-boksen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

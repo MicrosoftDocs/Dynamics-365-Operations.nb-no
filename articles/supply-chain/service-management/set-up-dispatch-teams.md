@@ -1,7 +1,7 @@
 ---
 title: Definer fordelingsteam
 description: Dette emnet beskriver hvordan du oppretter et fordelingsteam.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 697f5c71182fbe675c02e13a2162d791d72ced06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 48d35e4a49393a73f6c22c3ba78c65e72701d335
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835804"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571359"
 ---
 # <a name="set-up-dispatch-teams"></a>Definer fordelingsteam 
 
@@ -47,7 +47,7 @@ Dette emnet beskriver hvordan du oppretter et fordelingsteam. Når du har oppret
 
 
 > [!NOTE]
-> <P>Du kan tilordne en arbeider til dette fordelingsteamet i <STRONG>Arbeider</STRONG>-skjemaet. Hvis du vil ha mer informasjon om hvordan du tilordner en arbeider til et fordelingsteam, kan du se <A href="https://technet.microsoft.com/library/dn776288(v=ax.60)">Fordel arbeidere (skjema)</A>.</P>
+> <P>Du kan tilordne en arbeider til dette fordelingsteamet i <STRONG>Arbeider</STRONG>-skjemaet. Hvis du vil ha mer informasjon om hvordan du tilordner en arbeider til et fordelingsteam, kan du se <A href="/dynamicsax-2012//dispatch-workers-form">Fordel arbeidere (skjema)</A>.</P>
 
 
 

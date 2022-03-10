@@ -1,23 +1,24 @@
 ---
-title: Sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring
+title: Skaleringsenheter i en distribuert hybridtopologi
 description: Dette emnet inneholder informasjon om sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring.
 author: cabeln
 ms.date: 04/22/2021
 ms.topic: article
+ms.search.form: ScaleUnitWorkloadsWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
+ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354815"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119193"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjons- og lagerstyring
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaleringsenheter i en distribuert hybridtopologi
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,14 +27,14 @@ ms.locfileid: "6354815"
 >
 > Når du aktiverer sky- og kantskalaenheter, blir du bedt om å bekrefte at du forstår at noen data som er knyttet til konfigurasjonen og behandling av sky- og kantskalaenheter, kan lagres i et datasenter som er plassert i USA. Hvis du vil lære mer om databehandling for sky- og kantskalaenheter, kan du se [Databehandling under behandling av skalaenheter](#data-processing-management) senere i dette emnet.
 
-## <a name="core-value-proposition-for-scale-units"></a>Kjerneverdiforslag for skalaenheter
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Hovedverdiforslag for en distribuert hybridtopologi
 
-Firmaer som jobber med produksjon og distribusjon, må kunne kjøre viktige forretningsprosesser hele døgnet, uten avbrudd og ved skala. Med sky- og kantskalaenheter kan firmaer kjøre viktige produksjons- og lagerprosesser uten avbrudd, selv når det gjelder nettverkstilkobling eller forsinkelsesproblemer.
+Firmaer som jobber med produksjon og distribusjon, må kunne kjøre viktige forretningsprosesser hele døgnet, uten avbrudd og ved skala. Med en distribuert hybridtopologi kan firmaer kjøre viktige produksjons- og lagerprosesser uten avbrudd, selv når det gjelder nettverkstilkobling eller forsinkelsesproblemer.
 
-Sky- og kantskalaenheter muliggjør distribusjon av arbeidsmengder for produksjon og lagerkjøring blant ulike miljøer. Denne funksjonaliteten kan bidra til å forbedre ytelsen, forhindre tjenesteavbrudd og gi maksimal oppetid. Skalaenheter leveres ved hjelp av følgende tillegg for Supply Chain Management-abonnementet:
+En distribuert hybridtopologi introduserer konseptet med *skalaenheter*, som gjør det mulig å distribuere arbeidsmengder for shop floor og lagerutførelse mellom forskjellige miljøer. Denne funksjonaliteten kan bidra til å forbedre ytelsen, forhindre tjenesteavbrudd og gi maksimal oppetid. Skalaenheter leveres ved hjelp av følgende tillegg for Supply Chain Management-abonnementet:
 
-- Cloud Scale Unit-tillegget for Dynamics 365 Supply Chain Management (*tilgjengelig april 2021*)
-- Edge Scale Unit-tillegget for Dynamics 365 Supply Chain Management (*tilgjengelig snart*)
+- Cloud Scale Unit-tillegget for Dynamics 365 Supply Chain Management
+- Edge Scale Unit-tillegget for Dynamics 365 Supply Chain Management
 
 Funksjoner for arbeidsbelastninger lanseres kontinuerlig gjennom inkrementelle forbedringer.
 
@@ -51,21 +52,11 @@ Du kan konfigurere sentermiljøet og skyskalaenhetene for utvalgte arbeidsbelast
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for lagerstyring i en skalaenhet
 
-Lagerstyringens arbeidsbelastning er den første distribuerte arbeidsbelastningen for skalaenheter som er lansert for allmenn tilgjengelighet.
-
-For lagerstyring leverer skalaenheter følgende funksjoner:
-
-- Systemet kan behandle utvalgte bølgemetoder for salgsordrer og etterfylling på forespørsel.
-- Lagermedarbeidere kan kjøre lagerarbeid for salg og etterfyllings på forespørsel ved hjelp av mobilappen Lagerstyring.
-- Lagerarbeidere kan be om lagerbeholdning ved hjelp av mobilappen Lagerstyring.
-- Lagerarbeidere kan opprette og kjøre lagerflyttinger ved hjelp av mobilappen Lagerstyring.
-- Lagerarbeidere kan registrere bestillinger og utføre plasseringer ved hjelp av mobilappen Lagerstyring.
-
-Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](cloud-edge-workload-warehousing.md).
+Arbeidsbelastningen for lagerstyring gjør at lageroperasjonene kan skalere og kjøre i et robust miljø ved hjelp av isolerte vedlikeholdsvinduer. Arbeidsbelastningen for lagerstyring støtter de fleste lagerstyringsprosessene for bedriftssenteret. Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for produksjonskjøring i en skalaenhet
 
-Den første lanseringen av produksjonsarbeidsbelastningen er i forhåndsversjon og leverer følgende funksjoner:
+Arbeidsmengden i produksjonen leverer følgende funksjoner:
 
 - Maskinoperatører og produksjonsledere har tilgang til driftsproduksjonsplanen.
 - Maskinoperatører kan holde planen oppdatert ved å kjøre separat og behandle produksjonsjobber.
@@ -102,7 +93,7 @@ Det gjeldende produksjonsmiljøet må være tagget med **Selvbetjent**-typen i L
 > [!IMPORTANT]
 > Miljøtyper som kjører som infrastruktur som en tjeneste (IaaS), støttes ikke. Disse miljøene merkes vanligvis med typen **Microsoft-administrert** i LCS. Hvis du har miljøer av denne typen, kan du samarbeide med Microsoft-kontakten for å forstå tidslinjen for migrering til typen **Selvbetjent**.
 
-Microsoft er i ferd med en overfang for alle skymiljøer i Supply Chain Management fra en IaaS-modell til en topologi som driftes i Service Fabric. Denne flyttingen gir bedre skalerbarhet og bidrar til å forenkle serviceadministrasjonen. Derfor er distribusjons- og vedlikeholdsoperasjoner raskere. På samme måte migreres servicekomponenter til konseptet med mikrotjenester, og servicevertsmodellen vil [gå over](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) fra en VM-modell (virtuell maskin) til en lett arkitektur med beholdere.
+Microsoft er i ferd med en overfang for alle skymiljøer i Supply Chain Management fra en IaaS-modell til en topologi som driftes i Service Fabric. Denne flyttingen gir bedre skalerbarhet og bidrar til å forenkle serviceadministrasjonen. Derfor er distribusjons- og vedlikeholdsoperasjoner raskere. På samme måte migreres servicekomponenter til konseptet med mikrotjenester, og servicevertsmodellen vil [gå over](/virtualization/windowscontainers/about/containers-vs-vm) fra en VM-modell (virtuell maskin) til en lett arkitektur med beholdere.
 
 I siste instans vil den samme Service Fabric-baserte tjenesteinfrastrukturen som er basert på beholdere, drive både sky- og kantforekomster av tjenesten, uansett om en forekomst ligger i skyen eller en skalaenhet i skyen eller på kanten.
 
@@ -191,20 +182,58 @@ Microsoft vil se gjennom forespørselen din og gi deg beskjed om de neste trinne
 
 Når pålastingen er fullført, kan du bruke porten til å konfigurere skalaenheter og arbeidsbelastninger.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Administrer skalaenheter og arbeidsbelastninger ved å bruke Scale Unit Manager-portalen
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Administrer skalaenheter og arbeidsbelastninger ved å bruke Scale Unit Manager-portalen
 
 Gå til [Scale Unit Manager-portalen](https://aka.ms/SCMSUM), og logg på ved hjelp av leierkontoen. På **Konfigurer skalaenheter** kan du legge til et sentermiljø hvis det ikke allerede er oppført. Du kan deretter velge senteret du vil konfigurere med skalaenheter og arbeidsbelastninger.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Administrering av skalaenhet og arbeidsbelastning.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager-portalen, Konfigurer skalaenheter-siden.":::
 
 Hvis du vil legge til en eller flere skalaenheter som er tilgjengelige i abonnementene, velger du **Legg til skalaenheter**.
 
 I **Definerte arbeidsbelastninger**-fanen bruker du **Opprett arbeidsbelastning**-knappen til å legge til en arbeidsbelastning for lagerstyring i en av skalaenhetene. For hver arbeidsbelastning må du angi konteksten for prosessene som skal eies av arbeidsbelastningen. Når det gjelder arbeidsbelastninger for lagerstyring, er konteksten et bestemt lager på et bestemt område og en bestemt juridisk enhet.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oppretting av arbeidsbelastning.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Dialogboksen Definer arbeidsbelastninger.":::
+
+#### <a name="manage-workloads"></a><a name="manage-workloads"></a>Administrer arbeidsbelastninger
+
+Når én eller flere arbeidsbelastninger er aktivert, bruker du alternativet **Behandle arbeidsbelastninger** til å starte og behandle prosesser, for eksempel de som er oppført i tabellen nedenfor.
+
+| Behandle | Beskrivelse |
+|---|---|
+| Stans skalaenhetskommunikasjon midlertidig | Stans datasamlebåndmeldinger mellom senteret og en skalaenhet midlertidig. Denne prosessen vil stoppe kommunikasjonen og tømme datasamlebåndet mellom senteret og skaleringsenhetene. Du må kjøre denne prosessen før du kjører en Supply Chain Management-betjeningsoperasjon på senteret eller skaleringsenheten, men du kan også bruke dette i andre situasjoner. |
+| Gjenoppta skalaenhetskommunikasjon | Gjenoppta datasamlebåndmeldinger mellom senteret og en skalaenhet. Det kan hende at du må bruke denne prosessen, for eksempel etter at du har kjørt en Supply Chain Management-betjeningsoperasjon på senteret eller skaleringsenheten. |
+| Oppgrader arbeidsbelastninger | Synkroniser ny funksjonalitet mellom arbeidsbelastninger i senteret og på skalaenhetene. Det kan for eksempel hende at du må bruke denne prosessen når service har ført til at datautvekslingsspørringene kan endres, og/eller har lagt til nye tabeller eller felt i arbeidsbelastningen. |
+| Overfør arbeidsbelastninger til en skalaenhet | Planlegg en arbeidsbelastning som for øyeblikket kjører i senteret, for å flyttes til en skalaenhet. Når denne prosessen kjøres, vil datasynkroniseringen flyte, og både senteret og skalaenheten settes til å endre eierskapet av arbeidsbelastningen. |
+| Overfør skalaenhet til senteret | Planlegg en arbeidsbelastning som for øyeblikket kjører på en skalaenhet, for å flyttes til senteret. Når denne prosessen kjøres, vil datasynkroniseringen flyte, og både senteret og skalaenheten settes til å endre eierskapet av arbeidsbelastningen.
+| Nødoverføring til senteret | <p>Overfør en eksisterende arbeidsbelastning til senteret umiddelbart. *Denne prosessen endrer eierskapet av bare dataene som for øyeblikket er tilgjengelige i senteret.*</p><p><strong>Advarsel:</strong> Denne prosessen kan forårsake tap av data for usynkroniserte data og feil i forretningsprosesser. Den bør derfor bare brukes i nødssituasjoner, der forretningsprosesser må behandles i senteret, fordi skalaenheten har et strømbrudd som ikke kan repareres innen rimelig tid.</p> |
+| Avvikling av distribuert topologi | Fjern en skalaenhetsdistribusjon og kjør bare i senteret, uten behandling av arbeidsbelastning. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Administrering av skalaenhet og arbeidsbelastning.":::
 
 > [!TIP]
-> Over tid vil inkrementelle forbedringer legges til i Scale Unit Manager-opplevelsen for å gjøre det enklere å styre livssyklusadministrasjonen. De spesifikke egenskapene for den gjeldende versjonen er dokumentert i en håndbok for pålasting som er tilgjengelig for kunder som er i ferd med å ta i bruk den distribuerte, hybride topologien for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+> Over tid vil inkrementelle forbedringer legges til i Scale Unit Manager-opplevelsen for å gjøre det enklere å styre livssyklusadministrasjonen. De spesifikke egenskapene for den gjeldende versjonen er dokumentert i en håndbok for innføring som er tilgjengelig for kunder som er i ferd med å ta i bruk den distribuerte, hybride topologien for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+
+## <a name="feature-management-considerations-for-workloads"></a>Hensyn til funksjonsbehandling for arbeidsbelastninger
+
+Denne delen forklarer noen viktige aspekter du må ta hensyn til når du installerer arbeidsbelastninger, legger til funksjoner eller fjerner funksjoner i en utrulling av distribuert hybridtopologi. Flere scenarioer kan påvirke om du må kjøre en [oppgradering av arbeidsbelastning](#manage-workloads) etter at du har gjort endringer. Du må imidlertid vanligvis gjøre det når du oppdaterer eller legger til nye datautvekslingsspørringer og/eller legger til nye tabeller eller felter i en tidligere installert arbeidsbelastning.
+
+### <a name="mandatory-features-for-installing-a-workload"></a>Obligatoriske funksjoner for installasjon av arbeidsbelastning
+
+Når du installerer en arbeidsbelastning, oppretter installasjonen en arbeidsbelastningsdefinisjon som inneholder informasjon om datatabellene som brukes når data synkroniseres mellom de to distribusjonene. Opprettingen av en arbeidsbelastningsdefinisjon håndteres automatisk basert på funksjonene som for øyeblikket er aktivert i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Tabellen nedenfor viser funksjonene som må aktiveres for å generere arbeidsbelastningsdefinisjonene som kreves for å kjøre en lager- eller produksjonsarbeidsbelastning.
+
+| Obligatorisk funksjon | Arbeidsmengde |
+|---|---|
+| Automatisk tilordning av GUID-er i WHS-brukeroppretting | Lager |
+| Organisasjonsomfattende arbeidsblokkering | Lager |
+| Detaljer for forsendelsesbølgeetikett | Lager |
+| Skalaenhetsstøtte for arbeidslister for lagerapp | Lager |
+| Produksjonsutførelse | Produksjon |
+
+Når du distribuerer en arbeidsbelastning ved å bruke [distribusjonsverktøy for skalaenheter for utviklingsmiljøer med én boks](https://github.com/microsoft/SCMScaleUnitDevTools) eller [Scale Unit Manager-portalen](https://sum.dynamics.com), aktiveres alle de obligatoriske funksjonene automatisk. Hvis du imidlertid foretar en manuell testutrulling som mangler en eller flere obligatoriske funksjoner, mislykkes installasjonen av arbeidsbelastningen, og du får en melding som viser de manglende funksjonene. Du må deretter aktivere disse funksjonene og utløse installasjonen av arbeidsbelastningen på nytt.
+
+### <a name="enabling-or-disabling-features-that-have-data-synchronization-dependencies"></a>Aktivere eller deaktivere funksjoner som har avhengigheter i datasynkronisering
+
+Funksjoner som påvirker valg av data som synkroniseres mellom senteret og storskalaenhetene, påvirker også hvordan arbeidsbelastningsdefinisjonen opprettes. Det er derfor viktig at disse funksjonene aktiveres før du installerer arbeidsbelastningen. Hvis du aktiverer denne typen funksjon mens du kjører en arbeidsbelastning, må du generere arbeidsbelastningsdefinisjonen på nytt ved å kjøre en [oppgradering av arbeidsbelastning](#manage-workloads) etter at du har aktivert funksjonen. Hvis du deaktiverer en funksjon som har avhengigheter i datasynkronisering mens du kjører en arbeidsmengde, må du likeledes kjøre en [oppgradering av arbeidsbelastning](#manage-workloads) for å fjerne den relevante datasynkroniseringsinformasjonen fra arbeidsbelastningsdefinisjonen.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

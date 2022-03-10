@@ -2,26 +2,24 @@
 title: Sende fakturaer til arbeidsflytsystemet og avstemme produktkvitteringslinjer
 description: Dette emnet beskriver prosessen for å sende leverandørfakturaer til arbeidsflytsystemet og automatisk samsvare posterte produktkvitteringslinjer med leverandørfakturaer.
 author: abruer
-manager: AnnBe
-ms.date: 09/08/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534b5dbc54a516fea0b3f7090042d247c1076737
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0962ea2bfa28deb3e86620c364feffd209cfc38e
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231548"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109949"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Sende fakturaer til arbeidsflytsystemet og avstemme produktkvitteringslinjer
 
@@ -31,7 +29,7 @@ Dette emnet beskriver prosessen for å sende leverandørfakturaer til arbeidsfly
 
 ## <a name="submitting-imported-vendor-invoices-to-the-workflow-system-and-matching-posted-product-receipt-lines-to-pending-vendor-invoice-lines"></a>Sende importerte leverandørfakturaer til arbeidsflytsystemet og samsvare posterte produktkvitteringslinjer til ventende leverandørfakturalinjer
 
-Som en del av en berøringsfri faktureringsprosess for leverandører, kan du få systemet til automatisk å sende en importert faktura til arbeidsflytsystemet. Du kan konfigurere prosessen med å sende importerte fakturaer til arbeidsflytsystemet i kategorien **Automatisering av leverandørfaktura** på siden **Leverandørparametere** (**Leverandør \> Oppsett \> Leverandørparametere**). Prosessen for sending til arbeidsflyt vil kjøre i bakgrunnen med en angitt hyppighet (enten hver time eller daglig).
+Som en del av en berøringsfri faktureringsprosess for leverandører, kan en importert faktura sendes automatisk til arbeidsflytsystemet. Du kan konfigurere prosessen med å sende importerte fakturaer til arbeidsflytsystemet i kategorien **Automatisering av leverandørfaktura** på siden **Leverandørparametere** (**Leverandør \> Oppsett \> Leverandørparametere**). Prosessen for sending til arbeidsflyt vil kjøre i bakgrunnen med en angitt hyppighet (enten hver time eller daglig).
 
 Når du sender fakturaer automatisk til arbeidsflytsystemet, må du begynne med en importert faktura. Hvis du vil sikre at fakturaen kan behandles fra start til slutt uten manuell behandling, må du inkludere en automatisk posteringsoppgave i arbeidsflytkonfigurasjonen. Fakturaer som er knyttet til bestillinger og fakturaer som inneholder en ikke-bestillingsinnkjøpskategori og ikke-lagerførte linjer, kan sendes automatisk til arbeidsflytsystemet. Fakturaer som registreres manuelt, må sendes manuelt til arbeidsflytsystemet.
 
@@ -39,9 +37,11 @@ Verdien **Innsendte av** i arbeidsflyten er bruker-ID-en som ble angitt for bakg
 
 ## <a name="matching-posted-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Samsvare posterte produktkvitteringer med fakturalinjer som har en treveis kontrollpolicy
 
-Som en del av en berøringsfri faktureringsprosess, kan systemet automatisk samsvare posterte produktkvitteringer med fakturalinjer. Det må defineres et treveis kontrollpolicy for denne oppgaven. Denne funksjonen er tilgjengelig hvis funksjonen **Automatisering av leverandørfaktura** er aktivert på siden **Funksjonsbehandling**.
+Som en del av en berøringsfri faktureringsprosess, kan posterte produktkvitteringer samsvares automatisk med fakturalinjer. Det må defineres et treveis kontrollpolicy for denne oppgaven. Denne funksjonen er tilgjengelig hvis funksjonen **Automatisering av leverandørfaktura** er aktivert på siden **Funksjonsbehandling**.
 
-Prosessen vil kjøre til det samsvarende produktkvitteringsantallet er lik fakturaantallet. Som en del av denne prosessen kan du angi det maksimale antall ganger som systemet skal prøve å samsvare produktkvitteringer med en fakturalinje før prosessen mislykkes. Prosessen kjøres i bakgrunnen, enten hver time eller hver dag. Du kan kjøre den automatiserte samsvarsprosessen som en del av prosessen for å sende fakturaer til arbeidsflytsystemet. Du kan også kjøre den som en frittstående prosess. Innstillingene for prosessen for samsvaring av produktkvittering med fakturalinjer konfigureres i kategorien **Automatisering av leverandørfaktura** på siden **Leverandørparametere** (**Leverandør \> Oppsett \> Leverandørparametere**).
+Samsvarsprosessen vil kjøre til det samsvarende produktkvitteringsantallet er lik fakturaantallet. Hvis det imidlertid finnes flere produktmottak for én enkelt fakturalinje, må du kjøre prosessen flere ganger for å oppnå samsvarende antall. Du kan angi det maksimale antall ganger som systemet skal prøve å samsvare produktkvitteringer med en fakturalinje før prosessen mislykkes. Prosessen kjøres i bakgrunnen, enten hver time eller hver dag. 
+
+Du kan kjøre den automatiserte samsvarsprosessen som en del av prosessen for å sende fakturaer til arbeidsflytsystemet. Du kan også kjøre den som en frittstående prosess. Innstillingene for prosessen for samsvaring av produktkvittering med fakturalinjer konfigureres i kategorien **Automatisering av leverandørfaktura** på siden **Leverandørparametere** (**Leverandør \> Oppsett \> Leverandørparametere**).
 
 Fakturalinjer som har en treveis kontrollpolicy, der det samsvarende mottaksantallet er mindre enn fakturaantallet, blir inkludert i den automatiske mottaksprosessen.
 

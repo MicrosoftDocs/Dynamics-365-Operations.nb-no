@@ -1,31 +1,27 @@
 ---
 title: Farlige materialer i produkter, ordrer, forsendelser og laster
 description: Dette emnet forklarer hvordan du angir egenskaper for farlige materialer for frigitte produkter, hvordan du kan plassere lagergrenser på farlige varer, og hvordan du inkluderer farlige materialer i en salgsordre, forsendelse eller last.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434605"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570711"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Farlige materialer i produkter, ordrer, forsendelser og laster
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan du angir egenskaper for farlige materialer for frigitte produkter, hvordan du kan plassere lagergrenser på farlige varer, og hvordan du inkluderer farlige materialer i en salgsordre, forsendelse eller last.
 
@@ -40,7 +36,7 @@ Følg denne fremgangsmåten for å konfigurere et frigitt produkt som et farlig 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Velg eller opprett et produkt for å åpne siden **Detaljer om frigitt produkt**.
 1. På **Administrer lager**-hurtigfanen angir du **Farlig materiale**-alternativet til **Ja**. Denne innstillingen identifiserer varen som farlig og brukes når forsendelsesdokumentasjonen skrives ut.
-1. I handlingsruten, i kategorien **Administrer lager**, i gruppen **Samsvar** velger du valget for **varer med farlig materiale**.
+1. I handlingsruten, i fanen **Administrer lager**, i gruppen **Samsvar** velger du valget for **varer med farlig materiale**.
 1. Fyll ut siden for **vare, farlig materiale** for den valgte varen ved hjelp av feltene som er beskrevet i følgende underdeler.
 
 ### <a name="item-hazardous-materials-header"></a>Overskrift for vare med farlig materiale
@@ -56,7 +52,7 @@ Følgende tabell beskriver feltene som er tilgjengelige øverst på siden for **
 
 ### <a name="descriptions-fasttab"></a><a name="hazmat-description"></a>Hurtigfanen Beskrivelser
 
-Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Beskrivelser**.
+Følgende tabell beskriver feltene som er tilgjengelige i hurtigfanen **Beskrivelser**.
 
 | Felt | beskrivelse |
 |---|---|
@@ -68,7 +64,7 @@ Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Bes
 
 Hurtigfanen **Oversettelse av tekst for vareforsendelse** inneholder et rutenett som viser oversettelser av verdiene for **riktige leveringsnavn** som er definert for det primære språket i hurtigfanen **Beskrivelser**. Disse oversettelsene kan brukes i forsendelsesteksten for ett eller flere tilleggsspråk.
 
-Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Oversettelse av tekst for vareforsendelse**.
+Følgende tabell beskriver feltene som er tilgjengelige i hurtigfanen **Oversettelse av tekst for vareforsendelse**.
 
 
 | Felt | beskrivelse |
@@ -83,7 +79,7 @@ Hvis du vil legge til eller redigere en oversettelse, velger du **Oversettelser*
 
 ### <a name="material-management-fasttab"></a><a name="material-management"></a>Hurtigfanen Materialstyring
 
-Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Materialstyring**.
+Følgende tabell beskriver feltene som er tilgjengelige i hurtigfanen **Materialstyring**.
 
 | Felt | beskrivelse |
 |---|---|
@@ -129,7 +125,7 @@ Her er en nøkkel til formelen:
 
 ### <a name="transport-information-fasttab"></a>Hurtigfanen Transportinformasjon
 
-Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Transportinformasjon**.
+Følgende tabell beskriver feltene som er tilgjengelige i hurtigfanen **Transportinformasjon**.
 
 | Felt | beskrivelse |
 |---|---|
@@ -144,7 +140,7 @@ Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Tra
 
 ### <a name="environmental-information-fasttab"></a>Hurtigfanen for Miljøinformasjon
 
-Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien for **Miljøinformasjon**.
+Følgende tabell beskriver feltene som er tilgjengelige i hurtigfanen for **Miljøinformasjon**.
 
 | Felt | beskrivelse |
 |---|---|
@@ -157,7 +153,7 @@ Av sikkerhetsmessige årsaker må du kanskje begrense den totale mengden av et g
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Velg et produkt for å åpne siden **Detaljer om frigitt produkt**.
-1. I handlingsruten, i kategorien **Administrer lager**, i gruppen **Samsvar** velger du valget for **Rapporteringsdetaljer**.
+1. I handlingsruten, i fanen **Administrer lager**, i gruppen **Samsvar** velger du valget for **Rapporteringsdetaljer**.
 1. I feltene for **grense for farlig lagerbeholdning** og **grense for advarsel om fare** angir du de riktige verdiene for det valgte produktet.
 
 Rapporten om **grense for farlig lagerbeholdning** lar deg overvåke lagernivåene for farlige materialer på lagerlokasjonene, for å sørge for at de forblir under de sikre grensene som blir opprettet her. Hvis du vil ha mer informasjon, se [rapporten om grense for farlig lagerbeholdning](hazmat-reports.md#stock-limit-report).
@@ -221,3 +217,6 @@ Følg denne fremgangsmåten for å kjøre kompatibilitetssjekken.
 1. Velg **Kompatibilitetskontroll** i gruppen **Handlinger** i fanen **Laster**.
 
 Du får en melding som gir deg beskjed om resultatet av sjekken.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

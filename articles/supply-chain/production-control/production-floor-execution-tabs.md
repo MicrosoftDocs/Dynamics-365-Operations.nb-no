@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
-ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 4e2b3746e690623e347e0319ab1b55f2645a5e23
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.16
+ms.openlocfilehash: 6207627c1e901ce969e39d960adb5ab50f13e17d
+ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814686"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7790872"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Utform grensesnittet for produksjonsutførelse
 
@@ -32,7 +32,7 @@ På siden **Konfigurere produksjonsutførelse** kan du opprette og konfigurere f
 
 Hver fane er delt inn i fire deler, som vist i følgende illustrasjon.
 
-![Faneoppsett](media/pfe-tab-layout.png "Faneoppsett")
+![Faneoppsett.](media/pfe-tab-layout.png "Faneoppsett")
 
 Følgende elementer vises i illustrasjonen:
 
@@ -47,19 +47,19 @@ Hvis du vil opprette og konfigurere en ny fane, gjør du følgende:
 
 1. Velg **Utform faner** i handlingsruten for å åpne siden **Utform faner**.
 
-    ![Utform faner-siden](media/pfe-design-tabs.png "Utform faner-siden")
+    ![Utform faner-siden.](media/pfe-design-tabs.png "Utform faner-siden")
 
 1. Velg **Ny** i handlingsruten.
 
 1. Velg følgende innstillinger i toppteksten på siden:
 
     - **Fanenavn** – Angi et navn på fanen.
-    - **Hovedvisning** – Velg mellom de to forhåndsdefinerte jobblistene (*Aktive jobber*, *Alle jobber* eller *Min maskin*).
+    - **Hovedvisning** – Velg mellom de forhåndsdefinerte jobblistene (*Aktive jobber*, *Alle jobber* eller *Min maskin*).
     - **Detaljvisning** – Velg mellom en tom verdi eller **Jobbdetaljer**. Hvis du velger den tomme verdien, vil det ikke være noen detaljert visning i fanen. Hvis du velger **Jobbdetaljer**, vil den detaljerte visningen inneholde en detaljert beskrivelse av jobben som er valgt i jobblisten i hovedvisningen.
 
 1. Under **Primær verktøylinje** velger du hvilke knapper som skal være tilgjengelige på den primære verktøylinjen. Kolonnen **Tilgjengelige handlinger** viser en liste over alle knappene som kan legges til. Kolonnen **Valgte handlinger** viser en liste over alle knappene som er inkludert i den gjeldende konfigurasjonen. Bruk knappene mellom kolonnene til å flytte valgte elementer mellom kolonnene etter behov. Bruk opp- og ned-knappene ved siden av kolonnen **Valgte handlinger** til å angi i hvilken rekkefølge knappene skal vises i, i brukergrensesnittet.
 
-1. Under **Sekundær** **verktøylinje** velger du hvilke knapper som skal være tilgjengelige på den sekundære verktøylinjen. Kolonnen **Tilgjengelige handlinger** viser en liste over alle knappene som kan legges til. Kolonnen **Valgte handlinger** viser en liste over alle knappene som er inkludert i den gjeldende konfigurasjonen. Bruk knappene mellom kolonnene til å flytte valgte elementer mellom kolonnene etter behov. Bruk opp- og ned-knappene ved siden av kolonnen **Valgte handlinger** til å angi i hvilken rekkefølge knappene skal vises i, i brukergrensesnittet.
+1. Under **Sekundær verktøylinje** velger du hvilke knapper som skal være tilgjengelige på den sekundære verktøylinjen. Kolonnen **Tilgjengelige handlinger** viser en liste over alle knappene som kan legges til. Kolonnen **Valgte handlinger** viser en liste over alle knappene som er inkludert i den gjeldende konfigurasjonen. Bruk knappene mellom kolonnene til å flytte valgte elementer mellom kolonnene etter behov. Bruk opp- og ned-knappene ved siden av kolonnen **Valgte handlinger** til å angi i hvilken rekkefølge knappene skal vises i, i brukergrensesnittet.
 
 ## <a name="associate-a-tab-with-a-configuration"></a>Knytt en fane til en konfigurasjon
 
@@ -67,7 +67,7 @@ Etter at du har utformet alle fanene du trenger, kan du knytte dem til en konfig
 
 1. Gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurere produksjonsutførelse**.
 
-    ![Konfigurer produksjonsutførelse](media/pfe-config-prod-floor-execution.png "Konfigurer produksjonsutførelse")
+    ![Konfigurer produksjonsutførelse.](media/pfe-config-prod-floor-execution.png "Konfigurer produksjonsutførelse")
 
 1. Velg **Legg til** på hurtigfanen **Fanevalg**.
 

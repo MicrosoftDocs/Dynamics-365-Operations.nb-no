@@ -2,11 +2,9 @@
 title: Vanlige kilder til produksjonsavvik
 description: Denne artikkelen beskriver forskjellige vanlige kilder til hver type produksjonsavvik.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcVarianceTrans
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f36e482595cad49d1149873f8bcdd6a05a3287d5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce352db56fe41264562fd11260f9fa91931babeeb62d352327a588fb622492d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766200"
 ---
 # <a name="common-sources-of-production-variances"></a>Vanlige kilder til produksjonsavvik
 

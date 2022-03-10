@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 86551cfeda1e4204c91b0534cda563012191e25c
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348122"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323784"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Feilsøke datakilder for et utført ER-format for å analysere dataflyt og transformasjon
 
@@ -28,7 +28,7 @@ ms.locfileid: "6348122"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Når du [konfigurerer](tasks/er-format-configuration-2016-11.md) en ER-løsning (elektronisk rapportering) for å generere utgående dokumenter, definerer du metoden som brukes til å hente data ut av applikasjonen, og angir den i utdataene som genereres. For å få livssyklusstøtten for ER-løsningen mer effektiv, bør løsningen bestå av en ER [datamodell](general-electronic-reporting.md#DataModelComponent) og kompentene for [tilordning](general-electronic-reporting.md#ModelMappingComponent) og også et ER-[format](general-electronic-reporting.md#FormatComponentOutbound) og de tilhørende tilordningskomponentene, slik at modelltilordningen er programspesifikk mens andre komponenter forblir programagnostiske. Derfor kan flere ER-komponenter [påvirke](general-electronic-reporting.md#FormatComponentOutbound) prosessen med å registrere data i de genererte utdataene.
+Når du [konfigurerer](tasks/er-format-configuration-2016-11.md) en ER-løsning (elektronisk rapportering) for å generere utgående dokumenter, definerer du metoden som brukes til å hente data ut av applikasjonen, og angir den i utdataene som genereres. For å få livssyklusstøtten for ER-løsningen mer effektiv, bør løsningen bestå av en ER datamodell og kompentene for tilordning og også et ER-format og de tilhørende tilordningskomponentene, slik at modelltilordningen er programspesifikk mens andre komponenter forblir programagnostiske. Derfor kan flere ER-komponenter påvirke prosessen med å registrere data i de genererte utdataene.
 
 Noen ganger vil dataene i den genererte utskriften se annerledes ut enn de samme dataene i programdatabasen. I disse tilfellene vil du avgjøre hvilken ER-komponent som er ansvarlig for datatransformasjonen. Feilsøkerfunksjonen for ER-datakilde reduserer tiden og kostnadene som er involvert i denne undersøkelsen betydelig. Du kan avbryte utførelsen av et ER-format og åpne feilsøkergrensesnittet for datakilden. Der kan du bla gjennom de tilgjengelige datakildene og velge en enkelt datakilde for utførelse. Denne manuelle utførelsen simulerer utførelsen av datakilden under den virkelige kjøringen av et ER-format. Resultatet vises på en side der du kan analysere de mottatte dataene.
 
@@ -190,9 +190,9 @@ Hvis du vil bruke en ER-løsning for å generere en elektronisk betalingsfil for
 
 I tillegg til det valgte ER-formatet må følgende [konfigurasjoner](general-electronic-reporting.md#Configuration) importeres automatisk til Microsoft Dynamics 365 Finance-forekomsten som en del av ER-løsningen **ISO20022-kredittoverføring**:
 
-- **Betalingsmodell** [ER-datamodellkonfigurasjon](general-electronic-reporting.md#DataModelComponent)
-- **ISO20022-kredittoverføring** [ER-formatkonfigurasjon](general-electronic-reporting.md#FormatComponentOutbound)
-- **Betalingsmodelltilordning 1611** [ER-modelltilordningskonfigurasjon](general-electronic-reporting.md#ModelMappingComponent)
+- **Betalingsmodell** ER-datamodellkonfigurasjon
+- **ISO20022-kredittoverføring** ER-formatkonfigurasjon
+- **Betalingsmodelltilordning 1611** – ER-modelltilordningskonfigurasjon
 - **Betalingsmodelltilordning til mål ISO20022** – ER-modelltilordningskonfigurasjon
 
 Du finner disse konfigurasjonene på siden **Konfigurasjoner** i ER-rammeverket (**Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**).
@@ -234,7 +234,7 @@ Hvis noen av de tidligere angitte konfigurasjonene mangler i konfigurasjonstreet
 
     Merk at formatelementet under **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** er konfigurert til å angi IBAN-koden for leverandørkontoen i betalingsfilen.
 
-    ![BankIBAN-elementet på Formatutforming-siden.](./media/er-data-debugger-format.png)
+    ![BankIBAN-formatelement på Formatutforming-siden.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>Tillegg 2: Konfigurere leverandører
 

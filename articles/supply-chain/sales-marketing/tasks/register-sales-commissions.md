@@ -1,26 +1,24 @@
 ---
 title: Registrere salgsprovisjoner
 description: Dette emnet forklarer hvordan salgsprovisjon beregnes og registreres.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CommissionTrans, LedgerTransVoucher, CustClassificationGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4334fcd996f32b00bb399d3df5c43eb6bf50ab28
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010704"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575369"
 ---
 # <a name="register-sales-commissions"></a>Registrere salgsprovisjoner
 
@@ -70,3 +68,6 @@ Noter kunde- og varenumrene du har valgt for provisjonsprosessen, og bruk dem n�
 3. Lukk siden.
 4. Velg **Bilag**. Du kan vise bilagstransaksjonene for provisjonsbeløpene som er postert til de forhåndsdefinerte provisjonsutgifts- og provisjonsbetalingskontoene.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

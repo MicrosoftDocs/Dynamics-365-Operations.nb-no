@@ -2,9 +2,7 @@
 title: DATETODATETIME ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen DATETODATETIME.
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d30fdc9c7b6f277b8712b733cabdb0552db2a748
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 1e5fa64b776ed2702ac65a2f6416adcf657c748caa1156a71b4c3e99ee188880
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563588"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755013"
 ---
 # <a name="datetodatetime-er-function"></a>DATETODATETIME ER-funksjonen
 

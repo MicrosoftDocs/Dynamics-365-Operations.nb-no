@@ -1,23 +1,24 @@
 ---
 title: Definere et menyelement for en mobilenhet for å angi en plukklinjeoversikt
 description: Dette emnet beskriver hvordan du definerer når en liste over alle arbeidslinjer skal vises til lagermedarbeidere som behandler lagerarbeid på en mobilenhet. Denne funksjonen kan være nyttig for lagerarbeidere som ofte må ha en oversikt over plukklinjene i en arbeidsordre, slik at de kan optimalisere plukkingsrekkefølgen.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6eaba6da313f398c8d30f9a26c959ee971812e21
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818878"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7901928"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Definere et menyelement for en mobilenhet for å angi en plukklinjeoversikt
 

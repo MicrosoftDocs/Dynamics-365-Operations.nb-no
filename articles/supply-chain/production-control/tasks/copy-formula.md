@@ -1,27 +1,24 @@
 ---
 title: Kopiere en formel
 description: Denne prosedyren fokuserer på å opprette en formel som inneholder de samme ingrediensene som en eksisterende formel, men med små forskjeller.
-author: ShylaThompson
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26524f886a8af545869bacef4d57bfc14c0ed225
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 654e631ee7f2f3bbd2d874ad698f1ecaeaa14418
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434135"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566677"
 ---
 # <a name="copy-a-formula"></a>Kopiere en formel
 
@@ -32,36 +29,39 @@ Denne prosedyren fokuserer på å opprette en formel som inneholder de samme ing
 
 ## <a name="create-a-formula"></a>Opprette en formel
 1. Gå til Behandling av produktinformasjon > Stykklister og formler > Formler.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i feltet Formel.
 4. Skriv inn en verdi i Navn-feltet.
     * Skriv inn et relevant navn for formelen.  
-5. Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.
-6. Klikk koblingen i den valgte raden i listen.
-7. Klikk rullegardinknappen i feltet Varegruppe for å åpne oppslaget.
+5. Klikk på rullegardinknappen i Område-feltet for å åpne oppslaget.
+6. Klikk på koblingen i den valgte raden i listen.
+7. Klikk på rullegardinknappen i feltet Varegruppe for å åpne oppslaget.
 8. Finn og velg ønsket post i listen.
-9. Klikk koblingen i den valgte raden i listen.
-10. Klikk Lagre.
+9. Klikk på koblingen i den valgte raden i listen.
+10. Klikk på Lagre.
 
 ## <a name="copy-formula-lines"></a>Kopier formellinjer
-1. Klikk Formel i handlingsruten.
-2. Klikk Kopier.
-3. Klikk rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
-4. Klikk koblingen i den valgte raden i listen.
-5. Klikk rullegardinknappen i feltet Formelversjon for å åpne oppslaget.
-6. Klikk koblingen i den valgte raden i listen.
-7. Klikk OK.
+1. Klikk på Formel i handlingsruten.
+2. Klikk på Kopier.
+3. Klikk på rullegardinknappen i Varenummer-feltet for å åpne oppslaget.
+4. Klikk på koblingen i den valgte raden i listen.
+5. Klikk på rullegardinknappen i feltet Formelversjon for å åpne oppslaget.
+6. Klikk på koblingen i den valgte raden i listen.
+7. Klikk på OK.
 
 ## <a name="adjust-copied-formula-lines"></a>Juster kopierte formellinjer
 1. Merk den valgte raden i listen.
-2. Klikk Slett.
-3. Klikk Ja.
+2. Klikk på Slett.
+3. Klikk på Ja.
 
 ## <a name="approve-formula"></a>Godkjenn formel
-1. Klikk Formel i handlingsruten.
-2. Klikk Godkjenn formel.
-3. Klikk rullegardinknappen i Godkjent av-feltet for å åpne oppslaget.
-4. Klikk koblingen i den valgte raden i listen.
-5. Klikk Velg.
-6. Klikk OK.
+1. Klikk på Formel i handlingsruten.
+2. Klikk på Godkjenn formel.
+3. Klikk på rullegardinknappen i Godkjent av-feltet for å åpne oppslaget.
+4. Klikk på koblingen i den valgte raden i listen.
+5. Klikk på Velg.
+6. Klikk på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

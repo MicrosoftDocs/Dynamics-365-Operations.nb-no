@@ -1,26 +1,24 @@
 ---
 title: Leverandørforespørselskonfigurasjoner
 description: Dette emnet beskriver feltene som må fylles ut i en ny leverandørforespørsel.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationConfig
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 987b9cefef395b3bf3e915f41232fe0daba213b9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1d34a9974da41b7abb40bb2cf046a15432c249eb
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021170"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570303"
 ---
 # <a name="vendor-request-configurations"></a>Leverandørforespørselskonfigurasjoner
 [!include [banner](../includes/banner.md)]
@@ -53,3 +51,6 @@ Du kan også angi en bekreftelsesmelding som skal vises når veiviseren er ferdi
 4.  Åpne fanen **Land/regioner** for å velge landet/regionen som skal brukes for konfigurasjonen.
 5.  Fullfør konfigurasjonen ved å følge retningslinjene for standardkonfigurasjonen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

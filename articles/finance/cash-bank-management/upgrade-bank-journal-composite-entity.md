@@ -1,12 +1,10 @@
 ---
 title: Oppdatere sammensatt enhet for bankjournal
-description: Fremgangsmåten nedenfor kreves for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity.
-author: ShylaThompson
-manager: panolte
+description: Dette emnet viser fremgangsmåten som kreves for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity.
+author: panolte
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: roschlom
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e6c990208f26dde26b7adc306198f7cd16e0e69b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0d4334e9aa333aad116f0a0291d9175268661f11
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978920"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595440"
 ---
 # <a name="update-the-bank-journal-composite-entity"></a>Oppdatere sammensatt enhet for bankjournal
 
 [!include [banner](../includes/banner.md)]
 
-Fremgangsmåten nedenfor kreves for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity.
+Dette emnet viser fremgangsmåten som kreves for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity.
 
 Bruk fremgangsmåten nedenfor for å legge til tilleggsfeltet BankTransactionType i den sammensatte BankJournalEntity.
 
@@ -54,3 +52,6 @@ Bruk fremgangsmåten nedenfor for å legge til tilleggsfeltet BankTransactionTyp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

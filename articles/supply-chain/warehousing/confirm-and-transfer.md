@@ -2,26 +2,23 @@
 title: Bekreft og overfør
 description: Dette emnet forklarer hvordan du bruker funksjonen Bekreft og overfør, som gjør at brukere kan levere last fra lageret før de fullfører alt arbeidet som er knyttet til disse lastene.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434175"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103595"
 ---
 # <a name="confirm-and-transfer"></a>Bekreft og overfør
 
@@ -48,20 +45,17 @@ Du kan bare dele last som oppfyller alle disse kriteriene:
 
 - Én eller flere lastlinjer har plukket antall.
 - Laststatusen er mindre enn lastet inn.
-- Det finnes ingen lastlinjedata. (Disse dataene opprettes via nummerskiltkonsolidering på oppsamlingslokasjonen, og *Bekreft og overfør*-funksjonen støtter ikke nummerskiltkonsolidering.)
-- Ingen beholdning venter på pakking på en pakkelokasjon. (*Bekreft og overfør*-funksjonen støtter ikke beholdning som er plukket til pakkestasjonen, men som ennå ikke er pakket.)
+- Det finnes ingen lastlinjedata. (Disse dataene opprettes via nummerskiltkonsolidering på oppsamlingslokasjonen, og Bekreft og overfør-funksjonen støtter ikke nummerskiltkonsolidering.)
+- Ingen beholdning venter på pakking på en pakkelokasjon. (*Bekreft og overfør*-funksjonen støtter ikke lager som er plukket til pakkestasjonen, men er ennå ikke pakket med mindre containere som er pakket, plasseres ved oppsamlingslokasjoner med lastearbeid opprettet.)
 
 > [!NOTE]
 > Denne funksjonaliteten er forskjellig fra transportlastfunksjonaliteten, som skal brukes i lagre som aldri kan planlegge og opprette last før plukking, men som i stedet laster inn tilgjengelig transportplass etter at plukkingen er fullført.
 >
 > Bruk *Bekreft og overfør*-funksjonen i situasjoner der laster vanligvis planlegges og opprettes før, men der det av og til oppstår unntak der lasten ikke passer til den tilgjengelige transporten (for eksempel en lastebil).
 
-## <a name="turn-on-confirm-and-transfer"></a>Aktiver bekreft og overfør
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Bekreft og overfør
 
-Før du kan bruke funksjonen *Bekreft og overfør*, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Bekreft og overfør*
+Du må aktivere funksjonen *Bekreft og overfør* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Bekreft og overfør* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Konfigurer bekreft og overfør
 
@@ -106,7 +100,7 @@ Dette oppsettet er ikke nødvendig i alle situasjoner. Eksemplet som vises her, 
 Dette scenariet viser et eksempel der plukkprosessen ennå ikke er fullført, men varene som er plukket så langt, må lastes inn i en lastebil og sendes likevel. Derfor kan brukeren dele opp de ikke-plukkede lastlinjene på en ny last. Alle datarelasjonene blir deretter oppdatert automatisk.
 
 > [!NOTE]
-> De spesifikke verdiene som beskrives i dette scenariet, er basert på **USMF**-demodataene. Vi anbefaler at du bruker denne demodataene mens du demonstrerer eller lærer hvordan du bruker funksjonen. Hvis du ikke bruker **USMF**-demodata, må du bytte ut dine egne verdier etter behov.
+> De spesifikke verdiene som beskrives i dette scenariet, er basert på **USMF**-demodataene. Det anbefales at du bruker denne demodataene mens du demonstrerer eller lærer hvordan du bruker funksjonen. Hvis du ikke bruker **USMF**-demodata, må du bytte ut dine egne verdier etter behov.
 
 ### <a name="step-1-create-a-load-that-has-multiple-load-lines"></a>Trinn 1: Opprette en last som har flere lastlinjer
 
@@ -180,7 +174,7 @@ Oppgaver for mobile enheter krever informasjon fra brukerens inndata, for eksemp
 1. I **LP**-feltet angir du nummerskilt-ID-en. Nummerskilt-ID-en må være et treff for varen, lageret og lokasjonen til varen som blir plukket fra den valgte lokasjonen. Når du er ferdig, velg **Enter**.
 1. I **Vare**-feltet angir du varenummeret som skal bekrefte varen som skal plukkes, og deretter velger du **Enter**.
 1. I **Qty**-feltet angir du antallet for varen som skal plukkes, og deretter velger du **Enter**.
-1. I **Mål-LP**-feltet angir du målnummerskilt-ID-en. Målnummerskilt er brukerdefinert. Pass på at du angir en nummerskilt-ID som du vil huske. Vi anbefaler at du bruker gjeldende dato pluss en tosifret sekvens (ÅÅMMDD\#\#) som format, for eksempel *19112301*. Når du er ferdig, velg **Enter**.
+1. I **Mål-LP**-feltet angir du målnummerskilt-ID-en. Målnummerskilt er brukerdefinert. Pass på at du angir en nummerskilt-ID som du vil huske. Det anbefales at du bruker gjeldende dato pluss en tosifret sekvens (ÅÅMMDD\#\#) som format, for eksempel *19112301*. Når du er ferdig, velg **Enter**.
 1. Se gjennom informasjonen som vises. Denne informasjonen er *Plukk*-informasjonen som nå blir *Plasser*-dataene for Plasser-transaksjonen. Når du er ferdig, velg **Enter**.
 
     - Du mottar en **Arbeids fullført**-melding.
@@ -230,3 +224,6 @@ Du kan også bekrefte at transaksjonsrelasjoner er oppdatert på følgende måte
 - **Del antall til ny last**-alternativet fungerer også når noen av de gjenværende arbeidshodene har statusen *Pågår*. Derfor kan du fremdeles bruke funksjonaliteten selv om arbeiderne allerede kjører plukkordrene.
 - Hvis du velger **Avbryt ikke-fullført antall** mens det er gjenstående arbeid som har statusen *Åpen* eller *Pågår*, får du følgende feilmelding: Kan ikke avbryte gjenstående antall for last. Arbeid finnes for lasten.
 - Hvis du velger **Avbryt ikke-fullført antall** når det ikke er noe gjenstående arbeid, men det finnes frigitte lastlinjer, får du følgende feilmelding: Kan ikke bekrefte leveringen for lasten fordi antallet for varer overskrider prosenten som er definert for underlevering. For å unngå feilen kan du angi **Underlevering**-prosent på den ikke-frigitte lastlinjen til 100 prosent. Ikke-frigitte linjer vil ikke bli flyttet til en ny last, men gjeldende last vil bli bekreftet med underlevering. I dette tilfellet kan du ikke frigi den opprinnelige ordren på nytt. Derfor må du også håndtere den på en annen måte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,6 @@
 title: Konfigurere og filtrere arbeidsområder
 description: Denne artikkelen gir en oversikt over hvordan du konfigurerer og filtrerer arbeidsområder.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4f587608b03512aabce1d9b76ec4b9d6ec9227b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e96b61457f222836d50a75ed15305c3c1267600c
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559438"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068740"
 ---
 # <a name="configure-and-filter-workspaces"></a>Konfigurere og filtrere arbeidsområder
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Denne artikkelen gir en oversikt over hvordan du konfigurerer og filtrerer arbeidsområder.
 
@@ -33,11 +35,11 @@ Denne artikkelen gir en oversikt over hvordan du konfigurerer og filtrerer arbei
 
 Du kan endre utseendet og virkemåten til noen arbeidsområder ved å oppdatere innstillinger som gjelder hele arbeidsområdet. Når du kan konfigurere et arbeidsområde, inneholder handlingsruten en knapp som angir at du kan klikke den for å gjøre endringer i konfigurasjonen. I illustrasjonen nedenfor heter for eksempel knappen **Konfigurer mitt arbeidsområde**.
 
-[![konfigurere-og-filtrere-arbeidsområder](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![konfigurere-og-filtrere-arbeidsområder.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 Når du klikker knappen, vises en dialogboks. Der kan du endre de forhåndsdefinerte innstillingene for arbeidsområdet. De bestemte innstillingene du ser i denne dialogboksen, varierer etter hvert arbeidsområde og er avhengig av bestemte kontroller og forretningsdata som er tilgjengelige i arbeidsområdet.
 
-[![konfigurere-mitt-arbeidsområde](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![konfigurere-mitt-arbeidsområde.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Filtrere et arbeidsområde
 
@@ -47,11 +49,11 @@ Mange arbeidsområder lar deg filtrere innholdet som vises i filene. Kontrollene
 
 Du kan filtrere hele arbeidsområdet ved å bruke et filter for hele arbeidsområdet. Et filter for hele arbeidsområdet vises i øvre venstre hjørne på arbeidsområdet. Når du velger en bestemt verdi i rullegardinlisten, blir innholdet i arbeidsområdet filtrert basert på dette valget.
 
-[![arbeidsområde-filtrere](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![arbeidsområde-filtrere.](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 Når du klikker for å åpne filteret, vises flere alternativer.
 
-[![arbeidsområde-filter-utvidet](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![arbeidsområde-filter-utvidet.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Velg et alternativ for å filtrere arbeidsområdet basert på dette alternativet.
 
@@ -59,7 +61,7 @@ Velg et alternativ for å filtrere arbeidsområdet basert på dette alternativet
 
 Hvis enkelte deler av arbeidsområdet har filtre, kan du filtrere hver del separat. I illustrasjonen nedenfor, er filteret (feltet som inneholder teksten "Filter") et eksempel på et filter for frihåndstekst.
 
-[![arbeidsområde-del-filtre](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![arbeidsområde-del-filtre.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Som med et filter for hele arbeidsområdet velger eller angir du en verdi i feltet for å filtrere innholdet i delen.
 

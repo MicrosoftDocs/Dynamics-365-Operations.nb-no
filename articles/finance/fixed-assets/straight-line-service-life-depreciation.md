@@ -1,35 +1,32 @@
 ---
 title: Lineær levetidsavskrivning
-description: Denne artikkelen gir en oversikt over avskrivningsmetoden lineær levetid.
-author: ShylaThompson
-manager: AnnBe
+description: Dette emnet gir en oversikt over lineær levetidsavskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b7b9b240156263b4dc1bc308a7f4457380a27f3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b34cdf9485d38cdbf1362bd605841201a4295f26
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446428"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675277"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Lineær levetidsavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen gir en oversikt over avskrivningsmetoden lineær levetid.
+Dette emnet gir en oversikt over lineær levetidsavskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmidler og velger Lineær levetid i feltet Metode på siden Avskrivningsprofiler, avskrives anleggsmidlene som har denne avskrivningsprofilen basert på den samlede levetiden til anleggsmiddelet. Dette er vanligvis det samme avskrivningsbeløpet i hver avskrivningsperiode. 
 
@@ -47,11 +44,11 @@ Hvis du velger Kalender, antas det at året er 1. januar til 31.desember, selv o
 Alternativet Kalender oppdaterer avskrivningsgrunnlaget, som vanligvis er netto bokført verdi minus restverdi, 1. januar hvert år. I eksemplene senere i dette emnet er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. 
 
 Hvis du velger Kalender, er følgende alternativer tilgjengelige i Periodefrekvens-feltet, som definerer posteringsdatoer for avskrivningsavsetning og beløp gjennom hele kalenderåret:
--   Årlig posterer et beløp 31. desember.
--   Månedlige posteringer av et månedlig beløp på slutten av hver kalendermåned.
--   Kvartalsvise posteringer av et kvartalsvis beløp på slutten av hvert kalenderkvartal (31. mars, 30. juni, 30. september og 31. desember).
--   Halvårlig posterer et halvårlig beløp på slutten av hvert kalenderår (30. juni og 31. desember).
--   Daglige posteringer av avskrivningsbeløpet for den daglige avskrivningsmetoden ved å bruke én transaksjon per dag.
+- Årlig posterer et beløp 31. desember.
+- Månedlige posteringer av et månedlig beløp på slutten av hver kalendermåned.
+- Kvartalsvise posteringer av et kvartalsvis beløp på slutten av hvert kalenderkvartal (31. mars, 30. juni, 30. september og 31. desember).
+- Halvårlig posterer et halvårlig beløp på slutten av hvert kalenderår (30. juni og 31. desember).
+- Daglige posteringer av avskrivningsbeløpet for den daglige avskrivningsmetoden ved å bruke én transaksjon per dag.
 
 Hvis du velger for eksempel Årlig, posteres den årlige avskrivningen bare én gang, den 31. desember i hvert år. Hvis du velger Månedlig, posteres den månedlige avskrivningen hver måned som en tolvdel av det årlige avskrivningsbeløpet.
 
@@ -62,15 +59,15 @@ Hvis du velger Skattemessig i feltet Avskrivningsår, brukes lineær levetidsavs
 For regnskapsåret 1. juli til 30. juni starter for eksempel avskrivningsberegningen 1. juli. Regnskapsåret kan være lengre eller kortere enn 12 måneder. Avskrivningen justeres automatisk for hver regnskapsperiode. Lengden på det neste regnskapsåret baseres på regnskapsperiodene som du definerer når du oppretter et nytt regnskapsår på skjemaet med regnskapskalendere. 
 
 Hvis du velger Regnskapsår, er følgende alternativer tilgjengelige i Periodefrekvens-feltet:
--   Årlig posterer totalbeløpet for avskrivningen som beregnes for regnskapsåret, som ett beløp på den siste dagen i regnskapsåret.
--   Regnskapsperioder beregner totalbeløpet for avskrivningen for regnskapsåret, som avsettes i regnskapsperiodene som defineres i skjemaet for regnskapskalender for regnsapskalenderen.
+- Årlig posterer totalbeløpet for avskrivningen som beregnes for regnskapsåret, som ett beløp på den siste dagen i regnskapsåret.
+- Regnskapsperioder beregner totalbeløpet for avskrivningen for regnskapsåret, som avsettes i regnskapsperiodene som defineres i skjemaet for regnskapskalender for regnsapskalenderen.
 
 ## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Eksempel på lineær avskrivning for et uendret anleggsmiddel
 Anta at anleggsmidlet har følgende egenskaper:
 
-|                     |        |
-|---------------------|--------|
-| Anskaffelseskostnad    | 11 000 |
+| Kjennetegn      | Verdi  |
+|:---------------------|--------:|
+| Anskaffelseskostnad    | 11,000 |
 | Restverdi       | 1 000  |
 | Avskrivningsgrunnlag   | 10 000 |
 | Levetid i år  | 5      |
@@ -79,7 +76,7 @@ Anta at anleggsmidlet har følgende egenskaper:
 Du får samme avskrivningsbeløp hvert år. (Anskaffelseskostnad - Restverdi) / Levetidsår
 
 | Periode | Beregning av årlig avskrivningsbeløp | Netto bokført verdi på slutten av året |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | År 1 | (11,000 - 1,000) / 5 = 2,000              | 9 000                                 |
 | År 2 | (11,000 - 1,000) / 5 = 2,000              | 7 000                                 |
 | År 3 | (11,000 - 1,000) / 5 = 2,000              | 5 000                                 |
@@ -93,7 +90,7 @@ Sett at du legger til en anskaffelsesjustering på 4 000 i år 2 for samme anleg
 Levetiden for anskaffelsesjusteringen er den samme som den til anleggsmidlet, og begynner på anskaffelsestidspunktet. En netto bokført verdi gjenstår ved utgangen av år 5, som tilsvarer netto bokført verdi for anskaffelsesjusteringen. Avskrivning etter periode blir beregnet som vist i følgende tabell.
 
 | Periode | Beregning av årlig avskrivningsbeløp | Netto bokverdi på slutten av året |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | År 1 | 10,000 / 5 = 2,000                        | 11,000 - 2,000 = 9,000                |
 | År 2 | 4,000 (anskaffelsesjustering)            | 9,000 + 4,000 =13,000                 |
 | År 2 | 14,000 / 5 = 2,800                        | 13,000 - 2,800 = 10,200               |
@@ -108,3 +105,6 @@ Levetiden for anskaffelsesjusteringen er den samme som den til anleggsmidlet, og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

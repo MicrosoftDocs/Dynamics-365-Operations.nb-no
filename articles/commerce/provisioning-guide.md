@@ -1,16 +1,13 @@
 ---
 title: Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du klargjør et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+description: Dette emnet forklarer hvordan du klargjør et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,25 +15,23 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4414799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777506"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du klargjør et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+Dette emnet forklarer hvordan du klargjør et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 
 Før du begynner, anbefaler vi at du tar en rask titt på dette emnet for å få en pekepinn på hva prosessen krever.
 
 > [!NOTE]
 > Commerce-evalueringsmiljøer er ikke generelt tilgjengelige, og gis til partnere og kunder på et per forespørsel-grunnlag. Hvis du vil ha mer informasjon, ta kontakt med din Microsoft-partnerkontakten din.
-
-## <a name="overview"></a>Oversikt
 
 For å kunne klargjøre et Commerce-evalueringsmiljø må du opprette et prosjekt som har et bestemt produktnavn og type. Miljøet og Commerce Scale Unit (CSU) har også bestemte parametere du må bruke når du forventer å klargjøre e-handel senere. Instruksjonene i dette emnet beskriver alle nødvendige trinn som må fullføres for å klargjøre, og parameterne du må bruke.
 
@@ -81,7 +76,7 @@ Hvis du vil opprette et nytt prosjekt i LCS, gjør du følgende:
 
 ### <a name="add-the-azure-connector"></a>Legge til Azure-koblingen
 
-Hvis du vil legge til Azure-kobling i LCS-prosjektet, følger du fremgangsmåten i [Fullføre jobbintroduksjon for Azure Resource Manager (ARM)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
+Hvis du vil legge til Azure-kobling i LCS-prosjektet, følger du fremgangsmåten i [Fullføre jobbintroduksjon for Azure Resource Manager (ARM)](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
 
 ### <a name="deploy-the-environment"></a>Distribuere miljøet
 
@@ -95,16 +90,16 @@ Gjør følgende for å distribuere miljøet.
 1. I feltet **Programversjon** velger du den nyeste versjonen. Hvis du har et bestemt behov for å velge en annen programversjon enn den nyeste versjonen, må du ikke velge en tidligere versjon enn **10.0.14**.
 1. I **Plattformversjon**-feltet bruker du plattformversjonen som automatisk velges for den valgte programversjonen. 
 
-    ![Velge program- og plattformversjoner](./media/project1.png)
+    ![Velge program- og plattformversjoner.](./media/project1.png)
 
 1. Velg **Neste**.
 1. Velg **Demo** som miljøtopologien.
 
-    ![Velge miljøtopologien 1](./media/project2.png)
+    ![Velge miljøtopologien 1.](./media/project2.png)
 
 1. På **Distribusjonsmiljø**-siden angir du et miljønavn. La Avanserte innstillinger stå som de er.
 
-    ![Distribusjonsmiljø-siden](./media/project4.png)
+    ![Distribusjonsmiljø-siden.](./media/project4.png)
 
 1. Juster VM-størrelsen etter behov. (Vi anbefaler VM-lagerenhet \[SKU\] **D13 v2**.)
 1. Se gjennom vilkårene for prising og lisensiering, og merk deretter av i avmerkingsboksen for å angi at du godtar dem.
@@ -117,7 +112,7 @@ Gjør følgende for å distribuere miljøet.
 
 ### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initialisere Commerce Scale Unit (sky)
 
-Hvis du vil initialisere en CSU-adresse, følger du disse trinnene.
+For å initialisere CSU-en, følger du disse trinnene.
 
 1. Velg miljøet ditt fra listen i visningen **Skybaserte miljøer**.
 1. Klikk **Detaljerte opplysninger** i miljøvisningen til høyre. Detaljerte opplysninger for miljø vises.
@@ -130,6 +125,22 @@ Hvis du vil initialisere en CSU-adresse, følger du disse trinnene.
 1. Før du fortsetter må du kontrollere at miljøstatusen til CSU er **Vellykket**. Initialiseringen tar omtrent to til fem timer.
 
 Hvis du ikke finner **Behandle**-koblingen i miljødetaljvisningen, kontakter du Microsoft-kontakten for å få hjelp.
+
+Under distribusjonsprosessen kan du få følgende feilmelding:
+
+> Evalueringsmiljøer (demo/test) må registrere programmet for skaleringsenhetstilkobling \<application ID\> på hovedkontoret.
+
+Hvis CSU-initialiseringen mislykkes og du får denne feilmeldingen, noterer du deg program-IDen, som er en globalt unik ID (ASSE), og følger deretter trinnene i den neste delen for å registrere CSU-distribusjonsprogrammet i Commerce Headquarters.
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Registrere CSU-distribusjonsprogrammet i Commerce Headquarters (om nødvendig)
+
+For å registrere CSU-distribusjonsprogrammet i Commerce Headquarters, følger du disse trinnene.
+
+1. I Commerce headquarters kan du gå til **Systemadministrasjon \> Oppsett \> Azure Active Directory-programmer**.
+1. Angi **Klient-ID**-kolonnen, angi program-ID fra CSU-initialiseringsfeilmeldingen du mottok.
+1. I **Navn**-kolonnen angir du en beskrivende tekst (for eksempel **CSU-eval**).
+1. I kolonnen **Bruker-ID** angir du **RetailServiceAccount**.
+1. Forsøk på CSU-initialisering og distribusjon fra LCS.
 
 ### <a name="initialize-e-commerce"></a>Initialisere e-handel
 
@@ -169,10 +180,13 @@ Hvis du vil fortsette prosessen for å klargjøre og konfigurere Commerce-evalue
 
 [Vanlige spørsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (sky)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (sky)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

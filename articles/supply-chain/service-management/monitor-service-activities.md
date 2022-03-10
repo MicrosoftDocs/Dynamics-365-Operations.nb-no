@@ -1,7 +1,7 @@
 ---
 title: Overvåke serviceaktiviteter
 description: Tjenestefordeling-skjemaet gir deg en rask statusoppdatering for de ulike planlagte tjenesteaktivitetene og inneholder verktøy for sporing av den generelle serviceordreflyten i firmaet ditt.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19cfa9bb32c9180d216b27fef9404972e2991864
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 508910b0d32b946cb1d120a5eec5a2e50197f35a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810738"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580414"
 ---
 # <a name="monitor-service-activities"></a>Overvåke serviceaktiviteter 
 

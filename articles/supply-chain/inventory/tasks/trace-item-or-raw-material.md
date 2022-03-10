@@ -1,7 +1,7 @@
 ---
 title: Spore en vare eller råvare
 description: Denne fremgangsmåten beskriver hvordan du bruker varesporing til å identifisere hvor varer eller råmaterialer er brukt, eller er i bruk.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 08/12/2019
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46e46d75ecab3ec2e94372aecfd2c29783756446
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c01cabf32542798f70720ab0db7d055fc54cf345
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102883"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575830"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Spore en vare eller råvare
 

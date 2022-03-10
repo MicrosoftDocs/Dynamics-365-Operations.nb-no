@@ -2,11 +2,9 @@
 title: ER Bruke finansdimensjoner som en datakilde (del 1 - Utforme datamodell)
 description: Dette emnet beskriver hvordan du konfigurerer en ER-modell (Elektronisk rapportering) for å bruke finansdimensjoner som en datakilde for ER-rapporter. (Del 1)
 author: NickSelin
-manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92d29d954debddd509eaba6b710f39b218da2c77
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 6e165901fdbaf723ea0122f00f79c2ab2050e33db2fcad8e6d6a8d0ba53e41b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734702"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1---design-data-model"></a>ER Bruke finansdimensjoner som en datakilde (del 1 - Utforme datamodell)
 
@@ -106,5 +104,8 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 69. Klikk på Lagre.
 70. Lukk siden.
 
-![Siden ER-datamodellutforming](../media/er-financial-dimensions-guides-data-model.png)
+![Siden ER-datamodellutforming.](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,14 +2,11 @@
 title: Optimalisere planlagte, satsvise BYOD-jobber
 description: Dette emnet forklarer hvordan du optimaliserer ytelsen når du bruker funksjonen for å Vise din egen database (BYOD) sammen med Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -17,20 +14,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 4b9cf4b4181b64ef4daf397edd852fb2f881424e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: a2f110d105b8c04f07f219f7f11a57d24e00ce4a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113630"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067785"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimalisere planlagte, satsvise BYOD-jobber
 
-Dette emnet forklarer hvordan du optimaliserer ytelsen når du bruker funksjonen for å Vise din egen database (BYOD). Hvis du vil ha mer informasjon om BYOD, kan du se [Vise din egen database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dette emnet forklarer hvordan du optimaliserer ytelsen når du bruker funksjonen for å Vise din egen database (BYOD). Hvis du vil ha mer informasjon om BYOD, kan du se [Vise din egen database (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ## <a name="performance-considerations-for-data-export"></a>Ytelseshensyn for dataeksport
 
-Etter at enheter er publisert i måldatabasen, kan du bruke eksportfunksjonen i **Databehandling**-området til å flytte data. Med Eksport-funksjonen kan du definere en dataflyttingsjobb som inneholder én eller flere enheter. Hvis du vil ha mer informasjon om dataeksport, se [Oversikt over dataimport- og -eksportjobber](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json).
+Etter at enheter er publisert i måldatabasen, kan du bruke eksportfunksjonen i **Databehandling**-området til å flytte data. Med Eksport-funksjonen kan du definere en dataflyttingsjobb som inneholder én eller flere enheter. Hvis du vil ha mer informasjon om dataeksport, se [Oversikt over dataimport- og -eksportjobber](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Du kan bruke **Eksport**-siden til å eksportere data til forskjellige måldataformater, for eksempel en CSV-fil (kommadelte verdier). Denne siden støtter også SQL-databaser som et annet mål.
 
@@ -42,7 +44,7 @@ Du må være forsiktig når du legger til flere enheter i et eksportprosjekt, fo
 - Det forventede datavolumet per enhet
 - Den totale tiden som kreves for å fullføre eksporten på jobbnivå
 
-Du får best ytelse ved å unngå å legge til hundrevis av enheter til ett enkelt prosjekt. Vi anbefaler at du oppretter flere jobber, og hver av disse inneholder færre enheter.
+Du får best ytelse ved å unngå å legge til hundrevis av enheter til ett enkelt prosjekt. Det anbefales at du oppretter flere jobber, og hver av disse inneholder færre enheter.
 
 ## <a name="scheduling-byod-batch-jobs"></a>Planlegge satsvise BYOD-jobber
 
@@ -61,7 +63,7 @@ For best mulig ytelse bør du alltid bruke alternativet for å **eksportere i bu
 
 Når du legger til en enhet for dataeksport, kan du enten utføre en trinnvis push (eksport) eller en fullstendig push. Et fullstendig push sletter alle eksisterende poster fra en enhet i BYOD-databasen. Deretter settes det gjeldende settet med poster inn fra Human Resources-enheten.
 
-Hvis du vil utføre en trinnvis push, må du aktivere endringssporing for hver enhet på **Enheter**-siden. Hvis du vil ha mer informasjon, kan du se [Aktivere endringssporing for enheter](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+Hvis du vil utføre en trinnvis push, må du aktivere endringssporing for hver enhet på **Enheter**-siden. Hvis du vil ha mer informasjon, kan du se [Aktivere endringssporing for enheter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 Hvis du velger en trinnvis push, er den første pushen alltid en fullstendig push. SQL sporer endringer fra denne første fullstendige pushen. Når en ny post settes inn, eller når en post oppdateres eller slettes, gjenspeiles endringen i målenheten.
 
@@ -88,11 +90,20 @@ BYOD-funksjonen har følgende begrensninger:
 
 **Problem:** Når en full push forekommer for en enhet, ser du et stort sett med poster i BYOD når du bruker en **select**-setning. Når du utfører et trinnvis push, kan du imidlertid bare se noen få poster i BYOD. Det ser ut som om den trinnvise pushen slettet alle poster og bare la til de endrede postene i BYOD.
 
-**Løsning:** Tabellene for SQL-endringssporing er kanskje ikke i forventet tilstand. I noen tilfeller av denne typen anbefaler vi at du deaktiverer sporing av endringer for enheten og deretter slår den på igjen. Hvis du vil ha mer informasjon, kan du se [Aktivere endringssporing for enheter](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json).
+**Løsning:** Tabellene for SQL-endringssporing er kanskje ikke i forventet tilstand. I noen tilfeller av denne typen anbefaler vi at du deaktiverer sporing av endringer for enheten og deretter slår den på igjen. Hvis du vil ha mer informasjon, kan du se [Aktivere endringssporing for enheter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Oppsamlingstabeller tømmes ikke
+
+**Problem:** Når du bruker oppsamling for prosjektet, tømmes ikke oppsamlingstabellene på riktig måte. Dataene i tabellene fortsetter derfor å vokse, noe som fører til ytelsesproblemer.
+
+**Løsning:** Sju dager med historikk vedlikeholdes i oppsamlingstabellene. Historiske data som er eldre enn sju dager, tømmes automatisk fra oppsamlingstabellene ved hjelp av den satsvise jobben **Importer/eksporter opprydding i oppsamling**, Hvis denne jobben stopper, blir ikke tabellene tømt riktig. Hvis du starter denne satsvise jobben på nytt, fortsetter prosessen, slik at oppsamlingstabellene automatisk blir tømt.
 
 ## <a name="see-also"></a>Se også
 
-[Oversikt over databehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/human-resources/toc.json)<br>
-[Vise din egen database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
-[Oversikt over dataimport- og -eksportjobber](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
-[Aktivere endringssporing for enheter](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+[Oversikt over databehandling](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Vise din egen database (BYOD)](../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Oversikt over dataimport- og -eksportjobber](../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)<br>
+[Aktivere endringssporing for enheter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

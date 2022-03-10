@@ -1,12 +1,10 @@
 ---
-title: Støtte for mobil strekkode
+title: Støtte for strekkode på mobile enheter
 description: Dette emnet beskriver hvordan du håndterer lagermobilskanneappen på Android-kompatible enheter.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BarcodeSetup
 audience: Application User
@@ -16,21 +14,22 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c15982a87147d7ab47e8bd5f150b15f86cc7736
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b29720f3c5dbe0ec9e0370afc6b00529aca6769
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211748"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343459"
 ---
-# <a name="mobile-barcode-support"></a>Støtte for mobil strekkode
+# <a name="mobile-bar-code-support"></a>Støtte for strekkode på mobile enheter
 
 [!include [banner](../includes/banner.md)]
 
-Fordi Android er et open source-prosjekt, kan alle produsenter av maskinvare for lagerstrekkodeskannere bygge en enhet for å kjøre Android-operativsystemet. En enhet er bare Android-kompatibel hvis den kan kjøre apper som er skrevet for Android-kjøringsmiljøet.
-En maskinvareleverandøren kan imidlertid endre og opprette overlappinger for Android-versjonen som kjører på maskinvaren. Microsoft har ikke ansvar for å sikre at en mobilapp for strekkodeskanning for Android er kompatibel med produsentens maskinvare for strekkodeskanning og Android-versjonen som kjører på den. 
+Fordi Android er et prosjekt med åpen kildekode, kan alle produsenter av maskinvare for lagerstrekkodeskannere bygge en enhet for å kjøre Android-operativsystemet. En enhet er bare Android-kompatibel hvis den kan kjøre apper som er skrevet for Android-kjøringsmiljøet.
 
-Dynamics 365 Supply Chain Management – lagerappen har blitt testet med en rekke enheter som kjører Android, for strekkodeskanning. Disse testene dekker bare et utvalg av enhetene som er tilgjengelige på markedet.
+En maskinvareleverandøren kan imidlertid endre og opprette overlappinger for Android-versjonen som kjører på maskinvaren. Microsoft har ikke ansvar for å sikre at en mobilapp for strekkodeskanning for Android er kompatibel med produsentens maskinvare for strekkodeskanning og Android-versjonen som kjører på den.
+
+Mobilappen Lagerstyring har blitt testet med en rekke enheter som kjører Android, for strekkodeskanning. Disse testene dekker bare et utvalg av enhetene som er tilgjengelige på markedet.
 
 Som kunde anbefaler vi at du tester lagermobilappen for skanning på valgt maskinvare før du bestemmer deg for maskinvaren som du vil kjøpe.
 

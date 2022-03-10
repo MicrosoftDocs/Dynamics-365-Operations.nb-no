@@ -3,24 +3,23 @@ title: Oversikt over administrasjon av forretningsdokument
 description: Dette emnet gir informasjon om hvordan du bruker funksjonen for administrasjon av forretningsdokument i ER-rammeverket.
 author: NickSelin
 ms.date: 04/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b59f535e01de2ae30e6bbeb6d5ab97a415df6043233694d4feb1c48140a110f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753082"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986257"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -41,7 +40,7 @@ For øyeblikket implementeres funksjonen for administrasjon av forretningsdokume
 
 Hvis du vil bruke administrasjon av forretningsdokument for redigering av maler i Excel- eller Word-formater ved hjelp av Microsoft Office-skrivebordsprogrammer, må du ha Microsoft Office 2010 eller senere installert. Dette støttes i distribusjoner i skyen og lokalt.
 
-Hvis du vil bruke administrasjon av forretningsdokument til å redigere maler i Excel- eller Word-formater ved hjelp av Microsoft 365-programmer, må du ha Microsoft 365 Office for nettabonnementet. Dette støttes i skydistribusjon.
+Hvis du vil bruke administrasjon av forretningsdokument til å redigere maler i Excel- eller Word-formater ved hjelp av Microsoft 365-apper, må du ha Microsoft 365 Office for nettabonnementet. Dette støttes i skydistribusjon.
 
 ## <a name="business-document-availability"></a>Tilgjengelighet av forretningsdokument
 
@@ -408,7 +407,7 @@ Når du redigerer malen fra et ER-format som eies av gjeldende aktive leverandø
 
 Dette er et kjent problem som involverer Microsoft 365-omdirigeringen. Det skjer når du logger deg på Microsoft 365 for første gang. Du kan omgå dette problemet ved å velge **Tilbake** i nettleseren for å gå tilbake til forrige side.
 
-### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Jeg vet hvordan jeg skal redigere en mal ved å bruke Microsoft 365 i den første programøkten, og hvordan jeg skal bruke malen i den andre programøkten og justere malen for å se hvordan endringene påvirker det genererte forretningsdokumentet. Kan jeg bruke Office-skrivebordsprogrammet på samme måte?
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Jeg forstår hvordan jeg redigerer en mal ved hjelp av Microsoft 365 i den første programøkten, og hvordan jeg bruker malen i den andre programøkten og justerer malen for å se hvordan endringene påvirker det genererte forretningsdokumentet. Kan jeg bruke Office-skrivebordsprogrammet på samme måte?
 
 Ja, det kan du. Velg **Åpne i skrivebordsprogram** i den første programøkten. Malen vil bli lagret i den midlertidige fillagringen og åpnes i Office-skrivebordsprogrammet. Deretter fullfører du følgende trinn for å forhåndsvise malendringene i det genererte forretningsdokumentet:
 

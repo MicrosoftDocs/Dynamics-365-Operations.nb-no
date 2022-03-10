@@ -1,9 +1,9 @@
 ---
-title: Kundebetalingsforutsigelser (forhåndsversjon)
+title: Kundebetalingsforutsigelser
 description: Dette emnet beskriver funksjonene for betalingsprediksjoner som kan hjelpe deg med å forstå de vanlige betalingspraksisene til en kunde. Denne funksjonen kan også hjelpe til med å identifisere omstendigheter som skal føre til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
-ms.topic: article
+ms.date: 11/03/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bfb8d307079e4cca86a34eef3f0bdd6c6a268a1038940ecb8cf46950c1f5c9e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713264"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982045"
 ---
-# <a name="customer-payment-predictions-preview"></a>Kundebetalingsforutsigelser (forhåndsversjon)
+# <a name="customer-payment-predictions"></a>Kundebetalingsforutsigelser
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ For organisasjoner er det ofte vanskelig å forutse når kunder betaler fakturae
 - Innkrevingsprosesser som starter for sent
 - Ordrer som blir frigitt til kunder som kan være på etterskudd med betalingen
 
-Kundebetalingsprediksjoner (forhåndsversjon) hjelper organisasjoner med å forutse når en kundefaktura skal betales. Derfor kan de opprette strategier for innkreving som bidrar til å øke sjansene for at de vil bli betalt i tide.
+Kundebetalingsprediksjoner hjelper organisasjoner med å forutse når en kundefaktura skal betales. Derfor kan de opprette strategier for innkreving som bidrar til å øke sjansene for at de vil bli betalt i tide.
 
 ## <a name="predictions"></a>Prognoser
 
@@ -67,11 +67,5 @@ I mange bedrifter har innkrevingsprosessen vært en reaktiv aktivitet. Innkrevin
 ## <a name="methodology"></a>Metodologi
 
 Tidligere var det som regel vanskelig å utvikle og distribuere en kunstig intelligensløsning (AI). Prosessen har krevd et team som inkluderer datateknikere, fageksperter og teknikere som arbeider i et lengre tidsrom for å formulere, utvikle, distribuere og vedlikeholde en brukbar AI-løsning. Kundebetalingsprediksjoner gjør det enkelt å distribuere og bruke en AI-løsning i Microsoft Dynamics 365 Finance. Microsoft forhåndspakker AI-løsninger som er bygd på toppen av Microsoft AI Builder. Brukerne kan derfor distribuere AI-løsningen i ett enkelt museklikk for å dra nytte av fordelene med intelligente prediksjoner. Hvis du ikke er tilfreds med nøyaktigheten i prognosene, kan en privilegert bruker (med ett enkelt museklikk) angi utvidelsesopplevelsen for AI Builder, og deretter merke av for eller fjerne merket for feltene som brukes til å generere prognoser. Når du er klar, kan du "lære opp" modellen og publisere endringene. Den nylig opplærte modellen vil automatisk bli plukket opp for å generere prediksjoner i Dynamics 365 Finance.
-
-## <a name="release-details"></a>Frigivelsesdetaljer
-
-Den offentlige forhåndsversjonen av Finance Insights er tilgjengelig for prøving for distribusjoner i USA, Europa og Storbritannia. Microsoft legger gradvis til støtte for flere områder.
-
-Funksjoner i offentlige forhåndsversjoner bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan kanskje ikke overføres til produksjonsmiljøet. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

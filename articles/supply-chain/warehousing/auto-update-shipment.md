@@ -1,29 +1,26 @@
 ---
 title: Automatiske oppdateringer av forsendelser
 description: Dette emnet inneholder en oversikt over funksjonalitet som gir automatiske oppdateringer av forsendelser.
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3402a4c90299cf52e489e85ed55aff9762796545
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434206"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580102"
 ---
 # <a name="shipment-auto-updates"></a>Automatiske oppdateringer av forsendelser
 
@@ -84,7 +81,7 @@ Følg fremgangsmåten nedenfor for å opprette en salgsordre.
 3. Opprett en linje for varenummer **A0001**.
 4. Angi antallet **10**. (Kontroller at du bruker lageret **24**.)
 5. Velg **Lagre**.
-6. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten. Det opprettes en forsendelse og en bølge.
+6. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten. Det opprettes en forsendelse og en bølge.
 
 Det opprettes ikke last eller arbeid fordi du endret bølgemalen i forrige fremgangsmåten. Forsendelsesstatusen er **Åpen**, og bølgestatusen er **Opprettet.**
 
@@ -106,7 +103,7 @@ Følg fremgangsmåten nedenfor for å øke antallet på en salgsordrelinje.
 3. Endre linjeantallet fra **8** til **12**.
 4. Velg **Lagre**.
 5. Gå tilbake til siden **Alle salgsordrer**, og velg salgsordren på nytt.
-5. Velg **FOrsendelsesdetaljer** i gruppen **Beslektet informasjon** i kategorien **Lager** i handlingsruten. På siden **Forsendelsesdetaljer**, i hurtigfanen **Lastlinjer**, gjenspeiler antallet endringen på salgsordrelinjen.
+5. Velg **FOrsendelsesdetaljer** i gruppen **Beslektet informasjon** i fanen **Lager** i handlingsruten. På siden **Forsendelsesdetaljer**, i hurtigfanen **Lastlinjer**, gjenspeiler antallet endringen på salgsordrelinjen.
 
 Selv om antallet på lastlinjen økes fra 8 til 12, forblir bare åtte varer reservert med mindre automatisk reservering er aktivert. Fordi antallet som ble lagt til den eksisterende forsendelsen ikke reserveres, og hvis bølgen behandles på dette tidspunktet uten reservering, opprettes det bare arbeid for antallet som allerede er reservert.
 
@@ -123,7 +120,7 @@ Følg fremgangsmåten nedenfor for å legge til en salgsordrelinje.
 4. I feltet **Antall** angi **10**. (Kontroller at du bruker lager **24**.) Den nye linjen legges automatisk til i den eksisterende forsendelsen.
 5. Velg **Lagre**.
 6. Gå tilbake til siden **Alle salgsordrer**, og velg salgsordren på nytt.
-7. Velg **FOrsendelsesdetaljer** i gruppen **Beslektet informasjon** i kategorien **Lager** i handlingsruten. Legg merke til den andre lastlinjen i hurtigfanen **Lastlinjer** på siden **Forsendelsesdetaljer**.
+7. Velg **FOrsendelsesdetaljer** i gruppen **Beslektet informasjon** i fanen **Lager** i handlingsruten. Legg merke til den andre lastlinjen i hurtigfanen **Lastlinjer** på siden **Forsendelsesdetaljer**.
 
 Fordi salgsordrelinjen du nettopp la til i den eksisterende forsendelsen, ikke er reservert, og hvis bølgen behandles på dette tidspunktet, opprettes det bare arbeid for antallet på den første salgsordrelinjen og den første lastlinjen.
 
@@ -133,10 +130,13 @@ Følg fremgangsmåten nedenfor for å behandle bølgen.
 
 1. Gå til **Lagerstyring \> Utgående bølger \> Forsendelsesbølger \> Alle bølger**.
 2. Velg bølgen du opprettet tidligere.
-3. I handlingsruten, i kategorien **Bølge**, i **Bølge**-gruppen, velger du **Behandle**.
+3. I handlingsruten, i fanen **Bølge**, i **Bølge**-gruppen, velger du **Behandle**.
 
 Bølgen behandles og oppretter arbeid for de reserverte antallene på lastlinjene. Forsendelsesstatusen oppdateres **Åpen** til **Bølget**. Når forsendelsesstatusen oppdateres til **Bølget**, vil eventuelle endringer som oppstår, for eksempel reduksjon eller økning av linjeantallet eller tilføying av nye linjer i salgsordren, ikke påvirke de eksisterende lastlinjene som er knyttet til den bølgede forsendelsen.
 
 Hvis en forsendelse har statusen **Bølget** eller høyere, vil ikke oppdateringer av antallet på en salgsordrelinje gjenspeiles på eller valideres mot en lastlinje som er knyttet til forsendelsen. Endringer i antallet på en lastlinje må gjøres direkte på lastlinjen.
 
 Validering utføres etter at arbeid er opprettet for lastlinjen og det er gjort en reservering. En reduksjon av antallet på salgsordrelinjen blir deretter validert mot reservasjonen av arbeidslinjen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

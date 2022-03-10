@@ -1,12 +1,10 @@
 ---
 title: Arbeidsflyt for kunde
 description: Dette emnet gir informasjon om kundearbeidsflyten. Du endrer bestemte felt for en kunde og deretter sende endringene til godkjenning ved hjelp av arbeidsflyten før de legges til for kunden.
-author: mikefalkner
-manager: aolson
+author: abruer
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a74b8ed226c4e13c8684fe86d4dca7236a84040e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012194"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753832"
 ---
 # <a name="customer-workflow"></a>Arbeidsflyt for kunde
 
@@ -60,3 +58,6 @@ Når du har minst én foreslått endring, vises det to ytterligere menyer i hand
     Statusen på siden endres til **Endringer som venter på godkjenning**.
 
 Arbeidsflyten følger standard arbeidsflytprosessen i appen. Godkjenneren er rettet mot siden **Kunde**, der endringene kan gjennomgås på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

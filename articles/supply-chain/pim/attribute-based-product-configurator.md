@@ -1,7 +1,7 @@
 ---
 title: Attributtbaserte salgspriser for begrensningsbasert produktkonfigurasjon
 description: Dette emnet beskriver hvordan du bygger salgsprismodeller med salgspriser som er basert på komponenter og attributter, i stedet for på den fysiske stykklisten og ruten.
-author: sorenva
+author: t-benebo
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: sorenand
+ms.author: benebotg
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 1538b806a60a9a9950f54c29bd19447c66ac9ec2
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: e50b2d1e9ccf03a58e0ddf6d4ecfb34c6c504161
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359107"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577462"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributtbaserte salgspriser for begrensningsbasert produktkonfigurasjon
+
+[!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du bygger salgsprismodeller med salgspriser som er basert på komponenter og attributter, i stedet for på den fysiske stykklisten og ruten. Du kan bygge flere salgsprismodeller for hver produktkonfigurasjonsmodell.
 

@@ -1,29 +1,26 @@
 ---
 title: Servicenivå og -beskrivelse
 description: Dette emnet beskriver servicenivå og -beskrivelse i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 647358fcdd53ba95b571185ae269bc8d6b869c18
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32e6dd6ba7291e8ea1cb78eeed2d8e2fcec0f6dd3cbd039336be0169730101ba
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758694"
 ---
 # <a name="service-level-and-description"></a>Servicenivå og -beskrivelse
 
@@ -48,7 +45,7 @@ Når du oppretter en arbeidsordre, vil du kanskje definere servicenivåene og le
 8. Hvis du vil angi et sluttidspunkt for arbeidsordren, i tillegg til en sluttdato, setter du alternativet **Angi sluttidspunkt** til **Ja**. Deretter angir du sluttidspunktet i **Sluttidspunkt**-feltet. Hvis du setter alternativet til **Nei**, brukes gjeldende tidspunkt på dagen.
 9. Velg **Lagre**.
 
-![Siden Servicenivå for arbeidsordre](media/19-setup-for-work-orders.png)
+![Siden Servicenivå for arbeidsordre.](media/19-setup-for-work-orders.png)
 
 ## <a name="create-a-description"></a>Opprett en beskrivelse
 
@@ -56,3 +53,6 @@ Når du oppretter en arbeidsordre, vil du kanskje definere servicenivåene og le
 2. Velg **Ny**.
 3. Angi beskrivelsen i **Beskrivelse**-feltet.
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

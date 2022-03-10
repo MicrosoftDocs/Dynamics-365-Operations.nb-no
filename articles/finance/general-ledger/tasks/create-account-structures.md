@@ -1,6 +1,6 @@
 ---
-title: Opprette kontostrukturer
-description: Denne oppgaveveiledningen går gjennom oppretting av en kontostruktur.
+title: Opprett kontostrukturer
+description: Denne prosedyren går gjennom oppretting av en kontostruktur.
 author: aprilolson
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aece2b79633802d28ba3b4fd8b51788e26c17a67
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815170"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394545"
 ---
-# <a name="create-account-structures"></a>Opprette kontostrukturer
+# <a name="create-account-structures"></a>Opprett kontostrukturer
 
 [!include [banner](../../includes/banner.md)]
 
-Denne oppgaveveiledningen går gjennom oppretting av en kontostruktur. Trinnene bruker demonstrasjonsdatafirmaet USMF.
+Denne prosedyren går gjennom oppretting av en kontostruktur. Trinnene bruker demonstrasjonsdatafirmaet USMF.
 
 1. Gå til **Navigasjonsrute > Moduler > Økonomimodul > Kontoplan > Strukturer > Konfigurer kontostrukturer**.
 2. Klikk **Ny** i **handlingsruten** for å åpne dialogboksen for rullegardinlisten.

@@ -2,26 +2,23 @@
 title: Journalføre posterte journaloppføringer
 description: Denne fremgangsmåten viser hvordan du journalfører posterte journaloppføringer.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f50ee568df492bcd811d2fefb1784bb55b50384b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 519431684cd26d566ae4c9dd75010d5c98881b602681211908c0c70215448fea
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738461"
 ---
 # <a name="journalize-posted-journal-entries"></a>Journalføre posterte journaloppføringer
 
@@ -40,3 +37,6 @@ Denne fremgangsmåten viser hvordan du journalfører posterte journaloppføringe
 9. Klikk på **OK** for å lukke filtersiden.
 10. Klikk på **OK** for å starte journalføringsprosessen. En rapport blir generert når prosessen er fullført.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

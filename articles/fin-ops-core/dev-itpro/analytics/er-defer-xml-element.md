@@ -2,8 +2,7 @@
 title: Utsette kjøringen av XML-elementer i ER-formater
 description: Dette emnet forklarer hvordan du kan utsette kjøringen av et XML-element i et elektronisk rapporteringsformat (ER).
 author: NickSelin
-manager: kfend
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f9a19f4ba6bb124de948dcd9e62b258b2178687a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562148"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323721"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Utsette kjøringen av XML-elementer i ER-formater
 
@@ -29,7 +28,7 @@ ms.locfileid: "5562148"
 
 ## <a name="overview"></a>Oversikt
 
-Du kan bruke operasjonsutformingen i [Elektronisk rapportering (ER)](general-electronic-reporting.md)-rammeverket til å [konfigurere](./tasks/er-format-configuration-2016-11.md) [formatkomponenten](general-electronic-reporting.md#FormatComponentOutbound) av en ER-løsning som brukes til å generere utgående dokumenter i et XML-format. Den hierarkiske strukturen til den konfigurerte formatkomponenten består av formateringselementer av forskjellige typer. Disse formatelementene brukes til å fylle genererte dokumenter med påkrevd informasjon ved kjøretid. Når du kjører et ER-format, kjøres formatelementene som standard i samme rekkefølge som de presenteres i i formathierarkiet: ett etter ett, fra øverst til nederst. På utformingstidspunktet kan du imidlertid endre kjøringsrekkefølgen for alle XML-elementer i den konfigurerte formatkomponenten.
+Du kan bruke operasjonsutformingen i rammeverket for [Elektronisk rapportering (ER)](general-electronic-reporting.md) til å [konfigurere](./tasks/er-format-configuration-2016-11.md) formatkomponenten av en ER-løsning som brukes til å generere utgående dokumenter i et XML-format. Den hierarkiske strukturen til den konfigurerte formatkomponenten består av formateringselementer av forskjellige typer. Disse formatelementene brukes til å fylle genererte dokumenter med påkrevd informasjon ved kjøretid. Når du kjører et ER-format, kjøres formatelementene som standard i samme rekkefølge som de presenteres i i formathierarkiet: ett etter ett, fra øverst til nederst. På utformingstidspunktet kan du imidlertid endre kjøringsrekkefølgen for alle XML-elementer i den konfigurerte formatkomponenten.
 
 Ved å aktivere <a name="DeferredXmlElementExecution"></a>**Utsatt kjøring**-alternativet for et XML-element i det konfigurerte formatet kan du utsette (skyve frem i tid) kjøringen av dette elementet. I dette tilfellet kjøres ikke elementet før alle andre elementer i det overordnede utvalget er kjørt.
 
@@ -45,7 +44,7 @@ Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emn
 
 ## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Utsette kjøringen av et XML-element i et ER-format
 
-Følgende trinn forklarer hvordan en bruker med [rollen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et ER-format som inneholder et XML-element der kjøringsrekkefølgen er forskjellig fra rekkefølgen i formathierarkiet.
+Følgende trinn forklarer hvordan en bruker med [rollen](../sysadmin/tasks/assign-users-security-roles.md) systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et ER-format som inneholder et XML-element der kjøringsrekkefølgen er forskjellig fra rekkefølgen i formathierarkiet.
 
 Disse trinnene kan utføres i **USMF**-selskapet i Microsoft Dynamics 365 Finance.
 
@@ -60,14 +59,14 @@ Hvis du enda ikke har utført eksempelet i emnet [Utsette kjøringen av sekvense
 
 | Innholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
-| ER-datamodellkonfigurasjon    | [Modell for å lære utsatte elementer.versjon.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfigurasjon for ER-modellkartlegging | [Kartlegge for å lære utsatte elementer.versjon.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-datamodellkonfigurasjon    | [Modell for å lære utsatte elementer.versjon.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Konfigurasjon for ER-modellkartlegging | [Kartlegge for å lære utsatte elementer.versjon.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Før du begynner, må du også laste ned og lagre følgende konfigurasjon av ER-eksempelløsningen til den lokale datamaskinen.
 
 | Innholdsbeskrivelse     | Filnavn |
 |-------------------------|-----------|
-| ER-formatkonfigurasjon | [Formatere for å lære utsatte XML-elementer.versjon.1.1.xm](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-formatkonfigurasjon | [Formatere for å lære utsatte XML-elementer.versjon.1.1.xm](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importere ER-eksempelkonfigurasjonene
 
@@ -91,14 +90,14 @@ Før du begynner, må du også laste ned og lagre følgende konfigurasjon av ER-
 6. I konfigurasjonstreet utvider du **Modell for å lære utsatte elementer**.
 7. Gjennomgå listen over importerte ER-konfigurasjoner i konfigurasjonstreet.
 
-    ![Importerte ER-konfigurasjoner på konfigurasjonssiden](./media/ER-DeferredXml-Configurations.png)
+    ![Importerte ER-konfigurasjoner på konfigurasjonssiden.](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>Aktivere en konfigurasjonsleverandør
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 2. På **Lokaliseringskonfigurasjoner**-siden i **Konfigurasjonsleverandører**-delen må du sørge for at [konfigurasjonsleverandør](general-electronic-reporting.md#Provider) for eksempelselskapet Litware, Inc. (`http://www.litware.com`) er oppført, og at den er merket som aktiv. Hvis denne konfigurasjonsleverandøren ikke er oppført, eller hvis den ikke er merket som aktiv, følger du trinnene i emnet [Opprette en konfigurasjonsleverandør og merke den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Eksempelselskapet Litware, Inc. på Lokaliseringskonfigurasjoner-siden](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
+    ![Eksempelselskapet Litware, Inc. på Lokaliseringskonfigurasjoner-siden.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Gjennomgå den importerte modellkartleggingen
 
@@ -120,7 +119,7 @@ Gjennomgå innstillingene for ER-modellkartleggingskomponenten som er konfigurer
     - **Gruppert**-datakilden til *Grupper etter*-typen er konfigurert til å gruppere filtrerte avgiftstransaksjoner av **Filtrert**-datakilden.
     - **TotalSum**-aggregeringsfeltet i **Gruppert**-datakilden er konfigurert til å summere verdiene i **\$TaxAmount**-feltet i **Filtrert**-datakilden for alle filtrerte avgiftstransaksjoner med denne datakilden.
 
-        ![TotalSum-aggregeringsfeltet på siden Rediger GroupBy-parametere](./media/ER-DeferredXml-GroupByParameters.png)
+        ![TotalSum-aggregeringsfeltet på siden Rediger GroupBy-parametere.](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Gjennomgå hvordan de konfigurerte datakildene er bundet til datamodellen, og hvordan de viser tilgjengelige data for å gjøre dem tilgjengelige i et ER-format:
 
@@ -128,7 +127,7 @@ Gjennomgå innstillingene for ER-modellkartleggingskomponenten som er konfigurer
     - **\$TaxAmount**-feltet for **Filtrert**-datakilden er bundet til **Data.List.Value**-feltet for datamodellen.
     - **TotalSum**-feltet for **Gruppert**-datakilden er bundet til **Data.Summary.Total**-feltet for datamodellen.
 
-    ![Modellkartleggingsutforming-siden](./media/ER-DeferredXml-ModelMapping.png)
+    ![Modellkartleggingsutforming-siden.](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Lukk sidene **Modellkartleggingsutforming** og **Modellkartlegginger**.
 
@@ -144,7 +143,7 @@ Gjennomgå innstillingene for ER-modellkartleggingskomponenten som er konfigurer
     - XML-elementet **Rapport \\Melding\\Oppføring** er konfigurert til å fylle det utgående dokumentet med én enkelt oppføringsnode som viser detaljene for én enkelt avgiftstransaksjon.
     - XML-elementet **Rapport\\Melding\\Sammendrag** er konfigurert til å fylle det utgående dokumentet med én enkelt sammendragsnode som inkluderer summen av avgiftsverdiene fra de behandlede avgiftstransaksjonene.
 
-    ![XML-elementet Melding og nestede XML-elementer på Formatutforming-siden](./media/ER-DeferredXml-Format.png)
+    ![XML-elementet Melding og nestede XML-elementer på Formatutforming-siden.](./media/ER-DeferredXml-Format.png)
 
 5. På **Kartlegging**-fanen gjennomgår du følgende detaljer.
 
@@ -158,14 +157,14 @@ Gjennomgå innstillingene for ER-modellkartleggingskomponenten som er konfigurer
     - **TotalTaxAmount**-attributtet er bundet til **model.Data.Summary.Total** for å generere summen av avgiftsverdiene for de behandlede avgiftstransaksjonene.
     - **ExecutionDateTime**-attributtet genererer datoen og klokkeslettet (inkludert millisekunder) sammendragsnoden legges til på.
 
-    ![Kartlegging-fanen på Formatutforming-siden](./media/ER-DeferredXml-Format2.png)
+    ![Kartlegging-fanen på Formatutforming-siden.](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Kjør det importerte formatet
 
 1. På **Formatutforming**-siden velger du **Kjør**.
 2. Last ned filen som nettleseren tilbyr, og åpne den for gjennomgang.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run.png)
+    ![Lastet ned fil i importert format.](./media/ER-DeferredXml-Run.png)
 
 Vær oppmerksom på at sammendragsnoden representerer summen av avgiftsverdiene for de behandlede transaksjonene. Fordi formatet er konfigurert til å bruke **model.Data.Summary.Total**-bindingen til å returnere denne summen, beregnes summen ved å kalle til **TotalSum**-aggregeringen av **Gruppert**-datakilden til *GroupBy*-typen i modellkartleggingen. For å beregne denne aggregeringen itererer modellkartleggingen over alle transaksjoner som er valgt i **Filtrert**-datakilden. Ved å sammenligne kjøringstidene for sammendragsnoden og den siste oppføringsnoden kan du bestemme at beregningen av summen tok 12 millisekunder (ms). Ved å sammenligne kjøringstidene for den første og siste oppføringsnoden kan du bestemme at genereringen av alle oppføringsnodene tok 9 ms. Derfor var totalt 21 ms påkrevd.
 
@@ -179,25 +178,25 @@ Hvis transaksjonsvolumet er mye større enn volumet i det gjeldende eksemplet, k
 4. Konfigurer **Nøkkelnavn på innsamlede data**-uttrykket som `WsColumn`.
 5. Konfigurer **Nøkkelverdi for innsamlede data**-uttrykket som `WsRow`.
 
-    ![XML-elementet Oppføring på Formatutforming-siden](./media/ER-DeferredXml-Format3.png)
+    ![XML-elementet Oppføring på Formatutforming-siden.](./media/ER-DeferredXml-Format3.png)
 
 6. Velg **Rapport\\Melding\\Oppføring\\TaxAmount**-attributtet.
 7. Konfigurer **Nøkkelnavn på innsamlede data**-uttrykket som `SummingAmountKey`.
 
-    ![TaxAmount-attributtet på Formatutforming-siden](./media/ER-DeferredXml-Format4.png)
+    ![TaxAmount-attributtet på Formatutforming-siden.](./media/ER-DeferredXml-Format4.png)
 
     Du kan anse denne innstillingen som oppfyllelsen av et virtuelt arbeidsark, der verdien av celle A1 tilføyes med verdien på avgiftsbeløpet fra hver behandlet avgiftstransaksjon.
 
 8. Velg **Rapport\\Melding\\Oppføring\\RunningTotal**-attributtet, og velg deretter **Rediger formel**.
 9. Konfigurer `SUMIF(SummingAmountKey, WsColumn, WsRow)`-uttrykket ved å bruke den innebygde ER-funksjonen [SUMIF](er-functions-datacollection-sumif.md), og velg deretter **Lagre**.
 
-    ![SUMIF-uttrykk](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![SUMIF-uttrykk.](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Lukk siden **Formelutforming**.
 11. Velg **Lagre**, og velg deretter **Kjør**.
 12. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run1.png)
+    ![Generert liste over avgiftsverdi med løpende total.](./media/ER-DeferredXml-Run1.png)
 
     Den siste oppføringsnoden inneholder den løpende summen av avgiftsverdiene, som er beregnet for alle behandlede transaksjoner ved å benytte de genererte utdataene som en datakilde. Denne datakilden starter fra begynnelsen av rapporten og fortsetter til den siste avgiftstransaksjonen. Sammendragsnoden inneholder summen av avgiftsverdiene for alle behandlede transaksjoner som er beregnet i modellkartleggingen ved å benytte datakilden av *GroupBy*-typen. Vær oppmerksom på at disse verdiene er like. Derfor kan den utdatabaserte summeringen brukes i stedet for **GroupBy**. Ved å sammenligne kjøringstidene for den første oppføringsnoden og summeringsnoden kan du bestemme at genereringen av alle oppføringsnodene og summeringen tok 11 ms. Når det gjelder genereringen av oppføringsnoder og summeringen av avgiftsverdier, er det endrede formatet derfor omtrent to ganger raskere enn det opprinnelige formatet.
 
@@ -206,7 +205,7 @@ Hvis transaksjonsvolumet er mye større enn volumet i det gjeldende eksemplet, k
 15. Velg **Lagre**, og velg deretter **Kjør**.
 16. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run2.png)
+    ![Generert liste over avgiftsverdier ved hjelp av redigert formel.](./media/ER-DeferredXml-Run2.png)
 
     Vær oppmerksom på at den løpende summen av avgiftsverdier i den siste oppføringsnoden tilsvarer nå summen i sammendragsnoden.
 
@@ -219,7 +218,7 @@ Hvis du for eksempel må presentere summen av avgiftsverdier i rapportens toppte
 3. Velg **Lagre**, og velg deretter **Kjør**.
 4. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run3.png)
+    ![Nedlastet fil med avgiftsverdier for rapporthode.](./media/ER-DeferredXml-Run3.png)
 
     Legg merke til at summen av avgiftsverdier i sammendragsnoden nå er lik 0 (null), fordi denne summen nå beregnes på grunnlag av de genererte utdataene. Når den første oppføringsnoden genereres, inneholder ikke de genererte utdataene oppføringsnoder med transaksjonsdetaljer enda. Du kan konfigurere dette formatet til å utsette kjøringen av **Rapport\\Melding\\Sammendrag**-elementet til **Rapport\\Melding\\Oppføring**-elementet er kjørt for alle avgiftstransaksjoner.
 
@@ -228,12 +227,12 @@ Hvis du for eksempel må presentere summen av avgiftsverdier i rapportens toppte
 1. På **Formatutforming**-siden, i **Format**-fanen velger du XML-elementet **Rapport\\Melding\\Sammendrag**.
 2. Sett **Utsatt kjøring**-alternativet til **Ja**.
 
-    ![Utsatt kjøring-alternativet for XML-elementet Sammendrag på Formatutforming-siden](./media/ER-DeferredXml-Format5.png)
+    ![Utsatt kjøring-alternativet for XML-elementet Sammendrag på Formatutforming-siden.](./media/ER-DeferredXml-Format5.png)
 
 3. Velg **Lagre**, og velg deretter **Kjør**.
 4. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run4.png)
+    ![Nedlastet fil for utsatt kjøring.](./media/ER-DeferredXml-Run4.png)
 
     **Rapport\\Melding\\Sammendrag**-elementet kjøres nå bare etter alle andre elementer som er nestet under det overordnede elementet, **Rapport\\Melding**, har blitt kjørt. Derfor kjøres det etter at **Rapport\\Melding\\Oppføring**-elementet har blitt kjørt for alle avgiftstransaksjoner med **model.Data.List**-datakilden. Kjøringstidene for den første og siste oppføringsnoden, samt for topptekst- og sammendragsnoden, avslører dette faktum.
 

@@ -1,31 +1,33 @@
 ---
 title: Utvikle en kompensasjonsstruktur
-description: Denne artikkelen leder deg gjennom prosessen med å opprette en fast kompensasjonsplan og registrere ansatte i planen gjennom rettighetsregler.
-author: andreabichsel
-ms.date: 02/10/2020
+description: Dette emnet forklarer hvordan du oppretter en fast kompensasjonsplan og registrerer ansatte i planen gjennom rettighetsregler.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 75d1a05d4f94689581e2a67a13adeef6b14ac0cd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2e35f4978cc4e8162c56ba05de28ab5b2366ccc7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800909"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065292"
 ---
 # <a name="develop-a-compensation-structure"></a>Utvikle en kompensasjonsstruktur
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Denne artikkelen leder deg gjennom prosessen med å opprette en fast kompensasjonsplan og registrere ansatte i planen gjennom rettighetsregler. Denne artikkelen bruker USMF-demodataene og gjelder ansvarlige for kompensasjon og fordeler.
+Dette emnet beskriver oppretting av en fast kompensasjonsplan og registrerring av ansatte i planen gjennom rettighetsregler. Dette emnet bruker USMF-demodataene og bruker ansvarlige for kompensasjon og fordeler.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Opprette en fast kompensasjonsplan
 
@@ -43,7 +45,7 @@ Denne artikkelen leder deg gjennom prosessen med å opprette en fast kompensasjo
 
 7. I **Type**-feltet velger du om den faste kompensasjonsplanen er en plan for **segment**, **klasse** eller **trinn**.
 
-8. Avmerkingsboksen **Anbefaling tillatt** fungerer som en standardverdi for alle handlinger som er lagt til i denne planen i en prosesshendelse. Ved å tillate anbefalinger kan du overstyre det beregnede retningslinjebeløpet ved behandling av kompensasjon.
+8. Avmerkingsboksen **Anbefaling tillatt** er standardverdien for alle handlinger som er lagt til i denne planen i en prosesshendelse. Ved å tillate anbefalinger kan du overstyre det beregnede retningslinjebeløpet ved behandling av kompensasjon.
 
 9. Med feltet **Utenfor områdetoleranse** kan du angi hvordan du vil håndtere kompensasjonsbeløp som faller utenfor det angitte kompensasjonsstrukturområdet for det angitte nivået. Hvis du angir feltet **Utenfor område-toleranse** til **Ingenl**, kan du bruke et hvilket som helst kompensasjonsbeløp. **Myk toleranse** varsler brukeren hvis kompensasjonsbeløpet er mindre enn det minste eller større enn det maksimale referansepunktbeløpet for dette nivået. Brukeren kan ignorere advarselen og fortsette. **Hard toleranse** genererer en feil hvis en ansatts kompensasjon er utenfor de minste og største referansepunktene for nivået, og justerer automatisk den ansattes kompensasjon slik at den faller innenfor området.
 

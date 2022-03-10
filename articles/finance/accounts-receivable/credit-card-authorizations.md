@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 932949f31cbc4e4e8c07a2e489b8a0848843c54ad8d27d5d77f2b7031c68c30a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769137"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Oppsett av kredittkort, autorisasjon og registrering
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837135"
 
 Denne artikkelen gir en oversikt over kredittkortautorisering i Microsoft Dynamics 365 Finance. Den inneholder informasjon om å sette opp en betalingstjeneste, legge til et kredittkort til en salgsordre og annullere en autorisering.
 
-<a name="setting-up-the-credit-card-payment-service"></a>Konfigurere kredittkortbetalingstjenesten
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>Konfigurere kredittkortbetalingstjenesten
 
 Hvis du vil bruke kredittkort, må du definere og aktivere en betalingstjeneste på siden Betalingstjenester. En betalingstjeneste fungerer som et bindeledd mellom den juridiske enheten og banken som behandler kundens kredittkortbelastninger. Du må kontakte en kredittkortleverandør som er oppført i feltet Betalingskobling og sette opp en konto hos denne leverandøren. Deretter må du definere de andre alternativene på siden Betalingstjenester, definere kredittkorttyper for American Express, Discover, MasterCard og Discover på siden Kredittkorttyper, og aktivere leverandøren som standardleverandøren. Du må også følge disse trinnene for å fullføre oppsettet:
 -   Angi parametere for å bruke kredittkortautoriseringer på siden Kundeparametere.
@@ -39,13 +38,11 @@ Hvis du vil bruke kredittkort, må du definere og aktivere en betalingstjeneste 
 ## <a name="adding-a-new-credit-card"></a>Legge til et nytt kredittkort
 Du kan opprette nye kredittkortoppføringer på Kunder-siden ved hjelp av Kunde, Oppsett, Kredittkort. Du kan også opprette kredittkortposter når du registrerer salgsordrer på siden Salgsordre ved hjelp av Behandle, Kunde, Kredittkort, Registrer.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Legge til et kredittkort i en salgsordre
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Legge til et kredittkort i en salgsordre
 
 Du kan legge til et kredittkort i en salgsordre ved å velge et kredittkort i kredittkortoppslaget i hurtigfanen Pris og rabatter på siden Salgsordre. Velg Kredittkort og Autoriser i kategorien Behandle i handlingsruten for å starte godkjenningsprosessen.
 
-<a name="authorizing-a-credit-card"></a>Autorisere et kredittkort
--------------------------
+## <a name="authorizing-a-credit-card"></a>Autorisere et kredittkort
 
 Når et kredittkort autoriseres, verifiseres kredittkortnummeret og kredittkortinnehaverens navn, og tilgjengelig kredittkortsaldo kontrolleres. Du kan også autorisere verdien for kortbekreftelse og kortinnehaverens adresse. Deretter trekkes fakturabeløpet fra kundens tilgjengelige kredittkortsaldo. Betalingstjenesten sender informasjon som angir om kredittkortet er godkjent eller ikke. Når salgsordren faktureres, belastes kredittkortet med fakturabeløpet.
 

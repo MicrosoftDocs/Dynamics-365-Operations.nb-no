@@ -1,37 +1,33 @@
 ---
 title: Oversikt over farlige materialer
 description: Dette emnet gir en oversikt over funksjoner som er knyttet til håndtering og dokumentasjon av farlige materialer under produktinformasjonsbehandling og lagerstyring.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434161"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986282"
 ---
 # <a name="hazardous-materials-overview"></a>Oversikt over farlige materialer
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 For å overholde samsvar med leverings- og transportforskrifter må organisasjoner som leverer materialer som er klassifisert som farlige varer, inkludere ekstra papirarbeid med forsendelsene. Med funksjonen for farlige materialer kan kundene lagre informasjon som er relatert til frigitte varer. Denne informasjonen kan deretter brukes til å forenkle klargjøring av forsendelsesdokumentasjonen. En organisasjon som leverer farlige varer, må ha sine egne prosesser og prosedyrer for å administrere forsendelsesprosessen. Microsoft Dynamics 365 Supply Chain Management er bare et verktøy som kan hjelpe deg med å generere de nødvendige dokumentene.
 
 Diagrammet nedenfor illustrerer trinnene som trengs for å definere og bruke farlige materialer-funksjonen.
 
-![Oppsett og bruk av farlig materiale-funksjonen](media/hazmat-overview.png "Oppsett og bruk av farlig materiale-funksjonen")
+![Oppsett og bruk av farlig materiale-funksjonen.](media/hazmat-overview.png "Oppsett og bruk av farlig materiale-funksjonen")
 
 Farlige materialer-funksjonen er definert i Behandling av produktinformasjon og inneholder dokumenter som kan skrives ut via Lagerstyring. Derfor er disse områdene de to hovedområdene der du ser gjennom, konfigurerer og bruker funksjonaliteten til denne funksjonen:
 
@@ -62,3 +58,6 @@ Hvis du vil ha mer informasjon om hvordan du definerer forskrifter og verdier fo
 ## <a name="warehouse-management"></a>Lagerstyring
 
 Når du klargjør en forsendelse i Lagerstyring, vil du kunne skrive ut flere nye rapporter som bruker informasjonen du har definert i Behandling av produktinformasjon. Hvis du vil ha mer informasjon om tilgjengelige rapporter og hvordan du bruker dem, kan du se [Forespørsler og rapporter om farlige materialer](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 513d74af52c9b3581827b653d58c95d7d1f2f78a75bea03296495fed0ea85de7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771137"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102869"
 ---
 # <a name="change-work-pool-on-work"></a>Endre arbeidspulje i arbeid
 
@@ -28,12 +28,9 @@ Du kan bruke arbeidspuljer for å organisere arbeidet i grupper. Du kan for ekse
 
 Funksjonen *Endre arbeidspulje i arbeid* legger til en knapp for **Endre arbeidsutvalg** i handlingsruten for arbeidselementer. Derfor kan lagerledere enkelt endre arbeidsutvalget for eksisterende arbeid. Med denne funksjonen kan ledere reagere raskt på endringer på shop floor på lageret, og det bidrar til å forbedre muligheten til å tilpasse seg endrede situasjoner og behovet for å overføre arbeid til andre arbeidsgrupper.
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>Aktivere funksjonen Endre arbeidspulje i arbeid
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Endre arbeidspulje i arbeid
 
-Før du begynner å definere eller bruke denne funksjonen må du kontrollere at den er tilgjengelig i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Endre arbeidspulje i arbeid*
+Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Endre arbeidspulje i arbeid* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Konfigurere funksjonen Endre arbeidspulje i arbeid
 

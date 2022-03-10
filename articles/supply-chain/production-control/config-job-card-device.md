@@ -2,26 +2,23 @@
 title: Konfigurer jobbkort for enheter
 description: Dette emnet beskriver de ulike alternativene for konfigurasjon av jobbkortenheten.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434477"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103444"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobbkort for enheter
 
@@ -37,21 +34,19 @@ Noen få av innstillingene som er beskrevet i dette emnet, må være aktivert i 
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding lagt til i jobbkortenheten
-1. Aktiver automatisk generering av nummerskiltnummer ved ferdigrapportering i jobbkortenheten
+1. *Nummerskilt for ferdigmelding lagt til i jobbkortenheten*<br>(Fra og med Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
+1. *Aktiver automatisk generering av nummerskiltnummer ved ferdigrapportering i jobbkortenheten*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
 
 ### <a name="print-label"></a>Skriv ut etikett
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding lagt til i jobbkortenheten
-1. Skriv ut etikett fra jobbkortenhet
+1. *Nummerskilt for ferdigmelding lagt til i jobbkortenheten*<br>(Fra og med Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
+1. *Skriv ut etikett fra jobbkortenhet*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.25.)
 
 ### <a name="allow-locking-of-touch-screen"></a>Tillate låsing av berøringsskjerm
 
-For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- (Forhåndsversjon) Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres.
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres* i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="manage-your-device-configurations"></a>Administrere enhetskonfigurasjoner
 
@@ -64,7 +59,7 @@ Se delene nedenfor for mer informasjon om hver av innstillingene for konfigureri
 
 ## <a name="general-settings"></a>Generelle innstillinger
 
-I **Generelt**-hurtigkategorien kan du konfigurere hvert av de ulike alternativene som er tilgjengelige for den valgte enhetskonfigurasjonen. Følgende innstillinger er tilgjengelige:
+I **Generelt**-hurtigfanen kan du konfigurere hvert av de ulike alternativene som er tilgjengelige for den valgte enhetskonfigurasjonen. Følgende innstillinger er tilgjengelige:
 
 - **Rapporter antall ved utstempling** – sett dette til **Ja** for å be arbeiderne om å rapportere tilbakemelding om jobber som pågår ved utstempling. Når **Nei** er valgt, blir ikke arbeiderne spurt om dette.
 - **Lås ansatt** – Når dette alternativet er satt til **Nei**, logges hver arbeider av umiddelbart etter at de har gjort en registrering (for eksempel en ny jobb), og deretter går enheten tilbake til påloggingssiden. Når dette alternativet er satt til **Ja**, vil hver arbeider forbli logget på jobbkortenheten. Arbeideren vil likevel kunne logge seg av manuelt for å tillate at en annen arbeider logger seg på mens jobbkortenheten fortsatt kjører med samme systembrukerkonto. Hvis du vil ha mer informasjon om disse kontotypene, kan du se [Tilordnede brukere](#assigned-users).
@@ -84,7 +79,7 @@ I **Generelt**-hurtigkategorien kan du konfigurere hvert av de ulike alternative
 
 ## <a name="assigned-users"></a>Tilordnede brukere
 
-Bruk **Tilordnede brukere**-hurtigkategorien for å knytte én eller flere systembrukere til den gjeldende enhetskonfigurasjonen. Hver systembruker kan bare tilordnes én jobbenhetskonfigurasjon.
+Bruk **Tilordnede brukere**-hurtigfanen for å knytte én eller flere systembrukere til den gjeldende enhetskonfigurasjonen. Hver systembruker kan bare tilordnes én jobbenhetskonfigurasjon.
 
 Når du konfigurerer en enhet, logger en IT-arbeider vanligvis på Supply Chain Management ved hjelp av en systembrukerkonto. Deretter gjelder jobbenhetskonfigurasjonen som er tilknyttet systembrukeren, så lenge den systembrukeren fortsatt er logget på. Disse systembrukerkontoene er vanligvis begrenset til bare å tillate tilgang til enhetssiden for jobbkort og ingen annen del av Supply Chain Management.
 
@@ -95,3 +90,6 @@ Men som nevnt tidligere, når du for eksempel bruker en enhetskonfigurasjon med 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Ferdigmeld fra den jobbkortenheten.](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

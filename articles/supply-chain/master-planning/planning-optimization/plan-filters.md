@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 7b605f9826d2116f6f52a4b880f4fb5bd24cfdd0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813057"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729033"
 ---
 # <a name="apply-filters-to-a-plan"></a>Bruke filtre på en plan
 
@@ -43,7 +43,7 @@ Et planfilter er definert som inkluderer varer A, B og C. Hovedplanlegging kjør
 - **Kjøretidsfilter som inkluderer alle varer (tomt filter)** : varer A, B og C inkluderes i planleggingskjøringen, og de tidligere planleggingsutdataene for varer A og B blir overskrevet.
 
 > [!NOTE]
-> Du bør unngå å angi et planfilter for planen som er valgt som **gjeldende dynamiske hovedplan** på siden **Parametere for hovedplanlegging**. Hvis ikke vil funksjonaliteten for den dynamiske hovedplanen bli begrenset til de filtrerte varene. Hvis for eksempel nettobehovene er oppdatert for en vare som ikke er en del av planfilteret, vil det ikke bli generert noe resultat.
+> Hvis du definerer et planfilter for planen som er valgt som **Gjeldende dynamisk hovedplan** på siden **Parametere for hovedplanlegging**, blir funksjonaliteten for dynamisk hovedplan begrenset til de filtrerte elementene. Hvis for eksempel nettobehovene er oppdatert for en vare som ikke er en del av planfilteret, vil det ikke bli generert noe resultat.
 
 ## <a name="related-resources"></a>Relaterte ressurser
 

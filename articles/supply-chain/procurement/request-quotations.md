@@ -1,28 +1,28 @@
 ---
 title: Oversikt over tilbudsforespørsler (RFQ-er)
 description: Dette emnet gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2154
+ms.custom:
+- "2154"
+- intro-internal
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237382"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983398"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversikt over tilbudsforespørsler (RFQ-er)
 
@@ -39,13 +39,13 @@ RFQ-prosessen består av følgende oppgaver:
 
 Illustrasjonen nedenfor viser en oversikt over forespørselsprosessen.
 
-[![RFQ-prosess](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![RFQ-prosess.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Du kan opprette en tilbudsforespørselssak fra planlagte bestillinger, fra en innkjøpsrekvisisjon eller ved manuell oppføring. Tilbudsforespørselssaken er basisdokumentet du bruker til å utstede en tilbudsforespørsel til hver leverandør.
 
 Når du har klargjort tilbudsforespørselssaken og lagt til leverandører, velger du **Send** (**Send og publiser** for offentlig sektor) for tilbudsforespørselssaken. Det genereres en RFQ-journal for hver leverandør som du har sendt tilbudsforespørselen til. Du kan konfigurere utskriftsinnstillingene for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send slik at den genererer et svarark som leverandøren kan fylle ut.
 
-Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
+Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
 Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende tilbudsforespørselen på nytt til leverandører når du er ferdig, ved hjelp av de to tilleggshandlingene: Opprett og Fullfør.
 
@@ -85,7 +85,7 @@ Du velger malen som skal brukes for e-postvarsling som sendes til leverandører,
 - %Dato og klokkeslett for utløpsdato%
 - %Date%
 
-Tokenet %Årsak til retur av bud% og %Årsak til endring% erstattes med tekst som innkjøpsansvarlig kan skrive inn når han eller hun fullfører endringen i veiviseren for **endring**. Verdiene for tokenene %Endring klargjort av% og %Company% hentes automatisk fra tilbudsforespørselen. Tokenet %Date% erstattes av dagens dato.
+Tokenet %Årsak til retur av bud% og %Årsak til endring% erstattes med tekst som innkjøpsansvarlig kan skrive inn når vedkommende fullfører endringen i veiviseren for **Endring**. Verdiene for tokenene %Endring klargjort av% og %Company% hentes automatisk fra tilbudsforespørselen. Tokenet %Date% erstattes av dagens dato.
 
 Hvis du vil avbryte en tilbudsforespørsel etter at den er sendt, kan du gjøre det fra tilbudsforespørselssaken. En e-postmal kreves for å sende annulleringsmeldingen til leverandørens kontaktpersoner. Malen må være valgt på siden **Parametere for innkjøp og leverandører**. Når malen er opprettet, kan den inneholde følgende erstatningstokener:
 
@@ -167,7 +167,7 @@ Hvis du konfigurerer endringsprosessen slik at den blir mer restriktiv, må du, 
 
 Hvis du konfigurerer endringsprosessen slik at den er mindre restriktiv, trenger du ikke velge **Opprett** før du kan endre feltene i en tilbudsforespørselssak som allerede er sendt. Du må imidlertid manuelt legge til en endringsmerknad i tilbudsforespørselen og sende saken på nytt. Vær oppmerksom på at denne fremgangsmåten kan bare brukes hvis ingen av svarene (budene) er endret. Hvis du har angitt et svar, og det er i en **Mottatt**-tilstand, er **Send**-knappen utilgjengelig. I så fall må du velge **Opprett** og **Fullfør**, slik du må du i den mer restriktive prosessen. Svaret tilbakestilles deretter for å gjenspeile endringene i tilbudsforespørselssaken.
 
-Hvis leverandører bruker grensesnittet for leverandørsamarbeid til å legge inn bud, må du alltid bruke endringsprosessen til å varsle leverandører om endringer i tilbudsforespørselssaken. Denne prosessen forhindrer en situasjon der leverandører byr på en utdatert tilbudsforespørselssak mens budet er under behandling. Hvis du vil ha mer informasjon om leverandørsamarbeid, kan du se [Leverandørsamarbeid med eksterne leverandører](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Hvis leverandører bruker grensesnittet for leverandørsamarbeid til å legge inn bud, må du alltid bruke endringsprosessen til å varsle leverandører om endringer i tilbudsforespørselssaken. Denne prosessen forhindrer en situasjon der leverandører byr på en utdatert tilbudsforespørselssak mens budet er under behandling. Hvis du vil ha mer informasjon om leverandørsamarbeid, kan du se [Leverandørsamarbeid med eksterne leverandører](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Hvis du vil invitere flere leverandører til å by, og ingen endringer er gjort i tilbudsforespørselssaken, kan du bruke **Send**-knappen. Leverandørene du har lagt til, vises på **Send**-siden, og de mottar e-postinvitasjonen.
 

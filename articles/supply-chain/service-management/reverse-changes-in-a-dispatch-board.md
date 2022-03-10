@@ -1,29 +1,26 @@
 ---
 title: Tilbakeføre endringer i en tjenestefordeling
 description: Dette emnet beskriver hvordan du tilbakefører ulagrede endringer du gjør i en fordelingstavle.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d6593d0eb1949140b23bc1ea6bcb87b12193aa7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 93db36066ba9b355fb0deb63019b3cecca61768c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434628"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567901"
 ---
 # <a name="reverse-changes-in-a-dispatch-board"></a>Tilbakeføre endringer i en tjenestefordeling 
 
@@ -34,7 +31,7 @@ Dette emnet beskriver hvordan du tilbakefører ulagrede endringer du gjør i en 
 
 Bruk følgende fremgangsmåte for å tilbakeføre ulagrede endringer på en fordelingstavle:
 
-1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
+1.  Klikk på **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 
 2.  Angi den aktuelle informasjonen i feltene i skjemaet **Tjenestefordeling**, og klikk deretter **OK**. 
 
@@ -51,3 +48,6 @@ Bruk følgende fremgangsmåte for å tilbakeføre ulagrede endringer på en ford
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

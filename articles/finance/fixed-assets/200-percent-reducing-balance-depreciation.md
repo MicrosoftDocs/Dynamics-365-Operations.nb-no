@@ -1,12 +1,10 @@
 ---
 title: 200 prosent redusert saldoavskrivning
-description: Denne artikkelen gir en oversikt over avskrivningsmetoden 200 prosent saldoavskrivning.
-author: saraschi2
-manager: AnnBe
+description: Dette emnet gir en oversikt over avskrivningsmetoden 200 prosent saldoavskrivning.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -14,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f012f934015e334aea468b5b62741749103d7790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 52a199489ffe42bc7b2d21e85b18dcd0bf35c165
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978745"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883499"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200 prosent redusert saldoavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen gir en oversikt over avskrivningsmetoden 200 prosent saldoavskrivning.
+Dette emnet gir en oversikt over avskrivningsmetoden 200 prosent saldoavskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger verdien **200 % saldoverdi** i **Metode**-feltet på **Avskrivningsprofiler**-siden, avskrives anleggsmidler som er tildelt avskrivningsprofilen, med den samme prosenten i hver avskrivningsperiode. Prosenten beregnes på grunnlag av anleggsmidlets levetid. Hvis anleggsmidlet for eksempel har en levetid på fem år, beregnes prosenten som 40 prosent (200 % ÷ 5). 
 
@@ -68,7 +66,7 @@ Når **Skattemessig** er valgt som avskrivningsår, er følgende alternativer ti
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Eksempel på 200 % saldoverdiavskrivning
 
-|                                |        |
+| &nbsp;                         | &nbsp; |
 |--------------------------------|--------|
 | Anskaffelseskostnad               | 11 000 |
 | Restverdi                  | 1 000 |
@@ -89,3 +87,6 @@ Metoden 200 % redusert saldo dividerer 200 prosent med antall levetidsår. Avskr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

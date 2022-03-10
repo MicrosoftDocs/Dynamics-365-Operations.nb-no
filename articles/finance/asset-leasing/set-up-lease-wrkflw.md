@@ -2,13 +2,11 @@
 title: Konfigurere arbeidsflyter for godkjenning av leie
 description: Emnet beskriver hvordan du definerer en godkjenningsarbeidsflyt som skal kjøres når en ny leieavtale opprettes.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1eaa2f5cc191ec93c30f4f10a662a87e501a341d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2f99bb480e6ee2314852965ab9559bae2ad348fb92514d791fca127d91558348
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733641"
 ---
 # <a name="set-up-lease-approval-workflows"></a>Konfigurere arbeidsflyter for godkjenning av leie
 

@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2d58e84637dac584b080bd0fa30f7ab6214c26db
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056330"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070281"
 ---
 # <a name="request-a-leave-of-absence"></a>Be om permisjon
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -48,6 +51,10 @@ Du kan sende en permisjonsforespørsel og se statusen på forespørslene i Dynam
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Mer** (...) på flisen **Avspaseringssaldoer**.
 
 2. For å se permisjonsforespørslene dine velger du **Se permisjon**.
+
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importere permisjonsforespørsler fra andre systemer eller eldre systemer
+
+Hvis du vil importere permisjonsforespørsler fra et annet system, må du gå gjennom den vanlige arbeidsflyten for å opprette de aktuelle permisjonstransaksjonene. Du kan også importere permisjonsbanktransaksjonene og permisjonsforespørsler i en fullført tilstand. Legg merke til at det ikke opprettes automatisk permisjonstransaksjoner hvis du bare importerer permisjonsforespørsler.
 
 ## <a name="see-also"></a>Se også
 

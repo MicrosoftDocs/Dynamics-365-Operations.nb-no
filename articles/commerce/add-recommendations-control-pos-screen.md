@@ -2,11 +2,9 @@
 title: Legge til anbefalinger på transaksjonsskjermen
 description: Dette emnet beskriver hvordan du legger til en kontroll for anbefalinger på transaksjonsskjermbildet på en salgsstedsenhet ved hjelp av utforming av skjermoppsett i Microsoft Dynamics 365 Commerce.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6085a69132a4687455282a908d613aa98d2e7a8d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: af76169455cef16467b1faa9eda92a969aa923e85750cf245b0a6bd071a092e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209257"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731013"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Legge til anbefalinger i transaksjonsskjermbildet
 
@@ -45,7 +43,7 @@ Du kan vise produktanbefalingene på salgsstedsenheten når du bruker Commerce. 
 6. Når du logger deg på, vises det en side som ligner den nedenfor. Oppsettet vil være forskjellige avhengig av tilpasninger som er gjort for din butikk.
 
 
-    [![Utforming av oppsett](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Utforming av oppsett.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Velge et visningsalternativ
 
@@ -60,11 +58,11 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 1. Reduser høyden på detaljområdet for transaksjonslinjer slik at det er samme høyde som kundepanelet til venstre.
 
 
-    [![Høyde på detaljområdet for transaksjonslinjer er redusert](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Høyde på detaljområdet for transaksjonslinjer er redusert.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. På menyen til venstre drar og slipper du kontrollen for anbefalinger til mellom detaljområdet for transaksjonslinjer og knappegruppen nederst i midten på transaksjonsskjermen. Endre størrelse på kontrollen slik at den passer i dette området.
 
-    [![Anbefalingskontroll er lagt til i oppsettet](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Anbefalingskontroll er lagt til i oppsettet.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Klikk **X** for å lagre og avslutte utforming av oppsett.
@@ -79,13 +77,13 @@ Det finnes to tilgjengelige konfigurasjonsalternativer. Velg alternativet som pa
 
 2. Klikk på **Tilpass**.
 
-    [![Tilpasning – Kategorikontroll-dialogboks](./media/pic-5.png)](./media/pic-5.png)
+    [![Tilpasning – Kategorikontroll-dialogboks.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Klikk **Ny kategori**.
 4. Finn den nye kategorien som du nettopp la til. Du må kanskje rulle nedover.
 5. I rullegardinlisten **Innhold** velger du **Anbefalte produkter**.
 
-    [![Valg av Anbefalte produkter i Innhold-feltet](./media/pic-6.png)](./media/pic-6.png)
+    [![Valg av Anbefalte produkter i Innhold-feltet.](./media/pic-6.png)](./media/pic-6.png)
 
 6. I **Etikett**-feltet, skriv inn et navn for anbefalingsfanen. For eksempel, skriv «Anbefalte produkter».
 7. I **Bilde**-feltet velger du bildet som skal vises i kategorien.

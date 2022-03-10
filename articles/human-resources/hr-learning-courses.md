@@ -1,38 +1,37 @@
 ---
 title: Definer opplæringskurs
 description: Personaladministratorer og ledere kan bruke kursfunksjonene til å vedlikeholde opplysningene om opplæringen som tilbys ansatte.
-author: andreabichsel
-manager: tfehr
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e642146701edad6b2275156e89048bc5a418c8a0
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467921"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066756"
 ---
 # <a name="set-up-training-courses"></a>Definer opplæringskurs
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Personaladministratorer og ledere kan bruke kursfunksjonene til å vedlikeholde opplysningene om opplæringen som tilbys ansatte.
 
- <a name="set-up-prerequisites"></a> Definer forutsetninger
----------------------
+##  <a name="set-up-prerequisites"></a> Definer forutsetninger
 
 Følgende informasjon er obligatorisk og må defineres før du oppretter kurs.
 -   **Kurstyper**
@@ -84,7 +83,7 @@ For hvert kurs kan du for eksempel utføre følgende oppgaver.
 - Definere minste og største antall deltakere
 - Tilordne en kurslokasjon og et klasserom
 - Anbefale hoteller for kursdeltakere
-- Opprette en kursbeskrivelse som du deretter annonserer i Ansattselvbetjening
+- Opprette en kursbeskrivelse som du deretter annonserer i **Ansattselvbetjening**
 
   >**Obs!** Du kan slette et kurs bare hvis ingen er registrert for kurset. 
 
@@ -130,8 +129,7 @@ Tabellen nedenfor viser de mulige kursstatusene og handlingene du kan fullføre 
 ## <a name="course-participants"></a>Kursdeltakere
 Kursdeltakere er arbeidere som deltar på et opplæringskurs eller et arrangement. Du kan bare registrere deltakere for åpne kurs. Det største og minste antallet deltakere som kan meldes på et kurs, er definert på hurtigfanen **Generelt** på siden **Kurs**.
 
-<a name="workflow"></a>Arbeidsflyt
---------
+## <a name="workflow"></a>Arbeidsflyt
 
 Ansatte som registrerer seg for et kurs via siden **Ansattselvbetjening**, kan rute registreringen gjennom arbeidsflyt for godkjenning. Du kan tilordne en arbeidsflyt til et kurs i hurtigfanen **Generelt** på **Kurs**-siden.
 

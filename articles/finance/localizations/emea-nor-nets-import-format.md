@@ -1,7 +1,7 @@
 ---
 title: Nets-importformat
 description: Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
-author: ShylaThompson
+author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.custom: 262704
 ms.search.region: Norway
-ms.author: v-lenest
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3ed5cc98f24e448f32d2444bde732e766870e504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b97931cb1a16a37f0673c38b5b071f87a06d622
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832716"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592616"
 ---
 # <a name="nets-import-format"></a>Nets-importformat
 

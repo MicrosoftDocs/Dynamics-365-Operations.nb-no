@@ -2,11 +2,9 @@
 title: Opprette en standardkunde
 description: Dette emnet beskriver hvordan du oppretter en standardkunde som skal brukes ved opprettelse av en kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477906"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720965"
 ---
 # <a name="create-a-default-customer"></a>Opprette en standardkunde
 
@@ -49,7 +47,7 @@ Hvis du vil opprette en kundegruppe, følger du disse trinnene.
 
 Følgende bilde viser flere konfigurerte kundegrupper.
 
-![Kundegrupper](media/customer-groups.png)
+![Kundegrupper.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Opprette en kundeadressebok
 
@@ -65,7 +63,7 @@ Hvis du vil opprette en kundeadressebok, følger du disse trinnene.
 
 Bildet nedenfor viser et eksempel på en adressebok.
 
-![Adressebok](media/address-book.png)
+![Adressebok.](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Opprette en standardkunde
 
@@ -88,11 +86,11 @@ Hvis du vil opprette en standardkunde, følger du disse trinnene.
 
 Bildet nedenfor viser et eksempel på kundeopprettelse.
 
-![Standardkundeopprettelse](media/default-customer-creation.png)
+![Standardkundeopprettelse.](media/default-customer-creation.png)
 
 Bildet nedenfor viser en standardkundekonfigurasjon.
 
-![Eksempel på kundekonfigurasjon](media/default-customer-configuration1.png)
+![Eksempel på kundekonfigurasjon.](media/default-customer-configuration1.png)
 
 De fleste standardverdiene på Kundedetaljer-skjermbildet kan bli slik de er, men to verdier må endres.
 
@@ -102,13 +100,13 @@ De fleste standardverdiene på Kundedetaljer-skjermbildet kan bli slik de er, me
 
 Bildet nedenfor viser et eksempel på kundekonfigurasjon.
 
-![Eksempel på kundekonfigurasjon](media/default-customer-configuration2.png)
+![Eksempel på kundekonfigurasjon.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over kanaler](channels-overview.md)
 
-[Forutsetninger for kanaloppsett](channels-prerequisites.md)
+[Kanaloppsettsforutsetninger](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

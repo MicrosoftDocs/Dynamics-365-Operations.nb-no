@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414670"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069152"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurer virtuelle Dataverse-tabeller
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Human Resources er en virtuell datakilde i Microsoft Dataverse. Den gir fullstendige opprettings-, lese-, oppdaterings- og sletteoperasjoner (CRUD) fra Dataverse og Microsoft Power Platform. Dataene for virtuelle tabeller er ikke lagret i Dataverse, men i programdatabasen.
 
@@ -119,10 +122,10 @@ Det neste trinnet er å konfigurere datakilden for den virtuelle tabellen i Powe
 
 4. I **huben for løsningstilstand** velger du **Avansert søk**-ikonet øverst til høyre på appsiden.
 
-5. På siden **Avansert søk** i rullegardinlisten **Søk etter**, velger du **Konfigurere virtuell datakilde for Finance and Operations**.
+5. På siden **Avansert søk**, i rullegardinlisten **Søk etter**, velger du **Konfigurere virtuell datakilde for økonomi og drift**.
 
    > [!NOTE]
-   > Installasjonen av den virtuelle tabellappen fra forrige konfigurasjonstrinn kan ta noen minutter. Hvis **Konfigurere virtuell datakilde for Finance and Operations** ikke er tilgjengelig i listen, venter du et minutt og oppdaterer listen.
+   > Installasjonen av den virtuelle tabellappen fra forrige konfigurasjonstrinn kan ta noen minutter. Hvis **Konfigurere virtuell datakilde for økonomi og drift** ikke er tilgjengelig i listen, venter du et minutt og oppdaterer listen.
 
 6. Velg **Resultater**.
 

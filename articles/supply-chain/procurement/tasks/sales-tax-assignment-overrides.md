@@ -1,7 +1,7 @@
 ---
 title: Mva-tilordning og overstyringer
 description: Denne fremgangsmåten beskriver hvordan du tilordner mva-grupper til handelskanaler.
-author: kamaybac
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: RetailStoreTable, RetailTaxOverrideCode, RetailTaxOverrideGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28d393dcf727eec7211f6092ea67de2b85359f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f72c9ffde760c1bc151ee15fe050f3704e43d83e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811948"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577222"
 ---
 # <a name="sales-tax-assignment-and-overrides"></a> Mva-tilordning og overstyringer
 

@@ -2,13 +2,12 @@
 title: Administrere ansattpermisjon
 description: Administrere ansattpermisjon i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,14 +15,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bf27f2a235ddb6c37601ce9d2dd7ceb356a511d9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ccdf2346e3fdecf4f27fc9f34f0641d3b1fb5b55
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794691"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067383"
 ---
 # <a name="manage-employee-leave"></a>Administrere ansattpermisjon
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -45,12 +47,11 @@ Du kan behandle en ansatts permisjon etter permisjonstype. Dette inkluderer utl�
 
 Du kan inkludere en årsakskode og kommentar når du justerer en ansatts permisjonssaldo. 
 
->[!IMPORTANT]
->Visning av ytterligere informasjon om permisjonssaldoer er i forhåndsversjon. Du må aktivere den i **sandkassemiljøet**. Hvis du vil ha mer informasjon om aktivering av evalueringsfunksjonalitet, kan du se [Behandle funksjoner](hr-admin-manage-features.md).<br>
->Når du holder pekeren over en hvilken som helst permisjonssaldo, ser du følgende:<br>
->- **Tilgjengelig**: Totalt i år – ta i inneværende år
->- **Totalt i år**: Alle avsetninger, justeringer og overføring for året
->- **Tatt i år**: All godkjent permisjon
+Når du peker over en eventuell permisjonssaldo, vises følgende informasjon:
+
+- **Tilgjengelig** – **Totalt i inneværende år**-verdien minus verdien for **Tatt dette året**.
+- **Totalt i inneværende år** – Alle avsetninger, justeringer og overføring for året.
+- **Tatt i år** – All godkjent permisjon.
 
 ## <a name="see-also"></a>Se også
 

@@ -1,8 +1,8 @@
 ---
 title: Forbedret håndtering av varer med partisporing
-description: Dette emnet beskriver forbedringene som er gjort i håndteringen av partier for varer med partisporing under posteringsprosessen for utdrag.
+description: Dette emnet beskriver den forbedrede håndteringen av varer med partisporing under posteringsprosessen for utdrag i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/04/2019
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,34 +15,41 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: e3bea1d73325596458bafd9f952e69809b174c386eb2c053daa0a2b5b4bed4de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739568"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485789"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Forbedret håndtering av varer med partisporing
 
-
 [!include [banner](includes/banner.md)]
 
+Dette emnet beskriver den forbedrede håndteringen av varer med partisporing under posteringsprosessen for utdrag i Microsoft Dynamics 365 Commerce.
 
-På salgsstedet kan ikke partinumre registreres for varer med partisporing på salgstidspunktet. For bestemte konfigurasjoner imidlertid, når salg posteres på hovedkontoret via kundeordrer eller utdragspostering, forventer Microsoft Dynamics-systemet at det finnes gyldige partinumre for varer med partisporing, og at de skal brukes under faktureringen.
+Partinumre kan ikke registreres for varer med partisporing på salgstidspunktet på salgsstedet i Dynamics 365 Commerce. Når salg posteres i Commerce Headquarters via kundeordrer eller utdragspostering, forventer Commerce imidlertid at det finnes gyldige partinumre for varer med partisporing for bestemte konfigurasjoner, og at de skal brukes under faktureringen.
 
-Hvis det finnes gyldige partinumre for produktene, brukes de i kundeordrefaktureringen og salgsordrefaktureringen fra utdragspostering. Ellers kan ikke kundeordrefaktureringen postere, og salgsstedsbrukeren får en feilmelding. Utdragspostering går deretter inn i en feiltilstand. Denne feiltilstanden forekommer selv om negativ beholdning er aktivert for produktene.
+Hvis det finnes gyldige partinumre for produktene, brukes både kundeordrefaktureringen og salgsordrefaktureringen fra utdragspostering. Hvis gyldige partinumre ikke er tilgjengelige for produkter, kan ikke fakturaprosessen for kundeordre postere, og salgsstedsbrukeren får en feilmelding. Utdragspostering går deretter inn i en feilstatus, selv om negativt lager er aktivert for produktene.
 
-Når negativ beholdning er aktivert for varer med partisporing, sikrer forbedringene som er gjort i Retail versjon 10.0.4 og senere, at kundeordrefakturering og salgsordrefakturering via utdragspostering ikke blokkeres for disse varene hvis beholdningen er 0 (null) eller det ikke finnes et partinummer. Den nye funksjonaliteten bruker en standard parti-ID for salgslinjene når partinumre ikke er tilgjengelige.
+Når negativ beholdning er aktivert for varer med partisporing, sikrer forbedringer i Commerce at kunde- og salgsordrefakturering via utdragspostering ikke blokkeres for disse varene hvis beholdningen er 0 (null) eller det ikke finnes et partinummer. Den forbedrede funksjonaliteten bruker en standard parti-ID for salgslinjene når partinumre ikke er tilgjengelige.
 
-Hvis du vil definere standard parti-ID som brukes for kundeordrer, angir du feltet **Standard parti-ID** i hurtigfanen **Ordre** i fanen **Kundeordrer** på siden **Handelsparametere**.
+## <a name="define-the-default-batch-id-that-is-used-for-customer-orders"></a>Definere standard parti-ID som skal brukes for kundeordrer
 
-Hvis du vil definere standard parti-ID som brukes for salgsordrefakturering via utdragspostering, angir du feltet **Standard parti-ID** i hurtigfanen **Lageroppdatering** i fanen **Postering** på siden **Handelsparametere**.
+Hvis du vil definere standard parti-ID som skal brukes for kundeordrer, gjør du følgende.
+
+1. Gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Commerce-parametere** i Commerce Headquarters.
+1. Angi en verdi i feltet **Standard parti-ID** i hurtigfanen **Ordre** i fanen **Kundeordrer**.
+
+## <a name="define-the-default-batch-id-that-is-used-for-sales-order-invoicing-through-statement-posting"></a>Definer standard parti-ID som brukes for salgsordrefakturering ved utdragspostering
+
+Hvis du vil definere standard parti-ID som brukes for salgsordrefakturering ved utdragspostering, gjør du følgende.
+
+1. Gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Commerce-parametere** i Commerce Headquarters.
+1. Angi en verdi i feltet **Standard parti-ID** i hurtigfanen **Lageroppdatering** i fanen **Postering**.
 
 > [!NOTE]
-> Denne funksjonaliteten er bare tilgjengelig når avanserte lageraktiviteter er aktivert for det spesifikke butikklageret og varene. I en senere versjon vil funksjonaliteten også støttes for scenarioer der avansert lagerstyring ikke brukes.
-
-> [!NOTE]
-> Støtte for forbedret håndtering av satsvise varer under utdragspostering for ikke-avanserte lagerstyringsscenarier ble innført i Retail versjon 10.0.5.
-
+> - Funksjonaliteten for standard parti-ID er bare tilgjengelig når avanserte lageraktiviteter er aktivert for det spesifikke butikklageret og varene. I en fremtidig versjon vil funksjonaliteten for standard parti-ID også støttes for scenarioer der avansert lagerstyring ikke er aktivert.
+> - Støtte for den forbedrede håndteringen av satsvise varer under utdragspostering for ikke-avanserte lagerstyringsscenarier ble innført i Commerce versjon 10.0.5.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

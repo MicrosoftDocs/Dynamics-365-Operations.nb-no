@@ -1,12 +1,10 @@
 ---
 title: Opprette salgsordrefakturaer
-description: Denne oppgaveveiledningen beskriver fakturering av salgsordren, inkludert fletting av fakturaer og satsvis behandling.
+description: Dette emnet beskriver hvordan du fakturerer en salgsordre, inkludert fletting av fakturaer og satsvis behandling.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
@@ -15,24 +13,24 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4d2e1dd552f529d09756c1ddeec39fc54a1f073a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241592"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394616"
 ---
 # <a name="create-sales-order-invoices"></a>Opprette salgsordrefakturaer
 
 [!include [banner](../../includes/banner.md)]
 
-Denne oppgaveveiledningen beskriver fakturering av salgsordren, inkludert fletting av fakturaer og satsvis behandling. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
+Dette emnet beskriver hvordan du fakturerer en salgsordre, inkludert fletting av fakturaer og satsvis behandling. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Opprette en faktura fra en salgsordre
 1. Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Salgsordrer som er sendt, men ikke fakturert**.
 2. Velg en salgsordre fra listen. 
-3. Klikk på **Faktura > Generer > Faktura** i **handlingsruten**. Legg merke til at denne salgsordren har flere følgesedler tilknyttet. Den viser bare ordet <multiple> i stedet for følgeseddelnummeret.  
+3. Klikk på **Faktura > Generer > Faktura** i **handlingsruten**. Legg merke til at denne salgsordren har flere følgesedler tilknyttet. Den viser bare ordet *flere* i stedet for følgeseddelnummeret.  
 4. Utvid seksjonen **Parametere**.
     - Postering må settes til Ja for å postere fakturaen. Du kan også slå av postering, og du kan bare skrive ut fakturaen. Du kan imidlertid oppnå samme resultat ved å opprette en proformafaktura i stedet for en faktura.  
     - Dette alternativet brukes for satsvise jobber. Spørringen kjøres når den satsvise jobben kjøres.

@@ -2,11 +2,9 @@
 title: Oppdatere strukturen til en forretningsdokumentmal
 description: Dette emnet forklarer hvordan du oppdaterer strukturen til en forretningsdokumentmal ved hjelp av funksjonen for administrasjon av forretningsdokument.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
-ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
+ms.openlocfilehash: 2f57e3f3a84a6e767755c69074bc194e90793e6edd79d0e07ae7449d45ec7539
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "4728095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775292"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Oppdatere strukturen til en forretningsdokumentmal 
 
@@ -60,7 +58,7 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 
     Den nye malen åpnes for redigering i den innebygde kontrollen for Excel Online på siden for malredigering.
 
-[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å begynne å redigere en forretningsdokumentmal](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å begynne å redigere en forretningsdokumentmal.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Se gjennom gjeldende struktur for den redigerbare malen
 
@@ -70,7 +68,7 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 4. Utvid **Rapport \> Faktura \> rptHeader \> rptHeaderPart1** i **Malstruktur**-ruten.
 5. Legg merke til at elementet **rptHeaderCompLogo** vises som et underordnet element for **Rapport \> Faktura \> rptHeader \> rptHeaderPart1** i malstrukturen i Finance.
 
-[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å se gjennom gjeldende struktur for en redigerbar mal](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å se gjennom gjeldende struktur for en redigerbar mal.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Oppdatere strukturen til en forretningsdokumentmal ved å slette et bilde
 
@@ -87,7 +85,7 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 4. Utvid **Rapport \> Faktura \> rptHeader \> rptHeaderPart1** i **Malstruktur**-ruten.
 5. Legg merke til at elementet **rptHeaderCompLogo** ikke lenger er inkludert i malstrukturen i Finance.
 
-[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å slette et bilde fra en forretningsdokumentmal](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å slette et bilde fra en forretningsdokumentmal.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Oppdatere strukturen til en forretningsdokumentmal ved å legge til et bilde
 
@@ -99,10 +97,13 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 6. Utvid **Rapport \> Faktura \> rptHeader \> rptHeaderPart1** i **Malstruktur**-ruten.
 7. Legg merke til at det nye bildet nå er inkludert som et element i malstrukturen i Finance.
 
-[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å legge til et bilde i en forretningsdokumentmal](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Bruke arbeidsområdet for administrasjon av forretningsdokument til å legge til et bilde i en forretningsdokumentmal.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Relaterte koblinger
 
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

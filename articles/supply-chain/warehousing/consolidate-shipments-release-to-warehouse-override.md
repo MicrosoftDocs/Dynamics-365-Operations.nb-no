@@ -1,28 +1,26 @@
 ---
-title: Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres fra siden Frigi til lager
+title: Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres
 description: Dette emnet viser et scenario der én eller flere salgslinjer må frigis manuelt til lageret fra siden Frigi til lager, og den systemdefinerte policyen for forsendelseskonsolidering må overstyres før utgivelsen.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: be573f3a137fbd74ba2f5d8bb346e4bb9f9116c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 606f370277b67a65612d81916f4fcc93ca47224e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237113"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574191"
 ---
-# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres fra siden Frigi til lager
+# <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres
 
 [!include [banner](../includes/banner.md)]
 

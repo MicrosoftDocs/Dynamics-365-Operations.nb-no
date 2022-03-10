@@ -2,11 +2,9 @@
 title: Frigi stykkliste- og formellinjer til lageret
 description: Dette emnet beskriver prosessen for frigivelse av råvarer for stykklistelinjer og formellinjer til lageret.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ba042e708d63766941cc3ebfc375872e384f0f0b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011052"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731229"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigi stykkliste- og formellinjer til lageret
 
@@ -63,7 +61,7 @@ I spørringen for **Automatisk frigivelse av stykkliste- og formellinjer**-parti
 
 Illustrasjonen nedenfor viser en produksjonsordre som har to jobber, 10 og 20, som dekker monteringen og pakkingen for produksjonsordren. Hver jobb er konfigurert til å bruke et antall materialer. I denne illustrasjonen er frigivelseshorisonten som er angitt ved den grønne pilen under tidslinjen,lik antall dager som er angitt i **(LessThanDate())**-kriteriet. For eksempel, **(LessThanDate(2))** angir at jobben bare skal se etter ikke-frigitte antall innenfor en horisont på to dager.
 
-![Eksempel på en produksjonsordre som har to partijobber](media/bach-job-setup.PNG)
+![Eksempel på en produksjonsordre som har to partijobber.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frigi materiale per operasjonsnummer eller i forhold til mengde ferdigvarer
 
@@ -80,7 +78,7 @@ Hvis du vil kontrollere operasjonene som materialet skal frigis til, bruker du *
 
 Illustrasjonen nedenfor viser en produksjonsordre som har to operasjoner, 10 og 20. I dette eksemplet, hvis du begrenser frigivelsen til operasjon 10, frigis bare materiale M9203.
 
-![Eksempel på frigivelse av materiale per operasjonsnummer](media/two-operations.PNG)
+![Eksempel på frigivelse av materiale per operasjonsnummer.](media/two-operations.PNG)
 
 For en rask demonstrasjon av hvordan du frigir materiale i forhold til mengde ferdigvarer, kan du se denne korte YouTube-videoen om [forbedringer i frigivelsesprosessen for produksjonsordrer](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 
@@ -97,3 +95,6 @@ Du kan frigi råvarer for en delvis mengde ferdigvarer eller i en bestemt enhet.
     Enhetene som er tilgjengelige, er definert i enhetssekvensgruppe-ID-en for den ferdige varen.
 
     En ferdigvare har for eksempel følgende enhetsomregning mellom pund (lbs.) og pall (PL): 1 PL = 100 lbs. Hvis du vil opprette en produksjonsordre for 10 000 lbs. med ferdigvare, kan du frigi råvarer for antallet paller som du planlegger å produsere. Velg **PL** som enhet, og velg deretter et tilsvarende tall i **Antall**-feltet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

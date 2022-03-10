@@ -1,33 +1,33 @@
 ---
 title: Definere rettighetsregler og policyer for fordel
-description: Denne artikkelen viser deg hvordan du kan opprette rettighetsregler og policyer for fordel og deretter tilordne regler til fordeler.
-author: andreabichsel
-manager: tfehr
-ms.date: 02/03/2020
+description: Dette emnet forklarer hvordan du oppretter rettighetsregler og policyer for fordeler og deretter tilordne regler til fordeler.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 39a9a1c96ae2a12a32b3c5fbc67571bcf983c898
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: c2595e40f6f9d1f75a94a3339735cc06bdabd14a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467993"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067660"
 ---
 # <a name="define-benefit-eligibility-rules-and-policies"></a>Definere rettighetsregler og policyer for fordel
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet viser hvordan du kan opprette rettighetsregler og policyer for fordeler og deretter tilordne regler til fordeler.  
+Dette emnet forklarer hvordan du oppretter rettighetsregler og policyer for fordeler og deretter tilordne regler til fordeler.  
 
 ## <a name="create-benefit-eligibility-policy-rule-type"></a>Opprette policyregeltype for fordelsrettigheter
 

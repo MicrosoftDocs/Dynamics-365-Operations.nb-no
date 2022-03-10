@@ -2,11 +2,9 @@
 title: Behandling av distribuert ordre (DOM)
 description: Dette emnet beskriver DOM-funksjonaliteten i Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
-ms.date: 01/08/2021
+ms.date: 02/08/2022
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,26 +15,26 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 367eaebfdd59d15040bfd4824b0b6f4621cb7147
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
+ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982597"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102015"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
 [!include [banner](includes/banner.md)]
 
-I dette nye paradigmet for handelsoperasjoner forsøker forhandlere å formidle tilpasset kundeengasjement, omnikanalopplevelser og problemfrie samhandlinger. Veldig mange alternativer er tilgjengelige, og derfor vil brukerne handle der de får den beste opplevelsen. I mange tilfeller er priser og produkter ikke lenger de mest avgjørende faktorene for forbrukere.
+Dette emnet beskriver DOM-funksjonaliteten i Microsoft Dynamics 365 Commerce.
 
-For å forbedre kundeopplevelsen må forhandlerne ha oversikt over lagerbeholdningen i sanntid på tvers av alle kanalene sine. En enkel helhetlig oversikt over hele beholdningen kan bidra til å optimalisere oppfyllelse av ordre, fordeling og distribusjon. Derfor blir bruk og implementering av et DOM-system stadig viktigere for forhandlere.
+DOM er en løsning for ordreoppfyllelsesoptimalisering for omnikanal som hjelper til med å maksimere ordreoppfyllelse i et forsyningskjedenettverk. DOM hjelper deg med å sikre at produkter leveres til kundene i riktig antall, fra riktig kilder, på riktig tidspunkt. DOM kan også hjelpe deg med å maksimere fortjenesten, minimere kostnader og oppfylle kravene på servicenivå.
 
-DOM optimaliserer oppfyllelse av ordrer på tvers av et avansert nettverk av systemer og prosesser. Det avhenger av én global visning av beholdningen på tvers av hele organisasjonen for å administrere ordrer på en smart måte, slik at de blir oppfylt nøyaktig og på en mer kostnadseffektiv måte. Ved å forbedre effektiviteten til en forhandlers forsyningskjede, bidrar DOM til at forhandleren oppfyller kundeforventninger på en bedre måte.
+DOM bruker blandet heltallsprogrammering (MIP) og prediktive analysemodeller til å utføre optimaliseringer både på partinivå og nivået for enkeltordrer. Ved hjelp av denne funksjonen kan forhandlere bruke definerte regler til å balansere mange ordreoppfyllelsesbehov som er i konflikt. I et forsyningsnettverk der produktoppfyllelse kan komme fra flere kanaler, må organisasjoner raskt tilpasse seg ordreendringer, tilgjengelighetsproblemer for leverandører og økning i etterspørsel. DOM hjelper deg med å maksimere ordreoppfyllelse og finne riktige kilder for produktlevering basert på forretningsbegrensninger og målsettinger, som å minimere kostnader ved å oppfylle ordrer fra de nærmeste kildene. DOM bruker avstand mellom produktoppfyllelseskildene og forsendelsesmålene, kostnadsfaktorer som er definert som optimaliseringsmål, og regler som er definert som begrensninger, for eksempel beholdning ved oppfyllelsesnoder til å optimalisere ordreoppfyllelse. DOM gjør det mulig å definere flere profiler som gjør det mulig for selskaper å kjøre ulike optimaliseringsstrategier, avhengig av typen forretnings- eller forbrukersegment. 
 
 Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
-![Livssyklus for salgsordre i konteksten til DOM](./media/flow.png "Livssyklus for salgsordre i konteksten til DOM")
+![Livssyklus for salgsordre i konteksten til DOM.](./media/flow.png "Livssyklus for salgsordre i konteksten til DOM")
 
 ## <a name="set-up-dom"></a>Definer DOM
 
@@ -48,12 +46,10 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
     - **Aktiver behandling av distribuert ordre** – Sett dette alternativet til **Ja**.
     - **Bekreft bruk av Bing-kart for DOM** – Sett dette alternativet til **Ja**.
 
-
         > [!NOTE]
         > Du kan sette dette alternativet til **Ja** bare hvis alternativet **Aktiver Bing-kart** i fanen **Bing-kart** på siden **Delte handelsparametere** (**Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**) også er satt til **Ja**, og hvis en gyldig nøkkel er angitt i feltet **Nøkkel for Bing-kart**.
         >
         > Med portalen [Utviklersenter for Bing-kart](https://www.bingmapsportal.com/) kan du begrense tilgangen på API-nøklene for Bing-kart til et sett med domener du angir. Ved hjelp av denne funksjonen kan kunder definere et strengt sett med referanseverdier eller IP-adresseområder som nøkkelen vil bli validert mot. Forespørsler som stammer fra tillatelseslisten din, behandles på vanlig måte, mens forespørsler utenfra listen din vil returnere en tilgang som ikke fikk svar. Det er valgfritt å legge til domenesikkerhet i API-nøkkelen, og nøkler som forblir uendret, vil fortsette å fungere. Tillatelseslisten for en nøkkel er uavhengig av alle de andre nøklene, noe som gjør at du kan ha atskilte regler for hver av nøklene dine. Distribuert ordrebehandling støtter ikke oppsett av domeneegenskaper som det refereres til.
-
 
     - **Oppbevaringsperiode i dager** – Angi hvor lenge oppfyllelsesplanene som DOM-kjøringer genererer, skal beholdes i systemet. Den satsvise jobben **Oppsett for jobb for sletting av DOM-oppfyllelsesdata** sletter alle oppfyllelsesplaner som er eldre enn antallet dager du angir her.
     - **Avvisningsperiode (i dager)** – Angi hvor lang tid det må gå før en avvist ordrelinje kan tilordnes til samme lokasjon.
@@ -62,19 +58,18 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
     - **Maksimalt antall forsøk på automatisk oppfyllelse** – Angi hvor mange ganger DOM-motoren skal forsøke å formidle en ordrelinje til en lokasjon. Hvis DOM-motoren ikke kan formidle en ordrelinje til en lokasjon på det angitte antallet forsøk, blir ordrelinjen flagget som et unntak. Motoren vil deretter hoppe over den linjen i senere kjøringer til statusen tilbakestilles manuelt.
     - **Områderadius for lokal butikk** – Angi en verdi. Dette feltet bidrar til å fastslå hvordan lokasjoner blir gruppert og vurdert som like når det gjelder avstand. Hvis du for eksempel angir **100**, vurderes hver butikk eller distribusjonssenter innen en avstand på 100 km av oppfyllelsesadressen som like når det gjelder avstand.
-    - **Problemløsertype** – Velg en verdi. To typer i problemløsere følger med Commerce: **Produksjonsproblemløser** og **Forenklet problemløser**. For alle maskiner som kjører DOM (det vil si alle servere som er en del av DOMBatch-gruppen), må **Produksjonsproblemløser** velges. Produksjonsproblemløseren krever den spesielle lisensnøkkelen som er lisensiert og distribuert i produksjonsmiljøer som standard. For ikke-produksjonsmiljøer må denne lisensnøkkelen distribueres manuelt. Hvis du vil distribuere lisensnøkkelen manuelt, gjør du følgende:
+    - **Problemløsertype** – Velg en verdi. To typer i problemløsere følger med Commerce: **Produksjonsproblemløser** og **Forenklet problemløser**. For alle maskiner som kjører DOM (det vil si alle servere som er en del av DOMBatch-gruppen), må **Produksjonsproblemløser** velges. Produksjonsproblemløseren krever den spesielle lisensnøkkelen som er lisensiert og distribuert i produksjonsmiljøer som standard. I nye Lag 2+-miljøer er produksjonsløseren allerede aktivert. For ikke-produksjonsmiljøer må denne lisensnøkkelen distribueres manuelt. Hvis du vil distribuere lisensnøkkelen manuelt, gjør du følgende:
 
         1. I Microsoft Dynamics Lifecycle Services åpner du det delte aktivabiblioteket, velger **Modell** som aktivatype og laster ned **DOM-lisensfilen**.
         1. Start Microsoft IIS-behandling, høyreklikk på **AOSService-nettsted**, og velg deretter **Utforsk**. Et Windows Utforsker-vindu åpnes på **\<AOS service root\>\\webroot**. Noter deg banen for \<AOS Service root\> fordi du skal bruke den i neste trinn.
         1. Kopier konfigurasjonsfilen i katalogen **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
         1. Gå til klienten Hovedkvarter og åpne siden **DOM-parametere**. Velg **Produksjonsproblemløser** i feltet **Problemløsertype** i fanen **Problemløser**, og bekreft at det ikke vises noen feilmeldinger.
 
-
         > [!NOTE]
         > Den forenklede problemløseren blir formidlet slik at forhandlere kan teste DOM-funksjonen uten å måtte distribuere spesiallisensen. Organisasjoner bør ikke bruke den forenklede problemløseren i produksjonsmiljøer.
         >
         > Produksjonsproblemløseren forbedrer ytelse (for eksempel hvor mange ordrer og ordrelinjer som kan behandles i en kjøring) og sammenfall av resultater (ettersom en bunke med ordrer kanskje ikke gir det beste resultatet i noen scenarioer). Noen regler, for eksempel regelen **Delvise ordrer** og regelen **Maksimalt antall steder** krever produksjonsproblemløseren.
-     
+
 6. Gå tilbake til **Retail og Commerce \> Behandling av distribuert ordre \> Oppsett \> DOM-parametere**.
 7. I fanen **Nummerserier** tilordner du de nødvendige nummerseriene for de ulike DOM-enhetene.
 
@@ -87,7 +82,7 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
     2. Velg **Ny**, og angi et navn og en beskrivelse for den nye gruppen.
     3. Velg **Lagre**.
     4. Velg **Legg til linje** for å legge til ett lokasjon i gruppen. Velg eventuelt **Legg til linjer** for å legge til flere lokasjoner.
-    
+
     > [!NOTE]
     > I Commerce versjon 10.0.12 og høyere må **muligheten til å angi lokasjoner, som Forsendelse eller Plukking, som er aktivert i en oppfyllelsesgruppe**, være aktivert i arbeidsområdet **Funksjonsbehandling**.
     >
@@ -99,47 +94,22 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
 
 9. Hvis du vil definere regler, går du til **Detaljhandel og handel \> Behandling av distribuert ordre \> Oppsett \> Administrer regler**. Følgende DOM-regler støttes for øyeblikket:
 
-    - **Regel for minimumslager** – Denne regeltypen lar organisasjoner "ringe inn" et bestemt antall av et produkt for andre formål enn oppfyllelse av ordren. Organisasjoner vil for eksempel ikke at DOM skal vurdere hele beholdningen som er tilgjengelig i en butikk for oppfyllelse av ordren. De vil i stedet reservere deler av beholdningen for butikkunder. Når denne regeltypen brukes, kan du definere minimumslageret som skal beholdes for en kategori av produkter, et individuelt produkt eller en produktvariant per lokasjon eller gruppe med lokasjoner.
-    - **Prioritetsregel for oppfyllelseslokasjon** – Denne regeltypen lar organisasjoner definere et hierarki av lokasjoner for å opprette prioriteten som DOM-motoren vurderer når den prøver å identifisere oppfyllelseslokasjoner for bestemte produkter. Det gyldige området av prioriteter er 1 til 10, der 1 er den høyeste prioriteten og 10 er den laveste prioriteten. lokasjoner som har høyere prioritet, vurderes før lokasjoner som har lavere prioritet. Hvis regelen er definert som en regel med hard begrensning, formidles ordrer bare til lokasjoner som prioriteter er definert for.
-    - **Regel for delvise ordrer** – Denne regelen lar organisasjoner definere om en ordre eller ordrelinjer delvis kan oppfylles. Følgende parametere er tilgjengelige:
-
-        - **Oppfylle delvise ordrer?** – Hvis dette alternativet er satt til **Ja**, kan DOM oppfylle bare en del av antallet på en ordrelinje. Denne delvise oppfyllelsen oppnås ved å dele opp ordrelinjen.
-        - **Oppfylle delvise linjer?** – Hvis dette alternativet er satt til **Ja**, kan DOM oppfylle et delvist antall ordrelinjer. Denne delvise oppfyllelsen oppnås ved å dele opp ordrelinjen.
-        - **Bare oppfylle ordre fra én lokasjon?** – Hvis dette alternativet er satt til **Ja**, sørger DOM for at alle linjer i en ordre blir oppfylt fra ett lokasjon.
-
-
-        Tabellen nedenfor forklarer virkemåten når en kombinasjon av disse parameterne er definert.
-
-        | Kombinasjonsnummer | Oppfylle delvise ordrer | Oppfylle delvise linjer | Bare oppfylle ordre fra én lokasjon | Beskrivelse |
-        |------|------------------------|-----------------------|--------------------------------------|-------------|
-        | 1    | Ja                    | Ja                   | Ja                                  | Noen få linjer i ordren kan oppfylles, og enkeltlinjer kan delvis oppfylles, men alle linjene må være fra samme lokasjon i en forekomst av DOM-kjøringen. (Denne kombinasjonen støttes for øyeblikket ikke.) |
-        | 2    | Ja                    | Nei                    | Ja                                  | Noen få linjer i ordren kan oppfylles, men enkeltlinjer kan ikke delvis oppfylles, og alle de oppfylte linjene må være fra samme lokasjon i en forekomst av DOM-kjøringen. (Denne kombinasjonen støttes for øyeblikket ikke.) |
-        | 3    | Ja                    | Ja                   | Nei                                   | Noen få linjer i ordren kan oppfylles, enkeltlinjer kan ikke delvis oppfylles, og hver linje kan oppfylles fra mer enn ett lokasjon i en forekomst av DOM-kjøringen. |
-        | 4\*  | Nei                     | Gjelder ikke        | Nei                                   | Alle ordrelinjer må oppfylles, individuelle linjer ikke kan oppfylles delvis, og hver ordrelinje kan oppfylles fra en annen lokasjon. |
-        | 5\*  | Nei                     | Gjelder ikke        | Ja                                  | Alle ordrelinjer må oppfylles, individuelle linjer ikke kan oppfylles delvis, og alle ordrelinjene kan leveres fra bare ett lokasjon. |
-        | 6\*  | Nei                     | Gjelder ikke        | Nei                                   | Denne kombinasjonen fungerer som kombinasjon 4, fordi **Oppfyll delvise linjer** ikke kan settes til **Ja** når **Oppfyll delvise ordrer** er satt til **Nei**. |
-        | 7\*  | Nei                     | Gjelder ikke        | Ja                                  | Denne kombinasjonen fungerer som kombinasjon 5, fordi **Oppfyll delvise linjer** ikke kan være **Ja** når **Oppfyll delvise ordrer** er **Nei**. |
-        | 8    | Ja                    | Nei                    | Nei                                   | Noen få linjer i ordren kan oppfylles, men enkeltlinjer kan ikke delvis oppfylles, og de ulike ordrelinjene kan oppfylles fra mer enn ett lokasjon i en forekomst av DOM-kjøringen. |
-        | 9\*  | Nei                     | Gjelder ikke        | Ja                                  | Alle ordrelinjer må oppfylles, og alle ordrelinjene må oppfylles fra bare ett lokasjon. |
-
-        \* Hvis **Oppfyll delvise ordrer** er satt til **Nei**, vil **Oppfyll delvise linjer** alltid bli vurdert til å settes til **Nei**, uavhengig av hvordan verdien faktisk er satt.
-
-        > [!NOTE]
-        > I Retail versjon 10.0.5 ble verdien for parameteren **Bare oppfylle ordre fra én lokasjon** endret til **Maksimale oppfyllelseslokasjoner**. I stedet for å tillate at en bruker konfigurerer om ordrer bare kan oppfylles fra én lokasjon, eller oppfylles fra så mange lokasjoner som mulig, kan brukere nå angi om oppfyllelse kan være fra et bestemt sett med lokasjoner (opptil 5) eller fra så mange steder som den kan oppfylles. Dette gir større fleksibilitet når det gjelder hvor mange lokasjoner ordren kan oppfylles fra. Denne regelen fungerer bare med produksjonsproblemløseren. 
-
-   - **Regel for frakoblet oppfyllelseslokasjon** – Denne regelen lar organisasjoner angi en lokasjon eller en gruppe lokasjoner som frakoblet eller utilgjengelig for DOM, slik at ordrer ikke kan tilordnes til de lokasjonene for oppfyllelse.
-    - **Regel for maksimalt antall avvisninger** – Denne regelen lar organisasjoner definere en terskel for avvisninger. Når terskelen er nådd, vil DOM-prosessoren merke en ordre eller en ordrelinje som et unntak, og utelate den fra videre behandling.
+    - **Regel for minimumslager** – Denne regeltypen lar organisasjoner "ringe inn" et bestemt antall av et produkt for andre formål enn oppfyllelse av ordren. Organisasjoner vil for eksempel ikke at DOM skal vurdere hele beholdningen som er tilgjengelig i en butikk for oppfyllelse av ordren. De vil i stedet reservere deler av beholdningen for butikkunder. Når denne regeltypen brukes, kan du definere minimumsbeholdningen som skal beholdes for en kategori av produkter, et individuelt produkt eller en produktvariant per lokasjon eller gruppe med lokasjoner. Du kan også definere minimumsbeholdning ved hjelp av et tilleggskategorihierarki. Hvis et produkt faller inn i flere kategorier, får en tilleggskategori høyest viktighet for alle regler der du kan bruke kategorier.
+    - **Prioritetsregel for oppfyllelseslokasjon** – Denne regeltypen lar organisasjoner definere et hierarki av lokasjoner for å opprette prioriteten som DOM-motoren vurderer når den prøver å identifisere oppfyllelseslokasjoner for bestemte produkter. Det gyldige området av prioriteter er 1 til 10, der 1 er den høyeste prioriteten og 10 er den laveste prioriteten. lokasjoner som har høyere prioritet, vurderes før lokasjoner som har lavere prioritet. Hvis regelen er definert som en regel med hard begrensning, formidles ordrer bare til lokasjoner som prioriteter er definert for. DOM gir preferanse til å forsende ordrer fullstendig fra ett sted. Hvis en hel ordre og linjene i ordren ikke er tilgjengelige fra en lokasjon som har prioritet 1, prøver DOM derfor å oppfylle den fra en lokasjon som har prioritet 2.
+    - **Regel for delvise ordrer** – I Retail versjon 10.0.5 ble verdien for parameteren **Bare oppfylle ordre fra én lokasjon** endret til **Maksimale oppfyllelseslokasjoner**. Med den gamle parameteren kunne brukere konfigurere om ordrer bare kan oppfylles fra én lokasjon eller fra så mange lokasjoner som mulig. Ved hjelp av den nye parameteren kan brukere angi om oppfyllelsen kan være fra et bestemt sett med lokasjoner (opptil fem) eller fra så mange lokasjoner som mulig. For alle alternativer unntatt oppfyllelse fra én lokasjon deler DOM linjen, fordi behandling av ordren skjer etter linje. Denne regelen fungerer bare med produksjonsproblemløseren.
+    - **Regel for frakoblet oppfyllelseslokasjon** – Denne regelen lar organisasjoner angi en lokasjon eller en gruppe lokasjoner som frakoblet eller utilgjengelig for DOM, slik at ordrer ikke kan tilordnes til de lokasjonene for oppfyllelse.
+    - **Regel for maksimalt antall avvisninger** – Denne regelen lar organisasjoner definere en terskel for avvisninger. Når terskelen er nådd, vil DOM-prosessoren merke en ordre eller en ordrelinje som et unntak, og utelate den fra videre behandling. For å sikre ytelse ser ikke DOM på historikken for alle avslag. 
 
         Etter at ordrelinjene er tilordnet til en lokasjon, kan lokasjonen avvise en tilordnede ordrelinje, fordi lokasjonen kanskje ikke kan oppfylle den linjen av en eller annen grunn. Avviste linjer blir merket som et unntak, og de blir lagt tilbake i utvalget for behandling i den neste kjøringen. I løpet av den neste kjøringen vil DOM prøve å tilordne den avviste linjen til en annen lokasjon. Den nye lokasjonen kan også avvise den tilordnede ordrelinjen. Denne syklusen med tilordning og avslag kan forekomme flere ganger. Når antallet avvisninger når terskelen som er definert, vil DOM markere ordrelinjen som et fast unntak, og linjen vil ikke bli valgt flere ganger for ny tilordning. DOM vil vurdere ordrelinjen en gang til for ny tilordning bare hvis en bruker tilbakestiller statusen for ordrelinjen manuelt.
 
-   - **Regel for maksimal avstand** – Denne regelen lar organisasjoner definere maksimumsavstanden som en lokasjon eller gruppe med lokasjoner kan være for å oppfylle ordren. Hvis overlappende regler for maksimal avstand er definert for en lokasjon, bruker DOM den laveste maksimumsavstanden som er definert for den lokasjonen.
-    - **Regel for maksimalt antall ordrer** – Denne regelen lar organisasjoner definere det maksimale antallet ordrer som en lokasjon eller gruppe med lokasjoner kan behandle i løpet av en dag i kalenderen. Hvis det maksimale antallet ordrer er tilordnet til en lokasjon på én dag, vil ikke DOM tilordne flere ordrer til den lokasjonen resten av den kalenderdagen.
+    - **Regel for maksimal avstand** – Denne regelen lar organisasjoner definere maksimumsavstanden som en lokasjon eller gruppe med lokasjoner kan være for å oppfylle ordren. Hvis overlappende regler for maksimal avstand er definert for en lokasjon, bruker DOM den laveste maksimumsavstanden som er definert for den lokasjonen.
+    - **Regel for maksimalt antall ordrer** – Denne regelen lar organisasjoner definere det maksimale antallet ordrer som en lokasjon eller gruppe med lokasjoner kan behandle. Under optimaliseringsprosessen vurderer systemet ordrer som ikke er sendt fra disse lokasjonene. Denne kontrollen utføres på tvers av profiler. Hvis et maksimalt antall ordrer defineres på tvers av profiler for samme lokasjon, vurderer derfor systemet det maksimale antallet ordrer som er definert på tvers av alle profiler. 
 
-   Her er noen av de vanlige attributtene som kan defineres for alle de foregående regeltypene:
+    Her er noen av de vanlige attributtene som kan defineres for alle de foregående regeltypene:
 
-   - **Startdato** og **Sluttdato** – Hver regel kan gjøres datoeffektiv ved hjelp av disse feltene.
-   - **Deaktivert** – Bare regler som har verdien **Nei** for dette feltet, blir vurdert i en DOM-kjøring.
-   - **Hard begrensning** – En regel kan defineres som en hard begrensning eller ikke en hard begrensning. Alle DOM-kjøringer går gjennom to gjentakelser. I den første gjentakelsen behandles hver regel som en regel med hard begrensning, uavhengig av innstillingen til dette feltet. Med andre ord blir hver regel brukt. Det eneste unntaket er regelen **Prioritet for lokasjon**. I den andre gjentakelsen fjernes reglene som ikke ble definert som regler for hard begrensning, og ordren eller ordrelinjene som ikke ble tilordnet til lokasjoner da alle reglene ble tatt i bruk, blir tilordnet til lokasjoner.
+    - **Startdato** og **Sluttdato** – Du kan bruke disse feltene til å gjøre hver regel datoeffektiv.
+    - **Deaktivert** – Bare regler som har verdien **Nei** for dette feltet, blir vurdert i en DOM-kjøring.
+    - **Hard begrensning** – En regel kan defineres som en hard begrensning eller ikke en hard begrensning. Alle DOM-kjøringer går gjennom to gjentakelser. I den første gjentakelsen behandles hver regel som en regel med hard begrensning, uavhengig av innstillingen til dette feltet. Med andre ord blir hver regel brukt. Det eneste unntaket er regelen **Prioritet for lokasjon**. I den andre gjentakelsen fjernes reglene som ikke ble definert som regler for hard begrensning, og ordren eller ordrelinjene som ikke ble tilordnet til lokasjoner da alle reglene ble tatt i bruk, blir tilordnet til lokasjoner.
 
 10. Oppfyllelsesprofiler brukes til å gruppere en samling med regler, juridiske enheter, salgsordreopprinnelser og leveringsmåter. Alle DOM-kjøringer gjelder for en bestemt oppfyllelsesprofil. På denne måten kan organisasjoner definere og kjøre et sett med regler for et sett med juridiske enheter for ordrer som har bestemte salgsordreopprinnelser og leveringsmåter. Hvis ulike sett med regler må kjøres for ulike typer salgsordreopprinnelser eller leveringsmåter, kan oppfyllelsesprofilene derfor defineres i henhold til dette. Gjør følgende for å konfigurere oppfyllelsesprofiler:  
 
@@ -149,15 +119,15 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
     4. Velg alternativet **Bruk resultat automatisk**. Hvis du setter dette alternativet til **Ja**, blir resultatene av DOM-kjøringen for profilen brukt automatisk på salgsordrelinjer. Hvis du setter det til **Nei**, kan resultatene bare vises i oppfyllelsesplanen. De brukes ikke på salgsordrelinjene.
     5. Hvis du vil at DOM-profilen skal kjøres for ordrer som har alle salgsordreopprinnelser, inkludert ordrer der salgsordreopprinnelsen ikke er definert, setter du alternativet **Behandle ordrer med tom salgsopprinnelse** til **Ja**. Hvis du vil kjøre profilen for bare noen få salgsordreopprinnelser, kan du definere dem på siden **Salgsopprinnelser**, som forklart senere.
 
-    > [!NOTE]
-    > I Commerce versjon 10.0.12 og høyere må **muligheten til å tilordne en oppfyllelsesgruppe til en oppfyllelsesprofil** være aktivert i arbeidsområdet **Funksjonsbehandling**. 
-    >
-    > Denne funksjonen legger til en ny konfigurasjon på siden **Oppfyllelsesprofil** som kan knyttes til én oppfyllelsesgruppe. 
-    >
-    > Hvis du velger oppfyllelsesgruppen, vil DOM-reglene for den oppfyllelsesprofilen fungere effektivt i forhold til forsendelseslagrene som er inkludert i oppfyllelsesgruppen. 
-    > 
-    > Hvis du vil bruke denne funksjonen effektivt, må du kontrollere at det finnes én oppfyllelsesgruppe som inneholder alle forsendelsene, og deretter knytter du denne oppfyllelsesgruppen til oppfyllelsesprofilen.
-    
+        > [!NOTE]
+        > I utgivelsen Commerce versjon 10.0.12 og nyere må funksjonen for **muligheten til å tilordne en oppfyllelsesgruppe til en oppfyllelsesprofil** være aktivert i arbeidsområdet **Funksjonsbehandling**. Ved hjelp av denne funksjonen kan du angi en liste over lagre som DOM bør vurdere, når optimaliseringen kjøres med en oppfyllelsesprofil. Hvis listen over lagre ikke er spesifisert, ser DOM på alle lagre i juridiske enheter som er definert i profilen.
+        >
+        > Denne funksjonen legger til en ny konfigurasjon på siden **Oppfyllelsesprofil** som kan knyttes til én oppfyllelsesgruppe. 
+        >
+        > Hvis du velger oppfyllelsesgruppen, vil DOM-reglene for den oppfyllelsesprofilen fungere effektivt i forhold til forsendelseslagrene som er inkludert i oppfyllelsesgruppen. 
+        > 
+        > Hvis du vil bruke denne funksjonen effektivt, må du kontrollere at det finnes én oppfyllelsesgruppe som inneholder alle forsendelsene, og deretter knytter du denne oppfyllelsesgruppen til oppfyllelsesprofilen.
+
     6. Velg **Legg til** i hurtigfanen **Juridiske enheter**, og velg deretter en juridisk enhet.
     7. Velg **Legg til** i hurtigfanen **Regler**, og velg deretter regelen som skal kobles til profilen.
     8. Gjenta de forrige to trinnene til alle de nødvendige reglene er knyttet til profilen.
@@ -200,9 +170,13 @@ Under behandling vil DOM vurdere ordren og ordrelinjene som beskrevet her:
 
 - Ordrer som ikke er på vent
 
-Etter at DOM har tatt i bruk reglene, lagerbegrensningene og optimaliseringen, velges lokasjonen som er nærmest kundens leveringsadresse.
+Etter at DOM har tatt i bruk reglene, beholdningsbegrensningene og optimaliseringen, velges lokasjonen som er nærmest kundens leveringsadresse. DOM konverterer adresser av typen **Levering** til bredde- og lengdegradverdier. Deretter konverterer den leveringsadressen på salgsordren til bredde- og lengdegradverdier og oppdaterer bredde- og lengdegradverdiene til adressen for fremtidig bruk. DOM er avhengig av Bing-kart for å fastslå nøyaktige bredde- og lengdegradverdier basert på adresse-, poststed- og postnummerinformasjon.
 
-![Salgsordrekriterier](./media/ordercriteria.png "Salgsordrekriterier")
+DOM bruker API-en for Bing-kart til å beregne luft- eller veiavstand, avhengig av innstillingene. Deretter brukes denne informasjonen til å bestemme forsendelseskostnaden. Optimaliseringsmodellen prioriterer oppfyllelse av en fullstendig ordre fra én lokasjon. Selv om en del av en ordre er tilgjengelig i samme poststed eller postnummer, har modellen blitt optimalisert for å redusere antall forsendelser. 
+
+DOM slår opp tilgjengelig beholdning ved å vise lagerbeholdning i lager V2-enheter. Under hver satsvise kjøring deler DOM ordrer inn i partier, avhengig av parameterverdien **DOM-prosessor** for oppgaver som er definert i profilen. Denne parameteren har standardverdien **2000**. Hvis for eksempel 10 000 ordrelinjer optimaliseres i en kjøring og parameteren **DOM-prosessor** er satt til standardverdien **2000**, oppretter DOM fem partier som behandles samtidig. Oppfyllelsesplaner hentes deretter fra optimaliseringen og brukes på linjen. Hvis ordrelinjen må deles mellom to lokasjoner, sikrer DOM at priser og avgifter er hensiktsmessig spredt på tvers av linjene.
+
+![Salgsordrekriterier.](./media/ordercriteria.png "Salgsordrekriterier")
 
 ## <a name="results-of-dom-runs"></a>Resultater av DOM-kjøringer
 
@@ -225,6 +199,7 @@ Hvis du vil vise alle oppfyllelsesplanene som er generert, gjør du følgende.
 ## <a name="order-line-actions-and-statuses"></a>Handlinger og statuser for ordrelinje
 
 Følgende beskriver innstillinger på ordrelinjen. Hvis du vil åpne ordrelinjen, går du til **Detaljhandel og handel \> Kunder \> All salgsordrer**.
+
 - Hvis du setter alternativet **Utelat fra DOM-behandling** i fanen **Generelt** på salgsordrelinjen til **Ja**, blir ordren eller ordrelinjen utelatt fra DOM-behandlingen.
 - Feltet **DOM-status** i fanen **Generelt** for salgsordrelinjen kan settes til én av følgende verdier:
 
@@ -254,5 +229,11 @@ Mens DOM-behandlingen kjører, opprettes oppfyllelsesplaner. Over tid vil system
 Her er et par ting du bør vurdere når du bruker DOM-funksjonen:
 
 - DOM ser for øyeblikket bare på ordrer som er opprettet fra handelskanaler. Salgsordrer blir identifisert som salgsordrer når alternativet **Handelssalg** er satt til **Ja**.
-- Microsoft har ikke testet DOM med avanserte lagerstyringsfunksjoner. Kunder og partnere må være forsiktige med å fastslå om DOM er kompatibel med de avanserte funksjonene og prosessene for lagerstyring som er relevante for dem.
+- Microsoft har ikke testet DOM med avanserte lagerstyringsfunksjoner. Kunder og partnere må derfor være forsiktige med å fastslå om DOM er kompatibel med de avanserte funksjonene og prosessene for lagerstyring som er relevante for dem. Med avanserte lageraktiviteter kan du bruke dimensjoner som kan konfigureres, for eksempel beholdningsstatus, som ikke gir nøyaktig forståelse av tilgjengelig beholdning. DOM gir en utvidbar metode for å angi tilgjengelig beholdning for implementeringer som bruker avanserte lageraktiviteter. Den kan brukes til å arbeide med tilpassede verdier for beholdningsstatus og andre dimensjoner.
+
+    Utvidbarheten i DOM er begrenset fordi optimalisering skjer i den forhåndsbygde MIP-modellen som vurderer optimaliseringen og begrensningene. Flere utvidbare punkter er allerede tilgjengelige for å definere beholdnings- og etterbehandlingsoptimalisering. DOM-profiler kan variere fra salgsopprinnelse og leveringsmåte. Salgsordreopprinnelse kan defineres under ordreinntak, og ulike optimaliseringsstrategier kan brukes basert på disse verdiene. DOM støtter også oppretting av egendefinerte satsvise jobber som kan ta DOM-prosessoroppgaven som inndata og gjøre det mulig å angi profilen som en parameter. Derfor kan en optimalisering kjøres etter en annen for å støtte ulike forretningsscenarioer.
+
 - DOM er tilgjengelig bare på skyversjonen av Commerce. Funksjonen støttes ikke i lokale distribusjoner.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

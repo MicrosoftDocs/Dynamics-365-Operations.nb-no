@@ -2,11 +2,9 @@
 title: Vise og eksportere feltbeskrivelser
 description: Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FieldDescriptions
 audience: Application User, Developer, IT Pro
@@ -17,16 +15,19 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a9e12eae7065bb37fc0ddbb579a0437120c165
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693527"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069279"
 ---
 # <a name="view-and-export-field-descriptions"></a>Vise og eksportere feltbeskrivelser
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Denne artikkelen beskriver hvordan du viser beskrivelser og hvordan du bruker siden Feltbeskrivelser til å eksportere beskrivelser.
 
@@ -45,7 +46,7 @@ Du kan vise feltbeskrivelser ved å holde pekeren over et felt. Hvis ingen beskr
 
 Illustrasjonen nedenfor viser feltbeskrivelsen som vises når du holder pekeren over feltet **Lås varer under opptelling**.
 
-[![Eksempel på en feltbeskrivelse](./media/field-description.png)](./media/field-description.png)
+[![Eksempel på en feltbeskrivelse.](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Bruk siden Feltbeskrivelser til å vise og eksportere felthjelp
 
@@ -55,7 +56,7 @@ Siden **Feltbeskrivelser** lar deg vise og eksportere feltbeskrivelser. Du kan s
 
 Følg fremgangsmåten nedenfor for å vise beskrivelsene for en side.
 
-- Skriv inn navn på siden i feltet **Velg en side**. Klikk eventuelt pilen for å åpne en liste over alle sidene, og bla deretter gjennom eller filtrer listen.
+- Skriv inn navn på siden i feltet **Velg en side**. Klikk på eventuelt pilen for å åpne en liste over alle sidene, og bla deretter gjennom eller filtrer listen.
 
 Du kan bruke navnet på siden som vises i brukergrensesnittet (for eksempel **Kunder**), eller kodenavnet (navn på applikasjonsobjekttre) som er tilgjengelig når du høyreklikker på en side (for eksempel **CustTable**).
 
@@ -68,7 +69,7 @@ Hvis du setter alternativet **Inkluder felt uten beskrivelse** til **Ja**, vises
 Følg fremgangsmåten nedenfor for å eksportere beskrivelsene for en side.
 
 1. Velg en siden i feltet **Velg en side**.
-2. Klikk **Åpne i Microsoft Office** i øvre høyre hjørne, og klikk deretter **FieldDescriptionTmp**.
+2. Klikk på **Åpne i Microsoft Office** i øvre høyre hjørne, og klikk deretter **FieldDescriptionTmp**.
 
 ### <a name="searching-for-a-page"></a>Søke etter en side
 
@@ -98,12 +99,15 @@ Gi oss tilbakemelding ved å legge til en kommentar for dette emnet. Hvis du kan
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Jeg finner ikke et felt på siden Feltbeskrivelser
 
-Hvis du vil vise alle feltene på en side, kan du angi **Ja** for alternativet **Inkluder felt uten beskrivelse**. Klikk feltet **Velg en side** for å kontrollere at du har valgt den riktige siden. Hvis navnet du skrev inn er en del av et annet feltnavn, har du kanskje valgt siden som har det lengste navnet.
+Hvis du vil vise alle feltene på en side, kan du angi **Ja** for alternativet **Inkluder felt uten beskrivelse**. Klikk på feltet **Velg en side** for å kontrollere at du har valgt den riktige siden. Hvis navnet du skrev inn er en del av et annet feltnavn, har du kanskje valgt siden som har det lengste navnet.
 
 ### <a name="i-cant-find-a-page-on-the-field-descriptions-page"></a>Jeg finner ikke en side på siden Feltbeskrivelser
 
-Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se avsnittet Søke etter sider tidligere i denne artikkelen. Hvis du har skrevet inn det nøyaktige navnet på siden, kan det hende at feltbeskrivelsene ikke vises hvis det finnes flere sider med samme navn. Klikk pilen i feltet **Velg en side** for å åpne en filtrert liste over sidene som er tilgjengelige.
+Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se avsnittet Søke etter sider tidligere i denne artikkelen. Hvis du har skrevet inn det nøyaktige navnet på siden, kan det hende at feltbeskrivelsene ikke vises hvis det finnes flere sider med samme navn. Klikk på pilen i feltet **Velg en side** for å åpne en filtrert liste over sidene som er tilgjengelige.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tilpasse feltbeskrivelser](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,31 +1,30 @@
 ---
 title: Oversikt over leverandørbetaling
-description: Denne oppgaveveiledningen leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt.
+description: Denne prosedyren leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt.
 author: kweekley
-manager: AnnBe
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37fc9a061f09f7d85f43d7e8d5ca2a3c6660b4d0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985193"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394444"
 ---
 # <a name="vendor-payment-overview"></a>Oversikt over leverandørbetaling
 
 [!include [banner](../../includes/banner.md)]
 
-Denne oppgaveveiledningen leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
+Denne prosedyren leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 
 1. Gå til **Navigasjonsrute > Moduler > Leverandører > Betalinger > Betalingsjournal**.
 2. Klikk på **Ny**.
@@ -62,3 +61,6 @@ Denne oppgaveveiledningen leder deg gjennom forskjellige metoder som brukes til 
 33. Klikk på **OK** for å generere betalingene.
 34. Klikk på **Poster** hvis alle betalingene er godkjent og generert. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

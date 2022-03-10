@@ -2,9 +2,7 @@
 title: JSONVALUE ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen JSONVALUE.
 author: NickSelin
-manager: kfend
-ms.date: 12/11/2019
-ms.topic: article
+ms.date: 10/25/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 203fe1b1616f724ddf3015258306e0d9e8d4f599
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: ff33098e5be4dd9748d01d45b596360617305724
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570022"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700069"
 ---
 # <a name="jsonvalue-er-function"></a>JSONVALUE ER-funksjonen
 
@@ -43,7 +41,7 @@ Den gyldige banen til en datakilde av *Streng*-typen som inneholder JSON-data.
 
 `path`: *Streng*
 
-Identifikatoren for en skalerbar verdi for JSON-data.
+Identifikatoren for en skalerbar verdi for JSON-data. Bruk en skråstrek (/) for å skille navnene på relaterte JSON-noder. Bruk parentesnotasjon (\[\]) for å angi indeksen for en bestemt verdi i en JSON-matrise. Legg merke til at nullbasert nummerering brukes for denne indeksen.
 
 ## <a name="return-values"></a>Returverdier
 
@@ -51,13 +49,37 @@ Identifikatoren for en skalerbar verdi for JSON-data.
 
 Den resulterende tekstverdien.
 
-## <a name="example"></a>Eksempel
+## <a name="example-1"></a>Eksempel 1
 
 Datakilden **JsonField** inneholder følgende data i JSON-format: **{"BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}**. I dette tilfellet returnerer uttrykket `JSONVALUE (JsonField, "BuildNumber")` følgende verdi av *streng*-datatypen: **"7.3.1234.1"**.
+
+## <a name="example-2"></a>Eksempel 2
+
+**JsonField**-datakilden for typen *Beregnet felt* inneholder følgende uttrykk: `"{""workers"": [ {""name"": ""Adam"", ""age"": 30, ""emails"": [""AdamS@Contoso.com"", ""AdamS@Hotmail.com"" ]}, { ""name"": ""John"", ""age"": 21, ""emails"": [""JohnS@Contoso.com"", ""JohnS@Aol.com""]}]}"`
+
+Dette uttrykket konfigurert til å returnere en [*Streng*](er-formula-supported-data-types-primitive.md#string)-verdi som representerer følgende data i JSON-format.
+
+```json
+{
+    "workers": [
+        {
+            "name": "Adam",
+            "age": 30,
+            "emails": [ "AdamS@Contoso.com", "AdamS@Hotmail.com" ]
+        },
+        {
+            "name": "John",
+            "age": 21,
+            "emails": [ "JohnS@Contoso.com", "JohnS@Aol.com" ]
+        }
+    ]
+}
+```
+
+I dette tilfellet returnerer uttrykket `JSONVALUE(json, "workers/[1]/emails/[0]")` følgende verdi av *streng*-datatypen: `JohnS@Contoso.com`.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

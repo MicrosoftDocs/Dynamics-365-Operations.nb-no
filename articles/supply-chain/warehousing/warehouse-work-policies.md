@@ -2,34 +2,31 @@
 title: Arbeidspolicyer
 description: Dette emnet forklarer hvordan du konfigurerer arbeidspolicyer.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434819"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571167"
 ---
 # <a name="work-policies"></a>Arbeidspolicyer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer systemet og lagerappen slik at de har støtte for arbeidspolicyer. Du kan bruke denne funksjonaliteten til raskt å registrere beholdning uten å opprette plasseringsarbeid når du mottar bestillinger eller overføringsordrer, eller når du fullfører produksjonsprosesser. Dette emnet gir generell informasjon. For detaljert informasjon som gjelder nummerskiltmottak, kan du se [Nummerskiltmottak via lagerappen](warehousing-mobile-device-app-license-plate-receiving.md).
+Dette emnet forklarer hvordan du konfigurerer systemet og mobilappen Lagerstyring slik at de har støtte for arbeidspolicyer. Du kan bruke denne funksjonaliteten til raskt å registrere beholdning uten å opprette plasseringsarbeid når du mottar bestillinger eller overføringsordrer, eller når du fullfører produksjonsprosesser. Dette emnet gir generell informasjon. For detaljert informasjon som gjelder nummerskiltmottak, kan du se [Nummerskiltmottak via mobilappen Lagerstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
-En arbeidspolicy kontrollerer om lagerarbeid opprettes når en produsert vare rapporteres som ferdig, eller når varer mottas ved hjelp av lagerappen. Du definerer hver arbeidspolicy ved å definere betingelsene der den gjelder: arbeidsordretypene og -prosessene, beholdningslokasjonen og (eventuelt) produktene. For eksempel må en bestilling for produkt *A0001* mottas i lokasjonen *RECV* på lager *24*. Senere forbrukes produktet i en annen prosess på lokasjonen *RECV*. I dette tilfellet kan du definere en arbeidspolicy for å hindre at plasseringsarbeid blir opprettet når en arbeider rapporterer produkt *A0001* som mottatt på lokasjonen *RECV*.
+En arbeidspolicy kontrollerer om lagerarbeid opprettes når en produsert vare rapporteres som ferdig, eller når varer mottas ved hjelp av mobilappen Lagerstyring. Du definerer hver arbeidspolicy ved å definere betingelsene der den gjelder: arbeidsordretypene og -prosessene, beholdningslokasjonen og (eventuelt) produktene. For eksempel må en bestilling for produkt *A0001* mottas i lokasjonen *RECV* på lager *24*. Senere forbrukes produktet i en annen prosess på lokasjonen *RECV*. I dette tilfellet kan du definere en arbeidspolicy for å hindre at plasseringsarbeid blir opprettet når en arbeider rapporterer produkt *A0001* som mottatt på lokasjonen *RECV*.
 
 > [!NOTE]
 > - Hvis en arbeidspolicy skal være aktiv, må du definere minst én lokasjon for den på hurtigfanen **Lagerlokasjoner** på siden **Arbeidspolicyer**. 
@@ -203,7 +200,7 @@ Bestillingen er nå mottatt, men intet arbeid er tilknyttet den. Lagerbeholdning
 
 I eksemplet nedenfor er det to produksjonsordrer, *PRD-001* og *PRD-002*. Produksjonsordren *PRD-001* har en operasjon kalt *Montering*, der produktet *SC1* rapporteres som ferdig til lokasjonen *001*. Produksjonsordren *PRD-002* er en operasjon kalt *Maling*, og den bruker *SC1*-produktet fra lokasjonen *001*. Produksjonsordren *PRD-002* bruker også råvaren *RM1* fra lokasjonen *001*. Råmaterialet *RM1* er lagret i lagerlokasjonen *BULK-001* og blir plukket til lokasjon *001* av lagerarbeid for plukking av råvarer. Plukkarbeidet blir generert når produksjonen *PRD-002* frigis.
 
-[![Arbeidspolicyer for lager](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Arbeidspolicyer for lager.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Når du planlegger å konfigurere en arbeidspolicy for lageret i dette scenariet, bør du vurdere følgende punkter:
 
@@ -282,15 +279,15 @@ Lagerprosesser inkluderer ikke alltid lagerarbeid. Ved å definere en arbeidspol
 
     La den nye produksjonsordren være valgt.
 
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Estimat**.
+1. I handlingsruten, i fanen **Produksjonsordre**, i **Prosess**-gruppen, velger du **Estimat**.
 1. I dialogboksen **Estimat** leser du estimatet og velger deretter **OK** for å lukke dialogboksen.
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Start**.
+1. I handlingsruten, i fanen **Produksjonsordre**, i **Prosess**-gruppen, velger du **Start**.
 1. I dialogboksen **Start**, på **Generelt**-fanen, angir du feltet **Automatisk stykklisteforbruk** til *Aldri*.
 1. Velg **OK** for å lagre innstillingen og lukke dialogboksen.
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Ferdigmeld**.
+1. I handlingsruten, i fanen **Produksjonsordre**, i **Prosess**-gruppen, velger du **Ferdigmeld**.
 1. I dialogboksen **Ferdigmeld**, på **Generelt**-fanen, setter du **Godtar feil** til *Ja*.
 1. Velg **OK** for å lagre innstillingen og lukke dialogboksen.
-1. Velg **Arbeidsdetaljer** i gruppen **Generelt** i kategorien **Lager** i handlingsruten.
+1. Velg **Arbeidsdetaljer** i gruppen **Generelt** i fanen **Lager** i handlingsruten.
 
 Når produksjonsordren rapporteres som fullført, genereres det ikke arbeid for plassering. Dette skjer fordi en arbeidspolicy er definert som hindrer at arbeidet blir generert når produktet *L0101* rapporteres som ferdig til lokasjon *001*.
 
@@ -298,6 +295,9 @@ Når produksjonsordren rapporteres som fullført, genereres det ikke arbeid for 
 
 Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Definere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md).
 
-For mer informasjon om nummerskiltmottak og arbeidspolicyer, se [Nummerskiltmottak via lagerappen](warehousing-mobile-device-app-license-plate-receiving.md).
+For mer informasjon om nummerskiltmottak og arbeidspolicyer, se [Nummerskiltmottak via mobilappen Lagerstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

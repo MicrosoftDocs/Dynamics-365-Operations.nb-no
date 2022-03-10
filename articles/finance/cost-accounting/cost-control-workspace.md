@@ -2,11 +2,9 @@
 title: Arbeidsområde for kostnadskontroll
 description: Dette emnet gir informasjon om arbeidsområdet for kostnadskontroll. Dette arbeidsområdet er et sentralt punkt der ledere som har ansvaret for å kontrollere et kostnadsobjekt eller et sett med kostnadsobjekter i en dimensjon eller på tvers av dimensjoner, kan få tilgang til rapporter.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763196"
 ---
 # <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll 
 
@@ -118,7 +116,7 @@ Arbeidsområdet **Kostnadskontroll** er utformet som en webrapport. Derfor kan a
 
 Listen over rapporter som er tilgjengelige for brukere, for eksempel ledere, styres av innstillingen for alternativet **Publisert** på siden **Konfigurasjoner av arbeidsområde for kostnadskontroll**.
 
-![En rapport som brukere kan se i arbeidsområdet for kostnadskontroll](./media/report-cost-control.png)
+![En rapport som brukere kan se i arbeidsområdet for kostnadskontroll.](./media/report-cost-control.png)
 
 En leder kan velge regnskapskalenderperioden som skal vises. Øktdatoen brukes til å fastsette standard gjeldende periode.
 
@@ -138,11 +136,11 @@ Et rutenett viser hvert kostnadselement som er knyttet til dimensjonshierarkinod
 
 To diagrammer viser et sammendrag av faktisk kontra budsjett og budsjettavvik etter periode.
 
-![Diagrammer som viser et sammendrag av faktisk kontra budsjett og budsjettavvik etter periode](./media/cost-element-details-operations.png)
+![Diagrammer som viser et sammendrag av faktisk kontra budsjett og budsjettavvik etter periode.](./media/cost-element-details-operations.png)
 
 Brukere kan klikke på **Kostnadsoppføringer** for å drille ned i oppføringsdetaljene etter behov.
 
-![Kostnadsoppføringer](./media/cost-entries.png)
+![Kostnadsoppføringer.](./media/cost-entries.png)
 
 Leie er for eksempel en utgift som distribueres til kostsentre. En bruker som vil ha klarhet i leiekostnaden som kostsenteret til vedkommende må betale, kan drille ned for å se hvordan leien beregnes.
 
@@ -150,7 +148,7 @@ Hvis du klikker på **Tildelingsgrunnlag** på **Kostnadsoppføringer**-siden, v
 
 I eksemplet nedenfor er tildelingsgrunnlaget av typen **Formeltildelingsgrunnlag**, og formelen vises. Faktorene som definerer formelen, vises. I tillegg viser et rutenett beregningen som utføres per kostnadsobjekt.
 
-![Beregninger per kostnadsobjekt](./media/cost-entries-allocation-base.png)
+![Beregninger per kostnadsobjekt.](./media/cost-entries-allocation-base.png)
 
 Tilleggsressurser 
 

@@ -1,78 +1,45 @@
 ---
-title: Interne aktiva for vedlikehold
-description: Dette emnet beskriver hvordan du kan bruke Microsoft Dynamics 365 Field Service til å vedlikeholde både kunde- og interne aktiva.
+title: Interne aktiva for betjening
+description: Dette emnet beskriver hvordan du kan bruke Microsoft Dynamics 365 Field Service til å vedlikeholde både kundeaktiva og interne aktiva.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8048a99951eea3fbae34e56c1b444c75ad3d199d
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684011"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781422"
 ---
-# <a name="in-house-assets-for-servicing"></a>Interne aktiva for vedlikehold
+# <a name="in-house-assets-for-servicing"></a>Interne aktiva for betjening
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 Microsoft Dynamics 365 Field Service er utviklet for å betjene kundeeiendeler. Aktivakontroll for Dynamics 365 Supply Chain Management er utformet for vedlikehold av interne anleggsmidler. Ved hjelp av integrering av disse to appene kan du bruke Field Service til å vedlikeholde både kunde- og interne aktiva. Du kan også klassifisere anleggsmidlene basert på arbeidssted eller hierarki, og spore vedlikehold på et detaljert nivå.
 
-Hvis du vil ha mer informasjon, se [Integrere Dynamics 365 Field Service og Supply Chain Management](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
+Hvis du vil ha mer informasjon, se [Integrere Dynamics 365 Field Service og Supply Chain Management](/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## <a name="templates"></a>Maler
 
 Interne aktiva inkluderer en samling tabelltilordninger for viktige områder som fungerer sammen under datasamhandling, som vist i følgende tabell.
 
-| Finance and Operations-apper | Modelldrevne apper i Dynamics 365 | beskrivelse |
+| Finance and Operations-apper | Kundeengasjementsapper | beskrivelse |
 |-----------------------------|-----------------------------------|-------------|
-| Aktivabehandling, livsløpsmodeller for aktiva | msdyn\_assetlifecyclemodels | |
-| Aktivabehandling, livsløpstilstander for aktiva | msdyn\_assetlifecyclestates | |
-| Aktivabehandling, aktiva | msdyn\_customerassets | |
-| Aktivabehandling, aktivatyper | msdyn\_customerassetcategories | |
-| Aktivabehandling, livsløpsmodeller for arbeidssted | msdyn\_functionallocationlifecyclemodels | |
-| Aktivabehandling, livsløpstilstander for arbeidssted | msdyn\_functionallocationlifecyclestates | |
-| Aktivabehandling, arbeidssteder | msdyn\_functionallocations | |
-| Aktivabehandling, arbeidsstedstyper | msdyn\_functionallocationtypes | |
-| Aktivabehandling, produsenter | msdyn\_manufacturers | |
-| Aktivabehandling, modeller | msdyn\_models | |
-| Aktivabehandling, garanti | msdyn\_warranties | |
+[Aktivabehandling, livsløpsmodeller for aktiva](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
+[Aktivabehandling, livsløpstilstander for aktiva](mapping-reference.md#120) | msdyn_assetlifecyclestates | |
+[Aktivabehandling, aktivatyper](mapping-reference.md#124) | msdyn_customerassetcategories | |
+[Aktivabehandling, aktiva](mapping-reference.md#125) | msdyn_customerassets | |
+[Aktivabehandling, livsløpsmodeller for arbeidssted](mapping-reference.md#134) | msdyn_functionallocationlifecyclemodels | |
+[Aktivabehandling, livsløpstilstander for arbeidssted](mapping-reference.md#135) | msdyn_functionallocationlifecyclestates | |
+[Aktivabehandling, arbeidsstedstyper](mapping-reference.md#137) | msdyn_functionallocationtypes | |
+[Aktivabehandling, arbeidssteder](mapping-reference.md#136) | msdyn_functionallocations | |
+[Aktivabehandling, produsenter](mapping-reference.md#153) | msdyn_manufacturers | |
+[Aktivabehandling, modeller](mapping-reference.md#154) | msdyn_models | |
+[Aktivabehandling, garanti](mapping-reference.md#209) | msdyn_warranties | |
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
-
-[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
-
-[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
-
-[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
-
-[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
-
-[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
-
-[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
-
-[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
-
-[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
-
-[!include [models](includes/AssetManagementModels-msdyn-models.md)]
-
-[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

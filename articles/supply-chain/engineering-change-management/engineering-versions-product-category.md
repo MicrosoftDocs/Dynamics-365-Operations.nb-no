@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 1ebcb43b6c62ce895d3b1b36d7793f90208ca23e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836644"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572895"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versjoner og kategorier for teknisk produkt
 
@@ -48,7 +48,8 @@ Når du bruker tekniske produkter, har hvert produkt minst én teknisk versjon. 
 - Det tekniske firmaet som opprettet og eier produktet (Hvis du vil ha mer informasjon, kan du se [Tekniske firmaer og dataeierskapsregler](engineering-org-data-ownership-rules.md) .)
 - Tilknyttede tekniske dokumenter, for eksempel en monteringshåndbok, brukerveiledninger, bilder og koblinger
 - De tekniske attributtene (Hvis du vil ha mer informasjon om tekniske attributter, kan du se [Tekniske attributter og søk i tekniske attributter](engineering-attributes-and-search.md).)
-- De tekniske stykklistene
+- Stykkliste for tekniske produkter
+- Formler for prosessproduksjonprodukter
 - De tekniske rutene
 
 Du kan oppdatere disse dataene på en eksisterende versjon, eller opprette en ny versjon ved å bruke en *ordre om teknisk endring*. (Hvis du vil ha mer informasjon, kan du se [Behandle endringer i tekniske produkter](engineering-change-management.md).) Hvis du oppretter en ny versjon av et produkt, kopierer systemet alle teknisk relevante data til den nye versjonen. Deretter kan du endre dataene for den nye versjonen. På denne måten kan du spore bestemte data for hver påfølgende versjon. Hvis du vil sammenligne forskjellene mellom påfølgende tekniske versjoner, kontrollerer du ordren om teknisk endring, som omfatter endringstyper som angir alle endringer.
@@ -110,9 +111,11 @@ Angi følgende felter i hurtigfanen **Detaljer** for en kategori for teknisk end
 | Felt | beskrivelse |
 |---|---|
 | Produkttype | Velg om kategorien gjelder for produkter eller tjenester. |
-| Spor versjoner i transaksjoner | Velg om produktversjonen skal stemples inn på alle transaksjoner (logistikkinnvirkning). Hvis du for eksempel sporer versjonen i transaksjoner, vil hver salgsordre vise hvilken versjon av produktet som er solgt, i den aktuelle salgsordren. Hvis du ikke sporer versjonen i transaksjoner, viser ikke salgsordrer hvilken bestemt versjon som ble solgt. I stedet viser de alltid den nyeste versjonen.<ul><li>Hvis dette alternativet er satt til *Ja*, opprettes det en produktstandard for produktet, og hver versjon av produktet vil være en variant som bruker *versjonsproduktdimensjonen*. Feltet **Produktets undertype** settes automatisk til *Produktstandard*, og du må velge en produktdimensjonsgruppe der *versjonsdimensjonen* er aktiv. Bare produktdimensjonsgrupper der *versjon* er en aktiv dimensjon, vil vises. Du kan opprette nye produktdimensjonsgrupper ved å velge **Rediger**-knappen (blyantsymbolet).</li><li>Hvis dette alternativet er satt til *Nei*, brukes ikke *versjonsproduktdimensjonen*. Du kan deretter velge om du vil opprette et produkt eller en produktstandard som bruker de andre dimensjonene.</li></ul><p>Dette alternativet brukes ofte for produkter som har en kostnadsforskjell mellom versjoner eller produkter der forskjellige betingelser gjelder i forbindelse med kunden. Derfor er det viktig å angi hvilken versjon som ble brukt i hver transaksjon.</p> |
+| Produksjonstype | Dette feltet vises bare når du har aktivert [formelendringsbehandling](manage-formula-changes.md) i systemet. Velg produksjonstypen som denne tekniske produktkategorien gjelder for:<ul><li>**Planleggingselement** - Bruk denne ingeniørkategorien til å gjøre formelendringsbehandling for planleggingselementer. Planleggingselementer bruker formler. De ligner formelvarer, men de brukes til å produsere bare koprodukter og biprodukter, ikke ferdige produkter. Formler brukes under prosessproduksjon.</li><li>**Stykkliste** – Bruk denne tekniske kategorien til å administrere tekniske produkter, som ikke bruker formler og vanligvis (men ikke nødvendigvis) omfatter stykklister.</li><li>**Formel** - Bruk denne tekniske kategorien til å gjøre formelendringsbehandling for ferdige produkter. Disse varene vil ha en formel, men ikke en stykkliste. Formler brukes under prosessproduksjon.</li></ul> |
+| Faktisk vekt | Dette alternativet vises bare når du har aktivert [formelendringsbehandling](manage-formula-changes.md) i systemet. Det er bare tilgjengelig når **Produksjonstype**-feltet er satt til *Planleggingselement* eller *Formel*. Sett dette alternativet til *Ja* hvis du vil bruke denne tekniske kategorien til å administrere varer som krever støtte for faktisk vekt. |
+| Spor versjoner i transaksjoner | Velg om produktversjonen skal stemples inn på alle transaksjoner (logistikkinnvirkning). Hvis du for eksempel sporer versjonen i transaksjoner, vil hver salgsordre vise hvilken versjon av produktet som er solgt, i den aktuelle salgsordren. Hvis du ikke sporer versjonen i transaksjoner, viser ikke salgsordrer hvilken bestemt versjon som ble solgt. I stedet viser de alltid den nyeste versjonen.<ul><li>Hvis dette alternativet er satt til *Ja*, opprettes det en produktstandard for produktet, og hver versjon av produktet vil være en variant som bruker *versjonsproduktdimensjonen*. Feltet **Produktets undertype** settes automatisk til *Produktstandard*, og i feltet **Produktdimensjonsgruppe** må du velge en produktdimensjonsgruppe der *versjon*-dimensjonen er aktiv. Bare produktdimensjonsgrupper der *versjon* er en aktiv dimensjon, vil vises. Du kan opprette nye produktdimensjonsgrupper ved å velge **Rediger**-knappen (blyantsymbolet).</li><li>Hvis dette alternativet er satt til *Nei*, brukes ikke *versjonsproduktdimensjonen*. Du kan deretter velge om du vil opprette et produkt eller en produktstandard som bruker de andre dimensjonene.</li></ul><p>Dette alternativet brukes ofte for produkter som har en kostnadsforskjell mellom versjoner eller produkter der forskjellige betingelser gjelder i forbindelse med kunden. Derfor er det viktig å angi hvilken versjon som ble brukt i hver transaksjon.</p> |
 | Produktets undertype | Velg om kategorien skal inneholde produkter eller produktstandarder. For produktstandarder brukes produktdimensjoner.
-| Produktdimensjonsgruppe | Med innstillingen **Spor versjoner i transaksjoner** kan du velge produktets undertype. Hvis du har angitt at du vil spore versjonen i transaksjoner, vises produktdimensjonsgruppene der *versjonsdimensjonen* brukes. Ellers vises bare produktdimensjonsgrupper der *versjonsdimensjonen* ikke brukes. |
+| Produktdimensjonsgruppe | Med innstillingen **Spor versjoner i transaksjoner** kan du velge produktets dimensjonsgruppe. Hvis du har angitt at du vil spore versjonen i transaksjoner, vises produktdimensjonsgruppene der *versjonsdimensjonen* brukes. Ellers vises bare produktdimensjonsgrupper der *versjonsdimensjonen* ikke brukes. |
 | Produktlivssyklustilstand ved opprettelse | Definer standardstatusen for produktstatusen som et teknisk produkt skal ha når det opprettes først. Hvis du vil ha mer informasjon, kan du se [Produktstatuser og transaksjoner](product-lifecycle-state-transactions.md). |
 | Versjonsnummerregel | Velg versjonsnummerregelen som gjelder for kategorien:<ul><li>**Manuell** – Du velger versjonsnummeret for hver nye versjon.</li><li>**Automatisk** – Systemet angir versjonsnummeret, basert på et format du definerer. Når du definerer formatet, bruker du et nummertegn (\#) til å representere et siffer og et hvilket som helst annet tegn til å representere en konstant verdi. Hvis du for eksempel definerer formatet som *V-\#\#*, vil den første versjonen være V-01, den andre versjonen være V-02 og så videre.</li><li>**Liste** – Systemet bruker neste nummer fra en forhåndsdefinert liste over egendefinerte verdier som du definerer.</li></ul> |
 | Håndhev gyldighet | Velg om de gyldighetsdatoene til tekniske versjoner må være sammenhengende, eller om det kan være tomrom og overlappinger. Denne innstillingen påvirker hvordan du kan bruke feltene **Gyldig fra** og **Gyldig til** i hver tekniske versjon der kategorien gjelder.<ul><li>Hvis dette alternativet er angitt til *Ja*, må en **Gyldig fra**-verdi angis for hver versjon, og verken overlappinger eller tomrom er tillatt mellom versjoner. Datointervallet for hver tekniske versjon er koblet direkte til de tidligere og neste tekniske versjoner, hvis de finnes. I dette scenarioet brukes alltid den nyeste versjonen, og eldre versjoner brukes ikke lenger.</li><li>Hvis dette alternativet er satt til **Nei**, er det ingen begrensninger i gyldighetsdatofeltene for tekniske versjoner, og både overlappinger og tomrom er tillatt. I dette scenarioet kan flere versjoner være aktive samtidig, og du kan arbeide med alle aktive versjoner.</li></ul><p>Dette alternativet påvirker også stykklister og ruter som er koblet til en produktversjon. Hvis du vil ha mer informasjon, kan du se avsnittet [Koble stykklister og ruter til tekniske versjoner](#boms-routes) senere i dette emnet.</p> |
@@ -139,7 +142,10 @@ For hver rad du legger til i rutenettet, angir du følgende felter:
 
 ### <a name="readiness-policy-fasttab"></a>Hurtigfanen Klargjøringspolicy
 
-Bruk feltet for **Policy for produktklargjøring** til å velge klargjøringspolicyen som gjelder for produkter som hører til denne kategorien. Hvis du vil ha mer informasjon, kan du se [Produktklargjøring](product-readiness.md).
+Bruk feltet for **Policy for produktklargjøring** til å velge klargjøringspolicyen som skal brukes på produkter som opprettes basert på denne tekniske kategorien. Hvis du vil ha mer informasjon, kan du se [Produktklargjøring](product-readiness.md).
+
+> [!NOTE]
+> Feltet **Policy for produktklargjøring** fungerer litt annerledes hvis du har aktivert funksjonen for *Produktberedskapskontroller* i systemet. (Med denne funksjonen kan du bruke beredskapspolicyer på standard \[ikke-tekniske\] produkter). Hvis du vil ha mer informasjon, kan du se [Tilordne beredskapspolicyer til standardprodukter og tekniske produkter](product-readiness.md#assign-policy).
 
 ### <a name="release-policy-fasttab"></a>Hurtigfanen Frigivelsespolicy
 

@@ -2,8 +2,7 @@
 title: Økonomisk analyse
 description: Økonomisk analyse bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572372"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416311"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -37,9 +36,9 @@ ms.locfileid: "5572372"
 > - **Side** – En kategori i en enkelt .pbix-fil. Hver side kan inneholde én eller flere visuelle effekter.
 > - **Visuelt** – Én enkelt kilde med data, for eksempel kort, KPI, diagram, graf, matrise og regnskapsoppgjør. En side som har et regnskapsoppgjør som en visuell effekt, kan ikke ha flere andre visuelle effekter på grunn av størrelsen på dataene som rapporteres.
 
-For øyeblikket brukes **økonomisk analyse** til å vise data for den aktive juridiske enheten eller alle juridiske enheter. I fremtidige versjoner utvikles arbeidsområdet til et sted der du kan bruke Power BI til å redigere og opprette visuelle effekter.
+Arbeidsområdet **Økonomisk analyse** er fokusert på å la deg vise og filtrere dataene på eksisterende rapporter. Du kan legge til nye visuelle effekter i arbeidsområdet **Økonomisk analyse**. Arbeidsområdet **Økonomisk analyse** er tilgjengelig for det gjeldende firmaet og alle firmaer for å vise data for alle juridiske enheter, uansett hvilke juridiske enheter rollen har tilgang til.
 
-Arbeidsområdet **CFO-oversikt** viser samme visuelle effekter som **Økonomisk analyse**, men fokuserer på at du kan vise og filtrere dataene i eksisterende rapporter. I fremtidige versjoner vil du kunne legge til nye visuelle effekter i arbeidsområdet **Økonomisk analyse**. De nye visuelle effektene kan også være tilgjengelige i arbeidsområder som fokuserer på andre roller, for eksempel prosjektledere eller regnskapssjefer for leverandørreskontro. **CFO-oversikt**-arbeidsområdet fortsetter å vise data for alle juridiske enheter, uavhengig av de juridiske enhetene som rollen har tilgang til.
+- [Legg til eller rediger visuelle Power BI-effekter på instrumentbordet](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Oppsett av Dynamics 365 Finance
 **Økonomimodul**
@@ -61,14 +60,12 @@ For å vises i regnskapsoppgjørene og inkluderes i forskjellige andre visuelle 
 ## <a name="entity-store"></a>Enhetslager
 Dataene for **Økonomisk analyse** hentes fra enhetslageret (**Systemadministrasjon** \> **Oppsett** \> **Enhetslager**). Hvis du åpner **CFO-oversikt**- eller **Økonomisk analyse**-arbeidsområdet, og følgende advarsel vises i de visuelle effektene, må du oppdatere enhetene.
 
-![Advarsel!](./media/Cantdisplay.png)
+![Advarsel.](./media/Cantdisplay.png)
 
 Du må oppdatere følgende enheter for å vise data i arbeidsområdet **Økonomisk analyse**:
 
-- BudgetActivityMeasure
 - Transaksjonsdata for finansrapportering, versjon 3 
-- CustCollectionsBIMeasurements
-- LedgerActivityMeasure
+- Kreditt og innkreving V2
 - LedgerCovLiquidityMeasurement
 - Innkjøpskube
 - Salgskube
@@ -90,18 +87,18 @@ Selv om **Økonomisk analyse** inneholder regnskapsoppgjør, er det ikke en erst
 Sammenligningsdiagrammet nedenfor vil hjelpe deg med å skille mellom de to alternativene:
 
 
-|                                                          | Financial Reporting                                               | Økonomisk analyse |
+| Funksjon                                                   | Financial Reporting                                               | Økonomisk analyse |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Rediger standardrapporter**                                 | Ja                                                               | Nr. |
-| **Opprett nye rapporter**                                   | Ja                                                               | Nr. |
-| **Skriv ut rapporter**                                        | Ja                                                               | Antall |
+| **Rediger standardrapporter**                                 | Ja                                                               | Nei |
+| **Opprett nye rapporter**                                   | Ja                                                               | Nei |
+| **Skriv ut rapporter**                                        | Ja                                                               | Nei |
 | **Eksporter til Excel**                                      | Ja                                                               | Begrenset Eksporterer rådata til Excel, ikke en formatert rapport |
-| **Støtt rapporteringshierarki/organisasjonshierarki**   | Ja                                                               | Antall |
+| **Støtt rapporteringshierarki/organisasjonshierarki**   | Ja                                                               | Nei |
 | **Rapporter om underfinansdata**                             | Ja Begrenset til bare leverandør, kunde                              | Ja Leverandør, kunde, leverandør-/kundegrupper, leverandør-/kundeadresser og så videre. |
 | **Rapporteringsvaluta**                                   | Ja Regnskapsvaluta og omveksle til rapporteringsvaluta       | Nei Bare regnskapsvaluta |
 | **Sikkerhet**                                             | Ja Samsvarer med Finance- og rapporteringstresikkerhet | Begrenset Vis rapporter for alle firmaer (uansett Finance and Operations-sikkerhet) eller bare aktivt selskap |
-| **Støtt ulike kontoplaner og regnskapsår** | Ja                                                               | Antall |
-| **rapporter om eksterne data**                              | Antall                                                                | Antall |
+| **Støtt ulike kontoplaner og regnskapsår** | Ja                                                               | Nei |
+| **rapporter om eksterne data**                              | Nei                                                                | Nei |
 | **Støtt konsolideringer**                               | Ja                                                               | Begrenset Kan rapportere om flere firmaer, men bare bruke regnskapsvaluta |
 
 Følgende regnskapsoppgjør er tilgjengelige:
@@ -127,7 +124,7 @@ Brukere kan filtrere rapporten ved hjelp av **Filter**-ruten til venstre. Dette 
 - **Visuellnivåfiltre** – Disse filtrene brukes bare på den valgte visuelle effekten. Disse filtrene brukes på toppen av sidenivåfiltrene.
 - **Gjennomgangsfilter** – Dette filteret filtrerer fra en visuell kildeeffekt som brukes på den gjeldende visuelle effekten når du gjennomgår fra den visuelle kildeeffekten til den gjeldende visuelle effekten.
 
-![Filtreringsalternativer](./media/filter.png)
+![Filtreringsalternativer.](./media/filter.png)
 
 Hvis du vil fjerne en bestem filterverdi, velger du slettesymbolet ved siden av den. Ikke fjern et filter ved å velge X. Hvis du velger X, fjernes feltet du filtrerer på, som filteralternativ. Hvis du ved et uhell fjerner et felt fra filteret, lukk arbeidsområdet og åpne det deretter på nytt. Standardfilterinnstillingene blir brukt på nytt.
 
@@ -172,25 +169,25 @@ Ulike nivåer av drilling er tilgjengelig via Power BI. Hvert nivå har ulikt na
 
 I illustrasjonen nedenfor er **Råbalanse**-utdraget trukket sammen til det høyeste nivået i radhierarkiet, hovedkontotypen.
 
-![Råbalansesaldo](./media/trial-balance.png)
+![Råbalansesaldo.](./media/trial-balance.png)
 
 Hvis du vil vise det neste nivået i hierarkiet, hovedkontokategoriene, kan du sette **Drill på**-feltet til **Rader** og velge **Vis** (den tredje knappen etter Drill på-feltet). Du kan nå se alle hovedkontokategoriene. For øyeblikket lar ikke Power BI deg vise bare én rad eller kolonne, men samtidig kunne se alle de andre radene eller kolonnene.
 
-![Råbalanse-neddrilling for rader](./media/trial-balance2.png)
+![Råbalanse-neddrilling for rader.](./media/trial-balance2.png)
 
 Hvis du vil utvide hovedkontoene for alle radene, kan du igjen bruke **Vis**-knappen. Men for å drille ned til hovedkontoene for bare én rad, må du første velge **Drill ned**-knappen (den enkle pilen som peker nedover, til høyre i vinduet), og deretter velge raden for neddrilling. Illustrasjonen nedenfor viser resultatet når **Salg**-raden velges etter **Drill ned**-knappen er valgt.
 
-![Utvid-knapp for råbalanse](./media/trial-balance3.png)
+![Utvid-knapp for råbalanse.](./media/trial-balance3.png)
 
 Når du har drillet ned på en enkelt rad, kreves det flere klikk for å gå tilbake til den fullstendige råbalansen. **Drill opp**-knappen (den første knappen etter **Drill på**-feltet) driller bare opp i forbindelse med **Salg**-kategorien, som vist i illustrasjonen nedenfor.
 
-![Drill opp-knapp for råbalanse](./media/trial-balance4.png)
+![Drill opp-knapp for råbalanse.](./media/trial-balance4.png)
 
 Du kan fortsette å bruke **Drill opp**-knappen for å gå tilbake til det høyeste nivået i summeringen for radene.
 
 Power BII har også en knapp som gjør det mulig å gå til neste nivå i hierarkiet (den andre knappen etter **Drill på**-feltet). Effekten av denne knappen er forskjellig fra effekten av **Vis**-knappen (den tredje knappen etter **Drill på**-feltet), som brukes til å utvide hierarkiet. Når du utvider hierarkiet, beholdes hierarkiet i rapporten. Hvis du for eksempel som vist tidligere utvider på hovedkontotypen, ser du fortsatt hovedkontotypen i rapporten. Men når du går til neste nivå i hierarkiet, viser ikke lenger rapporten overordnet i hierarkiet, som vist i illustrasjonen nedenfor.
 
-![Drill tilbake-knapp for råbalanse](./media/trial-balance5.png)
+![Drill tilbake-knapp for råbalanse.](./media/trial-balance5.png)
 
 Hvis du vil vise transaksjonsinformasjonen bak de summerte saldoene, kan du velge noen beløp for å drille tilbake til Financial and Operations.
 
@@ -229,7 +226,7 @@ For øyeblikket støtter ikke regnskapsoppgjør organisasjonshierarkiene, som la
 ## <a name="data-limitations"></a>Databegrensninger
 Visuelle effekter for regnskapsoppgjøret har en grense for hvor mange rader som kan vises. Grensen er for øyeblikket satt til 30 000. Hvis du overskrider denne grensen, har den visuelle effekten et varselsymbol som varsler deg om dette.
 
-![Databegrensninger](./media/data-limit.png)
+![Databegrensninger.](./media/data-limit.png)
 
 Hvis maksimalt overskrides, blir totalsummene som vises i regnskapsoppgjøret feil fordi ikke alle radene ble lastet inn i den visuelle effekten.
 
@@ -241,9 +238,9 @@ Power BI har ikke et alternativ for å vise og skjule tomme rader. Hvis en rad i
 
 Informasjonen i følgende ressurser er ikke nødvendig for å aktivere de innebygde rapportene for arbeidsområdet **Økonomisk analyse** i et produksjonsmiljø. I stedet er de nyttige for utviklerbokser og hvis du vil bygge inn dine egne Power BI-rapporter.
 
-- [Få tilgang til analytiske arbeidsområder og rapporter i 1-boks-miljø](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Få tilgang til analytiske arbeidsområder og rapporter i 1-boks-miljø](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

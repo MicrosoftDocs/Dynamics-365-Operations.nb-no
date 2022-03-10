@@ -2,11 +2,9 @@
 title: Lagerapphendelser
 description: Dette emnet beskriver behandling av lagerapphendelser som brukes til å behandle hendelsesmeldinger for lagerappen som en del av en satsvis jobb.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,25 +13,22 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0bafcbd5306860cb80d6e813aabf83853a9011c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c92bf179006d668f8673e9abc3419a10e644184
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248649"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103269"
 ---
 # <a name="warehouse-app-event-processing"></a>Behandling av lagerapphendelse
 
 [!include [banner](../includes/banner.md)]
 
-Satsvise jobber som kjører i Supply Chain Management, kan bruke data fra en kø for behandling av hendelser som utstedes av lagerappen, for å reagere etter behov på signaliserte hendelser. Denne funksjonen legger til relevante hendelser i køen som svar på bestemte typer handlinger utført av arbeidere ved hjelp av appen. Et eksempel er at når du bruker funksjonen **Opprette og behandle overføringsordre fra lagerappen**, blir overføringsordrehodet og -linjene opprettet og oppdatert i serverdelen når systemet kjører den satsvise jobben **Behandle lagerapphendelser**.
+Satsvise jobber som kjører i Supply Chain Management, kan bruke data fra en kø for behandling av hendelser som utstedes av mobilappen Lagerstyring, for å reagere etter behov på signaliserte hendelser. Denne funksjonen legger til relevante hendelser i køen som svar på bestemte typer handlinger utført av arbeidere ved hjelp av appen. Et eksempel er at når du bruker funksjonen *Opprette og behandle overføringsordre fra lagerappen*, blir overføringsordrehodet og -linjene opprettet og oppdatert i serverdelen når systemet kjører den satsvise jobben **Behandle lagerapphendelser**.
 
-## <a name="enable-the-process-warehouse-app-events-feature"></a>Aktivere funksjonen Behandle lagerapphendelser
+## <a name="turn-the-process-warehouse-app-events-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Behandle lagerapphendelser
 
-Før du kan bruke denne funksjonen, må du aktivere den i systemet. Administratorer kan bruke siden for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis det er nødvendig. Funksjonen Behandle lagerapphendelser er oppført som :
-
-- **Modul** – lagerstyring
-- **Funksjonsnavn** – Behandle lagerapphendelser
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Behandle lagerapphendelser* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-a-batch-job-to-process-warehouse-app-events"></a>Konfigurere en satsvis jobb for å behandle lagerapphendelser
 
@@ -50,7 +45,7 @@ Konfigurer en planlagt satsvis jobb for å behandle lagerapphendelsene for oppre
 
 ## <a name="query-warehouse-app-events"></a>Spørre etter lagerapphendelser
 
-Du kan vise hendelseskøen og hendelsesmeldingene som genereres av lagerappen, ved å gå til **Lagerstyring \> Forespørsler og rapporter \> Logger for mobilenheter \> Lagerapphendelser**.
+Du kan vise hendelseskøen og hendelsesmeldingene som genereres av mobilappen Lagerstyring, ved å gå til **Lagerstyring \> Forespørsler og rapporter \> Logger for mobilenheter \> Lagerapphendelser**.
 
 ## <a name="the-standard-event-queue-process"></a>Standardprosess for hendelseskø
 

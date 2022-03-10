@@ -2,7 +2,7 @@
 title: Mediegallerimodul
 description: Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 809916118d8eb709c0bde31bb23fa8daa1f7e60c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733203"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -42,7 +41,7 @@ Her er noen brukseksempler for mediegallerimoduler:
 
 I eksemplet i følgende illustrasjon er en kjøpeboks på en PDP som er vert for produkt bilder, ved hjelp av en mediegallerimodul.
 
-![Eksempel på en kjøpeboks på en produktdetaljside som er vert for produktavbildninger ved hjelp av en mediegallerimodul](./media/ecommerce-pdp-buybox.PNG)
+![Eksempel på en kjøpeboks på en produktdetaljside som er vert for produktavbildninger ved hjelp av en mediegallerimodul.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Egenskaper for mediegalleri
 
@@ -57,14 +56,18 @@ I eksemplet i følgende illustrasjon er en kjøpeboks på en PDP som er vert for
 | Bilder | Bilder som er valgt fra mediebiblioteket i områdebygger | I tillegg til å bli gjengitt fra et produkt kan bilder kurateres for en mediegallerimodul. Disse bildene blir føyd til alle tilgjengelige produktavbildninger. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.12. |
 | Miniatyrbilderetning | **Loddrett** eller **Vannrett** | Denne egenskapen angir om miniatyrbilder skal vises i en loddrett stripe eller en vannrett stripe. |
 | Skjul hovedproduktbilder for variant | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann** når en variant er valgt, skjules bilder av hovedproduktet hvis varianten ikke har noen bilder. Denne egenskapen påvirker ikke produkter som ikke har noen varianter. |
+| Oppdater medier ved dimensjonsvalg | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann**, oppdateres bilder i mediebiblioteket når en dimensjon (for eksempel farge, stil eller størrelse) er valgt, og hvis et bilde er tilgjengelig. Denne egenskapen bidrar til å forenkle nettleseropplevelsen, fordi ikke alle produktvariantdimensjoner må velges for det tilsvarende bildet som skal oppdateres. Denne egenskapen er tilgjengelig i fanen **Avansert**. |
+
+> [!IMPORTANT]
+> Egenskapen **Oppdater medier ved dimensjonsvalg** er tilgjengelig fra og med Commerce, versjon 10.0.21. Den krever at Commerce-modulbibliotekpakken versjon 9.31 er installert.
 
 Illustrasjonen nedenfor viser et eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige.
 
-![Eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige](./media/ecommerce-media-zoom.png)
+![Eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige.](./media/ecommerce-media-zoom.png)
 
 Illustrasjonen nedenfor viser et eksempel på en mediegallerimodul med kuraterte bilder (det vil si at de angitte bildene ikke er avhengige av produkt-ID-en eller sidekonteksten).
 
-![Eksempel på en mediegallerymodul med kuraterte bilder](./media/ecommerce-media-curated.PNG)
+![Eksempel på en mediegallerymodul med kuraterte bilder.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
 

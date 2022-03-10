@@ -1,33 +1,34 @@
 ---
 title: Kompensasjonsplaner
-description: Kompensasjons- og fordelsansvarlige kan bruke kompensasjonsstyring til å vedlikeholde og behandle faste og variable kompensasjonsplaner for ansatte i organisasjonen.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
+description: Dette emnet beskriver hvordan du bruker kompensasjonsstyring til å styre og behandle kompensasjonsplaner.
+author: twheeloc
+ms.date: 08/25/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
-ms.custom: 7521
+ms.search.scope: Human Resources
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419852"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066906"
 ---
 # <a name="compensation-plans"></a>Kompensasjonsplaner
 
-Kompensasjons- og fordelsansvarlige kan bruke kompensasjonsstyring til å vedlikeholde og behandle faste og variable kompensasjonsplaner for ansatte i organisasjonen.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Kompensasjons- og fordelsansvarlige kan bruke **Kompensasjonsstyring** til å vedlikeholde og behandle faste og variable kompensasjonsplaner for ansatte i organisasjonen.
 
 ### <a name="introduction"></a>Innledning
 
@@ -44,7 +45,7 @@ Tabellen nedenfor viser komponenter i kompensasjonsprosessen som kan være integ
 <thead>
 <tr class="header">
 <th>Komponent</th>
-<th>Mer informasjon ...</th>
+<th>Mer informasjon</th>
 </tr>
 </thead>
 <tbody>
@@ -90,7 +91,7 @@ Tabellen nedenfor viser komponenter i kompensasjonsprosessen som kan være integ
 </tr>
 <tr class="even">
 <td>Kontrollpunkt</td>
-<td>Kontrollpunktet angir hva du anser som ideell lønnssats for alle ansatte på et gitt kompensasjonsnivå. Kontrollpunkt er normalt områdenes midtpunkt for kategoriplanstrukturer. Segmentstrukturer bruker sjelden kontrollpunkt. Du kan angi kontrollpunktet for en fast kompensasjonsplan i skjemaet Faste kompensasjonsplaner.</td>
+<td>Kontrollpunktet angir hva du anser som ideell lønnssats for alle ansatte på et gitt kompensasjonsnivå. Kontrollpunkt er normalt områdenes midtpunkt for kategoriplanstrukturer. Segmentstrukturer bruker sjelden kontrollpunkt. Du kan angi kontrollpunktet for en fast kompensasjonsplan på siden **Faste kompensasjonsplaner**.</td>
 </tr>
 <tr class="odd">
 <td>Jobbfunksjoner</td>
@@ -122,8 +123,7 @@ Tabellen nedenfor viser komponenter i kompensasjonsprosessen som kan være integ
 ## <a name="process-events"></a>Prosesshendelser
 En prosesshendelse beregner kompensasjonsinformasjon for en bestemt periode for alle ansatte som er registrert i én eller flere faste eller variable kompensasjonsplaner. Du kan kjøre en prosesshendelse gjentatte ganger for å teste eller oppdatere beregnede kompensasjonsresultater.
 
-<a name="compensation-events"></a>Kompensasjonshendelser
--------------------
+## <a name="compensation-events"></a>Kompensasjonshendelser
 
 Hver gang en prosesshendelse kjøres, opprettes en kompensasjonshendelse.  Kompensasjonshendelser inneholder resultatene av kompensasjonsprosessen for hver ansatt som er inkludert i prosesshendelsen.  Når beregningene er riktige, kan du laste inn kompensasjonshendelsen for å oppdatere kompensasjonsposter for ansatte som er berørt av prosesshendelsen.
 
@@ -132,3 +132,6 @@ Når du kjører en prosesshendelse, kan du anbefale justeringer for en ansatts p
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

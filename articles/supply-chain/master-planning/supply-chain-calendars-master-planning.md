@@ -1,12 +1,10 @@
 ---
 title: Kalendere og hovedplanlegging
 description: Dette emnet gir en oversikt over forsyningenkjedekalendere og hvordan de påvirker hovedplanlegging.
-author: t-benebo
-manager: tfehr
+author: ChristianRytt
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 64a9e356d93b42193c2992fb4029814c5fd63e7e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5261147"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568621"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og hovedplanlegging
 
@@ -92,7 +90,7 @@ For å angi datoene når en kunde kan motta leveringer, kan du tilordne en motta
 
 Legg merke til at det er bare er mulig å inkludere én kalender per kunde. Hvis du vil inkludere en kalender for hver ulik adresse for en kunde, kan du opprette én kunde per adresse og deretter tilordne den aktuelle kalenderen. 
 
-Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveringskalender for en juridisk enhet
 For å angi datoene som en juridisk enhet kan sende varer, kan du definere en leveringskalender under **Organisasjonsstyring > Organisasjoner > Juridiske enheter**. Velg juridisk enhet, og legg til kalenderen i **Utenrikshandel og logistikk**-fanen i **Leveringskalender**-feltet. Leveringskalenderen vil fungere som en kilde for standarder for alle lagerkalendere i den juridiske enheten. 

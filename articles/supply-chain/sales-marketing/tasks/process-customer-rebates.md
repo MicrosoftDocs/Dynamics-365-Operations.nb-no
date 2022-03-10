@@ -1,26 +1,24 @@
 ---
 title: Generere og behandle kunderabatter
 description: Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: abd48482d567a427389c1feeb1142eba85ee8ab1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260341"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969093"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle kunderabatter
 
@@ -64,14 +62,14 @@ Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgener
 
 ## <a name="process-rebate-claims"></a>Behandle rabattkrav
 1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Kunderabatter > Rabatter**.
-    - Siden Rabatter fungerer en arbeidsbenk der kan du gå gjennom, godkjenne og behandle rabattkrav. Nå vil du behandle krav som er opprettet som et resultat av fakturering av en salgsordre for kunden US-009, som rabattavtalen USMF-000001 gjelder for.   
+    - Siden Rabatter fungerer som en arbeidsbenk der kan du gå gjennom, godkjenne og behandle rabattkrav. Nå vil du behandle krav som er opprettet som et resultat av fakturering av en salgsordre for kunden US-009, som rabattavtalen USMF-000001 gjelder for.   
     - Den første linjen representerer et rabattkrav for 800 USD, som er basert på salget av 40 enheter av produkt T0020, beregnet som 20 USD per enhet. Dette tilsvarer betingelsene for det avbruddspunktet for antall i rabattavtalen.  
     - Andre kravet er for USD 2 400, som er basert på salget av 60 enheter av produkt T0020, beregnet på 40 USD per enhet, i henhold til det andre avbruddspunktet for antall i avtalen.  
     - Begge krav er i tilstanden "Som skal beregnes". Dette betyr at de er knyttet til en avtale som sporer kundens salgsytelse periodisk og at de må beregnes på nytt for å ta hensyn til totalvolumet for salg i den aktuelle perioden.   
 2. Klikk på **Summer**.
 3. Angi eller velg en verdi i feltet **Kunde**.
 4. Velg dagens dato i **Startdato**-feltet.
-5. Klikk på **OK**. Som et resultat av funksjonen **Summer**, har det estimerte kravbeløpet nå blitt justert for å ta hensyn til at kundens totale salgsvolum i den aktuelle perioden er høyere enn da den første rabatten ble generert. Mer spesifikt, fordi totalt antall kjøpt har nådd 100 enheter, kvalifiserer kunden nå for 40 USD per enhet (i henhold til avtalens andre avbruddspunkt for antall) eller 400 USD av totalt rabattbeløp. Forskjellen er registrert som en ny "justering" av krav for ekstra 800 USD. Statusen for rabattkravet som er inkludert i den oppdaterte summen er nå satt til Beregnet. 
+5. Klikk på **OK**. Som et resultat av funksjonen **Summer**, har det estimerte kravbeløpet nå blitt justert for å ta hensyn til at kundens totale salgsvolum i den aktuelle perioden er høyere enn da den første rabatten ble generert. Mer spesifikt, fordi totalt antall kjøpt har nådd 100 enheter, kvalifiserer kunden nå for 40 USD per enhet (i henhold til avtalens andre avbruddspunkt for antall) eller 4,000 USD av totalt rabattbeløp. Forskjellen er registrert som en ny "justering" av krav for ekstra 800 USD. Statusen for rabattkravet som er inkludert i den oppdaterte summen er nå satt til Beregnet. 
 6. Merk alle rader i listen.
 7. Klikk på **Godkjenn**.
 8. Klikk på **Behandle**.

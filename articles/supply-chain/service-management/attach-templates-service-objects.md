@@ -1,29 +1,26 @@
 ---
 title: Tilknytte maler til serviceobjekter
 description: En stykklistemal kan knyttes til en serviceobjektrelasjon.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e79526dd43f516f2f4abf31276f314cb2498458e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 77f03a4f74ae4f0ebec67c2a86e369d7e7280b01
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434590"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566269"
 ---
 # <a name="attach-templates-to-service-objects"></a>Tilknytte maler til serviceobjekter    
 
@@ -32,7 +29,7 @@ ms.locfileid: "4434590"
 
 En stykklistemal kan knyttes til en serviceobjektrelasjon. Serviceobjektrelasjonen kan deretter knyttes til enten serviceordrer eller serviceavtaler.
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Serviceobjekter**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Serviceobjekter**.
 
 2.  Velg et serviceobjekt.
 
@@ -55,3 +52,6 @@ En stykklistemal kan knyttes til en serviceobjektrelasjon. Serviceobjektrelasjon
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

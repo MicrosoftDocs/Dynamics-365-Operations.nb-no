@@ -2,29 +2,26 @@
 title: Forbedre ytelsen til planleggingsmotoren
 description: Dette emnet inneholder informasjon om planleggingsmotoren og hvordan du kan forbedre ytelsen.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 2495339f25469af705cff841f090c5df95b4d996
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434721"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578446"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -63,17 +60,17 @@ Planleggingsmotoren har en mer abstrakt datamodell enn Supply Chain Management-d
 
 Tenk deg for eksempel at du kan se en rute som vises i tabellen og bildet nedenfor, som ser relativt enkel ut.
 
-| Oper. Nr. | Prioritet | Oppstillingstid | Kjøretid | Køtid etter | Antall ressurser | Next |
+| Oper. Nei. | Prioritet | Oppstillingstid | Kjøretid | Køtid etter | Antall ressurser | Next |
 | --- | --- | --- | --- | --- | --- | --- |
 | 10 | Primær | 1.00 | 2.00 | | 1 | 20 |
 | 10 | Sekundær&nbsp;1 | | | | 1 | 20 |
 | 20 | Primær | | 3.00 | 1.00 | 3 | 0 |
 
-![Eksempel på rutediagram](media/scheduling-engine-route.png "Eksempel på rutediagram")
+![Eksempel på rutediagram.](media/scheduling-engine-route.png "Eksempel på rutediagram")
 
 Når du sender denne til motoren, deles den opp i åtte jobber, som vist i illustrasjonen nedenfor (velg bilde for å forstørre det).
 
-[![Jobber for planleggingsmotor](media/scheduling-engine-jobs.png "Jobber for planleggingsmotor")](media/scheduling-engine-jobs-large.png)
+[![Jobber for planleggingsmotor](media/scheduling-engine-jobs.png "Jobber for planleggingsmotor.")](media/scheduling-engine-jobs-large.png)
 
 Standardkoblingen mellom to jobber er `FinishStart`, noe som betyr at sluttidspunktet for en jobb må være før starttidspunktet for en annen jobb. Siden oppsettet må utføres av den samme ressursen som senere vil utføre prosessen, finnes det `OnSameResource`-betingelser mellom dem. Mellom jobbene for primær- og sekundæroperasjon for 10, er det `StartStart`- og `FinishFinish`-koblinger, som betyr at jobbene må starte og slutte samtidig, og det finnes `NotOnSameResource`-begrensninger som vil hindre den samme ressursen for primær og sekundær.
 
@@ -240,7 +237,7 @@ Belastningen fra jobbplanlegging for alle ressursene som er inkludert i ressursg
 
 *Tilgjengelig kapasitet for ressursgruppe = kapasitet for ressurser i gruppen basert på kalenderen &ndash; planlagt jobbelastning på ressursene i gruppen &ndash; planlagt driftsbelastning på ressursene i gruppen &ndash; planlagt driftsbelastning på ressursgruppen*
 
-I kategorien **Ressurskrav** i ruteoperasjonen, kan ressurskravene angis ved hjelp av en bestemt ressurs (i så fall planlegges operasjonen ved å bruke denne ressursen), for en ressursgruppe, for en ressurstype eller for én eller flere funksjoner, ferdighet, kurs eller sertifikat. Selv om bruk av alle disse alternativene gir en større fleksibilitet for ruteutformingen, kan det også komplisere planleggingen for motoren etter hvert som det må tas hensyn til kapasitet per "egenskap" (det abstrakte navnet som brukes i motoren for funksjonalitet, ferdighet og så videre).
+I fanen **Ressurskrav** i ruteoperasjonen, kan ressurskravene angis ved hjelp av en bestemt ressurs (i så fall planlegges operasjonen ved å bruke denne ressursen), for en ressursgruppe, for en ressurstype eller for én eller flere funksjoner, ferdighet, kurs eller sertifikat. Selv om bruk av alle disse alternativene gir en større fleksibilitet for ruteutformingen, kan det også komplisere planleggingen for motoren etter hvert som det må tas hensyn til kapasitet per "egenskap" (det abstrakte navnet som brukes i motoren for funksjonalitet, ferdighet og så videre).
 
 Ressursgruppens kapasitet for en funksjon er summen av kapasiteten for alle ressurser i ressursgruppen som har den aktuelle funksjonen. Hvis en ressurs i gruppen har en funksjon, vurderes den uansett hvilket kapasitetsnivå som kreves.
 
@@ -281,7 +278,7 @@ Vær oppmerksom på at hvis ordren ikke er planlagt under MRP, må den i stedet 
 
 Når du utformer ruten, er det fristende å forsøke å utforme den virkelige verden nøyaktig med alle trinnene produksjonen går gjennom. Selv om dette kan være nyttig i noen tilfeller, er det ikke bra for ytelsen fordi modellen som motoren trenger for å arbeide, blir større (både med hensyn til jobber og begrensninger), og flere SQL-setninger blir utført for innsetting og oppdatering av jobbene og kapasitetsreservasjonene. Det er også en nedstrømseffekt av til slutt å måtte rapportere fremdriften for jobbene, som kan reduseres med automatiske posteringer. Hvis dataene ikke brukes til noe, skaper det unødvendig belastning.
 
-Vi anbefaler at du bare oppretter operasjoner som er strengt nødvendige for planleggingen (som vanligvis vil være flaskehalsressurser) og/eller etterkalkuleringsformål. Du kan også gruppere mange mindre spesifikke operasjoner i én større operasjon som representerer en større del av prosessen.
+Det anbefales at du bare oppretter operasjoner som er strengt nødvendige for planleggingen (som vanligvis vil være flaskehalsressurser) og/eller etterkalkuleringsformål. Du kan også gruppere mange mindre spesifikke operasjoner i én større operasjon som representerer en større del av prosessen.
 
 ### <a name="many-applicable-resources-for-an-operation"></a>Mange gjeldende ressurser for en operasjon
 
@@ -307,7 +304,7 @@ Bruk av begrenset kapasitet krever at motoren laster inn kapasitetsinformasjon f
 
 Standard koblingstype for ruten er *myk*, noe som betyr at det er tillatt med en tidsforskjell mellom sluttidspunktet for én operasjon og starten på neste. Tillatelse av dette kan ha den uheldige effekten at hvis materialer eller kapasitet ikke er tilgjengelige for én av operasjonene i svært lang tid, kan produksjonen være inaktiv i en stund, noe som betyr en mulig økning av arbeidet som pågår. Dette skjer ikke med harde koblinger, fordi avslutning og start må være perfekt justert. Hvis du angir harde koblinger, blir imidlertid planleggingsproblemet vanskeligere fordi skjæringspunkter mellom arbeidstid og kapasitet må beregnes for de to ressursene for operasjonene. Hvis dette også omfatter parallelle operasjoner, legger dette til betydelig beregningstid. Hvis ressursene for de to operasjonene har forskjellige kalendere som ikke overlapper i det hele tatt, er problemet uløselig.
 
-Vi anbefaler at du bruker harde koblinger bare når det er helt nødvendig, og vurder nøye om det er nødvendig for hver operasjon i ruten.
+Det anbefales at du bruker harde koblinger bare når det er helt nødvendig, og vurder nøye om det er nødvendig for hver operasjon i ruten.
 
 Hvis du vil redusere mengden arbeid som pågår, uten å bruke harde koblinger, er et triks å planlegge rekkefølgen to ganger og endre til motsatt retning for den andre gjennomføringen. Hvis den første tidsplanen ble utført bakover fra leveringsdatoen, bør den andre utføres fremover fra den planlagte startdatoen. Dette vil føre til at jobbene komprimeres så mye som mulig, slik at arbeidet som pågår minimeres.
 
@@ -329,3 +326,6 @@ Verdien for **Tidsavbrudd for optimaliseringsforsøk** styrer hvor mange sekunde
 
 > [!NOTE]
 > Verdiene som angis for tidsavbruddet, brukes både for planlegging av frigitte produksjonsordrer og planlagte ordrer som en del av MRP. Dermed kan det å sette svært høye verdier øke kjøretiden i MRP betydelig når det kjøres for en plan med mange planlagte produksjonsordrer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Grovplanlegging
 description: Dette emnet gir informasjon om grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817875"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574575"
 ---
 # <a name="operations-scheduling"></a>Grovplanlegging
 
@@ -74,8 +74,7 @@ Når du kjører grovplanlegging, kan du avbryte bestemte deler av ruten. Disse d
 ## <a name="finite-materials"></a>Begrensede materialer
 Hvis du arbeider med begrenset materiale, avhenger planlegging også av tilgjengeligheten av materialene som kreves for produksjonen. Hvis det ikke er nok tilgjengelige komponenter for produksjonen, kan produksjonen forsinkes. Du kan basere planleggingen på bruk av materialer ved å angi materialene som må være tilgjengelige for produksjon. Når du optimaliserer både ressurskapasitet og tilgjengeligheten av materialer, beregnes produksjonen i henhold til disse begrensningene. En produksjonsordre kan ikke planlegges å starte før kapasitet og materialer er tilgjengelige samtidig og i nødvendige mengder.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Alternativer for grovplanlegging](operation-scheduling-options.md)
 

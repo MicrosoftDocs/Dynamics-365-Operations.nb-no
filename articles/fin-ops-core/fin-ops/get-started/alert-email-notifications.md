@@ -1,8 +1,7 @@
 ---
 title: Klientvarslinger via e-post
 description: Dette emnet gir informasjon om hvordan du konfigurerer regler som sender e-postvarsler når forhåndsdefinerte hendelser inntreffer.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/20/2019
 ms.topic: article
 ms.prod: ''
@@ -11,15 +10,15 @@ ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: fe422d645c8f2c0c564af30624090828e10ea4bf
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 4e2205ba3bdf5ec2a4e6d9390007eaf1098293c3dd2a5b2ff1b3c73c7de5a83f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567258"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734620"
 ---
 # <a name="client-alert-notifications-by-email"></a>Varselmeldinger til klient via e-post
 
@@ -37,7 +36,7 @@ Hvis du vil ha mer informasjon om hvordan du konfigurerer e-post, kan du se [Kon
 
 Følgende bilde viser dialogboksen **Opprett varslingsregel**, som nå inneholder alternativet **Send e-post**.
 
-[![Dialogboksen Opprett varslingsregel, der alternativet Send e-post er satt til Ja](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
+[![Dialogboksen Opprett varslingsregel, der alternativet Send e-post er satt til Ja.](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
 > Når alternativet **Send e-post** er satt til **Ja**, vil varsler fortsatt leveres fra handlingssenteret.
@@ -48,7 +47,7 @@ Tjenesten sender e-postvarslinger ved hjelp av forhåndsdefinerte e-postmaler so
 
 Illustrasjonen nedenfor viser strukturen på varslingene når de mottas via e-post.
 
-[![Malbaserte varslinger for postoppretting, feltendringer og malsletting](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+[![Malbaserte varslinger for postoppretting, feltendringer og malsletting.](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

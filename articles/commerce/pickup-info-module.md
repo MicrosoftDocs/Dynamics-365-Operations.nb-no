@@ -2,11 +2,9 @@
 title: Henteinformasjonsmodul
 description: Dette emnet dekker henteinformasjonsmodulen og beskriver hvordan du legger den til på utsjekkingssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,14 +14,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d04e2650f9c601d008ebf19080059b70416d7917
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000615"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764567"
 ---
-# <a name="pickup-information-module"></a>Henteinformasjonsmodul
+# <a name="pickup-information-module"></a>Hente informasjonsmodul
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +40,7 @@ Hvis flere varer er valgt for henting på tvers av flere butikker, last henteinf
 
 Følgende illustrasjon viser et eksempel på valg av tidspunkt ved hjelp av henteinformasjonsmodulen på en utsjekkingsside.
 
-![Eksempel på en henteinformasjonsmodul på en utsjekkingsside](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Eksempel på en henteinformasjonsmodul på en utsjekkingsside.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 
@@ -58,14 +56,17 @@ Hvis du vil ha informasjon om hvordan du legger til en henteinformasjonsmodul p�
 
 Følgende illustrasjon viser et eksempel på en betalingsside for e-handel som inkluderer tidspunkter for hentelinjevarer.
 
-![Eksempel på en betalingsside for e-handel som inkluderer tidspunkter for hentelinjevarer](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Eksempel på en betalingsside for e-handel som inkluderer tidspunkter for hentelinjevarer.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Opprett og oppdater tidspunkter for kundehenting](dev-itpro/pickup-timeslots.md)
+[Opprett og oppdater tidsrom for kundehenting](dev-itpro/pickup-timeslots.md)
 
 [Kassemodul](add-checkout-module.md)
 
 [Ordrebekreftelsesmodul](order-confirmation-module.md)
 
 [Ordredetaljermodul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

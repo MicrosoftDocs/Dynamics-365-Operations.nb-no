@@ -1,29 +1,26 @@
 ---
 title: Mottaksseddel mot bestillinger
 description: Dette emnet beskriver de ulike alternativene for å registrere produktene som mottatt.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 11/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cead310eaa86d755399e512f99d6782bfa551211
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 8c22b4f914dc7eba34f2f9a2657d21d66f38c019
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434732"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570520"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Mottaksseddel mot bestillinger
 
@@ -56,8 +53,7 @@ Når produktmottak er behandlet på bestillingen, sette bestillingsstatusen til 
 
 Du får tilgang til denne siden fra handlingsgruppen **Mottak** på siden **Bestilling**. Informasjonen i journalene inneholder informasjon om antall, datoer og dimensjoner.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over bestilling](purchase-order-overview.md)
 
@@ -65,7 +61,10 @@ Du får tilgang til denne siden fra handlingsgruppen **Mottak** på siden **Best
 
 [Godkjenne og bekrefte bestillinger](purchase-order-approval-confirmation.md)
 
-[Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Oversikt over leverandørfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

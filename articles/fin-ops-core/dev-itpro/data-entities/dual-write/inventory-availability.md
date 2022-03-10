@@ -1,28 +1,20 @@
 ---
 title: Beholdningstilgjengelighet i dobbel skriving
 description: Dette emnet inneholder informasjon om hvordan beholdningstilgjengelighet i dobbel skriving sjekkes.
-author: yijialuan
-manager: AnnBe
+author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: riluan
-ms.dyn365.ops.version: ''
+ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 48e54c043967ea5db15938857bd8f020dd4dfc64
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566745"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782535"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Beholdningstilgjengelighet i dobbel skriving
 
@@ -65,58 +57,12 @@ Når du velger knappen **Lagerbeholdning** på siden **Tilbud**, **Ordrer** elle
 - Forespørsler om CDS-lagerbeholdning (msdyn_inventoryonhandrequests)
 
 ## <a name="templates"></a>Maler
+
 Følgende maler er tilgjengelige for visning av lagerbeholdningsdata.
 
-Finance and Operations-apper | Kundeengasjementsapp | beskrivelse 
+Finance and Operations-apper | Kundeengasjementsapper     | beskrivelse
 ---|---|---
-[Lagerbeholdningsoppføringer for CDS](#145) | msdyn_inventoryonhandentries |
-[Forespørsler om lagerbeholdning for CDS](#147) | msdyn_inventoryonhandrequests |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>Oppføringer for CDS-lagerbeholdning (msdyn_inventoryonhandentries)
-
-Denne malen synkroniserer data mellom Finance and Operations-apper og Dataverse.
-
-Finance and Operations-felt | Tilordningstype | Kundeengasjement-felt | Standardverdi
----|---|---|---
-`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
-`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
-`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
-`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
-`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
-`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
-`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
-`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
-`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
-`ATPDATE` | = | `msdyn_atpdate` |
-`ATPQUANTITY` | > | `msdyn_atpquantity` |
-`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
-`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
-`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
-`ORDERQUANTITY` | > | `msdyn_orderquantity` |
-`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
-
-###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>Forespørsler om CDS-lagerbeholdning (msdyn_inventoryonhandrequests)
-
-Denne malen synkroniserer data mellom Finance and Operations-apper og Dataverse.
-
-Finance and Operations-felt | Tilordningstype | Kundeengasjement-felt | Standardverdi
----|---|---|---
-`REQUESTID` | = | `msdyn_requestid` |
-`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
-`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
-`ORDERQUANTITY` | < | `msdyn_orderquantity` |
-`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
-`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
-`REFERENCENUMBER` | < | `msdyn_referencenumber` |
-`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
-
-
-
-
-
+[Lagerbeholdningsoppføringer for CDS](mapping-reference.md#145) | msdyn_inventoryonhandentries |
+[Forespørsler om lagerbeholdning for CDS](mapping-reference.md#147) | msdyn_inventoryonhandrequests |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

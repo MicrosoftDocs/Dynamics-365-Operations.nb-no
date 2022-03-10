@@ -2,11 +2,9 @@
 title: Sikkerhetskopiere ER-maler
 description: Dette emnet beskriver hvordan du bruker sikkerhetskopier for elektronisk rapportering (ER) for gjenoppretting av maler.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767883"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhetskopiere ER-maler
 
@@ -67,19 +65,19 @@ Hvis du vil konfigurere parameteren **Kjør automatisk prosedyren for å gjenopp
 > [!NOTE]
 > Denne parameteren er definert som programbruker og loggføres firmaspesifikk.
 
-![Siden ER-konfigurasjoner](./media/GER-BackupTemplates-1.png)
+![Siden ER-konfigurasjoner.](./media/GER-BackupTemplates-1.png)
 
 Illustrasjonen nedenfor viser et eksempel på meldingen som vises når parameteren **Kjør automatisk prosedyren for å gjenopprette de ødelagte malene satsvis** er satt til **På**.
 
-![Siden Leverandørbetalingsjournal](./media/GER-BackupTemplates-2.png)
+![Siden Leverandørbetalingsjournal.](./media/GER-BackupTemplates-2.png)
 
 Illustrasjonen nedenfor viser den satsvise prosessen **Gjenopprett skadede maler fra sikkerhetskopi i intern database** på siden **Satsvis jobb**.
 
-![Siden Satsvis jobb](./media/GER-BackupTemplates-3.png)
+![Siden Satsvis jobb.](./media/GER-BackupTemplates-3.png)
 
 Utførelsesloggen for den fullførte satsvise prosessen **Gjenopprett skadede maler fra sikkerhetskopi i intern database** inneholder informasjon om malene som er gjenopprettet fra lagringsplasseringen for sikkerhetskopier til den primære lagringsplasseringen.
 
-![Siden Logg for satsvis jobb](./media/GER-BackupTemplates-4.png)
+![Siden Logg for satsvis.](./media/GER-BackupTemplates-4.png)
 
 Prosessen for å automatisk opprette sikkerhetskopier av maler som finnes i ER-formatkonfigurasjoner, er aktivert som standard. Hvis du vil stoppe sikkerhetskopiering av maler, setter du alternativet **Stopp sikkerhetskopiering av maler** til **Ja** i kategorien **Vedlegg** på siden **Parametere for elektronisk rapportering**. Du kan åpne denne siden fra arbeidsområdet **Elektronisk rapportering**.
 
@@ -87,7 +85,7 @@ Hvis du setter alternativet **Stopp sikkerhetskopiering av maler** til **Ja** og
 
 Hvis du oppgraderte miljøet til Finance and Operations versjon 10.0.5 (oktober 2019) og vil overføre til et nytt miljø som omfatter ER-formatkonfigurasjoner som kan kjøres, velger du **Fyll ut plassering for sikkerhetskopi** på siden **Parametere for elektronisk rapportering** før overføringen utføres. Denne knappen starter prosessen for å ta sikkerhetskopier av alle tilgjengelige maler, slik at de kan lagres på lagringsplasseringen for sikkerhetskopier for ER-maler.
 
-![Siden Parametere for elektronisk rapportering](./media/GER-BackupTemplates-5.png)
+![Siden Parametere for elektronisk rapportering.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuell gjenoppretting
 
@@ -102,3 +100,6 @@ I Finance and Operations versjon 10.0.5 er funksjonen for sikkerhetskopiering av
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

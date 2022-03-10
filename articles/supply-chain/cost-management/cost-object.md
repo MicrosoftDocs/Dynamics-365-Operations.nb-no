@@ -13,15 +13,15 @@ ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6829f24b8efa29b39f5ed742d8ca99e09bcef01
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d27e2dcfd8f70c8d4b0f2ae1254f3c4fce63bb4d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910359"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572175"
 ---
 # <a name="cost-objects"></a>Kostnadsobjekter
 
@@ -64,8 +64,7 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
 
 **Obs!**   Parameteren **Ta med fysisk verdi** har ingen innvirkning på de foregående beregningene.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Produktdimensjonsgruppe](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 

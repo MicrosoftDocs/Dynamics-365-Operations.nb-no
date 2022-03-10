@@ -2,11 +2,9 @@
 title: Navigasjonssøk
 description: Dette emnet forklarer hvordan du bruker søkefunksjonen til å navigere til sider.
 author: aneesmsft
-manager: AnnBe
-ms.date: 04/27/2017
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799113"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069990"
 ---
 # <a name="navigation-search"></a>Navigasjonssøk
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Dette emnet forklarer hvordan du bruker søkefunksjonen til å navigere til sider.
 
@@ -36,7 +37,7 @@ Du bruker denne funksjonen ved å klikke **Søk**-ikonet for å vise **Søk**-bo
 > [!NOTE]
 > **Søk**-boksen gjør det enklere å finne og gå til sider. Du kan ikke bruke den til å finne bestemte data eller handlinger.
 
-[![søkeboks](media/navigation-search.png "Søkeboks")
+![søkeboks.](media/navigation-search.png "Søkeboks")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Navigere raskt til en bestemt side
 
@@ -62,3 +63,6 @@ Listen over søkeresultater er begrenset til ti elementer. Hvis du ikke finner d
 ## <a name="development"></a>Utvikling
 
 Fra et utviklingsperspektiv er navigasjonssøkefunksjonaliteten enkel å bruke siden det praktisk talt er ingen forsinkelse mellom distribusjonen av menyelementer og visningen av dem i søkeresultatene. Så lenge det kobles til menyelementene fra navigasjonsruten eller instrumentbordet, blir de søkbare automatisk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

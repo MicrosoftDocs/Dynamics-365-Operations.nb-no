@@ -1,26 +1,26 @@
 ---
 title: Opprette en kundefaktura
-description: En **kundefaktura for en salgsordre** er en regning som er knyttet til et salg, og som en organisasjon gir til en kunde.
+description: En kundefaktura for en salgsordre er en regning som er knyttet til et salg, og som en organisasjon gir til en kunde.
 author: ShivamPandey-msft
-ms.date: 01/12/2018
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 369f0737ee4026c32ffbae6b11b5815c5548d83d564aebf2eae4b1c246e73508
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723877"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087429"
 ---
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
@@ -42,6 +42,23 @@ Du finner mer informasjon under:
 
 
 En **proformafaktura** er en faktura som er klargjort som et estimat av de faktiske fakturabeløpene før fakturaen posteres. Du kan skrive ut en proformafaktura for en kundefaktura for en salgsordre eller for en fritekstfaktura.
+
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Bruke kundefakturadataenheter for salgsordre
+Du kan bruke dataenheter til å importere og eksportere informasjon om en kundefaktura for en salgsordre. Det er forskjellige enheter for informasjonen i salgsfakturahodet og salgsfakturalinjene.
+
+Følgende enheter er tilgjengelige for informasjonen i salgsfakturahodet:
+
+- Enheten **Journalhode for salgsfaktura** (SalesInvoiceJournalHeaderEntity)
+- Enheten **Salgsfakturahoder V2** (SalesInvoiceHeaderV2Entity)
+
+Vi anbefaler at du bruker enheten **Journalhode for salgsfaktura**, fordi dette gir en mer gjennomførbar opplevelse for import og eksport av salgshode. Denne enheten inneholder ikke kolonnen **Mva-beløp** (INVOICEHEADERTAXAMOUNT), som representerer mva-verdien i salgsfakturahodet. Hvis forretningsscenarioet krever denne informasjonen, bruker du enheten **Salgsfakturahoder V2** til å importere og eksportere informasjon om salgsfakturahodet.
+
+Følgende enheter er tilgjengelige for informasjonen i salgsfakturalinjer:
+
+- Enheten **Kundefakturalinjer** (BusinessDocumentSalesInvoiceLineItemEntity)
+- Enheten **Salgsfakturalinjer V3** (SalesInvoiceLineV3Entity)
+
+Når du skal avgjøre hvilken linjeenhet som skal brukes til eksportering, må du vurdere om det skal brukes en fullstendig fremskyvning eller en trinnvis fremskyvning. I tillegg må du vurdere datasammensetningen. Enheten **Salgsfakturalinjer V3** støtter mer komplekse scenarioer (for eksempel tilordning til beholdningsfeltene). Det støtter også eksportscenarioer med fullstendig fremskyvning. For trinnvise fremskyvninger anbefaler vi at du bruker enheten **Kundefakturalinjer**. Denne enheten inneholder en mye enklere datasammensetning enn enheten **Salgsfakturalinjer V3**, og er foretrukket, spesielt hvis integrering av lagerfelt ikke er nødvendig. På grunn av forskjeller i tilordningsstøtte mellom linjeenhetene har enheten **Kundefakturalinjer** vanligvis raskere ytelse enn enheten **Salgsfakturalinjer V3**.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Postere og skrive ut individuelle kundefakturaer som er basert på salgsordrer
 Bruk denne fremgangsmåten til å opprette en faktura som er basert på en salgsordre. Du kan gjøre dette hvis du beslutter å fakturere kunden før du leverer varene eller tjenestene. 

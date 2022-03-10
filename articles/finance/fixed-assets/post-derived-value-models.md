@@ -1,7 +1,7 @@
 ---
 title: Postere med avledede tablåer
 description: Denne artikkelen beskriver hvordan du bruker avledede tablåer.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6556965a1356522de5f4c17ddeab378a128fbe3f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ef0c7b2ad93f4a9c4ff24052c749f7891f9e915d
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833024"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675425"
 ---
 # <a name="post-with-derived-books"></a>Postere med avledede tablåer
 
@@ -52,7 +52,7 @@ Når en anskaffelse posteres for et anleggsmiddel med tablået VM 1, posteres an
 > [!NOTE]                                                                                                         
 > Hvis du ikke bruker avledede tablåer, må du postere anskaffelsen av anleggsmiddelet både for tablå VM 1 og tablå VM 2.
 
-Hvis du vil ha mer informasjon, kan du se [Avledede tablåer](derived-books.md)
+Hvis du vil ha mer informasjon, kan du se [Avledede tablåer](derived-books.md).
 
 
 

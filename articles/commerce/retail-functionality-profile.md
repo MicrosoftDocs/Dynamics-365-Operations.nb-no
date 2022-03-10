@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b8d481597485775796290f61de19ef7682cb9f43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9043486050e230fd9ecdefaaa65427264c8e40f5c3e8602c923bbede595a7243
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792004"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717628"
 ---
 # <a name="create-a-retail-functionality-profile"></a>Opprette en funksjonalitetsprofil for Retail
 
@@ -47,7 +47,7 @@ Hvis du vil opprette en funksjonalitetsprofil, gjør du følgende.
   
 Bildet nedenfor viser et eksempel på en funksjonalitetsprofil.
   
-![Eksempel på funksjonalitetsprofil](media/retail-functionality-profile.png)
+![Eksempel på funksjonalitetsprofil.](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

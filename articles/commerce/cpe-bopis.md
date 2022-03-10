@@ -1,7 +1,7 @@
 ---
 title: Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø
 description: Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at det er klargjort.
-author: rubendel
+author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 219504da62fd4637ed01f9acbab32f873cef81b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795961"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779800"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -29,7 +29,7 @@ Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (B
 
 ## <a name="prerequisite"></a>Forutsetning
 
-Fullfør prosedyrene i dette emnet bare etter at evalueringsmiljøet i Commerce er klargjort og konfigurert. Hvis du vil ha informasjon om hvordan du klargjør og konfigurerer miljøet, kan du se [Klargjøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Fullfør prosedyrene i dette emnet bare etter at evalueringsmiljøet i Commerce er klargjort og konfigurert. Hvis du vil ha informasjon om hvordan du klargjør og konfigurerer miljøet, kan du se [Klargjøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](./cpe-post-provisioning.md).
 
 Når Commerce-miljøet er klargjort og konfigurert ende til ende, kan du bruke dette emnet til å aktivere BOPIS-scenarioer.
 
@@ -37,7 +37,7 @@ Når Commerce-miljøet er klargjort og konfigurert ende til ende, kan du bruke d
 
 ### <a name="configure-modern-pos"></a>Konfigurere Modern POS
 
-BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestasjon. Maskinvarestasjonen er bygget inn i Modern POS for Windows- og Android-klienter. Hvis du bruker Cloud POS eller Modern POS for iOS, må salgsstedsklienten være forbundet med en delt maskinvarestasjon. Dette emnet beskriver hvordan du konfigurerer BOPIS for Windows- og Android-klienter. Hvis du vil ha informasjon om hvordan du installerer en delt maskinvarestasjonen, kan du se [Konfigurere og installere Retail Hardware Station](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
+BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestasjon. Maskinvarestasjonen er bygget inn i Modern POS for Windows- og Android-klienter. Hvis du bruker Cloud POS eller Modern POS for iOS, må salgsstedsklienten være forbundet med en delt maskinvarestasjon. Dette emnet beskriver hvordan du konfigurerer BOPIS for Windows- og Android-klienter. Hvis du vil ha informasjon om hvordan du installerer en delt maskinvarestasjonen, kan du se [Konfigurere og installere Retail Hardware Station](./retail-hardware-station-configuration-installation.md).
 
 1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Kasser**.
 2. Velg register **SANFRAN-5**, og velg deretter **Rediger**.
@@ -54,7 +54,7 @@ BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestas
 4. Velg **Last ned**, og velg deretter **Retail Modern POS**. 
 5. Når nedlastingen av **ModernPOSSetup.exe**-filen er fullført, velger du **Åpne fil**.
 
-    ![Åpne fil](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![Åpne fil.](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Velg **Neste** for å gå gjennom installasjonsprosessen. Når installasjonen er fullført, velger du **Lukk**.
 
@@ -87,7 +87,7 @@ BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestas
 
 ### <a name="create-a-storefront-order-for-in-store-pickup"></a>Opprette en butikkfasadeordre for henting i butikk
 
-1. Gå til URL-adressen du angav i trinnet [Initialisere e-handel](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) under miljøkonfigurasjon.
+1. Gå til URL-adressen du angav i trinnet [Initialisere e-handel](./provisioning-guide.md#initialize-e-commerce) under miljøkonfigurasjon.
 2. Velg en vare, og velg **Legg til i handlevogn**.
 3. På handlepose-siden velger du **Plukk opp dette** for ordrelinjen du nettopp la til.
 4. I dialogboksen **Velg en butikk** angir du **San Francisco**, og deretter velger du **Søk**-knappen.
@@ -112,7 +112,7 @@ BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestas
 
 ### <a name="synchronize-online-orders-to-the-back-office"></a>Synkronisere elektroniske ordrer til Back Office
 
-Hvis du vil ha informasjon om hvordan du synkroniserer elektroniske ordrer, kan du se [Postering av elektroniske salg og betalinger](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
+Hvis du vil ha informasjon om hvordan du synkroniserer elektroniske ordrer, kan du se [Postering av elektroniske salg og betalinger](./tasks/posting-online-sales-payments.md).
 
 ### <a name="pick-up-an-order-in-the-store"></a>Hente en ordre i butikken
 
@@ -148,19 +148,19 @@ For alle generelle problemer bør du alltid se hendelsesloggene for maskinvarest
 
 [Vanlige spørsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Betalingskobling for Ayden](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
+[Betalingskobling for Ayden](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 
-[Lagre betalingsmåter på nett med Adyen-koblingen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
+[Lagre betalingsmåter på nett med Adyen-koblingen](./dev-itpro/adyen-connector-listpi.md)
 
-[Oversikt over betalinger for omnikanal](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+[Oversikt over betalinger for omnikanal](./omni-channel-payments.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

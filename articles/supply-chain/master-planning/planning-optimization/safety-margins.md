@@ -2,11 +2,9 @@
 title: Sikkerhetsmarginer
 description: Dette emnet beskriver hvordan sikkerhetsmarginer kan brukes med tillegget for planleggingsoptimalisering for Microsoft Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 08bdcef865c1e4904f32ce01f2956ac7acf55bf1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987310"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074973"
 ---
 # <a name="safety-margins"></a>Sikkerhetsmarginer
 
@@ -43,7 +41,7 @@ Det finnes tre typer sikkerhetsmarginer:
 
 Illustrasjonen nedenfor viser hvordan disse sikkerhetsmarginene gjelder over tid.
 
-![Sikkerhetsmarginer](media/safety-margins-1.png)
+![Sikkerhetsmarginer.](media/safety-margins-1.png)
 
 Alle marginer er definert i dager. Standardverdien, *0* (null), angir at ingen margin er i bruk. Hvis du definerer flere marginer, legger de alle til den totale tiden fra forsyningens *ordredato* til etterspørselens *behovsdato*. Et oppsett har for eksempel ingen leveringstid, og alle tre margintypene er satt til én dag. I dette tilfellet vil det være tre dager mellom forsyningsordredatoen og etterspørselsbehovsdatoen, så hvis ordredatoen er 1. juli, vil behovsdatoen være 4. juli.
 
@@ -53,7 +51,7 @@ Mottaksmarginen er sannsynligvis den mest brukte av de tre sikkerhetsmarginene. 
 
 Illustrasjonen nedenfor uthever mottaksmargin.
 
-![Mottaksmargin](media/safety-margins-2.png)
+![Mottaksmargin.](media/safety-margins-2.png)
 
 Mottaksmarginen brukes vanligvis som en buffer for å sikre tiden for lagerregistrering eller andre tidkrevende prosesser som ikke blir registrert som en del av den generelle leveringstiden i systemet. For innkjøp er én fordel at *leveringsdatoen* for bestillingen flyttes videre fremover i henhold til dette. Hvis du øker leveringstiden i stedet for å bruke en sikkerhetsmargin, vil leverandøren likevel bli bedt om å levere i siste liten.
 
@@ -63,23 +61,17 @@ Legg merke til at en mottaksmargin ikke brukes når lagerbeholdningen brukes som
 
 ### <a name="reorder-margin"></a>Gjenbestillingsmargin
 
-> [!NOTE]
-> **Kommer snart:** Denne funksjonen støttes ennå ikke for planleggingsoptimalisering. Før den støttes, vil alle verdier som angis for **Gjenbestillingsmargin lagt til vareleveringstiden**, behandles som *0* (null).
-
 Illustrasjonen nedenfor uthever gjenbestillingsmarginen.
 
-![Gjenbestillingsmargin](media/safety-margins-3.png)
+![Gjenbestillingsmargin.](media/safety-margins-3.png)
 
 Gjenbestillingsmarginen legges til før varens leveringstid for alle planlagte ordrer under hovedplanlegging. Derfor sikres tilleggstiden for en forsyningsordre. Denne marginen brukes vanligvis som en buffer for å sikre tiden for godkjenningsprosesser eller andre interne prosesser som kreves ved opprettingen av forsyningsordrer. Gjenbestillingsmarginen plasseres mellom forsyningens *ordredato* og *startdato*.
 
 ### <a name="issue-margin"></a>Avgangsmargin
 
-> [!NOTE]
-> **Kommer snart:** Denne funksjonen støttes ennå ikke for planleggingsoptimalisering. Før den støttes, vil alle verdier som angis for **Avgangsmargin trukket fra behovsdato**, behandles som *0* (null).
-
 Illustrasjonen nedenfor uthever avgangsmarginen.
 
-![Avgangsmargin](media/safety-margins-4.png)
+![Avgangsmargin.](media/safety-margins-4.png)
 
 Avgangsmarginen trekkes fra etterspørselens behovsdato under hovedplanleggingen. Den bildrar til å sikre at du har tid til å respondere på og sende innkommende ordrer. Denne marginen brukes vanligvis som en buffer for å sikre tid for forsendelse og tilknyttede utgående lagerprosesser.
 
@@ -89,7 +81,7 @@ Legg merke til at når det gjelder en avgangsmargin, samsvarer ikke relaterte fo
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>Aktiver sikkerhetsmarginer i Funksjonsbehandling
 
-Før du kan bruke denne funksjonen med planleggingsoptimalisering, må den være aktivert i systemet. Administratorer kan bruke [Funksjonsbehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Før du kan bruke denne funksjonen med planleggingsoptimalisering, må den være aktivert i systemet. Administratorer kan bruke [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
 
 - **Modul:** _Hovedplanlegging_
 - **Funksjonsnavn:** _Marginer for planleggingsoptimalisering_
@@ -167,7 +159,7 @@ Illustrasjonen nedenfor viser en matrise som oppsummerer hvilke kalendere som gj
 - **Lager (WH):** Gul
 - **Leverandør (V):** Blå
 
-[![Matrise for oversikt over kalenderoppsett](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Matrise for oversikt over kalenderoppsett.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Beregne forsinkelser
 
@@ -175,10 +167,13 @@ Alle tre typer sikkerhetsmarginer tas med når systemet fastslår om en ordre er
 
 En vare har for eksempel innledende tid på én dag og en mottaksmargin på tre dager. En salgsordre for denne varen er angitt som nødvendig i dag. I dette tilfellet blir forsinkelsen beregnet som *leveringstid* + *mottaksmargin* = fire dager. Hvis i dag er 14. august, fører de fire dagene med forsinkelse til at leveringen blir 18. august. Illustrasjonen nedenfor viser dette eksemplet.
 
-![Eksempel på forsinkelsesberegning](media/safety-margins-delays.png)
+![Eksempel på forsinkelsesberegning.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Komme i gang med planleggingsoptimalisering](get-started.md)
 
 [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

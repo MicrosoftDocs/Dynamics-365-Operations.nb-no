@@ -1,9 +1,9 @@
 ---
 title: Oversikt over bestilling
 description: Denne artikkelen inneholder generell informasjon om bestillinger og koblinger til flere artikler som er knyttet til de ulike stadiene som en bestilling går gjennom.
-author: kamaybac
+author: Henrikan
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7c3666cfcc6db19f7144448d9eb435af43140f45e3291fc914adb0ee9f96831
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2e01f73aa78c0fabf0f5a1e0acd3bbc4f69cfc4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718954"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982310"
 ---
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 

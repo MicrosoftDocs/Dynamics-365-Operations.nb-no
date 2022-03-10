@@ -3,7 +3,7 @@ title: Standard revisjonsfil for avgift (SAF-T) for Norge
 description: Dette emnet forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
 author: liza-golub
 ms.author: elgolu
-ms.date: 06/21/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5fd2ebe86340d1342c612fa6081c855854d5311
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dd781f465482f803a8f6c2c2223d086dee7a250b
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348893"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647499"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -98,6 +98,9 @@ Hvis du vil knytte **Hovedkontoer** som brukes i Finans, til norske standardkont
 ![Standardkonto-feltet på siden Hovedkontoer.](media/nor-saf-standard-main-accounts-appsppar.jpg)
 
 Du kan enkelt eksportere oppsettet av applikasjonsspesifikke parametere fra én versjon av en rapport og importere det til en annen versjon ved å velge **Eksporter** eller **Importer** i handlingsruten. Du kan også eksportere oppsettet fra én rapport og importere det til samme rapport i et annet selskap hvis hovedkontoene er de samme i begge selskapene.
+
+> [!NOTE]
+> Vi anbefaler at du aktiverer funksjonen, **Bruk programspesifikke parametere fra tidligere versjoner av ER-formater** i arbeidsområdet **Funksjonsbehandling**. Når denne funksjonen er aktivert, blir parametere som er konfigurert for den tidligere versjonen av et ER-format, automatisk gjeldende for den senere versjonen av samme format. Hvis denne funksjonen ikke er aktivert, må du konfigurere programspesifikke parametere uttrykkelig for hver formatversjon. Funksjonen **Bruk programspesifikke parametere fra tidligere versjoner av ER-formater** er tilgjangelig i arbeidsområdet **Funksjonsbehandling** fra og med Finance-versjon 10.0.23. Hvis du vil ha mer informasjon om hvordan du definerer parameterne for et ER-format for hver juridiske enhet, kan du se [Definere parameterne for et ER-format per juridisk enhet](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### <a name="enable-features-in-feature-management"></a><a name="features"></a>Aktivere funksjoner i funksjonsbehandling
 

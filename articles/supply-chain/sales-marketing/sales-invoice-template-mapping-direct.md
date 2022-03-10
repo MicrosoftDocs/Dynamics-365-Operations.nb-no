@@ -1,30 +1,27 @@
 ---
 title: Synkronisere salgsfakturahoder og -linjer direkte fra Supply Chain Management til Sales
 description: Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkronisere salgsfakturahoder og -linjer direkte fra Dynamics 365 Supply Chain Management til Dynamics 365 Sales.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 6cbc4d86ac41d90480428ec5439d1360c4d67137
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434283"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571647"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisere fakturahoder og -linjer direkte fra Finance and Operations til Sales
 
@@ -36,7 +33,7 @@ Dette emnet beskriver maler og underliggende oppgaver som brukes til å synkroni
 
 Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
-[![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflyt i Kundeemne til kontanter.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
@@ -59,7 +56,7 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsfaktur
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Forsyningskjedeadministrasjon                              | Salg          |
+| Supply Chain Management                              | Salg          |
 |------------------------------------------------------|----------------|
 | Eksternt vedlikeholdte hoder for kundesalgsfaktura | Fakturaer       |
 | Eksternt vedlikeholdte linjer for kundesalgsfaktura   | InvoiceDetails |
@@ -119,11 +116,11 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
-![Maltilordning i Dataintegrering](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Maltilordning i Dataintegrering for SalesInvoiceHeader.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>SalesInvoiceLine
 
-![Maltilordning i Dataintegrering](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Maltilordning i Dataintegrering for SalesInvoiceLine.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 
@@ -138,3 +135,6 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 [Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synkronisering av salgsordrer direkte mellom Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

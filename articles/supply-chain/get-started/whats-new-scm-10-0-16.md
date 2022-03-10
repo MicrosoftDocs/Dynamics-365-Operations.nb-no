@@ -2,11 +2,9 @@
 title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f9eb0685fcefe5d0734dc01fa82971958c3952d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236081"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474922"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
@@ -35,15 +33,17 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
+Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivelsesplanen](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
-- [Tilpassbart grensesnitt for produksjonsutførelse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Hvis du vil ha mer informasjon, kan du se [Definere en enhet for å kjøre grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-setup.md).
+- [Tilpassbart grensesnitt for produksjonsutførelse](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Hvis du vil ha mer informasjon, kan du se [Definere en enhet for å kjøre grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-setup.md).
 
-- [Tillegg for lagersynlighet for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Hvis du vil ha mer informasjon, kan du se [Tillegg for lagersynlighet](../inventory/inventory-visibility.md)
+- [Tillegg for lagersynlighet for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Hvis du vil ha mer informasjon, kan du se [Tillegg for lagersynlighet](../inventory/inventory-visibility.md)
 
-- [Valider nummerskilter på kildedokumentlinjer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over lagerkonfigurasjon](../warehousing/warehouse-configuration.md).
+- Enhetlig nummerserie for jobb-ID-er<br> - Hvis du vil ha mer informasjon, kan du se [Enhetlig nummerserie for jobb-ID-er](../production-control/unified-job-ids.md).
 
-- [Visualisering av utgående arbeidsmengde for lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Hvis du vil ha mer informasjon, kan du se [Visualisering av utgående arbeidsmengde](../warehousing/outbound-workload-visualization.md)
+- [Valider nummerskilter på kildedokumentlinjer](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over lagerkonfigurasjon](../warehousing/warehouse-configuration.md).
+
+- [Visualisering av utgående arbeidsmengde for lagerstyring](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Hvis du vil ha mer informasjon, kan du se [Visualisering av utgående arbeidsmengde](../warehousing/outbound-workload-visualization.md)
 
 De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
@@ -56,30 +56,6 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 - [Oversikt over farlige materialer](../pim/hazmat-overview.md) (og beslektede emner)
 - [Overføring til planleggingsoptimalisering for hovedplanlegging](../master-planning/new-master-planning-engine.md)
 - [Kjøp av cXML-forbedringer](../procurement/purchasing-cxml-enhancements.md)
-- [Feilsøke kostnadsstyring](../cost-management/troubleshoot-costmanagement.md)
-- [Feilsøke innkommende lageroperasjoner](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Feilsøke lastplanlegging og forsendelser](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Feilsøke hovedplanlegging](../master-planning/troubleshoot-masterplanning.md)
-- [Feilsøke utgående lageroperasjoner](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Feilsøke delvise frigivelser og delvise leveringer](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Feilsøke produktkonfiguratoren](../pim/troubleshooting-productconfigurator.md)
-- [Feilsøke produktinformasjon](../pim/troubleshooting-productinformation.md)
-- [Feilsøke arbeidsflyter for innkjøp og leverandører](../procurement/troubleshoot-procurementworkflows.md)
-- [Feilsøke bestillinger](../procurement/troubleshoot-purchaseorders.md)
-- [Feilsøke priser, rabatter og avtaler](../procurement/troubleshooting-pricediscountagreements.md)
-- [Feilsøke mottakssedler og fakturering](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Feilsøke stykkproduksjon](../production-control/troubleshoot-discretemanufacturing.md)
-- [Feilsøke plukking og pakking](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Feilsøke prosessproduksjon](../production-control/troubleshoot-processmanufacturing.md)
-- [Feilsøke reserveringer i lagerstyring](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Feilsøke salgsordrer](../sales-marketing/troubleshooting-sales.md)
-- [Feilsøke salgstilbud](../sales-marketing/troubleshooting-salesquotation.md)
-- [Feilsøke oppgradering og overføring til avansert lagerstyring](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Feilsøke tilkoblingsproblemer for lagerapp](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Feilsøk lagerkonfigurasjon](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Feilsøke lageretterfylling](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Feilsøke lageroppsett](../warehousing/troubleshoot-warehouse-setup.md)
-- [Feilsøke lagerarbeid](../warehousing/troubleshoot-warehouse-work.md)
 - [Plasseringsklynger](../warehousing/putaway-clusters.md)
 - [Etterfyllingsstrategier](../warehousing/replenishment-strategies.md)
 - [Oppdelt arbeid](../warehousing/work-split.md)
@@ -99,7 +75,7 @@ Hvis du vil ha informasjon om feilrettinger som er inkludert i hver av oppdateri
 
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2020-frigivelsesbølge 2-planen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2020-frigivelsesbølge 2-planen](/dynamics365-release-plan/2020wave2/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

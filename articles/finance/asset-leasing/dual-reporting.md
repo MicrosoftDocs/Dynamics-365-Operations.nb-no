@@ -2,13 +2,11 @@
 title: Dobbel rapportering
 description: Dette emnet leder deg gjennom et eksempel som viser hvordan du kan oppfylle kravene for både IFRS-rapportering (International Financial Reporting Standard) og lovbestemt rapportering i Aktivaleie.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseBookMaster
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d6daa43178625316a40427728e7e4186691cc13c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 406fbb53fc4cd17a7c257b5f5463227118c9051f44d81db000fbe87dca142efe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767062"
 ---
 # <a name="dual-reporting"></a>Dobbel rapportering
 
@@ -49,7 +47,7 @@ IFRS 16-tablået konfigureres slik at det er i samsvar med IFRS 16-regnskapsstan
 | Konfigurasjon av nåværende verdi / virkelig verdi på aktivum | 0,00           |
 | Korttidsterskel                    | 12             |
 | Lavverditerskel                     | 5 000,00       |
-| Betal til leverandør                           | Nr.             |
+| Betal til leverandør                           | Nei             |
 
 **Lovbestemt tablå**
 
@@ -66,7 +64,7 @@ Det lovbestemte tablået er et kontantprinsipptablå der firmaet gjør rede for 
 | Konfigurasjon av nåværende verdi / virkelig verdi på aktivum | 0,00        |
 | Korttidsterskel                    | 0           |
 | Lavverditerskel                     | 0           |
-| Betal til leverandør                           | Nr.          |
+| Betal til leverandør                           | Nei          |
 
 **Lovbestemt tilbakeføringstablå**
 
@@ -83,7 +81,7 @@ Det lovbestemte tilbakeføringstablået konfigureres på samme måte som det lov
 | Konfigurasjon av nåværende verdi / virkelig verdi på aktivum | 0,00                           |
 | Korttidsterskel                    | 0                              |
 | Lavverditerskel                     | 0                              |
-| Betal til leverandør                           | Nr.                             |
+| Betal til leverandør                           | Nei                             |
 
 I dette eksemplet er det opprettet en leieavtale som har følgende innstillinger i fanene **Generelt** og **Linjer i betalingsplan**.
 

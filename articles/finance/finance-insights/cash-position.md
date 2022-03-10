@@ -1,8 +1,8 @@
 ---
-title: Likviditetsbeholdning (forhåndsversjon)
+title: Likviditetsbeholdning
 description: Dette emnet beskriver hvordan funksjonen Kontantstrømprognose forutsier en organisasjons likviditetsbeholdning for bestemte tider. Det beskriver også alternativene som er tilgjengelige for å vise prognoser for forskjellige perioder.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 7d43657573ea8092f047615fc50a1a50ab97f094
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186498"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968993"
 ---
-# <a name="cash-position-preview"></a>Likviditetsbeholdning (forhåndsversjon)
+# <a name="cash-position"></a>Likviditetsbeholdning
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Likviditetsbeholdning er prosjekteringen av kontantstrøm som forutsies på kort sikt. Den er basert på prosjekteringen av kontantkvitteringer fra kunder som betaler utestående fakturaer og ordrer, og også på prosjekteringen av kontantutbetalinger som betales til leverandører for innkjøpsfakturaer og -ordrer.
 
@@ -46,7 +45,16 @@ Den nedre delen av fanen **Likviditetsbeholdning** viser detaljer for stillingen
 
 Hvis du vil lagre og redigere likviditetsbeholdningen, oppretter du et øyeblikksbilde. Du finner mer informasjon om hvordan du arbeider med øyeblikksbilder, ved å se [Oversikt over øyeblikksbilder](payment-snapshots.md).
 
-#### <a name="privacy-notice"></a>Personvernerklæring
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+## <a name="details-of-the-cash-position-capability"></a>Detaljer om likviditetsbeholdningsfunksjonen 
+
+Funksjonen for likviditetsbeholdning omfatter følgende funksjonalitet. 
+
+- Likviditetsbeholdningsfunksjonen viser kontantstrømmen basert på eksisterende dokumenter i systemet, og kontantstrøm inn og utflytlinjer som er importert fra eksterne systemer.
+- Gjør det enkelt å integrere kontantstrømdata fra eksterne systemer i Dynamics 365 Finance. Likviditetsbeholdning kan også bruke rammeverket for import/eksport av data. Dette rammeverket gjør det enkelt å integrere med Excel OData. Du kan også kombinere data fra flere kilder for å opprette en omfattende likviditetsbeholdningsløsning.
+- Innfører intelligent likviditetsbeholdning. Likviditetsbeholdning opprettes på grunnlag av kundens betalingsatferd for å forutsi når et firma kan forvente kontanter på kontoene.
+- For kundeordrer og fakturaer brukes KI-funksjonaliteten for kundebetalingsforutsigelse til å fastslå den historiske kundebetalingsvirkemåten når en ordre eller faktura vil bli betalt.
+- For leverandørordrer og fakturaer bruker vi gjennomsnittstiden mellom forsendelse og faktura og betaling av en faktura per leverandør til å finne ut når en leverandørordre eller faktura vil bli betalt for å gjøre kontantstrømmen mer nøyaktig.
+
+Dette gir en mer nøyaktig visning av kontantstrømmen basert på historisk betalingsoppførsel for ekskredøren. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

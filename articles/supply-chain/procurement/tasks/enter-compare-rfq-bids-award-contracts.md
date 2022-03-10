@@ -1,7 +1,7 @@
 ---
 title: Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 description: Dette emnet forklarer hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir kontrakten til én av leverandørene.
-author: kamaybac
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811996"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579478"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 
@@ -32,7 +32,7 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Angi et svar som en leverandør
 
-1. Velg **Leverandørbud** på instrumentbordet.
+1. Gå til **Leverandørsamarbeid \> Arbeidsområder \> Leverandørbud**.
 2. I listen **Invitasjoner til nytt bud** finner du en tilbudsforespørsel som nettopp ble sendt. Velg tilbudsforespørselen for å gå gjennom forespørselen.
 3. Velg **Vedlegg i tilbudsforespørsel** for å se gjennom vedlegg som er lagt til.
 4. Velg **Bud** hvis du vil at feltene skal være redigerbare. Legg merke til at **Bud pågår**-feltet er satt til **Leverandør oppdaterer**.

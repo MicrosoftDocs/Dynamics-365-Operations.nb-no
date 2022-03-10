@@ -2,25 +2,25 @@
 title: Startside for Supply Chain Management
 description: Denne siden gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for Supply Chain Management.
 author: kamaybac
-ms.date: 01/08/2021
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d82f31212245044f27558c3cdea78fbcf4988afb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829962"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487870"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -28,7 +28,7 @@ ms.locfileid: "5829962"
 
 Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser i Dynamics 365 Supply Chain Management.
 
-## <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+## <a name="whats-new-and-in-development"></a>Nyheter og under utvikling
 
 Gå til [Veikart for Dynamics 365](https://roadmap.dynamics.com/) for å se hvilke nye funksjoner som er utgitt og hvilke nye funksjoner som er under utvikling.
 
@@ -62,7 +62,6 @@ Denne korte videoen oppsummerer de nye funksjonene i Supply Chain Management som
 
 Disse korte videoene oppsummerer de nye funksjonene i Supply Chain Management som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
 
-- [Prospekt til kontanter-integrasjon](https://youtu.be/AVV9x5x-XCg) 
 - [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Bruk lagermalen til å kopiere konfigurasjonen](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -81,7 +80,7 @@ Følgende registreringer for tekniske konferanser beskriver funksjonalitet i Sup
 - **Hovedplanlegging:**
   - [Utvid funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Hovedplanlegging – tips og triks for feilsøkingsytelse](https://youtu.be/7v8BPmEs9Dg)
-  - [Hjelp! MRP er treg!](https://youtu.be/RLXybx20B5o)
+  - [Finjustering av MRP-ytelse](https://youtu.be/RLXybx20B5o)
 - **Behandling av produktinformasjon:**
   - [Produktkonfigurator i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
 - **Lagerstyring:**
@@ -94,16 +93,16 @@ Følgende registreringer for tekniske konferanser beskriver funksjonalitet i Sup
 
 ## <a name="blogs"></a>Blogger
 
-Det finnes mange emner om produksjon og Supply Chain Management i [teambloggen for Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg/) og [Supply Chain Management i teambloggen for Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
+Det finnes mange emner om produksjon og Supply Chain Management i [teambloggen for Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) og [Supply Chain Management i teambloggen for Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
 
 ## <a name="white-papers"></a>Hvitbøker
 
-- [Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb](https://docs.microsoft.com/dynamics/s-e/)
+- [Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb](/dynamics/s-e/)
 - [Stykklisteberegning ved hjelp av et kostnadsskjema](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>e-læringskurs
 
-Gå til [Dynamics 365 Supply Chain Management på Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path) for elektroniske kurs og opplæring.
+Gå til [Dynamics 365 Supply Chain Management på Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path) for elektroniske kurs og opplæring.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

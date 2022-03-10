@@ -1,12 +1,10 @@
 ---
 title: Definere format for betalingsbilag for prosjektfakturaer
-description: Bedrifter knytter vanligvis utskrevne betalingsbilag til fakturaer som skal hjelpe kunder og gi en betalingsreferanse for postering og utligning.
+description: Dette emnet forklarer hvordan du knytter utskrevne betalingsbilag til prosjektfakturaer og gir en betalingsreferanse for postering og utligning.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b2bcbf19ef78c521a426573ea4317c5a0e9e2cb3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 88bdce7697e47fc49b6ffb2fe6a8a468860f41f3
+ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214450"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7601506"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Definere format for betalingsbilag for prosjektfakturaer
 
