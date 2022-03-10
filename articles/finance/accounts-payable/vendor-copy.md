@@ -1,24 +1,24 @@
 ---
 title: Kopiere leverandører ved hjelp av delte nummerserier
 description: Dette emnet forklarer hvordan du bruker delte nummerserier til å kopiere en leverandør til en annen juridisk enhet og samtidig beholde samme leverandør-ID.
-author: mikefalkner
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5b4aeb189fa0e609834d46961be0ff953c2779a05ff1857636199e5448f15396
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4cea8269082b39e2374ffb3c3dc82def8ce35679
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722821"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358471"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiere leverandører ved hjelp av delte nummerserier
 
@@ -36,9 +36,9 @@ Du kan også kopiere leverandører mellom juridiske enheter hvis du bruker manue
 
 ## <a name="copy-a-vendor"></a>Kopiere en leverandør
 
-Hvis du vil kopiere en leverandør, velger du **Ny** på listesiden **Alle leverandører** for å åpne siden **Alle leverandører, ny post**. Legg merke til at den nye leverandør-ID-en ikke tilordnes umiddelbart. Denne virkemåten skiller seg fra virkemåten i tidligere versjoner. Systemet kan ikke fastslå riktig nummerserie å bruke fordi du ennå ikke har valgt leverandørgruppe. I tillegg kan det heller ikke fastslå om du prøver å opprette en ny leverandør eller kopiere en leverandør. Derfor tilordnes ikke leverandør-ID-en før du velger **Lagre** nederst på siden.
+Hvis du vil kopiere en leverandør, velger du **Ny** på listesiden **Alle leverandører** for å åpne siden **Alle leverandører, ny post**. Den nye leverandør-ID-en tilordnes ikke umiddelbart. Denne virkemåten skiller seg fra virkemåten i tidligere versjoner. Riktig nummerserie å bruke kan ikke fastslås fordi du ennå ikke har valgt leverandørgruppe. I tillegg kan det heller ikke fastslå om du prøver å opprette en ny leverandør eller kopiere en leverandør. Derfor tilordnes ikke leverandør-ID-en før du velger **Lagre** nederst på siden.
 
-Hvis du oppretter en ny leverandør, kan du fortsette å fylle ut alle feltene på vanlig måte. Når du er ferdig og du velger **Lagre**, vil du se at leverandør-ID-en ble tilordnet automatisk. For manuelle nummerserier ser du også at den manuelle leverandør-ID-en ble brukt.
+Hvis du oppretter en ny leverandør, kan du fortsette å fylle ut alle feltene på vanlig måte. Når du er ferdig og du velger **Lagre**, tildeles leverandør-ID-en automatisk. For manuelle nummerserier ser du også at den manuelle leverandør-ID-en ble brukt.
 
 Hvis du vil kopiere en leverandør, går du til feltet **Navn** og angir ett eller flere tegn som representerer leverandøren som du leter etter. En dialogboks for søk viser en liste over parter som kan representere leverandøren du leter etter. Når du velger en av partene, vises tilleggsinformasjon til høyre i dialogboksen:
 
@@ -54,11 +54,11 @@ Du kan kopiere en part bare hvis den har en leverandørrollen og hvis den har de
 
 ## <a name="validation"></a>Validering
 
-Når du kopierer en leverandør, prøver systemet å lagre den nye leverandørinformasjonen. Valideringer kjøres for å bekrefte at dataene som ble kopiert er korrekte. Du får en feilmelding for hver validering som mislykkes. Feilmeldingene forklarer hvilken informasjon som må oppdateres. Kopien av leverandøren kan ikke lagres før du retter alle valideringsfeilene.
+Når du kopierer en leverandør, forsøkes det å lagre den nye leverandørinformasjonen. Valideringer kjøres for å bekrefte at dataene som ble kopiert, er korrekte. Du får en feilmelding for hver validering som mislykkes. Feilmeldingene forklarer hvilken informasjon som må oppdateres. Kopien av leverandøren kan ikke lagres før du retter alle valideringsfeilene.
 
 ## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a>Kopiere en leverandør ved hjelp av søkefunksjonen for mva-organisasjonsnummer
 
-Du kan også kopiere leverandører ved hjelp av søkefunksjonen for mva-organisasjonsnummer i **Registrering**-gruppen i fanen **Leverandør** i handlingsruten på siden **Alle leverandører**. Dialogboksen for **søk etter mva-organisasjonsnummer** som vises, viser mva-organisasjonsnumre, leverandør-ID, leverandørnavn og den juridiske enheten der ID-en for mva-organisasjonsnummeret brukes. Du kan kopiere en leverandør bare hvis den er i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg fremgangsmåten nedenfor når du har valgt en leverandør som oppfyller dette kriteriet.
+Du kan også kopiere leverandører ved hjelp av søkefunksjonen for **mva-organisasjonsnummer** i gruppen **Registrering** i fanen **Leverandør** i handlingsruten på siden **Alle leverandører**. Dialogboksen for **søk etter mva-organisasjonsnummer** som vises, viser mva-organisasjonsnumre, leverandør-ID, leverandørnavn og den juridiske enheten der ID-en for mva-organisasjonsnummeret brukes. Du kan kopiere en leverandør bare hvis den er i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg fremgangsmåten nedenfor når du har valgt en leverandør som oppfyller dette kriteriet.
 
 1. Alternativet **Kopier leverandør** vises. Dette alternativet er satt til **Nei** som standard. Hvis du vil kopiere leverandør til gjeldende juridisk enhet, setter du alternativet til **Ja**.
 2. Velg **Velg**. Den nye leverandøren opprettes.
