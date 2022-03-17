@@ -2,7 +2,7 @@
 title: Bunntekstmodul
 description: Dette emnet dekker bunntekstmoduler og hvordan du redigerer dem i Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81db5cf32f23b7ee1ca8325eeec2e6ceafda55e0
+ms.sourcegitcommit: 90a553e271e7cd471fed2e4f006d753fdb67b47d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719992"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8374837"
 ---
 # <a name="footer-module"></a>Bunntekstmodul  
 
@@ -39,7 +39,7 @@ I likhet med de fleste containere støtter en bunntekstmodul egenskaper for over
 
 ## <a name="modules-available-in-a-footer-module"></a>Moduler som er tilgjengelige i en bunntekstmodul
 
-**Bunntekstelementer** – En modul for bunntekstelementer kan inneholde en overskrift, et bilde og en kobling. Overskriften kan enten brukes alene eller sammen med et bilde og en kobling. Hver kobling i bunnteksten kan konfigureres slik at den har bare tekst (for eksempel "Kontakt oss"- og "Personvern"-koblinger), eller slik at den har både tekst og et bilde (for eksempel koblinger til sosiale medier).
+**Bunntekstelement** – En modul for bunntekstelement kan inneholde en overskrift eller en kobling. Overskriften brukes vanligvis som en tittel på bunntekstdelen.  Hver kobling i bunnteksten kan konfigureres slik at den har bare tekst (for eksempel "Kontakt oss"- og "Personvern"-koblinger), eller slik at den har både tekst og et bilde (for eksempel koblinger til sosiale medier). Hvis det finnes både en overskrift og en kobling, har overskriftsegenskapen prioritet over koblingen. 
 
 **Til toppen** – En Til toppen-modul gir en kobling for rask navigering til toppen av siden. Et mål kreves. Standard målverdi er \#, som fører brukeren til toppen av siden.
 

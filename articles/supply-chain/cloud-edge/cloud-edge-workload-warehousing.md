@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d8b0f5a4878a924943f6f8876575d5247875811
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068115"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384492"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -210,9 +210,9 @@ Følgende lagerstyringsfunksjonalitet støttes ikke for øyeblikket for arbeidsb
 - Behandling med varer som bare er aktivert for transportstyring (TMS).
 - Behandling med negativ lagerbeholdning.
 - Datadeling om produkter mellom firmaer. <!-- Planned -->
-- Lagerarbeidsbehandling med forsendelsesmerknader.
-- Lagerarbeidsbehandling med materialhåndtering/lagerautomatisering.
+- Lagerarbeidsbehandling med forsendelsesmerknader (for eksempel pakkemerknader ved pakkestasjon).
 - Avbildninger av produktstandarddata (for eksempel i Warehouse Management-mobilappen).
+- Lagerarbeidsbehandling med materialhåndtering/lagerautomatisering.
 
 > [!WARNING]
 > Enkelte lagerfunksjoner blir ikke tilgjengelige for lagre som kjører arbeidsbelastninger for lagerstyring på en skalaenhet, og støttes heller ikke i senteret eller i arbeidsbelastningen for skalaenhet.
@@ -236,8 +236,7 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 | Vedlikehold forsendelser for bølge                                  | Nei  | Ja|
 | Lagerarbeidsbehandling (inkl. nummerskiltutskrift)        | Nei  | Ja, men bare for de de tidligere nevnte funksjonene som støttes |
 | Gruppeplukking                                              | Nei  | Ja|
-| Manuell emballasjebehandling, inkludert arbeidsbehandlingen Plukking av containerpakking | Nei <P>En del behandling kan gjøres etter at en innledende plukkeprosess er håndtert av en skalaenhet, men anbefales ikke på grunn av blokkerte operasjoner.</p>  | Nei |
-| Fjern container fra gruppe                                  | Nei  | Nei |
+| Manuell pakkestasjonsbehandling  | Nei  | Nei |
 | Utgående sorteringsbehandling                                  | Nei  | Nei |
 | Utskrift av belastningsrelaterte dokumenter                           | Ja | Ja|
 | Fraktbrev og ved generering av forhåndsvarsel for forsendelse                            | Nei  | Ja|
@@ -258,6 +257,7 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 | Reverser forsendelsesbekreftelse                                | Nei  | Ja|
 | Be om annullering av lagerordrelinjer                      | Ja | Nei, men forespørselen blir godkjent eller avvist |
 | <p>Frigi overføringsordrer for mottak</p><p>Denne prosessen skjer automatisk som en del av forsendelsesprosessen for overføringsordre. Den kan imidlertid brukes manuelt til å aktivere mottak av lisens for mottak i en vektenhet hvis innkommende lagerordrelinjer er annullert eller som del av en ny distribusjon av arbeidsmengde.</p> | Ja | Nei|
+<!--| Manuell pakkestasjonsbehandling, inkludert arbeidet Plukking av containerpakking  | Nei  | Ja, men uten TMS-forsendelsesmanifestering og postering av salgsfølgeseddel og uten pakkemerknader og produktbilder |-->
 
 ### <a name="inbound"></a>Innlevering
 
@@ -359,6 +359,7 @@ Ved senterdistribusjonen kan du vedlikeholde følgende satsvise jobber manuelt:
     - Skalaenhet til sentermeldingsprosessor
     - Registrer kildeordremottak
     - Fullfør lagerordrer
+    - Generer manglende utgående lagerordrer
 
 - Administrer følgende satsvise jobber under **Lagerstyring \> Periodiske oppgaver \> Arbeidsbelastningsbehandling**:
 

@@ -2,7 +2,7 @@
 title: Vanlige spørsmål om arbeidsflyt
 description: Dette emnet gir svar på vanlige spørsmål om arbeidsflytsystemet.
 author: ChrisGarty
-ms.date: 09/21/2020
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe11942ca41dd8c0ca23d94006569c50a4501a52
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
+ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065586"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370886"
 ---
 # <a name="workflow-faq"></a>Vanlige spørsmål om arbeidsflyt
 
@@ -34,7 +34,7 @@ Når et arbeidselement avvises, fullføres dette arbeidselementet som avvist. Et
 Hver varsling er for et annet arbeidselement, men likheten kan føre til forvirring. Vi ser på måter å forbedre dette på i fremtidige versjoner.
 
 ## <a name="why-are-my-workflow-exports-failing"></a>Hvorfor mislykkes arbeidsflyteksportene mine?
-Det er for øyeblikket en begrensning i funksjonen for arbeidsflyteksport som hindrer at arbeidsflytnavn overskrider 48 tegn. Hvis du bruker et navn som er lengre enn 48 tegn, kan det resultere i feilen «Serveren kan ikke godkjenne forespørselen» og/eller hindre at en fil blir eksportert uten en filtype. Følgende blogginnlegg gir mer informasjon: [Feilsøke arbeidsflyteksport](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
+Det er for øyeblikket en begrensning i funksjonen for arbeidsflyteksport som hindrer at arbeidsflytnavn overskrider 48 tegn. Hvis du bruker et navn som er lengre enn 48 tegn, kan det resultere i feilen «Serveren kan ikke godkjenne forespørselen» og/eller hindre at en fil blir eksportert uten en filtype. Følgende blogginnlegg gir mer informasjon: [Feilsøke arbeidsflyteksport](https://community.dynamics.com/365/financeandoperations/b/elandaxdynamicsaxupgradesanddevelopment/posts/workflow-export-troubleshooting).
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>Kan innsenderen av en arbeidsflyt også godkjenne arbeidsflyten?
 Ja, en innsender av en arbeidsflyt kan også godkjenne arbeidsflyten hvis den er konfigurert slik. Du kan unngå denne virkemåten ved å sette **Systemadministrasjon > Arbeidsflyt >Arbeidsflytparametere > Generelt > Godkjenner > Sperr godkjenning av innsender** til **Ja**.

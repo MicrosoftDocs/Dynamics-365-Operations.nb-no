@@ -2,7 +2,7 @@
 title: Oversikt over skybaserte søk
 description: Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/29/2020
+ms.date: 02/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983675"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371435"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversikt over skybaserte søk
 
@@ -26,13 +26,13 @@ ms.locfileid: "7983675"
 
 Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
 
-Produktoppdaging bidrar til å garantere at kunder raskt og enkelt kan finne produkter ved å bla gjennom kategorier, søke og filtrere. Forhandlere vurderer produktgjenkjenning som et primært verktøy for kundeinteraksjon på tvers av alle kanaler.
+Produktoppdaging bidrar til å garantere at kunder raskt og enkelt kan finne produkter ved å bla gjennom kategorier, søke og filtrere. Forhandlere betrakter produktoppdagelse som et primært verktøy for kundeinteraksjon på tvers av kanaler basert på CSU (Cloud Scale Unit), for eksempel e-handel og salgssted.
 
-Kundene er vant til nesten umiddelbare svartider i websøkemotorer, avanserte webområder for e-handel, sosiale apper, automatiske forslag som vises når de skriver inn søkeord, filterbasert navigasjon og utheving. Hvis kunder ikke finner produktet de leter etter raskt nok i én e-handelsbutikk, vil de ikke nøle med å gå til en annen e-handelsbutikk.
+Kundene er vant til nesten umiddelbare svartider i websøkemotorer, avanserte webområder for e-handel, sosiale apper, automatiske forslag som vises når de skriver inn søkeord, filterbasert navigasjon og utheving. Hvis kunder ikke raskt finner produktet de ser etter i én e-handelsbutikk, nøler de ikke med å gå til en annen e-handelsbutikk.
 
-Den skybaserte produktregistreringen i Dynamics 365 Commerce hjelper forhandlere med å fortsette å øke kundelojaliteten og konverteringssatsene på tvers av alle kanaler, både e-handelskanaler og salgsstedskanaler (POS).
+Den skybaserte produktoppdagelsen i Commerce hjelper forhandlere med å fortsette å øke kundelojaliteten og konverteringssatsene på tvers av kanaler basert på CSU.
 
-Dynamics 365 Commerce-søkeopplevelsen har forbedrede funksjoner for å hjelpe forhandlere med å oppnå bedre produktoppdaging. Samtidig gir disse funksjonene skalerbarheten og ytelsen som kreves for trafikk i e-handel.
+Commerce-søkeopplevelsen har forbedrede funksjoner for å hjelpe forhandlere med å oppnå bedre produktoppdagelse. Samtidig gir disse funksjonene skalerbarheten og ytelsen som kreves for trafikk i e-handel.
 
 ## <a name="browse-and-search"></a>Bla gjennom og søke
 
@@ -54,9 +54,9 @@ Illustrasjonen nedenfor viser et eksempel på hvordan filterbasert navigasjon br
 
 ## <a name="immersive-autosuggest"></a>Dyptgående automatiske forslag
 
-Gjeldende funksjonalitet for automatiske forslag viser bare nøkkelord som utløser et søk etter det samsvarende nøkkelordet. På grunn av nye forbedringer i Dynamics 365 Commerce kan kunder ofte oppdage koblinger til produkter før de er skrevet ferdig.
+Gjeldende funksjonalitet for automatiske forslag viser nøkkelord som utløser et søk etter det samsvarende nøkkelordet. På grunn av nye forbedringer i Commerce kan kunder ofte oppdage koblinger til produkter før de er skrevet ferdig.
 
-Dynamics 365 Commerce støtter også funksjonalitet for nøkkelordtreff i ulike kategorier. Med denne funksjonen kan kunder se antallet samsvarende nøkkelord på tvers av kategorier og utløse et søk etter et nøkkelord i andre kategorier.
+Commerce støtter også funksjonalitet for nøkkelordtreff i ulike kategorier. Med denne funksjonen kan kunder se antallet samsvarende nøkkelord på tvers av kategorier og utløse et søk etter et nøkkelord i andre kategorier.
 
 Illustrasjonen nedenfor viser et eksempel der det brukes dyptgående automatiske forslag.
 
@@ -64,10 +64,10 @@ Illustrasjonen nedenfor viser et eksempel der det brukes dyptgående automatiske
 
 ## <a name="sort"></a>Sorter
 
-Bedre sortering i Dynamics 365 Commerce lar kundene sortere, søke etter og bla gjennom søkeresultater og finjustere dem etter kriterier som pris, produktnavn og produktnummer. Kunder kan også sortere resultatene basert på om et produkt er nytt, bestselgende eller nylig lagt til.
+Bedre sortering i Commerce lar kundene sortere, søke etter og bla gjennom søkeresultater og finjustere dem etter kriterier som pris, produktnavn og produktnummer. Kunder kan også sortere resultatene basert på om et produkt er nytt, bestselgende eller nylig lagt til.
 
->[!NOTE]
->Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det under **Handelsparametere > Konfigurasjonsparametere** finnes en oppføring for ProductSearch. UseAzureSearch satt til true. 
+> [!NOTE]
+> Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det finnes en oppføring for ProductSearch.UseAzureSearch i **Handelsparametere > Konfigurasjonsparametere**, og at true er angitt for denne oppføringen. 
 ![Konfigurasjonsparametere for skydrevet søk.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
@@ -77,4 +77,4 @@ Bedre sortering i Dynamics 365 Commerce lar kundene sortere, søke etter og bla 
 [Behandle metadata for søkemotor](manage-seo-metadata.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]

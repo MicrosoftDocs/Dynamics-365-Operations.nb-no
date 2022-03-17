@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075025"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384431"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -71,6 +71,18 @@ Listen over aktive jobber inneholder følgende kolonner:
 - **Fullført** – denne kolonnen viser antallet som allerede er fullført for en jobb.
 - **Kassert** – denne kolonnen viser antallet som allerede er kassert for en jobb.
 - **Gjenstående** – denne kolonnen viser antallet som det gjenstår å fullføre for en jobb.
+
+## <a name="my-jobs-tab"></a>Fanen Mine jobber
+
+Med fanen **Mine jobber** kan arbeidere enkelt vise alle jobber som er tilordnet spesifikt til dem og ikke er påbegynt eller ferdige. Dette er nyttig i firmaer der jobber noen ganger eller alltid er tilordnet til bestemte arbeidere (personale) i stedet for andre typer ressurser (for eksempel maskiner). 
+
+Planleggingssystemet tilordner automatisk hver produksjonsjobb til en bestemt ressurspost, og hver ressurspost har en type (for eksempel maskin eller menneske). Når du konfigurerer en ansatt som produksjonsarbeider, kan du knytte arbeiderkontoen til en unik personalpost. 
+
+Fanen **Mine jobber** viser alle jobber som ikke er påbegynt eller ferdige, og som er tilordnet til personalposten til den påloggede arbeideren, hvis en arbeider har logget seg på. Den viser aldri jobber som er tilordnet til en maskin eller annen ressurstype, selv om den påloggede arbeideren har begynt å arbeide på disse jobbene.
+
+Hvis du vil vise alle jobbene den påloggede arbeideren har begynt på, uavhengig av ressurstypen som hver jobb er tilordnet til, bruker du fanen **Aktive jobber**. Hvis du vil vise alle uferdige jobber som samsvarer med konfigurasjonen for det lokale jobbfilteret, bruker du fanen **Alle jobber** uavhengig av arbeideren eller startstatusen.
+
+![Fanen Mine jobber.](media/pfei-my-jobs-tab.png "Fanen Mine jobber")
 
 ## <a name="my-machine-tab"></a>Min maskin-fanen
 
@@ -133,6 +145,13 @@ Hvis det opprettes en partiordre fra en formelversjon der alternativet **Koprodu
 
 I dette tilfellet kan arbeideren angi koproduktet og antallet som skal rapporteres, ved å velge **Koproduktvariasjoner** i dialogboksen Rapportfremgang. Arbeideren kan deretter velge blant alle de frigitte produktene som er definert som koprodukter.
 
+### <a name="reporting-catch-weight-items"></a>Rapportere faktisk vekt-varer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeidere kan bruke grensesnittet for produksjonsutførelse til å rapportere fremdrift for partiordrer som opprettes for faktisk vekt-varer. Partiordrer opprettes fra formler, som kan defineres slik at de har faktisk vekt-varer som formelvarer, koprodukter og biprodukter. En formel kan også defineres slik at den har formellinjer for ingredienser som er definert for faktisk vekt. Faktisk vekt-varer bruker to måleenheter til å spore lager: faktisk vekt-antall og lagerantall. I næringsmiddelindustrien kan for eksempel kjøtt på boks defineres som en faktisk vekt-vare, der faktisk vekt-antallet brukes til å spore antall bokser og lagerantallet brukes til å spore vekten på boksene.
+
 ## <a name="reporting-scrap"></a>Rapportere svinn
 
 Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere svinn som ble produsert ved å velge en jobb i fanen **Aktive jobber** og deretter velge **Rapportere svinn**. I dialogboksen **Rapportere svinn** angir arbeideren deretter svinnantall ved hjelp av det numeriske tastaturet. Arbeideren velger også en årsak (*ingen*, *maskin*, *operatør* eller *materiale*).
@@ -187,6 +206,13 @@ Følgende handlinger kan utføres:
 
 Knappen **Juster materiale** kan konfigureres slik at den vises på verktøylinjen til høyre. (Hvis du vil ha mer informasjon, kan du se [Utforme grensesnittet for produksjonsutførelse](production-floor-execution-tabs.md).) En arbeider kan velge **Juster materiale** for en produksjonsjobb som pågår. I dette tilfellet vises dialogboksen **Juster materiale**, der arbeideren kan foreta de ønskede justeringene. Når dialogboksen åpnes, opprettes det en produksjonsplukkliste som inneholder linjer for de justerte antallene for produksjonsordren. Hvis arbeideren velger **Poster nå**, bekreftes justeringen og plukklisten posteres. Hvis arbeideren velger **Avbryt nå**, slettes plukklisten, og ingen justering foretas.
 
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Justere materialforbruk for faktisk vekt-varer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeidere kan justere materialforbruk for faktisk vekt-varer. Denne funksjonaliteten brukes i scenarioer der det faktiske antallet av et faktisk vekt-materiale som ble forbrukt av en produksjonsjobb, var mer eller mindre enn det planlagte antallet. Det må derfor justeres for å holde lagernivåene gjeldende. Når arbeidere justerer forbruket av en faktisk vekt-vare, kan de justere både faktisk vekt-antallet og lagerantallet. Hvis det for eksempel er planlagt at en produksjonsjobb skal bruke fem bokser med en beregnet vekt på 2 kg per boks, kan arbeideren justere både antall bokser som skal brukes, og vekten på boksene. Systemet validerer at den angitte vekten på boksene er innenfor den definerte minimums- og maksimumsterskelen som er definert for det frigitte produktet.
+
 ### <a name="reserve-materials"></a>Reserver materialer
 
 I dialogboksen **Juster materiale** kan en arbeider utføre og justere materialreserveringer ved å velge **Reserver materiale**. Dialogboksen **Reserver materiale** som vises, viser den fysisk tilgjengelige beholdningen for varen for hver lagrings- og sporingsdimensjon.
@@ -197,6 +223,8 @@ Hvis du vil ha mer informasjon om hvordan du definerer produksjonsinngangsstedet
 
 > [!NOTE]
 > Reservasjoner som en arbeider foretar i dialogboksen **Reserver materiale**, blir værende når arbeideren velger **Avbryt** i dialogboksen **Rapporter fremdrift** eller **Rapporter svinn**.
+>
+> Det går ikke an å justere reservasjoner for faktisk vekt-varer.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Fullføre en jobb og starte en ny jobb
 

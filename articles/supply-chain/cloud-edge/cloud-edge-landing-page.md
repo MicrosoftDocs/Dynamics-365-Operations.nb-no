@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
+ms.openlocfilehash: 30f455f37b5161878cf9c864b92966aa74da051f
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119193"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376188"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaleringsenheter i en distribuert hybridtopologi
 
@@ -40,7 +40,7 @@ Funksjoner for arbeidsbelastninger lanseres kontinuerlig gjennom inkrementelle f
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Skalaenheter og dedikerte arbeidsbelastninger
 
-Skalerings enheter utvider Supply Chain Management-sentermiljøet ved å legge til dedikert behandlingskapasitet. Skalaenheter kan kjøres i skyen. De kan også kjøre på kanten på det lokale anlegget.
+Skalerings enheter utvider Supply Chain Management-sentermiljøet ved å legge til dedikert behandlingskapasitet. Skalaenheter kan kjøres i skyen. De kan også kjøre på [kanten](cloud-edge-edge-scale-units-lbd.md) på det lokale anlegget.
 
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalaenheter.":::
 
@@ -65,9 +65,9 @@ Arbeidsmengden i produksjonen leverer følgende funksjoner:
 
 Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for produksjonsutførelse for sky- og kantskalaenheter](cloud-edge-workload-manufacturing.md).
 
-## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Vurderinger før du aktiverer den distribuerte, hybride topologien for Supply Chain Management
+## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Vurderinger før du aktiverer den distribuerte hybridtopologien for Supply Chain Management
 
-Ved å aktivere den distribuerte, hybride topologien kan du endre skymiljøet i Supply Chain Management, slik at det fungerer som et senter. Du kan også tilknytte flere miljøer som er konfigurert som skalaenheter i skyen eller på kanten.
+Når du aktiverer den distribuerte hybridtopologien kan du endre skymiljøet i Supply Chain Management, slik at det fungerer som et senter. Du kan også tilknytte flere miljøer som er konfigurert som skalaenheter i skyen eller på kanten.
 
 ### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a>Forutsetninger og begrensninger for skyskalaenheter
 
@@ -75,7 +75,7 @@ I den gjeldende lanseringen av skalaenheter er det noen funksjoner som ennå ikk
 
 #### <a name="you-must-be-a-licensed-customer-of-supply-chain-management"></a>Du må være en lisensiert Supply Chain Management-kunde
 
-For å ta i bruk den distribuerte topologien må du ha en lisens for Supply Chain Management. Det eksisterende skymiljøet vil bli senteret i den hybride topologien. Du kan deklarere både sandkassemiljøer og produksjonsmiljøer som sentermiljøer, og du kan legge til skalaenheter i henhold til tilleggene du skaffer.
+For å ta i bruk den distribuerte topologien må du ha en lisens for Supply Chain Management. Det eksisterende skymiljøet vil bli senteret i den hybride topologien. Du kan deklarere både sandkassemiljøer og produksjonsmiljøer som sentermiljøer, og du kan legge til skalaenheter i henhold til tilleggsprogrammene du skaffer.
 
 #### <a name="your-existing-project-must-be-administered-via-the-global-commercial-version-of-lcs"></a>Eksisterende prosjekter må administreres via den globale kommersielle versjonen av LCS
 
@@ -116,7 +116,7 @@ Måledata og målinger som kan hjelpe deg med å velge det beste programmet for 
 
 ### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Databehandling under administrasjon av skalaenheter
 
-Når du aktiverer Dynamics 365-miljøet for å støtte den distribuerte, hybride topologien for sky- og kantskalaenheter, vil enkelte administrasjonstjenester bare drifts i USA, som for LCS. Denne virkemåten påvirker overføringen og lagringen av noe administrativ informasjon og konfigurasjonsinformasjon som brukes av [Scale Unit Manager-portalen](https://sum.dynamics.com). Her er noen eksempler:
+Når du aktiverer Dynamics 365-miljøet for å støtte den distribuerte hybridtopologien for sky- og kantskalaenheter, blir enkelte administrasjonstjenester bare driftet i USA, som for LCS. Denne virkemåten påvirker overføringen og lagringen av noe administrativ informasjon og konfigurasjonsinformasjon som brukes av [Scale Unit Manager-portalen](https://sum.dynamics.com). Her er noen eksempler:
 
 - Leiernavn og ID-er
 - ID-er for LCS-prosjekter
@@ -127,31 +127,25 @@ Når du aktiverer Dynamics 365-miljøet for å støtte den distribuerte, hybride
 
 Data som overføres til og lagres i datasentre i USA, blir slettet i henhold til Microsofts retningslinjer for databevaring. Personvernet ditt er viktig for Microsoft. Les [personvernerklæringen](https://go.microsoft.com/fwlink/?LinkId=521839) for å finne ut mer.
 
-## <a name="onboarding-in-two-stages"></a>Pålasting to stadier
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Ta i bruk den distribuerte hybridtopologien for Supply Chain Management
 
-Prosessen med pålastning i en distribuert, hybrid topologi har to stadier. I det første stadiet må du validere tilpasninger for å sikre at de fungerer i den distribuerte topologien som har skalaenheter. Sandkasse- og produksjonsmiljøer flyttes bare i løpet av det andre stadiet.
+### <a name="try-out-the-distributed-hybrid-topology"></a>Prøv den distribuerte hybridtopologien
 
-### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Stadium 1: Evaluere tilpasninger i utviklingsmiljøer med én boks
+Prosessen med å ta i bruk den distribuerte hybridtopologien har to stadier. Du må [prøve](cloud-edge-try-out.md) løsningen og validere tilpasningene i løpet av det første stadiet for å sikre at de fungerer i en distribuert topologi som omfatter storskalaenheter. (Du kan bruke eksisterende utviklingsmiljøer til å utføre valideringen.) Du kan deretter gå videre til det andre stadiet, der du får produksjonsmiljøer.
 
-Før du begynner å pålaste sandkasse- eller produksjonsmiljøet, anbefaler vi at du utforsker skalaenheter i et utviklingsoppsett, for eksempel miljø med én boks (kalles også et nivå 1-miljø), slik at du kan validere prosesser, tilpasninger og løsninger. I løpet av dette stadiet blir data og tilpasninger brukt i miljøene med én boks. Ett miljø tar rollen som senteret, og det andre tar rollen som en skalaenhet. Dette oppsettet gir den beste måten å identifisere og løse problemer på. Den nyeste builden for tidlig tilgang (PEAP) kan også brukes til å fullføre dette stadiet.
-
-For stadium 1 bør du bruke [distribusjonsverktøy for skalaenheter for utviklingsmiljøer med én boks](https://github.com/microsoft/SCMScaleUnitDevTools). Ved hjelp av disse verktøyene kan du konfigurere senteret og skalere enhetene i ett eller to separate miljøer med én boks. Verktøyene leveres som binær lansering og i kildekode på GitHub. Studer wiki-en til prosjektet, som omfatter en [trinnvis bruksveiledning](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) som beskriver hvordan verktøyene brukes.
-
-### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Stadium 2: Skaffe tillegg, og distribuere dem i sandkasse- og produksjonsmiljøene
-
-Hvis du vil klargjøre ett av sandkasse- eller produksjonsmiljøene i den nye topologien, må du anskaffe tillegg for én eller flere skyskalaenheter (og for kantskalaenheter i fremtiden). Tilleggene vil gi tilsvarende prosjekt- og miljøspor i [LCS](https://lcs.dynamics.com/), slik at skalaenhetsmiljøene kan distribueres.
-
-> [!NOTE]
-> Tilleggene for skalaenhetene er ikke sammenknyttet til et begrenset antall brukere, men kan brukes av alle brukere i det eksisterende abonnementet, basert på rollene som administratoren tilordner.
+## <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Velg LCS-prosjektleieren og den detaljerte pålastingsprosessen
 
 Skalaenheter tilbys i flere lagerenheter (SKU-er) og prissettingsalternativer. Derfor kan du velge det alternativet som passer best til ditt planlagte månedlige transaksjonsvolum og ytelseskrav.
+
+> [!TIP]
+> Samarbeid med implementeringspartneren din og Microsoft for å forstå den månedlige transaksjonsstørrelsen du trenger, for å identifisere størrelsen på transaksjonen som passer best til dine behov.
 
 SKU-en på grunnivå kalles *Grunnleggende*, og den mer utførende SKU-en kalles *Standard*. Hver SKU er forhåndslastet med et bestemt antall månedlige transaksjoner. Du kan imidlertid øke det månedlige transaksjonsbudsjettet ved å legge til overbetalingstillegg for hver SKU.
 
 :::image type="content" source="media/SKUs-highlevel.png" alt-text="Tillegg for skyskalaenheter.":::
 
-> [!TIP]
-> Samarbeid med partneren din og Microsoft for å forstå den månedlige transaksjonsstørrelsen du trenger, for å identifisere størrelsen på transaksjonen som passer best til dine behov.
+> [!NOTE]
+> Tilleggsprogrammer for storskalaenheter er ikke knyttet til et begrenset antall brukere. De er tilgjengelige for enhver bruker i det eksisterende abonnementet (forutsatt at administratoren har tilordnet de nødvendige brukerrollene til dem).
 
 Innkjøpet av hvert skalaenhetstillegg gir deg ikke bare et månedlig volum av transaksjoner, men gir deg også rett til et bestemt antall miljøspor i LCS. For hvert Cloud Scale Unit-tillegg har du rett på én ny produksjonsplass og én ny plass i sandkassen. Under introduksjonsprosessen vil det bli lagt til et nytt LCS-prosjekt som har disse plassene. Bruksrettighetene for disse plasene er bundet, slik at disse må brukes som skalaenheter som har et skysenter.
 
@@ -159,11 +153,8 @@ Tillegg for overforbruk gir deg ikke rett til nye miljøplasser.
 
 Hvis du vil anskaffe flere sandkassemiljøer, kan du kjøpe ekstra vanlige sandkasseplasser. Microsoft kan deretter hjelpe deg med å aktivere disse plassene som skalaenheter for sandkasser for den hybride topologien.
 
-## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Ta i bruk den distribuerte, hybride topologien for Supply Chain Management
 
-### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Velg LCS-prosjektleieren og den detaljerte pålastingsprosessen
-
-Når du er ferdig med å planlegge hvordan du vil ta i bruk den distribuerte, hybride topologien for Supply Chain Management, bruker du [Scale Unit Manager-portalen](https://aka.ms/SCMSUM) til å starte pålastingsprosessen. I portalen velger du fanen **Dynamics 365-leiere**. Denne fanen viser listen over leiere som kontoen din er en del av, og hvor du er en eier eller miljøadministrator for et LCS-prosjekt.
+Når du er ferdig å planlegge hvordan du vil ta i bruk den distribuerte hybridtopologien for Supply Chain Management, bruker du [Scale Unit Manager-portalen](https://aka.ms/SCMSUM) til å starte innføringsprosessen. I portalen velger du fanen **Dynamics 365-leiere**. Denne fanen viser listen over leiere som kontoen din er en del av, og hvor du er en eier eller miljøadministrator for et LCS-prosjekt.
 
 Hvis leieren du leter etter, ikke finnes i listen, kan du gå til [LCS](https://lcs.dynamics.com/v2) og kontrollere at du er en miljøadministrator eller en prosjekteier for LCS-prosjektet for denne leieren. Bare Azure Active Directory-kontoer (Azure AD) fra den valgte leieren er autorisert til å fullføre registreringen.
 
@@ -211,7 +202,7 @@ Når én eller flere arbeidsbelastninger er aktivert, bruker du alternativet **B
 :::image type="content" source="media/sum-manage-workloads.png" alt-text="Administrering av skalaenhet og arbeidsbelastning.":::
 
 > [!TIP]
-> Over tid vil inkrementelle forbedringer legges til i Scale Unit Manager-opplevelsen for å gjøre det enklere å styre livssyklusadministrasjonen. De spesifikke egenskapene for den gjeldende versjonen er dokumentert i en håndbok for innføring som er tilgjengelig for kunder som er i ferd med å ta i bruk den distribuerte, hybride topologien for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
+> Over tid vil inkrementelle forbedringer legges til i Scale Unit Manager-opplevelsen for å gjøre det enklere å styre livssyklusadministrasjonen. De spesifikke egenskapene for den gjeldende versjonen er dokumentert i en håndbok for innføring som er tilgjengelig for kunder som er i ferd med å ta i bruk den distribuerte hybridtopologien for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
 
 ## <a name="feature-management-considerations-for-workloads"></a>Hensyn til funksjonsbehandling for arbeidsbelastninger
 

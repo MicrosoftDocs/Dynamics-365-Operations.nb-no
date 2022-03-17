@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4fef5011ead69028a7f667835fd5e5ba2401408d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985662"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358437"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Oversikt over automatiserte prosesser for leverandørfakturering
 
@@ -43,7 +43,7 @@ Automatiseringsprosessene kan brukes til å utføre følgende oppgaver:
 
 ## <a name="submit-imported-vendor-invoices-to-the-workflow-system"></a>Send inn importerte leverandørfakturaer til arbeidsflytsystemet
 
-Som en del av en berøringsfri faktureringsprosess for leverandører, kan du få systemet til automatisk å sende en importert faktura til arbeidsflytsystemet. Prosessen vil kjøre i bakgrunnen med en angitt hyppighet (enten hver time eller daglig). Muligheten til automatisk å sende importerte fakturaer til arbeidsflytsystemet krever at prosessen begynner med en importert faktura. Hvis du vil sikre at fakturaen kan behandles fra start til slutt uten manuell behandling, må en automatisk posteringsoppgave inkluderes i arbeidsflytkonfigurasjonen.
+Som en del av en berøringsfri faktureringsprosess for leverandører, kan en importert faktura sendes inn automatisk til arbeidsflytsystemet. Prosessen vil kjøre i bakgrunnen med en angitt hyppighet (enten hver time eller daglig). Muligheten til automatisk å sende importerte fakturaer til arbeidsflytsystemet krever at prosessen begynner med en importert faktura. Hvis du vil sikre at fakturaen kan behandles fra start til slutt uten manuell behandling, må en automatisk posteringsoppgave inkluderes i arbeidsflytkonfigurasjonen.
 
 
 Fakturaer som er knyttet til bestillinger og fakturaer som inneholder en ikke-bestillingsinnkjøpskategori og ikke-lagerførte linjer, kan sendes automatisk til arbeidsflytsystemet. Fakturaer som registreres manuelt og fakturaer som opprettes ved hjelp av arbeidsområdet **Leverandørsamarbeidsfakturering** må sendes manuelt til arbeidsflytsystemet. Behandling av søknad om forskuddsbetaling må utføres manuelt for importerte fakturaer. Du kan bruke forskuddsbetalinger manuelt før eller etter at den importerte fakturaen er postert. Du kan manuelt bruke forskuddsbetalinger på ikke-posterte standardfakturaer ved hjelp av siden **Leverandørfakturaer**. Etter posteringen vil den utlignede forskuddsbetalingen være tilgjengelig slik at den kan brukes manuelt for andre fakturaer fra denne leverandøren på siden **Leverandører** (**Leverandører \> Felles \> Leverandører \> Alle leverandører \> Fanen Faktura \> Bruk**).
@@ -52,7 +52,7 @@ Automatiseringsfunksjonen gir et fleksibelt rammeverk som gjør det mulig å def
 
 ## <a name="match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>Samsvare produktkvitteringer med fakturalinjer som har en treveis kontrollpolicy
 
-Systemet kan automatisk sammenligne posterte produktkvitteringer med fakturalinjer som en treveis kontrollpolicy er definert for. Prosessen vil kjøre til det samsvarende produktkvitteringsantallet er lik fakturaantallet. Som en del av denne prosessen kan du angi det maksimale antall ganger som systemet skal prøve å samsvare produktkvitteringer med en fakturalinje før prosessen mislykkes. Prosessen kjøres i bakgrunnen, enten hver time eller hver dag. Du kan kjøre den automatiserte samsvarsprosessen som en del av prosessen for å sende fakturaer til arbeidsflytsystemet. Du kan også kjøre den som en frittstående prosess.
+Posterte produktkvitteringer kan sammenlignes automatisk med fakturalinjer som en treveis kontrollpolicy er definert for. Prosessen vil kjøre til det samsvarende produktkvitteringsantallet er lik fakturaantallet. Som en del av denne prosessen kan du angi det maksimale antall ganger som systemet skal prøve å samsvare produktkvitteringer med en fakturalinje før prosessen mislykkes. Prosessen kjøres i bakgrunnen, enten hver time eller hver dag. Du kan kjøre den automatiserte samsvarsprosessen som en del av prosessen for å sende fakturaer til arbeidsflytsystemet. Du kan også kjøre den som en frittstående prosess.
 
 ## <a name="pre-validate-vendor-invoice-posting"></a>Forhåndsvalidere leverandørfakturapostering
 
@@ -60,7 +60,7 @@ Posteringssimulering fullfører valideringstrinnene som utføres under postering
 
 ## <a name="enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Forbedret opplevelse for visning av arbeidsflyt og automatisk historisk informasjon for leverandørfakturaer
 
-Det finnes en oversiktlig visning av arbeidsflytloggen for leverandørfaktura. Du kan få tilgang til arbeidsflytloggen for leverandørfaktura direkte fra leverandørfakturaen. Derfor kreves det færre klikk for å finne denne informasjonen. Hvis organisasjonen har aktivert funksjonen for å sende importerte leverandørfakturaer til arbeidsflyten automatisk, blir automatiseringsloggen tilgjengelig for de importerte fakturaene. Automatiseringsloggen hjelper deg å identifisere det gjeldende prosesstrinnet, i tillegg til trinnene som allerede er fullført. Når et trinn mislykkes, inneholder systemet detaljert informasjon som hjelper deg å forstå årsaken til feilen.
+Det finnes en oversiktlig visning av arbeidsflytloggen for leverandørfaktura. Du kan få tilgang til arbeidsflytloggen for leverandørfaktura direkte fra leverandørfakturaen. Derfor kreves det færre klikk for å finne denne informasjonen. Hvis organisasjonen har aktivert funksjonen for å sende importerte leverandørfakturaer til arbeidsflyten automatisk, blir automatiseringsloggen tilgjengelig for de importerte fakturaene. Automatiseringsloggen hjelper deg å identifisere det gjeldende prosesstrinnet, i tillegg til trinnene som allerede er fullført. Når et trinn mislykkes, får du detaljert informasjon som hjelper deg å forstå årsaken til feilen.
 
 ## <a name="analytics-and-metrics"></a>Analyse og telemetri
 
@@ -78,9 +78,9 @@ Verdien **Dato for mottatt faktura** angir datoen da firmaet mottok fakturaen fr
 
 ## <a name="tracking-the-imported-invoice-amount-and-imported-sales-tax-amount-values"></a>Spore importerte fakturabeløp og importerte mva-beløpsverdier
 
-Verdiene **Importert fakturabeløp** og **Importert mva-beløp** for leverandørfakturaer kan oppgis i importfilen for leverandørfakturaene. Disse verdiene kommer vanligvis fra en faktura som ble skannet av en ekstern leverandør og inkludert i importfilen. Etter hvert som fakturaen behandles i Leverandør, beregner systemet verdier på grunnlag av fakturadataene. Fakturaen kan bare posteres hvis de importerte verdiene samsvarer med de beregnede verdiene. Samsvarende verdier sikrer at fakturaen gjenspeiler beløpet som forfaller til leverandøren. Hvis organisasjonen tillater at importerte fakturaer kan sendes til arbeidsflytsystemet automatisk, kan du velge å kreve at de importerte totalene samsvarer med de beregnede totalene før fakturaen kan sendes til arbeidsflytsystemet.
+Verdiene **Importert fakturabeløp** og **Importert mva-beløp** for leverandørfakturaer kan oppgis i importfilen for leverandørfakturaene. Disse verdiene kommer vanligvis fra en faktura som ble skannet av en ekstern leverandør og inkludert i importfilen. Etter hvert som fakturaen behandles i Leverandør, beregnes verdiene på grunnlag av fakturadataene. Fakturaen kan bare posteres hvis de importerte verdiene samsvarer med de beregnede verdiene. Samsvarende verdier sikrer at fakturaen gjenspeiler beløpet som forfaller til leverandøren. Hvis organisasjonen tillater at importerte fakturaer kan sendes til arbeidsflytsystemet automatisk, kan du velge å kreve at de importerte totalene samsvarer med de beregnede totalene før fakturaen kan sendes til arbeidsflytsystemet.
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering av leverandørfaktura – Fortsett automatiseringsbehandling for flere fakturaer
-Når en importert faktura ikke kan sendes til arbeidsflyten gjennom den automatiserte prosessen, vil systemet fjerne den fra ytterligere automatisert behandling. En regnskapsassistent kan se gjennom og redigere fakturaen før den automatiserte prosessen sender den til arbeidsflyten på nytt. Når årsaken til en feil kan løses med samme rettelse for flere fakturaer, kan du starte den automatiserte prosessen på nytt på siden **Gjenoppta automatisert fakturabehandling**. 
+Når en importert faktura ikke kan sendes til arbeidsflyten gjennom den automatiserte prosessen, fjernes den fra ytterligere automatisert behandling. En regnskapsassistent kan se gjennom og redigere fakturaen før den automatiserte prosessen sender den til arbeidsflyten på nytt. Når årsaken til en feil kan løses med samme rettelse for flere fakturaer, kan du starte den automatiserte prosessen på nytt på siden **Gjenoppta automatisert fakturabehandling**. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

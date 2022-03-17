@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2d8a2e44713607ff2a4df91271c70d96c4d71d9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982100"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367891"
 ---
 # <a name="europe-overview"></a>Oversikt over Europa
 
@@ -36,13 +36,13 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Redigere faktura-IDer på salgsordrer for Øst-Europa](emea-edit-invoice-id-sales-orders.md)
 - [EU-innførselssertifikater](emea-entry-certificates.md)
 - [Rapportering av EU-salgsliste](emea-eu-sales-list.md)
+  - [Eksempel på generisk EU-salgsliste](emea-eu-sales-list-example.md)
 - [Valutakursjusteringer](emea-exchange-rate-adjustments.md)
 - [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md)
 - [Finansretningslinjer (globalisering) om Brexits innvirkning](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integrering av økonomisk service (ESR)](emea-fiscal-service-integration.md)
 - [Avhending av anleggsmidler i Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generere et overføringsdokument for en intern lageroverføring](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generere rapporten om EU-salgsliste](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-filer
   - [Importere ISO20022-filer](emea-ISO20022-file-formats.md)
   - [Importere konfigurasjon for ISO20022-avtalegiro](tasks/import-iso20022-direct-debit-configuration.md)
@@ -77,7 +77,6 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Oversikt over SEPA-kredittoverføring](../accounts-payable/sepa-credit-transfer.md)
 - [Oversikt over SEPA-avtalegiro](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Opprette kunde- og leverandørkompensasjon](emea-compensation-customer-vendor-transactions.md)
-- [Definere rapportering for EU-salgsliste](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Definere format for betalingsbilag for prosjektfakturaer](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Definere signatarer for utskriftsskjemaer](emea-set-up-signers-for-printing-forms.md)
 - [Storno-regnskapsføring](emea-storno.md)

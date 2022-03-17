@@ -2,7 +2,7 @@
 title: Hva er nytt eller endret i mobilappen Warehouse Management
 description: Dette emnet inneholder en liste over de nye og endrede funksjonene for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 01/18/2022
+ms.date: 02/21/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ceb327599bb2651a37ac51c3e0fdffc39d20c7f6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067257"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384377"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Hva er nytt eller endret i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20170"></a>Versjon 2.0.17.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Løste et problem der strekkoder ble skannet feil.
+- Løste problemet med GS1-skanning for kameraskanneren.
+- Løste problemet med GS1-skanning for strekkodeskanneren på Zebra-enheter.
+- Forbedret flyten for omveisforespørsel, slik at valg av et kort i en omvei nå returneres til hovedflyten.
+- La til støtte for en generisk flyt for dataforespørsel.
+- La til en melding for å gi brukerne beskjed om endringer i statusen for nettverkstilkobling.
+- Justerte lagringstillatelser etter personvernerklæringen for lagring i Android 10.
+- Antallsspinneren har nå en posisjon som lar brukere sende inn en tom numerisk verdi, for flyter som trenger det.
+- Løste problemer med retningen for antallsspinneren.
+- Løste et problem der antallsspinneren hoppet til feil verdi.
+- Løste et problem der inndata på hovedsiden gikk tapt når de ble fylt inn fra detaljsiden.
+- Løste et problem der plassholdertekst ble behandlet som den første valgte verdien i valglister.
+- Send inn-knappen i bekreftelsestrinnene aktiveres nå automatisk hvis det finnes forhåndsvalgte verdier.
+- Løste problemer med detaljkortet, slik at det vises så mange linjer som mulig for tekstfelter med flere linjer.
+- Løste problemer med høyden på knappene Send inn og Flere handlinger, slik at de nå bruker mindre plass på skjermen.
+- La til manglende valglistetitler.
+- Løste et problem der tilbakeknappen ikke fungerte.
+- La til flere rettelser og forbedringer for tastaturnavigasjon, blant annet på følgende sider:
+  - Brukerpålogging
+  - Velg tilkobling
+  - Rediger tilkobling
+- Løste problemer med rulling når tastaturnavigasjon brukes.
+- Utvidet tilgjengelighet, inkludert følgende forbedringer:
+  - Løste problemer med fargesynlighet og kontrast.
+  - Forhindret tap av tastaturfokus når popup-sider lukkes.
+  - La til feilmeldinger i skildringen.
+  - Økte størrelsen på plassholderverdier i trinnbanneret.
+- Løste problemer med eksemplet på den egendefinerte, gamle siden i demomodus.
 
 ## <a name="version-20150"></a>Versjon 2.0.15.0
 
@@ -39,12 +72,12 @@ Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringe
 ## <a name="version-20130"></a>Versjon 2.0.13.0
 
 Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
- 
+
 - Forbedret rulling mellom sider med mer jevnere animasjon.
 - Løste kontraintuitive svar på sveipebevegelser og tilfeldig frysning av skjermbilder.
 - Forbedret tekst i mørk modus og bakgrunnsfargekombinasjoner for bedre lesbarhet.
 - Løste et problem der noe av teksten kunne bli svært liten under endring av størrelse på appvinduet.
-- Løste et problem som kan føre til at appen av og til krasjer ved skanning av strekkoder.
+- Løste et problem som kunne føre til at appen av og til krasjet ved skanning av strekkoder.
 - La til muligheten til å erstatte en glidebryter med en knapp.
 - Løste et problem som kan føre til at appen viser feilmeldingen "AADSTS7000215: Ugyldig klienthemmelighet er oppgitt."
 - Løste tipsanimasjonen som viser hvordan du lukker en side ved hjelp av sveiping nedover.
@@ -73,7 +106,7 @@ Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringe
 - Utvidede detaljkort.
 - Utvidede omveier for trinn i menyelementet.
 - Små forbedringer i brukergrensesnittet.
-- Reparert et problem som kan føre til at appen krasjer ved skanning av strekkoder.
+- Løste et problem som kunne føre til at appen krasjet ved skanning av strekkoder.
 - Løste ulike problemer som kunne føre til at systemet sluttet å svare.
 
 ## <a name="version-20100"></a>Versjon 2.0.10.0

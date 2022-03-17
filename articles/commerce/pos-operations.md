@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5e139b7b12b8f2e549fb9c2c8e39125e190c7396
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 0c62e11cc6d39c351321419bb862a5169b162fb7
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8311985"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349723"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -159,7 +159,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 305 | Innløs fordelspoeng | Denne operasjonen støttes ikke. | Gjelder ikke her | Gjelder ikke her | Gjelder ikke | Gjelder ikke | Ja |
 | 635 | Refundering av forsendelseskostnader | Refunder forsendelseskostnader på en annullert ordre. | Nei | Nei | Nei | Nei | Nei |
 | 644 | Fjern kupongkode | Be brukeren om å fjerne kuponger ved å velge dem i en liste over kuponger som er knyttet til transaksjonen. | Ja | Ja | Nei | Ja | Nei |
-| 1057 | Skriv ut Z på nytt | Skrive ut Z-rapporten for det forrige eller valgte skiftet. | Ja | Ja | Ja | Nei | Nei |
+| 1057 | Skriv ut Z på nytt | Skriv ut Z-rapporten på nytt for det forrige skiftet. | Ja | Ja | Ja | Nei | Nei |
 | 1216 | Angi et nytt passord | Denne operasjonen lar en bruker som har tillatelse for tilbakestilling av passord, tilbakestille passord for en annen ansatt ved hjelp av et midlertidig passord. | Ja | Ja | Ja | Nei | Nei |
 | 1219 | Åpne URL-adresse på salgssted | Åpne en administratorkonfigurert URL-adresse på salgsstedet. | Ja | Ja | Ja | Ja | Nei |
 | 109 | Returprodukt | Utfør retur av enkeltprodukter. Det neste skannede produktet vises som et returprodukt som har negativt antall og pris. | Ja | Ja | Nei | Ja | Nei |

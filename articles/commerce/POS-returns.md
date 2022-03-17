@@ -2,7 +2,7 @@
 title: Opprette returer i POS
 description: Dette emnet beskriver hvordan du starter returer for hentesalgstransaksjoner eller kundeordrer i Microsoft Dynamics 365 Commerce Point of Sale (POS).
 author: hhainesms
-ms.date: 06/01/2021
+ms.date: 02/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
+ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715536"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8349697"
 ---
 # <a name="create-returns-in-pos"></a>Opprette returer i POS
 
@@ -96,6 +96,13 @@ Hvis informasjonen på kanalsiden av en eller annen årsak ikke er oppdatert og 
 
 > [!NOTE]
 > Når funksjonen **Enhetlig returbehandling i POS** er aktivert, blir nye valgfrie funksjoner som støtter validering av serialiserte produktreturer, tilgjengelige. Hvis du vil ha mer informasjon, kan du se [Returnere serienummerkontrollerte produkter i Point of Sale (POS)](POS-serial-returns.md).
+
+## <a name="version-details"></a>Versjonsdetaljer
+
+Listen nedenfor inneholder minimumskravene for versjon for de ulike komponentene.
+- Commerce Headquarters: versjon 10.0.20
+- Commerce Scale Unit (CSU): versjon 9.30
+- Point of Sale (POS): versjon 9.30
 
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktiver riktig avgiftsberegning for returer med delvis antall
 

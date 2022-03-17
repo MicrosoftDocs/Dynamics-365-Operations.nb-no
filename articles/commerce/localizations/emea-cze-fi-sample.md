@@ -2,7 +2,7 @@
 title: Eksempel på integrering av regnskapsregistreringstjenesten for Tsjekkia
 description: Dette emnet gir en oversikt over eksemplet for regnskapsintegrering for Tsjekkia i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -10,16 +10,17 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 990de96f57f4a22b4d58da5f970b1b96f5fc21f5
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: cb9679bd02c5400fc015c6807407b01e9bf55343
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077096"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388242"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Eksempel på integrering av regnskapsregistreringstjenesten for Tsjekkia
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Dette emnet gir en oversikt over eksemplet for regnskapsintegrering for Tsjekkia i Microsoft Dynamics 365 Commerce.
 
@@ -68,7 +69,7 @@ Eksemplet på integrering av regnskapsregistreringstjenesten implementerer følg
 - En transaksjon som er relatert til en kundekontoinnbetaling eller en kundeordreinnbetaling, registreres i regnskapsregistreringstjenesten som en enkeltlinjetransaksjon og merkes med et spesielt attributt. Mva-gruppen for innbetaling er angitt i denne linjen.
 - Når det opprettes en hybridkundeordre, det vil si en kundeordre som inneholder produkter som kan utføres av butikken av kunden, i tillegg til produkter som skal plukkes eller sendes senere, inneholder transaksjonen som er registrert i regnskapsregistreringstjenesten, linjer for produktene som utføres, i tillegg til en linje for ordreinnbetalingen.
 - En betaling fra en kundekonto regnes som en vanlig betaling, og merkes med et spesielt attributt når transaksjonen registreres i regnskapsregistreringstjenesten.
-- Innbetalingsbeløpet for kundeordre som brukes på en *henteoperasjon* for kundeordre, regnes som en vanlig betaling, og merkes med et spesielt attributt når transaksjonen registreres i regnskapsregistreringstjenesten.
+- Innbetalingsbeløpet for kundeordre som brukes på en plukkoperasjon for kundeordre, regnes som en vanlig betaling, og merkes med et spesielt attributt når transaksjonen registreres i regnskapsregistreringstjenesten.
 
 ### <a name="offline-registration"></a>Frakoblet registrering
 
@@ -291,14 +292,28 @@ Følg denne fremgangsmåten for å definere et distribusjonsmiljø slik at du ka
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Installer utvidelser for maskinvarestasjon:
+1. Installer utvidelser for regnskapskobling:
 
-    1. I mappen **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** finner du installeringsprogrammet **HarwareStation.EFR.Installer**.
-    1. Start installeringsprogrammet for utvidelsen fra kommandolinjen:
+    Du kan installere utvidelser for regnskapskobling på [maskinvarestasjonen](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) eller i [POS-kassen](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Installer utvidelser for maskinvarestasjon:
+
+        1. I mappen **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** finner du installeringsprogrammet **HarwareStation.EFR.Installer**.
+        1. Start installeringsprogrammet for utvidelsen fra kommandolinjen ved å kjøre følgende kommando.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Installer POS-utvidelser:
+
+        1. Åpne eksempelløsningen for regnskapskobling for POS i **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln**, og bygg den.
+        1. Finn installasjonsprogrammet **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** i mappen **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461**.
+        1. Start installeringsprogrammet for utvidelsen fra kommandolinjen ved å kjøre følgende kommando.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Produksjonsmiljø
 
@@ -350,5 +365,28 @@ Koblingen støtter følgende forespørsler.
 #### <a name="configuration"></a>Konfigurasjon
 
 Konfigurasjonsfilen for regnskapskobling ligger under **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** i repositoriet for [løsningene for Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Formålet med filen er å aktivere innstillinger for regnskapskoblingen som skal konfigureres fra Commerce Headquarters. Filformatet samkjøres med kravene for konfigurasjon av regnskapsintegrering.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Utforming av regnskapskoblingsutvidelsen for POS
+
+Formålet med regnskapskoblingsutvidelsen for POS, er å kommunisere med regnskapsregistreringstjenesten fra POS. Den bruker HTTPS-protokollen til kommunikasjon.
+
+#### <a name="fiscal-connector-factory"></a>Regnskapskoblingsfabrikk
+
+Regnskapskoblingsfabrikken tilordner koblingsnavnet til implementeringen av regnskapskoblingen og er i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Koblingsnavnet må samsvare med navnet på regnskapskoblingen som er angitt i Commerce Headquarters.
+
+#### <a name="efr-fiscal-connector"></a>Regnskapskobling for EFR
+
+Regnskapskoblingen for EFR er i filen **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Det implementerer grensesnittet for **IFiscalConnector** som støtter følgende forespørsler:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – Denne forespørselen sender dokumenter til regnskapsregistreringstjenesten og returnerer et svar fra den.
+- **FiscalRegisterIsReadyClientRequest** – Denne forespørselen brukes for en tilstandskontroll av regnskapsregistreringstjenesten.
+- **FiscalRegisterInitializeClientRequest** – Denne forespørselen brukes til å initialisere regnskapsregistreringstjenesten.
+
+#### <a name="configuration"></a>Konfigurasjon
+
+Konfigurasjonsfilen ligger i mappen **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** i repositoriet [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Formålet med filen er å aktivere innstillinger for regnskapskoblingen som skal konfigureres fra Commerce Headquarters. Filformatet samkjøres med kravene for konfigurasjon av regnskapsintegrering. Følgende innstillinger legges til:
+
+- **Endrepunktadresse** – URL-adressen til regnskapsregistreringstjenesten.
+- **Tidsavbrudd** – Tiden, i millisekunder, som koblingen vil vente på svar fra regnskapsregistreringstjenesten.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

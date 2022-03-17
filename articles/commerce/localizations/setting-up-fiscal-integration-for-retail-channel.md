@@ -2,19 +2,19 @@
 title: Definere økonomisk integrering for handelskanaler
 description: Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for handelskanaler.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd37934e1ebd103d66c5181e0bfb75047f4cb6a3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076969"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388396"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Definere økonomisk integrering for handelskanaler
 
@@ -46,6 +46,7 @@ Fremgangsmåten for å definere regnskapsintegreringen omfatter følgende hovedo
 - Konfigurer regnskapsregistreringsprosessen som definerer en sekvens med bilagsregistreringstrinn og regnskapskoblingene og leverandørene av regnskapsdokument som skal brukes for hvert trinn.
 - Tilordne bilagsregistreringsprosessen til funksjonalitetsprofiler for salgssted (POS).
 - Tilordne tekniske profiler for kobling til maskinvareprofiler.
+- Tilordne tekniske profiler for kobling til profiler for maskinvare eller funksjonalitet for salgssted.
 
 ### <a name="upload-configurations-of-fiscal-document-providers"></a>Last opp konfigurasjoner av leverandører av regnskapsdokumenter
 
@@ -161,10 +162,12 @@ Gjør følgende for å tilordne enheter av bilagsregistreringsprosessen til POS-
 1. I Commerce-hovedkvarteret går du til siden **Funksjonalitetsprofiler for salgssted** (**Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Funksjonalitetsprofiler**). 
 1. Tilordne bilagsregistreringsprosessen til en funksjonalitetsprofil for salgssted.
 1. Velg **Rediger** og deretter i kategorien **Bilagsregistreringsprosess** i feltet **Prosessnummer** velger du en prosess.
+1. Velg tekniske profiler for kobling med koblingsplasseringen **Kasse** i fanen **Regnskapstjenester**.
 1. Gå til siden **Maskinvareprofil for salgssted** (**Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Maskinvareprofiler**).
 1. Tilordne tekniske profiler for kobling til en maskinvareprofil. 
 1. Velg **Rediger**, og legg deretter til en linje på fanen **Eksterne regnskapsenheter**. 
 1. Velg en teknisk profil for kobling i feltet **Profilnummer**.
+1. Velg tekniske profiler for kobling med koblingsplasseringen **Maskinvarestasjon** i fanen **Eksterne regnskapsenheter**.
 
 > [!NOTE]
 > Du kan legge til flere tekniske profiler i den samme maskinvareprofilen. En maskinvareprofil eller funksjonalitetsprofil for salgssted skal imidlertid bare ha ett skjæringspunkt med en gruppe for regnskapskobling.
@@ -175,6 +178,17 @@ Bilagsregistreringsflyten er definert av renskapsregistreringsprosessen og også
 - Regnskapsdokumentleverandøren er også ansvarlig for å identifisere regnskapskoblingen som brukes til regnskapsregistrering. Den samsvarer med de funksjonelle profilene for kobling som er inkludert i gruppen for regnskapskobling som er angitt for gjeldende trinn i regnskapsregistreringsprosessen for teknisk profil for kobling som er tilordnet til maskinvareprofilen for maskinvarestasjonen som salgsstedet er koblet til.
 - Regnskapsdokumentleverandøren bruker innstillingene for datatilordning fra regnskapsdokumentleverandørkonfigurasjonen for å transformere transaksjons-/hendelsesdata som for eksempel avgifter og betalinger når det genereres et regnskapsdokument.
 - Når regnskapsdokumentleverandøren genererer et regnskapsdokument, kan regnskapskoblingen enten sende det til regnskapsenheten som den er, eller analysere det og gjøre det om til en sekvens med kommandoer for API-enheten, avhengig av hvordan kommunikasjonen håndteres.
+
+### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Konfigurere kasser med begrensninger for regnskapsregistrering
+
+Du kan velge kasser der regnskapsregistrering skal være forbudt, for eksempel når du bare trenger å tilby ikke-regnskapsoperasjoner, for eksempel søk i produktkatalog, kundeoppslag eller opprettelse av transaksjonsutkast på disse enhetene.
+
+Følg denne fremgangsmåten for å konfigurere kasser med begrensninger for regnskapsregistrering.
+
+1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Regnskapsintegrering \> Regnskapsregistreringsprosesser** i Commerce Headquarters.
+1. Velg prosessen som kreves.
+1. Velg fanen **Kasser på salgssted med begrensninger for regnskapsprosess**.
+1. Legg til kasser med begrensninger for regnskapsprosess etter behov.
 
 ### <a name="validate-the-fiscal-registration-process"></a>Valider regnskapsregistreringsprosessen
 

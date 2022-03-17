@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Commerce.
 author: josaw
-ms.date: 09/27/2021
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
-ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
+ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "7559565"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384615"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 
@@ -31,7 +31,7 @@ Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerni
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
 > [!NOTE]
-> Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+> Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.21
 
@@ -59,7 +59,7 @@ SDK for Retail sendes i Lifecycle Services (LCS). Denne distribusjonsmodusen avs
 | **Erstattet med en annen funksjon?**   |  [Last ned eksempler og referansepakker i SDK for Retail fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Berørte produktområder**         | Retail SDK |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Per versjon 10.0.21 fjernes SDK-en som sendes via virtuelle LCS-maskiner, i oktober 2022. |
+| **Status**                         | Avskrevet: Fra og med versjon 10.0.21 fjernes SDK-en som sendes via virtuelle LCS-maskiner, i april 2023. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Pakker som kan distribueres i Retail, og kombinerte installasjoner på salgssted, i maskinvarestasjoner og skyskalaenheter
 
@@ -82,9 +82,9 @@ Hvis du vil ha mer informasjon, kan du se:
     + [Cloud Scale Unit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
     + [Salgssted, CSU og maskinvarestasjon](https://github.com/microsoft/Dynamics365Commerce.InStore)
 
-### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln og CloudPOs.sln i Retail SDK
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln og CloudPos.sln i Retail SDK
 
-Utvikling av POS-utvidelser ved hjelp av ModernPos.sln, CloudPOs.sln, POS.Extension.csproj og POS-mappen er avskrevet i versjon 10.0.21. Fremover kan du bruke POS-uavhengig emballasje-SDK for POS-tillegg.
+Utvikling av POS-utvidelser ved hjelp av ModernPos.sln, CloudPos.sln, POS.Extension.csproj og POS-mappen er avskrevet i versjon 10.0.21. Fremover kan du bruke POS-uavhengig emballasje-SDK for POS-tillegg.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -92,7 +92,7 @@ Utvikling av POS-utvidelser ved hjelp av ModernPos.sln, CloudPOs.sln, POS.Extens
 | **Erstattet med en annen funksjon?**   | [Salgsstedsuavhengig emballasje-SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Berørte produktområder**         | Dynamics 365 Commerce – utvidelse og distribusjon for salgssted |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Per versjon 10.0.21 blir støtte for kombinerte POS-pakker og utvidelsesmodellen som bruker ModernPos.Sln, CloudPOs.sln og POS.Extensons.csproj in Retail SDK, fjernet i oktober 2022. |
+| **Status**                         | Avskrevet: Fra og med versjon 10.0.21 blir støtte for kombinerte POS-pakker og utvidelsesmodellen som bruker ModernPos.Sln, CloudPos.sln og POS.Extensons.csproj in Retail SDK, fjernet i april 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.17
 
@@ -131,7 +131,7 @@ Utvikling av POS-utvidelser ved hjelp av ModernPos.sln, CloudPOs.sln, POS.Extens
 ### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Støtte for SDK for Retail for Visual Studio 2015, msbuild 14.0 og SDK for Retail\referansebibliotek og verktøy
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Støtte for SDK for Retail for Visual Studio 2015 er avskrevet og oppdatert til å støtte VS 2017, msbuild 15.0 og alle referansebibliotekene og Commerce-proxy-generatorverktøy i RetailSDK\referanse-mappen flyttet til NuGet-pakker for å forenkle utvidelsesmodellen og SDK-oppgraderingsprosessen.|
+| **Årsak til avskrivning/fjerning** | Støtte for SDK for Retail for Visual Studio 2015 er avskrevet og oppdatert til å støtte VS 2017, msbuild 15.0 og alle referansebibliotekene og Commerce-proxy-generatorverktøy i RetailSDK\References-mappen flyttet til NuGet-pakker for å forenkle utvidelsesmodellen og SDK-oppgraderingsprosessen.|
 | **Erstattet med en annen funksjon?**   | Vi anbefaler at du følger informasjonen i [Overføre SDK for Retail fra Visual Studio 2015 til Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md) for å oppdatere systemet. |
 | **Berørte produktområder**         | SDK for Retail-utvidelser |
 | **Distribusjonsalternativ**              | Alle |

@@ -2,7 +2,7 @@
 title: Behandling av generell journal
 description: Dette emnet beskriver funksjoner i Microsoft Dynamics 365 Finance som kan hjelpe med å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.
 author: kweekley
-ms.date: 08/09/2019
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f9f4019618891909e674c6b936f79778ac84744
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726783"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367886"
 ---
 # <a name="general-journal-processing"></a>Behandling av generell journal
 
@@ -101,7 +101,7 @@ En knapp er tilgjengelig på Journal-siden for å låse opp en journal som har s
 Muligheten til å tilbakekalle en journal i en arbeidsflyt som har statusen uopprettelig, aktiveres ved hjelp av **Arbeidsflyt**-knappen i en journal og på siden **Arbeidsflytlogg**. Dette aktiveres av funksjonen kalt **Tilbakestille arbeidsflytstatusen for journaler** på siden **Funksjonsbehandling**.
 
 ## <a name="delete-journal-lines"></a>Slett journallinjer
-Muligheten til å slette alle journallinjer raskt aktiveres i en journal under **Funksjoner** > **Slett journallinjer**. Hvis du vil aktivere denne funksjonen, velger du **Slett ytelsesoptimaliseringer for journal** under **Funksjonsbehandling**.
+Muligheten til å slette alle journallinjer raskt aktiveres i en journal under **Funksjoner** > **Slett journallinjer**. Hvis du vil aktivere denne funksjonen, velger du **Slett ytelsesoptimaliseringer for journal** under **Funksjonsbehandling**. Denne funksjonen påvirker utvidelsene i tabellen **LedgerJournalTrans**, og **Slett**-metoden for den, siden linjesettet fjernes uten at **Slett**-metoden for hver linje kalles opp. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

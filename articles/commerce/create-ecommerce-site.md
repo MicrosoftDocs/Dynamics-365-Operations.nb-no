@@ -2,7 +2,7 @@
 title: Opprette et e-handelsområde
 description: Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090775"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388217"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090775"
 Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 
 Når du lisensierer Dynamics 365 Commerce-mulighetene, blir områdebygger klargjort med et startområde som du kan bruke som grunnlag for ditt eget område. Hvis du imidlertid vil starte fra grunnen av, eller hvis du vil opprette et annet område, må du opprette et nytt område i områdets redigeringsmiljø. 
+
+## <a name="site-creation-prerequisites"></a>Forutsetninger for opprettelse av område
+
+En områdebyggerbruker må ha en Microsoft Azure Active Directory-brukerkonto (Azure AD) inkludert i Azure AD-sikkerhetsgruppen som er tilordnet for systemadministratorene for e-handel. Hvis du vil ha mer informasjon, kan du se [Distribuere en ny e-handelsleier](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Azure AD-gjestebrukere kan ha ulike tilgangstillatelser i Azure AD-leieren. Selv om de er tatt med i Azure AD-sikkerhetsgruppen som er tilordnet for systemadministratorene for e-handel, må kanskje innstillinger for tillatelsen **Eksterne brukere** i Azure AD justeres for en gjestebruker for at vedkommende skal kunne opprette et e-handelsområde i Commerce. 
+
+Følg denne fremgangsmåten for å justere innstillinger for **Eksterne brukere** i Azure AD.
+
+1. I Azure-portalen går du til Azure AD-leieren.
+1. Gå til **Brukerinnstillinger \> Eksterne brukere**, og velg koblingen **Administrer innstillinger for eksternt samarbeid**. Dermed åpnes siden **Innstillinger for eksternt samarbeid** der du kan angi tilgang for gjestebrukere, innstillinger for gjesteinvitasjon og begrensninger for samarbeid. 
+1. Juster innstillingene for eksternt samarbeid i samsvar med firmaets sikkerhetspolicyer. 
 
 ## <a name="set-up-your-site"></a>Konfigurere området
 

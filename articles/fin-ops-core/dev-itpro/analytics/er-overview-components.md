@@ -15,12 +15,12 @@ ms.topic: overview
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a24aa52c805722c20045b6227ceac0103cfbe6b
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: aca1b9bbca490a8a9551ed97d6e100c9115a0d41
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324041"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367830"
 ---
 # <a name="electronic-reporting-components"></a>Komponenter i elektronisk rapportering
 
@@ -91,9 +91,23 @@ En formatkomponent gjør det mulig å vedlegge bestemte filer, som kan brukes i 
 
 Illustrasjonen nedenfor viser hvordan dataene flyter for disse formatene.
 
-[![Dataflyt for innkommende formatkomponenter.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Dataflyt for utgående formatkomponenter](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+
+Hvis du vil kjøre en enkelt ER-formatkonfigurasjonen og generere et utgående elektroniske dokument, må du identifisere tilordningen til formatkonfigurasjonen.
+
+#### <a name="format-components-for-incoming-electronic-documents"></a>Formatkomponenter for innkommende elektroniske dokumenter
+En formatkomponent er oppsettet for det innkommende dokumentet som importeres under kjøring. Et utvalg består av følgende elementer:
+
+- Et format som definerer strukturen og innholdet i det innkommende elektroniske rapporteringsdokumentet som inneholder data som importeres under kjøring. En formatkomponent brukes til å analysere et innkommende dokument i forskjellige formater, for eksempel tekst og XML.
+- En formattilordning som binder individuelle formaterelementer til elementer i en domenespesifikk datamodell. Ved kjøreti angir elementene i datamodellen dataflyten og reglene for å importere data fra et innkommende dokument, og lagrer deretter dataene i en datamodell.
+- En formatvalidering, som et sett med konfigurerbar regler som styrer dataimport under kjøring avhengig av kjørekontekst. Det kan for eksempel være en regel som stopper datamimport av et bankkontoutdrag som har en leverandørs betalinger, og genererer et unntak når en bestemt leverandørs attributter mangler, for eksempel leverandøridentifikasjonskode.
+
+Illustrasjonen nedenfor viser hvordan dataene flyter for disse formatene.
+
+[![Dataflyt for innkommende formatkomponenter](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Hvis du vil kjøre en enkelt ER-formatkonfigurasjon for å importere data fra et innkommende elektronisk dokument, må du identifisere ønsket tilordning til en formatkonfigurasjonen samt integreringspunktet til en modelltilordning. Du kan bruke samme modelltilordning og mål med ulike formater for ulike typer innkommende dokumenter.
+
 
 ## <a name="component-versioning"></a>Versjonskontroll av komponenter
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 88f1e9ef8c8b2aa494c44ea3b33713adc470eb96
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860515"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384803"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Komme i gang med Globalt lagerregnskap
 
@@ -121,7 +121,7 @@ Følg denne fremgangsmåten for å sette opp integreringen mellom Globalt lagerr
 1. Logg på Supply Chain Management.
 1. Gå til **Systemadministrasjon \> Funksjonsbehandling**.
 1. Velg **Se etter oppdateringer**.
-1. I kategorien **Alle** søker du etter funksjonen som kalles *Globalt lagerregnskap*.
+1. I **Alle**-fanen søker du etter funksjonen som kalles *(Forhåndsversjon) Globalt lagerregnskap*.
 1. Velg **Aktiver nå**.
 1. Gå til **Globalt lagerregnskap \> Oppsett \> Parametere for Globalt lagerregnskap \> Integreringsparametere**.
 1. I feltene **Datatjenesteendepunkt** og **Endepunkt for Globalt lagerregnskap** angir du URL-adressene fra e-postmeldingen som Globalt lagerregnskap-teamet sendte da du registrerte deg for forhåndsvisningen.

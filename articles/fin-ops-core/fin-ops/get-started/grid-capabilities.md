@@ -2,7 +2,7 @@
 title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
-ms.date: 02/01/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83d0b6243efd802ffc959f8de14f6232736fc88c
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087580"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384446"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -67,7 +67,10 @@ Hvis du gjør en feil og ikke lenger ønsker å se en totalverdi i en bestemt ko
 ### <a name="calculating-totals"></a>Beregner totaler
 Når du kommer til en side der bunnteksten er synlig og kolonnene allerede er konfigurert for totalverdier, kan det hende at totalverdiene ikke vises i bunnteksten. Atferden avhenger av størrelsen på datasettet på siden. Hvis datasettet er tilstrekkelig lite, vises totalverdiene automatisk sammen med antallet rader i datasettet. Hvis det finnes streker i bunnteksten under kolonnene du har konfigurert for totalverdier, er datasettet for stort til at systemet kan vise totalverdier umiddelbart, og en eksplisitt handling er nødvendig for å beregne totalverdiene. Hvis du vil gjøre dette, klikker du på **Beregn**-knappen i bunnteksten, eller høyreklikker på en kolonne du vil ha totalverdi for, og velger **Summer denne kolonnen**.
 
-Hvis beregningen tar for lang tid, kan du avbryte operasjonen ved å velge **Avbryt**-knappen. Noen ganger vil datasettet imidlertid være for stort til å beregne totalverdier (en grense som pålegges av organisasjonen), og du vil i stedet få et varsel om at dataene må filtreres mer.
+Hvis det tar lang tid å fullføre beregningen, kan du avbryte operasjonen ved å velge **Avbryt**-knappen. Noen ganger er datasettet for stort til at totalverdier (en grense som pålegges av organisasjonen) kan beregnes, og du får i stedet et varsel om at dataene må filtreres mer. 
+
+> [!NOTE]
+> Systemansvarlige kan endre grensen for antall poster som er tilgjengelige for beregning av totaler, ved å justere parameteren **Maksimalt antall lokale poster for hvert rutenett** på siden **Alternativer for klientytelse**. Standardverdien er 25 000 poster. Systemansvarlige må være forsiktige når de justerer denne verdien, fordi en verdi som er for stor, kan bruke opp det tilgjengelige minnet på maskinen til brukeren. Vi anbefaler at 50 000 poster ikke overskrides.   
 
 Totalverdier oppdateres automatisk når du oppdaterer, sletter eller oppretter rader i datasettet.
 

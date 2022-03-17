@@ -2,7 +2,7 @@
 title: Liste over ER-funksjoner for tekstkategorien
 description: Dette emnet inneholder informasjon om tekstfunksjonene som støttes i elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075506"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367773"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste over ER-funksjoner for tekstkategorien
 
@@ -51,7 +51,7 @@ Tekstfunksjoner for elektronisk rapportering (ER) kan brukes til å utføre oper
 | [Høyre](er-functions-text-right.md) | Denne funksjonen returnerer en *streng*-verdi som viser det angitte antallet tegn fra slutten av den angitte strengen. |
 | [Tekst](er-functions-text-text.md) | Denne funksjonen returnerer det angitte tallet som en *streng*-verdi etter at de er konvertert til en tekststreng som formateres i henhold til de nasjonale innstillingene for serveren for gjeldende forekomst av programmet. |
 | [Oversett](er-functions-text-translate.md) | Denne funksjonen returnerer en *Streng*-verdi som inneholder resultatet av erstatningen av den angitte teksten i tegn for et annet angitt tegnsett. |
-| [Trim](er-functions-text-trim.md) | Denne funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at innledende og etterfølgende mellomrom er avkortet, og når flere mellomrom mellom ord er fjernet. |
+| [Trim](er-functions-text-trim.md) | Denne funksjonen returnerer den angitte tekststrengen som *Streng*-verdi etter at tegn for tabulator, vognretur, linjeskift og sideskift er erstattet med ett mellomromstegn, etter at innledende og etterfølgende mellomrom er avkortet, og etter at flere mellomrom mellom ord er fjernet. |
 | [Upper](er-functions-text-upper.md) | Denne funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at den er konvertert til store bokstaver. |
 
 ## <a name="additional-resources"></a>Tilleggsressurser

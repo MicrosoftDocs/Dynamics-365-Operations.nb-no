@@ -2,7 +2,7 @@
 title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 01/28/2022
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 4bdce3cd12358112e40a783c73795bd6f35545c8
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075428"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384649"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -158,6 +158,7 @@ For enkelte sider som inneholder lister, er tilpasningsfunksjonen **Legg til i a
 
 - Hvis du vil legge til et arbeidsområde, sorterer eller filtrerer du først på siden, slik at den viser informasjonen slik du vil at den skal vises i arbeidsområdet. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Liste**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan velge hvilke kolonner som skal vises i listen i arbeidsområdet. Du kan også angi etiketten som brukes for listen i arbeidsområdet.
 - Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen på siden slik at den viser dataene som skal oppsummeres, eller som du vil ha rask tilgang til. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Flis**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for flisen i arbeidsområdet. Du kan også angi om ruten skal vise et tall. Når flisen er lagt til i arbeidsområdet, kan du velge den for å åpne den gjeldende siden fra arbeidsområdet. Deretter kan du vise den filtrerte listen som er knyttet til brikken.
+    - Fra og med versjon 10.0.26 kan du velge en av fire tilgjengelige **Flisstørrelser** for den nye flisen i dialogboksen **Konfigurer flis** hvis funksjonen **Tillat brukere å velge og endre flisstørrelser**. Med denne funksjonen kan du også justere flisstørrelsen etter at den er opprettet, direkte i arbeidsområdet.   
 - Hvis du vil legge til en kobling i et arbeidsområde, filtrerer du først filteret på siden slik at den viser dataene du er interessert i. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Kobling**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for koblingen. Du kan også angi en etikett for delen der denne koblingen kan plasseres. Hvis delen ikke finnes, opprettes det en ny del.
 
 > [!NOTE]
@@ -168,6 +169,9 @@ Når du har lagt til listen, flisen eller koblingen i et arbeidsområde, kan du 
 ### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Legge til et sammendrag fra et arbeidsområde til et instrumentbord
 
 Noen arbeidsområder inneholder fliser med antall (det vil si fliser som inneholder tall), og du vil kanskje at disse flisene skal vises på instrumentbordet også. I et arbeidsområde høyreklikker du en flis for antall, velger **Tilpass**, og deretter velger du **Fest til instrumentbord** i egenskapsvinduet til flisen. Neste gang du åpner og oppdaterer instrumentbordet, vil antallet vises under arbeidsområdets navigasjonsflis. Du kan velge det antallet for å gå direkte til dataene det representerer.
+
+### <a name="changing-the-size-of-a-tile"></a>Endre størrelsen på en flis
+Fra og med versjon 10.0.26 kan brukere bruke funksjonen **Tillat brukere å velge og endre flisstørrelser** til å endre størrelsen på enhver ikke-KPI-flis. Høyreklikk en flis i et arbeidsområde, og velg deretter **Tilpass**. Velg ønsket størrelse blant alternativene for **Flisstørrelse** i egenskapsvinduet for flisen. Flisstørrelsen justeres umiddelbart. Hvis funksjonen **(Forhåndsversjon) Støtte for lagrede visninger for arbeidsområder** er aktivert, kan du lagre denne tilpassingen i en visning for arbeidsområde.  
 
 ### <a name="personalizing-your-dashboard"></a>Tilpasse instrumentbordet
 

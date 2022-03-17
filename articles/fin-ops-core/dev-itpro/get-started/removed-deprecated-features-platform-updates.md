@@ -1,8 +1,8 @@
 ---
 title: Fjernede eller avskrevne Platform-funksjoner
-description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
+description: Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
 author: sericks007
-ms.date: 12/16/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,25 +12,25 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4ac68cfdd8f8b2c65993fbd91587e52cce56a437
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927485"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384726"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
+Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
 
 - En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.
 - En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
 
 ## <a name="feature-removal-effective-october-2021"></a>Fjerning av funksjoner gjelder fra oktober 2021
 
@@ -67,7 +67,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet  |
 
-## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.23 av Finance and Operations-apper
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.23 av økonomi- og driftsapper
 
 ### <a name="ondbsynchronize-event"></a>OnDBSynchronize-hendelse
 
@@ -90,7 +90,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet. Planlagt fjerningsdato er april 2023. |
 
-## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.21 av Finance and Operations-apper
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.21 av økonomi- og driftsapper
 
 ### <a name="skype-for-business-online-support"></a>Støtte for Skype for Business Online
 
@@ -150,7 +150,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Status**                         | Dette funksjonen er fjernet. |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.17 av Finance and Operations-apper
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.17 av økonomi- og driftsapper
 
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
@@ -177,24 +177,25 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Metadataartefaktene som er knyttet til Dynamics AX 2012 Enterprise Portal (EP) er avskrevet fordi EP aldri ble støttet i Finance and Operations-appene. |
+| **Årsak til avskrivning/fjerning** | Metadataartefaktene som er knyttet til Dynamics AX 2012 Enterprise Portal (EP) er avskrevet fordi EP aldri ble støttet i økonomi- og driftsappene. |
 | **Erstattet med en annen funksjon?**   | Nei |
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: All EP-kode er planlagt å fjernes i oktober 2021-versjonen. |
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.15 av Finance and Operations-apper
+## <a name="deprecation-effective-december-2020"></a>Avskriving gjelder fra desember 2020
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-støtte for Dynamics 365 er avskrevet
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter. |
+| **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter og Dynamics Lifecycle Services (LCS) avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter og LCS som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter og LCS. |
 | **Erstattet med en annen funksjon?**   | Vi anbefaler at kundene går over til Microsoft Edge.|
-| **Berørte produktområder**         | Alle Dynamics 365-produkter |
+| **Berørte produktområder**         | Alle Dynamics 365-produkter og LCS |
 | **Distribusjonsalternativ**              | Alle|
 | **Status**                         | Avskrevet: Internet Explorer 11 støttes ikke etter august 2021.|
 
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.15 av økonomi- og driftsapper
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-tillegg for å bruke hurtigreparasjoner for metadata
 
@@ -207,7 +208,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Status**                         | Med versjon 10.0.15 er ikke tillegget lenger inkludert i Visual Studio-verktøyene. |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.14 av Finance and Operations-apper
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.14 av økonomi- og driftsapper
 
 ### <a name="online-users-page"></a>Siden Påloggede brukere 
 
@@ -220,7 +221,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Status**                         | Innen oktober 2021 blir dette skjemaet fjernet.   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.13 av Finance and Operations-apper
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.13 av økonomi- og driftsapper
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Egendefinert kode definert i SSRS-rapportegenskaper 
@@ -264,19 +265,19 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Status**                         | I versjon 10.0.13 / Platform Update 37 er funksjonen for lagrede visninger generelt tilgjengelig, og kunder kan eventuelt aktivere denne funksjonen. Funksjonen for lagrede visninger blir obligatorisk i oktober 2021-versjonen. |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.12 av økonomi- og driftsapper
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Skjemautvidelser for rutenett- eller gruppekontroll som inneholder ugyldige feltreferanser
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Egenskapen datagruppe i rutenett- eller gruppekontroller brukes til automatisk å vise alle felt i en feltgruppe. Et rutenett eller en gruppekontroll som er lagt til via en utvidelse, kan inneholde felt som ikke lenger er definert i feltgruppen, eller de kan mangle felt som er definert i feltgruppen. Dette kan føre til inkonsekvent virkemåte ved kjøring. Plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper kategoriserer nå dette problemet som en kompilerings-*advarsel*. Du kan løse dette problemet ved å åpne skjemautvidelsen og lagre den.
+| **Årsak til avskrivning/fjerning** | Egenskapen datagruppe i rutenett- eller gruppekontroller brukes til automatisk å vise alle felt i en feltgruppe. Et rutenett eller en gruppekontroll som er lagt til via en utvidelse, kan inneholde felt som ikke lenger er definert i feltgruppen, eller de kan mangle felt som er definert i feltgruppen. Dette kan føre til inkonsekvent virkemåte ved kjøring. Plattformoppdateringer for versjon 10.0.12 av økonomi- og driftsapper kategoriserer nå dette problemet som en kompilerings *advarsel*. Du kan løse dette problemet ved å åpne skjemautvidelsen og lagre den.
 | **Erstattet med en annen funksjon?**   | Denne kompilatoradvarselen vil bli erstattet med en kompilatorfeil i en fremtidig oppdatering. |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | En kompilatoradvarsel er introdusert i plattformoppdateringer for versjon 10.0.12 av Finance and Operations-apper. |
+| **Status**                         | En kompilatoradvarsel er innført i plattformoppdateringer for versjon 10.0.12 av økonomi- og driftsapper. |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.11 av økonomi- og driftsapper
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Eksplisitte hvitelister for selvbetjeningsmiljøer
 
@@ -302,11 +303,11 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Feltgrupper i definisjoner av tabellmetadata kan inneholde feltreferanser som ikke er gyldige. Hvis disse feltgruppene er distribuert, kan dette føre til kjøretidsfeil for kjøring i Financial Reporting og Microsoft SQL Server Reporting Services (SSRS). Platform Update 23 innførte en kompilator-*advarsel* som muliggjorde håndtering av dette sikkerhetsproblemet. Plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper kategoriserer dette problemet som en kompilerings *feil*.<p>Følg fremgangsmåten nedenfor for å løse problemet.</p><ol><li>Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.</li><li>Kompiler på nytt.</li><li>Kontroller at eventuelle feil er tatt hånd om.</li></ol> |
+| **Årsak til avskrivning/fjerning** | Feltgrupper i definisjoner av tabellmetadata kan inneholde feltreferanser som ikke er gyldige. Hvis disse feltgruppene er distribuert, kan dette føre til kjøretidsfeil for kjøring i Financial Reporting og Microsoft SQL Server Reporting Services (SSRS). Platform Update 23 innførte en kompilator-*advarsel* som muliggjorde håndtering av dette sikkerhetsproblemet. Plattformoppdateringer for versjon 10.0.11 av økonomi- og driftsapper kategoriserer dette problemet som en kompilerings *feil*.<p>Følg fremgangsmåten nedenfor for å løse problemet.</p><ol><li>Fjern den ugyldige feltreferansen fra definisjonen for tabellfeltgruppen.</li><li>Kompiler på nytt.</li><li>Kontroller at eventuelle feil er tatt hånd om.</li></ol> |
 | **Erstattet med en annen funksjon?**   | Denne kompileringsfeilen erstatter kompileringsadvarselen permanent.  |
 | **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Kompilatoradvarselen er en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av Finance and Operations-apper. |
+| **Status**                         | Avskrevet: Kompilatoradvarselen er en kompilatorfeil i plattformoppdateringer for versjon 10.0.11 av økonomi- og driftsapper. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>ISV-lisenser opprettet ved hjelp av SHA1-nummeralgoritmen
 

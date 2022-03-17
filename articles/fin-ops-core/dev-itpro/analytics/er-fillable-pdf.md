@@ -2,7 +2,7 @@
 title: Utforme ER-konfigurasjoner for å fylle ut PDF-maler
 description: Dette emnet gir informasjon om hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en PDF-mal.
 author: NickSelin
-ms.date: 03/24/2021
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 81da1b4f9ca5d2884122266312b2f7cb298572eef3a5c6151daba2f9b17326f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758294"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367862"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforme ER-konfigurasjoner for å fylle ut PDF-maler
 
@@ -294,6 +294,20 @@ Illustrasjonen nedenfor viser et eksempel på den første siden i rapporten som 
 Illustrasjonen nedenfor viser et eksempel på en annen side i rapporten som genereres.
 
 ![Annen side i den genererte rapporten.](media/rcs-ger-filloutpdf-generatedreport2.png)
+
+## <a name="limitations"></a>Begrensninger
+
+Navnene på feltene som kan fylles ut, skal være unike i PDF-skjemaet du har tenkt å bruke som en rapportmal. For hvert slikt felt opprettes et individuelt formatelement med det tilsvarende navnet i det redigerbare ER-formatet når et PDF-skjema importeres. Hvis et PDF-skjema inneholder flere felter med samme navn, opprettes ett formatelement for feltene som ikke kan fylles ut enkeltvis ved kjøretid.
+
+## <a name="frequently-asked-questions"></a>Vanlige spørsmål
+
+### <a name="when-i-run-the-er-format-to-generate-a-report-in-pdf-format-why-do-i-get-the-following-errors--cannot-handle-iref-streams-the-current-implementation-of-pdfsharp-cannot-handle-this-pdf-feature-introduced-with-acrobat-6-and-a-pdf-name-must-start-with-a-slash-"></a>Hvorfor får jeg følgende feil når jeg kjører ER-formatet for å generere en rapport i PDF-format: **Kan ikke håndtere iref-strømmer. Den gjeldende implementeringen av PDFSharp kan ikke håndtere denne PDF-funksjonen som ble innført med Acrobat 6.** og **Et PDF-navn må begynne med en skråstrek (/).**
+
+ER-rammeverket bruker versjon 1.5 av PDFSharp-biblioteket til å generere disse PDF-rapportene. Noen funksjoner i PDF 1.5 (Adobe Reader 6.0) er ennå ikke implementert i dette biblioteket. PDFSharp kan derfor ikke åpne enkelte filer ennå som er merket med **for PDF 1.5 eller høyere**, og du kan få disse feilene. Bruk en av følgende løsninger til å løse problemet:
+
+-   Når du bruker din egen PDF-mal: Nedgrader malen til en tidligere Adobe-versjon, og begynn å bruke en ny mal i ER-formatet.
+-   Når du bruker en mal for ER-format som ble delt med deg av en annen konfigurasjonsleverandør som en del av en ER-løsning: Kontakt eieren av denne ER-løsningen og gi en beskrivelse av problemet.
+-   Når du bruker ISV-løsningen som inneholder en tidligere versjon av PDFSharp-biblioteket: Kontakt eieren av løsningen, og foreslå en oppgradering til den nyere PDFSharp-versjonen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

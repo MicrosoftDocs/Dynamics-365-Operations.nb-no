@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3030bc7d2501e2162758c94c0dc1a073655c9c0f
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182524"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "8331748"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Sentraliserte betalinger for Leverandører
 
 [!include [banner](../includes/banner.md)]
 
 Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Dette emnet inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
-
-Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av en juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. I tillegg sparer organisasjonen tid, fordi betalingsprosessen er strømlinjeformet.
 
 Det finnes mange juridiske enheter for operasjoner i en sentralisert betalingsorganisasjon, og hver juridiske enhet administrerer sine egne leverandørfakturaer. Betalinger for alle de operative juridiske enhetene genereres fra en juridisk enhet, som kalles den juridiske enheten for betalingen. Under utligningsprosessen genereres de aktuelle "skal betales til"- og "skal betales fra"-transaksjonene. Du kan angi hvilken juridisk enhet i organisasjonen som skal motta de realiserte gevinst- eller tapstransaksjonene og hvordan kontantrabattransaksjoner i forbindelse med betalinger mellom firmaer skal håndteres. På linjen for sentralisert betaling settes **Kontotype** til Leverandør. **Motkontotype** settes til Bank eller Finans. Bankkontoen må være i gjeldende firma. 
 

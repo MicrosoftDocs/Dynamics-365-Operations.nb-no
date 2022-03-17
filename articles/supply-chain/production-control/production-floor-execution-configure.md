@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103394"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384753"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -75,9 +75,41 @@ Ved hjelp av denne funksjonen kan du legge til et søkefelt i jobblisten. Arbeid
 
 ### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivere rapportering på koprodukter og biprodukter
 
-Denne funksjonen gjør det enkelt for ansatte å bruke grensesnittet for produksjonsgulvutførelse til å rapportere fremdrift for partiordrer. Denne rapporten inkluderer rapportering på koprodukter og biprodukter. For å kunne bruke denne funksjonen aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Denne funksjonen gjør det enkelt for ansatte å bruke grensesnittet for produksjonsgulvutførelse til å rapportere fremdrift for partiordrer. Denne rapporten inkluderer rapportering på koprodukter og biprodukter. For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Rapport om ko- og biprodukter fra grensesnittet for produksjonsutførelse*
+
+### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Aktivere visningen av fullstendige serie-, parti- og skiltnumre
+
+Denne funksjonen gir en forbedret erfaring for visning av lister over serie-, parti- og skiltnumre i grensesnittet for produksjonsutførelse. Visningen endres fra en kortvisning som viser et begrenset antall tegn, til en listevisning som gir nok plass til å vise de fullstendige verdiene. Listen gir også muligheten til å søke etter bestemte numre.
+
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Vis fullstendige serie-, parti- og skiltnumre i grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### <a name="enable-registering-of-material-consumption"></a>Aktiver registrering av materialforbruk
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Noen produsenter, særlig de i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeidere kan for eksempel bruke en vekt til å veie mengden material som forbrukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere partinumrene som ble brukt til å produsere hvert produkt.
+
+Det finnes to versjoner av denne funksjonen. Den ene støtter bare varer som *ikke er* aktivert slik at den bruker avanserte lagerprosesser (WMS). Den andre støtter varer som *er* aktivert slik at den bruker WMS. Hvis du vil bruke denne funksjonaliteten, aktiverer du den ene av eller begge følgende funksjoner i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen), avhengig av om du har varer som er aktivert for WMS:
+
+- *(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke-lager)*
+- *(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)*
+
+> [!IMPORTANT]
+> Du kan velge å bruke bare ikke-WMS-funksjonen. Hvis du imidlertid bruker WMS, må du aktivere begge funksjonene.
+
+### <a name="enable-reporting-on-catch-weight-items"></a>Aktiver rapportering for faktisk vekt-varer
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Arbeidere kan bruke grensesnittet for produksjonsutførelse til å rapportere fremdrift for partiordrer for faktisk vekt-varer. Partiordrer opprettes fra formler, som kan defineres slik at de har faktisk vekt-varer som formelvarer, koprodukter og biprodukter. En formel kan også defineres slik at den har formellinjer for ingredienser som er definert for faktisk vekt. Faktisk vekt-varer bruker to måleenheter til å spore lager: faktisk vekt-antall og lagerantall. I næringsmiddelindustrien kan for eksempel kjøtt på boks defineres som en faktisk vekt-vare, der faktisk vekt-antallet brukes til å spore antall bokser og lagerantallet brukes til å spore vekten på boksene.
+
+For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *(Forhåndsversjon) Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse*
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeide med grensesnittet for produksjonsutførelse
 

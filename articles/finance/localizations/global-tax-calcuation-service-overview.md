@@ -2,7 +2,7 @@
 title: Oversikt over avgiftsberegning
 description: Dette emnet forklarer det helhetlige omfanget og funksjonene i avgiftsberegning.
 author: wangchen
-ms.date: 11/17/2021
+ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1dff1767b8e19215a2b27f87c45325e6abd1266e
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a02767e4a90fa6b7414c796d66e758afe0501cf5
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105443"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388501"
 ---
 # <a name="tax-calculation-overview"></a>Oversikt over avgiftsberegning
 
@@ -58,6 +58,7 @@ Avgiftsberegning distribueres i følgende Azure-geografier. Flere Azure-geografi
 - Canada
 - Europa
 - Japan
+- Sveits
 - Storbritannia
 - USA
 
@@ -77,6 +78,7 @@ Vi anbefaler at du importerer og konfigurerer avgiftsberegningskonfigurasjonen m
 | 10.0.23         | Konfigurasjon 40.50.221 for avgiftsberegning |
 | 10.0.24         | Konfigurasjon 40.50.225 for avgiftsberegning |
 | 10.0.25         | Konfigurasjon 40.50.225 for avgiftsberegning |
+| 10.0.26         | Konfigurasjon 40.54.234 for avgiftsberegning |
 
 
 ## <a name="data-flow"></a>Dataflyt
@@ -136,6 +138,11 @@ Følgende transaksjoner støttes i versjon 10.0.23:
 
 - Fritekstfaktura
 
+Følgende transaksjoner støttes i versjon 10.0.26: 
+
+- Økonomijournaler
+- Leverandørfakturajournal
+
 ## <a name="supported-countriesregions"></a>Støttede land/områder
 
 Avgiftsberegning kan aktiveres etter juridisk enhet. 
@@ -187,6 +194,12 @@ Følgende land/områder for primæradressen til en juridisk enhet støttes i ver
 Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.24:
 
 - Mexico
+
+Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.26:
+
+- Kina
+- Tsjekkia
+- Spania
 
 ## <a name="related-resources"></a>Relaterte ressurser
 

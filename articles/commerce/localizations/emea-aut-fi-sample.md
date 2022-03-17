@@ -2,23 +2,24 @@
 title: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
 description: Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Østerrike i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: d720bffb98965bdc0276660d2a2e50d2bf155e74
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: b41ff8a112f801cd9bf5ebad3aed588ccb40e1f8
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077171"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388369"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Østerrike i Microsoft Dynamics 365 Commerce.
 
@@ -301,14 +302,28 @@ Følg denne fremgangsmåten for å definere et distribusjonsmiljø slik at du ka
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Installer utvidelser for maskinvarestasjon:
+1. Installer utvidelser for regnskapskobling:
 
-    1. I mappen **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** finner du installeringsprogrammet **HarwareStation.EFR.Installer**.
-    1. Start installeringsprogrammet for utvidelsen fra kommandolinjen.
+    Du kan installere utvidelser for regnskapskobling på [maskinvarestasjonen](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) eller i [POS-kassen](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Installer utvidelser for maskinvarestasjon:
+
+        1. I mappen **Efr\\HardwareStation\\HardwareStation.EFR.Installer\\bin\\Debug\\net461** finner du installeringsprogrammet **HarwareStation.EFR.Installer**.
+        1. Start installeringsprogrammet for utvidelsen fra kommandolinjen ved å kjøre følgende kommando.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Installer POS-utvidelser:
+
+        1. Åpne eksempelløsningen for regnskapskobling for POS i **Dynamics365Commerce.Solutions\\FiscalIntegration\\PosFiscalConnectorSample\\Contoso.PosFiscalConnectorSample.sln**, og bygg den.
+        1. Finn installasjonsprogrammet **Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** i mappen **PosFiscalConnectorSample\\StoreCommerce.Installer\\bin\\Debug\\net461**.
+        1. Start installeringsprogrammet for utvidelsen fra kommandolinjen ved å kjøre følgende kommando.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Produksjonsmiljø
 
@@ -321,7 +336,7 @@ Eksemplet på integrering av regnskapsregistreringstjenesten for Østerrike er b
 > [!WARNING]
 > På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på regnskapsintegrering for Østerrike (eldre)](emea-aut-fi-sample-sdk.md). Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
 
-### <a name="commerce-runtime-extension-design"></a>Commerce Runtime-utvidelsesutforming
+### <a name="commerce-runtime-extension-design"></a>Commerce Runtime-utvidelsesutforming 
 
 Formålet med filtypen som er en regnskapsdokumentleverandør, er å generere servicespesifikke dokumenter og håndtere svar fra regnskapsregistreringstjenesten.
 
@@ -352,7 +367,7 @@ Formålet med disse filene er å aktivere innstillinger for dokumentleverandøre
 
 ### <a name="hardware-station-extension-design"></a>Utvidelsesutforming for maskinvarestasjon
 
-Formålet med utvidelsen som er en regnskapskobling, er å kommunisere med regnskapsregistreringstjenesten. Utvidelsen for maskinvarestasjon bruker HTTP-protokollen til å sende dokumenter som CRT-utvidelsen genererer til regnskapsregistreringstjenesten. Den håndterer også svarene som mottas fra regnskapsregistreringstjenesten.
+Formålet med regnskapskoblingsutvidelsen er å kommunisere med regnskapsregistreringstjenesten. Utvidelsen for maskinvarestasjon bruker protokollene HTTP og HTTPS til å sende dokumenter som CRT-utvidelsen genererer til regnskapsregistreringstjenesten. Den håndterer også svarene som mottas fra regnskapsregistreringstjenesten.
 
 #### <a name="request-handler"></a>Forespørselsbehandler
 
@@ -369,5 +384,28 @@ Regnskapskoblingen støtter følgende forespørsler:
 #### <a name="configuration"></a>Konfigurasjon
 
 Konfigurasjonsfilen for regnskapskobling ligger under **src\\FiscalIntegration\\Efr\\Configurations\\Connectors\\ConnectorEFRSample.xml** i repositoriet for [løsningene for Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Formålet med filen er å aktivere innstillinger for regnskapskoblingen som skal konfigureres fra Commerce Headquarters. Filformatet samkjøres med kravene for konfigurasjon av regnskapsintegrering.
+
+### <a name="pos-fiscal-connector-extension-design"></a>Utforming av regnskapskoblingsutvidelsen for POS
+
+Formålet med regnskapskoblingsutvidelsen for POS, er å kommunisere med regnskapsregistreringstjenesten fra POS. Den bruker HTTPS-protokollen til kommunikasjon.
+
+#### <a name="fiscal-connector-factory"></a>Regnskapskoblingsfabrikk
+
+Regnskapskoblingsfabrikken tilordner koblingsnavnet til implementeringen av regnskapskoblingen og er i filen **Pos.Extension\\Connectors\\FiscalConnectorFactory.ts**. Koblingsnavnet må samsvare med navnet på regnskapskoblingen som er angitt i Commerce Headquarters.
+
+#### <a name="efr-fiscal-connector"></a>Regnskapskobling for EFR
+
+Regnskapskoblingen for EFR er i filen **Pos.Extension\\Connectors\\Efr\\EfrFiscalConnector.ts**. Det implementerer grensesnittet for **IFiscalConnector** som støtter følgende forespørsler:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – Denne forespørselen sender dokumenter til regnskapsregistreringstjenesten og returnerer et svar fra den.
+- **FiscalRegisterIsReadyClientRequest** – Denne forespørselen brukes for en tilstandskontroll av regnskapsregistreringstjenesten.
+- **FiscalRegisterInitializeClientRequest** – Denne forespørselen brukes til å initialisere regnskapsregistreringstjenesten.
+
+#### <a name="configuration"></a>Konfigurasjon
+
+Konfigurasjonsfilen ligger i mappen **src\\FiscalIntegration\\Efr\\Configurations\\Connectors** i repositoriet [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). Formålet med filen er å aktivere innstillinger for regnskapskoblingen som skal konfigureres fra Commerce Headquarters. Filformatet samkjøres med kravene for konfigurasjon av regnskapsintegrering. Følgende innstillinger legges til:
+
+- **Endrepunktadresse** – URL-adressen til regnskapsregistreringstjenesten.
+- **Tidsavbrudd** – Tiden, i millisekunder, som koblingen vil vente på svar fra regnskapsregistreringstjenesten.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

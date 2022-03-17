@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
+ms.openlocfilehash: f10ddf113f59da4800a97a48300ab1310bfb42dd
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325974"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358187"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Regnskapsdistribusjoner og journaloppføringer for leverandørfakturaer
 
@@ -31,7 +31,7 @@ Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede 
 ## <a name="accounting-distributions"></a>Regnskapsdistribusjoner 
 
 Du kan bruke følgende knapper på Leverandørfaktura-siden til å vise, og eventuelt endre, regnskapsdistribusjonene for hvert beløp i leverandørfakturaen.
--   **Fordel beløp** – Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer, for eksempel avgifter eller gebyrer. Du kan også vise og endre regnskapsdistribusjonene for den underordnede linjen direkte fra Mva-transaksjoner- eller Tilleggstransaksjoner-siden.
+-   **Fordel beløp** – Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer, for eksempel avgifter eller gebyrer. Du kan også vise og endre regnskapsdistribusjonene for den underordnede linjen direkte fra siden **Mva-transaksjoner** eller **Tilleggstransaksjoner**.
     -   Endre topptekstbeløp for topptekstbeløp, for eksempel tillegg eller avrundingsbeløp for valuta.
     -   Endre linjebeløp for leverandørfaktur.
 -   **Vis distribusjoner** – Vis regnskapsdistribusjonene for alle linjer i dokumentet. Du kan ikke endre regnskapsdistribusjonene fra denne visningen.
@@ -62,7 +62,7 @@ Når du registrerer en leverandørfaktura, fordeles beløpene på følgende måt
 <td>Lagerført produkt</td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen.</li>
-<li>**Hovedkonto**-feltet når Innkjøpsutgift for produktet velges på **Postering**-siden.</li>
+<li><strong>Hovedkonto</strong>-feltet når Innkjøpsutgift for produktet velges på <strong>Postering</strong>-siden.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
@@ -73,35 +73,35 @@ Når du registrerer en leverandørfaktura, fordeles beløpene på følgende måt
 <td>Innkjøpskategori eller et produkt som ikke er lagerført</td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen, hvis leverandørfakturalinjen refererer til en bestillingslinje.</li>
-<li>**Hovedkonto**-feltet når Innkjøpsutgift for utgiften velges på **Postering**-siden.</li>
+<li><strong>Hovedkonto</strong>-feltet når Innkjøpsutgift for utgiften velges på <strong>Postering</strong>-siden.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
 <li>Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</li>
 <li>Bruk standard finansdimensjonsverdier for leverandørfakturaen.</li>
 <li>Bruk finansdimensjonsverdiene fra leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Anleggsmiddel</td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen, hvis leverandørfakturalinjen refererer til en bestillingslinje.</li>
-<li>Hvis **Anskaffelse** velges i **Transaksjonstype**-feltet på siden **Leverandørfaktura**, **Hovedkonto**-feltet når **Anskaffelse** velges på siden **Posteringsprofiler for anleggsmidler**.</li>
-<li>Hvis **Anskaffelsesjustering** velges i **Transaksjonstype**-feltet, **Hovedkonto**-feltet når **Anskaffelsesjustering** velges på siden **Posteringsprofiler for anleggsmidler**.</li>
+<li>Hvis <strong>Anskaffelse</strong> velges i <strong>Transaksjonstype</strong>-feltet på siden <strong>Leverandørfaktura</strong>, <strong>Hovedkonto</strong>-feltet når <strong>Anskaffelse</strong> velges på siden <strong>Posteringsprofiler for anleggsmidler</strong>.</li>
+<li>Hvis <strong>Anskaffelsesjustering</strong> velges i <strong>Transaksjonstype</strong>-feltet, <strong>Hovedkonto</strong>-feltet når <strong>Anskaffelsesjustering</strong> velges på siden <strong>Posteringsprofiler for anleggsmidler</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Bruk kontodistribusjonen for bestillingslinjen hvis fakturalinjereferansen er en bestillingslinje.</li>
 <li>Bruk finansdimensjonsverdiene fra leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Prosjekt definert på leverandørfakturalinjen</td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen, hvis fakturalinjen refererer til en bestillingslinje.</li>
-<li>Hvis **Saldo** velges i feltet **Poster kostnader – vare** på siden **Prosjektgrupper**, **Hovedkonto**-feltet når **Kostnad** velges på siden **Finansposteringsoppsett**.</li>
-<li>Hvis **Resultat** velges i feltet **Poster kostnader – vare** på siden **Prosjektgrupper**, **Hovedkonto**-feltet når **Kostnad – vare** velges på siden **Finansposteringsoppsett**.</li>
+<li>Hvis <strong>Saldo</strong> velges i feltet <strong>Poster kostnader – vare</strong> på siden <strong>Prosjektgrupper</strong>, <strong>Hovedkonto</strong>-feltet når <strong>Kostnad</strong> velges på siden <strong>Finansposteringsoppsett</strong>.</li>
+<li>Hvis <strong>Resultat</strong> velges i feltet <strong>Poster kostnader – vare</strong> på siden <strong>Prosjektgrupper</strong>, <strong>Hovedkonto</strong>-feltet når <strong>Kostnad – vare</strong> velges på siden <strong>Finansposteringsoppsett</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
@@ -111,18 +111,18 @@ Når du registrerer en leverandørfaktura, fordeles beløpene på følgende måt
 <td>Linjerabatt</td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen, hvis fakturalinjen refererer til en bestillingslinje.</li>
-<li>**Hovedkonto**-feltet når **Rabatt** velges på **Postering**-siden.</li>
+<li><strong>Hovedkonto</strong>-feltet når <strong>Rabatt</strong> velges på <strong>Postering</strong>-siden.</li>
 <li>Hvis en hovedkonto for en rabatt ikke er definert i posteringsprofilen, regnskapsdistribusjonen for den utvidede prisen på bestillingslinjen.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke regnskapsdistribusjonen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra regnskapsdistribusjonene for den utvidede prisen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene for leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Innkjøpstillegg, som er angitt i fanen **Pris og rabatt** på bestillingslinjen</td>
+<td>Innkjøpstillegg, som er angitt i fanen <strong>Pris og rabatt</strong> på bestillingslinjen</td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen, hvis fakturalinjen refererer til en bestillingslinje.</li>
 <li>Regnskapsdistribusjonen for den utvidede prisen på bestillingslinjen.</li>
@@ -136,21 +136,21 @@ Når du registrerer en leverandørfaktura, fordeles beløpene på følgende måt
 <td>Linjetillegg</td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen, hvis fakturalinjen refererer til en bestillingslinje.</li>
-<li>Hvis **finans** kontoen velges i **Debettype**-feltet på **Tilleggskode**-siden, **Debetkonto**-feltet på **Tilleggskode**-siden.</li>
-<li>Hvis **Vare** er valgt i **Debettype**-feltet på **Tilleggskode**-siden, regnskapsdistribusjonen for den utvidede prisen på bestillingslinjen.</li>
-<li>Hvis **Kunde/leverandør** velges i **Debettype**-feltet på **Tilleggskode**-siden, **Kreditkonto**-feltet på **Tilleggskode**-siden.</li>
+<li>Hvis <strong>Finanskonto</strong> velges i <strong>Debettype</strong>-feltet på <strong>Tilleggskode</strong>-siden, <strong>Debetkonto</strong>-feltet på <strong>Tilleggskode</strong>-siden.</li>
+<li>Hvis <strong>Vare</strong> er valgt i <strong>Debettype</strong>-feltet på <strong>Tilleggskode</strong>-siden, regnskapsdistribusjonen for den utvidede prisen på bestillingslinjen.</li>
+<li>Hvis <strong>Kunde/leverandør</strong> velges i <strong>Debettype</strong>-feltet på <strong>Tilleggskode</strong>-siden, <strong>Kreditkonto</strong>-feltet på <strong>Tilleggskode</strong>-siden.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra regnskapsdistribusjonene for den utvidede prisen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Avgift med følgende betingelse:
 <ul>
-<li>Alternativet Bruk amerikanske avgiftsregler er valgt på siden **Parametere for økonomimodul**.</li>
+<li>Alternativet <strong>Bruk amerikanske avgiftsregler</strong> er valgt på siden <strong>Parametere for økonomimodul</strong>.</li>
 </ul></td>
 <td><ol>
 <li>Regnskapsdistribusjonen for bestillingslinjen, hvis fakturalinjen refererer til en bestillingslinje.</li>
@@ -165,61 +165,61 @@ Når du registrerer en leverandørfaktura, fordeles beløpene på følgende måt
 <tr class="odd">
 <td>Avgift med følgende betingelser:
 <ul>
-<li>Alternativet Bruk amerikanske avgiftsregler er ikke valgt på siden **Parametere for økonomimodul**.</li>
-<li>**Use tax**-feltet for mva-gruppen er ikke avmerket på siden **Mva-grupper**.</li>
+<li>Alternativet <strong>Bruk amerikanske avgiftsregler</strong> er ikke valgt på siden <strong>Parametere for økonomimodul</strong>.</li>
+<li><strong>Use tax</strong>-feltet for mva-gruppen er ikke avmerket på siden <strong>Mva-grupper</strong>.</li>
 </ul></td>
 <td><ol>
-<li>Hvis avgiftsbeløpet er fradragsberettiget, feltet **Innkommende merverdiavgift** på siden **Finansposteringsgrupper**.</li>
+<li>Hvis avgiftsbeløpet er fradragsberettiget, feltet <strong>Innkommende merverdiavgift</strong> på siden <strong>Finansposteringsgrupper</strong>.</li>
 <li>Hvis avgiftsbeløpet ikke er fradragsberettiget, den utvidede prisen eller regnskapsdistribusjonen for tillegget.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra den utvidede prisen eller regnskapsdistribusjonene for avgiften på bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Avgift med følgende betingelser:
 <ul>
-<li>Alternativet Bruk amerikanske avgiftsregler er ikke valgt på siden **Parametere for økonomimodul**.</li>
-<li>**Use tax**-feltet for mva-gruppen er valgt på siden **Mva-grupper**.</li>
+<li>Alternativet Bruk amerikanske avgiftsregler er ikke valgt på siden <strong>Parametere for økonomimodul</strong>.</li>
+<li><strong>Use tax</strong>-feltet for mva-gruppen er valgt på siden <strong>Mva-grupper</strong>.</li>
 </ul></td>
 <td><ol>
-<li>Hvis avgiftsbeløpet er fradragsberettiget, feltet **Innkommende merverdiavgift** på siden **Finansposteringsgrupper**.</li>
-<li>Hvis avgiftsbeløpet ikke er fradragsberettiget, feltet **Use tax-utgift** på siden **Finansposteringsgrupper**.</li>
+<li>Hvis avgiftsbeløpet er fradragsberettiget, feltet <strong>Innkommende merverdiavgift</strong> på siden <strong>Finansposteringsgrupper</strong>.</li>
+<li>Hvis avgiftsbeløpet ikke er fradragsberettiget, feltet <strong>Use tax-utgift</strong> på siden <strong>Finansposteringsgrupper</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra den utvidede prisen eller regnskapsdistribusjonene for avgiften på bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Hodegebyr</td>
 <td><ol>
-<li>Hvis **finans** kontoen velges i **Debettype**-feltet på **Tilleggskode**-siden, **Debetkonto**-feltet på **Tilleggskode**-siden.</li>
-<li>Hvis **Kunde/leverandør** velges i **Debettype**-feltet på **Tilleggskode**-siden, **Kreditkonto**-feltet på **Tilleggskode**-siden.</li>
+<li>Hvis <strong>Finans</strong>-konto velges i <strong>Debettype</strong>-feltet på <strong>Tilleggskode</strong>-siden, <strong>Debetkonto</strong>-feltet på <strong>Tilleggskode</strong>-siden.</li>
+<li>Hvis <strong>Kunde/leverandør</strong> velges i <strong>Debettype</strong>-feltet på <strong>Tilleggskode</strong>-siden, <strong>Kreditkonto</strong>-feltet på <strong>Tilleggskode</strong>-siden.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
 <li>Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</li>
 <li>Bruk standardmalverdier for finansdimensjon fra leverandørfakturhodet.</li>
 <li>Bruk finansdimensjonsverdiene fra leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Hoderabatt</td>
 <td><ol>
-<li>**Hovedkonto**-feltet for **Posteringstype for leverandørfakturarabatt** på siden **Kontoer for automatiske transaksjoner**.</li>
+<li><strong>Hovedkonto</strong>-feltet for <strong>Posteringstype for leverandørfakturarabatt</strong> på siden <strong>Kontoer for automatiske transaksjoner</strong>.</li>
 </ol></td>
 <td><ol>
 <li>Hvis fakturalinjen refererer til en bestillingslinje, kan du bruke kontodistribusjonen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra regnskapsdistribusjonene for den utvidede prisen for bestillingslinjen.</li>
 <li>Bruk finansdimensjonsverdiene fra leverandørfakturalinjen.</li>
-<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på **Kontoplan**-siden.</li>
+<li>Bruk standard finansdimensjonsverdier fra hovedkontoen på <strong>Kontoplan</strong>-siden.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -228,7 +228,7 @@ Når du registrerer en leverandørfaktura, fordeles beløpene på følgende måt
 
 ## <a name="distributing-taxes"></a>Distribusjonsavgifter
 
-Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet. Hvis du vil beregne merverdiavgift, må du fullføre en av de følgende oppgavene på Leverandørfaktura-siden:
+Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet. Hvis du vil beregne merverdiavgift, må du fullføre en av de følgende oppgavene på siden **Leverandørfaktura**:
 -   Vis fakturatotalen.
 -   Vis merverdiavgiften.
 -   Vis underfinansjournalen.

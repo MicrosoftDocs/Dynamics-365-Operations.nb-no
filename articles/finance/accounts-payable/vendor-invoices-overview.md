@@ -2,13 +2,13 @@
 title: Oversikt over leverandørfakturaer
 description: Dette emnet inneholder generell informasjon om leverandørfakturaer.
 author: abruer
-ms.date: 06/03/2021
+ms.date: 02/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "13971"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22535f4bc320bde096214e2044cfeb00d4e9fbbc
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985343"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358447"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
@@ -51,10 +51,10 @@ Følgende diskusjon inneholder mer informasjon om hvordan du bruker siden **Åpn
 
 Når du åpner en leverandørfaktura fra en tilknyttet bestilling, oppretter systemet fakturalinjer fra bestillingen. Som standard henter systemet antallet fra produktkvitteringen. Du kan imidlertid bruke et av følgende standardvalg:
 
-- **Motta nå-antall** – Bruk dette alternativet for delvise leveringer. Systemet angir standardverdien i **Antall** fra antallet som er angitt i **Motta nå**-feltet på innkjøpsordren.
-- **Bestilt antall** – Bruk dette alternativet for komplette forsendelser. Systemet angir standardverdien i **Antall** fra antallet som er angitt i **Bestilt**-feltet på innkjøpsordren.
+- **Motta nå-antall** – Bruk dette alternativet for delvise leveringer. Standardverdien i **Antall**-feltet angis til antallet som er angitt i **Motta nå**-feltet på innkjøpsordren.
+- **Bestilt antall** – Bruk dette alternativet for komplette forsendelser. Standardverdien i **Antall**-feltet angis til antallet som er angitt i **Bestilt**-feltet på innkjøpsordren.
 - **Registrert antall** – Bruk dette alternativet hvis varen krever registrering, som angitt på **Varemodellgrupper**-siden. Standardverdien i **Antall**-feltet er det fysiske oppdaterte antallet som er registrert.
-- **Produktkvitteringsantall** – Bruk dette alternativet hvis en produktkvittering allerede er mottatt for ordren. Systemet henter standardverdien i **Antall**-feltet fra totalt antall for tilgjengelige produktkvitteringer.
+- **Produktkvitteringsantall** – Bruk dette alternativet hvis en produktkvittering allerede er mottatt for ordren. Standardverdien i **Antall**-feltet er totalt antall for tilgjengelige produktkvitteringer.
 - **Registrerte antall og tjenester** – Bruk dette alternativet hvis antall som er registrert i ankomstjournaler for lagerførte varer eller varer som ikke er på lager. Dette alternativet omfatter tjenester også, uavhengig av om de er registrert.
 
 Hvis den juridiske enheten bruker fakturakontroll, kan du vise resultatene av antallssamsvaret i **Samsvar i antall i produktkvittering**-kolonnen. Du kan også bruke **Samsvarende detaljer**-knappen på **Gjennomgang**-fanen i handlingsruten for å vise resultatene av antallssamsvaret.
@@ -65,7 +65,7 @@ Du kan legge til en linje som ikke var på bestillingen, i leverandørfakturaen.
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Sende en leverandørfaktura til vurdering
 
-Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer. Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge. Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du velger kontrollen. I stedet for **Poster**-knappen viser en **Send**-knapp leverandørfakturaen gjennom vurderingsprosessen.
+Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer. Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge. Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du velger kontrollen. I stedet for **Poster**-knappen sender en **Send inn**-knapp leverandørfakturaen gjennom vurderingsprosessen.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Forhindre faktura fra å sendes til arbeidsflyt 
 
@@ -102,7 +102,7 @@ Du kan angi antall fakturaer som skal inkluderes i partiet, og antall timer du m
 
 ## <a name="working-with-multiple-invoices"></a>Arbeide med flere fakturaer
 
-Du kan arbeide med flere fakturaer samtidig og postere alle samtidig. Hvis du må opprette flere fakturaer, bruker du **Ventende leverandørfakturaer**-siden. Hvis du må postere og skrive ut flere leverandørfakturaer, bruker du fakturagodkjenningsjournalen. Hvis du bruker fakturagodkjenningsjournalen, må minst én produktkvittering posteres for bestillingen, og en faktura for bestillingen må posteres i en ankomstregistrering. Den økonomiske informasjonen for fakturaen kommer fra fakturaen som ble postert i registret.
+Du kan arbeide med flere fakturaer samtidig og postere alle samtidig. Hvis du må opprette flere fakturaer, bruker du **Ventende leverandørfakturaer**-siden. Hvis du må postere og skrive ut flere leverandørfakturaer, bruker du **Fakturagodkjenningsjournal**. Hvis du bruker **Fakturagodkjenningsjournal**, må minst én produktkvittering posteres for bestillingen, og en faktura for bestillingen må posteres i en ankomstregistrering. Den økonomiske informasjonen for fakturaen kommer fra fakturaen som ble postert i registret.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Gjenopprette leverandørfakturaer som er i bruk
 

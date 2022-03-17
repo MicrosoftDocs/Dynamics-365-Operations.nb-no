@@ -2,7 +2,7 @@
 title: TRIM ER-funksjon
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen TRIM
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba47df2b5f06b979436339e414e9e0cf7d9fd0358d8c9055c1591923b5d9c517
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 816f6d6623bb778c9186d294c9b67db7edddd671
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734750"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367798"
 ---
 # <a name="trim-er-function"></a>TRIM ER-funksjon
 
 [!include [banner](../includes/banner.md)]
 
-`TRIM`-funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at innledende og etterfølgende mellomrom er avkortet, og når flere mellomrom mellom ord er fjernet.
+`TRIM`-funksjonen returnerer den angitte tekststrengen som *Streng*-verdi etter at tegn for tabulator, vognretur, linjeskift og sideskift er erstattet med ett mellomromstegn, etter at innledende og etterfølgende mellomrom er avkortet, og etter at flere mellomrom mellom ord er fjernet.
 
 ## <a name="syntax"></a>Syntaks
 
 ```vb
-TRIM (text )
+TRIM (text)
 ```
 
 ## <a name="arguments"></a>Argumenter
@@ -45,13 +45,22 @@ Den gyldige banen til en datakilde av *Streng*-typen.
 
 Den resulterende tekstverdien.
 
-## <a name="example"></a>Eksempel
+## <a name="usage-notes"></a>Bruksnotater
+
+I noen tilfeller vil du kanskje avkorte innledende og etterfølgende mellomrom, men foretrekker å beholde formateringen for den angitte teksten. Dette kan for eksempel være aktuelt når denne teksten representerer en adresse som kan angis i en tekstboks med flere linjer og inneholde formatering med linjeskift og vognretur. I dette tilfellet bruker du følgende uttrykk: `REPLACE(text,"^[ \t]+|[ \t]+$","", true)` der `text` er argumentet som refererer til den angitte tekststrengen.
+
+## <a name="example-1"></a>Eksempel 1
 
 `TRIM ("`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Sample`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`text`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`")` returnerer **"Eksempeltekst"**.
+
+## <a name="example-2"></a>Eksempel 2
+
+`TRIM (CONCATENATE (CHAR(10), "`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Sample`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`", CHAR(9),"`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`text`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`", CHAR(13)))` returnerer **"Eksempeltekst"**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
 
+[REPLACE ER-funksjon](er-functions-text-replace.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

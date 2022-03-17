@@ -2,7 +2,7 @@
 title: Koble eksterne enheter til salgsstedet
 description: Dette emnet beskriver hvordan du kobler eksterne enheter til salgsstedet for detaljhandel.
 author: BrianShook
-ms.date: 06/20/2017
+ms.date: 03/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 66912443c25adfae6fa11e6a25c4a97f63a438ba
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: f1c53c7215d3a5a182f345d5e040274ae06f9b12
+ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779524"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8370957"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Koble eksterne enheter til salgsstedet
 
@@ -58,21 +58,15 @@ Skysalgssted er et nettleserbasert salgssted. Siden det kjører i nettleseren, k
 
 ### <a name="hardware-profile"></a>Maskinvareprofil
 
-Navigering: Klikk **Handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Maskinvareprofiler**.
+Navigasjon: Gå til **Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Maskinvareprofiler**.
 
-En maskinvareprofil identifiserer maskinvaren som er koblet til en kasse på salgssted eller en maskinvarestasjon. Maskinvareprofilen brukes også til å angi parametere for betalingsprosessor som skal brukes under kommunikasjon med SDK for betaling (Software Development Kit). (SDK for betaling distribueres som en del av maskinvarestasjonen).
+En maskinvareprofil identifiserer maskinvaren som er koblet til en kasse på salgsstedet via en integrert eller delt maskinvarestasjon. Maskinvareprofilen brukes også til å angi parametere for betalingsprosessor som skal brukes under kommunikasjon med SDK for betaling (Software Development Kit). SDK for betaling distribueres som en del av maskinvarestasjonen.
 
-### <a name="hardware-station"></a>Hardware Station
+### <a name="hardware-station"></a>Maskinvarestasjon
 
-Navigasjon: Klikk på **Detaljhandel og handel** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle butikker**. Velg en butikk, og klikk deretter hurtigfanen **Maskinvarestasjoner**.
+Navigasjon: Gå til **Detaljhandel og handel \> Kanaler \> Butikker \> Alle butikker**, velg en butikk, og velg deretter hurtigfanen **Maskinvarestasjoner**.
 
 En maskinvarestasjon er en forekomst av forretningslogikk som styrer tilbehør for salgssted. EN maskinvarestasjon installeres automatisk sammen med MPOS. Maskinvarestasjonen kan eventuelt installeres som en frittstående komponent, og deretter brukes av MPOS eller Cloud POS via en webtjeneste. Maskinvarestasjonen må være definert på kanalnivå.
-
-### <a name="hardware-station-profile"></a>Profil for maskinvarestasjon
-
-Navigering: Klikk **Handel** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Salgsstedsprofiler** &gt; **Profiler for maskinvarestasjon**.
-
-Mens selve maskinvarestasjonen er angitt på kanalnivå og inkluderer forekomstspesifikk informasjon, for eksempel URL-adressen for maskinvarestasjonen, inneholder profilen for maskinvarestasjon informasjon som kan være statisk eller delt på tvers av flere maskinvarestasjoner. Den statiske informasjon inkluderer porten som skal brukes, pakken for maskinvarestasjonen og maskinvareprofilen. Den statiske informasjon inneholder også en beskrivelse av hvilken type maskinvarestasjon som distribueres, for eksempel **Gå til kassen** eller **Returer**, avhengig av maskinvaren som kreves for hver bestemte maskinvarestasjon.
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -84,32 +78,29 @@ Hvis du vil koble MPOS til enheter på salgssted i et tradisjonelt scenario for 
 
 Når du har tilordnet maskinvareprofilen, synkroniserer du endringer til kanaldatabasen ved hjelp av distribusjonsplanen **Kasser**. Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for handel og detaljhandel** &gt; **Distribusjonsplan**. 
 
-Deretter definerer du en "lokal" maskinvarestasjon på kanalen. Klikk på **Detaljhandel og handel** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle butikker**, og velg butikk. 
+Konfigurer deretter en dedikert maskinvarestasjon for kanalen. Gå til **Detaljhandel og handel \> Kanaler \> Butikker \> Alle butikker**, og velg en butikk. 
 
-I hurtigfanen **Maskinvarestasjoner** klikker du **Legg til** for å legge til en maskinvarestasjon. Skriv inn en beskrivelse, skriv inn **localhost** som vertsnavnet, og synkroniser deretter endringene til kanalen ved hjelp av distribusjonsplan **Kanalkonfigurasjon**. Du finner distribusjonsplanene under **Detaljhandel og handel** &gt; **IT for handel og detaljhandel** &gt; **Distribusjonsplan**. 
+I hurtigfanen **Maskinvarestasjoner** velger du **Legg til** for å legge til en maskinvarestasjon. Velg **Dedikert** som maskinvarestasjonstype, og skriv deretter inn en beskrivelse. Feltet **Maskinvareprofil** kan stå tomt, fordi maskinvareprofilen som brukes i dette scenarioet, kommer fra selve kassen på salgsstedet. Synkroniser deretter endringene med kanalen ved å bruke distribusjonsplanen **Kanalkonfigurasjon**. Du finner distribusjonsplanene under **Detaljhandel og handel \> IT for handel og detaljhandel \> Distribusjonsplan**. 
 
-Til slutt går du til MPOS og bruker operasjonen **Velg maskinvarestasjon** for å velge maskinvarestasjonen **localhost**. Sett maskinvarestasjonen til **Aktive**. Maskinvareprofilen som brukes i dette scenariet skal komme fra kassen på salgsstedet. En profil for maskinvarestasjon er ikke nødvendig for dette scenariet.
+I MPOS bruker du operasjonen **Velg maskinvarestasjon** til å velge maskinvarestasjonen som samsvarer med verdien du tidligere angav for beskrivelsen, og deretter angir du **Aktiv** for maskinvarestasjonen. 
 
 > [!NOTE]
-> Noen endringer i maskinvareprofil, for eksempel endringer i kassaskuffer, krever at det åpnes et nytt skift etter at endringene er synkronisert til kanalen.
->
-> Skybasert salgssted må bruke den frittstående maskinvarestasjonen for å kommunisere med eksterne handelsenheter.
+> - Noen endringer i maskinvareprofil, for eksempel endringer i kassaskuffer, krever at det åpnes et nytt skift etter at endringene er synkronisert til kanalen.
+> - Skybasert salgssted må bruke den frittstående maskinvarestasjonen for å kommunisere med eksterne handelsenheter.
 
-### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS en frittstående maskinvarestasjon
+### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS med en frittstående maskinvarestasjon
 
 [![Delte eksterne enheter.](./media/shared-300x254.png)](./media/shared.png)
 
-I dette scenariet er en frittstående maskinvarestasjon delt mellom MPOS- og Cloud POS-klienter. Dette scenariet krever at du oppretter en profil for maskinvarestasjon for å angi nedlastingspakken, port og maskinvareprofil som maskinvarestasjonen bruker. Du kan finne profilen for maskinvarestasjon på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Salgsstedsprofiler** &gt; **Maskinvarestasjonsprofiler**. 
+I dette scenarioet er en frittstående maskinvarestasjon delt mellom MPOS- og Cloud POS-klienter. Dette scenarioet krever at du oppretter en delt maskinvarestasjon og angir nedlastingspakken, porten og maskinvareprofilen som maskinvarestasjonen bruker. Du definerer en ny maskinvarestasjon ved å velge hurtigfanen **Maskinvarestasjoner** i den bestemte kanalen (**Detaljhandel og handel \> Kanaler \> Butikker \> Alle butikker**) og legge til en ny maskinvarestasjon av typen **Delt**. 
 
-Når du har opprettet profilen for maskinvarestasjon, kan du gå til den spesifikke kanalen (**Retail og Commerce** &gt; **Kanaler** &gt; **Butikker** &gt; **Alle butikker**), og legge til en ny maskinvarestasjon. Tilordne denne nye maskinvarestasjonen til profilen for maskinvarestasjon som ble opprettet tidligere. 
+Deretter angir du en beskrivelse som hjelper kassereren med å identifisere maskinvarestasjonen. I feltet **Vertsnavn** angir du URL-adressen for vertsmaskinen i følgende format: `https://<MachineName:Port>/HardwareStation`. (Erstatt **&lt;Maskinnavn:Port&gt;** med det faktiske maskinnavnet på maskinvarestasjonen.) For en frittstående maskinvarestasjon må du også angi terminal-ID-en for elektronisk pengeoverføring (EFT). Denne verdien identifiserer EFT-terminalen som er koblet til maskinvarestasjonen når betalingstilkoblingen kommuniserer med betalingsleverandøren. 
 
-Deretter angir du en beskrivelse som hjelper kassereren med å identifisere maskinvarestasjonen. I feltet **Vertsnavn** angir du URL-adressen for vertsmaskinen i følgende format: `https://<MachineName:Port>/HardwareStation`. (Erstatt **&lt;Maskinnavn:Port&gt;** med det faktiske maskinnavnet på maskinvarestasjonen og porten som er angitt i profilen for maskinvarestasjonen.) For en frittstående maskinvarestasjon må du også angi terminal-ID-en for elektronisk pengeoverføring (EFT). Denne verdien identifiserer EFT-terminalen som er koblet til maskinvarestasjonen når betalingstilkoblingen kommuniserer med betalingsleverandøren. 
-
-Deretter, fra selve maskinvarestasjonen, går du til kanalen og velg maskinvarestasjonen. Klikk deretter **Last ned** og installer maskinvarestasjonen. 
+Gå deretter fra maskinen som er vert for maskinvarestasjonen, til kanalen i Headquarters, og velg maskinvarestasjonen. Velg deretter **Last ned** for å laste ned installasjonsprogrammet for maskinvarestasjonen, og installer maskinvarestasjonen. Hvis du vil ha mer informasjon om hvordan du installerer maskinvarestasjonen, kan du se [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md). 
 
 Deretter, fra MPOS eller Cloud POS, bruker du operasjonen **Velg maskinvarestasjon** for å velge maskinvarestasjonen som ble installert tidligere. Velg **Par** for å opprette en sikker relasjon mellom salgsstedet og maskinvarestasjonen. Dette trinnet må fullføres én gang for hver kombinasjon av salgssted og en maskinvarestasjon. 
 
-Når maskinvarestasjonen er sammenkoblet, brukes den samme operasjonen for å aktivere maskinvarestasjonen når den er i bruk. I dette scenariet skal maskinvareprofilen tilordnes profilen for maskinvarestasjon i stedet for kassen. Hvis maskinvarestasjonen en eller annen grunn ikke har en maskinvareprofil direkte tilordnet, brukes i stedet maskinvareprofilen som er tilordnet kassen.
+Når maskinvarestasjonen er sammenkoblet, brukes den samme operasjonen for å aktivere maskinvarestasjonen når den er i bruk. I dette scenarioet skal maskinvareprofilen tilordnes profilen for den delte maskinvarestasjonen i stedet for selve kassen. Hvis ingen maskinvareprofil er tilordnet direkte til maskinvarestasjonen av en eller annen grunn, brukes maskinvareprofilen som er tilordnet til kassen.
 
 ## <a name="client-maintenance"></a>Klientvedlikehold
 
@@ -158,31 +149,27 @@ Funksjonsprofilen angis på butikknivå. Den brukes til å angi innstillinger fo
 
 - Hurtigfanen **Kvitteringsnummerering**:
 
-    - Angi masker for kvitteringsnummerering, som kan omfatte segmenter for butikknummer, terminalnummer, konstanter og om salg, returer, salgsordrer og tilbud skal skrives ut i separate serier, eller om alle følger samme sekvens.
+    - Angi masker for kvitteringsnummerering, som kan omfatte segmenter for butikknummer, terminalnummer, konstanter og om salg, returer, salgsordrer og tilbud skal skrives ut i separate serier, eller om alle skal følge samme sekvens.
 
 #### <a name="receipt-profiles"></a>Kvitteringsprofiler
 
-Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen. De brukes til å angi hvilke kvitteringstyper som skrives ut på en bestemt skriver. Profilene omfatter innstillinger for kvitteringsformater og innstillinger som bestemmer om kvitteringer alltid skrives alltid, eller om kassereren blir bedt om å bestemme om kvitteringen skal skrives ut. Ulike skrivere kan også bruke ulike kvitteringsprofiler. Skriver 1 er for eksempel en standard termisk kritteringsskriver og har derfor mindre kvitteringsformater. Skriveren 2 er imidlertid en skriver for kvitteringer i full størrelse som brukes til å skrive ut kvitteringer for kundebestillinger, som krever mer plass.
+Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen. De brukes til å angi hvilke kvitteringstyper som skrives ut på en bestemt skriver. Profilene omfatter innstillinger for kvitteringsformater og innstillinger som bestemmer om kvitteringer alltid skrives alltid, eller om kassereren blir bedt om å bestemme om kvitteringen skal skrives ut. Ulike skrivere kan også bruke ulike kvitteringsprofiler. Skriver 1 er for eksempel en standard termisk kritteringsskriver og har derfor mindre kvitteringsformater. Skriveren 2 er imidlertid en skriver for kvitteringer i full størrelse som brukes til å skrive ut kvitteringer for kundebestillinger, som krever mer plass. Hvis du vil ha mer informasjon, kan du se [Konfigurere en kvitteringsprofil](configure-emailed-receipt-formats.md#configure-a-receipt-profile).
 
 #### <a name="hardware-profiles"></a>Maskinvareprofiler
 
-Maskinvareprofiler er forklart som en komponent for klientoppsett tidligere i denne artikkelen. Maskinvareprofiler tilordnes direkte til kassen på salgsstedet eller til en profil for maskinvarestasjon. De brukes til å angi hvilke typer enheter en bestemt kasse på salgssted eller maskinvarestasjon bruker. Maskinvareprofiler kan også brukes til å angi EFT-innstillinger som brukes til å kommunisere med SDK for betaling.
+Maskinvareprofiler er forklart som en komponent for klientoppsett tidligere i dette emnet. Maskinvareprofiler tilordnes direkte til kassen på salgsstedet eller til en delt maskinvareprofil og brukes til å angi typene enheter som en bestemt kasse på salgsstedet eller maskinvareprofil bruker. Maskinvareprofiler kan også brukes til å angi EFT-innstillinger som brukes til å kommunisere med SDK for betaling.
 
 #### <a name="visual-profiles"></a>Visuelle profiler
 
-Visuelle profiler tilordnes på kassenivå. De brukes til å angi temaet for en bestemt kasse. Profilene omfatter innstillinger for programtypen som brukes (MPOS eller Cloud POS), uthevingsfarge og tema, skriftutvalget, påloggingsbakgrunnen og bakgrunn for salgssted.
+Visuelle profiler brukes til å angi temaet for en bestemt kasse og tilordnes på kassenivå. Profilene omfatter innstillinger for programtypen som brukes (MPOS eller Cloud POS), uthevingsfarge og tema, skriftutvalget, bakgrunnen på påloggingssiden og bakgrunnen for salgsstedet. Hvis du vil ha mer informasjon, kan du se [Opprette visuelle profiler for salgssted](tasks/create-pos-visual-profile-2016-02.md). 
 
-### <a name="custom-fields"></a>Tilpassede felt
+### <a name="custom-fields"></a>Tilpassede felter
 
 Du kan opprette egendefinerte felt for å legge til felt som ikke følger med som standard, for salgsstedet. Hvis du vil ha mer informasjon om hvordan du bruker egendefinerte felt, kan du se [blogginnlegget om å arbeide med egendefinerte felt](https://blogs.msdn.microsoft.com/axsupport/2012/08/06/ax-for-retail-2012-working-with-custom-fields/).
 
 ### <a name="language-text"></a>Språktekst
 
 Ved overstyre standardstrenger på salgsstedet ved hjelp av tekstoppføringer for språket. Hvis du vil overstyre en streng på salgsstedet, legge til en ny språktekstlinje. Angi deretter en ID, standardstrengen som skal overstyres og teksten som skal vises på salgsstedet i stedet for standardstrengen.
-
-### <a name="hardware-station-profiles"></a>Profiler for maskinvarestasjon
-
-Profiler for maskinvarestasjon er beskrevet tidligere i denne artikkelen. De brukes for å tilordne informasjon som ikke er forekomstspesifikk for maskinvarestasjoner.
 
 ### <a name="channel-reports-configuration"></a>Konfigurasjon av kanalrapporter
 
@@ -202,6 +189,10 @@ Aktiveringsrelatert tilleggsinformasjon inkluderer arbeideren som endret aktiver
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alle endringer i en klient på salgsstedet, unntatt endringer i statusen for enhetsaktivering, må synkroniseres til kanaldatabasen for å tre i kraft. Hvis du vil synkronisere endringer til kanaldatabasen, går du til **Detaljhandel og handel** &gt; **IT for detaljhandel og handel** &gt; **Distribusjonsplan**, og kjører den påkrevde distribusjonsplanen. For klientendringer må du kjøre distribusjonsplanene **Kasser** og **Kanalkonfigurasjon**.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

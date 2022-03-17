@@ -1,22 +1,22 @@
 ---
-title: Oversikt over regnskapsintegrering for handelskanaler
+title: Oversikt over regnskapsintegrering for Commerce-kanaler
 description: Dette emnet gir en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 01/31/2022
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 82913eaca1d56a5b0609480d8825717278eca132
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 46e0afd5a8cb692da56a7d5f261ca30d9b3aaa80
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077198"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388319"
 ---
-# <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversikt over regnskapsintegrering for handelskanaler
+# <a name="fiscal-integration-overview-for-commerce-channels"></a>Oversikt over regnskapsintegrering for Commerce-kanaler
 
 [!include [banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
@@ -46,6 +46,9 @@ Et eksempel på regnskapsintegrering kan inneholde Commerce Runtime (CRT), maski
 - **Konfigurasjon av regnskapskobling** – Denne konfigurasjonen definerer den fysiske kommunikasjonen med en bestemt regnskapsenhet eller -tjeneste.
 
 En bilagsregistreringsprosess for en bestemt salgsstedskasse er definert av en tilsvarende innstilling i funksjonalitetsprofilen for salgsstedet. Hvis du vil ha mer informasjon om hvordan du konfigurerer en bilagsregistreringsprosess, laster opp konfigurasjoner for regnskapsdokumentleverandører og regnskapskoblinger, og endrer konfigurasjonsparametere, kan du se [Konfigurere en bilagsregistreringsprosess](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+> [!NOTE]
+> Hvis du trenger enheter til ikke-regnskapsoperasjoner, for eksempel søk i produktkatalog, kundeoppslag eller opprettelse av transaksjonsutkast, kan du velge disse som kasser med begrensninger for regnskapsprosess. Hvis du vil ha mer informasjon, kan du se [Konfigurere kasser med begrensninger for regnskapsregistrering](setting-up-fiscal-integration-for-retail-channel.md#set-up-registers-with-fiscal-registration-restrictions).
 
 Følgende vanlige regnskapsregistreringsflyt starter med en hendelse i POS (for eksempel avslutning av en salgstransaksjon), og implementerer en forhåndsdefinert trinnsekvens som involverer andre Commerce-komponenter (for eksempel CRT og maskinvarestasjon).
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: banluo
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3da92c384d3074335067433120eccc97d11b6b81
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103946"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384701"
 ---
 # <a name="inventory-value-reports"></a>Lagerverdirapporter
 
@@ -102,7 +102,7 @@ Bruk siden **Lagerverdirapporter** til å definere innholdet som inngår i de ul
         - Mottatte og ennå ikke fakturerte varer når alternativet **Poster aktuell beholdning** er fjernet for den relevante varemodellgruppen.
         - Mottatte og ennå ikke fakturerte varer når alternativet **Poster produktkvittering i finans** er fjernet på hurtigfanen **Produktkvittering** på **Generelt**-fanen på siden **Leverandørparametere** (**Leverandører \> Oppsett \> Leverandørparametere**).
 
-    - **Beregn gjennomsnittlig enhetskostnad** – Sett dette alternativet til *Ja* for å vise en kolonne som viser gjennomsnittlig enhetskostnad. Den gjennomsnittlige enhetskostnaden er det totale antallet delt på totalbeløpet.
+    - **Beregn gjennomsnittlig enhetskostnad** – Sett dette alternativet til *Ja* for å vise en kolonne som viser gjennomsnittlig enhetskostnad. Den gjennomsnittlige enhetskostnaden er totalbeløpet delt på totalt antall.
     - **Totalt antall og verdi** – Sett dette alternativet til *Ja* for å vise kolonner som viser totalt antall fysisk beholdning (og økonomisk antall) og totalbeløp for fysisk beholdning (og finansbeløp). Du kan bare sette dette alternativet til *Ja* hvis **Oppsummer fysiske og økonomiske verdier** er satt til *Nei*.
     - **Lagerdimensjoner** – I dette rutenettet merker du av for **Vis** for hver dimensjon du vil vise i rapporten. Bare dimensjoner der alternativet **Økonomisk lager** er aktivert, vil vise verdier i rapporten. Andre dimensjoner viser bare tomme kolonner. For de dimensjonene du velger å vise, kan du merke av for **Totalt** for å inkludere totaler.
     - **Ressurs-ID** – Sett **Vis**-alternativet til *Ja* for å vise en kolonne som identifiserer varen for hver rad. Sett **Totalt**-alternativet til *Ja* for også å inkludere totaler. Kolonnen viser en av følgende typer informasjon, avhengig av varetypen som vises i hver rad:

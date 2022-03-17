@@ -2,7 +2,7 @@
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
-ms.date: 01/05/2022
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952658"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388269"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -83,31 +83,48 @@ I fanen **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskape
 
 ## <a name="range-component"></a>Områdekomponent
 
-Komponenten **Område** angir et Excel-område som må kontrolleres av denne ER-komponenten. Navnet på området er definert i egenskapen **Excel-område** for denne komponenten.
-
-### <a name="replication"></a>Replikering
-
-Egenskapen **Replikeringsretning** angir om og hvordan området skal gjentas i et generert dokument:
-
-- Hvis egenskapen **Replikeringsretning** er satt til **Ingen replikering**, blir ikke det riktige Microsoft Excel-området gjentatt i det genererte dokumentet.
-- Hvis egenskapen **Replikeringsretning** er satt til **Vertikal**, blir ikke det riktige Microsoft Excel-området gjentatt i det genererte dokumentet. Hvert replikerte område er plassert under det opprinnelige området i en Excel-mal. Antall repetisjoner defineres av antall poster i en datakilde for typen **Postliste** som er bundet til denne ER-komponenten.
-- Hvis egenskapen **Replikeringsretning** er satt til **Horisontal**, blir ikke det riktige Microsoft Excel-området gjentatt i det genererte dokumentet. Hvert replikerte område er plassert til høyre for det opprinnelige området i en Excel-mal. Antall repetisjoner defineres av antall poster i en datakilde for typen **Postliste** som er bundet til denne ER-komponenten.
-
-Hvis du vil finne ut mer om horisontal replikering, kan du følge trinnene i [Bruke vannrett utvidbare områder for å legge til kolonner i Excel-rapporter dynamisk](tasks/er-horizontal-1.md).
-
 ### <a name="nested-components"></a>Nestede komponenter
 
-Komponenten **Område** kan ha andre nestede komponenter som brukes til å angi verdier i de riktige navngitte områdene i Excel.
+#### <a name="data-typing"></a>Skrive inn data
+
+**Område**-komponenten kan ha andre nestede komponenter som brukes til å angi verdier i de riktige områdene.
 
 - Hvis en av komponentene i gruppen **Tekst** brukes til å angi verdier, angis verdien i et Excel-område som en tekstverdi.
 
     > [!NOTE]
     > Bruk dette mønsteret til å formatere angitte verdier basert på den nasjonale innstillingen som er definert i appen.
 
-- Hvis komponenten **Celle** i **Excel**-gruppen brukes til å angi verdier, angis verdien i et Excel-område som en verdi av datatypen som er definert av bindingen for den **Celle**-komponenten (for eksempel **Streng**, **Kommatall** eller **Heltall**).
+- Hvis **Celle**-komponenten i **Excel**-gruppen brukes til å angi verdier, angis verdien i et Excel-område som en verdi av datatypen som er definert av bindingen for denne **Celle**-komponenten. Datatypen kan for eksempel være **Streng**, **Kommatall** eller **Heltall**.
 
     > [!NOTE]
     > Bruk dette mønsteret til å la Excel formatere angitte verdier basert på den nasjonale innstillingen til den lokale datamaskinen som åpner det utgående dokumentet.
+
+#### <a name="row-handling"></a>Radhåndtering
+
+**Område**-komponenten kan konfigureres som loddrett replikert, slik at flere rader genereres i et Excel-regneark. Radene kan genereres av den overordnede **Område**-komponenten eller av de nestede **Område**-komponentene.
+
+I versjon 10.0.26 og senere kan du tvinge et generert regneark til å holde de genererte radene på samme side. I ER-formatutformingen angir du **Ja** for alternativet **Hold rader sammen** for den overordnede **Område**-komponenten i det redigerbare ER-formatet. ER prøver deretter å holde alt innholdet som genereres av dette området, på samme side. Hvis høyden på innholdet overskrider plassen som er tilgjengelig på den gjeldende siden, legges det til et sideskift, og innholdet starter øverst på den neste nye siden.
+
+> [!NOTE]
+> Vi anbefaler at du konfigurerer alternativet **Hold rader sammen** bare for områder som strekker seg over hele bredden til et generert dokument.
+>
+> Alternativet **Hold rader sammen** gjelder bare for **Excel \> Fil**-komponenter som er konfigurert slik at de bruker en Excel-arbeidsbokmal.
+>
+> Alternativet **Hold rader sammen** kan bare brukes når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert.
+>
+> Denne funksjonen kan brukes for **Område**-komponenter som ligger under **Side**-komponenten. Det kan imidlertid ikke garanteres at [bunnteksttotaler](er-paginate-excel-reports.md#add-data-sources-to-calculate-page-footer-totals) blir riktig beregnet ved hjelp av datakilder for [Datainnsamling](er-data-collection-data-sources.md).
+
+Hvis du vil vite hvordan du bruker dette alternativet, følger du trinnene i eksemplet i [Utforme et ER-format som holder rader sammen på samme Excel-side](er-keep-excel-rows-together.md).
+
+### <a name="replication"></a>Replikering
+
+Egenskapen **Replikeringsretning** angir om og hvordan et område skal gjentas i et generert dokument:
+
+- **Ingen replikering** – Det riktige Excel-området blir ikke gjentatt i det genererte dokumentet.
+- **Loddrett** – Det riktige Excel-området blir gjentatt loddrett i det genererte dokumentet. Hvert replikerte område blir plassert nedenfor det opprinnelige området i en Excel-mal. Antall repetisjoner defineres av antall poster i en datakilde for typen **Postliste** som er bundet til denne ER-komponenten.
+- **Vannrett** – Det riktige Excel-området blir gjentatt vannrett i det genererte dokumentet. Hvert replikerte område blir plassert til høyre for det opprinnelige området i en Excel-mal. Antall repetisjoner defineres av antall poster i en datakilde for typen **Postliste** som er bundet til denne ER-komponenten.
+
+    Hvis du vil finne ut mer om horisontal replikering, kan du følge trinnene i [Bruke vannrett utvidbare områder for å legge til kolonner i Excel-rapporter dynamisk](tasks/er-horizontal-1.md).
 
 ### <a name="enabling"></a>Aktiverer
 
@@ -280,12 +297,12 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 
 - Velg **Automatisk** for å omberegne alle avhengige formler hver gang et generert dokument føyes til av nye områder, celler osv.
 
-    >[!NOTE]
+    > [!NOTE]
     > Dette kan føre til ytelsesproblemer for Excel-maler som inneholder flere relaterte formler.
 
 - Velg **Manuell** for å unngå omberegning av formler når et dokument genereres.
 
-    >[!NOTE]
+    > [!NOTE]
     > Omberegning av formler tvinges manuelt når et generert dokument åpnes for forhåndsvisning ved hjelp av Excel.
     > Ikke bruk dette alternativet hvis du konfigurerer et ER-mål som forutsetter bruken av et generert dokument uten forhåndsvisningen i Excel (PDF-konvertering, e-post og så videre), fordi det genererte dokumentet kanskje ikke inneholder verdier i celler som inneholder formler.
 

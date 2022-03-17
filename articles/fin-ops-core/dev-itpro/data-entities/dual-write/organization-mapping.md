@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062092"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358370"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisasjonshierarki i Dataverse
 
@@ -36,11 +36,11 @@ Tabelltilordninger for organisasjonshierarki er tilgjengelige for enveissynkroni
 
 ## <a name="templates"></a>Maler
 
-Produktinformasjonen inneholder all informasjonen som er knyttet til produktet og definisjonen, for eksempel produktdimensjonene eller sporings- og lagerdimensjonene. Som følgende tabell viser opprettes en samling tabelltilordning for å synkronisere produkter og beslektet informasjon.
+En organisasjon er en gruppe personer som jobber sammen for å utføre en forretningsprosess eller oppnå et mål. Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten. Du kan definere følgende typer interne organisasjoner: juridiske enheter, driftsenheter og team. Som tabellen nedenfor viser opprettes det en samling tabelltilordninger for å synkronisere juridiske enheter, driftsenheter og relatert informasjon om organisasjonshierarki.
 
-Finance and Operations-apper | Kundeengasjementsapper     | beskrivelse
+Finance and Operations-apper | Kundeengasjementsapper     | Beskrivelse
 -----------------------|--------------------------------|---
-[Juridiske enheter](mapping-reference.md#102) | cdm_companies | Gir toveis synkronisering av informasjon om juridisk enhet (firma).
+[Juridiske enheter](mapping-reference.md#102) | cdm_companies | 
 [Juridiske enheter](mapping-reference.md#142) | msdyn_internalorganizations |
 [Driftsenhet](mapping-reference.md#143) | msdyn_internalorganizations |
 [Organisasjonshierarki – publisert](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte tabellen for organisasjonshierarkiet.

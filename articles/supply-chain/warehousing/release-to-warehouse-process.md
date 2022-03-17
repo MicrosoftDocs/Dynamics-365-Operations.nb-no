@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428953"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376214"
 ---
 # <a name="release-to-warehouse"></a>Frigi til lager
 
@@ -125,6 +125,7 @@ Hvis du vil konfigurere den satsvise jobben som frigir salgsordrene, gjør du f�
     - **Antall som skal frigis** – Velg om hele mengden eller bare den fysisk reserverte mengden skal frigis til lageret.
     - **Tillate frigivelse av delvis frigitte ordrer** – Angi om gjenværende antall for delvis frigitte ordrer skal frigis til lageret.
     - **Behold reserveringer ved frigivelsesfeil**– Angi om antall som ble reservert automatisk for en salgsordre, skal reserveres automatisk hvis frigivelsen til lagerprosessen mislykkes.
+    - **Gruppefrigivelser etter kunde** – Angi om systemet skal behandle frigivelse til lageroperasjoner separat for hver kunde, eller om det skal frigi alle salgsordrer samtidig. Når *Ja* er angitt for dette alternativet, vil systemet samle inn alle salgsordrelinjene for en valgt kunde, frigi disse ordrene til lageret og deretter behandle den neste kunden. Når *Nei* er angitt for dette alternativet, vil systemet frigi alle tilgjengelige salgsordrelinjer i en enkelt frigivelse til lageroperasjon. Når du aktiverer dette alternativet, kan du bidra til å øke ytelsen og fleksibiliteten ved frigivelsen til lagerprosessen. Du må imidlertid være forsiktig når du bruker dette alternativet sammen med bølgemaler som er konfigurert slik at de behandler bølger ved frigivelse til lager, fordi denne kombinasjonen kan generere mange bølger for enkeltkunde, der hver bølge har arbeid som er generert bare for denne kunden. Hvis du vil generere arbeid som kombinerer forsendelser for flere kunder, bør du enten deaktivere alternativet *Gruppefrigivelser etter kunde* eller konfigurere bølgemalene slik at de bruker utsatt behandling.
     - **Håndtering av låst ordre** – Velg hvordan systemet skal håndtere salgsordrer som er låst, fordi de redigeres av andre brukere eller prosesser:
 
         - *Vente til ordrer låses opp* – Systemet må vente på at ordrene blir låst opp før de frigis til lageret. I så fall kan frigivelsen til lagerprosessen ta mer tid.
