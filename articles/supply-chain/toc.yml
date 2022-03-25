@@ -743,17 +743,41 @@
                   href: cost-management/costing-versions.md
                 - name: Kostark
                   href: cost-management/costing-sheets.md
-                - name: Simulere kostnadsendringer ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
+                - name: Simuler kostnadsendringer ved hjelp av en kostnadsberegningsversjon for planlagte kostnader
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Rapport for sammenligning av lagervarepriser
                   href: cost-management/compare-item-price.md
+            - name: Etterkalkuleringsmetoder
+              items:
+                - name: Løpende gjennomsnittlig kostpris
+                  href: cost-management/running-average-cost-price.md
+                - name: Spor glidende gjennomsnittskostnad per beholdningsdimensjon
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: FIFO med fysisk verdi og merking
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: LIFO-dato med fysisk verdi og merking
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO med fysisk verdi og merking
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Direkte utligning med fysisk verdi og merking
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Direkte utligningsdato med fysisk verdi og merking
+                  href: cost-management/weighted-average-date.md
+                - name: Glidende gjennomsnitt
+                  href: cost-management/moving-average.md
+                - name: 'Glidende gjennomsnitt, sekvens for kostnad for tilbakefall'
+                  href: cost-management/moving-average-fallback.md
             - name: Lagerregnskap
               items:
+                - name: Fysiske og økonomiske oppdateringer
+                  href: cost-management/physical-financial-updates.md
+                - name: Ta med fysisk verdi
+                  href: cost-management/include-physical-value.md
                 - name: Kostnadsobjekter
                   href: cost-management/cost-object.md
-                - name: Vise saldo for kostnadsobjekt
+                - name: Vis saldo for kostnadsobjekt
                   href: cost-management/tasks/view-cost-object-balance.md
-                - name: Vise beholdningsoppgave og KPI etter kostnadsobjekt
+                - name: Vis beholdningsoppgave og KPI etter kostnadsobjekt
                   href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
                 - name: Kostnadsoppføringer
                   href: cost-management/cost-entries.md
@@ -761,30 +785,8 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Kostgrupper
                   href: cost-management/cost-groups.md
-                - name: FIFO med fysisk verdi og merking
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Ta med fysisk verdi
-                  href: cost-management/include-physical-value.md
                 - name: Lagerobjektverdier
                   href: cost-management/physical-quantity.md
-                - name: LIFO-dato med fysisk verdi og merking
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: LIFO med fysisk verdi og merking
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Glidende gjennomsnitt
-                  href: cost-management/moving-average.md
-                - name: 'Glidende gjennomsnitt, sekvens for kostnad for tilbakefall'
-                  href: cost-management/moving-average-fallback.md
-                - name: Fysiske og økonomiske oppdateringer
-                  href: cost-management/physical-financial-updates.md
-                - name: Løpende gjennomsnittlig kostpris
-                  href: cost-management/running-average-cost-price.md
-                - name: Spore glidende gjennomsnittskostnad per beholdningsdimensjon
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Dato for avveid gjennomsnitt
-                  href: cost-management/weighted-average-date.md
-                - name: Direkte utligning med fysisk verdi og merking
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Lagerlukking
                   href: cost-management/inventory-close.md
                 - name: Juster kostnadsverdier for lagerbeholdning
@@ -1427,13 +1429,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Bruke datakilder for DATAINNSAMLING i ER-formater
+                    - name: Bruk datakilder for DATAINNSAMLING i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Feilsøke datakilder
+                    - name: Feilsøk datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere modelltilordninger
+                - name: Konfigurer datamodeller
                   items:
-                    - name: Konfigurere modelltilordninger for landkontekstavhengig ER
+                    - name: Støtt parameteriserte oppkall av ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurer modelltilordninger
+                  items:
+                    - name: Konfigurer modelltilordninger for landkontekstavhengig ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
@@ -1495,13 +1501,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere mål
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurere handlingsavhengige mål
+                    - name: Konfigurer handlingsavhengige mål
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurere postspesifikke ER-mål for utskriftsbehandling
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Definere en referanse til et ER-format
+                - name: Definer en referanse til et ER-format
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Validere genererte rapporter automatisk
+                - name: Valider genererte rapporter automatisk
                   items:
                     - name: Spor genererte rapportresultater og sammenlign dem med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
@@ -1687,7 +1693,7 @@
                   href: cost-management/running-average-cost-price.md
                 - name: Justere kostnadsverdi for lagerbeholdning
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Spore glidende gjennomsnittskostnad per beholdningsdimensjon
+                - name: Spor glidende gjennomsnittskostnad per beholdningsdimensjon
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
             - name: Arkiver lagertransaksjoner
               href: inventory/archive-inventory-transactions.md
@@ -3855,6 +3861,8 @@
               items:
                 - name: Warehouse mobile app
                   items:
+                    - name: Uventet forskjell mellom forespørsels- og øktdata under testing
+                      href: troubleshooting/warehousing/request-session-data-difference.md
                     - name: Klareringsanker for sertifiseringsbane som ikke blir funnet ved konfigurasjon av apptilkobling
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Klareringsanker for sertifiseringsbane ble ikke funnet under oppdatering og overføring til WMS

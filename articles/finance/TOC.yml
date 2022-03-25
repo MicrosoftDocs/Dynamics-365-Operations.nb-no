@@ -1528,6 +1528,10 @@
                           items:
                             - name: Mva-deklarering
                               href: localizations/emea-aut-vat-declaration-austria.md
+                        - name: Dansk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-dnk-vat-declaration-denmark.md
                         - name: Fransk rapportering
                           items:
                             - name: Mva-deklarering
@@ -2344,6 +2348,8 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU-salgsliste
                   href: localizations/emea-deu-eu-sales-list.md
+                - name: Mva-deklarering
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ungarn
               items:
                 - name: Oversikt over Ungarn
@@ -3566,13 +3572,13 @@
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Dimensjoner for avgiftsavdeling
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Rapport for utgående mva.
+                - name: Mva-rapporter
                   href: localizations/apac-tha-sales-vat-report.md
                 - name: Kildeskatt
                   href: localizations/apac-tha-withholding-tax.md
             - name: De forente arabiske emirater (UAE)
               items:
-                - name: Definere og rapportere merverdiavgift (mva)
+                - name: Definer og rapporter merverdiavgift (mva.)
                   href: localizations/uae-vat-setup-reporting.md
             - name: Storbritannia
               items:
@@ -4281,13 +4287,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: Bruke datakilder for DATAINNSAMLING i ER-formater
+                    - name: Bruk datakilder for DATAINNSAMLING i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: Feilsøke datakilder
+                    - name: Feilsøk datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere modelltilordninger
+                - name: Konfigurer datamodeller
                   items:
-                    - name: Konfigurere modelltilordninger for landkontekstavhengig ER
+                    - name: Støtt parameteriserte oppkall av ER-datamodeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurer modelltilordninger
+                  items:
+                    - name: Konfigurer modelltilordninger for landkontekstavhengig ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
                     - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -4351,13 +4361,15 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere mål
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere handlingsavhengige mål
+                    - name: Konfigurer handlingsavhengige mål
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere postspesifikke ER-mål for utskriftsbehandling
+                    - name: Konfigurer postspesifikke mål for utskriftsbehandling
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
-                - name: Definere en referanse til et ER-format
+                    - name: Utform en ny ER-løsning for å skrive ut ZPL-etiketter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?toc=/dynamics365/finance/toc.json
+                - name: Definer en referanse til et ER-format
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
-                - name: Validere genererte rapporter automatisk
+                - name: Valider genererte rapporter automatisk
                   items:
                     - name: Spor genererte rapportresultater og sammenlign dem med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json

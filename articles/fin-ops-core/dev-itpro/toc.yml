@@ -238,10 +238,12 @@
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Installer tillegget Eksporter til Azure Data Lake
               href: data-entities/configure-export-data-lake.md
-            - name: Finance and Operations-apper i Azure Data Lake
+            - name: Økonomi- og driftsapper i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Gjør enhetslager tilgjengelig som Data Lake
               href: data-entities/entity-store-data-lake.md
+            - name: Forretningshendelser som genereres av Eksport til Azure Data Lake-tjenesten (forhåndsversjon)
+              href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
             - name: Endre data i Azure Data Lake
               href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Databaseflyttingsoperasjoner
@@ -1066,11 +1068,13 @@
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Definer tilordningen for salgsordrens statusfelter
                       href: data-entities/dual-write/sales-status-map.md
-                    - name: Filtrere konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
+                    - name: Filtrer konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
                       href: data-entities/dual-write/filtering-intercompany-orders.md
-                - name: Håndtere dobbel skriving
+                    - name: Avinstaller iverksettingsløsninger for appen for dobbel skriving
+                      href: data-entities/dual-write/uninstall-solutions.md
+                - name: Håndter dobbel skriving
                   items:
-                    - name: Tilpasse enhets- og felttilordninger
+                    - name: Tilpass enhets- og felttilordninger
                       href: data-entities/dual-write/customizing-mappings.md
                     - name: Veiledning for tilpassing av dobbel skriving
                       href: data-entities/dual-write/custom-best-practices.md
