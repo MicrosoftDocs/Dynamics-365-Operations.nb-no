@@ -2,7 +2,7 @@
 title: Opprette en kundefaktura
 description: En kundefaktura for en salgsordre er en regning som er knyttet til et salg, og som en organisasjon gir til en kunde.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087429"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392917"
 ---
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
@@ -82,6 +82,9 @@ Vis statusen for salgsordrene på listesiden **Alle salgsordrer**.
 Bruk denne fremgangsmåten når én eller flere salgsordrer er klare til fakturering, og du vil konsolidere dem i én enkelt faktura. 
 
 Du kan velge flere fakturaer på **Salgsordre**-listesiden og deretter bruke **Generer fakturaer** for å konsolidere dem. På siden **Postering av faktura** kan du endre innstillingen **Samleordre** for å summere etter ordrenummer (der det finnes flere følgesedler for én enkelt ordre) eller etter fakturakonto (der det er flere salgsordrer for én enkelt fakturakonto). Bruk knappen **Ordne** for å konsolidere salgsordrer til enkeltfakturaer basert på **Samleordre**-innstillingene.
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Poster til inntektskonto for salgsordrefakturalinjer som ikke har en pris
+Du kan oppdatere **Inntekt**-kontoen i **økonomimodulen** for salgsordrelinjer som ikke har noen pris. Hvis du vil definere eller vise denne informasjonen, kan du gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris** på fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris. En inntektskonto er definert på parametersiden **Lagerpostering** på fanen for definisjon av **Salgsordre**-kontoen. Hvis dette alternativet ikke er valgt, posteres ikke linjer som har prisinformasjon, til **Inntekt**-kontoen.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Tilleggsinnstillinger som endrer posteringsvirkemåten
 Følgende felt endrer virkemåten for posteringsprosessen.

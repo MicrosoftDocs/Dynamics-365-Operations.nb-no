@@ -2,7 +2,7 @@
 title: Hva er nytt eller endret i mobilappen Warehouse Management
 description: Dette emnet inneholder en liste over de nye og endrede funksjonene for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384377"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418646"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Hva er nytt eller endret i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20190"></a>Versjon 2.0.19.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Forbedret den generelle flyten for dataforespørsel.
+- Forbedret problemet med risting på sidene **Arbeidsliste** og **Vareforespørsel**.
+- Redusert batteriforbruk.
+- Fjernet grensen på antall felter for arbeidskort.
+- Justerte høyden på arbeidskort slik at alle har samme størrelse, uavhengig av antall felter på hvert kort.
+- Løste et problem der mellomromstegn i strekkoder ville blitt beskåret.
+- Innstillingen **Knappestil** er lagt til, slik at du kan veksle mellom glidebrytervisning og knappevisning på alle typer enheter.
+- Løste ulike problemer som kunne føre til at appen krasjet.
+- Angi fokus automatisk på den første tekstboksen på egendefinerte sider.
+- Tilgjengelighetsforbedringer knyttet til kompleksitet, kontrast, skildring og manglende plassholdertekster.
 
 ## <a name="version-20170"></a>Versjon 2.0.17.0
 

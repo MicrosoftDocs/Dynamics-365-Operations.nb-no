@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 8e5fb1515d4bdf36c22f617b6bfd2fa3ce3efa36
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 4fb89f4b56ce8189482bf1a86582ef7e3684b15a
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388602"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392969"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Utforme en ny ER-løsning for å skrive ut ZPL-etiketter
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan en bruker med en rolle som systemansvarlig, utvikler av elektronisk rapportering eller funksjonell konsulent for elektronisk rapportering kan konfigurere parametere for rammeverket for [elektronisk rapportering (ER)](general-electronic-reporting.md), utforme nødvendige ER-[konfigurasjoner](general-electronic-reporting.md#Configuration) for en ny ER-løsning for å få tilgang til dataene i lagerstyringssystemet og generere egendefinerte lagerlokasjonsetiketter i ZPL II-format (Zebra Programming Language). Denne fremgangsmåten kan gjennomføres i firmaet **USRT**.
 
@@ -194,8 +196,8 @@ Legg til et skriveremulatorprogram for ZPL-gjengivelsesmotoren i nettleseren Chr
 
 [Legg til en ny lokal skriver](https://support.microsoft.com/windows/install-a-printer-in-windows-10-cc0724cf-793e-3542-d1ff-727e4978638b) som gjeldende enhet kan bruke til å sende genererte etiketter fra dokumentrutingsagenten til skriveremulatorprogrammet.
 
-1. Velg **Start** \> **Innstillinger** \> **Enheter** \> **Skrivere og skannere** i Windows.
-2. Velg **Innstillinger for skrivere og skannere**.
+1. Velg **Start** \> **Innstillinger** \> **Enheter** \> **Skrivere \& skannere** i Windows.
+2. Velg **Innstillinger for skrivere \& skannere**.
 3. Velg **Legg til enhet** for **Legg til en skriver eller skanner**.
 4. Velg **Legg til manuelt** for **Skriveren jeg vil ha, er ikke i listen**.
 5. Velg **Legg til en lokal skriver eller nettverksskriver med manuelle innstillinger** i feltet **Søk etter en skriver på andre måter**.

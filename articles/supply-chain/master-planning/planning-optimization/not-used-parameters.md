@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087505"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408236"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametere som ikke brukes av planleggingsoptimalisering
 
@@ -194,12 +194,6 @@ Planleggingsoptimalisering bruker ikke følgende parameteralternativ på siden *
   - **Leveringsdatokontroll** – Planleggingsoptimalisering støtter ikke *CTP*-alternativet, venter på *CTP*-støtte.
   - **Leveringstid for lager** – I versjoner av planleggingsoptimaliseringstjenesten som er eldre enn den 6. august 2021, bruker planleggingsoptimalisering denne parameteren til å beregne riktige ordre- og leveringsdatoer, men lagrer ikke den beregnede leveringstiden selv til den planlagte bestillingen. I senere versjoner bruker tjenesten også den beregnede leveringstiden til å angi **Leveringstid**-feltet og alternativet **Virkedager** som nødvendig for den relevante planlagte ordren.
   - **Virkedager** – I versjoner av planleggingsoptimaliseringstjenesten som er eldre enn den 6. august 2021, bruker planleggingsoptimalisering denne parameteren til å beregne riktige ordre- og leveringsdatoer, men lagrer ikke den beregnede leveringstiden selv til den planlagte bestillingen. I senere versjoner bruker tjenesten også den beregnede leveringstiden til å angi **Leveringstid**-feltet og alternativet **Virkedager** som nødvendig for den relevante planlagte ordren.
-
-## <a name="working-time-calendars-page"></a>Siden Arbeidstidskalendere
-
-Planleggingsoptimalisering bruker ikke følgende parameter på siden **Arbeidstidskalendere**:
-
-- **Basiskalender** – Venter på støtte for *Basiskalendere*.
 
 ## <a name="batch-disposition-master-page"></a>Siden Partidisposisjonsstandard
 

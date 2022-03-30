@@ -2,7 +2,7 @@
 title: Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.25.
 author: kamaybac
-ms.date: 02/01/2022
+ms.date: 03/14/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 26f67be72948e33738cf805b541d3c7e701f8dba
+ms.sourcegitcommit: a8f4d7d21d9af17d80b1213e5e1a81f42fb8b928
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384544"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "8414126"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.25 (april 2022)
 
@@ -39,6 +39,7 @@ Denne tabellen viser funksjonene i denne versjonen. Dette emnet kan være oppdat
 | Lager&nbsp;og&nbsp;logistikk | [Skann strekkoder i lageret ved hjelp av standardene i GS1-format](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-strekkoder og QR-koder](../warehousing/gs1-barcodes.md) | Funksjonsbehandling:<br>*Skann GS1-strekkoder* |
 | Produksjon | [Materialforbruk og reservasjoner i grensesnittet for produksjonsutførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke-lager)*<br><br>Og/eller:<br><br>Funksjonsbehandling:<br>*(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)* |
 | Produksjon | [Registrer materialforbruk på storskalaenheter](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funksjonsbehandling:<br>*Registrer materialforbruk i mobilappen på en skalaenhet* |
+| Planlegging | [Sentralisert kalendervedlikehold i Planleggingsoptimalisering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalendere og hovedplanlegging](../master-planning/supply-chain-calendars-master-planning.md) | Aktivert som standard |
 | Planlegging | [Forslag fra Planleggingsoptimalisering for å optimalisere eksisterende forsyning](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Handlingsmeldinger](../master-planning/action-messages.md) | Aktivert som standard |
 | Planlegging | Planlagte ordrer forenklet | [Planlagte ordrer forenklet](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funksjonsbehandling:<br>*Planlagte ordrer forenklet* |
 

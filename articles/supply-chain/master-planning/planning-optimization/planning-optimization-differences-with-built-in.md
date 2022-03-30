@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e271ddd3331d7b5de78f00a02b60a0479879c172
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 575aef709a0ac3b0cf8150f1e816dac04c069814
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700011"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396505"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Forskjeller mellom innebygd hovedplanlegging og planleggingsoptimalisering
 
@@ -36,6 +36,7 @@ Resultatet av planleggingsoptimalisering kan være forskjellig fra den innebygde
 | Fullføring av sikkerhetslager | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid* for feltet **Fyll opp minimum** på siden **Varedekning**. Dette hindrer uønskede planlagte ordrer og andre problemer fordi hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. |
 | Utligning av sikkerhetslager og nettobehov | Kravtypen *Sikkerhetslager* er ikke inkludert og vises ikke på siden **Nettobehov**. Sikkerhetslager representerer ikke etterspørsel og har ikke en tilknyttet behovsdato. I stedet definerer det en begrensning for hvor mye lager som må finnes til enhver tid. Det tas imidlertid fremdeles hensyn til **Minimum**-feltverdien ved beregning av planlagte bestillinger under hovedplanleggingen. Vi foreslår at du undersøker kolonnen **Akkumulert antall** på **Nettobehov**-siden for å se at denne verdien ble tatt hensyn til. |
 | Transportkalendere | Verdien i kolonnen **Transportkalender** på siden **Leveringsmåter** ignoreres. |
+| Minimum/maksimum dekningskode uten verdier| Med den innebygde planleggingsmotoren når du bruker en minimums- eller maksimumskode der ingen minimums- eller maksimumsverdier er angitt, behandler planleggingsmotoren dekningskoden som et krav, og oppretter én ordre for hvert behov. Med planleggingsoptimalisering oppretter systemet én ordre per dag for å dekke hele beløpet for den dagen.  |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 43e57b75933a67c1ee3fb0a59400b0d1bdab931cec5826346247cc361a0206df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720426"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396530"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Dette emnet vil bli oppdatert når fjernede eller avskrevne funksjoner er dokume
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging.
 
 > [!NOTE]
-> Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+> Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.19
@@ -78,7 +78,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Erstattet med en annen funksjon?**   | Ja, planleggingsoptimalisering erstatter den eksisterende innebygde planleggingsmotoren Supply Chain Management. |
 | **Berørte produktområder**         | Supply Chain Management – Hovedplanlegging |
 | **Distribusjonsalternativ**              | Bare sky. Planleggingsoptimalisering ikke med lokale distribusjoner. |
-| **Status**                         | Avskrevet. Innen 1. april 2022 vil produksjonsscenarioer ikke lenger støttes med den innebygde Dynamics 365 Supply Chain Management-hovedplanleggingsmotoren. For produksjonsscenarioer må kunder bruke planleggingsoptimalisering for hovedplanleggingsberegninger. Hvis du vil ha mer informasjon, se [dokumentasjon for planleggingsoptimalisering](../master-planning/planning-optimization/planning-optimization-overview.md). Kunder som har lokale distribusjoner av Dynamics 365 Supply Chain Management, kan fortsette å bruke Supply Chain Management-hovedplanleggingsmotoren for produksjonsscenarioer etter april 2022. Det vil imidlertid ikke bli gitt flere funksjonsforbedringer. |
+| **Status**                         | Avskrevet. Innen 1. april 2022 vil produksjonsscenarioer ikke lenger støttes for den innebygde hovedplanleggingsmotoren i Supply Chain Management. Per denne datoen vil Microsoft stoppe all aktiv utvikling på produksjonsscenarioer for den innebygde planleggingsmotoren, ikke frigi nye funksjoner og bare frigi kritiske reparasjoner. Etter denne datoen må alle firmaer som trenger støtte for produksjonsscenarioer, bruke Planleggingsoptimalisering for hovedplanleggingsberegningene. Planleggingsoptimalisering forventes å gi full støtte for produksjonsscenarioer i oktober 2022. Hvis du vil ha mer informasjon, se [dokumentasjon for planleggingsoptimalisering](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Firmaer som har lokale distribusjoner av Supply Chain Management, kan fortsette å bruke den innebygde hovedplanleggingsmotoren for produksjonsscenarioer etter april 2022. Det vil imidlertid ikke bli gitt flere funksjonsforbedringer. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.11
 

@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d0e6cce8f7a90cd1624e64023a1b51fd02d12152f874e13ce2e5d22af16fe173
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28f83b3d5aa028d819b837350fe69c2a9c9833ea
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782849"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407875"
 ---
 # <a name="calculate-tds-invoices-using-purchase-order-form-and-sales-order-form"></a>Beregne TDS-fakturaer ved hjelp av bestillingsskjema og salgsordreskjema
 
@@ -48,7 +47,7 @@ Dette emnet viser fremgangsmåten for beregning av TDS (Tax Deducted at Source) 
 
 7. Velg **Kildeskatt** for å åpne siden **Midlertidige kildeskattransaksjoner**. Vis følgende felter i den øvre ruten på siden **Midlertidige kildeskattransaksjoner**.
 
-   - **Kildeskattbeløp** **totalt** – Det totale TDS-beløpet som ble beregnet for transaksjonen for TDS-gruppen.
+   - **Kilde****skatt****beløp** **tot****talt** – Det totale TDS-beløpet som ble beregnet for transaksjonen for TDS-gruppen.
 
    - **Verdi** – Den totale prosentsatsen som brukes til å beregne TDS for transaksjonen. Den totale prosentsatsen er basert på formelen som er definert for TDS-avgiftskoder knyttet til TDS-gruppen.
 

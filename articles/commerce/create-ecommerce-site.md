@@ -2,7 +2,7 @@
 title: Opprette et e-handelsområde
 description: Dette emnet beskriver trinnene og informasjonen som kreves for å opprette et nytt e-handelsområde i Dynamics 365 Commerce-områdebyggeren.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388217"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402781"
 ---
 # <a name="create-an-e-commerce-site"></a>Opprette et e-handelsområde
 
@@ -70,6 +70,14 @@ Hvis du vil gi et nytt navn til nettstedet ditt i områdebygger, følger du denn
 1. Hvis du vil åpne områdelistevisning, velger du **Områdeveksling** øverst til høyre, og deretter velger du **Behandle områder**. 
 1. Merk av i avmerkingsboksen ved siden av området du vil gi nytt navn, og velg deretter **Gi nytt navn** på kommandolinjen.
 1. I dialogboksen **Nytt områdeavn** skriver du inn det nye områdenavnet og velger deretter **OK**. Områdelisten oppdateres for å vise områdets nye navn.
+
+## <a name="delete-a-site"></a>Slett et nettsted
+
+Følg denne fremgangsmåten for å slette et nettsted i områdebygger.
+
+1. Hvis du vil åpne områdelistevisning, velger du **Områdeveksling** øverst til høyre, og deretter velger du **Behandle områder**.
+1. Velg nettstedet du vil slette, og velg deretter **Slett** på kommandolinjen.
+1. I dialogboksen **Slett \<site name\>** skriver du inn navnet på nettstedet og velger deretter **Slett**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

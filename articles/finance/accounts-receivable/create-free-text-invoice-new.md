@@ -1,23 +1,23 @@
 ---
 title: Opprett en fritekstfaktura
 description: Dette emnet forklarer hvordan du oppretter fritekstfakturaer.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763292"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392891"
 ---
 # <a name="create-a-free-text-invoice"></a>Opprett en fritekstfaktura
 
@@ -68,6 +68,7 @@ Dette emnet forklarer hvordan du oppretter fritekstfakturaer. For denne fremgang
 
     * Du kan endre tidspunktet for fakturautskrifter. Velg **Gjeldende** for å skrive ut hver faktura når den oppdateres. Velg **Etter** for å skrive ut når alle fakturaene er oppdatert.
     * Hvis du vil endre hvordan kundens kredittgrense kontrolleres før fakturaen er postert, kan du endre verdien i **Kredittmaks.type**-feltet.
+    * Du kan velge å stoppe postering av fritekstfaktura når det oppstår en feil på fanen **Oppdateringer** på siden **Kundeparametere** (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for parameteren **Stopp postering av fritekstfakturaer ved første feil** for å stoppe posteringen av fritekstfakturaer når det oppstår en feil. Hvis du posterer i en bunke, vil en feil stoppe posteringsprosessen og bunkestatusen settes til **Feil**. Hvis du ikke velger dette alternativet, hopper posteringsprosessen over en faktura med en posteringsfeil, og vil fortsette å postere flere fakturaer. Hvis du posterer i en bunke, vil ikke en posteringsfeil hindre at andre fakturaer posteres. Bunkestatusen vil være **Avsluttet**. En detaljert posteringsprosessrapport vil være tilgjengelig for gjennomgang i loggen for bunkejobber.
     * Velg **Ja** for å skrive ut fakturaen.
     * Velg **Ja** for å postere fakturaen. Du kan skrive ut fakturaen uten å postere den.
 
@@ -82,6 +83,12 @@ Når du har kopiert linjene, kan du redigere informasjonen etter behov.
 Du kan opprette en fritekstfaktura fra en mal. Når du velger **Ny fra mal** i kategorien **Faktura**, kan du velge et malnavn og kundekontoen for den nye fritekstfakturaen. Standardverdier, for eksempel betalingsbetingelsene og betalingsmåten, kan fylles inn automatisk fra kunden, eller du kan bruke verdier som ble lagret i malen.
 
 Det opprettes en ny fritekstfaktura, og du kan redigere verdiene etter behov.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>Tilbakestiller arbeidsflytstatusen for fritekstfakturaer fra Uopprettelig til Utkast
+En arbeidsflytforekomst som er stoppet på grunn av en uopprettelig feil, vil ha arbeidsflytstatusen **Uopprettelig**. Når statusen til en arbeidsflyt for en fritekstfaktura for en kunde er **Uopprettelig**, kan du tilbakestille den til **Utkast** ved å velge **Tilbakekall**. Du kan deretter redigere fritekstfakturaen for kunden. Denne funksjonen er tilgjengelig hvis parameteren **Tilbakestiller arbeidsflytstatusen for fritekstfakturaer fra Uopprettelig til Utkast** på siden **Funksjonsbehandling** er slått på.
+
+Du kan bruke siden **Arbeidsflytlogg** for å tilbakestille arbeidsflytstatusen til **Utkast**. Du kan åpne denne siden fra **Fritekstfaktura** eller fra **Felles > Forespørsler > Arbeidsflyt**. Hvis du vil tilbakestille arbeidsflytstatusen til **Utkast**, velger du **Tilbakekall**. Du kan også tilbakestille arbeidsflytstatusen til **Utkast** ved å velge handlingen **Tilbakekall** på siden **Fritekstfaktura** eller **Alle fritekstfakturaer**. Når arbeidsflytstatusen er tilbakestilt til **Utkast**, blir den tilgjengelig for redigering på siden **Fritekstfaktura**.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

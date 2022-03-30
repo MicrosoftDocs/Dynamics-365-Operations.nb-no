@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e9c97982233b1f3dc3924fa42954b5cb8d09ffcaa07d19a3892b25737a6c29c5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d8e098243688ebf6977db97130592443e269973
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778875"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408127"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>Formeldesigner for TDS-beregninger
 
@@ -44,7 +43,7 @@ I dette eksemplet er TDS-gruppen Leie knyttet til en innkjøpsfaktura som er opp
 | Tilleggsavgift (TDS-komponent – tilleggsavgift)                         | 10 %                                     | Ekskl. bruttobeløp | +TDS                              |                   10000                    | 1 000        |                       |
 | PE-Cess (TDS-komponent – PE-Cess)                            | 2 %                                      | Ekskl. bruttobeløp | +TDS+tilleggsavgift                    |                   11000                    | 220         |                       |
 | SHE Cess (TDS-komponent – SHE Cess)                          | 1 %                                      | Ekskl. bruttobeløp | +TDS+tilleggsavgift                    |                   11000                    | 110         |                       |
-| **Total** **TDS** **beregnet** **for** **fakturaen** | **11 330**                               |                    |                                   |                                            |             |                       |
+| **Total** **TDS** **beregnet** **for** **fak****turaen** | **11 330**                               |                    |                                   |                                            |             |                       |
 
 Bilagsoppføringene opprettes på følgende måte.
 

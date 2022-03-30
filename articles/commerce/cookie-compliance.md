@@ -2,7 +2,7 @@
 title: Samsvar for informasjonskapsel
 description: Dette emnet beskriver vurderinger for overholdelse av informasjonskapsler og standardpolicyene som er inkludert i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747703"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403153"
 ---
 # <a name="cookie-compliance"></a>Informasjonskapselsamsvar
 
@@ -58,6 +58,7 @@ Tabellen nedenfor viser gjeldende referanseliste over informasjonskapsler for Dy
 | \_msdyn365___aud_0                          | Lagrer segmentverdier som brukes av målretting, og brukes bare hvis målretting er konfigurert på en side eller et fragment forespurt av en områdebruker. Informasjonskapselen plasseres bare når segmentverdiene kommer fra en tredjeparts segmenteringsleverandør.      | 7 dager |
 | \_msdyn365___aud_1                           | Lagrer segmentverdier som brukes av målretting, og brukes bare hvis målretting er konfigurert på en side eller et fragment forespurt av en områdebruker. Informasjonskapselen plasseres bare når segmentverdiene kommer fra en tredjeparts segmenteringsleverandør.      | 7 dager |
 | \_msdyn365___aud_2                           | Lagrer segmentverdier som brukes av målretting, og brukes bare hvis målretting er konfigurert på en side eller et fragment forespurt av en områdebruker. Informasjonskapselen plasseres bare når segmentverdiene kommer fra en tredjeparts segmenteringsleverandør.      | 7 dager |
+| d365gi                                       | Denne informasjonskapselen lagrer geografiske lokasjonsdata når en tredjepartstilordningstjeneste brukes.      | 1 dag |
 
 Hvis en områdebruker velger noen koblinger på sosiale medier på et område, vil informasjonskapslene som ligger i tabellen nedenfor, også spores i nettleseren.
 
@@ -65,12 +66,12 @@ Hvis en områdebruker velger noen koblinger på sosiale medier på et område, v
 | Domene                      | Informasjonskapsel               | beskrivelse                                                  | Kilde                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | Synkronisering av ID for LinkedIn-annonser                                      | LinkedIn-oppdatering og innsiktstagg                                |
-| .linkedin.com               | li_sugr                  | Nettleser-ID                                           | LinkedIn-innsiktstagg hvis IP-adressen ikke er i et angitt land |
+| .linkedin.com               | li_sugr                  | Nettleser-ID                                           | LinkedIn Insight Tag hvis IP-adressen ikke er i et angitt land |
 | .linkedin.com               | BizographicsOptOut       | Bestemmer utmeldingsstatusen for tredjepartssporing.              | LinkedIn-gjestekontroller og bransjeutmeldingssider           |
 | .linkedin.com               | \_guid                    | Nettleser-ID for Google-annonser.                            | LinkedIn-oppdatering                                                |
 | .linkedin.com               | li_oatml                 | Indikrekte medlems-ID for konverteringssporing, ny målretting og analyse. | LinkedIn-annonser og innsiktstagger                                |
 | Diverse førstepartsdomener | li_fat_id                | Indikrekte medlems-ID for konverteringssporing, ny målretting og analyse. | LinkedIn-annonser og innsiktstagger                                |
-| .adsymptotic.com            | U                        | Nettleser-ID                                           | LinkedIn-innsiktstagg hvis IP-adressen ikke er i et angitt land |
+| .adsymptotic.com            | U                        | Nettleser-ID                                           | LinkedIn Insight Tag hvis IP-adressen ikke er i et angitt land |
 | .linkedin.com                | bcookie                  | Informasjonkapsel for nettleser-ID                                            | Forespørsler til LinkedIn                                         |
 | .linkedin.com                | bscookie                 | Informasjonskapsel for sikker nettleser                                        | Forespørsler til LinkedIn                                         |
 | .linkedin.com               | lang                     | Angir standard nasjonal innstilling og standardspråk.                                 | Forespørsler til LinkedIn                                         |

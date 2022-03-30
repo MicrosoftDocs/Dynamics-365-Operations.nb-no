@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087172"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407851"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesprosess for planleggingsoptimalisering og utgivelseslogg
 
@@ -33,6 +33,7 @@ Siden varslinger ikke vises når planleggingsoptimalisering oppdateres i miljøe
 
 | Endringer | Detaljer for funksjonsbehandling | Frigivelsesdatoer |
 |---|---|---|
+| <p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer.<p>Sentralisert kalendervedlikehold i Planleggingsoptimalisering<p>Forslag fra Planleggingsoptimalisering for å optimalisere eksisterende forsyning | Ingen funksjonsbehandling er nødvendig. | 7. til 11. mars 2022 |
 | <p>Mer planleggingsprioritet for produksjonsordrer. | Tilgjengelig med versjon 10.0.25 som en del av funksjonen kalt for *Prioritetsdrevet MRP-støtte for planleggingsoptimalisering*. | 12. til 18. november 2021 |
 | <p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Ingen funksjonsbehandling er nødvendig. | 12. til 18. november 2021 |
 | <p>Ekstra støtte for beregningsformler for prosesstid, produksjonsrute med overlapping og operasjonsnummer for produksjon på behovstransaksjoner.</p><p>Utvidede feilmeldinger for produksjonsplanlegging relatert til tidsavbrudd, kapasitet kan ikke blir funnet og rutekort.</p><p>Forbedret konsistens ved beregning av mottaksdatoer og avgangsdatoer på både planlagte ordrer og autoriserte ordrer.</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* | 22. til 27. oktober 2021 |

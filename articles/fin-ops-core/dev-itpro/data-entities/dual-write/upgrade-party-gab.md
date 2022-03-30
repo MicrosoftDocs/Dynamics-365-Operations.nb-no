@@ -2,19 +2,19 @@
 title: Oppgrader til parten og den globale adressebokmodellen
 description: Dette emnet beskriver hvordan du oppgraderer data for dobbel skriving til partsmodellen og den globale adressebokmodellen.
 author: RamaKrishnamoorthy
-ms.date: 03/31/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 579a7d19ee7196d3242c78bd9915df24ec479c31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060491"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407801"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Oppgrader til parten og den globale adressebokmodellen
 
@@ -151,13 +151,19 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
 ## <a name="run-the-templates"></a>Kjør malene
 
-1. Stopp følgende dobbel skriving-tilordninger for **Konto**, **Kontakt** og **Leverandør** som bruker Finance and Operations-appen:
+1. Stopp følgende dobbel skriving-tilordninger for **Part**, **Konto**, **Kontakt** og **Leverandør** som bruker økonomi- og driftsapper:
 
+    + CDS-parter (msdyn_parties) 
     + Kunder V3 (kontoer)
     + Kunder V3 (kontakter)
     + CDS-kontakter V2 (kontakter)
     + CDS-kontakter V2 (kontakter)
     + Leverandør V2 (msdyn_vendor)
+    + Kontakter V2 (msdyn_contactforparties)
+    + Postadressesteder for CDS-part (msdyn_partypostaladdresses)
+    + Historikk for CDS-postadresse V2 (msdyn_postaladdresses)
+    + CDS-postadressesteder (msdyn_postaladdresscollections)
+    + Partskontakter V3 (msdyn_partyelectronicaddresses)
 
 2. Kontroller at tilordningene er fjernet fra **msdy_dualwriteruntimeconfig**-tabellen i Dataverse.
 3. Installer [Løsninger for part med dobbel skriving og global adressebok](https://aka.ms/dual-write-gab) fra AppSource.

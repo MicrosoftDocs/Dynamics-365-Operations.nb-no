@@ -2,41 +2,40 @@
 title: Journalføre posterte journaloppføringer
 description: Denne fremgangsmåten viser hvordan du journalfører posterte journaloppføringer.
 author: aprilolson
-ms.date: 08/09/2019
+ms.date: 03/09/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 519431684cd26d566ae4c9dd75010d5c98881b602681211908c0c70215448fea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d8fca167563b14c825ebe29874c6488ddfb4d9a
+ms.sourcegitcommit: 06acdfbccd7bd213a2397ea7b85d104f01914437
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738461"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8400881"
 ---
-# <a name="journalize-posted-journal-entries"></a>Journalføre posterte journaloppføringer
+# <a name="journalize-posted-journal-entries"></a>Journalfør posterte journaloppføringer
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten viser hvordan du journalfører posterte journaloppføringer. Denne prosedyren bruker demonstrasjonsdatafirmaet USMF.
+Journalføringsprosessen i økonomimodulen brukes til å gruppere og rapportere posterte bilagsoppføringer for økonomimodulen. På grunnlag av kriteriene du oppgir, genererer behandlingen en liste over bilag som bruker en unik nummerserie, og som har verdien for **Journalnummer** i økonomimodulen som referanse.
 
-1. I **Navigasjonsrute** går du til **Moduler > Økonomimodul > Finansoppsett > Parametere for økonomimodul**.
-2. Feltet **Utvidet finansjournal** kan settes til Ja eller Nei. Hvis Ja, blir rapportutdataene forskjellige.
-3. Velg om perioden kan lukkes hvis journalføringsprosessen ikke har blitt kjørt. Hvis dette alternativet er satt til Ja, kan ikke perioden lukkes før journalføringsprosessen er fullført for denne perioden.  
+Følg denne fremgangsmåten for å journalføre posterte journaloppføringer. Denne prosedyren bruker demonstrasjonsdatafirmaet **USMF**.
+
+1. Gå til **Økonomimodul** \> **Finansoppsett** \> **Parametere for økonomimodul**.
+2. Velg en verdi i feltet **Utvidet finansjournal**. Hvis du velger **Ja**, blir rapportutdataene forskjellige.
+3. Velg om perioden kan lukkes hvis journalføringsprosessen ikke har blitt kjørt. Hvis du velger **Ja**, kan ikke perioden lukkes før journalføringsprosessen er fullført for denne perioden.
 4. Lukk siden.
-5. Gå til **Moduler > Økonomimodul > Periodiske oppgaver > Journalføring** i **Navigasjonsruten**.
-6. Klikk **Filter**.
-7. Uthev raden med filterkriteriene som du vil definere.
-8. Angi eller velg filterkriteriene i **Kriterier**-feltet.
-9. Klikk på **OK** for å lukke filtersiden.
-10. Klikk på **OK** for å starte journalføringsprosessen. En rapport blir generert når prosessen er fullført.  
-
-
+5. Gå til **Økonomimodul** \> **Periodiske oppgaver** \> **Journalføring**, og velg **Filter**
+6. Velg raden for filterkriteriene som du vil definere.
+7. Angi eller velg filterkriteriene i **Kriterier**-feltet.
+8. Velg **OK** for å lukke siden.
+9. Velg **OK** for å starte journalføringsprosessen. En rapport blir generert når prosessen er fullført.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

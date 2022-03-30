@@ -2,19 +2,19 @@
 title: Part og global adressebok
 description: Dette emnet beskriver funksjonaliteten for part og global adressebok for dobbel skriving.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060338"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407771"
 ---
 # <a name="party-and-global-address-book"></a>Part og global adressebok
 
@@ -226,9 +226,9 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
 
     ![Duplikatregel for kontakter.](media/duplicate-rule-2.PNG)
 
-11. Hvis du er en eksisterende kunde med dobbel skriving, følger du instruksjonene i [Oppgrader til parten og den globale adressebokmodellen](upgrade-party-gab.md) og oppgraderer dataene.
+11. Hvis du er en eksisterende kunde med dobbel skriving, følger du instruksjonene i [Oppgrader til parten og den globale adressebokmodellen](upgrade-party-gab.md) og oppgraderer dataene. **Ikke gå videre til trinn 12 uten å fullføre dette trinnet.** Hvis du er en ny bruker av dobbel skriving, kan du gå videre til trinn 12.
 
-12. Kjør tilordningene i følgende rekkefølge. Hvis du får en feilmelding som angir at "prosjektvalidering mislyktes. Manglende målfelt...", åpner du kartet og velger **Oppdater tabeller**. Deretter kjører du kartet.
+12. Hvis du er en eksisterende bruker av dobbel skriving, fullfører du trinn 11, og deretter kan du kjøre tilordningene i denne rekkefølgen: Hvis du er en ny kunde av dobbel skriving, kan du fortsette direkte. Hvis du får en feilmelding som angir at "prosjektvalidering mislyktes. Manglende målfelt...", åpner du kartet og velger **Oppdater tabeller** og kjører deretter kartet.
 
     Økonomi- og driftsapper | Kundeengasjementsapp  
     ----------------------------|------------------------

@@ -2,7 +2,7 @@
 title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384726"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396555"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -31,6 +31,18 @@ Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i pl
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
 Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
+
+## <a name="feature-removal-effective-march-14-2022"></a>Fjerning av funksjoner gjelder fra 14. mars 2022
+
+### <a name="xslt-scripting-in-data-management"></a>XSLT-skripting i Dataadministrasjon
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Støtten for XSLT-skripting i Dataadministrasjon er avskrevet for å forbedre sikkerhet og databeskyttelse i økonomi- og driftsapper.  |
+| **Erstattet med en annen funksjon?**   | Nei Kunder og Internett-leverandører bør vurdere reimplementing av løsningene sine basert på X++-språket i stedet for XSLT-skripting. |
+| **Berørte produktområder**         | Økonomi- og driftsapper. |
+| **Distribusjonsalternativ**              | Alle. |
+| **Status**                         | Avskrevet – planlagt fjerningsdato er 14. mars 2022.<br><br>Unntak: Kunder som for øyeblikket bruker XLST-skripting. De kan fortsette å bruke det til de oppdaterer til versjon 10.0.30 eller senere. Kunder med dette unntaket har mottatt en melding i meldingssenteret som er tilgjengelig i Microsoft 365-administrasjonssenteret. |
 
 ## <a name="feature-removal-effective-october-2021"></a>Fjerning av funksjoner gjelder fra oktober 2021
 
