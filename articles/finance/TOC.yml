@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (februar)
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (januar)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -414,8 +412,20 @@
               items:
                 - name: Oversikt over abonnementsfakturering
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Konfigurer faktureringsplaner
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: Regelmessig kontraktfakturering
+                  items:
+                    - name: Opprett faktureringsplaner
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: Kopier en faktureringsplan
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Milepælfakturering
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: Avslutt faktureringsplaner
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: Inntekts- og utgiftsutsettelser
+                  items: null
+                - name: Inntektstildeling for flere elementer
+                  items: null
             - name: Betalinger og utligninger
               items:
                 - name: Oversikt over kundebetaling
@@ -1443,11 +1453,11 @@
                             - name: Konfigurer en SharePoint-kanal
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Konfigurer og bruk elektronisk fakturering med Finance og Supply Chain Management
-                          items: null
-                        - name: Aktiver og konfigurer integrering med elektronisk fakturering
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurer parametere for elektronisk fakturering
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: Aktiver og konfigurer integrering med elektronisk fakturering
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: Konfigurer parametere for elektronisk fakturering
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Arbeid med elektronisk fakturering
                           items:
                             - name: Send elektroniske dokumenter til elektronisk fakturering
@@ -1532,6 +1542,10 @@
                           items:
                             - name: Mva-deklarering
                               href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: Finsk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
                         - name: Fransk rapportering
                           items:
                             - name: Mva-deklarering
@@ -1546,9 +1560,13 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-salgsliste
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Norsk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-nor-vat-declaration.md
                         - name: Spansk rapportering
                           items:
-                            - name: 'Umiddelbar forsyning av informasjon om mva (Suministro Inmediato de Información del IVA, SII)'
+                            - name: 'Umiddelbar forsyning av informasjon om mva. (Suministro Inmediato de Información del IVA, SII)'
                               href: localizations/emea-esp-sii-spain.md
                             - name: Mva-deklarering
                               href: localizations/emea-esp-vat-declaration-spain.md
@@ -1564,10 +1582,6 @@
                           items:
                             - name: Mva-deklarering
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Norsk rapportering
-                          items:
-                            - name: Mva-deklarering
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Aktiver avgiftsberegning for overføringsordre
                       items:
                         - name: Støtte for avgiftsfunksjon for overføringsordrer
@@ -1694,8 +1708,6 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Emballasjematerialegebyrer
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Mva-oppgave
-                  href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport for tjenester over grenser
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: Østerriksk Intrastat
@@ -2020,9 +2032,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: Oppdater hvordan beløp vises i rapporter og dokumenter
                   href: localizations/emea-amount-printing-forms.md
-                - name: Mva-oppgave
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: Mva-deklarering (Tsjekkia)
+                - name: Mva-deklarering
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Tsjekkisk Intrastat
                   href: localizations/emea-cze-intrastat.md
@@ -2060,6 +2070,8 @@
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: Dansk Intrastat
                   href: localizations/emea-dnk-intrastat.md
+                - name: Mva-deklarering
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Egypt
               items:
                 - name: Oversikt over Egypt
@@ -2242,6 +2254,8 @@
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
                 - name: Finsk Intrastat
                   href: localizations/emea-fin-intrastat.md
+                - name: Mva-deklarering
+                  href: localizations/emea-fin-vat-declaration.md
             - name: Frankrike
               items:
                 - name: Oversikt over Frankrike
@@ -2332,12 +2346,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Mva-deklarering
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: Elektronisk overføring av mva-deklarering (ELSTER)
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Tysk Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Mva-oppgave
-                  href: localizations/emea-de-vat-declaration.md
                 - name: Rapport om elektroniske fakturaer for kunde
                   href: localizations/emea-deu-e-invoices.md
                 - name: Journallisterapport
@@ -2348,8 +2358,6 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU-salgsliste
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: Mva-deklarering
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Ungarn
               items:
                 - name: Oversikt over Ungarn
@@ -2558,13 +2566,15 @@
                                   href: localizations/apac-ind-GST-return-order-form.md
                             - name: Utenlandske transaksjoner
                               items:
-                                - name: Importere varer som har GST
+                                - name: Importer varer som har GST
                                   href: localizations/apac-ind-GST-import-goods-gst.md
-                                - name: Importere tjenester som har GST
+                                - name: Importer tjenester som har GST
                                   href: localizations/apac-ind-import-services-gst.md
-                                - name: Eksportere varer som er momsfrie
+                                - name: Tildeling av tillegg på stykklisteoppføringsside for importordrer
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
+                                - name: Eksporter varer som er momsfrie
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
-                                - name: Eksportere tjenester som er momsfrie
+                                - name: Eksporter tjenester som er momsfrie
                                   href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                                 - name: Kredit- eller debetnota mot en eksportordre
                                   href: localizations/apac-ind-GST-credit-debit-note-against-export-order.md
@@ -3116,17 +3126,13 @@
               items:
                 - name: Oversikt over Nederland
                   href: localizations/netherlands.md
-                - name: Mva-deklarering
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: Elektroniske avgiftsdeklareringer (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integrering
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Revisjonsfil (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: Mva-deklarering (Nederland)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: Nederlandsk Intrastat
+                - name: Intrastat
                   href: localizations/emea-nl-intrastat.md
                 - name: EU-salgsliste
                   href: localizations/emea-nl-EU-sales-list.md
@@ -3536,11 +3542,11 @@
                   href: localizations/sweden.md
                 - name: Eksportere økonomisk informasjon til revisorer i Sverige
                   href: localizations/emea-swe-sie-standard-report.md
-                - name: Importere betalingsformater
+                - name: Importer betalingsformater
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Rapport for mva-betaling for Sverige
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: Mva-deklarering for Sverige
+                - name: Mva-deklarering
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Svensk Intrastat
                   href: localizations/emea-swe-intrastat.md
