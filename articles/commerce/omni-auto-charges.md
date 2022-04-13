@@ -2,7 +2,7 @@
 title: Avanserte automatiske tillegg for omnikanal
 description: Dette emnet beskriver funksjoner for å håndtere andre ordregebyrer for handelskanalordrer ved hjelp av funksjoner for avanserte automatiske gebyrer.
 author: hhaines
-ms.date: 03/30/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
+ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743437"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "8489624"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avanserte automatiske tillegg for omnikanal
 
@@ -187,6 +187,9 @@ Hvis årsakskoder er registrert for overskrevne gebyrer, finnes det også en ny 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Refundere tillegg i en returtransaksjon på salgsstedet
 
 Hvis parameteren **Bruk avanserte automatiske gebyrer** er satt til **Ja**, er ikke den eksisterende handelsparameteren for **Refundering av forsendelseskostnader** lenger tilgjengelig. For å angi hvilke tillegg som skal refunderes systematisk til en kunde ved bruk av avanserte automatiske gebyrer, må du kontrollere at den tilknyttede gebyrkoden er konfigurert som **Refunderbar** på oppsettssiden for **Tilleggskode**. Kontroller at innstillingene er synkronisert til handelskanaldatabasene via distribusjonplanbehandlingen.
+
+> [!TIP]
+> For retningslinjer som vil hjelpe deg med å sikre at refunderbare tillegg på linjenivå beregnes på grunnlag av antallet som returneres, kan du se [Refunderbare tillegg beregnes ikke på grunnlag av returnert antall](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Refundere tillegg i en returordretransaksjon
 

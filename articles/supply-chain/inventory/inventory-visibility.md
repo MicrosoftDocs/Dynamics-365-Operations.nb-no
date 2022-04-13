@@ -2,52 +2,74 @@
 title: Oversikt over tillegget for lagersynlighet
 description: Dette emnet beskriver hva lagersynlighet er, og beskriver funksjonene i det.
 author: yufeihuang
-ms.date: 10/26/2020
+ms.date: 03/18/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 8871d10dac9103f17780989bc547b6c20ba79b76
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ee6229937ea27adf231dcd1c9921878e53bd981
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985552"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524500"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Oversikt over tillegget for lagersynlighet
 
 [!include [banner](../includes/banner.md)]
 
-Tillegget for lagersynlighet (også referert til som *Lagersynlighet*), er en uavhengig og høyt skalerbar mikrotjeneste som aktiverer beholdningssporing i sanntid. Det har derfor en global visning av lageret.
+Tillegget for lagersynlighet (også referert til som *Lagersynlighet*-tjenesten), tilbyr en uavhengig og høyt skalerbar mikrotjeneste som muliggjør posteringer av beholdningsendringer og synlighetssporing i sanntid på tvers av alle datakilder og kanaler. Her finner du en plattform som gjør det mulig å administrere det globale lageret ved hjelp av funksjonalitet som inkluderer (men som ikke er begrenset til) følgende liste:
 
-Eksterne systemer får tilgang til tjenesten via RESTful API-er. På den måten kan de enten utføre spørringer på lagerbeholdningsinformasjon på gitte sett med dimensjoner, eller foreta endringer i lageret i forskjellige tilpassede datakilder.
+- Sentral sporing av den siste lagerstatusen (for eksempel beholdning, bestilt, kjøpt, i transitt, returnert og satt i karantene) på tvers av alle datakildene, lagrene og lokasjonene ved å koble Supply Chain Management eller datakilder fra tredjepartslogistikk (for eksempel ordrestyringssystemer, tredjeparts systemer for ressursplanlegging for bedrifter \[ERP\], salgsstedssystemer \[POS\] og lagerstyringssystemer) i Lagersynlighet-tjenesten.
+- Spør om tilgjengelighet og mangler for lagerbeholdning, og få umiddelbare svar ved å kalle opp Lagerstyring-tjenesten direkte.
+- Unngå oversalg, spesielt når behovet kommer fra ulike kanaler, ved å foreta myke reserveringer i sanntid i Lagersynlighet-tjenesten.
+- Bedre styring av lovte ordrer og kundeforventninger ved å angi nøyaktige nåværende eller neste tilgjengelige datoer, slik at ATP-funksjonen i omnikanal (tilgjengelig for ordre) kan beregne forventede datoer for innfrielse av ordrer.
 
-Som en mikrotjeneste som er bygd på Microsoft Dataverse, er det mulig å utvide Lagersynlighet. Du kan bruke Power Apps til å bygge apper. Du kan også bruke Power BI til å tilby tilpasset funksjonalitet som oppfyller dine forretningskrav.
+## <a name="extensibility"></a>Utvidelsesmuligheter
 
-Du kan integrere lagersynligheten med flere tredjepartssystemer ved å angi konfigurasjonsalternativer for standardiserte lagerdimensjoner og definere transaksjonstyper. Lagersynlighet støtter også tilpasset utvidelse gjennom konfigurerbare beregnede antall.
+Tjenesten Lagersynlighet er svært utvidbar, fordi datainndata og utdata ikke er begrenset til Microsoft-apper. Eksterne systemer kan få tilgang til tjenesten via RESTful-API-er (Application Programming Interface). I tillegg til å bruke medfølgende tilordninger som er angitt for Supply Chain Management-datakilden og -dimensjonene, kan du integrere Lagersynlighet med flere tredjepartssystemer ved å definere flere datakilder, lagerstatusmål (referert til som *fysiske mål* i Lagersynlighet-tjenesten) og lagerdimensjoner via konfigurasjonsappen. På denne måten kan du utføre fleksible spørringer og endre dine mange datakilder og forhåndsdefinerte lagerdimensjoner.
 
-## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Integrering av lagersynlighet med Dynamics 365 Supply Chain Management
+Fordi Lagersynlighet er bygd på Microsoft Dataverse, kan dessuten dataene brukes til å bygge og integreres med Power Apps. Du kan også bruke Power BI til å opprette tilpassede instrumentbord som oppfyller dine forretningskrav.
 
-Den integrerte løsningen henter lagerdata fra Dynamics 365 Supply Chain Management og sporer lagerendringer kontinuerlig. Hvis du vil ha mer informasjon, kan du se [Installere og definere lagersynlighet](inventory-visibility-setup.md) og [Konfigurere lagersynlighet](inventory-visibility-configuration.md).
+## <a name="scalability"></a>Skalerbarhet
 
-## <a name="get-a-global-view-of-inventory"></a>Få en global visning av lager
+Lagersynlighet-tjenesten kan skaleres opp eller ned, avhengig av datavolumet. Skalerbarhetsopplevelsen er som regel sømløs og utføres av Microsofts plattformteam, basert på automatisk registrering og vurdering av transaksjonsdatavolumet.
 
-Med den integrerte løsningen kan du definere dine egne datakilder og sentralisere lagerdata. Hvis du vil ha mer informasjon, kan du se [Konfigurere Lagersynlighet](inventory-visibility-configuration.md).
+## <a name="feature-highlights"></a>Funksjonsfremhevinger
 
-Det er to måter å vise lageret på:
+### <a name="get-a-global-view-of-real-time-inventory"></a>Få en global visning av beholdning i sanntid
 
-- Send inn en spørring via API-en med høy ytelse. Denne API-en kan returnere lagerdata i sanntid direkte fra en hurtigbufret forekomst. Du finner kontrakter og eksempler i [offentlige API-er for lagersynlighet](inventory-visibility-api.md).
-- Vis råvarelisten. Denne listen synkroniseres periodisk fra en hurtigbufret forekomst, og vises i Dataverse. Hvis du vil ha mer informasjon, kan du se [App for lagersynlighet](inventory-visibility-power-platform.md).
+Lagersynlighet sikrer at du har tilgang til de mest oppdaterte lagerantallene til enhver tid, på tvers av alle kanalene, lokasjonene og lagrene. Du vil dra mest nytte av å bruke det til å støtte den daglige driften hver gang du må hente lagerposter. Fysisk lagerbeholdning, antall solgt og antall kjøpt, er alle tilgjengelige fra boksen. Du kan også konfigurere andre fysiske lagermål (for eksempel returnerte, satt i karantene og posterte data) etter behov, for å hente disse opplysningene i sanntid. Lagersynlighet kan på en effektiv måte behandle millioner av lagerendringsposter. Disse dataene kan samles opp og gjenspeiles i de siste lagerantallene i tjenesten umiddelbart, per sekund eller per minutt, avhengig av intervallet som dataene er postert i. Hvis du vil ha mer informasjon, kan du se [Offentlige API-er for lagersynlighet](inventory-visibility-api.md).
 
-## <a name="soft-reservations"></a>Ikke-forpliktende reservasjoner
+### <a name="soft-reservation-to-avoid-overselling-across-all-order-channels"></a>Myk reservasjon for å unngå oversalg over alle ordrekanalene
 
-Ikke-forpliktende reservasjon gjelder når en virksomhet må reservere et bestemt antall produkter som skal støttes, for eksempel innfrielse av salgsordrer, som unngår oversalg. Når en salgsordre opprettes og bekreftes i Supply Chain Management eller andre ordrestyringssystemer, sendes det en forespørsel om å reservere antallet til Lagersynlighet. Med Lagersynlighet kan du reservere produkter som har dimensjonsdetaljer og bestemte lagertransaksjonstyper. (Hvis du vil ha mer informasjon, kan du se [Appen Lagersynlighet](inventory-visibility-power-platform.md).) Når antallet er reservert, returneres en reservasjons-ID. Du kan bruke denne reservasjons-ID-en til å koble tilbake til den opprinnelige ordren i Supply Chain Management eller andre ordrestyringssystemer.
+Med *en myk reservasjon* kan du tilordne eller merke bestemte antall for å oppfylle en ordre eller et behov. En myk reservering påvirker ikke den fysiske beholdningen, men trekker fra beholdningsantallet som er *tilgjengelig for reservering*, og gir et oppdatert antall for fremtidig innfrielse av ordren. Denne funksjonen vil være nyttig hvis det kommer salgsforespørsler eller ordrer inn i virksomheten fra én eller flere kanaler eller datakilder som er utenfor ERP-systemet for planlegging av systemoppføringer.
 
-Funksjonaliteten er utformet slik at en reservasjon i Lagersynlighet ikke endrer det totale antallet. I stedet flagger den bare det reserverte antallet. (Av denne grunnen kalles dette for en *ikke-forpliktende reservasjon*.) Det ikke-forpliktende reserverte antallet kan motposteres når produktene forbrukes i Supply Chain Management eller et tredjepartssystem, ved å kalle API-en på nytt for å gjøre et antallsfratrekk og oppdatere det totale antallet i Lagersynlighet. Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](inventory-visibility-reservations.md).
+Hvis du ikke bruker myke reserveringer i Lagersynlighet-tjenesten, må du vente til ordren er synkronisert til og behandlet av ERP-systemet for å få en oppdatering av det fysiske beholdningsantallet. Denne prosessen har vanligvis stor ventetid. Myke reserveringer har imidlertid umiddelbar innvirkning hver gang en salgsforespørsel eller ordre genereres i salgskanalene. De bidrar derfor til å forhindre oversalgssituasjoner ved å sørge for at omnikanalordrene ikke påvirker hverandre når de til slutt når ERP-systemet. Myke reserveringer sikrer også at du kan oppfylle alle ordrene du har lovt. Derfor hjelper de deg til å innfri kundenes forventninger og opprettholde kundelojaliteten. Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](inventory-visibility-reservations.md).
+
+### <a name="immediate-response-of-atp-dates-confirmation"></a>Umiddelbart svar på ATP-datobekreftelse
+
+Det er viktig å se nærmere på prosjektert lagerbeholdning (blant annet informasjon om forsyning, etterspørsel og prosjektert lagerbeholdning), fordi det hjelper firmaet ditt med å oppnå følgende mål:
+
+- Minimer beholdningsnivåer for å redusere kostnadene til beholdningsstyring.
+- Støtt intern ordrebehandling, slik at selgere kan beregne forsendelses- og leveringsdatoer basert på tilgjengeligheten av produktene som er bestilt.
+- Sørg for oversikt over når kunder kan forvente at en vare som ikke er på lager, skal bli tilgjengelig, ved å angi neste tilgjengelige dato.
+
+ATP-funksjonen er enkel å ta i bruk i din daglige innfrielsesprosess. På samme måte som andre Lagersynlighet-tilbud er ATP-funksjonen *global og i sanntid*. Derfor kan du konfigurere flere ATP-beregningsformler for å ha spørringer om fullstendig beholdningstilgjengelighet som dekker alle forretningskanalene og datakildene. Hvis du vil ha mer informasjon, kan du se [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md).
+
+### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilitet med avanserte Warehouse Management-varer
+
+Microsoft har som mål å gi direkte integrering med avansert Warehouse Management (WHS), slik at WHS-kunder også kan benytte seg av fordelene til Lagersynlighet-tjenesten. Per versjonen i bølge 1 i 2022 (offentlig forhåndsversjon i mars), støtter beholdningstjenesten WHS-varebeholdningsspørringer og ATP. Funksjonen for myk reservering og tildeling vil bli støttet for WHS-kunder i neste bølge. <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+
+## <a name="licensing"></a>Lisensiering
+
+Lagersynlighet-tjenesten er tilgjengelig i følgende versjoner:
+
+- **Lagersynlighet-tillegg for Microsoft Dynamics 365 Supply Chain Management** – For firmaer som har en gyldig Supply Chain Management-lisens, er Lagersynlighet tilgjengelig uten ekstra lisenskostnader. Du kan begynne å prøve det ut i dag. Hvis du vil ha mer informasjon om installasjonen, kan du se [Installere og definere lagersynlighet](inventory-visibility-setup.md).
+- **Lagersynlighet-tjenesten som en komponent i IOM** – Denne versjonen er enten for IOM-kunder (Intelligent Order Management) eller firmaer som ikke bruker Supply Chain Management som sitt ERP-system. Lisensen er inkludert i IOM-bunten. Hvis du vil ha mer informasjon, kan du se [Oversikt over Intelligent Order Management](/dynamics365/intelligent-order-management/overview).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

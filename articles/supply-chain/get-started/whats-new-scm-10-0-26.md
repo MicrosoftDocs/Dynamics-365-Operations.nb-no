@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: fae25eb1cb9dd4059b9d49e47cbb0060e717c9bc
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8387000"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524444"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.26 (mai 2022)
 
@@ -35,7 +35,7 @@ Denne tabellen viser funksjonene i denne versjonen. Dette emnet kan være oppdat
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
 | Lager og logistikk | [Beholdningsspørring for lagersynlighet for å støtte varer i avansert lagerstyring](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Kommer snart | Funksjonsbehandling:<br>*Aktiver lagervarer i lagersynlighet* |
-| Lager og logistikk | [Tilgjengelig for ordre for tilleggsprogrammet for lagersynlighet](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | Kommer snart | Aktivert av tjenestekonfigurasjon |
+| Lager og logistikk | [Tilgjengelig for ordre for tilleggsprogrammet for lagersynlighet](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](../inventory/inventory-visibility-available-to-promise.md) | Aktivert av tjenestekonfigurasjon |
 | Produksjon | [Faktisk vekt-varer for grensesnittet for produksjonsutførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*(Forhåndsversjon) Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse* |
 | Produksjon | Fanen Mine jobber i grensesnittet for produksjonsutførelse <!-- KFM: Add link to release plan when available --> | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*Fanen Mine jobber i grensesnittet for produksjonsutførelse* |
 

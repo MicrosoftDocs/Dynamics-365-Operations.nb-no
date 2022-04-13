@@ -1,8 +1,8 @@
 ---
-title: Definere utvidet påloggingsfunksjonalitet for MPOS og Cloud POS
-description: Dette emnet dekker alternativene for å definere utvidet pålogging for Cloud POS og Retail Modern POS (MPOS).
-author: boycezhu
-ms.date: 09/07/2021
+title: Konfigurere og bruke utvidet påloggingsfunksjonalitet
+description: Dette emnet beskriver hvordan du konfigurerer og bruker den utvidede påloggingsfunksjonaliteten i Microsoft Dynamics 365 Commerce-salgsstedsappen.
+author: boycez
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,56 +16,52 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
+ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478677"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491445"
 ---
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS
+# <a name="set-up-and-use-the-extended-logon-capability"></a>Konfigurere og bruke utvidet påloggingsfunksjonalitet
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker alternativene for å definere utvidet pålogging for Cloud POS og Retail Modern POS (MPOS).
+Dette emnet beskriver hvordan du konfigurerer og bruker den utvidede påloggingsfunksjonaliteten i Microsoft Dynamics 365 Commerce-salgsstedsappen.
 
-## <a name="setting-up-extended-logon"></a>Definere utvidet pålogging
+Sky-POS (CPOS) og Magnet POS (MPOS) gir en utvidet påloggingsfunksjonalitet som gjør det mulig for detaljhandelsarbeidere å logge seg på POS-appen ved å skanne en strekkode eller sveipe et kort ved hjelp av en kortleser.
 
-Du finner oppsettet for strekkodemasker på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Salgsstedsprofiler** &gt; **Funksjonalitetsprofiler**. Hurtigkategorien **Funksjoner** inneholder følgende alternativer som er knyttet til utvidet pålogging.
+## <a name="set-up-extended-logon"></a>Konfigurere utvidet pålogging
 
-### <a name="staff-bar-code-logon"></a>Strekkodepålogging for stab
+Følg denne fremgangsmåten for å konfigurere utvidet pålogging for POS-kasser i en detaljhandelsbutikk.
 
-Når alternativet **Strekkodepålogging for stab** er aktivert, kan arbeidere som har en utvidet pålogging tilordnet til legitimasjon for salgssted, logge på ved hjelp av en strekkode.
+1. In Commerce Headquarters går du til **Retail og Commerce \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Funksjonalitetsprofiler**. 
+2. Velg funksjonalitetsprofilen som er knyttet til detaljhandelsbutikken, i den venstre navigasjonsruten.
+3. På hurtigfanen **Funksjoner**, under **Flere alternativer for påloggingsgodkjenning** angir du følgende alternativer til **Ja** eller **Nei**, etter behov:
 
-### <a name="staff-bar-code-logon-requires-password"></a>Stabspålogging med strekkode krever passord
+    - **Strekkodepålogging for stab** – Sett dette alternativet til **Ja** hvis du vil at arbeiderne skal logge seg på salgsstedet ved å skanne en strekkode. 
+    - **Stabspålogging med strekkode krever passord** – Sett dette alternativet til **Ja** hvis du vil at arbeiderne skal angi et passord når de logger seg på salgsstedet ved å skanne en strekkode.
+    - **Kortpålogging for stab** – Sett dette alternativet til **Ja** hvis du vil at arbeiderne skal logge seg på salgsstedet ved å sveipe et kort.
+    - **Stabspålogging med kort krever passord** – Sett dette alternativet til **Ja** hvis du vil at arbeiderne skal angi et passord når de logger seg på salgsstedet ved å sveipe et kort.
 
-Når alternativet **Stabspålogging med strekkode krever passord** er aktivert, velger stabspålogging med strekkode bare arbeideren som er tilordnet til den utvidede påloggingen som vises. Arbeidere må fremdeles angi passord når dette alternativet er aktivert.
+Strekkoden eller kortet er knyttet til legitimasjon som kan tilordnes en arbeider. Legitimasjonen må ha minst seks tegn. Strengen som inneholder de første fem tegnene, må være unik, og regnes som en *legitimasjons-ID* som brukes til å slå opp en arbeider. Resten av tegnene brukes til sikkerhetsverifisering. Du har for eksempel to kort, ett med legitimasjonen 12345DGYDEYTDW og ett med legitimasjonen 12345EWUTBDAJH. Siden disse to kortene har samme legitimasjons-ID, 12345, kan ikke begge tilordnes arbeidere.
 
-### <a name="staff-card-logon"></a>Kortpålogging for stab
-
-Når alternativet **Kortpålogging for stab** er aktivert, kan arbeidere som har en utvidet pålogging tilordnet til legitimasjon for salgssted, logge på ved hjelp av en kortleser.
-
-### <a name="staff-card-logon-requires-password"></a>Stabspålogging med kort krever passord
-
-Når alternativet **Stabspålogging med kort krever passord** er aktivert, velger stabspålogging med kort bare arbeideren som er tilordnet til den utvidede påloggingen som vises. Arbeidere må fremdeles angi passord når dette alternativet er aktivert.
-
-## <a name="assigning-an-extended-logon"></a>Tilordne en utvidet pålogging
+## <a name="assign-extended-logon"></a>Tilordne utvidet pålogging
 
 Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du vil tilordne utvidet pålogging, kan du gå til **Utvidet pålogging** i POS. Søk deretter etter en arbeider ved å angi arbeiderens operatør-ID i søkefeltet. Velg arbeideren, og klikk deretter **Tilordne**. Dra eller skann utvidet pålogging for å tilordne arbeideren på neste side. Hvis dra eller skanning blir lest, blir **OK**-knappen tilgjengelig. Klikk **OK** for å lagre den utvidede påloggingen for denne arbeideren.
 
-## <a name="deleting-an-extended-logon"></a>Slette en utvidet pålogging
+## <a name="delete-extended-logon"></a>Slett utvidet pålogging
 
 Du kan slette den utvidede påloggingen som er tilordnet til en arbeider, ved å søke etter arbeideren ved hjelp av **Utvidet pålogging** operasjonen. Velg arbeideren, og klikk deretter **Ikke tilordnet**. All utvidet påloggingslegitimasjon som er knyttet til denne arbeider fjernes.
 
-## <a name="extending-extended-logon"></a>Utvide utvidet pålogging
+## <a name="use-extended-logon"></a>Bruk utvidet pålogging
 
-Utvidet pålogging gjør at bare fem signifikante tegn kan være den unike identifikatoren ut av boksen. Hvis du for eksempel konfigurerer to kort med IDene "1234567" og "1234578", anses begge å være "12345". Du kan lage en utvidelse for å støtte flere tegn. Hvis du vil ha detaljerte instruksjoner, kan du kontrollere [Utvide den utvidede påloggingsfunksjonen for MPOS og Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+Når utvidet pålogging er konfigurert, og en strekkode eller magnetstripe er tilordnet til en arbeider, trenger arbeideren bare å dra eller skanne kortet mens salgsstedets påloggingsside vises. Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.
 
-Påloggingstjenesten kan utvides for å støtte flere utvidede påloggingsenheter, for eksempel håndholdte skannere. Hvis du vil ha mer informasjon, kan du se i dokumentasjonen for utvidelsesmuligheter for salgssted.
+## <a name="extend-extended-logon"></a>Utvid utvidet pålogging
 
-## <a name="using-extended-logon"></a>Bruke utvidet pålogging
+Ut av esken-implementeringen av den utvidede påloggingsfunksjonen krever at legitimasjonen har minst seks tegn, og at de første fem tegnene (legitimasjons-ID-en) er unike. Det var opprinnelig ment som et utvalg som utviklerne kan tilpasse for å oppfylle kravene til en bestemt implementering. (Det kan for eksempel tilpasses for å støtte flere tegn eller bruke forskjellige sikkerhetsverifiseringsregler.) Hvis du vil ha detaljert informasjon om hvordan du bygger utvidelser for utvidet pålogging, kan du se [Utvide den utvidede påloggingsfunksjonen for MPOS og Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
-Når utvidet pålogging er konfigurert, og en arbeider er tilordnet til en strekkode eller magnetstripe, trenger arbeideren bare å dra eller skanne arbeiderens kort mens Salgsstedets påloggingsside vises. Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.
-
+Påloggingstjenesten kan også utvides for å støtte flere utvidede påloggingsenheter, for eksempel håndholdte skannere. Hvis du vil ha mer informasjon, kan du se i [dokumentasjonen for utvidelsesmuligheter for salgssted](dev-itpro/pos-extension/pos-extension-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

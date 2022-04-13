@@ -1,28 +1,26 @@
 ---
 title: Planlagte ordrer forenklet
 description: Dette emnet beskriver hvordan du kan vise, administrere og autorisere planlagte bestillinger ved å bruke siden Planlagte ordrer forenklet.
-author: ChristianRytt
+author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: bb51293f0fcb421b9d55f8d5cfe1922569fce5d6
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408046"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470128"
 ---
 # <a name="planned-orders-simplified"></a>Planlagte ordrer forenklet
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!--KFM: preview until 10.0.25 GA -->
 
 Dette emnet beskriver hvordan du kan vise, administrere og autorisere planlagte bestillinger ved å bruke siden **Planlagte ordrer forenklet**.
 

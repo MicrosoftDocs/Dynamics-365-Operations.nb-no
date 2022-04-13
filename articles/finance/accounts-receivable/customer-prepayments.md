@@ -1,14 +1,14 @@
 ---
 title: Kundebetalinger
 description: Dette emnet beskriver hvordan du konfigurerer og behandler kundeforskuddsbetalinger (kalles også kundeinnskudd).
-author: roschlom
+author: twheeloc
 ms.date: 04/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 audience: Application User
-ms.reviewer: ''
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: ''
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e83c8be1b397f90445230835e415ea4fcea5a8d0bf695e6cc5eadc55275ded7f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ba462dc2b5fe326db14dfb3c92f986478d31791
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768969"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464883"
 ---
 # <a name="customer-prepayments"></a>Kundebetalinger
 
@@ -86,4 +86,4 @@ Du kan bruke arbeidsområdet for **Kundebetalinger** til enkelt å finne og utli
 4. Merk av for **Merk** for fakturaen og betalingen som skal utlignes.
 5. Velg **Poster**.
 
-Hvis du vil ha mer informasjon om hvordan du utligner åpne transaksjoner, kan du se [Oversikt over utligning](/cash-bank-management/settlement-overview.md).
+Hvis du vil ha mer informasjon om hvordan du utligner åpne transaksjoner, kan du se [Oversikt over utligning](/dynamics365/finance/cash-bank-management/settlement-overview).

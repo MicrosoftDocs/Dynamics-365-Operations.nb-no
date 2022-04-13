@@ -1,23 +1,23 @@
 ---
 title: Administrere validering av internasjonale bankkontnumre (IBAN)
 description: Dette emnet forklarer hvordan du administrerer validering av internasjonale bankkontnumre (IBAN).
-author: roschlom
+author: twheeloc
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 89d6c38088e43f0f24fa41accecaa262a64006cf
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860825"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462771"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Administrere validering av internasjonale bankkontnumre (IBAN)
 
@@ -25,13 +25,13 @@ ms.locfileid: "7860825"
 
 Validering av et internasjonalt bankkontonummer (IBAN) øker valideringsmengden som utføres når du legger til et IBAN-nummer for en bankkonto.
 
-Informasjon om strukturen til IBAN er lagret i Microsoft Dynamics 365 Finance. Denne informasjonen lastes automatisk første gang du bruker IBAN-nummeret på bankkontoer. Det inneholder lengden på IBAN-nummeret, startposisjonene for bankkontonummeret og registreringsnummeret samt lengden på bankkontonummeret og registreringsnummeret.
+Informasjon om strukturen til IBAN-nummeret lagres i Microsoft Dynamics 365 Finance og lastes inn automatisk når du bruker IBAN på bankkontoer. Det inneholder lengden på IBAN-nummeret, startposisjonene for bankkontonummeret og registreringsnummeret samt lengden på bankkontonummeret og registreringsnummeret.
 
 ## <a name="set-up-iban-structures"></a>Definere IBAN-strukturer
 
 1. Gå til **Kontant- og bankbehandling \> Oppsett \> IBAN-strukturer**.
 2. Legg merke til at IBAN-strukturene for hvert land eller område er opprettet automatisk.
-3. Hvis du vil tilpasse strukturene for et bestemt land eller område, kan du redigere dem.
+3. Velg **Rediger**-knappen hvis strukturen må oppdateres for et bestemt land eller område.
 4. Strukturdefinsjonene blir en del av hver nye versjon. Du kan bruke menyen **Tilbakestill strukturer** til å laste inn de nyeste definisjonene etter hver oppdatering.
 
 ## <a name="validate-the-iban-structure-in-a-bank-account"></a>Validere IBAN-strukturen i en bankkonto

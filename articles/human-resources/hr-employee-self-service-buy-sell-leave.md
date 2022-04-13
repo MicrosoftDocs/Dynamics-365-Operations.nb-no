@@ -15,17 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ddc50540ba0686f18b6e8875e40f11c378c448f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 80b7125df93d9bdfb866b37abebbdc412d7e5b95
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067485"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509395"
 ---
 # <a name="buy-and-sell-leave"></a>Kjøpe og selge permisjon
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+>[!Important]
+>Funksjonaliteten som er nevnt i dette emnet, er for øyeblikket tilgjengelig for kunder i frittstående Dynamics 365 Human Resources. Noe av eller all funksjonaliteten vil være tilgjengelig som en del av en fremtidig versjon av Finance-infrastrukturen etter Finance versjon 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

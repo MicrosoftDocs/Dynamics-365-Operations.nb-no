@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068798"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464944"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Vise og oppdatere enhetsdata med Excel 
 
@@ -48,7 +48,7 @@ Hvis du vil vite mer om hvordan du bruker Excel-tillegget, kan du se den korte v
 2. Velg et **Åpne i Excel**-alternativ, og åpne arbeidsboken som genereres. Denne arbeidsboken har bindingsinformasjonen for enheten, en peker til miljøet og en peker til Excel-tillegget.
 3. I Excel velger du **Aktivere redigering** for å aktivere kjøring av Excel-tillegget. Excel-tillegg kjøres i en rute til høyre i Excel-vinduet.
 4. Hvis du kjører Excel-tillegget for første gang, velger du **Klarer tillegget**.
-5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på økonomi- og driftsappen. Excel-tillegget bruker en tidligere påloggingskontekst fra nettleseren og logger deg automatisk på, hvis det er mulig. (Hvis du vil ha mer informasjon om nettleseren som brukes basert på operativsystemet, kan du se [Nettlesere som brukes av Office-tillegg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.)) For å sikre at påloggingen var vellykket, kontrollerer du brukernavnet i øvre høyre hjørne i Excel-tillegget. 
+5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på økonomi- og driftsappen. Excel-tillegget bruker en tidligere påloggingskontekst fra nettleseren og logger deg automatisk på, hvis det er mulig. (Hvis du vil ha mer informasjon om nettleseren som brukes basert på operativsystemet, kan du se [Nettlesere som brukes av Office-tillegg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins).) For å sikre at påloggingen var vellykket, kontrollerer du brukernavnet i øvre høyre hjørne i Excel-tillegget. 
 
 Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at det ikke vises data i arbeidsboken før Excel-tillegget leser dem inn.
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330707"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487588"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrer med tredjeparts produksjonsutførelsessystemer
 
@@ -65,6 +65,8 @@ Du kan aktivere noen av eller alle de følgende prosessene for integrering.
 ## <a name="monitor-incoming-messages"></a>Overvåk innkommende meldinger
 
 Hvis du vil overvåke innkommende meldinger til systemet, åpner du siden **Integrering av produksjonsutførelsessystemer**. Der kan du vise, behandle og feilsøke problemer.
+
+Alle meldinger for en bestemt produksjonsordre behandles i den rekkefølgen de mottas. Det kan imidlertid være at meldinger for ulike produksjonsordrer ikke behandles i den mottatte rekkefølgen, fordi satsvise jobber behandles parallelt. I tilfelle feil vil den satsvise jobben forsøke å behandle hver melding tre ganger før den får statusen *Mislyktes*.
 
 ## <a name="call-the-api"></a>Kall API-en
 
@@ -119,13 +121,13 @@ Følgende tabell viser feltene som hver linje i `ReportFinishedLines`-delen av `
 | `ReportedGoodQuantity` | Valgfri | Kommatall|
 | `ReportedErrorCatchWeightQuantity` | Valgfri | Kommatall |
 | `ReportedGoodCatchWeightQuantity` | Valgfri | Kommatall |
-| `AcceptError` | Valgfri |Boolsk |
+| `AcceptError` | Valgfri | Opplisting (Ja \| Nei) |
 | `ErrorCause` | Valgfri | Enum (Ingen \| Materiale \| Maskin \| OperatingStaff), utvidbar |
 | `ExecutedDateTime` | Valgfri | dato/klokkeslett |
 | `ReportAsFinishedDate` | Valgfri | Dato |
 | `AutomaticBOMConsumptionRule` | Valgfri | Enum (FlushingPrincip \| Alltid \| Aldri) |
 | `AutomaticRouteConsumptionRule` | Valgfri |Enum (RouteDependent \| Alltid \| Aldri) |
-| `RespectFlushingPrincipleDuringOverproduction` | Valgfri | Boolsk |
+| `RespectFlushingPrincipleDuringOverproduction` | Valgfri | Opplisting (Ja \| Nei) |
 | `ProductionJournalNameId` | Valgfri | Streng |
 | `PickingListProductionJournalNameId` | Valgfri | Streng|
 | `RouteCardProductionJournalNameId` | Valgfri | Streng |
@@ -133,11 +135,11 @@ Følgende tabell viser feltene som hver linje i `ReportFinishedLines`-delen av `
 | `ToOperationNumber` | Valgfri | Heltall|
 | `InventoryLotId` | Valgfri | Streng |
 | `BaseValue` | Valgfri | Streng |
-| `EndJob` | Valgfri | Boolsk |
-| `EndPickingList` | Valgfri | Boolsk |
-| `EndRouteCard` | Valgfri | Boolsk |
-| `PostNow` | Valgfri | Boolsk |
-| `AutoUpdate` | Valgfri | Boolsk |
+| `EndJob` | Valgfri | Opplisting (Ja \| Nei) |
+| `EndPickingList` | Valgfri | Opplisting (Ja \| Nei) |
+| `EndRouteCard` | Valgfri | Opplisting (Ja \| Nei) |
+| `PostNow` | Valgfri | Opplisting (Ja \| Nei) |
+| `AutoUpdate` | Valgfri | Opplisting (Ja \| Nei) |
 | `ProductColorId` | Valgfri | Streng|
 | `ProductConfigurationId` | Valgfri | Streng |
 | `ProductSizeId` | Valgfri | Streng |
@@ -181,7 +183,7 @@ Følgende tabell viser feltene som hver linje i `PickingListLines`-delen av `Pro
 | `OperationNumber` | Valgfri | Heltall |
 | `LineNumber` | Valgfri | Kommatall |
 | `PositionNumber` | Valgfri | Streng |
-| `IsConsumptionEnded` | Valgfri | Boolsk |
+| `IsConsumptionEnded` | Valgfri | Opplisting (Ja \| Nei) |
 | `ErrorCause` | Valgfri | Enum (Ingen \| Materiale \| Maskin \| OperatingStaff), utvidbar |
 | `InventoryLotId` | Valgfri | Streng |
 
@@ -217,9 +219,9 @@ Følgende tabell viser feltene som hver linje i `RouteCardLines`-delen av `ProdP
 | `ConsumptionDate` | Valgfri | Dato |
 | `TaskType` | Valgfri | Enum (QueueBefore \| Setup \| Process \| Overlap \| Transport \| QueueAfter \| Burden) |
 | `ErrorCause` | Valgfri | Enum (Ingen \| Materiale \| Maskin \| OperatingStaff), utvidbar |
-| `OperationCompleted` | Valgfri | Boolsk |
-| `BOMConsumption` | Valgfri | Boolsk |
-| `ReportAsFinished` | Valgfri | Boolsk |
+| `OperationCompleted` | Valgfri | Opplisting (Ja \| Nei) |
+| `BOMConsumption` | Valgfri | Opplisting (Ja \| Nei) |
+| `ReportAsFinished` | Valgfri | Opplisting (Ja \| Nei) |
 
 ### <a name="end-production-order-message"></a>Melding om avslutning av produksjonsordre
 
@@ -230,9 +232,13 @@ For meldingen om *avslutning av produksjonsordre* er `_messageType`-verdien `Pro
 | `ProductionOrderNumber` | Obligatorisk | Streng |
 | `ExecutedDateTime` | Valgfri | dato/klokkeslett |
 | `EndedDate` | Valgfri | Dato |
-| `UseTimeAndAttendanceCost` | Valgfri | Boolsk |
-| `AutoReportAsFinished` | Valgfri | Boolsk |
-| `AutoUpdate` | Valgfri | Boolsk |
+| `UseTimeAndAttendanceCost` | Valgfri | Opplisting (Ja \| Nei) |
+| `AutoReportAsFinished` | Valgfri | Opplisting (Ja \| Nei) |
+| `AutoUpdate` | Valgfri | Opplisting (Ja \| Nei) |
+
+## <a name="other-production-information"></a>Annen produksjonsinformasjon
+
+Meldingen støtter handlinger eller hendelser som skjer i produksjonen. De behandles ved hjelp av MES-integreringsrammeverket som er beskrevet i dette emnet. Utformingen forutsetter at annen referanseinformasjon som skal deles med MES (for eksempel produktrelatert informasjon, eller stykklisten eller ruten (med sitt spesifikke oppsett og konfigurasjonstider) som brukes i en bestemt produksjonsordre), hentes fra systemet ved hjelp av [dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via filoverføring eller OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Motta tilbakemelding om tilstanden til en melding
 

@@ -1,27 +1,26 @@
 ---
 title: Prioritetsbasert planlegging
 description: Dette emnet beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 41c4f3e9bd41735b213743bd8b4cdd8d9657a073
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777895"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8468307"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbasert planlegging
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Dette emnet beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management. Funksjonen gir støtte for etterspørselsdrevet planlegging, som er ett trinn i DDMRP (etterspørselsdrevet planlegging av materialkrav). Prioritetsbasert planlegging gjør det mulig for Planleggingsoptimalisering å generere planlagte bestillinger som drives av planleggingsprioriteter i stedet for behovsdatoer.
 

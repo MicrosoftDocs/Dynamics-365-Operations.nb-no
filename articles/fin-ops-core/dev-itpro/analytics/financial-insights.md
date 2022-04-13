@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
+ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416311"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464916"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -38,7 +38,7 @@ ms.locfileid: "7416311"
 
 Arbeidsområdet **Økonomisk analyse** er fokusert på å la deg vise og filtrere dataene på eksisterende rapporter. Du kan legge til nye visuelle effekter i arbeidsområdet **Økonomisk analyse**. Arbeidsområdet **Økonomisk analyse** er tilgjengelig for det gjeldende firmaet og alle firmaer for å vise data for alle juridiske enheter, uansett hvilke juridiske enheter rollen har tilgang til.
 
-- [Legg til eller rediger visuelle Power BI-effekter på instrumentbordet](/powerapps-docs/user/add-powerbi-dashboards.md)
+- [Legg til eller rediger visuelle Power BI-effekter på instrumentbordet](/powerapps/user/add-powerbi-dashboards)
 
 ## <a name="dynamics-365-finance-setup"></a>Oppsett av Dynamics 365 Finance
 **Økonomimodul**

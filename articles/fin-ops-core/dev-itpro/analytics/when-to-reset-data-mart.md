@@ -2,7 +2,7 @@
 title: Vanlige spørsmål om tilbakestilling av datatorg
 description: Dette emnet gir svar på noen vanlige spørsmål om tilbakestilling av datatorg.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119518"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466418"
 ---
 # <a name="data-mart-resets-faq"></a>Vanlige spørsmål om tilbakestilling av datatorg
 
@@ -47,10 +47,14 @@ Hvis én eller flere av de følgende erklæringene gjelder for din situasjon, ka
 Her er noen omstendigheter der vi anbefaler at du ikke tilbakestiller et datatorg:
 
 - Du har problemer med dataintegreringsytelsen.
+- Integreringen av Financial Reporter er ikke aktivert. 
+
+    - Dette betyr at data i økonomimodulen ikke lenger blir synkronisert med Financial Reporting-datatorget. Financial Reporter får kanskje ikke oppdaterte tall for finansrapportene. Dette skjer vanligvis hvis du ikke har brukt Financial Reporter på lenge.
+    - Du blir bedt om å aktivere integrering ved å tilbakestille datatorget. Du kan fortsette ved å velge **Ja**. Du kan også velge å tilbakestille datatorget senere. Når integreringen er aktivert, synkroniseres økonomimoduldataene i Financial Reporter på nytt. 
 - Du har et gjentakende tilbakestillingsmønster av en av følgende årsaker:
 
     - **Manglende eller uventede data i rapporten** – Hvis du ser at det mangler data, åpner du en støtteforespørsel hos Microsoft for å gå gjennom rapportformatet og mulige problemer med datasynkronisering.
-    - **Fastlåst integreringstilstand**
+    - **Fastlåst integreringstilstand** – Hvis du merker at integreringsstatusen er fastlåst, kan dette skyldes et stort antall transaksjoner i systemet. Denne tilstanden vil løse seg selv. Hvis du imidlertid legger merke til at intregeringsstatusen er fastlåst mer enn fire timer, må du åpne en støtteforespørsel hos Microsoft. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Hvis jeg tilbakestiller datatorg, vil jeg miste rapporter som jeg allerede har utformet?
 

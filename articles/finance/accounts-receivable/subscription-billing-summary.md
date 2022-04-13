@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b94ac36e49d55ad42909877d77903cd40cb22cbe
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182688"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462476"
 ---
 # <a name="subscription-billing-overview"></a>Oversikt over abonnementsfakturering
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Med abonnementsfakturering kan organisasjoner administrere abonnementsinntektsmuligheter og gjentakende fakturering gjennom faktureringsplaner. Komplekse prissettings- og faktureringsmodeller og inntektstildeling kan enkelt administreres, og faktureres og føres på linjenivå. Inntektstildeling med flere elementer gjør at tildeling av inntekt kan samsvare med internasjonale regnskapsstandarder (International Financial Reporting Standard 15 \[IFRS 15\]) og standarder i Generally Accepted Accounting Principles (US GAAP) (Accounting Standards Codification Topic 606 \[ASC 606\]).
 

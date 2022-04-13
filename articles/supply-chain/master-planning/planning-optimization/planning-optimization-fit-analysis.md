@@ -1,7 +1,7 @@
 ---
 title: Tilpassingsanalyse av planleggingsoptimalisering
 description: Dette emnet forklarer hvordan du kontrollerer gjeldende oppsett og data mot funksjonene i planleggingsoptimaliseringsfunksjonaliteten.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408021"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487649"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -84,7 +84,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Produksjon | Stykkliste/formellinjer med ressursforbruk: _\#_ | Dette funksjonen venter. For tiden ignoreres stykkliste- og formellinjer som har ressursforbruk når planleggingsoptimalisering er aktivert. Når denne funksjonen støttes, blir materialbehovet satt til startdatoen for produksjon. Før denne funksjonen støttes vil det ikke bli generert behov for materialer som er merket med et ressursforbruksflagg. | 2022. oktober |
 | Produksjon | Stykkliste/formellinjer med trinnforbruk: _\#_ | Dette funksjonen venter. For tiden ignoreres trinnforbruk på stykkliste- og formellinjer når planleggingsoptimalisering er aktivert. | 2022. oktober |
 | Produksjon | Stykklister med konstant svinn eller variabel svinn definert: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres konstant svinn og variabel svinn som er definert i stykklister, når planleggingsoptimalisering er aktivert. | 2022. oktober |
-| Produksjon | Stykklister med utsetting: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres utsettingsoppsett på stykklister når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | 2022. april |
+| Produksjon | Stykklister med utsetting: _\#_ | Dette funksjonen støttes nå. | Støttes |
 | Produksjon | Stykklister uten område: _\#_ | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Produksjonsplanlegging](production-planning.md). | Støttes |
 | Produksjon | Behov med angitt stykkliste eller definerte rutekrav: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres de bestemte stykkliste- eller rutebehovene som er definert i behovet (for eksempel en understykkliste eller underrute i en salgsordre) når planleggingsoptimalisering er aktivert. Standard stykklisten eller -ruten vil bli brukt, uavhengig av denne innstillingen. | 2022. oktober |
 | Produksjon | Formelversjoner med ko-/biprodukter: _\#_ | Dette funksjonen venter. Koprodukter og biprodukter som er knyttet til formelversjonen, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | 2022. oktober |

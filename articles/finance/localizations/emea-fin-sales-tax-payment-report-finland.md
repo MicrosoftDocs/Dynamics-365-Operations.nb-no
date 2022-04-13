@@ -2,7 +2,7 @@
 title: Mva-rapport for Finland
 description: Dette emnet gir informasjon om hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
 author: anasyash
-ms.date: 03/23/2020
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: anasyash
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3e640333d067cdc977b2dbffac2395e47faf1cf9
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 173802bb043bdacd733df42ebcbed7483fd03d62
+ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592507"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8466821"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 
@@ -26,6 +26,9 @@ ms.locfileid: "7592507"
 Dette emnet forklarer hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
 
 Hvis du vil ha generell informasjon om hvordan du definerer mva-oppgaven, kan du se [Mva-rapportering for Europa](emea-vat-reporting.md).
+
+> [!NOTE]
+> Avskrevet: Innen 1. mars 2023 vil vi ikke lenger støtte mva-rapporten for Finland (finsk rapportoppsett). Nye ER-formater for **MVA-deklarering XML (FI**) og **MVA-deklarering Excel (FI)** introduseres under **Avgiftsdeklarering**-modellen. Uformingen av mva-rapporten for Finland var basert på rapporteringskoder og det finske rapportoppsettet. Denne utformingen blir erstattet av en ny mva-deklareringsutforming, [Mva-deklarering for Finland](emea-fin-vat-declaration.md).
 
 ## <a name="set-up-the-report-layout-for-sales-tax-authorities"></a>Definere rapportoppsettet for skattemyndigheter
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902103"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462677"
 ---
 # <a name="mobile-device-user-accounts"></a>Brukerkontoer for mobilenhet
 
@@ -90,8 +90,8 @@ Når en arbeider logger seg på mobilappen Warehouse Management, endres språket
 1. Velg **Brukeralternativer** i handlingsruten.
 1. Angi følgende felt i fanen **Innstillinger**:
 
-    - **Språk** – Velg språket som arbeideren foretrekker. Dette feltet styrer også datoformatet som vises i lagerappen.
-    - **Dato, klokkeslett og nummerformat** – Velg språket som bestemmer nummerformatene som vises i lagerappen. Legg merke til at dato- og klokkeslettformatene som vises i lagerappen, faktisk bestemmes av **Språk**-feltet, ikke av dette feltet.
+    - **Språk** – Velg språket som arbeideren foretrekker. Dette feltet styrer også tallformatet som vises i lagerappen.
+    - **Dato, klokkeslett og nummerformat** – Velg dato- og klokkeslettformatet som arbeideren foretrekker. Lagerappen bruker nummerformatet som er knyttet til språket som er valgt for **Språk**-feltet, i stedet for denne innstillingen.
     - **Tidssone** – Velg tidssonen der arbeideren arbeider. Dette feltet påvirker tidsangivelsen for alle registreringer som arbeideren gjør ved hjelp av appen.
 
 > [!NOTE]

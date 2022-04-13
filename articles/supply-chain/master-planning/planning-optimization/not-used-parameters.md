@@ -1,22 +1,22 @@
 ---
 title: Parametere som ikke brukes av planleggingsoptimalisering
 description: Dette emnet viser parametrene som Planleggingsoptimalisering ikke vurderer under operasjonen.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408236"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469121"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametere som ikke brukes av planleggingsoptimalisering
 
@@ -65,18 +65,6 @@ Planleggingsoptimalisering bruker ikke følgende parametere eller alternativer p
   - **Bruk den angitte stykklisten eller formelversjonen** – Venter på støtte for *Formelversjoner med ko-/biprodukt*.
   - **Bruk den angitte ruteversjonen** – Venter på støtte for *Behov med angitt stykkliste eller definerte rutekrav*.
 
-- **Handling**-hurtigfanen:
-
-  - **Handlingsmelding** – Venter på *Handlinger*-støtte.
-  - **Handlingshorisont bakover** – Venter på *Handlinger*-støtte.
-  - **Utsettelsesmargin** – Venter på *Handlinger*-støtte.
-  - **Fremskyndingsmargin** – Venter på *Handlinger*-støtte.
-  - **Basisdato** – Venter på *Handlinger*-støtte.
-  - **Fremskynd** – Venter på *Handlinger*-støtte.
-  - **Utsett** – Venter på *Handlinger*-støtte.
-  - **Nedskriv** – Venter på *Handlinger*-støtte.
-  - **Oppskriv** – Venter på *Handlinger*-støtte.
-  - **Avledede handlinger** – Venter på *Handlinger*-støtte.
 
 - **Annet**-hurtigfanen:
 
@@ -149,7 +137,6 @@ Planleggingsoptimalisering bruker ikke følgende parametere eller alternativer p
   - **Prognoseplan** – Venter på ekstra *prognose*-støtte.
   - **Kapasitet** – Venter på *Planlegging*-støtte.
   - **Kontinuitetsplan** – Venter på støtte for *Kontinuitetsplanlegging*.
-  - **Handlingsmelding** – Venter på *Handlinger*-støtte.
   - **Beregnede forsinkelser** – Venter på ekstra støtte for *Beregnede forsinkelser*.
   - **Sekvensering** – Venter på støtte for *Produksjon*.
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c7f679e8d11b0ec01e912a4ad64f02e50b20f299
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984575"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487774"
 ---
 # <a name="e-commerce-site-overview"></a>Oversikt over e-handelsområde
 
@@ -86,7 +86,7 @@ Dynamics 365 Commerce bruker forretning-til-forbruker (B2C) for Azure Active Dir
 Hvis du vil ha informasjon om hvordan du administrerer områdeinnstillingene, kan du se emnene nedenfor:
 
 - [Behandle brukere og roller for e-handel](manage-ecommerce-users-roles.md)
-- [Vurderinger for søkemotoroptimalisering (SEO) for området](/search-engine-optimization-considerations.md)
+- [Vurderinger for søkemotoroptimalisering (SEO) for området](search-engine-optimization-considerations.md)
 - [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
 - [Velge et områdetema](select-site-theme.md)
 

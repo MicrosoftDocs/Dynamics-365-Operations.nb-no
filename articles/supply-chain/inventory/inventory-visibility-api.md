@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062117"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524472"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API-er for lagersynlighet
 
@@ -41,15 +41,17 @@ Følgende tabell viser API-ene som er tilgjengelige for øyeblikket:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Poster | [Angi/overstyre lagerbeholdninger](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Poster | [Opprett én reservasjonshendelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Poster | [Opprett flere reservasjonshendelser](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/on-hand/changeschedule | Poster | [Opprett én planlagt lagerendring](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Poster | [Opprett flere planlagte lagerendringer](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Poster | [Spør ved å bruke posteringsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hent | [Spør ved å bruke hentemetoden](#query-with-get-method) |
-
-Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
 > Delen {environmentId} av banen er miljø-IDen i Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Bulk-API-en kan returnere maksimalt 512 poster for hver forespørsel.
+
+Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Finn sluttpunktet i henhold til Lifecycle Services-miljøet
 
@@ -517,6 +519,9 @@ Parameteren `groupByValues` bør følge konfigurasjonen din for indeksering. Hvi
 
 Parameteren `returnNegative` styrer om resultatene inneholder negative oppføringer.
 
+> [!NOTE]
+> Hvis du har aktivert endringsplanen for lagerbeholdning og ATP-funksjoner (available-to-promise), kan spørringen også omfatte den boolske `QueryATP`-parameteren, som styrer om resultatet av spørringen omfatter ATP-informasjon. Hvis du vil ha mer informasjon og flere eksempler, kan du se [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md).
+
 Følgende eksempel viser eksempeltekstinnholdet.
 
 ```json
@@ -572,5 +577,9 @@ Her er et eksempel på henting av en URL-adresse. Denne hentforespørselen er n�
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## <a name="available-to-promise"></a>Tilgjengelig for ordre
+
+Du kan konfigurere Lagersynlighet slik at du kan planlegge fremtidige endringer i lagerbeholdningen og beregne ATP-antall. ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde i løpet av den neste perioden. Bruk av ATP-beregningen kan øke kapasiteten for innfrielse av bestillinger betydelig. Hvis du vil ha informasjon om hvordan du aktiverer denne funksjonen, og hvordan du samhandler med Lagersynlighet via API-en etter at funksjonen er aktivert, kan du se [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

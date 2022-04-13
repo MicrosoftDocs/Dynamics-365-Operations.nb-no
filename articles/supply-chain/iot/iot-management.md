@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8fbd750aa4a316f5e04f3c8622d0847ad9318360
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 7aec17a6355caa133a671a242056e77b7f6bb461
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782663"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509563"
 ---
 # <a name="monitor-and-manage-iot-intelligence"></a>Overvåke og behandle IoT-intelligens
 
@@ -58,7 +58,6 @@ Du kan simulere fabrikkmaskinsignaler. Hvis du vil ha mer informasjon, kan du se
 
 + [Koble IoT DevKit AZ3166 til Azure IoT-hub](/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Koble Raspberry PI online-simulator til Azure IoT-hub (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
-+ [Oversikt over løsningsakselerator for enhetssimulering](/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
