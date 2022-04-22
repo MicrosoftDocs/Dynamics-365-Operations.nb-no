@@ -16,13 +16,11 @@
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (april)
                   href: get-started/whats-new-changed-10-0-25.md
-                - name: Finance 10.0.24 (februar)
-                  href: get-started/whats-new-changed-10-0-24.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
+                - name: Fjernede eller avskrevne funksjoner i Dynamics 365 Finance
                   href: get-started/removed-deprecated-features-finance.md
                 - name: Fjernede eller avskrevne funksjoner i tidligere versjoner
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
@@ -418,14 +416,30 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Kopier en faktureringsplan
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Funksjoner for faktureringsplan
+                      href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Milepælfakturering
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Støtte- og fornyingsprosess
+                      href: accounts-receivable/sb-support-renewals.md
+                    - name: Tidsplaner for konsumprisindeks
+                      href: accounts-receivable/cpischedules.md
                     - name: Avslutt faktureringsplaner
                       href: accounts-receivable/terminate-billing-schedule.md
                 - name: Inntekts- og utgiftsutsettelser
-                  items: null
+                  items:
+                    - name: Definer inntekts- og utgiftsutsettelser
+                      href: accounts-receivable/sb-deferrals.md
+                    - name: Utsettelsesplaner
+                      items:
+                        - name: Opprett utsettelsesplaner
+                          href: accounts-receivable/sb-deferrals-schedules.md
+                        - name: Utsettelsesstandardtransaksjoner
+                          href: accounts-receivable/sb-deferral-transactions.md
                 - name: Inntektstildeling for flere elementer
-                  items: null
+                  items:
+                    - name: Definer inntektstildeling for flere elementer
+                      href: accounts-receivable/sb-rev-alloc-setup.md
             - name: Betalinger og utligninger
               items:
                 - name: Oversikt over kundebetaling
@@ -922,6 +936,8 @@
               items:
                 - name: Planlegg kontoplanen
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Planlegg den lokale kontoplanen
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Hovedkontoer
                   items:
                     - name: Hovedkontotyper
@@ -3088,10 +3104,12 @@
                   href: localizations/latam-mex-scope.md
                 - name: Deklareringsrapport for justeringsinflasjon
                   href: localizations/latam-mex-adjustment-inflation-declaration-report.md
-                - name: Annullere en elektronisk faktura
+                - name: Annuller en elektronisk faktura
                   href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
                 - name: CFDI versjon 3.3
                   href: localizations/latam-mex-cfdi-3-3.md
+                - name: CFDI versjon 4.0
+                  href: localizations/latam-mex-cfdi-4-0.md
                 - name: Kunderegistrerings-ID-er og annen informasjon
                   href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
                 - name: DIOT-deklareringsutdrag
@@ -3739,7 +3757,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/finance/toc.json
                     - name: Oppgradere dokumentrutingsagenten
                       href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=dynamics/365/finance/toc.json
-                    - name: Installere nettverksskriverenheter i lokale miljøer
+                    - name: Installer nettverksskriverenheter i lokale miljøer
                       href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/finance/toc.json
                     - name: 'Dokumentgenerering, publisering og utskrift i lokale distribusjoner'
                       href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/finance/toc.json
