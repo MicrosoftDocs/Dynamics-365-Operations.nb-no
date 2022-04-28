@@ -2,7 +2,7 @@
 title: Tekniske versjoner og kategorier for teknisk produkt
 description: Dette emnet inneholder informasjon om konseptet med tekniske versjoner. Tekniske versjoner sikrer at forskjellige tilstander på et produkt og tilhørende data holdes oppdatert og klare, og at de kan vises i systemet.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572895"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553369"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versjoner og kategorier for teknisk produkt
 
@@ -137,7 +137,7 @@ For hver rad du legger til i rutenettet, angir du følgende felter:
 |---|---|
 | Navn | Velg attributtet du vil legge til. |
 | Verdi | Velg standardverdien for attributtet. |
-| Obligatorisk | For attributter av typen *boolsk*, hvis alternativet er angitt *Ja*, må brukerne sette attributtet til *Ja*. Hvis dette alternativet er satt til *Nei*, kan brukerne angi attributtet til enten *Ja* eller *Nei*. For andre datatyper er innstillingen for dette alternativet bare til informasjon. |
+| Obligatorisk | Velg om attributtet er obligatorisk, noe som betyr at brukere må angi en gyldig verdi for attributtet før de kan lagre et produkt. Virkningen av denne innstillingen kan variere litt, avhengig av datatypen til det valgte attributtet, som definert i listen nedenfor.<ul><li>**Boolsk** – Sett dette til *Ja* hvis du vil kreve at attributtet har verdien *Ja* (systemet vil avvise å lagre et produkt der attributtet er satt til *Nei*). Sett dette til *Nei* for å godta verdien *Ja* eller *Nei*. (Attributter av typen *Boolsk* kan ikke ha en tom verdi.)</li><li>**Heltall eller Desimal** – Sett dette til *Ja* hvis du vil kreve at brukere angir en verdi som ikke er null for dette attributtet. Sett dette til *Nei* hvis du vil tillate at brukerne lagrer med verdien null.  (Attributter av disse typene kan ikke ha en tom verdi.)</li><li>**Liste** – Lister har datatypen *Tekst*, men inneholder også en forhåndsdefinert liste over mulige verdier. Derfor er det ikke mulig å angi en tom verdi for attributter av denne typen, så denne innstillingen har ingen virkning og er bare til informasjon.</li><li>**Alle andre datatyper** – Sett dette til *Ja* for å gjøre attributtet obligatorisk. Sett dette til *Nei* for å tillate at brukerne kan lagre et produkt uten å angi en verdi for dette attributtet.</li></ul> |
 | Partiattributt | Velg om attributtet skal overføres via den satsvise funksjonaliteten. |
 
 ### <a name="readiness-policy-fasttab"></a>Hurtigfanen Klargjøringspolicy

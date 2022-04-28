@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
-ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
+ms.openlocfilehash: fcdb5a934818468e00be960f9afe541966e5eabf
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8527320"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573657"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gang med finansrapportering 
 
@@ -212,7 +212,7 @@ Her er noen trinn du kan gjøre for å gjøre løsningen med Microsoft kundestø
 Trinnene nedenfor går gjennom prosessen med å aktivere Hendelseslistemeldinger for Financial Reporting. Loggene som hendelseslisten genererer, vil hjelpe teknikere med å identifisere kilden til tilkoblingsproblemet raskt. Send kopier av disse loggene sammen med forespørselen når du kontakter kundestøtte.
 
 
-1. Kopier RegisterETW.zip-filen til klientarbeidsstasjonen (helst skrivebordet), og pakk ut [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+1. Kopier RegisterETW.zip-filen til klientarbeidsstasjonen (helst skrivebordet), og pakk ut [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 2. Kontroller at Windows Hendelsesliste er lukket.
 3. Åpne en ledetekst for Administrator PowerShell, og gå til katalogen der RegisterETW.ps1 er plassert.
 4. Kjør følgende kommando: .\RegisterETW.ps1

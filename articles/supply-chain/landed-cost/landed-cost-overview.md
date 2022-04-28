@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983423"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570388"
 ---
 # <a name="landed-cost-module"></a>Modulen Netto innkjøpspris
 
@@ -39,7 +39,7 @@ Netto innkjøpspris gir nøyaktige og betimelige kostnadsestimater for indirekte
 
 ### <a name="voyages"></a>Sjøreiser
 
-I Netto innkjøpspris er en sjøreise en konkret flytting fra en utgående lokasjon gjennom et bestemt sett med destinasjoner i en bestemt periode til en angitt innkommende lagerlokasjon. Bestillinger og ordrelinjer kan legges til i én container eller flere containere for en sjøreise, og kostnadene blir riktig tilordnet tilbake til varelinjen. Ordrer og ordrelinjer kan også legges til på tvers av juridiske enheter for én sjøreise.
+I Netto innkjøpspris er en sjøreise en konkret flytting fra en utgående lokasjon gjennom et bestemt sett med destinasjoner i en bestemt periode til en angitt innkommende lagerlokasjon. Bestillinger og ordrelinjer kan legges til i én container eller flere containere for en sjøreise, og kostnadene blir riktig tilordnet tilbake til varelinjen. 
 
 ### <a name="item-ownership"></a>Vareeierskap
 

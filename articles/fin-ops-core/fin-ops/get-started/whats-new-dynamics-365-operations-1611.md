@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752814"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548087"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Hva er nytt eller endret i Dynamics 365 for Operations versjon 1611 (november 2016)
 
@@ -816,7 +816,7 @@ For øyeblikket er Retail Modern POS bare tilgjengelig som et Windows 8.1-progra
 | Som leverandør kan du få informasjon om hvor mye av forsendelseslageret som overføres til kunden. | Når du fakturerer en kunde, krever leverandøren informasjon om råvarene som ble kjøpt fra forsendelseslageret og datoen for innkjøpet. Leverandøren kan også overvåke lagerbeholdningen hos kunden ved hjelp av grensesnittet for leverandørsamarbeid. |
 | Flytt leverandøreid lager ved hjelp av en overføringsjournal. | Hvis du vil spore den fysiske plasseringen av leverandøreid lager, må du kunne registrere plasseringen i systemet. Bruk en overføringsjournal til å registrere den fysiske flyttingen av lageret, for eksempel flytting fra ett sted på et lager til et annet sted i det lageret. |
 | Juster leverandøreid lager ved hjelp av en tellingsjournal. | Det er viktig at du beholder den systemets lagerbeholdningen synkronisert med den faktiske fysiske beholdningen. Det leverandøreide lageret kan justeres inn og ut ved hjelp av tellingsprosesser, for eksempel justering av antall og prosesser for journaltelling. |
-| Få mer informasjon om støtte for forsendelse i Dynamics 365 for Operations | Hvis du vil ha mer informasjon om støtte for forsendelsesprosesser, kan du se [Forsendelse](../../../supply-chain/inventory/consignment.md), [Definere forsendelse](../../../supply-chain/inventory/set-up-consignment.md), [Opprette en etterfyllingsordre for forsendelse (oppgaveveiledning)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Endre eierskap for forsendelseslager basert på produksjonsbehov (oppgaveveiledning)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| Få mer informasjon om støtte for forsendelse i Dynamics 365 for Operations | Hvis du vil ha mer informasjon om støtte for forsendelsesprosesser, kan du se [Forsendelse](../../../supply-chain/inventory/consignment.md), [Definere forsendelse](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Opprette en etterfyllingsordre for forsendelse (oppgaveveiledning)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Endre eierskap for forsendelseslager basert på produksjonsbehov (oppgaveveiledning)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Leverandørsamarbeid (tidligere kjent som leverandørportalen)
 
@@ -942,7 +942,7 @@ For øyeblikket er Retail Modern POS bare tilgjengelig som et Windows 8.1-progra
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Startside for Hva er nytt eller endret i Finance and Operations](whats-new-changed.md)
+[Startsiden Hva er nytt eller endret i Finance and Operations](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

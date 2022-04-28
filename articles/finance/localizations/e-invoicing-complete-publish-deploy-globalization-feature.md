@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a842a3ba31c0a8e0d80ad1856d9d6d861a8514ea
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 21e03660387c7e715bc0f4cb1dbcd3ec9ec6cee2
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371663"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554568"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Fullføre, publisere og rulle ut en globaliseringsfunksjon
 
@@ -59,7 +59,7 @@ I RCS bruker du kommandoen **Distribuer** til å publisere en versjon av en funk
 2. I **Versjoner**-fanen til høyre på siden velger du versjonen av funksjonen for elektronisk fakturering du vil rulle ut til tjenestemiljøet eller det tilkoblede programmet. Den valgte versjonen må ha statusen **Fullført** eller **Publisert**.
 3. Velg **Distribuer**, og velg deretter ett eller begge av følgende alternativer for å definere målet for distribusjonen:
 
-    - **Tilkoblet program** – Konfigurasjonen som leveres av programoppsettet, er skrevet i forekomsten av Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidligere var tilknyttet den.
+    - **Tilkoblet app** – Konfigurasjonen som leveres av appoppsettet, er skrevet i forekomsten av Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidligere var tilknyttet den.
     - **Tjenestemiljø** – Versjonen av funksjonen for elektronisk fakturering distribueres til tjenestemiljøet. Elektronisk fakturering er da klar til å motta og behandle elektroniske dokumenter som Finance eller Supply Chain Management sender.
 
 > [!NOTE]

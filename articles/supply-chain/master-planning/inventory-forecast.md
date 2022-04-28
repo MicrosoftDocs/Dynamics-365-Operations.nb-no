@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469401"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548174"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
@@ -39,7 +39,7 @@ Det finnes også andre måter å opprette prognoselinjer på:
 - [Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
 - [Importere historiske data for behovsprognoser](import-historical-data.md)
 - [Generere prognosen ved å bruke en Microsoft Azure Machine Learning-nettjeneste](demand-forecasting-setup.md)
-- [Importere behovs- eller forsyningsprognoselinjer ved hjelp av rammeverket for databehandling (dataenhetene ForecastDemandForecastEntryStaging og ForecastSupplyForecastEntryStaging)](../../dev-itpro/data-entities/data-entities-data-packages.md)
+- [Importere behovs- eller forsyningsprognoselinjer ved hjelp av rammeverket for databehandling (dataenhetene ForecastDemandForecastEntryStaging og ForecastSupplyForecastEntryStaging)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
 
 Som du kan se i tabellen i trinn 1, kan du få tilgang til sidene som brukes, på ulike måter.
 

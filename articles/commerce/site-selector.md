@@ -2,7 +2,7 @@
 title: Områdevelgermodul
 description: Dette emnet dekker områdevelgermodulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/11/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109712"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551700"
 ---
 # <a name="site-picker-module"></a>Områdevelgermodul
 
@@ -28,14 +28,9 @@ ms.locfileid: "8109712"
 
 Dette emnet dekker områdevelgermodulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 
-Når en bedrift har forskjellige områder på tvers av markeder, områder og nasjonale innstillinger, trenger områdebrukere en enkel måte å veksle mellom områder og velge foretrukket område for shopping. For å ta hensyn til dette scenarioet lar områdevelgermodulen brukere bla gjennom på tvers av flere områder.
+Når en bedrift har forskjellige områder på tvers av markeder, områder og nasjonale innstillinger, trenger områdebrukere en enkel måte å veksle mellom områder og velge foretrukket område for shopping. For å ta hensyn til dette scenarioet lar områdevelgermodulen brukere bla gjennom på tvers av flere områder. En områdevelger anbefales også når [registrering og omadressering av georeplikering](geo-detection-redirection.md) er implementert for e-handelsområdet, slik at kunder kan overstyre områdepreferansene som de angir ved å bruke [land-/områdevelgermodulen](country-region-picker-module.md). 
 
-Områdevelgermodulen må være konfigurert med listen over områder (markeder, områder eller nasjonale innstillinger) som områdebrukere kan bla gjennom.
-
-> [!NOTE]
-> Områdevelgermodulen er tilgjengelig i Dynamics 365 Commerce 10.0.14-versjonen.
-
-Illustrasjonen nedenfor viser et eksempel på en områdevelgermodul som vises i toppteksten på en områdeside.
+Områdevelgermodulen må være konfigurert med listen over områder (markeder, områder eller nasjonale innstillinger) som områdebrukere kan bla gjennom. Illustrasjonen nedenfor viser et eksempel på en områdevelgermodul som vises i toppteksten på en områdeside.
 
 ![Eksempel på en områdevelgermodul i toppteksten på en områdeside.](./media/ecommerce-sitepicker.PNG)
 

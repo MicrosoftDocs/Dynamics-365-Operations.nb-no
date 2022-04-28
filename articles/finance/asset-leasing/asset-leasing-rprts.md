@@ -2,25 +2,25 @@
 title: Rapporter om aktivaleie
 description: Dette emnet viser og gir en kort beskrivelse av rapportene som er tilgjengelige i Aktivaleie.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 04/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7044378a66ed9ff952f4579d375d59576fe09294fc158c000ab28a93f4173421
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739413"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550046"
 ---
 # <a name="asset-leasing-reports"></a>Rapporter om aktivaleie
 
@@ -37,7 +37,7 @@ Rapporten for flytting av aktiva fungerer som en fremoverrullingsrapport for sal
 |     Rapportfelter                  |     Beskrivelse                                                                |
 |------------------------------------|--------------------------------------------------------------------------------|
 |     Startdato              |     Startdatoen for leieavtalens tidligste versjon.                     |   
-|     Leietermin                     |     Leieperioden i leieavtalens tidligste versjon.                            |
+|     Leietermin                     |     Den nåværende versjonen av leievilkårene.                            |
 |     Korttidsleie               |     Hvis leieavtalen er klassifisert som en avtale med korttidsleie, vises **Ja**.         |
 |     Lavverdileie                |     Hvis leieavtalen er klassifisert som en avtale med lavverdileie, vises **Ja**.          |
 |     Opprinnelig bruksrettseiendel     |     Den opprinnelige verdien til bruksrettseiendelen fra journaloppføringen for opprinnelig føring.      |

@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ecd4f5359019e3c4778e21cc4946b9998cd519f
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: 497d49da84f4df90877908bef3031e079bc36066
+ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817428"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8557885"
 ---
 # <a name="customer-aging-data-storage"></a>Lagring av kundealdersfordelingsdata
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 Dette emnet beskriver prosessen med å bruke ekstern lagring for aldersfordelingsdata for kunder. I Microsoft Dynamics 365 Finance kan du kjøre prosessen for lagring av aldersfordeling for kunder for å gjøre utdataene tilgjengelige for eksport til et eksternt system. Når du kjører prosessen, er de samme alternativene for aldersfordelingsrapport som er tilgjengelige i systemet, tilgjengelige for eksterne systemer. Detaljene tas alltid med i de eksporterte dataene.
 

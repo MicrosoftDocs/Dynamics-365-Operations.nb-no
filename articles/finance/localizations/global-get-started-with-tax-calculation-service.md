@@ -2,7 +2,7 @@
 title: Kom i gang med avgiftsberegning
 description: Dette emnet forklarer hvordan du konfigurerer avgiftsberegning.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952527"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558320"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Delene i dette emnet veileder deg gjennom utforming på høyt nivå og konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) og Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
+Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Delene i dette emnet veileder deg gjennom utforming på høyt nivå og konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
 Oppsettet består av tre hovedtrinn.
 
@@ -36,7 +36,7 @@ Oppsettet består av tre hovedtrinn.
 
 ## <a name="high-level-design"></a>Utforming på høyt nivå
 
-### <a name="runtime-design"></a>Kjøretidsutforming
+### <a name="runtime-design"></a><a name="runtime"></a> Kjøretidsutforming
 
 Illustrasjonen nedenfor viser kjøretidsutforming på høyt nivå av avgiftsberegning. Fordi avgiftsberegning kan integreres med flere Dynamics 365-apper, bruker illustrasjonen integreringen med Finance som et eksempel.
 
@@ -95,6 +95,14 @@ Før du kan fullføre de gjenværende trinnene i dette emnet må følgende forut
 - Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte RCS-miljøet.
 
     - Globaliseringsfunksjoner
+
+- Følgende roller bør tilordnes brukerne i RCS-miljøet etter behov:
+
+    - Utvikler av elektronisk rapportering
+    - Utvikler for globaliseringsfunksjon
+    - Avgiftsmotorutvikler
+    - Funksjonell konsulent for avgiftsmotor
+    - Avgiftstjenesteutvikler
 
 ## <a name="set-up-tax-calculation-in-lcs"></a>Konfigurer avgiftsberegning i LCS
 
@@ -203,15 +211,21 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     | Salg            | DEU       | FRA     | DEU_EU       |
     | Salg            | BEL       | BEL     | BEL_Domestic |
     | Salg            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Hvis standard mva-gruppe på de avgiftspliktige dokumentlinjene er riktig, lar du denne matrisen stå tom. Hvis du vil ha mer informasjon, kan du se delen [Kjøretidsutforming](#runtime) i dette emnet.
 
 22. På fanen **Relevans for vareavgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftskode, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Vareavgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes vareavgiftsgruppen på transaksjonslinjen.
 
     Her er et eksempel:
 
-    | Varekode | Vareavgiftsgruppe |
+    | Varekode | Avgiftsgruppe for vare |
     | --------- | -------------- |
     | D0001     | Full           |
     | D0003     | Redusert        |
+
+    > [!NOTE]
+    > Hvis standard mva-varegruppe på de avgiftspliktige dokumentlinjene er riktig, lar du denne matrisen stå tom. Hvis du vil ha mer informasjon, kan du se delen [Kjøretidsutforming](#runtime) i dette emnet.
 
     Hvis du vil ha mer informasjon om hvordan avgiftskoder bestemmes i Avgiftsberegning, kan du se [Logikk for fastsettelse av avgiftsgruppe og vareavgiftsgruppe](global-sales-tax-group-determination.md).
 

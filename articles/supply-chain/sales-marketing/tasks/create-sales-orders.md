@@ -2,7 +2,7 @@
 title: Opprette salgsordrer
 description: Denne fremgangsmåten viser hvordan du oppretter en salgsordre.
 author: Henrikan
-ms.date: 06/25/2019
+ms.date: 04/06/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 462f47ab5d85665ed8132e5bfb6dd945c537c1ef
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566317"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551731"
 ---
 # <a name="create-sales-orders"></a>Opprette salgsordrer
 
@@ -66,5 +66,7 @@ Produktene som selges av organisasjon din, kan leveres i ulike varianter differe
     
 3. Velg **OK**.
 
+## <a name="sales-order-creation-performance-enhancement"></a>Ytelsesforbedring for salgsordreoppretting
+Den nye funksjonen som introduseres med appversjon 10.0.26, reduserer opprettingen av ekstraposter for tabellene **SourceDocumentHeader** og **SourceDocumentLine**. Ytelsen forbedres og lagringsstørrelsen reduseres, fordi disse postene ikke er opprettet. Disse underliggende rammeverktabellene for kildedokumentet brukes ikke for salgsordrer i produktet på dette tidspunktet, og det er ingen planer om å bruke dem. Aktivering av denne funksjonen regnes som en sikker endring for forbedret ytelse. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

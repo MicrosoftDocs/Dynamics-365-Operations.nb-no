@@ -2,19 +2,19 @@
 title: Feilsøk problemer med dobbel skriving i Finance and Operations-apper
 description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med dobbel skriving-modulen i økonomi- og driftsapper.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061816"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565973"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøk problemer med dobbel skriving i Finance and Operations-apper
 
@@ -70,6 +70,21 @@ Du kan få følgende feilmelding når du prøver å stoppe tabelltilordningene:
 Denne feilen oppstår når det koblede Dataverse-miljøet ikke er tilgjengelig.
 
 Du kan løse problemet ved å opprette en støtteforespørsel for data integrasjonsgruppen. Knytt til nettverkssporingen slik at dataintegrasjonsgruppen kan merke tilordningene som **Kjører ikke** i serverdelen.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktiver parallell behandling i økonomi- og driftsapper for å forbedre ytelsen
+
+Ved å aktivere parallell behandling kan du redusere tiden det tar å importere data fra økonomi- og driftsapper til Customer Engagement-apper og Microsoft Dataverse. 
+
+Fullfør trinnene nedenfor for å aktivere parallell behandling i økonomi- og driftsapper.
+
+1. Logg på Finance + Operations-miljøet.
+2. Gå til **Dataadministrasjon > Rammeverkparametere**.
+3. Velg **Enhetsinnstillinger**, og velg **Konfigurer parametere for utføring av enhet**.
+4. Legg til parameterne for parallell behandling:
+    - **Antall poster for importterskel** – Antall poster som må oppfylles før parallell behandling aktiveres.
+    - **Antall importoppgaver** – Antall tråder (oppgaver) som skal kjøres parallelt.
+5. Velg **Lagre**.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Feil under forsøk på å starte en tabelltilordning
 

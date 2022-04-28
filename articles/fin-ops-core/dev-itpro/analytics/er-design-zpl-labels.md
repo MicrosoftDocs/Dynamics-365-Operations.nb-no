@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4fb89f4b56ce8189482bf1a86582ef7e3684b15a
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392969"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612363"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Utforme en ny ER-løsning for å skrive ut ZPL-etiketter
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan en bruker med en rolle som systemansvarlig, utvikler av elektronisk rapportering eller funksjonell konsulent for elektronisk rapportering kan konfigurere parametere for rammeverket for [elektronisk rapportering (ER)](general-electronic-reporting.md), utforme nødvendige ER-[konfigurasjoner](general-electronic-reporting.md#Configuration) for en ny ER-løsning for å få tilgang til dataene i lagerstyringssystemet og generere egendefinerte lagerlokasjonsetiketter i ZPL II-format (Zebra Programming Language). Denne fremgangsmåten kan gjennomføres i firmaet **USRT**.
 

@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5b84237844ec1d8f6c0716a0a13b05c83b358901
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d414ed7ac55afbbc58b8f5542c713f56392f9bc7
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575782"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570457"
 ---
 # <a name="manage-folios"></a>Administrere folioer
 
 [!include [banner](../../includes/banner.md)]
 
-En folio blir ofte fastsatt av tollbestemmelser. Den kan bestå av én leverandørs varer for én enhet eller et firma per forsendelse. Varene i en folio kan være i én container, eller de kan være spredt på flere containere.
+En folio blir ofte fastsatt av tollbestemmelser. Den kan bestå av én leverandørs varer for én enhet eller et firma per forsendelse. Varene i en folio administreres i én beholder.
 
 Hvis du vil åpne siden **Alle folioer**, går du til **Netto innkjøpspris \> Folioer \> Alle folioer**. Denne siden viser en liste over alle folioer. Du kan bruke knappene i handlingsruten til å opprette, slette og arbeide med folioer. Velg en hvilken som helst folio i listen for å vise detaljer om den på siden **Folioer**.
 

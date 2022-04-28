@@ -3,7 +3,7 @@ title: Standard revisjonsfil for avgift (SAF-T) for Norge
 description: Dette emnet forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
 author: liza-golub
 ms.author: elgolu
-ms.date: 09/20/2021
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dd781f465482f803a8f6c2c2223d086dee7a250b
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 10c341ba547fe4b98911a9cfa137027f7b87262e
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647499"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8549994"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -26,6 +26,9 @@ ms.locfileid: "7647499"
 Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primæradresse i Norge.
 
 Fra og med januar 2020 er alle selskaper i Norge pålagt av Skatteetaten å gi SAF-T finansielle data. Dette kravet er i samsvar med versjon 1.4 av dokumentasjonen, som ble publisert den 8. juli 2019, og versjon 1.3 av den tekniske dokumentasjonen, som ble publisert den 23. mars 2018, i form av en XML-rapport. Publiseringen av disse delene av dokumentasjonen sammenfaller med versjon 1.1 av "norsk SAF-T økonomiske data" XML Schema Definition (XSD)-skjema som ble utviklet av SAF-T-arbeidsgruppen, Skatteetaten, og basert på "OECD-standard revisjonsfil - Avgifter 2.00,"som ble modifisert 2. februar 2018.
+
+> [!NOTE]
+> Bruk av funksjonen [Ett bilag](../general-ledger/one-voucher.md) introduserer en begrensning for ytterligere SAF-T-rapportering for enkelte scenarier som er underlagt SAF-T. Mer bestemt må et bankkontoutdragsscenario posteres ved hjelp av ulike bilag for transaksjoner som har ulike kontrollørkontoer. Hvis du vil ha mer informasjon om hvordan du bruker funksjonen Ett bilag og SAF-T, kan du se delen [SAF-T-rapport og Ett bilag](#one-voucher) senere i dette emnet.
 
 ## <a name="setup"></a>Installasjon
 
@@ -83,16 +86,19 @@ Hvis du vil knytte mva-koder som brukes i Finance, med norske standard mva-koder
 Som dokumentasjonen forklarer, i Norsk SAF-T økonomiske data, må hovedkontoer som brukes i Finance, være knyttet til norske standardkontoer for SAF-T-rapportering. Norske standardkontoer er tilgjengelige på <https://github.com/Skatteetaten/saf-t>.
 
 
-Fra og med **versjon 54.61** støtter det elektroniske rapporteringsformatet **“SAF-T-format (NO)”** oppsettet av **Standardkontoer** for selskapets **Hovedkontoer** ved å benytte **Applikasjonsspesifikke parametere**.
+Fra og med **versjon 54.61** støtter det elektroniske rapporteringsformatet **SAF-T-format (NO)** oppsettet av **Standardkontoer** for selskapets **Hovedkontoer** ved å benytte **Applikasjonsspesifikke parametere**.
+
+> [!NOTE]
+> Vi anbefaler at du aktiverer funksjonen **Fremskynd ER-etikettlagringen** i arbeidsområdet **Funksjonsbehandling**. Denne funksjonen kan forbedre utnyttelsen av nettverksbåndbredden og den generelle systemytelsen, fordi ER-etiketter på ett enkelt språk brukes i de fleste tilfeller når du arbeider med én enkelt ER-konfigurasjon. Funksjonen **Fremskynd ER-etikettlagringen** er tilgjengelig i arbeidsområdet **Funksjonsbehandling** per Finance-versjon 10.0.25. Hvis du vil ha mer informasjon om hvordan du definerer parameterne for et ER-format for hver juridiske enhet, kan du se [Ytelse](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
 Hvis du vil knytte **Hovedkontoer** som brukes i Finans, til norske standardkontoer via **Applikasjonsspesifikke parametere**, følger du trinnene nedenfor:
 
-1. Åpne **Elektronisk rapportering**-arbeidsområdet, gå til konfigurasjonstreet og velg det elektroniske rapporteringsformatet **“SAF-T-format (NO)”**. 
+1. Åpne **Elektronisk rapportering**-arbeidsområdet, gå til konfigurasjonstreet og velg det elektroniske rapporteringsformatet **SAF-T-format (NO)**. 
 2. Kontroller at selskapet du arbeider med, er selskapet du vil definere **Applikasjonsspesifikke parametere** for.
 3. På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
 4. Velg versjonen av formatet som du vil bruke på venstre side av siden **Applikasjonsspesifikke parametere**.
 5. I **Oppslag**-hurtigfanen velger du **StandardMainAccount_Lookup** og spesifiserer deretter kriteriene på **Betingelser**-hurtigfanen ved å legge til linjer for hver **Resultat**-verdi som må brukes i det valgte selskapet. Hvis flere **Hovedkontoer** i det valgte selskapet må resultere i samme **Standardkonto**, legger du til en separat linje for hver **Hovedkonto** og spesifiserer samme **Standardkonto** for hver.
-6. Velg verdien **Ikke aktuelt** som den siste betingelsen i listen. Den må være satt til **\*Ikke tom\*** i **Hovedkonto**-kolonnen. Verifiser verdien i **Linje**-kolonnen for at **"Ikke aktuelt"** er den siste betingelsen i tabellen.
+6. Velg verdien **Ikke aktuelt** som den siste betingelsen i listen. Den må være satt til **\*Ikke tom\*** i **Hovedkonto**-kolonnen. Verifiser verdien i **Linje**-kolonnen for at **Ikke aktuelt** er den siste betingelsen i tabellen.
 7. Når du er ferdig med å sette opp betingelser, endrer du verdien i **Tilstand**-feltet til **Fullført**, lagrer endringene og lukker siden.
 
 ![Standardkonto-feltet på siden Hovedkontoer.](media/nor-saf-standard-main-accounts-appsppar.jpg)
@@ -190,7 +196,7 @@ Når rapporten er generert, hvis det genereres mer enn én XML-fil, må brukeren
 
 SAF-T-rapporten for Norge må inneholde informasjon om **AnalysisTypeTable** under **MasterFiles**-noden i rapporten. **AnalysisTypeTable** må representere en tabell med analysekode-IDene som brukes til ytterligere spesifikasjon av transaksjonsdata. I Finans er **Finansdimensjoner** datakilden for **AnalysisTypeTable**-noden. Når du definerer **Finansdimensjoner** i den juridiske enheten, bruker du **Rapportkolumnnavn**-feltet i **Finansdimensjon**-datakilden for verdien som skal rapporteres i \<AnalysisType\>-noden. Bruk **Dimensjonsnavn**-feltet i datakilden for **Finansdimensjon** for verdien som skal rapporteres i \<AnalysisTypeDescription\>-noden.
 
-### <a name="saf-t-report-and-one-voucher"></a>SAF-T-rapport og Ett bilag
+### <a name="saf-t-report-and-one-voucher"></a><a name="one-voucher"></a>SAF-T-rapport og Ett bilag
 
 Bruk av Ett bilag-funksjonaliteten introduserer en begrensning for ytterligere SAF-T-rapportering for data hvis ett bilag ble brukt. Vi anbefaler at du angir parameteren **Tillat flere transaksjoner i ett bilag** på siden **Parametere for økonomimodul** til **Nei** i den juridiske enheten din hvis du posterer transaksjoner som er en del av SAF-T-rapporten. Hvis du vil ha mer informasjon om Ett bilag-funksjonaliteten, kan du se [Ett bilag](../general-ledger/one-voucher.md).
 

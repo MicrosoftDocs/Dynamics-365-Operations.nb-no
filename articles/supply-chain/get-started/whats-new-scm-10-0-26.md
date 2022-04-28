@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 996988b1a4d59ae9ad7b4031e492824c0a6abc95
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524444"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547880"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.26 (mai 2022)
 
@@ -34,7 +34,7 @@ Denne tabellen viser funksjonene i denne versjonen. Dette emnet kan være oppdat
 
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
-| Lager og logistikk | [Beholdningsspørring for lagersynlighet for å støtte varer i avansert lagerstyring](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Kommer snart | Funksjonsbehandling:<br>*Aktiver lagervarer i lagersynlighet* |
+| Lager og logistikk | [Beholdningsspørring for lagersynlighet for å støtte varer i avansert lagerstyring](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility-støtte for WHS-varer](../inventory/inventory-visibility-whs-support.md) | Funksjonsbehandling:<br>*Aktiver lagervarer i lagersynlighet* |
 | Lager og logistikk | [Tilgjengelig for ordre for tilleggsprogrammet for lagersynlighet](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](../inventory/inventory-visibility-available-to-promise.md) | Aktivert av tjenestekonfigurasjon |
 | Produksjon | [Faktisk vekt-varer for grensesnittet for produksjonsutførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*(Forhåndsversjon) Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse* |
 | Produksjon | Fanen Mine jobber i grensesnittet for produksjonsutførelse <!-- KFM: Add link to release plan when available --> | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*Fanen Mine jobber i grensesnittet for produksjonsutførelse* |
@@ -51,7 +51,7 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre dette i [
 | Innkjøp og leverandører | Synkroniser sporingsdimensjoner på konserninterne salgsordre- og bestillingslinjer | Du kan bruke denne funksjonen til å styre om sporingsdimensjonene for serie- og partinummer skal synkroniseres på tvers av konserninterne salgs- og bestillingslinjer. Den legger til nye innstillinger i fanene **Bestillingspolicyer** og **Salgsordrepolicyer** og salgsordrepolicyer på konfigurasjonssiden **Konserninternt** for kunder og leverandører. Den oppdaterer også navnene på noen få relaterte innstillinger i nærheten for å gjøre ting klarere.<br><br>Hvis du bruker avansert lagerstyring, må du være oppmerksom på at denne funksjonen bare synkroniserer parti- og serienumre når disse dimensjonene er over lokasjonen i målreservasjonshierarkiet. |
 | Behandling av produktinformasjon | Rydd opp produktattributtverdier | Denne funksjonen legger til en periodisk oppgave kalt **Rydd opp produktattributtverdier**, som rydder opp poster for produktattributtverdier som ikke lenger er knyttet til produkter via en produktkategori. |
 | Lagerstyring | (Russland) Hindre avvik ved utstedelse av GTD-er for bestillinger som inkluderer WMS-aktiverte varer | Denne funksjonen er bare for russisk lokalisering. Den forhindrer avvik som oppstår ved utstedelse av russiske tolldeklareringsnumre (GTD-er) for import av bestillinger som omfatter varer som er aktivert for avansert lagerstyring. GTD-utstedelsesprosessen endrer enkelte lagerdimensjonsverdier i de relaterte lagertransaksjonene for fakturaer som er inkludert i den egendefinerte journalen, noe som fører til avvik mellom arbeidspostene for bestillingen og lagertransaksjonene for kjøpet. Når denne funksjonen er aktivert, genererer GTD-utstedelsesprosessen justeringsarbeid som fjerner slike avvik. |
-| Lagerstyring | Forbedret analyse for GS1-strekkoder | Denne funksjonen legger til en forbedret analyse for GS1-symboldata. Den nye analysen implementerer GS1-algoritmen for generell spesifikasjon for analyse av GS1-symboler og gir sterkere datavalidering. |
+| Lagerstyring | Forbedret analyse for GS1-strekkoder | Denne funksjonen legger til en forbedret analyse for GS1-symboldata. Den nye analysen implementerer GS1-algoritmen for generell spesifikasjon for analyse av GS1-symboler og gir sterkere datavalidering. Hvis du vil ha mer informasjon, kan du se [GS1-strekkodeskanning](../warehousing/gs1-barcodes.md). |
 | Lagerstyring | Nye sider for arbeidsområde for lastplanlegging | Legger til to nye arbeidsområdesider for lastplanlegging: **Arbeidsområde for planlegging av innkommende last** og **Arbeidsområde for planlegging av utgående last**. |
 | Lagerstyring | Lagerstyringsprogram – tom GTD | Denne funksjonen er bare for russisk lokalisering. Den gjør at arbeidere som bruker mobilappen Warehouse Management, kan la russiske tolldeklareringsnumre (GTD-er) stå tomme når det er nødvendig. Hvis GTD-sporingsdimensjonen er konfigurert slik at tomme verdier tillates, godtar systemet tomme verdier for GTD for lageroperasjoner forutsatt at lagerbeholdning er tilgjengelig. |
 
@@ -68,7 +68,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. Disse emn
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for økonomi- og driftsapper
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.26 av økonomi- og driftsapper (mai 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).<!-- KFM Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.26 av økonomi- og driftsapper (mai 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715236"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547989"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – avskrivning av lager for Lifecycle Services (LCS)
 
@@ -29,8 +29,8 @@ ms.locfileid: "7715236"
 Bruken av Microsoft Dynamics Lifecycle Services (LCS) som et lagringsrepositorium for konfigurasjoner for elektronisk rapportering (ER) blir avskrevet. Denne avskrivningen omfatter følgende endringer:
 
 - Microsoft-produserte konfigurasjoner som brukes i Microsoft Dynamics 365-programmer, publiseres ikke lenger i det delte aktivabiblioteket i LCS. De blir i stedet bare publisert via det globale RCS-repositoriet. Konfigurasjonene for Dynamics AX 2012 blir imidlertid fortsatt publisert i det delte aktivabiblioteket i LCS til kundestøttelivssyklusen for AX 2012 slutter.
-- Funksjonaliteten som lar deg laste opp konfigurasjoner til prosjektaktivabiblioteket i LCS fra Finance and Operations-apper og RCS, deaktiveres. Du kan imidlertid fortsatt bruke nettleseren i LCS til å laste opp konfigurasjoner til prosjektaktivabiblioteket. Du kan derfor fortsatt legge til konfigurasjoner i LCS, slik at de kan tas med i løsningspakker.
-- Import av konfigurasjoner fra LCS er fortsatt tilgjengelig og støttes i Finance and Operations-apper og RCS en stund. Funksjonaliteten kommer imidlertid omsider til å bli avskrevet. (Den nøyaktige avskrivningsdatoen blir kunngjort senere.)
+- Funksjonaliteten som lar deg laste opp konfigurasjoner til prosjektaktivabiblioteket i LCS fra økonomi- og driftsapper og fra RCS, deaktiveres. Du kan imidlertid fortsatt bruke nettleseren i LCS til å laste opp konfigurasjoner til prosjektaktivabiblioteket. Du kan derfor fortsatt legge til konfigurasjoner i LCS, slik at de kan tas med i løsningspakker.
+- Import av konfigurasjoner fra LCS er fortsatt tilgjengelig og støttes i økonomi- og driftsapper og RCS en stund. Funksjonaliteten kommer imidlertid omsider til å bli avskrevet. (Den nøyaktige avskrivningsdatoen blir kunngjort senere.)
 
 ## <a name="deprecation-notice"></a>Avskrivningsvarsel
 
@@ -39,7 +39,7 @@ Avskrivning av bruken av LCS som lager ble meddelt i [Funksjoner som er fjernet 
 ## <a name="key-features"></a>Hovedfunksjoner
 
 - Bruk RCS til å opprette og redigere ER-konfigurasjoner og globaliseringsfunksjoner.
-- Skyv konfigurasjoner direkte fra RCS-designeren til et tilkoblet program, for eksempel et Dynamics 365 Finance miljø, slik at du raskt kan foreta og teste endringer i konfigurasjonene.
+- Skyv konfigurasjoner direkte fra RCS-designeren til et tilkoblet program, for eksempel et Dynamics 365 Finance-miljø, slik at du raskt kan foreta og teste endringer i konfigurasjonene.
 - Lagre, del og administrer livssyklusen sentralt for både ER-konfigurasjoner og globaliseringsfunksjoner via det globale repositoriets sentraliserte lagring.
 
 ## <a name="guidance-for-one-time-and-ongoing-actions"></a>Veiledning for engangshandlinger og pågående handlinger
@@ -52,7 +52,7 @@ Importer alle nødvendige konfigurasjoner fra LCS til RCS, og publiser dem deret
 
 1. Hvis en RCS-forekomst ikke allerede er tilgjengelig, klargjør du en. Hvis du vil ha mer informasjon, kan du se [Oversikt over RCS](rcs-overview.md).
 2. I den klargjorte RCS-forekomsten registrerer du det aktuelle LCS-repositoriet for hvert LCS-prosjekt i aktivabiblioteket som omfatter avledede ER-konfigurasjoner.
-3. Importer ER-konfigurasjonene fra LCS-repositoriene til RCS. Hvis du vil ha mer informasjon, kan du se [Importere konfigurasjoner fra LCS](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
+3. Importer ER-konfigurasjonene fra LCS-repositoriene til RCS. Hvis du vil ha mer informasjon, kan du se [Importere konfigurasjoner fra LCS](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services).
 4. Hvis det globale repositoriet ikke gis automatisk, registrerer du det i RCS.
 5. Last opp alle avledede konfigurasjoner fra den gjeldende RCS-forekomsten til det globale repositoriet. Bruk funksjonen **Konfigurasjonspakker** som hjelp til opplastingen. Hvis du vil ha mer informasjon, kan du se [Opplasting til globalt RCS-repositorium](rcs-global-repo-upload.md).
 
@@ -73,7 +73,7 @@ Bruk globaliseringsrepositoriet i RCS til følgende formål:
 
 ### <a name="does-this-change-mean-that-lcs-cant-be-used-as-central-storage-for-configurations"></a>Betyr denne endringen at LCS ikke kan brukes som sentralt lager for konfigurasjoner?
 
-Ja. Funksjonaliteten som lar deg laste opp konfigurasjoner til prosjektaktivabiblioteket i LCS fra Finance and Operations-apper, kommer til å bli avskrevet. Du kan imidlertid fortsatt bruke nettleseren i LCS til å laste opp konfigurasjoner til prosjektaktivabiblioteket etter behov.
+Ja. Funksjonaliteten som lar deg laste opp konfigurasjoner til prosjektaktivabiblioteket i LCS fra økonomi- og driftsapper, kommer til å bli avskrevet. Du kan imidlertid fortsatt bruke nettleseren i LCS til å laste opp konfigurasjoner til prosjektaktivabiblioteket etter behov.
 
 ### <a name="i-thought-that-rcs-was-a-replacement-repository-for-importing-global-template-files-i-didnt-think-that-its-used-to-store-configurations-which-is-correct"></a>Jeg trodde at RCS var et erstatningsrepositorium for import av globale malfiler. Jeg trodde ikke det ble brukt til å lagre konfigurasjoner. Hva er riktig?
 
@@ -81,7 +81,7 @@ RCS er en utformingstjeneste for oppretting og redigering av ER-konfigurasjoner.
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>Hvordan kan konfigurasjoner lagres uten LCS slik at test- og produksjonskonfigurasjoner enkelt kan administreres og overføres?
 
-RCS bruker konseptet *tilkoblet program*. Et tilkoblet program danner en tilkobling mellom RCS og enhver forekomst av Finance and Operations-apper. Siden RCS kan brukes til å redigere konfigurasjoner, kan det tilkoblede programmet brukes til å sende konfigurasjonene direkte fra utformingen til miljøer for Finance and Operations-apper. Du kan derfor raskt endre og teste konfigurasjonene i stedet for å måtte gå gjennom lager for LCS på prosjektnivå.
+RCS bruker konseptet *tilkoblet program*. Et tilkoblet program danner en tilkobling mellom RCS og enhver forekomst av økonomi- og driftsapper. Siden RCS kan brukes til å redigere konfigurasjoner, kan den tilkoblede appen brukes til å sende konfigurasjonene direkte fra utformingen til miljøer for økonomi- og driftsapper. Du kan derfor raskt endre og teste konfigurasjonene i stedet for å måtte gå gjennom lager for LCS på prosjektnivå.
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Finnes det noen eksempler der konfigurasjon og administrasjon vises?
 
@@ -104,4 +104,4 @@ Hvis du vil ha mer informasjon om produktstøtte, kan du se [oversikten over dyn
 
 ### <a name="whats-the-cost-of-using-rcs"></a>Hva er kostnaden ved å bruke RCS?
 
-RCS og Globaliseringsrepositoriet leveres gratis som del av eksisterende Finance and Operations-applisenser. Ingen separate kostnader er tilknyttet bruk av RCS-designtjenesten eller lagring av konfigurasjoner i det globale repositoriet. Det er for øyeblikket ingen grense for antall konfigurasjoner eller tilkoblede programmer.
+RCS og Globaliseringsrepositoriet leveres gratis som del av eksisterende lisenser for økonomi- og driftsapper. Ingen separate kostnader er tilknyttet bruk av RCS-designtjenesten eller lagring av konfigurasjoner i det globale repositoriet. Det er for øyeblikket ingen grense for antall konfigurasjoner eller tilkoblede programmer.

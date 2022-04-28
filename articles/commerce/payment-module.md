@@ -2,7 +2,7 @@
 title: Betalingsmodul
 description: Dette emnet dekker betalingsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952475"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565735"
 ---
 # <a name="payment-module"></a>Betalingsmodul
 
@@ -74,6 +74,8 @@ Følgende illustrasjon viser et eksempel på PayPal iframe som aktiveres ved hje
 | Overstyring av betalingsstil | CSS-kode (gjennomgripende stilark) | Fordi betalingsmodulen ligger i en iFrame, er det begrenset stilfunksjonalitet. Du kan oppnå en viss stil ved hjelp av denne egenskapen. Hvis du vil overstyre områdestiler, må du lime inn CSS-koden som verdien for denne egenskapen. Områdebygger for CSS overstyrer dette, og stiler gjelder ikke for denne modulen. |
 |Støttede betalingsmiddeltyper| Streng| Hvis det er konfigurert flere betalingskoblinger, bør du oppgi betalingsmiddelstrengen som støttes, slik den er definert i konfigurasjonen av betalingskoblingen til Commerce Headquarters (se bildet nedenfor). Hvis den er tom, brukes Adyen-betalingskoblingen som standard. Lagt til i Commerce-versjon 10.0.14.|
 |Er primærbetaling|  **Sann** eller **Usann** | Hvis den er **sann**, vil eventuelle feilmeldinger bli generert fra primærbetalingskoblingen på betalingssiden. Hvis både Adyen- og PayPal-betalingskoblingene er konfigurert, setter du Adyen til **sann**, som ble lagt til i Commerce-utgivelsen 10.0.14.|
+|Bruk koblings-ID| **Sann** eller **Usann** | Bruk denne egenskapen hvis flere betalingskoblinger er konfigurert for området. Hvis **Sann**, må koblinger bruke koblings-ID-en for betalingskorrelasjon.|
+|Bruk nettleserens angitte språkkode for iFrame|  **Sann** eller **Usann** | (Bare Adyen) Hvis **Sann**, gjengir Adyen iFrame-språket basert på områdebrukerens nettleserkontekst, i stedet for å bruke språkkoden for Commerce-kanalen som er konfigurert for området. Lagt til i Commerce-versjon 10.0.27.|
 
 Følgende illustrasjon viser et eksempel på **Støttede betalingsmiddeltyper**-verdien som er satt til PayPal i betalingskoblingskonfigurasjonen i Commerce Headquarters.
 ![Eksempel på støttede betalingsmiddeltyper i Commerce Headquarters.](./media/ecommerce-paymenttendertypes.png)

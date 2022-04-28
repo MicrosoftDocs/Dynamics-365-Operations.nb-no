@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371699"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603032"
 ---
 # <a name="create-a-globalization-feature"></a>Opprette en globaliseringsfunksjon
 
@@ -47,7 +47,7 @@ Følg disse trinnene for å opprette en funksjon for elektronisk fakturering.
 8. I rutenettet **Konfigurasjoner** blar du til og velger formatkonfigurasjonene som kreves for datasamlebåndet for behandling (for eksempel for å generere elektroniske fakturafiler eller behandle svar fra eksterne nettjenester).
 9. Velg **OK**. Du kan nå bruke konfigurasjonene i handlinger i datasamlebåndet for behandling. Hvis du vil ha mer informasjon, kan du se [Arbeide med konfigurasjoner](e-invoicing-work-configurations.md).
 10. Du kan legge til et funksjonsoppsett for elektronisk fakturering ved å opprette det i **Oppsett**-fanen på siden **Ny funksjon**. Hvis du vil ha mer informasjon, kan du se [Arbeide med funksjonsoppsett](e-invoicing-feature-setup.md).
-11. Fullfør oppsettet, og rull ut funksjonen for elektronisk fakturering til tjenestemiljøet. Hvis du vil ha mer informasjon, kan du se [Fullføre, publisere og rulle ut en globaliseringsfunksjon](e-invoicing-complete-publish-deploy-globalization-feature).
+11. Fullfør oppsettet, og rull ut funksjonen for elektronisk fakturering til tjenestemiljøet. Hvis du vil ha mer informasjon, kan du se [Fullføre, publisere og rulle ut en globaliseringsfunksjon](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>Opprette filformatkonfigurasjoner som er avledet fra den eksisterende fakturamodellen
 
@@ -91,4 +91,4 @@ De nye filformatkonfigurasjonene må deles med Microsoft-domenet før de kan bru
     - Gå gjennom konfigurasjonene i tilfelle du må tilpasse ER-formatene og bindingen deres til formattilordninger for funksjonsversjonen.
     - Gå gjennom oppsettet i tilfelle du må tilpasse **Handlinger**-fanen, **Relevansregler**-fanen eller **Variabler**-fanen for funksjonsversjonen.
 
-9. Fullfør oppsettet, og rull ut funksjonen for elektronisk fakturering til tjenestemiljøet. Hvis du vil ha mer informasjon, kan du se [Fullføre, publisere og rulle ut en globaliseringsfunksjon](e-invoicing-complete-publish-deploy-globalization-feature).
+9. Fullfør oppsettet, og rull ut funksjonen for elektronisk fakturering til tjenestemiljøet. Hvis du vil ha mer informasjon, kan du se [Fullføre, publisere og rulle ut en globaliseringsfunksjon](e-invoicing-complete-publish-deploy-globalization-feature.md).

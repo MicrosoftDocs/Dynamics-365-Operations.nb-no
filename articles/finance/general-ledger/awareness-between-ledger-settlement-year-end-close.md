@@ -2,7 +2,7 @@
 title: Forståelse av finansutligning og årsavslutning
 description: Dette emnet inneholder informasjon om forbedringer som påvirker finansutligninger og årsavslutting for økonomimodulen.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462359"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553339"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Forståelse av finansutligning og årsavslutning
 
@@ -48,12 +48,16 @@ For å støtte de nye forbedringene ble det gjort endringer i finansutligning og
 
 På grunn av endringene i funksjonalitet og datamodellen, er det viktig at du vurderer følgende punkter før du aktiverer funksjonen:
 
+- Siden bare utlignede transaksjoner blir sendt fremover til åpningssaldoen, må du oppheve transaksjoner fra det gjeldende regnskapsåret som er utlignet med transaksjoner i forrige regnskapsår. Transaksjonene må utlignes på nytt mot transaksjoner innen gjeldende regnskapsår. Dette kan gjøres via en justeringsoppføring i det gjeldende regnskapsåret. Justeringen tilbakefører de summerte åpningssaldoene og motregner med den detaljerte transaksjonen som er nødvendig for å utligne finansoppføringene i gjeldende år. 
+
+  > [!IMPORTANT]
+  > Hvis dette ikke blir gjort, vil du få en feil av typen **ikke i balanse** når du kjører årsavslutningen for gjeldende regnskapsår. Hvis det ikke er mulig å oppheve og utligne finanstransaksjonene på nytt med samme regnskapsår, må du ikke aktivere denne funksjonen før årsavslutningen er fullført. Aktiver funksjonen rett etter at årsavslutningen er fullført, og før eventuelle nye finanstransaksjoner utlignes i det neste regnskapsåret. 
+  
 - Alle transaksjoner som er merket for utligning, men som ikke har blitt utlignet, vil automatisk få merket fjernet når funksjonen er aktivert. For å unngå tap av arbeid må du utligne alle merkede transaksjoner før du aktiverer funksjonen.
 - Noen organisasjoner kjører årsavslutningen flere ganger for samme regnskapsår. Ikke aktiver funksjonen hvis årsavslutningen allerede er kjørt én gang og vil bli kjørt på nytt for det samme regnskapsåret. Funksjonen må aktiveres før du behandler den første årsavslutningen eller etter at du har behandlet den forrige årsavslutningen for regnskapsåret.
 
   Hvis du vil aktivere funksjonen, men årsavslutningen allerede er kjørt én gang, må du tilbakeføre årsavslutninen før du kan aktivere funksjonen.
 
-- Fordi utligning på tvers av regnskapsår ikke lenger er tillatt, anbefaler vi at du aktiverer funksjonen før du starter årsavslutningsprosessen. For å sikre at neste regnskapsårs åpningssaldoer ikke berøres av tidligere utligninger på tvers av regnskapsår, bør deretter åpningssaldotransaksjonen utlignes for regnskapsåret som avsluttes.
 - Fordi utligning på tvers av hovedkontoer ikke lenger er tillatt, kan du justere kontoplanen eller prosessene etter behov for å sikre at finansutligning kan utføres i den samme hovedkontoen.
 - Funksjonen kan ikke aktiveres hvis årsavslutningsprosessen for offentlig sektor brukes.
 

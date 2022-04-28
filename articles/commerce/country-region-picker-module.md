@@ -2,7 +2,7 @@
 title: Land-/områdevelgermodul
 description: Dette emnet beskriver land/områdevelgermodulen og beskriver hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: anupamar
+ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 1a8eebb589372051272573895a0ae5b4203eef62
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 9c20e614053b7a79cf962990dbd13ca0f45d5a00
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109787"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551676"
 ---
 # <a name="countryregion-picker-module"></a>Land-/områdevelgermodul
 
@@ -28,22 +28,34 @@ ms.locfileid: "8109787"
 
 Dette emnet beskriver land/områdevelgermodulen og beskriver hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 
-Land-/områdevelgermodulen bruker funksjonen for [registrering og omadressering av georeplikering](geo-detection-redirection.md) i Dynamics 365 Commerce for å vise anbefalte URL-adresser til kunder som ber om en URL-adresse for e-handel som ikke er knyttet til landet eller regionen deres.
+Land-/områdevelgermodulen bruker funksjonen for [registrering og omadressering av georeplikering](geo-detection-redirection.md) i Dynamics 365 Commerce for å vise anbefalte nettsteder til kunder som ber om en URL-adresse for e-handel som ikke er knyttet til landet eller regionen deres.
 
-En kunde i Canada ber for eksempel om en URL-adresse som ikke er tilknyttet Canada. I dette tilfellet viser land-/områdevelgermodulen en dialogboks som anbefaler URL-adresser for områder som er tilknyttet Canada. Illustrasjonen nedenfor viser et eksempel på dialogboksen for land/områdevelger.
+En kunde i Canada ber for eksempel om en URL-adresse som er tilknyttet et annet land enn Canada. I dette tilfellet viser land-/områdevelgermodulen en dialogboks som anbefaler URL-adresser for områder som er tilknyttet Canada. 
+
+## <a name="how-it-works"></a>Hvordan det fungerer
+
+Når registrering og omadressering av georeplikering er aktivert for et nettsted, og en kunde ber om en URL-adresse, brukes landet som er registrert for kunden og URL-adressen kunden har bedt om, til å fastslå om URL-adressen er tilordnet landet der kunden er. Tilordningen mellom URL-adresser og land er definert på **Kanaler**-siden under **Områdeinnstillinger** i Commerce Site Builder. 
+
+Hvis den forespurte URL-adressen ikke samsvarer med en URL-adresse som er tilordnet kundens land, blir listen over én eller flere URL-adresser som er tilordnet dette landet, returnert i svaret. Land-/områdevelgeren sammenligner hver URL-adresse i den listen med URL-adressene som er konfigurert i land-/områdemodulen. For hvert nøyaktige treff som blir funnet, gjengir land-/områdevelgeren visningsoverskriften, underoverskriften og bildet for denne URL-adressen, og hyperkobler disse elementene ved hjelp av URL-adressen.
+
+Når en kunde velger et alternativ i land-/områdevelgeren, tas de til den hyperkoblede URL-adressen. Denne URL-adressen skrives til informasjonskapselen **\_msdyn365\_\_\_nettsted\_**, slik at den kan brukes som kundens nettstedspreferanse. Neste gang kunden ber om en URL-adresse som ikke er knyttet til kundens land eller område, blir kunden automatisk sendt videre til det foretrukkede landet. Derfor anbefaler vi at du også bruker [områdevelgermodulen](site-selector.md) på e-handelsområdet ditt, slik at kunder kan overstyre eller oppdatere områdepreferansene sine. 
+
+Hvis en kunde lukker dialogboksen med land-/områdevelgeren, skrives det ikke en informasjonskapsel, og kunden blir værende på det gjeldende nettstedet. 
+
+Illustrasjonen nedenfor viser et eksempel på dialogboksen for land/områdevelger.
 
 ![Eksempel på dialogboksen for land/områdevelger på en hjemmeside.](./media/Geo_country-region-module-insitu.png)
 
 ## <a name="countryregion-picker-module-properties"></a>Egenskaper for Land-/områdevelgermodul
 
-| Egenskapsnavn              | Verdi       | beskrivelse |
-| -------------------------- | ----------- | ----------- |
-| Overskrift                    | Tekst        | Overskriften som vises øverst i dialogboksen. |
-| Underoverskrift                 | Tekst        | Underoverskriften som vises under overskriften. |
-| Land: Visningsstreng    | Tekst        | Visningsnavnet for et URL-alternativ (for eksempel "Canada"). |
+| Egenskapsnavn              | Verdi       | beskrivelse                                                  |
+| -------------------------- | ----------- | ------------------------------------------------------------ |
+| Overskrift                    | Tekst        | Overskriften som vises øverst i dialogboksen.       |
+| Underoverskrift                 | Tekst        | Underoverskriften som vises under overskriften.               |
+| Land: Visningsstreng    | Tekst        | Visningsnavnet for et URL-alternativ (for eksempel "Canada").   |
 | Land: Visningsunderstreng | Tekst        | Valgfri visningsunderstreng for et URL-alternativ (for eksempel "engelsk" eller "fransk"). |
 | Land: Landsbilde     | Medieaktivum | Et valgfritt bilde som er knyttet til et URL-alternativ (for eksempel et bilde av det kanadiske flagget). |
-| Land: Lands-URL       | Tekst        | URL-adressen som tilsvarer kanalen og de nasjonale innstillingene som er konfigurert for landet eller området på **Kanaler**-siden i Commerce-områdebygger (**Områdeinnstillinger \> Kana<ler**). Denne URL-adressen må samsvare med URL-adressen som er konfigurert på **Kanaler**-siden. |
+| Land: Lands-URL       | Tekst        | URL-adressen for landet/området som konfigureres. Denne URL-adressen må samsvare nøyaktig med URL-adressen du angav for landet/området på **Kanaler**-siden under **Områdeinnstillinger** i Commerce Site Builder. I tillegg må domenet for URL-adressen være det egendefinerte domenet som er angitt i feltet **Samsvar domene** på **Kanaler**-siden, og ikke den fungerende adressen for nettstedet som Commerce gir deg når du oppretter e-handelsmiljøet (for eksempel URL-adressen `https://<yourcompany>.commerce.dynamics.com/`). |
 | Handlingskobling                | Handlingskobling | En valgfri kobling som vises nederst i dialogboksen. Denne koblingen kan for eksempel peke til en intern side som inneholder en liste over alle land og områder som området støtter. |
 
 ## <a name="add-a-countryregion-picker-module-to-a-page"></a>Legge til en land-/områdevelgermodul på en side
@@ -55,7 +67,7 @@ Land-/områdevelgermodulen kan legges til i hodemodulen enten direkte eller via 
 > [!NOTE]
 > URL-ene som du anbefaler til kundene, må konfigureres som landobjekter i land-/områdevelgermodulen.
 
-For hver URL-adresse du vil vise og anbefale til kunder, følger du denne fremgangsmåten i Commerce-områdebygger.
+For hver URL-adresse du vil vise og anbefale til kunder, følger du denne fremgangsmåten i Commerce Site Builder.
 
 1. Velg land-/områdevelgermodul-sporet.
 1. I egenskapsruten under **Landliste** velger du **Legg til land**.
@@ -63,7 +75,7 @@ For hver URL-adresse du vil vise og anbefale til kunder, følger du denne fremga
 1. I **Visningsstreng**-feltet angir du et visningsnavn (for eksempel **Canada**).
 1. Valgfritt: I feltet **Visningsunderstreng** angir du en visningsunderstreng (for eksempel **Fransk** eller **fr-ca**).
 1. Valgfritt: Velg et bilde fra mediebiblioteket.
-1. Angi en URL-adresse i **URL-adresse for land**-feltet. Denne URL-adressen må samsvare med URL-adressen som vises på **Kanaler**-siden, og er tilordnet kanalen, inkludert de nasjonale innstillingene som er tilknyttet landet eller området.
+1. Angi en URL-adresse i **URL-adresse for land**-feltet. Denne URL-adressen må samsvare med URL-adressen som vises på **Kanaler**-siden, og som er tilordnet kanalen, inkludert de nasjonale innstillingene som er tilknyttet landet eller området. 
 1. Velg **OK**.
 1. Gjenta disse trinnene for eventuelle andre land-URL-er som du vil at land-/områdevelgermodulen skal vise.
 

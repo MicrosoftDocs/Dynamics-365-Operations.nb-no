@@ -2,7 +2,7 @@
 title: Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 description: Dette emnet forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
 author: liza-golub
-ms.date: 01/20/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: a76fdd5d1c3214d121c9db5619859a29f70e2baa
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: 988871b290cd1f6894ed8974216a1561871df265
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018421"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550021"
 ---
 # <a name="prepare-your-environment-to-interoperate-with-id-porten-and-altinn-web-services"></a>Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 
@@ -87,6 +87,9 @@ Programspesifikke parametere for ER-formatene **Mva-deklarasjon XML (NO)** og **
 | [NoteForTaxCode_Lookup](#note-for-tax-code) | Kodelisten som brukes til å vise forbindelsen mellom strukturerte merknader og mva-koder i mva-meldingen. | Under kjøringen av rapporten brukes dette oppslagsfeltet til å finne verdien fra den opplistede listen over verdier som den norske skatteetaten krever, basert på hoveddata fra Finance, og til å rapportere den under `<merknad/utvalgtMerknad>` i noden `<mvaSpesifikasjonslinje>`. |
 | [VATSpecification_Lookup](#vat-specification) | Kodelisten for ytterligere spesifikasjon av mva. | Under kjøringen av rapporten brukes dette oppslagsfeltet til å finne verdien fra den opplistede listen over verdier som den norske skatteetaten krever, basert på hoveddata fra Finance, og til å rapportere den under `<spesifikasjon>` i noden `<mvaSpesifikasjonslinje>`. |
 | [StandardTaxCodes_Lookup](#standard-tax-code) | Mva-koden som er angitt av den norske skatteetaten. | Under kjøringen av rapporten brukes dette oppslagsfeltet til å finne standard mva-kode for mva-koden som brukes i mva-postering i Finance, og til å rapportere den i under `<mvaKode>` i rapporten. |
+
+> [!NOTE]
+> Vi anbefaler at du aktiverer funksjonen **Fremskynd ER-etikettlagringen** i arbeidsområdet **Funksjonsbehandling**. Denne funksjonen kan forbedre utnyttelsen av nettverksbåndbredden og den generelle systemytelsen, fordi ER-etiketter på ett enkelt språk brukes i de fleste tilfeller når du arbeider med én enkelt ER-konfigurasjon. Funksjonen **Fremskynd ER-etikettlagringen** er tilgjengelig i arbeidsområdet **Funksjonsbehandling** per Finance-versjon 10.0.25. Hvis du vil ha mer informasjon om hvordan du definerer parameterne for et ER-format for hver juridiske enhet, kan du se [Ytelse](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
 Følg disse trinnene for å opprette programspesifikke parametere for ER-formatene **Mva-deklarasjon XML (NO)** og **Mva-deklarasjon Excel (NO)**.
 
@@ -195,8 +198,7 @@ Tabellen nedenfor viser oppslagsresultatene for **VATSpecification_Lookup**.
 
 > [!IMPORTANT]
 > Det er viktig at du legger til **Annet** (**Annet**), som må samle inn data fra andre tilfeller som den siste varen i listen. **Linjeverdien** må være den siste verdien i tabellen. I alle de andre kolonnene velger du **\*Ikke tom\***. Fordi i noen tilfeller kan feltene for **varens mva-gruppe** og **merverdiavgiftsgruppe** være tomme i avgiftstransaksjoner, legg til en linje til med oppslagsresultatverdien **Annet** (**Annet**), **\*Tomt\*** i kolonnene **Varens mva-gruppe** og **Merverdiavgiftsgruppe** og **\*Ikke tomt\*** i alle de andre kolonnene.
-
-> [!IMPORTANT]
+>
 > Verdier fra opplistingsliste *Spesifikasjon* av verdier må bare brukes med bestemte *Standard avgiftskoder*. Sørg for at **VATSpecification_Lookup** er kompatibelt med gjeldende regler som defineres av norske skattemyndigheter som følger med i dokumentasjonen til [Informasjonsmodeller, XSD og koding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
 
 ### <a name="standard-tax-codes-standardtaxcodes_lookup"></a><a id="standard-tax-code"></a>Standard mva-koder (StandardTaxCodes_Lookup)
@@ -251,6 +253,15 @@ Tabellen nedenfor viser oppslagsresultatene for **StandardTaxCodes_Lookup**.
 > - **91** – Kjøp av utslippskvoter og gull / Fradrag ved kjøp av utslippskvoter og gull. 
 >
 > Mekanismen for snudd avregning gjør det mulig å postere et dokument som har to mva-transaksjoner: en der retningen er **Utgående merverdiavgift**, og en der den er **Innkommende merverdiavgift**. Disse transaksjonene rapporteres deretter i mva-returen som to linjer.
+>
+> Kjøp av varer og tjenester fra utlandet uten fradragsrett som er underlagt følgende `mvaKode`-verdier, må rapporteres i mva-returen ved hjelp av én linje der retningen er **Utgående merverdiavgift**. Vi anbefaler at du posterer disse dokumentene ved hjelp av [snudd avregning-mekanismen for mva/GST-skjemaet](emea-reverse-charge.md), der mva-koden som er definert med en positiv avgiftssats, har en ikke-fradragsbar prosent som er lik 100.
+>
+> - **82** – Kjøp av varer fra utlandet uten fradragsrett (standardsats).
+> - **84** – Kjøp av varer fra utlandet uten fradragsrett (middels sats).
+> - **87** – Kjøp av tjenester fra utlandet uten fradragsrett (standardsats).
+> - **89** – Kjøp av tjenester fra utlandet uten fradragsrett (lav sats). 
+>
+> Mekanismen for snudd avregning gjør det mulig å postere et dokument med to mva-transaksjoner: en der retningen er **Utgående merverdiavgift**, og en der den er **Innkommende merverdiavgift**. Transaksjonen der retningen er **Utgående merverdiavgift**, rapporteres deretter i mva-oppgaven. Transaksjonen der retningen er **Inngående merverdiavgift**, rapporteres ikke i mva-oppgaven.
 
 ## <a name="import-a-package-of-data-entities-that-includes-a-predefined-em-setup"></a><a id="em-setup"></a>Importere en pakke med dataenheter som inkluderer et forhåndsdefinert EM-oppsett
 
@@ -473,7 +484,7 @@ Følg denne fremgangsmåten for å definere en Internett-adresse som brukes av A
     | NO Altinn PUT JSON | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn PUT XML | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn GET-vedlegg | La dette feltet stå tomt. |
-    | NO Valider mva-retur | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
+    | NO Valider mva-retur | `https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 For *produksjonssamsvar* med nettjenester som norske skattemyndigheter tilbyr bruker du følgende nettadresser.
 

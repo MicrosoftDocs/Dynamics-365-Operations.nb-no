@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 83d19f92984c9f67242946aa8faf445d9d2bd881
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920206"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570485"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 
@@ -57,7 +57,7 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre det i [fu
 | Innkjøp og leverandører | Rydd opp i oppdateringshistorikk for bestilling | Ved hjelp av denne funksjonen kan du rydde opp i midlertidige historiske poster i forbindelse med bestillingsoppdateringer. Den legger til en ny knapp kalt **Opprydding av oppdateringshistorikk for innkjøp** i handlingsruten på siden **Alle bestillinger**. Denne funksjonen er aktivert som standard. |
 | Produksjonskontroll | (Forhåndsversjon) Automatisk plukking av lageraktiverte materialer for automatisk posterte plukklister | Med denne funksjonen kan du plukke og løse lagerdimensjoner for automatisk posterte, avledede/etterkalkulerte plukklistejournaler. |
 | Produksjonskontroll | Valider utløp av råvarer mot dato for planlagt forbruk | Denne funksjonen endrer hvordan utløpsdatoer for partier valideres når du reserverer et parti råvarer som skal brukes under produksjonen. Når denne funksjonen er aktivert, valideres utløpsdatoen for partiet mot den planlagte forbruksdatoen (råvaredatoen), slik den er fastsatt på produksjonsstykklistelinjen eller formellinjen for partiordren. Når denne funksjonen deaktiveres, valideres utløpsdatoen for partiet mot den planlagte leveringsdatoen til produksjons- eller partiordren (som tidligere). |
-| Salg og markedsføring | Rydd opp i salgsoppdateringshistorikk basert på alder | Ved hjelp av denne funksjonen kan du angi maksimal alder for poster som skal beholdes når den periodiske oppgaven **Opprydding av salgsoppdateringshistorikk** kjøres. Eldre poster blir slettet. Dette er nyttig når du angir at oppgaven skal kjøres periodisk, fordi alderen alltid beregnes i forhold til datoen når oppgaven kjøres. Uten denne funksjonen kan du bare angi en bestemt dato for å beholde de eldste postene. |
+| Salg og markedsføring | Rydd opp i salgsoppdateringshistorikk basert på alder | Ved hjelp av denne funksjonen kan du angi maksimal alder for poster som skal beholdes når den periodiske oppgaven **Opprydding av salgsoppdateringshistorikk** kjøres. Eldre poster blir slettet. Dette er nyttig når du angir at oppgaven skal kjøres periodisk, fordi alderen alltid beregnes i forhold til datoen når oppgaven kjøres. Uten denne funksjonen kan du bare angi en bestemt dato for å beholde de eldste postene. Hvis du vil ha mer informasjon, kan du se [Planlegg opprydding i salgshistorikkdata](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Salg og markedsføring | Forbedre ytelsen til rapport om Topp 100-kunder | Denne funksjonen forbedrer ytelsen til **Topp 100**-kunderapporten ved alltid å kjøre rapporten på tvers av alle kunder (som er tiltenkt bruk) i stedet for å tillate egendefinerte spørringer. Når denne funksjonen er aktivert, deaktiveres alle **oppføringer som skal tas med** i dialogboksen **Topp 100**-rapport. |
 | Lagerstyring | Skaler enhetsstøtte for frigivelse til lager av utgående ordrer | Når denne funksjonen er aktivert, kan utgående ordrer frigis fra senteret direkte til skalaenheten, der ordrene skal oppfylles. |
 
@@ -79,9 +79,9 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. Disse emn
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformoppdateringer for Finance and Operations-apper
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for økonomi- og driftsapper
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.23 av Finance and Operations-apper (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.23 av Finance and Operations-apper (november 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 

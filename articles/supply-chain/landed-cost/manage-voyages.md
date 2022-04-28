@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 50b6f306da1d32b1fd98da68bd997de1f1c23ffb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 996a8b62b59dd27691a1eaa5ed619f94e899e8cf
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570952"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570443"
 ---
 # <a name="manage-voyages"></a>Administrere sjøreiser
 
@@ -66,9 +66,9 @@ Tabellen nedenfor beskriver handlingene som er tilgjengelige i handlingsruten p�
 | I transitt | Oppdater feltet **Sjøreisestatus** til statusen I transitt som er fastsatt på siden **[Parametere for netto innkjøpspris](landed-cost-parameters.md)**. Det er ingen ytterligere logikk i denne prosessen. En sjøreise kan også oppdateres automatisk til statusen I transitt basert på innstillingene i [sporingskontrollsenteret](delivery-information-setup.md).
 | Klar for etterkalkulering | Oppdater feltet **Sjøreisestatus** til statusen Klar for etterkalkulering som er fastsatt på siden **[Parametere for netto innkjøpspris](landed-cost-parameters.md)**. En sjøreise kan kostnadsføres når alle fakturaene er behandlet (både lagerfakturaer og kostnadsfakturaer) og varene er mottatt. Hvis de estimerte kostnadene som er knyttet til en sjøreise, ikke har blitt kostnadsført, vil det oppstå en feil når du prøver å behandle etterkalkulering av en sjøreise. |
 | Kalkulert | Rydd opp i uregelmessigheter ved etterkalkulering etter at det finnes en faktura for alle bestillinger og sjøreisekostnader. Når du velger denne knappen, vises dialogboksen **Sjøreise oppdatert – kostnadsført**. Der kan du velge å postere på standard finansdato eller angi en posteringsdato, og deretter kjøre handlingen. Du kan kjøre handlingen på nytt så mange ganger du vil. Du kan også bruke dialogboksen **Sjøreise oppdatert – kostnadsført** til å opprette en plan for å kjøre handlingen som en periodisk oppgave (satsvis jobb). Det anbefales at du kjører handlingen regelmessig ved å definere den som en satsvis jobb. |
-| Poster tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i sjøreisen. Hvis det brukes flere sjøreiser, åpnes det en ny dialogboks for mottakslistepostering for hvert firma, og den må behandles i hver juridiske enhet. |
-| Poster mottaksseddel | Poster en produktkvittering for alle bestillingslinjer i sjøreisen. Produktmottaksprosessen for bestillingslinjene som er knyttet til en sjøreise, vil bare bli brukt hvis varene **ikke** kommer til å gå gjennom behandling av varer i transitt. Hvis varene går gjennom behandlingen av varer i transitt, får du en feilmelding når du prøver å postere produktmottaket for en bestillingslinje. Hvis det brukes flere sjøreiser, åpnes det en ny følgeseddel for produktkvitteringspostering for hvert firma. |
-| Poster faktura | Poster en faktura for alle bestillingslinjer i sjøreisen. Hvis varene på sjøreisen går gjennom behandling av varer i transitt, faktureres bestillingslinjene før mottaksprosessen er utført. Når den opprinnelige bestillingen faktureres, opprettes ordrene for varer i transitt som er knyttet til de opprinnelige bestillingslinjene. Disse ordrene kan deretter mottas av lageret. Hvis det brukes flere forsendelser, åpnes det en ny dialogboks for fakturapostering for hvert firma. |
+| Poster tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i sjøreisen.  |
+| Poster mottaksseddel | Poster en produktkvittering for alle bestillingslinjer i sjøreisen. Produktmottaksprosessen for bestillingslinjene som er knyttet til en sjøreise, vil bare bli brukt hvis varene **ikke** kommer til å gå gjennom behandling av varer i transitt. Hvis varene går gjennom behandlingen av varer i transitt, får du en feilmelding når du prøver å postere produktmottaket for en bestillingslinje.  |
+| Poster faktura | Poster en faktura for alle bestillingslinjer i sjøreisen. Hvis varene på sjøreisen går gjennom behandling av varer i transitt, faktureres bestillingslinjene før mottaksprosessen er utført. Når den opprinnelige bestillingen faktureres, opprettes ordrene for varer i transitt som er knyttet til de opprinnelige bestillingslinjene. Disse ordrene kan deretter mottas av lageret.  |
 | Send overføringsordre | Poster en sjøreise for overføringsordre for alle overføringsordrelinjer i sjøreisen. Når denne knappen er valgt, er bare overføringsordrer tilgjengelige for oppdatering. |
 | Motta overføringsordre | Poster en kvittering for overføringsordre for alle overføringsordrelinjer i sjøreisen. |
 | Motta varer i transitt | Motta alle ordrelinjer som er i transit i sjøreisen. Denne knappen er ett av tre alternativer som er tilgjengelige for mottak av varer i transitt for en sjøreise. (De to andre alternativene er knappen **Opprett ankomstjournal**, som beskrives senere i denne tabellen, og mobilappen Lagerstyring.) Dette alternativet er det enkleste alternativet, og det vil behandle varene i transitt ut av transittlageret og til det endelige destinasjonslageret. Hvis du vil ha mer kontroll over prosessen, kan du bruke ankomstjournalen eller en mobilenhet til å behandle mottak av varer. |
@@ -84,7 +84,7 @@ Tabellen nedenfor beskriver knappene som er tilgjengelige i handlingsruten på s
 
 | Knapp | beskrivelse |
 |---|---|
-| Tilgangsliste | Åpne en liste over produktmottak for alle bestillingslinjer i sjøreisen. Hvis det brukes flere sjøreiser, åpnes det en ny mottaksliste for hvert firma. Hvis ingen produktmottakslister er behandlet, er ikke denne knappen tilgjengelig. |
+| Tilgangsliste | Åpne en liste over produktmottak for alle bestillingslinjer i sjøreisen.  Hvis ingen produktmottakslister er behandlet, er ikke denne knappen tilgjengelig. |
 | Produktkvittering | Åpne produktmottaksposten for bestillingslinjene som er knyttet til sjøreisen, hvis den posten brukes. Hvis ingen produktmottak er postert, er ikke denne knappen tilgjengelig. Produktmottaksprosessen blir ikke brukt hvis du bruker behandling av varer i transitt. |
 | Vareankomst | Åpne vareankomstjournalen, hvis den brukes. |
 | Sporing | Åpne siden **Innkommende sporing**, der du kan oppdatere den forventede ankomstdatoen for varer i en forsendelsescontainer og en sjøreise, og deretter oppdatere de forventede leveringsdatoene for bestillingslinjer. |

@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349749"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550013"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce-analyse (forhåndsversjon)
 
@@ -352,15 +352,20 @@ Siden **Visningsrapport** inneholder følgende mål:
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a>Aktivere og konfigurere Commerce-analyse (forhåndsversjon)
 
-Hvis du vil installere Commerce-analyse (forhåndsversjon), må du ha tillatelse til å opprette ressurser i et Azure-abonnement. Du må også ha tillatelse til å installere tilleggsprogrammet i LCS. 
+Hvis du vil installere Commerce-analyse (forhåndsversjon), må du ha tillatelse til å opprette ressurser i et Azure-abonnement. Du må også ha tillatelse til å installere tilleggsprogrammet i LCS.
 
 Følg denne fremgangsmåten for å aktivere og konfigurere Commerce-analyse (forhåndsversjon).
 
-1. [Aktivere og konfigurere tilleggsprogrammet Eksporter til Data Lake](#enableExportToDataLake).
-1. [Installer og konfigurer et Azure Synapse workspace](#configureAzureSynapse).
-1. [Legg til hemmeligheter i nøkkelhvelvet](#addSecrets).
-1. [Aktivere og konfigurere Commerce-analyse (forhåndsversjon)](#enableCommerceAnalyticsAddin).
-1. [Installer Power BI malappen](#powerbi).
+1. [Send inn inntaksskjemaet for Commerce-analyse (forhåndsversjon)](#joinPreview)
+2. [Aktivere og konfigurere tilleggsprogrammet Eksporter til Data Lake](#enableExportToDataLake).
+3. [Installer og konfigurer et Azure Synapse workspace](#configureAzureSynapse).
+4. [Legg til hemmeligheter i nøkkelhvelvet](#addSecrets).
+5. [Aktivere og konfigurere Commerce-analyse (forhåndsversjon)](#enableCommerceAnalyticsAddin).
+6. [Installer Power BI malappen](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a>Send inn inntaksskjemaet for Commerce-analyse (forhåndsversjon).
+
+Send inn [inntaksskjemaet for Commerce-analyse (forhåndsversjon)](https://forms.office.com/r/vW5VLJGXZ2). Når forespørselen er behandlet, blir det sendt en bekreftelses-e-post til e-postadressen du oppgav i skjemaet.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a>Aktivere og konfigurere tilleggsprogrammet Eksporter til Data Lake
 
