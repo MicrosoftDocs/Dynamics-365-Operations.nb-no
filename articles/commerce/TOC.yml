@@ -12,14 +12,12 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.27 (juli 2022)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (mai 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Commerce 10.0.25 (april 2022)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Commerce 10.0.24 (februar 2022)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Commerce 10.0.23 (januar 2022)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -352,11 +350,13 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Hele beløp og alternativer for intervallberegning for mva-koder
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
-                        - name: Beregning av mva-fritak
+                        - name: Beregning av avgiftsfritak
                           href: tax-exempt-price-inclusive.md
-                        - name: Konfigurere merverdiavgift for elektroniske ordrer
+                        - name: Konfigurer merverdiavgift for elektroniske ordrer
                           href: sales-tax-config.md
-                    - name: Definere en profil for e-postvarsling
+                        - name: Skjul informasjon om avgiftsoppbrudd i ordresammendrag
+                          href: hide-taxes-breakup.md
+                    - name: Definer en profil for e-postvarsling
                       href: email-notification-profiles.md
                     - name: Nummerserier
                       items:
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: Implementeringsveiledning for enhetsbehandling
                       href: implementation-considerations-devices.md
-                    - name: Velg mellom MPOS og Cloud POS
+                    - name: Velg mellom Store Commerce og Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Tilkoblede og frakoblede salgsstedsoperasjoner
                       href: pos-operations.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Opprett finansdimensjoner for detaljhandelskanaler og konfigurer verdier i butikker
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Definer nummerserier for detaljshandelsutdrag
+                  href: retail-statements-number-sequences.md
                 - name: Aktiver konsekvent leveringsmåtehåndtering i e-handelskanaler
                   href: consistent-delivery-mode-handling.md
             - name: Konfigurer en nettkanal
@@ -884,6 +886,8 @@
           items:
             - name: Oversikt over kontoutdrag
               href: retail-statements.md
+            - name: Commerce-posteringsparametere
+              href: commerce-posting-parameters.md
             - name: Valider butikktransaksjoner for utdragsberegning
               href: valid-checker.md
             - name: Deaktiver regler i konsekvenskontroll for detaljhandelstransaksjon
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Installer Adventure Works-teamet
                       href: install-adventure-works.md
+                - name: Commerce-lokaliseringsveiledning
+                  href: e-commerce-localization-guide.md
             - name: Administrer digitale aktiva
               items:
                 - name: Oversikt over behandling av digitale aktiva
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: Angi produktantallsgrenser for e-handelsområder for B2B
               href: b2b/quantity-limits.md
+            - name: Commerce-kataloger for B2B-områder
+              items:
+                - name: Opprett Commerce-kataloger for B2B-områder
+                  href: catalogs-b2b-sites.md
+                - name: Utvidbarhetsinnvirkning for Commerce-kataloger for B2B-tilpasninger
+                  href: catalogs-b2b-sites-dev.md
+                - name: Vanlige spørsmål om Commerce-kataloger for B2B
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Overvåkning og analyse
           items:
             - name: Overvåke salgs- og marginytelse
@@ -2474,13 +2488,17 @@
                       href: dev-itpro/extension-resource-localization.md
             - name: Hodeløs Commerce
               items:
+                - name: Oversikt
+                  items:
+                    - name: Innføring i kjernemiljøet for Commerce Scale Unit (CSU)
+                      href: dev-itpro/CSU-core.md
                 - name: API-er og referanse
                   items:
-                    - name: Kunde-og forbruker-API-er for Commerce Scale Unit
+                    - name: Kunde- og forbruker-API-er for Commerce Scale Unit
                       href: dev-itpro/retail-server-customer-consumer-api.md
                     - name: Bruk API-er for Retail Server i eksterne apper
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: Typescript og C#-proxyer for Retail POS
+                    - name: TypeScript og C#-proxyer for Retail POS
                       href: dev-itpro/typescript-proxy-retail-pos.md
                     - name: Arkitektur og konfigurasjon for Commerce Runtime (CRT)
                       href: dev-itpro/commerce-runtime-overview.md
@@ -2528,6 +2546,8 @@
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Emballasje og distribusjon
                   items:
+                    - name: Opprett en utvidelsespakke for Cloud Scale Unit
+                      href: dev-itpro/CSU-packaging.md
                     - name: Fjern Cloud Scale Unit-utvidelser
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2540,6 +2560,8 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Overfør salgsstedsutvidelser til SDK for Commerce
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Feilsøk Store Commerce-utvidelser ved hjelp av VS Code
+                      href: dev-itpro/sc-debug.md
                 - name: Miljøoppsett
                   items:
                     - name: Lokalt utviklingsmiljø
@@ -2614,6 +2636,8 @@
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: Opprett en utvidelsespakke for Cloud POS
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Opprett en installeringspakke for Store Commerce-tillegg
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: E-handel
               items:
                 - name: Oversikt
@@ -2814,8 +2838,12 @@
                       items:
                         - name: Telemetrilogger
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce headquarters
               items:
+                - name: CDX-pakkeutvidelse
+                  items:
+                    - name: Utvid kundens CDX-pakke for å legge til egendefinerte data
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: Emballasje og distribusjon
                   items:
                     - name: Opprett Commerce-betalingspakke for økonomi- og driftsdistribusjon

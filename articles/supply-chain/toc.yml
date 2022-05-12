@@ -12,14 +12,12 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.27 (juli 2022)
+                  href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (mai 2022)
                   href: get-started/whats-new-scm-10-0-26.md
                 - name: Supply Chain Management 10.0.25 (april 2022)
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management 10.0.24 (februar 2022)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management 10.0.23 (januar 2022)
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -1725,13 +1723,11 @@
               href: iot/iot-azure-setup.md
             - name: Meldingsskjemaformater for IoT-hub
               href: iot/iot-schema-format.md
-            - name: Installere tillegget i LCS
-              href: iot/iot-lcs-setup.md
-            - name: Definere metrikk
+            - name: Definer metrikk
               href: iot/iot-metrics-setup.md
             - name: Scenariooppsett
               href: iot/iot-scenario-setup.md
-            - name: Overvåke og behandle
+            - name: Overvåk og behandle
               href: iot/iot-management.md
         - name: Hovedplanlegging
           items:
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
                   href: production-control/production-floor-execution-use.md
+                - name: Vis feriesaldoer i grensesnittet for produksjonsutførelse
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: Utform grensesnittet for produksjonsutførelse
                   href: production-control/production-floor-execution-styles.md
                 - name: Tilpass grensesnittet for produksjonsutførelse
