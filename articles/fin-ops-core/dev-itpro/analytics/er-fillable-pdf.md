@@ -2,7 +2,7 @@
 title: Utforme ER-konfigurasjoner for å fylle ut PDF-maler
 description: Dette emnet gir informasjon om hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en PDF-mal.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367862"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645114"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforme ER-konfigurasjoner for å fylle ut PDF-maler
 
@@ -252,10 +252,14 @@ Ettersom begge egenskapene er valgfrie for et **Felt**-formatelement, brukes fø
 - Hvis **Navn**-attributtet er definert og **Navn**-uttrykket er konfigurert, vil PDF-feltet som har samme navn som verdien som returneres av **Navn**-uttrykket for formatelementet, fylles ut.
 
 > [!NOTE]
-> En PDF-avmerkingsboks kan angis som valgt på følgende måter:
+> Når en avmerkingsboks i PDF-malen ikke tilhører en gruppe med avmerkingsbokser, representeres den i det redigerbare ER-formatet som et **feltelement** som er nestet under **PDF-filelementet**. Denne typen PDF-avmerkingsboks kan angis som valgt på følgende måter:
 >
-> - Når det tilsvarende **Felt**-formatelementet er bundet til et datakildefelt av datatypen **Boolsk** som har verdien **Sann**
-> - Når det tilsvarende **Felt**-formatelementet inneholder et nestet **Streng**-formatelement som er bundet til et datakildefelt som har tekstverdien **1**, **Sann** eller **Ja**
+> - Det tilsvarende **Felt**-formatelementet er bundet til et datakildefelt av datatypen *[Boolsk](er-formula-supported-data-types-primitive.md#boolean)* har verdien **Sann**.
+> - Det tilsvarende **Felt**-formatelementet inneholder et nestet **Streng**-formatelement som er bundet til et datakildefelt har tekstverdien **1**, **Sann** eller **Ja**.
+>
+> Malen kan inneholde en gruppe avmerkingsbokser der det bare kan merkes av for én avmerkingsboks om gangen. Disse avmerkingsboksene representeres i en PDF-mal som flere skjemafelter av typen *AVMERKINGSBOKS*. Hvert felt har samme navn, men har forskjellig eksportverdi. Når du importerer malen til det redigerbare ER-formatet, blir hver avmerkingsboks representert i den hierarkiske strukturen for formatet som et element for **gruppeelementet i avmerkingsboksen** som er nestet under det samme **gruppeelementet for avmerkingsboks**. Navnet på **gruppeelementet i avmerkingsboksen** er lik navnet på avmerkingsboksfeltene i PDF-malen. Navnet på hvert element for **gruppeelementet i avmerkingsboksen** er lik navnet på eksportverdien til det tilsvarende avmerkingsboksfeltet i PDF-malen.
+>
+> Du kan knytte et element for **gruppeelement i en avmerkingsboks** til et datakildefelt bare av den *boolske* datatypen.
 
 ## <a name="run-the-format-configuration"></a>Kjøre formatkonfigurasjonen
 

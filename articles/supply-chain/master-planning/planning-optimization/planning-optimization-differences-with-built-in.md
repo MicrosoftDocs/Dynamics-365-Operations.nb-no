@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 642ba812156a95e9b0be2e996d4a93096a5809a9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
+ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468335"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8618267"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Forskjeller mellom innebygd hovedplanlegging og planleggingsoptimalisering
 
@@ -37,6 +37,7 @@ Resultatet av planleggingsoptimalisering kan være forskjellig fra den innebygde
 | Utligning av sikkerhetslager og nettobehov | Kravtypen *Sikkerhetslager* er ikke inkludert og vises ikke på siden **Nettobehov**. Sikkerhetslager representerer ikke etterspørsel og har ikke en tilknyttet behovsdato. I stedet definerer det en begrensning for hvor mye lager som må finnes til enhver tid. Det tas imidlertid fremdeles hensyn til **Minimum**-feltverdien ved beregning av planlagte bestillinger under hovedplanleggingen. Vi foreslår at du undersøker kolonnen **Akkumulert antall** på **Nettobehov**-siden for å se at denne verdien ble tatt hensyn til. |
 | Transportkalendere | Verdien i kolonnen **Transportkalender** på siden **Leveringsmåter** ignoreres. |
 | Minimum/maksimum dekningskode uten verdier| Med den innebygde planleggingsmotoren når du bruker en minimums- eller maksimumskode der ingen minimums- eller maksimumsverdier er angitt, behandler planleggingsmotoren dekningskoden som et krav, og oppretter én ordre for hvert behov. Med planleggingsoptimalisering oppretter systemet én ordre per dag for å dekke hele beløpet for den dagen.  |
+| Nettobehov og manuelt opprettede planlagte ordrer | Med den innebygde planleggingsmotoren vises manuelt opprettede forsyningsordrer for en vare blant nettobehovene for denne varen. Når du for eksempel oppretter en bestilling fra en salgsordre, vises bestillingen på **Nettobehov**-siden uten at det kreves noe forutgående handlinger. Dette skjer fordi den innebygde planleggingsmotoren logger lagertransaksjoner i `inventLogTTS`-tabellen og viser endringer på **Nettobehov**-siden for dynamiske planer. Med planleggingsoptimalisering vises imidlertid ikke ordrer som er opprettet manuelt blant nettobehovene til en vare før planleggingsoptimaliseringen kjøres (ved hjelp av en plan som inkluderer varen), eller til du velger **Oppdater \> Hovedplanlegging** i handlingsruten på **Nettobehov**-siden, som vil kjøre hovedplanlegging for varen. Hvis du vil ha mer informasjon om hvordan du arbeider med **Nettobehov**-siden, kan du se [Nettobehov og utligningsinformasjon med planleggingsoptimalisering](net-requirements.md). |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

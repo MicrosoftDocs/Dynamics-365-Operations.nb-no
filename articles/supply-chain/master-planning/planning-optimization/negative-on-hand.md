@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: bb837a38485bad2b9b76a5e4f20d311c0281e192
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469149"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625392"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planlegging med negative lagerbeholdningsantall
 
@@ -75,7 +75,7 @@ Resultatet er en planlagt bestilling på 25 stk. (= 25 stk. &minus; 0 stk.) for 
 
 ## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Planlegging når det finnes en reservering mot negativ lagerbeholdning
 
-Hvis du justerer lager mens det finnes fysiske reserveringer, kan du forårsake en situasjon der en ordre er fysisk reservert mot negativt lager. I dette tilfellet antar planleggingsoptimaliseringen at den støttes av lagerbeholdning, selv om mottak av lagerbeholdning ennå ikke er registrert i systemet. Derfor forutsetter det at etterfylling ikke er påkrevd, og ikke oppretter en planlagt bestilling for å etterfylle ordreantallet.
+Hvis du justerer lager mens det finnes fysiske reserveringer, kan du forårsake en situasjon der en ordre er fysisk reservert mot negativt lager. Fordi det finnes en fysisk reservering, må du i så fall ha forsyning for å dekke det reserverte antallet. Etterfylling er derfor nødvendig slik at systemet enten vil opprette en planlagt bestilling for å etterfylle antallet som ikke kunne dekkes av den eksisterende lagerbeholdningen, eller dekke det med en eksisterende ordre for varen.
 
 Eksemplet nedenfor illustrerer dette scenarioet.
 
@@ -88,7 +88,7 @@ Systemet konfigureres på følgende måte:
 - Det finnes en salgsordre for et antall på *10* stk. av produktet *FG*.
 - Salgsordreantallet er fysisk reservert mot eksisterende lagerbeholdning.
 
-Deretter justerer du antallet av produktet *FG*, slik at lagerbeholdningen blir 0 (null). Fordi lagerbeholdningen er null, reserveres salgsordreantallet nå mot negativt lager. Hvis du imidlertid kjører hovedplanlegging nå, blir det ikke opprettet noen planlagt bestilling for å forsyne salgsordren, fordi planleggingsoptimalisering vil anta at det finnes nødvendig lagerbeholdning for å forsyne den fysiske reserveringen.
+Deretter justerer du antallet av produktet *FG*, slik at lagerbeholdningen blir 5. Fordi beholdningen for produktlageret er 5, reserveres salgsordreantallet nå mot antall som ikke er tilgjengelig i beholdningen (det vil være likt hvis beholdningen er 0. I så fall vil salgsordren reserveres mot negativt lager). Hvis du kjører en hovedplanlegging nå, blir det opprettet en planlagt ordre for antallet 5 for *FG* for å forsyne salgsordren, fordi planleggingsoptimalisering alltid vil bruke eksisterende forsyning eller opprette en ny planlagt ordre for å forsyne den fysiske reserveringen.
 
 ## <a name="related-resources"></a>Relaterte ressurser
 

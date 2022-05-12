@@ -2,7 +2,7 @@
 title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 08348185a424d20b6da1563189496b7dd51944d9
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 57133a853d1700b2d8ebb938f93af475410b82cb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602969"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644420"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -106,7 +106,7 @@ Hvis du vil bruke denne funksjonen, høyreklikker du kolonnen du vil gruppere et
 - Antallet datarader i denne gruppen
 - Subtotalverdier for enhver kolonne som er konfigurert for å vise totalverdier
 
-Med [Lagrede visninger](saved-views.md) aktivert kan denne grupperingen lagres ved å tilpasning som en del av en visning for rask tilgang neste gang du besøker siden.
+Når [Lagrede visninger](saved-views.md) er aktivert, kan du lagre gruppering som en del av en visning på sider som gjør det mulig å lagre spørringer i visninger. For eksempel de med store visningsvelgere. Se delen [Bytt mellom visninger](saved-views.md#switching-between-views) for mer informasjon. 
 
 ### <a name="multiple-levels-of-grouping"></a>Flere nivåer med gruppering
 Når du har gruppert data etter én enkelt kolonne, kan du gruppere dataene etter en annen kolonne ved å velge **Grupper etter denne kolonnen** på ønsket kolonne. Denne prosessen kan gjentas til du har 5 nestede nivåer av gruppering, som er den maksimale dybden som støttes. På dette stadiet vil du ikke lenger kunne gruppere etter flere kolonner.

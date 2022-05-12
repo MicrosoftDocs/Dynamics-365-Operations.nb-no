@@ -2,7 +2,7 @@
 title: Justere leieavtaler
 description: Emnet beskriver hvordan du justerer en leieavtale. Det kan hende at justering kreves hvis leievilkårene endres, leieavtalen utvides eller andre omstendigheter endres.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729660"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644562"
 ---
 # <a name="adjust-leases"></a>Justere leieavtaler
 
@@ -134,5 +134,19 @@ Hvis en leieavtale er justert, kan du vise de ulike versjonene av den. Du kan og
 2. Hvis du vil vise historiske tidsplaner, åpner du den endrede leieavtalen fra siden **Leiesammendrag**, velger det ønskede tablået og deretter **Historikk for tablåversjon** i handlingsruten.
 3. På **Tablåversjon**-siden velger du en versjon og en tidsplan du vil vise.
 
+## <a name="adjust-a-lease-book"></a>Justere et leietablå
+
+Følg denne fremgangsmåten for å justere bare et leietablå.
+
+1. Gå til **Aktivaleie** \> **Leieavtaler** \> **Leiesammendrag**.
+2. Velg og åpne en leie.
+3. På siden **Leiedetaljer** velger du **Tablåer**.
+4. På siden **Tablådetaljer** på handlingsruten i gruppen **Vedlikehold** velger du **Juster tablå**. 
+5. fjern betalingsplanlinjene.
+6. Angi endringsdatoen i feltet **Leieendringsdato**. Vurder deretter å fjerne alle ytterligere aktiva/gjeldshensyn (opprinnelig direkte kostnad, leieforpliktelse, forskuddsbetaling av leie, nedbetaling av kostnader og restverdigaranti), hvis det er noen. 
+7. Hvis du vil forhindre unøyaktige beregninger for leiejusteringen, legger du til nye betalingsplanlinjer for de nye betalingsdatoene som samsvarer med endringsdatoen. 
+
+> [!NOTE] 
+> Det anbefales at du bruker veiviseren **Leiejustering** til å justere en leieavtale. Veiviseren reduserer antall manuelle trinn, gir en forhåndsvisning av saldoer etter justeringen og lar deg endre beløp før postering.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

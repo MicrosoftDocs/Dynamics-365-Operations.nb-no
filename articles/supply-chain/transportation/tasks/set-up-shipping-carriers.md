@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567662"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660386"
 ---
 # <a name="set-up-shipping-carriers"></a>Definere transportører
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567662"
 
 Dette emnet viser hvordan du konfigurerer en transportør og definere operasjoner, for eksempel service, forsendelsesmåte, transportbetalingsmiddel, transportbegrensninger og forsendelsessats. En transportkoordinator kan deretter tilordne en transportør til en innkommende eller utgående last.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Opprett en ny transportør
+
 1. Gå til **Navigasjonsrute > Moduler > Transportstyring > Oppsett > Transportører > Transportører**.
 2. Velg **Ny** i handlingsruten.
 3. Skriv inn en verdi i **Transportør**-feltet.
@@ -36,6 +36,7 @@ Dette emnet viser hvordan du konfigurerer en transportør og definere operasjone
 5. I **Modus**-feltet velger du et alternativ fra rullegardinmenyen.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Fyll ut generell informasjon om transportøren
+
 1. Aktiver/deaktiver utvidelsen av delen **Oversikt**.
 2. Merk eller fjern merket for **Aktiver transportør**.
 3. I **Leverandørnummer**-feltet velger du et alternativ fra rullegardinmenyen. Velg leverandørkontoen som transportøren skal tilordnes til.  
@@ -43,13 +44,16 @@ Dette emnet viser hvordan du konfigurerer en transportør og definere operasjone
 5. Merk eller fjern merket for **Aktiver transportørrangering**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Opprett de nødvendige tjenestene for transportøren
+
 1. Aktiver/deaktiver utvidelsen av delen **Tjenester**.
 2. Velg **Ny**.
 3. Skriv inn en verdi i **Transportørtjeneste**-feltet.
 4. Skriv inn en verdi i **Navn**-feltet.
-5. I **Transportmetode**-feltet velger du et alternativ fra rullegardinmenyen.
+5. Velg en belastningsmal som skal knyttes til tjenesten, i feltet **Last inn mal-ID**. Lastmalen angir maksimale mål for vekt og volum for hele belastningen. Lastmalen kan for eksempel representere størrelsen på en container eller lastebil. ID-er for lastmal angis også i maler for belastningsbygging, og når du bruker [arbeidsbenken i belastningsbyggingen](load-building-workbench.md), kan du bruke strategiene for belastningsbygging til å opprette belastning. Systemet vil da kunne samsvare hver nye belastning med en passende transportørtjeneste ved å sammenligne de angitte ID-ene for lastmal.
+6. I **Transportmetode**-feltet velger du et alternativ fra rullegardinmenyen.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Definer adressen for transportør (valgfritt)
+
 1. Aktiver/deaktiver utvidelsen av delen **Adresser**.
 2. Velg **Ny**.
 3. Skriv inn en verdi i feltet **Navn eller beskrivelse**.
@@ -59,6 +63,7 @@ Dette emnet viser hvordan du konfigurerer en transportør og definere operasjone
 7. Velg **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Definer vurderingsprofilen for transportøren
+
 1. Aktiver/deaktiver utvidelsen av delen **Vurderingsprofiler**.
 2. Velg **Ny**.
 3. Skriv inn en verdi i feltet **Vurderingsprofil**.

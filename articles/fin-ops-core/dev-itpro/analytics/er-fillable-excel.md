@@ -2,7 +2,7 @@
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388269"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645142"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -141,7 +141,12 @@ Du kan konfigurere Excel-malen til å bruke cellene til å presentere tekstdata.
 > [!NOTE]
 > På grunn av en kjent [Excel-begrensning](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), selv om du konfigurerer cellene til å bryte tekst, og du konfigurerer at radene som inneholder disse cellene, skal automatisk justere høyden slik at den passer til den tekstbrytingen, kan det hende at du ikke kan bruke Excel-funksjonene **Beste tilpasning** og **Bryt tekst** for flettede celler og radene som inneholder dem. 
 
-Per Dynamics 365 Finance-versjon 10.0.23 kan du tvinge ER til å beregne høyden på hver rad i et generert dokument som ble konfigurert slik at den automatisk passer høyden på innholdet i nestede celler hver gang raden inneholder minst én flettet celle som ble konfigurert til å bryte teksten i den. Den beregnede høyden brukes deretter til å endre størrelsen på raden for å sikre at alle cellene i raden er synlige i det genererte dokumentet. Følg denne fremgangsmåten for å begynne å bruke denne funksjonaliteten når du kjører alle ER-formater som er konfigurert til å bruke Excel-maler til å generere utgående dokumenter.
+Per Dynamics 365 Finance-versjon 10.0.23, når du arbeider i et generert dokument, kan du tvinge ER til å beregne høyden på hver rad som ble konfigurert slik, at den automatisk passer høyden på innholdet i nestede celler hver gang raden inneholder minst én flettet celle som ble konfigurert til å bryte teksten i den. Den beregnede høyden brukes deretter til å endre størrelsen på raden for å sikre at alle cellene i raden er synlige i det genererte dokumentet.
+
+> [!NOTE]
+> Vær oppmerksom på at denne funksjonaliteten kanskje ikke fungerer som forventet når en egendefinert skrift brukes til å formatere en sammenslått celle. Ettersom Excel ikke bygger inn egendefinerte skrifter, inneholder det ikke informasjon om egendefinert skriftstørrelse. Derfor blir størrelsen på den flettede cellen feil estimert.
+
+Følg denne fremgangsmåten for å begynne å bruke denne funksjonaliteten når du kjører alle ER-formater som er konfigurert til å bruke Excel-maler til å generere utgående dokumenter.
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurasjoner**, i delen **Relaterte koblinger**, velger du flisen **Parametere for elektronisk rapportering**.
@@ -224,7 +229,7 @@ Når du bruker **Side**-komponenten for Excel-sidenummerering, vet du ikke det e
 > [!TIP]
 > Hvis du vil oppnå dette resultatet i en Excel-topptekst eller -bunntekst ved hjelp av spesiell [Excel](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers)-formatering for topptekst og bunntekst.
 
-Konfigurerte **Side**-komponenter vurderes ikke når du oppdaterer en Excel-mal i det redigerbare formatet i Dynamics 365 Finance versjon 10.0.22. Denne funksjonaliteten vurderes for ytterligere versjoner av Finance.
+Konfigurerte **Side**-komponenter vurderes ikke når du oppdaterer en Excel-mal i det redigerbare formatet i Dynamics 365 Finance, versjon 10.0.22. Denne funksjonaliteten vurderes for ytterligere versjoner av Finance.
 
 Hvis du konfigurerer Excel-malen til å bruke [betinget formatering](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), vil den kanskje ikke fungere som forventet i noen tilfeller.
 

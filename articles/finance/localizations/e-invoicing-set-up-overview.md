@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8138c63e9eff1d2ca934f9d4467e4e3b73dae941
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371651"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661699"
 ---
 # <a name="electronic-invoicing-setup"></a>Oppsett for elektronisk fakturering
 
@@ -35,7 +35,5 @@ Deretter konfigurerer du Azure-ressurser som elektronisk fakturering trenger for
 Etter at hovedkomponentene er konfigurert, kan du arbeide med RCS for å konfigurere de logiske hovedkomponentene for elektronisk fakturering. Først definerer du antall tjenestemiljøer du vil vedlikeholde. Dermed definerer du de logiske dataene og konfigurasjonspartisjoneringen for å sikre at du har en grense mellom et utviklings- eller testmiljø og produksjonsmiljøene. Hvis du vil konfigurere utviklingsprosessen på en fleksibel måte, må du kanskje ha flere atskilte utviklings- og testmiljøer. I tillegg til å definere tjenestemiljøer oppretter du en kobling til forretningsprogrammene, for eksempel Finance eller Supply Chain Management, direkte fra RCS for å konfigurere parameterne som kreves for at dette skal fungere riktig med elektronisk fakturering. Hvis du vil ha mer informasjon om miljøene, kan du se [Tjenestemiljøer](e-invoicing-service-environments.md).
 
 Etter at alt er konfigurert, kan du opprette dine egne globaliseringsfunksjoner som definerer ulike scenarioer for behandling av elektroniske dokumenter og transformering av data, eller for å importere dokumentene fra det globale repositoriet. Hvis du vil ha mer informasjon om hvordan du arbeider med globaliseringsfunksjoner, kan du se [Arbeid med globaliseringsfunksjoner](e-invoicing-working-globalization-features.md).
-
-Hvis du vil ha informasjon om handlingene i datasamlebåndene for behandling som utgjør prosessen du skal bygge i globaliseringsfunksjoner, kan du se **[FULLFØRT!: Handlinger i dokumentbehandling]**.
 
 Hvis scenarioene krever integrering med e-post eller SharePoint for å behandle innkommende elektroniske dokumenter, kan du se [Behandling av innkommende elektroniske dokumenter](e-invoicing-process-incoming-electronic-documents.md) for å få informasjon om hvordan du konfigurerer og bruker disse kanalene.

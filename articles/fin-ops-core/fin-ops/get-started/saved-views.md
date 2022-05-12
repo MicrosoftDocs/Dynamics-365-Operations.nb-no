@@ -2,7 +2,7 @@
 title: Lagrede visninger
 description: Dette emnet beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065712"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644794"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -45,7 +45,7 @@ Når visninger har blitt gjort tilgjengelige for et miljø, vil toppen av alle s
 
 Visningsvelgeren har to størrelsesvariasjoner: 
 
-- **Store visningsvelgere** – Sider som tydelig viser en liste, vil ha en større visningsvelger av flere årsaker. Det viktigste er at store visningsvelgere angir sidene der visningen kan inkludere brukerdefinerte filtre. Fordi filtre er inkludert i visningene, er den større velgerstørrelsen også egnet fordi visningsnavnene ofte vil være den beste beskrivelsen av dataene som vises på skjermen, og forventningen er at brukerne vil bytte mellom visninger oftere på disse sidetypene.
+- **Store visningsvelgere** – Sider som tydelig viser en liste, vil ha en større visningsvelger av flere årsaker. Det viktigste er at store visningsvelgere angir sidene der visningen kan inkludere brukerdefinerte filtre og sorter. Fordi filtre og sorter er inkludert i visningene, er den større velgerstørrelsen også egnet fordi visningsnavnene ofte vil være den beste beskrivelsen av dataene som vises på skjermen, og forventningen er at brukerne vil bytte mellom visninger oftere på disse sidetypene. Gruppering i et rutenett kan også lagres i visninger på en side med store visningsvelgere. 
 - **Små visningsvelgere** – Alle andre fullskjermsider (med unntak av arbeidsområder og instrumentbordet) har en mindre visningsvelger som vises ved siden av sidetittelen. Visninger på disse sidene inkluderer bare tilpasninger, ikke brukerdefinerte filtre. På disse sidene er teksten eller posttittelen ofte den viktigste informasjonen øverst på siden. Den mindre størrelsen på visningsvelgeren gjenspeiler også en lavere forventet frekvens for visningsskifte på disse sidene. 
  
 Hvis du velger visningsnavnet, åpnes visningsvelgeren og viser listen over tilgjengelige visninger for siden.

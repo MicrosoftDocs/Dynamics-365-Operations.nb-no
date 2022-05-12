@@ -2,7 +2,7 @@
 title: Definere parameterne for et ER-format per juridisk enhet
 description: Dette emnet forklarer hvordan du kan konfigurere parametere for et ER-format per juridisk enhet.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927460"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644506"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Definere parameterne for et ER-format per juridisk enhet
 
@@ -226,7 +226,7 @@ Hvis du konfigurerer programspesifikke parametere for en versjon av et ER-format
 Når du velger en fil for import, sammenlignes strukturen til programspesifikke parametere i den aktuelle filen med strukturen til de tilsvarende datakildene for **Oppslag**-typen i ER-formatet som er valgt for import. Som standard fullføres importen bare hvis strukturen til hver programspesifikk parameter samsvarer med strukturen til den tilsvarende datakilden i ER-formatet som er valgt for import. Hvis strukturene ikke samsvarer, får du en advarsel som informerer deg om at importen ikke kan fullføres. Hvis du fremtvinger importen, ryddes det opp i de eksisterende programspesifikke parameterne for det valgte ER-formatet, og du må definere dem fra begynnelsen.
 
 
-Fra og med Dynamics 365 Finance versjon 10.0.24 kan du endre standardvalget og unngå å motta en advarsel ved å aktivere funksjonen **Juster ER-programspesifikke parametere under import** i arbeidsområdet for **Funksjonsbehandling**. Når denne funksjonen er aktivert, hvis strukturen for programspesifikke parametere du importerer, avviker fra strukturen til de tilsvarende datakildene i mål-ER-formatet som er valgt for import, vil importen bli vellykket i følgende tilfeller:
+Fra og med Finance versjon 10.0.24 kan du endre standardvalget og unngå å motta en advarsel ved å aktivere funksjonen **Juster ER-programspesifikke parametere under import** i arbeidsområdet for **Funksjonsbehandling**. Når denne funksjonen er aktivert, hvis strukturen for programspesifikke parametere du importerer, avviker fra strukturen til de tilsvarende datakildene i mål-ER-formatet som er valgt for import, vil importen bli vellykket i følgende tilfeller:
 
 - Strukturen til mål-ER-formatet er endret ved å legge til nye betingelseskolonner i en eksisterende datakilder av typen **Oppslag**. Når importen er fullført, oppdateres de programspesifikke parameterne. I alle de importerte postene med programspesifikke parametere initialiseres verdiene i hver tilføyde betingelseskolonne med standardverdien for [datatypen](er-formula-supported-data-types-primitive.md) for denne kolonnen.
 - Strukturen til mål-ER-formatet er endret ved å fjerne noen betingelseskolonner fra eksisterende datakilder av typen **Oppslag**. Når importen er fullført, oppdateres de programspesifikke parameterne. I alle de importerte postene med programspesifikke parametere slettes verdiene i alle kolonner for fjernet betingelse.
@@ -235,9 +235,33 @@ Fra og med Dynamics 365 Finance versjon 10.0.24 kan du endre standardvalget og u
 
 Når importen er fullført, i tillegg til endringene som nettopp ble beskrevet, endres statusen for de importerte programspesifikke parameterne til **Pågår**. En advarsel gir deg beskjed om at de automatisk justerte programspesifikke parameterne må redigeres manuelt.
 
+#### <a name="replicate-parameters"></a>Repliker parametere
+
+Fra og med Finance, versjon 10.0.27, kan du kopiere parameterne du har konfigurert i et firma til andre firmaer samtidig.
+
+For å kopiere parametere fullfører du følgende trinn.
+
+1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
+2. Velg **Rapporteringskonfigurasjoner**.
+3. I konfigurasjonstreet velger du formatet **Format for å lære hvordan du slår opp LE-data**.
+4. På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
+5. Velg versjon **1.1.1** av ER-formatet.
+6. Velg **Repliker** i handlingsruten.
+7. Velg firmaene du vil kopiere parametere til, i fanen **Firmaer** i dialogboksen **Repliker**.
+
+    > [!NOTE]
+    > Listen over målfirmaer tilbys bare til brukere som er tildelt en [sikkerhetsrolle](../sysadmin/role-based-security.md#security-roles) som er konfigurert til å gi tilgang til alle organisasjoner.
+
+8. Velg **OK**.
+
+    > [!NOTE]
+    > Bekreftelsesdialogboksen informerer deg om noen målfirmaer inneholder tidligere konfigurerte parametere for den valgte versjonen av et ER-format. Velg **Ja** for å overstyre parameterne ved å kopiere dem fra det nåværende firmaet.
+
+    Det konfigurerte settet med programspesifikke parametere kopieres nå til de valgte firmaene.
+
 ### <a name="reuse-existing-parameters"></a>Bruke eksisterende parametere på nytt
 
-Fra og med versjon Dynamics 365 Finance 10.0.23 kan du bruke programspesifikke parametere som er konfigurert for én versjon av et ER-format, på nytt når du kjører en høyere versjon av samme format. Du gjør dette ved å aktivere funksjonen **Bruk programspesifikke parametere fra tidligere versjoner av ER-formater** i arbeidsområdet **Funksjonsbehandling**. Når denne funksjonen er aktivert og du kjører en versjon av et ER-format som prøver å lese programspesifikke parametere, vil ER prøve å finne programspesifikke parametere som er konfigurert for den kjørende versjonen av dette formatet. Eller, når de ikke er tilgjengelige, for den nærmeste nedre versjonen av dette formatet.
+Fra og med Finance, versjon 10.0.23 kan du bruke programspesifikke parametere som er konfigurert for én versjon av et ER-format, på nytt når du kjører en høyere versjon av samme format. For å bruke eksisterende parametere på nytt må du aktivere funksjonen **Bruk programspesifikke parametere fra tidligere versjoner av ER-formater** i arbeidsområdet **Funksjonsbehandling**. Når denne funksjonen er aktivert og du kjører en versjon av et ER-format som prøver å lese programspesifikke parametere, vil ER prøve å finne programspesifikke parametere som er konfigurert for den kjørende versjonen av formatet. Hvis de ikke er tilgjengelige, prøver ER å finne dem for den nærmeste nedre versjonen av formatet.
 
 > [!NOTE]
 > Du kan bare bruke programspesifikke parametere på nytt i området for gjeldende juridisk enhet.

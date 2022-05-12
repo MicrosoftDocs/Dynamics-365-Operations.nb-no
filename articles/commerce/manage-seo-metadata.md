@@ -2,7 +2,7 @@
 title: Behandle metadata for søkemotor
 description: Dette emnet beskriver hvordan du behandler metadata for søkemotoroptimalisering i Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751573"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644765"
 ---
 # <a name="manage-seo-metadata"></a>Behandle metadata for søkemotor
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du behandler metadata for søkemotoroptimalisering i Microsoft Dynamics 365 Commerce.
 
@@ -62,17 +63,21 @@ Dynamics 365 Commerce lar deg administrere søkemotormetadata for enkeltsider. D
 ### <a name="modify-page-metadata"></a>Endre sidemetadata
 
 Hvis du vil endre sidemetadata, følger du disse trinnene.
-
 1. Under **Områder** velger du **Fabrikam** (eller navnet på området).
 1. Velg **Sider** i navigasjonsruten til venstre.
 1. Velg startsiden for å åpne den i sideredigeringsprogrammet.
 1. På kommandolinjen velger du **Rediger**.
-1. Velg **Standard metakoder** i egenskapsruten til høyre.
-1. Hvis du vil legge til en ny metakode, velger du **Legg til**, og deretter angir du koden i feltet. Hvis du vil fjerne en eksisterende metakode, velger du papirkurvsymbolet til høyre for den.
+1. I sideredigeringsprogrammet, øverst på sidedisposisjonskontroll til venstre, velger du **alternativet for disposisjonsmodus** (tannhjulsymbol) og velger deretter **Avansert disposisjonsvisning**.
+1. I disposisjonsvisningen utvider du trekontrollene for å vise innholdet i **HTML-hodesporet**.
+1. I **HTML-hodesporet** velger du ønsket SEO-modul (for eksempel **Sidesammendrag**, **Produktsidesammendrag**, **Kategorisidesammendrag** eller **Metakoder**).
+1. I egenskapsruten til høyre redigerer du de ønskede SEO-dataene for den valgte SEO-modulen (for eksempel **Tittel**, **Beskrivelse** eller **Delingsbilde**).
 1. Velg **Lagre**, og velg deretter **Fullfør redigering**.
-1. I feltet **Kommentarer** angr du **Oppdaterte metakoder**, og deretter velger du **OK**.
+1. I feltet **Kommentarer** angr du **Oppdaterte SEO-data**, og deretter velger du **OK**.
 1. Velg **Forhåndsvisning** for å forhåndsvise siden. Når du er ferdig, lukker du forhåndsvisningskategorien for å gå tilbake til redigeringsverktøyet.
 1. Velg **Publiser**.
+
+> [!TIP]
+> Forfattere kan bruke **alternativet for disposisjonsmodus** (tannhjulsymbol) øverst på venstre disposisjonskontroll i sideredigeringsprogrammet for å bytte mellom **grunnleggende disposisjonsvisning** og **avansert disposisjonsvisning**. **Grunnleggende disposisjonsvisning** er standardinnstillingen og filtrerer omrisset slik at det bare viser moduler i **Brødtekst-HTML**-spor for en side. **Avansert disposisjonsvisning** viser hele sidemodulen, inkludert **HTML-hode**, **brødtekststart** og **brødtekstslutt**. Denne visningen er nyttig når forfattere må redigere bestemte SEO- eller skriptmodulinnstillinger for en side.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

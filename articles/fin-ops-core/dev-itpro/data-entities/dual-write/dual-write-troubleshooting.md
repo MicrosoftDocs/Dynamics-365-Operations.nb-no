@@ -2,19 +2,19 @@
 title: Generell feilsøking
 description: Dette emnet inneholder generell feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554606"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614102"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
@@ -131,6 +131,29 @@ Følg denne fremgangsmåten for å reaktivere alternativet for **Informasjon**-s
 2. Finn **Informasjon**-skjemaet under skjemaer-noden.
 3. Velg **Informasjon**-skjemaet, og klikk deretter **Aktiver sikkerhetsroller**.
 4. Endre sikkerhetsinnstillingen til **Vis til alle**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Slik sikrer du at dataintegrering bruker det nyeste økonomi- og driftsskjemaet
+
+Det kan oppstå dataproblemer i dataintegreringen hvis det mest oppdaterte skjemaet ikke brukes. Følgende trinn hjelper deg med å oppdatere enhetslisten i økonomi- og driftsapper og enhetene i dataintegratoren.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Oppdater enhetslisten i økonomi- og driftsmiljøet
+1.  Logg deg på økonomi- og driftsmiljøet.
+2.  Velg **Databehandling**.
+3.  Gå til **Rammeverkparametere** i Dataadministrasjon.
+4.  På siden **Rammeverkparametere for dataimport/-eksport** velger du fanen **Enhetsinnstillinger** og velger **Oppdater enhetsliste**. Det kan ta mer enn 30 minutter å oppdatere, avhengig av hvor mange enheter det er.
+5.  Naviger til **Dataadministrasjon** og velg **Dataenheter** for å validere at de forventede enhetene vises. Hvis de forventede enhetene ikke vises, validerer du at enhetene vises i økonomi- og driftsmiljøet og gjenoppretter de manglende enhetene etter behov.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Hvis oppdateringen ikke vil løse problemet, sletter du og legger til enhetene på nytt
+
+> [!NOTE]
+> Det kan hende at du må stoppe alle behandlingsgrupper som bruker enhetene aktivt før sletting.
+
+1.  Velg **Dataadministrasjon** i økonomi- og driftsmiljøet, og velg **Dataenheter**.
+2.  Søk etter enheter som har problemer, og noter målenheten, oppsamlingstabellen, enhetsnavnet og andre innstillinger. Slett enheten eller enhetene fra listen.
+3.  Velg **Ny** og legg til enheten eller enhetene på nytt ved hjelp av dataene fra trinn 2. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Oppdater enheter i dataintegrator
+Logg deg på administrasjonssenteret for Power Platform og velg **Dataintegrering**. Åpne prosjektet der problemene oppstår, og velg **Oppdater enheter**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Slik aktiverer du og lagrer nettverkssporing, slik at sporinger kan knyttes til støtteforespørsler
 

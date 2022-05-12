@@ -2,7 +2,7 @@
 title: Administrere forretningspartnerbrukere på B2B-e-handelssider
 description: Dette emnet beskriver hvordan du legger til, sletter og redigerer forretningspartnerbrukere på bedrift-til-bedrift-e-handelsnettsteder (B2B) for Microsoft Dynamics 365 Commerce og i Commerce Headquarters.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323461"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616863"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Administrere forretningspartnerbrukere på B2B-e-handelssider
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323461"
 Dette emnet beskriver hvordan du legger til, sletter og redigerer forretningspartnerbrukere på bedrift-til-bedrift-e-handelsnettsteder (B2B) for Microsoft Dynamics 365 Commerce og i Commerce Headquarters.
 
 > [!NOTE]
-> Emnet [Administrere B2B-forretningspartnere ved hjelp av kundehierarkier](partners-customer-hierarchies.md) er en forutsetning for dette dokumentet. 
+> - Emnet [Administrere B2B-forretningspartnere ved hjelp av kundehierarkier](partners-customer-hierarchies.md) er en forutsetning for dette dokumentet.
+> - Kontroller at du initialiserer dokumenttypeenheten i Commerce Headquarters ved å åpne **Dokumenttyper**-skjemaet under **Organisasjonsadministrasjon \> Dokumentadministrasjon \> Dokumenttyper**.
 
 B2B-e-handelsområder krever at organisasjoner registrerer seg for å bli forretningspartnere. Etter at en organisasjon har sendt registreringsdetaljer til et B2B-e-handelsnettsted, går forespørselen om registrering gjennom en kvalifikasjonsprosess. Hvis organisasjonen er kvalifisert, blir den innført som forretningspartner.
 

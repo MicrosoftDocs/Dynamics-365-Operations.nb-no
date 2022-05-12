@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: bf63069c5f18fe67c7d7f538311853d79c0f4fe8
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487649"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649164"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -57,7 +57,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 
 | Funksjon | Oppført problem | Forklaring | Forventet tilgjengelighet |
 | --- | --- | --- | --- |
-| Handlinger | Dekningsgrupper med handlingsberegning aktivert: _\#_ | Dette funksjonen venter. For øyeblikket blir det ikke generert handlinger under hovedplanlegging når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. Hovedformålet med handlinger er å foreslå endringer i eksisterende ordrer. Evaluer hvis handlinger aktiveres aktivt som en del av forretningsprosessene, eller hvis forsinkelsesinformasjonen som er knyttet til ordrene, er tilstrekkelig. | 2022. april |
+| Handlinger | Dekningsgrupper med handlingsberegning aktivert: _\#_ | Dette funksjonen venter. For øyeblikket blir det ikke generert handlinger under hovedplanlegging når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. Hovedformålet med handlinger er å foreslå endringer i eksisterende ordrer. Evaluer hvis handlinger aktiveres aktivt som en del av forretningsprosessene, eller hvis forsinkelsesinformasjonen som er knyttet til ordrene, er tilstrekkelig. | Støttes |
 | Basiskalendere | Kalendere som bruker basiskalender: _\#_ | Dette funksjonen støttes nå. | 2022. mars | 
 | Partidisposisjonskoder | Ikke-nettbare partidisposisjonsstandarder: _\#_ | Dette funksjonen venter. Partidisposisjonskoder ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | Oktober 2022 eller senere |
 | Leveringskapasitet | Standard ordreinnstillinger med leveringsdatokontroll satt til CTP: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres CTP når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | 2022. oktober |

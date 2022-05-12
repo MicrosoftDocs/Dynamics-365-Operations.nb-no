@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371362"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661729"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronisk fakturering for Egypt
 
@@ -42,7 +42,7 @@ Før du begynner fremgangsmåtene i dette emnet, må følgende forutsetninger v�
     - [Installere tilleggsprogrammet for mikrotjenester i Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
     
 - Aktiver integreringen mellom programmet Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management og tjenesten for elektronisk fakturering slik det beskrives i [Aktivere og konfigurere integrering med elektronisk fakturering](e-invoicing-activate-setup-integration.md).
-- Opprett en hemmelighet for digitalt sertifikat i Azure Key Vault, og konfigurer den som beskrevet i [Kundesertifikater og -hemmeligheter](e-invoicing-customer-certificates-secrets.md). Av testformål gir skattemyndigheten spesifikke testinfraktsertifikater som bare må brukes under test- og løsningsvalideringsfaser. Hvis du vil ha mer informasjon, kan du gå til nettstedet til de egyptiske skattemyndighetene ved hjelp av koblingen som er oppgitt i [SDK for egyptisk e-fakturering](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Opprett en hemmelighet for digitalt sertifikat i Azure Key Vault, og konfigurer den som beskrevet i [Kundesertifikater og -hemmeligheter](e-invoicing-customer-certificates-secrets.md). Av testformål gir skattemyndigheten spesifikke testinfraktsertifikater som bare må brukes under test- og løsningsvalideringsfaser. Hvis du vil ha mer informasjon, kan du gå til nettstedet til de egyptiske skattemyndighetene ved hjelp av koblingen som er oppgitt i [SDK for egyptisk e-fakturering](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Landspesifikk konfigurasjon for funksjonen for egyptisk elektronisk faktura (EG)
 
@@ -56,7 +56,7 @@ Noen av parameterne fra den elektroniske faktureringsfunksjonen **Egyptisk elekt
 6. Velg **Signer JSON-dokument for egyptiske skattemyndigheter** i delen **Datasamlebånd for behandling** i fanen **Datasamlebånd for behandling**.
 7. Velg **Sertifikatnavn** i **Parametere**-delen, og velg deretter navnet på det digitale sertifikatet du opprettet.
 8. I delen **Datasamlebånd for behandling** velger du **Integrer med egyptisk ETA-tjeneste**. Gjenta dette trinnet for de to forekomstene av denne handlingen.
-9. Velg **Nettadresse for nettjeneste** og **Nettadresse for tjenestepålogging** i **Parametere**-delen. Gå deretter gjennom parameterne for nettadresse. Gå til nettstedet til de egyptiske skattemyndighetene for å få nettadressen til testing og produksjon ved hjelp av koblingen som er oppgitt i [SDK for egyptisk e-fakturering](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+9. Velg **Nettadresse for nettjeneste** og **Nettadresse for tjenestepålogging** i **Parametere**-delen. Gå deretter gjennom parameterne for nettadresse. Gå til nettstedet til de egyptiske skattemyndighetene for å få nettadressen til testing og produksjon ved hjelp av koblingen som er oppgitt i [SDK for egyptisk e-fakturering](https://sdk.invoicing.eta.gov.eg/faq/).
 10. Velg **Lagre**, og lukk siden.
 11. Gjenta trinn 4 til og med 10 for konfigurasjonen for funksjonen **Prosjektfaktura avledet**.
 

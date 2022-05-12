@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577654"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644645"
 ---
 # <a name="costing-parameter-values-setup"></a>Oppsett for kostnadsparameterverdier
 
@@ -123,9 +123,9 @@ Følgende tabell beskriver innstillingene som er tilgjengelige for hver mal.
 
 ## <a name="volumetric-divisors"></a>Volumetriske divisorer
 
-Volumetriske divisorer brukes til å beregne den volumetriske vekten. Hvert forsendelses-/fraktfirma formulerer sine egne volumetriske divisorer. I tillegg varierer et firmas divisorer vanligvis, avhengig av leveringsmåten. Luft- og sjøtransport har for eksempel svært forskjellige divisorer. Et firma kan også gjøre reglene mer komplekse, avhengig av hvor varer sendes fra.
+Volumetriske divisorer brukes til å beregne den volumetriske vekten. Hvert forsendelses-/fraktfirma formulerer sine egne volumetriske divisorer. I tillegg varierer et firmas divisorer vanligvis, avhengig av leveringsmåten. Luft- og sjøtransport har for eksempel svært forskjellige divisorer. Et firma kan også gjøre reglene mer komplekse, avhengig av hvor varer sendes fra. Systemet bruker følgende formel til å finne volumvekslingsvekten: VolumetricWeight = Volume ÷ VolumetricDivisor.
 
-En pakke som sendes med fly, har for eksempel et volum på 3 kubikkmeter (m³). Firmaet avregner etter volumetrisk vekt og bruker en volumetrisk divisor på 6. Denne divisoren multipliseres med volumet for å bestemme volumvekten. Derfor er volumvekten for dette eksemplet 3 × 6 = 18 kilo (kg).
+En pakke som sendes med fly, har for eksempel et volum på 3 kubikkmeter (m³). Firmaet avregner etter volumetrisk vekt og bruker en volumetrisk divisor på 6. Denne divisoren deles med volumet for å bestemme volumvekten. Derfor er volumvekten for dette eksemplet 3 ÷ 6 = 0,5 kilo (kg).
 
 Hvis du vil definere volumetriske divisorer, kan du gå til **Netto innkjøpspris \> Kontnadsoppsett \> Volumetriske divisorer**. Siden **Volumetriske divisorer** viser et rutenett med alle eksisterende volumetriske divisorer. Du kan bruke knappene i handlingsruten til å legge til, fjerne og redigere rader i rutenettet.
 
@@ -136,4 +136,7 @@ Følgende tabell beskriver feltene som er tilgjengelige på hver rad i rutenette
 | Forsendelsesfirma | Velg leverandørkontoen for forsendelsesfirmaet som er knyttet til den volumetriske divisoren. |
 | Kosttypekode | Velg kosttypekoden som er knyttet til den volumetriske divisoren. Bruk dette feltet til å plassere kosttyper i rapporteringsperioder. Rapporter kan skrives ut enten ved hjelp av rapporteringskategorier eller etter kosttype. |
 | Fra-havn | Velg fra-havnen som den volumetriske divisoren gjelder for. |
-| Volumetrisk divisor | Angi verdien for den volumetriske divisoren som gjelder for raden. Verdien du angir, *multipliseres* med volumet i hver pakke for å fastslå emballasjens volumetriske vekt. |
+| Volumetrisk divisor | Angi verdien for den volumetriske divisoren som gjelder for raden. Volumet på hver pakke deles med verdien du angir her, for å fastslå emballasjens volumetriske vekt. |
+
+> [!NOTE]
+> Systemet bruker maksimumsverdien mellom **faktisk vekt** og **volumvekt**.

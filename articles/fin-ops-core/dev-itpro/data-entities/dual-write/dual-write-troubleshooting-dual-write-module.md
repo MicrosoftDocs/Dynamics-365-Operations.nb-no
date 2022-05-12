@@ -2,19 +2,19 @@
 title: Feilsøk problemer med dobbel skriving i Finance and Operations-apper
 description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med dobbel skriving-modulen i økonomi- og driftsapper.
 author: RamaKrishnamoorthy
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565973"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613889"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøk problemer med dobbel skriving i Finance and Operations-apper
 
@@ -73,7 +73,7 @@ Du kan løse problemet ved å opprette en støtteforespørsel for data integrasj
 
 ## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktiver parallell behandling i økonomi- og driftsapper for å forbedre ytelsen
 
-Ved å aktivere parallell behandling kan du redusere tiden det tar å importere data fra økonomi- og driftsapper til Customer Engagement-apper og Microsoft Dataverse. 
+Ved å aktivere parallell behandling kan du redusere tiden det tar å importere data fra Dynamics 365-kundeengasjementsapper og Microsoft Dataverse økonomi- og driftsapper. 
 
 Fullfør trinnene nedenfor for å aktivere parallell behandling i økonomi- og driftsapper.
 

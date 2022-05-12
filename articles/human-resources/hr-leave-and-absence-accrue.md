@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533719"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644309"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Avsett permisjons- og fraværsplaner
 
@@ -105,8 +105,10 @@ Slett avsetningsposter for en spesifikk plan og et bestemt datoområde. Avsetnin
 **Permisjonsavsetningsrevisjon** vises hver gang du kjører eller sletter en avsetning for én ansatt eller alle ansatte. Datoen og personen som utførte handlingen, vises også.
 
 1. På siden **Permisjon og fravær** velger du **Koblinger**-fanen.
-
 2. Under **Administrer permisjon** velger du **Slett permisjonsavsetningsrevisjon**.
+
+## <a name="leave-accrual-rounding"></a>Avrunding av permisjonsavsetning
+Når en ansatt enten er registrert eller avregistrert, blir avrunding av avsetning forhandlet. Tidligere var avrunding bare tillatt da en permisjonsplan ble satt til forhandling og en ansatt ble registrert/avregistrert i løpet av midtperioden. Permisjonsavsetningene avrundes nå uansett registrering/avregistrering ved midten av perioden eller ved begynnelsen av en periode.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Overvåking av permisjonsavsetningstransaksjon
 

@@ -2,7 +2,7 @@
 title: Hva er nytt eller endret i mobilappen Warehouse Management
 description: Dette emnet inneholder en liste over de nye og endrede funksjonene for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487843"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644739"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Hva er nytt eller endret i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20210"></a>Versjon 2.0.21.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Løste flere krasjproblemer.
+- Løste et problem der noen tegn ikke gjenkjennes ved søk eller innskriving på standardsiden.
+- Løste et problem der innskriving av en skråstrek på standardsiden slettet to tegn om gangen.
+- Løste et problem der **Sorter etter**-feltet på siden **Arbeidsliste** ville vise en feil verdi som ikke samsvarte med den faktiske sorteringsrekkefølgen for kortene.
+- Løste et problem der feil oppsett blir vist etter at du har endret størrelse på appvinduet mens du kjører på Microsoft Windows.
+- Løste et problem der blaing i en popup-liste kan føre til at noen listeelementer blir skjult eller at de blir forvrengt.
+- Ny utforming av påloggingssiden for å la den vise brukernavn- og passordfeltene på samme side når den kjøres på større visninger.
+- Forbedret måten kontrollene responderer på for rask trykking.
+- La til en appintern feilloggvisning.
+- La til flere tilgjengelighetsforbedringer (forbedret filtrering, løste manglende plassholdere på Android, aktiverte tastaturinndata for glidebryterkontroller og mer).
 
 ## <a name="version-20200"></a>Versjon 2.0.20.0
 

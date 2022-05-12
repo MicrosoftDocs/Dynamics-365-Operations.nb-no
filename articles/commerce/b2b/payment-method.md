@@ -2,7 +2,7 @@
 title: Konfigurere kundekontobetalingsmetode for B2B-e-handelsområder
 description: Dette emnet beskriver hvordan du konfigurerer betalingsmetoden for kundekonto i Microsoft Dynamics 365 Commerce. Det beskriver også hvordan kredittgrenser påvirker a konto-betalingsregistrering på nettsteder for bedrift-til-bedrift-e-handelsområder (B2B).
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323361"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616838"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurere kundekontobetalingsmetode for B2B-e-handelsområder
 
@@ -82,20 +82,20 @@ Egenskapen **Kredittgrensetype** støtter verdiene **Ingen**, **Saldo**, **Saldo
 
 En annen egenskap som påvirker a konto-bestilling, er egenskapen **Obligatorisk kredittgrense**, som er i hurtigfanen **Kreditt og innkreving** i kundeposten. Hvis du angir **Ja** for denne egenskapen for bestemte kunder, kan du tvinge systemet til å kontrollere kredittgrensen, selv om **Ingen** er angitt for egenskapen **Kredittgrensetype** for å angi at kredittgrensen ikke skal kontrolleres for noen kunder.
 
-B2B-områder som egenskapen **Obligatorisk kredittgrense** er aktivert for, har for øyeblikket ytterligere funksjonalitet. Hvis egenskapen er aktivert i en kundepost når kunden registrerer en ordre, hindrer B2B-området kunden i å bruke betalingsmetoden for a konto til å betale mer enn den gjenstående kredittsaldoen. Hvis den gjenstående kredittsaldoen for kunden for eksempel er USD 1000, men ordren er verdt USD 1200, kan kunden bare betale USD 1000 ved å bruke metoden for a konto. Kunden må bruke en annen betalingsmetode til å betale saldoen. Hvis egenskapen **Obligatorisk kredittgrense** er deaktivert i en kundepost, kan kunden betale et hvilket som helst beløp ved å bruke betalingsmetoden for a konto. Selv om en kunde kan registrere ordrer, tillater imidlertid ikke systemet at disse ordrene oppfylles hvis de overskrider kredittgrensen. Hvis du må kontrollere kredittgrensen for alle kunder som er kvalifisert for a konto-betalinger, anbefaler vi at du angir **Saldo + følgeseddel eller produktkvittering** for egenskapen **Kredittgrensetype** og **Nei** for egenskapen **Obligatorisk kredittgrense**.
+I øyeblikket kan ikke en kunde som bruker betalingsmåten for a konto, betale mer enn den nåværende kreditsaldoen for en ordre. Hvis den gjenstående kredittsaldoen for en kunde for eksempel er USD 1000, men ordreverdien er verdt USD 1200, kan kunden bare betale USD 1000 ved å bruke metoden for a konto. Kunden må deretter bruke en annen betalingsmetode til å betale saldoen. I en fremtidig versjon vil en handelskonfigurasjon gi brukerne muligheten til å bruke mer enn kredittgrensen når ordrer plasseres.
 
 Modulen **Kreditt og innkreving** har nye funksjoner for kredittbehandling. Hvis du vil aktivere disse funksjonene, aktiverer du funksjonen **Kredittbehandling** i arbeidsområdet **Funksjonsbehandling**. En av de nye funksjonene gjør at salgsordrer kan settes på vent basert på blokkeringsregler. Kredittlederidentiteten kan deretter frigi eller avvise ordrene etter ytterligere analyse. Funksjonen for å sette salgsordrer på vent, gjelder imidlertid ikke for Commerce-ordrer, fordi salgsordrer ofte har en forskuddsbetaling, og funksjonen **Kredittbehandling** har ikke fullstendig støtte for scenarioer med forskuddsbetaling. 
 
 Uavhengig av om funksjonen **Kredittbehandling** er aktivert, havner ikke salgsordrene på vent hvis en kundesaldo går over kredittgrensen under ordreoppfyllelse. Commerce genererer i stedet en advarsel eller en feilmelding, avhengig av verdien i feltet **Melding ved overskridelse av kredittgrense** i hurtigfanen **Kredittgrenser**.
 
-Egenskapen **Utelat fra kredittbehandling** som forhindrer at Commerce-salgsordrer havner på vent, ligger i salgsordrehodet (**Detaljhandel og handel \> Kunder \> Alle salgsordrer**). Hvis **Ja** (standardverdien) er angitt for denne egenskapen for Commerce-salgsordrer, utelates ordrene fra arbeidsflyten for vent for kredittbehandling. Legg merke til at selv om egenskapen kalles **Utelat fra kredittbehandling**, brukes likevel den definerte kredittgrensen under ordreoppfyllelse. Ordrene havner bare ikke på vent.
+Egenskapen **Utelat fra kredittbehandling** som forhindrer at Commerce-salgsordrer havner på vent, ligger i salgsordrehodet (**Detaljhandel og handel \> Kunder \> Alle salgsordrer**). Hvis **Ja** (standardverdien) er angitt for denne egenskapen for Commerce-salgsordrer, utelates ordrene fra arbeidsflyten for vent for kredittbehandling. Selv om egenskapen kalles **Utelat fra kredittbehandling**, brukes likevel den definerte kredittgrensen under ordreoppfyllelse. Ordrene havner bare ikke på vent.
 
 Funksjonen for å sette Commerce-salgsordrer på vent basert på blokkeringsregler planlegges for fremtidige Commerce-utgivelser. Hvis du må tvinge Commerce-salgsordrer til å gå gjennom de nye kredittbehandlingsflytene før denne funksjonen kommer, kan du tilpasse følgende XML-filer i Visual Studio-løsningen. Endre logikken i filene slik at **Nei** er angitt for flagget **CredManExcludeSalesOrder**. Dermed angis som standard **Nei** for egenskapen **Utelat fra kredittbehandling** for Commerce-salgsordrer.
 
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Vær oppmerksom på at hvis **Nei** er angitt for flagget **CredManExcludeSalesOrder** og en B2B-kunde kan kjøpe fra butikker ved å bruke salgsstedsprogrammet, kan det hende at posteringen av hentesalgstransaksjoner mislykkes. La oss for eksempel si at en blokkeringsregel gjelder for kontantbetalingstypen, og B2B-kunden kjøpte noen varer i butikken med kontanter. I dette tilfellet blir ikke salgsordren fakturert, fordi den kommer til å settes på vent. Posteringen blir derfor mislykket. Vi anbefaler derfor at du foretar ende-til-ende-testing etter at du har implementert denne tilpasningen.
+Hvis **Nei** er angitt for flagget **CredManExcludeSalesOrder** og en B2B-kunde kan kjøpe fra butikker ved å bruke salgsstedsprogrammet, kan det hende at posteringen av hentesalgstransaksjoner mislykkes. La oss for eksempel si at en blokkeringsregel gjelder for kontantbetalingstypen, og B2B-kunden kjøpte noen varer i butikken med kontanter. I dette tilfellet blir ikke salgsordren fakturert, fordi den kommer til å settes på vent. Posteringen blir derfor mislykket. Vi anbefaler derfor at du foretar ende-til-ende-testing etter at du har implementert denne tilpasningen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

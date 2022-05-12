@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Commerce.
 author: josaw
-ms.date: 03/04/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 213ed2091b1f2359f2481b162cba07812b3ffe90
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384615"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649081"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 
@@ -32,6 +32,20 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > [!NOTE]
 > Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.25
+
+### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
+
+MPOS-programmet (Modern Point of Sale) blir avskrevet i Commerce, versjon 10.0.25-utgivelsen og erstattes med Store Commerce-appen.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Butikkapper er hjørnesteinene til Dynamics 365 Commerce-omnikanaltilbudet. Vi skaper stadig noe nytt for å gi moderne og intelligente butikkopplevelser, og for å ytterligere modernisere løsningen ruller vi ut nye sett med endringer som vil betydelig forbedre IT-operasjoner og brukeropplevelser med våre eksisterende butikkprogrammer i Windows. Det nye Store Commerce-programmet er en teknologioppgradering av det eksisterende MPOS-programmet. Det gir forbedret ytelse, pålitelighet og langsiktig støtte på Windows-plattformen, og eliminerer behovet for å pakke om appen med hver oppdatering. |
+| **Erstattet med en annen funksjon?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
+| **Berørte produktområder**         | Modern Point of Sale |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Ved utgivelsen av Commerce, versjon 10.0.25 fjernes MPOS-installeringsprogrammet som sendes via de virtuelle LCS-maskinene (VM-er) i oktober 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.21
 
@@ -59,7 +73,7 @@ SDK for Retail sendes i Lifecycle Services (LCS). Denne distribusjonsmodusen avs
 | **Erstattet med en annen funksjon?**   |  [Last ned eksempler og referansepakker i SDK for Retail fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Berørte produktområder**         | Retail SDK |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Fra og med versjon 10.0.21 fjernes SDK-en som sendes via virtuelle LCS-maskiner, i april 2023. |
+| **Status**                         | Avskrevet: Per versjon 10.0.21 fjernes SDK-en som sendes via virtuelle LCS-maskiner, i oktober 2023. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Pakker som kan distribueres i Retail, og kombinerte installasjoner på salgssted, i maskinvarestasjoner og skyskalaenheter
 
@@ -92,7 +106,7 @@ Utvikling av POS-utvidelser ved hjelp av ModernPos.sln, CloudPos.sln, POS.Extens
 | **Erstattet med en annen funksjon?**   | [Salgsstedsuavhengig emballasje-SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Berørte produktområder**         | Dynamics 365 Commerce – utvidelse og distribusjon for salgssted |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Fra og med versjon 10.0.21 blir støtte for kombinerte POS-pakker og utvidelsesmodellen som bruker ModernPos.Sln, CloudPos.sln og POS.Extensons.csproj in Retail SDK, fjernet i april 2023. |
+| **Status**                         | Avskrevet: Per versjon 10.0.21 blir støtte for kombinerte POS-pakker og utvidelsesmodellen som bruker ModernPos.Sln, CloudPOs.sln og POS.Extensons.csproj in Retail SDK, fjernet i oktober 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.17
 

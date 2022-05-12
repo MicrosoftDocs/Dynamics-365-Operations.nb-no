@@ -2,7 +2,7 @@
 title: Finansdimensjoner
 description: Dette emnet beskriver de ulike typene finansdimensjoner og hvordan de er definert.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d5de5b58f0d498c4766659671d43fdb216cd6a870345509505b5a6bc19bdd4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e667e8dd1282e788eb40cd392baa9db824cec2
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754200"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644366"
 ---
 # <a name="financial-dimensions"></a>Finansdimensjoner
 
@@ -79,8 +79,12 @@ For å opprettholde referanseintegriteten for dataene, kan finansdimensjoner sje
 - Er finansdimensjonen brukt i en aktiv kontostruktur, avansert regelstruktur eller i et finansdimensjonssett?
 - Er finansdimensjonen en del et standardformat for finansdimensjonsintegrasjon?
 - Er finansdimensjonen er satt opp som standarddimensjon?
+- Er ikke finansdimensjonen valgt bort fra Financial Reporting-oppsettet? 
 
 Hvis ett av vilkårene er oppfylt, kan du ikke slette finansdimensjonen.
+
+> [!NOTE]
+> Fra og med Finance, versjon 10.0.27, blir ikke finansdimensjoner lenger automatisk valgt for finansrapporteringsoppsett når de opprettes. 
 
 ## <a name="default-dimension-values"></a>Standard dimensjonsverdier
 

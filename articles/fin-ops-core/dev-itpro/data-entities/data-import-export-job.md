@@ -2,7 +2,7 @@
 title: Oversikt over dataimport- og -eksportjobber
 description: Bruk arbeidsområdet for dataadministrasjon for å opprette og administrere dataimport- og -eksportjobber.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071091"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644468"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -74,8 +74,11 @@ Når du velger et foretak, må du velge formatet for dataene som skal eksportere
 > [!NOTE]
 > Det er viktig å velge riktig verdi for **Radskilletegn**, **Kolonneskilletegn** og **Tekstkvalifikator** hvis **Filformat**-alternativet er satt til **Avgrenset**. Kontroller at dataene ikke inneholder tegnet som brukes som skilletegn eller kvalifikator, da dette kan føre til feil under import og eksport.
 
+> [!NOTE]
+> For XML-baserte filformater må du huske å bare bruke lovlige tegn. Hvis du vil ha mer informasjon om gyldige tegn, kan du se [Gyldige tegn i XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 tillater ikke kontrolltegn, bortsett fra faner, vognreturer og linjeskift. Eksempler på ulovlige tegn er klammeparenteser, parenteser og skråstreker. 
+
 ### <a name="sequence-the-entities"></a>Sekvenser enhetene
-Enheter kan sekvenseres i et dataskjema, eller i import- og eksportjobber. Når du kjører en jobb som inneholder mer enn én dataenhet, må du sørge for at dataenhetene er riktig sekvensert. Du sekvenserer enhetene primært for å adressere noen funksjonelle avhengigheter mellom enheter. Hvis enheter ikke har noen funksjonelle avhengigheter, kan de planlegges for parallell import eller eksport.
+Enheter kan sekvenseres i et dataskjema, eller i import- og eksportjobber. Når du kjører en jobb som inneholder mer enn én dataenhet, må du sørge for at dataenhetene er riktig sekvensert. Du sekvenserer enhetene primært for å adressere noen funksjonelle avhengigheter mellom enheter. Hvis enheter ikke har noen funksjonelle avhengigheter, kan de planlegges for parallell import eller eksport. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Utføringsenheter, nivåer og sekvenser
 Utføringsenheten, nivået i kjøringsenheten og sekvensen av en enhet, hjelper til med å kontrollere rekkefølgen dataene blir eksportert eller importert i.

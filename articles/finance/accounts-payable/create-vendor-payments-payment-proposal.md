@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749058"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629473"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Opprette leverandørbetalinger ved hjelp av et betalingsforslag
 
@@ -48,7 +48,7 @@ Betalingsforslagsspørringen inneholder ulike kategorier, der hver har ulike alt
 - **Inkluder leverandørfakturaer fra andre juridiske enheter** – Hvis organisasjonen har en sentralisert prosess for betaling, og betalingsforslaget må inneholde fakturaer fra andre juridiske enheter som er inkludert i søkekriteriene, setter du dette alternativet til **Ja**.
 - **Foreslå separat leverandørbetaling per juridisk enhet** – Hvis dette alternativet settes til **Ja**, opprettes det en egen betaling for hver juridiske enhet per leverandør. Leverandøren på betalingen er leverandøren fra fakturaen fra hver juridiske enhet. Hvis dette alternativet settes til **Nei**, og den samme leverandøren har fakturaer i flere juridiske enheter, opprettes det én betaling for det samlede beløpet for de valgte fakturaene. Leverandøren på betalingen er leverandøren i den gjeldende juridiske enheten. Hvis leverandørkontoen ikke eksisterer i den gjeldende juridiske enheten, brukes leverandørkontoen for den første fakturaen som skal betales.
 - **Betalingsvaluta** – dette feltet angir valutaen som alle betalinger er opprettet i. Hvis det ikke er definert en valuta, betales hver faktura i valutaen på fakturaen.
-- **Betalingsukedag** – Angi ukedagen som betalingen skal utføres på. Dette feltet brukes bare hvis betalingsmetoden er definert for å summere fakturaer for betaling på en bestemt dag i uken.
+- **Betalingsukedag** – Angi ukedagen da betalingen skal utføres. Dette feltet brukes bare hvis betalingsmåten er satt til **Uke**. Antallet fakturaer for betaling summeres på den angitte ukedagen for betaling.
 - **Motkontotype** og **Motkonto** – angi disse feltene til å definere en bestemt kontotype (som **Finans** eller **Bank**) og motkonto (for eksempel en bestemt bankkonto). Betalingsmåten for fakturaen definerer standard motkontotype og motkonto, men du kan bruke disse feltene til å overstyre standardverdiene.
 - **Dato for summert betaling** – Dette brukes bare når feltet **Periode** i valgt betalingsmåten er satt til **Total**. Hvis en dato er definert, opprettes alle fakturaer på denne datoen. Feltet **Minste betalingsdato** ignoreres.
 - **Flere filtre** – I hurtigfanen **Poster som skal inkluderes** kan du definere flere kriterieområder. Hvis du for eksempel ønsker å betale et område av leverandører, kan du definere et filter for leverandørområdet. Denne funksjonaliteten brukes ofte til å velge fakturaer for en bestemt betalingsmåte. Hvis du for eksempel definerer et filter der **Betalingsmåte** = **Sjekk**, velges bare fakturaer som har denne betalingsmåten for betaling, forutsatt at de også oppfyller andre vilkår som er angitt i spørringen.

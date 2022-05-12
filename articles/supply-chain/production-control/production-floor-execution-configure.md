@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384753"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644404"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -111,17 +111,67 @@ For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Fun
 
 - *(Forhåndsversjon) Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse*
 
+### <a name="enable-the-my-day-dialog"></a>Aktiver dialogboksen Min dag
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Dialogboksen **Min dag** gir arbeidere en oversikt over de daglige registreringene og gjeldende saldoer for betalt tid, betalt overtid, fravær og betalt fravær.
+
+For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Visningen Min dag for grensesnittet for produksjonsutførelse*
+
+### <a name="enable-teams"></a>Aktiver Teams
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Når flere arbeidere er tildelt samme produksjonsjobb, kan de opprette en gruppe. Gruppen kan nominere én arbeider som leder. De gjenværende arbeiderne blir deretter automatisk assistenter til lederen. For gruppen som opprettes, må bare lederen registrere jobbstatus. Tidsposter gjelder alle gruppemedlemmer.
+
+For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Produksjonsteam i grensesnittet for produksjonsutførelse*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktiver tilleggskonfigurasjon i grensesnittet for produksjonsutførelse
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Denne funksjonen legger til innstillinger for følgende funksjonalitet på siden **Konfigurer produksjonsgulvutførelse**:
+
+- Åpne dialogboksen **Start jobb** automatisk når et søk er fullført.
+- Åpne dialogboksen **Rapportfremdrift** automatisk når et søk er fullført.
+- Fyll ut gjenstående antall på forhåndsfylling i dialogboksen **Rapportfremdrift**.
+- Aktiver materialforbruksjusteringer fra dialogboksen **Rapportfremdrift**. (Denne funksjonaliteten krever også funksjonen *Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke-lager)*.)
+- Aktiver søker etter prosjekt-ID.
+
+Informasjon om hvordan du bruker innstillingene, finner du senere i dette emnet.
+
+For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Tilleggskonfigurasjon i grensesnittet for produksjonsutførelse*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeide med grensesnittet for produksjonsutførelse
 
 Du kan opprette og vedlikeholde konfigurasjoner av produksjonsutførelse ved å gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurer produksjonsutførelse**. Siden **Konfigurere produksjonsutførelse** viser en liste over eksisterende konfigurasjoner. På denne siden kan du utføre følgende handlinger:
 
 - Velg en hvilken som helst produksjonskonfigurasjon som er oppført i venstre kolonne, for å vise og redigere den.
-- Velg **Ny** i handlingsruten for å legge til en ny konfigurasjon i listen. Deretter angir du et navn i **Konfigurasjon**-feltet slik at du kan identifisere den nye konfigurasjonen. Navnet du angir, må være unikt blant alle konfigurasjoner, og du kan ikke redigere det senere.
+- På handlingsruten velger du **Ny** for å legge til en ny konfigurasjon i listen. Deretter angir du et navn i **Konfigurasjon**-feltet slik at du kan identifisere den nye konfigurasjonen. Navnet du angir, må være unikt blant alle konfigurasjoner, og du kan ikke redigere det senere. Du kan også angi en beskrivelse av konfigurasjonen i **Beskrivelse**-feltet.
 
-Konfigurer deretter de ulike innstillingene for den valgte konfigurasjonen. Følgende felt er tilgjengelige:
+Deretter konfigurerer du de ulike innstillingene for den valgte konfigurasjonen, som beskrevet i følgende underdeler.
 
-- **Bare stemple inn og ut** – Sett dette alternativet til *Ja* for å opprette et forenklet grensesnitt som bare gir inn- og utstemplingsfunksjonalitet. Dette deaktiverer de fleste andre alternativene på denne siden. Du må fjerne alle linjene fra hurtigfanen **Fanevalg** før du kan aktivere dette alternativet.
-- **Aktiver søk** - Sett dette alternativet til *Ja* hvis du vil inkludere et søkefelt i jobblisten. Arbeidere kan finne en bestemt jobb ved å angi jobb-IDen eller finne alle jobber for en bestemt ordre ved å angi ordre-IDen. Arbeidere kan angi IDen ved å bruke et tastatur eller ved å skanne en strekkode.
+### <a name="the-general-fasttab"></a>Hurtigfanen Generelt
+
+Følgende innstillinger er tilgjengelige i **Generelt**-hurtigfanen:
+
+- **Bare stemple inn og ut** – Sett dette alternativet til *Ja* for å opprette et forenklet grensesnitt som bare gir inn- og utstemplingsfunksjonalitet. Denne innstillingen deaktiverer de fleste andre alternativene på denne siden. Du må fjerne alle linjene fra hurtigfanen **Fanevalg** før du kan aktivere dette alternativet.
+- **Aktiver søk** – Sett dette alternativet til *Ja* hvis du vil inkludere et søkefelt i jobblisten. Arbeidere kan finne en bestemt jobb ved å angi jobb-ID-en, eller de kan finne alle jobber for en bestemt ordre ved å angi ordre-ID-en. Arbeidere kan angi ID-en ved å bruke et tastatur eller ved å skanne en strekkode.
+- **Aktiver søk etter prosjekt-ID** – Sett dette alternativet til *Ja* for å gjøre det mulig for ansatte å søke etter prosjekt-ID (i tillegg til jobb-ID og ordre-ID) i søkefeltet i grensesnittet for utførelse av produksjonsgulvet. Du kan bare sette dette alternativet til *Ja* når alternativet **Aktiver søk** også er satt til *Ja*.
+- **Åpne startdialogboks automatisk** – Når dette alternativet er satt til *Ja*, åpnes dialogboksen **Start jobb** automatisk når arbeidere bruker søkefeltet til å finne en jobb.
+- **Åpne dialogboks for rapportfremdrift automatisk** – Når dette alternativet er satt til *Ja*, åpnes dialogboksen **Rapportfremdrift** automatisk når arbeidere bruker søkefeltet til å finne en jobb.
+- **Aktiver justering av materiale** – Sett dette alternativet til *Ja* for å aktivere **Juster materiale**-knappen i dialogboksen **Rapportfremdrift**. Arbeidere kan velge denne knappen for å justere materialforbruket for jobben.
 - **Rapporter antall ved utstempling** – Sett dette alternativet til *Ja* for å be arbeiderne om å rapportere tilbakemelding om jobber som pågår ved utstempling. Når *Nei* er valgt, blir ikke arbeiderne spurt om dette.
 - **Lås ansatt** – Når dette alternativet er satt til *Nei*, blir arbeidere logget av umiddelbart etter at de har utført en registrering (for eksempel en ny jobb). Grensesnittet går deretter tilbake til påloggingssiden. Når *Ja* er angitt for dette alternativet, forblir arbeidere logget på grensesnittet for produksjonsutførelse. En arbeider kan imidlertid logge seg av manuelt slik at en annen arbeider kan logge seg på når grensesnittet for produksjonsutførelse fortsetter å kjøre under den samme systembrukerkontoen. Hvis du vil ha mer informasjon om disse kontotypene, kan du se [Tilordnede brukere](config-job-card-device.md#assigned-users).
 - **Bruk det faktiske registreringstidspunktet** – Velg *Ja* for å angi at tidspunktet for hver nye registrering skal være likt det nøyaktige tidspunktet da registreringen ble sendt av en arbeider. Når dette alternativet er satt til *Nei*, brukes påloggingstidspunktet i stedet. Du bør normalt velge *Ja* hvis du har satt **Lås ansatt** og/eller **Én arbeider**-alternativet til *Ja*, i tilfeller der arbeiderne ofte er logget på i lengre perioder.
@@ -130,7 +180,17 @@ Konfigurer deretter de ulike innstillingene for den valgte konfigurasjonen. Føl
 - **Varighet for skjermlås** – Når alternativet **Tillat låsing av berøringsskjerm** er satt til *Ja*, bruker du dette alternativet til å angi antall sekunder berøringsskjermen skal være låst for rengjøring. Varigheten må være mellom 5 og 120 sekunder.
 - **Generer nummerskilt** – Sett dette alternativet til *Ja* for å generere et nytt nummerskilt hver gang en arbeider bruker et grensesnitt for produksjonsutførelse for å ferdigmelde. Skiltnummeret genereres fra en nummerserie som er definert på **Parametere for lagerstyring**-siden. Når den er satt til *Nei*, må arbeiderne angi et eksisterende nummerskilt når de ferdigmelder seg.
 - **Skriv ut etikett** – Sett dette alternativet til *Ja* for å skrive ut en nummerskiltetikett når en arbeider bruker grensesnittet for produksjonsutførelse til å ferdigmelde. Konfigurasjonen av etiketten defineres i dokumentruting, som beskrevet i [Dokumentrutingsoppsett for nummerskiltetiketter](../warehousing/document-routing-layout-for-license-plates.md).
-- **Fanevalg** – Bruk innstillingene i denne delen til å velge hvilke faner som skal vises av grensesnittet for produksjonsutførelse når den gjeldende konfigurasjonen er aktiv. Du kan utforme så mange faner du trenger, og deretter legge dem til og ordne dem her etter behov. Hvis du vil ha mer informasjon om hvordan du utformer faner og arbeider med innstillingene her, kan du se [Utform grensesnittet for produksjonsutførelse](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>Hurtigfanen Fanevalg
+
+Bruk innstillingene på hurtigfanen **Fanevalg** til å velge hvilke faner som skal vises av grensesnittet for produksjonsutførelse når den nåværende konfigurasjonen er aktiv. Du kan utforme så mange fanen du trenger, og deretter legge til og ordne dem etter behov ved å bruke knappene på hurtigfaneverktøylinjen. Hvis du vil ha mer informasjon om hvordan du utformer faner og arbeider med innstillingene her, kan du se [Utform grensesnittet for produksjonsutførelse](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>Hurtigfanen Rapportfremdrift
+
+Følgende innstillinger er tilgjengelige i **Rapportfremdrift**-hurtigfanen:
+
+- **Aktiver justering av materiale** – Sett dette alternativet til *Ja* for å ta med **Juster materiale**-knappen i dialogboksen **Rapportfremdrift**. Arbeidere kan velge denne knappen for å justere materialforbruket for jobben.
+- **Standard restantall** – Sett dette alternativet til *Ja* for å forhåndsfylle det forventede restantallet for en produksjonsjobb i dialogboksen **Rapportfremdrift**.
 
 ## <a name="clean-up-job-configurations"></a>Rydd opp i jobbkonfigurasjoner
 

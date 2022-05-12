@@ -2,27 +2,42 @@
 title: Definere økonomisk integrering for handelskanaler
 description: Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for handelskanaler.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462172"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661755"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Definere økonomisk integrering for handelskanaler
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for handelskanaler. Hvis du vil ha mer informasjon om regnskapsintegrering, kan du se [Oversikt over regnskapsintegrering for handelskanaler](fiscal-integration-for-retail-channel.md).
 
+## <a name="enable-features-in-commerce-headquarters"></a>Aktiver funksjoner i Commerce Headquarters
+
+Følg denne fremgangsmåten for å aktivere funksjoner som er knyttet til funksjonaliteten for Commerce-kanaler.
+
+1. I Commerce headquarters går du til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
+1. Finn og aktiver følgende funksjoner:
+
+    - **Direkte regnskapsintegrering fra salgsstedskasser** – Denne funksjonen utvider rammeverket for regnskapsintegrering ved å legge til funksjoner for å opprette regnskapskontakter som skal kjøres i salgsstedet. Denne typen kobling kommuniserer med en regnskapsenhet eller tjeneste som gir en HTTP-API (Application Programming Interface) og krever ikke en egen fysisk maskin i butikken. Denne funksjonaliteten gjør det for eksempel mulig å integrere mobilenheter uten at det kreves felles maskinvarefeil.
+    - **Teknisk profiloverstyringer for regnskapsintegrering** – Denne funksjonen gjør at konfigurasjon av regnskapsintegrering kan utvides, og legger til funksjoner for kontroll av tilkoblingsparametere på innstillingssiden til en salgsstedskasse. Når denne funksjonen er aktivert, kan du overstyre parameterne for en teknisk profil.
+    - **Regnskapsregistreringsstatus for salgsstedskasser** – Når denne funksjonen er aktivert, kan du deaktivere regnskapsregistreringsprosessen for bestemte salgsstedskasser. Hvis regnskapsregistrering er deaktivert for en salgsstedskasse, kan ikke salgstransaksjoner fullføres på den kassen.
+    - **Sikkerhetskopiering av lokal regnskapsintegrering** – Denne funksjonen utvider funksjonene for feilhåndtering i regnskapsintegreringsrammeverket. Det aktiverer også automatisk sikkerhetskopi av regnskapsregistreringsdata ved tap av data slik at dataene i lokal lagring gjenopprettes mens en enhet aktiveres.
+
 ## <a name="set-up-commerce-parameters"></a>Konfigurer handelsparametere
+
+Hvis du vil konfigurere Commerce-parametere, gjør du følgende.
 
 1. På siden **Delte handelsparametere**, i **Generelt**-fanen, angir du **Aktiver regnskapsintegrering** til **Ja**.
 1. I kategorien **Nummerserier** definerer du nummersekvenser for følgende referanser:
@@ -33,8 +48,8 @@ Dette emnet gir retningslinjer for hvordan du konfigurerer regnskapsintegrerings
 
 1. På **Handelsparametere**-siden definerer du nummersekvensen for nummer for funksjonell profil for regnskap.
 
-    > [!NOTE]
-    > Nummerserier er valgfrie. Numre for alle regnskapsintegrasjonsenheter kan genereres fra nummerserier eller manuelt.
+> [!NOTE]
+> Nummerserier er valgfrie. Numre for alle regnskapsintegrasjonsenheter kan genereres fra nummerserier eller manuelt.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>Definere en bilagsregistreringsprosess
 
@@ -43,7 +58,7 @@ Fremgangsmåten for å definere regnskapsintegreringen omfatter følgende hovedo
 - Konfigurer regnskapskoblinger som representerer regnskapsenheter eller -tjenester som brukes til regnskapsregistreringformål, for eksempel regnskapsskrivere.
 - Konfigurer dokumentleverandører som genererer regnskapsdokumenter som skal registreres i regnskapsenheter eller -tjenester av regnskapskoblinger.
 - Konfigurer regnskapsregistreringsprosessen som definerer en sekvens med bilagsregistreringstrinn og regnskapskoblingene og leverandørene av regnskapsdokument som skal brukes for hvert trinn.
-- Tilordne bilagsregistreringsprosessen til funksjonalitetsprofiler for salgssted (POS).
+- Tildel bilagsregistreringsprosessen til funksjonalitetsprofiler for salgssted.
 - Tilordne tekniske profiler for kobling til maskinvareprofiler.
 - Tilordne tekniske profiler for kobling til profiler for maskinvare eller funksjonalitet for salgssted.
 
@@ -283,4 +298,21 @@ For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge 
     1. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringene dine til kanaldatabasen.
 
 
+## <a name="view-connection-parameters-and-other-information-in-pos"></a>Vis tilkoblingsparametere og annen informasjon i salgssted
+
+Hvis du vil vise tilkoblingsparametere og annen informasjon i salgssted, følger du denne fremgangsmåten.
+
+1. Åpne Modern POS (MPOS) eller Cloud POS (CPOS).
+1. Velg **Innstillinger**. Hvis regnskapsintegreringen er aktivert, vil delen **Regnskapsintegrering** til høyre vise følgende informasjon:
+
+    - Statusen for regnskapsregistrering
+    - Tilstanden til siste regnskapstransaksjon
+    - Antall ventende revisjonshendelser
+
+1. Velg **Detaljer** for å vise følgende informasjon:
+
+    - Trinn for registreringsprosess
+    - Koblingsparametere
+    - Detaljer på revisjonshendelser
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

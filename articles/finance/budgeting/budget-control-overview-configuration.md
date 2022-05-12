@@ -2,7 +2,7 @@
 title: Oversikt over budsjettkontroll
 description: Dette emnet introduserer budsjettkontrollfunksjonen, og gir informasjon som hjelper deg med å konfigurere budsjettkontroll for å optimalisere administrasjon av organisasjonens finansressurser.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986062"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644856"
 ---
 # <a name="budget-control-overview"></a>Oversikt over budsjettkontroll
 
@@ -80,7 +80,9 @@ I kategorien **Tilgjengelige budsjettmidler** kan du deretter angi formelen som 
 > [!NOTE]
 > Hvis denne beregningen endres i løpet av en budsjettsyklus, vil ikke endringene ha innvirkning på dokumenter som allerede har bestått kontroller i budsjettkontrollen og er postert eller fullført. Ved hjelp av en funksjon med navnet **Bare spor beløp i beregning for tilgjengelige budsjettmidler** kan du endre hvilke data som spores i BudgetSourceTracking-tabellene. Når denne funksjonen er aktivert, lagres beløp bare hvis de er valgt for bruk i beregningen av tilgjengelige budsjettmidler. Hvis du vil ha mer informasjon, se [Budsjettmidler tilgjengelig](budget-funds-available.md).
 
-I kategorien **Dokumenter og kladder** kan du deretter velge hvilke kildedokumenter og kladder som skal underlegges kontroller i budsjettkontrollen og om kontrollene utføres på linjeoppføringene eller på hele dokumentet. 
+### <a name="documents-and-journals"></a>Dokumenter og journaler
+
+P fanen **Dokumenter og kladder** kan du deretter velge hvilke kildedokumenter og kladder som skal underlegges kontroller i budsjettkontrollen og om kontrollene utføres på linjeoppføringene eller på hele dokumentet. I tillegg inneholder den nye funksjonen **Forbedring av dokumentfiltrering for budsjettkontroll**, som er tilgjengelig fra Microsoft Dynamics 365 Finance, versjon 10.0.27, et spørringsbasert filteralternativ for hvert dokument som er inkludert i budsjettkontroll. Derfor kan du angi hvilke budsjettkontrolldokumenter som skal budsjetteres. På denne måten gjør funksjonen det bare mulig å kontrollere et delsett av en dokumenttype. Du kan for eksempel bare kontrollere bestillinger der **Pulje**-feltet er satt til **01**. En ny kolonne som legges til fanen **Dokumenter og journaler**, angir om det er definert en spørring for den valgte dokumenttypen. I tillegg kan du legge til, redigere eller slette filtrering ved hjelp av to nye knapper som legges til på verktøylinjen over dokumentrutenettet. 
 
 Du bør samsvare de valgte kildedokumentene som er merket med avmerkingsboksene, for saldoer som er inkludert i beregningen av tilgjengelige budsjettmidler. Hvis du for eksempel har valgt **Budsjettreservasjoner for disposisjoner**, bør du velge alternativet **Bestillinger**. Når en budsjettkontroll utføres for beløpene og kontoene på en innkjøpslinje, blir budsjettkontrollkategorien som tilordnes reservasjonen, **Disposisjon**. Når en budsjettkontroll utføres for beløpene og kontoene på en innkjøpslinje, blir innkjøpsrekvisisjonen som tilordnes reservasjonen, **Forhåndsdisposisjon**. 
 

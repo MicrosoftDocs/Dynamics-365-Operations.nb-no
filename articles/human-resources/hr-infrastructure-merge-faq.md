@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c022bb15975a1411230d28067a2225c95c0573bf
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e43aaad2f5b80996eb0fc10f550f073aec67fe5d
+ms.sourcegitcommit: 26c726bd0b00935e3d2c31fdc5a3b2ae03a8a2b0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062731"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661465"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Vanlige spørsmål om sammenslåing av Dynamics 365 Human Resources-infrastruktur
 
@@ -32,7 +32,7 @@ Dette emnet svarer på vanlige spørsmål om sammenslåingen av infrastruktur fo
 
 ## <a name="what-is-the-dynamics-365-human-resources-infrastructure-merge"></a>Hva er sammenslåing av Dynamics 365 Human Resources-infrastruktur?
 
-Dynamics 365 Human Resources er en frittstående app som bruker en annen infrastruktur enn andre økonomi- og driftsapper-apper, for eksempel Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Project Operations. Sammenslåingen av infrastrukturen vil føre Dynamics 365 Human Resources til den samme infrastrukturen som andre økonomi- og driftsapper.
+Dynamics 365 Human Resources er en frittstående app som bruker en annen infrastruktur enn andre økonomi- og driftsapper, for eksempel Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Project Operations. Sammenslåingen av infrastrukturen vil føre Dynamics 365 Human Resources til den samme infrastrukturen som andre økonomi- og driftsapper.
 
 ## <a name="value-and-benefits-of-the-infrastructure-merge"></a>Verdi og fordeler ved sammenslåingen av infrastruktur
 
@@ -231,6 +231,3 @@ Eksisterende brukere av Dynamics 365-apper og brukere av frittstående Dynamics 
 
 Tilleggsmiljøer kreves ikke for å støtte infrastrukturendring.
 
-### <a name="where-should-i-go-if-i-have-additional-questions-about-product-licensing"></a>Hvor skal jeg gå hvis jeg har flere spørsmål om produktlisenser?
-
-Hvis du har lisensieringsspørsmål, kan du finne mer informasjon om [Biz Apps Hub - D365-prissetting og lisensiering](https://businessapplications.transform.microsoft.com/resources/pricing-and-licensing?tab=grandfathering). Hvis informasjonen ikke hjelper deg med problemet, kan du åpne en forespørsel med LicenseQ.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324093"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661665"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 
@@ -61,7 +61,7 @@ Som en en bruker med rollen funksjonsrådgiver for elektronisk rapportering elle
 ### <a name="configure-er-parameters"></a>Konfigurere ER-parametere
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurasjoner**, i delen **Relaterte koblinger**, velger du flisen **Parametere for elektronisk rapportering**.
+2. På siden **Lokaliseringskursplan**, i delen **Relaterte koblinger**, velger du flisen **Parametere for elektronisk rapportering**.
 3. På **Parametere for elektronisk rapportering**-siden, i **Generelt**-fanen angi **Aktiver utformingsmodus** til **Ja**.
 4. I kategorien **Vedlegg** i **Konfigurasjoner**-feltet velger du **Fil**.
 5. I feltene **Jobbarkiv**, **Midlertidig**, **Grunnlinje** og **Annet** velger du **Fil**-typen.
@@ -78,13 +78,13 @@ Hver ER-konfigurasjon som legges til, er merket som eid av en ER-konfigurasjonsl
 #### <a name="review-the-list-of-er-configuration-providers"></a>Se gjennom listen over ER-konfigurasjonsleverandører
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurasjoner**, i delen **Relaterte koblinger**, velger du flisen **Konfigurasjonsleverandører**.
+2. På siden **Lokaliseringskursplan**, i delen **Relaterte koblinger**, velger du flisen **Konfigurasjonsleverandører**.
 3. På **Konfigurasjonsleverandørtabell**-siden har hver leverandørpost et unikt navn og en unik URL-adresse. Se gjennom innholdet på denne siden. Hvis det allerede finnes en post for **Litware, Inc.** (`https://www.litware.com`), hopper du over den neste fremgangsmåten og [legger til en ny ER-konfigurasjonsleverandør](#AddProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Legg til en ny ER-konfigurasjonsleverandør
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurasjoner**, i delen **Relaterte koblinger**, velger du flisen **Konfigurasjonsleverandører**.
+2. På siden **Lokaliseringskursplan**, i delen **Relaterte koblinger**, velger du flisen **Konfigurasjonsleverandører**.
 3. Velg **Ny** på siden **Konfigurasjonsleverandører**.
 4. I **Navn**-feltet angir du **Litware, Inc.**
 5. I **Internett-adresse**-feltet angir du `https://www.litware.com`.
@@ -93,7 +93,7 @@ Hver ER-konfigurasjon som legges til, er merket som eid av en ER-konfigurasjonsl
 #### <a name="activate-an-er-configuration-provider"></a>Aktivere en ER-konfigurasjonsleverandør
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På **Lokaliseringskonfigurasjoner**-siden, i **Konfigurasjonsleverandører**-delen, velger du **Litware, Inc.**-flisen og deretter **Angi aktiv**.
+2. På **Lokaliseringskursplan**-siden, i **Konfigurasjonsleverandører**-delen, velger du **Litware, Inc.**-flisen og deretter **Angi aktiv**.
 
 Hvis du ha mer informasjon om ER-konfigurasjonsleverandører, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -102,7 +102,7 @@ Hvis du ha mer informasjon om ER-konfigurasjonsleverandører, kan du se [Opprett
 Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende Finance-forekomsten, må du importere dem fra ER- [repositoriet](general-electronic-reporting.md#Repository) som ble konfigurert for den forekomsten.
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På **Lokaliseringskonfigurasjoner**-siden, i **Konfigurasjonsleverandører**-delen, velger du **Microsoft**-flisen og deretter **Repositorier** for å vise listen over repositorier for Microsoft-leverandøren.
+2. På **Lokaliseringskursplan**-siden, i **Konfigurasjonsleverandører**-delen, velger du **Microsoft**-flisen og deretter **Repositorier** for å vise listen over repositorier for Microsoft-leverandøren.
 3. På **Konfigurasjonsrepositorier**-siden velger du repositoriet for **Global**-typen, og deretter velger du **Åpne**. Hvis du blir spurt om godkjenning for å koble til Regulatory Configuration Service, følger du godkjenningsinstruksjonene.
 4. På **Konfigurasjonsrepositorier**-siden går du til konfigurasjonstreet i venstre rute og velger **Peppol-salgsfakura**-formatkonfigurasjonen.
 5. Velg versjon **11.2.2** på hurtigfanen **Versjoner**.
@@ -116,7 +116,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende Finance-foreko
 ### <a name="review-the-imported-er-configurations"></a>Se gjennom importerte ER-konfigurasjoner
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På siden **Lokaliseringskonfigurasjoner**, i delen **Konfigurasjoner**, velger du flisen **Rapporteringskonfigurasjoner**.
+2. På siden **Lokaliseringskursplan**, i delen **Konfigurasjoner**, velger du flisen **Rapporteringskonfigurasjoner**.
 3. På **Konfigurasjoner**-siden utvider du hurtigfanen **Konfigurasjonskomponenter**.
 4. Utvid **Fakturamodell** i konfigurasjonstreet i venstre rute, og utvid deretter **UBL-salgsfaktura**.
 

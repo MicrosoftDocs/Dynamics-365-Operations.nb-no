@@ -2,7 +2,7 @@
 title: Legge til datafelt i avgiftsintegrering ved hjelp av utvidelser
 description: Dette emnet beskriver hvordan du bruker utvidelser i X++ til å legge til datafelt i avgiftsintegrasjonen.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323524"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649108"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Legg til datafelt i avgiftsintegrering ved hjelp av utvidelser
 
@@ -334,9 +334,10 @@ Utvid `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObject`- elle
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-I denne koden er `_destination` wrapper-objektet som brukes til å generere posteringsforespørselen, og `_source` er `TaxIntegrationLineObject`-objektet.
+I denne koden er `_destination` wrapper-objektet som brukes til å generere forespørselen, og `_source` er `TaxIntegrationLineObject`-objektet.
 
 > [!NOTE]
-> Definer nøkkelen som brukes i forespørselsskjemaet, som **private const str**. Strengen må være nøyaktig den samme som målingsnavnet som er lagt til i emnet [Legge til datafelter i avgiftskonfigurasjoner](tax-service-add-data-fields-tax-configurations.md).
-> Angi feltet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** ved hjelp av **SetField**-metoden. Datatypen til den andre parameteren må være **string**. Hvis datatypen ikke er **string**, må du konvertere den.
-> Hvis en **opplistingstype** for X++ utvides, noterer du deg forskjellen mellom verdien, etiketten og navnet.
+> Definer feltnavnet som brukes i forespørselen som **private const str**. Strengen må være nøyaktig den samme som nodenavnet (ikke etiketten) som er lagt til i emnet [Legge til datafelter i avgiftskonfigurasjoner](tax-service-add-data-fields-tax-configurations.md).
 > 
+> Angi feltet i metoden **copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine** ved hjelp av **SetField**-metoden. Datatypen til den andre parameteren må være **string**. Hvis datatypen ikke er **string**, må du konvertere den til streng.
+> Hvis datatypen er X++-**opplistingstype**, anbefaler vi at du bruker **enum2Symbol**-metoden for å konvertere opplistingsverdien til en streng. Opplistingsverdien som legges til i avgiftskonfigurasjonen, må være nøyaktig den samme som opplistingsnavnet. Nedenfor finner du en liste over forskjeller mellom opplistingsverdi, etikett og navn.
+> 
+>   - Navnet på opplisting er et symbolsk navn i kode. Du kan bruke **enum2Symbol()** til å konvertere opplistingsverdien til navnet.
 >   - Verdien til opplistingen er heltall.
->   - Etiketten for opplistingen kan være forskjellig på tvers av foretrukne språk. Ikke bruk **enum2Str** til å konvertere opplistingstypen til streng.
->   - Navnet på opplistingen anbefales, fordi det er fast. Du kan bruke **enum2Symbol** til å konvertere opplistingen til navnet. Opplistingsverdien som legges til i avgiftskonfigurasjonen, må være nøyaktig den samme som opplistingsnavnet.
+>   - Etiketten for opplistingen kan være forskjellig på tvers av foretrukne språk. Du kan bruke **enum2Str()** til å konvertere opplistingsverdien til etiketten.
 
 ## <a name="model-dependency"></a>Modellavhengighet
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 
