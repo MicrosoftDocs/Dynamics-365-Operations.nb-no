@@ -1,28 +1,28 @@
 ---
 title: Startside for kontant- og bankbehandling
 description: Du kan bruke Kontant- og bankbehandling til å vedlikeholde den juridiske enhetens bankkontoer og finansobjektene som er knyttet til disse bankkontoene.
-author: roschlom
+author: kfend
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "21941"
 - intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: cf423c61f4a7ac8648a09c25e30b47ce1b0e3300
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883700"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710732"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
 
@@ -89,7 +89,7 @@ Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans
 
 #### <a name="blogs"></a>Blogger
 
-Du kan finne meninger, nyheter og annen informasjon i bloggen for [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og bloggen for [Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finne meninger, nyheter og annen informasjon i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og [Microsoft Dynamics 365 Finance and Operations – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i Dynamics 365.
 

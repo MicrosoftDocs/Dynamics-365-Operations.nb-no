@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Kjøp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurer lager for lokale distribusjoner
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentasjonsressurser
               items:
                 - name: Hjelpesystem
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Registrer varer for en vare for en grunnleggende lageraktivitet ved hjelp av en journal for vareankomst
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Importer innkommende forhåndsvarsler for forsendelse via V2-dataenheten
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: Importer innkommende forhåndsvarsler for forsendelse via V3-dataenheten
+                  href: warehousing/import-asn-data-entity.md
                 - name: Direkteoverføre produkter fra mottakende lager til butikker
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Definer et lokasjonsdirektiv for bestillings

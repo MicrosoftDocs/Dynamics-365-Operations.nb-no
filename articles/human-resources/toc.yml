@@ -90,7 +90,7 @@
                   href: hr-admin-integration-finance.md
                 - name: Konfigurer integrering med Dayforce
                   href: hr-admin-integration-dayforce.md
-                - name: Opprette en app for regelmessig dataeksport
+                - name: Opprett en app for regelmessig dataeksport
                   href: hr-admin-integration-recurring-data-export.md
                 - name: Integrere med LinkedIn Talent Hub
                   href: hr-admin-integration-linkedin.md
@@ -452,18 +452,16 @@
               href: hr-personnel-positions.md
             - name: Opprett en arbeidstidskalender
               href: hr-personnel-create-working-time-calendar.md
-            - name: Rekrutter jobbkandidater
-              href: hr-personnel-recruit.md
             - name: Vanlige spørsmål om medarbeiderhandlinger
               href: hr-personnel-actions-faq.md
-            - name: Bruke arbeidsflyter til å administrere informasjon om ansatte
+            - name: Bruk arbeidsflyter til å administrere informasjon om ansatte
               href: hr-workflow-manage-employee-information.md
             - name: Vis og administrer adresseendringer
               href: hr-personnel-view-address-changes.md
             - name: Endre rapporteringsrelasjoner for en stilling
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Strømlinjeformet ansattpost
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+              href: stream-employee-entry.md
             - name: Angi arbeiderinformasjon
               href: hr-personnel-enter-worker-information.md
             - name: Arbeidere uten ansettelse
@@ -486,28 +484,36 @@
               href: hr-personnel-set-up-positions.md
             - name: Definere informasjon om skade og sykdom
               href: hr-personnel-set-up-injury-illness-information.md
-            - name: Vedlikeholde informasjon om ansattskade og -sykdom
+            - name: Vedlikehold informasjon om ansattskade og -sykdom
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Rekruttere kandidater
+            - name: Rekruttering
               items:
-                - name: Administrere rekrutteringsprosesser
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Masseansettelsesprosjekter
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Opprette masseansettelsesprosjekter
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Angi søker- og søknadsdata manuelt
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Utvikle og åpne jobbrekvisisjoner
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Definere stillinger
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Ansette kandidater via rekruttering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Ansett en eksisterende ansatt via rekruttering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Identifiser og distribuer verktøy for kandidatvalg
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                - name: Oversikt
+                  href: ../human-resources/hr-recruit-overview.md
+                - name: Rekrutteringsprosjekter
+                  items:
+                    - name: Administrer rekrutteringsprosjektprosess
+                      href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Angi søker- og søknadsdata manuelt
+                      href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                    - name: Utvikle og åpne jobbrekvisisjoner
+                      href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                    - name: Definere stillinger
+                      href: ../human-resources/hr-personnel-set-up-positions.md
+                    - name: Ansette kandidater via rekruttering
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                    - name: Ansett en eksisterende ansatt via rekruttering
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                    - name: Identifiser og distribuer verktøy for kandidatvalg
+                      href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                    - name: Masseansettelsesprosjekter
+                      href: ../human-resources/hr-personnel-mass-hire-projects.md
+                    - name: Opprett masseansettelsesprosjekter
+                      href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: Rekrutteringsforespørsler (sammenslått infrastruktur)
+                  items:
+                    - name: Rekrutter jobbkandidater
+                      href: hr-personnel-recruit.md
         - name: Oppgavebehandling
           href: hr-task-mgmt.md
         - name: Permisjon og fravær
@@ -800,9 +806,11 @@
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Konfigurer integrering med Finance
               href: hr-admin-integration-finance.md
+            - name: Opprett koblinger fra Human Resources til et annet miljø
+              href: configure-links.md
             - name: Konfigurer integrering med Dayforce
               href: hr-admin-integration-dayforce.md
-            - name: Opprette en app for regelmessig dataeksport
+            - name: Opprett en app for regelmessig dataeksport
               href: hr-admin-integration-recurring-data-export.md
             - name: Integrer med Office
               items:

@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Kjøp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurer lager for lokale distribusjoner
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentasjonsressurser
               items:
                 - name: Hjelpesystem
@@ -268,10 +266,12 @@
               items:
                 - name: Oversikt over å løse avvik under kontroll for fakturatotaler
                   href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
-                - name: Undersøke eller løse unntak
+                - name: Undersøk eller løs unntak
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Leverandørposteringsprofiler
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Opprett tilleggskoder
+              href: accounts-receivable/create-charges-codes.md
             - name: Datoer for leverandørfaktura
               href: accounts-payable/vendor-invoice-dates.md
             - name: Revaluering av utenlandsk valuta for leverandører og kunder
@@ -292,9 +292,11 @@
               items:
                 - name: Sentraliserte betalinger for leverandører
                   href: accounts-payable/centralized-payments-accounts-payable.md
-                - name: Konfigurere utligning
+                - name: Definer og behandle mellombetalinger
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
+                - name: Konfigurer utligning
                   href: cash-bank-management/configure-settlement.md
-                - name: Utligne rest
+                - name: Utlign rest
                   href: cash-bank-management/settle-remainder.md
                 - name: Oversikt over leverandørbetaling
                   href: cash-bank-management/tasks/vendor-payment-overview.md
@@ -354,11 +356,15 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+            - name: Postering av utestående fordringer
+              href: general-ledger/accts-recvble-posting.md
             - name: Kundeposteringsprofiler
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Opprett tilleggskoder
+              href: accounts-receivable/create-charges-codes.md
             - name: Oversikt over SEPA-avtalegiro
               href: accounts-receivable/sepa-direct-debit-overview.md
-            - name: Definere mandat for SEPA Direct Debit
+            - name: Definer mandat for SEPA Direct Debit
               href: accounts-receivable/sepa-direct-debit-mandate.md
             - name: 'Kredittkortoppsett, godkjenning og registrering'
               href: accounts-receivable/credit-card-authorizations.md
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Justeringsdatoscenarioer
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Inntektsdeling
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Inntekts- og utgiftsutsettelser
                   items:
                     - name: Definer inntekts- og utgiftsutsettelser
@@ -452,6 +460,8 @@
               items:
                 - name: Oversikt over kundebetaling
                   href: cash-bank-management/tasks/customer-payment-overview.md
+                - name: Definer og behandle mellombetalinger
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Sentraliserte betalinger for utestående fordringer
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Innbetale kundebetalinger
@@ -1026,6 +1036,14 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Dobbel valuta
                       href: general-ledger/dual-currency.md
+                - name: Posteringsprofiler
+                  items:
+                    - name: Oversikt over posteringsprofiler
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Anbefalte fremgangsmåter for posteringsprofiler
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Kontoer for automatiske transaksjoner
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Tildelingsregler
                   items:
                     - name: Finanstildelingsregler

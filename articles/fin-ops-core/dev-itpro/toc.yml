@@ -48,12 +48,8 @@
               href: dev-tools/version-models-build.md
         - name: Dataintegrering
           items:
-            - name: Integrering mellom Finance and Operations-apper og tredjepartstjenester
+            - name: Integrering mellom økonomi- og driftsapper og tredjepartstjenester
               href: data-entities/integration-overview.md
-            - name: Prioritetsbasert begrensning
-              hreF: data-entities/priority-based-throttling.md
-            - name: Vanlige spørsmål om prioritetsbasert begrensning
-              href: data-entities/throttling-faq.md
             - name: API-er for dataintegrering
               items:
                 - name: REST-API for databehandlingspakke
@@ -74,7 +70,19 @@
                   href: data-entities/recurring-integrations.md
                 - name: Test tjenester ved hjelp av tredjepartsverktøy
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations-kobling
+            - name: Grenser for servicebeskyttelse
+              items:
+                - name: API-grenser for servicebeskyttelse
+                  href: data-entities/service-protection-api-limits.md
+                - name: Begrensningsprioritet
+                  href: data-entities/priority-based-throttling.md
+                - name: Prøv operasjoner på nytt
+                  href: data-entities/service-protection-retry-operations.md
+                - name: Overvåk API-begrensning
+                  href: data-entities/service-protection-monitoring.md
+                - name: Maksimer API-gjennomstrømning
+                  href: data-entities/service-protection-maximizing-api-throughput.md
+            - name: Økonomi- og driftskobling
               href: data-entities/fin-ops-connector.md
             - name: Utvikling for integrering
               items:
@@ -398,6 +406,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurer proxyer for lokale miljøer
                       href: deployment/onprem-reverseproxy.md
+                    - name: Konfigurer lagerappen for lokale distribusjoner
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Installer nettverksskriverenheter i lokale miljøer
                       href: analytics/install-network-printer-onprem.md
                     - name: Lokal diagnostikk
@@ -472,16 +482,14 @@
                   href: help/language-locale.md
                 - name: 'Utvid, tilpass og samarbeid om hjelpen'
                   href: help/contributor-guide.md
-            - name: Distribusjonshensyn
+            - name: Regionale tjenester for økonomi- og driftsapper
               items:
-                - name: Distribusjonsalternativer for nasjonal og lokal sky for Dynamics 365 Finance og Dynamics 365 Supply Chain Management
+                - name: Lokale geografiske områder
                   href: deployment/deployment-options-geo.md
-                - name: Finance og Supply Chain Management i Government Community Cloud (GCC) for USA
+                - name: US Government Community Cloud (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: Finance and Supply Chain Management styrt av 21Vianet i Kina
+                - name: Styrt av 21Vianet i Kina
                   href: deployment/china-local-deployment.md
-                - name: Finance and Operations-apper i Frankrike
-                  href: deployment/france-local-deployment.md
         - name: Utvikle og tilpass
           items:
             - name: Startside for å utvikle og tilpasse
@@ -559,7 +567,7 @@
                     - name: Oversikt over å opprette modeller og datamodellelementer
                       href: dev-tools/create-data-model-elements.md
                     - name: Gi navn til retningslinjer for utvidelser
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: Deaktivere modelltilpassings- og avskrivningsfunksjonalitet
                       href: dev-tools/lock-models.md
                 - name: Rapport for tilpassingsanalyse
