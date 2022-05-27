@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 2b2b233e22378c8710a63dce83d168bfd89eba7f
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 3857ce3720430c6f512d5abc4c9c4d390a0c3377
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920504"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686690"
 ---
 # <a name="the-filter-pane-on-the-on-hand-list-page-doesnt-work-as-expected"></a>Filterruten på lagerlistesiden fungerer ikke som forventet
 
@@ -28,6 +28,6 @@ Filtrene i filterruten på siden **Beholdningsliste** filtrerer ikke resultater 
 
 Siden **Beholdningsliste** er satt sammen fra en detaljert lagerbeholdningstabell som inkluderer alle tilgjengelige dimensjoner. Listen på denne siden er imidlertid et sammendrag. Derfor kan den kombinere rader fra kildetabellen ved å samle verdier i henhold til dimensjonene som vises.
 
-Filtre som er definert i filterruten, gjelder for kildetabellen, ikke for den aggregerte listen. Denne virkemåten kan av og til gi uventede resultater, som vist i [disse eksemplene](/dynamics365/supply-chain/inventory/inventory-on-hand-list.md#examples).
+Filtre som er definert i filterruten, gjelder for kildetabellen, ikke for den aggregerte listen. Denne virkemåten kan av og til gi uventede resultater, som vist i [disse eksemplene](/dynamics365/supply-chain/inventory/inventory-on-hand-list#examples).
 
-[Filtrene som oppgis i rutenettet](/dynamics365/supply-chain/inventory/inventory-on-hand-list.md#grid-filters), *gjelder* imidlertid for den aggregerte listen. Disse filtrene inkluderer både hurtigfilteret øverst i rutenettet og filteret for hver kolonneoverskrift.
+[Filtrene som oppgis i rutenettet](/dynamics365/supply-chain/inventory/inventory-on-hand-list#grid-filters), *gjelder* imidlertid for den aggregerte listen. Disse filtrene inkluderer både hurtigfilteret øverst i rutenettet og filteret for hver kolonneoverskrift.

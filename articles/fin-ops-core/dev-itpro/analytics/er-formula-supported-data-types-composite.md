@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323671"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689249"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Støttede sammensatte datatyper for formler i elektronisk rapportering
 
@@ -81,7 +81,7 @@ En *postliste* er en liste over elementer av typen *post*. En *postliste* brukes
 
 Tilgang til poster i en *postliste* skjer som standard sekvensielt. Du kan bruke [INDEX](er-functions-list-index.md)-funksjonen og angi indeksen *heltall* for å få tilgang til en bestemt post.
 
-Standardverdien for en *postliste* er **tom**. Du kan bruke [ISEMPTY](/er-functions-list-isempty.md)-funksjonen til å evaluere om en *postliste* er tom.
+Standardverdien for en *postliste* er **tom**. Du kan bruke [ISEMPTY](er-functions-list-isempty.md)-funksjonen til å evaluere om en *postliste* er tom.
 
 > [!NOTE]
 > Hvis en *postliste* er tom, oppstår det et unntak ved kjøretid ved ethvert forsøk på å hente en feltverdi for en *post*. Hvis du vil vite hvordan du kan bidra til å forhindre kjøretidsunntak av denne typen, kan du se [Vurdering ved saker med tomme lister](er-components-inspections.md#i9).

@@ -1,23 +1,23 @@
 ---
 title: Opplæringskatalog for brukere av Dynamics 365 Supply Chain Management
 description: Finn alle opplæringsalternativene for brukere av Dynamics 365 Supply Chain Management.
-author: margoc
+author: kamaybac
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: kamaybac
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fe547f6e224a072301a4d846f1a2867b70c86da3
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a8324fe183efd956fa39ddd97f562e4c33630580
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402672"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8673193"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Opplæringskatalog for brukere av Dynamics 365 Supply Chain Management
 
@@ -31,7 +31,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 |---------|-------------|--------|--------|
 | [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interessert i å finne ut mer om forretningsprogrammer? Kanskje du ikke vet hvor du skal begynne med Microsoft Dynamics 365 Power Platform-programmer? Lær hvordan mulighetene til forretningsprogrammer kan bidra til å forvandle virksomheten din. | Gratis, selvbetjent elektronisk læringsforløp | 8 timer |
 | [Grunnleggende om Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper. | Gratis, selvbetjent elektronisk læringsforløp | 5.5 timer |
-| [Komme i gang med Finance and Operations-apper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan Finance and Operations-apper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i Finance and Operations-apper-karrieren er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |
+| [Komme i gang med økonomi- og driftsapper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan økonomi- og driftsapper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i karrieren din med økonomi- og driftsapper er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |
 | [Komme i gang med aktivastyring for Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Aktivastyring er en modul for håndtering av aktiva og vedlikeholdsjobber i Dynamics 365 Supply Chain Management. Med Aktivastyring kan du effektivt administrere og utføre oppgaver knyttet til administrasjon og service av mange typer utstyr i bedriften din, for eksempel maskiner, produksjonsutstyr og kjøretøyer. Aktivastyring støtter løsninger på tvers av en rekke bransjer. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |
 | [Kom i gang med Engineering Change Management-tillegget for Dynamics 365 Supply Chain Management](/learn/modules/get-started-engineering-change-management/) | Dynamics 365 Supply Chain Management gjør det mulig for ansatte og organisasjoner å få en samlet visning av beholdning, lager, produksjon, service og logistikk med forutsigbar analyse som gjør data til innsikt for å støtte bedre strategiske avgjørelser. | Gratis, selvbetjent elektronisk læringsmodul | 2 timer |
 | [Komme i gang med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunder styre sortering av ordrer frem til oppfyllelse. Ved bruk av disse funksjonene kan organisasjoner organisere ordreflyter på tvers av ulike plattformer og apper. | Gratis, selvbetjent elektronisk læringsmodul | 4 timer |
@@ -39,10 +39,10 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 ## <a name="core-platform-knowledge"></a>Kunnskap om kjerneplattform<a name="core-platform-knowledge"></a>
 
-| Innhold | beskrivelse | Formater | Lengde |
+| Innhold | Beskrivelse | Format | Lengde |
 |---------|-------------|--------|--------|
-| [Konfigurere organisasjonen i Finance and Operations-apper](/learn/paths/configure-your-organization-finance-ops/) | Som en funksjonell konsulent som arbeider med Finance and Operations-apper, må du forstå hvordan du oppretter en organisasjon for kunden. Dette læringsforløpet viser deg blant annet hvordan du konfigurerer juridiske enheter, implementerer sikkerhetsinnstillinger, tilpasser brukergrensesnittet for brukere, utformer og bygger mobilapper og implementerer vanlige integreringer. | Gratis, selvbetjent elektronisk læringsforløp | 12 timer |
-| [Konfigurere og arbeide med analyse og rapportering i Finance and Operations-apper](/learn/paths/configure-analytics-reporting-finance-operations/) | Bedriftsledere kan ta viktige avgjørelser i firmaet hvis de har nøyaktig innsikt i underliggende økonomiske data og driftsdata. En bedriftsbruker kan også konfigurere og bruke verktøyet for elektronisk rapportering uten en enkelt kodelinje, til å ta i bruk nye forskriftsmessige krav og generere forretningsdokumenter i det nødvendige formatet for å utveksle informasjon med offentlige instanser, banker og andre parter. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer |
+| [Konfigurere organisasjonen i økonomi- og driftsapper](/learn/paths/configure-your-organization-finance-ops/) | Som en funksjonell konsulent som arbeider med økonomi- og driftsapper, må du forstå hvordan du konfigurerer en organisasjon for kunden. Dette læringsforløpet viser deg blant annet hvordan du konfigurerer juridiske enheter, implementerer sikkerhetsinnstillinger, tilpasser brukergrensesnittet for brukere, utformer og bygger mobilapper og implementerer vanlige integreringer. | Gratis, selvbetjent elektronisk læringsforløp | 12 timer |
+| [Konfigurere og arbeide med analyse og rapportering i økonomi- og driftsapper](/learn/paths/configure-analytics-reporting-finance-operations/) | Bedriftsledere kan ta viktige avgjørelser i firmaet hvis de har nøyaktig innsikt i underliggende økonomiske data og driftsdata. En bedriftsbruker kan også konfigurere og bruke verktøyet for elektronisk rapportering uten en enkelt kodelinje, til å ta i bruk nye forskriftsmessige krav og generere forretningsdokumenter i det nødvendige formatet for å utveksle informasjon med offentlige instanser, banker og andre parter. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer |
 
 ## <a name="supply-chain-management"></a>Supply Chain Management<a name="supply-chain-management"></a>
 

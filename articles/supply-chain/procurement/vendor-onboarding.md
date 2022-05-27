@@ -1,7 +1,7 @@
 ---
 title: Ønske leverandører velkommen
 description: Dette emnet beskriver prosessen for å ønske nye leverandører velkommen. Det forklarer handlingene som kreves av forskjellige roller under denne prosessen.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPag
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c2950cecfaf2c8b19ed14df748810b7d6f926c53
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 396b3c4622c612fa082796080aa230a0d693ce4f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566893"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671007"
 ---
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
 
@@ -46,7 +46,7 @@ Tabellen nedenfor viser trinnene og rollene som er involvert i prosessen.
 | Administrator            | | | Opprette en bruker i Supply Chain Management og Microsoft Azure. | | | |
 | Leverandørens kontaktperson    | | | Send e-post til kontaktpersonen. | Registrer leverandørinformasjon. | | |
 
-For en rask demonstrasjon av leverandørintroduksjonsprosessen, kan du se denne korte YouTube-videoen om [hvordan du introduserer en ny leverandør i Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+For en rask demonstrasjon av velkomstprosessen for leverandører kan du se denne korte YouTube-videoen: [Introdusere en ny leverandør i Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importere forespørselen om registrering av potensiell leverandør
 

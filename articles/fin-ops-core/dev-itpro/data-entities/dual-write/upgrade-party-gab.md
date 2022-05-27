@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407801"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688382"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Oppgrader til parten og den globale adressebokmodellen
 
@@ -281,7 +281,7 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
     ![Kjøre malene for postadresse for part og elektronisk adresse for part.](media/ADF-7.png)
 
-10. Hvis du vil oppdatere Finance and Operations-appen med disse dataene, må du konvertere .csv-filene til en Excel-arbeidsbok og [importere den til Finance and Operations-appen](/data-entities/data-import-export-job). Hvis CSV-import fungerer for deg, kan du også importere CSV-filene direkte. Dette kan ta noen timer å fullføre denne prosessen basert på volumet.
+10. Hvis du vil oppdatere Finance and Operations-appen med disse dataene, må du konvertere .csv-filene til en Excel-arbeidsbok og [importere den til Finance and Operations-appen](../data-import-export-job.md). Hvis CSV-import fungerer for deg, kan du også importere CSV-filene direkte. Dette kan ta noen timer å fullføre denne prosessen basert på volumet.
 
     ![Vellykket importering.](media/ADF-8.png)
 
