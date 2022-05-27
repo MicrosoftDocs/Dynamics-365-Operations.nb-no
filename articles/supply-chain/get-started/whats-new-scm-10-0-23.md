@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 876f5a5f8ebf77a65ba3aa6271a2957b7dc2cb96
-ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
+ms.openlocfilehash: 86e33296fd8631082e47bf6814d8e5e716d9fa1b
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8570485"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691477"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 
@@ -75,7 +75,9 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. Disse emn
 | Lagerstyring | [Globale mobilenhetsparametere](../warehousing/mobile-device-parameters.md) |
 | Lagerstyring | [Forankring](../warehousing/anchoring.md) |
 | Salg og markedsføring | Konsernintern handel er nå beskrevet i detalj, og starter med [Definere konsernintern handel](../sales-marketing/intercompany-trade-set-up.md) og beslektede emner. |
+| Salg og markedsføring | [Forbedringer av ytelse for opprydding i salgshistorikk](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
 | Beholdningsstyring | Dokumentasjonen for lagersynlighet har blitt utvidet og oppdatert, fra og med [Oversikt over tillegget for lagersynlighet](../inventory/inventory-visibility.md) og relaterte emner. |
+| Lagerstyring | [Brukerkontoer for mobilenhet](../warehousing/mobile-device-work-users.md) |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

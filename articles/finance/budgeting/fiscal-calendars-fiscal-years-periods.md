@@ -1,6 +1,6 @@
 ---
 title: Regnskapskalendere, regnskapsår og perioder
-description: Denne artikkelen omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
+description: Dette emnet omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
 author: aprilolson
 ms.date: 03/05/2019
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FiscalCalendars
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 25851
 ms.assetid: a968a5e5-585e-4389-aa4e-c885a7e23413
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87d06e9de2e4e360e92ed350dbad6350744e69ed79a30d2956ab598fdc8a9821
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d50db3a96d6267f59dd5a99c039dd8fc8b44079a
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734568"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717397"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Regnskapskalendere, regnskapsår og perioder
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
+Dette emnet omhandler økonomisk kalendere, regnskapsår og perioder og hvordan du bruker dem for juridiske enheter, aktiva og budsjettering.
 
 Økonomiske kalendere gir et rammeverk for den økonomiske aktiviteten i en organisasjon. Hver regnskapskalender inneholder ett eller flere regnskapsår, og hvert regnskapsår inneholder flere perioder. Økonomiske kalendere kan følge kalenderåret fra 1. januar til 31. desember, eller den kan være basert på datoer du velger. Noen organisasjoner velger for eksempel en økonomisk kalender som starter 1. juli ett år og slutter 30. juni det påfølgende året. 
 

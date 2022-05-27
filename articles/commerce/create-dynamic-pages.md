@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3de589e908b20a90ba32fc49f1b987066283aafacfb4b879124b4f0677b34301
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747679"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694346"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Opprette dynamiske e-handelssider basert på URL-parametere
 
@@ -30,7 +30,7 @@ Dette emnet beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynami
 
 En e-handelsside kan konfigureres til å ha forskjellig innhold, basert på et segment i URL-banen. Derfor kalles siden en dynamisk side. Segmentet brukes som en parameter for å hente sideinnholdet. Det vil for eksempel opprettes en side med navnet **blogg\_fremviser** som knyttes til URL-adressen `https://fabrikam.com/blog`. Denne siden kan deretter brukes til å vise forskjellig innhold, basert på det siste segmentet i URL-banen. Eksempelvis er det siste segmentet i URL-adressen `https://fabrikam.com/blog/article-1` **artikkel-1**.
 
-Separate egendefinerte sider som overstyrer den dynamiske siden, kan også knyttes til segmenter i URL-banen. Det vil for eksempel opprettes en side med navnet **blogg\_sammendrag** som knyttes til URL-adressen `https://fabrikam.com/blog/about-this-blog`. Når denne URL-adressen forespørres, returneres **blogg\_sammendrag**-siden som er knyttet til paramenteren **/about-this-blog** i stedet for siden **blogg\_fremviser**.
+Separate egendefinerte sider som overstyrer den dynamiske siden, kan også knyttes til segmenter i URL-banen. Det vil for eksempel opprettes en side med navnet **blogg\_sammendrag** som knyttes til URL-adressen `https://fabrikam.com/blog/about-this-blog`. Når denne URL-adressen forespørres, returneres **blogg\_sammendrag**-siden som er knyttet til parameteren **/about-this-blog** i stedet for siden **blogg\_fremviser**.
 
 > [!NOTE]
 > Funksjonaliteten for mottak, henting og visning av dynamisk sideinnhold implementeres ved hjelp av en egendefinert modul. Hvis du vil ha mer informasjon, kan du se [Utvidelsesmulighet for Internett-kanal](e-commerce-extensibility/overview.md).

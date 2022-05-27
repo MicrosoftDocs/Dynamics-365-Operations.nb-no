@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerTransSettlement, LedgerTrialBalanceListPage, LedgerTrialBalanceListPageBalanceParms, LedgerTransAccount, LedgerTransSettled
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711e2f445e043dc74cba0ee11f1ab2dc22215ff30f495e06dce1f6f3ab4a0a09
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a871e379826626edbad2434b11281fce5e29e14e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723805"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717313"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Utligne transaksjoner mellom finanskontoer
 
@@ -28,22 +28,22 @@ Denne fremgangsmåten viser hvordan du utligner transaksjoner mellom finanskonto
 
 
 ## <a name="settle-transaction-between-ledger-accounts"></a>Utligne transaksjon mellom finanskontoer
-1. Gå til Økonomimodul > Periodiske oppgaver > Utligninger.
+1. Gå til **Økonomimodul > Periodiske oppgaver > Utligninger**.
 2. Finn transaksjonen som du vil utligne, i listen.
    > [!NOTE]
    > Saldobeløpet må være null.  
-3. Klikk Inkluder.
-4. Klikk Godta.
+3. Klikk på **Inkluder**.
+4. Klikk på **Godta**.
 
 ## <a name="cancel-a-ledger-settlement"></a>Avbryte en utligning
 
-1. Gå til Økonomimodul > Forespørsler og rapporter > Råbalanse.
-2. Klikk Parametre for å åpne nedtrekksdialogskjemaet.
-3. Klikk Oppdater.
+1. Gå til **Økonomimodul > Forespørsler og rapporter > Råbalanse**.
+2. Klikk på **Parametere** for å åpne nedtrekksdialogen.
+3. Klikk på **Oppdater**.
 4. Finn kontoen som har den utlignede transaksjonen, i listen.
-5. Klikk Alle transaksjoner.
+5. Klikk på **Alle transaksjoner**.
 6. Bruk et filter til enkelt å finne transaksjonen i listen.
-7. Klikk Utligninger.
+7. Klikk på **Utligninger**.
 8. Merk den valgte raden i listen.
 
 

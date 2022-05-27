@@ -1,24 +1,24 @@
 ---
 title: Konfigurere parametere for arbeidsområde for kostnadskontroll
 description: Bruk denne fremgangsmåten til å konfigurere kostnadskontrollarbeidsområdet slik at ledere på ulike nivåer i en organisasjon kan få innsikt i sin kostobjekter, for eksempel kostsentre og produktgrupper.
-author: ShylaThompson
+author: kfend
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ecc775019445bbe97dd5a0e9198b9c605b1c65322006d912a95a5bb1fbdf879
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c38b6f2664426513ea46b16b4cd54d69d71d1399
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766941"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710564"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurere parametere for arbeidsområde for kostnadskontroll
 

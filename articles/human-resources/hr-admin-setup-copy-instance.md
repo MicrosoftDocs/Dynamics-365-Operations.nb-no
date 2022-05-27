@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 04987f18542ff331124f5224e4b1240672874e83
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533971"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692429"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
 
@@ -70,7 +69,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
 4. I oppgaveruten **Kopier en forekomst**, velger du forekomsten som skal overskrives, og deretter velger du **Kopier**. Vent til verdien i feltet **Kopier status** er oppdatert til **Fullført**.
 
-   ![[Velg forekomst som skal overskrives.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Velg forekomsten du vil skrive over.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Velg **Power Platform**, og logg deg på administrasjonssenteret for Microsoft Power Platform.
 

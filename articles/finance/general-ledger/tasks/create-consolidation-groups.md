@@ -13,19 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eaf48306607b27c70359e0d0faee4c92f4b82cac
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: a9ee95621f184b882ead1750d61626d184174cef
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182610"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716488"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Opprette konsolideringsgrupper og flere konsolideringskontoer
 
 [!include [banner](../../includes/banner.md)]
 
 Denne fremgangsmåten viser hvordan du oppretter en konsolideringskontogruppe og deretter legger til kontoer i gruppen. Denne prosedyren bruker demonstrasjonsdatafirmaet USMF.
-
 
 ## <a name="create-a-consolidation-account-group"></a>Opprette en konsernkontogruppe
 1. Gå til **Økonomimodul > Kontoplan > Kontoer > Konsolideringskontogrupper**.
@@ -34,14 +33,12 @@ Denne fremgangsmåten viser hvordan du oppretter en konsolideringskontogruppe og
 4. Skriv inn en verdi i **Navn**-feltet.
 
 ## <a name="add-accounts-to-consolidation-account-group"></a>Legge til kontoer i konsolideringskontogruppe
-1. Gå til Økonomimodul > Kontoplan > Kontoer > Flere konsolideringskontoer.
-2. Klikk på Ny.
-3. Klikk på rullegardinknappen i feltet Hovedkonto for å åpne oppslaget.
-4. Velg hovedkontoen som du vil tilordne, i listen.
-5. Klikk på rullegardinknappen i feltet Konsolideringskontogruppe for å åpne oppslaget.
-6. Klikk på konsolideringskontogruppen i listen.
-7. Angi en verdi i Konsolideringskonto-feltet.
-8. Skriv inn en verdi i feltet Navn på konsolideringskonto.
+1. Gå til **Økonomimodul > Kontoplan > Kontoer > Flere konsolideringskontoer**.
+2. Klikk på **Ny**.
+3. Velg hovedkontoen du vil tilordne, i listen i **Hovedkonto**-feltet.
+4. Klikk på konsolideringskontogruppen i listen i feltet **Konsolideringskontogruppe**.
+5. Angi en verdi i **Konsolideringskonto**-feltet.
+6. Skriv inn en verdi i feltet **Navn på konsolideringskonto**.
 
 
 

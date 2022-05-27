@@ -1,24 +1,24 @@
 ---
 title: Endre en anleggsmiddelgruppe
 description: Anleggsmidler må tilordnes den riktige anleggsmiddelgruppen.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 05/04/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetTable, AssetChangeGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 133998905dd2e7b4d5bfe39333e159757e908bc5aaea609fbf4b465a7f04c7bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe340a2c0ecf0287911b068d097ecdc1bf13ba90
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762097"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712376"
 ---
 # <a name="change-a-fixed-asset-group"></a>Endre en anleggsmiddelgruppe
 
@@ -27,22 +27,21 @@ ms.locfileid: "6762097"
 Anleggsmidler må tilordnes den riktige anleggsmiddelgruppen. Anleggsmiddelgruppen brukes når du:
 
  - Oppretter forespørsler og rapporter
-
  - Definerer nye anleggsmidler
-
  - Integrerer finans og posterer anleggsmiddeltransaksjoner til riktige finanskontoer
 
-Denne veiledningen bruker USMF demo firmaet.
+Demonstrasjonsfirmaet **USMF** brukes i fremgangsmåten nedenfor.
 
-1. Gå til Anleggsmidler > Anleggsmidler > Anleggsmidler.
+1. Gå til **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler**.
 2. Velg anleggsmiddelet du vil endre anleggsmiddelgruppen for.
-3. Klikk Endre anleggsmiddelgruppe.
-4. Angi eller velg en verdi i Ny gruppe-feltet.
+3. Velg **Endre anleggsmiddelgruppe**.
+4. Angi eller velg en verdi i **Ny gruppe**-feltet.
 5. Velg dette alternativet hvis du vil tilordne et anleggsmiddelnummer til det valgte anleggsmidlet.
-    * Feltet Anleggsmiddelnummer er tilgjengelig hvis du velger alternativet for Nytt anleggsmiddelnummer.   Hvis automatisk nummerering er definert for anleggsmidler, viser dette feltet det neste tilgjengelige anleggsmiddelnummeret. Du kan endre nummeret.   Hvis manuell nummerering er definert, er dette feltet tomt og du må angi det nye anleggsmiddelnummeret.     
-6. Klikk OK.
-7. Klikk Ja.
+   
+   Feltet **Anleggsmiddelnummer** er tilgjengelig hvis du velger alternativet for **Nytt anleggsmiddelnummer**. Hvis automatisk nummerering er definert for anleggsmidler, viser dette feltet det neste tilgjengelige anleggsmiddelnummeret. Du kan endre nummeret. Hvis manuell nummerering er definert, er dette feltet tomt og du må angi det nye anleggsmiddelnummeret.     
 
+6. Velg **OK**.
+7. Velg **Ja**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

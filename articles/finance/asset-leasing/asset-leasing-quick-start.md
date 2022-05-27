@@ -8,25 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
-ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.reviewer: kfend
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 72c362e651787d2ff120944925e3bc35523f0059
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982015"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710336"
 ---
 # <a name="asset-leasing-get-started"></a>Komme i gang med leasing av aktiva
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjonen for leasing av aktiva og går gjennom fremgangsmåten for å opprette leasing av aktiva og vise informasjon for leasingavtalene. Emnet definerer også terminologien som brukes i brukergrensesnittet og i dokumentasjonen. Leasing av aktiva er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leasede aktiva i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Leasing av aktiva registrerer og behandler informasjon om leasing og beregner journaloppføringer gjennom livssyklusen til leasingen fra innledende gjenkjenning, månedlige journaloppføringer, til skader og avslutning av leasingen. Leasing av aktiva integreres sømløst med andre komponenter i Dynamics 365 Finance, inkludert anleggsmidler, leverandører og økonomimodulen.
+Dette emnet beskriver funksjonen for leasing av aktiva og går gjennom fremgangsmåten for å opprette leasing av aktiva og vise informasjon for leasingavtalene. Emnet definerer også terminologien som brukes i brukergrensesnittet og i dokumentasjonen. Aktivaleie er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leide eiendeler i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Leasing av aktiva registrerer og behandler informasjon om leasing og beregner journaloppføringer gjennom livssyklusen til leasingen fra innledende gjenkjenning, månedlige journaloppføringer, til skader og avslutning av leasingen. Leasing av aktiva integreres sømløst med andre komponenter i Dynamics 365 Finance, inkludert anleggsmidler, leverandører og økonomimodulen.
 
 Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I arbeidsområdet **Funksjonsbehandling** finner og velger du funksjonen **Aktivaleie**, og deretter klikker du på knappen **Aktiver nå**.
 

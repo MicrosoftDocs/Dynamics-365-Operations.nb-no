@@ -1,6 +1,6 @@
 ---
 title: Konfigurere det mobile arbeidsområdet Aktivastyring
-description: Dette emnet beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og mobilappen Finance and Operations (Dynamics 365) slik at de kan kjøre et mobilt arbeidsområde for aktivastyring som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
+description: Dette emnet beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og mobilappen Finance and Operations (Dynamics 365), slik at de kan kjøre et mobilt arbeidsområde for aktivastyring som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -8,23 +8,22 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5d628f99d4fc6788ddb38590c65decb871d49f93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572199"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693507"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurere det mobile arbeidsområdet Aktivastyring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og mobilappen Finance and Operations (Dynamics 365) slik at de kan kjøre et mobilt arbeidsområde for **Aktivastyring** som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
+Dette emnet beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og mobilappen Finance and Operations (Dynamics 365), slik at de kan kjøre et mobilt arbeidsområde for **Aktivastyring** som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Konfigurere vedlikeholdspersoner som brukere i Supply Chain Management
 
@@ -53,7 +52,7 @@ Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i mobilappen Finan
 
 ## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Installere og konfigurere mobilappen Finance and Operations (Dynamics 365)
 
-1. Gå til en av følgende appbutikker for å installere **Microsoft Finance and Operations (Dynamics 365)** på mobilenheten:
+1. Gå til en av følgende appbutikker for å installere appen **Microsoft Finance and Operations (Dynamics 365)** på mobilenheten:
 
     - [For Google Android-enheter](https://go.microsoft.com/fwlink/?linkid=850662)
     - [For Apple IOS-enheter](https://go.microsoft.com/fwlink/?linkid=850663)

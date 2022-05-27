@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722773"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716416"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for skannede dokumenter
 
@@ -58,7 +58,7 @@ En datapakke er arbeidsenheten som må sendes, slik at fakturahoder, fakturalinj
 
 Dokumentvedlegg for leverandørfaktura er en ny dataenhet som lanseres som en del av denne funksjonen. Enheten for leverandørfakturahode er blitt endret slik at den støtter vedlegg. Enheten for leverandørfakturalinje er ikke endret for denne funksjonen.
 
-Hvis du vil ha mer informasjon om datapakker, kan du se [Oversikt over databehandling](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Hvis du vil ha informasjon om hvordan du oppretter datapakker ved hjelp av arbeidsområdet for databehandling, kan du se [Behandle og bruke datapakker i løsningen for Dynamics 365 Finance and Operations-apper](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Hvis du vil ha mer informasjon om datapakker, kan du se [Oversikt over databehandling](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Hvis du vil ha informasjon om hvordan du oppretter datapakker ved hjelp av arbeidsområdet for databehandling, kan du se [Behandle og bruke datapakker i løsningen for økonomi- og driftsapper for Dynamics 365](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Bruk følgende fremgangsmåte for å raskt generere testdata som inkluderer fakturaer og vedlegg.
 

@@ -1,6 +1,6 @@
 ---
 title: Utligne en delvis leverandørbetaling før rabattdatoen og en endelige betaling etter rabattdatoen
-description: Denne artikkelen veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
+description: Dette emnet veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
 author: abruer
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 693339929bbdbc960afc2a5e63b3a3864bfd3ca19cd2dbc992de776836b17e50
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7331b4b2ad48cfa380497336d4ac22c8723568b5
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737143"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716754"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen og en endelige betaling etter rabattdatoen
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
+Dette emnet veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
 
 Fabrikam kjøper varer fra leverandøren 3057. Fabrikam får en kontantrabatt på 1 prosent hvis fakturaen er betalt innen 14 dager. Fakturaer må betales innen 30 dager. Leverandøren lar også Fabrikam få kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Leverandørparametere**.
 

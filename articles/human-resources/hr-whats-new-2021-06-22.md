@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 897c25df96017c5be1ae789027d178ca6b3ccc0410b4f65c7d2557b39e840134
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735357"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694431"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 22. juni 2021
 
@@ -83,7 +82,7 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 
 | Funksjon | Detaljer |
 | --- | --- |
-| Platform update 10.0.19 (43) | Plattformoppdatering 10.0.19 planlegges å rulle ut med serviceversjon 28. juni 2021. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.19 av Finance and Operations-apper (juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Platform update 10.0.19 (43) | Plattformoppdatering 10.0.19 planlegges å rulle ut med serviceversjon 28. juni 2021. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.19 av økonomi- og driftsapper (juni 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
 |  Arbeidserfaring-visning veksler | Ved hjelp av denne funksjonen kan du bruke forskjellige datoer til å beregne arbeidserfaring som vises i skjemaet **Strømlinjeformet ansattoppføring** og i skjemaet **Personer**.  Dette vil være tilgjengelig i parametere for Human Resources. |
 |  Aktivere fraværsbehandling for å administrere permisjon | [Aktivere fraværsbehandling for å administrere permisjon](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Obligatoriske vedlegg for bestemte permisjonstyper | Med denne funksjonen kan administratorer legge til mandatvedlegg når permisjonsforespørsler sendes for bestemte permisjonstyper. |

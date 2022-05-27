@@ -2,20 +2,20 @@
 title: Separert programiverksettingspakke med dobbel skriving
 description: Pakke for programiverksetting for dobbel skriving er ikke lenger en enkeltpakke, men er delt inn i mindre pakker. Dette emnet beskriver løsninger og kart som hver pakke inneholder, og avhengigheten til andre pakker.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063268"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716559"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separert programiverksettingspakke med dobbel skriving
 
@@ -26,19 +26,19 @@ ms.locfileid: "8063268"
 Tidligere var pakken for programiverksetting for dobbel skriving var en enkelt pakke som inneholder følgende løsninger:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance og Operations-fellesanker
-- Enhetstilordninger for dobbel skriving for Dynamics 365 Finance og Operations
+- Dynamics 365 Finance and Operations-fellesanker
+- Enhetstilordninger for dobbel skriving for Dynamics 365 Finance and Operations
 - Aktivabehandlingsappen for Dynamics 365
 - Aktivabehandling for Dynamics 365
 - HCM Felles
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance og Operations-felles
+- Dynamics 365 Finance and Operations-felles
 - Dynamics 365 Company
 - Valutakurser
 - Field Service Common
 
-Fordi det var en enkelt pakke, opprettet denne pakken en alt eller ingenting-situasjon for kunder. Microsoft har imidlertid nå delt det inn i mindre pakker. Derfor kan kunden velge bare pakkene for løsningene de trenger. Hvis du for eksempel er Microsoft Dynamics 365 Supply Chain Management-kunde og ikke krever integrering med Dynamics 365 Human Resources, notater og aktivabehandling, kan du utelate disse løsningene fra løsningene som er installert. Fordi de underliggende løsningsnavnene, publiserings- og kartversjonene forblir like, er denne endringen ikke-brytende. Eksisterende installasjoner oppgraderes.
+Fordi det var en enkelt pakke, opprettet denne pakken en alt eller ingenting-situasjon for kunder. Microsoft har imidlertid nå delt det inn i mindre pakker. Derfor kan kunder bare velge pakkene for løsningene de trenger. Hvis du for eksempel er Microsoft Dynamics 365 Supply Chain Management-kunde og ikke krever integrering med Dynamics 365 Human Resources, notater og aktivabehandling, kan du utelate disse løsningene fra løsningene som er installert. Fordi de underliggende løsningsnavnene, publiserings- og kartversjonene forblir like, er denne endringen ikke-brytende. Eksisterende installasjoner oppgraderes.
 
 ![Separat pakke.](media/separated-package-1.png)
 
@@ -51,7 +51,7 @@ Med programkjernepakken for dobbel skriving kan brukere installere og konfigurer
 | Unikt navn                           | Vis navn                               |
 |---------------------------------------|--------------------------------------------|
 | Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance og Operations-felles |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance and Operations-felles |
 | CurrencyExchangeRates                 | Valutakurser                    |
 | msdyn_DualWriteAppCoreMaps            | Enhetstilordninger for programkjerne for dobbel skriving   |
 | msdyn_DualWriteAppCoreAnchor          | Programkjerneanker for dobbel skriving        |
@@ -186,14 +186,14 @@ Forsyningskjedepakken for dobbel skriving kan være avhengig av følgende tre pa
 
 ## <a name="dual-write-finance"></a>Finans for dobbel skriving
 
-Finanspakke for dobbel skriving inneholder løsningene og kartene som kreves for å synkronisere Dynamics 365 Finance-dataene. Det inneholder følgende fire løsninger:
+Finanspakke for dobbel skriving inneholder løsningene og tilordningene som kreves for å synkronisere Dynamics 365 Finance-dataene. Det inneholder følgende fire løsninger:
 
 | Unikt navn                            | Vis navn                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance Extended-enhetstilordninger |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance-utvidede enhetstilordninger |
 | FieldServiceCommon                     | Field Service Common                      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance Extended-anker      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance-utvidet anker      |
 
 Følgende kart er tilgjengelige i denne pakken:
 
@@ -300,3 +300,47 @@ Project Operations avhenger av følgende pakker. Derfor bør du installere disse
 - Forsyningskjedepakke for dobbel skriving
 - Aktivabehandlingspakke for dobbel skriving
 - Human Resources-pakke for dobbel skriving
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Løsninger for part med dobbel skriving og global adressebok
+
+Pakken med part med dobbel skriving og global adressebok inneholder følgende løsninger og tilordninger som kreves for å synkronisere data for part og for global adressebok. 
+
+| Unikt navn                       | Visningsnavn                            |
+|-----------------------------------|-----------------------------------------|
+| Part                             | Part                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB Extended               |
+| Dynamics365GABDualWriteEntityMaps | Enhetstilordninger for dobbel skriving for Dynamics 365 GAB |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB og part              |
+
+Følgende kart er tilgjengelige i denne pakken:
+
+| Finance and Operations-apper | Kundeengasjementsapper | 
+|-----------------------------|--------------------------|
+| CDS-parter | msdyn_parties | 
+| Postadressesteder for CDS | msdyn_postaladdresscollections | 
+| Historikk for CDS-postadresse V2 | msdyn_postaladdresses | 
+| Postadressesteder for CDS-part | msdyn_partypostaladdresses | 
+| Partskontakter V3 | msdyn_partyelectronicaddresses | 
+| Kunder V3 | kontoer | 
+| Kunder V3 | kontakter | 
+| Leverandører V2 | msdyn_vendors | 
+| Kontaktpersontitler | msdyn_salescontactpersontitles | 
+| Avsluttende hilsener | msdyn_complimentaryclosings | 
+| Hilsener | msdyn_salutations | 
+| Roller for beslutningstaking | msdyn_decisionmakingroles | 
+| Jobbfunksjoner for ansettelse | msdyn_employmentjobfunctions | 
+| Fordelsnivåer | msdyn_loyaltylevels | 
+| Typer personlige tegn | msdyn_personalcharactertypes | 
+| Kontakter V2 | msdyn_contactforparties | 
+| CDS-salgstilbudshode | tilbud | 
+| CDS-salgsordrehoder | salesorders | 
+| Salgsfakturahoder V2 | fakturaer | 
+| CDS-adresseroller | msdyn_addressroles |
+
+**Avhengighetsinformasjon**
+
+Løsningene for part med dobbel skriving og global adressebok er avhengige av følgende tre pakker. Derfor bør du installere disse pakkene før du installerer pakken med løsninger for part med dobbel skriving og global adressebok.
+
+- Programkjernepakke for dobbel skriving
+- Finanspakke for dobbel skriving
+- Forsyningskjedepakke for dobbel skriving

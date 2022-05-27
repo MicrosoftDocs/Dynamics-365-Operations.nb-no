@@ -1,24 +1,24 @@
 ---
 title: Opprette og anskaffe anleggsmidler som opprettes fra kunder
 description: Denne prosedyren går gjennom oppretting og anskaffelse av et anleggsmiddel med innkjøpsprosessen.
-author: saraschi2
+author: moaamer
 ms.date: 08/13/2019
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbac069362a15b5ab1d2dbf88a732a14a3cf709d
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 4290ced6bcf4432583cffc9122a4bba86266a559
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394664"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713620"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Opprette og anskaffe anleggsmidler som opprettes fra kunder
 

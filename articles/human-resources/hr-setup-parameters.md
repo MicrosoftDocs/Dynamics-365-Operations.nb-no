@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771441"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689417"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurere parametere for Human Resources
 
@@ -71,7 +70,7 @@ Hvis du vil ha mer informasjon om rekruttering, kan du se [Rekruttere jobbkandid
 
 ## <a name="compensation"></a>Kompensasjon
 
-Innstillingene i fanen **Kompensasjon** i Dynamics 365 Finance definerer om brukere må bekrefte at de vil lagre informasjon for en fast eller variabel kompensasjonsplan. Hvis du merker av for **Aktiver lagring av validering**, mottar brukere en melding som spør om de vil lagre posten når de lukker en kompensasjonsrelatert side. Noen av sidene i Kompensasjonsstyring lar ikke brukere slette informasjon. Ved å be brukere bekrefte at de vil lagre informasjon, kan du kunne begrense mengden av informasjon som lagres, men som ikke kan slettes senere. Hvis du fjerner merket for **Aktiver lagring av validering**, lagres poster umiddelbart, muligens før brukeren er klar. Hvis du bruker Ytelsesstyring, kan du bruke fanen **Kompensasjon** til å velge en vurderingsmodell i stedet for å bruke modellen som er tilordnet til kompensasjonsplaner ved vurdering av ytelse.
+Innstillingene i **Kompensasjon**-fanen i Dynamics 365 Finance angir om brukere må bekrefte at de vil lagre informasjon for en fast eller variabel kompensasjonsplan. Hvis du merker av for **Aktiver lagring av validering**, mottar brukere en melding som spør om de vil lagre posten når de lukker en kompensasjonsrelatert side. Noen av sidene i Kompensasjonsstyring lar ikke brukere slette informasjon. Ved å be brukere bekrefte at de vil lagre informasjon, kan du kunne begrense mengden av informasjon som lagres, men som ikke kan slettes senere. Hvis du fjerner merket for **Aktiver lagring av validering**, lagres poster umiddelbart, muligens før brukeren er klar. Hvis du bruker Ytelsesstyring, kan du bruke fanen **Kompensasjon** til å velge en vurderingsmodell i stedet for å bruke modellen som er tilordnet til kompensasjonsplaner ved vurdering av ytelse.
 
 I Human Resources kan du bruke fanen **Kompensasjon** til å velge å begrense tilgang til kompensasjonsplaner og angi en standardvaluta.
 

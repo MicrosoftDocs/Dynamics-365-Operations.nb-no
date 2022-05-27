@@ -2,7 +2,7 @@
 title: Opprett et dataintegreringsprosjekt
 description: Dette emnet forklarer hvordan du oppretter et dataintegreringsprosjekt.
 author: ShivamPandey-msft
-ms.date: 02/09/2022
+ms.date: 05/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 50f435f9d461667a1908baa529d73766085c183a
-ms.sourcegitcommit: 6526acd0300d9c5800d3d7675d54e23090d031df
+ms.openlocfilehash: 4d69ffcb6ccfcc7bae2891f2539941f7b6bbf86e
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "8107293"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722891"
 ---
 # <a name="create-a-data-integration-project"></a>Opprett et dataintegreringsprosjekt
 
@@ -28,7 +28,7 @@ ms.locfileid: "8107293"
 
 Dette emnet forklarer hvordan du oppretter et dataintegreringsprosjekt.
 
-1. Logg på Microsoft Dynamics 365 Finance.
+1. Logg deg på Microsoft Dynamics 365 Finance.
 2. Gå til **Arbeidsområder \> Databehandling**, og velg **Dataenheter**. Vent til alle dataenhetene er oppdatert før du går videre til neste trinn.
 3. Åpne [Power Apps-portalen](https://make.powerapps.com/), og følg denne fremgangsmåten:
 
@@ -55,11 +55,14 @@ Dette emnet forklarer hvordan du oppretter et dataintegreringsprosjekt.
 
 5. Åpne [Power Apps-miljøene](https://admin.powerapps.com/environments), og følg denne fremgangsmåten:  
 
-    1. Opprett dataintegrasjonsprosjekter for følgende maler ved hjelp av tilkoblingssettet du nettopp opprettet:
+    1. Opprett ett dataintegreringsprosjekt for hver av de følgende malene ved hjelp av tilkoblingssettet du nettopp opprettet:
 
         - Resultater av innsikt i kundebetaling (CDS til Fin and Ops 10.0.17+)
         - Resultater av tidsserie for kontantstrøm (CDS til Fin and Ops)
         - Resultater av tidsserie for budsjett (CDS til Fin and Ops)
+
+      > [!NOTE]
+      > Hvis du oppretter flere dataintegreringsprosjekter for hver mal, kan det oppstå feil som blokkerer oppdateringene.
 
     2. Angi den riktige planleggingen for hvert prosjekt.
 

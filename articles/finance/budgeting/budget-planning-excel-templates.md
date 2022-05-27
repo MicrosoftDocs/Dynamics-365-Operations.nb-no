@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanSetLayout
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8297548bee83d1e982f50c4e5adae748f9f40137362f4ad47ad837ea2af96c29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775176"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711983"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budsjettplanleggingsmaler for Excel
 
@@ -55,7 +55,7 @@ Du kan gå gjennom oppsettkonfigurasjonen og justere den etter behov.
 Excel-malen inneholder alle elementene fra oppsettet for budsjettplandokument, der kolonnen **Tilgjengelig i regneark** er satt til sann. Overlappende elementer er ikke tillatt i Excel-malen. Hvis oppsettet for eksempel inneholder kolonnene Forespørsel Q1, Forespørsel Q2, Forespørsel Q3 og Forespørsel Q4, og en total forespørsel-kolonne som representerer en sum av alle 4 kvartalsvise kolonnene, er bare de kvartalsvise kolonnene eller totalkolonnen tilgjengelig for bruk i Excel-malen. Excel-filen kan ikke oppdatere overlappende kolonner under oppdateringen, fordi dataene i tabellen kan bli foreldet og unøyaktige.
 
 > [!NOTE] 
-> For å unngå potensielle problemer med å vise og redigere budsjettplandata ved hjelp av Excel, bør den samme brukeren være pålogget både Microsoft Dynamics 365 Finance og Microsoft Dynamics Office-tillegget Datakobling.
+> For å unngå potensielle problemer med å vise og redigere budsjettplandata ved hjelp av Excel, bør den samme brukeren være logget på både Microsoft Dynamics 365 Finance og Microsoft Dynamics Office-tillegget Datakobling.
 
 ## <a name="add-a-header-to-budget-plan-document-template"></a>Legge til en topptekst i dokumentmalen for budsjettplan
 Hvis du vil legge til topptekstinformasjon, velger du den øverste raden i Excel-filen og setter inn tomme rader. Klikk **Utforming** i **Datakobling** for å legge til felt i Excel-filen.
@@ -79,7 +79,7 @@ Den valgte feltgruppen viser kolonnene som er tilgjengelige i malen. Klikk **For
 [![Legge til og sette inn kolonne.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Hvis du vil definere formelen, oppretter du formelen i regnearket, og deretter kopierer du den til **Utforming**-vinduet. En tabell bundet til Finance and Operations får vanligvis navnet «AXTable1». For å summere Forespørsel Q1: Forespørsel Q4 i regnearket, formelen = AxTable1\[Forespørsel Q1\]+ AxTable1\[Forespørsel Q2\]+ AxTable1\[Forespørsel Q3\]+ AxTable1\[Forespørsel Q4\].
+> Hvis du vil definere formelen, oppretter du formelen i regnearket, og deretter kopierer du den til **Utforming**-vinduet. En tabell bundet til Finance and Operations, blir vanligvis kalt "AXTable1". For å summere Forespørsel Q1: Forespørsel Q4 i regnearket, formelen = AxTable1\[Forespørsel Q1\]+ AxTable1\[Forespørsel Q2\]+ AxTable1\[Forespørsel Q3\]+ AxTable1\[Forespørsel Q4\].
 
 Gjenta disse trinnene for å sette inn **Justering**-kolonnen. Bruk formelen = AxTable1\[Total forespørsel\]\*$I$ 1 for denne kolonnen. Dette henter verdien i celle I1 og multipliserer verdiene i kolonnen **Totale forespørsel** for å beregne justeringsbeløpene.
 

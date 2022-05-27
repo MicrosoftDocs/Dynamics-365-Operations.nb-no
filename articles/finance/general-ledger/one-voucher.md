@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344064"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722499"
 ---
 # <a name="one-voucher"></a>Ett bilag
 
@@ -72,7 +72,7 @@ På grunn av problemer som kan oppstå når Ett bilag brukes, vil denne funksjon
 
 Når alle funksjonshullene er fylt, vil Microsoft kommunisere at funksjonen vil bli avskrevet. Avskrivningen vil imidlertid ikke være gyldig i minst ett år etter den gjeldende kommunikasjonen. Selv om Microsoft ikke kan gi et estimat for når Ett bilag-funksjonaliteten vil bli avskrevet, vil det sannsynligvis være minst to år før avskrivelsen finner sted. Microsofts policy er å la det være minst 12 måneder mellom kunngjøringen av avskrivningsfunksjonaliteten og den faktiske avskrivningen, slik at kunder og uavhengige programvareleverandører har tid til å reagere på endringen. En organisasjon må for eksempel kanskje oppdatere sine forretningsprosesser, enheter og integreringer.
 
-Avskrivningen av Ett bilag er en betydelig endring som vil bli kommuniseret bredt. Som et ledd i den kommunikasjonen vil Microsoft oppdatere dette emnet, postere et blogginnlegg på Microsoft Dynamics 365 Finance-bloggen, oppdatere emnet "Funksjoner som er fjernet eller avskrevet", kommunisere endringen på passende Microsoft-konferanser og så videre.
+Avskrivningen av Ett bilag er en betydelig endring som vil bli omfattende meddelt. Som et ledd i denne meddelelsen vil Microsoft oppdatere dette emnet, postere et blogginnlegg på Microsoft Dynamics 365 Finance-bloggen, oppdatere emnet «Funksjoner som er fjernet eller avskrevet», kommunisere endringen på aktuelle Microsoft-konferanser og så videre.
 
 ## <a name="why-use-one-voucher"></a>Hvorfor bruke Ett bilag?
 

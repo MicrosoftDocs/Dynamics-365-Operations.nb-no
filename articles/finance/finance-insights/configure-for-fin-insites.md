@@ -8,31 +8,31 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b9bad6445e9e77688f66c6c4186422d7a898edd7
-ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
+ms.openlocfilehash: 6ec7e6a7e616e239128281ba669c8bbbfc5e3c7a
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8051376"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710637"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurasjon for Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights kombinerer funksjonalitet fra Microsoft Dynamics 365 Finance med Dataverse, Azure og AI Builder for å gi organisasjonen kraftige prognoseverktøy. Dette emnet forklarer konfigurasjonstrinnene som gjør at systemet kan bruke funksjonene i Finance Insights. Hvis du vil fullføre prosedyrene i dette emnet, må du ha tilgang som Systemadministrator og Systemtilpasser i [administrasjonssenteret for Power Portal](https://admin.powerplatform.microsoft.com/), tilgang som Systemadministrator i Dynamics 365 Finance og tilgang til å opprette miljøer i Microsoft Dynamics Lifecycle Services (LCS).
+Finance Insights kombinerer funksjonalitet fra Microsoft Dynamics 365 Finance med Dataverse, Azure og AI Builder for å gi organisasjonen kraftige prognoseverktøy. Dette emnet forklarer konfigurasjonstrinnene som gjør at systemet kan bruke funksjonene i Finance Insights. For å kunne fullføre fremgangsmåtene i dette emnet, må du ha tilgang som Systemansvarlig og Systemtilpasser i [administrasjonssenteret for Power Portal](https://admin.powerplatform.microsoft.com/), tilgang som Systemansvarlig i Dynamics 365 Finance og tilgang til å opprette miljøer i Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!NOTE]
-> Følgende fremgangsmåter for å konfigurere Finance Insights er gyldige for Dynamics 365 Finance-versjon 10.0.21 og senere.
+> Følgende fremgangsmåter for å konfigurere Finance Insights er gyldige for Dynamics 365 Finance versjon 10.0.21 og senere.
 
-## <a name="deploy-dynamics-365-finance"></a>Klargjøre Dynamics 365 Finance
+## <a name="deploy-dynamics-365-finance"></a>Distribuere Dynamics 365 Finance
 
 Følg denne fremgangsmåten for å distribuere miljøene.
 
@@ -50,7 +50,7 @@ Azure Active Directory (Azure AD) må konfigureres slik at den kan brukes med Da
 Kontroller at følgende oppsett er fullført:
 
 - Du har **Systemadministrator** og **Systemtilpasser** tilgang i administrasjonssenteret for Power Portal.
-- En Dynamics 365 Finance eller tilsvarende lisens brukes for brukeren som installerer Finance Insights-tillegget.
+- En Dynamics 365 Finance-lisens eller tilsvarende lisens brukes for brukeren som installerer Finance Insights-tillegget.
 
 Følgende Azure AD apper er registrert i Azure AD.
 
