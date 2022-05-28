@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7654f748fb0cfc70d76718f03a235c5d4d13a908
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728037"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735471"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Tilordne dimensjonsmedlemmer for kostnadselement til et felles sett med dimensjonsmedlemmer
 
@@ -33,12 +33,12 @@ Hvis du er et globalt selskap og overholder lovbestemte regnskapsmessige krav, k
 ## <a name="map-cost-element-dimension-members-to-a-common-format"></a>Tilordne medlemmer av kostnadelementdimensjoner til et vanlig format
 Eksemplet nedenfor viser hvordan du, som kostnadskontrollør, kan opprette en ny kostnadselementdimensjon i kostnadsregnskap som tilordner medlemmer av kostnadelementdimensjoner fra den amerikanske og franske kontoplanstrukturen til et felles sett med medlemmer av kostnadelementdimensjoner. Du kan deretter bruke det felles settet med medlemmer av kostnadelementdimensjoner til å analysere kostnadsdata fra de to juridiske enhetene i en finanskonto for kostnadsregnskap.
 
-| Kilde: amerikansk kontoplanstruktur                                          | Kilde: fransk kontoplanstruktur                                          | Nytt felles sett med medlemmer av kostnadelementdimensjoner                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Kilde: amerikansk kontoplanstruktur          | Kilde: fransk kontoplanstruktur           | Nytt felles sett med medlemmer av kostnadelementdimensjoner                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | Importerte medlemmer av kostnadelementdimensjoner fra den amerikanske kontoplanen | Importerte medlemmer av kostnadelementdimensjoner fra den franske kontoplanen | Tilordning av amerikanske og fransk medlemmer av kostnadselementdimensjoner til et felles sett |
-| 5001: Salg                                                           | 5001: Salg og markedsføring                                               | 5000: Salg og markedsføring                                             |
-| 5030: Reklame                                                     | 6390: Lagerinnkjøp\*                                                    | 7000: Renholdsutgifter                                                 |
-| 7001: Renholdsutgifter                                               | 7001: Reiseutgifter                                                      | 7001: Reiseutgifter                                                   |
+| 5001: Salg                   | 5001: Salg og markedsføring                      | 5000: Salg og markedsføring                               |
+| 5030: Reklame             | 6390: Lagerinnkjøp\*                          | 7000: Renholdsutgifter                                   |
+| 7001: Renholdsutgifter              | 7001: Reiseutgifter                     | 7001: Reiseutgifter                                                   |
 
 \*Lagerinnkjøp for franske medlem av kostnadselementdimensjon er ikke tilordnet.
 

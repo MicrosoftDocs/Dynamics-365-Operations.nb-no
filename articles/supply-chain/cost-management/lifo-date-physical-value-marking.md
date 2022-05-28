@@ -1,7 +1,7 @@
 ---
 title: LIFO-dato med fysisk verdi og merking
 description: Sist inn, først ut etter dato (LIFO-dato) er en lagermodell basert på LIFO-prinsippet. Avganger fra lageret utlignes mot de siste mottakene til lageret, basert på datoen for lagertransaksjonen. Med LIFO-datoen, hvis det ikke forekommer et mottak før avgangen, utlignes avgangen mot alle mottak som forekommer etter datoen for avgangen. Flere avganger på samme dato kan utlignes i rekkefølgen siste avgang, siste mottak.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/21/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 51592
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f5f447724ace473bece3007a96c4b56e90a908
-ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.openlocfilehash: 8ca344e6ca81814e787046f6ece97625d035346d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/21/2022
-ms.locfileid: "8330282"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671457"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-dato med fysisk verdi og merking
 

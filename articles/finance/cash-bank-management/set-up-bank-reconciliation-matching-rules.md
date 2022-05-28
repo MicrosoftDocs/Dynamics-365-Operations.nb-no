@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BankReconciliationMatchRule, BankReconciliationMatchRuleSet
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f1ddf934c246e7c0e000a11e4e75259db3474263bfe2558dfd5782c49d0cf26
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 218b07908fe88937d3f495ded356fe4a3606110b
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746494"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727349"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Definere samsvarsregler for bankavstemming
 
@@ -28,7 +28,7 @@ ms.locfileid: "6746494"
 
 Dette emnet beskriver hvordan du konfigurerer samsvarsregler og samsvarsregelsett for å assistere bankavstemmingsprosessen. Samsvarsregler er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og bankdokumentlinjer under avstemmingsprosessen.
 
-Du kan definere samsvarsregler og samsvarsregelsett for å assistere bankavstemmingsprosessen. En samsvarsregler for avstemming er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og Dynamics 365 Finance-banktransaksjonslinjer under avstemmingsprosessen. Bruk siden **Samsvarsregler for avstemming** for å definere samsvarsregler for avstemming. Du kan definere flere samsvarsregler og deretter opprette et samsvarsregelsett for avstemming på siden **Samsvarsregelsett for avstemming**. 
+Du kan definere samsvarsregler og samsvarsregelsett for å assistere bankavstemmingsprosessen. En samsvarsregel for avstemming er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og Dynamics 365 Finance-banktransaksjonslinjer under avstemmingsprosessen. Bruk siden **Samsvarsregler for avstemming** for å definere samsvarsregler for avstemming. Du kan definere flere samsvarsregler og deretter opprette et samsvarsregelsett for avstemming på siden **Samsvarsregelsett for avstemming**. 
 
 > [!NOTE] 
 > Samsvarsregler for bankavstemming brukes hvis du avstemmer et elektronisk bankkontoutdrag ved hjelp av avansert bankavstemming. 

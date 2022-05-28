@@ -1,6 +1,6 @@
 ---
 title: Konfigurer integrering med Finance
-description: Dette emnet beskriver integreringen mellom Dynamics 365 Human Resources og Dynamics 365 Finance .
+description: Dette emnet beskriver integreringen mellom Dynamics 365 Human Resources og Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3880601b40ce8ec544a1976f7f0ac7391dab32e1
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065022"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687539"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurer integrering med Finance
 
@@ -47,7 +46,7 @@ Løsningen Human Resources til Finance tilbyr følgende typer datasynkronisering
 Integreringsløsningen krever følgende versjoner av Human Resources og Finance: 
 
 - Dynamics 365 Human Resources den Dataverse
-- Dynamics 365 Finance versjon 7.2 og senere
+- Dynamics 365 Finance versjon 7.2 og nyere
 
 ## <a name="template-and-tasks"></a>Mal og oppgaver
 
@@ -248,7 +247,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 Under integrasjonen fra Human Resources til Finance vil integreringen forsøke å finne poster basert på ID-en. Hvis postene samsvarer, blir dataene i Finance overskrevet med verdiene i Human Resources. Det kan imidlertid oppstå et problem hvis dette logisk sett er forskjellige poster, og den samme ID-en ble generert i Human Resources eller Finance basert på den respektive nummersekvensen.
 
-Dette problemet kan oppstå med **Arbeider**, som bruker **Personalnummer** til å foreta samsvaret, og **Stillinger**. Jobber bruker ikke nummersekvenser. Som et resultet, hvis den samme jobb-ID-en finnes både i Human Resources og Finance, vil Human Resources-informasjonen overskrive Dynamics 365 Finance-informasjonen. 
+Dette problemet kan oppstå med **Arbeider**, som bruker **Personalnummer** til å foreta samsvaret, og **Stillinger**. Jobber bruker ikke nummersekvenser. Resultatet er at hvis den samme jobb-ID-en finnes både i Human Resources og Finance, kommer Human Resources-informasjonen til å overskrive Dynamics 365 Finance-informasjonen. 
 
 Hvis du vil forhindre problemer med dupliserte ID-er, kan du enten legge til et prefiks i [nummersekvensen](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) eller angi et startnummer i nummersekvensen som er utenfor rekkevidden til det andre systemet. 
 

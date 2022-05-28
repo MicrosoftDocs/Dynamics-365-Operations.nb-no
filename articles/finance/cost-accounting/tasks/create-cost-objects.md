@@ -1,24 +1,24 @@
 ---
 title: 'Opprette kostnadsobjekter  '
 description: Denne fremgangsmåten viser hvordan du oppretter kostnadsobjekter ved å importere finansdimensjonen for kostsenter til kostnadsregnskap via en datakobling.
-author: ShylaThompson
+author: twheeloc
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration, CAMDimensionMember
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0215e815e3e44568fb81ab7fad9b44c219e961cb6ef68996bf43218ef817e8d9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88196ea19488cd8572bf0e7883298317c9c84696
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765058"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734137"
 ---
 # <a name="create-cost-objects"></a>Opprette kostnadsobjekter   
 
@@ -28,25 +28,25 @@ Denne fremgangsmåten viser hvordan du oppretter kostnadsobjekter ved å importe
 
 
 ## <a name="create-new-cost-objects"></a>Opprette nye kostnadsobjekter
-1. Gå til Kostnadsregnskap > Dimensjoner > Kostnadsobjektdimensjoner.
-2. Klikk Ny.
-3. Skriv inn en verdi i Navn-feltet.
-4. Angi eller velg en verdi i feltet Datakobling for dimensjonsmedlemmer.
-5. Skriv inn en verdi i feltet Beskrivelse.
-6. Klikk Lagre.
+1. Gå til **Kostnadsregnskap > Dimensjoner > Dimensjoner for kostnadsobjekt**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i **Navn**-feltet.
+4. Angi eller velg en verdi i feltet **Datakobling for dimensjonsmedlemmer**.
+5. Skriv inn en verdi i **Beskrivelse**-feltet.
+6. Klikk på **Lagre**.
 
 ## <a name="configure-the-data-connector"></a>Konfigurere datakoblingen
-1. Klikk Konfigurer dimensjonsmedlemsleverandør.
+1. Klikk på **Konfigurer dimensjonsmedlemsleverandør**.
     * Velg CostCenter for å importere CostCenter-dimensjonen i kostnadsregnskap.  
-2. Velg Kostsenter i feltet Dimensjonsnavn.
-3. Klikk OK.
+2. Velg Kostsenter i feltet **Dimensjonsnavn**.
+3. Klikk på **OK**.
 
 ## <a name="import-cost-centers"></a>Importere kostsentre
-1. Klikk Importer dimensjonsmedlemmer.
-2. Klikk OK.
+1. Klikk på **Importer dimensjonsmedlemmer**.
+2. Klikk på **OK**.
 
 ## <a name="view-the-imported-cost-centers"></a>Vise de importerte kostsentrene
-1. Klikk Vis dimensjonsmedlemmer.
+1. Klikk på **Vis dimensjonsmedlemmer**.
 
 
 

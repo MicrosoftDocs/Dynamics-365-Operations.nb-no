@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14111
 ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f83ea7a870c52884030125736809ead02b264aef1dcd654f6ff94dab0fbb2004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740008"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717537"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>Lukke økonomimodulen ved periodeslutt
 
@@ -28,7 +28,7 @@ ms.locfileid: "6740008"
 
 Dette emnet beskriver oppgavene som vanligvis utføres når du utfører en periodeavslutning for økonomimodulen. 
 
-I Økonomimodul kan du fullføre avslutningsprosedyrer for en periode eller et år. Avslutningsprosesser gjør systemet klart for en ny periode. Hvis du vil klargjøre systemet for et nytt år, må du kjøre årsavslutningsprosessen. Hver organisasjon har forskjellige prosesser og trinn som utføres på slutten av en periode. Her er noen av de valgfrie trinnene for periodeslutt:
+I Økonomimodul kan du fullføre avslutningsprosedyrer for en periode eller et år. Avslutningsprosesser gjør systemet klart for en ny periode. Hvis du vil gjøre klart for et nytt år, må du kjøre årsavslutningsprosessen. Hver organisasjon har forskjellige prosesser og trinn som utføres på slutten av en periode. Her er noen av de valgfrie trinnene for periodeslutt:
 
 -   Fullfør alle oppgavene for alle andre moduler, for eksempel Kunder, Leverandører og Beholdning.
 -   Kontroller at alle journaler er postert.
@@ -41,7 +41,7 @@ I Økonomimodul kan du fullføre avslutningsprosedyrer for en periode eller et �
 -   Generer regnskapsoppgjør ved periodeslutt ved å bruke Finansrapportering.
 -   Sett finansperioder til **På vent**, slik at ingen ytterligere postering forekommer. Du kan også begrense en periode til en bestemt brukergruppe mens periodesluttaktiviteter forekommer, slik at du oppnår bedre kontroll. Det er ikke lurt å sette perioder til **Lukket permanent**, fordi du kan ikke åpne en periode som er lukket, på nytt.
 
-Arbeidsområdet Regnskapsperiodeavslutning kan brukes til å ordne og spore oppgavene som kreves for forskjellige prosesser for periodeslutt. 
+Arbeidsområdet **Regnskapsperiodeavslutning** kan brukes til å ordne og spore oppgavene som kreves for forskjellige prosesser for periodeslutt. 
 
 
 Hvis du vil ha mer informasjon, kan du se følgende emner:

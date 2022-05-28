@@ -2,7 +2,7 @@
 title: Tilpass grensesnittet for produksjonsutførelse
 description: Dette emnet beskriver hvordan du utvider gjeldende skjemaer eller oppretter nye skjemaer og knapper i grensesnittet for produksjonsutførelse.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form: ''
 ms.technology: ''
@@ -11,13 +11,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
+ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066552"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712950"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>Tilpass grensesnittet for produksjonsutførelse
 
@@ -60,7 +60,7 @@ Når du er ferdig, vises den nye knappen (handlingen) automatisk på siden **Utf
 1. Opprett en utvidelse med navnet `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, der `getMainMenuItemsList`-metoden utvides ved å legge til det nye menyelementet i listen. Koden nedenfor viser et eksempel.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -142,6 +142,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## <a name="add-a-date-and-time-controls-to-a-form-or-dialog"></a>Legge til kontroller for dato og klokkeslett i et skjema eller en dialogboks
+
+Denne delen viser hvordan du legger til kontroller for dato og klokkeslett i et skjema eller en dialogboks. Arbeidere kan angi datoer og klokkeslett med de berøringsvennlige kontrollene for dato og klokkeslett. Skjermbildene nedenfor viser hvordan kontrollene vanligvis vises på siden. Kontrollen for klokkeslett har både 12 og 24 timers versjon. Versjonen som vises, følger innstillingssettet for brukerkontoen som grensesnittet kjører under.
+
+![Eksempel på kontroll for dato.](media/pfe-customize-date-control.png "Eksempel på kontroll for dato")
+
+![Eksempel på kontroll for klokkeslett med 12 timers klokke.](media/pfe-customize-time-control-12h.png "Eksempel på kontroll for klokkeslett med 12 timers klokke")
+
+![Eksempel på kontroll for klokkeslett med 24 timers klokke.](media/pfe-customize-time-control-24h.png "Eksempel på kontroll for klokkeslett med 24 timers klokke")
+
+Fremgangsmåten nedenfor viser et eksempel på hvordan du legger til kontroller for dato og klokkeslett i et skjema.
+
+1. Legg til en kontroller i skjemaet for hver kontroll for dato og klokkeslett som skjemaet skal inneholde. (Antall kontrollere må være lik antallet kontroller for dato og klokkeslett i skjemaet.)
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. Deklarer de nødvendige variablene (av typen `utcdatetime`).
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Opprett metoder der datetime oppdateres av datetime-kontrollerne. Eksemplet nedenfor viser én slik metode.
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. Konfigurer funksjonaliteten for hver datetime-kontroller, og koble hver kontroller til en skjemadel. Følgende eksempel viser hvordan du konfigurerer data for dato-fra- og klokkeslett-fra-kontroller. Du kan legge til lignende kode for dato-til- og klokkeslett-til-kontroller (ikke vist).
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    Hvis du bare trenger en kontroll for dato, kan du hoppe over konfigurasjon av kontroll for klokkeslett og i stedet bare konfigurere kontrollen for dato som vist i følgende eksempel:
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

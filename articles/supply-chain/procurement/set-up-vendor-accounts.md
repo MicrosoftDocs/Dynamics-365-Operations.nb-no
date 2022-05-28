@@ -1,7 +1,7 @@
 ---
 title: Definere leverandørkontoer
 description: Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9cbfd3a3c1afd794814bbbae07e1dc31eb9f181
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565477"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676981"
 ---
 # <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
@@ -63,7 +63,7 @@ Du kan opprette leverandørkontakter fra grunnen av. Du kan også kopiere inform
 
 Du kan ikke slette en kontaktpersonpost hvis det refereres til kontakten i et dokument. I stedet kan du deaktivere kontakten.  
 
-Du kan legge til leverandørkontakter i dine personlige kontakter i Microsoft 365. Du må imidlertid først definere synkronisering mellom Supply Chain Management og Microsoft 365 i både Microsoft Exchange Server-synkroniseringen og Microsoft Outlook-installasjonsveiviseren.
+Du kan legge til leverandørkontakter i dine personlige kontakter i Microsoft 365. Du må imidlertid først definere synkronisering mellom Supply Chain Management og Microsoft 365 både i Microsoft Exchange Server-synkroniseringen og installasjonsveiviseren for Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Leverandører i ulike juridiske enheter
 Hvis en leverandør er registrert for bare én juridisk enhet i organisasjonen og andre juridiske enheter må registrere samme leverandør, kan du bruke siden **Legg til leverandør i en annen juridisk enhet** for å konfigurere leverandøren til å gjøre forretninger med en annen juridisk enhet. Du må velge en leverandørgruppe, valuta, og ventestatus for leverandøren i den valgte juridiske enheten.  

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fadad34be31f6522654bc3af47a4f71695dcc5fea7f0b3e760ff26d79d88eb4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722517"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8685749"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Hva er nytt eller endret i Dynamics 365 Human Resources, 19. april 2021
 
@@ -42,7 +41,7 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 
 | Funksjon | Lanseringsplan | Dokumentasjon |
 | --- | --- | --- |
-| Platform update 10.0.17 (41) | -- | [Plattformoppdateringer for versjon 10.0.17 av Finance and Operations-apper (april 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Platform update 10.0.17 (41) | -- | [Plattformoppdateringer for versjon 10.0.17 av økonomi- og driftsapper (april 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Egendefinerte felt-støtte i fordelsbehandlingsskjemaer | [Egendefinerte felt-støtte i fordelsbehandlingsskjemaer](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Oversikt over fordelsbehandling](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Feilrettinger
@@ -78,7 +77,7 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 | Funksjon | Detaljer |
 | --- | --- |
 | Ferdigheter som angis av en leder for de ansatte, kan godkjennes automatisk av en arbeidsflyt | Kommer snart. |
-| Platform update 10.0.18 (42) | Plattformoppdatering 10.0.18 planlegges å rulle ut med serviceversjon 17. mai 2021. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.18 av Finance and Operations-apper (mai 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Platform update 10.0.18 (42) | Plattformoppdatering 10.0.18 planlegges å rulle ut med serviceversjon 17. mai 2021. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.18 av økonomi- og driftsapper (mai 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Egendefinerte felt-støtte i rettighetsregler for fordelsbehandling  | [Egendefinert felt-støtte for rettighetsbehandling](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2021-frigivelsesbølge 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).

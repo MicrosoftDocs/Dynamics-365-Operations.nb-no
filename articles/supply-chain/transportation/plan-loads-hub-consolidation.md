@@ -1,7 +1,7 @@
 ---
 title: Oversikt over å planlegge laster ved hjelp av hubkonsolidering
 description: Denne artikkelen beskriver funksjonen for konsolidering av forsendelser i en hub når du leverer varer fra forskjellige lagre til samme kunde, eller når du mottar varer fra flere leverandører på samme lager.
-author: Henrikan
+author: Weijiesa
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.custom:
 ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd47a5745719873cc491d93b9a98a7fde609fe38
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 055d7c53b771e09002c84c643c45d3da9f71aca0
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985817"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676558"
 ---
 # <a name="plan-loads-using-hub-consolidation-overview"></a>Oversikt over å planlegge laster ved hjelp av hubkonsolidering
 

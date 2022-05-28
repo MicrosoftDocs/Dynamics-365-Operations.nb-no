@@ -1,6 +1,6 @@
 ---
 title: Angi kombinasjoner av konto og dimensjon (segmentert oppføringskontroll)
-description: Denne artikkelen beskriver hvordan du registrerer konto- og dimensjonkombinasjoner eller finanskontoer. Registreringsopplevelsen kalles ofte segmentert oppføringskontroll.
+description: Dette emnet beskriver hvordan du registrerer konto- og dimensjonskombinasjoner eller finanskontoer. Registreringsopplevelsen kalles ofte segmentert oppføringskontroll.
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14071
 ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aad3c6044141c80103fe05706d77af52245432f0374223a75b2ba63b2c9a89b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 779c455cb842fda941ce716eb644b9e3020f5e90
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778924"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717509"
 ---
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Angi kombinasjoner av konto og dimensjon (segmentert oppføringskontroll)
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du registrerer konto- og dimensjonkombinasjoner eller finanskontoer. Registreringsopplevelsen kalles ofte segmentert oppføringskontroll.
+Dette emnet beskriver hvordan du registrerer konto- og dimensjonskombinasjoner eller finanskontoer. Registreringsopplevelsen kalles ofte segmentert oppføringskontroll.
 
 Brukere angir kombinasjoner av konto og dimensjon på ulike sider, for eksempel sider for økonomijournaler, budsjettering og posteringsdefinisjoner. De gyldige kombinasjonene av konto og dimensjon avhenger av kontostrukturene som tilordnes finans, og de avanserte reglene som er tilordnet kontostrukturene. Når brukere angir en kombinasjon, kan de skrive inn verdiene manuelt eller bruke en omfattende oppslagsfunksjon. Når du angir feltet, kan du begynne å skrive inn, så søkes det etter verdien og beskrivelsen. Hvis du for eksempel skriver inn 180, søkes det etter alle verdier som begynner med denne nummerkombinasjonen. Eller du kan skrive inn kontant, så søkes det etter en verdi som har en beskrivelse som begynner med kontant. Du kan også bruke jokertegn, som \*kontant eller \*180 for å søke hvis verdien eller beskrivelsen inneholder søkevilkåret. 
 

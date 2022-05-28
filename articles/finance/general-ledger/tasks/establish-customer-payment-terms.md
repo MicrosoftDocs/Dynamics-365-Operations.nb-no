@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12c26cfedca3f3b0eec1a3b068184522f87ff8d103a41b81a0775bf5a35d0e03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766971"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716978"
 ---
 # <a name="establish-customer-payment-terms"></a>Opprette kundebetalingsbetingelser
 
@@ -26,7 +26,7 @@ ms.locfileid: "6766971"
 
 Dette definerer et oppsett for kontantrabatt og forfallsdato. Denne oppgaveveiledningen bruker USMF demo firmaet.
 
-1. Gå til **Navigasjonsrute > Moduler > Kunder > Betalingsoppsett > Betalingsdager**. Oppsettet for **betalingsbetingelsene** er delt for **kunder** og **leverandører**. Hvis du definerer det i modulen, vil det være tilgjengelig i den andre modulen også. For denne veiledningen har jeg definert alle betalingsbetingelsene under **Kunder**.
+1. Gå til **Navigasjonsrute > Moduler > Kunder > Betalingsoppsett > Betalingsdager**. Oppsettet for **betalingsbetingelsene** er delt for **kunder** og **leverandører**. Hvis du definerer det i modulen, vil det være tilgjengelig i den andre modulen også. Når det gjelder denne oppgaveveiledningen, er alle betalingsbetingelsene under **Kunder** definert.
 2. Klikk på **Ny**. Opprett en betalingsdag hvis betalingsbetingelsene krever en bestemt dag i uken (mandag, tirsdag osv) eller en bestemt dato i måneden (5., 10. osv). 
 3. Angi en ID i **Betalingsdag**-feltet.
 4. I **Beskrivelse**-feltet angir du en beskrivelse av betalingsdagen.

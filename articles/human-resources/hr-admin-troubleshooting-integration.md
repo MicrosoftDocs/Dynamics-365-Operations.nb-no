@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071116"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694011"
 ---
 # <a name="integration-with-finance-faq"></a>Vanlige spørsmål om integrasjon med Finance
 
@@ -34,7 +33,7 @@ Dette emnet gir svar på vanlige spørsmål som er tilknyttet hvilke data som sy
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Kan jeg redigere Dynamics 365 Talent-appbrukeren i Power Apps?
 
-Nr. Hvis du redigerer Human Resources-appbrukeren, kan integreringen mellom Human Resources og Dataverse mislykkes. Følgende tabell viser standardinnstillingene for Talent-appbrukeren.
+Nei Hvis du redigerer Human Resources-appbrukeren, kan integreringen mellom Human Resources og Dataverse mislykkes. Følgende tabell viser standardinnstillingene for Talent-appbrukeren.
 
 | Fullt navn | App-ID | Objekt-ID for Azure AD | URI for app-ID |
 | --- | --- | --- | --- |
@@ -44,7 +43,7 @@ Nr. Hvis du redigerer Human Resources-appbrukeren, kan integreringen mellom Huma
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Er alle data synkronisert eller bare noen dataenheter?
 
-Et delsett av dataene synkroniseres. For en liste over alle enheter, kan du se [Integrering med Dynamics 365 Finance](hr-admin-integration-finance.md).
+Et delsett av dataene synkroniseres. Hvis du vil ha en liste over alle enheter, kan du se [Integrering med Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ## <a name="why-dont-i-see-any-data-synced-to-dataverse"></a>Hvorfor ser jeg ingen data synkronisert til Dataverse?
 

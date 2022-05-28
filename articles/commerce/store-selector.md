@@ -3,7 +3,7 @@ title: Butikkvelgermodul
 description: Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772162"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710786"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
@@ -59,6 +59,16 @@ Hvis du vil angi bredde- og lengdegrad for en butikklokasjon i Commerce Headquar
     ![Eksempel på oppsett av breddegrad og lengdegrad for en butikk i hovedkontoret.](./media/Store-latitude-longitude.png)
 
 1. Velg **Lagre** i handlingsruten. 
+
+### <a name="hide-a-store-from-the-store-selector-module"></a>Skjule en butikk fra butikkvelgermodulen
+
+Noen butikker i en oppfyllelsesgruppe er kanskje ikke gyldige hentelokasjoner. Følg denne fremgangsmåten i Commerce Headquarters for å sikre at bare gyldige hentelokasjoner vises som alternativer i butikkvelgermodulen.
+
+1. Gå til **Detaljhandel og handel \> Handelsoppsett \> Oppfyllelsesgrupper \> Alle butikker**.
+1. I handlingsruten velger du **Rediger**.
+1. Fjern merket for **Er plukklokasjon** for hver butikk som ikke er en gyldig hentelokasjon, under **Oppsett**.
+1. Velg **Lagre** i handlingsruten.
+1. Kjør distribusjonsplanjobben 1070 **Kanalkonfigurasjon**.
 
 ## <a name="bing-maps-integration"></a>Bing Maps-integrering
 

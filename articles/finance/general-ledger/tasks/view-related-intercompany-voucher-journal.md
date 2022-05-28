@@ -2,23 +2,23 @@
 title: Vise relaterte konserninternt bilag fra journal
 description: Vinduet for det beslektede bilaget viser bilaget fra motregningsfirmaet ved postering av en konsernintern transaksjon fra økonomijournalen.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 05/5/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, SysDataAreaSelectLookup, LedgerTransVoucher, LedgerTransRelatedVouchers
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c41826986aea79206c8ec6ed045078e93a285a90042f0950fb5725c0bd850ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a2f226c9b784a687296157b995bebb761aae27b
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772785"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717285"
 ---
 # <a name="view-related-intercompany-voucher-from-journal"></a>Vise relaterte konserninternt bilag fra journal
 
@@ -28,28 +28,22 @@ Vinduet for det beslektede bilaget viser bilaget fra motregningsfirmaet ved post
 
 
 ## <a name="post-an-intercompany-journal"></a>Postere en konsernintern journal
-1. Gå til Økonomijournaler.
-2. Klikk Ny.
-3. Merk den valgte raden i listen.
-4. Skriv inn eller velg navnet på den konserninterne journalen i Navn-feltet.
-5. Klikk Linjer.
-6. Merk den valgte raden i listen.
-7. Angi de ønskede verdiene i Konto-feltet.
-8. Angi eller velg en verdi i Beskrivelse-feltet.
-9. Skriv inn en verdi i feltet Beskrivelse.
-10. Lukk siden.
-11. Angi et tall i Debet-feltet.
-12. Skriv inn eller velg motregningsfirmaet i Motregningsfirma-feltet.
-13. Angi eller velg en verdi i Motregningsfirma-feltet.
-14. Lukk siden.
-15. Angi ønskede verdier i Motkonto-feltet.
-16. Klikk Poster.
+1. Gå til **Økonomijournaler**, og klikk på **Ny**.
+2. Merk den valgte raden i listen.
+3. Skriv inn eller velg navnet på den konserninterne journalen i **Navn**-feltet.
+4. Klikk på **Linjer**, og merk den valgte raden i listen.
+5. Angi de ønskede verdiene i **Konto**-feltet.
+6. Angi eller velg en verdi i **Beskrivelse**-feltet.
+7. Lukk siden.
+8. Angi et tall i **Debet**-feltet.
+9. Skriv inn eller velg motregningsfirmaet i feltet **Motregningsfirma**.
+10. Angi ønskede verdier i **Motkonto**-feltet.
+11. Klikk på **Poster**.
 
 ## <a name="view-related-intercompany-voucher"></a>Vise relaterte konserninterne bilag
-1. Klikk Bilag.
-2. Klikk Beslektede bilag.
-3. Merk den valgte raden i listen.
-4. Klikk Bilag.
+1. Klikk på **Bilag**.
+2. Klikk på **Beslektede bilag**, og merk den valgte raden i listen.
+3. Klikk på **Bilag**.
 
 
 

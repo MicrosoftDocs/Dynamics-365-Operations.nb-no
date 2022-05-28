@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f49f8c87f628d68f2c7f355b93cdf5e0a9403251
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: edb8799f8baf7b6ed775c73a1624abe794e692a3
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883725"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711527"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>Revidere fakturaer og nøkkeldata i Leverandører
 
@@ -38,8 +38,8 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef le
 4. Klikk **OK**.
 5. Klikk **Legg til linje**.
 6. Skriv inn en verdi i **Varenummer**-feltet.
-7. Klikk **Innkjøp** i handlingsruten.
-8. Klikk **Bekreft**.
+7. Klikk på **Innkjøp** i handlingsruten.
+8. Klikk på **Bekreft**.
 
 ## <a name="post-a-product-receipt"></a>Postere en produktkvittering
 1. Klikk **Motta** i handlingsruten.
@@ -52,12 +52,12 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef le
 2. Skriv inn en verdi i **Nummer**-feltet.
 3. Klikk **Standard fra: Bestilt antall** for å åpne dialogboksen.
 4. Velg et alternativ i feltet **Standardantall for linjer**.
-5. Klikk **OK**.
-6. Klikk **Ja**.
-7. Klikk **Avstem produktkvitteringer**.
-8. Klikk **OK**.
-9. Klikk **Gå gjennom** i handlingsruten.
-10. Klikk **Samsvarende detaljer**.
+5. Klikk på **OK**.
+6. Klikk på **Ja**.
+7. Klikk på **Avstem produktkvitteringer**.
+8. Klikk på **OK**.
+9. Klikk på **Gå gjennom** i handlingsruten.
+10. Klikk på **Samsvarende detaljer**.
 
 
 

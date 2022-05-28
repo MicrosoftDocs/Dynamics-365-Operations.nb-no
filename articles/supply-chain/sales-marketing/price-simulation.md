@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d206654dcb7964ac2ed9aa9ccf7cec709e1bd38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580510"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689685"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -32,7 +32,8 @@ En prissimulering for et tilbud viser et nytt totalbeløp basert på en nytt pri
 
 En prissimulering endrer ikke prisen i tilbudet. Hvis prissimuleringen brukes på hele tilbudet, behandles den som en spesialrabatt i tilbudshodet. Hvis prissimuleringen brukes på bestemte varer, behandles den som en spesialrabatt i tilbudslinjene. Enhetssalgsprisen på tilbudslinjen som opprettes, endres ikke når prissimuleringen brukes. I stedet brukes det en rabattprosent som tilsvarer prisreduksjonen i tilbudslinjen. Når en prissimuleringen brukes, overføres enhetssalgsprisen og rabattprosenten til tilbudslinjen eller tilbudshodet.  
 
->Obs! Når du kjører en prissimulering, brukes bare gjeldende salgsvaluta til å opprette simuleringen. Når du viser totalbeløpene for tilbudet, vises det imidlertid en blanding av firmaets valuta og salgsvaluta.  
+>[!NOTE]
+>Når du kjører en prissimulering, brukes bare gjeldende salgsvaluta til å opprette simuleringen. Når du viser totalbeløpene for tilbudet, vises det imidlertid en blanding av firmaets valuta og salgsvaluta.  
 
 Tilleggsvarer som legges til tilbudslinjene, kan utløse linjerabatter eller samkjøpsrabatter. De kan også utløse sluttrabatter som endrer dekningsbidragene og dekningsgradene til tilbudslinjene og hele rabatten.  
 

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: ae453bd57217f272038decc7e40ed373f618ae03
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087223"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710229"
 ---
 # <a name="task-management"></a>Oppgavebehandling
 
@@ -57,18 +56,14 @@ Kategorien **Avlasting** inneholder en liste over ansatte som går ut av firmaet
 Kategorien **Overganger** inneholder en **Alle oppgaver**-liste som viser alle oppgaver for alle ansatte som skal endre stillinger eller som nylig har endret stillinger. Det finnes også en liste over forfalte oppgaver og en liste over oppgaver som er tilordnet den gjeldende brukeren.
 
 I alle de tre kategoriene kan HR-assistenter og -ledere utføre følgende aktiviteter:
-
-- Bruk en sjekkliste for en ansatt.
-- Oppdater statusen til en oppgave.
-- Tilordne en oppgave på nytt.
-- Oppdater forfallsdatoen for en oppgave.
+- Bruk en sjekkliste for en ansatt
+- Oppdater statusen til en oppgave
+- Tilordne en oppgave på nytt
+- Oppdater forfallsdatoen for en oppgave
 
 > [!NOTE]
 > Som standard viser kategorien **Pålasting** anstatte som ble ansatt de siste sju dagene. Hvis du vil endre denne innstillingen, går du til siden **Personalparametere** i kategorien **Generelt** i feltet **Nyansettelser** og angir tidsramme. Informasjonen i listen **Nyansettelser** kan vises i et bestemt antall dager, måneder eller år. Hvis du for eksempel vil vise listen over ansatte som ble ansatt i de siste 14 dagene, setter du **Periode**-feltet til **14** og **Enhet**-feltet til **Dager**.
->
-> På siden **Personalparametere** kan du også oppdatere datoområdet for listene over eksisterende og avsluttede ansatte som vises i kategorien **Avlasting**.
->
-> Disse innstillingene gjelder også for arbeidsområdet **Personaladministrasjon**.
+> På siden **Personalparametere** kan du også oppdatere datoområdet for listene over eksisterende og avsluttede ansatte som vises i **Avlasting**-fanen. Disse innstillingene gjelder også for arbeidsområdet **Personaladministrasjon**.
 
 ## <a name="setting-up-tasks"></a>Sette opp oppgaver
 
@@ -188,6 +183,13 @@ Du kan også bruke en sjekkliste for en ansatt ved å åpne siden for **Arbeider
 ## <a name="completing-tasks"></a>Fullføre oppgaver
 
 På siden **Ansattselvbetjening** kan en ansatt vise alle oppgaver som er tilordnet dem. For hver tildelte oppgave vises verdiene **Oppgave**, **Beskrivelse**, **Instruksjoner** og **Kontaktperson**. For hver oppgave kan den ansatte dessuten åpne den tilknyttede eksterne websiden eller den tilknyttede siden i Dynamics 365-appen.
+
+Oppgaver kan også vises på standard instrumentbord. Slik viser du oppgaver på standard instrumentbord:
+1. Gå til **Brukeralternativer – Innstillinger – Oppgavebehandling** 
+2. Velg **På** for **Vis oppgaver på standard instrumentbord**.  
+
+>[!Note] 
+>Funksjonen **Oppgavebehandling** må være aktivert i **Funksjonsbehandling** for at alternativet skal vises i **Brukeralternativer**.
 
 Oppgaver kan være merket som **Pågår**, **Avbrutt** eller **Fullført**. Hvis en oppgave er tilordnet en gruppe, merkes den som **Fullført** når én person i gruppen fullfører den.
 

@@ -9,16 +9,15 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5539d8531dc5de273d80419135c9bcc224c8e8f0
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 4bab754afa5b35c34c6e1e5087d9268321b75bd0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402624"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688888"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-functional-consultants"></a>Opplæringskatalog for funksjonskonsulenter i Dynamics 365 Commerce
 
@@ -28,11 +27,11 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 For funksjonskonsulenter viste undersøkelsene våre at alle må forstå kjerneinnholdessettet og domeneområde.
 
-Hvis du vil ha opplæring om funksjoner som deles med andre Finance and Operations-apper, kan du se [Dynamics 365 Finance-opplæringskatalogen](../../finance/get-started/learning-catalog-functional-consultant.md).
+Hvis du vil ha opplæring om funksjoner som deles med andre økonomi- og driftsapper, kan du se [Opplæringskatalog for Dynamics 365 Finance](../../finance/get-started/learning-catalog-functional-consultant.md).
 
 ## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 
-| Innhold| beskrivelse  | Formater  | Lengde  |
+| Innhold| Beskrivelse  | Format  | Lengde  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|
 | [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Denne opplæringen tar deg med på en reise som begynner med å vise deg hvordan digitale transformasjoner og funksjonaliteten i forretningsprogrammer kan forvandle virksomheten din. Vi vil beskrive hvordan Dynamics 365 Power Platform hjelper deg med å ta veloverveide avgjørelser basert på organisasjonens behov og mål, gjennom fire byggeblokker for digitale transformasjoner – moderne, enhetlig, intelligent og tilpassbar. | Gratis, selvbetjent elektronisk læringsforløp | 6.5 timer |
 | [Komme i gang med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/) | Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |

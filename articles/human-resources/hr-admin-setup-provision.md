@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625364"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710870"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -144,7 +143,7 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
 6. Skrivefunksjoner for dobbel skriving for integrering av Personale-data med Power Apps-miljøet kan bare brukes hvis alternativet **Aktiver Dynamics 365-apper** er valgt for miljøet. Se [Startside for dobbel skriving](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for å få mer informasjon om dobbel skriving.
 
     > [!NOTE]
-    > Alternativet **Aktiver Dynamics 365-apper** må være valgt når Power Apps-miljøet opprettes. Hvis alternativet ikke er valgt samtidig som klargjøringen, kan du ikke bruke dobbel skriving for å integrere data mellom Dynamics 365 Human Resources og Power Apps-miljøet, eller installere Dynamics 365-apper som Dynamics 365 Sales og Field Service i miljøet. Dette alternativet kan ikke tilbakeføres. Hvis du vil ha mer informasjon, kan du se [Noen viktige hensyn når du oppretter et nytt miljø](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform-dokumentasjonsområdet.
+    > Alternativet **Aktiver Dynamics 365-apper** må være valgt når Power Apps-miljøet opprettes. Hvis alternativet ikke er valgt samtidig som klargjøringen, kan du ikke bruke dobbel skriving for å integrere data mellom Dynamics 365 Human Resources og Power Apps-miljøet, eller installere Dynamics 365-apper som Dynamics 365 Sales og Field Service i miljøet. Dette alternativet kan ikke tilbakeføres. Hvis du vil ha mer informasjon, kan du se [Noen viktige hensyn når du oppretter et nytt miljø](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform-dokumentasjonsområdet.
 
 7. Når du har valgt det riktige miljøet som skal brukes, kan du fortsette med klargjøringsprosessen. 
 

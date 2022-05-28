@@ -1,6 +1,6 @@
 ---
 title: Behandling av generell journal
-description: Dette emnet beskriver funksjoner i Microsoft Dynamics 365 Finance som kan hjelpe med å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.
+description: Dette emnet beskriver funksjoner i Microsoft Dynamics 365 Finance som kan hjelpe å gjøre behandling av økonomijournaler enklere, og som også kan bidra til å sikre at riktige data blir registrert og intern kontroll ikke settes på spill.
 author: kweekley
 ms.date: 02/28/2022
 ms.topic: article
@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 9cfe4af0c666fb2accb6737edb2de6e0b6e7cdf1
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367886"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8720034"
 ---
 # <a name="general-journal-processing"></a>Behandling av generell journal
 

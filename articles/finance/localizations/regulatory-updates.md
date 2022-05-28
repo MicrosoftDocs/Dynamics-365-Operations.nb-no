@@ -2,7 +2,7 @@
 title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 01/20/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649136"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711921"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -29,11 +29,11 @@ Forskriftsmessige oppdateringer er funksjoner som er implementert for å støtte
 
 Microsoft arbeider for å implementere nye lovbestemte krav så tidlig som mulig. Den faktiske leveringsdatoen avhenger av kunngjøringsdatoen for loven, tilgjengeligheten til kravdetaljene fra de lokale myndighetene, tilgjengeligheten av verktøyene for validering og størrelsen og kompleksiteten i endringen.
 
-Vi planlegger å levere forskriftsmessige oppdateringer i oppdatering av én versjonstjeneste som utgis i god tid, slik at kunder kan oppdatere og være klar til iverksettingsdatoen (for forskriftsmessige transaksjonsoppdateringer) eller for første obligatoriske rapporteringsfrist (for lovbestemte oppdateringer relatert til rapportering). Kunder og partnere kan forhåndsvise de nye forskriftsmessige oppdateringene i PEAP-programmet (Preview Early Adoption Program).
+Vi planlegger å levere forskriftsmessige oppdateringer i oppdatering av én versjonstjeneste som utgis i god tid, slik at kunder kan oppdatere og være klar til iverksettingsdatoen (for forskriftsmessige transaksjonsoppdateringer) eller for første obligatoriske rapporteringsfrist (for lovbestemte oppdateringer relatert til rapportering). Kunder og partnere kan bruke en forhåndsversjon av de nye forskriftsmessige oppdateringene i forhåndsversjonspakken som tilbys for hver serviceoppdatering.
 
 I tilfelle sene kunngjøringsdatoer, forsinket tilgjengelighet for kravdetaljer eller valideringsverktøy eller svært store eller komplekse endringer kan det hende at det ikke vil være mulig å gjøre en forskriftsmessig oppdatering tilgjengelig innen datoen for generell tilgjengeligheten for en månedlig oppdatering. I så fall vil den forskriftsmessige oppdateringen bli levert som reparasjonsfiler for relevante tilgjengelige månedlige oppdateringer.
 
-Forskriftsmessige oppdateringer som utgis som en del av den månedlige oppdateringen, angis bare av utgitt versjon. Forskriftsmessige oppdateringer som leveres som hurtigreparasjoner eller som en del av en forhåndsversjon, kan identifiseres ved hjelp av henholdsvis forkortelsen HF og PEAP. 
+Forskriftsmessige oppdateringer som utgis som en del av den månedlige oppdateringen, angis bare av utgitt versjon. Forskriftsmessige oppdateringer som leveres som hurtigreparasjoner eller en del av en forhåndsversjon, kan identifiseres ved hjelp av henholdsvis forkortelsen HF og Forhåndsversjon. 
 
 For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.   
 

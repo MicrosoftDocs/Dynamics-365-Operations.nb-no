@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: aae46fa90d306355608200f96ae5cf10793c8464
-ms.sourcegitcommit: 0925b9ee0cb0df93047681a243aacc2abd404dea
+ms.openlocfilehash: 35ee857339a59391b048f920e8d6b13812909d76
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8446184"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725770"
 ---
 # <a name="revenue-recognition-overview"></a>Oversikt over inntektsføring
 
@@ -35,7 +35,7 @@ Generelt kan inntektsføringsprosessen brukes til å utføre følgende oppgaver:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
 
-Videoen [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) (vises over) er inkludert i [spillelisten for Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgjengelig på YouTube.
+Videoen [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) (vises ovenfor) er inkludert i [spillelisten for Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), som er tilgjengelig på YouTube.
 
 Funksjonen Inntektsføring gir en fleksibel ramme som lar deg definere firmaspesifikke regler for å gjenkjenne både inntektsprisen og inntektsplanen.
 
