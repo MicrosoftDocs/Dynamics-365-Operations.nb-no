@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734433"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687676"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Definer foretrukne vedlikeholdspersoner
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Under planlegging av arbeidsordrer kan du angi hvilke vedlikeholdspersoner eller hvilken arbeidsgruppe som foretrekkes til å fullføre arbeidsordren. Bruk av denne funksjonaliteten er valgfri, men den kan hjelpe deg med å velge vedlikeholdspersonen som er mest kvalifisert for å fullføre en jobb, basert på arbeiderkompetanse. Bare vedlikeholdspersoner som er tilgjengelige på planleggingstidspunktet, vil bli planlagt. Hvis et oppsett av foretrukken vedlikeholdsperson samsvarer med en arbeidsordre under planlegging, men vedlikeholdspersonen er tilordnet andre jobber, blir arbeidsordren planlagt til en annen, tilgjengelig vedlikeholdsperson.
 
@@ -51,13 +49,15 @@ Jo flere valg du gjør for den samme posten, jo mer spesifikt blir oppsettet.
 
 3. Start ved å opprette en "standard" vedlikeholdsperson eller arbeidsgruppe. Dette betyr at du bare gjør et valg i feltet **Foretrukket vedlikeholdspersongruppe** eller feltet **Foretrukket vedlikeholdsperson**. I skjermdumpen nedenfor ser du et eksempel i den første posten der "Forespørsler" er valgt som **Foretrukket vedlikeholdspersongruppe**.
 
-    [!NOTE] Standardoppsettet vil bli brukt ved arbeidsordreplanlegging hvis ingen annen, mer spesifikk kombinasjon samsvarer med innholdet i arbeidsordren.
+    > [!NOTE]
+    > Standardoppsettet vil bli brukt ved arbeidsordreplanlegging hvis ingen annen, mer spesifikk kombinasjon samsvarer med innholdet i arbeidsordren.
 
 4. Gjenta trinn 2 for å opprette en ny post. Gjør de nødvendige valgene, avhengig av detaljnivået for den foretrukne arbeideren eller arbeidsgruppen. 
 
     *Eksempel:* I skjermdumpen nedenfor i den sjette posten er vedlikeholdspersonen Shawn Richardson valgt som foretrukket arbeider. Han velges automatisk under planlegging av en arbeidsordre som inneholder aktivumet "CH-BP1-03-02" og vedlikeholdsjobbtypen "Fasilitetsvurdering" hvis han er tilgjengelig på det planlagte tidspunktet.
 
-    [!NOTE] Når en foretrukket vedlikeholdsperson velges under planlegging av arbeidsordre, går vanligvis Aktivastyring gjennom alle **Foretrukne vedlikeholdspersoner**-postene for å se etter et mulig treff, og kontrollerer alltid den mest spesifikke kombinasjonen først. Hvis det ikke blir funnet noe treff, brukes standardposten med et valg i enten feltet **Foretrukket vedlikeholdsarbeidsgruppe** eller feltet **Foretrukket vedlikeholdsperson**.
+    > [!NOTE]
+    > Når en foretrukket vedlikeholdsperson velges under planlegging av arbeidsordre, går vanligvis Aktivastyring gjennom alle **Foretrukne vedlikeholdspersoner**-postene for å se etter et mulig treff, og kontrollerer alltid den mest spesifikke kombinasjonen først. Hvis det ikke blir funnet noe treff, brukes standardposten med et valg i enten feltet **Foretrukket vedlikeholdsarbeidsgruppe** eller feltet **Foretrukket vedlikeholdsperson**.
 
 ![Figur 1.](media/02-work-order-scheduling.png)
 

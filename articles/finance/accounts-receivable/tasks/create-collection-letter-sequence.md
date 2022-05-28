@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921205"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734165"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Opprette et purreforløp
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921205"
 
 Bruk denne prosedyren til å opprette et purreforløp. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 
-1. I navigasjonsruten går du til **Moduler > Kreditt og innkreving > Oppsett > Definer purreforløp**.
+1. Gå til **Kreditt og innkreving > Oppsett > Definer purreforløp**.
 2. Klikk på **Ny**.
 3. I **Purreforløp**-feltet angir du en sekvens-ID som representerer rekkefølgen. Den brukes når du oppretter en posteringsprofil.
-4. Skriv inn en verdi i **Beskrivelse**-feltet.  Betalingsbetingelsene er valgfrie. Hvis du angir en verdi her, bruker purregebyrfakturaen disse betalingsbetingelsene i stedet for betalingsbetingelsene som er lagret med kunden.  
+4. Skriv inn en verdi i **Beskrivelse**-feltet. Betalingsbetingelsene er valgfrie. Hvis du angir en verdi her, bruker purregebyrfakturaen disse betalingsbetingelsene i stedet for betalingsbetingelsene som er lagret med kunden.  
 5. I **Purrekode**-feltet velger du koden for den første purringen du vil sende. Den første purringen opprettes i henhold til forfallsdatoen på fakturaen, verdien du angir for respittperioden i Dager-feltet på denne linjen, og annen informasjon du angir på denne linjen.  
 6. Skriv inn en verdi i **Beskrivelse**-feltet. 
 7. Standardvalutaen for gebyret er standard for juridisk enhet. Denne valutakoden kan være forskjellig fra fakturavalutaen.   
@@ -52,9 +52,9 @@ Bruk denne prosedyren til å opprette et purreforløp. Denne oppgaven bruker dem
 22. Klikk koblingen i den valgte raden i listen.
 23. Angi et nummer i feltet **Minste forfalte saldo**.
 24. Angi et tall i **Dager**-feltet.
-25. Merk av for **Blokker** for å sperre kunden for videre leveranser og fakturering. Hvis du vil oppheve blokkeringen av kontoen, velger du **Nei** i feltet Fakturering og levering på vent på Kunder-siden.  
+25. Merk av for **Blokker** for å sperre kunden for videre leveranser og fakturering. Hvis du vil oppheve blokkeringen av kontoen, velger du **Nei** i feltet **Fakturering og levering på vent** på **Kunder**-siden.  
 26. Utvid **Merknad**-hurtigfanen.
-27. Angi teksten som skal vises på purringen for valgt purrekode. Du kan oversette denne teksten til flere språk ved hjelp av Oversettelser-menyen over notat-boksen.  
+27. Angi teksten som skal vises på purringen for valgt purrekode. Du kan oversette denne teksten til flere språk ved hjelp av **Oversettelser**-menyen ovenfor notatboksen.  
 
 
 

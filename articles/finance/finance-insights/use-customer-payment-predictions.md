@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968918"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740631"
 ---
 # <a name="use-customer-payment-predictions"></a>Bruk kundebetalingsforutsigelser
 
@@ -86,10 +86,6 @@ Dataene på hurtigfanene **Kundeinnsikt** og **Kundehistorikk** bidrar til å fo
 
 Du kan vise nøyaktigheten av betalingsprediksjoner ved å gå til **Kreditt og innkrevinger \> Oppsett \> Finance insights \> Parametere for økonomisk innsikt**. I kategorien **Innsikt i kundebetaling** viser delen **Prognosemodell** nøyaktigheten til forutsigelsesmodellen som en prosent.
 
-[![Nøyaktigheten av betalingspredisjoner.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
-
 Hvis du ikke er fornøyd med nøyaktigheten, velger du koblingen **Forbedre modellnøyaktighet** for å åpne utvidelsesopplevelsen for AI Builder. I utvidelsesopplevelsen for AI Builder kan du velge eller avbryte merkingen av felter til du har valgt feltene du tror er viktigst for å forutse sannsynligheten for betaling på en nøyaktig måte. Når du er ferdig, kan du enkelt trene opp forutsigelsesmodellen igjen og publisere endringene. Den nylig opplærte forutsigelsesmodellen vil automatisk bli plukket opp for prediksjoner i Dynamics 365 Finance.
-
-[![AI Builder-utvidelsesopplevelse.](./media/ai-builder.png)](./media/ai-builder.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

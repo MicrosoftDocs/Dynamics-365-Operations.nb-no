@@ -8,21 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109866"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725912"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Feilsøke konfigurasjonsproblemer for Finance Insights
 
@@ -34,7 +34,7 @@ Dette emnet viser problemer som kan oppstå når du bruker Finance Insights-funk
 
 ### <a name="resolution"></a>Oppløsning
 
-Det kan hende at du bruker en mal for en tidligere versjon. Før frigivelsen av versjon 10.0.17, konfigurerte forhåndsversjonskundene malen **Resultater av innsikt i kundebetaling (CDS til Fin and Ops)** Dataintegrering (DI) ved å bruke enheten **Resultat av betalingsprediksjon (forhåndsversjon)**. Etter en oppgradering til 10.0.17 og senere, bør du bruke DI-malen for **Resultater av innsikt i kundebetaling (CDS til Fin and Ops 10.0.17 og senere)** til å fullføre tilordningen. Det er ikke sikkert at du kan tilordne målkolonnen for ID-mal før enhetslisten over dataadministrasjon oppdateres og enheten for **Resultat av betalingsprediksjon** vises i den. Hvis du vil oppdatere enhetslisten og vise resultatet av betalingsforutsigelsen, fullfører du trinn i både Microsoft Dynamics 365 Finance og Dataverse (tidligere kjent som Common Data Service \[CDS\]-administratorportalen).
+Det kan hende at du bruker en mal for en tidligere versjon. Før frigivelsen av versjon 10.0.17, konfigurerte forhåndsversjonskundene malen **Resultater av innsikt i kundebetaling (CDS til Fin and Ops)** Dataintegrering (DI) ved å bruke enheten **Resultat av betalingsprediksjon (forhåndsversjon)**. Etter en oppgradering til 10.0.17 og senere, bør du bruke DI-malen for **Resultater av innsikt i kundebetaling (CDS til Fin and Ops 10.0.17 og senere)** til å fullføre tilordningen. Det er ikke sikkert at du kan tilordne målkolonnen for ID-mal før enhetslisten over dataadministrasjon oppdateres og enheten for **Resultat av betalingsprediksjon** vises i den. Hvis du vil oppdatere enhetslisten og vise resultatet av betalingsforutsigelsen, fullfører du trinn i både Microsoft Dynamics 365 Finance og Dataverse (tidligere kalt Common Data Service \[CDS\]-administratorportalen).
 
 ### <a name="in-finance"></a>I Finance
 
@@ -58,7 +58,7 @@ Følg denne fremgangsmåten i [Power Platform administrasjonssenteret](https://a
 
 ### <a name="resolution"></a>Oppløsning
 
-Dynamics 365 Finance-brukere må ha en Microsoft Power Apps-brukerkonto for miljøet, og denne brukerkontoen må ha systemtilpasserrollen. Microsoft Power Apps-systemadministratoren kan opprette brukerkontoen og tilordne rollen. Deretter kan du gå til <https://make.preview.powerapps.com/>, logge deg på ved hjelp av denne brukerkontoen og prøve koblingene på nytt.
+Dynamics 365 Finance-brukere må ha en Microsoft Power Apps-brukerkonto for miljøet, og denne brukerkontoen må ha rollen Systemtilpasser. Microsoft Power Apps-systemadministratoren kan opprette brukerkontoen og tilordne rollen. Deretter kan du gå til <https://make.preview.powerapps.com/>, logge deg på ved hjelp av denne brukerkontoen og prøve koblingene på nytt.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Symptom: Hvorfor viser ikke kategorien Kontantprognose i arbeidsområdet for kontantstrømprognoser noen data?
 

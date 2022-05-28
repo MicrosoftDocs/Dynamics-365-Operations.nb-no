@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732963"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735821"
 ---
-# <a name="set-up-sales-tax-settlement-periods"></a>Definere mva-utligningsperioder
+# <a name="set-up-sales-tax-settlement-periods"></a>Definer mva-utligningsperioder
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,7 +28,7 @@ Dette emnet forklarer hvordan du definerer mva-utligningsperioder. Mva-utligning
 
 Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 
-1. I navigasjonsruten går du til **Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-utligningsperioder**.
+1. Gå til **Avgift > Indirekte avgifter > Merverdiavgift > Mva-utligningsperioder**.
 2. Velg **Ny**.
 3. Angi en verdi i feltet **Utligningsperiode**.
 4. Skriv inn en verdi i **Beskrivelse**-feltet.

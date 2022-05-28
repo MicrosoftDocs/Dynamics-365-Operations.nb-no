@@ -1,7 +1,7 @@
 ---
 title: Før du kjøper
 description: Trinnvis veiledning som kan brukes når du vurderer å kjøpe Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce.
-author: ShellyBakke
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,29 +10,29 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874590"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713283"
 ---
 # <a name="before-you-buy"></a>Før du kjøper
 
 [!include [banner](../includes/banner.md)]
 
-Ny i Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce? Vi har satt sammen trinnvis veiledning om du vurderer fremdeles eller er klar til å gjøre et kjøp.
+Har du ikke brukt Dynamics 365 Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce før? Vi har satt sammen trinnvis veiledning om du vurderer fremdeles eller er klar til å gjøre et kjøp.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trinn én: Prøve Finance and Operations gratis i 30 dager
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Trinn én: prøve ut Finance and Operations gratis i 30 dager
 
-Du kan prøve Dynamics 365 for Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dager via en enkel e-postregistrering. Prøveversjonen av Finance and Operations-apper omfatter komme i gang oppgaveveiledninger som inneholder trinnvise instruksjoner som gir deg muligheten til å vise bestemte scenarier i bruk. Produktet er tilgjengelig til å utforske og øvelsesscenarier, men ikke kan tilpasses. Demodata er inkludert for å forenkle bruken av produktet og gjøre opplevelsen gir mer mening. En påminnelse e-post sendes 3 dager før utløpsdato for prøveversjon. Få informasjon ved å [registrere deg for forhåndsversjonsabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+Du kan prøve Dynamics 365 for Finance, Dynamics 365 Supply Chain Management eller Dynamics 365 Commerce i 30 dager via en enkel e-postregistrering. Prøveversjonen av økonomi- og driftsprogrammer omfatter oppgaveveiledninger for å komme i gang med trinnvise instruksjoner som gir deg muligheten til å vise bestemte scenarioer i bruk. Produktet er tilgjengelig til å utforske og øvelsesscenarier, men ikke kan tilpasses. Demodata er inkludert for å forenkle bruken av produktet og gjøre opplevelsen gir mer mening. En påminnelse e-post sendes 3 dager før utløpsdato for prøveversjon. Få informasjon ved å [registrere deg for forhåndsversjonsabonnementer](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Trinn to: Velge et alternativ for distribusjon
 
-Nå kan du distribuere Finance and Operations-apper i skyen eller lokalt. Skydistribusjon tilbyr en ERP-tjeneste som er fullt administrert av Microsoft, mens lokale installasjoner distribueres i kundens datasenter.
+Nå kan du distribuere økonomi- og driftsprogrammer i skyen eller lokalt. Skydistribusjon tilbyr en ERP-tjeneste som er fullt administrert av Microsoft, mens lokale installasjoner distribueres i kundens datasenter.
 
 Følgende hensyn må tas når du velger lokal som distribusjonsalternativ:
 
@@ -68,7 +68,7 @@ Du må arbeide med en partner til å kjøpe Finance and Operations lokalt. Hvis 
 
 Hvis organisasjonen har 250 eller flere brukere i Dynamics 365, kan du kanskje interessert i en [volumlisenieringssavtale](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-I volumlisensiering er Finance and Operations-apper tilgjengelige gjennom:
+I volumlisensiering er økonomi- og driftsprogrammer tilgjengelig via følgende:
 
 - Enterprise-avtale
 - Abonnement på Enterprise-avtale

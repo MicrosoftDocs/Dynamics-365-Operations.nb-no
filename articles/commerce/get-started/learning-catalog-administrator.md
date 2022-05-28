@@ -9,26 +9,25 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 74d349f6c870c638ee42086e47635817366c3a1a
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 57b284663021bd60dcaf83cda2e10a319b33512a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402598"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693368"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Opplæringskatalog for Dynamics 365 Commerce-administratorer
 
 Trenger du å holde systemer og data i flyt, klargjort og sikre døgnet rundt?
 
-Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de fleste grunnleggende til de mest avanserte. Vi informerer deg hvis det finnes innhold i flere formater, slik at du kan velge opplæringsformatet som oppfyller dine behov. Denne katalogen inneholder bare funksjoner som er spesifikke for Dynamics 365 Commerce. Hvis du vil ha opplæring om funksjoner som deles med andre Finance and Operations-apper, kan du se [Dynamics 365 Finance-opplæringskatalogen](../../finance/get-started/learning-catalog-administrator.md).
+Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de fleste grunnleggende til de mest avanserte. Vi informerer deg hvis det finnes innhold i flere formater, slik at du kan velge opplæringsformatet som oppfyller dine behov. Denne katalogen inneholder bare funksjoner som er spesifikke for Dynamics 365 Commerce. Hvis du vil ha opplæring om funksjoner som deles med andre økonomi- og driftsapper, kan du se [Opplæringskatalog for Dynamics 365 Finance](../../finance/get-started/learning-catalog-administrator.md).
 
 ## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 
-| Innhold  | beskrivelse  | Formater  | Lengde    |
+| Innhold  | Beskrivelse  | Format  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Denne opplæringen tar deg med på en reise som begynner med å vise deg hvordan digitale transformasjoner og funksjonaliteten i forretningsprogrammer kan forvandle virksomheten din. Vi vil beskrive hvordan Dynamics 365 og Power Platform hjelper deg med å ta veloverveide avgjørelser basert på organisasjonens behov og mål, gjennom fire byggeblokker for digitale transformasjoner – moderne, enhetlig, intelligent og tilpassbar.| Gratis, selvbetjent elektronisk læringsforløp | 6.5 timer |
 | [Komme i gang med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)| Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |

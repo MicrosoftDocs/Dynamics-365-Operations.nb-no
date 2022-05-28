@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace, CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db587f5526e0541fc81964d510000a42a671a9bd65224e7167b9d869475c3601
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 36e94ff2cd499a827c631d6836a6c976af53dfa1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763196"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734611"
 ---
 # <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll 
 
@@ -54,7 +54,7 @@ Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering**. B
 | Kostnadsregnskapsfinans                                            | **Kostnadsregnskapsfinans** som rapporten er basert på. Verdien hentes fra feltet **Kostnadskontrollenhet**. |
 | Kostnadskontrollenhet                                                 | Verdien du velger, fastsetter kostnadsregnskapsfinansen og kostnadsobjektene som denne rapporten skal baseres på. |
 | Dimensjonshierarki for statistikk, Dimensjonshierarki for kostnadselement | En post for konfigurasjon av arbeidsområdet **Kostnadskontroll** kan rapportere ikke-monetære eller monetære verdier, men ikke i samme oppsett. Velg en verdi i feltet **Dimensjonshierarki for kostnadselement** for å rapportere monetære verdier. Velg en verdi i feltet **Dimensjonshierarki for statistikk** for å rapportere ikke-monetære verdier. Dimensjonshierarkiposten du velger, fastsetter strukturen for rapporteringen og aggregeringsnivåene.<blockquote>[!NOTE]<br>Hvis du vil vise ikke-monetære og monetære verdier ved siden av hverandre, kan du eksportere data til Microsoft Excel for innholdspakken for Microsoft Power BI.</blockquote> |
-| Dimensjonsobjekt for kostnadselement                                   | Velg dimensjonshierarkiet for kostnadsobjektdimensjonen som passer til formålet med rapportering du definerer. |
+| Dimensjonsobjekt for kostnadselement      | Velg dimensjonshierarkiet for kostnadsobjektdimensjonen som passer til formålet med rapportering du definerer. |
 | Opprinnelig budsjettversjon                                           | Velg budsjettversjons-ID-en som fungerer som det opprinnelige budsjettet i forbindelse med denne rapporten. |
 | Revidert budsjettversjon                                            | Velg budsjettversjons-ID-en som fungerer som det reviderte budsjettet i forbindelse med denne rapporten. |
 

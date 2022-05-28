@@ -7,7 +7,6 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom:
 - "221024"
 - intro-internal
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa4d90d568697526adeef52443a01c3251696bf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984752"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735730"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.  
+Ytelsesstyringsprosessen lar ansatte dokumentere og diskutere ytelsen deres med sin overordnede. Ledere kan deretter gi tilbakemelding og veiledning til ansatte.
 
 Som diagrammet nedenfor viser, er det tre sider som brukes til å administrere prosessen:
 
@@ -35,7 +34,7 @@ Som diagrammet nedenfor viser, er det tre sider som brukes til å administrere p
 -   Mål
 -   Medarbeidersamtale
 
-Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. [![Oversikt over ytelsesprosess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+Diagrammet nedenfor viser hvordan hovedkomponentene i ytelsesstyring er relatert til hverandre. <!--note from editor: This alt text should describe the relationship among the boxes so a reader with low vision will understand. This will require using the :::image type="complex"::: tag and a long description. -->[![Oversikt over ytelsesprosess.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Ytelsesjournal
 
@@ -57,7 +56,7 @@ Du kan også koble ytelsesjournalen til et eksternt webområde ved å lagre URL-
 
 ### <a name="send-feedback"></a>Send tilbakemelding
 
-Ytelsesjournalen inneholder en tilleggsfunksjon som heter **Send tilbakemelding**. Når du klikker **Send tilbakemelding**, kan du velge en ansatt og gi tilbakemelding til den ansatte via e-post. Meldingen sendes til den ansatte som mottar tilbakemeldingen, lederen til denne ansatte, den ansatte som sender tilbakemeldingen, og lederen til denne ansatte. Det opprettes en ytelsesjournaloppføring for hver person som mottar tilbakemeldingen.
+Ytelsesjournalen inneholder en tilleggsfunksjon kalt **Send tilbakemelding**. Når du velger **Send tilbakemelding**, kan du velge en ansatt og gi tilbakemelding om den ansatte via e-post. Meldingen sendes til den ansatte som tilbakemeldingen gjelder<!--note from editor: Suggested-->, lederen til den ansatte, den ansatte som sender tilbakemeldingen, og lederen til denne ansatte. Det opprettes en ytelsesjournaloppføring for hver person som mottar tilbakemeldingen.
 
 ## <a name="goals"></a>Mål
 
@@ -70,13 +69,13 @@ Et grunnleggende mål må inneholde følgende informasjon:
 -   Forventet startdato for målet
 -   Forventet fullføringsdato for målet
 
-Du kan også angi en målkategori som kan hjelpe deg med å organisere målene dine. Ledere vil også se navnet på personen som målet er tilordnet til. 
+Du kan også angi en målkategori som kan hjelpe deg med å organisere målene dine. Ledere kan også se navnet på personen som målet er tilordnet til. 
 
-Hvis du har mer detaljerte instruksjoner for et mål, kan du opprette målemner. Disse emnene inkluderer en tittel og en beskrivelse. Du kan inkludere så mange emner du vil, slik at du er sikker på at målet er klart både for ansatte og ledere. Både ansatte og ledere kan også angi kommentarer om fremdriften til målene. 
+Hvis du har mer detaljerte instruksjoner for et mål, kan du opprette målemner. Disse emnene inkluderer en tittel og en beskrivelse. Du kan inkludere så mange emner du vil, slik at du er sikker på at målet er klart både for ansatte og ledere. Både den ansatte og lederen kan også angi kommentarer om fremdriften mot målene. 
 
 Mål har ofte målbare resultater. Du kan legge til målinger for å spore målresultater og faktiske resultater. Hvis målingen er et strekkmål, kan du merke målingen ved hjelp av **Strekkmål**-alternativet. 
 
-Ytelsesjournalen inneholder aktiviteter som gir lederen mer informasjon om hvordan du oppnådde målet. Hvis du har knyttet en ytelsesjournal til målet, vises det i **Aktiviteter**-delen av dette målet. Du kan også legge til en ny ytelsesjournal fra **Ytelsesmål**-siden. Denne ytelsesjournalen kobles automatisk til målet. 
+Ytelsesjournalen inneholder beskrivelse av<!--note from editor: Suggested.--> aktiviteter som gir lederen mer informasjon om hvordan du oppnådde målet. Hvis du har knyttet en ytelsesjournal til målet, vises den i **Aktiviteter**-delen for dette målet. Du kan også legge til en ny ytelsesjournal fra **Ytelsesmål**-siden. Denne ytelsesjournalen kobles automatisk til målet. 
 
 Hvis du vil knytte et dokument til målet, for eksempel en fullførelsesattest, kan du legge det ved i **Vedlegg**-delen på **Ytelsesmål**-siden. Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument. 
 
@@ -84,17 +83,17 @@ Du kan opprette en mal fra et mål, og deretter bruke malen til å opprette nye 
 
 ## <a name="performance-reviews"></a>Ytelsesvurderinger
 
-Ytelsesvurderinger er også kjent som diskusjoner. De er fleksible nok til å støtte fortløpende tilbakemelding, utviklingsplaner og mer formelle vurderinger. Du kan raskt opprette mindre møter for to personer, for eksempel et én-til-én-møte, eller du kan lage en mer omfattende vurdering som samsvarer med vurderingsprosessen i firmaet. 
+Ytelsesvurderinger er også kjent som diskusjoner. De er nå fleksible nok til å støtte fortløpende tilbakemelding, utviklingsplaner og mer formelle vurderinger. Du kan raskt opprette mindre møter for to personer<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> eller du kan lage en mer omfattende vurdering som samsvarer med vurderingsprosessen i firmaet. 
 
-Et møte av typen én-til-én er en enkel vurdering, og krever et kort navn, en lengre beskrivelse av innholdet i møtet og datoen for møtet samt vurderingsperioden som diskuterer. Ledere vil også se navnet på personen som vurderingen opprettes for. 
+Et møte av typen én-til-én er en enkel vurdering som krever et kort navn, en lengre beskrivelse av innholdet i møtet og datoen for møtet samt vurderingsperioden som diskuteres. Ledere vil også se navnet på personen som vurderingen opprettes for. 
 
 Hvis du vil ha mer detaljerte vurderinger, kan du trekke inn aktive og fullførte mål, og angi kommentarer om dem. Alle ytelsesjournalaktiviteter og målinger som er knyttet til et mål, vil vises i vurderingen. Når vurderingen er fullført, lagres et øyeblikksbilde av målingene for å bevare historikken for disse elementene på tidspunktet for vurderingen. 
 
-Du kan også bruke **Kompetanser**-delen for å diskutere, gjennomgå og vurdere den ansattes kompetanser. Du kan legge til så mange kompetanser som du trenger, og du kan velge om kompetansen skal vurderes. 
+Du kan også bruke **Kompetanser**-delen til å diskutere, gå gjennom og vurdere den ansattes kompetanser. Du kan legge til så mange kompetanser som du trenger, og du kan velge om kompetansen skal vurderes. 
 
 Du kan opprette nye vurderinger som er basert på maler som du har opprettet. Du kan for eksempel ha en mal for én-til-én-vurderinger, utviklingsplaner eller periodiske vurderinger. Du kan velge malen når du oppretter en ny vurdering.
 
-Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på **Gjennomgang**-siden, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Muligheten til å skrive ut ytelsesgjennomganger er bare tilgjengelig i personalmiljøet. Den er ikke tilgjengelig i Dynamics 365 Finance.
@@ -105,7 +104,7 @@ Du kan inkludere mange typer informasjon i ytelsesvurderinger. Disse inkluderer 
 
 ### <a name="review-detail"></a>Vurderingsdetaljer
 
-Du kan trekke inn målene dine i vurderingsdetaljene og legge til kommentarer om dem. Du kan også konfigurere kompetanser og legge til kommentarer om dem.
+Du kan trekke inn målene dine i vurderingsdetaljene og kommentere dem. Du kan også konfigurere kompetanser og kommentere dem.<!--note from editor: Suggested, in the spirit of using the fewest words to say the same thing.-->
 
 ### <a name="measurements"></a>Mål
 
@@ -121,7 +120,7 @@ Du kan bruke en vurdering på mål eller kompetanser som er i vurderingen. Du ka
 
 ### <a name="sign-offs"></a>Godkjenninger
 
-Ansatte og/eller ledere vises i vurderingen basert på vurderingsparameterne du angir. Vurderingene kan være obligatoriske eller valgfrie. Når alle nødvendige godkjenninger er foretatt, merkes vurderingen med statusen **Fullført**.
+Ansatte og/eller ledere vises i vurderingen basert på vurderingsparameterne du angir. Vurderingene kan være obligatoriske eller valgfrie. Etter at<!--note from editor: Via Writing Style Guide.--> alle nødvendige godkjenninger er foretatt, merkes vurderingen med statusen **Fullført**.
 
 ### <a name="attachments"></a>Vedlegg
 
@@ -129,11 +128,11 @@ Du kan knytte et dokument til en vurdering i **Vedlegg**-delen på siden med **V
 
 ## <a name="workflow-for-performance-management"></a>Arbeidsflyt for ytelsesstyring
 
-Du kan bruke arbeidsflyten Vurdering av arbeider til å styre godkjenningen av en vurdering. Du kan også velge å hoppe over den automatiserte arbeidsflyten og manuelt endre statusen på vurderingen, slik at du kan opprette enklere dokumenter som én-til-én uten å måtte bruke arbeidsflytprosessen. Tilgangen til en vurdering styres av statusen på vurderingen.
+Du kan bruke arbeidsflyten Vurdering av arbeider til å styre godkjenningen av en vurdering. Du kan også velge å hoppe over den automatiserte arbeidsflyten og manuelt endre statusen på vurderingen, slik at du kan opprette enklere dokumenter som én-til-én uten å måtte bruke arbeidsflytprosessen. Tilgangen til en vurdering styres av statusen på vurderingen som følger:<!--note from editor: Suggested as an intro to the list.-->
 
-1.  Når vurderingen opprettes, får den statusen **Ikke startet**. Vurderingen kan redigeres av alle.
+1.  Når vurderingen opprettes, angis statusen **Ikke startet** for den. Vurderingen kan redigeres av alle.
 
-2.  Når den ansatte trykker **Start vurdering**-knappen, settes statusen til **Pågår** for vurderingen. Den ansatte begynner deretter å legge til innhold. Nå kan ikke lederen lenger vise vurderingsdokumentet.
+2.  Etter at den ansatte har valgt **Start vurdering**-knappen, angis **Pågår** for vurderingen. Den ansatte begynner deretter å legge til innhold. Nå kan ikke lederen lenger vise vurderingsdokumentet.
 
 3.  Den ansatte endrer statusen til **Klar til vurdering**.
 
@@ -145,17 +144,17 @@ Du kan bruke arbeidsflyten Vurdering av arbeider til å styre godkjenningen av e
 
 Arbeidsflyten Vurdering av arbeider har to elementer:
 
-1.  Godkjenn vurdering. Legg til dette elementet for å kontrollere statusendringen fra **Pågår** til **Klar til vurdering**. Endre tilordningen for å bruke lederhierarkiet der det overordnede nivået for ansattlinje = 1.
+1.  Godkjenn vurdering. Legg til dette elementet for å kontrollere statusendringen fra **Pågår** til **Klar til vurdering**. Endre tilordningen for å bruke lederhierarkiet der **Ledernivå for Employee.line = 1**.<!--note from editor: Edit assumes that this is a UI string. -->
 
-2.  Endelig vurdering. Legg til dette elementet for å kontrollere statusendringen fra **Klar til vurdering** til **Endelig vurdering**. Endre tilordningen for å bruke lederhierarkiet der ledernivå på Employee.line = 1, hvis du vil at lederen skal godkjenne den endelige gjennomgangen. Endre tilordningen til arbeidsflytbrukeren hvis du vil at den ansatte skal godkjenne den. Hvis du vil at både overordnet og ansatt skal godkjenne den, legger du til to trinn i arbeidsflyten og gjør riktig tilordning for hvert trinn i den rekkefølgen som godkjenningene skal gjøres i.
+2.  Endelig vurdering. Legg til dette elementet for å kontrollere statusendringen fra **Klar til vurdering** til **Endelig vurdering**. Endre tilordningen for å bruke lederhierarkiet der **Ledernivå for Employee.line = 1**, hvis du vil at lederen skal godkjenne den endelige gjennomgangen. Endre tilordningen til **Arbeidsflytbruker** hvis du vil at den ansatte skal godkjenne den. Hvis du vil at både overordnet og ansatt skal godkjenne den, legger du til to trinn i arbeidsflyten og gjør riktig tilordning for hvert trinn i den rekkefølgen som godkjenningene skal gjøres i.<!--note from editor: I like this, so succinct.-->
 
 ## <a name="setup"></a>Installasjon
 
-Det finnes tre sider som hjelper deg med å angi informasjon som kreves for å fullføre ytelsesprosessen: siden **Målinger**, **Kildetyper for ytelsesjournal** og **Vurderingstyper**.
+Tre sider<!--note from editor: Suggested, to avoid "there are" (via Writing Style Guide).--> hjelper deg å konfigurere informasjonen som kreves for å fullføre ytelsesprosessen: **Målinger**, **Kildetyper for ytelsesjournal** og **Vurderingstyper**.
 
 ### <a name="measurements"></a>Mål
 
-På **Målinger**-siden kan du opprette standardmålinger som skal brukes på siden for **ytelsesmål** og **vurderinger**. Du kan opprette målinger som er datoer, beløp, antall eller prosenter, eller målinger som er basert på en vurderingsmodell.
+Bruk **Målinger**-siden til å<!--note from editor: Via Writing Style Guide, https://styleguides.azurewebsites.net/Styleguide/Read?id=2700&topicid=35221--> opprette standardmålinger som skal brukes på sidene **Ytelsesmål** og **Vurderinger**. Du kan opprette målinger som er datoer, beløp, antall eller prosenter, eller målinger som er basert på en vurderingsmodell.
 
 ### <a name="performance-journal-source-types"></a>Kildetyper for ytelsesjournal
 

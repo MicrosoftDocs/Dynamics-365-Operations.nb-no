@@ -1,26 +1,26 @@
 ---
 title: Overføring av underfinans til økonomimodul
 description: Dette emnet beskriver funksjoner som er knyttet til overføring av underfinans i økonomimodulen.
-author: rcarlson
+author: RyanCCarlson2
 ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
-ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
+ms.openlocfilehash: 70a34fa1f4ee540d89ec05816e4065fb3e1df9ef
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900736"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727321"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Overføring av underfinans til økonomimodul
 
@@ -28,7 +28,7 @@ ms.locfileid: "7900736"
 
 Dette emnet beskriver funksjoner som er knyttet til reglene for overføring av bunker med underfinansjournaloppføringer.
 
-I versjon 8.1 ble det gjort endringer for å tillate overføring av regler, som avskrev **Synkron**-alternativet. Hvis du vil ha mer informasjon, kan du se [Funksjoner som er fjernet eller avskrevet for Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
+I versjon 8.1 ble det gjort endringer for å tillate overføring av regler, som avskrev **Synkron**-alternativet. Hvis du vil ha mer informasjon, kan du se [Funksjoner som er fjernet eller utgått for Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 
 Følgende alternativer er tilgjengelige for overføring av underfinansbunker:
 

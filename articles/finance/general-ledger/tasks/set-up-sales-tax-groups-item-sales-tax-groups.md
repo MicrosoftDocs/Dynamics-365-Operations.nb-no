@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c3bf881f0f11d6d21d5f2e9d3132c2bea00b982411c9c5d76ae617b00a69fda
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c461c3d3e9b073b186e68ff1b0453fafe5da80e7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739341"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734874"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Definere mva-grupper og mva-grupper for vare
 
 [!include [banner](../../includes/banner.md)]
 
-Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva-grupper for vare. Mva-grupper er grupper av mva-koder som er knyttet til kunder og leverandører. De er også knyttet til finanskontoer for transaksjoner som ikke er postert til en bestemt leverandør eller kunde.  Mva-grupper for vare er grupper av mva-koder som er knyttet til ressurser som produkter.  Merverdiavgiften som gjelder for en bestemt transaksjon, fastsettes av mva-kodene som er inkludert både i mva-gruppen og i mva-gruppen for vare for transaksjonen.  Merverdiavgift kan bare beregnes hvis en mva-gruppe og en mva-gruppe for vare er valgt for hver transaksjon det skal beregnes eller posteres merverdiavgift for.  
+Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva-grupper for vare. Mva-grupper er grupper av mva-koder som er knyttet til kunder og leverandører. De er også knyttet til finanskontoer for transaksjoner som ikke er postert til en bestemt leverandør eller kunde. Mva-grupper for vare er grupper av mva-koder som er knyttet til ressurser som produkter. Merverdiavgiften som gjelder for en bestemt transaksjon, fastsettes av mva-kodene som er inkludert både i mva-gruppen og i mva-gruppen for vare for transaksjonen. Merverdiavgift kan bare beregnes hvis en mva-gruppe og en mva-gruppe for vare er valgt for hver transaksjon det skal beregnes eller posteres merverdiavgift for.  
 
 1. Gå til **Navigasjonsrute > Moduler > Avgift > Indirekte avgifter > Merverdiavgift > Mva-grupper**.
 2. Klikk på **Ny**.

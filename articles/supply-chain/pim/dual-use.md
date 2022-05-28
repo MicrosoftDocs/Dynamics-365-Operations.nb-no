@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570759"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736040"
 ---
 # <a name="dual-use-goods"></a>Varer med to bruksområder
 
@@ -34,7 +34,7 @@ Tenk deg følgende scenario:
 2. Siden **Detaljer om frigitt produkt** for produkt X-100 angir at varen har to bruksområder. Samlet angir kode, kategori, gruppe og regime eksportkontrollklassifiseringen som produktet tilhører.
 3. Siden for **sertifikater for to bruksområder** inneholder et sertifikat for produkt X-100 når det sendes til Frankrike. Dette sertifikatet utløper 1. januar 2020.
 4. 17. juni 2020 oppretter du en salgsordre for et kundefirma som er basert i Frankrike, og ordren inkluderer produkt X-100.
-5. Når du lagrer salgsordren, finner systemet følgende informasjon:
+5. Når du bekrefter salgsordren, finner systemet følgende informasjon:
 
     1. Tar ordren med varer som har to bruksområder?
     2. Hvis ordren inneholder varer med to bruksområder, må mållandet kreve sertifikater for to bruksområder?

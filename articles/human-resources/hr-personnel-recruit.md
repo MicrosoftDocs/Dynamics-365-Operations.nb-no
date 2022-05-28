@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066606"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733992"
 ---
 # <a name="recruit-job-candidates"></a>Rekrutter jobbkandidater
 
@@ -29,7 +28,7 @@ ms.locfileid: "8066606"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dynamics 365 Human Resources hjelper deg med å administrere rekrutteringsforespørsler. Den hjelper deg også med overgangen fra jobbkandidater til ansatte på en sømløs måte. Hvis organisasjonen bruker et separat rekrutteringsprogram, kan rekrutteringsprosessen omfatte følgende trinn:
+Dynamics 365 Human Resources hjelper deg med å administrere rekrutteringsforespørsler. Den hjelper deg også med overgangen fra jobbkandidater til ansatte på en sømløs måte. Hvis organisasjonen bruker et separat rekrutteringsprogram, kan rekrutteringsprosessen omfatte følgende trinn:<!--note from editor: Should this be a numbered list? These steps do seem to follow a particular order.-->
 
 - Angi rekrutteringsforespørselen i Human Resources.
 - Motta kandidatreferanser i Human Resources fra rekrutteringsprogrammet.
@@ -38,17 +37,22 @@ Dynamics 365 Human Resources hjelper deg med å administrere rekrutteringsforesp
 Hvis du ikke bruker et eget rekrutteringsprogram, kan du også administrere kandidater manuelt i Human Resources.
 
 > [!NOTE]
-> Hvis du er administrator eller utvikler og vil integrere Human Resources med et tredjeparts rekrutteringsprogram, kan du se [Konfigurer Dataverse-integrering](hr-admin-integration-common-data-service.md) og [Konfigurer virtuelle Dataverse-tabeller](hr-admin-integration-common-data-service-virtual-entities.md)
+> Hvis du er administrator eller utvikler og vil integrere Human Resources med et tredjeparts rekrutteringsprogram, kan du gå til [Konfigurer Dataverse-integrering](hr-admin-integration-common-data-service.md) og [Konfigurer virtuelle Dataverse-tabeller](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Du kan også finne rekrutteringsintegreringsprogrammer på [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
-## <a name="enable-recruiting-requests"></a>Aktiver rekrutteringsforespørsler
+## <a name="enable-recruiting-requests-on-the-merged-infrastructure"></a>Aktivere rekrutteringsforespørsler i den sammenslåtte infrastrukturen
 
-Hvis du vil sende rekrutteringsforespørsler i Human Resources, må du først aktivere funksjonaliteten i **Delte parametere for Human Resources**.
+Hvis du vil sende inn rekrutteringsforespørsler i HR-rekruttering, må du først aktivere funksjonene **HR-brukeropplevelse** og **Administrasjon av rekrutteringsprosess**.
 
-1. I arbeidsområdet **Personaladministrasjon** velger du **Koblinger**.
-2. Under **Oppsett** velger du **delte parametere for Human Resources**.
-3. I fanen **Rekruttering**, under **Rekruttering** setter du **Aktiver rekrutteringsforespørsler** til **Ja**.
+Når funksjonene er aktivert, velger du funksjonaliteten med følgende trinn: 
+1. Gå til **Personale** > **Oppsett** > **Personalparametere**.
+2. Angi  **Nei** i feltet **Rekruttering deaktivert** i **Rekruttering**-fanen.
+3. Velg **HR-rekruttering** i rullegardinlisten **Rekrutteringserfaring**.   
+
+> [!Note] 
+> Når **HR-rekruttering** er valgt, blir **Rekrutteringsprosjekter** (gammel) skrivebeskyttet. 
+
 
 ## <a name="add-a-recruiting-request-location"></a>Legg til en rekrutteringsforespørselssted
 
@@ -60,8 +64,8 @@ Hvis organisasjonen har flere steder, kan du legge dem til slik at anmodere kan 
 
     ![Legg til en rekrutteringsforespørselssted.](./media/hr-recruit-0a-add-location.png)
 
-4. I **beskrivelsen** skriver du inn en beskrivelse for stedet.
-5. Under **Sted** velger du **Legg til**. Hvis dialogboksen **Ny adresse** vises, angir du adressen til stedet.
+4. For **Beskrivelse** skriver du inn en beskrivelse for stedet.
+5. Under **Sted** velger du **Legg til**. Hvis dialogboksen **Ny adresse** vises, angir du adressen til stedet.<!--note from editor: Please make the address in this image less plausible. Via the fictitious guidelines on CELAweb: For street addresses, you should use sequential numbers, common street names, and incorrect zip codes (e.g., 4567 Main St Buffalo, NY 98052). (See https://microsoft.sharepoint.com/sites/CELAWeb-Copyrights-Trademarks-And-Patents/SitePages/trademarks-fictitious-names.aspx)-->
 
     ![Angi adresse.](./media/hr-recruit-0b-address.png)
 
@@ -88,15 +92,15 @@ Ledere kan sende inn rekrutteringsforespørsler i Human Resources. Hvis du bruke
 
     ![Opprett detaljer fra jobb.](./media/hr-recruit-3-create-details-from-job.png)
 
-    Resten av rekrutteringsforespørselen vil bli fylt ut med standardinformasjonen for jobben du angav.
+    Resten av rekrutteringsforespørselen fylles ut med standardinformasjonen for jobben du angav.
 
 8. Under **Ekstern beskrivelse** angir du en ekstern jobbeskrivelse.
-9. Under **Stillinger** velger du **Legg til**, og deretter velger du en stilling for denne rekrutteringsforespørselen.
+9. Under **Stillinger** velger du **Legg til**, og deretter velger du en stilling for denne rekrutteringsforespørselen.<!--note from editor: In all of these images, are they approved fictitious names, or do they come from sample data included with the app?-->
 
     ![Legg til en stilling.](./media/hr-recruit-4-select-position.png)
 
 10. Under **Ferdigheter** velger du **Legg til** og velger deretter en ferdighet.
-11. Under **Krav til utdannelse** velger du **Legg til**, og deretter velger du verdier fra rullegardinlistene **Utdanning** og **Utdanningsnivå**.
+11. Under **Krav til utdannelse** velger du **Legg til**, og deretter velger du verdier fra rullegardinmenyene **Utdanning** og **Utdanningsnivå**.
 
     ![Legg til krav til utdanning.](./media/hr-recruit-5-select-educational-requirements.png)
 
@@ -174,7 +178,7 @@ Når du er klar til å ansette en kandidat, følger du denne fremgangsmåten for
 5. Velg **Fortsett** for å opprette ansattposten.
 
     > [!NOTE]
-    > Kandidatposten kan gå gjennom flere godkjenningstrinn før den blir til en ansattpost, avhengig av arbeidsflytene i organisasjonen.
+    > Kandidatposten går kanskje gjennom flere godkjenningstrinn før den blir til en ansattpost, avhengig av arbeidsflytene i organisasjonen.
 
 ## <a name="decide-not-to-hire-a-candidate"></a>Bestemme deg for ikke å ansette en kandidat
 

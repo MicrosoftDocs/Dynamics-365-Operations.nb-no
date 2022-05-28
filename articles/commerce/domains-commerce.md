@@ -2,7 +2,7 @@
 title: Domener i Dynamics 365 Commerce
 description: Dette emnet beskriver hvordan domener behandles i Microsoft Dynamics 365 Commerce.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733997"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737352"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733997"
 Dette emnet beskriver hvordan domener behandles i Microsoft Dynamics 365 Commerce.
 
 Domener er webadresser som brukes til å navigere til Dynamics 365 Commerce-områder i en nettleser. Du styrer administrasjonen av domenet med en valgt DNS-leverandør (Domain Name Server). Det refereres til domener i hele områdebyggeren i Dynamics 365 Commerce for å koordinere hvordan et område skal åpnes når det er publisert. Dette emnet omtaler hvordan domener behandles og refereres til i løpet av livssyklusen til utvikling og lansering på handelsområdet.
+
+> [!NOTE]
+> Fra og med 6. mai 2022 blir alle miljøer som opprettes i Dynamics 365 Commerce, klargjort med domenet `.dynamics365commerce.ms`, og erstatter det tidligere mønsteret `.commerce.dynamics.com`. Eksisterende miljøer som er klargjort med domenet `.commerce.dynamics.com`, fortsetter å fungere.
 
 ## <a name="provisioning-and-supported-host-names"></a>Klargjøring av og støttede vertsnavn
 
@@ -44,7 +47,7 @@ Du kan opprette en serviceforespørsel for å legge til flere domener i et milj�
 
 ## <a name="commerce-generated-urls"></a>Commerce-genererte URL-adresser
 
-Når du klargjør et Dynamics 365 Commerce-e-handelsmiljø, vil Commerce generere en URL-adresse som skal virke i miljøet. Det refereres til denne URL-adressen i områdekoblingen for e-handel som vises i LCS etter at miljøet er klargjort. En Commerce-generert URL-adresse er i formatet `https://<e-commerce tenant name>.commerce.dynamics.com`, der navnet på e-handelsleieren er navnet som er angitt i LCS for Commerce-miljøet.
+Når du klargjør et Dynamics 365 Commerce-e-handelsmiljø, vil Commerce generere en URL-adresse som skal virke i miljøet. Det refereres til denne URL-adressen i områdekoblingen for e-handel som vises i LCS etter at miljøet er klargjort. En Commerce-generert URL-adresse er i formatet `https://<e-commerce tenant name>.dynamics365commerce.ms`, der navnet på e-handelsleieren er navnet som er angitt i LCS for Commerce-miljøet.
 
 Du kan også bruke vertsnavn for produksjonsområde i et sandkassemiljø. Dette alternativet er ideelt når du skal kopiere et område fra et sandkassemiljø til produksjon.
 
@@ -67,11 +70,11 @@ Boksen **Bane** kan stå tom, eller du kan legge til en ekstra banestreng som vi
 
 Hvis du for eksempel har et område i områdebyggeren som heter Fabrikam i en e-handelsleier med navnet XYZ, og hvis du konfigurerer området med en tom bane, vil du få tilgang til det publiserte områdeinnholdet i en nettleser ved å gå til den grunnleggende Commerce-genererte URL-adressen:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Hvis du har lagt til banen Fabrikam under installasjonen av det samme området, får du tilgang til det publiserte områdeinnholdet i en nettleser ved hjelp av følgende URL-adresse:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Sider og URL-adresser
 
@@ -92,16 +95,16 @@ Verdiene for de støttede vertsnavnene er tilgjengelige for å knyttes til et do
 Hvis du har to områder som er konfigurert med to forskjellige domener, kan du legge til attributtet **?domain=** i den fungerende URL-adressen for å få tilgang til det publiserte områdeinnholdet i en nettleser.
 
 Miljøet xyz er for eksempel klargjort, og to områder er opprettet og tilknyttet i områdebyggeren: ett med domenet `www.fabrikam.com` og det andre med domenet `www.constoso.com`. Hvert område ble konfigurert med en tom bane. Du kan deretter få tilgang til disse to områdene i en nettleser på følgende måte ved hjelp av attributtet **?domain=**:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Når en domenespørrestreng ikke er angitt i et miljø med flere domener som er oppgitt, bruker Commerce det første domenet du oppgav. Hvis banen Fabrikam for eksempel først ble oppgitt under konfigurasjon av området, kan URL-adressen `https://xyz.commerce.dynamics.com` brukes til å få tilgang til det publiserte områdets innholdsområde for `www.fabrikam.com`.
+Når en domenespørrestreng ikke er angitt i et miljø med flere domener som er oppgitt, bruker Commerce det første domenet du oppgav. Hvis banen Fabrikam for eksempel først ble oppgitt under konfigurasjon av området, kan URL-adressen `https://xyz.dynamics365commerce.ms` brukes til å få tilgang til det publiserte områdets innholdsområde for `www.fabrikam.com`.
 
 ## <a name="traffic-forwarding-in-production"></a>Viderekobling av trafikk i produksjon
 
-Du kan simulere flere domener ved hjelp av parametere for domenespørringsstreng på endepunktet commerce.dynamics.com. Men når du må gå i gang med produksjon, må du videresende trafikken for det egendefinerte domenet til endepunktet `<e-commerce tenant name>.commerce.dynamics.com`.
+Du kan simulere flere domener ved hjelp av parametere for domenespørringsstreng på endepunktet commerce.dynamics.com. Men når du må gå i gang med produksjon, må du videresende trafikken for det egendefinerte domenet til endepunktet `<e-commerce tenant name>.dynamics365commerce.ms`.
 
-Endepunktet `<e-commerce tenant name>.commerce.dynamics.com` støtter ikke egendefinerte SSL-er (Secure Sockets Layers), så du må konfigurere tilpassede domener ved hjelp av Front Door Service eller et innholdsleveringsnettverk (CDN). 
+Endepunktet `<e-commerce tenant name>.dynamics365commerce.ms` støtter ikke egendefinerte SSL-er (Secure Sockets Layers), så du må konfigurere tilpassede domener ved hjelp av Front Door Service eller et innholdsleveringsnettverk (CDN). 
 
 Hvis du vil konfigurere tilpassede domener ved hjelp av Front Door Service eller CDN, har du to alternativer:
 

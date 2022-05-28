@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392917"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756970"
 ---
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
 [!include [banner](../includes/banner.md)]
 
-En **kundefaktura for en salgsordre** er en regning som er knyttet til et salg, og som en organisasjon gir til en kunde. Denne typen kundefaktura opprettes basert på en salgsordre, som inneholder ordrelinjer og varenumre. Varenumrene er spesifisert og postert i finans. Underfinansjournaloppføringer er ikke tilgjengelig for en kundefaktura for en salgsordre. Hvis du vil ha mer informasjon, kan du se [Opprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).
+En **Kundefaktura for en salgsordre** er en regning som er knyttet til et salg, og som en organisasjon gir til en kunde. Denne typen kundefaktura opprettes basert på en salgsordre, som inneholder ordrelinjer og varenumre. Varenumrene er spesifisert og postert i finans. Underfinansjournaloppføringer er ikke tilgjengelig for en kundefaktura for en salgsordre. Hvis du vil ha mer informasjon, kan du se [Opprette salgsordrefakturaer](tasks/create-sales-order-invoices.md).
 
-En **fritekstfaktura** er ikke relatert til en salgsordre. Den inneholder ordrelinjer som omfatter finanskontoer, fritekstbeskrivelser og et salgsbeløp som du angir. Du kan ikke legge inn et varenummer i denne fakturatypen. Du må legge inn riktige mva-opplysninger. En hovedkonto for salg er angitt i hver fakturalinje, som du kan distribuere til flere finanskontoer ved å klikke **Fordel beløp** på siden **Fritekstfaktura**. I tillegg posteres kundesaldoen til samlekontoen fra posteringsprofilen som brukes for fritekstfakturaen.
+En **Fritekstfaktura** er ikke relatert til en salgsordre. Den inneholder ordrelinjer som omfatter finanskontoer, fritekstbeskrivelser og et salgsbeløp som du angir. Du kan ikke legge inn et varenummer i denne fakturatypen. Du må legge inn riktige mva-opplysninger. En hovedkonto for salg er angitt i hver fakturalinje, som du kan distribuere til flere finanskontoer ved å klikke **Fordel beløp** på siden **Fritekstfaktura**. I tillegg posteres kundesaldoen til samlekontoen fra posteringsprofilen som brukes for fritekstfakturaen.
 
-Du finner mer informasjon under: 
+Hvis du vil ha mer informasjon, kan du se:
 
 [Opprett fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ Du finner mer informasjon under:
 [Generere og postere gjentakende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
 
 
-En **proformafaktura** er en faktura som er klargjort som et estimat av de faktiske fakturabeløpene før fakturaen posteres. Du kan skrive ut en proformafaktura for en kundefaktura for en salgsordre eller for en fritekstfaktura.
+En **Proformafaktura** er en faktura som er klargjort som et estimat av de faktiske fakturabeløpene før fakturaen posteres. Du kan skrive ut en **Proformafaktura** for en kundefaktura for en salgsordre eller for en fritekstfaktura. 
+
+>[!NOTE]
+> Hvis det oppstår et systemavbrudd i salgsprosessen med en proformafaktura, kan proformafakturaen bli frittstående. Du kan slette en frittstående proformafaktura ved å kjøre den periodiske jobben **Slett proformafakturaer manuelt**. Gå til **Salg og markedsføring > Periodiske oppgaver > Rydd opp > Slett proformafakturaer manuelt**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Bruke kundefakturadataenheter for salgsordre
 Du kan bruke dataenheter til å importere og eksportere informasjon om en kundefaktura for en salgsordre. Det er forskjellige enheter for informasjonen i salgsfakturahodet og salgsfakturalinjene.
@@ -70,7 +73,7 @@ Du kan vise statusen for salgsordrene på listesiden **Alle salgsordrer**. Bruk 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-packing-slips-and-the-date"></a>Postere og skrive ut individuelle kundefakturaer som er basert på følgesedler og datoen
 Bruk denne fremgangsmåten når én eller flere følgesedler er postert for salgsordren. Kundefakturaen er basert på disse følgesedlene og gjenspeiler antallet i dem. Finansinformasjonen for fakturaen er basert på informasjonen du angir når du posterer fakturaen. 
 
-Du kan opprette en kundefaktura som er basert på følgeseddellinjevarene som er levert til nå, selv om ikke alle varene i en bestemt salgsordre er levert ennå. Du kan for eksempel gjøre dette hvis den juridiske enheten din sender ut én faktura per kunde per måned som dekker alle forsendelser du sender i løpet av den måneden. Hver følgeseddel representerer en delvis eller komplett forsendelse av varene i salgsordren. 
+Du kan opprette en kundefaktura som er basert på følgeseddellinjevarene som er levert til nå, selv om ikke alle varene i en bestemt salgsordre er levert. Du kan for eksempel gjøre dette hvis den juridiske enheten din sender ut én faktura per kunde per måned som dekker alle forsendelser du sender i løpet av den måneden. Hver følgeseddel representerer en delvis eller komplett forsendelse av varene i salgsordren. 
 
 Når du posterer fakturaen, oppdateres **Fakturarest**-antallet for hver vare med totalantallet som er levert for de valgte følgesedlene. Hvis både **Fakturarest**-antallet og **Gjenstående levering**-antallet for alle varer på salgsorden er 0 (null), endres statusen for salgsorden til **Fakturert**. Hvis **Fakturarest**-antallet ikke er 0 (null), endres ikke statusen for salgsordren, og flere fakturaer kan registreres på den. 
 
@@ -83,8 +86,13 @@ Bruk denne fremgangsmåten når én eller flere salgsordrer er klare til fakture
 
 Du kan velge flere fakturaer på **Salgsordre**-listesiden og deretter bruke **Generer fakturaer** for å konsolidere dem. På siden **Postering av faktura** kan du endre innstillingen **Samleordre** for å summere etter ordrenummer (der det finnes flere følgesedler for én enkelt ordre) eller etter fakturakonto (der det er flere salgsordrer for én enkelt fakturakonto). Bruk knappen **Ordne** for å konsolidere salgsordrer til enkeltfakturaer basert på **Samleordre**-innstillingene.
 
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Dele salgsordrefakturaer etter område og leveringsinformasjon
+Du kan konfigurere delingen av salgsordrekundefakturaer etter område eller leveringsadresse i fanen **Samleoppdatering** på siden **Parametere for kundereskontro**. 
+ - Velg alternativet **Deling basert på fakturaområde** for å opprette én faktura per område når du posterer. 
+ - Velg alternativet **Deling basert på leveringsinformasjon for faktura** for å opprette én faktura per leveringsadresse for salgsordrelinje ved postering. 
+
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Poster til inntektskonto for salgsordrefakturalinjer som ikke har en pris
-Du kan oppdatere **Inntekt**-kontoen i **økonomimodulen** for salgsordrelinjer som ikke har noen pris. Hvis du vil definere eller vise denne informasjonen, kan du gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris** på fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris. En inntektskonto er definert på parametersiden **Lagerpostering** på fanen for definisjon av **Salgsordre**-kontoen. Hvis dette alternativet ikke er valgt, posteres ikke linjer som har prisinformasjon, til **Inntekt**-kontoen.
+Du kan oppdatere **Inntekt**-kontoen i **Økonomimodul** for salgsordrelinjer som ikke har noen pris. Hvis du vil definere eller vise denne informasjonen, kan du gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris** på fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris. En inntektskonto er definert på parametersiden **Lagerpostering** i fanen for definisjon av **Salgsordre**-kontoen. Hvis dette alternativet ikke velges, posteres ikke linjer som har prisinformasjon, til **Inntekt**-kontoen.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Tilleggsinnstillinger som endrer posteringsvirkemåten
 Følgende felt endrer virkemåten for posteringsprosessen.
@@ -152,7 +160,7 @@ Følgende felt endrer virkemåten for posteringsprosessen.
 <td>Kontroller kredittgrense</td>
 <td>Velg informasjonen som skal analyseres når en kredittgrensekontroll utføres.
 <ul>
-<li><strong>Ingen</strong> - Det er ingen krav til kontroll av kredittgrense.</li>
+<li><strong>Ingen</strong> – Det finnes ingen krav til kontroll av kredittgrense.</li>
 <li><strong>Saldo</strong> - Kredittgrensen kontrolleres mot kundesaldoen.</li>
 <li><strong>Saldo + følgeseddel eller produktkvittering</strong> – Kredittgrensen kontrolleres mot kundesaldoen og leveranser.</li>
 <li><strong>Saldo+Alt</strong> - Kredittgrensen kontrolleres mot kundesaldoen, leveranser og åpne ordrer.</li>

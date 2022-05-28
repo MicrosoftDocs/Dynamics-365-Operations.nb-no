@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 648d94e895a4941f5f3148134130b3ffa693a9d57e0bb4e236f5d5fb33aca48f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7d4d6a23f6f58906730c5ce00c5fe06885aaa6da
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779818"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734696"
 ---
 # <a name="calculate-and-adjust-sales-tax-on-a-vendor-invoice"></a>Beregne og justere merverdiavgift på en leverandørfaktura
 
@@ -26,7 +26,7 @@ ms.locfileid: "6779818"
 
 Dette emnet forklarer hvordan du justerer merverdiavgiften på en leverandørfaktura. Hvis det opprinnelige kildedokumentet viser forskjellige mva-beløp som er beregnet, kan du justere disse beløpene før postering. Denne oppgaven bruker demonstrasjonsfirmaet DEMF.
 
-1. Gå til **Moduler > Leverandører > Fakturaer > Fakturajournal** i navigasjonsruten.
+1. Gå til **Leverandører > Fakturaer > Fakturajournal**.
 2. Velg **Ny**.
 3. I **Navn**-feltet i den nye raden velger du et alternativ fra rullegardinmenyen.
 4. Velg **Linjer** i handlingsruten.

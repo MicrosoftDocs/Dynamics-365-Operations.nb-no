@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxReportCollection
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b7d12ffa90bde30518780d750e74d20db89f007044f8622480b8bd6e629e00dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ff5a5622fa63b6058b9e768f1fd1bc776a48962
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728751"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734846"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Definer mva-rapporteringskoder
 
 [!include [banner](../../includes/banner.md)]
 
-Mva-rapporteringskodene refererer til et feltnummer som er oppført på en mva-rapport. De brukes på landspesifikke rapportoppsett. De brukes også på Mva-betaling etter kode-rapporten. Denne rapporten viser mva-beløp for en utligningsperiode oppsummert for hver rapporteringskode. Når du har opprettet mva-rapporteringskodene, kan du referere til kodene i hurtigkategoriene Rapportoppsett, som du får tilgang til fra siden **Mva-kode**. 
+**Mva-rapporteringskoder** refererer til et feltnummer som er oppført på en mva-rapport. De brukes på landspesifikke rapportoppsett. De brukes også på Mva-betaling etter kode-rapporten. Denne rapporten viser mva-beløp for en utligningsperiode oppsummert for hver rapporteringskode. Når du har opprettet **Mva-rapporteringskoder**, kan du referere til kodene i hurtigfanene **Rapportoppsett**, som du får tilgang til fra siden **Mva-kode**. 
 
 Denne registreringen bruker demonstrasjonsfirmaet DEMF.
 

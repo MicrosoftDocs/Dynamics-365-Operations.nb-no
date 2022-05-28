@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075305"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739394"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -130,7 +130,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 | Hovedplanlegging | [Vis planhistorikk og planleggingslogger](../master-planning/planning-optimization/plan-history-logs.md) |
 | Lagerstyring | [Containerpakkestrategier](../warehousing/container-packing-strategy-overview.md) |
 | Lagerstyring | [Eksempelscenarier for syklustelling](../warehousing/cycle-counting-scenarios.md) |
-| Lagerstyring | [Importer innkommende forhåndsvarsler for forsendelse via V2-dataenheten](../warehousing/import-asn-v2-data-entity.md) |
+| Lagerstyring | [Importer innkommende forhåndsvarsler for forsendelse via V3-dataenheten](../warehousing/import-asn-data-entity.md) |
 | Lagerstyring | [Overplukking for salgs- og overføringsordrer](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Lagerstyring | [Planlegg utskrift av bølgeetiketter under bølge](../warehousing/configure-task-based-wave-label-printing.md) |
 | Lagerstyring | [Hva er nytt eller endret i mobilappen Warehouse Management](../warehousing/whats-new-wma.md) |

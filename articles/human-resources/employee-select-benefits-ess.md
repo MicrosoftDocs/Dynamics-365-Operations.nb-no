@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 190eb7e437af7edd8eee97b8f2b7601254cbd240
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 68aa401487a74b9fcd186ec6cbdb268cdb41168c
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066424"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743493"
 ---
 # <a name="employees-select-plans-by-using-employee-self-service-optional"></a>Ansatte velger planer ved å bruke Ansattselvbetjening (valgfritt)
 
@@ -35,11 +34,11 @@ For å få tilgang til fordelene ved registrering går den ansatte til **Ansatts
 På siden **Selvbetjeningsfordeler** grupperes fordelsplaner etter plantype. Hvis du vil vise fordelsplanene i en plantype, velger den ansatte en flis på **Ansattfordeler**-siden. Den ansatte får bare se fordelene de er berettiget til.
 
 > [!IMPORTANT]
-> Før en plantype kan vises i **Ansattselvbetjening** må den konfigureres. Hvis du vil ha mer informasjon, kan du se [Konfigurere ansattselvbetjening](/hr-benefits-setup-employee-self-service.md).
+> Før en plantype kan vises i **Ansattselvbetjening** må den konfigureres. Hvis du vil ha mer informasjon, kan du se [Konfigurere ansattselvbetjening](/dynamics365/human-resources/hr-benefits-setup-employee-self-service).
 
 Én eller flere fordeler kan velges for registrering, avhengig av plantypen. En medisinsk plantype kan for eksempel konfigureres til å begrense den ansatte til én medisinsk plan. En type livsforsikringsplan kan gi den ansatte tillatelse til å velge flere livsforsikringsplaner.
 
-Når den ansatte har bestemt seg for hvilken plan vedkommende vil velge, kan det være nødvendig å velge avhengige. Hvis den ansatte har valgt et dekningsalternativ som er **Ansatt +1**, **Ansatt + barn** eller **Familie**, må du velge avhengige. Hvis du vil ha mer informasjon om dekningsalternativer, se [Opprette dekningsalternativer](/hr-benefits-setup-coverage-options.md).
+Når den ansatte har bestemt seg for hvilken plan vedkommende vil velge, kan det være nødvendig å velge avhengige. Hvis den ansatte har valgt et dekningsalternativ som er **Ansatt +1**, **Ansatt + barn** eller **Familie**, må du velge avhengige. Hvis du vil ha mer informasjon om dekningsalternativer, se [Opprette dekningsalternativer](/dynamics365/human-resources/hr-benefits-setup-coverage-options).
 
 For å velge en fordelsplan velger den ansatte enten ellipseknappen (**...**) eller **Legg til i handlekurv**. Når den ansatte er ferdig med å legge til alle fordelsvalgene i handlekurven, velger de **Vis handlekurv**. Den ansatte tas deretter til **Planer**-siden, der de kan vise sine valgte og frafalte fordelsplaner.
 

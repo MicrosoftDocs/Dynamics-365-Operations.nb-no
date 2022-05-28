@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerSystemSetup, CustPosting, VendPosting, InventPosting, AssetPosting, ProjPosting, AssetLeasePostingAccounts, ProjCategory, ITMCostTypeTable, ProdGroup, WrkCtrTable, WrkCtrResourceGroup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9ad33d9a34bc449b81ec6d02a78b9ca1653aca5
-ms.sourcegitcommit: 96f936267d3f314f06da6ce6f809eba2ec3b205f
+ms.openlocfilehash: 4c29597155e525638e7c2ded7d641017f2189c49
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8018385"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734583"
 ---
 # <a name="posting-profiles-overview"></a>Oversikt over posteringsprofiler
 
@@ -99,7 +99,7 @@ Begrepet *avregningskonto* brukes ofte i regnskap. Enkelte posteringstyper i Mic
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-Mange moduler i Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Project Operations har en posteringsprofil eller flere konfigurasjoner som styrer hvordan postering til økonomimodulen fungerer. Bruk følgende emner til å finne ut mer om posteringsprofilene og posteringsoppsettene i hver modul:
+Mange moduler i Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Project Operations har en posteringsprofil eller flere konfigurasjoner som styrer hvordan postering i økonomimodulen fungerer. Bruk følgende emner til å finne ut mer om posteringsprofilene og posteringsoppsettene i hver modul:
 
 - [Kontoer for automatiske transaksjoner](accounts-for-auto-transactions.md)
 - [Leverandører-postering](accts-payble-posting.md)

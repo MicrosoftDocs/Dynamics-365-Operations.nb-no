@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656810"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740659"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjenestebeskrivelse for økonomi- og driftsapper
 
@@ -265,7 +265,7 @@ Kundens leieadministrator kan få tilgang til produksjonsforekomster eller ikke-
 |---|---|---|
 | **Ikke-produksjon**<br>Lag 1-sandkasse | Et ikke-produksjonsmiljø som kunder distribuerer til utviklings-, demonstrasjons- eller opplæringsformål. | En lag 1-sandkasse (også omtalt som et skybasert miljø) er en kundestyrt VM som distribueres til kundens Azure-abonnement fra LCS. Fordi det er et VM i kundens Azure-abonnement, har kunden full administrativ tilgang til miljøet via Eksternt skrivebord. |
 | **Ikke-produksjon**<br>Sandkasse for lag 2 (eller høyere) | Et ikke-produksjonsmiljø som kunder distribuerer for brukeraksepttesting, integreringstesting, opplæring, klargjøring eller andre scenarier før produksjon. | Lag 2 og høyere sandkasser distribueres til SaaS-abonnementet for økonomi og drift. Tilgang til Azure SQL-databaser som er knyttet til ikke-produksjonsmiljøet, gis tilgang via [just-in-time-tilgang](../../dev-itpro/database/database-just-in-time-jit-access.md). Tilgang til Eksternt skrivebord er ikke tilgjengelig. |
-| **Produksjon** | Et produksjonsmiljø distribueres når prosjektet er [klart til første aktivering](/imp-lifecycle/environment-planning.md#production-system-readiness). | Produksjonsmiljøer distribueres til SaaS-abonnementet. All tilgang går gjennom webleseren, servicesluttpunktene eller LCS. |
+| **Produksjon** | Et produksjonsmiljø distribueres når prosjektet er [klart til første aktivering](../imp-lifecycle/environment-planning.md#production-system-readiness). | Produksjonsmiljøer distribueres til SaaS-abonnementet. All tilgang går gjennom webleseren, servicesluttpunktene eller LCS. |
 
 ### <a name="microsoft-administrative-access"></a>Microsoft administrativ tilgang
 
@@ -286,7 +286,7 @@ Microsoft har investert i en omfattende verktøysett for å overvåke og diagnos
 |---|---|
 | <ul><li>Overvåk tilgjengeligheten av tjenesten.</li><li>Overvåk og varsle kontinuerlig gjennom tilstandsmåledata og watchdogs for kritiske komponenter som Application Object Server (AOS), Batch, Data Import/Export Framework (DIXF), Commerce og Management Reporter.</li><li>Overvåk for ytelsesreduksjon som forårsakes av infrastrukturtjenester (for eksempel Azure Active Directory \[Azure AD\] og Azure SQL).</li><li>Hvis Microsoft finner ut at én enkelt prosess eller satsvis jobb forårsaker avvik, avsluttes denne prosessen eller jobben etter kommunikasjon med kunden.</li></ul> | <ul><li>Overvåk endringer i programkonfigurasjoner og -tillegg som kan forårsake funksjons- og ytelsesproblemer.</li><li>Programfeil må diagnostiseres ved hjelp av overvåkingsverktøyene. Bruk disse verktøyene til å diagnostisere brukerrapporterte ytelsesavvik.</li><li>Informer Microsoft om det er forventet belastning på systemet ut over forventet største bruk.</li><li>Hvis tjenesten som gjelder, ikke er tilgjengelig i produksjonsforekomsten, kan kunden bruke LCS til å rapportere et [produksjonsbrudd](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-Ved å sende støtteforespørsler online, via LCS, gjør kundene at Microsoft kan levere rask og grundig teknisk kompetanse på den mest effektive måten. Selv om telefonalternativet er tilgjengelig, bør det bare brukes hvis online-alternativet ikke er tilgjengelig. Hvis du vil ha mer informasjon, kan du se [Alternativer for telefonstøtte](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+Ved å sende støtteforespørsler online, via LCS, gjør kundene at Microsoft kan levere rask og grundig teknisk kompetanse på den mest effektive måten. Selv om telefonalternativet er tilgjengelig, bør det bare brukes hvis online-alternativet ikke er tilgjengelig. Hvis du vil ha mer informasjon, kan du se [Alternativer for telefonstøtte](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## <a name="incident-management"></a>Hendelsesbehandling
 

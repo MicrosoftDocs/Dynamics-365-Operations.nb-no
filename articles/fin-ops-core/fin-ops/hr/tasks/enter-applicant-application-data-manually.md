@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68f236ad000adea91e746309564baf84a270a0e5
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: a00e20569f05730296ef611938a94b73ebb7f6f5
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075456"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735325"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Angi søker- og søknadsdata manuelt
 
-> [!IMPORTANT]
-> Funksjonaliteten som er nevnt i dette emnet, er for øyeblikket tilgjengelig for Human Resources-kunder i Finance-infrastrukturen.  
+> [!NOTE]
+> Rekrutteringsfunksjonaliteten i dette emnet kalles Rekrutteringsprosjekter og fokuserer på søkere, søknader og rekrutteringsprosjekter.  
 
 
 Denne fremgangsmåten viser hvordan du vedlikeholder informasjon om søkere og søknader manuelt. Du kan angi og vedlikeholde personlige opplysninger, intervjudatoer og -klokkeslett, referanser, kompetanser og overnattingsforespørsler for søkere. Du kan også oppdatere status for søkerens søknader om ansettelse og opprette brev eller e-postmeldinger for å kommunisere med søkere. Når du oppretter en søkerpost, opprettes en personpost for den søkeren i den globale adresseboken. Demonstrasjonsdatafirmaet **USMF** ble brukt til å opprette denne fremgangsmåten.

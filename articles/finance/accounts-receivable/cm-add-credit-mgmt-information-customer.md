@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753976"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734464"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Legge til kredittbehandlingsinformasjon for kunder
 
@@ -32,7 +32,7 @@ Du kan legge til kundedetaljer i hurtigfanen **Kreditt og innkreving** på **All
 1. Sett alternativet **Ubegrenset kredittgrense** til **Ja** hvis kunden ikke skal være begrenset av noen kredittgrensetester.
 2. Sett alternativet **Utelat fra kredittbehandling** til **Ja** for å utelate kunden fra handlinger som vanligvis skjer under kredittbehandlingsprosesser.
 3. Velg gruppen for kredittbehandling for kunden.
-4. Hvis du vil beregne kredittgrensen i kundens valuta, angir du kundens kredittgrense i feltet **Kredittgrense i kundens valuta**. Kredittgrensen i firmavalutaen konverteres ved hjelp av valutakursene som er definert av valutakurstypen for kredittgrense som er valgt i parameterne for kredittbehandling.
+4. Hvis du vil beregne kredittgrensen i kundens valuta, angir du kundens kredittgrense i feltet **Kredittgrense i kundens valuta**. Kredittgrensen i firmavalutaen konverteres ved hjelp av valutakursene som er definert av valutakurstypen for kredittgrense som er valgt i **Kredittbehandlingsparametere**.
 5. I feltet **Siste gjennomgangsdato** angir du datoen da kundens kredittgrense sist ble vurdert av en kredittleder.
 6. I feltet **Neste planlagte gjennomgangsdato** angir du datoen da det er planlagt kredittgjennomgang og -oppdatering for kunden.
 7. I feltet **Kvalifisert kredittgrense** angir du den høyeste kredittgrensen som kan tilordnes til kunden, basert på din gjennomgang av kundens kreditthistorie. Den kvalifiserte kredittgrensen kan variere fra kredittgrensen som vises i hurtigfanen **Kreditt og innkreving**.
@@ -46,7 +46,8 @@ Du kan legge til kundedetaljer i hurtigfanen **Kreditt og innkreving** på **All
 15. I feltet **Kunden siden** angir du datoen da de første transaksjonene ble behandlet for kunden. Denne informasjonen brukes når det opprettes risikopoeng.
 16. Angi merknader som kreditteamet kan bruke til å vurdere kundens kredittverdighet ytterligere.
 
-Legg merke til at noe av informasjonen som vises på **Kunde**-siden, er opprettet i en annen prosess:
+> [!Note] 
+> Noe av informasjonen som vises på **Kunde**-siden, er opprettet i en annen prosess:
 
 - Feltet **Utløpsdato for kredittgrense** viser datoen da kredittgrensen utløper. Hvis du ikke angir dette feltet, vil ikke kundens kredittgrense utløpe.
 - Feltet **Dato for kredittgrense** viser datoen da kredittgrensen ble opprettet. Dette feltet oppdateres hver gang kredittgrensen justeres.

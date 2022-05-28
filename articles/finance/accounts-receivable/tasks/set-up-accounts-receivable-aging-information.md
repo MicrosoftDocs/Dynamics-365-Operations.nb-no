@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 996fb289c32a1819103fd67ffddc940dfd2870fb
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 5b67c33f73a33721167cedde1a8d83a81aa77db3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753566"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735409"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Definere og generere informasjon om aldersfordeling for kunde
 
 [!include [banner](../../includes/banner.md)]
 
-Denne veiledningen vil hjelpe deg med å sette opp en definisjon av aldersfordelingsperioden, aldersfordele kundesaldoer og vise saldoer i den aldersfordelte saldolisten og Innkrevinger-siden. Denne registreringen bruker demonstrasjonsfirmaet USMF.
+Denne veiledningen vil hjelpe deg med å sette opp en definisjon av aldersfordelingsperioden, aldersfordele kundesaldoer og vise saldoer i listen **Aldersfordelt saldo** og på **Innkrevinger**-siden. Denne registreringen bruker demonstrasjonsfirmaet USMF.
 
 
 ## <a name="create-an-aging-period-definition"></a>Opprette definisjon av en aldersfordelingsperiode

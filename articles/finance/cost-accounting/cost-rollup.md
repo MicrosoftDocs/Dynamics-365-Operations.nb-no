@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779962"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734436"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779962"
 Kostnadsregnskap gir deg innsikt i hvordan kostnadsflyten er knyttet til produktene og tjenestene som leveres i en organisasjon. Hvis du vil se kostnadsgjennomsiktigheten, er det avgjørende å oppnå kostnadsfordeling mellom kostnadsobjekter basert på et passende tildelingsgrunnlag. Kostnadsfordelingen oppnås som standard for det primære kostnadselementet, som er ønskelig i noen tilfeller, men det har enkelte implikasjoner som må vurderes.
 
 -   Hjelpekostnadsobjekter slutter med null i saldo for det primære kostnadselementet etter beregning av indirekte kostnader.
-
 -   Antallet kostnadsoppføringer som genereres ved beregning av indirekte kostnader, kan være svært høyt.
-
 -   Det går ikke an å spore kostnadsflyten mellom kostnadsobjekter.
 
 Kostnadsregnskap lar deg konfigurere kostnadsfordeling slik at den passer med rapporteringskravene i organisasjonen, og dermed unngår du disse implikasjonene. Dette emnet diskuterer hvordan du kan fastsette riktig nivå for sekundære kostnadselementer og lage regler for opprullet kost som passer inn i organisasjonsrapportering og kostnadssporbarhet.
