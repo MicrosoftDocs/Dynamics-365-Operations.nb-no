@@ -2,7 +2,7 @@
 title: Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 description: Dette emnet forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
 author: liza-golub
-ms.date: 03/21/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 988871b290cd1f6894ed8974216a1561871df265
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: 2eb4ef0ef947f87c7ad3a8d7e93fc32a67551f31
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550021"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809629"
 ---
 # <a name="prepare-your-environment-to-interoperate-with-id-porten-and-altinn-web-services"></a>Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 
@@ -459,7 +459,7 @@ Følg denne fremgangsmåten for å konfigurere URL som brukes i ID-porten.
 2. I feltet **Base-URL** angir du en av følgende nettadresser:
 
     - `https://oidc-ver2.difi.no/idporten-oidc-provider` for å fungere sammen med *sandkasseendepunktet* for ID-porten
-    - `https://oidc.difi.no/idporten-oidc-provider/` å interoperatisere med *produksjonsendepunktet* for ID-porten
+    - `https://oidc.difi.no/idporten-oidc-provider` å interoperatisere med *produksjonsendepunktet* for ID-porten
 
     > [!IMPORTANT]
     > For faktiske Internett-adresser går du til <https://docs.digdir.no/oidc_func_wellknown.html>.
@@ -473,7 +473,14 @@ Følg denne fremgangsmåten for å konfigurere URL som brukes i ID-porten.
 Følg denne fremgangsmåten for å definere en Internett-adresse som brukes av Altinn-webtjenester.
 
 1. Gå til **Avgift** \> **Oppsett** \> **Parametere** \> **Elektroniske meldinger** \> **Webprogrammer**, og velg webprogrammet **NO Altinn** i listen til venstre.
-2. I feltet **Primær URL-adresse** angir du `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
+2. I feltet **Base-URL** angir du en av følgende nettadresser:
+
+    - `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` for å fungere sammen med *sandkasseendepunktet* for Altinn
+    - `https://platform.altinn.no/authentication/api/v1/exchange/id-porten` å interoperatisere med *produksjonsendepunktet* for Altinn
+
+    > [!IMPORTANT]
+    > For faktiske Internett-adresser går du til <https://skatteetaten.github.io/mva-meldingen/english/test/#production-environment>.
+
 3. Gå til **Avgift** \> **Oppsett** \> **Parametere** \> **Elektroniske meldinger** \> **Nettjenesteinnstillinger**, og angi følgende informasjon for å definere nettadressen for nettjenestene som skal fungere sammen med *API-ene for sandkasse* som norske skattemyndigheter tilbyr.
 
     | Webtjenestenavn | Internett-adresse |

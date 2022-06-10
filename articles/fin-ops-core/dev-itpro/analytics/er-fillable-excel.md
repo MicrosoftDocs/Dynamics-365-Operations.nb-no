@@ -2,7 +2,7 @@
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645142"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811427"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -288,6 +288,16 @@ Du kan velge **Oppdater fra Excel** i fanen **Import** i handlingsruten for å i
 
 ![Alternativet Opprett element for Excel-arkformat i dialogboksen Oppdater fra Excel.](./media/er-excel-format-update-template.png)
 
+I versjon 10.0.28 og senere kan du bruke alternativet **Oppdater formatelementer i Excel-topptekst og Excel-bunntekst**.
+
+- Når du setter dette alternativet til **Nei**, forblir elementene i topptekst- og bunntekstformatet i Excel uendret, selv om de tilsvarende topptekstene eller bunntekstene er oppdatert i regnearkene til den importerte malen i Excel-arbeidsbokformatet.
+- Når du setter dette alternativet til **Ja**, vil elementene i topptekst- og bunntekstformatet i Excel endres når de tilsvarende topptekstene eller bunntekstene oppdateres i regnearkene til den importerte malen i Excel-arbeidsbokformatet.
+
+    - Hvis strukturen for en topptekst eller bunntekst i et regneark ikke er endret, eller hvis den bare har blitt lagt til, oppdateres strukturen for tilsvarende element for topptekst eller bunntekst i Excel. Bindinger til formatelementer som er nestet under dette elementet i topptekst- eller bunntekstformatet i Excel, beholdes.
+    - Hvis strukturen for en topptekst eller bunntekst i et regneark er endret, opprettes den tilsvarende formatelement for topptekst eller bunntekst i Excel. Bindinger for formatelementer som er nestet under dette formatelementet i Excel-topptekst- eller -bunnformat fjernes.
+
+![Alternativet for Oppdater formatelementer i Excel-topptekst og Excel-bunntekst i dialogboksen Oppdater fra Excel.](./media/er-excel-format-update-template2.png)
+
 Hvis du vil finne ut mer om denne funksjonen, kan du følge fremgangsmåten i [Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt](modify-electronic-reporting-format-reapply-excel-template.md).
 
 ## <a name="validate-an-er-format"></a>Validere et ER-format
@@ -355,7 +365,7 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Eksempel 2: Ordne EPPlus-problem med flettede celler
 
-Du kan kjøre et ER-format for å generere et utgående dokument i et Excel-arbeidsbokformat. Når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert i arbeidsområdet **Funksjonsbehandling**, brukes [EPPlus-biblioteket](https://www.nuget.org/packages/epplus/4.5.2.1) til å lage Excel-utdata. På grunn av kjent [Excel-virkemåte](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) og en begrensning av EPPlus-biblioteket, kan du imidlertid oppleve følgende unntak: "Kan ikke slette/overskrive sammenslåtte celler. Et område er delvis flettet med det andre flettede området." Hvis du vil vite hva slags Excel-maler som kan forårsake dette unntaket, og hvordan du kan løse problemet, kan du fullføre eksemplet nedenfor.
+Du kan kjøre et ER-format for å generere et utgående dokument i et Excel-arbeidsbokformat. Når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert i arbeidsområdet **Funksjonsbehandling**, brukes [EPPlus-biblioteket](https://www.nuget.org/packages/epplus/4.5.2.1) til å lage Excel-utdata. På grunn av kjent [Excel-virkemåte](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) og en begrensning av EPPlus-biblioteket, kan du imidlertid oppleve følgende unntak: "Kan ikke slette/overskrive sammenslåtte celler. Et område er delvis flettet med det andre flettede området." Hvis du vil vite hva slags Excel-maler som kan forårsake dette unntaket, og hvordan du kan løse problemet, kan du fullføre eksemplet nedenfor.
 
 1. Opprett en ny Excel-arbeidsbok i Excel-skrivebordsprogrammet.
 2. I regnearket **Ark1** legger du til **ReportTitle**-navnet for cellen **A2**.

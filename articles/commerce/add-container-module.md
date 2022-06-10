@@ -2,7 +2,7 @@
 title: Containermodul
 description: Dette emnet dekker containermoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa4bf7523acee06e91f0ebb983dd8777dec4bac5
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715446"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780720"
 ---
 # <a name="container-module"></a>Beholdermodul
 
@@ -100,15 +100,18 @@ Hvis du vil legge til en containerspillermodul på en ny side og angi de nødven
 1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Beholdermal**, og velger deretter **OK**.
 1. I **Tekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Legg moduler** velger du **Standardside**-modulen, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den. 
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I **Velg en mal**-dialogboksen velger du videospillermalen du opprettet. Under **Sidenavn** angir du **Beholderside**, og velger deretter **OK**.
+1. I dialogboksen **Opprett ny side**, under **Sidenavn**, angir du en **Containerside**, og velger deretter **Neste**.
+1. Velg **Containermal**-malen du opprettet,under **Velg en mal**, og velg deretter **Neste**.
+1. Under **Velg et oppsett** velger du et sideoppsett (for eksempel **Fleksibelt oppsett**), og deretter velger du **Neste**.
+1. Gå gjennom sidekonfigurasjonen under **Gjennomgang og fullfør**. Hvis du har behov for å redigere sideinformasjonen, velger du **Tilbake**. Hvis sideinformasjonen er riktig, velger du **Opprett side**. 
 1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Beholder**-modulen, og deretter velger du **OK**.
 1. I egenskapsruten for containermodulen settes **Antall kolonner**-egenskapen til **1** og **Bredde**-egenskapen til **Fyll container**.
 1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Innholdsblokk**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Innholdsblokk**-modulen, og deretter velger du **OK**.
 1. I egenskapsruten for innholdsblokkmodulen konfigurerer du overskriften, bildet og oppsettet.
 1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden. Du skal se én funksjonsmodul som passer innenfor bredden til containermodulen.
 1. I egenskapsruten for containermodulen endrer du verdien til egenskapen **Antall kolonner** til **3**.

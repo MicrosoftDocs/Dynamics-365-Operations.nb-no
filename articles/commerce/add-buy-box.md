@@ -2,7 +2,7 @@
 title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f49c7a1519744cda9cfba31a3938fd23e692841a851a52ec9d18a241f8c0458
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eba86cd0fe2790cabed1f091ddc59002d19ae228
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717801"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780440"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
@@ -90,21 +90,24 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 1. I dialogboksen **Nytt fragment** velger du **Kjøpsboks**-modulen.
 1. Under **Navn på fragment** angir du navnet **Kjøpsboksfragmentet**, og deretter velger du **OK**.
 1. I **Mediegalleri**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Mediegalleri**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Mediegalleri**-modulen, og deretter velger du **OK**.
 1. I **Butikkvelger**-sporet i kjøpsboksmodulen velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Butikkvelger**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Butikkvelger**-modulen, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
 1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **PDP-mal**, og velger deretter **OK**.
 1. I **Tekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Legg moduler** velger du **Standardside**-modulen, og deretter velger du **OK**.
 1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
-1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
+1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I **Velg en mal**-dialogboksen velger du **PDP-mal**. Under **Sidenavn** angir du **PDP-side**, og velger deretter **OK**.
+1. I dialogboksen **Opprett ny side**, under **Sidenavn**, angir du en **PDP-side**, og velger deretter **Neste**.
+1. Velg **PDP-mal** under **Velg en mal**, og velg deretter **Neste**.
+1. Under **Velg et oppsett** velger du et sideoppsett (for eksempel **Fleksibelt oppsett**), og deretter velger du **Neste**.
+1. Gå gjennom sidekonfigurasjonen under **Gjennomgang og fullfør**. Hvis du har behov for å redigere sideinformasjonen, velger du **Tilbake**. Hvis sideinformasjonen er riktig, velger du **Opprett side**.
 1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til fragment**.
-1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet tidligere, og deretter velger du **OK**.
+1. I dialogboksen **Velg fragment** velger du **Kjøpsboksfragmentet** du opprettet, og deretter velger du **OK**.
 1. Lagre og forhåndsvis siden. Legg til spørringsstrengparameteren **?productid=&lt;product id&gt;** i URL-adressen for forhåndsvisningssiden. På den måten brukes produktkonteksten til å laste inn og gjengi forhåndsvisningssiden.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den. En kjøpsboks skal vises på siden for produktdetaljer.
 

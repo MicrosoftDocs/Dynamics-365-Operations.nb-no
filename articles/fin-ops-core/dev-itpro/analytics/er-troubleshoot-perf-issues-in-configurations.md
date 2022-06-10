@@ -2,7 +2,7 @@
 title: Feilsøke ytelsesproblemer i ER-konfigurasjoner
 description: Dette emnet beskriver hvordan du finner og retter ytelsesproblemer i ER-konfigurasjoner (elektronisk rapportering).
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744392"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811687"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>Feilsøke ytelsesproblemer i ER-konfigurasjoner
 
@@ -82,7 +82,7 @@ Gjør klart et eksempel som har en liten mengde data, slik at du kan samle inn e
 
 - Svarer antall spørringer og hentede poster til den totale datamengden? Hvis et dokument for eksempel har 10 linjer, viser statistikken at rapporten henter 10 linjer eller 1 000 linjer? Hvis du har et betydelig antall hentede poster, vurderer du en av følgende rettelser:
 
-    - [Bruk **FILTER**-funksjonen i stedet for **WHERE**-funksjonen](#filter) til å behandle data på SQL Server-siden.
+    - [Bruk **FILTER**-funksjonen i stedet for **WHERE**-funksjonen](#filter) til å behandle data på Microsoft SQL Server-siden.
     - Bruk hurtigbufring til å unngå at de samme dataene hentes.
     - [Bruk funksjoner for innsamlede data](#collected-data) til å unngå å hente de samme dataene til summering.
 
@@ -191,6 +191,10 @@ Det er noen få begrensninger ved denne fremgangsmåten. Du må ha administrativ
 
 Selv om hurtigbufring reduserer tiden det tar å hente inn data igjen, koster det minne. Bruk hurtigbufring i tilfeller der mengden hentede data ikke er særlig stor. Hvis du vil ha mer informasjon og et eksempel som viser hvordan du bruker hurtigbufring, kan du se [Forbedre modelltilordningen basert på informasjon fra kjøringssporingen](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace).
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a>Redusere volum for data som hentes
+
+Du kan redusere minneforbruket for hurtigbufring ved å begrense antall felt i postene i en programtabell som du henter ved kjøretid. I dette tilfellet henter du bare de feltverdiene for en programtabell du trenger i ER-modelltilordningen. Andre felt i denne tabellen hentes ikke. Derfor reduseres volumet av minne som kreves for å hurtigbufre hentede poster. Hvis du vil ha mer informasjon , kan du se [Forbedre ytelsen til ER-løsninger ved å redusere antall tabellfelt som hentes ved kjøretid](er-reduce-fetched-fields-number.md).
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>Bruke et hurtigbufret, parameterisert beregnet felt
 
 Noen ganger må verdier slås opp gjentatte ganger. Eksempler omfatter kontonavn og kontonumre. Du kan spare tid ved å opprette et beregnet felt som har parametere på det øverste nivået, og deretter legge til feltet i hurtigbufferen.
@@ -218,4 +222,4 @@ ER kan bruke data fra følgende kilder:
 - Klasser (datakilder for **objekt** og **klasse**)
 - Tabeller (datakilder for **tabell** og **tabellposter**)
 
-[ER API-en](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) gir også en måte å sende forhåndsberegnede data fra oppkallekoden på. Programserien inneholder en rekke eksempler på denne fremgangsmåten.
+[ER-API (application programming interface)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) gir også en måte å sende forhåndsberegnede data fra oppkallekoden på. Programserien inneholder en rekke eksempler på denne fremgangsmåten.

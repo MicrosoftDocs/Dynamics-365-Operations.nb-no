@@ -2,7 +2,7 @@
 title: Brødsmulemodul
 description: Dette emnet dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: aa7f6e2f2b15c3e5d89cd645b3f1cc4c83c5b8d9
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109738"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780340"
 ---
 # <a name="breadcrumb-module"></a>Søkebanemodul
 
@@ -64,11 +64,11 @@ Hvis du vil legge til en brødsmulemodul på en PDP og angi de nødvendige egens
 1. Gå til **Områdeinnstillinger \> Utvidelser**, finn **Brødsmulevisningstype på PDP**-innstillingen og velg **Vis kategorihierarki**.
 1. Gå til **Maler**, og velg PDP-malen.
 1. I **Beholder**-sporet som inneholder kjøpsboksmodulen, velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Brødsmule**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Søkebane**-modulen, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og åpne en PDP som bruker PDP-malen. Hvis en PDP ennå ikke finnes, oppretter du en.
 1. I **Beholder**-sporet som inneholder kjøpsboksmodulen, velger du ellipseknappen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Brødsmule**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Søkebane**-modulen, og deretter velger du **OK**.
 1. I egenskapsruten for **Brødsmule**-sporet, under **Rot**, velger du **Koblingstekst**.
 1. I **Koblingstekst**-dialogboksen skriver du **Hjem**,og under **Koblingsmål** velger du **Legg til en kobling**.
 1. Velg en kobling til brødsmuleroten i dialogboksen **Legg til en kobling**, og velg deretter **OK**.

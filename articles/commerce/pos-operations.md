@@ -2,7 +2,7 @@
 title: Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 description: Dette emnet inneholder informasjon om salgsstedsoperasjoner i Dynamics 365 Commerce. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: jblucher
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc281a691b34731fb0b5986222b41b436912c782
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740688"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811208"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -44,7 +44,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 > [!NOTE]
 > Operasjonene nedenfor gjelder for den nyeste versjonen av Commerce. Noen operasjoner kan ha blitt endret eller er kanskje ikke tilgjengelig i tidligere versjoner.
 
-| ID   | Operasjon                                         | Beskrivelse                                                                                                                                                                                                    | Brukeroperasjon?    | Transaksjonskjermbilde | Velkomstskjermbilde | Tilgjengelig frakoblet? | Spesifikk for nasjonal innstilling |
+| ID   | Operasjon                                         | Beskrivelse                                                                                                                                                                                                    | Brukeroperasjoner    | Transaksjonskjermbilde | Velkomstskjermbilde | Tilgjengelig frakoblet? | Spesifikk for nasjonal innstilling |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Produktsalg                                      | Legg til et angitt produkt i transaksjonen.                                                                                                                                                                    | Ja            | Ja                | Ja            | Ja               | Nei              |
 | 101  | Priskontroll                                       | Slå opp prisen for et angitt produkt.                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Nei              |
@@ -273,11 +273,11 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 1219 | Åpne nettadresse på salgssted                                   | Åpne en administratorkonfigurert nettadresse i POS.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Nei              |
 | 1220 | Behandle safe                                       | Behandle safen for ulike kasser.                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Nei              |
 | 1221 | Annuller suspenderte transaksjoner                       | Annuller suspenderte transaksjoner.                                                                                                                                                                               | Ja            | Ja                | Ja            | Ja               | Nei              |
-| 1300 | Hopp over bilagsregistrering                          | Hopp over bilagsregistrering.                                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1301 | Merk regnskapshendelse som registrert                      |  Merk regnskapshendelse som registrert.                                                                                                                                                                                  | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1302 | Fullfør bilagsregistreringsprosess              | Fullfør bilagsregistreringsprosessen.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1303 | Hopp over tilstandskontrollfeil                           | Hopp over tilstandskontrollfeil.                                                                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Ja             |
-| 1304 |  Utsett bilagsregistrering                     | Utsett regnskapsregistrering.                                                                                                                                                                                  | Ja            | Ja                | Ja            | Ja               | Ja             |
+| 1300 | Hopp over bilagsregistrering                          | Hopp over bilagsregistrering.                                                                                                                                                                                       | Nei            | Nei                | Nei            | Ja               | Nei             |
+| 1301 | Merk regnskapshendelse som registrert                      |  Merk regnskapshendelse som registrert.                                                                                                                                                                                  | Nei            | Nei                | Nei            | Ja               | Nei             |
+| 1302 | Fullfør bilagsregistreringsprosess              | Fullfør bilagsregistreringsprosessen.                                                                                                                                                                           | Nei            | Nei                | Ja            | Ja               | Ja             |
+| 1303 | Hopp over tilstandskontrollfeil                           | Hopp over tilstandskontrollfeil.                                                                                                                                                                                        | Ja            | Ja                | Ja            | Ja               | Nei             |
+| 1304 |  Utsett bilagsregistrering                     | Utsett regnskapsregistrering.                                                                                                                                                                                  | Nei            | Nei                | Nei            | Ja               | Nei             |
 | 1400 | Administrer sjekklister og oppgaver                       | Administrer sjekklisten og oppgavene for ansatt.                                                                                                                                                                        | Nei             | Nei                 | Ja            | Nei                | Nei              |
 | 2000 | Planlegg behandling                               | Denne operasjonen støttes ikke ennå.                                                                                                                                                                           | Ja            | Ja                | Ja            | Nei                | Nei              |
 | 2001 | Planlegg forespørsler                                 | Denne operasjonen støttes ikke ennå.                                                                                                                                                                           | Ja            | Ja                | Ja            | Nei                | Nei              |

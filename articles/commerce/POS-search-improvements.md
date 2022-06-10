@@ -2,7 +2,7 @@
 title: Produkt- og kundesøk på salgssted
 description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700095"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806434"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -106,6 +106,8 @@ Når du skal angi søkekriterier som snarveier, må administratoren åpne **Hand
 > Hvis du legger til for mange snarveier, vil rullegardinmenyen i søkefeltet i POS bli uoversiktlig, og den ansattes søkeopplevelse kan bli påvirket. Vi anbefaler at du bare legger til så mange snarveier som du trenger.
 
 **Visningsrekkefølge**-feltet fastsetter rekkefølgen som snarveier vises i, i POS. Kriteriene som vises, er standardegenskapene som kundesøkealgoritmen bruker for kundesøk. Partnere kan imidlertid legge til egendefinerte egenskaper som snarveier for søk. Hvis du vil legge til egendefinerte egenskaper som søkesnarveier, må systemadministratoren utvide den utvidbare opplistingen som brukes for kundesøkekriteriene og deretter merke partnerens egendefinerte egenskaper som snarveier. Partnere er ansvarlig for å skrive koden for å finne resultater når de egendefinerte snarveiene brukes for søk.
+
+Det kreves oversettelser for snarveier hvis du vil at det skal lages snarveier på salgsstedet. Hvis kanalspråket er forskjellig fra systemets standardspråk, må du definere oversettelsen for hver snarvei på forventet språk. Du kan definere oversettelser ved å velge **Oversett** for hver snarvei. 
 
 > [!NOTE]
 > En egendefinert egenskap som legges til opplistingen, påvirker ikke standard kundesøkalgoritme. Med andre ord kundesøkalgoritmen søker ikke i den egendefinerte egenskapen. Brukere kan bare bruke en egendefinert egenskap for søk hvis den egendefinerte egenskapen legges til som snarvei, eller hvis standard søkealgoritme overstyres.

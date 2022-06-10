@@ -2,7 +2,7 @@
 title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644614"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811253"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -31,6 +31,33 @@ Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i pl
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
 Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
+
+
+## <a name="feature-deprecation-effective-june-2022"></a>Funksjonsavvik gjelder fra juni 2022
+
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Mobilappen Økonomi og drift (Dynamics 365) og mobilplattform 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vi avskriver mobilprogrammet og -plattformen for Økonomi og drift (Dynamics 365) for å konsolidere til én enkelt mobilplattform, som er Power Apps. |
+| **Erstattet med en annen funksjon?**   | Ja, du kan bygge mobilopplevelser over Økonomi og drift-appdata med Power Platform-integrering. Se [Bygge mobilopplevelser](../power-platform/build-mobile-experiences.md) hvis du vil ha mer informasjon. |
+| **Berørte produktområder**         | Finance and Operations-apper |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet. Sluttdatoen for støttedatoen er beregnet for oktober 2024. |
+
+
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.29 av økonomi- og driftsapper
+
+### <a name="panorama-tab-style"></a>Panoramafanestil
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vannrett rullende sider justeres til utdaterte oppsettmønstre som har kjent brukervennlighets- og tilgjengelighetsproblemer.  |
+| **Erstattet med en annen funksjon?**   | Nei, men andre kategoristiler er fremdeles tilgjengelige. |
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet. |
+
 
 ## <a name="feature-deprecation-effective-april-2022"></a>Varsel om funksjonsavvik gjelder fra april 2022
 

@@ -2,7 +2,7 @@
 title: Bunntekstmodul
 description: Dette emnet dekker bunntekstmoduler og hvordan du redigerer dem i Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 03/02/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81db5cf32f23b7ee1ca8325eeec2e6ceafda55e0
-ms.sourcegitcommit: 90a553e271e7cd471fed2e4f006d753fdb67b47d
+ms.openlocfilehash: 542796ffce08694954d03878cd7782b01c2c6b27
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8374837"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780265"
 ---
 # <a name="footer-module"></a>Bunntekstmodul  
 
@@ -46,15 +46,15 @@ I likhet med de fleste containere støtter en bunntekstmodul egenskaper for over
 ## <a name="create-a-footer-module"></a>Opprette en bunntekstmodul
 
 1. Gå til **Fragmenter**, og velg **Nytt** for å opprette et nytt sidefragment.
-1. I dialogboksen **Nytt fragment** velger du **Beholder**-modulen, skriver inn et navn på fragmentet og velger **OK**.
+1. I dialogboksen **Velg et fragment** velger du **Beholder**-modulen, skriver inn et navn på fragmentet og velger **OK**.
 1. I **Standard beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Bunntekstkategori**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Bunntekstkategori**-modulen, og deretter velger du **OK**.
 1. I **Bunntekstkategori**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Bunntekstelement**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Bunntekstelement**-modulen, og deretter velger du **OK**.
 1. Velg **Bunntekstelement**-sporet. Deretter, i egenskapsruten til høyre, konfigurerer du overskriften, koblingen, koblingsteksten og bildet etter behov.
 1. Gjenta trinn 5 til og med 7 for hvert element for å legge til flere bunntekstelementer.
 1. For å legge til "Til toppen"-kobling i bunnteksten velger du ellipsen (**…**) i **Bunntekstkategori**-sporet, og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Til toppen**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Til toppen**-modulen, og deretter velger du **OK**.
 1. Velg **Til toppen**-sporet. Deretter, i egenskapsruten til høyre, konfigurerer du teksten og andre modulegenskaper etter behov.
 1. Velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere den.
 

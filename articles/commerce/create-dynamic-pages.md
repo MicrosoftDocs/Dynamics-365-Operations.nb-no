@@ -2,35 +2,32 @@
 title: Opprette dynamiske e-handelssider basert på URL-parametere
 description: Dette emnet beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694346"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811037"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Opprette dynamiske e-handelssider basert på URL-parametere
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
 
-En e-handelsside kan konfigureres til å ha forskjellig innhold, basert på et segment i URL-banen. Derfor kalles siden en dynamisk side. Segmentet brukes som en parameter for å hente sideinnholdet. Det vil for eksempel opprettes en side med navnet **blogg\_fremviser** som knyttes til URL-adressen `https://fabrikam.com/blog`. Denne siden kan deretter brukes til å vise forskjellig innhold, basert på det siste segmentet i URL-banen. Eksempelvis er det siste segmentet i URL-adressen `https://fabrikam.com/blog/article-1` **artikkel-1**.
+En e-handelsside kan konfigureres til å ha forskjellig innhold, basert på et segment i URL-banen. Derfor kalles siden en dynamisk side. Segmentet brukes som en parameter for å hente sideinnholdet. For eksempel vil en side som opprettes i områdebyggeren og kalt **blogg\_fremviser** tilordnes til URLen `https://fabrikam.com/blog`. Denne siden kan deretter brukes til å vise forskjellig innhold, basert på det siste segmentet i URL-banen. Eksempelvis er det siste segmentet i URL-adressen `https://fabrikam.com/blog/article-1` **artikkel-1**.
 
-Separate egendefinerte sider som overstyrer den dynamiske siden, kan også knyttes til segmenter i URL-banen. Det vil for eksempel opprettes en side med navnet **blogg\_sammendrag** som knyttes til URL-adressen `https://fabrikam.com/blog/about-this-blog`. Når denne URL-adressen forespørres, returneres **blogg\_sammendrag**-siden som er knyttet til parameteren **/about-this-blog** i stedet for siden **blogg\_fremviser**.
+Du kan også overstyre et parameterisert URL-segment med en side for områdekonfigurator. For eksempel kan en side som opprettes i områdebyggeren og kalt **blogg\_sammendrag** tilordnes til URLen `https://fabrikam.com/blog/about-this-blog`. Når URL-adressen `https://fabrikam.com/blog` forespørres med segmentet `/about-this-blog` på slutten, returneres siden **blogg\_sammendrag** i stedet for at segmentet `/about-this-blog` som tolkes som en parameter som brukes av siden `https://fabrikam.com/blog`. 
+
+Når du velger navn for parameterne som skal sendes til den dynamiske siden, kan navnet på den dynamiske siden slik det vises i URL-adressen (`/blog` i eksempelet ovenfor) ikke brukes som et parameternavn eller en understreng av et parameternavn. 
 
 > [!NOTE]
 > Funksjonaliteten for mottak, henting og visning av dynamisk sideinnhold implementeres ved hjelp av en egendefinert modul. Hvis du vil ha mer informasjon, kan du se [Utvidelsesmulighet for Internett-kanal](e-commerce-extensibility/overview.md).
@@ -60,7 +57,7 @@ Følg denne fremgangsmåten for å konfigurere ruten til den dynamiske siden i C
 1. Under **Parameteriserte URL-baner** velger du **Legg til**, og deretter legger du inn URL-banen du skrev inn da du opprettet URL-adressen (i dette eksemplet **/blogg**).
 1. Velg **Lagre og publiser**.
 
-Når ruten er konfigurert, vil alle forespørsler til den parameteriserte URL-banen returnere siden som er knyttet til denne URL-adressen. Hvis det finnes forespørsler som inneholder et ekstra segment, returneres den tilknyttede siden, og innholdet på siden hentes ved å bruke segmentet som en parameter. Eksempelvis vil `https://fabrikam.com/blog/article-1` returnere siden **blogg\_sammendrag**, og sideinnholdet hentes ved hjelp av parameteren **/artikkel-1**.
+Når ruten er konfigurert, vil alle forespørsler til den parameteriserte URL-banen returnere siden som er knyttet til denne URL-adressen. Hvis det finnes forespørsler som inneholder et ekstra segment, returneres den tilknyttede siden, og innholdet på siden hentes ved å bruke segmentet som en parameter. Eksempelvis vil `https://fabrikam.com/blog/article-1` returnere siden `https://fabrikam.com/blog` som viser innholdet som hentes ved hjelp av parameteren **/artikkel-1**.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Overstyre en parameterisert URL-adresse med en egendefinert side
 

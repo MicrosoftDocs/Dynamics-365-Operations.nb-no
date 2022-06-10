@@ -10,10 +10,12 @@
           items:
             - name: Nyheter eller endringer i økonomi- og driftsapper
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Nyheter eller endringer i Plattformoppdateringer
+            - name: Nyheter eller endringer i plattformoppdateringer
               items:
                 - name: Nyheter eller endringer på startsiden for plattformoppdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Plattformoppdateringer for versjon 10.0.28 (august 2022)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Plattformoppdateringer for versjon 10.0.27 (juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Plattformoppdateringer for versjon 10.0.26 (mai 2022)
@@ -384,9 +386,9 @@
                   items:
                     - name: Konfigurer lokale prosjekter i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: "Definere og distribuere lokale miljøer (Platform update\_41 og nyere)"
+                    - name: "Definere og distribuere lokale miljøer (plattformoppdatering\_41 og nyere)"
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: "Definere og distribuere lokale miljøer (Platform update\_12 til 40)"
+                    - name: "Definere og distribuere lokale miljøer (plattformoppdatering\_12 til 40)"
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø
                       href: deployment/deploy-retail-onprem.md
@@ -1014,15 +1016,17 @@
               items:
                 - name: Verktøy for overvåking og diagnose
                   href: lifecycle-services/monitoring-diagnostics.md
-                - name: Bruke Azure Data Explorer til å søke i råinformasjonslogger
+                - name: Bruk Azure Data Explorer til å søke i råinformasjonslogger
                   href: lifecycle-services/azure-data-explorer.md
-            - name: Starte miljøtjenester på nytt
+            - name: Start miljøtjenester på nytt
               href: lifecycle-services/restart-environment-services.md
-            - name: "Rapportere en\_produksjonsnedetid"
+            - name: Oppdater miljøadministrator
+              href: lifecycle-services/update-environment-admin.md
+            - name: "Rapporter en\_produksjonsnedetid"
               href: lifecycle-services/report-production-outage.md
-            - name: Spore brukerpålogginger
+            - name: Spor brukerpålogginger
               href: lifecycle-services/user-logins.md
-            - name: Aktivabibliotek
+            - name: Objektbibliotek
               href: lifecycle-services/asset-library.md
             - name: Feilsøke ytelse ved hjelp av verktøy i LCS
               href: lifecycle-services/performancetroubleshooting.md
@@ -1266,6 +1270,8 @@
               items:
                 - name: Oversikt over tillegg
                   href: power-platform/add-ins-overview.md
+            - name: Bygg mobilopplevelser
+              href: power-platform/build-mobile-experiences.md
             - name: Policyer og kommunikasjon
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobil plattform
@@ -1668,7 +1674,7 @@
                   href: sysadmin/optimization-advisor-overview.md
                 - name: Opprette regler for optimaliseringsrådgiver
                   href: sysadmin/create-rules-optimization-advisor.md
-            - name: "Rapportere en\_produksjonsnedetid"
+            - name: "Rapporter en\_produksjonsnedetid"
               href: lifecycle-services/report-production-outage.md
             - name: Konfigurere og administrere databaselogging
               href: sysadmin/configure-manage-database-log.md

@@ -2,7 +2,7 @@
 title: Bruke det mobile arbeidsområdet Aktivastyring
 description: Dette emnet inneholder informasjon om det mobile arbeidsområdet Aktivastyring
 author: johanhoffmann
-ms.date: 01/15/2021
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 62bb178e714611367c825c87044a31275f5540accc9363137c7cecbcec1bec65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771545"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811511"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Bruke det mobile arbeidsområdet Aktivastyring
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 Dette emnet inneholder informasjon om det mobile arbeidsområdet **Aktivastyring**. Dette arbeidsområdet lar brukere vise og opprette vedlikeholdsforespørsler og arbeidsordrer. Brukere kan også vise tilordnede arbeidsordrejobber i en kalender- eller listevisning. Du kan også vise og søke etter aktiva og arbeidssteder.
 
@@ -45,7 +46,7 @@ Før du kan bruke det mobile arbeidsområdet **Aktivastyring**, må administrato
 
 ## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 
-Last ned og installer mobilappen Dynamics 365 for Unified Operations:
+Last ned og installer mobilappen Økonomi og drift (Dynamics 365):
 
 - [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)

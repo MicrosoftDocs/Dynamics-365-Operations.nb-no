@@ -2,7 +2,7 @@
 title: Søkeresultatmodul
 description: Dette emnet dekker søkeresultatmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644932"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780924"
 ---
 # <a name="search-results-module"></a>Modul for søkeresultater
 
@@ -65,23 +65,26 @@ Søkeresultatmodulen støtter [hurtigvisningsmodulen](quick-view-module.md), som
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Legge til en søkeresultatmodul på en kategoriside
 
-For å legge til en søkeresultatmodul på en kategoriside, følg disse trinnene.
+Følg denne fremgangsmåten for å legge til søkeresultatmodulen på en kategorisiden i områdebyggeren.
 
 1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal** angir du navnet på **Søkeresultater**, og velg deretter **OK**.
 1. I **Tekst**-sporet velger du ellipsen (…), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Legg moduler** velger du **Standardside**-modulen, og deretter velger du **OK**.
 1. I **Hoved**-sporet på **Standardside**-modulen velger du ellipseknappen (...), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Beholder**-modulen, og deretter velger du **OK**.
 1. I **Beholder**-sporet velger du ellipsen (…), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Brødsmule**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Søkebane**-modulen, og deretter velger du **OK**.
 1. Skriv inn verdien **1** for **Minimum antall forekomster** i egenskapsruten **Brødsmule**.
 1. I **Beholder**-sporet velger du ellipsen (…), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Søkeresultater**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Søkeresultater**-modulen, og deretter velger du **OK**.
 1. I ruten for egenskaper i **Søkeresultater** angir du verdien **1** for **Minimum antall forekomster**, og deretter angir du andre nødvendige egenskaper for søkeresultatmodulen. Ved å angi disse egenskapene i malen, sikrer du at alle tilpasninger til en bestemt kategoriside automatisk inneholder disse innstillingene.
 1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere malen.
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I dialogboksen **Velg en mal** velger du malen **Søkeresultater** som du opprettet, angir **Kategoriside** for **Sidenavn**, og deretter velger du **OK**. Siden alle verdiene er angitt i malen, er siden klar til å publiseres.
+1. I dialogboksen **Opprett ny side**, under **Sidenavn**, angir du en **Kategoriside**, og velger deretter **Neste**.
+1. Under **Velg en mal** velger du **Søkeresultater**-malen du opprettet, og velg deretter **Neste**.
+1. Under **Velg et oppsett** velger du et sideoppsett (for eksempel **Fleksibelt oppsett**), og deretter velger du **Neste**.
+1. Gå gjennom sidekonfigurasjonen under **Gjennomgang og fullfør**. Hvis du har behov for å redigere sideinformasjonen, velger du **Tilbake**. Hvis sideinformasjonen er riktig, velger du **Opprett side**.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Aktivere lagerkjennskap for søkeresultatmodulen
@@ -102,7 +105,7 @@ Beholdningsfølsomt produktsøk bruker produktattributter til å hente informasj
 
 Følg denne fremgangsmåten for å opprette egne produktattributter for å støtte den lageraktiverte søkeresultatmodulen.
 
-1. Gå til **Retail og Commerce \> IT for Retail og Commerce \> Produkter og beholdning**.
+1. I Headquarters går du til **Retail og Commerce \> IT for detaljhandel og handel \> Produkter og beholdning**.
 1. Velg og åpne **Fyll ut produktattributter med lagernivå**.
 1. Angi følgende informasjon i dialogboksen:
 
@@ -116,11 +119,11 @@ Følg denne fremgangsmåten for å opprette egne produktattributter for å støt
 
 Følg denne fremgangsmåten for å konfigurere produktattributtene for en nettkanal. 
 
-1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Kanalkategorier og produktattributter**.
-2. Velg en nettkanal for å aktivere beholdningsfølsomme søkeresultatmodul for.
-3. Velg og åpne en tilknyttet attributtgruppe, og legg til det nyopprettede produktattributtet.
-4. For Commerce-versjoner før 10.0.27-utgivelse velger du **Angi attributtmetadata**, velger produktattributtene som nylig er lagt til, og slår deretter på alternativene **Vis attributt i kanal**, **Kan hentes**, **Kan finjusteres** og **Kan spørres**.
-5. Gå til **Retail og Commerce \> IT for Retail og Commerce \> Distribusjonsplan**, og kjør jobben **1150 (katalog)**. Hvis du planlegger jobben **Fyll ut produktattributtene med lagernivå** som en satsvis prosess, anbefaler vi at du også planlegger 1150-jobben som en satsvis prosess som kjører samtidig.
+1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Kanalkategorier og produktattributter** i hovedkontoret.
+1. Velg en nettkanal for å aktivere beholdningsfølsomme søkeresultatmodul for.
+1. Velg og åpne en tilknyttet attributtgruppe, og legg til det nyopprettede produktattributtet.
+1. For Commerce-versjoner før 10.0.27-utgivelse velger du **Angi attributtmetadata**, velger produktattributtene som nylig er lagt til, og slår deretter på alternativene **Vis attributt i kanal**, **Kan hentes**, **Kan finjusteres** og **Kan spørres**.
+1. Gå til **Retail og Commerce \> IT for Retail og Commerce \> Distribusjonsplan**, og kjør jobben **1150 (katalog)**. Hvis du planlegger jobben **Fyll ut produktattributtene med lagernivå** som en satsvis prosess, anbefaler vi at du også planlegger 1150-jobben som en satsvis prosess som kjører samtidig.
 
 > [!NOTE]
 > For produkter som vises i søkeresultatmodulen, vises lagernivået på hovedproduktnivået i stedet for på det individuelle variantnivået. Det har bare to mulige verdier: "tilgjengelig" og "ikke på lager". Den faktiske etiketten for verdiene hentes fra definisjonen [beholdningsnivåprofil](inventory-buffers-levels.md). Et hovedprodukt betraktes som ikke på lager når alle variantene er ikke på lager.

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
+ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487870"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "8789219"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -46,7 +46,7 @@ Velg et funksjonsområde du vil finne ut mer om.
 - [Behandling av produktinformasjon](pim/product-information.md)
 - [Produksjonskontroll](production-control/production-process-overview.md)
 - [Salg og markedsføring](sales-marketing/overview-sales-marketing.md)
-- [Servicestyring](service-management/service-management-home-page.md)
+- [Tjenestebehandling](service-management/service-management-home-page.md)
 - [Transportstyring](transportation/transportation-management-overview.md)
 - [Lagerstyring](warehousing/warehouse-configuration.md)
 
@@ -56,11 +56,11 @@ Hvis du vil ha informasjon om Dynamics 365 Finance, går du til [startsiden for 
 
 ## <a name="videos"></a>Videoer
 
-Denne korte videoen oppsummerer de nye funksjonene i Supply Chain Management som er lagt til i Microsoft Dynamics 365 for Finance and Operations versjon 8.0 (april 2018).
+Denne korte videoen oppsummerer de nye funksjonene for forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations versjon 8.0 (april 2018).
 
 - [Synkronisere en arbeidsordre mellom Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Disse korte videoene oppsummerer de nye funksjonene i Supply Chain Management som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
+Disse korte videoene oppsummerer de nye funksjonene for forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
 
 - [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Bruk lagermalen til å kopiere konfigurasjonen](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
@@ -73,7 +73,7 @@ Disse korte videoene oppsummerer de nye funksjonene i Supply Chain Management so
 - [Godkjenne bestillinger på en mobil enhet](https://youtu.be/gZ-gOlJe7H8)
 - [Visuell planlegging med Gantt-diagram for produksjons- og partiordrer](https://youtu.be/BtbuShkGj4I)
 
-Følgende registreringer for tekniske konferanser beskriver funksjonalitet i Supply Chain Management fra tidligere versjoner av Finance and Operations. Denne funksjonaliteten er nå en del av Dynamics 365 Supply Chain Management. De samme begrepene gjelder fremdeles, og fremgangsmåtene er de samme i gjeldende versjon.
+Følgende registreringer for tekniske konferanser beskriver funksjonalitet for forsyningskjedeadministrasjon fra tidligere versjoner av Finance and Operations. Denne funksjonaliteten er nå en del av Dynamics 365 Supply Chain Management. De samme begrepene gjelder fremdeles, og fremgangsmåtene er de samme i nåværende versjon.
 
 - **Kostnadsstyring:**
   - [Oversikt over behandling av kostnader](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -98,7 +98,7 @@ Det finnes mange emner om produksjon og Supply Chain Management i [teambloggen f
 ## <a name="white-papers"></a>Hvitbøker
 
 - [Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb](/dynamics/s-e/)
-- [Stykklisteberegning ved hjelp av et kostnadsskjema](https://www.microsoft.com/download/details.aspx?id=101937/)
+- [Stykklisteberegning ved hjelp av et kostnadsskjema](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## <a name="elearning-courses"></a>e-læringskurs
 

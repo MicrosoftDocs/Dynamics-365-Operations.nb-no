@@ -2,7 +2,7 @@
 title: Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet
 description: Dette emnet beskriver hvordan du planlegger fremtidige endringer i lagerbeholdning og beregner ATP-antall (tilgjengelig for ordre).
 author: yufeihuang
-ms.date: 03/04/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7ce868871f093fd734a466bb8a06c5782bf83302
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
+ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8525887"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763260"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet
 
@@ -32,9 +32,12 @@ Før du kan bruke ATP, må du definere ett eller flere beregnede mål for å ber
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Definer beregnede mål for ATP-antall
 
-*Beregnet ATP-mål* er et forhåndsdefinert beregnet mål som vanligvis brukes til å finne lagerbeholdningen som for øyeblikket er tilgjengelig. Summen av addisjonsmodifikatorantallet er forsyningsantallet, og summen av subtraksjonsmodifikatorantallet er etterspørselsantallet.
+*Beregnet ATP-mål* er et forhåndsdefinert beregnet mål som vanligvis brukes til å finne lagerbeholdningen som for øyeblikket er tilgjengelig. *Forsyningsantallet* er summen av antall for de fysiske målene som har modifikatortypen *tillegg*, og *behovsmengde* er summen av antall for de fysiske målene som har typen *subtraksjon*.
 
-Du kan legge til flere beregnede mål for å beregne ATP-antall. Det totale antallet modifikatorer i alle beregnede ATP-mål må imidlertid være mindre enn ni.
+Du kan legge til flere beregnede mål for å beregne flere ATP-antall. Det totale antallet distinkte fysiske mål i alle beregnede ATP-mål må imidlertid være mindre enn ni.
+
+> [!IMPORTANT]
+> Et beregnet mål er en sammensetning av fysiske mål. Formelen kan bare inneholde fysiske mål uten duplikater, ikke beregnede mål.
 
 Du kan for eksempel sette opp følgende beregnede mål:
 
@@ -43,6 +46,12 @@ Du kan for eksempel sette opp følgende beregnede mål:
 Summen av (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) representerer forsyning, og summen av (*ReservPhysical* + *SoftReservePhysical* + *Outbound*) representerer behov. Derfor kan det beregnede målet forstås på følgende måte:
 
 **On-hand-available** = *Supply* – *Demand*
+
+Du kan legge til et annet beregnet mål for å beregne det **disponible fysiske** ATP-antallet.
+
+**On-hand-physical** = (*PhysicalInvent* + *OnHand* + *Unrestricted* + *QualityInspection* + *Inbound*) – (*Outbound*)
+
+Det finnes åtte atskilte, fysiske mål fordelt på de to ATP-beregnede målene: *PhysicalInvent*, *OnHand*, *Unrestricted*, *QualityInspection*, *Inbound*, *ReservPhysical*, *SoftReservePhysical* og *Outbound*.
 
 Hvis du vil ha mer informasjon om beregnede mål, kan du se [Beregnede mål](inventory-visibility-configuration.md#calculated-measures).
 
@@ -80,7 +89,7 @@ Du legger for eksempel inn en ordre på 10 sykler og forventer at den kommer i m
 
 Når spør Lagersynlighet etter beholdningsantall og ATP-antall, returneres følgende informasjon for hver dag i tidsplanperioden:
 
-- **Dato** – Datoen som resultatet gjelder for.
+- **Dato** – Datoen som resultatet gjelder for. Tidssonen er Coordinated Universal Time (UTC).
 - **Antall på lager** – Det faktiske beholdningsantallet for den angitte datoen. Denne beregningen foretas i henhold til det beregnede ATP-målet som er konfigurert for Lagersynlighet.
 - **Planlagt forsyning** – Summen av alle planlagte innkommende antall som ikke har blitt fysisk tilgjengelig for umiddelbart forbruk eller forsendelse per den angitte datoen.
 - **Planlagt behov** – Summen av alle planlagte utgående antall som ikke er brukt eller sendt per den angitte datoen.
@@ -132,7 +141,7 @@ Resultatene i dette eksemplet viser en *prosjektert lagerbeholdning*. Denne verd
 
     - Behovsantall på 15 for 4. februar 2022
     - Forsyningsantall på 1 for 5. februar 2022
-    - Behovsantall på 3 for 6. februar 2022
+    - Forsyningsantall på 3 for 6. februar 2022
 
     Tabellen nedenfor viser resultatet.
 
@@ -190,8 +199,8 @@ Du kan bruke følgende URL-adresser for API (Application Programming Interface) 
 
 | Bane | Metode | Beskrivelse |
 | --- | --- | --- |
-| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Opprett én planlagt lagerendring. |
-| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Opprett flere planlagte lagerendringer. |
+| `/api/environment/{environmentId}/onhand/changeschedule` | `POST` | Opprett én planlagt lagerendring. |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | `POST` | Opprett flere planlagte lagerendringer. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Opprett én lagerendringshendelse. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Opprett flere endringshendelser. |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Spør ved å bruke `POST`-metoden. |
@@ -199,31 +208,46 @@ Du kan bruke følgende URL-adresser for API (Application Programming Interface) 
 
 Hvis du vil ha mer informasjon, kan du se [Offentlige API-er for lagersynlighet](inventory-visibility-api.md).
 
-### <a name="submit-on-hand-change-schedules"></a>Send inn tidsplaner for lagerbeholdning
+### <a name="create-one-on-hand-change-schedule"></a>Opprett én endringsplan for lagerbeholdning
 
-Tidsplaner for lagerbeholdningsendringer utføres ved å sende inn en `POST`-forespørsel til den relevante URL-adressen for Lagersynlighet-tjenesten (se delen [Send inn endringsplaner, endringshendelser og ATP-spørringer via API](#api-urls)). Du kan også sende inn masseforespørsler.
+En endringsplan for lagerbeholdning utføres ved å sende inn en `POST`-forespørsel til den relevante URL-adressen for lagersynlighet (se delen [Send inn endringsplaner, endringshendelser og ATP-spørringer via API](#api-urls)). Du kan også sende inn masseforespørsler.
 
-Hvis du vil sende en endringsplan for lagerbeholdning, må forespørselsteksten inneholde en organisasjons-ID, en produkt-ID, en planlagt dato og antall per dato. Den planlagte datoen må være mellom gjeldende dato og slutten av gjeldende tidsplanperiode.
+En tidsplan for lagerendring kan bare opprettes hvis den planlagte datoer er mellom gjeldende dato og slutten av gjeldende tidsplanperiode. datetime-formatet skal være *år-måned-dag* (for eksempel **2022-02-01**). Tidsformatet må bare være nøyaktig for dagen.
 
-#### <a name="example-request-body-that-contains-a-single-update"></a>Eksempel på forespørselstekst som inneholder én enkelt oppdatering
+Denne API-en oppretter én enkelt lagerendringsplan.
 
-Følgende eksempel viser en forespørselstekst som inneholder én enkelt oppdatering.
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        productId: string,
+        dimensionDataSource: string, # optional
+        dimensions: {
+            [key:string]: string,
+        },
+        quantitiesByDate: {
+            [datetime:datetime]: {
+                [dataSourceName:string]: {
+                    [key:string]: number,
+                },
+            },
+        },
+    }
+```
+
+Følgende eksempel viser eksempeltekstinnholdet uten `dimensionDataSource`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -232,38 +256,60 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "Small"
+        "SizeId&quot;: &quot;Small"
     },
     "quantitiesByDate":
     {
-        "2022/02/01": // today
+        "2022-02-01": // today
         {
             "pos":{
-                "inbound": 10,
-            },
-        },
-    },
+                "inbound": 10
+            }
+        }
+    }
 }
 ```
 
-#### <a name="example-request-body-that-contains-multiple-bulk-updates"></a>Eksempel på forespørselstekst som inneholder flere oppdateringer (masseoppdateringer)
+### <a name="create-multiple-on-hand-change-schedules"></a>Opprette flere planer for lagerendring
 
-Følgende eksempel viser en forespørselstekst som inneholder flere oppdateringer (masseoppdateringer).
+Denne API-en kan opprette flere poster samtidig. De eneste forskjellene mellom denne API-en og API-en for én hendelse er verdiene for `Path` og `Body`. For denne API-en inneholder `Body` en matrise med poster. Maksimalt antall oppføringer er 512. Derfor kan bulk-API-en for lagerbeholdningendring støtte opptil 512 planlagte endringer om gangen.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [
+        {
+            id: string,
+            organizationId: string,
+            productId: string,
+            dimensionDataSource: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            quantityDataSource: string, # optional
+            quantitiesByDate: {
+                [datetime:datetime]: {
+                    [dataSourceName:string]: {
+                        [key:string]: number,
+                    },
+                },
+            },
+        },
+        ...
+    ]
+```
+
+Følgende eksempel viser eksempeltekstinnholdet.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule/bulk
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
 [
     {
         "id": "id-bike-0001",
@@ -273,67 +319,51 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/01": // today
+            "2022-02-01": // today
             {
                 "pos":{
-                    "inbound": 10,
-                },
-            },
-        },
+                    "inbound": 10
+                }
+            }
+        }
     },
     {
-        "id": "id-bike-0002",
+        "id": "id-car-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/05":
+            "2022-02-05":
             {
                 "pos":{
-                    "outbound": 10,
-                },
-            },
-        },
+                    "outbound": 10
+                }
+            }
+        }
     }
 ]
 ```
 
-### <a name="submit-on-hand-change-events"></a>Send inn lagerendringshendelser
+### <a name="create-on-hand-change-events"></a>Opprett lagerendringshendelser
 
 Tidsplaner for lagerendringshendelser utføres ved å sende inn en `POST`-forespørsel til den relevante URL-adressen for Lagersynlighet-tjenesten (se delen [Send inn endringsplaner, endringshendelser og ATP-spørringer via API](#api-urls)). Du kan også sende inn masseforespørsler.
 
 > [!NOTE]
-> Lagerendringshendelser er ikke unike for ATP-funksjonaliteten, men er en del av standard API for Lagersynlighet. Dette eksemplet er inkludert fordi hendelser er relevante når du arbeider med ATP. Lagerendringshendelser ligner endringer i lagerbeholdningsreservasjoner, men hendelsesmeldinger må sendes til en annen API-URL, og hendelser bruker `quantities` i stedet for `quantityByDate` i meldingsteksten. Hvis du vil ha mer informasjon om lagerendringshendelser og andre funksjoner i API-en for Lagersynlighet, kan du se [Offentlige API-er for Lagersynlighet](inventory-visibility-api.md).
-
-Hvis du vil sende en endringshendelse for lagerbeholdning, må forespørselsteksten inneholde en organisasjons-ID, en produkt-ID, en planlagt dato og antall per dato. Den planlagte datoen må være mellom gjeldende dato og slutten av gjeldende tidsplanperiode.
+> Lagerendringshendelser er ikke unike for ATP-funksjonaliteten, men er en del av standard API for Lagersynlighet. Dette eksemplet er inkludert fordi hendelser er relevante når du arbeider med ATP. Lagerendringshendelser ligner endringer i lagerbeholdningsreservasjoner, men hendelsesmeldinger må sendes til en annen API-URL, og hendelser bruker `quantities` i stedet for `quantityByDate` i meldingsteksten. Hvis du vil ha mer informasjon om lagerendringshendelser og andre funksjoner i API-en for Lagersynlighet, kan du se [Offentlige API-er for Lagersynlighet](inventory-visibility-api.md#create-one-onhand-change-event).
 
 Følgende eksempel viser en forespørselstekst som inneholder én enkelt lagringsendringshendelse.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -342,7 +372,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "SizeId": "Big",
-        "ColorId": "Red",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -362,46 +392,71 @@ I forespørselen setter du `QueryATP` til *sann* hvis du vil spørre etter planl
 - Hvis du sender inn forespørselen via `POST`-metoden, angir du denne parameteren i forespørselsteksten.
 
 > [!NOTE]
-> Uansett om parameteren `returnNegative` er satt til *sann* eller *usann* i forespørselsteksten, vil resultatet inneholde negative verdier når du spør om planlagte lagerbeholdninger og ATP-resultater. Disse negative verdiene vil bli inkludert, fordi hvis bare behovsordrer blir planlagt, eller hvis forsyningsantallet er mindre enn behovsantallet, vil de planlagte endringene i lagerbeholdningsantallene være negative. Hvis negative verdier ikke ble tatt med, vil resultatene være forvekslingsvis. Hvis du vil ha mer informasjon om dette alternativet og hvordan det fungerer for andre typer spørringer, kan du se [Offentlige API-er for Lagersynlighet](inventory-visibility-api.md).
+> Uansett om parameteren `returnNegative` er satt til *sann* eller *usann* i forespørselsteksten, vil resultatet inneholde negative verdier når du spør om planlagte lagerbeholdninger og ATP-resultater. Disse negative verdiene vil bli inkludert, fordi hvis bare behovsordrer blir planlagt, eller hvis forsyningsantallet er mindre enn behovsantallet, vil de planlagte endringene i lagerbeholdningsantallene være negative. Hvis negative verdier ikke ble tatt med, vil resultatene være forvekslingsvis. Hvis du vil ha mer informasjon om dette alternativet og hvordan det fungerer for andre typer spørringer, kan du se [Offentlige API-er for Lagersynlighet](inventory-visibility-api.md#query-with-post-method).
 
-### <a name="post-method-example"></a>Eksempel på POST-metoden
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
 
 Følgende eksempel viser hvordan du oppretter en forespørselstekst som kan sendes inn til Lagersynlighet ved hjelp av `POST`-metoden.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/indexquery
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
         "siteId": ["1"],
-        "LocationId": ["11"],
+        "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true,
+    "QueryATP":true
 }
 ```
 
 ### <a name="get-method-example"></a>Eksempel på GET-metoden
 
+```txt
+Path:
+    /api/environment/{environmentId}/onhand
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    groupBy
+    returnNegative
+    [Filters]
+```
+
 Følgende eksempel viser hvordan du oppretter en forespørsels-URL som en `GET`-forespørsel.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
 ```
 
 Resultatet til denne `GET`-forespørselen er nøyaktig det samme som resultatet av `POST`-forespørselen i det forrige eksemplet.

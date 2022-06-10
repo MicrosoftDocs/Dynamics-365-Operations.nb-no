@@ -2,7 +2,7 @@
 title: Innholdsblokkmodul
 description: Dette emnet dekker innholdsblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5ec0a75c613cedcee9d156d81380d679224ea476af4f4745a30040f257fed8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 85d101c73e723d246e1f6af61acb51f6d6516a79
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726445"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780365"
 ---
 # <a name="content-block-module"></a>Innholdsblokkmodul
 
@@ -78,7 +78,7 @@ Hvis du vil legge til en hovedbannermodul på en ny side og angi de nødvendige 
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Bruk hovedbannermalen du nettopp opprettet, for å opprette en side som heter **innholdsblokkside**.
 1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** under **Velg moduler** velger du hovedbannermodulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du hovedbannermodul, og deretter velger du **OK**.
 1. I disposisjonstreet til venstre velger du innholdsblokkmodulen.
 1. Velg **Legg til et bilde** i egenskapsruten til høyre. Velg enten et eksisterende bilde, eller last opp et nytt bilde.
 1. Velg **Overskrift**.

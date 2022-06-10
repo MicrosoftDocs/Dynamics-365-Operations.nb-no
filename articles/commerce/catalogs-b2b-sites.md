@@ -2,19 +2,19 @@
 title: Opprett handelskataloger for B2B-områder
 description: Dette emnet beskriver hvordan du oppretter handelskataloger for Microsoft Dynamics 365 Commerce-bedrift-til-bedrift-områder (B2B).
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 868f6bbeefeb1698bb136d52c09cebf293c95731
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
+ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656866"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782843"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Opprett handelskataloger for B2B-områder
 
@@ -24,7 +24,7 @@ ms.locfileid: "8656866"
 Dette emnet beskriver hvordan du oppretter handelsproduktkataloger for Microsoft Dynamics 365 Commerce-bedrift-til-bedrift-områder (B2B). Hvis du vil ha svar på vanlige spørsmål om handelskataloger for B2B-områder, kan du se [Vanlige spørsmål om handelskataloger for B2B](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Dette emnet gjelder for Dynamics 365 Commerce, versjon 10.0.26 og nyere utgivelser.
+> Dette emnet gjelder for Dynamics 365 Commerce, versjon 10.0.27 og nyere utgivelser.
 
 Du kan bruke handelskataloger til å identifisere produktene du vil tilby i B2B-nettbutikkene. Når du oppretter en katalog, identifiserer du nettbutikkene som produktene tilbys i, legger til produktene du vil ta med, og forbedrer produkttilbudene ved å legge til handelsinformasjon om varer. Du kan opprette flere kataloger for hver B2B-nettbutikk.
 
@@ -42,7 +42,7 @@ Med handelsproduktkataloger kan du definere følgende informasjon:
 - **Prisgrupper** – Du kan konfigurere priser og kampanjer som er spesifikke for en angitt katalog. Denne funksjonen er en hovedårsak til å definere en katalog for en B2B-kanal. Ved hjelp av prisgrupper for kataloger kan organisasjoner gjøre produkter tilgjengelige for de tiltenkte B2B-organisasjonene og bruke foretrukne priser og rabatter. B2B-kunder som bestiller fra en konfigurert katalog, kan dra nytte av spesialpriser og kampanjer etter at de har logget seg på et B2B-handelsområde. Du kan konfigurere katalogspesifikke priser ved å velge **Prisgrupper** på fanen **Kataloger** for å koble én eller flere prisgrupper til katalogen. Alle handelsavtaler, prisjusteringsjournaler og avanserte rabatter som er koblet til samme prisgruppe, vil bli brukt når kunder bestiller fra denne katalogen. (Avanserte rabatter omfatter terskelrabatter, kvantumsrabatter og samlerabatter.) Hvis du vil ha mer informasjon om prisgrupper, kan du se [Prisgrupper](price-management.md#price-groups).
 
 > [!NOTE]
-> Denne funksjonen er tilgjengelig fra og med Dynamics 365 Commerce-versjon 10.0.26. Hvis du vil konfigurere katalogspesifikke konfigurasjoner, for eksempel navigasjonshierarkiet og kundehierarkiet, åpner du arbeidsområdet **Funksjonsstyring** (**Systemadministrasjon \> Arbeidsområder \> Funksjonsstyring**), aktiverer du funksjonen **Aktiver bruk av flere kataloger på detaljhandelskanaler** og deretter kjører du **1110 CDX**-jobben.
+> Denne funksjonen er tilgjengelig fra og med Dynamics 365 Commerce-versjon 10.0.27. Hvis du vil konfigurere katalogspesifikke konfigurasjoner, for eksempel navigasjonshierarkiet og kundehierarkiet, åpner du arbeidsområdet **Funksjonsstyring** (**Systemadministrasjon \> Arbeidsområder \> Funksjonsstyring**), aktiverer du funksjonen **Aktiver bruk av flere kataloger på detaljhandelskanaler** og deretter kjører du **1110 CDX**-jobben.
 
 ## <a name="catalog-process-flow"></a>Katalogprosessflyt
 

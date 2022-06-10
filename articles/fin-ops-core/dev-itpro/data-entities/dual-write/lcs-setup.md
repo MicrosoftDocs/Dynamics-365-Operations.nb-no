@@ -2,19 +2,19 @@
 title: Oppsett av dobbel skriving fra Lifecycle Services
 description: Dette emnet forklarer hvordan du konfigurerer en tilkobling med dobbel skriving fra Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063678"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783208"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Oppsett av dobbel skriving fra Lifecycle Services
 
@@ -26,12 +26,12 @@ Dette emnet forklarer hvordan du aktiverer dobbel skriving fra Microsoft Dynamic
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Du må fullføre Power Platform-integreringen som beskrevet i følgende emner:
+Kunder må fullføre Power Platform-integreringen som beskrevet i følgende emner:
 
-+ [Power Platform-integrering - Aktiver under miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Power Platform-integrering - Aktiver etter miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- Hvis du ikke bruker Microsoft Power Platform ennå, og vil utvide Økonomi og drift-miljøet ved å legge til plattformfunksjoner, kan du se [Power Platform-integrering - Aktiver under miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Hvis du allerede har Dataverse- og Power Platform-miljøer og vil koble dem til Økonomi og drift-miljøer, kan du se [Power Platform-integrering - Aktiver etter miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Konfigurere dobbel skriving for nye Dataverse-miljøer
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Konfigurere dobbel skriving for nye og eksisterende Dataverse-miljøer
 
 Følg denne fremgangsmåten for å konfigurere en dobbelt skriving fra LCS-siden **Miljødetaljer**:
 
@@ -55,28 +55,19 @@ Følg denne fremgangsmåten for å konfigurere en dobbelt skriving fra LCS-siden
 
 8. Når koblingen er fullført, vises en hyperkobling. Bruk koblingen til å logge deg på administrasjonsområdet for dobbel skriving i økonomi- og driftsmiljøet. Derfra kan du definere enhetstilordninger.
 
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Konfigurere dobbel skriving for et eksisterende Dataverse-miljø
-
-Hvis du vil definere skrivetilgang for et eksisterende Dataverse-miljø, må du opprette en Microsoft [støtteforespørsel](../../lifecycle-services/lcs-support.md). Denne forespørselen må inneholde følgende:
-
-+ ID-en for økonomi- og driftsmiljøet.
-+ Miljønavnet fra Lifecycle Services.
-+ Dataverse-organisasjons-IDen eller Power Platform-miljø-IDen fra Power Platform-administrasjonssenteret. Be om at IDen er forekomsten som brukes for Power Platform-integrering, i forespørselen.
-
-> [!NOTE]
-> Du kan ikke koble fra miljøer ved hjelp av LCS. Hvis du vil oppheve koblingen til et miljø, åpner du arbeidsområdet **Dataintegrering** i økonomi- og driftsmiljøet, og deretter velger du **Koble fra**.
-
 ## <a name="linking-mismatch"></a>Koblingskonflikt
 
-Det er mulig at LCS-miljøet er koblet til en Dataverse-forekomst, mens skrivemiljøet er koblet til en annen Dataverse-forekomst. Denne koblingskonflikten kan forårsake uventet virkemåte, og det kan ende opp med å sende data til feil miljø. Det anbefalte miljøet som skal brukes til dobbel skriving, er det som opprettes som en del av Power Platform-integreringen, og langsiktig, er dette den eneste måten å etablere en kobling mellom miljøer på.
+Det er mulig at du har koblet skrivetilgangsmiljøet til en Dataverse-forekomst, mens LCS ikke er satt opp for Power Platform-integrering. Denne koblingskonflikten kan forårsake uventet virkemåte. Det anbefales at LCS-miljødetaljer samsvarer med det du er koblet til i skriveprosessen, slik at den samme forbindelsen kan brukes av forretningshendelser, virtuelle tabeller og tillegg.
 
-Hvis miljøet ditt har en koblingskonflikt, viser LCS en advarsel på siden med miljødetaljer som ligner på «Microsoft har oppdaget at miljøet ditt er koblet via dobbel skriving til annet mål enn angitt i Power Platform-integrering, noe som ikke anbefales»:
+Hvis miljøet ditt har en koblingskonflikt, viser LCS en advarsel som ligner på følgende eksempel på miljødetaljsiden: "Microsoft har oppdaget at miljøet ditt er koblet via dobbeltskriving til annet mål enn angitt i Power Platform-integrering, noe som ikke anbefales":
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform-integreringskoblingskonflikt.":::
 
-Hvis du oppdager denne feilen, finnes det to alternativer basert på dine behov:
+Hvis du får denne advarselen, kan du prøve en av følgende løsninger:
 
-+ [Koble fra og koble tilbake miljøer for dobbel skriving (Tilbakestill eller endre kobling)](relink-environments.md#scenario-reset-or-change-linking) slik det er angitt på siden med detaljer om LCS-miljøet. Dette er det ideelle alternativet, fordi du kan kjøre det uten Microsoft-støtte.  
-+ Hvis du vil at koblingen skal holdes i dobbel skriving, kan du be om hjelp fra Microsoft Kundestøtte til å endre Power Platform-integreringen slik at den bruker det eksisterende Dataverse-miljøet, slik det er dokumentert i den forrige delen.  
+- Hvis LCS-miljøet aldri er satt opp for Power Platform-integrering, kan du koble til Dataverse-forekomsten som er konfigurert med skriveprosessen, ved å følge instruksjonene i denne artikkelen.
+- Hvis LCS-miljøet allerede er satt opp for Power Platform-integrering, bør du fjerne koblingen til dobbeltskriving og koble det til det som angis av LCS ved hjelp av [Scenario: Tilbakestill eller endre kobling](relink-environments.md#scenario-reset-or-change-linking).
+
+Tidligere var det tilgjengelig en manuell støtteforespørsel, men det var før alternativ 1 over fantes.  Microsoft støtter ikke lenger manuelle koblinger av forespørsler via støtteforespørsler.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

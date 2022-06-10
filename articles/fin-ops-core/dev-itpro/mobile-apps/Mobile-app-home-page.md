@@ -1,8 +1,8 @@
 ---
 title: Startside for mobilapp
-description: Dette emnet beskriver Finance and Operations-mobilappen (Dynamics 365) og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
+description: Dette emnet beskriver Økonomi og drift (Dynamics 365)-mobilappen og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729714"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811180"
 ---
 # <a name="mobile-app-home-page"></a>Startside for mobilapp
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emnet beskriver **Finance and Operations-mobilappen (Dynamics 365)** og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
+Dette emnet beskriver **Økonomi og drift (Dynamics 365)**-mobilappen og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 
 ## <a name="overview"></a>Oversikt
 
@@ -76,7 +77,7 @@ Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å i
 <tr class="odd">
 <td>1</td>
 <td>Systemansvarlig</td>
-<td>Implementer Finance and Operations-appen i organisasjonen.</td>
+<td>Implementere Økonomi og drift-appen i organisasjonen.</td>
 <td><ul><li>Hvis du ennå ikke har distribuert en versjon av Microsoft Dynamics 365, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>.</li><li>Hvis du vil se en oversikt over mobile arbeidsområder som kan brukes, kan du se <a href="mobile-workspaces-released.md">Mobile arbeidsområder som nylig er utgitt</a>.</li></ul></td>
 </tr>
 <tr class="even">

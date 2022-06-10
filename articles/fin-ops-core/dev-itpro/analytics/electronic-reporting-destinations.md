@@ -2,7 +2,7 @@
 title: Mål for elektronisk rapportering (ER)
 description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647099"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780467"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -45,7 +45,7 @@ Du kan også installere én av følgende forutsetninger. Vær imidlertid oppmerk
 - Microsoft Dynamics AX programversjon 7.0.1 (mai 2016)
 - [Hurtigreparasjon for administrasjonsapp for mål for elektronisk rapportering](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
-Det finnes også en [Skriv ut](er-destination-type-print.md)-måltype. Hvis du vil bruke den, må du installere Microsoft Dynamics 365 Finance-versjon 10.0.9 (april 2020).
+Det finnes også en [Skriv ut](er-destination-type-print.md)-måltype. Hvis du vil bruke den, må du installere Microsoft Dynamics 365 Finance versjon 10.0.9 (april 2020).
 
 ## <a name="overview"></a>Oversikt
 
@@ -173,11 +173,11 @@ I versjoner av Finance **før versjon 10.0.18** kan PDF-konverteringsalternative
 
 ### <a name="limitations"></a>Begrensninger
 
-Alternativet PDF-konvertering er bare tilgjengelig for skydistribusjoner.
+Fra og med Finance **versjon 10.0.9** er PDF-konvertering bare tilgjengelig for skydistribusjoner. Fra og med Finance versjon **10.0.27** er PDF-konverteringsalternativet tilgjengelig for lokal distribusjon der [Internett-tilkobling](../user-interface/client-disconnected.md) er aktivert.
 
 PDF-dokumentet som genereres, er begrenset til en maksimumslengde på 300 sider.
 
-I Finance **versjon 10.0.9** støttes bare liggende papirretning i PDF-dokumentet som genereres fra Excel-utdata. I Finance **versjon 10.0.10 (mai 2020) og nyere** kan du [angi papirretningen](#SelectPdfPageOrientation) i PDF-dokumentet som genereres fra Excel-utdata mens du konfigurerer et ER-mål.
+Fra og med Finance **versjon 10.0.9** støttes bare liggende papirretning i PDF-dokumentet som genereres fra Excel-utdata. Fra og med Finance **versjon 10.0.10** kan du [angi papirretningen](#SelectPdfPageOrientation) i PDF-dokumentet som genereres fra Excel-utdata mens du konfigurerer et ER-mål.
 
 Bare de vanlige systemskriftene i Windows-operativsystemet brukes til å konvertere utdata som ikke inneholder innebygde skrifter.
 

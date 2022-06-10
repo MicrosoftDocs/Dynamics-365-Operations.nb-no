@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a905d752af2cf8397acb4927aa99edb4c23bfa6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688127"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809620"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Vanlige spørsmål om sammenslåing av Dynamics 365 Human Resources-infrastruktur
 
@@ -131,6 +131,9 @@ Det avhenger av integreringens sluttpunkt. Hvis du vil ha mer informasjon om int
 Hvis Dynamics 365 Human Resources og økonomi- og driftsmiljøer som skal sammenkobles i miljøet i den nye infrastrukturen, er koblet til det samme Dataverse-miljøet, vil de to appene fortsette å være koblet til det samme Dataverse-miljøet etter migreringen. Ingen migrering kreves for Dataverse-utvidelser.
 
 Hvis derimot Dynamics 365 Human Resources og økonomi- og driftsmiljøer for øyeblikket er koblet til separate Dataverse-miljøer, må de to Dataverse-miljøene kombineres slik at de er koblet til ett enkelt miljø i den nye infrastrukturen. For denne Dataverse-migreringen kan Dataverse-tabellene som er standard i Human Resources-løsningene, kobles til og synkroniseres på nytt med det nye Dataverse-miljøet. Eventuelle utvidelser i Dataverse-miljøet vil ikke migreres automatisk, men må legges til i det nye miljøet på nytt. Vi anbefaler at du bruker administrerte løsninger til å administrere Dataverse-tilleggene. Hvis du vil ha mer informasjon, kan du se [Innføring i løsninger](/powerapps/developer/data-platform/introduction-solutions).
+
+### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Vi har brukt funksjonaliteten for egendefinerte felt i Dynamics 365 Human Resources, vil disse egendefinerte feltene migrere automatisk?
+Ja, de egendefinerte feltene som er lagt til, vil migrere til den nye infrastrukturen.
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Vi har konfigurert Microsoft Power Automate-flyter og/eller Microsoft Power Apps til å fungere med Dynamics 365 Human Resources. Vil disse Microsoft Power Platform-komponentene migreres og fungere automatisk etter at infrastrukturendringen er fullført?
 

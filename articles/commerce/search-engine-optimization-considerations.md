@@ -2,24 +2,19 @@
 title: Vurderinger for søkemotoroptimalisering (SEO) for området
 description: Dette emnet dekker søkemotoroptimaliseringshensyn (SEO) for området fra utvikling til produksjon.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: df92aeae967bbf248b90dffc6bc2239a8d2959183acb9e9181bc344b9e3eff8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f90581766dba3d3a671df52ec08339a1a0fd7dc
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716863"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806411"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Vurderinger for søkemotoroptimalisering (SEO) for området
 
@@ -30,11 +25,15 @@ Dette emnet dekker søkemotoroptimaliseringshensyn (SEO) for området fra utvikl
 
 ## <a name="a-site-that-is-under-development"></a>Et område som er under utvikling
 
-Mens et område er under utvikling, skal alle områdesidene ha metakodene **NOINDEX** og **NOFOLLOW**, slik at søkemotorene ikke indekserer sidene og lagrer utviklingsversjoner av området i hurtigbufferen. Hvis du vil gjøre denne konfigurasjonen, må du legge til standard metakodemoduler i områdesidemalen. Standardegenskapene for metakoder vil da være tilgjengelige i delen om søkemotoregenskaper i sideredigeringsprogrammet. Du kan bruke disse egenskapene til å administrere metakodene.
+For å sikre at søkeresultater ikke indekserer et område under utvikling, bør alle områdesider ha **noindex** og **nofollow** metakodene. Det er en god fremgangsmåte å opprette et fragment basert på [Modul for metakoder](metatags-module.md) som inneholder følgende metakodeoppføring, og sørge for at fragmentet legges til i HTML \<head\>-delen i alle maler som brukes på området.
+
+```html
+<meta name="robots" content="noindex,nofollow" /> 
+```
 
 ## <a name="soft-launch-of-a-site"></a>Myk lansering av et område
 
-Under en "myk lansering" er et webområde gjort tilgjengelig for en begrenset målgruppe eller et begrenset marked før den fullstendige oppstarten skjer. Hvis du gjør en myk lansering av webområdet, bør du vurdere å la metakodene **NOINDEX** bli værende. På denne måten bidrar du til å sikre at den myke oppstarten forblir begrenset til den begrensede målgruppen du vil nå.
+Under en "myk lansering" er et webområde gjort tilgjengelig for en begrenset målgruppe eller et begrenset marked før den fullstendige oppstarten skjer. Hvis du gjør en myk lansering av webområdet, bør du vurdere å la metakodene **noindex** bli værende. På denne måten bidrar du til å sikre at den myke oppstarten forblir begrenset til den begrensede målgruppen du vil nå.
 
 ## <a name="a-site-that-is-in-production"></a>Et område som er i produksjon
 
@@ -44,7 +43,7 @@ For å optimalisere søkemotorindeksering bruker gjengivelsesrammeverket både o
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Innstillinger for sidesøkemotor for intern forhåndsvisning, begrenset målgruppe og alle målgrupper
 
-Fordi Dynamics 365 Commerce støtter WYSIWYG-forhåndsvisning i visuell sidebygger(det du ser, er det du får), kan forfattere klargjøre sideinnholdet uten å bekymre seg om at informasjonen blir synlig for besøkende på webområdet. Hvis en side må publiseres, men eksponeringen må begrenses, skal den ha metakoden **NOINDEX**, slik at den ikke vil bli indeksert av søkemotorer. Når siden er klar for alle målgrupper, bør alle de grunnleggende søkemotormetadataene være til stede for å maksimere effektiviteten av søkmotorindeksering. I tillegg bør metakoden **NOLIMIT** fjernes.
+Fordi Dynamics 365 Commerce støtter WYSIWYG-forhåndsvisning i visuell sidebygger(det du ser, er det du får), kan forfattere klargjøre sideinnholdet uten å bekymre seg om at informasjonen blir synlig for besøkende på webområdet. Hvis en side må publiseres, men eksponeringen må begrenses, skal den ha metakoden **noindex**, slik at den ikke vil bli indeksert av søkemotorer. Når siden er klar for alle målgrupper, bør alle de grunnleggende søkemotormetadataene være til stede for å maksimere effektiviteten av søkmotorindeksering. I tillegg bør metakoden **nolimit** fjernes.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -3,7 +3,7 @@ title: Butikkvelgermodul
 description: Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710786"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780661"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
@@ -138,23 +138,26 @@ Hvis du vil konfigurere butikkvelgermodulen til å vise tilgjengelige butikker f
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Markedsføringsmal**, og velger deretter **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I **Velg en mal**-dialogboksen velger du malen **Markedsføringsmal**. Under **Sidenavn** angir du **Butikklokasjoner** og velger deretter **OK**.
+1. I dialogboksen **Opprett ny side**, under **Sidenavn**, angir du en **Butikklokasjoner**, og velger deretter **Neste**.
+1. Velg **Markedsføringsmal**-malen du opprettet,under **Velg en mal**, og velg deretter **Neste**.
+1. Under **Velg et oppsett** velger du et sideoppsett (for eksempel **Fleksibelt oppsett**), og deretter velger du **Neste**.
+1. Gå gjennom sidekonfigurasjonen under **Gjennomgang og fullfør**. Hvis du har behov for å redigere sideinformasjonen, velger du **Tilbake**. Hvis sideinformasjonen er riktig, velger du **Opprett side**. 
 1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Beholder**-modulen, og deretter velger du **OK**.
 1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du modulen **Beholder med 2 kolonner**, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du modulen **Beholder med 2 kolonner**, og deretter velger du **OK**.
 1. I modulens egenskaperrute setter du **Bredde**-verdien til **Fyll container**.
 1. Sett verdien **Konfigurasjon av ekstra liten visningsport** til **100 %**.
 1. Sett verdien **Konfigurasjon av liten visningsport** til **100 %**.
 1. Sett verdien **Konfigurasjon av medium visningsport** til **33 % til 67 %**.
 1. Sett verdien **Konfigurasjon av stor visningsport** til **33 % til 67 %**.
 1. I **Beholder med 2 kolonner**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Butikkvelger**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Butikkvelger**-modulen, og deretter velger du **OK**.
 1. I modulens egenskaperrute setter du **Modus**-verdien til **Finn butikker**.
 1. Angi verdien for **Søkeradius** i miles.
 1. Angi andre egenskaper, for eksempel **Angi som foretrukket butikk**, **Vis alle butikker** og **Aktiver automatiske forslag**, etter behov.
 1. I **Beholder med 2 kolonner**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Kart**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Tilordne**-modulen, og deretter velger du **OK**.
 1. I modulens egenskapsrute angir du eventuelle tilleggsegenskaper du trenger.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
  

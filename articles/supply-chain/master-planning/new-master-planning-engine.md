@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469904"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809102"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Overføring til planleggingsoptimalisering for hovedplanlegging
 
@@ -47,7 +47,7 @@ som nevnt vil du få en feilmelding i versjon 10.0.16 og nyere hvis du kjører d
 
 ### <a name="new-deployments"></a>Nye distribusjoner
 
-Planleggingsoptimalisering bør betraktes som den standard hovedplanleggingsmotor for alle nye distribusjoner i skyen. Generelt bør planleggingsoptimalisering brukes for alle nye distribusjoner som ikke genererer planlagte produksjonsordrer under hovedplanlegging. Hvis en ny distribusjon er avhengig av funksjonaliteten som planleggingsoptimalisering ikke støtter for øyeblikket, kan du be om et unntak slik at du kan fortsette å bruke den innebygde hovedplanleggingsmotoren.
+Planleggingsoptimalisering må betraktes som den standard hovedplanleggingsmotor for alle nye distribusjoner i skyen. Generelt bør planleggingsoptimalisering brukes for alle nye distribusjoner som ikke genererer planlagte produksjonsordrer under hovedplanlegging. Hvis en ny distribusjon er avhengig av funksjonaliteten som planleggingsoptimalisering ikke støtter for øyeblikket, kan du be om et unntak slik at du kan fortsette å bruke den innebygde hovedplanleggingsmotoren.
 
 ### <a name="existing-deployments"></a>Eksisterende distribusjoner
 
@@ -63,7 +63,7 @@ Unntak fra overføring til planleggingsoptimalisering er for øyeblikket bare re
 
 Når de nødvendige funksjonene blir tilgjengelige, vil Microsoft angi en respittperiode helt til unntaket utløper. Miljøadministratoren blir informert når de nødvendige funksjonene har blitt tilgjengelige og respittperiode har startet.
 
-Følgende flytdiagram oppsummerer informasjonen som oppgis i dette emnet, slik at du raskt kan finne ut om du bør be om et unntak. Hvis du må be om et unntak, kan du fylle ut og sende inn [spørreskjemaet om migrering og unntak i Planleggingsoptimalisering](https://go.microsoft.com/fwlink/?linkid=2144962).
+Følgende flytdiagram oppsummerer informasjonen som oppgis i dette emnet, slik at du raskt kan finne ut om du bør be om et unntak. Hvis du må be om et unntak, kan du fylle ut og sende inn [spørreskjemaet om migrering og unntak i Planleggingsoptimalisering](https://go.microsoft.com/fwlink/?linkid=2144962). Produktgruppen er ansvarlig for å evaluere og godkjenne hver unntaksforespørsel, så du sender forespørselen direkte til produktgruppen ved hjelp av koblingen som tilbys, og ikke opprett en støttebillett for den. Hvis forespørselen din avvises, må du ikke opprette en støtteforespørsel, fordi Microsoft Support ikke kan evaluere eller gi unntak på nytt.
 
 ![Unntaksflytskjema.](media/exception-diagram.png "Unntaksflytskjema")
 

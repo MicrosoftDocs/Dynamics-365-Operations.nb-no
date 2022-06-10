@@ -2,7 +2,7 @@
 title: Interaktiv funksjonsmodul
 description: Dette emnet dekker interaktive funksjonsmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b18a29ce43e69ec0578602535f21e52388fe3d04ac14673bbdefed9ec8ea161
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ab325189812289390740e31fd673ee9892f9759
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749856"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780745"
 ---
 # <a name="interactive-feature-module"></a>Interaktiv funksjonsmodul
 
@@ -65,14 +65,14 @@ Hvis du vil legge til en interaktiv funksjonsmodul på en ny side og angi de nø
 
 1. Gå til **Maler**, og åpne markedsføringsmalen for områdets hjemmeside (eller opprett en ny markedsføringsmal).
 1. I **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Interaktiv funksjon**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Interaktiv funksjon**-modulen, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og åpne områdets hjemmeside (eller opprett en ny hjemmeside ved hjelp av markedsføringsmalen).
 1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** under **Velg moduler** velger du den **interaktive funksjons**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** under **Velg moduler** velger du den **interaktive funksjons**-modulen, og deretter velger du **OK**.
 1. I egenskapsruten for den interaktive funksjonsmodulen legger du til en overskrift.
 1. Velg ellipseknappen (**...**) i **Interaktiv funksjon**-sporet, og velg deretter **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Interaktiv funksjonselement**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Interaktiv funksjonselement**-modulen, og deretter velger du **OK**.
 1. Legg til et bilde, en overskriftstekst, en avsnittetstekst og en URL i egenskapsruten for den interaktive funksjonselementmodulen.
 1. Legg til og konfigurer flere interaktive funksjonselementmoduler etter behov.
 1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden.

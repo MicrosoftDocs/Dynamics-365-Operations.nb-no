@@ -2,7 +2,7 @@
 title: Aktiv bildemodul
 description: Dette emnet dekker aktive bildemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 36b7d6dea87c7f309c07608794d443a0ae19be211847d2cddcad95f2d933a8db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716914"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780291"
 ---
 # <a name="active-image-module"></a>Aktiv bildemodul
 
@@ -58,11 +58,11 @@ Hvis du vil legge til en aktiv bildemodul på en ny side og angi de nødvendige 
 
 1. Gå til **Maler**, og åpne markedsføringsmalen for områdets hjemmeside (eller opprett en ny markedsføringsmal).
 1. I **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Aktiv bilde**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Aktiv bilde**-modulen, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og åpne områdets hjemmeside (eller opprett en ny hjemmeside ved hjelp av markedsføringsmalen).
 1. På **Hoved**-sporet på standardsiden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Aktiv bilde**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Aktiv bilde**-modulen, og deretter velger du **OK**.
 1. Legg til et bilde i egenskapsruten for den aktive bildemodulen, og angi lerretsstørrelsen etter størrelsen på bildet.
 1. Angi X- og Y-koordinatene, og legg til det riktige produkt-ID-nummeret.
 1. Legg til og konfigurer flere aktive bildemoduler etter behov.

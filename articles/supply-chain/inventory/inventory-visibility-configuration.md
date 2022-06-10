@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547795"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786845"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurer lagersynlighet
 
@@ -60,7 +60,7 @@ Tillegget for lagersynlighet legger til flere nye funksjoner i Power Apps instal
 
 Hvis du ikke kjenner til det korrekte endepunktet for Lagersynlighet-tjenesten, åpner du **Konfigurasjon**-siden i Power Apps og velger deretter **Vis endepunkt for tjeneste** øverst til høyre. Siden vil vise det riktige endepunktet for tjenesten.
 
-## <a name="data-source-configuration"></a>Konfigurasjon av datakilde
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfigurasjon av datakilde
 
 Hver datakilde representerer et system som dataene kommer fra. Eksempler på datakildenavn inkluderer `fno` (som betyr "økonomi- og driftsapper for Dynamics 365 Finance") og `pos` (som betyr "salgssted"). Som standard er Supply Chain Management definert som en standard datakilde (`fno`) i Lagersynlighet.
 
@@ -141,7 +141,7 @@ Følg fremgangsmåten nedenfor for å legge til dimensjonstilordninger.
 
 Hvis datakilden for eksempel inneholder en produktfargedimensjon, kan du tilordne den til basisdimensjonen `ColorId` for å legge til en egendefinert `ProductColor`-dimensjon i `exterchannel`-datakilden. Deretter tilordnes den til `ColorId`-basisdimensjonen.
 
-### <a name="physical-measures"></a>Fysiske mål
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fysiske mål
 
 Når en datakilde posterer en lagerendring til Lagersynlighet, posteres denne endringen ved hjelp av *fysiske mål*. Fysiske mål endrer antallet og gjenspeiler lagerstatusen. Du kan definere dine egne fysiske mål basert på dine krav. Spørringer kan være basert på de fysiske målene.
 
@@ -175,6 +175,9 @@ Hvis datakilden er Supply Chain Management, trenger du ikke å opprette standard
 ### <a name="calculated-measures"></a>Beregnede mål
 
 Du kan bruke Lagersynlighet til å spørre både på fysiske lagermål og *egendefinerte beregnede mål*. Beregnede mål gir en tilpasset beregningsformel som består av en kombinasjon av fysiske mål. Med denne funksjonaliteten kan du definere et sett med fysiske mål som skal legges til, eller et sett med fysiske mål som skal trekkes fra, for å kunne lage det egendefinerte målet.
+
+> [!IMPORTANT]
+> Et beregnet mål er en sammensetning av fysiske mål. Formelen kan bare inneholde fysiske mål uten duplikater, ikke beregnede mål.
 
 Ved hjelp av konfigurasjonen kan du definere et sett med modifikatorer som legges til eller trekkes fra for å få totalt akkumulert utdataantall.
 

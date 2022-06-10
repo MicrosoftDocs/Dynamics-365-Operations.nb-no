@@ -2,7 +2,7 @@
 title: Iframe-modul
 description: Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/04/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: eeb9d76367be6b2d2153578f6358594b807382ac
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754020"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780240"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
@@ -56,12 +56,15 @@ Følg denne fremgangsmåten for å legge til en iFrame-modul på en side for å 
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Markedsføringsmal**, og velger deretter **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I **Velg en mal**-dialogboksen velger du malen **Markedsføringsmal**. Under **Sidenavn** angir du **Markedsføringsside**, og velger deretter **OK**.
+1. I dialogboksen **Opprett ny side**, under **Sidenavn**, angir du en **Markedsføringsside**, og velger deretter **Neste**.
+1. Velg **Markedsføringsmal**-malen du opprettet, under **Velg en mal**, og velg deretter **Neste**.
+1. Under **Velg et oppsett** velger du et sideoppsett (for eksempel **Fleksibelt oppsett**), og deretter velger du **Neste**.
+1. Gå gjennom sidekonfigurasjonen under **Gjennomgang og fullfør**. Hvis du har behov for å redigere sideinformasjonen, velger du **Tilbake**. Hvis sideinformasjonen er riktig, velger du **Opprett side**. 
 1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Beholder**-modulen, og deretter velger du **OK**.
 1. I modulens egenskaperrute setter du **Bredde**-verdien til **Fyll container**.
 1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **iFrame**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **iframe**-modulen, og deretter velger du **OK**.
 1. I modulens egenskapsrute angir du verdien for **Mål-URL-adresse** til en ekstern URL-adresse for en video.
 1. Angi andre egenskaper, for eksempel **Overskrift** og **Høyde** etter behov.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.

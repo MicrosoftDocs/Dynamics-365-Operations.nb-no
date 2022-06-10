@@ -2,7 +2,7 @@
 title: Digitale gavekort for e-handel
 description: Dette emnet beskriver hvordan digitale gavekort fungerer i e-handelsimplementeringen av Microsoft Dynamics 365 Commerce. Det gir også en oversikt over viktige konfigurasjonstrinn.
 author: anupamar-ms
-ms.date: 12/15/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e0cbab05cfd9dcde8ec5caf802d13cd10bc9123716b46307616b0e3e66f0f061
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de8811b3265bc582a055aaad1f3dea32def552f4
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727563"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809593"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale gavekort for e-handel
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan digitale gavekort fungerer i e-handelsimplementeringen av Microsoft Dynamics 365 Commerce. Det gir også en oversikt over viktige konfigurasjonstrinn.
 
@@ -51,15 +50,18 @@ Digitale gavekortprodukter konfigureres i Commerce Headquarters. Prosessen ligne
 
     ![Gavekortproduktfelt i Commerce Headquarters.](./media/PostGiftcard.png)
 
-- Hvis et gavekort må ha støtte for flere forhåndsdefinerte beløp (for eksempel $25, $50 og $100), må dimensjonen **Størrelse** brukes til å definere disse forhåndsdefinerte beløpene. Hvert forhåndsdefinerte beløp er en variant. Hvis du vil ha mer informasjon, kan du se [Produktdimensjoner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
-- Hvis kunder må kunne angi et egendefinert beløp for et gavekort, må du først definere en variant som gir rom for et egendefinert beløp. Deretter åpner du produktet fra siden **Frigitte produkter i kategori**, og deretter, i hurtigfanen **Commerce**, angir du feltet **Tast inn pris** til **Må taste inn ny pris**, som vist i illustrasjonen nedenfor. Denne innstillingen sikrer at kunder kan angi en pris når de blar gjennom produktet på en PDP.
+- Hvis et gavekort må ha støtte for flere forhåndsdefinerte beløp (for eksempel $25, $50 og $100), må dimensjonen **Størrelse** brukes til å definere disse forhåndsdefinerte beløpene. Hvert forhåndsdefinerte beløp er en produktvariant. Hvis du vil ha mer informasjon, kan du se [Produktdimensjoner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
+- Hvis kunder må kunne angi et egendefinert beløp for et gavekort i tillegg til forhåndsdefinerte beløp, må du først definere en variant som gir rom for et egendefinert beløp. **Størrelse**-attributtet støtter egendefinerte beløpsvarianter. Deretter åpner du produktet fra siden **Frigitte produkter i kategori**, og deretter, i hurtigfanen **Commerce**, angir du feltet **Tast inn pris** til **Må taste inn ny pris**, som vist i eksempelillustrasjonen nedenfor. Denne innstillingen sikrer at kunder kan angi en pris når de blar gjennom produktet på en PDP.
 
     ![Tast inn pris-feltet i Commerce Headquarters.](./media/KeyInPrice.png)
+    
+    Illustrasjonen nedenfor viser en liste over digitale gavekortvarianter i Commerce Headquarters, inkludert to egendefinerte prisvarianter.
+    ![Digitale gavekortproduktvarianter med eksempel på egendefinert prisvariant](./media/DigitalGiftCards_ProductVariantsWithCustom.png)
 
 - Leveringsmåten for et digitalt gavekort må settes til **Elektronisk**. På **Leveringsmåter**-siden (**Retail og Commerce \> Kanaloppsett \> Leveringsmåter**) velger du leveringsmåten **Elektronisk** i listeruten, og deretter legger du til det digitale gavekortproduktet i rutenettet i hurtigfanen **Produkter**, som vist i illustrasjonen nedenfor. Hvis du vil ha mer informasjon, kan du se [Definere leveringsmåter](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitale gavekortprodukter på siden Leveringsmåte i Commerce Headquarters.](./media/ElectronicMode.PNG)
-
+    
 - Kontroller at det er opprettet en online funksjonalitetsprofil som er knyttet til den elektroniske butikken i Commerce Headquarters. I funksjonalitetsprofilen angir du alternativet **Slå sammen produkter** til **Ja**. Denne innstillingen sikrer at alle varer unntatt gavekort slås sammen. Hvis du vil ha mer informasjon, kan du se [Opprette en nettbasert funksjonalitetsprofil](online-functionality-profile.md).
 - Hvis du vil sikre at kundene mottar en e-post etter at et gavekort er fakturert, oppretter du en ny type e-postvarsling på siden **E-postvarslingsprofiler** og setter feltet **E-postvarslingstype** til **Utsted gavekort**. Hvis du vil ha mer informasjon, kan du se [Definere en profil for e-postvarsling](email-notification-profiles.md).
 

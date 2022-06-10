@@ -2,7 +2,7 @@
 title: Vise og oppdatere enhetsdata med Excel
 description: Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Excel-tillegget for Microsoft Dynamics.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464944"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762660"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Vise og oppdatere enhetsdata med Excel 
 
@@ -110,7 +110,7 @@ Du kan bruke utformingen til å justere kolonnene som automatisk legges til i re
 5. Hvis du har lagt til et felt (kolonne), velger du **Oppdater** for å trekke inn et oppdatert sett med data.
 
 ## <a name="change-the-publish-batch-size"></a>Endre størrelsen på publiseringspartiet
-Når brukere publiserer endringer i dataposter ved hjelp av Excel-tillegget, sendes oppdateringene i partier. Standardstørrelsen på publiseringspartiet er 100 rader. I versjon 10.0.17 og nyere får du fleksibel kontroll over størrelsen på publiseringspartiet med funksjonen **Tillat konfigurasjon av størrelsen på publiseringspartiet i Excel-tillegget**.
+Når brukere publiserer endringer i dataposter ved hjelp av Excel-tillegget, sendes oppdateringene i partier. Standard (og maksimum) publiseringspartistørrelse er 100 rader. Funksjonen **Tillat konfigurasjon av publiseringspartistørrelsen i Excel-tillegget** gir deg imidlertid fleksibilitet ved senking av publiseringspartistørrelsen, spesielt hvis du ser tidsbrudd når du prøver å publisere oppdateringer fra Excel.
 
 Systemadministratorer kan angi en grense for størrelsen på publiseringspartiet som gjelder for hele systemet, for arbeidsbøker som åpnes i Excel, ved å bruke feltet **Grense for publiseringsparti** under **App-parametere** på siden **Parametere til Office-app**.
 

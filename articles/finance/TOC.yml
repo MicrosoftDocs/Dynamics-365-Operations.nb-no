@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.28 (august)
+                  href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (juli)
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (mai)
@@ -256,8 +258,10 @@
               href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Oversikt over positiv betaling
               href: accounts-payable/positive-pay-overview.md
-            - name: Definere og generere positive betalingsfiler
+            - name: Definer og generer positive betalingsfiler
               href: accounts-payable/set-up-generate-positive-pay-files.md
+            - name: Definer og generer positive betalingsfiler ved hjelp av elektronisk rapportering
+              href: accounts-payable/set-up-positive-pay-ER.md
             - name: Standard motkontoer for leverandørfakturajournaler og fakturagodkjenningsjournaler
               href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
             - name: Arbeidsflyt for leverandør
@@ -268,6 +272,8 @@
                   href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
                 - name: Undersøk eller løs unntak
                   href: accounts-payable/tasks/research-resolve-exceptions.md
+            - name: Leverandørgjeldpostering
+              href: general-ledger/accts-payble-posting.md
             - name: Leverandørposteringsprofiler
               href: accounts-payable/vendor-posting-profiles.md
             - name: Opprett tilleggskoder
@@ -342,13 +348,17 @@
               href: general-ledger/tasks/establish-customer-payment-terms.md
             - name: Opprette kundebetalingsmåte
               href: accounts-receivable/tasks/establish-customer-method-payment.md
-            - name: Opprette kundebetalingsgebyrer
+            - name: Opprett kundebetalingsgebyrer
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
             - name: Innsikt i kundebetaling (forhåndsversjon)
               href: accounts-receivable/payment-insights-overview.md
+            - name: Postering av utestående fordringer
+              href: general-ledger/accts-recvble-posting.md
             - name: Kundeposteringsprofiler
               href: accounts-receivable/customer-posting-profiles.md
-            - name: Kopiere kunder ved hjelp av delte nummerserier
+            - name: Opprett tilleggskoder
+              href: accounts-receivable/create-charges-codes.md
+            - name: Kopier kunder ved hjelp av delte nummerserier
               href: accounts-receivable/copy-customer.md
             - name: Arbeidsflyt for kunde
               href: accounts-receivable/customer-workflow.md
@@ -444,6 +454,8 @@
                       href: accounts-receivable/sb-alignment-date-examples.md
                     - name: Inntektsdeling
                       href: accounts-receivable/sb-revenue-split.md
+                    - name: Periodiske oppgaver
+                      href: accounts-receivable/sb-periodic-tasks.md
                 - name: Inntekts- og utgiftsutsettelser
                   items:
                     - name: Definer inntekts- og utgiftsutsettelser
@@ -466,6 +478,8 @@
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Innbetale kundebetalinger
                   href: accounts-receivable/tasks/deposit-customer-payments.md
+                - name: Definer og behandle mellombetalinger
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
                 - name: Oversikt over SEPA-avtalegiro
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: SEPA-avtalegiromandat
@@ -660,11 +674,13 @@
               items:
                 - name: Oppsettsprosess for avansert bankavstemming
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Definere prosessen for avansert bankavstemmingsimport
+                - name: Definer prosessen for avansert bankavstemmingsimport
                   href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
-                - name: Definere samsvarsregler for bankavstemming
+                - name: Definer prosessen for avansert bankavstemmingsimport ved hjelp av elektronisk rapportering
+                  href: accounts-payable/import-bai2-er.md
+                - name: Definer samsvarsregler for bankavstemming
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
-                - name: Avstemme bankkontoutdrag ved hjelp av avansert bankavstemming
+                - name: Avstem bankkontoutdrag ved hjelp av avansert bankavstemming
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
                 - name: MT940-import av avansert bankavstemming – oppgradering for sammensatt dataenhet
                   href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
@@ -1044,6 +1060,14 @@
                       href: general-ledger/recommended-practices-pstg-prfles.md
                     - name: Kontoer for automatiske transaksjoner
                       href: general-ledger/accounts-for-auto-transactions.md
+                    - name: Leverandørgjeldpostering
+                      href: general-ledger/accts-payble-posting.md
+                    - name: Postering av utestående fordringer
+                      href: general-ledger/accts-recvble-posting.md
+                    - name: Postering av aktivaleie
+                      href: asset-leasing/set-up-lease-posting-accts.md
+                    - name: Anleggsmiddelpostering
+                      href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Tildelingsregler
                   items:
                     - name: Finanstildelingsregler
@@ -1288,11 +1312,13 @@
               href: public-sector/cash-position-inquiry-setup.md
             - name: Leverandør i offentlig sektor
               items:
-                - name: Oversikt over leverandør i offentlig sektor
+                - name: Oversikt over leverandørgjeld i offentlig sektor
                   href: public-sector/accounts-payable-public-sector.md
                 - name: Bestillingskoder i offentlig sektor
                   href: public-sector/purchase-order-codes-public-sector.md
-                - name: Opprette og tilordne en handelspartnerkode i offentlig sektor
+                - name: Bestillinger og overført budsjett
+                  href: public-sector/determine-carry-forward-budget.md
+                - name: Opprett og tildel en handelspartnerkode i offentlig sektor
                   href: public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: Posteringsdefinisjoner i offentlig sektor
                   href: public-sector/posting-definitions-public-sector.md
@@ -1774,10 +1800,12 @@
                   href: localizations/belgium.md
                 - name: CODA-bankkontoutdrag
                   href: localizations/emea-bel-coda-bank-statement-import.md
-                - name: Opprette og overføre transaksjoner til BLWI
+                - name: Opprett og overfør transaksjoner til BLWI
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
                 - name: Eksporter finanstransaksjoner
                   href: localizations/emea-bel-export-ledger-transactions.md
+                - name: EU-salgsliste
+                  href: localizations/emea-bel-eu-sales-list.md
                 - name: INTERVAT-avgiftsdeklarering
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Avstemmingsrapporter
@@ -1788,10 +1816,12 @@
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Definer og vedlikehold PRODCOM
                   href: localizations/emea-bel-prodcom-report.md
-                - name: Årlig mva-liste over innenlandssalg
+                - name: Årlig mva-liste over innenlands salg
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
                 - name: Belgisk Intrastat
                   href: localizations/emea-bel-intrastat.md
+                - name: Mva-deklarering
+                  href: localizations/emea-bel-vat-declaration-belgium.md
             - name: Brasil
               items:
                 - name: Oversikt over Brasil
@@ -2092,11 +2122,13 @@
                   href: localizations/tasks/create-post-customer-invoice-public-sector-customer.md
                 - name: Opprette og postere en fritekstfaktura for en kunde i offentlig sektor
                   href: localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
-                - name: Opprette og postere en prosjektfaktura for en kunde i offentlig sektor
+                - name: Opprett og poster en prosjektfaktura for en kunde i offentlig sektor
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
-                - name: Importere konfigurasjoner for elektroniske OIOUBL-faktureringer
+                - name: EU-salgsliste
+                  href: localizations/emea-dnk-eu-sales-list.md
+                - name: Importer konfigurasjoner for elektroniske OIOUBL-faktureringer
                   href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
-                - name: Postere en fritekstfaktura med et betalingsbilag
+                - name: Poster en fritekstfaktura med et betalingsbilag
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
                 - name: Postere en prosjektfaktura med et betalingsbilag
                   href: localizations/tasks/post-project-invoice-payment-slip.md
@@ -2296,6 +2328,8 @@
                   href: localizations/emea-fin-intrastat.md
                 - name: Mva-deklarering
                   href: localizations/emea-fin-vat-declaration.md
+                - name: EU-salgsliste
+                  href: localizations/emea-fin-eu-sales-list.md
             - name: Frankrike
               items:
                 - name: Oversikt over Frankrike
@@ -3084,10 +3118,12 @@
                   href: localizations/lithuania.md
                 - name: Oppgave for reparasjon av anleggsmiddel
                   href: localizations/emea-ltu-fixed-asset-repair-statement.md
-                - name: Generere et dokument for overføring av anleggsmiddel mellom lagre
+                - name: Generer et dokument for overføring av anleggsmiddel mellom lagre
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
                 - name: Detaljer om mva-oppgave
                   href: localizations/emea-ltu-vat-statement-details.md
+                - name: Intrastat for Litauen
+                  href: localizations/emea-ltu-intrastat.md
                 - name: i.SAF-rapportering for Litauen
                   href: localizations/emea-ltu-isaf.md
                 - name: Standard revisjonsfil for avgift (SAF-T) for Litauen
@@ -3224,12 +3260,14 @@
                   href: localizations/poland.md
                 - name: Aktivere Storno-regnskapsføring
                   href: localizations/emea-pol-red-storno.md
-                - name: Beregne linjerabatter fra enhetsprisen
+                - name: Beregn linjerabatter fra enhetsprisen
                   href: localizations/emea-pol-line-discount-calculation-from-unit-price.md
                 - name: Rettelsesmerknader
                   href: localizations/emea-pol-correction-notes.md
-                - name: Duplisere salgsfakturanummerering
+                - name: Dupliser salgsfakturanummerering
                   href: localizations/emea-pol-sales-invoice-duplicates-numbering.md
+                - name: EU-salgsliste
+                  href: localizations/emea-pol-eu-sales-list.md
                 - name: Avskrivning av anleggsmiddel
                   href: localizations/emea-pol-fixed-assets-depreciation.md
                 - name: Utvidelse for avhendingsfunksjonalitet for anleggsmiddel
@@ -3546,12 +3584,14 @@
                   href: localizations/emea-esp-cash-discount-applied-invoice.md
                 - name: Alternativer for veksel
                   href: localizations/emea-esp-bill-of-exchange-options.md
-                - name: Beregne forfallsdatoer og rapportere gjennomsnittlig periode for betalinger
+                - name: Beregn forfallsdatoer og rapporter gjennomsnittlig periode for betalinger
                   href: localizations/emea-esp-invoice-due-dates.md
-                - name: Betinget mva.
+                - name: Betinget merverdiavgift
                   href: localizations/emea-esp-conditional-sales-tax.md
                 - name: Krediter fakturering
                   href: localizations/tasks/emea-esp-credit-invoicing.md
+                - name: EU-salgsliste
+                  href: localizations/emea-esp-sales-list.md
                 - name: Fakturakonto for regnskapsdata
                   href: localizations/emea-esp-fiscal-data-invoice-account.md
                 - name: Revalueringsgruppe for anleggsmiddel
@@ -3666,10 +3706,12 @@
                       href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
                     - name: Mva-oppsettdetaljer for mva-deklareringer i Storbritannia
                       href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                    - name: Generere en mva-deklarering i papirformat (MVA 100-rapport)
+                    - name: Generer en mva-deklarering i papirformat (MVA 100-rapport)
                       href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Rapport om statistikk over betalingspraksis
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
+                - name: EU-salgsliste
+                  href: localizations/emea-uk-eu-sales-list.md
             - name: USA
               items:
                 - name: Oversikt over USA
@@ -4335,10 +4377,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                     - name: Bruk BARCODE til å generere strekkodebilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
+                    - name: Konfigurer OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Bruk datakilder for DATAINNSAMLING i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Bruk datakildene for USER INPUT PARAMETER til å angi parametere for en rapport du vil generere
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Feilsøk datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurer datamodeller

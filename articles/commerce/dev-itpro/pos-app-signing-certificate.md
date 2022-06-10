@@ -1,8 +1,8 @@
 ---
-title: Signere MPOS med et kodesigneringssertifikat
+title: Signere MPOS .appx-filen med en kodesigneringssertifikat
 description: Dette emnet forklarer hvordan du signerer MPOS med et kodesigneringssertifikat.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.custom: 28021
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 38c094de6f94381a809fdb68d2e76d410e406934
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741549"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811091"
 ---
-# <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>Signer MPOS appx med en kodesigneringssertifikat
+# <a name="sign-the-mpos-appx-file-with-a-code-signing-certificate"></a>Signere MPOS .appx-filen med en kodesigneringssertifikat
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Hvis du vil installere Modern POS (MPOS), må du signere MPOS-appen med et kodesigneringssertifikat fra en klarert leverandør og installere samme sertifikat på alle maskinene der MPOS er installert, under den klarerte rotmappen for den gjeldende brukeren.
 
@@ -51,21 +52,22 @@ Vi anbefaler bruk av en oppgave for sikker fil ved signering av UWP-apper (Unive
 Last ned [DownloadFile-oppgaven](/visualstudio/msbuild/downloadfile-task), og legg den til som første trinn i byggprosessen. Fordelen ved å bruke oppgaven for sikker fil er at filen krypteres og legges på disken under bygging uansett om kompileringskontrollen blir vellykket, mislykket eller avbrutt. Filen slettes fra nedlastingsstedet etter at byggprosessen er fullført.
 
 1. Last ned og legg til oppgaven for sikker fil som første trinn i Azure-kompileringskontrollen. Du kan laste ned oppgaven for sikker fil fra [DownloadFile](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
-2. Last opp sertifikatet til oppgaven for sikker fil, og angi referansenavn under Utdatavariabler, som vist på bildet nedenfor.
+1. Last opp sertifikatet til oppgaven for sikker fil, og angi referansenavn under Utdatavariabler, som vist på bildet nedenfor.
     > [!div class="mx-imgBorder"]
     > ![Oppgave for sikker fil.](media/SecureFile.png)
-3. Opprett en ny variabel i Azure Pipelines ved å velge **Ny variabel** i **Variabler**-fanen.
-4. Gi variabelen et navn i verdifeltet, for eksempel **MySigningCert**.
-5. Lagre variabelen.
-6. Åpne filen **Customization.settings** fra **RetailSDK\\BuildTools**, og oppdater **ModernPOSPackageCertificateKeyFile** med variabelnavnet du opprettet i datasamlebåndet (trinn 3). For eksempel:
+1. Opprett en ny variabel i Azure Pipelines ved å velge **Ny variabel** i **Variabler**-fanen.
+1. Gi variabelen et navn i verdifeltet, for eksempel **MySigningCert**.
+1. Lagre variabelen.
+1. Åpne filen **Customization.settings** fra **RetailSDK\\BuildTools**, og oppdater **ModernPOSPackageCertificateKeyFile** med variabelnavnet du opprettet i datasamlebåndet (trinn 3). For eksempel:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     Dette trinnet kreves hvis sertifikatet ikke er passordbeskyttet. Hvis sertifikatet er passordbeskyttet, fortsetter du med følgende trinn.
- 
-7. Legg til en ny secure-text-variabel i **Variabler**-fanen for datasamlebåndet. Bruk **MySigningCert.secret** som navn, angi verdien til passordet for sertifikatet. Velg låseikonet for å sikre variabelen.
-8. Legg til oppgaven **PowerShell-skript** i datasamlebåndet (etter Last ned sikker fil og før byggtrinnet). Angi **Visning**-navnet og angi **Innebygd** som type. Kopier og lim inn følgende i skriptdelen.
+    
+1. Hvis du vil tidsstemple MPOS .appx-filen ved signering av den med et sertifikat, kan du åpne filen **Retail SDK\\Build tool\\Customization.settings** og oppdatere variabelen **ModernPOSPackageCertificateTimestamp** med tidsstempelleverandøren (for eksempel `http://timestamp.digicert.com`).
+1. Legg til en ny secure-text-variabel i **Variabler**-fanen for datasamlebåndet. Bruk **MySigningCert.secret** som navn, angi verdien til passordet for sertifikatet. Velg låseikonet for å sikre variabelen.
+1. Legg til oppgaven **PowerShell-skript** i datasamlebåndet (etter Last ned sikker fil og før byggtrinnet). Angi **Visning**-navnet og angi **Innebygd** som type. Kopier og lim inn følgende i skriptdelen.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -74,7 +76,7 @@ Last ned [DownloadFile-oppgaven](/visualstudio/msbuild/downloadfile-task), og le
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Åpne filen **Customization.settings** fra **RetailSDK\\BuildTools**, og oppdater **ModernPOSPackageCertificateThumbprint** med verdien til sertifikatavtrykket.
+1. Åpne filen **Customization.settings** fra **RetailSDK\\BuildTools**, og oppdater **ModernPOSPackageCertificateThumbprint** med verdien til sertifikatavtrykket.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -82,7 +84,6 @@ Last ned [DownloadFile-oppgaven](/visualstudio/msbuild/downloadfile-task), og le
  
 Hvis du vil ha mer informasjon om hvordan du får avtrykket for et sertifikat, kan du se [hente avtrykket for et sertifikat](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>Laste ned eller generere et sertifikat for å signere MPOS-appen manuelt ved hjelp av msbuild i SDK
 
 Hvis et nedlastet eller generert sertifikat brukes til å signere MPOS-appen, oppdaterer du noden **ModernPOSPackageCertificateKeyFile** i filen **BuildTools\\Customization.settings** slik at den peker mot plasseringen til PFX-filen (**$(SdkReferencesPath)\\appxsignkey.pfx**). For eksempel:

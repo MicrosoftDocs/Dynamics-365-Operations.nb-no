@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.28 (august 2022)
+                  href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (juli 2022)
                   href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (mai 2022)
@@ -711,6 +713,8 @@
           items:
             - name: Startside for kostnadsstyring
               href: cost-management/cost-management-home-page.md
+            - name: Vanlige spørsmål om lageretterkalkulering
+              href: cost-management/inventory-costing-faq.md
             - name: Forutsetninger for standardkostnader
               items:
                 - name: Oversikt over forutsetninger for standardkostnader
@@ -1423,10 +1427,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Bruk BARCODE til å generere strekkodebilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurere OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
+                    - name: Konfigurer OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Bruk datakilder for DATAINNSAMLING i ER-formater
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bruk datakildene for USER INPUT PARAMETER til å angi parametere for en rapport du vil generere
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Feilsøk datakilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurer datamodeller
@@ -1707,7 +1713,9 @@
                   href: inventory/inventory-visibility-power-platform.md
                 - name: Inventory Visibility-reservasjoner
                   href: inventory/inventory-visibility-reservations.md
-                - name: Endringsplan for lagersynlighetsbeholdning og tilgjengelig for ordre
+                - name: Lagertildeling for Inventory Visibility
+                  href: inventory/inventory-visibility-allocation.md
+                - name: Endringsplan for Inventory Visibility-beholdning og tilgjengelig for ordre
                   href: inventory/inventory-visibility-available-to-promise.md
                 - name: Offentlige API-er for lagersynlighet
                   href: inventory/inventory-visibility-api.md
@@ -3285,9 +3293,21 @@
               href: landed-cost/landed-cost-inquiries.md
             - name: Rapporter om netto innkjøpspris
               href: landed-cost/landed-cost-reports.md
+            - name: Dataenheter for netto innkjøpspris
+              items:
+                - name: Oversikt over enheter for netto innkjøpspris
+                  href: landed-cost\landed-cost-entities-overview.md
+                - name: Enheter for sjøreiseoppretting
+                  href: landed-cost\landed-cost-entities-voyage-creation.md
+                - name: Kostnadstransaksjonsenheter
+                  href: landed-cost\landed-cost-entities-cost-transactions.md
+                - name: Enhet for containeraktiviteter
+                  href: landed-cost\landed-cost-entities-container-activities.md
+                - name: Leverandørfakturarenheter
+                  href: landed-cost\landed-cost-entities-vendor-invoices.md
         - name: Lagerstyring
           items:
-            - name: Oversikt over Lagerstyring
+            - name: Oversikt over lagerstyring
               href: warehousing/warehouse-management-overview.md
             - name: Innkommende lageroperasjoner
               items:

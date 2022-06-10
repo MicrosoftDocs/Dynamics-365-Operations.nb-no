@@ -2,19 +2,19 @@
 title: Forbedringer for utdragsposteringsfunksjonalitet
 description: Dette emnet beskriver forbedringene som er gjort i funksjonen for utdragspostering.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649025"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770175"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer for utdragsposteringsfunksjonalitet
 
@@ -151,6 +151,9 @@ Visningen av aggregerte transaksjoner gir følgende fordeler:
 - Brukeren har oversikt over hvordan transaksjoner aggregeres.
 - Brukeren har en fullstendig revisjonssporing, fra transaksjoner, til salgsordrer til salgsfakturaer. Denne revisjonssporingen var ikke tilgjengelige i den eldre funksjonen for utdragspostering.
 - Den aggregerte XML-filen gjør det enklere å identifisere problemer under oppretting av salgsordre og fakturering.
+
+> [!NOTE]
+> Når transaksjonene samles opp, er ikke stabsmedlemmet som er tilordnet transaksjonen, lenger tilgjengelig for **Rapport om salg etter beste stab**, som betyr at **Rapport om salg etter beste stab** ikke vil vise alle transaksjonene. Vi anbefaler at du ikke bruker **Rapport om salg etter beste stab** akkumulerte transaksjoner.
 
 ### <a name="journal-vouchers"></a>Journalbilag
 

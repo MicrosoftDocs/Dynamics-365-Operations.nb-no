@@ -2,7 +2,7 @@
 title: Tekstblokkmodul
 description: Dette emnet dekker tekstblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9068c35eaeee68f97d81d168983d7281da09491cb0afd70cb8196010ce771b0d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 18a4226d3b8dce1b46e6612521d70a3627b517d1
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723317"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780495"
 ---
 # <a name="text-block-module"></a>Tekstblokkmodul
 
@@ -59,15 +59,18 @@ Hvis du vil legge til en tekstblokkmodul på en ny side og angi de nødvendige e
 1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Innholdsmal**.
 1. I **Tekst**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Standardside**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Legg moduler** velger du **Standardside**-modulen, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
 1. Gå til **Sider**, og velg **Ny** for å opprette en ny side.
-1. I **Velg en mal**-dialogboksen velger du **Innholdsmal**. Under **Sidenavn** angir du **Innholdsside**, og velger deretter **OK**.
+1. I dialogboksen **Opprett ny side**, under **Sidenavn**, angir du en **Innholdside**, og velger deretter **Neste**.
+1. Velg **Innholdsmal** under **Velg en mal**, og velg deretter **Neste**.
+1. Under **Velg et oppsett** velger du et sideoppsett (for eksempel **Fleksibelt oppsett**), og deretter velger du **Neste**.
+1. Gå gjennom sidekonfigurasjonen under **Gjennomgang og fullfør**. Hvis du har behov for å redigere sideinformasjonen, velger du **Tilbake**. Hvis sideinformasjonen er riktig, velger du **Opprett side**. 
 1. På **Hoved**-sporet på den nye siden velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I dialogboksen **Velg moduler** velger du **Beholder**-modulen, og deretter velger du **OK**.
 1. I egenskapsruten for containermodulen setter du **Bredde**-egenskapen til **Fyll container**.
 1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
-1. I dialogboksen **Legg til modul** velger du **Tekstblokk**-modulen, og deretter velger du **OK**. 
+1. I dialogboksen **Velg moduler** velger du **Tekstblokk**-modulen, og deretter velger du **OK**. 
 1. I egenskapsruten for tekstblokkmodulen legger du til tekst i feltet **Rik tekst**.
 1. Velg **Lagre**, og velg deretter **Forhåndsvisning** for å forhåndsvise siden.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.

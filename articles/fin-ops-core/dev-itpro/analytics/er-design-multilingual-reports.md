@@ -2,7 +2,7 @@
 title: Utforme flerspråklige rapporter i elektronisk rapportering
 description: Dette emnet beskriver hvordan du kan bruke etiketter for elektronisk rapportering (ER) til å utforme og generere flerspråklige rapporter.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313697"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811614"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Utforme flerspråklige rapporter i elektronisk rapportering
 
@@ -217,6 +217,11 @@ Oversatte etiketter vil bli importert til valgt ER-konfigurasjon. Oversatte etik
 Etiketter med en ER-komponent som kan redigeres, beholdes, sammen med annet innhold for komponenten, i riktig versjon av en ER-konfigurasjon.
 
 Etiketter i en basis-ER-komponent kan refereres til en avledet versjon av ER-komponenten som du oppretter for å introdusere endringene.
+
+> [!TIP]
+> Når du utformer en ER-løsning, kan du avlede din egen ER-[datamodell](er-overview-components.md#data-model-component)-komponent fra den som følger med. I denne avledede datamodellen kan du introdusere dine egne ER-etiketter og bruke dem i alle ER-formater som skal bruke datamodellen som datakilde. Du kan deretter avlede din egen ER-[format](er-overview-components.md#format-component)-komponenten fra den angitte komponenten ved å velge den avledede ER-datamodellen i stedet for den angitte. I versjon 10.0.28 eller senere, kan du aktivere funksjonen for **Forbedret tilgang til etiketter for den dominerende ER-datamodell** for å få tilgang til etiketter for en dominerende ER-datamodell i avledede ER-formatkomponenter, selv når du valgte en ER-datamodell som er forskjellig fra den som ble brukt i den grunnleggende ER-komponenten, for den avledede ER-komponenten.
+>
+> Når det samme etikettnavnet brukes i den avledede komponenten og dens stigende komponenter, brukes oversettelsen av etiketten som den mest relevante.
 
 Etikettilordning for ER-versjonskontroller til et hvilket som helst attributt i en ER-komponent. Endringer i etikettilordningen registreres i listen over endringer (delta) i en redigerbar ER-komponent som er opprettet som en avledet versjon av den angitte ER-komponenten. Disse endringene vil bli validert når en avledet versjon rebaseres til en ny basisversjon.
 

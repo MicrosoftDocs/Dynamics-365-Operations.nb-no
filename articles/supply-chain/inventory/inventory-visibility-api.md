@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524472"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786873"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API-er for lagersynlighet
 
@@ -41,17 +41,22 @@ Følgende tabell viser API-ene som er tilgjengelige for øyeblikket:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Poster | [Angi/overstyre lagerbeholdninger](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Poster | [Opprett én reservasjonshendelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Poster | [Opprett flere reservasjonshendelser](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Poster | [Opprett én planlagt lagerendring](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Poster | [Opprett flere planlagte lagerendringer](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Poster | [Opprett én planlagt lagerendring](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Poster | [Opprett flere planlagte lagerendringer](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Poster | [Spør ved å bruke posteringsmetoden](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Hent | [Spør ved å bruke hentemetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocate | Poster | [Opprett én tildelingshendelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Poster | [Opprett én ikke-tilordnet-hendelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Poster | [Opprett én hendelse for ny tildeling](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Poster | [Opprett én konsumeringshendelse](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Poster | [Fordelingsresultat for spørring](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > Delen {environmentId} av banen er miljø-IDen i Microsoft Dynamics Lifecycle Services (LCS).
 > 
 > Bulk-API-en kan returnere maksimalt 512 poster for hver forespørsel.
 
-Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Finn sluttpunktet i henhold til Lifecycle Services-miljøet
 
@@ -84,7 +89,7 @@ Microsoft har bygd et brukergrensesnitt i Power Apps, slik at du kan få det ful
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Godkjenning
 
-Platformsikkerhetstokenet brukes til å kalle inn den offentlige API-en for lagersynlighet. Derfor må du generere et _Azure Active Directory-token (Azure AD)_ ved hjelp av Azure AD-appen. Du må deretter bruke Azure AD-tokenet til å få _tilgangstokenet_ fra sikkerhetstjenesten.
+Platformsikkerhetstokenet brukes til å kalle inn den offentlige API-en for lagersynlighet. Derfor må du generere et _Azure Active Directory (Azure AD)-token_ ved hjelp av Azure AD-appen. Du må deretter bruke Azure AD-tokenet til å få _tilgangstokenet_ fra sikkerhetstjenesten.
 
 Microsoft leverer en *Postman*-tokensamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -539,7 +544,7 @@ Følgende eksempel viser eksempeltekstinnholdet.
 }
 ```
 
-Eksemplene nedenfor viser hvordan du spør på alle produkter på et bestemt område og sted.
+Eksemplet nedenfor viser hvordan du spør på alle produkter på et bestemt område og sted.
 
 ```json
 {
@@ -580,6 +585,10 @@ Her er et eksempel på henting av en URL-adresse. Denne hentforespørselen er n�
 
 ## <a name="available-to-promise"></a>Tilgjengelig for ordre
 
-Du kan konfigurere Lagersynlighet slik at du kan planlegge fremtidige endringer i lagerbeholdningen og beregne ATP-antall. ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde i løpet av den neste perioden. Bruk av ATP-beregningen kan øke kapasiteten for innfrielse av bestillinger betydelig. Hvis du vil ha informasjon om hvordan du aktiverer denne funksjonen, og hvordan du samhandler med Lagersynlighet via API-en etter at funksjonen er aktivert, kan du se [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md).
+Du kan konfigurere Lagersynlighet slik at du kan planlegge fremtidige endringer i lagerbeholdningen og beregne ATP-antall. ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde i løpet av den neste perioden. Bruk av ATP-beregningen kan øke kapasiteten for innfrielse av bestillinger betydelig. Hvis du vil ha informasjon om hvordan du aktiverer denne funksjonen, og hvordan du samhandler med Lagersynlighet via API-en etter at funksjonen er aktivert, kan du se [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md#api-urls).
+
+## <a name="allocation"></a>Tilordning
+
+Tildelingsrelaterte APIer finnes i [lagersynlighetstilordning](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
