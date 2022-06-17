@@ -54,11 +54,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/commerce/toc.json
                 - name: Ta i bruk oppdateringer i skymiljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-                - name: Bruke oppdateringer i lokale distribusjoner
+                - name: Bruk oppdateringer i lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere serviceoppdateringer
+                - name: Konfigurer serviceoppdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
-                - name: Stanse serviceoppdateringer midlertidig
+                - name: Forhåndsservice og etterservice
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
+                - name: Stans serviceoppdateringer midlertidig
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Bli varslet om serviceoppdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
@@ -394,6 +396,8 @@
                   items:
                     - name: Store Commerce-app
                       href: dev-itpro/store-commerce.md
+                    - name: Overfør Modern POS til Store Commerce
+                      href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Implementeringsveiledning for enhetsbehandling
                       href: implementation-considerations-devices.md
                     - name: Velg mellom Store Commerce og Cloud POS
@@ -582,7 +586,7 @@
                       href: pos-multi-hws.md
                     - name: Sømløs bryter for frakoblet modus for gavekort- og kreditnotaoperasjoner
                       href: dev-itpro/seamless-offline-improvements.md
-                    - name: Definere scenarier for betaling av faktura
+                    - name: Definer scenarioer for betaling av faktura
                       href: payinvoice.md
                     - name: Forhindring av like betalinger
                       href: duplicate-payment-protection.md
@@ -854,11 +858,11 @@
                   href: dev-itpro/unlinked-refunds.md
                 - name: Selg og gå tilbake til produkter som ikke er inkludert i et butikksortiment
                   href: sell-return-outside-assortments.md
-                - name: Konfigurere og behandle en utveksling i en returordre
+                - name: Konfigurer og behandle en utveksling i en returordre
                   href: orderexchanges.md
                 - name: Begrense betalingsmåter for returer uten en kvittering
                   href: payment-methods-restrictions.md
-                - name: 'Returnere varer på tvers av flere kunder, ordrer og fakturaer'
+                - name: 'Returner varer på tvers av flere kunder, ordrer og fakturaer'
                   href: multireturn.md
                 - name: Opprett og oppdater en retur- og refunderingspolicy for en kanal
                   href: refund_policy_returns.md
@@ -898,15 +902,15 @@
               href: disable-consistency-check-rule.md
             - name: Rediger og overvåk detaljhandelstransaksjoner
               items:
-                - name: Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
+                - name: Rediger og overvåk hentesalgs- og kassastyringstransaksjoner
                   href: edit-cash-trans.md
-                - name: Redigere og overvåke nettordretransaksjoner og asynkrone kundeordretransaksjoner
+                - name: Rediger og overvåk nettordretransaksjoner og asynkrone kundeordretransaksjoner
                   href: edit-order-trans.md
-                - name: Redigere finansdimensjoner for detaljhandelstransaksjoner
+                - name: Rediger finansdimensjoner for detaljhandelstransaksjoner
                   href: edit-financial-dim.md
-                - name: Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
+                - name: Opprett en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
                   href: create-excel-edit.md
-                - name: Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
+                - name: Legg til felter i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
                   href: add-fields-excel.md
             - name: Fordel feedbasert ordreoppretting for detaljhandelstransaksjoner
               href: trickle-feed.md
@@ -2222,6 +2226,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                     - name: Feilsøk ytelsesproblemer i ER-konfigurasjoner
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Reduser antall tabellfelter som hentes ved kjøretid
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/commerce/toc.json
                 - name: Behandling av forretningsdokument (BDM)
                   items:
                     - name: BDM-oversikt
@@ -2476,6 +2482,8 @@
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Overføring for eldre SDK for Retail
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+                    - name: 'Foreldede og fjernede API-er, klasser og metoder'
+                      href: dev-itpro/obsolete-apis-classes-methods.md
                     - name: Modernisering av Commerce-teknologistakken i butikk (teknisk dokument)
                       href: 'https://www.microsoft.com/download/details.aspx?id=103896'
                 - name: Miljøoppsett
@@ -2560,6 +2568,8 @@
                   items:
                     - name: Opprett en utvidelsespakke for Cloud Scale Unit
                       href: dev-itpro/CSU-packaging.md
+                    - name: Slå sammen Cloud Scale Unit-utvidelsespakker for distribusjon
+                      href: dev-itpro/merge-csu-extensions.md
                     - name: Fjern Cloud Scale Unit-utvidelser
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
@@ -2908,6 +2918,14 @@
                       href: dev-itpro/create-retail-experience-app.md
         - name: Feilsøking
           items:
+            - name: Store Commerce
+              items:
+                - name: Problemer med konfigurasjon og installasjon
+                  href: troubleshoot/store-commerce-setup-installation.md
+                - name: Ytelsesproblemer
+                  href: troubleshoot/store-commerce-performance.md
+                - name: Utvidelsesproblemer
+                  href: troubleshoot/store-commerce-extensions.md
             - name: Ordrebehandling
               items:
                 - name: Betalingstype må være kredittkortfeil

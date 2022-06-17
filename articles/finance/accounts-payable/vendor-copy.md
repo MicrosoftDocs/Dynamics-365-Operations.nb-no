@@ -1,6 +1,6 @@
 ---
-title: Kopiere leverandører ved hjelp av delte nummerserier
-description: Dette emnet forklarer hvordan du bruker delte nummerserier til å kopiere en leverandør til en annen juridisk enhet og samtidig beholde samme leverandør-ID.
+title: Kopier leverandører ved hjelp av delte nummerserier
+description: Denne artikkelen forklarer hvordan du bruker delte nummerserier til å kopiere en leverandør til en annen juridisk enhet og samtidig beholde samme leverandør-ID.
 author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4cea8269082b39e2374ffb3c3dc82def8ce35679
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 7b7285cdf454955656c4fb20c3abf68f3f9c39dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904908"
 ---
-# <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiere leverandører ved hjelp av delte nummerserier
+# <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopier leverandører ved hjelp av delte nummerserier
 
 [!include [banner](../includes/banner.md)]
 

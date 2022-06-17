@@ -1,6 +1,6 @@
 ---
 title: Endre regnskaps- eller rapporteringsvalutaen
-description: Dette emnet beskriver hvordan du endrer regnskaps- eller rapporteringsvalutaen, eller legger til en rapporteringsvaluta i finansoppsettet.
+description: Denne artikkelen beskriver hvordan du endrer regnskaps- eller rapporteringsvalutaen, eller legger til en rapporteringsvaluta i finansoppsettet.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710899"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904621"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Endre regnskaps- eller rapporteringsvalutaen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du endrer regnskaps- eller rapporteringsvalutaen, eller legger til en rapporteringsvaluta i finansoppsettet.
+Denne artikkelen beskriver hvordan du endrer regnskaps- eller rapporteringsvalutaen, eller legger til en rapporteringsvaluta i finansoppsettet.
 
 ## <a name="symptom"></a>Symptom
 
@@ -73,7 +73,7 @@ Følg denne fremgangsmåten for å kopiere oppsett- og hoveddataene fra den gjel
 10. Velg **Legg til mal** i området **Valgte enheter**.
 11. Velg malen som skal brukes. Foreslåtte maler for en ny juridisk enhet omfatter **025 – Økonomimodul** og **Finans**. Vi anbefaler at du går gjennom alle de andre tilgjengelige malene for å finne ut om noen av dem gjelder for dine kravene.
 12. Velg **Kopier til juridisk enhet** for å starte en partiprosess som oppretter de valgte enhetene og kopierer dem til den juridiske målenheten.
-13. Når prosessen er fullført, men før noen transaksjoner posteres, kan du gå til finans og oppdatere regnskaps- og rapporteringsvalutaene slik det er beskrevet tidligere i dette emnet.
+13. Når prosessen er fullført, men før noen transaksjoner posteres, kan du gå til finans og oppdatere regnskaps- og rapporteringsvalutaene slik det er beskrevet tidligere i denne artikkelen.
 
 Hvis du har opprettet en ny juridisk enhet slik at du kan endre regnskaps- eller rapporteringsvalutaen, må du kontrollere at startsaldoene er omregnet fra valutaene i den gamle juridiske enheten til de nye valutaene.
 

@@ -1,6 +1,6 @@
 ---
-title: Definere scenarier for betaling av faktura
-description: Dette emnet beskriver hvordan du konfigurerer Dynamics 365 Commerce til å støtte ulike scenarier for fakturabetalinger.
+title: Definer scenarioer for betaling av faktura
+description: Denne artikkelen beskriver hvordan du konfigurerer Dynamics 365 Commerce til å støtte ulike scenarioer for fakturabetalinger.
 author: josaw1
 ms.date: 11/14/2018
 ms.topic: index-page
@@ -15,14 +15,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9dc4ff9241cec4033b65f15449c233bdb43233c0dce1ab04a2cd66baf5272a6b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 78af54fec771e5012aca095d07fd772988a56029
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885381"
 ---
-# <a name="set-up-pay-invoice-scenarios"></a>Definere scenarier for betaling av faktura
+# <a name="set-up-pay-invoice-scenarios"></a>Definer scenarioer for betaling av faktura
 
 [!include [banner](includes/banner.md)]
 

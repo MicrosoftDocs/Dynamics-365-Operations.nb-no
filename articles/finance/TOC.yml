@@ -56,11 +56,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
                 - name: Ta i bruk oppdateringer i skymiljøer
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
-                - name: Bruke oppdateringer i lokale distribusjoner
+                - name: Bruk oppdateringer i lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere serviceoppdateringer
+                - name: Konfigurer serviceoppdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
-                - name: Stanse serviceoppdateringer midlertidig
+                - name: Forhåndsservice og etterservice
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
+                - name: Stans serviceoppdateringer midlertidig
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Bli varslet om serviceoppdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
@@ -408,7 +410,7 @@
                   href: accounts-receivable/revenue-recognition-overview.md
                 - name: Inntektsføringsoppsett
                   href: accounts-receivable/revenue-recognition-setup.md
-                - name: Føre utsatt inntekt
+                - name: Før utsatt inntekt
                   href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
                 - name: Inntektsføring av salgsordrer
                   href: accounts-receivable/revenue-recognition-so-basics.md
@@ -658,7 +660,7 @@
               href: cash-bank-management/tasks/settle-postdated-check-customer.md
             - name: Utligne en etterdatert sjekk for en leverandør
               href: cash-bank-management/tasks/settle-postdated-check-vendor.md
-            - name: Opprette sjekker som har tom status
+            - name: Opprett sjekker som har tom status
               href: cash-bank-management/create-check-with-blank-status.md
             - name: Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
               href: accounts-payable/prepayments-invoices-vs-prepayments.md
@@ -1018,7 +1020,7 @@
                       href: general-ledger/configure-ledger.md
                     - name: Endre regnskaps- eller rapporteringsvalutaen
                       href: general-ledger/add-change-acctg-rprtg-crrncy.md
-                    - name: Endre eller tilordne en finanskalender på nytt
+                    - name: Endre eller tildel en finanskalender på nytt
                       href: general-ledger/change-mdfy-clndr-to-ledger.md
                 - name: Konserninterne og balanserende dimensjoner
                   items:
@@ -1188,7 +1190,7 @@
               items:
                 - name: Endre regnskaps- eller rapporteringsvalutaen
                   href: general-ledger/add-change-acctg-rprtg-crrncy.md
-                - name: Endre eller tilordne en finanskalender på nytt
+                - name: Endre eller tildel en finanskalender på nytt
                   href: general-ledger/change-mdfy-clndr-to-ledger.md
                 - name: Tilbakefør innstillinger for journaler og linjer
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
@@ -1684,9 +1686,11 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: Hele beløp og alternativer for intervallberegning for mva-koder
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Mva-beregning og -avrunding
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Mva-beregning på generelle journallinjer
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
-                    - name: Beregne og justere merverdiavgift på en leverandørfaktura
+                    - name: Beregn og juster merverdiavgift på en leverandørfaktura
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
                     - name: Aktiver forsinket avgiftsberegning i journal
                       href: general-ledger/enable-delayed-tax-calculation.md
@@ -2168,6 +2172,8 @@
                   href: localizations/emea-est-vat-statement-details.md
                 - name: Estisk Intrastat
                   href: localizations/emea-est-intrastat.md
+                - name: EU-salgsliste
+                  href: localizations/emea-est-eu-sales-list.md
             - name: Europa
               items:
                 - name: Oversikt over Europa
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: Mva-rapporter for Ungarn
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: Ungarsk Intrastat
+                  href: localizations/emea-hun-intrastat.md
                 - name: Utsatte mva-beregninger
                   href: localizations/emea-hun-deferred-vat.md
             - name: Island
@@ -3112,6 +3120,8 @@
                   href: localizations/emea-lva-vat-statement-details.md
                 - name: Latvisk Intrastat
                   href: localizations/emea-lva-intrastat.md
+                - name: EU-salgsliste
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: Litauen
               items:
                 - name: Oversikt over Litauen
@@ -3130,6 +3140,8 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: Definer overføringsdokumentene for varebevegelse i et selskap
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: EU-salgsliste
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: Malaysia
               items:
                 - name: Oversikt over Malaysia
@@ -4483,6 +4495,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Feilsøk ytelsesproblemer i ER-konfigurasjoner
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: Reduser antall tabellfelter som hentes ved kjøretid
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: Behandling av forretningsdokument (BDM)
                   items:
                     - name: BDM-oversikt

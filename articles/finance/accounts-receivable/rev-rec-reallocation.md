@@ -1,6 +1,6 @@
 ---
 title: Ny tildeling av inntektsføring
-description: Dette emnet gir informasjon om ny tildeling, noe som gjør det mulig for organisasjoner å beregne inntektspriser på nytt når betingelsene for et kontraktsmessig salg endres. Emnet inneholder koblinger til andre emner som beskriver hvordan du fører inntekt i flere scenarioer.
+description: Denne artikkelen gir informasjon om ny tildeling, noe som gjør det mulig for organisasjoner å beregne inntektspriser på nytt når betingelsene for et kontraktsmessig salg endres. Emnet inneholder koblinger til andre emner som beskriver hvordan du fører inntekt i flere scenarioer.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7528202ed140dc2c0a7fc8c595178f155c3c1f75
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726134"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903427"
 ---
 # <a name="revenue-recognition-reallocation"></a>Ny tildeling av inntektsføring
 
@@ -58,7 +58,7 @@ Det er noen viktige begrensninger på prosessen for ny tildeling:
 
 Ettersom ny tildeling kan utføres på en salgsordre som er delvis eller fullstendig fakturert, må alle tidligere regnskapsoppføringer for fakturaen rettes opp ved hjelp av de nye inntektsprisene som er tildelt på nytt. Denne rettelsen gjøres ved å tilbakeføre den opprinnelige fakturaens regnskapsoppføring og postere en ny regnskapsoppføring som er basert på inntektsprisene som er omforhandlet.
 
-Hver organisasjon må bestemme om rettelsen bare skal oppdateres i økonomimodulen, eller om den også skal oppdatere Kunder. Beslutningen som tas, fastslår den forskriftsmessige innstillingen for alternativet **Poster fakturakorrigeringer til Kunder** på fanen **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**). Innstillingen som velges, avhenger av det bestemte scenarioet. Hvis du vil ha mer informasjon om mulige scenarioer, kan du bruke koblingene i [Scenarioer for ny tildeling](#scenarios-for-reallocation) senere i dette emnet.
+Hver organisasjon må bestemme om rettelsen bare skal oppdateres i økonomimodulen, eller om den også skal oppdatere Kunder. Beslutningen som tas, fastslår den forskriftsmessige innstillingen for alternativet **Poster fakturakorrigeringer til Kunder** på fanen **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**). Innstillingen som velges, avhenger av det bestemte scenarioet. Hvis du vil ha mer informasjon om mulige scenarioer, kan du bruke koblingene i [Scenarioer for ny tildeling](#scenarios-for-reallocation) senere i denne artikkelen.
 
 [![Fanen Inntektsføring på siden Parametere for økonomimodul.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -90,7 +90,7 @@ Hvis du vil starte prosessen for ny tildeling, velger du **Tildeling av pris på
 
 [![Siden Tildel pris på nytt med nye ordrelinjer.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Det øvre rutenettet på siden **Tildel pris på nytt med nye ordrelinjer** kalles **Salg**. Det viser en liste over salgsordrene for kunden. Velg salgsordrene som må tildeles på nytt. Hvis en salgsordre har en ID for ny tildeling, er den allerede merket for ny tildeling av en annen bruker. Hvis én eller flere salgsordrer tidligere ble tildelt på nytt, og må inkluderes i en annen ny tildeling, må du først angre den nye tildelingen av disse salgsordrene. Deretter kan den tas med i en ny tildeling. Hvis du vil ha mer informasjon, kan du se delene [Angre en ny tildeling](#undo-a-reallocation) og [Ny tildeling flere ganger](#reallocate-multiple-times) senere i dette emnet.
+Det øvre rutenettet på siden **Tildel pris på nytt med nye ordrelinjer** kalles **Salg**. Det viser en liste over salgsordrene for kunden. Velg salgsordrene som må tildeles på nytt. Hvis en salgsordre har en ID for ny tildeling, er den allerede merket for ny tildeling av en annen bruker. Hvis én eller flere salgsordrer tidligere ble tildelt på nytt, og må inkluderes i en annen ny tildeling, må du først angre den nye tildelingen av disse salgsordrene. Deretter kan den tas med i en ny tildeling. Hvis du vil ha mer informasjon, kan du se delene [Angre en ny tildeling](#undo-a-reallocation) og [Ny tildeling flere ganger](#reallocate-multiple-times) senere i denne artikkelen.
 
 Det nederste rutenettet på siden kalles **Linjer**. Når du har valgt én eller flere salgsordrer i rutenettet **Salg**, viser rutenettet **Linjer** salgsordrelinjene. Velg salgsordrelinjene som må tildeles på nytt. Hvis du bare har valgt én salgsordre, må linjer i den samme salgsordren tildeles på nytt. Denne situasjonen kan oppstå når en av salgsordrelinjene tidligere er fakturert, og deretter ble en ny linje lagt til, eller en eksisterende linje ble fjernet eller avbrutt. Hvis en linje er fjernet, vises den ikke i rutenettet. Derfor kan den ikke velges. Den vil imidlertid fortsatt bli tatt hensyn til når prosessen for ny tildeling kjøres.
 

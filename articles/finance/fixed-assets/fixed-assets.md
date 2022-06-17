@@ -1,6 +1,6 @@
 ---
 title: Startside for faste objekter
-description: Dette emnet gir tilgang til ressurser som kan hjelpe deg med å bruke anleggsmidler for Microsoft Dynamics 365 Finance.
+description: Denne artikkelen gir tilgang til ressurser som kan hjelpe deg med å bruke anleggsmidler for Microsoft Dynamics 365 Finance.
 author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cee27143ca005f2fa42899365933ec3014aa13f6
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 57e81aaefd61eb9e695d8fe0d1c7cac4091bece7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720453"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880823"
 ---
 # <a name="fixed-assets-home-page"></a>Startside for faste objekter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir tilgang til ressurser som kan hjelpe deg med å bruke anleggsmidler for Microsoft Dynamics 365 Finance. Anleggsmidler er verdivarer som eies av en enkeltperson eller organisasjon. Varene omfatter bygninger, kjøretøy, land og utstyr. 
+Denne artikkelen gir tilgang til ressurser som kan hjelpe deg med å bruke anleggsmidler for Microsoft Dynamics 365 Finance. Anleggsmidler er verdivarer som eies av en enkeltperson eller organisasjon. Varene omfatter bygninger, kjøretøy, land og utstyr. 
 
 Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og deretter behandle midlene ved å avskrive dem og angi en kapitaliseringsterskel for å bestemme avskrivning. Du kan beregne justeringer til anleggsmidlene, og du kan også kvitte deg med dem. Når du bruker økonomimodulen sammen med anleggsmidler, kan du vise gjeldende verdi for alle anleggsmidler. Behandlingen av anleggsmidler samsvare med både internasjonale regnskapsstandarder og regnskapslovgivningen i hvert land/område. Kravene kan inneholde regler for registrering av anskaffelses- og avhendingstransaksjoner, avskrivning, levetid, oppskrivinger og nedskrivinger av anleggsmidler. Anleggsmiddelfunksjonalitet inneholder mange av disse standardene og reglene.
 

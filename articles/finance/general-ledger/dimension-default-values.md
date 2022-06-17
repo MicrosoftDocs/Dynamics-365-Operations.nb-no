@@ -1,6 +1,6 @@
 ---
 title: Standard finansdimensjoner i finansjournaler
-description: Dette emnet beskriver reglene som definerer hvordan finansdimensjonsverdier angis for transaksjoner som registreres via finansjournaler. Det inneholder også detaljer om scenarioer der det brukes faste dimensjoner.
+description: Denne artikkelen beskriver reglene som definerer hvordan finansdimensjonsverdier angis for transaksjoner som registreres via finansjournaler. Det inneholder også detaljer om scenarioer der det brukes faste dimensjoner.
 author: kweekley
 ms.date: 09/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 51235b8a5dac50aad5031456760c970e50506d66
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8d0fcf836e22207baae562801fb082d735df0f96
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907935"
 ---
 # <a name="default-financial-dimensions-on-financial-journals"></a>Standard finansdimensjoner i finansjournaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver reglene som definerer hvordan finansdimensjonsverdier angis for transaksjoner som registreres via finansjournaler (men ikke via lagerjournaler eller prosjektjournaler). Det inneholder også detaljer om scenarioer der det brukes faste dimensjoner.
+Denne artikkelen beskriver reglene som definerer hvordan finansdimensjonsverdier angis for transaksjoner som registreres via finansjournaler (men ikke via lagerjournaler eller prosjektjournaler). Det inneholder også detaljer om scenarioer der det brukes faste dimensjoner.
 
 ## <a name="symptom"></a>Symptom
 

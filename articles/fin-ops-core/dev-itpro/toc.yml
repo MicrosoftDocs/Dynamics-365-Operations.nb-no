@@ -410,6 +410,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Konfigurer lagerappen for lokale distribusjoner
                       href: deployment/warehousing-for-on-premise-deployments.md
+                    - name: Aktiver RSAT i miljøer for Finance + Operations (on-premises)
+                      href: deployment/onprem-rsat-configuration.md
                     - name: Installer nettverksskriverenheter i lokale miljøer
                       href: analytics/install-network-printer-onprem.md
                     - name: Lokal diagnostikk
@@ -1048,6 +1050,8 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps-utvidelsesopplæring (forhåndsversjon)
                   href: lifecycle-services/dts-ado-tutorial.md
+                - name: Utvidelse for Dynamics 365 Translation Service Visual Studio Code (forhåndsversjon)
+                  href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform-integrering
           items:
             - name: Oversikt
@@ -1798,7 +1802,7 @@
                   href: migration-upgrade/compile-considerations.md
             - name: Oppgradere til en nylig oppdatering (lokal)
               items:
-                - name: Bruke oppdateringer i lokale distribusjoner
+                - name: Bruk oppdateringer i lokale distribusjoner
                   href: deployment/apply-updates-on-premises.md
                 - name: Distribuere en lokal distribusjon på nytt
                   href: deployment/redeploy-on-prem.md

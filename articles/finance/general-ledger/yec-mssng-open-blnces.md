@@ -1,6 +1,6 @@
 ---
 title: Manglende åpningssaldoer ved årsavslutning
-description: Dette emnet beskriver hvorfor åpningssaldoer kan mangle når du avslutter et år, og hvordan du gjenoppbygger disse saldoene hvis de mangler.
+description: Denne artikkelen beskriver hvorfor åpningssaldoer kan mangle når du avslutter et år, og hvordan du gjenoppbygger disse saldoene hvis de mangler.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894855"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Manglende åpningssaldoer ved årsavslutning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvorfor åpningssaldoer kan mangle når du avslutter et år, og hvordan du gjenoppbygger disse saldoene hvis de mangler.
+Denne artikkelen beskriver hvorfor åpningssaldoer kan mangle når du avslutter et år, og hvordan du gjenoppbygger disse saldoene hvis de mangler.
 
 ### <a name="symptom"></a>Symptom
 
@@ -36,7 +36,7 @@ Her er ting du kan sjekke hvis du har avsluttet et år i økonomimodulen og dere
 
 Hvis feltet **Angre forrige avslutning** er satt til **Ja**, blir den forrige årsavslutningen for det samme regnskapsåret tilbakeført. Når du kjører en prosess for å tilbakeføre årsavslutningen, slettes alle oppføringer for både slutt- og åpningssaldoer som om året aldri var blitt avsluttet. Bilagene slettes også. Årsavslutningsprosessen kjøres ikke automatisk på nytt. Du må starte prosessen på nytt, og denne gangen må du oppdatere alternativet **Angre forrige avslutning** til **Nei**.
 
-Dette scenarioet dekkes i emnet om årsavslutning i vanlige spørsmål. Hvis du vil ha mer informasjon, kan du se [Vanlige spørsmål om årssluttaktiviteter](faq-year-end-activities.md).
+Dette scenarioet dekkes i artikkelen om årsavslutning i vanlige spørsmål. Hvis du vil ha mer informasjon, kan du se [Vanlige spørsmål om årssluttaktiviteter](faq-year-end-activities.md).
 
 ### <a name="symptom"></a>Symptom
 

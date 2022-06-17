@@ -1,6 +1,6 @@
 ---
 title: Ny tildeling av inntektsføring – scenario 1
-description: Dette emnet går gjennom et scenario for ny tildeling der to salgsordrer angis, men de blir bare bekreftet. Det samme scenarioet vil gi like resultater hvis mer enn to salgsordrer har bekreftet status.
+description: Denne artikkelen går gjennom et scenario for ny tildeling der to salgsordrer angis, men de blir bare bekreftet. Det samme scenarioet vil gi like resultater hvis mer enn to salgsordrer har bekreftet status.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd094840e16a0ab19e234148e4ef40c454315d96
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 597c83388937cff689748889eff29d6be1b8341a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876275"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Ny tildeling av inntektsføring – scenario 1
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet går gjennom et scenario for ny tildeling der to salgsordrer angis, men de blir bare bekreftet. Det samme scenarioet vil gi like resultater hvis mer enn to salgsordrer har bekreftet status.
+Denne artikkelen går gjennom et scenario for ny tildeling der to salgsordrer angis, men de blir bare bekreftet. Det samme scenarioet vil gi like resultater hvis mer enn to salgsordrer har bekreftet status.
 
 I dette scenarioet er alternativet **Poster fakturakorrigeringer til Kunder ved ny tildeling** satt til **Nei** i fanen **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**).
 

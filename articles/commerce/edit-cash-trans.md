@@ -1,6 +1,6 @@
 ---
-title: Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
-description: Dette emnet beskriver hvordan du redigerer og kontrollerer hentesalgs- og kassastyringstransaksjoner i Microsoft Dynamics 365 Commerce.
+title: Rediger og overvåk hentesalgs- og kassastyringstransaksjoner
+description: Denne artikkelen beskriver hvordan du redigerer og kontrollerer hentesalgs- og kassastyringstransaksjoner i Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 85c4bd4c03b6ac09f2226d1767deabde1879f869e4b7c4d45e4d4c2a1d8effb3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cab28dee425110f47a4e2ec5a737778dd567d786
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765344"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873337"
 ---
-# <a name="edit-and-audit-cash-and-carry-and-cash-management-transactions"></a>Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
+# <a name="edit-and-audit-cash-and-carry-and-cash-management-transactions"></a>Rediger og overvåk hentesalgs- og kassastyringstransaksjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du redigerer og kontrollerer hentesalgs- og kassastyringstransaksjoner i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du redigerer og kontrollerer hentesalgs- og kassastyringstransaksjoner i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 

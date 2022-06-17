@@ -1,6 +1,6 @@
 ---
 title: Inntektsføringsbunter
-description: Dette emnet beskriver buntfunksjonaliteten som er inkludert i inntektsføringsfunksjonaliteten i Kunder. En bunt består av en overordnet vare og flere komponentvarer.
+description: Denne artikkelen beskriver buntfunksjonaliteten som er inkludert i inntektsføringsfunksjonaliteten i Kunder. En bunt består av en overordnet vare og flere komponentvarer.
 author: kweekley
 ms.date: 01/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 478fdfc69514fba829deb63b4e2904ff3fe1e199
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725826"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876303"
 ---
 # <a name="revenue-recognition-bundles"></a>Inntektsføringsbunter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver buntfunksjonaliteten som er inkludert i inntektsføringsfunksjonaliteten i Kunder. En bunt består av en overordnet vare og flere komponentvarer. Den overordnede varen registreres på en salgsordre, slik at ordreregistreringen blir mer effektiv. Den deles imidlertid opp i komponentvarene. Interne dokumenter, for eksempel følgeseddelen, viser komponentvarer. Eksterne dokumenter vil imidlertid bare vise den overordnede varen.
+Denne artikkelen beskriver buntfunksjonaliteten som er inkludert i inntektsføringsfunksjonaliteten i Kunder. En bunt består av en overordnet vare og flere komponentvarer. Den overordnede varen registreres på en salgsordre, slik at ordreregistreringen blir mer effektiv. Den deles imidlertid opp i komponentvarene. Interne dokumenter, for eksempel følgeseddelen, viser komponentvarer. Eksterne dokumenter vil imidlertid bare vise den overordnede varen.
 
 > [!NOTE]
 > Microsoft Dynamics 365 Commerce-kanaler, for eksempel online, salgssted og telefonsentre, støtter ikke inntektsføringen (inkludert buntfunksjonaliteten). Dette omfatter også kundeemnet til kontantløsning for Dynamics 365 Supply Chain Management og Dynamics 365 Sales. Varer som er konfigurert til å bruke inntektsføring, bør ikke legges til i ordrer eller transaksjoner som opprettes i Commerce-kanaler, eller i kundeemnet til kontantløsning.

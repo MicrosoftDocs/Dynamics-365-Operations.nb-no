@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865839"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for programmet Finance and Operations
 
 [!include [banner](includes/banner.md)]
 
-Finn ut hvordan du får Finance and Operations-appene til å fungere i din virksomhet ved hjelp av ressursene i dette emnet. Dermed kan du finne enestående innhold for sluttbrukere, utviklere og IT-teknikere. 
+Finn ut hvordan du får økonomi- og driftsappene til å fungere i din virksomhet ved hjelp av ressursene i denne artikkelen. Dermed kan du finne enestående innhold for sluttbrukere, utviklere og IT-teknikere. 
 
 Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365 Commerce og Dynamics 365 Human Resources. 
 
@@ -56,8 +56,8 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <p><a href="get-started/whats-new-changed.md">Nyheter eller endringer</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Oppgraderinger, oppdateringer og hurtigreparasjoner</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Ta i bruk oppdateringer i skymiljøer</a></p>
-<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurere serviceoppdateringer</a></p>
-<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Stanse serviceoppdateringer midlertidig</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Konfigurer serviceoppdateringer</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Stans serviceoppdateringer midlertidig</a></p>
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Bli varslet om serviceoppdateringer</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Automatisering av dataoppgave</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>

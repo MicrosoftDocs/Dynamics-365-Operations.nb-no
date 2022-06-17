@@ -1,6 +1,6 @@
 ---
 title: Behandling av distribuert ordre (DOM)
-description: Dette emnet beskriver DOM-funksjonaliteten i Dynamics 365 Commerce.
+description: Denne artikkelen beskriver DOM-funksjonaliteten i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
-ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
+ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878519"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver DOM-funksjonaliteten i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver DOM-funksjonaliteten i Microsoft Dynamics 365 Commerce.
 
 DOM er en løsning for ordreoppfyllelsesoptimalisering for omnikanal som hjelper til med å maksimere ordreoppfyllelse i et forsyningskjedenettverk. DOM hjelper deg med å sikre at produkter leveres til kundene i riktig antall, fra riktig kilder, på riktig tidspunkt. DOM kan også hjelpe deg med å maksimere fortjenesten, minimere kostnader og oppfylle kravene på servicenivå.
 

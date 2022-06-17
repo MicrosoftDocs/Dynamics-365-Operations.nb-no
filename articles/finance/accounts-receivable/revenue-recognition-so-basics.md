@@ -1,6 +1,6 @@
 ---
 title: Inntektsføring av salgsordrer
-description: Dette emnet beskriver den grunnleggende funksjonaliteten for føring av inntekt på salgsordrer og fakturaer. Inntektsføring er tilgjengelig på salgsordren og på den tilsvarende fakturaen som opprettes fra salgsordren.
+description: Denne artikkelen beskriver den grunnleggende funksjonaliteten for føring av inntekt på salgsordrer og fakturaer. Inntektsføring er tilgjengelig på salgsordren og på den tilsvarende fakturaen som opprettes fra salgsordren.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7aaa5e7c3b568400c72a1a84b5f29082579aeeae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899964"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Inntektsføring av salgsordrer
 
@@ -27,10 +27,10 @@ ms.locfileid: "8725491"
 > [!NOTE]
 > Funksjonen Inntektsføring kan ikke aktiveres via Funksjonsbehandling. For øyeblikket må du bruke konfigurasjonsnøkler for å aktivere den.
 
-Dette emnet beskriver den grunnleggende funksjonaliteten for føring av inntekt på salgsordrer og fakturaer. Inntektsføring er tilgjengelig på en salgsordre og på den tilsvarende fakturaen som opprettes fra salgsordren. Salgsordren kan også opprettes via et Etter regning-prosjekt.
+Denne artikkelen beskriver den grunnleggende funksjonaliteten for føring av inntekt på salgsordrer og fakturaer. Inntektsføring er tilgjengelig på en salgsordre og på den tilsvarende fakturaen som opprettes fra salgsordren. Salgsordren kan også opprettes via et Etter regning-prosjekt.
 
 > [!NOTE]
-> I illustrasjonene i dette emnet har kolonner blitt skjult eller lagt til rutenett for å bedre vise begrepene. Derfor kan det hende at sidene og dataene i illustrasjonen avviker fra det du ser i produktet.
+> I illustrasjonene i denne artikkelen har kolonner blitt skjult eller lagt til rutenett for å bedre vise begrepene. Derfor kan det hende at sidene og dataene i illustrasjonen avviker fra det du ser i produktet.
 
 ## <a name="enter-a-sales-order"></a>Registrere en salgsordre
 

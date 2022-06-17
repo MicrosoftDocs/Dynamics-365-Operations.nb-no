@@ -1,6 +1,6 @@
 ---
-title: Opprette sjekker som har tom status
-description: Dette emnet beskriver hvordan du oppretter en tom sjekk for en bankkonto.
+title: Opprett sjekker som har tom status
+description: Denne artikkelen beskriver hvordan du oppretter en tom sjekk for en bankkonto.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b3a0fbb26f135e567bf6af7b2f10b39a28be4c9e
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 834e11e0e359521c674e2b6fd78c93dcb23961a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717223"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861451"
 ---
-# <a name="create-checks-that-have-blank-status"></a>Opprette sjekker som har tom status
+# <a name="create-checks-that-have-blank-status"></a>Opprett sjekker som har tom status
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du oppretter tomme sjekker. Du kan for eksempel opprette en tom sjekk for å registrere en sjekk som er skadet, og som ikke kan brukes til betaling.
+Denne artikkelen forklarer hvordan du oppretter tomme sjekker. Du kan for eksempel opprette en tom sjekk for å registrere en sjekk som er skadet, og som ikke kan brukes til betaling.
 
 På **Sjekker**-siden utfører du vedlikeholdsoppgaver for sjekker. Du kan for eksempel opprette nye sjekknumre og slette sjekker. Du kan også opprette sjekker som har statusen **Tom**. Når tomme sjekker er opprettet, kan de ikke slettes eller brukes på nytt i systemet.
 

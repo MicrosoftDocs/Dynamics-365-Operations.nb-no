@@ -1,6 +1,6 @@
 ---
 title: Startside for leverandører
-description: Dette emnet gir en oversikt over leverandører.
+description: Denne artikkelen gir en oversikt over leverandører.
 author: sunfzam
 ms.date: 02/15/2019
 ms.topic: index-page
@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "21901"
 - intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce768ecaa668f2c69d6753401eaa145b6fddc5ec
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 5ed6aacb94de14bdb72185cd528f62e74cd3cc15
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595293"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946108"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for leverandører
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over leverandører. 
+Denne artikkelen gir en oversikt over leverandører. 
 
 Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via en dataenhet. Når fakturaene er registrert eller mottatt, kan du se gjennom og godkjenne fakturaene ved hjelp av en fakturagodkjenningsjournal eller siden **Leverandørfaktura**. Du kan bruke fakturakontroll, leverandørfakturapolicyer og arbeidsflyt til å automatisere kontrollprosessen slik at fakturaer som oppfyller bestemte kriterier, godkjennes automatisk, og de gjenværende fakturaene flagges for gjennomgang av en autorisert bruker.
 
@@ -126,13 +126,13 @@ Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans
 
 #### <a name="blogs"></a>Blogger
 
-Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre løsninger i bloggen for [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) og bloggen for [Microsoft Dynamics 365 Finance - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).
+Du kan finne meninger, nyheter og annen informasjon om Leverandører og andre løsninger i [Microsoft Dynamics 365-bloggen](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)og [Microsoft Dynamics 365 Finance – Financials-bloggen](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 [Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i Dynamics 365.
 
 #### <a name="community-blogs"></a>Fellesskapsblogger
 
-[Administrere leverandører i Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
+[Slik administrerer du leverandører i Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Oppgaveveiledninger
 Mer hjelp er tilgjengelig som oppgaveveiledninger i programmet. For å få tilgang til oppgaveveiledninger klikker du på Hjelp-knappen på en side.

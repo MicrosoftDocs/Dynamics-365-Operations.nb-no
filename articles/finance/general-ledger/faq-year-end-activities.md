@@ -1,6 +1,6 @@
 ---
 title: Vanlige spørsmål om årssluttaktiviteter
-description: Dette emnet viser spørsmål som kan oppstå ved avslutning av et år, og svarene som kan hjelpe til med aktiviteter for årsavslutning.
+description: Denne artikkelen viser spørsmål som kan oppstå ved avslutning av et år, og svarene som kan hjelpe til med aktiviteter for årsavslutning.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865747"
 ---
 # <a name="year-end-activities-faq"></a>Vanlige spørsmål om årssluttaktiviteter 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser spørsmål som kan oppstå ved avslutning av et år, og svarene som kan hjelpe til med aktiviteter for årsavslutning. Informasjonen i dette emnet fokuserer først og fremst på spørsmål som gjelder lukkeaktiviteter ved årsavslutning for økonomi- og leverandørmodulen.
+Denne artikkelen viser spørsmål som kan oppstå ved avslutning av et år, og svarene som kan hjelpe til med aktiviteter for årsavslutning. Informasjonen i denne artikkelen fokuserer først og fremst på spørsmål som gjelder lukkeaktiviteter ved årsavslutning for økonomi- og leverandørmodulen.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Forbedringer ved årsavslutning for økonomimodul 
 Versjon 10.0.20 innførte en forbedring av årsavslutning, som er aktivert som standard fra og med versjon 10.0.25. Hvis organisasjonen bruker en versjon som er tidligere enn 10.0.25, anbefaler vi at du aktiverer denne funksjonen før du starter årsavslutningsprosessen. Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke arbeidsområdet Funksjonsbehandling til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
@@ -75,7 +75,7 @@ Unødvendige dimensjonssett påvirker også den satsvise jobben **BudgetDimensio
 [![Finansdimensjonssett.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfigurasjon av årsavslutningsmal
-Ved hjelp av årsavslutningsmalen kan organisasjonene velge finansdimensjonsnivået som skal vedlikeholdes ved overføring av resultatsaldoer til opptjente inntekter. Innstillingene gjør at en organisasjon kan vedlikeholde de detaljerte finansdimensjonene (**Avslutt alle**) når saldoene flyttes til opptjente inntekter eller velger å summere beløpene til én dimensjonsverdi (**Avslutt én**). Dette kan defineres for hver finansdimensjon. Hvis du vil ha mer informasjon om disse innstillingene, kan du se emnet [Årsavslutning](year-end-close.md).
+Ved hjelp av årsavslutningsmalen kan organisasjonene velge finansdimensjonsnivået som skal vedlikeholdes ved overføring av resultatsaldoer til opptjente inntekter. Innstillingene gjør at en organisasjon kan vedlikeholde de detaljerte finansdimensjonene (**Avslutt alle**) når saldoene flyttes til opptjente inntekter eller velger å summere beløpene til én dimensjonsverdi (**Avslutt én**). Dette kan defineres for hver finansdimensjon. Hvis du vil ha mer informasjon om disse innstillingene, kan du se artikkelen [Årsavslutning](year-end-close.md).
 
 Det anbefales at du evaluerer organisasjonens krav, og lukker så mange dimensjoner som mulig ved hjelp av årsavslutningsalternativet **Avslutt én** for å forbedre ytelsen. Ved å avslutte til én dimensjonsverdi (som også kan være en tom verdi) beregner systemet mindre detaljer når det skal fastsettes saldoer for kontooppføringer for opptjent egenkapital.
 

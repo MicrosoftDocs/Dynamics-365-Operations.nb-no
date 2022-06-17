@@ -1,6 +1,6 @@
 ---
 title: Ny tildeling av inntektsføring – scenario 2
-description: Dette emnet går gjennom et scenario for ny tildeling der det angis to salgsordrer, og deretter legger kunden til en vare i kontrakten etter at den første salgsordren er fakturert. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren.
+description: Denne artikkelen går gjennom et scenario for ny tildeling der det angis to salgsordrer, og deretter legger kunden til en vare i kontrakten etter at den første salgsordren er fakturert. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4026b8c69e51cb33c64bcf71a62a13b28b86bd49
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: dec8dba9848b77e5c0a1007102789c8f88185fbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726163"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904851"
 ---
 # <a name="revenue-recognition-reallocation--scenario-2"></a>Ny tildeling av inntektsføring – scenario 2
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet går gjennom et scenario for ny tildeling der det angis to salgsordrer, og deretter legger kunden til en vare i kontrakten etter at den første salgsordren er fakturert. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren.
+Denne artikkelen går gjennom et scenario for ny tildeling der det angis to salgsordrer, og deretter legger kunden til en vare i kontrakten etter at den første salgsordren er fakturert. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren.
 
 I dette scenarioet er alternativet **Poster fakturakorrigeringer til Kunder ved ny tildeling** satt til **Nei** i fanen **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**).
 

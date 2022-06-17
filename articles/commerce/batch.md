@@ -1,6 +1,6 @@
 ---
 title: Forbedret håndtering av varer med partisporing
-description: Dette emnet beskriver den forbedrede håndteringen av varer med partisporing under posteringsprosessen for utdrag i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver den forbedrede håndteringen av varer med partisporing under posteringsprosessen for utdrag i Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 736ab8dd21f04d7119cca6d53bfeb5e408b8cbd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485789"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881885"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Forbedret håndtering av varer med partisporing
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver den forbedrede håndteringen av varer med partisporing under posteringsprosessen for utdrag i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver den forbedrede håndteringen av varer med partisporing under posteringsprosessen for utdrag i Microsoft Dynamics 365 Commerce.
 
 Partinumre kan ikke registreres for varer med partisporing på salgstidspunktet på salgsstedet i Dynamics 365 Commerce. Når salg posteres i Commerce Headquarters via kundeordrer eller utdragspostering, forventer Commerce imidlertid at det finnes gyldige partinumre for varer med partisporing for bestemte konfigurasjoner, og at de skal brukes under faktureringen.
 

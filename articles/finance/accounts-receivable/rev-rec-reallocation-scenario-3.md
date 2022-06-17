@@ -1,6 +1,6 @@
 ---
 title: Ny tildeling av inntektsføring – scenario 3
-description: Dette emnet går gjennom et scenario for ny tildeling der en ny linje legges til i en eksisterende, fakturert salgsordre. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren.
+description: Denne artikkelen går gjennom et scenario for ny tildeling der en ny linje legges til i en eksisterende, fakturert salgsordre. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b3b41b09cc9f4c56fdb04f6a2c4156bc1637699
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904823"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>Ny tildeling av inntektsføring – scenario 3
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet går gjennom et scenario for ny tildeling der en ny linje legges til i en eksisterende, fakturert salgsordre. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren. Dette scenarioet viser også hva som skjer når Kunder oppdateres på grunn av ny tildeling.
+Denne artikkelen går gjennom et scenario for ny tildeling der en ny linje legges til i en eksisterende, fakturert salgsordre. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren. Dette scenarioet viser også hva som skjer når Kunder oppdateres på grunn av ny tildeling.
 
 I dette scenarioet er alternativet **Poster fakturakorrigeringer til Kunder ved ny tildeling** satt til **Ja** i fanen **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**).
 
