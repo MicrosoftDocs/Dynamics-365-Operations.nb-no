@@ -1,6 +1,6 @@
 ---
 title: Italiensk Intrastat
-description: Dette emnet inneholder informasjon om Intrastat-rapportering i Italia.
+description: Denne artikkelen inneholder informasjon om Intrastat-rapportering i Italia.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: a4531baf29759607c877c815b849067f718851b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874370"
 ---
 # <a name="italian-intrastat"></a>Italiensk Intrastat
 
@@ -650,7 +650,7 @@ Følg denne fremgangsmåten for å konfigurere italiensk-spesifikke alternativer
 6. I hurtigfanen **Statistisk verdi** angir i alternativet **Skriv ut og eksporter statistiske data** til **Ja** om nødvendig. Denne innstillingen aktiverer overføring av den statistiske delen. Den statistiske delen består av data om vekt, tilleggsenheter, statistiske verdier, leveringsbetingelser, leveringsplaner, transportmodi og opprinnelsesområder.
 
     > [!NOTE]
-    > Når det gjelder en kvartalsvis deklarering, inneholder ikke Intrastat-rapporten statistikkdelen eller informasjon om leveringsbetingelser og transportmodi. Hvis du vil ha mer informasjon, kan du se tabellen i [Oversikt](#overview)-delen i dette emnet.
+    > Når det gjelder en kvartalsvis deklarering, inneholder ikke Intrastat-rapporten statistikkdelen eller informasjon om leveringsbetingelser og transportmodi. Hvis du vil ha mer informasjon, kan du se tabellen i [Oversikt](#overview)-delen i denne artikkelen.
 
 7. I kategorien **Land-/områdeegenskaper** viser du alle landene eller områdene som organisasjonen gjør forretninger med. For hvert land eller område angir du feltene nedenfor:
 

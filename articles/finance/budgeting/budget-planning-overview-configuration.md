@@ -1,6 +1,6 @@
 ---
 title: Oversikt over budsjettplanlegging
-description: Dette emnet beskriver budsjettplanlegging. Det inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
+description: Denne artikkelen beskriver budsjettplanlegging. Det inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 1f1ecf830953362636c8b0369586d8b76499ebb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853561"
 ---
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver budsjettplanlegging. Det inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
+Denne artikkelen beskriver budsjettplanlegging. Det inneholder informasjon om hvordan du konfigurerer budsjettplanlegging og definerer budsjettplanleggingsprosesser.
 
 ## <a name="overview-of-budget-planning"></a>Oversikt over budsjettplanlegging
 
@@ -91,7 +91,7 @@ En arbeidsflyt for budsjettplanlegging består av et sett med etterfølgende tri
 
 Du oppretter arbeidsflyten for budsjettplanlegging i inndelingen **Arbeidsflytstadier** på siden **Budsjettplanleggingskonfigurasjon**. Der kan du velge stadiene og arbeidsflyten for budsjettering som skal brukes, og du kan også konfigurere tilleggsinnstillinger.
 
-En anbefalt fremgangsmåte er å opprette en budsjettplanleggingsarbeidsflyt for hvert nivå i et budsjetteringshierarki. Deretter tilordner du en arbeidsflyt for budsjettering som inneholder elementer som samsvarer med stadiene i arbeidsflyten for budsjettplanlegging. I eksemplskjemaet som vises tidligere i dette emnet, blir én budsjettplanleggingsarbeidsflyt opprettet for salgsavdelingene, og en annen blir opprette for hovedkontor. En arbeidsflyt for budsjettering flytter budsjettplanene gjennom stadiene.
+En anbefalt fremgangsmåte er å opprette en budsjettplanleggingsarbeidsflyt for hvert nivå i et budsjetteringshierarki. Deretter tilordner du en arbeidsflyt for budsjettering som inneholder elementer som samsvarer med stadiene i arbeidsflyten for budsjettplanlegging. I eksemplskjemaet som vises tidligere i denne artikkelen, blir én budsjettplanleggingsarbeidsflyt opprettet for salgsavdelingene, og en annen blir opprette for hovedkontor. En arbeidsflyt for budsjettering flytter budsjettplanene gjennom stadiene.
 
 Du oppretter budsjetteringsarbeidsflyten for budsjettplanlegging på siden **Budsjetteringsarbeidsflyter**. Prosessen ligner på prosessen for å opprette andre arbeidsflyter. Illustrasjonen nedenfor viser et eksempel på en arbeidsflyt for Hovedkontor.
 
@@ -141,7 +141,7 @@ Stadiefordelinger brukes til å tildele budsjettplanlinjer automatisk under arbe
 
 Når du definerer en stadiefordeling, kan du knytte arbeidsflyten for budsjettplanlegging og stadiet til fordelingsplanen. Arbeidsflyten for budsjettplanlegging må være knyttet til en arbeidsflyt for budsjettering, som bruker den automatiserte arbeidsflytoppgaven **Fordeling for budsjettplanleggingsstadium**. Når arbeidsflyten når det angitte stadiet, skjer fordelingen automatisk. Denne automatiserte oppgaven kan brukes til å opprette budsjettplanlinjer i et nytt scenario.
 
-I eksempelskjemaet som vises tidligere i dette emnet, blir det utført en tildeling for å overføre beløp fra en budsjettplan og scenarier i grunnlinjestadiet for hovedkontoret til en annen budsjettplan og scenarier i estimatstadiet for salgsavdelinger. Illustrasjonen nedenfor viser den aktuelle delen av eksempelskjemaet.
+I eksempelskjemaet som vises tidligere i denne artikkelen, blir det utført en tildeling for å overføre beløp fra en budsjettplan og scenarier i grunnlinjestadiet for hovedkontoret til en annen budsjettplan og scenarier i estimatstadiet for salgsavdelinger. Illustrasjonen nedenfor viser den aktuelle delen av eksempelskjemaet.
 
 [![Stadiefordeling.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

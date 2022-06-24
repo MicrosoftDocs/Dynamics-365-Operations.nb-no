@@ -1,6 +1,6 @@
 ---
 title: Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
-description: Dette emnet inneholder informasjon om hvordan du legger til nye felt i en forretningsdokumentmal i Microsoft Excel ved hjelp av funksjonen for administrasjon av forretningsdokumenter.
+description: Denne artikkelen inneholder informasjon om hvordan du legger til nye felt i en forretningsdokumentmal i Microsoft Excel ved hjelp av funksjonen for administrasjon av forretningsdokumenter.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 57eebdc38fb3f74690b92c03fa60e10c7610db1fe413320a6d167f05b0658bf1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8395a87e88ebbd1942c87da0cecebe6d25bdf625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767248"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869409"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
 
@@ -28,14 +28,14 @@ ms.locfileid: "6767248"
 
 Du kan legge til nye felt i en mal som brukes til å generere forretningsdokumenter i Microsoft Excel-format. Disse feltene kan legges til som plassholdere som brukes til å fylle genererte dokumenter med nødvendig informasjon fra programmet. For hvert felt du legger til, kan du også angi en binding til datakildene for å angi hvilke programdata som skal angis i feltet når malen brukes til å generere forretningsdokumenter.
 
-Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emnet. Dette eksemplet viser hvordan du oppdaterer en mal for å fylle ut feltene i skjemaer for fritekstfaktura som genereres.
+Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i denne artikkelen. Dette eksemplet viser hvordan du oppdaterer en mal for å fylle ut feltene i skjemaer for fritekstfaktura som genereres.
 
 ## <a name="configure-business-document-management-to-edit-templates"></a>Konfigurere administrasjon av forretningsdokument til å redigere maler
 
 Fordi Business Document Management (BDM) er bygd på toppen av rammeverket [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md), må du konfigurere de nødvendige ER- og BDM-parameterne før du kan begynne å arbeide med BDM.
 
 1.  Logg deg på forekomsten av Microsoft Dynamics 365 Finance som systemadministrator.
-2.  Fullfør følgende trinn i eksemplet i [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md):
+2.  Fullfør følgende trinn i eksemplet i artikkelen [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md):
 
     1.  Konfigurer ER-parametere.
     2.  Slå på BDM.

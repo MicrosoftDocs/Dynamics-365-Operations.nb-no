@@ -1,6 +1,6 @@
 ---
 title: Enkelt bilag med flere poster for kunde eller leverandør
-description: Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 Finance. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling.
+description: Denne artikkelen gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner av Microsoft Dynamics 365 Finance. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8677eba2c38c6273555e1189c0153272a8ff9e005655f3846c0d7605b872ff94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb94d582020484d8f37eb139c037fb108894c9ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737047"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889098"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Enkelt bilag med flere poster for kunde eller leverandør
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling. 
+Denne artikkelen gir en oversikt over hva som skjer når du posterer ett bilag med flere poster for kunde eller leverandør. Denne funksjonaliteten vil ikke være tilgjengelig i fremtidige versjoner. Derfor anbefales det ikke å bruke denne metoden for postering på grunn av regnskapsvirkningen på utligningsbehandling. 
 
 Noen eksempler der ett bilag brukes for flere kunder eller leverandører, inkluderer saldooverføringer mellom kunder, og motregningssaldoer mellom kunder og leverandører i den samme organisasjonen. 
 
@@ -35,7 +35,7 @@ Et bilag som inneholder mer enn én kunde eller leverandør, kan angis ved hjelp
 -   Ved hjelp av et bilag med flere linjer, der det er ingen finansmotkontoer, med mer enn én kunde eller leverandør.
 -   Angir et bilag der kontoen og motkontoen er leverandør/leverandør, kunde/kunde, leverandør/ kunde eller kunde/leverandør.
 
-Dette emnet forklarer hvordan utligningen skal behandles når ett bilag med flere poster for kunde eller leverandør posteres. Dette emnet inneholder også løsninger som hjelper deg med å forstå hvordan du unngår å bruke ett bilag med flere kunder eller leverandører. Det er spesielt eksempler som viser to vanlige utligningsscenarier som påvirkes ved å bruke ett bilag med flere kunder eller leverandører:
+Denne artikkelen forklarer hvordan utligningen skal behandles når ett bilag med flere poster for kunde eller leverandør posteres. Denne artikkelen inneholder også løsninger som hjelper deg med å forstå hvordan du unngår å bruke ett bilag med flere kunder eller leverandører. Det er spesielt eksempler som viser to vanlige utligningsscenarier som påvirkes ved å bruke ett bilag med flere kunder eller leverandører:
 
 -   Kontantrabattregnskap
 -   Revalueringsregnskap

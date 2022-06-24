@@ -1,6 +1,6 @@
 ---
-title: Scenarioer for justeringsdato
-description: Dette emnet gir eksempler som viser hvordan justeringsdatoer fungerer i Abonnementsfakturering.
+title: Justeringsdatoscenarioer
+description: Denne artikkelen gir eksempler som viser hvordan justeringsdatoer fungerer i Abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 91480fecd16cf8417722df73c28bbd81d029fb07
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 102e3a104be5be287f914172160e95aff65d0b18
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690480"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872622"
 ---
-# <a name="alignment-date-scenarios"></a>Scenarioer for justeringsdato
+# <a name="alignment-date-scenarios"></a>Justeringsdatoscenarioer
 
-Dette emnet gir eksempler som viser hvordan justeringsdatoer fungerer i Abonnementsfakturering.
+Denne artikkelen gir eksempler som viser hvordan justeringsdatoer fungerer i Abonnementsfakturering.
 
 I disse eksemplene har en fakturadetalj for en fakturaplan en justeringsdato den 31. oktober 2019. Den første fakturadetaljen for linjen slutter den 31. oktober 2019, og gjelder i henhold til dette. Linjen fornyes automatisk ved hjelp av en fornyelsesstartdato 11. november.
 

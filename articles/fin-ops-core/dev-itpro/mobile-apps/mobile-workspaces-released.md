@@ -1,6 +1,6 @@
 ---
 title: Tilgjengelige mobile arbeidsområder
-description: Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk.
+description: Denne artikkelen viser de mobile arbeidsområdene som er tilgjengelige for bruk.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4398bd8cf944ef11a0463d937aeaa3b5cc109142
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 79abd22bab9ec88358fa039060a67006fc53cb5d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868647"
 ---
 # <a name="available-mobile-workspaces"></a>Tilgjengelige mobile arbeidsområder
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk med mobilappen Økonomi og drift (Dynamics 365). Tabellen nedenfor angir avskrivningsplanen for hvert av disse mobilarbeidsområdet med hensyn til om en erstatningserfaring er planlagt eller ikke.  
+Denne artikkelen viser de mobile arbeidsområdene som er tilgjengelige for bruk med mobilappen Økonomi og drift (Dynamics 365). Tabellen nedenfor angir avskrivningsplanen for hvert av disse mobilarbeidsområdet med hensyn til om en erstatningserfaring er planlagt eller ikke.  
 
 
 | Mobilt arbeidsområde     | Beskrivelse   | Avskrivelsesplan   |

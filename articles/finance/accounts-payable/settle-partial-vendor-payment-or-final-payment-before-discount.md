@@ -1,6 +1,6 @@
 ---
 title: Utligne en delvis leverandørbetaling og den endelige betalingen i sin helhet før rabattdatoen
-description: Dette emnet leder deg gjennom et scenario der delvise betalinger foretas for en leverandørfaktura og en kontantrabatt blir utført.
+description: Denne artikkelen leder deg gjennom et scenario der delvise betalinger foretas for en leverandørfaktura og en kontantrabatt blir utført.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04b00c8407ea2fd7d1e4b58db47c392989a20577
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 90aeff9872e72950f42b6227300933d562c0a3d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716250"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889997"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Utligne en delvis leverandørbetaling og den endelige betalingen i sin helhet før rabattdatoen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet leder deg gjennom et scenario der delvise betalinger foretas for en leverandørfaktura og en kontantrabatt blir utført.
+Denne artikkelen leder deg gjennom et scenario der delvise betalinger foretas for en leverandørfaktura og en kontantrabatt blir utført.
 
 Fabrikam kjøper varer fra leverandøren 3064. Leverandøren gir Fabrikam en kontantrabatt på 1 prosent hvis fakturaen betales innen 14 dager. Fakturaer må betales innen 30 dager. Leverandøren lar også Fabrikam få kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Leverandørparametere**. 25 juni registrerer April en faktura for 1 000,00 for leverandøren 3064.
 

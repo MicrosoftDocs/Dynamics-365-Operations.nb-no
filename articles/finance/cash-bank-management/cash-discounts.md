@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37698133a959792338abcc2abd75b6fa654177f6
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b684cf16b172432fc3bdb485be98a5c3476c8ed0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710677"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846962"
 ---
 # <a name="cash-discounts"></a>Kontantrabatt
 
@@ -30,7 +30,7 @@ Kontantrabatter konfigureres og deles for leverandører og kunder.  Den tilgjeng
 
 ## <a name="cash-discounts"></a>Kontantrabatt
 
-Kontantrabatter for både kunder eller leverandører kan opprettes på siden for kontantrabatter. Du kan også definere, ved hjelp av feltet Neste rabattkode, en serie med kontantrabatter som kommer etter hverandre etter hvert som tidligere kontantrabattdatoer utløper. Hvis du vil ha mer informasjon, se "Eksempel: Serie med kontantrabatter" senere i dette emnet. Hvis fakturaen, kredittransaksjonen (en betaling eller en kreditnota) eller begge deler er angitt i en annen valuta enn regnskapsvalutaen for den juridiske enheten, blir kontantrabatten beregnet ved hjelp av valutakursen som er basert på datoen for betalingen eller kreditnotaen. Hvis fakturaen eller kredittdokumentet er angitt i ulike juridiske enheter, og hvis regnskapsvalutaene for de juridiske enhetene er forskjellige, hentes valutakursen fra den juridiske enheten for fakturaen, i henhold til datoen for kredittdokumentet. Hvis du vil ha mer informasjon, se "Eksempel: Valutakurser for kontantrabatter" senere i dette emnet.
+Kontantrabatter for både kunder eller leverandører kan opprettes på siden for kontantrabatter. Du kan også definere, ved hjelp av feltet Neste rabattkode, en serie med kontantrabatter som kommer etter hverandre etter hvert som tidligere kontantrabattdatoer utløper. Hvis du vil ha mer informasjon, se "Eksempel: Serie med kontantrabatter" senere i denne artikkelen. Hvis fakturaen, kredittransaksjonen (en betaling eller en kreditnota) eller begge deler er angitt i en annen valuta enn regnskapsvalutaen for den juridiske enheten, blir kontantrabatten beregnet ved hjelp av valutakursen som er basert på datoen for betalingen eller kreditnotaen. Hvis fakturaen eller kredittdokumentet er angitt i ulike juridiske enheter, og hvis regnskapsvalutaene for de juridiske enhetene er forskjellige, hentes valutakursen fra den juridiske enheten for fakturaen, i henhold til datoen for kredittdokumentet. Hvis du vil ha mer informasjon, se "Eksempel: Valutakurser for kontantrabatter" senere i denne artikkelen.
 
 ## <a name="defaulting-order-of-cash-discount-main-account"></a>Standardrekkefølge for kontantrabatthovedkonto
 

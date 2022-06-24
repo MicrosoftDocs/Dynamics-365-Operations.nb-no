@@ -1,6 +1,6 @@
 ---
-title: Utforme en ny ER-løsning for å skrive ut ZPL-etiketter
-description: Dette emnet forklarer hvordan du utformer en ny ER-løsning (elektronisk rapportering) for å skrive ut ZPL-etiketter (Zebra Programming Language).
+title: Utform en ny ER-løsning for å skrive ut ZPL-etiketter
+description: Denne artikkelen forklarer hvordan du utformer en ny ER-løsning (elektronisk rapportering) for å skrive ut ZPL-etiketter (Zebra Programming Language).
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: f861fe63c6d7d00d0a9f84d33c0d1b1b23735b61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612363"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845722"
 ---
-# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Utforme en ny ER-løsning for å skrive ut ZPL-etiketter
+# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Utform en ny ER-løsning for å skrive ut ZPL-etiketter
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet forklarer hvordan en bruker med en rolle som systemansvarlig, utvikler av elektronisk rapportering eller funksjonell konsulent for elektronisk rapportering kan konfigurere parametere for rammeverket for [elektronisk rapportering (ER)](general-electronic-reporting.md), utforme nødvendige ER-[konfigurasjoner](general-electronic-reporting.md#Configuration) for en ny ER-løsning for å få tilgang til dataene i lagerstyringssystemet og generere egendefinerte lagerlokasjonsetiketter i ZPL II-format (Zebra Programming Language). Denne fremgangsmåten kan gjennomføres i firmaet **USRT**.
+Denne artikkelen forklarer hvordan en bruker med en rolle som systemansvarlig, utvikler av elektronisk rapportering eller funksjonell konsulent for elektronisk rapportering kan konfigurere parametere for rammeverket for [elektronisk rapportering (ER)](general-electronic-reporting.md), utforme nødvendige ER-[konfigurasjoner](general-electronic-reporting.md#Configuration) for en ny ER-løsning for å få tilgang til dataene i lagerstyringssystemet og generere egendefinerte lagerlokasjonsetiketter i ZPL II-format (Zebra Programming Language). Denne fremgangsmåten kan gjennomføres i firmaet **USRT**.
 
 ## <a name="business-scenario"></a>Forretningsscenario
 

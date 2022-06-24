@@ -1,6 +1,6 @@
 ---
 title: Konvensjoner for anleggsmiddelavskrivning
-description: Dette emnet beskriver avskrivningskonvensjoner for anleggsmidler.
+description: Denne artikkelen beskriver avskrivningskonvensjoner for anleggsmidler.
 author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e151d20fbfb9aa8fca9afc5be4f112b3de13cc7
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 6d791461a344611437e77514e47dd5dd9b7ddb10
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719867"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858399"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Konvensjoner for anleggsmiddelavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver avskrivningskonvensjoner for anleggsmidler. Avskrivningskonvensjoner brukes til å bestemme når og hvordan avskrivningen skal beregnes for både året da anleggsmiddelet anskaffes, og året da et anleggsmiddel avhendes.
+Denne artikkelen beskriver avskrivningskonvensjoner for anleggsmidler. Avskrivningskonvensjoner brukes til å bestemme når og hvordan avskrivningen skal beregnes for både året da anleggsmiddelet anskaffes, og året da et anleggsmiddel avhendes.
 
 Avskrivningskonvensjoner kan tilordnes til oppsettet for et anleggsmiddelgruppetablå. Hvis du vil vise eller tilordne avskrivningskonvensjonen, velger du **Anleggsmiddel**-grupper i oppsettområdet for anleggsmidler. Velg **Tablåer**-knappen. I dette tilfellet brukes avskrivningskonvensjonene som er tilordnet, som standardverdier ved opprettelse av anleggsmiddeltablåer. Avskrivningskonvensjoner kan også angis på et enkelt anleggsmiddeltablå. For å gjøre dette velger du **Tablåer** i oppsettområdet i anleggsmidler, og deretter velger du **Anleggsmiddelgrupper**-knappen.
 

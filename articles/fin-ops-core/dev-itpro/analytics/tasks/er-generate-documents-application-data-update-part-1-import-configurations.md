@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a75b268f2d8341c1a6dd0d3f1bd9dcb31d9084ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727491"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884148"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importere konfigurasjoner for å generere dokumenter med programdata
 
@@ -25,7 +25,7 @@ ms.locfileid: "6727491"
 
 For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren "ER Opprette en konfigurasjonsleverandør og merke den som aktiv".
 
-Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å generere et elektronisk dokument. I denne prosedyren må du importere de nødvendige ER-konfigurasjonene som er opprettet for eksempelfirmaet, Litware, Inc, og bruke dem til å generere elektroniske dokumenter. Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig eller elektronisk rapportering utvikler. Disse trinnene kan fullføres ved hjelp av DEMF-datasettet. Før du begynner, last ned og lagre filene som er oppført i Hjelpemnet, «Generer elektroniske dokumenter og oppdater programdata med ER-verktøy» (generate-electronic-documents-update-application-data/). Filene er XML for Intrastat (modell), Intrastat (tilordning) XML og XML for Intrastat (format).
+Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rapportering (ER)-konfigurasjoner for å generere et elektronisk dokument. I denne prosedyren må du importere de nødvendige ER-konfigurasjonene som er opprettet for eksempelfirmaet, Litware, Inc, og bruke dem til å generere elektroniske dokumenter. Denne fremgangsmåten er opprettet for brukere med rollen som systemansvarlig eller elektronisk rapportering utvikler. Disse trinnene kan fullføres ved hjelp av DEMF-datasettet. Før du begynner, last ned og lagre filene som er oppført i hjelpeartikkelen, «Generer elektroniske dokumenter og oppdater programdata med ER-verktøy» (generate-electronic-documents-update-application-data/). Filene er XML for Intrastat (modell), Intrastat (tilordning) XML og XML for Intrastat (format).
 
 1. Gå til Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering.
     * Kontroller at konfigurasjonsleverandøren for eksempelfirmaet "Litware, Inc." er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i prosedyren "Opprette en konfigurasjonsleverandør og merke den som aktiv".  

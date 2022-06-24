@@ -1,6 +1,6 @@
 ---
 title: Komme i gang med Elektronisk fakturering for Mexico
-description: Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Mexico.
+description: Denne artikkelen inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Mexico.
 author: gionoder
 ms.date: 12/01/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 540b6e6f9b4b669957cc3310e473ad59b9210594
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855336"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Komme i gang med Elektronisk fakturering for Mexico
 
@@ -31,11 +31,11 @@ ms.locfileid: "8566006"
 > [!IMPORTANT]
 > Det kan hende at Elektronisk fakturering for Mexico ikke støtter alle funksjonene som er tilgjengelige i CFDI-dokumentet (Comprobante Fiscal Digital por Internet) og i den relaterte integrasjonen som er innebygd i Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management.
 
-Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Mexico. Det leder deg gjennom konfigurasjonstrinnene som er landsavhengige i Regulatory Configuration Services (RCS) og Finance. Den leder deg også gjennom trinnene du må følge i Finance for å sende CFDI-fakturaer gjennom tjenesten, og forklarer hvordan du gjennomgår behandlingsresultatene og statusen for CFDI-fakturaer.
+Denne artikkelen inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Mexico. Det leder deg gjennom konfigurasjonstrinnene som er landsavhengige i Regulatory Configuration Services (RCS) og Finance. Den leder deg også gjennom trinnene du må følge i Finance for å sende CFDI-fakturaer gjennom tjenesten, og forklarer hvordan du gjennomgår behandlingsresultatene og statusen for CFDI-fakturaer.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Før du fullfører trinnene i dette emnet må du fullføre trinnene i [Komme i gang med tjenesteadministrasjon for elektronisk fakturering](e-invoicing-get-started-service-administration.md) og [Komme i gang med Elektronisk fakturering](e-invoicing-get-started.md).
+Før du fullfører trinnene i denne artikkelen må du fullføre trinnene i [Komme i gang med tjenesteadministrasjon for elektronisk fakturering](e-invoicing-get-started-service-administration.md) og [Komme i gang med Elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="set-up-the-cadena-xslt"></a>Definere Cadena XSLT
 

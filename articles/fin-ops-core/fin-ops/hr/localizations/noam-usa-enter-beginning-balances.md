@@ -1,6 +1,6 @@
 ---
 title: Angi startsaldoer for lønn
-description: Emnet beskriver fremgangsmåten for å angi startsaldoer for inntektskoder, fradrag, fordeler og avgifter.
+description: Denne artikkelen beskriver fremgangsmåten for å angi startsaldoer for inntektskoder, fradrag, fordeler og avgifter.
 author: andreabichsel
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d14e7e0772c5b365818d3a8a230abe9f674a077e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850025"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Angi startsaldoer for lønn
 
 [!include [banner](../../includes/banner.md)]
 
-Emnet beskriver fremgangsmåten for å angi startsaldoer for inntektskoder, fradrag, fordeler og avgifter. Denne informasjonen er nyttig for partnere som overfører eller overfører data til en ny lønnsimplementering fra et annet system. Ved klargjøring for å angi startsaldoer for lønn, kontrollerer vi følgende informasjon:
+Denne artikkelen beskriver fremgangsmåten for å angi startsaldoer for inntektskoder, fradrag, fordeler og avgifter. Denne informasjonen er nyttig for partnere som overfører eller overfører data til en ny lønnsimplementering fra et annet system. Ved klargjøring for å angi startsaldoer for lønn, kontrollerer vi følgende informasjon:
 
 - Ansattposter er angitt og tilgjengelige i systemet
 - Følgende data blir definert og tilordnet til ansatte:

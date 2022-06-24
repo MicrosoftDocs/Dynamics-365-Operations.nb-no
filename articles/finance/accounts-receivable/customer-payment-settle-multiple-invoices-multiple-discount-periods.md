@@ -1,6 +1,6 @@
 ---
 title: Bruke én betaling til å utligne fakturaer som strekker seg over flere rabattperioder
-description: Dette emnet viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenarioene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
+description: Denne artikkelen viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenarioene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5187835da33d729e50aad9c813d8753d240fb81
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e6035973abea9dacd4b6d4d8bf2fd3c7d6b10fb0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872651"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Bruke én betaling til å utligne fakturaer som strekker seg over flere rabattperioder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenarioene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
+Denne artikkelen viser hvordan flere fakturaer betales når hver faktura kvalifiserer for kontantrabatt. Scenarioene i denne artikkelen fremhever hvordan kontantrabattene som tas, varierer avhengig av når betalingen skjer.
 
 Fabrikam selger varer til kunden 4032. Fabrikam tilbyr en kontantrabatt på 1 prosent hvis fakturaen er betalt innen 14 dager. Fabrikam tilbyr også kontantrabatter på delvise betalinger. Du finner parameterne for utligning på siden **Kundeparametere**.
 

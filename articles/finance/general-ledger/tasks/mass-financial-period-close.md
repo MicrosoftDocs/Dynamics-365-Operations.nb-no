@@ -1,6 +1,6 @@
 ---
-title: Lukke masseregnskapsperiode
-description: Dette emnet viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen.
+title: Lukk masseregnskapsperiode
+description: Denne artikkelen viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen.
 author: aprilolson
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0acaad0d6e89fe7c81537e554b36ffb210e5abad
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722073"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872448"
 ---
-# <a name="mass-financial-period-close"></a>Lukke masseregnskapsperiode
+# <a name="mass-financial-period-close"></a>Lukk masseregnskapsperiode
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen. I tillegg viser oppgaven hvordan du begrenser brukergruppepostering til spesifikke moduler.
+Denne artikkelen viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen. I tillegg viser oppgaven hvordan du begrenser brukergruppepostering til spesifikke moduler.
 
 1. Gå til **Økonomimodul > Lukket periode > Finanskalendere** i navigasjonsruten. Vær oppmerksom på at listen over juridiske enheter som vises, er avhengig av regnskapskalenderen som er valgt på siden. Bare juridiske enheter som bruker den valgte regnskapskalenderen, vises.
 2. Velg **Rediger**.

@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources 2. desember 2020
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 2. desember 2020.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 2. desember 2020.
 author: marcelbf
 ms.date: 12/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6e02586ad3e6b4428f2ba826851db6ebc3172bdf1760b483032f5159e7864a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cecef6d2e73b42126b1be100dca52ebd8d9270fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848114"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 2. desember 2020
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -52,9 +52,9 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdateringer for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
-| Utstedelsesnummer | Problem | beskrivelse |
+| Utstedelsesnummer | Problem | Beskrivelse |
 | --- | --- | --- |
 | 514087 | BenefitEligibilityProcessResult bør inkludere DateTime som ble brukt i behandling. | BenefitEligibity-behandlingsresultatet inneholder nå datetimestamp for siste behandling, som manglet tidligere. |
 | 526903 | Fordelsregistrering mislykkes for planer med avhengigheter når **Velg utpekte personer automatisk** er aktivert i **delte parametere for Human Resources**. | Løste problemet der fordelsregistreringen mislyktes for utpekte personer når alternativet **Velg utpekte personer automatisk** ble aktivert for standard utpekte personer. |

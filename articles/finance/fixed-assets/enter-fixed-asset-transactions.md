@@ -1,6 +1,6 @@
 ---
 title: Alternativer for transaksjon av anleggsmiddel
-description: Dette emnet beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
+description: Denne artikkelen beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 507e263e7267fe96cdf9ed78a84924839c2de982
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 402679b6f1003f14f7e277a326784edaaea719d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8719755"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883365"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativer for transaksjon av anleggsmiddel
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
+Denne artikkelen beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 
 Du kan definere anleggsmidler for integrasjon med Leverandører, Kunder, Innkjøp og leverandører og Økonomimodul. Du kan også overføre varer i Lagerstyring til Anleggsmidler hvis du vil bruke disse elementene internt.
 

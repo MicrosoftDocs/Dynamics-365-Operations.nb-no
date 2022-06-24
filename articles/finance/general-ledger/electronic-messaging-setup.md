@@ -1,6 +1,6 @@
 ---
 title: Definere elektroniske meldinger
-description: Dette emnet gir informasjon om hvordan du konfigurerer EM-funksjonalitet (Elektroniske meldinger).
+description: Denne artikkelen gir informasjon om hvordan du konfigurerer EM-funksjonalitet (Elektroniske meldinger).
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6ac6e4fbc37165a3126de3b1f937a43c980410b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734226"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874558"
 ---
 # <a name="set-up-electronic-messages"></a>Definere elektroniske meldinger
 
@@ -66,7 +66,7 @@ Tabellen nedenfor beskriver feltene på siden **Meldingsstatuser**.
 |---------------------|-------------|
 | Meldingsstatus      | Angi et unikt navn for meldingsstatusen. Meldingsstatusene brukes til å beskrive tilstanden til en elektronisk melding til enhver tid. Navnet du angir, vises på **Elektroniske meldinger**-siden og i en logg som er relatert til elektroniske meldinger. |
 | Beskrivelse         | Angi en beskrivelse av meldingsstatusen. |
-| Svartype       | Velg svartypen for meldingsstatusen. Noen handlinger i en behandling kan produsere mer enn én svartype. For eksempel kan handlinger av typen **Webtjeneste** produsere svar av typen **Ble kjørt** eller **Teknisk feil**, avhengig av resultatet av kjøringen. I dette tilfellet må meldingsstatuser for begge svartyper defineres. Se [Handlingstyper for meldingsbehandling](#action-types) senere i dette emnet for mer informasjon om handlingstyper og relaterte svartyper. |
+| Svartype       | Velg svartypen for meldingsstatusen. Noen handlinger i en behandling kan produsere mer enn én svartype. For eksempel kan handlinger av typen **Webtjeneste** produsere svar av typen **Ble kjørt** eller **Teknisk feil**, avhengig av resultatet av kjøringen. I dette tilfellet må meldingsstatuser for begge svartyper defineres. Se [Handlingstyper for meldingsbehandling](#action-types) senere i denne artikelen for mer informasjon om handlingstyper og relaterte svartyper. |
 | Status for meldingselement | Noen ganger må statusen for en elektronisk melding påvirke statusen til relaterte meldingselementer. Velg en meldingselementstatus i dette feltet for å knytte den til meldingsstatusen. |
 | Tillat sletting        | Merk av i denne avmerkingsboksen hvis brukerne skal kunne slette elektroniske meldinger som har denne statusen på siden **Elektroniske meldinger**. |
 
@@ -240,7 +240,7 @@ Tabellen nedenfor beskriver feltene på siden **Handlinger for meldingsbehandlin
 
 | Felt                                     | Beskrivelse |
 |-------------------------------------------|-------------|
-| Handlingstype                               | Velg handlingstypen. Hvis du vil ha informasjon om de tilgjengelige alternativene, se delen [Handlingstyper for meldingsbehandling](#action-types) senere i dette emnet. |
+| Handlingstype                               | Velg handlingstypen. Hvis du vil ha informasjon om de tilgjengelige alternativene, se delen [Handlingstyper for meldingsbehandling](#action-types) senere i denne artikkelen. |
 | Formattilordning                            | Velg ER-formatet som skal kalles for handlingen. Dette feltet er bare tilgjengelig for handlingene av typen **Eksport av elektronisk rapportering**, **Import av elektronisk rapportering** og **Melding om eksport av elektronisk rapportering**. |
 | Formattilordning for URL-bane               | Velg ER-formatet som skal kalles for handlingen. Dette formatet brukes til å skrive banen til URL-adressen som skal legges til den grunnleggende Internett-adressen som er angitt for den valgte webserveren. Dette feltet er bare tilgjengelig for handlingene av typen **Webtjeneste**. |
 | Type meldingselement                         | Velg hvilken type poster som skal evalueres for handlingen. Dette feltet er tilgjengelig for handlinger av typen **Utføringsnivå for meldingselement**, **Eksport av elektronisk rapportering**, **Import av elektronisk rapportering** og **Webtjeneste** og noen andre typer. Hvis du lar dette feltet stå tomt, vurderes alle meldingselementtyper som er definert for meldingsbehandlingen. |

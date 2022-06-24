@@ -1,6 +1,6 @@
 ---
 title: Dynamics 365-globaliseringstjenester
-description: Dette emnet gir en oversikt over Microsoft Dynamics 365-globaliseringstjenester.
+description: Denne artikkelen gir en oversikt over Microsoft Dynamics 365-globaliseringstjenester.
 author: JaneA07
 ms.date: 04/12/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1dfe88bf6eb0cf479f8febd8a599b165b71d932d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9f449bed7eac8d6eb38e62e6eda816f31cff80c2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879485"
 ---
 # <a name="dynamics-365-globalization-services"></a>Dynamics 365-globaliseringstjenester
 
@@ -40,8 +40,8 @@ Disse globaliseringstjenestene sørger for direkte integrasjon med følgende Dyn
 |----------------|-----|----------------------|---------------------------|
 | Dynamics 365 Finance | Ja | Ja | Ja | 
 | Dynamics 365 Supply Chain Management | Ja | Ja | Ja | 
-| Dynamics 365 Project Operations | Ja | Ja | Gjelder ikke | 
-| Dynamics 365 Commerce | Ja | Gjelder ikke | Gjelder ikke | 
+| Dynamics 365 Project Operations | Ja | Ja | Gjelder ikke her | 
+| Dynamics 365 Commerce | Ja | Gjelder ikke her | Gjelder ikke | 
 
 > [!NOTE]
 > På grunn av forskjeller i tilgjengeligheten av geografiske Azure-lokasjoner for RCS kan konfigurasjon av denne tjenesten føre til at kundedata overføres utenfor den geografiske lokasjonen som er valgt for den aktuelle Dynamics 365-onlinetjenesten. Hvis du vil ha mer informasjon, kan du se [Dynamics 365 og Power Platform: Tilgjengelighet, dataplassering, språk og lokalisering](https://aka.ms/rcs/D365Productavailabilityguide).

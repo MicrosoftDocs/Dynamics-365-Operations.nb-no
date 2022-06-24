@@ -1,6 +1,6 @@
 ---
-title: Oppgradere budsjettplanlegging
-description: Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.
+title: Oppgrader budsjettplanlegging
+description: Denne artikkelen beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.
 author: panolte
 ms.date: 04/10/2017
 ms.topic: article
@@ -14,23 +14,23 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: c52de15faddd797d31d0875882863b8fe37a7d173b38be058e51a06b2e7fe078
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769197"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890413"
 ---
 # <a name="upgrade-budget-planning"></a>Oppgradere budsjettplanlegging
 
 [!include [banner](../includes/banner.md)]
 
-Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Dynamics 365 Finance. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.  
+Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Dynamics 365 Finance. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Denne artikkelen beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.  
 
-Budsjettplanlegging i Finance har mange forbedringer som ikke var tilgjengelige i Dynamics AX 2012. Dette emnet beskriver endringene som må utføres av kunder som oppgraderer. Det beskriver også de nye funksjonene som må vurderes under oppgraderingen. På grunn av omfanget av endringene, kan ikke eventuelle eksisterende budsjettplaner åpnes før det gjøres endringer som er beskrevet i dette emnet. Rapporter skal imidlertid fortsatt fungere og krever ikke flere endringer.
+Budsjettplanlegging i Finance har mange forbedringer som ikke var tilgjengelige i Dynamics AX 2012. Denne artikkelen beskriver endringene som må utføres av kunder som oppgraderer. Det beskriver også de nye funksjonene som må vurderes under oppgraderingen. På grunn av omfanget av endringene, kan ikke eventuelle eksisterende budsjettplaner åpnes før det gjøres endringer som er beskrevet i denne artikkelen. Rapporter skal imidlertid fortsatt fungere og krever ikke flere endringer.
 
 ## <a name="overview-of-changes"></a>Oversikt over endringer
-Mange store endringer er gjort i budsjettering for Finance and Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Finance:
+Mange store endringer er gjort i budsjettering for Finande and Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Finance:
 
 -   Budsjettplanmaler (budsjettplanleggingskonfigurasjon)
 -   Budsjettplanmapper (budsjettplanleggingskonfigurasjon)
@@ -58,7 +58,7 @@ Budsjettplanleggingsprosesser er stort sett de samme som i AX 2012. De viktigste
 I AX 2012 ble justeringsdokumenter lagret i en vedleggsmappe. Ingen tidligere justeringsdokumenter blir oppgradert. Justeringsdokumenter lagres nå i databasen. Hvis denne informasjonen skal lagres i den oppgraderte versjonen, kan du laste opp de endelige justeringsdokumentene for hver plan som et vedlegg, ved hjelp av **Justering** -knappen i handlingsruten. I AX 2012 ble Excel-regneark for hver budsjettplanen opprettet basert på malen. I Finance åpner alle planer en kopi av oppsettet. Imidlertid blir ingen endringer i Excel-filen lagret. Formler eller støtteinformasjon som ble brukt per plan, må legges til via kommentarer, et justeringsdokumentet eller en annen tilleggsprosess.
 
 ## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurere et oppgradert miljø fra AX 2012
-I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata for å finne ut hvordan du konfigurerer det oppgraderte systemet. Standard konfigurasjonsdata for kolonner ble opprettet for å bidra med oppgraderingsprosessen. Du kan oppdatere eller slette disse standarddataene hvis de ikke oppfyller dine krav til konfigurasjon. **Obs!** De er nye obligatoriske felt som ikke angis i systemet. Hvis du står fast på en side, for eksempel siden **Budsjettplanleggingskonfigurasjon**, og kan ikke forlate den, kan du lukke nettleseren og åpne den til en annen side for å registrere informasjon i riktig rekkefølge. Det er obligatoriske felt som ikke er angitt ennå. Derfor kan det oppstå problemer før alt er konfigurert og alle nødvendige felt er angitt. Dette emnet beskriver hvordan du angir disse feltene etter behov. Her er noen av disse obligatoriske feltene:
+I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata for å finne ut hvordan du konfigurerer det oppgraderte systemet. Standard konfigurasjonsdata for kolonner ble opprettet for å bidra med oppgraderingsprosessen. Du kan oppdatere eller slette disse standarddataene hvis de ikke oppfyller dine krav til konfigurasjon. **Obs!** De er nye obligatoriske felt som ikke angis i systemet. Hvis du står fast på en side, for eksempel siden **Budsjettplanleggingskonfigurasjon**, og kan ikke forlate den, kan du lukke nettleseren og åpne den til en annen side for å registrere informasjon i riktig rekkefølge. Det er obligatoriske felt som ikke er angitt ennå. Derfor kan det oppstå problemer før alt er konfigurert og alle nødvendige felt er angitt. Denne artikkelen beskriver hvordan du angir disse feltene etter behov. Her er noen av disse obligatoriske feltene:
 
 -   Siden **Budsjettplanleggingsprosess**: Feltet **Standard kontostruktur**
 -   Siden **Budsjettplanleggingsprosess**: **Oppsett**-feltet i hurtigfanen **Stadiumsregler og oppsett for budsjettplanlegging**
@@ -69,7 +69,7 @@ I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata f
    -   Budsjettplanscenarioer: Faktisk, Grunnverdi, Budsjettforespørsel, Budsjett godkjent
    -   Budsjettplanlinjer for alle scenarier i 2017 og faktiske data for både 2017 og 2016
 
-   Følgende kolonner opprettes i Finance and Operations:
+   Følgende kolonner vil bli opprettet i Finance and Operations:
 
    | Kolonnenavn    | Budsjettplanscenario | Tidsperiode for kolonne | Årsforskyvning |
    |----------------|----------------------|--------------------|-------------|

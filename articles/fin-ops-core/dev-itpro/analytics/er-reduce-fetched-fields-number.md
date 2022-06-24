@@ -1,6 +1,6 @@
 ---
 title: Forbedre ytelsen til ER-løsninger ved å redusere antall tabellfelt som hentes ved kjøretid
-description: Dette emnet forklarer hvordan du kan bidra til å forbedre ytelsen ved å redusere antall tabellfelt som hentes ved kjøretid.
+description: Denne artikkelen forklarer hvordan du kan bidra til å forbedre ytelsen ved å redusere antall tabellfelt som hentes ved kjøretid.
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd192a7718ac4fd8bcb636ede6c005ca29ee5f08
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: eb76c415da87d421b8135a93b84f4e905f01e70d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811960"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847458"
 ---
 # <a name="improve-performance-of-er-solutions-by-reducing-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Forbedre ytelsen til ER-løsninger ved å redusere antall tabellfelt som hentes ved kjøretid
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811960"
 
 Du kan utforme [Elektronisk rapportering](general-electronic-reporting.md) (ER) [formater](er-overview-components.md#format-components-for-outgoing-electronic-documents) for å generere utgående dokumenter i forskjellige formater. Når et dokument genereres, kaller et ER-format datakilder som ble konfigurert i en tilsvarende ER-[modelltilordning](er-overview-components.md#model-mapping-component). Hvis du vil konfigurere tilgang til programtabeller, spørringer eller enheter for henting av poster, kan du bruke ER-datakilder av typen *Tabellposter*. Som standard henter en datakilde for *Tabellpost*-typen verdiene til alle felt i de ønskede postene. Du kan imidlertid konfigurere denne typen datakilde, slik at den bare henter feltverdiene som kreves for å kjøre ER-formatet. Denne konfigurasjonen bidrar til å redusere minneforbruket til applikasjonsserveren som utfører datahenting og ytterligere postbufring.
 
-Hvis du vil lære mer om hvordan du begrenser listen over hentede felt for datakilder av *Tabellposter*-typen, kan du fullføre eksemplet i dette emnet.
+Hvis du vil lære mer om hvordan du begrenser listen over hentede felt for datakilder av *Tabellposter*-typen, kan du fullføre eksemplet i denne artikkelen.
 
 ## <a name="example-reduce-the-number-of-table-fields-that-are-fetched-at-runtime"></a>Eksempel: Reduser antall tabellfelt som hentes ved kjøretid
 
@@ -49,7 +49,7 @@ Følg trinnene i [Konfigurere ER-rammeverket](er-quick-start2-customize-report.m
 
 ### <a name="import-the-sample-er-configurations"></a>Importere ER-eksempelkonfigurasjonene
 
-Hvis du ikke har fullført eksemplet i emnet [Utforme en ny ER-løsning for å skrive ut et egendefinert rapport](er-quick-start1-new-solution.md), kan du laste ned og lagre XML-filene lokalt for følgende konfigurasjoner av ER-løsningen som tilbys.
+Hvis du ikke har fullført eksemplet i artikkelen [Utforme en ny ER-løsning for å skrive ut et egendefinert rapport](er-quick-start1-new-solution.md), kan du laste ned og lagre XML-filene lokalt for følgende konfigurasjoner av ER-løsningen som tilbys.
 
 | Innholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|

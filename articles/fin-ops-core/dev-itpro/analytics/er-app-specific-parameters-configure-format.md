@@ -1,6 +1,6 @@
 ---
 title: Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
-description: Dette emnet forklarer hvordan du kan konfigurere elektroniske rapporter (ER)-formater til å bruke parametere som angis per juridisk enhet.
+description: Denne artikkelen forklarer hvordan du kan konfigurere elektroniske rapporter (ER)-formater til å bruke parametere som angis per juridisk enhet.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2bf4d1ecad3e25299df7c87ffa2236736ddcac300a5ded779616b25920745d7e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb44422c4cdcc87989cdfb28dcd7d5cfea9002eb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765838"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858835"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
 
@@ -37,13 +37,13 @@ De ER-programspesifikke parameterne gjør det mulig for privilegerte brukere å 
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-For å fullføre eksemplene i dette emnet må du har tilgang til forekomsten av Regulatory Configuration Service (RCS) som er klargjort for samme leietaker som Finance and Operations, for én av følgende roller:
+For å fullføre eksemplene i denne artikkelen må du har tilgang til forekomsten av Regulatory Configuration Services (RCS) som er klargjort for samme leietaker som Økonomi og drift, for én av følgende roller:
 
 - Utvikler av elektronisk rapportering
 - Funksjonell konsulent for elektronisk rapportering
 - Systemansvarlig
 
-Vi anbefaler at du fullfører trinnene i emnet [Støtte for parametriserte kall av ER-datakilder av felttypen Beregnet](er-calculated-field-type.md). Hvis du allerede har fullført disse trinnene, kan du hoppe over trinnene i **Importere ER-konfigurasjoner til RCS**.
+Vi anbefaler at du fullfører trinnene i artikkelen [Støtte for parametriserte kall av ER-datakilder av felttypen Beregnet](er-calculated-field-type.md). Hvis du allerede har fullført disse trinnene, kan du hoppe over trinnene i **Importere ER-konfigurasjoner til RCS**.
 
 ## <a name="import-er-configurations-into-rcs"></a>Importere ER-konfigurasjoner til RCS
 
@@ -58,7 +58,7 @@ Last ned og lagre følgende ER-konfigurasjoner lokalt:
 
 Logg deretter på RCS-forekomsten.
 
-I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet Litware, Inc. Før du kan fullføre trinnene i denne prosedyren må du fullføre prosedyren i emnet [Opprette en konfigurasjonsleverandør og merke den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md) i RCS.
+I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet Litware, Inc. Før du kan fullføre trinnene i denne prosedyren må du fullføre prosedyren i artikkelen [Opprette en konfigurasjonsleverandør og merke den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md) i RCS.
 
 1.  Velg **Elektronisk rapportering** på standard instrumentbord.
 2.  Velg **Rapporteringskonfigurasjoner**.
@@ -300,7 +300,7 @@ Gjenta trinn i denne delen for overordnede elementer i formatet **Format for å 
 -   Tilordning for å lære om parameterkall.xml
 -   Modell for å lære om parameterkall.xml
 
-Hvis du vil lære hvordan du bruker det konfigurerte ER-formatet **Format for å lære hvordan du slår opp LE-data** til å definere juridisk enhetsavhengige sett med mva-koder for å filtrere mva-transaksjoner etter ulike avgiftsnivåer, må du fullføre trinnene i emnet [Definere parameterne for et ER-format per juridisk enhetdataenhet](er-app-specific-parameters-set-up.md).
+Hvis du vil lære hvordan du bruker det konfigurerte ER-formatet **Format for å lære hvordan du slår opp LE-data** til å definere juridisk enhetsavhengige sett med mva-koder for å filtrere mva-transaksjoner etter ulike avgiftsnivåer, må du fullføre trinnene i artikkelen [Definere parameterne for et ER-format per juridisk enhetdataenhet](er-app-specific-parameters-set-up.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

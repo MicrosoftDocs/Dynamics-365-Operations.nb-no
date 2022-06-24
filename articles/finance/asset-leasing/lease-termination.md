@@ -1,6 +1,6 @@
 ---
 title: Forslag til leieavslutning
-description: Dette emnet beskriver hvordan du foreslår oppsigelse av leie.
+description: Denne artikkelen beskriver hvordan du foreslår oppsigelse av leie.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2f6990177251418bece8c99a0f9befa333d6549f
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: a5939f165943ff76ba453fb49d8c0c376c8ce4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720509"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879660"
 ---
 # <a name="propose-a-lease-for-termination"></a>Foreslå oppsigelse av leie
 
 [!include [banner](../includes/banner.md)]
 
-Hvis en leieavtale avsluttes tidlig, kan aktivaleie registrere en oppsigelsesjournaloppføring for å skrive av leieforpliktelsen, aktiva for bruksrettighet og akkumulert avskrivning, og bokføre gevinst eller tap. Prosessen med tidlig avslutning avslutter en leieavtale og de tilhørende leietablåene. Den stopper ikke enkeltstående leietablåer. Dette emnet beskriver funksjonaliteten som lar deg foreslå en leieavtale for oppsigelse og behandle journaloppføringen for oppsigelse av leie.
+Hvis en leieavtale avsluttes tidlig, kan aktivaleie registrere en oppsigelsesjournaloppføring for å skrive av leieforpliktelsen, aktiva for bruksrettighet og akkumulert avskrivning, og bokføre gevinst eller tap. Prosessen med tidlig avslutning avslutter en leieavtale og de tilhørende leietablåene. Den stopper ikke enkeltstående leietablåer. Denne artikkelen beskriver funksjonaliteten som lar deg foreslå en leieavtale for oppsigelse og behandle journaloppføringen for oppsigelse av leie.
 
 Hvis en leieavtale ikke klassifiseres som en utsatt leie, og tilknytning til et anleggsmiddel ikke finnes, produserer Aktivaleie følgende oppsigelsesjournaloppføring.
 
@@ -121,7 +121,7 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
 
 ### <a name="steps-for-terminating-the-lease"></a>Trinn for å avslutte leieavtalen
 
-1. Når du har opprettet en leieavtale som beskrevet tidligere i dette emnet, går du til leietablået og bekrefter betalingsplanen. Poster deretter journaloppføringen for opprinnelig føring. Det første bruksrettseiendelen er USD 71 235,81, og leieforpliktelsen skal være USD 70 235,81. I dette eksemplet ble leieavtalen klassifisert som en gjeldende leie under ASC-emne 842 (Accounting Standards Codification).
+1. Når du har opprettet en leieavtale som beskrevet tidligere i denne artikkelen, går du til leietablået og bekrefter betalingsplanen. Poster deretter journaloppføringen for opprinnelig føring. Det første bruksrettseiendelen er USD 71 235,81, og leieforpliktelsen skal være USD 70 235,81. I dette eksemplet ble leieavtalen klassifisert som en gjeldende leie under ASC-emne 842 (Accounting Standards Codification).
 2. Kjør prosessen for satsvis journal tre ganger for å simulere at det er gått tre år for leiebetalingene, renteutgiftene og avskrivningsutgiftene.
 3. Når du er ferdig med å kjøre alle tre kjørslene, går du tilbake til leietablået og åpner tabellene for Gjeld- og Aktiva-transaksjoner for å vise gjeldende bokførte verdi for bruksrettseiendel og leieforpliktelse. Etter tre år skal avstandsverdien være omtrent $53.893,00, og verdien for aktivaet skal være ca. $54.593,00.
 

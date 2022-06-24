@@ -1,6 +1,6 @@
 ---
 title: Metodologi for avskrivningskonvensjon for et halvt år
-description: Dette emnet beskriver metoden som brukes ved beregning av anleggsmidler som bruker halvårsavskrivning, som beregner seks måneder med avskrivning i løpet av et anleggsmiddelets første og siste år i bruk.
+description: Denne artikkelen beskriver metoden som brukes ved beregning av anleggsmidler som bruker halvårsavskrivning, som beregner seks måneder med avskrivning i løpet av et anleggsmiddelets første og siste år i bruk.
 author: moaamer
 ms.date: 08/17/2019
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: fb15a293bb8cec1b4faba7bcbd29eb4df7916786
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: fac20f7a31eca7922ed079f9554437f28448620d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720399"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879602"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metodologi for avskrivningskonvensjon for et halvt år
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver metoden som brukes i anleggsmidler til å beregne avskrivninger ved hjelp av halvårskonvensjon. Halvårskonvensjonen beregner seks måneder med avskrivninger i løpet av et anleggsmiddels første og siste år i bruk. Hvis du vil ha mer informasjon om avskrivningskonvensjoner, kan du se [Avskrivningsmetoder og -konvensjoner](Fixed-asset-depreciation-conventions.md). 
+Denne artikkelen beskriver metoden som brukes i anleggsmidler til å beregne avskrivninger ved hjelp av halvårskonvensjon. Halvårskonvensjonen beregner seks måneder med avskrivninger i løpet av et anleggsmiddels første og siste år i bruk. Hvis du vil ha mer informasjon om avskrivningskonvensjoner, kan du se [Avskrivningsmetoder og -konvensjoner](Fixed-asset-depreciation-conventions.md). 
 
 Når du bruker avskrivningskonvensjonen med seks måneder, bruker systemet anskaffelsesåret eller året som anleggsmiddelet ble tatt i bruk, beregner deretter fem år med avskrivninger fra dette året, og legger deretter til seks måneder. Hvis du vil illustrere denne prosessen, kan du vurdere et anleggsmiddel som ble anskaffet til prisen 50 000 og tatt i bruk i april 2020. Anta også at anleggsmiddelet har fem års levetid.
 

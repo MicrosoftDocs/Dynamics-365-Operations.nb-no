@@ -1,6 +1,6 @@
 ---
 title: Feilsøke konfigurasjonsproblemer for Finance Insights
-description: Dette emnet viser problemer som kan oppstå når du bruker Finance Insights-funksjoner. Det forklarer også hvordan du retter disse problemene.
+description: Denne artikkelen viser problemer som kan oppstå når du bruker Finance Insights-funksjoner. Det forklarer også hvordan du retter disse problemene.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1ee354a1c3d9b45eb12eeb3a6a29f2a6d5e4c34c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725912"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846922"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Feilsøke konfigurasjonsproblemer for Finance Insights
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser problemer som kan oppstå når du bruker Finance Insights-funksjoner. Det forklarer også hvordan du retter disse problemene.
+Denne artikkelen viser problemer som kan oppstå når du bruker Finance Insights-funksjoner. Det forklarer også hvordan du retter disse problemene.
 
 ## <a name="symptom-why-cant-i-map-the-customer-payment-insights-data-integration-template-destination-column"></a>Symptom: Hvorfor kan jeg ikke tilordne målkolonnen for kundebetalingsinnsikt for dataintegrering?
 
@@ -121,4 +121,4 @@ Funksjonen **Budsjettforslag** krever minst tre år med budsjettdata eller fakti
 
 ### <a name="resolution"></a>Oppløsning
 
-Miljøet har nådd maksimumsgrensen for tabeller for Data Lake-tjenester. Hvis du vil vite mer om denne grensen, kan du se delen **Aktivere dataendringer med minimal forsinkelse** i emnet [Oversikt over Eksporter til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+Miljøet har nådd maksimumsgrensen for tabeller for Data Lake-tjenester. Hvis du vil vite mer om denne grensen, kan du se delen **Aktivere dataendringer med minimal forsinkelse** i artikkelen [Oversikt over Eksporter til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

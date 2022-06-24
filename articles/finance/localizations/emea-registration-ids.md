@@ -1,6 +1,6 @@
 ---
 title: Registrerings-ID-er
-description: Dette emnet gir informasjon om hvordan du setter opp og bruker registrerings-IDer.
+description: Denne artikkelen gir informasjon om hvordan du setter opp og bruker registrerings-IDer.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 379cf78ece388f738fad8121d5b0adb4434d7905
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883082"
 ---
 # <a name="registration-ids"></a>Registrerings-ID-er
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan du setter opp og bruker registrerings-IDer.
+Denne artikkelen gir informasjon om hvordan du setter opp og bruker registrerings-IDer.
 
-Mange land og regioner har forskjellige bestemmelser og krav for registrering av avgiftsregisteringsnumre eller IDer. Dette emnet gir en oversikt over påkrevde innstillinger og behandling av støttede registreringstyper for parter i forskjellige europeiske land/regioner. Alle land har sine krav til å støtte ulike landsspesifikke funksjoner relatert til registreringsnumre levert av ulike statlige kontorer. Eksempler på registreringsnumre er personnummer (SSN), skatteidentifikasjonsnummer (TIN) og europeisk mva-ID (EU mva-ID). Denne funksjonen gir felles rammeverk for alle land i alle regioner ved å ta hensyn til landspesifikke kravene i noen europeiske land. Delene nedenfor beskriver den generelle informasjonsflyten som brukes til å konfigurere og behandle registrerings-IDer.
+Mange land og regioner har forskjellige bestemmelser og krav for registrering av avgiftsregisteringsnumre eller IDer. Denne artikkelen gir en oversikt over påkrevde innstillinger og behandling av støttede registreringstyper for parter i forskjellige europeiske land/regioner. Alle land har sine krav til å støtte ulike landsspesifikke funksjoner relatert til registreringsnumre levert av ulike statlige kontorer. Eksempler på registreringsnumre er personnummer (SSN), skatteidentifikasjonsnummer (TIN) og europeisk mva-ID (EU mva-ID). Denne funksjonen gir felles rammeverk for alle land i alle regioner ved å ta hensyn til landspesifikke kravene i noen europeiske land. Delene nedenfor beskriver den generelle informasjonsflyten som brukes til å konfigurere og behandle registrerings-IDer.
 
 ## <a name="registration-type-creation"></a>Oppretting av registreringstype
 Før du kan angi registerings-ID, må du definere registeringsnummertyper for de forskjellige registreringsnumrene som hver part er underlagt. Gå til siden **Organisasjonsstyring** &gt; **Global adressebok** &gt; **Registreringstyper** &gt; **Registreringstyper** for å opprette og administrere registreringstyper for leverandører, kunder, arbeidere og juridiske enheter i ulike land/regioner.
@@ -51,7 +51,7 @@ Registreringskategori er registrerings-ID for land/region som er godkjent for br
 |-----------------------|----------------|
 | Registreringstype     | Registreringstypen i bestemt land/region.|
 | Begrenset til         | Typen begrensning gjelder for avgiftsregistreringstypen: Ingen, Person, Organisasjon.|
-| Registreringskategori | Den unike registreringer-IDen som er godkjent for bruk i landet. Den fullstendige listen over kategorier som støttes, vises senere i dette emnet. |
+| Registreringskategori | Den unike registreringer-IDen som er godkjent for bruk i landet. Den fullstendige listen over kategorier som støttes, vises senere i denne artikkelen. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Angi registrerings-IDene for poster i globale adressebøker
 
@@ -76,7 +76,7 @@ Den globale adresseboken inneholder konsolidert adresseinformasjon for kunder, l
 Søk etter partsposter basert på en registrerings-ID er tilgjengelig på skjemaer som er knyttet til part, juridisk enhet, leverandør, kunde og arbeider. Klikk **Søk på registrerings-ID** for å åpne siden **Søkekriterier for registrerings-ID**. Angi søkevilkår og klikk **Søk**. Systemet viser de valgte postene fra den globale adresseboken og tilknyttede typer partspost.
 
 ## <a name="supported-registration-categories"></a>Registreringskategorier som støttes
-Tabellen nedenfor viser registreringstypene som støttes. Hvis du er kjent med Microsoft Dynamics AX 2012-feltene for registrering av ID-er, tilordner denne tabellen også disse feltene til registreringskategorier for Dynamics 365 Finance.
+Tabellen nedenfor viser registreringstypene som støttes. Hvis du er kjent med Microsoft Dynamics AX 2012-feltene for registrering av IDer, tilordner denne tabellen også disse feltene til registreringskategorier for Dynamics 365 Finance.
 
 | Registreringskategori for Finance         |Land/område  | Dynamics AX 2012-term/felt|
 |---------------------------------------------------------------|---------------------|---------------------------------|

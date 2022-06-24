@@ -1,6 +1,6 @@
 ---
-title: Lukke økonomimodulen ved periodeslutt
-description: Dette emnet beskriver oppgavene som vanligvis utføres når du utfører en periodeavslutning for økonomimodulen.
+title: Lukk økonomimodulen ved periodeslutt
+description: Denne artikkelen beskriver oppgavene som vanligvis utføres når du utfører en periodeavslutning for økonomimodulen.
 author: aprilolson
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 359e177e4ac2218c28ddd7c5ac3b71ee69e652e8
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 42a5df1cd1a73462c93012b26f9b9b5c1631f2ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717537"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878048"
 ---
-# <a name="close-the-general-ledger-at-period-end"></a>Lukke økonomimodulen ved periodeslutt
+# <a name="close-the-general-ledger-at-period-end"></a>Lukk økonomimodulen ved periodeslutt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver oppgavene som vanligvis utføres når du utfører en periodeavslutning for økonomimodulen. 
+Denne artikkelen beskriver oppgavene som vanligvis utføres når du utfører en periodeavslutning for økonomimodulen. 
 
 I Økonomimodul kan du fullføre avslutningsprosedyrer for en periode eller et år. Avslutningsprosesser gjør systemet klart for en ny periode. Hvis du vil gjøre klart for et nytt år, må du kjøre årsavslutningsprosessen. Hver organisasjon har forskjellige prosesser og trinn som utføres på slutten av en periode. Her er noen av de valgfrie trinnene for periodeslutt:
 

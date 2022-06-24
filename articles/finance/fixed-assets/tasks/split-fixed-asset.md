@@ -1,6 +1,6 @@
 ---
 title: Dele et anleggsmiddel
-description: Dette emnet forklarer hvordan du deler en prosent av ett anleggsmiddeltablå til et nytt anleggsmiddeltablå.
+description: Denne artikkelen forklarer hvordan du deler en prosent av ett anleggsmiddeltablå til et nytt anleggsmiddeltablå.
 author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1073f262d29e19fbbdc2257f5cdc18c4fa629196
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0d7fe30702717f960a42fb2a118e0d12587024f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725856"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880795"
 ---
 # <a name="split-a-fixed-asset"></a>Dele et anleggsmiddel
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du deler en prosent av ett anleggsmiddeltablå til et nytt anleggsmiddeltablå. 
+Denne artikkelen forklarer hvordan du deler en prosent av ett anleggsmiddeltablå til et nytt anleggsmiddeltablå. 
 
 ## <a name="create-a-new-fixed-asset"></a>Opprett et nytt anleggsmiddel
 

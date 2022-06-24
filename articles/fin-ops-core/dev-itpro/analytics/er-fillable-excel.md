@@ -1,6 +1,6 @@
 ---
-title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
-description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
+title: Utform en konfigurasjon til å generere dokumenter i Excel-format
+description: Denne artikkelen beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
 ms.date: 05/09/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 4660aaf438ee091eed30387d984746ac2c3b4bd7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811427"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854821"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -28,7 +28,7 @@ ms.locfileid: "8811427"
 
 Du kan utforme en formatkonfigurasjon for [Elektronisk rapportering (ER)](general-electronic-reporting.md) som har en ER-formatkomponent som du kan konfigurere til å generere et utgående dokument i et Microsoft Excel-arbeidsbokformat. Spesielle formatkomponenter for ER må brukes til dette formålet.
 
-Hvis du vil ha mer informasjon om denne funksjonen, kan du følge fremgangsmåten i emnet [Utforme en konfigurasjon for generering av rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
+Hvis du vil ha mer informasjon om denne funksjonen, kan du følge fremgangsmåten i artikkelen [Utforme en konfigurasjon for generering av rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="add-a-new-er-format"></a>Legge til et nytt ER-format
 
@@ -263,7 +263,7 @@ For en komponent av typen **Ark** kan du legge til flere komponenter av typen **
 
 Under den tillagte komponenten av typen **Bunntekst** legger du til de obligatoriske, nestede komponentene av typen **Tekst\\Streng**, **Tekst\\Dato og klokkeslett** eller en annen type. Konfigurer bindingene for disse komponentene til å angi hvordan bunnteksten på siden fylles ut.
 
-Du kan også bruke spesielle [formateringskoder](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til å formatere innholdet i en generert bunntekst på riktig måte. Hvis du vil lære hvordan du bruker denne fremgangsmåten, følger du trinnene i [Eksempel 1](#example-1) senere i dette emnet.
+Du kan også bruke spesielle [formateringskoder](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til å formatere innholdet i en generert bunntekst på riktig måte. Hvis du vil lære hvordan du bruker denne fremgangsmåten, følger du trinnene i [Eksempel 1](#example-1) senere i denne artikkelen.
 
 > [!NOTE]
 > Når du konfigurerer ER-formater, må du huske å vurdere Excel-[grensen](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) og det maksimale antallet tegn for én topptekst eller bunntekst.

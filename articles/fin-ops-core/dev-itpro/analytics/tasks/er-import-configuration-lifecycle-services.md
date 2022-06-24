@@ -1,6 +1,6 @@
 ---
 title: Importere en konfigurasjon fra Lifecycle Services
-description: Dette emnet beskriver hvordan du importerer en ny versjon av en ER-konfigurasjon (Elektronisk rapportering) fra Microsoft Dynamics Lifecycle Services (LCS).
+description: Denne artikkelen beskriver hvordan du importerer en ny versjon av en ER-konfigurasjon (Elektronisk rapportering) fra Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 ms.date: 06/17/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 05a8ad127df177c54e67ff1f2ddcd8b3a3f51ea12b6e11d087105bd74b6bdb3f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2aae59334828a5636f35051d50cf2ea392074b71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886679"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importere en konfigurasjon fra Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan importere en ny versjon av en [konfigurasjon for elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) fra [aktivabiblioteket på prosjektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
+Denne artikkelen forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan importere en ny versjon av en [konfigurasjon for elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) fra [aktivabiblioteket på prosjektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
 
 > [!IMPORTANT]
 > Bruken av Lifecycle Services (LCS) som et lagringsrepositorium for konfigurasjoner for elektronisk rapportering (ER) blir [avskrevet](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Hvis du vil ha mer informasjon, se [Regulatory Configuration Service (RCS) – avskrivning av lager for Lifecycle Services (LCS)](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
@@ -49,7 +49,7 @@ I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importe
 
 1. På siden **Konfigurasjoner** i konfigurasjonstreet velger du **Eksempelmodellkonfigurasjon**.
 
-    Du opprettet den første versjonen av en konfigurasjon for eksempeldatamodell og publiserte den i LCS da du fullførte fremgangsmåten i [Laste opp en konfigurasjon til Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). I denne fremgangsmåten sletter du den versjonen av ER-konfigurasjonen. Du skal deretter importere denne versjonen fra LCS senere i dette emnet.
+    Du opprettet den første versjonen av en konfigurasjon for eksempeldatamodell og publiserte den i LCS da du fullførte fremgangsmåten i [Laste opp en konfigurasjon til Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). I denne fremgangsmåten sletter du den versjonen av ER-konfigurasjonen. Du skal deretter importere denne versjonen fra LCS senere i denne artikkelen.
 
 2. Finn og velg ønsket post i listen.
 

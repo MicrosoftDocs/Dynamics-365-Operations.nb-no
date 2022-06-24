@@ -1,6 +1,6 @@
 ---
 title: Forbedre ytelsen for ER-løsninger ved å legge til datakilder med parameterisert BEREGNET FELT
-description: Dette emnet beskriver hvordan du kan forbedre ytelsen til ER-løsninger (Electronic Reporting) ved å legge til datakilder med parameterisert BEREGNET FELT.
+description: Denne artikkelen beskriver hvordan du kan forbedre ytelsen til ER-løsninger (Electronic Reporting) ved å legge til datakilder med parameterisert BEREGNET FELT.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,32 +14,32 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c2c0499ac3d41c9bb6026cc05f971087799c28f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850121"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Forbedre ytelsen for ER-løsninger ved å legge til datakilder med parameterisert BEREGNET FELT
 
 [!include [banner](../includes/banner.md)]
 
-I dette emnet finner du informasjon om hvordan du kan utføre [ytelsessporinger](trace-execution-er-troubleshoot-perf.md) av [Elektronisk rapportering (ER)](general-electronic-reporting.md) som kjøres, og deretter bruke informasjonen fra disse sporingene til å forbedre ytelsen ved å konfigurere en datakilde med parameterisert **beregnet felt**.
+I denne artikkelen finner du informasjon om hvordan du kan utføre [ytelsessporinger](trace-execution-er-troubleshoot-perf.md) av [Elektronisk rapportering (ER)](general-electronic-reporting.md) som kjøres, og deretter bruke informasjonen fra disse sporingene til å forbedre ytelsen ved å konfigurere en datakilde med parameterisert **beregnet felt**.
 
 Som en del av prosessen med å utforme ER-konfigurasjoner for å generere forretningsdokumenter, definerer du metoden som brukes til å hente data fra appen og registrere den i de genererte utdataene. Ved å utforme en parameterisert ER-datakilde for typen **Beregnet felt**, kan du redusere antallet databasekall, og du kan redusere tiden og kostnadene betydelig slik at du får mer detaljert informasjon om ER-formatutføringen.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-- Hvis du vil fullføre eksemplene i dette emnet, må du ha tilgang til følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
+- Hvis du vil fullføre eksemplene i denne artikkelen, må du ha tilgang til følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Utvikler av elektronisk rapportering
     - Funksjonell konsulent for elektronisk rapportering
     - Systemansvarlig
 
 - Firmaet må settes til **DEMF**.
-- Følg trinnene i [Tillegg 1](#appendix1) i dette emnet for å laste ned komponentene i Microsoft ER-eksempelløsningen som kreves for å fullføre eksemplene i dette emnet.
-- Følg trinnene i [Tillegg 2](#appendix2) i dette emnet for å konfigurere minimumssettet med ER-parametere som kreves for å bruke ER-rammeverket til å forbedre ytelsen i Microsoft ER-eksempelløsningen.
+- Følg trinnene i [Tillegg 1](#appendix1) i denne artikkelen for å laste ned komponentene i Microsoft ER-eksempelløsningen som kreves for å fullføre eksemplene i denne artikkelen.
+- Følg trinnene i [Tillegg 2](#appendix2) i denne artikkelen for å konfigurere minimumssettet med ER-parametere som kreves for å bruke ER-rammeverket til å forbedre ytelsen i Microsoft ER-eksempelløsningen.
 
 ## <a name="import-the-sample-er-solution"></a>Importere ER-eksempelløsningen
 
@@ -48,7 +48,7 @@ Anta at du må utforme en ER-løsning for å generere en ny rapport som viser le
 Det første trinnet er å importere ER-eksempelløsningen for å generere en leverandørtransaksjonsrapport.
 
 1. Logg på forekomsten av Microsoft Dynamics 365 Finance som er klargjort for firmaet ditt.
-2. I dette emnet skal du opprette og endre konfigurasjoner for eksempelfirmaet **Litware, Inc.**. Kontroller at denne konfigurasjonsleverandøren er lagt til i Finance-forekomsten og er merket som aktiv. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I denne artikkelen skal du opprette og endre konfigurasjoner for eksempelfirmaet **Litware, Inc.** Kontroller at denne konfigurasjonsleverandøren er lagt til i Finance-forekomsten og er merket som aktiv. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. I arbeidsområdet **Elektronisk rapportering** velger du flisen **Rapporteringskonfigurasjoner**.
 4. På siden **Konfigurasjoner** importerer du ER-konfigurasjoner som du lastet ned som en forutsetning til Finance, i denne rekkefølgen: datamodell, modelltilordning, format. For hver konfigurasjon følger du disse trinnene:
 
@@ -220,7 +220,7 @@ Følg denne fremgangsmåten for å bruke bufring og en datakilde av typen **Bere
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Kjøre den endrede ER-løsningen for å spore kjøring
 
-Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet for å generere en ny ytelsessporing.
+Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i denne artikkelen for å generere en ny ytelsessporing.
 
 ## <a name="use-the-performance-trace-to-analyze-adjustments-to-the-model-mapping"></a>Bruke ytelsessporing til å analysere justerniger for modelltilordningen 
 

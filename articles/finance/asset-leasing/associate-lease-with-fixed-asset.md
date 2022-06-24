@@ -1,6 +1,6 @@
 ---
 title: Knytte anleggsmidler til leieavtaler
-description: Emnet forklarer hvordan du knytter et eksisterende anleggsmiddel til en ny leieavtale.
+description: Denne artikkelen forklarer hvordan du knytter et eksisterende anleggsmiddel til en ny leieavtale.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0ae7a850ceb13cb41ee5adc406e71105cdad4fe
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 5cc341008d25da544ec35d5660b5ff0b38f2287b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712153"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895116"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Knytte anleggsmidler til leieavtaler
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Emnet forklarer hvordan du knytter et eksisterende anleggsmiddel til en ny leieavtale. Når du knytter et anleggsmiddel til en leieavtale, er verdien til bruksrettseiendelen ved opprinnelig føring anskaffelseskostnaden til anleggsmidlet.
+Denne artikkelen forklarer hvordan du knytter et eksisterende anleggsmiddel til en ny leieavtale. Når du knytter et anleggsmiddel til en leieavtale, er verdien til bruksrettseiendelen ved opprinnelig føring anskaffelseskostnaden til anleggsmidlet.
 
 Før du kan knytte et anleggsmiddel til en leieavtale, må du opprette en post for anleggsmidlet i Anleggsmidler. På siden **Leiesammendrag** må du deretter opprette en leieavtale og koble anleggsmiddelet til denne leieavtalen.
 

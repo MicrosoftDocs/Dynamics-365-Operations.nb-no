@@ -1,6 +1,6 @@
 ---
 title: Importere bilag ved å bruke enheten Økonomijournal
-description: Dette emnet inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten.
+description: Denne artikkelen inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten.
 author: rcarlson
 ms.date: 04/20/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42bc804393d050e5ff722c46c9ce50ece54c5a0b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 056bb860e3133bb8389410e29d20f32447799399
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065076"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867618"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importere bilag ved å bruke enheten Økonomijournal
 
@@ -28,7 +28,7 @@ ms.locfileid: "8065076"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emnet inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten.
+Denne artikkelen inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten.
 
 Du kan bruke Økonomijournal-enheten til å importere bilag som har konto- eller motkontotypen **Finans**, **Kunde**, **Leverandør** eller **Bank**. Bilaget kan angis som én linje, ved hjelp av både **Konto**- og **Motkonto**-feltet, eller som et flerlinjet bilag, der bare **Konto**-feltet brukes (og **Motkonto** er tomt på hver linje). Økonomijournal-enheten støtter ikke alle kontotyper. Andre enheter finnes i stedet for scenarier der det kreves ulike kombinasjoner av kontotyper. Hvis du for eksempel vil importere en prosjekttransaksjon, kan du bruke Prosjektutgiftsjournal-enheten. Hver enhet er utformet for å støtte bestemte scenarier. Dette betyr at tilleggsfelt kan være tilgjengelige i enheter for disse scenariene. Det kan imidlertid hende at flere felt ikke er tilgjengelige i enheter for ulike scenarier.
 

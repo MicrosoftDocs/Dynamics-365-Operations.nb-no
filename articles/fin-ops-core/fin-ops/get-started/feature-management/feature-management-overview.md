@@ -1,6 +1,6 @@
 ---
 title: Oversikt over funksjonsbehandling
-description: Dette emnet beskriver funksjonsbehandling og hvordan du kan bruke det.
+description: Denne artikkelen beskriver funksjonsbehandling og hvordan du kan bruke det.
 author: Peakerbl
 ms.date: 01/10/2022
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: c98bdbd64ee5488da20de3f5b23ae18ebce8c23f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 0691bc34ac8b57d20cfbeb58b6a2e2a03a57d067
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068015"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850067"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -41,7 +41,7 @@ Funksjonslisten inneholder følgende informasjon:
 - **Status** – Et symbol angir om en funksjon er aktivert (hake), er deaktivert (tom), er planlagt aktivert (klokke) eller er obligatorisk (lås), trenger tilsyn før du aktiverer den (advarselssymbol) eller kan ikke aktiveres (X). Innstillingen som vises, brukes for alle juridiske enheter. Legg merke til at selv om en funksjon er aktivert, kontrolleres den fortsatt av sikkerhet. Funksjonen vil derfor bare være tilgjengelig for brukere som har tilgang til den, basert på sikkerhetsrollen deres. Den vil også bare være tilgjengelig i juridiske enheter som brukeren har tilgang til.
 - **Aktiveringsdato** – Datoen da funksjonen ble aktivert eller planlegges å aktiveres.
 - **Funksjon lagt til** – Datoen da funksjonen ble lagt til i miljøet ditt. Denne datoen angis automatisk når du oppdaterer miljøet under de månedlige versjonssyklusene.
-- **Funksjonsstatus** – Gjeldende livssyklusstatus for funksjonen **Forhåndsvisning**, **Frigitt** (vist som tom), **Aktiver som standard** og **Obligatorisk**. Tilstandene er dekket i flere detaljer senere i dette emnet. 
+- **Funksjonsstatus** – Gjeldende livssyklusstatus for funksjonen **Forhåndsvisning**, **Frigitt** (vist som tom), **Aktiver som standard** og **Obligatorisk**. Tilstandene er dekket i flere detaljer senere i denne artikkelen. 
 - **Modul** – Modulen som påvirkes av den nye funksjonen.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ Produktteam kan bestemme at de først skal starte en ny funksjon som en forhånd
 
 ### <a name="on-by-default-features-optional"></a>Aktivert som standard-funksjoner (valgfritt)
 
-Funksjoner som er oppdatert til **Aktivert som standard**, er aktivert som standard, men de kan deaktiveres. Etter at funksjoner som kan deaktiveres, har vært i **Frigitt**-tilstanden i minst seks måneder, forventes det at de flytter til denne statusen i den neste store versjonen. Funksjoner som går over til **Aktivert som standard**, forventes å bli kommunisert i emnet [Nyheter](../whats-new-changed.md) for versjonen. Oppdateringen startes av det eiende produktteamet.
+Funksjoner som er oppdatert til **Aktivert som standard**, er aktivert som standard, men de kan deaktiveres. Etter at funksjoner som kan deaktiveres, har vært i **Frigitt**-tilstanden i minst seks måneder, forventes det at de flytter til denne statusen i den neste store versjonen. Funksjoner som går over til **Aktivert som standard**, forventes å bli kommunisert i artikkelen [Nyheter](../whats-new-changed.md) for versjonen. Oppdateringen startes av det eiende produktteamet.
 
 > [!NOTE]
 > Siden disse funksjonene blir aktivert automatisk, er det viktig at du fastslår om organisasjonen er klar til å innhente disse funksjonene, eller om det kreves mer tid. Hvis det kreves mer tid, kan det være nødvendig å deaktivere disse funksjonene midlertidig. Legg merke til at overgangen til en funksjon til **Aktivert som standard** vanligvis gjøres i hovedversjonen før funksjonen skal bli **obligatorisk**. På det tidspunktet har du ikke muligheten til å deaktivere funksjonen. 

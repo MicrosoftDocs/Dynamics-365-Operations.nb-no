@@ -1,6 +1,6 @@
 ---
 title: Sende ER-måltype per e-post
-description: Dette emnet forklarer hvordan du konfigurerer et e-postmål for hver MAPPE- eller FIL-komponent i et ER-format (Elektronisk rapportering).
+description: Denne artikkelen forklarer hvordan du konfigurerer et e-postmål for hver MAPPE- eller FIL-komponent i et ER-format (Elektronisk rapportering).
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 08d64b0f21e4957727de1e8f5f13f9067c0fbc7d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324014"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845664"
 ---
 # <a name="email-er-destination-type"></a>Sende ER-måltype per e-post
 
@@ -162,7 +162,7 @@ Følgende illustrasjon viser strukturen til et ER-format som ble konfigurert til
 
 [![Struktur for et ER-format som genererer utgående dokumenter.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-Følgende illustrasjon viser prosessen, som beskrevet i dette emnet, med gruppering av individuelle komponenter og aktivering av **E-post**-målet for den nye gruppen, slik at det sendes en purrenota sammen med riktig kundefaktura som e-postvedlegg.
+Følgende illustrasjon viser prosessen, som beskrevet i denne artikkelen, med gruppering av individuelle komponenter og aktivering av **E-post**-målet for den nye gruppen, slik at det sendes en purrenota sammen med riktig kundefaktura som e-postvedlegg.
 
 [![Gruppere individuelle komponenter og aktivere e-postmålet.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

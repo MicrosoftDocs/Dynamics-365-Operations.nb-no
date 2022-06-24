@@ -1,6 +1,6 @@
 ---
 title: Hvorfor kan jeg ikke tilbakeføre denne transaksjonen?
-description: Dette emnet beskriver forskjellige årsaker til hvorfor transaksjoner ikke kan tilbakeføres. Det viser også løsninger på dette problemet.
+description: Denne artikkelen beskriver forskjellige årsaker til hvorfor transaksjoner ikke kan tilbakeføres. Det viser også løsninger på dette problemet.
 author: kweekley
 ms.date: 07/21/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9a8b26584b1a9b82440583db693cd14daa580e22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724536"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876189"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Hvorfor kan jeg ikke tilbakeføre denne transaksjonen?
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver forskjellige årsaker til hvorfor transaksjoner ikke kan tilbakeføres. Det viser også løsninger på dette problemet.
+Denne artikkelen beskriver forskjellige årsaker til hvorfor transaksjoner ikke kan tilbakeføres. Det viser også løsninger på dette problemet.
 
 ## <a name="symptom"></a>Symptom
 
@@ -35,14 +35,14 @@ Organisasjoner kan oppleve situasjoner der de må tilbakeføre en transaksjon de
 
 ## <a name="resolution"></a>Løsning
 
-Transaksjoner må oppfylle bestemte kriterier før de kan tilbakeføres. De gjenværende delene i dette emnet inneholder validering av hver modul. Selv om dette emnet fokuserer på transaksjoner i Microsoft Dynamics 365 Finance, kan noen av begrepene og valideringen brukes på andre apper, for eksempel Dynamics 365 Supply Chain Management.
+Transaksjoner må oppfylle bestemte kriterier før de kan tilbakeføres. De gjenværende delene i denne artikkelen inneholder validering av hver modul. Selv om denne artikkelen fokuserer på transaksjoner i Microsoft Dynamics 365 Finance, kan noen av begrepene og valideringen brukes på andre apper, for eksempel Dynamics 365 Supply Chain Management.
 
 I tillegg kan stedet der en transaksjon tilbakeføres, påvirke om den kan tilbakeføres. En leverandørbetaling som posteres som en sjekk, kan for eksempel bare tilbakeføres fra **Sjekker**-delen på transaksjonssiden for bankkontoene. Den kan ikke tilbakeføres fra **Bilagstransaksjoner**-sider i økonomimodulen.
 
 Hvis funksjonen **Massetilbakeføring for flere dokumenter** (også kalt funksjonen Massetilbakeføring) er aktivert i arbeidsområdet **Funksjonsstyring**, påvirker det hvor mange transaksjoner som kan tilbakeføres og hvor de kan tilbakeføres. Denne funksjonen gir to fordeler når den er aktivert:
 
 - For noen transaksjonstyper kan du velge mer enn én transaksjon om gangen og tilbakeføre mer enn én transaksjon fra journalen den ble postert fra, eller fra siden **bilagstransaksjoner**. Enkelttransaksjonene må imidlertid være tilbakeføringsbare før funksjonen ble aktivert. Før denne funksjonen ble innført, måtte transaksjoner tilbakeføres én om gangen.
-- *Noen* underfinanstransaksjoner kan tilbakeføres fra journalen (økonomijournal) eller siden **Bilagstransaksjoner**. De behøver ikke å tilbakeføres fra underfinanssiden. En leverandørfakturajournal kan for eksempel tidligere bare tilbakeføres fra siden **Leverandørtransaksjon**. Den kan imidlertid nå tilbakeføres fra økonomimodulsiden også fra journalen eller siden **Bilagstransaksjoner**. Hver del av dette emnet forklarer transaksjonstypene som denne fordelen ikke gjelder.
+- *Noen* underfinanstransaksjoner kan tilbakeføres fra journalen (økonomijournal) eller siden **Bilagstransaksjoner**. De behøver ikke å tilbakeføres fra underfinanssiden. En leverandørfakturajournal kan for eksempel tidligere bare tilbakeføres fra siden **Leverandørtransaksjon**. Den kan imidlertid nå tilbakeføres fra økonomimodulsiden også fra journalen eller siden **Bilagstransaksjoner**. Hver del av denne artikkelen forklarer transaksjonstypene som denne fordelen ikke gjelder.
 
 Funksjonen for massetilbakeføring gjør det **ikke** mulig å tilbakeføre flere typer transaksjoner. Hvis en transaksjonstype ikke kunne tilbakeføres tidligere, kan den fremdeles ikke tilbakeføres etter at funksjonen er aktivert. Leverandørfakturaer for bestillinger kan for eksempel ikke tilbakeføres, uansett om funksjonen for massetilbakeføring er aktivert.
 
@@ -189,7 +189,7 @@ Følgende transaksjonstyper kan ikke tilbakeføres:
 
 Flere transaksjonstyper oppdaterer underregnskapet for kunder. Eksempler inkluderer kundefakturaer fra salgsordrer, kundefakturaer som registreres via økonomijournalen, fritekstfakturaer, kundebetalinger og avskrivinger.
 
-Hvis funksjonen Massetilbakeføring er deaktivert, kan transaksjoner tilbakeføres enkeltvis fra siden **Kundetransaksjoner** for fakturaer eller siden **Bankkontoer** for innbetalinger. Hvis du vil ha informasjon om hvordan du tilbakefører en betaling, kan du se delen [Kontant- og bankbehandling](cant-reverse-transctns.md#cash-and-bank-management) senere i dette emnet.
+Hvis funksjonen Massetilbakeføring er deaktivert, kan transaksjoner tilbakeføres enkeltvis fra siden **Kundetransaksjoner** for fakturaer eller siden **Bankkontoer** for innbetalinger. Hvis du vil ha informasjon om hvordan du tilbakefører en betaling, kan du se delen [Kontant- og bankbehandling](cant-reverse-transctns.md#cash-and-bank-management) senere i denne artikkelen.
 
 Hvis funksjonen Massetilbakeføring er aktivert, kan en eller flere kundetransaksjoner også tilbakeføres fra siden **Bilagstransaksjoner**, og journalen som den ble postert fra. Innbetalinger kan imidlertid fremdeles bare tilbakeføres fra bankkontoen, og fritekstfakturaer kan bare tilbakeføres fra den opprinnelige siden (hvis funksjonen for korrigeringer er aktivert). I tillegg kan fortsatt ikke kundetransaksjoner kan tilbakeføres fra siden **Transaksjoner for \<main account\>** for finans. De kan tilbakeføres fra siden **Bilagstransaksjoner**.
 

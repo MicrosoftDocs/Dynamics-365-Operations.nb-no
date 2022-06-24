@@ -1,6 +1,6 @@
 ---
 title: Utforme et ER-format for å generere en rapport i Excel-format med innebygde bilder i topptekster og bunntekster
-description: Dette emnet beskriver hvordan du bruker verktøyet for elektronisk rapportering (ER) til å generere forretningsdokumenter som har innebygde bilder og figurer i topptekster og bunntekster.
+description: Denne artikkelen beskriver hvordan du bruker verktøyet for elektronisk rapportering (ER) til å generere forretningsdokumenter som har innebygde bilder og figurer i topptekster og bunntekster.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f3f77a9e6104a31995c9ee398504982fe43ac9e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323792"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854850"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Utforme et ER-format for å generere en rapport i Excel-format med innebygde bilder i topptekster og bunntekster
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan en bruker i rollen systemansvarlig eller funksjonsrådgiver for elektronisk rapportering kan utføre disse oppgavene:
+Denne artikkelen forklarer hvordan en bruker i rollen systemansvarlig eller funksjonsrådgiver for elektronisk rapportering kan utføre disse oppgavene:
 
 - Konfigurere parametere for rammeverket for [elektronisk rapportering (ER)](general-electronic-reporting.md).
 - Importer ER [-konfigurasjoner](general-electronic-reporting.md#Configuration) som [leveres](general-electronic-reporting.md#Provider) av Microsoft og brukes til å generere [fritekstfakturaer](../../../finance/accounts-receivable/create-free-text-invoice-new.md), basert på en [mal](er-fillable-excel.md#excel-file-component) i Microsoft Excel-format.
 - Opprett en [egendefinert (avledet)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) versjon av en standard ER-formatkonfigurasjon som leveres av Microsoft.
 - Endre den egendefinerte ER-formatkonfigurasjonen slik at den genererer en fritekstfakturarapport som har et firmalogobilde i bunnteksten.
 
-Prosedyrene i dette emnet kan fullføres i **USMF**-firmaet. Ingen koding er nødvendig. Før du starter kan du laste ned og lagre følgende fil.
+Prosedyrene i denne artikkelen kan fullføres i **USMF**-firmaet. Ingen koding er nødvendig. Før du starter kan du laste ned og lagre følgende fil.
 
 | beskrivelse        | Filnavn |
 |--------------------|-----------|
@@ -132,7 +132,7 @@ Hvis du ha mer informasjon om ER-konfigurasjonsleverandører, kan du se [Opprett
 
 ### <a name="import-the-standard-er-configurations"></a><a id="ImportERFormat"></a>Importer standard ER-konfigurasjoner
 
-Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av Dynamics 365 Finance, må du importere dem fra ER-[repositoriet](general-electronic-reporting.md#Repository) som ble konfigurert for den forekomsten.
+Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av Dynamics 365 Finance, må du importere dem fra ER- [repositoriet](general-electronic-reporting.md#Repository) som ble konfigurert for den forekomsten.
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 2. På **Lokaliseringskonfigurasjoner**-siden, i **Konfigurasjonsleverandører**-delen, velger du **Microsoft**-flisen og deretter **Repositorier** for å vise listen over repositorier for **Microsoft**-leverandøren.

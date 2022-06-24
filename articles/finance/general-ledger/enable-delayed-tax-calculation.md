@@ -1,6 +1,6 @@
 ---
 title: Aktivere forsinket avgiftsberegning i journaler
-description: Dette emnet beskriver hvordan du aktiverer funksjonen Forsinket avgiftsberegning for å forbedre ytelsen for avgiftsberegning når det er svært mange journallinjer.
+description: Denne artikkelen beskriver hvordan du aktiverer funksjonen Forsinket avgiftsberegning for å forbedre ytelsen for avgiftsberegning når det er svært mange journallinjer.
 author: EricWang
 ms.date: 09/18/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fddb6d3a9850b8f2f88f813f9591006637c7e535
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 02a038318d4c0fb44b6fcc4bb159ea87c2e9368a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887926"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivere forsinket avgiftsberegning i journaler
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du kan forsinke beregning av merverdiavgift på journaler. Denne funksjonen bidrar til å forbedre ytelsen til avgiftsberegninger når det er mange journallinjer.
+Denne artikkelen beskriver hvordan du kan forsinke beregning av merverdiavgift på journaler. Denne funksjonen bidrar til å forbedre ytelsen til avgiftsberegninger når det er mange journallinjer.
 
 Som standard beregnes mva-beløp på journallinjer når avgiftsrelaterte felt blir oppdaterte. Disse feltene inkluderer feltene for mva-grupper for salg og mva-grupper for varer. Eventuelle oppdateringer til en journallinje fører til at avgiftsbeløp omberegnes for alle journallinjer. Selv om denne virkemåten hjelper brukeren å se avgiftsbeløp beregnet i sanntid, kan det også påvirke ytelsen hvis antall journallinjer er svært stort.
 

@@ -1,6 +1,6 @@
 ---
 title: Mva-betalinger og avrundingsregler
-description: Dette emnet forklarer hvordan oppsettet av avrundingsregler for mva-myndighetene fungerer, og avrunding av merverdiavgiftsbalansen under utligning og bokføring av merverdiavgift.
+description: Denne artikkelen forklarer hvordan oppsettet av avrundingsregler for mva-myndighetene fungerer, og avrunding av merverdiavgiftsbalansen under utligning og bokføring av merverdiavgift.
 author: kailiang
 ms.date: 10/29/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff69afae675b9f8824ac0b29b5611420136b6a57
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5c24a9850543e9d08ee1726186f433c7cfd26608
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726557"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865690"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Mva-betalinger og avrundingsregler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan oppsettet av avrundingsregler for mva-myndighetene fungerer, og avrunding av merverdiavgiftsbalansen under utligning og bokføring av merverdiavgift.
+Denne artikkelen forklarer hvordan oppsettet av avrundingsregler for mva-myndighetene fungerer, og avrunding av merverdiavgiftsbalansen under utligning og bokføring av merverdiavgift.
 
 Med jevne mellomrom må mva rapporteres og betales til skattemyndighetene. Dette kan gjøres ved å kjøre prosessen for utligning og postering av mva på **Merverdiavgift**-siden. Merverdiavgift for en periode utlignes mot mva-kontoene, og mva-saldoen posteres til mva-utligningskontoen. Mva-saldoen, som posteres til mva-oppgjørskontoen, kan avrundes hvis skattemyndighetene krever det, ved å definere en avrundingsregel på **Merverdiavgift**-siden. 
 

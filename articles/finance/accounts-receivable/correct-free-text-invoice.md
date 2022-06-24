@@ -1,6 +1,6 @@
 ---
 title: Korrigere en fritekstfaktura
-description: Dette emnet forklarer hvordan du kan rette en fritekstfaktura som er postert og sende den på nytt som en rettet faktura.
+description: Denne artikkelen forklarer hvordan du kan rette en fritekstfaktura som er postert og sende den på nytt som en rettet faktura.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fb535b14f4c270f914a427d09027c37b3be7b72
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 9fccd6dbb33efd1556c56a6d92ad191ecfd317fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716220"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878196"
 ---
 # <a name="correct-a-free-text-invoice"></a>Korrigere en fritekstfaktura
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du kan rette en fritekstfaktura som er postert og sende den på nytt som en rettet faktura.
+Denne artikkelen forklarer hvordan du kan rette en fritekstfaktura som er postert og sende den på nytt som en rettet faktura.
 
 Hvis du vil rette en fritekstfaktura som allerede er postert, kan du åpne den posterte fritekstfakturaen. På **Faktura**-siden velger du **Avbryt**, og velger deretter **Rett faktura**. Velg en årsakskode, legg til kommentarer, og velg datoen for ny, korrigert faktura. Du kan endre den rettede fakturaen og postere den. 
 
@@ -44,7 +44,7 @@ Du kan identifisere annullerings- og korrigeringsfakturaer på to måter:
 -   Toppteksten i fritekstfakturaen viser statusen **Annulleringsfaktura \[fakturanummeret\]** eller **Rettet faktura\[ fakturanummer\]**.
 
 > [!NOTE]
-> Denne funksjonen er bare tilgjengelig hvis konfigurasjonsnøkkelen **Korreksjon av fritekstfaktura** er valgt. Hvis du vil ha mer informasjon om hvordan du aktiverer konfigurasjonsnøkler, kan du se i delen om aktivering (eller deaktivering) av konfigurasjonsnøkler i emnet [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md). 
+> Denne funksjonen er bare tilgjengelig hvis konfigurasjonsnøkkelen **Korreksjon av fritekstfaktura** er valgt. Hvis du vil ha mer informasjon om hvordan du aktiverer konfigurasjonsnøkler, kan du se i delen om aktivering (eller deaktivering) av konfigurasjonsnøkler i artikkelen [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md). 
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Legge til eller kopiere leieavtaler (forhåndsversjon)
-description: Dette emnet beskriver hvordan du oppretter en ny leieavtale ved å angi informasjon for den i Aktivaleie, eller kopierer informasjon fra en eksisterende leieavtale.
+description: Denne artikkelen beskriver hvordan du oppretter en ny leieavtale ved å angi informasjon for den i Aktivaleie, eller kopierer informasjon fra en eksisterende leieavtale.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 798ab3ece45ee6f21694a364cfb7a4ff14a9c8aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880939"
 ---
 # <a name="add-or-copy-leases-preview"></a>Legge til eller kopiere leieavtaler (forhåndsversjon)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du oppretter en leieavtale fra grunnen av i Aktivaleie, og hvordan du oppretter en leieavtale ved å kopiere en eksisterende leieavtale. Fremgangsmåten for å opprette en leieavtale fra grunnen av, omfatter å registrere informasjon for den nye leieavtalen og deretter opprette en leieplan. Etter at minst én leieavtale er opprettet, kan det være enklere å kopiere informasjonen fra en eksisterende leieavtale og deretter redigere denne informasjonen etter behov for å opprette en ny leieavtale.
+Denne artikkelen forklarer hvordan du oppretter en leieavtale fra grunnen av i Aktivaleie, og hvordan du oppretter en leieavtale ved å kopiere en eksisterende leieavtale. Fremgangsmåten for å opprette en leieavtale fra grunnen av, omfatter å registrere informasjon for den nye leieavtalen og deretter opprette en leieplan. Etter at minst én leieavtale er opprettet, kan det være enklere å kopiere informasjonen fra en eksisterende leieavtale og deretter redigere denne informasjonen etter behov for å opprette en ny leieavtale.
 
 ## <a name="create-a-lease"></a>Opprette en leieavtale
 

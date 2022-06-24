@@ -1,6 +1,6 @@
 ---
 title: Oversikt over finanskonsolideringer og valutaomveksling
-description: Dette emnet beskriver finanskonsolideringer og valutaomveksling i Økonomimodul.
+description: Denne artikkelen beskriver finanskonsolideringer og valutaomveksling i Økonomimodul.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f6f0094ac3307164e1c715a71e16b0766247e275
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713875"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846864"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversikt over finanskonsolideringer og valutaomveksling
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet leder deg gjennom fremgangsmåten som både Microsoft Dynamics 365 Finance og Finansrapportering bruker for konsolideringer. Det beskriver scenarioer som involverer flerfirmarapportering, aggregering, eliminering og minoritetsrente. Det forklarer også hvordan du skal behandle spesielle situasjoner, for eksempel scenarier der juridiske enheter har forskjellige regnskapsperioder eller ulike kontoplaner.
+Denne artikkelen leder deg gjennom fremgangsmåten som både Microsoft Dynamics 365 Finance og Finansrapportering bruker for konsolideringer. Det beskriver scenarioer som involverer flerfirmarapportering, aggregering, eliminering og minoritetsrente. Det forklarer også hvordan du skal behandle spesielle situasjoner, for eksempel scenarier der juridiske enheter har forskjellige regnskapsperioder eller ulike kontoplaner.
 
-Dette emnet er laget for brukere og funksjonelle konsulenter, og det antas at leserne har en grunnleggende forståelse av Finance og Finansrapportering. Grunnleggende oppsett er ikke dekket.
+Denne artikkelen er laget for brukere og funksjonelle konsulenter, og det antas at leserne har en grunnleggende forståelse av Finance og Finansrapportering. Grunnleggende oppsett er ikke dekket.
 
 > [!NOTE]
-> Begrepet *juridisk enhet* brukes i Finance, og begrepet *firma* brukes i Finansrapportering. Begge disse begrepene brukes i dette emnet. I henhold til formålene for dette emnet betyr de imidlertid det samme.
+> Begrepet *juridisk enhet* brukes i Finance, og begrepet *firma* brukes i Finansrapportering. Begge disse begrepene brukes i denne artikkelen. I henhold til formålene for denne artikkelen betyr de imidlertid det samme.
 
 ## <a name="audience"></a>Målgruppe
-Dette emnet er ment for økonomi- og regnskapsbrukere og programkonsulenter som ønsker å bruke Finance and Reporting og Finansrapportering til å konsolidere data fra flere firmaer og flere valutaer.
+Denne artikkelen er ment for økonomi- og regnskapsbrukere og programkonsulenter som ønsker å bruke Finance and Reporting og Finansrapportering til å konsolidere data fra flere firmaer og flere valutaer.
 
 ## <a name="approach"></a>Metode
 Finance bruker en separat juridisk enhet til å behandle en konsolidering. Dette gjør det mulig å konsolidere én enkelt forekomst, men gir et alternativ for å hente data fra andre kilder. Konsolideringsprosessen må kjøres hver gang det gjøres endringer i de juridiske enhetene for kilden.

@@ -1,6 +1,6 @@
 ---
 title: Redusere saldoavskrivning etter en deling
-description: Dette emnet beskriver metoden som brukes i anleggsmidler til å beregne avskrivning etter at et aktiva er delt, ved å bruke metoden for reduksjon av saldo.
+description: Denne artikkelen beskriver metoden som brukes i anleggsmidler til å beregne avskrivning etter at et aktiva er delt, ved å bruke metoden for reduksjon av saldo.
 author: moaamer
 ms.date: 11/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 35637ac1484121232c3571d1a26132a86d69e366
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 539967a9a73da91f6b49c1bb89f404267ae0a804
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726760"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883307"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Redusere saldoavskrivning etter en deling
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver metoden som brukes i anleggsmidler til å beregne avskrivning etter at et aktiva er delt til et annet aktiva, ved å bruke metoden for reduksjon av saldo. Avskrivningsåret som er konfigurert i aktivatablået, er regnskapsåret. Hvis du vil ha mer informasjon, kan du se [Redusere saldoavskrivning](reduce-balance-depreciation.md) og [Dele et anleggsmiddel](tasks/split-fixed-asset.md).
+Denne artikkelen beskriver metoden som brukes i anleggsmidler til å beregne avskrivning etter at et aktiva er delt til et annet aktiva, ved å bruke metoden for reduksjon av saldo. Avskrivningsåret som er konfigurert i aktivatablået, er regnskapsåret. Hvis du vil ha mer informasjon, kan du se [Redusere saldoavskrivning](reduce-balance-depreciation.md) og [Dele et anleggsmiddel](tasks/split-fixed-asset.md).
 
 Hvis du deler et anleggsmiddel i løpet av en regnskapsperiode som er senere enn perioden da anleggsmidlet ble anskaffet, vil den reduserte saldoavskrivningen redegjøre for aktivaets netto bokførte verdi for fjoråret. Det vil også ta redegjøre for justeringstransaksjoner for anskaffelse og avskrivning som ble generert fra transaksjonen som delte opp aktivaet. Denne virkemåten forutsetter at aktivaet ble anskaffet i ett regnskapsår og delt i et senere regnskapsår. Beløpet som må avskrives for det opprinnelige aktivaet etter at delingen gjenspeiler aktivaets netto bokførte verdi før aktivaet ble delt, og justeringstransaksjonen for anskaffelse og avskrivning som ble postert for delingen.
 

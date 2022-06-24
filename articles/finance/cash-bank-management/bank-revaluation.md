@@ -1,6 +1,6 @@
 ---
 title: Bankrevaluering av utenlandsk valuta
-description: Dette emnet gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta. Det inneholder informasjon om oppsettet, kjøring av prosessen, beregning av prosessen og tilbakeføring av revalueringstransaksjoner.
+description: Denne artikkelen gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta. Det inneholder informasjon om oppsettet, kjøring av prosessen, beregning av prosessen og tilbakeføring av revalueringstransaksjoner.
 author: kweekley
 ms.date: 05/16/2019
 ms.topic: article
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a8ce792fdc0c6b441deaead32db04ee0246becc9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: d68232af3e87cef2f86213211e6c87f7d654df33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863108"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bankrevaluering av utenlandsk valuta
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta. Den forklarer hvordan du kan definere og kjøre prosessen og gir informasjon om beregning av prosessen. Det forklarer også hvordan du tilbakefører revalueringstransaksjoner, hvis tilbakeføring kreves.
+Denne artikkelen gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta. Den forklarer hvordan du kan definere og kjøre prosessen og gir informasjon om beregning av prosessen. Det forklarer også hvordan du tilbakefører revalueringstransaksjoner, hvis tilbakeføring kreves.
 
 Som en del av en periodeslutt krever regnskapskonvensjoner at bankkontosaldi i utenlandsk valuta revalueres ved å bruke ulike valutakurstyper (gjeldende, historisk, gjennomsnitt, osv.). Funksjonen for bankrevaluering av utenlandsk valuta kan brukes til å revaluere én eller flere bankkontoer. Funksjonen er også en global funksjon. Fra én side kan du derfor revaluere banker på tvers av alle de juridiske enhetene som du har tilgang til.
 

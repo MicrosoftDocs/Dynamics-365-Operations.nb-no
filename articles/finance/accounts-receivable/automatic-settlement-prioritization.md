@@ -1,6 +1,6 @@
 ---
 title: Automatisk utligning og prioritering
-description: Dette emnet beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet.
+description: Denne artikkelen beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet.
 author: ShivamPandey-msft
 ms.date: 01/30/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47ccdb49b4d5c43b4f9cb9a967bd30376474e4c1
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: bd5b894c82beb1b5d69ad6bf485161ab9c91a806
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712265"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855527"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk utligning og prioritering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet.
+Denne artikkelen beskriver hvordan transaksjonene utlignes hvis du velger automatisk utligning på parametersiden Kunder. Det forklarer også hvordan automatisk utligning kan brukes sammen med betalingsprioritet.
 
 Du har to alternativer når du utligner betalinger med fakturaer og andre transaksjoner. Du kan manuelt velge hvilke transaksjoner som skal utlignes, eller systemet kan velge transaksjonene automatisk ved hjelp av funksjonen for automatisk utligning. Du kan også tilpasse hvordan automatiske utligninger behandles ved hjelp av alternativet **Prioriter utligning**. Alle disse alternativene er en del av parameterne for utligning som er definert på **Kundeparametere**-siden. Måten transaksjoner utlignes på automatisk, kan variere, avhengig av hvilken metode du bruker for automatisk utligning. De følgende metodene er tilgjengelige:
 

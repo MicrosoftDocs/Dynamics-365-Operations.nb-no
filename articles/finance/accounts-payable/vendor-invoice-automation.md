@@ -1,6 +1,6 @@
 ---
 title: Fakturaautomatisering for skannede dokumenter
-description: Dette emnet forklarer hvilke funksjoner som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, også fakturaer som inneholder vedlegg.
+description: Denne artikkelen forklarer hvilke funksjoner som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, også fakturaer som inneholder vedlegg.
 author: abruer
 ms.date: 03/24/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: e7d8e55fc1293e2b33b15f3862498363a6b23f1f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716416"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883423"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for skannede dokumenter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvilke dataenheter som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, inkludert fakturaer med vedlegg.
+Denne artikkelen forklarer hvilke dataenheter som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, inkludert fakturaer med vedlegg.
 
 Organisasjoner som ønsker å strømlinjeforme leverandørprosessene for (AP), identifiserer ofte fakturabehandling som ett av de øverste prosessområdene som bør være mer effektivt. I mange tilfeller setter disse organisasjonene behandling av papirfakturaer ut til en tredjepartsleverandør av tjenester for optisk tegngjenkjenning (OCR). Deretter mottar de maskinlesbare fakturametadata sammen med et skannet bilde av hver faktura. For å få hjelp med automatisering bygges deretter en løsning for den siste delen for å aktivere forbruk av disse artefakterene i faktureringssystemet. Nå er denne automatiseringen for den siste delen aktivert som standard, gjennom en løsning for automatisering av fakturaer.
 
@@ -46,7 +46,7 @@ Løsningsavtrykket består av følgende komponenter:
 + Unntaksbehandling for fakturaer
 + Et visningsprogram for vedlegg side ved side i fakturaer
 
-Resten av dette emnet inneholder detaljerte beskrivelser av disse løsningskomponentene.
+Resten av denne artikkelen innholder detaljerte beskrivelser av disse løsningskomponentene.
 
 ## <a name="data-entities"></a>Dataenheter
 

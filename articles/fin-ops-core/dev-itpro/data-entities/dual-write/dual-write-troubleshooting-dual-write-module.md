@@ -1,6 +1,6 @@
 ---
 title: Feilsøk problemer med dobbel skriving i Finance and Operations-apper
-description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med dobbel skriving-modulen i økonomi- og driftsapper.
+description: Denne artikkelen inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med dobbel skriving-modulen i økonomi- og driftsapper.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613889"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864579"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøk problemer med dobbel skriving i Finance and Operations-apper
 
@@ -22,10 +22,10 @@ ms.locfileid: "8613889"
 
 
 
-Dette emnet inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Mer spesifikt gir det informasjon som kan hjelpe deg med å løse problemer med **Dobbel skriving**-modulen i økonomi- og driftsapper.
+Denne artikkelen inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Mer spesifikt gir det informasjon som kan hjelpe deg med å løse problemer med **Dobbel skriving**-modulen i økonomi- og driftsapper.
 
 > [!IMPORTANT]
-> Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
+> Noen av problemene som denne artikkelen løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Du kan ikke laste inn dobbel skriving-modulen i en økonomi- og driftsapp
 

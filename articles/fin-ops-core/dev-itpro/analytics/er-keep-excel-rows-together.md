@@ -1,6 +1,6 @@
 ---
 title: Utforme et ER-format som holder rader sammen på samme Excel-side
-description: Dette emnet beskriver hvordan du utformer et ER-format (elektronisk rapportering) som holder rader sammen på samme Microsoft Excel-side.
+description: Denne artikkelen beskriver hvordan du utformer et ER-format (elektronisk rapportering) som holder rader sammen på samme Microsoft Excel-side.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 98e6dd4f926908f65239f3e4f3608f9c9408f9d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854676"
 ---
 # <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>Utforme et ER-format som holder rader sammen på samme Excel-side
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan en bruker i rollen som systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et [format](er-overview-components.md#format-component) for [elektronisk rapportering (ER)](general-electronic-reporting.md) som genererer utgående dokumenter i Microsoft Excel og behandler dokumentpaginering slik at rader som opprettes, holdes på samme side.
+Denne artikkelen beskriver hvordan en bruker i rollen som systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et [format](er-overview-components.md#format-component) for [elektronisk rapportering (ER)](general-electronic-reporting.md) som genererer utgående dokumenter i Microsoft Excel og behandler dokumentpaginering slik at rader som opprettes, holdes på samme side.
 
 I dette eksemplet skal du endre ER-formatet fra Microsoft som brukes til å skrive ut fritekstfakturaer i Excel. Endringene dine gjør at du kan behandle pagineringen av en generert fritekstfakturarapport slik at alle radene på én fakturalinje, holdes på samme side når det er mulig.
 
-Prosedyrene i dette emnet kan fullføres i **USMF**-firmaet. Ingen koding er nødvendig.
+Prosedyrene i denne artikkelen kan fullføres i **USMF**-firmaet. Ingen koding er nødvendig.
 
 I dette eksemplet skal du opprette de nødvendige ER-[konfigurasjonene](general-electronic-reporting.md#Configuration) for eksempelfirmaet **Litware, Inc**. Kontroller at konfigurasjonsleverandøren for eksempelfirmaet **Litware, Inc.** (`http://www.litware.com`) er oppført for ER-rammeverket og at det er merket som **Aktiv**. Hvis denne konfigurasjonsleverandøren ikke er oppført, eller hvis den ikke er merket som **Aktiv**, følger du trinnene i emnet [Opprette en konfigurasjonsleverandør og merke den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -73,7 +73,7 @@ Følg trinnene i [Konfigurere et formatmål for forhåndsvisning på skjermen](e
 
     ![Gå gjennom pagineringen av den genererte fritekstfakturaen i Excel-skrivebordsprogrammet.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-De gjenstående fremgangsmåtene i dette emnet viser hvordan du kan justere standard ER-format for å forbedre utseendet og lesbarheten til fakturarapporten ved å holde alt innhold for én fakturalinje på samme side.
+De gjenstående fremgangsmåtene i denne artikkelen viser hvordan du kan justere standard ER-format for å forbedre utseendet og lesbarheten til fakturarapporten ved å holde alt innhold for én fakturalinje på samme side.
 
 ## <a name="create-a-custom-format"></a>Opprette et egendefinert format
 

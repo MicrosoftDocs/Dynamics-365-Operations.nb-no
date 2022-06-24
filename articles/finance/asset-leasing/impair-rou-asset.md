@@ -1,6 +1,6 @@
 ---
 title: Forringe bruksrettseiendeler
-description: Dette emnet beskriver funksjonaliteten som registrerer en verdiforringelse og justerer avskrivningsplanen for aktiva for et Accounting Standards Codification-emne 842 (ASC 842) for gjeldende leie.
+description: Denne artikkelen beskriver funksjonaliteten som registrerer en verdiforringelse og justerer avskrivningsplanen for aktiva for et Accounting Standards Codification-emne 842 (ASC 842) for gjeldende leie.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f953b3a351859c6becba10a129bbb17b49be6290
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894120"
 ---
 # <a name="impair-right-of-use-assets"></a>Forringe bruksrettseiendeler
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Hvis det ikke er mulig å gjenopprette det indirekte beløpet for en bruksrettseiendel, må du kanskje teste om aktivaet er forringet. Hvis du mener at aktivaet er forringet, kan aktivaleie registrere forringelsen og justere avskrivningsplanen i henhold til dette. Dette emnet beskriver funksjonaliteten som registrerer verdiforringelsen og justerer avskrivningsplanen for et Accounting Standards Codification-emne 842 (ASC 842) for gjeldende leie. Den samme metoden gjelder også for International Financial Reporting Standard 16 (IFRS 16) for leieavtaler.
+Hvis det ikke er mulig å gjenopprette det indirekte beløpet for en bruksrettseiendel, må du kanskje teste om aktivaet er forringet. Hvis du mener at aktivaet er forringet, kan aktivaleie registrere forringelsen og justere avskrivningsplanen i henhold til dette. Denne artikkelen beskriver funksjonaliteten som registrerer verdiforringelsen og justerer avskrivningsplanen for et Accounting Standards Codification-emne 842 (ASC 842) for gjeldende leie. Den samme metoden gjelder også for International Financial Reporting Standard 16 (IFRS 16) for leieavtaler.
 
 Den gjenstående saldoen for bruksrettseiendelen vil bli nedbetalt lineært for antall perioder som gjenstår, uansett om leieavtalen er klassifisert som en finansiell leie under IFRS 16 eller en leieavtale under ASC 842.
 
@@ -83,7 +83,7 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
 
 ### <a name="steps"></a>Trinn
 
-1. Når du har opprettet en leieavtale som beskrevet tidligere i dette emnet, går du til leietablået og bekrefter betalingsplanen. Poster deretter journaloppføringen for opprinnelig føring. Det første bruksrettseiendelen og leieforpliktensen skal være $70.235,81. I dette eksemplet ble leieavtalen klassifisert som en gjeldende leie under ASC 842.
+1. Når du har opprettet en leieavtale som beskrevet tidligere i denne artikkelen, går du til leietablået og bekrefter betalingsplanen. Poster deretter journaloppføringen for opprinnelig føring. Det første bruksrettseiendelen og leieforpliktensen skal være $70.235,81. I dette eksemplet ble leieavtalen klassifisert som en gjeldende leie under ASC 842.
 2. Kjør prosessen for satsvis journal tre ganger for å simulere at det er gått tre år for leiebetalingene, renteutgiftene og avskrivningsutgiftene.
 3. Når du er ferdig med å kjøre alle tre kjørslene, går du tilbake til leietablået og åpner tabellene for gjeld og anleggsmiddeltransaksjoner for å vise gjeldende bokførte verdi for bruksrettseiendel og leieforpliktelse. Etter tre år skal avstandsverdien være omtrent $53.893,00, og verdien for aktivaet skal være ca. $53.893,00. 
 

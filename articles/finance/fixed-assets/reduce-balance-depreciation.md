@@ -1,6 +1,6 @@
 ---
-title: Redusere saldoavskrivning
-description: Dette emnet gir en oversikt over redusert saldoverdimetode for avskrivning.
+title: Redusere saldoavskriving
+description: Denne artikkelen gir en oversikt over redusert saldoverdimetode for avskrivning.
 author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a81a8f926c30ac26d10c8763f43f39504249616f
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 52bf9d4e9cbc9cabda5d5ab17c1a00ecea0d0348
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725324"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883278"
 ---
-# <a name="reduce-balance-depreciation"></a>Redusere saldoavskrivning
+# <a name="reduce-balance-depreciation"></a>Redusere saldoavskriving
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over redusert saldoverdimetode for avskrivning.
+Denne artikkelen gir en oversikt over redusert saldoverdimetode for avskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger Saldoverdi i **Metode**-feltet på **Avskrivningsprofiler**-siden, avskrives anleggsmidler som har denne avskrivningsprofilen tilordnet, med den samme prosenten i hver avskrivningsperiode.
 
@@ -41,7 +41,7 @@ Du kan velge enten **Kalender** eller **Skattemessig** i **Avskrivningsår**-fel
 
 ### <a name="calendar"></a>Kalender
 
-Alternativet **Kalender** oppdaterer avskrivningsgrunnlaget, som vanligvis er netto bokført verdi minus svinnverdi, 1. januar hvert år. I eksemplet på redusert saldoavskrivning senere i dette emnet, er avskrivningsgrunnlaget telleren i det første uttrykket i beregninger i beregningskolonnen. 
+Alternativet **Kalender** oppdaterer avskrivningsgrunnlaget, som vanligvis er netto bokført verdi minus svinnverdi, 1. januar hvert år. I eksemplet på redusert saldoavskrivning senere i denne artikkelen, er avskrivningsgrunnlaget telleren i det første uttrykket i beregninger i beregningskolonnen. 
 
 Hvis du velger **Kalender**, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet, som definerer posteringsdatoer for avskrivningsavsetning og beløp gjennom hele kalenderåret:
 

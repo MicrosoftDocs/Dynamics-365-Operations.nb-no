@@ -1,6 +1,6 @@
 ---
 title: Kontosaldoer i økonomimodulen
-description: 'Dette emnet forklarer to måter å vise finanskontosaldi på: listesiden for råbalanse og finansrapporter.'
+description: 'Denne artikkelen beskriver to måter å vise finanskontosaldi: listesiden for råbalanse og finansrapporter.'
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8470929b6805ddf9b85bd03e3043c2953d5fcfd1
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f00f221765e757d8d4c82e1a0e4b8721e33dc321
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874500"
 ---
 # <a name="general-ledger-account-balances"></a>Kontosaldoer i økonomimodulen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer to måter å vise finanskontosaldi på: listesiden for råbalanse og finansrapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer.
+Denne artikkelen beskriver to måter å vise finanskontosaldi: listesiden for råbalanse og finansrapporter. Den beskriver også hvordan du oppdaterer dimensjonssaldoer.
 
 Brukere kan vise saldoer på flere ulike måter i økonomimodulen. Noen av de vanligste alternativene er som følger:
 

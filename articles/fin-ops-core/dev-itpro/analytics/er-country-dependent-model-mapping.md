@@ -1,6 +1,6 @@
 ---
-title: Konfigurere landkontekstsavhengige ER-modelltilordninger
-description: Dette emnet beskriver hvordan du kan definere ER-modelltilordninger slik at de avhenger av land/område-konteksten til den juridiske enheten som styrer bruken.
+title: Konfigurer modelltilordninger for landkontekstavhengig ER
+description: Denne artikkelen beskriver hvordan du kan definere ER-modelltilordninger slik at de avhenger av land/område-konteksten til den juridiske enheten som styrer bruken.
 author: NickSelin
 ms.date: 11/11/2019
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 771b14662638838ac1f39d85b19ac58a47352c79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605377"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883882"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Konfigurere landkontekstsavhengige ER-modelltilordninger
 
 [!include[banner](../includes/banner.md)]
 
-Du kan konfigurere ER-modelltilordninger slik at de implementerer en generisk ER-datamodell, men som er spesifikke for Dynamics 365 Finance. Dette emnet forklarer hvordan du utformer flere ER-modelltilordninger for en ER-datamodell for å kontrollere hvordan de brukes ved hjelp av de tilsvarende ER-formatene som kjøres fra firmaer som har forskjellige land-/område kontekster.
+Du kan konfigurere ER-modelltilordninger slik at de implementerer en generisk ER-datamodell, men som er spesifikke for Dynamics 365 Finance. Denne artikkelen forklarer hvordan du utformer flere ER-modelltilordninger for en ER-datamodell for å kontrollere hvordan de brukes ved hjelp av de tilsvarende ER-formatene som kjøres fra firmaer som har forskjellige land-/område kontekster.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Hvis du vil fullføre eksemplene i dette emnet, må du ha følgende tilgang:
+Hvis du vil fullføre eksemplene i denne artikkelen, må du ha følgende tilgang:
 
 - Tilgang til Finance for én av følgende roller:
     - Utvikler av elektronisk rapportering
@@ -42,11 +42,11 @@ Hvis du vil fullføre eksemplene i dette emnet, må du ha følgende tilgang:
     - Funksjonell konsulent for elektronisk rapportering
     - Systemansvarlig
 
-Noen trinn i dette emnet krever at du kjører et ER-format. I noen tilfeller påvirkes utføringen av et ER-format av land/område-konteksten til det firmaet du er logget på. Du kan kjøre et ER-format i gjeldende RCS-forekomst hvis firmaet som har den nødvendige land/område-konteksten, er tilgjengelig i RCS. Hvis ikke må du laste opp en fullført versjon av ER-modelltilordningen og ER-formatkonfigurasjonene som bruker ER-datamodellen til Finance-forekomsten, og deretter kjøre ER-formatet i den Finance-forekomsten. Hvis du vil ha informasjon om hvordan du importerer konfigurasjoner som ligger i RCS til en Finance-forekomst, kan du se [Importere konfigurasjoner fra RCS](rcs-download-configurations.md).
+Noen trinn i denne artikkelen krever at du kjører et ER-format. I noen tilfeller påvirkes utføringen av et ER-format av land/område-konteksten til det firmaet du er logget på. Du kan kjøre et ER-format i gjeldende RCS-forekomst hvis firmaet som har den nødvendige land/område-konteksten, er tilgjengelig i RCS. Hvis ikke må du laste opp en fullført versjon av ER-modelltilordningen og ER-formatkonfigurasjonene som bruker ER-datamodellen til Finance-forekomsten, og deretter kjøre ER-formatet i den Finance-forekomsten. Hvis du vil ha informasjon om hvordan du importerer konfigurasjoner som ligger i RCS til en Finance-forekomst, kan du se [Importere konfigurasjoner fra RCS](rcs-download-configurations.md).
 
 ## <a name="single-model-mapping-case"></a>Sak for tilordning av én modell
 
-Følg trinnene i [Tillegg 1](#appendix1) i dette emnet for å utforme de nødvendige ER-komponentene. Du har nå modelltilordningskonfigurasjonen **Tilordning (generelt)** som inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
+Følg trinnene i [Tillegg 1](#appendix1) i denne artikkelen for å utforme de nødvendige ER-komponentene. Du har nå modelltilordningskonfigurasjonen **Tilordning (generelt)** som inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
 
 ![ER-konfigurasjonsside, format for å lære tilordningskonfigurasjon.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
@@ -59,7 +59,7 @@ Legg merke til at webleseren tilbyr å laste ned tekstfilen som ble generert av 
 
 ## <a name="multiple-shared-model-mappings-case"></a>Sak for tilordninger av flere delte modeller
 
-Følg trinnene i [Tillegg 2](#appendix2) i dette emnet for å utforme de nødvendige ER-komponentene. Du har nå modelltilordningskonfigurasjonene **Tilordning (generelt)** og **Tilordning (generelt) egendefinert** som hver inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
+Følg trinnene i [Tillegg 2](#appendix2) i denne artikkelen for å utforme de nødvendige ER-komponentene. Du har nå modelltilordningskonfigurasjonene **Tilordning (generelt)** og **Tilordning (generelt) egendefinert** som hver inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
 
 ![ER-konfigurasjonsside, Tilordning av generell egendefinert konfigurasjon.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
@@ -97,7 +97,7 @@ Varsel om at utføringen av det valgte ER-formatet lyktes. Webleseren tilbyr å 
 
 ## <a name="multiple-mixed-model-mappings-case"></a>Sak for tilordninger av flere blandede modeller
 
-Følg trinnene i [Tillegg 3](#appendix3) i dette emnet for å utforme de nødvendige ER-komponentene. Du har nå konfigurasjonene **Tilordning (generelt)**, **Tilordning (generelt) egendefinert** og **Tilordning (FR) modelltilordning** som inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
+Følg trinnene i [Tillegg 3](#appendix3) i denne artikkelen for å utforme de nødvendige ER-komponentene. Du har nå konfigurasjonene **Tilordning (generelt)**, **Tilordning (generelt) egendefinert** og **Tilordning (FR) modelltilordning** som inneholder modelltilordningen for definisjonen **Inngangspunkt 1**.
 
 Legg merke til at versjon 1 av **Tilordning (FR)**-modelltilordningskonfigurasjonen er konfigurert slik at den bare gjelder for ER-formater for modellen **Modell for å lære om tilordninger** som kjøres i økonomifirmaer som har fransk land/område-kontekst.
 
@@ -138,10 +138,10 @@ Varsel om at utføringen av det valgte ER-formatet lyktes. Webleseren tilbyr å 
 
 Som du har sett, kan du velge en modelltilordning for å kjøre et ER-format på følgende måte:
 
-- Modelltilordningsdefinisjonen som brukes av ER-formatet, er angitt (**Inngangspunkt 1** i eksemplene i dette emnet).
-- Alle tilordningskonfigurasjoner som inneholder en tilordning som har den angitte definisjonen, og som oppfyller alle kontekstbegrensninger for land/område som er konfigurert, kan potensielt brukes til å kjøre ER-formatet (**Tilordning (generelt)**, **Tilordning (generelt) egendefinert** og **Tilordning (FR)** i eksemplene i dette emnet).
-- Alle standard modelltilordninger som har kontekstbegrensninger for land/område, har høyest prioritet for valg (**Tilordning (FR)** i eksemplene i dette emnet).
-- Alle standard modelltilordninger som ikke har kontekstbegrensninger for land/område, har nest høyest prioritet for valg (**Tilordning (genrelt) egendefinert** i eksemplene i dette emnet).
+- Modelltilordningsdefinisjonen som brukes av ER-formatet, er angitt (**Inngangspunkt 1** i eksemplene i denne artikkelen).
+- Alle tilordningskonfigurasjoner som inneholder en tilordning som har den angitte definisjonen, og som oppfyller alle kontekstbegrensninger for land/område som er konfigurert, kan potensielt brukes til å kjøre ER-formatet (**Tilordning (generelt)**, **Tilordning (generelt) egendefinert** og **Tilordning (FR)** i eksemplene i denne artikkelen).
+- Alle standard modelltilordninger som har kontekstbegrensninger for land/område, har høyest prioritet for valg (**Tilordning (FR)** i eksemplene i denne artikkelen).
+- Alle standard modelltilordninger som ikke har kontekstbegrensninger for land/område, har nest høyest prioritet for valg (**Tilordning (genrelt) egendefinert** i eksemplene i denne artikkelen).
 - Alle modelltilordninger som har kontekstbegrensninger for land/område har høyere prioritet for valg enn modelltilordninger som ikke har kontekstbegrensninger for land/område.
 
 Følgende tabell gir informasjon om resultatene av modelltilordningsvalget for alle mulige tilfeller for modelltilordningsinnstillinger:

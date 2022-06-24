@@ -1,6 +1,6 @@
 ---
 title: Definere parameterne for et ER-format per juridisk enhet
-description: Dette emnet forklarer hvordan du kan konfigurere parametere for et ER-format per juridisk enhet.
+description: Denne artikkelen forklarer hvordan du kan konfigurere parametere for et ER-format per juridisk enhet.
 author: NickSelin
 ms.date: 03/25/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dbcf968dde432da182b5bd2d6a7bcb9f83dad6fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644506"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890219"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Definere parameterne for et ER-format per juridisk enhet
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644506"
 
 Hvis du vil fullføre disse trinnene, må du først fullføre trinnene i [Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet](er-app-specific-parameters-configure-format.md).
 
-Hvis du vil fullføre eksemplene i dette emnet, må du ha tilgang til Microsoft Dynamics 365 Finance for en av de følgende rollene:
+Hvis du vil fullføre eksemplene i denne artikkelen, må du ha tilgang til Microsoft Dynamics 365 Finance for en av de følgende rollene:
 
 - Utvikler av elektronisk rapportering
 - Funksjonell konsulent for elektronisk rapportering
@@ -221,7 +221,7 @@ De programspesifikke parameterne for et ER-format er juridisk enhetsavhengig. Hv
 
 Du kan også bruke denne eksport-import-fremgangsmåten til å overføre ER-formatrelaterte programspesifikke parametere som opprinnelig ble konfigurert i én forekomst av Finance til en annen forekomst av Finance.
 
-Hvis du konfigurerer programspesifikke parametere for en versjon av et ER-format og deretter importerer en senere versjon av det samme formatet til den gjeldende finansforekomsten, vil ikke de eksisterende programspesifikke parameterne brukes på den importerte versjonen med mindre du bruker funksjonen **Bruk programspesifikke parametere fra tidligere versjoner av ER-formater**. Hvis du vil ha mer informasjon, kan du se delen [Bruke eksisterende parametere på nytt](#reuse-existing-parameters) senere i dette emnet.
+Hvis du konfigurerer programspesifikke parametere for en versjon av et ER-format og deretter importerer en senere versjon av det samme formatet til den gjeldende finansforekomsten, vil ikke de eksisterende programspesifikke parameterne brukes på den importerte versjonen med mindre du bruker funksjonen **Bruk programspesifikke parametere fra tidligere versjoner av ER-formater**. Hvis du vil ha mer informasjon, kan du se delen [Bruke eksisterende parametere på nytt](#reuse-existing-parameters) senere i denne artikkelen.
 
 Når du velger en fil for import, sammenlignes strukturen til programspesifikke parametere i den aktuelle filen med strukturen til de tilsvarende datakildene for **Oppslag**-typen i ER-formatet som er valgt for import. Som standard fullføres importen bare hvis strukturen til hver programspesifikk parameter samsvarer med strukturen til den tilsvarende datakilden i ER-formatet som er valgt for import. Hvis strukturene ikke samsvarer, får du en advarsel som informerer deg om at importen ikke kan fullføres. Hvis du fremtvinger importen, ryddes det opp i de eksisterende programspesifikke parameterne for det valgte ER-formatet, og du må definere dem fra begynnelsen.
 

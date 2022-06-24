@@ -1,6 +1,6 @@
 ---
 title: Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
-description: Dette emnet inneholder beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling.
+description: Denne artikkelen beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling.
 author: abruer
 ms.date: 10/26/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f05f1d8d2a1fb454f3f227d2cc8138f2b779ff87
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716332"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895203"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling. Den ene metoden oppretter en forskuddsbetalt faktura som er knyttet til en bestilling. Den andre metoden oppretter journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling.
+Denne artikkelen beskriver og viser forskjellene mellom de to metodene som organisasjoner kan bruke for forskuddsbetaling. Den ene metoden oppretter en forskuddsbetalt faktura som er knyttet til en bestilling. Den andre metoden oppretter journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling.
 
 Organisasjoner kan utstede forskuddsbetalinger til leverandører for varer eller tjenester før varene eller tjenestene er oppfylt. To metoder kan brukes til å utstede forskuddsbetalinger til leverandører. Hvis du vil redusere risikoen, kan du spore forskuddsbetalinger ved å definere forskuddsbetalingen på en bestilling. For denne metoden må du opprette en forskuddsbetalt faktura som er knyttet til en bestilling. Denne metoden kalles forskuddsfakturering. Organisasjoner som ikke vil følge opp forskuddsbetalinger så tett, eller ikke mottar en forskuddsbetalt faktura fra leverandøren, kan bruke journalbilag for forskuddsbetaling i stedet for faktureringsmåten forskuddsbetaling. Du kan opprette journalbilag for forskuddsbetaling ved å lage journaloppføringer og merke dem som journalbilag for forskuddsbetaling. Du kan ikke spore hvilke forskuddsbetalinger til en leverandør som gjøres mot hvilke bestillinger for denne metoden. Du kan imidlertid merke en postert forskuddsbetaling for utligning mot en bestilling.
 

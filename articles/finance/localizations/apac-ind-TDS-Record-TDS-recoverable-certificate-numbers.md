@@ -1,6 +1,6 @@
 ---
 title: Registrer numre på fradragsberettigede TDS-sertifikater
-description: Dette emnet forklarer hvordan du bruker siden Fradragsberettigede sertifikater til å registrere sertifikatnumrene og -datoene for TDS-sertifikater (Tax Deducted at Source) for en bestemt leverandør, kunde eller finans.
+description: Denne artikkelen forklarer hvordan du bruker siden Fradragsberettigede sertifikater til å registrere sertifikatnumrene og -datoene for TDS-sertifikater (Tax Deducted at Source) for en bestemt leverandør, kunde eller finans.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5d62f560fe58a5fb7bd158bed9bcb111d75c7f00
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 513412e292167795fad9d80b68e6e5e14dbd13c5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853263"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>Registrer numre på fradragsberettigede TDS-sertifikater
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du bruker siden **Fradragsberettigede sertifikater** til å registrere sertifikatnumrene og -datoene for TDS-sertifikater (Tax Deducted at Source) for en bestemt leverandør, kunde eller finans. Hvis du vil oppdatere TDS-sertifikatnumrene og -datoene som er registrert for TDS-transaksjoner på denne siden, bruker du siden **Oppdater sertifikat** (**Økonomimodul \> Periodisk \> Kildeskatt \> Oppdater sertifikat**). Når du er ferdig å oppdatere TDS-sertifikatnumre, lukker du dem.
+Denne artikkelen forklarer hvordan du bruker siden **Fradragsberettigede sertifikater** til å registrere sertifikatnumrene og -datoene for TDS-sertifikater (Tax Deducted at Source) for en bestemt leverandør, kunde eller finans. Hvis du vil oppdatere TDS-sertifikatnumrene og -datoene som er registrert for TDS-transaksjoner på denne siden, bruker du siden **Oppdater sertifikat** (**Økonomimodul \> Periodisk \> Kildeskatt \> Oppdater sertifikat**). Når du er ferdig å oppdatere TDS-sertifikatnumre, lukker du dem.
 
 Følg denne fremgangsmåten for å registrere TDS-sertifikatnumrene og -datoene.
 

@@ -1,6 +1,6 @@
 ---
 title: Definere og generere positive betalingsfiler
-description: Dette emnet forklarer hvordan du konfigurerer positiv betaling og genererer positive betalingsfiler.
+description: Denne artikkelen forklarer hvordan du konfigurerer positiv betaling og genererer positive betalingsfiler.
 author: panolte
 ms.date: 03/06/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: eb5a9595ea1a93a9b15348eb1b291d744f660d40
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6b3cff1029b02aaabef2ea9795ab9912f20f1129
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727769"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871427"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Definere og generere positive betalingsfiler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer positiv betaling og genererer positive betalingsfiler. 
+Denne artikkelen forklarer hvordan du konfigurerer positiv betaling og genererer positive betalingsfiler. 
 
 Definer positiv betaling for å generere en elektronisk liste over sjekker som leveres til banken. Når sjekken presenteres til banken, sammenligner banken deretter sjekken med listen over sjekker. Hvis sjekken samsvarer med en sjekk i listen, betales sjekken av banken. Hvis sjekken ikke samsvarer med en sjekk i listen, beholder banken sjekken til gjennomgang.
 

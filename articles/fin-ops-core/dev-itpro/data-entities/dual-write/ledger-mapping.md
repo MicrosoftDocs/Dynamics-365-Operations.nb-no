@@ -1,6 +1,6 @@
 ---
 title: Integrert finans
-description: Dette emnet beskriver integreringen av finansdata mellom Finance and Operations og andre Dynamics 365-programmer ved bruk av Dataverse.
+description: Denne artikkelen beskriver integreringen av finansdata mellom Økonomi og drift og andre Dynamics 365-programmer ved bruk av Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 0deb4198acb59b90bf06e4050889d028df2223e3
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063653"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847196"
 ---
 # <a name="integrated-ledger"></a>Integrert finans
 
@@ -22,7 +22,7 @@ ms.locfileid: "8063653"
 
 
 
-I et forretningsprogram definerer finansdata kjerneoppsettet for hvordan et firma gjør forretninger. Finansdata beskriver for eksempel regnskapsåret firmaet følger, transaksjonsvalutaene og kontoene det bruker. Dette emnet beskriver integreringen av disse finansielle dataene.
+I et forretningsprogram definerer finansdata kjerneoppsettet for hvordan et firma gjør forretninger. Finansdata beskriver for eksempel regnskapsåret firmaet følger, transaksjonsvalutaene og kontoene det bruker. Denne artikkelen beskriver integreringen av disse finansielle dataene.
 
 ## <a name="templates"></a>Maler
 

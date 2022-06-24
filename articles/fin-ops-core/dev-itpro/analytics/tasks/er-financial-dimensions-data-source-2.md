@@ -1,6 +1,6 @@
 ---
 title: ER Bruke finansdimensjoner som en datakilde (del 2 - Modelltilordning)
-description: Dette emnet beskriver hvordan du konfigurerer en ER-modell (Elektronisk rapportering) for å bruke finansdimensjoner som en datakilde for ER-rapporter. (Del 2)
+description: Denne artikkelen beskriver hvordan du konfigurerer en ER-modell (Elektronisk rapportering) for å bruke finansdimensjoner som en datakilde for ER-rapporter. (Del 2)
 author: NickSelin
 ms.date: 05/27/2020
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: d228ee9d393cab1c5c1592ca6570cdc91992c38c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605411"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878349"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Bruke finansdimensjoner som en datakilde (del 2 - Modelltilordning)
 
@@ -94,7 +94,7 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 25. Velg LedgerJournal\<Relasjoner\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Hovedkonto og dimensjoner i treet.
 26. Velg Journal\Transaksjon\Dimensjonsdata i treet.
 27. Klikk på Bind.
-!Utformingsside for modelltilordning, Tilordning-fane, Datakildetre.](../media/er-financial-dimensions-guides-model-mapping3.png)
+!Siden Modelltilordningsutforming, Tilordning-fane, Datakilder-tre.](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. Velg LedgerJournal\<Relasjoner\LedgerJournalTrans\Debet(AmountCurDebit) i treet.
 29. Velg Journal\Transaksjon\Debet i treet.
 30. Klikk på Bind.

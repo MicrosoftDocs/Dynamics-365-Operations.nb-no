@@ -1,8 +1,8 @@
 ---
 title: Tilpasse brukeropplevelsen
-description: Dette emnet forklarer hvordan du kan tilpasse appen.
+description: Denne artikkelen forklarer hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b922d68fcf3e83be57140cf8c54c4bacd2b75f56
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: c326e51dc127d8b82ccef28146ec223ca5169c5e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845449"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -28,7 +28,7 @@ ms.locfileid: "8602997"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emnet beskriver hvordan du kan tilpasse appen og dekker følgende emner: 
+Denne artikkelen beskriver hvordan du kan tilpasse appen og dekker følgende emner: 
 
 - **Systemomfattende alternativer** – Disse tilpasningsalternativene utføres på en konfigurasjonsside og er tilgjengelige for alle brukere. Eksempler er fargetema og tidssone. 
 - **Begrenset tilpassingsstilgang** – På dette tilgangsnivået lagres brukerhandlinger som er knyttet til vanlig sidebruk, automatisk av appen, og de gjenopprettes neste gang du besøker siden. For eksempel lagrer appen bredden på rutenettkolonnene hvis du endrer dem, og tilstanden for vist eller skjult for hurtigfanene. 
@@ -58,7 +58,7 @@ Her er en liste over handlingene som faller under vanlig bruk av siden, og som d
 
 - **Rutenettkolonnebredder:** – Du kan justere bredden på en kolonne i et rutenett ved å velge størrelseslinjen til venstre eller høyre for kolonneoverskriften og deretter dra den til venstre eller høyre helt til kolonnen har ønsket bredde. Appen lagrer bredden som du angir for en kolonne. Neste gang du åpner denne siden, endres størrelsen på kolonnen til denne bredden.
 - **Rutenettbunntekst og kolonnesummer** – *(Bare tilgjengelig når den nye rutenettkontrollen er aktivert)* Du kan bestemme om en total skal vises nederst i en numerisk kolonne i et rutenett, og om bunnteksten i rutenettet er synlig. Appen lagrer disse innstillingene og bruker dem neste gang du åpner siden. Hvis du vil ha mer informasjon, se [Rutenettfunksjoner](grid-capabilities.md). 
-- **Hurtigfaner** – Noen sider har utvidbare deler kalt *Hurtigfaner*. Appen lagrer informasjon om hurtigfanene som du har vist eller skjult. Neste gang du åpner siden, vil de samme hurtigfanene enten vises eller skjules, basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en hurtigfane, fordi appen ikke trenger å hente informasjonen om hurtigfaner før hurtigfanen utvides. Som forklart senere i dette emnet kan du også endre rekkefølgen for hurtigfanene på en side.
+- **Hurtigfaner** – Noen sider har utvidbare deler kalt *Hurtigfaner*. Appen lagrer informasjon om hurtigfanene som du har vist eller skjult. Neste gang du åpner siden, vil de samme hurtigfanene enten vises eller skjules, basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en hurtigfane, fordi appen ikke trenger å hente informasjonen om hurtigfaner før hurtigfanen utvides. Som forklart senere i denne artikkelen kan du også endre rekkefølgen for hurtigfanene på en side.
 - **Faktabokser** – Noen sider har en **Relatert informasjon**-rute som viser skrivebeskyttet informasjon som er knyttet til gjeldende emne på siden. Hver del i ruten **Relatert informasjon** kalles en *Faktaboks*. Du kan vise eller skjule ruten **Relatert informasjon**, og du kan også vise eller skjule individuelle faktabokser. Appene lagrer disse innstillingene. Neste gang du åpner siden, vil ruten **Relatert informasjon** og de individuelle faktaboksene enten utvides eller skjules basert på den siste samhandlingen med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule ruten **Relatert informasjon** eller en faktaboks fordi appen ikke trenger å hente informasjonen for faktabokser før de utvides.
 - **Handlingsruter** – En *Handlingsrute* vises øverst på de fleste sidene. Handlingsruten inneholder knapper for mange av handlingene som du kan utføre på gjeldende side. Disse knappene er ofte organisert i kategorier. Du kan *feste* hele handlingsruten som åpen, eller du kan skjule den som standard. Neste gang du åpner siden, vil handlingsruten enten være åpen eller skjult basert på siste samhandling med siden. Hvis du festet handlingsruten som åpen, vises den siste fanen du brukte.
 - **Hurtigfilter** – Et *hurtigfilter* vises over mange rutenett. Med hurtigfilter kan du filtrere rutenettet basert på én enkeltkolonne som du velger. Appen lagrer kolonnen du filtrerte på. Deretter, neste gang du åpner denne siden, vil rutenettet bruke den samme kolonnen til filtrering som standard. Du kan imidlertid fortsatt velge en annen kolonne å filtrere rutenettet på.
@@ -173,14 +173,14 @@ Fra og med versjon 10.0.26 kan brukere bruke funksjonen **Tillat brukere å velg
 
 ### <a name="personalizing-your-dashboard"></a>Tilpasse instrumentbordet
 
-Instrumentbordet er ofte den første siden som vises når du åpner appen. Den kan tilpasses som en hvilken som helst annen side i systemet, ved å bruke de samme mekanismene som er beskrevet tidligere i dette emnet. 
+Instrumentbordet er ofte den første siden som vises når du åpner appen. Den kan tilpasses som en hvilken som helst annen side i systemet, ved å bruke de samme mekanismene som er beskrevet tidligere i denne artikkelen. 
 
 > [!WARNING]
 > Når du skjuler innhold på instrumentbordet, er det for øyeblikket viktig at du direkte målretter en flis, og ikke rommet rundt den. Hvis du skjuler gruppen rundt en flis, kan det være uventede resultater hvis flere fliser legges til senere, eller hvis systemet byttes til et annet språk.
 
 Én unik tilpasningskapasitet som er tilgjengelig på instrumentbordet, er muligheten til å legge til fliser. 
 
-- Hvis funksjonen **Helside-apper** er slått av, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til et arbeidsområde**. En ny arbeidsområdeflis opprettes nederst på instrumentbordet. Du kan endre navn på denne nye arbeidsområdeflisen slik du vil. Du kan også legge til lister, fliser og koblinger til arbeidsområdet, som beskrevet i [Legge til fliser, lister eller koblinger i et arbeidsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace)-delen i dette emnet.
+- Hvis funksjonen **Helside-apper** er slått av, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til et arbeidsområde**. En ny arbeidsområdeflis opprettes nederst på instrumentbordet. Du kan endre navn på denne nye arbeidsområdeflisen slik du vil. Du kan også legge til lister, fliser og koblinger til arbeidsområdet, som beskrevet i [Legge til fliser, lister eller koblinger i et arbeidsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace)-delen i denne artikkelen.
 - Hvis funksjonen **Helside-apper** er slått på, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til en app**. I dialogboksen velger du om du vil legge til en flis for et nytt arbeidsområde eller en flis med innhold fra Power Apps eller et nettsted. Deretter følger du trinnene for å konfigurere alternativet du valgte. En ny flis opprettes nederst på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du legger til, redigerer, sletter og deler disse innebygde appene, kan du se [Bygg inn lerretsapper fra Power Apps](embed-power-apps.md) og [Bygg inn tredjepartsapper](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Dele tilpasninger
@@ -236,7 +236,7 @@ En annen måte å dele tilpasninger på, er ved eksport og import. Enkeltbrukere
 
 #### <a name="export"></a>Eksporter
 
-Du kan generelt eksportere én av dine egne visninger eller tilpasninger ved å åpne den aktuelle siden, åpne verktøylinjen for **tilpasning** og deretter velge **Eksporter**. Hvis du vil ha mer informasjon om verktøylinjen, kan du se delen [Verktøylinje for tilpassing](#personalization-toolbar) tidligere i dette emnet. Hvis [lagrede visninger](saved-views.md) er aktivert, kan du også gå til **Innstillinger \> Brukeralternativer \> Tilpassing** for å vise en liste over alle tilpasningene i systemet. Derfra kan du velge visningene eller tilpasningene som skal eksporteres, og deretter velge **Eksporter**.
+Du kan generelt eksportere én av dine egne visninger eller tilpasninger ved å åpne den aktuelle siden, åpne verktøylinjen for **tilpasning** og deretter velge **Eksporter**. Hvis du vil ha mer informasjon om verktøylinjen, kan du se delen [Verktøylinje for tilpassing](#personalization-toolbar) tidligere i denne artikkelen. Hvis [lagrede visninger](saved-views.md) er aktivert, kan du også gå til **Innstillinger \> Brukeralternativer \> Tilpassing** for å vise en liste over alle tilpasningene i systemet. Derfra kan du velge visningene eller tilpasningene som skal eksporteres, og deretter velge **Eksporter**.
 
 I tillegg kan administratorer eksportere tilpasningene til andre brukere ved å følge disse trinnene.
 
@@ -277,7 +277,7 @@ Hvis lagrede visninger ikke er aktivert, følger du fremgangsmåten nedenfor.
 
 **Tilpassing**-siden er den sentrale huben for administrasjon av personlige tilpasninger på organisasjonsnivå. Innholdet og funksjonene på denne siden avhenger av om **Lagrede visninger**-funksjonen er aktivert.
 
-For kunder som har aktivert **Lagrede visninger**-funksjonen, kan du se "Behandle visninger globalt"-delen i [Lagrede visninger](saved-views.md)-emnet.
+For kunder som har aktivert **Lagrede visninger**-funksjonen, kan du se "Behandle visninger globalt"-delen i [Lagrede visninger](saved-views.md)-artikkelen.
 
 For kunder som ennå ikke har aktivert funksjonen [Lagrede visninger](saved-views.md), har denne siden fire kategorier:
 
@@ -285,6 +285,9 @@ For kunder som ennå ikke har aktivert funksjonen [Lagrede visninger](saved-view
 - **Fjern** – Du kan fjerne alle tilpasninger for en side eller et arbeidsområde for én eller flere brukere. Velg først en side eller et arbeidsområde for å se en liste over brukerne som har tilpasset den. Velg deretter brukerne som skal ha fjernet tilpasninger for denne siden eller arbeidsområdet, og velg deretter **Fjern**. Alle tilpasninger som de valgte brukerne har brukt på den valgte siden eller arbeidsområdet, slettes. Du kan ikke angre denne handlingen. Hvis en tilpasning ble lagret for siden eller arbeidsområdet, kan tilpasningen importeres på nytt.
 - **Brukere** – Velg en bruker for å vise en liste over sider som brukeren har tilpasset. Du kan deretter aktivere eller deaktivere den valgte brukerens mulighet til å bruke tilpassinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller fjerne en tilpassing for brukeren. I tillegg kan du tilbakestille bildeforklaringer for funksjonen for brukeren. Hvis brukeren tidligere har ignorert alle popup-vinduer som introduserer nye funksjoner, vil de da vises igjen neste gang brukeren støter på disse funksjonene.
 - **System** – Du kan midlertidig deaktivere tilpasninger for alle brukere i systemet. I dette tilfellet slettes alle personlige tilpasninger for alle brukere, og alle sidene tilbakestilles til standardtilstanden. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt. Du kan også permanent slette alle tilpasninger for alle brukere i systemet. Tilpasninger som er slettet, kan ikke gjenopprettes. Før du utfører denne oppgaven må du eksportere tilpasninger du kanskje vil bruke senere.
+
+### <a name="service-updates-and-personalization"></a>Tjenesteoppdateringer og tilpasning
+Tilpasningsdata behøver ikke å tømmes eller tilbakestilles når du flytter til en ny versjon av produktet. Tilpasningene og lagrede visningsdataene vil fortsatt fungere på tvers av oppdateringer. Unntak til dette kan omfatte endringer i selve skjemaet som gjør tilpasningen ugyldig (for eksempel en fjernet kontroll) eller endringer i skjemaets basisspørring som endrer datakildens undertre, slik at det ikke lenger samsvarer med deltreet for datakilden som er tilknyttet visningsspørringen.
 
 ## <a name="personalizing-inventory-dimensions"></a>Tilpasse lagerdimensjoner
 

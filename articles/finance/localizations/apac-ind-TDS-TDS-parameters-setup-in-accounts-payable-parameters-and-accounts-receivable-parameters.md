@@ -1,6 +1,6 @@
 ---
 title: Konfigurere TDS-parametere i Leverandører og Kunder
-description: Dette emnet forklarer hvordan du angir parametere i Leverandører og Kunder for å støtte TDS-fradrag (Tax Deducted at Source).
+description: Denne artikkelen forklarer hvordan du angir parametere i Leverandører og Kunder for å støtte TDS-fradrag (Tax Deducted at Source).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d2cb434346dbbe5487522fe9f7110716c3a8c761
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e547b92f9f7e0ccc5b92df4cd991ce402369b568
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725156"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883157"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Konfigurere TDS-parametere i Leverandører og Kunder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du angir parametere i Leverandører og Kunder for å støtte TDS-fradrag (Tax Deducted at Source).
+Denne artikkelen forklarer hvordan du angir parametere i Leverandører og Kunder for å støtte TDS-fradrag (Tax Deducted at Source).
 
 1. Gå til **Avgift \> Oppsett \> Parametere \> Kundeparametere**.
 2. Velg **Oppdater ordrelinjer** i **Oppdateringer**-fanen for å åpne dialogboksen **Oppdater ordrelinjer**.

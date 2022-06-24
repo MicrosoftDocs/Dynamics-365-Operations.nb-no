@@ -1,6 +1,6 @@
 ---
 title: Vanlige spørsmål om tilbakestilling av datatorg
-description: Dette emnet gir svar på noen vanlige spørsmål om tilbakestilling av datatorg.
+description: Denne artikkelen gir svar på noen vanlige spørsmål om tilbakestilling av datatorg.
 author: jinniew
 ms.date: 03/21/2022
 ms.topic: article
@@ -13,16 +13,16 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 61c7047096f42e71cde5e9ba1ddc59785383795a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: d2b20ec7af9f0c6b7899617c2b8fdbf0992d7397
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714136"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892399"
 ---
 # <a name="data-mart-resets-faq"></a>Vanlige spørsmål om tilbakestilling av datatorg
 
-Dette emnet gir svar på noen vanlige spørsmål om tilbakestilling av datatorg. En tilbakestilling av datatorg kan være en tidkrevende prosess og, avhengig av omstendighetene, kan det hende at det ikke er den løsningen som kreves. Derfor inneholder dette emnet informasjon om forhold der en tilbakestilling av datatorg kan hjelpe, og også forhold der det sannsynligvis ikke vil hjelpe.
+Denne artikkelen gir svar på noen vanlige spørsmål om tilbakestilling av datatorg. En tilbakestilling av datatorg kan være en tidkrevende prosess og, avhengig av omstendighetene, kan det hende at det ikke er den løsningen som kreves. Derfor inneholder denne artikkelen informasjon om forhold der en tilbakestilling av datatorg kan hjelpe, og også forhold der det sannsynligvis ikke vil hjelpe.
 
 ## <a name="what-is-a-data-mart-reset"></a>Hva er en tilbakestilling av datatorg?
 

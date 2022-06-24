@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2deb20646a532509c9e3a3e7a39f646bced2a3fb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693122"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868166"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -47,7 +47,7 @@ Bruk satser til å bestemme hvor mye ansatte og arbeidsgivere skal betale for hv
    | **Effektiv** | Datoen satsen blir aktiv. Standardverdien er gjeldende systemdato. Denne datoen bør være på eller før fordelsperioden. En god praksis er å sette denne datoen til datoen for fordelsplanen. |
    | **Utløp** | Sluttdatoen for satsen. 12/31/2154 (som betyr aldri) er standardverdien. |
    | **Bruk lag** |  Bruk dette feltet hvis du har logikk som må brukes til å bestemme en sats. Hvis for eksempel en sats må øke basert på alder, velger du en verdi her. Velg **Enkelt lag** for en fordelssats på ett lag, eller et **dobbelt nivå** for en fordelssats på to lag. Et eksempel på et dobbelt lag er et lag basert på kjønn og alder. Når du har valgt en verdi, velger du **Handlinger** og deretter **Lagsatser**. Hvis du har en flat sats som ikke endres, lar du dette feltet stå tomt. |
-   | **Betalingsfrekvens** | Angi hvor ofte fordelspremieprisen skal betales til fordelsleverandøren. Satsene du angir på siden som er beskrevet senere i dette emnet, er basert på betalingsfrekvensen du angir her. Hvis du for eksempel angir **Månedlig** i dette feltet, og du angir en ansattsats på **USD 100**, antas det at fordelen vil koste den ansatte USD 100 per måned. En ansatt kan imidlertid bli betalt to ganger i måneden, basert på fordelsbetalingsfrekvensen som er angitt på ansattposten. Når den ansatte logger seg på **selvbetjening for ansatte**, vil beløpet som de betaler, i dette tilfelle være USD 50 fordi satsen som **ansattselvbetjeningen** viser, er basert på den ansattes betalingsfrekvens. |
+   | **Betalingsfrekvens** | Angi hvor ofte fordelspremieprisen skal betales til fordelsleverandøren. Satsene du angir på siden som er beskrevet senere i denne artikkelen, er basert på betalingsfrekvensen du angir her. Hvis du for eksempel angir **Månedlig** i dette feltet, og du angir en ansattsats på **USD 100**, antas det at fordelen vil koste den ansatte USD 100 per måned. En ansatt kan imidlertid bli betalt to ganger i måneden, basert på fordelsbetalingsfrekvensen som er angitt på ansattposten. Når den ansatte logger seg på **selvbetjening for ansatte**, vil beløpet som de betaler, i dette tilfelle være USD 50 fordi satsen som **ansattselvbetjeningen** viser, er basert på den ansattes betalingsfrekvens. |
    | **Avrunding av sats for lønnsfrekvens** | Metodene for avrunding av satsen er: Standard, Avrunding, Normal, Nedover og Avrunding opp. </br></br><ul><li>**Standard** – Avrundes alltid oppover. 10,611 avrunder for eksempel til 10,62. -10,231 avrunder til -10,23. </li><li>**Avrunding** – Avrundes alltid nedover. 10,619 avrunder for eksempel til 10,61. -10,231 avrundes til -10,24. </li><li>**Normal** – Desimalverdier som slutter på eller er større enn 5, rundes fra null. Desimalverdier som slutter på eller mindre enn 4, avrundes mot null. 10,615 avrundes for eksempel til 10,62. -10,235 avrundes til -10,24. 10,614 avrundes til 10,61. -10,234 avrundes til -10,23. </li><li>**Nedover** – Avrund mot null. 10,619 avrunder for eksempel til 10,61. -10,231 avrunder til -10,23. </li><li>**Avrundes opp** – Rund av fra null. 10,619 avrunder for eksempel til 10,62. -10,231 avrundes til -10,24. |
    | **Beløp for ikke-røykende ansatt** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
    | **Beløp for ikke-røykende arbeidsgiver** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |

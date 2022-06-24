@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Rekruttering
-description: Dette emnet beskriver Power BI-innholdet Rekruttering.
+description: Denne artikkelen beskriver Power BI-innholdet Rekruttering.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 36ea9f204b50b3d7a6c8e33e69a9c3fd7d82cd79d466e2b9547c6733aa294aea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3240b92993986b32a739b7a6e5c7f7c2df3ed71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765128"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890103"
 ---
 # <a name="recruiting-power-bi-content"></a>Power BI-innholdet Rekruttering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Microsoft Power BI-innholdet for **Rekruttering**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Denne artikkelen beskriver Microsoft Power BI-innholdet **Rekruttering**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 Power BI-innholdet **Rekruttering** vises i **Rekrutteringsstyring**-arbeidsområdet.

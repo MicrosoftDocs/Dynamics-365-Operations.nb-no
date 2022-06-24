@@ -1,6 +1,6 @@
 ---
-title: Feilsøke problemer under første synkronisering
-description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer som kan oppstå under første synkronisering.
+title: Feilsøk problemer under førstegangssynkronisering
+description: Denne artikkelen inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer som kan oppstå under første synkronisering.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,23 +9,23 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 030e565ffff561f6c1efbdd0de9928f70c7c46c0
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: bb3db4c651aaac521974d92753be5a8219bfe1ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063064"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892364"
 ---
-# <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøke problemer under første synkronisering
+# <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøk problemer under førstegangssynkronisering
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dette emnet inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Det inneholder informasjon som kan hjelpe deg med å løse problemer som kan oppstå under første synkronisering.
+Denne artikkelen inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Det inneholder informasjon som kan hjelpe deg med å løse problemer som kan oppstå under første synkronisering.
 
 > [!IMPORTANT]
-> Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
+> Noen av problemene som denne artikkelen løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
 
 ## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Sjekke feil ved innledende synkronisering i en økonomi- og driftsapp
 

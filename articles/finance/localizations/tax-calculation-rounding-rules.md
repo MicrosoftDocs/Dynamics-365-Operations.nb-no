@@ -1,6 +1,6 @@
 ---
 title: Avrundingsregler for avgiftsberegning
-description: Dette emnet gir informasjon om avrundingsreglene i avgiftsberegningsparameterne for avgiftsberegningstjenesten.
+description: Denne artikkelen gir informasjon om avrundingsreglene i avgiftsberegningsparameterne for avgiftsberegningstjenesten.
 author: kailiang
 ms.date: 07/29/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 167db4d836aa754509bb28677916a30901cebbbb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0f6182ab18a5a408a6e526feec7014ccdfce8af0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694181"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858308"
 ---
 # <a name="tax-calculation-rounding-rules"></a>Avrundingsregler for avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan avrundingsreglene fungerer i avgiftsberegningsparameterne for avgiftsberegningstjenesten.
+Denne artikkelen gir informasjon om hvordan avrundingsreglene fungerer i avgiftsberegningsparameterne for avgiftsberegningstjenesten.
 
 > [!NOTE] 
 > Når tjenesten for avgiftsberegning er aktivert, er ikke avrundingsreglene på sidene **Mva-kode** og **Mva-gruppe** gyldige.

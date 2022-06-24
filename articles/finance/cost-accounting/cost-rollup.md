@@ -1,6 +1,6 @@
 ---
 title: Policy for opprullet kost og beregning av administrasjonskostnader
-description: Dette emnet inneholder informasjon om hvordan du fastsetter riktig nivå for sekundære kostnadselementer og lager regler for opprullet kost som passer inn i organisasjonsrapportering og kostnadssporbarhet.
+description: Denne artikkelen inneholder informasjon om hvordan du fastsetter riktig nivå for sekundære kostnadselementer og lager regler for opprullet kost som passer inn i organisasjonsrapportering og kostnadssporbarhet.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f35bf3e900b8dd9c1864be8668f7ff7296924c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734436"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874616"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
@@ -33,7 +33,7 @@ Kostnadsregnskap gir deg innsikt i hvordan kostnadsflyten er knyttet til produkt
 -   Antallet kostnadsoppføringer som genereres ved beregning av indirekte kostnader, kan være svært høyt.
 -   Det går ikke an å spore kostnadsflyten mellom kostnadsobjekter.
 
-Kostnadsregnskap lar deg konfigurere kostnadsfordeling slik at den passer med rapporteringskravene i organisasjonen, og dermed unngår du disse implikasjonene. Dette emnet diskuterer hvordan du kan fastsette riktig nivå for sekundære kostnadselementer og lage regler for opprullet kost som passer inn i organisasjonsrapportering og kostnadssporbarhet.
+Kostnadsregnskap lar deg konfigurere kostnadsfordeling slik at den passer med rapporteringskravene i organisasjonen, og dermed unngår du disse implikasjonene. Denne artikkelen diskuterer hvordan du kan fastsette riktig nivå for sekundære kostnadselementer og lage regler for opprullet kost som passer inn i organisasjonsrapportering og kostnadssporbarhet.
 
 > [!NOTE]
 > Du kan endre konfigurasjoner hvis rapporteringskravene endres.

@@ -1,6 +1,6 @@
 ---
 title: Automatisere testing med elektronisk rapportering
-description: Dette emnet beskriver hvordan du kan bruke grunnlinjefunksjonen for elektronisk rapportering (ER) til å automatisere testing av en funksjonalitet.
+description: Denne artikkelen beskriver hvordan du kan bruke grunnlinjefunksjonen for elektronisk rapportering (ER) til å automatisere testing av en funksjonalitet.
 author: NickSelin
 ms.date: 07/02/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: da69cc903197dbfae536c8494f126074c51aa77f9522d57f2673c97b1e682d9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: df2baa988bb634db11d819dd84ef73eaa560bab9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749806"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892776"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisere testing med elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan bruke rammeverket for elektronisk rapportering (ER) til å automatisere testing av en del funksjonalitet. Eksemplet i dette emnet viser hvordan du automatiserer testingen av behandling av leverandørbetaling.
+Denne artikkelen beskriver hvordan du kan bruke rammeverket for elektronisk rapportering (ER) til å automatisere testing av en del funksjonalitet. Eksemplet i denne artikkelen viser hvordan du automatiserer testingen av behandling av leverandørbetaling.
 
 Programmet bruker ER-rammeverket til å generere betalingsfiler og tilsvarende dokumenter under behandling av leverandørbetaling. ER-rammeverket består av en datamodell, modelltilordninger og formateringskomponenter som støtter betalingsbehandling for ulike betalingstyper og generering av dokumenter i forskjellige formater. Disse komponentene kan lastes ned fra Microsoft Dynamics Lifecycle Services (LCS) og importeres i forekomsten.
 
@@ -54,7 +54,7 @@ Avanserte funksjonsbrukere kan kjøre brukergodkjennings- og integreringstester.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Før du kan fullføre oppgavene i dette emnet, må du ha oppfylt følgende forutsetninger:
+Før du kan fullføre oppgavene i denne artikkelen, må du ha oppfylt følgende forutsetninger:
 
 - Distribuer en topologi som støtter testautomatisering. Du må ha tilgang til forekomsten i denne topologien for rollen **Systemansvarlig**. Denne topologien må inneholde demonstrasjonsdataene som blir brukt i dette eksemplet. Hvis du vil ha mer informasjon, kan du se [Distribuere og bruke et miljø som støtter sammenhengende automatisering av bygging og testing](../perf-test/continuous-build-test-automation.md).
 - Hvis du vil kjøre brukergodkjennings- og integreringstester automatisk, må du installere RSAT i topologien du bruker, og konfigurere den på riktig måte. Hvis du vil ha mer informasjon om hvordan du installerer og konfigurerer RSAT og konfigurerer det slik at det fungerer med Finance and Operations-apper og Azure DevOps, kan du se [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Vær oppmerksom på forutsetningene for å bruke verktøyet. Illustrasjonen nedenfor viser et eksempel på RSAT-innstillingene. Det blå rektanglet vises rundt parameterne som angir tilgang til Azure DevOps. Det grønne rektanglet vises rundt parameterne som angir tilgang til forekomsten.
@@ -62,7 +62,7 @@ Før du kan fullføre oppgavene i dette emnet, må du ha oppfylt følgende forut
     ![RSAT-innstillinger.](media/GER-Configure.png "Skjermbilde av dialogboksen RSAT-innstillinger")
 
 - For å kunne organisere testtilfeller i serier og derved bidra til å garantere riktig utførelsessekvens, slik at du kan samle logger med testutførelser for ytterligere rapportering og undersøkelse, må du ha tilgang til Azure DevOps fra den distribuerte topologien.
-- For å fullføre eksemplet i dette emnet anbefaler vi at du laster ned [ER-bruk for RSAT-tester](https://go.microsoft.com/fwlink/?linkid=874684). Denne ZIP-filen inneholder følgende oppgaveveiledninger:
+- For å fullføre eksemplet i denne artikkelen anbefaler vi at du laster ned [ER-bruk for RSAT-tester](https://go.microsoft.com/fwlink/?linkid=874684). Denne ZIP-filen inneholder følgende oppgaveveiledninger:
 
     | Innhold                                           | Filnavn og -plassering |
     |---------------------------------------------------|------------------------|

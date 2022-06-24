@@ -1,6 +1,6 @@
 ---
 title: Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool
-description: Dette emnet er en opplæring i hvordan du konfigurerer og installerer RSAT (Regression Suite Automation Tool).
+description: Denne artikkelen er en opplæring i hvordan du konfigurerer og installerer RSAT (Regression Suite Automation Tool).
 author: tonyafehr
 ms.date: 09/20/2019
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 5dcdd14f54b9c0ad39794ff98ede29332c246513
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: ec4ae765aaac038e6c7eff11403fb21ebd27fc2c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858597"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool
 
-Dette emnet hjelper deg å konfigurere og komme i gang med RSAT og verktøyene som er knyttet til bruk av RSAT.
+Denne artikkelen hjelper deg å konfigurere og komme i gang med RSAT og verktøyene som er knyttet til bruk av RSAT.
 
 [!include [banner](../../includes/banner.md)]
 
@@ -111,7 +111,7 @@ I denne opplæringen skal du bruke Forretningsprosessmodelerer (BPM) i LCS til �
 
 ## <a name="configure-the-lcs-project"></a>Konfigurere LCS-prosjektet
 
-Du trenger et LCS-prosjekt (Lifecycle Services) for hovedtestbiblioteket. Forretningsprosessmodelerer (BPM) i LCS brukes som hovedbibliotek for testtilfellene. BPM brukes til å administrere og distribuere testbiblioteker på tvers av LCS-prosjekter. En Microsoft-partner eller uavhengig programvareleverandør som for eksempel bygger testbiblioteker, gir ut testtilfeller i form av BPM-biblioteker. I BPM organiseres testtilfeller etter forretningsprosess. BPM definerer ikke utføringsrekkefølgen eller -frekvensen for testomgangen. Disse detaljene administreres i Azure DevOps, som beskrevet senere i dette emnet.  
+Du trenger et LCS-prosjekt (Lifecycle Services) for hovedtestbiblioteket. Forretningsprosessmodelerer (BPM) i LCS brukes som hovedbibliotek for testtilfellene. BPM brukes til å administrere og distribuere testbiblioteker på tvers av LCS-prosjekter. En Microsoft-partner eller uavhengig programvareleverandør som for eksempel bygger testbiblioteker, gir ut testtilfeller i form av BPM-biblioteker. I BPM organiseres testtilfeller etter forretningsprosess. BPM definerer ikke utføringsrekkefølgen eller -frekvensen for testomgangen. Disse detaljene administreres i Azure DevOps, som beskrevet senere i denne artikkelen.  
 
 For LCS-prosjektet kan du bruke en eksisterende kundeimplementering eller et eksisterende partnerprosjekt.
 

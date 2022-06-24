@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644468"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860171"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -29,7 +29,7 @@ ms.locfileid: "8644468"
 For å opprette og administrere dataimport- og -eksportjobber bruker du arbeidsområdet **Dataadministrasjon**. Som standard oppretter dataimporterings- og eksportprosessen et oppstartstabell for hver enhet i måldatabasen. Staging-tabeller lar deg verifisere, rydde opp eller konvertere data før du flytter den.
 
 > [!NOTE]
-> Dette emnet forutsetter at du er kjent med [dataenheter](data-entities.md).
+> Denne artikkelen forutsetter at du er kjent med [dataenheter](data-entities.md).
 
 ## <a name="data-importexport-process"></a>Prosess for dataimport/-eksport
 Her er fremgangsmåten for å importere eller eksportere data.
@@ -48,7 +48,7 @@ Her er fremgangsmåten for å importere eller eksportere data.
 5. Bekreft at jobben løp som forventet ved å se gjennom jobbhistorikken.
 6. Rydd opp i staging-tabellene.
 
-De gjenværende delene av dette emnet gir mer informasjon om hvert trinn i prosessen.
+De gjenværende delene av denne artikkelen gir mer informasjon om hvert trinn i prosessen.
 
 > [!NOTE]
 > Hvis du vil oppdatere dataimport/-eksportskjemaet for å se siste fremdrift, kan du bruke ikonet for skjemaoppdatering. Oppdatering på lesernivå anbefales ikke fordi det vil forstyrre import- og eksportjobber som ikke kjøres satsvis.

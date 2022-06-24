@@ -1,6 +1,6 @@
 ---
 title: Veiledning for oppsett av dobbel skriving
-description: Dette emnet beskriver scenariene som støttes for oppsett av dobbel skriving.
+description: Denne artikkelen beskriver scenariene som støttes for oppsett av dobbel skriving.
 author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6de449b14bcdd82336e3e255bf62ad069d3daaf5
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061610"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873156"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Veiledning for oppsett av dobbel skriving
 
@@ -78,11 +78,11 @@ Følg denne fremgangsmåten for å synkronisere de eksisterende Dataverse-dataen
 3. [Starte opp](bootstrap-company-data.md) Dataverse-dataene ved hjelp av en ISO-firmakode (International Organization for Standardization) på tre tegn.
 4. Kjør funksjonaliteten **Innledende synkronisering** for tabellen du vil synkronisere data for.
 
-Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se [Eksempel](#example)-delen senere i dette emnet.
+Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se [Eksempel](#example)-delen senere i denne artikkelen.
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>En ny økonomi- og driftsappforekomst som har data og en ny Customer Engagement-appforekomst
 
-Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en ny forekomst av en Customer Engagement-app, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en ny Customer Engagement-appforekomst](#new-new) tidligere i dette emnet. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
+Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en ny forekomst av en Customer Engagement-app, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en ny Customer Engagement-appforekomst](#new-new) tidligere i denne artikkelen. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
 
 1. Åpne økonomi- og driftsappen fra LCS-siden, logg på og gå til **Databehandling \> Dobbel skriving**.
 2. Kjør funksjonaliteten **Innledende synkronisering** for tabellen du vil synkronisere data for.
@@ -91,7 +91,7 @@ Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se
 
 ## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>En ny økonomi- og driftsappforekomst som har data og eksisterende Customer Engagement-appforekomst
 
-Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en eksisterende forekomst av en Customer Engagement-app, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en eksisterende Customer Engagement-appforekomst](#new-existing) tidligere i dette emnet. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
+Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en eksisterende forekomst av en Customer Engagement-app, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en eksisterende Customer Engagement-appforekomst](#new-existing) tidligere i denne artikkelen. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
 
 1. Åpne økonomi- og driftsappen fra LCS-siden, logg på og gå til **Databehandling \> Dobbel skriving**.
 2. Kjør funksjonaliteten **Innledende synkronisering** for tabellen du vil synkronisere data for.

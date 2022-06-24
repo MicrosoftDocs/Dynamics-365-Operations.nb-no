@@ -1,6 +1,6 @@
 ---
-title: Avslutte konfigurasjoner i det globale RCS-repositoriet
-description: Dette emnet beskriver hvordan du avslutter konfigurasjoner i det globale RCS-repositoriet.
+title: Avslutt konfigurasjoner i det globale RCS-repositoriet
+description: Denne artikkelen beskriver hvordan du avslutter konfigurasjoner i det globale RCS-repositoriet.
 author: JaneA07
 ms.date: 02/17/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 340fc96e7dfe56da9ee8d4831a5980e3e96ec3ee0f2f5a8fb2ab72f713de9737
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4121f45a95e1712f21390c317af532662846a0fc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712176"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894818"
 ---
-# <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Avslutte konfigurasjoner i det globale RCS-repositoriet
+# <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Avslutt konfigurasjoner i det globale RCS-repositoriet
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du avslutter en konfigurasjon i det globale RCS-repositoriet. Tidligere var det bare mulig å slette konfigurasjoner som ikke lenger var nødvendige. Men nå kan du merke en frigitt konfigurasjon som **Avsluttet** i det globale RCS-repositoriet. Med denne funksjonaliteten kan du også gjøre følgende: 
+Denne artikkelen beskriver hvordan du avslutter konfigurasjon i det globale RCS-repositoriet. Tidligere var det bare mulig å slette konfigurasjoner som ikke lenger var nødvendige. Men nå kan du merke en frigitt konfigurasjon som **Avsluttet** i det globale RCS-repositoriet. Med denne funksjonaliteten kan du også gjøre følgende: 
  
  - Varsle på forhånd når en konfigurasjon skal avsluttes.
  - Inkluder aktuelle detaljer om erstatningskonfigurasjonen.

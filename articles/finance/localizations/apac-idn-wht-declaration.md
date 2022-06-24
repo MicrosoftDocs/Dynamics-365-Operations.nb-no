@@ -1,6 +1,6 @@
 ---
 title: Kildeskattrapport for Indonesia
-description: Dette emnet beskriver hvordan du konfigurerer og genererer kildeskattrapporten for Indonesia.
+description: Denne artikkelen beskriver hvordan du konfigurerer og genererer kildeskattrapporten for Indonesia.
 author: sndray
 ms.date: 12/15/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6cf2f9240ea747054578c52343af34b15c250f38
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 8acd9442ff4f0b7c19e3b4fcf211acce002e43d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883188"
 ---
 # <a name="withholding-tax-report-for-indonesia-id-00005"></a>Kildeskattrapport for Indonesia (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du definerer og genererer PPH-filen for kildeskatt som juridiske enheter i Indonesia bruker til å rapportere kildeskattransaksjoner i e-Bupot-programmet.
+Denne artikkelen beskriver hvordan du definerer og genererer PPH-filen for kildeskatt som juridiske enheter i Indonesia bruker til å rapportere kildeskattransaksjoner i e-Bupot-programmet.
 
 Skattemyndigheten (DGT) i Indonesia fastslår at avgiftspliktige entreprenører (PKP) som er registrert på KPP Pratama som skatteskyldere/-innsamlere av inntektsskatt (PPh) Artikkel 23 eller Artikkel 26, må rapportere inntektsskatteartikkel 23 og 26 ved hjelp av e-Bupot-programmet. 
 

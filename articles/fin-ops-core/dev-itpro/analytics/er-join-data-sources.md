@@ -1,6 +1,6 @@
 ---
 title: Bruke JOIN-datakilder i ER-modelltilordninger til å hente data fra flere programtabeller
-description: Dette emnet forklarer hvordan du kan bruke datakilder av JOIN-typen i elektronisk rapportering (ER).
+description: Denne artikkelen forklarer hvordan du kan bruke datakilder av JOIN-typen i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: c9a06c048e98676e30a6652cad6634c2e13531d4ebc6d35f325f4c7153cd82ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0994c19ad79a3e73dc787ef8d82716db637f9ab0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845548"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Bruke JOIN-datakilder til å hente data fra flere programtabeller i modelltilordninger for elektronisk rapportering (ER)
 
@@ -40,7 +40,7 @@ I den konfigurerte **Join**-datakilden, når alle datakilder er av typen **Tabel
 > [!NOTE]
 > Bruk av **VALUEIN**-funksjonen i ER-uttrykk som angir betingelser for sammenkobling av poster i datakilder av Join-typen, støttes ikke ennå. Gå til siden [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md) for mer informasjon om denne funksjonen.
 
-Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emnet.
+Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i denne artikkelen.
 
 ## <a name="example-use-join-data-sources-in-er-model-mappings"></a>Eksempel: Bruk JOIN-datakilder i ER-modelltilordninger
 
@@ -48,7 +48,7 @@ De følgende trinnene forklarer hvordan den systemansvarlige eller utvikleren av
 
 ### <a name="prerequisites"></a>Forutsetninger
 
-Hvis du vil fullføre eksemplene i dette emnet, må du ha tilgang til ett av følgende, avhengig av hvilken tjeneste som brukes til å utføre disse trinnene:
+Hvis du vil fullføre eksemplene i denne artikkelen, må du ha tilgang til ett av følgende, avhengig av hvilken tjeneste som brukes til å utføre disse trinnene:
 
 **Tilgang til Finance for én av følgende roller:**
 
@@ -257,7 +257,7 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 
 ## <a name="limitations"></a>Begrensninger
 
-Som du kan se fra eksemplet i dette emnet, kan **JOIN**-datakilden bygges fra flere datakilder som beskriver de individuelle datasettene for postene som til slutt må sammenføyes. Du kan konfigurere disse datakildene ved å bruke den innebygde ER-funksjonen [FILTER](er-functions-list-filter.md). Når du konfigurerer datakilden slik at den kalles utenfor **JOIN**-datakilden, kan du bruke firmaområder som en del av betingelsen for datavalg. Den første implementeringen av **JOIN**-datakilden støtter ikke datakilder av denne typen. Når du for eksempel kaller en [FILTER](er-functions-list-filter.md)-basert datakilde innenfor omfanget av utføringen av en **JOIN**-datakilde, oppstår det et unntak hvis den kalte datakilden inneholder firmaområder som en del av betingelsen for datavalg.
+Som du kan se fra eksemplet i denne artikkelen, kan **JOIN**-datakilden bygges fra flere datakilder som beskriver de individuelle datasettene for postene som til slutt må sammenføyes. Du kan konfigurere disse datakildene ved å bruke den innebygde ER-funksjonen [FILTER](er-functions-list-filter.md). Når du konfigurerer datakilden slik at den kalles utenfor **JOIN**-datakilden, kan du bruke firmaområder som en del av betingelsen for datavalg. Den første implementeringen av **JOIN**-datakilden støtter ikke datakilder av denne typen. Når du for eksempel kaller en [FILTER](er-functions-list-filter.md)-basert datakilde innenfor omfanget av utføringen av en **JOIN**-datakilde, oppstår det et unntak hvis den kalte datakilden inneholder firmaområder som en del av betingelsen for datavalg.
 
 I Microsoft Dynamics 365 Finance versjon 10.0.12 (august 2020) kan du bruke firmaområder som en del av vilkåret for datavalget i [FILTER](er-functions-list-filter.md)-baserte datakilder som kalles i omfanget av utføringen for en **JOIN**-datakilde. På grunn av begrensningene i programmets [spørrings](../dev-ref/xpp-library-objects.md#query-object-model)-verktøy støttes bare firmaområdene bare for den første datakilden for en **JOIN**-datakilde.
 

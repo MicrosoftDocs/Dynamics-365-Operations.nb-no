@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet CFO-oversikt
-description: Dette emnet beskriver Microsoft Power BI-innholdet i en CFO-oversikt.
+description: Denne artikkelen beskriver Microsoft Power BI-innholdet i en CFO-oversikt.
 author: kweekley
 ms.date: 08/24/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3eab89d55ec90f3b5937773502430bf317e491ae
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 1ea8f12102cc2fac1948027f7c15d45bf5d1b15d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416210"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881558"
 ---
 # <a name="cfo-overview-power-bi-content"></a>Power BI-innholdet CFO-oversikt
 
 [!include [banner](../includes/banner.md)] 
 
-Dette emnet beskriver Microsoft Power BI-innholdet i en **CFO-oversikt**. Dette Power BI-innholdet gjelder for de som bruker Microsoft Dynamics 365 for Finance and Operations versjon 7.2. Hvis du bruker versjon 7.3 eller nyere, kan du se [Økonomisk innsikt](financial-insights.md).
+Denne artikkelen beskriver Microsoft Power BI-innholdet i en **CFO-oversikt**. Dette Power BI-innholdet gjelder for de som bruker Microsoft Dynamics 365 for Finance and Operations versjon 7.2. Hvis du bruker versjon 7.3 eller nyere, kan du se [Økonomisk innsikt](financial-insights.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 

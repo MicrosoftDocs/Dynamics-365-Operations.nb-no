@@ -1,6 +1,6 @@
 ---
 title: Elektroniske finanskonsolideringer
-description: Dette emnet beskriver elektroniske finanskonsolideringer i Økonomimodul.
+description: Denne artikkelen beskriver elektroniske finanskonsolideringer i Økonomimodul.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: d5848960ec5e30c1356a93ca4cb6545cec9e39de
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: f6c489156ca869e02ba6387c3464cc1e1a248d9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716726"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848556"
 ---
 # <a name="online-financial-consolidations"></a>Elektroniske finanskonsolideringer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver elektroniske finanskonsolideringer i Økonomimodul. Før du leser dette emnet, må du lese emnet [Oversikt over finanskonsolideringer og valutaomveksling](financial-consolidations-currency-translation.md).
+Denne artikkelen beskriver elektroniske finanskonsolideringer i Økonomimodul. Før du leser denne artikkelen, må du lese artikkelen [Oversikt over finanskonsolideringer og valutaomveksling](financial-consolidations-currency-translation.md).
 
 Når du har fullført oppsettet, du angir detaljer om konsolideringer på siden **Konsolider [Online]**. Når du er ferdig, kan du klikke **OK** eller **Parti** for å behandle konsolideringen.
 
@@ -90,7 +90,7 @@ I kategorien **Valutaveksling** definerer du juridisk enhet, konto, valutakursty
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
+Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se den overordnede artikkelen i denne artikkelen, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 For informasjon om situasjoner der du kan generere konsoliderte regnskapsoppgjør, kan du se [Generere konsoliderte regnskapsoppgjør](./generating-consolidated-financial-statements.md).
 

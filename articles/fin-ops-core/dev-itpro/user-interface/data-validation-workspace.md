@@ -12,12 +12,12 @@ ms.reviewer: tfehr
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: fef3130f06cbb1d8afdbae93bdc55b47be3480b3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 626b3bbaf88f905bd167ad9eea4683ed1855eb92
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070833"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860046"
 ---
 # <a name="data-validation-checklist-workspace"></a>Arbeidsområde for sjekkliste for datavalidering
 
@@ -26,7 +26,7 @@ ms.locfileid: "8070833"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emnet gir en oversikt over **arbeidsområdet for sjekkliste for datavalidering** og den tilknyttede konfigurasjonen.
+Denne artikkelen gir en oversikt over **arbeidsområdet for sjekkliste for datavalidering** og den tilknyttede konfigurasjonen.
 
 Med arbeidsområdet **Sjekkliste for datavalidering** kan du spore prosesser for validering av data på tvers av firmaer, områder og personer. Sjekklisten kan brukes i løpet av en ny implementering, etter en oppgradering eller etter en overføring. Avhengig av visningen av arbeidsområdet **Sjekkliste for datavalidering** vil du se alle oppgaver og statuser for et datavalideringsprosjekt eller bare oppgavene som er tilordnet til deg.
 

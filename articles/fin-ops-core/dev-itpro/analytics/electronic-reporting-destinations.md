@@ -1,6 +1,6 @@
 ---
 title: Mål for elektronisk rapportering (ER)
-description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
+description: Denne artikkelen inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
 author: nselin
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780467"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851084"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Du kan konfigurere et mål for hver formatkonfigurasjon for elektronisk rapportering (ER) og utdatakomponenten (en mappe eller en fil). Brukere som har riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. Dette emnet beskriver administrasjon av mål for elektronisk rapportering, måltyper som støttes og sikkerhetsvurderinger.
+Du kan konfigurere et mål for hver formatkonfigurasjon for elektronisk rapportering (ER) og utdatakomponenten (en mappe eller en fil). Brukere som har riktige tilgangsrettigheter kan også endre målinnstillingene ved kjøretid. Denne artikkelen beskriver administrasjon av mål for elektronisk rapportering, måltyper som støttes og sikkerhetsvurderinger.
 
 Formatkonfigurasjoner for elektronisk rapportering (ER) inneholder vanligvis minst én utdatakomponent: en fil. Konfigurasjoner inneholder vanligvis flere filutdatakomponenter av forskjellige typer (for eksempel XML, TXT, XLSX, DOCX eller PDF) som er gruppert i én eller flere mapper. Administrasjon av mål for elektronisk rapportering lar deg forhåndsdefinere hva som skjer når hver komponent kjøres. Når en konfigurasjon kjøres, vises det som standard en dialogboks som kan brukes til å lagre eller åpne filen. Den samme atferden forekommer også når du importerer en ER-konfigurasjon og ikke konfigurerer noen bestemte mål for den. Når et mål opprettes for en hovedutdatakomponent, overstyrer dette målet standard virkemåte, og mappen eller filen sendes i henhold til innstillingene for målet.
 

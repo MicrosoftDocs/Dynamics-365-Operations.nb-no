@@ -1,6 +1,6 @@
 ---
 title: Server-til-server-godkjenning for ATS-integrerings-API
-description: Dette emnet beskriver hvordan du konfigurerer server-til-server-godkjenning for integrasjoner mot Dynamics 365 Human Resources API for søkersporingssystemintegrering.
+description: Denne artikkelen beskriver hvordan du konfigurerer server-til-server-godkjenning for integrasjoner mot Dynamics 365 Human Resources API for søkersporingssystemintegrering.
 author: jaredha
 ms.date: 06/30/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: de3dc29c5366996276c02576eba27f7e831e4ccf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743548"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879373"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Server-til-server-godkjenning for ATS-integrerings-API
 
@@ -27,7 +27,7 @@ ms.locfileid: "8743548"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver hvordan du konfigurerer server-til-server-godkjenning for programintegrasjoner mot Dynamics 365 Human Resources API for søkersporingssystemintegrering. Det er et par lag med sikkerhet som må administreres for at tjenestekontohaveren skal få tilgang til den virtuelle Microsoft Dataverse-tabellen og tilknyttede data. Brukeren må ha tilgang til den virtuelle Dataverse-tabellen i Microsoft Power Platform og tilgang til dataene i Dynamics 365 Human Resources.
+Denne artikkelen beskriver hvordan du konfigurerer server-til-server-godkjenning for programintegrasjoner mot Dynamics 365 Human Resources API for søkersporingssystemintegrering. Det er et par lag med sikkerhet som må administreres for at tjenestekontohaveren skal få tilgang til den virtuelle Microsoft Dataverse-tabellen og tilknyttede data. Brukeren må ha tilgang til den virtuelle Dataverse-tabellen i Microsoft Power Platform og tilgang til dataene i Dynamics 365 Human Resources.
 
 ## <a name="enable-access-to-dataverse-virtual-tables-in-power-platform"></a>Aktiver tilgang til virtuelle Dataverse-tabeller i Power Platform
 

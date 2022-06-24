@@ -1,6 +1,6 @@
 ---
 title: Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
-description: Dette emnet beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
+description: Denne artikkelen beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 author: ShivamPandey-msft
 ms.date: 05/02/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: fcdf276505cf58267a38e9d6174a155ad307653b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847009"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du evaluerer en forutsigelsesmodell etter at du har aktivert Finance Insights og deretter generert og kalibrert den første modellen. Dette emnet omhandler modeller for å forutsi kundebetalinger. Det beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
+Denne artikkelen forklarer hvordan du evaluerer en forutsigelsesmodell etter at du har aktivert Finance Insights og deretter generert og kalibrert den første modellen. Denne artikkelen omhandler modeller for å forutsi kundebetalinger. Det beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 
 ## <a name="getting-details-about-the-model"></a>Henter detaljer om modellen
 

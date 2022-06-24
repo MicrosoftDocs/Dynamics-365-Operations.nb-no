@@ -1,6 +1,6 @@
 ---
 title: Startside for lokal distribusjon
-description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
+description: Denne artikkelen gir informasjon og koblinger til innhold om lokale distribusjoner.
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8566046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867419"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal distribusjon
 
 [!include [banner](../includes/banner.md)]
 
-Du kan distribuere Dynamics 365 Finance + Operations (on-premises). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
+Du kan distribuere Dynamics 365 Finance + Operations (on-premises). Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon. Denne artikkelen gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.
 
 ## <a name="get-started"></a>Komme i gang
 - [Oversikt over lokal distribusjon](on-premises-overview.md)

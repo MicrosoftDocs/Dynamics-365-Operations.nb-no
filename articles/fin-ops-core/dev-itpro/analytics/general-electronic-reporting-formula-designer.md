@@ -1,6 +1,6 @@
 ---
 title: Formeldesigner i elektronisk rapportering (ER)
-description: Dette emnet gir generell informasjon om hvordan du bruker formeldesigneren i elektronisk rapportering.
+description: Denne artikkelen gir generell informasjon om hvordan du bruker formeldesigneren i elektronisk rapportering.
 author: NickSelin
 ms.date: 04/08/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 606532411aa8297654d8d20a9061472597e773da
-ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
+ms.openlocfilehash: 6b03613cb40c5ca718f45e69740d29059fcfb70b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782211"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894302"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke formler for å transformere data slik at de oppfyller kravene for fullføringen og formatering for dokumentet. Disse formlene ligner på formler i Microsoft Excel. Ulike typer funksjoner støttes i formlene: tekst, dato og klokkeslett, matematisk logiske, informasjon og konverteringsfunksjoner for datatype og andre domenespesifikke forretningsfunksjoner.
+Denne artikkelen beskriver hvordan du bruker formeldesigneren i elektronisk rapportering (ER). Når du utformer et format for et bestemt elektronisk dokument i ER, kan du bruke formler for å transformere data slik at de oppfyller kravene for fullføringen og formatering for dokumentet. Disse formlene ligner på formler i Microsoft Excel. Ulike typer funksjoner støttes i formlene: tekst, dato og klokkeslett, matematisk logiske, informasjon og konverteringsfunksjoner for datatype og andre domenespesifikke forretningsfunksjoner.
 
 ## <a name="formula-designer-overview"></a>Oversikt over formeldesigner
 

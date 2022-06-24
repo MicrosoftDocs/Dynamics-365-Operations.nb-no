@@ -1,6 +1,6 @@
 ---
-title: Lage dokumentasjon eller opplæring med Oppgaveopptaker
-description: Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du gjør opptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
+title: Lag dokumentasjon eller opplæring med oppgaveopptaker
+description: Denne artikkelen forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du gjør opptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 author: josaw1
 ms.date: 03/24/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b556003edf2fe186f6b095e538f142fcf5a0bba5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070532"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891821"
 ---
-# <a name="create-documentation-or-training-with-task-recorder"></a>Lage dokumentasjon eller opplæring med Oppgaveopptaker
+# <a name="create-documentation-or-training-with-task-recorder"></a>Lag dokumentasjon eller opplæring med oppgaveopptaker
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
+Denne artikkelen forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 
 > [!IMPORTANT]
 > Du kan registrere dine egne oppgaveveiledninger for Dynamics 365 Human Resources, men du kan ikke lagre dem i et BPM-bibliotek (forretningsprosessmodellerer) eller åpne dem fra Hjelp-ruten nå. Du kan lagre dem lokalt eller på en nettverksplassering og deretter åpne og spille dem av ved hjelp av Oppgaveopptaker. 

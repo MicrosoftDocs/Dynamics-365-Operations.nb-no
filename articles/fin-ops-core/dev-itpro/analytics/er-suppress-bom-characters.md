@@ -1,6 +1,6 @@
 ---
 title: Utforme ER-konfigurasjoner for å slette BOM-tegn i genererte filer
-description: Dette emnet beskriver hvordan du konfigurerer et ER-format (Elektronisk rapportering) slik at det genererer rapporter som sletter merker for byterekkefølge (BOM-tegn).
+description: Denne artikkelen beskriver hvordan du konfigurerer et ER-format (Elektronisk rapportering) slik at det genererer rapporter som sletter merker for byterekkefølge (BOM-tegn).
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9265578deaff4100eb5987eb6090eaa12876044
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: d54ed105e4ff44ac2c48e2d1a4b8e12fbf6f9591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847437"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Utforme ER-konfigurasjoner for å slette BOM-tegn i genererte filer
 
@@ -38,7 +38,7 @@ Hvis du angir **UTF-8**, **UTF-16** eller **UTF-32** som kodingen, blir alternat
 
 ![Angi alternativet Slett BOM-tegn på Formatutforming-siden.](./media/er-suppress-bom-characters-image2.gif)
 
-Fullfør den riktige fremgangsmåten for å gå gjennom funksjonaliteten ved kjøretid. Fullfør for eksempel fremgangsmåten i emnet [Utsette kjøringen av XML-elementer i ER-formater](er-defer-xml-element.md). Når du har fullført fremgangsmåten i delen [Endre formatet slik at beregningen baseres på genererte utdata](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) i det emnet, følger du disse tilleggstrinnene.
+Fullfør den riktige fremgangsmåten for å gå gjennom funksjonaliteten ved kjøretid. Fullfør for eksempel fremgangsmåten i artikkelen [Utsette kjøringen av XML-elementer i ER-formater](er-defer-xml-element.md). Når du har fullført fremgangsmåten i delen [Endre formatet slik at beregningen baseres på genererte utdata](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) i denne artikkelen, følger du disse tilleggstrinnene.
 
 1. Angi UTF-kodingen:
 
@@ -48,12 +48,12 @@ Fullfør den riktige fremgangsmåten for å gå gjennom funksjonaliteten ved kj�
 2. Generer en XML-fil som inneholder et BOM-tegn:
 
     1. Angi **Nei** for alternativet **Slett BOM-tegn** for å ta med BOM-tegn i genererte XML-filer.
-    2. Fullfør fremgangsmåten i delen [Utsett kjøringen av XML-elementet Sammendrag slik at beregnet sum brukes](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) i emnet [Utsette kjøringen av XML-elementer i ER-formater](er-defer-xml-element.md), og lagre den genererte filen som **SampleXmlReport.xml**.
+    2. Fullfør fremgangsmåten i delen [Utsett kjøringen av XML-elementet Sammendrag slik at beregnet sum brukes](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) i artikkelen [Utsette kjøringen av XML-elementer i ER-formater](er-defer-xml-element.md), og lagre den genererte filen som **SampleXmlReport.xml**.
 
 3. Generer en XML-fil som ikke inneholder et BOM-tegn:
 
     1. Angi **Ja** for alternativet **Slett BOM-tegn** for å slette BOM-tegn i genererte XML-filer.
-    2. Fullfør fremgangsmåten i delen [Utsett kjøringen av XML-elementet Sammendrag slik at beregnet sum brukes](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) i emnet [Utsette kjøringen av XML-elementer i ER-formater](er-defer-xml-element.md), og lagre den genererte filen som **SampleXmlReport (1).xml**.
+    2. Fullfør fremgangsmåten i delen [Utsett kjøringen av XML-elementet Sammendrag slik at beregnet sum brukes](er-defer-xml-element.md#defer-the-execution-of-the-summary-xml-element-so-that-the-calculated-total-is-used) i artikkelen [Utsette kjøringen av XML-elementer i ER-formater](er-defer-xml-element.md), og lagre den genererte filen som **SampleXmlReport (1).xml**.
 
 4. Sammenlign de genererte filene i et verktøy for sammenligning av filer.
 

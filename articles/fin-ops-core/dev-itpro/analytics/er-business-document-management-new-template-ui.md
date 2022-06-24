@@ -1,6 +1,6 @@
 ---
 title: Brukergrensesnitt i Microsoft Office-stil i Forretningsdokumentbehandling (inneholder video)
-description: Dette emnet forklarer hvordan du bruker det nye brukergrensesnittet i funksjonen for administrasjon av forretningsdokument i ER-rammeverket (elektronisk rapportering).
+description: Denne artikkelen forklarer hvordan du bruker det nye brukergrensesnittet i funksjonen for administrasjon av forretningsdokument i ER-rammeverket (elektronisk rapportering).
 author: v-anamir
 ms.date: 01/05/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e33830e2147d92ad5ee53ad11da55a50613b8ef9
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: bcc464a17e27393c5904c59b8439de6ca000d57a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074747"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892232"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Brukergrensesnitt i Microsoft Office-stil i Forretningsdokumentbehandling
 
@@ -32,7 +32,7 @@ Det nye brukergrensesnittet (UI) er tydeligere og mer behagelig å bruke. Områd
 
 Du kan bruke knappen **Nytt dokument** i arbeidsområdet **Behandling av forretningsdokument** til å opprette og redigere en mal i en [ER (elektronisk rapportering)](general-electronic-reporting.md)-format[konfigurasjon](general-electronic-reporting.md#Configuration) som tilbys av en annen leverandør, og som er plassert i den gjeldende Finance-forekomsten, eller til å laste opp en ny mal fra en Excel-arbeidsbok. I versjon 10.0.25 og senere kan du også bruke knappen **Nytt dokument** til å opprette og redigere en mal i en ER-formatkonfigurasjon som er lagret i det [globale repositoriet](general-electronic-reporting.md#Repository).
 
-I eksemplene i dette emnet er den aktive leverandøren Contoso, og du bruker den til å opprette en mal som er basert på en mal som leveres av Microsoft. Du kan også opprette en mal ved å laste opp din egen mal i Excel-format.
+I eksemplene i denne artikkelen er den aktive leverandøren Contoso, og du bruker den til å opprette en mal som er basert på en mal som leveres av Microsoft. Du kan også opprette en mal ved å laste opp din egen mal i Excel-format.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 

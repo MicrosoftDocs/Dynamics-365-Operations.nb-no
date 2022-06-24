@@ -1,6 +1,6 @@
 ---
 title: TRIM ER-funksjon
-description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen TRIM
+description: Denne artikkelen gir generell informasjon om hvordan du bruker ER-funksjonen TRIM
 author: NickSelin
 ms.date: 02/28/2022
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 816f6d6623bb778c9186d294c9b67db7edddd671
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: deadf89641771efa864e701af9dad57c5e62ea37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367798"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864665"
 ---
 # <a name="trim-er-function"></a>TRIM ER-funksjon
 

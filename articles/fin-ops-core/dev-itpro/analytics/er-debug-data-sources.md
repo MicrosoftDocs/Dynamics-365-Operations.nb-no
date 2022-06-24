@@ -1,6 +1,6 @@
 ---
 title: Feilsøke datakilder for et utført ER-format for å analysere dataflyt og transformasjon
-description: Dette emnet beskriver hvordan du kan feilsøker datakildene i et utført ER-format for bedre forståelse av den konfigurerte dataflyten og transformasjonen.
+description: Denne artikkelen beskriver hvordan du kan feilsøker datakildene i et utført ER-format for bedre forståelse av den konfigurerte dataflyten og transformasjonen.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 6fca177093caf42ad27b58eaa97e3f6997289eeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323784"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884235"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Feilsøke datakilder for et utført ER-format for å analysere dataflyt og transformasjon
 
@@ -34,7 +34,7 @@ Noen ganger vil dataene i den genererte utskriften se annerledes ut enn de samme
 
 Hvis du vil aktivere funksjonen for feilsøking av datakilde, setter du alternativet **Aktiver datafeilsøking ved formatkjøring** til **Ja** i ER-brukerparameterne. Du kan deretter starte feilsøking av datakilde mens du kjører et ER-format for å generere utgående dokumenter. Du kan også bruke alternativet for **start feilsøking** for å starte feilsøking av datakilde for et ER-format som er konfigurert i [ER-operasjonsutforming](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-Dette emnet inneholder retningslinjer for hvordan du starter feilsøking av datakilder for utførte ER-formater. Den forklarer hvordan informasjonen kan hjelpe deg med å forstå dataflyten og datatransformeringene. Eksemplene i dette emnet bruker forretningsprosessen for behandling av leverandørbetalinger.
+Denne artikkelen inneholder retningslinjer for hvordan du starter feilsøking av datakilder for utførte ER-formater. Den forklarer hvordan informasjonen kan hjelpe deg med å forstå dataflyten og datatransformeringene. Eksemplene i denne artikkelen bruker forretningsprosessen for behandling av leverandørbetalinger.
 
 ## <a name="limitations"></a>Begrensninger
 
@@ -49,7 +49,7 @@ Følgende innstillinger for ER-formater er for øyeblikket ikke tilgjengelige fo
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-- Hvis du vil fullføre eksemplene i dette emnet, må du ha tilgang til følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
+- Hvis du vil fullføre eksemplene i denne artikkelen, må du ha tilgang til følgende [roller](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Utvikler av elektronisk rapportering
     - Funksjonell konsulent for elektronisk rapportering
@@ -57,12 +57,12 @@ Følgende innstillinger for ER-formater er for øyeblikket ikke tilgjengelige fo
 
 - Firmaet må settes til **DEMF**.
 
-- Følg trinnene i [tillegg 1](#appendix1) i dette emnet for å laste ned komponentene i Microsoft ER-løsningen som kreves for å behandle leverandørbetalinger.
-- Følg trinnene i [tillegg 2](#appendix2) i dette emnet for å klargjøre leverandører for leverandørbetalingsbehandling ved hjelp av ER-løsningen du vil laste ned.
+- Følg trinnene i [tillegg 1](#appendix1) i denne artikkelen for å laste ned komponentene i Microsoft ER-løsningen som kreves for å behandle leverandørbetalinger.
+- Følg trinnene i [tillegg 2](#appendix2) i denne artikkelen for å klargjøre leverandører for leverandørbetalingsbehandling ved hjelp av ER-løsningen du vil laste ned.
 
 ## <a name="process-a-vendor-payment-to-get-a-payment-file"></a>Behandle en leverandørbetaling for å hente en betalingsfil
 
-1. Følg trinnene i [tillegg 3](#appendix3) i dette emnet for å behandle leverandørbetalinger.
+1. Følg trinnene i [tillegg 3](#appendix3) i denne artikkelen for å behandle leverandørbetalinger.
 
     ![Leverandørbetalingsbehandling pågår.](./media/er-data-debugger-process-payment.png)
 
@@ -89,7 +89,7 @@ Følgende innstillinger for ER-formater er for øyeblikket ikke tilgjengelige fo
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Behandle en leverandørbetaling for feilsøking
 
-1. Følg trinnene i [tillegg 3](#appendix3) i dette emnet for å behandle leverandørbetalinger.
+1. Følg trinnene i [tillegg 3](#appendix3) i denne artikkelen for å behandle leverandørbetalinger.
 2. I meldingsboksen velger **Ja** for å bekrefte at du vil avbryte leverandørbetalingsbehandling og i stedet starte datakildefeilsøking på siden for **feilsøke datakilder**.
 
     ![Meldingsboks for bekreftelse.](./media/er-data-debugger-start-debugging.png)

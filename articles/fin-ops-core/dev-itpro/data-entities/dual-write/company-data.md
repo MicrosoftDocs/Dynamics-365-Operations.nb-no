@@ -1,6 +1,6 @@
 ---
-title: Bedriftskonsept i Dataverse
-description: Dette emnet beskriver integreringen av firmadata mellom Finance and Operations og Dataverse.
+title: Firmabegrep i Dataverse
+description: Denne artikkelen beskriver integreringen av firmadata mellom Økonomi og drift og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061032"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873185"
 ---
 # <a name="company-concept-in-dataverse"></a>Bedriftskonsept i Dataverse
 
@@ -49,7 +49,7 @@ På grunn av denne konfigurasjonen eies alle rader som er relatert til USMF-firm
 
 Som den foregående illustrasjonen viser, er denne 1:1-tilordningen mellom forretningsenhet, firma og team bare et utgangspunkt. I dette eksemplet opprettes en ny forretningsenhet for "Europa" manuelt i Dataverse som overordnet for både DEMF og ESMF. Denne nye rotforretningsenheten er ikke relatert til dobbel skriving. Den kan imidlertid brukes til å gi medlemmer av "EUR Sales"-gruppen tilgang til kontodata i både DEMF og ESMF ved å angi data synligheten til **overordnet/underordnet bu** i den tilknyttede sikkerhetsrollen.
 
-Et siste emne for å diskutere er hvordan dobbel skriving bestemmer hvilket eierteam det skal tildeles rader til. Denne virkemåten styres av kolonnen **Standard eiende team** i cdm\_Company-raden. Når en cdm\_Company-rad er aktivert for dobbel skriving, oppretter en plugin-modul automatisk den tilknyttede forretningsenheten og eiergruppen (hvis den ikke allerede finnes), og angir kolonnen **Standard eiende team**. Administratoren kan endre denne kolonnen til en annen verdi. Administratoren kan imidlertid ikke tømme kolonnen så lenge tabellen er aktivert for dobbel skriving.
+Et siste artikkelen for å diskutere er hvordan dobbel skriving bestemmer hvilket eierteam det skal tildeles rader til. Denne virkemåten styres av kolonnen **Standard eiende team** i cdm\_Company-raden. Når en cdm\_Company-rad er aktivert for dobbel skriving, oppretter en plugin-modul automatisk den tilknyttede forretningsenheten og eiergruppen (hvis den ikke allerede finnes), og angir kolonnen **Standard eiende team**. Administratoren kan endre denne kolonnen til en annen verdi. Administratoren kan imidlertid ikke tømme kolonnen så lenge tabellen er aktivert for dobbel skriving.
 
 > [!div class="mx-imgBorder"]
 ![Kolonnen Standard eiende team.](media/dual-write-default-owning-team.jpg)

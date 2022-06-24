@@ -1,6 +1,6 @@
 ---
 title: Konsoliderings- og elimineringsoversikt
-description: Dette emnet inneholder generell informasjon om konsoliderings- og elimineringsprosessen. Den inneholder svar på noen vanlige spørsmål.
+description: Denne artikkelen inneholder generell informasjon om konsoliderings- og elimineringsprosessen. Den inneholder svar på noen vanlige spørsmål.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670b238580ecf800686324fe664be747c551090d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: cd7647df49883f0e3b6cbb2d21b19ca2acb2f065
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871398"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konsoliderings- og elimineringsoversikt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder generell informasjon om konsoliderings- og elimineringsprosessen. Den inneholder svar på noen vanlige spørsmål.
+Denne artikkelen inneholder generell informasjon om konsoliderings- og elimineringsprosessen. Den inneholder svar på noen vanlige spørsmål.
 
 Når du konsoliderer data, kombineres de økonomiske resultatene fra flere datterselskaper til resultater for ett konsolidert firma. Datterselskaper kan bruke forskjellige versjoner eller systemer, de eies kanskje ikke fullstendig og de bruker kanskje forskjellige valutaer. Det finnes flere alternativer for å konsolidere data:
 

@@ -1,6 +1,6 @@
 ---
 title: Oversikt over utligning
-description: Dette emnet inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke transaksjonstyper som kan utlignes, og tidsberegningen og prosessen for å utligne dem. Den beskriver også resultatene av utligningsprosessen.
+description: Denne artikkelen inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke transaksjonstyper som kan utlignes, og tidsberegningen og prosessen for å utligne dem. Den beskriver også resultatene av utligningsprosessen.
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e1992019570129461f3ecdd5479a87bafd8aeacb
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a495a71a95032a0022cbab2783f356db48ee349d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724904"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887955"
 ---
 # <a name="settlement-overview"></a>Oversikt over utligning
 
@@ -30,7 +30,7 @@ ms.locfileid: "8724904"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Dette emnet inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke transaksjonstyper som kan utlignes, og tidsberegningen og prosessen for å utligne dem. Den beskriver også resultatene av utligningsprosessen.
+Denne artikkelen inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke transaksjonstyper som kan utlignes, og tidsberegningen og prosessen for å utligne dem. Den beskriver også resultatene av utligningsprosessen.
 
 Under utligning brukes transaksjonene fra ett dokument på transaksjonene på et annet dokument for å øke eller redusere saldoen for hvert dokument. En betaling kan for eksempel brukes på en faktura. Ulike transaksjonstyper kan utlignes, til forskjellige tider og via forskjellige metoder. Utligningsprosessen kan også generere nye transaksjoner.
 

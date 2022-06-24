@@ -1,6 +1,6 @@
 ---
 title: Endre et ER-formatet for å generere et egendefinert elektronisk dokument
-description: Dette emnet beskriver hvordan du justerer et Microsoft-levert format for elektronisk rapportering (ER) slik at det genererer et egendefinert elektronisk dokument.
+description: Denne artikkelen beskriver hvordan du justerer et Microsoft-levert format for elektronisk rapportering (ER) slik at det genererer et egendefinert elektronisk dokument.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14976aab474b6571c2a25907f04fd4d7ae053e74
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323823"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886798"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Endre et ER-formatet for å generere et egendefinert elektronisk dokument
 
 [!include[banner](../includes/banner.md)]
 
-Fremgangsmåtene i dette emnet forklarer hvordan en bruker i rollen systemansvarlig eller funksjonsrådgiver for elektronisk rapportering kan utføre disse oppgavene:
+Fremgangsmåtene i denne artikkelen forklarer hvordan en bruker i rollen systemansvarlig eller funksjonsrådgiver for elektronisk rapportering kan utføre disse oppgavene:
 
 - Konfigurere parametere for [rammeverket for elektronisk rapportering (ER)](general-electronic-reporting.md).
 - Importer ER-konfigurasjoner som leveres av Microsoft, og som brukes til å generere en betalingsfil mens en [leverandørbetaling](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) blir behandlet.

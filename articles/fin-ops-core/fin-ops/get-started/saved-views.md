@@ -1,6 +1,6 @@
 ---
 title: Lagrede visninger
-description: Dette emnet beskriver hvordan du bruker lagrede visninger-funksjonene.
+description: Denne artikkelen beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644794"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845420"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -196,7 +196,7 @@ Hvis du vil ha en liste over alle publiserte visninger for siden, er følgende s
 
 ## <a name="managing-views-globally"></a>Behandle visninger globalt
 
-Selv om enkelte administrasjonsfunksjoner vises på alle sidene, som angitt i dette emnet, kan **systemadministratorer** og **administratorer av lagrede visninger** behandle visninger mer holistisk for systemet via **Tilpasning**-siden. Denne siden har spesielt følgende inndelinger og funksjoner: 
+Selv om enkelte administrasjonsfunksjoner vises på alle sidene, som angitt i denne artikkelen, kan **systemadministratorer** og **administratorer av lagrede visninger** behandle visninger mer holistisk for systemet via **Tilpasning**-siden. Denne siden har spesielt følgende inndelinger og funksjoner: 
 
 - **Publiserte visninger** – i denne delen vises en liste over alle visninger som er publisert for organisasjonen. Herfra kan du publisere en visning på nytt etter at du har justert sikkerhetsrollene eller de juridiske enhetene som visningen målrettes mot. Du kan eksportere, slette eller oppheve publisering av disse visningene. Du kan bruke handlingen **Lagre som personlig** til å opprette en personlig kopi av en visning, slik at du kan oppdatere visningen eller få en bedre forståelse av innholdet. 
 - **Upubliserte visninger** – Denne delen viser en liste over alle organisasjonsvisningene i systemet som for tiden ikke er publisert. Disse visningene kommer som oftest inn i systemet ved hjelp av importfunksjonen. Du kan publisere, eksportere eller slette disse visningene. **Hurtigpublisering**-handlingen som ble lagt til i versjon 10.0.12, gjør det mulig at flere visninger fra denne inndelingen kan publiseres i én handling, ved hjelp av de eksisterende konfigurasjonene for sikkerhetsrolle og juridisk enhet. Du kan bruke handlingen **Lagre som personlig** til å opprette personlige kopier av disse visningene, slik at du kan få en bedre forståelse av innholdet i dem.

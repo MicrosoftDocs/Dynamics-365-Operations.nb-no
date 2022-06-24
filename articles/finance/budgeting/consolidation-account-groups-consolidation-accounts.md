@@ -1,6 +1,6 @@
 ---
-title: Konsolideringskontogrupper og flere konsolideringskontoer
-description: Dette emnet gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes.
+title: Konsolideringskontogrupper og en ekstra konsolideringskontoer
+description: Denne artikkelen gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5ca7a50fcac53f1636da15b2d7977174b087ac25
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 9e66190fe0bab24545bf19eba59facded63ee197
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711700"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882027"
 ---
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konsolideringskontogrupper og en ekstra konsolideringskontoer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes.
+Denne artikkelen gir informasjon om konsolideringskontogrupper og flere konsolideringskontoer, og forklarer hvordan de brukes.
 
 ## <a name="consolidation-account-groups"></a>Konsernkontogrupper
 

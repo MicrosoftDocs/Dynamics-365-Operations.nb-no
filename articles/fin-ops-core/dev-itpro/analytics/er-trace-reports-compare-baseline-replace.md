@@ -1,6 +1,6 @@
 ---
 title: Forbedre sporing av resultater av genererte ER-rapporter for å sammenligne med grunnlinjeverdier
-description: Dette emnet beskriver forbedringer i ER-grunnlinjefunksjonen i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019).
+description: Denne artikkelen beskriver forbedringer i ER-grunnlinjefunksjonen i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b6e8299dd57730486c731cd38578bd5ff6b8a1754f145432e300c1217c6dd640
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760756"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847408"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Forbedre sporing av resultater av genererte ER-rapporter for å sammenligne med grunnlinjeverdier
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet beskriver det første settet med forbedringer i grunnlinjefunksjonen i rammeverket for elektronisk rapportering (ER). Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019) og nyere.
+Denne artikkelen beskriver det første settet med forbedringer i grunnlinjefunksjonen i rammeverket for elektronisk rapportering (ER). Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019) og nyere.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatisere innstillingen for grunnlinjeregler
 
-Emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) forklarer hvordan du konfigurerer ER-rammeverket slik at det samler inn informasjon om ER-formatutførelser og evaluerer resultatene av disse utførelsene. Eksemplet i dette emnet viser trinnene som må fullføres.
+Artikkelen [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) forklarer hvordan du konfigurerer ER-rammeverket slik at det samler inn informasjon om ER-formatutførelser og evaluerer resultatene av disse utførelsene. Eksemplet i denne artikkelen viser trinnene som må fullføres.
 
 Her er noen av trinnene:
 
@@ -45,7 +45,7 @@ Her er noen av trinnene:
 
 ## <a name="example-automate-the-setting-of-baseline-rules"></a>Eksempel: Automatisere innstillingen for grunnlinjeregler
 
-For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinnene i eksemplet i emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) frem til delen «Legge til en ny grunnlinje for et utformet ER-format».
+For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinnene i eksemplet i artikkelen [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) frem til delen «Legge til en ny grunnlinje for et utformet ER-format».
 
 ### <a name="review-added-baseline"></a>Se gjennom tilføyd grunnlinje
 
@@ -80,7 +80,7 @@ Grunnlinjen er lagt til for det valgte formatet **Format for å lære ER-grunnli
 
 ### <a name="run-the-format"></a>Kjøre formatet
 
-Du er nå klar til å fullføre resten av trinnene i eksemplet i emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) ved å starte fra delen «Kjøre det utformede ER-formatet og se gjennom loggen for å analysere resultatene».
+Du er nå klar til å fullføre resten av trinnene i eksemplet i artikkelen [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md) ved å starte fra delen «Kjøre det utformede ER-formatet og se gjennom loggen for å analysere resultatene».
 
 > [!NOTE]
 > Når du sletter den automatisk tilføyde grunnlinjeregelen i hurtigfanen **Grunnlinjer**, blir ikke vedlegget som det refereres til, slettet automatisk.
@@ -91,7 +91,7 @@ Når et ER-format er utformet slik at det inneholder informasjon som endres når
 
 ## <a name="example-configure-the-baseline-so-that-it-ignores-constantly-changing-parts-of-the-er-output"></a>Eksempel: Konfigurere grunnlinjen slik at den ignorerer deler av ER-utdataene som er i stadig endring
 
-For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinnene i eksemplet i emnet [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md).
+For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinnene i eksemplet i artikkelen [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md).
 
 ### <a name="modify-a-configured-er-format"></a>Endre et konfigurert ER-format
 
@@ -142,7 +142,7 @@ Den valgte ER-formatkomponenten er lagt til i listen over komponenter i hurtigfa
 
 ### <a name="make-a-new-baseline-rule"></a>Lage en ny grunnlinjeregel
 
-Følg trinnene i delen «Eksempel: Automatisere innstillingen for grunnlinjeregler» tidligere i dette emnet. En varsling advarer deg om at den utgående filen er generert ved hjelp av grunnlinjeinnstillinger, og at det har oppstått en tvungen erstatning av formatbindingene.
+Følg trinnene i delen «Eksempel: Automatisere innstillingen for grunnlinjeregler» tidligere i denne artikkelen. En varsling advarer deg om at den utgående filen er generert ved hjelp av grunnlinjeinnstillinger, og at det har oppstått en tvungen erstatning av formatbindingene.
 
 ![Varsling om Konfigurasjoner-siden.](media/GER-BaselineSample-FormatRunToMakeBaselineFile4.PNG "Skjermbilde av varslingen på Konfigurasjoner-siden")
 

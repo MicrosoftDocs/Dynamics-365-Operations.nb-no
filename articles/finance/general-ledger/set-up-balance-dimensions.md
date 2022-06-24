@@ -1,6 +1,6 @@
 ---
 title: Hvordan konfigurerer jeg balansering av finansdimensjoner?
-description: Dette emnet beskriver alternativene for å konfigurere og bruke funksjonen for balansering av finansdimensjon.
+description: Denne artikkelen beskriver alternativene for å konfigurere og bruke funksjonen for balansering av finansdimensjon.
 author: kweekley
 ms.date: 08/25/2021
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-08-17
 ms.dyn365.ops.version: 10.0.210
-ms.openlocfilehash: cb3033a615200a358c1b28b0991bae4b84470ae0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: dd859629b0eb9f14fa4907699613382f3897d21d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720118"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878019"
 ---
 # <a name="how-do-i-set-up-balancing-financial-dimensions"></a>Hvordan konfigurerer jeg balansering av finansdimensjoner?
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver alternativene for å konfigurere og bruke funksjonen for balansering av finansdimensjon.
+Denne artikkelen beskriver alternativene for å konfigurere og bruke funksjonen for balansering av finansdimensjon.
 
 ## <a name="symptom"></a>Symptom
 
-Det finnes to alternativer for å konfigurere balansering av finansdimensjoner. Det første alternativet er å bruke feltet **Saldofinansdimensjon** på **Finans**-oppsett-siden (**Økonomimodul \> Finansoppsett \> Finans**). Det andre alternativet er å bruke feltet **Krev at dimensjonen balanseres** på siden **Finansdimensjoner** (**Økonomimodul > Kontoplan \> Dimensjoner \> Finansdimensjoner**). Dette emnet forklarer forskjellen mellom disse to alternativene.
+Det finnes to alternativer for å konfigurere balansering av finansdimensjoner. Det første alternativet er å bruke feltet **Saldofinansdimensjon** på **Finans**-oppsett-siden (**Økonomimodul \> Finansoppsett \> Finans**). Det andre alternativet er å bruke feltet **Krev at dimensjonen balanseres** på siden **Finansdimensjoner** (**Økonomimodul > Kontoplan \> Dimensjoner \> Finansdimensjoner**). Denne artikkelen forklarer forskjellen mellom disse to alternativene.
 
-## <a name="resolution"></a>Løsning
+## <a name="resolution"></a>Oppløsning
 
 Organisasjoner bruker vanligvis balansedimensjoner til å generere en balanse som er i balanse på finansdimensjonsnivå. Hvis du aktiverer en av disse funksjonene, blir ikke posterte, ubalanserte dimensjoner balansert. Du må først angi justeringsoppføringer manuelt for å sette balansen i balanse før du aktiverer noen av funksjonene.
 

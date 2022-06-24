@@ -1,6 +1,6 @@
 ---
 title: Mobilt arbeidsområde for mitt team
-description: Dette emnet inneholder informasjon om i det mobile arbeidsområdet Mitt team, hvor ledere kan se sine direkte underordnede og utvidede stab.
+description: Denne artikkelen inneholder informasjon om i det mobile arbeidsområdet Mitt team, hvor ledere kan se sine direkte underordnede og utvidede stab.
 author: ShielaSogge
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: f15ac24e5c32a42863cac8a9c9754c95aa4ff734
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811064"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868705"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilt arbeidsområde for mitt team
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emnet gir informasjon om det mobile arbeidsområdet **Mitt team**. I dette arbeidsområdet kan ledere vise sine direkte underordnede og utvidede stab. De kan også sende ros til personer i rapporteringskjeden sin.
+Denne artikkelen gir informasjon om det mobile arbeidsområdet **Mitt team**. I dette arbeidsområdet kan ledere vise sine direkte underordnede og utvidede stab. De kan også sende ros til personer i rapporteringskjeden sin.
 
 Dette mobile arbeidsområdet er ment å brukes sammen med Finance and Operations-mobilappen.
 

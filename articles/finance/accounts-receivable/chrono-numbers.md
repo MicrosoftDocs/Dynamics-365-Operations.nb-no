@@ -1,6 +1,6 @@
 ---
 title: Nummerere dokumenter og bilag kronologisk
-description: Dette emnet beskriver hvordan du definerer og bruker kronologiske tall for dokumenter og tilknyttede bilag.
+description: Denne artikkelen beskriver hvordan du definerer og bruker kronologiske tall for dokumenter og tilknyttede bilag.
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0ce1afdbd31a78611e6b51dd93f7159d684c97cb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 6baf307406982e8f72acc0d02f047dbc7c63a5ed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692680"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876390"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Nummerere dokumenter og bilag kronologisk
 
 [!include [banner](../includes/banner.md)]
 
 
-I noen land er det et juridisk krav om å nummerere dokumenter og tilknyttede bilag i kronologisk rekkefølge. Kronologien må støttes av perioder. Alle numrene som tilhører tidligere perioder, må være mindre enn numrene som tilhører senere perioder. For å oppfylle dette kravet er kronologisk nummereringsfunksjonalitet implementert. Dette emnet beskriver hvordan du konfigurerer og bruker kronologiske tall for dokumenter og tilknyttede bilag.
+I noen land er det et juridisk krav om å nummerere dokumenter og tilknyttede bilag i kronologisk rekkefølge. Kronologien må støttes av perioder. Alle numrene som tilhører tidligere perioder, må være mindre enn numrene som tilhører senere perioder. For å oppfylle dette kravet er kronologisk nummereringsfunksjonalitet implementert. Denne artikkelen beskriver hvordan du konfigurerer og bruker kronologiske tall for dokumenter og tilknyttede bilag.
 
 ## <a name="prerequisites"></a>Forutsetninger
 

@@ -1,6 +1,6 @@
 ---
 title: Lagerytelse-innhold for Power BI
-description: Dette emnet beskriver hva som er inkludert i Lagerytelse-innhold for Power BI.
+description: Denne artikkelen beskriver hva som er inkludert i Lagerytelse-innhold for Power BI.
 author: Mirzaab
 ms.date: 12/18/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: db56d1bd26f27987f00126ac1a6434cf36691fbf594cab3dd1260ed5251480a9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d43cef4970cdf180d0db39086220def56b08f280
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750556"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851929"
 ---
 # <a name="warehouse-performance-power-bi-content"></a>Lagerytelse-innhold for Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet for **Lagerytelse**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+leverandørsamarbeidsfakturering beskriver hva som er inkludert i **Lagerytelse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="overview"></a>Oversikt
 

@@ -1,6 +1,6 @@
 ---
 title: Opprette regler for optimaliseringsrådgiver
-description: Dette emnet beskriver hvordan du legger til nye regler i optimaliseringsrådgiver.
+description: Denne artikkelen beskriver hvordan du legger til nye regler i optimaliseringsrådgiver.
 author: roxanadiaconu
 ms.date: 02/04/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a65a71da066d70cafc641aafe21538830a9ebe56b607316570ea2435398cda1c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1b1d9b14cb67b1dd0a961f6f8618de37147a2c52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734670"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850912"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Opprette regler for optimaliseringsrådgiver
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du oppretter nye regler for **optimaliseringsrådgiver**. Du kan for eksempel opprette en ny regel som identifiserer tilbudsforespørselssakene som har en tom tittel. Bruk av titler på saker gjør dem lett å kjenne igjen og søkbare. Dette eksemplet som er ganske enkelt, viser hva som kan oppnås med optimaliseringsregler. 
+Denne artikkelen forklarer hvordan du oppretter nye regler for **optimaliseringsrådgiver**. Du kan for eksempel opprette en ny regel som identifiserer tilbudsforespørselssakene som har en tom tittel. Bruk av titler på saker gjør dem lett å kjenne igjen og søkbare. Dette eksemplet som er ganske enkelt, viser hva som kan oppnås med optimaliseringsregler. 
 
 En *regel* er en sjekk av programdata. Hvis betingelsen som denne regelen evaluerer, er oppfylt, opprettes salgsmuligheter for å optimalisere prosesser eller forbedre data. Salgsmulighetene kan brukes, og eventuelt virkningen av handlingene kan måles. 
 

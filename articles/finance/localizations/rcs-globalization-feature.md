@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Services (RCS) – globaliseringsfunksjoner
-description: Dette emnet forklarer hvordan du bruker Microsoft RCS (Regulatory Configuration Services) og det globale repositoriet for å opprette og bruke globaliseringstjenester.
+description: Denne artikkelen forklarer hvordan du bruker Microsoft RCS (Regulatory Configuration Services) og det globale repositoriet for å opprette og bruke globaliseringstjenester.
 author: JaneA07
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: e8df8a56d493e58f28699a87dd9dab1f87540a4ee327450384f89e6d426ba1a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf08f25f7d092e0f93284a4019096378543adb9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760637"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888901"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – globaliseringsfunksjoner
 
@@ -40,7 +40,7 @@ Før du fullfører prosedyrene, må du fullføre trinnene som gjelder for følge
 - Åpne en RCS-forekomst.
 - Opprette og aktivere en konfigurasjonsleverandør. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-I Finance and Operations-appforekomster følger du denne fremgangsmåten.
+Følg trinnene i økonomi- og driftsappforekomsten.
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 2. Hvis et RCS-miljø ikke er klargjort for firmaet ditt, velger du **Regulatory Services – Konfigurasjon**, og deretter følger du instruksjonene for å klargjøre et miljø.
@@ -64,7 +64,7 @@ Hvis du vil bruke en globaliseringsfunksjon, må du først importere den fra det
 
 ## <a name="access-globalization-features"></a>Få tilgang til globaliseringsfunksjoner
 
-1. Kontroller at **Globaliseringsfunksjoner** er aktivert i Funksjonsbehandling, som beskrevet tidligere i dette emnet.
+1. Kontroller at **Globaliseringsfunksjoner** er aktivert i Funksjonsbehandling, som beskrevet tidligere i denne artikkelen.
 2. Åpne det nye arbeidsområdet for **Globaliseringsfunksjoner**, gå til **Funksjoner** og velg flisen **E-fakturering**.
 
     ![Arbeidsområde for globale funksjoner.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -161,7 +161,7 @@ Følgende handlinger er tilgjengelige for konfigurasjoner:
 - **Vis** – Vis de underliggende funksjonskonfigurasjonene som ikke krever noen oppdatering.
 - **Rediger** – Opprett en utkastversjon av en valgt konfigurasjon slik at du kan redigere formatet eller formattilordningen i Formatutforming-programmet.
 - **Slett** – Slett en valgt konfigurasjon fra funksjonen.
-- **Rebaser** – baser funksjonen på nytt. Hvis du vil ha mer informasjon, kan du se [Rebasere avledede globaliseringsfunksjoner](#rebase)-delen senere i dette emnet.
+- **Rebaser** – baser funksjonen på nytt. Hvis du vil ha mer informasjon, kan du se [Rebasere avledede globaliseringsfunksjoner](#rebase)-delen senere i denne artikkelen.
 
 ### <a name="setups"></a>Oppsett
 
@@ -182,7 +182,7 @@ Følgende handlinger er tilgjengelige for konfigurasjon av funksjoner:
 
 Følgende handlinger er tilgjengelige for miljøer:
 
-- **Aktiver** – for en valgt funksjonsversjon velger du et publisert miljø, og velger en **Gyldig fra**-dato når den skal være tilgjengelig. Hvis du vil ha mer informasjon, kan du se [Konfigurere miljøer for aktivering](#configureenvironment)-delen senere i dette emnet.
+- **Aktiver** – for en valgt funksjonsversjon velger du et publisert miljø, og velger en **Gyldig fra**-dato når den skal være tilgjengelig. Hvis du vil ha mer informasjon, kan du se [Konfigurere miljøer for aktivering](#configureenvironment)-delen senere i denne artikkelen.
 - **Avbryt** – Fjern et miljø for et funksjonsoppsett.
 
 ### <a name="organizations"></a>Organisasjoner

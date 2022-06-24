@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Organisasjonsopplæring
-description: Dette emnet beskriver Finance and Operations – Organisasjonsopplæringsinnhold for Power BI.
+description: Denne artikkelen beskriver Økonomi og drift - Organisasjonsopplæringsinnhold for Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cd48c12ea3ea31904c437f678888a51e5381cfcfbeef0e1c709858b0c6cb857d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba332fc0c241969cbe0c25e7985101a2bbe12be4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763554"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892428"
 ---
 # <a name="organizational-training-power-bi-content"></a>Power BI-innholdet Organisasjonsopplæring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Finance and Operations – Organisasjonsopplæringsinnhold for Power BI.
+Denne artikkelen beskriver Økonomi og drift - Organisasjonsopplæringsinnhold for Power BI.
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som er inkludert i innholdspakken
 Når du har knyttet innholdspakken til dataene dine, viser rapportene organisasjonens data. Hvis du aldri har brukt Microsoft Power BI før, kan du finne ut mer på siden [Guided Learning for Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som er inkludert i innholdspakken, har både diagrammer og tabeller som inneholder tilleggsinformasjon. Tabellen nedenfor beskriver rapportene.

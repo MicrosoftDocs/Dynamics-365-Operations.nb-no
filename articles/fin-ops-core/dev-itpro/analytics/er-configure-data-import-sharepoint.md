@@ -1,6 +1,6 @@
 ---
 title: Konfigurere dataimport fra SharePoint
-description: Dette emnet forklarer hvordan du importerer data fra Microsoft SharePoint.
+description: Denne artikkelen forklarer hvordan du importerer data fra Microsoft SharePoint.
 author: NickSelin
 ms.date: 01/05/2022
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 0163ece2f61735073567b32a45d3dc6df8be1864
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074772"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864785"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Konfigurere dataimport fra SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-Hvis du vil importere data fra en innkommende fil ved hjelp av Elektronisk rapportering-rammeverket (ER), må du konfigurere et ER-format som støtter importen, og deretter kjøre en modelltilordning av typen **Til målet** som bruker dette formatet som datakilde. Hvis du vil importere data, må du navigere til filen som du vil importere. Den innkommende filen kan velges manuelt av brukeren. Med den nye ER-muligheten som støtter import av data fra Microsoft SharePoint, kan denne prosessen konfigureres som uovervåket. Du kan bruke ER-konfigurasjoner til å utføre dataimport fra filer som er lagret i Microsoft SharePoint-mappene. Dette emnet forklarer hvordan du fullfører importen fra SharePoint. Eksemplene bruker leverandørtransaksjoner som forretningsdata.
+Hvis du vil importere data fra en innkommende fil ved hjelp av Elektronisk rapportering-rammeverket (ER), må du konfigurere et ER-format som støtter importen, og deretter kjøre en modelltilordning av typen **Til målet** som bruker dette formatet som datakilde. Hvis du vil importere data, må du navigere til filen som du vil importere. Den innkommende filen kan velges manuelt av brukeren. Med den nye ER-muligheten som støtter import av data fra Microsoft SharePoint, kan denne prosessen konfigureres som uovervåket. Du kan bruke ER-konfigurasjoner til å utføre dataimport fra filer som er lagret i Microsoft SharePoint-mappene. Denne artikkelen forklarer hvordan du fullfører importen fra SharePoint. Eksemplene bruker leverandørtransaksjoner som forretningsdata.
 
 ## <a name="prerequisites"></a>Forutsetninger
-Hvis du vil fullføre eksemplene i dette emnet, må du ha følgende tilgang:
+Hvis du vil fullføre eksemplene i denne artikkelen, må du ha følgende tilgang:
 
 - Tilgang for én av følgende roller:
 

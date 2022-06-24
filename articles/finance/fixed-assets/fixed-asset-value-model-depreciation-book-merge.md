@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e9d937211c049b2ec4ac06ac6eddce7fd9bcb5b0
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: f4f06b7916fb2eeed802b2dce95edfce448dcd97
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880852"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer.
+Denne artikkelen beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer.
 
-Med tablåfunksjonalitet kan du bruke ett enkelt sett med sider, forespørsler og rapporter for alle organisasjonens anleggsmiddelprosesser. Tabellen i dette emnet beskriver den tidligere funksjonaliteten for avskrivningstablåer og verdimodeller, sammen med den gjeldende funksjonaliteten for tablåer.
+Med tablåfunksjonalitet kan du bruke ett enkelt sett med sider, forespørsler og rapporter for alle organisasjonens anleggsmiddelprosesser. Tabellen i denne artikkelen beskriver den tidligere funksjonaliteten for avskrivningstablåer og verdimodeller, sammen med den gjeldende funksjonaliteten for tablåer.
 
 ## <a name="setup"></a>Installasjon
 Som standard posterer tablåer både i økonomimodulen (Finans) og underfinansjournalen for anleggsmiddel. Tablåer har et nytt alternativ, **Poster i økonomimodul**, som lar deg deaktivere postering i økonomimodulen og postere bare til underfinansjournal for anleggsmiddel. Denne funksjonen ligner tidligere posteringsvirkemåte for avskrivningstablåer. Journalnavnoppsettet har et nytt posteringslag som heter Ingen. Dette posteringslaget ble lagt til spesifikt for anleggsmiddeltransaksjoner. Hvis du vil postere transaksjoner for tablåer som ikke poster til økonomimodulen, må du bruke et journalnavn med posteringslaget satt til **Ingen**.

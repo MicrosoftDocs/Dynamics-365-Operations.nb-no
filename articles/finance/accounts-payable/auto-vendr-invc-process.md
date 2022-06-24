@@ -1,6 +1,6 @@
 ---
 title: Oversikt over automatiserte prosesser for leverandørfakturering
-description: Dette emnet beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess.
+description: Denne artikkelen beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess.
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: d2c629ed2d064a3350ec8ffe53940098d12ab0b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358437"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883452"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Oversikt over automatiserte prosesser for leverandørfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess. Denne funksjonen består av funksjoner som er aktivert i Funksjonsbehandling. Disse funksjonene gjelder bare leverandørfakturaer, ikke for fakturaer som behandles ved hjelp av siden **Fakturajournal** eller **Ankomstregistreringsjournal**.
+Denne artikkelen beskriver muligheten til å automatisere behandling av leverandørfakturering og fordelene ved å bruke en automatisert prosess. Denne funksjonen består av funksjoner som er aktivert i Funksjonsbehandling. Disse funksjonene gjelder bare leverandørfakturaer, ikke for fakturaer som behandles ved hjelp av siden **Fakturajournal** eller **Ankomstregistreringsjournal**.
 
 Organisasjoner arbeider ofte med tredjeparter for å behandle papirfakturaer ved hjelp av tjenesteleverandør for optisk tegngjenkjenning (OCR). Tjenesteleverandøren returnerer maskinlesbare fakturametadata. Hvis du vil ha hjelp med automatisering, kan du bruke disse artefaktene fra leverandører i funksjonene for leverandørautomatisering.
 

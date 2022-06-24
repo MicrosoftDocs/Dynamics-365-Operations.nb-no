@@ -1,6 +1,6 @@
 ---
 title: Registrere leier i utenlandsk valuta
-description: Dette emnet forklarer hvordan leieavtaler i andre valutaer enn regnskaps- eller rapporteringsvalutaen skal registreres.
+description: Denne artikkelen forklarer hvordan leieavtaler i andre valutaer enn regnskaps- eller rapporteringsvalutaen skal registreres.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7da4ddb5939d4f950eb7f8c39a9c56edb2ec4db9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 56c15e648d6aa515192a6f41ba06df6405ca79f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727517"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878109"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Registrere leier i utenlandsk valuta
 
 [!include [banner](../includes/banner.md)]
 
-Aktivaleiekontoer for leieavtaler i andre valutaer enn regnskapsvalutaen eller rapporteringsvalutaen, fastsettes på siden **Finansoppsett**. Alle leieavtaler skal angis i transaksjonsvalutaen. De bør med andre ord angis i valutaen som er angitt i leiekontrakten. Dette emnet forklarer hvordan leieavtaler i andre valutaer enn regnskaps- eller rapporteringsvalutaen skal registreres.
+Aktivaleiekontoer for leieavtaler i andre valutaer enn regnskapsvalutaen eller rapporteringsvalutaen, fastsettes på siden **Finansoppsett**. Alle leieavtaler skal angis i transaksjonsvalutaen. De bør med andre ord angis i valutaen som er angitt i leiekontrakten. Denne artikkelen forklarer hvordan leieavtaler i andre valutaer enn regnskaps- eller rapporteringsvalutaen skal registreres.
 
 Hvis du angir en leieavtale i en utenlandsk valuta, avskrives bruksrettseiendelen i både regnskapsvalutaen og rapporteringsvalutaen. Disse valutaene er konfigurert på **Finansoppsett**-siden. Denne virkemåten brukes også i Anleggsmidler. Når du oppretter en leieavtale i en utenlandsk valuta, velger du transaksjonsvalutaen i **Valuta**-feltet.
 

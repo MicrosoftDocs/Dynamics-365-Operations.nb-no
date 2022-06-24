@@ -1,6 +1,6 @@
 ---
 title: Rekrutteringsforespørselsutdanning
-description: Dette emnet beskriver Rekrutteringsforespørselsutdannelses-enheten for Dynamics 365 Human Resources.
+description: Denne artikkelen beskriver Rekrutteringsforespørselsutdannelses-enheten for Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9fe1a99debac3dc784ba82b711143337d4077be0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: bcdb5e2cc61ce551af21401ea34d8e85bc21fc6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893852"
 ---
 # <a name="recruiting-request-education"></a>Rekrutteringsforespørselsutdanning
 
@@ -27,7 +27,7 @@ ms.locfileid: "8067132"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver Rekrutteringsforespørselsutdannelses-enheten for Dynamics 365 Human Resources.
+Denne artikkelen beskriver Rekrutteringsforespørselsutdannelses-enheten for Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmrecruitingrequesteducationentity
 

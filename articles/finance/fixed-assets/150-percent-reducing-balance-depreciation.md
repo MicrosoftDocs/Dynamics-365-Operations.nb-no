@@ -1,6 +1,6 @@
 ---
 title: 150 prosent saldoavskrivning
-description: Dette emnet gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
+description: Denne artikkelen gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 744461fe372cc1c048fe20599ff7b078d19c0f53
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f3bccb9d64851901d43b55887bb66c9b1b4e5a70
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870227"
 ---
 # <a name="150-percent-reducing-balance-depreciation"></a>150 prosent saldoavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
+Denne artikkelen gir en oversikt over avskrivningsmetoden 150 prosent saldoavskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmiddel og velger verdien **150 % saldoverdi** i **Metode**-feltet på **Avskrivningsprofiler**-siden, avskrives anleggsmidler som er tildelt avskrivningsprofilen, med den samme prosenten i hver avskrivningsperiode. Denne prosenten beregnes på grunnlag av anleggsmidlets levetid. Hvis anleggsmidlet for eksempel har en levetid på fem år, beregnes prosenten som 30 prosent (150 % ÷ 5). 
 
@@ -41,7 +41,7 @@ Standardverdien er **Kalender**. Valget ditt fastsetter alternativene som er til
 
 Du kan beholde standardverdien i **Avskrivningsår**-feltet, **Kalender**. 
 
-**Kalender**-alternativet oppdaterer avskrivningsgrunnlag 1. januar hvert år. Avskrivningsgrunnlaget er vanligvis netto bokført verdi minus svinnverdien. I eksemplene senere i dette emnet er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. 
+**Kalender**-alternativet oppdaterer avskrivningsgrunnlag 1. januar hvert år. Avskrivningsgrunnlaget er vanligvis netto bokført verdi minus svinnverdien. I eksemplene senere i denne artikkelen er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. 
 
 Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
 

@@ -1,6 +1,6 @@
 ---
 title: Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
-description: Dette emnet beskriver hvordan du tilpasser det Microsoft-leverte formatet for elektronisk rapportering (ER) som brukes til å generere et egendefinert elektronisk dokument.
+description: Denne artikkelen beskriver hvordan du tilpasser det Microsoft-leverte formatet for elektronisk rapportering (ER) som brukes til å generere et egendefinert elektronisk dokument.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661665"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854705"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 
@@ -32,9 +32,9 @@ Med det [elektroniske rapporteringsrammeverket (ER)](general-electronic-reportin
 
 ## <a name="overview"></a>Oversikt
 
-I dette emnet må du for eksempel angi et føderalt skattenummer som et nytt egendefinert attributt for hver kunde du fakturerer elektronisk. Derfor må du tilpasse strukturen til fakturaen som brukes, ved å legge til en ny vare som må fylles ut av mva-koden i hver e-faktura som genereres.
+I denne artikkelen må du for eksempel angi et føderalt skattenummer som et nytt egendefinert attributt for hver kunde du fakturerer elektronisk. Derfor må du tilpasse strukturen til fakturaen som brukes, ved å legge til en ny vare som må fylles ut av mva-koden i hver e-faktura som genereres.
 
-Fremgangsmåtene i dette emnet forklarer hvordan en bruker i rollen systemansvarlig, utvikler av elektronisk rapportering eller funksjonsrådgiver for elektronisk rapportering kan utføre disse oppgavene i Finance-forekomsten:
+Fremgangsmåtene i denne artikkelen forklarer hvordan en bruker i rollen systemansvarlig, utvikler av elektronisk rapportering eller funksjonsrådgiver for elektronisk rapportering kan utføre disse oppgavene i Finance-forekomsten:
 
 - [Konfigurer minimumssettet med ER-parametere som kreves for å begynne å bruke ER-rammeverket](#ConfigureER).
 - [Importer de opprinnelige versjonene av standard ER-konfigurasjonene som leveres for å generere e-fakturaer](#ImportERConfigurations1).

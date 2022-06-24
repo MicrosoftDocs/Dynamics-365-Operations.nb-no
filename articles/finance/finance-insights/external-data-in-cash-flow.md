@@ -1,6 +1,6 @@
 ---
 title: Eksterne data i kontantstrømprognoser
-description: Dette emnet beskriver oppsettrinnene som må fullføres, slik at eksterne data kan registreres eller importeres i kontantstrømprognoser.
+description: Denne artikkelen beskriver oppsettrinnene som må fullføres, slik at eksterne data kan registreres eller importeres i kontantstrømprognoser.
 author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f7fac80b7ad0fde273fbd33aa5df146e569be46e
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f0cb05770dc2fbd4e13af261b5f0a0e117a2f6d7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713733"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846980"
 ---
 # <a name="external-data-in-cash-flow-forecasts"></a>Eksterne data i kontantstrømprognoser
 
 [!include [banner](../includes/banner.md)]
 
-Eksterne data kan registreres eller importeres til kontantstrømprognoser. Dette emnet beskriver oppsettrinnene som gjelder spesielt for bruk av eksterne data, og som gjør det mulig å inkludere de eksterne dataene i en kontantstrømprognose.
+Eksterne data kan registreres eller importeres til kontantstrømprognoser. Denne artikkelen beskriver oppsettrinnene som gjelder spesielt for bruk av eksterne data, og som gjør det mulig å inkludere de eksterne dataene i en kontantstrømprognose.
 
 ## <a name="external-data-setup"></a>Oppsett av eksterne data
 

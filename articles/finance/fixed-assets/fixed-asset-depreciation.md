@@ -1,6 +1,6 @@
 ---
 title: Avskrivning av anleggsmidler
-description: Dette emnet gir en oversikt over avskrivning for Anleggsmidler.
+description: Denne artikkelen gir en oversikt over avskrivning for anleggsmidler.
 author: moaamer
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b4fedee481b4066c81671cf1fca3781c8c75aaeb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890986"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874530"
 ---
 # <a name="fixed-asset-depreciation"></a>Avskrivning av anleggsmidler
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet gir en oversikt over avskrivning for Anleggsmidler.
+Denne artikkelen gir en oversikt over avskrivning for anleggsmidler.
 
 Avskrivning er en periodisk transaksjon som vanligvis reduserer verdien til anleggsmidlene i balansen, og kostnadsføres som en utgift i en resultatkonto. Derfor brukes vanligvis en hovedkonto til å kreditere den periodiske avskrivningen i balansen. En motkonto er en konto i resultatdelen av kontoplanen.
 

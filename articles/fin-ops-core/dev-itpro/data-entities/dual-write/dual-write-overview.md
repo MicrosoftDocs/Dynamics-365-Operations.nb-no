@@ -1,6 +1,6 @@
 ---
 title: Oversikt over dobbel skriving
-description: Dette emnet gir en oversikt over dobbel skriving, som er en integrert infrastruktur som gir interaksjon med minimal forsinkelse mellom Customer Engagement-apper og Finance and Operations-apper.
+description: Denne artikkelen gir en oversikt over dobbel skriving, som er en integrert infrastruktur som gir interaksjon med minimal forsinkelse mellom Customer Engagement-apper og Økonomi og drift-apper.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f39322a0c2ef50ef2bbeb256c80096e0687c4642
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2ef4fb1a51bd92db440841eb2a9d9ebcce0e1b1d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872947"
 ---
 # <a name="dual-write-overview"></a>Oversikt over dobbel skriving
 

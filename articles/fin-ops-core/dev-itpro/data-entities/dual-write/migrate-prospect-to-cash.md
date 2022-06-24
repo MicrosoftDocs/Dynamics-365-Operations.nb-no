@@ -1,6 +1,6 @@
 ---
-title: Overføre data for Kundeemne til kontanter fra Dataintegrator til dobbel skriving
-description: Dette emnet beskriver hvordan du overfører data for Kundeemne til kontanter fra Dataintegrator til dobbel skriving.
+title: Overfør kundeemne til kontantdata fra dataintegrator til dobbel skriving
+description: Denne artikkelen beskriver hvordan du overfører data for Kundeemne til kontanter fra Dataintegrator til dobbel skriving.
 author: RamaKrishnamoorthy
 ms.date: 02/01/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 82bfb768b0ecac04184f4b806527346d39584d64
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087274"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894273"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Overfør kundeemne til kontantdata fra dataintegrator til dobbel skriving
 
 [!include [banner](../../includes/banner.md)]
 
-Løsningen Kundeemne til kontanter som er tilgjengelig for dataintegratoren, er ikke kompatibel med dobbel skriving. Årsaken til dette er msdynce_AccountNumber-indeksen i kontotabellen som kom som en del av løsningen Kundeemne til kontanter. Hvis denne indeksen finnes, kan du ikke opprette det samme kundekontonummeret i to forskjellige juridiske enheter. Du kan enten velge å starte på nytt med dobbel skriving ved å migrere Kundeemne til kontanter-dataene fra dataintegratoren til dobbel skriving, eller du kan installere den siste "dorman"-versjonen av løsningen Kundeemne til kontanter. Begge disse tilnærmingene dekkes i dette emnet.
+Løsningen Kundeemne til kontanter som er tilgjengelig for dataintegratoren, er ikke kompatibel med dobbel skriving. Årsaken til dette er msdynce_AccountNumber-indeksen i kontotabellen som kom som en del av løsningen Kundeemne til kontanter. Hvis denne indeksen finnes, kan du ikke opprette det samme kundekontonummeret i to forskjellige juridiske enheter. Du kan enten velge å starte på nytt med dobbel skriving ved å migrere Kundeemne til kontanter-dataene fra dataintegratoren til dobbel skriving, eller du kan installere den siste "dorman"-versjonen av løsningen Kundeemne til kontanter. Begge disse tilnærmingene dekkes i denne artikkelen.
 
 ## <a name="install-the-last-dorman-version-of-the-data-integrator-prospect-to-cash-solution"></a>Installer siste "dorman"-versjon av løsningen Kundeemne til kontanter for dataintegratoren
 
@@ -50,7 +50,7 @@ Følg fremgangsmåten nedenfor for å overføre dataene for Kundeemne til kontan
 5. Opprett en tilkobling med dobbel skriving mellom økonomi- og driftsappen og Customer Engagement-appen for én eller flere juridiske enheter.
 6. Aktiver dobbel skriving-tabelltilordninger, og kjør den innledende synkroniseringen for de nødvendige referansedataene. (Hvis du vil ha mer informasjon, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).) Eksempler på nødvendige data omfatter kundegrupper, betalingsbetingelser og betalingsplaner. Ikke aktiver dobbel skriving-tilordninger for tabeller som krever initialisering, for eksempel tabeller for konto, tilbud, tilbudslinje, ordre og ordrelinje.
 7. I kundeengasjementsappen går du til **Avanserte innstillinger \> Systeminnstillinger \> Databehandling \> Duplikatregistreringsregler** og deaktiverer alle reglene.
-8. Initialiser tabellene som vises i trinn 2. Hvis du vil ha instruksjoner, kan du se de gjenstående delene i dette emnet.
+8. Initialiser tabellene som vises i trinn 2. Hvis du vil ha instruksjoner, kan du se de gjenstående delene i denne artikkelen.
 9. Åpne økonomi- og driftsappen og aktiver tabelltilordningene, for eksempel tabelltilordningene for konto, tilbud, tilbudslinje, ordre og ordrelinje. Kjør deretter den innledende synkroniseringen. (Hvis du vil ha mer informasjon, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).) Denne prosessen synkroniserer tilleggsinformasjon fra økonomi- og driftsappen, for eksempel behandlingsstatus, forsendelses- og faktureringsadresser, områder og lagre.
 
 ## <a name="account-table"></a>Kontotabell
@@ -98,7 +98,7 @@ Siden data fra **Produkter**-tabellen er utformet for å flyte én vei, fra øko
 
 ## <a name="quote-and-quote-product-tables"></a>Tabellene Tilbud og Tilbudsprodukt
 
-Når det gjelder **Tilbud**-tabellen, følger du instruksjonene i [Ordre-tabellen](#order-table) tidligere i dette emnet. Når det gjelder **Tilbudsprodukt**-tabellen, følger du instruksjonene i [Bestill produkter-tabellen](#order-products-table) tidligere i dette emnet.
+Når det gjelder **Tilbud**-tabellen, følger du instruksjonene i [Ordre-tabellen](#order-table) tidligere i denne artikkelen. Når det gjelder **Tilbudsprodukt**-tabellen, følger du instruksjonene i [Bestill produkter-tabellen](#order-products-table) tidligere i dette emnet.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

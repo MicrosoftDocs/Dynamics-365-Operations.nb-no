@@ -1,6 +1,6 @@
 ---
 title: Utsette kjøringen av XML-elementer i ER-formater
-description: Dette emnet forklarer hvordan du kan utsette kjøringen av et XML-element i et elektronisk rapporteringsformat (ER).
+description: Denne artikkelen forklarer hvordan du kan utsette kjøringen av et XML-element i et elektronisk rapporteringsformat (ER).
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b804e840b98321ee9e509ea483b360ec42d12880
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 074b14cbb018a8e34b99124b8aaec3a5bdb30be2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861852"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Utsette kjøringen av XML-elementer i ER-formater
 
@@ -32,7 +32,7 @@ Du kan bruke operasjonsutformingen i rammeverket for [Elektronisk rapportering (
 
 Ved å aktivere <a name="DeferredXmlElementExecution"></a>**Utsatt kjøring**-alternativet for et XML-element i det konfigurerte formatet kan du utsette (skyve frem i tid) kjøringen av dette elementet. I dette tilfellet kjøres ikke elementet før alle andre elementer i det overordnede utvalget er kjørt.
 
-Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emnet.
+Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i denne artikkelen.
 
 ## <a name="limitations"></a>Begrensninger
 
@@ -55,7 +55,7 @@ For å fullføre dette eksempelet må du ha tilgang til **USMF**-selskapet i Fin
 - Funksjonell konsulent for elektronisk rapportering
 - Systemansvarlig
 
-Hvis du enda ikke har utført eksempelet i emnet [Utsette kjøringen av sekvenselementer i ER-formater](er-defer-sequence-element.md#Example), laster du ned følgende [konfigurasjoner](general-electronic-reporting.md#Configuration) av ER-eksempelløsningen.
+Hvis du enda ikke har utført eksempelet i artikkelen [Utsette kjøringen av sekvenselementer i ER-formater](er-defer-sequence-element.md#Example), laster du ned følgende [konfigurasjoner](general-electronic-reporting.md#Configuration) av ER-eksempelløsningen.
 
 | Innholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
@@ -95,7 +95,7 @@ Før du begynner, må du også laste ned og lagre følgende konfigurasjon av ER-
 ### <a name="activate-a-configuration-provider"></a>Aktivere en konfigurasjonsleverandør
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. På **Lokaliseringskonfigurasjoner**-siden i **Konfigurasjonsleverandører**-delen må du sørge for at [konfigurasjonsleverandør](general-electronic-reporting.md#Provider) for eksempelselskapet Litware, Inc. (`http://www.litware.com`) er oppført, og at den er merket som aktiv. Hvis denne konfigurasjonsleverandøren ikke er oppført, eller hvis den ikke er merket som aktiv, følger du trinnene i emnet [Opprette en konfigurasjonsleverandør og merke den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. På **Lokaliseringskonfigurasjoner**-siden i **Konfigurasjonsleverandører**-delen må du sørge for at [konfigurasjonsleverandør](general-electronic-reporting.md#Provider) for eksempelselskapet Litware, Inc. (`http://www.litware.com`) er oppført, og at den er merket som aktiv. Hvis denne konfigurasjonsleverandøren ikke er oppført, eller hvis den ikke er merket som aktiv, følger du trinnene i artikkelen [Opprette en konfigurasjonsleverandør og merke den som aktiv](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Eksempelselskapet Litware, Inc. på Lokaliseringskonfigurasjoner-siden.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 

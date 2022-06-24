@@ -1,6 +1,6 @@
 ---
 title: Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer
-description: Dette emnet inneholder informasjon om hvordan du bruker funksjonen ytelsessporing i elektronisk rapportering (ER) for å feilsøke ytelsesproblemer.
+description: Denne artikkelen inneholder informasjon om hvordan du bruker funksjonen ytelsessporing i elektronisk rapportering (ER) for å feilsøke ytelsesproblemer.
 author: NickSelin
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 10eddf2f60db914e6451840d4d7aedb9dce7108874ea3ff45f375b85a55a694f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724399"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851958"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore utførelse av ER-formater for å feilsøke ytelsesproblemer
 
@@ -305,27 +305,27 @@ Det kan også være nyttig å redusere antall kall som gjøres til datakilden fo
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importere den endrede ER-modelltilordningskonfigurasjonen fra RCS til programmet
 
-Gjenta trinnene i delen [Importere en ER-konfigurasjon fra RCS til Finance and Operations](#import-configuration) tidligere i dette emnet for å importere versjon 1.2 av konfigurasjonen **Ytelsessporingstilordning**.
+Gjenta trinnene i delen [Importere en ER-konfigurasjon fra RCS til Økonomi og drift](#import-configuration) tidligere i denne artikkelen for å importere versjon 1.2 av konfigurasjonen **Ytelsessporingstilordning**.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Kjøre den endrede ER-løsningen for å spore kjøring
 
 ### <a name="run-the-er-format"></a>Kjøre ER-formatet
 
-Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet for å generere en ny ytelsessporing.
+Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i denne artikkelen for å generere en ny ytelsessporing.
 
 ## <a name="work-with-the-execution-trace"></a>Arbeide med utføringsporingen
 
 ### <a name="export-the-generated-trace-from-the-application"></a>Eksportere den genererte sporingen fra programmet
 
-Gjenta trinnene i delen [Eksportere den genererte sporingen fra programmet](#export-trace) tidligere i dette emnet for å lagre en ny ytelsessporing lokalt.
+Gjenta trinnene i delen [Eksportere den genererte sporingen fra programmet](#export-trace) tidligere i denne artikkelen for å lagre en ny ytelsessporing lokalt.
 
 ### <a name="import-the-generated-trace-into-rcs"></a>Importere den genererte sporingen til RCS
 
-Gjenta trinnene i delen [Importere den genererte sporingen til RCS](#import-trace) tidligere i dette emnet for å importere den nye ytelsessporingen til RCS.
+Gjenta trinnene i delen [Importere den genererte sporingen til RCS](#import-trace) tidligere i denne artikkelen for å importere den nye ytelsessporingen til RCS.
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--model-mapping"></a>Bruke ytelsessporing for analyse i RCS – modelltilordning
 
-Gjenta trinnene i delen [Bruke ytelsessporing for analyse i RCS – modelltilordning](#use-trace) tidligere i dette emnet for å analysere den siste ytelsessporingen.
+Gjenta trinnene i delen [Bruke ytelsessporing for analyse i RCS – modelltilordning](#use-trace) tidligere i denne artikkelen for å analysere den siste ytelsessporingen.
 
 Legg merke til at justeringene du har gjort i modelltilordningen, har eliminert duplikate spørringer til databasen. Antall kall til databasetabeller og datakilder for denne modelltilordningen er også redusert. Derfor har ytelsen til hele ER-løsningen blitt forbedret.
 
@@ -355,7 +355,7 @@ Hvis du bruker en av disse versjonene, kan du analysere detaljene for genererte 
 
 ### <a name="run-the-er-format"></a>Kjøre ER-formatet
 
-Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet for å generere en ny ytelsessporing.
+Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i denne artikkelen for å generere en ny ytelsessporing.
 
 Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inneholder ytelsessporingen i PerfView-format. Du kan deretter bruke verktøyet for PerfView-ytelsesanalyse til å analysere detaljene i ER-formatkjøringen.
 
@@ -379,7 +379,7 @@ På grunn av forbedringer i ER-rammeverket gir ytelsessporingen som genereres i 
 
 ### <a name="run-the-er-format"></a>Kjøre ER-formatet
 
-Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet for å generere en ny ytelsessporing.
+Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i denne artikkelen for å generere en ny ytelsessporing.
 
 Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inneholder ytelsessporingen i PerfView-format. Du kan deretter bruke verktøyet for PerfView-ytelsesanalyse til å analysere detaljene i ER-formatkjøringen. Denne sporingen inneholder nå detaljene for tilgang til SQL-database under utførelsen av ER-formatet.
 

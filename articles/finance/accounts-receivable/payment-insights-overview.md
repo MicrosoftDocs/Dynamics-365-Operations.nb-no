@@ -1,6 +1,6 @@
 ---
 title: Innsikt i kundebetaling (forhåndsvisning)
-description: Dette emnet beskriver funksjonene for betalingsinnsikt som hjelper deg med å forstå de vanlige betalingspraksisene til en kunde. Funksjonen kan også hjelpe til med å identifisere omstendigheter som fører til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
+description: Denne artikkelen beskriver funksjonene for betalingsinnsikt som hjelper deg med å forstå de vanlige betalingspraksisene til en kunde. Funksjonen kan også hjelpe til med å identifisere omstendigheter som fører til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
 ms.topic: overview
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 59613e41eed95c248595be006f13fb2f32854728
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 54655d2b1cfb4b11f32842d4c3cff2f4d8e97ef5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713225"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856806"
 ---
 # <a name="customer-payment-insights-preview"></a>Innsikt i kundebetaling (forhåndsvisning)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjonene for betalingsinnsikt som hjelper deg med å forstå de vanlige betalingspraksisene til en kunde. Funksjonen kan også hjelpe til med å identifisere omstendigheter som fører til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem. 
+Denne artikkelen beskriver funksjonene for betalingsinnsikt som hjelper deg med å forstå de vanlige betalingspraksisene til en kunde. Funksjonen kan også hjelpe til med å identifisere omstendigheter som fører til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem. 
 
 ## <a name="overview"></a>Oversikt
 

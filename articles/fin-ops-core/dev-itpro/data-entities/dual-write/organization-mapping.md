@@ -1,6 +1,6 @@
 ---
 title: Organisasjonshierarki i Dataverse
-description: Dette emnet beskriver integreringen av organisasjonsdata mellom Finance and Operations-apper og Dataverse.
+description: Denne artikkelen beskriver integreringen av organisasjonsdata mellom Økonomi og drift-apper og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: a4edaf5b9c50e9d8781ff703328ac786d71ee782
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358370"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884739"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisasjonshierarki i Dataverse
 
