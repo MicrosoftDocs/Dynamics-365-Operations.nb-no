@@ -1,6 +1,6 @@
 ---
 title: Justere leieavtaler
-description: Emnet beskriver hvordan du justerer en leieavtale. Det kan hende at justering kreves hvis leievilkårene endres, leieavtalen utvides eller andre omstendigheter endres.
+description: Denne artikkelen beskriver hvordan du justerer en leieavtale. Det kan hende at justering kreves hvis leievilkårene endres, leieavtalen utvides eller andre omstendigheter endres.
 author: moaamer
 ms.date: 03/18/2022
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 89ec876c9bd967107635eb2955209a4dcb95cde5
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 48d1a261a43d6e3a68dfc0aae6f06c0d7d6b82db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712181"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898334"
 ---
 # <a name="adjust-leases"></a>Justere leieavtaler
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Emnet beskriver hvordan du justerer en leieavtale. Det kan hende at justering kreves hvis leievilkårene endres, leieavtalen utvides eller andre omstendigheter endres. Aktivaleie følger retningslinjene som Accounting Standards Codification-emne 842 (ASC 842) og International Financial Reporting Standard 16 (IFRS 16) gir om leieavtaleendringer. ASC 842-20-15-1 definerer en leieavtaleendring som enhver endring i vilkårene og betingelsene for en kontrakt som forårsaker endring i omfanget av, eller betalingen for, en leieavtale. Avsnitt 39 i IFRS 16 angir at en leier må revaluere leieforpliktelsen, slik at den gjenspeiler endringer i leiebetalingene.
+Denne artikkelen beskriver hvordan du justerer en leieavtale. Det kan hende at justering kreves hvis leievilkårene endres, leieavtalen utvides eller andre omstendigheter endres. Aktivaleie følger retningslinjene som Accounting Standards Codification-emne 842 (ASC 842) og International Financial Reporting Standard 16 (IFRS 16) gir om leieavtaleendringer. ASC 842-20-15-1 definerer en leieavtaleendring som enhver endring i vilkårene og betingelsene for en kontrakt som forårsaker endring i omfanget av, eller betalingen for, en leieavtale. Avsnitt 39 i IFRS 16 angir at en leier må revaluere leieforpliktelsen, slik at den gjenspeiler endringer i leiebetalingene.
 
 Når det gjelder organisasjoner som følger ASC 842 eller IFRS 16, måles en leieavtale på nytt for å gjenspeile en endring i den gjeldende verdien til de fremtidige minimumsleiebetalingene (PVFMLP). Hvis PVFMLP øker, blir journaloppføringen som opprettes, en debitering for aktivakontoen for bruksrettseiendelen og en kreditering for leieforpliktelsskontoen for differansen mellom den nye PVFMLP og den forrige PVFMLP. Hvis PVFMLP reduseres, vil journaloppføringen være en debitering for leieforpliktelseskontoen og en kreditering for bruksrettseiendelskontoen for differansen.
 

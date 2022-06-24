@@ -1,6 +1,6 @@
 ---
 title: Justere resultater for AI-ML-basert produktanbefaling
-description: Dette emnet beskriver hvordan du skreddersyr produktanbefalingsresultater basert på kunstig intelligens-maskinopplæring (AI-ML) til virksomheten.
+description: Denne artikkelen beskriver hvordan du skreddersyr produktanbefalingsresultater basert på kunstig intelligens-maskinopplæring (AI-ML) til virksomheten.
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5374b2ce559134bd26036b06ac6d96a9f5510ab847544707fc9885506aaab547
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d74fa013d44e0f113bdf0ce0ca9efeb943926e9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901708"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Justere resultater for AI-ML-basert produktanbefaling
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du justerer produktanbefalingsresultater basert på kunstig intelligens-maskinopplæring (AI-ML) til virksomheten. 
+Denne artikkelen beskriver hvordan du justerer produktanbefalingsresultater basert på kunstig intelligens-maskinopplæring (AI-ML) til virksomheten. 
 
 Når produktanbefalinger er aktivert, vil standardinnstillingene tre i kraft. Disse parameterne vil fungere for mange behov. Det er best å planlegge å bruke litt tid på å vurdere om resultatene passer til salgsbevegelsen til produktene. Vi foreslår å evaluere resultatene i noen dager før du endrer parameterne etter behov, før ny testing. 
 

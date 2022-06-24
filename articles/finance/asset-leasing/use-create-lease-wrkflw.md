@@ -1,6 +1,6 @@
 ---
 title: Bruke arbeidsflyter for godkjenning av leie
-description: Dette emnet forklarer hvordan du bruker arbeidsflyter til å godkjenne leie av aktiva, og hvordan du sporer status og historikk for arbeidsflyter.
+description: Denne artikkelen forklarer hvordan du bruker arbeidsflyter til å godkjenne leie av aktiva, og hvordan du sporer status og historikk for arbeidsflyter.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0b35dfa599895cb39cdd6a0a95fdcdcc54c45044
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 4205b83919f0b3c30a4b5d8e3290af230f538f39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906449"
 ---
 # <a name="use-lease-approval-workflows"></a>Bruke arbeidsflyter for godkjenning av leie
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du bruker arbeidsflyter til å godkjenne leie av aktiva, og hvordan du sporer status og historikk for arbeidsflyter. Arbeidsflyter bidrar konsekvens i administrasjon av leiegodkjenninger ved å gi et standardsett med godkjenningstrinn og tilordne bestemte brukere som godkjenner hvert trinn i prosessen. En godkjenner kan godkjenne en leieavtale, avvise den, be om en endring eller tilordne den til en annen bruker for godkjenning. Arbeidsflyter kan også gi mer innsyn i godkjenningsprosessen ved å la deg spore status og logg. I tillegg kan du vise en sentralisert arbeidsliste som viser oppgaver og godkjenninger som er tilordnet bestemte godkjennere.
+Denne artikkelen forklarer hvordan du bruker arbeidsflyter til å godkjenne leie av aktiva, og hvordan du sporer status og historikk for arbeidsflyter. Arbeidsflyter bidrar konsekvens i administrasjon av leiegodkjenninger ved å gi et standardsett med godkjenningstrinn og tilordne bestemte brukere som godkjenner hvert trinn i prosessen. En godkjenner kan godkjenne en leieavtale, avvise den, be om en endring eller tilordne den til en annen bruker for godkjenning. Arbeidsflyter kan også gi mer innsyn i godkjenningsprosessen ved å la deg spore status og logg. I tillegg kan du vise en sentralisert arbeidsliste som viser oppgaver og godkjenninger som er tilordnet bestemte godkjennere.
 
 Før du bruker denne fremgangsmåten må du kontrollere at det er opprettet minst én arbeidsflyt for leiegodkjenning. Hvis det ikke finnes noen arbeidsflyt, oppretter du en. Hvis du vil ha informasjon om hvordan du konfigurerer en arbeidsflyt, kan du se [Konfigurere arbeidsflyter for godkjenning av leie](set-up-lease-wrkflw.md).
 

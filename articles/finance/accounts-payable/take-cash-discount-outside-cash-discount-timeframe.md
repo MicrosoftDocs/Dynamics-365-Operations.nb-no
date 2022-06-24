@@ -1,6 +1,6 @@
 ---
 title: Bruke en kontantrabatt utenfor kontantrabattperioden
-description: Dette emnet inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
+description: Denne artikkelen inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daafa71dcbe46302fd7b9e8ab068d98e4925fc04
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 0b2d88b7f03a13e0e8229d7b45367f6da17390fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716586"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879718"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Bruke en kontantrabatt utenfor kontantrabattperioden
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
+Denne artikkelen inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
 
 28. juni opprettes en faktura på 2 000,00 for leverandøren 3052. Fakturaen har en kontantrabatt på 1 prosent hvis fakturaen betales innen 14 dager.
 

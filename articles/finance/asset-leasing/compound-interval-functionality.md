@@ -1,6 +1,6 @@
 ---
 title: Funksjon for sammensetningsintervall
-description: Dette emnet inneholder informasjon som hjelper deg å velge mellom månedlige, kvartalsvise og årlige sammensetningsintervaller.
+description: Denne artikkelen inneholder informasjon som hjelper deg å velge mellom månedlige, kvartalsvise og årlige sammensetningsintervaller.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d1b8af3d5f8f6a6812fe309f57f682d0c5023d00
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 2de5f1e9d52de41388298031a03fbc487a1b1cde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8886430"
 ---
-# <a name="compounding-interval-functionality"></a>Funksjonalitet for sammensetningsintervall
+# <a name="compounding-interval-functionality"></a>Funksjon for sammensetningsintervall
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet inneholder informasjon som hjelper deg å velge mellom månedlige, kvartalsvise og årlige sammensetningsintervaller. Funksjonen for sammensetningsintervall brukes til å bestemme antallet sammensetningsperioder per år i betalingsplanen for en leieavtale. Hvert av de fire eksemplene i dette emnet viser hvordan betalingsplanen for en leieavtale ser ut for et annet intervall.
+Denne artikkelen inneholder informasjon som hjelper deg å velge mellom månedlige, kvartalsvise og årlige sammensetningsintervaller. Funksjonen for sammensetningsintervall brukes til å bestemme antallet sammensetningsperioder per år i betalingsplanen for en leieavtale. Hvert av de fire eksemplene i denne artikkelen viser hvordan betalingsplanen for en leieavtale ser ut for et annet intervall.
 
 Du kan ikke velge et sammensetningsintervall med en lavere frekvens enn betalingsfrekvensen i leieavtalen. Et kvartalsvis sammensetningsintervall kan for eksempel ikke brukes med en månedlig betalingsfrekvens, og et årlig sammensetningsintervall kan ikke brukes med en halvårlig betalingsfrekvens. Hvis du prøver å velge et sammensetningsintervall med en lavere frekvens enn betalingsfrekvensen i leieavtalen, får du en feilmelding.
 
 > [!NOTE]
-> I alle fire eksempler i dette emnet samsvarer sammensetningsintervallet med betalingsfrekvensen.
+> I alle fire eksempler i denne artikkelen samsvarer sammensetningsintervallet med betalingsfrekvensen.
 
 ## <a name="examples"></a>Eksempler
 

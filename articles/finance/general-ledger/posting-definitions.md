@@ -1,6 +1,6 @@
 ---
 title: Posteringsdefinisjoner
-description: Dette emnet inneholder informasjon om posteringsdefinisjoner og hvordan du definerer og kobler dem. Når det gjelder støttede posteringstyper og dokumenter, kan du bruke posteringsdefinisjoner i stedet for posteringsprofiler til å klassifisere hovedkontoer og finansdimensjoner i regnskapsoppføringer.
+description: Denne artikkelen inneholder informasjon om posteringsdefinisjoner og hvordan du definerer og kobler dem. Når det gjelder støttede posteringstyper og dokumenter, kan du bruke posteringsdefinisjoner i stedet for posteringsprofiler til å klassifisere hovedkontoer og finansdimensjoner i regnskapsoppføringer.
 author: kweekley
 ms.date: 09/03/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 056300768aa0bc5e1981e1d43de03fabba21a5fa
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f60506e039623ae7a97f6b4e835f751da15ac0c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722017"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898156"
 ---
 # <a name="posting-definitions"></a>Posteringsdefinisjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om posteringsdefinisjoner og hvordan du definerer og kobler dem.
+Denne artikkelen inneholder informasjon om posteringsdefinisjoner og hvordan du definerer og kobler dem.
 Når det gjelder støttede posteringstyper og dokumenter, kan du bruke posteringsdefinisjoner i stedet for posteringsprofiler til å klassifisere hovedkontoer og finansdimensjoner i regnskapsoppføringer. Du kan vise de støttede dokumentene og posteringstypene på siden **Definisjoner for transaksjonspostering**. 
 
 Hvis du vil begynne å bruke posteringsdefinisjoner, velger du alternativet **Bruk posteringsdefinisjoner** på **Økonomiparametere**-siden. Selv når du bruker posteringsdefinisjoner, må du definere posteringsprofiler for de opprinnelige oppføringene og posteringstyper og dokumenter som ikke støttes. 

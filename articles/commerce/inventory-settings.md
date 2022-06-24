@@ -1,6 +1,6 @@
 ---
-title: Ta i bruk innstillinger for beholdning
-description: Dette emnet dekker beholdningsinnstillinger og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
+title: Bruk lagerinnstillinger
+description: Denne artikkelen dekker beholdningsinnstillinger og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 10/15/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: df1d1283a7692336906550169bc77104a9118779
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909563"
 ---
-# <a name="apply-inventory-settings"></a>Bruke lagerinnstillinger
+# <a name="apply-inventory-settings"></a>Bruk lagerinnstillinger
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker beholdningsinnstillinger og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker beholdningsinnstillinger og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
 
 Beholdningsinnstillinger angir om beholdningen skal kontrolleres før produkter legges til i handlekurven. De definerer også beholdningsrelaterte varemeldinger som for eksempel "På lager" og "Bare noen få igjen." Disse innstillingene sikrer at et produkt ikke kan kjøpes hvis det ikke er på lager.
 

@@ -1,6 +1,6 @@
 ---
 title: Sentraliserte betalinger for Leverandører
-description: Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Dette emnet inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
+description: Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df0d2178d1ebd3dcb154e2c4f7821a4007da55d4
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 5478a2ac61fb7304bc617f3d2614e68cda6154de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "8331748"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903456"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Sentraliserte betalinger for Leverandører
 
 [!include [banner](../includes/banner.md)]
 
-Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Dette emnet inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
+Organisasjoner som omfatter flere juridiske enheter, kan opprette og administrere betalinger ved hjelp av én juridisk enhet som håndterer alle betalinger. Derfor trenger ikke de samme betalingene angis i flere juridiske enheter. Denne artikkelen inneholder eksempler som viser hvordan postering for sentralisert betaling skal håndteres i ulike scenarier.
 
 Det finnes mange juridiske enheter for operasjoner i en sentralisert betalingsorganisasjon, og hver juridiske enhet administrerer sine egne leverandørfakturaer. Betalinger for alle de operative juridiske enhetene genereres fra en juridisk enhet, som kalles den juridiske enheten for betalingen. Under utligningsprosessen genereres de aktuelle "skal betales til"- og "skal betales fra"-transaksjonene. Du kan angi hvilken juridisk enhet i organisasjonen som skal motta de realiserte gevinst- eller tapstransaksjonene og hvordan kontantrabattransaksjoner i forbindelse med betalinger mellom firmaer skal håndteres. På linjen for sentralisert betaling settes **Kontotype** til Leverandør. **Motkontotype** settes til Bank eller Finans. Bankkontoen må være i gjeldende firma. 
 

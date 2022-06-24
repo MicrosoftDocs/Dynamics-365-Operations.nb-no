@@ -1,6 +1,6 @@
 ---
 title: Utforme konfigurasjoner for å generere dokumenter med programdata
-description: Dette emnet beskriver hvordan du utformer konfigurasjoner for elektronisk rapportering (ER) for å generere et elektronisk dokument. (Del 1 – importere konfigurasjoner).
+description: Denne artikkelen beskriver hvordan du utformer konfigurasjoner for elektronisk rapportering (ER) for å generere et elektronisk dokument. (Del 1 – importere konfigurasjoner).
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f335721ee97919af20e73fc9da6c9bf07dcae50aca8f8904d144d75c2f4d7b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a52ce08458868ae717c650d4b96754c297cd07a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900200"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Utforme konfigurasjoner for å generere dokumenter med programdata
 

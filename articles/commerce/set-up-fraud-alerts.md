@@ -1,6 +1,6 @@
 ---
 title: Definere og arbeide med telefonsentersvindelvarsler
-description: Dette emnet forklarer hvordan du definerer regler for å varsle kundeservicerepresentanter om potensiell falsk informasjon når ordrer behandles. Du kan definere spesifikke koder som brukes til å sette mistenkelige ordrer på vent automatisk eller manuelt.
+description: Denne artikkelen forklarer hvordan du definerer regler for å varsle kundeservicerepresentanter om potensiell falsk informasjon når ordrer behandles. Du kan definere spesifikke koder som brukes til å sette mistenkelige ordrer på vent automatisk eller manuelt.
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 212afd594453d3594fdaef9442a7809e4cafbd07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763674"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885354"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Definere og arbeide med telefonsentersvindelvarsler
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du definerer kriterier og regler for å sette potensielle svindelordrer på vent for videre gjennomgang. Svindelkontrollfunksjonen brukes til å fastslå gyldigheten av informasjonen i en salgsordre. Hvis informasjonen i salgsordren ser mistenkelig ut basert på organisasjonens svindelvilkår og -regler, kan ordren settes på vent for videre gjennomgang. I så fall frigis ikke ordren til lageret for videre behandling før sperringen er fjernet.
+Denne artikkelen beskriver hvordan du definerer kriterier og regler for å sette potensielle svindelordrer på vent for videre gjennomgang. Svindelkontrollfunksjonen brukes til å fastslå gyldigheten av informasjonen i en salgsordre. Hvis informasjonen i salgsordren ser mistenkelig ut basert på organisasjonens svindelvilkår og -regler, kan ordren settes på vent for videre gjennomgang. I så fall frigis ikke ordren til lageret for videre behandling før sperringen er fjernet.
 
 > [!NOTE]
 > Denne funksjonen kan bare brukes med salgsordrebehandling for Commerce-telefonsenterkanalen.

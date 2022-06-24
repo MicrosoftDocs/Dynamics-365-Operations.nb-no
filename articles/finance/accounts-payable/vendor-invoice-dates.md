@@ -1,6 +1,6 @@
 ---
 title: Datoer for leverandørfaktura
-description: Dette emnet beskriver datoene som vises på leverandørfakturaer. Det forklarer også hvordan du konfigurerer systemet slik at posteringsdatoen justeres automatisk.
+description: Denne artikkelen beskriver datoene som vises på leverandørfakturaer. Det forklarer også hvordan du konfigurerer systemet slik at posteringsdatoen justeres automatisk.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 943a84407d022c2c05bc534a35a2b5d44a94653e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876419"
 ---
 # <a name="vendor-invoice-dates"></a>Datoer for leverandørfaktura
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver datoene som vises på leverandørfakturaer. Det forklarer også hvordan du konfigurerer systemet slik at posteringsdatoen justeres automatisk.
+Denne artikkelen beskriver datoene som vises på leverandørfakturaer. Det forklarer også hvordan du konfigurerer systemet slik at posteringsdatoen justeres automatisk.
 
 På siden for **detaljer om ventende leverandørfakturaer** viser fakturahodet fire datoer: mottatt fakturadato, fakturadato, posteringsdato og forfallsdato. Når det opprettes en leverandørfaktura, angis følgende datoer som standard:
 
@@ -37,7 +37,7 @@ På siden for **detaljer om ventende leverandørfakturaer** viser fakturahodet f
 
 Noen ganger kan en leverandørfaktura være i ventende tilstand i lang tid etter at perioden er avsluttet. Når postering er klar, brukes den gamle posteringsdatoen for den tidligere posteringsperioden fremdeles. Perioden er imidlertid nå lukket. Derfor må en AP-ekspeditør manuelt endre alle posteringsdatoene til den nye posteringsperioden for alle ventende fakturaer som allerede er opprettet.
 
-Ved hjelp av funksjonen som beskrives i dette emnet, kan du konfigurere systemet slik at posteringsdatoen justeres automatisk i henhold til forretningskravene.
+Ved hjelp av funksjonen som beskrives i denne artikkelen, kan du konfigurere systemet slik at posteringsdatoen justeres automatisk i henhold til forretningskravene.
 
 ## <a name="parameter-for-automatically-adjusting-the-vendor-invoice-posting-date"></a>Parameter for automatisk justering av posteringsdato for leverandørfaktura
 

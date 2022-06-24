@@ -1,6 +1,6 @@
 ---
 title: Lineær levetidsavskrivning
-description: Dette emnet gir en oversikt over lineær levetidsavskrivning.
+description: Denne artikkelen gir en oversikt over avskrivningsmetoden lineær levetid.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d39bfea3f222d83d3b3d47e4ba931521b8e1aed0
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 8766d38958ccb17142132fb78d04368f1b73af71
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896470"
 ---
 # <a name="straight-line-service-life-depreciation"></a>Lineær levetidsavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over lineær levetidsavskrivning.
+Denne artikkelen gir en oversikt over avskrivningsmetoden lineær levetid.
 
 Når du definerer en avskrivningsprofil for anleggsmidler og velger Lineær levetid i feltet Metode på siden Avskrivningsprofiler, avskrives anleggsmidlene som har denne avskrivningsprofilen basert på den samlede levetiden til anleggsmiddelet. Dette er vanligvis det samme avskrivningsbeløpet i hver avskrivningsperiode. 
 
@@ -41,7 +41,7 @@ Du kan velge enten Kalender eller Regnskapsår i Avskrivningsår-feltet på side
 
 Hvis du velger Kalender, antas det at året er 1. januar til 31.desember, selv om du har definert den økonomiske kalenderen på en annen måte. 
 
-Alternativet Kalender oppdaterer avskrivningsgrunnlaget, som vanligvis er netto bokført verdi minus restverdi, 1. januar hvert år. I eksemplene senere i dette emnet er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. 
+Alternativet Kalender oppdaterer avskrivningsgrunnlaget, som vanligvis er netto bokført verdi minus restverdi, 1. januar hvert år. I eksemplene senere i denne artikkelen er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. 
 
 Hvis du velger Kalender, er følgende alternativer tilgjengelige i Periodefrekvens-feltet, som definerer posteringsdatoer for avskrivningsavsetning og beløp gjennom hele kalenderåret:
 - Årlig posterer et beløp 31. desember.

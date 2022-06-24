@@ -1,6 +1,6 @@
 ---
 title: Budsjettplanleggingsmaler for Excel
-description: Dette emnet beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
+description: Denne artikkelen beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
 author: panolte
 ms.date: 01/12/2018
 ms.topic: article
@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90691aec0ffad8d33a19a09e7bc521cd6d6a09a9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711983"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872506"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budsjettplanleggingsmaler for Excel
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
+Denne artikkelen beskriver hvordan du oppretter Microsoft Excel-maler som kan brukes med budsjettplaner.
 
-Dette emnet viser hvordan du oppretter Excel-maler som skal brukes med budsjettplaner ved hjelp av standard demodatasettet og Admin-brukerpålogging. Hvis du vil ha mer informasjon om budsjettplanlegging, kan du se [Oversikt over budsjettplanlegging.](budget-planning-overview-configuration.md). Du kan også følge opplæringen [Budsjettplanlegging](budget-plan.md) for å lære grunnleggende modulkonfigurasjon og -bruksprinsipper.
+Denne artikkelen viser hvordan du oppretter Excel-maler som skal brukes med budsjettplaner ved hjelp av standard demodatasettet og Admin-brukerpålogging. Hvis du vil ha mer informasjon om budsjettplanlegging, kan du se [Oversikt over budsjettplanlegging.](budget-planning-overview-configuration.md). Du kan også følge opplæringen [Budsjettplanlegging](budget-plan.md) for å lære grunnleggende modulkonfigurasjon og -bruksprinsipper.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Generer et regneark ved hjelp av oppsett for budsjettplandokument
 
-Budsjettplandokumenter kan vises og redigeres ved hjelp av ett eller flere oppsett. Hvert oppsett kan ha en tilknyttet dokumentmal for budsjettplan for å vise og redigere budsjettplandataene i et Excel-regneark. I dette emnet genereres en dokumentmal for budsjettplan ved hjelp av en eksisterende oppsettkonfigurasjon. 
+Budsjettplandokumenter kan vises og redigeres ved hjelp av ett eller flere oppsett. Hvert oppsett kan ha en tilknyttet dokumentmal for budsjettplan for å vise og redigere budsjettplandataene i et Excel-regneark. I denne artikkelen genereres en dokumentmal for budsjettplan ved hjelp av en eksisterende oppsettkonfigurasjon. 
 
 1. Åpne **listen over budsjettplaner** (**Budsjettering** &gt; **Budsjettplaner**). 
 2. Klikk **Ny** for å opprette et nytt budsjettplandokument. 

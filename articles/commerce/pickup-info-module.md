@@ -1,6 +1,6 @@
 ---
-title: Henteinformasjonsmodul
-description: Dette emnet dekker henteinformasjonsmodulen og beskriver hvordan du legger den til på utsjekkingssider i Microsoft Dynamics 365 Commerce.
+title: Modul for henteinformasjon
+description: Denne artikkelen dekker henteinformasjonsmodulen og beskriver hvordan du legger den til på utsjekkingssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad877a0c018093fe97f0aa8ac213357c0520a1c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764567"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892603"
 ---
-# <a name="pickup-information-module"></a>Hente informasjonsmodul
+# <a name="pickup-information-module"></a>Modul for henteinformasjon
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker henteinformasjonsmodulen og beskriver hvordan du legger den til på utsjekkingssider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker henteinformasjonsmodulen og beskriver hvordan du legger den til på utsjekkingssider i Microsoft Dynamics 365 Commerce.
 
 Henteinformasjonsmodulen kan brukes i en kassemodulen til å vise henteinformasjon for ordre. Kunder kan se tilgjengelige hentedatoer og -tidspunkter, og deretter velge en passende tid for å hente ordren. En kunde kan for eksempel velge å hente en ordre klokken 15:00 den 21. mars fra San Francisco-butikken.
 

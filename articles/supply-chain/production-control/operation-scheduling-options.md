@@ -1,6 +1,6 @@
 ---
 title: Alternativer for grovplanlegging
-description: Dette emnet beskriver alternativene for grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
+description: Denne artikkelen beskriver alternativene for grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb0ee3020c5cfd17e82282e8fddb8f9c6dcdfee
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d2f4d1e74855a0a8f73030c222c3f2fe27ce58a2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566749"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907268"
 ---
 # <a name="operations-scheduling-options"></a>Alternativer for grovplanlegging
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver alternativene for grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
+Denne artikkelen beskriver alternativene for grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
 
 Grovplanlegging beregner følgende informasjon for en produksjonsordre:
 

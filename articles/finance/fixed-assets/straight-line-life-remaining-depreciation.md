@@ -1,6 +1,6 @@
 ---
 title: Gjenstående lineær levetidsavskrivning
-description: Dette emnet gir en oversikt over lineær levetid gjenværende metode for avskrivning.
+description: Denne artikkelen gir en oversikt over lineær levetid gjenværende metode for avskrivning.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92941bc679835d38ba47464452315498a70ce2ee
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 185e1c101ffb6dfbd47348952d6dfc47ab137ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726704"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853445"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Gjenstående lineær levetidsavskrivning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over lineær levetid gjenværende metode for avskrivning.
+Denne artikkelen gir en oversikt over lineær levetid gjenværende metode for avskrivning.
 
 Når du definerer en avskrivningsprofil for anleggsmidler og velger **Lineær levetid som gjenstår** i feltet **Metode** på siden **Avskrivningsprofiler**, blir avskrivningen av anleggsmidler som er knyttet til avskrivningsprofilen, da basert på anleggsmiddelets gjenværende levetid. Avskrivningsbeløpet er vanligvis det samme i hver avskrivningsperiode. Hvis du vil definere avskrivning for gjenværende lineær levetid, må du også velge alternativer i feltet **Avskrivningsår** og feltet **Periodefrekvens** på siden **Avskrivningsprofiler**. Alternativene som er tilgjengelige i feltet **Periodefrekvens** feltet varierer, avhengig av verdien som er valgt i **Avskrivningsår**-feltet.
 
@@ -35,7 +35,7 @@ Du kan velge enten **Kalender** eller **Skattemessig** i **Avskrivningsår**-fel
 
 ### <a name="calendar"></a>Kalender
 
-Hvis du velger **Kalender** i feltet **_Avskrivningsår_*, antas det at året er 1. januar til og med 31. desember, selv om du har definert regnskapskalenderen på en annen måte. Alternativet _* Kalender** oppdaterer avskrivningsgrunnlaget 1. januar hvert år. Avskrivningsgrunnlaget er vanligvis netto bokført verdi minus restverdien. I eksemplet senere i dette emnet er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
+Hvis du velger **Kalender** i feltet **_Avskrivningsår_*, antas det at året er 1. januar til og med 31. desember, selv om du har definert regnskapskalenderen på en annen måte. Alternativet _* Kalender** oppdaterer avskrivningsgrunnlaget 1. januar hvert år. Avskrivningsgrunnlaget er vanligvis netto bokført verdi minus restverdien. I eksemplet senere i artikkelen er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
 
 - **Årlig** posterer et beløp 31. desember.
 - **Månedlig** posterer et månedlig beløp på slutten av hver kalendermåned.

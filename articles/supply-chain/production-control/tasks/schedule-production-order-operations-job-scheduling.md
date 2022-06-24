@@ -1,6 +1,6 @@
 ---
 title: Planlegge en produksjonsordre med operasjoner og finplanlegging
-description: Dette emnet fokuserer på å planlegge en produksjonsordre med grovplanlegging og finplanlegging.
+description: Denne artikkelen fokuserer på å planlegge en produksjonsordre med grovplanlegging og finplanlegging.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc91fe5aa398cd94e38beea017d6d60ecb44f17e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d82d5439e57c02ddc9db4222a946bd15f4ed67e4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574383"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903934"
 ---
 # <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Planlegge en produksjonsordre med operasjoner og finplanlegging
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet fokuserer på å planlegge en produksjonsordre med grovplanlegging og finplanlegging. Ingen jobber opprettes med grovplanlegging, mens jobber opprettes med finplanlegging. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne fremgangsmåten er ment for produksjonssjef, produksjonsplanlegger eller arbeidsleder som arbeider i et atskilt produksjonsmiljø.
+Denne artikkelen fokuserer på å planlegge en produksjonsordre med grovplanlegging og finplanlegging. Ingen jobber opprettes med grovplanlegging, mens jobber opprettes med finplanlegging. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne fremgangsmåten er ment for produksjonssjef, produksjonsplanlegger eller arbeidsleder som arbeider i et atskilt produksjonsmiljø.
 
 
 ## <a name="create-a-production-order"></a>Opprette en produksjonsordre

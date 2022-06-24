@@ -1,6 +1,6 @@
 ---
 title: Laste opp og betjene statiske filer
-description: Dette emnet beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
+description: Denne artikkelen beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
 author: StuHarg
 ms.date: 11/16/2020
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 389d33189644241dcf98da0c7f3b841e82a4430ac459dc8027284cecc299b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a1b14feba1466c3a5efc3b0ea66f20e9e818a8a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885328"
 ---
 # <a name="upload-and-serve-static-files"></a>Laste opp og betjene statiske filer
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
+Denne artikkelen beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
 
-Noen tredjepartskontakter krever at en fil blir lagret og betjent fra e-handelsområdet. Disse koblingene forventer at filen blir returnert ved forespørsler til en bestemt URL-bane for tilbakeringing og et filnavn. Dette emnet beskriver derfor hvordan du laster opp og betjener en statisk fil med en brukerdefinert URL-adresse og et filnavn på et Dynamics 365 Commerce-e-handelsområde.
+Noen tredjepartskontakter krever at en fil blir lagret og betjent fra e-handelsområdet. Disse koblingene forventer at filen blir returnert ved forespørsler til en bestemt URL-bane for tilbakeringing og et filnavn. Denne artikkelen beskriver derfor hvordan du laster opp og betjener en statisk fil med en brukerdefinert URL-adresse og et filnavn på et Dynamics 365 Commerce-e-handelsområde.
 
 ## <a name="create-a-site-url-that-returns-a-static-file"></a>Opprett en URL-adresse for område som returnerer en statisk fil
 
@@ -86,7 +86,7 @@ Når en URL-adresse er opprettet, kan ikke banen endres. Hvis du må endre URL-b
 
 Hvis du vil endre URL-banen, følger du denne fremgangsmåten.
 
-1. Hvis du vil opprette en ny URL-adresse og tilordne den til den eksisterende filen eller en annen ressurs, følger du instruksjonene i delen [Opprett en URL-adressen for område som returnerer en statisk fil](#create-a-site-url-that-returns-a-static-file) tidligere i dette emnet.
+1. Hvis du vil opprette en ny URL-adresse og tilordne den til den eksisterende filen eller en annen ressurs, følger du instruksjonene i delen [Opprett en URL-adressen for område som returnerer en statisk fil](#create-a-site-url-that-returns-a-static-file) tidligere i denne artikkelen.
 1. Velg den nye URL-adressen, og velg **Publiser** på kommandolinjen. Den nye URL-adressen publiseres.
 1. Hvis du vil oppheve publiseringen av den gamle URL-adressen, merker du den og velger **Opphev publisering** på kommandolinjen. Du kan nå slette den gamle URL-adressen hvis du vil det.
 

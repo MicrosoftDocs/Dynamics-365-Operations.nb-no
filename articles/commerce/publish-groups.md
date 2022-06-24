@@ -1,6 +1,6 @@
 ---
 title: Arbeide med publiseringsgrupper
-description: Dette emnet beskriver funksjonen for publiseringsgrupper i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver funksjonen for publiseringsgrupper i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76d447a5368cd5e342e8b1b934bb04d45e3378fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717678"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885116"
 ---
 # <a name="work-with-publish-groups"></a>Arbeide med publiseringsgrupper
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjonen for publiseringsgrupper i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver funksjonen for publiseringsgrupper i Microsoft Dynamics 365 Commerce.
 
 E-handelsnettsteder er kontinuerlig oppdatert med nytt innhold gjennom hele året. Oppdateringer publiseres ofte i grupper rundt travle e-handelshendelser, for eksempel ferier, sesongbaserte markedsføringskampanjer eller kampanjelanseringer. Disse oppdateringene krever ofte at grupper av webområdeinnhold (for eksempler sider, bilder, fragmenter og maler) kan klargjøres, valideres og publiseres samtidig i én enkelt handling.
 

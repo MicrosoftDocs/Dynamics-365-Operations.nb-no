@@ -1,6 +1,6 @@
 ---
-title: Livssyklustilstand for arbeidsordre
-description: Dette emnet forklarer livssyklustilstander for arbeidsordrer i Aktivastyring.
+title: Statuser for arbeidsordre
+description: Denne artikkelen forklarer livssyklustilstander for arbeidsordrer i Aktivastyring.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768672"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860877"
 ---
 # <a name="work-order-lifecycle-states"></a>Livssyklustilstand for arbeidsordre
 
@@ -69,7 +69,7 @@ I tabellen nedenfor beskrives alternativene i delene **Arbeidsordre** og **Tidsp
 
     På hurtigfanen **Detaljer** viser feltet **Livssyklusmodeller** viser antall livssyklusmodeller for arbeidsordrer som bruker denne livssyklustilstanden.
 
-8. I **Generelt**-hurtigfanen i delen **Arbeidsordre** velger du funksjonene som skal være tilgjengelige for denne livssyklustilstanden, ved å sette de relevante alternativene til **Ja**. Se tabellen tidligere i dette emnet for beskrivelser av alternativene.
+8. I **Generelt**-hurtigfanen i delen **Arbeidsordre** velger du funksjonene som skal være tilgjengelige for denne livssyklustilstanden, ved å sette de relevante alternativene til **Ja**. Se tabellen tidligere i denne artikkelen for beskrivelser av alternativene.
 9. I **Prosjekt**-delen i **Fase**-feltet velger du prosjektstadiet som skal knyttes til denne livssyklustilstanden.
 10. I **Prosjekt**-delen setter du alternativet **Lukk aktiviteter** til **Ja** hvis prosjektaktiviteter som er knyttet til hver arbeidsordrejobb, skal lukkes automatisk når arbeidsordren er i denne livssyklustilstanden.
 
@@ -77,7 +77,7 @@ I tabellen nedenfor beskrives alternativene i delene **Arbeidsordre** og **Tidsp
     > Hvis du vil finne nummeret på prosjektaktiviteten som er knyttet til en arbeidsordrejobb, velger du **Aktivastyring** \> **Felles** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**. Åpne arbeidsordren, og velg deretter arbeidsordrejobben. Aktivitetsnummeret vises i **Aktivitetsnummer**-feltet i **Prosjekt**-delen i fanen **Generelt** på hurtigfanen **Linjedetaljer**.
 
 11. I **Prognose**-delen setter du alternativet **Kopier timeprognose**, **Kopier vareprognose** og/eller **Kopier utgiftsprognose** til **Ja** hvis prosjektprognoser for arbeidsordre skal kopieres automatisk til arbeidsordrejournaler når arbeidsordren er i denne livssyklustilstanden.
-12. I delen **Planlegg** setter du ett av alternativene til **Ja** hvis planleggingsstatusen for arbeidsordrejobber skal oppdateres når arbeidsordren er i denne livssyklustilstanden. Hvis du vil ha en beskrivelse av alternativene **Klar**, **Start**, **Slutt** og **Slett planlinjer**, kan du se tabellen tidligere i dette emnet.
+12. I delen **Planlegg** setter du ett av alternativene til **Ja** hvis planleggingsstatusen for arbeidsordrejobber skal oppdateres når arbeidsordren er i denne livssyklustilstanden. Hvis du vil ha en beskrivelse av alternativene **Klar**, **Start**, **Slutt** og **Slett planlinjer**, kan du se tabellen tidligere i denne artikkelen.
 
     > [!NOTE]
     > Hvis du vil vise planlinjer som er knyttet til arbeidsordrejobber, velger du **Aktivastyring** \> **Felles** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**. Åpne arbeidsordren, velg arbeidsordrejobben i hurtigfanen **Arbeidsordrejobber** og vis relatert informasjon i hurtigfanen **Linjedetaljer**. **Status**-feltet i fanen **Planlegg** viser statusen for arbeidsordrejobben. **Status**-feltet kan settes til følgende verdier: **Planlagt**, **Klar**, **Startet**, **Stoppet** og **Avsluttet**.

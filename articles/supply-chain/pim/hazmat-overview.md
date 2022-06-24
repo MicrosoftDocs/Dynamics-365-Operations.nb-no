@@ -1,6 +1,6 @@
 ---
 title: Oversikt over farlige materialer
-description: Dette emnet gir en oversikt over funksjoner som er knyttet til håndtering og dokumentasjon av farlige materialer under produktinformasjonsbehandling og lagerstyring.
+description: Denne artikkelen gir en oversikt over funksjoner som er knyttet til håndtering og dokumentasjon av farlige materialer under produktinformasjonsbehandling og lagerstyring.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c2cae4cb65dd163e9fbf1d24cff5a0a040e3ce3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905812"
 ---
 # <a name="hazardous-materials-overview"></a>Oversikt over farlige materialer
 
@@ -50,7 +50,7 @@ Følgende felles forskrifter ble referert til da denne funksjonaliteten ble utvi
 
 Hvert sett med forskrifter inneholder standardiserte lister over farlige varer og referansekoder. Supply Chain Management inneholder derfor en referansetabell for de felles kodene i disse listene. Hver liste har også noen unike koder som du kan definere.
 
-Hvis du vil ha mer informasjon om hvordan du definerer forskrifter og verdier for farlige materialer, og hvordan du tilordner verdiene til de relevante produktene, kan du se følgende emner:
+Hvis du vil ha mer informasjon om hvordan du definerer forskrifter og verdier for farlige materialer, og hvordan du tilordner verdiene til de relevante produktene, kan du se følgende artikler:
 
 - [Definere farlige materialer](hazmat-setup.md)
 - [Farlige materialer i produkter, ordrer, forsendelser og laster](hazmat-items.md)

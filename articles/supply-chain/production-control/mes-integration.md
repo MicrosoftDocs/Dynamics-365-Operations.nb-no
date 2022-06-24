@@ -1,6 +1,6 @@
 ---
 title: Integrer med tredjeparts produksjonsutførelsessystemer
-description: Dette emnet beskriver hvordan du kan integrere Microsoft Dynamics 365 Supply Chain Management med et MES-system (tredjeparts produksjonsutførelsessystem).
+description: Denne artikkelen beskriver hvordan du kan integrere Microsoft Dynamics 365 Supply Chain Management med et MES-system (tredjeparts produksjonsutførelsessystem).
 author: johanhoffmann
 ms.date: 10/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: c7633ba32f9265aa0fd8f702552f48dbf675375d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 208ed2d6c8b411d12888966d9c175730e828eb44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678694"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860645"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integrer med tredjeparts produksjonsutførelsessystemer
 
@@ -238,7 +238,7 @@ For meldingen om *avslutning av produksjonsordre* er `_messageType`-verdien `Pro
 
 ## <a name="other-production-information"></a>Annen produksjonsinformasjon
 
-Meldingen støtter handlinger eller hendelser som skjer i produksjonen. De behandles ved hjelp av MES-integreringsrammeverket som er beskrevet i dette emnet. Utformingen forutsetter at annen referanseinformasjon som skal deles med MES (for eksempel produktrelatert informasjon, eller stykklisten eller ruten (med sitt spesifikke oppsett og konfigurasjonstider) som brukes i en bestemt produksjonsordre), hentes fra systemet ved hjelp av [dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via filoverføring eller OData.
+Meldingen støtter handlinger eller hendelser som skjer i produksjonen. De behandles ved hjelp av MES-integreringsrammeverket som er beskrevet i denne artikkelen. Utformingen forutsetter at annen referanseinformasjon som skal deles med MES (for eksempel produktrelatert informasjon, eller stykklisten eller ruten (med sitt spesifikke oppsett og konfigurasjonstider) som brukes i en bestemt produksjonsordre), hentes fra systemet ved hjelp av [dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via filoverføring eller OData.
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Motta tilbakemelding om tilstanden til en melding
 
@@ -251,7 +251,7 @@ Etter at MES har sendt en melding til Supply Chain Management, kan det være rel
 
 I slike tilfeller kan du dra nytte av standard varslingsfunksjonen i Supply Chain Management. Hvis du vil ha informasjon om hvordan standardvarsler fungerer, kan du se følgende ressurser:
 
-- Hjelpeemne: [Oversikt over varsler](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Hjelpeartikkel: [Oversikt over varsler](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
 - Video: [Alternativer for varslingsregel i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 Du kan for eksempel angi følgende varsler for å gi tilbakemelding om tilstanden til en melding:

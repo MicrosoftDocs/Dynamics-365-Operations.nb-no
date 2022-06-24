@@ -1,6 +1,6 @@
 ---
 title: Oppsett for elektronisk fakturering
-description: Dette emnet gir en oversikt over prosessen for oppsett og konfigurasjon av elektronisk fakturering.
+description: Denne artikkelen gir en oversikt over prosessen for oppsett og konfigurasjon av elektronisk fakturering.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42e617e26e7658fae9ee54cb8a4dee45314fddaa
-ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
+ms.openlocfilehash: 8e2aa89119530a0ba00a8561d94006285d67a71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "8661699"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883126"
 ---
 # <a name="electronic-invoicing-setup"></a>Oppsett for elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
 
-Emnet gir en oversikt over prosessen for oppsett og konfigurasjon av elektronisk fakturering. Du må fullføre trinnene i oppsettet i rekkefølgen som er angitt her. Hvis du hopper over et obligatorisk trinn, fungerer ikke funksjonaliteten som den skal, og det oppstår flere feil i de påfølgende trinnene eller når du bruker funksjonaliteten. 
+Denne artikkelen gir en oversikt over prosessen for oppsett og konfigurasjon av elektronisk fakturering. Du må fullføre trinnene i oppsettet i rekkefølgen som er angitt her. Hvis du hopper over et obligatorisk trinn, fungerer ikke funksjonaliteten som den skal, og det oppstår flere feil i de påfølgende trinnene eller når du bruker funksjonaliteten. 
 
 Før du begynner, må du kontrollere at alle hovedkomponentene er riktig konfigurert, at du har registrert deg for Regulatory Configuration Service (RCS) og har en forekomst av RCS, og at tilleggsprogrammet for elektronisk fakturering er installert for Microsoft Dynamics 365 Finance- eller Dynamics 365 Supply Chain Management-miljøet. Hvis du vil ha mer informasjon, kan du se [Registrer og installer elektronisk fakturering](e-invoicing-install-add-in-microservices-lcs.md).
 

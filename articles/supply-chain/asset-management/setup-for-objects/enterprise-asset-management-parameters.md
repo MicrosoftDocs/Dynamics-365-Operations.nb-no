@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: a1e2c79a621cf4bd1212c006e1c8967d85bd716b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870818"
 ---
 # <a name="asset-management-parameters"></a>Parametere i Aktivastyring
 
 [!include [banner](../../includes/banner.md)]
 
-I Aktivastyring må generelle parametere knyttet til aktiva, arbeidsordrer og arbeidsordreplanlegging defineres. Dette emnet forklarer hvordan du definerer dem. Velg **Aktivastyring** > **Oppsett** > **Parametere i Aktivastyring** for å åpne siden.
+I Aktivastyring må generelle parametere knyttet til aktiva, arbeidsordrer og arbeidsordreplanlegging defineres. Denne artikkelen forklarer hvordan du definerer dem. Velg **Aktivastyring** > **Oppsett** > **Parametere i Aktivastyring** for å åpne siden.
 
 > [!NOTE]
 > Hvis du vil konfigurere et system som inneholder demonstrasjonsdata for testing av funksjonene for ressursstyring, kan du se [Distribuere et demomiljø](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) for instruksjoner.

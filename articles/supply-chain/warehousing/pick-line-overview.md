@@ -1,6 +1,6 @@
 ---
 title: Definere et menyelement for en mobilenhet for å angi en plukklinjeoversikt
-description: Dette emnet beskriver hvordan du definerer når en liste over alle arbeidslinjer skal vises til lagermedarbeidere som behandler lagerarbeid på en mobilenhet. Denne funksjonen kan være nyttig for lagerarbeidere som ofte må ha en oversikt over plukklinjene i en arbeidsordre, slik at de kan optimalisere plukkingsrekkefølgen.
+description: Denne artikkelen beskriver hvordan du definerer når en liste over alle arbeidslinjer skal vises til lagermedarbeidere som behandler lagerarbeid på en mobilenhet. Denne funksjonen kan være nyttig for lagerarbeidere som ofte må ha en oversikt over plukklinjene i en arbeidsordre, slik at de kan optimalisere plukkingsrekkefølgen.
 author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d3a8972c5d2f4c52dddef458ebd6079118cadfe
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 5b3bf0d94e6975f543361481b73c845ef9c56d05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901928"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885674"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Definere et menyelement for en mobilenhet for å angi en plukklinjeoversikt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer alternativer som er knyttet til plukklinjeoversikten for menyvarer for mobilenheter som brukes til å behandle plukking av arbeid. Plukklinjeoversikten lar lagerarbeidere vise og velge fra en liste over alle arbeidslinjene som er knyttet til den gjeldende oppgaven. Denne funksjonen kan hjelpe arbeiderne med å optimalisere plukksekvensen. Funksjonen inneholder alternativer som erstatter standard **Hopp over**-knapp, som la arbeidere bla gjennom linjene én om gangen, i en fast rekkefølge. (Alternativet for å bruke denne knappen er imidlertid fremdeles tilgjengelig.)
+Denne artikkelen forklarer hvordan du konfigurerer alternativer som er knyttet til plukklinjeoversikten for menyvarer for mobilenheter som brukes til å behandle plukking av arbeid. Plukklinjeoversikten lar lagerarbeidere vise og velge fra en liste over alle arbeidslinjene som er knyttet til den gjeldende oppgaven. Denne funksjonen kan hjelpe arbeiderne med å optimalisere plukksekvensen. Funksjonen inneholder alternativer som erstatter standard **Hopp over**-knapp, som la arbeidere bla gjennom linjene én om gangen, i en fast rekkefølge. (Alternativet for å bruke denne knappen er imidlertid fremdeles tilgjengelig.)
 
 Administratorer kan konfigurere hvert menyelement for seg for å styre hvordan, når og hvor mobilappen Lagerstyring presenterer plukklinjeoversikten.
 

@@ -1,6 +1,6 @@
 ---
 title: Sende ordrer som direkte leveringer
-description: Dette emnet viser hvordan du oppretter en direktelevering for en salgsordre.
+description: Denne artikkelen viser hvordan du oppretter en direktelevering for en salgsordre.
 author: Henrikan
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 94890b0915a49052c298090f124cf2b91c462de8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f5f145bacecc47a782c60335c6ff5b79f978007c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572447"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875166"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet viser hvordan du oppretter en direktelevering for en salgsordre. Du bruker direktelevering når du vil levere varer til kunden direkte fra leverandøren, i stedet for å levere dem først til ditt eget lager. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. For å fullføre den andre underordnede oppgaven "Opprette direkte leveringer fra arbeidsbenken" kontroller at varen du velger i salgsordren, har en standard leverandør angitt på hurtigfanen Kjøp i produktstandarden Frigitt.
+Denne artikkelen viser hvordan du oppretter en direktelevering for en salgsordre. Du bruker direktelevering når du vil levere varer til kunden direkte fra leverandøren, i stedet for å levere dem først til ditt eget lager. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. For å fullføre den andre underordnede oppgaven "Opprette direkte leveringer fra arbeidsbenken" kontroller at varen du velger i salgsordren, har en standard leverandør angitt på hurtigfanen Kjøp i produktstandarden Frigitt.
 
 ## <a name="set-an-individual-order-for-direct-delivery"></a>Angi en enkelt ordre for direkte levering
 1. Gå til **Navigasjonsrute > Moduler > Kunder > Ordrer > Alle salgsordrer**.

@@ -1,6 +1,6 @@
 ---
 title: Foreta manuelle justeringer i basislinjeprognosen
-description: Dette emnet forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen.
+description: Denne artikkelen forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen.
 author: t-benebo
 ms.date: 01/07/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19b6bf742bb395de41bfbf1e50ca9df68f416367
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: e602e6d46f928fd5376a6a6d4f94bb4a726d92b5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470240"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844974"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen. 
+Denne artikkelen forklarer hvordan du gjør manuelle justeringer i en basislinjeprognose og viser detaljer for prognosen. 
 
 Før du gjør manuelle justeringer, er det viktig at du forstår noen nøkkelbegreper om forskjellige sider.
 

@@ -1,6 +1,6 @@
 ---
 title: Hurtigvisningsmodul
-description: Dette emnet dekker hurtigvisningsmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker hurtigvisningsmoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 5ba42806d8f77f41ab9c5cf5e26b20ecb647aadf
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: e9066357fda4f5d91c547622ac64d8c4eef253ae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847581"
 ---
 # <a name="quick-view-module"></a>Hurtigvisningsmodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker hurtigvisningsmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker hurtigvisningsmoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 
 Med hurtigvisningsmodulen kan brukere raskt vise produktinformasjon når de blar gjennom produkter på en listeside og legger til én eller flere produkter i handlekurven fra listesiden, uten å måtte gå til produktdetaljersiden (PDP). Modulen for hurtigvisning gir en oversikt over produktinformasjonen som brukerne trenger for å ta en avgjørelse om å legge til i handlekurv. Den inneholder også en kobling til PDP-en, slik at brukere kan vise flere produktdetaljer og innkjøpsalternativer.
 

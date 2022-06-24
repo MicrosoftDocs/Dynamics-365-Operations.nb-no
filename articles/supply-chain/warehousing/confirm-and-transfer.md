@@ -1,6 +1,6 @@
 ---
 title: Bekreft og overfør
-description: Dette emnet forklarer hvordan du bruker funksjonen Bekreft og overfør, som gjør at brukere kan levere last fra lageret før de fullfører alt arbeidet som er knyttet til disse lastene.
+description: Denne artikkelen forklarer hvordan du bruker funksjonen Bekreft og overfør, som gjør at brukere kan levere last fra lageret før de fullfører alt arbeidet som er knyttet til disse lastene.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0d34dd1b33467aa1ea3a723e1baaf7f06285c3fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 9257d8f9e6ed62ac0b19b0cdc8fd858e8b2f97a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900571"
 ---
 # <a name="confirm-and-transfer"></a>Bekreft og overfør
 
@@ -55,11 +55,11 @@ Du kan bare dele last som oppfyller alle disse kriteriene:
 
 ## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Bekreft og overfør
 
-Du må aktivere funksjonen *Bekreft og overfør* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Bekreft og overfør* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Du må aktivere funksjonen *Bekreft og overfør* for systemet for å kunne bruke funksjonaliteten som beskrives i denne artikkelen. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Bekreft og overfør* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-confirm-and-transfer"></a>Konfigurer bekreft og overfør
 
-Hvis du vil bruke funksjonen *Bekreft og overfør*, må du aktivere den i hver relevante lastmal. I tillegg kan det hende at du vil forberede arbeidsmalene til å støtte funksjonen, avhengig av dine behov. Hvis du vil arbeide med eksempelscenarioet som er oppgitt senere i dette emnet, setter du opp systemet som beskrevet i denne delen. (Det scenarioet er basert på **USMF**-demonstrasjonsdata.)
+Hvis du vil bruke funksjonen *Bekreft og overfør*, må du aktivere den i hver relevante lastmal. I tillegg kan det hende at du vil forberede arbeidsmalene til å støtte funksjonen, avhengig av dine behov. Hvis du vil arbeide med eksempelscenarioet som er oppgitt senere i denne artikkelen, setter du opp systemet som beskrevet i denne delen. (Det scenarioet er basert på **USMF**-demonstrasjonsdata.)
 
 ### <a name="prepare-your-load-templates"></a>Forberede lastmalene
 
@@ -69,7 +69,7 @@ Hvis du vil bruke funksjonen *Bekreft og overfør*, må du aktivere den i hver r
 
 ### <a name="prepare-your-work-templates"></a>Forberede arbeidsmalene
 
-Dette oppsettet er ikke nødvendig i alle situasjoner. Eksemplet som vises her, sikrer at arbeidet kan brytes ved hjelp av forsendelse for å støtte eksempelscenarioet som er oppgitt senere i dette emnet. Det finnes også andre måter å oppnå dette resultatet på.
+Dette oppsettet er ikke nødvendig i alle situasjoner. Eksemplet som vises her, sikrer at arbeidet kan brytes ved hjelp av forsendelse for å støtte eksempelscenarioet som er oppgitt senere i denne artikkelen. Det finnes også andre måter å oppnå dette resultatet på.
 
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsmaler**.
 1. I rutenettet i den øvre delen av siden velger du en eksisterende arbeidsmal der du vil definere *Bekreft og overfør*-funksjonen. (Hvis du arbeider med **USMF**-demonstrasjonsdata, velger du **51 Plukk til trinn**-arbeidsmalen.) Du kan også opprette en ny arbeidsmal.

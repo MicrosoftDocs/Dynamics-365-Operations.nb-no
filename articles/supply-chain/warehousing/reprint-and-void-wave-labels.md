@@ -1,6 +1,6 @@
 ---
 title: Skrive ut og kansellere bølgeetiketter
-description: Dette emnet beskriver hvordan du annullerer og skriver ut eksisterende bølgeetiketter på nytt.
+description: Denne artikkelen beskriver hvordan du annullerer og skriver ut eksisterende bølgeetiketter på nytt.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f9f057d9985fb8431ec7c9ced23f2cd3c476570d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871840"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Skrive ut og kansellere bølgeetiketter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du behandler etiketter som genereres av bølgebehandling. (Hvis du vil ha en detaljert beskrivelse og og konfigurasjonsinstruksjoner, kan du se [Konfigurere bølgeetikettutskrift](../warehousing/configure-wave-label-printing.md).)
+Denne artikkelen forklarer hvordan du behandler etiketter som genereres av bølgebehandling. (Hvis du vil ha en detaljert beskrivelse og og konfigurasjonsinstruksjoner, kan du se [Konfigurere bølgeetikettutskrift](../warehousing/configure-wave-label-printing.md).)
 
 Du kan når som helst skrive ut bølgeetiketter på nytt. Det kan for eksempel hende at du må skrive ut en enkelt etikett hvis en eksisterende etikett gikk tapt eller ble skadet. Alternativt kan en lagerarbeider eller leder skrive ut en hel rull med etikett på nytt hvis tallet og/eller sammensetningen av en hel serie med bølgeetiketter har blitt endret (for eksempel på grunn av lagermangel eller andre årsaker). Selv om bare antallet kartonger er endret, må hele rullen ofte skrives ut på nytt for å holde det totale antallet nøyaktig i delen om "Kartong X av Y" i hver etikett.
 
@@ -32,10 +32,10 @@ Funksjonen for ny utskrift av bølgeetiketter støtter følgende funksjonalitet:
 - Kanseller etiketter og skrive dem ut på nytt samtidig. (Muligheten til å annullere etiketter er eksempelvis innebygget i scenarioer med plukk med mangler.)
 - Rydde opp i bølgeetikettloggen.
 
-Dette emnet viser en samling scenarier som viser, gjennom eksempler, hvordan du arbeider med funksjonen for å skrive ut bølgeetiketter på nytt.
+Denne artikkelen viser en samling scenarier som viser, gjennom eksempler, hvordan du arbeider med funksjonen for å skrive ut bølgeetiketter på nytt.
 
 > [!IMPORTANT]
-> Hvis du vil arbeide gjennom scenariene som presenteres i dette emnet, må du først aktivere og konfigurere de aktuelle funksjonene for bølgeutskriftsfunksjoner, som beskrevet i [Konfigurere bølgeetikettutskrift](../warehousing/configure-wave-label-printing.md). Flere av scenariene i dette emnet krever også at du først arbeider gjennom scenariene i dette emnet for å generere nødvendige eksempeldata.
+> Hvis du vil arbeide gjennom scenariene som presenteres i denne artikkelen, må du først aktivere og konfigurere de aktuelle funksjonene for bølgeutskriftsfunksjoner, som beskrevet i [Konfigurere bølgeetikettutskrift](../warehousing/configure-wave-label-printing.md). Flere av scenariene i denne artikkelen krever også at du først arbeider gjennom scenariene i denne artikkelen for å generere nødvendige eksempeldata.
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scenario 1: Skrive ut etiketter på nytt fra webklienten
 

@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources 6. september 2021
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 6. september 2021.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 6. september 2021.
 author: marcelbf
 ms.date: 09/06/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 314d836db9b7560c2ed95ad1b9d2eba753e39d2b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 776498b32f8323b1a06f39b518cdc1ae534f9bcc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872159"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-6-2021"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 6. september 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Microsoft Dynamics 365 Human Resources.
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Microsoft Dynamics 365 Human Resources.
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -50,9 +50,9 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
-| Utstedelsesnummer | Problem | beskrivelse |
+| Utstedelsesnummer | Problem | Beskrivelse |
 |---|---|---|
 | 610128 | Feil ved publisering av data ved bruk av HcmDiscussionOverallCommentEntity | Når data publiseres fra en Excel-arbeidsbok til HcmDiscussionOverralCommentEntity-enheten, oppstår følgende feil: Finner ikke datakildeposten av typen HcmTopicOverrall. |
 | 589073 | EEO-1-rapporten teller "Ikke spesifikk" og tomme verdier for **Kjønn**-feltet som Kvinne-verdi. | Hvis **Mann** ikke er angitt for **Kjønn**-feltet, genererer EEO-1-rapporten standardverdien **Kvinne**. |

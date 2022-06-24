@@ -1,6 +1,6 @@
 ---
 title: Spørreskjemaer
-description: Dette emnet inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon.
+description: Denne artikkelen inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: efe0ac953e5c1cb04044256e799ecfc07cf3eebe
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: de38bcbfc89479d6b643ca5ee256c38c88fa7f69
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690757"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897900"
 ---
 # <a name="questionnaires"></a>Spørreskjemaer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8690757"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene. 
+Denne artikkelen inneholder generell informasjon om spørreskjemaer og koblinger til mer detaljert informasjon. Et spørreskjema er et sett med spørsmål som brukes til å samle inn informasjon for ulike formål. Du kan utforme, opprette, distribuere og fylle ut spørreskjemaer og deretter analysere resultatene. 
 
 Du kan tilpasse et spørreskjema til dine spesifikke behov ved hjelp av ulike funksjoner som er tilgjengelige i Microsoft Dynamics 365 Finance. Her er noen eksempler på hvordan spørreskjemaer kan brukes:
 
@@ -40,11 +40,11 @@ Du kan tilpasse et spørreskjema til dine spesifikke behov ved hjelp av ulike fu
 
 Tabellen nedenfor inneholder koblinger til informasjon om viktige spørreskjemaoppgaver. Klikk koblingene hvis du vil ha mer informasjon.
 
-| Emne| Beskrivelse|
+| Artikkel | Beskrivelse|
 |------|------------|
-| [Utforme et spørreskjema](hr-learning-design-questionnaires.md) | Dette emnet inneholder informasjon om hvordan du utformer et spørreskjema. Utformingen består av å definere forutsetninger, svar og spørsmål og deretter kombinere dem til et spørreskjema. |
-| [Distribuere og planlegge spørreskjemaer](hr-learning-distribute-questionnaires.md) | Dette emnet inneholder informasjon om hvordan du distribuerer et spørreskjema til respondenter, og hvordan du fyller ut spørreskjemaer. |
-| [Vise og evaluere resultatene i et spørreskjema](hr-learning-evaluate-questionnaire-results.md) | Dette emnet inneholder informasjon om hvordan du viser og evaluerer resultatene fra utfylte spørreskjemaer. |
+| [Utforme et spørreskjema](hr-learning-design-questionnaires.md) | Denne artikkelen inneholder informasjon om hvordan du utformer et spørreskjema. Utformingen består av å definere forutsetninger, svar og spørsmål og deretter kombinere dem til et spørreskjema. |
+| [Distribuere og planlegge spørreskjemaer](hr-learning-distribute-questionnaires.md) | Denne artikkelen inneholder informasjon om hvordan du distribuerer et spørreskjema til respondenter, og hvordan du fyller ut spørreskjemaer. |
+| [Vise og evaluere resultatene i et spørreskjema](hr-learning-evaluate-questionnaire-results.md) | Denne artikkelen inneholder informasjon om hvordan du viser og evaluerer resultatene fra utfylte spørreskjemaer. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

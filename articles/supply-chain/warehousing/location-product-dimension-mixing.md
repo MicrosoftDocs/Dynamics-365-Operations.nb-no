@@ -1,6 +1,6 @@
 ---
 title: Kombinasjon av produktdimensjoner for lokasjon
-description: Dette emnet inneholder informasjon om kombinasjon av produktdimensjoner for lokasjon. Denne lokasjonsprofilfunksjonaliteten bidrar til å forbedre lokasjonsstyringen når produktvarianter eller produkter som har dimensjoner, brukes, for eksempel i motebransjen. Den lar deg bestemme om konfigurasjoner, farger, stiler og størrelser kan blandes for en bestemt lokasjonsprofil, eller om bare én av disse dimensjonene eller en kombinasjon av dem kan legges til samme lokasjon.
+description: Denne artikkelen inneholder informasjon om kombinasjon av produktdimensjoner for lokasjon. Denne lokasjonsprofilfunksjonaliteten bidrar til å forbedre lokasjonsstyringen når produktvarianter eller produkter som har dimensjoner, brukes, for eksempel i motebransjen. Den lar deg bestemme om konfigurasjoner, farger, stiler og størrelser kan blandes for en bestemt lokasjonsprofil, eller om bare én av disse dimensjonene eller en kombinasjon av dem kan legges til samme lokasjon.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031b92f827979c01dbf0208ba21ae827fb13920b
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 9daf6061d56ef004753114aaffa8eb580cea1186
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103494"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885732"
 ---
 # <a name="location-product-dimension-mixing"></a>Kombinasjon av produktdimensjoner for lokasjon
 
@@ -28,7 +28,7 @@ kombinasjon av produktdimensjoner for lokasjon er lokasjonsprofilfunksjonalitet 
 
 ## <a name="turn-the-location-product-dimension-mixing-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Kombinasjon av produktdimensjoner for lokasjon
 
-Du må aktivere funksjonen *Kombinasjon av produktdimensjoner for lokasjon* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Kombinasjon av produktdimensjoner for lokasjon* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Du må aktivere funksjonen *Kombinasjon av produktdimensjoner for lokasjon* for systemet for å kunne bruke funksjonaliteten som beskrives i denne artikkelen. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Kombinasjon av produktdimensjoner for lokasjon* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Installasjon
 
@@ -44,7 +44,7 @@ Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver ege
     > [!NOTE]
     > Du kan bare sette dette alternativet til *Ja* hvis **Tillat blandede varer** er satt til *Nei*.
 
-1. I **Tillat kombinasjon av produktdimensjon**-hurtigfanen setter du **Størrelse** til *Ja*. I scenariet som beskrives i dette emnet, kan du bare foreta en blanding for produkter som har ulike **Størrelse**-dimensjoner. Andre alternativer er også tilgjengelige.
+1. I **Tillat kombinasjon av produktdimensjon**-hurtigfanen setter du **Størrelse** til *Ja*. I scenarioet som beskrives i denne artikkelen, kan du bare foreta en blanding for produkter som har ulike **Størrelse**-dimensjoner. Andre alternativer er også tilgjengelige.
 1. Velg **Lagre**.
 
 ### <a name="create-a-new-product-master-and-product-variants"></a>Opprett en ny produktstandard og produktvarianter

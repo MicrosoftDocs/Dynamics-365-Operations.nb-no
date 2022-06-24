@@ -1,6 +1,6 @@
 ---
 title: Butikkvelgermodul
-description: Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 05/18/2022
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: a91b50d2177483615cf45276cf342be381814717
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780661"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881689"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 
 Kunder kan bruke butikkvelgermodulen til å hente frem et produkt i en valgt butikk etter et elektronisk innkjøp. I Commerce versjon 10.0.13 inneholder butikkvelgermodulen også flere funksjoner som kan vise en **Finn en butikk**-side som viser nærliggende butikker.
 
@@ -132,7 +132,7 @@ For **Hent i butikk**-modus kan modulen bare brukes på PDP-er og handlevognside
 - Hvis du vil ha informasjon om hvordan du legger til en butikkvelgermodul i en kjøpsboksmodul, kan du se [Kjøpsboksmodul](add-buy-box.md). 
 - Hvis du vil ha informasjon om hvordan du legger til en butikkvelgermodul i en handlekurvmodul, kan du se [Handlekurvmodul](add-cart-module.md)
 
-Hvis du vil konfigurere butikkvelgermodulen til å vise tilgjengelige butikker for en butikklokasjonsside, som i illustrasjonen tidligere i dette emnet, følger du denne fremgangsmåten.
+Hvis du vil konfigurere butikkvelgermodulen til å vise tilgjengelige butikker for en butikklokasjonsside, som i illustrasjonen tidligere i denne artikkelen, følger du denne fremgangsmåten.
 
 1. Gå til **Maler**, og velg **Ny** for å opprette en ny mal.
 1. I dialogboksen **Ny mal**, under **Malnavn**, angir du **Markedsføringsmal**, og velger deretter **OK**.

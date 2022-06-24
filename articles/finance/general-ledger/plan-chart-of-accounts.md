@@ -1,6 +1,6 @@
 ---
-title: Planlegge kontoplanen
-description: Dette emnet inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
+title: Planlegg kontoplanen
+description: Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
 author: aprilolson
 ms.date: 04/02/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734276a736cfdb91ec3a129c83dae1c0a6d3955
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853355"
 ---
-# <a name="plan-your-chart-of-accounts"></a>Planlegge kontoplanen
+# <a name="plan-your-chart-of-accounts"></a>Planlegg kontoplanen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
+Denne artikkelen inneholder informasjon som hjelper deg med å planlegge kontoplanen for organisasjonen.
 
 Hvis du vil spore og vedlikeholde økonomisk informasjon i en organisasjon, kan du definere en kontoplan. En kontoplan er en samling kontoer som definerer et økonomisk rammeverk. For å spore ytterligere transaksjonene i disse kontoene, kan du legge til segmenter. Disse segmentene kalles finansdimensjoner. En utgiftskonto kan for eksempel omfatte finansdimensjoner kalt Avdeling, Kostsenter og Formål. Brukerdefinerte regler fastsetter hvordan finansdimensjonene er knyttet til hovedkontoene og til andre finansdimensjoner, og også hvordan transaksjoner registreres. Disse brukerdefinerte reglene er kjent som kontostrukturer og avanserte regler.
 

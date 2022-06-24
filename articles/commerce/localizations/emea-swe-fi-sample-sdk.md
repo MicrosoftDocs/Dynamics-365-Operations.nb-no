@@ -1,6 +1,6 @@
 ---
 title: Distribusjonsretningslinjer for eksempel på kontrollenhetsintegrering for Sverige (eldre)
-description: Dette emnet inneholder retningslinjer for distribusjon av eksemplet på kontrollenhetsintegrering for Sverige fra Retail SDK
+description: Denne artikkelen inneholder retningslinjer for distribusjon av eksemplet på kontrollenhetsintegrering for Sverige fra Retail SDK
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: b8d60f32d986dec6bb26d78ebdfe8cee3a6b688a
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 05a49de43282c449c7b99072d8ac3ac4a5f2a67f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077044"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870553"
 ---
 # <a name="deployment-guidelines-for-the-control-unit-integration-sample-for-sweden-legacy"></a>Distribusjonsretningslinjer for eksempel på kontrollenhetsintegrering for Sverige (eldre)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder retningslinjer for distribusjon av eksemplet på kontrollenhetsintegrering for Sverige fra SDK (Retail Software Development Kit) på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om dette eksemplet på regnskapsintegrering, kan du se [Eksempler på kontrollenhetsintegrering for Sverige](emea-swe-fi-sample.md). 
+Denne artikkelen inneholder retningslinjer for distribusjon av eksemplet på kontrollenhetsintegrering for Sverige fra SDK (Retail Software Development Kit) på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om dette eksemplet på regnskapsintegrering, kan du se [Eksempler på kontrollenhetsintegrering for Sverige](emea-swe-fi-sample.md). 
 
-Eksempelet på regnskapsintegrering for Sverige er en del av Retail SDK. Hvis du vil ha informasjon om hvordan du installerer og bruker SDK, se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksemplet består av utvidelser for Commerce Runtime (CRT), maskinvarestasjon og salgssted. Hvis du vil kjøre dette eksemplet, må du endre og bygge CRT, maskinvarestasjon og salgsstedsprosjektene. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i dette emnet. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Azure DevOps der ingen filer er endret ennå.
+Eksempelet på regnskapsintegrering for Sverige er en del av Retail SDK. Hvis du vil ha informasjon om hvordan du installerer og bruker SDK, se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksemplet består av utvidelser for Commerce Runtime (CRT), maskinvarestasjon og salgssted. Hvis du vil kjøre dette eksemplet, må du endre og bygge CRT, maskinvarestasjon og salgsstedsprosjektene. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i denne artikkelen. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Azure DevOps der ingen filer er endret ennå.
 
 ## <a name="development-environment"></a>Utviklingsmiljø
 
@@ -257,7 +257,7 @@ Migreringsprosessen skal bestå av følgende trinn.
 1. Oppdater salgssteds- og maskinvarestasjonskomponentene, deaktiver utvidelsene som er deler av det tidligere eksemplet, og aktiver utvidelsene for gjeldende eksempel.
 
     > [!NOTE]
-    > Avhengig av typen miljø kan du finne flere tekniske detaljer om migreringsprosessen i enten delen [Migrering i et utviklingsmiljø](#migration-in-a-development-environment) eller [Migrering i en produksjonsmiljø](#migration-in-a-production-environment) i dette emnet.
+    > Avhengig av typen miljø kan du finne flere tekniske detaljer om migreringsprosessen i enten delen [Migrering i et utviklingsmiljø](#migration-in-a-development-environment) eller [Migrering i en produksjonsmiljø](#migration-in-a-production-environment) i denne artikkelen.
 
 ### <a name="migration-in-a-development-environment"></a>Migrering i et utviklingsmiljø
 

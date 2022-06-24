@@ -1,6 +1,6 @@
 ---
 title: Resultater av maskinlæringsmodeller
-description: Dette emnet beskriver forvirringsmatriser, klassifiseringsproblemer og nøyaktighet i modeller for maskinlæring (ML). Hensikten er å forbedre forståelsen din av nøyaktighet i ML-prediksjonsresultater.
+description: Denne artikkelen beskriver forvirringsmatriser, klassifiseringsproblemer og nøyaktighet i modeller for maskinlæring (ML). Hensikten er å forbedre forståelsen din av nøyaktighet i ML-prediksjonsresultater.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c57a023995e0bb58d4fba0a4fd2f147d07e51348
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 23df5979231fbd6908b6f1e7c3aca5dd3e0e733d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910178"
 ---
 # <a name="results-of-machine-learning-models"></a>Resultater av maskinlæringsmodeller
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver forvirringsmatriser, klassifiseringsproblemer og nøyaktighet i modeller for maskinlæring (ML). Hensikten er å forbedre forståelsen din av nøyaktighet i ML-prediksjonsresultater. Målgruppen omfatter teknikere, analytikere og ledere som ønsker å utvikle kunnskapen og ferdighetene innenfor datavitenskap.
+Denne artikkelen beskriver forvirringsmatriser, klassifiseringsproblemer og nøyaktighet i modeller for maskinlæring (ML). Hensikten er å forbedre forståelsen din av nøyaktighet i ML-prediksjonsresultater. Målgruppen omfatter teknikere, analytikere og ledere som ønsker å utvikle kunnskapen og ferdighetene innenfor datavitenskap.
 
 ## <a name="confusion-matrix"></a>Forvirringsmatrise
 Etter at et overvåket ML-problem er opplært basert på et sett med historiske data, testes det ved hjelp av data som holdes tilbake fra opplæringsprosessen. På denne måten kan du sammenligne prediksjonene fra den opplærte modellen med de faktiske verdiene. Forvirringsmatrisen gir en metode for å evaluere hvor vellykket et klassifiseringsproblem er, og hvor det gjør feil (det vil si hvor det blir «forvirret»).
@@ -73,7 +73,7 @@ Nøyaktighet er et viktig verktøy for kommunikasjon med domeneeksperter som ikk
 
 Når det gjelder scenarioet med betalingsprediksjon, kan du angi et mål for ML-modellen som omfatter faktorer i ulike betalingsatferder. Målet er at modellen skal forbedre en naiv gjetning ved å redusere antallet feilaktige svar med minst 50 prosent. Du vil med andre ord ha en målnøyaktighet som er et kompromiss mellom nøyaktigheten til en naiv gjetning og 100 prosent.
 
-Tabellen nedenfor inneholder et sammendrag av dette prinsippet for forvirringsmatrisene i dette emnet.
+Tabellen nedenfor inneholder et sammendrag av dette prinsippet for forvirringsmatrisene i denne artikkelen.
 
 | Modell   | Naiv gjetning | Mål | Modellnøyaktighet | Er målet oppnådd?                                          |
 |---------|-------------|--------|----------------|-----------------------------------------------------------|
@@ -82,7 +82,7 @@ Tabellen nedenfor inneholder et sammendrag av dette prinsippet for forvirringsma
 
 ## <a name="classification-f1-accuracy"></a>F1-nøyaktighet for klassifisering
 
-Det siste vi skal se på i dette emnet, er et mer avansert mål på ytelsen til klassifiserings-ML som kalles F1-nøyaktighet.
+Det siste vi skal se på i denne artikkelen, er et mer avansert mål på ytelsen til klassifiserings-ML som kalles F1-nøyaktighet.
 
 Før F1-nøyaktighet kan defineres, må to andre måleverdier introduseres: presisjon og tilbakekalling. Presisjon angir hvor mange av totalt antall prediksjoner som er angitt som positive, er riktig tilordnet. Denne måleverdien kalles også den positive forutsigende verdien. Tilbakekalling er det totale antallet av de faktiske positive tilfellene som ble riktig forutsagt. Denne måleverdien kalles også følsomhet.
 
@@ -97,7 +97,7 @@ F1-målingen kombinerer presisjon og tilbakekalling. Resultatet er den harmonisk
 
 - F1 = 2 × (presisjon × tilbakekalling) ÷ (presisjon + tilbakekalling)
 
-La oss se på et konkret eksempel. Tidligere i dette emnet var det et eksempel på en modell som forutsa om et dyr var en hund eller en katt. Illustrasjonen gjentas her.
+La oss se på et konkret eksempel. Tidligere i denne artikkelen var det et eksempel på en modell som forutsa om et dyr var en hund eller en katt. Illustrasjonen gjentas her.
 
 [![Eksempel på artsprediksjon (gjentatt).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
@@ -111,7 +111,7 @@ Som du kan se, er verdien for F1 mellom verdiene for presisjon og tilbakekalling
 
 Selv om det ikke er like lett å forstå F1-nøyaktighet, tilføyer det nyanse til det grunnleggende nøyaktighetstallet. Det kan også være til hjelp i ubalanserte datasett, som den følgende diskusjonen viser.
 
-Delen [Modellnøyaktighet](#model-accuracy) i dette emnet sammenlignet de to følgende forvirringsmatrisene. Selv om den første modellen hadde lavere nøyaktighet, ble den regnet for å være en nyttigere modell fordi den hadde større forbedring enn standardgjetningen for en betaling i tide.
+Delen [Modellnøyaktighet](#model-accuracy) i denne artikkelen sammenlignet de to følgende forvirringsmatrisene. Selv om den første modellen hadde lavere nøyaktighet, ble den regnet for å være en nyttigere modell fordi den hadde større forbedring enn standardgjetningen for en betaling i tide.
 
 ![Eksempel på betalingsprediksjon kontra faktiske tilfeller.](media/payment-prediction-matrix.png)
 

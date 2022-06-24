@@ -1,6 +1,6 @@
 ---
 title: Power BI-innhold for abonnementsfakturering
-description: Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet for abonnementsfakturering.
+description: Denne artikkelen beskriver hva som er inkludert i Microsoft Power BI-innholdet for abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 04/13/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-04-13
-ms.openlocfilehash: fad96bdaf60e7772e9ea1ff937435b0274303505
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6cee01eb5b8bb8296b6e7f638b565c999ccc023e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645423"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849967"
 ---
 # <a name="subscription-billing-power-bi-content"></a>Power BI-innhold for abonnementsfakturering
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet for abonnementsfakturering. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet. 
+Denne artikkelen beskriver hva som er inkludert i Microsoft Power BI-innholdet for abonnementsfakturering. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet. 
 
 ## <a name="overview"></a>Oversikt
 

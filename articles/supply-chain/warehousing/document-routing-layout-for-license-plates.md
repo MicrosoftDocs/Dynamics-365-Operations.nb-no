@@ -1,6 +1,6 @@
 ---
 title: Dokumentrutingsoppsett for nummerskiltetiketter
-description: Dette emnet beskriver hvordan du kan bruke formateringsmetoder til å skrive ut verdier på etiketter.
+description: Denne artikkelen beskriver hvordan du kan bruke formateringsmetoder til å skrive ut verdier på etiketter.
 author: perlynne
 ms.date: 04/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103896"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847882"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutingsoppsett for nummerskiltetiketter
 
@@ -53,7 +53,7 @@ Flere generelt tilgjengelige verktøy for etikettgenerering kan hjelpe deg med �
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funksjonen for systemet
 
-Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Forbedrede oppsett for nummerskiltetikett*. (Fra og med Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres.)
+Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i denne artikkelen, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Forbedrede oppsett for nummerskiltetikett*. (Fra og med Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres.)
 
 ## <a name="custom-number-formats"></a>Egendefinerte tallformater
 
@@ -129,7 +129,7 @@ Du kan skrive ut fra en visningsmetode ved å bruke følgende format.
 $DisplayMethod()$
 ```
 
-Du kan kombinere dette formatet med andre typer som ble beskrevet tidligere i dette emnet. Du kan for eksempel ha en visningsmetode kalt `DisplayListOfItemsNumbers()`, og du kan skrive ut det første varenummeret for denne metoden. I dette tilfellet kan du bruke følgende kode.
+Du kan kombinere dette formatet med andre typer som ble beskrevet tidligere i denne artikkelen. Du kan for eksempel ha en visningsmetode kalt `DisplayListOfItemsNumbers()`, og du kan skrive ut det første varenummeret for denne metoden. I dette tilfellet kan du bruke følgende kode.
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$

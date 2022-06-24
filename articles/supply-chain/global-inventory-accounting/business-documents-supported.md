@@ -1,6 +1,6 @@
 ---
 title: Forretningsdokumenter som støttes av Globalt lagerregnskap
-description: Dette emnet viser forretningsdokumentene som støttes av Globalt lagerregnskap. Det inneholder også et detaljert eksempel for bestillingsdokumenter.
+description: Denne artikkelen viser forretningsdokumentene som støttes av Globalt lagerregnskap. Det inneholder også et detaljert eksempel for bestillingsdokumenter.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 44081be35c6737aa0d16b6e11a5fc8f94b41e872
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: dc88d095c039b22ac347db949f6b61d5a89dc4b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674456"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875430"
 ---
 # <a name="business-documents-supported-by-global-inventory-accounting"></a>Forretningsdokumenter som støttes av Globalt lagerregnskap
 
@@ -32,7 +32,7 @@ Det er to typer forretningsdokumenter:
 - **Dokumenter som har en journal** – Disse dokumentene omfatter produktkvitteringer, innkjøpsfakturaer, følgesedler og salgsfakturaer.
 - **Dokumenter som ikke har en journal** – Disse dokumentene omfatter opptellings-, bevegelses- og lagerjusteringsdokumenter.
 
-Senere i dette emnet brukes bestillinger som et eksempel på prosessen.
+Senere i denne artikkelen brukes bestillinger som et eksempel på prosessen.
 
 Tabellen nedenfor viser dokumentene som gjeldende frigivelse støtter.
 

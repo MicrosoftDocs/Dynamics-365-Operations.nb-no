@@ -1,6 +1,6 @@
 ---
 title: Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten
-description: Dette emnet forklarer hvordan du laster ned elektroniske rapporteringskonfigurasjoner (ER) fra det globale repositoriet for konfigurasjonstjenesten.
+description: Denne artikkelen forklarer hvordan du laster ned elektroniske rapporteringskonfigurasjoner (ER) fra det globale repositoriet for konfigurasjonstjenesten.
 author: NickSelin
 ms.date: 06/02/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 4386e8fdbb2856d14d5b47ee5ab416c8d58b8d63
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605337"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891911"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigurasjoner (ER)](general-electronic-reporting.md#Configuration) fra det globale repositoriet for konfigurasjonstjenesten. Hvis du vil ha mer informasjon, kan du se [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurasjonstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Denne artikkelen forklarer hvordan du laster ned [elektroniske rapporteringskonfigurasjoner (ER)](general-electronic-reporting.md#Configuration) fra det globale repositoriet for konfigurasjonstjenesten. Hvis du vil ha mer informasjon, kan du se [Microsoft Dynamics 365 for Finance and Operations – Regulatory Services, konfigurasjonstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Åpne konfigurasjonsrepositoriet
 
@@ -80,7 +80,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
     ![Siden for konfigurasjonsrepositorium, Versjoner-hurtigfane, Importer-knapp.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
-> Avhengig av ER-innstillingene valideres konfigurasjonene når de er importert. Du kan få beskjed om eventuelle problemer som oppdages. Du må løse problemene før du kan bruke den importerte konfigurasjonsversjonen. Hvis du vil ha mer informasjon, se listen over relaterte ressurser for dette emnet.
+> Avhengig av ER-innstillingene valideres konfigurasjonene når de er importert. Du kan få beskjed om eventuelle problemer som oppdages. Du må løse problemene før du kan bruke den importerte konfigurasjonsversjonen. Hvis du vil ha mer informasjon, se listen over relaterte ressurser for denne artikkelen.
 
 > [!NOTE]
 > ER-konfigurasjoner kan konfigureres som avhengige av andre konfigurasjoner. Sammen med en valgt konfigurasjon kan derfor også andre konfigurasjoner importeres automatisk. Hvis du vil ha mer informasjon om avhengigheter, se [Definere avhengigheten for ER-konfigurasjoner på andre komponenter](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md).

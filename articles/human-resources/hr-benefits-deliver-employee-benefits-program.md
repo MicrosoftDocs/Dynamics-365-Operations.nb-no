@@ -1,6 +1,6 @@
 ---
 title: Levere program for ansattfordeler
-description: Dette emnet forklarer viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel.
+description: Denne artikkelen forklarer viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: c2ca6712346295454fd0d516816c596d4b010abb
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: cc063c42ba0b627eb4711b44533c745925d718af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688295"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877837"
 ---
 # <a name="deliver-employee-benefits-program"></a>Levere program for ansattfordeler
 
@@ -26,7 +26,7 @@ ms.locfileid: "8688295"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet forklarer viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.
+Denne artikkelen forklarer viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.
 
 
 ## <a name="create-benefit-elements"></a>Opprette fordelselementer

@@ -1,6 +1,6 @@
 ---
 title: Integrere Dynamics 365 Supply Chain Management (Aktivabehandling) med Dynamics 365 Guides
-description: Dette emnet forklarer hvordan du integrerer Aktivabehandling-modulen i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for å dra nytte av veiledninger for to virkelighet i de daglige tjeneste- og vedlikeholdsarbeidsflytene.
+description: Denne artikkelen forklarer hvordan du integrerer Aktivabehandling-modulen i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for å dra nytte av veiledninger for blandet virkelighet i de daglige tjeneste- og vedlikeholdsarbeidsflytene.
 author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d06978bcbd6205111384f5c7cefdf34fdbdbfbf5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568261"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875691"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Aktivabehandling) med Dynamics 365 Guides
 
@@ -47,7 +47,7 @@ Hvis du vil knytte til en veiledning, bruker du en kontrollistelinje for vedlike
 
 Følg disse trinnene for å knytte en veiledning til en mal for kontrolliste for vedlikehold.
 
-1. Opprett en veiledning ved å bruke Dynamics 365 Guides-PC og HoloLens-apper. Hvis du vil ha informasjon om hvordan du oppretter en veiledning, kan du se emnene nedenfor:
+1. Opprett en veiledning ved å bruke Dynamics 365 Guides-PC og HoloLens-apper. Hvis du vil ha informasjon om hvordan du oppretter en veiledning, kan du se artiklene nedenfor:
 
     - [Bruke PC-appen til å opprette en veiledning](/dynamics365/mixed-reality/guides/pc-app-overview)
     - [Bruke HoloLens-appen til å plassere hologrammene](/dynamics365/mixed-reality/guides/hololens-app-overview)

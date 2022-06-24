@@ -1,6 +1,6 @@
 ---
 title: Opprett en ny transportstyringsmotor
-description: Dette emnet beskriver hvordan du oppretter en ny transportstyringsmotor i Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver hvordan du oppretter en ny transportstyringsmotor i Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be52c6afb66e88b36f3b2cdf5af14e17b3d3005f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 627972ef6afb7551bb57821ded24183f8f335e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678129"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857264"
 ---
 # <a name="create-a-new-transportation-management-engine"></a>Opprett en ny transportstyringsmotor
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter en ny transportstyringsmotor i Dynamics 365 Supply Chain Management. 
+Denne artikkelen beskriver hvordan du oppretter en ny transportstyringsmotor i Dynamics 365 Supply Chain Management. 
 
 Transportbehandlingsmotorer (TMS) definerer logikken som brukes til å generere og behandle transportsatser i Transportstyring. Supply Chain Management gir flere forskjellige motortyper som beregner ulike parametere, for eksempel satser, transittider og antall soner som krysses under transport. Denne artikkelen beskriver hvordan du bruker Microsoft Visual Studio-utviklingsmiljøet sammen med utviklingsverktøy for Supply Chain Management til å opprette og distribuere en ny TMS-motor, og deretter hvordan du konfigurerer motoren i Operations. Hvis du vil ha mer informasjon om disse motorene, kan du se [Transportstyringsmotorer](transportation-management-engines.md).
 

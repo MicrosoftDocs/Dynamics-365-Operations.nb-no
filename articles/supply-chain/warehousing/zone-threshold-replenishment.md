@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f3e94cc79f0daac9107f9876ac8414d2c4cff366
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569005"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893127"
 ---
 # <a name="zone-threshold-replenishment"></a>Etterfylling av soneterskel
 
@@ -45,7 +45,7 @@ Før du kan bruke *Etterfylling av soneterskel*-funksjonen, må den aktiveres i 
 
 ## <a name="set-up-zone-based-replenishment"></a><a name="setup"></a>Konfigurere sonebasert etterfylling
 
-Hvis du vil konfigurere sonebasert etterfylling, må du konfigurere flere deler av systemet. Denne delen introduserer de ulike innstillingene og gir informasjon om demonstrasjonsdataverdier du kan angi hvis du vil jobbe gjennom scenariet på slutten av dette emnet.
+Hvis du vil konfigurere sonebasert etterfylling, må du konfigurere flere deler av systemet. Denne delen introduserer de ulike innstillingene og gir informasjon om demonstrasjonsdataverdier du kan angi hvis du vil jobbe gjennom scenariet på slutten av denne artikkelen.
 
 ### <a name="set-up-directive-codes"></a>Konfigurere direktivkoder
 
@@ -57,7 +57,7 @@ Hvis du vil vise eller redigere direktivkoder, går du til **Lagerstyring \> Opp
 
 #### <a name="prepare-demo-data-directive-codes"></a>Forberede direktivkoder for demonstrasjonsdata
 
-Dette eksemplet viser hvordan du klargjør en direktivkode. Hvis du planlegger å jobbe gjennom scenariet på slutten av dette emnet, bruker du demonstrasjonsdataverdiene som finnes her. Hvis ikke bruker du dine egne verdier.
+Dette eksemplet viser hvordan du klargjør en direktivkode. Hvis du planlegger å jobbe gjennom scenariet på slutten av denne artikkelen, bruker du demonstrasjonsdataverdiene som finnes her. Hvis ikke bruker du dine egne verdier.
 
 1. Velg den juridiske enheten **USMF** som skal brukes sammen med demonstrasjonsdataene.
 1. Gå til **Lagerstyring \> Oppsett \> Direktivkoder**.
@@ -79,7 +79,7 @@ En etterfyllingsmal er et sett med regler som bestemmer når og hvordan en lokas
 
 #### <a name="prepare-a-demo-data-replenishment-template"></a>Klargjøre en etterfyllingsmal for demonstrasjonsdata
 
-Dette eksemplet viser hvordan du klargjør en etterfyllingsmal. Hvis du planlegger å jobbe gjennom scenariet på slutten av dette emnet, bruker du demonstrasjonsdataverdiene som finnes her. Hvis ikke bruker du dine egne verdier.
+Dette eksemplet viser hvordan du klargjør en etterfyllingsmal. Hvis du planlegger å jobbe gjennom scenariet på slutten av denne artikkelen, bruker du demonstrasjonsdataverdiene som finnes her. Hvis ikke bruker du dine egne verdier.
 
 1. Velg den juridiske enheten **USMF** som skal brukes sammen med demonstrasjonsdataene.
 1. Gå til **Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler**.
@@ -144,7 +144,7 @@ Se neste del for eksempler som viser hvordan du kan bruke innstillingene til å 
 
 #### <a name="prepare-demo-data-location-directives"></a>Forberede lokasjonsdirektiver for demonstrasjonsdata
 
-Hvis du vil forberede demonstrasjonsdata slik at de kan brukes i scenariet på slutten av dette emnet, må du opprette to lokasjonsdirektiver: ett for plukking og ett for plassering.
+Hvis du vil forberede demonstrasjonsdata slik at de kan brukes i scenariet på slutten av denne artikkelen, må du opprette to lokasjonsdirektiver: ett for plukking og ett for plassering.
 
 ##### <a name="create-a-replenishment-pick-directive"></a>Opprette et plukkdirektiv for etterfylling
 
@@ -258,7 +258,7 @@ Denne delen inneholder et eksempelscenario som viser hvordan du arbeider med fun
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-sample-scenario"></a>Klargjøre eksempeldataene som kreves for eksempelscenarioet
 
-Før du begynner å jobbe gjennom scenariet, må du aktivere eksempeldata og konfigurere funksjonen som beskrevet i denne delen og i de forrige delene i dette emnet.
+Før du begynner å jobbe gjennom scenariet, må du aktivere eksempeldata og konfigurere funksjonen som beskrevet i denne delen og i de forrige delene i denne artikkelen.
 
 #### <a name="use-the-usmf-legal-entity"></a>Bruk den juridiske enheten USMF
 
@@ -266,7 +266,7 @@ For å arbeide deg gjennom dette scenariet ved å bruke de angitte eksempelposte
 
 #### <a name="prepare-additional-sample-data"></a>Klargjøre flere eksempeldata
 
-Når du har valgt den juridiske enheten **USMF**, legger du til de ekstra eksempeldataene som kreves, som beskrevet under [Konfigurere sonebasert etterfylling](#setup) tidligere i dette emnet.
+Når du har valgt den juridiske enheten **USMF**, legger du til de ekstra eksempeldataene som kreves, som beskrevet under [Konfigurere sonebasert etterfylling](#setup) tidligere i denne artikkelen.
 
 #### <a name="check-your-on-hand-inventory"></a>Kontrollere lagerbeholdningen
 

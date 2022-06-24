@@ -1,6 +1,6 @@
 ---
 title: Behandle fradrag med arbeidsområdet for fradrag
-description: Dette emnet beskriver hvordan du bruker fradragsarbeidsområdet til å behandle kundebetalinger som omfatter fradrag.
+description: Denne artikkelen beskriver hvordan du bruker fradragsarbeidsområdet til å behandle kundebetalinger som omfatter fradrag.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: bf98529176fbed368708ea925f542a70f2936037
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 607ad528b56d1f0c9a78e113f67c920cdae6e620
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500408"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873615"
 ---
 # <a name="manage-deductions-using-the-deduction-workbench"></a>Behandle fradrag med arbeidsområdet for fradrag
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker fradragsarbeidsområdet til å behandle kundebetalinger som omfatter fradrag.
+Denne artikkelen beskriver hvordan du bruker fradragsarbeidsområdet til å behandle kundebetalinger som omfatter fradrag.
 
 En kunde det tilkommer en rabatt, kan velge å ikke vente på en rabattutbetaling. I stedet kan kunden sende en betaling som inkluderer et fradrag for rabattbeløpet. Hvis du vil håndtere denne typen transaksjon, kan du bruke arbeidsområdet for fradrag for å samsvare fradrag til åpne kredittransaksjoner, dele fradrag, nekte fradrag og skrive av fradrag.
 
 > [!NOTE]
-> Arbeidsområdet for fradrag har vært en del av salgs- og markedsføringsfunksjonaliteten i Microsoft Dynamics 365 Supply Chain Management i lang tid. Den er imidlertid nå utvidet slik at det også fungerer med den nyere modulen **Rabattbehandling**. Dette emnet beskriver hvordan du bruker både eldre funksjoner og rabattbehandlingsfunksjoner på arbeidsområdet for fradrag. Hvis du ikke har [aktivert modulen **Rabattbehandling** for systemet](rebate-management-enable.md), vil imidlertid noe av funksjonaliteten som beskrives her, være tilgjengelig for deg.
+> Arbeidsområdet for fradrag har vært en del av salgs- og markedsføringsfunksjonaliteten i Microsoft Dynamics 365 Supply Chain Management i lang tid. Den er imidlertid nå utvidet slik at det også fungerer med den nyere modulen **Rabattbehandling**. Denne artikkelen beskriver hvordan du bruker både eldre funksjoner og rabattbehandlingsfunksjoner på arbeidsområdet for fradrag. Hvis du ikke har [aktivert modulen **Rabattbehandling** for systemet](rebate-management-enable.md), vil imidlertid noe av funksjonaliteten som beskrives her, være tilgjengelig for deg.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -159,11 +159,11 @@ Opprett et nytt fradrag i arbeidsområdet for fradrag, gjør følgende:
         - *Antallsbasert* – En negativ salgsordre eller returordre opprettes.
 
     - **Kravdato** – Velg datoen for kravet. Standardverdi er gjeldende dato.
-    - **Kravårsak** – Velg årsakskoden som gjelder for gjeldende fradrag. Kravgrunnlaget du valgte, påvirker alternativene som gjelder. Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer kravsårsakene som kan velges her, kan du se delen [Opprett fradragsårsaker](#deduction-reasons) tidligere i dette emnet.
+    - **Kravårsak** – Velg årsakskoden som gjelder for gjeldende fradrag. Kravgrunnlaget du valgte, påvirker alternativene som gjelder. Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer kravsårsakene som kan velges her, kan du se delen [Opprett fradragsårsaker](#deduction-reasons) tidligere i denne artikkelen.
     - **Merknader** – Legg til eventuelle merknader som gjelder. Når kravet er godkjent, kan godkjenneren redigere eller legge til i kravets merknader.
     - **Opprett kravjournal** – Angi dette alternativet for å angi om det skal opprettes kravjournal når kravet eller fradraget opprettes:
 
-        - *Ja* – Systemet vil opprette og postere en generell journal ved hjelp av kravjournalen som er definert på siden **Kundeparametere**. (Hvis du vil ha mer informasjon, kan du se [Konfigurer kunder og fradrag](#accounts-receivable-deductions) tidligere i dette emnet.) Når en faktura er knyttet til kravet, brukes kravjournalen til å redusere saldoen på gjeldende faktura. Hvis kravet senere avvises, tilbakeføres kravjournalen og utligningene (hvis en faktura var tilknyttet).
+        - *Ja* – Systemet vil opprette og postere en generell journal ved hjelp av kravjournalen som er definert på siden **Kundeparametere**. (Hvis du vil ha mer informasjon, kan du se [Konfigurer kunder og fradrag](#accounts-receivable-deductions) tidligere i denne artikkelen.) Når en faktura er knyttet til kravet, brukes kravjournalen til å redusere saldoen på gjeldende faktura. Hvis kravet senere avvises, tilbakeføres kravjournalen og utligningene (hvis en faktura var tilknyttet).
         - *Nei* – Det opprettes ikke en kravjournal nå. Det blir opprettet når kravet godkjennes. En faktura kan fremdeles knyttes til det nye kravet, selv om det ikke er opprettet en journal for krav. Utligningen kan imidlertid ikke utføres uten kravjournalen.
 
 1. Velg **OK**.
@@ -197,11 +197,11 @@ Prosessen med å opprette et fradrag fra en kundeutligning ligner prosessen med 
         - *Antallsbasert* – En negativ salgsordre eller returordre opprettes.
 
     - **Kravdato** – Velg datoen for kravet. Standardverdi er gjeldende dato.
-    - **Kravårsak** – Velg årsakskoden som gjelder for gjeldende fradrag. Kravgrunnlaget du valgte, påvirker alternativene som gjelder. Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer kravsårsakene som kan velges her, kan du se delen [Opprett fradragsårsaker](#deduction-reasons) tidligere i dette emnet.
+    - **Kravårsak** – Velg årsakskoden som gjelder for gjeldende fradrag. Kravgrunnlaget du valgte, påvirker alternativene som gjelder. Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer kravsårsakene som kan velges her, kan du se delen [Opprett fradragsårsaker](#deduction-reasons) tidligere i denne artikkelen.
     - **Merknader** – Legg til eventuelle merknader som gjelder. Når kravet er godkjent, kan godkjenneren redigere eller legge til i kravets merknader.
     - **Opprett kravjournal** – Angi dette alternativet for å angi om det skal opprettes kravjournal når kravet eller fradraget opprettes:
 
-        - *Ja* – Systemet vil opprette og postere en generell journal ved hjelp av kravjournalen som er definert på siden **Kundeparametere**. (Hvis du vil ha mer informasjon, kan du se [Konfigurer kunder og fradrag](#accounts-receivable-deductions) tidligere i dette emnet.) Når en faktura er knyttet til kravet, brukes kravjournalen til å redusere saldoen på gjeldende faktura. Hvis kravet senere avvises, tilbakeføres kravjournalen og utligningene (hvis en faktura var tilknyttet).
+        - *Ja* – Systemet vil opprette og postere en generell journal ved hjelp av kravjournalen som er definert på siden **Kundeparametere**. (Hvis du vil ha mer informasjon, kan du se [Konfigurer kunder og fradrag](#accounts-receivable-deductions) tidligere i denne artikkelen.) Når en faktura er knyttet til kravet, brukes kravjournalen til å redusere saldoen på gjeldende faktura. Hvis kravet senere avvises, tilbakeføres kravjournalen og utligningene (hvis en faktura var tilknyttet).
         - *Nei* – Det opprettes ikke en kravjournal nå. Det blir opprettet når kravet godkjennes. En faktura kan fremdeles knyttes til det nye kravet, selv om det ikke er opprettet en journal for krav. Utligningen kan imidlertid ikke utføres uten kravjournalen.
 
 1. Velg **OK**.
@@ -235,11 +235,11 @@ Prosessen med å opprette et fradrag fra en kundeside ligner prosessen med å op
         - *Antallsbasert* – En negativ salgsordre eller returordre opprettes.
 
     - **Kravdato** – Velg datoen for kravet. Standardverdi er gjeldende dato.
-    - **Kravårsak** – Velg årsakskoden som gjelder for gjeldende fradrag. Kravgrunnlaget du valgte, påvirker alternativene som gjelder. Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer kravsårsakene som kan velges her, kan du se delen [Opprett fradragsårsaker](#deduction-reasons) tidligere i dette emnet.
+    - **Kravårsak** – Velg årsakskoden som gjelder for gjeldende fradrag. Kravgrunnlaget du valgte, påvirker alternativene som gjelder. Hvis du vil ha mer informasjon om hvordan du oppretter og konfigurerer kravsårsakene som kan velges her, kan du se delen [Opprett fradragsårsaker](#deduction-reasons) tidligere i denne artikkelen.
     - **Merknader** – Legg til eventuelle merknader som gjelder. Når kravet er godkjent, kan godkjenneren redigere eller legge til i kravets merknader.
     - **Opprett kravjournal** – Angi dette alternativet for å angi om det skal opprettes kravjournal når kravet eller fradraget opprettes:
 
-        - *Ja* – Systemet vil opprette og postere en generell journal ved hjelp av kravjournalen som er definert på siden **Kundeparametere**. (Hvis du vil ha mer informasjon, kan du se [Konfigurer kunder og fradrag](#accounts-receivable-deductions) tidligere i dette emnet.) Når en faktura er knyttet til kravet, brukes kravjournalen til å redusere saldoen på gjeldende faktura. Hvis kravet senere avvises, tilbakeføres kravjournalen og utligningene (hvis en faktura var tilknyttet).
+        - *Ja* – Systemet vil opprette og postere en generell journal ved hjelp av kravjournalen som er definert på siden **Kundeparametere**. (Hvis du vil ha mer informasjon, kan du se [Konfigurer kunder og fradrag](#accounts-receivable-deductions) tidligere i denne artikkelen.) Når en faktura er knyttet til kravet, brukes kravjournalen til å redusere saldoen på gjeldende faktura. Hvis kravet senere avvises, tilbakeføres kravjournalen og utligningene (hvis en faktura var tilknyttet).
         - *Nei* – Det opprettes ikke en kravjournal nå. Det blir opprettet når kravet godkjennes. En faktura kan fremdeles knyttes til det nye kravet, selv om det ikke er opprettet en journal for krav. Utligningen kan imidlertid ikke utføres uten kravjournalen.
 
 1. Velg **OK**.
@@ -280,7 +280,7 @@ Følg denne fremgangsmåten for å få samsvar mellom et fradrag og kreditering.
 1. Klikk på **Vedlikehold \> Samsvar** i handlingsruten. Systemet samsvarer fradraget til kreditten. Hvis det gjenstår en saldo i fradraget, vises det i **Gjenværende beløp**-feltet i fanen **Fradrag**.
 
     > [!NOTE]
-    > For fradrag som ble opprettet ved å bruke kommandoen **Ny fratrekk** på arbeidsområdet, kundeutligning eller kundesiden, er kommandoen **Vedlikehold \> Samsvar** bare tilgjengelig hvis feltet **Kravstatus** er satt til *Godkjenn*. Denne kommandoen kan brukes til å samsvare den prisbaserte eller antallsbaserte transaksjonen manuelt med den tilknyttede kreditten i **Åpne transaksjoner**-delen. Denne kreditten opprettes enten når fradraget godkjennes (ved å bruke kommandoen **Vedlikehold \> Godkjenn fradrag**), eller når det er knyttet til en eksisterende kreditt som beskrevet i delen [Kreditter som er opprettet utenfor godkjenningsfradragsprosessen](#credits-outside-approval) senere i dette emnet. Den periodiske oppgaven *Utligne godkjente fradrag* (**Salgsmarkedsføring \> Periodiske oppgaver \> Utligne godkjente fradrag**) kan også brukes til å samsvare automatisk fradrag og kreditt som har samsvarende **fradrags-ID**-verdier og -beløp.
+    > For fradrag som ble opprettet ved å bruke kommandoen **Ny fratrekk** på arbeidsområdet, kundeutligning eller kundesiden, er kommandoen **Vedlikehold \> Samsvar** bare tilgjengelig hvis feltet **Kravstatus** er satt til *Godkjenn*. Denne kommandoen kan brukes til å samsvare den prisbaserte eller antallsbaserte transaksjonen manuelt med den tilknyttede kreditten i **Åpne transaksjoner**-delen. Denne kreditten opprettes enten når fradraget godkjennes (ved å bruke kommandoen **Vedlikehold \> Godkjenn fradrag**), eller når det er knyttet til en eksisterende kreditt som beskrevet i delen [Kreditter som er opprettet utenfor godkjenningsfradragsprosessen](#credits-outside-approval) senere i denne artikkelen. Den periodiske oppgaven *Utligne godkjente fradrag* (**Salgsmarkedsføring \> Periodiske oppgaver \> Utligne godkjente fradrag**) kan også brukes til å samsvare automatisk fradrag og kreditt som har samsvarende **fradrags-ID**-verdier og -beløp.
 
 ### <a name="split-a-deduction"></a>Del et fradrag
 

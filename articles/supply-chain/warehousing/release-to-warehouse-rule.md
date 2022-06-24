@@ -1,6 +1,6 @@
 ---
 title: Frigi til lager-regel
-description: Dette emnet gir informasjon om funksjonen Frigi til lager-regel, som gir fleksibilitet under frigivelse til lageret. Det legger til et konfigurasjonsalternativ som kontrollerer om systemet tillater at det frigis delvise reserverte ordrelinjer.
+description: Denne artikkelen gir informasjon om funksjonen Frigi til lager-regel, som gir fleksibilitet under frigivelse til lageret. Det legger til et konfigurasjonsalternativ som kontrollerer om systemet tillater at det frigis delvise reserverte ordrelinjer.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5fef1d942f2e9d3467fb8a00c6d89cc5c018a5aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c011938438be32e8a3169d90561ab329da32e32a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895474"
 ---
 # <a name="release-to-warehouse-rule"></a>Frigi til lager-regel
 
@@ -78,7 +78,7 @@ Du kan også bruke disse scenariene som en veiledning for å bruke funksjonen n�
 Dette scenariet viser hvordan funksjonen fungerer for lagre som er satt til **Krev full reservasjon**.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
-1. For lager _62_ angir du **Krav for beholdningsreservasjon**-feltet til **Krev full reservasjon**, som beskrevet i delen [Angi Frigi til lager-regelen for hvert lager](#set-option-warehouse) tidligere i dette emnet.
+1. For lager _62_ angir du **Krav for beholdningsreservasjon**-feltet til **Krev full reservasjon**, som beskrevet i delen [Angi Frigi til lager-regelen for hvert lager](#set-option-warehouse) tidligere i denne artikkelen.
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** for å opprette en salgsordre.
 1. I **Opprett salgsordre**-dialogboksen angir du følgende verdier:
@@ -112,7 +112,7 @@ Dette scenariet viser hvordan funksjonen fungerer for lagre som er satt til **Kr
 Dette scenariet viser hvordan funksjonen fungerer for lagre som er satt til **Tillat delvis frigivelse**.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
-1. For lager _62_ angir du **Krav for beholdningsreservasjon**-feltet til **Tillat delvis reservasjon**, som beskrevet i delen [Angi Frigi til lager-regelen for hvert lager](#set-option-warehouse) tidligere i dette emnet.
+1. For lager _62_ angir du **Krav for beholdningsreservasjon**-feltet til **Tillat delvis reservasjon**, som beskrevet i delen [Angi Frigi til lager-regelen for hvert lager](#set-option-warehouse) tidligere i denne artikkelen.
 1. På samme måte som i det [forrige scenariet](#scenario1), går du til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**, og oppretter du en salgsordre for kundekonto _US-004_ fra lager _62_. Legg til følgende to ordrelinjer:
 
     - **Linje 1:** Angi **Varenummer**-feltet til _A0001_, **Antall**-feltet til _2_ og **Enhet**-feltet til _Pcs_.

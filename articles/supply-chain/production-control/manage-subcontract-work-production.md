@@ -1,6 +1,6 @@
 ---
-title: Administrer utsetting arbeid i produksjon
-description: Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Dynamics 365 Supply Chain Management. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
+title: Administrer utsettingsarbeid i produksjon
+description: Denne artikkelen forklarer hvordan underleveranseoperasjoner behandles i Dynamics 365 Supply Chain Management. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e80efc751ccf9243163d23ed48fd17923326f89
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a0021d409f9f4a9b36effbd80a99766812572d5b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579385"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863802"
 ---
-# <a name="manage-subcontracting-work-in-production"></a>Administrer utsetting arbeid i produksjon
+# <a name="manage-subcontracting-work-in-production"></a>Administrer utsettingsarbeid i produksjon
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan underleveranseoperasjoner behandles i Dynamics 365 Supply Chain Management. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
+Denne artikkelen forklarer hvordan underleveranseoperasjoner behandles i Dynamics 365 Supply Chain Management. Med andre ord, forklarer det hvordan produksjonsoperasjoner som er tildelt en ressurs er styrt av en leverandør.
 
 I [produksjonsprosesser](production-process-overview.md), arbeidet kan gjøres av ressurser som eies eller administreres av leverandører. Leverandør ressurser brukes vanligvis til nivå periodiske overflødige behovet som bruke enn de som den disponible kapasiteten i et firma eier ressurser. Leverandøren vil kanskje også kunne tilby spesifikke [ressursfunksjoner](resource-capabilities.md) eller ressurser til en lavere pris.  
 
@@ -63,7 +63,7 @@ Når denne konfigurasjonen brukes, opprettes en bestilling for relaterte tjenest
 En produksjonsordre kan ha mange operasjoner, og hver operasjon kan tildeles til en annen leverandør. Derfor kan en produksjonsordre for ende-til-ende utløse flere bestillinger.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Utsetting av produksjonsflytaktiviteter
-I [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodeller er utsettingen av areid modellert som en tjeneste som er knyttet til en aktivitet i en [produksjonsflyt](tasks/create-production-flow-version.md) (emne i oppgaveguide). Derfor er denne typen utsetting også referert til som [aktivitetsbasert utsetting.](activity-based-subcontracting.md) En spesiell kostgruppetype, **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av stykklisten over fullførte varer. Når du bruker lean manufacturing, er alle aktiviteter definert av kanbaner som kan være relatert til én eller flere produksjonsflytaktiviteter. Så langt høres den forklaringen ut akkurat som en forklaring på produksjonsordrer. Mens produksjonsordrene alltid må avsluttes med et ferdig produkt, kan du imidlertid opprette kanbaner for å levere halvferdig produkt. Du trenger ikke å introdusere et nytt produkt og stykklistenivå.  
+I [lean manufacturing](lean-manufacturing-overview.md)-løsningsmodeller er utsettingen av areid modellert som en tjeneste som er knyttet til en aktivitet i en [produksjonsflyt](tasks/create-production-flow-version.md) (artikkel i oppgaveguide). Derfor er denne typen utsetting også referert til som [aktivitetsbasert utsetting.](activity-based-subcontracting.md) En spesiell kostgruppetype, **Direkte utsetting**, er introdusert, og utsettingstjenester er ikke lenger en del av stykklisten over fullførte varer. Når du bruker lean manufacturing, er alle aktiviteter definert av kanbaner som kan være relatert til én eller flere produksjonsflytaktiviteter. Så langt høres den forklaringen ut akkurat som en forklaring på produksjonsordrer. Mens produksjonsordrene alltid må avsluttes med et ferdig produkt, kan du imidlertid opprette kanbaner for å levere halvferdig produkt. Du trenger ikke å introdusere et nytt produkt og stykklistenivå.  
 
 Siden kanban-regler kan være svært dynamiske, kan du utforme forskjellige varianter av forsyning for samme produkt på en produksjonsflyt. Når du bruker lean utsetting, er materialflyten og finansflyten strengt atskilt. All materialflyt representeres av kanban-aktiviteter. Bestillinger for tjenesteprodukter og mottaksposteringer av disse tjenestene kan automatiseres, basert på statusen for kanban-jobber i produksjonsflyten. Kanban-jobber kan startes og fullføres selv før bestillingen er opprettet. Utsettingsdokumenter (bestilling og mottak av tjenesten) kan aggregeres etter periode og tjeneste. Antall kjøpsdokumenter og linjer kan derfor holdes lavt, selv i svært gjentatte operasjoner der leverandører gir underleveranser i en enkelt brikke flyt.
 

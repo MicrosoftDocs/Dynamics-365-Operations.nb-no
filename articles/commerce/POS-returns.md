@@ -1,6 +1,6 @@
 ---
 title: Opprette returer i POS
-description: Dette emnet beskriver hvordan du starter returer for hentesalgstransaksjoner eller kundeordrer i Microsoft Dynamics 365 Commerce Point of Sale (POS).
+description: Denne artikkelen beskriver hvordan du starter returer for hentesalgstransaksjoner eller kundeordrer i Microsoft Dynamics 365 Commerce Point of Sale (POS).
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: a49e9abd0143d480cc1cafb05be5e995fb3cebdd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857004"
 ---
 # <a name="create-returns-in-pos"></a>Opprette returer i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du starter returer for hentesalgstransaksjoner eller kundeordrer i appen Microsoft Dynamics 365 Commerce Point of Sale (POS).
+Denne artikkelen beskriver hvordan du starter returer for hentesalgstransaksjoner eller kundeordrer i appen Microsoft Dynamics 365 Commerce Point of Sale (POS).
 
 > [!NOTE]
 > Det er en ny funksjon kalt **Enhetlig returbehandling i POS** tilgjengelig i Commerce versjon 10.0.20 og nyere. Denne funksjonen gir en mer konsekvent og enhetlig returprosess i POS, uavhengig av transaksjonstypen (hentesalgstransaksjon eller kundeordre) eller den opprinnelige kanalen ordren ble opprettet i. Vi anbefaler at alle organisasjoner aktiverer denne nye funksjonen for å forbedre den helhetlige påliteligheten til returbehandling via POS.

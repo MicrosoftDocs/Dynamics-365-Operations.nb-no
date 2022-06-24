@@ -1,6 +1,6 @@
 ---
 title: Synkronisere lageroverføringer og -justeringer fra Field Service til Supply Chain Management
-description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagerjusteringer og -overføringer fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
+description: Denne artikkelen omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagerjusteringer og -overføringer fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 author: Henrikan
 ms.date: 04/30/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: cfa7f617cbc4cd75d669972b35f8d33ba3cbcc56
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: e59e50a4f54bac749b3d860404a3ecd444d99a89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854101"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Synkronisere lageroverføringer og -justeringer fra Field Service til Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061685"
 
 
 
-Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagerjusteringer og -overføringer fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
+Denne artikkelen omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagerjusteringer og -overføringer fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
 [![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/FSTransAdjOW.png)](./media/FSTransAdjOW.png)
 

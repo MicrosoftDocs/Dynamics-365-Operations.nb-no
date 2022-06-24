@@ -1,6 +1,6 @@
 ---
 title: Oversikt over oppgradering av avskrivningstablå
-description: Dette emnet beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer.
+description: Denne artikkelen beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: overview
@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b43c499928988e98cae63b85f528b8a71e042cc7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 784ec32ae886ef7ea9342b085f893eeeec761961
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713649"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855498"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering av avskrivningstablå
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. Verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Med tablåfunksjonalitet kan du bruke ett enkelt sett med sider, forespørsler og rapporter for alle organisasjonens anleggsmiddelprosesser. Dette emnet inneholder noe du bør vurdere før du oppgraderer. 
+Denne artikkelen beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. Verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Med tablåfunksjonalitet kan du bruke ett enkelt sett med sider, forespørsler og rapporter for alle organisasjonens anleggsmiddelprosesser. Denne artikkelen inneholder noe du bør vurdere før du oppgraderer. 
 
 Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes til et tablå bok med alternativet Poster til økonomimodul satt til Ingen. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til Ingen. Avskrivningstablåtransaksjoner vil bli flyttet til anleggsmiddeltransaksjoner.
 

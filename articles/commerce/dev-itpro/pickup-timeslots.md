@@ -1,6 +1,6 @@
 ---
-title: Opprett og oppdater tidspunkter for kundehenting
-description: Dette emnet beskriver hvordan du oppretter, konfigurerer og oppdaterer hentetidspunkter for kunder i Commerce Headquarters.
+title: Opprett og oppdater tidsrom for kundehenting
+description: Denne artikkelen beskriver hvordan du oppretter, konfigurerer og oppdaterer hentetidspunkter for kunder i Commerce headquarters.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a135f592225e4b388b5c9fdaa5fe23e60baf0185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713427"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882239"
 ---
-# <a name="create-and-update-time-slots-for-customer-pickup"></a>Opprett og oppdater tidspunkter for kundehenting
+# <a name="create-and-update-time-slots-for-customer-pickup"></a>Opprett og oppdater tidsrom for kundehenting
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter, konfigurerer og oppdaterer hentetidspunkter for kunder i Commerce Headquarters.
+Denne artikkelen beskriver hvordan du oppretter, konfigurerer og oppdaterer hentetidspunkter for kunder i Commerce headquarters.
 
 Tidspunktfunksjonen gjør det mulig for forhandlere å definere et tidspunkt for varer som henteleveringsmåten for kunden er aktivert for. Ved hjelp av tidspunkter kan forhandlere definere dagene og klokkeslettene når ordrer kan hentes fra en butikk. Forhandlerne kan også definere antall ordrer som kan hentes i løpet av en gitt periode. På denne måten kan forhandlerne begrense antall ordrer som kan hentes på en bestemt dag, og på et gitt tidspunkt. Resultatet er en bedre kvalitetsopplevelse for kundene.
 

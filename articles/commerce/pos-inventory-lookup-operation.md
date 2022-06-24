@@ -1,6 +1,6 @@
 ---
 title: Lageroppslag på salgsstedet
-description: Dette emnet beskriver hvordan du bruker lageroppslagsoperasjonen på Dynamics 365 Commerce-salgsstedet til å vise tilgjengelighet av lagerbeholdning av produkter på tvers av butikker og lagre.
+description: Denne artikkelen beskriver hvordan du bruker lageroppslagsoperasjonen på Dynamics 365 Commerce-salgsstedet til å vise tilgjengelighet av lagerbeholdning av produkter på tvers av butikker og lagre.
 author: boycezhu
 ms.date: 08/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 01f10c348c61ffbcb30be26a57b3edd436aacc8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343842"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850255"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lageroppslag på salgsstedet
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker lageroppslagsoperasjonen på Dynamics 365 Commerce-salgsstedet til å vise tilgjengelighet av lagerbeholdning av produkter på tvers av butikker og lagre.
+Denne artikkelen beskriver hvordan du bruker lageroppslagsoperasjonen på Dynamics 365 Commerce-salgsstedet til å vise tilgjengelighet av lagerbeholdning av produkter på tvers av butikker og lagre.
 
 En nøyaktig visning av lageret i en organisasjon hjelper butikkansatte med å gi en rask og effektiv kundeservice. Øyeblikket som betyr mest, er når en kunde er klar til å ta en kjøpsbeslutning. Det er viktig at kasserere i en detaljhandel har nær sanntid- eller sanntidsinformasjon om lageret lett tilgjengelig, slik at de kan gi riktig informasjon om produktlevering og plukking.
 

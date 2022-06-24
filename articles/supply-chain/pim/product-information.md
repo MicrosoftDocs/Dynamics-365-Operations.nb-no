@@ -1,6 +1,6 @@
 ---
 title: Oversikt over produktinformasjon
-description: Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene.
+description: Denne artikkelen inneholder informasjon om behandling av produktinformasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene.
 author: t-benebo
 ms.date: 06/01/2017
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c8aabeed66f864d1d1060a6452a3b554611c295
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: fa06e718d2acc44cfced7db842814c48fb210d1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063322"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867876"
 ---
 # <a name="product-information-overview"></a>Oversikt over produktinformasjon
 
@@ -28,7 +28,7 @@ ms.locfileid: "8063322"
 
 
 
-Dette emnet inneholder informasjon om produktinformasjonsadministrasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene. 
+Denne artikkelen inneholder informasjon om behandling av produktinformasjon. Behandling av produktinformasjon fungerer sammen med en delt produktdefinisjon, -kategorisering og -identifikatorer på tvers av alle juridiske enheter, og bestemte konfigurasjoner av et produkt, slik at den passer til forretningsprosessene. 
 
 Produktinformasjon er ryggraden i forsyningskjeden og handelsprogrammer på tvers av alle bransjer. Den refererer til prosesser og teknologier som fokuserer på sentral administrasjon av informasjon om produkter (for eksempel på tvers av forsyningskjeder). Det er svært viktig at delte produktdefinisjoner, dokumentasjon, attributter og identifikatorer brukes. I de forskjellige modulene i en bedriftsløsning kreves produktspesifikk informasjon og konfigurasjon for å behandle forretningsprosesser som er knyttet til bestemte produkter, produktfamilier eller produktkategorier.
 

@@ -1,6 +1,6 @@
 ---
 title: Rabattstatuser
-description: Dette emnet beskriver hvordan du setter opp rabattstatuser. Ved hjelp av rabattstatuser kan du spore statusen til hver avtale. Du kan også bruke dem til rapporterings- og forespørselsformål.
+description: Denne artikkelen beskriver hvordan du setter opp rabattstatuser. Ved hjelp av rabattstatuser kan du spore statusen til hver avtale. Du kan også bruke dem til rapporterings- og forespørselsformål.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 47aa3dbd382c9c74e6ac7d731b55430d4be63dec
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86da2dfe3d398ac12dcff45b579a572e31d6a90d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692596"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901886"
 ---
 # <a name="rebate-statuses"></a>Rabattstatuser
 

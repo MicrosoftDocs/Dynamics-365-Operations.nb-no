@@ -1,6 +1,6 @@
 ---
 title: Kom i gang med avgiftsberegning
-description: Dette emnet forklarer hvordan du konfigurerer avgiftsberegning.
+description: Denne artikkelen forklarer hvordan du konfigurerer avgiftsberegning.
 author: wangchen
 ms.date: 03/25/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0ab9c0cf974114c4fa9b673e5601e138acef534d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c2293102057ac055f0958c1c6b1de2a19cb331d5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685918"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855290"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Delene i dette emnet veileder deg gjennom utforming på høyt nivå og konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
+Denne artikkelen gir informasjon om hvordan du kommer i gang med avgiftsberegning. Delene i denne artikkelen veileder deg gjennom utforming på høyt nivå og konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
 Oppsettet består av tre hovedtrinn.
 
@@ -77,11 +77,11 @@ Når du har fullført disse trinnene, blir følgende oppsett automatisk synkroni
 - Mva-grupper
 - Vare, mva-grupper
 
-De gjenværende delene i dette emnet gir mer detaljerte konfigurasjonstrinn.
+De gjenværende delene i denne artikkelen gir mer detaljerte konfigurasjonstrinn.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Før du kan fullføre de gjenværende trinnene i dette emnet må følgende forutsetninger være på plass:<!--TO HERE-->
+Før du kan fullføre de gjenværende trinnene i denne artikkelen må følgende forutsetninger være på plass:<!--TO HERE-->
 
 - Du må ha tilgang til LCS-kontoen din, og du må ha distribuert et LCS-prosjekt som har et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.21 eller senere.
 - Du må opprette et RCS-miljø for din organisasjon, og du må ha tilgang til kontoen. Hvis du vil ha mer informasjon om hvordan du oppretter et RCS-miljø, kan du se [Oversikt over Regulatory Configuration Service](rcs-overview.md).
@@ -212,7 +212,7 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     | Salg            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
-    > Hvis standard mva-gruppe på de avgiftspliktige dokumentlinjene er riktig, lar du denne matrisen stå tom. Hvis du vil ha mer informasjon, kan du se delen [Kjøretidsutforming](#runtime) i dette emnet.
+    > Hvis standard mva-gruppe på de avgiftspliktige dokumentlinjene er riktig, lar du denne matrisen stå tom. Hvis du vil ha mer informasjon, kan du se delen [Kjøretidsutforming](#runtime) i denne artikkelen.
 
 22. På fanen **Relevans for vareavgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftskode, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Vareavgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes vareavgiftsgruppen på transaksjonslinjen.
 
@@ -224,7 +224,7 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     | D0003     | Redusert        |
 
     > [!NOTE]
-    > Hvis standard mva-varegruppe på de avgiftspliktige dokumentlinjene er riktig, lar du denne matrisen stå tom. Hvis du vil ha mer informasjon, kan du se delen [Kjøretidsutforming](#runtime) i dette emnet.
+    > Hvis standard mva-varegruppe på de avgiftspliktige dokumentlinjene er riktig, lar du denne matrisen stå tom. Hvis du vil ha mer informasjon, kan du se delen [Kjøretidsutforming](#runtime) i denne artikkelen.
 
     Hvis du vil ha mer informasjon om hvordan avgiftskoder bestemmes i Avgiftsberegning, kan du se [Logikk for fastsettelse av avgiftsgruppe og vareavgiftsgruppe](global-sales-tax-group-determination.md).
 
@@ -243,7 +243,7 @@ Oppsettet i denne delen utføres av en juridisk enhet. Du må konfigurere det fo
 2. Angi følgende felt i fanen **Generelt**:
 
     - **Aktiver tjeneste for avgiftsberegning** – Merk av i denne boksen for å aktivere avgiftsberegning for den juridiske enheten. Hvis det ikke er aktivert for gjeldende juridisk enhet, vil den juridiske enheten fortsette å bruke den eksisterende avgiftsmotoren til å bestemme og beregne avgift.
-    - **Funksjonsoppsett** – Velg et oppsett og en versjon for den juridiske enheten. Hvis du vil ha mer informasjon om hvordan du setter opp og fullfører en publisert avgiftsfunksjon, kan du se den forrige delen av dette emnet.
+    - **Funksjonsoppsett** – Velg et oppsett og en versjon for den juridiske enheten. Hvis du vil ha mer informasjon om hvordan du setter opp og fullfører en publisert avgiftsfunksjon, kan du se den forrige delen av denne artikkelen.
     - **Forretningsprosess** – Velg forretningsprosessene som skal aktiveres.
 
 3. I kategorien **Beregning** definerer du den forventede avrundingsregelen for den juridiske enheten. Hvis du vil ha mer informasjon om avrundingslogikken, kan du se [Avrundingsregler for avgiftsberegning](https://go.microsoft.com/fwlink/?linkid=2166988).

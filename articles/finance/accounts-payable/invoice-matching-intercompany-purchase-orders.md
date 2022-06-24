@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e884e96e1275f9162b642bbe48c2d891c6434002
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: d4be32a7158561bdf00a996831dca7395ce6f331
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109974"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879747"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturakontroll og konserninterne bestillinger
 
@@ -28,7 +28,7 @@ ms.locfileid: "8109974"
 
 Den juridiske enheten for innkjøp som er involvert i en konsernintern handelstransaksjon kan være konfigurert til å bruke leverandørfakturasamsvar. Når feltet **Poster faktura med avvik** på siden **Leverandørparametere** er satt til **Krev godkjenning**, utføres validering av fakturakontroll. I så fall må posteringskravene for både konsernintern handel og leverandørfakturasamsvar være oppfylt før konserninterne leverandørfakturaer kan posteres.
 
-Eksemplene i dette emnet bruker følgende oppsett for konsernintern handel:
+Eksemplene i denne artikkelen bruker følgende oppsett for konsernintern handel:
 -   Fabrikam Innkjøp er den juridiske enheten for innkjøp.
 -   Fabrikam Salg er den juridiske enheten salg.
 -   Kunde 4020 finnes hos Fabrikam Salg.

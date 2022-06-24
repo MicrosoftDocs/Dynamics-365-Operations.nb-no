@@ -1,6 +1,6 @@
 ---
 title: Produksjonsplanlegging
-description: Dette emnet beskriver planlegging for produksjon, og forklarer hvordan du endrer planlagte produksjonsordrer ved å bruke planleggingsoptimalisering.
+description: Denne artikkelen beskriver planlegging for produksjon, og forklarer hvordan du endrer planlagte produksjonsordrer ved å bruke planleggingsoptimalisering.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8f23cb62512dfd718fe199867a4b21aaa0eca3fd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 151aa3688c570ea6ec282c297ed18288dd886131
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873789"
 ---
 # <a name="production-planning"></a>Produksjonsplanlegging
 
@@ -24,11 +24,11 @@ ms.locfileid: "8469065"
 
 Planleggingsoptimalisering støtter flere produksjonsscenarioer. Hvis du går over fra den eksisterende, innebygde hovedplanleggingsmotoren, er det viktig å være oppmerksom på noen endrede virkemåter.
 
-Følgende video gir en kort innføring i noen av begrepene som omhandles i dette emnet: [Dynamics 365 Supply Chain Management: Planlegge optimaliseringsforbedringer](https://youtu.be/u1pcmZuZBTw).
+Følgende video gir en kort innføring i noen av begrepene som omhandles i denne artikkelen: [Dynamics 365 Supply Chain Management: Planlegge optimaliseringsforbedringer](https://youtu.be/u1pcmZuZBTw).
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funksjonen for systemet
 
-Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Planlagte produksjonsordrer for planleggingsoptimalisering*.
+Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i denne artikkelen, kan du gå til [Funksjonsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Planlagte produksjonsordrer for planleggingsoptimalisering*.
 
 ## <a name="planned-production-orders"></a>Planlagte produksjonsordrer
 
@@ -65,7 +65,7 @@ Hvis du vil endre informasjon i en planlagt bestilling og se hvordan de relatert
 2. Godkjenn den planlagte bestillingen.
 3. Kjør hovedplanlegging.
 
-Når du kjører hovedplanlegging, skal du ikke bruke filtre hvis planlagte produksjonsordrer er inkludert. Hvis du vil ha mer informasjon, kan du se delen [Filtre](#filters) senere i dette emnet.
+Når du kjører hovedplanlegging, skal du ikke bruke filtre hvis planlagte produksjonsordrer er inkludert. Hvis du vil ha mer informasjon, kan du se delen [Filtre](#filters) senere i denne artikkelen.
 
 > [!NOTE]
 > Hvis leveringsdatoen for den planlagte bestillingen endres til en senere dato, kan behovet bli utlignet mot en ny planlagt bestilling. Dette skjer når den nye forsyningsdatoen forårsaker en forsinkelse for det utlignede behovet, men forsinkelsen kan unngås i henhold til innstillingene for leveringstid.

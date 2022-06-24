@@ -1,6 +1,6 @@
 ---
 title: Installere Adventure Works-temaet
-description: Dette emnet beskriver hvordan du installerer Adventure Works-temaet i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du installerer Adventure Works-temaet i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: 18c2612b8b6b4ed8195ff8e71d6e0495f7e80950
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913708"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854906"
 ---
 # <a name="install-the-adventure-works-theme"></a>Installere Adventure Works-temaet
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du installerer Adventure Works-temaet i Microsoft Dynamics 365 Commerce. 
+Denne artikkelen beskriver hvordan du installerer Adventure Works-temaet i Microsoft Dynamics 365 Commerce. 
 
 > [!IMPORTANT]
 > Adventure Works-temaet og modulene er tilgjengelige fra Dynamics 365 Commerce 10.0.20-versjonen. De er tilgjengelige fra Microsoft AppSource.

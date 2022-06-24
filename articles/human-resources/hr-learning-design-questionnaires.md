@@ -1,6 +1,6 @@
 ---
 title: Opprette spørreskjemaer
-description: Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema.
+description: Denne artikkelen beskriver fremgangsmåten for å opprette et spørreskjema.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7b2e1316768dc6207c82f08cef4c268ae70648ad
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ef14dfe35e6cffc5ae2351045141d99b2fb53c16
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694858"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899650"
 ---
 # <a name="create-questionnaires"></a>Opprette spørreskjemaer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694858"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
+Denne artikkelen beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
 
 Et nøye utformet spørreskjema kan være med på å øke kvaliteten på dataene du samler inn. Gjennom nøye utforming kan du bedre velge de riktige alternativene til rett tid for et spørreskjema. Følgende punkt kan gjøre det enklere å planlegge et effektivt spørreskjema:
 

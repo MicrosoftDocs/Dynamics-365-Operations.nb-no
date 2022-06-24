@@ -1,6 +1,6 @@
 ---
-title: Feilsøke problemer under førstegangsinstallasjon
-description: Dette emnet inneholder informasjon som kan hjelpe deg å løse problemer som oppstår under første konfigurasjon av integrering med dobbel skriving.
+title: Feilsøk problemer under førstegangsinstallasjon
+description: Denne artikkelen inneholder informasjon som kan hjelpe deg å løse problemer som oppstår under første konfigurasjon av integrering med dobbel skriving.
 author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
@@ -9,23 +9,23 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 5ebb14dad723fad5b17b4dfca153bf153e77bbd4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882091"
 ---
-# <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøke problemer under førstegangsinstallasjon
+# <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøk problemer under førstegangsinstallasjon
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dette emnet inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Dette emnet inneholder informasjon som kan hjelpe deg med å løse problemer som kan oppstå under det første oppsettet av integrering med dobbel skriving.
+Denne artikkelen inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Dette emnet inneholder informasjon som kan hjelpe deg med å løse problemer som kan oppstå under det første oppsettet av integrering med dobbel skriving.
 
 > [!IMPORTANT]
-> Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
+> Noen av problemene som denne artikkelen løser, kan kreve administratorrollen for systemet eller legitimasjon for Microsoft Azure Active Directory (Azure AD)-leieradministrator. Delen for hvert problem forklarer om en bestemt rolle eller legitimasjon er nødvendig.
 
 ## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Du kan ikke koble en økonomi- og driftsapp til Dataverse
 

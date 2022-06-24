@@ -1,6 +1,6 @@
 ---
 title: Oversikt over redigering av side
-description: Dette emnet inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
 author: brendans
 ms.date: 10/31/2019
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bc8cdbc0a521f3aa444a3af0d0230f8567729694
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984627"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855010"
 ---
 # <a name="authoring-page-overview"></a>Oversikt over redigering av side
 
   
  [!include [banner](includes/banner.md)]
 
-Dette emnet inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
+Denne artikkelen inneholder en oversikt over redigeringssiden i Microsoft Dynamics 365 Commerce.
 
 Webområder kan opprettes for å støtte ulike forretningsbehov. De kan representere en hel bedrift, tilby en enkelt kanal i firmaet eller målrette en bestemt målgruppe eller et spesifikt segment av en målgruppe. Det kan for eksempel hende at en klesprodusent har et webområde som viser frem alle merkene i selskapet. Den samme klesprodusenten kan da ha et separat webområde for hver av disse merkene, og også et sett med webområder som har luksus, utendørsmote og barnemote.
 

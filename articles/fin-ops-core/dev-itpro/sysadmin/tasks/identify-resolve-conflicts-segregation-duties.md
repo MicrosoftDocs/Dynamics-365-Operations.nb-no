@@ -1,6 +1,6 @@
 ---
 title: Identifisere og løse konflikter i arbeidsdeling
-description: Dette emnet forklarer hvordan du identifiserer og løser konflikter i arbeidsdelinger.
+description: Denne artikkelen forklarer hvordan du identifiserer og løser konflikter i arbeidsdelinger.
 author: peakerbl
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd36db5df2b6871d410bb1feaae825909ec9b3ff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883484"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Identifisere og løse konflikter i arbeidsdeling
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du identifiserer og løser konflikter i arbeidsdelinger. Du kan definere regler for å skille plikter som må utføres av forskjellige brukere. Dette konseptet kalles arbeidsdeling. Når definisjonen av en sikkerhetsrolle eller rolletildelingene til en bruker bryter reglene, logges konflikten. Alle konflikter må løses av administratoren. Fullfør fremgangsmåten nedenfor for å identifisere og løse konflikter.
+Denne artikkelen forklarer hvordan du identifiserer og løser konflikter i arbeidsdelinger. Du kan definere regler for å skille plikter som må utføres av forskjellige brukere. Dette konseptet kalles arbeidsdeling. Når definisjonen av en sikkerhetsrolle eller rolletildelingene til en bruker bryter reglene, logges konflikten. Alle konflikter må løses av administratoren. Fullfør fremgangsmåten nedenfor for å identifisere og løse konflikter.
 
 Etter at en regel er lagt til, kontrollerer du at alle eksisterende roller samsvarer med reglene. 
 

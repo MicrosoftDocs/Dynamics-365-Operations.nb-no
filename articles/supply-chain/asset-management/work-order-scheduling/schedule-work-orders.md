@@ -1,6 +1,6 @@
 ---
 title: Planlegg arbeidsordrer
-description: Dette emnet forklarer hvordan du planlegger arbeidsordrer i Aktivastyring.
+description: Denne artikkelen forklarer hvordan du planlegger arbeidsordrer i Aktivastyring.
 author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718065"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845061"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6718065"
 
  
 
-Dette emnet forklarer hvordan du planlegger arbeidsordrer i Aktivastyring. 
+Denne artikkelen forklarer hvordan du planlegger arbeidsordrer i Aktivastyring. 
 
 Det nødvendige antallet timer for en arbeidsordre defineres av summen av prognosetimer minus posterte timer. Hvis det kreves mer tid, må prognosen justeres tilsvarende. I **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer** kan du vise eller redigere prognoser i en arbeidsordre ved å velge arbeidsordren og klikke på **Prognose** i fanen **Arbeidsordre**. Når arbeidsordrer er opprettet og estimert, er neste trinn å tildele nødvendige vedlikeholdspersoner og verktøy.
 

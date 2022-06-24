@@ -1,6 +1,6 @@
 ---
 title: Forbedret RCS-filtrering i RCS/det globale repositoriet
-description: Dette emnet beskriver forbedrede filtreringsfunksjoner for det det globale repositoriet RCS som er forbedret for å inkludere tilleggsfiltrene.
+description: Denne artikkelen beskriver forbedrede filtreringsfunksjoner for det det globale repositoriet RCS som er forbedret for å inkludere tilleggsfiltrene.
 author: JaneA07
 ms.date: 04/24/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2def3b653ac7c90318feb696c0dd197217ac29f64f0f08d26a7069918c67922b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a343b9f1af68a727cb2a8d1e390f85e10aab2d39
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778118"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901219"
 ---
 # <a name="rcs-enhanced-filtering-options-for-finding-configurations-in-the-rcsglobal-repository"></a>Forbedrede RCS-filtreringsalternativer for å finne konfigurasjoner i RCS/det globale repositoriet
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver forbedrede filtreringsfunksjoner for det det globale repositoriet (RCS) som er forbedret for å inkludere muligheten til å filtrere med følgende kriterier: 
+Denne artikkelen beskriver forbedrede filtreringsfunksjoner for det det globale repositoriet Regulatory Configuration Services (RCS) som er forbedret for å inkludere muligheten til å filtrere med følgende kriterier: 
 - **Land/område**– basert på ISO-landskoder  
 - **Kode**-typer for:
   - Funksjonelt område

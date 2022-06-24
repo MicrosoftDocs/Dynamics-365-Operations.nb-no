@@ -1,6 +1,6 @@
 ---
 title: TDS-beregning for fakturaer
-description: Dette emnet har en referanse for transaksjoner der TDS (Tax Deducted at Source) beregnes på fakturanivået.
+description: Denne artikkelen har en referanse for transaksjoner der TDS (Tax Deducted at Source) beregnes på fakturanivået.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d349ebb9a61bfddb5e859b28e5d264b374609c70
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: efc12e0839fe87e9db435f481ce1fd733c286d6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8724648"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855370"
 ---
 # <a name="tds-calculation-on-invoices"></a>TDS-beregning for fakturaer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet har en referanse for transaksjoner der TDS (Tax Deducted at Source) beregnes på fakturanivået.
+Denne artikkelen har en referanse for transaksjoner der TDS (Tax Deducted at Source) beregnes på fakturanivået.
 
 | Serienummer | Transaksjonstype                                 | Transaksjonsbeløp | Sidenavn og valgbane                                 | Kontotype og motkontotype                         |
 | ------------- | ------------------------------------------------ | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |

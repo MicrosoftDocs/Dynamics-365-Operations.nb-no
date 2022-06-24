@@ -1,6 +1,6 @@
 ---
 title: Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
-description: Dette emnet beskriver hvordan du bruker grensesnittet for produksjonsutførelse fra synspunktet til en arbeider.
+description: Denne artikkelen beskriver hvordan du bruker grensesnittet for produksjonsutførelse fra synspunktet til en arbeider.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644997"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860674"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -34,7 +34,7 @@ Når enheten er forberedt, vises påloggingssiden på den. Denne siden viser inf
 
 ![Påloggingsside for grensesnittet for produksjonsutførelse.](media/pfei-sign-in-page.png "Påloggingsside for grensesnittet for produksjonsutførelse")
 
-De gjenværende delene i dette emnet beskriver hvordan arbeiderne samhandler med grensesnittet.
+De gjenværende delene i denne artikkelen beskriver hvordan arbeiderne samhandler med grensesnittet.
 
 ## <a name="all-jobs-tab"></a>fanen Alle jobber
 

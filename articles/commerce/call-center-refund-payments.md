@@ -1,6 +1,6 @@
 ---
 title: Refunderingsbehandling i telefonsentre
-description: Dette emnet beskriver hvordan betalingsrefusjoner genereres via telefonsentre når returer opprettes, eller når ordrer eller ordrelinjer annulleres.
+description: Denne artikkelen beskriver hvordan betalingsrefusjoner genereres via telefonsentre når returer opprettes, eller når ordrer eller ordrelinjer annulleres.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 330674a31dc59e99ffedb82d0896c64214562eb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880120"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Refunderingsbehandling i telefonsentre
 
-Dette emnet beskriver hvordan betalingsrefusjoner genereres via telefonsentre når returer opprettes, eller når ordrer eller ordrelinjer annulleres.
+Denne artikkelen beskriver hvordan betalingsrefusjoner genereres via telefonsentre når returer opprettes, eller når ordrer eller ordrelinjer annulleres.
 
 En bruker som oppretter en returordre for en kunde som telefonsenterbruker i Microsoft Dynamics 365 Commerce Headquarters, bruker siden **Returordre** til å opprette det første autorisasjonsreturnummeret (RMA). RMA definerer produktene som kunden vil returnere eller bytte, og det oppretter en koblet retursalgsordre som har ordretypen **Returordre**. Denne koblede returnerte ordren brukes til å spore posteringen av det returnerte lageret og eventuelle kreditnotaer eller betalingsrefusjoner som er postert.
 
@@ -92,7 +92,7 @@ Innstillingen **Ja** for alternativet **Bruk kreditt** gjelder bare når returor
 
 ## <a name="payment-overrides-for-call-center-returns"></a>Betalingsoverstyringer for telefonsenterreturer
 
-Selv om telefonsenterlogikk systematisk bestemmer betalingsmåten for refundering på den måten som beskrives tidligere i dette emnet, kan det hende at brukerne noen ganger ønsker å overstyre disse betalingene. En bruker kan for eksempel redigere eller fjerne eksisterende refunderingsbetalingslinjer og bruke nye betalingslinjer. Systemberegnede refusjonsbetalinger kan bare endres av brukere som har riktige overstyringstillatelser. Disse tillatelsene kan konfigureres på siden **Overstyr tillatelser** i Retail og Commerce. Hvis du vil gjøre en betalingsoverstyring for refusjon, må brukeren være koblet til en sikkerhetsrolle der alternativet **Tillat alternativ betaling** er angitt til **Ja** på siden **Overstyringstillatelser**.
+Selv om telefonsenterlogikk systematisk bestemmer betalingsmåten for refundering på den måten som beskrives tidligere i denne artikkelen, kan det hende at brukerne noen ganger ønsker å overstyre disse betalingene. En bruker kan for eksempel redigere eller fjerne eksisterende refunderingsbetalingslinjer og bruke nye betalingslinjer. Systemberegnede refusjonsbetalinger kan bare endres av brukere som har riktige overstyringstillatelser. Disse tillatelsene kan konfigureres på siden **Overstyr tillatelser** i Retail og Commerce. Hvis du vil gjøre en betalingsoverstyring for refusjon, må brukeren være koblet til en sikkerhetsrolle der alternativet **Tillat alternativ betaling** er angitt til **Ja** på siden **Overstyringstillatelser**.
 
 ![Tillate alternativt betalingsalternativ på siden Overstyringstillatelser.](media/overridepermissions.png)
 

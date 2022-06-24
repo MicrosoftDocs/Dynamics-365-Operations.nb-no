@@ -1,6 +1,6 @@
 ---
-title: Angi et egendefinert lagringssted for genererte dokumenter
-description: Dette emnet forklarer hvordan du utvider listen over lagringssteder for dokumenter som Elektronisk rapportering (ER)-formater genererer.
+title: Angi en egendefinert lagerplassering for genererte dokumenter
+description: Denne artikkelen forklarer hvordan du utvider listen over lagringssteder for dokumenter som Elektronisk rapportering (ER)-formater genererer.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 70d9ccfac18b4cdf1ea19b3def87fc10ba9ddcb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864753"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angi et egendefinert lagringssted for genererte dokumenter
 
 [!include[banner](../includes/banner.md)]
 
-API (Application programming interface) for Elektronisk rapportering-rammeverket (ER) lar deg utvide listen over lagringssteder for dokumenter som ER-formater genererer. Dette emnet inneholder en oversikt over de viktigste oppgavene du må fullføre for å legge til et egendefinert lagringssted.
+API (Application programming interface) for Elektronisk rapportering-rammeverket (ER) lar deg utvide listen over lagringssteder for dokumenter som ER-formater genererer. Denne artikkelen inneholder en oversikt over de viktigste oppgavene du må fullføre for å legge til et egendefinert lagringssted.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -118,7 +118,7 @@ public DocuRef insertFile(
 ## <a name="configure-an-er-destination"></a>Konfigurere et ER-mål
 
 1. Konfigurer det arkiverte målet for et av de tidligere nevnte elementene (fil, mappe, sammenslåing eller vedlegg) for ER-formatet du opprettet eller importerte. For å få hjelp kan du se [ER Konfigurere mål](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Bruk dokumenttypen du la til tidligere for det konfigurerte målet. (For eksemplet i dette emnet er dokumenttypen **FileX**.)
+2. Bruk dokumenttypen du la til tidligere for det konfigurerte målet. (For eksemplet i denne artikkelen er dokumenttypen **FileX**.)
 
 ![Dialogboksen Innstillinger for mål.](media/er-extend-file-storages-destination.png)
 

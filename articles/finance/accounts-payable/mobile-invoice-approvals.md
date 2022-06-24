@@ -1,42 +1,42 @@
 ---
 title: Mobile fakturagodkjenninger
-description: Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle.
+description: Denne artikkelen er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 83d95ef6d9fcff060ac992b11ab5773af075fea5409e43430b4826dc097570c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f635891e3d92fbd5978e10fe01eb67c0a28542c5
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737361"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946281"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
 [!include [banner](../includes/banner.md)]
 
-Mobilfunksjoner lar forretningsbrukere utforme mobilopplevelser. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Dette emnet hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
+Mobilfunksjoner lar forretningsbrukere utforme mobilopplevelser. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Denne artikkelen er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Denne artikkelen hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-| Forutsetning                                                                                            | beskrivelse                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Forutsetning                                                                                            | Beskrivelse                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Før du leser håndboken for mobil                                                                                |[Mobil plattform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Et miljø som har versjon 1611 og Platform update 3 (november 2016)                   |
 | Installer hurtigreparasjon KB 3204341.                                                                              | Oppgaveregistrering kan feilaktig registrere to Lukk-kommandoer for rullegardindialoger. Dette er inkludert i Platform update 3 (november-oppdatering 2016). |
 | Installer hurtigreparasjon KB 3207800.                                                                              | Denne hurtigreparasjonen gjør at vedlegg skal vises på den mobile klienten. Dette er inkludert i Platform update 3 (november-oppdatering 2016).           |
 | Installer hurtigreparasjon KB 3208224.                                                                              | Programkode for godkjenning av leverandørfaktura på mobil. Dette er inkludert i versjon 7.0.1 (mai 2016).                          |
-| En Android- eller iOS- eller Windows-enhet som har mobilappen installert. | Søk etter appen i riktig applager.                                                                                                                     |
+| En Android- eller iOS- eller Windows-enhet som har mobilappen installert. | Søk etter appen i riktig applager.                            |
 
 ## <a name="introduction"></a>Innledning
 Mobile godkjenninger for leverandørfakturaer krever de tre hurtigreparasjonene som er nevnt i delen "Forutsetninger". Disse hurtigreparasjonene gir ikke et arbeidsområde for fakturagodkjenninger. Hvis du vil vite hva et arbeidsområde er i forbindelse med mobil, kan du lese håndboken for mobil som er nevnt i delen "Forutsetninger". Arbeidsområdet for fakturagodkjenninger må være utformet. 
@@ -51,11 +51,11 @@ Alle organisasjoner lager og definerer sin forretningsprosess for leverandørfak
     -   Fakturaene også har regnskapsdistribusjoner i fakturahodet? I så fall bør disse regnskapsdistribusjoner være tilgjengelig på enheten?
 
     > [!NOTE]
-    > Dette emnet forklarer ikke hvordan du redigerer regnskapsdistribusjoner, fordi denne funksjonaliteten ikke støttes for øyeblikket for mobile scenarier.
+    > Denne artikkelen forklarer ikke hvordan du redigerer regnskapsdistribusjoner, fordi denne funksjonaliteten ikke støttes for øyeblikket for mobile scenarier.
 
 -   Brukere vil se vedlegg for fakturaen på enheten?
 
-Utformingen av mobil opplevelse for fakturagodkjenninger varierer avhengig av svarene på disse spørsmålene. Målet er å optimalisere brukerens opplevelse for forretningsprosessen på mobil i en organisasjon. I resten av dette emnet vil vi se på to scenariovariasjoner som er basert på forskjellige svar på spørsmålene ovenfor. 
+Utformingen av mobil opplevelse for fakturagodkjenninger varierer avhengig av svarene på disse spørsmålene. Målet er å optimalisere brukerens opplevelse for forretningsprosessen på mobil i en organisasjon. I resten av denne artikkelen vil vi se på to scenariovariasjoner som er basert på forskjellige svar på spørsmålene ovenfor. 
 
 Som en generell veiledning, når du arbeider med mobile designer, må du "publisere" endringene for ikke å miste oppdateringer.
 

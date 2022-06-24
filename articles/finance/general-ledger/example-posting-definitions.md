@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e6af5fbd050642ac462ecb159c05d78f534f0ce
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: ae6b2b505acb211f9fb5506234953eba9f3ec2a3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722556"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865779"
 ---
 # <a name="posting-definition-examples"></a>Eksempler på posteringsdefinisjoner
 
@@ -28,7 +28,7 @@ ms.locfileid: "8722556"
 
 Denne artikkelen inneholder eksempler som viser hvordan posteringsdefinisjoner brukes for bestillingsdisposisjoner og budsjettbevilgninger.
 
-Før du leser dette emnet, bør du være kjent med posteringsdefinisjoner og posteringsdefinisjoner for transaksjon. Hvis du vil ha informasjon, se [Posteringsdefinisjoner](posting-definitions.md). Eksemplene nedenfor kan settes opp på siden **Posteringsdefinisjoner**. Hvert eksempel inneholder disse delene:
+Før du leser denne artikkelen, bør du være kjent med posteringsdefinisjoner og posteringsdefinisjoner for transaksjon. Hvis du vil ha informasjon, se [Posteringsdefinisjoner](posting-definitions.md). Eksemplene nedenfor kan settes opp på siden **Posteringsdefinisjoner**. Hvert eksempel inneholder disse delene:
 
 -   Posteringsdefinisjon – samsvarskriterier
 -   Posteringsdefinisjon – genererte oppføringer

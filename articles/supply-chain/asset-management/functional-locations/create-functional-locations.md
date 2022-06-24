@@ -1,6 +1,6 @@
 ---
 title: Opprette arbeidssteder
-description: Dette emnet forklarer hvordan du oppretter et arbeidssted i Aktivastyring.
+description: Denne artikkelen forklarer hvordan du oppretter et arbeidssted i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5dd5ea59b27c594752ff82428723f3afe555b5f2426a812c70e10b968c920a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 503150e7cfc580821c5ed8d4c4c9b56998f6ff13
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767539"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869727"
 ---
 # <a name="create-functional-locations"></a>Opprette arbeidssteder
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767539"
 
  
 
-Dette emnet forklarer hvordan du oppretter et arbeidssted i Aktivastyring.
+Denne artikkelen forklarer hvordan du oppretter et arbeidssted i Aktivastyring.
 
 Når du oppretter en arbeidsstedsstruktur, må du være oppmerksom på at når du har opprettet et arbeidssted, du kan ikke flytte det fra den opprinnelige plasseringen. Dette betyr at du bør vurdere strukturen til arbeidsstedene nøye før du begynner å opprette dem i Aktivastyring. Hvis du angrer på et arbeidssted, kan du slette det, forutsatt at det ennå ikke er tatt i bruk.
 

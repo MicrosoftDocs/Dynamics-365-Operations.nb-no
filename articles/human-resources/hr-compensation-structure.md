@@ -1,6 +1,6 @@
 ---
 title: Utvikle en kompensasjonsstruktur
-description: Dette emnet forklarer hvordan du oppretter en fast kompensasjonsplan og registrerer ansatte i planen gjennom rettighetsregler.
+description: Denne artikkelen forklarer hvordan du oppretter en fast kompensasjonsplan og registrerer ansatte i planen gjennom rettighetsregler.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f069d4e982a9c02070c2010b894b2ec7a9c7f6ab
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 86953e6d54843f17d0d6090a9def8bc256624f21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693094"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902983"
 ---
 # <a name="develop-a-compensation-structure"></a>Utvikle en kompensasjonsstruktur
 
@@ -26,7 +26,7 @@ ms.locfileid: "8693094"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver oppretting av en fast kompensasjonsplan og registrerring av ansatte i planen gjennom rettighetsregler. Dette emnet bruker USMF-demodataene og bruker ansvarlige for kompensasjon og fordeler.
+Denne artikkelen beskriver oppretting av en fast kompensasjonsplan og registrerring av ansatte i planen gjennom rettighetsregler. Denne artikkelen bruker USMF-demodataene og gjelder ansvarlige for kompensasjon og fordeler.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Opprette en fast kompensasjonsplan
 

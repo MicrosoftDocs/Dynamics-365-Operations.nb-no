@@ -1,6 +1,6 @@
 ---
 title: Aktiva på flere nivåer
-description: Dette emnet forklarer hvordan du oppretter og sletter aktiva på flere nivåer.
+description: Denne artikkelen forklarer hvordan du oppretter og sletter aktiva på flere nivåer.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c7c97f8b05a1bf76b2f2c869e6868689f388d06337064f04af839f2403357
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769617"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908779"
 ---
 # <a name="multi-level-assets"></a>Aktiva på flere nivåer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769617"
 
  
 
-Dette emnet forklarer hvordan du oppretter og sletter aktiva på flere nivåer. Du kan opprette aktiva og relaterte underaktiva i en hierarkisk trestruktur. På denne måten kan du vise relasjoner og avhengigheter blant aktiva. Vedlikeholdsjobber kan knyttes til alle nivåer i trestrukturen. Statistikk kan også opprettes for et enkeltnivå eller som en sum for alle underaktivanivåer.
+Denne artikkelen forklarer hvordan du oppretter og sletter aktiva på flere nivåer. Du kan opprette aktiva og relaterte underaktiva i en hierarkisk trestruktur. På denne måten kan du vise relasjoner og avhengigheter blant aktiva. Vedlikeholdsjobber kan knyttes til alle nivåer i trestrukturen. Statistikk kan også opprettes for et enkeltnivå eller som en sum for alle underaktivanivåer.
 
 På listesiden **Alle aktiva** (**Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva**) vises aktiva i hierarkisk rekkefølge i kolonnen **Aktiva**. Kolonnen **Overordnet** viser det tilknyttede overordnede objektet. Hvis det allerede er opprettet aktiva og under aktiva, viser i tillegg **Aktivatre**-delen i ruten **Beslektet informasjon** aktivaene i en trestruktur.
 

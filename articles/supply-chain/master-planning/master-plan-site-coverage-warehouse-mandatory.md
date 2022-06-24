@@ -1,6 +1,6 @@
 ---
 title: Hovedplanlegging for område- og lagerdekning, lager obligatorisk
-description: Dette emnet beskriver hvordan en vare som har en dekningsdimensjon planlegges. Lager er en obligatorisk dimensjon.
+description: Denne artikkelen beskriver hvordan en vare som har en dekningsdimensjon planlegges. Lager er en obligatorisk dimensjon.
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bce0e43e43b4d8eee1c63912ce25e18ff23597a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b6e9cb9362fcafab5738e0a1887366e5fd1efbab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469177"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863976"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Hovedplanlegging for område- og lagerdekning, lager obligatorisk
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan en vare som har en dekningsdimensjon planlegges. Lager er en obligatorisk dimensjon.
+Denne artikkelen beskriver hvordan en vare som har en dekningsdimensjon planlegges. Lager er en obligatorisk dimensjon.
 
 Dette hovedplanleggingsscenariet omfatter følgende betingelser:
 

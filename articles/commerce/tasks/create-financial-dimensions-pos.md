@@ -13,18 +13,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12206661c20c3029ca61c75f728fbd915706477be6f6ebf7abe8366ebda8980b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e85756a2b7cdd3627c7a3fffa8dc97e0db13641a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884796"
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Opprette finansdimensjoner for kasser på salgssted og konfigurere dimensjonsverdier for kasser
 
 [!include [banner](../includes/banner.md)]
 
-Denne prosedyren hjelper med å opprette finansdimensjoner for salgsstedskasser, og beskriver hvordan du konfigurerer finansdimensjonsverdiene på kassene. Denne prosedyren inneholder ikke andre relaterte trinn, for eksempel å opprette dimensjonssett og kontostrukturer. Du finner disse oppgavene i andre emner. Denne registreringen bruker demonstrasjonsfirmaet USRT.
+Denne prosedyren hjelper med å opprette finansdimensjoner for salgsstedskasser, og beskriver hvordan du konfigurerer finansdimensjonsverdiene på kassene. Denne prosedyren inneholder ikke andre relaterte trinn, for eksempel å opprette dimensjonssett og kontostrukturer. Du finner disse oppgavene i andre artikler. Denne registreringen bruker demonstrasjonsfirmaet USRT.
 
 1. Gå til Økonomimodul > Kontoplan > Dimensjoner > Finansdimensjoner.
 2. Klikk Ny.

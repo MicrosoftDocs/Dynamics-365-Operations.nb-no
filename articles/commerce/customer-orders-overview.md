@@ -1,6 +1,6 @@
 ---
 title: Kundeordrer på salgssted
-description: Dette emnet gir informasjon om kundeordrer på salgssted. Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
+description: Denne artikkelen gir informasjon om kundeordrer på salgssted. Kundeordrer er også kjent som spesialbestillinger. Artikkelen inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 author: josaw1
 ms.date: 08/02/2021
 ms.topic: overview
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 6051e0a18823b354dd9940aac70a086a0f317002
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982824"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850388"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer på salgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan du oppretter og administrerer kundeordrer i salgsstedsappen. Kundeordrer kan brukes til å registrere salg der kunder vil hente produkter på en senere dato, hente produkter et annet sted eller få varer tilsendt. 
+Denne artikkelen gir informasjon om hvordan du oppretter og administrerer kundeordrer i salgsstedsappen. Kundeordrer kan brukes til å registrere salg der kunder vil hente produkter på en senere dato, hente produkter et annet sted eller få varer tilsendt. 
 
 Omnikanal for handel gir mulighet for kundeordrer og spesialordrer, eller spesialordrer, for å møte ulike behov. Her er noen vanlige scenarier:
 

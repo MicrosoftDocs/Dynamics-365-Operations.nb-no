@@ -1,6 +1,6 @@
 ---
 title: Opprette dynamiske e-handelssider basert på URL-parametere
-description: Dette emnet beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
+description: Denne artikkelen beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
 author: StuHarg
 ms.date: 05/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e2b13403ffb316059476a03857c849b4f9f8cb9c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884669"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Opprette dynamiske e-handelssider basert på URL-parametere
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
+Denne artikkelen beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
 
 En e-handelsside kan konfigureres til å ha forskjellig innhold, basert på et segment i URL-banen. Derfor kalles siden en dynamisk side. Segmentet brukes som en parameter for å hente sideinnholdet. For eksempel vil en side som opprettes i områdebyggeren og kalt **blogg\_fremviser** tilordnes til URLen `https://fabrikam.com/blog`. Denne siden kan deretter brukes til å vise forskjellig innhold, basert på det siste segmentet i URL-banen. Eksempelvis er det siste segmentet i URL-adressen `https://fabrikam.com/blog/article-1` **artikkel-1**.
 

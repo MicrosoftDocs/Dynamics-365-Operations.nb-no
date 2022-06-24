@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management
-description: Dette emnet peker på emner som beskriver de nye og endrede funksjonene i hver utgivelse av Dynamics 365 Supply Chain Management.
+description: Denne artikkelen peker på artikler som beskriver de nye og endrede funksjonene i hver utgivelse av Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.date: 05/27/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 6c1cfcd7ccc39f2742fd237278f97b4d3d0ad4fd
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: b767f8ff8e9c9ef7ea1b4dee777f9e0c96f93aef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8812979"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893446"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management
 
@@ -27,7 +27,7 @@ ms.locfileid: "8812979"
 
 ## <a name="releases-of-dynamics-365-supply-chain-management"></a>Versjoner av Dynamics 365 Supply Chain Management
 
-Hvis du vil se hva som er nytt eller endret i hver utgivelse av Dynamics 365 Supply Chain Management, kan du se følgende emner.
+Hvis du vil se hva som er nytt eller endret i hver utgivelse av Dynamics 365 Supply Chain Management, kan du se følgende artikler.
 
 | Versjon | Build-nummer | Tilgjengelighet av automatisk oppdatering | Finn ut mer |
 |---|---|---|---|
@@ -57,7 +57,7 @@ Hvis du vil se hva som er nytt eller endret i hver utgivelse av Dynamics 365 Sup
 
 ## <a name="releases-before-november-2019"></a>Versjoner før november 2019
 
-Hvis du vil se hva som er nytt eller endret i utgivelser før november 2019, kan du se følgende emner:
+Hvis du vil se hva som er nytt eller endret i utgivelser før november 2019, kan du se følgende artikler.
 
 | Frigivelse | Versjon | Build-nummer | Tilgjengelighet | Finn ut mer |
 |---|---|---|---|---|

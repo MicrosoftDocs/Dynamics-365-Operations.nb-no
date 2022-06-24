@@ -1,6 +1,6 @@
 ---
-title: Definere leverandørfakturapolicyer
-description: Dette emnet forklarer hvordan du konfigurerer leverandørfakturapolicyer.
+title: Definer leverandørfakturapolicyer
+description: Denne artikkelen forklarer hvordan du konfigurerer leverandørfakturapolicyer.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 049b38b6feba5f4369d79b89b4c81a8195dd7758
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109762"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904737"
 ---
-# <a name="set-up-vendor-invoice-policies"></a>Definere leverandørfakturapolicyer
+# <a name="set-up-vendor-invoice-policies"></a>Definer leverandørfakturapolicyer
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer leverandørfakturapolicyer. Leverandørfakturapolicyer kjøres når du posterer en leverandørfaktura ved hjelp av **Leverandørfaktura**-siden, og når du åpner **Policybrudd**-siden for leverandørfaktura. Du kan også konfigurere av arbeidsflyt for leverandørfaktura for å kjøre leverandørfakturapolicyer hver gang du sender en faktura til arbeidsflyten. 
+Denne artikkelen forklarer hvordan du konfigurerer leverandørfakturapolicyer. Leverandørfakturapolicyer kjøres når du posterer en leverandørfaktura ved hjelp av **Leverandørfaktura**-siden, og når du åpner **Policybrudd**-siden for leverandørfaktura. Du kan også konfigurere av arbeidsflyt for leverandørfaktura for å kjøre leverandørfakturapolicyer hver gang du sender en faktura til arbeidsflyten. 
 
 - Leverandørfakturapolicyer gjelder ikke for fakturaer som ble opprettet i fakturaregisteret eller fakturajournalen.  
 - Validering av fakturakontroll bruker ikke leverandørfakturapolicyer, men defineres i stedet på siden **Leverandørparametere**.  

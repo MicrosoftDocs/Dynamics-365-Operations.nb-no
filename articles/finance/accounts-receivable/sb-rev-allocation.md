@@ -1,6 +1,6 @@
 ---
 title: Inntektstildeling
-description: Dette emnet forklarer hvordan du bruker inntektstildeling i Abonnementsfakturering.
+description: Denne artikkelen forklarer hvordan du bruker inntektstildeling i Abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 09d3e9295f1fb753156aa603b00372316173721e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 18739e0871592bc9eefcdf00f67dd4dd18f5d6f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864375"
 ---
 # <a name="revenue-allocation"></a>Inntektstildeling
 
-Dette emnet forklarer hvordan du definerer inntektstildelingsparametere for en faktureringsplan. Du kan definere eller redigere inntektstildeling når du oppretter faktureringsplanen. Når du åpner siden **Inntektstildeling** for en aktiv eller avsluttet faktureringsplan, er feltene skrivebeskyttet.
+Denne artikkelen forklarer hvordan du definerer inntektstildelingsparametere for en faktureringsplan. Du kan definere eller redigere inntektstildeling når du oppretter faktureringsplanen. Når du åpner siden **Inntektstildeling** for en aktiv eller avsluttet faktureringsplan, er feltene skrivebeskyttet.
 
 ## <a name="specify-the-revenue-allocation-for-a-billing-schedule"></a>Angi inntektstildelingen for en faktureringsplan
 

@@ -1,6 +1,6 @@
 ---
 title: MVA-deklarering for Egypt
-description: Dette emnet beskriver hvordan du konfigurerer og genererer mva-returskjemaet for Egypt.
+description: Denne artikkelen beskriver hvordan du konfigurerer og genererer mva-returskjemaet for Egypt.
 author: sndray
 ms.date: 06/03/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a67c6e00b94d49b3eb279416407f603923e53b2e
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 1d5788b2328a49f4725a6c689e29a7e784032fae
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870042"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>MVA-deklarering for Egypt (EG-00002)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403954"
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du definerer og genererer mva-returskjemaet, og salgs- og innkjøpsbøker for juridiske enheter i Egypt.
+Denne artikkelen beskriver hvordan du definerer og genererer mva-returskjemaet, og salgs- og innkjøpsbøker for juridiske enheter i Egypt.
 
 Mva-returskjemaet for Egypt er det offisielle dokumentet som summerer totalt skyldig mva-beløp for utlevering, totalt mva-beløp som kan gjenopprettes, og det tilknyttede mva-beløpet. Skjemaet brukes for alle typer skattebetalere og bør fullføres manuelt via skattemyndighetportalen. Skjemaet for mva-retur kalles vanligvis mva-returarkivering.
 

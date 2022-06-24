@@ -1,8 +1,8 @@
 ---
 title: Appen Lagersynlighet
-description: Dette emnet beskriver hvordan du bruker Lagersynlighet-appen.
+description: Denne artikkelen beskriver hvordan du bruker Lagersynlighet-appen.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 359f89f98ca6954a0bbafd63fffa1d505a43f0c8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060978"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895764"
 ---
-# <a name="use-the-inventory-visibility-app"></a>Bruke lagersynlighetsapen
+# <a name="use-the-inventory-visibility-app"></a>Bruk Inventory Visibility-appen
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du bruker Lagersynlighet-appen.
+Denne artikkelen beskriver hvordan du bruker Lagersynlighet-appen.
 
 Lagersynlighet er en modelldrevet app for visualisering. Appen inneholder tre sider: **Konfigurasjon**, **Driftssynlighet** og **Lagersammendrag**. Den har følgende egenskaper:
 
@@ -70,7 +70,10 @@ Hvis du vil postere en reservasjonsforespørsel, må du angi en verdi i forespø
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lagersammendrag
 
-**Lagersammendrag** er en tilpasset visning for enheten *Sum av lagerbeholdning*. Det gir et lagersammendrag for produkter sammen med alle dimensjoner. Lagersammendragsdataene synkroniseres periodisk fra Lagersynlighet. Før du kan se data i kategorien **Lagersammendrag**, må du aktivere funksjonen *OnHandMostSpecificBackgroundService* i fanen **Funksjonsbehandling**.
+**Lagersammendrag** er en tilpasset visning for enheten *Sum av lagerbeholdning*. Det gir et lagersammendrag for produkter sammen med alle dimensjoner. Lagersammendragsdataene synkroniseres periodisk fra Lagersynlighet hvert 15. minutt. For å se data på **Lagersammendrag**-fanen må du aktivere *OnHandMostSpecificBackgroundService*-funksjonen på **Funksjonsbehandling**-fanen og velge **Oppdater konfigurasjon**.
+
+> [!NOTE]
+> *OnHandMostSpecificBackgroundService*-funksjonen sporer bare endringer i lagerbeholdning som inntraff etter at du aktiverte funksjonen. Data for produkter som ikke har endret seg siden du aktiverte funksjonen, vil ikke bli synkronisert fra lagertjenestebufferen til Dataverse-miljøet. Hvis **Lagersammendrag**-siden ikke viser all lagerbeholdningsinformasjonen du forventer, kan du gå til **Lagerstyring > Periodiske oppgaver > Integrering av lagersynlighet**, deaktivere den satsvise jobben og aktivere den på nytt. Dette utfører den innledende overføringen, og alle data synkroniseres med enheten *Lagerbeholdningssum* i løpet av de neste 15 minuttene. Hvis du vil bruke denne funksjonen, anbefaler vi at du aktiverer den før du oppretter lagerbeholdningsendringer og aktiverer den satsvise jobben **Integrering av lagersynlighet**.
 
 Ved hjelp av det **avanserte filteret** i Dataverse kan du opprette en personlig visning som viser radene som er viktige for deg. Med de avanserte filteralternativene kan du opprette en rekke visninger, fra enkel til kompleks. I tillegg kan du legge til grupperte og nestede betingelser i filtrene. Hvis du vil lære mer om hvordan du bruker det **avanserte filteret**, kan du se [Rediger eller opprett personlige visninger ved hjelp av avanserte rutenettfiltre](/powerapps/user/grid-filters-advanced).
 

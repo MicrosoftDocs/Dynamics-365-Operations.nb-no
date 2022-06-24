@@ -1,6 +1,6 @@
 ---
 title: Søk etter landsspesifikke forskriftsmessige oppdateringer
-description: Dette emnet inneholder koblinger til planlagte og frigitte landsspesifikke forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
+description: Denne artikkelen inneholder koblinger til planlagte og frigitte landsspesifikke forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
 author: AKroshkina
 ms.date: 01/20/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kfend
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c86f93ca76168e04a3152de67f40ef408bc096a6
-ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
+ms.openlocfilehash: 2a272c5310375007b65f54501b9770610504f72a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "8022955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896189"
 ---
 # <a name="search-for-country-specific-regulatory-updates"></a>Søk etter landsspesifikke forskriftsmessige oppdateringer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder koblinger til planlagte og frigitte landsspesifikke forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance. Du må logge deg på Microsoft Dynamics Lifecycle Services (LCS) for å få tilgang til denne informasjonen.
+Denne artikkelen inneholder koblinger til planlagte og frigitte landsspesifikke forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance. Du må logge deg på Microsoft Dynamics Lifecycle Services (LCS) for å få tilgang til denne informasjonen.
 
 | Land eller område    | Sak i problemsøk i LCS |
 |----------------------|---------------------------|

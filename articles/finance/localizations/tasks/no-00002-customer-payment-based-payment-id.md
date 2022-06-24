@@ -1,6 +1,6 @@
 ---
 title: NO-00002 Kundebetaling basert på betalings-ID
-description: Dette emnet beskriver hvordan du konfigurerer og vedlikeholder norske betalings-ID-er.
+description: Denne artikkelen beskriver hvordan du konfigurerer og vedlikeholder norske betalings-ID-er.
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Norway
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 01fa28f7507c39a4898d7715a8899e5f018bbd26
-ms.sourcegitcommit: 2fba4f2ef7e513357366fc640befe0d2f7bc31f5
+ms.openlocfilehash: 62449d0586cffd1789d840676afefc4686226f4c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7601486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861239"
 ---
 # <a name="no-00002-customer-payment-based-on-payment-id"></a>NO-00002 Kundebetaling basert på betalings-ID
 

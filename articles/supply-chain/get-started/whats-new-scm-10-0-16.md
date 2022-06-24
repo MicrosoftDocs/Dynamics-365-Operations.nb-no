@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.16.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
 ms.date: 11/20/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 323dde332364a26ec5b0d3f48a0d6ae831656108
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474922"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879112"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.16. Denne versjonen har et build-nummer 10.0.689, og er tilgjengelig som følger:
+Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.16. Denne versjonen har et build-nummer 10.0.689, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** november 2020
 - **Allmenn tilgjengelighet for versjon (selvoppdatering):** januar 2021
@@ -49,11 +49,11 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og oppdaterte dokumentasjonsressurser
 
-Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikke nødvendigvis knyttet til de nye funksjonene som er lagt til for denne versjonen, som oppført i den forrige delen, men de kan hjelpe deg med å få mer ut av eksisterende funksjoner.
+Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeartikler. De er ikke nødvendigvis knyttet til de nye funksjonene som er lagt til for denne versjonen, som oppført i den forrige delen, men de kan hjelpe deg med å få mer ut av eksisterende funksjoner.
 
 - [Attributtbaserte salgspriser for begrensningsbasert produktkonfigurasjon](../pim/attribute-based-product-configurator.md)
 - [Automatisk tildeling av tillegg](../procurement/automatic-charges-allocation.md)
-- [Oversikt over farlige materialer](../pim/hazmat-overview.md) (og beslektede emner)
+- [Oversikt over farlige materialer](../pim/hazmat-overview.md) (og beslektede artikler)
 - [Overføring til planleggingsoptimalisering for hovedplanlegging](../master-planning/new-master-planning-engine.md)
 - [Kjøp av cXML-forbedringer](../procurement/purchasing-cxml-enhancements.md)
 - [Plasseringsklynger](../warehousing/putaway-clusters.md)
@@ -63,9 +63,9 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Plattformoppdateringer for Finance and Operations-apper
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for økonomi- og driftsapper
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.16 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.16 av Finance and Operations-apper (februar 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.16 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.16 av økonomi- og driftsapper (februar 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md).
 
 ### <a name="bug-fixes"></a>Feilrettinger
 
@@ -79,12 +79,12 @@ Se [Dynamics 365: 2020-frigivelsesbølge 2-planen](/dynamics365-release-plan/202
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 
-Emnet [Fjernede eller avskrevne funksjonene i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funksjoner som er eller er planlagt å bli fjernet eller avskrevet for Supply Chain Management.
+Artikkelen [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funksjoner som er eller er planlagt å bli fjernet eller avskrevet for Supply Chain Management.
 
 - En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.
 - En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.
 
-Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i emnet [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder før fjerningen.
+Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i artikkelen [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder før fjerningen.
 
 For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære kompatible med sandkasse- og produksjonsmiljøer, vil avskrivningstiden være mindre enn 12 måneder. Dette er vanligvis funksjonelle oppdateringer som må gjøres på kompilatoren.
 

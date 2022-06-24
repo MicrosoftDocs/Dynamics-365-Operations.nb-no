@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
-description: Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Østerrike i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Østerrike i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 826c1cb0fba7025b16dadbfa6157683392945103
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 099c3630d035ea673342d8345cd8f65dbd6db6a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8614157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873364"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Østerrike i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Østerrike i Microsoft Dynamics 365 Commerce.
 
 For å oppfylle lokale regnskapskravene for kasser i Østerrike inneholder Dynamics 365 Retail-funksjonaliteten for Østerrike et eksempel på integrering av salgsstedet med en ekstern regnskapsregistreringstjeneste. Eksemplet utvider [funksjonaliteten for regnskapsintegrering](fiscal-integration-for-retail-channel.md). Den er basert på løsningen [EFR (Electronic Fiscal Register)](https://www.efsta.eu/at/fiskalloesungen/oesterreich) fra [EFSTA](https://www.efsta.eu/at/), og gjør det mulig å kommunisere med EFR-tjenesten via HTTPS-protokollen. EFR-tjenesten bør være vertsbasert enten på detaljhandelsmaskinvarestasjonen eller på en separat maskin som kan kobles til fra maskinvarestasjonen. Eksemplet leveres i form av kildekode og er en del av Retail Software Development Kit (SDK).
 

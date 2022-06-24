@@ -1,6 +1,6 @@
 ---
-title: Eksempel på leverandørsjekker ved elektronisk rapportering
-description: Dette emnet gir generell informasjon om hvordan du bruker eksempelsjekkformatene i elektronisk rapportering.
+title: Eksempel på leverandørsjekker for elektronisk rapportering
+description: Denne artikkelen gir generell informasjon om hvordan du bruker eksempelsjekkformatene i elektronisk rapportering.
 author: sunfzam
 ms.date: 06/14/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38a037903a994f6212f4ccce10e10c795eb7364d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d2b26a083540924d2368a298632aea90ecf95e9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734551"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908190"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Eksempel på leverandørsjekker ved elektronisk rapportering
 
@@ -28,7 +28,7 @@ Du kan bruke elektronisk rapportering (ER) til å formatere leverandørsjekker. 
 
 ## <a name="what-check-formats-are-currently-supported"></a>Hvilke sjekkformater støttes for tiden?
 
-Du bør alltid gå til det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS) og viser den gjeldende listen over tilgjengelige filer som har aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til et emne som forklarer hvordan du oppretter et LCS-repositorium, slik at du kan se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
+Du bør alltid gå til det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS) og viser den gjeldende listen over tilgjengelige filer som har aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til en artikkel som forklarer hvordan du oppretter et LCS-repositorium, slik at du kan se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
 
 Microsoft Dynamics 365 Finance inneholder et eksempelformat der sjekken er øverst, etterfulgt av to remitteringsdeler. Det inneholder også et eksempelformat hvor sjekken er i midten, mellom to remitteringsdeler. Disse eksempelformatene tilsvarer formatet for Deluxe-forretningssjekker.
 

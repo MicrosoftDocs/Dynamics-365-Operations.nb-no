@@ -1,6 +1,6 @@
 ---
-title: Opprett handelskataloger for B2B-områder
-description: Dette emnet beskriver hvordan du oppretter handelskataloger for Microsoft Dynamics 365 Commerce-bedrift-til-bedrift-områder (B2B).
+title: Opprett Commerce-kataloger for B2B-områder
+description: Denne artikkelen beskriver hvordan du oppretter handelskataloger for Microsoft Dynamics 365 Commerce-bedrift-til-bedrift-områder (B2B).
 author: ashishmsft
 ms.date: 05/18/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
-ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
+ms.openlocfilehash: 7d87b6c64a6038c4518eeec178f9e139ef6f5ae2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8782843"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848995"
 ---
-# <a name="create-commerce-catalogs-for-b2b-sites"></a>Opprett handelskataloger for B2B-områder
+# <a name="create-commerce-catalogs-for-b2b-sites"></a>Opprett Commerce-kataloger for B2B-områder
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emnet beskriver hvordan du oppretter handelsproduktkataloger for Microsoft Dynamics 365 Commerce-bedrift-til-bedrift-områder (B2B). Hvis du vil ha svar på vanlige spørsmål om handelskataloger for B2B-områder, kan du se [Vanlige spørsmål om handelskataloger for B2B](catalogs-b2b-sites-FAQ.md).
+Denne artikkelen beskriver hvordan du oppretter handelsproduktkataloger for Microsoft Dynamics 365 Commerce-bedrift-til-bedrift-områder (B2B). Hvis du vil ha svar på vanlige spørsmål om handelskataloger for B2B-områder, kan du se [Vanlige spørsmål om handelskataloger for B2B](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Dette emnet gjelder for Dynamics 365 Commerce, versjon 10.0.27 og nyere utgivelser.
+> Denne artikkelen gjelder for Dynamics 365 Commerce, versjon 10.0.27 og nyere utgivelser.
 
 Du kan bruke handelskataloger til å identifisere produktene du vil tilby i B2B-nettbutikkene. Når du oppretter en katalog, identifiserer du nettbutikkene som produktene tilbys i, legger til produktene du vil ta med, og forbedrer produkttilbudene ved å legge til handelsinformasjon om varer. Du kan opprette flere kataloger for hver B2B-nettbutikk.
 

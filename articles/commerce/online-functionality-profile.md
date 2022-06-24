@@ -1,6 +1,6 @@
 ---
-title: Opprett en Internett-funksjonalitetsprofil
-description: Dette emnet beskriver hvordan du oppretter en Internett-funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
+title: Opprette en nettbasert funksjonalitetsprofil
+description: Denne artikkelen beskriver hvordan du oppretter en Internett-funksjonalitetsprofil i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: d6dcbb5b9ea01035396e90a6809cb1568c3a4fc86def41cf36732588b5046da7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 686bc6440c31f3a4d729f2d92e3e57a1cc7b641f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716200"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895432"
 ---
 # <a name="create-an-online-functionality-profile"></a>Opprette en nettbasert funksjonalitetsprofil
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet viser en oversikt over hvordan du konfigurerer en Internett-funksjonalitetsprofil for Microsoft Dynamics 365 Commerce.
+Denne artikkelen viser en oversikt over hvordan du konfigurerer en Internett-funksjonalitetsprofil for Microsoft Dynamics 365 Commerce.
 
 Internett-funksjonalitetsprofilen inneholder ulike innstillinger som brukes for Internett-kanaler. Hver Internett-kanal må angi en Internett-funksjonalitetsprofil.
 

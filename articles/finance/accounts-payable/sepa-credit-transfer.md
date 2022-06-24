@@ -1,6 +1,6 @@
 ---
 title: Oversikt over SEPA-kredittoverføring
-description: Dette emnet inneholder generell informasjon om ISO 20022-kredittoverføringer, som inkluderer kredittoverføringer for felles eurobetalingsområde (SEPA) og andre elektroniske betalinger for leverandører.
+description: Denne artikkelen inneholder generell informasjon om ISO 20022-kredittoverføringer, som inkluderer kredittoverføringer for felles eurobetalingsområde (SEPA) og andre elektroniske betalinger for leverandører.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: f3f0c428d9167e9f1a7fb17a292d474448b2d4df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734523"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871456"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Oversikt over SEPA-kredittoverføring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder generell informasjon om ISO 20022-kredittoverføringer, som inkluderer kredittoverføringer for felles eurobetalingsområde (SEPA) og andre elektroniske betalinger for leverandører. En SEPA-kredittoverføring er en bestemt type betaling i euro fra ett firma eller en enkeltperson til et annet firma eller en enkeltperson. Emnet beskriver også hvordan du konfigurerer og sender en betalingsfil for kredittoverføring.
+Denne artikkelen inneholder generell informasjon om ISO 20022-kredittoverføringer, som inkluderer kredittoverføringer for felles eurobetalingsområde (SEPA) og andre elektroniske betalinger for leverandører. En SEPA-kredittoverføring er en bestemt type betaling i euro fra ett firma eller en enkeltperson til et annet firma eller en enkeltperson. Denne artikkelen beskriver også hvordan du konfigurerer og sender en betalingsfil for kredittoverføring.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Hva er en kredittoverføringsmelding?
 Kredittoverføringsmeldingen er en forespørsel som initialiseringsparten (firmaet) sender for å flytte midler fra sin egen konto til en kreditor. Det er mange land-/områdespesifikke og bankspesifikke implementeringer av kredittoverføringsmeldinger. Noen av dem brukes innenfor ett land, og andre blir standarder. En godt etablert verdensomspennende standard er ISO 20022 og dens initieringsmeldinger, for eksempel kredittoverføring. Illustrasjonen nedenfor viser relasjoner og dekning for valgte kredittoverføringsmeldinger. 
@@ -53,7 +53,7 @@ En SEPA-kredittoverføring er en betaling fra ett firma eller en enkeltperson ti
 Betalingsformatet for kredittoverføringer for EU-land implementeres ved hjelp av Generell elektronisk rapportering- og Betalingsmåter-funksjonaliteten i Microsoft Dynamics 365 Finance. Noen får kredittoverføringsformater som brukes i andre områder, bruker fremdeles det eldre betalingsrammeverket. Det er blant annet tolv filformater for ISO 20022-kredittoverføring som er tilgjengelig. Disse eksportformatene overholder SEPA ISO 20022 XML-standarden. De brukes til å generere ikke-euro-betalingsoverføringer for land/områder der de brukes, og euro-betalinger som er angitt i versjon 8.2 av SEPA-kredittoverføringsreglene som EPC utgir. Før du kan implementere kredittoverføringer må du kontakte banken din for å få programvaren som kreves for å laste opp filer for elektroniske banktjenester. Du vil bruke denne programvaren til å overføre XML-filene som inneholder betalingsordrer til banken.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported"></a>Hvilke kredittoverføringsformater støttes?
-Du bør alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle services (LCS) og vise den mest oppdaterte listen over tilgjengelige filer som har en aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til emnet som forklarer hvordan du oppretter et LCS-repositorium for å se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
+Du bør alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle services (LCS) og vise den mest oppdaterte listen over tilgjengelige filer som har en aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til artikkelen som forklarer hvordan du oppretter et LCS-repositorium for å se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
 
 ## <a name="what-do-i-have-to-set-up"></a>Hva må jeg konfigurere?
 -   Før du kan opprette kredittoverføringsfiler må minst én aktiv kredittoverføringskonfigurasjon importeres til ER-konfigurasjonene. hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).

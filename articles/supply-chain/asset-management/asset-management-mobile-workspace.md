@@ -1,6 +1,6 @@
 ---
 title: Bruke det mobile arbeidsområdet Aktivastyring
-description: Dette emnet inneholder informasjon om det mobile arbeidsområdet Aktivastyring
+description: Denne artikkelen inneholder informasjon om det mobile arbeidsområdet Aktivastyring.
 author: johanhoffmann
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 8b874237721d9252e7102c2611414a2cc74026c3
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: d7e68cbe1132547fea5c72458a93b1a449a67c86
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811511"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902147"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Bruke det mobile arbeidsområdet Aktivastyring
 
 [!include [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Dette emnet inneholder informasjon om det mobile arbeidsområdet **Aktivastyring**. Dette arbeidsområdet lar brukere vise og opprette vedlikeholdsforespørsler og arbeidsordrer. Brukere kan også vise tilordnede arbeidsordrejobber i en kalender- eller listevisning. Du kan også vise og søke etter aktiva og arbeidssteder.
+Denne artikkelen inneholder informasjon om det mobile arbeidsområdet **Aktivastyring**. Dette arbeidsområdet lar brukere vise og opprette vedlikeholdsforespørsler og arbeidsordrer. Brukere kan også vise tilordnede arbeidsordrejobber i en kalender- eller listevisning. Du kan også vise og søke etter aktiva og arbeidssteder.
 
 ## <a name="overview"></a>Oversikt
 

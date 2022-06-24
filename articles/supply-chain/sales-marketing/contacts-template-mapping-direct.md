@@ -1,6 +1,6 @@
 ---
 title: Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management
-description: Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere enhetene Kontakt (kontakter) og Kontakt (kunder) fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver malene og de underliggende oppgavene som brukes til å synkronisere enhetene Kontakt (kontakter) og Kontakt (kunder) fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 4ddb91c34816791d8eca80e4798eb46c1b496439
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062521"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857351"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management
 
@@ -32,7 +32,7 @@ ms.locfileid: "8062521"
 > [!NOTE]
 > Før du kan bruke kundeemnet til kontanter løsning må du ha kjennskap til [Integrere data til Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere tabellene Kontakt (kontakter) og Kontakt (kunder) direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
+Denne artikkelen beskriver malene og de underliggende oppgavene som brukes til å synkronisere tabellene Kontakt (kontakter) og Kontakt (kunder) direkte fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
@@ -126,7 +126,7 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 ![Tilordning av mal for kontakt til kunde i dataintegrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
-## <a name="related-topics"></a>Relaterte emner
+## <a name="related-articles"></a>Relaterte artikler
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 

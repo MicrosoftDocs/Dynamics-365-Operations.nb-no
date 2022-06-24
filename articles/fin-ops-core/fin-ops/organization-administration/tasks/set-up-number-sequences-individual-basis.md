@@ -1,6 +1,6 @@
 ---
 title: Konfigurere nummerserier enkeltvis
-description: Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis.
+description: Denne artikkelen forklarer hvordan du konfigurerer nummerserier enkeltvis.
 author: SunilGarg
 ms.date: 08/16/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b95a639c593c0f126a9aa1dd50434838d09ef746
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 7be72d348957c5c6494958276b2baa9c67d63c58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777919"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904995"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere nummerserier enkeltvis
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis. Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem. En hoveddata- eller transaksjonspost som krever en ID kalles en referanse. Du må konfigurere en nummerserie og tilknytte den referansen før du kan opprette nye poster for en referanse. Du kan konfigurere alle nødvendige nummerserier samtidig ved å bruke veiviseren **Definer nummerserier**, eller du kan opprette eller endre enkeltnummerserier ved å bruke siden **Nummerserier**.
+Denne artikkelen forklarer hvordan du konfigurerer nummerserier enkeltvis. Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og transaksjonsposter som krever dem. En hoveddata- eller transaksjonspost som krever en ID kalles en referanse. Du må konfigurere en nummerserie og tilknytte den referansen før du kan opprette nye poster for en referanse. Du kan konfigurere alle nødvendige nummerserier samtidig ved å bruke veiviseren **Definer nummerserier**, eller du kan opprette eller endre enkeltnummerserier ved å bruke siden **Nummerserier**.
 
 1. Gå til **Navigasjonsrute > Moduler > Organisasjonsadministrasjon > Nummerserier > Nummerserier**.
 2. Velg **Nummerserie**.

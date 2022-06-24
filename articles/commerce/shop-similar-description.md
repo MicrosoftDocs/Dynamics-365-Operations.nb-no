@@ -1,6 +1,6 @@
 ---
-title: Aktivere "kjøp med lignende beskrivelse"-anbefalinger
-description: Dette emnet beskriver hvordan du aktiverer produktanbefalinger av typen "kjøp lignende beskrivelse" i Microsoft Dynamics 365 Commerce.
+title: Aktivere anbefalinger av typen Kjøp lignende beskrivelse
+description: Denne artikkelen beskriver hvordan du aktiverer produktanbefalinger av typen "kjøp lignende beskrivelse" i Microsoft Dynamics 365 Commerce.
 author: bsokolov
 ms.date: 01/13/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 733b21870f9dd7ffa42fce3bccf669a59d633b14
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b935731b24f96753c814e3b496ffeeb7a92d9cc1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852014"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>Aktivere anbefalinger av typen Kjøp lignende beskrivelse
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du aktiverer produktanbefalinger av typen "kjøp lignende beskrivelse" i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du aktiverer produktanbefalinger av typen "kjøp lignende beskrivelse" i Microsoft Dynamics 365 Commerce.
 
 Anbefalingsfunksjonen "kjøp med lignende beskrivelse" i Dynamics 365 Commerce bruker kunstig intelligens og maskinlæring (AI og ML) for å levere anbefalinger for produkter med lignende beskrivelser som produktet kunden ser etter. Ved å gjøre anbefalinger av typen "kjøp med lignende beskrivelse" tilgjengelig for alle handelskanaler i Commerce, kan forhandlere hjelpe kunder med å enkelt finner det de ønsker.
 

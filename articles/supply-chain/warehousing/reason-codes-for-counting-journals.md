@@ -1,6 +1,6 @@
 ---
 title: Årsakskoder for lagertelling
-description: Dette emnet beskriver hvordan du konfigurerer og bruker årsakskoder for tellingsoppgaver.
+description: Denne artikkelen beskriver hvordan du konfigurerer og bruker årsakskoder for tellingsoppgaver.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 7d182f1d979543eeec700924d2bd180ee06be8ce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500606"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857119"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Årsakskoder for lagertelling
 
@@ -42,7 +42,7 @@ Før du definerer systemet, anbefaler vi at du definerer en strategi for å arbe
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Aktiver årsakskodefunksjoner i systemet
 
-Hvis du ikke ser alle funksjonene som er beskrevet i dette emnet i systemet, må du sannsynligvis aktivere funksjonen *Justeringer av poster i lagerbeholdning ved hjelp av konfigurerbare årsakskoder som er koblet til motkonto*. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Hvis du ikke ser alle funksjonene som er beskrevet i denne artikkelen i systemet, må du sannsynligvis aktivere funksjonen *Justeringer av poster i lagerbeholdning ved hjelp av konfigurerbare årsakskoder som er koblet til motkonto*. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Poster lagerbeholdninger ved hjelp av konfigurerbare årsakskoder som er koblet til motkontoer*
@@ -111,7 +111,7 @@ Gjør følgende for å konfigurere årsakskoder for telling.
 
 ### <a name="set-up-counting-reason-code-groups"></a><a name="reason-groups"></a>Definer årsakskodegrupper for telling
 
-*Årsakskodegrupper for telling* kan brukes som en del av menyelementene *Justering inn* og *Justering ut* i Warehouse Management-mobilappen til å begrense listen over opptellingsårsakskoder. (Hvis du vil ha mer informasjon om årsakskodegrupper for telling, kan du se [Definer menyelementer for mobilenheter for justering inn og justering ut](#setup-adjustment-in-out) senere i dette emnet.)
+*Årsakskodegrupper for telling* kan brukes som en del av menyelementene *Justering inn* og *Justering ut* i Warehouse Management-mobilappen til å begrense listen over opptellingsårsakskoder. (Hvis du vil ha mer informasjon om årsakskodegrupper for telling, kan du se [Definer menyelementer for mobilenheter for justering inn og justering ut](#setup-adjustment-in-out) senere i denne artikkelen.)
 
 1. Gå til **Lagerstyring** \> **Oppsett** \> **Lager** \> **Årsakskodegrupper for telling**.
 1. I handlingsruten velger du **Ny** for legge til en gruppe.
@@ -174,7 +174,7 @@ Følg disse trinnene for å definere et menyelement for en mobilenhet for juster
         - *Skjul* – Ikke vis årsakskoden.
 
     - **Rediger årsakskode for telling** – Angi dette alternativet til *Ja* for å tillate at medarbeideren kan redigere årsakskoden når den vises på mobilenheten under opptelling. Sett den til *Nei* for å hindre at arbeideren kan redigere koden.
-    - **Årsakskodegruppe for telling** – Velg en årsakskodegruppe hvis du vil begrense listen over alternativer som presenteres for arbeidere. Hvis du vil ha mer informasjon om hvordan du definerer årsakskodegrupper, kan du se delen [Definer årsakskodegrupper for telling](#reason-groups) tidligere i dette emnet. 
+    - **Årsakskodegruppe for telling** – Velg en årsakskodegruppe hvis du vil begrense listen over alternativer som presenteres for arbeidere. Hvis du vil ha mer informasjon om hvordan du definerer årsakskodegrupper, kan du se delen [Definer årsakskodegrupper for telling](#reason-groups) tidligere i denne artikkelen. 
 
 > [!NOTE]
 > Når du tilordner en årsakskodegruppe for telling til menyelementene *Justering inn* og *Justering ut* der alternativet **Bruk prosesshåndbok** er angitt til *Ja*, kan du få en begrenset liste over opptellingsårsakskodene som en del av behandling i Warehouse Management-mobilappen.

@@ -1,6 +1,6 @@
 ---
 title: Målretting av enheter, markeder og geografisk plassering
-description: Dette emnet beskriver hvordan du oppretter, redigerer og behandler målgrupper og mål i Microsoft Dynamics 365 Commerce-områdebyggeren ved hjelp av informasjon om enhet, marked og geografisk plassering.
+description: Denne artikkelen beskriver hvordan du oppretter, redigerer og behandler målgrupper og mål i Microsoft Dynamics 365 Commerce-områdebyggeren ved hjelp av informasjon om enhet, marked og geografisk plassering.
 author: sushma-rao
 ms.date: 02/03/2022
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 90772fd942db30bbf4f65a87b1dca4b2aaacee1e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090700"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881663"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Målretting av enheter, markeder og geografisk plassering
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter, redigerer og behandler målgrupper og mål i Microsoft Dynamics 365 Commerce-områdebyggeren ved hjelp av informasjon om enhet, marked og geografisk plassering.
+Denne artikkelen beskriver hvordan du oppretter, redigerer og behandler målgrupper og mål i Microsoft Dynamics 365 Commerce-områdebyggeren ved hjelp av informasjon om enhet, marked og geografisk plassering.
 
 I Dynamics 365 Commerce kan du tilpasse variasjoner av sideinnholdet (kjent som *mål*) for bestemte kundegrupper (kjent som *målgrupper*) for å øke brukerengasjement og -tilfredshet. Du kan opprette enten en målgruppe eller et mål først. En vellykket målrettingsopplevelse krever imidlertid begge disse komponentene.
 

@@ -1,6 +1,6 @@
 ---
 title: Mottaksseddel mot bestillinger
-description: Dette emnet beskriver de ulike alternativene for å registrere produktene som mottatt.
+description: Denne artikkelen beskriver de ulike alternativene for å registrere produktene som mottatt.
 author: GalynaFedorova
 ms.date: 11/15/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ea22357b4d966f50ef2021ba7534ae633859455
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 53925426b5df6000617b0d8cee757a551fb89c95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674400"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904050"
 ---
 # <a name="product-receipt-against-purchase-orders"></a>Mottaksseddel mot bestillinger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver de ulike alternativene for å registrere produktene som mottatt.
+Denne artikkelen beskriver de ulike alternativene for å registrere produktene som mottatt.
 
 Produktmottak er prosessen med å registrere at produkter som ble bestilt, er mottatt, slik at bestillingslinjer deretter kan behandles for fakturering. I noen tilfeller går produkter gjennom forhåndsregistreringen, der tilleggsinformasjon fra leverandøren registreres før varene mottas. Når produkter ankommer, merkes de først som **Registrert**. Produktene kan deretter gå gjennom flere prosesser, for eksempel kvalitetsstyring, før de til slutt merkes som **Mottatt**.
 

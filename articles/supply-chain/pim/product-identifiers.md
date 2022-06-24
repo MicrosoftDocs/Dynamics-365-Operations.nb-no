@@ -1,6 +1,6 @@
 ---
 title: Produktidentifikatorer
-description: Dette emnet gir informasjon om de ulike typene av produktidentifikatorer og forklarer hvordan du kan legge til produktidentifikatorer i produktdataene.
+description: Denne artikkelen gir informasjon om de ulike typene av produktidentifikatorer og forklarer hvordan du kan legge til produktidentifikatorer i produktdataene.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3fc2d5c01209f15a9cb680e3bb569087f08c08d3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063347"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851717"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer
 
@@ -29,7 +29,7 @@ ms.locfileid: "8063347"
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om de ulike typene av produktidentifikatorer og forklarer hvordan du kan legge til produktidentifikatorer i produktdataene.
+Denne artikkelen gir informasjon om de ulike typene av produktidentifikatorer og forklarer hvordan du kan legge til produktidentifikatorer i produktdataene.
 
 Når du arbeider med produkter på shop floor eller i et lager i Microsoft Dynamics ERP eller Microsoft Dynamics CRM, må du ha en god strategi for å identifisere disse produktene og produktvariantene.
 
@@ -125,7 +125,7 @@ Det finnes dessverre ingen standardfunksjonalitet som lar deg søke etter produk
 | Produkter V2 | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Avhengig av innstillingene for enheten og nummerserien for produktnummeret, kan produktnummeret opprettes automatisk under import. |
 | Produktvarianter | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse | Avhengig av produktterminologimalen, kan produktnummeret opprettes automatisk under import. Du kan imidlertid importere et hvilket som helst unikt produktnummer, og det produktnummeret trenger ikke følger samme struktur som produktterminologimalene. |
 | Produktoversettelser | Produktnavn, produktbeskrivelse | Produktnavn, produktbeskrivelse | Denne enheten overskriver alle språk. Når navnet på eller beskrivelsen av en juridisk enhets primærspråk overskrives, endres navnet og beskrivelsen av selve produktet. |
-| Frigitt produktoppretting V2 | Varenummer, produktnummer, varesøknavn| Varenummer, produktnummer, varesøknavn, produktsøknavn, produktnavn | Denne enheten kan være utfordrende når nummerserier brukes ved oppretting av nye frigitte produkter. Både nummerserien **Varenummer** og **Produktnummer** har en påvirkning. Nummerserien **Varenummer** er imidlertid per juridiske enhet, mens nummerserien **Produktnummer** er global. Derfor anbefales det ikke at du bruker nummerserien **Varenummer** når du distribuerer nye frigitte produkter. Når enheten brukes til å frigi et eksisterende produkt, må produktnummeret selvsagt angis i enheten. Hvis du vil ha mer informasjon, kan du se delen Produkt- og varenummerserier i dette emnet. |
+| Frigitt produktoppretting V2 | Varenummer, produktnummer, varesøknavn| Varenummer, produktnummer, varesøknavn, produktsøknavn, produktnavn | Denne enheten kan være utfordrende når nummerserier brukes ved oppretting av nye frigitte produkter. Både nummerserien **Varenummer** og **Produktnummer** har en påvirkning. Nummerserien **Varenummer** er imidlertid per juridiske enhet, mens nummerserien **Produktnummer** er global. Derfor anbefales det ikke at du bruker nummerserien **Varenummer** når du distribuerer nye frigitte produkter. Når enheten brukes til å frigi et eksisterende produkt, må produktnummeret selvsagt angis i enheten. Hvis du vil ha mer informasjon, kan du se delen Produkt- og varenummerserier i denne artikkelen. |
 | Frigitte produktvarianter | Varenummer, produktdimensjoner, produktnummer | Produktnummer, produktsøkenavn, produktnavn, produktbeskrivelse, produktdimensjoner | På samme måte som enheten **Produktvarianter** kan denne enheten brukes til å opprette nye produkter som følger produktterminologimalen eller bruker egne produktnumrene for varianten. |
 | Ekstern varebeskrivelse for kunder | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | Kundens varenummer, varenavn for kunde, kundebeskrivelse, kundekonto | En gruppe av kunder (for eksempel en kjøpertilknytning) kan samles i én gruppe ved hjelp av enheten **Eksterne kundegrupper for beskrivelse av vare**. |
 | Ekstern varebeskrivelse for leverandører | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | Leverandørens varenummer, varenavn for leverandør, leverandørbeskrivelse, leverandørkonto | En gruppe av leverandører (for eksempel en salgstilknytning eller bransjeorganisasjon) kan samles i én gruppe ved hjelp av enheten **Eksterne leverandørgrupper for beskrivelse av vare**. |
@@ -184,7 +184,7 @@ Gjør følgende for å konfigurere miljøet.
 
 Nå kan du bruke dataenhetene **Enhet for ID for Common Data Service for produktenhet**, **Kode for produktenhets-ID** og **Omfang for produktenhets-ID** til å eksportere identifikatorene for alle målsystemer.
 
-## <a name="related-topic"></a>Relaterte emne
+## <a name="related-article"></a>Relatert artikkel
 
 [Søke etter produkter og produktvarianter under ordreregistrering](search-products-product-variants.md)
 

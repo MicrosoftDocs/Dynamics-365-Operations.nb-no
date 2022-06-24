@@ -1,6 +1,6 @@
 ---
 title: Skaffe aktiva ved hjelp av innkjøp
-description: Dette emnet beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler.
+description: Denne artikkelen beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler.
 author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b654dbf97f8d91e0a3233803ee182b1383ad317d
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ac25114fe8036a474d637e9ad9ede5e46b50d92e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712097"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891587"
 ---
 # <a name="acquire-assets-through-procurement"></a>Skaffe aktiva ved hjelp av innkjøp
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler. Én kjøpslinje oppretter bare ett aktiva, uavhengig av antallet på kjøpslinjen. Hvis du vil opprette flere anleggsmidler, må du opprette flere innkjøpslinjer.
+Denne artikkelen beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler. Én kjøpslinje oppretter bare ett aktiva, uavhengig av antallet på kjøpslinjen. Hvis du vil opprette flere anleggsmidler, må du opprette flere innkjøpslinjer.
 
  Følgende metoder er tilgjengelige for integrering av Anleggsmidler og Leverandører, og du må bruke den samme metoden for alle anleggsmidler:
 -   Du må opprette et anleggsmiddel manuelt før du legger til anleggsmiddelnummeret i linjen på bestillingen eller leverandørfakturaen. En anskaffelsestransaksjon posteres automatisk for et anleggsmiddel når du posterer leverandørfakturaen. Dette er standardverdien.
@@ -38,7 +38,7 @@ Velg en av de to første metodene hvis du foretrekker å opprette anleggsmidler 
 
 Uansett om du oppretter anleggsmidler manuelt eller bruker en mer fleksibel tilnærming, må du også velge om du vil at en anskaffelsestransaksjon bare kan posteres i Anleggsmidler, eller om den også kan posteres når du posterer en leverandørfaktura. Noen organisasjoner foretrekker at brukere oppretter anskaffelser og anskaffelsestransaksjoner i Anleggsmidler ved hjelp av manuelle journaloppføringer eller forslag. 
 
-I dette emnet beskrives detaljene i hver metode.
+I denne artikkelen beskrives detaljene i hver metode.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a> Metoder for manuell oppretting av anleggsmidler
 Når du posterer en leverandørfaktura som har et anleggsmiddelnummer angitt i linjene, og det er merket av for Tillat anleggsmiddelanskaffelse fra innkjøp på siden Parametere for anleggsmidler, vil anskaffelsen posteres automatisk, og anleggsmiddelets status endres til Åpen. 

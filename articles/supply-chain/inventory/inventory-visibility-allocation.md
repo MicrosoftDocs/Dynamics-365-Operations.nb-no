@@ -1,8 +1,8 @@
 ---
-title: Lagertildeling for lagersynlighet
-description: Dette emnet beskriver hvordan du konfigurerer og bruker lagertildelingsfunksjonen, slik at du kan sette av dedikert lager til side for å sikre at du kan oppfylle de mest lønnsomme kanalene eller kundene.
+title: Lagertildeling for Inventory Visibility
+description: Denne artikkelen beskriver hvordan du konfigurerer og bruker lagertildelingsfunksjonen, slik at du kan sette av dedikert lager til side for å sikre at du kan oppfylle de mest lønnsomme kanalene eller kundene.
 author: yufeihuang
-ms.date: 05/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 4293ead4ccfc9ba04e8b9da437134b4e97569026
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786952"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852512"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Lagertildeling for lagersynlighet
 
@@ -98,7 +98,7 @@ Her er de første beregnede målene:
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Legge til andre fysiske mål i det beregnede målet som er tilgjengelig for tildeling
 
-Hvis du vil bruke tildeling, må du definere det beregnede målet som er tilgjengelig for tildeling (`@iv`.`@available_to_allocate`). Du har for eksempel `fno`-datakilden og `onordered`-målet, `pos`-datakilden og `inbound`-målet, og du vil gjøre tildeling på lager for summen `fno.onordered` og `pos.inbound`. I dette tilfellet skal `@iv.@available_to_allocate` inneholde `pos.inbound` og `fno.onordered` i formelen. Her er et eksempel:
+Hvis du vil bruke tildeling, må du definere det beregnede målet som er tilgjengelig for tildeling (`@iv.@available_to_allocate`). Du har for eksempel `fno`-datakilden og `onordered`-målet, `pos`-datakilden og `inbound`-målet, og du vil gjøre tildeling på lager for summen `fno.onordered` og `pos.inbound`. I dette tilfellet skal `@iv.@available_to_allocate` inneholde `pos.inbound` og `fno.onordered` i formelen. Her er et eksempel:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,11 +110,12 @@ Du angir gruppenavnene på siden for **konfigurasjon av PowerApp for lagersynlig
 
 Hvis du for eksempel bruker fire gruppenavn og setter dem til, \[`channel`, `customerGroup`, `region`, `orderType`\] vil disse navnene være gyldige for tildelingsrelaterte forespørsler når du kaller API for konfigurasjonsoppdatering.
 
-### <a name="allcoation-using-tips"></a>Tildeling ved hjelp av tips
+### <a name="allocation-using-tips"></a>Tildeling ved hjelp av tips
 
-- For hvert produkt bør fordelingsfunksjonen bruke på samme dimensjonsnivå i henhold til produktindekshierarkiet du angir i [konfigurasjon for produktindekshierarkiet](inventory-visibility-configuration.md#index-configuration). Indekshierarkiet er for eksempel Område, Lokasjon, Farge, Størrelse. Hvis du tildeler noe antall for ett produkt i Område, Lokasjon, Fargenivået. Neste gang du tildeler, bør også på Område, Lokasjon, Fargenivå, hvis du bruker Område, Lokasjon, Farge, Størrelsesnivå eller Område, Lokasjonsnivå, vil ikke dataene være konsekvent.
+- For hvert produkt bør fordelingsfunksjonen bruke på samme *dimensjonsnivå* i henhold til produktindekshierarkiet du angir i [konfigurasjonen for produktindekshierarkiet](inventory-visibility-configuration.md#index-configuration). La oss for eksempel anta at indekshierarkiet er \[`Site`, `Location`, `Color`, `Size`\]. Hvis du tildeler et antall for ett produkt på dimensjonsnivået \[`Site`, `Location`, `Color`\], bør du også tildele på samme nivå, \[`Site`, `Location`, `Color`\], neste gang du ønsker å tildele dette produktet. Hvis du bruker nivået \[`Site`, `Location`, `Color`, `Size`\] eller \[`Site`, `Location`\], vil dataene være inkonsekvente.
 - Endring av tildelingsgruppenavn vil ikke påvirke dataene som er lagret i tjenesten.
 - Tildelingen bør skje etter at produktet har det positive beholdningsantallet.
+- Hvis du vil tildele produkter fra en gruppe på et høyt *tildelingsnivå* til en undergruppe, bruker du API-en `Reallocate`. Hvis du for eksempel har et hierarki for tildelingsgrupper, \[`channel`, `customerGroup`, `region`, `orderType`\], og du ønsker å tildele noen produkter fra tildelingsgruppen \[Online, VIP\] til tildelingsundergruppen \[Online, VIP, EU\], bruker du API-en `Reallocate` til å flytte antallet. Hvis du bruker API-en `Allocate`, vil den tildele antallet fra det virtuelle fellesutvalget.
 
 ### <a name="using-the-allocation-api"></a><a name="using-allocation-api"></a>Bruke tildelings-API
 
@@ -295,9 +296,9 @@ Tre sykler blir solgt, og de tas fra tildelingspuljen. For å registrere dette t
 
 Etter dette kallet reduseres det tildelte antallet for produktet med 3. I tillegg genererer lagersynlighet en beholdningsendringshendelse der `pos.inbound` = *-3*. Du kan også beholde verdien `pos.inbound` som den er, og bare forbruke det fordelte antallet. I dette tilfellet må du imidlertid enten opprette et nytt fysisk mål for å beholde det forbrukte antallet, eller bruke det forhåndsdefinerte målet `@iv.@consumed`.
 
-I denne forespørselen legger du merke til at det fysiske målet du bruker i hovedteksten for ny bruk, bør bruke motsatt modifertype (Addisjon eller Subtraksjon), sammenlignet med endringstypen som brukes i det beregnede målet. Så i denne forbruksteksten har `iv.inbound` verdien `Subtraction`, ikke `Addition`.
+I denne forespørselen legger du merke til at det fysiske målet du bruker i hovedteksten for forbruksforespørselen, bør bruke motsatt modifikatortype (Addisjon eller Subtraksjon), sammenlignet med modifikatortypen som brukes i det beregnede målet. Så i denne forbruksteksten har `iv.inbound` verdien `Subtraction`, ikke `Addition`.
 
-`fno`-datakilden kan ikke brukes i den forbruksteksten, fordi vi alltid har gjort krav på at lagersynlighet ikke kan endre noen data for `fno`-datakilden. Dataflyten er enveisveis, som betyr at alle antallsendringer for datakilden `fno` må komme fra Supply Chain Management-miljøet.
+`fno`-datakilden kan ikke brukes i forbruksteksten, fordi vi alltid har gjort krav på at lagersynlighet ikke kan endre noen data for `fno`-datakilden. Dataflyten er enveisveis, som betyr at alle antallsendringer for datakilden `fno` må komme fra Supply Chain Management-miljøet.
 
 #### <a name="consume-as-a-soft-reservation"></a><a name="consume-to-soft-reserved"></a>Forbruk som en myk reservasjon
 
@@ -343,7 +344,7 @@ I denne forespørselen legger du merke til at `iv.softreserved` har verdien `Add
 
 #### <a name="query"></a>Forespørsel
 
-Bruk API for `Query` til å hente tildelingsrelatert informasjon for noen produkter. Du kan bruke dimensjonsfiltre og tilordningsgruppefiltre til å begrense resultatene. Dimensjonene må samsvare ut fra det du vil hente, for eksempel \[område=1, lokasjon=11\] vil ha ikke-relaterte resultater sammenlignet med \[område=1, lokasjon=11, farge=rød\].
+Bruk API-en `Query` til å hente tildelingsrelatert informasjon for noen produkter. Du kan bruke dimensjonsfiltre og tilordningsgruppefiltre til å begrense resultatene. Dimensjonene må samsvare ut fra det du vil hente, for eksempel \[område=1, lokasjon=11\] vil ha ikke-relaterte resultater sammenlignet med \[område=1, lokasjon=11, farge=rød\].
 
 ```json
 {

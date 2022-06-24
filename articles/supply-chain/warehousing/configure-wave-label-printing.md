@@ -1,6 +1,6 @@
 ---
 title: Bølgeetikettutskrift
-description: Dette emnet beskriver bølgeetikettutskrift og forklarer hvordan du konfigurerer den.
+description: Denne artikkelen beskriver bølgeetikettutskrift og forklarer hvordan du konfigurerer den.
 author: perlynne
 ms.date: 05/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 18620602c5f3cf6a69a36ef7248f35e5509337b8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778089"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901828"
 ---
 # <a name="wave-label-printing"></a>Bølgeetikettutskrift
 
@@ -49,7 +49,7 @@ Bølgeetikettutskriftt gir følgende forbedringer:
 Disse forbedringene gjør det mer effektivt å merke kartonger før lagring på paller. De er spesielt nyttige for firmaer som leverer til store forhandlere som bekrefter ordremottak automatisk ved å skanne hver kartong separat.
 
 > [!NOTE]
-> Du kan implementere konfigurasjonsscenarioene som er beskrevet i dette emnet, enten separat eller i kombinasjon, avhengig av dine forretningsbehov. Du kan utforme flere bølgeetikettmaler som fungerer i rekkefølge (som illustrert i scenario 3). Du kan for eksempel bruke scenario 1 til å skrive ut kartongetiketter og scenario 2 for å skrive ut palletiketter (hvis paller på lager varierer i størrelse og sammensetning).
+> Du kan implementere konfigurasjonsscenarioene som er beskrevet i denne artikkelen, enten separat eller i kombinasjon, avhengig av dine forretningsbehov. Du kan utforme flere bølgeetikettmaler som fungerer i rekkefølge (som illustrert i scenario 3). Du kan for eksempel bruke scenario 1 til å skrive ut kartongetiketter og scenario 2 for å skrive ut palletiketter (hvis paller på lager varierer i størrelse og sammensetning).
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Aktivere funksjonen Bølgeetikettutskrift
 

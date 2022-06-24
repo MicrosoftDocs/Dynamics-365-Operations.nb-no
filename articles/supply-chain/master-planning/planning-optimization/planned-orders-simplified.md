@@ -1,6 +1,6 @@
 ---
 title: Planlagte ordrer forenklet
-description: Dette emnet beskriver hvordan du kan vise, administrere og autorisere planlagte bestillinger ved å bruke siden Planlagte ordrer forenklet.
+description: Denne artikkelen beskriver hvordan du kan vise, administrere og autorisere planlagte bestillinger ved å bruke siden Planlagte ordrer forenklet.
 author: t-benebo
 ms.date: 01/24/2022
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-01-24
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b039aa5481b835d3523b86c4ea88afff6a96ba8b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5f207fa1edb11d05910e22732cf54e100e4e3489
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470128"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887377"
 ---
 # <a name="planned-orders-simplified"></a>Planlagte ordrer forenklet
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan vise, administrere og autorisere planlagte bestillinger ved å bruke siden **Planlagte ordrer forenklet**.
+Denne artikkelen beskriver hvordan du kan vise, administrere og autorisere planlagte bestillinger ved å bruke siden **Planlagte ordrer forenklet**.
 
 Siden **Planlagte ordrer forenklet** er en forenklet versjon av siden **Planlagte bestillinger**. Den har færre alternativer, men den er raskere å arbeide med når du trenger å gå gjennom, godkjenne og autorisere de planlagte ordrene.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funksjonen for systemet
 
-Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Planlagte ordrer forenklet*.
+Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i denne artikkelen, kan du gå til [Funksjonsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Planlagte ordrer forenklet*.
 
 ## <a name="view-manage-and-firm-planned-orders"></a>Vise, behandle og godkjenne planlagte bestillinger
 

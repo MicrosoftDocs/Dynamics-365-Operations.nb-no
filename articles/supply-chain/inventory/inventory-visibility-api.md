@@ -1,6 +1,6 @@
 ---
 title: Offentlige API-er for lagersynlighet
-description: Dette emnet beskriver de offentlige API-ene som leveres av Lagersynlighet.
+description: Denne artikkelen beskriver de offentlige API-ene som leveres av Lagersynlighet.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
-ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
+ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "8786873"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902031"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API-er for lagersynlighet
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver de offentlige API-ene som leveres av Lagersynlighet.
+Denne artikkelen beskriver de offentlige API-ene som leveres av Lagersynlighet.
 
 Den offentlige REST-API-en i tillegget for lagersynlighet viser flere spesifikke endepunkter for integrering. Det støtter fire hovedtyper for samhandling:
 
@@ -160,7 +160,7 @@ Hvis du vil hente et token for sikkerhetstjeneste, gjør du følgende:
    ```
 
 > [!IMPORTANT]
-> Når du bruker *Postman*-forespørselssamlingen til å kalle felles APIer for lagersynlighet, må du legge til et bærertoken for hver forespørsel. Hvis du vil finne bærertokenet, velger du kategorien **Autorisasjon** under forespørsels-URL-adressen, velger typen **Bærertoken** og kopierer tilgangstokenet som ble hentet i siste trinn. I senere deler i dette emnet brukes `$access_token` til å representere tokenet som ble hentet i siste trinn.
+> Når du bruker *Postman*-forespørselssamlingen til å kalle felles APIer for lagersynlighet, må du legge til et bærertoken for hver forespørsel. Hvis du vil finne bærertokenet, velger du kategorien **Autorisasjon** under forespørsels-URL-adressen, velger typen **Bærertoken** og kopierer tilgangstokenet som ble hentet i siste trinn. I senere deler i denne artikkelen brukes `$access_token` til å representere tokenet som ble hentet i siste trinn.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Opprett lagerendringshendelser
 
@@ -359,7 +359,7 @@ Body:
     ]
 ```
 
-Følgende eksempel viser eksempeltekstinnholdet. Virkemåten til denne API-en er forskjellig fra virkemåten til API-ene som er beskrevet i delen [Opprett lagerendringshendelser](#create-onhand-change-event) tidligere i dette emnet. I dette eksemplet blir antallet for produktet *T-skjorte* angitt til 1.
+Følgende eksempel viser eksempeltekstinnholdet. Virkemåten til denne API-en er forskjellig fra virkemåten til API-ene som er beskrevet i delen [Opprett lagerendringshendelser](#create-onhand-change-event) tidligere i denne artikkelen. I dette eksemplet blir antallet for produktet *T-skjorte* angitt til 1.
 
 ```json
 [

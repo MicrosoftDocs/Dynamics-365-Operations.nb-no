@@ -1,20 +1,20 @@
 ---
 title: Feilkoder for tilstandskontroll for tabelltilordning
-description: Dette emnet beskriver feilkoder for tilstandskontroll for tabelltilordning.
-author: nhelgren
-ms.date: 10/04/2021
+description: Denne artikkelen beskriver feilkoder for tilstandskontroll for tabelltilordning.
+author: RamaKrishnamoorthy
+ms.date: 05/31/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
-ms.author: nhelgren
+ms.author: ramasri
 ms.search.validFrom: 2021-10-04
-ms.openlocfilehash: 916f3cfca3bae7a073ce4e956a12080ee01c8d31
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3ae78077fc716311c38620b14665af3983a44c2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061284"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884090"
 ---
 # <a name="errors-codes-for-the-table-map-health-check"></a>Feilkoder for tilstandskontroll for tabelltilordning
 
@@ -22,7 +22,7 @@ ms.locfileid: "8061284"
 
 
 
-Dette emnet beskriver feilkoder for tilstandskontroll for tabelltilordning.
+Denne artikkelen beskriver feilkoder for tilstandskontroll for tabelltilordning.
 
 ## <a name="error-100"></a>Feil 100
 
@@ -79,5 +79,20 @@ select * from <EntityName> where <filter criteria for the records> on SQL.
 Feilmeldingen er "Tabell: \{datasourceTable.Key.subscribedTableName\} for enhet \{datasourceTable.Key.entityName\} spores for enhet \{origTableToEntityMaps.EntityName\}. Samme tabeller som spores for flere enheter, kan påvirke systemytelsen for synkroniseringstransaksjoner."
 
 Hvis den samme tabellen spores av flere enheter, vil alle endringer i tabellen utløse evaluering av dobbel skriving for de koblede enhetene. Selv om filtersetningene bare sender de gyldige postene, kan evalueringen forårsake et ytelsesproblem hvis det finnes langsiktige spørringer eller ikkeoptimaliserte spørringsplaner. Dette problemet kan kanskje ikke unngås fra forretningsperspektivet. Hvis det imidlertid er mange kryssende tabeller på tvers av flere enheter, bør du vurdere å forenkle enheten eller kontrollere optimaliseringer for enhetsspørringer.
+
+## <a name="error-1800"></a>Feil 1800
+Feilmeldingen er "Datakilde: {} for enheten CustCustomerV3Entity inkluderer en områdeverdi. Inngående postupserter fra Dataverse til Økonomi- og drift kan påvirkes av områdeverdier på enhet. Test registreringsoppdateringer fra Dataverse til Økonomi og drift med poster som ikke samsvarer med filterkriteriene for å validere innstillingene dine.
+
+Hvis det er angitt et område for enheten i økonomi- og driftsapper, bør innkommende synkronisering fra Dataverse til økonomi- og driftsapper testes for oppdateringsvirkemåte for poster som ikke samsvarer med dette områdekriteriet. Alle poster som ikke samsvarer med området, blir behandlet som en innsettingsoperasjon av enheten. Hvis det finnes en eksisterende post i den underliggende tabellen, vil innsettingen mislykkes. Vi anbefaler at du tester dette brukstilfellet for alle scenarier før du distribuerer til produksjon.
+
+## <a name="error-1900"></a>Feil 1900
+Feilmeldingen er: Enheten har {} datakilder som ikke spores for utgående dobbelt skriving. Dette kan påvirke ytelsen for direktesynkroniseringsspørring. Ommodeller enheten i økonomi- og drift for å fjerne ubrukte datakilder og tabeller, eller implementere getEntityRecordIdsImpactedByTableChange for å optimalisere kjøretidsspørringene.
+
+Hvis det er mange datakilder som ikke brukes til sporing i faktisk livesynkronisering fra økonomi- og driftsapper, kan enhetsytelsen påvirke direktesynkronisering. Når du skal optimalisere de sporede tabellene, bruker du metoden getEntityRecordIdsImpactedByTableChange.
+
+## <a name="error-5000"></a>Feil 5000
+Feilmeldingen er at synkrone plugin-moduler registreres for datastyringshendelser for enhetskontoer. Disse kan påvirke opprinnelig synkronisering og ytelsen for live sync-import til Dataverse. Hvis du vil ha best mulig ytelse, kan du endre pluginmodulene til asynkron behandling. Liste over registrerte plugin-moduler {}.
+
+Synkrone plugin-moduler på en Dataverse-enhet kan påvirke direkte synkronisering og innledende synkroniseringsytelse fordi den legges på transaksjonsbelastningen. Den anbefalte tilnærmingen er å enten slå av plugin-modulene eller gjøre disse asynkrone hvis du har treg belastning i innledende synkronisering eller synkroniserer for en bestemt enhet.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

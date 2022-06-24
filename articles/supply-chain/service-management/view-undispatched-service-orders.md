@@ -1,6 +1,6 @@
 ---
 title: Vise ikke fordelte serviceordrer
-description: Dette emnet beskriver hvordan du viser aktiviteter i en serviceordre som ikke har en arbeider tilordnet til dem fra en fordelingsgruppe.
+description: Denne artikkelen beskriver hvordan du viser aktiviteter i en serviceordre som ikke har en arbeider tilordnet seg fra en fordelingsgruppe.
 author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8d33e04f85a298bb303f58f763357247e1fdaf3
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c0c70f2aefc4d9613663fa91e7f613dc98f6ae2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674204"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877515"
 ---
 # <a name="view-undispatched-service-orders"></a>Vise ikke fordelte serviceordrer 
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du viser aktiviteter i en serviceordre som ikke har en arbeider tilordnet til dem fra en fordelingsgruppe.
+Denne artikkelen beskriver hvordan du viser aktiviteter i en serviceordre som ikke har en arbeider tilordnet seg fra en fordelingsgruppe.
 
 1.  Klikk på **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 

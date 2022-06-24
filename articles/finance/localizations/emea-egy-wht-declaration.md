@@ -1,6 +1,6 @@
 ---
 title: Deklarering av kildeskatt for Egypt
-description: Dette emnet beskriver hvordan du konfigurerer og genererer deklareringer for kildeskatt for Egypt.
+description: Denne artikkelen beskriver hvordan du konfigurerer og genererer deklareringer for kildeskatt for Egypt.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: 505eb8a907ec8cc74b897695ddd90eee3abb0ed6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403897"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907694"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Deklarering av kildeskatt for Egypt (EG-00005)
 
@@ -26,7 +26,7 @@ ms.locfileid: "7403897"
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Oversikt
-Dette emnet beskriver hvordan du kan sette opp og generere deklarering av forskuddsskatt og skjemaene 11 og 41 for deklarering av kildeskatt for juridiske enheter i Egypt 
+Denne artikkelen beskriver hvordan du kan sette opp og generere deklarering av forskuddsskatt og skjemaene 11 og 41 for deklarering av kildeskatt for juridiske enheter i Egypt 
 
 Alle egyptiske enheter må klargjøre skjema 41, som summerer alle skatter som oppbevares fra lokale leverandører og leverandører. I tillegg til skjema 41 må skjema 11 genereres for detaljert å beskrive alle opptjente avgifter fra utenlandske leverandører. 
 
@@ -58,7 +58,7 @@ Hvis du vil ha mer informasjon om hvordan du importerer konfigurasjoner for elek
 
 Implementeringen av WHT-deklareringsskjemaene for Egypt er basert på konfigurasjoner for elektronisk rapportering (ER). Hvis du vil ha mer informasjon om funksjonene og begrepene for rapportering som kan konfigureres, kan du se [Elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-For miljøer av produksjons- og brukergodkjenningstesting (UAT), følger du instruksjonene i emnet [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For miljøer av produksjons- og brukergodkjenningstesting (UAT), følger du instruksjonene i artikkelen [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 Hvis du vil generere kildeskattdeklareringer i en egyptisk juridisk enhet, må du laste opp følgende konfigurasjoner:
 

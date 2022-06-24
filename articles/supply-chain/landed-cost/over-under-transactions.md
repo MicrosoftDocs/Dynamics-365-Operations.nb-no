@@ -1,6 +1,6 @@
 ---
 title: Over-/undertransaksjoner
-description: Dette emnet formidler informasjon som vil hjelpe deg med å definere detaljene for policyer for over-/undertransaksjoner, slik at systemet kan bestemme hvordan overbehandlingen og underbehandlingen av varer behandles når de mottas.
+description: Denne artikkelen formidler informasjon som vil hjelpe deg med å definere detaljene for policyer for over-/undertransaksjoner, slik at systemet kan bestemme hvordan overbehandlingen og underbehandlingen av varer behandles når de mottas.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 63ba27d3fe10441f5e0ad54e684aa6799b521c7a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 79ce18a462f9c2f93dceec82da7ee0209ab61f78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687847"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845004"
 ---
 # <a name="overunder-transactions"></a>Over-/undertransaksjoner
 

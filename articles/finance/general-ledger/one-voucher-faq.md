@@ -1,6 +1,6 @@
 ---
 title: Ett bilag, vanlige spørsmål
-description: Dette emnet gir svar på vanlige spørsmål om Ett bilag-funksjonaliteten. Med ett bilag for finansjournaler (generell journal, anleggsmiddeljournal, leverandørbetalingsjournal og så videre) kan du angi flere underfinansjournaltransaksjoner i forbindelse med ett bilag.
+description: Denne artikkelen gir svar på vanlige spørsmål om Ett bilag-funksjonaliteten. Med ett bilag for finansjournaler (generell journal, anleggsmiddeljournal, leverandørbetalingsjournal og så videre) kan du angi flere underfinansjournaltransaksjoner i forbindelse med ett bilag.
 author: kweekley
 ms.date: 11/05/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: beab87ad569a6009fb4a42fd19681b64dcb0bb1e
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: e7eedfd4b2914000e8fd85d977b071f44545a058
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859805"
 ---
 # <a name="one-voucher-faq"></a>Ett bilag, vanlige spørsmål
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir svar på vanlige spørsmål om Ett bilag-funksjonaliteten. Ved hjelp av Ett bilag for finansjournaler kan du registrere flere underfinanstransaksjoner i sammenheng med ett enkelt bilag. Journalene du kan ta med i dette bilaget, kan blant annet være økonomijournaler, anleggsmiddeljournaler og leverandørbetalingsjournaler.
+Denne artikkelen gir svar på vanlige spørsmål om Ett bilag-funksjonaliteten. Ved hjelp av Ett bilag for finansjournaler kan du registrere flere underfinanstransaksjoner i sammenheng med ett enkelt bilag. Journalene du kan ta med i dette bilaget, kan blant annet være økonomijournaler, anleggsmiddeljournaler og leverandørbetalingsjournaler.
 
 ## <a name="when-will-the-one-voucher-functionality-be-deprecated"></a>Når blir funksjonaliteten Ett bilag avskrevet?
 

@@ -1,6 +1,6 @@
 ---
 title: Konvertering av måleenhet per produktvariant
-description: Dette emnet forklarer hvordan du definerer måleenhetskonverteringer for produktvarianter. Det inneholder et eksempel på oppsettet.
+description: Denne artikkelen forklarer hvordan du definerer måleenhetskonverteringer for produktvarianter. Det inneholder et eksempel på oppsettet.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c02252abcaf82cb2aab928949827e25ef7cce8c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a605e510ac8faa1f92e105c9fcc30222ef78e05e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579574"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869640"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Konvertering av måleenhet per produktvariant
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer måleenhetskonverteringer for ulike produktvarianter.
+Denne artikkelen forklarer hvordan du konfigurerer måleenhetskonverteringer for ulike produktvarianter.
 
 I stedet for å opprette flere individuelle produkter som må vedlikeholdes, kan du bruke produktvarianter til å opprette variasjoner av ett produkt. En produktvariant kan for eksempel være en T-skjorte av en gitt størrelse og farge.
 

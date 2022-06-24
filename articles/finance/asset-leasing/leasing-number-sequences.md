@@ -1,6 +1,6 @@
 ---
 title: Tilordne nummerserier
-description: Dette emnet beskriver hvordan du oppretter nummerserier for leie-IDer. Det forklarer også hvordan du oppretter unike IDer som brukes i indeksrevurderingsprosessen.
+description: Denne artikkelen beskriver hvordan du oppretter nummerserier for leie-IDer. Det forklarer også hvordan du oppretter unike IDer som brukes i indeksrevurderingsprosessen.
 author: moaamer
 ms.date: 07/16/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 71a6f27b4067eadb3d17b6fc14de366fcc441230
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: ee7547f9a46034238f2bd6c668c124852b3e0714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710760"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845323"
 ---
 # <a name="assign-number-sequences"></a>Tilordne nummerserier
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter nummerserier for leie-IDer. Det forklarer også hvordan du oppretter unike IDer som brukes i indeksrevurderingsprosessen.
+Denne artikkelen beskriver hvordan du oppretter nummerserier for leie-IDer. Det forklarer også hvordan du oppretter unike IDer som brukes i indeksrevurderingsprosessen.
 
 1. Gå til **Aktivaleie \> Oppsett \> Parametere for aktivaleie**.
 2. Velg sidekategorien **Nummerserier**.

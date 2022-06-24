@@ -1,6 +1,6 @@
 ---
 title: Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
-description: Dette emnet beskriver konseptuell informasjon om avdelinger, jobber og stillinger, som er organisasjonselementer som vedlikeholdes i Personale.
+description: Denne artikkelen beskriver konseptuell informasjon om avdelinger, jobber og stillinger, som er organisasjonselementer som vedlikeholdes i Personale.
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 717bf7dcbd9a7e19a6dc960648655fdbd3e2465a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0cb4e745eb6531d90a02778ba85e6caf790f2d46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694830"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874282"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
 
@@ -28,7 +28,7 @@ ms.locfileid: "8694830"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Dette emnet beskriver konseptuell informasjon om disse elementene. 
+Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Denne artikkelen beskriver konseptuell informasjon om disse elementene. 
 
 Eksemplet nedenfor brukes til å illustrere begreper som er beskrevet i denne artikkelen.
 

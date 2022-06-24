@@ -1,6 +1,6 @@
 ---
 title: Støtte for dobbel valuta for avgift
-description: Dette emnet beskriver hvordan du kan utvide funksjonen for dobbelt valutaregnskap i avgiftsdomenet og virkningen for avgiftsberegning og -postering
+description: Denne artikkelen beskriver hvordan du kan utvide funksjonen for dobbelt valutaregnskap i avgiftsdomenet og virkningen for avgiftsberegning og -postering
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,17 +15,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fcd5a3afb442d9c85aba12b7782cf09f88f0e51a
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 13d70d964a83c2efba090244d549bdb38ad25af2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713051"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909047"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Støtte for dobbel valuta for merverdiavgift
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan utvide funksjonen for dobbelt valutaregnskap for merverdiavgift og virkningen for merverdiavgiftsberegning, -postering og -utligninger.
+Denne artikkelen beskriver hvordan du kan utvide funksjonen for dobbelt valutaregnskap for merverdiavgift og virkningen for merverdiavgiftsberegning, -postering og -utligninger.
 
 Funksjonen for dobbel valuta for Dynamics 365 Finance ble innført i versjon 8.1 (oktober 2018). Den endrer måten regnskapsoppføringer i rapporteringsvalutaen beregnes på.
 
@@ -89,7 +89,7 @@ Denne funksjonen vil bare gjelde for nye transaksjoner. For mva-transaksjoner so
 
 For å hindre foregående scenario anbefaler vi at du endrer denne parameterverdien i en ny (ren) mva-utligningsperiode som ikke inneholder noen ikke-utlignede mva-transaksjoner. Hvis du vil endre denne verdien midt i en mva-utligningsperiode, kan du kjøre programmet "Utlign og poster merverdiavgift" for gjeldende avgiftsutligningsperiode før du endrer denne parameterverdien.
 
-Denne funksjonen legger til regnskapsoppføringer som avklarer gevinst og tap fra valutakurser. Oppføringene vil bli gjort i de realiserte valutajusteringsresultatkontoene når revaluering utføres under mva-utligningen. Hvis du vil ha mer informasjon, kan du se delen [Automatisk saldo for avgiftsutligning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senere i dette emnet.
+Denne funksjonen legger til regnskapsoppføringer som avklarer gevinst og tap fra valutakurser. Oppføringene vil bli gjort i de realiserte valutajusteringsresultatkontoene når revaluering utføres under mva-utligningen. Hvis du vil ha mer informasjon, kan du se delen [Automatisk saldo for avgiftsutligning i rapporteringsvaluta](#tax-settlement-auto-balance-in-reporting-currency) senere i denne artikkelen.
 
 > [!NOTE]
 > Under utligningen tas informasjon for finansdimensjoner fra mva-kontoer, som er balansekontoer, og angis i resultatkontoer for valutajustering, som er resultatkontoer. Fordi det kan forekomme begrensninger på verdien til finansdimensjoner mellom balansekontoer og resultatregnskapskontoer, kan det oppstå en feil under utligningen og postering av merverdiavgiftsprosessen. Hvis du vil unngå å måtte endre kontostrukturer, kan du aktivere funksjonen "Fyll ut finansdimensjoner til de realiserte valutajusteringsresultatkontoene for utligning av merverdiavgift". Denne funksjonen tvinger avledingen av finansdimensjoner til valutajusteringsresultatkontoer. 

@@ -1,6 +1,6 @@
 ---
 title: Behandle flere avledede tilordninger for én modellrot
-description: Dette emnet beskriver hvordan du kan administrere flere avledede tilordninger som ble konfigurert for én modellrot.
+description: Denne artikkelen beskriver hvordan du kan administrere flere avledede tilordninger som ble konfigurert for én modellrot.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d71b05b3f2eda93a93f728926e675c040371781e
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324118"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892486"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Behandle flere avledede tilordninger for én modellrot
 
@@ -32,9 +32,9 @@ Komponenter for ER-modelltilordning kan være i [konfigurasjoner](general-electr
 
 Mange konfigurasjonsleverandører kan tilby konfigurasjoner for ER-modelltilordning for samme ER-datamodell. Disse konfigurasjonene for modelltilordning kan inneholde tilordningskomponenter for ulike rotdefinisjoner. Du kan bruke en modelltilordning for én rotdefinisjon som tilbys av én [leverandør](general-electronic-reporting.md#Provider), og bruke en modelltilordning for en annen rotdefinisjon som tilbys av en annen leverandør.
 
-Fremgangsmåtene i dette emnet forklarer hvordan du kan administrere flere konfigurasjoner for ER-modelltilordning for en ER-datamodell når de inneholder ulike modelltilordningskomponenter som er konfigurert for samme rotdefinisjon. 
+Fremgangsmåtene i denne artikkelen forklarer hvordan du kan administrere flere konfigurasjoner for ER-modelltilordning for en ER-datamodell når de inneholder ulike modelltilordningskomponenter som er konfigurert for samme rotdefinisjon. 
 
-For å kunne fullføre fremgangsmåtene i dette emnet må du være tilordnet til rollen Systemansvarlig eller Utvikler av elektronisk rapportering.
+For å kunne fullføre fremgangsmåtene i denne artikkelen må du være tilordnet til rollen Systemansvarlig eller Utvikler av elektronisk rapportering.
 
 Alle disse fremgangsmåtene kan utføres i USMF-firmaet. Ingen koding er nødvendig.
 

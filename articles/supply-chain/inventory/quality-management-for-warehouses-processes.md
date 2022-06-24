@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsstyring for lagerprosesser
-description: Dette emnet inneholder informasjon om funksjonen for kvalitetsstyring for lagerprosesser. Denne funksjonen utvider funksjonaliteten til kvalitetsstyring og lar brukere integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av avansert lagerstyring.
+description: Denne artikkelen inneholder informasjon om funksjonen for kvalitetsstyring for lagerprosesser. Denne funksjonen utvider funksjonaliteten til kvalitetsstyring og lar brukere integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av avansert lagerstyring.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: a8a7ac8266c14791137f9eda51b5abb5a59e5961
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679058"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857844"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerprosesser
 
@@ -69,7 +69,7 @@ Før lagerarbeidet kan genereres automatisk for å flytte lager til kvalitetskon
 1. For hver arbeidsordretype definerer du lokasjonsdirektiver som bruker de riktige kvalitetskontroll-stedene som lageret skal flyttes til. Etter at kvalitetskontroll er fullført, sikrer lokasjonsdirektivet for arbeidsordretypen _kvalitetsordre_ at det blir valgt en ny mållokasjon, slik at lageret kan flyttes ut av kvalitetskontroll-lokasjonen.
 1. Definer de relevante menyelementene for mobilenhet for å støtte flytting av mottatt lager til kvalitetskontroll-lokasjonen, og flyttingen av lagerbeholdning som består eller ikke består kvalitetskontroll fra kvalitetskontroll-lokasjonen til en ny lokasjon.
 
-Hvis du vil ha et trinnvis eksempel som viser hvordan du fullfører dette oppsettet, kan du se [eksempelscenariet](#example-scenario) på slutten av dette emnet.
+Hvis du vil ha et trinnvis eksempel som viser hvordan du fullfører dette oppsettet, kan du se [eksempelscenariet](#example-scenario) på slutten av denne artikkelen.
 
 ## <a name="enable-a-warehouse-for-quality-management"></a>Aktivere et lager for kvalitetsstyring
 
@@ -188,7 +188,7 @@ Når **Spesifikasjon av antall**-verdien er _Fullstendig nummerskilt_, styrer fe
 | Belastning | Fullstendig nummerskilt | Ja _(låst/ikke redigerbart)_ | <p>Sted: Ja</p><p>Nummerskilt: Ja _(låst/ikke redigerbart)_</p> | Ja | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantall for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantall for vare B: 90 EA (3 paller)**</li></ul><p>**Én belastning, to belastningslinjer med hver ordrelinje**</p><ol><li>Registrer mottak i mobilappen Lagerstyring for vare A, 30 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i mobilappen Lagerstyring for vare A, 30 EA, LP2<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i mobilappen Lagerstyring for vare A, 30 EA, LP3<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i mobilappen Lagerstyring for vare A, 30 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i mobilappen Lagerstyring for vare B, 30 EA, LP5<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i mobilappen Lagerstyring for vare B, 30 EA, LP6<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i mobilappen Lagerstyring for vare A, 30 EA, LP7<p>Bestillingsarbeid for 30 EA (plassering)</p></li></ol> |
 | Belastning | Prosent = 10 | Ja _(låst/ikke redigerbart)_ | <p>Lokasjon: Nei</p><p>Nummerskilt: Nei</p> | Nei | Gjelder ikke | <p>**Ordrelinjeantall: 100 EA**</p><p>**Ingen belastninger opprettes. Ordreområde brukes.**</p><ol><li>Registrer mottak i mobilappen Lagerstyring for 50 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li><li>Registrer mottak i mobilappen Lagerstyring for 50 EA, LP2<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li></ol> |
 
-Når en arbeider validerer en av kvalitetsordrene som vises i den forrige tabellen, genererer systemet automatisk kvalitetsordrearbeid for å flytte lagerbeholdningen fra kvalitetskontroll-lokasjonen til lokasjonen som er definert i lokasjonsdirektivet for arbeidsordretypen _Kvalitetsordre_. Du kan definere en hvilken som helst lokasjon for dette formålet, for eksempel en retur- eller lagringslokasjon, avhengig av testresultatet for kvalitetsordren. Hvis du vil ha et eksempel på dette oppsettet, kan du se [eksempelscenarioet](#example-scenario) på slutten av dette emnet.
+Når en arbeider validerer en av kvalitetsordrene som vises i den forrige tabellen, genererer systemet automatisk kvalitetsordrearbeid for å flytte lagerbeholdningen fra kvalitetskontroll-lokasjonen til lokasjonen som er definert i lokasjonsdirektivet for arbeidsordretypen _Kvalitetsordre_. Du kan definere en hvilken som helst lokasjon for dette formålet, for eksempel en retur- eller lagringslokasjon, avhengig av testresultatet for kvalitetsordren. Hvis du vil ha et eksempel på dette oppsettet, kan du se [eksempelscenarioet](#example-scenario) på slutten av denne artikkelen.
 
 Du kan åpne en kvalitetsordre som allerede er validert, på nytt, forutsatt at kvalitetsordrearbeidet som er knyttet til flytting av lageret fra kvalitetskontroll-lokasjonen, ikke har **Arbeidsstatus**-verdien *Lukket* eller *Pågår*.
 

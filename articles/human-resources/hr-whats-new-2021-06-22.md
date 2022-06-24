@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources 22. juni 2021
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. juni 2021.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. juni 2021.
 author: marcelbf
 ms.date: 06/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b1d2ccf1083f34aefbe87354f03dbebd6cb5be7e
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: aacb605374d99a3c0bad3438c89e33a04a4d7faf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694431"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897784"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 22. juni 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -51,9 +51,9 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdateringer for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
-| Utstedelsesnummer | Problem |  beskrivelse |
+| Utstedelsesnummer | Problem |  Beskrivelse |
 | --- | --- | --- |
 | 583052 | Bruker som mottar tilbakemelding, kan redigere den mottatte tilbakemeldingen | Når en ansatt som mottar tilbakemelding på en ytelsesjournal, velger **Legg til ekstern kobling**, kan du redigere skjemaet, slik at den ansatte kan redigere tilbakemelding om ytelsen de har mottatt. |
 | 522281 | Hvis du velger antall ansatte på kompensasjonsstrukturflisene i Kompensasjonsstyring, fører det til uriktige resultater| Når du driller ned i kompensasjonsplanene fra arbeidsområdet for kompensasjon, vises det riktige antallet ansatte nå. |

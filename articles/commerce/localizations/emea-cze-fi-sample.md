@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integrering av regnskapsregistreringstjenesten for Tsjekkia
-description: Dette emnet gir en oversikt over eksemplet for regnskapsintegrering for Tsjekkia i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over eksemplet for regnskapsintegrering for Tsjekkia i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: d255b03242a4cb7a72cef1e8e6fab901ecf953e6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910504"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Eksempel på integrering av regnskapsregistreringstjenesten for Tsjekkia
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over eksemplet for regnskapsintegrering for Tsjekkia i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over eksemplet for regnskapsintegrering for Tsjekkia i Microsoft Dynamics 365 Commerce.
 
 For å oppfylle lokale regnskapskravene for kasser i Tsjekkia inneholder Dynamics 365 Commerce-funksjonaliteten for Tsjekkia et eksempel på salgsstedsintegrering med en ekstern regnskapsregistreringstjeneste. Eksemplet utvider [funksjonaliteten for regnskapsintegrering](fiscal-integration-for-retail-channel.md). Den er basert på løsningen [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) fra [EFSTA](https://efsta.org/), og gjør det mulig å kommunisere med EFR-tjenesten via HTTPS-protokollen. EFR-tjenesten sørger for elektronisk registrering av salg (EET – Elektronická evidence tržeb) det vil si den elektroniske overføringen av salgsdataene til skattemyndighetenes nettjeneste.
 

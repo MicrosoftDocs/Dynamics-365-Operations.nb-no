@@ -1,6 +1,6 @@
 ---
 title: Hovedplanlegging med behovsprognoser
-description: Dette emnet forklarer hvordan du inkluderer behovsprognoser under hovedplanlegging med Planleggingsoptimalisering.
+description: Denne artikkelen forklarer hvordan du inkluderer behovsprognoser under hovedplanlegging med Planleggingsoptimalisering.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ec5150186e190e67913409b9cac107ff2bd55001
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468448"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878997"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hovedplanlegging med behovsprognoser
 
@@ -42,7 +42,7 @@ Følg denne fremgangsmåten for å konfigurere en hovedplan slik at den innehold
 
     - **Prognosemodell** – Velg prognosemodellen som skal brukes. Denne modellen blir tatt hensyn til når det genereres et forsyningsforslag for den gjeldende hovedplanen.
     - **Inkluder behovsprognose** – Sett dette alternativet til *Ja* for å inkludere behovsprognose i gjeldende hovedplan. Hvis du setter det til *Nei*, blir ikke transaksjoner for behovsprognose inkludert i hovedplanen.
-    - **Metode som brukes til å redusere behovskrav** – Velg metoden som skal brukes til å redusere prognosebehovene. Hvis du vil ha mer informasjon, kan du se [Prognosereduksjonsnøkler](#reduction-keys) senere i dette emnet.
+    - **Metode som brukes til å redusere behovskrav** – Velg metoden som skal brukes til å redusere prognosebehovene. Hvis du vil ha mer informasjon, kan du se [Prognosereduksjonsnøkler](#reduction-keys) senere i denne artikkelen.
 
 1. I **Tidshorisont i dager** kan du angi følgende felter for å angi perioden som behovsprognose skal tas med i:
 
@@ -61,7 +61,7 @@ Følg denne fremgangsmåten for å konfigurere en hovedplan slik at den innehold
 1. Angi følgende felter i hurtigfanen **Andre**:
 
     - **Tidshorisont for prognoseplan** – Angi antall dager (fra dagens dato) som behovsprognosen skal gjelde for. Denne verdien kan overstyres ved hjelp av **Prognoseplan**-alternativet i hovedplanen, som beskrevet i forrige del.
-    - **Reduksjonsnøkkel** – Velg reduksjonsnøkkelen som skal brukes. Hvis du vil ha mer informasjon, kan du se delene [Opprett og definer en prognosereduksjonsnøkkel](#create-reduction-key) og [Bruk en reduksjonsnøkkel](#use-reduction-key) senere i dette emnet.
+    - **Reduksjonsnøkkel** – Velg reduksjonsnøkkelen som skal brukes. Hvis du vil ha mer informasjon, kan du se delene [Opprett og definer en prognosereduksjonsnøkkel](#create-reduction-key) og [Bruk en reduksjonsnøkkel](#use-reduction-key) senere i denne artikkelen.
     - **Reduser prognose etter** – For hovedplaner der feltet **Metode som brukes til å redusere prognosebehov** er satt til *Transaksjoner – reduksjonsnøkkel* eller *Transaksjoner – dynamisk periode*, angir du hvilke transaksjoner som skal redusere prognosen. Velg én av følgende verdier:
 
         - **Alle transaksjoner** – Alle transaksjoner skal redusere prognosen.

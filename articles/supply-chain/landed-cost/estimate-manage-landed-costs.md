@@ -1,6 +1,6 @@
 ---
 title: Estimere og behandle netto innkjøpspris
-description: Systemet bruker det automatiske kostnadsoppsettet til å fastslå et estimat for netto innkjøpspris. Dette emnet beskriver hvordan du kan definere ulike scenarioer for å gi et mer nøyaktig estimat.
+description: Systemet bruker det automatiske kostnadsoppsettet til å fastslå et estimat for netto innkjøpspris. Denne artikkelen beskriver hvordan du kan definere ulike scenarioer for å gi et mer nøyaktig estimat.
 author: Weijiesa
 ms.date: 01/26/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 630fb9dc8e7954fcbc4f54941d81de1caa657676
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2e7cdd7c7439a24ec75a59bcee1e8f42f37bb2cd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696214"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854448"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Estimere og behandle netto innkjøpspris
 
@@ -50,7 +50,7 @@ Følgende tabell beskriver feltene som er tilgjengelige for hver mal.
 
 Bruk dialogboksen **Kostnadsestimat** til å generere et nytt kostnadsestimat som er basert på en valgt kostnadsmal, et valgt sett med varer og andre detaljer om et utvalg av varer. Disse innstillingene brukes deretter til å fastslå den estimerte netto innkjøpsprisen for varer. Disse kostnadsestimatene brukes primært til å arbeide med varer med standard kostpris. Ved å legge til den anslåtte netto innkjøpsprisen i standard kostpris for varer på lager, bør du oppleve mindre avvikstransaksjoner når varene legges til i en sjøreise, fordi standardkostnaden vil gjenspeile estimatene for den netto innkjøpsprisen.
 
-Hvis du vil åpne dialogboksen **Kostnadsestimat**, går du til **Netto innkjøpspris \> Periodiske oppgaver \> Kostnadsestimat**. Deretter angir du verdier for feltene som er beskrevet i følgende underdeler. Til slutt velger du **OK** for å opprette estimatet. Siden **Kostnadsestimat** (**Netto innkjøpspris \> Forespørsler \> Kostnadsestimater**) vises deretter med det nye estimatet, som beskrives senere i dette emnet.
+Hvis du vil åpne dialogboksen **Kostnadsestimat**, går du til **Netto innkjøpspris \> Periodiske oppgaver \> Kostnadsestimat**. Deretter angir du verdier for feltene som er beskrevet i følgende underdeler. Til slutt velger du **OK** for å opprette estimatet. Siden **Kostnadsestimat** (**Netto innkjøpspris \> Forespørsler \> Kostnadsestimater**) vises deretter med det nye estimatet, som beskrives senere i denne artikkelen.
 
 ### <a name="settings-on-the-parameters-tab"></a>Innstillinger i fanen Parametere
 
@@ -91,7 +91,7 @@ Hvis du vil vise eller justere volum- og/eller vektdetaljene for en vare, velger
 
 ## <a name="manage-estimated-costs"></a>Administrere estimerte kostnader
 
-Hvis du vil vise og redigere kostnadsestimatene du har opprettet, går du til **Netto innkjøpspris \> Forespørsler \> Kostnadsestimater**. På siden **Kostnadsestimater** viser listen til venstre alle gjeldende kostnadsestimater. Du kan bruke knappene i handlingsruten til å arbeide med et valgt estimat. Vær oppmerksom på at du ikke kan opprette et nytt kostnadsestimat fra siden **Kostnadsestimater**. I stedet bruker du dialogboksen **Kostnadsestimat** (**Netto innkjøpspris \> Periodiske oppgaver \> Kostnadsestimat**), som beskrevet tidligere i dette emnet.
+Hvis du vil vise og redigere kostnadsestimatene du har opprettet, går du til **Netto innkjøpspris \> Forespørsler \> Kostnadsestimater**. På siden **Kostnadsestimater** viser listen til venstre alle gjeldende kostnadsestimater. Du kan bruke knappene i handlingsruten til å arbeide med et valgt estimat. Vær oppmerksom på at du ikke kan opprette et nytt kostnadsestimat fra siden **Kostnadsestimater**. I stedet bruker du dialogboksen **Kostnadsestimat** (**Netto innkjøpspris \> Periodiske oppgaver \> Kostnadsestimat**), som beskrevet tidligere i denne artikkelen.
 
 Siden **Kostnadsestimater** viser hvordan hver estimerte kostnad ble avledet. Den viser også den estimerte, innlagte kostnaden for hver vare. Du kan endre et kostnadsestimat ved å endre kostprisen og/eller valutaen som er knyttet til de forskjellige varene. Du kan også endre de tilknyttede sjøreisekostnadene både på sjøreise- og containernivå. Når du bruker denne siden til å endre kostnadene, blir du bedt om å beregne de estimerte kostnadene for varene i kostnadsestimatet på nytt. Når du er klar, kan du bruke estimatene til å oppdatere kostprisen for varene i kostnadsmalen.
 

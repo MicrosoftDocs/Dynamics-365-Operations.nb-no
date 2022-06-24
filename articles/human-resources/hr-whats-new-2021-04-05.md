@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources, 5. april 2021
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 5. april 2021.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 5. april 2021.
 author: marcelbf
 ms.date: 04/05/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 19ac856de0fed9253bf79cb4c06d4347e5a19c77
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1b8074877b8d2b2c05596406cbf2d98febd2e8cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693479"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899534"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-5-2021"></a>Hva er nytt eller endret i Dynamics 365 Human Resources, 5. april 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdateringer for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
-| Utstedelsesnummer | Problem |  beskrivelse |
+| Utstedelsesnummer | Problem |  Beskrivelse |
 | --- | --- | --- |
 | 550852 | **Godkjenning**-knappen validerer ikke med obligatoriske felt angitt i **Gjennomgang**-skjemaet. | Når du angir et felt i **Gjennomgang**-skjemaet som obligatorisk og publiserer endringene for lederrollen, valideres ikke skjemaet som forventet. |
 | 559564 | Historiske arbeiderhandlinger for endring i fast kompensasjon gir feil for avsluttede brukere. | Arbeiderhandling for en avsluttet ansattkompensasjon gir en feil. Når en ansatt har sluttet, gir den ansattes handling for kampanjen før oppsigelse en feil. |

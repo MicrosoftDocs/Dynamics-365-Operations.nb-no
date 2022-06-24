@@ -1,6 +1,6 @@
 ---
 title: Produksjonsutleveringssted
-description: Dette emnet beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet.
+description: Denne artikkelen beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet.
 author: johanhoffmann
 ms.date: 04/04/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f4c8086e9179ff51f62ce77620af96360c6123060372dfd1c0e06dad79998b75
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bfabae39d3bcb8f7fdd71ac5c93fcdbaeb9d946
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893301"
 ---
 # <a name="production-output-location"></a>Produksjonsutleveringssted
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet.
+Denne artikkelen beskriver hierarkiet som brukes til å identifisere produksjonsutleveringsstedet.
 
 Produksjonsutleveringsstedet er stedet der en ferdig vare først lagres etter at den er produsert. Dette stedet er vanligvis nær produksjonsprosessen som produserer den ferdige varen. Produksjonsutleveringsstedet brukes som et midlertidig lager for materialet før det flyttes til forsendelsesområdet, et lagringssted, et produksjonsinnleveringssted for en produksjonsprosess nedstrøms og så videre. 
 

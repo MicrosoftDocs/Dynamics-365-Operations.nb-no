@@ -1,30 +1,24 @@
 ---
 title: Konfigurere et eksperiment
-description: Dette emnet beskriver hvordan konfigurerer et eksperiment i en tredjepartstjeneste.
+description: Denne artikkelen beskriver hvordan konfigurerer et eksperiment i en tredjepartstjeneste.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 870bcb9cc63fd4dbf6d7b40d730edfad7783540d5d943896e0129d29572fa875
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1073cdc509622279ce7388b8b406079a4e6e9e09
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769401"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946172"
 ---
 # <a name="set-up-an-experiment"></a>Konfigurere et eksperiment
 
-Når du [definerer en hypotese og fastslår hvilke suksessmåledata du vil bruke](experimentation-identify.md), må du konfigurere eksperimentet i tredjepartstjenesten. Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
+Når du [definerer en hypotese og fastslår hvilke suksessmåledata du vil bruke](experimentation-identify.md), må du konfigurere eksperimentet i tredjepartstjenesten. Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate artikler.
 
 [ ![Brukerreise for eksperimentering – konfigurere.](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 
@@ -37,13 +31,55 @@ Følg trinnene som er nødvendige for å opprette eksperimentet i tredjepartstje
 ## <a name="set-up-your-success-metrics"></a>Konfigurere suksessmåledata
 Alle eksperimenter trenger måledata for å måle virkningen av variasjonene og validere hypotesen. Følg fremgangsmåten nedenfor for å aktivere beregningen av måledataene i tredjepartstjenesten ved hjelp av hendelser fra livetelemetrihendelser fra Dynamics 365 Commerce.
 
-Gjør følgende for å konfigurere suksessmåledataene.
+Gjør følgende for å konfigurere suksessmåledataene for de medfølgende modulene.
 
 1. I Commerce-områdebygger velger du kategorien **Sider** i venstre navigasjonsrute, og deretter velger du siden du vil samle inn måledata for. 
 1. Gå til delen **Hendelses-ID-er som skal spores** i egenskapsruten til høyre for siden eller modulen du vil spore.
-1. Velg **Vis**. Det vises en liste over alle hendelses-ID-er. Kopier hendelsen du vil spore, og lim inn hendelsesnøkkelen i den angitte plasseringen i tredjepartstjenesten. Hvis du trenger mer enn én hendelse, kopierer du nøklene én om gangen. 
-    - Hvis du vil lære hvordan du viser alle tilgjengelige hendelser og attributter, inkludert sidevisninger og inntektssporing, kan du se [Hendelser for Commerce-komponent for diagnose og feilsøking](dev-itpro/retail-component-events-diagnostics-troubleshooting.md).
+1. Velg **Vis**. Det vises en liste over alle ID-er for klikkhendelser. Kopier hendelsen du vil spore, og lim inn hendelsesnøkkelen i den angitte plasseringen i tredjepartstjenesten. Hvis du trenger mer enn én hendelse, kopierer du nøklene én om gangen. 
+1. For sidevisninger bruker du SHA-256-nummerverdien for sidenavnet i områdekonfiguratoren som er tilføyd med `.PageView`. Hendelses-ID-en for `Homepage.PageView` kan for eksempel være `e217eb66c7808ecc43b0f5c517c6a83b39d72b91412fbd54a485da9d8e186a9`.
 1. Utfør eventuelle andre trinn for å spore måledata som kreves i tredjepartstjenesten.
+
+Følg denne fremgangsmåten for å instrumentere klikkhendelsene for egendefinerte modulklikk:
+
+1. Klargjør et **TelemetryContent**-objekt for modulen ved hjelp av funksjonen nedenfor. Denne funksjonen tar sidenavnet, modulnavnet og det SDK-angitte standard telemetriobjektet som inndata.
+
+    ```TypeScript
+    getTelemetryObject(pageName: string, moduleName: string, telemetry: ITelemetry): ITelemetryContent
+    ```
+    
+    Nedenfor finner du et eksempel: 
+    
+    ```TypeScript
+    private readonly telemetryContent: ITelemetryContent = getTelemetryObject(this.props.context.request.telemetryPageName!, this.props.friendlyName, this.props.telemetry);
+    ```
+    
+1. Opprett nyttelastdataene som inneholder informasjon om hva som må registreres. For knapper og andre statiske kontroller kan du inkludere **tekst**, som for eksempel "Kjøp nå" eller "Søk". Og for komponenter med klikk, for eksempel klikke på et produktkort, kan du sende **recid**, som er post-ID-en til produktet eller produkt-ID-en.
+
+    ```TypeScript
+    getPayloadObject(eventType: string, telemetryContent: ITelemetryContent, etext: string, recid?: string): IPayLoad
+    ```
+    Som et eksempel for statiske kontroller kan du sende knappetekststrengen som vist nedenfor:
+
+    ```TypeScript
+    const payLoad = getPayloadObject('click', this.props.telemetryContent, 'Shop Now', '');
+    ```
+    Som et eksempel på produktklikk kan du sende recordId for produktet som vist nedenfor:
+
+    ```TypeScript
+    const payLoad = getPayloadObject('click', telemetryContent!, '', product.RecordId.toString());
+    ```
+    
+1. Kall opp **OnClick**-funksjonen for å registrere hendelsen.
+
+    ```TypeScript
+    onTelemetryClick = (telemetryContent: ITelemetryContent, payLoad: IPayLoad, linkText: string) => () =>
+    ```
+
+    Nedenfor finner du et eksempel:
+
+    ```TypeScript
+    onClick: onTelemetryClick(this.props.telemetryContent, payLoad, linkText)
+    ```
 
 ## <a name="previous-step"></a>Forrige trinn
 [Identifisere en hypotese og fastslå måledataene for et eksperiment](experimentation-identify.md) 

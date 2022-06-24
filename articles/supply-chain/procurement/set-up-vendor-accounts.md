@@ -1,6 +1,6 @@
 ---
 title: Definere leverandørkontoer
-description: Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
+description: Denne artikkelen beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
 author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d1ddf126305f39a35f61b9a98da1c6bce29372cf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676981"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875282"
 ---
 # <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
+Denne artikkelen beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
 
 Når du oppretter en leverandørkonto, angir du opplysninger om leverandøren. Denne informasjonen brukes til å sette inn data i dokumenter automatisk og til å spore aktiviteten som er knyttet til leverandøren. Du kan for eksempel konfigurere følgende informasjonen for en leverandør:
 

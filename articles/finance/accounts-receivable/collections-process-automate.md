@@ -1,6 +1,6 @@
 ---
 title: Automatisering av innkrevingsprosess
-description: Dette emnet beskriver prosessen med å definere strategier for innkrevingsprosesser som automatisk identifiserer kundefakturaer som krever en e-postpåminnelse, en innkrevingaktivitet eller en purring som skal sendes til kunden.
+description: Denne artikkelen beskriver prosessen med å definere strategier for innkrevingsprosesser som automatisk identifiserer kundefakturaer som krever en e-postpåminnelse, en innkrevingaktivitet eller en purring som skal sendes til kunden.
 author: JodiChristiansen
 ms.date: 03/12/2021
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 59db852024faf457db7ac145b67619b31555aaf2
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 9ec749db197b4d04ee2e99ac7a16f4f2120c6707
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486875"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946185"
 ---
 # <a name="collections-process-automation"></a>Automatisering av innkrevingsprosess
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver prosessen med å definere strategier for innkrevingsprosesser som automatisk identifiserer kundefakturaer som krever en e-postpåminnelse, en innkrevingaktivitet (for eksempel en telefonsamtale) eller en purring som skal sendes til kunden. 
+Denne artikkelen beskriver prosessen med å definere strategier for innkrevingsprosesser som automatisk identifiserer kundefakturaer som krever en e-postpåminnelse, en innkrevingaktivitet (for eksempel en telefonsamtale) eller en purring som skal sendes til kunden. 
 
 Organisasjoner bruker ofte betydelig tid på å undersøke saldorapporter, kundekontoer og åpne fakturaer for å finne ut hvilke kunder som bør kontaktes om en åpen faktura eller kontosaldo. Denne undersøkelsen tar tid fra en innkrevingsagents tid som brukes til å kommunisere med kunder for å samle forfalte forfalte balanser eller løse fakturatvister. Ved hjelp av automatisering av innkrevingsprosess kan du sette opp en strategibasert tilnærming til innkrevingsprosessen. Dette hjelper deg med å bruke innkrevingsaktiviteter konsekvent ved å levere tilpassede e-postpåminnelser eller programmert prosess for å sende purringer. 
 

@@ -1,6 +1,6 @@
 ---
 title: Autoriser planlagte ordrer
-description: Dette emnet beskriver hvordan du autoriserer planlagte ordrer. Når planlagte bestillinger autoriseres, blir de faktiske bestillinger, overføringsordrer eller produksjonsordrer.
+description: Denne artikkelen beskriver hvordan du autoriserer planlagte ordrer. Når planlagte bestillinger autoriseres, blir de faktiske bestillinger, overføringsordrer eller produksjonsordrer.
 author: t-benebo
 ms.date: 04/22/2021
 ms.search.form: ReqTransPo, ReqTransFirmLog
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30f3ee656b97e0337b6e3e78f0acb2300d7d85dc
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468476"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857525"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -29,11 +29,11 @@ Det finnes tre metoder for autorisering av planlagte bestillinger:
 - **Automatisk autorisasjon** – Definer en standard autorisasjonshorisont for dekningsgrupper, individuelle varer og kombinasjoner av varer og hovedplaner. I løpet av hovedplanleggingen vil planlagte bestillinger automatisk bli autorisert hvis ordredatoen er innenfor den angitte horisonten for autorisering.
 - **Spørringsbasert autorisering** – Definer en spørring for å velge planlagte ordrer basert på egenskapene. Du kan sette opp en satsvis jobb for å kjøre spørringen og autorisere samsvarsordrer regelmessig.
 
-I dette emnet beskrives hver metode i detalj.
+I denne artikkelen beskrives hver metode i detalj.
 
-## <a name="enable-the-features-that-are-described-in-this-topic"></a><a name="enable-features"></a>Aktivere funksjonene som er beskrevet i dette emnet
+## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivere funksjonene som er beskrevet i denne artikkelen
 
-De fleste planlagte bestillingsfunksjoner er tilgjengelige i alle standardinstallasjoner av Microsoft Dynamics 365 Supply Chain Management som bruker Planleggingsoptimalisering. Noen av funksjonene som er beskrevet i dette emnet, må imidlertid aktiveres i Funksjonsadministrasjon før du kan bruke dem.
+De fleste planlagte bestillingsfunksjoner er tilgjengelige i alle standardinstallasjoner av Microsoft Dynamics 365 Supply Chain Management som bruker Planleggingsoptimalisering. Noen av funksjonene som er beskrevet i denne artikkelen, må imidlertid aktiveres i Funksjonsadministrasjon før du kan bruke dem.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallellisert autorisering av planlagte bestillinger
 
@@ -97,7 +97,7 @@ Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som
 > Avledede ordrer (dvs bestillinger fra underleverandør) som er autoriserte, viser statusen *Til vurdering* hvis sporing av saksendringer er aktivert.
 
 > [!IMPORTANT]
-> Før funksjonen som er beskrevet i denne delen, kan brukes med planleggingsoptimalisering, må [*Automatisk autorisasjon med planleggingsoptimalisering*-funksjonen](#enable-features) aktiveres i systemet, som beskrevet i begynnelsen av dette emnet. Automatisk autorisering kan alltid brukes med den innebygde hovedplanleggingsmotoren.
+> Før funksjonen som er beskrevet i denne delen, kan brukes med planleggingsoptimalisering, må [*Automatisk autorisasjon med planleggingsoptimalisering*-funksjonen](#enable-features) aktiveres i systemet, som beskrevet i begynnelsen av denne artikkelen. Automatisk autorisering kan alltid brukes med den innebygde hovedplanleggingsmotoren.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatisk autorisering med planleggingsoptimalisering i forhold til den innebygde planleggingsmotoren
 
@@ -130,7 +130,7 @@ Spørringsbasert autorisering lar deg planlegge autorisering basert på kriterie
 Du kan kombinere automatisk autorisering med spørringsbasert autorising. En spørringsbasert autoriseringsjobb har for eksempel en fremoverhorisont som er lengre enn horisonten for en samsvarende automatisk autorisering av dekningskonfigurasjonen. Derfor vil den spørringsbaserte autoriseringsjobben behandle de planlagte bestillingene før automatisk autorisering utløses. Du kan dra nytte av denne virkemåten til å planlegge ordrer for bestemte leverandører på en annen måte enn ordrer for lignende produkter fra andre leverandører.
 
 > [!IMPORTANT]
-> Før funksjonen som er beskrevet i denne delen kan brukes, må [*Autorisering av planlagt bestilling med filtrering*-funksjonen](#enable-features) aktiveres i systemet, som beskrevet i begynnelsen av dette emnet.
+> Før funksjonen som er beskrevet i denne delen kan brukes, må [*Autorisering av planlagt bestilling med filtrering*-funksjonen](#enable-features) aktiveres i systemet, som beskrevet i begynnelsen av denne artikkelen.
 
 Følg denne fremgangsmåten for å autorisere en planlagt bestilling ved hjelp av den spørringsbaserte autoriseringsprosessen.
 

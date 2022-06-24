@@ -1,6 +1,6 @@
 ---
 title: Ankomstoversikt
-description: Dette emnet gir informasjon om Ankomstoversikt-funksjonen. Ankomstoversikt-siden er en del av denne funksjonen og gir en oversikt over alle varene som forventes å ankomme som innkommende varer.
+description: Denne artikkelen gir informasjon om Ankomstoversikt-funksjonen. Ankomstoversikt-siden er en del av denne funksjonen og gir en oversikt over alle varene som forventes å ankomme som innkommende varer.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -18,22 +18,22 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8118db9469c01c43b23c64ee383ac1d383a0ba7a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874079"
 ---
 # <a name="arrival-overview"></a>Ankomstoversikt
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om Ankomstoversikt-funksjonen. Ankomstoversikt-siden er en del av denne funksjonen og gir en oversikt over alle varene som forventes å ankomme som innkommende varer.
+Denne artikkelen gir informasjon om Ankomstoversikt-funksjonen. Ankomstoversikt-siden er en del av denne funksjonen og gir en oversikt over alle varene som forventes å ankomme som innkommende varer.
 
-**Ankomstoversikt**-siden gir en oversikt over alle forventede innkommende varer. Den viser også ankomster som kan initialiseres basert på oversikten. Dette emnet beskriver mottaksprosessen.
+**Ankomstoversikt**-siden gir en oversikt over alle forventede innkommende varer. Den viser også ankomster som kan initialiseres basert på oversikten. Denne artikkelen beskriver mottaksprosessen.
 
-## <a name="business-scenario"></a>Foretningsscenario
+## <a name="business-scenario"></a>Forretningsscenario
 Tenk deg følgende scenario i de innkommende prosessene.
 
 [![Foretningsscenario.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)

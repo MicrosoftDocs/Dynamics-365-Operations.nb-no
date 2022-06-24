@@ -1,6 +1,6 @@
 ---
 title: Tilordne kanaler til e-handelsområder
-description: Dette emnet beskriver noen av de vanligere scenarioene for kanaltilordning i Microsoft Dynamics 365 Commerce som kan ekstrapoleres for de fleste andre forretningsbehov.
+description: Denne artikkelen beskriver noen av de vanligere scenarioene for kanaltilordning i Microsoft Dynamics 365 Commerce som kan ekstrapoleres for de fleste andre forretningsbehov.
 author: samjarawan
 ms.date: 05/11/2022
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ce272d63b4a37f99661333a02434708205ea19a
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: 94c43df26e8d6e55a5b6d459b65066d5873e1063
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902769"
 ---
 # <a name="map-channels-to-e-commerce-sites"></a>Tilordne kanaler til e-handelsområder
 
-Dette emnet beskriver noen av de vanligere scenarioene for kanaltilordning i Microsoft Dynamics 365 Commerce som kan ekstrapoleres for de fleste andre forretningsbehov.
+Denne artikkelen beskriver noen av de vanligere scenarioene for kanaltilordning i Microsoft Dynamics 365 Commerce som kan ekstrapoleres for de fleste andre forretningsbehov.
 
 Dynamics 365 Commerce støtter mange forretningsscenarioer for tilordning av [Internett-kanaler](#channels) som har et konfigurert sett med produkter, priser og rabatter, til kundeopplevelser på [e-handelsområder](#e-commerce-sites).
 
-Dette emnet dekker følgende scenarioer:
+Denne artikkelen dekker følgende scenarioer:
 
 - **En enkeltspråklig kanal med én e-handelsområdeopplevelse.** Dette scenarioet kan for eksempel gjelde ett varemerkeområde som er konfigurert for et amerikansk engelsk marked.
 - **En flerspråklig kanal med én lokalisert områdeopplevelse.** Dette scenarioet kan for eksempel gjelde ett varemerkeområde som er konfigurert for Canada med støtte for fransk og engelsk. Brukere som velger ulike språk i dette scenarioet, får samme områdeopplevelse, men det er lokalisert til språket brukeren velger.
@@ -63,7 +63,7 @@ Eksemplet nedenfor viser en kanalkonfigurasjon i Commerce headquarters. I denne 
 
 ![Verdiene for juridisk enhet, valuta og språk for nettbutikken Adventure Works er uthevet i Commerce headquarters.](media/channel-mapping-3.png)
 
-Denne ene Internett-kanalen kan tilordnes til ett e-handelsområde i områdebygger. Hvis du vil ha informasjon om hvordan du oppretter et nytt område og tilordner det til en kanal, kan du se delen [Tilordne en kanal til et område i områdebygger](#map-a-channel-to-a-site-in-site-builder) i dette emnet.
+Denne ene Internett-kanalen kan tilordnes til ett e-handelsområde i områdebygger. Hvis du vil ha informasjon om hvordan du oppretter et nytt område og tilordner det til en kanal, kan du se delen [Tilordne en kanal til et område i områdebygger](#map-a-channel-to-a-site-in-site-builder) i denne artikkelen.
 
 ### <a name="multi-language-channel-that-has-a-single-localized-site-experience"></a>En flerspråklig kanal med én lokalisert områdeopplevelse
 
@@ -73,7 +73,7 @@ Begrensningen ved dette scenarioet er at én kanal bare kan konfigureres med én
 
 Hvert språk i en kanal kan konfigureres med et eget domenenavn. Domenet `www.adventure-works.ca` kan for eksempel konfigureres for den engelske versjonen i Canada, og domenet `www.adventure-works-fr.ca` kan konfigureres for den franske versjonen i Canada. Alternativt kan ulike språk i en kanal konfigureres i ett domene, og deretter kan en egen bane brukes for hvert språk. Domenet `www.adventure-works.ca` kan for eksempel konfigureres for den engelske versjonen i Canada, og så kan domenet `www.adventure-works.ca/fr` brukes for den franske versjonen i Canada. [Registrering av geografisk område](geo-detection-redirection.md) kan også brukes til å omdirigere en bruker automatisk til riktig område basert på hvor brukeren er.
 
-Hvis du vil ha informasjon om hvordan du gjør at kunder kan bytte mellom språk manuelt, kan du se delen [Legge til og konfigurere områdevelgermodulen](#add-and-configure-the-site-picker-module) i dette emnet. Hvis du vil ha informasjon om hvordan du tilpasser lokaliserte sider og fragmenter, kan du se [Administrere områdeinnhold med flere kanaler og språk](#manage-site-content-that-has-multiple-channels-and-languages).
+Hvis du vil ha informasjon om hvordan du gjør at kunder kan bytte mellom språk manuelt, kan du se delen [Legge til og konfigurere områdevelgermodulen](#add-and-configure-the-site-picker-module) i denne artikkelen. Hvis du vil ha informasjon om hvordan du tilpasser lokaliserte sider og fragmenter, kan du se [Administrere områdeinnhold med flere kanaler og språk](#manage-site-content-that-has-multiple-channels-and-languages).
 
 ### <a name="multi-language-channel-that-has-a-different-site-experience-per-language"></a>En flerspråklig kanal med en egen områdeopplevelse for hvert språk
 
@@ -87,7 +87,7 @@ Et varemerkeområde krever kanskje flere Internett-kanaler per geografiske områ
 
 I dette scenarioet kan hvert marked konfigureres med egne domenenavn. Domenet `www.adventure-works.com` kan for eksempel konfigureres for det amerikanske markedet, og domenet `www.adventure-works.de` kan konfigureres for det tyske markedet. Hvert marked kan alternativt konfigureres slik at det bruker en egen bane. Domenet `www.adventure-works.com` kan for eksempel konfigureres for det amerikanske markedet, og så kan banen `www.adventure-works.com/de` brukes for det tyske markedet. [Registrering av geografisk område](geo-detection-redirection.md) kan også brukes til å omdirigere brukere automatisk til riktig område basert på det geografiske området de er i.
 
-Du vil kanskje også at området skal ha en rullegardinliste der brukere kan bytte manuelt til et bestemt marked. Hvis du vil ha mer informasjon, kan du se delen [Legge til og konfigurere områdevelgermodulen](#add-and-configure-the-site-picker-module) senere i dette emnet.
+Du vil kanskje også at området skal ha en rullegardinliste der brukere kan bytte manuelt til et bestemt marked. Hvis du vil ha mer informasjon, kan du se delen [Legge til og konfigurere områdevelgermodulen](#add-and-configure-the-site-picker-module) senere i denne artikkelen.
 
 Hvis du vil ha informasjon om hvordan du konfigurerer flere kanaler på ett område, kan du se delen [Konfigurere flere kanaler på et e-handelsområde](#configure-multiple-channels-on-an-e-commerce-site).
 
@@ -180,7 +180,7 @@ I stedet for å opprette hver side og hvert fragment manuelt kan du eksportere h
 
 Et område med flere kanaler og/eller språk lagrer en unik variant av hver side og hvert fragment for hver kombinasjon av en kanal og et språk. Denne funksjonaliteten gjør at sidevarianter kan inneholde lokaliserte data, men også gi deg fleksibiliteten til å endre utseende og funksjonalitet på en side for en bestemt variant.
 
-Hvis du vil ha informasjon om hvordan du arbeider med sidevarianter, kan du se [Implementere sidevarianter for hvert språk](#implement-page-variants-for-each-language) i dette emnet.
+Hvis du vil ha informasjon om hvordan du arbeider med sidevarianter, kan du se [Implementere sidevarianter for hvert språk](#implement-page-variants-for-each-language) i denne artikkelen.
 
 ## <a name="configure-multiple-channels-on-an-e-commerce-site"></a>Konfigurere flere kanaler på et e-handelsområde
 

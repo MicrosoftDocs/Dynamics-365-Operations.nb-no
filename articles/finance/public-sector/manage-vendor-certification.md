@@ -1,6 +1,6 @@
 ---
 title: Vedlikeholde leverandørsertifisering
-description: Dette emnet beskriver trinnene som leverandører kan bruke til å vedlikeholde sertifiseringene ved hjelp av arbeidsområdet for leverandørsamarbeid.
+description: Denne artikkelen beskriver trinnene som leverandører kan bruke til å vedlikeholde sertifiseringene ved hjelp av arbeidsområdet for leverandørsamarbeid.
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b1b2cdd4389afd8997b60fe8e7a9b6851cbde199
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 37990292748c363f44d306bda0263dd117808eb1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735702"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891444"
 ---
 # <a name="maintain-vendor-certification"></a>Vedlikeholde leverandørsertifisering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver trinnene som leverandørene dine kan bruke til å vedlikeholde sertifiseringene ved hjelp av **arbeidsområdet for leverandørsamarbeid**. Eksempler på sertifiseringer kan være et WBE-selskap (Woman Business Enterprise) eller et selskap med sertifiseringen Leadership in Energy and Environment Design (LEED). Leverandører må angi sertifiseringsinformasjon i arbeidsområdet for **Leverandøropplysninger**. Derfra velger leverandører **Flere detaljer** og velger deretter **Sertifiseringer**.
+Denne artikkelen beskriver trinnene som leverandørene dine kan bruke til å vedlikeholde sertifiseringene ved hjelp av **arbeidsområdet for leverandørsamarbeid**. Eksempler på sertifiseringer kan være et WBE-selskap (Woman Business Enterprise) eller et selskap med sertifiseringen Leadership in Energy and Environment Design (LEED). Leverandører må angi sertifiseringsinformasjon i arbeidsområdet for **Leverandøropplysninger**. Derfra velger leverandører **Flere detaljer** og velger deretter **Sertifiseringer**.
 
 ## <a name="turn-on-the-vendor-certification-feature"></a>Aktiver funksjonen for leverandørsertifisering
 

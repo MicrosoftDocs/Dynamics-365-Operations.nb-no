@@ -1,6 +1,6 @@
 ---
 title: Prognosereduksjonsnøkler
-description: Dette emnet inneholder eksempler som viser hvordan du definerer en reduksjonsnøkkel. Den inneholder informasjon om de ulike innstillingene for reduksjonsnøkler for og resultatene av hver. Du kan bruke en reduksjonsnøkkel til å definere hvordan du kan redusere prognosebehov.
+description: Denne artikkelen inneholder eksempler som viser hvordan du definerer en reduksjonsnøkkel. Den inneholder informasjon om de ulike innstillingene for reduksjonsnøkler for og resultatene av hver. Du kan bruke en reduksjonsnøkkel til å definere hvordan du kan redusere prognosebehov.
 author: t-benebo
 ms.date: 04/15/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 054eb28044e532ed2850cde21cb2f9fb5181ae02
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 5cf84598b731e9750e3cf79d312bf0bbf4f8bd81
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854275"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosereduksjonsnøkler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om de ulike metodene som brukes til å redusere behovene for prognose. Det inneholder eksempler på resultatene av hver metode. Det forklarer også hvordan du oppretter, definerer og bruker en prognosereduksjonsnøkkel. Noen metoder bruker en prognosereduksjonsnøkkel til å redusere prognosebehov.
+Denne artikkelen gir informasjon om de ulike metodene som brukes til å redusere behovene for prognose. Det inneholder eksempler på resultatene av hver metode. Det forklarer også hvordan du oppretter, definerer og bruker en prognosereduksjonsnøkkel. Noen metoder bruker en prognosereduksjonsnøkkel til å redusere prognosebehov.
 
 ## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Metoder som brukes til å redusere prognosebehov
 

@@ -1,6 +1,6 @@
 ---
 title: Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.27.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.27.
 author: kamaybac
 ms.date: 04/22/2022
 ms.topic: article
@@ -10,19 +10,19 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 77c79c88b08844bf7e399a762bb9eb9746ffb71a
-ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
+ms.openlocfilehash: a91f2cdae0fed75f07d6cae86d24aeedfca80e94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8812951"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844503"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.27 (juli 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, forhåndsversjon 10.0.27. Denne versjonen har et build-nummer 10.0.1227, og er tilgjengelig på følgende tidsplan:
+Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, forhåndsversjon 10.0.27. Denne versjonen har et build-nummer 10.0.1227, og er tilgjengelig på følgende tidsplan:
 
 - **Forhåndsversjon:** april 2022
 - **Allmenn tilgjengelighet av versjon (selvoppdatering):** Juni 2022
@@ -30,7 +30,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne tabellen viser funksjonene i denne versjonen. Dette emnet kan være oppdatert for å inkludere funksjoner som ble lagt til i builden etter at dette emnet opprinnelig ble publisert.
+Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være oppdatert for å inkludere funksjoner som ble lagt til i builden etter at denne artikkelen opprinnelig ble publisert.
 
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
@@ -56,9 +56,9 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre dette i [
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og oppdaterte dokumentasjonsressurser
 
-Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. Disse emnene er ikke nødvendigvis knyttet til de nye funksjonene som ble lagt til i denne versjonen, som vist i de forrige delene. De kan imidlertid hjelpe deg med å få mer ut av eksisterende funksjoner.
+Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeartikler. Disse artiklene er ikke nødvendigvis knyttet til de nye funksjonene som ble lagt til i denne versjonen, som vist i de forrige delene. De kan imidlertid hjelpe deg med å få mer ut av eksisterende funksjoner.
 
-| Funksjonsområde | Nye eller oppdaterte emner |
+| Funksjonsområde | Nye eller oppdaterte artikler |
 |---|---|
 | Kostnadsstyring | [Dato for avveid gjennomsnitt med Inkluder fysisk verdi og merking](../cost-management/weighted-average-date.md) |
 | Distribuert hybridtopologi | [Prøv storskalaenheter i en distribuert hybridtopologi](../cloud-edge/cloud-edge-try-out.md) |
@@ -83,12 +83,12 @@ Sjekk ut [Dynamics 365 og bransjeskyer: plan for lanseringsbølge 1 for 2022](/d
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 
-Emnet [Fjernede eller avskrevne funksjonene i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funksjoner som er eller er planlagt å bli fjernet eller avskrevet for Supply Chain Management.
+Artikkelen [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) beskriver funksjoner som er eller er planlagt å bli fjernet eller avskrevet for Supply Chain Management.
 
 - En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.
 - En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.
 
-Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i emnet [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder før fjerningen.
+Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i artikkelen [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder før fjerningen.
 
 For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære kompatible med sandkasse- og produksjonsmiljøer, vil avskrivningstiden være mindre enn 12 måneder. Dette er vanligvis funksjonelle oppdateringer som må gjøres på kompilatoren.
 

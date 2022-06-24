@@ -1,6 +1,6 @@
 ---
 title: Elektroniske fakturaer for kunde i Norge
-description: Dette emnet forklarer hvordan du konfigurerer og elektroniske fakturaer for kunder i Norge.
+description: Denne artikkelen forklarer hvordan du konfigurerer og elektroniske fakturaer for kunder i Norge.
 author: ilkond
 ms.date: 11/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Norway
 ms.author: ilyako
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.08
-ms.openlocfilehash: 95c9427497c46bfc1206c36b063c46c57ccc258b0637e3d6156fda77c149e7c2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5a037b4d46d9a84f99332931befa63091338e6e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761214"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871128"
 ---
 # <a name="customer-electronic-invoices-in-norway"></a>Elektroniske fakturaer for kunde i Norge
 
@@ -26,7 +26,7 @@ ms.locfileid: "6761214"
 
 For å oppnå samsvar med EU-direktiv 2014/55/EU har formatet **EHF Billing 3.0** for elektroniske fakturaer som gjelder spesifikt for Norge, blitt implementert basert på spesifikasjonen [PEPPOL Billing 3.0](https://docs.peppol.eu/poacc/billing/3.0/).
 
-Dette emnet inneholder informasjon om hvordan du konfigurerer og utsteder elektroniske fakturaer i Norge.
+Denne artikkelen inneholder informasjon om hvordan du konfigurerer og utsteder elektroniske fakturaer i Norge.
 
 ## <a name="prerequisites"></a>Forutsetninger
 

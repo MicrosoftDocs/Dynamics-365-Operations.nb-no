@@ -1,6 +1,6 @@
 ---
 title: Parametere som ikke brukes av planleggingsoptimalisering
-description: Dette emnet viser parametrene som Planleggingsoptimalisering ikke vurderer under operasjonen.
+description: Denne artikkelen viser parametrene som Planleggingsoptimalisering ikke vurderer under operasjonen.
 author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 3791ac804b78a20d0051881a83cb075e56ec8639
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469121"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907355"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>Parametere som ikke brukes av planleggingsoptimalisering
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet viser parametrene som Planleggingsoptimalisering ikke vurderer under operasjonen. Planleggingstjenesten kan hoppe over en parameter fordi for eksempel relatert funksjonalitet ikke er støttet ennå. Parameteren kan eventuelt ha blitt foreldet på grunn av funksjonsendringer.
+Denne artikkelen viser parametrene som Planleggingsoptimalisering ikke vurderer under operasjonen. Planleggingstjenesten kan hoppe over en parameter fordi for eksempel relatert funksjonalitet ikke er støttet ennå. Parameteren kan eventuelt ha blitt foreldet på grunn av funksjonsendringer.
 
 I delene nedenfor finner du en oversikt over parametere som planleggingsoptimalisering ikke bruker på bestemte sider. De forklarer også hvorfor hver parameter ikke brukes.
 

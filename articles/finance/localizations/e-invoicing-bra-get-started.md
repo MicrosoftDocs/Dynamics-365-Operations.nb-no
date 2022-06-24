@@ -1,6 +1,6 @@
 ---
 title: Komme i gang med Elektronisk fakturering for Brasil
-description: Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Brasil i Finance and Supply Chain Management.
+description: Denne artikkelen inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Brasil i Finance and Supply Chain Management.
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -9,30 +9,32 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 82bbf806d207af0b15406e4bec516420db7f2c06
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 74debbca4ee365e05f1c15d45179f0cd1d23c3e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846591"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Komme i gang med Elektronisk fakturering for Brasil 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Brasil. Emnet veileder deg gjennom konfigurasjonstrinnene som er landavhengige i RCS (Regulatory Configuration Services), og utfyller trinnene som beskrives i emnet [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
+Denne artikkelen inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Brasil. Denne artikkelen veileder deg gjennom konfigurasjonstrinnene som er landavhengige i RCS (Regulatory Configuration Services), og utfyller trinnene som beskrives i artikkelen [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-brazilian-nf-e-br-electronic-invoicing-feature"></a>Landspesifikk konfigurasjon for funksjon for elektronisk fakturering for brasiliansk NF-e (BR)
 
 Noen av parameterne fra funksjonen **Elektronisk fakturering for brasiliansk NF-e (BR)** publiseres med standardverdier. Gå gjennom og oppdater om nødvendig verdiene slik at bedre gjenspeiler forretningsoperasjonen din, før du distribuerer funksjonen for elektronisk fakturering til servicemiljøet.
 
-Denne delen utfyller delen **Landspesifikk konfigurasjon for funksjon for elektronisk fakturering** i emnet [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
+Denne delen utfyller delen **Landspesifikk konfigurasjon for funksjon for elektronisk fakturering** i artikkelen [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
 
 1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
 2. På siden **Funksjoner for elektronisk fakturering** kontrollerer du at funksjonen for elektronisk fakturering for **brasiliansk NF-e (BR)** som du opprettet, er valgt.
@@ -51,7 +53,7 @@ Denne delen utfyller delen **Landspesifikk konfigurasjon for funksjon for elektr
 
 Fullfør disse trinnene før du distribuerer programoppsettet til det tilkoblede programmet i Finans eller Supply Chain Management.
 
-Denne delen utfyller delen **Landspesifikk konfigurasjon for programoppsett** i emnet [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
+Denne delen utfyller delen **Landspesifikk konfigurasjon for programoppsett** i artikkelen [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
 
 1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
 2. På siden **Funksjoner for elektronisk fakturering** kontrollerer du at funksjonen for elektronisk fakturering for **brasiliansk NF-e (BR)** er valgt.
@@ -71,7 +73,7 @@ Denne delen utfyller delen **Landspesifikk konfigurasjon for programoppsett** i 
 
 Noen av parameterne fra funksjonen **Elektronisk fakturering for brasiliansk NFS-e ABRASF Curitiba (BR)** publiseres med standardverdier. Gå gjennom og oppdater om nødvendig verdiene slik at de passer bedre til forretningsoperasjonsbehovene, før du distribuerer funksjonen for elektronisk fakturering til servicemiljøet.
 
-Denne delen utfyller delen **Landspesifikk konfigurasjon for funksjon for elektronisk fakturering** i emnet [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
+Denne delen utfyller delen **Landspesifikk konfigurasjon for funksjon for elektronisk fakturering** i artikkelen [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
 
 1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
 2. På siden **Funksjoner for elektronisk fakturering** kontrollerer du at funksjonen for elektronisk fakturering for **brasiliansk NFS-e ABRASF Curitiba (BR)** som du opprettet, er valgt.
@@ -96,7 +98,7 @@ Denne delen utfyller delen **Landspesifikk konfigurasjon for funksjon for elektr
 
 Fullfør disse trinnene før du distribuerer programoppsettet til det tilkoblede programmet i Finans eller Supply Chain Management.
 
-Denne delen utfyller delen **Landspesifikk konfigurasjon for programoppsett** i emnet [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
+Denne delen utfyller delen **Landspesifikk konfigurasjon for programoppsett** i artikkelen [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
 
 1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
 2. På siden **Funksjoner for elektronisk fakturering** kontrollerer du at funksjonen for elektronisk fakturering for **brasiliansk NFS-e ABRASF Curitiba (BR)**, er valgt.

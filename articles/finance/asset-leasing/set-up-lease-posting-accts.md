@@ -1,6 +1,6 @@
 ---
 title: Definere leieposteringskontoer
-description: Dette emnet viser posteringskontoene som kreves for aktivaleietransaksjoner, og forklarer hvordan du definerer posteringskontoer på siden for parametere for leiepostering.
+description: Denne artikkelen viser posteringskontoene som kreves for aktivaleietransaksjoner, og forklarer hvordan du definerer posteringskontoer på siden for parametere for leiepostering.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 147d8cd93f9664039b2004b878dcaff96c8b6ce6
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e3a0d8dd3bb3e58ca10b2efce0cc88a2f48d2de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726385"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859921"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Definere leieposteringskontoer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser posteringskontoene som kreves for aktivaleietransaksjoner, og forklarer hvordan du definerer posteringskontoer på siden for **Parametere for leiepostering**.
+Denne artikkelen viser posteringskontoene som kreves for aktivaleietransaksjoner, og forklarer hvordan du definerer posteringskontoer på siden for **Parametere for leiepostering**.
 
 For å overholde Accounting Standards Codification-emne 842 (ASC 842) og International Financial Reporting standard 16 (IFRS 16), må du kanskje opprette kontoer i kontoplanen. Alle kontoer du oppretter for å overholde ASC- og IFRS-standarder, er imidlertid ikke anleggsmiddelkontoer. Under ASC 842 blir det registrert en bruksrettseiendel for både økonomi og gjeldende leie. Disse leieavtalene er atskilte fra anleggsmidler. (Du kan fremdeles vedlikeholde en bruksrettseiendel ved å bruke anleggsmidler.)
 

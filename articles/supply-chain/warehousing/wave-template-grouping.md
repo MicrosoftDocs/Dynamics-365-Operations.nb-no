@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5eb18ce29cbd1434b2a766c2ba5d78ed1be4e72b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579910"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851253"
 ---
 # <a name="wave-template-grouping"></a>Gruppering av bølgemal
 
@@ -41,7 +41,7 @@ Før du kan bruke *Bølgemalgruppering*-funksjonen, må den aktiveres i systemet
 Hvis du vil gjøre bølgemalgruppering tilgjengelig, følger du disse trinnene for å konfigurere [bølgemalen](tasks/configure-wave-processing.md).
 
 1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
-1. Velg bølgemalen du vil sette opp, i venstre rute. Hvis du forbereder deg til å arbeide gjennom scenariet senere i dette emnet ved hjelp av demodata, velger du **62 Standardforsendelse**-malen.
+1. Velg bølgemalen du vil sette opp, i venstre rute. Hvis du forbereder deg til å arbeide gjennom scenariet senere i denne artikkelen ved hjelp av demodata, velger du **62 Standardforsendelse**-malen.
 1. Velg **Rediger** for å legge siden inn i redigeringsmodus.
 1. Angi følgende verdier i **Generelt**-hurtigfanen:
 
@@ -84,7 +84,7 @@ Du kan også bruke dette scenariet som en veiledning for å bruke funksjonen nå
 
 Dette scenariet viser hvordan du bruker bølgemalgruppering til å opprette flere bølger automatisk basert på grupperingskriterier som er definert i en bølgemal. I dette scenariet er bølgemalen satt opp i systemet for å opprette én bølge per transportørtjeneste.
 
-Før du begynner, klargjør du bølgemalen som beskrevet i delen [Angi en bølgemal for å bruke bølgemalgruppering](#set-up-template) tidligere i dette emnet. Hvis du skal arbeide med demonstrasjonsdata for dette scenariet, må du passe på å bruke demodataverdiene som foreslås i denne prosedyren. Dette oppsettet vil gruppere bølger i henhold til transportørtjenesten som er angitt for hver salgsordre.
+Før du begynner, klargjør du bølgemalen som beskrevet i delen [Angi en bølgemal for å bruke bølgemalgruppering](#set-up-template) tidligere i denne artikkelen. Hvis du skal arbeide med demonstrasjonsdata for dette scenariet, må du passe på å bruke demodataverdiene som foreslås i denne prosedyren. Dette oppsettet vil gruppere bølger i henhold til transportørtjenesten som er angitt for hver salgsordre.
 
 #### <a name="create-sales-order-1"></a>Opprett salgsordre 1
 

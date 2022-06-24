@@ -1,6 +1,6 @@
 ---
 title: Konfigurere og bruke utvidet påloggingsfunksjonalitet
-description: Dette emnet beskriver hvordan du konfigurerer og bruker den utvidede påloggingsfunksjonaliteten i Microsoft Dynamics 365 Commerce-salgsstedsappen.
+description: Denne artikkelen beskriver hvordan du konfigurerer og bruker den utvidede påloggingsfunksjonaliteten i Microsoft Dynamics 365 Commerce-salgsstedsappen.
 author: boycez
 ms.date: 03/18/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
-ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
+ms.openlocfilehash: e27e8d94adccc46559089928b0481442306567ef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "8491445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884317"
 ---
 # <a name="set-up-and-use-the-extended-logon-capability"></a>Konfigurere og bruke utvidet påloggingsfunksjonalitet
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer og bruker den utvidede påloggingsfunksjonaliteten i Microsoft Dynamics 365 Commerce-salgsstedsappen.
+Denne artikkelen beskriver hvordan du konfigurerer og bruker den utvidede påloggingsfunksjonaliteten i Microsoft Dynamics 365 Commerce-salgsstedsappen.
 
 Sky-POS (CPOS) og Magnet POS (MPOS) gir en utvidet påloggingsfunksjonalitet som gjør det mulig for detaljhandelsarbeidere å logge seg på POS-appen ved å skanne en strekkode eller sveipe et kort ved hjelp av en kortleser.
 

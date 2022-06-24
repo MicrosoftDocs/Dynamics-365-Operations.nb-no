@@ -1,6 +1,6 @@
 ---
 title: Avhende et anleggsmiddel ved hjelp av en fritekstfaktura
-description: Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen.
+description: Denne artikkelen beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaffelsesforslaget i anleggsmiddeljournalen.
 author: moaamer
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 711ab4b4798127ca54d7138b0aae02d71fe8bec3
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: bb930bd35aa86c6bc3b2e7a5577ff16e3feb151a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713573"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896441"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Avhende et anleggsmiddel ved hjelp av en fritekstfaktura
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kvitter deg med et anleggsmiddel ved hjelp av fritekstfakturaen.
+Denne artikkelen beskriver hvordan du kvitter deg med et anleggsmiddel ved hjelp av fritekstfakturaen.
 
 1. I navigasjonsruten går du til **Moduler > Kunder > Fakturaer > Alle fritekstfakturaer**.
 2. Velg **Ny**.

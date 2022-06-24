@@ -1,6 +1,6 @@
 ---
 title: Konfigurere grensesnittet for produksjonsutførelse
-description: Dette emnet beskriver hvordan du oppretter en eller flere konfigurasjoner for grensesnittet for produksjonsutførelse. Når du åpner grensesnittet for produksjonsutførelse, laster det automatisk inn et valgt konfigurasjons- og jobbfilter som gjelder spesielt for nettleseren og enheten. I konfigurasjonen angir du policyer som må gjelde for et bestemt forbruk.
+description: Denne artikkelen beskriver hvordan du oppretter en eller flere konfigurasjoner for grensesnittet for produksjonsutførelse. Når du åpner grensesnittet for produksjonsutførelse, laster det automatisk inn et valgt konfigurasjons- og jobbfilter som gjelder spesielt for nettleseren og enheten. I konfigurasjonen angir du policyer som må gjelde for et bestemt forbruk.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9eefde163473e11b01bfa0adf9b3694c830f1488
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644404"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899418"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -31,15 +31,15 @@ Når du åpner grensesnittet for produksjonsutførelse, laster det automatisk in
 - På en enhet i firmahallen stempler ansatte inn når de kommer på kontoret, og de stempler ut når de går hjem for dagen.
 - På en enhet i produksjonen registrerer maskinoperatører når de starter og fullfører jobbene. De registrerer også pauser og indirekte aktiviteter.
 
-Dette emnet beskriver de ulike alternativene for konfigurasjon av et grensesnitt for produksjonsutførelse for hver enhet som brukes på stedet.
+Denne artikkelen beskriver de ulike alternativene for konfigurasjon av et grensesnitt for produksjonsutførelse for hver enhet som brukes på stedet.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Aktiver grensesnittet for produksjonsutførelse og de relaterte valgfrie funksjonene
 
-Selve grensesnittet for produksjonsutførelse, pluss flere av de valgfrie innstillingene som beskrives i dette emnet, må aktiveres i systemet før du kan bruke dem. Bruk siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere noen av eller alle funksjonene som er beskrevet under følgende underavsnitt.
+Selve grensesnittet for produksjonsutførelse, pluss flere av de valgfrie innstillingene som beskrives i denne artikkelen, må aktiveres i systemet før du kan bruke dem. Bruk siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere noen av eller alle funksjonene som er beskrevet under følgende underavsnitt.
 
 ### <a name="the-production-floor-execution-interface"></a>Grensesnittet for produksjonsutførelse
 
-Dette er hovedfunksjonen som beskrives i dette emnet, og er en forutsetning for alle andre funksjoner som nevnes i denne delen. Den er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Dette er hovedfunksjonen som beskrives i denne artikkelen, og er en forutsetning for alle andre funksjoner som nevnes i denne delen. Den er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="generate-license-plates"></a>Generer nummerskilter
 
@@ -146,7 +146,7 @@ Denne funksjonen legger til innstillinger for følgende funksjonalitet på siden
 - Aktiver materialforbruksjusteringer fra dialogboksen **Rapportfremdrift**. (Denne funksjonaliteten krever også funksjonen *Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke-lager)*.)
 - Aktiver søker etter prosjekt-ID.
 
-Informasjon om hvordan du bruker innstillingene, finner du senere i dette emnet.
+Informasjon om hvordan du bruker innstillingene, finner du senere i denne artikkelen.
 
 For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

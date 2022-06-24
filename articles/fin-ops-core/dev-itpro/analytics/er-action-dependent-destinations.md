@@ -1,6 +1,6 @@
 ---
 title: Konfigurere handlingsavhengige ER-mål
-description: Dette emnet forklarer hvordan du konfigurerer handlingsavhengige mål for et ER-format (Elektronisk rapportering) som er konfigurert til å generere utgående dokumenter.
+description: Denne artikkelen forklarer hvordan du konfigurerer handlingsavhengige mål for et ER-format (Elektronisk rapportering) som er konfigurert til å generere utgående dokumenter.
 author: NickSelin
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: b7dfd92fd9e256298c13dcbde4b6da3f07d250d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323985"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876841"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsavhengige ER-mål
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323985"
 
 Du kan konfigurere [mål](electronic-reporting-destinations.md) for hver utdatakomponent (mappe eller fil) i en [konfigurasjon](general-electronic-reporting.md#Configuration) for et [ER-format (Elektronisk rapportering)](general-electronic-reporting.md) som brukes til å generere et utgående dokument. Brukere som kjører et ER-format av denne typen og har nødvendige tilgangsrettigheter, kan også endre de konfigurerte målinnstillingene ved kjøretid.
 
-I Microsoft Dynamics 365 Finance **versjon 10.0.17 og nyere** kan et ER-format kjøres ved å [klargjøre](er-apis-app10-0-17.md) en handlingskode som brukeren utfører ved å kjøre dette ER-formatet. I **Kunder**-modulen i innstillingene for utskriftsbehandling kan du for eksempel velge et ER-format som genererer et bestemt forretningsdokument, for eksempel en fritekstfaktura. Du kan deretter velge **Vis** for å forhåndsvise fakturaen eller **Skriv ut** for å sende den til en skriver. Hvis en brukerhandling sendes for det kjørende ER-formatet ved kjøretid, kan du konfigurere ulike ER-mål for ulike brukerhandlinger. Dette emnet beskriver hvordan du konfigurerer ER-mål for denne typen ER-format.
+I Microsoft Dynamics 365 Finance **versjon 10.0.17 og nyere** kan et ER-format kjøres ved å [klargjøre](er-apis-app10-0-17.md) en handlingskode som brukeren utfører ved å kjøre dette ER-formatet. I **Kunder**-modulen i innstillingene for utskriftsbehandling kan du for eksempel velge et ER-format som genererer et bestemt forretningsdokument, for eksempel en fritekstfaktura. Du kan deretter velge **Vis** for å forhåndsvise fakturaen eller **Skriv ut** for å sende den til en skriver. Hvis en brukerhandling sendes for det kjørende ER-formatet ved kjøretid, kan du konfigurere ulike ER-mål for ulike brukerhandlinger. Denne artikkelen beskriver hvordan du konfigurerer ER-mål for denne typen ER-format.
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Gjøre handlingsavhengige ER-mål tilgjengelige
 
@@ -82,7 +82,7 @@ Illustrasjonen nedenfor viser hvordan du kan oppnå den samme alternative konfig
 
 Hvis brukerhandlinger er klargjort av brukere som har de aktuelle [tillatelsene](electronic-reporting-destinations.md#security-considerations) til å endre konfigurerte målinnstillinger ved kjøretid, når et ER-format kjøres, vises det en dialogboks der du kan endre de konfigurerte målinnstillingene. Denne dialogboksen er valgfri, og utseendet avhenger av hvordan oppkallet som ER-rammeverket utfører for å kjøre et ER-format, er implementert. Hvis denne dialogboksen vises, blir ER-målet i den aktivert i henhold til brukerhandlingen som angis.
 
-Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronisk rapporteringsformat** som vises når en fritekstfaktura [posteres](../../../finance/accounts-receivable/create-free-text-invoice-new.md) og ER-formatet **Fritekstfaktura (Excel)** kjøres for å generere dette dokumentet, hvis **Skriver**-handlingen ble klargjort og ER-mål ble konfigurert for dette formatet som vist tidligere i dette emnet.
+Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronisk rapporteringsformat** som vises når en fritekstfaktura [posteres](../../../finance/accounts-receivable/create-free-text-invoice-new.md) og ER-formatet **Fritekstfaktura (Excel)** kjøres for å generere dette dokumentet, hvis **Skriver**-handlingen ble klargjort og ER-mål ble konfigurert for dette formatet som vist tidligere i denne artikkelen.
 
 ![Dialogboks der du kan endre de opprinnelig konfigurerte ER-målene for kjøring av ER-format.](./media/er-destination-action-dependent-02.gif)
 

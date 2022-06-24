@@ -1,6 +1,6 @@
 ---
-title: Oversikt over e-handelsområde
-description: Dette emnet gir en oversikt over støtte for e-handelsområder i Microsoft Dynamics 365 Commerce.
+title: Oversikt over netthandelsområde
+description: Denne artikkelen gir en oversikt over støtte for e-handelsområder i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 11/05/2020
 ms.topic: overview
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90f0f01115b00f231af8d4ae11be1d18d379399b
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: 9b7e4d09eaa4f91478d27cbca5eaea48af86e676
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487774"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899127"
 ---
-# <a name="e-commerce-site-overview"></a>Oversikt over e-handelsområde
+# <a name="e-commerce-site-overview"></a>Oversikt over netthandelsområde
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over støtte for e-handelsområder i Microsoft Dynamics 365 Commerce. Den inneholder informasjon om hvordan nettbutikker for e-handel blir initialisert og behandlet i Dynamics 365 Commerce. Det inneholder også koblinger til mer informasjon om nettbutikker og informasjon om hvordan du konfigurerer et e-handelsområde. Selv om dette emnet dekker mye av det grunnleggende, dekker det ikke alt som kreves for å konfigurere et e-handelsområde for produksjon. Du finner mer avanserte emner i Dynamics 365 Commerce-dokumentasjonen.
+Denne artikkelen gir en oversikt over støtte for e-handelsområder i Microsoft Dynamics 365 Commerce. Den inneholder informasjon om hvordan nettbutikker for e-handel blir initialisert og behandlet i Dynamics 365 Commerce. Det inneholder også koblinger til mer informasjon om nettbutikker og informasjon om hvordan du konfigurerer et e-handelsområde. Selv om denne artikkelen dekker mye av det grunnleggende, dekker den ikke alt som kreves for å konfigurere et e-handelsområde for produksjon. Du finner mer avanserte artikler i Dynamics 365 Commerce-dokumentasjonen.
 
 ## <a name="online-store-channel"></a>Kanal for nettbutikk
 
@@ -74,7 +74,7 @@ Dynamics 365 Commerce bruker forretning-til-forbruker (B2C) for Azure Active Dir
 
 ## <a name="overview-of-the-default-site-pages"></a>Oversikt over standard områdesider
 
-**Standard**- og **fabrikam**-områdene inneholder forhåndskonfigurerte maler, fragmenter og sider som kan hjelpe deg med å komme i gang. Hvis du vil ha mer informasjon, kan du se følgende emner:
+**Standard**- og **fabrikam**-områdene inneholder forhåndskonfigurerte maler, fragmenter og sider som kan hjelpe deg med å komme i gang. Hvis du vil ha mer informasjon, kan du se følgende artikler:
 
 - [Oversikt over startside](quick-tour-home-page.md)
 - [Oversikt over produktdetaljside](quick-tour-pdp.md)
@@ -83,7 +83,7 @@ Dynamics 365 Commerce bruker forretning-til-forbruker (B2C) for Azure Active Dir
 
 ## <a name="manage-site-settings"></a>Administrere områdeinnstillinger
 
-Hvis du vil ha informasjon om hvordan du administrerer områdeinnstillingene, kan du se emnene nedenfor:
+Hvis du vil ha informasjon om hvordan du administrerer områdeinnstillingene, kan du se artiklene nedenfor:
 
 - [Behandle brukere og roller for e-handel](manage-ecommerce-users-roles.md)
 - [Vurderinger for søkemotoroptimalisering (SEO) for området](search-engine-optimization-considerations.md)
@@ -92,7 +92,7 @@ Hvis du vil ha informasjon om hvordan du administrerer områdeinnstillingene, ka
 
 ## <a name="manage-site-content"></a>Administrere områdeinnhold
 
-Hvis du vil ha informasjon om hvordan du administrerer områdeinnhold, kan du se emnene nedenfor:
+Hvis du vil ha informasjon om hvordan du administrerer områdeinnhold, kan du se artiklene nedenfor:
 
 - [Ordliste for sidemodell](page-elements-overview.md)
 - [Dokumentere statuser og livssyklus](document-states-overview.md)

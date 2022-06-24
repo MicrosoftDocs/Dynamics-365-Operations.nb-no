@@ -1,6 +1,6 @@
 ---
 title: Salgsreturer
-description: Dette emnet inneholder informasjon om prosessen for returordrer. Det inneholder informasjon om kundereturer og deres innvirkning på lagerantall for etterkalkulering og lagerbeholdning.
+description: Denne artikkelen inneholder informasjon om prosessen for returordrer. Det inneholder informasjon om kundereturer og deres innvirkning på lagerantall for etterkalkulering og lagerbeholdning.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9e8045ec39b9caf9bf0dc2b2d331419efb54e6d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695570"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860413"
 ---
 # <a name="sales-returns"></a>Salgsreturer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om prosessen for returordrer. Det inneholder informasjon om kundereturer og deres innvirkning på lagerantall for etterkalkulering og lagerbeholdning.
+Denne artikkelen inneholder informasjon om prosessen for returordrer. Det inneholder informasjon om kundereturer og deres innvirkning på lagerantall for etterkalkulering og lagerbeholdning.
 
 Kunder kan returnere varer av ulike årsaker. En vare kan for eksempel være ødelagt, eller den oppfyller kanskje ikke kundens forventninger. Returprosessen starter når en kunde sender en forespørsel om å returnere en vare. Når kundens forespørsel mottas, opprettes en returordre.
 
@@ -84,7 +84,7 @@ Når du har fullført returhodet, kan du opprette returlinjer ved hjelp av én a
 -   Opprett en returlinje ved hjelp av funksjonen **Søk etter salgsordre**. Det anbefales at du bruker denne funksjonen når du oppretter en returordre. Funksjonen **Søk etter salgsordre** oppretter en referanse fra returlinjen tilbake til den fakturerte salgsordrelinjen, og henter linjedetaljer som varenummer, antall, pris, rabatt og kostnadsverdier fra salgslinjen. Referansen bidrar til å garantere at når produktet returneres til selskapet, blir det verdisatt til samme enhetskostnad som den ble solgt for. Referansen validerer også at returordrer ikke opprettes for et antall som er større enn antallet som ble solgt på fakturaen.
 
 >[!NOTE] 
->Returlinjer som har en referanse til en salgsordre, behandles som korrigeringer eller tilbakeføringer av salget. Hvis du vil ha mer informasjon, kan du se "Postere til finans" senere i dette emnet.
+>Returlinjer som har en referanse til en salgsordre, behandles som korrigeringer eller tilbakeføringer av salget. Hvis du vil ha mer informasjon, kan du se "Postere til finans" senere i denne artikkelen.
 
 ### <a name="charges"></a>Tillegg
 
@@ -179,7 +179,7 @@ Før du kan motta returnerte varer fysisk til lager ved å bokføre en følgesed
 
 [![Ankomstprosessen.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Prosessen har flere andre variasjoner som ikke omtales i dette emnet. Her er noen av disse variasjonene:
+Prosessen har flere andre variasjoner som ikke omtales i denne artikkelen. Her er noen av disse variasjonene:
 
 -   Ikke bruk listen **Ankomstoversikt** til å opprette en ankomstjournal. Opprett i stedet ankomstjournalen manuelt. Returordrer vil ha **Salgsordre** som referanse.
 -   Hvis du bruker lagerstyring, genererer du palltransporter. Returlinjen vil ha statusen **Ankommet** under palltransporten.

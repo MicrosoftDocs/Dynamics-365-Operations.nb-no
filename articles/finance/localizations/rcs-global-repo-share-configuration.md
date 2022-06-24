@@ -1,6 +1,6 @@
 ---
 title: Dele ER-konfigurasjoner i RCS/det globale repositoriet med eksterne organisasjoner
-description: Dette emnet forklarer hvordan du deler konfigurasjoner for elektronisk rapportering (ER) i Microsoft RCS (Regulatory Configuration Services) eller det globale repositoriet direkte med eksterne organisasjoner.
+description: Denne artikkelen forklarer hvordan du deler konfigurasjoner for elektronisk rapportering (ER) i Microsoft RCS (Regulatory Configuration Services) eller det globale repositoriet direkte med eksterne organisasjoner.
 author: JaneA07
 ms.date: 05/04/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ee7feef83ffa458e7cbd238d37a0f343d1a202f48002da67823df024bb609d02
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 976a86aee75581d1afa764bea049b6c0eaecf9f3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888930"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Dele konfigurasjoner for elektronisk rapportering (ER) i RCS(Regulatory Configuration Services) eller det globale repositoriet med eksterne organisasjoner
 
@@ -67,7 +67,7 @@ Når en konfigurasjon er opprettet under konfigurasjonsleverandøren, kan du del
 
     ![Dele konfigurasjonsversjon med dialogboksen Ekstern organisasjon.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
-Konfigurasjonen deles med den eksterne organisasjonen, og er tilgjengelig for den organisasjonen i det globale repositoriet. Derfra kan den importeres til organisasjonens forekomst av RCS eller i forekomstene av Finance and Operations-apper.
+Konfigurasjonen deles med den eksterne organisasjonen, og er tilgjengelig for den organisasjonen i det globale repositoriet. Derfra kan den importeres til organisasjonens forekomst av RCS eller i forekomstene av økonomi- og driftapper.
 
 6. Hvis du vil oppheve deling av en konfigurasjon som tidligere er delt med en ekstern organisasjon, velger du konfigurasjonen og klikker **Opphev deling**, og deretter velger du **OK**
 

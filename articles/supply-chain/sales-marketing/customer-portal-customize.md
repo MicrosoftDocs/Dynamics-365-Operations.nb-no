@@ -1,6 +1,6 @@
 ---
-title: Tilpasse og bruke kundeportalen
-description: Dette emnet beskriver hvordan du tilpasser kundeportalen etter at den er lagt til i systemet.
+title: Tilpass og bruk kundeportalen
+description: Denne artikkelen beskriver hvordan du tilpasser kundeportalen etter at den er lagt til i systemet.
 author: Henrikan
 ms.date: 04/22/2020
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 02ad0470b7886b2e9b259682a7f8c8150d656cfb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 85ec4beda2efe62ff5076a5ed694efbc47c6d87f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878881"
 ---
-# <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruke kundeportalen
+# <a name="customize-and-use-the-customer-portal"></a>Tilpass og bruk kundeportalen
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver de ulike sidene som er tilgjengelige som standard i kundeportalen. Den forklarer funksjonene til sidene samt hvordan du kan tilpasse dem.
+Denne artikkelen beskriver de ulike sidene som er tilgjengelige som standard i kundeportalen. Den forklarer funksjonene til sidene samt hvordan du kan tilpasse dem.
 
 Kundeportalen tilbyr enkelte nettsider og handlinger som standard. Følgende områdekart gir en oversikt over disse nettsidene og handlingene, og rollene som kan utføre handlingene.
 
@@ -32,16 +32,16 @@ Kundeportalen tilbyr enkelte nettsider og handlinger som standard. Følgende omr
 
 ## <a name="typical-customizations"></a>Vanlige tilpasninger
 
-Følgende emner hjelper deg å lære grunnleggende kunnskaper om Power Apps-portaler samt hvordan du kan tilpasse portaler:
+Følgende artikler hjelper deg å lære grunnleggende kunnskaper om Power Apps-portaler samt hvordan du kan tilpasse portaler:
 
-- [Arbeide med maler](/powerapps/maker/portals/work-with-templates) – dette emnet gir en generell oversikt over hvordan Power Apps-portaler fungerer, og hvordan du kan utføre enkle tilpasninger av portaler.
-- [Behandle portalinnhold](/dynamics365/portals/manage-portal-content) – dette emnet beskriver hvordan du kan administrere og tilpasse innholdet på portalen.
-- [Rediger CSS](/powerapps/maker/portals/edit-css) – dette emnet hjelper deg med å utføre mer avanserte tilpasninger i brukergrensesnittet til portalen.
-- [Opprett et tema for portalen](/dynamics365/portals/create-theme) – dette emnet hjelper deg med å opprette et brukergrensesnitt-tema for portalen.
-- [Opprette og vise portalinnhold enkelt](/dynamics365/portals/create-expose-portal-content) – dette emnet hjelper deg med å styre de underliggende dataene og tabellene som du bruker for portalen.
-- [Konfigurere en kontakt for bruk på en portal](/powerapps/maker/portals/configure/configure-contacts) – dette emnet forklarer hvordan du oppretter og tilpasser brukerroller, og hvordan sikkerhet og godkjenning fungerer i Power Apps-portaler.
-- [Konfigurere merknader for tabellskjemaer og nettskjemaer på portaler](/powerapps/maker/portals/configure-notes) – dette emnet forklarer hvordan du legger til dokumenter og ekstra lagringsplass på portalen.
-- [Feilhåndtering for portalnettstedet](/powerapps/maker/portals/admin/view-portal-error-log) – dette emnet forklarer hvordan du viser feillogger for portaler og lagrer dem i Microsoft Azure Blob Storage-kontoen.
+- [Arbeide med maler](/powerapps/maker/portals/work-with-templates) – denne artikkelen gir en generell oversikt over hvordan Power Apps-portaler fungerer, og hvordan du kan utføre enkle tilpasninger av portaler.
+- [Behandle portalinnhold](/dynamics365/portals/manage-portal-content) – denne artikkelen beskriver hvordan du kan administrere og tilpasse innholdet på portalen.
+- [Rediger CSS](/powerapps/maker/portals/edit-css) – denne artikkelen hjelper deg med å utføre mer avanserte tilpasninger i brukergrensesnittet til portalen.
+- [Opprett et tema for portalen](/dynamics365/portals/create-theme) – denne artikkelen hjelper deg med å opprette et brukergrensesnitt-tema for portalen.
+- [Opprette og vise portalinnhold enkelt](/dynamics365/portals/create-expose-portal-content) – denne artikkelen hjelper deg med å styre de underliggende dataene og tabellene som du bruker for portalen.
+- [Konfigurere en kontakt for bruk på en portal](/powerapps/maker/portals/configure/configure-contacts) – denne artikkelen forklarer hvordan du oppretter og tilpasser brukerroller, og hvordan sikkerhet og godkjenning fungerer i Power Apps-portaler.
+- [Konfigurere merknader for tabellskjemaer og nettskjemaer på portaler](/powerapps/maker/portals/configure-notes) – denne artikkelen forklarer hvordan du legger til dokumenter og ekstra lagringsplass på portalen.
+- [Feilhåndtering for portalnettstedet](/powerapps/maker/portals/admin/view-portal-error-log) – denne artikkelen forklarer hvordan du viser feillogger for portaler og lagrer dem i Microsoft Azure Blob Storage-kontoen.
 
 ## <a name="customize-the-order-creation-process"></a>Tilpasse prosessen for ordreopprettelse
 

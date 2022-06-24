@@ -1,6 +1,6 @@
 ---
 title: Konfigurer jobbkort for enheter
-description: Dette emnet beskriver de ulike alternativene for konfigurasjon av jobbkortenheten.
+description: Denne artikkelen beskriver de ulike alternativene for konfigurasjon av jobbkortenheten.
 author: johanhoffmann
 ms.date: 05/29/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4c7a9585d96a1e08790e0f3c972e704971f27dc0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103444"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860732"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobbkort for enheter
 
 [!include [banner](../includes/banner.md)]
 
-Jobbkortenheten brukes av butikkansatte til å registrere det daglige arbeidet deres – for eksempel når de begynner på jobber – rapportere tilbakemeldinger om jobber, registrere indirekte aktiviteter og rapportere fravær. Disse registreringene er grunnlaget for sporing av fremdriften og kostnaden av produksjonsordrer, samt for beregning av grunnlaget for arbeidernes lønn. Dette emnet beskriver de ulike alternativene for konfigurasjon av jobbkortenheter.
+Jobbkortenheten brukes av butikkansatte til å registrere det daglige arbeidet deres – for eksempel når de begynner på jobber – rapportere tilbakemeldinger om jobber, registrere indirekte aktiviteter og rapportere fravær. Disse registreringene er grunnlaget for sporing av fremdriften og kostnaden av produksjonsordrer, samt for beregning av grunnlaget for arbeidernes lønn. Denne artikkelen beskriver de ulike alternativene for konfigurasjon av jobbkortenheter.
 
 ## <a name="enable-new-features-in-feature-management"></a>Aktivere nye funksjoner i funksjonsbehandling
 
-Noen få av innstillingene som er beskrevet i dette emnet, må være aktivert i systemet før de blir tilgjengelige for deg. Bruk [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-siden for å aktivere noen av eller alle de følgende funksjonene ved behov.
+Noen få av innstillingene som er beskrevet i denne artikkelen, må være aktivert i systemet før de blir tilgjengelige for deg. Bruk [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-siden for å aktivere noen av eller alle de følgende funksjonene ved behov.
 
 ### <a name="generate-license-plate"></a>Generer nummerskilt
 

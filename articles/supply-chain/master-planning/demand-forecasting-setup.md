@@ -1,6 +1,6 @@
 ---
 title: Oppsett av behovsprognose
-description: Dette emnet beskriver konfigurasjonsoppgavene du må utføre for å klargjøre behovsprognoser.
+description: Denne artikkelen beskriver konfigurasjonsoppgavene du må utføre for å klargjøre behovsprognoser.
 author: t-benebo
 ms.date: 11/23/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3b52b970a8040dcba5a1fc59d297dc9ce1a3c53
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 10a211e0e20f22dfbfdb4923841808750b6ed71b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8470016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901009"
 ---
 # <a name="demand-forecasting-setup"></a>Oppsett av behovsprognose
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du setter opp behovsprognose.  
+Denne artikkelen beskriver hvordan du setter opp behovsprognose.  
 
 ## <a name="item-allocation-keys"></a>Varefordelingsnøkler
 
@@ -245,7 +245,7 @@ Bruk fremgangsmåten nedenfor for å opprette et arbeidsområde for maskinopplæ
 1. Fullfør veiviseren ved å følge instruksjonene på skjermen. Husk at følgende punkter er i bakhodet når du arbeider:
 
     - Bruk standardinnstillingene hvis ikke andre punkt i denne listen anbefaler andre innstillinger.
-    - Pass på at du velger det geografiske området som samsvarer med området der forekomsten av Supply Chain Management er distribuert. Hvis ikke kan det hende at noen av dataene dine passerer gjennom områdegrensene. Hvis du vil ha mer informasjon, kan du se delen [personvernerklæring](#privacy) senere i dette emnet.
+    - Pass på at du velger det geografiske området som samsvarer med området der forekomsten av Supply Chain Management er distribuert. Hvis ikke kan det hende at noen av dataene dine passerer gjennom områdegrensene. Hvis du vil ha mer informasjon, kan du se delen [personvernerklæring](#privacy) senere i denne artikkelen.
     - Bruk dedikerte ressurser, for eksempel ressursgrupper, lagringskontoer, containerregistrer, Azure-key vault og nettverksressurser.
     - Du må angi et navn på lagringskonto på siden **Konfigurere Azure Machine Learning Service-tilkoblingsparametere**. Bruk en konto som er dedikert til behovsprognose. Behovsprognose-inndata og -utdata lagres i denne lagringskontoen.
 

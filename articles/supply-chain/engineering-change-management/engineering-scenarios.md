@@ -1,6 +1,6 @@
 ---
 title: Gjennomgang av funksjonen for behandling av teknisk endring
-description: Dette emnet inneholder en omfattende gjennomgang som viser hvordan du arbeider med behandling av teknisk endring.
+description: Denne artikkelen inneholder en omfattende gjennomgang som viser hvordan du arbeider med behandling av teknisk endring.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573999"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889642"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Gjennomgang av funksjonen for behandling av teknisk endring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder en omfattende gjennomgang som viser hvordan du arbeider med behandling av teknisk endring. Den går gjennom alle de viktigste scenarioene:
+Denne artikkelen inneholder en omfattende gjennomgang som viser hvordan du arbeider med behandling av teknisk endring. Den går gjennom alle de viktigste scenarioene:
 
 - Grunnleggende funksjonskonfigurasjon
 - Hvordan et teknisk firma oppretter et nytt teknisk produkt
@@ -35,13 +35,13 @@ Dette emnet inneholder en omfattende gjennomgang som viser hvordan du arbeider m
 - Hvordan du planlegger og implementerer endringer ved å opprette en ordre om teknisk endring
 - Hvordan du frigir et produkt som er endret
 
-Alle øvelsene i dette emnet bruker standard eksempeldata som leveres med Microsoft Dynamics 365 Supply Chain Management. I tillegg bygger hver øvelse på den forrige øvelsen. Derfor anbefaler vi at du arbeider deg gjennom øvelsene i rekkefølge fra begynnelse til slutt, spesielt hvis du aldri har brukt funksjonen for behandling av teknisk endring. På denne måten får du en fullstendig forståelse av funksjonen.
+Alle øvelsene i denne artikkelen bruker standard eksempeldata som leveres med Microsoft Dynamics 365 Supply Chain Management. I tillegg bygger hver øvelse på den forrige øvelsen. Derfor anbefaler vi at du arbeider deg gjennom øvelsene i rekkefølge fra begynnelse til slutt, spesielt hvis du aldri har brukt funksjonen for behandling av teknisk endring. På denne måten får du en fullstendig forståelse av funksjonen.
 
 ## <a name="set-up-for-the-sample-scenario"></a>Konfigurer for eksempelscenarioet
 
-Hvis du vil følge eksempelscenarioet i dette emnet, må du først klargjøre funksjonen ved å gjøre demonstrasjonsdata tilgjengelige og legge til noen egendefinerte poster.
+Hvis du vil følge eksempelscenarioet i denne artikkelen, må du først klargjøre funksjonen ved å gjøre demonstrasjonsdata tilgjengelige og legge til noen egendefinerte poster.
 
-Før du prøver å utføre noen av øvelsene i resten av dette emnet, følger du instruksjonene i alle under avsnittene nedenfor. Disse avsnittene introduseres også med flere viktige innstillingssider som du vil bruke når du konfigurerer behandling av teknisk endring for din egen organisasjon.
+Før du prøver å utføre noen av øvelsene i resten av denne artikkelen, følger du instruksjonene i alle under avsnittene nedenfor. Disse avsnittene introduseres også med flere viktige innstillingssider som du vil bruke når du konfigurerer behandling av teknisk endring for din egen organisasjon.
 
 ### <a name="make-standard-demo-data-available"></a>Gjøre standard demodata tilgjengelig
 

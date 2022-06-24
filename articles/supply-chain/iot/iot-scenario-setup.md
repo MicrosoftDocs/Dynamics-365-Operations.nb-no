@@ -1,6 +1,6 @@
 ---
 title: Scenariooppsett for IoT-intelligens
-description: Dette emnet forklarer hvordan du konfigurerer scenarier for IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen forklarer hvordan du konfigurerer scenarioer for IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -14,20 +14,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dddc282ef3e479d524b1dfa0c60091cad1c231e0
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3172bdb81e00d20c5b1d1f3f8e4299ca69c59434
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675184"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889613"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Scenariooppsett for IoT-intelligens
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer scenarier for IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
+Denne artikkelen forklarer hvordan du konfigurerer scenarioer for IoT-intelligens i Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
-I dette emnet skal du konfigurere **Nedetid for utstyr**, slik at et varsel genereres i Supply Chain Management når en maskin går ned. Emnet viser også hvordan du konfigurerer **Produktkvalitet**-scenarioet, slik at det genereres et varsel hvis et attributt for en vare er utenfor et bestemt område, og hvordan du konfigurerer **Produksjonsforsinkelser**-scenarioet, slik at det genereres et varsel hvis produksjonsgjennomstrømningen faller under en terskelverdi.
+I denne artikkelen skal du konfigurere **Nedetid for utstyr**, slik at et varsel genereres i Supply Chain Management når en maskin går ned. Artikkelen viser også hvordan du konfigurerer **Produktkvalitet**-scenarioet, slik at det genereres et varsel hvis et attributt for en vare er utenfor et bestemt område, og hvordan du konfigurerer **Produksjonsforsinkelser**-scenarioet, slik at det genereres et varsel hvis produksjonsgjennomstrømningen faller under en terskelverdi.
 
 ## <a name="configure-the-equipment-downtime-scenario-in-supply-chain-management"></a>Konfigurere  Nedetid for utstyr i Supply Chain Management
 

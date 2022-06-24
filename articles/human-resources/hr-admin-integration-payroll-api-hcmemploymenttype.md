@@ -1,6 +1,6 @@
 ---
 title: Lønns-API-ansettelsestype
-description: Dette emnet beskriver alternativet Ansettelsestype som er angitt i Dynamics 365 Human Resources lønns-API.
+description: Denne artikkelen beskriver alternativet Ansettelsestype som er angitt i Dynamics 365 Human Resources lønns-API.
 author: marcelbf
 ms.date: 08/23/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-08-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 06d78da6c03a539a1dfd1294750b061b2f568978
-ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
+ms.openlocfilehash: 42b05c7e1cc371918c68be849c1a73be53b4fa21
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7429614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869901"
 ---
 # <a name="payroll---employment-type-option-set"></a>Lønn – alternativ for ansettelsestype angitt
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emnet beskrives alternativetsettet for ansettelsestype for Dynamics 365 Human Resources.
+Denne artikkelen beskriver alternativetsettet for ansettelsestype for Dynamics 365 Human Resources.
 
 ## <a name="option-set-employment-type"></a>Alternativsett: ansettelsestype
 

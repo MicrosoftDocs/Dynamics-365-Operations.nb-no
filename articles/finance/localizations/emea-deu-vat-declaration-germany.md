@@ -1,6 +1,6 @@
 ---
 title: Mva-deklarering (Tyskland)
-description: Dette emnet beskriver hvordan du definerer og genererer en mva-deklarering for forskudd for Tyskland i det offisielle XML-formatet.
+description: Denne artikkelen beskriver hvordan du definerer og genererer en mva-deklarering for forskudd for Tyskland i det offisielle XML-formatet.
 author: anasyash
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,22 +9,22 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: a761a145a876584728098a92b3f3e93ac718a164
-ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.openlocfilehash: ff52963c03ec2eb662eb0c20ef2a960e3b999167
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "8402809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879539"
 ---
 # <a name="vat-declaration-germany"></a>Mva-deklarering (Tyskland)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du definerer og genererer en mva-deklarering for forskudd for Tyskland i det offisielle XML-formatet. Dette emnet beskriver også hvordan du forhåndsviser mva-deklareringen i Microsoft Excel.
+Denne artikkelen beskriver hvordan du definerer og genererer en mva-deklarering for forskudd for Tyskland i det offisielle XML-formatet. Denne artikkelen beskriver også hvordan du forhåndsviser mva-deklareringen i Microsoft Excel.
 
 Hvis du vil generere rapporten automatisk, oppretter du nok mva-koder til å beholde en egen mva-regnskap for hver boks i forskuddsvis mva-deklarering. I programspesifikke parametere i ER-formatet (Elektronisk rapportering) for forskuddsvis mva-deklarering knytter du dessuten mva-koder til oppslagsresultatet til oppslagene for boksene i mva-deklareringen.
 
-For Tyskland må du konfigurere **rapportfeltoppslag**. Hvis du vil ha mer informasjon om hvordan du definerer programspesifikke parametere, kan du se delen [Definere programspesifikke parametere for mva-deklareringsfelt](#set-up-application-specific-parameters-for-vat-declaration-fields) senere i dette emnet.
+For Tyskland må du konfigurere **rapportfeltoppslag**. Hvis du vil ha mer informasjon om hvordan du definerer programspesifikke parametere, kan du se delen [Definere programspesifikke parametere for mva-deklareringsfelt](#set-up-application-specific-parameters-for-vat-declaration-fields) senere i denne artikkelen.
 
 Kolonnen "Oppslagsresultat" i tabellen nedenfor viser oppslagsresultatet som er forhåndskonfigurert for en bestemt mva-deklareringsrad i mva-deklareringsformatet. Bruk denne informasjonen til å knytte mva-koder til oppslagsresultatet på riktig måte, og deretter til raden i mva-deklareringen.
 
@@ -176,7 +176,7 @@ Følg denne fremgangsmåten for å definere hvilke mva-koder som genererer hvilk
 
     | Felt                  | Beskrivelse                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Oppslagsresultat          | Velg verdien for rapportfeltet. Hvis du vil ha mer informasjon om verdiene og tilordningen til mva-deklareringsrader, kan du se delen [Oversikt for mva-deklarering](#vat-declaration-overview) tidligere i dette emnet.                                                                                               |
+    | Oppslagsresultat          | Velg verdien for rapportfeltet. Hvis du vil ha mer informasjon om verdiene og tilordningen til mva-deklareringsrader, kan du se delen [Oversikt for mva-deklarering](#vat-declaration-overview) tidligere i denne artikkelen.                                                                                               |
     | Avgiftskode               | Velg avgiftskoden som skal knyttes til rapportfeltet. Posterte avgiftstransaksjoner som bruker den valgte avgiftskoden, blir samlet inn i den riktige deklareringsboksen. Vi anbefaler at du skiller avgiftskoder på en slik måte at én avgiftskode genererer beløp i bare én deklareringsboks. |
     | Transaksjonsklassifikator | Hvis du har opprettet nok mva-koder til å bestemme en deklareringsboks, velger du **\*Ikke tom\***. Hvis du ikke opprettet nok mva-koder slik at én mva-kode genererer beløp i bare én deklareringsboks, kan du definere en transaksjonsklassifikator. Følgende transaksjonsklassifikatorer er tilgjengelige:</br>-   **Kjøp**</br>-   **PurchaseExempt** (avgiftsfritt kjøp)</br>-   **PurchaseReverseCharge** (inngående merverdiavgift fra et innkjøp med snudd avskriving)</br>-   **Salg**</br>-   **SalesExempt** (avgiftsfritt salg)</br>-   **SalesReverseCharge** (skyldig mva fra snudd avregning for innkjøp eller snudd avregning for salg)</br>-   **Use tax**. </br>For hver transaksjonsklassifikator er også en klassifikator for kreditnotaen tilgjengelig. Én av disse klassifikatorene er for eksempel **PurchaseCreditNote** (innkjøpskreditnota).</br>Pass på at du oppretter to linjer for hver mva-kode: en som har transaksjonsklassifikatorverdien, og en som har transaksjonsklassifikatoren for kreditnotaverdi. |
 
@@ -212,7 +212,7 @@ Følg denne fremgangsmåten hvis du konfigurerer mva-deklareringen i en juridisk
 Datapakken inneholder innstillinger for elektroniske meldinger som brukes til å generere mva-deklareringen i XML-format, og forhåndsvise den i Excel. Du kan utvide disse innstillingene eller opprette dine egne. Hvis du vil ha mer informasjon om hvordan du arbeider med elektroniske meldinger og oppretter dine egne innstillinger, kan du se [Elektroniske meldinger](../general-ledger/electronic-messaging.md).
 
 1. I [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), i Delt aktivabibliotek, velger du **Datapakke** som ressurstype, og laster ned **DE mva-deklarering EM-pakken**. Filnavnet som lastes ned, er **DE VAT declaration EM package.zip**.
-2. I Dynamics 365 Finance i arbeidsområdet **Databehandling** velger du **Importer**.
+2. I Dynamics 365 Finance, i arbeidsområdet **Databehandling** velger du **Importer**.
 3. Skriv inn en navn for jobben i hurtigfanen **Import** i feltet **Gruppenavn**.
 4. På **Valgte enheter**-hurtigfanen velger du **Legg til fil**.
 5. I dialogboksen **Legg til fil** kontrollerer du at feltet **Kildedataformat** er satt til **Pakke**, velger **Last opp og legg til**, og deretter velger du zipfilen du lastet ned tidligere.
@@ -265,7 +265,7 @@ Datapakken inneholder innstillinger for elektroniske meldinger som brukes til å
 
 ## <a name="generate-a-vat-declaration-from-electronic-messages"></a>Generere en mva-deklarering fra elektroniske meldinger
 
-Når du bruker elektroniske meldinger til å generere rapporten, kan du samle inn avgiftsdata fra flere juridiske enheter. Hvis du vil ha mer informasjon, kan du se delen [Kjøre en mva-deklarering for flere juridiske enheter](#run-a-vat-declaration-for-multiple-legal-entities) senere i dette emnet.
+Når du bruker elektroniske meldinger til å generere rapporten, kan du samle inn avgiftsdata fra flere juridiske enheter. Hvis du vil ha mer informasjon, kan du se delen [Kjøre en mva-deklarering for flere juridiske enheter](#run-a-vat-declaration-for-multiple-legal-entities) senere i denne artikkelen.
 
 Følgende fremgangsmåte gjelder for eksempel for behandling av elektroniske meldinger som du importerte fra LCS delt aktivabibliotek.
 
@@ -277,7 +277,7 @@ Følgende fremgangsmåte gjelder for eksempel for behandling av elektroniske mel
     > [!NOTE]
     > Trinn 5 til og med 7 er valgfrie.
 
-5. Valgfritt: I hurtigfanen **Meldinger** velger du **Samle inn data**, og deretter velger du **OK**. Mva-betalingene som ble generert tidligere, blir lagt til i meldingen. Hvis du vil ha mer informasjon, kan du se delen [Utlign og poster merverdiavgift](#settle-and-post-sales-tax) tidligere i dette emnet. Hvis du hopper over dette trinnet, kan du likevel generere en mva-deklarering ved å bruke feltet **Avgiftsdeklareringsversjon** i dialogboksen **Deklarering**.
+5. Valgfritt: I hurtigfanen **Meldinger** velger du **Samle inn data**, og deretter velger du **OK**. Mva-betalingene som ble generert tidligere, blir lagt til i meldingen. Hvis du vil ha mer informasjon, kan du se delen [Utlign og poster merverdiavgift](#settle-and-post-sales-tax) tidligere i denne artikkelen. Hvis du hopper over dette trinnet, kan du likevel generere en mva-deklarering ved å bruke feltet **Avgiftsdeklareringsversjon** i dialogboksen **Deklarering**.
 6. Valgfritt: Gå gjennom mva-betalingene som er overført for behandling, i hurtigfanen **Meldingselementer**. Alle mva-betalinger for den valgte perioden som ikke var inkludert i andre meldinger av samme behandling, er som standard inkludert.
 7. Valgfritt: Velg **Opprinnelig dokument** for å gå gjennom mva-betalingene, eller velg **Slett** for å utelate mva-betalinger fra behandling. Hvis du hopper over dette trinnet, kan du likevel generere en mva-deklarering ved å bruke feltet **Avgiftsdeklareringsversjon** i dialogboksen **Deklarering**.
 8. På hurtigfanen **Meldinger** velger du **Oppdater status**. I dialogboksen **Oppdater status** velger du **Klar til å generere**, og deretter velger du **OK**. Kontroller at meldingens status er endret til **Klar til å generere**.

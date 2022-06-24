@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service (RCS) – avskrivning av lager for Lifecycle Services (LCS)
-description: Dette emnet gir informasjon om avskrivning av lager for Microsoft Dynamics Lifecycle Services (LCS) som er planlagt som en del av utrullingen av det globale repositoriet for Regulatory Configuration Service (RCS).
+description: Denne artikkelen gir informasjon om avskrivning av lager for Microsoft Dynamics Lifecycle Services (LCS) som er planlagt som en del av utrullingen av det globale repositoriet for Regulatory Configuration Service (RCS).
 author: JaneA07
 ms.date: 10/27/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 4a35941d1521d26f95bacf29213fee42daeb42ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547989"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849738"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – avskrivning av lager for Lifecycle Services (LCS)
 
@@ -85,7 +85,7 @@ RCS bruker konseptet *tilkoblet program*. Et tilkoblet program danner en tilkobl
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Finnes det noen eksempler der konfigurasjon og administrasjon vises?
 
-Det finnes ingen eksempler, men du kan fullføre trinnene tidligere i dette emnet for å overføre konfigurasjonene til det globale RCS-repositoriet.
+Det finnes ingen eksempler, men du kan fullføre trinnene tidligere i denne artikkelen for å overføre konfigurasjonene til det globale RCS-repositoriet.
 
 ### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Er RCS en forutsetning for å konfigurere elektronisk rapportering?
 

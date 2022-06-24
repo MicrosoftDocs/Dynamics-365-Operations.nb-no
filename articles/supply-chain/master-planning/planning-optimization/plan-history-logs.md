@@ -1,8 +1,8 @@
 ---
-title: Vise planhistorikk og planleggingslogger
-description: Dette emnet forklarer hvordan du viser loggen for planleggingsjobber som utløses av planleggingsoptimaliserings-funksjonaliteten.
+title: Vis planhistorikk og planleggingslogger
+description: Denne artikkelen forklarer hvordan du viser loggen for planleggingsjobber som utløses av Planleggingsoptimalisering-funksjonaliteten.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,22 +16,22 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9b4cba4dd94eb198e770d152d4f759a706065dee
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469764"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863947"
 ---
-# <a name="view-plan-history-and-planning-logs"></a>Vise planhistorikk og planleggingslogger
+# <a name="view-plan-history-and-planning-logs"></a>Vis planhistorikk og planleggingslogger
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du viser loggen for planleggingsjobber som utløses av planleggingsoptimaliserings-funksjonaliteten i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikkelen forklarer hvordan du viser loggen for planleggingsjobber som utløses av Planleggingsoptimalisering-funksjonaliteten i Microsoft Dynamics 365 Supply Chain Management.
 
 Hvis du vil vise loggen for en plan, åpner du planen ved å gå til **Hovedplanlegging** \> **Oppsett** \> **Planer** \> **Hovedplaner** og velge **Historikk**. Loggen viser alle jobbene for den valgte planen. Listen omfatter fullførte og aktive jobber.
 
-Loggen for jobber for kjøringer av hovedplanlegging for planleggingsoptimalisering har bare plass til opptil 60 poster per hovedplan. Hver gang du kjører en ny hovedplanleggingsberegning, blir denne planens tidligste loggpost slettet.
+Systemet beholder maksimalt 60 historikkposter per hovedplan og sletter poster som er eldre enn 30 dager. Hver gang du kjører en ny hovedplanleggingsberegning, legger systemet til en ny historikkpost og rydder opp i de eldste postene etter behov.
 
 I tillegg til å se starttid og status for jobber, kan du vise loggen for en bestemt jobb. Loggen inneholder tilleggsinformasjon og advarsler. Ikke alle jobber har en logg. Hvis du vil vise loggen for en jobb, velger du **Logg**. Loggoppføringer lagres bare i 30 dager etter avslutningsdatoen for jobben, og deretter slettes de automatisk.
 

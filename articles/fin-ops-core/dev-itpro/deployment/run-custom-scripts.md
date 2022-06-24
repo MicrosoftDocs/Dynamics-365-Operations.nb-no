@@ -1,6 +1,6 @@
 ---
 title: Kjøre egendefinerte X++-skript med null nedetid
-description: Dette emnet beskriver hvordan du laster opp og kjører distribuerbare pakker som inneholder egendefinerte X++-skript, uten at du trenger å stenge ute systemet.
+description: Denne artikkelen beskriver hvordan du laster opp og kjører distribuerbare pakker som inneholder egendefinerte X++-skript, uten at du trenger å stenge ute systemet.
 author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-12-16
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: fcd0a472fa5116ca0b3a59561b6eeb72181a9113
-ms.sourcegitcommit: 44e6875e974a3a1b3e1d7a24c1a3cff3d3697cdc
+ms.openlocfilehash: ff01e2ff8ec105603bb91e0b555301f36e8985b4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867336"
 ---
 # <a name="run-custom-x-scripts-with-zero-downtime"></a>Kjøre egendefinerte X++-skript med null nedetid
 
@@ -122,7 +122,7 @@ Bruk fremgangsmåten nedenfor til å laste opp og kjøre et skript.
 
 1. I økonomi- og driftsappen går du til **Systemadministrasjon \> Periodiske oppgaver \> Database \> Egendefinerte skript**.
 1. Velg **Last opp**.
-1. Velg den distribuerbare pakken du opprettet, som beskrevet tidligere i dette emnet. Du blir bedt om å angi formålet med skriptet.
+1. Velg den distribuerbare pakken du opprettet, som beskrevet tidligere i denne artikkelen. Du blir bedt om å angi formålet med skriptet.
 1. Skriptet må nå godkjennes av en annen bruker enn brukeren som lastet det opp. Godkjenneren må følge disse trinnene:
 
     1. Gå til **Systemadministrasjon \> Periodisk \> Database \> Egendefinerte skript**.

@@ -1,6 +1,6 @@
 ---
-title: Definere egendefinerte sider for brukerpålogginger
-description: Dette emnet beskriver hvordan du bygger egendefinerte sider i Microsoft Dynamics 365 Commerce som håndterer tilpassede pålogginger for brukere av Azure Active Directory (Azure AD)-forretning-til-forbruker-leiere (B2C).
+title: Definer egendefinerte sider for brukerpålogginger
+description: Denne artikkelen beskriver hvordan du bygger egendefinerte sider i Microsoft Dynamics 365 Commerce som håndterer tilpassede pålogginger for brukere av Azure Active Directory (Azure AD)-forretning-til-forbruker-leiere (B2C).
 author: brianshook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f4a3c7c3410a903ae7bc0bac27e861a0dbfa19fdd65761628549c403c4e5db16
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2c610866b896ef7648d2596e17b51d1935a78dee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723269"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880346"
 ---
-# <a name="set-up-custom-pages-for-user-sign-ins"></a>Definere egendefinerte sider for brukerpålogginger
+# <a name="set-up-custom-pages-for-user-sign-ins"></a>Definer egendefinerte sider for brukerpålogginger
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du bygger egendefinerte sider i Microsoft Dynamics 365 Commerce som håndterer tilpassede pålogginger for brukere av Azure Active Directory (Azure AD)-forretning-til-forbruker-leiere (B2C).
+Denne artikkelen beskriver hvordan du bygger egendefinerte sider i Microsoft Dynamics 365 Commerce som håndterer tilpassede pålogginger for brukere av Azure Active Directory (Azure AD)-forretning-til-forbruker-leiere (B2C).
 
 Hvis du vil bruke egendefinerte sider som er forfattet i Dynamics 365 Commerce, til å håndtere brukerpåloggingsflyter, må du definere Azure AD-policyene som det skal refereres til i handelsmiljøet. Du kan konfigurere Azure AD B2C-policyer for registrering og pålogging, profilredigering og tilbakestilling av passord ved hjelp av Azure AD B2C-programmet. Azure AD B2C-leieren og policynavnene kan deretter refereres til under klargjøringsprosessen som utføres for handelsmiljøet, ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
 

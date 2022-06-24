@@ -1,6 +1,6 @@
 ---
 title: Eksempler og logikk for rapport for aldersfordeling for lager
-description: Dette emnet presenterer noen eksempler som viser hvordan du kan tolke resultatene av en rapport for aldersfordeling for lager.
+description: Denne artikkelen presenterer noen eksempler som viser hvordan du kan tolke resultatene av en rapport for aldersfordeling for lager.
 author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
@@ -16,24 +16,24 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfffa49f802c601da391617b123134c435fba92
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 40066431ddfb9644c059025eac55d1b36789882e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672353"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848027"
 ---
 # <a name="inventory-aging-report-examples-and-logic"></a>Eksempler og logikk for rapport for aldersfordeling for lager
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet presenterer noen eksempler som viser hvordan du kan tolke resultatene av en **Aldersfordeling for lager**-rapport. Denne rapporten kategoriserer antall på lager og lagerverdier for en valgt vare eller varegruppe i flere perioder. Dette emnet viser også den interne logikken i rapporten.
+Denne artikkelen presenterer noen eksempler som viser hvordan du kan tolke resultatene av en rapport for **aldersfordeling for lager**. Denne rapporten kategoriserer antall på lager og lagerverdier for en valgt vare eller varegruppe i flere perioder. Denne artikkelen viser også den interne logikken i rapporten.
 
-Eksemplene i dette emnet viser resultater som vises på en standardrapport for **aldersfordeling for lager**. Generelt sett anbefales det imidlertid at du bruker versjonen [Lagring av rapport for aldersfordeling for lager](inventory-aging-report-storage.md) av denne rapporten, særlig når du har mange varer og lagre som må behandles. Lagring av rapport for aldersfordeling for lager lagrer hver rapport du genererer, viser resultatene som en interaktiv side og et diagram, og lar deg eksportere alle lagrede rapporter.
+Eksemplene i denne artikkelen viser resultater som vises på en standardrapport for **aldersfordeling for lager**. Generelt sett anbefales det imidlertid at du bruker versjonen [Lagring av rapport for aldersfordeling for lager](inventory-aging-report-storage.md) av denne rapporten, særlig når du har mange varer og lagre som må behandles. Lagring av rapport for aldersfordeling for lager lagrer hver rapport du genererer, viser resultatene som en interaktiv side og et diagram, og lar deg eksportere alle lagrede rapporter.
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Eksempeldata som brukes i disse eksemplene
 
-Eksemplene i dette emnet er basert på eksempeldata for lagertransaksjon som er beskrevet i denne delen.
+Eksemplene i denne artikkelen er basert på eksempeldata for lagertransaksjon som er beskrevet i denne delen.
 
 ### <a name="storage-dimension-setup"></a>Lagringsdimensjonsoppsett
 

@@ -1,6 +1,6 @@
 ---
 title: Lagertransaksjonsdetaljer
-description: Dette emnet gir en oversikt over Transaksjonsdetaljer-siden som viser detaljer om en valgt lagertransaksjon.
+description: Denne artikkelen gir en oversikt over Transaksjonsdetaljer-siden som viser detaljer om en valgt lagertransaksjon.
 author: rachel-profitt
 ms.date: 04/25/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-04-25
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: fd1416f21ce15dc832dd41ea4110c93bf5bb41a2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 55e29d5804f57cd86fb5ddac5d6c5576b7ea5f61
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735917"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859394"
 ---
 # <a name="inventory-transaction-details"></a>Lagertransaksjonsdetaljer
 
@@ -36,8 +36,8 @@ Følg denne fremgangsmåten for å åpne **Transaksjonsdetaljer**-siden.
 
 | Hurtigfane | Beskrivelse |
 |---|---|
-| Generelt | Denne hurtigfanen viser grunnleggende informasjon om den valgte lagertransaksjonen. I tillegg til feltene som vises på **Lagertransaksjoner**-siden, inneholder den tilleggsfeltene som beskrives senere i dette emnet. |
-| Oppdateringer | Denne hurtigfanen viser informasjon som er knyttet til de fysiske og økonomiske aspektene og utligningsaspektet ved den valgte lagertransaksjonen. Noen felter kan være tomme, avhengig av gjeldende status for transaksjonen. Disse feltene angis imidlertid automatisk når transaksjoner posteres. I tillegg til feltene som vises på **Lagertransaksjoner**-siden, inneholder denne hurtigfanen tilleggsfeltene som beskrives senere i dette emnet. |
+| Generelt | Denne hurtigfanen viser grunnleggende informasjon om den valgte lagertransaksjonen. I tillegg til feltene som vises på **Lagertransaksjoner**-siden, inneholder den tilleggsfeltene som beskrives senere i denne artikkelen. |
+| Oppdateringer | Denne hurtigfanen viser informasjon som er knyttet til de fysiske og økonomiske aspektene og utligningsaspektet ved den valgte lagertransaksjonen. Noen felter kan være tomme, avhengig av gjeldende status for transaksjonen. Disse feltene angis imidlertid automatisk når transaksjoner posteres. I tillegg til feltene som vises på **Lagertransaksjoner**-siden, inneholder denne hurtigfanen tilleggsfeltene som beskrives senere i denne artikkelen. |
 | Finansposteringer | Denne hurtigfanen viser posteringstypen og finanskontoen som brukes til den fysiske oppdateringen, økonomiske oppdateringen, fysiske omsetningen, fysiske tilleggene, finansinntekten og gebyrene som er knyttet til den valgte lagertransaksjonen. |
 | Referanser | Denne hurtigfanen viser tilleggsinformasjon om kildetransaksjonen som opprettet den valgte lagertransaksjonen. Denne informasjonen kan for eksempel omfatte detaljer fra bestillingen eller salgsordren. |
 | Beslektet informasjon | Denne hurtigfanen viser tilleggsinformasjon om den valgte lagertransaksjonen. Det kan hende at disse feltene ikke angis hvis det er enkelte funksjoner du ikke bruker, for eksempel innkjøpskategorier eller prosjekter. |

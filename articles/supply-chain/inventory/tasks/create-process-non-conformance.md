@@ -1,6 +1,6 @@
 ---
 title: Opprette og behandle avvik
-description: Dette emnet beskriver hvordan du utfører behandling av avvik, basert på en eksisterende kvalitetsordre.
+description: Denne artikkelen beskriver hvordan du utfører behandling av avvik, basert på en eksisterende kvalitetsordre.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032f5b712c2be5312524129cd25e655e778f5f44
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dd8a10e88ab4d1be24a11739dddd7619b3fa6bbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580870"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901973"
 ---
 # <a name="create-and-process-nonconformances"></a>Opprette og behandle avvik
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du utfører behandling av avvik, basert på en eksisterende kvalitetsordre. Avviksbehandling utføres vanligvis av en kvalitetsassistent. Det er en forutsetning at du har en tilgjengelig kvalitetsordre. (Hvis du vil ha informasjon om hvordan du oppretter en kvalitetsordre, kan du se [Inspisere kvaliteten på varer](inspect-quality-goods.md).)
+Denne artikkelen beskriver hvordan du utfører behandling av avvik, basert på en eksisterende kvalitetsordre. Avviksbehandling utføres vanligvis av en kvalitetsassistent. Det er en forutsetning at du har en tilgjengelig kvalitetsordre. (Hvis du vil ha informasjon om hvordan du oppretter en kvalitetsordre, kan du se [Inspisere kvaliteten på varer](inspect-quality-goods.md).)
 
 Før en bruker kan behandle godkjenningen av et avvik, må en arbeider tilordnes dem i **Person**-feltet på **Brukere**-siden. Før brukeren kan bruke dokumentnotatene, må alternativet **Aktiver dokumentoversikt** være satt til *Ja* i brukeralternativene.
 

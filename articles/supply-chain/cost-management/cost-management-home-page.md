@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0c5d7e8f9561ba81e0be93220df9afcd493179f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e9ba69f637087298bf6a93dbb049d78dff739aaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672493"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891154"
 ---
 # <a name="cost-management-home-page"></a>Startside for kostnadsstyring
 
@@ -53,7 +53,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 
 #### <a name="white-paper"></a>Hvitebok
 
-[Stykklisteberegning ved hjelp av et kostnadsskjema](https://www.microsoft.com/download/details.aspx?id=101937) beskriver hvordan du konfigurerer et kostnadsskjema som inneholder materiale og produksjon, og hvordan konfigurasjonen påvirker resultatene av stykklisteberegningen. For å gi en bedre forklaring på emnene inneholder den konkrete scenarioer og data som beskriver virkningen av forskjellige innstillinger og konfigurasjoner.
+[Stykklisteberegning ved hjelp av et kostnadsskjema](https://www.microsoft.com/download/details.aspx?id=101937) beskriver hvordan du konfigurerer et kostnadsskjema som inneholder materiale og produksjon, og hvordan konfigurasjonen påvirker resultatene av stykklisteberegningen. For å gi en bedre forklaring på artiklene inneholder den konkrete scenarioer og data som beskriver virkningen av forskjellige innstillinger og konfigurasjoner.
 
 #### <a name="blogs"></a>Blogger
 

@@ -1,6 +1,6 @@
 ---
 title: Tips for lagersynlighet
-description: Dette emnet inneholder noen tips du bør vurdere når du definerer og bruker tillegget for lagersynlighet.
+description: Denne artikkelen inneholder noen tips du bør vurdere når du definerer og bruker tillegget for lagersynlighet.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1f6ade36ac184a3c8bf790fc0d899ea01d90c8d2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952421"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885964"
 ---
 # <a name="inventory-visibility-tips"></a>Tips for lagersynlighet
 
@@ -34,5 +34,6 @@ Her er noen tips du bør vurdere når du definerer og bruker tillegget for lager
 - Hvis du legger til ett eller flere nye mål i Supply Chain Management-miljøet, bør du også legge dem til i Lagersynlighet. Men alle antallsendringer for nye mål må komme fra Supply Chain Management-miljøet.
 - [Partisjonskonfigurasjonen](inventory-visibility-configuration.md#partition-configuration) består for øyeblikket av to basisdimensjoner (`SiteId` og `LocationId`) som angir hvordan dataene skal distribueres. Operasjoner under samme partisjon kan levere høyere ytelse til lavere kostnad. Løsningen inkluderer denne partisjonskonfigurasjonen som standard. Derfor *trenger du ikke å omberegne manuelt*. Ikke tilpass standard partisjonskonfigurasjon. Hvis du sletter eller endrer den, vil du sannsynligvis forårsake en uventet feil.
 - Basisdimensjoner som er definert i partisjonskonfigurasjonen, bør ikke defineres i [konfigurasjonen for produktindekshierarki](inventory-visibility-configuration.md#index-configuration).
+- [Konfigurasjonen for produktindekshierarkiet](inventory-visibility-configuration.md#index-configuration) må ha minst ett indekshierarki (som for eksempel inneholder basisdimensjonen `Empty`), ellers vil spørringene mislykkes med feilen "Ingen indekshierarki er angitt".
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

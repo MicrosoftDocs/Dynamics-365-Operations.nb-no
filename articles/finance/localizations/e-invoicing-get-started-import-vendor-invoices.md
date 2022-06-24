@@ -1,6 +1,6 @@
 ---
 title: Bruk den elektroniske faktureringstjenesten til å importere leverandørfakturaer
-description: Dette emnet gir informasjon om hvordan du importerer leverandørfakturaer ved hjelp av tjenesten elektronisk fakturering.
+description: Denne artikkelen gir informasjon om hvordan du importerer leverandørfakturaer ved hjelp av tjenesten elektronisk fakturering.
 author: gionoder
 ms.date: 09/03/2021
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
+ms.openlocfilehash: 2d239bbafad9292ba6cef5534e778a2824a9cc5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "7983829"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865591"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Bruk den elektroniske faktureringstjenesten til å importere leverandørfakturaer
 
@@ -30,7 +30,7 @@ ms.locfileid: "7983829"
 
 [!include [banner](../includes/preview-banner.md)]
 
-Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med import av leverandørfakturaer med tjenesten for elektronisk fakturering. Den leder deg gjennom konfigurasjonstrinnene i RCS (Regulatory Configuration Services), Dynamics 365 Finance og Dynamics 365 Supply Chain Management du må følge for å motta elektroniske leverandørfakturaer fra leverandørene.
+Denne artikkelen inneholder informasjon som vil hjelpe deg med å komme i gang med import av leverandørfakturaer med tjenesten for elektronisk fakturering. Den leder deg gjennom konfigurasjonstrinnene i RCS (Regulatory Configuration Services), Dynamics 365 Finance og Dynamics 365 Supply Chain Management du må følge for å motta elektroniske leverandørfakturaer fra leverandørene.
 
 ## <a name="set-up-vendor-invoice-import-in-rcs"></a>Definere leverandørfakturaimport i RCS
 Følg denne fremgangsmåten for å sette opp leverandørfakturaimport i RCS:

@@ -1,6 +1,6 @@
 ---
 title: Skrive ut avgiftsinformasjon på overføringsordredokumenter
-description: Dette emnet beskriver hvordan skatteinformasjonen som bestemmes av skatteberegningstjenesten, kan skrives ut på overføringsordredokumenter.
+description: Denne artikkelen beskriver hvordan skatteinformasjonen som bestemmes av skatteberegningstjenesten, kan skrives ut på overføringsordredokumenter.
 author: Kai-Cloud
 ms.date: 10/15/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ca7a610162c539a0ecd74cf9e663f08ea80a7e44
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687478"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855209"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Skrive ut avgiftsinformasjon på overføringsordredokumenter
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du skriver ut avgiftsinformasjon på overføringsordredokumenter. Du kan skrive ut proforma-fakturadokumentet for en overføringsordre for lageroverføringer som betraktes som fellesskapsforsyning og fellesskapsanskaffelse under EU-bestemmelser om merverdiavgift. 
+Denne artikkelen forklarer hvordan du skriver ut avgiftsinformasjon på overføringsordredokumenter. Du kan skrive ut proforma-fakturadokumentet for en overføringsordre for lageroverføringer som betraktes som fellesskapsforsyning og fellesskapsanskaffelse under EU-bestemmelser om merverdiavgift. 
 
 Følgende avgiftsrelevante data legges til i overføringsordredokumentene:
 

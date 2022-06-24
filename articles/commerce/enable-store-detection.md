@@ -1,6 +1,6 @@
 ---
 title: Aktivere stedsbasert butikkregistrering
-description: Dette emnet beskriver hvordan du aktiverer stedsbasert butikkregistrering for Dynamics 365 Commerce-området.
+description: Denne artikkelen beskriver hvordan du aktiverer stedsbasert butikkregistrering for Dynamics 365 Commerce-området.
 author: brianshook
 ms.date: 07/02/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98aa781a42b1c82cc00c8a680007b7200e9c7413fb8e3a67b0c723ff62c1d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0e0fcea2f53a8e1fea5a411981a317eabe94bddb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749882"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892051"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivere stedsbasert butikkregistrering
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du aktiverer stedsbasert butikkregistrering for Dynamics 365 Commerce-området.
+Denne artikkelen beskriver hvordan du aktiverer stedsbasert butikkregistrering for Dynamics 365 Commerce-området.
 
 Med stedsbasert butikkregistrering i Commerce kan du gi relevant områdeinnhold til kunder basert på lokasjonen. Når stedsbasert butikkregistrering er aktivert, bruker Commerce-gjengivelsestjenesten lands-/områdeinformasjonen fra IP-adressen til kundens webleser til å dirigere kunden til den beste geografiske områdekonfigurasjonen som er tilgjengelig.
 

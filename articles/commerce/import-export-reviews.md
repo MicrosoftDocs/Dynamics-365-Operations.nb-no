@@ -1,6 +1,6 @@
 ---
 title: Importer og eksporter vurderinger og omtaler
-description: Dette emnet beskriver hvordan du importerer og eksporterer produktvurderinger og -omtaler i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du importerer og eksporterer produktvurderinger og -omtaler i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 3ae85f21f7a78d56621aed60527207badcee9c75
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 97407f62d462c0ae370e9ea0d2799d3f30ecacfa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863407"
 ---
 # <a name="import-and-export-ratings-and-reviews"></a>Importer og eksporter vurderinger og omtaler
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du importerer og eksporterer produktvurderinger og -omtaler i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du importerer og eksporterer produktvurderinger og -omtaler i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce tilbyr [vurderinger og omtaler](ratings-reviews-overview.md) som en omnikanalløsning. Når du bytter til Dynamics 365 Commerce-løsningen for vurderinger og omtaler, kan det hende at du vil flytte de eksisterende vurderings- og omtaledataene til Commerce-plattformen. Det kan også være at du ønsker å eksportere vurderings- og omtaledata fra Commerce, basert på forretningskravene. Med en Power Automate-kobling kan du importere vurderinger og omtaler til Commerce og eksportere dem fra Commerce.
 

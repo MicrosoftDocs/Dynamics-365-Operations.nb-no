@@ -1,6 +1,6 @@
 ---
 title: Flytte, erstatte og installere aktiva
-description: Dette emnet forklarer hvordan du flytter, erstatter og installerer aktiva i Aktivabehandling.
+description: Denne artikkelen forklarer hvordan du flytter, erstatter og installerer aktiva i Aktivabehandling.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aad94f17d6efadf7c520c021354963e7135d6d4da1426774925ce877f705e01a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1454f41bb0b43e22c5278463f63aa4178696eef
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769641"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872131"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytte, erstatte og installere aktiva
 
@@ -28,7 +28,7 @@ ms.locfileid: "6769641"
 
  
 
-Dette emnet forklarer hvordan du flytter, erstatter og installerer aktiva i Aktivabehandling. Du kan opprette individuelle aktiva som ikke har noen relasjoner til andre aktiva, eller du kan opprette en aktivastruktur som inkluderer et overordnet objekt (aktiva på øverste nivå) og relaterte underordnede aktiva (underobjekter). I Aktivabehandling er det tre tilnærminger til flytting og endre plasseringen av et aktivum:
+Denne artikkelen forklarer hvordan du flytter, erstatter og installerer aktiva i Aktivabehandling. Du kan opprette individuelle aktiva som ikke har noen relasjoner til andre aktiva, eller du kan opprette en aktivastruktur som inkluderer et overordnet objekt (aktiva på øverste nivå) og relaterte underordnede aktiva (underobjekter). I Aktivabehandling er det tre tilnærminger til flytting og endre plasseringen av et aktivum:
 
 - **Flytte** – Flytt et aktivum til en annen aktivastruktur eller et annen sted i den samme aktivastrukturen.
 - **Erstatt** – Midlertidig fjern et aktivum fra en aktivastruktur slik at den kan repareres eller pusses opp, og deretter legge til det renoverte aktivumet tilbake til aktivastrukturen senere. Du kan også erstatte et brukt aktivum permanent med et nytt aktivum.
@@ -42,7 +42,7 @@ Dette emnet forklarer hvordan du flytter, erstatter og installerer aktiva i Akti
 Bruk **Flytt aktivum**-funksjonen til å flytte et aktivum til en annen aktivastruktur eller et annet sted i den samme aktivastrukturen. Du kan også flytte et aktivum ut av en aktivastruktur slik at det blir et frittstående aktivum som ikke har noen strukturrelasjoner.
 
 > [!NOTE]
-> Ikke bruk denne funksjonen hvis aktiva repareres eller byttes ut midlertidig. Bruk i stedet funksjonen **Erstatt aktivum** som er beskrevet senere i dette emnet.
+> Ikke bruk denne funksjonen hvis aktiva repareres eller byttes ut midlertidig. Bruk i stedet funksjonen **Erstatt aktivum** som er beskrevet senere i denne artikkelen.
 
 1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**.
 2. Velg aktivumet som skal flyttes, fra listen. Hvis aktivumet har underordnede aktiva, flytter du også disse.

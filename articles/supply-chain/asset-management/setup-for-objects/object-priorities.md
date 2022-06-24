@@ -1,6 +1,6 @@
 ---
-title: Tjenestenivåer for aktiva
-description: Dette emnet beskriver tjenestenivåer for aktiva i Aktivastyring.
+title: Objektprioritet
+description: Denne artikkelen beskriver tjenestenivåer for aktiva i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4f7daa10931ce406a5d2bdbbc1dced067e3de5065cdb61cce369d617709d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1f7429b30253f540925e67ff9239667a0a404f26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723605"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908692"
 ---
-# <a name="asset-service-levels"></a>Tjenestenivåer for aktiva
+# <a name="asset-service-levels"></a>Objektprioritet
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Dette emnet beskriver tjenestenivåer for aktiva i Aktivastyring. Tjenestenivåer for aktiva er knyttet til aktiva og overføres til meldinger og arbeidsordrer. De brukes til å beregne prioriteten for arbeidsordrer under planlegging av arbeidsordrer. Servicenivåer for aktiva kan endres hvis det er nødvendig med endringer.
+Denne artikkelen beskriver tjenestenivåer for aktiva i Aktivastyring. Tjenestenivåer for aktiva er knyttet til aktiva og overføres til meldinger og arbeidsordrer. De brukes til å beregne prioriteten for arbeidsordrer under planlegging av arbeidsordrer. Servicenivåer for aktiva kan endres hvis det er nødvendig med endringer.
 
 Hvis du vil ha mer informasjon om oppsettet som er knyttet til beregning av poengsummer for arbeidsordreplanlegging, kan du se [Parametere i Aktivastyring](../setup-for-objects/enterprise-asset-management-parameters.md). Du må definere minst én standardpost for servicenivået for aktivumet. Denne standardposten brukes hvis ingen andre treff blir funnet under planleggingen av arbeidsordren.
 

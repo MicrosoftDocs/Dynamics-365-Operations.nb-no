@@ -1,6 +1,6 @@
 ---
 title: Oversikt over SEPA-avtalegiro
-description: Dette emnet inneholder informasjon om felles eurobetalingsområde (SEPA), som er opprettet av EU-kommisjonen.
+description: Denne artikkelen inneholder informasjon om felles eurobetalingsområde (SEPA), som er opprettet av EU-kommisjonen.
 author: ShivamPandey-msft
 ms.date: 08/22/2017
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad115fbc8f57f0d6b69d425b2f5180f208771409
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1d63cac6c21ec5c5340204f409648516047bb94d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726413"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909163"
 ---
 # <a name="sepa-direct-debit-overview"></a>Oversikt over SEPA-avtalegiro
 

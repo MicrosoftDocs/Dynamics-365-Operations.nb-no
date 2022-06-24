@@ -1,6 +1,6 @@
 ---
 title: Konsolidere forsendelser som frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
-description: Dette emnet viser et scenario der flere ordrer frigis til lageret i samme automatiserte fremgangsmåte for automatisk frigivelse-til-lager.
+description: Denne artikkelen viser et scenario der flere ordrer frigis til lageret i samme automatiserte fremgangsmåte for automatisk frigivelse-til-lager.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 74d4d9d8429095c3fac80db58f14ac2ef0776798
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 36eb5e788d0473e2fec2214e9aa7e245304347e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875079"
 ---
 # <a name="consolidate-shipments-released-to-the-warehouse-using-automatic-release-of-sales-orders"></a>Konsolidere forsendelser som frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser et scenario der flere ordrer frigis til lageret i samme automatiserte fremgangsmåte for automatisk frigivelse-til-lager. Ordrene blir automatisk konsolidert i forsendelser, basert på regler som er definert som policyer for forsendelseskonsolidering.
+Denne artikkelen viser et scenario der flere ordrer frigis til lageret i samme automatiserte fremgangsmåte for automatisk frigivelse-til-lager. Ordrene blir automatisk konsolidert i forsendelser, basert på regler som er definert som policyer for forsendelseskonsolidering.
 
 I løpet av  kan du opprette sett med salgsordrer og frigi hvert sett til lageret. Du vil deretter se over forsendelsene som ble opprettet eller oppdatert under forsendelseskonsolideringen, basert på de konfigurerte policyene.
 
 ## <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
- i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.
+Scenarioet i denne artikkelen refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Definer policyer for forsendelseskonsolidering og produktfiltre
 

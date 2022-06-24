@@ -1,6 +1,6 @@
 ---
 title: Oversikt over administrasjon
-description: Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
+description: Denne artikkelen gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 74569d26532dad476f2fbcf7b888eb90c48d4736
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 7c0255da0b8ebc248fd074c88082777afc9d36d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710842"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882989"
 ---
 # <a name="administration-overview"></a>Oversikt over administrasjon
 
@@ -29,7 +29,7 @@ ms.locfileid: "8710842"
 
 
 
-Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
+Denne artikkelen gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
 
 - [Systemkrav](hr-admin-system-requirements.md)
 

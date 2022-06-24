@@ -1,6 +1,6 @@
 ---
 title: Fraktcontainere
-description: Dette emnet beskriver hvordan du definerer forsendelsescontainere for modulen Netto innkjøpspris.
+description: Denne artikkelen beskriver hvordan du definerer forsendelsescontainere for modulen Netto innkjøpspris.
 author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 96710cf2b5a2e39f9492aadb0ba6f3241f0666f4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 345f815a4f85db30db18aba3f8a4d41835c2e3f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860849"
 ---
 # <a name="shipping-container-setup"></a>Oppsett av forsendelsescontainere
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du definerer forsendelsescontainere for modulen **Netto innkjøpspris**.
+Denne artikkelen beskriver hvordan du definerer forsendelsescontainere for modulen **Netto innkjøpspris**.
 
 ## <a name="set-up-shipping-container-types"></a><a id="shipping-container-types"></a>Definere typer forsendelsescontainere
 
@@ -53,7 +53,7 @@ Hvis du vil arbeide med forsendelsescontainere, går du til **Netto innkjøpspri
 | Felt | beskrivelse |
 |---|---|
 | Fraktcontainer | Angi et unikt identifikasjonsnavn/-nummer for forsendelsescontainer. |
-| Fraktcontainertype | Velg typen forsendelsescontainer. Hvis du vil ha mer informasjon, kan du se delen [Konfigurere typer forsendelsescontainer](#shipping-container-types) tidligere i dette emnet. |
+| Fraktcontainertype | Velg typen forsendelsescontainer. Hvis du vil ha mer informasjon, kan du se delen [Konfigurere typer forsendelsescontainer](#shipping-container-types) tidligere i denne artikkelen. |
 
 > [!NOTE]
 > - Oppsettet av forsendelsescontainere er valgfritt. Vanligvis bruker du det bare hvis firmaet eier sine egne forsendelsescontainere eller ofte bruker de samme forsendelsescontainerne på nytt.

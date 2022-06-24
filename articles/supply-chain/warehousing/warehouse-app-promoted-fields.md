@@ -1,6 +1,6 @@
 ---
 title: Konfigurere forfremmede felt for trinn i mobilappen Warehouse Management
-description: Dette emnet beskriver hvordan du forfremmer og uthever bestemt informasjon for trinn i oppgaveflytene for mobilappen Warehouse Management.
+description: Denne artikkelen beskriver hvordan du forfremmer og uthever bestemt informasjon for trinn i oppgaveflytene for mobilappen Warehouse Management.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920329"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857061"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurere forfremmede felt for trinn i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funksjonene som er beskrevet i dette emnet, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
+> Funksjonene som er beskrevet i denne artikkelen, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
 
-Dette emnet beskriver hvordan du forfremmer og uthever bestemt informasjon for trinn i oppgaveflytene for mobilappen Warehouse Management. Denne funksjonen kan hjelpe arbeiderne med å fokusere på de viktigste feltene når de arbeider gjennom en flyt. For hvert trinn i hver prosess kan administratorer velge hvilke felt som skal fremmes, og hvilke felt som skal utheves.
+Denne artikkelen beskriver hvordan du forfremmer og uthever bestemt informasjon for trinn i oppgaveflytene for mobilappen Warehouse Management. Denne funksjonen kan hjelpe arbeiderne med å fokusere på de viktigste feltene når de arbeider gjennom en flyt. For hvert trinn i hver prosess kan administratorer velge hvilke felt som skal fremmes, og hvilke felt som skal utheves.
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivere forfremmede felt i systemet
 
@@ -44,7 +44,7 @@ Før du kan definere forfremmede felt, må du fullføre fremgangsmåten nedenfor
     - **Modul:** *Lagerstyring*
     - **Funksjonsnavn:** *Forfremmede felter for lagerapp*
 
-    Denne funksjonen er funksjonen som er beskrevet i dette emnet.
+    Denne funksjonen er funksjonen som er beskrevet i denne artikkelen.
 
 1. Oppdater feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobile device \> Navn på lagerappfelt**, og velg **Opprett standardoppsett**. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gjenta det forrige trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management.
@@ -56,7 +56,7 @@ Bruk fremgangsmåten nedenfor for å konfigurere forfremmede felt.
 1. Opprett en menyspesifikk overstyring for den relevante menyen og trinnet som beskrevet i [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md).
 1. Finn kombinasjonen av verdier for **Trinn-ID** og **Menyelementnavn** som du ønsker å redigere, og velg deretter verdien i kolonnen **Trinn-ID**.
 1. På siden som i hurtigfanen **Valgte forfremmede felter**, velger du **Velg felt** på verktøylinjen.
-1. Velg feltene du vil fremme, i dialogboksen **Forfremmede felter**. Du kan også utheve opptil to av de valgte feltene. Uthevede felt vises med fet skrift i mobilappen Warehouse Management. Når du velger felt, må du ta i betraktning at noen skjermbilder kan være store nok til å bare vise ett eller to forfremmede felt. Hvis du vil ha et eksempel som viser hvordan du bruker disse innstillingene, kan du se scenariet senere i dette emnet.
+1. Velg feltene du vil fremme, i dialogboksen **Forfremmede felter**. Du kan også utheve opptil to av de valgte feltene. Uthevede felt vises med fet skrift i mobilappen Warehouse Management. Når du velger felt, må du ta i betraktning at noen skjermbilder kan være store nok til å bare vise ett eller to forfremmede felt. Hvis du vil ha et eksempel som viser hvordan du bruker disse innstillingene, kan du se scenariet senere i denne artikkelen.
 
     > [!NOTE]
     > Listen **Tilgjengelige felt** er begrenset til feltene som kan vises for menyelementet. Andre faktorer (for eksempel varesammensetning) bestemmer imidlertid om et felt faktisk vises i mobilappen Warehouse Management. Hvis du har konfigurert de forfremmede feltene, vises bare de valgte feltene på hovedsiden i mobilappen Warehouse Management. Arbeidere kan imidlertid fremdeles vise de gjenværende feltene ved å skrive over detaljer.

@@ -1,6 +1,6 @@
 ---
 title: Vanlige spørsmål om lageretterkalkulering
-description: Dette emnet gir noen svar på vanlige spørsmål om lageretterkalkulering i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen gir noen svar på vanlige spørsmål om lageretterkalkulering i Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
 ms.date: 05/03/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 45f65bd4a5cfb9bd0c4eb03ceb56eca452f6ec95
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850851"
 ---
 # <a name="inventory-costing-faq"></a>Vanlige spørsmål om lageretterkalkulering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir noen svar på vanlige spørsmål om lageretterkalkulering i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikkelen gir noen svar på vanlige spørsmål om lageretterkalkulering i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="inventory-close-adjustments-and-recalculation"></a>Lagerlukking, justeringer og omberegning
 
@@ -359,7 +359,7 @@ Vi anbefaler at du ofte overvåker og retter negativt lager når organisasjonen 
 
 ### <a name="do-i-have-to-create-a-new-item-if-my-inventory-has-gone-negative-and-i-use-moving-average"></a>Må jeg opprette en ny vare hvis lageret er gått negativt, og jeg bruker glidende gjennomsnitt?
 
-Nei Hvis organisasjonen tillater at lageret kan være fysisk negativt, og du bruker glidende gjennomsnitt som lagermodell, bruker systemet tilbakefallskostnadsserien som er tilordnet på siden **Parametere for beholdnings- og lagerstyring** for å bestemme hvordan kostnaden skal tilordnes avgangene. Generelt anbefaler vi at du unngår å tillate at lageret går fysisk negativt. Hvis du vil ha mer informasjon, kan du se de andre spørsmålene i delen [Negativ beholdning](#negative-inventory) i dette emnet.
+Nei Hvis organisasjonen tillater at lageret kan være fysisk negativt, og du bruker glidende gjennomsnitt som lagermodell, bruker systemet tilbakefallskostnadsserien som er tilordnet på siden **Parametere for beholdnings- og lagerstyring** for å bestemme hvordan kostnaden skal tilordnes avgangene. Generelt anbefaler vi at du unngår å tillate at lageret går fysisk negativt. Hvis du vil ha mer informasjon, kan du se de andre spørsmålene i delen [Negativ beholdning](#negative-inventory) i denne artikkelen.
 
 ## <a name="not-stocked-products"></a>Ikke lagerførte produkter
 
@@ -433,7 +433,7 @@ Når det er en prisforskjell mellom postering for en fysisk oppdagering og en ø
 
 ### <a name="when-i-use-moving-average-what-happens-if-there-is-an-issue-before-the-receipt"></a>Når jeg bruker glidende gjennomsnitt, hva skjer hvis det er en avgang før mottaket?
 
-Det kan vanligvis være en avgang før mottaket, enten fordi du tillater fysisk negativt lager for varemodellgruppen, eller fordi avgangen tilbakedateres. Hvis du vil ha mer informasjon, kan du se delen [Negativt lager](#negative-inventory) i dette emnet.
+Det kan vanligvis være en avgang før mottaket, enten fordi du tillater fysisk negativt lager for varemodellgruppen, eller fordi avgangen tilbakedateres. Hvis du vil ha mer informasjon, kan du se delen [Negativt lager](#negative-inventory) i denne artikkelen.
 
 Hvis du sikkerhetskopierer transaksjoner, anbefaler vi at du nøye vurderer forretningsprosessen og operasjonene dine for å finne ut om det er en måte å unngå dette scenariet på. Hvis du tilbakedaterer en transaksjon for en vare som bruker glidende gjennomsnitt, tilordnes det gjeldende glidende gjennomsnittet til transaksjonen. Senere avganger som ikke er justert. Hvis du vil ha mer informasjon om glidende gjennomsnitt med tilbakedaterte transaksjoner, kan du se [Glidende gjennomsnitt](moving-average.md).
 

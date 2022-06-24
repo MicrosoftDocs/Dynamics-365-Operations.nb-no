@@ -1,6 +1,6 @@
 ---
 title: Land-/områdevelgermodul
-description: Dette emnet beskriver land/områdevelgermodulen og beskriver hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver land/områdevelgermodulen og beskriver hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 04/06/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 9c20e614053b7a79cf962990dbd13ca0f45d5a00
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: d20b3be008a37b1c86e6fefe0ccc90c581e18340
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861998"
 ---
 # <a name="countryregion-picker-module"></a>Land-/områdevelgermodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver land/områdevelgermodulen og beskriver hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver land/områdevelgermodulen og beskriver hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 
 Land-/områdevelgermodulen bruker funksjonen for [registrering og omadressering av georeplikering](geo-detection-redirection.md) i Dynamics 365 Commerce for å vise anbefalte nettsteder til kunder som ber om en URL-adresse for e-handel som ikke er knyttet til landet eller regionen deres.
 

@@ -1,6 +1,6 @@
 ---
-title: Konfigurer felter for mobilappen Lagerstyring
-description: Dette emnet beskriver hvordan du definerer og konfigurerer navn på og egenskaper for felter som vises i mobilappen Lagerstyring.
+title: Konfigurere felt for mobilappen Warehouse Management
+description: Denne artikkelen beskriver hvordan du definerer og konfigurerer navn på og egenskaper for felter som vises i mobilappen Lagerstyring.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,21 +16,21 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 1ce274c997119c7fdba193fa9559832e63febddc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893243"
 ---
-# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurer felter for mobilappen Lagerstyring
+# <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>Konfigurere felt for mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du definerer og konfigurerer navn på og egenskaper for felter som vises i mobilappen Lagerstyring.
+Denne artikkelen beskriver hvordan du definerer og konfigurerer navn på og egenskaper for felter som vises i mobilappen Lagerstyring.
 
 > [!NOTE]
-> Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Mobilappen Lagerstyring er en app som du kan bruke til å utføre lageroppgaver. Du kan definere og konfigurere feltnavnene som brukes i appen, samt konfigurere prioriteten som feltnavnene skal tilordnes. Dette emnet forklarer hvordan du definerer og konfigurerer disse feltnavnene og -egenskapene i mobilappen LAgerstyring, og hvordan de brukes.
+> Denne artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Mobilappen Lagerstyring er en app som du kan bruke til å utføre lageroppgaver. Du kan definere og konfigurere feltnavnene som brukes i appen, samt konfigurere prioriteten som feltnavnene skal tilordnes. Denne artikkelen forklarer hvordan du definerer og konfigurerer disse feltnavnene og -egenskapene i mobilappen Lagerstyring, og hvordan de brukes.
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurere navn på lagerappfelt
 

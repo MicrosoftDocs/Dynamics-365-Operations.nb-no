@@ -1,6 +1,6 @@
 ---
 title: Posteringsoppsett for rabattbehandling
-description: Dette emnet beskriver hvordan du setter opp posteringsprofiler. Posteringsprofiler brukes til å bestemme posteringsoppføringer for beregningslinjer i Rabattbehandling.
+description: Denne artikkelen beskriver hvordan du setter opp posteringsprofiler. Posteringsprofiler brukes til å bestemme posteringsoppføringer for beregningslinjer i Rabattbehandling.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 5ed28e99e36fafa4e1275421159420a3f3380c7c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7a519b7153b307bf7d8cc9093572ca2711432970
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873586"
 ---
 # <a name="rebate-management-posting-setup"></a>Posteringsoppsett for rabattbehandling
 
@@ -30,7 +30,7 @@ Denne funksjonen fungerer på tvers av firmaer (juridiske enheter). Du kan angi 
 
 Hvis du vil definere posteringsprofiler for rabattstyring for kunder og leverandører, kan du gå til **Rabattbehandling \> Posteringsoppsett for rabattbehandling \> Posteringsprofiler i Rabattbehandling**. Siden **Posteringsprofiler i Rabattbehandling** inneholder en listerute som viser alle de eksisterende profilene dine. Du kan bruke knappene i handlingsruten til å legge til profiler i listen eller fjerne dem.
 
-Resten av delene i dette emnet beskriver hvordan du bruker de tilgjengelige feltene når du oppretter eller redigerer en profil.
+Resten av delene i denne artikkelen beskriver hvordan du bruker de tilgjengelige feltene når du oppretter eller redigerer en profil.
 
 ## <a name="posting-profile-header"></a>Posteringsprofilhode
 

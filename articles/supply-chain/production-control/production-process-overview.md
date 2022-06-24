@@ -1,6 +1,6 @@
 ---
 title: Oversikt over produksjonsprosess
-description: Dette emnet gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
+description: Denne artikkelen gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
 author: johanhoffmann
 ms.date: 09/13/2019
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c9eac4d3f984b6fe511d7cc5ebab67e6c24c722
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: a8ebf0418a7d8b93e2ac58f90a686c63fd859355
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852222"
 ---
 # <a name="production-process-overview"></a>Oversikt over produksjonsprosess
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
+Denne artikkelen gir en oversikt over produksjonsprosessen. Den beskriver de ulike stadiene til produksjonsordrer, partiordrer og Kanbaner, fra oppretting av ordren til lukking av regnskapsperioden.
 
 Produksjonen av produkter, en prosess som også er kjent som produksjonens livssyklus, følger bestemte fremgangsmåter som er nødvendige for å fullføre produksjonen av en vare. Livssyklusen begynner med opprettelsen av produksjonsordren, partiordren eller Kanban. Den avsluttes med en ferdig, produsert vare som er klar for kunden eller en annen fase i produksjonen. Hvert trinn i livssyklusen krever ulike typer informasjon for å fullføre prosessen. Når hvert trinn fullføres, vil produksjonsordren, partiordren eller Kanban vise en endring i produksjonsstatusen. Ulike typer produkter krever forskjellige produksjonsprosesser.
 

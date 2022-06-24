@@ -1,6 +1,6 @@
 ---
 title: Klargjøre en juridisk enhet for konsolideringsprosessen
-description: Under en konsolidering samler du transaksjoner fra flere sett med kontoer for juridisk enhet i ett sett med kontoer for juridisk enhet. Dette emnet beskriver hvordan du klargjør en juridisk enhet for konsolidering.
+description: Under en konsolidering samler du transaksjoner fra flere sett med kontoer for juridisk enhet i ett sett med kontoer for juridisk enhet. Denne artikkelen beskriver hvordan du klargjør en juridisk enhet for konsolidering.
 author: jinniew
 ms.date: 10/30/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 2a3d4645c79ec30df2bbb7a32a82a59fdb7016e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722045"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894033"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Klargjøre en juridisk enhet for konsolideringsprosessen
 
 [!include [banner](../includes/banner.md)]
 
-Under en konsolidering samler du transaksjoner fra flere sett med kontoer for juridisk enhet i ett sett med kontoer for juridisk enhet. Dette emnet beskriver hvordan du klargjør en juridisk enhet for konsolidering.
+Under en konsolidering samler du transaksjoner fra flere sett med kontoer for juridisk enhet i ett sett med kontoer for juridisk enhet. Denne artikkelen beskriver hvordan du klargjør en juridisk enhet for konsolidering.
 
 > [!NOTE]
 > Vi anbefaler at du bruker Management Reporter for Microsoft Dynamics 365 Finance til å kombinere de økonomiske resultatene for flere juridiske enheter i et konsolidert format. Management Reporter lar deg opprette konsoliderte finansrapporter på tvers av juridiske enheter, bruke Excel til å importere konsolideringsdata fra andre kilder og omsette beløp til et hvilket som helst antall rapporteringsvalutaer uten å måtte kjøre konsolideringsprosessen i Dynamics 365 Finance.

@@ -1,6 +1,6 @@
 ---
 title: Distribusjonsretningslinjer for eksempel på integrering av regnskapsregistreringstjenesten for Tsjekkia (eldre)
-description: Dette emnet inneholder retningslinjer for distribusjon av eksemplet på integrering av bilagsskriver for Tsjekkia fra Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
+description: Denne artikkelen inneholder retningslinjer for distribusjon av eksemplet på integrering av bilagsskriver for Tsjekkia fra Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: aaa894ccfd77a5522a3696e20987b9e67f3abee0
-ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.openlocfilehash: 35584493cd2a4fecd5fc86d529ec43bb4ef97671
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "8613967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881770"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-the-czech-republic-legacy"></a>Distribusjonsretningslinjer for eksempel på integrering av regnskapsregistreringstjenesten for Tsjekkia (eldre)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder retningslinjer for distribusjon av eksemplet på integrering av regnskapsregistreringstjenesten for Tsjekkia fra Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om dette eksemplet på regnskapsintegrering, kan du se [Eksempler på integrering av regnskapsregistreringstjenesten for Tsjekkia](emea-cze-fi-sample.md). 
+Denne artikkelen inneholder retningslinjer for distribusjon av eksemplet på integrering av regnskapsregistreringstjenesten for Tsjekkia fra Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om dette eksemplet på regnskapsintegrering, kan du se [Eksempler på integrering av regnskapsregistreringstjenesten for Tsjekkia](emea-cze-fi-sample.md). 
 
-Eksempelet på regnskapsintegrering for Tsjekkia er en del av Retail SDK. Hvis du vil ha informasjon om hvordan du installerer og bruker SDK, se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksemplet består av utvidelser for Commerce Runtime (CRT) og maskinvarestasjon. Hvis du vil kjøre dette eksemplet, må du endre og bygge prosjektene CRT og maskinvarestasjon. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i dette emnet. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Azure DevOps der ingen filer er endret ennå.
+Eksempelet på regnskapsintegrering for Tsjekkia er en del av Retail SDK. Hvis du vil ha informasjon om hvordan du installerer og bruker SDK, se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksemplet består av utvidelser for Commerce Runtime (CRT) og maskinvarestasjon. Hvis du vil kjøre dette eksemplet, må du endre og bygge prosjektene CRT og maskinvarestasjon. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i denne artikkelen. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Azure DevOps der ingen filer er endret ennå.
 
 ## <a name="development-environment"></a>Utviklingsmiljø
 

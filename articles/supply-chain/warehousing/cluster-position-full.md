@@ -1,6 +1,6 @@
 ---
 title: Gruppestilling full
-description: Dette emnet inneholder informasjon om funksjonen Gruppeposisjon full. Denne funksjonen gir et alternativ til mer rigid håndhevelse av arbeidsstoppregler når gruppueplukking brukes, ettersom det muliggjør en større margin med feil i de volumetriske begrensningene i beholdere eller transportkasser.
+description: Denne artikkelen inneholder informasjon om funksjonen Gruppeposisjon full. Denne funksjonen gir et alternativ til mer rigid håndhevelse av arbeidsstoppregler når gruppueplukking brukes, ettersom det muliggjør en større margin med feil i de volumetriske begrensningene i beholdere eller transportkasser.
 author: Mirzaab
 ms.date: 08/25/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 4d46933b7c60317234b8e39cd6dfd63d383de860
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102844"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857148"
 ---
 # <a name="cluster-position-full"></a>Gruppestilling full
 
@@ -30,7 +30,7 @@ Denne funksjonen gir mulighet til å kjøre knappen **Full** på en av arbeidsen
 
 ## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Gruppestilling full
 
-Du må aktivere funksjonen *Gruppestilling full* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Gruppestilling full* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Du må aktivere funksjonen *Gruppestilling full* for systemet for å kunne bruke funksjonaliteten som beskrives i denne artikkelen. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Gruppestilling full* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="setup"></a>Installasjon
 

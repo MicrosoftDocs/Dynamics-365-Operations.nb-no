@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e35a6b7da4ead8ab6f007ef8800ed8a05b1c513
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 09a808c91ece25a9a40f662e0aca2c504246fc0a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854507"
 ---
 # <a name="cost-categories-used-in-production-control-and-project-management-accounting"></a>Kostnadskategorier brukt i produksjonskontroll og i prosjektstyring og regnskap
 
@@ -31,7 +31,7 @@ Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapporte
 
 Enkelte typer produksjonsarbeid kan gjelde for prosjekttidsestimater og rapportering. I dette tilfellet kreves en kostnadskategori for produksjon og prosjekter. Det må defineres prosjektrelatert tilleggsinformasjon når en kostnadskategori brukes i produksjon og prosjekter. For eksempel så kan timekostnadene tilknyttet prosjektene, være forskjellige fra timekostnadene som er tilknyttet produksjonen. Du kan bruke siden **Kostnadskategorier** for å definere en kostnadskategori som brukes i produksjonsstyring og i prosjektstyring og regnskap. 
 
-**Obs!** Kostnadsregnskap har en **Prosjektkategorier**-side, men denne siden har ingen relasjon til funksjonene som er beskrevet i dette emnet. Når du bruker en kostnadskategori i prosjekter, har **Kostnadskategorier**-siden flere kategorier som viser prosjektrelatert tilleggsinformasjon. Denne informasjonen inkluderer kategorigruppen, en linjeegenskap og finanskontoer som er tilordnet til kostnadskategorien.
+**Obs!** Kostnadsregnskap har en **Prosjektkategorier**-side, men denne siden har ingen relasjon til funksjonene som er beskrevet i denne artikkelen. Når du bruker en kostnadskategori i prosjekter, har **Kostnadskategorier**-siden flere kategorier som viser prosjektrelatert tilleggsinformasjon. Denne informasjonen inkluderer kategorigruppen, en linjeegenskap og finanskontoer som er tilordnet til kostnadskategorien.
 
 -   Kostnadskategorien må være tilordnet en kategorigruppe som støtter en transaksjonstype av typen **Timer**.
 -   Linjeegenskapen angir standardinformasjonen om hvordan rapporterte timer kan belastes et prosjekt.

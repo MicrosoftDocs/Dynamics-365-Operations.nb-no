@@ -1,6 +1,6 @@
 ---
 title: MVA-oppgave for Norge
-description: Dette emnet forklarer hvordan du setter opp og generere MVA-oppgaven for juridiske enheter som har en primær postadresse i Norge.
+description: Denne artikkelen forklarer hvordan du setter opp og generere MVA-oppgaven for juridiske enheter som har en primær postadresse i Norge.
 author: epodkolz
 ms.author: epodkolz
 ms.date: 03/21/2022
@@ -12,21 +12,21 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a9862a5d479ddc89e91df2a90a8b2cf05fbcbe24
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: ed78134a26030dc7bed0cea8419b039d543c2ec4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550024"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896234"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp MVA-oppgaven (merverdiavgift) for juridiske enheter som har en primæradresse i Norge. Hvis du vil ha mer informasjon om generell MVA-rapportering, kan du se [MVA-rapportering for Europa](emea-vat-reporting.md).
+Denne artikkelen inneholder landsspesifikk informasjon om hvordan du setter opp MVA-oppgaven (merverdiavgift) for juridiske enheter som har en primæradresse i Norge. Hvis du vil ha mer informasjon om generell MVA-rapportering, kan du se [MVA-rapportering for Europa](emea-vat-reporting.md).
 
 > [!NOTE]
-> Som en del av moderniseringen av mva-systemer innførte skatteetaten i Norge et nytt format for mva-rapportering for perioder som starter på eller etter 1. januar 2022. Mva-oppgaver for perioder før denne datoen og rettelser i disse mva-oppgavene må rapporteres i formatet som er beskrevet i dette emnet. Hvis du vil ha mer informasjon om det nye mva-oppgaveformatet, kan du se [Mva-oppgave med direkte innsending til Altinn](emea-nor-vat-return.md).
+> Som en del av moderniseringen av mva-systemer innførte skatteetaten i Norge et nytt format for mva-rapportering for perioder som starter på eller etter 1. januar 2022. Mva-oppgaver for perioder før denne datoen og rettelser i disse mva-oppgavene må rapporteres i formatet som er beskrevet i denne artikkelen. Hvis du vil ha mer informasjon om det nye mva-oppgaveformatet, kan du se [Mva-oppgave med direkte innsending til Altinn](emea-nor-vat-return.md).
 
 ## <a name="set-up-sales-tax-authorities"></a>Definere skattemyndigheter
 Hvis du vil generere en mva-oppgave i det riktige formatet for en bestemt skattemyndighet, må du definere rapportoppsettet for skattemyndighetene.

@@ -1,6 +1,6 @@
 ---
 title: Fjernede eller avskrevne Platform-funksjoner
-description: Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
+description: Denne artikkelen beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 51165db8d15f0a57fd9bc1649dc6e3ca72875236
+ms.sourcegitcommit: 1fa1ac1fa25e977e98bc02ed5d9d39bd3a7a28d7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811253"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945811"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
+Denne artikkelen beskriver funksjoner som er fjernet eller planlagt for fjerning i plattformoppdateringer av økonomi- og driftsapper.
 
 - En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.
 - En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.
@@ -40,7 +40,7 @@ Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Vi avskriver mobilprogrammet og -plattformen for Økonomi og drift (Dynamics 365) for å konsolidere til én enkelt mobilplattform, som er Power Apps. |
-| **Erstattet med en annen funksjon?**   | Ja, du kan bygge mobilopplevelser over Økonomi og drift-appdata med Power Platform-integrering. Se [Bygge mobilopplevelser](../power-platform/build-mobile-experiences.md) hvis du vil ha mer informasjon. |
+| **Erstattet med en annen funksjon?**   | Ja, du kan bygge mobilopplevelser over Økonomi og drift-appdata med Power Platform-integrering. Se [blogginnlegg](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) og [Bygge mobilopplevelser](../power-platform/build-mobile-experiences.md) for mer informasjon. |
 | **Berørte produktområder**         | Finance and Operations-apper |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet. Sluttdatoen for støttedatoen er beregnet for oktober 2024. |

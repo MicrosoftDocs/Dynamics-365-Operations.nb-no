@@ -1,6 +1,6 @@
 ---
 title: Leverandørsamarbeid med eksterne leverandører
-description: Dette emnet forklarer hvordan innkjøpsagenter samarbeide med eksterne leverandører for å utveksle informasjon om bestillinger og forsendelseslager.
+description: Denne artikkelen forklarer hvordan innkjøpsagenter kan samarbeide med eksterne leverandører for å utveksle informasjon om bestillinger og forsendelseslager.
 author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05a2ecc82306c013912b3ee824d63d7d39c4258f
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676894"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907297"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
 [!include [banner](../includes/banner.md)]
 
-Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 Supply Chain Management. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Dette emnet forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
+Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 Supply Chain Management. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Denne artikkelen forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
 
 Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grensesnittet for leverandørsamarbeid, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> Informasjonen om leverandørsamarbeid i dette emnet gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
+> Informasjonen om leverandørsamarbeid i denne artikkelen gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
@@ -112,7 +112,7 @@ Bestillingen som ble sendt til leverandøren, og som har statusen <strong>Til ek
 <li>Erstatte en vare.</li>
 </ul>
 Leverandøren kan ikke endre prisinformasjon og tillegg. Leverandøren kan imidlertid foreslå disse endringene ved hjelp av merknader.</td>
-<td>Leverandørsvaret registreres som <strong>Godtatt med endringer</strong>, og statusen for bestillingen forblir <strong>Til ekstern vurdering</strong>. Statusene viser hvilke typer endringer som leverandøren har foreslått. For informasjon om automatisk forbruk av endringene kan du se delen &quot;Oppdatere bestillingen når en leverandør foreslår endringer&quot; senere i dette emnet. </td>
+<td>Leverandørsvaret registreres som <strong>Godtatt med endringer</strong>, og statusen for bestillingen forblir <strong>Til ekstern vurdering</strong>. Statusene viser hvilke typer endringer som leverandøren har foreslått. For informasjon om automatisk forbruk av endringene kan du se delen &quot;Oppdatere bestillingen når en leverandør foreslår endringer&quot; senere i denne artikkelen. </td>
 </tr>
 </tbody>
 </table>

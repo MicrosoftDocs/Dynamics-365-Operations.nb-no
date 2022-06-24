@@ -1,6 +1,6 @@
 ---
 title: Behandle brukere og roller for e-handel
-description: Dette emnet forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for området for Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for området for Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ff0d3e607eb905eb9264bbb9ba151fbd527a81a2c72252252f2a45edc201e1b4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ac4342e4439db229997d9d4a0ad32f3664a795b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715412"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868967"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Behandle brukere og roller for e-handel
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for området for Microsoft Dynamics 365 Commerce.
+Denne artikkelen forklarer hvordan du gir brukere tilgang til redigeringsmiljøet for området for Microsoft Dynamics 365 Commerce.
 
 For å kontrollere brukertilgang og gi brukere tillatelse til å utføre bestemte oppgaver, bruker områderedigeringsmiljøet sikkerhetsgrupper som du oppretter i Microsoft Azure Active Directory (Azure AD). Du tilordner først en ny eller eksisterende sikkerhetsgruppe fra Azure AD til hver rolle i redigeringsmiljøet. Deretter kan du gi eller oppheve tillatelser for enkeltbrukere ved å legge til disse brukerne i en passende sikkerhetsgruppe eller fjerne dem fra en sikkerhetsgruppe.
 
@@ -50,7 +50,7 @@ Når du klargjør Dynamics 365 Commerce i Microsoft Dynamics Lifecycle Services 
 
 ## <a name="administrator-role"></a>Administrator-rollen
 
-Når du oppretter et nytt område i Commerce, blir du bedt om å angi en sikkerhetsgruppe for **Administrator**-rollen. Se tabellen tidligere i dette emnet hvis du vil ha en oversikt over hvilke tillatelser denne rollen gir.
+Når du oppretter et nytt område i Commerce, blir du bedt om å angi en sikkerhetsgruppe for **Administrator**-rollen. Se tabellen tidligere i denne artikkelen hvis du vil ha en oversikt over hvilke tillatelser denne rollen gir.
 
 ## <a name="add-or-update-security-groups"></a>Legge til eller oppdatere sikkerhetsgrupper
 

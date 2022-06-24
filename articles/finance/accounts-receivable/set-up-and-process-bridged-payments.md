@@ -1,6 +1,6 @@
 ---
 title: Definer og behandle mellombetalinger
-description: Dette emnet forklarer hvordan du definerer og behandler mellombetalinger for kunder. En mellombetaling er en betaling som posteres til økonomimodulen i to trinn.
+description: Denne artikkelen forklarer hvordan du definerer og behandler mellombetalinger for kunder. En mellombetaling er en betaling som posteres til økonomimodulen i to trinn.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca93d99ce04e607b137a2755d507022a33ab1be8
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734198"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887984"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Definer og behandle mellombetalinger
 
@@ -28,7 +28,7 @@ ms.locfileid: "8734198"
 
 En mellombetaling er en betaling som posteres til økonomimodulen i to trinn. Denne fremgangsmåten brukes vanligvis når betalingsmåten er angitt til **Bank**, og du må postere transaksjoner til bankkontoen bare når transaksjonen har tømt banken. Du kan imidlertid også bruke det for en finanskonto. I dette tilfellet flytter systemet beløpet fra en hovedkonto til en annen hovedkonto når mellomposteringen behandles.
 
-Du kan opprette mellombetalinger fra enten Leverandør eller fra Kunder. Selv om dette emnet beskriver hvordan du konfigurerer mellompostering for kunder, er trinnene for leverandørtransaksjoner ganske like.
+Du kan opprette mellombetalinger fra enten Leverandør eller fra Kunder. Selv om denne artikkelen beskriver hvordan du konfigurerer mellompostering for kunder, er trinnene for leverandørtransaksjoner ganske like.
 
 ## <a name="set-up-bridging-posting"></a>Definer mellompostering
 

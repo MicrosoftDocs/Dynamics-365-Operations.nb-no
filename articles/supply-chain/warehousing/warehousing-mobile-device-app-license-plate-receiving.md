@@ -1,6 +1,6 @@
 ---
-title: Nummerskiltmottak via mobilappen Lagerstyring
-description: Dette emnet forklarer hvordan du konfigurerer mobilappen Lagerstyring for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+title: Nummerskiltmottak via mobilappen Warehouse Management
+description: Denne artikkelen forklarer hvordan du konfigurerer mobilappen Lagerstyring for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 author: perlynne
 ms.date: 04/29/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: fe083f16bd47b3f7bdfd366ae4b0fe4a02f49185
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103069"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907007"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Nummerskiltmottak via mobilappen Lagerstyring
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Nummerskiltmottak via mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer mobilappen Lagerstyring slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+Denne artikkelen forklarer hvordan du konfigurerer mobilappen Lagerstyring slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 
 Du kan bruke denne funksjonaliteten til raskt å registrere mottak av innkommende beholdning som er relatert til et forhåndsvarsel for forsendelse. Systemet oppretter automatisk et forhåndsvarsel for forsendelse når lagerstyringsprosesser brukes til å sende en overføringsordre. For bestillingsprosessen kan et forhåndsvarsel for forsendelse registreres manuelt, eller det kan importeres automatisk ved hjelp av en innkommende dataenhetsprosess for forhåndsvarsel for forsendelse.
 

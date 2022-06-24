@@ -1,6 +1,6 @@
 ---
-title: Oversikt over oppfylling av serviceavtaler
-description: Dette emnet gir en oversikt over oppgavene å oppfylle serviceavtaler.
+title: Oversikt over å oppfylle serviceavtaler
+description: Denne artikkelen gir en oversikt over oppgavene å oppfylle serviceavtaler.
 author: sorenva
 ms.date: 05/03/2018
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c0331477a815c7404faa9bde43275415c3994fd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 920ac245c94d87ac692b173012e88dc8c1352f8f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677205"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852106"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Oversikt over oppfylling av serviceavtaler
+# <a name="fulfill-service-agreements-overview"></a>Oversikt over å oppfylle serviceavtaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over oppgavene å oppfylle serviceavtaler. Dette emnet gir også oversikt over skjemaene som er knyttet til hver forretningsprosesskomponent og diskuterer oppgavene som er knyttet til hver forretningsprosesskomponent.
+Denne artikkelen gir en oversikt over oppgavene å oppfylle serviceavtaler. Denne artikkelen gir også oversikt over skjemaene som er knyttet til hver forretningsprosesskomponent og diskuterer oppgavene som er knyttet til hver forretningsprosesskomponent.
 
 ## <a name="forms-for-the-fulfill-service-contracts-business-process-components"></a>Skjemaer for forretningsprosesskomponenter for oppfylling av servicekontrakter
 

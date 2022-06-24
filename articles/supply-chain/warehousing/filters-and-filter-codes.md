@@ -1,6 +1,6 @@
 ---
 title: Konfigurere produktfiltre for lagertransaksjoner
-description: Dette emnet beskriver hvordan du konfigurerer produktfiltre og filterkoder for å kategorisere lagervarer i et lager. Du kan også bruke filtre til å angi hvilke kunder som kan bestille en bestemt vare, og hvilke varer som kan kjøpes fra en bestemt leverandør.
+description: Denne artikkelen beskriver hvordan du konfigurerer produktfiltre og filterkoder for å kategorisere lagervarer i et lager. Du kan også bruke filtre til å angi hvilke kunder som kan bestille en bestemt vare, og hvilke varer som kan kjøpes fra en bestemt leverandør.
 author: Mirzaab
 ms.date: 01/04/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 021ce940a4ea6d59719d1c6bc79532832cc2f3ff
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567685"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850445"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurere produktfiltre for lagertransaksjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer produktfiltre og filterkoder for å kategorisere lagervarer i et lager. Du kan også bruke filtre til å angi hvilke kunder som kan bestille en bestemt vare, og hvilke varer som kan kjøpes fra en bestemt leverandør.
+Denne artikkelen beskriver hvordan du konfigurerer produktfiltre og filterkoder for å kategorisere lagervarer i et lager. Du kan også bruke filtre til å angi hvilke kunder som kan bestille en bestemt vare, og hvilke varer som kan kjøpes fra en bestemt leverandør.
 
 I tillegg kan du definere og bruke produktfiltre til automatisk å organisere lagervarer på et lager og kombinere filtrerte elementer i filtergrupper. Filtre kan brukes til å plassere varer i kategorier for håndterings-, innkjøps- og salgsprosesser. Du vil kanskje gruppere varer sammen eller skille dem fra hverandre når måten de håndteres på, er basert på vekt- eller håndteringsbegrensninger. Du kan også angi hvilke kunder eller leverandører en vare kan kjøpes fra eller selges til.
 
@@ -48,7 +48,7 @@ Produktfiltre har opptil ti egenskaper for **Filtertittel**, som er opplistingsv
 
     ![Definere et produktfilter.](media/Product_Filters10.png "Definere et produktfilter")
 
-1. Skriv inn et navn for koden i feltet **Beskrivelse**. *Kode 2* kan for eksempel representere leverandører. Du kan deretter opprette et produktfilter for en bestemt leverandør eller leverandørgruppe. Hvis du vil ha mer informasjon, kan du se [Konfigurere leverandørfilterkoder](#vendor-product-filters) senere i dette emnet.
+1. Skriv inn et navn for koden i feltet **Beskrivelse**. *Kode 2* kan for eksempel representere leverandører. Du kan deretter opprette et produktfilter for en bestemt leverandør eller leverandørgruppe. Hvis du vil ha mer informasjon, kan du se [Konfigurere leverandørfilterkoder](#vendor-product-filters) senere i denne artikkelen.
 
     ![Sett med produktfiltre.](media/Product_Filters.png "Sett med produktfiltre")
 

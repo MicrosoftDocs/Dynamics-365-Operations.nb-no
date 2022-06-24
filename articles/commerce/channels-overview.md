@@ -1,6 +1,6 @@
 ---
 title: Oversikt over kanaler
-description: Dette emnet viser en oversikt over kanaler i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen viser en oversikt over kanaler i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: overview
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: cc7f00d69a6fd57efcd9b6eece56ddc0702c6935
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: af5089f0065610873360b2e2883928a43600caa9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985011"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884643"
 ---
 # <a name="channels-overview"></a>Oversikt over kanaler
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet viser en oversikt over kanaler i Microsoft Dynamics 365 Commerce. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert hver kanal.
+Denne artikkelen viser en oversikt over kanaler i Microsoft Dynamics 365 Commerce. Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert hver kanal.
 
 ## <a name="types-of-channels"></a>Typer kanaler
 

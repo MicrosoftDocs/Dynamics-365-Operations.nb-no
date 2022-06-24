@@ -1,6 +1,6 @@
 ---
-title: Sette opp recency-, frekvens- og pengeanalyse (RFM)
-description: Dette emnet forklarer hvordan du setter opp en recency-, frekvens- og pengeanalyse (RFM) av kundene dine.
+title: Definer RFM-analyse (Nyheter, Hyppighet og Økonomisk)
+description: Denne artikkelen forklarer hvordan du setter opp en recency-, frekvens- og pengeanalyse (RFM) av kundene dine.
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d058401541d37dac55d0a500835ce9c357468656e467951f789207452f798d94
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 153759ac6b70235b79c080e934819536c2861371
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765227"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850177"
 ---
-# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Sette opp recency-, frekvens- og pengeanalyse (RFM)
+# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Definer RFM-analyse (Nyheter, Hyppighet og Økonomisk)
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du setter opp en recency-, frekvens- og pengeanalyse (RFM) av kundene dine.
+Denne artikkelen forklarer hvordan du setter opp en recency-, frekvens- og pengeanalyse (RFM) av kundene dine.
 
 Recency-, frekvens- og pengeanalyse (RFM) er et markedsføringsverktøy organisasjonen kan bruke til å evaluere dataene som genereres av kundebestillinger. Når du har definert RFM-analyse, tilordnes kunder en beregnet RFM-poengsum når de gjør innkjøp. Poengsummen for tilbudsforespørselen kan være en tresifret vurdering eller et samlet tall, avhengig av hvordan organisasjonen har konfigurert analyse av tilbudsforespørsler. Slik fungerer vurderingen hvis organisasjonen bruker en tresifret vurdering for poengsummen:
 

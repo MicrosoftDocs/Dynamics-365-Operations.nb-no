@@ -1,6 +1,6 @@
 ---
 title: Oversikt over Europa
-description: Dette emnet inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 Finance for Europa.
+description: Denne artikkelen inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 Finance for Europa.
 author: kfend
 ms.date: 01/15/2022
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 9a9fd88bde02d8ea4f6eeda5e8785366ec0d8e85
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367891"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856525"
 ---
 # <a name="europe-overview"></a>Oversikt over Europa
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe deg med å sette opp juridiske enheter med en primær postadresse i Europa. 
+Denne artikkelen inneholder informasjon og koblinger til ressursene som kan hjelpe deg med å sette opp juridiske enheter med en primær postadresse i Europa. 
 
 - [Oversikt over forskuddsinnehavere](emea-advance-holders.md)
  - [Transaksjoner for innehaver av forskudd](emea-advance-holders-transactions.md)

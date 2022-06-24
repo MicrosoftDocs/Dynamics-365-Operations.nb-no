@@ -1,6 +1,6 @@
 ---
-title: Klargjøre Human Resources
-description: Dette emnet forklarer prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
+title: Klargjør Human Resources
+description: Denne artikkelen forklarer prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
@@ -14,26 +14,26 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79747d0c5c4265315d1757352dfecef09c469dd8
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710870"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858250"
 ---
-# <a name="provision-human-resources"></a>Klargjøre Human Resources
+# <a name="provision-human-resources"></a>Klargjør Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-Dette emnet forklarer prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources. 
+Denne artikkelen forklarer prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources. 
 
 ## <a name="prerequisites"></a>Forutsetninger
 
 Før du kan begynne med å klargjøre et nytt produksjonsmiljø, må følgende forutsetninger være på plass :
 
-- Du har kjøpt Human Resources via en Cloud Solution Provider (CSP) eller en enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Human Resources-serviceplanen, og du kan ikke fullføre trinnene i dette emnet, kan du kontakte kundestøtte.
+- Du har kjøpt Human Resources via en Cloud Solution Provider (CSP) eller en enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Human Resources-serviceplanen, og du kan ikke fullføre trinnene i denne artikkelen, kan du kontakte kundestøtte.
 
 - Den globale administratoren har logget seg på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og opprettet et nytt Human Resources-prosjekt. 
 

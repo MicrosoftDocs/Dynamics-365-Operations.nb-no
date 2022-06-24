@@ -1,6 +1,6 @@
 ---
 title: Konfigurere ekspressbetalinger for PayPal
-description: Dette emnet beskriver hvordan du konfigurerer ekspressbetalinger for PayPal for å oppnå raskere betalingsfunksjonalitet i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du konfigurerer ekspressbetalinger for PayPal for å oppnå raskere betalingsfunksjonalitet i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 5fff17959e7ed9299df169c68b2ed07f6b7c7d2c
-ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
+ms.openlocfilehash: b69b7384992fb86370ff6881824a7d2c9a77d2c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905288"
 ---
 # <a name="configure-express-payments-for-paypal"></a>Konfigurere ekspressbetalinger for PayPal
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer ekspressbetalinger for PayPal for å oppnå raskere betalingsfunksjonalitet i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du konfigurerer ekspressbetalinger for PayPal for å oppnå raskere betalingsfunksjonalitet i Microsoft Dynamics 365 Commerce.
 
 ## <a name="key-terms"></a>Viktige termer
 
@@ -28,7 +28,7 @@ Dette emnet beskriver hvordan du konfigurerer ekspressbetalinger for PayPal for 
 |---|---|
 | PayPal-lommebok | Kundeopplevelsen og integreringen som støttes av PayPal-koblingen. Den kan også kalles PayPal-knappen. |
 | Lommebok | En betalingstype som ikke omfatter tradisjonelle betalingsegenskaper, for eksempel BIN-området (Bank Identification Number) og utløpsdatoen, som brukes til å skille mellom kreditt- og debetkorttyper. |
-| Betalingsekspress | En Commerce-modul som støtter raskere betalingsfunksjonalitet når støttede betalingsmetoder brukes. Dette emnet dekker bruken av betalingsekspressmodulen med PayPal. |
+| Betalingsekspress | En Commerce-modul som støtter raskere betalingsfunksjonalitet når støttede betalingsmetoder brukes. Denne artikkelen dekker bruken av betalingsekspressmodulen med PayPal. |
 
 Dynamics 365 Commerce tilbyr en ut av bruksklar integrering for PayPal-lommeboken. Når Dynamics 365 Payment Connector for PayPal er konfigurert, vises PayPal-knappen som en betalingsmetode du kan velge når du skal betale for en bestilling på nettet. Når brukere velger PayPal, sendes de direkte til PayPal der de fullfører betalingen, og deretter returneres de til nettbutikken for å fullføre bestillingen. Med betaling via PayPal kan kunder bruke betalingskontoinformasjonen til å fylle ut betalingsskjemaet på forhånd, slik at de kan fullføre betalingsprosessen raskere.
 

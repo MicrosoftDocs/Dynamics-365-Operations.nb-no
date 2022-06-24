@@ -1,6 +1,6 @@
 ---
 title: ER Opprette en formatkonfigurasjon (november 2016)
-description: Dette emnet forklarer hvordan du oppretter en formatkonfigurasjon for elektronisk rapportering (ER).
+description: Denne artikkelen forklarer hvordan du oppretter en formatkonfigurasjon for elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 08/02/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5d59f0f7c914cc6d59ae441e6f6b8ff249a3e9c03c6ee4b4a75421d875f826a0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2617f33293c38b7f1aaa61fda7d8de06711c6727
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728219"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902661"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER Opprette en formatkonfigurasjon (november 2016)
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en formatkonfigurasjon for elektronisk rapportering (ER). Denne formatkonfigurasjonen definerer formatet for elektroniske dokumenter som skal brukes til behandling av betalinger. I dette eksemplet oppretter du en formatkonfigurasjon for eksempelfirmaet Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren Tilordne modell til valgte datakilder.
+Denne artikkelen beskriver hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en formatkonfigurasjon for elektronisk rapportering (ER). Denne formatkonfigurasjonen definerer formatet for elektroniske dokumenter som skal brukes til behandling av betalinger. I dette eksemplet oppretter du en formatkonfigurasjon for eksempelfirmaet Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren Tilordne modell til valgte datakilder.
 
 
 ## <a name="create-a-new-format-configuration"></a>Opprette en ny formatkonfigurasjon

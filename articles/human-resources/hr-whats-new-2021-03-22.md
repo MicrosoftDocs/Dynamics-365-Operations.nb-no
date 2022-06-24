@@ -1,6 +1,6 @@
 ---
 title: Nyheter eller enderinger i Dynamics 365 Human Resources 22. mars 2021
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. mars 2021.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. mars 2021.
 author: marcelbf
 ms.date: 03/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-03-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 13520ca55c98fb1acb6185af393550b12fbc2072
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2cfdd0fc1ca7ba206b0f447ecabd801a5a4e8c57
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693535"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859495"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-22-2021"></a>Nyheter eller enderinger i Dynamics 365 Human Resources 22. mars 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -49,9 +49,9 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdateringer for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
-| Utstedelsesnummer | Problem |  beskrivelse |
+| Utstedelsesnummer | Problem |  Beskrivelse |
 | --- | --- | --- |
 | 554239 | Ytelsesforbedringer for enheter som er relatert til tabellen **BusinessProcessTaskAssignment** | Få bedre ytelse for enheter som er relatert til tabellen **BusinessProcessTaskAssignment**, ved å legge til foreslåtte indekser i tabellen. |
 | 566061 | Fjern tilbakefallskode for V2-enheter fra nattsynkronisering | Fjern V2-tilbakefallskode for Dataverse-nattsynkronisering. Tilbakefall er ikke lenger nødvendig, og det forhindrer at filtrert synkronisering fungerer som forventet. Endringen forbedrer konsekvensen av Dataverse-datasynkronisering. |

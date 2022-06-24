@@ -1,6 +1,6 @@
 ---
 title: Kontrolliste for oppsett av elektroniske meldinger for mva-returer med direkte innsending til Altinn
-description: Dette emnet inneholder en kontrolliste for oppsett av funksjonen Elektroniske meldinger for mva-returer for Norge.
+description: Denne artikkelen inneholder en kontrolliste for oppsett av funksjonen Elektroniske meldinger for mva-returer for Norge.
 author: liza-golub
 ms.date: 12/13/2021
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: b4ddef09e1a2a925b3d534d47a87d371bdbe2e5f
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: f235a3190a1caf18d6682e1a53cdc545356bd292
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922380"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874348"
 ---
 # <a name="checklist-for-electronic-messages-setup-for-vat-returns-with-direct-submission-to-altinn"></a>Kontrolliste for oppsett av elektroniske meldinger for mva-returer med direkte innsending til Altinn
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan funksjonaliteten for [elektroniske meldinger](../general-ledger/electronic-messaging.md) er satt opp for behandling av mva-returer med direkte innsending til Altinn i Norge. Du kan bruke informasjonen i dette emnet til å finne ut om funksjonaliteten for elektroniske meldinger er riktig konfigurert.
+Denne artikkelen gir informasjon om hvordan funksjonaliteten for [elektroniske meldinger](../general-ledger/electronic-messaging.md) er satt opp for behandling av mva-returer med direkte innsending til Altinn i Norge. Du kan bruke informasjonen i denne artikkelen til å finne ut om funksjonaliteten for elektroniske meldinger er riktig konfigurert.
 
-Selv om dette emnet inneholder den viktigste informasjonen om oppsettet, innholder den ikke informasjon om alle dataene. Vi anbefaler at du bruker en pakke med dataenheter som inneholder et forhåndsdefinert oppsett av funksjonaliteten, og som omfatter alle dataene som kreves for å konfigurere behandling for samhandling med Altinn.
+Selv om denne artikkelen inneholder den viktigste informasjonen om oppsettet, innholder den ikke informasjon om alle dataene. Vi anbefaler at du bruker en pakke med dataenheter som inneholder et forhåndsdefinert oppsett av funksjonaliteten, og som omfatter alle dataene som kreves for å konfigurere behandling for samhandling med Altinn.
 
 - Gå til **Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Behandling av elektronisk melding** og se gjennom oppsettet. Følgende behandlingstype er definert for å støtte samarbeid med Altinn.
 

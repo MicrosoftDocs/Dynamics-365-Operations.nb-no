@@ -1,6 +1,6 @@
 ---
-title: Opprette en bestilling med en leveringsplan
-description: Dette emnet viser hvordan du oppretter en leveringsplan for en bestilling.
+title: Opprett en bestilling med en leveringsplan
+description: Denne artikkelen viser hvordan du oppretter en leveringsplan for en bestilling.
 author: GalynaFedorova
 ms.date: 08/01/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1475115b5c1a475f9a56f0f3eb8bb47267d2b91
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e13103f374be838a5ea0fb5e08c449b419905cab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677457"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875253"
 ---
-# <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Opprette en bestilling med en leveringsplan
+# <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Opprett en bestilling med en leveringsplan
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet viser hvordan du oppretter en leveringsplan for en bestilling. En leveringsplan brukes når et antall i en ordre eller en journal blir bedt om å bli levert i flere leveranser. Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF. Dette gjøres vanligvis av en innkjøpsagent.
+Denne artikkelen viser hvordan du oppretter en leveringsplan for en bestilling. En leveringsplan brukes når et antall i en ordre eller en journal blir bedt om å bli levert i flere leveranser. Eksemplet som vises i denne veiledningen, kan brukes i demonstrasjonsdatafirmaet USMF. Dette gjøres vanligvis av en innkjøpsagent.
 
 ## <a name="create-a-delivery-schedule"></a>Opprette en leveringsplan
 1. I navigasjonsruten går du til **Moduler > Innkjøp og leverandører > Bestillinger > Alle bestillinger**.

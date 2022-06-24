@@ -1,6 +1,6 @@
 ---
 title: Definere veksler
-description: Dette emnet beskriver fremgangsmåten for hvordan du konfigurerer veksler.
+description: Denne artikkelen beskriver fremgangsmåten for hvordan du konfigurerer veksler.
 author: ShivamPandey-msft
 ms.date: 09/17/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6a9d04500ffe5b93c7a95c5cac9b4270e208dde9
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 91821b10afe7cdbabd0a58b61219ce29d686c5c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874732"
 ---
 # <a name="set-up-bills-of-exchange"></a>Definere veksler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver fremgangsmåten for hvordan du konfigurerer veksler.
+Denne artikkelen beskriver fremgangsmåten for hvordan du konfigurerer veksler.
 
 En veksel er en skriftlig eller elektronisk ordre fra en kunde som angir at en annen part, vanligvis en bank, skal betale et angitt beløp til selskapet. Når du bruker en veksel som betaling for en salgsordrefaktura eller fritekstfaktura, krediterer du kundekontoen. Denne kreditten sikres av vekselen, til kunden betaler vekselen til banken. Vanligvis vil du utligne fakturaen med vekselen på forfallsdatoen. Når du mottar varsel fra banken om at vekselen er innløst, kan du lukke den. Du kan trekke vekselen gjennom banken på et av følgende tidspunkt:
 

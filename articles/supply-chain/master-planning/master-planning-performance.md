@@ -1,7 +1,7 @@
 ---
-title: Forbedre ytelsen til hovedplanlegging
-description: Dette emnet beskriver de ulike alternativene du kan bruke til å forbedre ytelsen til hovedplanleggingen eller feilsøke problemer.
-author: ChristianRytt
+title: Forbedre ytelsen for hovedplanlegging
+description: Denne artikkelen beskriver de ulike alternativene du kan bruke til å forbedre ytelsen til hovedplanleggingen eller feilsøke problemer.
+author: t-benebo
 ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fcbc732fce4120268acd774cc4d42193ba95787d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b2c4b7e2197d312d22f9851121a9e6d4d4d03ba3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897610"
 ---
 # <a name="improve-master-planning-performance"></a>Forbedre ytelsen for hovedplanlegging
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver de ulike alternativene du kan bruke til å forbedre ytelsen til hovedplanleggingen eller feilsøke problemer. De inneholder informasjon om parametere og innstillinger, og om anbefalte konfigurasjoner og handlinger. Det inneholder også et sammendrag av alle de viktige parameterne du bør vurdere når du har langvarige hovedplanleggingsjobber.
+Denne artikkelen beskriver de ulike alternativene du kan bruke til å forbedre ytelsen til hovedplanleggingen eller feilsøke problemer. De inneholder informasjon om parametere og innstillinger, og om anbefalte konfigurasjoner og handlinger. Det inneholder også et sammendrag av alle de viktige parameterne du bør vurdere når du har langvarige hovedplanleggingsjobber.
 
-Dette emnet er beregnet på systemansvarlige eller IT-brukere som kan feilsøke. Det er også beregnet på produksjons- eller forsyningsplanleggere, fordi det inneholder informasjon om parametere som er knyttet til krav til forretningsplanleggingskrav. 
+Denne artikkelen er beregnet på systemansvarlige eller IT-brukere som kan feilsøke. Det er også beregnet på produksjons- eller forsyningsplanleggere, fordi det inneholder informasjon om parametere som er knyttet til krav til forretningsplanleggingskrav. 
 
 ## <a name="parameters-related-to-master-planning-performance"></a>Parametere som er knyttet til hovedplanleggingsytelse
 
@@ -151,9 +151,9 @@ Før dekningstrinnet starter, er det et trinn før dekning der varer med dekning
 ## <a name="performance-checklist-summary"></a>Sammendrag av sjekkliste for ytelse
 
 - **Antall tråder** – Sett til en verdi som er større enn **0** (null).
-- **Antall oppgaver i oppgavebunt for hjelper** – Sett til en verdi som er større enn **0** (null). (Bruk formlene som ble vist tidligere i dette emnet.)
+- **Antall oppgaver i oppgavebunt for hjelper** – Sett til en verdi som er større enn **0** (null). (Bruk formlene som ble vist tidligere i denne artikkelen.)
 - **Bruk av hurtigminne** Sett til **Maksimum** med mindre systemet har lite minne.
-- **Antall ordrer i autoriseringsbunt** – Sett til en verdi som er større enn **0** (null). (Bruk formelen som ble vist tidligere i dette emnet.)
+- **Antall ordrer i autoriseringsbunt** – Sett til en verdi som er større enn **0** (null). (Bruk formelen som ble vist tidligere i denne artikkelen.)
 - **Horisonter** – Juster etter forretningsbehovene dine.
 - **Handlinger og terminer** – Deaktiver handlinger og terminer hvis du ikke bruker dem.
 - **Én krevende rutine om gangen** – Ikke kjør hovedplanlegging sammen med en annen krevende rutine.

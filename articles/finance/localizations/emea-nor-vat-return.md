@@ -1,6 +1,6 @@
 ---
 title: Mva-retur med direkte innsending til Altinn
-description: Dette emnet gir informasjon om mva-returer med direkte innsending til Altinn-funksjonen, som kan brukes til å sende mva-returer i Norge.
+description: Denne artikkelen gir informasjon om mva-returer med direkte innsending til Altinn-funksjonen, som kan brukes til å sende mva-returer i Norge.
 author: liza-golub
 ms.author: elgolu
 ms.date: 03/21/2022
@@ -11,18 +11,18 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: 2022-11-15
-ms.openlocfilehash: 103e17e382933c31935f5d60d08ef8976c87b24c
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: ef82e20980a8885975256fe365e4b1f9b3bc69cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8549992"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879500"
 ---
 # <a name="vat-return-with-direct-submission-to-altinn"></a>Mva-retur med direkte innsending til Altinn
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om funksjonen for **mva-retur med direkte innsending til Altinn** i Microsoft Dynamics 365 Finance. Denne funksjonen kan brukes til å sende inn mva-returer i Norge.
+Denne artikkelen gir informasjon om funksjonen for **mva-retur med direkte innsending til Altinn** i Microsoft Dynamics 365 Finance. Denne funksjonen kan brukes til å sende inn mva-returer i Norge.
 
 I Skatteinfo nr. 11/2020 innførte Skattemyndighetene et krav til mva-returrapportering som omfatter direkte digital innsending fra regnskapssystemer til Altinn-skatteportalen. Denne digitale innsendingsprosessen erstatter den manuelle prosessen for innsending av mva-returer for periodene 1. januar 2022. Hvis du vil ha mer informasjon om mva-returer med direkte innsending til Altinn, kan du se [Mva-meldingen](https://skatteetaten.github.io/mva-meldingen/english/).
 

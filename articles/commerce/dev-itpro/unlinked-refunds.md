@@ -1,6 +1,6 @@
 ---
 title: Behandle ikke-sammenkoblede refunderinger med Dynamics 365 Commerce Payment Connector for Adyen
-description: Dette emnet beskriver hvordan refunderinger som ikke er sammenkoblet, fungerer når Microsoft Dynamics 365 Payment Connector for Adyen brukes.
+description: Denne artikkelen beskriver hvordan refunderinger som ikke er sammenkoblet, fungerer når Microsoft Dynamics 365 Payment Connector for Adyen brukes.
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c137dcf7d35031a293c88d8c4f5dc1e5f3d9e2f9
-ms.sourcegitcommit: a21a664cd35b95c8600c5af0aac588a64e892902
+ms.openlocfilehash: 634b30de7adbfb0c316fe14456581ea8eb89d070
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885203"
 ---
 # <a name="process-unlinked-refunds-with-the-dynamics-365-commerce-payment-connector-for-adyen"></a>Behandle ikke-sammenkoblede refunderinger med Dynamics 365 Commerce Payment Connector for Adyen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan refunderinger som ikke er sammenkoblet, fungerer når [Microsoft Dynamics 365 Payment Connector for Adyen](adyen-connector.md) brukes. Det gjennomgår også muligheten til å behandle en refusjon mot en ny betalingsmetode i salgsstedet eller telefonsenteret.
+Denne artikkelen beskriver hvordan refunderinger som ikke er sammenkoblet, fungerer når [Microsoft Dynamics 365 Payment Connector for Adyen](adyen-connector.md) brukes. Det gjennomgår også muligheten til å behandle en refusjon mot en ny betalingsmetode i salgsstedet eller telefonsenteret.
 
 Dynamics 365 Payment Connector for Adyen støtter muligheten til å behandle refunderinger ved hjelp av en annen betalingsmetode enn den som ble brukt for den opprinnelige transaksjonen. Selv om vi anbefaler at du bruker [sammenkoblede refusjoner](linked-refunds.md) til å behandle en refusjon mot den opprinnelige betalingsmetoden som ble angitt, kreves refusjoner til en annen metode i enkelte scenarioer. Kortet som ble brukt for den opprinnelige betalingen, kan for eksempel være utløpt eller mistet, eller det kan ha blitt sperret av brukeren.
 

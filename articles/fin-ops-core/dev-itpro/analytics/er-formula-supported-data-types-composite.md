@@ -1,6 +1,6 @@
 ---
 title: Støttede sammensatte datatyper for formler i elektronisk rapportering
-description: Dette emnet inneholder informasjon om de sammensatte datatypene som støttes i formler i elektronisk rapportering (ER).
+description: Denne artikkelen inneholder informasjon om de sammensatte datatypene som støttes i formler i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 06/02/2021
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dc3fbe695d79eb0ec9796d471c4d2bb0bb7ab99d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689249"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869322"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Støttede sammensatte datatyper for formler i elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om de sammensatte datatypene som støttes i uttrykk i [Elektronisk rapportering (ER)](general-electronic-reporting.md). De sammensatte datatypene er [klasse](#class), [beholder](#container), [post](#record), [postliste](#record-list) og [objekt](#object).
+Denne artikkelen inneholder informasjon om de sammensatte datatypene som støttes i uttrykk i [Elektronisk rapportering (ER)](general-electronic-reporting.md). De sammensatte datatypene er [klasse](#class), [beholder](#container), [post](#record), [postliste](#record-list) og [objekt](#object).
 
 ## <a name="class"></a><a name="class"></a>Klasse
 

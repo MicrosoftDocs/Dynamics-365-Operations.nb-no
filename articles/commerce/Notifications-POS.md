@@ -1,6 +1,6 @@
 ---
 title: Vise ordrevarslinger på salgsstedet (POS)
-description: Dette emnet beskriver hvordan du aktiverer ordrevarslinger på salgsstedet og varselrammeverket.
+description: Denne artikkelen beskriver hvordan du aktiverer ordrevarslinger på salgsstedet og varselrammeverket.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e646d6bf48461e78dc75c8a154f2fbf1443393
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714144"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853986"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vise ordrevarslinger på salgsstedet (POS)
 
@@ -65,10 +65,10 @@ For både varslinger av typen ordreoppfyllelse og tilbakekalling av ordre endres
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Aktiver aktivt innhold på salgsstedsknapper
 
-Salgsstedsknappene kan nå vise et tall som kan hjelpe arbeiderne med å finne ut hvilke oppgaver som krever umiddelbar oppmerksomhet. Hvis du vil vise dette tallet på en salgsstedsknapp, må du fullføre oppsettet for meldinger som er beskrevet tidligere i dette emnet (det vil si du må aktivere meldinger for en operasjon, definere et intervall for varsling og oppdatere gruppen for salgsstedstillatelse for arbeideren). I tillegg du må åpne rutenettet for knappen, se på egenskapene til knappen, og merke av for **Aktiver aktivt innhold**. I feltet **Innholdjustering** kan du velge om tellingen vises i øvre høyre hjørne av knappen (**Øverst til høyre**) eller i midten (**Midtstill**).
+Salgsstedsknappene kan nå vise et tall som kan hjelpe arbeiderne med å finne ut hvilke oppgaver som krever umiddelbar oppmerksomhet. Hvis du vil vise dette tallet på en salgsstedsknapp, må du fullføre oppsettet for meldinger som er beskrevet tidligere i denne artikkelen (det vil si du må aktivere meldinger for en operasjon, definere et intervall for varsling og oppdatere gruppen for salgsstedstillatelse for arbeideren). I tillegg du må åpne rutenettet for knappen, se på egenskapene til knappen, og merke av for **Aktiver aktivt innhold**. I feltet **Innholdjustering** kan du velge om tellingen vises i øvre høyre hjørne av knappen (**Øverst til høyre**) eller i midten (**Midtstill**).
 
 > [!NOTE]
-> Det aktive innholdet kan bare aktiveres for operasjoner hvis avmerkingsboksen **Aktiver varslinger** er valgt for på siden **Salgsstedoperasjoner**, som beskrevet tidligere i dette emnet.
+> Det aktive innholdet kan bare aktiveres for operasjoner hvis avmerkingsboksen **Aktiver varslinger** er valgt for på siden **Salgsstedoperasjoner**, som beskrevet tidligere i denne artikkelen.
 
 Illustrasjonen nedenfor viser innstillingene for aktivt innhold i rutenettet for knappen.
 

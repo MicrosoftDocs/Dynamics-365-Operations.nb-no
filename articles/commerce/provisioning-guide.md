@@ -1,6 +1,6 @@
 ---
 title: Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du klargjør et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen forklarer hvordan du klargjør et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 12/17/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52a263d1ab833eb688b1049cd4e8c584e8c9a94d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777506"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868915"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du klargjør et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+Denne artikkelen forklarer hvordan du klargjør et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 
-Før du begynner, anbefaler vi at du tar en rask titt på dette emnet for å få en pekepinn på hva prosessen krever.
+Før du begynner, anbefaler vi at du tar en rask titt på denne artikkelen for å få en pekepinn på hva prosessen krever.
 
 > [!NOTE]
 > Commerce-evalueringsmiljøer er ikke generelt tilgjengelige, og gis til partnere og kunder på et per forespørsel-grunnlag. Hvis du vil ha mer informasjon, ta kontakt med din Microsoft-partnerkontakten din.
 
-For å kunne klargjøre et Commerce-evalueringsmiljø må du opprette et prosjekt som har et bestemt produktnavn og type. Miljøet og Commerce Scale Unit (CSU) har også bestemte parametere du må bruke når du forventer å klargjøre e-handel senere. Instruksjonene i dette emnet beskriver alle nødvendige trinn som må fullføres for å klargjøre, og parameterne du må bruke.
+For å kunne klargjøre et Commerce-evalueringsmiljø må du opprette et prosjekt som har et bestemt produktnavn og type. Miljøet og Commerce Scale Unit (CSU) har også bestemte parametere du må bruke når du forventer å klargjøre e-handel senere. Instruksjonene i denne artikkelen beskriver alle nødvendige trinn som må fullføres for å klargjøre, og parameterne du må bruke.
 
 Når klargjøringen av Commerce-evalueringsmiljøet er fullført, er det noen få trinn du må ta i etterkant for å klargjøre det for bruk. Noen trinn er valgfrie, avhengig av hvilke aspekter av systemet du vil evaluere. Du kan alltid fullføre de valgfrie trinnene senere.
 

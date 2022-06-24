@@ -1,6 +1,6 @@
 ---
 title: Lagerbeholdningsliste
-description: Dette emnet beskriver hvordan du bruker siden Beholdningsliste til å kontrollere lagerbeholdningsdetaljer. Den viser noen av måtene de ulike filtrerings- og sorteringsalternativene fungerer sammen, og hvordan disse alternativene kan føre til uventede resultater når de kombineres.
+description: Denne artikkelen beskriver hvordan du bruker siden Beholdningsliste til å kontrollere lagerbeholdningsdetaljer. Den viser noen av måtene de ulike filtrerings- og sorteringsalternativene fungerer sammen, og hvordan disse alternativene kan føre til uventede resultater når de kombineres.
 author: yufeihuang
 ms.date: 07/07/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 9464240123ec2248e1b66f32dd3c9a2f974512b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5747ae985e1791de8ddd93b678c2449a4a1802da
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879055"
 ---
 # <a name="inventory-on-hand-list"></a>Lagerbeholdningsliste
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker siden **Beholdningsliste** til å kontrollere lagerbeholdningsdetaljer. Den viser noen av måtene de ulike filtrerings- og sorteringsalternativene fungerer sammen, og hvordan disse alternativene kan føre til uventede resultater når de kombineres.
+Denne artikkelen beskriver hvordan du bruker siden **Beholdningsliste** til å kontrollere lagerbeholdningsdetaljer. Den viser noen av måtene de ulike filtrerings- og sorteringsalternativene fungerer sammen, og hvordan disse alternativene kan føre til uventede resultater når de kombineres.
 
 ## <a name="query-your-on-hand-inventory"></a>Spørre lagerbeholdningen
 
@@ -35,9 +35,9 @@ Siden **Beholdningsliste** oppdateres automatisk når det gjøres transaksjoner 
 Bruk følgende verktøy til å finne produktsettet du søker etter:
 
 - I handlingsruten velger du [**Dimensjoner**](#dimensions) for å åpne en dialogboks der du kan legge til eller fjerne kolonner som vises i rutenettet **Beholdning**.
-- I [**Filtre**-ruten](#filters-pane) angir du verdier for bestemte felt for å vise bare poster som samsvarer med disse verdiene. Legg merke til at filtre som du definerer her, gjelder for kildetabeller som kan aggregeres senere, i henhold til dimensjonene du har valgt å vise. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i dette emnet.
+- I [**Filtre**-ruten](#filters-pane) angir du verdier for bestemte felt for å vise bare poster som samsvarer med disse verdiene. Legg merke til at filtre som du definerer her, gjelder for kildetabeller som kan aggregeres senere, i henhold til dimensjonene du har valgt å vise. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i denne artikkelen.
 - I **Filtre**-ruten velger du **Bruk** for å generere listen over samsvarende lagerbeholdning i rutenettet **Beholdning**.
-- I rutenettet **Beholdning** velger du en kolonneoverskrift for å sortere eller filtrere etter verdier i denne kolonnen. Et hurtigfilter øverst i rutenettet inneholder flere filtreringsalternativer. Disse filtrene gjelder for resultatene, ikke for kildetabellene. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i dette emnet.
+- I rutenettet **Beholdning** velger du en kolonneoverskrift for å sortere eller filtrere etter verdier i denne kolonnen. Et hurtigfilter øverst i rutenettet inneholder flere filtreringsalternativer. Disse filtrene gjelder for resultatene, ikke for kildetabellene. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i denne artikkelen.
 
 For hver samsvarende vare inneholder **Beholdning**-rutenettet følgende kolonner med lagerinformasjon:
 
@@ -64,7 +64,7 @@ Bruk **Filtre**-ruten til å filtrere lagerbeholdningslisten slik at den bare in
 > [!IMPORTANT]
 > Siden **Beholdningsliste** er satt sammen fra en detaljert lagerbeholdningstabell som inkluderer alle tilgjengelige dimensjoner. Listen på denne siden er imidlertid et sammendrag. Derfor kan den kombinere rader fra kildetabellen ved å samle verdier i henhold til dimensjonene som vises.
 >
-> Filtrene du definerer i **Filtre**-ruten, gjelder for kildetabellen, ikke for den aggregerte listen. Denne virkemåten kan noen ganger gi uventede resultater. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i dette emnet.
+> Filtrene du definerer i **Filtre**-ruten, gjelder for kildetabellen, ikke for den aggregerte listen. Denne virkemåten kan noen ganger gi uventede resultater. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i denne artikkelen.
 > 
 > [Filtrene som oppgis i rutenettet](#grid-filters), *gjelder* imidlertid for den aggregerte listen. Disse filtrene inkluderer både hurtigfilteret øverst i rutenettet og filteret for hver kolonneoverskrift.
 
@@ -75,7 +75,7 @@ Du kan endre filtersettet som er tilgjengelig i **Filtre**-ruten, ved å følge 
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Velg hvilke dimensjoner som skal vises
 
-Dimensjoner forteller deg mer om hver vare i lagerbeholdningslisten, og gir deg flere måter å sortere og filtrere listen på. Dimensjonene du velger å vise, påvirker også hvordan rader samles på siden **Beholdningsliste**. Denne aggregeringen kan i sin tur påvirke hvordan rader fra kildetabellene kombineres i resultatene du ser. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i dette emnet.
+Dimensjoner forteller deg mer om hver vare i lagerbeholdningslisten, og gir deg flere måter å sortere og filtrere listen på. Dimensjonene du velger å vise, påvirker også hvordan rader samles på siden **Beholdningsliste**. Denne aggregeringen kan i sin tur påvirke hvordan rader fra kildetabellene kombineres i resultatene du ser. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i denne artikkelen.
 
 Hvis du vil tilpasse valget av lagerdimensjonene som vises, følger du disse trinnene.
 
@@ -89,7 +89,7 @@ Hvis du vil tilpasse valget av lagerdimensjonene som vises, følger du disse tri
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtrere på utdataene til lagerbeholdningslisten
 
-Du kan velge enhver kolonneoverskrift i rutenettet **Beholdning** for å sortere eller filtrere etter verdier i denne kolonnen. Et hurtigfilter øverst i rutenettet inneholder flere filtreringsalternativer. Disse filtrene gjelder for resultatene, ikke for kildetabellene. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i dette emnet.
+Du kan velge enhver kolonneoverskrift i rutenettet **Beholdning** for å sortere eller filtrere etter verdier i denne kolonnen. Et hurtigfilter øverst i rutenettet inneholder flere filtreringsalternativer. Disse filtrene gjelder for resultatene, ikke for kildetabellene. Hvis du vil ha informasjon om hvordan denne virkemåten kan påvirke resultatene, se [eksemplene](#examples) senere i denne artikkelen.
 
 > [!NOTE]
 > Du kan ikke filtrere og sortere etter alle kolonner. De fleste av antallskolonnene inkluderer ikke sorterings- og filtreringskontroller, fordi de er beregnede felt. Kolonnen **I bestilling** er et unntak.

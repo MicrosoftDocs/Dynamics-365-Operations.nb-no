@@ -1,6 +1,6 @@
 ---
 title: Interaktiv funksjonsmodul
-description: Dette emnet dekker interaktive funksjonsmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker interaktive funksjonsmoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3ab325189812289390740e31fd673ee9892f9759
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: deee7c35cfc4293480fda74665429121b71bbfab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780745"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898525"
 ---
 # <a name="interactive-feature-module"></a>Interaktiv funksjonsmodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker interaktive funksjonsmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker interaktive funksjonsmoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 
 Interaktive funksjonsmoduler er mønskelignende moduler som kan brukes til å markedsføre flere produktkategorier eller produktmerker ved hjelp av en kombinasjon av bilder og tekst. En forhandler kan for eksempel legge til en interaktiv funksjonsmodul på hjemmesiden til et e-handelsområde for å fremme toppsalgskategoriene. Den interaktive funksjonsmodulen ligner på flislistemodulen, men den har et annet oppsett og forskjellig samhandlingsfunksjonalitet.
 

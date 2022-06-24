@@ -1,6 +1,6 @@
 ---
 title: Finansdimensjoner og postering
-description: Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal. Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner. Dette emnet beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.
+description: Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal. Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner. Denne artikkelen beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a612f3b703349e1cffe300b75afd44e72ae63b2c
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a165c4084a9f2075a54c99a7e4913a4e3c3dfe55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722806"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910120"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finansdimensjoner og postering 
 
 [!include [banner](../includes/banner.md)]
 
-Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal. Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner. Dette emnet beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.
+Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal. Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner. Denne artikkelen beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.
 
 ## <a name="chart-of-accounts-and-financial-dimension-components"></a>Kontoplaner og finansdimensjonskomponenter
 
@@ -46,7 +46,7 @@ Du kan også definere en saldofinansdimensjonen. På **Finans**-siden kan du def
 
 ### <a name="defaultfixed-financial-dimensions-on-the-main-account"></a>Standard/faste finansdimensjoner for hovedkontoen
 
-Standarddimensjoner kommer fra ulike steder, for eksempel hovedposter (kunde- eller leverandørposter), dokumenthoder og hovedkontoen. Dette emnet beskriver standarddimensjoner på hovedkontoen etter juridisk enhet. Du kan definere om en hovedkonto har en **Ikke fast** eller **Fast** verdi for hver finansdimensjon som brukes på tvers av alle kontostrukturer for finans. Hvis en finansdimensjon er **Ikke fast**, brukes en standardverdi, men denne verdien kan overskrives. Dette gjelder for alle standardverdier i systemet, også standardverdier som kommer fra hovedposter. Hvis en finansdimensjon er satt til en **Fast** verdi, brukes alltid denne verdien, uansett om den kom fra et sted som en standardverdi eller brukeren registrerte den.
+Standarddimensjoner kommer fra ulike steder, for eksempel hovedposter (kunde- eller leverandørposter), dokumenthoder og hovedkontoen. Denne artikkelen beskriver standarddimensjoner på hovedkontoen etter juridisk enhet. Du kan definere om en hovedkonto har en **Ikke fast** eller **Fast** verdi for hver finansdimensjon som brukes på tvers av alle kontostrukturer for finans. Hvis en finansdimensjon er **Ikke fast**, brukes en standardverdi, men denne verdien kan overskrives. Dette gjelder for alle standardverdier i systemet, også standardverdier som kommer fra hovedposter. Hvis en finansdimensjon er satt til en **Fast** verdi, brukes alltid denne verdien, uansett om den kom fra et sted som en standardverdi eller brukeren registrerte den.
 
 ## <a name="order-in-which-default-dimensions-are-applied-during-posting"></a>Rekkefølgen som dimensjoner brukes i ved postering
 

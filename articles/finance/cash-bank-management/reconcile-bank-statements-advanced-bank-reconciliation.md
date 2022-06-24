@@ -1,6 +1,6 @@
 ---
 title: Avstemme bankkontoutdrag med avansert bankavstemming
-description: Funksjonen Avansert bankavstemming lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 Finance. Dette emnet beskriver avstemmingsprosessen.
+description: Funksjonen Avansert bankavstemming lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Microsoft Dynamics 365 Finance. Denne artikkelen beskriver avstemmingsprosessen.
 author: moaamer
 ms.date: 06/22/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27956cbc4d51c1b907138b49947b57a570d98da1
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 6e5b229821fc1ca1caa55b733af293aaef65a171
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727573"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859887"
 ---
-# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag med avansert bankavstemming
+# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstem bankkontoutdrag ved hjelp av avansert bankavstemming
 
 [!include [banner](../includes/banner.md)]
 
-Funksjonen Avansert bankavstemming lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Dynamics 365 Finance. Dette emnet beskriver avstemmingsprosessen.  
+Funksjonen Avansert bankavstemming lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Dynamics 365 Finance. Denne artikkelen beskriver avstemmingsprosessen.  
 
 ## <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
 

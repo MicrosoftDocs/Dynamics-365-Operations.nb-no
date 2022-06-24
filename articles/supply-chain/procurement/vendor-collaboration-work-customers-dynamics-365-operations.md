@@ -1,6 +1,6 @@
 ---
 title: Leverandørsamarbeid med kunder
-description: Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med bestillinger og overvåke forsendelseslager.
+description: Denne artikkelen beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med bestillinger og overvåke forsendelseslager.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5690630d4dde947798c925af66c73122c2efad3d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4e5748f2368376ee03f280f1487d1de65250d3a4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673781"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859176"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverandørsamarbeid med kunder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverandører kan utføre en rekke forretningsprosesser fra følgende arbeidsområder:
+Denne artikkelen beskriver hvordan du kan bruke leverandørsamarbeid for å arbeide med kunder i Microsoft Dynamics 365 Supply Chain Management. Leverandører kan utføre en rekke forretningsprosesser fra følgende arbeidsområder:
 
 - **Bestillingsbekreftelse** – overvåke og svare på bestillinger (POs).
 - **Leverandørbud** – vise tilbudsforespørsler (RFQ-er), og svare på dem ved å legge inn bud.
 - **Leverandørinformasjon** – vise og oppdatere hoveddata for leverandør.
-- **Fakturering** – arbeide med fakturaer. Dette emnet dekker ikke arbeidsområdet **Fakturering**. Hvis du vil ha mer informasjon om dette arbeidsområdet, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturering** – arbeide med fakturaer. Denne artikkelen dekker ikke arbeidsområdet **Fakturering**. Hvis du vil ha mer informasjon om dette arbeidsområdet, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Leverandører kan også overvåke informasjon om forsendelseslager.
 
@@ -47,9 +47,9 @@ Det er tre lister i arbeidsområdet **Bestillingsbekreftelsen**:
 
 Du kan bruke følgende sider til å arbeide med bestillinger:
 
-- **Bestillinger for vurdering** – Denne siden inneholder samme informasjon som listen **Bestillinger for vurdering** i arbeidsområdet. Se beskrivelsen tidligere i dette emnet.
+- **Bestillinger for vurdering** – Denne siden inneholder samme informasjon som listen **Bestillinger for vurdering** i arbeidsområdet. Se beskrivelsen tidligere i denne artikkelen.
 - **Logg for leverandørbekreftelse for bestilling** – Denne siden inneholder alle bestillinger og alle versjoner av bestillinger som er sendt til leverandøren. Den inneholder også alle svarene som er returnert fra leverandøren.
-- **Åpne bekreftede bestillinger** – Denne siden inneholder samme informasjon som listen **Åpne bekreftede bestillinger** i arbeidsområdet. Se beskrivelsen tidligere i dette emnet.
+- **Åpne bekreftede bestillinger** – Denne siden inneholder samme informasjon som listen **Åpne bekreftede bestillinger** i arbeidsområdet. Se beskrivelsen tidligere i denne artikkelen.
 - **Alle bekreftede bestillinger** – Denne siden inneholder alle bestillinger som er bekreftet. Bestillingene som vises på denne siden, omfatter bestillinger der produkter eller tjenester er mottatt. Du kan bruke denne listen til å overvåke bestillinger som du kan sende fakturaer for.
 
 ### <a name="responding-to-pos"></a>Svare på bestillinger

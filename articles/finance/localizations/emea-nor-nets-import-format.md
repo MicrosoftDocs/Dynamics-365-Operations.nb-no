@@ -1,6 +1,6 @@
 ---
 title: Nets-importformat
-description: Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
+description: Denne artikkelen gir informasjon om å importere betalingsinformasjon i Nets-format.
 author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Norway
 ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b97931cb1a16a37f0673c38b5b071f87a06d622
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: e24be7533d06a6635e217800d7ac154417c87bc8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592616"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868287"
 ---
 # <a name="nets-import-format"></a>Nets-importformat
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om å importere betalingsinformasjon i Nets-format.
+Denne artikkelen gir informasjon om å importere betalingsinformasjon i Nets-format.
 
 Du kan importere registreringsmeldinger, AvtaleGiro og eFaktura, sammen med betalingsmeldinger, optisk tegngjenkjenning (OCR), AvtaleGiro og eFakturae, i Nets-filformatet.
 

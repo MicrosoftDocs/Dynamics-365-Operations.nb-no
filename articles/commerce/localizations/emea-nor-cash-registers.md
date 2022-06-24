@@ -1,6 +1,6 @@
 ---
 title: Kassefunksjoner for Norge
-description: Dette emnet gir en oversikt over hvilke kassefunksjoner som er tilgjengelige for Norge i Microsoft Dynamics 365 Commerce. og gir retningslinjer for konfigurering av funksjonaliteten.
+description: Denne artikkelen gir en oversikt over hvilke kassefunksjoner som er tilgjengelige for Norge i Microsoft Dynamics 365 Commerce, og gir retningslinjer for konfigurering av funksjonaliteten.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: 778a947f03866518219e9c0fa44660d66f19f53a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906705"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge i Dynamics 365 Commerce. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen. Funksjonaliteten består av følgende deler:
+Denne artikkelen gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge i Dynamics 365 Commerce. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen. Funksjonaliteten består av følgende deler:
 
 - Vanlige POS-funksjoner som er tilgjengelige for kunder i alle land eller områder. Eksempler inkluderer et alternativ som lar deg forhindre at en kopi av en kvittering skrives ut mer enn én gang.
 - Spesifikke funksjoner for Norge, for eksempel digitale signaturer for salgstransaksjoner.

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere leveringsmåter og tillegg for telefonsenter
-description: Dette emnet beskriver hvordan du setter opp leveringsmåter og levering og tillegg for en telefonsenterordre i Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du setter opp leveringsmåter og levering og tillegg for en telefonsenterordre i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bd763082969079de2d68e12483ec25871c332e4067f122c6a845d3acd477af62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f445e9dabd0210951609170369eae63bcc30ce6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888304"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere leveringsmåter og tillegg for telefonsenter
 
@@ -35,7 +35,7 @@ Commerce har funksjoner som lar brukere begrense leveringsmodiene som kan brukes
 
 Før du angir hvilke leveringsmåter som kan brukes for telefonsenterordrer, og definere tilknyttede regler og tillegg, må du definere leveringsmåtene. Gå til **Salg og markedsføring \> Oppsett \> Distribusjon \> Leveringsmåter**. Velg **Ny** for å opprette en ny leveringsmåte. Du kan også velge en eksisterende leveringsmåte i listen og deretter velge **Rediger** for å gjøre endringer.
 
-I **Leveringsmåte**-feltet kan du angi en hvilken som helst kombinasjon av alfanumeriske tegn basert på dine forretningsbehov. Du kan deretter bruke **Beskrivelse**-feltet for å gi ekstra kontekst. **Tilleggsgruppe**- og **Ekspeder**-feltene er valgfrie og forklares mer detaljert senere i dette emnet.
+I **Leveringsmåte**-feltet kan du angi en hvilken som helst kombinasjon av alfanumeriske tegn basert på dine forretningsbehov. Du kan deretter bruke **Beskrivelse**-feltet for å gi ekstra kontekst. **Tilleggsgruppe**- og **Ekspeder**-feltene er valgfrie og forklares mer detaljert senere i denne artikkelen.
 
 I **Commerce-kanaler**-hurtigkategorien legger du til en kanal som skal tillates å bruke leveringsmåten når salgstransaksjoner opprettes i denne kanalen.
 

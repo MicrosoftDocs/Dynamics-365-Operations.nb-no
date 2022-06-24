@@ -1,6 +1,6 @@
 ---
 title: Avinstaller løsninger for appverksettingspakke med dobbel skriving
-description: Dette emnet beskriver hvordan du avinstallerer løsninger for appiverksetting med dobbel skriving.
+description: Denne artikkelen beskriver hvordan du avinstallerer løsninger for appiverksetting med dobbel skriving.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-21
-ms.openlocfilehash: 781b2cb19a563d5712fa65718c93bfdc242f0c4a
-ms.sourcegitcommit: abfaef124c8747827d6f297821f01f1f6fbca6b7
+ms.openlocfilehash: 676802ddabac69db4947cf806e9103f67cece3de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8870381"
 ---
 # <a name="uninstall-dual-write-application-orchestration-solutions"></a>Avinstaller løsninger for appverksettingspakke med dobbel skriving
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du avinstallerer løsninger for appiverksetting med dobbel skriving.
+Denne artikkelen beskriver hvordan du avinstallerer løsninger for appiverksetting med dobbel skriving.
 
 Enkelte kunder installerer utilsiktet appiverksettingspakken med dobbel skriving, som installerer flere løsninger i Microsoft Dataverse-miljøet. Installasjon av overflødige løsninger i pakken kan forårsake uventede og uønskede problemer.
 

@@ -1,6 +1,6 @@
 ---
-title: Feilsøke problemer med direkte synkronisering
-description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med direkte synkronisering.
+title: Feilsøk problemer med direkte synkronisering
+description: Denne artikkelen inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med direkte synkronisering.
 author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
@@ -9,23 +9,23 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062369"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896712"
 ---
-# <a name="troubleshoot-live-synchronization-issues"></a>Feilsøke problemer med direkte synkronisering
+# <a name="troubleshoot-live-synchronization-issues"></a>Feilsøk problemer med direkte synkronisering
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dette emnet inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Microsoft Dataverse. Det inneholder særlig informasjon som kan hjelpe deg med å løse problemer med direkte synkronisering.
+Denne artikkelen inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Microsoft Dataverse. Det inneholder særlig informasjon som kan hjelpe deg med å løse problemer med direkte synkronisering.
 
 > [!IMPORTANT]
-> Noen av problemene som dette emnet løser, kan kreve administratorrollen for systemet eller legitimasjon for Azure Active Directory (Azure AD)-leieradministrator. Hver del forklarer om en bestemt rolle eller legitimasjon er nødvendig.
+> Noen av problemene som denne artikkelen løser, kan kreve administratorrollen for systemet eller legitimasjon for Azure Active Directory (Azure AD)-leieradministrator. Hver del forklarer om en bestemt rolle eller legitimasjon er nødvendig.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Direkte synkronisering viser en feil når du oppretter en rad
 

@@ -1,6 +1,6 @@
 ---
 title: Oversikt over administrasjon av forretningsdokument
-description: Dette emnet gir informasjon om hvordan du bruker funksjonen for administrasjon av forretningsdokument i ER-rammeverket.
+description: Denne artikkelen gir informasjon om hvordan du bruker funksjonen for administrasjon av forretningsdokument i ER-rammeverket.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: faea9d4d9b3fc8f3f1474b6bb2a8dc31cdc22511
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9147a2e81329d5bf9103b6bfe067d166c1471835
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986257"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903624"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -50,7 +50,7 @@ Du finner en fullstendig liste over alle rapportene som er planlagt for oktober 
 
 Flere rapporter blir tilgjengelige i fremtidige versjoner. Spesielle varslinger om flere rapporter blir sendt separat. Hvis du vil vite hvordan du går gjennom listen over tilgjengelige rapporter, kan du se delen [Liste over ER-konfigurasjoner som er utgitt i Finance for å støtte konfigurerbare forretningsdokumenter](#list-of-configurations-cbd) nedenfor.
 
-Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emnet.
+Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i denne artikkelen.
 
 ## <a name="configure-er-parameters"></a>Konfigurere ER-parametere
 
@@ -231,7 +231,7 @@ Forretningsbrukere kan få tilgang til maler for forretningsdokumenter for redig
 - Brukere som er tilordnet til rollen **Systemansvarlig**.
 - Brukere som er tilordnet til en rolle som er konfigurert til å utføre plikten **Administrer forretningsdokumentmaler** (AOT-navn **ERBDManageTemplates**).
 
-Bruk fremgangsmåten nedenfor til å redigere maler for fritekstfaktura i arbeidsområdet for administrasjon av forretningsdokument. Før du fullfører denne fremgangsmåten, må du ha fullført alle fremgangsmåtene ovenfor i dette emnet.
+Bruk fremgangsmåten nedenfor til å redigere maler for fritekstfaktura i arbeidsområdet for administrasjon av forretningsdokument. Før du fullfører denne fremgangsmåten, må du ha fullført alle fremgangsmåtene ovenfor i denne artikkelen.
 
 1. Logg på som en bruker med tilgang til siden Arbeidsområdet for administrasjon av forretningsdokument.
 2. Åpne arbeidsområdet for administrasjon av forretningsdokument.

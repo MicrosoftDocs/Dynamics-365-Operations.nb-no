@@ -1,6 +1,6 @@
 ---
 title: Arbeidssteder og aktiva
-description: Dette emnet beskriver arbeidssteder og aktiva i Aktivastyring. Aktivastyring er en avansert modul for håndtering av aktiva og vedlikeholdsjobber i Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver arbeidssteder og aktiva i Aktivastyring. Aktivastyring er en avansert modul for håndtering av aktiva og vedlikeholdsjobber i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0bf90d99a8bd093817f9e804e8075e779428f1fadb3128c5a455ca839dece55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 274e80136ee303af9d0fe5fd04095f575a345d19
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875662"
 ---
 # <a name="functional-locations-and-assets"></a>Arbeidssteder og aktiva
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750154"
 
  
 
-Dette emnet beskriver arbeidssteder og aktiva i Aktivastyring. Aktivastyring er en avansert modul for håndtering av aktiva og vedlikeholdsjobber i Dynamics 365 Supply Chain Management.
+Denne artikkelen beskriver arbeidssteder og aktiva i Aktivastyring. Aktivastyring er en avansert modul for håndtering av aktiva og vedlikeholdsjobber i Dynamics 365 Supply Chain Management.
 
 ## <a name="overview"></a>Oversikt
 

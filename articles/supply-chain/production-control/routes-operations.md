@@ -1,6 +1,6 @@
 ---
 title: Ruter og operasjoner
-description: Dette emnet gir informasjon om ruter og operasjoner.
+description: Denne artikkelen gir informasjon om ruter og operasjoner.
 author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.openlocfilehash: 103c7007cd002c5953d096ff6001a93c4936b702
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891959"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856026"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om ruter og operasjoner. En rute definerer prosessen med å produsere et produkt eller en produktvariant. Den beskriver hvert trinn (operasjon) i produksjonsprosessen, og rekkefølgen disse trinnene må utføres i. For hvert trinn definerer ruten også nødvendige operasjonsressurser, nødvendig oppstillingstid og operasjonstid, og hvordan kostnader skal beregnes.
+Denne artikkelen gir informasjon om ruter og operasjoner. En rute definerer prosessen med å produsere et produkt eller en produktvariant. Den beskriver hvert trinn (operasjon) i produksjonsprosessen, og rekkefølgen disse trinnene må utføres i. For hvert trinn definerer ruten også nødvendige operasjonsressurser, nødvendig oppstillingstid og operasjonstid, og hvordan kostnader skal beregnes.
 
 ## <a name="overview"></a>Oversikt
 

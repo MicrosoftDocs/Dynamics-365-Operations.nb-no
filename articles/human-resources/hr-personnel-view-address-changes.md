@@ -1,6 +1,6 @@
 ---
-title: Vise og behandle adresseendringer
-description: Dette emnet forklarer hvordan du kan vise og behandle adresseendringer i Dynamics 365 Human Resources.
+title: Vis og administrer adresseendringer
+description: Denne artikkelen forklarer hvordan du kan vise og behandle adresseendringer i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 744ab532fcc663f25ce376817779924bbef15432
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695851"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899592"
 ---
-# <a name="view-and-manage-address-changes"></a>Vise og behandle adresseendringer
+# <a name="view-and-manage-address-changes"></a>Vis og administrer adresseendringer
 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emnet finner du informasjon om hvordan du kan vise og behandle adresseendringer på siden **Rediger personopplysninger** (som du åpner fra arbeidsområdet **Ansattselvbetjening**) eller **Arbeider**-detaljsiden i Dynamics 365 Human Resources.
+I denne artikkelen finner du informasjon om hvordan du kan vise og behandle adresseendringer på siden **Rediger personopplysninger** (som du åpner fra arbeidsområdet **Ansattselvbetjening**) eller **Arbeider**-detaljsiden i Dynamics 365 Human Resources.
 
 Mange organisasjoner vil at de ansatte skal administrere sine egne personopplysninger via selvbetjening. Du kan tillate at brukere oppdaterer adresser i arbeidsområdet **Ansattselvbetjening**. Deretter kan du overvåke disse endringene i arbeidsområdet **Personaladministrasjon**. Hvis du vil bruke denne funksjonen, må du angi hvor mange dager du vil vise endringene, på siden **Personalparametere**.
 

@@ -1,6 +1,6 @@
 ---
 title: Opprette aktiva basert på bestillinger
-description: Dette emnet forklarer hvordan du kan opprette en liste over aktiva som kan brukes som grunnlag for oppretting av aktiva for vedlikeholdsjobber i Aktivastyring.
+description: Denne artikkelen forklarer hvordan du kan opprette en liste over aktiva som kan brukes som grunnlag for oppretting av aktiva for vedlikeholdsjobber i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8bee66e2d35af6daa8d86539e52b558bde3c79a1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754113"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893707"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Opprette aktiva basert på bestillinger
 
@@ -28,7 +28,7 @@ ms.locfileid: "6754113"
 
  
 
-Dette emnet forklarer hvordan du kan opprette en liste over aktiva som kan brukes som grunnlag for oppretting av aktiva for vedlikeholdsjobber i Aktivastyring. Du kan vise en liste over bestillingslinjene som er opprettet på disse varene, basert på aktivavarene. Formålet med denne funksjonaliteten er å enkelt opprette et aktivum i Aktivastyring basert på en bestilling.
+Denne artikkelen forklarer hvordan du kan opprette en liste over aktiva som kan brukes som grunnlag for oppretting av aktiva for vedlikeholdsjobber i Aktivastyring. Du kan vise en liste over bestillingslinjene som er opprettet på disse varene, basert på aktivavarene. Formålet med denne funksjonaliteten er å enkelt opprette et aktivum i Aktivastyring basert på en bestilling.
 
 Først definerer du varene som skal brukes til å opprette aktiva fra en bestilling, i **Aktivavarer**. Når du har opprettet en bestillingslinje, oppretter du aktivaene i **Ventende aktiva**. Det er mulig å bestemme på hvilket stadium av bestillingen aktivumet skal opprettes.
 

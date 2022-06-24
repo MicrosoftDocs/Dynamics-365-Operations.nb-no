@@ -1,6 +1,6 @@
 ---
 title: Konsernintern planlegging
-description: Dette emnet beskriver konsernintern planlegging og forklarer hvordan du konfigurerer konsernintern planlegging med planleggingsoptimalisering i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver konsernintern planlegging og forklarer hvordan du konfigurerer konsernintern planlegging med planleggingsoptimalisering i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: de9f9679bfaf9491c6b69c11448306627c8a42f9
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c13ecca9523707ef3df5fdb97dc4cbd79478258d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468503"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850677"
 ---
 # <a name="intercompany-planning"></a>Konsernintern planlegging
 
@@ -29,9 +29,9 @@ ms.locfileid: "8468503"
 
 For noen organisasjoner er logistikkoperasjoner avhengige av andre juridiske enheter (firmaer) i organisasjonen. Disse operasjonene håndteres ved hjelp av konserninterne salg og innkjøp, fordi hver juridiske enhet har en egen kontoplan.
 
-Dette emnet beskriver konsernintern planlegging og forklarer hvordan du konfigurerer konsernintern planlegging med planleggingsoptimalisering i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikkelen beskriver konsernintern planlegging og forklarer hvordan du konfigurerer konsernintern planlegging med planleggingsoptimalisering i Microsoft Dynamics 365 Supply Chain Management.
 
-Dette emnet bruker følgende viktige, konserninterne vilkår:
+Denne artikkelen bruker følgende viktige, konserninterne vilkår:
 
 - **Oppstrøms** – En relativ referanse i en autorisasjons- eller forsyningskjede. Den viser bevegelse i retningen til råvareleverandøren.
 - **Nedstrøms** – En relativ referanse i en autorisasjons- eller forsyningskjede. Den viser bevegelse i retningen til kunden.

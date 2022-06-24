@@ -1,6 +1,6 @@
 ---
 title: Distribusjonsretningslinjer for eksempel på bilagsskriverintegrering for Sverige (eldre)
-description: Dette emnet inneholder retningslinjer for distribusjon av eksemplet på integrering av bilagsskriver for Polen fra Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
+description: Denne artikkelen inneholder retningslinjer for distribusjon av eksemplet på integrering av bilagsskriver for Polen fra Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK).
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 45cae498df8157b9561c54e9859daadcaedd7823
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 3de7559838a8d8caf64993a468f06ba2d50fff46
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851163"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-poland-legacy"></a>Distribusjonsretningslinjer for eksempel på bilagsskriverintegrering for Sverige (eldre)
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet inneholder retningslinjer for distribusjon av eksemplet på bilagsskriverintegrering for Polen Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om dette eksemplet på regnskapsintegrering, kan du se [Eksempler på bilagsskriverintegrering for Polen](emea-pol-fpi-sample.md). 
+Denne artikkelen inneholder retningslinjer for distribusjon av eksemplet på bilagsskriverintegrering for Polen Microsoft Dynamics 365 Commerce Retail Software Development Kit (SDK) på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om dette eksemplet på regnskapsintegrering, kan du se [Eksempler på bilagsskriverintegrering for Polen](emea-pol-fpi-sample.md). 
 
-Eksempelet på regnskapsintegrering for Polen er en del av Retail SDK. Hvis du vil ha informasjon om hvordan du installerer og bruker SDK, se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksemplet består av utvidelser for Commerce Runtime (CRT) og maskinvarestasjon. Hvis du vil kjøre dette eksemplet, må du endre og bygge prosjektene CRT og maskinvarestasjon. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i dette emnet. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Azure DevOps der ingen filer er endret ennå.
+Eksempelet på regnskapsintegrering for Polen er en del av Retail SDK. Hvis du vil ha informasjon om hvordan du installerer og bruker SDK, se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md). Dette eksemplet består av utvidelser for Commerce Runtime (CRT) og maskinvarestasjon. Hvis du vil kjøre dette eksemplet, må du endre og bygge prosjektene CRT og maskinvarestasjon. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i denne artikkelen. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Azure DevOps der ingen filer er endret ennå.
 
 ## <a name="development-environment"></a>Utviklingsmiljø
 

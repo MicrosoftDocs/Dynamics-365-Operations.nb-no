@@ -1,6 +1,6 @@
 ---
-title: Opprette en lokasjonsprofil
-description: Dette emnet forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 Supply Chain Management.
+title: Opprett en lokasjonsprofil
+description: Denne artikkelen forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 Supply Chain Management.
 author: Mirzaab
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74141cdad6841a602c7fb061e897646fae072a73
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 98537f3ad45d66e348ecd489c60d95ef875e5c07
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580006"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875050"
 ---
-# <a name="create-a-location-profile"></a>Opprette en lokasjonsprofil
+# <a name="create-a-location-profile"></a>Opprett en lokasjonsprofil
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 Supply Chain Management. Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer. I denne fremgangsmåten skal vi opprette en profil for en lokasjon som ikke krever nummerskiltkontroll. Vi skal aktivere kombinerte varer og kombinerte lagerstatuser, og tillate syklustelling. Du kan bruke prosedyren i USMF-demodatafirmaet.
+Denne artikkelen forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 Supply Chain Management. Hver lokasjon på lageret må ha en tilknyttet lokasjonsprofil som beskriver egenskapene til lokasjonen, for eksempel om den tillater kombinerte varer. I denne fremgangsmåten skal vi opprette en profil for en lokasjon som ikke krever nummerskiltkontroll. Vi skal aktivere kombinerte varer og kombinerte lagerstatuser, og tillate syklustelling. Du kan bruke prosedyren i USMF-demodatafirmaet.
 
 
 1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Lager > Lokasjonsprofiler**.

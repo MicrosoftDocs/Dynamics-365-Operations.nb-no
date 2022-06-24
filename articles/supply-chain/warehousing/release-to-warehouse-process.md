@@ -1,6 +1,6 @@
 ---
 title: Frigi til lager
-description: Dette emnet inneholder detaljer om frigivelse til lagerprosessen. Den beskriver enheter som opprettes når du frigir en ordre til lageret, og alternativer du kan bruke til å starte prosessen.
+description: Denne artikkelen inneholder detaljer om frigivelse til lagerprosessen. Den beskriver enheter som opprettes når du frigir en ordre til lageret, og alternativer du kan bruke til å starte prosessen.
 author: Mirzaab
 ms.date: 8/13/2021
 ms.topic: article
@@ -11,22 +11,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8624db42e9d0f3d08ed3b582224ed7937d52f85d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893185"
 ---
 # <a name="release-to-warehouse"></a>Frigi til lager
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet inneholder detaljer om frigivelse til lagerprosessen. Den beskriver enheter som opprettes når du frigir en ordre til lageret, og alternativer du kan bruke til å starte prosessen.
+Denne artikkelen inneholder detaljer om frigivelse til lagerprosessen. Den beskriver enheter som opprettes når du frigir en ordre til lageret, og alternativer du kan bruke til å starte prosessen.
 
 ## <a name="release-to-warehouse-overview"></a>Oversikt over Frigi til lager
 
-Frigivelse til lager er prosessen med å gjøre lageret klart til fordelingsbehandling. Når du frigir en ordre til lageret, oppretter systemet belastningslinjer og forsendelser. Hvis automatisk bølgebehandling er konfigurert, blir det også opprettet belastning og nødvendig arbeid. Konfigurasjonen til enhetene som er involvert, avhenger av systeminnstillingene. Denne delen av emnet ser gjennom enhetene som er opprettet i løpet av frigivelsen til lagerprosessen, og systeminnstillingene som definerer dem.
+Frigivelse til lager er prosessen med å gjøre lageret klart til fordelingsbehandling. Når du frigir en ordre til lageret, oppretter systemet belastningslinjer og forsendelser. Hvis automatisk bølgebehandling er konfigurert, blir det også opprettet belastning og nødvendig arbeid. Konfigurasjonen til enhetene som er involvert, avhenger av systeminnstillingene. Denne delen av artikkelen ser gjennom enhetene som er opprettet i løpet av frigivelsen til lagerprosessen, og systeminnstillingene som definerer dem.
 
 En *forsendelse* er en gruppe av salgsordre- eller overføringsordrelinjer for den samme kunden eller den samme leveringsadressen.
 
@@ -67,7 +67,7 @@ Når en ordre frigis til lageret, fungerer den mest automatiserte flyten på fø
 
 Noen trinn i denne flyten kan bli manuelle, avhengig av innstillinger for bølgemaler, arbeidsmaler og lokasjonsdirektiver. Den helhetlige flyten forblir imidlertid den samme.
 
-Du har flere alternativer for hvordan du frigir en ordre til lageret. Du kan utføre operasjonen manuelt, eller du kan definere en satsvis jobb. Resten av dette emnet gjennomgår detaljert de forskjellige måtene du kan utføre en frigivelse til lageroperasjon på.
+Du har flere alternativer for hvordan du frigir en ordre til lageret. Du kan utføre operasjonen manuelt, eller du kan definere en satsvis jobb. Resten av denne artikkelen gjennomgår detaljert de forskjellige måtene du kan utføre en frigivelse til lageroperasjon på.
 
 ## <a name="manual-release-to-the-warehouse-from-the-sales-orders-and-transfer-orders-pages"></a>Manuell frigivelse til lageret fra sidene Salgsordrer og Overføringsordrer
 

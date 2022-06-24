@@ -1,6 +1,6 @@
 ---
-title: Aktivamål
-description: Emnet forklarer hvordan du oppretter aktivamåltyper i Aktivastyring.
+title: Aktivummål
+description: Artikkelen forklarer hvordan du oppretter aktivamåltyper i Aktivastyring.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc515615afaa172e1832508d79e202b166f134a9171a0a35ea4f372f9d19b7e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1bcef89265697c1898b7d61a0b0ae6331ce1c851
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723581"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909679"
 ---
 # <a name="counters"></a>Tellere
 
 [!include [banner](../../includes/banner.md)]
 
-Emnet forklarer hvordan du oppretter tellertyper i Aktivastyring. Tellertyper brukes til å foreta tellerregistreringer på aktiva, for eksempel når det gjelder antall produksjonstimer eller antall som produseres på aktivumet. Aktivatyper er knyttet til tellertypene. Dette betyr at en teller bare kan brukes på et aktivum hvis telleren er definert på aktivatypen som brukes på aktivumet.
+Artikkelen forklarer hvordan du oppretter tellertyper i Aktivastyring. Tellertyper brukes til å foreta tellerregistreringer på aktiva, for eksempel når det gjelder antall produksjonstimer eller antall som produseres på aktivumet. Aktivatyper er knyttet til tellertypene. Dette betyr at en teller bare kan brukes på et aktivum hvis telleren er definert på aktivatypen som brukes på aktivumet.
 
 Før du kan foreta tellerregistreringer for aktiva, må du først opprette tellertypene du vil bruke, i **Tellere**. Deretter kan du opprette tellerregistreringer for aktiva i **Tellere**. 
 

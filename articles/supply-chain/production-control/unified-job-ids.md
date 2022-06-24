@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-03-05
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 8ff8fae0bb20b11b15c7520fbb14727ff0372ca0255adc82599c6680a64671af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 301a4bb58f896a2dc0f0cddcd2e29344865ca898
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897552"
 ---
 # <a name="unified-number-sequence-for-job-ids"></a>Enhetlig nummerserie for jobb-ID-er
 
@@ -25,7 +25,7 @@ Denne funksjonen gir en enkelt, felles nummerserie som genererer jobb-ID-er for 
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funksjonen for systemet
 
-Hvis systemet ikke allerede inneholder funksjonen som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Enhetlig nummerserie for jobb-ID-er*.
+Hvis systemet ikke allerede inneholder funksjonen som er beskrevet i denne artikkelen, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Enhetlig nummerserie for jobb-ID-er*.
 
 ## <a name="set-up-the-unified-number-sequence-for-job-ids"></a>Konfigurer den enhetlige nummerserien for jobb-ID-er
 

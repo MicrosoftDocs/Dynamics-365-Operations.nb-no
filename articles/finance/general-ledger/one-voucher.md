@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: fa7a519b87bd5933b8b672f9f9b3e230fd7f2eb4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896412"
 ---
 # <a name="one-voucher"></a>Ett bilag
 
@@ -37,7 +37,7 @@ Med den eksisterende funksjonaliteten for finansjournaler (generell journal, anl
     [![Enkeltlinje.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > Definisjonen av Ett bilag dekker **ikke** tilfeller der journalnavnene er angitt som **Bare ett bilagsnummer**, men brukeren angir deretter et bilag som bare inkluderer finanskontotyper. I dette emnet betyr Ett bilag at det er ett enkelt bilag som inneholder mer enn én leverandør, kunde, bank, aktiva eller prosjekt.
+    > Definisjonen av Ett bilag dekker **ikke** tilfeller der journalnavnene er angitt som **Bare ett bilagsnummer**, men brukeren angir deretter et bilag som bare inkluderer finanskontotyper. I denne artikkelen betyr Ett bilag at det er ett enkelt bilag som inneholder mer enn én leverandør, kunde, bank, aktiva eller prosjekt.
 
 - Angi et bilag med flere linjer der det ikke er noen motkonto.
 
@@ -63,16 +63,16 @@ Deretter genererer du rapporten **Utgifter etter leverandør** i arbeidsområdet
 
 På grunn av problemer som kan oppstå når Ett bilag brukes, vil denne funksjonaliteten til slutt bli avskrevet. Men fordi det er funksjonshull som avhenger av denne funksjonaliteten, vil ikke avskrivingen skje med én gang. I stedet bruker vi følgende tidsplan:
 
-- **Versjonen våren 2018** – Denne funksjonen ble deaktivert som standard via parameteren **Tillat flere transaksjoner i ett bilag** i kategorien **Generelt** på siden **Parametere for økonomimodul**. Du kan imidlertid aktivere den igjen hvis organisasjonen har et scenario som faller inn under et av funksjonshullene som er oppført tidligere i dette emnet.
+- **Versjonen våren 2018** – Denne funksjonen ble deaktivert som standard via parameteren **Tillat flere transaksjoner i ett bilag** i kategorien **Generelt** på siden **Parametere for økonomimodul**. Du kan imidlertid aktivere den igjen hvis organisasjonen har et scenario som faller inn under et av funksjonshullene som er oppført tidligere i denne artikkelen.
 
-    - Hvis forretningsscenariet ikke krever Ett bilag, anbefaler vi at du lar funksjonaliteten være avslått. Hvis du bruker den selv om en annen løsninge eksisterer, kommer ikke Microsoft ikke å reparere "feil" på områder som er identifisert senere i dette emnet.
+    - Hvis forretningsscenariet ikke krever Ett bilag, anbefaler vi at du lar funksjonaliteten være avslått. Hvis du bruker den selv om en annen løsninge eksisterer, kommer ikke Microsoft ikke å reparere "feil" på områder som er identifisert senere i denne artikkelen.
     - Vi anbefaler at du slutter å bruke Ett bilag for integreringer, med mindre funksjonen kreves for et av de dokumenterte funksjonshullene.
 
 - **Senere versjoner** – Flere forretningsbehov kan oppfylles ved hjelp av Ett bilag. Microsoft må sikre at alle de identifiserte forretningskravene fremdeles kan oppfylles i systemet etter at funksjonaliteten er avskrevet. Derfor må nye funksjoner sannsynligvis legges til for å fylle funksjonshullene. Microsoft kan ikke oppgi en bestemt løsning, fordi hver funksjonsforskjell er forskjellig og må evalueres basert på forretningskravene. Noen funksjonshull vil sannsynligvis bli erstattet med funksjoner som hjelper til med å oppfylle bestemte forretningskrav. Andre hull kan imidlertid fylles ved å fortsette å tillate registrering i en journal, som når Ett bilag brukes, men systemet kan etterhvert spore flere detaljer etter behov.
 
 Når alle funksjonshullene er fylt, vil Microsoft kommunisere at funksjonen vil bli avskrevet. Avskrivningen vil imidlertid ikke være gyldig i minst ett år etter den gjeldende kommunikasjonen. Selv om Microsoft ikke kan gi et estimat for når Ett bilag-funksjonaliteten vil bli avskrevet, vil det sannsynligvis være minst to år før avskrivelsen finner sted. Microsofts policy er å la det være minst 12 måneder mellom kunngjøringen av avskrivningsfunksjonaliteten og den faktiske avskrivningen, slik at kunder og uavhengige programvareleverandører har tid til å reagere på endringen. En organisasjon må for eksempel kanskje oppdatere sine forretningsprosesser, enheter og integreringer.
 
-Avskrivningen av Ett bilag er en betydelig endring som vil bli omfattende meddelt. Som et ledd i denne meddelelsen vil Microsoft oppdatere dette emnet, postere et blogginnlegg på Microsoft Dynamics 365 Finance-bloggen, oppdatere emnet «Funksjoner som er fjernet eller avskrevet», kommunisere endringen på aktuelle Microsoft-konferanser og så videre.
+Avskrivningen av Ett bilag er en betydelig endring som vil bli omfattende meddelt. Som et ledd i denne meddelelsen vil Microsoft oppdatere denne artikkelen, postere et blogginnlegg på Microsoft Dynamics 365 Finance-bloggen, oppdatere artikkelen «Funksjoner som er fjernet eller avskrevet», kommunisere endringen på aktuelle Microsoft-konferanser og så videre.
 
 ## <a name="why-use-one-voucher"></a>Hvorfor bruke Ett bilag?
 

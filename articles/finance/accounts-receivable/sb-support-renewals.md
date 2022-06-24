@@ -1,6 +1,6 @@
 ---
 title: Støtte og fornyelser
-description: Dette emnet beskriver hvordan du konfigurerer og bruker støtte- og fornyelsesprosessen på salgsordrer til å opprette en faktureringsplan for fornyelse av varer.
+description: Denne artikkelen beskriver hvordan du konfigurerer og bruker støtte- og fornyelsesprosessen på salgsordrer til å opprette en faktureringsplan for fornyelse av varer.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 7de74f2b12e8e7201663ba78d936131b301b1ff9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: b40e0136883d909755480a3ce101627297bd9ffb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8685777"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896528"
 ---
 # <a name="support-and-renewals"></a>Støtte og fornyelser 
 
-Dette emnet beskriver hvordan du angir støttevarer eller fornyelsesvarer når du registrerer salgsordrer. Disse varene brukes til å beregne tilleggsbeløpet for den opprinnelige støttekontrakten og/eller fornyelsesbeløpet som brukes når det opprettes en faktureringsplan i abonnementsfakturering. Firmaet ditt selger for eksempel en server til en kunde, og du tilbyr et sikkerhetskopiabonnement for data det første året, og alternativet for å fornye abonnementet hvert år. *Støttevaren* er abonnementet for det første året, og *fornyelsesvaren* er fornyelsen for hvert etterfølgende år.
+Denne artikkelen beskriver hvordan du angir støttevarer eller fornyelsesvarer når du registrerer salgsordrer. Disse varene brukes til å beregne tilleggsbeløpet for den opprinnelige støttekontrakten og/eller fornyelsesbeløpet som brukes når det opprettes en faktureringsplan i abonnementsfakturering. Firmaet ditt selger for eksempel en server til en kunde, og du tilbyr et sikkerhetskopiabonnement for data det første året, og alternativet for å fornye abonnementet hvert år. *Støttevaren* er abonnementet for det første året, og *fornyelsesvaren* er fornyelsen for hvert etterfølgende år.
 
 Du kan angi informasjon for støttekontrakten, fornyelseskontrakten eller begge deler. Når du angir støttekontraktinformasjon, blir bare støttevaren lagt til i salgsordren. Når du angir informasjon om fornyelse av kontrakt, brukes fornyelsesvaren til å opprette en faktureringsplan.
 

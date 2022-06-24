@@ -1,6 +1,6 @@
 ---
-title: Laste opp bilder
-description: Dette emnet beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
+title: Last opp bilder
+description: Denne artikkelen beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
-ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.openlocfilehash: e0f5cdd0381932cffc64f1c7e83eecd4662d8c9f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891528"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892840"
 ---
-# <a name="upload-images"></a>Laste opp bilder
+# <a name="upload-images"></a>Last opp bilder
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
 
 Med mediebiblioteket for Commerce-områdebygger kan du laste opp bilder, enten enkeltvis eller flere samtidig ved hjelp av mapper. Du bør alltid laste opp den versjonen av bildet med høyest oppløsning og kvalitet, fordi bildeskaleringskomponenten automatisk vil optimalisere bildet for forskjellige visningsporter og deres stoppunkter.
 

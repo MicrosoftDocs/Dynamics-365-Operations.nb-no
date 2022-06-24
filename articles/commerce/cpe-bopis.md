@@ -1,6 +1,6 @@
 ---
-title: Konfigurere BOPIS i et Dynamics 365 Commerce-evalueringsmiljø
-description: Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at det er klargjort.
+title: Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
+description: Denne artikkelen forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at det er klargjort.
 author: BrianShook
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,30 +14,30 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861972"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at miljøet er klargjort.
+Denne artikkelen forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at miljøet er klargjort.
 
 ## <a name="prerequisite"></a>Forutsetning
 
-Fullfør prosedyrene i dette emnet bare etter at evalueringsmiljøet i Commerce er klargjort og konfigurert. Hvis du vil ha informasjon om hvordan du klargjør og konfigurerer miljøet, kan du se [Klargjøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](./cpe-post-provisioning.md).
+Fullfør prosedyrene i denne artikkelen bare etter at evalueringsmiljøet i Commerce er klargjort og konfigurert. Hvis du vil ha informasjon om hvordan du klargjør og konfigurerer miljøet, kan du se [Klargjøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](./cpe-post-provisioning.md).
 
-Når Commerce-miljøet er klargjort og konfigurert ende til ende, kan du bruke dette emnet til å aktivere BOPIS-scenarioer.
+Når Commerce-miljøet er klargjort og konfigurert ende til ende, kan du bruke denne artikkelen til å aktivere BOPIS-scenarioer.
 
 ## <a name="configure-the-pos"></a>Konfigurere salgsstedet
 
 ### <a name="configure-modern-pos"></a>Konfigurere Modern POS
 
-BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestasjon. Maskinvarestasjonen er bygget inn i Modern POS for Windows- og Android-klienter. Hvis du bruker Cloud POS eller Modern POS for iOS, må salgsstedsklienten være forbundet med en delt maskinvarestasjon. Dette emnet beskriver hvordan du konfigurerer BOPIS for Windows- og Android-klienter. Hvis du vil ha informasjon om hvordan du installerer en delt maskinvarestasjonen, kan du se [Konfigurere og installere Retail Hardware Station](./retail-hardware-station-configuration-installation.md).
+BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestasjon. Maskinvarestasjonen er bygget inn i Modern POS for Windows- og Android-klienter. Hvis du bruker Cloud POS eller Modern POS for iOS, må salgsstedsklienten være forbundet med en delt maskinvarestasjon. Denne artikkelen beskriver hvordan du konfigurerer BOPIS for Windows- og Android-klienter. Hvis du vil ha informasjon om hvordan du installerer en delt maskinvarestasjonen, kan du se [Konfigurere og installere Retail Hardware Station](./retail-hardware-station-configuration-installation.md).
 
 1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Salgsstedsoppsett \> Kasser**.
 2. Velg register **SANFRAN-5**, og velg deretter **Rediger**.
@@ -67,7 +67,7 @@ BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestas
 5. En godkjenningsdialogboks vises. Velg kontoen som bruker e-postadressen som tidligere var tilknyttet arbeider **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Hvis du ennå ikke har knyttet til en arbeider med din identitet, vil ikke aktiveringen lykkes. I dette tilfellet følger du trinnene under "Knytt en arbeider til din identitet" i emnet [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Hvis du ennå ikke har knyttet til en arbeider med din identitet, vil ikke aktiveringen lykkes. I dette tilfellet følger du trinnene under "Knytt en arbeider til din identitet" i artikkelen [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Når du blir bedt om å gjøre det mulig for organisasjonen å administrere enheten, velger du **Bare denne appen**.
 7. Når aktiveringen er fullført, velger du **Komme i gang**.

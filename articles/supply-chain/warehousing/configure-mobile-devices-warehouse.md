@@ -1,6 +1,6 @@
 ---
-title: Definere mobilenheter for lagerarbeid
-description: Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
+title: Konfigurer mobilenheter for lagerarbeid
+description: Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
 author: Mirzaab
 ms.date: 03/23/2020
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: efbf9072c3bbcb20f38e144f9a15d8178d96d708
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902186"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905580"
 ---
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurer mobilenheter for lagerarbeid
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
+Denne artikkelen beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
 
 > [!NOTE]
-> Dette emnet artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Menyelementene som vises på menyer for en lagermobilenhet, konfigureres på siden **Menyelementer på mobilenheten**. Fordi menyelementene kan settes inn i flere menyer, er det enkelt å konfigurere menystrukturene slik at bare bestemte typer arbeid er tilgjengelig for bestemte brukere. Du kan konfigurere menyelementer for å gjøre følgende:
+> Denne artikkelen gjelder funksjoner i Lagerstyring. Den gjelder ikke for funksjoner i Beholdningsstyring. Menyelementene som vises på menyer for en lagermobilenhet, konfigureres på siden **Menyelementer på mobilenheten**. Fordi menyelementene kan settes inn i flere menyer, er det enkelt å konfigurere menystrukturene slik at bare bestemte typer arbeid er tilgjengelig for bestemte brukere. Du kan konfigurere menyelementer for å gjøre følgende:
 
 - Behandle en forespørsel eller utfør en aktivitet, for eksempel utskrift av en etikett, generering av numre for nummerskilt, oppstart av en produksjonsordre eller raskt oppslag for informasjon om varer på en lokasjon.
 - Opprett arbeid som skal utføres via en annen prosess. Mottak av en vare for en bestilling kan for eksempel opprette plasseringsarbeid for en annen arbeider.
@@ -38,7 +38,7 @@ Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruk
 Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du angi **Modus**-feltet til **Indirekte**. En liste over **Aktivitetskode**-alternativer blir deretter tilgjengelig, slik at du kan velge hvilken type forespørsel eller aktivitet som menyelementet gjelder for. Hvis du vil opprette et menyelement for å generere lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**. En liste over **Arbeidsopprettelsesprosess**-alternativer blir deretter tilgjengelig. Hvis du vil opprette et menyelement for å behandle eksisterende lagerarbeid, kan du angi **Modus**-feltet til **Arbeid**, og deretter angi alternativet **Bruk eksisterende arbeid** til **Ja**. 
 
 > [!NOTE]
-> Tilleggsfelt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for menyelementet, og om menyelementet brukes til å utføre eksisterende arbeid. Hvis du vil ha informasjon om tilleggsvalgene for feltene, kan du se delen "Flere alternativer for menyelementer" senere i dette emnet.
+> Tilleggsfelt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for menyelementet, og om menyelementet brukes til å utføre eksisterende arbeid. Hvis du vil ha informasjon om tilleggsvalgene for feltene, kan du se delen "Flere alternativer for menyelementer" senere i denne artikkelen.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menyelementer for aktiviteter og forespørsler
 

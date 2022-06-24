@@ -1,6 +1,6 @@
 ---
 title: Støttede primitive datatyper for formler i elektronisk rapportering
-description: Dette emnet inneholder informasjon om de primitive datatypene som støttes i formler i elektronisk rapportering (ER).
+description: Denne artikkelen inneholder informasjon om de primitive datatypene som støttes i formler i elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 06/02/2021
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96fdf33f4cc5f22015c00c57858bd438e6465764
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 41cda188e774630e96c46fba1200fd2e640f9915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323646"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891882"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Støttede primitive datatyper for formler i elektronisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om de primitive datatypene som støttes i uttrykk i [Elektronisk rapportering (ER)](general-electronic-reporting.md). Her er en liste over de primitive datatypene:
+Denne artikkelen inneholder informasjon om de primitive datatypene som støttes i uttrykk i [Elektronisk rapportering (ER)](general-electronic-reporting.md). Her er en liste over de primitive datatypene:
 
 - [boolsk](#boolean)
 - [dato](#date)

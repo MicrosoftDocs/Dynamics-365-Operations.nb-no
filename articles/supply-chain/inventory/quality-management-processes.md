@@ -1,6 +1,6 @@
 ---
 title: Oversikt over kvalitets- og avviksstyring
-description: Dette emnet introduserer funksjonene for kvalitets- og avviksstyring i Microsoft Dynamics 365 Supply Chain Management, og forklarer hvordan de kan hjelpe deg med å forbedre produktkvaliteten i forsyningskjeden.
+description: Denne artikkelen introduserer funksjonene for kvalitets- og avviksstyring i Microsoft Dynamics 365 Supply Chain Management, og forklarer hvordan de kan hjelpe deg med å forbedre produktkvaliteten i forsyningskjeden.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 510dee78f6fed02e6511aedad00fcb1b15195470
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907500"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Oversikt over kvalitets- og avviksstyring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet introduserer funksjonene for kvalitets- og avviksstyring i Microsoft Dynamics 365 Supply Chain Management, og forklarer hvordan de kan hjelpe deg med å forbedre produktkvaliteten i forsyningskjeden.
+Denne artikkelen introduserer funksjonene for kvalitets- og avviksstyring i Microsoft Dynamics 365 Supply Chain Management, og forklarer hvordan de kan hjelpe deg med å forbedre produktkvaliteten i forsyningskjeden.
 
 Kvalitetssikring omfatter produkttesting og håndtering av materiell med avvik. Kvalitetsstyringsprosesser bidrar til å sikre produktkvalitet på høyt nivå i forsyningskjeden. Disse prosessene bidrar også til å optimalisere forsyningskjedeprosesser og øke kundetilfredsheten. Kvalitetsstyring kan hjelpe deg med å administrere behandlingstiden når du håndterer produkter med avvik, uavhengig av opprinnelsesstedet for disse produktene. Du kan koble diagnoseresultater til korrigeringsoppgaver. Systemet kan planlegge aktiviteter for å løse problemer og dermed forhindre gjentakelser av disse problemene i fremtiden. Kvalitetsstyring lar deg også spore problemer (inkludert interne problemer) etter problemtype, og lar deg angi løsninger som kortsiktige eller langsiktige. Statistikk om nøkkelytelsesindikatorer (KPI-er) gir innsikt i avviksproblemer som har oppstått tidligere, og løsninger som ble brukt til å rette feilene. Du kan bruke historiske data for å undersøke effektiviteten til kvalitetstiltak som er iverksatt tidligere, og bestemme nødvendige tiltak som skal brukes i fremtiden.
 

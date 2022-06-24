@@ -1,6 +1,6 @@
 ---
 title: Planlegging med ressursvalg basert på kvalifikasjon
-description: Dette emnet beskriver ressursvalg under ubegrenset kapasitetsplanlegging når du angir kvalifikasjoner som ressursbehov for en operasjon.
+description: Denne artikkelen beskriver ressursvalg under ubegrenset kapasitetsplanlegging når du angir kvalifikasjoner som ressursbehov for en operasjon.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: d1ecdfdbdd605fca953e799ec3f6a82d244bc9f7
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469792"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847969"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planlegging med ressursvalg basert på kvalifikasjon
 
 [!include [banner](../../includes/banner.md)]
 
-Ved å angi ressursbehov for en operasjon av en produksjonsrute, definerer du hva som kreves for å utføre denne operasjonen. For eksempel kan en operasjon kreve en bestemt ressurs eller en ressursgruppe, eller en kombinasjon av kompetanse eller kvalifikasjoner. Dette emnet beskriver ressursvalg under ubegrenset kapasitetsplanlegging når du angir kvalifikasjoner som ressursbehov for en operasjon.
+Ved å angi ressursbehov for en operasjon av en produksjonsrute, definerer du hva som kreves for å utføre denne operasjonen. For eksempel kan en operasjon kreve en bestemt ressurs eller en ressursgruppe, eller en kombinasjon av kompetanse eller kvalifikasjoner. Denne artikkelen beskriver ressursvalg under ubegrenset kapasitetsplanlegging når du angir kvalifikasjoner som ressursbehov for en operasjon.
 
 ## <a name="turn-on-the-capability-based-scheduling-feature"></a>Slå på funksjon for kvalifikasjonsbasert kapasitetsplanlegging
 

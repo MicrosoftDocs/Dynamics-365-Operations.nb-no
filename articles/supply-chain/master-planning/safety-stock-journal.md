@@ -1,6 +1,6 @@
 ---
 title: Bruk sikkerhetslagerjournalen til å oppdatere minste dekning for varer
-description: Dette emnet beskriver hvordan du bruker sikkerhetslagerhournalen til å oppdatere sikkerhetslagerantall for varer ved å beregne minimumsdekningsforslag basert på historiske transaksjoner.
+description: Denne artikkelen beskriver hvordan du bruker sikkerhetslagerjournalen til å oppdatere sikkerhetslagerantall for varer ved å beregne minimumsdekningsforslag basert på historiske transaksjoner.
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-28
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 391f741ee08eb0624e80f5c297009c527e50c14c
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 385144738b83fcf6873eae5204b4784d6ecd5b80
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468559"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851776"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage-for-items"></a>Bruk sikkerhetslagerjournalen til å oppdatere minste dekning for varer
 
@@ -24,7 +24,7 @@ ms.locfileid: "8468559"
 
 Sikkerhetslager angir en tilleggsmengde for en vare som er på lageret, for å redusere risikoen for at varen er utsolgt. Sikkerhetslager brukes som et reservelager i tilfelle salgsordrer kommer inn, men leverandøren kan oppfylle kundens ønskede leveringsdato.
 
-Dette emnet beskriver hvordan du bruker sikkerhetslagerjournalen til å beregne minste dekningsforslag basert på historiske transaksjoner, og deretter oppdaterer varedekningen med forslagene.
+Denne artikkelen beskriver hvordan du bruker sikkerhetslagerjournalen til å beregne minste dekningsforslag basert på historiske transaksjoner, og deretter oppdaterer varedekningen med forslagene.
 
 ## <a name="overview-of-minimum-coverage-usage"></a>Oversikt over minimum dekningsbruk
 
@@ -43,7 +43,7 @@ Sikkerhetslager defineres på siden **Varedekning** for hver vare. Forskjellige 
 
 Journaler for sikkerhetslager brukes til å beregne et foreslått minimumsantall basert på varens historiske bruk, enten for minimums-/maksimumsformål eller for lagerplanformål. Historisk bruk representerer alle avgangstransaksjoner i løpet av en bestemt periode. Disse avgangstransaksjonene omfatter salgsordretransaksjoner og lagerjusteringer. Beregningene identifiserer også virkningen av det foreslåtte minimumsantallet på lagerverdi og endring i lagerverdi sammenlignet med gjeldende minimumsantall.
 
-Hver journallinje for sikkerhetslager representerer en vare og dens dekningsdimensjoner. Disse journallinjene opprettes og vises på siden **Journallinjer for sikkerhetslager** (**Hovedplanlegging \> Hovedplanlegging \> Kjør \> Beregning av sikkerhetslager**). Forretningsprosessen for bruk av journaler for sikkerhetslager til å beregne de foreslåtte minimumsantallene, beskrives senere i dette emnet.
+Hver journallinje for sikkerhetslager representerer en vare og dens dekningsdimensjoner. Disse journallinjene opprettes og vises på siden **Journallinjer for sikkerhetslager** (**Hovedplanlegging \> Hovedplanlegging \> Kjør \> Beregning av sikkerhetslager**). Forretningsprosessen for bruk av journaler for sikkerhetslager til å beregne de foreslåtte minimumsantallene, beskrives senere i denne artikkelen.
 
 Planleggeren bruker en sikkerhetslagerjournal til å beregne foreslåtte minimumsantall for valgte varer, basert på historisk bruk i valgte perioder. De foreslåtte minimumsverdiene kan overstyres manuelt etter behov, og du kan gå gjennom de potensielle virkningene av de foreslåtte minimumene på lagerverdi. Når journalen er postert, oppdateres de tilknyttede minimumsantallene i varedekningen automatisk.
 
@@ -89,7 +89,7 @@ Følg denne fremgangsmåten for å generere journallinjer automatisk.
 
     - **Fra dato** – Velg startdatoen for perioden som avganger skal tas med i beregningen for.
     - **Til dato** – Velg sluttdatoen for perioden som avganger skal tas med i denne beregningen for. Det må være minst to måneder mellom start- og sluttdatoene.
-    - **Beregn standardavvik** – Sett dette alternativet til *Ja* for å beregne standardavviket. Du må sette dette alternativet til *Ja* hvis du vil bruke alternativet **Bruk servicenivå** når du beregner forslaget (som beskrevet senere i dette emnet).
+    - **Beregn standardavvik** – Sett dette alternativet til *Ja* for å beregne standardavviket. Du må sette dette alternativet til *Ja* hvis du vil bruke alternativet **Bruk servicenivå** når du beregner forslaget (som beskrevet senere i denne artikkelen).
 
 1. På hurtigfanen **Poster som skal inkluderes** kan du definere du filtre og betingelser for å definere hvilke varer som skal tas med. (Du kan for eksempel filtrere etter **Dekningsgruppe**-verdien.) Velg **Filter** for å åpne en standard dialogboks i redigeringsprogrammet for spørring, der du kan definere utvalgskriterier, sorteringskriterier og koblinger. Feltene fungerer på samme måte som for andre typer spørringer i Microsoft Dynamics 365 Supply Chain Management.
 1. På hurtigfanen **Kjør i bakgrunnen** velger du om jobben slik skal kjøres i satsvis modus, og/eller angir en gjentakende tidsplan. Feltene fungerer på samme måte som de fungerer for andre typer [bakgrunnsjobber](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management.
@@ -110,7 +110,7 @@ Dette trinnet beregner et foreslått minimum for hver journallinje og linjens po
 Beregningene som vises, vil ikke påvirke de faktiske verdiene for minimumsantall for hvert produkt før du velger **Poster** i handlingsruten. Da brukes verdiene under **Nytt minimumsantall** for hvert produkt.
 
 1. Gå til **Hovedplanlegging \> Hovedplanlegging \> Kjør \> Beregning av sikkerhetslager**.
-1. Åpne journalen det skal beregnes et forslag for. Du kan også opprette en ny journal slik det er beskrevet tidligere i dette emnet.
+1. Åpne journalen det skal beregnes et forslag for. Du kan også opprette en ny journal slik det er beskrevet tidligere i denne artikkelen.
 1. På hurtigfanen **Journallinjer** velger du **Beregn forslag** på verktøylinjen. (Du trenger ikke merke noen linjer.)
 1. I dialogboksen **Beregn forslag for minimumslagernivå** definerer du følgende felter:
 

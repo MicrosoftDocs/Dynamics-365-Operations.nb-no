@@ -1,6 +1,6 @@
 ---
 title: Grovplanlegging
-description: Dette emnet gir informasjon om grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
+description: Denne artikkelen gir informasjon om grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
 author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7b9ae31b288831d2f3b85bf1996206221e0bdbbd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574575"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871898"
 ---
 # <a name="operations-scheduling"></a>Grovplanlegging
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
+Denne artikkelen gir informasjon om grovplanlegging. Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid.
 
 Du kan planlegge produksjonen på operasjonsnivået og jobbnivået. I motsetning til finplanlegging, deler grovplanlegging ikke operasjonene for produksjonsruten inn i jobber. Hvis du vil ha flere detaljer i planleggingen, for eksempel informasjon om gjeldende kapasitet, kan du kjøre finplanlegging etter at du kjører grovplanlegging. Du kan også velge bare å kjøre finplanlegging. Finplanlegging brukes vanligvis til å planlegge enkeltjobber på shop floor i en umiddelbar eller kortsiktig tidsramme.
 

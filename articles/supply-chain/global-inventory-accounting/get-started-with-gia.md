@@ -1,6 +1,6 @@
 ---
 title: Komme i gang med Globalt lagerregnskap
-description: Dette emnet beskriver hvordan du kommer i gang med Globalt lagerregnskap.
+description: Denne artikkelen beskriver hvordan du kommer i gang med Globalt lagerregnskap.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 17d4816fc5fcad0b0665640a8347b1f4ea032dd7
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8679450"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891096"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Komme i gang med Globalt lagerregnskap
 
@@ -38,12 +38,18 @@ Globalt lagerregnskap er et tillegg. Hvis du vil gjøre funksjonene tilgjengelig
 
 Globalt lagerregnskap støtter for øyeblikket ikke alle kostnadsstyringsfunksjonene som er innebygd i Supply Chain Management. Det er derfor viktig at du vurderer om funksjonssettet som for øyeblikket er tilgjengelig, oppfyller kravene dine.
 
-## <a name="how-to-get-the-global-inventory-accounting-public-preview"></a><a name="sign-up"></a>Slik får du offentlig forhåndsversjon av Globalt lagerregnskap
+## <a name="how-to-get-the-global-inventory-accounting-add-in"></a><a name="sign-up"></a>Slik får du tilleggsprogrammet Globalt lagerregnskap
 
 > [!IMPORTANT]
 > Hvis du vil bruke Globalt lagerregnskap, må du ha et LCS-aktivert miljø med høy tilgjengelighet (ikke et OneBox-miljø). I tillegg må du kjøre Supply Chain Management versjon 10.0.19 eller senere.
 
-Hvis du vil registrere deg for offentlig forhåndsversjon av Globalt lagerregnskap, kan du sende LCS-miljø-IDen med e-post til [Globalt lagerregnskap-teamet](mailto:GlobalInvAccount@microsoft.com). Når du er godkjent for programmet, sender teamet deg en oppfølgings-e-post som inneholder en betanøkkel for Globalt lagerregnskap og tjenesteendepunktene. Når du har mottatt betanøkkelen, kan du [installere tillegget](#install).
+### <a name="supply-chain-management-version-10019-to-10026"></a>Supply Chain Management-versjon 10.0.19 til 10.0.26
+
+Hvis du vil installere Globalt lagerregnskap for Supply Chain Management-versjon 10.0.19 til 10.0.26, starter du ved å [installere tilleggsprogrammet](#install). Send deretter ID-en for LCS-miljøet og firmanavnet via e-post til [Globalt lagerregnskap-teamet](mailto:GlobalInvAccount@microsoft.com). Teamet sender deg en oppfølgings-e-post som inneholder Globalt lagerregnskap-tjenesteendepunktene.
+
+### <a name="supply-chain-management-version-10027-and-later"></a>Supply Chain Management versjon 10.0.27 og nyere
+
+Hvis du vil installere Globalt lagerregnskap for Supply Chain Management-versjon 10.0.27 og nyere, trenger du bare å [installere tilleggsprogrammet](#install). Når det gjelder disse versjonene av Supply Chain Management, konfigureres Globalt lagerregnskap-tjenesteendepunktene automatisk, slik at du ikke trenger å finne dem manuelt. Hvis du får problemer mens du konfigurerer tillegget, bør du ta kontakt med [Globalt lagerregnskap-teamet](mailto:GlobalInvAccount@microsoft.com).
 
 ## <a name="licensing"></a>Lisensiering
 
@@ -98,12 +104,7 @@ Hvis standardspråket for Dataverse-installasjonen ikke er engelsk, følger du d
 
 Følg denne fremgangsmåten for å installere tillegget, slik at du kan bruke Globalt lagerregnskap.
 
-1. [Registrer deg](#sign-up) for offentlig forhåndsversjon av Globalt lagerregnskap.
 1. Logg på [LCS](https://lcs.dynamics.com/Logon/Index).
-1. Gå til **Administrasjon av forhåndsvisningsfunksjoner**.
-1. Velg plusstegnet (**+**).
-1. I **Kode** -feltet angir du betanøkkelen for tillegget for Globalt lagerregnskap. (Du skal ha mottatt betanøkkelen via e-post da du registrerte deg.)
-1. Velg **Fjern blokkering**.
 1. Åpne LCS-miljøet der du vil legge til tjenesten.
 1. Gå til **Detaljerte opplysninger**.
 1. Gå til **Power Platform-integreringen**, og velg **Oppsett**.
@@ -124,6 +125,8 @@ Følg denne fremgangsmåten for å sette opp integreringen mellom Globalt lagerr
 1. I **Alle**-fanen søker du etter funksjonen som kalles *(Forhåndsversjon) Globalt lagerregnskap*.
 1. Velg **Aktiver nå**.
 1. Gå til **Globalt lagerregnskap \> Oppsett \> Parametere for Globalt lagerregnskap \> Integreringsparametere**.
-1. I feltene **Datatjenesteendepunkt** og **Endepunkt for Globalt lagerregnskap** angir du URL-adressene fra e-postmeldingen som Globalt lagerregnskap-teamet sendte da du registrerte deg for forhåndsvisningen.
+1. Gjør ett av følgende, avhengig av hvilken versjon av Supply Chain Management du kjører:
+    - **Supply Chain Management-versjon 10.0.19 til 10.0.26**: I feltene **Datatjenesteendepunkt** og **Endepunkt for Globalt lagerregnskap** angir du URL-adressene som ble sendt til deg via e-post fra Globalt lagerregnskap-teamet (se også [Slik får du tilleggsprogrammet Globalt lagerregnskap](#sign-up)).
+    - **Supply Chain Management-versjon 10.0.27 og nyere**: Du trenger ikke å angi endepunktene, så du kan hoppe over dette trinnet.
 
 Globalt lagerregnskap er nå klart til bruk.

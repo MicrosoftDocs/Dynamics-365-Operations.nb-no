@@ -1,6 +1,6 @@
 ---
 title: Skjermoppsett for demonstrasjonsdata i Moderne salgssted (MPOS) og Skysalgssted
-description: Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Dynamics 365 Commerce.
+description: Denne artikkelen inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: c141325580d698cccc7d186496a0902913961d47764b93fa73c64c3eddf6e791
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb7a288b61e8b467dd8ad6a8f7dc42b7fca0d943
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761668"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897231"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Skjermoppsett for demonstrasjonsdata i Moderne salgssted (MPOS) og Skysalgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Dynamics 365 Commerce.
+Denne artikkelen inneholder informasjon om skjermoppsett som er inkludert i settet med demonstrasjonsdata for salgsstedsopplevelser i Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
-Eksempelskjermoppsett som er inkludert i Handel-demonstrasjonsdata har innhold som er optimalisert for forskjellige segmenter for detaljhandel, butikkarbeiderroller og enheter. Ett enkelt oppsett kan inneholde flere oppsettstørrelser og kombinasjoner av knappegrupper for å sikre dekning når butikkarbeidere flytter mellom enheter og stasjoner. Dette emnet fremhever forskjellene mellom disse oppsettene, operasjonene som de gir og de helhetlige opplevelsene som de leverer.
+Eksempelskjermoppsett som er inkludert i Handel-demonstrasjonsdata har innhold som er optimalisert for forskjellige segmenter for detaljhandel, butikkarbeiderroller og enheter. Ett enkelt oppsett kan inneholde flere oppsettstørrelser og kombinasjoner av knappegrupper for å sikre dekning når butikkarbeidere flytter mellom enheter og stasjoner. Denne artikkelen fremhever forskjellene mellom disse oppsettene, operasjonene som de gir og de helhetlige opplevelsene som de leverer.
 
 ![Oppsett for demonstrasjonsdata på tvers av enheter.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 
@@ -47,12 +47,12 @@ Skjermoppsett-ID-er kan inneholde opptil ti tegn. ID-en er en streng som består
 2. Oppsettversjon
 3. Egenskap
 
-### <a name="company"></a>Bedrift
+### <a name="company"></a>Firma
 
-| Brev | Bedrift         |
+| Brev | Firma         |
 |--------|-----------------|
 | A      | Adventure Works |
-| F      | Fabrikam        |
+| Ø      | Fabrikam        |
 | K      | Contoso         |
 
 ### <a name="layout-version"></a>Oppsettversjon
@@ -157,7 +157,7 @@ Brukere er angitt for de forskjellige skjermoppsettene. Ved å bruke tabellen ne
 | Fabrikam        | F3STK            | Lagermedarbeider   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Butikksjef | 000100, 000111         |
 | Contoso         | C3CSH            | Kasserer       | 000110, 000120         |
-| Contoso         | Gjelder ikke   | Lagermedarbeider   | Gjelder ikke         |
+| Contoso         | Gjelder ikke her   | Lagermedarbeider   | Gjelder ikke her         |
 
 > [!TIP]
 > Aktivere en kasse på den tilsvarende butikklokasjonen for best mulig resultat, og angi firmaet til personen som du vil bruke når du logger på. På denne måten kan bidra til å garantere at den visuelle profilen og merkebildene er justert på tvers av opplevelsen. Hvis du for eksempel er interessert i å vise et Fabrikam-oppsett for en kasserer, kan du aktivere en kasse i Houston-butikken.

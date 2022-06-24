@@ -1,6 +1,6 @@
 ---
 title: Vanlige spørsmål om arbeidsflyt
-description: Dette emnet gir svar på vanlige spørsmål om arbeidsflytsystemet.
+description: Denne artikkelen gir svar på vanlige spørsmål om arbeidsflytsystemet.
 author: ChrisGarty
 ms.date: 03/01/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e9e2000684081035f35ea55e1c773a4f6976d74
-ms.sourcegitcommit: 967b93bb42413b5b38b817f924015468312a93a0
+ms.openlocfilehash: a72fd141bb1178a3a83385c512d1a655064d5b00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8370886"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896586"
 ---
 # <a name="workflow-faq"></a>Vanlige spørsmål om arbeidsflyt
 
@@ -26,7 +26,7 @@ ms.locfileid: "8370886"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Dette emnet gir svar på vanlige spørsmål om arbeidsflytsystemet.
+Denne artikkelen gir svar på vanlige spørsmål om arbeidsflytsystemet.
 
 ## <a name="why-are-multiple-notifications-received-when-a-work-item-is-rejected"></a>Hvorfor mottas flere varslinger når et arbeidselement avvises?
 Når et arbeidselement avvises, fullføres dette arbeidselementet som avvist. Et annet arbeidselement opprettes og tilordnes til avsenderen. Dette betyr at det er en melding til avsenderen for det avviste arbeidselementet og en egen melding til brukeren som er tilordnet til det nye "bedt om endring"-arbeidselementet. 

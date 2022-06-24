@@ -1,6 +1,6 @@
 ---
-title: Aktivere og bruke deling på tvers av kanal
-description: Dette emnet beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i områdebyggeren i Microsoft Dynamics 365 Commerce.
+title: Aktivere og bruke krysskanaldeling
+description: Denne artikkelen beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i områdebyggeren i Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 637149c088cb87301018868e680537eb58b17852
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742422"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866010"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruke krysskanaldeling
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i områdebyggeren i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du aktiverer og bruker funksjonen for deling på tvers av kanaler i områdebyggeren i Microsoft Dynamics 365 Commerce.
 
 Deling på tvers av kanaler lar forhandleren bruke på nytt og dele innhold mellom flere kanaler på et område. Denne muligheten er nyttig når områdekanalene har et kompatibelt originalspråk, eller når de har flere felles innholdselementer.
 

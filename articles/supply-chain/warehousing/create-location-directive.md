@@ -1,6 +1,6 @@
 ---
 title: Arbeide med lokasjonsdirektiver
-description: Dette emnet beskriver hvordan du arbeider med lokasjonsdirektiver. Lokasjonsdirektiver er brukerdefinerte regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse.
+description: Denne artikkelen beskriver hvordan du arbeider med lokasjonsdirektiver. Lokasjonsdirektiver er brukerdefinerte regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 84ff0a466c037db05aecaff14aa2e17990ce8799
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103144"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903702"
 ---
 # <a name="work-with-location-directives"></a>Arbeide med lokasjonsdirektiver
 
@@ -27,7 +27,7 @@ ms.locfileid: "8103144"
 Lokasjonsdirektiver er regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse. I en salgsordretransaksjon bestemmer for eksempel et lokasjonsdirektiv hvor varene blir plukket og hvor de plukkede varene skal plasseres. Lokasjonsdirektiver består av en topptekst og tilknyttede linjer. De opprettes for bestemte *arbeidsordretyper*.
 
 > [!NOTE]
-> Dette emnet gjelder funksjoner i **Lagerstyring**-modulen. Det gjelder ikke for funksjoner i modulen [Lagerstyring](../inventory/inventory-home-page.md).
+> Denne artikkelen gjelder funksjoner i **Lagerstyring**-modulen. Det gjelder ikke for funksjoner i modulen [Lagerstyring](../inventory/inventory-home-page.md).
 
 Du kan bruke lokasjonsdirektiver til å utføre følgende oppgaver:
 
@@ -109,7 +109,7 @@ Tabellen nedenfor viser en oversikt over feltene som er spesifikke for bestemte 
 
 Hvis du åpne siden **Lokasjonsdirektiver**, går du til **Lagerstyring \> Oppsett \> Lokasjonsdirektiver**.
 
-Derfra kan du vise, opprette og redigere lokasjonsdirektiver ved hjelp av kommandoene i handlingsruten. Se resten av delene i dette emnet hvis du vil ha informasjon om hvordan du bruker alle feltene som er tilgjengelige på siden.
+Derfra kan du vise, opprette og redigere lokasjonsdirektiver ved hjelp av kommandoene i handlingsruten. Se resten av delene i denne artikkelen hvis du vil ha informasjon om hvordan du bruker alle feltene som er tilgjengelige på siden.
 
 ## <a name="action-pane"></a>Handlingsrute
 
@@ -162,7 +162,7 @@ Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretype
 - **Gjeldende disposisjonskode** – Angi om disposisjonskoden til lokasjonsdirektivet må samsvare med disposisjonskoden som brukes når varen mottas, eller om lokasjonsdirektivet kan velges basert på en hvilken som helst disposisjonskode. Hvis du velger *Nøyaktig samsvar* og **Disposisjonskode**-feltet er tomt, vurderes bare tomme disposisjonskoder for dette lokasjonsdirektivet.
 
     > [!NOTE]
-    > Dette feltet er bare tilgjengelig for valgte arbeidsordretyper der etterfyllingen er tillatt. Hvis du vil ha en fullstendig liste, kan du se [Felter som er spesifikke for arbeidsordretyper](#fields-specific-types) tidligere i dette emnet.
+    > Dette feltet er bare tilgjengelig for valgte arbeidsordretyper der etterfyllingen er tillatt. Hvis du vil ha en fullstendig liste, kan du se [Felter som er spesifikke for arbeidsordretyper](#fields-specific-types) tidligere i denne artikkelen.
 
 - **Søk etter** – Angi om plasseringsantallet skal være hele antallet på nummerskiltet, eller om det skal være vare etter vare. Bruk dette feltet til å sikre at alt innholdet på et nummerskilt settes inn på ett sted, og at systemet ikke foreslår at du deler innholdet inn i flere steder for **Forhåndsvarsel for forsendelse** (nummerskiltmottak), **Blandet nummerskiltmottak** og **Klyngemottaksprosesser**. (**Klyngemottaksprosessen** krever at funksjonen [Klyngeplasseringsfunksjon](putaway-clusters.md) er aktivert.) Virkemåten av lokasjonsdirektivspørringen, linjene og lokasjonsdirektivhandlingene vil variere, avhengig av verdien du velger. **Linjer**-hurtigfanen brukes bare når **Søk etter** er satt til *vare*.
 
@@ -254,7 +254,7 @@ Når du har opprettet lokasjonsdirektiver, kan du knytte hver direktivkode til e
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - Video: [Dyp dykk i konfigurasjon av lagerstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
-- Hjelpeemne: [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](control-warehouse-location-directives.md)
+- Hjelpeartikkel: [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](control-warehouse-location-directives.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

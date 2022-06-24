@@ -1,6 +1,6 @@
 ---
 title: Dekningshorisonter
-description: Dette emnet beskriver hvordan du definerer dekningshorisonter når du bruker planleggingsoptimalisering. En dekningshorisont angir planleggingshorisonten og -grensen.
+description: Denne artikkelen beskriver hvordan du definerer dekningshorisonter når du bruker planleggingsoptimalisering. En dekningshorisont angir planleggingshorisonten og -grensen.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 12deca22fd6ff3cb4556e0525ab831e1aea0ee33
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468923"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8847940"
 ---
 # <a name="coverage-time-fences"></a>Dekningshorisonter
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du definerer *dekningshorisonter* når du bruker planleggingsoptimalisering. Planleggere kan definere planleggingshorisonten (dekningshorisonten i dager), og utelate forsyning og behov som faller utenfor denne horisonten. Dekningshorisonter kan derfor bidra til å forhindre «støy» som forårsakes av forsyningsforslag det er måneder til du må reagere på. Eksempler omfatter neste års prognose og kundeordrer som er lagt inn med en leveringstid langt utover det normale.
+Denne artikkelen beskriver hvordan du definerer *dekningshorisonter* når du bruker planleggingsoptimalisering. Planleggere kan definere planleggingshorisonten (dekningshorisonten i dager), og utelate forsyning og behov som faller utenfor denne horisonten. Dekningshorisonter kan derfor bidra til å forhindre «støy» som forårsakes av forsyningsforslag det er måneder til du må reagere på. Eksempler omfatter neste års prognose og kundeordrer som er lagt inn med en leveringstid langt utover det normale.
 
 En dekningshorisont er antallet dager etter dagens dato (eller nærmere bestemt datoen du foretar planleggingskjøringen) som forsyning og behov skal utelates. For å unngå forsinkelser må du sørge for at dekningshorisonten er lengre enn den totale leveringstiden. Standardverdien i systemet er 100 dager.
 

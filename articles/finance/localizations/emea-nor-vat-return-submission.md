@@ -1,6 +1,6 @@
 ---
 title: Sende en mva-retur til webtjeneste Altinn
-description: Dette emnet beskriver hvordan du sender en mva-retur til Altinn-webtjenesten i Norge.
+description: Denne artikkelen beskriver hvordan du sender en mva-retur til Altinn-webtjenesten i Norge.
 author: liza-golub
 ms.date: 12/13/2021
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: fd201ed282f6277f11d50c10f7e1e743d1e87ea3
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.openlocfilehash: bd645a37cc9ea9b10863253e15159fc56f89811a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922401"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872371"
 ---
 # <a name="submit-a-vat-return-to-the-altinn-web-service"></a>Sende en mva-retur til webtjeneste Altinn
 

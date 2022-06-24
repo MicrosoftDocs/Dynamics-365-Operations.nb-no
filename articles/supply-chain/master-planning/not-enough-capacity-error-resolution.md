@@ -1,6 +1,6 @@
 ---
 title: Rett opp feil med at planleggingsmotoren ikke finner nok kapasitet og begrenset kapasitet
-description: Dette emnet gir informasjon om årsakene og løsningene for "Produksjonsordre %1 kan ikke planlegges. Feilmeldingen om at planleggingsmotoren ikke finner nok kapasitet.
+description: Denne artikkelen gir informasjon om årsakene og løsningene for "Produksjonsordre %1 kan ikke planlegges. Feilmeldingen om at planleggingsmotoren ikke finner nok kapasitet.
 author: t-benebo
 ms.date: 7/29/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a3c08dc72c7133a2ebb148a2f88f83fee282717b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469848"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891038"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Rett opp feil med at planleggingsmotoren ikke finner nok kapasitet
 
@@ -26,7 +26,7 @@ Når du kjører planlegging, kan du få følgende feilmelding:
 
 > Kan ikke planlegge produksjonsordren %1. Fant ikke nok kapasitet.
 
-Det er flere årsaker til hvorfor planleggingsmotoren kan mislykkes og utstede denne feilmeldingen. Dette emnet gir retningslinjer som vil hjelpe deg med å finne roten til feilen og deretter redusere den.
+Det er flere årsaker til hvorfor planleggingsmotoren kan mislykkes og utstede denne feilmeldingen. Denne artikkelen gir retningslinjer som vil hjelpe deg med å finne roten til feilen og deretter redusere den.
 
 ## <a name="review-the-applicable-resources"></a>Se gjennom de aktuelle ressursene
 

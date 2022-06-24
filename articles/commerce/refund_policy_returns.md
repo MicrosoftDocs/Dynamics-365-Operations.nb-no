@@ -1,6 +1,6 @@
 ---
-title: Opprette og oppdatere en retur- og refusjonspolicy for en kanal
-description: Dette emnet beskriver hvordan du definerer en retur- og refusjonspolicy for en kanal.
+title: Opprett og oppdater en retur- og refunderingspolicy for en kanal
+description: Denne artikkelen beskriver hvordan du definerer en retur- og refusjonspolicy for en kanal.
 author: ShalabhjainMSFT
 ms.date: 07/13/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
-ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
+ms.openlocfilehash: 54dd19134aea68f73de51086fbaa096961447b62
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7388939"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873310"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Opprette og oppdatere en retur- og refunderingspolicy for en kanal
 
@@ -27,7 +27,7 @@ ms.locfileid: "7388939"
 
 Kanalreturpolicyen i Dynamics 365 Commerce gjør det mulig for forhandlere å angi håndhevelser der betalingsmidler kan tillates for å behandle en retur på en salgsstedsenhet (POS).  
 
-Dette emnet beskriver trinnene for å definere en retur- og refusjonspolicy for en kanal.
+Denne artikkelen beskriver trinnene for å definere en retur- og refusjonspolicy for en kanal.
 
 Omfanget av policyen er for øyeblikket begrenset til å angi betalingsmidlene som kan være tillatt for en kanal. "Tillatt"-listen er basert på betalingsmåtene som ble brukt til å utføre innkjøpet. For eksempel:
 

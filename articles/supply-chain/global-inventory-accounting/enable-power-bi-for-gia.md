@@ -1,6 +1,6 @@
 ---
 title: Aktivere Power BI for Globalt lagerregnskap
-description: Dette emnet beskriver hvordan du aktiverer Microsoft Power BI for Globalt lagerregnskap.
+description: Denne artikkelen beskriver hvordan du aktiverer Microsoft Power BI for Globalt lagerregnskap.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 8be486409d60cc4927599816e30e1e4ab21a312a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 757d969cf9d1ebc12aeb34b0810fc291e47dffad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669789"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906073"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Aktivere Power BI for Globalt lagerregnskap
 

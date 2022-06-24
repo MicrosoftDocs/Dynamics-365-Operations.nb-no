@@ -1,6 +1,6 @@
 ---
 title: Fransk Intrastat
-description: Dette emnet inneholder informasjon om Intrastat-deklarering i Frankrike.
+description: Denne artikkelen inneholder informasjon om Intrastat-deklarering i Frankrike.
 author: anasyash
 ms.date: 07/9/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 4d38576e1c6b40242d5c6313fb06f08e170b4466
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e86d7c8f28b1b3df0066a588d380965c21dc98a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487906"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887860"
 ---
 # <a name="french-intrastat"></a>Fransk Intrastat
 
@@ -97,7 +97,7 @@ Tabellen angir også rapportnivået for feltet. Feltet kan være **4** (forenkle
     3. I hurtigfanen **Artikkelkodehierarki** i feltet **Kategorihierarki** velger du **Intrastat**.
     4. Velg koden som brukes til overføringer av varer, i **Transaksjonskode**-feltet i kategorien **Generelt**.
     5. Velg koden som brukes til retur av varer, i **Kreditnota**-feltet.
-    6. I feltet **Forpliktelsesnivå for eksport** angir du detaljnivået for eksportrapporten. Nivået du velger, påvirker linjene som vises i rapporten. Hvis du vil ha mer informasjon, kan du se tabellene i begynnelsen av dette emnet.
+    6. I feltet **Forpliktelsesnivå for eksport** angir du detaljnivået for eksportrapporten. Nivået du velger, påvirker linjene som vises i rapporten. Hvis du vil ha mer informasjon, kan du se tabellene i begynnelsen av denne artikkelen.
 
 3. Gå til **Organisasjonsstyring** > **Organisasjoner** > **Juridiske enheter**, velg firmaet, og følg denne fremgangsmåten:
 

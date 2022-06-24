@@ -1,6 +1,6 @@
 ---
-title: Opprette tillatelsesgrupper for salgssted
-description: Dette emnet forklarer hvordan du oppretter en salgsstedstillatelsesgruppe.
+title: " Opprette tillatelsesgrupper for salgssted"
+description: Denne artikkelen forklarer hvordan du oppretter en salgsstedstillatelsesgruppe.
 author: scott-tucker
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 362fbfb5f0cae7cc8583754b53a198eae90bc67f24a871523374c4b7997826eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 009f311dd00f48edb8c0f6622f0a5107881ab2ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762302"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905430"
 ---
-# <a name="create-pos-permission-groups"></a>Opprette tillatelsesgrupper for salgssted
+# <a name="create-pos-permission-groups"></a> Opprette tillatelsesgrupper for salgssted
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du oppretter en salgsstedstillatelsesgruppe. Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven. Denne oppgaven er ment for rollen Driftsleder for handel.
+Denne artikkelen forklarer hvordan du oppretter en salgsstedstillatelsesgruppe. Demonstrasjonsdatafirmaet USRT brukes til å opprette denne oppgaven. Denne oppgaven er ment for rollen Driftsleder for handel.
 
 1. I navigasjonsruten går du til **Moduler > Detaljhandel og handel > Ansatte > Tillatelsesgrupper**.
 2. Velg **Ny**.

@@ -1,6 +1,6 @@
 ---
-title: Skaleringsenheter i en distribuert hybridtopologi
-description: Dette emnet inneholder informasjon om sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring.
+title: Storskalaenheter i en distribuert hybridtopologi
+description: Denne artikkelen inneholder informasjon om sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring.
 author: Mirzaab
 ms.date: 04/22/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 5ec846b294cd9ca62ff15a5306e012813c77e306
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6b53822238220ccfcf538d49285e051c49c57189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893678"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaleringsenheter i en distribuert hybridtopologi
 
@@ -25,7 +25,7 @@ ms.locfileid: "8676358"
 > [!IMPORTANT]
 > Skalaenhetsfunksjonen for Microsoft Dynamics 365 Supply Chain Management gjøres tilgjengelig for deg under de betingelsene som styrer bruken av tjenesten. Hvis du vil ha mer informasjon, kan du se [Juridisk informasjon om Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
 >
-> Når du aktiverer sky- og kantskalaenheter, blir du bedt om å bekrefte at du forstår at noen data som er knyttet til konfigurasjonen og behandling av sky- og kantskalaenheter, kan lagres i et datasenter som er plassert i USA. Hvis du vil lære mer om databehandling for sky- og kantskalaenheter, kan du se [Databehandling under behandling av skalaenheter](#data-processing-management) senere i dette emnet.
+> Når du aktiverer sky- og kantskalaenheter, blir du bedt om å bekrefte at du forstår at noen data som er knyttet til konfigurasjonen og behandling av sky- og kantskalaenheter, kan lagres i et datasenter som er plassert i USA. Hvis du vil lære mer om databehandling for sky- og kantskalaenheter, kan du se [Databehandling under behandling av skalaenheter](#data-processing-management) senere i denne artikkelen.
 
 ## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Hovedverdiforslag for en distribuert hybridtopologi
 
@@ -48,7 +48,7 @@ Skalaenheter gir fleksibilitet, pålitelighet og skala for de tilordnede arbeids
 
 En *arbeidsbelastning* er et definert sett med forretningsfunksjoner som kan beregnes som en faktor og delegeres til en skalaenhet. Selv om arbeidsbelastningen for lagerstyring er lansert, er arbeidsbelastningen for produksjonsutførelse fremdeles i forhåndsversjon.
 
-Du kan konfigurere sentermiljøet og skyskalaenhetene for utvalgte arbeidsbelastninger ved hjelp av [Scale Unit Manager-portalen](https://sum.dynamics.com). Du kan også tilordne flere arbeidsbelastninger per skalaenhet. Hvis du vil ha informasjon om forutsetningene og begrensningene for skyskalaenheter i den gjeldende versjonen, kan du se [Forutsetninger og begrensninger for skyskalaenheter](#cloud-scale-unit-prerequisites) senere i dette emnet.
+Du kan konfigurere sentermiljøet og skyskalaenhetene for utvalgte arbeidsbelastninger ved hjelp av [Scale Unit Manager-portalen](https://sum.dynamics.com). Du kan også tilordne flere arbeidsbelastninger per skalaenhet. Hvis du vil ha informasjon om forutsetningene og begrensningene for skyskalaenheter i den gjeldende versjonen, kan du se [Forutsetninger og begrensninger for skyskalaenheter](#cloud-scale-unit-prerequisites) senere i denne artikkelen.
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for lagerstyring i en skalaenhet
 

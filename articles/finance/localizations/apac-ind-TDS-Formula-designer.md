@@ -1,6 +1,6 @@
 ---
 title: Formeldesigner for TDS-beregninger
-description: Dette emnet viser et eksempel på hvordan TDS (Tax Deducted at Source) beregnes basert på formelen som er definert for hver TDS-avgiftskode i TDS-gruppen som er knyttet til transaksjonen.
+description: Denne artikkelen viser et eksempel på hvordan TDS (Tax Deducted at Source) beregnes basert på formelen som er definert for hver TDS-avgiftskode i TDS-gruppen som er knyttet til transaksjonen.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: e60db55fd3bbcfb8dc34670b3bbbd39336b04efb
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1196f7258c898a55f3f29ddce7457e6f527185d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720090"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889868"
 ---
 # <a name="formula-designer-for-tds-calculations"></a>Formeldesigner for TDS-beregninger
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser et eksempel på hvordan TDS (Tax Deducted at Source) beregnes basert på formelen som er definert for hver TDS-avgiftskode. TDS-avgiftskoder defineres i TDS-gruppen som er knyttet til transaksjonen. Før du utformer TDS-formler, må du fullføre det grunnleggende oppsettet som kreves for TDS, som vist i fremgangsmåten nedenfor. 
+Denne artikkelen viser et eksempel på hvordan TDS (Tax Deducted at Source) beregnes basert på formelen som er definert for hver TDS-avgiftskode. TDS-avgiftskoder defineres i TDS-gruppen som er knyttet til transaksjonen. Før du utformer TDS-formler, må du fullføre det grunnleggende oppsettet som kreves for TDS, som vist i fremgangsmåten nedenfor. 
 
 - Konfigurer TDS-komponentgrupper ved å bruke siden **Komponentgrupper for kildeskatt**. 
 - Konfigurer TDS-komponenter og knytt TDS-komponentgruppen til TDS-komponentene ved å bruke siden **Komponenter for kildeskatt**. 

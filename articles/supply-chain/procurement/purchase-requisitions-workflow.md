@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3381c752e4f1f723162ad314c29ab477caf635a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6934c1147de79c24eb66127d2e08ae8b627bc744
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849365"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
@@ -89,7 +89,7 @@ I dette eksemplet omfatter arbeidsflytprosessen for innkjøpsrekvisisjonslinjene
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurere en arbeidsflyt for innkjøpsrekvisisjoner
 Hvis du vil rute en innkjøpsrekvisisjon til gjennomgang, må du konfigurere arbeidsflytprosessene for innkjøpsrekvisisjon. Arbeidsflytprosessen du definerer, styrer interaksjonen mellom brukeren som bad om varene (bestilleren), og kontrolløren og godkjenneren i arbeidsflyten. Ruting av innkjøpsrekvisisjonen avhenger av hvilke betingelser som angis i arbeidsflytkonfigurasjonen. Disse betingelsene bestemmer for eksempel når innkjøpsrekvisisjonen skal rutes, brukeren eller rollen som den skal sendes til, og handlingene som brukere kan utføre.  
 
-Eksemplene i dette emnet viser hvordan en innkjøpsrekvisisjon kan rutes gjennom en arbeidsflyt som ett dokument eller som enkeltlinjer i innkjøpsrekvisisjonen. Du kan også konfigurere en arbeidsflyt for innkjøpsrekvisisjoner som gjenspeiler den interne kontrollgjennomgangen av innkjøpsrekvisisjoner som er definert for organisasjonen.  
+Eksemplene i denne artikkelen viser hvordan en innkjøpsrekvisisjon kan rutes gjennom en arbeidsflyt som ett dokument eller som enkeltlinjer i innkjøpsrekvisisjonen. Du kan også konfigurere en arbeidsflyt for innkjøpsrekvisisjoner som gjenspeiler den interne kontrollgjennomgangen av innkjøpsrekvisisjoner som er definert for organisasjonen.  
 
 Deltakerne eller kontrollørene som er tilordnet en oppgave i en arbeidsflyt, kan være medlemmer av en bestemt brukergruppe, brukere som har en bestemt sikkerhetsrolle, brukere som er knyttet til avsenderen i et lederhierarki, eller navngitte brukere eller brukere som har ansvar for bestemte utgifter.
 

@@ -1,6 +1,6 @@
 ---
 title: Opprette planer for fast kompensasjon
-description: Dette emnet beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
+description: Denne artikkelen beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 05f4748f66f4027972aabf53e7a1c237b8dbb543
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f254afc37d5afae48c3b2b3b16bd86634ac9aa3a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693066"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875749"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Opprette en plan for fast kompensasjon
 
@@ -28,7 +28,7 @@ ms.locfileid: "8693066"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Dette emnet beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
+Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Denne artikkelen beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
 
 Beløp for fast kompensasjon kan beregnes for de ansatte basert på ulike faktorer, for eksempel ytelse, område og budsjettøkninger. Dynamics 365 Human Resources støtter kompensasjon av typene trinn, klasse og segment.
 

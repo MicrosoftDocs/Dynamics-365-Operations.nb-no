@@ -1,6 +1,6 @@
 ---
 title: Legge til en adresse i en serviceordre
-description: Dette emnet beskriver hvordan du legger til en kundeadresse i en serviceordre.
+description: Denne artikkelen beskriver hvordan du legger til en kundeadresse i en serviceordre.
 author: sorenva
 ms.date: 05/02/2018
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 560d0c58aebe652e668cc0ec3ed05d84f004872e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: ce58ff7bbb491fd2d250b8986d02fca04bd5fad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844742"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Legge til en adresse i en serviceordre    
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du legger til en kundeadresse i en serviceordre. Når du oppretter en serviceordre, overføres adresseinformasjonen fra prosjektet som serviceordren er knyttet til. Du kan imidlertid velge en alternativ lokasjon fra adressene som allerede er angitt i Microsoft Dynamics AX for kunder, leverandører, områder, lagre, serviceordrer og prosjekter.
+Denne artikkelen beskriver hvordan du legger til en kundeadresse i en serviceordre. Når du oppretter en serviceordre, overføres adresseinformasjonen fra prosjektet som serviceordren er knyttet til. Du kan imidlertid velge en alternativ lokasjon fra adressene som allerede er angitt i Microsoft Dynamics AX for kunder, leverandører, områder, lagre, serviceordrer og prosjekter.
 
 Du kan også opprette en ny adresse. Den nye adressen overføres som standard til prosjektet. Du kan imidlertid angi at den nye adressen bare gjelder for denne forekomsten av servicen. Hvis du gjør dette, overføres ikke den nye adressen til prosjektet.
 

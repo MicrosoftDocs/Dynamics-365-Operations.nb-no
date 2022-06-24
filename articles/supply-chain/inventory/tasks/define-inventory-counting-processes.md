@@ -1,6 +1,6 @@
 ---
 title: Definere prosesser for lageropptelling
-description: Dette emnet beskriver konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal.
+description: Denne artikkelen beskriver konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal.
 author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee47b04ba7ec9f3d74230b7a41b1c295eaea9313
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: bb86c99e74dc8251ed48c0b749c0b0ef1ce75e34
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580846"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879026"
 ---
 # <a name="define-inventory-counting-processes"></a>Definere prosesser for lageropptelling
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal. Den viser også hvordan du aktiverer opptellingspolicyer på et lager- og varenivå. Disse oppgavene vil vanligvis utføres av en lagersjef. Det er nødvendig med noen eksisterende frigitte produkter og lagre. Hvis du bruker en demonstrasjonsdataselskap, kan du kjøre denne prosedyren i firmaet USMF med alle lagerførte varer.
+Denne artikkelen beskriver konfigurasjonen av grunnleggende lageropptellingsprosesser ved å opprette en opptellingsgruppe og en opptellingsjournal. Den viser også hvordan du aktiverer opptellingspolicyer på et lager- og varenivå. Disse oppgavene vil vanligvis utføres av en lagersjef. Det er nødvendig med noen eksisterende frigitte produkter og lagre. Hvis du bruker en demonstrasjonsdataselskap, kan du kjøre denne prosedyren i firmaet USMF med alle lagerførte varer.
 
 
 ## <a name="create-a-counting-group"></a>Opprette en opptellingsgruppe

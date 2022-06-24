@@ -1,6 +1,6 @@
 ---
 title: Behandle endringer i formler og ingrediensene
-description: Dette emnet beskriver hvordan du behandler formelstyring og administrerer endringer for å behandle hoveddata for produksjon.
+description: Denne artikkelen beskriver hvordan du behandler formelstyring og administrerer endringer for å behandle hoveddata for produksjon.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 31953fd29c471e52bd63dbb02c20f5f224c3cae2
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 8105ebc7f3698a6baaa04b6548dac18a7bf81a47
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103050"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904079"
 ---
 # <a name="manage-changes-in-formulas-and-their-ingredients"></a>Behandle endringer i formler og ingrediensene
 
@@ -29,7 +29,7 @@ Hvis du bruker prosessproduksjonsfunksjonene til Microsoft Dynamics 365 Supply C
 
 ## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funksjonen
 
-Funksjonaliteten som beskrives i dette emnet, krever at funksjonene *Behandling av teknisk endring* og *Administrer endringer i formler og ingredienser* er aktivert for systemet. Hvis du vil ha mer informasjon om hvordan du aktiverer eller deaktiverer disse funksjonene, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
+Funksjonaliteten som beskrives i denne artikkelen, krever at funksjonene *Behandling av teknisk endring* og *Administrer endringer i formler og ingredienser* er aktivert for systemet. Hvis du vil ha mer informasjon om hvordan du aktiverer eller deaktiverer disse funksjonene, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
 
 ## <a name="feature-naming-conventions"></a>Navnekonvensjoner for funksjon
 
@@ -46,7 +46,7 @@ Listen nedenfor gir et sammendrag av hvordan funksjoner for teknisk endringsbeha
 - **Beredskapskontroll** – Bruk systemkontroller og brukerveiledning (spørreskjemaer og kontrollister) for å sikre at alle nødvendige produktdata er fullstendig angitt før produktet frigis. Hvis du vil ha mer informasjon, kan du se [Produktklargjøring](product-readiness.md).
 - **Forbedrede produktfrigivelsesfunksjoner** – Frigi fullstendig definerte versjoner av et produkt og formelen fra en organisasjon (juridisk enhet) til andre juridiske enheter. Du kan til og med bestemme om produktinformasjonen må gjennomgås eller redigeres før frigivelse. Hvis du vil ha mer informasjon, kan du se [Frigi produktstrukturer](release-product-structure.md).
 
-Legg merke til at de fleste emnene som er koblet til i den forrige listen, inneholder eksempler som er basert på stykklister. Formler fungerer imidlertid på en lignende måte. Her er noen flere begreper det er nyttig å vite når du bruker endringsbehandling (eller bare formelendringsbehandling) til å administrere formler og stykklister:
+Legg merke til at de fleste artiklene som det er koblet til i den forrige listen, inneholder eksempler som er basert på stykklister. Formler fungerer imidlertid på en lignende måte. Her er noen flere begreper det er nyttig å vite når du bruker endringsbehandling (eller bare formelendringsbehandling) til å administrere formler og stykklister:
 
 - For hver [tekniske produktkategori](engineering-versions-product-category.md) kan du angi produksjonstypen (stykkliste, formel eller planleggingselement). Du kan også angi om støtte for faktisk vekt er nødvendig for produkter som bruker denne kategorien.
 - Koprodukter og biprodukter er ikke tekniske produkter. Derfor har de ikke versjonsnummeret. Hvis du må endre dem, kan du bare opprette et nytt produkt. Denne fremgangsmåten gjør vedlikeholdet enklere.

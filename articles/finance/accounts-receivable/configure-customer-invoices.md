@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
-ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
+ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "8756970"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876332"
 ---
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
@@ -32,12 +32,9 @@ En **Fritekstfaktura** er ikke relatert til en salgsordre. Den inneholder ordrel
 
 Hvis du vil ha mer informasjon, kan du se:
 
-[Opprett fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
-
+[Opprette fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
 [Opprette en mal for fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
-
 [Tilordne mal for fritekstfaktura til en kunde](tasks/assign-free-text-invoice-template-customer.md)
-
 [Generere og postere gjentakende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
 
 
@@ -91,8 +88,8 @@ Du kan konfigurere delingen av salgsordrekundefakturaer etter område eller leve
  - Velg alternativet **Deling basert på fakturaområde** for å opprette én faktura per område når du posterer. 
  - Velg alternativet **Deling basert på leveringsinformasjon for faktura** for å opprette én faktura per leveringsadresse for salgsordrelinje ved postering. 
 
-## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Poster til inntektskonto for salgsordrefakturalinjer som ikke har en pris
-Du kan oppdatere **Inntekt**-kontoen i **Økonomimodul** for salgsordrelinjer som ikke har noen pris. Hvis du vil definere eller vise denne informasjonen, kan du gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris** på fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris. En inntektskonto er definert på parametersiden **Lagerpostering** i fanen for definisjon av **Salgsordre**-kontoen. Hvis dette alternativet ikke velges, posteres ikke linjer som har prisinformasjon, til **Inntekt**-kontoen.
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Poster til inntektskonto for salgsordrefakturalinjer som ikke har en pris og ingen kostnad
+Du kan oppdatere **Inntekt**-kontoen i **Økonomimodul** for salgsordrelinjer som ikke har noen pris og ingen kostnad. Hvis du vil definere eller vise denne informasjonen, kan du gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris og nullkostnad** på fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris og ingen kosntad. Hvis du velger dette alternativet, vil bilaget inneholde 0,00 oppføringstypene **Kundesaldo** og **Inntekt**. En inntektskonto er definert på parametersiden **Lagerpostering** i fanen for definisjon av **Salgsordre**-kontoen. Hvis dette alternativet ikke velges, posteres ikke linjer som har pris- eller kostnadsinformasjon, til **Inntekt**-kontoen. I stedet vil bilaget inneholde en oppføring på 0,00 for posteringstypen **Kundesaldo**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Tilleggsinnstillinger som endrer posteringsvirkemåten
 Følgende felt endrer virkemåten for posteringsprosessen.

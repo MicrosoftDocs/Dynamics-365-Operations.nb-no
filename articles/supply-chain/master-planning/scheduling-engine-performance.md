@@ -1,6 +1,6 @@
 ---
 title: Forbedre ytelsen til planleggingsmotoren
-description: Dette emnet inneholder informasjon om planleggingsmotoren og hvordan du kan forbedre ytelsen.
+description: Denne artikkelen inneholder informasjon om planleggingsmotoren og hvordan du kan forbedre ytelsen.
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 972e566153b7423398b2ad4a4e70b264f02c40cd
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469013"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854304"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -29,7 +29,7 @@ ms.locfileid: "8469013"
 
 Ressursplanleggingsmotoren brukes ved planlegging av ruter for planlagte og frigitte produksjonsordrer. Motoren ble opprinnelig utgitt som en del av Dynamics AX 2012 og har gått gjennom flere forbedringer etter utgivelsen.
 
-[Planlegging av jobbproduksjonsproblem](https://en.wikipedia.org/wiki/Job_shop_scheduling) er et ekstremt komplekst kombinasjonsproblem der løsningstiden øker eksponentielt med antallet beslutningvariabler. Ofte kan kundene definere produksjonsruter og relaterte data på en måte som fører til et planleggingsproblem som ikke kan løses i rimelig tid, selv på den mest moderne maskinvaren. Dette emnet vil hjelpe deg med å forstå planleggingsmotoren og hvordan et bestemt oppsett kan påvirke ytelsen.
+[Planlegging av jobbproduksjonsproblem](https://en.wikipedia.org/wiki/Job_shop_scheduling) er et ekstremt komplekst kombinasjonsproblem der løsningstiden øker eksponentielt med antallet beslutningvariabler. Ofte kan kundene definere produksjonsruter og relaterte data på en måte som fører til et planleggingsproblem som ikke kan løses i rimelig tid, selv på den mest moderne maskinvaren. Denne artikkelen vil hjelpe deg med å forstå planleggingsmotoren og hvordan et bestemt oppsett kan påvirke ytelsen.
 
 Når det gjelder å forbedre ytelsen til planleggingen, anbefaler generelle retningslinjer at du reduserer kompleksiteten til problemet som motoren må løse. Noen av hovedfaktorene som kan påvirke ytelsen omfatter:
 

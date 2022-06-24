@@ -1,6 +1,6 @@
 ---
 title: Revaluering av utenlandsk valuta for finans
-description: 'Dette emnet gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig.'
+description: 'Denne artikkelen gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig.'
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e4a138a26a23c804f5fd358d335b04aee3897dce
-ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
+ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8720345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904535"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Revaluering av utenlandsk valuta for finans
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig. 
+Denne artikkelen gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig. 
 
 Som en del av en periodeslutt krever regnskapskonvensjoner at finanskontosaldi i utenlandsk valuta revalueres ved å bruke ulike valutakurstyper (gjeldende, historisk, gjennomsnitt, osv.). En regnskapskonvensjon krever for eksempel at aktiva og passiva revalueres med den gjeldende valutakursen, anleggsmidler med den historiske kursen og resultatkontoer med det månedlige gjennomsnittet. Revaluering av utenlandsk valuta i økonomimodulen kan brukes til å revaluere balansen og resultatet. 
 

@@ -1,6 +1,6 @@
 ---
 title: Returnere serienummerkontrollerte produkter i POS
-description: Dette emnet beskriver funksjonene for validering av serialiserte varer som en del av returprosessen i Microsoft Dynamics 365 Commerce POS.
+description: Denne artikkelen beskriver funksjonene for validering av serialiserte varer som en del av returprosessen i Microsoft Dynamics 365 Commerce POS.
 author: hhainesms
 ms.date: 06/01/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 179d66e19c7fa81d587ea920b1c71468ec070177d7e7e68e45c2b58da2f9f5af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b2af301180dc2284400b887ce36357660bdd86fa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860327"
 ---
 # <a name="return-serial-numbercontrolled-products-in-pos"></a>Returnere serienummerkontrollerte produkter i POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver funksjonene for validering av serialiserte varer som en del av returprosessen i Microsoft Dynamics 365 Commerce POS.
+Denne artikkelen beskriver funksjonene for validering av serialiserte varer som en del av returprosessen i Microsoft Dynamics 365 Commerce POS.
 
 > [!NOTE]
 > Det er en ny funksjon kalt **Enhetlig returbehandling i POS** tilgjengelig i Commerce versjon 10.0.20 og nyere. Hvis du vil bruke serienummervalidering under returordrebehandling i POS, må du aktivere denne funksjonen. Hvis du vil ha informasjon om andre funksjoner denne funksjonen gir når den er aktivert, kan du se [Opprette returer i POS](POS-returns.md).

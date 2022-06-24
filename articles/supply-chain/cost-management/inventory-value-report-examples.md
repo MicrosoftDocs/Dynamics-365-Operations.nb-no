@@ -1,6 +1,6 @@
 ---
 title: Eksempler og logikk for lagerverdirapport
-description: Dette emnet gir noen eksempler på resultater som presenteres for hver type lagerverdirapport. Lagerverdirapporter inneholder informasjon om fysisk og finansielle antall og beløp for beholdningen.
+description: Denne artikkelen gir noen eksempler på resultater som presenteres for hver type lagerverdirapport. Lagerverdirapporter inneholder informasjon om fysisk og finansielle antall og beløp for beholdningen.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0d594fc18a104c434a334a5b6d1d249330a6be9a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: e6c6387be5204fde6ebc7a4983567801900974af
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675326"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877660"
 ---
 # <a name="inventory-value-report-examples-and-logic"></a>Eksempler og logikk for lagerverdirapport
 
 [!include [banner](../includes/banner.md)]
 
-Lagerverdirapporter inneholder informasjon om fysisk og finansielle antall og beløp for beholdningen. Dette emnet gir noen eksempler på resultater som presenteres for hver type lagerverdirapport.
+Lagerverdirapporter inneholder informasjon om fysisk og finansielle antall og beløp for beholdningen. Denne artikkelen gir noen eksempler på resultater som presenteres for hver type lagerverdirapport.
 
 Hvis du vil ha mer informasjon om hvordan du genererer og bruker hver type lagerverdirapport, kan du se [Lagerverdirapporter](inventory-value-report-storage.md).
 
 ## <a name="sample-data-that-is-used-in-these-examples"></a>Eksempeldata som brukes i disse eksemplene
 
-Eksemplene i dette emnet er basert på eksempeldata for lagertransaksjon som er beskrevet i denne delen.
+Eksemplene i denne artikkelen er basert på eksempeldata for lagertransaksjon som er beskrevet i denne delen.
 
 ### <a name="storage-dimension-setup"></a>Lagringsdimensjonsoppsett
 
@@ -70,7 +70,7 @@ Eksempelsystemet inneholder en konfigurasjon for lagerverdirapporten som har fø
 
 ## <a name="inventory-value-report-example-1"></a>Eksempel 1 på lagerverdirapport
 
-Tabellen og illustrasjonene nedenfor viser resultatene når du bruker eksempeldataene og rapportkonfigurasjonen som er beskrevet tidligere i dette emnet.
+Tabellen og illustrasjonene nedenfor viser resultatene når du bruker eksempeldataene og rapportkonfigurasjonen som er beskrevet tidligere i denne artikkelen.
 
 | Ressurstype | Ressurs | Nettsted | Referanse | Lager: Finansantall | Lager: Finansbeløp | Lager: Fysisk antall postert | Lager: Fysisk beløp postert | Lager: Antall | Lager: Beløp | Gjennomsnittlig enhetskost |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@ Illustrasjonen nedenfor viser standard **Lagring av lagerverdirapport** for ekse
 
 ## <a name="inventory-value-report-example-2"></a>Eksempel 2 på lagerverdirapport
 
-Følgende tabell og illustrasjoner viser resultatene når du bruker eksempeldataene som beskrives tidligere i dette emnet, men du endrer verdien i **Nivå**-feltet til *Transaksjoner* i rapportkonfigurasjonen, og du angir **Fra dato**-feltet til *15. mars* når du kjører rapporten.
+Følgende tabell og illustrasjoner viser resultatene når du bruker eksempeldataene som beskrives tidligere i denne artikkelen, men du endrer verdien i **Nivå**-feltet til *Transaksjoner* i rapportkonfigurasjonen, og du angir **Fra dato**-feltet til *15. mars* når du kjører rapporten.
 
 | Ressurstype | Ressurs | Nettsted | Dato | Tall | Referanse | Lager: Finansantall | Lager: Finansbeløp | Lager: Fysisk antall postert | Lager: Fysisk beløp postert | Lager: Antall | Lager: Beløp |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@ Følgende delseksjoner viser lagerverdirapporter som genereres etter at du har l
 
 ### <a name="example-3-when-the-totals-level-is-used"></a>Eksempel 3 når Totaler-nivået brukes
 
-Tabellen nedenfor viser resultatene når du bruker eksempeldataene og rapportkonfigurasjonen som er beskrevet tidligere i dette emnet. (I denne rapportkonfigurasjonen er **Nivå**-feltet satt til *Totaler*.)
+Tabellen nedenfor viser resultatene når du bruker eksempeldataene og rapportkonfigurasjonen som er beskrevet tidligere i denne artikkelen. (I denne rapportkonfigurasjonen er **Nivå**-feltet satt til *Totaler*.)
 
 | Ressurstype | Ressurs | Nettsted | Referanse | Lager: Finansantall | Lager: Finansbeløp | Lager: Fysisk antall postert | Lager: Fysisk beløp postert | Lager: Antall | Lager: Beløp | Gjennomsnittlig enhetskost |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,7 +136,7 @@ Tabellen nedenfor viser resultatene når du bruker eksempeldataene og rapportkon
 
 ### <a name="example-3-when-the-transactions-level-is-used"></a>Eksempel 3 når Transaksjoner-nivået brukes
 
-Følgende tabell viser resultatene når du bruker eksempeldataene som beskrives tidligere i dette emnet, men du endrer verdien i **Nivå**-feltet til *Transaksjoner* i rapportkonfigurasjonen.
+Følgende tabell viser resultatene når du bruker eksempeldataene som beskrives tidligere i denne artikkelen, men du endrer verdien i **Nivå**-feltet til *Transaksjoner* i rapportkonfigurasjonen.
 
 | Ressurstype | Ressurs | Nettsted | Dato | Tall | Referanse | Lager: Finansantall | Lager: Finansbeløp | Lager: Fysisk antall postert | Lager: Fysisk beløp postert | Lager: Antall | Lager: Beløp |
 |---|---|---|---|---|---|---|---|---|---|---|---|

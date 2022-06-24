@@ -1,6 +1,6 @@
 ---
 title: Vise gjelds-, aktiva- og utgiftstransaksjoner
-description: Dette emnet forklarer hvordan du viser transaksjoner for en leid eiendel. Disse transaksjonene omfatter leieforpliktelsestransaksjoner og fullbyrdelsesutgiftstransaksjoner som er postert.
+description: Denne artikkelen forklarer hvordan du viser transaksjoner for en leid eiendel. Disse transaksjonene omfatter leieforpliktelsestransaksjoner og fullbyrdelsesutgiftstransaksjoner som er postert.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: be11250a85d160aa71ab76af9cfdb0258fd7bf11
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 552b5a6044950c4dd7547a5239c1b3f7d355dbce
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727489"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906420"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Vise gjelds-, aktiva- og utgiftstransaksjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du viser transaksjoner for en leid eiendel. Disse transaksjonene omfatter leieforpliktelsestransaksjoner og fullbyrdelsesutgiftstransaksjoner som er postert. De bærende verdiene for gjeld og bruksrettseiendel brukes i flere rapporter. De brukes også til å beregne justeringsverdier.
+Denne artikkelen forklarer hvordan du viser transaksjoner for en leid eiendel. Disse transaksjonene omfatter leieforpliktelsestransaksjoner og fullbyrdelsesutgiftstransaksjoner som er postert. De bærende verdiene for gjeld og bruksrettseiendel brukes i flere rapporter. De brukes også til å beregne justeringsverdier.
 
 ## <a name="liability-transactions"></a>Gjeldstransaksjoner
 

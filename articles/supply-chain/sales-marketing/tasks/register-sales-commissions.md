@@ -1,6 +1,6 @@
 ---
 title: Registrere salgsprovisjoner
-description: Dette emnet forklarer hvordan salgsprovisjon beregnes og registreres.
+description: Denne artikkelen forklarer hvordan salgsprovisjon beregnes og registreres.
 author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4aca37350938d54d4acf283093365bfcab64f70
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b15ca78da14068fd2f3275e7aff04852625db7ee
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575369"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862518"
 ---
 # <a name="register-sales-commissions"></a>Registrere salgsprovisjoner
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan salgsprovisjon beregnes og registreres. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Før du starter denne veiledningen kjører du veiledningen kalt Definer regler for salgsprovisjon for å være sikker på at du har alt nødvendig provisjonsberegningsoppsett.
+Denne artikkelen forklarer hvordan salgsprovisjon beregnes og registreres. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Før du starter denne veiledningen kjører du veiledningen kalt Definer regler for salgsprovisjon for å være sikker på at du har alt nødvendig provisjonsberegningsoppsett.
 
 Noter kunde- og varenumrene du har valgt for provisjonsprosessen, og bruk dem når du blir spurt til å opprette en salgsordre i denne veiledningen.
 

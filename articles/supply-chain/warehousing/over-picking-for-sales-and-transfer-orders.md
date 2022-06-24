@@ -1,6 +1,6 @@
 ---
 title: Overplukking for salgs- og overføringsordrer
-description: Dette emnet forklarer hvordan du aktiverer overplukking for salgsordrer og overføringsordrer.
+description: Denne artikkelen forklarer hvordan du aktiverer overplukking for salgsordrer og overføringsordrer.
 author: GalynaFedorova
 ms.date: 07/06/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-06
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 52a4225efa88a7b9303dd611d5652f59da1612a4
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b8bbc7d532f910edfb442831d6c906f253dee06c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897291"
 ---
 # <a name="over-picking-for-sales-orders-and-transfer-orders"></a>Overplukking for salgs- og overføringsordrer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet presenterer et scenario som viser hvordan du gjør det mulig for en bestemt arbeider eller alle arbeidere å overplukke. Overplukkingsprosessen gjør det mulig å kontrollere overplukking under plukkarbeidet.
+Denne artikkelen presenterer et scenario som viser hvordan du gjør det mulig for en bestemt arbeider eller alle arbeidere å overplukke. Overplukkingsprosessen gjør det mulig å kontrollere overplukking under plukkarbeidet.
 
 Lageroverplukking er et enkelt konsept. Systemet gjør det mulig for arbeidere å plukke flere varer enn det som er angitt for en ordre. Den vurderer imidlertid fortsatt overleveringsgrensen som er angitt på linjenivå for overføringsordren eller salgsordren. Hvis denne grensen overskrides, varsler LWarehouse Management-appen arbeiderne om at de overskrider grensen for overlevering.
 
@@ -41,11 +41,11 @@ Overplukkfunksjonen kan hjelpe arbeidere med å spare tid og krefter når de plu
 > [!IMPORTANT]
 > Overplukkfunksjonen gjelder bare for salgsordre- og overføringsordreplukking og -behandling. Etterfylling støtter ikke overplukking. Når etterfyllingsarbeid kjøres, tillater ikke systemet brukere å overplukke.
 
-Dette scenarioet i dette emnet viser hvordan du definerer og bruker overplukkfunksjonen.
+Dette scenarioet i denne artikkelen viser hvordan du definerer og bruker overplukkfunksjonen.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Forutsetning for scenario: Gjør demodata tilgjengelige
 
- i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til *USMF* før du begynner.
+Scenarioet i denne artikkelen refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til *USMF* før du begynner.
 
 ## <a name="scenario-setup"></a>Scenariooppsett
 

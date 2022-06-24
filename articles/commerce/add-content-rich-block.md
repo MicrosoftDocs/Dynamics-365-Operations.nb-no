@@ -1,6 +1,6 @@
 ---
 title: Tekstblokkmodul
-description: Dette emnet dekker tekstblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker tekstblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 18a4226d3b8dce1b46e6612521d70a3627b517d1
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 48714f172b12bbc10f1f682a9dec8be710748e6b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780495"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869230"
 ---
 # <a name="text-block-module"></a>Tekstblokkmodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker tekstblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker tekstblokkmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
 En tekstblokkmodul er en modul som brukes til å legge til tekstinnhold. Dette innholdet kan være informasjon eller kampanje.
 

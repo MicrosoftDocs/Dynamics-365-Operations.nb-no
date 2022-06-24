@@ -1,6 +1,6 @@
 ---
 title: Tilordne butikker og grupper hvis det finnes eksisterende grupper i Microsoft Teams
-description: Dette emnet beskriver hvordan du tilordner butikker og tilsvarende grupper i Dynamics 365 Commerce-hovedkontoret hvis organisasjonen allerede har opprettet grupper i Microsoft Teams før Commerce-integrering.
+description: Denne artikkelen beskriver hvordan du tilordner butikker og tilsvarende grupper i Dynamics 365 Commerce headquarters hvis organisasjonen allerede har opprettet grupper i Microsoft Teams før Commerce-integrering.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aafeaa1da3c3dab5d76a6bfcee06db34a6afba91
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cb18affd0df59dc986602a684a3fe3d418644fd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691111"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902743"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Tilordne butikker og grupper hvis det finnes eksisterende grupper i Microsoft Teams
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du tilordner butikker og tilsvarende grupper i Dynamics 365 Commerce-hovedkontoret hvis organisasjonen allerede har opprettet grupper i Microsoft Teams før Commerce-integrering.
+Denne artikkelen beskriver hvordan du tilordner butikker og tilsvarende grupper i Dynamics 365 Commerce headquarters hvis organisasjonen allerede har opprettet grupper i Microsoft Teams før Commerce-integrering.
 
 Organisasjonen kan ha grupper som er opprettet for noen av eller alle butikkene, før integrering av Dynamics 365 Commerce og Microsoft Teams. Hvis dette er tilfelle, og hvis du skal opprette oppgavesynkronisering mellom Commerce POS og Microsoft Teams, må du angi tilordningen av butikker og tilsvarende team i Commerce Headquarters.
 

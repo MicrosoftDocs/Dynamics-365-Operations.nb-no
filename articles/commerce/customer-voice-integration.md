@@ -1,6 +1,6 @@
 ---
-title: Integrere Customer Voice i e-handelsområdesider
-description: Dette emnet beskriver hvordan du integrerer Microsoft Dynamics 365 Customer Voice på Dynamics 365 Commerce-ehandelsnettsteder.
+title: Integrer Customer Voice i sider på netthandelsområder
+description: Denne artikkelen beskriver hvordan du integrerer Microsoft Dynamics 365 Customer Voice på Dynamics 365 Commerce-ehandelsnettsteder.
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.openlocfilehash: 272ec1a59ed45b2d2336dcfea16051d27011360f
-ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
+ms.openlocfilehash: c8c67ecf4950c92fc91c8d119e06e5e8afff0ddf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8767955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850336"
 ---
-# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrere Customer Voice i e-handelsområdesider
+# <a name="integrate-customer-voice-into-e-commerce-site-pages"></a>Integrer Customer Voice i sider på netthandelsområder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du integrerer Microsoft Dynamics 365 Customer Voice på Dynamics 365 Commerce-ehandelsnettsteder.
+Denne artikkelen beskriver hvordan du integrerer Microsoft Dynamics 365 Customer Voice på Dynamics 365 Commerce-ehandelsnettsteder.
 
 Du kan integrere [Customer Voice](https://dynamics.microsoft.com/customer-voice/overview/) på e-handelsområdet for å samle inn, analysere og spore tilbakemeldinger fra kunder i sanntid. For å komme i gang med integreringen må du opprette en konto og velge en Customer Voice-prosjektmal for tilbakemeldingstypen du vil samle inn.
 
@@ -37,7 +37,7 @@ Følg denne fremgangsmåten for å velge en Customer Voice-prosjektmal.
 1. Velg prosjektmalen for tilbakemeldingstypen du vil samle inn, og velg deretter **Neste**.
 1. Velg et innebyggingsformat under **Velg et innebyggingsformat** i kategorien **Send**. Feltet **Innebygd kode** viser koden som må bygges inn i Commerce-områdebygger.
 
-Eksemplene i dette emnet bruker prosjektmalen for **Periodisk kundeundersøkelse** og **Knapp**-innebyggingsformat.
+Eksemplene i denne artikkelen bruker prosjektmalen for **Periodisk kundeundersøkelse** og **Knapp**-innebyggingsformat.
 
 Illustrasjonen nedenfor viser den prosjektmalsiden **Periodisk kundeundersøkelse**, der alternativet for **Knapp**-innebyggingsformatet er valgt, og innebyggingskode for dette alternativet vises i feltet **Innebygd kode**. Tre separate handlinger kreves for å bygge inn den angitte koden på områdesidene, som beskrevet i delene nedenfor.
 

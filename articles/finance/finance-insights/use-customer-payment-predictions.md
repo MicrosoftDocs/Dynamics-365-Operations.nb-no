@@ -1,6 +1,6 @@
 ---
 title: Bruk kundebetalingsforutsigelser
-description: Dette emnet leder deg gjennom forutsetningene og de brede trinnene som kreves for å bruke en prøveversjon av Finance Insights.
+description: Denne artikkelen leder deg gjennom forutsetningene og de brede trinnene som kreves for å bruke en prøveversjon av Finance Insights.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: ecc864485dfc106df22b48e92a85f2c73d58e0e8
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 330642624b55a6772ef149b70873021401a6bd83
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901409"
 ---
 # <a name="use-customer-payment-predictions"></a>Bruk kundebetalingsforutsigelser
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du bruker kundebetalingsprognoser. Før du bruker denne funksjonen, må du kontrollere at du har fullført konfigurasjonstrinnene for den. Hvis du vil ha mer informasjon, se [Aktivere kundebetalingsprediksjoner](enable-cust-paymnt-prediction.md).
+Denne artikkelen forklarer hvordan du bruker kundebetalingsprognoser. Før du bruker denne funksjonen, må du kontrollere at du har fullført konfigurasjonstrinnene for den. Hvis du vil ha mer informasjon, se [Aktivere kundebetalingsprediksjoner](enable-cust-paymnt-prediction.md).
 
 Du kan vise kundebetalingspredisjoner i arbeidsområdet **Behandle kundekreditt og innkrevinger** og på to nye listesider: **Transaksjonsbetalingsforutsigelser** og **Kundebetalingsforutsigelser**.
 

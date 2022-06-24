@@ -1,6 +1,6 @@
 ---
 title: Hurtigtaster
-description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
+description: Denne artikkelen gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
 author: jasongre
 ms.date: 03/03/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0b4899bf89c40caa515e18e7833444e17d6fff5
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602941"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866124"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 

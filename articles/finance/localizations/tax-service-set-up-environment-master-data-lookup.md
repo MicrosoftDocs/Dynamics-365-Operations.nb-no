@@ -1,6 +1,6 @@
 ---
 title: Aktiver hoveddataoppslag for mva-beregningskonfigurasjon
-description: Dette emnet beskriver hvordan du konfigurerer og aktiverer oppslagsfunksjonen for hoveddata i avgiftsberegning.
+description: Denne artikkelen beskriver hvordan du konfigurerer og aktiverer oppslagsfunksjonen for hoveddata i avgiftsberegning.
 author: kai-cloud
 ms.date: 11/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d9c234781e55fbf7f29eec14666c939d5d60e2fb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686718"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879416"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktiver hoveddataoppslag for mva-beregningskonfigurasjon 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer og aktiverer oppslagsfunksjonen for hoveddata i avgiftsberegning. En rullegardinliste er tilgjengelig for å velge verdier i mva-beregningskonfigurasjonen for felter som **Juridisk enhet**, **Leverandørkonto**, **Varekode** og **Leveringsbetingelse**. Disse verdiene kommer fra det tilkoblede Microsoft Dynamics 365 Finance-miljøet ved hjelp av Microsoft Dataverse-datakilden.
+Denne artikkelen beskriver hvordan du konfigurerer og aktiverer oppslagsfunksjonen for hoveddata i avgiftsberegning. En rullegardinliste er tilgjengelig for å velge verdier i mva-beregningskonfigurasjonen for felter som **Juridisk enhet**, **Leverandørkonto**, **Varekode** og **Leveringsbetingelse**. Disse verdiene kommer fra det tilkoblede Microsoft Dynamics 365 Finance-miljøet ved hjelp av Microsoft Dataverse-datakilden.
 
 > [!NOTE] 
 > Funksjonen for hoveddataoppslag for avgiftsberegning er valgfri funksjonalitet. Du kan hoppe over følgende trinn hvis du deaktiverer funksjonen **Støtte for Dataverse-datakilder for avgiftstjeneste** i RCS (Regulatory Configuration Service). I så fall vil imidlertid ikke rullegardinlisten være tilgjengelig i konfigurasjonen for avgiftsberegningen.

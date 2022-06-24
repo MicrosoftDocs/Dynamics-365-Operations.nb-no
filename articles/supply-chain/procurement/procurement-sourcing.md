@@ -1,6 +1,6 @@
 ---
 title: Startside for innkjøp og leverandører
-description: Dette emnet inneholder en liste over hjelpeemner og andre ressurser som er tilgjengelige for innkjøp og leverandører.
+description: Denne artikkelen inneholder en liste over hjelpeartikler og andre ressurser som er tilgjengelige for innkjøp og leverandører.
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf56084147edcdf8951d4a267611c10dc7eb6dd
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 68409b15a3f4874d05a43931136ce91097c4f904
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8673025"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885877"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for innkjøp og leverandører
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder en liste over hjelpeemner og andre ressurser som er tilgjengelige for innkjøp og leverandører.
+Denne artikkelen inneholder en liste over hjelpeartikler og andre ressurser som er tilgjengelige for innkjøp og leverandører.
 
 Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for produkter og tjenester gjennom å fremskaffe produktet, mottak, faktura og behandling av betaling til leverandører. Du kan konfigurere innkjøpsprosesser mot bestemte forretningsbehov ved å definere innkjøpspolicyer og -arbeidsflyter. Hvis du vil ha generell informasjon, kan du se [Oversikt over innkjøp og leverandører](procurement-sourcing-overview.md). Flere ressurser vises nedenfor.
 

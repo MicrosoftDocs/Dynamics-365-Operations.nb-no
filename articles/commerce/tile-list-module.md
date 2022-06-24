@@ -1,6 +1,6 @@
 ---
 title: Flislistemodul
-description: Dette emnet dekker flislistemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker flislistemoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dd714f29fe2f9acd459be7bda1c0bfac65b72cb0
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 44eb9b82ef9625734c7fe5ccba85207d9f210a00
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780799"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905404"
 ---
 # <a name="tile-list-module"></a>Flislistemodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker flislistemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker flislistemoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 
 En flislistemodul er en samling fliser i en karusell. Den brukes til å markedsførte produktkategorier eller produktmerker gjennom bilder og tekst. En forhandler kan for eksempel legge til en flislistemodul på hjemmesiden til et e-handelsområde for å fremme alle toppsalgskategoriene.
 

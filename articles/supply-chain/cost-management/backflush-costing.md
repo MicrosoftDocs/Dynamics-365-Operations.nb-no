@@ -1,6 +1,6 @@
 ---
 title: Backflush-etterkalkulering
-description: Dette emnet introduserer konseptet med backflush-etterkalkuleringen som skal brukes for Lean manufacturing.
+description: Denne artikkelen introduserer konseptet med backflush-etterkalkuleringen som skal brukes for Lean manufacturing.
 author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: a5b0ac26a1f6b209be7c9d52aaad9bb689a8a656
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 33cb7bf70d8867ccd067144e661c3bdf1c0b778d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674033"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906102"
 ---
 # <a name="backflush-costing"></a>Backflush-etterkalkulering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet introduserer konseptet med backflush-etterkalkuleringen som skal brukes for Lean manufacturing. 
+Denne artikkelen introduserer konseptet med backflush-etterkalkuleringen som skal brukes for Lean manufacturing. 
 
 Med etterkalkulering for Lean manufacturing kan produksjonsflyten bruke kostnadskalkylemetoden kjent som backflush-etterkalkulering. I metoden backflush-etterkalkulering akkumuleres direkte materialer som er brukt i produksjonsflytens VIA-kostnadskonto. Lagermodellgruppen for standard kostpris brukes. Produktene som er mottatt fra produksjonsflyten, trekkes fra VIA ved standardkostnad. Den viktigste forskjellen mellom backflush-etterkalkuleringen og standardkostnad er at for backflush-etterkalkulering beregnes ikke avvik per kanban eller ferdig produkt. I stedet beregnes avvik per produksjonsflyt over en periode. Denne metoden introduserer et virkelig lean-begrep for rapportering av materialforbruk. Dedikert plukket antall av materialet rapporteres ikke til en kanban eller produksjonsordre. I stedet klargjøres hele antallet for partier eller håndteringsenheter til produksjonsflyten. Når partiene eller håndteringsenhetene er registrert som tomme, deklareres de brukt. Avansert forbruk kan brukes, avhengig av [konfigurasjonen av produksjonsflyten](../production-control/lean-manufacturing-modeling-lean-organization.md). Før avansert forbruk kan brukes, må organisasjoner tillate seg selv å slette material i VIA for produksjonsflyten. Den periodiske backflush-etterkalkuleringen bestemmer effektive den verdien av VIA til slutten av perioden. Denne fastsettelsen er basert på kanban-håndteringsenhetene og kanban-jobbstatusen. Avvik mellom de gjeldende verdiene og de faktiske VIA-verdiene per kostgruppe og vare beregnes og vises som avvik.
 

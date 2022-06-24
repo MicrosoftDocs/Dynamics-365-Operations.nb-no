@@ -1,30 +1,24 @@
 ---
 title: Forhåndsvise og publisere et eksperiment
-description: Dette emnet beskriver hvordan du forhåndsviser og publiserer et eksperiment fra Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du forhåndsviser og publiserer et eksperiment fra Dynamics 365 Commerce.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/08/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 41957befe109102aaa7d3a5783b54f96824dfe76a25ab787f94afc778c08fca5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5da7a4e3c17057278d02ebd45702d1de404f0dc6
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740389"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946148"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Forhåndsvise og publisere et eksperiment
 
-Dette emnet beskriver hvordan du forhåndsviser og publiserer eksperimentet i Dynamics 365 Commerce etter at du har [koblet til eksperimentet og redigert variasjonene](experimentation-connect-edit.md). Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
+Denne artikkelen beskriver hvordan du forhåndsviser og publiserer eksperimentet i Dynamics 365 Commerce etter at du har [koblet til eksperimentet og redigert variasjonene](experimentation-connect-edit.md). Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate artikler.
 
 [ ![Brukerreise for eksperimentering – forhåndsvise og publisere.](./media/experimentation_preview_publish.svg) ](./media/experimentation_preview_publish.svg#lightbox)
 
@@ -52,11 +46,15 @@ Når du bruker publiseringsgrupper med eksperimenter, er det noen viktige hensyn
 - Når du publiserer eller planlegger en publiseringsgruppe, blir alt innholdet i publiseringsgruppen publisert, uansett om det finnes et eksperiment som er knyttet til publiseringsgruppen.
 - Fordi en publiseringsgruppe beholdes etter at den er publisert på et aktivt område, vil eksperimenter i publiseringsgruppen også beholdes. Derfor kan du ikke knytte andre eksperimenter til samme side eller fragment. Du kan unngå denne begrensningen ved å slette alle publiseringsgrupper med eksperimenter som beholdes. Hvis du vil slette et eksperiment i et aktivt område som også finnes i en publiseringsgruppe, må du først slette det fra publiseringsgruppen.
 
+### <a name="force-variations-for-testing"></a>Tving variasjoner for testing
+
+Når eksperimentet er utført, kan du legge til forsøks-ID-en og variasjons-ID-en på standardsiden for å tvinge frem en variant for testing eller automatisering. Hvis for eksempel URL-adressen til standardsiden er `https://fabrikam.com/modern/homepage`, kan du tvinge frem en variant med en URL-adresse som denne: `https://fabrikam.com/modern/homepage?exp=18012910471|18024360464`. Du kan få eksperiment-ID-en og variasjons-ID-en for eksperimentvariasjonen din fra den forhåndsviste URL-adressen i **Forhåndsvis**-opplevelsen, som er forklart ovenfor.
+
 ## <a name="previous-step"></a>Forrige trinn
 [Koble til og redigere et eksperiment](experimentation-connect-edit.md)
 
 ## <a name="next-step"></a>Neste trinn
-[Kjør og Overvåk et eksperiment](experimentation-run-monitor.md)
+[Kjøre og overvåke et eksperiment](experimentation-run-monitor.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

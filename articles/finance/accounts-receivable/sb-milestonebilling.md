@@ -1,6 +1,6 @@
 ---
 title: Milepælmaler
-description: Dette emnet forklarer hvordan du setter opp funksjonaliteten for milepælfakturering i Abonnementsfakturering.
+description: Denne artikkelen forklarer hvordan du setter opp funksjonaliteten for milepælfakturering i Abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ecc4ddbb4d22eefac36f8cf8205d3b6084bd7d9d
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d3c2cf751e4998c73bc3816e5b81e8d5963c8e53
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686498"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856777"
 ---
 # <a name="milestone-billing"></a>Milepælfakturering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du definerer maler for funksjonaliteten for milepælfakturering i Abonnementsfakturering. For hver linje i milepælmalen kan du definere tildelingsprosenten eller beløpet. Du kan deretter tilordne milepælmalen til faktureringsplanelementer som bruker funksjonaliteten for milepælfakturering.
+Denne artikkelen forklarer hvordan du definerer maler for funksjonaliteten for milepælfakturering i Abonnementsfakturering. For hver linje i milepælmalen kan du definere tildelingsprosenten eller beløpet. Du kan deretter tilordne milepælmalen til faktureringsplanelementer som bruker funksjonaliteten for milepælfakturering.
 
 ## <a name="add-a-template"></a>Legg til en mal
 

@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources 22. oktober 2020
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. oktober 2020.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. oktober 2020.
 author: jcart1106
 ms.date: 10/22/2020
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b36354b14faf59aacb4a619dfb6f243335e6a297
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: d58c8d5eab86779a764cee5a3ee8ca17ade471de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862808"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 22. oktober 2020
 
@@ -27,7 +27,7 @@ ms.locfileid: "8063524"
 
 
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
 Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -50,9 +50,9 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdateringer for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
-| Utstedelsesnummer| Problem  | beskrivelse|
+| Utstedelsesnummer| Problem  | Beskrivelse|
 | --- | --- | --- |
 | 437922 | Import av FMLA-timer ved hjelp av DMF-enheten resulterer i en skrivebeskyttelsesfeil. | Bruk av FMLA-timer-enheten til å importere timer knyttet til en FMLA-sak mislyktes. Vi har lagt til logikk for å sikre at timene som importeres, ikke overskrider timene som gjenstår for saken. |
 | 512019 | Feil **Siste overføring**-beløp. | Hvis du på **Fridager**-siden endrer **Per dato** til den første dagen i den neste regnskapsperioden, vises et feil **Siste overføring**-beløp for typen **Årlig permisjon**. Nå vises det riktig beløp. |

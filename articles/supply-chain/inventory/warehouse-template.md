@@ -1,6 +1,6 @@
 ---
 title: Definere et lager ved hjelp av en mal for lagerkonfigurasjon
-description: Dette emnet forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon.
+description: Denne artikkelen forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon.
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 737b6f2f645ff270e5a49d54ca7542df3c075f94
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571095"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856113"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Definere et lager ved hjelp av en mal for lagerkonfigurasjon
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon. Det finnes flere forhåndsdefinerte konfigurasjonsmaler som du kan bruke. Hvis du vil ha informasjon om hvordan du bruker disse malene, se [Konfigurasjonsdatamaler](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+Denne artikkelen forklarer hvordan du definerer et lager ved hjelp av en mal for lagerkonfigurasjon. Det finnes flere forhåndsdefinerte konfigurasjonsmaler som du kan bruke. Hvis du vil ha informasjon om hvordan du bruker disse malene, se [Konfigurasjonsdatamaler](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scenarier der konfigurasjonsmaler kan være nyttige
 
@@ -38,7 +38,7 @@ Konfigurasjonsmaler kan være nyttige i mange scenarier. Her er noen eksempler:
 - Du vil klargjøre en demonstrasjon av funksjonen for lageret raskt.
 - Du vil at eksisterende elementer og lagre skal bruke funksjonaliteten i Lagerstyring i stedet for funksjonaliteten i Beholdningsstyring.
 
-Dette emnet fokserer på det første av disse scenariene. Det viser hvordan du kan bruke en konfigurasjonsmal til å kopiere et konfigurasjonsoppsett fra et testmiljø til et produksjonsmiljø.
+Denne artikkelen fokserer på det første av disse scenariene. Det viser hvordan du kan bruke en konfigurasjonsmal til å kopiere et konfigurasjonsoppsett fra et testmiljø til et produksjonsmiljø.
 
 ## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a>Kopiere et konfigurasjonsoppsett fra et testmiljø til et produksjonsmiljø
 
@@ -90,9 +90,9 @@ Du kan laste ned en zip-fil for datapakken. Denne filen inneholder alle dataene 
 
 **Vis utførelseslogg** gir deg detaljert informasjon om hver dataenhet som importeres. Du kan bruke oppsamling datavisningen for å gå raskt til målet dataene. På denne måten kan du se hva de importerte dataene ser slik på de tilknyttede sidene i programmet. Når du bruker standard datamalene, fungerer importsekvensen for hver dataenhet på den forhåndsdefinerte måten, for å garantere at alle avhengige data importeres først. Hvis egendefinerte enheter inngår i prosjektet, må du kontrollere at den riktige rekkefølgen er definert. Hvis du vil ha mer informasjon, kan du se [Konfigurasjonsdatamaler](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
-Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne 3-minutters lange YouTube-videoen om [hvordan du bruker lagermalen til å kopiere konfigurasjonen for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjonen for et lager fra ett firma til et nytt selskap i samme forekomst, kan du se denne 3-minutters lange YouTube-videoen: [Bruk lagermalen til å kopiere konfigurasjonen for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
-## <a name="related-topic"></a>Relaterte emne
+## <a name="related-article"></a>Relatert artikkel
 
 [Konfigurasjonsdatamaler](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 

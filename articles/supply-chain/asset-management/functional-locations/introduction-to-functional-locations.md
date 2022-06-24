@@ -1,6 +1,6 @@
 ---
 title: Innføring i arbeidssteder
-description: Dette emnet gir en oversikt over arbeidssteder i Aktivastyring.
+description: Denne artikkelen gir en oversikt over arbeidssteder i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0cb76a05f0f19d3e57d1f79751e8bc5870b3c331aa4d1c37ec8dfde0a3c6d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4a1c8c4db9aee68584ab35949745132091a34a58
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882844"
 ---
 # <a name="introduction-to-functional-locations"></a>Innføring i arbeidssteder
 
@@ -30,7 +30,7 @@ ms.locfileid: "6767561"
 
  
 
-Dette emnet gir en oversikt over arbeidssteder i Aktivastyring. Arbeidssteder er elementer i en teknisk struktur, for eksempel funksjonsenhetene i et system. Arbeidssteder opprettes hierarkisk, og du installerer ressurser på dem. Oppsettet av arbeidssteder i firmaet avhenger av firmaets behov.
+Denne artikkelen gir en oversikt over arbeidssteder i Aktivastyring. Arbeidssteder er elementer i en teknisk struktur, for eksempel funksjonsenhetene i et system. Arbeidssteder opprettes hierarkisk, og du installerer ressurser på dem. Oppsettet av arbeidssteder i firmaet avhenger av firmaets behov.
 
 Her er noen eksempler på hvordan du kan bruke arbeidssteder:
 

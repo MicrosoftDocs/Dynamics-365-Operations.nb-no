@@ -1,6 +1,6 @@
 ---
 title: Forespørsler og rapporter om farlige materialer
-description: Dette emnet beskriver hvordan du arbeider med de ulike rapportene som er knyttet til farlige materialer. Mange av disse rapportene er obligatoriske, slik at du overholder ulike forskrifter for farlige materialer under forsendelse og lagring.
+description: Denne artikkelen beskriver hvordan du arbeider med de ulike rapportene som er knyttet til farlige materialer. Mange av disse rapportene er obligatoriske, slik at du overholder ulike forskrifter for farlige materialer under forsendelse og lagring.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 782b1b4995af09a63c483d2b81ed255a5c11803a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846047"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Forespørsler og rapporter om farlige materialer
 
@@ -63,7 +63,7 @@ For å vise denne rapporten går du til **Behandling av produktinformasjon \> Fo
 
 Hvis du vil ha mer informasjon om hvordan du angir lagergrenser for et frigitt produkt, kan du se [Angi lagringsgrenser for farlige produkter](hazmat-items.md#stock-limits).
 
-Forskriften som brukes for lagergrenser, er definert på siden **Lagerstyringsparametere**. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**, og deretter, i fanen **Rapporter** i **Grense for farlig lagerbeholdning**, angir du en forskriftskode. Hvis du vil ha mer informasjon, kan du se [Definere rapportering av farlige materialer](#set-up) tidligere i dette emnet.
+Forskriften som brukes for lagergrenser, er definert på siden **Lagerstyringsparametere**. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**, og deretter, i fanen **Rapporter** i **Grense for farlig lagerbeholdning**, angir du en forskriftskode. Hvis du vil ha mer informasjon, kan du se [Definere rapportering av farlige materialer](#set-up) tidligere i denne artikkelen.
 
 ## <a name="verified-gross-mass-report"></a>Rapporten Bekreftet bruttomasse
 

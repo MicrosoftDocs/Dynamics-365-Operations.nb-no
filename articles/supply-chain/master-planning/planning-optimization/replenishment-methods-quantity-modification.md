@@ -1,6 +1,6 @@
 ---
 title: Etterfyllingsmetoder og antallsendring
-description: Dette emnet inneholder informasjon om etterfyllingsmetoder i planleggingsoptimalisering. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
+description: Denne artikkelen inneholder informasjon om etterfyllingsmetoder i planleggingsoptimalisering. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc7eb00f62b334ba032af6fef87c243a7ba0835a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468545"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873702"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Etterfyllingsmetoder og antallsendring
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet inneholder informasjon om etterfyllingsmetoder i planleggingsoptimalisering. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
+Denne artikkelen inneholder informasjon om etterfyllingsmetoder i planleggingsoptimalisering. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
 
 Etterfyllingsmetoder kalles også dekningsmetoder og metoder for justering av partistørrelse.
 

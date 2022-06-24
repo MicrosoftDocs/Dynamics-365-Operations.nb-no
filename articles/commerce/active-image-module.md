@@ -1,6 +1,6 @@
 ---
 title: Aktiv bildemodul
-description: Dette emnet dekker aktive bildemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker aktive bildemoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 3d532d21f847a80a16af814eeaf097a616605795
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853856"
 ---
 # <a name="active-image-module"></a>Aktiv bildemodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker aktive bildemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker aktive bildemoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 
 En aktiv bildemodul kan brukes til å bygge inn produktkoder i et bilde. Brukere av e-handelsområder kan deretter holde markøren over kodene for å forhåndsvise produkter som vises i bildet. Forhåndsvisningene vises i popup-vinduer. Ved å velge et popup-vindu for forhåndsvisning kan brukerne gå direkte til produktdetaljersiden (PDP) for det tilsvarende produktet.
 

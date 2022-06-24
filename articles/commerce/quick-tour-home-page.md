@@ -1,6 +1,6 @@
 ---
 title: Oversikt over startside
-description: Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4c65d040696a72a42c89934533bad6a69c5923f5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ce94dce081957af620e3ab85e466877c0bcc5bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984500"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844678"
 ---
 # <a name="home-page-overview"></a>Oversikt over startside
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
+Denne artikkelen inneholder en oversikt over startsiden i Microsoft Dynamics 365 Commerce.
 
 Startsiden er standardsiden kunder går til når de besøker et område for e-handel. Denne siden viser vanligvis produkter og kampanjer ved hjelp av en kombinasjon av markedsføringsmoduler. Startsiden bør inneholde mange bilder og tekst for å holde kundene engasjert.
 
@@ -33,7 +33,7 @@ Illustrasjonen nedenfor viser et eksempel på en startside som ble bygd ved hjel
 
 ![Eksempel på en startside.](./media/Homepage2.PNG)
 
-Toppen av startsiden har en topptekst som viser alle produktkategoriene og andre sider som forhandleren vil at kunder skal bla gjennom. Bunnen på startsiden har en bunntekst som inneholder hurtigkoblinger til ulike emner som kan være av interesser for kunder.
+Toppen av startsiden har en topptekst som viser alle produktkategoriene og andre sider som forhandleren vil at kunder skal bla gjennom. Bunnen på startsiden har en bunntekst som inneholder hurtigkoblinger til ulike artikler som kan være av interesser for kunder.
 
 Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hjelp av ulike Dynamics 365 Commerce-moduler:
 
@@ -49,8 +49,8 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 
     ![Eksempler på funksjonsmoduler.](./media/Feature.PNG)
 
-- **Tittel** – Et titteloppsett av en innholdsblokkmodul brukes til å vise flere produkter eller produktkategorier ved å bruke en kombinasjon av bilder og tekst i et oppsett med flere kolonner. I illustrasjonen av en startside som vises tidligere i dette emnet, brukes et flisoppsett for gjengivelsen av tre kolonner for varegruppene **Produkter for kvinner**, **Produkter for menn** og **Tilbehør**.
-- **Videospiller** – En videospillermodul kan brukes til å vise videoinnhold på startsiden. Illustrasjonen av en startside som vises tidligere i dette emnet, inneholder en videospillermodul.
+- **Tittel** – Et titteloppsett av en innholdsblokkmodul brukes til å vise flere produkter eller produktkategorier ved å bruke en kombinasjon av bilder og tekst i et oppsett med flere kolonner. I illustrasjonen av en startside som vises tidligere i denne artikkelen, brukes et flisoppsett for gjengivelsen av tre kolonner for varegruppene **Produkter for kvinner**, **Produkter for menn** og **Tilbehør**.
+- **Videospiller** – En videospillermodul kan brukes til å vise videoinnhold på startsiden. Illustrasjonen av en startside som vises tidligere i denne artikkelen, inneholder en videospillermodul.
 - **Tekstblokk** – En innholdsrik blokkmodul kan brukes til å presentere tekstinnhold på startsiden i et oppsett med én eller to kolonner.
 - **Produktanbefalinger** – Produktanbefalingsmoduler brukes til å vise lister som **Nye**, **Tendenser** og **Bestselgere** på startsiden. Disse listene viser produkter basert på handletrender, og de kan genereres algoritmisk eller lagres manuelt. De hjelper kunder med å finne toppvarer raskt og deretter fortsette å handle.
 

@@ -1,6 +1,6 @@
 ---
 title: Massedistribusjon av forseglede Commerce-selvbetjeningskomponenter
-description: Dette emnet forklarer hvordan du bruker rammeverket for installasjonsprogrammer for selvbetjeningskomponenter til stille installasjon og vedlikehold av distribusjoner.
+description: Denne artikkelen forklarer hvordan du bruker rammeverket for installasjonsprogrammer for selvbetjeningskomponenter til stille installasjon og vedlikehold av distribusjoner.
 author: jashanno
 ms.date: 05/11/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 5cb27fd0ea366d12c8bd6ee1cdb0c6d584375862
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: a679d78db3ad5bd9cccbd4ab6a7026bd07890f55
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741558"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898585"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Massedistribusjon av forseglede Commerce-selvbetjeningskomponenter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gjelder det forseglede rammeverket, installasjonsprogrammer for komponenter som gis ut hver måned og begynner med versjon 10.0.18, og som gjøres tilgjengelig i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Vær oppmerksom på at de første utgivelsene av disse nye installasjonsprogrammene betegnes som **(Forhåndsversjon)**. Det eneste formålet med denne betegnelsen er imidlertid å holde de nye installasjonsprogrammene atskilt, mens Microsoft fastsetter om det finnes ytterligere funksjonskrav for å bruke dem. Det betyr ikke at installasjonsprogrammene er ugyldige for produksjon. Microsoft planlegger å avskrive de gamle (eldre) installasjonsprogrammene i eller rundt oktober 2023, basert på utgivelsen av disse nye installasjonsprogrammene. 
+Denne artikkelen gjelder det forseglede rammeverket, installasjonsprogrammer for komponenter som gis ut hver måned og begynner med versjon 10.0.18, og som gjøres tilgjengelig i det delte aktivabiblioteket i Microsoft Dynamics Lifecycle Services (LCS). Vær oppmerksom på at de første utgivelsene av disse nye installasjonsprogrammene betegnes som **(Forhåndsversjon)**. Det eneste formålet med denne betegnelsen er imidlertid å holde de nye installasjonsprogrammene atskilt, mens Microsoft fastsetter om det finnes ytterligere funksjonskrav for å bruke dem. Det betyr ikke at installasjonsprogrammene er ugyldige for produksjon. Microsoft planlegger å avskrive de gamle (eldre) installasjonsprogrammene i eller rundt oktober 2023, basert på utgivelsen av disse nye installasjonsprogrammene. 
 
-Dette emnet forklarer hvordan du bruker de nye installasjonsprogrammene til å utføre stille installasjon og vedlikeholdsoppdateringer via kommandolinjeargumenter. Disse argumentene lar deg foreta massedistribusjon på flere ulike måter.
+Denne artikkelen forklarer hvordan du bruker de nye installasjonsprogrammene til å utføre stille installasjon og vedlikeholdsoppdateringer via kommandolinjeargumenter. Disse argumentene lar deg foreta massedistribusjon på flere ulike måter.
 
 > [!NOTE]
 > De nye selvbetjente, forseglede installasjonsprogrammene blir ikke tilgjengelige i Headquarters og kan bare lastes ned via LCS.
@@ -108,7 +108,7 @@ Overgangen fra de gamle selvbetjente installasjonsprogrammene for komponenter ti
 
 ### <a name="before-you-begin"></a>Før du begynner
 
-Det er helt avgjørende at du fjerner den gamle, selvbetjente Modern POS-komponenten. Hvis du vil ha mer informasjon, kan du se overgangstrinnene tidligere i dette emnet.
+Det er helt avgjørende at du fjerner den gamle, selvbetjente Modern POS-komponenten. Hvis du vil ha mer informasjon, kan du se overgangstrinnene tidligere i denne artikkelen.
 
 ### <a name="examples-of-silent-deployment"></a>Eksempler på stille distribusjon
 
@@ -125,7 +125,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> En konfigurasjonsfil kreves ikke for Modern POS. Installasjonsprogrammet har nå parametere (vist tidligere i dette emnet) for de ulike verdiene som brukes under enhetsaktivering.
+> En konfigurasjonsfil kreves ikke for Modern POS. Installasjonsprogrammet har nå parametere (vist tidligere i denne artikkelen) for de ulike verdiene som brukes under enhetsaktivering.
 
 Kommandoen nedenfor angir alle parameterne som skal brukes under enhetsaktivering etter at programmet Modern POS er installert. I dette eksemplet brukes kassen **Houston-3**, som er en vanlig verdi i demodataene for Dynamics 365 Commerce.
 
@@ -145,7 +145,7 @@ Du kan kombinere disse begrepene på ulike måter for å oppnå installasjonsres
 
 ### <a name="before-you-begin"></a>Før du begynner
 
-Det er helt avgjørende at du fjerner den gamle, selvbetjente maskinvarestasjonskomponenten. Hvis du vil ha mer informasjon, kan du se overgangstrinnene tidligere i dette emnet. Det finnes ikke lenger et informasjonsverktøy for forhandlerkonto. Informasjonen om forhandlerkonto blir i stedet installert når en POS-terminal sammenkobles med maskinvarestasjonen. Vi anbefaler på det sterkeste at du kjører følgende kommando når du tester dette installasjonsprogrammet for første gang:
+Det er helt avgjørende at du fjerner den gamle, selvbetjente maskinvarestasjonskomponenten. Hvis du vil ha mer informasjon, kan du se overgangstrinnene tidligere i denne artikkelen. Det finnes ikke lenger et informasjonsverktøy for forhandlerkonto. Informasjonen om forhandlerkonto blir i stedet installert når en POS-terminal sammenkobles med maskinvarestasjonen. Vi anbefaler på det sterkeste at du kjører følgende kommando når du tester dette installasjonsprogrammet for første gang:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -166,7 +166,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> En konfigurasjonsfil kreves ikke for maskinvarestasjonen. Installasjonsprogrammet har nå parametere (vist tidligere i dette emnet) for de ulike verdiene som kreves.
+> En konfigurasjonsfil kreves ikke for maskinvarestasjonen. Installasjonsprogrammet har nå parametere (vist tidligere i denne artikkelen) for de ulike verdiene som kreves.
 
 Følgende kommando angir alle parameterne som kreves for å hoppe over de nødvendige kontrollene under en standardinstallasjon. 
 
@@ -189,7 +189,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### <a name="before-you-begin"></a>Før du begynner
 
-Det er helt avgjørende at du fjerner den gamle, selvbetjente CSU-komponenten (selvdriftet). Hvis du vil ha mer informasjon, kan du se overgangstrinnene tidligere i dette emnet.
+Det er helt avgjørende at du fjerner den gamle, selvbetjente CSU-komponenten (selvdriftet). Hvis du vil ha mer informasjon, kan du se overgangstrinnene tidligere i denne artikkelen.
 
 ### <a name="examples-of-silent-deployment"></a>Eksempler på stille distribusjon
 

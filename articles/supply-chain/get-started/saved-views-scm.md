@@ -1,6 +1,6 @@
 ---
 title: Standard lagrede visninger for Supply Chain Management
-description: Dette emnet beskriver standard lagrede visninger som er tilgjengelige, og forklarer hvordan du aktiverer dem.
+description: Denne artikkelen beskriver standard lagrede visninger som er tilgjengelige, og forklarer hvordan du aktiverer dem.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 0709574ea44fcf841321044da31781862fcf1420
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 92ff2dfc9cd8b742a7b086e540bd2c527833254d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103694"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887580"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standard lagrede visninger for Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management har flere lagrede visninger du kan aktivere og bruke etter behov. Noen av disse standard lagrede visningene er optimalisert og navngitt for en bestemt rolle eller oppgave (for eksempel «Kvalitetskontroll» eller «Mottak»). Andre er optimalisert slik at de bare inneholder feltene og innstillingene som Microsoft-bruksstatistikk angir brukes oftest av kunder. Disse lagrede visningene kalles vanligvis *forenklede* visninger. Dette emnet beskriver standard lagrede visninger som er tilgjengelige, og forklarer hvordan du aktiverer og tilpasser dem.
+Microsoft Dynamics 365 Supply Chain Management har flere lagrede visninger du kan aktivere og bruke etter behov. Noen av disse standard lagrede visningene er optimalisert og navngitt for en bestemt rolle eller oppgave (for eksempel «Kvalitetskontroll» eller «Mottak»). Andre er optimalisert slik at de bare inneholder feltene og innstillingene som Microsoft-bruksstatistikk angir brukes oftest av kunder. Disse lagrede visningene kalles vanligvis *forenklede* visninger. Denne artikkelen beskriver standard lagrede visninger som er tilgjengelige, og forklarer hvordan du aktiverer og tilpasser dem.
 
 Hvis du vil ha fullstendig informasjon om hvordan du arbeider med lagrede visninger, inkludert de standard lagrede visningene etter at du har aktivert dem, kan du se [Lagrede visninger](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -39,7 +39,7 @@ Hvis du vil ha mer informasjon om hvordan du tilpasser og gir nytt navn til lagr
 
 Hvis du vil bruke lagrede visninger, må du aktivere funksjonen *Lagrede visninger* i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), uavhengig av om du vil bruke standard lagrede visninger (denne funksjonen er aktivert som standard fra og med versjon 10.0.21).
 
-Resten av delene i dette emnet inneholder tabeller som beskriver standard lagrede visninger som for øyeblikket er tilgjengelige for hver relevante modul. Hver tabell viser navnet på hver lagrede visning, siden der du finner den, og en beskrivelse av den. Hver tabell viser også navnet på funksjonen som omfatter den lagrede visningen. Hvis du vil se en standard lagret visning i systemet, må du aktivere den angitte funksjonen i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Fra og med versjon 10.0.25 er alle visninger i listen aktivert som standard.
+Resten av delene i denne artikkelen inneholder tabeller som beskriver standard lagrede visninger som for øyeblikket er tilgjengelige for hver relevante modul. Hver tabell viser navnet på hver lagrede visning, siden der du finner den, og en beskrivelse av den. Hver tabell viser også navnet på funksjonen som omfatter den lagrede visningen. Hvis du vil se en standard lagret visning i systemet, må du aktivere den angitte funksjonen i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Fra og med versjon 10.0.25 er alle visninger i listen aktivert som standard.
 
 ## <a name="saved-views-for-the-inventory-management-module"></a>Lagrede visninger for lagerstyringsmodulen
 

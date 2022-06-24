@@ -1,6 +1,6 @@
 ---
 title: Registrere ordrer raskt på B2B-nettsted
-description: Dette emnet beskriver funksjonene i Microsoft Dynamics 365 Commerce som brukere på bedrift-til-bedrift-områder (B2B) kan bruke til å registrere bulkordrer og gjentatte ordrer.
+description: Denne artikkelen beskriver funksjonene i Microsoft Dynamics 365 Commerce som brukere på bedrift-til-bedrift-områder (B2B) kan bruke til å registrere bulkordrer og gjentatte ordrer.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b13fb49c49b0a540b192f4dd0f3a847fb5dd8a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686552"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881367"
 ---
 # <a name="place-b2b-website-orders-quickly"></a>Registrere ordrer raskt på B2B-nettsted
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver funksjonene i Microsoft Dynamics 365 Commerce som brukere på bedrift-til-bedrift-områder (B2B) kan bruke til å registrere bulkordrer og gjentatte ordrer.
+Denne artikkelen beskriver funksjonene i Microsoft Dynamics 365 Commerce som brukere på bedrift-til-bedrift-områder (B2B) kan bruke til å registrere bulkordrer og gjentatte ordrer.
 
 På B2B-e-handelsnettsteder for Dynamics 365 Commerce kan bruker utføre standardoperasjoner, for eksempel oppdage nye produkter ved å søke og bla gjennom, vise produktdetaljer, legge varer i handlekurven og gå til kassen. Mens kunder på bedrift-til-kunde-områder (B2C) generelt bestiller varer i små mengder og bare én gang, bestiller imidlertid B2B-kunder vanligvis varer i store mengder og på nytt flere ganger. Siden disse kundene vanligvis vet nøyaktig hvilke varer de ønsker å kjøpe, hopper de ofte over produktoppdagingsfasen og går direkte til bestilling. For å oppfylle behovene til disse kundene tilbyr B2B-e-handelsnettsteder for Commerce ulike funksjoner som gjør at de kan registrere ordrer raskt.
 
@@ -65,4 +65,4 @@ Illustrasjonen nedenfor viser et eksempel på ordrehistorikken til en bruker og 
 
 ![Bestille på nytt fra ordrehistorikk.](../media/Reorder.png)
 
-Dette emnet har beskrevet bare noen av funksjonene på B2B-områder for Commerce som gjør det enklere for bruker å finne, bestille og gjenbestille produktene de ønsker. Flere funksjoner er under utvikling for å gjøre det enda enklere å registrere bulkordrer.
+Denne artikkelen har beskrevet bare noen av funksjonene på B2B-områder for Commerce som gjør det enklere for bruker å finne, bestille og gjenbestille produktene de ønsker. Flere funksjoner er under utvikling for å gjøre det enda enklere å registrere bulkordrer.

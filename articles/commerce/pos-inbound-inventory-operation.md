@@ -1,6 +1,6 @@
 ---
-title: Inngående lageroperasjon på salgsstedet
-description: Dette emnet beskriver funksjonene til inn kommende lageroperasjoner på salgsstedet (POS).
+title: Inngående lageroperasjon i salgsstedet
+description: Denne artikkelen beskriver funksjonene til innkommende lageroperasjoner på salgsstedet (POS).
 author: hhaines
 ms.date: 09/17/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741788"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858888"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inngående lageroperasjon i salgsstedet
 
@@ -215,7 +215,7 @@ Når utkastdokumentet er sendt til et Commerce Headquarters, vises det i kategor
 
 Når dokumentet har statusen **Forespurt**, vises det i kategorien **Aktiv**. Det kan imidlertid ikke ennå mottas av den inngående butikken eller lageret. Når det utgående lageret har levert noen av eller alle overføringsordrene, kan den inngående butikken eller lageret postere mottak i POS. Når den utgående siden behandler overføringsordredokumentene, oppdateres statusen fra **Forespurt** til **Sendt** eller **Delvis sendt**. Når dokumentene har statusen **Sendt** eller **Delvis sendt**, kan den inngående butikken eller lageret postere mottak mot dem ved hjelp av mottaksprosessen for innkommende operasjoner.
 
-## <a name="related-topics"></a>Relaterte emner
+## <a name="related-articles"></a>Relaterte artikler
 
 [Utgående lageroperasjon på salgsstedet](pos-outbound-inventory-operation.md)
 

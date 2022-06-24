@@ -1,6 +1,6 @@
 ---
-title: Plan for den globale adresseboken og andre adressebøker
-description: Dette emnet beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen.
+title: Planlegge den globale adresseboken og andre adressebøker
+description: Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen.
 author: msftbrking
 ms.date: 01/13/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b3f6a74c217b0cc7cec784ca6a964ab2caae0c7e9438aee2cc82987a508d63
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 288c96d8c877f5e3b3101080294b2f6cdeb39882
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771902"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863166"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planlegge den globale adresseboken og andre adressebøker
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet.
+Denne artikkelen beskriver vurderingene og beslutningene som du må ta i planleggingsprosessen før du definerer og konfigurerer den globale adresseboken og eventuelle tilleggsadressebøker. Noen av avgjørelsene krever at du bekrefter beslutningene som er gjort for andre deler av produktet, for eksempel organisasjonshierarkiet.
 
 ## <a name="global-address-book"></a>Global adressebok
 

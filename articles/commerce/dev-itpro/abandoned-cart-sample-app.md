@@ -1,6 +1,6 @@
 ---
 title: Registrere forlatte handlekurver og sende varslinger til kunder
-description: Dette emnet beskriver hvordan du tilpasser eksempelappen for kobling for forlatt handlekurv i Microsoft Dynamics 365 Commerce for å registrere forlatte handlekurver og sende e-postvarslinger med påminnelse til kunder.
+description: Denne artikkelen beskriver hvordan du tilpasser eksempelappen for kobling for forlatt handlekurv i Microsoft Dynamics 365 Commerce for å registrere forlatte handlekurver og sende e-postvarslinger med påminnelse til kunder.
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1db4e988653aa55db2b18fb201edeafc4d16a1bc
-ms.sourcegitcommit: ab690bc897699ff8a4c489e749251fe0367050ca
+ms.openlocfilehash: 707640ca211e997533d0f5a0b4e6d52cb5be9db4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "8489036"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899216"
 ---
 # <a name="detect-abandoned-carts-and-send-notifications-to-customers"></a>Registrere forlatte handlekurver og sende varslinger til kunder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du tilpasser eksempelappen for kobling for forlatt handlekurv i Microsoft Dynamics 365 Commerce for å registrere forlatte handlekurver og sende e-postvarslinger med påminnelse til kunder.
+Denne artikkelen beskriver hvordan du tilpasser eksempelappen for kobling for forlatt handlekurv i Microsoft Dynamics 365 Commerce for å registrere forlatte handlekurver og sende e-postvarslinger med påminnelse til kunder.
 
 Det å kunne gjenvinne inntekt og beholde kunder via varslinger om forlatte handlekurver er en viktig funksjon som Dynamics 365 Commerce støtter. Detaljister kan få tilgang til handlekurver på Retail Server som ikke er endret innen et tidsvindu som detaljistene definerer, ved å tilpasse eksempelappen for kobling for forlatt handlekurv i Commerce. Disse handlekurvene kan deretter hentes, forsterkes med produkt- og kundedata og sendes videre til en tredjepartsleverandør av e-postmarkedsføring som kan generere e-postvarslinger og sende dem til kunder.
 

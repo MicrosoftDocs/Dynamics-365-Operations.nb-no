@@ -1,6 +1,6 @@
 ---
 title: Oversikt over kontobehandlingssider
-description: Dette emnet gir en oversikt over kontohandlingssider i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over kontohandlingssider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9cc70f48371fb90f4e3529173d30baffd6fe4e14
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868889"
 ---
 # <a name="account-management-pages-overview"></a>Oversikt over kontobehandlingssider
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over kontohandlingssider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over kontohandlingssider i Microsoft Dynamics 365 Commerce.
 
 Med kontobehandlingssider kan kunder vise informasjon som er knyttet til kontoene sine og ordrene. Kontobehandlingssidene inkluderer målsiden for kontostyring og sider for brukerprofil, adresser, ordrelogg, ordredetaljer, loyalitetspoeng og ønskeliste.
 

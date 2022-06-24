@@ -1,6 +1,6 @@
 ---
-title: Aktivere manuell publisering av vurderinger og vurderinger av en moderator
-description: Dette emnet beskriver hvordan du aktiverer manuell publisering av vurderinger og omtaler av en moderator i Microsoft Dynamics 365 Commerce, og hvordan du publiserer vurderinger og omtaler manuelt.
+title: Aktiver manuell publisering av rangeringer og anmeldelser av en moderator
+description: Denne artikkelen beskriver hvordan du aktiverer manuell publisering av vurderinger og omtaler av en moderator i Microsoft Dynamics 365 Commerce, og hvordan du publiserer vurderinger og omtaler manuelt.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 09/03/2021
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 0709173b8c3dfb7018d0bd9a712554112722a1f3
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 7d90cbbdc1ac0368c6ccfbeef7ff8db9b65679a7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8693288"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892629"
 ---
-# <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Aktivere manuell publisering av vurderinger og vurderinger av en moderator
+# <a name="enable-manual-publishing-of-ratings-and-reviews-by-a-moderator"></a>Aktiver manuell publisering av rangeringer og anmeldelser av en moderator
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du aktiverer manuell publisering av vurderinger og omtaler av en moderator i Microsoft Dynamics 365 Commerce, og hvordan du publiserer vurderinger og omtaler manuelt.
+Denne artikkelen beskriver hvordan du aktiverer manuell publisering av vurderinger og omtaler av en moderator i Microsoft Dynamics 365 Commerce, og hvordan du publiserer vurderinger og omtaler manuelt.
 
 Dynamics 365 Commerce sin løsning for vurderinger og omtaler bruker Azure Cognitive Services til å automatisk fjerne upassende ord i gjennomgangstitler og -innhold, og til å publisere vurderinger og omtaler. Derfor er ikke manuell inngripen nødvendig for å gå gjennom og publisere vurderinger og omtaler på e-handelsområdet.
 

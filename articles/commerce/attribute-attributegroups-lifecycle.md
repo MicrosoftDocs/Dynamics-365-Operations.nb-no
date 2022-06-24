@@ -1,6 +1,6 @@
 ---
 title: Administere attributter og attributtgrupper
-description: Dette emnet beskriver hvordan du bruker attributter til å beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
+description: Denne artikkelen beskriver hvordan du bruker attributter til å beskrive et produkt og egenskapene ved hjelp av brukerdefinerte felt.
 author: ashishmsft
 ms.date: 04/28/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cd74cb7795366bdca80e47d79a9591af69a16daf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727660"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876670"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Administere attributter og attributtgrupper
 
@@ -85,7 +85,7 @@ Attributter er basert på *attributtyper*. Attributtypen identifiserer datatypen
 
 Med *Attributtmetadata* kan du velge alternativer for å angi hvordan attributtene for hvert produkt skal fungere. Du kan for eksempel angi om attributter skal være obligatoriske, om de skal brukes til søk, og om de kan brukes som et filter.
 
-Innstillingene for attributtet kan overstyres på kanalnivå for produkter. Denne funksjonen diskuteres senere i dette emnet.
+Innstillingene for attributtet kan overstyres på kanalnivå for produkter. Denne funksjonen diskuteres senere i denne artikkelen.
 
 Som du kanskje har merket deg, inneholder **Attributter**-siden alternativer som er knyttet til Attributtmetadata. Under **Attributtmetadata for POS**, påvirker et alternativ som heter **Kan justeres** atferden til attributtverdier på salgsstedet, eller måten systemet behandler disse attributtverdiene. Bare attributtene der du kan angi **Kan justeres** til **Ja**, vises for finjustering eller filtrering av produkter på salgsstedet.
 

@@ -1,6 +1,6 @@
 ---
 title: Fakturaadministrasjon for B2B-e-handelsnettsteder
-description: Dette emnet beskriver funksjonene for fakturaadministrasjon på bedrift-til-bedrift-e-handelsnettsteder (B2B) for Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver funksjonene for fakturaadministrasjon på bedrift-til-bedrift-e-handelsnettsteder (B2B) for Microsoft Dynamics 365 Commerce.
 author: shajain
 ms.date: 02/16/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 60cb0c8aaede4a0eaeed80cf5ebe41068da57836
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: fa6b81187481a6b7f47ea02291e5a581052d6c7b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854932"
 ---
 # <a name="invoice-management-for-b2b-e-commerce-websites"></a>Fakturaadministrasjon for B2B-e-handelsnettsteder
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver funksjonene for fakturaadministrasjon på bedrift-til-bedrift-e-handelsnettsteder (B2B) for Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver funksjonene for fakturaadministrasjon på bedrift-til-bedrift-e-handelsnettsteder (B2B) for Microsoft Dynamics 365 Commerce.
 
 Det er en vanlig praksis for firmaer som håndterer B2B-transaksjoner, å godta ordrer på kundekreditt og deretter sende en faktura til kunder etter at de har oppfylt ordren. Betalingsbetingelser er definert for kunder, og det er kanskje gjeldende rabatter som motiverer kunder til å betale til rett tid eller før tiden. B2B-e-handelsnettsteder lar kundene vise alle fakturaene for å bidra til å øke sannsynligheten for at betalinger mottas i tide. Kunden kan enkelt filtrere fakturaene slik at betalte, ubetalte og delvis betalte fakturaer vises sammen med forfallsdatoene.
 

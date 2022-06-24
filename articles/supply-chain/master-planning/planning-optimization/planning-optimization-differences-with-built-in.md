@@ -1,6 +1,6 @@
 ---
 title: Forskjeller mellom innebygd hovedplanlegging og planleggingsoptimalisering
-description: Dette emnet viser funksjoner som Planleggingsoptimalisering ennå ikke støtter, og som ikke er oppført på siden Analyse for tilpasning av planleggingsoptimalisering.
+description: Denne artikkelen viser funksjoner som Planleggingsoptimalisering ennå ikke støtter, og som ikke er oppført på siden Analyse for tilpasning av planleggingsoptimalisering.
 author: t-benebo
 ms.date: 07/30/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c73587015d6714c409819ab19ad68685aaa71cf7
-ms.sourcegitcommit: 70289a33b0a6ff3f9418d91a928db452cfd815bd
+ms.openlocfilehash: cf39166dce860dbd796cb4749175628252ed96ea
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "8618267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897581"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>Forskjeller mellom innebygd hovedplanlegging og planleggingsoptimalisering
 
 [!include [banner](../../includes/banner.md)]
 
-Resultatet av planleggingsoptimalisering kan være forskjellig fra den innebygde hovedplanleggingsmotoren. Forskjellen kan også skyldes ventende funksjoner. Dette emnet viser funksjoner som Planleggingsoptimalisering ennå ikke støtter, og som ikke er oppført på siden **[Analyse for tilpasning av planleggingsoptimalisering](planning-optimization-fit-analysis.md)**.
+Resultatet av planleggingsoptimalisering kan være forskjellig fra den innebygde hovedplanleggingsmotoren. Forskjellen kan også skyldes ventende funksjoner. Denne artikkelen viser funksjoner som Planleggingsoptimalisering ennå ikke støtter, og som ikke er oppført på siden **[Analyse for tilpasning av planleggingsoptimalisering](planning-optimization-fit-analysis.md)**.
 
 | Funksjon | Gjeldende virkemåte i Planleggingsoptimalisering |
 |---|---|

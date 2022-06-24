@@ -1,6 +1,6 @@
 ---
 title: Konfigurer integrering med Dayforce
-description: Dette emnet beskriver konfigurasjonstrinnene som kreves for integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce.
+description: Denne artikkelen beskriver konfigurasjonstrinnene som kreves for integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4e95a78364fcee2c03614e110f9b5983abfde37
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 5a5d296dd4c1b09065fc47673dd540d8c122c482
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896141"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurer integrering med Dayforce
 
@@ -28,7 +28,7 @@ ms.locfileid: "8691339"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i dette emnet. Du må konfigurere integreringen i både Human Resources og Dayforce før du kan behandle en lønnskjøring.
+Integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i denne artikkelen. Du må konfigurere integreringen i både Human Resources og Dayforce før du kan behandle en lønnskjøring.
 
 Når du bruker en tjeneste som Dayforce til å fullføre lønnskjøringer, må du aktivere integrering i Human Resources. Integreringen krever bestemte data fra Human Resources. Derfor må du kontrollere at data som tilordnes til Dayforce, er konfigurert i Human Resources på en måte som støtter integreringen. Integrasjonen bruker følgende brede datakategorier:
 
@@ -37,7 +37,7 @@ Når du bruker en tjeneste som Dayforce til å fullføre lønnskjøringer, må d
 - Lønnsdata, for eksempel lønnssykluser, lønnsperioder og inntektskoder
 - Arbeiderdata
 
-Dette emnet beskriver trinnene du må følge for å aktivere integreringen, og forklarer datatypene og konfigurasjonsdetaljene som integreringen krever.
+Denne artikkelen beskriver trinnene du må følge for å aktivere integreringen, og forklarer datatypene og konfigurasjonsdetaljene som integreringen krever.
 
 ## <a name="enable-the-integration"></a>Aktivere integrasjonen
 

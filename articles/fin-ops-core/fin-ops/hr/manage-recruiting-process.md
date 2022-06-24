@@ -1,6 +1,6 @@
 ---
 title: Administrere rekrutteringsprosesser
-description: Dette emnet beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en rekrutteringsprosess.
+description: Denne artikkelen beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en rekrutteringsprosess.
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb7cc1db906ba0cd07caaa1d82a12182f78b19ba
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 1ada6dfc9b227c7ae4ca873e8354d1fcc11ecbaf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735381"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910326"
 ---
 # <a name="manage-recruiting-processes"></a>Administrere rekrutteringsprosesser
 
 > [!IMPORTANT]
-> Rekrutteringsfunksjonaliteten i dette emnet kalles Rekrutteringsprosjekter og fokuserer på søkere, søknader og rekrutteringsprosjekter. 
+> Rekrutteringsfunksjonaliteten i denne artikkelen kalles Rekrutteringsprosjekter og fokuserer på søkere, søknader og rekrutteringsprosjekter. 
 
 
-Dette emnet beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en Rekruttering prosess, inkludert aktiviteter for å annonsere ledige stillinger og rekruttere søkere, spore søker- og søknadsinformasjon, intervjue søkere og velge én eller flere kandidater for å besette de ledige stillingene i organisasjonen.
+Denne artikkelen beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en Rekruttering prosess, inkludert aktiviteter for å annonsere ledige stillinger og rekruttere søkere, spore søker- og søknadsinformasjon, intervjue søkere og velge én eller flere kandidater for å besette de ledige stillingene i organisasjonen.
 
 ## <a name="overview"></a>Oversikt
 

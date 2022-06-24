@@ -1,6 +1,6 @@
 ---
 title: Utform grensesnittet for produksjonsutførelse
-description: Emnet beskriver hvordan du konfigurerer skjemakontroller slik at standard stiler for produksjonsgulvutførelse brukes på dem.
+description: Artikkelen beskriver hvordan du konfigurerer skjemakontroller slik at standard stiler for produksjonsgulvutførelse brukes på dem.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ef39dc6414f0afdadd4a4b5a41e1fb1fe60e4974
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: ad6ecd591353fe8ddc1a5b9049d65491fb58e98a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790896"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859147"
 ---
 # <a name="style-the-production-floor-execution-interface"></a>Utform grensesnittet for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
 
-Emnet beskriver hvordan du konfigurerer skjemakontroller slik at standard stiler for produksjonsgulvutførelse brukes på dem.
+Artikkelen beskriver hvordan du konfigurerer skjemakontroller slik at standard stiler for produksjonsgulvutførelse brukes på dem.
 
 ## <a name="forms-and-dialogs"></a>Skjemaer og dialogbokser
 
@@ -31,7 +31,7 @@ Stiler kan bare brukes på et skjema eller en dialogboks hvis følgende krav er 
 - Hvis skjemaet skal ligne på et eksisterende skjema for fremdrift i rapporten, må navnet på skjemaet eller dialogboksen begynne med `JmgProductionFloorExecutionCustomInputDialog`.
 - Skjemaet eller dialogboksen kan inneholde en detaljskjemadel. Hvis du vil bruke stiler på den, må navnet på detaljskjemadelen starte med `JmgProductionFloorExecutionCustomDetailsDialog`.
 - Hvis skjemaet eller dialogboksen skal ha en enkel visning, må navnet på den enkle visningen starte med `JmgProductionFloorExecutionCustomDialog`. Eksempler på skjemaer som har enkel visning, inkluderer startskjemaet og skjemaet for indirekte aktivitet.
-- Alle kontrollene i dialogboksen må konfigureres som beskrevet i dette emnet.
+- Alle kontrollene i dialogboksen må konfigureres som beskrevet i denne artikkelen.
 
 > [!IMPORTANT]
 > Funksjonene som nevnes i de to første poengene til denne listen, krever Supply Chain Management versjon 10.0.19 eller senere.

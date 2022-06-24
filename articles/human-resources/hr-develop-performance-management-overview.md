@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c1ef722eabc3c3bc740f9ff5d959cfa005862a9b
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 28caacaafa5ef20a3d8e1ce93851c48bd4af89a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735730"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848201"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
 
@@ -79,9 +79,9 @@ Ytelsesjournalen inneholder beskrivelse av<!--note from editor: Suggested.--> ak
 
 Hvis du vil knytte et dokument til målet, for eksempel en fullførelsesattest, kan du legge det ved i **Vedlegg**-delen på **Ytelsesmål**-siden. Et visningsprogram gjør at du raskt kan vise innholdet i et vedlagt dokument. 
 
-Du kan opprette en mal fra et mål, og deretter bruke malen til å opprette nye mål som er basert på malen. Når du oppretter en mal fra et mål, lagres beskrivelsen, emnene og målingene for målet. Alle faktiske målinger, fullføringsdatoer og emnekommentarer fjernes imidlertid.
+Du kan opprette en mal fra et mål, og deretter bruke malen til å opprette nye mål som er basert på malen. Når du oppretter en mal fra et mål, lagres beskrivelsen, emnene og målingene for målet. Alle faktiske målinger, fullføringsdatoer og artikkelkommentarer fjernes imidlertid.
 
-## <a name="performance-reviews"></a>Ytelsesvurderinger
+## <a name="performance-reviews"></a>Gjennomganger av ytelse
 
 Ytelsesvurderinger er også kjent som diskusjoner. De er nå fleksible nok til å støtte fortløpende tilbakemelding, utviklingsplaner og mer formelle vurderinger. Du kan raskt opprette mindre møter for to personer<!--note from editor: I think "one-on-one meeting" is implied by "two people."--> eller du kan lage en mer omfattende vurdering som samsvarer med vurderingsprosessen i firmaet. 
 

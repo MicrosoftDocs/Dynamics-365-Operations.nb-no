@@ -1,6 +1,6 @@
 ---
-title: Bygge egendefinerte svarsider for 4xx/5xx-statuskodefeil
-description: Dette emnet beskriver hvordan du bygger egendefinerte svarsider for 4xx- og 5xx-statuskodefeil ved hjelp av redigeringsverktøyene i Microsoft Dynamics 365 Commerce.
+title: Bygg egendefinerte svarsider for 4xx/5xx-statuskodefeil
+description: Denne artikkelen beskriver hvordan du bygger egendefinerte svarsider for 4xx- og 5xx-statuskodefeil ved hjelp av redigeringsverktøyene i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 16cd6c3dab5502826119b6a517414d23e168e79708e306897b04c7ba8c80404b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b56d7a58659205ce4483480fd85d1c91ae52a0f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741147"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882265"
 ---
-# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Bygge egendefinerte svarsider for 4xx/5xx-statuskodefeil
+# <a name="build-custom-response-pages-for-4xx5xx-status-code-errors"></a>Bygg egendefinerte svarsider for 4xx/5xx-statuskodefeil
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du bygger egendefinerte svarsider for 4xx- og 5xx-statuskodefeil ved hjelp av redigeringsverktøyene i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du bygger egendefinerte svarsider for 4xx- og 5xx-statuskodefeil ved hjelp av redigeringsverktøyene i Microsoft Dynamics 365 Commerce.
 
 Hvis en forespørsel ikke lykkes, utsteder serveren svar på HTTP-statuskodefeil. Statuskoden 404 registreres og returneres hvis en side ikke blir funnet, og 500 statuskoden fanges opp og returneres hvis det oppstår en serverfeil. I Dynamics 365 Commerce kan programbrukere bygge egendefinerte svarsider for statuskodefeil som vises for brukere for disse statuskodefeilsvarene.
 

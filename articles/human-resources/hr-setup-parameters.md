@@ -1,6 +1,6 @@
 ---
-title: Konfigurere parametere for Human Resources
-description: Dette emnet forklarer hvordan du konfigurerer firmaspesifikke parametere i Dynamics 365 Human Resources.
+title: Konfigurer parametere for Human Resources
+description: Denne artikkelen forklarer hvordan du konfigurerer firmaspesifikke parametere i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689417"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856287"
 ---
-# <a name="configure-human-resources-parameters"></a>Konfigurere parametere for Human Resources
+# <a name="configure-human-resources-parameters"></a>Konfigurer parametere for Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Innstillingene for noen Human Resources-parametere deles mellom firmaer, mens innstillingene for andre parametere er firmaspesifikke. Dette emnet forklarer hvordan du konfigurerer firmaspesifikke parametere i Human Resources.
+Innstillingene for noen Human Resources-parametere deles mellom firmaer, mens innstillingene for andre parametere er firmaspesifikke. Denne artikkelen forklarer hvordan du konfigurerer firmaspesifikke parametere i Human Resources.
 
 To sider brukes til å angi Human Resources-parametere. For parametere som deles på tvers av firmaer, bruker du siden **Delte parametere for personaladministrasjon**. For parameterne som er firmaspesifikke (altså innstillingene gjelder ett enkelt firma), bruker du siden **Personalparametere**.
 

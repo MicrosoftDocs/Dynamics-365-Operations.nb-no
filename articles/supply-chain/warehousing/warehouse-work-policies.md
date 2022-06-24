@@ -1,6 +1,6 @@
 ---
 title: Arbeidspolicyer
-description: Dette emnet forklarer hvordan du konfigurerer arbeidspolicyer.
+description: Denne artikkelen forklarer hvordan du konfigurerer arbeidspolicyer.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 7637ef908ffa6e79f81e4ecfb8afac4e3e3fed26
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855855"
 ---
 # <a name="work-policies"></a>Arbeidspolicyer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer systemet og mobilappen Lagerstyring slik at de har støtte for arbeidspolicyer. Du kan bruke denne funksjonaliteten til raskt å registrere beholdning uten å opprette plasseringsarbeid når du mottar bestillinger eller overføringsordrer, eller når du fullfører produksjonsprosesser. Dette emnet gir generell informasjon. For detaljert informasjon som gjelder nummerskiltmottak, kan du se [Nummerskiltmottak via mobilappen Lagerstyring](warehousing-mobile-device-app-license-plate-receiving.md).
+Denne artikkelen forklarer hvordan du konfigurerer systemet og mobilappen Lagerstyring slik at de har støtte for arbeidspolicyer. Du kan bruke denne funksjonaliteten til raskt å registrere beholdning uten å opprette plasseringsarbeid når du mottar bestillinger eller overføringsordrer, eller når du fullfører produksjonsprosesser. Denne artikkelen gir generell informasjon. For detaljert informasjon som gjelder nummerskiltmottak, kan du se [Nummerskiltmottak via mobilappen Lagerstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
 En arbeidspolicy kontrollerer om lagerarbeid opprettes når en produsert vare rapporteres som ferdig, eller når varer mottas ved hjelp av mobilappen Lagerstyring. Du definerer hver arbeidspolicy ved å definere betingelsene der den gjelder: arbeidsordretypene og -prosessene, beholdningslokasjonen og (eventuelt) produktene. For eksempel må en bestilling for produkt *A0001* mottas i lokasjonen *RECV* på lager *24*. Senere forbrukes produktet i en annen prosess på lokasjonen *RECV*. I dette tilfellet kan du definere en arbeidspolicy for å hindre at plasseringsarbeid blir opprettet når en arbeider rapporterer produkt *A0001* som mottatt på lokasjonen *RECV*.
 
@@ -35,7 +35,7 @@ En arbeidspolicy kontrollerer om lagerarbeid opprettes når en produsert vare ra
 
 ## <a name="activate-the-features-in-your-system"></a>Aktivere funksjonene i systemet
 
-Hvis du vil gjøre all funksjonalitet som er beskrevet i dette emnet, tilgjengelig i systemet, kan du aktivere følgende to funksjoner i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Hvis du vil gjøre all funksjonalitet som er beskrevet i denne artikkelen, tilgjengelig i systemet, kan du aktivere følgende to funksjoner i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Forbedringer av mottak av nummerskilter
 - Forbedringer for arbeidspolicy for innkommende arbeid

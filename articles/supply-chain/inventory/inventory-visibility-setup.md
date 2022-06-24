@@ -1,8 +1,8 @@
 ---
 title: Installer tillegget for lagersynlighet
-description: Dette emnet beskriver hvordan du installerer tillegget for lagersynlighet for Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver hvordan du installerer tillegget for lagersynlighet for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 05/27/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,23 +11,23 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: ce81ed2ed79bfe5c7fff9724e14af150817af11f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062656"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895706"
 ---
-# <a name="install-and-set-up-inventory-visibility"></a>Installere og definere lagersynlighet
+# <a name="install-and-set-up-inventory-visibility"></a>Installer og definer Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
 
+Denne artikkelen beskriver hvordan du installerer tillegget for lagersynlighet for Microsoft Dynamics 365 Supply Chain Management.
 
-Dette emnet beskriver hvordan du installerer tillegget for lagersynlighet for Microsoft Dynamics 365 Supply Chain Management.
+Du må bruke Microsoft Dynamics Lifecycle Services (LCS) til å installere tillegget for lagersynlighet. LCS er en samarbeidsportal som gir et miljø og et sett med jevnlig oppdaterte tjenester som hjelper deg med å administrere applivssyklusen til Finance and Operations-appene dine. Hvis du vil ha mer informasjon, se [Lifecycle Services-ressurser](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-Du må bruke Microsoft Dynamics Lifecycle Services (LCS) til å installere tillegget for lagersynlighet. LCS er en samarbeidsportal som gir et miljø og et sett med jevnlig oppdaterte tjenester som hjelper deg med å administrere applivssyklusen til Finance and Operations-appene dine.
-
-Hvis du vil ha mer informasjon, se [Lifecycle Services-ressurser](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+> [!TIP]
+> Vi anbefaler at du blir med i brukergruppen Tillegg for lagersynlighet, der du kan finne nyttige guider, få de siste oppdateringene og postere eventuelle spørsmål du måtte ha om bruk av lagersynlighet. Hvis du vil delta, kan du sende en e-postmelding til produktgruppen Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) og inkludere miljø-IDen for Supply Chain Management.
 
 ## <a name="inventory-visibility-prerequisites"></a>Forutsetninger for lagersynlighet
 
@@ -44,6 +44,9 @@ Hvis du har spørsmål om disse forutsetningene, kan du ta kontakt med produktte
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Installer tillegget for lagersynlighet
 
 Før du installerer tillegget, må du registrere en app og legge til en klienthemmelighet i Azure Active Directory (Azure AD) under Azure-abonnementet ditt. Hvis du vil ha instruksjoner, kan du se [Registrer en app](/azure/active-directory/develop/quickstart-register-app) og [Legg til en klienthemmelighet](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Skriv ned verdiene for **App-ID (klient)**, **Klienthemmelighet** og **Leier-ID**, siden du trenger dem senere.
+
+> [!IMPORTANT]
+> Hvis du har mer enn ett LCS-miljø, oppretter du et annet Azure AD program for hvert miljø. Hvis du bruker samme program-ID og leie-ID til å installere tillegget for lagersynlighet for forskjellige miljøer, vil det oppstå et tokenproblem for eldre miljøer. Som et resultat vil bare den siste installasjonen være gyldig.
 
 Når du har registrert en app og lagt til en klienthemmelighet i Azure AD, følger du denne fremgangsmåten for å installere tillegget for lagersynlighet.
 
@@ -72,11 +75,18 @@ Når du har registrert en app og lagt til en klienthemmelighet i Azure AD, følg
 1. Velg **Installer**. Statusen for tillegget vises som **Installerer**. Når installasjonen er fullført, oppdaterer du siden. Statusen skal endres til **Installert**.
 1. I Dataverse merker du **Apper**-delen i venstre navigasjon, og kontrollerer at **lagersynligheten** Power Apps er installert. Hvis **Apper**-deler ikke finnes, kontakter du produktteamet til Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
-> [!TIP]
-> Vi anbefaler at du blir med i brukergruppen Tillegg for lagersynlighet, der du kan finne nyttige guider, få de siste oppdateringene og postere eventuelle spørsmål du måtte ha om bruk av lagersynlighet. Hvis du vil delta, kan du sende en e-postmelding til produktgruppen Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) og inkludere miljø-IDen for Supply Chain Management.
-
-> [!IMPORTANT]
-> Hvis du har mer enn ett LCS-miljø, oppretter du et annet Azure AD program for hvert miljø. Hvis du bruker samme program-ID og leie-ID til å installere tillegget for lagersynlighet for forskjellige miljøer, vil det oppstå et tokenproblem for eldre miljøer. Bare den siste som ble installert, vil være gyldig.
+> [!NOTE]
+> Hvis det tar mer enn en time å installere fra LCS-siden, mangler brukerkontoen din sannsynligvis tillatelse til å installere løsninger i Dataverse-miljøet. Følg fremgangsmåten nedenfor for å løse problemet:
+>
+> 1. Avbryt installasjonen av tilleggsprogrammet Lagersynlighet fra LCS-siden.
+> 1. Logg deg på [Microsoft 365-administrasjonssenteret](https://admin.microsoft.com), og kontroller at brukerkontoen du vil bruke til å installere tilleggsprogrammet, har "Dynamics 365 Unified Operations-plan" tilordnet. Tilordne lisensen hvis det er nødvendig.
+> 1. Logg deg på [Power Platform-administrasjonssenteret](https://admin.powerplatform.microsoft.com) med den aktuelle brukerkontoen. Installer deretter tilleggsprogrammet Lagersynlighet ved å gjøre følgende:
+>     1. Velg miljøet der du vil installere tilleggsprogrammet.
+>     1. Velg **Dynamics 365-apper**.
+>     1. Velg **Installer app**.
+>     1. Velg **Lagersynlighet**
+>
+> 1. Når installasjonen er fullført, kan du gå tilbake til LCS-siden og prøve å installere tilleggsprogrammet **Lagersynlighet** på nytt.
 
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Avinstaller tillegget for lagersynlighet
 

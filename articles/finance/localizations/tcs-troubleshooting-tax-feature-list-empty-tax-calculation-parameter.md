@@ -1,6 +1,6 @@
 ---
 title: Tom avgiftsfunksjonsliste i parametere for avgiftsberegning
-description: Dette emnet forklarer hvordan du feilsøker et problem der listen over avgiftsfunksjoner på siden Parametere for avgiftsberegning er tom.
+description: Denne artikkelen forklarer hvordan du feilsøker et problem der listen over avgiftsfunksjoner på siden Parametere for avgiftsberegning er tom.
 author: wangchen
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
-ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
+ms.openlocfilehash: 0d9286ec313a270da86181ff80ddfd690a757c9b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "8612296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869959"
 ---
 # <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Tom avgiftsfunksjonsliste i parametere for avgiftsberegning
 
@@ -46,7 +46,7 @@ Du kan finne leier-ID-en for Finance-miljøet ved å følge samme fremgangsmåte
 
 ## <a name="resolution"></a>Løsning
 
-Hvis de to leier-ID-ene er ulike, har du fått problemet som er beskrevet i dette emnet. Hvis de er like, har du fått et urelatert problem. I dette tilfellet anbefaler vi at du kontakter Microsoft Kundestøtte.
+Hvis de to leier-ID-ene er ulike, har du fått problemet som er beskrevet i denne artikkelen. Hvis de er like, har du fått et urelatert problem. I dette tilfellet anbefaler vi at du kontakter Microsoft Kundestøtte.
 
 ### <a name="solution-1"></a>Løsning 1
 

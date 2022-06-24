@@ -1,6 +1,6 @@
 ---
 title: GS1-strekkoder
-description: Dette emnet beskriver hvordan du definerer GS1-strekkoder og QR-koder slik at etiketter kan skannes på et lager.
+description: Denne artikkelen beskriver hvordan du definerer GS1-strekkoder og QR-koder slik at etiketter kan skannes på et lager.
 author: Mirzaab
 ms.date: 03/21/2022
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: ea928bc8a020035adb36ae2e7873c656e8c3985d
-ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
+ms.openlocfilehash: 67c54f344ff7091f4a25198fdafa745c6c84d5d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8625285"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907152"
 ---
 # <a name="gs1-bar-codes"></a>GS1-strekkoder
 
@@ -30,11 +30,11 @@ GS1-støtten i Supply Chain Management forenkler skanneprosessen i lagre der pal
 
 Logistikksjefer må definere den nødvendige listen over applikasjons-IDer og knytte hver av dem til de aktuelle menyelementene for mobilenheter. Applikasjons-IDene kan deretter brukes på tvers av lagre som en global innstilling for flyttings- og emballasjeformål. Derfor tar alle fraktetikettene et felles skjema.
 
-Med mindre annet er angitt, bruker dette emnet begrepet *strekkode* for å referere til både lineære strekkoder (1D) og 2D-strekkoder.
+Med mindre annet er angitt, bruker denne artikkelen begrepet *strekkode* for å referere til både lineære strekkoder (1D) og 2D-strekkoder.
 
 ## <a name="the-gs1-bar-code-format"></a>GS1-strekkodeformatet
 
-De generelle spesifikasjonene for GS1angir hvilke symbologier som kan brukes for GS1-strekkoder, og hvordan dataene i strekkoden skal kodes. Denne delen gir en kort innledning til emnet. Hvis du vil ha fullstendig informasjon, kan du se de [generelle spesifikasjonene for GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) som er publisert av GS1. GS1-spesifikasjonene oppdateres regelmessig, og informasjonen er oppdatert med de genrelle spesifikasjonene for GS1, versjon 22.0.
+De generelle spesifikasjonene for GS1angir hvilke symbologier som kan brukes for GS1-strekkoder, og hvordan dataene i strekkoden skal kodes. Denne delen gir en kort innledning til artikkelen. Hvis du vil ha fullstendig informasjon, kan du se de [generelle spesifikasjonene for GS1](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) som er publisert av GS1. GS1-spesifikasjonene oppdateres regelmessig, og informasjonen er oppdatert med de genrelle spesifikasjonene for GS1, versjon 22.0.
 
 GS1-strekkoder bruker følgende symbologier:
 

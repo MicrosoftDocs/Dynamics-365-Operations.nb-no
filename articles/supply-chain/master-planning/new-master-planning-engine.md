@@ -1,6 +1,6 @@
 ---
 title: Overføring til planleggingsoptimalisering for hovedplanlegging
-description: Dette emnet gir informasjon om den nye hovedplanleggingsmotoren, planleggingsoptimalisering, og overføring fra den eksisterende motoren.
+description: Denne artikkelen gir informasjon om den nye hovedplanleggingsmotoren, planleggingsoptimalisering, og overføring fra den eksisterende motoren.
 author: t-benebo
 ms.date: 05/11/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
-ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
+ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809102"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846105"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Overføring til planleggingsoptimalisering for hovedplanlegging
 
 [!include [banner](../includes/banner.md)]
 
-Den innebygde hovedplanleggingsmotoren er planlagt å gjøres foreldet (avskrevet). Det erstattes av tillegget for planleggingsoptimalisering for Microsoft Dynamics 365 Supply Chain Management. Dette emnet gir informasjon om innvirkning på nye og eksisterende distribusjoner. Det inneholder informasjon om nødvendige handlinger.
+Den innebygde hovedplanleggingsmotoren er planlagt å gjøres foreldet (avskrevet). Det erstattes av tillegget for planleggingsoptimalisering for Microsoft Dynamics 365 Supply Chain Management. Denne artikkelen gir informasjon om innvirkning på nye og eksisterende distribusjoner. Det inneholder informasjon om nødvendige handlinger.
 
 Planleggingsoptimalisering gjør at beregningen av hovedplanlegging skjer utenfor Supply Chain Management og den tilknyttede Azure SQL Database. Fordelene som er knyttet til planleggingsoptimalisering, omfatter forbedret ytelse og minimal virkning på SQL-databasen under kjøringer av hovedplanlegging. Siden raske planleggingskjøringer kan gjøres selv under kontortimer, kan planleggere umiddelbart reagere på behovs- eller parameterendringer.
 
@@ -63,7 +63,7 @@ Unntak fra overføring til planleggingsoptimalisering er for øyeblikket bare re
 
 Når de nødvendige funksjonene blir tilgjengelige, vil Microsoft angi en respittperiode helt til unntaket utløper. Miljøadministratoren blir informert når de nødvendige funksjonene har blitt tilgjengelige og respittperiode har startet.
 
-Følgende flytdiagram oppsummerer informasjonen som oppgis i dette emnet, slik at du raskt kan finne ut om du bør be om et unntak. Hvis du må be om et unntak, kan du fylle ut og sende inn [spørreskjemaet om migrering og unntak i Planleggingsoptimalisering](https://go.microsoft.com/fwlink/?linkid=2144962). Produktgruppen er ansvarlig for å evaluere og godkjenne hver unntaksforespørsel, så du sender forespørselen direkte til produktgruppen ved hjelp av koblingen som tilbys, og ikke opprett en støttebillett for den. Hvis forespørselen din avvises, må du ikke opprette en støtteforespørsel, fordi Microsoft Support ikke kan evaluere eller gi unntak på nytt.
+Følgende flytdiagram oppsummerer informasjonen som oppgis i denne artikkelen, slik at du raskt kan finne ut om du bør be om et unntak. Hvis du må be om et unntak, kan du fylle ut og sende inn [spørreskjemaet om migrering og unntak i Planleggingsoptimalisering](https://go.microsoft.com/fwlink/?linkid=2144962). Produktgruppen er ansvarlig for å evaluere og godkjenne hver unntaksforespørsel, så du sender forespørselen direkte til produktgruppen ved hjelp av koblingen som tilbys, og ikke opprett en støttebillett for den. Hvis forespørselen din avvises, må du ikke opprette en støtteforespørsel, fordi Microsoft Support ikke kan evaluere eller gi unntak på nytt.
 
 ![Unntaksflytskjema.](media/exception-diagram.png "Unntaksflytskjema")
 

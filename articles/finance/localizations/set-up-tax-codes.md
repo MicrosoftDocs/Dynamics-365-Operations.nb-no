@@ -1,6 +1,6 @@
 ---
 title: Konfigurere avgiftskoder
-description: Dette emnet forklarer hvordan du konfigurere avgiftkoder i avgiftsberegningstjenesten.
+description: Denne artikkelen forklarer hvordan du konfigurere avgiftkoder i avgiftsberegningstjenesten.
 author: wangchen
 ms.date: 11/30/2021
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 8bdb194e7d8b704d1e58d3c25bf2e1f6bff1ba00
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 1bc250716763ce9d8e25c8850c8a3676bf65fb0c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883870"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862935"
 ---
 # <a name="set-up-tax-codes"></a>Konfigurere avgiftskoder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurere avgiftkoder i avgiftsberegningstjenesten. Det inkluderer oppsettet for et enkelt scenario for å få mva-koden til å fungere, og informasjon om avansert mva-kodefunksjonalitet for komplekse scenarier.
+Denne artikkelen forklarer hvordan du konfigurere avgiftkoder i avgiftsberegningstjenesten. Det inkluderer oppsettet for et enkelt scenario for å få mva-koden til å fungere, og informasjon om avansert mva-kodefunksjonalitet for komplekse scenarier.
 
 > [!IMPORTANT]
 > Oppsettet av avgiftskoder i avgiftsberegningstjenesten er juridisk enhet–agnostisk. Du kan bare fullføre dette oppsettet i RCS (Regulatory Configuration Service) én gang. Avgiftskoder synkroniseres automatisk med Microsoft Dynamics 365 Finance når du aktiverer avgiftsberegningstjenesten for en valgt juridisk enhet i Finance.

@@ -2,24 +2,19 @@
 title: Eksperimentering i Dynamics 365 Commerce
 description: Eksperimentering gjør det mulig å opprette, redigere og administrere sideoppsett og innholdsbehandling i områdebygger. Støtte for ende-til-ende-eksperimentering er aktivert for e-handelssider og enheter på en side.
 author: sushma-rao
-ms.date: 10/21/2020
+ms.date: 06/07/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
-ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1ef877072ba7ffe1b0326cf8d526b512b5ab30b8
+ms.sourcegitcommit: 427fe14824a9d937661ae21b9e9574be2bc9360b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986547"
+ms.lasthandoff: 06/09/2022
+ms.locfileid: "8946220"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimentering i Dynamics 365 Commerce
 Bruk eksperimentering i Dynamics 365 Commerce for å validere hypoteser om effektiviteten til dine e-handelssider og ta avgjørelser med datadrevet selvtillit. Commerce støtter A/B-testing for sider, moduler og fragmenter, og lar deg måle virkningen av foreslåtte endringer på nettstedet ditt.
@@ -27,20 +22,18 @@ Bruk eksperimentering i Dynamics 365 Commerce for å validere hypoteser om effek
 Du kan opprette, redigere og behandle side- og innholdsbehandling, kalt **variasjoner**, i områdebygger. Commerce integreres med tredjepartstjenester som du kan bruke til å opprette eksperimenter og behandlingsoppgaver. Sanntids hendelsesstrømmer som registreres i Commerce, aktiverer analyse som definerer eksperimentresultatene i tredjepartstjenesten. Du kan deretter bruke disse analysene for å hjelpe til med å støtte eller motbevise hypotesen din.
 
 ## <a name="set-up-prerequisites"></a> Definer forutsetninger
+
 1. **Skaff riktig versjon av Commerce** – Oppgrader modulbibliotek, SDK for nettkanalutvidelse og Commerce Scale Unit til Commerce versjon 10.0.13 eller nyere.
 1. **Konfigurer en eksperimenteringskobling** – En eksperimenteringskobling lar Commerce koble til tredjepartstjenester for å hente listen over eksperimenter og avgjøre når det skal vises et eksperiment for en bruker. Du kan kjøpe en tredjepartskobling fra [AppSource](https://appsource.microsoft.com). Følg installasjonsinstruksjonene fra utgiveren. Du kan også bruke eksempeltestkoblingen fra Commerce til å teste eksperimenteringsarbeidsflyten uten å måtte konfigurere en ekstern tjeneste. Hvis du vil ha mer informasjon, kan du se [Konfigurere og aktivere koblinger](e-commerce-extensibility/connectors.md). 
-1. **Slå på flagget for eksperimenteringsfunksjonen i Commerce** – Du kan aktivere eksperimentering på leiernivået ved å gå til **Leierinnstillinger > Funksjoner**, eller på områdenivå under **Områdeinnstillinger > Funksjoner**.
-    - Aktiver **Eksperimentering**-flagget for å opprette eksperimentvariasjoner for moduler på en side uten å påvirke eller kopiere annet innhold som ikke er en del av eksperimentet. Dette sikrer at pågående innhold som oppdateres utenfor eksperimentet, vil bli synkronisert under eksperimentet. Hvis du deaktiverer dette flagget, stopper du alle eksperimenter fra å vises til brukere og fjerner alle redigeringsfunksjonene i områdebygger.
-    - Aktiver flagget **Eksperimenter på sider eller fragmenter** for å kjøre eksperimenter på en side eller et fragment. Dette oppretter en fullstendig forekomstkopi av hele siden eller fragmentet for alle modulene på siden eller i fragmentet. Bruk denne modusen når du vil teste omfattende innholdsendringer, eller der synkronisering av pågåendeinnholdsendringer på tvers av forekomster, ikke er noe problem. Hvis du deaktiverer dette flagget, forhindres oppretting og redigering av nye eksperimenter på sider og fragmenter.
-    > [!NOTE]
-    > **Eksperimentering**-flagget må også aktiveres for at funksjonen **Eksperimenter på sider eller fragmenter** skal fungere.
+1. **Slå på flagget for eksperimenteringsfunksjonen i Commerce** – Du kan aktivere eksperimentering på leiernivået ved å gå til **Leierinnstillinger \> Funksjoner**, eller på områdenivå ved å gå til **Områdeinnstillinger \> Funksjoner**. Slå på **Eksperimentering**-flagget for å begynne å opprette modulvariasjoner. Hvis du deaktiverer dette flagget, stopper du alle eksperimenter fra å vises til brukere og fjerner alle redigeringsfunksjonene i områdebygger.
     
 ## <a name="experimentation-lifecycle"></a>Livssyklus for eksperimentering
+
 Konfigurasjon av et eksperiment, oppretting av variasjoner og kjøring av et eksperiment er en gjentakende prosess. Diagrammet nedenfor illustrerer livssyklusen for eksperimentering i Commerce og tredjepartstjenesten. 
 
 [ ![Livssyklus for eksperimentering.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
-Hvis du vil finne ut mer om hvert trinn i eksperimenteringsprosessen, kan du se emnene nedenfor.
+Hvis du vil finne ut mer om hvert trinn i eksperimenteringsprosessen, kan du se artiklene nedenfor.
 - [Identifisere en hypotese og fastslå måledataene for et eksperiment](experimentation-identify.md)
 - [Definere et eksperiment](experimentation-setup.md)
 - [Koble til og redigere et eksperiment](experimentation-connect-edit.md)

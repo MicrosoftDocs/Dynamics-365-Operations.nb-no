@@ -1,6 +1,6 @@
 ---
-title: Bygge inn lerretsapper fra Power Apps
-description: Dette emnet forklarer hvordan du bygger inn lerretsapper fra Microsoft Power Apps i klienten for å øke produktets funksjonalitet.
+title: Bygg inn lerretsapper fra Power Apps
+description: Denne artikkelen forklarer hvordan du bygger inn lerretsapper fra Microsoft Power Apps i klienten for å øke produktets funksjonalitet.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: fb81aa058e749df346ee87bbe83427b20b234b72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065125"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898405"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bygge inn lerretsapper fra Power Apps
 
@@ -33,7 +33,7 @@ Hvis du vil vite mer om innebygging av lerretsapper, kan du se den korte videoen
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Legge til en innebygd lerretsapp fra Power Apps på en side
 
-Før du bygger inn en lerretsapp fra Power Apps i klienten, må du først finne eller lage en app med ønskede visuelle effekter og/eller funksjonalitet. Dette emnet inneholder ikke en detaljert beskrivelse av prosessen for bygging av apper. Hvis du ikke har brukt Power Apps, se [Power Apps-dokumentasjonen](/powerapps/).
+Før du bygger inn en lerretsapp fra Power Apps i klienten, må du først finne eller lage en app med ønskede visuelle effekter og/eller funksjonalitet. Denne artikkelen inneholder ikke en detaljert beskrivelse av prosessen for bygging av apper. Hvis du ikke har brukt Power Apps, se [Power Apps-dokumentasjonen](/powerapps/).
 
 Det finnes tre måter å bygge inn en app på i en økonomi- og driftsapp. Du kan bruke fremgangsmåten som passer best til scenariet. 
 
@@ -60,7 +60,7 @@ Fremgangsmåten nedenfor viser hvordan du bygger inn en lerretsapp på en eksist
 
     - Hvis appen åpnes ved hjelp av **Power Apps**-menyknappen, kan du også velge **Power Apps**-menyknappen i standardhandlingsruten, og deretter velger du **Legg til en app**.
 
-3. Konfigurer den innebygde appen. Hvis du vil ha mer informasjon, kan du se delen [Konfigurer en lerretsapp](#configuring-a-canvas-app) senere i dette emnet.
+3. Konfigurer den innebygde appen. Hvis du vil ha mer informasjon, kan du se delen [Konfigurer en lerretsapp](#configuring-a-canvas-app) senere i denne artikkelen.
 4. Når du har bekreftet at konfigurasjonen er riktig, velger du **Sett inn**.
 
     - Hvis funksjonen **Lagrede visninger** er slått av, blir du bedt om å oppdatere webleseren for å se den innebygde appen.
@@ -76,7 +76,7 @@ Det kan hende at du vil bygge inn en lerretsapp fra instrumentbordet hvis appen 
 1. Åpne instrumentbordet.
 2. Velg og hold siden nede (eller høyreklikk), velg **Tilpass**, og velg deretter **Legg til en side**.
 3. I ruten **Legg til en side** velger du **Power Apps**.
-4. Konfigurer den innebygde appen. Hvis du vil ha mer informasjon, kan du se delen [Konfigurer en lerretsapp](#configuring-a-canvas-app) senere i dette emnet.
+4. Konfigurer den innebygde appen. Hvis du vil ha mer informasjon, kan du se delen [Konfigurer en lerretsapp](#configuring-a-canvas-app) senere i denne artikkelen.
 5. Velg **Lagre** for å legge til appen på instrumentbordet som en ny flis.
 6. Velg den nye flisen på instrumentbordet, og bekreft at lerretsappen vises som forventet.
 
@@ -86,7 +86,7 @@ Når du bygger inn en lerretsapp, må du angi følgende parametere:
 
 - **Navn** – Angi teksten som skal vises for knappen eller fanen som skal inneholde den innebygde appen. Ofte vil du kanskje gjenta navnet på appen i dette feltet.
 - **App-ID** – Angi GUID-en (globalt unik identifikator) for lerretsappen du vil bygge inn. Hvis du vil hente denne verdien, finner du appen på [make.powerapps.com](https://make.powerapps.com), og deretter ser du i feltet **App-ID** under **Detaljer**.
-- **Inndatakontekst for app** – Du kan også velge feltet som inneholder dataene du vil sende til appen som inndata. For informasjon om hvordan appen kan få tilgang til dataene som sendes fra økonomi- og driftsapper, kan du se delen [Lage en app som bruker data som sendes fra økonomi- og driftsapper](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senere i dette emnet.
+- **Inndatakontekst for app** – Du kan også velge feltet som inneholder dataene du vil sende til appen som inndata. For informasjon om hvordan appen kan få tilgang til dataene som sendes fra økonomi- og driftsapper, kan du se delen [Lage en app som bruker data som sendes fra økonomi- og driftsapper](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senere i denne artikkelen.
 
     Fra og med versjon 10.0.19 blir også den gjeldende juridiske enheten sendt som kontekst til lerretsappen via URL-parameteren **cmp**. Denne virkemåten vil ikke påvirke lerretsappen før appen bruker denne informasjonen.
 
@@ -145,7 +145,7 @@ Følg denne fremgangsmåten for å redigere konfigurasjonen av en innebygd app:
 
 Når en app er innebygd på en side, er det noen måter å fjerne den på om nødvendig:
 
-- Gå til ruten **Rediger en app** ved hjelp av instruksjonene fra delen [Redigere en innebygd app](#editing-an-embedded-app) tidligere i dette emnet. Bekreft at ruten viser informasjon for den innebygde app som du vil fjerne, og klikk deretter på **Slett**-knappen.
+- Gå til ruten **Rediger en app** ved hjelp av instruksjonene fra delen [Redigere en innebygd app](#editing-an-embedded-app) tidligere i denne artikkelen. Bekreft at ruten viser informasjon for den innebygde app som du vil fjerne, og klikk deretter på **Slett**-knappen.
 - Hvis den innebygde appen ble lagt til fra instrumentbordet, åpner du instrumentbordet, velger og holder (eller høyreklikker på) flisen som er knyttet til lerretsappen, velger **Tilpass** og velger deretter **Fjern side**. 
 - Fordi den innebygde appen lagres som tilpasningsdata, vil fjerning av sidetilpasningen også fjerne alle innebygde apper på denne siden. Legg merke til at fjerning av personlige data på siden er permanent og ikke kan angres. Hvis du vil fjerne tilpasningene dine på en side, velger du **Alternativer**, velger deretter **Tilpass denne siden**, og velger til slutt **Tøm**-knappen. Når du har oppdatert leseren, er alle tidligere tilpassinger for denne siden fjernet. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du optimaliserer sider ved hjelp av tilpassing.
 
@@ -153,7 +153,7 @@ Når en app er innebygd på en side, er det noen måter å fjerne den på om nø
 
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Utvikler] Modellere en lerretsapp på et skjema
 
-Mens dette emnet fokuserer på å bygge inn lerretsapper innen personalisering, har utviklerne også muligheten til å legge til en lerretsapp i et skjema ved hjelp av Visual Studio-utviklingserfaringen. Du gjør dette ved å legge til en PowerAppsHostControl i skjemaet. Metadataegenskapene som er tilgjengelige for kontrollen, har de samme egenskapene som tilpasningserfaringen.
+Mens denne artikkelen fokuserer på å bygge inn lerretsapper innen personalisering, har utviklerne også muligheten til å legge til en lerretsapp i et skjema ved hjelp av Visual Studio-utviklingserfaringen. Du gjør dette ved å legge til en PowerAppsHostControl i skjemaet. Metadataegenskapene som er tilgjengelige for kontrollen, har de samme egenskapene som tilpasningserfaringen.
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvikler] Angi hvor en app kan bygges inn
 

@@ -1,6 +1,6 @@
 ---
 title: Leiekonvensjoner for aktiva
-description: Dette emnet beskriver konvensjoner for leide aktiva.
+description: Denne artikkelen beskriver konvensjoner for leide aktiva.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e0aabce46e47079b754b8ac674b205cf00b5e26
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f2f0e21b20a969c0847ce3a6eb167287c1d7ee3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711037"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898276"
 ---
 # <a name="asset-leasing-conventions"></a>Leiekonvensjoner for aktiva
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver konvensjoner for leide aktiva. Leiekonvensjoner brukes til å bestemme startdatoen for et leietablå. Hvis leiekonvensjonen er satt til **Ingen**, er startdatoen den samme som startdatoen for leien (det vil si verdien for **Startdato for leie**). Hvis leiekonvensjonen er satt til **Hele måneden**, er startdatoen den første dagen i måneden som startdatoen for leieavtalen faller på.
+Denne artikkelen beskriver konvensjoner for leide aktiva. Leiekonvensjoner brukes til å bestemme startdatoen for et leietablå. Hvis leiekonvensjonen er satt til **Ingen**, er startdatoen den samme som startdatoen for leien (det vil si verdien for **Startdato for leie**). Hvis leiekonvensjonen er satt til **Hele måneden**, er startdatoen den første dagen i måneden som startdatoen for leieavtalen faller på.
 
 Startdatoen fastsetter startdatoen for perioden for planene for nedbetaling av gjeld og avskrivning av aktiva. Rente- og avskrivningsutgifter posteres på sluttdatoen for perioden i de gjeldende planene. Den første journaloppføringen for opprinnelig føring og justering posteres på startdatoen.
 

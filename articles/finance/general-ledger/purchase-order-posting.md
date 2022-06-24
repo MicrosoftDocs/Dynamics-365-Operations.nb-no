@@ -1,6 +1,6 @@
 ---
 title: Bestillingspostering
-description: Dette emnet beskriver Bestilling-fanen på siden Lagerposteringsprofiler.
+description: Denne artikkelen beskriver Bestilling-fanen på siden Lagerposteringsprofiler.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 4b36ab9da22da7d4f3e62bd2d2aba2a2ec80e60f
-ms.sourcegitcommit: 5b55f2913e736d12e40c227bf3ce3a9abec815bd
+ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8803028"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849938"
 ---
 # <a name="purchase-order-posting"></a>Bestillingspostering
 
@@ -125,7 +125,7 @@ Innkjøpsrekvisisjoner og bestillingsbekreftelser kan også konfigureres til å 
 
 ## <a name="procurement-category-posting"></a>Postering for innkjøpskategori
 
-Som et alternativ til å konfigurere lagerpostering for alle varer, en varegruppe eller en enkeltvare, kan du konfigurere kategorier og styre finanspostering etter innkjøpkategorier. Hvis du vil ha mer informasjon om hvordan du definerer kategorier og tilordner dem til produkter, kan du gå til [Eksempel på konfigurasjon av posteringsprofil](#sample-posting-profile-configuration) tidligere i dette emnet.
+Som et alternativ til å konfigurere lagerpostering for alle varer, en varegruppe eller en enkeltvare, kan du konfigurere kategorier og styre finanspostering etter innkjøpkategorier. Hvis du vil ha mer informasjon om hvordan du definerer kategorier og tilordner dem til produkter, kan du gå til [Eksempel på konfigurasjon av posteringsprofil](#sample-posting-profile-configuration) tidligere i denne artikkelen.
 
 Når du bruker kategorier med bestillinger eller leverandørfakturaer, må kategorihierarkiet tilordnes til typen **Innkjøpskategorihierarki** på siden **Kategorihierarkirolletilordninger**.
 

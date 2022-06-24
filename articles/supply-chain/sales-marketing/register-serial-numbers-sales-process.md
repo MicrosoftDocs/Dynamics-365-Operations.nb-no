@@ -1,6 +1,6 @@
 ---
 title: Arbeide med serialiserte varer
-description: Dette emnet forklarer hvordan du kan registrere serienumre på følgesedler eller fakturaer i løpet av salgsprosessen. Denne funksjonaliteten er nyttig hvis et firma ønsker å ha serienumre for service- og garantiformål, men ikke trenger å vedlikeholde serienumrene på lageret fra mottak til avgang.
+description: Denne artikkelen forklarer hvordan du kan registrere serienumre på følgesedler eller fakturaer i løpet av salgsprosessen. Denne funksjonaliteten er nyttig hvis et firma ønsker å ha serienumre for service- og garantiformål, men ikke trenger å vedlikeholde serienumrene på lageret fra mottak til avgang.
 author: Henrikan
 ms.date: 10/31/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62e53ec57a8d5c5c922f580219e4bde5338d0707
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b89e9ab547d13e68ead88d76f9922d14fde4beb3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571695"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901857"
 ---
 # <a name="working-with-serialized-items"></a>Arbeide med serialiserte varer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du kan registrere serienumre på følgesedler eller fakturaer i løpet av salgsprosessen. Denne funksjonaliteten er nyttig hvis et firma ønsker å ha serienumre for service- og garantiformål, men ikke trenger å vedlikeholde serienumrene på lageret fra mottak til avgang.
+Denne artikkelen forklarer hvordan du kan registrere serienumre på følgesedler eller fakturaer i løpet av salgsprosessen. Denne funksjonaliteten er nyttig hvis et firma ønsker å ha serienumre for service- og garantiformål, men ikke trenger å vedlikeholde serienumrene på lageret fra mottak til avgang.
 
 Mange firmaer vil bare ha serienumre for service- og garantiformål, og trenger ikke vedlikeholde serienumrene på lageret fra mottak til avgang. I slike tilfeller kan du registrere serienumre på følgesedler eller fakturaer når varer selges. Hvis en vare returneres til deg senere, kan du spore den til en faktura for å finne ut om du solgte produktet, og om tjenesten eller garantiforpliktelsene er gyldige.
 

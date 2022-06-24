@@ -1,6 +1,6 @@
 ---
 title: Vise posterte TDS-betalinger og -transaksjoner for en TDS-utligningsperiode
-description: Dette emnet forklarer hvordan du kan vise TDS-betalingene og -transaksjonene (Tax Deducted at Source) som ble postert for en utligningsperiode.
+description: Denne artikkelen forklarer hvordan du kan vise TDS-betalingene og -transaksjonene (Tax Deducted at Source) som ble postert for en utligningsperiode.
 author: kailiang
 ms.date: 03/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6f8c97d1f42af6c073e45c88237d59699a32fc7a
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: c441b6f26636ef1f18e3910a201d02feb4350f33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726900"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898066"
 ---
 # <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>Vise posterte TDS-betalinger og -transaksjoner for en TDS-utligningsperiode
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du kan vise TDS-betalingene og -transaksjonene (Tax Deducted at Source) som ble postert for en utligningsperiode.
+Denne artikkelen forklarer hvordan du kan vise TDS-betalingene og -transaksjonene (Tax Deducted at Source) som ble postert for en utligningsperiode.
 
 1. Gå til **Avgift \> Indirekte avgifter \> Kildeskatt \> Utligningsperioder for kildeskatt**.
 

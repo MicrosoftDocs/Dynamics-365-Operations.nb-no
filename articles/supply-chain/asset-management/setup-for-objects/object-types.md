@@ -1,6 +1,6 @@
 ---
-title: Aktivatyper
-description: Dette emnet forklarer hvordan du oppretter aktivatyper i Aktivastyring. Det beskriver også elementene som er relatert til aktivatyper.
+title: Objekttyper
+description: Denne artikkelen forklarer hvordan du oppretter aktivatyper i Aktivastyring. Det beskriver også elementene som er relatert til aktivatyper.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3a51fdb55e9158e88e89549e3d0049e699c233e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730378"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887638"
 ---
-# <a name="asset-types"></a>Aktivatyper
+# <a name="asset-types"></a>Objekttyper
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Dette emnet forklarer hvordan du oppretter aktivatyper. Det beskriver også elementene som er relatert til aktivatyper. Aktivatyper brukes som generelle kategorier for aktiva. Eksempler inkluderer CNC-maskiner, måleutstyr og lastebilmotorer. Aktivatyper brukes til å administrere vedlikeholdsjobbtypene (vedlikeholdsoppgaver), livssyklustilstander for aktiva, tellere, aktivaattributter, maler for tilstandsvurdering og aktivamodeller som kan velges for et aktivum. Når du oppretter et aktivum, må du angi type.
+Denne artikkelen forklarer hvordan du oppretter aktivatyper. Det beskriver også elementene som er relatert til aktivatyper. Aktivatyper brukes som generelle kategorier for aktiva. Eksempler inkluderer CNC-maskiner, måleutstyr og lastebilmotorer. Aktivatyper brukes til å administrere vedlikeholdsjobbtypene (vedlikeholdsoppgaver), livssyklustilstander for aktiva, tellere, aktivaattributter, maler for tilstandsvurdering og aktivamodeller som kan velges for et aktivum. Når du oppretter et aktivum, må du angi type.
 
 For hver aktivatype kan varianter av aktivatypeoppsettet opprettes. Hvis du for eksempel har en aktivatype som heter **Lastebiler**, kan du opprette varianter av denne aktivatypen for forskjellige aktivaprodusenter og aktivamodeller. For hvert oppsett av aktivatype kan du legge til de nødvendige reservedels- og vedlikeholdsplanene.
 

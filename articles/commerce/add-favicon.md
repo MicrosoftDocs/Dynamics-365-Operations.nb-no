@@ -1,6 +1,6 @@
 ---
-title: Legge til et favorittikon
-description: Dette emnet forklarer hvordan du legger til et favorittikon på området.
+title: Legg til et favorittikon
+description: Denne artikkelen forklarer hvordan du legger til et favorittikon på området.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 2047a0c30c9e723c717657475a111181299aaa8d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964738"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855801"
 ---
-# <a name="add-a-favicon"></a>Legge til et favorittikon
+# <a name="add-a-favicon"></a>Legg til et favorittikon
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du legger til et favorittikon på området.
+Denne artikkelen forklarer hvordan du legger til et favorittikon på området.
 
 Et favorittikon er en liten grafikkfil som vises i en webleserkategori, i adressefeltet, i leserloggen og i bokmerker eller favoritter, blant andre steder. Vi anbefaler at du legger til et favorittikon på området, fordi det representerer og forsterker et merke, og bidrar til å identifisere området fra andre områder som kundene besøker.
 
-Selv om du kan legge til flere favorittikoner av forskjellige størrelser og filtyper på området, viser dette emnet hvordan du legger til ett enkelt favorittikon. Den samme prosessen og lokasjonen brukes imidlertid til å legge til flere favorittikoner.
+Selv om du kan legge til flere favorittikoner av forskjellige størrelser og filtyper på området, viser denne artikkelen hvordan du legger til ett enkelt favorittikon. Den samme prosessen og lokasjonen brukes imidlertid til å legge til flere favorittikoner.
 
 ## <a name="upload-a-favicon-to-your-sites-asset-collection"></a>Laste opp et favorittikon til aktivasamlingen på området
 

@@ -1,6 +1,6 @@
 ---
 title: Finansresultat for PowerBI.com-løsning
-description: Dette emnet beskriver PowerBI.com-løsningen for finansresultat.
+description: Denne artikkelen beskriver PowerBI.com-løsningen for finansresultat.
 author: kweekley
 ms.date: 05/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ca8338473b2efd91b6570e140ee1def3fa93df14dcf57273f601efb7f548d08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcbe41d113ee41734020546388851afb7fc27bbf
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767809"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910422"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Finansresultat for PowerBI.com-løsning
 
@@ -28,7 +28,7 @@ ms.locfileid: "6767809"
 > [!NOTE]
 > Denne PowerBI.com-løsningen er avskrevet som dokumentert i [Fjernede eller avskrevne funksjoner for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Dette emnet beskriver PowerBI.com-løsningen for **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge løsningen.
+Denne artikkelen beskriver PowerBI.com-løsningen for **finansresultat**. Det beskriver instrumentbordet og rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge løsningen.
 
 ## <a name="main-account-setup"></a>Hovedkontooppsett
 Fordi organisasjoner vil at gjeld og omsetningsbeløp skal vises som positive beløp i rapporter, er oppsettet av hovedkontoene viktig. For at disse hovedkontoene skal vises som positive beløp, må hovedkontotypen settes til **Gjeld** eller **Inntekt**. Når du bruker disse kontotypene, vil rapportering via Power BI tilbakeføre tegnene og vise beløpene som positive.

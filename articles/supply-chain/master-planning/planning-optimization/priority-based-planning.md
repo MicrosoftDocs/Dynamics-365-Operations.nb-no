@@ -1,6 +1,6 @@
 ---
 title: Prioritetsbasert planlegging
-description: Dette emnet beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: bdca7ef99716cebee5c4eb41d1e51793b9468dd4
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468307"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873818"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbasert planlegging
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management. Funksjonen gir støtte for etterspørselsdrevet planlegging, som er ett trinn i DDMRP (etterspørselsdrevet planlegging av materialkrav). Prioritetsbasert planlegging gjør det mulig for Planleggingsoptimalisering å generere planlagte bestillinger som drives av planleggingsprioriteter i stedet for behovsdatoer.
+Denne artikkelen beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management. Funksjonen gir støtte for etterspørselsdrevet planlegging, som er ett trinn i DDMRP (etterspørselsdrevet planlegging av materialkrav). Prioritetsbasert planlegging gjør det mulig for Planleggingsoptimalisering å generere planlagte bestillinger som drives av planleggingsprioriteter i stedet for behovsdatoer.
 
 Med prioritetsbasert planlegging kan du prioritere etterfyllingsordrer for å sikre at behovet prioriteres over mindre viktig etterspørsel. En etterfyllingsordre for manko blir for eksempel prioritert over en standard etterfyllingsordre for påfylling. Systemet kan automatisk dele større ordrer i separate mindre ordrer, der ordrelinjer grupperes etter prioritet. Det kan deretter behandle alle ordrer med høy prioritet først.
 

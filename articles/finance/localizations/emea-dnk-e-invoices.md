@@ -1,6 +1,6 @@
 ---
 title: Elektroniske fakturaer for kunde i Danmark
-description: Dette emnet forklarer hvordan du konfigurerer og elektroniske fakturaer i Danmark.
+description: Denne artikkelen forklarer hvordan du konfigurerer og elektroniske fakturaer i Danmark.
 author: ilkond
 ms.date: 12/20/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Norway
 ms.author: ilyako
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5bde6b55810d48fa8f852e4f1215879c371736b9
-ms.sourcegitcommit: d13ea8b6baf73601a8b57548232aac84ffaba717
+ms.openlocfilehash: a232e547fd1568bb91d01700f50126948b4edfe1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7941390"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908967"
 ---
 # <a name="customer-electronic-invoices-in-denmark"></a>Elektroniske fakturaer for kunde i Danmark
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer og utsteder elektroniske kundefakturaer i Danmark ved hjelp av [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html)-formatet for elektroniske fakturaer.
+Denne artikkelen beskriver hvordan du konfigurerer og utsteder elektroniske kundefakturaer i Danmark ved hjelp av [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html)-formatet for elektroniske fakturaer.
 
 ## <a name="prerequisites"></a>Forutsetninger
 

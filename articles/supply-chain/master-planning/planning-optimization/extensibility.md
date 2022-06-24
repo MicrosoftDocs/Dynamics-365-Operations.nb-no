@@ -1,6 +1,6 @@
 ---
 title: Utvidelse av planleggingsoptimalisering
-description: Dette emnet beskriver utvidingsscenarier som støttes i planleggingsoptimalisering.
+description: Denne artikkelen beskriver utvidingsscenarier som støttes i planleggingsoptimalisering.
 author: t-benebo
 ms.date: 08/05/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: d7e39c9ecd1dc1a101e219764e8f4457bb06ff7a
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 7d649110959e6bcfdaeb32dd53c55dbc446ed1be
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468895"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857551"
 ---
 # <a name="planning-optimization-extensibility"></a>Utvidelse av planleggingsoptimalisering
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver utvidingsscenarier som er relatert til hovedplanlegging og støttes i planleggingsoptimalisering. Disse funksjonene er tilgjengelige fra versjon 10.0.13 i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikkelen beskriver utvidingsscenarier som er relatert til hovedplanlegging og støttes i planleggingsoptimalisering. Disse funksjonene er tilgjengelige fra versjon 10.0.13 i Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="custom-processing-when-master-planning-is-completed"></a>Egendefinert behandling når hovedplanleggingen er fullført
 

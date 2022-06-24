@@ -1,6 +1,6 @@
 ---
 title: Definere validering av leverandørfakturakontroll
-description: Dette emnet gir informasjon om hvordan du definerer validering av leverandørfakturakontroll.
+description: Denne artikkelen gir informasjon om hvordan du definerer validering av leverandørfakturakontroll.
 author: abruer
 ms.date: 02/14/2022
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 86cc5cf688e3b66cf976fc7f507bd8f8df757612
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182561"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904966"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Definere validering av leverandørfakturakontroll
 
@@ -44,7 +44,7 @@ Det finnes fire ulike kontrollvalideringstyper.
 5. Merk av eller fjern merket for **Samsvar fakturatotaler** for å samsvare faktiske fakturatotaler med forventede summer.
     * Velg om et ikon skal vises hvis et avvik for fakturakontroll overskrider toleransen. Du kan velge å vise ikonet når et positivt avvik overskrider toleransen, eller når enten et positivt eller et negativt avvik overskrider toleransen.  
     * Toleransen er for eksempel 5 prosent, og det totale fakturabeløpet, basert på bestillingen, er 100,00. Derfor vises et ikon for prissamsvar hvis det totale fakturabeløpet overskrider 105,00. Hvis du velger **Hvis større eller mindre enn toleransen**, vises også et ikon hvis fakturabeløpet er mindre enn 95,00.  
-6. I feltet **Toleranseprosent for fakturatotaler** angir du prosentavviket som er akseptabelt. Denne verdien er standardverdien for firmaet. Denne verdien kan overstyres for bestemte leverandører på siden **Toleranser for fakturatotaler**. Hvis du vil ha informasjon om hvordan du overstyrer toleranseprosent for fakturatotaler for en bestemt leverandør, kan du se delen «Definere fakturatotaler som samsvarer med toleranser for leverandører» senere i dette emnet.
+6. I feltet **Toleranseprosent for fakturatotaler** angir du prosentavviket som er akseptabelt. Denne verdien er standardverdien for firmaet. Denne verdien kan overstyres for bestemte leverandører på siden **Toleranser for fakturatotaler**. Hvis du vil ha informasjon om hvordan du overstyrer toleranseprosent for fakturatotaler for en bestemt leverandør, kan du se delen «Definere fakturatotaler som samsvarer med toleranser for leverandører» senere i denne artikkelen.
 7. Angi **Pris- og antallssamsvar**.
 8. I feltet **Linjekontrollpolicy** velger du en verdi som skal brukes som standardpolicy for den juridiske enheten du arbeider med. **Ikke nødvendig** betyr at det ikke kreves noen kontroll av individuelle fakturalinjepriser til bestillingspris eller fakturaantall til antallet på følgeseddelen. **Toveis samsvar** betyr at det kreves bekreftelse av fakturalinjer, men bare bestillingen og leverandørens fakturadokumenter er involvert i kontrollen. Produktkvitteringen tas ikke med i de samsvarende valideringene. **Treveis samsvar** betyr at fakturaens nettoenhetspris skal sammenlignes med bestillingens nettoenhetspris, og antallet produktkvitteringer skal sammenlignes med fakturaantallet.
 9. Hvis du vil gjøre det mulig å bruke et annet samsvarsnivå for en vare, leverandør, kombinasjon av leverandør og vare eller bestillingslinje, velger du en verdi i feltet **Tillat overstyring av kontrollpolicy**. Linjekontrollpolicyen for juridisk enhet kan overstyres for en bestemt leverandør, vare eller kombinasjon av leverandør og vare på **Kontrollpolicy**-siden.

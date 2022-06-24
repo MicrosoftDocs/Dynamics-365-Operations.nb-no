@@ -1,6 +1,6 @@
 ---
-title: Arbeidsstedstyper
-description: Dette emnet beskriver hvordan du oppretter arbeidsstedstyper i Aktivastyring.
+title: Typer funksjonslokasjoner
+description: Denne artikkelen beskriver hvordan du oppretter arbeidsstedstyper i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 301dc838ed204ebe488dd167df75fc84131f235f64285c6ae99c62ee1188362c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01c8276d77f7655659cab13f3c520d7c171e3cfd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879228"
 ---
-# <a name="functional-location-types"></a>Arbeidsstedstyper
+# <a name="functional-location-types"></a>Typer funksjonslokasjoner
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Dette emnet beskriver hvordan du oppretter arbeidsstedstyper i Aktivastyring. Arbeidsstedstyper brukes til å administrere krav til arbeidssteder, inkludert hvordan aktiva installeres på et arbeidssted. Du kan definere aktivatyper, vedlikeholdsplaner, arbeidsstedsattributter og krav til aktivaattributter som skal brukes på et arbeidssted som bruker den bestemte arbeidsstedstypen. Når du oppretter et arbeidssted, er arbeidsstedstypen obligatorisk.
+Denne artikkelen beskriver hvordan du oppretter arbeidsstedstyper i Aktivastyring. Arbeidsstedstyper brukes til å administrere krav til arbeidssteder, inkludert hvordan aktiva installeres på et arbeidssted. Du kan definere aktivatyper, vedlikeholdsplaner, arbeidsstedsattributter og krav til aktivaattributter som skal brukes på et arbeidssted som bruker den bestemte arbeidsstedstypen. Når du oppretter et arbeidssted, er arbeidsstedstypen obligatorisk.
 
 >[!NOTE] 
 >Hvis du vil arbeide med arbeidssteder, må du opprette et standard arbeidssted som bare skal brukes til å opprette nye aktiva. For dette standard arbeidsstedet bør du opprette en standard arbeidsstedstype som er svært enkel, og tillater at flere aktiva installeres på standardarbeidsstedet. Se [Opprette arbeidssteder](../functional-locations/create-functional-locations.md) hvis du vil ha mer informasjon om hvordan du definerer arbeidssteder.

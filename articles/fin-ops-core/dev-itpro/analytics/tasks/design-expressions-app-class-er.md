@@ -1,6 +1,6 @@
 ---
 title: Utforme ER-uttrykk for å kalle programklassemetoder
-description: Dette emnet beskriver hvordan du bruker den eksisterende programlogikken i konfigurasjoner for elektronisk rapportering på nytt ved å kalle opp nødvendige metoder for programklasser.
+description: Denne artikkelen beskriver hvordan du bruker den eksisterende programlogikken i konfigurasjoner for elektronisk rapportering på nytt ved å kalle opp nødvendige metoder for programklasser.
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: business-process
@@ -12,30 +12,30 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
-ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.openlocfilehash: 0fb0a9725d882fdc330d7adbb49bd3dcadf7805f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7751712"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883632"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Utforme ER-uttrykk for å kalle programklassemetoder
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker den eksisterende programlogikken i [elektronisk rapportering (ER)](../general-electronic-reporting.md)-konfigurasjoner på nytt ved å kalle nødvendige metoder for programklasser i ER-uttrykk. Verdier til argumenter for oppkallsklasser kan defineres dynamisk ved kjøretid. Verdier kan for eksempel være basert på informasjon i analysedokumentet for å sikre at det er riktig.
+Denne artikkelen beskriver hvordan du bruker den eksisterende programlogikken i [elektronisk rapportering (ER)](../general-electronic-reporting.md)-konfigurasjoner på nytt ved å kalle nødvendige metoder for programklasser i ER-uttrykk. Verdier til argumenter for oppkallsklasser kan defineres dynamisk ved kjøretid. Verdier kan for eksempel være basert på informasjon i analysedokumentet for å sikre at det er riktig.
 
-I dette emnet skal du for eksempel utforme en prosess som analyserer innkommende bankkontoutdrag for en oppdatering av programdata. Du mottar de innkommende bankkontoutdragene som tekstfiler (TXT) som inneholder IBAN-koder (internasjonalt bankkontonummer). Som en del av prosessen med å importer bankkontoutdrag må du validere riktigheten av IBAN-koden ved hjelp av logikken som allerede finnes.
+I denne artikkelen skal du for eksempel utforme en prosess som analyserer innkommende bankkontoutdrag for en oppdatering av programdata. Du mottar de innkommende bankkontoutdragene som tekstfiler (TXT) som inneholder IBAN-koder (internasjonalt bankkontonummer). Som en del av prosessen med å importer bankkontoutdrag må du validere riktigheten av IBAN-koden ved hjelp av logikken som allerede finnes.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Fremgangsmåtene i dette emnet er ment for brukere som har blitt tilordnet rollen som **Systemansvarlig** eller **Utvikler av elektronisk rapportering**.
+Fremgangsmåtene i denne artikkelen er ment for brukere som har blitt tilordnet rollen som **Systemansvarlig** eller **Utvikler av elektronisk rapportering**.
 
 Prosedyrene kan fullføres ved hjelp av et hvilket som helst datasett.
 
 For å fullføre dem må du laste ned og lagre følgende fil lokalt: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-I dette emnet skal du opprette de nødvendige ER-konfigurasjonene for eksempelfirmaet Litware, Inc. Før du kan fullføre prosedyrene i dette emnet, må du derfor fullføre følgende trinn:
+I denne artikkelen skal du opprette de nødvendige ER-konfigurasjonene for eksempelfirmaet Litware, Inc. Før du kan fullføre prosedyrene i denne artikkelen, må du derfor fullføre følgende trinn:
 
 1. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 2. På siden **Lokaliseringskonfigurasjoner** må du bekreftet av konfigurasjonsleverandøren for eksempelfirmaet **Litware, Inc.** er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i [Opprett konfigurasjonsleverandører og merk dem som aktive](er-configuration-provider-mark-it-active-2016-11.md).

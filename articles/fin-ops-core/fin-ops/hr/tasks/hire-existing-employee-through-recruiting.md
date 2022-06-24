@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07dae424f32281a39c3887437ac7976fb3beb8d3
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 3fdbdfc7a1a642bae2e693d1f6de0af3c08a8a6e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734930"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876480"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Ansette eksisterende ansatte via rekruttering
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Rekrutteringsfunksjonaliteten i dette emnet kalles Rekrutteringsprosjekter og fokuserer på søkere, søknader og rekrutteringsprosjekter.  
+> Rekrutteringsfunksjonaliteten i denne artikkelen kalles Rekrutteringsprosjekter og fokuserer på søkere, søknader og rekrutteringsprosjekter.  
 
 
 Noen ganger kan ledige stillinger fylles av kandidater som allerede er ansatte i organisasjonen. Denne prosedyren går gjennom trinnene for å ansette en eksisterende ansatt gjennom rekrutteringsprosessen. I denne prosedyren er et rekrutteringsprosjekt allerede definert, og en eksisterende ansatt har allerede sendt en søknad for rekrutteringsprosjektet. Demonstrasjonsdatafirmaet **USMF** ble brukt til å opprette denne fremgangsmåten.

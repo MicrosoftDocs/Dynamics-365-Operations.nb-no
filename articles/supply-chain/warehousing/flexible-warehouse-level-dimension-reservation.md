@@ -1,6 +1,6 @@
 ---
-title: Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
-description: Dette emnet beskriver retningslinjen for beholdningsreservasjon som lar virksomheter som selger partisporede produkter og kjører logistikken som WMS-aktiverte operasjoner, reservere spesifikke partier for kundesalgsordrer, selv om reservasjonshierarkiet som er assosiert med produktene, ikke tillater reservasjon av spesifikke partier.
+title: Fleksibel dimensjonsreservasjonspolicy for lagernivå
+description: Denne artikkelen beskriver retningslinjen for beholdningsreservasjon som lar virksomheter som selger partisporede produkter og kjører logistikken som WMS-aktiverte operasjoner, reservere spesifikke partier for kundesalgsordrer, selv om reservasjonshierarkiet som er assosiert med produktene, ikke tillater reservasjon av spesifikke partier.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: fb42d4ccd2d8797a34f6351caf7dedbc1e957fd5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474946"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885819"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel dimensjonsreservasjonspolicy for lagernivå
 
@@ -28,7 +28,7 @@ Når et hierarki for beholdningsreservasjon av *Parti-under\[plassering\]*-typen
 
 På lignende måte kan ikke bestemte lisensplater reserveres for produkter i salgsordrer når disse produktene er knyttet til standard reservasjonshierarki.
 
-Dette emnet beskriver retningslinjen for beholdningsreservasjon som lar disse virksomhetene reservere spesifikke partier eller lisensalter, selv når produktene er assosiert med et *Parti-under\[plassering\]*-reservasjonshierarki.
+Denne artikkelen beskriver retningslinjen for beholdningsreservasjon som lar disse virksomhetene reservere spesifikke partier eller lisensalter, selv når produktene er assosiert med et *Parti-under\[plassering\]*-reservasjonshierarki.
 
 ## <a name="inventory-reservation-hierarchy"></a>Beholdningsreservasjonshierarki
 

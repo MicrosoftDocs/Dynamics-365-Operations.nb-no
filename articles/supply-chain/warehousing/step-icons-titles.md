@@ -1,6 +1,6 @@
 ---
 title: Tilordne trinnikoner og -titler for mobilappen Warehouse Management
-description: Dette emnet beskriver hvordan du tilordner trinnikoner og -titler for nye eller tilpassede oppgaveflyter for Warehouse Management-mobilappen.
+description: Denne artikkelen beskriver hvordan du tilordner trinnikoner og -titler for nye eller tilpassede oppgaveflyter for Warehouse Management-mobilappen.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
@@ -10,18 +10,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 361ace454f7125ec86bd99cffefc7d268f81d37f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103319"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890603"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Tilordne trinnikoner og -titler for mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du tilordner trinnikoner og -titler for nye eller tilpassede oppgaveflyter for mobilappen Warehouse Management.
+Denne artikkelen beskriver hvordan du tilordner trinnikoner og -titler for nye eller tilpassede oppgaveflyter for mobilappen Warehouse Management.
 
 Følgende illustrasjoner viser hvordan trinnikoner og titler vises i mobilappen Warehouse Management.
 
@@ -29,7 +29,7 @@ Følgende illustrasjoner viser hvordan trinnikoner og titler vises i mobilappen 
 
 ## <a name="turn-this-feature-on-or-off"></a>Aktivere eller deaktivere denne funksjonen
 
-Du må aktivere funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Du må aktivere funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* for systemet for å kunne bruke funksjonaliteten som beskrives i denne artikkelen. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Standard trinn-IDer, klasser og ikoner
 
@@ -39,7 +39,7 @@ Hvert trinn i en oppgaveflyt identifiseres av en trinn-ID, og hver trinn-ID har 
 
 I tabellen nedenfor finner du en oversikt over alle trinn-IDer som er tilgjengelige, og den tilhørende trinnklassen. Kontrollnavnet til hovedinndatafeltet brukes som trinn-IDen.
 
-Hvis du vil ha et eksempel som viser hvordan disse trinn-IDene og klassene brukes, kan du se implementeringen av metoden `WHSMobileAppStepInfoBuilder.stepId()` i delen [Eksempel: Tilordne trinnikoner og titler for en egendefinert flyt](#example) senere i dette emnet.
+Hvis du vil ha et eksempel som viser hvordan disse trinn-ID-ene og klassene brukes, kan du se implementeringen av metoden `WHSMobileAppStepInfoBuilder.stepId()` i delen [Eksempel: Tilordne trinnikoner og titler for en egendefinert flyt](#example) senere i denne artikkelen.
 
 | Trinn-ID | Trinnklasse |
 |-|-|
@@ -373,7 +373,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 Trinnikonets ID lagres i `defaultStepIcon`-klassemedlemmet, og trinntittelen lagres i `defaultStepTitle`-klassemedlemmet.
 
-Hvis du vil tilordne et trinnikon, angir du `defaultStepIcon` til ett av ikon-IDene som vises i delen [Tilgjengelige trinnikoner](#step-icons) tidligere i dette emnet.
+Hvis du vil tilordne et trinnikon, angir du `defaultStepIcon` til en av ikon-ID-ene som vises i delen [Tilgjengelige trinnikoner](#step-icons) tidligere i denne artikkelen.
 
 ### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Bruk et standard eller egendefinert trinnikon og en tittel for vektinndataen
 
@@ -405,7 +405,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-Deretter oppretter du en trinnklasse for `NewWeight`-trinnet. Koden bør ligne på koden for `ContainerId`-eksemplet som ble vist tidligere i dette emnet.
+Deretter oppretter du en trinnklasse for `NewWeight`-trinnet. Koden bør ligne på koden for `ContainerId`-eksemplet som ble vist tidligere i denne artikkelen.
 
 #### <a name="override-the-stepinfo-method"></a>Overstyre stepInfo()-metoden
 

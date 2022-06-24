@@ -1,6 +1,6 @@
 ---
 title: Mva-rapport for Finland
-description: Dette emnet gir informasjon om hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
+description: Denne artikkelen gir informasjon om hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
 author: anasyash
 ms.date: 03/16/2022
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Norway
 ms.author: anasyash
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 173802bb043bdacd733df42ebcbed7483fd03d62
-ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
+ms.openlocfilehash: 47f258020975c1f565ca8d7232c0173a6245a87a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8466821"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894796"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
+Denne artikkelen forklarer hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
 
 Hvis du vil ha generell informasjon om hvordan du definerer mva-oppgaven, kan du se [Mva-rapportering for Europa](emea-vat-reporting.md).
 
@@ -103,7 +103,7 @@ Definer mva-koder ved å følge instruksjonene i [Mva-koder for mva-rapportering
 Du kan generere den finske mva-rapporten ved hjelp av forespørselen **Rapporter merverdiavgift for utligningsperioden**.
 
 1. Gå til **Avgift \> Deklareringer \> Merverdiavgift \> Rapporter merverdiavgift for utligningsperioden**.
-2. I dialogboksen angir du feltene **Utligningsperiode**, **Fra-dato**, **Avgiftsvaluta** og **Rapporteringsvaluta** som beskrevet i delen [Generere en mva-betaling og skrive ut den finske mva-rapporten](#generate-print-finnish) tidligere i dette emnet.
+2. I dialogboksen angir du feltene **Utligningsperiode**, **Fra-dato**, **Avgiftsvaluta** og **Rapporteringsvaluta** som beskrevet i delen [Generere en mva-betaling og skrive ut den finske mva-rapporten](#generate-print-finnish) tidligere i denne artikkel.
 3. I feltet **Mva-betalingsversjon** velger du en av følgende verdier:
 
    - **Opprinnelig** – Generer en rapport for mva-transaksjoner for den første posterte utligningsberegningen for perioden.
@@ -111,7 +111,7 @@ Du kan generere den finske mva-rapporten ved hjelp av forespørselen **Rapporter
    - **Total liste** – Generer en rapport for alle salgstransaksjoner for perioden, inkludert den opprinnelige og alle rettelsene.
 
 4. Velg **OK**.
-5. I dialogboksen **Finsk mva-rapport** angir du feltene **Avgiftsvaluta**, **Rapporteringsvaluta** og **Valutakurs på rapporteringsdato** som beskrevet i delen [Generere en mva-betaling og skrive ut den finske mva-rapporten](#generate-print-finnish) tidligere i dette emnet.
+5. I dialogboksen **Finsk mva-rapport** angir du feltene **Avgiftsvaluta**, **Rapporteringsvaluta** og **Valutakurs på rapporteringsdato** som beskrevet i delen [Generere en mva-betaling og skrive ut den finske mva-rapporten](#generate-print-finnish) tidligere i denne artikkelen.
 
 ## <a name="example"></a>Eksempel
 

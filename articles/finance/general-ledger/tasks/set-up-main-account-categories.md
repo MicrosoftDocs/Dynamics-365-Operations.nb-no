@@ -1,6 +1,6 @@
 ---
-title: Definere hovedkontokategorier
-description: Dette emnet forklarer hvordan du definerer hovedkontokategorier i Dynamics 365 Finance.
+title: Definer hovedkontokategorier
+description: Denne artikkelen forklarer hvordan du definerer hovedkontokategorier i Dynamics 365 Finance.
 author: aprilolson
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb41f1b7200363f8846c406d5c20338f6ea242bd
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: c48011c9988bdca694851476540db574efef7909
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8721989"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879570"
 ---
 # <a name="set-up-main-account-categories"></a>Definer hovedkontokategorier
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du definerer hovedkontokategorier. Hovedkontokategorier brukes til standardrapportene i finansiell rapportering og Power BI. Hovedkontokategorier som opprettes som standard kan gis nytt navn, men ikke slettes. Flere kontokategorier kan opprettes og brukes for rapportering og analyse. Dette emnet bruker demonstrasjonsfirmaet USMF.
+Denne artikkelen forklarer hvordan du definerer hovedkontokategorier. Hovedkontokategorier brukes til standardrapportene i finansiell rapportering og Power BI. Hovedkontokategorier som opprettes som standard kan gis nytt navn, men ikke slettes. Flere kontokategorier kan opprettes og brukes for rapportering og analyse. Denne artikkelen bruker USMF demo firmaet.
 
 ## <a name="create-a-main-account-category"></a>Opprette en hovedkontokategori
 1. I navigasjonsruten går du til **Moduler > Økonomimodul > Kontoplan > Kontoer > Hovedkontokategorier**.

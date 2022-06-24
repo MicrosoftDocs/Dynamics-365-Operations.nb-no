@@ -1,6 +1,6 @@
 ---
-title: Tilstandskontroll for eksterne enheter og tjenester for POS
-description: Dette emnet gir en oversikt over tilstandssjekkoperasjonen i salgsstedet (POS).
+title: Tilstandskontroll for eksterne enheter og tjenester for salgssted
+description: Denne artikkelen gir en oversikt over tilstandssjekkoperasjonen i salgsstedet (POS).
 author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 44fd4b6246d3d7947527416c2b8b447bd64f179f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779878"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863327"
 ---
-# <a name="health-check-for-pos-peripherals-and-services"></a>Tilstandskontroll for eksterne enheter og tjenester for POS
+# <a name="health-check-for-pos-peripherals-and-services"></a>Tilstandskontroll for eksterne enheter og tjenester for salgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver tilstandssjekkoperasjonen i salgsstedet (POS).
+Denne artikkelen beskriver tilstandssjekkoperasjonen i salgsstedet (POS).
 
 ## <a name="overview"></a>Oversikt
 
@@ -39,7 +39,7 @@ Microsoft Dynamics 365 Commerce-versjoner 10.0.10 og senere inneholder en tilsta
 | Semester | beskrivelse |
 |---|---|
 | Ekstern enhet | Alle enheter som POS-programmet bruker til å forenkle transaksjoner og andre operasjoner i butikken. Eksempler inkluderer kassaskuffer, strekkodeskannere og betalingsterminaler. |
-| Service | I dette emnet er en tjeneste et tilleggsprogram som POS-programmet er avhengig av å utføre transaksjoner og daglige operasjoner. Eksempler inkluderer apper som kan hjelpe med skatt eller forsendelsesberegninger. |
+| Tjeneste | I denne artikkelen er en tjeneste et tilleggsprogram som POS-programmet er avhengig av å utføre transaksjoner og daglige operasjoner. Eksempler inkluderer apper som kan hjelpe med skatt eller forsendelsesberegninger. |
 
 ## <a name="health-check-operation"></a>Tilstandskontrolloperasjon
 

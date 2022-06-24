@@ -1,6 +1,6 @@
 ---
 title: Arbeidsflyter for rabattbehandlingsavtale
-description: Dette emnet beskriver hvordan du konfigurerer en arbeidsflyt for rabattbehandlingsavtale for å godkjenne og aktivere avtaler.
+description: Denne artikkelen beskriver hvordan du konfigurerer en arbeidsflyt for rabattbehandlingsavtale for å godkjenne og aktivere avtaler.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0fe5bc5af953ee7cbbda3477d75a38261bb2bb10
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2b1611ff7877efc4a2f98b8f84a1ef91971902ab
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687419"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869524"
 ---
 # <a name="rebate-management-deal-workflows"></a>Arbeidsflyter for rabattbehandlingsavtale
 
@@ -35,7 +35,7 @@ Brukere kan ikke godkjenne avtaler manuelt. Arbeidsflyten må alltid brukes.
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Opprett og administrer arbeidsflyter for rabattbehandlingsavtale
 
-For å arbeide med arbeidsflyter for rabattbehandlingsavtale må du gå til **Rabattbehandling \> Oppsett \> Arbeidsflyter for rabattbehandling**. Der kan du vise, opprette og oppdatere arbeidsflyter etter behov. Bare én arbeidsflyt av denne typen kan være aktiv om gangen. Hvis du vil ha mer informasjon om arbeidsflyter, hvordan du arbeider med siden **Arbeidsflyter for rabattbehandling** og hvordan du oppretter arbeidsflyter, kan du se [Oversikt over arbeidsflytsystem](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) og de relaterte emnene.
+For å arbeide med arbeidsflyter for rabattbehandlingsavtale må du gå til **Rabattbehandling \> Oppsett \> Arbeidsflyter for rabattbehandling**. Der kan du vise, opprette og oppdatere arbeidsflyter etter behov. Bare én arbeidsflyt av denne typen kan være aktiv om gangen. Hvis du vil ha mer informasjon om arbeidsflyter, hvordan du arbeider med siden **Arbeidsflyter for rabattbehandling** og hvordan du oppretter arbeidsflyter, kan du se [Oversikt over arbeidsflytsystem](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) og de relaterte artiklene.
 
 ## <a name="use-a-workflow-to-activate-a-deal"></a>Bruk en arbeidsflyt til å aktivere en avtale
 

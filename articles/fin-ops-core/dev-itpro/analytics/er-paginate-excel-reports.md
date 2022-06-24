@@ -1,6 +1,6 @@
 ---
-title: Utforme et ER-format for å paginere genererte dokumenter i Excel
-description: Dette emnet beskriver hvordan du utformer et ER-format (Electronic reporting) som paginerer et generert dokument i Microsoft Excel.
+title: Utform et ER-format for å paginere genererte dokumenter i Excel
+description: Denne artikkelen beskriver hvordan du utformer et ER-format (Electronic reporting) som paginerer et generert dokument i Microsoft Excel.
 author: NickSelin
 ms.date: 09/14/2021
 ms.topic: article
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-ms.openlocfilehash: ce29225c4bce24adc2abefc3d3d6f20774852af4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e8edc8bba62f74b4f81d423cf75b5fb87c01e43f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909285"
 ---
-# <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Utforme et ER-format for å paginere genererte dokumenter i Excel
+# <a name="design-an-er-format-to-paginate-generated-documents-in-excel"></a>Utform et ER-format for å paginere genererte dokumenter i Excel
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan en bruker i rollen som systemadministrator eller funksjonsrådgiver for elektronisk rapportering kan konfigurere et [ER-format](general-electronic-reporting.md) (elektronisk rapportering) til å generere utgående dokumenter i Microsoft Excel og administrere dokumentpaginering.
+Denne artikkelen beskriver hvordan en bruker i rollen som systemadministrator eller funksjonsrådgiver for elektronisk rapportering kan konfigurere et [ER-format](general-electronic-reporting.md) (elektronisk rapportering) til å generere utgående dokumenter i Microsoft Excel og administrere dokumentpaginering.
 
 I dette eksemplet vil du endre ER-formatet som følger med Microsoft, som brukes til å skrive ut kontrollrapporten når Intrastat-deklareringen [genereres](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). Med denne rapporten kan du observere rapporterte Intrastat-transaksjoner. Endringene dine gir deg tilgang til å administrere pagineringen av kontrollrapporter som genereres.
 
-Prosedyrene i dette emnet kan fullføres i **DEMF**-firmaet. Ingen koding er nødvendig. Før du starter kan du laste ned og lagre følgende filer.
+Prosedyrene i denne artikkelen kan fullføres i **DEMF**-firmaet. Ingen koding er nødvendig. Før du starter kan du laste ned og lagre følgende filer.
 
 | beskrivelse       | Filnavn |
 |-------------------|-----------| 
@@ -165,7 +165,7 @@ Deretter bruker du det egendefinerte Er-formatet til å generere kontrollrapport
 
 ### <a name="repeat-the-replacement-of-the-current-excel-template-in-the-custom-er-format"></a>Gjenta erstatningen i den gjeldende Excel-malen i det egendefinerte ER-formatet
 
-1. Følg trinnene i [Erstatte den gjeldende Excel-malen i det egendefinerte ER-formatet](#replace-template)-delen i dette emnet. I trinn 7 velger du imidlertid filen **ERIntrastatReportDemo2.xlsx**.
+1. Følg trinnene i [Erstatte den gjeldende Excel-malen i det egendefinerte ER-formatet](#replace-template)-delen i denne artikkelen. I trinn 7 velger du imidlertid filen **ERIntrastatReportDemo2.xlsx**.
 2. På siden **Formatutforming** utvider du **Intrastat**.
 3. Gi navn til formatkomponentene [Område](er-fillable-excel.md#range-component) som er lagt til i ER-formatet for å synkronisere strukturen med strukturen i den brukte Excel-malen:
 
@@ -406,7 +406,7 @@ Hvis du vil endre synligheten, oppdaterer du egenskapen **Aktivert** i komponent
 
 ## <a name="generate-an-intrastat-declaration-control-report-updated"></a>Generere en Intrastat-deklarasjonskontrollrapport (oppdatert)
 
-1. Kontroller at du har 24 transaksjoner på **Intrastat**-siden. Gjenta trinnene i delen [Generere en Intrastat-deklareringskontrollrapport](#generate-intrastat-control-report) i dette emnet for å generere og gå gjennom kontrollrapporten.
+1. Kontroller at du har 24 transaksjoner på **Intrastat**-siden. Gjenta trinnene i delen [Generere en Intrastat-deklareringskontrollrapport](#generate-intrastat-control-report) i denne artikkelen for å generere og gå gjennom kontrollrapporten.
 
     Alle transaksjoner presenteres på den første siden. Sidetotalene og tellerne er lik rapporttotalene og tellerne. Sidehodeområdet er skjult på den første siden, fordi rapporthodet allerede inneholder kolonnetitler. Toppteksten og bunnteksten er skjult på den andre siden, fordi siden ikke inneholder transaksjoner.
 

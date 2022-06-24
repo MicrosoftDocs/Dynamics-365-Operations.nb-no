@@ -1,6 +1,6 @@
 ---
 title: Forsyningsplan
-description: Dette emnet inneholder informasjon om forsyningsplansiden og de tilhørende funksjonene.
+description: Denne artikkelen inneholder informasjon om forsyningsplansiden og de tilhørende funksjonene.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 89b8ce96a5c34902187751cfa523ed99a94500b3
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 0e3937dd4cffc464f38b5770674364579bdb06d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468683"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851746"
 ---
 # <a name="supply-schedule"></a>Forsyningsplan
 
@@ -28,7 +28,7 @@ ms.locfileid: "8468683"
 
 Du kan åpne siden **Forsyningsplan** på en av følgende måter:
 
-- Gå til **Hovedplanlegging \> Hovedplanlegging \> Forsyningsplan**. Angi planen og produktet du vil bruke, i dialogboksen **Endre filter**, ved å angi filterverdier i feltene som vises. (I resten av dette emnet kalles samlingen med filterverdier du angi, "filteret" eller "det gjeldende filteret".) Velg **OK** når du er ferdig.
+- Gå til **Hovedplanlegging \> Hovedplanlegging \> Forsyningsplan**. Angi planen og produktet du vil bruke, i dialogboksen **Endre filter**, ved å angi filterverdier i feltene som vises. (I resten av denne artikkelen kalles samlingen med filterverdier du angi, "filteret" eller "det gjeldende filteret".) Velg **OK** når du er ferdig.
 - Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**. Velg eller åpne et produkt. I handlingsruten, i **Plan**-fanen og **Visning**-gruppen, velger du **Forsyningsplan**.
 - Gå til **Hovedplanlegging \> Oppsett \> Behovsprognose \> Varefordelingsnøkler**. Velg en varetildelingsnøkkel som brukes som en produktserie. Velg deretter **Forsyningsplan** i handlingsruten.
 - Gå til **Hovedplanlegging \> Hovedplanlegging \> Planlagte ordrer**. Velg eller åpne en planlagt ordre. I handlingsruten, i **Visning**-fanen og **Visning**-gruppen, velger du **Forsyningsplan**.

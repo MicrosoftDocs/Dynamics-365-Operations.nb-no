@@ -1,6 +1,6 @@
 ---
 title: Oversikt over øyeblikksbilder
-description: Dette emnet beskriver øyeblikksbildefunksjonen, som gjør at du kan lagre en kontantflytprognose for analyse eller sammenligning med faktiske data senere. Når du genererer en kontantstrømprognose, kan du lagre denne prognosen som et øyeblikksbilde. Du kan deretter bruke disse øyeblikksbildene til å redigere kontoene som var inkludert i prognosen, eller sammenligne prognosen i øyeblikksbildet med faktiske data.
+description: Denne artikkelen beskriver øyeblikksbildefunksjonen, som gjør at du kan lagre en kontantflytprognose for analyse eller sammenligning med faktiske data senere. Når du genererer en kontantstrømprognose, kan du lagre denne prognosen som et øyeblikksbilde. Du kan deretter bruke disse øyeblikksbildene til å redigere kontoene som var inkludert i prognosen, eller sammenligne prognosen i øyeblikksbildet med faktiske data.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f84afddb26136797a7d35faf52325702b8e41a45
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 64f8aa3e932b4f8b6fdc5b239929216a11bfb377
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725352"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896499"
 ---
 # <a name="snapshots-overview"></a>Oversikt over øyeblikksbilder
 

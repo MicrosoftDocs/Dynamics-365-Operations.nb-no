@@ -1,6 +1,6 @@
 ---
 title: Konfigurere Azure Active Directory-godkjenning for salgsstedspålogging
-description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory som godkjenningsmetoden på Microsoft Dynamics 365 Commerce-salgsstedet.
+description: Denne artikkelen beskriver hvordan du konfigurerer Azure Active Directory som godkjenningsmetoden på Microsoft Dynamics 365 Commerce-salgsstedet.
 author: boycezhu
 ms.date: 04/23/2021
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 9dfb0389b0ca4b2cf75ccc70f35824674e618055
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 47da2c78cef2bbee324fbc2202898fbabd927c4d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402157"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853934"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurere Azure Active Directory-godkjenning for salgsstedspålogging
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) som godkjenningsmetoden på Microsoft Dynamics 365 Commerce-salgsstedet.
+Denne artikkelen beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) som godkjenningsmetoden på Microsoft Dynamics 365 Commerce-salgsstedet.
 
-Forhandlere som bruker Dynamics 365 Commerce sammen med andre Microsoft-skytjenester, for eksempel Microsoft Azure, Microsoft 365 og Microsoft Teams, vil vanligvis bruke Azure AD til sentralisert behandling av brukerlegitimasjonen for å få en sikker og sømløs påloggingsopplevelse på tvers av programmer. For å bruke Azure AD-godkjenning for Commerce POS, må du først konfigurere Azure AD som godkjenningsmetode i Commerce Headquarters.
+Forhandlere som bruker Dynamics 365 Commerce sammen med andre Microsoft-skytjenester, for eksempel Microsoft Azure, Microsoft 365 og Microsoft Teams, vil vanligvis bruke Azure AD til sentralisert behandling av brukerlegitimasjonen for å få en sikker og sømløs påloggingsopplevelse på tvers av apper. For å bruke Azure AD-godkjenning for Commerce POS, må du først konfigurere Azure AD som godkjenningsmetode i Commerce Headquarters.
 
 ## <a name="configure-pos-authentication-method"></a>Konfigurere godkjenningsmetode for salgssted
 

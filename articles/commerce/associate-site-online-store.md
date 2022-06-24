@@ -1,6 +1,6 @@
 ---
-title: Knytte et Dynamics 365 Commerce-område til en nettkanal
-description: Dette emnet forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker.
+title: Knytt et Dynamics 365 Commerce-område til en nettkanal
+description: Denne artikkelen forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker.
 author: bicyclingfool
 ms.date: 07/02/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 60ead45e6e2b7fea8f04371310ff4315205e11f6e0968e5f8bbc6a29c5f26e18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 006c8b60791e0176c808762025f3bfdeaff9c48d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737659"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878679"
 ---
-# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Knytte et Dynamics 365 Commerce-område til en nettkanal
+# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Knytt et Dynamics 365 Commerce-område til en nettkanal
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker. 
+Denne artikkelen forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker. 
 
 Når du har klargjort Dynamics 365 Commerce-e-handelsmiljøet ved hjelp av portalen for Microsoft Dynamics Lifecycle Services (LCS), er du klar til å opprette ditt første nettsted for e-handel. Som en del av opprettelsen av første område, kan du knytte området til en nettbutikk som er opprettet tidligere. Dette trinnet binder området til en Internett-kanal og lar området vise navigasjonshierarkiet, produkter, kategorier, priser, leveringsalternativer og alt annet som du definerte i nettbutikken.
 

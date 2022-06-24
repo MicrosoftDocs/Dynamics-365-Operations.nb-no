@@ -1,6 +1,6 @@
 ---
-title: Generere en statistisk basislinjeprognose
-description: Dette emnet inneholder informasjon om parametere og filtre som brukes i beregningen av behovsprognose.
+title: Generer en statistisk basislinjeprognose
+description: Denne artikkelen inneholder informasjon om parametere og filtre som brukes i beregningen av behovsprognose.
 author: t-benebo
 ms.date: 07/08/2019
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b2a71faeeb4de35e26b5a346e17caa0d8d353f8
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: c45d763a1f3d199c91f3cf6181c22f4b8130fabc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468715"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844945"
 ---
-# <a name="generate-a-statistical-baseline-forecast"></a>Generere en statistisk basislinjeprognose
+# <a name="generate-a-statistical-baseline-forecast"></a>Generer en statistisk basislinjeprognose
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om parametere og filtre som brukes i beregningen av behovsprognose. 
+Denne artikkelen inneholder informasjon om parametere og filtre som brukes i beregningen av behovsprognose. 
 
 Når du oppretter en basislinjeprognose, må du først angi parameterne og filtrene som brukes i beregningen. Du kan for eksempel opprette en basislinjeprognose som beregner behov basert på transaksjonsdata fra det siste året for et bestemt firma, for kommende måned, og for en utvalgt gruppe varer. 
 

@@ -1,6 +1,6 @@
 ---
 title: Aktivere utskrift av nummerskiltetikett
-description: Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (Serial Shipping Container Code) etter at den siste varen er plukket fra lageret i en arbeidsprosess for salgsplukk.
+description: Denne artikkelen viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (Serial Shipping Container Code) etter at den siste varen er plukket fra lageret i en arbeidsprosess for salgsplukk.
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b3895961f1f682a3fd06800a83a497afaf2fa65
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: dec552cac505b3fdc24dd453dbf723fa1d009ced
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903673"
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivere utskrift av nummerskiltetikett
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (Serial Shipping Container Code) etter at den siste varen er plukket fra lageret i en arbeidsprosess for salgsplukk. Du kan kjøre denne prosedyren i demonstrasjonsdataselskapet USMF. Hvis du skal kjøre det på dine egne data, må du ha en nummerserie som er definert for nummerskilt. Du må definere en etikettskriver før du begynner. Gå til Organisasjonsstyring > Oppsett > Nettverksskrivere. I handlingsruten velger du Alternativer, og deretter klikker du Last ned installasjonsprogram for dokumentrutingsagent. Kjør installasjonsprogrammet og kontroller at du har en fungerende skriver satt til Aktiv før du fortsetter med prosedyren.
+Denne artikkelen viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (Serial Shipping Container Code) etter at den siste varen er plukket fra lageret i en arbeidsprosess for salgsplukk. Du kan kjøre denne prosedyren i demonstrasjonsdataselskapet USMF. Hvis du skal kjøre det på dine egne data, må du ha en nummerserie som er definert for nummerskilt. Du må definere en etikettskriver før du begynner. Gå til Organisasjonsstyring > Oppsett > Nettverksskrivere. I handlingsruten velger du Alternativer, og deretter klikker du Last ned installasjonsprogram for dokumentrutingsagent. Kjør installasjonsprogrammet og kontroller at du har en fungerende skriver satt til Aktiv før du fortsetter med prosedyren.
 
 
 ## <a name="set-up-the-gs1-company-prefix"></a>Angi GS1-firmaprefikset

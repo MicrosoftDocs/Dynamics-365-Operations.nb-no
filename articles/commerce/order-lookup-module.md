@@ -1,6 +1,6 @@
 ---
 title: Ordreoppslagsmodul
-description: Dette emnet dekker ordreoppslagsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker ordreoppslagsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 09/01/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 0ae5c8a2eea84a9aa707f7c2f6f29950f2f48faa
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c83463d9a0ece9605b0d22bee2a1c76057c8ed05
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675123"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869436"
 ---
 # <a name="order-lookup-module"></a>Ordreoppslagsmodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker ordreoppslagsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker ordreoppslagsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 
 Ordreoppslagsmodulen gir et skjema som kundene kan bruke til å slå opp ordrer de har lagt inn på et e-handelsområde. Den brukes som en del av funksjonen [Aktivere ordreoppslag for gjestebetalinger](order-lookup-guest.md). Ordreoppslagsmodulen kan brukes til å slå opp ordrer som er sendt via et e-handelsområde, salgsstedet eller et telefonsenter. Skjemaet kan hente ordrer som ble sendt både av gjestebrukere og av registrerte brukere.
 

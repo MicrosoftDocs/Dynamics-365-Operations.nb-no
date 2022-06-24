@@ -1,6 +1,6 @@
 ---
 title: Terskelgrense og unntaksterskelgrense
-description: Dette emnet beskriver terskelen og unntaksgrensene for TDS (Tax Deducted at Source).
+description: Denne artikkelen beskriver terskelen og unntaksgrensene for TDS (Tax Deducted at Source).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7fa7d871fdf25f29b003a68cacd9fc0d487dce5b
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: aceebad08b5454b64059e7ef374b9634bad35c37
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726023"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877943"
 ---
 # <a name="threshold-limit-and-exception-threshold-limit"></a>Terskelgrense og unntaksterskelgrense
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver terskelen og unntaksgrensene for TDS (Tax Deducted at Source). TDS for fakturaer og betalinger beregnes alltid med hensyn til terskelgrensen og unntaksterskelgrensen som er definert for TDS-avgiftskomponentene på siden **Komponenter for kildeskatt**. TDS-avgiftskomponentene er knyttet til TDS-avgiftskoder, som er inkludert i TDS-avgiftsgruppene. TDS-avgiftsgruppene er knyttet til leverandører og kunder for å beregne TDS på fakturanivået eller betalingsnivået.
+Denne artikkelen beskriver terskelen og unntaksgrensene for TDS (Tax Deducted at Source). TDS for fakturaer og betalinger beregnes alltid med hensyn til terskelgrensen og unntaksterskelgrensen som er definert for TDS-avgiftskomponentene på siden **Komponenter for kildeskatt**. TDS-avgiftskomponentene er knyttet til TDS-avgiftskoder, som er inkludert i TDS-avgiftsgruppene. TDS-avgiftsgruppene er knyttet til leverandører og kunder for å beregne TDS på fakturanivået eller betalingsnivået.
 
 TDS beregnes hvis beløpet for en transaksjon eller de kumulative transaksjonene som er postert med en bestemt TDS-gruppe for en leverandør, overskrider terskelgrensen som er angitt på siden **Komponenter for kildeskatt**. TDS blir ikke beregnet før det kumulative transaksjonsbeløpet overskrider den angitte terskelgrensen.
 

@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integrering av bilagsskriver for Polen
-description: Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Polen i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Polen i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-2-1
-ms.openlocfilehash: 43d9a54334d97a65a1f9a356daf54154f6c069b3
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: e71d7b342789e4cf2e7644a46bc847087063fc78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076842"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876955"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Eksempel på integrering av bilagsskriver for Polen
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Polen i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Polen i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce-funksjonen for Polen omfatter en eksempelintegrering av salgsstedet med en bilagsskriver. Eksemplet utvider [integreringsfunksjonaliteten for regnskap](fiscal-integration-for-retail-channel.md) og støtter POSNET INTEGRATION 2.02-protokollen for bilagsskrivere fra [Posnet Polska S.A.](https://www.posnet.com.pl) Eksemplet aktiverer kommunikasjon med en bilagsskriver som er koblet til via en COM-port ved hjelp av en programvaredriver. Den ble implementert og testet ved hjelp av en programvareemulator som Posnet leverte for Posnet Thermal HD FV EJ-bilagsskriveren. Eksemplet leveres i form av kildekode og er en del av Retail Software Development Kit (SDK).
 

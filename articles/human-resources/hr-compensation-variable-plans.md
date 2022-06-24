@@ -1,6 +1,6 @@
 ---
 title: Opprette variable kompensasjonsplaner
-description: Dette emnet beskriver komponentene som må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan.
+description: Denne artikkelen beskriver komponentene som må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 589990c48d115266b57589f905de20572e76a040
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853081"
 ---
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688664"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Dette emnet forklarer hvoran du setter opp komponentene som kreves for variabel kompensasjon og registrering av en ansatt i en variabel kompensasjonsplan.
+Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Denne artikkelen forklarer hvoran du setter opp komponentene som kreves for variabel kompensasjon og registrering av en ansatt i en variabel kompensasjonsplan.
 
 Beregningen av variable kompensasjonsbeløp for de ansatte kan baseres på flere faktorer, for eksempel den ansattes ytelse, den ansattes kompensasjonsnivå og ytelsen til avdelingen.
 

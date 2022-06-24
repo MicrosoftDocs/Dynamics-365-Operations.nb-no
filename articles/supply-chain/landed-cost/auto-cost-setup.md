@@ -1,6 +1,6 @@
 ---
 title: Automatisk kosnadsoppsett
-description: Dette emnet beskriver hvordan du definerer kostnadsregler for forskjellige innkommende sjøreisenivåer. På grunnlag av disse reglene beregner systemet kostnadene og legger dem til automatisk. Brukerne behøver derfor ikke å legge til kostnadene manuelt.
+description: Denne artikkelen beskriver hvordan du definerer kostnadsregler for forskjellige innkommende sjøreisenivåer. På grunnlag av disse reglene beregner systemet kostnadene og legger dem til automatisk. Brukerne behøver derfor ikke å legge til kostnadene manuelt.
 author: Weijiesa
 ms.date: 01/21/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea788ea8d21c4cb6511188e937166bc3df3cd45a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 02c78789fc7531c267cee936fa30a395e6d0b62f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695339"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852396"
 ---
 # <a name="auto-costs-setup"></a>Automatisk kosnadsoppsett
 
@@ -26,7 +26,7 @@ ms.locfileid: "8695339"
 
 Du kan bruke siden **Automatiske kostnader** til å definere kostnadsregler for forskjellige kostnadsområder (for eksempel sjøreiser, forsendelsescontainere, elegioer, bestillinger, varer eller overføringsordrelinjer). På grunnlag av reglene, og feltene brukerne velger når de oppretter poster for ett av kostnadsområdene, beregner systemet kostnadene og legger dem til automatisk. Brukerne behøver derfor ikke å legge til kostnadene manuelt.
 
-Hvis du vil arbeide med automatiske kostnader, kan du gå til **Netto innkjøpspris \> Kostnadsoppsett \> Automatiske kostnader**. Deretter setter du opp reglene for automatisk kostpris slik det er beskrevet i resten av dette emnet.
+Hvis du vil arbeide med automatiske kostnader, kan du gå til **Netto innkjøpspris \> Kostnadsoppsett \> Automatiske kostnader**. Deretter setter du opp reglene for automatisk kostpris slik det er beskrevet i resten av denne artikkelen.
 
 ## <a name="work-with-cost-areas"></a>Arbeide med kostnadsområder
 

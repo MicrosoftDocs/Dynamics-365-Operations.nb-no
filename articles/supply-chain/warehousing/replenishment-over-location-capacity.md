@@ -1,6 +1,6 @@
 ---
 title: Etterfylling over lokasjonskapasitet
-description: Dette emnet inneholder informasjon om funksjonen Etterfylling over lokasjonskapasitet. Denne funksjonen aktiverer alt etterfyllingsarbeid som vil være nødvendig å opprette for dagen, og administrerer tilgjengelighet for etterfyllingsarbeidet for å sikre at plukklokasjonen ikke går ut av beholdning eller går over kapasitet.
+description: Denne artikkelen inneholder informasjon om funksjonen Etterfylling over lokasjonskapasitet. Denne funksjonen aktiverer alt etterfyllingsarbeid som vil være nødvendig å opprette for dagen, og administrerer tilgjengelighet for etterfyllingsarbeidet for å sikre at plukklokasjonen ikke går ut av beholdning eller går over kapasitet.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 0c3dedc47558e98f63fb5883e4731bf021b9602b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 72cda7608d55414ee62bc7dcc1e02e28f6212aff
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677933"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899244"
 ---
 # <a name="replenishment-over-location-capacity"></a>Etterfylling over lokasjonskapasitet
 
@@ -37,7 +37,7 @@ For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i 
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>Konfigurer funksjonen for eksempelscenarioet
 
-Denne delen inneholder retningslinjer og et eksempel som viser hvordan du definerer denne funksjonen og klargjør eksempeldata foreksempel scenarioet som er oppgitt senere i dette emnet.
+Denne delen inneholder retningslinjer og et eksempel som viser hvordan du definerer denne funksjonen og klargjør eksempeldata foreksempel scenarioet som er oppgitt senere i denne artikkelen.
 
 ### <a name="enable-sample-data"></a>Aktivere eksempeldata
 
@@ -145,7 +145,7 @@ Etterfyllingsmaler er et sett med regler som bestemmer når og hvordan en lokasj
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
-Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige og konfigurert dem, kan du arbeide deg gjennom dette scenariet for å prøve ut funksjonen *Etterfylling over lokasjonskapasitet*. Verdiene som vises i dette scenariet, antar at du arbeider med standard demonstrasjonsdata, at du har valgt den juridiske enheten **USMF**, og at du klargjorde eksempelpostene som er beskrevet tidligere i dette emnet. Dette scenariet fungerer også som et eksempel som viser hvordan funksjonen kan brukes i et produksjonsmiljø.
+Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige og konfigurert dem, kan du arbeide deg gjennom dette scenariet for å prøve ut funksjonen *Etterfylling over lokasjonskapasitet*. Verdiene som vises i dette scenariet, antar at du arbeider med standard demonstrasjonsdata, at du har valgt den juridiske enheten **USMF**, og at du klargjorde eksempelpostene som er beskrevet tidligere i denne artikkelen. Dette scenariet fungerer også som et eksempel som viser hvordan funksjonen kan brukes i et produksjonsmiljø.
 
 ### <a name="create-replenishment-work"></a>Opprett etterfyllingsarbeid
 

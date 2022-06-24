@@ -1,6 +1,6 @@
 ---
 title: Rabattbehandlingsavtaler
-description: Dette emnet beskriver hvordan du oppretter rabattbehandlingsavtaler. Avtaler brukes til å kontrollere forskjellige metoder og baser for beregning av rabatter og royalty. De inneholder regler for inkluderinger og utelukkelser.
+description: Denne artikkelen beskriver hvordan du oppretter rabattbehandlingsavtaler. Avtaler brukes til å kontrollere forskjellige metoder og baser for beregning av rabatter og royalty. De inneholder regler for inkluderinger og utelukkelser.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 76cdbf21cfbc0db7b363d0fbf60a1ecd0046efc1
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 28cfff69ab4e528c146ccbf6a34548a819c99522
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689698"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851601"
 ---
 # <a name="rebate-management-deals"></a>Rabattbehandlingsavtaler
 
 [!include [banner](../includes/banner.md)]
 
-Rabattbehandlingsavtaler brukes til å kontrollere forskjellige metoder og baser for beregning av rabatter og royalty. De inneholder regler for inkluderinger og utelukkelser. Det finnes tre typer rabattbehandlingsavtaler: kunderabatter, kunderoyalty og leverandørrabatter. Alle de tre typene bruker lignende innstillinger. Dette emnet påpeker forskjeller der de finnes.
+Rabattbehandlingsavtaler brukes til å kontrollere forskjellige metoder og baser for beregning av rabatter og royalty. De inneholder regler for inkluderinger og utelukkelser. Det finnes tre typer rabattbehandlingsavtaler: kunderabatter, kunderoyalty og leverandørrabatter. Alle de tre typene bruker lignende innstillinger. Denne artikkelen påpeker forskjeller der de finnes.
 
 ## <a name="create-a-deal"></a>Opprett en avtale
 
@@ -118,7 +118,7 @@ På **Generelt**-fanen på hurtigfanen **Detaljer om rabattbehandling** kan du s
 
 | Felt | beskrivelse |
 |---|---|
-| Beregningsmåte | Velg metoden som skal brukes når den valgte avtalelinjen kombineres med andre avtalelinjer (*Trinnvis*, *Kumulativ*, *Rullende* eller *Total*). Verdien i dette feltet kan påvirke resultatet av rabattberegningene dramatisk. Hvis du vil ha en fullstendig beskrivelse av hver metode og eksempler som viser hvordan den påvirker rabattberegningen, kan du se delen [Beregningsmetoder for avtalelinjer](#calc-methods) senere i dette emnet. |
+| Beregningsmåte | Velg metoden som skal brukes når den valgte avtalelinjen kombineres med andre avtalelinjer (*Trinnvis*, *Kumulativ*, *Rullende* eller *Total*). Verdien i dette feltet kan påvirke resultatet av rabattberegningene dramatisk. Hvis du vil ha en fullstendig beskrivelse av hver metode og eksempler som viser hvordan den påvirker rabattberegningen, kan du se delen [Beregningsmetoder for avtalelinjer](#calc-methods) senere i denne artikkelen. |
 | Basis | Velg om rabatten skal brukes basert på antall (det vil si totalt antall enheter som er kjøpt eller solgt) eller verdi (det vil si totalprisen på varer som kjøpes eller selges). |
 | Transaksjonstype | <p>Velg tidspunktet i prosessen når beregningen skal skje:</p><ul><li>*Ordre* – Bruk det bestilte antallet eller verdien som grunnlag for beregningen.</li><li>*Levert* – Bruk det leverte antallet eller verdien som grunnlag for beregningen.</li><li>*Faktura* – Bruk det fakturerte antallet eller verdien som grunnlag for beregningen.</li></ul> |
 | Enhet | Hvis du valgte *Antall* i **Basis**-feltet, velger du enheten som antallet må angis i. |

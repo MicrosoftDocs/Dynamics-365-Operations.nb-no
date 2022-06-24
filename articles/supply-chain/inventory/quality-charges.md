@@ -1,6 +1,6 @@
 ---
 title: Tillegg for avviksoperasjoner
-description: Dette emnet beskriver hvordan du oppretter kvalitetsgebyrer som kan brukes sammen med operasjoner for et avvik.
+description: Denne artikkelen beskriver hvordan du oppretter kvalitetsgebyrer som kan brukes sammen med operasjoner for et avvik.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac3306f3f9215ab03f408b8026f335dcf496515a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 29520afca07adee49846d1be987685a1ece8283c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580966"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850735"
 ---
 # <a name="charges-for-nonconformance-operations"></a>Tillegg for avviksoperasjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter kvalitetsgebyrer som kan brukes sammen med operasjoner for et avvik.
+Denne artikkelen beskriver hvordan du oppretter kvalitetsgebyrer som kan brukes sammen med operasjoner for et avvik.
 
 Du bruker siden **Kvalitetsstyringstillegg** til å definere typene tillegg som kan legges til i operasjoner for et avvik. Med tillegg kan du spore detaljer om gebyrer eller tillegg som du skylder en kunde for produkter med avvik, eller som en leverandør skylder deg for produkter med avvik som du har mottatt. Du kan også bruke tillegg til å spore kostnader som kreves for at eksterne leverandører eller tjenester kan utføre en operasjon.
 

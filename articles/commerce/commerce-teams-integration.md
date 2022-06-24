@@ -1,6 +1,6 @@
 ---
 title: Oversikt over Dynamics 365 Commerce- og Microsoft Teams-integrering
-description: Dette emnet gir en oversikt over Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
+description: Denne artikkelen gir en oversikt over Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7786a527a9aca08f5d9326570e8a2dafc5059dc5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0b674f40b6bb433bc5e2c9216d649a7f15169442
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887094"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-overview"></a>Oversikt over Dynamics 365 Commerce- og Microsoft Teams-integrering
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
+Denne artikkelen gir en oversikt over Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
 
 Dynamics 365 Commerce integreres med Teams for å hjelpe kundene og de ansatte med å forbedre produktiviteten ved å synkronisere oppgaveadministrasjon mellom de to programmene. Den sømløse oppgaveadministrasjonen som Commerce- og Teams-integrering gir, lar butikksjefer og ansatte opprette oppgavelister, tilordne oppgaver til flere butikker og spore statusen til oppgaver på tvers av butikker, fra begge programmene.
 

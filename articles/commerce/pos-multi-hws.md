@@ -1,6 +1,6 @@
 ---
-title: Dedikerte betalingsterminaler og spørringer for en skriver og kassaskuff
-description: Dette emnet gir informasjon om muligheten til å ha en dedikert betalingsterminal og å be brukeren velge en kassaskuff og en kvitteringsskriver.
+title: Dedikerte betalingsterminaler og ledetekster for en skriver og kassaskuff
+description: Denne artikkelen gir informasjon om muligheten til å ha en dedikert betalingsterminal og å be brukeren velge en kassaskuff og en kvitteringsskriver.
 author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 7c010448e43bbfb1f949508ce1b62bd07f3107e1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779776"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874927"
 ---
-# <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerte betalingsterminaler og spørringer for en skriver og kassaskuff
+# <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikerte betalingsterminaler og ledetekster for en skriver og kassaskuff
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir informasjon om muligheten til å ha en dedikert betalingsterminal og å be brukeren velge en kassaskuff og en kvitteringsskriver.
+Denne artikkelen gir informasjon om muligheten til å ha en dedikert betalingsterminal og å be brukeren velge en kassaskuff og en kvitteringsskriver.
 
 ## <a name="overview"></a>Oversikt
 
@@ -46,7 +46,7 @@ Microsoft Dynamics 365 Commerce støtter disse trendene ved å muliggjøre et sc
 
 ## <a name="supported-pos-clients-and-devices"></a>Støttede POS-klienter og -enheter
 
-Funksjonaliteten som beskrives i dette emnet, støttes av Moderne salgssted for Windows- og Moderne salgssted for Android-klienter.
+Funksjonaliteten som beskrives i denne artikkelen, støttes av Moderne salgssted for Windows- og Moderne salgssted for Android-klienter.
 
 Denne funksjonaliteten støtter nettverksaktiverte betalings terminaler og kvitteringsskrivere. Du kan gi kassaskuffstøtte ved å koble kassaskuffen til den nettverksaktiverte kvitteringsskriveren via d/k-porten.
 

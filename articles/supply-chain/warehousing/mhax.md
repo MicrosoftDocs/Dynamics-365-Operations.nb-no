@@ -1,6 +1,6 @@
 ---
 title: Grensesnitt for materialhåndteringsutstyr (MHAX)
-description: Dette emnet beskriver hvordan du konfigurerer MHAX-systemer (Material Handling Equipment Interface) slik at du kan koble til systemer for ekstern fysisk materialhåndtering (MH).
+description: Denne artikkelen beskriver hvordan du konfigurerer MHAX-systemer (Material Handling Equipment Interface) slik at du kan koble til systemer for ekstern fysisk materialhåndtering (MH).
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4c04b8a9574bb6f34b56b4a7462882f1885f1178
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695598"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907094"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Grensesnitt for materialhåndteringsutstyr (MHAX)
 
@@ -88,7 +88,7 @@ Hvis du vil opprette et abonnement, kan du gå til **Grensesnitt for materialhå
 
 En spørring kan knyttes til hvert abonnement. Denne spørringen filtrerer arbeidslinjer og -hoder for å begrense arbeidet som vil bruke abonnementet til å generere hendelser, ytterligere. Hvis du vil legge til en spørring i et abonnement, merker du av for **Kjør spørring** for det relevante abonnementet på siden **Abonnementer**, og deretter velger du **Rediger spørring** i handlingsruten. Standard redigeringsprogram for Supply Chain Management vises.
 
-I tillegg inneholder abonnementet en *abonnementstilordning* som tilordner felt fra arbeidshodet eller arbeidslinjen til noen av eller alle de 10 gratisdatafeltene for den utgående hendelsen etter behov. Hvis du vil returnere informasjon til MHAX-tjenesten, inkluderer du vanligvis arbeidslinjepost-ID-en eller *IDen for arbeidslinjepar*. (ID-en for arbeidslinjeparet er en ny egenskap som gjør at systemet kan bruke en enkelt returkommando til å behandle plukkings- og plasseringslinjer.) De gjenværende feltene er avhengige av bruken av store og små bokstaver. Det finnes noen eksempler senere i dette emnet.
+I tillegg inneholder abonnementet en *abonnementstilordning* som tilordner felt fra arbeidshodet eller arbeidslinjen til noen av eller alle de 10 gratisdatafeltene for den utgående hendelsen etter behov. Hvis du vil returnere informasjon til MHAX-tjenesten, inkluderer du vanligvis arbeidslinjepost-ID-en eller *IDen for arbeidslinjepar*. (ID-en for arbeidslinjeparet er en ny egenskap som gjør at systemet kan bruke en enkelt returkommando til å behandle plukkings- og plasseringslinjer.) De gjenværende feltene er avhengige av bruken av store og små bokstaver. Det finnes noen eksempler senere i denne artikkelen.
 
 Hvis du vil definere et abonnementstilordning, velger du det relevante abonnementet på siden **Abonnementer**, og deretter velger du **Abonnementstilordning** på handlingssiden. I dialogboksen **Abonnementstilordning** som vises, kan du tilordne en tabell og et felt for hvert tilgjengelige datafelt etter behov.
 
@@ -161,7 +161,7 @@ Hvis ID-en for arbeidslinjeparet er angitt, kjøres alle plukkings, plasserings-
 
 Plukkingslinjer fra lisenskontrollerte lokasjoner krever at **data03** angir nummerskiltet det skal plukkes fra, uansett om linjene er merket av ID-en for arbeidslinjepost eller ID-en for arbeidslinjepar. Feltet **data04** må angi arbeidshodets målnummerskilt for plukkingen.
 
-Plasseringslinjer godtar ikke mer informasjon. De kjøres bare basert på den gjeldende arbeidslinjens lokasjon og arbeidets målnummerskilt. Hvis plasseringen må gjøres på et annet sted, endrer du stedet for arbeidslinjen som beskrevet i delen [Overstyr hendelser](#override-events) senere i dette emnet.
+Plasseringslinjer godtar ikke mer informasjon. De kjøres bare basert på den gjeldende arbeidslinjens lokasjon og arbeidets målnummerskilt. Hvis plasseringen må gjøres på et annet sted, endrer du stedet for arbeidslinjen som beskrevet i delen [Overstyr hendelser](#override-events) senere i denne artikkelen.
 
 Egendefinerte arbeidslinjer krever, eller støtter, ikke eventuell tilleggsinformasjon i den innkommende hendelsen.
 
@@ -220,7 +220,7 @@ Til slutt vil den innkommende køen bli full av køvarer som allerede er behandl
 
 ## <a name="get-a-quick-overview-by-using-the-queue-manager"></a>Få en rask oversikt ved hjelp av købehandlingen
 
-Hvis du vil ha en rask oversikt over all aktiviteten som er relatert til innkommende og utgående køer, kan du gå til **Grensesnitt for materialhåndteringsutstyr \> Arbeidsområder \> Købehandling**. Siden **Købehandling** inneholder et sett med faner og fliser du kan bruke til å overvåke og utforske køene. Siden inneholder også nyttige koblinger til de fleste av de andre sidene som er nevnt i dette emnet.
+Hvis du vil ha en rask oversikt over all aktiviteten som er relatert til innkommende og utgående køer, kan du gå til **Grensesnitt for materialhåndteringsutstyr \> Arbeidsområder \> Købehandling**. Siden **Købehandling** inneholder et sett med faner og fliser du kan bruke til å overvåke og utforske køene. Siden inneholder også nyttige koblinger til de fleste av de andre sidene som er nevnt i denne artikkelen.
 
 ## <a name="connect-to-the-mhax-service"></a>Koble til MHAX-tjenesten
 

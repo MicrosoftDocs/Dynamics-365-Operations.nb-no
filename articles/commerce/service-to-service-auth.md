@@ -1,6 +1,6 @@
 ---
 title: Konfigurer tjeneste-til-tjeneste-godkjenning
-description: Dette emnet beskriver hvordan du konfigurerer tjeneste-til-tjenestegodkjenning i Microsoft Dynamics 365 Commerce for sikker oppkalling av tjeneste-API-er for vurderinger og omtaler.
+description: Denne artikkelen beskriver hvordan du konfigurerer tjeneste-til-tjenestegodkjenning i Microsoft Dynamics 365 Commerce for sikker oppkalling av tjeneste-API-er for vurderinger og omtaler.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -9,20 +9,20 @@ ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: da780de5f15d72bdac85a261eae809125c830260
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: acb3a6220d146d32bbeb5bd8169033bc897ec3fe
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968522"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871613"
 ---
 # <a name="configure-service-to-service-authentication"></a>Konfigurer tjeneste-til-tjeneste-godkjenning
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer tjeneste-til-tjenestegodkjenning (S2S) i Microsoft Dynamics 365 Commerce for sikker oppkalling av tjeneste-API-er for vurderinger og omtaler.
+Denne artikkelen beskriver hvordan du konfigurerer tjeneste-til-tjenestegodkjenning (S2S) i Microsoft Dynamics 365 Commerce for sikker oppkalling av tjeneste-API-er for vurderinger og omtaler.
 
-Dynamics 365 Commerce tilbyr [vurderinger og omtaler](ratings-reviews-overview.md) som en omnikanalløsning. Denne løsningen gir tilgang til tjeneste-API-er fra utenfor Commerce, slik at ulike oppgaver kan utføres. Disse oppgavene omfatter import av vurderinger og omtaler fra det eksterne systemet til Commerce, og eksport av vurderinger og omtaler fra Commerce. Hvis du vil aktivere Commerce til sikker oppkall av vurderinger og omtaler av tjeneste-API-er, må du først konfigurere S2S-godkjenning ved å fullføre prosedyrene i dette emnet.
+Dynamics 365 Commerce tilbyr [vurderinger og omtaler](ratings-reviews-overview.md) som en omnikanalløsning. Denne løsningen gir tilgang til tjeneste-API-er fra utenfor Commerce, slik at ulike oppgaver kan utføres. Disse oppgavene omfatter import av vurderinger og omtaler fra det eksterne systemet til Commerce, og eksport av vurderinger og omtaler fra Commerce. Hvis du vil aktivere Commerce til sikker oppkall av vurderinger og omtaler av tjeneste-API-er, må du først konfigurere S2S-godkjenning ved å fullføre prosedyrene i denne artikkelen.
 
 ## <a name="add-a-new-app-registration"></a>Legg til en ny appregistrering
 

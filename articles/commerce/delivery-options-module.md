@@ -1,6 +1,6 @@
 ---
-title: Modul for leveringsalternativer
-description: Dette emnet dekker moduler for leveringsalternativer og forklarer hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
+title: Leveringsalternativmodul
+description: Denne artikkelen dekker moduler for leveringsalternativer og forklarer hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 02/24/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 9b9a7ad05974b98511cfc582af62c19c5fb4dbf5
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: 554a17cf1c90f7fdaa20de74c3f6726910ab815d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349800"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894564"
 ---
 # <a name="delivery-options-module"></a>Leveringsalternativmodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker moduler for leveringsalternativer og forklarer hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker moduler for leveringsalternativer og forklarer hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
 
 Med moduler for leveringsalternativer kan kunder velge en leveringsmodus, for eksempel forsendelse eller henting for bestillinger på nettet. Det kreves en forsendelsesadresse for å bestemme leveringsmåten. Hvis leveringsadressen endres, må leveringsalternativene hentes på nytt. Hvis en ordre bare omfatter varer som skal plukkes i en butikk, blir denne modulen automatisk skjult.
 

@@ -1,6 +1,6 @@
 ---
 title: Støtte for avgiftsfunksjon for overføringsordrer
-description: Dette emnet forklarer den nye avgiftsfunksjonsstøtten for overføringsordrer ved å bruke avgiftsberegningstjenesten.
+description: Denne artikkelen forklarer den nye avgiftsfunksjonsstøtten for overføringsordrer ved å bruke avgiftsberegningstjenesten.
 author: Kai-Cloud
 ms.date: 10/13/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d95ea6795dc5777bfd37f8fbb3ebc47f2db337a0
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 281ee90b7cae2d24d37d0684ad9975118560bb3e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689221"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8869988"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Støtte for avgiftsfunksjon for overføringsordrer
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet gir informasjon om beregning av avgift og posteringsintegrering i overføringsordrer. Ved hjelp av denne funksjonaliteten kan du definere avgiftsberegning og -postering i overføringsordrer for lageroverføringer. I henhold til mva-regler i EU anses lageroverføringer som fellesskapsforsyning og fellesskapsanskaffelse.
+Denne artikkelen gir informasjon om beregning av avgift og posteringsintegrering i overføringsordrer. Ved hjelp av denne funksjonaliteten kan du definere avgiftsberegning og -postering i overføringsordrer for lageroverføringer. I henhold til mva-regler i EU anses lageroverføringer som fellesskapsforsyning og fellesskapsanskaffelse.
 
 Hvis du vil konfigurere og bruke denne funksjonaliteten, må du gå gjennom tre hovedtrinn:
 

@@ -1,6 +1,6 @@
 ---
 title: Aktivere innsjekkingsmeldinger for kunde på salgsstedet
-description: Dette emnet beskriver hvordan du aktiverer innsjekkingsmeldinger for kunde på Microsoft Dynamics 365 Commerce-salgsstedet.
+description: Denne artikkelen beskriver hvordan du aktiverer innsjekkingsmeldinger for kunde på Microsoft Dynamics 365 Commerce-salgsstedet.
 author: bicyclingfool
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 95b4e3a1750cf072db919492f7445e87654701da
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: ae53657c95128eae793f670bd9dbc31d9fac0fe4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983167"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885151"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Aktivere innsjekkingsmeldinger for kunde på salgsstedet
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du aktiverer innsjekkingsmeldinger for kunde på Microsoft Dynamics 365 Commerce-salgsstedet.
+Denne artikkelen beskriver hvordan du aktiverer innsjekkingsmeldinger for kunde på Microsoft Dynamics 365 Commerce-salgsstedet.
 
 I e-postene "Ordre klar for henting" kan organisasjoner gi en kobling eller knapp som kundene kan bruke til å varsle butikken om at de er på stedet og venter på at pakken deres skal sendes ut til dem. Kundene mottar deretter en innsjekkingsbekreftelse, og butikken mottar et varsel som en oppgave i salgsstedsprogrammet. Denne oppgaven fungerer som en ledetekst for en salgsmedarbeider om å levere ordren til kundens kjøretøy. Derfor behøver ikke kunden å gå inn i butikken.
 
@@ -70,7 +70,7 @@ Følg denne fremgangsmåten for å teste kundens innsjekkingsfunksjon.
 1. Sjekk inn siden, men ikke publiser den.
 1. Legg til koblingen nedenfor i en e-postmal som startes med pakking fullført-varslingstypen for leveringsmåten henting. Hvis du vil ha mer informasjon, kan du se [Opprette e-postmaler for transaksjonshendelser](email-templates-transactions.md).
 
-    - **For UAT-miljøer (før produksjon):** Legg til kodesnutten fra delen [Konfigurere den transaksjonsbaserte e-postmalen](#configure-the-transactional-email-template) tidligere i dette emnet.
+    - **For UAT-miljøer (før produksjon):** Legg til kodesnutten fra delen [Konfigurere den transaksjonsbaserte e-postmalen](#configure-the-transactional-email-template) tidligere i denne artikkelen.
     - **For produksjonsmiljøer:** Legg til følgende kommenterte kode, slik at eksisterende kunder ikke berøres.
 
         `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`

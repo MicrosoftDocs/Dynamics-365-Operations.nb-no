@@ -1,6 +1,6 @@
 ---
-title: Handelsposteringsparametere
-description: Dette emnet beskriver parameterne som er spesifikke for postering av økonomiske og fysiske transaksjoner i Microsoft Dynamics 365 Commerce.
+title: Commerce-posteringsparametere
+description: Denne artikkelen beskriver parameterne som er spesifikke for postering av økonomiske og fysiske transaksjoner i Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 04/27/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2022-04-12
-ms.openlocfilehash: 1b49c893567d39f05e16cefee47407a424b7e139
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: 10ea650b7c5c0cad7e1a3d7556c073aecef06036
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649205"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887120"
 ---
-# <a name="commerce-posting-parameters"></a>Handelsposteringsparametere
+# <a name="commerce-posting-parameters"></a>Commerce-posteringsparametere
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emnet beskriver parameterne som er spesifikke for postering av økonomiske og fysiske transaksjoner i Microsoft Dynamics 365 Commerce. Du finner handelsposteringsparametere i Commerce headquarters under **Retail og Commerce \> Headquarters-oppsett \> Parametere \> Commerce-parametere \> Postering**.
+Denne artikkelen beskriver parameterne som er spesifikke for postering av økonomiske og fysiske transaksjoner i Microsoft Dynamics 365 Commerce. Du finner handelsposteringsparametere i Commerce headquarters under **Retail og Commerce \> Headquarters-oppsett \> Parametere \> Commerce-parametere \> Postering**.
 
 ## <a name="periodic-discount-parameters"></a>Parametere for tidsbestemt rabatt
 

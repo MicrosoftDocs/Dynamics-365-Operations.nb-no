@@ -1,6 +1,6 @@
 ---
-title: Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter
-description: Dette emnet inneholder informasjon om funksjonen som gjør det mulig å kjøre valgte prosesser fra arbeidsbelastningen for lagerstyring.
+title: Skalaenheter for sky og kant for arbeidsbelastninger for Lagerstyring
+description: Denne artikkelen inneholder informasjon om funksjonen som gjør det mulig å kjøre valgte prosesser fra arbeidsbelastningen for lagerstyring.
 author: perlynne
 ms.date: 09/03/2021
 ms.topic: article
@@ -16,19 +16,19 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 67f78441b0914d18c2a7853bab54c6b8817be3ac
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f9839ad9a18eb543734c2ba43a56b568460a64c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384492"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893504"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> Ikke all forretningsfunksjonalitet for lagerstyring støttes fullt ut for lagre som kjører en arbeidsbelastning på en skalaenhet. Pass på at du bare bruker prosessene som dette emnet beskriver som støttet.
+> Ikke all forretningsfunksjonalitet for lagerstyring støttes fullt ut for lagre som kjører en arbeidsbelastning på en skalaenhet. Pass på at du bare bruker prosessene som denne artikkelen beskriver som støttet.
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerkjøring på skalaenheter
 
@@ -184,7 +184,7 @@ Ingen andre typer behandling eller lagerarbeid for kildedokumenter støttes for 
 >
 > Det kreves noen ekstra trinn for å konfigurere Warehouse Management-mobilappen for å arbeide mot en sky- eller kantskalaenhet. Hvis du vil ha mer informasjon, kan du se [Konfigurere Warehouse Management-mobilappen for sky- og kantskalaenheter](cloud-edge-workload-setup-warehouse-app.md).
 >
-> Når du kjører en arbeidsbelastning på en skalaenhet, kan du ikke kjøre prosesser som ikke støttes for dette bestemte lageret, i senteret. Tabellene som vises senere i dette emnet, dokumenterer funksjonene som støttes.
+> Når du kjører en arbeidsbelastning på en skalaenhet, kan du ikke kjøre prosesser som ikke støttes for dette bestemte lageret, i senteret. Tabellene som vises senere i denne artikkelen, dokumenterer funksjonene som støttes.
 >
 > Valgte lagerarbeidstyper kan opprettes både i senteret og på skalaenheter, men kan bare vedlikeholdes av eiersenteret eller -skalaenheten (distribusjonen som opprettet dataene).
 >

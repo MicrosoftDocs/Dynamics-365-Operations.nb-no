@@ -1,6 +1,6 @@
 ---
-title: Kontrollere varekvaliteten
-description: Dette emnet beskriver hvordan du behandler kvalitetsordre.
+title: Kontroller varekvaliteten
+description: Denne artikkelen beskriver hvordan du behandler kvalitetsordrer.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -14,20 +14,20 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc2fbbedb608b38c6855fbd48ff0c3e26ee3e0bc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eeb14a3b0a61f34819bdd8d524e65ac214a81c35
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575854"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857583"
 ---
-# <a name="inspect-the-quality-of-goods"></a>Kontrollere varekvaliteten
+# <a name="inspect-the-quality-of-goods"></a>Kontroller varekvaliteten
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du behandler kvalitetsordre. Kvalitetsinspeksjoner utføres vanligvis av en kvalitetsassistent.
+Denne artikkelen beskriver hvordan du behandler kvalitetsordrer. Kvalitetsinspeksjoner utføres vanligvis av en kvalitetsassistent.
 
-Hvis standard demodata er installert, kan du bruke dem til å fullføre prosedyrene i dette emnet. For å bruke demodata velger du den juridiske enheten *USMF* før du begynner. Deretter må du bekrefte bestillingen *000016* og postere et produktmottak. En kvalitetsordre genereres automatisk.
+Hvis standard demodata er installert, kan du bruke dem til å fullføre prosedyrene i denne artikkelen. For å bruke demodata velger du den juridiske enheten *USMF* før du begynner. Deretter må du bekrefte bestillingen *000016* og postere et produktmottak. En kvalitetsordre genereres automatisk.
 
 ## <a name="step-1-select-a-quality-order"></a>Trinn 1: Velge en kvalitetsordre
 

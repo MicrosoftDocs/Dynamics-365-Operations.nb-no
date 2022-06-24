@@ -1,6 +1,6 @@
 ---
-title: Arbeide med CSS-overstyringsfiler
-description: Dette emnet beskriver hvorfor, når og hvordan du bruker gjennomgripende stilark (CSS-overstyringsfiler) i Microsoft Dynamics 365 Commerce.
+title: Arbeid med CSS-overstyringsfiler
+description: Denne artikkelen beskriver hvorfor, når og hvordan du bruker gjennomgripende stilark (CSS-overstyringsfiler) i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6788481936a54bff32096dba1d0424fc52c669e4
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: eaeeee4c9de7293ba94cc836c4d7b62787eca81d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964610"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8892866"
 ---
-# <a name="work-with-css-override-files"></a>Arbeide med CSS-overstyringsfiler
+# <a name="work-with-css-override-files"></a>Arbeid med CSS-overstyringsfiler
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvorfor, når og hvordan du bruker gjennomgripende stilark (CSS-overstyringsfiler) i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvorfor, når og hvordan du bruker gjennomgripende stilark (CSS-overstyringsfiler) i Microsoft Dynamics 365 Commerce.
 
 Permanente områdestiler bør vanligvis håndteres gjennom et områdetema. Temaer gir grunnleggende CSS og stilinnstillinger for modulene på en hvilken som helst side på nettstedet. Temaene opprettes ved hjelp av Dynamics 365 Commerce Online Software Development Kit (SDK), og de distribueres til nettstedene gjennom Microsoft Dynamics Lifecycle Services (LCS). Feilsøkingsfunksjoner for temaer og modulgrensesnittkonfigurasjoner i SDK hjelper nettstedsutviklere med å opprette tilpasningsmulige og sammenhengende områdeutformingspakker. Når disse utformingspakkene distribueres til et område, kan områdeforfattere fokusere på å opprette, redigere og publisere innhold i stedet for områdeutvikling.
 

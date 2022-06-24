@@ -1,6 +1,6 @@
 ---
 title: Angi egendefinerte lagerplasseringer for genererte dokumenter
-description: Dette emnet forklarer hvordan du utvider listen over lagringssteder for dokumenter som genereres av Elektronisk rapportering (ER)-formater.
+description: Denne artikkelen forklarer hvordan du utvider listen over lagringssteder for dokumenter som genereres av Elektronisk rapportering (ER)-formater.
 author: NickSelin
 ms.date: 10/29/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 103a7e51fc6042e19b1db3b3d6b00436df15fd89
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898863"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Angi egendefinerte lagerplasseringer for genererte dokumenter
 
 [!include[banner](../includes/banner.md)]
 
-API (Application programming interface) for Elektronisk rapportering-rammeverket (ER) lar deg utvide listen over lagringssteder for dokumenter som ER-formater genererer. Dette emnet forklarer hvordan du legger til en egendefinert lagringsplassering for genererte dokumenter ved å delegere oppgaven med å opprette ER-mål til standardmålfabrikk og deretter implementere en egendefinert klasse som har sin egen logikk.
+API (Application programming interface) for Elektronisk rapportering-rammeverket (ER) lar deg utvide listen over lagringssteder for dokumenter som ER-formater genererer. Denne artikkelen forklarer hvordan du legger til en egendefinert lagringsplassering for genererte dokumenter ved å delegere oppgaven med å opprette ER-mål til standardmålfabrikk og deretter implementere en egendefinert klasse som har sin egen logikk.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -35,7 +35,7 @@ Distribuer en topologi som støtter fortløpende bygging. Hvis du vil ha mer inf
 
 Du må også ha tilgang til utviklingsmiljøet for denne topologien.
 
-Alle oppgavene i dette emnet kan fullføres i **USMF**-firmaet.
+Alle oppgavene i denne artikkelen kan fullføres i **USMF**-firmaet.
 
 ## <a name="import-the-fixed-asset-roll-forward-er-format"></a>Importere ER-formatet Rull anleggsmidler forover
 

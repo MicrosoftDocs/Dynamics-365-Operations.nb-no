@@ -1,6 +1,6 @@
 ---
 title: Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728297"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8861920"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+Denne artikkelen forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -108,7 +108,7 @@ Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilde
     - Pakke bestilt-mal
     - Hent ordre-mal
 
-1. Tilpass malene ved hjelp av et tekst- eller HTML-redigeringsprogram. Se listen over [støttede tokener](#supported-tokens-in-the-email-template) senere i dette emnet.
+1. Tilpass malene ved hjelp av et tekst- eller HTML-redigeringsprogram. Se listen over [støttede tokener](#supported-tokens-in-the-email-template) senere i denne artikkelen.
 1. Logg på Commerce.
 1. Bruk menyen til venstre, og gå til **Moduler \> Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon**.
 1. Utvid listen til venstre for å se alle malene.

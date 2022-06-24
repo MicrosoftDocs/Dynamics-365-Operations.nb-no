@@ -1,6 +1,6 @@
 ---
 title: Knytte TDS-avgiftskoder til TDS-avgiftsgrupper og definere formelen for beregning av TDS
-description: Dette emnet forklarer hvordan du konfigurerer TDS-avgiftsgrupper (Tax Deducted at Source) og knytter TDS-avgiftskoder til TDS-avgiftsgrupper. For å kunne beregne TDS for en TDS-avgiftsgruppe må du definere formelen for TDS-avgiftskoder som er knyttet til den.
+description: Denne artikkelen forklarer hvordan du konfigurerer TDS-avgiftsgrupper (Tax Deducted at Source) og knytter TDS-avgiftskoder til TDS-avgiftsgrupper. For å kunne beregne TDS for en TDS-avgiftsgruppe må du definere formelen for TDS-avgiftskoder som er knyttet til den.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f1326f95c297887213ecfb572a2437867d964925
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 3607e44bdcf7a32b156e6b4639ef907aa923cadc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711243"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853321"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Knytte TDS-avgiftskoder til TDS-avgiftsgrupper og definere formelen for beregning av TDS
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer TDS-avgiftsgrupper (Tax Deducted at Source) og knytter TDS-avgiftskoder til TDS-avgiftsgrupper. For å kunne beregne TDS for en TDS-avgiftsgruppe må du definere formelen for TDS-avgiftskoder som er knyttet til den.
+Denne artikkelen forklarer hvordan du konfigurerer TDS-avgiftsgrupper (Tax Deducted at Source) og knytter TDS-avgiftskoder til TDS-avgiftsgrupper. For å kunne beregne TDS for en TDS-avgiftsgruppe må du definere formelen for TDS-avgiftskoder som er knyttet til den.
 
 Følg denne fremgangsmåten for å konfigurere en TDS-avgiftsgruppe, knytte TDS-avgiftskoder til den og definere formelen for beregning av TDS.
 

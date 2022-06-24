@@ -1,6 +1,6 @@
 ---
 title: Arbeide med moduler
-description: Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c393f1e619647795a5ae8da3a78500c1678da9f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728270"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860198"
 ---
 # <a name="work-with-modules"></a>Arbeide med moduler
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan og når du bruker moduler i Microsoft Dynamics 365 Commerce.
 
 Moduler er logiske byggeblokker som utgjør sidestrukturen, og de har forskjellige formål og omfang. Noen moduler er containere på høyt nivå, og det eneste formålet er å oppbevare og organisere andre moduler (underordnede moduler). Andre moduler, for eksempel en enkel bildeplasseringsmodul, har et svært bestemt formål. Andre moduler, for eksempel en karusellmodul, faller et sted mellom disse to kategoriene.
 
@@ -151,7 +151,7 @@ Hvis du vil konfigurere en containermodul på en side, følger du disse trinnene
 
 1. Velg en containermodul på siden (for eksempel en karusell eller en modul for flytende container).
 1. I egenskapsruten til høyre utvider du de nestede kontrollene ved å velge overskriftene og angi eventuelle nødvendige kontrollverdier.
-1. I disposisjonsruten til venstre velger du ellipseknappen ved siden av navnet på enten containeren eller eventuelle spor i containeren, og deretter velger du **Legg til modul**. Deretter legger du til underordnede moduler i den valgte containeren. Hvis du ha mer informasjon, kan du se delen [Arbeide med moduler](#add-a-module) tidligere i dette emnet.
+1. I disposisjonsruten til venstre velger du ellipseknappen ved siden av navnet på enten containeren eller eventuelle spor i containeren, og deretter velger du **Legg til modul**. Deretter legger du til underordnede moduler i den valgte containeren. Hvis du ha mer informasjon, kan du se delen [Arbeide med moduler](#add-a-module) tidligere i denne artikkelen.
 1. Hvis det finnes flere underordnede moduler som sideordnede i en overordnet container, kan du endre visningsrekkefølgen i den overordnede containeren. Velg ellipseknappen for en modul, og bruk deretter tastene for pil opp og pil ned.
 
 ## <a name="additional-resources"></a>Tilleggsressurser

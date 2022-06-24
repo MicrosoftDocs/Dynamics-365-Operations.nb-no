@@ -1,6 +1,6 @@
 ---
 title: Hjelpesystem (inneholder video)
-description: Dette emnet inneholder en oversikt over hjelpesystemet for Finance and Operations-apper.
+description: Denne artikkelen inneholder en oversikt over hjelpesystemet for økonomi- og driftsapper.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd34addc2ffa5e437691cb1e3e8b33246053ccc7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070507"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898376"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
@@ -70,7 +70,7 @@ Alternativt kan du abonnere på en RSS-feed via app:
 
 ### <a name="leave-us-feedback"></a>Send tilbakemelding til oss
 
-Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en kommentar nederst på siden.
+Hvis du har tilbakemelding eller spørsmål om en artikkel, legger du igjen en kommentar nederst på siden.
 
 1. Velg **Tilbakemelding** for å vise kommentarene nederst på siden. Deretter velger du **Tilbakemelding for produkt** eller **Logg på for å sende tilbakemelding om dokumentasjon**.
 
@@ -83,7 +83,7 @@ Hvis du har tilbakemelding eller spørsmål om et emne, legger du igjen en komme
 
 ## <a name="contribute-to-the-documentation"></a>Bidra til dokumentasjonen
 
-Du kan bidra til og redigere i dokumentasjonen. Begynn med å velge knappen **Rediger** (blyantsymbol) for et emne. Følgende video viser hvordan du kan bidra til dokumentasjonen vår.
+Du kan bidra til og redigere i dokumentasjonen. Begynn med å velge knappen **Rediger** (blyantsymbol) for en artikkel. Følgende video viser hvordan du kan bidra til dokumentasjonen vår.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -98,7 +98,7 @@ Hvis du vil ha mer informasjon, kan du se [veiledningen for dokumentbidragsyter]
 
 En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra **Hjelp**-ruten. Når du først velger en oppgaveveiledning, vil **Hjelp**-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er tilgjengelige.
 
-Microsoft lanserte biblioteker for oppgaveveiledning for produktversjoner i 2017-versjonen av Dynamics 365 for Finance and Operations. Delen [Tilgang til oppgaveveiledninger fra Hjelp-ruten](#accessing-task-guides-from-the-help-pane) i dette emnet forklarer hvordan du finner de riktige oppgaveveiledningene for produktet.
+Microsoft lanserte biblioteker for oppgaveveiledning for produktversjoner i 2017-versjonen av Dynamics 365 for Finance and Operations. Delen [Tilgang til oppgaveveiledninger fra Hjelp-ruten](#accessing-task-guides-from-the-help-pane) i denne artikkelen forklarer hvordan du finner de riktige oppgaveveiledningene for produktet.
 
 ![Oppgaveveiledning – lesevisning.](./media/task-guide-ops.png)
 
@@ -121,7 +121,7 @@ Hvis du vil ha tilgang til hjelpeinnhold, velger du knappen **Hjelp** (**?**), o
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Tilgang til helpeemner fra Hjelp-ruten
 
-Fra **Hjelp**-ruten har du tilgang til emner som gjelder for klienten. Når du første gang åpner **Hjelp**-ruten, viser fanen **Hjelp** emnene som gjelder for siden du befinner deg på. Hvis ingen emner vises, kan du angi nøkkelord for å presisere søket. Når du velger et emne i **Hjelp**-ruten, åpnes emnet i en ny kategori i leseren.
+Fra **Hjelp**-ruten har du tilgang til emner som gjelder for klienten. Når du første gang åpner **Hjelp**-ruten, viser fanen **Hjelp** emnene som gjelder for siden du befinner deg på. Hvis ingen emner vises, kan du angi nøkkelord for å presisere søket. Når du velger en artikkel i **Hjelp**-ruten, åpnes den i en ny kategori i leseren.
 
 > [!IMPORTANT]
 > Denne delen gjelder ikke for Dynamics 365 Human Resources. Hjelpesystemet for Human Resources kobles automatisk til oppgaveveiledningene for produktet. Du kan heller ikke opprette tilpassede oppgaveveiledninger for Human Resources.

@@ -1,6 +1,6 @@
 ---
 title: Opprette arbeidsordrer fra vedlikeholdsforespørsler
-description: Dette emnet forklarer hvordan du oppretter en arbeidsordre fra en vedlikeholdsforespørsel i Aktivastyring.
+description: Denne artikkelen forklarer hvordan du oppretter en arbeidsordre fra en vedlikeholdsforespørsel i Aktivastyring.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c69ad91e931475dd4c8e5a126190e867bd193f881ad58525c1d2ac8997c972a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c73f019951460dc7cb6395d616a0f0a22fd0b91
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726927"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909708"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Opprette arbeidsordrer fra vedlikeholdsforespørsler
 
@@ -29,7 +29,7 @@ ms.locfileid: "6726927"
  
 
 
-Når du har opprettet vedlikeholdsforespørsler, kan du enkelt konvertere dem til arbeidsordrer. Dette emnet beskriver den raskeste måten å arbeide med vedlikeholdsforespørsler på, oppdatere flere vedlikeholdsforespørsler samtidig og deretter opprette en arbeidsordre for flere vedlikeholdsforespørsler samtidig. På siden **Aktive vedlikeholdsforespørsler** eller **Mine vedlikeholdsforespørsler for arbeidssted** kan du også arbeide med én vedlikeholdsforespørsel om gangen og konvertere en vedlikeholdssforespørsel til en arbeidsordre.
+Når du har opprettet vedlikeholdsforespørsler, kan du enkelt konvertere dem til arbeidsordrer. Denne artikkelen beskriver den raskeste måten å arbeide med vedlikeholdsforespørsler på, oppdatere flere vedlikeholdsforespørsler samtidig og deretter opprette en arbeidsordre for flere vedlikeholdsforespørsler samtidig. På siden **Aktive vedlikeholdsforespørsler** eller **Mine vedlikeholdsforespørsler for arbeidssted** kan du også arbeide med én vedlikeholdsforespørsel om gangen og konvertere en vedlikeholdssforespørsel til en arbeidsordre.
 
 > [!NOTE]
 > Hver vedlikeholdsforespørsel kan være relatert til bare én arbeidsordre. Flere vedlikeholdsforespørsler kan imidlertid inkluderes i én arbeidsordre, selv om vedlikeholdsforespørslene har forskjellige aktiva.

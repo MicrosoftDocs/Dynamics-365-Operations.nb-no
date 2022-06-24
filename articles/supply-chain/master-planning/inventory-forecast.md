@@ -1,6 +1,6 @@
 ---
 title: Lagerprognoser
-description: Dette emnet beskriver funksjonaliteten for forsynings- og behovsprognose som kan brukes til å opprette lagerprognoser i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver funksjonaliteten for forsynings- og behovsprognose som kan brukes til å opprette lagerprognoser i Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
-ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.openlocfilehash: 10e3b6ad079dbcbc3cce429a4d9d838e584b9c54
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8548174"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844532"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan vise og opprette lagerprognoser. Du kan opprette og vise forsynings- og behovsprognoselinjer for varer, varegrupper, varefordelingsnøkler, kundekontoer, kundegrupper, leverandørkontoer og leverandørgrupper.
+Denne artikkelen beskriver hvordan du kan vise og opprette lagerprognoser. Du kan opprette og vise forsynings- og behovsprognoselinjer for varer, varegrupper, varefordelingsnøkler, kundekontoer, kundegrupper, leverandørkontoer og leverandørgrupper.
 
 Du kan velge prognosemodellen som skal brukes, for hver prognoselinje. Du kan deretter angi varen eller varegruppen pluss antallet eller transaksjonsbeløpet. Du kan også konfigurere en tidsplan for fordeling av prognoseantallet.
 
@@ -60,7 +60,7 @@ Som du kan se i tabellen i trinn 1, kan du få tilgang til sidene som brukes, p�
     Siden **Forsyningsprognose** eller **Behovsprognose** vises, avhengig av hva du valgte. Den viser eventuelle eksisterende prognoselinjer for posten du valgte før du åpnet siden.
 
 1. Velg **Ny** i handlingsruten for å legge til en prognoselinje i rutenettet i øvre del av siden.
-1. Velg prognosemodellen som skal brukes, i **Modell**-feltet på den nye linjen. Angi deretter andre detaljer etter behov, for eksempel vare, varegruppe, kunde- eller leverandørkonto eller kunde- eller leverandørgruppe, vareantall eller totalt transaksjonsbeløp. Hvis du vil ha fullstendige detaljer om feltene som er tilgjengelige på sidene **Forsyningsprognose** og **Behovsprognose**, kan du se de senere delene i dette emnet.
+1. Velg prognosemodellen som skal brukes, i **Modell**-feltet på den nye linjen. Angi deretter andre detaljer etter behov, for eksempel vare, varegruppe, kunde- eller leverandørkonto eller kunde- eller leverandørgruppe, vareantall eller totalt transaksjonsbeløp. Hvis du vil ha fullstendige detaljer om feltene som er tilgjengelige på sidene **Forsyningsprognose** og **Behovsprognose**, kan du se de senere delene i denne artikkelen.
 1. Hvis du vil distribuere prognosen over perioden, velger du **Fordel prognose** på verktøylinjen i **Oversikt**-fanen.
 1. Gå gjennom tidshorisonten og tidsintervallene som brukes til fordeling av prognoseantallet, i rutenettet **Fordeling**.
 
@@ -68,7 +68,7 @@ Som du kan se i tabellen i trinn 1, kan du få tilgang til sidene som brukes, p�
 
 Forsyningsprognosen lar deg opprette en plan for varer som må kjøpes. Den viser innkjøpsassistenter hva de forventes å bestille.
 
-Du kan angi en forsyningsprognose etter vare, varegruppe, varefordelingsnøkkel, leverandør og leverandørgruppe. Hvis du vil ha informasjon om alle måtene du kan åpne **Forsyningsprognose**-siden for forskjellige enheter og poster på, kan du se delen [Vise og angi prognoselinjer manuelt](#manual-entry) tidligere i dette emnet.
+Du kan angi en forsyningsprognose etter vare, varegruppe, varefordelingsnøkkel, leverandør og leverandørgruppe. Hvis du vil ha informasjon om alle måtene du kan åpne **Forsyningsprognose**-siden for forskjellige enheter og poster på, kan du se delen [Vise og angi prognoselinjer manuelt](#manual-entry) tidligere i denne artikkelen.
 
 Den øvre delen av siden **Forsyningsprognose** har et rutenett med forsyningsprognoselinjer og et sett med faner du kan bruke til å vise og angi mer informasjon om en valgt prognoselinje. Den nedre delen av siden inneholder rutenettet **Tildeling**.
 
@@ -94,9 +94,9 @@ Tabellen nedenfor beskriver kommandoene som er tilgjengelige på verktøylinjen 
 
 | Kommando | beskrivelse |
 |---|---|
-| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. (Se delen [Fordel prognose](#allocate-forecast) senere i dette emnet.) |
-| Masseoppdatering | Åpne siden **Rediger prognosetransaksjoner**. (Se delen [Masseoppdatere prognosetransaksjoner](#bulk-update) senere i dette emnet.) |
-| Lagerprognose | Åpne en visning av **Lagerprognose**-siden som er filtrert for den valgte vare-/modellkombinasjonen. (Se delen [Lagerprognose](#inventory-forecast) senere i dette emnet.) |
+| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. (Se delen [Fordel prognose](#allocate-forecast) senere i denne artikkelen.) |
+| Masseoppdatering | Åpne siden **Rediger prognosetransaksjoner**. (Se delen [Masseoppdatere prognosetransaksjoner](#bulk-update) senere i denne artikkelen.) |
+| Lagerprognose | Åpne en visning av **Lagerprognose**-siden som er filtrert for den valgte vare-/modellkombinasjonen. (Se delen [Lagerprognose](#inventory-forecast) senere i denne artikkelen.) |
 | Opprett varebehov | Åpne en dialogboks der du kan opprette varebehov og salgsordre- eller varejournallinjer for prosjektrelaterte prognosetransaksjoner. Selv om denne kommandoen er tilgjengelig for både forsynings- og behovsprognoselinjer, kan den ikke brukes på **Forsyningsprognose**-siden. |
 
 ### <a name="the-overview-tab-on-the-supply-forecast-page"></a>Oversikt-fanen på Forsyningsprognose-siden
@@ -173,7 +173,7 @@ Hvis du bruker en varefordelingsnøkkel eller har angitt en vareprognose for én
 
 Behovsprognosen lar deg angi eller generere behov etter en kunde. Den hjelper salgs- og markedsføringsassistenter å informere hovedplanleggingsassistenter om forventet behov i den kommende prognoseperioden.
 
-Du kan angi en behovsprognose etter vare, varegruppe, varefordelingsnøkkel, kunde og kundegruppe. Hvis du vil ha informasjon om alle måtene du kan åpne **Behovsprognose**-siden for forskjellige enheter og poster på, kan du se delen [Vise og angi prognoselinjer manuelt](#manual-entry) tidligere i dette emnet.
+Du kan angi en behovsprognose etter vare, varegruppe, varefordelingsnøkkel, kunde og kundegruppe. Hvis du vil ha informasjon om alle måtene du kan åpne **Behovsprognose**-siden for forskjellige enheter og poster på, kan du se delen [Vise og angi prognoselinjer manuelt](#manual-entry) tidligere i denne artikkelen.
 
 Den øvre delen av **Behovsprognose**-siden har et rutenett med behovsprognoselinjer og et sett med faner du kan bruke til å vise og angi mer informasjon om en valgt prognoselinje. Den nedre delen av siden inneholder rutenettet **Tildeling**.
 
@@ -201,9 +201,9 @@ Tabellen nedenfor beskriver kommandoene som er tilgjengelige på verktøylinjen 
 
 | Kommando | beskrivelse |
 |---|---|
-| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. (Se delen [Fordel prognose](#allocate-forecast) senere i dette emnet.)|
-| Masseoppdatering | Åpne siden **Rediger prognosetransaksjoner**. (Se delen [Masseoppdatere prognosetransaksjoner](#bulk-update) senere i dette emnet.) |
-| Lagerprognose | Åpne en visning av **Lagerprognose**-siden som er filtrert for den valgte vare-/modellkombinasjonen. (Se delen [Lagerprognose](#inventory-forecast) senere i dette emnet.) |
+| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. (Se delen [Fordel prognose](#allocate-forecast) senere i denne artikkelen.)|
+| Masseoppdatering | Åpne siden **Rediger prognosetransaksjoner**. (Se delen [Masseoppdatere prognosetransaksjoner](#bulk-update) senere i denne artikkelen.) |
+| Lagerprognose | Åpne en visning av **Lagerprognose**-siden som er filtrert for den valgte vare-/modellkombinasjonen. (Se delen [Lagerprognose](#inventory-forecast) senere i denne artikkelen.) |
 | Opprett varebehov | Åpne en dialogboks der du kan opprette varebehov og salgsordre- eller varejournallinjer for prosjektrelaterte prognosetransaksjoner. |
 
 ### <a name="the-overview-tab-on-the-demand-forecast-page"></a>Oversikt-fanen på Behovsprognose-siden
@@ -296,7 +296,7 @@ Tabellen nedenfor beskriver feltene i **Oversikt**-fanen på **Behovsprognose**-
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Rutenettet Tildeling på Behovsprognose-siden
 
-Hvis du bruker en varefordelingsnøkkel eller har angitt en vareprognose for én eller flere fremtidige perioder, kan du tildele prognosen ved å velge **Fordel prognose** på verktøylinjen i **Oversikt**-fanen. Antallet distribueres deretter på måten som angis av linjene i rutenettet **Tildeling**. (Se delen [Fordel prognose](#allocate-forecast) senere i dette emnet.)
+Hvis du bruker en varefordelingsnøkkel eller har angitt en vareprognose for én eller flere fremtidige perioder, kan du tildele prognosen ved å velge **Fordel prognose** på verktøylinjen i **Oversikt**-fanen. Antallet distribueres deretter på måten som angis av linjene i rutenettet **Tildeling**. (Se delen [Fordel prognose](#allocate-forecast) senere i denne artikkelen.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Lagerprognose
 

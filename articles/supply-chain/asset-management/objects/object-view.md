@@ -1,6 +1,6 @@
 ---
-title: Aktivavisning
-description: Dette emnet beskriver aktivavisning i Aktivastyring.
+title: Objektvisning
+description: Denne artikkelen beskriver aktivavisning i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4265928fc5cb899a77eee6e5b9ff0a928efbe99c99ec7fe31eecffcb0f98f752
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a416dbea0bab8f6a506ae5cfbfc4feeae8edfe29
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882728"
 ---
-# <a name="asset-view"></a>Aktivavisning
+# <a name="asset-view"></a>Objektvisning
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Dette emnet beskriver aktivavisning i Aktivastyring. Siden **Aktivavisning** viser aktive aktiva og arbeidssteder i en trevisning. Derfor kan du enkelt få en oversikt over aktivarelasjoner til arbeidssteder. I tillegg kan du vise detaljert informasjon om arbeidssteder, aktiva og tilknyttede stykklister. Du kan også få en rask oversikt over aktive meldinger og arbeidsordrer som er knyttet til et aktivum.
+Denne artikkelen beskriver aktivavisning i Aktivastyring. Siden **Aktivavisning** viser aktive aktiva og arbeidssteder i en trevisning. Derfor kan du enkelt få en oversikt over aktivarelasjoner til arbeidssteder. I tillegg kan du vise detaljert informasjon om arbeidssteder, aktiva og tilknyttede stykklister. Du kan også få en rask oversikt over aktive meldinger og arbeidsordrer som er knyttet til et aktivum.
 
 1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Aktivavisning**.
 2. Hvis du vil endre visningen som vises på siden, velger du en ny verdi i **Visning**-feltet.

@@ -1,6 +1,6 @@
 ---
 title: Datamodell for avgiftsberegning
-description: Dette emnet gir informasjon om avgiftsdatamodellen, og hvordan feltverdiene i hver datamodell bestemmes av konteksten til avgiftsberegningstransaksjoner.
+description: Denne artikkelen gir informasjon om avgiftsdatamodellen, og hvordan feltverdiene i hver datamodell bestemmes av konteksten til avgiftsberegningstransaksjoner.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694263"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859702"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodell for avgiftsberegning
 
-Dette emnet gir informasjon om hvordan feltverdiene i avgiftsdatamodellen bestemmes i avgiftsberegningstransaksjoner.
+Denne artikkelen gir informasjon om hvordan feltverdiene i avgiftsdatamodellen bestemmes i avgiftsberegningstransaksjoner.
 
 *Avgiftsdatamodellen* består av felt som er nødvendige for avgiftsberegninger. Microsoft tilbyr *datamodellen for avgiftsberegning*, som inkluderer hodefeltene og linjefeltene i transaksjonsdokumenter i Finance and Operations-apper. Feltene som er definert i datamodellen for avgiftsberegning, er de tilgjengelige kolonnene i tabellene for gjeldende regler i konfigurasjonen av mva-beregningsfunksjonen.
 
@@ -99,7 +99,7 @@ Datamodellen for avgiftsberegning er integrert med Finance and Operations-apper.
 | Send til område/delstat          | <ul><li>**Salgsordre:**<ol><li>Hode &gt; Leveringsadresse &gt; Delstat</li></ol></li><li>**Bestilling:**<ol><li>Hode &gt; Leveringsadresse &gt; Delstat</li></ol></li><li>**Overføringsordre – send:**<ol><li>Hode &gt; Til lager &gt; Primæradresse &gt; Delstat</li><li>Hode &gt; Til område &gt; Primæradresse &gt; Delstat</li></ol></li><li>**Overføringsordre – motta:**<ol><li>Hode &gt; Til lager &gt; Primæradresse &gt; Delstat</li><li>Hode &gt; Til område &gt; Primæradresse &gt; Delstat</li></ol></li><li>**Tilbudsforespørsel:**<ol><li>Hode &gt; Leveringsadresse &gt; Delstat</li></ol></li><li>**Salgstilbud:**<ol><li>Hode &gt; Leveringsadresse &gt; Delstat</li></ol></li><li>**Fritekstfaktura:**<ol><li>Hode &gt; Kundekonto &gt; Standard leveringsadresse &gt; Delstat</li><li>Hode &gt; Kundekonto &gt; Primæradresse &gt; Delstat</li></ol></li><li>**Journal (kunde):**<ol><li>Kundekonto &gt; Standard leveringsadresse &gt; Delstat</li><li>Kundekonto &gt; Primæradresse &gt; Delstat</li></ol></li><li>**Journal (leverandør):**<ol><li>Juridisk enhet &gt; Standard leveringsadresse &gt; Delstat</li><li>Juridisk enhet &gt; Primæradresse &gt; Delstat</li></ol></li></ul> |
 | Send til postnummer                 | <ul><li>**Salgsordre:**<ol><li>Hode &gt; Leveringsadresse &gt; Postnummer</li></ol></li><li>**Bestilling:**<ol><li>Hode &gt; Leveringsadresse &gt; Postnummer</li></ol></li><li>**Overføringsordre – send:**<ol><li>Hode &gt; Til lager &gt; Primæradresse &gt; Postnummer</li><li>Hode &gt; Til område &gt; Primæradresse &gt; Postnummer</li></ol></li><li>**Overføringsordre – motta:**<ol><li>Hode &gt; Til lager &gt; Primæradresse &gt; Postnummer</li><li>Hode &gt; Til område &gt; Primæradresse &gt; Postnummer</li></ol></li><li>**Tilbudsforespørsel:**<ol><li>Hode &gt; Leveringsadresse &gt; Postnummer</li></ol></li><li>**Salgstilbud:**<ol><li>Hode &gt; Leveringsadresse &gt; Postnummer</li></ol></li><li>**Fritekstfaktura:**<ol><li>Hode &gt; Kundekonto &gt; Standard leveringsadresse &gt; Postnummer</li><li>Hode &gt; Kundekonto &gt; Primæradresse &gt; Postnummer</li></ol></li><li>**Journal (kunde):**<ol><li>Kundekonto &gt; Standard leveringsadresse &gt; Postnummer</li><li>Kundekonto &gt; Primæradresse &gt; Postnummer</li></ol></li><li>**Journal (leverandør):**<ol><li>Juridisk enhet &gt; Standard leveringsadresse &gt; Postnummer</li><li>Juridisk enhet &gt; Primæradresse &gt; Postnummer</li></ol></li></ul> |
 | Område                             | <ul><li>**Salgsordre:** Område</li><li>**Bestilling:** Område</li><li>**Overføringsordre - send:** Område for Fra lager</li><li>**Overføringsordre - motta:** Område for Til lager</li><li>**Tilbudsforespørsel:** Område</li><li>**Salgstilbud:** Område</li></ul> |
-| Avgiftsretning                    | <ul><li>**Salgsordre:** Utlevering</li><li>**Bestilling:** Innlevering</li><li>**Overføringsordre – send:** Utlevering</li><li>**Overføringsordre – motta:** Innlevering</li><li>**Innkjøpsrekvisisjon:** Innlevering</li><li>**Tilbudsforespørsel:** Utlevering</li><li>**Salgstilbud:** Utlevering</li><li>**Fritekstfaktura:** Utdata</li></ul> |
+| Avgiftsretning                    | <ul><li>**Salgsordre:** Utlevering</li><li>**Bestilling:** Innlevering</li><li>**Overføringsordre – send:** Utlevering</li><li>**Overføringsordre – motta:** Innlevering</li><li>**Innkjøpsrekvisisjon:** Innlevering</li><li>**Tilbudsforespørsel:** Utlevering</li><li>**Salgstilbud:** Utlevering</li><li>**Fritekstfaktura:** Utdata</li><li>**Journal:** Utlevering</li></ul> |
 | Leverandørnummer                   | <ul><li>**Bestilling:** Leverandørkonto</li><li>**Journal (leverandør):** Leverandørkonto</li></ul> |
 | Leverandørfakturakonto           | <ul><li>**Bestilling:** Fakturakonto</li><li>**Journal (leverandør):**<ol><li>Hovedleverandør &gt; Fakturakonto</li><li>Leverandørnummer</li></ol></li></ul> |
 | Lager                        | <ul><li>**Salgsordre:** Lager</li><li>**Bestilling:** Lager</li><li>**Overføringsordre - send:** Fra lager</li><li>**Overføringsordre - motta:** Til lager</li><li>**Tilbudsforespørsel:** Lager</li><li>**Salgstilbud:** Lager</li></ul> |

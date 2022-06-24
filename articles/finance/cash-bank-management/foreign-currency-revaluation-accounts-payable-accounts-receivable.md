@@ -1,6 +1,6 @@
 ---
 title: Revaluering av valuta for leverandører og kunder
-description: Dette emnet inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder.
+description: Denne artikkelen inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf32a31df1d56740d803b97d65829b1b1d31eb17
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 33750e7bb2f1fc4158a5f2faba5eeae5a356db7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713931"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906391"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Revaluering av valuta for leverandører og kunder
 
 [!include [banner](../includes/banner.md)]
 
-Endringer i valutakursene kan føre til at den teoretiske verdien (bokført verdi) av åpne kundetransaksjoner i utenlandsk valuta varierer over tid. Dette emnet inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder. 
+Endringer i valutakursene kan føre til at den teoretiske verdien (bokført verdi) av åpne kundetransaksjoner i utenlandsk valuta varierer over tid. Denne artikkelen inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder. 
 
 Den teoretiske verdien, eller bokførte verdien, av åpne transaksjoner i utenlandsk valuta varierer over tid på grunn av endringer i valutakursene. Hvis du vil oppdatere verdien av åpne transaksjoner i leverandører og kunder, kan du kjøre prosessen for revaluering av utenlandsk valuta. Revaluering av utenlandsk valuta kan kjøres for både for leverandører og kunder. Prosessen bruker en ny valutakurs til å revaluere de åpne beløpene, eller ikke utlignede beløp, på en bestemt dato. Forskjellen mellom de opprinnelige posterte beløpene og de revaluerte beløpene fører til urealisert fortjeneste eller tap for hver åpen transaksjon. Underfinans for Leverandør og Kunder oppdateres deretter for å gjenspeile urealisert fortjeneste eller tap, og en regnskapspost posteres til økonomimodulen.
 

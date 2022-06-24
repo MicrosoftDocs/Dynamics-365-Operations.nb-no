@@ -1,6 +1,6 @@
 ---
 title: Leverandører-posteringer
-description: Dette emnet beskriver hvordan posteringer konfigureres i Leverandører, og gir eksempler på posteringskonfigurasjoner.
+description: Denne artikkelen beskriver hvordan posteringer konfigureres i Leverandører, og gir eksempler på posteringskonfigurasjoner.
 author: rachel-profitt
 ms.date: 01/19/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb3ebad31c9f41e405b9fc31a0f71df05fa1cc60
-ms.sourcegitcommit: 10b85a09e8a550155a69aa2a8877a7c88b887242
+ms.openlocfilehash: 5b3593e01ed4d0a88b5816803f1d67fa7ed5e0f6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "8014465"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908016"
 ---
 # <a name="accounts-payable-posting"></a>Leverandører-postering
 

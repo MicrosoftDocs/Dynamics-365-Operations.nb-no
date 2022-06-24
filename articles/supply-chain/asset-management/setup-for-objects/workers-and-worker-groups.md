@@ -1,6 +1,6 @@
 ---
 title: Vedlikeholdspersoner og arbeidsgrupper
-description: Dette emnet forklarer vedlikeholdspersoner og arbeidergrupper i Aktivastyring.
+description: Denne artikkelen forklarer vedlikeholdspersoner og arbeidergrupper i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e976a28349a4bc7a371d23eb4df724e0ffd36a0553aec2deeb2ff07d0a63579
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a24c880ee76af1490824aef07976b998d9225d0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750130"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860906"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Vedlikeholdspersoner og arbeidsgrupper
 
@@ -28,7 +28,7 @@ ms.locfileid: "6750130"
 
  
 
-Dette emnet forklarer vedlikeholdspersoner og arbeidergrupper i Aktivastyring. I Aktivastyring kan du koble vedlikeholdspersoner arbeidere til arbeidssteder. (Hvis du vil ha mer informasjon om arbeidssteder, se [Opprette arbeidssteder](../functional-locations/create-functional-locations.md).) Denne funksjonaliteten kan være nyttig hvis du for eksempel planlegger en vedlikeholdsjobb på en maskin som er plassert på arbeidssted 01, og du vil tilordne vedlikeholdspersoner fra samme sted til å utføre jobben.
+Denne artikkelen forklarer vedlikeholdspersoner og arbeidergrupper i Aktivastyring. I Aktivastyring kan du koble vedlikeholdspersoner arbeidere til arbeidssteder. (Hvis du vil ha mer informasjon om arbeidssteder, se [Opprette arbeidssteder](../functional-locations/create-functional-locations.md).) Denne funksjonaliteten kan være nyttig hvis du for eksempel planlegger en vedlikeholdsjobb på en maskin som er plassert på arbeidssted 01, og du vil tilordne vedlikeholdspersoner fra samme sted til å utføre jobben.
 
 Du kan også opprette vedlikeholdspersongrupper og knytte vedlikeholdspersoner til dem. Denne funksjonaliteten er nyttig når du utfører enkel ordreplanlegging, og du vil planlegge en gruppe med vedlikeholdspersoner i en arbeidsordre. Du kan bruke vedlikeholdspersoner og vedlikeholdspersongrupper til å definere foretrukne vedlikeholdspersoner og ansvarlige for vedlikeholdspersoner. 
 

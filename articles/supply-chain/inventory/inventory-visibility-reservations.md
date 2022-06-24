@@ -1,6 +1,6 @@
 ---
-title: Lagersynlighetsreservasjoner
-description: Dette emnet beskriver hvordan du definerer reserveringsfunksjonen for å opprette reserveringer, forbruke reserveringer og/eller ikke reservere angitte lagerantall ved hjelp av Lagersynlighet.
+title: Inventory Visibility-reservasjoner
+description: Denne artikkelen beskriver hvordan du definerer reserveringsfunksjonen for å opprette reserveringer, forbruke reserveringer og/eller ikke reservere angitte lagerantall ved hjelp av Lagersynlighet.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e6752539a6381e1f7271883102391374e04f3aa
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 3b74907709ab97ddf4cc829dba324df213ca229f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061710"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895735"
 ---
-# <a name="inventory-visibility-reservations"></a>Lagersynlighetsreservasjoner
+# <a name="inventory-visibility-reservations"></a>Inventory Visibility-reservasjoner
 
 [!include [banner](../includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du definerer reserveringsfunksjonen for å opprette reserveringer, forbruke reserveringer og/eller ikke reservere angitte lagerantall ved hjelp av Lagersynlighet.
+Denne artikkelen beskriver hvordan du definerer reserveringsfunksjonen for å opprette reserveringer, forbruke reserveringer og/eller ikke reservere angitte lagerantall ved hjelp av Lagersynlighet.
 
 Reserveringer markerer et lagerantall som skal brukes i fremtiden. Når du oppretter en reservasjon, forhindrer systemet at andre ordrer reserverer eller forbruker de reserverte varene til reserveringen enten blir forbrukt eller ikke reservert. Reserveringer opprettes, forbrukes og avbrytes ved hjelp av API-kall til lagersynlighetstjenesten.
 

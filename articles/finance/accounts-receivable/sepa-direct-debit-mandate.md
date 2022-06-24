@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fec85e63b0c3c2875a153c55b1fd30a2c55d5fd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 0bea974750a6ac62d8ddeea5d9d4457f4846cb79
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726107"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891645"
 ---
 # <a name="set-up-sepa-direct-debit-mandate"></a>Definere mandat for SEPA Direct Debit
 
 [!include [banner](../includes/banner.md)]
 
-Med en SEPA-avtalegiro (Single Euro Payment Area) kan kreditor kreve inn penger fra kundens bankkonto, forutsatt at kunden har gitt kreditoren et signert mandat. Mandatet som kunden signerer, tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen. Dette emnet er organisert slik at det viser prosessen med å definere SEPA-avtalegiromandater.
+Med en SEPA-avtalegiro (Single Euro Payment Area) kan kreditor kreve inn penger fra kundens bankkonto, forutsatt at kunden har gitt kreditoren et signert mandat. Mandatet som kunden signerer, tillater kreditor å kreve betaling og instruerer kundens bank om å betale purringen. Denne artikkelen er organisert slik at det viser prosessen med å definere SEPA-avtalegiromandater.
 
 ## <a name="prerequisites"></a>Forutsetninger
 Tabellen nedenfor viser forutsetninger som må være på plass før du starter.

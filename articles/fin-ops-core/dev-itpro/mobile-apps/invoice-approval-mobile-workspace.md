@@ -1,6 +1,6 @@
 ---
 title: Mobilt arbeidsområde for fakturagodkjenning
-description: Dette emnet gir informasjon om det mobile arbeidsområdet for fakturagodkjenning.
+description: Denne artikkelen gir informasjon om det mobile arbeidsområdet for fakturagodkjenning.
 author: abruer
 ms.date: 05/24/2022
 ms.topic: article
@@ -12,19 +12,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811365"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8868676"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilt arbeidsområde for fakturagodkjenning
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Dette emnet gir informasjon om det mobile arbeidsområdet **Fakturagodkjenning**. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode. 
+Denne artikkelen gir informasjon om det mobile arbeidsområdet for **fakturagodkjenning**. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode. 
 
 Dette mobile arbeidsområdet er ment å brukes sammen med Finance and Operations-mobilappen.
 

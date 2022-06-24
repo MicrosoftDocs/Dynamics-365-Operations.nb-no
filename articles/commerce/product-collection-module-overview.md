@@ -1,6 +1,6 @@
 ---
 title: Produktsamlingsmoduler
-description: Dette emnet gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
 ms.date: 05/18/2022
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ff891eef79835fb4a65535ce8152e5b17023b9c
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 02a3d6314729f51d6c1dced5037f78d12355c09a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780415"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871665"
 ---
 # <a name="product-collection-modules"></a>Produktsamlingsmoduler
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over produktsamlingsmoduler i Microsoft Dynamics 365 Commerce.
 
 Produktgjenkjenning er et primærverktøy som forhandlere bruker for å engasjere seg med kundene på et webområde for e-handel. Produktsamlingsmoduler hjelper forhandlere med å bygge overbevisende handleopplevelser ved å tilby et intuitivt, visuelt grensesnitt som kan brukes til å utforme produktsamlinger raskt.
 

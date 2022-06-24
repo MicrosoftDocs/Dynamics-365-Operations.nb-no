@@ -1,6 +1,6 @@
 ---
 title: Legge til en QR-kode eller strekkode i e-postmeldinger for transaksjon og kvittering
-description: Dette emnet beskriver hvordan du setter inn QR-koder og strekkoder som representerer ordre-IDer, i e-postmeldinger for transaksjoner og kvitteringer i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du setter inn QR-koder og strekkoder som representerer ordre-ID-er, i e-postmeldinger for transaksjoner og kvitteringer i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 03/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5f7b349700a4b3b43f818b30bb479e630048e8b8
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: ffa0009c55b5322b209b19692952c2e0704f65c9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688971"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872890"
 ---
 # <a name="add-a-qr-code-or-bar-code-to-transactional-and-receipt-emails"></a>Legge til en QR-kode eller strekkode i e-postmeldinger for transaksjon og kvittering
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du setter inn QR-koder og strekkoder som representerer ordre-IDer, i e-postmeldinger for transaksjoner og kvitteringer i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du setter inn QR-koder og strekkoder som representerer ordre-ID-er, i e-postmeldinger for transaksjoner og kvitteringer i Microsoft Dynamics 365 Commerce.
 
 Du kan lett ta med QR-koder og strekkoder i transaksjons-e-postmeldinger for å gjøre ordreoppslagsprosessen raskere i et detaljhandelsmiljø. Hvis du vil sette inn QR-koder og strekkoder i e-postmeldinger, bruker du en HTML-kode **\<img\>** som ber om en QR-kode eller strekkodebilde fra en genererings- og gjengivelsestjeneste. Microsoft tilbyr ikke denne tjenesten. Det finnes imidlertid mange gratis- eller tilbudstjenester som kan tjene QR-koder eller strekkoder som genereres dynamisk basert på en verdi som sendes i en spørringsstreng.
 

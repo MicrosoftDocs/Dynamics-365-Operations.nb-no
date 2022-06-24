@@ -1,6 +1,6 @@
 ---
 title: Behandling av varer i transitt
-description: Dette emnet beskriver hvordan du arbeider med ordrer for varer i transitt. Når en ordre eller sjøreise er satt opp til å bruke behandling av varer i transitt, kan varer faktureres før de er mottatt på lageret for forbruk.
+description: Denne artikkelen beskriver hvordan du arbeider med ordrer for varer i transitt. Når en ordre eller sjøreise er satt opp til å bruke behandling av varer i transitt, kan varer faktureres før de er mottatt på lageret for forbruk.
 author: Weijiesa
 ms.date: 01/13/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8df07c7c94cf64b0e4cf1def794270e176241b5f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 47e5ef2ef99fcf23af73cfdb6ec57b92ad62f18c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694662"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854391"
 ---
 # <a name="goods-in-transit-processing"></a>Behandling av varer i transitt
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du arbeider med ordrer for varer i transitt. Denne typen ordre brukes bare av modulen **Netto innkjøpspris**. Når en ordre eller sjøreise er satt opp til å bruke behandling av varer i transitt, trenger du ikke vente til varer er mottatt på lager før du kan fakturere dem. I stedet faktureres varene når de går ut av leverandørens lager eller opprinnelseshavn, og de økonomiske kostnadene gjenkjennes når sjøreisen starter. Ved hjelp av denne funksjonaliteten kan du ta eierskap av lageret på riktig måte, ettersom varer ofte blir eiendommen til organisasjonen din når de forlater forsendelseshavnen.
+Denne artikkelen beskriver hvordan du arbeider med ordrer for varer i transitt. Denne typen ordre brukes bare av modulen **Netto innkjøpspris**. Når en ordre eller sjøreise er satt opp til å bruke behandling av varer i transitt, trenger du ikke vente til varer er mottatt på lager før du kan fakturere dem. I stedet faktureres varene når de går ut av leverandørens lager eller opprinnelseshavn, og de økonomiske kostnadene gjenkjennes når sjøreisen starter. Ved hjelp av denne funksjonaliteten kan du ta eierskap av lageret på riktig måte, ettersom varer ofte blir eiendommen til organisasjonen din når de forlater forsendelseshavnen.
 
 Når det brukes ordrer for varer i transitt, mottas de økonomisk oppdaterte varene i et midlertidig lager som kalles et transittlager for varer. Varene forblir deretter i dette lageret til de kan mottas ved det endelige mållageret (det vil si lageret som er definert på innkjøpslinjen). De kan ikke fjernes manuelt.
 

@@ -1,6 +1,6 @@
 ---
 title: Revaluere leiebetalinger som er koblet til en indeksrente
-description: Dette emnet beskriver justeringen som gjøres for leieforpliktelsen for en bruksrettseiendel når variable leiebetalinger endres på grunn av en endring i indeksrenten.
+description: Denne artikkelen beskriver justeringen som gjøres for leieforpliktelsen for en bruksrettseiendel når variable leiebetalinger endres på grunn av en endring i indeksrenten.
 author: moaamer
 ms.date: 01/11/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 8dc2325e9f0651bea0d70d9f66e5d88b741009f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968062"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903254"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Revaluere leiebetalinger som er koblet til en indeksrente
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver justeringen som gjøres for leieforpliktelsen for en bruksrettseiendel når variable leiebetalinger endres på grunn av en endring i indeksrenten. Leieforpliktelsen og bruksrettseiendelene vil bli justert for til kontoen for de nye betalingsbeløp. Under Accounting Standards Codification-emne 842 (ASC 842), som er standard i regnskapsnormen Generally Accepted Accounting Principles i USA (US GAAP), endres bare de variable betalingene når betalinger økes eller reduseres på grunn av en endring i indeksrenten, med mindre det er flere endringer i kontantstrømmene. Disse tilleggsendringene kan inkludere en endring i leievilkårene som er knyttet til rentesatser. Hvis du vil ha mer informasjon, se ASC 842-10-55-225 og avsnitt 42(b) i International Financial Reporting Standard 16 (IFRS 16).
+Denne artikkelen beskriver justeringen som gjøres for leieforpliktelsen for en bruksrettseiendel når variable leiebetalinger endres på grunn av en endring i indeksrenten. Leieforpliktelsen og bruksrettseiendelene vil bli justert for til kontoen for de nye betalingsbeløp. Under Accounting Standards Codification-emne 842 (ASC 842), som er standard i regnskapsnormen Generally Accepted Accounting Principles i USA (US GAAP), endres bare de variable betalingene når betalinger økes eller reduseres på grunn av en endring i indeksrenten, med mindre det er flere endringer i kontantstrømmene. Disse tilleggsendringene kan inkludere en endring i leievilkårene som er knyttet til rentesatser. Hvis du vil ha mer informasjon, se ASC 842-10-55-225 og avsnitt 42(b) i International Financial Reporting Standard 16 (IFRS 16).
 
 ## <a name="adjust-lease-payments"></a>Justere leiebetalinger
 

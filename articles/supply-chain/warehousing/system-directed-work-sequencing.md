@@ -1,6 +1,6 @@
 ---
-title: Systemstyrt arbeidssekvensiering
-description: Dette emnet inneholder informasjon om systemstyrt arbeidssekvensering. Med denne funksjonaliteten kan du sortere og filtrere arbeidsordrene som systemet viser for brukere for kjøring. Det er nyttig i scenarier der det kreves tilleggskriterier for å styre lagerplukkprosessen.
+title: Systemstyrt arbeidssekvensering
+description: Denne artikkelen inneholder informasjon om systemstyrt arbeidssekvensering. Med denne funksjonaliteten kan du sortere og filtrere arbeidsordrene som systemet viser for brukere for kjøring. Det er nyttig i scenarier der det kreves tilleggskriterier for å styre lagerplukkprosessen.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849133"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrt arbeidssekvensiering
 
@@ -44,7 +44,7 @@ Før du kan bruke systemstyrt arbeidssekvensering-funksjonen, må den aktiveres 
 
 ### <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
-For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres i dette emnet, må du arbeide på et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF**. Scenariene bruker lager *51* fra demodataene.
+For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres i denne artikkelen, må du arbeide på et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF**. Scenariene bruker lager *51* fra demodataene.
 
 > [!IMPORTANT]
 > Før du frigir ordrene til lageret, må du kontrollere at plukklokasjonene har nok beholdning for alle varene på ordrene.

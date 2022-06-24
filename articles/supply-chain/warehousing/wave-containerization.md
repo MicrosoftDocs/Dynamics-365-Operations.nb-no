@@ -1,6 +1,6 @@
 ---
 title: Containerbruk
-description: Dette emnet beskriver hvordan du automatiserer containerbruken av laster. Automatisert containerbruk oppretter containere og plukkarbeidet for forsendelser når en bølge behandles.
+description: Denne artikkelen beskriver hvordan du automatiserer containerbruken av laster. Automatisert containerbruk oppretter containere og plukkarbeidet for forsendelser når en bølge behandles.
 author: Mirzaab
 ms.date: 03/08/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f738c0404a41ef862d4985a170a0eba991e4dd4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4bdd13d794f01c9971ee1bcbdf206bff6b526afa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686633"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880429"
 ---
 # <a name="containerization"></a>Containerbruk
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du automatiserer containerbruken av laster. Automatisert containerbruk oppretter containere og plukkarbeidet for forsendelser når en bølge behandles.
+Denne artikkelen beskriver hvordan du automatiserer containerbruken av laster. Automatisert containerbruk oppretter containere og plukkarbeidet for forsendelser når en bølge behandles.
 
 Hvis du vil konfigurere containerbruk, må du opprette følgende:
 

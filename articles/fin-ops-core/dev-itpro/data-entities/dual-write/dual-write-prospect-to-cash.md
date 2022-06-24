@@ -1,6 +1,6 @@
 ---
 title: Kundeemne til kontanter i dobbel skriving
-description: Dette emnet inneholder informasjon om kundeemne til kontanter i dobbel skriving.
+description: Denne artikkelen inneholder informasjon om kundeemne til kontanter i dobbel skriving.
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7c53bcd1084d89b59d0f6b2674a85d7c3481a9bf
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860116"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
@@ -29,7 +29,7 @@ I app-grensesnittene kan du få tilgang til behandlingsstatusene og fakturainfor
 Hvis du vil ha informasjon om kunde- og kontaktintegrering, kan du se [Integrert originalkunde](customer-mapping.md). Hvis du vil ha informasjon om produktintegrering, kan du se [Samlet produktopplevelse](product-mapping.md).
 
 > [!NOTE]
-> Både kundeemne og kunde refererer i Dynamics 365 Sales til en post i tabellen **Forretningsforbindelse** der kolonnen **RelationshipType** er enten **Kundeemne** eller **Kunde**. Hvis forretningslogikken omfatter en kvalifikasjonsprosess for **Forretningsforbindelse** der posten **Forretningsforbindelse** opprettes og kvalifiseres først som et kundeemne og deretter som en kunde, synkroniseres denne posten bare med Finance and Operations-appen når den er en kunde (`RelationshipType=Customer`). Hvis du vil at raden **Forretningsforbindelse** skal synkroniseres som et kundeemne, må du ha en egendefinert tilordning for å integrere kundeemnedataene.
+> Både kundeemne og kunde refererer i Dynamics 365 Sales til en post i tabellen **Forretningsforbindelse** der kolonnen **RelationshipType** er enten **Kundeemne** eller **Kunde**. Hvis forretningslogikken omfatter en kvalifikasjonsprosess for **Forretningsforbindelse** der posten **Forretningsforbindelse** opprettes og kvalifiseres først som et kundeemne og deretter som en kunde, synkroniseres denne posten bare med økonomi og driftsappen når den er en kunde (`RelationshipType=Customer`). Hvis du vil at raden **Forretningsforbindelse** skal synkroniseres som et kundeemne, må du ha en egendefinert tilordning for å integrere kundeemnedataene.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
@@ -111,7 +111,7 @@ Salgsfakturaer er opprettet i Supply Chain Management og synkronisert til Sales.
 
 Kundeemne til kontanter inkluderer en samling tabelltilordninger for viktige områder som fungerer sammen under datasamhandling, som vist i følgende tabell.
 
-| Finance and Operations-apper | Kundeengasjementsapper | beskrivelse |
+| Finance and Operations-apper | Kundeengasjementsapper | Beskrivelse |
 |-----------------------------|-----------------------------------|-------------|
 [Alle produkter](mapping-reference.md#138) | msdyn_globalproducts | |
 [Kunder V3](mapping-reference.md#101) | kontoer | |
@@ -122,7 +122,7 @@ Kundeemne til kontanter inkluderer en samling tabelltilordninger for viktige omr
 [CDS-salgstilbudshode](mapping-reference.md#215) | tilbud | |
 [CDS-salgstilbudslinjer](mapping-reference.md#214) | quotedetails | |
 [Frigitte produkter V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Salgsfakturahoder V2](mapping-reference.md#118) | fakturaer | Tabellen Salgsfakturahoder V2 i Finance and Operations-appen inneholder fakturaer for salgsordrer og fritekstfakturaer. Det brukes et filter for dobbel skriving i Dataverse som filtrerer ut alle fritekstfakturadokumenter. |
+[Salgsfakturahoder V2](mapping-reference.md#118) | fakturaer | Tabellen Salgsfakturahoder V2 i økonomi- og driftsappen inneholder fakturaer for salgsordrer og fritekstfakturaer. Det brukes et filter for dobbel skriving i Dataverse som filtrerer ut alle fritekstfakturadokumenter. |
 [Salgsfakturalinjer V2](mapping-reference.md#117) | invoicedetails | |
 [Koder for salgsordregrunnlag](mapping-reference.md#186) | msdyn_salesorderorigins | |
 

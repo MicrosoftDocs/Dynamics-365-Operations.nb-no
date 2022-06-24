@@ -1,6 +1,6 @@
 ---
 title: Oppgavebehandling på salgsstedet
-description: Dette emnet beskriver oppgavebehandling i Microsoft Dynamics 365 Commerce POS-programmet (salgssted).
+description: Denne artikkelen beskriver oppgavebehandling i Microsoft Dynamics 365 Commerce POS-programmet (salgssted).
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3fb7d584b634b0a1e43ef6a02a9edcadc0927b36bd2a814fdfe947fb0e2e1917
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e61456b7ae79a2c82c96b5b669e95ad1818f71d8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772112"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878437"
 ---
 # <a name="task-management-in-pos"></a>Oppgavebehandling på salgsstedet
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver oppgavebehandling i Microsoft Dynamics 365 Commerce POS-programmet (salgssted).
+Denne artikkelen beskriver oppgavebehandling i Microsoft Dynamics 365 Commerce POS-programmet (salgssted).
 
 Dynamics 365 Commerce POS-programmet har funksjoner for oppgavebehandling som gjør at butikkledere og arbeidere kan administrere oppgaver og oppdatere oppgavestatus. Butikkarbeidere kan få tilgang til oppgaver enten ved å velge **Oppgaver**-flisen på POS-startsiden eller ved å velge oppgavevarslinger. Som standard blir butikkarbeidere tatt til kategorien **Mine oppgaver**, der de kan vise oppgavene som er tilordnet dem. De kan imidlertid enkelt bytte til kategoriene **Forfalte oppgaver**, **Åpne oppgaver** og **Oppgavelister**.
 

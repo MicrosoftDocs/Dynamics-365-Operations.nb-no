@@ -1,6 +1,6 @@
 ---
 title: Opprette en kjøpsavtale
-description: Dette emnet fører deg gjennom oppretting av en kjøpsavtale.
+description: Denne artikkelen fører deg gjennom oppretting av en kjøpsavtale.
 author: GalynaFedorova
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3456e1c6e2ec65329e0f2e984f99ced0994c240b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 108c3a47132b262ebe2e15f00d26191b75469959
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670139"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877573"
 ---
 # <a name="create-a-purchase-agreement"></a>Opprette en kjøpsavtale
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet fører deg gjennom oppretting av en kjøpsavtale. Dette gjøres vanligvis av en innkjøpssjef. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Du må ha definert kjøpsavtaleklassifiseringer før du starter. Når du har opprettet en avtale, kan du bruke den når du oppretter en bestilling, og dette kopierer kjøpsavtalebetingelsene til hodet og linjene i rekkefølgen som er påvirket av avtalen.
+Denne artikkelen fører deg gjennom oppretting av en kjøpsavtale. Dette gjøres vanligvis av en innkjøpssjef. Du kan bruke denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Du må ha definert kjøpsavtaleklassifiseringer før du starter. Når du har opprettet en avtale, kan du bruke den når du oppretter en bestilling, og dette kopierer kjøpsavtalebetingelsene til hodet og linjene i rekkefølgen som er påvirket av avtalen.
 
 
 ## <a name="create-a-new-purchase-agreement"></a>Opprette en ny kjøpsavtale

@@ -1,6 +1,6 @@
 ---
 title: Fullføring av sikkerhetslager for varer
-description: Dette emnet omhandler fullføring av sikkerhetslager og hvordan du konfigurerer sikkerhetslagerantall for varer.
+description: Denne artikkelen omhandler fullføring av sikkerhetslager og hvordan du konfigurerer sikkerhetslagerantall for varer.
 author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 70461ad1de94c984cb41e6b1d46af9e310a928d6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672073"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887406"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Fullføring av sikkerhetslager for varer
 
@@ -88,7 +88,7 @@ Hvis **Minimumsnøkler** er brukt, merker du av for **Minimumsperioder** for å 
 Dette scenariet viser hvordan denne parameteren fungerer, og hva som er forskjellen mellom verdiene.
 
 > [!NOTE]
-> For alle illustrasjonene i dette emnet representerer x-aksen lager, y-aksen dager, linjene lagernivået, pilene transaksjoner, for eksempel salgsordrelinjer, bestillingslinjer eller planlagte ordrer.
+> For alle illustrasjonene i denne artikkelen representerer x-aksen lager, y-aksen dager, linjene lagernivået, pilene transaksjoner, for eksempel salgsordrelinjer, bestillingslinjer eller planlagte ordrer.
 
 [![Vanlig scenario for fullføring av sikkerhetslager.](media/Scenario1.png)](media/Scenario1.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Legg til en ny områdeside
-description: Dette emnet beskriver hvordan du legger til en ny områdeside i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du legger til en ny områdeside i Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 02/03/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.openlocfilehash: 76fc3f52746943d5cbf1cb31e677344a1d14bee3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090725"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871734"
 ---
 # <a name="add-a-new-site-page"></a>Legg til en ny områdeside
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du legger til en ny områdeside i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du legger til en ny områdeside i Microsoft Dynamics 365 Commerce.
 
 Når du har opprettet maler og fragmenter for området, er neste trinn å begynne å opprette sider som bruker dem. For å komme i gang må du velge en mal eller et oppsett, et sidenavn og en side-URL-adresse.
 

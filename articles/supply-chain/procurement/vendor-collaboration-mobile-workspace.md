@@ -1,6 +1,6 @@
 ---
 title: Mobilt arbeidsområde for leverandørsamarbeid
-description: Dette emnet gir informasjon om det mobile arbeidsområdet for leverandørsamarbeid. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
+description: Denne artikkelen gir informasjon om det mobile arbeidsområdet for leverandørsamarbeid. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
 author: GalynaFedorova
 ms.date: 05/24/2022
 ms.topic: article
@@ -14,19 +14,19 @@ ms.search.region: global
 ms.author: gfedorova
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 97352ca89cef77b9320f17af5a1dbe6a00df2dd6
-ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
+ms.openlocfilehash: 591d4269a1188ed8f098a342729ba49b9772f42d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "8811721"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851659"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-Dette emnet gir informasjon om det mobile arbeidsområdet for **leverandørsamarbeid**. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
+Denne artikkelen gir informasjon om det mobile arbeidsområdet for **leverandørsamarbeid**. Dette arbeidsområdet hjelper leverandørene med å holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter.
 
 Dette mobile arbeidsområdet er ment å brukes sammen med Økonomi og drift (Dynamics 365)-mobilappen.
 
@@ -97,7 +97,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 </tr>
 <tr class="even">
 <td>Leverandørbrukeren må ha tilgang til webgrensesnittet for leverandørsamarbeid i webklienten og må angi en bruker for leverandørsamarbeid.</td><td>Innkjøpsansvarlige og systemansvarlig</td>
-<td>Følg fremgangsmåten i emnene nedenfor for å konfigurere og arbeide med webgrensesnittet for leverandørsamarbeid.
+<td>Følg fremgangsmåten i artiklene nedenfor for å konfigurere og arbeide med webgrensesnittet for leverandørsamarbeid.
 <ul>
 <li><a href="vendor-collaboration-work-external-vendors.md">Bruke leverandørsamarbeid for å arbeide med eksterne leverandører</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Administrere brukere av leverandørsamarbeid</a></li>

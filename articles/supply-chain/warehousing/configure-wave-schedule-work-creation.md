@@ -1,6 +1,6 @@
 ---
-title: Planlegge arbeidsopprettelse under bølge
-description: Dette emnet beskriver hvordan du definerer og bruker bølgebehandlingsmetoden for planlegging av arbeidsopprettelse.
+title: Planlegg oppretting av arbeidstid under bølge
+description: Denne artikkelen beskriver hvordan du definerer og bruker bølgebehandlingsmetoden for planlegging av arbeidsopprettelse.
 author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 8b4505d66c37134bc8f672b38d195f4f677df9bc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691138"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852077"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planlegge arbeidsopprettelse under bølge
 
@@ -30,7 +30,7 @@ Når funksjonaliteten er aktivert, blir planlagt arbeid opprettet automatisk, so
 
 ## <a name="turn-on-the-scheduled-work-creation-features-in-feature-management"></a>Slå på funksjonene for planlagte arbeidsopprettelse i funksjonsadministrasjon
 
-Hvis du vil bruke funksjonene som beskrives i dette emnet, må de være aktivert på systemet. Bruk arbeidsområdet [Funksjonsadministrering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktiverer du følgende funksjoner i følgende rekkefølge:
+Hvis du vil bruke funksjonene som beskrives i denne artikkelen, må de være aktivert på systemet. Bruk arbeidsområdet [Funksjonsadministrering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktiverer du følgende funksjoner i følgende rekkefølge:
 
 1. **Organisasjonsomfattende arbeidsblokkering** – Kreves for både manuell og automatisk konfigurasjon av planlagt arbeidsopprettelse. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)
 1. **Planlegg arbeidsopprettelse** – Kreves for både manuell og automatisk konfigurasjon av planlagt arbeidsopprettelse.

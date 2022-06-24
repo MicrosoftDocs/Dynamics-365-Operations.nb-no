@@ -1,6 +1,6 @@
 ---
 title: Generere fakturalinjer ved import av leverandørfakturaer
-description: Dette emnet beskriver funksjonaliteten for automatisk generering av fakturalinjer på leverandørfakturaer når fakturaer importeres.
+description: Denne artikkelen beskriver funksjonaliteten for automatisk generering av fakturalinjer på leverandørfakturaer når fakturaer importeres.
 author: sunfzam
 ms.date: 09/10/2021
 ms.topic: article
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e452bda02c814b78c4bb48140b07f0113ab4a571
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358320"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903514"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Generere fakturalinjer ved import av leverandørfakturaer
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjonaliteten for automatisk generering av fakturalinjer på leverandørfakturaer når fakturaer importeres.
+Denne artikkelen beskriver funksjonaliteten for automatisk generering av fakturalinjer på leverandørfakturaer når fakturaer importeres.
 
 Noen ganger inneholder leverandørfakturaer begrenset informasjon, som mottakerinformasjon og delsummer. De inneholder imidlertid ingen informasjon for linjeelementer. Når du importerer fakturaer, genereres fakturalinjene automatisk basert på informasjon i den tilsvarende bestillingen.
 
@@ -42,7 +42,7 @@ Følg denne fremgangsmåten for å aktivere automatisk oppretting av fakturalinj
 
 ## <a name="data-entity-changes"></a>Dataenhetsendringer
 
-For å støtte funksjonaliteten som er beskrevet i dette emnet, er dataenheten for **Leverandørfakturahode** forbedret. Tre felt er lagt til:
+For å støtte funksjonaliteten som er beskrevet i denne artikkelen, er dataenheten for **Leverandørfakturahode** forbedret. Tre felt er lagt til:
 
 - **HeaderOnlyImport** – Dette feltet må være satt til **Ja** for at linjer skal genereres for fakturahoder.
 - **PurchIdRange** – Listen over bestillingsnumre. Fakturanumrene kan være et område, for eksempel **INV0001.. INV0009** (der to punkter skiller starten og slutten av området) eller diskrete verdier, for eksempel **INV0001, INV0003, INV0006**. Alle bestillinger må tilhøre samme leverandørkonto i fakturahodet. Ellers får du følgende feilmelding: "Kan ikke generere fakturalinjer. Bestillinger har ulike leverandørkontoer."

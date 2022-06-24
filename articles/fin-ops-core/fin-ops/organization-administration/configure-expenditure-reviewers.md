@@ -1,6 +1,6 @@
 ---
 title: Konfigurere utgiftskontrollører
-description: Dette emnet beskriver hvordan du bruker gjennomganger av utgifter til å velge brukeren som en arbeidsflytoppgave, godkjenning eller manuell beslutning er tilordnet, dynamisk.
+description: Denne artikkelen beskriver hvordan du bruker gjennomganger av utgifter til å velge brukeren som en arbeidsflytoppgave, godkjenning eller manuell beslutning er tilordnet, dynamisk.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 110edf4c2733f899368069c7d215ae5b0882f5cc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863230"
 ---
 # <a name="configure-expenditure-reviewers"></a>Konfigurere utgiftskontrollører
 [!include[banner](../includes/banner.md)]
@@ -75,7 +75,7 @@ Når bestillingen er opprettet, må **Prosjekt**-feltet angis. Hvis du ikke krev
 
 ## <a name="set-up-expenditure-reviewers"></a>Definere utgiftskontrollører
 
-Dette eksemplet viser hvordan du konfigurerer en kontrollør av innkjøpsrekvisisjonsutgifter: Hvis du vil konfigurere andre typer utgiftskontrollører, erstatter du navigasjonsbanen i trinn 1 med den riktige banen fra tabellen i delen [Typer utgiftskontrollører](configure-expenditure-reviewers.md#types-of-expenditure-reviewers), tidligere i dette emnet.
+Dette eksemplet viser hvordan du konfigurerer en kontrollør av innkjøpsrekvisisjonsutgifter: Hvis du vil konfigurere andre typer utgiftskontrollører, erstatter du navigasjonsbanen i trinn 1 med den riktige banen fra tabellen i delen [Typer utgiftskontrollører](configure-expenditure-reviewers.md#types-of-expenditure-reviewers), tidligere i denne artikkelen.
 
 1. Gå til **Innkjøp og leverandører \> Oppsett \> Policyer \> Kontrollører av innkjøpsrekvisisjonsutgifter**.
 2. På siden **Kontrollører av innkjøpsrekvisisjonsutgifter** velger du **Ny**.

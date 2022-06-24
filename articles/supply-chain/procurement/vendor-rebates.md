@@ -1,6 +1,6 @@
 ---
 title: Leverandørrabatter
-description: Dette emnet gir en oversikt over de vanligste oppgavene du kanskje vil utføre når du jobber med leverandørrabatter. Leverandørrabatter hjelper bedrifter bedre å håndtere sine leverandørrabattprogrammer ved å automatisere oppgaver som kreves for å administrere, spore og kreve rabatter som er opptjent.
+description: Denne artikkelen gir en oversikt over de vanligste oppgavene du kanskje vil utføre når du jobber med leverandørrabatter. Leverandørrabatter hjelper bedrifter bedre å håndtere sine leverandørrabattprogrammer ved å automatisere oppgaver som kreves for å administrere, spore og kreve rabatter som er opptjent.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: ed41fe18048050ecb80a93e929d66ebc3a2e2441
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 789a58af40595cbb72d55d598510c43315aead2b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672969"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890806"
 ---
 # <a name="vendor-rebates"></a>Leverandørrabatter
 
@@ -26,7 +26,7 @@ ms.locfileid: "8672969"
 
 Leverandørrabatter hjelper bedrifter bedre å håndtere sine leverandørrabattprogrammer ved å automatisere oppgaver som kreves for å administrere, spore og kreve rabatter som er opptjent.
 
-Dette emnet gir en oversikt over de vanligste oppgavene du kanskje vil utføre når du jobber med leverandørrabatter. Oversikten dekker følgende oppgaver:
+Denne artikkelen gir en oversikt over de vanligste oppgavene du kanskje vil utføre når du jobber med leverandørrabatter. Oversikten dekker følgende oppgaver:
 
 - Gjennomgå detaljer om en rabattavtale.
 - Identifiser bestillinger som kvalifiserer for rabatter, og generer rabattkrav.
@@ -34,7 +34,7 @@ Dette emnet gir en oversikt over de vanligste oppgavene du kanskje vil utføre n
 
 ## <a name="audience-and-purpose"></a>Målgruppe og formål
 
-Informasjonen i dette emnet er ment for forretningsmessige beslutningstakere i bedriftsselskaper, i stillinger som innkjøpssjef, finansdirektør og regnskapsfører, som har følgende ansvar:
+Informasjonen i denne artikkelen er ment for forretningsmessige beslutningstakere i bedriftsselskaper, i stillinger som innkjøpssjef, finansdirektør og regnskapsfører, som har følgende ansvar:
 
 - Forhandle forhandlerpris, rabatt og rabattavtaler.
 - Administrer ansatte som behandler rabattkrav og samler inn betalinger.

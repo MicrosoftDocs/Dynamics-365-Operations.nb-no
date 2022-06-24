@@ -1,6 +1,6 @@
 ---
 title: Vis feriesaldoer i grensesnittet for produksjonsutførelse
-description: Dette emnet inneholder et eksempelscenario som viser hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management slik at den bruker lønnsstatistikk til å gi arbeidere en oversikt over feriesaldoen for inneværende år.
+description: Denne artikkelen inneholder et eksempelscenario som viser hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management slik at den bruker lønnsstatistikk til å gi arbeidere en oversikt over feriesaldoen for inneværende år.
 author: johanhoffmann
 ms.date: 04/22/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-04-22
 ms.dyn365.ops.version: 10.0.XX
-ms.openlocfilehash: a97858c72b0be50609cee552bd0635e2d68ea478
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 2a6b6f52bfa7539b7c9bb5841536b0d564d0274c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645350"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852280"
 ---
 # <a name="show-vacation-balances-in-the-production-floor-execution-interface"></a>Vis feriesaldoer i grensesnittet for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder et eksempelscenario som viser hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management slik at den bruker lønnsstatistikk til å gi hver arbeider en oversikt over feriesaldoen for inneværende år. Arbeidere kan se feriesaldoen i dialogboksen **Min dag** i grensesnittet for produksjonsutførelse.
+Denne artikkelen inneholder et eksempelscenario som viser hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management slik at den bruker lønnsstatistikk til å gi hver arbeider en oversikt over feriesaldoen for inneværende år. Arbeidere kan se feriesaldoen i dialogboksen **Min dag** i grensesnittet for produksjonsutførelse.
 
 Dette scenarioet bruker den danske helligdagslovgivningen, der ferieåret går fra 1. september til 31. august. I dette scenarioet har firmaet ansatt en ny arbeider og vil gi den ansatte en saldo på ti feriedager for resten av det nåværende ferieåret.
 

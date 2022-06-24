@@ -1,6 +1,6 @@
 ---
 title: Automatisk bruk av forskuddsbetalinger på leverandørfakturaer
-description: Dette emnet beskriver muligheten for automatisk bruk av forskuddsbetalinger på leverandørfakturaer.
+description: Denne artikkelen beskriver muligheten for automatisk bruk av forskuddsbetalinger på leverandørfakturaer.
 author: sunfzam
 ms.date: 10/19/2021
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8583962c41a7ac5e27463f325ddc2ccd367331cc
-ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.openlocfilehash: 547573d187460a900df7f4927ac062bd9d456729
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/26/2022
-ms.locfileid: "8358225"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900078"
 ---
 # <a name="automatically-apply-to-vendor-invoices"></a>Automatisk bruk på leverandørfakturaer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver muligheten for automatisk bruk av forskuddsbetalinger på leverandørfakturaer. Det kan opprettes en forskuddsbetaling for en bestilling som del av en innkjøpsavtale. Når en leverandørfaktura er mottatt, kan forskuddsbetalingen brukes til å utligne leverandørgjeld fra leverandørfakturaen. Ved hjelp av den nye funksjonen kan systemet automatisk bruke bestillingsnumre på en leverandørfaktura til å slå opp tilsvarende forskuddsbetalinger når leverandørfakturaen importeres.
+Denne artikkelen beskriver muligheten for automatisk bruk av forskuddsbetalinger på leverandørfakturaer. Det kan opprettes en forskuddsbetaling for en bestilling som del av en innkjøpsavtale. Når en leverandørfaktura er mottatt, kan forskuddsbetalingen brukes til å utligne leverandørgjeld fra leverandørfakturaen. Ved hjelp av den nye funksjonen kan systemet automatisk bruke bestillingsnumre på en leverandørfaktura til å slå opp tilsvarende forskuddsbetalinger når leverandørfakturaen importeres.
 
 Hvis det blir funnet forskuddsbetalinger som kan brukes, legges linjer til de eksisterende fakturalinjene for å bruke forskuddsbetalingene. Det blir aldri tatt hensyn til forskuddsbetalingslinjene under fakturasamsvarsprosessen.
 

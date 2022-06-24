@@ -1,6 +1,6 @@
 ---
-title: Tilgjengelighetsfunksjoner og egenskaper
-description: Dette emnet gir informasjon om tilgjengelighetsfunksjonene og egenskapene i Microsoft Dynamics 365 Commerce.
+title: Funksjoner og egenskaper for tilgjengelighet
+description: Denne artikkelen gir informasjon om tilgjengelighetsfunksjonene og egenskapene i Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77c5b2e40c3dd16b95afe421d4515c45af0e81358940c29a14c03754c39a076e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8f4e73ebaf6dc3fc6eb97f69df8545c9ab9fa9df
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716282"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853908"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funksjoner og egenskaper for tilgjengelighet
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir informasjon om tilgjengelighetsfunksjonene og egenskapene i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir informasjon om tilgjengelighetsfunksjonene og egenskapene i Microsoft Dynamics 365 Commerce.
 
 Tilgjengelighetsfunksjoner og -egenskaper gir alle brukere de funksjonelle midlene til å få tilgang til og utføre handlinger slik at de kan oppnå målene sine. Dette brede utvalget av brukere kan kreve hjelpeverktøy for brukere med ulike nedsatte funksjoner.
 
 Ulike funksjoner i Dynamics 365 Commerce lar deg bygge nettstedet ditt slik at det inneholder hjelpefunksjoner. Når du utformer området, bør du vurdere områdene med tilgjengelighetsfunksjonalitet som er nevnt i [Microsoft Accessibility Center](https://www.microsoft.com/accessibility). 
 
-Dette emnet beskriver noen flere områder med tilgjengelighetsfunksjonalitet som du bør vurdere når du bruker Dynamics 365 Commerce.
+Denne artikkelen beskriver noen flere områder med tilgjengelighetsfunksjonalitet som du bør vurdere når du bruker Dynamics 365 Commerce.
 
 ## <a name="image-alt-text"></a>Bildealternativ tekst
 

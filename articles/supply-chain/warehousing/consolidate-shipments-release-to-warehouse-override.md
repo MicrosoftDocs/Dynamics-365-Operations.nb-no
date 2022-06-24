@@ -1,6 +1,6 @@
 ---
 title: Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres
-description: Dette emnet viser et scenario der én eller flere salgslinjer må frigis manuelt til lageret fra siden Frigi til lager, og den systemdefinerte policyen for forsendelseskonsolidering må overstyres før utgivelsen.
+description: Denne artikkelen viser et scenario der én eller flere salgslinjer må frigis manuelt til lageret fra siden Frigi til lager, og den systemdefinerte policyen for forsendelseskonsolidering må overstyres før utgivelsen.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8b1c8ac41fe0941c9bbfce20ce593eafe5699ef1
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 680941adeba1fc1cd54a02fb366d3d5903938d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878707"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden"></a>Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser et scenario der én eller flere salgslinjer må frigis manuelt til lageret fra siden **Frigi til lager**, og den systemdefinerte policyen for forsendelseskonsolidering må overstyres før utgivelsen. Det kan være nødvendig å overstyre en policy for forsendelseskonsolidering hvis en ordre som vanligvis ikke er konsolidert med åpne forsendelser, for eksempel skal konsolideres med åpne forsendelser.
+Denne artikkelen viser et scenario der én eller flere salgslinjer må frigis manuelt til lageret fra siden **Frigi til lager**, og den systemdefinerte policyen for forsendelseskonsolidering må overstyres før utgivelsen. Det kan være nødvendig å overstyre en policy for forsendelseskonsolidering hvis en ordre som vanligvis ikke er konsolidert med åpne forsendelser, for eksempel skal konsolideres med åpne forsendelser.
 
 I løpet av  skal du opprette et sett med salgsordrer og deretter overstyre standardinnstillingen for forsendelseskonsolidering før du frigir ordrene til lageret.
 
 ## <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
- i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.
+Scenarioet i denne artikkelen refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.
 
 ## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a>Definer policyer for forsendelseskonsolidering og produktfiltre
 

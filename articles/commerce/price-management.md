@@ -1,6 +1,6 @@
 ---
 title: Prisstyring av detaljsalg
-description: Dette emnet beskriver begrepene for å opprette og administrere salgspriser i Dynamics 365 Commerce.
+description: Denne artikkelen beskriver begrepene for å opprette og administrere salgspriser i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -14,29 +14,29 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16c948e6e14309f4e340bf622fac42b14e6ee591
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759291"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887016"
 ---
-# <a name="retail-sales-price-management"></a>Salgsprisbehandling for Retail
+# <a name="retail-sales-price-management"></a>Prisstyring av detaljsalg
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet inneholder informasjon om prosessen med å opprette og administrere salgspriser i Dynamics 365 Commerce. Det fokuserer på begrepene som er involvert i denne prosessen, og viser virkningen av konfigurasjonsalternativene for salgspriser.
+Denne artikkelen inneholder informasjon om prosessen med å opprette og administrere salgspriser i Dynamics 365 Commerce. Det fokuserer på begrepene som er involvert i denne prosessen, og viser virkningen av konfigurasjonsalternativene for salgspriser.
 
 ## <a name="terminology"></a>Terminologi
 
-Følgende termer brukes i dette emnet.
+Følgende termer brukes i denne artikkelen.
 
 | Semester | Definisjonen, bruk og merknader |
 |---|---|
-| Pris | Enhetsbeløpet som et produkt selges for i en salgsstedsklient eller på en salgsordre. I dette emnet refererer begrepet *pris* alltid til salgsprisen, ikke lagerprisen eller kostprisen. |
+| Pris | Enhetsbeløpet som et produkt selges for i en salgsstedsklient eller på en salgsordre. I denne artikkelen refererer begrepet *pris* alltid til salgsprisen, ikke lagerprisen eller kostprisen. |
 | Basispris | Prisen som er angitt i **Pris**-feltet for et frigitt produkt. |
 | Pris for forretningsavtale | Prisen som er angitt på et produkt eller en variant ved hjelp av en forretningsavtale av typen **Pris (salg)**. |
-| Beste pris | Når mer enn én pris eller rabatt kan brukes på et produkt, det minste prisbeløpet og/eller det største rabattbeløpet som gir lavest mulig nettobeløpet som kunden må betale. I dette emnet kalles begrepet beste pris alltid "beste pris." Den beste prisen er forskjellig fra, og bør ikke forveksles med **Beste pris**-opplistingsverdien for en rabatts samtidighetsmodus. |
+| Beste pris | Når mer enn én pris eller rabatt kan brukes på et produkt, det minste prisbeløpet og/eller det største rabattbeløpet som gir lavest mulig nettobeløpet som kunden må betale. I denne artikkelen kalles begrepet beste pris alltid "beste pris." Den beste prisen er forskjellig fra, og bør ikke forveksles med **Beste pris**-opplistingsverdien for en rabatts samtidighetsmodus. |
 
 ## <a name="price-groups"></a>Prisgrupper
 
@@ -97,7 +97,7 @@ Hvis du vil bruke prisingsprioritet for priser, må du tilordne en prisingsprior
 
 Funksjonen for prisingsprioritet ble innført for å støtte scenariet der en forhandler ønsker å bruke høyere priser i et bestemt sett med butikker. En forhandler har for eksempel definert regionale priser for østkysten av USA, men ønsker høyere priser for enkelte produkter i New York City-butikker, fordi det koster mer å selge enkelte produkter i byen og/eller fordi det lokale markedet vil bære en høyere pris.
 
-Som beskrevet i delen "Beste pris" i dette emnet, velger prissettingsmotoren vanligvis den laveste av to priser. Derfor kan forhandleren vanligvis ikke bruke den høyeste av to priser i en butikk som inneholder prisgrupper for både østkysten og New York. For å løse dette problemet før funksjonen for prisingsprioritet ble innført, måtte forhandleren definere priser for hvert produkt to ganger og ikke tilordne begge prisgrupper. Alternativt måtte forhandleren opprette ekstra prisgrupper for å isolere produktene som har høyere priser fra produkter som har de vanlige, lavere prisene.
+Som beskrevet i delen "Beste pris" i denne artikkelen, velger prissettingsmotoren vanligvis den laveste av to priser. Derfor kan forhandleren vanligvis ikke bruke den høyeste av to priser i en butikk som inneholder prisgrupper for både østkysten og New York. For å løse dette problemet før funksjonen for prisingsprioritet ble innført, måtte forhandleren definere priser for hvert produkt to ganger og ikke tilordne begge prisgrupper. Alternativt måtte forhandleren opprette ekstra prisgrupper for å isolere produktene som har høyere priser fra produkter som har de vanlige, lavere prisene.
 
 Med funksjonen for prisingsprioritet kan forhandleren imidlertid opprette en prisingsprioritet for butikkpriser som er høyere enn prisingsprioriteten for regionale priser. Forhandleren kan eventuelt opprette en prisingsprioritet bare for butikkpriser og holde regionale priser på standard prisingsprioritet, som er 0 (null). Begge oppsettene bidrar til å sikre at butikkpriser alltid brukes før regionale priser.
 
@@ -151,7 +151,7 @@ Ved å bruke journal for forretningsavtaler kan du opprette forretningsavtaler f
 
 En salgsprisforretningsavtale av typen **Tabell** er for en enkelt kunde som er angitt direkte i forretningsavtalen. Denne situasjonen er ikke et vanlig firma-til-kunde (B2C)-scenario. Men hvis det oppstår, bruker prissettingsmotoren **Tabell**-forretningsavtaler når den fastsetter prisen.
 
-En salgsprisforretningsavtale av typen **Gruppe** er typen som brukes oftest. Utenfor Commerce er salgsprisforretningsavtaler av typen **Gruppe** for en enkelt kundegruppe. I Commerce er imidlertid begrepet for en kundegruppe utvidet slik at det er en mer generell prisgruppe. En prisgruppe kan kobles til en kanal, en tilknytning, et fordelsprogram eller en katalog. Hvis du vil ha detaljert informasjon om prisgrupper, kan du se delen "Prisgrupper" tidligere i dette emnet.
+En salgsprisforretningsavtale av typen **Gruppe** er typen som brukes oftest. Utenfor Commerce er salgsprisforretningsavtaler av typen **Gruppe** for en enkelt kundegruppe. I Commerce er imidlertid begrepet for en kundegruppe utvidet slik at det er en mer generell prisgruppe. En prisgruppe kan kobles til en kanal, en tilknytning, et fordelsprogram eller en katalog. Hvis du vil ha detaljert informasjon om prisgrupper, kan du se delen "Prisgrupper" tidligere i denne artikkelen.
 
 > [!NOTE]
 > En forretningsavtalepris brukes alltid før basisprisen.

@@ -1,6 +1,6 @@
 ---
-title: Opprette et nytt produkt
-description: Dette emnet beskriver hvordan du oppretter et nytt delt produkt.
+title: Opprett et nytt produkt
+description: Denne artikkelen beskriver hvordan du oppretter et nytt delt produkt.
 author: t-benebo
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f509758ed062b756d99c93b2721c99dcdbae5155
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 75490661bf6f1e3dc0655cf9bd79316194c63820
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575590"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887348"
 ---
-# <a name="create-a-new-product"></a>Opprette et nytt produkt
+# <a name="create-a-new-product"></a>Opprett et nytt produkt
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter et nytt delt produkt. Dette utføres vanligvis av en produktdesigner. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.
+Denne artikkelen beskriver hvordan du oppretter et nytt delt produkt. Dette utføres vanligvis av en produktdesigner. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.
 
 
 ## <a name="create-a-product"></a>Opprette et produkt

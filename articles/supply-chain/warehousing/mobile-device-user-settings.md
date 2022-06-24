@@ -1,6 +1,6 @@
 ---
-title: Brukinnstillinger for mobilenhet
-description: Dette emnet beskriver hvordan du kan administrere brukerinnstillinger for mobilenhet for lagerarbeidere.
+title: Brukerinnstillinger for mobilenhet
+description: Denne artikkelen beskriver hvordan du kan administrere brukerinnstillinger for mobilenhet for lagerarbeidere.
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: 15f9ce1768e1ed9dc6f7e84d245082b46a7f122c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882351"
 ---
 # <a name="mobile-device-user-settings"></a>Brukinnstillinger for mobilenhet
 
@@ -41,7 +41,7 @@ Denne funksjonen kan hjelpe arbeidere med å komme i gang raskere hver gang de b
 
 ## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen for brukerinnstillinger for mobilenhet
 
-Du må aktivere funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* for systemet for å kunne bruke funksjonaliteten som beskrives i dette emnet. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Du må aktivere funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* for systemet for å kunne bruke funksjonaliteten som beskrives i denne artikkelen. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-and-manage-user-settings"></a>Opprette og administrere brukerinnstillinger
 

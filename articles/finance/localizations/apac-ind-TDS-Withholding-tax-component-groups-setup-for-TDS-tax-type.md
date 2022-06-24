@@ -1,6 +1,6 @@
 ---
 title: Definere komponentgrupper for kildeskatt for TDS-avgiftstypen
-description: Dette emnet forklarer hvordan du konfigurerer komponentgrupper for kildeskatt, for eksempel Leie og Oppdragstaker for TDS-avgiftstypen (Tax Deducted at Source).
+description: Denne artikkelen forklarer hvordan du konfigurerer komponentgrupper for kildeskatt, for eksempel Leie og Oppdragstaker for TDS-avgiftstypen (Tax Deducted at Source).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ad4ac16d2618a99ba8ea5c2da010eb8e96447775
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: e7b856be18618573408388fe0acbd702aeb4bcc3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726872"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896261"
 ---
 # <a name="set-up-withholding-tax-component-groups-for-the-tds-tax-type"></a>Definere komponentgrupper for kildeskatt for TDS-avgiftstypen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer komponentgrupper for kildeskatt, for eksempel **Leie** og **Oppdragstaker** for TDS-avgiftstypen (Tax Deducted at Source).
+Denne artikkelen forklarer hvordan du konfigurerer komponentgrupper for kildeskatt, for eksempel **Leie** og **Oppdragstaker** for TDS-avgiftstypen (Tax Deducted at Source).
 
 1. Gå til **Avgift \> Oppsett \> Kildeskatt \> Komponentgrupper for kildeskatt**.
 

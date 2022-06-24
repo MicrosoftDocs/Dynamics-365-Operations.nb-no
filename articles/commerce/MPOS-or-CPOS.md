@@ -1,6 +1,6 @@
 ---
 title: Velg mellom Store Commerce og Cloud POS
-description: Dette emnet beskriver de viktigste forskjellene mellom Store Commerce og Cloud POS, og beskriver forskjellige faktorer som forhandlere som implementerer Dynamics 365 Commerce, bør vurdere for å hjelpe dem med å gjøre det beste valget for kravene.
+description: Denne artikkelen beskriver de viktigste forskjellene mellom Store Commerce og Cloud POS, og beskriver forskjellige faktorer som forhandlere som implementerer Dynamics 365 Commerce, bør vurdere for å hjelpe dem med å gjøre det beste valget for kravene.
 author: jblucher
 ms.date: 04/21/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b62e1737bc9e3b9d9e25a7a88e693a9aece80776
-ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
+ms.openlocfilehash: 26f6e94b13b3058ac42c4c7b83dcf7179bae18e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "8629296"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854012"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Velg mellom Store Commerce og Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver de viktigste forskjellene mellom Store Commerce og Cloud POS, og beskriver forskjellige faktorer som forhandlere som implementerer Dynamics 365 Commerce, bør vurdere for å hjelpe dem med å gjøre det beste valget for kravene. Det gir implementerere mer bakgrunn, tips og retningslinjer for faktorer som de bør vurdere når de distribuerer Dynamics 365 Commerce. Ved å se gjennom og følge denne veiledningen som en del av distribusjonsprosessen, kan implementerere unngå problemer som kan påvirke brukerens tilfredshet eller ytelse.
+Denne artikkelen beskriver de viktigste forskjellene mellom Store Commerce og Cloud POS, og beskriver forskjellige faktorer som forhandlere som implementerer Dynamics 365 Commerce, bør vurdere for å hjelpe dem med å gjøre det beste valget for kravene. Det gir implementerere mer bakgrunn, tips og retningslinjer for faktorer som de bør vurdere når de distribuerer Dynamics 365 Commerce. Ved å se gjennom og følge denne veiledningen som en del av distribusjonsprosessen, kan implementerere unngå problemer som kan påvirke brukerens tilfredshet eller ytelse.
 
 ## <a name="insights"></a>Innsikt
 
@@ -44,7 +44,7 @@ Commerce støtter følgende salgsstedsalternativer:
 I alle tilfellene deler POS (Store Commerce og CPOS) den samme kjerneprogramkoden. Dette er viktig av følgende årsaker:
 
 - Brukergrensesnittet er konsekvent, uavhengig av plattform eller formfaktor.
-- De fleste funksjonene er de samme, uavhengig av plattform eller formfaktor. Det er imidlertid noen viktige forskjeller. Disse ulikhetene går frem i dette emnet.
+- De fleste funksjonene er de samme, uavhengig av plattform eller formfaktor. Det er imidlertid noen viktige forskjeller. Disse ulikhetene fremgår i denne artikkelen.
 - I hver butikk kan salgsstedsvariasjoner kombineres og kjøres samtidig. For hovedkassene kan for eksempel en forhandler bruke Store Commerce på datamaskiner som kjører Windows. Forhandleren kan imidlertid supplere disse kassene med leserbaserte terminaler eller mobilenheter.
 - Tilpassinger og utvidelser kan enkelt brukes på tvers av plattformer og formfaktorer. Fordi kjerneprogramkoden deles, kan de fleste tilpasningene implementeres én gang i stedet for flere ganger.
 

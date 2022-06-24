@@ -1,6 +1,6 @@
 ---
-title: Behandle, gjennomgå og postere rabatter
-description: Dette emnet beskriver hvordan du behandler rabattbehandlingsavtalene, beregner rabattene, går gjennom transaksjonene som er generert, posterer transaksjoner og gjennomgår posteringene.
+title: Behandle, gjennomgå og poster rabatter
+description: Denne artikkelen beskriver hvordan du behandler rabattbehandlingsavtalene, beregner rabattene, går gjennom transaksjonene som er generert, posterer transaksjoner og gjennomgår posteringene.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 524aec8025378391057275f77e31191f88e4a98b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: e63f02e5e93ec2ce8c321a20c2a0c5886edcbe42
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690281"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901944"
 ---
-# <a name="process-review-and-post-rebates"></a>Behandle, gjennomgå og postere rabatter
+# <a name="process-review-and-post-rebates"></a>Behandle, gjennomgå og poster rabatter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du behandler rabattbehandlingsavtalene, beregner rabattene, går gjennom transaksjonene som er generert, posterer transaksjoner og gjennomgår posteringene.
+Denne artikkelen beskriver hvordan du behandler rabattbehandlingsavtalene, beregner rabattene, går gjennom transaksjonene som er generert, posterer transaksjoner og gjennomgår posteringene.
 
 ## <a name="change-the-status-of-a-deal"></a>Endre status for en avtale
 
@@ -45,7 +45,7 @@ Gå til **Rabattbehandling \> Periodiske oppgaver \> Beregn FIFO-innkjøpspriser
 
 Du kan opprette salgsordrer eller bestillinger som har kildetransaksjoner enten før eller etter at du har opprettet en gjeldende rabattbehandlingsavtale.
 
-Du kan definere hver avtalelinje slik at den automatisk oppretter en rabattprovisjon ved å postere leveringen eller fakturaen for en salgsordre eller bestilling. Angi **Transaksjonstype**-feltet for avtalelinjen til *Levering* eller *Faktura*, og sett **Behandle ved postering**-alternativet ved postering til *Ja*. Hvis **Transaksjonstype**-feltet er satt til *Ordre*, er behandling ved postering deaktivert. For kildetransaksjoner som ble opprettet etter at en avtale ble aktivert, kan du fremdeles behandle provisjonen slik det beskrives i delen [Behandle rabattbehandlingsavtaler](#process-deals) senere i dette emnet.
+Du kan definere hver avtalelinje slik at den automatisk oppretter en rabattprovisjon ved å postere leveringen eller fakturaen for en salgsordre eller bestilling. Angi **Transaksjonstype**-feltet for avtalelinjen til *Levering* eller *Faktura*, og sett **Behandle ved postering**-alternativet ved postering til *Ja*. Hvis **Transaksjonstype**-feltet er satt til *Ordre*, er behandling ved postering deaktivert. For kildetransaksjoner som ble opprettet etter at en avtale ble aktivert, kan du fremdeles behandle provisjonen slik det beskrives i delen [Behandle rabattbehandlingsavtaler](#process-deals) senere i denne artikkelen.
 
 ### <a name="enable-price-details"></a>Aktiver prisdetaljer
 

@@ -1,6 +1,6 @@
 ---
 title: Eksempelscenarier for syklustelling
-description: Dette emnet inneholder en samling scenarier som utforsker funksjonene for syklustelling i Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen inneholder en samling scenarier som utforsker funksjonene for syklustelling i Microsoft Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -11,24 +11,24 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 60be945035570634c572baaa37ae0d02e41dd0be
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 90a3f132a96081b56ab60f5b0ba5cc328b820879
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674708"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899331"
 ---
 # <a name="cycle-counting-example-scenarios"></a>Eksempelscenarier for syklustelling
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder en samling scenarier som utforsker funksjonene for syklustelling i Microsoft Dynamics 365 Supply Chain Management. Den beskriver først kravene for ditt eksisterende Supply Chain Management-miljø. Deretter forklarer den hvordan du konfigurerer syklustelling og beskriver alle syklustellingsstadiene. Når du er ferdig, har du en god forståelse av syklustelling, inkludert veiledet syklustelling, blind syklustelling, spotsyklustelling, syklustellingsterskler og syklustellingsplaner.
+Denne artikkelen inneholder en samling scenarier som utforsker funksjonene for syklustelling i Microsoft Dynamics 365 Supply Chain Management. Den beskriver først kravene for ditt eksisterende Supply Chain Management-miljø. Deretter forklarer den hvordan du konfigurerer syklustelling og beskriver alle syklustellingsstadiene. Når du er ferdig, har du en god forståelse av syklustelling, inkludert veiledet syklustelling, blind syklustelling, spotsyklustelling, syklustellingsterskler og syklustellingsplaner.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
 ### <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
-Hvert scenario i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres for Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du går gjennom scenarioene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten (firma) til **USMF** før du begynner.
+Hvert scenario i denne artikkelen refererer til verdier og poster som er inkludert i standard demodata som leveres for Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du går gjennom scenarioene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten (firma) til **USMF** før du begynner.
 
 ### <a name="turn-on-support-for-the-warehouse-management-mobile-app"></a>Aktivere støtte for mobilappen Warehouse Management
 
@@ -158,7 +158,7 @@ Følg denne fremgangsmåten når du skal opprette syklustellingsarbeid for varel
 
 Når du har opprettet syklustellingsarbeid, utfører du arbeidet ved å telle varene på en lagerlokasjon, og deretter bruker du en mobilenhet til å angi resultatene i Supply Chain Management. Følg denne fremgangsmåten for å bruke syklusopptellingsarbeid i mobilappen Warehouse Management.
 
-1. Logg deg på mobilappen Warehouse Management som arbeidsbrukeren du konfigurerte i delen [Klargjøre demodata for scenarier](#prepare-demo-data) tidligere i dette emnet. For eksempel i dette emnet heter brukeren *Julia Funderburk* og er definert for lager *61*. (USMF-demodataene bør la deg logge deg på som denne arbeidsbrukeren ved å angi *61* som bruker-ID og *1* som passord.)
+1. Logg deg på mobilappen Warehouse Management som arbeidsbrukeren du konfigurerte i delen [Klargjøre demodata for scenarier](#prepare-demo-data) tidligere i denne artikkelen. For eksempel i denne artikkelen heter brukeren *Julia Funderburk* og er definert for lager *61*. (USMF-demodataene bør la deg logge deg på som denne arbeidsbrukeren ved å angi *61* som bruker-ID og *1* som passord.)
 1. I hovedmenyen velger du **Lager**.
 1. Velg **Veiledet syklustelling** på **Lager**-menyen.
 1. Velg **Antall**-feltet, angi *9* ved å bruke talltastaturet, og velg deretter **OK** (hakesymbolknappen).
@@ -227,7 +227,7 @@ Før blind syklustelling kan forekomme, må du opprette arbeid. Følg denne frem
 
 Når du hra opprettet syklustellingsarbeider, følger du disse trinnene for å utføre arbeidet i mobilappen Warehouse Management.
 
-1. Logg deg på mobilappen Warehouse Management som arbeidsbrukeren du konfigurerte i delen [Klargjøre demodata for scenarier](#prepare-demo-data) tidligere i dette emnet. For eksempel i dette emnet heter brukeren *Julia Funderburk* og er definert for lager *61*. (USMF-demodataene bør la deg logge deg på som denne arbeidsbrukeren ved å angi *61* som bruker-ID og *1* som passord.)
+1. Logg deg på mobilappen Warehouse Management som arbeidsbrukeren du konfigurerte i delen [Klargjøre demodata for scenarier](#prepare-demo-data) tidligere i denne artikkelen. For eksempel i denne artikkelen heter brukeren *Julia Funderburk* og er definert for lager *61*. (USMF-demodataene bør la deg logge deg på som denne arbeidsbrukeren ved å angi *61* som bruker-ID og *1* som passord.)
 1. I hovedmenyen velger du **Lager**.
 1. Velg **Blind syklustelling** på **Lager**-menyen.
 1. Velg **Sone-ID**-feltet, angi *BULK06*, og velg deretter **OK** (hakesymbolknappen).
@@ -259,7 +259,7 @@ Lagerbeholdningsposten angir at det er et lagerbeholdning av varen *L0101* på l
 
 Følg denne fremgangsmåten for å bruke syklusopptellingsarbeid i mobilappen Warehouse Management.
 
-1. Logg deg på mobilappen Warehouse Management som arbeidsbrukeren du konfigurerte i delen [Klargjøre demodata for scenarier](#prepare-demo-data) tidligere i dette emnet. For eksempel i dette emnet heter brukeren *Julia Funderburk* og er definert for lager *61*. (USMF-demodataene bør la deg logge deg på som denne arbeidsbrukeren ved å angi *61* som bruker-ID og *1* som passord.)
+1. Logg deg på mobilappen Warehouse Management som arbeidsbrukeren du konfigurerte i delen [Klargjøre demodata for scenarier](#prepare-demo-data) tidligere i denne artikkelen. For eksempel i denne artikkelen heter brukeren *Julia Funderburk* og er definert for lager *61*. (USMF-demodataene bør la deg logge deg på som denne arbeidsbrukeren ved å angi *61* som bruker-ID og *1* som passord.)
 1. I hovedmenyen velger du **Lager**.
 1. Velg **Spottelling** på **Lager**-menyen.
 1. Velg **Lokasjon**-feltet, angi *01A02R2S1B*, og velg deretter **OK** (hakesymbolknappen).

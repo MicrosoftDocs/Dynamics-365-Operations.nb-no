@@ -1,6 +1,6 @@
 ---
 title: Opprette en rekvisisjon for forbruk
-description: Dette emnet beskriver fremgangsmåten for å opprette en rekvisisjon.
+description: Denne artikkelen beskriver fremgangsmåten for å opprette en rekvisisjon.
 author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5881e8a415ad37ff4bdb61b1043901c0b87ef743
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b4fc4a9f0dbd5c413300d27640512df69df30122
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671133"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888477"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Opprette en rekvisisjon for forbruk
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver fremgangsmåten for å opprette en rekvisisjon. Den viser forskjellige måter å søke etter produkter på i innkjøpskatalogen og hvordan du legger til et produkt som ikke finnes i katalogen. Før du starter denne fremgangsmåten, må en innkjøpspolicy være definert med Forbruk som standardtype for rekvisisjon. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Prosedyren kan bare utføres av en brukerprofil som er definert som arbeider. Denne oppgaven vil vanligvis utføres av en ansatt. Med sikkerhetsrollen som **ansatt** kan du utføre oppgavene, eller hvis du bruker USMF, kan du logge inn med **Alicia**.
+Denne artikkelen beskriver fremgangsmåten for å opprette en rekvisisjon. Den viser forskjellige måter å søke etter produkter på i innkjøpskatalogen og hvordan du legger til et produkt som ikke finnes i katalogen. Før du starter denne fremgangsmåten, må en innkjøpspolicy være definert med Forbruk som standardtype for rekvisisjon. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Prosedyren kan bare utføres av en brukerprofil som er definert som arbeider. Denne oppgaven vil vanligvis utføres av en ansatt. Med sikkerhetsrollen som **ansatt** kan du utføre oppgavene, eller hvis du bruker USMF, kan du logge inn med **Alicia**.
 
 
 ## <a name="create-a-new-requisition"></a>Opprett en ny rekvisisjon

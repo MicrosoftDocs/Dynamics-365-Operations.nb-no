@@ -1,6 +1,6 @@
 ---
 title: Tilkoblede programmer
-description: Dette emnet forklarer hvordan du konfigurerer tilkoblede programmer i elektronisk fakturering.
+description: Denne artikkelen forklarer hvordan du konfigurerer tilkoblede programmer i elektronisk fakturering.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59b67589139c0ce332716acf998825c6a024bded
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 7a0a9c19009c49b80ca8c182c31592c1a713a2aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371616"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906294"
 ---
 # <a name="connected-applications"></a>Tilkoblede programmer
 
@@ -39,7 +39,7 @@ Det er nyttig å ha parameterne for Finance eller Supply Chain Management tilgje
 3. Velg **Tilkoblede programmer** i handlingsruten på siden **Miljøoppsett**.
 4. Velg **Ny** for å opprette et tilkoblet program.
 5. I **Navn**-feltet angir du navnet på programmet som skal kobles til.
-6. I **Type**-feltet velger du **Dynamics 365 Finance**.
+6. I feltet **Type** velger du **Dynamics 365 Finance**.
 7. I **Program**-feltet angir du nettadressen til miljøet som skal kobles til.
 8. I **Leier**-feltet angir du leieren for miljøet.
 9. Velg **Lagre**.

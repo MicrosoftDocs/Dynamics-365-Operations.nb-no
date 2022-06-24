@@ -1,6 +1,6 @@
 ---
 title: Negative dager og dynamiske negative dager
-description: Dette emnet inneholder informasjon om negative dager og dynamiske negative dager og hvordan du kan bruke dem til å hjelpe virksomheten.
+description: Denne artikkelen inneholder informasjon om negative dager og dynamiske negative dager og hvordan du kan bruke dem til å hjelpe virksomheten.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
@@ -10,27 +10,27 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d88517c99a274911e8abd8de4bcd318139822a5
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d83aab9b7d3d30d519e8b313a57f2802de3cfb72
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469876"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846134"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negative dager og dynamiske negative dager
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om negative dager og dynamiske negative dager og hvordan du kan bruke dem til å hjelpe virksomheten. *Horisonten for negative dager* representerer hvor mange dager du er villig til å vente før du bestiller ny etterfylling, når du har en negativ beholdning.
+Denne artikkelen inneholder informasjon om negative dager og dynamiske negative dager og hvordan du kan bruke dem til å hjelpe virksomheten. *Horisonten for negative dager* representerer hvor mange dager du er villig til å vente før du bestiller ny etterfylling, når du har en negativ beholdning.
 
-I dette emnet lærer du følgende:
+I denne artikkelen lærer du følgende:
 
 - Hvordan planlagte ordrer opprettes
 - Korrelasjonen mellom horisonten for negative dager og varens leveringstid
 - Hvordan horisonten for negative dager beregnes, og hvordan varens leveringstid tas med i beregningen
 - Hvordan du tolker [forslag for å forbedre kjøretiden for planlegging av materialbehov (MRP) (hovedplanlegging)](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) som er knyttet til negative dager
 
-Dette emnet bruker tre hypotetiske scenarier som kan hjelpe deg å forstå denne informasjonen. Forskjellen mellom scenariene har å gjøre med når du får behov: før, under eller etter varens leveringstidsperiode.
+Denne artikkelen bruker tre hypotetiske scenarier som kan hjelpe deg å forstå denne informasjonen. Forskjellen mellom scenariene har å gjøre med når du får behov: før, under eller etter varens leveringstidsperiode.
 
 ## <a name="scenario-1-you-get-demand-before-the-items-lead-time-period"></a>Scenario 1: Du får behov før varens leveringstidsperiode
 
@@ -93,7 +93,7 @@ Illustrasjonen nedenfor viser en grafisk visning av hva som skjer i dette tilfel
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Tilfelle E: Bruke både antall negative dager som er større enn varens leveringstid, og horisonten for dynamiske negative dager
 
-Hvis du setter antall negative dager til et tall som er større enn varens leveringstid, og hvis du også bruker horisonten for dynamiske negative dager, er horisonten for dynamiske negative dager 6 + 6 + 0 = 12 dager. Denne fremgangsmåten kan gi en svært lang horisont som MRP må søke etter resultater i. Hvis du vil ha informasjon om hvordan tilfellet E er knyttet til en situasjon der du angir en lang horisont for negative dager, kan du se [Konklusjon](#conclusion)-delen i dette emnet.
+Hvis du setter antall negative dager til et tall som er større enn varens leveringstid, og hvis du også bruker horisonten for dynamiske negative dager, er horisonten for dynamiske negative dager 6 + 6 + 0 = 12 dager. Denne fremgangsmåten kan gi en svært lang horisont som MRP må søke etter resultater i. Hvis du vil ha informasjon om hvordan tilfellet E er knyttet til en situasjon der du angir en lang horisont for negative dager, kan du se [Konklusjon](#conclusion)-delen i denne artikkelen.
 
 ## <a name="scenario-2-you-get-demand-during-the-items-lead-time-period"></a>Scenario 2: Du får behov i varens leveringstidsperiode
 
@@ -142,7 +142,7 @@ Hvis du setter negative dager til **0** (null) og bare bruker horisonten for dyn
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Tilfelle E: Bruke både antall negative dager som er større enn varens leveringstid, og horisonten for dynamiske negative dager
 
-Hvis du setter antall negative dager til et tall som er større enn varens leveringstid, og hvis du også bruker horisonten for dynamiske negative dager, er horisonten for dynamiske negative dager 6 + 6 - 4 = 8 dager. Denne fremgangsmåten kan gi en svært lang horisont som MRP må søke etter resultater i. Hvis du vil ha informasjon om hvordan tilfellet E er knyttet til en situasjon der du angir en lang horisont for negative dager, kan du se [Konklusjon](#conclusion)-delen i dette emnet.
+Hvis du setter antall negative dager til et tall som er større enn varens leveringstid, og hvis du også bruker horisonten for dynamiske negative dager, er horisonten for dynamiske negative dager 6 + 6 - 4 = 8 dager. Denne fremgangsmåten kan gi en svært lang horisont som MRP må søke etter resultater i. Hvis du vil ha informasjon om hvordan tilfellet E er knyttet til en situasjon der du angir en lang horisont for negative dager, kan du se [Konklusjon](#conclusion)-delen i denne artikkelen.
 
 ## <a name="scenario-3-you-get-demand-after-the-items-lead-time-period"></a>Scenario 3: Du får behov etter varens leveringstidsperiode
 
@@ -204,7 +204,7 @@ Dette tilfellet er det samme som tilfelle E for scenario 1 og 2. Det har stort s
 
 ## <a name="conclusion"></a>Konklusjon
 
-Som de tre scenariene i dette emnet viser, er det lurt å sette de negative dagene til et tall som er større enn leveringstiden for varene i dekningsgruppen. Det er også lurt å bruke bare dynamiske negative dager, og å sette de negative dagene til antallet dager du er villig å vente før du bestiller ny etterfylling, når du har negativ beholdning (med andre ord hvor mange dager du er villig til å forsinke behovet ytterligere). Varer i samme dekningsgruppe bør i tillegg ha lignende leveringstider.
+Som de tre scenariene i denne artikkelen viser, er det lurt å sette de negative dagene til et tall som er større enn leveringstiden for varene i dekningsgruppen. Det er også lurt å bruke bare dynamiske negative dager, og å sette de negative dagene til antallet dager du er villig å vente før du bestiller ny etterfylling, når du har negativ beholdning (med andre ord hvor mange dager du er villig til å forsinke behovet ytterligere). Varer i samme dekningsgruppe bør i tillegg ha lignende leveringstider.
 
 Hvis du setter antall negative dager til **0** (null) og ikke bruker dynamiske negative dager, oppretter MRP alltid en ny planlagt ordre for å oppfylle behov. I denne situasjonen er det viktig at du arbeider med handlingsmeldingene for å være sikker på at beholdningen ikke hoper seg opp.
 

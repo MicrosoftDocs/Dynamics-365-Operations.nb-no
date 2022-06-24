@@ -1,6 +1,6 @@
 ---
 title: Konfigurere parametere for automatisering av innkrevingsprosess
-description: Dette emnet beskriver parameterne som påvirker automatiserte innkrevingsprosesser, og gir retningslinjer for hvordan du definerer dem, slik at den automatiserte prosessen gjenspeiler dine hensikter og forventninger.
+description: Denne artikkelen beskriver parameterne som påvirker automatiserte innkrevingsprosesser, og gir retningslinjer for hvordan du definerer dem, slik at den automatiserte prosessen gjenspeiler dine hensikter og forventninger.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: e7a7e048a371fc90456368206b91c29c4b1264d5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c5d0f801c47ef2d98d8ba410dc593bd7640839c1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734403"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900049"
 ---
 # <a name="configure-parameters-for-collection-process-automation"></a>Konfigurere parametere for automatisering av innkrevingsprosess
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver parameterne som påvirker automatiserte innkrevingsprosesser, og gir retningslinjer for hvordan du definerer dem, slik at den automatiserte prosessen gjenspeiler dine hensikter og forventninger. Hvis du vil ha informasjon om hvordan du automatiserer innkrevingsprosesser, kan du se [Automatisering av innkrevingsprosess](collections-process-automate.md).
+Denne artikkelen beskriver parameterne som påvirker automatiserte innkrevingsprosesser, og gir retningslinjer for hvordan du definerer dem, slik at den automatiserte prosessen gjenspeiler dine hensikter og forventninger. Hvis du vil ha informasjon om hvordan du automatiserer innkrevingsprosesser, kan du se [Automatisering av innkrevingsprosess](collections-process-automate.md).
 
 ## <a name="general"></a>Generelt
 Angi et nummer i **Prosent av kunder per satsvis oppgave** for å bestemme antallet satsvise oppgaver per automatisk prosess. Sett **Poster purringer automatisk** til **Ja**, slik at purrehandlingstypen posterer brevet under automatisering. Sett **Opprett aktiviteter for automatisering** til **Ja** for å opprette og lukke aktiviteter for handlingstyper som ikke er aktiviteter, for å vise alle automatiserte trinn som er utført på en konto. Definer antall dager innkrevingshistorikk skal lagres i **Dager for å beholde automatisering av innkrevingsprosesser**. Når en faktura kommer til det siste trinnet i innkrevingsprosessen, brukes den ikke til å opprette fremtidige handlingstyper for **Utelat faktura etter aktivering av siste prosesstrinn** er satt til **Ja**. Den nest eldste fakturaen bestemmer neste trinn for automatisk prosess for å sikre at handlingene for innkreving av automatisk behandling fortsetter. 

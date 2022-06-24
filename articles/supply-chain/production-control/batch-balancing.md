@@ -1,6 +1,6 @@
 ---
 title: Partibalansering
-description: Dette emnet beskriver prosessen for partibalansering.
+description: Denne artikkelen beskriver prosessen for partibalansering.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a9e69b4d9213e57e5a920c7adda934ba845d17410c17d9c8a6356d717870ac23
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780082"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856055"
 ---
 # <a name="batch-balancing"></a>Partibalansering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan prosessen for partibalansering støttes.
+Denne artikkelen beskriver hvordan prosessen for partibalansering støttes.
 
 Hvis du vil ha mer informasjon, kan du se en [video om partibalansering](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -149,7 +149,7 @@ Balansert antall fyllingrediens beregnes som differansen mellom partistørrelsen
 Prosessen for partibalansering utføres fra siden **Partibalansering**.
 Velg **Kostnadsstyring \> Partiordrer**, og velg deretter **Partibalansering** i **Prosess**-fanen. Partibalansering er tilgjengelig for partiordrer som har status **Startet**.
 
-Partibalansering kan vanligvis bare brukes for partiordrer hvis formelen har minst én formellinje der **Ingredienstype** er *Aktiv*. (For unntaket på denne regelen kan du se delen "Partiordrer som ikke er tilgjengelige for partibalansering" senere i dette emnet.)
+Partibalansering kan vanligvis bare brukes for partiordrer hvis formelen har minst én formellinje der **Ingredienstype** er *Aktiv*. (For unntaket på denne regelen kan du se delen "Partiordrer som ikke er tilgjengelige for partibalansering" senere i denne artikkelen.)
 
 Prosessen for partibalansering kan deles inn i to delprosesser:
 

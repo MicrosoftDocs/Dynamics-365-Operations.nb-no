@@ -1,6 +1,6 @@
 ---
 title: Tidsplan for konsumprisindeks
-description: Dette emnet beskriver hvordan du oppretter listen over CPI-planer (Consumer Price Index – konsumprisindeks) som du henter fra Internett for å bidra til å fastslå eskaleringstillegget i abonnementsfakturering.
+description: Denne artikkelen beskriver hvordan du oppretter listen over CPI-planer (Consumer Price Index – konsumprisindeks) som du henter fra Internett for å bidra til å fastslå eskaleringstillegget i abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 54114fae25565ed1aae7056ef9be5a4a159291e9
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: f08b79ee00baab3713d9ccc24a7595b1de7a7768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686526"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904880"
 ---
 # <a name="consumer-price-index-schedule"></a>Tidsplan for konsumprisindeks
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter, sletter, går gjennom og behandler CPI-planer (konsumprisindeks). En CPI-plan kan brukes til å fastslå prisene for forbruksvarer og -tjenester som du legger til som fakturaplanlinjer. CPI-planen kan deretter brukes med eskalerings- og rabattpriser i en faktureringsplan, eller den kan behandles manuelt for å oppdatere fakturabeløpene i faktureringsplaner. Du kan angi CPI-planer manuelt, eller du kan importere dem ved å bruke den sammensatte enheten for CPI-plan.
+Denne artikkelen beskriver hvordan du oppretter, sletter, går gjennom og behandler CPI-planer (konsumprisindeks). En CPI-plan kan brukes til å fastslå prisene for forbruksvarer og -tjenester som du legger til som fakturaplanlinjer. CPI-planen kan deretter brukes med eskalerings- og rabattpriser i en faktureringsplan, eller den kan behandles manuelt for å oppdatere fakturabeløpene i faktureringsplaner. Du kan angi CPI-planer manuelt, eller du kan importere dem ved å bruke den sammensatte enheten for CPI-plan.
 
 Hvis du vil legge til en CPI-plan, følger du disse trinnene.
 

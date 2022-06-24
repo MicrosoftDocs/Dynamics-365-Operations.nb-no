@@ -1,6 +1,6 @@
 ---
 title: Permisjonstype
-description: Dette emnet inneholder informasjon og en eksempelspørring for permisjonstype-enheten i Dynamics 365 Human Resources.
+description: Denne artikkelen inneholder informasjon og en eksempelspørring for permisjonstype-enheten i Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dced58e6e9f6c20578e4582e4cf39162622713e7
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 6e7905989df92e943b86f86194c87dcb2a7b1446
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8893793"
 ---
 # <a name="leave-type"></a>Permisjonstype
 
@@ -27,9 +27,9 @@ ms.locfileid: "8069913"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver permisjonstype-enheten for Dynamics 365 Human Resources.
+Denne artikkelen beskriver permisjonstype-enheten for Dynamics 365 Human Resources.
 
-### <a name="description"></a>beskrivelse
+### <a name="description"></a>Beskrivelse
 
 Denne enheten gir informasjon for en gitt permisjonstype.
 

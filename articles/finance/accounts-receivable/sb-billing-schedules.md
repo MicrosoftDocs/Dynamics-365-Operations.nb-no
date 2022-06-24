@@ -1,6 +1,6 @@
 ---
 title: Opprett faktureringsplaner
-description: Dette emnet forklarer hvordan du oppretter, sletter og redigerer faktureringsplaner.
+description: Denne artikkelen forklarer hvordan du oppretter, sletter og redigerer faktureringsplaner.
 author: JodiChristiansen
 ms.date: 02/09/2022
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: ed31dd96b0115610cfb74aed69f1acc1055bfe56
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1248799f92dc6cbce8528a53cc8a3012d2a67b3c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690452"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903399"
 ---
 # <a name="create-billing-schedules"></a>Opprett faktureringsplaner
 
@@ -83,7 +83,7 @@ Følg denne fremgangsmåten hvis du vil fjerne en vare fra en faktureringsplan.
 2. Velg linjen du vil slette, i hurtigfanen **Faktureringsplanlinjer**, og velg deretter **Fjern**.
 3. Velg **Lagre**.
 
-Resten av dette emnet beskriver handlingene og detaljene som er tilgjengelige for linjer i hurtigfanen **Faktureringsplanlinjer**.
+Resten av denne artikkelen beskriver handlingene og detaljene som er tilgjengelige for linjer i hurtigfanen **Faktureringsplanlinjer**.
 
 ## <a name="billing-schedule-line-actions"></a>Handlinger for faktureringsplanlinjer
 

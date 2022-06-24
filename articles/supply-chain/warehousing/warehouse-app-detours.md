@@ -1,6 +1,6 @@
 ---
 title: Konfigurere omveier for trinn i menyelementer for mobilenheter
-description: Dette emnet beskriver hvordan du konfigurerer omveier for menyelementer, slik at arbeidere kan endre den gjeldende oppgaven, utføre en annen oppgave og deretter gå tilbake til den opprinnelige oppgaven uten å miste noe informasjon.
+description: Denne artikkelen beskriver hvordan du konfigurerer omveier for menyelementer, slik at arbeidere kan endre den gjeldende oppgaven, utføre en annen oppgave og deretter gå tilbake til den opprinnelige oppgaven uten å miste noe informasjon.
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
@@ -11,21 +11,21 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920354"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863599"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveier for trinn i menyelementer for mobilenheter
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Funksjonene som er beskrevet i dette emnet, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
+> Funksjonene som er beskrevet i denne artikkelen, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
 
-Dette emnet beskriver hvordan du konfigurerer omveier for menyelementer, slik at arbeidere kan endre den gjeldende oppgaven, utføre en annen oppgave og deretter gå tilbake til den opprinnelige oppgaven uten å miste noe informasjon.
+Denne artikkelen beskriver hvordan du konfigurerer omveier for menyelementer, slik at arbeidere kan "parkere" den gjeldende oppgaven, utføre en annen oppgave og deretter gå tilbake til den opprinnelige oppgaven uten å miste noe informasjon.
 
 En omvei er et separat menyelement som kan åpnes fra et trinn i en hovedoppgave. På slutten av omveien returneres arbeideren til stedet der de forlot hovedoppgaven. Under konfigurasjonen angir du menyelementet som skal fungere som en omvei. Du velger også hvilke feltverdier fra hovedoppgaven som automatisk skal videresendes (kopieres) til omveien og angis der. Derfor må du forstå hvor i oppgaveflyten du vil at omveien skal være tilgjengelig for ansatte. Du må også sørge for at informasjonen som må kopieres til omveien, er tilgjengelig for det trinnet i oppgaveflyten.
 
@@ -46,7 +46,7 @@ Før du kan definere omveier for trinn i menyelementer på mobilenheten, må du 
     - **Modul:** *Lagerstyring*
     - **Funksjonsnavn:** *Omveier i Warehouse Management-appen*
 
-    Denne funksjonen er funksjonen som er beskrevet i dette emnet.
+    Denne funksjonen er funksjonen som er beskrevet i denne artikkelen.
 
 1. Oppdater feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobile device \> Navn på lagerappfelt**, og velg **Opprett standardoppsett**. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gjenta det forrige trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management.
@@ -57,7 +57,7 @@ Bruk fremgangsmåten nedenfor til å definere en omvei fra en menyspesifikk over
 
 1. Opprett en menyspesifikk overstyring for den relevante menyen og trinnet som beskrevet i [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md).
 1. Finn kombinasjonen av verdier for **Trinn-ID** og **Menyelementnavn** som du ønsker å redigere, og velg deretter verdien i kolonnen **Trinn-ID**.
-1. I hurtigfanen **Tilgjengelige omveier (menyelementer)** på siden som vises, kan du angi menyelementet som skal fungere som en omvei. Du kan også velge hvilke feltverdier fra hovedoppgaven som automatisk skal kopieres til og fra omveien. Hvis du vil ha eksempler som viser hvordan du bruker disse innstillingene, kan du se scenarioene senere i dette emnet.
+1. I hurtigfanen **Tilgjengelige omveier (menyelementer)** på siden som vises, kan du angi menyelementet som skal fungere som en omvei. Du kan også velge hvilke feltverdier fra hovedoppgaven som automatisk skal kopieres til og fra omveien. Hvis du vil ha eksempler som viser hvordan du bruker disse innstillingene, kan du se scenarioene senere i denne artikkelen.
 
 ## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Eksempelscenario 1: Salgsplukking der en lokasjonsforespørsler fungerer som en omvei
 

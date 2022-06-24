@@ -1,6 +1,6 @@
 ---
 title: Automatisk frigivelse av forsendelse for direkteoverføring
-description: Dette emnet beskriver en kryssoverføringsstrategi som lar deg automatisk frigi en behovsordre til lageret når produksjonsordren som leverer behovsantallet, rapporteres som ferdig, slik at antallet flyttes direkte fra produksjonsutleveringsstedet til den utgående lokasjonen.
+description: Denne artikkelen beskriver en kryssoverføringsstrategi som lar deg automatisk frigi en behovsordre til lageret når produksjonsordren som leverer behovsantallet, rapporteres som ferdig, slik at antallet flyttes direkte fra produksjonsutleveringsstedet til den utgående lokasjonen.
 author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 34283422bafaeabef9ac454957b60db84eb5a9c7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903789"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse av forsendelse for direkteoverføring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver en direkteoverføringsstrategi som lar deg automatisk frigi en behovsordre til lageret når produksjonsordren som leverer behovsantallet, rapporteres som fullført. På denne måten flyttes antallet som kreves for å fullføre behovsordren, direkte fra produksjonsutleveringslokasjonen til den utgående lokasjonen.
+Denne artikkelen beskriver en direkteoverføringsstrategi som lar deg automatisk frigi en behovsordre til lageret når produksjonsordren som leverer behovsantallet, rapporteres som fullført. På denne måten flyttes antallet som kreves for å fullføre behovsordren, direkte fra produksjonsutleveringslokasjonen til den utgående lokasjonen.
 
 Direkteoverføring er en lagerhåndteringsflyt der antallet som kreves for å oppfylle en utgående ordre, dirigeres til ordrens utleveringsport eller oppsamlingsområde fra lokasjonen der den inngående bestillingen ble mottatt. (Den inngående ordren kan være en bestilling, en overføringsordre eller en produksjonsordre.) Mens den avanserte direkteoverføringfunksjonen støtter alle forsynings- og behovsordrer, og det krever at det utgående behovet frigis før direkteoverføringsmuligheten identifiseres, har funksjonen for automatisk frigivelse av forsendelse disse egenskapene:
 

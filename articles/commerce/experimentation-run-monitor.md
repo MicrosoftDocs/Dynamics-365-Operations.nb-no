@@ -1,6 +1,6 @@
 ---
 title: Kjør og Overvåk et eksperiment
-description: Dette emnet beskriver hvordan du kjører og overvåker et eksperiment i en tredjepartstjeneste. Det beskriver også hvordan du endrer variasjoner etter at eksperimentet er startet.
+description: Denne artikkelen beskriver hvordan du kjører og overvåker et eksperiment i en tredjepartstjeneste. Det beskriver også hvordan du endrer variasjoner etter at eksperimentet er startet.
 author: sushma-rao
 ms.date: 10/21/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cd8864caec23f6aca30badba1a79da31301a0ddb92a74bb4a6fe027214d0f8d6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9f62c97b46fa00791de52b2804dad5edde7f625
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777578"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909589"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Kjør og Overvåk et eksperiment
 
-Dette emnet beskriver hvordan du kjører og overvåker eksperimentet i en tredjepartsapp, og om nødvendig endre variasjoner. Før du fullfører trinnene i dette emnet, må du først [publisere](experimentation-preview-publish.md) eksperimentet i Commerce. 
+Denne artikkelen beskriver hvordan du kjører og overvåker eksperimentet i en tredjepartsapp, og om nødvendig endre variasjoner. Før du fullfører trinnene i denne artikkelen, må du først [publisere](experimentation-preview-publish.md) eksperimentet i Commerce. 
 
-Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
+Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate artikler.
 
 [ ![Brukerreise for eksperimentering – kjøre og overvåke.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 

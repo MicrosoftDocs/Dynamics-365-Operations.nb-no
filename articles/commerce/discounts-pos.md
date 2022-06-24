@@ -1,6 +1,6 @@
 ---
-title: Vise rabatter i salgssted
-description: I dette emnet finner du informasjon om hvordan Microsoft Dynamics 365 Commerce hjelper selgere med å lære om kampanjer og hvordan de kan brukes for krysssalg- og videresalgsbevegelser.
+title: Vis rabatter i salgssted
+description: I denne artikkelen finner du informasjon om hvordan Microsoft Dynamics 365 Commerce hjelper selgere med å lære om kampanjer og hvordan de kan brukes for krysssalg- og videresalgsbevegelser.
 author: ShalabhjainMSFT
 ms.date: 07/29/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3ec16c5051088ed2777309899b26094e8d67743
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731673"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878546"
 ---
 # <a name="show-discounts-in-pos"></a>Vise rabatter i POS
 
 [!include [banner](includes/banner.md)]
 
-Kampanjer spiller en viktig rolle i motivering av kunder som foretar innkjøpsavgjørelser. Ferier kan for eksempel produsere det høyeste antallet salg for forhandlere, fordi hele detaljmarkedet blir oversvømt med kampanjer og rabatter. Hvis butikkforbindelser vet om og forstår tilgjengelige kampanjer, kan de enkelt dra nytte av disse kampanjene for å oppnå kryss- og mersalg. I dette emnet finner du informasjon om hvordan Microsoft Dynamics 365 Commerce hjelper selgere med å lære om kampanjer og hvordan de kan brukes for krysssalg- og videresalgsbevegelser.
+Kampanjer spiller en viktig rolle i motivering av kunder som foretar innkjøpsavgjørelser. Ferier kan for eksempel produsere det høyeste antallet salg for forhandlere, fordi hele detaljmarkedet blir oversvømt med kampanjer og rabatter. Hvis butikkforbindelser vet om og forstår tilgjengelige kampanjer, kan de enkelt dra nytte av disse kampanjene for å oppnå kryss- og mersalg. I denne artikkelen finner du informasjon om hvordan Microsoft Dynamics 365 Commerce hjelper selgere med å lære om kampanjer og hvordan de kan brukes for krysssalg- og videresalgsbevegelser.
 
 ## <a name="learn-about-store-discounts"></a>Lær mer om butikkrabatter
 

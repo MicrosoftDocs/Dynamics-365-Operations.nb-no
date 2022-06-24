@@ -1,6 +1,6 @@
 ---
 title: Utsetting
-description: Dette emnet hjelper deg med å bygge en gjennomgang av utsetting i produksjonen i Dynamics 365 Supply Chain Management.
+description: Denne artikkelen hjelper deg med å bygge en gjennomgang av utsetting i produksjonen i Dynamics 365 Supply Chain Management.
 author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
@@ -12,22 +12,22 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ef8f30e934ece4a148c6f5259d74f8f67799999d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579358"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854184"
 ---
 # <a name="subcontracting"></a>Utsetting
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet hjelper deg med å bygge en gjennomgang av utsetting i produksjonen i Microsoft Dynamics 365 Supply Chain Management. Den første delen av dette emnet beskriver oppsettet av dataene. Den andre delen leder deg gjennom trinnene i gjennomgangen.
+Denne artikkelen hjelper deg med å bygge en gjennomgang av utsetting i produksjonen i Microsoft Dynamics 365 Supply Chain Management. Den første delen av denne artikkelen beskriver oppsettet av dataene. Den andre delen leder deg gjennom trinnene i gjennomgangen.
 
 ## <a name="target-audience"></a>Målpublikum
 
-I dette emnet lærer du hvordan du konfigurerer bruk av utsetting i produksjon. Du vil bruke eksisterende data i den juridiske enheten HQUS for å gjøre det grunnleggende oppsettet av en aktivitetsflyt for utsetting. Demodataene i den juridiske enheten HQUS inneholder oppsettsparametere som har blitt forhåndsdefinerte for å støtte trinnene i gjennomgangen. Selv om gjennomgangen håndterer viktige vanskelige punkt og utfordringer for forskjellige roller, kan den fullføres av systemadministratoren.
+I denne artikkelen lærer du hvordan du konfigurerer bruk av utsetting i produksjon. Du vil bruke eksisterende data i den juridiske enheten HQUS for å gjøre det grunnleggende oppsettet av en aktivitetsflyt for utsetting. Demodataene i den juridiske enheten HQUS inneholder oppsettsparametere som har blitt forhåndsdefinerte for å støtte trinnene i gjennomgangen. Selv om gjennomgangen håndterer viktige vanskelige punkt og utfordringer for forskjellige roller, kan den fullføres av systemadministratoren.
 
 ## <a name="demo-scenario"></a>Demoscenario
 

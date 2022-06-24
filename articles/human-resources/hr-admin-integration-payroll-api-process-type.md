@@ -1,6 +1,6 @@
 ---
 title: Prosesstype
-description: I dette emnet beskrives alternativetsettet for Prosesstype for Dynamics 365 Human Resources.
+description: Denne artikkelen beskriver alternativetsettet for Prosesstype for Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 06/25/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9f30b50e6ec24b44f7832905a43c9fd979986065
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
+ms.openlocfilehash: 51be840b3af41e1ae32e9eae87ef62f4f4f15a09
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533689"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865360"
 ---
 # <a name="process-type"></a>Prosesstype
 
@@ -27,7 +27,7 @@ ms.locfileid: "8533689"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I dette emnet beskrives alternativet Nei Ja for Dynamics 365 Human Resources.
+Denne artikkelen beskriver alternativet Nei Ja for Dynamics 365 Human Resources.
 
 ## <a name="option-set-process-type"></a>Alternativsett: Prosesstype
 

@@ -1,6 +1,6 @@
 ---
 title: Eksempel på integrering av bilagsskriver for Italia
-description: Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Italia i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Italia i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
-ms.openlocfilehash: 02226fd9f2c92db2518ca48baefb680a3d2f0ac1
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
+ms.openlocfilehash: 2aa1851fe5fe447ba2dd4640be9881b37e54216e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076909"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909396"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Eksempel på integrering av bilagsskriver for Italia
 
 [!include[banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over eksemplet på regnskapsintegrering for Italia i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Italia i Microsoft Dynamics 365 Commerce.
 
 Commerce-funksjonen for Italia omfatter en eksempelintegrering av salgsstedet med en bilagsskriver. Eksemplet utvider [funksjonaliteten for regnskapsintegrering](fiscal-integration-for-retail-channel.md) slik at den fungerer med [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series)-skrivere fra Epson, og det gjør det mulig å kommunisere med en bilagsskriver i nettservermodus via EpsonFPMate-nettjenesten ved hjelp av Fiscal ePOS-Print-API-en. Eksemplet støtter bare modusen Registratore Telematico (RT). Eksemplet leveres i form av kildekode og er en del av Retail Software Development Kit (SDK).
 

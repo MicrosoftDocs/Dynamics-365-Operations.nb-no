@@ -1,6 +1,6 @@
 ---
-title: Oversikt over aktivaattributt
-description: Dette emnet gir en oversikt over aktivaattributter i Aktivastyring.
+title: Oversikt over objektattributt
+description: Denne artikkelen gir en oversikt over aktivaattributter i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: overview
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98386b6ffe2a5f9c79c0ee1f18073ac13fc3a039
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d1585f200e4baba519085685a41979c70a64fb1a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986466"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862750"
 ---
-# <a name="asset-attribute-overview"></a>Oversikt over aktivaattributt
+# <a name="asset-attribute-overview"></a>Oversikt over objektattributt
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Dette emnet gir en oversikt over aktivaattributter i Aktivastyring. Aktivaattributter er egenskaper som er knyttet til en aktivatype eller et aktivum. Hvis du har definert [attributtyper](../setup-for-functional-locations/specification-types.md) og brukt dem på aktiva, kan du få en oversikt over attributtverdiene som er definert for aktivaene. Denne oversikten vises på to sider i Aktivastyring: **Oversikt over aktivaattributt** og **Aktivaattributt**.
+Denne artikkelen gir en oversikt over aktivaattributter i Aktivastyring. Aktivaattributter er egenskaper som er knyttet til en aktivatype eller et aktivum. Hvis du har definert [attributtyper](../setup-for-functional-locations/specification-types.md) og brukt dem på aktiva, kan du få en oversikt over attributtverdiene som er definert for aktivaene. Denne oversikten vises på to sider i Aktivastyring: **Oversikt over aktivaattributt** og **Aktivaattributt**.
 
 Siden **Oversikt over aktivaattributt** viser en egen linje for hvert aktivum. Linjen viser alle attributtyper som er knyttet til dette aktivumet. Følg disse trinnene for å åpne og bruke siden **Oversikt over aktivaattributt**.
 

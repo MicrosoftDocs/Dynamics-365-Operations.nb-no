@@ -1,6 +1,6 @@
 ---
 title: Fjernede eller avskrevne funksjoner i tidligere versjoner
-description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner.
+description: Denne artikkelen beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfe1cf9d3d67c6b65f64248d48a2e7420a47c93
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 2d8c79057c157f9f0244ea11ad5c3563dcdb21a5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063243"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866192"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -28,9 +28,9 @@ ms.locfileid: "8063243"
 
 
 > [!IMPORTANT]
-> Dette emnet oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra økonomi- og driftsapper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
+> Denne artikkelen oppdateres ikke lenger. Hvis du vil se en oppdatert liste over funksjoner som er fjernet eller avskrevet fra økonomi- og driftsapper, kan du søke etter **"Funksjoner som er fjernet eller avskrevet"**-innhold som er knyttet til appen du bruker.
 
-Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
+Denne artikkelen beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365 for Finance and Operations og tidligere versjoner av dette produktet.
 
 - En *fjernet* funksjon er ikke lenger tilgjengelig i produktet.
 - En *avskrevet* funksjon er ikke i aktiv utvikling og kan bli fjernet i en fremtidig oppdatering.

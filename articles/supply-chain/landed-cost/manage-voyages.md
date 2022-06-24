@@ -1,6 +1,6 @@
 ---
 title: Administrere sjøreiser
-description: Dette emnet beskriver hvordan du arbeider med sjøreiser. En sjøreise representerer som regel et fartøy. Avhengig av praksis og fremgangsmåter kan den imidlertid representere en leverandør, en bestilling eller en annen vare som gir mening for organisasjonen.
+description: Denne artikkelen beskriver hvordan du arbeider med sjøreiser. En sjøreise representerer som regel et fartøy. Avhengig av praksis og fremgangsmåter kan den imidlertid representere en leverandør, en bestilling eller en annen vare som gir mening for organisasjonen.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7d85ef86351f5d6ac662bb72c88d464fba82f561
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8696173"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905870"
 ---
 # <a name="manage-voyages"></a>Administrere sjøreiser
 
@@ -96,7 +96,7 @@ Hvis du vil åpne visningen **Linjer**, åpner du en sjøreise, og deretter velg
 
 ### <a name="information-on-the-voyage-header-fasttab"></a>Informasjon om hurtigfanen Topptekst for sjøreise
 
-Hurtigfanen **Topptekst for sjøreise** i visningen **Linjer** for en sjøreise inneholder grunnleggende informasjon som beskriver sjøreisen. Mange av feltene som vises i denne hurtigfanen vises også i visningen **Topptekst**, som blir beskrevet senere i dette emnet.
+Hurtigfanen **Topptekst for sjøreise** i visningen **Linjer** for en sjøreise inneholder grunnleggende informasjon som beskriver sjøreisen. Mange av feltene som vises på denne hurtigfanen, vises også i visningen **Topptekst**, som blir beskrevet senere i denne artikkelen.
 
 ### <a name="information-on-the-voyage-lines-fasttab"></a>Informasjon om hurtigfanen Linjer for sjøreise
 

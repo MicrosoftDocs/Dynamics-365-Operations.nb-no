@@ -1,6 +1,6 @@
 ---
-title: Åpne URL-adresse på salgssted
-description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Dynamics 365 Commerce.
+title: Åpne nettadresse på salgssted
+description: Denne artikkelen gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Dynamics 365 Commerce.
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 529908df866c71ea84d90bbb5d46b23311ed74d1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714120"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853968"
 ---
-# <a name="open-url-in-pos"></a>Åpne URL-adresse på salgssted
+# <a name="open-url-in-pos"></a>Åpne nettadresse på salgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan konfigurere en knapp i POS i Dynamics 365 Commerce for å åpne en nettadresse. Denne funksjonen krever ikke tilpasning av koden og kan konfigureres av en person i en ikke-utviklerrolle. 
+Denne artikkelen beskriver hvordan du kan konfigurere en knapp i POS i Dynamics 365 Commerce for å åpne en nettadresse. Denne funksjonen krever ikke tilpasning av koden og kan konfigureres av en person i en ikke-utviklerrolle. 
 
 Denne funksjonen tillater konfigurasjon av en knapp på salgsstedet ved hjelp av knappgruppedesigneren for å åpne en URL-adresse. Dette støttes for øyeblikket i følgende konfigurasjoner:
 

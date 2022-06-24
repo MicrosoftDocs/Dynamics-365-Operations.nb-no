@@ -1,6 +1,6 @@
 ---
 title: Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet
-description: Dette emnet beskriver hvordan du planlegger fremtidige endringer i lagerbeholdning og beregner ATP-antall (tilgjengelig for ordre).
+description: Denne artikkelen beskriver hvordan du planlegger fremtidige endringer i lagerbeholdning og beregner ATP-antall (tilgjengelig for ordre).
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
-ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
+ms.openlocfilehash: 4a0edeedfe42b43ef36c8ca091b01eef815f3632
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763260"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856200"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer funksjonen *Tidsplan for lagerendring* for å planlegge fremtidige endringer i lagerbeholdning og beregne ATP-antall (tilgjengelig for ordre). ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde i løpet av den neste perioden. Bruk av denne beregningen kan øke kapasiteten for innfrielse av bestillinger betydelig.
+Denne artikkelen beskriver hvordan du konfigurerer funksjonen *Tidsplan for lagerendring* for å planlegge fremtidige endringer i lagerbeholdning og beregne ATP-antall (tilgjengelig for ordre). ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde i løpet av den neste perioden. Bruk av denne beregningen kan øke kapasiteten for innfrielse av bestillinger betydelig.
 
 For mange produsenter, forhandlere eller selgere er det ikke nok bare å vite hva som er i varebeholdningen for øyeblikket. De må ha full oversikt over fremtidig tilgjengelighet. Denne fremtidige tilgjengeligheten bør vurdere fremtidig forsyning, fremtidig etterspørsel og ATP.
 

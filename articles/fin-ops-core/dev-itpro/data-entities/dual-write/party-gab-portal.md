@@ -1,6 +1,6 @@
 ---
 title: Bruke Microsoft Power Apps-portaler med partdatamodellen
-description: Dette emnet beskriver endringene i webrollene i Microsoft Power Apps-portaler på grunn av partdatamodellen i dobbel skriving.
+description: Denne artikkelen beskriver endringene i webrollene i Microsoft Power Apps-portaler på grunn av partdatamodellen i dobbel skriving.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 8242a74b8b2251a8489b772f5c4746b113fe2987
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: c2e9d0f47ef90167bf84bb5b20e6a7ad2d58ffd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898953"
 ---
 # <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Bruke Microsoft Power Apps-portaler med partdatamodellen
 
@@ -24,7 +24,7 @@ ms.locfileid: "8060926"
 
 Versjon 2.0.999.0 og senere av løsningen for orkestrering av apper med dobbel skriving inkluderer endringer i datamodeller for parter og global adressebok tabellene Konto og Kontakt. Endringene tillater mange-til-mange-relasjoner som støtter avanserte forretningsscenarier. Disse endringene støttes ikke av webroller for portaler, inkludert kundeportalen, som følger med som standard, eller som allerede fantes i miljøet ditt før du installerte dobbel skriving. For at webrollene skal fungere som forventet, må du opprette nye webroller ved hjelp av den nye datamodellen. 
 
-Kort sagt er måten tabellene fungerer på endret, men tabelltillatelsene i kundeportalen er ikke endret. Dette emnet beskriver hvordan du oppretter nye webroller som arbeider med den nye avanserte datamodellen.
+Kort sagt er måten tabellene fungerer på endret, men tabelltillatelsene i kundeportalen er ikke endret. Denne artikkelen beskriver hvordan du oppretter nye webroller som arbeider med den nye avanserte datamodellen.
 
 Dette diagrammet viser tabellrelasjonen **uten** parten og den globale adressebokdatamodellen:
 

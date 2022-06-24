@@ -1,6 +1,6 @@
 ---
 title: Diagnosetyper for avvik
-description: Dette emnet beskriver hvordan du bruker og oppretter diagnosetyper som kan brukes med avvik.
+description: Denne artikkelen beskriver hvordan du bruker og oppretter diagnosetyper som kan brukes med avvik.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edaa3a8b5c6446f039f33589166d832dcd9d0b9a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 87b7a051f807c9faab3169d2672d47f663892225
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580942"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8852454"
 ---
 # <a name="diagnostic-types-for-nonconformances"></a>Diagnosetyper for avvik
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker og oppretter diagnosetyper som kan brukes med avvik.
+Denne artikkelen beskriver hvordan du bruker og oppretter diagnosetyper som kan brukes med avvik.
 
 Du bruker **Diagnosetyper**-siden til å definere en klassifisering av diagnosehandlinger. Når du deretter oppretter en korrigering for et avvik, velger du en diagnose. En rettelse angir hvilken type diagnosehandling som skal utføres for et godkjent avvik, og hvem som skal utføre denne handlingen. Den angir også den ønskede fullføringsdatoen og den planlagte fullføringsdatoen.
 

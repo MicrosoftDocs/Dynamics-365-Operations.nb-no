@@ -1,6 +1,6 @@
 ---
 title: Prosjektoppsett for arbeidsordre
-description: Dette emnet forklarer prosjektoppsett for arbeidsordre i Aktivastyring.
+description: Denne artikkelen forklarer prosjektoppsett for arbeidsordre i Aktivastyring.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 31d8f42eb5753ea2656d502d2670a6cf7683c0f2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754089"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874137"
 ---
 # <a name="work-order-project-setup"></a>Prosjektoppsett for arbeidsordre
 
@@ -80,7 +80,7 @@ Oppsettet tillater fullstendig integrasjon med **Prosjektstyring og regnskap**-m
 ![Siden for oppsett av arbeidsordrer, legg til arbeidsordre.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
-> Hver gang det opprettes en arbeidsordrelinje, søker Aktivastyring etter en prosjektgruppe som skal knyttes til arbeidsordrejobbprosjektet. Søket er basert på oppsettet som er beskrevet i dette emnet. Hver prosjektgruppe har en tilknyttet prosjekttype. Prosjektgrupper som har prosjekttypen **Tid og materialer** eller **Fast pris**, er bare gyldige for anleggsmidler som er knyttet til en kundekonto.
+> Hver gang det opprettes en arbeidsordrelinje, søker Aktivastyring etter en prosjektgruppe som skal knyttes til arbeidsordrejobbprosjektet. Søket er basert på oppsettet som er beskrevet i denne artikkelen. Hver prosjektgruppe har en tilknyttet prosjekttype. Prosjektgrupper som har prosjekttypen **Tid og materialer** eller **Fast pris**, er bare gyldige for anleggsmidler som er knyttet til en kundekonto.
 >
 > For overordnede prosjekter og prosjektgrupper, når systemet velger tilgjengelig arbeidsordreprosjekt eller prosjektgruppe, baseres valget på postene du opprettet ved hjelp av fremgangsmåten ovenfor. Aktivastyring går gjennom poster som er knyttet til arbeidsordreprosjektet for å søke etter mulig samsvar. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord, for det overordnede prosjektet for arbeidsordre ser Aktivastyring først etter et mulig treff i **Aktivum**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Aktivumtype**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Arbeidssted**-feltet, og så videre. Som du kan se i oppsettet av siden **Prosjektoppsett for arbeidsordre**, betyr dette at for å finne den mest spesifikke kombinasjonen, kontrollerer Aktivastyring hver post fra høyre til venstre for et treff. Hvis det ikke blir funnet samsvar, brukes standardposten der bare prosjekt-ID-en er valgt. Prosessen for å finne den tilknyttede prosjektgruppen er lik. Aktivastyring søker først etter et mulig treff i **Aktivum**-feltet, deretter **Aktivumtype**-feltet og deretter **Arbeidsordretype**-feltet. Hvis det ikke blir funnet samsvar, brukes standardposten der bare en prosjektgruppe er valgt.
 

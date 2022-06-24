@@ -1,6 +1,6 @@
 ---
 title: Registrere et integreringspunkt i webportalen for ID-porten
-description: Dette emnet beskriver hvordan du registrerer et integreringspunkt i ID-porten-webportalen i Norge.
+description: Denne artikkelen beskriver hvordan du registrerer et integreringspunkt i ID-porten-webportalen i Norge.
 author: liza-golub
 ms.author: elgolu
 ms.date: 11/28/2021
@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: 2022-11-15
-ms.openlocfilehash: 6bcdd5350683d2b582e625b57baab1ae852be2db
-ms.sourcegitcommit: a11e8f4e764ff0bb210875401ae0671bc6412bde
+ms.openlocfilehash: 7c8634edf06466fb1240ae6c8d1cfb5ffce2075a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866808"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856554"
 ---
 # <a name="register-an-integration-point-in-the-id-porten-web-portal"></a>Registrere et integreringspunkt i webportalen for ID-porten
 

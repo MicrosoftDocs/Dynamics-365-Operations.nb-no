@@ -1,6 +1,6 @@
 ---
 title: Rapporter om aktivaleie
-description: Dette emnet viser og gir en kort beskrivelse av rapportene som er tilgjengelige i Aktivaleie.
+description: Denne artikkelen viser og gir en kort beskrivelse av rapportene som er tilgjengelige i Aktivaleie.
 author: moaamer
 ms.date: 04/05/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cb1c994fee6efff82dd1cba1e71c6af49b384208
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: a6e6eb851b9b2dce7259a5355326dd594a940b8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8550046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856719"
 ---
 # <a name="asset-leasing-reports"></a>Rapporter om aktivaleie
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet viser og gir en kort beskrivelse av rapportene som er tilgjengelige i Aktivaleie. Du viser de fleste rapportene ved å følge disse trinnene eller lignende trinn, som angitt. 
+Denne artikkelen viser og gir en kort beskrivelse av rapportene som er tilgjengelige i Aktivaleie. Du viser de fleste rapportene ved å følge disse trinnene eller lignende trinn, som angitt. 
 
 - Du viser de fleste rapportene om aktivaleie ved å gå til **Aktivaleie > Forespørsler og rapporter > Leierapporter** og deretter velge rapporten du vil vise. Når det gjelder rapportene som krever en annen valgbane, er fremgangsmåten for å åpne rapporten tatt med i beskrivelsen av denne rapporten. 
 - Når du velger en rapport som skal skrives ut, åpnes en parameterside der du kan filtrere informasjon som tas med i rapporten. Angi filterkriterier, og velg deretter **OK** for å generere rapporten. Den genererte rapporten viser informasjon som faller innenfor filtrene du har angitt.

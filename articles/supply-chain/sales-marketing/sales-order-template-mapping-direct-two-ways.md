@@ -1,6 +1,6 @@
 ---
 title: Synkronisering av salgsordrer direkte mellom Sales og Supply Chain Management
-description: Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Dynamics 365 Sales og Dynamics 365 Supply Chain Management.
+description: Denne artikkelen drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Dynamics 365 Sales og Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 63a9be9bedabe1f15ad8db583151aa7fa480473b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8854159"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering av salgsordrer direkte mellom Sales og Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "8061524"
 
 
 
-Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Dynamics 365 Sales og Dynamics 365 Supply Chain Management.
+Denne artikkelen drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Dynamics 365 Sales og Dynamics 365 Supply Chain Management.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Dataflyt i Kundeemne til kontanter
 
@@ -203,7 +203,7 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 
 [![Maltilordning i Dataintegrering, Salgsordrer (Sales til Supply Chain Management) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-## <a name="related-topics"></a>Relaterte emner
+## <a name="related-articles"></a>Relaterte artikler
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 

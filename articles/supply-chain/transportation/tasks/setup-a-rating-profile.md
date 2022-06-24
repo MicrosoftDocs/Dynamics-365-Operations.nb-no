@@ -1,6 +1,6 @@
 ---
 title: Vurderingsprofiler
-description: Dette emnet beskriver hvordan du setter opp data for vurderingsprofiler.
+description: Denne artikkelen beskriver hvordan du setter opp data for vurderingsprofiler.
 author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2512b79c87a4640a2b31b7699e85d743b451a14c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1f7408574187ddb099181bd2566c46c52307f603
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676446"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850485"
 ---
 # <a name="rating-profiles"></a>Vurderingsprofiler
 
@@ -56,7 +56,7 @@ På siden **Vurderingsprofiler** kan du se gjennom alle tilgjengelige vurderings
 1. Gå til **Transportstyring \> Oppsett \> Transpotører \> Transportører**.
 1. Velg en transportør i listen.
 1. Velg **Ny** i hurtigfanen **Vurderingsprofiler** for å opprette en vurderingsprofil.
-1. Angi feltene for den nye vurderingsprofilen. Disse feltene tilsvarer feltene på siden **Vurderingsprofiler**, som beskrevet i forrige del av dette emnet.
+1. Angi feltene for den nye vurderingsprofilen. Disse feltene tilsvarer feltene på siden **Vurderingsprofiler**, som beskrevet i forrige del av denne artikkelen.
 
 > [!NOTE]
 > Profiler som opprettes på **Transportører**-siden, vises også på **Vurderingsprofiler**-siden.

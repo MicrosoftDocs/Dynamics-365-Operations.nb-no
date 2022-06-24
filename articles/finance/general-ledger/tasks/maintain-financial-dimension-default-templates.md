@@ -1,6 +1,6 @@
 ---
-title: Vedlikeholde standardmaler for finansdimensjon
-description: Dette emnet viser hvordan du setter opp standardmaler for finansdimensjon.
+title: Vedlikehold standardmaler for finansdimensjon
+description: Denne artikkelen viser hvordan du setter opp standardmaler for finansdimensjon.
 author: aprilolson
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 08e795b44e552dbf049b460811a66741d9b6b96f
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 846347f3a0b5257e88e06ad593ba49160de9458a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872419"
 ---
-# <a name="maintain-financial-dimension-default-templates"></a>Vedlikeholde standardmaler for finansdimensjon
+# <a name="maintain-financial-dimension-default-templates"></a>Vedlikehold standardmaler for finansdimensjon
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet viser hvordan du setter opp standardmaler for finansdimensjon. Malene kan brukes til å fordele beløp på kildedokumenter raskt.
+Denne artikkelen viser hvordan du setter opp standardmaler for finansdimensjon. Malene kan brukes til å fordele beløp på kildedokumenter raskt.
 
 1. I navigasjonsruten går du til **Moduler > Økonomimodul > Kontoplan > Dimensjoner > Standardmaler for finansdimensjon**.
 2. Velg **Ny**.

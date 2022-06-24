@@ -1,6 +1,6 @@
 ---
 title: " Definere kontinuitetsplaner"
-description: Dette emnet hjelper med å konfigurere et kontinuitetsprogram (også kjent som regelmessige ordrer).
+description: Denne artikkelen hjelper med å konfigurere et kontinuitetsprogram (også kjent som regelmessige ordrer).
 author: josaw1
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7b05bc82acfad89c9b50777bd0c5fd85f7bda90efd73f278f122c9aa0d073df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faa55c844c8ee8742fbb0868b55a520cec6686aa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724497"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885090"
 ---
 # <a name="define-continuity-schedules"></a> Definere kontinuitetsplaner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet hjelper med å konfigurere et kontinuitetsprogram (også kjent som regelmessige ordrer). Dette emnet bruker demonstrasjonsdata i firmaet USRT.
+Denne artikkelen hjelper med å konfigurere et kontinuitetsprogram (også kjent som regelmessige ordrer). Denne artikkelen bruker firmaet USRT i demonstrasjonsdataene.
 
 
 ## <a name="create-continuity-program"></a>Opprette kontinuitetsprogram

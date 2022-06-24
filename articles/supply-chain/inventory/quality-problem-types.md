@@ -1,6 +1,6 @@
 ---
 title: Problemtyper for avvik
-description: Dette emnet beskriver hvordan du oppretter og bruker problemtyper for avvik.
+description: Denne artikkelen beskriver hvordan du oppretter og bruker problemtyper for avvik.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26705dd12f478f4ca6046c7265d4ae3cb1d08c69
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a73e692257c2a27085d60e75e028445811ee778a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568813"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857757"
 ---
 # <a name="problem-types-for-nonconformances"></a>Problemtyper for avvik
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter og bruker problemtyper for avvik.
+Denne artikkelen beskriver hvordan du oppretter og bruker problemtyper for avvik.
 
 Du bruker **Problemtyper**-siden til å definere en klassifisering av kvalitetsproblemer som kan oppstå for de ulike avvikstypene. For hver problemtype du oppretter må du angi avvikstypene som problemtypen kan brukes med. Du kan definere følgende avvikstyper:
 

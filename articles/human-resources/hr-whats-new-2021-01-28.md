@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources 28. januar 2021
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 28. januar 2021.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 28. januar 2021.
 author: marcelbf
 ms.date: 01/28/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d59e242421b1b86c32f9009ae6ae17e0f161a2e2
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 46bbda21c3eb2b32030b93afc2a40785c22b124e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689305"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8909766"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-28-2021"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 28. januar 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -48,10 +48,10 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdateringer for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
 
-| Utstedelsesnummer | Problem |  beskrivelse |
+| Utstedelsesnummer | Problem |  Beskrivelse |
 | --- | --- | --- |
 | 539456 | Kalenderen viser fraværstypen i teksten når **Vis bare fravær uten detaljer**-parameteren er aktivert. | Når alternativet **Vis bare fravær uten detaljer** er aktivert, vises datoen for forespørselen når pekeren føres over. |
 | 528907 | Hvis du gir tilgang til en juridisk enhet for ansattrolle, får ikke ledere muligheten til å se permisjonssaldoaktivitet for ansatte i **Mitt team**-området i Employee self-service. |Hvis du setter dette alternativet nå, kan ledere fortsette å se permisjonssaldoaktiviteten. |

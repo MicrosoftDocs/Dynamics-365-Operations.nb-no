@@ -1,6 +1,6 @@
 ---
 title: Postere avskrivning for bruksrettseiendel (forhåndsversjon)
-description: Dette emnet forklarer hvordan du oppretter journaloppføringen for nedbetalingen som kreves for leieavtaler som er oppført i balansen til en organisasjon.
+description: Denne artikkelen forklarer hvordan du oppretter journaloppføringen for nedbetalingen som kreves for leieavtaler som er oppført i balansen til en organisasjon.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ebac6c8d008babec93061071414579eec3a73223
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 93e521cf409af4c01d625f27bdd7a7564e471bd9
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903283"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Postere avskrivning for bruksrettseiendel (forhåndsversjon)
 
@@ -28,13 +28,13 @@ ms.locfileid: "8727713"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-For leieavtaler som er oppført i balansen til en organisasjon, nedbetales bruksrettseiendelen på månedlig basis. Dette emnet forklarer hvordan du oppretter journaloppføringen for nedbetalingen. Nedbetalingen debiterer utgiftsfinanskontoen og kreditere den akkumulerte avskrivningsfinanskontoen basert på oppsettet av posteringsprofilen og leietypen. Disse oppføringene kan opprettes for hver leieavtale, eller de kan opprettes for flere leieavtaler ved å bruke funksjonen for satsvis journal.
+For leieavtaler som er oppført i balansen til en organisasjon, nedbetales bruksrettseiendelen på månedlig basis. Denne artikkelen forklarer hvordan du oppretter journaloppføringen for nedbetalingen. Nedbetalingen debiterer utgiftsfinanskontoen og kreditere den akkumulerte avskrivningsfinanskontoen basert på oppsettet av posteringsprofilen og leietypen. Disse oppføringene kan opprettes for hver leieavtale, eller de kan opprettes for flere leieavtaler ved å bruke funksjonen for satsvis journal.
 
 ## <a name="asset-depreciation-schedule"></a>Avskrivningsplan for aktiva
 
 1. Velg en leieavtale på siden **Leiesammendrag**. Deretter velger du **Tablåer \> Avskrivningsplan for aktiva** for å åpne siden **Avskrivningsplan for aktiva**.
 
-    Journaloppføring for avskrivningskostnad for bruksrettseiendel er basert på beløpet i kolonnen **Avskrivningsutgift**. Hvis du vil ha et eksempel på retningslinjene for regnskapsstandardsamsvar, kan du se [Beregning av nedbetalingsutgift for bruksrettseiendel for finansiell leie](#calculation-of-rou-asset-amortization-expense-for-finance-leases) senere i dette emnet.
+    Journaloppføring for avskrivningskostnad for bruksrettseiendel er basert på beløpet i kolonnen **Avskrivningsutgift**. Hvis du vil ha et eksempel på retningslinjene for regnskapsstandardsamsvar, kan du se [Beregning av nedbetalingsutgift for bruksrettseiendel for finansiell leie](#calculation-of-rou-asset-amortization-expense-for-finance-leases) senere i denne artikkelen.
     
 2. Velg avskrivningsperioden, og velg deretter **Opprett Journal**. Du får en melding som angir at journalen som skal brukes til å registrere avskrivning, er opprettet.
 3. Velg **Journaler \> Journaler for aktivaleie** for å åpne siden **Journaler for aktivaleie**, der du kan se journaloppføringen for avskrivningsutgift som ble opprettet.

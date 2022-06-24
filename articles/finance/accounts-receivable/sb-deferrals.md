@@ -1,6 +1,6 @@
 ---
 title: Inntekts- og utgiftsutsettelser i Abonnementsfakturering
-description: Dette emnet forklarer hvordan du definerer inntekts- og utgiftsutsettelser i Abonnementsfakturering.
+description: Denne artikkelen forklarer hvordan du definerer inntekts- og utgiftsutsettelser i Abonnementsfakturering.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -14,16 +14,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9a12cf52d904db0396aa9914b8e324060289710f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 209afd08c0c7e3cbd63ed95613b1d1dec94856f5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690955"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908103"
 ---
 # <a name="revenue-and-expense-deferrals-in-subscription-billing"></a>Inntekts- og utgiftsutsettelser i Abonnementsfakturering
 
-Dette emnet forklarer hvordan du definerer og bruker inntekts- og utgiftsutsettelser i Abonnementsfakturering. Utsettelsesplaner er alltid basert på og avhenger av et underliggende opprinnelsesdokument eller faktureringsplan. Fordi de er opprettet basert på standardverdier, kan de ikke angis eller opprettes separat.
+Denne artikkelen forklarer hvordan du definerer og bruker inntekts- og utgiftsutsettelser i Abonnementsfakturering. Utsettelsesplaner er alltid basert på og avhenger av et underliggende opprinnelsesdokument eller faktureringsplan. Fordi de er opprettet basert på standardverdier, kan de ikke angis eller opprettes separat.
 
 Prosessen med å definere og bruke inntekts- og utgiftsutsettelser skjer på flere sider:
 

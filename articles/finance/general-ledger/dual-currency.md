@@ -1,6 +1,6 @@
 ---
 title: Dobbel valuta
-description: Dette emnet gir informasjon om dobbel valuta, der rapporteringsvalutaen brukes som en ekstra regnskapsvaluta for Microsoft Dynamics 365 Finance.
+description: Denne artikkelen gir informasjon om dobbel valuta, der rapporteringsvalutaen brukes som en ekstra regnskapsvaluta for Microsoft Dynamics 365 Finance.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 8db8faefaec4afe208344492ec91375531cb9cd0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713592"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8906362"
 ---
 # <a name="dual-currency"></a>Dobbel valuta
 
@@ -36,7 +36,7 @@ I tillegg er forskjellige moduler forbedret for å spore, rapportere og bruke ra
 - Anleggsmidler 
 - Konsolideringer
 
-Etter en oppgradering må du utføre bestemte trinn for kontant- og bankbehandling og anleggsmidler. Derfor må du lese og forstå de relevante delene i dette emnet.
+Etter en oppgradering må du utføre bestemte trinn for kontant- og bankbehandling og anleggsmidler. Derfor må du lese og forstå de relevante delene i denne artikkelen.
 
 ## <a name="posting-process"></a>Posteringsprosess
 
@@ -93,7 +93,7 @@ Følgende ytterligere endringer ble gjort i **økonomimodulen**:
 - Du kan definere en separat valutakurstype for rapporteringsvalutaen i Finans. Hvis en organisasjon ikke vil bruke en annen valutakurstype, kan du la feltet for valutakurstype for rapporteringsvalutaen stå tomt. Du kan også velge den samme valutakurstypen som brukes for regnskapsvalutaen. Hvis du lar feltet stå tomt, bruker systemet valutakurstypen for regnskapsvalutaen.
 - En ny journal, Justeringsjournal for rapporteringsvaluta, gjør det mulig bare å postere justeringer til finanskontoer i rapporteringsvalutaen. Denne journalen gjør det mulig bare å postere til finanskontoer. Det støtter ikke konsernintern, og valutaen må være rapporteringsvalutaen for den juridiske enheten der journalen posteres. Når journalen posteres, er transaksjonsvalutaen og transaksjonsvalutabeløpene 0 (null), og rapporteringsvalutabeløpet posteres med beløpet som er angitt for transaksjonen. Fordi måten rapporteringsvalutaen brukes på i modulene **leverandører**, **kunder** og **anleggsmidler**, er endret, kan denne journalen brukes for justeringer etter en oppgradering. Se delene for disse modulene for eksempler som viser hvordan denne journalen kan brukes.
 - Prosessen for periodetilordning er oppdatert slik at den tilordner beløpene i transaksjons-, regnskaps- og rapporteringsvalutaer. Tidligere ble beløp tildelt i transaksjons- og regnskapvalutaer, og deretter ble regnskapsvalutabeløpet oversatt til rapporteringsvalutaen. Denne virkemåten kan føre til at en saldo beholdes på finanskontoen i rapporteringsvalutaen. Når beløp nå beregnes og brukes i regnskapsposten, skjer det ingen oversettelse.
-- Prosessen for revaluering av utenlandsk valuta har allerede revaluert beløp i rapporteringsvaluta. Rapporteringsvalutabeløpet beregnes nå via transaksjonsvalutabeløpet, som beskrevet i [Posteringsprosess](#posting-process)-delen tidligere i dette emnet.
+- Prosessen for revaluering av utenlandsk valuta har allerede revaluert beløp i rapporteringsvaluta. Rapporteringsvalutabeløpet beregnes nå via transaksjonsvalutabeløpet, som beskrevet i [Posteringsprosess](#posting-process)-delen tidligere i denne artikkelen.
 - Mange rapporter og forespørsler i økonomimodulen hadde allerede rapporteringsvalutaen, men noen få hadde det ikke. Ett eksempel er **Råbalanse**-listesiden. Denne listesiden inneholder nå kolonner for både regnskapsvalutaen og rapporteringsvalutaen. Legg merke til at kolonnene for rapporteringsvalutaen skjules hvis regnskapsvalutaen og rapporteringsvalutaen er det samme, eller hvis ingen rapporteringsvaluta ble definert i Finans.
 
 ### <a name="financial-reporting"></a>Finansrapportering

@@ -1,6 +1,6 @@
 ---
 title: Vis resultater for automatisering av leverandørfakturaer (forhåndsversjon)
-description: Dette emnet forklarer hvordan du viser statusen for leverandørfakturaer som er i den automatiserte prosessen for sending til arbeidsflyt.
+description: Denne artikkelen forklarer hvordan du viser statusen for leverandørfakturaer som er i den automatiserte prosessen for sending til arbeidsflyt.
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1700f4c4748dc12bf000b25c0d51bc6ed069a97b
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: dd9b74d2ed34399aff455563504c296a5a25a874
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717256"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895174"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Vise resultater for automatisering av leverandørfaktura
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du viser statusen for leverandørfakturaer som er i den automatiserte prosessen for sending til arbeidsflyt. Detaljer om automatiseringsloggen vedlikeholdes for hver importerte leverandørfaktura. Avhengig av forretningsprosessene du har automatisert, vises siden **Ventende leverandørfakturaer** verdiene **Status for automatisert kvitteringssamsvar** og **Status for automatisert send til arbeidsflyt**. Du kan vise detaljene og lage en plan for å fokusere på fakturaene som mislyktes på et automatisk trinn. Etter at du har rettet problemet, kan du gjenoppta den automatiserte prosessen for den importerte fakturaen.
+Denne artikkelen forklarer hvordan du viser statusen for leverandørfakturaer som er i den automatiserte prosessen for sending til arbeidsflyt. Detaljer om automatiseringsloggen vedlikeholdes for hver importerte leverandørfaktura. Avhengig av forretningsprosessene du har automatisert, vises siden **Ventende leverandørfakturaer** verdiene **Status for automatisert kvitteringssamsvar** og **Status for automatisert send til arbeidsflyt**. Du kan vise detaljene og lage en plan for å fokusere på fakturaene som mislyktes på et automatisk trinn. Etter at du har rettet problemet, kan du gjenoppta den automatiserte prosessen for den importerte fakturaen.
 
 Før du kan redigere en faktura som er sendt, må du stoppe den automatiserte behandlingen midlertidig. Hvis en faktura i den automatiserte prosessen for sending til arbeidsflyt er stoppet midlertidig, setter du feltet **Inkluder i automatisert behandling** til **Nei** på siden **Leverandørfakturaer**. Automatisering vil da ikke kjøre før **Inkluder i automatisert behandling** er satt til **Ja**. En faktura kan stoppes midlertidig fra ytterligere automatisering hvis den ennå ikke er i arbeidsflytsystemet og ikke brukes av den automatiserte prosessen.
 

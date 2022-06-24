@@ -1,6 +1,6 @@
 ---
 title: Oppgrader til parten og den globale adressebokmodellen
-description: Dette emnet beskriver hvordan du oppgraderer data for dobbel skriving til partsmodellen og den globale adressebokmodellen.
+description: Denne artikkelen beskriver hvordan du oppgraderer data for dobbel skriving til partsmodellen og den globale adressebokmodellen.
 author: RamaKrishnamoorthy
 ms.date: 03/10/2022
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688382"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895283"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Oppgrader til parten og den globale adressebokmodellen
 
@@ -40,7 +40,7 @@ På slutten av prosessen genereres følgende kommaseparerte verdier (.csv)-filer
 | ImportFONewPostalAddress.csv | Denne filen hjelper deg med å opprette nye **Postadresse**-poster i Finance and Operations-appen. |
 | ImportFONewElectronicAddress.csv | Denne filen hjelper deg med å opprette nye **Elektronisk adresse**-poster i Finance and Operations-appen. |
 
-I dette emnet finner du instruksjoner om hvordan du kan bruke Data Factory-malene og oppgradere dataene. Hvis du ikke har noen tilpasninger, kan du bruke malene som de er. Hvis du har tilpasninger for **Konto**, **Kontakt** og **Leverandør**-data, må du endre malene ved å følge instruksjonene i dette emnet.
+I denne artikkelen finner du instruksjoner om hvordan du kan bruke Data Factory-malene og oppgradere dataene. Hvis du ikke har noen tilpasninger, kan du bruke malene som de er. Hvis du har tilpasninger for **Konto**, **Kontakt** og **Leverandør**-data, må du endre malene ved å følge instruksjonene i denne artikkelen.
 
 > [!IMPORTANT]
 > Det finnes spesielle instruksjoner for kjøring av malene Postadresse for part og Elektronisk adresse for part. Du må kjøre partsmalen først, deretter malen for partspostadresse og deretter den elektroniske adressemalen for part. Hver mal er utformet for å importeres i en separat datafabrikk.

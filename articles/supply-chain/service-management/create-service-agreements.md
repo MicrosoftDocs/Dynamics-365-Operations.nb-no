@@ -1,6 +1,6 @@
 ---
 title: Opprette serviceavtaler
-description: Dette emnet beskriver hvordan du bruker funksjoner i modulene Servicestyring og Prosjektstyring og regnskap for å opprette serviceavtaler.
+description: Denne artikkelen beskriver hvordan du bruker funksjoner i modulene Servicestyring og Prosjektstyring og regnskap for å opprette serviceavtaler.
 author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8a139d1a11cca036ace2540cba59bf2cace0db
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d18d279cd437e98cad6495def953978cb78e723e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677261"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901770"
 ---
 # <a name="create-service-agreements"></a>Opprette serviceavtaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du bruker funksjoner i modulene Servicestyring og Prosjektstyring og regnskap for å opprette serviceavtaler.
+Denne artikkelen beskriver hvordan du bruker funksjoner i modulene Servicestyring og Prosjektstyring og regnskap for å opprette serviceavtaler.
 
 ## <a name="create-a-service-agreement-from-service-management"></a>Opprette en serviceavtale fra Servicestyring
 
@@ -51,10 +51,10 @@ Dette emnet beskriver hvordan du bruker funksjoner i modulene Servicestyring og 
 2. Velg **Alle prosjekter**.
 3. Velg prosjektet fra listen.
 4. Velg **Administrer** i **handlingsruten**. I gruppen **Ny handling** velger du **Service** og deretter **Serviceavtale**.
-5. Følg trinnene i delen **Opprett en serviceavtale** som beskrevet tidligere i dette emnet for å angi prosjektreferansen.
+5. Følg trinnene i delen **Opprett en serviceavtale** som beskrevet tidligere i denne artikkelen for å angi prosjektreferansen.
 
 
-## <a name="related-topics"></a>Relaterte emner
+## <a name="related-articles"></a>Relaterte artikler
 
 [Oversikt over å utvikle og etablere serviceavtaler](service-agreements.md)
 

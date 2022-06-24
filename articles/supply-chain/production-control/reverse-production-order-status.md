@@ -1,6 +1,6 @@
 ---
 title: Reversere produksjonsordrestatusen
-description: Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre.
+description: Denne artikkelen beskriver hvordan du tilbakefører statusen for en produksjonsordre.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0dd17bc48bfb6c78e1baca4faf78d6bc5b3ce426c5f0530174eccd95536a5859
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d50cbcb4031d5c9f2c814883afd1fb38777d2ba
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760424"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903963"
 ---
 # <a name="reverse-the-production-order-status"></a>Reversere produksjonsordrestatusen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du tilbakefører statusen for en produksjonsordre. 
+Denne artikkelen beskriver hvordan du tilbakefører statusen for en produksjonsordre. 
 
 Hvis du tilbakestiller statusen for en produksjonsordre, tilbakestilles ordren og all operasjoner tilknyttet rutene, tilbake til et tidligere trinn i livssyklusen til produksjonen. Hvis du for eksempel en produksjonsordre har statusen **planlagte**, og du kan endre status tilbake til **opprettet**. I dette tilfellet må systemet først endre statusen til **Estimert**, som er statusen som er like forut for **Planlagt**. Statusen kan deretter endres til den statusen du ønsker, **Opprettet**. **Obs!** Hvis ordren har nådd statusen **Ferdigmeld**, kan du fremdeles tilbakestille den til en tidligere status. Du må imidlertid måtte kjøre anslag og grovplanlegging, finplanlegging eller begge typer planlegging på nytt, for å oppdatere informasjonen i ordren. Dette må gjøres fordi alle reserveringer av gjenværende vareforbruk og forbruk av operasjonsressurser også må tilbakestilles. Resten av denne artikkelen forklarer hva som skjer når du tilbakefører statusen for en produksjonsordre på følgende måter:
 

@@ -1,6 +1,6 @@
 ---
 title: Parametere for styring av teknisk endring
-description: Dette emnet forklarer hvordan du konfigurerer funksjoner for behandling av teknisk endring for Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen forklarer hvordan du konfigurerer funksjoner for behandling av teknisk endring for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6ef4113077c538ca1a54009aacbdeaf2ccbd0232
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581014"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8875517"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametere for styring av teknisk endring
 
@@ -27,7 +27,7 @@ Siden **Parametere for behandling av teknisk endring** inneholder konfigurasjons
 
 ## <a name="open-the-engineering-change-management-parameters-page"></a>Åpne siden Åarametere for behandling av teknisk endring
 
-Hvis du vil åpne siden **Parametere for behandling av teknisk endring**, kan du gå til **Behandling av teknisk endring \> Oppsett \> Parametere for behandling av teknisk endring**. Du kan deretter angi feltene som beskrevet i resten av delene i dette emnet.
+Hvis du vil åpne siden **Parametere for behandling av teknisk endring**, kan du gå til **Behandling av teknisk endring \> Oppsett \> Parametere for behandling av teknisk endring**. Du kan deretter angi feltene som beskrevet i resten av delene i denne artikkelen.
 
 ## <a name="release-control-tab"></a>Fanen Frigi kontroll
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere elektronisk rapportering (ER) for å hente data til Power BI
-description: Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst til Power BI-tjenester.
+description: Denne artikkelen forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst til Power BI-tjenester.
 author: NickSelin
 ms.date: 04/23/2021
 ms.topic: article
@@ -14,31 +14,31 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa9a47c9ee7c76322fd2d9bfcf5fc61a50bf421321891b3c78a782be6a9f8e6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6903513dec4da20dbc4463fbae6a406fc06e1a6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740948"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896741"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering (ER) for å hente data til Power BI
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst til Power BI-tjenester. Dette emnet bruker for eksempel Intrastat-transaksjoner som forretningsdata som må overføres. Kartvisningen for Power BI bruker disse Intrastat-transaksjonsdataene til å presentere en visning for analyse av firmaets aktiviteter for import og eksport i Power BI-rapporten.
+Denne artikkelen forklarer hvordan du kan bruke konfigurasjoner for elektronisk rapportering (ER) for å ordne overføring av data fra din forekomst til Power BI-tjenester. Denne artikkelen bruker for eksempel Intrastat-transaksjoner som forretningsdata som må overføres. Kartvisningen for Power BI bruker disse Intrastat-transaksjonsdataene til å presentere en visning for analyse av firmaets aktiviteter for import og eksport i Power BI-rapporten.
 
 ## <a name="overview"></a>Oversikt
 
-Microsoft Power BI er en samling av programvaretjenester, apper og koblinger som arbeider sammen for å aktivere eksterne datakilder til sammenhengende, visuelt altoppslukende og interaktive innsikter. Elektronisk rapportering (ER) lar brukere enkelt konfigurere datakilder og ordne dataoverføring fra programmet til Power BI. Dataene overføres som filer i formatet OpenXML-regneark (Microsoft Excel-arbeidsbokfil). De overførte filene lagres på en Microsoft SharePoint-server som er konfigurert for dette formålet. De lagrede filene brukes i Power BI til å opprette rapporter som inneholder visninger (tabeller, diagrammer, kart og så videre). Power BI-rapporter deles med Power BI-brukere, og det er tilgang til dem i Power BI-instrumentbord og på programsidene. Dette emnet forklarer følgende oppgaver:
+Microsoft Power BI er en samling av programvaretjenester, apper og koblinger som arbeider sammen for å aktivere eksterne datakilder til sammenhengende, visuelt altoppslukende og interaktive innsikter. Elektronisk rapportering (ER) lar brukere enkelt konfigurere datakilder og ordne dataoverføring fra programmet til Power BI. Dataene overføres som filer i formatet OpenXML-regneark (Microsoft Excel-arbeidsbokfil). De overførte filene lagres på en Microsoft SharePoint-server som er konfigurert for dette formålet. De lagrede filene brukes i Power BI til å opprette rapporter som inneholder visninger (tabeller, diagrammer, kart og så videre). Power BI-rapporter deles med Power BI-brukere, og det er tilgang til dem i Power BI-instrumentbord og på programsidene. Denne artikkelen forklarer følgende oppgaver:
 
-- Konfigurere Microsoft Dynamics 365 Finance.
+- Konfigurer Microsoft Dynamics 365 Finance.
 - Klargjøre ER-formatkonfigurasjonen for å hente data fra Finance-programmet.
 - Konfigurer ER-miljøet for å overføre data til Power BI.
 - Bruke overførte data til å opprette en Power BI-rapport.
 - Gjør Power BI-rapporten tilgjengelig i Finance.
 
 ## <a name="prerequisites"></a>Forutsetninger
-Hvis du vil fullføre eksemplet i dette emnet, må du ha følgende tilgang:
+Hvis du vil fullføre eksemplet i denne artikkelen, må du ha følgende tilgang:
 
 - Tilgang til én av følgende roller:
 

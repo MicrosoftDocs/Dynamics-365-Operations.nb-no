@@ -1,6 +1,6 @@
 ---
-title: Konfigurere policyer for forsendelseskonsolidering
-description: Dette emnet beskriver hvordan du definerer standard og egendefinerte policyer for forsendelseskonsolidering.
+title: Konfigurer policyer for forsendelseskonsolidering
+description: Denne artikkelen beskriver hvordan du definerer standard og egendefinerte policyer for forsendelseskonsolidering.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 0a575648c0e6f5d0e3b9fb03ea6f47252837bf9c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845931"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -26,12 +26,12 @@ ms.locfileid: "8672577"
 
 Prosessen for forsendelseskonsolidering som bruker policyer for forsendelseskonsolidering, tillater automatisk forsendelseskonsolidering under automatisk og manuell frigivelse til lageret. Når du har aktivert denne funksjonen, må du konfigurere policyene for førstegangsbehandling. Hvis ingen policyer er konfigurert, vil hver salgslinje generere en egen forsendelse som har én lastlinje.
 
-Scenarioene som presenteres i dette emnet, viser hvordan du definerer standard og egendefinerte policyer for forsendelseskonsolidering.
+Scenarioene som presenteres i denne artikkelen, viser hvordan du definerer standard og egendefinerte policyer for forsendelseskonsolidering.
 
 ## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Aktivere funksjonen Policyer for forsendelseskonsolidering
 
 > [!IMPORTANT]
-> I det [første ](#scenario-1) som beskrives i dette emnet, må du først definere et lager slik at det bruker funksjonen for den forrige forsendelseskonsolideringen. Deretter gjør du policyene for forsendelseskonsolidering tilgjengelige. På denne måten kan du oppleve hvordan oppgraderings fungerer. Hvis du planlegger å bruke et demodatamiljø for å gå gjennom det første , må du ikke aktivere funksjonen før du gjør .
+> I det [første scenarioet](#scenario-1) som beskrives i denne artikkelen, må du først definere et lager slik at det bruker funksjonen for den forrige forsendelseskonsolideringen. Deretter gjør du policyene for forsendelseskonsolidering tilgjengelige. På denne måten kan du oppleve hvordan oppgraderings fungerer. Hvis du planlegger å bruke et demodatamiljø for å gå gjennom det første , må du ikke aktivere funksjonen før du gjør .
 
 Før du kan bruke funksjonen *Policyer for forsendelseskonsolidering*, må du aktivere den i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
@@ -40,7 +40,7 @@ Før du kan bruke funksjonen *Policyer for forsendelseskonsolidering*, må du ak
 
 ## <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
-Hvert scenario i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.
+Hvert scenario i denne artikkelen refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenario 1: Konfigurere standardpolicyer for forsendelseskonsolidering
 
@@ -339,7 +339,7 @@ Nå som du har opprettet alle policyene, må du angi rekkefølgen de skal brukes
 
 ## <a name="example-scenarios-of-how-to-use-shipment-consolidation-policies"></a><a name="example-scenarios"></a> Eksempelscenarioer for hvordan du bruker policyer for forsendelseskonsolidering
 
-Scenarioene nedenfor illustrerer hvordan du kan bruke policyene for forsendelseskonsolidering som du opprettet under lesing av dette emnet. Hvert secnario veileder deg gjennom prosessen for forsendelseskonsolidering som bruker policyer for forsendelseskonsolidering, eller manuell frigivelse til lageret:
+Scenarioene nedenfor illustrerer hvordan du kan bruke policyene for forsendelseskonsolidering som du opprettet under lesing av denne artikkelen. Hvert secnario veileder deg gjennom prosessen for forsendelseskonsolidering som bruker policyer for forsendelseskonsolidering, eller manuell frigivelse til lageret:
 
 - Scenario 1 [Konsolidere forsendelser når de frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer](../warehousing/consolidate-shipments-automatic.md)
 - Scenario 2 [Konsolidere forsendelser når policyen for forsendelseskonsolidering overstyres fra siden Frigi til lager](../warehousing/consolidate-shipments-release-to-warehouse-override.md)

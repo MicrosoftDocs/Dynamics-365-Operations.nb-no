@@ -1,6 +1,6 @@
 ---
 title: Oversikt over skybaserte søk
-description: Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 02/28/2022
 ms.topic: overview
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 8a3ab869eb9ddc0e73061bd2363cf9b3962da1e3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371435"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8850362"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversikt over skybaserte søk
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over skydrevne søk i Microsoft Dynamics 365 Commerce.
 
 Produktoppdaging bidrar til å garantere at kunder raskt og enkelt kan finne produkter ved å bla gjennom kategorier, søke og filtrere. Forhandlere betrakter produktoppdagelse som et primært verktøy for kundeinteraksjon på tvers av kanaler basert på CSU (Cloud Scale Unit), for eksempel e-handel og salgssted.
 

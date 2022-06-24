@@ -1,6 +1,6 @@
 ---
 title: Begrensninger på etterkalkuleringsversjoner for standard kostpris
-description: Dette emnet beskriver begrensninger som gjelder for etterkalkuleringsversjoner for standard kostpriser.
+description: Denne artikkelen beskriver begrensninger som gjelder for etterkalkuleringsversjoner for standard kostpriser.
 author: JennySong-SH
 ms.date: 01/17/2018
 ms.topic: article
@@ -16,18 +16,18 @@ ms.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11bf14b2926fd4ff053697bef8b7dad781948a2c
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8c5c00ae8952e2c80d97d039271a6f5c63e9a72f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672213"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867992"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Begrensninger på etterkalkuleringsversjoner for standard kostpris
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver begrensninger som gjelder for etterkalkuleringsversjoner for standard kostpriser. 
+Denne artikkelen beskriver begrensninger som gjelder for etterkalkuleringsversjoner for standard kostpriser. 
 
 Begrensningene nedenfor sikrer at prinsippene for etterkalkulering av standard kostpriser overholdes:
 
@@ -37,9 +37,9 @@ Begrensningene nedenfor sikrer at prinsippene for etterkalkulering av standard k
 
 -  Stykklisteberegninger må utføres med nedbryting på ett enkelt nivå.
 
-Varekostnadsdata for standard kostpriser kan kopieres til en annen etterkalkuleringsversjon som inneholder standard kostpriser eller planlagte kostnader. Imidlertid kan varekostnadsdataene for planlagte kostnader ikke kopieres til en etterkalkuleringsversjon som inneholder standard kostpriser, fordi begrensningene det vises til tidligere i dette emnet, ikke gjelder planlagte kostnader.
+Varekostnadsdata for standard kostpriser kan kopieres til en annen etterkalkuleringsversjon som inneholder standard kostpriser eller planlagte kostnader. Imidlertid kan varekostnadsdataene for planlagte kostnader ikke kopieres til en etterkalkuleringsversjon som inneholder standard kostpriser, fordi begrensningene det vises til tidligere i denne artikkelen, ikke gjelder planlagte kostnader.
 
-## <a name="related-topics"></a>Relaterte emner
+## <a name="related-articles"></a>Relaterte artikler
 
 [Oversikt over etterkalkuleringsversjoner](costing-versions.md)
 

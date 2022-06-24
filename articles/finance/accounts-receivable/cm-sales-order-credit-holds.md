@@ -1,6 +1,6 @@
 ---
 title: Kredittgrenser for salgsordrer
-description: Dette emnet beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre.
+description: Denne artikkelen beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre.
 author: JodiChristiansen
 ms.date: 07/20/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2d8966f993e7ca82b10a2ef5a023256a05682980
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 44560425056ee1726f21a4279f36c2e718956814
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856835"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredittgrenser for salgsordrer
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre. Blokkeringsreglene for kredittbehandling kan gjelde for en individuell kunde eller en gruppe kunder. Blokkeringsregler definerer svar på følgende omstendigheter:
+Denne artikkelen beskriver oppsettet av regler som brukes til å angi kredittsperre for en salgsordre. Blokkeringsreglene for kredittbehandling kan gjelde for en individuell kunde eller en gruppe kunder. Blokkeringsregler definerer svar på følgende omstendigheter:
 
 1. Antall dager forfalt
 2. Kontostatus

@@ -1,6 +1,6 @@
 ---
 title: Legge til en logo
-description: Dette emnet beskriver hvordan du legger til en logo på området ditt i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du legger til en logo på området ditt i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
@@ -16,22 +16,22 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 624cd6f7000f5038b9996eb94caf79719d07f99f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964585"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8871786"
 ---
 # <a name="add-a-logo"></a>Legge til en logo
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du legger til en logo på området ditt i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du legger til en logo på området ditt i Microsoft Dynamics 365 Commerce.
 
 Noe av det første du gjør når du bygger området, er å legge til selskapet eller merkelogoen i overskriften til området. Det elektroniske modulbiblioteket for Dynamics 365 Commerce gir en modul som gjør denne oppgaven lett.
 
-Du kan legge til en logo direkte i en mal, et oppsett eller en side. På denne måten kan du enkelt endre logoen som vises på bestemte sider eller i grupper med sider. Dette emnet dekker imidlertid det hyppigste scenarioet, der du legger til logoen din i et topptekstfragment som kan brukes på nytt på tvers av alle sidene på området.
+Du kan legge til en logo direkte i en mal, et oppsett eller en side. På denne måten kan du enkelt endre logoen som vises på bestemte sider eller i grupper med sider. Denne artikkelen dekker imidlertid det hyppigste scenarioet, der du legger til logoen din i et topptekstfragment som kan brukes på nytt på tvers av alle sidene på området.
 
 ## <a name="prerequisites"></a>Forutsetninger
 

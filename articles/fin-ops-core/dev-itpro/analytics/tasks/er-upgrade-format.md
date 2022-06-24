@@ -1,6 +1,6 @@
 ---
 title: ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet
-description: Dette emnet beskriver hvordan du vedlikeholder en formatkonfigurasjon for elektronisk rapportering (ER).
+description: Denne artikkelen beskriver hvordan du vedlikeholder en formatkonfigurasjon for elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfcb85d964234063fd3c6a8e5ea29f7b222e966124b48e46b72b04f457c91e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5dbf8ab2ea875e902709215e249871474b17230f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720814"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883516"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet
 
@@ -119,7 +119,7 @@ Endre statusen for utformet formatkonfigurasjon fra Utkast til Fullført for å 
     Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.1.1. Dette betyr at det er versjon 1 av egendefinerte BBS-format (Storbritannia fiktivt egendefinert), som er basert på versjon 1 av BBS-format (Storbritannia fiktivt), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Teste det egendefinerte formatet for å generere betalingsfiler
-Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske dokumenter for betalinger" i en parallel Finance and Operations-økt. Velg BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte XML-noden som presenterer IBAN-kode i henhold til områdekrav.  
+Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Økonomi og drift-økt. Velg BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte XML-noden som presenterer IBAN-kode i henhold til områdekrav.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Oppdatere den eksisterende landspesifikke konfigurasjonen
 Litware, Inc. må oppdatere BBS-konfigurasjonen (Storbritannia fiktiv) og bruke nye landkrav for administrasjon av formatet for det elektroniske dokumentet. Senere vil dette tas med i en ny versjon av denne konfigurasjonen, som vil tilbys for serviceabonnenter, inkludert Proseware, Inc.  
@@ -239,7 +239,7 @@ For å gjøre dette må Proseware, Inc. endre den grunnleggende konfigurasjonsve
     Vær oppmerksom på at den opprettede konfigurasjonen lagres som fullført versjon 1.2.2: versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv egendefinert), som er basert på versjon 2 av det grunnleggende BBS-formatet (Storbritannia fiktiv), som er basert på versjon 1 av datamodellen Betalinger (forenklet modell).  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det egendefinerte formatet for generering av betalingsfiler
-Fullfør trinnene i fremgangsmåten "Bruke opprettet format til å generere elektroniske dokumenter for betalinger" i en parallel Finance and Operations-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
+Fullfør trinnene i fremgangsmåten "Bruke opprettet format for å generere elektroniske betalingsdokumenter" i en parallell Økonomi og drift-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
 
 
 

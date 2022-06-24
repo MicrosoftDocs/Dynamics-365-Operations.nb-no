@@ -1,6 +1,6 @@
 ---
 title: Funksjonalitet for stykklisteutforming
-description: Dette emnet beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister.
+description: Denne artikkelen beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c068e7f5f4f36663766e21e14cf8e75cf1442f50
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fda2b1d835afdcf06a50528748861fecc6792f8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577990"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844273"
 ---
 # <a name="bom-designer-functionality"></a>Funksjonalitet for stykklisteutforming
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister. Du kan klikke Konfigurer for å velge ulike konfigurasjoner og angi hvilken informasjon som skal vises på linjene i treet.
+Denne artikkelen beskriver hvordan du kan bruke siden Stykklisteutforming til å utforme og arbeide med trestrukturer for stykklister. Du kan klikke Konfigurer for å velge ulike konfigurasjoner og angi hvilken informasjon som skal vises på linjene i treet.
 
 Når du åpner siden **Stykklisteutforming** fra siden **Frigitte produkter**, viser den hierarkiet for stykklistene som er aktive og godkjente for den valgte varen, standard bestillingsområde for varen og den faktiske datoen.  
 

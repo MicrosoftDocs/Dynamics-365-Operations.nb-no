@@ -1,6 +1,6 @@
 ---
 title: Administrere vurderinger og anmeldelser
-description: Dette emnet forklarer hvordan du behandler vurderinger og omtaler i områdebyggeren for Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen forklarer hvordan du behandler vurderinger og omtaler i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/09/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: 79738030d4e33ceaad105a404b8188384d5a320c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968233"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881329"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du behandler vurderinger og omtaler i områdebyggeren for Microsoft Dynamics 365 Commerce.
+Denne artikkelen forklarer hvordan du behandler vurderinger og omtaler i områdebyggeren for Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce bruker Microsoft Azure Cognitive Service til å automatisk moderere vurderingstekst ved å fjerne upassende ord. I tillegg kan moderatorer bruke Dynamics 365 Commerce-områdebygger til å implementere følgende manuelle oppgaver:
 

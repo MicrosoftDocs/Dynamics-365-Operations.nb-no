@@ -1,6 +1,6 @@
 ---
 title: Introduksjon til aktiva
-description: Dette emnet gir en oversikt over aktiva i Aktivastyring.
+description: Denne artikkelen gir en oversikt over aktiva i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43a5646bc4a1301922781d8b083dfa709befe3dca0fad1074b5433c6e02f5c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874195"
 ---
 # <a name="introduction-to-assets"></a>Introduksjon til aktiva
 
@@ -30,9 +30,9 @@ ms.locfileid: "6767514"
 
  
 
-Dette emnet gir en oversikt over aktiva i Aktivastyring. Et *aktivum* er enhver type utstyr, for eksempel en maskin eller en maskindel, som krever vedlikehold, service eller reparasjon.
+Denne artikkelen gir en oversikt over aktiva i Aktivastyring. Et *aktivum* er enhver type utstyr, for eksempel en maskin eller en maskindel, som krever vedlikehold, service eller reparasjon.
 
-Et aktivum oppdateres automatisk med relatert informasjon. Denne informasjonen kan for eksempel være nye eller oppdaterte arbeidsordrer. Du kan opprette aktiva via menyelementet **Alle aktiva** eller menyelementetet **Ventende aktiva**. Dette emnet beskriver hvordan du oppretter aktiva via menyelementet **Alle aktiva**. Hvis du vil ha informasjon om hvordan du oppretter aktiva via menyalementet **Ventende aktiva**, kan du se [Opprette aktiva basert på bestillinger](../objects/create-objects-based-on-purchase-orders.md).
+Et aktivum oppdateres automatisk med relatert informasjon. Denne informasjonen kan for eksempel være nye eller oppdaterte arbeidsordrer. Du kan opprette aktiva via menyelementet **Alle aktiva** eller menyelementetet **Ventende aktiva**. Denne artikkelen beskriver hvordan du oppretter aktiva via menyelementet **Alle aktiva**. Hvis du vil ha informasjon om hvordan du oppretter aktiva via menyalementet **Ventende aktiva**, kan du se [Opprette aktiva basert på bestillinger](../objects/create-objects-based-on-purchase-orders.md).
 
 ## <a name="all-assets"></a>Alle anleggsmidler
 

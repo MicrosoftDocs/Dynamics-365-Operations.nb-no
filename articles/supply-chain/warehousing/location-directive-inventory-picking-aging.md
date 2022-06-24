@@ -1,6 +1,6 @@
 ---
 title: Aldersfordeling for lagerplukking for lokasjonsdirektiv
-description: Dette emnet forklarer hvordan du bruker først-inn-først-ut (FIFO) og sist-inn-først-ut (LIFO) lokasjonsdirektivstrategier under plukking.
+description: Denne artikkelen forklarer hvordan du bruker først-inn-først-ut (FIFO) og sist-inn-først-ut (LIFO) lokasjonsdirektivstrategier under plukking.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 229dd0033e3eae4bdd33acca6736b7a9feec8c9b
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676278"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885703"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling for lagerplukking for lokasjonsdirektiv
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du bruker først-inn-først-ut (FIFO) og sist-inn-først-ut (LIFO) lokasjonsdirektivstrategier under plukking. Disse strategiene fungerer sammen med aldersfordelingsdatoene som registreres for lokasjoner som skal spores når beholdningen først ankom lageret. Funksjonen *Aldersfordeling for lagerplukking for lokasjonsdirektiv* bruker datoen for lokasjonen for å bestemme aldersfordeling. Funksjonen *Status for lagerlokasjon* oppdaterer datoen på lokasjonen basert på datoen fra nummerskiltet.
+Denne artikkelen forklarer hvordan du bruker først-inn-først-ut (FIFO) og sist-inn-først-ut (LIFO) lokasjonsdirektivstrategier under plukking. Disse strategiene fungerer sammen med aldersfordelingsdatoene som registreres for lokasjoner som skal spores når beholdningen først ankom lageret. Funksjonen *Aldersfordeling for lagerplukking for lokasjonsdirektiv* bruker datoen for lokasjonen for å bestemme aldersfordeling. Funksjonen *Status for lagerlokasjon* oppdaterer datoen på lokasjonen basert på datoen fra nummerskiltet.
 
 Du kan bruke FIFO- og LIFO-strategier til å levere både partisporingsvarer og ikke-partisporingsvarer, basert på datoen da beholdningen ble registrerte på lageret. Denne funksjonen kan være spesielt nyttig for ikke-partisporinglageret, der en utløpsdato ikke er tilgjengelig for sortering.
 

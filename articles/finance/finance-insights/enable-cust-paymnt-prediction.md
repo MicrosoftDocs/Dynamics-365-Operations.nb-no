@@ -1,6 +1,6 @@
 ---
 title: Aktiver kundebetalingsprognoser
-description: Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights.
+description: Denne artikkelen forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,21 +15,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a52d38e8fb842c7fbc8adf60a6daaef6cdc9d5ec
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: f04ee9db5efe3595dea30d641c5097d6b90c0d77
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713367"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898214"
 ---
 # <a name="enable-customer-payment-predictions"></a>Aktiver kundebetalingsprognoser
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights. Du aktiverer funksjonen i arbeidsområdet **Funksjonsbehandling** og angir konfigurasjonsinnstillinger på siden **Finance Insights-konfigurasjon**. Dette emnet inneholder også informasjon som kan hjelpe deg å bruke funksjonen på en effektiv måte.
+Denne artikkelen forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights. Du aktiverer funksjonen i arbeidsområdet **Funksjonsbehandling** og angir konfigurasjonsinnstillinger på siden **Finance Insights-konfigurasjon**. Denne artikkelen inneholder også informasjon som kan hjelpe deg å bruke funksjonen på en effektiv måte.
 
 > [!NOTE]
-> Før du fullfører trinnene nedenfor, må du fullføre de nødvendige trinnene i emnet [Konfigurere for Finance Insights](configure-for-fin-insites.md).
+> Før du fullfører trinnene nedenfor, må du fullføre de nødvendige trinnene i artikkelen [Konfigurere for Finance Insights](configure-for-fin-insites.md).
 
 1. Slik aktiverer du funksjonen for kundebetalingsforutsigelser:
 

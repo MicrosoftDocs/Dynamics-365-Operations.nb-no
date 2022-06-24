@@ -1,6 +1,6 @@
 ---
 title: Stykklister for aktiva
-description: Dette emnet beskriver stykklister for aktiva i Aktivastyring.
+description: Denne artikkelen beskriver stykklister for aktiva i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0430891607ac4558c91b86318aee318d0076007daf59a32eda65cb411d274b3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751991"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882786"
 ---
 # <a name="asset-boms"></a>Stykklister for aktiva
 
@@ -28,7 +28,7 @@ ms.locfileid: "6751991"
 
  
 
-Dette emnet beskriver stykklister for aktiva i Aktivastyring. Siden **Stykklister for aktiva** viser en liste over alle varer (reservedeler og andre varer) som brukes på et aktivum i løpet av hele levetiden. Når du oppretter et nytt aktivum, bør du vurdere å definere en stykkliste for aktiva som en del av installasjonsprosedyren. På denne måten kan du spore vareloggen for aktivumet fra opprettelsesdatoen.
+Denne artikkelen beskriver stykklister for aktiva i Aktivastyring. Siden **Stykklister for aktiva** viser en liste over alle varer (reservedeler og andre varer) som brukes på et aktivum i løpet av hele levetiden. Når du oppretter et nytt aktivum, bør du vurdere å definere en stykkliste for aktiva som en del av installasjonsprosedyren. På denne måten kan du spore vareloggen for aktivumet fra opprettelsesdatoen.
 
 Når du har fullført en vedlikeholdsjobb, og vareforbruket er registrert på en arbeidsordre, kan du spore forbruk av reservedeler og andre varer som brukes på aktivumet. Med denne funksjonen kan du beholde en fullstendig vareforbrukspost for alle ressursene dine. Du kan for eksempel bruke posten til å overvåke om en bestemt reservedel ofte erstattes, eller til å holde rede på reservedelene eller andre elementer som for øyeblikket brukes på et anleggsmiddel.
 

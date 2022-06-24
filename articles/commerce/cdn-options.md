@@ -1,6 +1,6 @@
 ---
 title: Implementeringsalternativer for innholdsleveringsnettverk
-description: Dette emnet gjennomgår de ulike alternativene for CDN-implementering (Content Delivery Network) som kan brukes i Microsoft Dynamics 365 Commerce-miljøer. Disse alternativene omfatter innebygde, Commerce-formidlede forekomster av Azure Front Door og kundeeide forekomster av Azure Front Door.
+description: Denne artikkelen gjennomgår de ulike alternativene for CDN-implementering (Content Delivery Network) som kan brukes i Microsoft Dynamics 365 Commerce-miljøer. Disse alternativene omfatter innebygde, Commerce-formidlede forekomster av Azure Front Door og kundeeide forekomster av Azure Front Door.
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 944123f3afe1c869c262da3997a73d8c60bbc366
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: a63751d42ab98610904191f1c09794b2311b0189
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692731"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884423"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementeringsalternativer for innholdsleveringsnettverk
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gjennomgår de ulike alternativene for CDN-implementering (Content Delivery Network) som kan brukes i Microsoft Dynamics 365 Commerce-miljøer. Disse alternativene omfatter innebygde, Commerce-formidlede forekomster av Azure Front Door og kundeeide forekomster av Azure Front Door.
+Denne artikkelen gjennomgår de ulike alternativene for CDN-implementering (Content Delivery Network) som kan brukes i Microsoft Dynamics 365 Commerce-miljøer. Disse alternativene omfatter innebygde, Commerce-formidlede forekomster av Azure Front Door og kundeeide forekomster av Azure Front Door.
 
 Commerce-kunder har flere alternativer når de vurderer hvilken CDN-tjeneste som skal brukes med Commerce-miljøet. Commerce frigis med grunnleggende støtte for Azure Front Door, som dekker grunnleggende driftingskrav og egendefinerte domenekrav. For firmaer som vil ha mer kontroll og mer spesifikke sikkerhetsegenskaper, for eksempel webprogrambrannmur (WAF), kan det være best å bruke enten en kundeeid forekomst av Azure Front Door eller en ekstern CDN-tjeneste.
 

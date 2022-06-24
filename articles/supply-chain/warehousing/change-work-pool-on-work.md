@@ -1,6 +1,6 @@
 ---
 title: Endre arbeidspulje i arbeid
-description: Dette emnet beskriver hvordan du kan bruke knappen for Endre arbeidspulje for arbeidselementer til å endre arbeidsutvalget for eksisterende arbeid.
+description: Denne artikkelen beskriver hvordan du kan bruke knappen for Endre arbeidspulje for arbeidselementer til å endre arbeidsutvalget for eksisterende arbeid.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 817b45e8f5af957801a0af04e50acf20ba16c26d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669859"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8900629"
 ---
 # <a name="change-work-pool-on-work"></a>Endre arbeidspulje i arbeid
 
@@ -34,14 +34,14 @@ Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og k
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>Konfigurere funksjonen Endre arbeidspulje i arbeid
 
-Hvis du vil bruke denne funksjonen, må du ha noen arbeidsgrupper konfigurert. Du kan også definere arbeidsmalene, slik at de automatisk tilordner et utvalg. Hvis du vil arbeide med eksempelscenarioet som er oppgitt senere i dette emnet, setter du opp systemet som beskrevet i denne delen.
+Hvis du vil bruke denne funksjonen, må du ha noen arbeidsgrupper konfigurert. Du kan også definere arbeidsmalene, slik at de automatisk tilordner et utvalg. Hvis du vil arbeide med eksempelscenarioet som er oppgitt senere i denne artikkelen, setter du opp systemet som beskrevet i denne delen.
 
 ### <a name="set-up-work-pools"></a>Definere arbeidspuljer
 
 I arbeidsutvalg kan du organisere arbeidselementer etter type. Hvis du vil arbeide med funksjonen *Endre arbeidspulje i arbeid*, må du ha minst to arbeidsgrupper tilgjengelig. Følg denne fremgangsmåten for å vise og legge til arbeidspuljer.
 
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsutvalg**.
-1. Hvis du arbeider med demonstrasjonsdata fra **USMF**-firmaet og vil arbeide deg gjennom eksempelscenarioet senere i dette emnet, legger du til to arbeidsgrupper som har følgende innstillinger:
+1. Hvis du arbeider med demonstrasjonsdata fra **USMF**-firmaet og vil arbeide deg gjennom eksempelscenarioet senere i denne artikkelen, legger du til to arbeidsgrupper som har følgende innstillinger:
 
     - Arbeidspulje 1:
 
@@ -57,7 +57,7 @@ I arbeidsutvalg kan du organisere arbeidselementer etter type. Hvis du vil arbei
 
 ### <a name="set-up-work-templates"></a>Konfigurer arbeidsmaler
 
-For hver av arbeidsmalene kan du angi et standard arbeidsutvalg, i henhold til hva du trenger. For hver relevante mal tilordner du et arbeidsutvalg i kolonnen **ID for arbeidsutvalg**. I dette tilfellet vil alle arbeidselementer som genereres ved hjelp av en gitt mal, automatisk arve det tilordnede arbeidsutvalget. Hvis du arbeider med demonstrasjonsdata fra **USMF**-firmaet og vil arbeide deg gjennom eksempelscenarioet senere i dette emnet, følger du disse trinnene.
+For hver av arbeidsmalene kan du angi et standard arbeidsutvalg, i henhold til hva du trenger. For hver relevante mal tilordner du et arbeidsutvalg i kolonnen **ID for arbeidsutvalg**. I dette tilfellet vil alle arbeidselementer som genereres ved hjelp av en gitt mal, automatisk arve det tilordnede arbeidsutvalget. Hvis du arbeider med demonstrasjonsdata fra **USMF**-firmaet og vil arbeide deg gjennom eksempelscenarioet senere i denne artikkelen, følger du disse trinnene.
 
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsmaler**.
 1. I handlingsruten velger du **Rediger** for å legge siden inn i redigeringsmodus.
@@ -70,7 +70,7 @@ For hver av arbeidsmalene kan du angi et standard arbeidsutvalg, i henhold til h
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
-Dette scenariet viser hvordan du kan endre strømmen av behandling for et eksisterende arbeidselement ved å endre arbeidsgruppen. Den bruker demonstrasjonsdata fra **USMF**-firmaet og innstillingene som ble foreslått tidligere i dette emnet.
+Dette scenariet viser hvordan du kan endre strømmen av behandling for et eksisterende arbeidselement ved å endre arbeidsgruppen. Den bruker demonstrasjonsdata fra **USMF**-firmaet og innstillingene som ble foreslått tidligere i denne artikkelen.
 
 ### <a name="create-a-sales-order-and-release-it-to-the-warehouse"></a>Opprette en salgsordre og frigi den til lageret
 

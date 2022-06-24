@@ -1,6 +1,6 @@
 ---
-title: Definere et lokasjonsdirektiv for bestillings
-description: Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv.
+title: Definer et lokasjonsdirektiv for bestillings
+description: Denne artikkelen forklarer hvordan du definerer et enkelt lokasjonsdirektiv.
 author: Weijiesa
 ms.date: 08/08/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2275b2fd70e246955054930b13f29a6c0b287363
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 6d973d1cdb530a031ca8a5caf621f9bebced4842
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674145"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873499"
 ---
-# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Definere et lokasjonsdirektiv for bestillings
+# <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Definer et lokasjonsdirektiv for bestillings
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemplet som vises, oppretter et lokasjonsdirektiv som skal brukes til å avgjøre hvor du vil plassere varer som er mottatt for en bestilling. Du kan spille av denne oppgaveveiledningen med dataene som er nevnt, ved hjelp av demonstrasjonsdataselskapet USMF. Forutsetninger: Du må opprette en disposisjonskode. I denne fremgangsmåten bruker vi en disposisjonskode kalt Endre navn. Hvis du oppretter et lokasjonsdirektiv i dine egne data, må du ha definert avansert lagerstyring for lager og varer. Denne fremgangsmåten er ment for lagersjef.
+Denne artikkelen forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemplet som vises, oppretter et lokasjonsdirektiv som skal brukes til å avgjøre hvor du vil plassere varer som er mottatt for en bestilling. Du kan spille av denne oppgaveveiledningen med dataene som er nevnt, ved hjelp av demonstrasjonsdataselskapet USMF. Forutsetninger: Du må opprette en disposisjonskode. I denne fremgangsmåten bruker vi en disposisjonskode kalt Endre navn. Hvis du oppretter et lokasjonsdirektiv i dine egne data, må du ha definert avansert lagerstyring for lager og varer. Denne fremgangsmåten er ment for lagersjef.
 
 1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Lokasjonsdirektiv**.
 2. Velg **Bestillinger** i feltet **Arbeidsordretype**.

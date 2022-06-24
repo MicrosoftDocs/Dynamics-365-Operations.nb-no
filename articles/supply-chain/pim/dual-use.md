@@ -1,6 +1,6 @@
 ---
 title: Varer med to bruksområder
-description: Dette emnet forklarer hvordan du holder rede på produkter som er identifisert som varer med to bruksområder, lagrer sertifikatnumre for hvert relevante produkt og målland og skriver ut gyldige sertifikatnumre på relevante fakturaer, følgesedler og/eller salgsordrer.
+description: Denne artikkelen forklarer hvordan du holder rede på produkter som er identifisert som varer med to bruksområder, lagrer sertifikatnumre for hvert relevante produkt og målland og skriver ut gyldige sertifikatnumre på relevante fakturaer, følgesedler og/eller salgsordrer.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
-ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
+ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8736040"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878910"
 ---
 # <a name="dual-use-goods"></a>Varer med to bruksområder
 
@@ -42,7 +42,7 @@ Tenk deg følgende scenario:
 
 6. Ordren inkluderer produkt X-100, produktet sendes til Frankrike, og det finnes et fransk sertifikat for produktet. Sertifikatet er imidlertid utløpt. Du får derfor følgende advarsel: "Sertifikater for to bruksområder for ett eller flere flerbruksvarer i denne salgsordren er ikke gyldig. Vil du fortsette med bekreftelsen?"
 
-Dette emnet forklarer hvordan du konfigurerer alle innstillingene som kreves for å konfigurere flerbruksvarer og støtte dette scenariet.
+Denne artikkelen forklarer hvordan du konfigurerer alle innstillingene som kreves for å konfigurere flerbruksvarer og støtte dette scenariet.
 
 ## <a name="define-dual-use-requirements-for-each-relevant-country"></a>Definere flerbrukskrav for hvert aktuelle land
 

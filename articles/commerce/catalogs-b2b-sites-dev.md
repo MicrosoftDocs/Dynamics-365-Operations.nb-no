@@ -1,6 +1,6 @@
 ---
-title: Påvirkning av handelskataloger for B2B-tilpasninger
-description: Dette emnet beskriver påvirkningen av handelskatalogene for B2B-funksjonen i Microsoft Dynamics 365 Commerce.
+title: Utvidbarhetsinnvirkning for Commerce-kataloger for B2B-tilpasninger
+description: Denne artikkelen beskriver påvirkningen av handelskatalogene for B2B-funksjonen i Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 04/28/2022
 ms.topic: article
@@ -9,19 +9,19 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: aff333bfe8003233dd5d8181aa8c5dd7eaeffcd0
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: f21d3375db69dd412325d00261bfc18e26d0c257
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656869"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849021"
 ---
-# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Påvirkning av handelskataloger for B2B-tilpasninger
+# <a name="extensibility-impact-of-commerce-catalogs-for-b2b-customizations"></a>Utvidbarhetsinnvirkning for Commerce-kataloger for B2B-tilpasninger
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emnet beskriver påvirkningen av **handelskatalogene for B2B-funksjonen** i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver påvirkningen av **handelskatalogene for B2B-funksjonen** i Microsoft Dynamics 365 Commerce.
 
 Hvis du er interessert i å utvide katalogkonteksten til egendefinerte scenarioer, kan det hende at tilpasningene må oppdateres. Denne oppdateringen følger standardprosessen som kunder må følge, fordi tilpasningene kanskje ikke automatisk støtter de siste funksjonene etter at oppgraderinger er utført. Hvis tilpasningene inkluderer alle nye funksjoner eller reparasjonsfiler for reparasjoner de har erfaringer med, anbefaler vi at du oppdaterer tilpasningskoden tilsvarende. Denne oppdateringen likner på endringene som Microsoft kan ha gjort for kjernekoden.
 

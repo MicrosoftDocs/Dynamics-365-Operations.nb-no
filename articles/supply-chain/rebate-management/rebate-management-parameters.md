@@ -1,6 +1,6 @@
 ---
 title: Rabattbehandlingsparametere
-description: Dette emnet beskriver siden Rabattbehandlingsparametere. Denne siden inneholder innstillinger som påvirker postering, statusoppdateringer, nummerserier og annen virkemåte.
+description: Denne artikkelen beskriver siden Rabattbehandlingsparametere. Denne siden inneholder innstillinger som påvirker postering, statusoppdateringer, nummerserier og annen virkemåte.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8f5c9734b2480329eed246bcbbfe3bd6e9991e0b
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 218c54d97f3ac204e8613f5efdda0cc9d713ee04
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688998"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895532"
 ---
 # <a name="rebate-management-parameters"></a>Rabattbehandlingsparametere
 
@@ -45,9 +45,9 @@ Følgende tabell beskriver feltene som er tilgjengelige på fanen **Rabattbehand
 
 ## <a name="number-sequences-tab"></a>Fanen Nummerserier
 
-Bruk fanen **Nummerserier** på siden **Rabattbehandlingsparametere** til å tilordne nummerseriekoder til de ulike nummerseriene som Rabattbehandling bruker. I tabellen nedenfor beskrives formålet med hver av disse nummerseriene. Hvis du vil ha mer informasjon om nummerserier, kan du se [Oversikt over nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) og relaterte emner.
+Bruk fanen **Nummerserier** på siden **Rabattbehandlingsparametere** til å tilordne nummerseriekoder til de ulike nummerseriene som Rabattbehandling bruker. I tabellen nedenfor beskrives formålet med hver av disse nummerseriene. Hvis du vil ha mer informasjon om nummerserier, kan du se [Oversikt over nummerserier](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) og relaterte artikler.
 
-| Referanse | beskrivelse |
+| Referanse | Beskrivelse |
 |---|---|
 | Rabattbehandlingsavtale | Nummerserien tilordner en unik nøkkelverdi til hver rabattavtale. Denne nøkkelen brukes når det opprettes avtaler. |
 | Rabattbehandlingsnummer | Nummerserien tilordner en unik nøkkelverdi til hver rabatt. Denne nøkkelen brukes til å identifisere rabattrelasjoner. |

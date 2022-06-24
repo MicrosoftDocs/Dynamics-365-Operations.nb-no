@@ -1,6 +1,6 @@
 ---
-title: Brødsmulemodul
-description: Dette emnet dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+title: Søkebanemodul
+description: Denne artikkelen dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: aa7f6e2f2b15c3e5d89cd645b3f1cc4c83c5b8d9
-ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
+ms.openlocfilehash: 5f28fa563398773fb714576c3a80d65aec91cee1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "8780340"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8862287"
 ---
 # <a name="breadcrumb-module"></a>Søkebanemodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker brødsmulemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
 Brødsmulemoduler brukes til å levere sekundær navigasjon på områdesider. De vises vanligvis øverst på en side, under overskriften. Selv om brødsmulemoduler kan legges til på en hvilken som helst side, brukes de oftest på sider for produktdetaljer (PDP-sider) for å vise produktkategorihierarkiet og gi en rask metode for å bevege seg rundt på et område. En brødsmulemodul kan også brukes til å vise en "Tilbake til resultatene"-kobling når en bruker åpner en PDP fra en søke- eller listeside. På denne måten kan brukere raskt gå tilbake til den filtrerte listesiden for å fortsette å handle.
 

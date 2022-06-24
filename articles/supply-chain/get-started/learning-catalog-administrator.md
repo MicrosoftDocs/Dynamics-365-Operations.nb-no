@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a61e501d843e220259f9e26aac4309e6902d7a22
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a9ff9cb71b08d94e45e82c2b8f81550c9f8aba64
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669664"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897755"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Opplæringskatalog for Dynamics 365 Supply Chain Management-administratorer
 
@@ -42,7 +42,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Overføre data og komme i gang med økonomi- og driftsapper](/learn/paths/migrate-data-go-live-finance-operations/) | Som en funksjonell konsulent må du kjenne til hvordan du kan klargjør kundens data for overføring, arbeide med databehandling og utføre bruk av testing av brukeraksept for å komme i gang med økonomi- og driftsapper. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer |
 | [Arbeide med analyse og rapportere i Finance and Operation](/learn/modules/work-with-analytics-reporting-in-dynamics-365-finance-ops/) | Bedriftsledere kan ta viktige avgjørelser i firmaet hvis de har nøyaktig innsikt i underliggende økonomiske data og driftsdata. Uten datasynlighet har bedriftsledere en nesten umulig oppgave. Når du bruker analyse og rapportering i økonomi- og driftsapper, kan du hjelpe alle bedriftsbrukere, avhengig av sikkerhetsrettighetene, slik at de får den nødvendige innsikten til å kunne ta disse avgjørende valgene. | Gratis, selvbetjent elektronisk læringsforløp | 1.5 timer |
 | [Administrere et implementeringsprosjekt for Finance and Operations](/learn/paths/implement-finance-operations/) | Lær de viktigste elementene og de beste fremgangsmåtene for å administrere et vellykket økonomi- og driftsimplementeringsprosjekt. Fra det første trinnet der du planlegger og utformer prosjektmetodologi, bruken av FastTrack-tjenester, utviklingsstrategien, dataadministrasjonen og mer, til de beste måtene å administrere og overvåke dine operasjoner på etter at du har aktivert. | Gratis, selvbetjent elektronisk læringsforløp | 11.5 timer |
-| [Startside for systemadministrasjon](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Dette emnet peker til innhold for systemansvarlige for Microsoft Dynamics 365 for Finance and Operations. Dette innholdet lar deg konfigurere systemet slik at det fungerer problemfritt og effektivt for organisasjonen. | Dokumentasjon | |
+| [Startside for systemadministrasjon](/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Denne artikkelen peker til innhold for systemansvarlige for Microsoft Dynamics 365 for Finance and Operations. Dette innholdet lar deg konfigurere systemet slik at det fungerer problemfritt og effektivt for organisasjonen. | Dokumentasjon | |
 | [Finance and Operations: Introduksjon for Dynamics 365 (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack tilbyr en introduksjonstjeneste for alle Dynamics 365 for Finance and Operations-prosjekter. I dette tekniske foredraget forklarer vi introduksjonsprosessen, gjennomgår innholdet i introduksjonsøkten med deg, og viser hvordan vi gjør introduksjonen mer effektiv og praktisk i nærmeste fremtid. Denne økten er spesielt relevant for alle som arbeider med kunder i de tidlige stadiene av et prosjekt, mellom å inngå lisensavtalen og initieringen av implementeringsprosjektet. | Gratis opptak av en webkonferanse | 62 minutter |
 | [Lokal distribusjon (lokale forretningsdata) (DYN382PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Bli med i dette tekniske foredraget for å få en oversikt over det lokale distribusjonsalternativet for Dynamics 365 for Finance and Operations Enterprise Edition. I denne økten vil vi se på løsningsarkitekturen til en lokal distribusjon, ALM-forhold, systemkrav og hvordan du kan klargjøre Life Cycle Services-prosjektet. | Gratis opptak av en webkonferanse | 48 minutter |
 | [Kopier til juridisk enhet (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | I denne økten vil vi beskrive en ny funksjon i rammeverket for databehandling, Kopier til juridisk enhet. Vi vil først gå gjennom de nye funksjonene som er lagt til i rammeverk for databehandling i plattform 8 for arbeidsområdet, maler og dataprosjekter, og deretter beskrive tilleggsfunksjonaliteten som er lagt til for kopiering til juridisk enhet. | Gratis opptak av en webkonferanse | 54 minutter |

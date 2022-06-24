@@ -1,6 +1,6 @@
 ---
 title: Integrere aktivabehandling med anleggsmidler
-description: Dette emnet beskriver hvordan du integrerer Aktivastyring- og Anleggsmiddel-modulene, slik at du kan knytte anleggsmidler til vedlikeholdsgjenstander.
+description: Denne artikkelen beskriver hvordan du integrerer Aktivastyring- og Anleggsmiddel-modulene, slik at du kan knytte anleggsmidler til vedlikeholdsgjenstander.
 author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d5dfaaf9e4cd989ad6b993e8d152f4713c0d3aa4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567589"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874224"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Integrere aktivabehandling med anleggsmidler
 
@@ -26,7 +26,7 @@ ms.locfileid: "7567589"
 Ved å integrere moduelene **Aktivastyring** og **Anleggsmiddel** kan du knytte anleggsmidler til vedlikeholdsgjenstander. Anleggsmidler-brukere kan deretter opprette en vedlikeholdsgjenstand fra et nytt eller eksisterende anleggsmiddel, og brukere av Aktivastyring kan knytte en vedlikeholdsgjenstand til et eksisterende anleggsmiddel. Denne funksjonen gjør det også enkelt for anleggsmiddel-brukere å vise kostnadene som ble bokført fra arbeidsordrer for relaterte vedlikeholdsgjenstander.
 
 > [!NOTE]
-> I dette emnet refererer *vedlikeholdsgjenstander* til anleggsmidler fra **Aktivastyring**-modulen, og *anleggsmidler* refererer til anleggsmidler fra **Anleggsmidler**-modulen.
+> I denne artikkelen refererer *vedlikeholdsgjenstander* til anleggsmidler fra **Aktivastyring**-modulen, og *anleggsmidler* refererer til anleggsmidler fra **Anleggsmidler**-modulen.
 
 ## <a name="set-a-default-location-for-new-maintenance-assets-that-are-created-from-fixed-assets-optional"></a>Angi en standardlokasjon for nye vedlikeholdsgjenstander som opprettes fra anleggsmidler (valgfritt)
 

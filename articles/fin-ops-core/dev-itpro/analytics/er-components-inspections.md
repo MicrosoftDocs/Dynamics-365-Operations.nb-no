@@ -1,6 +1,6 @@
 ---
 title: Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
-description: Dette emnet forklarer hvordan du undersøker de konfigurerte komponentene for elektronisk rapportering (ER) for å forhindre kjøretidsproblemer som kan oppstå.
+description: Denne artikkelen forklarer hvordan du undersøker de konfigurerte komponentene for elektronisk rapportering (ER) for å forhindre kjøretidsproblemer som kan oppstå.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c30f1a0d6ca4a50645bada39abbbf2f58777abb8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864843"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 
@@ -80,7 +80,7 @@ ER bruker følgende kategorier til å gruppere kontrollinspeksjoner for konsekve
 
 ## <a name="list-of-inspections"></a>Liste over inspeksjoner
 
-Tabellen nedenfor gir en oversikt over inspeksjonene som ER gir. Hvis du vil ha mer informasjon om disse inspeksjonene, bruker du koblingene i den første kolonnen for å gå til de relevante delene i dette emnet. Disse delene forklarer typene av komponenter som ER gir inspeksjoner for, og hvordan du kan konfigurere ER-komponenter på nytt for å forhindre problemer.
+Tabellen nedenfor gir en oversikt over inspeksjonene som ER gir. Hvis du vil ha mer informasjon om disse inspeksjonene, bruker du koblingene i den første kolonnen for å gå til de relevante delene i denne artikkelen. Disse delene forklarer typene av komponenter som ER gir inspeksjoner for, og hvordan du kan konfigurere ER-komponenter på nytt for å forhindre problemer.
 
 <table>
 <thead>

@@ -1,6 +1,6 @@
 ---
-title: Konfigurere flere B2C-leiere i et Commerce-miljø
-description: Dette emnet beskriver når og hvordan du definerer flere per kanals Microsoft Azure Active Directory (Azure AD) B2C-leiere for brukergodkjenning i et dedikert Dynamics 365 Commerce-miljø.
+title: Konfigurer flere B2C-leiere i et Commerce-miljø
+description: Denne artikkelen beskriver når og hvordan du definerer flere per kanals Microsoft Azure Active Directory (Azure AD) B2C-leiere for brukergodkjenning i et dedikert Dynamics 365 Commerce-miljø.
 author: BrianShook
 ms.date: 03/17/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a372561b8a6cdca8e1a3dc362009379884f1a3414330f3f056d4c3af7703a132
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13504a612c388b4720ec3328aaf2db83da2aad8c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736410"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890575"
 ---
-# <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurere flere B2C-leiere i et Commerce-miljø
+# <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurer flere B2C-leiere i et Commerce-miljø
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver når og hvordan du definerer flere per kanals Microsoft Azure Active Directory (Azure AD) B2C-leiere for brukergodkjenning i et dedikert Dynamics 365 Commerce-miljø.
+Denne artikkelen beskriver når og hvordan du definerer flere per kanals Microsoft Azure Active Directory (Azure AD) B2C-leiere for brukergodkjenning i et dedikert Dynamics 365 Commerce-miljø.
 
 Dynamics 365 Commerce bruker identitetstjenesten Azure AD B2C til å støtte brukerlegitimasjon og godkjenningsflyt. Brukere kan bruke godkjenningsflyt til å registrere seg, logge inn og tilbakestille passordet. Azure AD B2C lagrer sensitiv brukergodkjenningsinformasjon, for eksempel brukernavn og passord. Brukerposten er unik for hver B2C-leier og bruker enten brukernavn (e-postadresse) eller legitimasjon for sosial identitetsleverandør.
 

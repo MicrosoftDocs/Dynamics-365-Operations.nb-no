@@ -1,5 +1,5 @@
 ---
-title: Opplæringskatalog for salg og markedsføring for Microsoft-partnere i Dynamics 365 Finance
+title: Opplæringskatalog for salg og markedsføring for Microsoft-partnere for Dynamics 365 Finance
 description: Finn alle opplæringsalternativene for personer i salgs- og markedsføringsroller hos Microsoft-partnere som arbeider med Dynamics 365 Finance.
 author: margoc
 ms.topic: article
@@ -12,14 +12,14 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 219380f2fe44caa56869da05317cbeb4377cc8be7336d01cd65dc5c7eda05442
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e49b63bf7c88b40010967a7f8c1de571e6d7485
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8845265"
 ---
-# <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-finance"></a>Opplæringskatalog for salg og markedsføring for Microsoft-partnere i Dynamics 365 Finance
+# <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-finance"></a>Opplæringskatalog for salg og markedsføring for Microsoft-partnere for Dynamics 365 Finance
 
 Er du ansvarlig for å hjelpe kundene med å kjøpe den riktige løsningen?
 
@@ -31,8 +31,8 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 |-------------|-----------------|-------------|------------|
 | [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interessert i å finne ut mer om forretningsprogrammer? Kanskje du ikke vet hvor du skal begynne med Microsoft Dynamics 365 Power Platform-programmer? Lær hvordan mulighetene til forretningsprogrammer kan bidra til å forvandle virksomheten din. | Gratis, selvbetjent elektronisk læringsforløp | 7 timer |
 | [Grunnleggende om Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper. | Gratis, selvbetjent elektronisk læringsforløp | 5.5 timer |
-| [Komme i gang med Finance and Operations-apper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan Finance and Operations-apper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i Finance and Operations-apper-karrieren er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |
-| [Komme i gang med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gir bedriftsbrukere muligheten til å tilpasse seg forretningsmiljøer som endres raskt. Det gir bedrifter alt de trenger til å styre økonomien og administrere midler med nøyaktig informasjon, til økonomisk planlegging og prognose, og hjelper dem med å holde seg oppdatert med analyseverktøy. Siden økonomi er kjernen i enhver bedrift, er det viktig å bli kjent med funksjonene i Dynamics 365 Finance. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |
+| [Komme i gang med økonomi- og driftsapper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan økonomi- og driftsapper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i karrieren din med økonomi- og driftsapper er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |
+| [Kom i gang med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gir bedriftsbrukere muligheten til å tilpasse seg forretningsmiljøer som endres raskt. Det gir bedrifter alt de trenger til å styre økonomien og administrere midler med nøyaktig informasjon, til økonomisk planlegging og prognose, og hjelper dem med å holde seg oppdatert med analyseverktøy. Siden økonomi er kjernen i enhver bedrift, er det viktig å bli kjent med funksjonene i Dynamics 365 Finance. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |
 | [Kurs MB-900T01-A: Grunnleggende om Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Dette kurset vil gi opplæring om Dynamics 365-funksjonalitet og forretningsverdi. Kurset dekker Dynamics 365-programmer, Power Platform, skybegreper, sikkerhetsmodellen og lisensieringshensyn. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 
 ## <a name="exam"></a>Eksamen<a name="exam"></a>

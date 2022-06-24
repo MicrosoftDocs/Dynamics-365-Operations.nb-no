@@ -1,6 +1,6 @@
 ---
 title: Oversikt over tilbudsforespørsler (RFQ-er)
-description: Dette emnet gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe.
+description: Denne artikkelen gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe.
 author: GalynaFedorova
 ms.date: 10/05/2020
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3de48c03ac73ee164dea0c329b2595db21c841cc
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 89abf82879ab08f2341ce5b14e6af1d5c42140b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671961"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895590"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversikt over tilbudsforespørsler (RFQ-er)
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir.
+Denne artikkelen gir en oversikt over tilbudsforespørsler (RFQ-er). Organisasjoner utsteder en tilbudsforespørsel når de ønsker å motta konkurrerende tilbud fra flere leverandører for varer eller tjenester de må kjøpe. I en tilbudsforespørsel ber du leverandører om å oppgi prisene og leveringstidene for vareantallene du angir.
 Du kan også spørre leverandører om de kan angi om det finnes diverse tillegg, for eksempel leveringskostnader, eller om det er mulig med rabatter for store bestillinger eller tidlig betaling av leverandørfakturaen.
 
 RFQ-prosessen består av følgende oppgaver:
@@ -45,7 +45,7 @@ Du kan opprette en tilbudsforespørselssak fra planlagte bestillinger, fra en in
 
 Når du har klargjort tilbudsforespørselssaken og lagt til leverandører, velger du **Send** (**Send og publiser** for offentlig sektor) for tilbudsforespørselssaken. Det genereres en RFQ-journal for hver leverandør som du har sendt tilbudsforespørselen til. Du kan konfigurere utskriftsinnstillingene for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send slik at den genererer et svarark som leverandøren kan fylle ut.
 
-Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
+Denne artikkelen dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
 Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende tilbudsforespørselen på nytt til leverandører når du er ferdig, ved hjelp av de to tilleggshandlingene: Opprett og Fullfør.
 
@@ -59,7 +59,7 @@ Når du har valgt et bud eller et antall linjer i et bud, kan du godta alle elle
 
 En tilbudsforespørselssak har to statuser: lavest og høyest. Du kan vise statusen på listesiden for **Alle tilbudsforespørsler**. Den laveste statusen er det minst avanserte stadiet for en linje i tilbudsforespørselssaken, og den høyeste statusen er det mest avanserte stadiet for en linje i tilbudsforespørselssaken. For eksempel si at en tilbudsforespørselssak med tre linjer er sendt til to leverandører, slik at det finnes to tilbudsforespørsler hver med tre linjer. Alle linjer er **sendt**. Nå angis et bud fra en av leverandørene, og tilbudsforespørselslinjene får statusen **Mottatt**. Dette innebærer at ut av de tre linjene i tilbudsforespørselssaken, er alle **Sendt** for én tilbudsforespørsel og **Mottatt** for en annen tilbudsforespørsel. Den laveste statusen vil være **sendt,** og den høyeste statusen er **mottatt.**
 
-Disse statusene beskrives nærmere i senere i dette emnet.
+Disse statusene beskrives nærmere i senere i denne artikkelen.
 
 ## <a name="setting-up-rfq-functionality"></a>Konfigurere funksjonalitet for tilbudsforespørsel
 

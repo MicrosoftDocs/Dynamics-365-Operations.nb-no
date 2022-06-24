@@ -1,6 +1,6 @@
 ---
 title: Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
-description: Dette emnet presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser.
+description: Denne artikkelen presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser.
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,22 +14,22 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565261"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863628"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser. Dette gjøres vanligvis av en mottaksassistent.
+Denne artikkelen presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser. Dette gjøres vanligvis av en mottaksassistent.
 
 ## <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-Hvis du vil gå gjennom dette scenariet ved hjelp av eksempelpostene og verdiene som er angitt i dette emnet, må du bruke et system der standard demodata er installert, og du må velge den juridiske enheten *USMF* før du begynner.
+Hvis du vil gå gjennom dette scenariet ved hjelp av eksempelpostene og verdiene som er angitt i denne artikkelen, må du bruke et system der standard demodata er installert, og du må velge den juridiske enheten *USMF* før du begynner.
 
 Du kan i stedet gå gjennom dette scenariet ved å erstatte verdier fra dine egne data hvis du har følgende data tilgjengelige:
 

@@ -1,6 +1,6 @@
 ---
 title: Definere anleggsmidler
-description: Dette emnet gir en oversikt over oppsettet av anleggsmiddelmodulen.
+description: Denne artikkelen gir en oversikt over oppsettet av anleggsmiddelmodulen.
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 164f19d4b346a51d4f5d43064cb33bf0c01378dd
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 3baa842dadddd0f763f803528d322b9561b3141e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726245"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910149"
 ---
 # <a name="set-up-fixed-assets"></a>Definere anleggsmidler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over oppsettet av **Anleggsmiddel**-modulen. 
+Denne artikkelen gir en oversikt over oppsettet av **anleggsmiddel**-modulen. 
 
 Parametere kontrollerer den generelle virkemåten i anleggsmidler. Med anleggsmiddelgrupper kan du gruppere aktiva og angi standardattributter for hvert anleggsmiddel som er tilordnet til en gruppe. Tablåer er tilordnet til anleggsmiddelgrupper. Tablåer sporer den økonomiske verdien av et anleggsmiddel over tid med avskrivningskonfigurasjonen som er definert i avskrivningsprofilen.
 

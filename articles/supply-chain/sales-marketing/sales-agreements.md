@@ -1,6 +1,6 @@
 ---
 title: Oversikt over salgsavtaler
-description: Dette emnet gir informasjon om salgsavtaler. En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter.
+description: Denne artikkelen inneholder informasjon om salgsavtaler. En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter.
 author: Henrikan
 ms.date: 07/25/2019
 ms.topic: overview
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3e84b8be597870deea3beaf1bdc4a98021b7f135
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903847"
 ---
 # <a name="sales-agreements-overview"></a>Oversikt over salgsavtaler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om salgsavtaler. En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter.
+Denne artikkelen inneholder informasjon om salgsavtaler. En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall eller for et bestemt beløp over tid, i bytte mot spesielle priser og rabatter.
 
 En salgsavtale er en kontrakt som forplikter kunden til å kjøpe produkter i et bestemt antall for et bestemt beløp over tid, i bytte mot spesialpriser, spesialrabatter og andre spesielle vilkår, for eksempel betaling og levering. Prisene og rabattene i salgsavtalen overstyrer priser og rabatter som er angitt i en eventuell forretningsavtale.  
 

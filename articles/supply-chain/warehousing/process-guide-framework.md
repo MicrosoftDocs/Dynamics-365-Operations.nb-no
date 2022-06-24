@@ -1,6 +1,6 @@
 ---
 title: Rammeverk for prosessveiledning
-description: Dette emnet gir informasjon om rammeverket for prosessveiledning for utviklere som utvider lagerets mobilprosesser i X++.
+description: Denne artikkelen gir informasjon om rammeverket for prosessveiledning for utviklere som utvider lagerets mobilprosesser i X++.
 author: Mirzaab
 ms.date: 11/01/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 6882c979ad9b37eb4f95a04259b6ac0f0a0edcdc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: e88f32e0347a808d03615cf85e50b1592d691670
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902052"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860442"
 ---
 # <a name="process-guide-framework"></a>Rammeverk for prosessveiledning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om rammeverket for prosessveiledning for utviklere som utvider lagerets mobilprosesser i X++. Lagerets mobilprosesser er utvidbare som et resultat av at prosessene brytes inn i små trinn. Forretningslogikken og brukergrensesnittbyggingen for hvert trinn er hentet inn i individuelle klasser, som gir utviding.
+Denne artikkelen gir informasjon om rammeverket for prosessveiledning for utviklere som utvider lagerets mobilprosesser i X++. Lagerets mobilprosesser er utvidbare som et resultat av at prosessene brytes inn i små trinn. Forretningslogikken og brukergrensesnittbyggingen for hvert trinn er hentet inn i individuelle klasser, som gir utviding.
 
 ## <a name="overview-of-the-existing-design"></a>Oversikt over eksisterende utforming
 
@@ -321,7 +321,7 @@ public class ProdProcessGuideConfirmProductionOrderPageBuilder extends ProcessGu
 ```
 
 > [!NOTE]
-> I dette emnet finner du samme kildekode for X++-metodene ved hjelp av Programutforsker. Filtrer på klassenavnet, høyreklikk klassenavnet og velg **Vis kode**.
+> I denne artikkelen finner du samme kildekode for X++-metodene ved hjelp av Programutforsker. Filtrer på klassenavnet, høyreklikk klassenavnet og velg **Vis kode**.
 
 ### <a name="step-3-start-the-production-order"></a>Trinn 3: Starte produksjonsordren
 
@@ -421,7 +421,7 @@ Når dette skjer, blir trinnet bedt om å opprette en handlingsklasse for det se
 
 ### <a name="summary"></a>Sammendrag
 
-Hvis du vil oppsummere alt som er forklart i dette emnet, finner du et omfattende sammendrag av koden som kreves for prosessen:
+Hvis du vil oppsummere alt som er forklart i denne artikkelen, finner du et omfattende sammendrag av koden som kreves for prosessen:
 
 1.  **ProdProcessGuideProductionStartController**
 
@@ -570,7 +570,7 @@ Hvis du vil oppsummere alt som er forklart i dette emnet, finner du et omfattend
         ```
 
         > [!NOTE]
-        > Metoden **generateItemInfoForProdId()**, som brukes til å generere vareinformasjonsetiketter, utelates fra dette emnet. Denne metoden spør et par tabeller for å få vare-ID, beskrivelse og dimensjoner. Hvis du vil ha en bedre forståelse av **generateItemInfoForProdId()**, kan du se på kildekoden.
+        > Metoden **generateItemInfoForProdId()**, som brukes til å generere vareinformasjonsetiketter, utelates fra denne artikkelen. Denne metoden spør et par tabeller for å få vare-ID, beskrivelse og dimensjoner. Hvis du vil ha en bedre forståelse av **generateItemInfoForProdId()**, kan du se på kildekoden.
 
 4.  **ProdProcessGuideStartProductionOrderStep**
 
@@ -605,7 +605,7 @@ Hvis du vil oppsummere alt som er forklart i dette emnet, finner du et omfattend
 
 ### <a name="extending-a-business-process"></a>Utvide en forretningsprosess
 
-Hittil har dette emnet uthevet hvordan du bygger en ny prosess ved hjelp av **ProcessGuide**-rammeverket. I denne siste delen finner du noen eksempler på hvordan denne forretningsprosessen kan utvides.
+Hittil har denne artikkelen uthevet hvordan du bygger en ny prosess ved hjelp av **ProcessGuide**-rammeverket. I denne siste delen finner du noen eksempler på hvordan denne forretningsprosessen kan utvides.
 
 ### <a name="add-a-step-in-a-flow-using-processguidenavigationagentdefault"></a>Legge til et trinn i en flyt (ved hjelp av ProcessGuideNavigationAgentDefault)
 

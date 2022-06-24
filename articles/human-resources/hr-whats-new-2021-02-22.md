@@ -1,6 +1,6 @@
 ---
 title: Nyheter eller endringer i Dynamics 365 Human Resources 22. februar 2021
-description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. februar 2021.
+description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 22. februar 2021.
 author: marcelbf
 ms.date: 02/22/2021
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c0f854908f4c4bb76604665701c97724351b0120
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: d07e73ccd922e9d52a9de9260577087a50ef1da4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8686890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897842"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-22-2021"></a>Nyheter eller endringer i Dynamics 365 Human Resources 22. februar 2021
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
+Denne artikkelen beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources.
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
@@ -48,9 +48,9 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 Denne versjonen inneholder følgende feilrettinger.
 
 > [!NOTE]
-> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Dette emnet kan være oppdateringer for å inkludere feilrettingsfiler som ble tatt med i builden etter at dette emnet ble publisert.
+> Vårt mål er å få denne informasjonen til deg så raskt som mulig. Denne artikkelen kan være oppdatert for å inkludere feilrettingsfiler som ble tatt med i builden etter at denne artikkelen ble publisert.
 
-| Utstedelsesnummer | Problem |  beskrivelse |
+| Utstedelsesnummer | Problem |  Beskrivelse |
 | --- | --- | --- |
 | 529994 | Endring av feltet **Kjent som** i skjemaet **Arbeider** utløser ikke en Dataverse-oppdatering | Løste et problem der Dataverse ikke oppdateres når feltet **Kjent som** oppdateres i skjemaet **Arbeider**. |
 | 532651 | PBI-rapporten om kompensasjon bruker ikke valutaomregning ved beregning av metrikk for alle firmaer | Løste et problem der PBI-rapporten Kompensasjonsanalyse ikke gjorde valutaomregning riktig. |

@@ -1,6 +1,6 @@
 ---
-title: Generere konsoliderte regnskapsoppgjør
-description: Dette emnet beskriver de forskjellige scenariene der du kan generere konsoliderte regnskapsoppgjør.
+title: Generer konsoliderte regnskapsoppgjør
+description: Denne artikkelen beskriver de forskjellige scenariene der du kan generere konsoliderte regnskapsoppgjør.
 author: aprilolson
 ms.date: 07/09/2018
 ms.topic: article
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 092123d6f5f74d2ff160f2ebffdc2c049ccc3f65
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: c6a132b742414a3dab635634c7bb5ba0dbea527d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716531"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8846806"
 ---
-# <a name="generate-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
+# <a name="generate-consolidated-financial-statements"></a>Generer konsoliderte regnskapsoppgjør
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver de forskjellige scenariene der du kan generere konsoliderte regnskapsoppgjør.
+Denne artikkelen beskriver de forskjellige scenariene der du kan generere konsoliderte regnskapsoppgjør.
 
 ## <a name="single-level-and-multilevel-consolidations-across-legal-entities"></a>Enkeltnivå- og flernivåkonsolideringer på tvers av juridiske enheter
 Den enkleste metoden for å konsolidere ved hjelp av Finansrapportering er å bruke rapporteringstrær for å samle data på tvers av firmaer som har samme kontoplan og regnskapsperioder. Her er fremgangsmåten på høyt nivå for å konsolidere ved å bruke et rapporteringstre.
@@ -153,7 +153,7 @@ Illustrasjonen nedenfor viser alternativene i rapportdefinisjonen som du kan bru
 ![Alternativer for periodenummer for rapporterdefinisjon.](./media/options-report-definition-period-number.png "Alternativer for periodenummer for rapporterdefinisjon")
 
 ## <a name="business-unit-consolidations"></a>Forretningsenhetskonsolideringer
-Dette emnet har fokus på bruk av rapporteringstredefinisjoner og organisasjonshierarkier Finansrapportering til konsolideringsformål. Du kan også bruke rapporteringstreet til å opprette konsolideringsrapporter for forretningsenheten, for eksempel rapporter om globalt salg eller global drift. Disse rapportene er et vanlig krav. Du kan opprette dem ved å velge et firma og en dimensjon for hver enhet du vil konsolidere i. I illustrasjonen nedenfor oppnås for eksempel opprulling av forretningsenheten ved å gjenta hvert firma i **Firma**-kolonnen (kolonne A) og identifisere en gruppe med avdelingsdimensjonsverdier per firma i **Dimensjoner**-kolonnen (kolonne D).
+Denne artikkelen har fokus på bruk av rapporteringstredefinisjoner og organisasjonshierarkier Finansrapportering til konsolideringsformål. Du kan også bruke rapporteringstreet til å opprette konsolideringsrapporter for forretningsenheten, for eksempel rapporter om globalt salg eller global drift. Disse rapportene er et vanlig krav. Du kan opprette dem ved å velge et firma og en dimensjon for hver enhet du vil konsolidere i. I illustrasjonen nedenfor oppnås for eksempel opprulling av forretningsenheten ved å gjenta hvert firma i **Firma**-kolonnen (kolonne A) og identifisere en gruppe med avdelingsdimensjonsverdier per firma i **Dimensjoner**-kolonnen (kolonne D).
 
 ![Konsolideringsrapporter for forretningsenhet.](./media/business-unit-consolidation-reports.png "Konsolideringsrapporter for forretningsenhet")
 
@@ -218,7 +218,7 @@ For korrekt omregnede beløp når valutaer brukes, bruker Finansrapportering fø
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
+Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se den overordnede artikkelen i denne artikkelen, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 Hvis du vil ha mer informasjon om hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Elektroniske finanskonsolideringer](./consolidate-online.md).
 

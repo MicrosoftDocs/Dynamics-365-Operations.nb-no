@@ -1,6 +1,6 @@
 ---
 title: Lagersporing
-description: Dette emnet inneholder informasjon om lagersporing. Med lagersporing kan du konsolidere behov etter vare og måleenhet fra ordrer som har statusen bestilt, reservert eller frigitt. Det hjelper lagerledere å planlegge plukklokasjoner før de frigir ordrer til lageret og oppretter plukkarbeid.
+description: Denne artikkelen inneholder informasjon om lagersporing. Med lagersporing kan du konsolidere behov etter vare og måleenhet fra ordrer som har statusen bestilt, reservert eller frigitt. Det hjelper lagerledere å planlegge plukklokasjoner før de frigir ordrer til lageret og oppretter plukkarbeid.
 author: Mirzaab
 ms.date: 11/13/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e057992b15f0a1fa76a78ef78ea9aeea3c088be9
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8897262"
 ---
 # <a name="warehouse-slotting"></a>Lagersporing
 
@@ -156,7 +156,7 @@ For hver salgsordremal du oppretter, følger du disse trinnene for å legge til 
 
     - **Måleenhetslag:** _EaBoxPl_
 
-        Dette feltet definerer måleenheten for behov som er gyldig for linjen. (Hvis du vil ha mer informasjon, kan du se delen [Opprett måleenhetslag for sporing](#unit-tiers) tidligere i dette emnet.)
+        Dette feltet definerer måleenheten for behov som er gyldig for linjen. (Hvis du vil ha mer informasjon, kan du se delen [Opprett måleenhetslag for sporing](#unit-tiers) tidligere i denne artikkelen.)
 
     - **Tilordne sporkriterier:** _Vurder antall_
 

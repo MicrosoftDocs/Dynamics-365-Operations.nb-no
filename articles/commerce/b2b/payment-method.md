@@ -1,6 +1,6 @@
 ---
-title: Konfigurere kundekontobetalingsmetode for B2B-e-handelsområder
-description: Dette emnet beskriver hvordan du konfigurerer betalingsmetoden for kundekonto i Microsoft Dynamics 365 Commerce. Det beskriver også hvordan kredittgrenser påvirker a konto-betalingsregistrering på nettsteder for bedrift-til-bedrift-e-handelsområder (B2B).
+title: Konfigurer kundekontobetalingsmetoden for e-handelsområder for B2B
+description: Denne artikkelen beskriver hvordan du konfigurerer betalingsmetoden for kundekonto i Microsoft Dynamics 365 Commerce. Det beskriver også hvordan kredittgrenser påvirker a konto-betalingsregistrering på nettsteder for bedrift-til-bedrift-e-handelsområder (B2B).
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a55a5d4c9dbf7909af5219843fc4310b6cdd4ed7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 20af517b9a69f4fb490d4d93ada8bc4063e895dd
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689643"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878653"
 ---
-# <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurere kundekontobetalingsmetode for B2B-e-handelsområder
+# <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurer kundekontobetalingsmetoden for e-handelsområder for B2B
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer betalingsmetoden for kundekonto i Microsoft Dynamics 365 Commerce. Det beskriver også hvordan kredittgrenser påvirker a konto-betalingsregistrering på nettsteder for bedrift-til-bedrift-e-handelsområder (B2B).
+Denne artikkelen beskriver hvordan du konfigurerer betalingsmetoden for kundekonto i Microsoft Dynamics 365 Commerce. Det beskriver også hvordan kredittgrenser påvirker a konto-betalingsregistrering på nettsteder for bedrift-til-bedrift-e-handelsområder (B2B).
 
 Forhandlere kan ta imot ulike typer betaling i bytte mot produktene og tjenestene de selger i en e-handelskanal. Hver betalingstype som en forhandler godtar, må konfigureres i Dynamics 365 Commerce når systemet defineres. Betalingsmetoden for kundekonto (eller «a konto») må støttes på B2B-e-handelsområder. 
 

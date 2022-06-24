@@ -1,6 +1,6 @@
 ---
 title: Importere filer i XML-format med valgfrie attributter
-description: Dette emnet inneholder informasjon om utforming av ER-formater som angir XML-attributter for å analysere innkommende elektroniske dokumenter i XML-format.
+description: Denne artikkelen inneholder informasjon om utforming av ER-formater som angir XML-attributter for å analysere innkommende elektroniske dokumenter i XML-format.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 81156cf13e003a67fde0a73bdcd69b2c997f23a33c464fad82132f7768f8a99f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5b25b51a4f59bf9c308bcaeb140e2737597798e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757303"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8873229"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Importere filer i XML-format med valgfrie attributter
 
@@ -26,7 +26,7 @@ ms.locfileid: "6757303"
 
 Du kan utforme ER-formater (elektronisk rapportering) for å analysere innkommende elektroniske dokumenter i XML-format. Visse attributter i XML-elementer kan angis som valgfrie i et utformet ER-format. Dette gjør at du kan håndtere innkommende filer med og uten slike XML-attributter på riktig måte. Du kan deretter bruke innholdet fra disse filene til å oppdatere programdata.
 
-Hvis du vil ha mer informasjon om denne funksjonen, fullfører du trinnene i emnet [(RCS) Importere filer i XML-format med valgfrie attributter](tasks/import-files-xml-format-optional-attributes.md), som er en del av forretningsprosessen 7.5.4.3 Acquire/Develop IT service/solution components (10677). Du kan laste ned denne oppgaveveiledningen og de tilknyttede eksempelfilene fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
+Hvis du vil ha mer informasjon om denne funksjonen, fullfører du trinnene i artikkelen [(RCS) Importere filer i XML-format med valgfrie attributter](tasks/import-files-xml-format-optional-attributes.md), som er en del av forretningsprosessen 7.5.4.3 Acquire/Develop IT service/solution components (10677). Du kan laste ned denne oppgaveveiledningen og de tilknyttede eksempelfilene fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 
 | Innholdsbeskrivelse       | Fil                                                         |
@@ -38,7 +38,7 @@ Hvis du vil ha mer informasjon om denne funksjonen, fullfører du trinnene i emn
 Fremgangsmåten nedenfor forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme en ER-formatkonfigurasjon for å importere filer i XML-format som inneholder valgfrie attributter. For å fullføre disse trinnene må du først fullføre trinnene i prosedyren [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md). Før du begynner, laster du ned filen IncomingDocumentToLearnHowToHandleOptionalAttributes.xml fra Microsoft Download Center (https://go.microsoft.com/fwlink/?linkid=874684 ) og lagrer den lokalt.
 
 1. Gå til **Organisasjonsstyring** > **Arbeidsområder** > **Elektronisk rapportering**.
-2. Kontroller at konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. er tilgjengelig og merket som **Aktiv**. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i emnet [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Kontroller at konfigurasjonsleverandøren for eksempelfirmaet Litware, Inc. er tilgjengelig og merket som **Aktiv**. Hvis du ikke ser denne konfigurasjonsleverandøren, må du fullføre trinnene i artikkelen [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Klikk på **Rapporteringskonfigurasjoner**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Opprett en ny datamodellkonfigurasjon

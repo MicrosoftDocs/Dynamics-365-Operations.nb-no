@@ -1,6 +1,6 @@
 ---
 title: Startside for Aktivaleie
-description: Dette emnet gir en oversikt over dokumentasjon for Aktivaleie og koblinger til bestemte emner.
+description: Denne artikkelen gir en oversikt over dokumentasjon for Aktivaleie og koblinger til bestemte emner.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c82c54b08a7d4c603d1246c598abacc51eb88839
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710392"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889156"
 ---
 # <a name="asset-leasing-home-page"></a>Startside for Aktivaleie
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder en liste over hjelpeemnene som er tilgjengelige for Aktivaleie og omfatter koblinger til bestemte emner. 
+Denne artikkelen inneholder en liste over hjelpeemnene som er tilgjengelige for Aktivaleie og omfatter koblinger til bestemte emner. 
 
 Aktivaleie er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leide eiendeler i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Aktivaleie registrerer og behandler informasjon om leieavtalene og beregner journaloppføringer gjennom livssyklusen til leieavtalen fra opprinnelig føring, månedlige journaloppføringer, til verdiforringelse og avslutning av leieavtalen.
 
 Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I arbeidsområdet **Funksjonsbehandling** finner og velger du funksjonen **Aktivaleie**, og deretter klikker du på knappen **Aktiver nå**.
 
 ## <a name="asset-leasing-topics"></a>Aktivaleieemner
-Følgende emne er tilgjengelig for å gjøre det enklere å konfigurere og bruke Aktivaleie. 
+Følgende artikkel er tilgjengelig for å gjøre det enklere å konfigurere og bruke Aktivaleie. 
 
- - [Komme i gang med Aktivaleie](asset-leasing-quick-start.md) – Dette emnet beskriver de generelle funksjonene i Aktivaleie og viser og definerer begrepene som brukes i programvaren og dokumentasjonen.
+ - [Komme i gang med Aktivaleie](asset-leasing-quick-start.md) – Denne artikkelen beskriver de generelle funksjonene i Aktivaleie og viser og definerer begrepene som brukes i programvaren og dokumentasjonen.
  
  ### <a name="set-up-asset-leasing"></a>Konfigurere Aktivaleie
  Denne emnegruppen kan hjelpe deg å konfigurere Aktivaleie optimalt for organisasjonens forretningssituasjon.  
@@ -77,7 +77,7 @@ Denne emnegruppen beskriver prosessen for å legge til leieavtaler, opprette bet
  - [Administrere leieavtale via rammeverket for import av leieavtale](manage-leases-thru-imprt-framewrk.md)
  
 ### <a name="asset-leasing-reporting"></a>Rapportering om aktivaleie
-Dette emnet beskriver rapportene som er tilgjengelige for aktivaleieavtaler. 
+Denne artikkelen beskriver rapportene som er tilgjengelige for aktivaleieavtaler. 
 
  - [Rapporter om aktivaleie](asset-leasing-rprts.md)
  

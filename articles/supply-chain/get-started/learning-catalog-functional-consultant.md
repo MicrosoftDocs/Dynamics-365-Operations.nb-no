@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 296cee4c5da82d8bfcab298a5a2a13d982f8f808
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 05f2f11408dac93faa8f71cb0396893c03cdb6a0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8672101"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8851891"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Opplæringskatalog for funksjonskonsulenter i Dynamics 365 Supply Chain Management
 
@@ -68,7 +68,7 @@ For funksjonskonsulenter viste undersøkelsene våre at alle må forstå kjernei
 | [Kurs MB-300T01-A: Felles kjernefunksjoner i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Dette kurset beskriver felles kjernefunksjoner i Microsoft Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 | [Kurs MB-300T02-A: Kjernekonfigurasjon i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Dette kurset beskriver kjernekonfigurasjonsoppgaver for Microsoft Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 | [Kurs MB-300T03-A: Dataoverføring og klargjøring for å komme i gang med Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Dette kurset beskriver dataoverføring og klargjøring for å komme i gang med Microsoft Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
-| [Startside for implementeringslivssyklus](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Disse emnene beskriver programmene, verktøyene og prosessene som er tilgjengelige i forbindelse med implementeringslivssyklusen for Microsoft Dynamics 365 for Finance and Operations-prosjektet. | Dokumentasjon | |
+| [Startside for implementeringslivssyklus](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Disse artiklene beskriver programmene, verktøyene og prosessene som er tilgjengelige i forbindelse med implementeringslivssyklusen for Microsoft Dynamics 365 for Finance and Operations-prosjektet. | Dokumentasjon | |
 
 ## <a name="migration-and-upgrade"></a>Overføring og oppgradering<a name="migration"></a>
 
@@ -105,7 +105,7 @@ For funksjonskonsulenter viste undersøkelsene våre at alle må forstå kjernei
 | [Mobilapp for lagerstyring (VIR816PAL) ](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | Dette tekniske foredraget beskriver det avanserte lagersystemet i Dynamics 365 for Operations og hva fremtiden bringer for mobile grensesnittet for avansert lagerstyring. Vi se nærmere på den nye mobilappen som er lansert, og hvordan den er sammenlignet med den eldre WMDP. Vi vil lære hva som kreves for å installere, konfigurere og bruke denne mobilappen og hvordan den kan brukes til å dra nytte av implementeringene. | Gratis opptak av en webkonferanse | 54 minutter |
 | [Leverandørsamarbeid (DYN327PAL) ](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | I dette tekniske foredraget går vi gjennom funksjonen for leverandørsamarbeid, inkludert funksjonen for forbruk for svar fra leverandør, som er inkludert i juli-utgivelsen (vår). | Gratis opptak av en webkonferanse | 58 minutter |
 | [Vare- og lageroverføringsprosess for å bruke avansert lagerstyring (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | I dette tekniske foredraget lærer vi deg hvordan du overfører eksisterende lageroppsett og varer med åpne transaksjoner til den avanserte lagerstyringen ved å bruke de nye funksjonene til å endre lagringsdimensjonsgruppen for varer og aktivere lagre til å bruke prosessen for avansert lagerstyring. | Gratis opptak av en webkonferanse | 54 minutter |
-| [Startside for Supply Chain Management](/dynamics365/unified-operations/supply-chain/) | Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for Supply Chain Management i Microsoft Dynamics 365 for Finance and Operations. | Dokumentasjon | |
+| [Startside for Supply Chain Management](/dynamics365/unified-operations/supply-chain/) | Denne artikkelen gir en oversikt over artiklene i hjelpen og andre ressurser for funksjonene for Supply Chain Management i Microsoft Dynamics 365 for Finance and Operations. | Dokumentasjon | |
 | [Behovsbasert etterfylling av råvareplukking (DYN333PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | Dette tekniske foredraget beskriver råvareplukking og behovsetterfylling for råvareplukking. | Gratis opptak av en webkonferanse | 38 minutter |
 | [Kurs MB-330T01-A: Konfigurere og bruke Supply Chain Management i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | I dette kurset beskriver hvordan du konfigurerer og bruker Supply Chain Management i Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 2 dager |
 | [Kurs MB-330T02-A: Bruke kvalitetsstyring, konsernintern handel og hovedplanlegging i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | Dette kurset beskriver hvordan du bruker kvalitetsstyring, konsernintern handel og hovedplanlegging i Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |

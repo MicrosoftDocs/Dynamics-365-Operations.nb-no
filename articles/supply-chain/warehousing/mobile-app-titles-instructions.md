@@ -1,6 +1,6 @@
 ---
 title: Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management
-description: Dette emnet beskriver hvordan du oppretter og viser egendefinerte instruksjoner for hvert trinn i hver oppgaveflyt som du definerte for mobilappen Warehouse Management.
+description: Denne artikkelen beskriver hvordan du oppretter og viser egendefinerte instruksjoner for hvert trinn i hver oppgaveflyt som du definerte for mobilappen Warehouse Management.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ffd433427b2c5011740a7ee54c93713689945df3
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 289a3735133919ae7dbad05c40ba9ccf0e8f57ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902253"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8895503"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management
 
 > [!IMPORTANT]
-> Funksjonene som er beskrevet i dette emnet, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
+> Funksjonene som er beskrevet i denne artikkelen, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
 
-Dette emnet beskriver hvordan du oppretter og viser egendefinerte instruksjoner for hvert trinn i hver oppgaveflyt som du definerte for mobilappen Warehouse Management. Når lagerarbeiderne mottar velskrevne instruksjoner, kan de umiddelbart begynne å bruke nye flyter uten å kreve tidligere opplæring. Denne funksjonalitet inneholder følgende fordeler:
+Denne artikkelen beskriver hvordan du oppretter og viser egendefinerte instruksjoner for hvert trinn i hver oppgaveflyt som du definerte for mobilappen Warehouse Management. Når lagerarbeiderne mottar velskrevne instruksjoner, kan de umiddelbart begynne å bruke nye flyter uten å kreve tidligere opplæring. Denne funksjonalitet inneholder følgende fordeler:
 
 - **Få arbeidere i gang raskere ved å la dem følge enkle instruksjoner for hvert oppgavetrinn.** Hvert trinn i en flyt gir instruksjoner som gjør det mulig for frontlinjearbeidere å forstå oppgaven.
 - **Gi instruksjoner som samsvarer med dine egne prosesser.** Skriv dine egne instruksjoner som samsvarer med forretnings- og lagerprosessene. Du kan for eksempel angi at terminologien passer for fysiske plass og lokale forkortelser.

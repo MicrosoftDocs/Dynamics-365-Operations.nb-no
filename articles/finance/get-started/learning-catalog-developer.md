@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 866db1307484fd35949e87d02ca17ef0555bb654
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 729fc6a1172d651a24cc0a3bff765b09263e3cd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062267"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903106"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Opplæringskatalog for Dynamics 365 Finance-utviklere
 
@@ -32,7 +32,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold | Beskrivelse | Format | Lengde |
 |---------|-------------|--------|--------|
 | [Komme i gang med økonomi- og driftsapper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan økonomi- og driftsapper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i karrieren din med økonomi- og driftsapper er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2.2 timer |
-| [Komme i gang med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gir bedriftsbrukere muligheten til å tilpasse seg forretningsmiljøer som endres raskt. Det gir bedrifter alt de trenger til å styre økonomien og administrere midler med nøyaktig informasjon, til økonomisk planlegging og prognose, og hjelper dem med å holde seg oppdatert med analyseverktøy. Siden økonomi er kjernen i enhver bedrift, er det viktig å bli kjent med funksjonene i Dynamics 365 Finance. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |
+| [Kom i gang med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gir bedriftsbrukere muligheten til å tilpasse seg forretningsmiljøer som endres raskt. Det gir bedrifter alt de trenger til å styre økonomien og administrere midler med nøyaktig informasjon, til økonomisk planlegging og prognose, og hjelper dem med å holde seg oppdatert med analyseverktøy. Siden økonomi er kjernen i enhver bedrift, er det viktig å bli kjent med funksjonene i Dynamics 365 Finance. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |
 
 ## <a name="core-development-concepts"></a>Begreper for kjerneutvikling<a name="core-development-concepts"></a>
 
@@ -47,7 +47,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Finance and Operations: Utvide Dynamics 365 for Finance and Operations med PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Forstå hvor enkelt det er å bruke Microsoft PowerApps og hvordan det kan integreres med Dynamics 365 for Finance and Operations for å forvandle firmaer digitalt og øke brukerproduktiviteten. | Gratis opptak av en webkonferanse | 43 minutter |
 | [Økonomi og drift: Utvidbarhet (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Vi vil gi en oversikt og en oppdatering av Microsofts utvidelsesplaner. Vi vil beskrive detaljert de forskjellige metodene for utvidelse av en løsning, se nærmere på utvidelsesfunksjonene for metadata og muligheten til å forbedre og utvide kode, inkludert via den kraftige kommandokjedefunksjonen. | Gratis opptak av en webkonferanse | 50 minutter |
 | [Visual Studio Team Services-oppsett (VSTS) (VIR782PAL) ](https://community.dynamics.com/365/b/techtalks/posts/visual-studio-team-services-vsts-setup-january-17-2017) | Dette tekniske foredraget vil veilede gjennom de nødvendige trinnene for å konfigurere en VSTS-forekomst og et prosjekt for å koble til LCS-implementerings prosjekt for konfigurasjon av utviklings-/testmiljø. | Gratis opptak av en webkonferanse | 41 minutter |
-| [Dataverse Dataintegrator (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Bli med på dette tekniske foredraget om funksjonene i Dataverse-dataintegratoren. Vi vil diskutere integreringsalternativer mellom Dynamics 365 Customer Engagement og Dynamics 365 Finance og Operations, i tillegg til å integrere andre løsninger fra tredjepartsleverandører. | Gratis opptak av en webkonferanse | 61 minutter |
+| [Dataverse Dataintegrator (DYN451PAL2)](https://community.dynamics.com/365/b/techtalks/posts/cds-data-integrator-april-19-2018) | Bli med på dette tekniske foredraget om funksjonene i Dataverse-dataintegratoren. Vi vil diskutere integreringsalternativer mellom Dynamics 365 Customer Engagement og Dynamics 365 Økonomi og drift, i tillegg til å integrere andre løsninger fra tredjepartsleverandører. | Gratis opptak av en webkonferanse | 61 minutter |
 | [Integrasjon mellom Dynamics 365 for Sales og Dynamics 365 for Finance & Operations via Dataverse (DYN340PAL)](https://community.dynamics.com/365/b/techtalks/posts/integration-between-dynamics-365-for-sales-and-dynamics-365-for-finance-amp-operations-via-cds-september-25-2017) | I dette tekniske foredraget vil vi introdusere integreringsscenariet som kalles Kundeemne til kontanter, med salgs- og markedsføringsaktiviteter i Dynamics 365 for Sales i og oppfyllelse i Dynamics 365 for Finance and Operations. Vi tar også en titt på Dataintegrator og hvordan du endrer integreringen. | Gratis opptak av en webkonferanse | 54 minutter |
 | [Databehandling (DYN757PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-scm-data-management-february-14-2020) | Delta på dette tekniske foredraget om databehandling. Finn ut mer om hvilke alternativer som er tilgjengelige og hvilke scenarier de anbefales for. Vi vil beskrive Data Management Framework, maler, kopiering av database, deling på tvers av firmaet og ytelseshensyn. | Gratis opptak av en webkonferanse | 58 minutter |
 | [Azure Integration-verktøy for Dynamics 365 for Finance and Operations (DYN386PAL) ](https://community.dynamics.com/365/b/techtalks/posts/azure-integration-tools-for-dynamics-365-for-finance-and-operations-november-2-2017) | Dette tekniske foredraget beskriver verktøytypene som kan vurderes under integrering med Dynamics 365 for Finance and Operations, og når du bør velge hvilket de ulike integrasjonsverktøyene. Økten vil også gå gjennom noen av integreringsscenariene som brukes i Azure-integreringstjenestene. | Gratis opptak av en webkonferanse | 63 minutter |

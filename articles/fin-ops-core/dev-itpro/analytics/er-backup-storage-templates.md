@@ -1,6 +1,6 @@
 ---
 title: Sikkerhetskopiere ER-maler
-description: Dette emnet beskriver hvordan du bruker sikkerhetskopier for elektronisk rapportering (ER) for gjenoppretting av maler.
+description: Denne artikkelen beskriver hvordan du bruker sikkerhetskopier for elektronisk rapportering (ER) for gjenoppretting av maler.
 author: NickSelin
 ms.date: 04/29/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2ca847f6f11d5d849ea570cc3886e6470021e451
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767883"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8880400"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhetskopiere ER-maler
 
@@ -30,7 +30,7 @@ ms.locfileid: "6767883"
 
 Hvert konfigurerte format kan publiseres som en del av en ER-løsning. Hver enkelt ER-løsning kan eksporteres fra en forekomst av Finance and Operations og importeres til en annen forekomst.
 
-ER-rammeverket bruker [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomst. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
+ER-rammeverket bruker [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md) til å beholde de nødvendige malene for gjeldende Finance and Operations-forekomsten. Avhengig av innstillingene for ER-rammeverket kan Microsoft Azure Blob Storage eller en Microsoft SharePoint-mappe velges som fysisk primær lagringsplassering for maler. (Hvis du vil ha mer informasjon, kan du se [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md).) DocuValue-tabellen inneholder en enkeltpost for hver mal. I hver post lagrer feltet **AccessInformation** banen til en malfil som er plassert på den konfigurerte lagringsplasseringen.
 
 Når du administrerer dine Finance and Operations-forekomster, kan det hende du vil overføre gjeldende forekomst til en annen plassering. Du kan for eksempel overføre produksjonsforekomsten til et nytt sandkassemiljø. Hvis du har konfigurert ER-rammeverket til å lagre maler i Blob Storage, refererer DocuValue-tabellen i det nye sandkassemiljøet til forekomsten av Blob Storage i produksjonsmiljøet. Denne forekomsten er imidlertid ikke tilgjengelig fra sandkassemiljøet, fordi overføringsprosessen ikke støtter overføring av artefakter i Blob Storage. Hvis du prøver å kjøre et ER-format som bruker en mal til å generere forretningsdokumenter, oppstår det derfor et unntak, og du blir varslet om den manglende malen. Du blir også veiledet til å bruke ER-oppryddingsverktøyet til å slette og deretter importere på nytt ER-formatkonfigurasjonen som inneholder malen. Fordi du kan ha flere ER-formatkonfigurasjoner kan denne prosessen være tidkrevende.
 
@@ -58,7 +58,7 @@ Hvis en mal med et ER-format er nødvendig for generering av utgående dokumente
 
 Hvis du vil konfigurere parameteren **Kjør automatisk prosedyren for å gjenopprette de ødelagte malene satsvis**, gjør du følgende:
 
-1. I Finance and Operations åpner du **Organisasjonsstyring \> Elektronisk rapportering \> Siden Konfigurasjoner**.
+1. I Finance and Operations åpner du **Organisasjonsstyring \> Elektronisk rapportering \> siden Konfigurasjoner**.
 2. På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3. I dialogboksen **Brukerparametere** angir du den nødvendige verdien for parameteren **Kjør automatisk prosedyren for å gjenopprette de ødelagte malene satsvis**.
 

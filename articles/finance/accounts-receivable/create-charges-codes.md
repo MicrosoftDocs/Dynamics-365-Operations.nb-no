@@ -1,6 +1,6 @@
 ---
 title: Opprett tilleggskoder
-description: Dette emnet beskriver hvordan du konfigurerer tilleggskoder for både leverandører og kunder.
+description: Denne artikkelen beskriver hvordan du konfigurerer tilleggskoder for både leverandører og kunder.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8526fa0f3c6e3d1b545703f6e6ef72f558b57bd
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d65952cb989672e4eac2dd6101ee9c7c9424daed
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735034"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866090"
 ---
 # <a name="create-charges-codes"></a>Opprett tilleggskoder
 
-Dette emnet beskriver hvordan du konfigurerer tilleggskoder for både leverandører og kunder. Hvis organisasjonen krever at salgs- eller innkjøpsbeløp skal spores i tillegg til linjevarer på en salgsordre eller bestilling, kan du bruke tilleggskoder til dette formålet. Du betaler for eksempel frakt og forsikring på en bestilling, og disse beløpene er spesifisert separat på bestillingen. I dette tilfellet kan du angi om beløpene skal posteres til utgiftskontoer eller legges til kostnadene for varene.
+Denne artikkelen beskriver hvordan du konfigurerer tilleggskoder for både leverandører og kunder. Hvis organisasjonen krever at salgs- eller innkjøpsbeløp skal spores i tillegg til linjevarer på en salgsordre eller bestilling, kan du bruke tilleggskoder til dette formålet. Du betaler for eksempel frakt og forsikring på en bestilling, og disse beløpene er spesifisert separat på bestillingen. I dette tilfellet kan du angi om beløpene skal posteres til utgiftskontoer eller legges til kostnadene for varene.
 
 ## <a name="set-up-charges-codes-for-accounts-receivable"></a>Definer tilleggskoder for kunder
 

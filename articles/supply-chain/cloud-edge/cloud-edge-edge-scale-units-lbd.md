@@ -1,6 +1,6 @@
 ---
-title: Distribuer kantskalaenheter på egendefinert maskinvare ved hjelp av LBD
-description: Dette emnet beskriver hvordan du klargjør kantskalaenheter ved hjelp av egendefinert maskinvare og distribusjon som er basert på lokale forretningsdata (LBD).
+title: Distribuer storskalaenheter på egendefinert maskinvare ved hjelp av LBD
+description: Denne artikkelen beskriver hvordan du klargjør kantskalaenheter ved hjelp av egendefinert maskinvare og distribusjon som er basert på lokale forretningsdata (LBD).
 author: Mirzaab
 ms.date: 01/24/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 540ac1f6d69d869256f49b8501e18966575903fa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 794de8c0d77949789e4046418ac2b55dba1bee02
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674093"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8882757"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Distribuer kantskalaenheter på egendefinert maskinvare ved hjelp av LBD
 
@@ -27,7 +27,7 @@ Kantskalaenheter spiller en viktig rolle i den distribuerte hybridtopologien for
 
 Kantskalaenheter kan distribueres ved å opprette et lokalt forretningsdatamiljø [lokalt miljø](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md) og deretter konfigurere det til å fungere som en vektenhet i den distribuerte hybridtopologien for forsyningskjedeadministrasjon. Dette oppnås ved å knytte det lokale LBD-miljøet til et Supply Chain Management-miljø i skyen, som er konfigurert til å fungere som et senter.  
 
-Dette emnet beskriver hvordan du konfigurerer et lokal LBD-miljø som en kantskalaenhet og deretter knytter det til et senter.
+Denne artikkelen beskriver hvordan du konfigurerer et lokal LBD-miljø som en kantskalaenhet og deretter knytter det til et senter.
 
 ## <a name="infrastructure-considerations"></a>Infrastrukturhensyn
 
@@ -44,21 +44,21 @@ Her er en oversikt over distribusjonstrinnene.
 
 1. **Sett opp og distribuer et LBD-miljø med en *tom* database.**
 
-    Bruk LCS til å distribuere LBD-miljøet med den siste topologien og en tom database. Hvis du vil ha mer informasjon, kan du se [Sette opp og distribuere et LBD-miljø med en tom database](#set-up-deploy) senere i dette emnet. Du må bruke Supply Chain Management versjon 10.0.21 eller senere i senter- og skalaenhetsmiljøer.
+    Bruk LCS til å distribuere LBD-miljøet med den siste topologien og en tom database. Hvis du vil ha mer informasjon, kan du se [Sette opp og distribuere et LBD-miljø med en tom database](#set-up-deploy) senere i denne artikkelen. Du må bruke Supply Chain Management versjon 10.0.21 eller senere i senter- og skalaenhetsmiljøer.
 
 1. **Last opp målpakker til LBD-prosjektaktiva i LCS.**
 
-    Klargjør program-, plattform- og tilpasningspakker som du bruker i senter- og kantskalaenheten. Hvis du vil ha mer informasjon, kan du se [Last opp målpakker til LBD-prosjektaktiva i LCS](#upload-packages)-delen senere i dette emnet.
+    Klargjør program-, plattform- og tilpasningspakker som du bruker i senter- og kantskalaenheten. Hvis du vil ha mer informasjon, kan du se [Last opp målpakker til LBD-prosjektaktiva i LCS](#upload-packages)-delen senere i denne artikkelen.
 
 1. **Vedlikehold LBD-miljøet med målpakkene.**
 
-    Dette trinnet sørger for at samme build og tilpasninger distribueres i senteret og den nevnte skaleringsenheten. Hvis du vil ha mer informasjon, kan du se [Vedlikehold LBD-miljøet med målpakkene](#service-target-packages) senere i dette emnet.
+    Dette trinnet sørger for at samme build og tilpasninger distribueres i senteret og den nevnte skaleringsenheten. Hvis du vil ha mer informasjon, kan du se [Vedlikehold LBD-miljøet med målpakkene](#service-target-packages) senere i denne artikkelen.
 
 1. **Fullfør skalaenhetskonfigurasjon og arbeidsmengde.**
 
-    Hvis du vil ha mer informasjon, kan du se [Tilordne LBD-kantskalaenheten til et senter](#assign-edge-to-hub) i dette emnet.
+    Hvis du vil ha mer informasjon, kan du se [Tilordne LBD-kantskalaenheten til et senter](#assign-edge-to-hub) i denne artikkelen.
 
-De gjenværende delene av dette emnet gir mer informasjon om hvordan du fullfører disse trinnene.
+De gjenværende delene av denne artikkelen gir mer informasjon om hvordan du fullfører disse trinnene.
 
 ## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Sett opp og distribuer et LBD-miljø med en tom database
 
@@ -67,7 +67,7 @@ Dette trinnet oppretter et funksjonelt LBD-miljø. Miljøet har imidlertid ikke 
 1. Følg instruksjonene i [Definere og distribuere lokale miljøer (Platformoppdatering 41 og nyere)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Du må bruke Supply Chain Management versjon 10.0.21 eller senere i senter- og skalaenhetsmiljøer. I tillegg må du bruke versjon 2.12.0 eller senere av infrastrukturskriptene. 
 
     > [!IMPORTANT]
-    > Les resten av denne delen **før** du går gjennom trinnene i dette emnet.
+    > Les resten av denne delen **før** du går gjennom trinnene i denne artikkelen.
 
 1. Før du beskriver konfigurasjonen i infrastruktur\\ConfigTemplate.xml-filen, kan du kjøre følgende skript:
 

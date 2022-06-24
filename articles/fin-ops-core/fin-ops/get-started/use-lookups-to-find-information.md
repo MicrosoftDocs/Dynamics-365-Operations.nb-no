@@ -1,6 +1,6 @@
 ---
-title: Finne informasjon ved hjelp av oppslag
-description: I dette emnet får du lære mer om oppslagsfunksjoner, og du får flere nyttige tips for å bruke oppslag i systemet på best mulig måte.
+title: Finn informasjon ved hjelp av oppslag
+description: I denne artikkelen får du lære mer om oppslagsfunksjoner, og du får flere nyttige tips for å bruke oppslag i systemet på best mulig måte.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7135487e5d87564163c643d1315c51231fa66de
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ee309330c165dfb0b67f647afc3514d4c827dad1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069304"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901530"
 ---
 # <a name="find-information-by-using-lookups"></a>Finne informasjon ved hjelp av oppslag
 
@@ -28,7 +28,7 @@ ms.locfileid: "8069304"
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Mange felt har oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte.
+Mange felt har oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I denne artikkelen du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte.
 
 ## <a name="responsive-lookups"></a>Responsive oppslag
 

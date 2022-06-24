@@ -1,6 +1,6 @@
 ---
 title: Forankring
-description: Dette emnet beskriver hvordan du aktiverer og bruker forankring.
+description: Denne artikkelen beskriver hvordan du aktiverer og bruker forankring.
 author: GalynaFedorova
 ms.date: 07/29/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-07-29
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26a7bf60912ff1e8a23305e9331d520fe8d65727
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8a0fa849f07f0cc0a41a663fc97b5aba927700b1
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8676502"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903818"
 ---
 # <a name="anchoring"></a>Forankring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder detaljer om forankringsprosessen. Den beskriver konfigurasjonen som kreves, og logikken som kjøres når en lagerarbeider endrer enten oppsamlingslokasjonen eller lastingslokasjonen.
+Denne artikkelen inneholder detaljer om forankringsprosessen. Den beskriver konfigurasjonen som kreves, og logikken som kjøres når en lagerarbeider endrer enten oppsamlingslokasjonen eller lastingslokasjonen.
 
 Ved hjelp av forankringsfunksjonen kan du overstyre oppsamlings- eller lastelokasjonen. Alle åpne plasser sendes deretter til den nye oppsamlings- eller innlastingslokasjonen du angir.
 
@@ -36,11 +36,11 @@ Du konfigurerer forankring for menyelementer for mobilenhet ved hjelp av alterna
 > [!IMPORTANT]
 > Lokasjonen for etterfølgende åpne plasser endres bare på arbeidslinjene som genereres fra samme arbeidsmallinje. Systemet vil med andre ord forankre plasseringslinjene som stammer fra samme arbeidsmallinje.
 
-Dette emnet gir et scenario som viser hvordan forankring fungerer. I løpet av scenarioet kan du opprette et sett med salgsordrer og frigi dem til lageret. Du vil deretter overstyre den foreslåtte oppsamlingslokasjonen og kontrollere at alt gjenværende plasseringsarbeid sendes til den nye lokasjonen.
+Denne artikkelen gir et scenario som viser hvordan forankring fungerer. I løpet av scenarioet kan du opprette et sett med salgsordrer og frigi dem til lageret. Du vil deretter overstyre den foreslåtte oppsamlingslokasjonen og kontrollere at alt gjenværende plasseringsarbeid sendes til den nye lokasjonen.
 
 ## <a name="scenario-prerequisite-make-demo-data-available"></a>Forutsetning for scenario: Gjør demodata tilgjengelige
 
- i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til *USMF* før du begynner.
+Scenarioet i denne artikkelen refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til *USMF* før du begynner.
 
 ## <a name="scenario-setup"></a>Scenariooppsett
 

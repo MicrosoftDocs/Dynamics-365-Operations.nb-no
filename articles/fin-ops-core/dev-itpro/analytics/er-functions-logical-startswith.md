@@ -1,6 +1,6 @@
 ---
 title: ER-funksjonen STARTSWITH
-description: Dette emnet gir generell informasjon om hvordan du bruker funksjonen ER-funksjonen STARTSWITH.
+description: Denne artikkelen gir generell informasjon om hvordan du bruker funksjonen ER-funksjonen STARTSWITH.
 author: NickSelin
 ms.date: 02/11/2021
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: b378f501ccf812cfa0ae09e7cfbfdcf4c8a24ab8747b8ffe6044769df14a3057
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9c22154484f9e98dbe101b5de0f539b2feb9865
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762230"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883734"
 ---
 # <a name="startswith-er-function"></a>ER-funksjonen STARTSWITH
 

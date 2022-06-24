@@ -1,6 +1,6 @@
 ---
-title: Definere en B2C-leier i Commerce
-description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
+title: Konfigurer en B2C-leier i Commerce
+description: Denne artikkelen beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/05/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 4b1ee8999717d70dfe36baef95921962a1b7be65
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8714318"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8853747"
 ---
-# <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
+# <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurer en B2C-leier i Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
 
 Dynamics 365 Commerce bruker Azure AD B2C til å støtte brukerlegitimasjon og godkjenningsflyt. En bruker kan registrere seg, logge inn og tilbakestille passordet ved hjelp av disse flytene. Azure AD B2C lagrer sensitiv brukergodkjenningsinformasjon, for eksempel brukernavn og passord. Brukerposten i B2C-leieren vil lagre enten en B2C-post for lokal forretningsforbindelse eller en B2C-post for sosial identitetsleverandør. Disse B2C-postene vil koble tilbake til kundeoppføringen i Commerce-miljøet.
 

@@ -1,6 +1,6 @@
 ---
 title: Regnskapsdistribusjoner
-description: Dette emnet inneholder informasjon om regnskapsdistribusjoner og beskriver tilgjengelige behandlingsalternativer.
+description: Denne artikkelen inneholder informasjon om regnskapsdistribusjoner og beskriver tilgjengelige behandlingsalternativer.
 author: sunfzam
 ms.date: 09/17/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8178836318600fd6e702d097062d30b91e6c1a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735584"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894207"
 ---
 # <a name="accounting-distributions"></a>Regnskapsdistribusjoner
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om regnskapsdistribusjoner og beskriver alternativene som er tilgjengelige for behandling av dem. Regnskapsdistribusjoner brukes til å tildele pengebeløp for et kildedokument til bestemte finanskontoer. 
+Denne artikkelen inneholder informasjon om regnskapsdistribusjoner og beskriver alternativene som er tilgjengelige for behandling av dem. Regnskapsdistribusjoner brukes til å tildele pengebeløp for et kildedokument til bestemte finanskontoer. 
 
 Regnskapsdistribusjoner er en funksjonalitet for hele programmet som brukes og utvides av hvert kildedokument, for eksempel en bestilling, leverandørfaktura, utgiftsrapport og fritekstfaktura. En standard regnskapsdistribusjon genereres som standard for hver kildedokumentlinje og hvert pengebeløp, og kan endres basert på betingelser. 
 

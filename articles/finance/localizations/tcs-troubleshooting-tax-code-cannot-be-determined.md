@@ -1,6 +1,6 @@
 ---
 title: Avgiftskode kan ikke bestemmes
-description: Dette emnet beskriver hvordan du feilsøker feilmeldingen Avgiftskode kan ikke bestemmes i avgiftsberegningstjenesten.
+description: Denne artikkelen beskriver hvordan du feilsøker feilmeldingen Avgiftskode kan ikke bestemmes i avgiftsberegningstjenesten.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 3c0914f0013ad2de61cd5a59e3092fef149742e4
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 6a74724de38cf362900277ab9addc8e6894f7689
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645407"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8877866"
 ---
 # <a name="tax-code-cannot-be-determined"></a>Avgiftskode kan ikke bestemmes
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver fremgangsmåten for å feilsøker feilmeldingen Avgiftskode kan ikke bestemmes i avgiftsberegningstjenesten.
+Denne artikkelen beskriver fremgangsmåten for å feilsøker feilmeldingen Avgiftskode kan ikke bestemmes i avgiftsberegningstjenesten.
 
 ## <a name="symptom"></a>Symptom
 
@@ -121,7 +121,7 @@ Følg fremgangsmåten nedenfor for å feilsøke problemet.
 
 ## <a name="mitigation"></a>Reduksjon
 
-1. Gå gjennom hvert trinn i delen [Feilsøk](#troubleshoot) i dette emnet, og rett oppsettet etter behov. Hvis avgiftsgruppen og avgiftsgruppen for vare ikke er riktig bestemt, kan du se [Ingen samsvarsresultater blir funnet](tcs-troubleshooting-no-matching-result.md).
+1. Gå gjennom hvert trinn i delen [Feilsøk](#troubleshoot) i denne artikkelen, og rett oppsettet etter behov. Hvis avgiftsgruppen og avgiftsgruppen for vare ikke er riktig bestemt, kan du se [Ingen samsvarsresultater blir funnet](tcs-troubleshooting-no-matching-result.md).
 2. Hvis det ikke er noe kryss for avgiftsgruppen og avgiftsgruppen for vare, oppretter du en ny funksjonsversjon i RCS og ordner oppsettet.
 
     - Gå til **Avgiftsfunksjoner** \> **Avgiftskoder og -grupper** > **Avgiftsgruppe for vare**.

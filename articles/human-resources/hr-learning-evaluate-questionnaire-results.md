@@ -1,6 +1,6 @@
 ---
 title: Vise og evaluere resultatene i spørreskjemaer
-description: Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut.
+description: Denne artikkelen forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d783664da957192575bbd2b1f0286243be190715
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 45be2fb7761a3022795a196b140987fcbd732a33
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688071"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855148"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Vise og evaluere resultatene i spørreskjemaer
 
@@ -28,7 +28,7 @@ ms.locfileid: "8688071"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
+Denne artikkelen forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
 
 Etter at respondentene har fylt ut et spørreskjema, kan du vise og evaluere spørreskjemaresultatene på følgende måter:
 

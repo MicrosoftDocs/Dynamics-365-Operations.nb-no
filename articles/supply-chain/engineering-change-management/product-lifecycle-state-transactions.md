@@ -1,6 +1,6 @@
 ---
 title: Produktstatuser og transaksjoner
-description: Dette emnet beskriver hvordan du kan kontrollere hvilke transaksjoner som er tillatt for hver status når et teknisk produkt går gjennom livssyklusen.
+description: Denne artikkelen beskriver hvordan du kan kontrollere hvilke transaksjoner som er tillatt for hver status når et teknisk produkt går gjennom livssyklusen.
 author: t-benebo
 ms.date: 02/17/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
-ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
+ms.openlocfilehash: dd9155f799c66e8297b93d8ffbeeced1acd14220
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322750"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867963"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktstatuser og transaksjoner
 
@@ -37,7 +37,7 @@ Hvis du vil arbeide med produktstatuser, går du til **Behandling av teknisk end
 - Hvis du vil slette en eksisterende status, velger du det i listeruten, og deretter velger du **Slett** i handlingsruten.
 
 > [!NOTE]
-> Tekniske produkter bruker de samme produktstatusene som standard (ikke-tekniske) produkter. Du kan også åpne **Produktstatus**-siden som er beskrevet i dette emnet, ved å gå til **Behandling av produktinformasjon \> Oppsett \> Produktstatus**. Hvis du vil ha mer informasjon om produktstatuser, for både tekniske produkter og standardprodukter, kan du se [Oversikt over produktstatus](../pim/product-lifecycle.md).
+> Tekniske produkter bruker de samme produktstatusene som standard (ikke-tekniske) produkter. Du kan også åpne **Produktstatus**-siden som er beskrevet i denne artikkelen, ved å gå til **Behandling av produktinformasjon \> Oppsett \> Produktstatus**. Hvis du vil ha mer informasjon om produktstatuser, for både tekniske produkter og standardprodukter, kan du se [Oversikt over produktstatus](../pim/product-lifecycle.md).
 
 ### <a name="header"></a>Hode
 

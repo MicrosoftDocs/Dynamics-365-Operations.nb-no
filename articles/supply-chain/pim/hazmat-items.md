@@ -1,6 +1,6 @@
 ---
 title: Farlige materialer i produkter, ordrer, forsendelser og laster
-description: Dette emnet forklarer hvordan du angir egenskaper for farlige materialer for frigitte produkter, hvordan du kan plassere lagergrenser på farlige varer, og hvordan du inkluderer farlige materialer i en salgsordre, forsendelse eller last.
+description: Denne artikkelen forklarer hvordan du angir egenskaper for farlige materialer for frigitte produkter, hvordan du kan plassere lagergrenser på farlige varer, og hvordan du inkluderer farlige materialer i en salgsordre, forsendelse eller last.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: eaae3ce4916465cd57da65eaa217c40f9c3ea88a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570711"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8860703"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Farlige materialer i produkter, ordrer, forsendelser og laster
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du angir egenskaper for farlige materialer for frigitte produkter, hvordan du kan plassere lagergrenser på farlige varer, og hvordan du inkluderer farlige materialer i en salgsordre, forsendelse eller last.
+Denne artikkelen forklarer hvordan du angir egenskaper for farlige materialer for frigitte produkter, hvordan du kan plassere lagergrenser på farlige varer, og hvordan du inkluderer farlige materialer i en salgsordre, forsendelse eller last.
 
 ## <a name="set-hazardous-material-specifications-for-products"></a>Angi spesifikasjoner for farlige materialer for produkter
 
@@ -109,11 +109,11 @@ Her er en nøkkel til formelen:
 - *&lt;UnitConversion&gt;* er en omregningsfaktor for konvertering mellom enheten som brukes for lastlinjemengden og enheten som er angitt for et produkt i feltet **Enhet** på hurtigfanen **Materialstyring**.
 - *&lt;Multiplier&gt;* er multiplikatoren som er angitt for et produkt i feltet **Multiplikator** i hurtigfanen **Materialstyring**.
 
-Denne poengsummen rapporteres for hver lastlinje som inneholder et produkt der disse verdiene er angitt. Hvis du vil ha mer informasjon, kan du se delene [Forsendelser som inneholder farlige materialer](#hazmat-shipments), og [Laster som inneholder farlige materialer](#hazmat-loads) senere i dette emnet.
+Denne poengsummen rapporteres for hver lastlinje som inneholder et produkt der disse verdiene er angitt. Hvis du vil ha mer informasjon, kan du se delene [Forsendelser som inneholder farlige materialer](#hazmat-shipments), og [Laster som inneholder farlige materialer](#hazmat-loads) senere i denne artikkelen.
 
 #### <a name="how-the-hazardous-material-weight-is-calculated"></a>Hvordan vekt for farlig materiale beregnes
 
-Last- og lastlinjer som inneholder varer der alternativet **Begrenset antall** på hurtigfanen **Materialstyring** er satt til **Ja**, viser den totale vekten av farlig materiale, som beskrevet i delene [Forsendelser som inneholder farlige materialer](#hazmat-shipments) og [Laster som inneholder farlige materialer](#hazmat-loads) senere i dette emnet. Vekten av farlig materiale beregnes ved hjelp av følgende formel:
+Last- og lastlinjer som inneholder varer der alternativet **Begrenset antall** på hurtigfanen **Materialstyring** er satt til **Ja**, viser den totale vekten av farlig materiale, som beskrevet i delene [Forsendelser som inneholder farlige materialer](#hazmat-shipments) og [Laster som inneholder farlige materialer](#hazmat-loads) senere i denne artikkelen. Vekten av farlig materiale beregnes ved hjelp av følgende formel:
 
 Vekt av farlig materiale = *&lt;LineQty&gt;* × *&lt;ProductWeight&gt;* × *&lt;UnitConversion&gt;*
 

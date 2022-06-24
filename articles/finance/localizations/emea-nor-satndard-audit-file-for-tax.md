@@ -1,6 +1,6 @@
 ---
 title: Standard revisjonsfil for avgift (SAF-T) for Norge
-description: Dette emnet forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
+description: Denne artikkelen forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
 author: liza-golub
 ms.author: elgolu
 ms.date: 03/21/2022
@@ -12,23 +12,23 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 10c341ba547fe4b98911a9cfa137027f7b87262e
-ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.openlocfilehash: 7299f73527f07ea0e7de026191d491f88d97674c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8549994"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8856557"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primæradresse i Norge.
+Denne artikkelen inneholder landsspesifikk informasjon om hvordan du setter opp standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primæradresse i Norge.
 
 Fra og med januar 2020 er alle selskaper i Norge pålagt av Skatteetaten å gi SAF-T finansielle data. Dette kravet er i samsvar med versjon 1.4 av dokumentasjonen, som ble publisert den 8. juli 2019, og versjon 1.3 av den tekniske dokumentasjonen, som ble publisert den 23. mars 2018, i form av en XML-rapport. Publiseringen av disse delene av dokumentasjonen sammenfaller med versjon 1.1 av "norsk SAF-T økonomiske data" XML Schema Definition (XSD)-skjema som ble utviklet av SAF-T-arbeidsgruppen, Skatteetaten, og basert på "OECD-standard revisjonsfil - Avgifter 2.00,"som ble modifisert 2. februar 2018.
 
 > [!NOTE]
-> Bruk av funksjonen [Ett bilag](../general-ledger/one-voucher.md) introduserer en begrensning for ytterligere SAF-T-rapportering for enkelte scenarier som er underlagt SAF-T. Mer bestemt må et bankkontoutdragsscenario posteres ved hjelp av ulike bilag for transaksjoner som har ulike kontrollørkontoer. Hvis du vil ha mer informasjon om hvordan du bruker funksjonen Ett bilag og SAF-T, kan du se delen [SAF-T-rapport og Ett bilag](#one-voucher) senere i dette emnet.
+> Bruk av funksjonen [Ett bilag](../general-ledger/one-voucher.md) introduserer en begrensning for ytterligere SAF-T-rapportering for enkelte scenarier som er underlagt SAF-T. Mer bestemt må et bankkontoutdragsscenario posteres ved hjelp av ulike bilag for transaksjoner som har ulike kontrollørkontoer. Hvis du vil ha mer informasjon om hvordan du bruker funksjonen Ett bilag og SAF-T, kan du se delen [SAF-T-rapport og Ett bilag](#one-voucher) senere i denne artikkelen.
 
 ## <a name="setup"></a>Installasjon
 

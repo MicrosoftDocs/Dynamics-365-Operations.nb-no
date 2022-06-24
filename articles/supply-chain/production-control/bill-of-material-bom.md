@@ -1,6 +1,6 @@
 ---
 title: Stykklister og formler
-description: Dette emnet inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene.
+description: Denne artikkelen inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene.
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 57a30aba3b0a37d939d0747b2dd305a92c82ae23
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578014"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8887290"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Stykklister og formler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Stykklister og formler angir nødvendige materialer eller ingredienser for et bestemt produkt. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonskontekst. 
+Denne artikkelen inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Stykklister og formler angir nødvendige materialer eller ingredienser for et bestemt produkt. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonskontekst. 
 
 ## <a name="bills-of-materials"></a>Stykklister
 

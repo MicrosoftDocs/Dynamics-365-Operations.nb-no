@@ -1,6 +1,6 @@
 ---
 title: Oversikt over produktdetaljsider
-description: Dette emnet gir en oversikt over produktdetaljsider (PDP-er) i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen gir en oversikt over produktdetaljsider (PDP-er) i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 01/23/2020
 ms.topic: overview
@@ -14,18 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7b7630a15f98da4a1454f7c9b0d3501d4f035649
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986207"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884291"
 ---
 # <a name="product-details-pages-overview"></a>Oversikt over produktdetaljsider
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over produktdetaljsider (PDP-er) i Microsoft Dynamics 365 Commerce.
+Denne artikkelen gir en oversikt over produktdetaljsider (PDP-er) i Microsoft Dynamics 365 Commerce.
 
 En PDP gir detaljert informasjon om et produkt og lar kundene velge produktalternativer, for eksempel størrelse, stil og farge. En PDP bør vise all produktinformasjonen som en kunde må ha for å ta en kjøpsbeslutning.
 
@@ -35,7 +35,7 @@ Illustrasjonen nedenfor viser et eksempel på en PDP.
 
 ## <a name="header-and-footer-modules"></a>Moduler for topptekst og bunntekst
 
-Toppen av en PDP har en topptekst som viser alle produktkategoriene og andre sider som forhandleren vil at kunder skal bla gjennom. Bunnen på siden har en bunntekst som inneholder hurtigkoblinger til ulike emner som kan være av interesser for kunder.
+Toppen av en PDP har en topptekst som viser alle produktkategoriene og andre sider som forhandleren vil at kunder skal bla gjennom. Bunnen på siden har en bunntekst som inneholder hurtigkoblinger til ulike artikler som kan være av interesser for kunder.
 
 ## <a name="buy-box-module"></a>Kjøpsboksmodul
 

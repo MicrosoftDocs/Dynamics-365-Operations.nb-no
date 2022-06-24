@@ -1,26 +1,26 @@
 ---
 title: Kopiere et e-handelsområde
-description: Dette emnet beskriver hvordan du kopierer et eksisterende e-handelsområde i eller mellom e-handelsmiljøer i Microsoft Dynamics 365 Commerce-områdebyggeren.
+description: Denne artikkelen beskriver hvordan du kopierer et eksisterende e-handelsområde i eller mellom e-handelsmiljøer i Microsoft Dynamics 365 Commerce-områdebyggeren.
 author: psimolin
-ms.date: 03/03/2022
+ms.date: 06/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: a23f544cbd1e960cb704d2b9666b7db4c3894b5e
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: cb53a76b2ebe5b511bf5009727f20f20755e5720
+ms.sourcegitcommit: 13c7a1cc4c90417e3e88db59b7d2165b3c40a56c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462332"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "8935750"
 ---
 # <a name="copy-an-e-commerce-site"></a>Kopiere et e-handelsområde
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kopierer et eksisterende e-handelsområde i eller mellom e-handelsmiljøer i Microsoft Dynamics 365 Commerce-områdebyggeren.
+Denne artikkelen beskriver hvordan du kopierer et eksisterende e-handelsområde i eller mellom e-handelsmiljøer i Microsoft Dynamics 365 Commerce-områdebyggeren.
 
 Dynamics 365 Commerce støtter kopiering eller kloning av områder som en selvbetjent operasjon i Commerce-områdebyggeren. Områder kan kopieres innenfor ett e-handelsmiljø eller mellom to e-handelsmiljøer. Brukeren som starter kopieringen av området, må være en leieradministrator i både kilde- og målmiljøet for e-handel.
 
@@ -40,23 +40,23 @@ Følg denne fremgangsmåten hvis du vil kopiere et område innenfor et e-handels
 1. Logg deg på områdebyggeren for miljøet der du vil foreta kopieringen.
 1. Åpne områdelistevisningen ved å velge **Områdeveksling** øverst til høyre, og velg deretter **Administrer områder**.
 1. Finn området du vil kopiere eller klone, og velg det ved å merke av for navnet på området.
-1. Velg **Kopier område** i handlingsruten.
-1. I dialogboksen **Kopier område** skriver du inn et navn for det nye området i feltet **Navn på nytt område**. Navnet på det nye området må være unikt i e-handelsmiljøet. Feltene **Kildeleier** og **Kildeområde** settes automatisk til informasjonen for gjeldende leier og valgt område.
+1. På kommandolinjen velger du **Kopier område**.
+1. På undermenyen **Kopier område** skriver du inn et navn for det nye området i feltet **Navn på nytt område**. Navnet på det nye området må være unikt i e-handelsmiljøet. Feltene **Kildeleier** og **Kildeområde** settes automatisk til informasjonen for gjeldende leier og valgt område.
 1. Velg **Opprett kopi**.
 
 Etter at informasjonen er validert, angir en melding at det er opprettet en kopieringsjobb for nytt område. Du kan overvåke fremdriften til jobben i [høyre rute på siden **Leierjobber**](#monitor-the-site-copy-operation). Når kopieringen er fullført, vises det nye området i listen over områder i områdelistevisning.
 
-Følgende illustrasjon viser et eksempel på dialogboksen **Kopier område** i områdebyggeren.
+Følgende illustrasjon viser et eksempel på undermenyen **Kopier område** i områdebyggeren.
 
-![Dialogboksen Kopier område i områdebyggeren.](media/site-copy_1.png)
+![Undermenyen Kopier område i områdebyggeren.](media/site-copy_1.png)
 
 ## <a name="copy-a-site-between-two-e-commerce-environments"></a>Kopiere et område mellom to e-handelsmiljøer
 
 Følg denne fremgangsmåten hvis du vil kopiere et område mellom to e-handelsmiljøer.
 
 1. Logg deg på områdebyggeren for målmiljøet for e-handel.
-1. Velg **Kopier område** i handlingsruten.
-1. I dialogboksen **Kopier område** skriver du inn et navn for det nye området i feltet **Navn på nytt område**. Navnet på det nye området må være unikt i e-handelsmiljøet.
+1. På kommandolinjen velger du **Kopier område**.
+1. På undermenyen **Kopier område** skriver du inn et navn for det nye området i feltet **Navn på nytt område**. Navnet på det nye området må være unikt i e-handelsmiljøet.
 1. Velg navnet på kildeleieren i feltet **Kildeleier**.
 1. Velg kildeområdet i feltet **Kildeområde**.
 1. Velg **Opprett kopi**.
@@ -66,6 +66,32 @@ Følg denne fremgangsmåten hvis du vil kopiere et område mellom to e-handelsmi
 
 Etter at informasjonen er validert, angir en melding at det er opprettet en kopieringsjobb for nytt område. Du kan overvåke fremdriften til jobben i [høyre rute på siden **Leierjobber**](#monitor-the-site-copy-operation). Når kopieringen er fullført, vises det nye området i listen over områder i områdelistevisning.
 
+## <a name="map-channels-during-the-site-copy-operation-optional"></a>Tilordne kanaler i løpet av områdekopieringen (valgfritt)
+
+Kildekanaler og nasjonale innstillinger kan tilordnes målkanaler og nasjonale innstillinger som en del av kopieringsoperasjonen for området. Hvis kanaltilordningen utføres som en del av områdekopieringen, er det ikke nødvendig å initialisere området ved hjelp av FRE-prosessen og konfigurere kanalene i områdeinnstillinger. 
+
+Følg denne fremgangsmåten for å tilordne alle kanaler og nasjonale innstillinger "som de er" (1-til-1), i områdebyggeren.
+
+1. Åpne områdelistevisningen ved å velge **Områdeveksling** øverst til høyre, og velg deretter **Administrer områder**.
+1. Finn området du vil kopiere eller klone, og velg det ved å merke av for navnet på området.
+1. På kommandolinjen velger du **Kopier område**.
+1. På undermenyen **Kopier område** angir du verdier for **Nytt områdenavn**, **Kildeleier** og **Kildeområde** (hvis de ikke finnes allerede).
+1. Velg **Legg til kanaltilordninger**.
+1. På undermenyen **Konfigurer områdekanaler og nasjonale innstillinger** velger du **Kildekanal** og velger deretter kildekanalen.  
+1. Velg **Målkanal**, og velg deretter den samme kanalen som kildekanalen. 
+1. Velg **Legg til nasjonal innstilling**.
+1. Velg **Nasjonal kildeinnstilling**, og velg deretter den nasjonale kildeinnstillingen.
+1. Velg **Målets nasjonale innstilling**, og velg deretter den samme nasjonale innstillingen som kilden. 
+1. For **URL-bane** angir du en unik URL-bane som for øyeblikket ikke brukes i målmiljøet.
+1. Gjenta trinn 8-11 for hver nasjonale innstilling som skal tilordnes for kanalen.
+1. Velg **Bruk**.
+1. Gjenta trinn 6 til 11 for hver kildekanal.
+1. Velg **Lukk**.
+1. Gå gjennom konfigurasjonen for å kontrollere om den er nøyaktig, og velg deretter **Kopier område**.
+
+> [!NOTE]
+> Alle kildekanaler og nasjonale nasjonale innstillinger må tilordnes, og de kan bare tilordnes én gang.
+
 ## <a name="monitor-the-site-copy-operation"></a>Overvåke kopieringen av området
 
 Følg denne fremgangsmåten hvis du vil overvåke fremdriften til kopieringen av området.
@@ -74,9 +100,9 @@ Følg denne fremgangsmåten hvis du vil overvåke fremdriften til kopieringen av
 1. Velg **Leierjobber** i venstre rute.
 1. På siden **Leierjobber** finner og velger du områdekopieringsjobben i listen. Det vises en rute til høyre, der statusen og detaljene for den valgte jobben vises.
 
-Du kan avbryte en jobb med statusen **Pågår**. Velg jobben i listen, og velg deretter **Avbryt** i handlingsruten.
+Du kan avbryte en jobb med statusen **Pågår**. Velg jobben i listen, og velg deretter **Avbryt** på kommandolinjen.
 
-Hvis en jobb har statusen **Mislykket** eller **Fullført med feil**, kan du prøve den på nytt. Velg jobben i listen, og velg deretter **Prøv på nytt** i handlingsruten.
+Hvis en jobb har statusen **Mislykket** eller **Fullført med feil**, kan du prøve den på nytt. Velg jobben i listen, og velg deretter **Prøv på nytt** på kommandolinjen.
 
 > [!NOTE]
 > Behandling av videoaktiva kan fortsette etter at en områdekopieringsjobb er fullført.

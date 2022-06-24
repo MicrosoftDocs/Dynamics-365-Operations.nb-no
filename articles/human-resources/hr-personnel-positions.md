@@ -1,6 +1,6 @@
 ---
 title: Stillinger
-description: Dette emnet beskriver de konseptuelle elementene som en stilling kan inkludere. Det gir også eksempler som viser hvordan du kan bruke disse elementene i organisasjonen.
+description: Denne artikkelen beskriver de konseptuelle elementene som en stilling kan inkludere. Det gir også eksempler som viser hvordan du kan bruke disse elementene i organisasjonen.
 author: twheeloc
 ms.date: 06/24/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.custom: 269054
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bb7582165f49c40d294acd3cf804fe89782936c4
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 9c97a96e27188d12b9c5e626613e18d54d6632c0
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8689445"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888737"
 ---
 # <a name="positions"></a>Stillinger
 
@@ -28,7 +28,7 @@ ms.locfileid: "8689445"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet beskriver de konseptuelle elementene som en stilling kan inkludere. Det gir også eksempler som viser hvordan du kan bruke disse elementene i organisasjonen.
+Denne artikkelen beskriver de konseptuelle elementene som en stilling kan inkludere. Det gir også eksempler som viser hvordan du kan bruke disse elementene i organisasjonen.
 
 Før du kan opprette en stilling, må du definere en jobb. Enkelte stillingsdetaljer, for eksempel kompensasjonsområdet, arbeidsoppgaven, stillingsvarigheten og rapporteringsrelasjonen, er datoeffektive.
 

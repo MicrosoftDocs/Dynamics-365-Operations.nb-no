@@ -1,6 +1,6 @@
 ---
-title: Definere en profil for vareankomstoversikt
-description: Dette emnet fokuserer på oppsettet for en profil for ankomstoversikt.
+title: Definer en profil for vareankomstoversikt
+description: Denne artikkelen fokuserer på oppsettet for en profil for ankomstoversikt.
 author: yufeihuang
 ms.date: 07/30/2019
 ms.topic: business-process
@@ -15,18 +15,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a98c84c0dcc86e58b74f53a9061c4a0518ecbf
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 8517710f5d0be1859f86449152712d950281769a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964812"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8872014"
 ---
-# <a name="set-up-an-item-arrival-overview-profile"></a>Definere en profil for vareankomstoversikt
+# <a name="set-up-an-item-arrival-overview-profile"></a>Definer en profil for vareankomstoversikt
 
 [!include [banner](../../includes/banner.md)]
 
-Dette emnet fokuserer på oppsettet for en profil for ankomstoversikt. Profil for ankomstoversikt er en samling av regler som skal brukes når en bruker åpner en side for ankomstoversikt. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF. Denne fremgangsmåten utføres vanligvis av en mottaksassistent.
+Denne artikkelen fokuserer på oppsettet for en profil for ankomstoversikt. Profil for ankomstoversikt er en samling av regler som skal brukes når en bruker åpner en side for ankomstoversikt. Du kan bruke prosedyren i demonstrasjonsdataselskapet USMF. Denne fremgangsmåten utføres vanligvis av en mottaksassistent.
 
 1. I navigasjonsruten går du til **Moduler > Beholdningsstyring > Oppsett > Distribusjon > Profiler for ankomstoversikt**.
 2. Velg **Ny**. Fordi du nesten alltid vil arbeide i det samme lageret med å laste ut fulle vognlass, bør du opprette en profil for ankomstoversikt for å forenkle prosessen med å registrere mottatte varer.  

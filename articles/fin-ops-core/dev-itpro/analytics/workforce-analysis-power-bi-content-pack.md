@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Metrikk for arbeidsstyrke
-description: Dette emnet beskriver Metrikk for arbeidsstyrke-innholdet for Power BI.
+description: Denne artikkelen beskriver Metrikk for arbeidsstyrke-innholdet for Power BI.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9393b4dcc6cb5f65d38c6904bf38def9d50af281671e0e09314148824f3e6891
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e45e4fb58bd535b66b7ad0dad8c4efa37e4336b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757279"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884495"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-innholdet Metrikk for arbeidsstyrke
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Microsoft Power BI-innholdet for **Metrikk for arbeidsstyrke**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Denne artikkelen beskriver **Metrikk for arbeidsstyrke**-innholdet for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 **Metrikk for arbeidsstyrke**-innholdet for Power BI vises i arbeidsområdet **Personaladministrasjon** hvis du bruker ett av disse produktene:

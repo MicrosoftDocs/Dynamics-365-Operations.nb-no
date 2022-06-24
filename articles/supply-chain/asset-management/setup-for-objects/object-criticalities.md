@@ -1,6 +1,6 @@
 ---
 title: Type kritisk aktivitet for aktiva
-description: Emnet forklarer typer kritsk aktivitet for aktiva i Aktivastyring.
+description: Artikkelen forklarer typer kritsk aktivitet for aktiva i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cfde9a9bc681c0d758491fc5c361b5b046e20d9d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899505"
 ---
 # <a name="asset-criticality-types"></a>Type kritisk aktivitet for aktiva
 
@@ -28,7 +28,7 @@ ms.locfileid: "6776926"
 
  
 
-Emnet forklarer typer kritsk aktivitet for aktiva i Aktivastyring. Kritiske forhold omkring aktiva er knyttet til aktiva og overføres til arbeidsordrer. Dette kan ikke endres på en arbeidsordre. Kritiske forhold omkring aktiva brukes til å beregne arbeidsordrekritikalitet under planlegging av arbeidsordrer. Det brukes med andre ord til å beregne i hvilken grad en vedlikeholdsjobb på et aktivum påvirker produksjonsplanen og produktiviteten i selskapet. Hvis du vil ha mer informasjon om oppsettet som er knyttet til beregning av poengsummer for arbeidsordreplanlegging, kan du se [Parametere i Aktivastyring](../setup-for-objects/enterprise-asset-management-parameters.md).
+Artikkelen forklarer typer kritsk aktivitet for aktiva i Aktivastyring. Kritiske forhold omkring aktiva er knyttet til aktiva og overføres til arbeidsordrer. Dette kan ikke endres på en arbeidsordre. Kritiske forhold omkring aktiva brukes til å beregne arbeidsordrekritikalitet under planlegging av arbeidsordrer. Det brukes med andre ord til å beregne i hvilken grad en vedlikeholdsjobb på et aktivum påvirker produksjonsplanen og produktiviteten i selskapet. Hvis du vil ha mer informasjon om oppsettet som er knyttet til beregning av poengsummer for arbeidsordreplanlegging, kan du se [Parametere i Aktivastyring](../setup-for-objects/enterprise-asset-management-parameters.md).
 
 Hvis du vil definere kritikalitet, må du først opprette kritikalitetstypene som skal brukes i aktivaoppsettet. Deretter konfigurerer du aktivakritikalitetene.
 

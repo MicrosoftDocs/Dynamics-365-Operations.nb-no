@@ -1,6 +1,6 @@
 ---
 title: Rapporter for utsalgspris
-description: Dette emnet gir en oversikt over prisrapportfunksjonen, som kan brukes til å vise kommende prisendringer for assorterte produkter.
+description: Denne artikkelen gir en oversikt over prisrapportfunksjonen, som kan brukes til å vise kommende prisendringer for assorterte produkter.
 author: shajain
 ms.date: 03/05/2019
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 7fa2710d64d632c6e4ef376528aff8316b02a380ce7e2a976d53a3dd39375fa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 84025cf148e1b5a92b78593fc093c629a3af4764
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767272"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899047"
 ---
 # <a name="retail-price-reports"></a>Rapporter for utsalgspris
 

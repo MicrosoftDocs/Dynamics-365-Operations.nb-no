@@ -1,6 +1,6 @@
 ---
 title: Fordelingsbetingelser
-description: Dette emnet gir informasjon om hvordan du bruker tildelingsbetingelser på en hovedkonto.
+description: Denne artikkelen gir informasjon om hvordan du bruker tildelingsbetingelser på en hovedkonto.
 author: rachel-profitt
 ms.date: 06/15/2020
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-06-15
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab3f797505e2c3d7521d3af5c231f5985e6efaa5
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: d62c0cc79c9d61e0ebb1c2c62a345ad47412d0d2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734902"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8859834"
 ---
 # <a name="allocation-terms"></a>Fordelingsbetingelser
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan du bruker tildelingsbetingelser på en hovedkonto. Tildelingsvilkår brukes til å distribuere beløp på tvers av flere kombinasjoner av finanskonti. De bidrar til å sikre at utgifter eller inntekter belastes til riktig objekt i regnskapet.
+Denne artikkelen gir informasjon om hvordan du bruker tildelingsbetingelser på en hovedkonto. Tildelingsvilkår brukes til å distribuere beløp på tvers av flere kombinasjoner av finanskonti. De bidrar til å sikre at utgifter eller inntekter belastes til riktig objekt i regnskapet.
 
 Hver tildelingsbetingelse du oppretter på en hovedkonto, definerer prosenten av et bilag som skal fordeles fra en hovedkonto med én kilde og en kombinasjon av finansdimensjoner. I tillegg definerer du den målhovedkontoen og finansdimensjonene der beløpet skal fordeles. 
 

@@ -1,6 +1,6 @@
 ---
 title: Karantenesoner for avvik
-description: Dette emnet beskriver hvordan du oppretter og bruker karantenesoner for avvik.
+description: Denne artikkelen beskriver hvordan du oppretter og bruker karantenesoner for avvik.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 207950a2ff4057853488f75d0e302a049d228b76
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2e556d2aa078a76ff4f81b6763535c38ce1cca0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578470"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8857728"
 ---
 # <a name="quarantine-zones-for-nonconformances"></a>Karantenesoner for avvik
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter og bruker karantenesoner for avvik.
+Denne artikkelen beskriver hvordan du oppretter og bruker karantenesoner for avvik.
 
 Du kan bruke **Karantenesoner**-siden til å definere soner som kan tilordnes til et avvik. Når du oppretter et avvik, kan du definere feltene **Karantenesone** og **Karantenetype** i kategorien **Generelt** på **Avvik**-siden. Feltet **Karantenesone** angir vanligvis området eller lokasjonen der varen finnes. **Karantenetype**-feltet definerer varen som enten *Begrenset bruk* eller *Kan ikke brukes*.
 

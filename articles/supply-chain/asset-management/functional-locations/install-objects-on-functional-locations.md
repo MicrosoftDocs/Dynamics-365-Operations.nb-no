@@ -1,6 +1,6 @@
 ---
 title: Installere aktiva på arbeidssteder
-description: Dette emnet forklarer hvordan du installerer aktiva på arbeidssteder i Aktivastyring.
+description: Denne artikkelen forklarer hvordan du installerer aktiva på arbeidssteder i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc278564b02335b44a0b35d6a3a981125e6f456b08893be2b5886f0a55396d52
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a35f2494c616c2e456f92409d012cc434a32bd8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775753"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894508"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installere aktiva på arbeidssteder
 
@@ -28,7 +28,7 @@ ms.locfileid: "6775753"
 
  
 
-Når du har opprettet arbeidsstedsstrukturer, er neste trinn å installere aktiva på de relevante arbeidsstedene. Dette emnet forklarer hvordan du installerer aktiva på disse arbeidsstedene i Aktivastyring. Se [Introduksjon til aktiva](../objects/introduction-to-objects.md) hvis du vil ha mer informasjon om hvordan du oppretter aktiva.
+Når du har opprettet arbeidsstedsstrukturer, er neste trinn å installere aktiva på de relevante arbeidsstedene. Denne artikkelen forklarer hvordan du installerer aktiva på disse arbeidsstedene i Aktivastyring. Se [Introduksjon til aktiva](../objects/introduction-to-objects.md) hvis du vil ha mer informasjon om hvordan du oppretter aktiva.
 
 Hvis du har opprettet en aktivastruktur, må hele aktivastrukturen være installert på et arbeidssted. Derfor kan bare overordnede objekter (aktiva på øverste nivå som har ingen overordnede objekter) velges på et arbeidssted. Alle tilknyttede underordnede aktiva (underaktiva) vil også bli installert på arbeidsstedet. Når du installerer aktiva på et arbeidssted, kan finansdimensjonene for arbeidsstedet automatisk overføres til dem, avhengig av oppsettet for arbeidsstedstypen som er valgt for arbeidsstedet. Hvis du vil ha mer informasjon om hvordan du oppretter arbeidsstedstyper, se [Arbeidsstedstyper](../setup-for-functional-locations/functional-location-types.md).
 

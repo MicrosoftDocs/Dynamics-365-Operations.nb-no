@@ -1,6 +1,6 @@
 ---
 title: Arbeidere som er ansvarlige for å godkjenne avvik
-description: Dette emnet beskriver hvordan du konfigurerer arbeidere som er ansvarlige for godkjenning av avvik.
+description: Denne artikkelen beskriver hvordan du konfigurerer arbeidere som er ansvarlige for godkjenning av avvik.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5fd1c7c86ac8627bd332bc578e98b4d7f091cdc8
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a108fc1f8954e32719c93656a64d1d27fda03fb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575902"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8907413"
 ---
 # <a name="workers-responsible-for-approving-nonconformances"></a>Arbeidere som er ansvarlige for å godkjenne avvik
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer arbeidere som er ansvarlige for godkjenning av avvik.
+Denne artikkelen beskriver hvordan du konfigurerer arbeidere som er ansvarlige for godkjenning av avvik.
 
 Avvik må godkjennes før brukere kan begynne å angi detaljer som rettelser eller operasjoner. Før brukere kan godkjenne eller avvise avvik, må bruker-IDen (brukerposten) være knyttet til en arbeiderpost. Du kan velge å konfigurere arbeidere som er ansvarlige for kvalitet, og deretter tillate at én arbeider godkjenner arbeid på vegne av en annen arbeider.
 

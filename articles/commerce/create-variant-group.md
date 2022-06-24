@@ -1,6 +1,6 @@
 ---
 title: Opprette en variantgruppe
-description: Dette emnet beskriver hvordan du oppretter en størrelses-, stil- eller fargevariantgruppe for et produkt i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du oppretter en størrelses-, stil- eller fargevariantgruppe for et produkt i Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a46dc9fd5cdb848818964e771d373924b217147a
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749937"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8874967"
 ---
 # <a name="create-a-variant-group"></a>Opprette en variantgruppe
 
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter en størrelses-, stil- eller fargevariantgruppe for et produkt i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du oppretter en størrelses-, stil- eller fargevariantgruppe for et produkt i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 
 Dynamics 365 Commerce støtter flere varianter for produkter. Det ideelle er å definere variantgrupper for forskjellige produktkategorier. En størrelsesgruppe kan for eksempel opprettes for t-skjorter med størrelser ekstra liten, liten, middels, stor og ekstra stor. Alternativt kan det opprettes en fargegruppe som inneholder alle tilgjengelige farger av et produkt. Variantgrupper må legges til før produkter legges til.
 
-I dette emnet skal vi opprette og konfigurere en størrelsesgruppe. Lignende prosedyrer kan brukes til å legge til og konfigurere stilgrupper og fargegrupper.
+I denne artikkelen skal vi opprette og konfigurere en størrelsesgruppe. Lignende prosedyrer kan brukes til å legge til og konfigurere stilgrupper og fargegrupper.
 
 ## <a name="create-a-size-group"></a>Opprette en størrelsesgruppe
 

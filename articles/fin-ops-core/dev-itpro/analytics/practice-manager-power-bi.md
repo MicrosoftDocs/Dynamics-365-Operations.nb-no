@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Praksisleder
-description: Dette emnet beskriver hva som er inkludert i Praksisleder for Power BI-innhold.
+description: Denne artikkelen beskriver hva som er inkludert i Praksisleder for Power BI-innhold.
 author: kfend
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4acef3c595f25fa0be16945a9f41611832cfcea9
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 31ca2841983d972194b55d91a6789fd84d62d890
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500227"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8898994"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-innholdet Praksisleder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet for **Praksisleder**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Denne artikkelen beskriver hva som er inkludert i **Praksisleder** for Microsoft Power BI-innhold. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="overview"></a>Oversikt
 

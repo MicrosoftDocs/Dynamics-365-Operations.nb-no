@@ -1,6 +1,6 @@
 ---
 title: Elimineringsregler
-description: Dette emnet inneholder informasjon om elimineringsregler og de ulike alternativene for rapportering om elimineringer.
+description: Denne artikkelen inneholder informasjon om elimineringsregler og de ulike alternativene for rapportering om elimineringer.
 author: aprilolson
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e062e7541871d77803cbed475d715621b19537f1
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 3eb3ea117959dbc51eb5666aad60299210ff3ac5
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722640"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8864317"
 ---
 # <a name="elimination-rules"></a>Elimineringsregler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon om elimineringsregler og de ulike alternativene for rapportering om elimineringer.
+Denne artikkelen inneholder informasjon om elimineringsregler og de ulike alternativene for rapportering om elimineringer.
 
 Elimineringstransaksjoner er nødvendige når en overordnet juridisk enhet handler med én eller flere underordnede juridiske enheter og bruker konsolidert finansrapportering. Konsoliderte regnskapsoppgjør kan bare omfatte transaksjoner som forekommer mellom den konsoliderte organisasjonen og andre enheter utenfor denne organisasjonen. Derfor må transaksjoner mellom juridiske enheter som er en del av samme organisasjon, fjernes, eller elimineres, fra økonomimodulen, slik at de ikke vises i finansrapporter. Det finnes flere måter å rapportere om elimineringer på:
 
@@ -34,7 +34,7 @@ Elimineringstransaksjoner er nødvendige når en overordnet juridisk enhet handl
 -   Finansrapportering kan brukes til å vise elimineringskontoene og -dimensjonene i en bestemt rad eller kolonne.
 -   En separat juridisk enhet kan brukes til å postere manuelle transaksjonsoppføringer for å spore elimineringer.
 
-Dette emnet fokuserer på elimineringsregler som behandles i et konsoliderings- eller elimineringsfirma. Du kan definere elimineringsregler for å opprette elimineringstransaksjoner i en juridisk enhet som er angitt som juridisk målenhet for elimineringer. Denne juridiske mottakerenheten kalles den den juridiske elimineringsenheten. Elimineringsjournaler kan enten genereres under konsolideringsprosessen eller ved hjelp av et elimineringsjournalforslag. Før du definerer elimineringsregler, bør du gjøre deg kjent med følgende begreper:
+Denne artikkelen fokuserer på elimineringsregler som behandles i et konsoliderings- eller elimineringsfirma. Du kan definere elimineringsregler for å opprette elimineringstransaksjoner i en juridisk enhet som er angitt som juridisk målenhet for elimineringer. Denne juridiske mottakerenheten kalles den den juridiske elimineringsenheten. Elimineringsjournaler kan enten genereres under konsolideringsprosessen eller ved hjelp av et elimineringsjournalforslag. Før du definerer elimineringsregler, bør du gjøre deg kjent med følgende begreper:
 
 -   **Kilde for juridisk enhet** – Den juridiske enheten der beløpene som elimineres, var postert.
 -   **Juridisk målenhet** – Den juridiske enheten der elimineringsreglene posteres.

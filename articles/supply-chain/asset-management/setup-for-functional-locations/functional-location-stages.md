@@ -1,6 +1,6 @@
 ---
 title: Livssyklustilstander for arbeidssted
-description: Dette emnet beskriver hvordan du konfigurerer tilstander for arbeidssteder og livssyklusmodeller i Aktivastyring.
+description: Denne artikkelen beskriver hvordan du konfigurerer tilstander for arbeidssteder og livssyklusmodeller i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ae56c2b734339343b134be95abe0ce40b70c8a0e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360976"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934665"
 ---
 # <a name="functional-location-lifecycle-states"></a>Livssyklustilstander for arbeidssted
 
@@ -28,7 +28,7 @@ ms.locfileid: "6360976"
 
  
 
-Dette emnet beskriver hvordan du konfigurerer livssyklustilstander for arbeidssteder og livssyklusmodeller i Aktivastyring. Livssyklustilstander for arbeidssteder definerer tilstandene som et arbeidssted kan gå gjennom, for eksempel opprettet, aktivt og avsluttet. Du kan vise alle arbeidssteder, uavhengig av livssyklustilstanden, på listesiden **Alle arbeidssteder**. Du kan endre statusen for et arbeidssted ved å velge det på listesiden **Alle arbeidssteder** og velge **Oppdater arbeidsstedstilstand**.
+Denne artikkelen beskriver hvordan du konfigurerer livssyklustilstander for arbeidssteder og livssyklusmodeller i Aktivastyring. Livssyklustilstander for arbeidssteder definerer tilstandene som et arbeidssted kan gå gjennom, for eksempel opprettet, aktivt og avsluttet. Du kan vise alle arbeidssteder, uavhengig av livssyklustilstanden, på listesiden **Alle arbeidssteder**. Du kan endre statusen for et arbeidssted ved å velge det på listesiden **Alle arbeidssteder** og velge **Oppdater arbeidsstedstilstand**.
 
 ## <a name="set-up-functional-location-lifecycle-states"></a>Definer livssyklustilstander for arbeidssted
 
@@ -39,6 +39,7 @@ Dette emnet beskriver hvordan du konfigurerer livssyklustilstander for arbeidsst
 5. Velg "Ja" på veksleknappen **Opprett aktiva** hvis det skal være mulig å opprette et aktivum automatisk med samme navn som den arbeidsstedet og installere det på arbeidsstedet i denne tilstanden.  
 >[!NOTE]
 >Denne veksleknappen er relatert til **Aktivatype**-feltet på hurtigfanen **Generelt** i skjemaet **Arbeidsstedstyper** (**Aktivastyring** > **Oppsett** > **Arbeidssteder** > **Arbeidsstedstyper**).
+
 6. Velg "Ja" på veksleknappen **Endre navn på sted** hvis det skal være mulig å endre navnet på arbeidsstedet i denne tilstanden.
 7. Velg "Ja" på veksleknappen **Nye underordnede steder** hvis det skal være mulig å legge til nye underordnede steder på arbeidsstedet i denne tilstanden.
 8. Velg "Ja" på veksleknappen **Installer aktiva** hvis det skal være mulig å installere aktiva på arbeidsstedet i denne tilstanden.

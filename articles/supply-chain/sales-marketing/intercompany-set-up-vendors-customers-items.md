@@ -1,6 +1,6 @@
 ---
 title: Definere leverandører, kunder og varer for konsernintern handel
-description: Dette emnet forklarer hvordan du definerer leverandører, kunder og varer for konsernintern handel
+description: Denne artikkelen forklarer hvordan du definerer leverandører, kunder og varer for konsernintern handel
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 3e1eb7b8673f3af682204b65b33a1d8b61742721
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c928435a4e66832b09dbc805664934cfb1236be
+ms.sourcegitcommit: b666289f5113d0a3fa2220fe337d5aacf07cbd92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8675044"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "8945762"
 ---
 # <a name="set-up-vendors-customers-and-items-for-intercompany-trade"></a>Definere leverandører, kunder og varer for konsernintern handel
 
@@ -34,12 +34,13 @@ Hvis du vil klargjøre organisasjonen for konsernintern handel, må du definere 
 1. Velg kunden du vil definere som en konsernintern kunde.
 1. Velg **Konsernintern** i fanen **Generelt** i handlingsruten.
 1. Angi konserninterne oppsettparametere for kundekontoen. Disse parameterne omfatter den juridiske enheten for leverandør og konto, bestillingspolicyer, salgsordrepolicyer, verditilordning og policyer for salgsavtale og bestilling. Du angir også om stamdataverdier skal brukes fra kundekontoen eller fra leverandørkontoen i den andre juridiske enheten.
-1. På **Kunder**-siden i hurtigfanen **Faktura og levering** merker du av for **Opprett konserninterne ordrer**. Hvis du vil at ordrer skal leveres direkte til kunder, merker du av for **Direkte levering**.
+1. Når du er ferdig med å definere de konserninterne parameterne, lukker du siden **Konsernintern** for å gå tilbake til de valgte kundedetaljene.
+1. Utvid hurtigfanen **Diverse detaljer**, og sett **Opprett konserninterne ordrer** til *Ja*. Hvis du også vil at ordrer skal leveres direkte til kunder, setter du **Direkte levering** til *Ja*.
 
     > [!NOTE]
-    > Hvis det er noen varer som organisasjonen har på lager eller leverer til kunder, er det ikke sikkert at du vil opprette konserninterne ordrer automatisk, selv om du har varen på lager. Hvis du vil deaktivere den automatiske genereringen av ordrer for varer du noen ganger har på lager, merker du ikke av for **Opprett konserninterne ordrer**.
+    > Hvis det er noen varer som organisasjonen har på lager eller leverer til kunder, er det ikke sikkert at du vil opprette konserninterne ordrer automatisk, selv om du har varen på lager. Hvis du vil deaktivere den automatiske genereringen av ordrer for varer du noen ganger har på lager, setter du **Opprett konserninterne ordrer** til *Nei*.
 
-1. Hvis du vil tillate at det opprettes ekstra linjer indirekte i en salgsordre, merker du av for **Opprett indirekte ordrelinjer**. Dette gjør at en bruker kan legge til linjer i den opprinnelige salgsordren fra den konserninterne salgsordren.
+1. Hvis du vil tillate at det opprettes ekstra linjer indirekte i en salgsordre, setter du **Opprett indirekte ordrelinjer** til *Ja*. Dette gjør at en bruker kan legge til linjer i den opprinnelige salgsordren fra den konserninterne salgsordren.
 
 > [!WARNING]
 > Hvis du tillater indirekte oppretting av ordrelinjer, tillater du alle anskaffelser i den opprinnelige salgsordren fra den konserninterne salgsordren. Hver anskaffelse sendes deretter til kunden og legges til i ordren og fakturaen. I tillegg skrives alle dokumenter som er involvert i salget, ut og posteres automatisk. Brukere blir ikke varslet om tillegget.

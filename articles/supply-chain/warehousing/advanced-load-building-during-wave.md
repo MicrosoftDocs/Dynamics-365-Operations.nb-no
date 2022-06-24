@@ -1,6 +1,6 @@
 ---
 title: Avansert lastplanlegging under en bølge
-description: Dette emnet inneholder informasjon om avansert bølgelastplanlegging, som automatisk tilordner forsendelser til eksisterende bølger under bølgekjøring. Du kan derfor opprette meningsfylte laster som representerer lastebiler, uten å måtte bruke arbeidsområdet for lastplanlegging.
+description: Denne artikkelen inneholder informasjon om avansert bølgelastplanlegging, som automatisk tilordner forsendelser til eksisterende bølger under bølgekjøring. Du kan derfor opprette meningsfylte laster som representerer lastebiler, uten å måtte bruke arbeidsområdet for lastplanlegging.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0dafac981bcdec307de6dc202f557e7b8837ae2e
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670524"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8863773"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avansert lastplanlegging under en bølge
 
@@ -220,7 +220,7 @@ Du kan definere så mange lastplanleggingsmaler du trenger. Hvis du vil bruke av
 
 ## <a name="scenario"></a>Scenario
 
-Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i dette emnet, påvirker lageroperasjoner mens en salgsordre behandles. Dette scenarioet bruker **USMF**-demonstrasjonsdata sammen med andre demoverdier som finnes i disse installasjonsinstruksjonene.
+Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i denne artikkelen, påvirker lageroperasjoner mens en salgsordre behandles. Dette scenarioet bruker **USMF**-demonstrasjonsdata sammen med andre demoverdier som finnes i disse installasjonsinstruksjonene.
 
 ### <a name="create-sales-orders"></a>Opprette salgsordrer
 

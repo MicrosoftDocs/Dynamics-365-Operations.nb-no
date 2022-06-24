@@ -1,6 +1,6 @@
 ---
 title: Varekonsolidering – lokasjonsutnyttelse
-description: Dette emnet gir informasjon om funksjonalitet som gjør det enkelt for lagerledere å vise og filtrere volumbruk av lokasjoner på tvers av lageret. Ledere kan velge lokasjoner og opprette lagerflyttingsarbeid direkte fra siden for varekonsolidering for å konsolidere varer og dermed gjøre bedre bruk av lagerplass.
+description: Denne artikkelen gir informasjon om funksjonalitet som gjør det enkelt for lagerledere å vise og filtrere volumbruk av lokasjoner på tvers av lageret. Ledere kan velge lokasjoner og opprette lagerflyttingsarbeid direkte fra siden for varekonsolidering for å konsolidere varer og dermed gjøre bedre bruk av lagerplass.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -13,22 +13,22 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: f858eae57b8b354076f5ed026a4b84ed680866b0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578614"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8849191"
 ---
 # <a name="item-consolidation---location-utilization"></a>Varekonsolidering – lokasjonsutnyttelse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om funksjonalitet som gjør det enkelt for lagerledere å vise og filtrere volumbruk av lokasjoner på tvers av lageret. Ledere kan velge lokasjoner og opprette lagerflyttingsarbeid direkte fra siden for **varekonsolidering** for å konsolidere varer og dermed gjøre bedre bruk av lagerplass.
+Denne artikkelen gir informasjon om funksjonalitet som gjør det enkelt for lagerledere å vise og filtrere volumbruk av lokasjoner på tvers av lageret. Ledere kan velge lokasjoner og opprette lagerflyttingsarbeid direkte fra siden for **varekonsolidering** for å konsolidere varer og dermed gjøre bedre bruk av lagerplass.
 
 ## <a name="turn-on-the-features"></a>Aktivere funksjonene
 
-Før du kan bruke funksjonene som beskrives i dette emnet, må du aktivere dem i systemet. Administratorer kan bruke arbeidsområdet for [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere statusen for disse funksjonene og aktivere dem hvis nødvendig. Slå på begge disse funksjonene i den rekkefølgen de vises i. (Begge funksjonene gjelder for modulen for **Lagerstyring**.)
+Før du kan bruke funksjonene som beskrives i denne artikkelen, må du aktivere dem i systemet. Administratorer kan bruke arbeidsområdet for [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere statusen for disse funksjonene og aktivere dem hvis nødvendig. Slå på begge disse funksjonene i den rekkefølgen de vises i. (Begge funksjonene gjelder for modulen for **Lagerstyring**.)
 
 1. Status for lagerlokasjon
 2. Bruk av lokasjon for varekonsolidering
@@ -51,7 +51,7 @@ Med disse feltene kan lagerledere få en bedre oversikt over statusen for lagerl
 
 ## <a name="set-up-item-consolidation-and-location-utilization"></a>Konfigurere varekonsolidering og lokasjonsutnyttelse
 
-Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsolidering og bruk av lokasjon. Fremgangsmåtene bruker eksempelverdier fra standard demodata. Hvis du planlegger å arbeide gjennom eksempelscenarioet som er oppgitt senere i dette emnet, velger du den juridiske enheten **USMF** (som inneholder standard demodata) og oppretter hver post som beskrives i denne delen. Hvis du ikke planlegger å arbeide gjennom eksempelscenarioet, kan verdiene som angis her, vurderes som eksempler på hvilke typer oppsett du må fullføre for å bruke funksjonene.
+Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsolidering og bruk av lokasjon. Fremgangsmåtene bruker eksempelverdier fra standard demodata. Hvis du planlegger å arbeide gjennom eksempelscenarioet som er oppgitt senere i denne artikkelen, velger du den juridiske enheten **USMF** (som inneholder standard demodata) og oppretter hver post som beskrives i denne delen. Hvis du ikke planlegger å arbeide gjennom eksempelscenarioet, kan verdiene som angis her, vurderes som eksempler på hvilke typer oppsett du må fullføre for å bruke funksjonene.
 
 ### <a name="released-product"></a>Frigitt produkt
 

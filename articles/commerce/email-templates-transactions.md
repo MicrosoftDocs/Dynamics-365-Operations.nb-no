@@ -1,6 +1,6 @@
 ---
 title: Opprette e-postmaler for transaksjonshendelser
-description: Dette emnet beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8722525"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8910556"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Opprette e-postmaler for transaksjonshendelser
 
 [!include [banner](includes/banner.md)]
 
 
-Dette emnet beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce inneholder en standardløsning for å sende e-postmeldinger som varsler kunder om transaksjonshendelser. E-postmeldinger kan for eksempel sendes når en ordre blir plassert, er klar til plukking eller er sendt. Dette emnet beskriver prosedyren for å opprette, laste opp og konfigurere e-postmalene som brukes til å sende transaksjons-e-postmeldinger.
+Dynamics 365 Commerce inneholder en standardløsning for å sende e-postmeldinger som varsler kunder om transaksjonshendelser. E-postmeldinger kan for eksempel sendes når en ordre blir plassert, er klar til plukking eller er sendt. Denne artikkelen beskriver prosedyren for å opprette, laste opp og konfigurere e-postmalene som brukes til å sende transaksjons-e-postmeldinger.
 
 ## <a name="notification-types"></a>Varslingstyper
 

@@ -1,6 +1,6 @@
 ---
 title: Livssyklustilstander for aktiva
-description: Dette emnet forklarer livssyklustilstander for aktiva og livssyklusmodeller i Aktivastyring.
+description: Denne artikkelen forklarer livssyklustilstander for aktiva og livssyklusmodeller i Aktivastyring.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 43b1ff9438437e6c1ff33bab9a7ba0361029cb6d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722469"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8901067"
 ---
 # <a name="asset-lifecycle-states"></a>Livssyklustilstander for aktiva
 
@@ -28,7 +28,7 @@ ms.locfileid: "6722469"
 
  
 
-Dette emnet forklarer livssyklustilstander for aktiva og livssyklusmodeller i Aktivastyring. Livssyklustilstander for aktiva brukes til å definere om aktivumet er aktivt eller inaktivt. Du kan for eksempel definere livssyklustilstander for aktiva, blant annet **Opprettet**, **Aktiv** og **Avsluttet**.
+Denne artikkelen forklarer livssyklustilstander for aktiva og livssyklusmodeller i Aktivastyring. Livssyklustilstander for aktiva brukes til å definere om aktivumet er aktivt eller inaktivt. Du kan for eksempel definere livssyklustilstander for aktiva, blant annet **Opprettet**, **Aktiv** og **Avsluttet**.
 
 > [!NOTE]
 > - Livssyklustilstander for forespørsel er knyttet til livssyklustilstander for aktiva. Når en forespørsel endres til en ny livssyklustilstand for forespørsel, endres derfor aktivumet som er knyttet til forespørselen, til en ny livssyklustilstand for aktiva. Hvis for eksempel livssyklustilstanden for en forespørsel endres til **Inngående**, endres livssyklustilstanden til det tilknyttede anleggsmidlet til livssyklustilstanden som er valgt i feltet **Innkommende livssyklustilstand** på hurtigfanen **Livssyklustilstand for aktiva** på siden **Livssyklustilstand for aktivamodeller**. 

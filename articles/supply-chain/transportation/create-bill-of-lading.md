@@ -1,6 +1,6 @@
 ---
 title: Opprett et fraktbrev
-description: Dette emnet beskriver hvordan du oppretter et fraktbrev ved hjelp av lagerstyringsprosesser.
+description: Denne artikkelen beskriver hvordan du oppretter et fraktbrev ved hjelp av lagerstyringsprosesser.
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2051583ae1606c9e4c099c2029807ca04d9d076
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 34e84fee13dcff574f1700ba2b8f577f4c401cbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8885790"
 ---
 # <a name="create-a-bill-of-lading"></a>Opprett et fraktbrev
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du oppretter et fraktbrev ved hjelp av lagerstyringsprosesser.  
+Denne artikkelen beskriver hvordan du oppretter et fraktbrev ved hjelp av lagerstyringsprosesser.  
 
 Et fraktbrev er et juridisk dokument mellom firmaet som leverer varene, og transportøren. Dokumentet følger med de leverte varene og fungerer som en kvittering for forsendelsen når varene blir levert til målet. Hvis du bruker lagerstyring, er det to måter å generere et fraktbrev på:
 

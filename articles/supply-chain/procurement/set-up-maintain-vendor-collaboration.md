@@ -1,6 +1,6 @@
 ---
 title: Definere og vedlikeholde leverandørsamarbeid
-description: Dette emnet forklarer hvordan du konfigurerer leverandørsamarbeid i Dynamics 365 Supply Chain Management. Den beskriver også hvordan du klargjør nye brukere med leverandørsamarbeid og administrerer sikkerhetsrollene for disse brukerne.
+description: Denne artikkelen forklarer hvordan du konfigurerer leverandørsamarbeid i Dynamics 365 Supply Chain Management. Den beskriver også hvordan du klargjør nye brukere med leverandørsamarbeid og administrerer sikkerhetsrollene for disse brukerne.
 author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8677569"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8890835"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Definere og vedlikeholde leverandørsamarbeid
 
@@ -28,7 +28,7 @@ ms.locfileid: "8677569"
 
 Grensesnittet for leverandørsamarbeid viser begrenset informasjon om bestillinger, fakturaer og forsendelseslager til eksterne leverandørbrukere. Fra dette grensesnittet kan en leverandør også svare på forespørsler om tilbud, og vise og redigere grunnleggende firmainformasjon.
 
-Dette emnet forklarer hvordan du konfigurerer leverandørsamarbeid i Dynamics 365 Supply Chain Management. Den beskriver også hvordan du setter opp en arbeidsflyt for å klargjøre nye brukere med leverandørsamarbeid og administrerer sikkerhetsrollene for disse brukerne.
+Denne artikkelen forklarer hvordan du konfigurerer leverandørsamarbeid i Dynamics 365 Supply Chain Management. Den beskriver også hvordan du setter opp en arbeidsflyt for å klargjøre nye brukere med leverandørsamarbeid og administrerer sikkerhetsrollene for disse brukerne.
 
 > [!NOTE]
 > Informasjonen om oppsett av sikkerhetsroller for leverandørsamarbeid gjelder bare for gjeldende versjon av Finance and Operations. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha informasjon om brukertillatelser for leverandørportalen i Microsoft Dynamics AX, kan du se [Brukersikkerhet for leverandørportal](configure-security-vendor-portal-users.md).
@@ -77,7 +77,7 @@ Rollen **Leverandøradministrasjon (ekstern)** kan brukes for eksterne leverand�
 
 ## <a name="set-up-security-roles-that-are-used-when-prospective-vendors-are-onboarded"></a>Definere sikkerhetsroller som brukes når kundeemneleverandører er introdusert
 
-Hvis du vil introdusere leverandører som startes via en registreringsforespørsel for en kundeemneleverandør, må du definere en ekstern sikkerhetsrolle. Denne rollen blir tilordnet nye brukere i løpet av klargjøringsprosessen som styres av arbeidsflyten for typen **Arbeidsflyt for brukerforespørsel (plattform)**. Hvis du vil ha mer informasjon, kan du se delen [Konfigurere arbeidsflyter for å behandle brukerforespørsler for leverandørsamarbeid](#set-up-workflows-to-process-vendor-collaboration-user-requests) senere i dette emnet.
+Hvis du vil introdusere leverandører som startes via en registreringsforespørsel for en kundeemneleverandør, må du definere en ekstern sikkerhetsrolle. Denne rollen blir tilordnet nye brukere i løpet av klargjøringsprosessen som styres av arbeidsflyten for typen **Arbeidsflyt for brukerforespørsel (plattform)**. Hvis du vil ha mer informasjon, kan du se delen [Konfigurere arbeidsflyter for å behandle brukerforespørsler for leverandørsamarbeid](#set-up-workflows-to-process-vendor-collaboration-user-requests) senere i denne artikkelen.
 
 Hvis du vil ha mer informasjon om hvordan du introduserer potensielle leverandører, kan du [Ønske leverandører velkommen](vendor-onboarding.md).
 

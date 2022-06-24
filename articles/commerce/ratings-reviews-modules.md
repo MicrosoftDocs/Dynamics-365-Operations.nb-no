@@ -1,6 +1,6 @@
 ---
 title: Vurderings- og omtalemoduler
-description: Dette emnet dekker vurderings- og omtalemoduler som brukes på sider med produktdetaljer i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen dekker vurderings- og omtalemoduler som brukes på sider med produktdetaljer i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: 66ee2d4185cad45b70b19fb474c64ae77a2868e835b20d5275e21610c0150370
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f5829ccf9fad78e8669f5109d6c15e71af2ca768
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761568"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894416"
 ---
 # <a name="ratings-and-reviews-modules"></a>Vurderings- og omtalemoduler
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker vurderings- og omtalemoduler som brukes på sider med produktdetaljer (PDP-er) i Microsoft Dynamics 365 Commerce.
+Denne artikkelen dekker vurderings- og omtalemoduler som brukes på sider med produktdetaljer (PDP-er) i Microsoft Dynamics 365 Commerce.
 
 Vurderinger og evalueringer på e-handelswebområder hjelper kunder med å lære om produkter før de tar en avgjørelse, og det er også en metode for å samle inn tilbakemeldinger fra kunder om produkter. 
 

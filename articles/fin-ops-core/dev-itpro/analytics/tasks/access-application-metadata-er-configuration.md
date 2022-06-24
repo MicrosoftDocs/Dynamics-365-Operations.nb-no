@@ -1,6 +1,6 @@
 ---
 title: Få tilgang til programmetadata ved hjelp av ER-konfigurasjon
-description: Dette emnet beskriver hvordan en bruker av Regulatory Configuration Service kan utforme en ny modelltilordning for elektronisk rapportering ved å bruke metadataene.
+description: Denne artikkelen beskriver hvordan en bruker av Regulatory Configuration Service kan utforme en ny modelltilordning for elektronisk rapportering ved å bruke metadataene.
 author: NickSelin
 ms.date: 06/28/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76e31e08cafb06cb2e8508c29f6e03d2559ebeb6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754348"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8883661"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Få tilgang til programmetadata ved hjelp av ER-konfigurasjon
 
 [!include [banner](../../includes/banner.md)]
 
-De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration Service) i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme en ny modelltilordning for elektronisk rapportering (ER) ved å bruke programmetadataene. Du får tilgang til programmetadata ved å bruke en ER-metadatakonfigurasjon som inneholder et eksempelsett med metadata som gir tilgang til utenrikshandelstransaksjoner. For å fullføre disse trinnene må du først fullføre trinnene i emnet [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Deretter fullfører du trinnene i emnet [Klargjøre programmetadataene som skal brukes i RCS](prepare-application-metadata-rcs.md).
+De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration Service) i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme en ny modelltilordning for elektronisk rapportering (ER) ved å bruke programmetadataene. Du får tilgang til programmetadata ved å bruke en ER-metadatakonfigurasjon som inneholder et eksempelsett med metadata som gir tilgang til utenrikshandelstransaksjoner. For å fullføre disse trinnene må du først fullføre trinnene i artikkelen [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Deretter fullfører du trinnene i artikkelen [Klargjøre programmetadataene som skal brukes i RCS](prepare-application-metadata-rcs.md).
 
 ## <a name="prerequisites"></a>Forutsetninger
 1. Gå til **Alle arbeidsområder** > **Elektronisk rapportering**. 

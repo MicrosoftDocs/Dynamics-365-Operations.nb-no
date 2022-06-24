@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 508723752ec7ae5f48e52c728b6ef526ec49e4e2
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: f1e6932740c33ae418ac633623680eda6af7a592
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723030"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858531"
 ---
 # <a name="collections-management-key-concepts"></a>Nøkkelbegreper for innkrevingsbehandling
 
@@ -34,7 +34,7 @@ Før du begynner å sette opp eller arbeide med samlinger, bør du forstår diss
 - Avskrivningstransaksjoner kan opprettes i ett trinn.
 - Betaling uten dekning kan behandles i ett trinn.
 
-Dette emnet beskriver hvert begrep.
+Denne artikkelen beskriver hvert begrep.
 
 ## <a name="customer-aging-snapshots"></a>Øyeblikksbilder av aldersfordeling for kunde 
 
@@ -86,7 +86,7 @@ Handlingsruten inneholder knapper som lar deg vise tilknyttet informasjon for de
 
 Du kan frafalle, gjenoppta eller reversere hele rentenotaer eller gebyrene og transaksjonsrenten som er en del av rentenotaer. I kategorien **Innkreving** i handlingsruten på listesiden **Alle kunder** velger du **Rentenota**, **Transaksjonsrente** eller **Gebyr**.
 
-Disse justeringene påvirker bare rentenotaer og rente og gebyrer som de inkluderer. Hvis du vil ha informasjon om hvordan du avskriver alle gebyrer som en kunde skylder, kan du se delen [Opprette avskrivningstransaksjoner](#creating-write-off-transactions) i dette emnet.
+Disse justeringene påvirker bare rentenotaer og rente og gebyrer som de inkluderer. Hvis du vil ha informasjon om hvordan du avskriver alle gebyrer som en kunde skylder, kan du se delen [Opprette avskrivningstransaksjoner](#creating-write-off-transactions) i denne artikkelen.
 
 For mer informasjon, se Opprette en rentekode med et område og Behandle rente.
 

@@ -1,6 +1,6 @@
 ---
 title: Netto innkjøpspris vs. Transportstyring
-description: 'Microsoft Dynamics 365 Supply Chain Management tilbyr to forskjellige moduler for arbeid med transport: Transportstyring (TMS) og Netto innkjøpspris. Dette emnet oppsummerer funksjonaliteten de to modulene har til felles, og fremhever forskjellene mellom dem.'
+description: 'Microsoft Dynamics 365 Supply Chain Management tilbyr to forskjellige moduler for arbeid med transport: Transportstyring (TMS) og Netto innkjøpspris. Denne artikkelen oppsummerer funksjonaliteten de to modulene har til felles, og fremhever forskjellene mellom dem.'
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8c59d7d1887986d308cb591ece077cff9f4648a5
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 40489ff8d8683d19a5f726546cc4c43cc3e7a05d
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8690393"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905928"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Netto innkjøpspris vs. Transportstyring
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management tilbyr to forskjellige moduler for arbeid med transport: **Transportstyring** (TMS) and **Netto innkjøpspris**. Dette emnet oppsummerer funksjonaliteten de to modulene har til felles, og fremhever forskjellene mellom dem. Du kan bruke denne informasjonen til å avgjøre hvilken modul som passer best til din forretningspraksis. Du vil kanskje finne ut at en forretningspraksis fungerer bedre med TMS, mens en annen fungerer best med Netto innkjøpspris. Avhengig av forretningskravene kan du deretter velge å bruke én modul eksklusivt, eller du kan kombinere de to modulene.
+Microsoft Dynamics 365 Supply Chain Management tilbyr to forskjellige moduler for arbeid med transport: **Transportstyring** (TMS) and **Netto innkjøpspris**. Denne artikkelen oppsummerer funksjonaliteten de to modulene har til felles, og fremhever forskjellene mellom dem. Du kan bruke denne informasjonen til å avgjøre hvilken modul som passer best til din forretningspraksis. Du vil kanskje finne ut at en forretningspraksis fungerer bedre med TMS, mens en annen fungerer best med Netto innkjøpspris. Avhengig av forretningskravene kan du deretter velge å bruke én modul eksklusivt, eller du kan kombinere de to modulene.
 
-Dette emnet er ikke en omfattende gjennomgang av alle funksjonene i hver modul. I stedet fremhever det den tilgjengelige funksjonaliteten i forhold til transport av varer fra en leverandør til forretningens lager, der den kan forbrukes.
+Denne artikkelen er ikke en omfattende gjennomgang av alle funksjonene i hver modul. I stedet fremhever det den tilgjengelige funksjonaliteten i forhold til transport av varer fra en leverandør til forretningens lager, der den kan forbrukes.
 
 ## <a name="terminology-reference-data-and-reporting-differences"></a>Terminologi, referansedata og rapporteringsforskjeller
 

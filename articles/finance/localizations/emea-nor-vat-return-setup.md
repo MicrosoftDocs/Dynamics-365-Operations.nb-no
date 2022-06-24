@@ -1,6 +1,6 @@
 ---
 title: Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
-description: Dette emnet forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
+description: Denne artikkelen forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
 author: liza-golub
 ms.date: 05/27/2022
 ms.topic: article
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 2eb4ef0ef947f87c7ad3a8d7e93fc32a67551f31
-ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
+ms.openlocfilehash: f402642fcc9e953df8581275f5c10dd6616dd00e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8809629"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8908947"
 ---
 # <a name="prepare-your-environment-to-interoperate-with-id-porten-and-altinn-web-services"></a>Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 
@@ -100,7 +100,7 @@ Følg disse trinnene for å opprette programspesifikke parametere for ER-formate
 5. Velg hvert oppslag i hurtigfanen **Oppslag**, og definer passende betingelser for det.
 6. I hurtigfanen **Betingelser** definerer du hvilke avgiftskoder eller andre tilgjengelige kriterier som må samsvare med et bestemt oppslagsresultat.
 
-    Hvis betingelser defineres på én linje, bruker systemet vanligvis dem til en kildeavgiftstransaksjon ved hjelp av **AND**-operatoren. Hvis betingelser må brukes ved hjelp av **OR**-operatoren, definerer du dem på separate linjer. Når en avgiftstransaksjon fra rapporteringsperioden oppfyller en betingelse i listen, blir verdien som er angitt i den tilknyttede **Resultat**-kolonnen, rapportert for det relaterte dokumentet. Mer informasjon om oppsettet av hvert oppslagsfelt er angitt senere i dette emnet.
+    Hvis betingelser defineres på én linje, bruker systemet vanligvis dem til en kildeavgiftstransaksjon ved hjelp av **AND**-operatoren. Hvis betingelser må brukes ved hjelp av **OR**-operatoren, definerer du dem på separate linjer. Når en avgiftstransaksjon fra rapporteringsperioden oppfyller en betingelse i listen, blir verdien som er angitt i den tilknyttede **Resultat**-kolonnen, rapportert for det relaterte dokumentet. Mer informasjon om oppsettet av hvert oppslagsfelt er angitt senere i denne artikkelen.
 
 7. Når du er ferdig med å definere betingelser, velger du **Fullført** i **Tilstand**-feltet. Deretter lagrer du konfigurasjonen.
 
@@ -331,7 +331,7 @@ Hvis du vil klargjøre Finance for å rapportere en mva-retur for en mva-gruppe,
 - Jobben **Utlign og poster merverdiavgift** fullføres i hver juridiske enhet for datterselskap.
 - Programspesifikke parametere for mva-returformat defineres for hver juridiske enhet for datterselskapet. Oppsettkonfigurasjonene fullføres for både **Mva-deklarasjon XML (NO)**-formatet og **Mva-deklarasjon Excel (NO)**-formatet.
 - En mva-retur i Excel-format genereres riktig i hver juridiske enhet for datterselskap.
-- Én juridisk enhet er definert for samarbeid med Altinn i henhold til informasjonen i dette emnet.
+- Én juridisk enhet er definert for samarbeid med Altinn i henhold til informasjonen i denne artikkelen.
 - Mva-utligningsperioder for handlingen **NO MVA Samle inn mva-betaling** er definert for hver juridiske enhet for datterselskap.
 
 Hvis du vil aktivere Finance til å rapportere mva-retur fra flere juridiske enheter i den samme systemdatabasen, må du aktivere funksjonen **Spørringer på tvers av firmaer for Handlinger for fyll ut poster** i arbeidsområdet **Funksjonsbehandling**. 

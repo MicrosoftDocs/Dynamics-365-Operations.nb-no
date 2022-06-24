@@ -1,6 +1,6 @@
 ---
 title: Oversikt over Norge
-description: Dette emnet inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 Finance for Norge.
+description: Denne artikkelen inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 Finance for Norge.
 author: ShylaThompson
 ms.date: 07/25/2019
 ms.topic: overview
@@ -12,18 +12,18 @@ ms.search.region: Norway
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a37501de12643b21e54fc6a142dcec1d071ea66
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 1d25e92c971acb18e3a9846afbbcf0a5b6e4323c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986345"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8891467"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder koblinger til dokumentasjonsressurser for Norge.
+Denne artikkelen inneholder koblinger til dokumentasjonsressurser for Norge.
 
 - [Betalingsformater for kunde og leverandør](tasks/no-00003-customer-vendor-payment-formats.md)
 - [Kundebetaling basert på betalings-ID](tasks/no-00002-customer-payment-based-payment-id.md)

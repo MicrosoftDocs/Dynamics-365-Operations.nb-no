@@ -1,6 +1,6 @@
 ---
 title: Kontantstrømprognose
-description: Dette emnet gir en oversikt over prosessen for kontantstrømprognose. Det forklarer også hvordan kontantstrømprognose er integrert med andre moduler i systemet.
+description: Denne artikkelen gir en oversikt over prosessen for kontantstrømprognose. Det forklarer også hvordan kontantstrømprognose er integrert med andre moduler i systemet.
 author: panolte
 ms.date: 02/16/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4979a57c966f25dba62a944a4e44086e5f6aed28
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: c811afb0129b25a257bdc3519c511d70ecb44714
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712544"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904679"
 ---
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
@@ -110,7 +110,7 @@ Hvis du vil ha mer informasjon, kan du se [Eksterne data i kontantstrømprognose
 
 I versjon 10.0.17 aktiverer en ny funksjon integrering med prosjektstyring og regnskap og kontantstrømprognoser. I arbeidsområdet **Funksjonsstyring** slår du på funksjonen **Prosjektprognose for kontantstrøm** for å inkludere prognoser for kostnader og inntekter i kontantstrømprognosen. I kategorien **Prosjektstyring og regnskap** på siden **Oppsett for kontantstrømprognose** velger du prosjekttypene og transaksjonstypene som skal tas med i kontantstrømprognosen. Deretter velger du prosjektprognosemodellen. En reduksjonstypeundermodell fungerer best. Likviditetskontoene som ble angitt i kundeoppsettet, brukes som standard likviditetskontoer. Derfor trenger du ikke angi standard likviditetskontoer når du definerer kontantstrømprognosen. En budsjettmodell kan også brukes, men bare én type kan velges på siden **Oppsett for kontantstrømprognose** for prosjektstyring og regnskap. En prognosemodell gir mest fleksibilitet når prosjektstyring, regnskap eller Project Operations brukes.
 
-Når funksjonen for kontantstrømprosjektprognose er aktivert, kan kontantstrømprognosen vises for hvert prosjekt på **Alle prosjekter**-siden. Velg **Kontantstrømprognose** i **Prognose**-gruppen i **Plan**-fanen i handlingsruten. I arbeidsområdene for **Kontantstrømoversikt** (se delen [Rapportering](#reporting) senere i dette emnet) viser transaksjonstypen for prosjektprognose innflytene (prognoseinntekt for prosjekt) og utflytene (prognosekostnader for prosjekt). Beløpene kan bare inkluderes hvis feltet **Prosjektfase** i arbeidsområdene **Kontantstrømoversikt** er angitt til **Pågår**.
+Når funksjonen for kontantstrømprosjektprognose er aktivert, kan kontantstrømprognosen vises for hvert prosjekt på **Alle prosjekter**-siden. Velg **Kontantstrømprognose** i **Prognose**-gruppen i **Plan**-fanen i handlingsruten. I arbeidsområdene for **Kontantstrømoversikt** (se delen [Rapportering](#reporting) senere i denne artikkelen) viser transaksjonstypen for prosjektprognose innflytene (prognoseinntekt for prosjekt) og utflytene (prognosekostnader for prosjekt). Beløpene kan bare inkluderes hvis feltet **Prosjektfase** i arbeidsområdene **Kontantstrømoversikt** er angitt til **Pågår**.
 
 Prosjekttransaksjoner er fremdeles inkludert i kontantstrømprognosen på flere måter, uansett om funksjonen **Prosjektprognose for kontantstrøm** er aktivert. Posterte prosjektfakturaer tas med i prognosen som en del av åpne kundetransaksjoner. Prosjektstartede salgsordrer og bestillinger tas med i prognosen som åpne ordrer etter at de er registrert i systemet. Du kan også overføre prosjektprognoser til en finansbudsjettmodell. Denne finansbudsjettmodellen tas deretter med i kontantstrømprognosen som en del av budsjettregisteroppføringene. Hvis du har aktivert funksjonen **Prosjektprognose for kontantstrøm**, må du ikke overføre prosjektprognoser til en budsjettmodell i finans, fordi denne handlingen vil føre til at prosjektprognosene telles to ganger.
 

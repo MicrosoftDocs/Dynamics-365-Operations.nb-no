@@ -1,6 +1,6 @@
 ---
 title: Opprette en permisjons- og fraværsplan
-description: Dette emnet beskriver hvordan du oppretter permisjonsplaner i Dynamics 365 Human Resources for ulike permisjonstyper.
+description: Denne artikkelen beskriver hvordan du oppretter permisjonsplaner i Dynamics 365 Human Resources for ulike permisjonstyper.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,17 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad5d4b1e7b67d1148d01f393a2d548d06b84de9a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 42f7dbf53ad26107d9919d7e6ccfd6f9d3cff7c8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688043"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8858163"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Opprette en permisjons- og fraværsplan
 
 > [!Important]
-> Funksjonaliteten som er nevnt i dette emnet, er for øyeblikket tilgjengelig for kunder i frittstående Dynamics 365 Human Resources. Noe av eller all funksjonaliteten vil være tilgjengelig som en del av en fremtidig versjon av Finance-infrastrukturen etter Finance versjon 10.0.26.
+> Funksjonaliteten som er nevnt i denne artikkelen, er for øyeblikket tilgjengelig for kunder i frittstående Dynamics 365 Human Resources. Noe av eller all funksjonaliteten vil være tilgjengelig som en del av en fremtidig versjon av Finance-infrastrukturen etter Finance versjon 10.0.26.
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

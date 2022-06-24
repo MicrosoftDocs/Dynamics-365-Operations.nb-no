@@ -1,6 +1,6 @@
 ---
 title: Administrere folioer
-description: Dette emnet beskriver hvordan du arbeider med folioer. En folio består vanligvis av én leverandørs varer for én enhet eller et firma per forsendelse. Varene i en folio kan være i én container, eller de kan være spredt på flere containere.
+description: Denne artikkelen beskriver hvordan du arbeider med folioer. En folio består vanligvis av én leverandørs varer for én enhet eller et firma per forsendelse. Varene i en folio kan være i én container, eller de kan være spredt på flere containere.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: f908ae3c150a09af61bb0ee97469619744cd1079
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8695309"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8905899"
 ---
 # <a name="manage-folios"></a>Administrere folioer
 
@@ -132,7 +132,7 @@ Hvis du vil åpne visningen **Linjer**, åpner du en folio, og deretter velger d
 
 ### <a name="information-on-the-folio-fasttab"></a>Informasjon om hurtigfanen Folio
 
-Hurtigfanen **Folio** i visningen **Linjer** viser informasjon om folioen. Mesteparten av denne informasjonen vises også i visningen **Topptekst**, som beskrevet tidligere i dette emnet.
+Hurtigfanen **Folio** i visningen **Linjer** viser informasjon om folioen. Mesteparten av denne informasjonen vises også i visningen **Topptekst**, som beskrevet tidligere i denne artikkelen.
 
 ### <a name="information-and-buttons-on-the-lines-fasttab"></a>Informasjon og knapper i hurtigfanen Linjer
 

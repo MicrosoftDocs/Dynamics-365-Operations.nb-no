@@ -1,6 +1,6 @@
 ---
-title: Definere et B2B-e-handelsområde
-description: Dette emnet beskriver hvordan du konfigurerer et bedrift-til-bedrift-e-handelsområde (B2B) i Microsoft Dynamics 365 Commerce.
+title: Definer et netthandelsområde for B2B
+description: Denne artikkelen beskriver hvordan du konfigurerer et bedrift-til-bedrift-e-handelsområde (B2B) i Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -14,24 +14,24 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 0bcd864694ff2ad2aa211c927da4d698c0039715
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691924"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881912"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Definere et e-handelsområde for B2B
 
 [!include [banner](../../includes/banner.md)]
 
-E-handelsområder for bedrift-til-bedrift (B2B) har noen nøkkelfunksjoner som optimaliserer arbeidsflyten for en B2B-bruker. Dette emnet beskriver hvordan du konfigurerer et B2B-e-handelsområde i Microsoft Dynamics 365 Commerce. Det går gjennom modulene og områdeinnstillingene som må konfigureres for å aktivere B2B-spesifikke scenarier.
+E-handelsområder for bedrift-til-bedrift (B2B) har noen nøkkelfunksjoner som optimaliserer arbeidsflyten for en B2B-bruker. Denne artikkelen beskriver hvordan du konfigurerer et B2B-e-handelsområde i Microsoft Dynamics 365 Commerce. Det går gjennom modulene og områdeinnstillingene som må konfigureres for å aktivere B2B-spesifikke scenarier.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-- Hvis du vil opprette et B2B-e-handelsområde, må du aktivere og konfigurere bestemte funksjoner i Commerce-hovedkvarteret, som beskrevet i dette emnet.
+- Hvis du vil opprette et B2B-e-handelsområde, må du aktivere og konfigurere bestemte funksjoner i Commerce headquarters, som beskrevet i denne artikkelen.
 - Kjerneerfaringer, for eksempel produktoppdagelse, produktdetaljersider, handlekurven og kassen, drives av de samme modulene som brukes for e-handelsområder for bedrift-til-kunde (B2C). Nettstedsforfattere bør være kjent med alle modulene som Dynamics 365 Commerce støtter. Hvis du vil ha mer informasjon, kan du se [Oversikt over modulbibliotek](../starter-kit-overview.md).
-- Dette emnet antar at nettstedsforfattere forstår det grunnleggende om Commerce-områdebygger, maler, fragmenter og sider, slik at de kan aktivere B2B-funksjonene for e-handelsområder.
+- Denne artikkelen antar at nettstedsforfattere forstår det grunnleggende om Commerce-områdebygger, maler, fragmenter og sider, slik at de kan aktivere B2B-funksjonene for e-handelsområder.
 
 ## <a name="site-level-settings"></a>Innstillinger på områdenivå
 

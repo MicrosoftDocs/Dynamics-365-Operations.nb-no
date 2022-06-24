@@ -1,6 +1,6 @@
 ---
 title: Endre en eksisterende områdeside
-description: Dette emnet beskriver hvordan du endrer en eksisterende områdeside i Microsoft Dynamics 365 Commerce.
+description: Denne artikkelen beskriver hvordan du endrer en eksisterende områdeside i Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0039489c266840e5341f2e322fa7783216ac9bb3ebcecff840f591beec9f79c4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceffb07afc8287e975f48696a059d3cd4ad20ffa
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751549"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8848869"
 ---
 # <a name="modify-an-existing-site-page"></a>Endre en eksisterende områdeside
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du endrer en eksisterende områdeside i Microsoft Dynamics 365 Commerce.
+Denne artikkelen beskriver hvordan du endrer en eksisterende områdeside i Microsoft Dynamics 365 Commerce.
 
 Når du må endre en side, er det første trinnet å åpne den i sideredigeringsprogrammet. Gå til området som inneholder siden, og finn siden du vil bruke, i listen over sider. Hvis du ikke finner siden, kan du bruke redigeringsverktøyets omfattende søkefunksjonalitet. Skriv inn det nøyaktige sidenavnet, eller skriv inn de første bokstavene i objektet og deretter en stjerne (\*). Det vises en filtrert liste over sider. Du kan bruke denne listen til å finne siden du vil bruke. Når du har funnet riktig side, velger du sidenavnet for å åpne siden i sideredigeringsprogrammet.
 

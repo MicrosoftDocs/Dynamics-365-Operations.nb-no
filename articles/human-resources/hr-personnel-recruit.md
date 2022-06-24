@@ -1,6 +1,6 @@
 ---
 title: Rekrutter jobbkandidater
-description: Dette emnet beskriver hvordan du rekrutterer kandidater i Dynamics 365 Human Resources.
+description: Denne artikkelen beskriver hvordan du rekrutterer kandidater i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: 743c78d3526db2707630229d4cf21531f9641dd6
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733992"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879257"
 ---
 # <a name="recruit-job-candidates"></a>Rekrutter jobbkandidater
 
@@ -47,11 +47,12 @@ Hvis du vil sende inn rekrutteringsforespørsler i HR-rekruttering, må du førs
 
 Når funksjonene er aktivert, velger du funksjonaliteten med følgende trinn: 
 1. Gå til **Personale** > **Oppsett** > **Personalparametere**.
-2. Angi  **Nei** i feltet **Rekruttering deaktivert** i **Rekruttering**-fanen.
-3. Velg **HR-rekruttering** i rullegardinlisten **Rekrutteringserfaring**.   
+2. Angi  **Ja** i feltet **Rekruttering deaktivert** i **Rekruttering**-fanen.
+3. Velg **HR-rekruttering** i rullegardinlisten **Rekrutteringserfaring**.  
+4. Klikk på **Lagre**. 
 
 > [!Note] 
-> Når **HR-rekruttering** er valgt, blir **Rekrutteringsprosjekter** (gammel) skrivebeskyttet. 
+> Når **HR-rekruttering** er valgt, blir **Rekrutteringsprosjekter** (gammel) ikke tilgjengelig. 
 
 
 ## <a name="add-a-recruiting-request-location"></a>Legg til en rekrutteringsforespørselssted

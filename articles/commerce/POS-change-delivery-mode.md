@@ -1,6 +1,6 @@
 ---
-title: Endre leveringsmodus i POS
-description: Dette emnet beskriver hvordan du konfigurerer og bruker endre leveringsmodus i POS.
+title: Endre leveringsmodus i salgssted
+description: Denne artikkelen beskriver hvordan du konfigurerer og bruker endre leveringsmodus i POS.
 author: hhainesms
 ms.date: 03/01/2020
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 583f568164d0de70e22998bf5ded5f4616b00bd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714046"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8855827"
 ---
-# <a name="change-mode-of-delivery-in-pos"></a>Endre leveringsmodus i POS
+# <a name="change-mode-of-delivery-in-pos"></a>Endre leveringsmodus i salgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer og bruker funksjonen "endre leveringsmodus" i salgsstedsmiljøer. 
+Denne artikkelen beskriver hvordan du konfigurerer og bruker funksjonen "endre leveringsmodus" i salgsstedsmiljøer. 
 
 I Dynamics 365 Commerce versjon 10.0.10 og senere er **Endre leveringsmodus** (647) tilgjengelig for å legge til i skjermoppsett for POS.
 

@@ -1,6 +1,6 @@
 ---
 title: Støtte for parameteriserte kall av ER-datamodeller
-description: Dette emnet beskriver hvordan du implementerer parameteriserte kall av datamodeller for elektronisk rapportering (ER).
+description: Denne artikkelen beskriver hvordan du implementerer parameteriserte kall av datamodeller for elektronisk rapportering (ER).
 author: NickSelin
 ms.date: 03/14/2022
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 968b0769607e9fdbed57c25b727ed44988a92913
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 65ac81e9aa25b286640fd526e71b55de3b0695ca
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8419473"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8884264"
 ---
 # <a name="support-parameterized-calls-of-er-data-models"></a>Støtte for parameteriserte kall av ER-datamodeller
 
@@ -160,7 +160,7 @@ Du kan angi hver parameter for et datamodellfelt der argumentet kan angis som en
 > [!NOTE]
 > Standardverdien for parameteren til et datamodellfelt støttes ikke. Hvis du legger til en parameter i et felt i en datamodell, og versjonen av denne datamodellen allerede er frigitt og publisert, må du [rebasere](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) alle tilsvarende modelltilordninger og -formater til den nye versjonen av denne modellen, fordi denne datamodellen ikke er bakoverkompatibel.
 
-Du kan konfigurere parametriserte datamodellfelter for å gjøre modelltilordningskall formatspesifikke. Denne fremgangsmåten kan hjelpe deg med å redusere antall modelltilordninger som må konfigureres for mange formater for en enkelt datamodell. Du kan også bruke denne fremgangsmåten til å forbedre kjøringsytelsen for formatene og redusere tiden det tar å generere forretningsdokumenter. Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emnet.
+Du kan konfigurere parametriserte datamodellfelter for å gjøre modelltilordningskall formatspesifikke. Denne fremgangsmåten kan hjelpe deg med å redusere antall modelltilordninger som må konfigureres for mange formater for en enkelt datamodell. Du kan også bruke denne fremgangsmåten til å forbedre kjøringsytelsen for formatene og redusere tiden det tar å generere forretningsdokumenter. Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i denne artikkelen.
 
 ## <a name="example-use-parameterized-calls-of-er-data-models"></a>Eksempel: Bruk parameteriserte kall av ER-datamodeller
 

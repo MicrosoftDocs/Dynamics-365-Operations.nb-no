@@ -1,8 +1,8 @@
 ---
 title: Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen
-description: Dette emnet inneholder informasjon om hvordan du bruker Beregnet felt-typen for ER-datakilder.
+description: Denne artikkelen inneholder informasjon om hvordan du bruker Beregnet felt-typen for ER-datakilder.
 author: NickSelin
-ms.date: 08/06/2020
+ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8934707"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan utforme en datakilde for elektronisk rapportering (ER) ved hjelp **Beregnet felt**-typen. Denne datakilden kan inneholde et ER-uttrykk som, når det kjøres, kan kontrolleres av verdiene til parameterargumentene som er konfigurert i en binding som kaller opp denne datakilden. Ved å konfigurere parametriske kall for en slik datakilde, kan du gjenbruke én enkelt datakilde i mange bindinger, noe som reduserer det totale antallet datakilder som må konfigureres i ER-modelltilordninger eller ER-formater. Den forenkler også den konfigurerte ER-komponenten, noe som reduserer vedlikeholdskostnadene og kostnadene for bruk av andre forbrukere.
+Denne artikkelen beskriver hvordan du kan utforme en datakilde for elektronisk rapportering (ER) ved hjelp **Beregnet felt**-typen. Denne datakilden kan inneholde et ER-uttrykk som, når det kjøres, kan kontrolleres av verdiene til parameterargumentene som er konfigurert i en binding som kaller opp denne datakilden. Ved å konfigurere parametriske kall for en slik datakilde, kan du gjenbruke én enkelt datakilde i mange bindinger, noe som reduserer det totale antallet datakilder som må konfigureres i ER-modelltilordninger eller ER-formater. Den forenkler også den konfigurerte ER-komponenten, noe som reduserer vedlikeholdskostnadene og kostnadene for bruk av andre forbrukere.
 
 ## <a name="prerequisites"></a>Forutsetninger
-Hvis du vil fullføre eksemplene i dette emnet, må du ha følgende tilgang:
+Hvis du vil fullføre eksemplene i denne artikkelen, må du ha følgende tilgang:
 
 - Tilgang til én av disse rollene:
 
@@ -36,7 +36,7 @@ Hvis du vil fullføre eksemplene i dette emnet, må du ha følgende tilgang:
     - Funksjonell konsulent for elektronisk rapportering
     - Systemansvarlig
 
-- Tilgang til Regulatory Configuration Services (RCS) som er klargjort for samme leietaker som Finance and Operations, for én av følgende roller:
+- Tilgang Regulatory Configuration Service (RCS) som er klargjort for samme leietaker som Finance and Operations, for én av følgende roller:
 
     - Utvikler av elektronisk rapportering
     - Funksjonell konsulent for elektronisk rapportering
@@ -46,10 +46,10 @@ Du må også laste ned og lagre følgende filer lokalt.
 
 | **Innhold**                           | **Filnavn**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Eksempel ER-datamodellkonfigurasjon    | [Modell for å lære om parameterkall.versjon.1.XML](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
-| Eksempel ER-metadatakonfigurasjon      | [Metadata for å lære om parameterkall.versjon.1.XML](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
-| Eksempel ER-modelltilordningskonfigurasjon | [Tilordning for å lære om parameterkall.versjon.1.1.XML](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Eksempel ER-formatkonfigurasjon        | [Format for å lære om parameterkall.versjon.1.1.XML](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Eksempel ER-datamodellkonfigurasjon    | [Modell for å lære om parameterkall.versjon.1.XML](https://download.microsoft.com/download/e/5/c/e5c0d3f9-1818-47c7-ae75-46efcbb1314f/Modeltolearnparameterizedcallsversion.1.xml)     |
+| Eksempel ER-metadatakonfigurasjon      | [Metadata for å lære om parameterkall.versjon.1.XML](https://download.microsoft.com/download/8/3/a/83a910a5-bf65-4509-bec4-6737a81ecc45/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Eksempel ER-modelltilordningskonfigurasjon | [Tilordning for å lære om parameterkall.versjon.1.1.XML](https://download.microsoft.com/download/b/f/d/bfd8cbd8-0370-44d1-a1b1-66d021c580ca/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Eksempel ER-formatkonfigurasjon        | [Format for å lære om parameterkall.versjon.1.1.XML](https://download.microsoft.com/download/8/1/d/81deb6d8-a768-4fcf-bbbe-8f84d2dac3eb/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Logge på RCS-forekomsten
 I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet, Litware, Inc. Først må du fullføre disse trinnene i RCS i fremgangsmåten [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md):
@@ -306,7 +306,7 @@ Når et parameterberegnet felt returnerer en post, må du støtte binding av enk
 Du kan kjøre de opprinnelige og forbedrede ER-formatene for å sikre at konfigurerte parameterberegnede felt fungerer slik de skal.
 
 ### <a name="import-er-configurations"></a>Importere ER-konfigurasjoner
-Du kan importere gjennomgåtte konfigurasjoner fra RCS ved å bruke ER-repositoriet til **RCS**-typen. Hvis du allerede har gått gjennom trinnene gjort i emnet [Importere konfigurasjoner for elektronisk rapportering (ER) fra Regulatory Configuration Services](rcs-download-configurations.md), bruker du det konfigurerte ER-repositoriet til å importere konfigurasjoner som er beskrevet tidligere i dette emnet, til miljøet. Hvis ikke følger du denne fremgangsmåten:
+Du kan importere gjennomgåtte konfigurasjoner fra RCS ved å bruke ER-repositoriet til **RCS**-typen. Hvis du allerede har gått gjennom trinnene gjort i artikkelen [Importere konfigurasjoner for elektronisk rapportering (ER) fra Regulatory Configuration Services](rcs-download-configurations.md), bruker du det konfigurerte ER-repositoriet til å importere konfigurasjoner som er beskrevet tidligere i dette emnet, til miljøet. Hvis ikke følger du denne fremgangsmåten:
 
 1. Velg firmaet **DEMF**, og velg **Elektronisk rapportering** på standard instrumentbord.
 2. Velg **Rapporteringskonfigurasjoner**.

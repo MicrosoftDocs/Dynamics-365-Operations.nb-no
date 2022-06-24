@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Kostnadsregnskapsanalyse
-description: Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI.
+description: Denne artikkelen beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI.
 author: AndersGirke
 ms.date: 10/02/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d5e595c910e237481b8124cb2a0333697344b9ad
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747375"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876899"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innholdet Kostnadsregnskapsanalyse
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innhold i **Kostnadsregnskapsanalyse**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Denne artikkelen beskriver hva som er inkludert i **Kostnadsregnskapsanalyse**-innhold for Microsoft Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="overview"></a>Oversikt
 

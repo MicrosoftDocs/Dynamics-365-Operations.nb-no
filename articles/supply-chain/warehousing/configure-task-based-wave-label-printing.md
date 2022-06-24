@@ -1,6 +1,6 @@
 ---
 title: Planlegge bølgeetikettutskrift under bølge
-description: Dette emnet beskriver hvordan du definerer og bruker funksjonaliteten for oppgavebasert bølgeetikettutskrift.
+description: Denne artikkelen beskriver hvordan du definerer og bruker funksjonaliteten for oppgavebasert bølgeetikettutskrift.
 author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8889464"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planlegge bølgeetikettutskrift under bølge
 
@@ -30,7 +30,7 @@ Når du bruker funksjonen *Oppgavebasert bølgeetikettutskrift*, oppretter syste
 
 ## <a name="turn-on-the-task-based-wave-label-printing-feature-in-feature-management"></a>Slå på funksjonen for Oppgavebasert bølgeetikettutskrift i funksjonsbehandling
 
-Hvis du vil bruke funksjonene som beskrives i dette emnet, må de være aktivert på systemet. Bruk arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonene i følgende rekkefølge:
+Hvis du vil bruke funksjonene som beskrives i denne artikkelen, må de være aktivert på systemet. Bruk arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonene i følgende rekkefølge:
 
 1. *Bølgeetikettutskrift* – Denne funksjonen er nødvendig for å aktivere bølgeprosessmetoden for utskrift av bølgeetiketter.
 1. *Organisasjonsomfattende arbeidsblokkering* – Denne funksjonen kreves for både manuell og automatisk konfigurasjon av planlagt arbeidsopprettelse. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)

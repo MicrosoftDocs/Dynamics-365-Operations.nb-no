@@ -1,6 +1,6 @@
 ---
 title: Tilgangsrettigheter til kontrollere for kostnadsobjekt
-description: Dette emnet inneholder informasjon om tilgangsrettigheter for kontrollere for kostnadsobjekt.
+description: Denne artikkelen inneholder informasjon om tilgangsrettigheter for kontrollere for kostnadsobjekt.
 author: AndersGirke
 ms.date: 06/24/2017
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13d562a4f42644b822c9548d1ea87d44a396b2c2
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: c40be758c5e5d1d1fb025630ed8321ae46251892
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8733885"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903196"
 ---
 # <a name="access-rights-for-cost-object-controllers"></a>Tilgangsrettigheter til kontrollere for kostnadsobjekt
 
@@ -38,7 +38,7 @@ Det er fire unike roller i kostnadsregnskap.
 | Assisterende lagerregnskapsfører   | Operations   |
 | Kontroller for kostnadsobjekt  | Teammedlemmer |
 
-Dette emnet forklarer hvordan du tilordner rollen **Kontroller for kostnadsobjekt** til en leder.
+Denne artikkelen forklarer hvordan du tilordner rollen **Kontroller for kostnadsobjekt** til en leder.
 
 Når rollen **Kontroller for kostnadsobjekt** er tilordnet en leder, kan lederen utføre følgende oppgaver:
 
@@ -95,7 +95,7 @@ Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som 
 
 > [!IMPORTANT]
 > - Før hierarkiet for tilgangsliste kan påvirke data i Power BI, må hierarkiet for tilgangsliste og radnivåsikkerhet i Power BI sammenkobles. Hvis du vil ha mer informasjon, kan du se [Definere sikkerhet for innholdspakken Kostnadsregnskap](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
-> - Dette emnet viser forutsetningene som må være på plass før du kan bruke arbeidsområdet **Kostnadskontroll**.
+> - Denne artikkelen viser forutsetningene som må være på plass før du kan bruke arbeidsområdet **Kostnadskontroll**.
 
 Tilleggsressurser
 

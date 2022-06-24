@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4bae8c038d048d18096eab20150701fd0e47250a
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: b48fcfe46dbc8a512a2ff9523b62c3a99d1bcd28
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8734667"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8888100"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Ansette kandidat via Rekruttering
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Rekrutteringsfunksjonaliteten i dette emnet kalles Rekrutteringsprosjekter og fokuserer på søkere, søknader og rekrutteringsprosjekter.  
+> Rekrutteringsfunksjonaliteten i denne artikkelen kalles Rekrutteringsprosjekter og fokuserer på søkere, søknader og rekrutteringsprosjekter.  
 
 Dette gjør det mulig for en bemanningskonsulent å ansette en søker som sendte en søknad ved hjelp av et bestemt rekrutteringsprosjekt. Når du ansetter en søker gjennom et rekrutteringsprosjekt, opprettes en ny arbeiderpost, og søkerens post får statusen **Ansatt**. Demonstrasjonsdatafirmaet **USMF** ble brukt til å opprette denne fremgangsmåten.
 
