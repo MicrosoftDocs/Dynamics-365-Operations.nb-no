@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (mai)
                   href: get-started/whats-new-changed-10-0-26.md
-                - name: Finance 10.0.25 (april)
-                  href: get-started/whats-new-changed-10-0-25.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -68,9 +66,9 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Automatisering av dataoppgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/finance/toc.json
-                - name: Levere ISV-løsninger med One Version
+                - name: Levering av ISV-løsninger med One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette og automatisere brukergodkjenningstester
+                - name: Opprett og automatiser brukergodkjenningstester
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/finance/toc.json
             - name: Distribuere et demomiljø
               href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/finance/toc.json
@@ -462,6 +460,8 @@
                   items:
                     - name: Definer inntekts- og utgiftsutsettelser
                       href: accounts-receivable/sb-deferrals.md
+                    - name: Posteringsmetode for utsettelse
+                      href: accounts-receivable/Deferral-posting-methods.md
                     - name: Opprett utsettelsesplaner
                       href: accounts-receivable/sb-deferrals-schedules.md
                     - name: Utsettelsesstandardtransaksjoner
@@ -1214,6 +1214,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
             - name: Komponenter for finansrapport
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Vis og utform finansrapporter
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
             - name: Valutafunksjoner i finansrapportering
               href: general-ledger/financial-reporting-currency-capability.md
             - name: Beregning av opptjente inntekter i finansrapportering
@@ -1978,6 +1980,8 @@
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
                 - name: Definer bankkontonumre for Brasil
                   href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+                - name: Overføringsordrer
+                  href: localizations/latam-bra-about-transfer-orders.md
                 - name: Avgifter
                   items:
                     - name: Oversikt over Brasil-avgifter
@@ -2116,11 +2120,13 @@
                   href: localizations/emea-cze-intra-community-VAT.md
                 - name: Årsavslutning
                   href: localizations/emea-cze-hun-year-end.md
+                - name: EU-salgsliste
+                  href: localizations/emea-cze-eu-sales-list.md
             - name: Danmark
               items:
                 - name: Oversikt over Danmark
                   href: localizations/denmark.md
-                - name: Tilordne et format for betalingsbilag til en kundekonto
+                - name: Tildel et format for betalingsbilag til en kundekonto
                   href: localizations/tasks/assign-payment-slip-format-customer-account.md
                 - name: Opprette og postere en kundefaktura for en kunde i offentlig sektor
                   href: localizations/tasks/create-post-customer-invoice-public-sector-customer.md
@@ -2130,11 +2136,11 @@
                   href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
                 - name: EU-salgsliste
                   href: localizations/emea-dnk-eu-sales-list.md
-                - name: Importer konfigurasjoner for elektroniske OIOUBL-faktureringer
-                  href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+                - name: Elektroniske fakturaer for kunde i Danmark
+                  href: localizations/emea-dnk-e-invoices.md
                 - name: Poster en fritekstfaktura med et betalingsbilag
                   href: localizations/tasks/post-free-text-invoice-payment-slip.md
-                - name: Postere en prosjektfaktura med et betalingsbilag
+                - name: Poster en prosjektfaktura med et betalingsbilag
                   href: localizations/tasks/post-project-invoice-payment-slip.md
                 - name: Postere en salgsfaktura med et betalingsbilag
                   href: localizations/tasks/post-sales-invoice-payment-slip.md
@@ -2220,9 +2226,11 @@
                       href: localizations/emea-ISO20022-file-formats.md
                     - name: Importer konfigurasjon for ISO20022-avtalegiro
                       href: localizations/tasks/import-iso20022-direct-debit-configuration.md
-                    - name: Importere konfigurasjon for ISO20022-kredittoverføring
+                    - name: Forutsetninger for format for ISO 20022-kredittoverføring
+                      href: localizations/emea-fra-ISO20022-international.md
+                    - name: Importer konfigurasjon for ISO20022-kredittoverføring
                       href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
-                    - name: Definere firmaets bankkontoer for ISO20022-kreditoverføringer
+                    - name: Definer firmaets bankkontoer for ISO20022-kreditoverføringer
                       href: localizations/tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md
                     - name: Definere firmaets bankkontoer for ISO20022-avtalegiroer
                       href: localizations/tasks/set-up-company-bank-accounts-iso20022-direct-debits.md
@@ -2462,11 +2470,13 @@
                   href: localizations/emea-hun-intrastat.md
                 - name: Utsatte mva-beregninger
                   href: localizations/emea-hun-deferred-vat.md
+                - name: EU-salgsliste
+                  href: localizations/emea-hun-eu-sales-list.md
             - name: Island
               items:
                 - name: Oversikt over Island
                   href: localizations/iceland.md
-                - name: Opprette en leverandørkonto og tilknytte kategorien for fakturadeklarering
+                - name: Opprett en leverandørkonto og tilknytt kategorien for fakturadeklarering
                   href: localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
                 - name: Definere en deklarering av faktura for leverandører
                   href: localizations/tasks/set-up-invoice-declaration-vendors.md
@@ -2766,6 +2776,8 @@
                                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                                 - name: Definer TDS-registreringsnumre for juridiske enheter
                                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Definer komponentgrupper for kildeskatt for TDS-avgiftstypen
+                                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                                 - name: Definer kildeskattmyndigheter for TDS-avgiftstypen
                                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                                 - name: Definer avgiftskomponentene for TDS-avgiftstypen
@@ -2966,11 +2978,13 @@
                   href: localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
                 - name: Konfigurere avskrivningsprofil og posteringsprofil for tilleggsavskrivning
                   href: localizations/tasks/configure-depreciation-profile-posting.md
-                - name: Konfigurere hovedkontoer for realiseringsforpliktelse for anleggsmiddel og rabattsatser for marked
+                - name: Konfigurer hovedkontoer for realiseringsforpliktelse for anleggsmiddel og rabattsatser for marked
                   href: localizations/tasks/configure-main-accounts-asset-retirement.md
+                - name: Forbruksavgiftsrapport
+                  href: localizations/apac-jpn-consumption-tax-report.md
                 - name: Samlefakturaer
                   href: localizations/apac-jpn-consolidate-invoices.md
-                - name: Opprette et anleggsmiddel med tilleggsavskrivning
+                - name: Opprett et anleggsmiddel med tilleggsavskrivning
                   href: localizations/tasks/create-fixed-asset-additional-depreciation.md
                 - name: Opprette et anleggsmiddel med særskilt avskrivningsprofil
                   href: localizations/tasks/create-fixed-asset-special-depreciation-profile.md
@@ -3412,11 +3426,13 @@
                       items:
                         - name: Opprette anleggsmidler
                           href: localizations/rus-fixed-assets.md
-                        - name: Registrere anskaffelse av anleggsmidler
+                        - name: Registrer anskaffelse av anleggsmidler
                           href: localizations/rus-register-acquisition.md
                         - name: Anskaffelse av anleggsmidler og å ta dem i bruk
                           href: localizations/rus-fixed-asset-acquisition.md
-                        - name: Beregne avskrivning
+                        - name: Kjøretøy og eiendom som anleggsmidler
+                          href: localizations/rus-vehicles-realty.md
+                        - name: Beregn avskrivning
                           href: localizations/rus-depreciation-calculation.md
                         - name: Delvis demontering av anleggsmiddel (likvidasjon)
                           href: localizations/rus-fixed-assets-disassembly.md
@@ -3444,6 +3460,8 @@
                       items:
                         - name: NVFA (Not valuable fixed assets) (Russland)
                           href: localizations/rus-not-valuable-assets.md
+                        - name: 'Primære skjemaer for NVFA, arbeidsklær og spesialutstyr (Russland)'
+                          href: localizations/rus-nvfa.md
                         - name: Regnskap for arbeidstøy/spesialutstyr (Russland)
                           href: localizations/rus-working-clothes-instruments-accounting.md
                     - name: Integrering av anleggsmidler med modulen for aktivabehandling
@@ -3520,6 +3538,8 @@
                       href: localizations/rus-land-tax-declaration.md
                     - name: Deklarering for fortjenesteavgift
                       href: localizations/rus-profit-tax-declaration.md
+                    - name: Rapport om operasjoner med sporbare varer
+                      href: localizations/rus-traceable-goods-operation-report.md
                 - name: Organisasjonsstyring
                   items:
                     - name: Informasjon om avgiftsregistrering knyttet til adresse

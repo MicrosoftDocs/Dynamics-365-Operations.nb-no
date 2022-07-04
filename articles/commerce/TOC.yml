@@ -18,8 +18,6 @@
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (mai 2022)
                   href: get-started/whats-new-commerce-10-0-26.md
-                - name: Commerce 10.0.25 (april 2022)
-                  href: get-started/whats-new-commerce-10-0-25.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -66,24 +64,20 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatisering av dataoppgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/commerce/toc.json
-                - name: Levere ISV-løsninger med One Version
+                - name: Levering av ISV-løsninger med One Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
-                - name: Opprette og automatisere brukergodkjenningstester
+                - name: Opprett og automatiser brukergodkjenningstester
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json
-            - name: Definere et evalueringsmiljø for Dynamics 365 Commerce
+            - name: Definer et Dynamics 365 Commerce-sandkassemiljø
               items:
-                - name: Oversikt over evalueringsmiljø for Dynamics 365 Commerce
-                  href: cpe-overview.md
-                - name: Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
+                - name: Klargjør et Dynamics 365 Commerce-sandkassemiljø
                   href: provisioning-guide.md
-                - name: Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
+                - name: Konfigurer et Dynamics 365 Commerce-sandkassemiljø
                   href: cpe-post-provisioning.md
-                - name: Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
+                - name: Konfigurer BOPIS i et Dynamics 365 Commerce-sandkassemiljø
                   href: cpe-bopis.md
-                - name: Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
+                - name: Konfigurer valgfrie funksjoner for et Dynamics 365 Commerce-sandkassemiljø
                   href: cpe-optional-features.md
-                - name: Vanlige spørsmål om evalueringsmiljø for Dynamics 365 Commerce
-                  href: cpe-faq.md
             - name: Distribusjonshensyn
               items:
                 - name: Distribusjonsalternativer
@@ -440,6 +434,8 @@
                           href: pos-healthcheck.md
                         - name: Støtte for nettverksenheter
                           href: dev-itpro/network-peripherals.md
+                        - name: Kompatibilitet for eksterne enheter
+                          href: Compatible-peripherals.md
                     - name: Skjermoppsett
                       items:
                         - name: Skjermoppsett for demonstrasjonsdata i MPOS/CPOS
@@ -1402,6 +1398,8 @@
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
                   href: localizations/emea-aut-fi-sample.md
+                - name: Retningslinjer for distribusjon for kassaapparater for Østerrike
+                  href: localizations/emea-aut-deployment.md
                 - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Østerrike (eldre)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasil
@@ -2896,6 +2894,8 @@
                       href: dev-itpro/cloud-dev-box.md
                     - name: Kompileringskontroll for SDK for Retail
                       href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+                    - name: Konfigurer en build-agent for Visual Studio 2017 for å bygge MPOS
+                      href: dev-itpro/retail-sdk/mpos-build-agent.md
                     - name: Kjør salgsstedseksempler
                       href: dev-itpro/pos-run-samples.md
                 - name: Referanse

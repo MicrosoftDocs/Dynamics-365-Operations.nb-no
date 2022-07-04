@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-27.md
                 - name: Plattformoppdateringer for versjon 10.0.26 (mai 2022)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Plattformoppdateringer for versjon 10.0.25 (april 2022)
-                  href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -376,11 +374,11 @@
                       href: deployment/on-premises-overview.md
                     - name: Planlegg og klargjør for lokale distribusjoner
                       href: deployment/plan-onprem-deployment.md
-                    - name: Programvare som støtter Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Programvare som støttes lokalt
                       href: deployment/onprem-compatibility.md
                     - name: Krav til maskinvarestørrelse
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Autentisering i Dynamics 365 Finance + Operations (on-premises)
+                    - name: Godkjenning i lokale miljøer
                       href: deployment/authentication-onprem.md
                 - name: Konfigurer og distribuer lokale miljøer
                   items:
@@ -402,15 +400,15 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Internett-tilkobling for klient
                       href: user-interface/client-disconnected.md
-                    - name: Konfigurere bare satsvise og interaktive AOS-noder i lokale distribusjoner
+                    - name: Konfigurer bare satsvise og interaktive AOS-noder i lokale distribusjoner
                       href: deployment/onprem-batchonly.md
                     - name: Konfigurer høy tilgjengelighet for SSRS-noder (SQL Server Reporting Services)
                       href: deployment/onprem-SSRSHA.md
                     - name: Konfigurer proxyer for lokale miljøer
                       href: deployment/onprem-reverseproxy.md
-                    - name: Konfigurer lagerappen for lokale distribusjoner
+                    - name: Konfigurer Warehousing-appen for lokale distribusjoner
                       href: deployment/warehousing-for-on-premise-deployments.md
-                    - name: Aktiver RSAT i miljøer for Finance + Operations (on-premises)
+                    - name: Aktiver RSAT i lokale miljøer
                       href: deployment/onprem-rsat-configuration.md
                     - name: Installer nettverksskriverenheter i lokale miljøer
                       href: analytics/install-network-printer-onprem.md
@@ -428,9 +426,9 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Bruk den samme AD FS-forekomsten på nytt for flere miljøer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Oppgrader Windows Server for miljøene i Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Oppgrader Windows Server i de lokale miljøene
                       href: deployment/onprem-upgrade-os.md
-                    - name: Oppgrader SQL Server-forekomsten for miljøer i Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Oppgrader eller erstatt SQL Server-forekomsten av lokale miljøer
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
@@ -980,11 +978,13 @@
               items:
                 - name: Oversikt over konfigurasjonsbehandling
                   href: lifecycle-services/configuration-manager-lcs.md
-                - name: Konfigurere Konfigurasjonsbehandling
+                - name: Sett opp konfigurasjonsbehandling
                   href: lifecycle-services/set-up-configuration-manager-lcs.md
-            - name: Konfigurere tjenesten for kodeoppgradering
+                - name: Kopier konfigurasjoner
+                  href: lifecycle-services/copy-configuration-lcs.md
+            - name: Konfigurer tjenesten for kodeoppgradering
               href: lifecycle-services/configure-execute-code-upgrade.md
-            - name: Opprette eller oppdatere metodologier
+            - name: Opprett eller oppdater metodologier
               href: lifecycle-services/create-methodology.md
             - name: Forretningsprosessmodelerer (BPM)
               items:
@@ -1050,7 +1050,9 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps-utvidelsesopplæring (forhåndsversjon)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Utvidelse for Dynamics 365 Translation Service Visual Studio Code (forhåndsversjon)
+                - name: Visual Studio-utvidelse (privat forhåndsvisning)
+                  href: lifecycle-services/dts-visual-studio.md
+                - name: Visual Studio Code-utvidelse (forhåndsversjon)
                   href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform-integrering
           items:
@@ -1598,17 +1600,19 @@
               href: sysadmin/maintenance-mode.md
             - name: Forhåndskonfigurerte systemkontoer
               href: sysadmin/pre-configured-system-accounts.md
-            - name: Eksportere B2B-brukere til Azure AD
+            - name: Eksporter B2B-brukere til Azure AD
               href: sysadmin/implement-b2b.md
             - name: Datavedlikehold
               href: sysadmin/DataMaintenancePortal.md
+            - name: Administrer tilgang til nettverksskrivere i ulike juridiske enheter
+              href: sysadmin/sys-admin-tools-network-printer.md
             - name: Sikkerhet
               items:
                 - name: Rollebasert sikkerhet
                   href: sysadmin/role-based-security.md
                 - name: Sikkerhetsarkitektur
                   href: sysadmin/security-architecture.md
-                - name: Kryptering i Finance and Operations-apper
+                - name: Kryptering i økonomi- og driftsapper
                   href: sysadmin/encryption.md
                 - name: Angi tidsavbrudd for inaktiv økt
                   href: sysadmin/session-idle-timeout.md
