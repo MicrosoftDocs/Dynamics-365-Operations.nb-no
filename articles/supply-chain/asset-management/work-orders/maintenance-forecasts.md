@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c2dbd968a22f2bded29cff3517dacbafc79ff8f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: be6ef12f34e85b90c24c43c6e55ad169c271810a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902118"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016630"
 ---
 # <a name="maintenance-forecasts"></a>Vedlikeholdsprognoser
 
@@ -32,7 +32,7 @@ Når du oppretter en arbeidsordre, oppretter du arbeidsordrejobber med tilknytte
 
 Det kan hende at du kan legge til prognoselinjer i en arbeidsordre eller slette dem fra en arbeidsordre. Oppsettet for arbeidsordrelivssyklustilstanden, den tilknyttede prosjekttypen og stadiereglene som er knyttet til prosjekttypen, bestemmer om du kan legge til eller redigere prognoselinjer. Hvis du vil ha mer informasjon om livssyklustilstander for arbeidsordrer og relaterte prosjektstadier, kan du se [Prognoser, arbeidsordrer og prosjekter](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Velg **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 2. Velg arbeidsordren i listen, og deretter, i handlingsruten > fanen **Arbeidsordre** > gruppen **Prosjekt** og deretter **Prognose**. Siden **Vedlikeholdsprognose for arbeidsordre** viser prognoselinjer fra vedlikeholdsjobbtypen som velges i arbeidsordrejobben.
 

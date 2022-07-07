@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 99613369084ca1e708761179dfb2688014b011f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 72813325c19c639c3c8e7ea9c7436730d23eb61b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849626"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017036"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Planlagte vedlikeholdsjobber for arbeidsordre
 
@@ -32,7 +32,7 @@ Siden **Planlagte vedlikeholdsjobber for arbeidsordrer** viser en oversikt over 
 
 ## <a name="view-scheduled-work-order-maintenance-jobs"></a>Vise planlagte vedlikeholdsjobber for arbeidsordrer
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Planlagte vedlikeholdsjobber for arbeidsordrer**. Du ser en liste over alle arbeidsordrer satt til arbeidsordrelivssyklustilstanden Planlagt eller Pågår.
+1. Klikk på **Aktivastyring** > **Arbeidsordrer** > **Planlagte vedlikeholdsjobber for arbeidsordrer**. Du ser en liste over alle arbeidsordrer satt til arbeidsordrelivssyklustilstanden Planlagt eller Pågår.
 
 2. Du kan sortere listen, for eksempel etter vedlikeholdsperson. Du kan også bruke filteret til å begrense listen til å vise arbeidsordrer som er tildelt en bestemt ressurs eller vedlikeholdsperson.
 

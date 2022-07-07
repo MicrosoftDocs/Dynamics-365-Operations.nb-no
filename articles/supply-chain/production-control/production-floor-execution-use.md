@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 9c0d87dfb4c432f9cff0f1172139dbcda6308275
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
+ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860674"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "9022530"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -263,9 +263,6 @@ En arbeider registrerer en pause ved å velge **Pause** og deretter velge kortet
 
 ## <a name="view-the-my-day-dialog"></a>Vis dialogboksen Min dag
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 Dialogboksen **Min dag** gir arbeidere en oversikt over registreringer og saldoer. Dialogboksen er delt inn i følgende tre deler:
 
 - Hoveddelen viser registreringene som nåværende arbeider har gjort på en valgt dato. Det åpnes og viser registreringer for den nåværende dagen og gir en datovelger som gjør det mulig for arbeideren å vise andre dager.
@@ -275,9 +272,6 @@ Dialogboksen **Min dag** gir arbeidere en oversikt over registreringer og saldoe
 Administratorer kan legge til denne funksjonen i grensesnittet ved å plassere **Min dag**-knappen på en verktøylinje for hver relevante fane, slik det beskrives i [Grensesnittet for produksjonsutførelse](production-floor-execution-tabs.md).
 
 ## <a name="working-in-teams"></a>Arbeid i grupper
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 Når flere arbeidere er tildelt samme produksjonsjobb, kan de opprette en gruppe. Gruppen kan nominere én arbeider som leder. De gjenværende arbeiderne blir deretter automatisk assistenter til lederen. For gruppen som opprettes, må bare lederen registrere jobbstatus. Tidsposter gjelder alle gruppemedlemmer.
 

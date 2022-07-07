@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e09419f802b696179901c394b2b95c9208a12b26
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 8f0469d7a3ada0dc30977978a7e9c616e8cf9781
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678297"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017412"
 ---
 # <a name="cancel-a-return-order"></a>Annullere en returordre 
 
@@ -34,11 +34,11 @@ Du kan annullere en returordre i stedet for å slette den når du ønsker å lag
 > <P>Det er bare mulig å annullere returordrer som har statusen <STRONG>Opprettet</STRONG>. Returordrer med statusen <STRONG>Åpen</STRONG> eller <STRONG>Lukket</STRONG> kan ikke annulleres.</P>
 
 
-1.  Klikk på **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Alle returordrer**.
+1.  Klikk på **Salg og markedsføring** \> **Salgsreturer** \> **Alle returordrer**.
     
     – eller –
     
-    Klikk på **Salg og markedsføring** \> **Vanlig** \> **Returordrer** \> **Opprettede returordrer**.
+    Klikk på **Salg og markedsføring** \> **Salgsreturer** \> **Opprettede returordrer**.
 
 2.  Velg returordren som skal annulleres.
 

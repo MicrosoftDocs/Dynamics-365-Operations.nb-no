@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 80f0380d50a0c050242846c0c3e70bc1a0bd6bf5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: df1e1fe352add8361309df54b2178ec27752466d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880458"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016804"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognoser, arbeidsordrer og prosjekter
 
@@ -60,7 +60,7 @@ I illustrasjonen nedenfor, på grunn av hvordan aktivatypen **Lastebilmotor** er
 
 ![Figur 1.](media/01-integration-to-pma.png)
 
-Formålet med prosjekt-ID/en i arbeidsordrejobben og det relaterte aktivitetsnummeret, er å spore kostnader som er knyttet til arbeidsordrejobben, og aktivumet som er valgt for det, i modulen **Prosjektstyring og regnskap**. (Hvis du vil vise prosjekt-ID-en og aktivitetsnummeret, velger du **Aktivabehandling** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**, og deretter velger du arbeidsordren. I hurtigfanen **Linjedetaljer** viser feltet **Prosjekt-ID** prosjekt-ID-en, og feltet **Aktivitetsnummer** viser aktivitetsnummeret.) Hvis du vil ha mer informasjon om kostnadskontroll i Aktivastyring, kan du se [Kostnads- og datokontroll](../controlling-and-reporting/cost-and-date-control.md).
+Formålet med prosjekt-ID/en i arbeidsordrejobben og det relaterte aktivitetsnummeret, er å spore kostnader som er knyttet til arbeidsordrejobben, og aktivumet som er valgt for det, i modulen **Prosjektstyring og regnskap**. (Hvis du vil vise prosjekt-ID-en og aktivitetsnummeret, velger du **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer**, og deretter velger du arbeidsordren. I hurtigfanen **Linjedetaljer** viser feltet **Prosjekt-ID** prosjekt-ID-en, og feltet **Aktivitetsnummer** viser aktivitetsnummeret.) Hvis du vil ha mer informasjon om kostnadskontroll i Aktivastyring, kan du se [Kostnads- og datokontroll](../controlling-and-reporting/cost-and-date-control.md).
 
 Illustrasjonen nedenfor vises en grafisk oversikt over arbeidsordreprosjekter og relaterte prosjektaktiviteter.
 
@@ -70,7 +70,7 @@ Når en ny arbeidsordrejobb blir opprettet i en arbeidsordre, opprettes det auto
 
 Prosjektaktiviteten som opprettes for en arbeidsordrejobb, har relatert informasjon som er knyttet til den. Denne informasjonen gjelder for vedlikeholdsjobbtypen, variant av vedlikeholdsjobbtypen og handel. Dette er nyttig hvis du for eksempel oppretter en bestilling fra en arbeidsordre (se [Innkjøp](../work-orders/procurement.md)), eller hvis du bruker modulen **Prosjektstyrings- og Regnskap** for tidsregistrering.
 
-Hvis anleggsmiddelet ble installert på et arbeidssted, men senere installeres på et annet arbeidssted, oppdateres finansdimensjonene som er knyttet til det nye arbeidsstedet, automatisk i anleggsmiddelet. Når du deretter oppretter en arbeidsordrejobb for anleggsmiddelet, får arbeidsordreprosjektet for arbeidsordrejobben automatisk finansdimensjonene som nå er knyttet til anleggsmiddelet. Når du bruker arbeidssteder, kan kostnader derfor alltid spores på arbeidssteder der et aktivum ble installert på et gitt tidspunkt. Den automatiske oppdateringen av finansdimensjoner bidrar til å sikre fullstendig sporing av kostnader for prosjektkontroll og -rapportering.
+Hvis anleggsmiddelet ble installert på en funksjonslokasjon, men senere installeres på en annen funksjonslokasjon, oppdateres finansdimensjonene som er knyttet til den nye funksjonslokasjonen, automatisk i anleggsmiddelet. Når du deretter oppretter en arbeidsordrejobb for anleggsmiddelet, får arbeidsordreprosjektet for arbeidsordrejobben automatisk finansdimensjonene som nå er knyttet til anleggsmiddelet. Når du bruker funksjonslokasjoner, kan kostnader derfor alltid spores på funksjonslokasjoner der et aktivum ble installert på et gitt tidspunkt. Den automatiske oppdateringen av finansdimensjoner bidrar til å sikre fullstendig sporing av kostnader for prosjektkontroll og -rapportering.
 
 ## <a name="work-order-projects-work-order-lifecycle-states-project-stages-and-project-types"></a>Arbeidsordreprosjekter, livssyklustilstander for arbeidsordre, prosjektstadier og prosjekttyper
 

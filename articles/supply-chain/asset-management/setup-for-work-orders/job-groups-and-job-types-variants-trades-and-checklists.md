@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b4d0bf82dc0dfe12991b4a48fd68a029a2ff2f3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d4385fdd3e94d48a65baf195efa1d687fbf95c3
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887609"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016775"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Kategorier, varianter, handel og sjekklister for vedlikeholdsjobbtyper
 
@@ -28,7 +28,7 @@ ms.locfileid: "8887609"
 
 En aktivatype er knyttet til hvert aktiva. Aktivatyper definerer vedlikeholdsjobbtypene (og dermed vedlikeholdsjobbene) som kan utføres på aktiva. Når du oppretter en arbeidsordre, må du velge en vedlikeholdsjobbtype. Du kan bare velge vedlikeholdsjobbtypene som er relatert til oppsettet for aktivatypen som brukes for aktivumet.
 
-Hvis du vil ha en grafisk oversikt over aktiva og vedlikeholdsjobbtyper og deres tilknytning til arbeidsordrer, kan du se [Arbeidssteder og aktiva](../overview/functional-locations-and-objects.md).
+Hvis du vil ha en grafisk oversikt over aktiva og vedlikeholdsjobbtyper og deres tilknytning til arbeidsordrer, kan du se [Funksjonslokasjoner og aktiva](../overview/functional-locations-and-objects.md).
 
 Du kan definere varianter av vedlikeholdsjobbtyper for en vedlikeholdsjobbtype. Varianter av vedlikeholdsjobbtyper angir variasjoner av en jobbtype, for eksempel størrelse (liten, middels eller stor), perioder (ukentlig, annenhver uke, én måned eller tre måneder) og konfigurasjoner (lav standard, fleksibel eller høy ytelse).
 
@@ -173,7 +173,7 @@ Maler for vedlikeholdssjekklister kan brukes som et felles sett med oppgaver som
     Velg **Aktivastyring** \> **Oppsett** \> **Jobber** \> **Vedlikeholdsjobbtyper**, velg en vedlikeholdsjobbtype, og velg deretter **Standarder for vedlikeholdsjobbtype**.
 
 2. Velg **Ny**.
-3. I feltene **Arbeidssted**, **Aktivatype**, **Produsent**, **Modell** og **Aktivum** velger du aktuelle verdier, avhengig av hvor bestemt vedlikeholdsjobbtypestandarden skal være.
+3. I feltene **Funksjonslokasjon**, **Aktivatype**, **Produsent**, **Modell** og **Aktivum** velger du aktuelle verdier, avhengig av hvor bestemt vedlikeholdsjobbtypestandarden skal være.
 4. Velg en vedlikeholdsjobbtype i feltet **Vedlikeholdsjobbtype** hvis den ikke er valgt automatisk.
 5. I feltene **Variant av vedlikeholdsjobbtype** og **Fag** velger du en vedlikeholdsjobbtypevariant og et vedlikeholdsjobbfag som du trenger.
 6. Velg **Prognose**.
@@ -243,7 +243,7 @@ Du kan definere en satsvis jobb for å oppdatere referanser for standard vedlike
 
 Når du har opprettet de nødvendige kombinasjonene for standard vedlikeholdsjobbtype, kan du bruke siden **Alle aktiva** til å få en oversikt over gjeldende vedlikeholdsjobbtypestandard som er knyttet til et bestemt aktiva. Oversikten viser alle kombinasjoner for standard vedlikeholdsjobbtype som kan brukes for aktivatypen som er valgt for aktivumet. Disse kombinasjonene inkluderer kombinasjoner som har variasjoner av vedlikeholdsjobbtypevarianter og vedlikeholdsjobbfag.
 
-1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**.
+1. Velg **Aktivastyring** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**.
 2. I listen velger du aktivumet hvis du vil se en oversikt over kombinasjonene for vedlikeholdsjobbtype.
 3. Velg **Vedlikeholdsjobbtyper** i handlingsruten i fanen **Generelt** i gruppen **Beslektet informasjon**.
 

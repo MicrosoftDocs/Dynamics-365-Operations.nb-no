@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3347db6395b7da396c42f84881060f476346d2e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851282"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014626"
 ---
 # <a name="wave-creation-and-processing"></a>Bølgeoppretting og -behandling
 
@@ -60,9 +60,9 @@ Hvis du vil opprette en bølge manuelt, gjør du følgende:
 1. Kontroller at de relevante [bølgemalene](wave-templates.md) ikke er angitt til å automatisk oppprette en bølge for lageret og ordretypene, der du heller vil gjøre dette manuelt.
 1. Avhengig av hvilken type bølge du vil opprette, gjør du ett av følgende:
 
-    - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
-    - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
-    - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
+    - Gå til **Lagerstyring** \> **Utgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
+    - Gå til **Lagerstyring** \> **Utgående bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
+    - Gå til **Lagerstyring** \> **Utgående bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
 
 1. Skriv inn en kort beskrivelse av bølgen i **Beskrivelse**-feltet. Dette bør vise hva du behandler i bølgen.
 
@@ -87,9 +87,9 @@ Når en bølge er opprettet, men ennå ikke frigitt, kan du manuelt angi hva som
 
 1. Avhengig av hvilken type bølge du vil legge til linjer for, gjør du ett av følgende:
 
-    - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
-    - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
-    - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
+    - Gå til **Lagerstyring** \> **Utgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
+    - Gå til **Lagerstyring** \> **Utgående bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
+    - Gå til **Lagerstyring** \> **Utgående bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
 
 1. Velg bølgen. Velg ett av følgende i handlingsruten:
 
@@ -121,9 +121,9 @@ Følg denne fremgangsmåten for å behandle en bølge manuelt med alt det nødve
 
 1. Avhengig av hvilken type bølge du vil behandle, gjør du ett av følgende:
 
-    - Velg **Lagerstyring** \> **Felles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
-    - Velg **Lagerstyring** \> **Felles** \> **Bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
-    - Velg **Lagerstyring** \> **Felles** \> **Bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
+    - Velg **Lagerstyring** \> **Utgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
+    - Velg **Lagerstyring** \> **Utgående bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
+    - Velg **Lagerstyring** \> **Utgående bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
 
 1. Velg bølgen som skal behandles. Klikk på **Prosess** i handlingsruten.
 
@@ -141,9 +141,9 @@ Hvis du vil frigi en bølge manuelt, gjør du følgende:
 
 1. Avhengig av hvilken type bølge du vil frigi, gjør du ett av følgende:
 
-      - Velg **Lagerstyring** \> **Felles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
-      - Velg **Lagerstyring** \> **Felles** \> **Bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
-      - Velg **Lagerstyring** \> **Felles** \> **Bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
+      - Velg **Lagerstyring** \> **Utgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**. Velg **Bølge** i handlingsruten.
+      - Velg **Lagerstyring** \> **Utgående bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**. Velg **Produksjonsbølge** i handlingsruten.
+      - Velg **Lagerstyring** \> **Utgående bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**. Velg **Opprett bølge** i handlingsruten.
 
 1. Velg bølgen som skal frigis. Velg **Frigi bølge** i handlingsruten.
 
@@ -179,9 +179,9 @@ Om nødvendig kan du avbryte en bølge som er behandlet. Hvis du vil avbryte en 
 
 1. Avhengig av hvilken type bølge du vil avbryte, gjør du ett av følgende:
 
-      - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Forsendelsesbølger** \> **Alle bølger**.
-      - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**.
-      - Gå til **Lagerstyring** \> **Felles** \> **Bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**.
+      - Gå til **Lagerstyring** \> **Utgående bølger** \> **Forsendelsesbølger** \> **Alle bølger**.
+      - Gå til **Lagerstyring** \> **Utgående bølger** \> **Produksjonsbølger** \> **Alle produksjonsbølger**.
+      - Gå til **Lagerstyring** \> **Utgående bølger** \> **Kanban-bølger** \> **Alle Kanban-bølger**.
 
 1. Velg bølgen som skal avbrytes. Velg **Avbryt** i **Arbeid**-fanen i handlingsruten.
 

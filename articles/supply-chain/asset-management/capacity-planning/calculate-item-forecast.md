@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2d0552c38ddc31ad6322e9e2e0f2c2c722c045f4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25e9b00533fb183b27c1bbe616cf6f414b44b5e7
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870907"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016108"
 ---
 # <a name="calculate-item-forecast"></a>Beregn vareprognose
 
@@ -36,7 +36,7 @@ På samme måte som du kan foreta beregninger av kapasitetsbelastning, som beskr
 
 Dette er nyttig hvis du vil ha en oversikt over forventet vareforbruk (reservedeler i tillegg til andre varer som er nødvendige for å fullføre arbeidsordrer) for en bestemt periode. Beregning av vareprognose kan utføres for alle aktiva eller valgte aktiva. Du kan også foreta en beregning av en aktivitet for vedlikeholdsnedetid (**Alle aktiviteter for vedlikeholdsnedetid** eller **Aktive aktiviteter for vedlikeholdsnedetid**), eller en arbeidsordrepulje (**Alle arbeidsordrepuljer** eller **Aktive arbeidsordrepuljer**).
 
-1. Klikk på **Aktivastyring** > **Forespørsler** > **Vareprognose** eller **Aktivastyring** > **Felles** > **Arbeidsordrepuljer** > **Alle arbeidsordrepuljer** / **Aktive arbeidsordrepuljer** > velg arbeidsordrepulje i listen > **Vareprognose**-knappen, eller **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** / **Aktive aktiviteter for vedlikeholdsnedetid** > velg aktiviteter for vedlikeholdsnedetid i listen > **Vareprognose**-knappen.
+1. Klikk på **Aktivastyring** > **Forespørsler** > **Vareprognose** eller **Aktivastyring** > **Arbeidsordrepuljer** > **Alle arbeidsordrepuljer** / **Aktive arbeidsordrepuljer** > velg arbeidsordrepulje i listen > **Vareprognose**-knappen, eller **Aktivastyring** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** / **Aktive aktiviteter for vedlikeholdsnedetid** > velg aktiviteter for vedlikeholdsnedetid i listen > **Vareprognose**-knappen.
 
 2. I dialogboksen **Beregn vareprognose** velger du en periode for beregningen i feltene **Start dato/klokkeslett** og **Sluttdato/-klokkeslett**.
 
@@ -44,11 +44,11 @@ Dette er nyttig hvis du vil ha en oversikt over forventet vareforbruk (reservede
 
 4. Velg "Ja" på veksleknappen **Inkluder arbeidsordre** hvis du vil inkludere arbeidsordrejobber i prognoseberegningen.
 
-5. Du kan bruke **Nivå**-feltet til å angi hvor detaljert prognoselinjene skal være når det gjelder arbeidssted. 
+5. Du kan bruke **Nivå**-feltet til å angi hvor detaljert prognoselinjene skal være når det gjelder funksjonslokasjoner. 
 
-      Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle vedlikeholdsplanlinjene og arbeidsordrene for et arbeidssted på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. 
+      Hvis du for eksempel setter inn tallet 1 i feltet, og du har en funksjonslokasjonsstruktur med flere nivåer, vises alle vedlikeholdsplanlinjene og arbeidsordrene for en funksjonslokasjon på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra funksjonslokasjoner plassert på et lavere nivå. 
   
-      Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle vedlikeholdsplanlinjene og alle arbeidsordrene på alle arbeidsstedsnivåene de er relatert til.
+      Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle vedlikeholdsplanlinjene og alle arbeidsordrene på alle funksjonslokasjonsnivåene de er relatert til.
 
 6. Klikk på **OK** for å starte beregningen.
 

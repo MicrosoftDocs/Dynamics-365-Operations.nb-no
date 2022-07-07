@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 936fddb73a639564a136002354a4d3dff7798e0b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: af33dbd38b1eb70e79392860e48c6943a4192f78
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907384"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016456"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Godkjenne og bekrefte bestillinger
 
@@ -50,7 +50,7 @@ Når endringsadministrasjon er aktivert, går bestillinger gjennom seks godkjenn
 ## <a name="confirming-purchase-orders"></a>Bekrefte bestillinger
 Bestillinger som har godkjenningsstatusen **Godkjent** kan gå gjennom flere trinn før de er bekreftet. Det kan hende du for eksempel må sende en forespørsel om innkjøp til leverandøren for å spørre om priser, rabatter og leveringsdatoer. I så fall kan du sette bestillingen til statusen **Til eksterne vurdering** ved hjelp av handlingen **Innkjøpsforespørsel**.
 
-Leverandører som er konfigurert til å bruke leverandørportalen, kan se gjennom bestillinger på portalen og godkjenne eller avvise dem. Under denne vurderingsprosessen har bestillingen statusen **Til eksterne vurdering**. Leverandørportalen kan konfigureres slik at en bekreftelse fra leverandøren automatisk bekrefter ordren i Supply Chain Management. Du kan også manuelt bekrefte en bestilling når du mottar bekreftelse fra leverandøren. Hvis en leverandør avviser en bestilling, mottas avvisningen sammen med årsaken til avvisningen og forslag til endringer. I slike tilfeller forblir statusen for bestillingen **Til eksterne vurdering**.
+Leverandører som er konfigurert slik at de kan bruke modulen for leverandørsamarbeid, kan se gjennom bestillinger i portalen og godkjenne eller avvise dem. Under denne vurderingsprosessen har bestillingen statusen **Til eksterne vurdering**. Modulen for leverandørsamarbeid kan konfigureres slik at en bekreftelse fra leverandøren automatisk bekrefter ordren i Supply Chain Management. Du kan også manuelt bekrefte en bestilling når du mottar bekreftelse fra leverandøren. Hvis en leverandør avviser en bestilling, mottas avvisningen sammen med årsaken til avvisningen og forslag til endringer. I slike tilfeller forblir statusen for bestillingen **Til eksterne vurdering**.
 
 Det er også et alternativ for å generere en proformabekreftelse for en ordre før den faktiske bekreftelsen er behandlet. Dette alternativet oppretter bare en rapport som du kan dele med leverandøren. Det opprettes ikke journalinformasjon.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6e9454baa33e37fe62db2b7bd39ff00891ff855
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5be880a6d178743f4a2d3339609604d993f7e5d5
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905031"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016427"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Hva er nytt eller endret i Dynamics 365 for Operations versjon 1611 (november 2016)
 
@@ -818,7 +818,7 @@ For øyeblikket er Retail Modern POS bare tilgjengelig som et Windows 8.1-progra
 | Juster leverandøreid lager ved hjelp av en tellingsjournal. | Det er viktig at du beholder den systemets lagerbeholdningen synkronisert med den faktiske fysiske beholdningen. Det leverandøreide lageret kan justeres inn og ut ved hjelp av tellingsprosesser, for eksempel justering av antall og prosesser for journaltelling. |
 | Få mer informasjon om støtte for forsendelse i Dynamics 365 for Operations | Hvis du vil ha mer informasjon om støtte for forsendelsesprosesser, kan du se [Forsendelse](../../../supply-chain/inventory/consignment.md), [Definere forsendelse](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Opprette en etterfyllingsordre for forsendelse (oppgaveveiledning)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) og [Endre eierskap for forsendelseslager basert på produksjonsbehov (oppgaveveiledning)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
-### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Leverandørsamarbeid (tidligere kjent som leverandørportalen)
+### <a name="vendor-collaboration"></a>Leverandørsamarbeid
 
 | Hva du kan gjøre | Hvorfor dette er viktig |
 |-----------------|-----------------------|

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ae943592c18dd0383aafbce59617cc983dc979b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 25561802996514f6f60fc9400c22dc61a30ef1c8
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907297"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023795"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
@@ -29,9 +29,6 @@ ms.locfileid: "8907297"
 Modulen **Leverandørsamarbeid** er beregnet på leverandører som ikke har integrering av utveksling av elektroniske data (EDI) med Microsoft Dynamics 365 Supply Chain Management. Den lar leverandører arbeide med bestillinger, fakturaer, lagerinformasjon for forsendelse og forespørsler om tilbud (tilbudsforespørsler), og gir dem også tilgang til deler av hoveddataene for leverandøren. Denne artikkelen forklarer hvordan du kan samarbeide med eksterne leverandører som bruker grensesnittet for leverandørsamarbeid for å arbeide med bestillinger, tilbudsforespørsler og forsendelseslager. Det forklarer også hvordan du aktiverer bruk av leverandørsamarbeid for en bestemt leverandør, og hvordan du definerer opplysningene alle leverandører ser når de svarer på en bestilling.
 
 Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grensesnittet for leverandørsamarbeid, kan du se [Leverandørsamarbeid med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).
-
-> [!NOTE]
-> Informasjonen om leverandørsamarbeid i denne artikkelen gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
 
 Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
@@ -57,8 +54,25 @@ En administrator konfigurerer de generelle innstillingene for samarbeid med leve
 
 Før du kan opprette brukerkontoer for en ekstern leverandør, må du konfigurere leverandørkontoen, slik at leverandøren kan bruke leverandørsamarbeid. På siden **Leverandører**, på fanen **Generelt** angir du feltet **Samarbeidsaktivering**. Følgende alternativer er tilgjengelige:
 
-- **Aktive (bestilling bekreftes automatisk)** – Bestillinger bekreftes automatisk hvis leverandøren godtar dem uten endringer.
+- **Aktive (bestilling bekreftes automatisk)** – Bestillinger bekreftes automatisk hvis leverandøren godtar dem uten endringer. Hvis du bruker dette alternativet, må du planlegge den satsvise jobben *Bekreft godkjente bestillinger fra leverandørsamarbeid*, som brukes til å behandle bekreftelsene. Se neste del hvis du vil ha instruksjoner.
 - **Aktive (bestilling bekreftes ikke automatisk)** – Organisasjonen din må bekrefte bestillinger manuelt etter at leverandøren har godtatt dem.
+
+### <a name="scheduling-the-auto-confirmation-batch-job"></a>Planlegging av den satsvise jobben for automatisk bekreftelse
+
+Hvis du bruker alternativet **Aktiv (bestilling bekreftes automatisk)** for én eller flere av leverandørene (som beskrevet i forrige del), må du planlegge den satsvise jobben *Bekreft godkjente bestillinger fra leverandørsamarbeid*, som brukes til å behandle og bekrefte bestillingene. Ellers kommer automatiske bekreftelser aldri til å skje. Bruk fremgangsmåten nedenfor til å planlegge denne jobben.
+
+1. Gå til **Innkjøp og leverandører \> Bestillinger \> Bestillingsbekreftelse \> Bekreft godkjente bestillinger fra leverandørsamarbeid**.
+1. Velg **Gjentakelse** i hurtigfanen **Kjør i bakgrunnen** i dialogboksen **Bekreft godkjente bestillinger fra leverandørsamarbeid**.
+1. Definer tidsplanen jobben skal kjøre etter, i dialogboksen **Definer gjentakelse**. Når du velger tidsplanen, må du ta følgende med i betraktning:
+
+    - Det kan oppstå ytelsesproblemer hvis systemet behandler store mengder data og kjører mange satsvise jobber. I dette tilfellet bør du sannsynligvis ikke kjøre denne jobben oftere enn hvert 10. minutt (avhengig av andre behov). Hvis ytelsen ikke blir et problem for deg, kan du kjøre den så ofte som hvert 1. til 2. minutter om nødvendig.
+    - Hvis leverandørene vanligvis leverer varer raskt (innen den avtalte dagen), bør gjentakelsen være hyppig (hvert 10. til 30. minutt eller deromkring). Dermed kan lagerarbeidere motta varene mot den bekreftede bestillingen etter at bekreftelsen er gjort.
+    - Hvis leverandørene har en lang leveringstid (mer enn 24 timer), kan du angi at denne oppgaven skal kjøres bare én gang om dagen eller deromkring.
+
+1. Velg **OK** for å bruke tidsplanen og gå tilbake til dialogboksen **Bekreft godkjente bestillinger fra leverandørsamarbeid**.
+1. Angi andre bakgrunnsalternativer etter behov. Dialogboksen inneholder de vanlige alternativene for konfigurasjon av satsvise jobber i Supply Chain Management.
+
+Hvis du vil ha mer informasjon om satsvise jobber, kan du se [Oversikt over satsvis behandling](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### <a name="specifying-whether-the-vendor-should-see-price-information"></a>Angi om leverandøren skal se prisinformasjon
 

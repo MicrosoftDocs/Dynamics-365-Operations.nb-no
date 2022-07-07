@@ -1,8 +1,8 @@
 ---
-title: Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
-description: Denne artikkelen forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at det er klargjort.
+title: Konfigurere BOPIS i et Dynamics 365 Commerce-sandkassemiljø
+description: Denne artikkelen forklarer hvordan du konfigurerer «kjøp på nett, hent i butikk» (BOPIS) i et Microsoft Dynamics 365 Commerce-sandkassemiljø etter at det er klargjort.
 author: BrianShook
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,22 +14,22 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 379537fd490be98497b6e7c5cdfbc33798fe28ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 16cea7beb6ca05b5e96a9713b1217b414e27d56e
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861972"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013181"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
+# <a name="configure-bopis-in-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurere BOPIS i et Dynamics 365 Commerce-sandkassemiljø
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen forklarer hvordan du konfigurerer "kjøp på nett, hent i butikk" (BOPIS) i en evaluering av Microsoft Dynamics 365 Commerce-miljøet etter at miljøet er klargjort.
+Denne artikkelen forklarer hvordan du konfigurerer «kjøp på nett, hent i butikk» (BOPIS) i et Microsoft Dynamics 365 Commerce-sandkassemiljø etter at miljøet er klargjort.
 
 ## <a name="prerequisite"></a>Forutsetning
 
-Fullfør prosedyrene i denne artikkelen bare etter at evalueringsmiljøet i Commerce er klargjort og konfigurert. Hvis du vil ha informasjon om hvordan du klargjør og konfigurerer miljøet, kan du se [Klargjøre et Dynamics 365 Commerce-evalueringsmiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](./cpe-post-provisioning.md).
+Fullfør fremgangsmåtene i denne artikkelen bare etter at Commerce-sandkassemiljøet er klargjort og konfigurert. Hvis du vil ha informasjon om hvordan du klargjør og konfigurerer miljøet, kan du se [Klargjøre et Dynamics 365 Commerce-sandkassemiljø](provisioning-guide.md) og [Konfigurere et Dynamics 365 Commerce-sandkassemiljø](./cpe-post-provisioning.md).
 
 Når Commerce-miljøet er klargjort og konfigurert ende til ende, kan du bruke denne artikkelen til å aktivere BOPIS-scenarioer.
 
@@ -67,7 +67,7 @@ BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestas
 5. En godkjenningsdialogboks vises. Velg kontoen som bruker e-postadressen som tidligere var tilknyttet arbeider **000713 - Andrew Collette**.
 
     > [!NOTE]
-    > Hvis du ennå ikke har knyttet til en arbeider med din identitet, vil ikke aktiveringen lykkes. I dette tilfellet følger du trinnene under "Knytt en arbeider til din identitet" i artikkelen [Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Hvis du ennå ikke har knyttet til en arbeider med din identitet, vil ikke aktiveringen lykkes. I dette tilfellet følger du trinnene under «Knytt en arbeider til din identitet» i artikkelen [Konfigurere et Dynamics 365 Commerce-sandkassemiljø](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Når du blir bedt om å gjøre det mulig for organisasjonen å administrere enheten, velger du **Bare denne appen**.
 7. Når aktiveringen er fullført, velger du **Komme i gang**.
@@ -140,13 +140,9 @@ For alle generelle problemer bør du alltid se hendelsesloggene for maskinvarest
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
+[Klargjøre et Dynamics 365 Commerce-sandkassemiljø](provisioning-guide.md)
 
-[Klargjøre et evalueringsmiljø for Dynamics 365 Commerce](provisioning-guide.md)
-
-[Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce](cpe-optional-features.md)
-
-[Vanlige spørsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
+[Konfigurere valgfrie funksjoner for et Dynamics 365 Commerce-sandkassemiljø](cpe-optional-features.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -154,7 +150,7 @@ For alle generelle problemer bør du alltid se hendelsesloggene for maskinvarest
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
-[Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
+[Dynamics 365 Commerce-nettsted](https://aka.ms/Dynamics365CommerceWebsite)
 
 [Betalingskobling for Ayden](./dev-itpro/adyen-connector.md?tabs=8-1-3)
 

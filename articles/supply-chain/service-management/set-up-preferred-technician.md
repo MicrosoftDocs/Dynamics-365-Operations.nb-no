@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e59271771a5f332ad8470b0b8f8f54b52a25543d
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 4c9495bbc8e5f7cb603c027a125887feba1f0e2d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8671681"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017210"
 ---
 # <a name="set-up-a-preferred-technician"></a>Definere en foretrukket tekniker 
 
@@ -31,13 +31,13 @@ Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en se
 
 ## <a name="assign-employee-to-a-dispatch-team"></a>Tilordne en ansatt til en fordelingsgruppe
 
-1.  Klikk på **Personale** \> **Felles** \> **Arbeidere** \> **Arbeidere**. Dobbeltklikk en arbeider for å åpne siden med arbeiderdetaljer. I **handlingsruten** klikker du **Oppsett** \>**Fordelingsteam** for å åpne skjemaet **Fordel arbeidere**.
+1.  Klikk på **Personale** \> **Arbeidere** \> **Arbeidere**. Dobbeltklikk en arbeider for å åpne siden med arbeiderdetaljer. I **handlingsruten** klikker du **Oppsett** \>**Fordelingsteam** for å åpne skjemaet **Fordel arbeidere**.
 
 2.  I **Fordelingsteam**-feltet velger du teamet du vil tilordne arbeideren til.
 
 ## <a name="assign-a-preferred-technician-to-a-service-agreement"></a>Tilordne en foretrukket tekniker til en serviceavtale
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**. Dobbeltklikk en serviceavtale for å åpne detaljskjemaet.
+1.  Klikk på **Servicestyring** \> **Serviceavtaler** \> **Serviceavtaler**. Dobbeltklikk en serviceavtale for å åpne detaljskjemaet.
 
 2.  I fanen **Generelt** velger du feltet **Foretrukket tekniker**, og deretter velger du et medlem i det aktuelle fordelingsteamet som den foretrukne teknikeren for serviceavtalen.
 

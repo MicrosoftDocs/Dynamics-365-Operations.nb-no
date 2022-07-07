@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee61c43f93d68747a7095dc9317674a435553c8a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d8498d6099112cea2c57a6387e7596adb5bcd84e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874195"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016021"
 ---
 # <a name="introduction-to-assets"></a>Introduksjon til aktiva
 
@@ -34,9 +34,9 @@ Denne artikkelen gir en oversikt over aktiva i Aktivastyring. Et *aktivum* er en
 
 Et aktivum oppdateres automatisk med relatert informasjon. Denne informasjonen kan for eksempel være nye eller oppdaterte arbeidsordrer. Du kan opprette aktiva via menyelementet **Alle aktiva** eller menyelementetet **Ventende aktiva**. Denne artikkelen beskriver hvordan du oppretter aktiva via menyelementet **Alle aktiva**. Hvis du vil ha informasjon om hvordan du oppretter aktiva via menyalementet **Ventende aktiva**, kan du se [Opprette aktiva basert på bestillinger](../objects/create-objects-based-on-purchase-orders.md).
 
-## <a name="all-assets"></a>Alle anleggsmidler
+## <a name="all-assets"></a>Alle objekter
 
-Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva**. Listesiden **Alle aktiva** viser alle aktiva og noe av informasjonen som er knyttet til dem. Hvis du bare vil vise aktive aktiva, velger du **Aktive aktiva**. Hvis du bare vil vise aktiva som er installert på arbeidsstedene du er knyttet til som en vedlikeholdsperson, velger du **Mine aktive aktiva**. (Denne relasjonen er definert på **Arbeidere**-siden. Hvis du vil ha mer informasjon, se [Vedlikeholdspersoner og arbeidergrupper](../setup-for-objects/workers-and-worker-groups.md).)
+Velg **Aktivastyring** \> **Aktiva** \> **Alle aktiva**. Listesiden **Alle aktiva** viser alle aktiva og noe av informasjonen som er knyttet til dem. Hvis du bare vil vise aktive aktiva, velger du **Aktive aktiva**. Hvis du bare vil vise aktiva som er installert på funksjonslokasjonene du er knyttet til som en vedlikeholdsperson, velger du **Mine aktive aktiva**. (Denne relasjonen er definert på **Arbeidere**-siden. Hvis du vil ha mer informasjon, se [Vedlikeholdspersoner og arbeidergrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
 I rutenettvisningen **Alle aktiva** velger du en kobling i kolonnen **Aktivum** for å vise detaljene for den valgte posten. Hvis du vil redigere posten, velger du **Rediger**-knappen. Detaljvisningen viser detaljert informasjon som er knyttet til aktivumet. En **Beslektet informasjon**-rute til høyre inneholder mer aktiva-relatert informasjon. Utvid ruten for å vise den tilknyttede informasjonen for det valgte aktivumet.
 
@@ -49,9 +49,9 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Slett               | Slett der valgte aktivumet.                                                                                                                                       |
 | Flytt aktivum           | Flytt aktiva til en annen aktivastruktur eller et annen sted i den samme aktivastrukturen.                                                                                         |
 | Erstatt aktivum        | Erstatt ett underordnet aktivum i et aktivahierarki med et annet aktivum.                                                                                                  |
-| Installer aktivum        | Installer et aktivum på et arbeidssted.                                                                                                                          |
+| Installer aktivum        | Installer et aktivum på en funksjonslokasjon.                                                                                                                          |
 | Kopier aktivum           | Kopier et aktivumhierarki til et annet aktivum.                                                                                                                          |
-| Forespørsler             | Åpne listesiden **Aktive forespørsler**, der du kan vise vedlikeholdsforespørsler som er opprettet for det valgte aktivumet.                                                                         |
+| Forespørsler             | Åpne listesiden **Aktive forespørsler**, der du kan vise meldinger som er opprettet for det valgte aktivumet.                                                                         |
 | Hendelseshistorikk        | Vis en oversikt over de ulike registreringene som er gjort på aktivumet.                                                                                                         |
 | Stykkliste for aktiva            | Vis en liste over alle varer (reservedeler og andre varer) som brukes på et aktivum.                                                                                  |
 | Arbeidsordrer          | Åpne listesiden **Aktive arbeidsordrer**, der du kan vise arbeidsordrer for aktivumet.                                                                                        |
@@ -59,14 +59,14 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Nedetid ved vedlikehold | Opprett eller vis registreringer av nedetid ved vedlikehold på aktivumet.                                                                                                       |
 | Prosjekttransaksjoner | Vis alle posterte transaksjoner som er knyttet til arbeidsordrer som er opprettet for aktivumet.                                                                                       |
 | Aktivummål       | Opprett eller vis aktivummål på aktivumet.                                                                                                               |
-| Vedlikeholdsplan | Åpne listesiden **Åpne vedlikeholdsplan**, der du kan vise vedlikeholdsplaner, vedlikeholdsforespørsler og vedlikeholdsrunder som er knyttet til aktivumet, og som har statusen **Opprettet**. |
+| Vedlikeholdsplan | Åpne listesiden **Åpne vedlikeholdsplan**, der du kan vise vedlikeholdsplaner, meldinger og vedlikeholdsrunder som er knyttet til aktivumet, og som har statusen **Opprettet**. |
 | Oppdater tilstand for aktivum   | Oppdatere livssyklustilstanden for aktivumet. Du kan velge flere aktiva på listesiden **Alle aktiva** og deretter oppdatere livssyklustilstanden for alle aktivaene samtidig.              |
 | Logg for livssyklustilstand  | Åpne en logg som viser livssyklustilstandene til det valgte aktivumet.                                                                                                                 |
 | Aktivadokumenter      | Vis en liste over dokumentene som er knyttet til et aktivum. Disse dokumentene er definert i **Aktivastyring** \> **Oppsett** \> **Aktivadokumenter**.                 |
 | Attributter           | Opprett eller vis aktivaattributter.                                                                                                                             |
 | Bilde                | Velg et bilde for aktivumet.                                                                                                                                   |
 | Overordnede aktiva        | Vis loggen over overordnede objekter for det valgte aktivumet.                                                                                                                |
-| Arbeidssteder | Vis loggen over arbeidssteder for det valgte aktivumet.                                                                                                          |
+| Funksjonslokasjoner | Vis loggen over funksjonslokasjoner for det valgte aktivumet.                                                                                                          |
 | Betingelsesvurdering | Registrer betingelsesvurderingsmålinger for aktivumet.                                                                                                         |
 | Feil               | Åpne listesiden **Aktivafeil**, der du kan vise feil som er registrert på aktivumet.                                                                                             |
 | Kostkontroll         | Sammenligne budsjettkostnader og faktiske kostnader for aktivumet.                                                                                                              |

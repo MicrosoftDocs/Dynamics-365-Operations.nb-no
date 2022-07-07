@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71b861ec31e704e001aab29245b9e24ce8beb0de
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 665c705e3ffb617fc159a1223cb3f776878d5cd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882786"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016253"
 ---
 # <a name="asset-boms"></a>Stykklister for aktiva
 
@@ -57,7 +57,7 @@ Oppsettet av reservedelsloggen er basert på varegrupper som er opprettet i modu
 
 Når du bokfører vareforbruk på en arbeidsordre, kan du vise det registrerte vareforbruket på siden **Stykkliste for aktiva**.
 
-1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Aktive aktiva**. Velg aktivumet i listen, og velg **Stykkliste for aktiva**.
+1. Velg **Aktivastyring** \> **Aktiva** \> **Aktive aktiva**. Velg aktivumet i listen, og velg **Stykkliste for aktiva**.
 
     > [!NOTE]
     > Hvis du vil vise alle vareforbruksregistreringer på alle aktiva, velger du **Aktivastyring** \> **Forespørsler** \> **Aktiva** \> **Stykkliste for aktiva**.

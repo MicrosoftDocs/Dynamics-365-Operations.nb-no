@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8fe4731f8ff23f4abe25fce57a2325e1fca979c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19fafb21e879d7436678bdb3c29d1a3d7e2330d7
+ms.sourcegitcommit: bad64015da0c96a6b5d81e389708281406021d4f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890835"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9023767"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Definere og vedlikeholde leverandørsamarbeid
 
@@ -29,9 +29,6 @@ ms.locfileid: "8890835"
 Grensesnittet for leverandørsamarbeid viser begrenset informasjon om bestillinger, fakturaer og forsendelseslager til eksterne leverandørbrukere. Fra dette grensesnittet kan en leverandør også svare på forespørsler om tilbud, og vise og redigere grunnleggende firmainformasjon.
 
 Denne artikkelen forklarer hvordan du konfigurerer leverandørsamarbeid i Dynamics 365 Supply Chain Management. Den beskriver også hvordan du setter opp en arbeidsflyt for å klargjøre nye brukere med leverandørsamarbeid og administrerer sikkerhetsrollene for disse brukerne.
-
-> [!NOTE]
-> Informasjonen om oppsett av sikkerhetsroller for leverandørsamarbeid gjelder bare for gjeldende versjon av Finance and Operations. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha informasjon om brukertillatelser for leverandørportalen i Microsoft Dynamics AX, kan du se [Brukersikkerhet for leverandørportal](configure-security-vendor-portal-users.md).
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Definere sikkerhetsroller for leverandørsamarbeid
 
@@ -138,13 +135,7 @@ Opprett en arbeidsflyt av typen **Deaktiver arbeidsflyt for brukerforespørsel**
 
 ## <a name="enable-vendor-collaboration-for-a-specific-vendor"></a>Aktiver leverandørsamarbeid for en bestemt leverandør
 
-Før du oppretter en brukerkonto for en person som skal bruke leverandørsamarbeid, må du definere leverandøren for å tillate leverandørsamarbeid. På siden **Leverandører**, på fanen **Generelt** angir du feltet **Samarbeidsaktivering**. Følgende alternativer er tilgjengelige:
-
-- **Aktive (bestilling bekreftes automatisk)** – Bestillinger bekreftes automatisk hvis leverandøren godtar dem uten å be om endringer.
-- **Aktive (bestilling bekreftes ikke automatisk)** – Organisasjonen din må bekrefte bestillinger manuelt etter at leverandøren har godtatt dem.
-
-> [!NOTE]
-> Innkjøpsteknikere i firmaet kan også fullføre denne oppgaven.
+Før du oppretter en brukerkonto for en person som skal bruke leverandørsamarbeid, må du definere leverandøren for å tillate leverandørsamarbeid. Hvis du vil vite mer om hvordan du gjør dette, kan du se [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="troubleshoot-the-provisioning-of-new-vendor-collaboration-users"></a>Feilsøke klargjøring av nye leverandørsamarbeidsbrukere
 

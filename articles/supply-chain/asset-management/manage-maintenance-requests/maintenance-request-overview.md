@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3d6f7861d5c242d512c4ac984e9e9f1d0890c5dc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 488b6505aba246aa3a6ea69436514a274403bf49
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8848085"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015645"
 ---
 # <a name="maintenance-requests"></a>Meldinger
 
@@ -37,18 +37,18 @@ Meldinger kan opprettes for alle aktiva i Aktivastyring. Ulike typer meldinger k
 
 ## <a name="view-maintenance-requests"></a>Vis meldinger
 
-Hvis du vil vise meldinger, velger du **Aktivastyring** \> **Felles** \> **Vedlikeholdsanmondninger** \> **Alle meldinger**, **Aktive meldinger** eller **Mine vedlikeholdsforespørsler for arbeidssted**. Hver listeside viser noe av informasjonen som er knyttet til en melding.
+Hvis du vil vise meldinger, velger du **Aktivastyring** \> **Meldinger** \> **Alle meldinger**, **Aktive meldinger** eller **Mine meldinger for funksjonslokasjon**. Hver listeside viser noe av informasjonen som er knyttet til en melding.
 
 ![Vis meldinger.](media/01-manage-maintenance-requests.png)
 
 > [!NOTE]
-> Bruk listesiden **Mine vedlikeholdsforespørsler for arbeidssted** for å vise en liste over vedlikeholdsforespørsler som inneholder enten arbeidssteder som du er knyttet til som arbeider, eller aktiva som er installert på arbeidssteder som du knyttet til som arbeider. (Hvis du vil ha informasjon om hvordan du definerer arbeidssteder for vedlikeholdspersoner, kan du se [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).)
+> Bruk listesiden **Mine meldinger for funksjonslokasjon** for å vise en liste over meldinger som inneholder enten funksjonslokasjoner som du er knyttet til som arbeider, eller aktiva som er installert på funksjonslokasjoner som du knyttet til som arbeider. (Hvis du vil ha informasjon om hvordan du definerer funksjonslokasjoner for vedlikeholdspersoner, kan du se [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).)
 > 
 > Selv om kundekontoinformasjon er tilgjengelig i Aktivaservicestyring (eksternt vedlikehold), er den ikke tilgjengelig i Aktivastyring (internt vedlikehold).
 
 Hvis du vil åpne detaljvisningen for en post, går du til listesiden **Alle meldinger**, og i rutenettvisningen velger du en kobling i kolonnen **Melding**.
 
-![Vise detaljer for vedlikeholdsforespørsel.](media/02-manage-maintenance-requests.png)
+![Vise detaljer for melding.](media/02-manage-maintenance-requests.png)
 
 Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kort hvilke knapper som er knyttet til Aktivastyring.
 

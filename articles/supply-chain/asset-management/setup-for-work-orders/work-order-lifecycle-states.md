@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 67f857e4bfb828250e632e3ba46af9930cd908a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9c6a7c204370542353e9b629b78091972f8ce9a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860877"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017094"
 ---
 # <a name="work-order-lifecycle-states"></a>Livssyklustilstand for arbeidsordre
 
@@ -46,7 +46,7 @@ I tabellen nedenfor beskrives alternativene i delene **Arbeidsordre** og **Tidsp
 | Tillat planlegging              | Sett dette alternativet til **Ja** hvis en arbeidsordre kan planlegges når den er i denne livssyklustilstanden. |
 | Sett faktisk start              | Sett dette alternativet til **Ja** hvis brukeren skal bli bedt om å velge faktisk startdato og -klokkeslett for en arbeidsordre når den oppdateres til denne livssyklustilstanden. |
 | Sett faktisk slutt                | Sett dette alternativet til **Ja** hvis brukeren skal bli bedt om å velge faktisk sluttdato og -klokkeslett for en arbeidsordre når den oppdateres til denne livssyklustilstanden. |
-| Poster journaler                 | Sett dette alternativet til **Ja** hvis arbeidsordrejournaler skal posteres automatisk når en arbeidsordre oppdateres til denne livssyklustilstanden. Hvis det oppstår feil under journalposteringen, vises en melding, og oppdateringen av livssyklustilstanden for arbeidsordren avbrytes. Hvis du vil vise journallinjene for en arbeidsordre , velger du **Aktivastyring** \> **Felles** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**, velger arbeidsordren i listen, og velger deretter **Journaler**. Dette oppsettet for automatisk postering av arbeidsordrejournaler ved en bestemt livssyklustilstand er det samme som når du velger **Poster journaler** på siden **Arbeidsordrejournaler**.<p>**Obs!** Hvis du setter dette alternativet til **Ja**, posteres journaler automatisk hvis det ikke er satt opp en arbeidsflyt for godkjenning. Hvis firmaet ditt bruker journalgodkjenningsoppsettet som er konfigurert på siden **Journalgodkjenning** (**Prosjektstyring og regnskap** \> **Oppsett** \> **Journaler** \> **Journalgodkjenning**), må en leder eller assistent validere og postere forbruksregistreringer.</p> |
+| Poster journaler                 | Sett dette alternativet til **Ja** hvis arbeidsordrejournaler skal posteres automatisk når en arbeidsordre oppdateres til denne livssyklustilstanden. Hvis det oppstår feil under journalposteringen, vises en melding, og oppdateringen av livssyklustilstanden for arbeidsordren avbrytes. Hvis du vil vise journallinjene for en arbeidsordre , velger du **Aktivastyring** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**, velger arbeidsordren i listen og deretter **Journaler**. Dette oppsettet for automatisk postering av arbeidsordrejournaler ved en bestemt livssyklustilstand er det samme som når du velger **Poster journaler** på siden **Arbeidsordrejournaler**.<p>**Obs!** Hvis du setter dette alternativet til **Ja**, posteres journaler automatisk hvis det ikke er satt opp en arbeidsflyt for godkjenning. Hvis firmaet ditt bruker journalgodkjenningsoppsettet som er konfigurert på siden **Journalgodkjenning** (**Prosjektstyring og regnskap** \> **Oppsett** \> **Journaler** \> **Journalgodkjenning**), må en leder eller assistent validere og postere forbruksregistreringer.</p> |
 | Behandle sjekkliste for vedlikehold | Sett dette alternativet til **Ja** hvis alle tilknyttede vedlikeholdssjekklister skal behandles når en arbeidsordre oppdateres til denne livssyklustilstanden. Som en del av denne behandlingen posteres eventuelle tellerregistreringer som ble gjort for en vedlikeholdssjekkliste, og resultatet av hele vedlikeholdssjekklisten evalueres. Vedlikeholdssjekklistelinjer som har resultatene **Bestått** og **Mislykket**, evalueres. Hvis minst én linje mislykkes, merkes hele vedlikeholdssjekklisten som **Mislykket** i Aktivastyring. |
 | Klar                         | Sett dette alternativet til **Ja** hvis planstatusen for arbeidsordrejobben for alle arbeidsordrejobber som opprettes i en arbeidsordre, skal oppdateres automatisk til **Klar** når arbeidsordren oppdateres til denne livssyklustilstanden. |
 | Start                         | Sett dette alternativet til **Ja** hvis planstatusen for arbeidsordrejobben for alle arbeidsordrejobber som opprettes i en arbeidsordre, skal oppdateres automatisk til **Startet** når arbeidsordren oppdateres til denne livssyklustilstanden. |
@@ -74,15 +74,15 @@ I tabellen nedenfor beskrives alternativene i delene **Arbeidsordre** og **Tidsp
 10. I **Prosjekt**-delen setter du alternativet **Lukk aktiviteter** til **Ja** hvis prosjektaktiviteter som er knyttet til hver arbeidsordrejobb, skal lukkes automatisk når arbeidsordren er i denne livssyklustilstanden.
 
     > [!NOTE]
-    > Hvis du vil finne nummeret på prosjektaktiviteten som er knyttet til en arbeidsordrejobb, velger du **Aktivastyring** \> **Felles** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**. Åpne arbeidsordren, og velg deretter arbeidsordrejobben. Aktivitetsnummeret vises i **Aktivitetsnummer**-feltet i **Prosjekt**-delen i fanen **Generelt** på hurtigfanen **Linjedetaljer**.
+    > Hvis du vil finne nummeret på prosjektaktiviteten som er knyttet til en arbeidsordrejobb, velger du **Aktivastyring** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**. Åpne arbeidsordren, og velg deretter arbeidsordrejobben. Aktivitetsnummeret vises i **Aktivitetsnummer**-feltet i **Prosjekt**-delen i fanen **Generelt** på hurtigfanen **Linjedetaljer**.
 
 11. I **Prognose**-delen setter du alternativet **Kopier timeprognose**, **Kopier vareprognose** og/eller **Kopier utgiftsprognose** til **Ja** hvis prosjektprognoser for arbeidsordre skal kopieres automatisk til arbeidsordrejournaler når arbeidsordren er i denne livssyklustilstanden.
 12. I delen **Planlegg** setter du ett av alternativene til **Ja** hvis planleggingsstatusen for arbeidsordrejobber skal oppdateres når arbeidsordren er i denne livssyklustilstanden. Hvis du vil ha en beskrivelse av alternativene **Klar**, **Start**, **Slutt** og **Slett planlinjer**, kan du se tabellen tidligere i denne artikkelen.
 
     > [!NOTE]
-    > Hvis du vil vise planlinjer som er knyttet til arbeidsordrejobber, velger du **Aktivastyring** \> **Felles** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**. Åpne arbeidsordren, velg arbeidsordrejobben i hurtigfanen **Arbeidsordrejobber** og vis relatert informasjon i hurtigfanen **Linjedetaljer**. **Status**-feltet i fanen **Planlegg** viser statusen for arbeidsordrejobben. **Status**-feltet kan settes til følgende verdier: **Planlagt**, **Klar**, **Startet**, **Stoppet** og **Avsluttet**.
+    > Hvis du vil vise planlinjer som er knyttet til arbeidsordrejobber, velger du **Aktivastyring** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, **Aktive arbeidsordrer** eller **Mine aktive arbeidsordrer**. Åpne arbeidsordren, velg arbeidsordrejobben i hurtigfanen **Arbeidsordrejobber** og vis relatert informasjon i hurtigfanen **Linjedetaljer**. **Status**-feltet i fanen **Planlegg** viser statusen for arbeidsordrejobben. **Status**-feltet kan settes til følgende verdier: **Planlagt**, **Klar**, **Startet**, **Stoppet** og **Avsluttet**.
 
-13. I feltet **Livssyklustilstand** i delen **Vedlikeholdsforespørsler** velger du livssyklustilstanden for vedlikeholdsforespørsler som tilknyttede vedlikeholdsforespørsler skal oppdateres til. Denne oppdateringen skjer automatisk. Det kan bare gjøres hvis livssyklustilstanden for vedlikeholdsforespørsler er valgt i livssyklusmodellen for vedlikeholdsforespørsler som brukes for vedlikeholdsforespørselen.
+13. I feltet **Livssyklustilstand** i delen **Meldinger** velger du livssyklustilstanden for meldinger som tilknyttede meldinger skal oppdateres til. Denne oppdateringen skjer automatisk. Det kan bare gjøres hvis livssyklustilstanden for meldinger er valgt i livssyklusmodellen for meldinger som brukes for meldingen.
 14. I delen **Aktiva** setter du alternativet **Oppdater stykkliste for aktiva** til **Ja** hvis alle varer som brukes i en arbeidsordre, skal oppdateres automatisk på siden **Stykkliste for aktiva** når arbeidsordren oppdateres til denne livssyklustilstanden. Denne innstillingen kan være relevant hvis for eksempel livssyklustilstanden for arbeidsordren definerer arbeidsordren som fullført eller avsluttet.
 15. I delen **Arbeidsordresamling** setter du alternativet **Slett samlingsreferanse** til **Ja** hvis arbeidsordrer som er i denne livssyklustilstanden, skal slettes automatisk fra arbeidsordresamlinger.
 16. I hurtigfanen **Valider** velger du valideringstypene som skal aktiveres i denne livssyklustilstanden, ved å sette de relevante alternativene til **Ja**. Velg deretter typen melding som skal vises hvis obligatoriske felt som er relatert til valideringstypen, ikke er validert, i **Type**-feltet for hver valideringstype du velger. Hvis du velger **Feil**, avbrytes oppdateringen av livssyklustilstanden for arbeidsordren til de tilknyttede obligatoriske feltene er oppdatert i arbeidsordren.
@@ -98,7 +98,7 @@ I tabellen nedenfor beskrives alternativene i delene **Arbeidsordre** og **Tidsp
 > [!NOTE]
 > Hvis livssyklustilstanden som du oppdaterer en arbeidsordre til, er inaktiv, blir journaler som er knyttet til arbeidsordren, men som ennå ikke er postert, slettet automatisk. Denne virkemåten bidrar til å garantere automatisk opprydding av ubrukte data. (En livssyklustilstand er inaktiv hvis alternativet **Aktiv** er satt til **Nei** på hurtigfanen **Generelt** på siden **Livssyklustilstand for arbeidsordre**.)
 >
-> Hvis du imidlertid angir en arbeidsordre manuelt slik at den er inaktiv, blir journaler som er knyttet til arbeidsordren, men som ennå ikke er postert, **ikke** slettet automatisk. (Hvis du vil gjøre en arbeidsordre inaktiv manuelt, velger du **Aktivastyring** \> **Felles** \> **Arbeidsordrer** \> **Alle arbeidsordrer** eller **Aktive arbeidsordrer**. Åpne arbeidsordren, og bytt til **Hode**-visning. Velg **Rediger** på hurtigfanen **Generelt**, og sett deretter alternativet **Aktiv** til **Nei**.)
+> Hvis du imidlertid angir en arbeidsordre manuelt slik at den er inaktiv, blir journaler som er knyttet til arbeidsordren, men som ennå ikke er postert, **ikke** slettet automatisk. (Hvis du vil gjøre en arbeidsordre inaktiv manuelt, velger du **Aktivastyring** \> **Arbeidsordrer** \> **Alle arbeidsordrer** eller **Aktive arbeidsordrer**. Åpne arbeidsordren, og bytt til **Hode**-visning. Velg **Rediger** på hurtigfanen **Generelt**, og sett deretter alternativet **Aktiv** til **Nei**.)
 
 ## <a name="relations-among-work-order-lifecycle-models-work-order-types-and-work-order-lifecycle-states"></a>Relasjoner mellom livssyklusmodeller for arbeidsordrer, arbeidsordretyper og livssyklustilstander for arbeidsordrer.
 
@@ -107,7 +107,7 @@ Livssyklusmodeller refererer til arbeidsflyter, og livssyklustilstander velges i
 Årsaken til bruk av typer er at når en type er definert for for eksempel en arbeidsordre eller et anleggsmiddel, defineres de tilknyttede arbeidsprosessene (livssyklustilstandene) automatisk. Hvis du vil ha mer informasjon om hvordan du definerer arbeidsordretyper, se [Arbeidsordretyper](../setup-for-work-orders/work-order-types.md).
 
 > [!NOTE]
-> Livssyklustilstander, livssyklusmodeller og typer gjelder for arbeidssteder, anleggsmidler og vedlikeholdsforespørsler, i tillegg til arbeidsordrer.
+> Livssyklustilstander, livssyklusmodeller og typer gjelder for funksjonslokasjoner, anleggsmidler og meldinger, i tillegg til arbeidsordrer.
 
 Følgende illustrasjon viser forholdet mellom arbeidsordretyper, livssyklusmodeller og livssyklustilstander.
 

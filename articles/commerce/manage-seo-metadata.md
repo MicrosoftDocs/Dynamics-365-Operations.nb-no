@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 78ed94ced246157daafbc482ce674cda6579f930
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 99c28c2bff7b683f3e92dea4ba24d8bead556443
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881303"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027315"
 ---
 # <a name="manage-seo-metadata"></a>Behandle metadata for søkemotor
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Denne artikkelen beskriver hvordan du behandler metadata for søkemotoroptimalisering i Microsoft Dynamics 365 Commerce.
 
@@ -32,7 +31,7 @@ Søkemotormetadata for et område kan administreres ved hjelp av områdekart og 
     
 ## <a name="site-maps"></a>Områdekart
 
-Et områdekart er en maskinlesbar liste, i XML-format, på sidene på webområdet. Den er ment å brukes av søkemotorer, slik at de kan gi bedre søkeresultater fra området ditt. Områdekart kan tas inn manuelt ved hjelp av søkemotorer eller publiseres i en robots.txt-fil.
+Et områdekart er en maskinlesbar liste, i XML-format, på sidene på nettstedet. Den er ment å brukes av søkemotorer, slik at de kan gi bedre søkeresultater fra området ditt. Områdekart kan tas inn manuelt ved hjelp av søkemotorer eller publiseres i en robots.txt-fil.
 
 Dynamics 365 Commerce støtter automatisk generering av områdekart. Områdekart oppdateres automatisk når sider publiseres og publisering fjernes.
 

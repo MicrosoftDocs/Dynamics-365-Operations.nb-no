@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3fc3e6ef2332a883ef4a612a669142da1794454
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6592b94105777525c777950132d5099d1e8abb0e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845061"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016746"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -30,11 +30,11 @@ ms.locfileid: "8845061"
 
 Denne artikkelen forklarer hvordan du planlegger arbeidsordrer i Aktivastyring. 
 
-Det nødvendige antallet timer for en arbeidsordre defineres av summen av prognosetimer minus posterte timer. Hvis det kreves mer tid, må prognosen justeres tilsvarende. I **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer** kan du vise eller redigere prognoser i en arbeidsordre ved å velge arbeidsordren og klikke på **Prognose** i fanen **Arbeidsordre**. Når arbeidsordrer er opprettet og estimert, er neste trinn å tildele nødvendige vedlikeholdspersoner og verktøy.
+Det nødvendige antallet timer for en arbeidsordre defineres av summen av prognosetimer minus posterte timer. Hvis det kreves mer tid, må prognosen justeres tilsvarende. I **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer** kan du vise eller redigere prognoser i en arbeidsordre ved å velge arbeidsordren og klikke på **Prognose** i fanen **Arbeidsordre**. Når arbeidsordrer er opprettet og estimert, er neste trinn å tildele nødvendige vedlikeholdspersoner og verktøy.
 
 Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planlegging, kan planlegges. Tillat planlegging defineres i **Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Livssyklustilstander** > **Generelt**-hurtigfanen > **Tillat planlegging**-veksleknappen.
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**.
+1. Klikk på **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer**.
 
 2. Velg arbeidsordrene du vil planlegge, i listen. Du kan for eksempel sortere listen etter **Gjeldende livssyklustilstand**.
 
@@ -105,7 +105,7 @@ Vurderingsresultatene relatert til beregning av hvilke vedlikeholdspersoner som 
 | Ansvarlig vedlikeholdspersongruppe | Hvis vedlikeholdspersonen er del av den ansvarlige vedlikeholdsarbeidegruppen i arbeidsordren, legges poengene til. |
 | Foretrukket vedlikeholdsperson         | Hvis arbeideren er valgt som foretrukket vedlikeholdsperson for aktivumet, legges poengene til. |
 | Foretrukket vedlikeholdspersongruppe   | Hvis arbeideren er del av den foretrukne vedlikeholdspersongruppen for aktivumet, legges poengene til.  |
-| Lokasjon  | Hvis firmaet bruker arbeidssteder, får vedlikeholdspersonene full poengsum hvis de befinner seg på arbeidsstedet som er knyttet til anleggsmidlet. Hvis arbeidsstedet til anleggsmidlet har et overordnet sted, får vedlikeholdspersoner på dette arbeidsstedet 1/2 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdspersoner på dette stedet 1/3 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdspersoner på dette stedet 1/4 poeng osv. Hvis firmaet ditt bruker aktivasted, som vi ikke anbefaler, brukes sted, område og sone til å beregne stedspoengsummer. Arbeiderne får full poengsum hvis de befinner seg på stedet og i området og sonen som er knyttet til eiendelen. Hvis arbeiderstedet bare samsvarer med sted og område, er rangeringspoengsummen for vedlikeholdspersonen 2/3 for hele poengsummen. Hvis vedlikeholdspersonstedet bare samsvarer med sted, er rangeringspoengsummen for vedlikeholdspersonen 1/3 for hele poengsummen. |
+| Lokasjon  | Hvis firmaet bruker funksjonslokasjoner, får vedlikeholdspersonene full poengsum hvis de befinner seg på funksjonslokasjonen som er knyttet til anleggsmidlet. Hvis funksjonslokasjonen til anleggsmidlet har et overordnet sted, får vedlikeholdspersoner på denne funksjonslokasjonen 1/2 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdspersoner på dette stedet 1/3 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdspersoner på dette stedet 1/4 poeng osv. Hvis firmaet ditt bruker aktivasted, som vi ikke anbefaler, brukes sted, område og sone til å beregne stedspoengsummer. Arbeiderne får full poengsum hvis de befinner seg på stedet og i området og sonen som er knyttet til eiendelen. Hvis arbeiderstedet bare samsvarer med sted og område, er rangeringspoengsummen for vedlikeholdspersonen 2/3 for hele poengsummen. Hvis vedlikeholdspersonstedet bare samsvarer med sted, er rangeringspoengsummen for vedlikeholdspersonen 1/3 for hele poengsummen. |
 | Arbeiderens startdato  | For hver dato som den planlagte startdatoen er senere enn forventet startdato, trekkes poengsummen fra.  |
 
 >[!NOTE]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a3e48ceec2e95f796b6e7662af42e6bc1c3f01b7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 80072381c59b6cc0e0ea512a50900f8754a413a0
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895880"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017007"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Oversikt over vedlikeholdsjobber for aktive arbeidsordrer
 
@@ -29,7 +29,7 @@ ms.locfileid: "8895880"
 
 På listesiden **Vedlikeholdsjobber for aktive arbeidsordrer** kan du få en oversikt over arbeidsordrer når det gjelder hvor mange arbeidsordrer som er opprettet på bestemte aktiva, aktivatyper, produsenter, modeller, vedlikeholdsjobbtyper og så videre. Ved å velge en arbeidsordrejobb og deretter velge **Rediger**, kan du åpne den tilknyttede arbeidsordren. Ved å velge en arbeidsordrejobb og deretter velge én av knappene i fanen **Vedlikeholdsjobber for arbeidsordre** i handlingsruten, kan du vise data for arbeidsordren som arbeidsordrejobben er knyttet til.
 
-Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Vedlikeholdsjobber for aktive arbeidsordrer** for å åpne listen. Siden viser alle aktive arbeidsordrejobber, og den viser også noe av informasjonen som er knyttet til arbeidsordren eller arbeidsordrejobben.
+Velg **Aktivastyring** > **Arbeidsordrer** > **Vedlikeholdsjobber for aktive arbeidsordrer** for å åpne listesiden. Siden viser alle aktive arbeidsordrejobber, og den viser også noe av informasjonen som er knyttet til arbeidsordren eller arbeidsordrejobben.
 
 I **%**-kolonnen viser et nummer fullføring av arbeidsordren i prosent. Fullføring er basert på to beregninger: posterte timer sammenlignet med prognosetimer, og antall kontrollister for vedlikehold som er fullført.
 

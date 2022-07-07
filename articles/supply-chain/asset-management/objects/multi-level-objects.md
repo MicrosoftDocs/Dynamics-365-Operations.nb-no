@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 34ab83c9f9673c39006b3985ebaac9e17a45da82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5b13db8b8b12aaef2e067f9a55eb8754333eb16b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908779"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017152"
 ---
 # <a name="multi-level-assets"></a>Aktiva på flere nivåer
 
@@ -30,7 +30,7 @@ ms.locfileid: "8908779"
 
 Denne artikkelen forklarer hvordan du oppretter og sletter aktiva på flere nivåer. Du kan opprette aktiva og relaterte underaktiva i en hierarkisk trestruktur. På denne måten kan du vise relasjoner og avhengigheter blant aktiva. Vedlikeholdsjobber kan knyttes til alle nivåer i trestrukturen. Statistikk kan også opprettes for et enkeltnivå eller som en sum for alle underaktivanivåer.
 
-På listesiden **Alle aktiva** (**Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva**) vises aktiva i hierarkisk rekkefølge i kolonnen **Aktiva**. Kolonnen **Overordnet** viser det tilknyttede overordnede objektet. Hvis det allerede er opprettet aktiva og under aktiva, viser i tillegg **Aktivatre**-delen i ruten **Beslektet informasjon** aktivaene i en trestruktur.
+På listesiden **Alle aktiva** (**Aktivastyring** \> **Aktiva** \> **Alle aktiva**) vises aktiva i hierarkisk rekkefølge i kolonnen **Aktiva**. Kolonnen **Overordnet** viser det tilknyttede overordnede objektet. Hvis det allerede er opprettet aktiva og under aktiva, viser i tillegg **Aktivatre**-delen i ruten **Beslektet informasjon** aktivaene i en trestruktur.
 
 Se [Opprette et aktivum](../objects/create-an-object.md) hvis du vil ha mer informasjon om hvordan du oppretter et aktivum. Hvis du vil opprette et underordnet aktivum, velger du det overordnede objektet i feltet **Overordnet** på hurtigfanen **Generelt**.
 
@@ -38,7 +38,7 @@ Se [Opprette et aktivum](../objects/create-an-object.md) hvis du vil ha mer info
 
 Hvis firmaet har flere lignende aktivastrukturer, kan du bruke kopieringsfunksjonen i Aktivastyring til å opprette dem raskt.
 
-1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva**.
+1. Velg **Aktivastyring** \> **Aktiva** \> **Alle aktiva**.
 2. På listesiden **Alle aktiva** velger du aktivumet du vil kopiere. Hvis du for eksempel vil kopiere hele aktivastrukturen, inkludert underordnede aktiva, velger du et overordnet objekt.
 3. Velg **Kopier aktivum**. I **Kopier fra**-delen er **Aktivum**-feltet satt til aktivumet du valgte på listesiden.
 4. I **Kopier til**-delen i **Aktiva**-feltet angir du navnet på det nye aktivumet.
@@ -48,7 +48,7 @@ Hvis firmaet har flere lignende aktivastrukturer, kan du bruke kopieringsfunksjo
 Når du kopierer en aktivastruktur, har de underordnede aktivaene i den nye strukturen samme navn som de underordnede aktivaene du kopierte. Når kopieringsprosedyren er fullført, kan du enkelt endre navnet og andre innstillinger for et aktivum. Velg aktivumet på listesiden **Alle aktiva**, og velg deretter **Rediger**-knappen.
 
 > [!NOTE]
-> Når du kopierer en aktivastruktur, tilbakestilles livssyklustilstanden til de nye aktivaene til uansett status du definerte som start lilvsløpsstatus for aktiva. Arbeidsstedet tilbakestilles til standard arbeidssted.
+> Når du kopierer en aktivastruktur, tilbakestilles livssyklustilstanden til de nye aktivaene til uansett status du definerte som start lilvsløpsstatus for aktiva. Funksjonslokasjonen tilbakestilles til standard funksjonslokasjon.
 
 ## <a name="delete-an-asset-or-asset-structure"></a>Slette et aktivum eller en aktivastruktur
 

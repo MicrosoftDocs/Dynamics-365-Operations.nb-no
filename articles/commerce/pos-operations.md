@@ -15,17 +15,16 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: aa1ca9c057b8a1332cd52f73a24adf2089ebef3a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
+ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852725"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "9027289"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 De fleste handlinger som brukere utfører på salgsstedet (POS), anses som operasjoner. Operasjoner konfigureres og behandles i back office for Dynamics 365 Commerce. Mange operasjoner kan legges til for knapper i POS-knappegruppen. Brukere kan deretter velge knappene for å aktivere operasjonene og utføre arbeidet. Hvis du vil gjøre en operasjon tilgjengelig for å legges til i en knappegruppe i utforming for knappegruppe, må den først merkes som en brukeroperasjon i visningen POS-operasjoner i Commerce Headquarters (**Detaljhandel og handel \> Kanaloppsett \> POS-oppsett \> POS \> POS-operasjoner**.)
 

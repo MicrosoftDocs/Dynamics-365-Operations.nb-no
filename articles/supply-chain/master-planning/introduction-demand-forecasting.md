@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b7a69cbca6e6f32812ea00a63751c931a8477991
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: e1648808667c8bb9487e7a47b87d8e73cf442d82
+ms.sourcegitcommit: d98ecbd9457197ec8f8e281f9c2f24dcce7b8269
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469261"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "8960199"
 ---
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
@@ -91,19 +91,13 @@ Merk at måleenhet for behovsprognose ikke trenger å ha noen bestemt betydning.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oppsett av behovsprognose](demand-forecasting-setup.md)
-
-[Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
-
-[Foreta manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
-
-[Autorisere en justert prognose](authorize-adjusted-forecast.md)
-
-[Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
-
-[Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose](remove-historical-outliers-calculating-demand-forecast.md)
-
-[Utvide funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
+- [Oppsett av behovsprognose](demand-forecasting-setup.md)
+- [Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
+- [Foreta manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
+- [Autorisere en justert prognose](authorize-adjusted-forecast.md)
+- [Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
+- [Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose](remove-historical-outliers-calculating-demand-forecast.md)
+- [Video: Utvide funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+- [Nettseminar: Behovsprognose med Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

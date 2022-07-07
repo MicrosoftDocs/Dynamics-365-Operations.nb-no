@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf78d53e8e2d7bee24a0a7789ca1a96cdd8f1415
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 588da2a217a56d2bc25f85c9a10c6589f90b16a1
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886051"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015092"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -35,7 +35,7 @@ I noen tilfeller kan du legge til eller slette prognoselinjer i en arbeidsordre.
 >[!NOTE]
 >Det er mulig å definere automatisk postering av journaler for en livssyklustilstand for arbeidsordrer. Se [Livssyklustilstand for arbeidsordre](../setup-for-work-orders/work-order-lifecycle-states.md) hvis du vil ha mer informasjon.
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Klikk på **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 2. Velg arbeidsordren, og klikk på **Journaler**.
 
@@ -61,7 +61,7 @@ Skjermbildet nedenfor viser et eksempel på time- og vareregistreringer for en a
 
 Hvis en arbeidsordre inneholder flere arbeidsordrejobber, kan du registrere arbeidstimer ved hjelp av funksjonaliteten **Del timer**, som betyr at én timeregistreringslinje kan distribueres likt på hver arbeidsordrejobb.
 
-1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Klikk på **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 2. Velg arbeidsordren, og klikk på **Journaler**.
 

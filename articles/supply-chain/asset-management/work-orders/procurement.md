@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 015499463f1eab4aaa3f3658b3204229382e73cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6e41a28ec922924b0ef86858a881280fd44bfe63
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893649"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014959"
 ---
 # <a name="procurement"></a>Innkjøp
 
@@ -28,7 +28,7 @@ ms.locfileid: "8893649"
 
 I Aktivastyring kan du få en oversikt over innkjøpsrekvisisjoner og bestillinger som er knyttet til arbeidsordrer. Du kan også opprette en bestilling eller en innkjøpsrekvisisjon fra en arbeidsordre.
 
-Listesiden **Innkjøpsrekvisisjon for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøpsrekvisisjon for arbeidsordre**) viser en liste over innkjøpsrekvisisjoner som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i handlingsrutefanen **Innkjøpsrekvisisjon for arbeidsordre** til å utføre forskjellige handlinger:
+Listesiden **Innkjøpsrekvisisjon for arbeidsordre** (**Aktivastyring** > **Innkjøp** > **Innkjøpsrekvisisjon for arbeidsordre**) viser en liste over innkjøpsrekvisisjoner som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i handlingsrutefanen **Innkjøpsrekvisisjon for arbeidsordre** til å utføre forskjellige handlinger:
 
 - Hvis du vil åpne den tilknyttede innkjøpsrekvisisjonen, velger du **Innkjøpsrekvisisjon**. 
 - Velg **Arbeidsordre** for å åpne er relatert arbeidsordre.
@@ -39,7 +39,7 @@ Illustrasjonen nedenfor viser et eksempel på listesiden **Innkjøpsrekvisisjon 
 ![Figur 1.](media/08-work-orders.png)
 
 
-Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøp for arbeidsordre**) viser en liste over innkjøpsordrer som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i fanen **Innkjøp for arbeidsordre** i handlingsrutefanen til å utføre forskjellige handlinger:
+Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Innkjøp** > **Innkjøp for arbeidsordre**) viser en liste over innkjøpsordrer som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i fanen **Innkjøp for arbeidsordre** i handlingsrutefanen til å utføre forskjellige handlinger:
 
 - Velg **Bestilling** for å åpne den relaterte bestillingen. 
 - Velg **Arbeidsordre** for å åpne er relatert arbeidsordre.
@@ -69,7 +69,7 @@ I en innkjøpsrekvisisjon brukes datoen i feltet **Ønsket dato** på hurtigfane
 
 På listesiden **Alle arbeidsordrer** kan du velge en arbeidsordrejobb og deretter opprette en tilknyttet bestilling eller innkjøpsrekvisisjon. På den måten sikrer du at det finnes prosjektrelasjoner mellom bestillingen eller innkjøpsrekvisisjonen og arbeidsordren.
 
-1. Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Velg **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 2. Velg arbeidsordren du vil opprette en bestilling for, og velg deretter **Rediger**.
 

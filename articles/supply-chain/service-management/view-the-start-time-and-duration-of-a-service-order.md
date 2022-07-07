@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dfda0511e059de21a5d04f8eb4c5c0937eb88aa
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: d81a8170330479b8470aaa3e388861a2251aec52
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670643"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015877"
 ---
 # <a name="view-the-start-time-and-duration-of-a-service-order"></a>Vise starttidspunktet og varigheten for en serviceordre 
 
@@ -33,19 +33,19 @@ Du kan også vise når tidsregistreringen for en serviceordre startet eller stop
 
 ## <a name="view-the-start-time-for-a-service-order"></a>Vis starttidspunkt for en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
+1.  Klikk på **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
 
 2.  I fanen **Generelt** kan du vise klokkeslettet da arbeidet startet for en serviceordre, i feltet **Starttidspunkt**.
 
 ## <a name="view-the-time-remaining-to-complete-a-service-order"></a>Vis tiden som gjenstår for å fullføre en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
+1.  Klikk på **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
 
 2.  I fanen **Generelt** kan du vise tiden som gjenstår for å fullføre en serviceordre, i feltet **Siste fullføringsklokkeslett**.
 
 ## <a name="view-the-start-time-and-stop-time-recording-entries-for-a-service-order"></a>Vis start- og stopptidsregistreringer for en serviceordre
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
+1.  Klikk på **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**. Velg og dobbeltklikk en ordre for å åpne detaljskjemaet.
 
 2.  I **handlingsruten** klikker du fanen **Fordeling** \> **Tidsregistrering** for å åpne skjemaet **Tidsregistrering for tjenestenivåavtale** og vise tidsregistreringsoppføringene for serviceordren.
 

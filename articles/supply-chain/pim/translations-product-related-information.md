@@ -16,12 +16,12 @@ ms.search.industry: Product information
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2798e25d1f6c293aa71a6c143ded5293f241060
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 079e6de00d1a946d998648378d5ca24c1fd26218
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850561"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015413"
 ---
 # <a name="product-related-translations-faq"></a>Vanlige spørsmål for produktrelaterte oversettelser
 
@@ -43,20 +43,20 @@ Du kan vise oversettelser av produktrelatert informasjon i et eksternt kildedoku
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Hvordan oppretter jeg oversettelser for produktrelatert informasjon?
 Hvis du vil opprette transaksjoner for et produkt, gjør du følgende:
-1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Produkter** &gt; **Frigitte produkter**.
 2.  Velg et produkt, og i handlingsruten i **Språk**-gruppen klikker du på **Oversettelser**.
 3.  På siden **Tekstoversettelse**, i **Språk**-feltet, velger du et språk. Hvis du vil legge til flere språk, utvider du **Språk**-feltet, og klikker deretter på **OK**.
 4.  I gruppen **Oversatt tekst** skriver du inn oversettelser i feltene **Beskrivelse** og **Produktnavn**.
 
 Hvis du vil opprette transaksjoner for produktattributter, gjør du følgende:
-1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Produkter** &gt; **Frigitte produkter**.
 2.  Under **Oppsett** klikker du **Attributter** og deretter **Attributter**.
 3.  På **Attributter**-siden klikker du **Oversett**.
 4.  På siden **Tekstoversettelse**, i **Språk**-feltet, velger du et språk. Hvis du vil legge til flere språk, utvider du **Språk**-feltet, og klikker deretter på **OK**.
 5.  I gruppen **Oversatt tekst** skriver du inn oversettelser i feltene **Beskrivelse** **Egendefinert navn** og **Hjelpetekst**.
 
 Hvis du vil opprette transaksjoner for produktdimensjonsverdier, gjør du følgende:
-1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Produkter** &gt; **Frigitte produkter**.
 2.  Velg et produkt, og klikk deretter **Produktdimensjoner**.
 3.  Velg én av koblingene for produktdimensjonene: **Konfigurasjoner**, **Størrelser**, **Farger** eller **Stil**.
 4.  Velg en dimensjonsverdi, og klikk deretter **Oversett**.

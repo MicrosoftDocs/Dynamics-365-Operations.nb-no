@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4089400817d6dd8454c85e594eff05314d3fd72e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 782a8cc1f9e64b8c2d4364212c9c5755c103bbfb
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858018"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017065"
 ---
 # <a name="maintenance-schedule"></a>Vedlikeholdstidslinje
 
@@ -28,14 +28,14 @@ ms.locfileid: "8858018"
 
  
 
-Vedlikeholdsplanen inneholder en liste over alle forventede forebyggende vedlikeholdsplaner, vedlikeholdsforespørsler og vedlikeholdsrunder som skal utføres. Noen planleggingslinjer kan ha blitt konvertert til arbeidsordrer.
+Vedlikeholdsplanen inneholder en liste over alle forventede forebyggende vedlikeholdsplaner, meldinger og vedlikeholdsrunder som skal utføres. Noen planleggingslinjer kan ha blitt konvertert til arbeidsordrer.
 
 De fire visningene for vedlikeholdsplaner er litt forskjellige, avhengig av hvilke vedlikeholdsplanlinjer du vil se.
 
 | Menyelement                  | Beskrivelse av innhold                                                                                                                                             |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Alle vedlikeholdsplaner       | Alle vedlikeholdsplanlinjene vises.     |
-| Min aktivumplan        | Alle vedlikeholdsplanlinjer som inneholder aktiva som finnes på arbeidssteder du er tilknyttet som arbeider (oppsett i [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md)), vises i denne listen. |
+| Min aktivumplan        | Alle vedlikeholdsplanlinjer som inneholder aktiva som finnes på funksjonslokasjoner du er tilknyttet som arbeider (oppsett i [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md)), vises i denne listen. |
 | Åpne linjer for vedlikeholdsplan | Vedlikeholdsplanlinjer med statusen Opprettet – betyr at de ennå ikke er konvertert til en arbeidsordre eller forkastet – vises i denne listen.                                            |
 | Åpne vedlikeholdsplansamlinger | Vedlikeholdsplanlinjer relatert til en arbeidsordrepulje vises i denne listen.                                                                                                                  |
 
@@ -44,7 +44,7 @@ De fire visningene for vedlikeholdsplaner er litt forskjellige, avhengig av hvil
 
 Slik åpner du en vedlikeholdsplan:
 
-1. Klikk på **Aktivastyring** > **Felles** > **Vedlikeholdsplan** > **Alle vedlikeholdsplaner** eller **Åpne vedlikeholdsplanlinjer** eller **Åpne vedlikeholdsplanpuljer**.
+1. Klikk på **Aktivastyring** > **Vedlikeholdsplan** > **Alle vedlikeholdsplaner** eller **Åpne vedlikeholdsplanlinjer** eller **Åpne vedlikeholdsplanpuljer**.
 
 2. Hvis du vil oppdatere vedlikeholdsplanen, klikker du på **Vedlikeholdsplan** eller **Vedlikeholdsrunder**. 
 

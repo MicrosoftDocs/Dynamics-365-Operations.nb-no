@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 75e30c8b2d74cc2f1ca538b64e5fc801f9ca130a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 42e8ba4e19333cb25464203a2583175ef082ad98
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897697"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016485"
 ---
 # <a name="maintenance-downtime-activities"></a>Vedlikeholdsnedetid
 
@@ -36,16 +36,16 @@ Nedetid ved vedlikehold brukes til å få en oversikt over kapasiteten som kreve
 
 Når det er valgt aktiva i en registrering av vedlikeholdsnedetid, inkluderes alle åpne vedlikeholdsplanlinjer og vedlikeholdsjobber i arbeidsordrer knyttet til aktive arbeidsordrer, i registreringen.
 
-## <a name="maintenance-downtime-activities"></a>Aktiviteter for nedetid ved vedlikehold
+## <a name="maintenance-downtime-activities"></a>Vedlikeholdsnedetid
 
-Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** for å åpne en liste over alle aktivitetene for vedlikeholdsnedetid og se informasjon om aktivitetene. Klikk på en kobling i kolonnen **Aktiviteter for vedlikeholdsnedetid** for å åpne detaljvisningen. Illustrasjonen nedenfor viser et eksempel på listen **Aktiviteter for vedlikeholdsnedetid**.
+Klikk på **Aktivastyring** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** for å åpne en liste over alle aktivitetene for vedlikeholdsnedetid og se informasjon om aktivitetene. Klikk på en kobling i kolonnen **Aktiviteter for vedlikeholdsnedetid** for å åpne detaljvisningen. Illustrasjonen nedenfor viser et eksempel på listen **Aktiviteter for vedlikeholdsnedetid**.
 
 ![Figur 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Opprette en aktivitet for vedlikeholdsnedetid
 
-1. Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** eller **Aktive aktiviteter for vedlikeholdsnedetid**.
+1. Klikk på **Aktivastyring** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** eller **Aktive aktiviteter for vedlikeholdsnedetid**.
 
 2. Klikk på **Ny**.
 
@@ -68,7 +68,7 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 8. I **Alle aktiviteter for vedlikeholdsnedetid** > **Aktiviteter for vedlikeholdsnedetid** > velger du en aktivitet for vedlikeholdsnedetid i listen og klikker på **Kapasitetsbelastning** for å åpne dialogboksen **Beregn kapasitetsbelastning**. Bruk denne dialogboksen til å få en oversikt over kapasitetsbelastning på for eksempel datoer, aktiva, aktivatyper og vedlikeholdsjobbtyper. Legg merke til at datoene som vises i dialogboksen, er start- og sluttdatoene som er valgt i **Aktiviteter for vedlikeholdsnedetid**. Denne beregningen omfatter aktivaene knyttet til aktiviteten for vedlikeholdsnedetid.
 
-9. I dialogboksen **Beregn kapasitetsbelastning** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder arbeidssted. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle aktivaene for et arbeidssted som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle arbeidsstedsnivåene de er relatert til.
+9. I dialogboksen **Beregn kapasitetsbelastning** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder funksjonslokasjoner. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en funksjonslokasjonsstruktur med flere nivåer, vises alle aktivaene for en funksjonslokasjon som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra funksjonslokasjoner plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle funksjonslokasjonsnivåene de er relatert til.
 
 10. Klikk på **OK** for å starte beregningen. Totalt antall timer vises i oversikten **Kapasitetsbelastning**. I fanen **Kapasitetsbelastning** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosetimer. Illustrasjonen nedenfor viser resultatet av en **Kapasitetsbelastning**-beregning.
 
@@ -85,7 +85,7 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 14. I **Alle aktiviteter for vedlikeholdsnedetid** > **Aktiviteter for vedlikeholdsnedetid** > velger du en aktivitet for vedlikeholdsnedetid i listen og klikker på **Vareprognose** for å åpne dialogboksen **Beregn vareprognose**. Bruk denne dialogboksen til å beregne prognoser for varer (reservedeler og andre nødvendige varer), og grupper dem for å få en oversikt, for eksempel etter dato, aktiva, aktivatype og vedlikeholdsjobbtype. Legg merke til at datoene som vises i dialogboksen, er start- og sluttdatoene som er valgt i **Aktiviteter for vedlikeholdsnedetid**. Denne beregningen omfatter reservedeler og varer knyttet til aktivaene som er valgt i aktiviteten for vedlikeholdsnedetid.
 
-15. I dialogboksen **Beregn vareprognose** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder arbeidssted. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle aktivaene for et arbeidssted som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle arbeidsstedsnivåene de er relatert til.
+15. I dialogboksen **Beregn vareprognose** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder funksjonslokasjoner. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en funksjonslokasjonsstruktur med flere nivåer, vises alle aktivaene for en funksjonslokasjon som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra funksjonslokasjoner plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle funksjonslokasjonsnivåene de er relatert til.
 
 16. Klikk på **OK** for å starte beregningen. Totalt antall vareprognoser vises i oversikten **Vareprognose**. I fanen **Vareprognose** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosevarer. Illustrasjonen nedenfor viser resultatet av en **Vareprognose**-beregning.
 

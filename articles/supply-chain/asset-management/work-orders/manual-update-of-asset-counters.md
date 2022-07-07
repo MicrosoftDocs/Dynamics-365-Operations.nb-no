@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3a9ee0a96e6a9097608b4c7cd1f65085e95b8ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30c672286c16a4353556a507019960edb93f8b1b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897726"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016601"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuell oppdatering av anleggsmiddeltellere
 
@@ -34,7 +34,7 @@ Tellertypen som er valgt for en teller, kan være satt til å arve tellerverdier
 
 På siden **Alle aktiva** oppretter du tellerregistreringer for timer eller antall for et aktivum basert på avlesningene for aktivumet.
 
-1. Velg **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva**.
+1. Velg **Aktivastyring** > **Aktiva** > **Alle aktiva**.
 
 2. Velg aktivumet, og deretter velger du **Tellere**, i handlingsruten, fanen **Aktiva** i gruppen **Forebyggende**. Siden **Aktivatellere** viser en liste over alle tidligere tellerregistreringer som er gjort for det valgte aktivumet.
 

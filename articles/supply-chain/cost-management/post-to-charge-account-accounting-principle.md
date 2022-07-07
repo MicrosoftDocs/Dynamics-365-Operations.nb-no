@@ -11,16 +11,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-02
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 998a30786b3f457b24b6e3c755b2c00967adbd4b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c03109baaa341b25af70840b791ddf04f692fb1a
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879170"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016572"
 ---
 # <a name="post-to-charge-account-accounting-principle"></a>Regnskapsprinsippet Postere i belastningskonto
 
-Regnskapsprinsippet *postere i belastningskonto* lar deg gjøre rede for og lettere avstemme eventuelle avvik i enhetsprisen mellom en fysisk postering og økonomisk postering, indirekte kostnader for kjøpte varer eller tillegg i en bestilling. 
+Regnskapsprinsippet *postere i belastningskonto* lar deg gjøre rede for og lettere avstemme eventuelle avvik i enhetsprisen mellom en fysisk postering og økonomisk postering, indirekte kostnader for kjøpte varer eller tillegg i en bestilling.
 
 To konfigurasjoner for tilleggskoder for leverandører på **Tilleggskode**-siden (**Leverandører \> Oppsett for tillegg \> Tilleggskode**) kan føre til at en bestilling påvirker vurderingen av lageraktiva:
 

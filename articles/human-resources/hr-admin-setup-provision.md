@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 341b14d493c85a1e94666fa7e07b80704645e5f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858250"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015353"
 ---
 # <a name="provision-human-resources"></a>Klargjør Human Resources
 
@@ -143,7 +143,9 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
 6. Skrivefunksjoner for dobbel skriving for integrering av Personale-data med Power Apps-miljøet kan bare brukes hvis alternativet **Aktiver Dynamics 365-apper** er valgt for miljøet. Se [Startside for dobbel skriving](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for å få mer informasjon om dobbel skriving.
 
     > [!NOTE]
-    > Alternativet **Aktiver Dynamics 365-apper** må være valgt når Power Apps-miljøet opprettes. Hvis alternativet ikke er valgt samtidig som klargjøringen, kan du ikke bruke dobbel skriving for å integrere data mellom Dynamics 365 Human Resources og Power Apps-miljøet, eller installere Dynamics 365-apper som Dynamics 365 Sales og Field Service i miljøet. Dette alternativet kan ikke tilbakeføres. Hvis du vil ha mer informasjon, kan du se [Noen viktige hensyn når du oppretter et nytt miljø](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform-dokumentasjonsområdet.
+    > Alternativet **Aktiver Dynamics 365-apper** må være valgt når Power Apps-miljøet opprettes. Hvis alternativet ikke er valgt samtidig som klargjøringen, kan du ikke bruke dobbel skriving for å integrere data mellom Dynamics 365 Human Resources og Power Apps-miljøet, eller installere Dynamics 365-apper som Dynamics 365 Sales og Field Service i miljøet. Dette alternativet kan ikke tilbakeføres. 
+    > -  Human Resources støtter ikke endring av den koblede Dataverse-forekomsten når Human Resources er distribuert i den. </br></br>
+    > Hvis du vil ha mer informasjon, kan du se [Noen viktige hensyn når du oppretter et nytt miljø](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform-dokumentasjonsområdet.  
 
 7. Når du har valgt det riktige miljøet som skal brukes, kan du fortsette med klargjøringsprosessen. 
 

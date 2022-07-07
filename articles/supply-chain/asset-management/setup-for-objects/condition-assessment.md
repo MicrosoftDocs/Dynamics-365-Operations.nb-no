@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa326a01bb63bd0b59c0df7a3c751a5242a3dd37
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c43424a0955d7a046186e8a4120c050990df6060
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872101"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015063"
 ---
 # <a name="condition-assessment"></a>Tilstandsvurdering
 
@@ -47,7 +47,7 @@ Tilstandsvurderingen opprettes på aktiva. Du definerer en mal for tilstandsvurd
 
 ## <a name="create-condition-assessment-registration-on-an-asset"></a>Opprette tilstandsvurderingsregistrering på et aktivum
 
-1. Velg **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva**.
+1. Velg **Aktivastyring** > **Aktiva** > **Alle aktiva**.
 2. I listen velger du aktivumet du vil opprette en tilstandsvurderingsregistrering for.
 3. Gå til fanen **Generelt**, og klikk **Tilstandsvurdering**.
 4. Klikk på **Ny** for å lage en ny registrering.
@@ -62,7 +62,7 @@ Tilstandsvurderingen opprettes på aktiva. Du definerer en mal for tilstandsvurd
 Når du har foretatt en tilstandsvurderingsregistrering på et aktivum, kan du skrive ut en tilstandsvurderingsrapport.
 
 >[!NOTE]
->Du kan også registrere en tilsynsvurdering på en arbeidsordre (**Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** > **Tilstandsvurdering**-knappen.)
+>Du kan også registrere en tilsynsvurdering på en arbeidsordre (**Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** > **Tilstandsvurdering**-knappen.)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b04c7cca70ec8b25d40cde86be370bce224388
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ea84259eb8f12becdcf008ed9222a44b2626a0d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856258"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016224"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk oppdatering av anleggsmiddeltellere
 
@@ -53,7 +53,7 @@ Som nevnt ovenfor kan automatiske tellere oppdateres fra produksjonsregistrering
 
 5. Velg **OK**. 
 
-Når oppdateringen for den automatiske aktivatelleren er utført, kan du vise tellerregistreringer som er knyttet til aktivumet, på siden **Aktivatellere**. Velg **Aktivabehandling** > **Felles** > **Aktiva** > **Alle aktiva**, velg aktivumet, gå til handlingsruten, fanen **Aktiva**, gruppen **Foregyggende**, og velg **Tellere**.
+Når oppdateringen for den automatiske aktivatelleren er utført, kan du vise tellerregistreringer som er knyttet til aktivumet, på siden **Aktivatellere**. Velg **Aktivastyring** > **Aktiva** > **Alle aktiva**, velg aktivumet, gå til handlingsruten, **Aktiva**-fanen, **Forebyggende**-gruppen, og velg **Tellere**.
 
 På siden **Akkumulert verdi for aktivum** kan du få en oversikt over den siste registreringen som er utført på alle tellertyper på alle aktiva. Velg **Aktivastyring** > **Forespørsler** > **Aktiva** > **Akkumulert verdi for aktivum**. Denne siden ligner på siden **Aktivatellere**, men du kan ikke legge til eller redigere registreringer. Den er bare en oversikt.
 

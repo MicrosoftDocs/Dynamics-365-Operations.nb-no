@@ -1,8 +1,8 @@
 ---
-title: Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
-description: Denne artikkelen forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+title: Konfigurere valgfrie funksjoner for et Dynamics 365 Commerce-sandkassemiljø
+description: Denne artikkelen forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-sandkassemiljø.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,24 +14,24 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39d4784e21c4fb42ca218d507616d49eff309ee1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 201628eb0c3e81d5fee0df9e53d93f5b1839adfb
+ms.sourcegitcommit: 252cb41c3029b623354698463f7b44a29fd9f184
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8861920"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013244"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-sandbox-environment"></a>Konfigurere valgfrie funksjoner for et Dynamics 365 Commerce-sandkassemiljø
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
+Denne artikkelen forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-sandkassemiljø.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Hvis du vil evaluere de transaksjonelle e-postfunksjonene, må følgende forutsetninger oppfylles:
+Hvis du vil demonstrere de transaksjonelle e-postfunksjonene, må følgende forutsetninger oppfylles:
 
-- Du har en e-postserver tilgjengelig (\[SMTP\]-server), som kan brukes fra Microsoft Azure-abonnementet der du klargjorde evalueringsmiljøet.
+- Du har en e-postserver tilgjengelig (\[SMTP\]-server), som kan brukes fra Microsoft Azure-abonnementet der du klargjorde sandkassemiljøet.
 - Du har serverens fullstendig kvaliserte domenenavn (FQDN)/IP-adresse, SMTP-portnummer og godkjenningsinformasjon tilgjengelig.
 
 ## <a name="configure-the-image-back-end"></a>Konfigurere bildeserveren
@@ -39,10 +39,10 @@ Hvis du vil evaluere de transaksjonelle e-postfunksjonene, må følgende forutse
 ### <a name="find-your-media-base-url"></a>Finne primær URL-adresse for media
 
 > [!NOTE]
-> Før du kan fullføre denne prosedyren, må du fullføre trinnene i [Konfigurere området i handel](cpe-post-provisioning.md#set-up-your-site-in-commerce).
+> Før du kan fullføre denne prosedyren, må du fullføre trinnene i [Konfigurere området i handel](cpe-post-provisioning.md#set-up-your-e-commerce-sites).
 
 1. Logg på Commerce-områdebyggeren ved hjelp av URL-adressen du noterte da du startet e-handel under klargjøring (se [Initialisere e-handel](provisioning-guide.md#initialize-e-commerce)).
-1. Åpne **Fabrikam**-området.
+1. Åpne **Fabrikam**-, **Adventure Works**- eller **Adventure Works Business**-området du vil arbeide med.
 1. Velg **Mediebibliotek** på menyen til venstre.
 1. Velg et hvilket som helst enkeltbilde.
 1. I egenskapsinspektøren til høyre finner du egenskapen **Offentlig URL**. Verdien er en URL. Her er et eksempel:
@@ -98,9 +98,9 @@ E-postmalen for hver transaksjonshendelse du vil sende e-postmeldinger for, må 
 
 ## <a name="customize-email-templates"></a>Tilpasse e-postmaler
 
-Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilder. Eller kanskje du vil oppdatere koblingene i malene slik at de går til evalueringsmiljøet. Trinnene nedenfor forklarer hvordan du laster ned standardmaler, tilpasser dem og oppdaterer malene i systemet.
+Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilder. Eller kanskje du vil oppdatere koblingene i malene slik at de går til sandkassemiljøet. Trinnene nedenfor forklarer hvordan du laster ned standardmaler, tilpasser dem og oppdaterer malene i systemet.
 
-1. Bruk en webleser og last ned ZIP-filen [Microsoft Dynamics 365 Commerce Evaluering av standard e-postmaler](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
+1. Bruk en nettleser og last ned [ZIP-filen med standard e-postmaler for Microsoft Dynamics 365 Commerce-demonstrasjonen](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
 
     - Ordrebekreftelsesmal
     - Utsted gavekort-mal
@@ -167,15 +167,11 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over Dynamics 365 Commerce-evalueringsmiljø](cpe-overview.md)
+[Klargjøre et Dynamics 365 Commerce-sandkassemiljø](provisioning-guide.md)
 
-[Klargjøre et evalueringsmiljø for Dynamics 365 Commerce](provisioning-guide.md)
+[Konfigurere et Dynamics 365 Commerce-sandkassemiljø](cpe-post-provisioning.md)
 
-[Konfigurere et Dynamics 365 Commerce-evalueringsmiljø](cpe-post-provisioning.md)
-
-[Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](cpe-bopis.md)
-
-[Vanlige spørsmål om Dynamics 365 Commerce-evalueringsmiljø](cpe-faq.md)
+[Konfigurere BOPIS i et Dynamics 365 Commerce-sandkassemiljø](cpe-bopis.md)
 
 [Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -183,7 +179,7 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
-[Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
+[Dynamics 365 Commerce-nettsted](https://aka.ms/Dynamics365CommerceWebsite)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Oversikt over utvikling
-description: Denne utviklerveiledningen har en referanse til et API og egendefinerte felt. Den inneholder også informasjon om integrering med andre apper.
+description: Denne artikkelen har en referanse til en API og egendefinerte felter. Den inneholder også informasjon om integrering med andre apper.
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: overview
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 095afc2693c60ae907b47158af0621d6436bdb0f
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 81c4a2a55639f6c302d45d9913246b2d227d74e9
+ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688155"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "9033690"
 ---
 # <a name="development-overview"></a>Oversikt over utvikling
 
@@ -27,9 +27,7 @@ ms.locfileid: "8688155"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
-
-Denne utviklerveiledningen har en referanse til et API og egendefinerte felt. Den inneholder også informasjon om integrering med andre apper.
+Denne artikkelen har en referanse til en API og egendefinerte felter. Den inneholder også informasjon om integrering med andre apper.
 
 - [Oversikt](hr-developer-overview.md)
 
@@ -59,9 +57,9 @@ Denne utviklerveiledningen har en referanse til et API og egendefinerte felt. De
 
 ## <a name="see-also"></a>Se også
 
-- [Hva er nytt eller endret i Human Resources](hr-admin-whats-new.md)
+- [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)
 - [Administratorveiledning](hr-admin-overview.md)
-- [Brukerveiledning](hr-hrpro-overview.md)
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

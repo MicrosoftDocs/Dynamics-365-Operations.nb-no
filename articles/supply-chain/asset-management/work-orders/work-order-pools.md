@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6fc97c8a65afe24bfe730e6d13eb178ddcafc2d9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc9eaf82c2f3336f8c3400fcd3f1165ed4fa56d8
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849568"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014976"
 ---
 # <a name="work-order-pools"></a>Arbeidsordresamlinger
 
@@ -44,7 +44,7 @@ Du kan du plassere én arbeidsordre i flere arbeidsordresamlinger, etter behov.
 
 På listesiden **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger** kan du få en oversikt over arbeidsordresamlingene og opprette nye samlinger.
 
-1. Velg **Aktivastyring** > **Felles** > **Arbeidsordresamlinger** > **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**.
+1. Velg **Aktivastyring** > **Arbeidsordresamlinger** > **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamlinger**.
 
 2. Velg **Ny**.
 

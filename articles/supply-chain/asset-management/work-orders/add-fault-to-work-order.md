@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7905dcd4c29872ec2601359baefa78545140397c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 210db3259a6c64a508119b30598a34dbda2d2dd2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857902"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015005"
 ---
 # <a name="add-fault-to-work-order"></a>Legge til feil i arbeidsordre
 
@@ -30,7 +30,7 @@ ms.locfileid: "8857902"
 
 Du kan legge til feil som er definert i feilutformingen, i en arbeidsordre. Én eller flere feilposter må knyttes til aktivatyper som brukes for aktivumet som velges i arbeidsordren. Hvis du vil ha mer informasjon om det generelle oppsettet for vurdering, kan du se [Feilstyring](../setup-for-work-orders/fault-management.md).
 
-1. Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+1. Velg **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 2. Velg arbeidsordren det skal utføres en feilregistrering på, og deretter går du til handlingsruten, fanen **Arbeidsordre**, gruppen **Aktiva** og velger **Aktivumfeil**.
 
@@ -64,7 +64,7 @@ På listesiden **Aktivumfeil** kan du få en oversikt over alle feilene som er r
 
 Fra listesiden **Alle aktiva** kan du skrive ut en rapport om aktivumfeil som viser alle feilregistreringer, i tillegg til en grafisk oversikt over feilstatistikk.
 
-1. Velg **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva**.
+1. Velg **Aktivastyring** > **Aktiva** > **Alle aktiva**.
 
 2. Velg aktivumet det skal skrives ut en rapport for.
 

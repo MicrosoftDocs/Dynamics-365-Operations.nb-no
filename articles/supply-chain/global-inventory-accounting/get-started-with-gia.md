@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 493e0be8ab56abc2a3253876107b7f4fefabf4ad
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
+ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891096"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9013562"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Komme i gang med Globalt lagerregnskap
 
@@ -69,37 +69,6 @@ Før du kan aktivere tilleggfunksjonalitet, må du integrere med Microsoft Power
 
 Hvis du vil ha mer informasjon, kan du se [Konfigurere etter miljødistribusjon](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-### <a name="set-up-dataverse"></a>Definer Dataverse
-
-Før du definerer Dataverse, kan du legge til serviceprinsippene for Globalt lagerregnskap i leietakeren ved å følge disse trinnene.
-
-1. Installer Azure AD-modul for Windows PowerShell v2 som beskrevet i [Installere Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-1. Kjør følgende PowerShell-kommando.
-
-    ```powershell
-    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
-
-    New-AzureADServicePrincipal -AppId "7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9" -DisplayName "d365-scm-costaccountingservice"
-
-    New-AzureADServicePrincipal -AppId "5f58fc56-0202-49a8-ac9e-0946b049718b" -DisplayName "d365-scm-operationdataservice"
-    ```
-
-Deretter oppretter du programbrukere for Globalt lagerregnskap i Dataverse ved å følge disse trinnene.
-
-1. Åpne URL-adressen for Dataverse-miljøet.
-1. Gå til **Avansert innstilling \> System \> Sikkerhet \> Brukere** og opporett en appbruker. Bruk **Vis**-feltet til å endre sidevisningen til *Programbrukere*.
-1. Velg **Ny**.
-1. Angi **Program-ID**-feltet til *7a1dd80f-c961-4a67-a2f5-d6a5d2f52cf9*.
-1. Velg **Tilordne rolle**, og velg deretter *Systemadministrator*. Hvis det finnes en rolle kalt *Common Data Service-bruker*, velger du den også.
-1. Gjenta de forrige trinnene, men sett feltet **Program-ID** til *5f58fc56-0202-49a8-ac9e-0946b049718b*.
-
-Hvis du vil ha mer informasjon, kan du se [Opprette en appbruker](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
-
-Hvis standardspråket for Dataverse-installasjonen ikke er engelsk, følger du denne fremgangsmåten.
-
-1. Gå til **Avanserte innstillinger \> Administrasjon \> Språk**.
-1. Velg *Engelsk* (*LanguageCode=1033*), og velg deretter **Bruk**.
-
 ## <a name="install-the-add-in"></a><a name="install"></a>Installer tillegget
 
 Følg denne fremgangsmåten for å installere tillegget, slik at du kan bruke Globalt lagerregnskap.
@@ -109,11 +78,21 @@ Følg denne fremgangsmåten for å installere tillegget, slik at du kan bruke Gl
 1. Gå til **Detaljerte opplysninger**.
 1. Gå til **Power Platform-integreringen**, og velg **Oppsett**.
 1. Merk av for avmerkingsboksen i dialogboksen for **Oppsett av Power Platform-miljø**, og velg deretter **Oppsett**. Vanligvis tar oppsettet mellom 60 og 90 minutter.
-1. Når oppsettet av Microsoft Power Platform-miljøet er fullført, går du til hurtigfanen **Miljøtillegg** og velger **Installer et nytt tillegg**.
+1. Når konfigurasjonen av Microsoft Power Platform-miljøet er fullført, kan du logge deg på [administrasjonssenteret for Power Platform](https://admin.powerplatform.microsoft.com) og deretter installere tilleggsprogrammet Globalt lagerregnskap ved å gjøre følgende:
+   1. Velg miljøet der du vil installere tilleggsprogrammet.
+   1. Velg **Dynamics 365-apper**.
+   1. Velg **Installer app**.
+   1. Velg **Dynamics 365 Global Inventory Accounting**.
+   1. Velg **Neste** for å installere.
+1. Gå tilbake til LCS-miljøet. I hurtigfanen **Miljøtillegg** velger du **Installer et nytt tillegg**.
 1. Velg **Globalt lagerregnskap**.
 1. Følg installasjonsveiledningen, og godta vilkårene.
 1. Velg **Installer**.
 1. I hurtigfanen **Miljøtillegg** skal du se at Globalt lagerrenskap blir installert. Etter noen minutter skal statusen endres fra *Installerer* til *Installert*. (Det kan hende du må oppdatere siden for å se denne endringen.) På dette tidspunktet er Globalt lagerregnskap klar til bruk.
+
+Hvis standardspråket for Dataverse-installasjonen ikke er engelsk, følger du denne fremgangsmåten:
+1. Gå til **Avanserte innstillinger \> Administrasjon \> Språk**.
+1. Velg *Engelsk* (*LanguageCode=1033*), og velg deretter **Bruk**.
 
 ## <a name="set-up-the-integration"></a>Defininere integreringen
 

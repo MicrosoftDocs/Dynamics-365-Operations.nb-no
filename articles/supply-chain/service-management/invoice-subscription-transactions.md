@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4483f5bc265149f70cfbea3e63152d63205c1225
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: b6ff62d5f1cb3695520f9ac0696d8b9bcedb1a6b
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8674876"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9017325"
 ---
-# <a name="invoice-subscription-transactions"></a>Fakturere abonnementtransaksjoner 
+# <a name="invoice-subscription-transactions"></a>Fakturere abonnementstransaksjoner 
 
 [!include [banner](../includes/banner.md)]
 
 
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer**.
+1.  Klikk på **Servicestyring** \> **Serviceabonnementer** \> **Alle serviceabonnementer**.
 
 2.  Velg et serviceabonnement, og klikk deretter **Rediger**, eller klikk **Abonnement** for å opprette et serviceabonnement.
 

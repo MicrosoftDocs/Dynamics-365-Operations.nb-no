@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f969e3de9586c0c47214201b34a16f8afad5ca90
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 1764d97d4492e7b982a5d2c9f7e7f1c15380be1d
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8678269"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014858"
 ---
 # <a name="create-service-orders-manually"></a>Opprette serviceordrer manuelt    
 
@@ -34,7 +34,7 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Opprette en serviceordre manuelt fra en serviceavtale
 
-1.  Velg **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1.  Velg **Servicestyring** \> **Serviceavtaler** \> **Serviceavtaler**.
 
 2.  Velg en serviceavtale eller opprett en ny serviceavtale.
 
@@ -42,7 +42,7 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Opprette en serviceordre manuelt i Serviceordrer-skjemaet
 
-1.  Velg **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Velg **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**.
 
 2.  Velg **Ny** for å opprette en ny serviceordre.
 
@@ -53,7 +53,7 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 ## <a name="create-a-service-order-from-a-project"></a>Opprette en serviceordre fra et prosjekt
 
-1.  Gå til **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter**.
+1.  Gå til **Prosjektstyring og regnskap** \> **Projekter** \> **Alle prosjekter**.
 
 2.  I skjemaet **Prosjekter** i **handlingsruten** velger du fanen **Administrer** \> og velger **Tjeneste** \> **Tjenesteordrer**.
 
@@ -66,7 +66,7 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veiviseren **Opprett en ny serviceordre basert på salgsordren**.
 
-1.  Gå til **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**.
+1.  Gå til **Salg og markedsføring** \> **Salgsordrer** \> **Alle salgsordrer**.
 
 2.  Åpne den relevante salgsordren.
 

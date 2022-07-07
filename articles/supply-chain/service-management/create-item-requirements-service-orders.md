@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c2c90ff76121b436d0fec532268cd3383de0eab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f21cda0abb334432d22cc7e0ccfdab724253d91e
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888419"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016956"
 ---
 # <a name="create-item-requirements-for-service-orders"></a>Opprette varebehov for serviceordrer
 
@@ -34,14 +34,14 @@ Varebehov for serviceordrer behandles via et prosjekt. Hvis du vil opprette et v
 
 ## <a name="create-an-item-requirement-for-a-service-order"></a>Opprette et varebehov for en serviceordre
 
-1. Gå til **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1. Gå til **Servicestyring** \> **Serviceordrer** \> **Serviceordrer**.
 1. Velg serviceordren du vil opprette et varebehov for.
 1. I **handlingsruten** på fanen **Fordeling** klikker du på **Varebehov**.
 1. Skriv inn informasjon for den nødvendige varen i **Varebehov**-skjemaet. Hvis du vil ha mer informasjon om de spesifikke feltene, kan du se [Varebehov (skjema)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
 
 ## <a name="create-an-item-requirement-for-a-service-agreement"></a>Opprette et varebehov for en serviceavtale
 
-1. Gå til **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1. Gå til **Servicestyring** \> **Serviceavtaler** \> **Serviceavtaler**.
 1. Åpne serviceavtalen som du vil opprette et varebehov for.
 1. På hurtigfanen **Linjer** velger du **Legg til** for å opprette en ny linje.
 1. I **Transaksjonstype**-feltet velger du **Vare**.

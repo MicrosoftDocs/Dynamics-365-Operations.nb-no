@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f15c0f15302c271fac7199b21b7bcd3dcfe88a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4a98b90491093f55ce6974b9b11ff326c0c2f5c
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903876"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9015325"
 ---
 # <a name="credit-limits-for-customers"></a>Kredittgrenser for kunder
 
@@ -117,7 +117,7 @@ Bruk **Parametere for kundefordringer**-skjemaet for å spesifisere om det skal 
 
 Bruk skjemaet **Kunder** for å spesifisere kredittgrensebeløpet for en bestemt kunde. Du må være medlem av en sikkerhetsrolle som har vedlikehold av kundemaster (CustCustomersMaintain)-ansvar tildelt for å gjøre endringer i dette skjemaet.
 
-1.  Klikk på **Kunder** \> **Felles** \> **Kunder** \> **Alle kunder**. Dobbeltklikk en kundekonto.
+1.  Klikk på **Kunder** \> **Kunder** \> **Alle kunder**. Dobbeltklikk en kundekonto.
 
 2.  I skjemaet **Kunder** på Handlings-ruten, klikk **Rediger**.
 
@@ -132,7 +132,7 @@ Bruk skjemaet **Kunder** for å spesifisere kredittgrensebeløpet for en bestemt
 
 Noen ganger må du kanskje manuelt sjekke kundens kredittgrense. For eksempel kan du manuelt sjekke kundens kredittgrense før du begynner å legge inn en salgsordre. Du kan bruke skjemaet **Salgsordre** for å manuelt sjekke kredittgrenser. Du må være medlem av en sikkerhetsrolle som har vedlikehold av salgsordre (SalesOrderMaintain)-ansvar tildelt for å gjøre endringer i dette skjemaet.
 
-1.  Klikk på **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklikk en salgsordre.
+1.  Klikk på **Salg og markedsføring** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklikk en salgsordre.
 
 2.  I skjemaet **Salgsordre** i Handlingsvinduet, på **Administrer**-fanen, klikk **Sjekk kredittgrense**.
 

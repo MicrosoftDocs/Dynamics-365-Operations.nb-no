@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3094649da2ce9a700a4d1cde236609013f4b9744
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ec3de073def2ff63af3c04b5696cbcec4f09948
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862315"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9014770"
 ---
 # <a name="set-up-cluster-picking"></a>Definer gruppeplukking
 
@@ -74,9 +74,14 @@ Når gruppeplukking brukes, er varebekreftelse avgjørende for å bekrefte varen
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Definere varebekreftelse med gruppeplukking
 
-1. Åpne oppsettskjemaet for arbeidsbekreftelse på et menyelement for mobilenhet: **Lagerstyring** \> **Lagerstyring** \> **Oppsett** \>  **Mobilenhet** \> **Menyelementer på mobilenheten**.
+1. Gå til **Lagerstyring** > **Oppsett** > **Mobilenhet** > **Menyelementer på mobilenheten**.
+1. Velg menyelementet du vil konfigurere, i listeruten.
+1. Velg **Arbeidsbekreftelsesoppsett** i handlingsruten.
+1. Gjør ett av følgende:
+    - Hvis det allerede finnes en linje for **arbeidstypen** du vil definere, velger du den og deretter **Rediger** i handlingsruten.
+    - Hvis det ikke finnes en aktuell linje, velger du **Ny** i handlingsruten og angir deretter riktig type for **Arbeidstype**.
+1. Merk av for **Produktbekreftelse** for den nye eller valgte linjen. Dette gjør at arbeidere kan bekrefte hver del av beholdningen med mobilenheten.
 
-1. Åpne **Arbeidsbekreftelsesoppsett** fra menyelementet på mobilenheten. Med alternativet **Produktbekreftelse** kan du bekrefte hver del av beholdningen fra den mobile enheten når den skannes.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dcee5fd729de6e96d57462879f7851756f287dc9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5eb911ec4ba9655c4ecaea3bf9a4f8736fa036c2
+ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902838"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "9016717"
 ---
 # <a name="introduction-to-work-orders"></a>Innføring i arbeidsordrer
 
@@ -36,26 +36,26 @@ Arbeidsordrer kan opprettes på følgende måter:
 
 - Automatisk ved hjelp av [Planlegg vedlikeholdsrunder](../preventive-and-reactive-maintenance/maintenance-rounds.md) for vedlikeholdsrunder satt til "Opprett automatisk".
 
-- Fra [Vedlikeholdsplan](../preventive-and-reactive-maintenance/maintenance-schedule.md) for forebyggende vedlikeholdsjobber eller vedlikeholdsforespørsler.
+- Fra [Vedlikeholdsplan](../preventive-and-reactive-maintenance/maintenance-schedule.md) for forebyggende vedlikeholdsjobber eller meldinger.
 
 - Manuelt
 
-- Fra siden **Alle vedlikeholdsforespørsler**, **Aktive vedlikeholdsforespørsler** eller **Mine vedlikeholdsforespørsler for arbeidssted**.
+- Fra siden **Alle meldinger**, **Aktive meldinger** eller **Mine meldinger for funksjonslokasjon**.
 
 >[!NOTE]
 >Arbeidsordrejobber som er knyttet til samme aktivum, er knyttet til samme prosjekt-ID.
 
 ## <a name="all-work-orders"></a>Alle arbeidsordrer
 
-Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** for å åpne listesiden **Alle arbeidsordrer**. Denne siden viser alle arbeidsordrer og noe av informasjonen som er relatert til hver av dem.
+Velg **Aktivastyring** > **Arbeidsordrer** > **Alle arbeidsordrer** for å åpne listesiden **Alle arbeidsordrer**. Denne siden viser alle arbeidsordrer og noe av informasjonen som er relatert til hver av dem.
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Alle arbeidsordrer**.
 
 ![Figur 1.](media/01-work-orders.png)
 
-Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Aktive arbeidsordrer** for å se en liste over aktive arbeidsordrer. 
+Velg **Aktivastyring** > **Arbeidsordrer** > **Aktive arbeidsordrer** for å se en liste over bare aktive arbeidsordrer. 
 
-Hvis du vil se en liste over arbeidsordrejobber som inneholder aktiva som er installert på arbeidssteder du er knyttet til som arbeider, velger du **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Mine vedlikeholdsjobber for arbeidsordre for arbeidssted**. (Forholdet mellom arbeidere og funksjonssteder er definert på **Arbeidere**-siden. Hvis du vil ha mer informasjon, se [Vedlikeholdspersoner og arbeidergrupper](../setup-for-objects/workers-and-worker-groups.md).)
+Hvis du vil se en liste over arbeidsordrejobber som inneholder aktiva som er installert på funksjonslokasjoner du er knyttet til som arbeider, velger du **Aktivastyring** > **Arbeidsordrer** > **Mine arbeidsordrelinjer for funksjonslokasjon**. (Forholdet mellom arbeidere og funksjonssteder er definert på **Arbeidere**-siden. Hvis du vil ha mer informasjon, se [Vedlikeholdspersoner og arbeidergrupper](../setup-for-objects/workers-and-worker-groups.md).)
 
 Her er noen måter du kan bruke siden **Alle arbeidsordrer** på:
 
