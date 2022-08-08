@@ -7,21 +7,21 @@ ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: kfend
-ms.custom:
-- "27681"
-- intro-internal
-ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4be3c576cd0fac1239113efcdd7e97810b193a88
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom:
+- "27681"
+- intro-internal
+ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.openlocfilehash: 119292dccc2f2d7131f0fa39aa35a8253b948d40
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906640"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206483"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Startside for rapportering og analyse med Power BI
 
@@ -29,10 +29,10 @@ ms.locfileid: "8906640"
 
 Denne artikkelen henviser til ressursene du kan bruke til å finne ut mer om forretningsintelligens (BI) og rapporteringsverktøy som er tilgjengelige.
 
-## <a name="get-started"></a>Komme i gang
+## <a name="get-started"></a>Kom i gang
 - [Informasjonstilgang og rapportering](information-access-reporting.md)
 - [Teknisk tale: Rapporteringsalternativer](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Power BI Analytics & Reporting Services-blogg](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogg)
+- [Økonomi og drift: Power BI Analytics & Reporting Services-blogg](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogg)
 
 ## <a name="analytical-workspaces"></a>Analytiske arbeidsområder
 Arbeidsområder kan bruke omfattende infografikk og bilder som støttes av Microsoft Power BI. Denne infografikken og bildene inkluderer mange kontroller som formidles av tredjeparter. Derfor formidler arbeidsområder en svært visuell, interaktiv opplevelse for brukere.

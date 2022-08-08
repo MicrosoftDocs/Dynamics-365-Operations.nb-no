@@ -1,10 +1,10 @@
-- name: Utvikling og administrasjon for Finance and Operations-apper
+- name: Utvikling og administrasjon for økonomi- og driftsapper
   items:
-    - name: Utvikling og administrasjon for Finance and Operations-apper
+    - name: Utvikling og administrasjon for økonomi- og driftsapper
       items:
-        - name: Dokumentasjon for programmet Finance and Operations
+        - name: Dokumentasjon for økonomi- og driftsapper
           href: ../fin-ops/index.md
-        - name: Utvikling og administrasjon for Finance and Operations-apper
+        - name: Utvikling og administrasjon for økonomi- og driftsapper
           href: index.md
         - name: Nyheter eller endringer
           items:
@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-28.md
                 - name: Plattformoppdateringer for versjon 10.0.27 (juli 2022)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Plattformoppdateringer for versjon 10.0.26 (mai 2022)
-                  href: get-started/whats-new-platform-updates-10-0-26.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -106,41 +104,41 @@
                       items:
                         - name: Kundeemne til kontanter
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkroniser kontoer direkte fra Sales til kunder i Finance and Operations
+                        - name: Synkroniser kontoer direkte fra Sales til kunder i økonomi og drift
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
+                        - name: Synkroniser produkter direkte fra økonomi og drift til produkter i Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Finance and Operations
+                        - name: Synkroniser kontakter direkte fra Sales til kontakter eller kunder i økonomi og drift
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                        - name: Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Finance and Operations
+                        - name: Synkroniser salgstilbudshoder og -linjer direkte fra Sales til økonomi og drift
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                        - name: Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations
+                        - name: Synkronisering av salgsordrer direkte mellom Sales og økonomi og drift
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
+                        - name: Synkroniser salgsfakturahoder og -linjer direkte fra økonomi og drift til Sales
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                    - name: Konfigurere integrering med Field Service
+                    - name: Konfigurer integrering med Field Service
                       items:
                         - name: Oversikt over å konfigurere integrering med Field Service
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: "Synkronisere produkter\_i Finance and Operations til produkter i Field Service"
+                        - name: "Synkroniser produkter\_i økonomi og drift til produkter i Field Service"
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
+                        - name: Synkroniser arbeidsordrer i Field Service til salgsordrer i økonomi og drift
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Finance and Operations
+                        - name: Synkroniser avtalefakturaer i Field Service til fritekstfakturaer i økonomi og drift
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Synkronisere lageroverføringer og -justeringer fra Field Service til Finance and Operations
+                        - name: Synkroniser lageroverføringer og -justeringer fra Field Service til økonomi og drift
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Synkronisere informasjon om lagernivå fra Finance and Operations til Field Service
+                        - name: Synkroniser informasjon om lagernivå fra økonomi og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Synkronisere produkter med lagerenhet fra Finance and Operations til Field Service
+                        - name: Synkroniser produkter med lagerenhet fra økonomi og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Synkronisere prosjektliste fra Finance and Operations til Field Service
+                        - name: Synkroniser prosjektliste fra økonomi og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Synkronisere lagre fra Finance and Operations til Field Service
+                        - name: Synkroniser lagre fra økonomi og drift til Field Service
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Synkronisere arbeidsordrer med prosjekt fra Field Service til Finance and Operations
+                        - name: Synkroniser arbeidsordrer med prosjekt fra Field Service til økonomi og drift
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                    - name: Konfigurere integrering av Project Service Automation
+                    - name: Konfigurer integrering av Project Service Automation
                       items:
                         - name: Oversikt over Project Service Automation
                           href: /dynamics365/project-operations/prod-pma/PSA-integration
@@ -200,7 +198,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Importer bilag ved hjelp av enheten Økonomijournal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimaliser dataoverføring for Finance and Operations-apper
+                - name: Optimaliser dataoverføring for økonomi- og driftsapper
                   href: sysadmin/optimize-data-migration.md
             - name: Utvikling for dataenheter
               items:
@@ -348,9 +346,9 @@
                   href: deployment/arm-onboarding.md
                 - name: Fullfør jobbintroduksjonsprosessen for Azure Resource Manager for LCS-prosjekter for amerikanske myndigheter
                   href: deployment/arm-onbarding-us-goverment.md
-                - name: Azure ExpressRoute og Finance and Operations
+                - name: Azure ExpressRoute og økonomi og drift
                   href: deployment/expressroute.md
-                - name: Arkitektur for Finance and Operations
+                - name: Arkitektur for økonomi og drift
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Ta i bruk oppdateringer i skymiljøer
                   href: deployment/apply-deployable-package-system.md
@@ -578,13 +576,13 @@
                   href: dev-tools/element-designers.md
                 - name: Kommandoer for å bestemme elementbruk
                   href: dev-tools/element-usage.md
-                - name: Eksportere og importere modeller
+                - name: Eksporter og importer modeller
                   href: dev-tools/models-export-import.md
                 - name: Metadatasøk i Visual Studio
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller og pakker
                   href: dev-tools/models.md
-                - name: Prosjekttype i Finance and Operations
+                - name: Prosjekttype i økonomi og drift
                   href: dev-tools/projects.md
                 - name: Verktøytillegg for Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -1050,7 +1048,7 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps-utvidelsesopplæring (forhåndsversjon)
                   href: lifecycle-services/dts-ado-tutorial.md
-                - name: Visual Studio-utvidelse (privat forhåndsvisning)
+                - name: Visual Studio-utvidelse (forhåndsversjon)
                   href: lifecycle-services/dts-visual-studio.md
                 - name: Visual Studio Code-utvidelse (forhåndsversjon)
                   href: lifecycle-services/dts-vscode-doc.md
@@ -1082,9 +1080,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Oppsett av dobbel skriving fra Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Aktiver dobbel skriving for eksisterende Finance and Operations-apper
+                    - name: Aktiver dobbel skriving for eksisterende økonomi- og driftsapper
                       items:
-                        - name: Aktiver dobbel skriving for eksisterende Finance and Operations-apper
+                        - name: Aktiver dobbel skriving for eksisterende økonomi- og driftsapper
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Systemkrav og forutsetninger
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1198,15 +1196,15 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Feilsøk problemer med direkte synkronisering
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Feilsøk problemer med dobbel skriving i Finance and Operations-apper
+                        - name: Feilsøk problemer med dobbel skriving i økonomi- og driftsapper
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Feilsøk problemer med part og global adressebok
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Feilsøk problemer i forbindelse med forståelse av løsningen
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Feilsøk problemer fra oppgraderinger av Finance and Operations-apper
+                        - name: Feilsøk problemer fra oppgraderinger av økonomi- og driftsapper
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Bekreft konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
+                        - name: Bekreft konfigurasjon av dobbel skriving i økonomi- og driftsapper og Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Feilkoder for tilstandskontroll for tabelltilordning
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1224,9 +1222,9 @@
                   href: power-platform/admin-reference.md
                 - name: Aktiver virtuelle enheter for Dataverse
                   href: power-platform/enable-virtual-entities.md
-                - name: Power Apps-portaler med Finance and Operations
+                - name: Power Apps-portaler med økonomi og drift
                   href: power-platform/power-portal-reference.md
-                - name: Vanlige spørsmål om virtuelle enheter for Finance and Operations
+                - name: Vanlige spørsmål om virtuelle enheter for økonomi og drift
                   href: power-platform/faq.md
             - name: Forretningshendelser
               items:
@@ -1570,19 +1568,19 @@
                   href: lcs-solutions/regulatory-watch-communication.md
                 - name: Atskillelse av lokaliseringsmodeller
                   href: lcs-solutions/separate-localization-models.md
-                - name: Sende forskriftsmessige varsler
+                - name: Send forskriftsmessige varsler
                   href: lcs-solutions/submit-localization-alerts.md
-        - name: Støtte
+        - name: Kundestøtte
           items:
-            - name: Få støtte for Finance and Operations og Lifecycle Services
+            - name: Få støtte for økonomi og drift og Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Oversikt over Dynamics 365-støtte
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Få støtte for Finance and Operations styrt av 21Vianet i Kina
+            - name: Få støtte for økonomi og drift styrt av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurer teknisk støtte for Finance and Operations-apper
+            - name: Konfigurer teknisk støtte for økonomi- og driftsapper
               href: lifecycle-services/support-experience.md
-            - name: Administrer støtteopplevelser for Finance and Operations-apper
+            - name: Administrer støtteopplevelser for økonomi- og driftsapper
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Produksjonsstøtte og -overvåking
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1696,11 +1694,11 @@
           items:
             - name: 'Ressurser for oppgraderinger, oppdateringer og hurtigreparasjoner'
               href: migration-upgrade/upgrade-home-page.md
-            - name: Oppgradere fra AX 2012
+            - name: Oppgrader fra AX 2012
               items:
-                - name: Oppgradere fra AX 2012 til Finance and Operations
+                - name: Oppgrader fra AX 2012 til økonomi og drift
                   href: migration-upgrade/upgrade-overview-2012.md
-                - name: AX 2012-oppgradering – Planlegge ved hjelp av verktøyet for oppgraderingsanalyse
+                - name: AX 2012-oppgradering – Planlegg ved hjelp av verktøyet for oppgraderingsanalyse
                   href: migration-upgrade/upgrade-analyzer-tool.md
                 - name: AX 2012-oppgradering – Anslå hva som må gjøres ved hjelp av kodeoppgraderingstjenesten
                   href: migration-upgrade/analyze-code-upgrade.md
@@ -1758,7 +1756,7 @@
                       href: migration-upgrade/compress-tables-ax-2012.md
             - name: Overfør data fra AX 2009
               items:
-                - name: Overfør data fra AX 2009 til Finance and Operations
+                - name: Overfør data fra AX 2009 til økonomi og drift
                   href: migration-upgrade/data-migration-tool.md
                 - name: Overføring av AX 2009 – Installere dataoverføringsverktøyet
                   href: migration-upgrade/install-dmt.md
