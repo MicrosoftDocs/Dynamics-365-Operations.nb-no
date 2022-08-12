@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 809906c3926b200e7beac84e780314aec1f8c2ca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 85b3a45c054144e414aebb28b3d8080ab295f52f
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855594"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112282"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutadatatype for dobbelt skriving
 
@@ -100,3 +100,4 @@ Hvis du vil ha forventet virkemåte for standard valutadesimalpresisjon under ov
 |          | Maks desimalpresisjon synlig i resultatgrensesnittet for database og DB-spørringer | 10 sifre. Bare 4 er imidlertid signifikante med alle nuller utover de 4 desimaltallene. Dette gjør det mulig med en enklere og raskere overføring av organisasjon om nødvendig. | 10 sifre      | 10 sifre     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

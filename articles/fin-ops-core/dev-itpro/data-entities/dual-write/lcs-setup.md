@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 5cccba580d23c3a0e9aed62f76a305926a58585f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a002bae22044ea10be30340a87a191305f6c6b92
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879811"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111978"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Oppsett av dobbel skriving fra Lifecycle Services
 
@@ -28,8 +28,8 @@ Denne artikkelen forklarer hvordan du aktiverer dobbel skriving fra Microsoft Dy
 
 Kunder må fullføre Power Platform-integreringen som beskrevet i følgende emner:
 
-- Hvis du ikke bruker Microsoft Power Platform ennå, og vil utvide Økonomi og drift-miljøet ved å legge til plattformfunksjoner, kan du se [Power Platform-integrering - Aktiver under miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- Hvis du allerede har Dataverse- og Power Platform-miljøer og vil koble dem til Økonomi og drift-miljøer, kan du se [Power Platform-integrering - Aktiver etter miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- Hvis du ikke bruker Microsoft Power Platform ennå, og vil utvide Finance and Operations-miljøet ved å legge til plattformfunksjoner, kan du se [Power Platform-integrering - Aktiver under miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Hvis du allerede har Dataverse- og Power Platform-miljøer og vil koble dem til Finance and Operations-miljøer, kan du se [Power Platform-integrering - Aktiver etter miljødistribusjon](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
 ## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Konfigurere dobbel skriving for nye og eksisterende Dataverse-miljøer
 
@@ -53,7 +53,7 @@ Følg denne fremgangsmåten for å konfigurere en dobbelt skriving fra LCS-siden
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Koble til Power Platform-miljø.":::
 
-8. Når koblingen er fullført, vises en hyperkobling. Bruk koblingen til å logge deg på administrasjonsområdet for dobbel skriving i økonomi- og driftsmiljøet. Derfra kan du definere enhetstilordninger.
+8. Når koblingen er fullført, vises en hyperkobling. Bruk koblingen til å logge deg på administrasjonsområdet for dobbel skriving i Finance and Operations-miljøet. Derfra kan du definere enhetstilordninger.
 
 ## <a name="linking-mismatch"></a>Koblingskonflikt
 
@@ -71,3 +71,4 @@ Hvis du får denne advarselen, kan du prøve en av følgende løsninger:
 Tidligere var det tilgjengelig en manuell støtteforespørsel, men det var før alternativ 1 over fantes.  Microsoft støtter ikke lenger manuelle koblinger av forespørsler via støtteforespørsler.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

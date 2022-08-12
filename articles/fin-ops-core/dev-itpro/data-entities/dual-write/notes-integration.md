@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8e1444aa311bb2dc74705a3791e58c3187ecd8ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 19a1fd53f19575a16ee8d8b7391c30f0cacf26a8
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876722"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111464"
 ---
 # <a name="note-integration"></a>Merknadsintegrering
 
@@ -30,7 +30,7 @@ Kundeopplysninger kan klassifiseres på følgende måter:
 + **Informasjon som kan behandles for en Dynamics 365-bruker** – En kunde som kjøper en Surface-enhet, legger for eksempel inn spesielle instruksjoner som indikerer at enheten skal pakkes inn i gave før levering. Disse instruksjonene er informasjon som kan behandles, og som bør behandles av Contoso-ansatte som er ansvarlig for emballasje.
 + **Informasjon som ikke kan behandles**– En kunde besøker for eksempel Contoso-butikken, og uttrykker interesse for *Halo*-spill og spilltilbehør i samtalen med butikkmedarbeideren. Butikkmedarbeideren noterer seg denne informasjonen. Produktanbefalingsmotoren bruker deretter informasjonen til å foreta anbefalinger til kunden.
 
-Som regel registreres informasjon som kan behandles, som *aktiviteter* i økonomi- og driftsapper og Customer Engagement-apper. Informasjon som ikke kan behandles, blir lagret som *merknader* i økonomi- og driftsapper, og som *kommentarer* i Customer Engagement-apper.
+Som regel registreres informasjon som kan behandles, som *aktiviteter* i økonomi- og driftsapper og kundeengasjementsapper. Informasjon som ikke kan behandles, blir lagret som *merknader* i økonomi- og driftsapper, og som *kommentarer* i kundeengasjementsapper.
 
 > [!TIP]
 > Selv om notater er beregnet på informasjon som ikke kan behandles, vil ikke appene hindre deg i å bruke dem til å lagre og håndtere informasjon som kan behandles, hvis du vil bruke dem på denne måten.
@@ -39,7 +39,7 @@ Microsoft frigir funksjonalitet for merknadsintegrering. (Funksjonalitet for akt
 
 ## <a name="create-a-note-in-a-customer-engagement-app"></a>Opprette en merknad i en Customer Engagement-app
 
-Følg denne fremgangsmåten for å opprette et notat i en Customer Engagement-app og deretter synkronisere den med en økonomi- og driftsapp.
+Følg denne fremgangsmåten for å opprette et notat i en kundeengasjementsapp og deretter synkronisere den med en økonomi- og driftsapp.
 
 1. Åpne kontoposten for en kunde i Customer Engagement-appen.
 2. I ruten **Tidslinje** velger du plusstegnet (**+**), og deretter velger du **Merknad** for å opprette en merknad.
@@ -62,13 +62,13 @@ Følg denne fremgangsmåten for å opprette et notat i en Customer Engagement-ap
 
     ![Merknad fra Customer Engagement-appen.](media/notes-ce-5.png)
 
-Alle oppdateringer av merknaden synkroniseres frem og tilbake mellom økonomi- og driftsappen og Customer Engagement-appen.
+Alle oppdateringer av merknaden synkroniseres frem og tilbake mellom økonomi- og driftsappen og kundeengasjementsappen.
 
 ## <a name="create-a-note-in-a-finance-and-operations-app"></a>Opprett en merknad i en økonomi- og driftsapp
 
-Du kan også opprette en merknad i en økonomi- og driftsapp, og den blir synkronisert til en Customer Engagement-app.
+Du kan også opprette en merknad i en økonomi- og driftsapp, og den blir synkronisert til en kundeengasjementsapp.
 
-Følg denne fremgangsmåten for å opprette et notat i en økonomi- og driftsapp og deretter synkronisere den med en Customer Engagement-app.
+Følg denne fremgangsmåten for å opprette et notat i en økonomi- og driftsapp og deretter synkronisere den med en kundeengasjementsapp.
 
 1. I økonomi- og driftsappen, på **Vedlegg**-siden, velger du **Ny** \> **Merknad**.
 
@@ -121,3 +121,4 @@ Merknadsintegrering inkluderer en samling tabelltilordninger som fungerer sammen
 Når du har installert merknadsløsningen, kan du ikke avinstallere den. 
 
 Hvis du vil ha mer informasjon, kan du se [Referanse for lesetilgang til skrivetilgang](mapping-reference.md).
+

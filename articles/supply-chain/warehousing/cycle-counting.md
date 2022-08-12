@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: da7aef93cf994c40410598ab9c4ff2b21f4750e7
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902228"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065936"
 ---
 # <a name="cycle-counting"></a>Syklustelling
 
@@ -52,11 +52,11 @@ Tabellen nedenfor viser forutsetninger som må være på plass før du kan bruke
 <tbody>
 <tr class="odd">
 <td>Vare</td>
-<td>Varn må aktiveres for lagerstyringsprosesser.</td>
+<td>Varen må aktiveres for Warehouse Management-prosesser (WMS).</td>
 </tr>
 <tr class="even">
 <td>Lager</td>
-<td>Lageret må aktiveres for lagerstyringsprosesser. Hvis du vil aktivere lageret for lagerstyringsprosesser, går du til siden <strong>Lagre</strong>, velger lageret og merker deretter av for <strong>Bruk lagerstyringsprosesser</strong>. Hvis du vil gi brukerne mulighet til å flytte paller under en syklustelling, går du til hurtigfanen <strong>Lagerstyring</strong> og merker av for <strong>Tillat flytting av pall under syklustelling</strong>.</td>
+<td>Lageret må aktiveres for Warehouse Management-prosesser (WMS). Hvis du vil aktivere lageret for WMS, går du til siden <strong>Lagre</strong>, velger lageret og merker deretter av for <strong>Bruk Warehouse Management-prosesser</strong>. Hvis du vil gi brukerne mulighet til å flytte paller under en syklustelling, går du til hurtigfanen <strong>Lagerstyring</strong> og merker av for <strong>Tillat flytting av pall under syklustelling</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Arbeidsutvalg</td>

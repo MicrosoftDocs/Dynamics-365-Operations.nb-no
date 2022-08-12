@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 28ebf1b4fb966fd6801e75e7b3a6c8741114938d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863686"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070297"
 ---
 # <a name="planned-cross-docking"></a>Planlagt direkteoverføring
 
@@ -118,7 +118,7 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Forsyningskilde:** *Bestilling*
 
 > [!NOTE]
-> Du kan definere en spørring til å kontrollere når en bestemt direkteoverføringsmal brukes. Spørringen for maler for direkteoverføring har bare *InventTable*-tabellen (varer) og den internkoblede *WHSInventTable-tabellen* (WHS-varer). Hvis du vil legge til andre tabeller i spørringen, kan du koble dem sammen ved bare å bruke *eksisterende koblinger* eller *ikke-eksisterende koblinger*. Når du filtrerer på de sammenføyde tabellene, blir det hentet en post fra hovedtabellen for hver samsvarende post i den sammenføyde tabellen. Hvis koblingstypen er *kobling finnes*, avsluttes søket etter at det første samsvaret er funnet. Hvis du for eksempel deltar i salgsordrelinjetabellen til varetabellen, validerer og returnerer systemet varer der minst én salgsordrelinje har den definerte betingelsen. I utgangspunktet hentes dataene fra den overordnede tabellen (varer), ikke fra den underordnede tabellen (salgsordrelinje). Derfor kan du ikke filtrere etter kildedokumenter, for eksempel salgsordrelinjer eller kunder, med en gang.
+> Du kan definere en spørring til å kontrollere når en bestemt direkteoverføringsmal brukes. Spørringen for maler for direkteoverføring har bare *InventTable*-tabellen (varer) og den internkoblede *WHSInventTable-tabellen* (WMS-varer). Hvis du vil legge til andre tabeller i spørringen, kan du koble dem sammen ved bare å bruke *eksisterende koblinger* eller *ikke-eksisterende koblinger*. Når du filtrerer på de sammenføyde tabellene, blir det hentet en post fra hovedtabellen for hver samsvarende post i den sammenføyde tabellen. Hvis koblingstypen er *kobling finnes*, avsluttes søket etter at det første samsvaret er funnet. Hvis du for eksempel deltar i salgsordrelinjetabellen til varetabellen, validerer og returnerer systemet varer der minst én salgsordrelinje har den definerte betingelsen. I utgangspunktet hentes dataene fra den overordnede tabellen (varer), ikke fra den underordnede tabellen (salgsordrelinje). Derfor kan du ikke filtrere etter kildedokumenter, for eksempel salgsordrelinjer eller kunder, med en gang.
 
 ### <a name="create-a-work-class"></a>Opprette en arbeidsklasse
 

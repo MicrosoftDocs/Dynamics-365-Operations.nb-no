@@ -1,6 +1,6 @@
 ---
 title: Integrert original for kunde
-description: Denne artikkelen beskriver integreringen av kundedata mellom Økonomi og drift og Dataverse.
+description: Denne artikkelen beskriver integreringen av kundedata mellom Finance and Operations og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 042042bb19b32d3c96b4e0c8521a8b1d65e7ab22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b16eab5c107a3176f0890372d397947698e71de
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890463"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111732"
 ---
 # <a name="integrated-customer-master"></a>Integrert original for kunde
 
@@ -32,7 +32,7 @@ Kundedata kan styres i mer enn ett Dynamics 365-program. En kunderad kan for eks
 
 Kunder kan grovt klassifiseres i to typer: kommersielle/organisatoriske kunder og forbrukere/sluttbrukere. Disse to kundetypene lagres og håndteres forskjellig i Finance and Operations og Dataverse.
 
-I økonomi og drift er både kommersielle/organisatoriske kunder og forbrukere/sluttbrukere mastret i en enkelt tabell som heter **CustTable** (CustCustomerV3Entity), og de er klassifisert basert på **Type**-attributtet. (Hvis **Type** er satt til **Organisasjon**, er kunden en kommersiell/organisatorisk kunde, og hvis **Type** er satt til **Person**, er kunden en forbruker/sluttbruker.) Den primære kontaktpersoninformasjonen håndteres via SMMContactPersonEntity-tabellen.
+I Finance and Operations er både kommersielle/organisatoriske kunder og forbrukere/sluttbrukere mastret i en enkelt tabell som heter **CustTable** (CustCustomerV3Entity), og de er klassifisert basert på **Type**-attributtet. (Hvis **Type** er satt til **Organisasjon**, er kunden en kommersiell/organisatorisk kunde, og hvis **Type** er satt til **Person**, er kunden en forbruker/sluttbruker.) Den primære kontaktpersoninformasjonen håndteres via SMMContactPersonEntity-tabellen.
 
 I Dataverse styres kommersielle/organisatoriske kunder i kontotabellen og identifiseres som kunder når **RelationshipType**-attributtet er satt til **Kunde**. Både forbrukere/sluttbrukere og kontaktpersonen representeres av Kontakt-tabellen. Hvis du vil gi et klart skille mellom en forbruker/sluttbruker og en kontaktperson, har **Kontakt**-tabellen et boolsk flagg kalt **Kan selges**. Når **Sellable** er **True**, er kontakten en forbruker/sluttbruker, og tilbud og ordrer kan opprettes for denne kontakten. Når **Sellable** er **False**, er kontakten bare en primærkontaktperson for en kunde.
 
@@ -57,3 +57,4 @@ Finance and Operations-apper | Kundeengasjementsapper         | beskrivelse
 [Betalingsbetingelser](mapping-reference.md#161) | msdyn_paymentterms | Denne malen synkroniserer referansedata om betalingsbetingelser, både for kunder og leverandører.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

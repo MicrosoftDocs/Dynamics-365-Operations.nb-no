@@ -14,17 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0da71c87364eacf60b9a82a200996292b863b6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692429"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178541"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gjelder For:** Human Resources i den frittstående infrastrukturen_ 
 
+> [!NOTE]
+> Fra og med juni 2022 kan Human Resources-miljøer kun distribueres i infrastrukturen i økonomi- og driftsapper. Hvis du vil ha mer informasjon , kan du se [Klargjøring av Human Resources i infrastrukturen i Finance and Operations](hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Infrastrukturen for Finance and Operations støtter ikke en kopieringsforekomstfunksjon. Du kan distribuere nye miljøer og bruke databasebevegelser til å opprette kopier. For mer informasjon om selvbetjenste distribusjoner kan du se [Oversikt over distribusjon av selvbetjening](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). Hvis du vil ha mer informasjon om databasebevegelser i Finance and Operations-infrastrukturen, kan du se [Startsiden for databaseflyttingsoperasjoner](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 Du kan bruke Microsoft Dynamics Lifecycle Services (LCS) til å kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkassemiljø. Hvis du har et annet sandkassemiljø, kan du også kopiere databasen fra dette miljøet til et målrettet sandkassemiljø.
 
@@ -50,7 +55,7 @@ Følgende hendelser inntreffer når du kopierer en Human Resources-database:
 
 - Dokumenter i Microsoft Azure Blob-lagring kopieres ikke fra ett miljø til et annet. Derfor vil ingen dokumenter og maler som er vedlagt, bli kopiert, og de forblir i kildemiljøet.
 
-- Alle brukere, bortsett fra de som har sikkerhetsrollen Systemadministrator og andre interne tjenestebrukerkontoer, vil ikke være tilgjengelige. Administratorbrukeren kan slette eller nedtone data før andre brukere får tilgang til systemet igjen.
+- Alle brukere, bortsett fra de som har sikkerhetsrollen Systemadministrator og andre interne tjenestebrukerkontoer, vil ikke være tilgjengelige. Administratorbrukeren kan slette data før andre brukere får tilgang til systemet igjen.
 
 - Alle brukere med sikkerhetsrollen Systemadministrator må utføre nødvendige konfigurasjonsendringer, for eksempel koble til integreringsendepunkter på nytt til bestemte tjenester eller URL-adresser.
 
@@ -67,7 +72,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
 3. Velg forekomsten som skal kopieres, og velg deretter **Kopier**.
 
-4. I oppgaveruten **Kopier en forekomst**, velger du forekomsten som skal overskrives, og deretter velger du **Kopier**. Vent til verdien i feltet **Kopier status** er oppdatert til **Fullført**.
+4. I oppgaveruten **Kopier en forekomst**, velger du forekomsten som skal overskrives, og deretter velger du **Kopier**. Vent til feltet **Kopier status** er oppdatert til **Fullført**.
 
    ![[Velg forekomsten du vil skrive over.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
@@ -76,6 +81,8 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
    ![[Velg Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Velg Power Apps-miljøet som skal kopieres, og velg deretter **Kopier**.
+
+Hvis du vil ha mer informasjon om kopiering av Power Apps-miljøer, kan du se [Kopiere et miljø](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. Når kopieringsprosessen er fullført, logger du på målforekomsten og aktiverer Dataverse-integrering. Hvis du vil ha mer informasjon og instruksjoner, kan du se [Konfigurere Dataverse-integrering for arbeidsområder](./hr-admin-integration-common-data-service.md).
 

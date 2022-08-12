@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65f7a642d3b2c2ddfca1e2d92570b49ef2f8c2b4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869264"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109588"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversikt over elektronisk rapportering (ER)
 
@@ -143,7 +143,7 @@ Et ER-repositorium lagrer ER-konfigurasjoner. Følgende typer ER-repositorier st
 
 Et **LCS-delt bibliotek**-repositorium gir tilgang til listen over konfigurasjoner i det delte aktivabiblioteket i Lifecycle Services (LCS). Denne typen ER-repositorium kan bare registreres for Microsoft-leverandøren. Fra det delte LCS-aktivabiblioteket kan du importere den nyeste versjonen av ER-konfigurasjoner til den gjeldende forekomsten.
 
-**LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende forekomst av Finance and Operations-appene dine.
+**LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende forekomst av økonomi- og driftsappene dine.
 
 Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende forekomst. 
 
@@ -270,3 +270,4 @@ Listen over ER-konfigurasjoner for Finance oppdateres hele tiden. Åpne det [glo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

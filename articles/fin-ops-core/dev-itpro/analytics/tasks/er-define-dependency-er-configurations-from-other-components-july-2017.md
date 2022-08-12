@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 525e9be1655bdf0c0328ec53509ab1966abd7bde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aceb883e9182090a336c4c91aa0022a79495ce40
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883575"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111702"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere avhengigheten av ER-konfigurasjonene i andre komponenter
 
@@ -46,7 +46,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 7. Velg Microsoft Dynamics 365 for Operations (1611).
 8. Skriv inn '[7.1.1541.3036,8)' i Versjon-feltet.
     * [7.1.1541.3036,8)  
-    * Du angir avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen enten allerede er på plass eller lastet ned på forhånd. Hvis det er lastet ned på forhånd, må være fullført i Økonomi og drift versjon 7.1.1541.3036 eller nyere, men må ikke overskride hovedversjon 8.   
+    * Du angir avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen enten allerede er på plass eller lastet ned på forhånd. Hvis det er lastet ned på forhånd, må være fullført i Finance and Operations versjon 7.1.1541.3036 eller nyere, men må ikke overskride hovedversjon 8.   
 9. Klikk på Lagre.
 10. Lukk siden.
 11. Klikk på Endre status.
@@ -59,7 +59,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 18. Velg Microsoft Dynamics AX 7.0 RTW.
 19. Skriv inn '[7.0.1265.3015,7.1)' i Versjon-feltet.
     * [7.0.1265.3015,7.1)  
-    * Avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen enten allerede er på plass eller lastet ned på forhånd. Hvis den er lastet ned på forhånd, må den fullføres i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition er versjonen som må være 7.0.1265.3015 eller senere, men må ikke overskride underordnet versjon 1.   
+    * Avhengigheter blir evaluert når denne konfigurasjonen lastes ned fra en hvilken som helst ER repositoriet. Denne versjonen av konfigurasjonen skal lastes ned fra repositoriet ER når versjon 1 av "eksempel datamodellen-konfigurasjonen enten allerede er på plass eller lastet ned på forhånd. Hvis den er lastet ned på forhånd, må den fullføres i Microsoft Dynamics 365 Finance, Enterprise edition er versjonen som må være 7.0.1265.3015 eller senere, men må ikke overskride underordnet versjon 1.   
 20. Klikk på Lagre.
 21. Lukk siden.
 22. Klikk på Endre status.
@@ -136,10 +136,11 @@ Vi skal slette opprettede konfigurasjoner fra systemet og laste dem ned fra LCS 
 25. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
 26. Utvid 'Sample data model' i treet.
     * Legg merke til at modelltilordningskonfigurasjon "Eksempeltilordning" er lastet ned sammen med konfigurasjonen for de valgte dataene. De to filene lastes ned sammen fordi tilordning av eksemplet er definert som implementerer den valgte datamodellen og fordi den er tilgjengelig for programmet. Eksempel på tilordning (alternativ)-konfigurasjonen er ikke lastet ned fordi betingelsen for den nødvendige programversjonen ikke er oppfylt.   
-    * Hvis du logger på Økonomi og drift, registrere samme leverandør, tilgang til samme prosjekt LCS og laste ned den samme konfigurasjonen for data, konfigurasjonen eksempel tilordning (alternativ) lastes ned, mens tilordning av prøve konfigurasjonen vil bli hoppet over.  
+    * Hvis du logger på Finance and Operations, registrerer samme leverandør, får tilgang til samme LCS-prosjekt og laster ned den samme datamodellkonfigurasjonen, vil konfigurasjonen for eksempeltilordning (alternativ) lastes ned, mens tilordningen av konfigurasjonen for eksempeltilordning vil bli hoppet over.  
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Administrere livssyklus til konfigurasjoner for elektronisk rapportering (ER)](../general-electronic-reporting-manage-configuration-lifecycle.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

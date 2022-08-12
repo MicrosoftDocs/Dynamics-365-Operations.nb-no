@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 949fa0df58bc3338c8bc84ecbd4f2ad17117dd12
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865273"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171523"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -48,11 +48,11 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.18
 
-### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations - Warehousing (lagerappen)
+### <a name="supply-chain-management--warehousing-the-warehouse-app"></a><a name="wma"></a>Supply Chain Management - Warehousing (lagerappen)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Fra april 2021 er *Dynamics 365 for Finance and Operations - Warehousing* (lagerappen) avskrevet, og den støttes ikke etter april 2022. Den erstattes nå av *mobilappen Lagerstyring*, som ble lansert sammen med versjon 10.0.17 av Supply Chain Management. Den nye appen er en fullstendig erstatning, men bruker samme underliggende rammeverk, noe som gjør det enkelt å migrere. Om nødvendig kan de to appene brukes side ved side for å hjelpe brukerne med å justere gradvis når de lærer å bruke den nye appen.<br><br>For mer informasjon om den nye mobilappen Lagerstyring kan du se [Mobilappen Lagerstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) og [Installere og koble til mobilappen Lagerstyring](../warehousing/install-configure-warehouse-management-app.md). |
+| **Årsak til avskrivning/fjerning** | Fra april 2021 er *Supply Chain Management - Warehousing* (lagerappen) avskrivet, og den støttes ikke etter april 2022. Den erstattes nå av *mobilappen Lagerstyring*, som ble lansert sammen med versjon 10.0.17 av Supply Chain Management. Den nye appen er en fullstendig erstatning, men bruker samme underliggende rammeverk, noe som gjør det enkelt å migrere. Om nødvendig kan de to appene brukes side ved side for å hjelpe brukerne med å justere gradvis når de lærer å bruke den nye appen.<br><br>For mer informasjon om den nye mobilappen Lagerstyring kan du se [Mobilappen Lagerstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) og [Installere og koble til mobilappen Lagerstyring](../warehousing/install-configure-warehouse-management-app.md). |
 | **Erstattet med en annen funksjon?**   | Ja, erstattet av den nye mobilappen Lagerstyring. |
 | **Berørte produktområder**         | Supply Chain Management - Warehouse-app |
 | **Distribusjonsalternativ**              | Skyen og lokalt |
@@ -98,3 +98,4 @@ Hvis du vil lære mer om funksjoner som er fjernet eller avskrevet i tidligere v
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

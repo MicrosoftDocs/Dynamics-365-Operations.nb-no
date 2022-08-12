@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 2db4c2606936222fcd1a97cf2814fbfbc41df113
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d4f54c06a07b3cdd0b8fe2cc52614189ff31ba7f
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891038"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135607"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Rett opp feil med at planleggingsmotoren ikke finner nok kapasitet
 
@@ -111,5 +111,41 @@ Følg denne fremgangsmåten for å se gjennom tilgjengelig kapasitet på ressurs
 Ved bruk av driftsplanlegging vil hovedplanleggingen planlegge kapasitet i henhold til kalenderen for den primære ressursgruppen. Det bestiller den sekundære operasjonen samtidig som den primære operasjonen, og tar ikke hensyn til kalenderne eller kapasiteten til den sekundære operasjonen. Dette kan føre til at produksjonsordren planlegges i en lukket kalender eller på et tidspunkt da den sekundære operasjonen ikke er tilgjengelig (kalender lukket, ingen kapasitet).
 
 Når jobbplanlegging brukes, vil hovedplanleggingen ta hensyn til kapasiteten og kalenderen for både den primære og den sekundære operasjonen ved planlegging av ordren. For at ordren skal kunne planlegges, må kalendere for ressursene i begge operasjonene være åpne og ha tilgjengelig kapasitet.
+
+## <a name="maximum-job-lead-time-is-too-short"></a>Den maksimale jobbleveringstiden er for kort
+
+Planleggingsmotoren kan ikke planlegge en ordre hvis **Maksimal jobbleveringstid** som er angitt for nettstedet ditt, er mindre enn leveringstiden som er angitt for en vare i standardordreinnstillingene eller dekningsinnstillingene.
+
+Hvis du vil vise eller redigere innstillingen **Maksimal jobbleveringstid** for nettstedet ditt, går du til **Produksjonskontroll \> Oppsett \> Parametere for produksjonskontroll** og åpner **Generelt**-fanen.
+
+Følg denne fremgangsmåten for å vise eller redigere standard ordreinnstillinger for en vare:
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
+1. Finn og velg det relevante produktet i listen.
+1. Åpne fanen **Administrer lager** i handlingsruten, og velg **Standard ordreinnstillinger**.
+1. Utvid hurtigfanen **Lager**, og vis eller rediger innstillingen **Leveringstid for lager** etter behov.
+
+Følg denne fremgangsmåten for å vise eller redigere dekningsinnstillingene for en vare:
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
+1. Finn og velg det relevante produktet i listen.
+1. Åpne Kategorien **Plan** i handlingsruten, og velg **Varedekning**.
+1. Åpne **Leveringstid**-fanen, og vis eller rediger verdien for **Produksjonstid** etter behov.
+
+## <a name="excessive-quantity-of-required-resources"></a>For store mengder ressurser som kreves
+
+Under planlegging prøver motoren å samsvare det nødvendige ressursantallet som er angitt for en ruteoperasjon, med de aktuelle ressursene i henhold til operasjonsressurskravene. Hvis ressursantallet er for høyt, kan det føre til at en rute blir umulig, noe som vil føre til en planleggingsfeil.
+
+Bruk følgende fremgangsmåte til å kontrollere både det angitte antallet og gjeldende ressurser for et valgt produkt, en rute og en ruteoperasjon:
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
+1. Finn og velg det relevante produktet i rutenettet.
+1. Åpne **Utvikle**-fanen, og velg **Rute**.
+1. Finn og velg den relevante ruten i rutenettet.
+1. Åpne **Oversikt**-fanen nederst på siden.
+1. Velg en operasjon fra listen over de valgte ruteoperasjonene.
+1. Velg **Gjeldende ressurser** for å åpne en dialogboks der du kan vise de aktuelle ressursene for den valgte ruteoperasjonen.
+1. Åpne **Ressursbelastning**-fanen. **Antall**-feltet her viser ressursantallet som kreves for den valgte ruteoperasjonen. Vis og/eller rediger det etter behov.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

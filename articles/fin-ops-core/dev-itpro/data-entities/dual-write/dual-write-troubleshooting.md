@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 620f6f999859eff0ccd8aeb1cff12ddd56fa9926
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f263e331d23ce0ddf60a4abc2467513aa342445
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853662"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112372"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
@@ -174,3 +174,4 @@ Det kan hende at støttegruppen må gjennomgå nettverkssporing for å feilsøke
 4. Velg **Lagre** for å eksportere resultatene som HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

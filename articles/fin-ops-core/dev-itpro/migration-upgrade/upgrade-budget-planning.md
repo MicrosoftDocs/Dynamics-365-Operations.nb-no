@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d098aa77b4eb87118692c18ecd1b09a5de2c53d6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d8d59def24fd138b4cf1d36e286b786e13b096e
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890413"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124036"
 ---
 # <a name="upgrade-budget-planning"></a>Oppgradere budsjettplanlegging
 
@@ -30,7 +30,7 @@ Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012
 Budsjettplanlegging i Finance har mange forbedringer som ikke var tilgjengelige i Dynamics AX 2012. Denne artikkelen beskriver endringene som må utføres av kunder som oppgraderer. Det beskriver også de nye funksjonene som må vurderes under oppgraderingen. På grunn av omfanget av endringene, kan ikke eventuelle eksisterende budsjettplaner åpnes før det gjøres endringer som er beskrevet i denne artikkelen. Rapporter skal imidlertid fortsatt fungere og krever ikke flere endringer.
 
 ## <a name="overview-of-changes"></a>Oversikt over endringer
-Mange store endringer er gjort i budsjettering for Finande and Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Finance:
+Mange store endringer er gjort i budsjettering for Finance and Operations. Disse endringene er ment å gjøre budsjettplanleggingen enklere å konfigurere og bruke på nytt, for å redusere årlig vedlikehold og oppsett. Følgende områder i AX 2012 finnes ikke lenger i Finance:
 
 -   Budsjettplanmaler (budsjettplanleggingskonfigurasjon)
 -   Budsjettplanmapper (budsjettplanleggingskonfigurasjon)

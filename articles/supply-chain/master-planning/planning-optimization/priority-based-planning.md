@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 4997ba123f105f683daaa6b29fe8c5ee72cb47cb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8f46a4d4e087a99c00ab7b4eabc74f60043cbf21
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873818"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186491"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbasert planlegging
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management. Funksjonen gir støtte for etterspørselsdrevet planlegging, som er ett trinn i DDMRP (etterspørselsdrevet planlegging av materialkrav). Prioritetsbasert planlegging gjør det mulig for Planleggingsoptimalisering å generere planlagte bestillinger som drives av planleggingsprioriteter i stedet for behovsdatoer.
+Denne artikkelen beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management. Funksjonen gir støtte for etterspørselsdrevet planlegging, som er ett trinn i [DDMRP (etterspørselsdrevet planlegging av materialkrav)](ddmrp-overview.md). Prioritetsbasert planlegging gjør det mulig for Planleggingsoptimalisering å generere planlagte bestillinger som drives av planleggingsprioriteter i stedet for behovsdatoer.
 
 Med prioritetsbasert planlegging kan du prioritere etterfyllingsordrer for å sikre at behovet prioriteres over mindre viktig etterspørsel. En etterfyllingsordre for manko blir for eksempel prioritert over en standard etterfyllingsordre for påfylling. Systemet kan automatisk dele større ordrer i separate mindre ordrer, der ordrelinjer grupperes etter prioritet. Det kan deretter behandle alle ordrer med høy prioritet først.
 

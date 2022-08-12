@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8d9c756d8aaf2e7b2f6593e78fbb645dafee4552
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6d440a0d0d95fe93ed633fa588e1c3a193757d9d
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016166"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070387"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produksjonsparametere i Produksjonsutførelse
 
@@ -71,7 +71,7 @@ For hvert trinn i feltet **Automatisk stykklisteforbruk** kan du velge én av tr
   - Tom (ingen alternativer er valgt.)
   - **Tilgjengelig på lokasjon**
 
-    Hvis **Trekkprinsipp** er valgt i feltet **Automatisk stykklisteforbruk** i **Start**-fanen i produksjonsutførelse, trekkes alt materiale som er satt til **Start** i stykklisten, fra lagerbeholdningen når operasjonen startes. Alternativet **Tilgjengelig på lokasjon** brukes for produkter som er aktivert for avanserte lagerprosesser. Hvis du velger dette trekkprinsippet, tømmes materiale når lagerarbeid for råvareplukking er fullført. Materiale tømmes også når en stykklistelinje som bruker dette trekkprinsippet, er frigitt til lageret og materialet er tilgjengelig på produksjonsinnleveringsstedet.
+    Hvis **Trekkprinsipp** er valgt i feltet **Automatisk stykklisteforbruk** i **Start**-fanen i produksjonsutførelse, trekkes alt materiale som er satt til **Start** i stykklisten, fra lagerbeholdningen når operasjonen startes. Alternativet **Tilgjengelig på lokasjon** brukes for produkter som er aktivert for Warehouse Management-prosesser (WMS). Hvis du velger dette trekkprinsippet, tømmes materiale når lagerarbeid for råvareplukking er fullført. Materiale tømmes også når en stykklistelinje som bruker dette trekkprinsippet, er frigitt til lageret og materialet er tilgjengelig på produksjonsinnleveringsstedet.
 
     > [!NOTE]
     > Hvis feltet **Trekkprinsipp** er satt til **Start** i Produksjonsutførelse, må du velge samme prinsipp på enten fanen **Operasjoner** eller fanen **Rapporter som fullført**. Dette kravet bidrar til å sikre at materialer trekkes fra inventar på stykkliste som bruker **Fullført** som trekkprinsipp på produksjonsordren. Hvis det samme trekkprinsippet ikke velges for verken **Operasjoner**-fanen eller **Ferdigmeld**-fanen, kan materialer bli trukket fra lager to ganger.

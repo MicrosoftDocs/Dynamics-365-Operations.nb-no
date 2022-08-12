@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: e6b9c34ee68a25ac9613a65cf63443751a39c576
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d05403113c9b178553134ce1a9066bb2acf59b0f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868525"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068113"
 ---
 # <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfigurasjon for Finance Insights – versjon 10.0.20 og senere
 
@@ -38,7 +38,7 @@ Finance Insights kombinerer funksjonalitet fra Microsoft Dynamics 365 Finance me
 
 Følg denne fremgangsmåten for å distribuere miljøene.
 
-1. Opprett eller oppdater et Finance-miljø i Microsoft Dynamics Lifecycle Services (LCS). Miljøet krever appversjon 10.0.20 eller nyere av Finance and Operations-apper.
+1. Opprett eller oppdater et Finance-miljø i Microsoft Dynamics Lifecycle Services (LCS). Miljøet krever appversjon 10.0.20 eller nyere av økonomi- og driftsapper.
 2. Miljøet må være et miljø med høy tilgjengelighet i sandkassemodus. (Denne typen miljø kalles også et miljø på lag 2.) Hvis du vil ha mer informasjon, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 3. Hvis du konfigurerer Finance Insights i et sandkassemiljø, må du kanskje kopiere produksjonsdata til dette miljøet for at prediksjoner skal kunne fungere. Prediksjonsmodellen bruker flere år med data til å bygge prediksjoner. Contoso-demodataene inneholder ikke nok historiske data til at prediksjonsmodellen kan læres opp tilstrekkelig. 
 
@@ -126,7 +126,7 @@ Hvis du ikke finner noen av de ovennevnte programmene, kan du prøve følgende t
         - **Ytelse** – Vi anbefaler at du velger **Standard**.
         - **Kontotype** – Du må velge **StorageV2**.
 
-    3. Velg **Aktiver** under funksjonen **Hierarkiske navneområder** for alternativet **Data Lake Storage Gen2** i dialogboksen **Avanserte alternativer**. Hvis du ikke aktiverer denne funksjonen, kan du ikke bruke data som Finance and Operations-apper skriver ved hjelp av tjenester som Power BI-dataflyter.
+    3. Velg **Aktiver** under funksjonen **Hierarkiske navneområder** for alternativet **Data Lake Storage Gen2** i dialogboksen **Avanserte alternativer**. Hvis du ikke aktiverer denne funksjonen, kan du ikke bruke data som økonomi- og driftsapper skriver ved hjelp av tjenester som Power BI-dataflyter.
     4. Velg **Se gjennom og opprett**. Når distribusjonen er fullført, vises den nye ressursen i Azure-portalen.
     5. Gå til lagringskontoen du opprettet.
     6. Velg **Tilgangsnøkler** på menyen til venstre.
@@ -755,3 +755,4 @@ Det kan ta flere minutter å installere tillegget.
 Hvis du er interessert i å gi tilbakemelding eller vil ha kundestøtte, kan du sende en e-postmelding til [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -1,5 +1,5 @@
 ---
-title: Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
+title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.28. august 2022)
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.28.
 author: kamaybac
 ms.date: 05/27/2022
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 2b129481399897337e960ec2d708d69a563b5435
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e17127ff6ef6c52034b8aa5e0c8404772363ca9
+ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902060"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186527"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10028-august-2022"></a>Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.28 (august 2022)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.28. august 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, forhåndsversjon 10.0.28. Denne versjonen har et build-nummer 10.0.1264, og er tilgjengelig på følgende tidsplan:
+Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.28. Denne versjonen har et build-nummer 10.0.1264, og er tilgjengelig på følgende tidsplan:
 
 - **Forhåndsversjon:** mai 2022
 - **Allmenn tilgjengelighet av versjon (selvoppdatering):** Juli 2022
@@ -35,7 +34,7 @@ Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være o
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
 | Lager og logistikk | [Integreringsenheter for landingskostnad for tredjepartsfraktforsendere](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Oversikt over enheter for landingskostnad](../landed-cost/landed-cost-entities-overview.md) | Aktivert som standard |
-| Planlegging | [DDMRP (etterspørselsdrevet planlegging av materialkrav)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Kommer snart | Funksjonsbehandling:<br>*(Forhåndsversjon) DDMRP for planleggingsoptimalisering* |
+| Planlegging | [DDMRP (etterspørselsdrevet planlegging av materialkrav)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Oversikt over etterspørselsdrevet planlegging av materialkrav](../master-planning/planning-optimization/ddmrp-overview.md) | Funksjonsbehandling:<br>*(Forhåndsversjon) DDMRP for planleggingsoptimalisering* |
 | Planlegging | [Støtte i Planleggingsoptimalisering for leveringskapasitet (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Kommer snart | Funksjonsbehandling:<br>*(Forhåndsversjon) CTP for planleggingsoptimalisering* |
 | Planlegging | [Støtte i Planleggingsoptimalisering for holdbarhet](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Kommer snart | Aktivert som standard |
 
@@ -92,3 +91,4 @@ Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i
 For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære kompatible med sandkasse- og produksjonsmiljøer, vil avskrivningstiden være mindre enn 12 måneder. Dette er vanligvis funksjonelle oppdateringer som må gjøres på kompilatoren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

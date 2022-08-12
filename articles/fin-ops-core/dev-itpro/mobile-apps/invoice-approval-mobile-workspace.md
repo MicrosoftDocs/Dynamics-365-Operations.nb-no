@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e9067e33038ee09b8f8cdcc8dd597ab5be9cfe7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4cc05d9fcea129cfb2ed8ed8df4bd4034a1fed4c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868676"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066398"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilt arbeidsområde for fakturagodkjenning
 
@@ -26,7 +26,7 @@ ms.locfileid: "8868676"
 
 Denne artikkelen gir informasjon om det mobile arbeidsområdet for **fakturagodkjenning**. Dette arbeidsområdet gir en liste over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode. 
 
-Dette mobile arbeidsområdet er ment å brukes sammen med Finance and Operations-mobilappen.
+Dette mobile arbeidsområdet er ment å brukes sammen med økonomi- og driftsmobilappen.
 
 ## <a name="overview"></a>Oversikt
 
@@ -61,7 +61,7 @@ Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende foruts
 
 ## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 
-Laste ned og installere Finance and Operations-mobilappen:
+Laste ned og installere økonomi- og driftsmobilappen:
 
 -   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -88,3 +88,4 @@ Laste ned og installere Finance and Operations-mobilappen:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

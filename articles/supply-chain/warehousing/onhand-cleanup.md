@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 7f054f4f479affe8ca2e041c77bd6fd11d51378e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900513"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065157"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Oppryddingsjobb for lagerstyringsposter
 
@@ -26,11 +26,11 @@ ms.locfileid: "8900513"
 
 Ytelsen til spørringer som brukes til å beregne lagerbeholdning, påvirkes av antall poster i tabellene som er involvert. Én måte å forbedre ytelsen på, er ved å redusere antall poster databasen må vurdere.
 
-Denne artikkelen beskriver oppryddingsjobben for lageroppføringer, som sletter unødvendige poster i InventSum- og WHSInventReserve-tabellene. Disse tabellene lagrer beholdningsinformasjon for varer som er aktivert for prosessering av lagerstyring. (Disse varene omtales som WHS-varer.) Sletting av disse postene kan forbedre ytelsen for beholdningsberegninger betraktelig.
+Denne artikkelen beskriver oppryddingsjobben for lageroppføringer, som sletter unødvendige poster i `InventSum`- og `WHSInventReserve`-tabellene. Disse tabellene lagrer beholdningsinformasjon for varer som er aktivert for prosessering av lagerstyring. (Disse varene omtales som WMS-varer.) Sletting av disse postene kan forbedre ytelsen for beholdningsberegninger betraktelig.
 
 ## <a name="what-the-cleanup-job-does"></a>Hva oppryddingsjobben gjør
 
-Oppryddingsjobben for lageroppføringer sletter alle poster i WHSInventReserve- og InventSum-tabellene der alle feltverdiene er *0* (null). Disse oppføringene kan slettes fordi de ikke bidrar til beholdningsinformasjonen. Jobben sletter bare oppføringer som er lavere enn **Lokasjon**-nivået.
+Oppryddingsjobben for lageroppføringer sletter alle poster i `WHSInventReserve`- og `InventSum`-tabellene der alle feltverdiene er *0* (null). Disse oppføringene kan slettes fordi de ikke bidrar til beholdningsinformasjonen. Jobben sletter bare oppføringer som er lavere enn **Lokasjon**-nivået.
 
 Hvis negativ fysisk beholdning er tillatt, kan det hende at oppryddingsjobben ikke kan slette alle de aktuelle postene. Årsaken til denne begrensningen er at jobben må tillate et bestemt scenario der et nummerskilt har flere serienumre, hvorav ett av disse serienumrene har blitt negativt. Systemet vil for eksempel ikke ha en beholdning på null når et nummerskilt har mer enn 1 stk med serienummer 1 og mindre enn 1 stk av serienummer 2. I dette spesielle scenariet brukes jobben en "breddesletting" der den prøver å slette fra lavere nivåer først.
 

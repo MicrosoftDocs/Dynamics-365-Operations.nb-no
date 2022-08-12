@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: be6ef12f34e85b90c24c43c6e55ad169c271810a
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 4e3da8ab9a739c8455d2c1d2720f94f91a42927d
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9016630"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111608"
 ---
 # <a name="maintenance-forecasts"></a>Vedlikeholdsprognoser
 
@@ -107,7 +107,7 @@ Illustrasjonen nedenfor viser et eksempel på siden **Prognose for vedlikehold a
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatisk oppdatering av arbeidsordreprognoser
 
-Hvis timekostnader, varekost og utgifter oppdateres i andre moduler i Microsoft Dynamics 365 for Finance and Operations, kan arbeidsordreprognoser i Aktivastyring oppdateres automatisk for å reflektere disse endringene. Denne funksjonaliteten garanterer at de siste kostprisene alltid brukes i arbeidsordreprognosene. Du kan også gjøre lignende oppdateringer for [vedlikeholdsjobbtypeprognoser](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+Hvis timekostnader, varekost og utgifter oppdateres i andre moduler, kan arbeidsordreprognoser i Aktivastyring oppdateres automatisk for å reflektere disse endringene. Denne funksjonaliteten garanterer at de siste kostprisene alltid brukes i arbeidsordreprognosene. Du kan også gjøre lignende oppdateringer for [vedlikeholdsjobbtypeprognoser](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Velg **Aktivastyring** > **Periodisk** > **Prognose** > **Oppdater arbeidsordreprognose**.
 

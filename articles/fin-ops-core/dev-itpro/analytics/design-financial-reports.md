@@ -6,23 +6,24 @@ ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: FinancialReportingSetup
 audience: Application User
-ms.reviewer: kfend
-ms.custom: 10814
-ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.custom:
+- "10814"
+ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
+ms.search.form: FinancialReportingSetup
+ms.openlocfilehash: 77756b9f32268b091361e1e69be05a11eac19846
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724449"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205672"
 ---
-# <a name="view-and-design-financial-reports"></a>Vise og utforme finansrapporter
+# <a name="view-and-design-financial-reports"></a>Vis og utform finansrapporter
 
 [!include [banner](../includes/banner.md)]
 
@@ -194,7 +195,7 @@ I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-r
 
 [Vis finansrapporter](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics 365 Finance-blogg](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+[Dynamics 365 Finance-bloggen](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

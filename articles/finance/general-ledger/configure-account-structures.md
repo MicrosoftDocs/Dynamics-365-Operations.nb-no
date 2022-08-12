@@ -2,7 +2,7 @@
 title: Konfigurer kontostrukturer
 description: Denne artikkelen gir informasjon om kontostrukturer og finansdimensjoner.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0a3febf8d269caec847ad879f60ac042e5fec9e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f816f0fc894b902c444a3113abfd48d4146d485
+ms.sourcegitcommit: e59990780830ac8e3382fea5df851abe86fbf496
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907987"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9141286"
 ---
 # <a name="configure-account-structures"></a>Konfigurer kontostrukturer
 
@@ -91,6 +91,8 @@ For å fortsette å legge til flere vilkår, klikk på **Duplikat i segmentet** 
 Når du definerer kontostrukturer, finnes det noen gode fremgangsmåter du kan følge. Dette er imidlertid bare veiledning, så en helhetlig diskusjon om virksomheten, plan for vekst og vedlikeholdsplan må betraktes som en del av diskusjonen.
 
 - Gjør hovedkontoen til første eller så nær begynnelsen av kontostrukturen som mulig, slik at brukere får den best veiledede opplevelsen de kan, under kontooppføringen.
+  
+  - Kontroller at alle tredjepartsløsninger du har til hensikt å bruke, støtter hovedkonto i første posisjon.
 
 - Bruk kontostrukturer på nytt i så stor grad som mulig for å redusere vedlikehold på tvers av juridiske enheter.
 

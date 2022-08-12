@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2bdb2ca0067ea430b249ac619a38c8bcec75f2f7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: cd5d2cf112a9d2ccdf6226ee79f0ff488d51066b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895822"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066678"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurer Inventory Visibility
 
@@ -55,7 +55,7 @@ Tillegget for lagersynlighet legger til flere nye funksjoner i Power Apps instal
 | *OnHandMostSpecificBackgroundService* | Denne funksjonen gir et lagersammendrag for produkter, sammen med alle dimensjoner. Lagersammendragsdataene synkroniseres periodisk fra Lagersynlighet. For mer informasjon, se [Lagersammendrag](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | Denne valgfrie funksjonen aktiverer endringsplanen for lagerbeholdning og er tilgjengelig ATP-funksjoner (tilgjengelig for ordre). Hvis du vil ha mer informasjon, kan du se [Tidsplan for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md). |
 | *Tilordning* | Ved hjelp av denne valgfrie funksjonen kan lagersynlighet gi mulighet for lagerbeskyttelse (ringorganisering) og oversalgskontroll. Hvis du vil ha mer informasjon, kan du se [Lagertildeling for lagersynlighet](inventory-visibility-allocation.md). |
-| *Aktiver lagervarer i lagersynlighet* | Denne valgfrie funksjonen gjør det mulig for Lagersynlighet å støtte varer som er aktivert for avanserte lagerprosesser (WHS-varer). Hvis du vil ha mer informasjon, kan du se [Støtte i Lagersynlighet for WHS-varer](inventory-visibility-whs-support.md). |
+| *Aktiver lagervarer i lagersynlighet* | Denne valgfrie funksjonen gjør det mulig for Lagersynlighet å støtte varer som er aktivert for Warehouse Management-prosesser (WMS). Hvis du vil ha mer informasjon, kan du se [Støtte i Lagersynlighet for WMS-varer](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finn endepunkt for tjeneste
 
@@ -809,3 +809,4 @@ Følgende tabell viser standard reservasjonshierarki.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

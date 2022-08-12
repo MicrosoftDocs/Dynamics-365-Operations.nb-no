@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ad64c19fe088ec85fafba4a3276a4d8c23a18c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9b0b53da17bd106be60966d856d29d81a1e57f91
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852367"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065525"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Problemløserstrategi for produktkonfigurasjon
 
@@ -29,7 +29,7 @@ ms.locfileid: "8852367"
 
 Denne artikkelen beskriver hvordan du kan bruke problemløserstrategien til å forbedre ytelsen til produktkonfigurasjon.
 
-Konseptet med problemløserstrategier ble først innført i Kumulativ oppdatering 7 (CU7) for Microsoft Dynamics AX 2012 R2. Det ble utvidet i Kumulativ oppdatering 8 (CU8) for Microsoft Dynamics AX 2012 R3 og Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.
+Konseptet med problemløserstrategier ble først innført i Kumulativ oppdatering 7 (CU7) for Microsoft Dynamics AX 2012 R2. Det ble utvidet i Kumulativ oppdatering 8 (CU8) for Microsoft Dynamics AX 2012 R3 og økonomi- og driftsapper, Enterprise edition 7.3.
 
 Problemløserstrategikonseptet består nå av følgende strategier:
 

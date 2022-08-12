@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: f523680f3d71ffd75c6cd2df284d2fd3610cef96
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a420c5b2a036ac63a1a179f93462d152c3941fda
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853624"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124232"
 ---
 # <a name="create-alert-rules"></a>Opprette varselregler
 
@@ -75,7 +75,7 @@ I hurtigfanen **Varsle meg med** i dialogboksen **Opprett varslingsregel** kan d
 
 ## <a name="alerts-as-business-events"></a>Varsler som forretningshendelser
 
-Du kan sende varsler eksternt ved hjelp av rammeverket for forretningshendelser. Når du oppretter et varsel, setter du **Hele organisasjonen** til **Nei** og **Send eksternt** til **Ja**. Når du har utløst varselet om forretningshendelsen, kan du utløse en flyt som er bygd i Power Automate ved hjelp av utløseren **Når en forretningshendelse oppstår** i Økonomi og drift-koblingen, eller eksplisitt sende hendelsen til et sluttpunkt for forretningshendelser via **forretningshendelseskatalogen**.
+Du kan sende varsler eksternt ved hjelp av rammeverket for forretningshendelser. Når du oppretter et varsel, setter du **Hele organisasjonen** til **Nei** og **Send eksternt** til **Ja**. Når du har utløst varselet om forretningshendelsen, kan du utløse en flyt som er bygd i Power Automate ved hjelp av utløseren **Når en forretningshendelse oppstår** i økonomi og driftskoblingen, eller eksplisitt sende hendelsen til et sluttpunkt for forretningshendelser via **forretningshendelseskatalogen**.
 
 ## <a name="create-an-alert-rule"></a>Opprett en varslingsregel
 

@@ -2,19 +2,19 @@
 title: Feilsøk problemer under førstegangssynkronisering
 description: Denne artikkelen inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer som kan oppstå under første synkronisering.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: bb3db4c651aaac521974d92753be5a8219bfe1ea
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8fb27a6af2962be31288a3d2260110e5fe6a201
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892364"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112090"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøk problemer under førstegangssynkronisering
 
@@ -235,4 +235,13 @@ Vi jobber med en løsning for å fjerne partstypeutvalget for økonomi- og drift
 
 Hvis du har kjørt den innledende synkroniseringen for **Kunde**-data og **Kunde**-tilordninger kjører, og du deretter kjører den innledende synkroniseringen for **Kontakter**-data, kan det oppstå ytelsesproblemer under innsettinger og oppdateringer i tabellene **LogisticsPostalAddress** og **LogisticsElectronicAddress** for **Kontakt**-adresser. De samme tabellene for globale postadresser og elektroniske adresser spores for **CustCustomerV3Entity** og **VendVendorV2Entity**, og dobbel skriving prøver å bygge flere spørringer for å skrive data på den andre siden. Hvis du allerede har kjørt den innledende synkroniseringen for **Kunde**, må du stoppe den tilsvarende tilordningen når du kjører innledende synkronisering for **Kontakter**-data. Gjør det samme for **Leverandør**-dataene. Når den innledende synkroniseringen er fullført, kan du kjøre alle tilordningene ved å hoppe over den innledende synkroniseringen.
 
+## <a name="float-data-type-that-has-a-zero-value-cant-be-synchronized"></a>Flytdatatype som har en nullverdi, kan ikke synkroniseres
+
+Innledende synkronisering kan mislykkes for poster som har nullverdi for et prisfelt, for eksempel **Fast betalingsbeløp** eller **Beløp** i transaksjonsvalutaen. I slike tilfeller får du en feilmelding som ligner på følgende eksempel:
+
+*Det oppstod en feil under validering av inndataparametere Microsoft.OData.ODataException: Kan ikke konvertere litteralen '000000' til den forventede type'Edm.Decimal',...*
+
+Problemet er med verdien **Nasjonal innstilling for språk** under **Kildedataformater** i **Databehandling**-modulen. Endre verdien i feltet for **Nasjonal innstilling for språk** til **en-us**, og prøv på nytt.
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

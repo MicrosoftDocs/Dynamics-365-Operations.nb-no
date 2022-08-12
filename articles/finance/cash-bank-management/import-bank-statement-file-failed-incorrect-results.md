@@ -1,7 +1,7 @@
 ---
 title: Feilsøking for import av bankkontoutdragsfil
 description: Denne artikkelen forklarer hvordan du løser problemer som forårsakes av små forskjeller i bankkontoutdragsfilen.
-author: panolte
+author: angelad116
 ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
@@ -12,19 +12,22 @@ ms.reviewer: kfend
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 422b2df6c4de3a948b0e62bfb70f99b12e04a8f9
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 44658ea48b9f7dae76c34c5f3d8828c9e8c4ac32
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8711180"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151768"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Feilsøking for import av bankkontoutdragsfil
 
 [!include [banner](../includes/banner.md)]
+
+>[!NOTE]
+>Denne funksjonaliteten blir avskrevet i september 2022, og nye brukere må bruke elektronisk rapportering.
 
 Det er viktig at bankkontoutdragsfilen fra banken stemmer overens med oppsettet som Microsoft Dynamics 365 Finance støtter. På grunn av strenge standarder for bankkontoutdrag vil de fleste integreringer fungere riktig. Noen ganger kan imidlertid ikke utdragsfilen importeres eller har feil resultater. Disse problemene forårsakes vanligvis av små forskjeller i bankkontoutdragsfilen. Denne artikkelen forklarer hvordan disse forskjellene kan korrigeres og problemene løses.
 
@@ -109,3 +112,4 @@ Tabellen nedenfor inneholder eksempler på definisjonene av tekniske oppsett for
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

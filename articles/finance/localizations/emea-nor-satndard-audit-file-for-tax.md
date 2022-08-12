@@ -3,7 +3,7 @@ title: Standard revisjonsfil for avgift (SAF-T) for Norge
 description: Denne artikkelen forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
 author: liza-golub
 ms.author: elgolu
-ms.date: 03/21/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7299f73527f07ea0e7de026191d491f88d97674c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1d12315a1fca4a1dca3cf9ee63c33b3dfc3500a3
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856557"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067414"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -66,6 +66,11 @@ Importer de nyeste versjonene av konfigurasjonene. Versjonsbeskrivelsen innehold
 
 ![Feltet Standard revisjonsfil for avgift (SAF-T) på siden parametere for økonomimodul.](media/nor-saf-gl-parameters.jpg)
 
+> [!NOTE]
+> Hvis du aktiverer funksjonen [**Standard revisjonsfil for avgift – elektronisk rapport**](../general-ledger/standard-audit-file.md) i arbeidsområdet **Funksjonsbehandling**, vil fanen **Standard revisjonsfil for avgift (SAF-T)** på siden **Parametere for økonomimodul** inkludere avmerkingsboksen **Bruk felles menyelement** i tillegg til feltet **Standard revisjonsfil for avgift (SAF-T)**.
+>
+> Hvis du vil kjøre ER-konfigurasjonen **SAF-T-format (NO)**, må du *fjerne* merket for **Bruk felles menyelement**. Merk av for **Bruk felles menyelement** kun hvis du planlegger å bruke en ER-konfigurasjon som kan kjøres direkte fra arbeidsområdet **Elektronisk rapportering**, og som ikke krever noen forhåndsbehandling av data i økonomiappen.
+
 ### <a name="associate-sales-tax-codes-with-norwegian-standard-value-added-tax-vat-tax-codes"></a><a name="sales"></a>Knytt mva-koder til norske standard mva-koder for merverdiavgift (mva)
 
 Som dokumentasjonen forklarer, må mva-koder i norsk SAF-T Financial-data som brukes i Finance, være knyttet til norske standard mva-koder (\<StandardTaxCode\>) for SAF-T-rapportering. Norske standard mva-koder er tilgjengelige på <https://github.com/Skatteetaten/saf-t>.
@@ -94,7 +99,7 @@ Fra og med **versjon 54.61** støtter det elektroniske rapporteringsformatet **S
 Hvis du vil knytte **Hovedkontoer** som brukes i Finans, til norske standardkontoer via **Applikasjonsspesifikke parametere**, følger du trinnene nedenfor:
 
 1. Åpne **Elektronisk rapportering**-arbeidsområdet, gå til konfigurasjonstreet og velg det elektroniske rapporteringsformatet **SAF-T-format (NO)**. 
-2. Kontroller at selskapet du arbeider med, er selskapet du vil definere **Applikasjonsspesifikke parametere** for.
+2. Kontroller at selskapet du arbeider i, er selskapet du vil definere **Programspesifikke parametere** for.
 3. På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
 4. Velg versjonen av formatet som du vil bruke på venstre side av siden **Applikasjonsspesifikke parametere**.
 5. I **Oppslag**-hurtigfanen velger du **StandardMainAccount_Lookup** og spesifiserer deretter kriteriene på **Betingelser**-hurtigfanen ved å legge til linjer for hver **Resultat**-verdi som må brukes i det valgte selskapet. Hvis flere **Hovedkontoer** i det valgte selskapet må resultere i samme **Standardkonto**, legger du til en separat linje for hver **Hovedkonto** og spesifiserer samme **Standardkonto** for hver.
@@ -115,6 +120,7 @@ Du kan enkelt eksportere oppsettet av applikasjonsspesifikke parametere fra én 
 
     - **Optimalisering av opprettelsestid for spørringsdatakilde under kjøring av ER-rapporter**
     - **Optimaliser forbruk av datasettminne i kjøretid for ER-rapporter**
+    - **Optimalisering av verdisamling for dimensjonsattributter i rapportseksjonen MasterFiles i SAF-T for Norge**
 
 3. Velg **Aktiver nå**.
 

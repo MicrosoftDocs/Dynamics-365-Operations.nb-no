@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 23805a88fab34d925241c51ae449bd81e15d5337
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 3948fff15108568df514406ad443d4f538653e62
+ms.sourcegitcommit: 1af2b01aea6b5a4d88ee3fae6faa0eaf1976c5dd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027289"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "9146492"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -271,7 +271,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 1218 | Bruk opplåsing for ekstern enhet                           | Systemet bruker denne operasjonen internt for å låse opp POS-enheter.                                                                                                                                           | Gjelder ikke her | Gjelder ikke her     | Gjelder ikke her | Gjelder ikke her    | Nei              |
 | 1219 | Åpne nettadresse på salgssted                                   | Åpne en administratorkonfigurert nettadresse i POS.                                                                                                                                                                           | Ja            | Ja                | Ja            | Ja               | Nei              |
 | 1220 | Behandle safe                                       | Behandle safen for ulike kasser.                                                                                                                                                                       | Ja            | Ja                | Ja            | Ja               | Nei              |
-| 1221 | Annuller suspenderte transaksjoner                       | Annuller suspenderte transaksjoner.                                                                                                                                                                               | Ja            | Ja                | Ja            | Ja               | Nei              |
+| 1221 | Annuller suspenderte transaksjoner                       | Annuller suspenderte transaksjoner.                                                                                                                                                                               | Ja            | Nei                | Nei            | Ja               | Nei              |
 | 1300 | Hopp over bilagsregistrering                          | Hopp over bilagsregistrering.                                                                                                                                                                                       | Nei            | Nei                | Nei            | Ja               | Nei             |
 | 1301 | Merk regnskapshendelse som registrert                      |  Merk regnskapshendelse som registrert.                                                                                                                                                                                  | Nei            | Nei                | Nei            | Ja               | Nei             |
 | 1302 | Fullfør bilagsregistreringsprosess              | Fullfør bilagsregistreringsprosessen.                                                                                                                                                                           | Nei            | Nei                | Ja            | Ja               | Ja             |

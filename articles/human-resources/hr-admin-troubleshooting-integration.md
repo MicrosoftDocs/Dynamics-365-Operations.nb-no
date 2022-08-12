@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f150c87b6d4e6575bc61a8f36bdf344ebba9c571
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f57e995dfcc04de8384d15f238c45290b3c3cbd
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879286"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067624"
 ---
 # <a name="integration-with-finance-faq"></a>Vanlige spørsmål om integrasjon med Finance
 
@@ -88,7 +88,7 @@ Det kreves ingen spesielle oppsett for unntaksbehandling. Dataintegratoren finne
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kan jeg konfigurere toveis integrasjon?
 
-Nei, integrasjon er énveis (fra Human Resources til økonomi og drift). Det finnes imidlertid en standardmal som er tilgjengelig for å sende data fra Human Resources til Finance.
+Nei, integrasjon er énveis (fra Human Resources til Finance and Operations). Det finnes imidlertid en standardmal som er tilgjengelig for å sende data fra Human Resources til Finance.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kan jeg tillate sletting av oppføringer som en del av min integrasjon?
 
@@ -184,3 +184,4 @@ Oppdater dataenhetene i Finance ved å gå til **Databehandling \> Rammeverkpara
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

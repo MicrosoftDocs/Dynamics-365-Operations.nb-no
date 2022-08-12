@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2022-05-03
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: 467839b1d0ca6788a92ae60d46686374d0a58046
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a1d86e7e9cca159d0a820680714a08dc73c0688
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850851"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068401"
 ---
 # <a name="inventory-costing-faq"></a>Vanlige spørsmål om lageretterkalkulering
 
@@ -112,11 +112,11 @@ Nei, du kan ikke aktivere alternativet **Økonomisk lager** for **Lokasjon**-dim
 
 ### <a name="should-i-enable-the-use-warehouse-management-processes-option-for-the-storage-dimension-group"></a>Skal jeg aktivere prosessalternativet Bruk lagerstyringsprosesser for lagringsdimensjonsgruppen?
 
-Hvis du tror at du kanskje vil bruke de avanserte lagerstyringsfunksjonene i fremtiden, bør du aktivere alternativet **Bruk lagerstyringsprosesser**. Når du har lagret en lagringsdimensjonsgruppe, kan du ikke lenger endre innstillingen for **Bruk lagerstyringsprosesser** for den. Hvis du bestemmer deg for å bruke lagerstyringsprosesser senere, må du opprette et nytt lager der alternativet er aktivert. Det finnes ingen automatisert prosess som du kan bruke til å flytte alt lageret fra ett lager til et annet lager, eller til å kopiere tilknyttede konfigurasjoner til et nytt lager.
+Hvis du tror at du kanskje vil bruke warehouse management-prosessene (WMS) i fremtiden, bør du aktivere alternativet **Bruk Warehouse Management-prosesser**. Når du har lagret en lagringsdimensjonsgruppe, kan du ikke lenger endre innstillingen for **Bruk lagerstyringsprosesser** for den. Hvis du bestemmer deg for å bruke lagerstyringsprosesser senere, må du opprette et nytt lager der alternativet er aktivert. Det finnes ingen automatisert prosess som du kan bruke til å flytte alt lageret fra ett lager til et annet lager, eller til å kopiere tilknyttede konfigurasjoner til et nytt lager.
 
-### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-advanced-warehousing"></a>Kan jeg aktivere Bruk lagerstyringsprosesser for lagringsdimensjonsgruppen selv om jeg ikke planlegger å bruke avanserte lageraktiviteter?
+### <a name="can-i-enable-the-use-warehouse-management-processes-for-the-storage-dimension-group-even-if-im-not-planning-to-use-warehouse-management-processes-wms"></a>Kan jeg aktivere Bruk Warehouse Management-prosesser for lagringsdimensjonsgruppen selv om jeg ikke planlegger å bruke Warehouse Management-prosesser?
 
-Ja, selv om du ikke planlegger å bruke de avanserte lagerstyringsfunksjonene, kan du aktivere alternativet **Bruk lagerstyringsprosesser** for lagringsdimensjonsgruppen. For å opprette og behandle transaksjoner må du fullføre minimumskonfigurasjonen, for eksempel reserveringshierarkier og enhetssekvensgrupper. Innstillingene for avanserte lageraktiviteter ignoreres imidlertid vanligvis når du behandler plukklister, følgesedler og mottakssedler manuelt (for eksempel på salgsordre- og bestillingssidene).
+Ja, selv om du ikke planlegger å bruke Warehouse Management-prosessene (WMS), kan du aktivere alternativet **Bruk Warehouse Management-prosesser** for lagringsdimensjonsgruppen. For å opprette og behandle transaksjoner må du fullføre minimumskonfigurasjonen, for eksempel reserveringshierarkier og enhetssekvensgrupper. Innstillingene for WMS ignoreres imidlertid vanligvis når du behandler plukklister, følgesedler og mottakssedler manuelt (for eksempel på salgsordre- og bestillingssidene).
 
 ### <a name="when-should-i-enable-the-physical-inventory-option-for-a-storage-or-tracking-dimension-group"></a>Når bør jeg aktivere alternativet Fysisk beholdning for en lagrings- eller sporingsdimensjonsgruppe?
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2a64cba837faf84f3e8470a9831d1641213a5cc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e02cd80a3b7692f496fc70e50b812fae358103bc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909619"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067859"
 ---
 # <a name="warehouse-parameters-for-wave-processing"></a>Lagerparametere for bølgebehandling
 
@@ -52,7 +52,7 @@ Hvis du vil konfigurere lagerstyringparametere for bølgebehandling, gjør du f�
 > [!NOTE]
 > I bølgemalen som brukes til å behandle bølgen, kan du angi innstillingene som automatiserer bølgebehandlingen. Hvis du konfigurerer en tidsplan for den satsvise jobben, bør du koordinere tiden med innstillingene for automatisering i bølgemalen. Hvis du vil ha mer informasjon, kan du se [Opprette en bølgemal](wave-templates.md).
 >
-> Hvis du bruker *Transportstyring* og *Avansert lagerstyring*, kan du angi om du vil konsolidere laster når du behandler en bølge. Dette er for eksempel nyttig når flere små laster kan sendes samtidig. Hvis du vil konsolidere laster når du behandler en bølge, går du til **Laster**-fanen og merker av for **Konsolider laster under bølgebehandling**.</P>
+> Hvis du bruker *Transportstyring* og *Warehouse Management-prosesser (WMS)*, kan du angi om du vil konsolidere laster når du behandler en bølge. Dette er for eksempel nyttig når flere små laster kan sendes samtidig. Hvis du vil konsolidere laster når du behandler en bølge, går du til **Laster**-fanen og merker av for **Konsolider laster under bølgebehandling**.</P>
 
 ## <a name="set-up-full-or-partial-reservation-for-production-waves"></a>Angi fullstendig eller delvis reservasjon for produksjonsbølger
 

@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ebb14dad723fad5b17b4dfca153bf153e77bbd4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882091"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111208"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøk problemer under førstegangsinstallasjon
 
@@ -89,3 +89,4 @@ Det er to ting som kan forårsake et problem der miljøet ikke kan oppdages:
 + Det er noen eldre økonomi- og driftsforekomster som ble driftet av Microsoft, og som hadde et problem med oppdagelse. Du kan løse dette ved å oppdatere økonomi- og driftsforekomsten. Miljøet skal kunne oppdages etter enhver oppdatering.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

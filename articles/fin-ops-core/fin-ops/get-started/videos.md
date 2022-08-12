@@ -1,6 +1,6 @@
 ---
 title: Videoer
-description: Denne siden viser Microsoft-opprettede videoer om fremgangsmåte og teknisk foredrag i forbindelse med Finance and Operations-apper som er tilgjengelige på YouTube og andre områder.
+description: Denne siden viser Microsoft-opprettede videoer om fremgangsmåte og teknisk foredrag i forbindelse med økonomi- og driftsapper som er tilgjengelige på YouTube og andre områder.
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 76fe61c13490afbd7b5dcd39f3c631cbab43bb9e
-ms.sourcegitcommit: 0686b56b4699ffefd2c208d0fe496d5860296520
+ms.openlocfilehash: a21a9122badc308940c0182061a18051bfcc0abd
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8958145"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124962"
 ---
 # <a name="videos"></a>Videoer 
 
 [!include [banner](../includes/banner.md)]
 
-På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) kan du finne videoer som er opprettet av Microsoft, som viser en rekke forretningsløsninger for Dynamics 365-produkter. Denne delen viser videoer om fremgangsmåte for Finance and Operations-apper som er tilgjengelige på kanalen.
+På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) kan du finne videoer som er opprettet av Microsoft, som viser en rekke forretningsløsninger for Dynamics 365-produkter. Denne delen viser videoer om fremgangsmåte for økonomi- og driftsapper som er tilgjengelige på kanalen.
 
 > [!Note]
 > Noen av de oppførte videoene er publisert under et tidligere produktnavn, men de gjelder fremdeles.
@@ -34,7 +34,7 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 ### <a name="data-integration"></a>Dataintegrering
 
-- [Synkronisere en arbeidsordre mellom Dynamics 365 for Field Service og Finance and Operations-apper](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synkronisere en arbeidsordre mellom Dynamics 365 for Field Service og økonomi- og driftsapper](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Databehandling
 
@@ -50,8 +50,8 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 ### <a name="intelligence"></a>Intelligens
 
 - [Redigere en innebygd rapport i et analytisk arbeidsområde](https://youtu.be/_8WlwmSggcQ)
-- [Bygge inn PowerBI.com-rapporter i Finance and Operations-apper](https://youtu.be/gGWuNJDoi-M)
-- [Legg inn din egen database (BYOD) i Finance and Operations-apper](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Bygge inn PowerBI.com-rapporter i økonomi- og driftsapper](https://youtu.be/gGWuNJDoi-M)
+- [Legg inn din egen database (BYOD) i økonomi- og driftsapper](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Slik bruker du Power BI-innhold for kostnadsstyring i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -169,3 +169,4 @@ På [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJ
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

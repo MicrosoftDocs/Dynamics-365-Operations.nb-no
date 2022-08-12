@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 93d25a260cfc94e898ef50c618b2cbc640c963bc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
+ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876332"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "9129520"
 ---
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
@@ -90,6 +90,14 @@ Du kan konfigurere delingen av salgsordrekundefakturaer etter område eller leve
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Poster til inntektskonto for salgsordrefakturalinjer som ikke har en pris og ingen kostnad
 Du kan oppdatere **Inntekt**-kontoen i **Økonomimodul** for salgsordrelinjer som ikke har noen pris og ingen kostnad. Hvis du vil definere eller vise denne informasjonen, kan du gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris og nullkostnad** på fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris og ingen kosntad. Hvis du velger dette alternativet, vil bilaget inneholde 0,00 oppføringstypene **Kundesaldo** og **Inntekt**. En inntektskonto er definert på parametersiden **Lagerpostering** i fanen for definisjon av **Salgsordre**-kontoen. Hvis dette alternativet ikke velges, posteres ikke linjer som har pris- eller kostnadsinformasjon, til **Inntekt**-kontoen. I stedet vil bilaget inneholde en oppføring på 0,00 for posteringstypen **Kundesaldo**.
+
+## <a name="line-creation-sequence-number-information"></a>Informasjon om sekvensnummer for linjeoppretting
+Når du posterer kundefakturalinjer, har du muligheten til å opprette sekvensielle linjeopprettingsserienumre. Linjeopprettingssekvensnumre tilordnes under posteringsprosessen. Ved å tillate ikke-sekvensiell nummerering kan du få hjelp til å forbedre ytelsen til kundefakturapostering. Linjeopprettingsserienumre kan brukes av tredjepartsintegrering som forventer sekvensiell bestilling. Forhør deg med IT-avdelingen om eventuelle utvidelser som kan integreres med sekvensnumre for linjeoppretting.
+
+Hvis du vil definere eller vise denne informasjonen, går du til siden **Parametere for kundereskontro**, **Oppdateringer**-fanen, og angir alternativet **Tildel sekvensielle linjenumre ved postering av kundefakturalinjer**:
+
+- Sett alternativet til **Nei** hvis du vil bruke ikke-sekvensiell nummerering for serienumre for linjeoppretting.
+- Sett alternativet til **Ja** for å bruke sekvensiell nummerering. Du må velge **Ja** for juridiske enheter som har hovedadresse i Italia. Du må også sette det til **Ja** hvis testversjonen **CustInvoiceTransRandLineCreationSeqNumFlight** er deaktivert.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Tilleggsinnstillinger som endrer posteringsvirkemåten
 Følgende felt endrer virkemåten for posteringsprosessen.

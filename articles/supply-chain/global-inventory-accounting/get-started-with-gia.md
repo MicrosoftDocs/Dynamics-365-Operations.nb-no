@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cbe6bff6fab96900b8bd4e112a8858363fff86d1
-ms.sourcegitcommit: 9870b773a2ea8f5675651199fdbc63ca7a1b4453
+ms.openlocfilehash: 463a66002ec7a6536c9ff829f9ea2c3734138eae
+ms.sourcegitcommit: 6221a25f81aa83ab335de7cb6b6c3014dbec0116
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9013562"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "9177156"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Komme i gang med Globalt lagerregnskap
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Ved hjelp av Globalt lagerregnskap kan du utføre flere lagerregnskap i Globalt lagerregnskap-finanskontoer du har definert. Du må knytte hver finanskonto for Globalt lagerregnskap til en *konvensjon*. En konvensjon er en samling av følgende typer regnskapspolicyer:
 
@@ -69,28 +67,34 @@ Før du kan aktivere tilleggfunksjonalitet, må du integrere med Microsoft Power
 
 Hvis du vil ha mer informasjon, kan du se [Konfigurere etter miljødistribusjon](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install-the-add-in"></a><a name="install"></a>Installer tillegget
+## <a name="install-or-update-the-add-in-and-solution"></a><a name="install"></a>Installer eller oppdater tillegget og løsningen
 
-Følg denne fremgangsmåten for å installere tillegget, slik at du kan bruke Globalt lagerregnskap.
+Bruk fremgangsmåten nedenfor til å installere eller oppdatere tillegget og løsningen for globalt lagerregnskap. Delen av fremgangsmåten du bør følge, avhenger av om du installerer for første gang, eller bare trenger å oppdatere løsningen for en eksisterende installasjon.
+
+- Hvis du aldri har installert tilleggsprogrammet før, følger du fremgangsmåten nedenfor for å installere både tilleggsprogrammet og løsningen.
+- Hvis du allerede bruker globalt lagerregnskap, men må oppdatere løsningen i [Power Platform-administrasjonssenteret](https://admin.powerplatform.microsoft.com), utfører du bare trinn 6 og hopper over alle de andre trinnene.
+
+Slik installerer eller oppdaterer du tilleggsprogrammet og løsningen:
 
 1. Logg på [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Åpne LCS-miljøet der du vil legge til tjenesten.
 1. Gå til **Detaljerte opplysninger**.
-1. Gå til **Power Platform-integreringen**, og velg **Oppsett**.
+1. Gå til **Power Platform-integrering**, og velg **Oppsett**.
 1. Merk av for avmerkingsboksen i dialogboksen for **Oppsett av Power Platform-miljø**, og velg deretter **Oppsett**. Vanligvis tar oppsettet mellom 60 og 90 minutter.
-1. Når konfigurasjonen av Microsoft Power Platform-miljøet er fullført, kan du logge deg på [administrasjonssenteret for Power Platform](https://admin.powerplatform.microsoft.com) og deretter installere tilleggsprogrammet Globalt lagerregnskap ved å gjøre følgende:
-   1. Velg miljøet der du vil installere tilleggsprogrammet.
+1. Når konfigurasjonen av Microsoft Power Platform-miljøet er fullført, kan du logge deg på [administrasjonssenteret for Power Platform](https://admin.powerplatform.microsoft.com) og deretter installere eller oppdatere løsningen for globalt lagerregnskap ved å gjøre følgende:
+   1. Velg miljøet der du vil installere eller oppdatere løsningen.
    1. Velg **Dynamics 365-apper**.
    1. Velg **Installer app**.
    1. Velg **Dynamics 365 Global Inventory Accounting**.
    1. Velg **Neste** for å installere.
-1. Gå tilbake til LCS-miljøet. I hurtigfanen **Miljøtillegg** velger du **Installer et nytt tillegg**.
+1. Når løsningen er fullstendig installert, kan du gå tilbake til LCS-miljøet. I hurtigfanen **Miljøtillegg** velger du **Installer et nytt tillegg**.
 1. Velg **Globalt lagerregnskap**.
 1. Følg installasjonsveiledningen, og godta vilkårene.
 1. Velg **Installer**.
 1. I hurtigfanen **Miljøtillegg** skal du se at Globalt lagerrenskap blir installert. Etter noen minutter skal statusen endres fra *Installerer* til *Installert*. (Det kan hende du må oppdatere siden for å se denne endringen.) På dette tidspunktet er Globalt lagerregnskap klar til bruk.
 
 Hvis standardspråket for Dataverse-installasjonen ikke er engelsk, følger du denne fremgangsmåten:
+
 1. Gå til **Avanserte innstillinger \> Administrasjon \> Språk**.
 1. Velg *Engelsk* (*LanguageCode=1033*), og velg deretter **Bruk**.
 

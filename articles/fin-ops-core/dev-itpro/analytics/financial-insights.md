@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 304cf3f6c913586e08e0a3771ebfe40bc5d2b102
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: 21d7d045c812c54d6776394ad9a0b025b55df8e1
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464916"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109120"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -41,7 +41,7 @@ Arbeidsområdet **Økonomisk analyse** er fokusert på å la deg vise og filtrer
 - [Legg til eller rediger visuelle Power BI-effekter på instrumentbordet](/powerapps/user/add-powerbi-dashboards)
 
 ## <a name="dynamics-365-finance-setup"></a>Oppsett av Dynamics 365 Finance
-**Økonomimodul**
+**Økonomi**
 
 Hovedkontotypen og hovedkontokategoriene brukes til å fylle ut riktige standardhovedkontoer i **Balanse**-regnskapsoppgjøret og de ulike **Resultatregnskap**-regnskapsoppgjørene i **Økonomisk analyse**.
 
@@ -78,7 +78,7 @@ For øyeblikket kan ikke dataene i innebygde Power BI-rapporter være begrenset 
 | Plikt                                    | Roller | beskrivelse |
 |-----------------------------------------|-------|------------|
 | Vis økonomisk analyse for gjeldende firma | <ul><li>Regnskapsfører</li><li>Regnskapssjef</li><li>Regnskapsansvarlig</li><li>Revisor</li><li>Budsjettbehandling</li><li>Administrerende direktør</li><li>Økonomidirektør</li><li>Økonomikontrollør</li></ul> | Denne plikten gir tilgang til Økonomisk analyse. Som standard brukes det aktive selskapet som et filter. Du kan ikke legge til andre juridiske enheter. |
-| Vis økonomisk analyse for hele firmaet   | I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, er ikke denne plikten tilordnet en rolle. I neste versjon vil denne plikten tilordnes til Økonomidirektør-rollen. | Denne plikten gir tilgang til menyelementet for arbeidsområdet CFO-oversikt. Som standard brukes det aktive selskapet som et filter. Du kan imidlertid legge til alle juridiske enheter, uansett om brukeren har tilgang til andre juridiske enheter. |
+| Vis økonomisk analyse for hele firmaet   | I Microsoft Dynamics 365 Finance, Enterprise edition 7.3, er ikke denne plikten tilordnet en rolle. I neste versjon vil denne plikten tilordnes til Økonomidirektør-rollen. | Denne plikten gir tilgang til menyelementet for arbeidsområdet CFO-oversikt. Som standard brukes det aktive selskapet som et filter. Du kan imidlertid legge til alle juridiske enheter, uansett om brukeren har tilgang til andre juridiske enheter. |
 
 
 ## <a name="financial-reporting-vs-financial-analysis"></a>Økonomisk rapportering vs Økonomisk analyse
@@ -244,3 +244,4 @@ Informasjonen i følgende ressurser er ikke nødvendig for å aktivere de inneby
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

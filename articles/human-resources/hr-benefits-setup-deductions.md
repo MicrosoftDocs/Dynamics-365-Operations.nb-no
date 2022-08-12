@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4817cd6370166b6dfdf17b3d733b13374db8f49
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 2fb5f5b0b50f407f58193aafd79f28dd1fd432ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694914"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066800"
 ---
 # <a name="configure-deductions"></a>Konfigurere fradrag
 
@@ -45,7 +45,7 @@ Bruk fradrag i Microsoft Dynamics 365 Human Resources for å fastslå hvor mye h
    | **Overskrift** | Overskriftskoden fra lønnssystemet som dette fradraget vil bruke for den ansattes del av fradraget, ved behandling av fordelene til lønn. Dette brukes når du bruker en tredjeparts lønnsleverandør. |
    | **Referanse for lønnstrekk for ansatt** | Fradragskoden fra lønnssystemet som dette fradraget bruker for ansattdelen av fradraget ved behandling av fordelene til lønn. |
    | **Beløpsoverskrift** | Overskriftskoden fra lønnssystemet som dette fradragsbeløpet vil bruke for den ansattes del av fradraget, ved behandling av fordelene til lønn. Dette brukes normalt når du bruker en tredjeparts lønnsleverandør. |
-   | **Kan slette** | Angir om en eksportert verdi fra Dynamics 365 for Finance and Operations kan føre til at verdien slettes i lønningssystemet. |
+   | **Kan slette** | Angir om en eksportert verdi fra Dynamics 365 Finance kan føre til at verdien slettes i lønningssystemet. |
    | **Parede kolonner** | Angir om overskrift og fradragsbeløp skal eksporteres i parede sammenliggende kolonner til et lønningssystemet. |
    | **Ikrafttredelsesdato for endring** | Datoen når endringen av fordelsfradraget settes i kraft. På denne datoen endres fordelsfradraget og alle fordelsplanene som er knyttet til dette fradraget, blir oppdatert, så lenge du kjører behandling av **oppdatering av fradragsendring**. |
    | **Fradragsendring fullført** | Avmerkingsboksen for **Fradragsendring fullført** blir valgt automatisk når fordelsfradragsendringene er fullført av fradrag av oppdaterings endrings behandling. |
@@ -56,3 +56,4 @@ Bruk fradrag i Microsoft Dynamics 365 Human Resources for å fastslå hvor mye h
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

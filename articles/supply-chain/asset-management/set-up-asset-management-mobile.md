@@ -1,6 +1,6 @@
 ---
 title: Konfigurere det mobile arbeidsområdet Aktivastyring
-description: Denne artikkelen beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og mobilappen Finance and Operations (Dynamics 365), slik at de kan kjøre et mobilt arbeidsområde for aktivastyring som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
+description: Denne artikkelen beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og økonomi- og driftsmobilappen (Dynamics 365), slik at de kan kjøre et mobilt arbeidsområde for aktivastyring som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ee92ed2c0e2a59adaebe20ed3d426ac03c056dac
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef4e6bf2ae59adb05c7d4aacc3f5675a5adcafc9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870849"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070061"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurere det mobile arbeidsområdet Aktivastyring
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og mobilappen Finance and Operations (Dynamics 365), slik at de kan kjøre et mobilt arbeidsområde for **Aktivastyring** som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
+Denne artikkelen beskriver hvordan du konfigurerer Microsoft Dynamics 365 Supply Chain Management og økonomi- og driftsmobilappen (Dynamics 365), slik at de kan kjøre et mobilt arbeidsområde for **Aktivastyring** som arbeidere kan bruke til å utføre aktivastyringsoppgaver.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Konfigurere vedlikeholdspersoner som brukere i Supply Chain Management
 
@@ -41,7 +41,7 @@ Følg denne fremgangsmåten for hver bruker som skal ha tilgang til det mobile a
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>Publisere det mobile arbeidsområdet Aktivastyring
 
-Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i mobilappen Finance and Operations (Dynamics 365), må du publisere det mobile arbeidsområdet for **Aktivastyring**.
+Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i økonomi- og driftsmobilappen (Dynamics 365), må du publisere det mobile arbeidsområdet for **Aktivastyring**.
 
 1. I Supply Chain Management velger du **Innstillinger**-knappen (tannhjulsymbolet i øvre høyre hjørne), og deretter velger du **Mobilapp** på menyen.
 1. Finn flisen **Aktivastyring** i dialogboksen **Administrer mobilapp**. Hvis den inneholder teksten «I metadata – ikke publisert», er arbeidsområdet ennå ikke publisert. Hvis den inneholder teksten «I metadata – publisert», er arbeidsområdet allerede publisert, og du kan hoppe over resten av denne fremgangsmåten.
@@ -50,14 +50,14 @@ Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i mobilappen Finan
 
 1. Velg flisen **Aktivastyring**, og velg deretter **Publiser** på verktøylinjen. Etter noen sekunder skal du få en varsling om at arbeidsområdet er publisert. I tillegg skal teksten på flisen endres til «I metadata – publisert».
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Installere og konfigurere mobilappen Finance and Operations (Dynamics 365)
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>Installere og konfigurere økonomi- og driftsmobilappen (Dynamics 365)
 
 1. Gå til en av følgende appbutikker for å installere appen **Microsoft Finance and Operations (Dynamics 365)** på mobilenheten:
 
     - [For Google Android-enheter](https://go.microsoft.com/fwlink/?linkid=850662)
     - [For Apple IOS-enheter](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Åpne appen Finance and Operations (Dynamics 365). Påloggingssiden skal vises. Angi URL-adressen din for Supply Chain Management i **Logg på**-feltet, eller velg en nylig URL-adresse i listen **Siste miljøer**, og trykk deretter på **Koble til**.
+1. Åpne økonomi- og driftsappen (Dynamics 365). Påloggingssiden skal vises. Angi URL-adressen din for Supply Chain Management i **Logg på**-feltet, eller velg en nylig URL-adresse i listen **Siste miljøer**, og trykk deretter på **Koble til**.
 
     ![Påloggingsside.](media/mobile-app-sign-in.png "Påloggingsside")
 
@@ -80,7 +80,7 @@ Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i mobilappen Finan
 
 Hvis du vil ha mer informasjon om hvordan du arbeider med det mobile arbeidsområdet for **Aktivastyring**, kan du se [Bruke det mobile arbeidsområdet Aktivastyring](asset-management-mobile-workspace.md).
 
-Hvis du vil ha mer informasjon om mobilappen Finance and Operations (Dynamics 365), kan du gå til [Startside for mobilapp](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+Hvis du vil ha mer informasjon om økonomi- og driftsmobilappen (Dynamics 365), kan du gå til [Startside for mobilapp](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

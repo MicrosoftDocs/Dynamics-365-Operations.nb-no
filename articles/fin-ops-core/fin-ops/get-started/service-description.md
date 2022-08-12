@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 756895ab0ccdbd2bc42f0a750ad9895ee7b284a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9e5160cc3961703475ffb8dc4a4daf2ae872aaba
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847167"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124934"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjenestebeskrivelse for økonomi- og driftsapper
 
@@ -381,7 +381,7 @@ Partneren som kunden velger for å tilpasse, konfigurere, implementere og admini
 
 ### <a name="incident"></a>Tilfelle
 
-Et problem som kunder oppdager mens de bruker økonomi- og driftstjenesten, og som de sender sender en billett for via LCS.
+Et problem som kunder oppdager mens de bruker økonomi- og driftstjenesten, og som de sender en billett for via LCS.
 
 ### <a name="microsoft-customer-support-services-css"></a>Microsofts kundestøttetjenester (CSS)
 
@@ -428,3 +428,4 @@ Rammeverket som systematisk styrer en implementering gjennom en serie med vurder
 ### <a name="user"></a>Bruker
 
 Én enkelt person som bruker økonomi- og driftsmiljøer, og som er knyttet til kundens leietaker.
+

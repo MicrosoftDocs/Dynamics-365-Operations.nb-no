@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 886781764b44ca76b327ad49f25f11f6c370a706
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ea6901f8d9632b021c35b9ee899385e688fc77e
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851958"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108864"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore utførelse av ER-formater for å feilsøke ytelsesproblemer
 
@@ -305,7 +305,7 @@ Det kan også være nyttig å redusere antall kall som gjøres til datakilden fo
 
 ### <a name="import-the-modified-er-model-mapping-configuration-from-rcs-into-the-application"></a>Importere den endrede ER-modelltilordningskonfigurasjonen fra RCS til programmet
 
-Gjenta trinnene i delen [Importere en ER-konfigurasjon fra RCS til Økonomi og drift](#import-configuration) tidligere i denne artikkelen for å importere versjon 1.2 av konfigurasjonen **Ytelsessporingstilordning**.
+Gjenta trinnene i delen [Importere en ER-konfigurasjon fra RCS til Finance and Operations](#import-configuration) tidligere i denne artikkelen for å importere versjon 1.2 av konfigurasjonen **Ytelsessporingstilordning**.
 
 ## <a name="run-the-modified-er-solution-to-trace-execution"></a>Kjøre den endrede ER-løsningen for å spore kjøring
 
@@ -363,7 +363,7 @@ Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inne
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Bruke eksterne verktøy til å se gjennom en utførelsessporing som inneholder databasespørringer
 
-På grunn av forbedringer i ER-rammeverket gir ytelsessporingen som genereres i PerfView-formatet, nå flere detaljer om ER-formatutførelsen. I Microsoft Dynamics 365 for Finance and Operations versjon 10.0.4 (juli 2019) kan denne sporingen også inneholde detaljer om utførte SQL-spørringer til programdatabasen.
+På grunn av forbedringer i ER-rammeverket gir ytelsessporingen som genereres i PerfView-formatet, nå flere detaljer om ER-formatutførelsen. I Microsoft Dynamics 365 Finance versjon 10.0.4 (juli 2019) kan denne sporingen også inneholde detaljer om utførte SQL-spørringer til programdatabasen.
 
 ### <a name="configure-user-parameters"></a>Konfigurere brukerparametere
 
@@ -392,3 +392,4 @@ Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inne
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

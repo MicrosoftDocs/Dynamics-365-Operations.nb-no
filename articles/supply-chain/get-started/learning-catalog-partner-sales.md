@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d5a7ce80f02729de450e558f57464248d69910ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d7caaf0097022eddd33319c6bd4a066da61de23b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901038"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123568"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-supply-chain-management"></a>Opplæringskatalog for salg og markedsføring for Microsoft-partnere i Dynamics 365 Supply Chain Management
 
@@ -41,3 +41,4 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Grunnleggende om Dynamics 365](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Vis at du forstår Microsoft Dynamics 365: Power Platform, skybegreper, lisensieringsalternativer og alternativer for distribusjon og frigivelse. | Eksamen: kostnaden varierer etter område |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

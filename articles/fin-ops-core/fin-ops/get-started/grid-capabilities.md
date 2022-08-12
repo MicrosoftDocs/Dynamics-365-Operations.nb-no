@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5259e1d7d6c95074337164d8427d7f035e00dbd9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 07791afb2de670a5b9b910e441395c2949460394
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8890065"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124718"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -35,10 +35,10 @@ Den nye rutenettkontrollen byr på flere nyttige og kraftfulle funksjoner du kan
 - Kolonnene som kan strekkes
 
 ## <a name="calculating-totals"></a>Beregner totaler
-I Finance and Operations-apper har brukere muligheten til å se totalverdier nederst i numeriske kolonner i rutenett. Disse totalverdiene vises i en bunntekstinndeling nederst i rutenettet. 
+I økonomi- og driftsapper har brukere muligheten til å se totalverdier nederst i numeriske kolonner i rutenett. Disse totalverdiene vises i en bunntekstinndeling nederst i rutenettet. 
 
 ### <a name="showing-the-grid-footer"></a>Vise rutenettbunnteksten
-Det er et bunntekstområde nederst i alle tabellrutenett i Finance and Operations-apper. Bunnteksten kan vise nyttig informasjon som er knyttet til dataene som vises i rutenettet. Her er noen eksempler på denne informasjonen:
+Det er et bunntekstområde nederst i alle tabellrutenett i økonomi- og driftsapper. Bunnteksten kan vise nyttig informasjon som er knyttet til dataene som vises i rutenettet. Her er noen eksempler på denne informasjonen:
 
 - Antallet valgte rader i tabellen (når du velger flere oppføringer)
 - Hovedsummer nederst i konfigurerte numeriske kolonner
@@ -86,7 +86,7 @@ For å støtte denne nye virkemåten, er det lagt til en ny kolonne for radstatu
 Når brukere angir data før serveren behandles, kan de forvente seg noen reduksjoner i dataregistreringsopplevelsen, for eksempel mangel på oppslag, validering på kontrollnivå og oppføring av standardverdier. Brukere som trenger en rullegardinliste for å finne en verdi, oppfordres til å vente til serveren blir oppdatert til gjeldende rad. Kontrollnivå-validering og registrering av standardverdier vil også forekomme når serveren behandler denne raden.
 
 ### <a name="pasting-from-excel"></a>Lime inn fra Excel
-Brukere har alltid hatt muligheten til å eksportere data fra rutenett i Finance and Operations-apper til Microsoft Excel ved hjelp av funksjonen **Eksporter til Excel**. Muligheten til å angi data før systemet gjør imidlertid at det nye rutenettet kan støtte kopiering av tabeller fra Excel og lime dem direkte inn i rutenett i Finance and Operations-apper. Rutenettcellen som innlimingen startes fra, bestemmer hvor den kopierte tabellen begynner å limes inn. Innholdet i rutenettet overskrives av innholdet i den kopierte tabellen, med unntak av to tilfeller:
+Brukere har alltid hatt muligheten til å eksportere data fra rutenett i økonomi- og driftsapper til Microsoft Excel ved hjelp av funksjonen **Eksporter til Excel**. Muligheten til å angi data før systemet gjør imidlertid at det nye rutenettet kan støtte kopiering av tabeller fra Excel og lime dem direkte inn i rutenett i økonomi- og driftsapper. Rutenettcellen som innlimingen startes fra, bestemmer hvor den kopierte tabellen begynner å limes inn. Innholdet i rutenettet overskrives av innholdet i den kopierte tabellen, med unntak av to tilfeller:
 
 - Hvis antallet kolonner i den kopierte tabellen overskrider antall kolonner som beholdes i rutenettet, med start fra innlimingen, varsles brukeren om at de ekstra kolonnene er ignorert. 
 - Hvis antall rader i den kopierte tabellen overskrider antall rader i rutenettet, med start fra innlimingen, blir de eksisterende cellene overskrevet av det innlimte innholdet, og eventuelle ekstra rader fra den kopierte tabellen blir satt inn som nye rader nederst i rutenettet. 
@@ -97,7 +97,7 @@ Som en produktivitetsforsterkning kan brukeren legge inn matematiske formler i n
 Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verdien med et likhetstegn (**=**). Hvis du vil ha mer informasjon om de støttede operatorene og syntaksen, kan du se [Støttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppere tabelldata
-Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør funksjonen **Gruppering i rutenett**, som er avhengig av den nye rutenettkontrollfunksjonen, det mulig for brukere å organisere sine tabelldata på interessante måter i Finance and Operations-apper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
+Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør funksjonen **Gruppering i rutenett**, som er avhengig av den nye rutenettkontrollfunksjonen, det mulig for brukere å organisere sine tabelldata på interessante måter i økonomi- og driftsapper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
 
 Hvis du vil bruke denne funksjonen, høyreklikker du kolonnen du vil gruppere etter, og velger **Grupper etter denne kolonnen**. Denne handlingen sorterer dataene etter den valgte kolonnen, legger til en ny **Grupper etter**-kolonne i begynnelsen av rutenettet og setter inn "topptekstrader" i begynnelsen av hver gruppe. Disse topptekstradene inneholder følgende informasjon om hver gruppe:
 
@@ -200,3 +200,4 @@ Denne delen viser en liste over kjente problemer for den nye rutenettkontrollen.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

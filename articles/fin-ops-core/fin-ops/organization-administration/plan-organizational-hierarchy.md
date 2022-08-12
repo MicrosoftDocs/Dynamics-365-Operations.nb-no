@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef906c0d60639da763f2a9c1e1adf508b0849b8978dff17cd0e7b3936fc4779e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5bb0b306cca715cad64d62fff843987a8e98eb99
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771878"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108772"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planlegge organisasjonshierarkiet
 
@@ -171,7 +171,7 @@ For land/områder som støttes, kan de fleste lovbestemte rapporter opprettes.
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Hvis organisasjonen er modellert som en driftsenhet
 
-Lovbestemte rapporter må opprettes ved hjelp av et annet program. Du må forsikre deg om at data blir registrert i Finance and Operations for å støtte kravene for hver driftsenheten, der de skiller seg fra kravene til hovedkontoret.
+Lovbestemte rapporter må opprettes ved hjelp av et annet program. Du må forsikre deg om at data blir registrert i økonomi- og driftsapper for å støtte kravene for hver driftsenheten, der de skiller seg fra kravene til hovedkontoret.
 
 ### <a name="currency"></a>Valuta
 
@@ -242,3 +242,4 @@ Vurder følgende anbefalte fremgangsmåter når du implementerer et organisasjon
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

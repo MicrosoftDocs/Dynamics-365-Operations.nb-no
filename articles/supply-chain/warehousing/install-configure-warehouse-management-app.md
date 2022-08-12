@@ -16,19 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9bd208ba78d28046782d03221b0f23471f56b574
-ms.sourcegitcommit: 3f544f8671821be915b289a614e4e440bd38994f
+ms.openlocfilehash: ec2a9f5ca6d6735e675defda6782738da7814c01
+ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8941773"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171463"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installer og koble til mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> Denne artikkelen beskriver hvordan du konfigurerer Warehouse Management-mobilappen. Hvis du ser etter informasjon om hvordan du konfigurerer den gamle lagerappen (nå avskrevet), kan du se [Installer og koble til lagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 Denne artikkelen beskriver hvordan du laster ned og installerer Warehouse Management-mobilappen på hver av mobilenhetene, og hvordan du konfigurerer appen slik at den kobler til Supply Chain Management-miljøet ditt. Du kan konfigurere hver enhet manuelt, eller du kan importere tilkoblingsinnstillinger via en fil eller ved å skanne en QR-kode.
 

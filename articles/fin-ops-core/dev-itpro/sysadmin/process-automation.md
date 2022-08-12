@@ -2,7 +2,7 @@
 title: Prosessautomatisering
 description: Denne artikkelen inneholder detaljer om hvordan prosessautomatisering tillater enkel planlegging av prosesser som vil bli kjørt av den satsvise serveren.
 author: RyanCCarlson2
-ms.date: 04/20/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: f13392fd6610735f8c539d42b62cf71cece71fba
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
+ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898616"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9114943"
 ---
 # <a name="process-automation"></a>Prosessautomatisering
 
@@ -30,7 +30,7 @@ Prosessautomatisering tillater enkel planlegging av prosesser som vil bli kjørt
 
 Du finner siden for sentraladministrasjon for alle prosessautomatiseringer i Systemadministrasjon-modulen på **Oppsett**-menyen. Denne siden viser en liste over alle automatiserte prosesser (serier) som er konfigurert i systemet. Du kan også legge til nye prosessautomatiseringer direkte fra denne siden. Når en serie er definert, kan du administrere hver serie fra denne listen. Du kan velge å redigere hele serien, slette den, vise alle forekomster i en liste visning eller deaktivere serien hvis du vil stanse det planlagte arbeidet i en tidsperiode. 
 
-Prosesser som deaktiveres i funksjonsbehandling, vises ikke når funksjonen er deaktivert. I tillegg vil ikke planleggingsmotoren for prosessautomatisering planlegge noen forekomster eller bakgrunnsprosesser for en deaktivert funksjon. Når du aktiverer funksjonen på nytt, blir planlagte forekomster eller bakgrunnsprosesser i fortiden kjørt umiddelbart. Planleggingsmotoren for prosessautomatisering er avhengig av systemets satsvise jobb, **Avspørringssystem for prosessautomatisering** for å kjøres. Jobben bør ikke endres på noe tidspunkt. 
+Prosesser som deaktiveres i funksjonsbehandling, vises ikke når funksjonen er deaktivert. I tillegg vil ikke planleggingsmotoren for prosessautomatisering planlegge noen forekomster eller bakgrunnsprosesser for en deaktivert funksjon. Når du aktiverer funksjonen på nytt, blir planlagte forekomster eller bakgrunnsprosesser i fortiden kjørt umiddelbart. Planleggingsmotoren for prosessautomatisering er avhengig av systemets satsvise jobb, **Avspørringssystem for prosessautomatisering** for å kjøres. Jobben bør ikke endres på noe tidspunkt. Hvis denne satsvise jobben ikke kjører, eller hvis den har feil, velger du **Initialiser prosessautomatisering** for å tilbakestille den satsvise jobben. Denne tilbakestillingen sikrer at alle nye automatiseringer som frigis i en nyere versjon av appen, initialiseres. 
 
 ## <a name="calendar-view"></a>Kalendervisning
 

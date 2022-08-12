@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: f0d5339190f7e2aff7b084fa73e559af28e10ee8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f44574abddb71e1a994ae60960e8c9c79242aff0
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860116"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112120"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
@@ -135,3 +135,4 @@ Hvis du vil ha informasjon om prislister, kan du se [Samlet produktopplevelse](p
 - Finansdimensjoner må angis for hoveddataene, for eksempel kunde og leverandør. Når en kunde legges til i et tilbud eller en salgsordre, flyter finansdimensjonene som er knyttet til kundeposten, til ordren automatisk. Dobbel skriving omfatter foreløpig ikke finansdimensjonsdata for hoveddata.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

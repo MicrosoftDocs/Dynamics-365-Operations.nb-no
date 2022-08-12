@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: af344d3771583a99851c070e3735258ac964b5d7
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: c54534ae32aa037f36a16600a058bca6d433002c
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954503"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9167739"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.25. (april 2022)
 
@@ -36,8 +36,7 @@ Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være o
 | Lager&nbsp;og&nbsp;logistikk | [Forbedringer for farlige materialer](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/hazardous-materials-enhancements) | Kommer snart | Funksjonsbehandling:<br>*Forbedringer for farlige materialer* |
 | Lager&nbsp;og&nbsp;logistikk | [Pakkearbeid for pakkestasjoner](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/packing-work-packing-stations) | Kommer snart | Funksjonsbehandling:<br>*Pakkearbeid for pakkestasjoner* |
 | Lager&nbsp;og&nbsp;logistikk | [Skann strekkoder i lageret ved hjelp av standardene i GS1-format](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-strekkoder og QR-koder](../warehousing/gs1-barcodes.md) | Funksjonsbehandling:<br>*Skann GS1-strekkoder* |
-| Produksjon | [Materialforbruk og reservasjoner i grensesnittet for produksjonsutførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke-lager)*<br><br>Og/eller:<br><br>Funksjonsbehandling:<br>*(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)* |
-| Produksjon | [Registrer materialforbruk på storskalaenheter](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funksjonsbehandling:<br>*Registrer materialforbruk i mobilappen på en skalaenhet* |
+| Produksjon | [Materialforbruk og reservasjoner i grensesnittet for produksjonsutførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke lagerstyring)*<br><br>Og/eller:<br><br>Funksjonsbehandling:<br>*(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)* |
 | Planlegging | [Sentralisert kalendervedlikehold i Planleggingsoptimalisering](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Kalendere og hovedplanlegging](../master-planning/supply-chain-calendars-master-planning.md) | Aktivert som standard |
 | Planlegging | [Forslag fra Planleggingsoptimalisering for å optimalisere eksisterende forsyning](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Handlingsmeldinger](../master-planning/action-messages.md) | Aktivert som standard |
 | Planlegging | Planlagte ordrer forenklet | [Planlagte ordrer forenklet](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funksjonsbehandling:<br>*Planlagte ordrer forenklet* |
@@ -209,3 +208,4 @@ Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i
 For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære kompatible med sandkasse- og produksjonsmiljøer, vil avskrivningstiden være mindre enn 12 måneder. Dette er vanligvis funksjonelle oppdateringer som må gjøres på kompilatoren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

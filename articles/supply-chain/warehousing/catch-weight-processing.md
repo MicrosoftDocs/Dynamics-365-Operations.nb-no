@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d0f0e44cfafec722f6eed3d18ba8be4739be30c1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 881c3c4aa655a5ad30adffce108ba2fc3e6691c5
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900687"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070417"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -82,7 +82,7 @@ Hvis den faktiske vekten blir registrert på pakkestasjonen under containerpakke
 > [!NOTE]
 > Ettersom **Emballasje**-alternativet fører til at beholdningen oppdateres med gjennomsnittlig plukket vekt, kan dette utløse et avvik som kan føre til en justering av fortjeneste/tap for faktisk vekt og/eller et avvik mellom lagerbeholdningsvekten og faktisk vekt-kode-vekten.
 
-For interne lagerstyringsprosesser som telling og justering, kan du definere om vekten skal registreres. Hvis den ikke registreres, brukes pålydende vekt. Andre alternativer lar deg registrere vekt per faktisk vekt-enhet og per opptellingsantall.
+For interne prosesser, som telling og justering, kan du definere om vekten skal registreres. Hvis den ikke registreres, brukes pålydende vekt. Andre alternativer lar deg registrere vekt per faktisk vekt-enhet og per opptellingsantall.
 
 Du kan også definere hvordan vekten blir registrert. I én av de to hovedflytene spores faktisk vekt-koder og brukes til å registrere vekten. I den andre flyten spores ikke faktisk vekt-koder.
 
@@ -183,7 +183,7 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andre begrensninger og virkemåter for behandling av faktisk vekt-produkter med lagerstyring
 
 - Under plukkeprosesser der brukeren ikke blir bedt om å identifisere sporingsdimensjoner, utføres vekttilordningen basert på gjennomsnittlig vekt. Denne virkemåten oppstår når for eksempel en kombinasjon av sporingsdimensjoner brukes på samme sted og, etter en bruker behandler plukking, bare én sporingsdimensjonsverdi er igjen på lokasjonen.
-- Når lager er reservert for et faktisk vekt-produkt som er konfigurert for lagerstyringsprosesser, gjøres reservasjonen basert på den minste vekten som er definert, selv om dette antallet er det siste behandlingsantallet på lager. Denne virkemåten er forskjellig fra den for varer som ikke er konfigurert for lagerstyringsprosesser. Det er ett unntak fra denne begrensningen. Når det siste behandlingsantallet for et faktisk vekt-produkt som er serienummerkontrollert, plukkes, brukes den faktiske vekten for produksjonsplukking.
+- Når lager er reservert for et faktisk vekt-produkt som er konfigurert for Warehouse Management-prosesser (WMS), gjøres reservasjonen basert på den minste vekten som er definert, selv om dette antallet er det siste behandlingsantallet på lager. Denne virkemåten er forskjellig fra den for varer som ikke er konfigurert for WMS. Det er ett unntak fra denne begrensningen. Når det siste behandlingsantallet for et faktisk vekt-produkt som er serienummerkontrollert, plukkes, brukes den faktiske vekten for produksjonsplukking.
 - Prosesser som bruker vekten som en del av kapasitetsberegninger (bølgeterskler, maksimale arbeidsinndelinger, maksimumsverdier for beholder, lokasjonsbelastningskapasitet og så videre), bruker ikke den faktiske vekten for lageret. I stedet er prosessene basert på den fysiske håndteringsvekten som er definert for produktet.
 - Generelt støttes ikke funksjonen for handel for faktisk vekt-produkter.
 - For faktisk vekt-produkter kan ikke lagerstatus oppdateres fra **Lagerstatusendring**.

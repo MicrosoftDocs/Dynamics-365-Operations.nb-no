@@ -1,7 +1,7 @@
 ---
 title: Definer samsvarsregler for bankavstemming
 description: Denne artikkelen beskriver hvordan du konfigurerer samsvarsregler og samsvarsregelsett for å assistere bankavstemmingsprosessen. Samsvarsregler er et sett kriterier som brukes for å filtrere bankkontoutdragslinjer og bankdokumentlinjer under avstemmingsprosessen.
-author: panolte
+author: angelad116
 ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.custom: 12971
 ms.assetid: b5073f83-31dc-404f-af42-3fd84a02a7c6
 ms.search.region: Global
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: baea7ea7ec98c905e9ae896a8cf1e4ac54fb4a9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ed8572eca14beb8a0e3c382f0f328cc6d118491c
+ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899936"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151320"
 ---
 # <a name="set-up-bank-reconciliation-matching-rules"></a>Definer samsvarsregler for bankavstemming
 
@@ -48,3 +48,4 @@ Som standard vil samsvarsregler samsvare med det første bankdokumentet som oppf
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

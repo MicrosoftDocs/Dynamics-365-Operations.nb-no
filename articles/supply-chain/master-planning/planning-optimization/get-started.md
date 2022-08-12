@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b9595aece264f55c706ebc84010b927fae56b512
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e853c8a482b8fd0b92c9861fe022c056915ab405
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900977"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112202"
 ---
 # <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
 
@@ -40,7 +40,7 @@ Før du slår på planleggingsoptimalisering, anbefaler vi på det sterkeste at 
 
 ## <a name="availability"></a>Tilgjengelighet
 
-Planleggingsoptimalisering er for øyeblikket tilgjengelig i følgende Azure-områder: USA, Canada, Brasil, Europa, Storbritannia, Australia, Asia/Stillehavskysten, Japan og India. Hvis du prøver å installere tillegget fra et annet geografisk område, vil LCS vise en melding om at dette området ikke støttes. Hvis du vil ha mer informasjon om geografiske områder for Azure og tilknyttede områder, kan du se [Azure-geografier](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planleggingsoptimalisering er for øyeblikket tilgjengelig i følgende Azure-områder: USA, Canada, Brasil, Europa, Frankrike, Storbritannia, Australia, Asia/Stillehavskysten, Japan og India. Hvis du prøver å installere tillegget fra et annet geografisk område, vil LCS vise en melding om at dette området ikke støttes. Hvis du vil ha mer informasjon om geografiske områder for Azure og tilknyttede områder, kan du se [Azure-geografier](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Legg merke til at planleggingsoptimalisering ikke støtter lokale distribusjoner av Dynamics 365 Supply Chain Management.
 
@@ -135,3 +135,4 @@ Hvis Planleggingsoptimalisering er aktivert, utføres hovedplanlegging ved hjelp
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

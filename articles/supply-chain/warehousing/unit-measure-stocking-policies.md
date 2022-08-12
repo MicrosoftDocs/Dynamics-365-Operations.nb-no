@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0de12620bca54c7e43713138d7a152c2bd6edff3453f81cf779f9b875cf77eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca1c18a293d66ab78f41cac857461249826ce4c9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714842"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069130"
 ---
 # <a name="unit-of-measure-and-stocking-policies"></a>Måleenhet og lagringspolicyer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6714842"
 
 Denne artikkelen beskriver hvordan standardenheter, enhetssekvenser og enhetskonverteringer brukes i lagerprosesser.
 
-Sekvensgrupper for enhet definerer sekvensen av enheter som kan brukes i lageroperasjoner. De opprettes på siden **Sekvensgrupper for enhet**. Sekvensen viser forholdet mellom de forskjellige enhetene. Du lagrer for eksempel paller som inneholder bokser som inneholder individuelle varedeler. I så fall må du angi tre ulike enhetene og den logiske rekkefølgen på lagene. Med sekvensgrupper for enhet kan du definere policyer for gruppering av nummerskilt, og standardenhetene som skal brukes for ulike lagerprosesser. Denne artikkelen gjelder for både den avanserte datalagerstyringsløsningen som er tilgjengelig i Lagerstyring, og den mer grunnleggende datalagerstyringsløsningen som er tilgjengelig i Beholdningsstyring.
+Sekvensgrupper for enhet definerer sekvensen av enheter som kan brukes i lageroperasjoner. De opprettes på siden **Sekvensgrupper for enhet**. Sekvensen viser forholdet mellom de forskjellige enhetene. Du lagrer for eksempel paller som inneholder bokser som inneholder individuelle varedeler. I så fall må du angi tre ulike enhetene og den logiske rekkefølgen på lagene. Med sekvensgrupper for enhet kan du definere policyer for gruppering av nummerskilt, og standardenhetene som skal brukes for ulike lagerprosesser. Denne artikkelen gjelder både for Warehouse Management-prosesser (WMS) som er tilgjengelig i Warehouse Management-modulen, og den mer grunnleggende datalagerstyringsløsningen som er tilgjengelig i Beholdningsstyring-modulen.
 
 ## <a name="unit-sequence-groups-for-released-products"></a>Sekvensgrupper for enhet for frigitte produkter
 Hvis du vil bruke frigitte produkter i lagerarbeidsprosesser, må en sekvensgruppe for enhet tilordnes til dem. Hvis du validerer et produkt som er tilknyttet en lagringsdimensjonsgruppe, og alternativet **Bruk lagerstyringsprosesser** for lagringsdimensjonsgruppen er satt til **Ja**, får du en feilmelding hvis en sekvensgruppe-ID for enhet ikke er definert for produktet. Hvis sekvensgruppen for enhet som du bruker, inneholder flere linjer (og derfor flere enheter), må du definere en enhetsomregning mellom enhetene. Du fullfører dette oppsettet på siden **Enhetsomregninger**. Den minste enheten i en gruppe i rekkefølgen som du knytter til et frigitt produkt, må samsvare med lagerenheten som er definert for det tilhørende produktet. Lagerenheten er enheten som brukes til grunnleggende beregninger av lagerbeholdningen. Du kan også definere måleenhetskonverteringer for produktvarianter av produktstandarder ved hjelp av alternativet **Aktiver måleenhetskonverteringer**.

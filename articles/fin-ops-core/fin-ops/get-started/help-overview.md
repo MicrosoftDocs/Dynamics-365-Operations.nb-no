@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 924af44a6f0b1430859f0f6354ef55ff67a1b677
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 57c17cab920c531b3eb125260064d01dd8662576
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898376"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9124202"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
@@ -53,7 +53,7 @@ Du kan finne innhold på docs.microsoft.com ved å bruke en hvilken som helst s�
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få beskjed om endringer ved hjelp av en RSS-feed
 
-Hvis du vil abonnere på en RSS-feed for alle oppdateringer som er gjort på innholdet på docs.microsoft.com i alle Finance and Operations-apper, bruker du følgende kobling:
+Hvis du vil abonnere på en RSS-feed for alle oppdateringer som er gjort på innholdet på docs.microsoft.com i alle økonomi- og driftsapper, bruker du følgende kobling:
 
 [RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -98,7 +98,7 @@ Hvis du vil ha mer informasjon, kan du se [veiledningen for dokumentbidragsyter]
 
 En oppgaveveiledning er en kontrollert, veiledet, interaktiv opplevelse som leder deg gjennom trinnene for en aktivitet eller forretningsprosess. Du kan åpne (spille av) en oppgaveveiledning fra **Hjelp**-ruten. Når du først velger en oppgaveveiledning, vil **Hjelp**-ruten vise de trinnvise instruksjonene for oppgaven. Lokaliserte oppgaveveiledninger er tilgjengelige.
 
-Microsoft lanserte biblioteker for oppgaveveiledning for produktversjoner i 2017-versjonen av Dynamics 365 for Finance and Operations. Delen [Tilgang til oppgaveveiledninger fra Hjelp-ruten](#accessing-task-guides-from-the-help-pane) i denne artikkelen forklarer hvordan du finner de riktige oppgaveveiledningene for produktet.
+Microsoft lanserte biblioteker for oppgaveveiledning for produktversjoner i 2017-versjonen av Dynamics 365 Finance and Operations. Delen [Tilgang til oppgaveveiledninger fra Hjelp-ruten](#accessing-task-guides-from-the-help-pane) i denne artikkelen forklarer hvordan du finner de riktige oppgaveveiledningene for produktet.
 
 ![Oppgaveveiledning – lesevisning.](./media/task-guide-ops.png)
 
@@ -182,3 +182,4 @@ Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

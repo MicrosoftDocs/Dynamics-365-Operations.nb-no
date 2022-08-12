@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 953a3bfec70235524067a47b8764f6dbb40d3c7b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849307"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065562"
 ---
 # <a name="flushing-principles"></a>Trekkprinsipp
 
@@ -50,7 +50,7 @@ Trekkprinsippene er konfigurert i et hierarki av standardverdier. Hierarkiet beg
 ## <a name="description-of-the-flushing-principles"></a>Beskrivelse av trekkprinsippene
 
 ### <a name="manual"></a>Manuell
-Det manuelle trekkprinsippet angir at registrering av materialforbruk er en manuell operasjon. Dette prinsippet gjelder hvis du for eksempel skal kunne spore, og antall brukte partinumre eller serienumre må kunne dokumenteres, for sporingsformål. Manuelt forbruket registreres i en plukklistejournal for produksjon. For varer som er aktivert for avanserte lagerprosesser, kan en håndholdt flyt brukes.
+Det manuelle trekkprinsippet angir at registrering av materialforbruk er en manuell operasjon. Dette prinsippet gjelder hvis du for eksempel skal kunne spore, og antall brukte partinumre eller serienumre må kunne dokumenteres, for sporingsformål. Manuelt forbruket registreres i en plukklistejournal for produksjon. For varer som er aktivert for Warehouse Management-prosesser (WMS), kan en håndholdt flyt brukes.
 
 ### <a name="start"></a>Start
 Start-trekkprinsippet angir at materiale automatisk brukes når produksjonsordren startes. Hvor mye materiale som forbrukes er proporsjonalt med mengden som er startet. Når Start-trekkprinsippet brukes sammen med produksjonsutførelsessystemet, kan det også brukes til å trekke materialer når en operasjon eller en produksjonsjobb er startet. Dette prinsippet gjelder hvis for eksempel avviket i forbruket er lavt, materialene er lavverdimaterialer, det er ingen krav for oppfølging eller det er en kort operasjonstid på operasjoner. 

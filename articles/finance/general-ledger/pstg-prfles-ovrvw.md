@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7ef3be13e82ff3722fc81247b5cd581b0b571b0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91078352b6376ee99e7d9ce4546ed200cb80a25a
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876131"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135851"
 ---
 # <a name="posting-profiles-overview"></a>Oversikt over posteringsprofiler
 
-I Finance and Operations-apper brukes begrepet *posteringsprofiler* til å beskrive konfigurasjonene som styrer hvordan underfinanskontoer konverteres til hovedkontoer, slik at de kan brukes i transaksjoner som posteres til økonomimodulen. De kontrollerer for eksempel hvordan kunden konverteres til en hovedkonto for kunder når en faktura posteres.
+I økonomi- og driftsapper brukes begrepet *posteringsprofiler* til å beskrive konfigurasjonene som styrer hvordan underfinanskontoer konverteres til hovedkontoer, slik at de kan brukes i transaksjoner som posteres til økonomimodulen. De kontrollerer for eksempel hvordan kunden konverteres til en hovedkonto for kunder når en faktura posteres.
 
 Noen moduler og funksjoner har en side som inneholder ordene "posteringsprofil" i navnet (for eksempel **kundeposteringsprofil** eller **leverandørposteringsprofil**). I tillegg har noen moduler flere alternativer for konfigurasjon av hovedbokpostering for transaksjoner som genereres fra underregnskapet. I **Produksjonskontroll**-modulen kan du for eksempel definere postering etter produksjonsgruppe, ressurs eller ressursgruppe.
 
@@ -34,7 +34,7 @@ Før du kan konfigurere posteringsprofilene, posteringsdefinisjonene eller siden
 
 ## <a name="posting-types"></a>Posteringstyper
 
-I Finance and Operations-apper brukes en posteringstype til å definere en generell kategori for et debet- eller et kreditbeløp. Denne kategorien er uavhengig av hovedkontoen i økonomimodulen. Det finnes posteringstyper for hvert debet- eller kreditbeløp i økonomimodulen.
+I økonomi- og driftsapper brukes en posteringstype til å definere en generell kategori for et debet- eller et kreditbeløp. Denne kategorien er uavhengig av hovedkontoen i økonomimodulen. Det finnes posteringstyper for hvert debet- eller kreditbeløp i økonomimodulen.
 
 Ett enkelt bilag kan ha en eller flere posteringstyper. En transaksjon som for eksempel posteres via en generell journal der kontoen og motkontoen er satt til **Hovedbok**, vil ha posteringstypen **Finansjournal** for både debet- og kreditbeløpet. I kontrast til dette vil en leverandørfaktura ha flere posteringstyper. Disse posteringstypene inkluderer én linje for leverandørsaldoen og flere linjer for motposteringen, for eksempel **Finansjournal**.
 
@@ -111,13 +111,14 @@ Mange moduler i Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyna
 - Postering av reiseregning (kommer snart)
 - [Posteringsprofil for anleggsmidler](../fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md)
 - Postering for konserninternt regnskap (kommer snart)
-- Lagerposteringsprofil (kommer snart)
+- [Lagerpostering](inventory-posting.md)
 - [Posering av netto innkjøpspris](../../supply-chain/landed-cost/costing-parameters-setup.md)
 - [Oversikt over posteringsdefinisjoner](posting-definitions.md)
-- Postering i produksjonskontroll (kommer snart)
+- [Produksjonspostering](production-posting.md)
 - Postering i prosjektstyring og regnskap (kommer snart)
 - Postering i tjenestebehandling (kommer snart)
 - Avgiftspostering (kommer snart)
 - Tids- og fremmøtepostering (kommer snart)
 - Postering i transportstyring (kommer snart)
 - Posteringsprofiler for rabattstyring (kommer snart)
+

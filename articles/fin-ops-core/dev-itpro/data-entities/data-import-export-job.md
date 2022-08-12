@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1407c6def22b9759723e49fb2fa6d4d68f180891
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 18a15928eef4d7158f778729506d691dd587e013
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860171"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109470"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -209,7 +209,7 @@ Når du planlegger oppryddingsprosessen, må du angi følgende parametere for å
 ## <a name="job-history-clean-up-and-archival"></a>Opprydding og arkivering av jobbhistorikk 
 Funksjonen for opprydding i og arkivering av jobblogg erstatter de tidligere versjonene av oppryddingsfunksjonen. Denne delen forklarer disse nye funksjonene.
 
-En av hovedendringene i oppryddingsfunksjonen er bruken av systemets satsvise jobb for å rydde opp i loggen. Bruken av systemets satsvise jobb gjør at Finance and Operations-apper kan få den satsvise jobben for opprydding planlagt automatisk så snart systemet er klart. Det er ikke lenger nødvendig å planlegge den satsvise jobben manuelt. I denne standardmodusen for kjøring kjøres den satsvise jobben hver time fra midnatt, og kjøringsloggen for de siste sju dagene beholdes. Den tømte loggen arkiveres for fremtidig henting. Fra og med versjon 10.0.20 er denne funksjonen alltid på.
+En av hovedendringene i oppryddingsfunksjonen er bruken av systemets satsvise jobb for å rydde opp i loggen. Bruken av systemets satsvise jobb gjør at økonomi- og driftsapper kan få den satsvise jobben for opprydding planlagt automatisk så snart systemet er klart. Det er ikke lenger nødvendig å planlegge den satsvise jobben manuelt. I denne standardmodusen for kjøring kjøres den satsvise jobben hver time fra midnatt, og kjøringsloggen for de siste sju dagene beholdes. Den tømte loggen arkiveres for fremtidig henting. Fra og med versjon 10.0.20 er denne funksjonen alltid på.
 
 Den andre endringen i oppryddingsprosessen er arkivering av den tømte kjøringsloggen. Oppryddingsjobben arkiverer de slettede postene i BLOB-lageret som DIXF bruker til vanlige integreringer. Den arkiverte filen er i DIXF-pakkeformatet, og er tilgjengelig i sju dager i BLOB-lageret, der det kan lastes ned. Standardlevetiden på sju dager for den arkiverte filen kan endres til maksimalt 90 dager i parameterne.
 
@@ -235,3 +235,4 @@ Hvis du vil laste ned den arkiverte kjøringsloggen, går du til arbeidsområdet
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4d3779d7d335a903d7eabfadfed79e47652c6835
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4f860e0c64573ccfe60e4854697c1e06feeed0c2
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897668"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135404"
 ---
 # <a name="global-inventory-accounting-ledger"></a>Global lagerregnskap-finansmodul
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Globalt lagerregnskap har et eget sett med finansmoduler. Hver gang en lagerrelatert transaksjon behandles for en relevant juridisk enhet, kan systemet ta hensyn til transaksjonen i et hvilket som helst antall Globalt lagerregnskap-finansmoduler, etter behov.
 

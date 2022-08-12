@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c9bfcdef91ad07b8346498b8944e1d741d623a1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862663"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067400"
 ---
 # <a name="engineering-change-management-overview"></a>Oversikt over behandling av teknisk endring
 
@@ -40,7 +40,7 @@ Behandling av teknisk endring hjelper deg med å planlegge og administrere produ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Den forrige videoen ([Endre administrasjonsfunksjoner i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) er inkludert i [økonomi- og driftsspillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
+Den forrige videoen ([Endre administrasjonsfunksjoner i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Aktivere funksjonene for behandling av teknisk endring for systemet
 
@@ -88,3 +88,4 @@ Når du har aktivert de grunnleggende funksjonene for teknisk endringsbehandling
 | Variantgenerering for tekniske produkter | <p>Ved hjelp av denne funksjonen kan du generere varianter for tekniske produkter basert på tilgjengelige dimensjonsverdier.</p><p>Hvis du vil ha mer informasjon, kan du se [Generere varianter for tekniske produkter](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

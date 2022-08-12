@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3d1a45ad00e59581f27f2e822ccb47430219c501
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857380"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070477"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ferdigmelde fra jobbkortenheten
 
@@ -50,7 +50,7 @@ Hvis du vil ha mer informasjon om hvordan du arbeider med **Standarder for produ
 
 ## <a name="report-batch-controlled-items-as-finished"></a>Rapporter ferdigstillelse av partistyrte varer
 
-Jobbkortenheten støtter tre scenarier for rapportering av partivise varer. Disse scenariene gjelder både for varer som er aktivert for avanserte lagerprosesser, og for varer som ikke er aktivert for avanserte lagerprosesser.
+Jobbkortenheten støtter tre scenarier for rapportering av partivise varer. Disse scenariene gjelder både for varer som er aktivert for Warehouse Management-prosesser (WMS), og for varer som ikke er aktivert for WMS.
 
 - **Manuelt tilordnede partinumre** – Arbeidere angir et egendefinert partinummer. Dette partinummeret kan komme fra en ekstern kilde som ikke er kjent for systemet.
 - **Forhåndsdefinerte partinumre** – Arbeidere velger et partinummer fra en liste over partinumre som systemet automatisk genererer før produksjonsordren frigis til jobbkortenheten.
@@ -129,7 +129,7 @@ Når du bruker dette scenariet, viser **Partinummer**-feltet som **Rapporter fre
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Rapporter ferdigstillelse av seriekontrollerte varer
 
-Jobbkortenheten støtter tre scenarier for rapportering av seriekontrollerte varer. Disse scenariene gjelder både for varer som er aktivert for avanserte lagerprosesser, og for varer som ikke er aktivert for avanserte lagerprosesser.
+Jobbkortenheten støtter tre scenarier for rapportering av seriekontrollerte varer. Disse scenariene gjelder både for varer som er aktivert for Warehouse Management-prosesser (WMS), og for varer som ikke er aktivert for WMS.
 
 - **Manuelt tilordnede serienumre** – Arbeidere angir et egendefinert serienummer. Dette serienummeret kan komme fra en ekstern kilde som ikke er kjent for systemet.
 - **Forhåndsdefinerte serienumre** – Arbeidere velger et serienummer fra en liste over serienumre som systemet automatisk genererer før produksjonsordren frigis til jobbkortenheten.
@@ -212,7 +212,7 @@ Når du bruker dette scenariet, viser **Serienummer**-feltet som **Rapporter fre
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Ferdigmeld til et nummerskilt
 
-Avanserte lagerprosesser kan bruke nummerskiltdimensjonen til å spore beholdning på lagerlokasjoner som er definert for dette formålet. I dette tilfellet kreves skiltnummeret når en arbeider rapporterer antall som ferdigmeldt.
+Warehouse Management-prosesser (WMS) kan bruke nummerskiltdimensjonen til å spore beholdning på lagerlokasjoner som er definert for dette formålet. I dette tilfellet kreves skiltnummeret når en arbeider rapporterer antall som ferdigmeldt.
 
 ### <a name="enable-license-plate-reporting-and-label-printing"></a>Aktivere nummerskiltrapportering og etikettutskrifter
 

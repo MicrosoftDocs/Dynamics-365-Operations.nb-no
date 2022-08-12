@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e797117199ff57cb4d3beae187ae7649579d33b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 10906d7b30628dfe69907cfa69ae1022fde33243
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853355"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070642"
 ---
 # <a name="plan-your-chart-of-accounts"></a>Planlegg kontoplanen
 
@@ -43,7 +43,7 @@ Her er noen av faktorene du må vurdere når du planlegger strukturen til kontop
 Du kan definere kontoplanen på **Kontoplan**-siden. Du kan opprette hovedkontoer fra **Kontoplan**-siden eller **Hovedkontoer**-siden. Hovedkontoene kan ikke bruke spesialtegn som brukes som skilletegn for kontoplan. Ellers kan du oppleve ustabilitet, eller du må kanskje alltid bruke oppslag eller dialogboksen når du angir kombinasjoner av kontoer og dimensjoner. Hvis du vil ha mer informasjon, kan du se [Opprette en hovedkonto](tasks/create-main-account.md).
 
 > [!NOTE]
-> I Dynamics 365 for Finance and Operations versjon 8.0 (april 2018) kan du endre skilletegn for kontoplan på **Parametere for økonomimodul**-siden.
+> I Dynamics 365 Finance versjon 8.0 (april 2018) kan du endre skilletegn for kontoplan på siden **Parametere for økonomimodul**.
 
 Det er lurt å koble hovedkontoene til hovedkontokategorier, slik at du kan dra nytte av standard økonomiske rapporter uten å måtte gjøre endringer. Derfor går det raskere og enklere å utforme og vedlikeholde rapporter.
 
@@ -60,3 +60,4 @@ Hvis du vil ha mer informasjon, se følgende emner:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

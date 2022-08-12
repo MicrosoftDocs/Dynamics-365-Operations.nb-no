@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 1218497bbb112c9a9ebeaa4cabdcb9314c604a7f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845420"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125158"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -215,7 +215,7 @@ Hvis du vil ha en liste over kjente problemer med lagrede visninger, kan du se [
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hvordan aktiverer jeg lagrede visninger i miljøet?
 
 > [!NOTE]
-> Funksjonen **Lagrede visninger** krever at tilpassingssystemet i økonomi og drift er aktivert. Hvis tilpassing er deaktivert for hele miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten nedenfor. 
+> Funksjonen **Lagrede visninger** krever at tilpassingssystemet i økonomi- og driftsappene er aktivert. Hvis tilpassing er deaktivert for hele miljøet, vil visninger bli deaktivert selv om du følger fremgangsmåten nedenfor. 
 
 Du kan aktivere og deaktivere funksjonen **Lagrede visninger** via Funksjonsbehandling i alle miljøer. Etter at den er aktivert, aktiveres lagrede visninger i alle påfølgende brukerøkter.
 
@@ -255,3 +255,4 @@ Hvis du publiserer en visning til en spesifikk juridisk enhet, men når du ikke 
 - **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren kun visningen for de angitte juridiske enheten. Dette skjer fordi funksjonen gjør det mulig å koble visninger (inkludert personlige visninger) til bestemte juridiske enheter.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

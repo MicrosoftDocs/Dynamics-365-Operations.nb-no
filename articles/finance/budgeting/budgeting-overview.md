@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a6a00bdae34e2aebcc4a015626eb044d90cd2887
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: db15c52ddde08bcc9d390c51efc676c20aac0a7e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864404"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067441"
 ---
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
@@ -38,7 +38,7 @@ Ressursplanleggingssyklusen for et selskap består vanligvis av planlegging, bud
 
 Prosessene for både langsiktig strategisk planlegging og årlig budsjettplanlegging støttes gjennom et budsjettplandokument. Budsjettplandokumenter er tett integrert med Microsoft Excel. Brukere kan konfigurere et ubegrenset antall monetære og kvantitative scenarier og kan også definere et organisasjonshierarki for budsjettering for å støtte metoder for budsjettering ovenfra og nedenfra. Når et budsjett er opprettet og godkjent i programmet, kan du konvertere budsjettplanen til en budsjettregisteroppføring. Budsjettregisteroppføringer har verktøy for å vedlikeholde budsjettet og holde beløp sporbare via budsjettkoder. Budsjettregisteroppføringer gjør at du kan endre opprinnelige budsjetter, utføre overføringer og overføre budsjettbeløp fra forrige år. Et firma kan aktivere budsjettkontroll basert på det etablerte budsjettet. Nivået av kontroll avhenger av organisasjonskulturen og modenhetsnivået for organisasjonen. Organisasjoner som har et lavt modenhetsnivå, kan la budsjettet være "som det er" og være mer reaktive enn proaktive hvis et budsjett ikke oppfyller forventningene. Andre organisasjoner kan aktivere policyer for budsjettkontroll som hindrer brukere fra å foreta kjøp hvis budsjettmidler ikke er tilgjengelige.
 
-Svært modne organisasjoner kan opprette en organisasjonskultur der ansatte har kunnskap om organisasjonsmål og følger disse målene gjennom policyer, for eksempel «Vurder nettmøte i stedet for en reise». Programmet omfatter et rammeverk for budsjettkontroll som lar ledelsen i firmaet velge hard kontroll (som forhindrer at posteringer går over budsjettet) eller myk kontroll (der brukere blir varslet om at de kommer til å overskride de tilgjengelige budsjettmidlene, men kan selv avgjøre hvordan de vil gå frem). Du kan også bruke rullerende prognoser. En rullerende prognose er en vanlig sammenligning av budsjettbeløp kontra faktiske beløp og brukes til å definere hvor bra firmaet gjør det med hensyn til budsjettet. En rullerende prognose brukes også til å identifisere trender. I Finance and Operations støttes rullerende prognoser – via et budsjettplandokument – som innledende planleggingsaktiviteter. Rullerende prognoser kan utføres parallelt med planleggingen for den kommende budsjettsyklusen.
+Svært modne organisasjoner kan opprette en organisasjonskultur der ansatte har kunnskap om organisasjonsmål og følger disse målene gjennom policyer, for eksempel «Vurder nettmøte i stedet for en reise». Programmet omfatter et rammeverk for budsjettkontroll som lar ledelsen i firmaet velge hard kontroll (som forhindrer at posteringer går over budsjettet) eller myk kontroll (der brukere blir varslet om at de kommer til å overskride de tilgjengelige budsjettmidlene, men kan selv avgjøre hvordan de vil gå frem). Du kan også bruke rullerende prognoser. En rullerende prognose er en vanlig sammenligning av budsjettbeløp kontra faktiske beløp og brukes til å definere hvor bra firmaet gjør det med hensyn til budsjettet. En rullerende prognose brukes også til å identifisere trender. I økonomi og drift støttes rullerende prognoser – via et budsjettplandokument – som innledende planleggingsaktiviteter. Rullerende prognoser kan utføres parallelt med planleggingen for den kommende budsjettsyklusen.
 
 -   [Oversikt over budsjettering](basic-budgeting-overview-configuration.md)
 -   [Oversikt over budsjettkontroll](budget-control-overview-configuration.md)
@@ -72,3 +72,4 @@ Du kan for eksempel definere hvem som skal foreta budsjettering, hva som skal bu
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

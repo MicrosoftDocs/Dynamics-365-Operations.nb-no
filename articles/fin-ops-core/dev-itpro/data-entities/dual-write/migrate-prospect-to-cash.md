@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-26
-ms.openlocfilehash: 8e5c11e535bd61e9955a4abf1491e88991ee40f1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91cc0e59405bc085e09f01f05ef02e4a0260481e
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894273"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111902"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Overfør kundeemne til kontantdata fra dataintegrator til dobbel skriving
 
@@ -32,7 +32,7 @@ Du må installere den manuelt. Etter installasjonen forblir alt nøyaktig likt, 
 
 Følg fremgangsmåten nedenfor for å overføre dataene for Kundeemne til kontanter fra Dataintegrator til dobbel skriving.
 
-1. Kjør Dataintegrator-jobbene for Kundeemne til kontanter for å utføre én siste, fullstendig synkronisering. Dermed sikrer du at begge systemene (økonomi- og driftsapper og Customer Engagement-apper) har alle dataene.
+1. Kjør Dataintegrator-jobbene for Kundeemne til kontanter for å utføre én siste, fullstendig synkronisering. Dermed sikrer du at begge systemene (økonomi- og driftsapper og kundeengasjementsapper) har alle dataene.
 2. Du kan bidra til å unngå potensielt tap av data ved å eksportere dataene for Kundeemne til kontanter fra Microsoft Dynamics 365 Sales til en Excel-fil eller en fil med kommadelte verdier (CSV-fil). Eksporter data fra følgende enheter:
 
     - [Konto](#account-table)
@@ -47,7 +47,7 @@ Følg fremgangsmåten nedenfor for å overføre dataene for Kundeemne til kontan
 
 3. Avinstaller løsningen Kundeemne til kontanter fra Sales-miljøet. Dette trinnet fjerner kolonnene og tilsvarende data som løsningen Kundeemne til kontanter innførte.
 4. Installer løsningen for dobbel skriving.
-5. Opprett en tilkobling med dobbel skriving mellom økonomi- og driftsappen og Customer Engagement-appen for én eller flere juridiske enheter.
+5. Opprett en tilkobling med dobbel skriving mellom økonomi- og driftsappen og kundeengasjementsappen for én eller flere juridiske enheter.
 6. Aktiver dobbel skriving-tabelltilordninger, og kjør den innledende synkroniseringen for de nødvendige referansedataene. (Hvis du vil ha mer informasjon, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).) Eksempler på nødvendige data omfatter kundegrupper, betalingsbetingelser og betalingsplaner. Ikke aktiver dobbel skriving-tilordninger for tabeller som krever initialisering, for eksempel tabeller for konto, tilbud, tilbudslinje, ordre og ordrelinje.
 7. I kundeengasjementsappen går du til **Avanserte innstillinger \> Systeminnstillinger \> Databehandling \> Duplikatregistreringsregler** og deaktiverer alle reglene.
 8. Initialiser tabellene som vises i trinn 2. Hvis du vil ha instruksjoner, kan du se de gjenstående delene i denne artikkelen.
@@ -76,7 +76,7 @@ Følg fremgangsmåten nedenfor for å overføre dataene for Kundeemne til kontan
 
 ## <a name="invoice-table"></a>Faktura-tabellen
 
-Siden data fra **Faktura**-tabellen er utformet for å flyte én vei, fra økonomi- og driftsappen til Customer Engagement-appen, kreves ingen initialisering. Kjør den innledende synkroniseringen for å overføre alle de nødvendige dataene fra økonomi- og driftsappen til Customer Engagement-appen. Hvis du vil ha mer informasjon, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).
+Siden data fra **Faktura**-tabellen er utformet for å flyte én vei, fra økonomi- og driftsappen til kundeengasjementsappen, kreves ingen initialisering. Kjør den innledende synkroniseringen for å overføre alle de nødvendige dataene fra økonomi- og driftsappen til kundeengasjementsappen. Hvis du vil ha mer informasjon, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).
 
 ## <a name="order-table"></a>Ordre-tabellen
 
@@ -94,7 +94,7 @@ Siden data fra **Faktura**-tabellen er utformet for å flyte én vei, fra økono
 
 ## <a name="products-table"></a>Produkter-tabellen
 
-Siden data fra **Produkter**-tabellen er utformet for å flyte én vei, fra økonomi- og driftsappen til Customer Engagement-appen, kreves ingen initialisering. Kjør den innledende synkroniseringen for å overføre alle de nødvendige dataene fra økonomi- og driftsappen til Customer Engagement-appen. Hvis du vil ha mer informasjon, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).
+Siden data fra **Produkter**-tabellen er utformet for å flyte én vei, fra økonomi- og driftsappen til kundeengasjementsappen, kreves ingen initialisering. Kjør den innledende synkroniseringen for å overføre alle de nødvendige dataene fra økonomi- og driftsappen til kundeengasjementsappen. Hvis du vil ha mer informasjon, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).
 
 ## <a name="quote-and-quote-product-tables"></a>Tabellene Tilbud og Tilbudsprodukt
 
@@ -102,3 +102,4 @@ Når det gjelder **Tilbud**-tabellen, følger du instruksjonene i [Ordre-tabelle
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

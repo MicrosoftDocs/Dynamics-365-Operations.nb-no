@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9e7d220639f5f3af26e892461928c646746963bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2d6d3fdcc0b0387a92f138b0ba7cf537f473b91a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069571"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobilt arbeidsområde for kostnadskontroll
 
@@ -29,7 +29,7 @@ ms.locfileid: "8874674"
 
 Denne artikkelen gir informasjon om det mobile arbeidsområdet for **Kostnadskontroll**. I dette arbeidsområdet kan kostsenterledere se kostsenterresultater når som helst og hvor som helst.
 
-Dette mobile arbeidsområdet er ment å brukes sammen med Økonomi og drift (Dynamics 365)-mobilappen.
+Dette mobile arbeidsområdet er ment å brukes sammen med økonomi- og driftsmobilappen (Dynamics 365).
 
 ## <a name="overview"></a>Oversikt
 Mobilt arbeidsområde for **kostnadskontroll** gir en øyeblikkelig visning av den gjeldende ytelsen til kostsentre ved å sammenligne faktiske kostnader med de budsjetterte kostnadene. Du kan drille ned til statusen for individuelle kostnadselementer.
@@ -114,7 +114,7 @@ Hvis versjon 1611 med Platform update 3 eller nyere er distribuert i organisasjo
 
 
 ## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
-Last ned og installer mobilappen Økonomi og drift (Dynamics 365):
+Last ned og installer økonomi- og driftsmobilappen (Dynamics 365):
 
 -   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -146,3 +146,4 @@ Last ned og installer mobilappen Økonomi og drift (Dynamics 365):
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

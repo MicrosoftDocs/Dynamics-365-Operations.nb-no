@@ -1,36 +1,36 @@
 ---
 title: Samlet produktopplevelse
-description: Denne artikkelen beskriver integreringen av produktdata mellom Økonomi og drift-apper og Dataverse.
+description: Denne artikkelen beskriver integreringen av produktdata mellom økonomi- og driftsapper og Dataverse.
 author: t-benebo
-ms.date: 12/12/2019
+ms.date: 06/23/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a8071887678f16a0b8ee075d2aa24a07e4df5319
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1546cdaf3c63a7ff9a330ae8609595aaf48fbc48
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885005"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111494"
 ---
-# <a name="unified-product-experience"></a>Ensartet produktopplevelse
+# <a name="unified-product-experience"></a>Samlet produktopplevelse
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Når et forretningsøkosystem består av Dynamics 365-programmer, for eksempel Finance, Supply Chain Management og Sales, bruker bedrifter ofte disse programmene for produktdata. Dette er fordi disse appene tilbyr en robust produktinfrastruktur som er komplettert med avanserte prissettingskonsepter og nøyaktige lagerbeholdningsdata. Bedrifter som bruker et eksternt PLM-system (Product Lifecycle Management ) for produktdata, kan kanalisere produkter fra Finance and Operations-apper til andre Dynamics 365-apper. Den enhetlige produktopplevelsen bringer i den integrerte produktdatamodellen til Dataverse, slik at alle programbrukere, inkludert Power Platform-brukere, kan dra nytte av de rike produktdataene som kommer fra Finance and Operations-apper.
+Når et forretningsøkosystem består av Dynamics 365-programmer, for eksempel Finance, Supply Chain Management og Sales, bruker bedrifter ofte disse programmene for produktdata. Dette er fordi disse appene tilbyr en robust produktinfrastruktur som er komplettert med avanserte prissettingskonsepter og nøyaktige lagerbeholdningsdata. Bedrifter som bruker et eksternt PLM-system (Product Lifecycle Management ) for produktdata, kan kanalisere produkter fra økonomi- og driftsapper til andre Dynamics 365-apper. Den enhetlige produktopplevelsen bringer i den integrerte produktdatamodellen til Dataverse, slik at alle programbrukere, inkludert Power Platform-brukere, kan dra nytte av de rike produktdataene som kommer fra økonomi- og driftsapper.
 
 Her er produktdatamodellen fra Sales.
 
 ![Datamodell for produkter i CE.](media/dual-write-product-4.jpg)
 
-Her er produktdatamodellen fra Finance and Operations-apper.
+Her er produktdatamodellen fra økonomi- og driftsapper.
 
-![Datamodell for produkter i økonomi- og drift.](media/dual-write-products-5.jpg)
+![Datamodell for produkter i Finance and Operations.](media/dual-write-products-5.jpg)
 
 Disse to produktdatamodellene er integrert i Dataverse, som vist nedenfor.
 
@@ -64,7 +64,7 @@ Finance and Operations-apper | Andre Dynamics 365-apper | Beskrivelse
 [Frigitte produkter V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | Tabellen **msdyn\_sharedproductdetails** inneholder kolonnene fra økonomi- og driftsapper som definerer produktet og inneholder informasjon om produktets økonomi og administrasjon.
 [Størrelser](mapping-reference.md#174) | msdyn\_productsizes
 [Lagringsdimensjonsgrupper](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | Produktlagringsdimensjonsgruppen representerer metoden som brukes til å definere plasseringen av produktet i lageret.
-[Stiler](mapping-reference.md#178) | msdyn\_productsytles
+[Stiler](mapping-reference.md#178) | msdyn\_productstyles
 [Sporingsdimensjonsgrupper](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | Produktsporingsdimensjonsgruppen representerer metoden som brukes til å spore produktet i beholdningen.
 [Enheter](mapping-reference.md#219) | uoms
 [Enhetsomregninger](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
@@ -81,11 +81,11 @@ Fordi produktet er representert som en SKU, kan begrepene for spesifikke produkt
 
 ![Datamodell for produkter.](media/dual-write-product.png)
 
-Når funksjonen for dobbel skriving aktivert, vil produktene fra økonomi og drift bli synkronisert i andre Dynamics 365-produkter i **Utkast**-tilstand. De legges til i den første prislisten med samme valuta som brukes i Customer Engagement-appen, og ved hjelp av alfabetisk sortering på prislistenavnet. De legges med andre ord til i den første prislisten i en Dynamics 365-app som samsvarer med valutaen til den juridiske enheten der produktet frigis i en økonomi- og driftsapp. Hvis ingen prisliste finnes for den angitte valutaen, opprettes det automatisk en prisliste, og produktet tilordnes til den.
+Når funksjonen for dobbel skriving aktivert, vil produktene fra Finance and Operations bli synkronisert i andre Dynamics 365-produkter i **Utkast**-tilstand. De legges til i den første prislisten med samme valuta som brukes i Customer Engagement-appen, og ved hjelp av alfabetisk sortering på prislistenavnet. De legges med andre ord til i den første prislisten i en Dynamics 365-app som samsvarer med valutaen til den juridiske enheten der produktet frigis i en økonomi- og driftsapp. Hvis ingen prisliste finnes for den angitte valutaen, opprettes det automatisk en prisliste, og produktet tilordnes til den.
 
-Den gjeldende implementeringen av plugin-modulene for dobbel skriving som knytter standard prisliste til enheten, slår opp valutaen som er knyttet til økonomi- og driftsappen, og finner den første prislisten i kundeavtaleappen ved hjelp av alfabetisk sortering i prislistenavnet. Hvis du vil definere en standard prisliste for en bestemt valuta når du har flere prislister for den valutaen, må du oppdatere prislistenavnet til et navn som er tidligere i alfabetisk rekkefølge enn noen andre prislister for den samme valutaen. Hvis det ikke har noen prisliste for den angitte valutaen, opprettes det en ny.
+Den gjeldende implementeringen av plugin-modulene for dobbel skriving som knytter standard prisliste til enheten, slår opp valutaen som er knyttet til økonomi- og driftsappen, og finner den første prislisten i kundeengasjementsappen ved hjelp av alfabetisk sortering i prislistenavnet. Hvis du vil definere en standard prisliste for en bestemt valuta når du har flere prislister for den valutaen, må du oppdatere prislistenavnet til et navn som er tidligere i alfabetisk rekkefølge enn noen andre prislister for den samme valutaen. Hvis det ikke har noen prisliste for den angitte valutaen, opprettes det en ny.
 
-Som standard synkroniseres produkter fra Finance and Operations-apper til andre Dynamics 365-apper i **Utkast**-status. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, slik at du for eksempel kan bruke det direkte i salgsordretilbud, må følgende innstilling velges: Under **System > Administrasjon > Systemadministrasjon > Systeminnstillinger > Salg** velger du **Opprett produkter i aktiv tilstand = ja**.
+Som standard synkroniseres produkter fra økonomi- og driftsapper til andre Dynamics 365-apper i **Utkast**-status. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, slik at du for eksempel kan bruke det direkte i salgsordretilbud, må følgende innstilling velges: Under **System > Administrasjon > Systemadministrasjon > Systeminnstillinger > Salg** velger du **Opprett produkter i aktiv tilstand = ja**.
 
 Når produkter synkroniseres, må du angi en verdi for **Salgsenhet-feltet** i økonomi- og driftsappen siden dette er et obligatorisk felt i Sales.
 
@@ -109,7 +109,7 @@ Finance and Operations-apper | Kundeengasjementsapper |
 ---|---
 [Farger](mapping-reference.md#170) | msdyn\_productcolors
 [Størrelser](mapping-reference.md#174) | msdyn\_productsizes
-[Stiler](mapping-reference.md#178) | msdyn\_productsytles
+[Stiler](mapping-reference.md#178) | msdyn\_productstyles
 [Konfigurasjoner](mapping-reference.md#171) | msdyn\_productconfigurations
 
 Når et produkt har forskjellige produktdimensjoner (en produktstandard har for eksempel Størrelse og Farge som produktdimensjoner), vil hvert enkelt produkt (det vil si hver produktvariant) defineres som en kombinasjon av disse produktdimensjonene. Produktnummer B0001 er for eksempel en ekstra liten svart T-skjorte, og produktnummer B0002 er en liten svart T-skjorte. I dette tilfellet er de eksisterende kombinasjonene av produktdimensjoner definert. T-skjorten fra det foregående eksemplet kan for eksempel være ekstra liten og svart, liten og svart, medium og svart, eller stor og svart, men den kan ikke være ekstra stor og svart. Det vil si at produktdimensjonene for en produktstandard blir angitt, og varianter kan frigis basert på disse verdiene.
@@ -139,7 +139,7 @@ Måleenhetene og de tilsvarende konverteringene er tilgjengelige i Dataverse ett
 
 ![Datamodell for måleenhet.](media/dual-write-product-three.png)
 
-Begrepet måleenhet er integrert mellom Finance and Operations-apper og andre Dynamics 365-apper. For hver enhetsklasse i en Finance and Operations-app opprettes en enhetsgruppe i en Dynamics 365-app, som inneholder enhetene som tilhører enhetsklassen. En standard basisenhet opprettes også for hver enhetsgruppe.
+Begrepet måleenhet er integrert mellom økonomi- og driftsapper og andre Dynamics 365-apper. For hver enhetsklasse i en økonomi- og driftsapp opprettes en enhetsgruppe i en Dynamics 365-app, som inneholder enhetene som tilhører enhetsklassen. En standard basisenhet opprettes også for hver enhetsgruppe.
 
 Finance and Operations-apper | Kundeengasjementsapper |
 ---|---
@@ -151,24 +151,24 @@ Finance and Operations-apper | Kundeengasjementsapper |
 
 ### <a name="initial-synchronization-of-units"></a>Innledende synkronisering av enheter
 
-Når dobbel skriving er aktivert, synkroniseres enheter fra Finance and Operations-apper til andre Dynamics 365-apper. Enhetsgruppene som synkroniseres fra økonomi- og driftsapper i Dataverse, har et flaggsett som angir at de er "eksternt vedlikeholdt".
+Når dobbel skriving er aktivert, synkroniseres enheter fra økonomi- og driftsapper til andre Dynamics 365-apper. Enhetsgruppene som synkroniseres fra økonomi- og driftsapper i Dataverse, har et flaggsett som angir at de er "eksternt vedlikeholdt".
 
-### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Samsvare enheter og enhetsklasser/gruppedata fra Finance and Operations-apper og andre Dynamics 365-apper
+### <a name="matching-units-and-unit-classesgroups-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Samsvare enheter og enhetsklasser/gruppedata fra økonomi- og driftsapper og andre Dynamics 365-apper
 
 For det første er det viktig å være klar over at integreringsnøkkelen for enheten er msdyn_symbol. Denne verdien må derfor være unik i Dataverse eller andre Dynamics 365-apper. Fordi det i andre Dynamics 365-apper er paret "enhetsgruppe-ID" og "navn" som definerer den unike enhetstypen, må du vurdere ulike scenarioer for å samsvare enhetsdata mellom økonomi- og driftsapper og Dataverse.
 
-For enheter som samsvarer/overlapper i Finance and Operations-apper og andre Dynamics 365-apper:
+For enheter som samsvarer/overlapper i økonomi- og driftsapper og andre Dynamics 365-apper:
 
-+ **Enheten tilhører en enhetsgruppe i andre Dynamics 365-apper som tilsvarer den tilknyttede enhetsklassen i Finance and Operations-apper**. I dette tilfellet må kolonnen msdyn_symbol i andre Dynamics 365-apper fylles ut med enhetssymbolet fra økonomi- og driftsapper. Derfor, når en enhetsgruppe skal samsvares, settes enhetsgruppen til "eksternt vedlikeholdt" i andre Dynamics 365-apper.
-+ **Enheten tilhører en enhetsgruppe i andre Dynamics 365-apper som ikke samsvarer med den tilknyttede enhetsklassen i Finance and Operations-apper (ingen eksisterende enhetsklasse i Finance and Operations-apper for enhetsklassen i andre Dynamics 365-apper).** I dette tilfellet må msdyn_symbol fylles ut med en tilfeldig streng. Merk at denne verdien må derfor være unik i andre Dynamics 365-apper.
++ **Enheten tilhører en enhetsgruppe i andre Dynamics 365-apper som tilsvarer den tilknyttede enhetsklassen i økonomi- og driftsapper**. I dette tilfellet må kolonnen msdyn_symbol i andre Dynamics 365-apper fylles ut med enhetssymbolet fra økonomi- og driftsapper. Derfor, når en enhetsgruppe skal samsvares, settes enhetsgruppen til "eksternt vedlikeholdt" i andre Dynamics 365-apper.
++ **Enheten tilhører en enhetsgruppe i andre Dynamics 365-apper som ikke samsvarer med den tilknyttede enhetsklassen i økonomi- og driftsapper (ingen eksisterende enhetsklasse i økonomi- og driftsapper for enhetsklassen i andre Dynamics 365-apper).** I dette tilfellet må msdyn_symbol fylles ut med en tilfeldig streng. Merk at denne verdien må derfor være unik i andre Dynamics 365-apper.
 
-For enheter og enhetsklasser i Finance and Operations-apper som ikke finnes i andre Dynamics 365-apper:
+For enheter og enhetsklasser i økonomi- og driftsapper som ikke finnes i andre Dynamics 365-apper:
 
 Som en del av dobbel skriving opprettes og synkroniseres enhetsgruppene fra økonomi- og driftsapper og tilsvarende enheter i andre Dynamics 365-apper og Dataverse, og enhetsgruppen angis som "eksternt vedlikeholdt". Det kreves ingen ekstra oppstart.
 
-For enheter i andre Dynamics 365-apper som ikke finnes i Finance and Operations-apper:
+For enheter i andre Dynamics 365-apper som ikke finnes i økonomi- og driftsapper:
 
-Kolonnen msdyn_symbol må fylles ut for alle enheter. Enhetene kan alltid opprettes i Finance and Operations-apper i den tilsvarende enhetsklassen (hvis det finnes). Hvis enhetsklassen ikke finnes, må den først opprettes (vær oppmerksom på at du ikke kan opprette en enhetsklasse i økonomi- og driftsapper bortsett ved utvidelse hvis du utvider opplistingen) som samsvarer med andre Dynamics 365-apper. Du kan deretter opprette enheten. Merk at enhetssymbolet i Finance and Operations-apper må være msdyn_symbol som er definert tidligere i andre Dynamics 365-apper for enheten.
+Kolonnen msdyn_symbol må fylles ut for alle enheter. Enhetene kan alltid opprettes i økonomi- og driftsapper i den tilsvarende enhetsklassen (hvis det finnes). Hvis enhetsklassen ikke finnes, må den først opprettes (vær oppmerksom på at du ikke kan opprette en enhetsklasse i økonomi- og driftsapper bortsett ved utvidelse hvis du utvider opplistingen) som samsvarer med andre Dynamics 365-apper. Du kan deretter opprette enheten. Merk at enhetssymbolet i økonomi- og driftsapper må være msdyn_symbol som er definert tidligere i andre Dynamics 365-apper for enheten.
 
 ## <a name="product-policies-dimension-tracking-and-storage-groups"></a>Produktpolicyer: dimensjoner, sporing og lagringsgrupper
 
@@ -190,7 +190,7 @@ Finance and Operations-apper | Kundeengasjementsapper |
 
 ## <a name="integration-key-for-products"></a>Integreringsnøkkel for produkter
 
-Fo å identifisere produkter unikt mellom Dynamics 365 for Finance and Operations og produkter i Dataverse brukes integrasjonsnøkler.
+Fo å identifisere produkter unikt mellom Dynamics 365 Finance og produkter i Dataverse brukes integrasjonsnøkler.
 For produkter er **(productnumber)** den unike nøkkelen som identifiserer et produkt i Dataverse. Den består av sammenkoblingen av: **(firma, msdyn_productnumber)**. **Firmaet** angir den juridiske enheten i Finance and Operations og **msdyn_productnumber** angir produktnummeret for det bestemte produktet i Finance and Operations.
 
 For brukere av andre Dynamics 365-apper er produktet identifisert i brukergrensesnittet med **msdyn_productnumber** (vær oppmerksom på at etiketten for kolonnen er **Produktnummer**). I produktskjemaet vises både selskapet og msydn_productnumber. Men (productnumber)-kolonnen, den unike nøkkelen for et produkt, vises ikke.
@@ -201,17 +201,18 @@ Hvis du bygger apper på Dataverse, bør du være oppmerksom på å bruke **prod
 
 ### <a name="initial-synchronization-of-products"></a>Innledende synkronisering av produkter
 
-Når dobbel skriving er aktivert, synkroniseres produkter fra økonomi- og driftsapper til Dataverse- og Customer Engagement-apper. Produkter som er opprettet i Dataverse og andre Dynamics 365-apper før dobbel skriving ble lansert, blir ikke oppdatert eller samsvart med produktdata fra økonomi- og driftsapper.
+Når dobbel skriving er aktivert, synkroniseres produkter fra økonomi- og driftsapper til Dataverse- og kundeengasjementsapper. Produkter som er opprettet i Dataverse og andre Dynamics 365-apper før dobbel skriving ble lansert, blir ikke oppdatert eller samsvart med produktdata fra økonomi- og driftsapper.
 
 ### <a name="matching-product-data-from-finance-and-operations-and-other-dynamics-365-apps"></a>Samsvare produktdata fra Finance and Operations og andre Dynamics 365-apper
 
-Hvis de samme produktene beholdes (overlappende/samsvarende) i økonomi og drift og i Dataverse og andre Dynamics 365-apper, vil aktivering av dobbel skriving vil synkroniseringen av produkter fra økonomi og drift finne sted, og like rader vil vises i Dataverse for det samme produktet.
-For å unngå den forrige situasjonen, hvis andre Dynamics 365-apper har produkter som overlapper/samsvarer med økonomi og drift, må administratoren som aktiverer dobbel skriving, starte opp kolonnene **Selskap** (eksempel: "USMF") og **msdyn_productnumber** (eksempel: "1234: Black:S") før synkronisering av produkter finner sted. Med andre ord må disse to kolonnene i produktet i Dataverse fylles ut med det respektive selskapet i økonomi og drift som produktet må samsvares med, og med produktnummeret.
+Hvis de samme produktene beholdes (overlappende/samsvarende) i Finance and Operations og i Dataverse og andre Dynamics 365-apper, vil aktivering av dobbel skriving vil synkroniseringen av produkter fra Finance and Operations finne sted, og like rader vil vises i Dataverse for det samme produktet.
+For å unngå den forrige situasjonen, hvis andre Dynamics 365-apper har produkter som overlapper/samsvarer med Finance and Operations, må administratoren som aktiverer dobbel skriving, starte opp kolonnene **Selskap** (eksempel: "USMF") og **msdyn_productnumber** (eksempel: "1234: Black:S") før synkronisering av produkter finner sted. Med andre ord må disse to kolonnene i produktet i Dataverse fylles ut med det respektive selskapet i Finance and Operations som produktet må samsvares med, og med produktnummeret.
 
 Når synkroniseringen er aktivert og finner sted, blir produktene fra Finance and Operations synkronisert med de samsvarende produktene i Dataverse og andre Dynamics 365-apper. Dette gjelder både for forskjellige produkter og produktvarianter.
 
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Overføring av produktdata fra Dynamics 365-apper til Finance and Operations
 
-Hvis andre Dynamics 365-apper har produkter som ikke finnes i økonomi og drift, kan administratoren først bruke **EcoResReleasedProductCreationV2Entity** til å importere disse produktene i økonomi og drift. Samsvar deretter produktdataene fra Finance and Operations og andre Dynamics 365-apper som beskrevet ovenfor.
+Hvis andre Dynamics 365-apper har produkter som ikke finnes i Finance and Operations, kan administratoren først bruke **EcoResReleasedProductCreationV2Entity** til å importere disse produktene i Finance and Operations. Samsvar deretter produktdataene fra Finance and Operations og andre Dynamics 365-apper som beskrevet ovenfor.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

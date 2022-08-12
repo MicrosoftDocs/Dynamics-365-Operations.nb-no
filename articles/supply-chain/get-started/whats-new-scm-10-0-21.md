@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a78b4c37bfca9fedbd46cd8a16b47bd4444fbfee
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 91462cc589be6170418f7f78267feea5e25c037d
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849539"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123786"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -137,7 +137,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeartikler. De er 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for Finance and Operations-apper
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for økonomi- og driftsapper
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.21 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.21 av økonomi- og driftsapper (oktober 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
@@ -164,3 +164,4 @@ For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

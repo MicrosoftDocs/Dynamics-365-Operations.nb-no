@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6f8f43bcdaae9a14350c66039d204caf38d33768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5c8fa259e51f024d19c1f2f7e84ed7edd0ddb7e1
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906978"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069036"
 ---
 # <a name="wave-execution-notifications"></a>Varslinger for bølgekjøring
 
@@ -28,7 +28,7 @@ Funksjonen *Varslinger for bølgekjøring* bruker forretningshendelser og handli
 
 Knappen **Vis meldinger** (klokkesymbolet) til høyre på navigasjonslinjen viser når en handlingssentermelding er tilgjengelig for den gjeldende brukeren. Brukeren kan velge **Vis meldinger**-knappen for å åpne handlingssenteret og se gjennom meldingene.
 
-Forretningshendelser forekommer når forretningsprosesser kjøres. Forretningsprosesser består av oppgaver. Under en forretningsprosess utfører brukerne som deltar i den, forretningshandlinger for å fullføre disse oppgavene. Forretningshendelser inneholder en mekanisme som gjør at eksterne systemer kan motta varslinger fra økonomi- og driftsprogrammer. På denne måten kan systemene utføre forretningshandlinger som svar på forretningshendelsene. Hvis du vil ha mer informasjon, kan du se [Oversikt over forretningshendelser](../../fin-ops-core/dev-itpro/business-events/home-page.md).
+Forretningshendelser forekommer når forretningsprosesser kjøres. Forretningsprosesser består av oppgaver. Under en forretningsprosess utfører brukerne som deltar i den, forretningshandlinger for å fullføre disse oppgavene. Forretningshendelser inneholder en mekanisme som gjør at eksterne systemer kan motta varslinger fra økonomi- og driftsapper. På denne måten kan systemene utføre forretningshandlinger som svar på forretningshendelsene. Hvis du vil ha mer informasjon, kan du se [Oversikt over forretningshendelser](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
 ## <a name="turn-the-wave-execution-notifications-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Varslinger for bølgekjøring
 
@@ -125,3 +125,4 @@ Avhengig av oppsettet av forretningshendelsene vil du til slutt få et varsel om
 > Åpne bølgedetaljer
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

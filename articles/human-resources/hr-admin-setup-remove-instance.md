@@ -1,6 +1,6 @@
 ---
 title: Fjerne en forekomst
-description: Denne artikkelen leder deg gjennom prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
+description: Denne artikkelen beskriver prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -14,16 +14,22 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4256938be70f301d3d7b7663f10addb19725b048
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0ce676c93e133cc04ad9c49417ed2ca0d6791e93
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859640"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178480"
 ---
 # <a name="remove-an-instance"></a>Fjerne en forekomst
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gjelder For:** Human Resources i den frittstående infrastrukturen_ 
+
+> [!NOTE]
+> Fra og med juli 2022 kan ikke nye Human Resources-miljøer klargjøres i den frittstående Human Resources-infrastrukturen, og nye Microsoft Dynamics Lifecycle Services-prosjekter (LCS) kan ikke opprettes i den. Kunder kan distribuere Human Resources-miljøer i infrastrukturen i Finance and Operations. Hvis du vil ha mer informasjon , kan du se [Klargjøring av Human Resources i infrastrukturen i Finance and Operations](/hr-admin-setup-provision-fo.md).
+
+> [!IMPORTANT]
+> Finance and Operations-infrastrukturen støtter sletting av et miljø. Hvis du vil ha mer informasjon om hvordan du sletter et miljø, kan du se [Slett et miljø](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 Denne artikkelen forklarer prosessen med å fjerne en testkjøring eller et produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 
@@ -42,10 +48,13 @@ Det eksisterende testversjonsmiljøet fjernes. Når det fjernes, kan du registre
 
 Denne artikkelen antar at du har kjøpt Human Resources gjennom en Cloud Solution Provider (CSP)- eller en enterprise architecture (EA)-avtale. 
 
-Siden et enkelt Human Resources-miljø er inkludert i et enkelt Power Apps-miljø, finnes det to alternativer du bør vurdere. Første alternativ er å fjerne hele Power Apps-miljøet. Det andre alternativet er å fjerne bare Human Resources. Det første alternativet bør velges når du har opprettet et Power Apps-miljø uttrykkelig for klargjøring av Human Resources, og du akkurat har begynt implementering, eller du ikke har noen etablerte integreringer. Det andre alternativet er riktig når du har et etablert Power Apps-miljø fylt ut med rike data som brukes i Power Apps og Power Automate.
+Siden et enkelt Human Resources-miljø er inkludert i et enkelt Power Apps-miljø, finnes det to alternativer du bør vurdere når du skal fjerne et miljø: 
+- **Fjern hele Power Apps-miljøet.** Dette alternativet bør velges når Power Apps-miljøet ble opprettet uttrykkelig for klargjøring av Human Resources, og implementering nettopp er begynt, eller du ikke har noen etablerte integreringer.  
+- **Fjern bare Human Resources.** Dette alternativet passer når du har et etablert Power Apps-miljø fylt ut med rike data som brukes i Microsoft Power Apps og Power Automate.
+
 
 > [!Important]
-> Før du fjerner Power Apps-miljøet, kontrollerer du at det ikke brukes for rike data-integreringer utenfor området for Human Resources. Merk også at standard Power Apps-miljøer ikke kan fjernes. 
+> Før du fjerner Power Apps-miljøet, kontrollerer du at det ikke brukes for dataintegreringer utenfor området for Human Resources. Merk også at standard Power Apps-miljøer ikke kan fjernes. 
 
 Slik fjerner du hele Power Apps-miljøet, inkludert Human Resources og tilknyttede apper og flyter:
 
@@ -73,7 +82,7 @@ Hvis du vil fjerne et Human Resources-miljø fra et eksisterende Power Apps-milj
 
 ## <a name="recover-a-soft-deleted-environment"></a>Gjenopprette et mykt slettet miljø
 
-Hvis du sletter Power Apps-miljøet som personalmiljøet ditt er koblet til, vil statusen for personalmiljøet i Lifecycle Services være **Mykt slettet**. I dette tilfellet kan ikke brukere koble til personalmiljøet.
+Hvis du sletter Power Apps-miljøet som personalmiljøet ditt er koblet til, vil statusen for personalmiljøet i LCS være **Mykt slettet**. I dette tilfellet kan ikke brukere koble til personalmiljøet.
 
 Slik gjenoppretter du miljøet:
 

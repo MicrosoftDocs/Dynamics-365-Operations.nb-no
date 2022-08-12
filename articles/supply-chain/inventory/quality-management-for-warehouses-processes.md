@@ -1,6 +1,6 @@
 ---
 title: Kvalitetsstyring for lagerprosesser
-description: Denne artikkelen inneholder informasjon om funksjonen for kvalitetsstyring for lagerprosesser. Denne funksjonen utvider funksjonaliteten til kvalitetsstyring og lar brukere integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av avansert lagerstyring.
+description: Denne artikkelen inneholder informasjon om funksjonen for kvalitetsstyring for lagerprosesser. Denne funksjonen utvider funksjonaliteten til kvalitetsstyring og lar brukere integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av Warehouse Management-prosesser (WMS).
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -12,18 +12,18 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 7f806b58c5e956e4f26158e8ea5c90a559296655
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13c9bf522ededb5896c5f8462bfe123e9a9edb2c
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857844"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069250"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerprosesser
 
 [!include [banner](../includes/banner.md)]
 
-Med funksjonen _Kvalitetsstyring for lagerprosesser_ kan du integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av avansert lagerstyring. Lagerarbeid kan genereres automatisk for å flytte lager til kvalitetskontroll-lokasjonen, basert på en prosent eller et fast antall, eller basert på hvert *n*-te nummerskilt. Etter at en kvalitetsordre er fullført, kan det genereres arbeid automatisk for å flytte lageret til neste sted i prosessen, avhengig av kvalitetsresultatet.
+Med funksjonen _Kvalitetsstyring for lagerprosesser_ kan du integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av Warehouse Management-prosesser (WMS). Lagerarbeid kan genereres automatisk for å flytte lager til kvalitetskontroll-lokasjonen, basert på en prosent eller et fast antall, eller basert på hvert *n*-te nummerskilt. Etter at en kvalitetsordre er fullført, kan det genereres arbeid automatisk for å flytte lageret til neste sted i prosessen, avhengig av kvalitetsresultatet.
 
 Funksjonen _Kvalitetsstyring for lagerprosesser_ utvider funksjonaliteten til den grunnleggende kvalitetsstyringsfunksjonen. Her kan du opprette kvalitetsordrer for lageret som er sendt til kvalitetskontroll-lokasjonen, selv om kvalitetsordrer ikke alltid kreves. Derfor er det mulig å kontrollere en lett kvalitetskontrollprosess som er basert på lagerarbeid.
 
@@ -77,7 +77,7 @@ Før funksjonen _Kvalitetsstyringen for lagerprosesser_ kan brukes for et bestem
 
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
 1. Velg lageret som skal aktivereres for kvalitetsstyring.
-1. I hurtigfanen **Lager** setter du alternativet **Aktiver kvalitetsordre for lagerprosesser** til _Ja_. (Merk at dette alternativet bare kan settes til _Ja_ for lagre som bruker lagerstyringsprosesser.)
+1. I hurtigfanen **Lager** setter du alternativet **Aktiver kvalitetsordre for lagerprosesser** til _Ja_. (Merk at dette alternativet bare kan settes til _Ja_ for lagre som bruker Warehouse Management-prosesser (WMS).)
 
 Når alternativet **Aktiver kvalitetsordre for lagerprosesser** er satt til _Ja_, kontrollerer kvalitetstilknytningsoppsettet om funksjonen _Kvalitetsstyring for lagerprosesser_ faktisk brukes for det valgte lageret. Du kan når som helst endre innstillingen for alternativet _Nei_. I så fall gjelder ikke funksjonen lenger for lageret, uansett hvilket kvalitetstilknytningsoppsett som er definert.
 
@@ -97,7 +97,7 @@ Hver [kvalitetstilknytningspost](enable-quality-management.md) definerer dessute
     - **Alle** – Deaktiver funksjonen _Kvalitetsstyring for lagerprosesser_. Velg denne verdien for alle referansetyper unntatt *Innkjøp* og *Produksjon*.
 
 > [!NOTE]
-> Funksjonen _Kvalitetsstyring for lagerprosesser_ trer bare i kraft hvis varen på kildedokumentlinjen bruker avanserte lagerstyringsprosesser, og hvis alternativet **Aktiver kvalitetsordre for lagerprosesser** er satt til _Ja_ for lageret på kildedokumentlinjen.
+> Funksjonen _Kvalitetsstyring for lagerprosesser_ trer bare i kraft hvis varen på kildedokumentlinjen bruker Warehouse Management-prosesser (WMS), og hvis alternativet **Aktiver kvalitetsordre for lagerprosesser** er satt til _Ja_ for lageret på kildedokumentlinjen.
 
 Etter hvert som hver vare blir registrert (eller ferdigmeldt), bestemmer systemet hvilke kvalitetstilknytninger som skal gjelde for den.
 

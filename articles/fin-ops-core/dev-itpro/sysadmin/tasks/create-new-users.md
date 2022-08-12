@@ -13,26 +13,26 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 00da7c69ff18abd02ca0cd7984e9b2de5e453a0c
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595392"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103333"
 ---
 # <a name="create-new-users"></a>Opprette nye brukere
 
 [!include [banner](../../includes/banner.md)]
 
-Før du får tilgang til Finance and Operations-apper, må du først legges til på **Bruker**-siden (**Systemadministrasjon \> Brukere \> Brukere**). Brukere omfatter interne ansatte i organisasjonen eller eksterne kunder og leverandører. Brukere kan importeres eller legges til manuelt. Alle brukere må lisensieres riktig for bruk i samsvar med forskriftene.
+Før du får tilgang til økonomi og driftsapper, må du først legges til på **Brukere**-siden (**Systemadministrasjon \> Brukere \> Brukere**). Brukere omfatter interne ansatte i organisasjonen eller eksterne kunder og leverandører. Brukere kan importeres eller legges til manuelt. Alle brukere må lisensieres riktig for bruk i samsvar med forskriftene.
 
-Hvis du vil ha informasjon om hvordan du kjøper og lisensierer for Finance and Operations-apper, kan du se [lisensieringsveiledningen for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
+Hvis du vil ha informasjon om hvordan du kjøper og lisensierer for økonomi- og driftsapper, kan du se [lisensieringsveiledningen for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Tilordne en lisens til en bruker
-Systemadministratorer kan [tilordne lisenser til brukere](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) i [administrasjonssenteret for Microsoft 365](/office365/admin/admin-overview/about-the-admin-center).
+Systemadministratorer kan [tilordne lisenser til brukere](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) i [Microsoft 365-administrasjonssenteret](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Legge til en ekstern bruker i Azure AD og tilordne en lisens 
-Eksterne brukere må være representert i leierkatalogen (Azure Active Directory (Azure AD)), slik at de kan tilordnes lisenser. Disse eksterne brukerne må legges til for leieren i Azure AD som gjestebrukere og deretter tilordnes de aktuelle lisensene. Et krav for Finance and Operations-apper er at gjestebrukerens firma må bruke Azure AD. Hvis du vil ha mer informasjon, kan du se [Legge til Azure Active Directory B2B-samarbeidsbrukere i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
+Eksterne brukere må være representert i leierkatalogen (Azure Active Directory (Azure AD)), slik at de kan tilordnes lisenser. Disse eksterne brukerne må legges til for leieren i Azure AD som gjestebrukere og deretter tilordnes de aktuelle lisensene. Et krav for økonomi- og driftsapper er at gjestebrukerens firma må bruke Azure AD. Hvis du vil ha mer informasjon, kan du se [Legge til Azure Active Directory B2B-samarbeidsbrukere i Azure-portalen](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Importere nye brukere fra Azure AD 
 1. Gå til **Systemadministrasjon** \> **Brukere** \> **Brukere**.

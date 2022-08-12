@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45316c40cce988c0758e70af627b0123ec1f7873
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: c1acc103291c5d648ac7e179a598348cd9cc2a93
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8670447"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135577"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk verdi og merking
 
@@ -128,7 +128,7 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 - 6a. Fysisk lageravgang av et antall på 1 til kostpris USD 23,00 per stykk (glidende gjennomsnitt av økonomisk posterte transaksjoner)
 - 7\. Lagerlukking utføres. Basert på merkingsprinsippet som bruker LIFO-metoden, utlignes de merkede transaksjonene mot hverandre. I dette eksemplet utlignes 3b mot 2b, og en justering på USD 6,00 posteres til 3b for å få verdien til å bli USD 22,00. I dette eksemplet utføres ingen flere utligninger, fordi lukkingen oppretter utligninger bare for økonomisk oppdaterte transaksjoner.
 
-Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50.
+Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 17,50.
 
 Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger.
 

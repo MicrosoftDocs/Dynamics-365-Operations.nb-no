@@ -10,18 +10,16 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 27470f302b91fa3fa22f47438fa0f936beb7e7d0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
+ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846191"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9135465"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startside for Globalt lagerregnskap
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 Internasjonale organisasjoner er under økt press fra myndighetene for å overholde lokale og globale regnskapsstandarder. Vurderingen av lageret har en viktig rolle for å sikre samsvar. Tillegget Globalt lagerregnskap for Microsoft Dynamics 365 Supply Chain Management gir en omfattende løsning som gjør det mulig for organisasjoner (spesielt internasjonale organisasjoner) å bruke flere finansmoduler for kostnader til å utføre lagerregnskap. Derfor kan disse organisasjonene samsvare med flere regnskapsstandarder og internt styringsregnskap samtidig.
 

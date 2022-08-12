@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 171b383e1549babd76fd18e4932436a66aa62cc1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f0371cf9862afaf3bc43a44def725c420e9aaf56
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873934"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166751"
 ---
 # <a name="vendor-invoice-entities"></a>Leverandørfakturaenheter
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 Ved hjelp av modulen **Landingskostnad** er det mulig å konfigurere kostnadstypekoder for interne kostnader eller eksternt avledede kostnader. Hvis en kostnad er ekstern for en virksomhet, forventes det en faktura fra tjenesteleverandør. Denne fakturaen behandles som en fakturajournal som kan knyttes til en reise, og verdien av fakturaen kan distribueres på tvers av én eller flere kostnader for reisen.
 

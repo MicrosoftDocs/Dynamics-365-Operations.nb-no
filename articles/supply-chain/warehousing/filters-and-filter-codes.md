@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f3d6cd373699d374c019f0db7befaffc169f4f6c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7d6524cb9109263ad62d221ec98e546b962b89ee
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8850445"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067536"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurere produktfiltre for lagertransaksjoner
 
@@ -95,7 +95,7 @@ Hvis du vil konfigurere filterkoder for varegrupper, følger du denne fremgangsm
     Hvis det for eksempel er merket av for **Bruk filterkode 1** og **Bruk filterkode 2**, må både filterkode 1 og 2 for varen samsvare med oppsettet av filtergruppen for varegruppen før filtergruppen kan velges. Når du oppretter en ny vare, blir den valgte filtergruppen standard filtergruppe i feltene **Gruppe 1** og **Gruppe 2** i hurtigfanen **Lager** på siden **Detaljer om frigitt produkt**.
 
 > [!IMPORTANT]
-> Produktfilterkoder aktiveres bare for varer som bruker avansert lagerstyring.
+> Produktfilterkoder aktiveres bare for varer som bruker Warehouse Management-prosesser (WMS).
 
 ## <a name="specify-filter-codes-for-released-products"></a>Angi filterkoder for frigitte produkter
 
@@ -158,7 +158,7 @@ Hvis du vil konfigurere leverandørfilterkoder, følger du denne fremgangsmåten
 1. I feltene **Kode 1** til og med **Kode 10** velger du filterkodene som skal brukes som kriterier, for å begrense varene som er tilgjengelige for leverandører i den valgte varegruppen. Du må gjøre et valg for hver filterkode som defineres for varegruppen.
 
 > [!NOTE]
-> Oppsettet for produktfiltre for leverandør gjelder for frigitte produkter der lagerstyringsprosesser er aktivert for den tilknyttede lagringsdimensjonsgruppen. Filterkodene brukes til å bestemme om systemet skal la brukere kjøpe en angitt vare fra en angitt leverandør når de oppretter bestillingslinjer. Microsoft Dynamics 365 Supply Chain Management har to metoder for å håndtere leverandørgodkjenning. Hvis det finnes ett eller flere frigitte produkter der feltet **Godkjent leverandørkontrollmetode** er satt til *Bare advarsel* eller *Ikke tillatt*, kan begge metodene for leverandørgodkjenning aktiveres for disse varene. Denne situasjonen kan forårsake problemer når brukere oppretter bestillingslinjer.
+> Oppsettet for produktfiltre for leverandør gjelder for frigitte produkter der Warehouse Management-prosesser (WMS) er aktivert for den tilknyttede lagringsdimensjonsgruppen. Filterkodene brukes til å bestemme om systemet skal la brukere kjøpe en angitt vare fra en angitt leverandør når de oppretter bestillingslinjer. Microsoft Dynamics 365 Supply Chain Management har to metoder for å håndtere leverandørgodkjenning. Hvis det finnes ett eller flere frigitte produkter der feltet **Godkjent leverandørkontrollmetode** er satt til *Bare advarsel* eller *Ikke tillatt*, kan begge metodene for leverandørgodkjenning aktiveres for disse varene. Denne situasjonen kan forårsake problemer når brukere oppretter bestillingslinjer.
 
 ## <a name="see-also"></a>Se også
 

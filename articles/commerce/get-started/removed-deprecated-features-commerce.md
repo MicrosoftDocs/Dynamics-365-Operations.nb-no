@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 description: Denne artikkelen beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Commerce.
 author: josaw
-ms.date: 04/27/2022
+ms.date: 07/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2725ff2b8bfbaadbca1bc070e32cee7c5d2754be
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a59d62ad846eed659fa4e70390ebafc40127df0f
+ms.sourcegitcommit: ef56b5d0ed26e373add5dec63168e08ade40573e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910530"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9138593"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 
@@ -32,6 +32,19 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > [!NOTE]
 > Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
+
+## <a name="feature-deprecation-effective-july-2022"></a>Funksjonsavskriving gjeldende fra juli 2022
+
+### <a name="commerce-analytics-preview"></a>Commerce-analyse (forhåndsversjon)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Dynamics 365 Commerce-teamet har analysert bruken og oppfølgingen av funksjonen for Commernce-analyse (forhåndsversjon), og det er tatt en avgjørelse om at de ikke lenger går videre for å bringe funksjonen til allmenn tilgjengelighet.   |
+| **Erstattet med en annen funksjon?**   | På dette tidspunktet vil ikke Commerce-analyse (forhåndsversjon) bli erstattet av en annen funksjon eller løsning. Eksporten av råtransaksjoner og hoveddata fra økonomi- og driftsapper til Azure Data Lake fortsetter å være tilgjengelig, noe som forklares i [Eksporter til Data Lake i økonomi- og driftsapper](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Partnere og kunder kan utnytte denne datastrømmen til å forfatte alle tiltenkte rapporter for forretningsbehovene.
+| **Berørte produktområder**         | Commerce-analyse (forhåndsversjon) |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Vi ser på deaktivering av denne funksjonen innen 30. august 2022.  Fra denne datoen og fremover vil det ikke forekomme noen oppdatering i de nåværende Power BI-rapportene som tilbys av Commerce-analyse (forhåndsversjon).     |
+
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.25
 
@@ -195,3 +208,4 @@ Hvis du vil lære mer om funksjoner som er fjernet eller avskrevet i tidligere v
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

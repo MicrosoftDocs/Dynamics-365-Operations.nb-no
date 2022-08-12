@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6bc190a48d0212e24c5bd72255ed6b6b3caf942c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8996ad5d03327b9273be7860a3905dc25efa7e90
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872506"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070672"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budsjettplanleggingsmaler for Excel
 
@@ -129,3 +129,4 @@ Du kan også opprette og bruke pivottabeller og diagrammer for flere grupperinge
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

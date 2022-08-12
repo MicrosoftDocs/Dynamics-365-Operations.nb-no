@@ -2,7 +2,7 @@
 title: Hurtigtaster
 description: Denne artikkelen gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f0f833e3a6d45329fd8a69af658f392df32e4db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
+ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866124"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9140447"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -197,6 +197,7 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 | Lukk navigasjonslisten i Detaljer-skjemaet (med fokus i navigasjonslisten) | ESC                        |
 | Flytt til innholdet på hovedsiden (med fokus i en annen rute)                    | Alt+M,M                    |
 | Flytt til Faktaboks-rute (som kan omfatte å åpne den)                       | Alt+M,B eller Ctrl+F2         |
+| Flytt til neste funksjonsbildeforklaring                                              | Alt+M,C                    |
 
 > [!NOTE]
 > Med funksjonen **Effektiviser tabulatorvirkemåte i fullsideskjemaer**, som ble innført i versjon 10.0.26, kan brukere bruke tabulatortasten til å flytte gjennom alle områder på en side uten å måtte bruke musen eller en dedikert hurtigtast. Du kan fortsatt bruke de eksisterende hurtigtastene (for eksempel ALT+M) til å flytte raskt mellom områdene på en side.
@@ -269,3 +270,4 @@ Fokusadministrasjon beskriver hvordan brukerfokus håndteres i et program. Økon
 [Hurtigtaster for analyse for manglende konto](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

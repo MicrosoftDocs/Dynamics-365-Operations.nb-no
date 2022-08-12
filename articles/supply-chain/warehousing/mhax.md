@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c4b0d991d320d5a679d0ed60880c56a6cb849e2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907094"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068367"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Grensesnitt for materialhåndteringsutstyr (MHAX)
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan bruke *grensesnittet for materialhåndteringsutstyr* (MHAX) til å koble systemer for ekstern fysisk materialhåndtering (MH) til et lager som administreres av avansert lagerstyring (WMS) i Microsoft Dynamics 365 Supply Chain Management. Grensesnittet mellom WMS- og MH-systemene består av to køer: én for utgående hendelser (WMS til MH) og én for innkommende hendelser (MH til WMS). WMS-systemet genererer utgående hendelser basert på arbeidslinjer som opprettes under ulike arbeidsopprettings- og utføringsprosesser. MH-systemet måler deretter WMS-systemet regelmessig for nye hendelser og behandler svarene. Når MH-systemet er ferdig med å behandle hendelsene i henhold til arbeidsinstruksjoner, sender det innkommende hendelser, for eksempel fullføring av arbeidslinje og plukking med mangler.
+Du kan bruke *grensesnittet for materialhåndteringsutstyr* (MHAX) til å koble systemer for ekstern fysisk materialhåndtering (MH) til et lager som administreres av Warehouse Management-prosesser (WMS) i Microsoft Dynamics 365 Supply Chain Management. Grensesnittet mellom WMS- og MH-systemene består av to køer: én for utgående hendelser (WMS til MH) og én for innkommende hendelser (MH til WMS). WMS-systemet genererer utgående hendelser basert på arbeidslinjer som opprettes under ulike arbeidsopprettings- og utføringsprosesser. MH-systemet måler deretter WMS-systemet regelmessig for nye hendelser og behandler svarene. Når MH-systemet er ferdig med å behandle hendelsene i henhold til arbeidsinstruksjoner, sender det innkommende hendelser, for eksempel fullføring av arbeidslinje og plukking med mangler.
 
 Illustrasjonen nedenfor viser de ulike elementene og rekkefølgen som prosessene forekommer i når du bruker MHAX-integrering.
 

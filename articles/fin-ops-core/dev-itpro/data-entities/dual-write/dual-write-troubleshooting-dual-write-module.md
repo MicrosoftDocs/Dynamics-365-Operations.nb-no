@@ -1,5 +1,5 @@
 ---
-title: Feilsøk problemer med dobbel skriving i Finance and Operations-apper
+title: Feilsøk problemer med dobbel skriving i økonomi- og driftsapper
 description: Denne artikkelen inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med dobbel skriving-modulen i økonomi- og driftsapper.
 author: RamaKrishnamoorthy
 ms.date: 04/18/2022
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 36f7969eb0bdbc64ade14a5bb97b4b708486d226
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2743b99538b332af7cc6ad8d951eede562c14235
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864579"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111178"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøk problemer med dobbel skriving i Finance and Operations-apper
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøk problemer med dobbel skriving i økonomi- og driftsapper
 
 [!include [banner](../../includes/banner.md)]
 
@@ -73,11 +73,11 @@ Du kan løse problemet ved å opprette en støtteforespørsel for data integrasj
 
 ## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>Aktiver parallell behandling i økonomi- og driftsapper for å forbedre ytelsen
 
-Ved å aktivere parallell behandling kan du redusere tiden det tar å importere data fra Dynamics 365-kundeengasjementsapper og Microsoft Dataverse økonomi- og driftsapper. 
+Ved å aktivere parallell behandling kan du redusere tiden det tar å importere data fra Dynamics 365-kundeengasjementsapper og Microsoft Dataverse til økonomi- og driftsapper. 
 
 Fullfør trinnene nedenfor for å aktivere parallell behandling i økonomi- og driftsapper.
 
-1. Logg på Finance + Operations-miljøet.
+1. Logg på Finance and Operations-miljøet.
 2. Gå til **Dataadministrasjon > Rammeverkparametere**.
 3. Velg **Enhetsinnstillinger**, og velg **Konfigurer parametere for utføring av enhet**.
 4. Legg til parameterne for parallell behandling:
@@ -112,3 +112,4 @@ Du kan få følgende feilmeldinger når du prøver å kjøre tabelltilordningene
 For å løse problemene må du oppdatere dobbel skriving-løsningene i Dataverse. Sørg for å oppgradere til den nyeste løsningen som samsvarer med den nødvendige løsningsversjonen.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

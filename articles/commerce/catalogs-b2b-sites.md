@@ -2,19 +2,19 @@
 title: Opprett Commerce-kataloger for B2B-områder
 description: Denne artikkelen beskriver hvordan du oppretter handelskataloger for Microsoft Dynamics 365 Commerce-bedrift-til-bedrift-områder (B2B).
 author: ashishmsft
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 2cc9014d273b4ab6f23a38140d0cfcd3ffa4d630
-ms.sourcegitcommit: 6616b969afd6beb11a79d8e740560bf00016ea7f
+ms.openlocfilehash: 7d4ed3e2a76924c2c3c0ba55e21ba648e8da7b76
+ms.sourcegitcommit: d1491362421bf2fcf72a81dc2dc2d13d3b98122b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "9027038"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "9136833"
 ---
 # <a name="create-commerce-catalogs-for-b2b-sites"></a>Opprett Commerce-kataloger for B2B-områder
 
@@ -25,10 +25,13 @@ Denne artikkelen beskriver hvordan du oppretter handelsproduktkataloger for Micr
 > [!NOTE]
 > Denne artikkelen gjelder for Dynamics 365 Commerce, versjon 10.0.27 og nyere utgivelser.
 
-Du kan bruke handelskataloger til å identifisere produktene du vil tilby i B2B-nettbutikkene. Når du oppretter en katalog, identifiserer du nettbutikkene som produktene tilbys i, legger til produktene du vil ta med, og forbedrer produkttilbudene ved å legge til handelsinformasjon om varer. Du kan opprette flere kataloger for hver B2B-nettbutikk.
+Du kan bruke handelskataloger til å identifisere produktene du vil tilby i B2B-nettbutikkene. Når du oppretter en katalog, identifiserer du nettbutikkene som produktene tilbys i, legger til produktene du vil ta med, og forbedrer produkttilbudene ved å legge til handelsinformasjon om varer. Du kan opprette flere kataloger for hver B2B-nettbutikk, som vist i illustrasjonen nedenfor.
+
+![Forhåndsvisning av Commerce-produktkataloger.](./media/Commerce_Catalogs.png)
 
 Med handelsproduktkataloger kan du definere følgende informasjon:
 
+- **Katalogtype** – Konfigurer verdien som **B2B**. Du kan definere B2B-katalogspesifikke egenskaper, for eksempel et navigasjonshierarki, et kundehierarki og attributtmetadata for katalogen. 
 - **Katalogspesifikk navigasjonshierarki** – Organisasjoner kan opprette en atskilt kategoristruktur for den bestemte katalogen.
 - **Katalogspesifikke attributtmetadata** – Attributter inneholder detaljer om et produkt. Ved å tildele attributter til en kategori i navigasjonshierarkiet, kan du definere verdier for de attributtene på nivå med produkter som er tildelt den kategorien. Organisasjoner kan deretter utføre disse oppgavene:
 
@@ -41,11 +44,14 @@ Med handelsproduktkataloger kan du definere følgende informasjon:
 - **Prisgrupper** – Du kan konfigurere priser og kampanjer som er spesifikke for en angitt katalog. Denne funksjonen er en hovedårsak til å definere en katalog for en B2B-kanal. Ved hjelp av prisgrupper for kataloger kan organisasjoner gjøre produkter tilgjengelige for de tiltenkte B2B-organisasjonene og bruke foretrukne priser og rabatter. B2B-kunder som bestiller fra en konfigurert katalog, kan dra nytte av spesialpriser og kampanjer etter at de har logget seg på et B2B-handelsområde. Du kan konfigurere katalogspesifikke priser ved å velge **Prisgrupper** på fanen **Kataloger** for å koble én eller flere prisgrupper til katalogen. Alle handelsavtaler, prisjusteringsjournaler og avanserte rabatter som er koblet til samme prisgruppe, vil bli brukt når kunder bestiller fra denne katalogen. (Avanserte rabatter omfatter terskelrabatter, kvantumsrabatter og samlerabatter.) Hvis du vil ha mer informasjon om prisgrupper, kan du se [Prisgrupper](price-management.md#price-groups).
 
 > [!NOTE]
-> Denne funksjonen er tilgjengelig fra og med Dynamics 365 Commerce-versjon 10.0.27. Hvis du vil konfigurere katalogspesifikke konfigurasjoner, for eksempel navigasjonshierarkiet og kundehierarkiet, åpner du arbeidsområdet **Funksjonsstyring** (**Systemadministrasjon \> Arbeidsområder \> Funksjonsstyring**), aktiverer du funksjonen **Aktiver bruk av flere kataloger på detaljhandelskanaler** og deretter kjører du **1110 CDX**-jobben.
+> Denne funksjonen er tilgjengelig fra og med Dynamics 365 Commerce-versjon 10.0.27. Hvis du vil konfigurere katalogspesifikke konfigurasjoner, for eksempel navigasjonshierarkiet og kundehierarkiet i Commerce headquarters, går du til arbeidsområdet **Funksjonsstyring** (**Systemadministrasjon \> Arbeidsområder \> Funksjonsstyring**), aktiverer du funksjonen **Aktiver bruk av flere kataloger på detaljhandelskanaler** og deretter kjører du **1110 CDX**-jobben. Når du aktiverer denne funksjonen, blir alle eksisterende kataloger som brukes for salgsstedsbutikker eller et telefonsenter, merket som **Katalogtype = B2C** på **Kataloger**-siden. Bare eksisterende og nye kataloger som er merket som **Katalogtype = B2C**, gjelder for salgsstedsbutikker og et telefonsenter. 
 
-## <a name="catalog-process-flow"></a>Katalogprosessflyt
+## <a name="b2b-catalog-process-flow"></a>B2B-katalogprosessflyt
 
 Prosessen med å opprette og behandle en katalog har fire generelle trinn. Hvert trinn forklares i detalj i den neste delen.
+
+> [!NOTE]
+> Før du fortsetter, må du kontrollere at katalogen er merket som **Katalogtype = B2B**.
 
 1. **[Konfigurasjon](#configure-the-catalog)**
 
@@ -73,7 +79,7 @@ Bruk informasjonen i denne delen til å definere katalogen.
 
 I Commerce Headquarters går du til **Retail og Commerce \> Kataloger og sortimenter \> Alle kataloger** for å konfigurere katalogen.
 
-Når du oppretter en ny katalog, må du først knytt den til en eller flere kanaler. Bare varer som er knyttet til den valgte kanalen [sortimenter](/dynamics365/unified-operations/retail/assortments), kan brukes når katalogen opprettes. Hvis du vil knytte katalogen til en eller flere kanaler, velger du **Legg til** i hurtigfanen **Handelskanaler** på **Katalogoppsett**-siden.
+Når du oppretter en ny katalog, må du først knytt den til en eller flere kanaler. Bare varer som er knyttet til den valgte kanalen [sortimenter](/dynamics365/unified-operations/retail/assortments), kan brukes når katalogen opprettes. Hvis du vil knytte katalogen til en eller flere kanaler, velger du **Legg til** i hurtigfanen **Handelskanaler** på **Katalogoppsett**-siden. Kontroller at katalogen er merket som **Katalogtype = B2B**.
 
 #### <a name="associate-the-navigation-hierarchy"></a>Tilknytt navigasjonshierarkiet
 
@@ -90,6 +96,17 @@ For å konfigurere produkter du vil legge til i katalogen går du til **Retail o
 Du kan også velge en node i navigasjonshierarkiet. Deretter kan du legge til produkter direkte i en kategori i katalogen.
 
 #### <a name="associate-price-groups"></a>Tilknytt prisgrupper
+
+For å konfigurere produkter du vil legge til i katalogen går du til **Retail og Commerce \> Kataloger og sortimenter \> Alle kataloger** i Commerce Headquarters. Velg deretter **Legg til produkter** i **Kataloger**-fanen. 
+
+Produkter som ble lagt til i en katalog fra rotnoden i navigasjonshierarkiet ved å velge **Legg til produkter** i handlingsruten, arver kategoriene hvis kildenavigasjonshierarkiet også er tilknyttet katalogen. Endringer i kategorier som foretas i kildenavigasjonshierarkiet, gjenspeiles umiddelbart i katalogene. Du må publisere katalogene på nytt for å oppdatere kanalene.
+
+Du kan også velge en node i navigasjonshierarkiet og legge til produkter direkte i en valgt kategori i katalogen. 
+
+Når du legger til produkter, blir alternativet **Inkluder alle varianter automatisk når bare produktstandard er valgt** tilgjengelig. Hvis du vil hindre inkludering av alle varianter, velger du minst én variant for hovedproduktet. 
+
+> [!NOTE]
+> Hvis du velger å ta med alle varianter i et stort hovedvalg for produkter, kan du oppleve lengre behandlingstider. Hvis du ønsker store valg, anbefaler vi at du velger **Inkluder alle varianter** i handlingsruten på katalogsiden for å kjøre operasjonen i satsvis modus. Hvis du bare har tatt med hovedproduktet i katalogen, og ikke inkluderte noen varianter, kan det hende at variantvelgeren ikke er tilgjengelig når du navigerer til en produktdetaljerside. 
 
 Hvis du vil konfigurere katalogspesifikke priser, må du koble en eller flere prisgrupper til katalogen. For å knytte prisgrupper til en katalog går du til **Retail og Commerce \> Kataloger og sortimenter \> Alle kataloger** i Commerce Headquarters. Deretter velger du **Prisgrupper** under **Prissetting** i fanen **Kataloger**. Alle handelsavtaler, prisjusteringsjournaler og avanserte rabatter for detaljhandel (terskelrabatter, kvantumsrabatter og samlerabatter) som er koblet til samme prisgruppe, vil bli brukt når kunder bestiller fra katalogen.
 
@@ -122,6 +139,9 @@ Hvis du vil validere en katalog, følger du fremgangsmåten nedenfor.
 1. Velg **Valider katalog** for å kjøre en validering under **Valider katalog** i fanen **Kataloger** på **Alle kataloger**-siden. Dette trinnet er obligatorisk. Dette validerer at den nødvendige konfigurasjonen er riktig.
 1. Velg **Vis resultater** for å se detaljene for valideringen. Hvis det oppdages feil, må du rette dataene og deretter kjøre validering på nytt helt til den er bestått.
 
+> [!NOTE]
+> Hvis **Katalogtype = B2B**, vil valideringen mislykkes hvis du har lagt til salgsstedsbutikker eller et telefonsenter i katalogen. B2B-kataloger kan bare ha B2B-nettbaserte kanaler tilknyttet. Validering vil også mislykkes hvis intet kundehierarki er knyttet til en B2B-katalog. 
+
 ### <a name="approve-the-catalog"></a>Godkjenn katalogen
 
 Etter at en katalog valideres, må den godkjennes.
@@ -143,3 +163,5 @@ Når en katalog har statusen **Godkjent**, kan du publisere den ved å velge **P
 [Påvirkning av handelskataloger for B2B-tilpasninger](catalogs-b2b-sites-dev.md)
 
 [Vanlige spørsmål om handelskataloger for B2B](catalogs-b2b-sites-FAQ.md)
+
+[Katalogvelgermodul](catalog-picker.md)

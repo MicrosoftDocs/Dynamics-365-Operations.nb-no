@@ -10,18 +10,35 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac750ede78bb4547f90b57426cc9cb10d2a282b3
-ms.sourcegitcommit: 78576abe5c7cbab1bb69d26c999b038e8c24873a
+ms.openlocfilehash: 19193cc445bc9c7d79463734d7d5787737ecc4f7
+ms.sourcegitcommit: 6989ac8a20c16d384b8307b707eeaf498c32d64e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954670"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "9188999"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller endringer i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20300"></a>Versjon 2.0.30.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Forbedret stabilitet.
+
+## <a name="version-20280"></a>Versjon 2.0.28.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Forbedret stabilitet.
+- Har innført muligheten til å fortsette å skanne selv om det vises en dialogboks for feil på skjermen.
+- Lagt til støtte for ASCII 10 i strekkoder.
+- Forbedret brukervennligheten i trinnvise instruksjonsdialogbokser.
+- Løste et problem der et tomt skjermbilde noen ganger ble vist.
+- Løste et problem der arbeidslister ikke rullet riktig under kjøring på Microsoft Windows.
 
 ## <a name="version-20250"></a>Versjon 2.0.25.0
 

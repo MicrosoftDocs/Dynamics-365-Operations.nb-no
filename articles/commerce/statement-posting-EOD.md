@@ -9,18 +9,18 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: a7f25a7cc1e214b5c08013055126728b2ad10f3f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 33b4f17cd46338b62bed96f0a285e7b9634cc87a
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886912"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067826"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer for utdragsposteringsfunksjonalitet
 
 [!include [banner](includes/banner.md)]
 
-Denne artikkelen beskriver det første settet med forbedringer som er gjort i funksjonen for utdragspostering. Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+Denne artikkelen beskriver det første settet med forbedringer som er gjort i funksjonen for utdragspostering. Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 Finance 7.3.2.
 
 ## <a name="activation"></a>Aktivering
 
@@ -190,3 +190,4 @@ Andre forbedringer i bakgrunnen som brukerne kan se er gjort i funksjonen for ut
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

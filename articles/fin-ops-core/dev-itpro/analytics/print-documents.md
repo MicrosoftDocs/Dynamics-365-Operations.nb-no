@@ -7,21 +7,21 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: IT Pro, Application User
-ms.reviewer: kfend
-ms.custom:
-- "69161"
-- intro-internal
-ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.custom:
+- "69161"
+- intro-internal
+ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.openlocfilehash: d8d40f7cb94e17370f04b0c97365600f68eb5090
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984914"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206733"
 ---
 # <a name="document-printing-overview"></a>Oversikt over utskrift av dokument
 
@@ -54,7 +54,7 @@ Fordi løsningen varierer avhengig av scenarioet, har programmer innebygde tjene
 - **Scenario 2** bruker klientprogrammer og tjenester for Microsoft 365.
 - **Scenario 3** krever støtte fra klientprogrammer og tjenester som Microsoft Azure er vert for.
 
-I tillegg til plattformen som er distribuert til Azure-abonnementet, gir Finance and Operations kunder et integrert, førsteparts Azure-program som gjør det enklere for dem å bruke domene-vertsbaserte enheter til å skrive ut dokumenter.
+I tillegg til plattformen som er distribuert til Azure-abonnementet, gir økonomi- og driftsapper kunder et integrert, førsteparts Azure-program som gjør det enklere for dem å bruke domene-vertsbaserte enheter til å skrive ut dokumenter.
 
 ## <a name="service-overview"></a>Serviceoversikt
 Mens dokumenter som produseres av de vertsbaserte programmene venter på å skrives ut på en enhet som er koblet til nettverket, lagres de i Azure blob-lageret. [Installere dokumentrutingsagenten slik at nettverksutskrift kan brukes](install-document-routing-agent.md)  bruker Azure-godkjenning til å opprette en sikker kanal til Azure-tjenestene.

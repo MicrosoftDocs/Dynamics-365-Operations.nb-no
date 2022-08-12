@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9d27331b940a95168810c2f1ec4ae240a9df93a8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1211f7da15686f1c55a4c942f04c73d671e0ba6b
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896712"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111434"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Feilsøk problemer med direkte synkronisering
 
@@ -51,7 +51,7 @@ Hvis det finnes data på begge steder, og du har bekreftet at problemet ikke er 
 2. Velg og slett postene som har problemer i tilordningen for dobbel skriving og prosjektet. Det blir to poster for hver tilordning av dobbel skriving.
 3. Publiser endringene ved hjelp av Excel-tillegget. Dette trinnet er viktig fordi det sletter postene fra enheten og underliggende tabeller.
 
-## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Håndtere lese- eller skrivetilgangsfeil når du oppretter data i en økonomi- og driftapp
+## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Håndtere lese- eller skrivetilgangsfeil når du oppretter data i en økonomi- og driftsapp
 
 Du kan få feilmeldingen "Ugyldig forespørsel" når du oppretter data i en økonomi- og driftsapp.
 
@@ -355,3 +355,4 @@ Når du har oppdatert metodene, følger du fremgangsmåten nedenfor.
 3. Start tilordningene. Du skal se færre poster i enhetene **smmContactPersonCDSV2Entity** og **CustCustomerV3Entity** og **BusinessEventsDefinition**-tabellen, og ytelsen kan forbedres marginalt.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

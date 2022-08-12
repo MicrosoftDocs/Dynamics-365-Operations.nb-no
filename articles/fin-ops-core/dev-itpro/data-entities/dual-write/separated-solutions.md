@@ -10,12 +10,12 @@ ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: 504939f1f98c18005c092cabc1d040b420402c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 28c321ee2815b2886c07bfb0996870e536458145
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874819"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111668"
 ---
 # <a name="separated-dual-write-application-orchestration-package"></a>Separert programiverksettingspakke med dobbel skriving
 
@@ -344,3 +344,4 @@ L√∏sningene for part med dobbel skriving og global adressebok er avhengige av f√
 - Programkjernepakke for dobbel skriving
 - Finanspakke for dobbel skriving
 - Forsyningskjedepakke for dobbel skriving
+

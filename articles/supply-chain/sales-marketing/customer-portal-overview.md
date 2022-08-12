@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ff074e62489fe74f0c2de6dae0e02d1da7e7f6ae
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f34acd78966cc9f26242653e9d0d16fdf22e0b2
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901915"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103838"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundeportal for Dynamics 365 Supply Chain Management – oversikt
 
@@ -62,7 +62,7 @@ Kundeportalen leveres som en mal for Power Apps-portaler. Den er avhengig av Pow
 
 [Power Apps-portaler](/powerapps/maker/portals/overview) er en funksjon som lar brukere opprette et eksternt nettsted som personer fra utenfor organisasjonen kan logge på. Det kreves lite eller ingen koding for å opprette portaler. Kundeportalen er én av mange [Maler for Dynamics 365-portaler](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) som er tilgjengelige fra Microsoft.
 
-[Dobbel skriving](/powerapps/maker/portals/overview) er et bruksklart infrastrukturprodukt som gir interaksjon med minimal forsinkelse mellom Customer Engagement-apper og Finance and Operations-apper. Dobbel skriving gir toveisintegrering mellom Finance and Operations-apper og Microsoft Dataverse. Derfor gir den en integrert brukeropplevelse på tvers av appene. Kundeportalen er avhengig av tabeller som er synkronisert med dobbel skriving. Før data fra Supply Chain Management kan vises i kundeportalen, må dobbel skriving aktiveres for alle de aktuelle tabellene.
+[Dobbel skriving](/powerapps/maker/portals/overview) er et bruksklart infrastrukturprodukt som gir interaksjon med minimal forsinkelse mellom kundeengasjementsapper og økonomi- og driftsapper. Dobbel skriving gir toveisintegrering mellom økonomi- og driftsapper og Microsoft Dataverse. Derfor gir den en integrert brukeropplevelse på tvers av appene. Kundeportalen er avhengig av tabeller som er synkronisert med dobbel skriving. Før data fra Supply Chain Management kan vises i kundeportalen, må dobbel skriving aktiveres for alle de aktuelle tabellene.
 
 ![Avhengigheter for kundeportal.](media/customer-portal-elements.png "Avhengigheter for kundeportal")
 

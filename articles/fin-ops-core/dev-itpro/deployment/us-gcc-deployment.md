@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 90e64fec512307af209ace128d5897475de7aee5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 41789d574cc7348dbf8a18db97da9c428da09602
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867280"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103946"
 ---
 # <a name="dynamics-365-finance-supply-chain-management-and-commerce-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance, Supply Chain Management og Commerce i Government Community Cloud (GCC) for USA
 
@@ -38,9 +38,9 @@ Når den innledende innføringen er fullført, følger du instruksjonene i [Pros
 
 ## <a name="environment-deployment"></a>Distribuere miljøet
 
-Når du har fullført prosjektinnføring, kan du se gjennom tilleggsfunksjonene i LCS som beskrives i [Lifecycle Services (LCS) for Finance og Operations-appkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Deretter kan du gå videre til miljødistribusjon.
+Når du har fullført prosjektinnføring, kan du se gjennom tilleggsfunksjonene i LCS som beskrives i [Lifecycle Services (LCS) for økonomi- og driftsappkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Deretter kan du gå videre til miljødistribusjon.
 
-- Hvis du vil distribuere Microsoft-administrerte miljøer via LCS, følger du instruksjonene i [Lifecycle Services (LCS) for Finance og Operations-appkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- Hvis du vil distribuere Microsoft-administrerte miljøer via LCS, følger du instruksjonene i [Lifecycle Services (LCS) for økonomi- og driftsappkunder](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - For skybaserte miljøer kan du se [Distribuere og få tilgang til utviklingsmiljøer](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Du må også fullføre Resource Manager-innføringsprosessen for koblingene dine, som beskrevet i [Fullfør jobbintroduksjonsprosessen for Azure Resource Manager for Lifecycle Services-prosjekter for amerikanske myndigheter](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
@@ -84,3 +84,4 @@ Ja. Hvis partneren din imidlertid bruker en ikke-GCC-identitet, sendes støttefo
 - [Oversikt over skydistribusjon](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

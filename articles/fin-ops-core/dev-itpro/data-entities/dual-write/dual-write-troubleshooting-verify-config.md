@@ -1,5 +1,5 @@
 ---
-title: Bekreft konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
+title: Bekreft konfigurasjon av dobbel skriving i økonomi- og driftsapper og Dataverse
 description: Denne artikkelen forklarer hvordan du kan finne ut om dobbel skriving er konfigurert i økonomi- og driftsapper og i Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 7131e6c2c4ca4d9c6bb84ad74bf425faf28bd92c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d5191f5dd9c3a286abac622aede07d04fb72a8f7
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884466"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111400"
 ---
-# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Bekreft konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
+# <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Bekreft konfigurasjon av dobbel skriving i økonomi- og driftsapper og Dataverse
 
 [!include [banner](../../includes/banner.md)]
 

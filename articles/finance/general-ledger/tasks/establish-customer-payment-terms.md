@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716978"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065716"
 ---
 # <a name="establish-customer-payment-terms"></a>Opprette kundebetalingsbetingelser
 
@@ -35,12 +35,12 @@ Dette definerer et oppsett for kontantrabatt og forfallsdato. Denne oppgaveveile
 7. Klikk **Lagre**.
 8. Lukk siden.
 9. Gå til **Navigasjonsrute > Moduler > Kunder > Betalingsoppsett > Betalingsbetingelser**.
-10. Klikk på **Ny**. Betalingsbetingelsene brukes til å definere hvordan forfallsdatoene beregnes. Dato for oppsett av kontantrabatten er definert i en egen side. 
+10. Klikk på **Ny**. **Betalingsbetingelsene** brukes til å definere hvordan forfallsdatoene beregnes. Dato for oppsett av kontantrabatten er definert i en egen side. 
 11. Angi en ID i **Betalingsbetingelser**-feltet.
 12. Angi en beskrivelse i **Beskrivelse**-feltet.
-13. Velg en **Betalingsmåte**, for eksempel oppkrav, netto, gjeldende måned og så videre. Betalingsmåten brukes til å definere starten for beregning av forfall. Netto brukes for eksempel hvis forfallsdatoen alltid er et angitt antall måneder eller dager etter fakturadato. Oppkrav kan brukes når betaling kreves ved faktura, slik at en forfallsdato ikke blir beregnet. Velg Gjeldende måned for denne oppgaveveiledningen.  
-14. Velg en **Betalingsdag** hvis en bestemt dag i uken eller dato skal tas med i beregningen. Avhengig av betalingsbetingelsene, kan du angi et antall i måneder eller dager. Eller du bruke **Betalingsplan** eller **Betalingsdag** for å legge til på slutten av betalingsmåten. Hvis forfallsdatoen alltid skal være den 10. i neste måned, velger du **Betalingsdag** på den 10. 
-15. Klikk **Lagre**.
+13. Velg en **betalingsmåte**, for eksempel **oppkrav**, **netto**, **gjeldende måned** og så videre. **Betalingsmåten** brukes til å definere starten for beregning av forfall. **Netto** brukes for eksempel hvis forfallsdatoen alltid er et angitt antall måneder eller dager etter fakturadato. **Oppkrav** kan brukes når betaling kreves ved faktura, slik at en forfallsdato ikke blir beregnet. Velg **Gjeldende måned** for denne oppgaveveiledningen.  
+14. Velg en **Betalingsdag** hvis en bestemt dag i uken eller dato skal tas med i beregningen. Avhengig av betalingsbetingelsene, kan du angi et antall i måneder eller dager. Eller du bruke **Betalingsplan** eller **Betalingsdag** for å legge til på slutten av **betalingsmåten**. Hvis forfallsdatoen alltid skal være den 10. i neste måned, velger du **Betalingsdag** på den 10. Hvis du bruker en **betalingskalender**, kan du definere hvordan forfallsdatoen skal bestemmes når den beregnede datoen lander på en ikke-arbeidsdag. Den innledende forfallsdatoen beregnes ved hjelp av kalenderdager. Hvis den beregnede datoen lander på en ikke-arbeidsdag, kan du justere den beregnede forfallsdatoen til enten neste arbeidsdato eller en tidligere arbeidsdag.
+15. Klikk på **Lagre**.
 16. Lukk siden.
 17. Gå til **Kunder > Betalingsoppsett > Kontantrabatt**.
 18. Klikk på **Ny**. Denne siden brukes til å definere hvordan kontantrabatten skal beregnes. 
@@ -50,7 +50,7 @@ Dette definerer et oppsett for kontantrabatt og forfallsdato. Denne oppgaveveile
 22. I **Dager**-feltet angir du hvor mange dager som brukes til å beregne kontantrabattdatoen. Hvis **Netto**-prinsippet er valgt, legges antallet dager til fakturadatoen for å beregne kontantrabattdatoen.  
 23. Angi prosenten av kontantrabatten i **Rabattprosent**-feltet.
 24. I feltet **Hovedkonto for kunderabatter** angir du hovedkontoen som kontantrabatten skal posteres til for kundefakturaer.
-25. Velg et alternativ i feltet **Motkontoer for rabatt**. Hvis du velger "Kontoer på fakturalinjene", posteres kontantrabatten til samme anleggsmiddel/utgiftshovedkontoen på linjene i leverandørfakturaen. Hvis du velger "Bruk hovedkontoen for leverandørfakturaer", posteres kontantrabatten til hovedkontoen du definerer i "Hovedkonto for leverandørfakturaer". I dette eksemplet velger du "Bruk hovedkontoen for leverandørfakturaer". 
+25. Velg et alternativ i feltet **Motkontoer for rabatt**. Hvis du velger "Kontoer på fakturalinjene", posteres kontantrabatten til samme anleggsmiddel/utgiftshovedkontoen på linjene i leverandørfakturaen. Hvis du velger **Bruk hovedkontoen for leverandørfakturaer**, posteres kontantrabatten til hovedkontoen du definerer i **Hovedkonto for leverandørfakturaer**. I dette eksemplet velger du **Bruk hovedkontoen for leverandørfakturaer**. 
 26. I feltet **Hovedkonto for leverandørrabatter** angir du hovedkontoen som kontantrabatten skal posteres til for kundefakturaer.
 27. Klikk **Lagre**.
 

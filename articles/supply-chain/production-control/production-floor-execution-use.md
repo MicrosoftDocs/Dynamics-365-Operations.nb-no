@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 2ee316a3e6a6baef7aa8b5d46b04a2d1bb07a641
-ms.sourcegitcommit: d770f0e6a012675a3027641704be804beb99754b
+ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "9022530"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069794"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -217,7 +217,7 @@ Arbeidere kan justere materialforbruk for faktisk vekt-varer. Denne funksjonalit
 
 I dialogboksen **Juster materiale** kan en arbeider utføre og justere materialreserveringer ved å velge **Reserver materiale**. Dialogboksen **Reserver materiale** som vises, viser den fysisk tilgjengelige beholdningen for varen for hver lagrings- og sporingsdimensjon.
 
-Hvis materialet er aktivert for de avanserte lagerprosessene, viser listen bare den fysisk tilgjengelige beholdningen for produksjonsinngangsstedet for materialet. Produksjonsinngangsstedet er definert på ressursen der produksjonsjobben er planlagt. Hvis varenummeret er parti- eller serienummerkontrollert, vises den fullstendige listen over fysisk tilgjengelige bunke- og serienumre. Når du skal angi et antall som skal reserveres, kan du velge **Reserver materiale**. Hvis du vil fjerne en eksisterende reservasjon, kan du velge **Fjern reservasjon**.
+Hvis materialet er aktivert for Warehouse Management-prosesser (WMS), viser listen bare den fysisk tilgjengelige beholdningen for produksjonsinngangsstedet for materialet. Produksjonsinngangsstedet er definert på ressursen der produksjonsjobben er planlagt. Hvis varenummeret er parti- eller serienummerkontrollert, vises den fullstendige listen over fysisk tilgjengelige bunke- og serienumre. Når du skal angi et antall som skal reserveres, kan du velge **Reserver materiale**. Hvis du vil fjerne en eksisterende reservasjon, kan du velge **Fjern reservasjon**.
 
 Hvis du vil ha mer informasjon om hvordan du definerer produksjonsinngangsstedet, kan du se følgende blogginnlegg: [Oppsett av produksjonsinngangsstedet](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

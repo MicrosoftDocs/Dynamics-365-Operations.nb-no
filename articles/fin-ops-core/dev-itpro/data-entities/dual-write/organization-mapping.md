@@ -1,6 +1,6 @@
 ---
 title: Organisasjonshierarki i Dataverse
-description: Denne artikkelen beskriver integreringen av organisasjonsdata mellom Økonomi og drift-apper og Dataverse.
+description: Denne artikkelen beskriver integreringen av organisasjonsdata mellom økonomi- og driftsapper og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a4edaf5b9c50e9d8781ff703328ac786d71ee782
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2f900637855bee3e21916652a373c683e6bf1392
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8884739"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112026"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisasjonshierarki i Dataverse
 
@@ -28,7 +28,7 @@ Selv om Dataverse ikke har konseptet med et organisasjonshierarki, har det noen 
 
 ## <a name="data-flow"></a>Dataflyt
 
-Et forretningsøkosystem som består av Finance and Operations-apper og Dataverse, vil fortsatt ha et organisasjonshierarki. Dette organisasjonshierarkiet er bygd på Finance and Operations-apper, men det eksponeres i Dataverse for informasjons- og utvidelsesformål. Illustrasjonen nedenfor viser informasjon om organisasjonshierarkiet som vises i Dataverse, som en énveis dataflyt fra Finance and Operations-apper til Dataverse.
+Et forretningsøkosystem som består av økonomi- og driftsapper og Dataverse, vil fortsatt ha et organisasjonshierarki. Dette organisasjonshierarkiet er bygd på økonomi- og driftsapper, men det eksponeres i Dataverse for informasjons- og utvidelsesformål. Illustrasjonen nedenfor viser informasjon om organisasjonshierarkiet som vises i Dataverse, som en énveis dataflyt fra økonomi- og driftsapper til Dataverse.
 
 ![Bilde av arkitektur.](media/dual-write-data-flow.png)
 
@@ -52,3 +52,4 @@ Finance and Operations-apper | Kundeengasjementsapper     | Beskrivelse
 Informasjon om intern organisasjon i Dataverse kommer fra to tabeller, **driftsenhet** og **juridiske enheter**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

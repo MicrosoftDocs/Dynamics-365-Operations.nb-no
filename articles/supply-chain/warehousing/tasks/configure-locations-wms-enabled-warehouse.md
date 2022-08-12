@@ -1,6 +1,6 @@
 ---
 title: Konfigurere lokasjoner i et WMS-aktivert lager
-description: Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et nytt WMS-aktivert lager (et lager som bruker avanserte lagerstyringsprosesser).
+description: Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et nytt WMS-aktivert lager (et lager som bruker Warehouse Management-prosesser (WMS)).
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 45195698b48d6a22697f99044a8ae49beaf7156e
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599354"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067281"
 ---
-# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere lokasjoner i et WMS-aktivert lager
+# <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurer lokasjoner i et WMS-aktivert lager
 
 [!include [banner](../../includes/banner.md)]
 
-Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et nytt WMS-aktivert lager (et lager som bruker avanserte lagerstyringsprosesser). Prosessen gjøres vanligvis av en lagersjef. Du kan kjøre denne veiledningen i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. En forutsetning er at du har konfigurert minst ett område.
+Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et nytt WMS-aktivert lager (et lager som bruker Warehouse Management-prosesser (WMS)). Prosessen gjøres vanligvis av en lagersjef. Du kan kjøre denne veiledningen i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. En forutsetning er at du har konfigurert minst ett område.
 
 
 ## <a name="create-a-new-warehouse"></a>Opprette et nytt lager
@@ -35,7 +35,7 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 4. Skriv inn en verdi i **Navn**-feltet.
 5. Velg eller skriv inn en eksisterende områdeverdi i **Område**-feltet.
 6. Vis delen **Lager**.
-7. Angi alternativet **Bruk lagerstyringsprosesser** til Ja. Denne innstillingen lar deg kjøre avanserte lagerprosesser som bruker lagerarbeid og mobilenheter.
+7. Angi alternativet **Bruk lagerstyringsprosesser** til Ja. Denne innstillingen lar deg kjøre Warehouse Management-prosesser (WMS) som bruker lagerarbeid og mobilenheter.
 8. Lukk siden.
 
 ## <a name="define-a-location-format"></a>Definere et lokasjonsformat
@@ -68,7 +68,7 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 5. Lukk siden.
 
 ## <a name="define-location-profile"></a>Definere lokasjonsprofil
-1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Lager > Lokasjonsprofiler**. Definisjonen av lokasjonsprofiler er svært viktig. Gruppert lokasjonskapasitet kan kontrolleres her, i tillegg til policyene som gjelder hva beholdning skal lagre, og hvordan den lagres. Lokasjonsprofiler kan brukes som filtreringsalternativer for å styre de ulike lagerstyringsprosessene. Som et minimum må du opprette en brukerlokasjonsprofil for å aktivere lagerstyringsprosesser.
+1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Lager > Lokasjonsprofiler**. Definisjonen av lokasjonsprofiler er svært viktig. Gruppert lokasjonskapasitet kan kontrolleres her, i tillegg til policyene som gjelder hva beholdning skal lagre, og hvordan den lagres. Lokasjonsprofiler kan brukes som filtreringsalternativer for å styre de ulike lagerstyringsprosessene. Som et minimum må du opprette en brukerlokasjonsprofil for å aktivere WMS.
 2. Klikk på **Ny**.
 3. Skriv inn en verdi i feltet **Profil-ID for lokasjon**.
 4. Skriv inn en verdi i **Navn**-feltet.

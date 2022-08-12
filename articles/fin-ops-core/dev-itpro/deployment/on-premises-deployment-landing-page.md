@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: b73e0cc31fd0e5a22ee330f623b9125de9237e29
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 87bab110d99bd756038b9f556aa15ed9fd02fb97
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867419"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103980"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal distribusjon
 
@@ -53,7 +53,7 @@ Du kan distribuere Dynamics 365 Finance + Operations (on-premises). Når du velg
 - [Importere konfigurasjoner for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentgenerering, publisering og utskrift i lokale distribusjoner](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurere proxyer for lokale miljøer](onprem-reverseproxy.md)
-- [Konfigurere teknisk støtte for Finance and Operations-apper](../lifecycle-services/support-experience.md)
+- [Konfigurer teknisk støtte for økonomi- og driftsapper](../lifecycle-services/support-experience.md)
 - [Internett-tilkobling for klient](../user-interface/client-disconnected.md)
 - [Bruke oppdateringer i lokale distribusjoner](apply-updates-on-premises.md)
 - [Omplassere lokale miljøer](redeploy-on-prem.md)
@@ -79,3 +79,4 @@ Du kan distribuere Dynamics 365 Finance + Operations (on-premises). Når du velg
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

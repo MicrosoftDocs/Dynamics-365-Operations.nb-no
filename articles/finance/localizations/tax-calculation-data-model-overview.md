@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a711eb73c171cd099947b44e2376cad2455059f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79296a452e146bb17b197e9ca40db016664df6f9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859702"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068856"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodell for avgiftsberegning
 
 Denne artikkelen gir informasjon om hvordan feltverdiene i avgiftsdatamodellen bestemmes i avgiftsberegningstransaksjoner.
 
-*Avgiftsdatamodellen* består av felt som er nødvendige for avgiftsberegninger. Microsoft tilbyr *datamodellen for avgiftsberegning*, som inkluderer hodefeltene og linjefeltene i transaksjonsdokumenter i Finance and Operations-apper. Feltene som er definert i datamodellen for avgiftsberegning, er de tilgjengelige kolonnene i tabellene for gjeldende regler i konfigurasjonen av mva-beregningsfunksjonen.
+*Avgiftsdatamodellen* består av felt som er nødvendige for avgiftsberegninger. Microsoft tilbyr *datamodellen for avgiftsberegning*, som inkluderer hodefeltene og linjefeltene i transaksjonsdokumenter i økonomi- og driftsapper. Feltene som er definert i datamodellen for avgiftsberegning, er de tilgjengelige kolonnene i tabellene for gjeldende regler i konfigurasjonen av mva-beregningsfunksjonen.
 
 > [!NOTE] 
 > Noen noder som er definert i datamodellen, for eksempel **post-ID** og **tabell-ID**, er for tekniske hensyn. De er ikke tilgjengelige kolonner i konfigurasjonen av mva-beregningsfunksjonen.
@@ -54,7 +54,7 @@ Du kan også vise datamodellen for avgiftsberegningen og de tilgjengelige kolonn
 
     [![Behandle kolonner.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datamodellen for avgiftsberegning er integrert med Finance and Operations-apper. Under hver transaksjon som er relatert til avgiftsberegning, blir verdiene til feltene som er definert i tabellene for relevansregler, samlet inn og sendt til avgiftsberegningstjenesten for beregning. I versjon 40.46 er 57 forhåndsdefinerte datamodeller tilgjengelige for følgende transaksjonstyper: bestillinger, salgsordrer, overføringsordrer, innkjøpsrekvisisjoner, forespørsler om tilbud og salgstilbud.
+Datamodellen for avgiftsberegning er integrert med økonomi- og driftsapper. Under hver transaksjon som er relatert til avgiftsberegning, blir verdiene til feltene som er definert i tabellene for relevansregler, samlet inn og sendt til avgiftsberegningstjenesten for beregning. I versjon 40.46 er 57 forhåndsdefinerte datamodeller tilgjengelige for følgende transaksjonstyper: bestillinger, salgsordrer, overføringsordrer, innkjøpsrekvisisjoner, forespørsler om tilbud og salgstilbud.
 
 ## <a name="version-updates-and-restrictions"></a>Versjonsoppdateringer og -begrensninger
 
@@ -134,3 +134,4 @@ Datamodellen for avgiftsberegning er integrert med Finance and Operations-apper.
 | Enhet                          | <ul><li>**Salgsordre:** Enhet</li><li>**Bestilling:** Enhet</li><li>**Overføringsordre – send:** Enhet</li><li>**Overføringsordre – motta:** Enhet</li><li>**Innkjøpsrekvisisjon:** Enhet</li><li>**Tilbudsforespørsel:** Enhet</li><li>**Salgstilbud:** Enhet</li></ul> |
 | Variantnummer                | <ul><li>**Salgsordre:** Variantnummer</li><li>**Bestilling:** Variantnummer</li><li>**Salgstilbud:** Variantnummer</li></ul> |
 | Lager                     | <ul><li>**Salgsordre:**<ol><li>Linje &gt; Lager</li><li>Produkt &gt; Lager</li></ol></li><li>**Bestilling:**<ol><li>Linje &gt; Lager</li><li>Produkt &gt; Lager</li></ol></li><li>**Overføringsordre - send:** Fra lager</li><li>**Overføringsordre - motta:** Til lager</li><li>**Innkjøpsrekvisisjon:** Linje &gt; Lager</li><li>**Tilbudsforespørsel:** Linje &gt; Lager</li><li>**Salgstilbud:**<ol><li>Linje &gt; Lager</li><li>Produkt &gt; Lager</li></ol></li></ul> |
+

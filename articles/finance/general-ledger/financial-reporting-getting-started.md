@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c31e8b8b8022e5dfdb1f8dc4836d3d95174078
-ms.sourcegitcommit: d9d111d7420ca8f1071689afe38a1ccf4b8051f4
+ms.openlocfilehash: 9d0c2e821ee504cd62a536674ef91ee89a25c0a9
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "9033667"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066425"
 ---
 # <a name="get-started-with-financial-reporting"></a>Kom i gang med finansrapportering 
 
@@ -151,7 +151,7 @@ Du kan opprette et ubegrenset antall rapporteringstrær for å vise organisasjon
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Oppdatere Financial Reporting-versjonen ved hjelp av integrering
 
-Finance and Operations-apper oppdateres hver måned. Financial Reporting oppdateres ikke nødvendigvis oppdateres på den frekvensen. Kundene har dessuten flere alternativer når de implementerer oppdateringer for Finance and Operations-apper. Financial Reporting-oppdateringer installeres automatisk. Financial Reporting har en angitt versjon som forbrukes i et kundemiljø når en serviceoppdatering implementeres, når nedetid startes, eller når en kundes miljø er i vedlikeholdsmodus. Denne prosessen kalles *integrering* eller *true-up*, fordi alle kundeimplementeringer settes til samme versjon av Financial Reporting.
+Økonomi- og driftsapper oppdateres hver måned. Financial Reporting oppdateres ikke nødvendigvis oppdateres på den frekvensen. Kundene har dessuten flere alternativer når de implementerer oppdateringer for økonomi- og driftsapper. Financial Reporting-oppdateringer installeres automatisk. Financial Reporting har en angitt versjon som forbrukes i et kundemiljø når en serviceoppdatering implementeres, når nedetid startes, eller når en kundes miljø er i vedlikeholdsmodus. Denne prosessen kalles *integrering* eller *true-up*, fordi alle kundeimplementeringer settes til samme versjon av Financial Reporting.
 
 Endringer som frigis i hver versjon, finner du under [Hva er nytt eller endret i Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Du finner plattformoppdateringer og reparasjonsfiler under Tilleggsressurser nederst på siden for hver versjon.
 
@@ -254,3 +254,4 @@ Problem: Du får feilmeldingen Kan ikke koble til Financial Reporting-serveren.
 - [Definisjoner av rapporteringstre i finansrapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

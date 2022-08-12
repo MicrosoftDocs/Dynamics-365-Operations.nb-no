@@ -10,12 +10,12 @@ ms.search.form: InventPosting, InventTrans
 audience: Application User
 ms.search.region: Global
 ms.author: raprofit
-ms.openlocfilehash: 0793c58b07d2c0a133e1a5bc0607483f22206b95
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38a9e2740232b18255109ba867fcdddd5b890774
+ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849938"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "9151040"
 ---
 # <a name="purchase-order-posting"></a>Bestillingspostering
 
@@ -93,10 +93,10 @@ Følgende tabell viser eksempler på standard posteringstyper med eksempelhovedk
 
 | Posteringstype | Eksempel på hovedkonto | Eksempel på hovedkontonavn | Kontotype | Debet/kredit? | Avregningskonto | F/Ø | Følg | Beskrivelse |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Kostnad for innkjøpte materialer mottatt | 140100</br>140101 | Materiallager</br>Materialer sendt, ikke fakturert | Objekt | Debet | Ja | Ø | Kostnad for innkjøpte materialer fakturert | Brukes når en bestillingsmottaksseddel posteres. Motkontoen for kontoen er Innkjøpsutgift, ikke-fakturert. Beløpet på denne kontoen tilbakeføres når en bestillingsfaktura posteres. |
+| Kostnad for innkjøpte materialer mottatt | 140100</br>140101 | Materiallager</br>Materialer sendt, ikke fakturert | Objekt | Debet | Ja | Ø | Kostnad for innkjøpte materialer fakturert | Brukes når et produktmottak for en bestilling posteres, og motposteringen til kontoen er Innkjøpsutgift, ikke-fakturert. Beløpet på denne kontoen tilbakeføres når en bestillingsfaktura posteres. |
 | Innkjøpsutgift, ikke-fakturert | 600180 | Materialmottak | Utgift | Debet | Ja | Ø | |Brukes når en bestillingsmottaksseddel posteres. To bilag opprettes for mottak for å spore avvik i innkjøpspris når standard kostpris brukes. Motkontoen på det første bilaget er Innkjøpsavsetning. Motregningen på det andre bilaget er summen av kontoene Kostnad for innkjøpte materialer mottatt og Avvik i kjøpspris. Beløpene som er postert på denne kontoen, tilbakeføres når en bestillingsfaktura posteres. |
 | Kostnad for innkjøpte materialer fakturert | 140100 | Materiallager | Objekt | Debet | Nei | F  |Kostnad for innkjøpte materialer mottatt | Brukes når en bestillingsfaktura posteres. Motkontoen for denne kontoen er Innkjøpsutgift, ikke-fakturert for produktet. Denne kontoen representerer lageret i balansen. Kontoen som brukes, er vanligvis den samme kontoen som brukes for Kostnad for enheter, levert og Kostnad for enheter, fakturert for bestilling. |
-| Innkjøpsutgift for produktet | 600180 | Materialmottak | Utgift | Kreditt | Nei | F  | |Brukes når en bestillingsfaktura posteres. Motkontoen for denne kontoen er Kostnad for innkjøpte materialer. Denne kontoen representerer lageret i balansen. |
+| Innkjøpsutgift for produktet | 600180 | Materialmottak | Utgift | Kreditt | Ja | F  | |Brukes når en bestillingsfaktura posteres. To bilag opprettes for fakturaen for å spore avvik i innkjøpspris når standard kostpris brukes. Motposteringen til denne kontoen er kontoen Innkjøpsutgift, ikke-fakturert, som brukes på mottaksposteringen og tilbakeføres under fakturaposteringen. Representerer kostnader for beholdningen som er kjøpt ved fakturering, som ikke gjenspeiles i beholdningskontoen i balansen. Dette er en resultatpostering for kjøpsprisavvik som vanligvis vises i vareinnkjøp med standard kostpris.|
 | Fast mottaksprisfortjeneste (Innkjøp, fortjeneste på fast mottakspris*) | 510310 | Avvik i kjøpspris | Utgift | Kreditt | Nei | F | Tap på fast mottakspris | Brukes når en bestillingsfaktura posteres, og det er en forskjell mellom den fakturerte prisen og standardkostnaden for varen. Denne kontoen brukes når differansen er høyere. Motkontoen for denne kontoen er Motkonto for fast mottakspris. |
 | Fast mottakspristap (Innkjøp, tap på fast mottakspris*) | 510310 | Avvik i kjøpspris | Utgift | Debet | Nei | F | Fortjeneste på fast mottakspris | Brukes når en bestillingsfaktura posteres, og det er en forskjell mellom den fakturerte prisen og standardkostnaden for varen. Denne kontoen brukes når differansen er lavere. Motkontoen for denne kontoen er Motkonto for fast mottakspris. |
 | Motkonto for fast mottakspris (Innkjøp, motkonto for fast mottakspris*) | 140900 | Lageravvik | Objekt | Begge | Nei | F  | |Brukes når en bestillingsfaktura posteres, og det er en forskjell mellom den fakturerte prisen og standardkostnaden for varen. Denne kontoen er motkontoen for resultatkontoene for Fast mottakspris. |

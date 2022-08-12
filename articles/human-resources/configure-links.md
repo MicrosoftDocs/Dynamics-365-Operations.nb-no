@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c9efae1061e96c0c42d5ca6a100bb36889ce56b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9640f460ed7b0b1a0cfdffb7c318bf833f8627fc
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859673"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065301"
 ---
 # <a name="create-links-from-human-resources-to-another-finance-environment"></a>Opprett koblinger fra Human Resources til et annet Finance-miljø
 
@@ -63,4 +63,5 @@ Hver kobling du oppretter, har følgende informasjon definert:
 Systemansvarlige vil se de nylig opprettede koblingene på de definerte sidene, selv om alternativet **Aktiver denne koblingen** er satt til **Nei**. Dette kan brukes til å teste koblinger før de vises til andre ansatte. Alle andre roller ser bare de konfigurerte koblingene når alternativet **Aktiver denne koblingen** er satt til **Ja**. Ansatte som har tilgang til sidene der koblingene vises, vil ha tilgang til koblingene.
 
 Sikkerhetsrettigheter må også være definert for brukere i det sekundære miljøet for at de skal kunne få tilgang til sidene i dette miljøet. Hvis ikke vises en sikkerhetsdialogboks når koblingen brukes.
+
 

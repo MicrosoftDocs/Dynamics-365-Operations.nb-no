@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 50392e8aa0deb568a57e1df59ced70625a4f8a78
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 939066fbf4ab7b316283d406c321f1a7936c187f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856055"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066554"
 ---
 # <a name="batch-balancing"></a>Partibalansering
 
@@ -165,22 +165,22 @@ I prosessen for partiblansering av ingredienser blir antall ingredienser som ska
 
 ### <a name="confirm-and-release-the-formula"></a>Bekreft og frigi formelen
 
-Når ingrediensantallene er beregnet, kan du bekrefte og frigi formelen. Frigivelsesprosessen varierer, avhengig av om produktene er aktivert for lagerstyringsprosessene:
+Når ingrediensantallene er beregnet, kan du bekrefte og frigi formelen. Frigivelsesprosessen varierer, avhengig av om produktene er aktivert for Warehouse Management-prosessene (WMS):
 
-- Hvis et produkt er aktivert for lagerstyringsprosessene, er formellinjen frigitt til lageret i henhold til prinsippene for lagerstyringsprosessene. Formellinjen er frigitt i mengder som samsvarer med de balanserte antallene, og den frigis for de bestemte partiene som er valgt for de aktive ingrediensene.
+- Hvis et produkt er aktivert for WMS, er formellinjen frigitt til lageret i henhold til prinsippene for WMS. Formellinjen er frigitt i mengder som samsvarer med de balanserte antallene, og den frigis for de bestemte partiene som er valgt for de aktive ingrediensene.
 
     > [!NOTE]
     > Formellinjer kan kun frigis til lageret som en del av prosessen for partibalansering. Selv om det finnes andre alternativer for hvordan du frigir materialene for produksjon til lager, kan disse alternativene ikke brukes for formellinjer.
 
-- Hvis et produkt ikke er aktivert for lagerstyringsprosessene, opprettes en produksjonsplukkliste for produktet når du bekrefter og frigir formelen.
+- Hvis et produkt ikke er aktivert for WMS, opprettes en produksjonsplukkliste for produktet når du bekrefter og frigir formelen.
 
-I en formel kan du kombinere produkter som er aktivert for lagerstyringsprosessene og produkter som ikke er aktivert for lagerstyringsprosessene. Når de to produkttypene inkluderesi én formel, frigis produktene som er aktivert for lagerstyringsprosessene til lageret. Produkter som ikke er aktivert for lagerstyringsprosessene, opprettes en plukkliste når du bekrefter og frigir formelen.
+I en formel kan du kombinere produkter som er aktivert for lagerstyringsprosessene og produkter som ikke er aktivert for lagerstyringsprosessene. Når de to produkttypene inkluderes i én formel, frigis produktene som er aktivert for WMS til lageret. Produkter som ikke er aktivert for WMS, opprettes en plukkliste når du bekrefter og frigir formelen.
 
 ### <a name="batch-orders-that-arent-applicable-for-batch-balancing"></a>Partiordrer som ikke er tilgjengelige for partibalansering
 
 Det er to unntak til regelen om at partiordrer bare kan partibalanseres hvis formelen har minst én formellinje der **Ingredienstype** er *Aktiv*.
 
-1. Hvis en formel inneholder en aktiv ingrediens for et produkt som er aktivert for lagerstyringsprosessene, men partinummeret er nedenfor lokasjonen i reservasjonshierarkiet, er partiordren ikke tilgjengelig for partibalansering.
+1. Hvis en formel inneholder en aktiv ingrediens for et produkt som er aktivert for WMS, men partinummeret er nedenfor lokasjonen i reservasjonshierarkiet, er partiordren ikke tilgjengelig for partibalansering.
 1. Hvis måleenheten for formel er forskjellig fra måleenheten for lager for den aktive ingrediensen, gjelder ikke partiordren for partibalansering.
 
 En partiordre som ikke er tilgjengelig for partibalansering går gjennom den vanlige prosessyklusen for partiordrer.

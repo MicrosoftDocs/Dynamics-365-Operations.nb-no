@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 22788dff1ee29b6920426d8ff00d412c3d5564e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f2f51a095a23b651dca645b14e652519f20037e2
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853081"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070566"
 ---
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
 
@@ -42,7 +42,11 @@ Beregningen av variable kompensasjonsbeløp for de ansatte kan baseres på flere
 Firmaer kan eventuelt også definere **Overdragelsesregler**. **Overdragelsesregler** beskriver hvordan den variable bonusen skal fordeles over tid. En overdragelsesregel kan for eksempel angi at ansatt vil motta 25 prosent av den totale belønning hvert år i de neste fire årene. Overdragelsesregler er kun til informasjon.
 
 ## <a name="variable-compensation-plans"></a>Variable kompensasjonsplaner
-Den **variable kompensasjonsplanen** inneholder reglene, beregningsmetodene og standardverdiene for beregningen av variabel kompensasjon for ansatte som er registrert. Når du oppretter en variabel kompensasjonsplan, må du angi den variable kompensasjonstypen. Den variable kompensasjonstypen bestemmer om systemet beregner et valutabeløp eller antall enheter som bonusen. Du må også angi beregningsmetoden:
+Den **variable kompensasjonsplanen** inneholder reglene, beregningsmetodene og standardverdiene for beregningen av variabel kompensasjon for ansatte som er registrert. Når du oppretter en variabel kompensasjonsplan, må du angi den variable kompensasjonstypen. Den variable kompensasjonstypen bestemmer om systemet beregner et valutabeløp eller antall enheter som bonusen. 
+
+Parameteren **Begrens tilgang til valgte roller** begrenser tilgang til kompensasjonsplanen til valgte sikkerhetsroller som er tilordnet denne planen i Human Resources. Når du for eksempel oppretter kompensasjonsplaner som er for ledere, og som ikke skal være synlige for alle personalspesifikke roller, kan du bruke denne parameteren til å begrense tilgangen til disse kompensasjonsplanene. 
+
+Du må også angi beregningsmetoden:
 
 -   **Tidspunkt** – beregningen av den variable bonusen er basert på den faste kompensasjonen som ansatt har på en bestemt dato. Denne datoen er angitt for prosesshendelsen når nye kompensasjonsbeløp er behandlet.
 -   **Sammensatt** – Et belønningsbeløp beregnes for hver unike lønnssats for fast kompensasjon som den ansatte hadde mellom startdatoen og sluttdatoen for syklusen i prosesshendelsen. Satsene blir deretter lagt sammen for å bestemme den endelige belønningen. Under syklusen blir for eksempel en ansatt overført til en annen stilling som hadde en annen lønnssats. I dette tilfellet justeres den variable belønningen etter hvor lenge den ansatte hadde hver lønnssats.

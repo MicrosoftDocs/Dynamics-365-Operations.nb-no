@@ -2,19 +2,19 @@
 title: Veiledning for oppsett av dobbel skriving
 description: Denne artikkelen beskriver scenariene som støttes for oppsett av dobbel skriving.
 author: RamaKrishnamoorthy
-ms.date: 10/12/2020
+ms.date: 06/28/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: a0d1b4e1f093874a8fd37cf7aadb331cd1e7adc4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 15dfb609b5e25b4faf2b913cc2310df71c88a74d
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873156"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111257"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Veiledning for oppsett av dobbel skriving
 
@@ -29,6 +29,7 @@ Du kan opprette en dobbelt skrive-tilkobling mellom et økonomi- og driftsmiljø
 + Et **økonomi- og driftsmiljø** gir den underliggende plattformen for **økonomi- og driftsapper** (for eksempel Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce og Dynamics 365 Human Resources).
 + Et **Dataverse-miljø** gir den underliggende plattformen for **kundeengasjementsapper** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing og Dynamics 365 Project Service Automation).
 
+
 > [!IMPORTANT]
 > Personale-modulen i Dynamics 365 Finance støtter tilkoblinger med dobbel skriving, men det gjør ikke appen Dynamics 365 Human Resources.
 
@@ -37,22 +38,22 @@ Oppsettmekanismen varierer, avhengig av abonnementet og miljøet:
 + Når det gjelder nye forekomster av økonomi- og driftsapper, begynner oppsettet av en tilkobling med dobbel skriving i Microsoft Dynamics Lifecycle Services (LCS). Hvis du har en lisens for Microsoft Power Platform, vil du få et nytt Dataverse-miljø hvis leieren din ikke har et.
 + Når det gjelder eksisterende økonomi- og driftsapper, begynner oppsettet av en tilkobling med dobbel skriving i økonomi- og driftsmiljøet.
 
-Før du starter dobbel skriving på en enhet, kan du kjøre en første synkronisering for å behandle eksisterende data på begge sider: økonomi- og driftsapper og Customer Engagement-apper. Du kan hoppe over den innledende synkroniseringen hvis du ikke må synkronisere data mellom de to miljøene.
+Før du starter dobbel skriving på en enhet, kan du kjøre en første synkronisering for å behandle eksisterende data på begge sider: økonomi- og driftsapper og kundeengasjementsapper. Du kan hoppe over den innledende synkroniseringen hvis du ikke må synkronisere data mellom de to miljøene.
 
 En innledende synkronisering gjør at du kan kopiere eksisterende data fra én app til en annen begge veier. Det finnes flere forskjellige oppsettscenarioer, avhengig av miljøene du allerede har, og typen som finnes i dem.
 
 Følgende oppsettscenarier støttes:
 
-+ [En ny økonomi- og driftsappforekomst og en ny Customer Engagement-appforekomst](#new-new)
-+ [En ny økonomi- og driftsappforekomst og en eksisterende Customer Engagement-appforekomst](#new-existing)
-+ [En ny økonomi- og driftsappforekomst som har data og en ny Customer Engagement-appforekomst](#new-data-new)
-+ [En ny økonomi- og driftsappforekomst som har data og eksisterende Customer Engagement-appforekomst](#new-data-existing)
-+ [En eksisterende økonomi- og driftsappforekomst og ny Customer Engagement-appforekomst](#existing-new)
-+ [En eksisterende økonomi- og driftsappforekomst og eksisterende Customer Engagement-appforekomst](#existing-existing)
++ [En ny økonomi- og driftsappforekomst og en ny forekomst av en kundeengasjementsapp](#new-new)
++ [En ny økonomi- og driftsappforekomst og en eksisterende forekomst av en kundeengasjementsapp](#new-existing)
++ [En ny økonomi- og driftsappforekomst som har data og en ny forekomst av en kundeengasjementsapp](#new-data-new)
++ [En ny økonomi- og driftsappforekomst som har data og en eksisterende forekomst av en kundeengasjementsapp](#new-data-existing)
++ [En eksisterende økonomi- og driftsappforekomst og en ny forekomst av en kundeengasjementsapp](#existing-new)
++ [En eksisterende økonomi- og driftsappforekomst og en eksisterende forekomst av en kundeengasjementsapp](#existing-existing)
 
-## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>En ny økonomi- og driftsappforekomst og en ny Customer Engagement-appforekomst
+## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>En ny økonomi- og driftsappforekomst og en ny forekomst av en kundeengasjementsapp
 
-Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som ikke har noen data, og en ny forekomst av en Customer Engagement-app, følger du fremgangsmåten i [Oppsett av dobbel skriving fra Lifecycle Services](lcs-setup.md). Når tilkoblingsoppsettet er fullført, skjer følgende handlinger automatisk:
+Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som ikke har noen data, og en ny forekomst av en kundeengasjementsapp, følger du fremgangsmåten i [Oppsett av dobbel skriving fra Lifecycle Services](lcs-setup.md). Når tilkoblingsoppsettet er fullført, skjer følgende handlinger automatisk:
 
 - Et nytt, tomt økonomi- og driftsmiljø klargjøres.
 - En ny, tom forekomst av en kundeengasjementsapp er klargjort, der CRM-hovedløsningen er installert.
@@ -61,9 +62,9 @@ Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av 
 
 Begge miljøene er så klare for direkte synkronisering av data.
 
-## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>En ny økonomi- og driftsappforekomst og en eksisterende Customer Engagement-appforekomst
+## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>En ny økonomi- og driftsappforekomst og en eksisterende forekomst av en kundeengasjementsapp
 
-Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som ikke har noen data, og en eksisterende forekomst av en Customer Engagement-app, følger du fremgangsmåten i [Oppsett av dobbel skriving fra Lifecycle Services](lcs-setup.md). Når tilkoblingsoppsettet er fullført, skjer følgende handlinger automatisk:
+Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som ikke har noen data, og en eksisterende forekomst av en kundeengasjementsapp, følger du fremgangsmåten i [Oppsett av dobbel skriving fra Lifecycle Services](lcs-setup.md). Når tilkoblingsoppsettet er fullført, skjer følgende handlinger automatisk:
 
 - Et nytt, tomt økonomi- og driftsmiljø klargjøres.
 - Det opprettes en dobbel skriving-tilkobling for DAT-firmadata.
@@ -80,18 +81,18 @@ Følg denne fremgangsmåten for å synkronisere de eksisterende Dataverse-dataen
 
 Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se [Eksempel](#example)-delen senere i denne artikkelen.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>En ny økonomi- og driftsappforekomst som har data og en ny Customer Engagement-appforekomst
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>En ny økonomi- og driftsappforekomst som har data og en ny forekomst av en kundeengasjementsapp
 
-Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en ny forekomst av en Customer Engagement-app, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en ny Customer Engagement-appforekomst](#new-new) tidligere i denne artikkelen. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
+Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en ny forekomst av en kundeengasjementsapp, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en ny forekomst av en kundeengasjementsapp](#new-new) tidligere i denne artikkelen. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
 
 1. Åpne økonomi- og driftsappen fra LCS-siden, logg på og gå til **Databehandling \> Dobbel skriving**.
 2. Kjør funksjonaliteten **Innledende synkronisering** for tabellen du vil synkronisere data for.
 
 Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se [Eksempel](#example)-delen.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>En ny økonomi- og driftsappforekomst som har data og eksisterende Customer Engagement-appforekomst
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>En ny økonomi- og driftsappforekomst som har data og en eksisterende forekomst av en kundeengasjementsapp
 
-Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en eksisterende forekomst av en Customer Engagement-app, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en eksisterende Customer Engagement-appforekomst](#new-existing) tidligere i denne artikkelen. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
+Hvis du vil konfigurere en dobbel skriving-tilkobling mellom en ny forekomst av en økonomi- og driftsapp som har data og en eksisterende forekomst av en kundeengasjementsapp, følger du fremgangsmåten i delen [En ny økonomi- og driftsappforekomst og en eksisterende forekomst av en kundeengasjementsapp](#new-existing) tidligere i denne artikkelen. Når tilkoblingsoppsettet er fullført, følger du denne fremgangsmåten hvis du vil synkronisere dataene med kundeengasjementsappen.
 
 1. Åpne økonomi- og driftsappen fra LCS-siden, logg på og gå til **Databehandling \> Dobbel skriving**.
 2. Kjør funksjonaliteten **Innledende synkronisering** for tabellen du vil synkronisere data for.
@@ -105,18 +106,18 @@ Følg denne fremgangsmåten for å synkronisere de eksisterende Dataverse-dataen
 
 Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se [Eksempel](#example)-delen.
 
-## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>En eksisterende økonomi- og driftsappforekomst og en ny Customer Engagement-appforekomst
+## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>En eksisterende økonomi- og driftsappforekomst og en ny forekomst av en kundeengasjementsapp
 
-Oppsettet av en dobbel skriving-tilkobling mellom en eksisterende forekomst av en økonomi- og driftsapp og en ny forekomst av en Customer Engagement-app forekommer i økonomi- og driftsmiljøet.
+Oppsettet av en dobbel skriving-tilkobling mellom en eksisterende forekomst av en økonomi- og driftsapp og en ny forekomst av en kundeengasjementsapp forekommer i økonomi- og driftsmiljøet.
 
 1. [Konfigurer tilkoblingen fra økonomi- og driftsappen](enable-dual-write.md).
 2. Kjør funksjonaliteten **Innledende synkronisering** for tabellen du vil synkronisere data for.
 
 Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se [Eksempel](#example)-delen.
 
-## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>En eksisterende økonomi- og driftsappforekomst og eksisterende Customer Engagement-appforekomst
+## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>En eksisterende økonomi- og driftsappforekomst og en eksisterende forekomst av en kundeengasjementsapp
 
-Oppsettet av en dobbel skriving-tilkobling mellom en eksisterende forekomst av en økonomi- og driftsapp og en eksisterende forekomst av en Customer Engagement-app forekommer i økonomi- og driftsmiljøet.
+Oppsettet av en dobbel skriving-tilkobling mellom en eksisterende forekomst av en økonomi- og driftsapp og en eksisterende forekomst av en kundeengasjementsapp forekommer i økonomi- og driftsmiljøet.
 
 1. [Konfigurer tilkoblingen fra økonomi- og driftsappen](enable-dual-write.md).
 2. Hvis du vil synkronisere de eksisterende Dataverse-dataene til økonomi- og driftsappen, [starter du opp](bootstrap-company-data.md) Dataverse-dataene ved hjelp av en ISO-firmakode på tre bokstaver.

@@ -1,6 +1,6 @@
 ---
-title: Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)
-description: Denne artikkelen forklarer hvordan du får hjelp med appene Økonomi og drift eller Microsoft Dynamics Lifecycle Services (LCS).
+title: Få støtte for økonomi- og driftsapper eller Lifecycle Services (LCS)
+description: Denne artikkelen forklarer hvordan du får hjelp med økonomi- og driftsapper eller Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
@@ -14,21 +14,21 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 278a62c0393be503352db39dddeca1095e7e4a5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f36709ddc2a64c31fe3c2d63fbe073fd9bc159bb
+ms.sourcegitcommit: 12b3dbee905f8b2eb2e6c383c822a0fc9fccf063
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8866438"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9103411"
 ---
-# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)
+# <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Få støtte for økonomi- og driftsapper eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-2.md)]
 
-Denne artikkelen forklarer hvordan du får hjelp med appene Økonomi og drift eller Microsoft Dynamics Lifecycle Services (LCS). 
+Denne artikkelen forklarer hvordan du får hjelp med økonomi- og driftsapper eller Microsoft Dynamics Lifecycle Services (LCS). 
 
 <table>
 <thead>
@@ -51,7 +51,7 @@ Denne artikkelen forklarer hvordan du får hjelp med appene Økonomi og drift el
 <td>I <a href="https://lcs.dynamics.com/">LCS</a> bruker du <strong>Problemsøk</strong> til å søke raskt etter Microsoft Knowledge Base (KB)-artikler, hurtigreparasjoner og midlertidige løsninger for rapporterte problemer. Du kan se hvilke rapporterte problemer er i ferd med å rettes for et bestemt funksjonsområde, og hvilke problemer som allerede er rettet. Hvis du vil ha mer informasjon, se <a href="issue-search-lcs.md">Problemsøk (Lifecycle Services, LCS).</a></td>
 </tr>
 <tr>
-<td>Få støtte i økonomi og driftsappen.</td>
+<td>Få støtte i økonomi- og driftsappen.</td>
 <td>Velg <strong>Hjelp</strong>-knappen (<strong>?</strong>) øverst i høyre hjørne på appen, og velg deretter <strong>Støtte</strong>. Problemer rapporteres i kategorien <strong>Aktive utgaver</strong> i LCS. Administratorer kan fastsette om de skal tilby internt kundestøtte eller sende problemene til Microsoft.</td>
 </tr>
 <tr>
@@ -72,3 +72,4 @@ Denne artikkelen forklarer hvordan du får hjelp med appene Økonomi og drift el
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

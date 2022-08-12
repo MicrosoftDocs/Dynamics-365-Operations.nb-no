@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: d493164b754b86a9df9ce4dcf9df8b20eeb55c5c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 640a45e29627ffe56535c7d05419309688e8ecb6
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859437"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069824"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilt arbeidsområde for lagerbeholdning
 
@@ -29,7 +29,7 @@ ms.locfileid: "8859437"
 
 Denne artikkelen gir informasjon om det mobile arbeidsområdet for **lagerbeholdning**. Dette arbeidsområdet gir deg innsikt i reservert og tilgjengelig lager når som helst og hvor som helst.
 
-Dette mobile arbeidsområdet er ment å brukes sammen med Økonomi og drift (Dynamics 365)-mobilappen.
+Dette mobile arbeidsområdet er ment å brukes sammen med økonomi- og driftsmobilappen (Dynamics 365).
 
 ## <a name="overview"></a>Oversikt
 Selskaper har vanligvis flere leveringer og flere mottak til lager hver dag. Disse flyttingene endrer kontinuerlig lagerbeholdningsstatusen. Det mobile arbeidsområdet for **lagerbeholdning** lar deg se lagerbeholdningsstatus på tvers av firmaet, slik at du kan få den nyeste innsikten i lagerdata på den mobile enheten du velger. Uansett om du arbeider i lager, innkjøp, salg, produksjon eller management, eller har andre roller, kan du få tilgang til dataene i lagerbeholdningen når som helst og hvor som helst. 
@@ -94,7 +94,7 @@ Hvis Platform update 3 eller nyere er distribuert i organisasjonen, må systeman
 
 ## <a name="download-and-install-the-mobile-app"></a>Laste ned og installere mobilappen
 
-Last ned og installer mobilappen Økonomi og drift (Dynamics 365):
+Last ned og installer økonomi- og driftsmobilappen (Dynamics 365):
 
 -   [For Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhone](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -131,3 +131,4 @@ Last ned og installer mobilappen Økonomi og drift (Dynamics 365):
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

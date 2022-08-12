@@ -1,6 +1,6 @@
 ---
-title: Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
-description: Denne artikkelen presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser.
+title: Registrere varer aktivert for lagerstyringsprosesser ved å bruke en journal for vareankomst
+description: Denne artikkelen presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker Warehouse Management-prosesser (WMS).
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process
@@ -14,18 +14,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac4a681484f0cd843ccd73633040f0fa0be0475e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863628"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9066975"
 ---
-# <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
+# <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Registrere varer aktivert for lagerstyringsprosesser ved å bruke en journal for vareankomst
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser. Dette gjøres vanligvis av en mottaksassistent.
+Denne artikkelen presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker Warehouse Management-prosesser (WMS). Dette gjøres vanligvis av en mottaksassistent.
 
 ## <a name="enable-sample-data"></a>Aktivere eksempeldata
 
@@ -36,7 +36,7 @@ Du kan i stedet gå gjennom dette scenariet ved å erstatte verdier fra dine egn
 - Du må ha en bekreftet bestilling med en åpen bestillingslinje.
 - Varen på linjen må være lagerført. Den må ikke brukes produktvarianter og må ikke ha sporingsdimensjoner.
 - Varen må være tilknyttet en lagringsdimensjonsgruppe som har lagerbehandlingsprosessen aktivert.
-- Lageret som brukes, må være aktivert for lagerprosjektstyringsprosesser, og lokasjonen som du bruker for mottak, må være nummerskiltkontrollert.
+- Lageret som brukes, må være aktivert for WMS, og lokasjonen som du bruker for mottak, må være nummerskiltkontrollert.
 
 ## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Opprett et journalhode for vareankomst som bruker lagerstyring
 

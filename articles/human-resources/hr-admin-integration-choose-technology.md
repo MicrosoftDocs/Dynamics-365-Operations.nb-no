@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79aee04527eea5b673555f9c7de893a400a5c617
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2c542684642e4f6eda0f862623889a68f85b2b20
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887812"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068886"
 ---
 # <a name="choose-a-data-integration-technology"></a>Velg en dataintegreringsteknologi
 
@@ -70,7 +70,7 @@ Dataverse-tabeller og tilknyttede API-er er det beste alternativet for å få ti
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-enheter
 
-Human Resources, bygd primært på samme plattform som økonomi- og driftsapper, fungerer som et [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kjent som DIXF (rammeverk for dataimport-/eksport). Human Resources inneholder et sett med dataenheter som du kan bruke til å importere og eksportere Human Resources-data. Dataverse-tabeller er det foretrukne grensesnittet for dataintegrering for Human Resources, men DMF-enhetene vil likevel være nyttige i enkelte tilfeller, for eksempel:
+Human Resources, bygd primært på samme plattform som økonomi- og driftsapper, fungerer som et [rammeverk for dataadministrasjon (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF er også kjent som DIXF (rammeverk for dataimport-/eksport). Human Resources inneholder et sett med dataenheter som du kan bruke til å importere og eksportere Human Resources-data. Dataverse-tabeller er det foretrukne grensesnittet for dataintegrering for Human Resources, men DMF-enhetene vil likevel være nyttige i enkelte tilfeller, for eksempel:
 
 - Dataverse-tabeller er ikke tilgjengelige ennå.
 
@@ -153,3 +153,4 @@ Med så mange forskjellige integreringsteknologier tilgjengelige, kan det være 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

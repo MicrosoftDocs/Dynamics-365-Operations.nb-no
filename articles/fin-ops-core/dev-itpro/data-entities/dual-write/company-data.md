@@ -1,6 +1,6 @@
 ---
 title: Firmabegrep i Dataverse
-description: Denne artikkelen beskriver integreringen av firmadata mellom Økonomi og drift og Dataverse.
+description: Denne artikkelen beskriver integreringen av firmadata mellom Finance and Operations og Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 11355031714b7e046f70bd5840297d66aa7d32e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ad0075e2b92ebeb9fba879bcae503100dc7adb47
+ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873185"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9205944"
 ---
-# <a name="company-concept-in-dataverse"></a>Bedriftskonsept i Dataverse
+# <a name="company-concept-in-dataverse"></a>Firmabegrep i Dataverse
 
 [!include [banner](../../includes/banner.md)]
 
@@ -29,9 +29,11 @@ Dataverse ikke har et tilsvarende begrep. Det nærmeste konseptet er *forretning
 
 Fordi forretningsenhet og firma ikke er identiske konsepter, er det ikke mulig å tvinge en en-til-en (1:1) tilordning mellom dem for formålet Dataverse-integrering. Siden brukere imidlertid som standard må kunne se de samme radene i programmet og Dataverse, har Microsoft innført en ny tabell i Dataverse kalt cdm\_Company. Denne tabellen tilsvarer Firma-tabellen i programmet. For å garantere at synligheten til rader er lik mellom programmet og Dataverse fra starten av, anbefaler vi følgende oppsett for data i Dataverse:
 
-+ For hver firmarad for økonomi og drift som er aktivert for dobbel skriving, opprettes det en tilknyttet cdm\_firmarad.
-+ Når en cdm\_Company-rad opprettes og aktiveres for dobbel skriving, opprettes det en standard forretningsenhet som har samme navn. Selv om det opprettes automatisk et standardteam for denne forretningsenheten, brukes ikke forretningsenheten.
-+ Det opprettes et separat eierteam som har samme navn. Det er også knyttet til forretningsenheten.
++ For hver firmarad i Finance and Operations som er aktivert for dobbel skriving, opprettes det en tilknyttet cdm\_firmarad.
+
++ Når en cdm\_Company-rad opprettes og aktiveres for dobbel skriving, opprettes det en standard forretningsenhet som har samme navn. Selv om det opprettes automatisk et standard eierteam for denne forretningsenheten, brukes ikke forretningsenheten.
++ Det opprettes et separat eierteam som har samme navn, med et suffiks for dobbel skriving. Det er også knyttet til forretningsenheten.
+
 + Som standard er eieren av enhver rad som er opprettet og dobbeltskrevet til Dataverse, satt til DW Owner-teamet som er koblet til den tilknyttede forretningsenheten.
 
 Illustrasjonen nedenfor viser et eksempel på dette dataoppsettet i Dataverse.
@@ -43,7 +45,7 @@ På grunn av denne konfigurasjonen eies alle rader som er relatert til USMF-firm
 + Rollen "Salgssjef" er tilordnet medlemmer av "USMF Sales"-teamet.
 + Brukere som har Salgssjef-rollen, kan få tilgang til alle kontorader som er medlemmer av samme forretningsenhet som de er medlemmer av.
 + "USMF Sales"-teamet er knyttet til USMF-forretningsenheten som ble nevnt tidligere.
-+ Derfor kan medlemmer av "USMF Sales"-gruppen se alle kontoer som eies av "USMF DW"-brukeren, som ville ha kommet fra USMF-firmatabellen i økonomi og drift.
++ Derfor kan medlemmer av "USMF Sales"-gruppen se alle kontoer som eies av "USMF DW"-brukeren, som ville ha kommet fra USMF-firmatabellen i Finance and Operations.
 
 ![Hvordan team kan brukes.](media/dual-write-company-2.png)
 

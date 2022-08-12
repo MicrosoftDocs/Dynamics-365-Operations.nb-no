@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dd645dcc79672e7f69afe47b803b90a04c22305d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 13a25d3f1f72d8053ed3951b036522cfa3a15959
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856287"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065652"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurer parametere for Human Resources
 
@@ -27,7 +27,7 @@ ms.locfileid: "8856287"
 
 Innstillingene for noen Human Resources-parametere deles mellom firmaer, mens innstillingene for andre parametere er firmaspesifikke. Denne artikkelen forklarer hvordan du konfigurerer firmaspesifikke parametere i Human Resources.
 
-To sider brukes til å angi Human Resources-parametere. For parametere som deles på tvers av firmaer, bruker du siden **Delte parametere for personaladministrasjon**. For parameterne som er firmaspesifikke (altså innstillingene gjelder ett enkelt firma), bruker du siden **Personalparametere**.
+To sider brukes til å angi Human Resources-parametere. For parametere som deles på tvers av firmaer, bruker du siden **Delte parametere for personaladministrasjon**. For parametere som er firmaspesifikke, bruker du siden **Personalparametere**.
 
 ![Gå til Human Resources-parametere.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -74,9 +74,10 @@ Innstillingene i **Kompensasjon**-fanen i Dynamics 365 Finance angir om brukere 
 
 I Human Resources kan du bruke fanen **Kompensasjon** til å velge å begrense tilgang til kompensasjonsplaner og angi en standardvaluta.
 
-Hvis du vil ha mer informasjon om kompensasjon, kan du se [Oversikt over kompensasjonsplaner](hr-compensation-overview.md).
+> [!NOTE]
+> I den sammenslåtte infrastrukturen er standard **Valuta**-parameter på **Kompenasjon**-fanen på siden **Personalparametere** fjernet. Fremover vil valutaen bli behandlet av parameteren **Finansvaluta** for å sikre at det ikke er noen konflikter for eksisterende økonomi- og driftsfunksjonalitet og for å forhindre duplisering. Hvis du vil ha mer informasjon om hvordan du bruker funksjonaliteten for finansvaluta, kan du se [Konfigurer finans](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Kategorien Kompensasjon.](./media/hr-setup-parameters-compensation.png)
+Hvis du vil ha mer informasjon om kompensasjon, kan du se [Oversikt over kompensasjonsplaner](hr-compensation-overview.md).
 
 ## <a name="number-sequences"></a>Nummerserier
 

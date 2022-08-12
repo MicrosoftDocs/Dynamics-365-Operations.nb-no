@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 100b1972801f117560a5caf338a1ac640737ccdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855939"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070327"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -56,7 +56,7 @@ Illustrasjonen nedenfor viser den vanlige flyten for håndtering av innkommende 
 
 ## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Registrere vare antall som ankommer i en inngående last
 
-Microsoft Dynamics 365 Supply Chain Management støtter flere av de operative metodene for å registrere ankomsten av bestilte produkter. Derfor kan du konfigurere systemet slik at det samsvarer med dine spesifikke forretningsbehov. Denne delen beskriver hvordan du kan registrere innkommende vareantall ved hjelp av en mobilenhet når avansert lagerstyring er aktivert i systemet. Det finnes imidlertid en alternativ flyt som er basert på bruk av vareankomstjournalen i stedet for en mobilenhet. For mer informasjon om denne flyten kan du se [Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst](tasks/register-items-advanced-warehousing.md).
+Microsoft Dynamics 365 Supply Chain Management støtter flere av de operative metodene for å registrere ankomsten av bestilte produkter. Derfor kan du konfigurere systemet slik at det samsvarer med dine spesifikke forretningsbehov. Denne delen beskriver hvordan du kan registrere innkommende vareantall ved hjelp av en mobilenhet når Warehouse Management-prosesser er aktivert i systemet. Det finnes imidlertid en alternativ flyt som er basert på bruk av vareankomstjournalen i stedet for en mobilenhet. For mer informasjon om denne flyten kan du se [Registrere varer for Warehouse Management-prosesser ved hjelp av en journal for vareankomst](tasks/register-items-advanced-warehousing.md).
 
 Når en innkommende last først ankommer lageret, må lagermedarbeidere registrere vareantallene som er inkludert i forsendelsen. Vanligvis bruker de håndholdte skannere. Denne arbeidsflyten er bare tilgjengelig hvis følgende elementer finnes i systemet:
 

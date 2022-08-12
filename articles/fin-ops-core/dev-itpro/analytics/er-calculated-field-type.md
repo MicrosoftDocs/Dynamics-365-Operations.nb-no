@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4933c429982d1371c7c9a9412789ae08e08f43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a4eb70144957ecdbeba4246fb8c7cd6a20cb08c
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8934707"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9108337"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen
 
@@ -36,7 +36,7 @@ Hvis du vil fullføre eksemplene i denne artikkelen, må du ha følgende tilgang
     - Funksjonell konsulent for elektronisk rapportering
     - Systemansvarlig
 
-- Tilgang Regulatory Configuration Service (RCS) som er klargjort for samme leietaker som Finance and Operations, for én av følgende roller:
+- Tilgang til Regulatory Configuration Services (RCS) som er klargjort for samme leietaker som Finance and Operations, for én av følgende roller:
 
     - Utvikler av elektronisk rapportering
     - Funksjonell konsulent for elektronisk rapportering
@@ -343,3 +343,4 @@ Du kan importere gjennomgåtte konfigurasjoner fra RCS ved å bruke ER-repositor
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

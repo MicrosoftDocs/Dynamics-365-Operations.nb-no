@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c76eadc5839785ba1624ee3894ef1d0872369aa9
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: b8faa7b73349c48d3a02b685546b47c4969c6027
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7403847"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109440"
 ---
 # <a name="synchronize-date-and-time-in-import-jobs"></a>Synkronisere dato og klokkeslett i importjobber
 
@@ -27,7 +27,7 @@ Det er viktig å angi tidssonen UTC (Coordinated Universal Time) for importjobbe
 
 Denne doble konverteringen gjør at datoer endres mellom programmer. Den doble konverteringen kan for eksempel gjøre at startdatoen for en ansatt, blir forskjellige i Dynamics 365 Human Resources og Dynamics 365 Finance på grunn av forskjeller i lokale tidssoner. Du løser dette problemet ved å angi UTC for importjobben.
 
-1. Velg **Databehandling** i Dynamics 365 Finance and Operations.
+1. I Dynamics 365 Finance and Operations velger du **Dataadministrasjon**.
 
 2. Velg **Importer prosjekter**, og velg deretter prosjektet.
 
@@ -41,3 +41,4 @@ Denne doble konverteringen gjør at datoer endres mellom programmer. Den doble k
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

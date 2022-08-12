@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f9f3e17a6c67dc1cc1d4ba423ce258f2ed1d1ec0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0b8723da9b80d007cd0a3196affdfa854eff095f
+ms.sourcegitcommit: 45bb77244a31fa174adf85d1b54e9700109ca0c4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847606"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9198387"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 
@@ -107,7 +107,7 @@ For å gjenoppta opptaksøkten når du har stanset midlertid, klikker du **Forts
 Oppgaveopptaker kan ta skjermbilder av brukergrensesnittet for Retail Modern POS mens du tar opp en forretningsprosess. Hvis du vil aktivere opptaksfunksjonen for skjermbilde, kan du angi **Ta skjermbilder** til **Ja** og deretter kjøre opptaket. Når opptaket er fullført, klikker du på **Stopp** og laster ned Word-dokumentet. Dokumentet inneholder trinnene med relevante skjermbilder.
 
 > [!NOTE]
-> Funksjonen for å ta skjermbilder støttes ikke i skysalgssted.
+> Funksjonaliteten for å registrere skjermbilder støttes ikke i Store Commerce, Commerce Modern POS og Cloud POS.
 
 ### <a name="start-task-and-end-task"></a>Start oppgave og avslutt oppgave
 

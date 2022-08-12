@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 94e465616338b0c905ccf6b8244324c18c7a59e8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
+ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849452"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9166883"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.24 (februar 2022)
 
@@ -46,7 +46,7 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre dette i [
 | Modul | Funksjonsnavn i funksjonsbehandling | Mer informasjon |
 |---|---|---|
 | Produksjonskontroll | Kontroll av materialtilgjengelighet etter behov for produksjonsordrer | Denne funksjonen gjør det raskere å åpne siden **Produksjonsordrer som skal frigis**, som er tilgjengelig fra arbeidsområdet **Produksjonsstyring**. Uten denne funksjonen kontrollerer systemet automatisk om materialer er tilgjengelige for alle oppførte produksjonsordrer så snart du åpner siden, noe som kan ta lang tid hvis du har et stort antall ordrer. Når denne funksjonen er aktivert, gir systemet i stedet en verktøylinjeknapp, som du kan bruke til å starte materialkontrollen bare for valgte ordrer og ved behov. |
-| Produksjonskontroll | (Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke-lager) | Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Denne funksjonen støtter bare varer som ikke er aktivert til å bruke avanserte lagerprosesser (WMS). Støtte for WMS-aktiverte varer er planlagt for en fremtidig frigivelse.<p>Noen produsenter, spesielt de som finnes i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeiderne kan for eksempel bruke en vekt til å veie mengden material som brukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere hvilke partinumre som ble forbrukt under produksjonen av hvert produkt. |
+| Produksjonskontroll | Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke lagerstyring) | Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Denne funksjonen støtter bare varer som ikke er aktivert til å bruke Warehouse Management-prosesser (WMS). Støtte for WMS-aktiverte varer er planlagt for en fremtidig frigivelse.<p>Noen produsenter, spesielt de som finnes i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeiderne kan for eksempel bruke en vekt til å veie mengden material som brukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere hvilke partinumre som ble forbrukt under produksjonen av hvert produkt. |
 | Produksjonskontroll | Ferdigmelde arbeidsbelastning for warehouse management for sky- og kantskalaenhet | Denne funksjonen gjør at ansatte kan bruke mobilappen Warehouse Management til å ferdigmelde en produksjons- eller partiordre når appen kjører mot en Warehouse Management-arbeidsbelastning på en sky- eller kantskalaenhet. Hvis du vil ha mer informasjon, kan du se [Ferdigmeld og plasser på en skalaenhet](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Lagerstyring | Nye sider for arbeidsområde for lastplanlegging | Aktiverer to nye arbeidsområdesider for lastplanlegging: **arbeidsområde for planlegging av innkommende last** og **arbeidsområde for planlegging av utgående last**. |
 
@@ -68,7 +68,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeartikler. Disse 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for Finance and Operations-apper
+### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformoppdateringer for økonomi- og driftsapper
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.24 inkluderer plattformoppdateringer. Hvis du vil ha mer informasjon, kan du se [Plattformoppdateringer for versjon 10.0.24 av økonomi- og driftsapper (februar 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
@@ -94,3 +94,4 @@ Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i
 For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære kompatible med sandkasse- og produksjonsmiljøer, vil avskrivningstiden være mindre enn 12 måneder. Dette er vanligvis funksjonelle oppdateringer som må gjøres på kompilatoren.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

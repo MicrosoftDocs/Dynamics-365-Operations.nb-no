@@ -13,20 +13,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3c07befc7150ff0a121fd3aaa0b5233df9f431e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ef5ed6c3c99d62010643940f3e2f158963ff0dc2
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868615"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9123726"
 ---
 # <a name="embed-third-party-apps"></a>Bygge inn tredjepartsapper
 
 [!include [banner](../includes/banner.md)]
 
-Mange kunder bruker en rekke programmer for å drive virksomheten sin. Noen av disse programmene er tredjepartswebapper som fungerer sammen med Økonomi og drift-apper. For å gi en mer sømløs brukeropplevelse kan du bruke funksjonen **Helsideapper** til å bygge inn disse tredjepartsappene direkte i Økonomi og drift-appene dine (forutsatt at tredjepartsappene tillater at de legges inn). På denne måten kan brukere få tilgang til webområder og apper som de krever, uten at de behøver å bytte kategorier eller vinduer.
+Mange kunder bruker en rekke programmer for å drive virksomheten sin. Noen av disse programmene er tredjepartswebapper som fungerer sammen med økonomi- og driftsapper. For å gi en mer sømløs brukeropplevelse kan du bruke funksjonen **Helsideapper** til å bygge inn disse tredjepartsappene direkte i økonomi- og driftsappene dine (forutsatt at tredjepartsappene tillater at de legges inn). På denne måten kan brukere få tilgang til webområder og apper som de krever, uten at de behøver å bytte kategorier eller vinduer.
 
-Før du kan bygge inn tredjepartsapper i produktet, må du aktivere funksjonen **Helside-apper** i Funksjonsbehandling. Deretter kan du bruke en av følgende metoder til å bygge inn en tredjepartsapp eller et webområde. Disse metodene er analoge til metodene som brukes til å bygge inn lerretsapper fra Microsoft Power Apps til Økonomi og drift-apper.
+Før du kan bygge inn tredjepartsapper i produktet, må du aktivere funksjonen **Helside-apper** i Funksjonsbehandling. Deretter kan du bruke en av følgende metoder til å bygge inn en tredjepartsapp eller et webområde. Disse metodene er analoge til metodene som brukes til å bygge inn lerretsapper fra Microsoft Power Apps til økonomi- og driftsapper.
 
 - Bygg inn appen eller webområdet på en eksisterende side som en ny kategoriside (pivotfane, hurtigfane, blad eller arbeidsområde).
 - Opprett en ny fullsideopplevelse for appen eller webområdet fra instrumentbordet.
@@ -60,7 +60,7 @@ Bruk denne fremgangsmåten hvis du vil supplere en eksisterende side i systemet 
 
 ## <a name="embed-a-website-as-a-full-page-experience-from-the-dashboard"></a>Bygge inn et webområde som en helsideopplevelse fra instrumentbordet
 
-Bruk denne fremgangsmåten hvis appen du vil bygge inn, ikke er relatert til en eksisterende side, eller hvis du bare vil ha en helsideopplevelse for appen i Økonomi og drift-appen.
+Bruk denne fremgangsmåten hvis appen du vil bygge inn, ikke er relatert til en eksisterende side, eller hvis du bare vil ha en helsideopplevelse for appen i økonomi- og driftsappen.
 
 1. Åpne instrumentbordet.
 2. Velg og hold på instrumentbodet (eller høyreklikk), velg **Tilpass**, og velg deretter **Legg til en side**.
@@ -89,7 +89,7 @@ Når du har bygd inn en app ved hjelp av en av metodene som er beskrevet i de fo
 
 ## <a name="viewing-embedded-apps"></a>Vise innebygde apper
 
-Hvis du vil vise en innebygd app på en side i Økonomi og drift-apper, åpner du siden med den innebygde appen. Husk at innebygde apper på noen sider kan åpnes ved hjelp av **Power Apps**-knappen i standardhandlingsruten. De kan også vises direkte på siden som en ny fane, hurtigfane eller et blad eller som en ny inndeling i et arbeidsområde.
+Hvis du vil vise en innebygd app på en side i økonomi- og driftsapper, åpner du siden med den innebygde appen. Husk at innebygde apper på noen sider kan åpnes ved hjelp av **Power Apps**-knappen i standardhandlingsruten. De kan også vises direkte på siden som en ny fane, hurtigfane eller et blad eller som en ny inndeling i et arbeidsområde.
 
 ## <a name="editing-or-removing-embedded-apps"></a>Redigere eller fjerne innebygde apper
 
@@ -129,3 +129,4 @@ Hvis et nettsted ikke blir gjengitt riktig etter at den er innebygd i en Finance
 Selv om denne artikkelen har fokus på å bygge inn tredjepartsapper eller webområder gjennom tilpasning, kan utviklerne også bygge dem inn i et skjema ved hjelp av Visual Studio-utviklingserfaringen. Du kan bare legge til en **WebsiteHostControl**-kontroll i skjemaet. Metadataegenskapene som er tilgjengelige for kontrollen, har de samme egenskapene som tilpasningserfaringen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
 title: Integrert finans
-description: Denne artikkelen beskriver integreringen av finansdata mellom Økonomi og drift og andre Dynamics 365-programmer ved bruk av Dataverse.
+description: Denne artikkelen beskriver integreringen av finansdata mellom Finance and Operations og andre Dynamics 365-programmer ved bruk av Dataverse.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e83d66f3f8c8927b9baaf99838a4e242e7e011dc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5598295a25e31b33cd8b4d7ce3250a982ab4e87
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847196"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112248"
 ---
 # <a name="integrated-ledger"></a>Integrert finans
 
@@ -45,3 +45,4 @@ Finance and Operations-apper | Kundeengasjementsapper     | beskrivelse
 [Hovedkontokategorier](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

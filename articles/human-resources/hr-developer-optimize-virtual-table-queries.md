@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f75176781620cd6f845c002876eba6e34d5793e7
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 1f379cd7783cc984666582d2c680a1db013627ce
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8692233"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9070180"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimaliser virtuelle Dataverse-tabellspørringer
 
@@ -49,12 +49,12 @@ En årsak til treg ytelse med virtuelle Dataverse-tabeller for Human Resources e
 Et eksempel der du kan se denne innvirkningen, er i spørringer mot Arbeider-enheten (**mshr_hcmworkerentity**) eller Basisarbeider-enheten (**mshr_hcmworkerbaseentity**). Det kan hende at du ytelsesproblemet manifesterer seg selg på noen måter:
 
 - **Treg spørringsutførelse:** Spørringen mot den virtuelle tabellen kan returnere de forventede resultatene, men ta lengre tid enn forventet for å fullføre utføringen av spørringen.
-- **Tidsavbrudd for spørring**: Spørringen kan bli tidsavbrutt og returnere følgende feil: "Et token ble hentet for å kalle økonomi og drift, men økonomi og drift returnerte en feil av typen InternalServerError."
+- **Tidsavbrudd for spørring**: Spørringen kan bli tidsavbrutt og returnere følgende feil: "Et token ble hentet for å kalle Finance and Operations, men Finance and Operations returnerte en feil av typen InternalServerError."
 - **Uventet feil**: Spørringen kan returnere feiltype 400 med følgende melding: "Det oppstod en uventet feil."
 
   ![Feiltype 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Begrensning**: Spørringen kan overbruke serverressurser og blir underlagt begrensning. I dette tilfellet returnerer spørringen følgende feil: "Et token ble hentet for å kalle økonomi og drift, men økonomi og drift returnerte en feil av type 429." Hvis du vil ha mer informasjon om begrensning i Human Resources, kan du se [Vanlige spørsmål om begrensning](./hr-admin-integration-throttling-faq.md).
+- **Begrensning**: Spørringen kan overbruke serverressurser og blir underlagt begrensning. I dette tilfellet returnerer spørringen følgende feil: "Et token ble hentet for å kalle Finance and Operations, men Finance and Operations returnerte en feil av type 429." Hvis du vil ha mer informasjon om begrensning i Human Resources, kan du se [Vanlige spørsmål om begrensning](./hr-admin-integration-throttling-faq.md).
 
   ![Feiltype 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -161,3 +161,4 @@ Hvis du vil ha mer informasjon om sideveksling, kan du se [Angi antall enheter s
 - [Vanlige spørsmål om begrensning](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

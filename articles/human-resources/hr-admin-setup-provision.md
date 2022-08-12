@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d13372d8cc1f1f0f1407ea69bee4f98ae5065c2
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 6fc44b52e2f7662fc6be609562cec903a8755d1b
+ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9015353"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "9178511"
 ---
 # <a name="provision-human-resources"></a>Klargjør Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Gjelder For:** Human Resources i den frittstående infrastrukturen_ 
 
-
+> [!NOTE]
+> Fra og med juni 2022 kan Human Resources-miljøer kun distribueres i infrastrukturen i økonomi- og driftsapper. Hvis du vil ha mer informasjon , kan du se [Klargjøring av Human Resources i infrastrukturen i Finance and Operations](hr-admin-setup-provision-fo.md).
 
 Denne artikkelen forklarer prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources. 
 
@@ -40,14 +41,14 @@ Før du kan begynne med å klargjøre et nytt produksjonsmiljø, må følgende f
 ## <a name="provision-a-human-resources-trial-environment"></a>Klargjøre et Human Resources-prøvemiljø
 
 >[!NOTE]
-> Fra og med april 2022 vil ikke Human Resources-prøvemiljøene være tilgjengelige i den frittstående appen. Potensielle kunder som er interessert i å evaluere Human Resources-funksjonene i økonomi- og driftsapper, kan gjøre dette ved hjelp av den gratis 30-dagers prøveversjonen sammen med demodataene. Dynamics 365 Finance inneholder Human Resources-funksjonene som er innlemmet i Finance-infrastrukturen gjennom sammenslåingen av den frittstående appen. For mer informasjon kan du se [Sammenslåing av HR-tilbud sammenfatter funksjoner for kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers) For mer informasjon om Dynamics 365 Finance-prøveversjoner kan du se den trinnvise [veiledningen](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
+> Fra og med april 2022 vil ikke Human Resources-prøvemiljøene være tilgjengelige i den frittstående appen. Potensielle kunder som er interessert i å evaluere Human Resources-funksjonene i økonomi- og driftsapper, kan gjøre dette ved hjelp av den gratis 30-dagers prøveversjonen sammen med demodataene. Dynamics 365 Finance inneholder Human Resources-funksjonene som er innlemmet i Finance-infrastrukturen gjennom sammenslåingen av den frittstående appen. Hvis du vil ha mer informasjon, kan du se [Sammenslåing av HR-tilbud sammenfatter funksjoner for kunder](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). Hvis du vil ha mer informasjon om Dynamics 365 Finance-prøveversjoner, kan du se den trinnvise [veiledningen](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Før du klargjør den første sandkasse- eller produksjonsmiljøet, kan det hende at du vil klargjøre et [Human Resources-prøvemiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for å validere Human Resources-funksjonaliteten. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for Human Resources. 
 
-Prøvemiljøer gir muligheten til å evaluere personalfunksjonaliteten for personer som ikke allerede har tilgang til et Personale-miljø. Hvis du klargjør et prøvemiljø, og den godkjente brukeren allerede har tilgang til ett eller flere eksisterende Personale-miljøer, blir brukeren sendt videre til det eksisterende miljøet eller listen over miljøer.
+Prøvemiljøer bidrar til å evaluere personalfunksjonaliteten for personer som ikke allerede har tilgang til et Human Resources-miljø. Hvis du klargjør et prøvemiljø, og den godkjente brukeren allerede har tilgang til ett eller flere eksisterende Personale-miljøer, blir brukeren sendt videre til det eksisterende miljøet eller listen over miljøer.
 
-Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset til en 30-dagers prøveperiode. Når prøveperioden utløper, kan ikke miljøet alle dataene slettes eller gjenopprettes. Miljøet kan ikke konverteres til et sandkasse- eller produksjonsmiljø. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
+Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset til en 30-dagers prøveperiode. Når prøveperioden utløper, blir miljøet og alle dataene slettet, og de kan ikke gjenopprettes. Miljøet kan ikke konverteres til et sandkasse- eller produksjonsmiljø. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
 Når du oppretter et prøvemiljø for Human Resources, opprettes det også et Power Apps prøvemiljø i leieren og knyttes til Human Resources-miljøet. Miljøet Power Apps, kalt "TestDrive", har den samme prøveperioden som Human Resources-miljøet.
 
@@ -56,14 +57,14 @@ Når du oppretter et prøvemiljø for Human Resources, opprettes det også et Po
 
 ## <a name="plan-human-resources-environments"></a>Planlegge Human Resources-miljøer
 
-Før du oppretter ditt første Human Resources-miljø, bør du nøye planlegge miljøbehovene for prosjektet. Et basisabonnement på Human Resources omfatter to miljøer: et produksjonsmiljø og et sandkassemiljø. Det kan hende at du må kjøpe flere sandkassemiljøre for å støtte prosjektaktiviteter, avhengig av kompleksiteten i prosjektet. 
+Før du oppretter ditt første Human Resources-miljø, bør du nøye planlegge miljøbehovene for prosjektet. Et basisabonnement på Human Resources omfatter to miljøer: et produksjonsmiljø og et sandkassemiljø. Det kan hende at du må kjøpe flere sandkassemiljøer for å støtte prosjektaktiviteter, avhengig av kompleksiteten i prosjektet. 
 
 Hensyn for tilleggsmiljøer:
 
-- **Dataoverføring**: Det kan hende at du må vurdere et tilleggsmiljø for dataoverføringsaktiviteter for å tillate at sandkassemiljøet brukes til testeformål gjennom hele prosjektet. Hvis du har et ekstra miljø, kan aktiviteter for migrering av data fortsette mens testing og konfigurasjon skjer samtidig i et annet miljø.
-- **Integrering**: Det kan hende at du må vurdere et tilleggsmiljø for å konfigurere og teste integreringer. Dette kan for eksempel inkludere opprinnelige integrasjoner som Ceridian Dayforce eller LinkedIn Talent Hub-integrasjoner, eller egendefinerte integrasjoner, for eksempel integreringer av lønn, søkersporingssystemer eller fordelssystemer og -leverandører.
-- **Opplæring**: Du trenger kanskje et eget miljø som er konfigurert med et sett med opplæringsdata for å lære opp de ansatte i bruk av det nye systemet. 
-- **Prosjekt med flere faser**: Du trenger kanskje et tilleggsmiljø for å støtte konfigurasjon, dataoverføring, testing eller andre aktiviteter i en prosjektfase som er planlagt etter den innledende aktiveringen av prosjektet.
+- **Dataoverføring**: Datamigreringsaktiviteter gjør at sandkassemiljøet kan brukes til testeformål gjennom hele prosjektet. Hvis du har et ekstra miljø, kan aktiviteter for migrering av data fortsette mens testing og konfigurasjon skjer samtidig i et annet miljø.
+- **Integrering**: Konfigurer og test integreringer, som kan omfatte opprinnelige integreringer, for eksempel Ceridian Dayforce, eller egendefinerte integreringer.
+- **Opplæring**: Du trenger kanskje et eget miljø som er konfigurert med et sett med opplæringsdata for å lære opp de ansatte i bruken av det nye systemet. 
+- **Prosjekt med flere faser**: Støtt konfigurasjon, dataoverføring, testing eller andre aktiviteter i en prosjektfase som er planlagt etter den innledende aktiveringen av prosjektet.
 
  > [!IMPORTANT]
  > Når du vurderer miljøet, anbefaler vi følgende:
@@ -111,7 +112,7 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Human Resources i et mi
 
 6. Velg **Ja** for å godta vilkårene og begynne distribusjonen.
 
-   Det nye miljøet ditt vises i listen over miljøer i navigasjonsruten på venstre side. Men du kan ikke begynne å bruke miljøet før distribusjonsstatusen oppdateres til **Distribuert**. Denne prosessen tar vanligvis noen få minutter. Hvis klargjøringsprosessen mislykkes, må du kontakte kundestøtte.
+   Det nye miljøet ditt vises i listen over miljøer i navigasjonsruten på venstre side. Men du kan ikke begynne å bruke miljøet før distribusjonsstatusen er **Distribuert**. Denne prosessen tar vanligvis noen få minutter. Hvis klargjøringsprosessen mislykkes, må du kontakte kundestøtte.
 
 7. Velg **Logg på Human Resources** for å bruke det nye miljøet ditt.
 
@@ -140,7 +141,7 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
    
     - **Ikke-støttede geografier** – Miljøet må være i en geografi som støttes. Hvis du vil ha mer informasjon, kan du se [Støttede geografier](hr-admin-setup-provision.md#supported-geographies).
 
-6. Skrivefunksjoner for dobbel skriving for integrering av Personale-data med Power Apps-miljøet kan bare brukes hvis alternativet **Aktiver Dynamics 365-apper** er valgt for miljøet. Se [Startside for dobbel skriving](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for å få mer informasjon om dobbel skriving.
+6. Skrivefunksjoner for dobbel skriving for integrering av Personale-data med Power Apps-miljøet kan bare brukes hvis alternativet **Aktiver Dynamics 365-apper** er valgt for miljøet. Hvis du vil ha mer informasjon, kan du se [Startside for dobbel skriving](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md).
 
     > [!NOTE]
     > Alternativet **Aktiver Dynamics 365-apper** må være valgt når Power Apps-miljøet opprettes. Hvis alternativet ikke er valgt samtidig som klargjøringen, kan du ikke bruke dobbel skriving for å integrere data mellom Dynamics 365 Human Resources og Power Apps-miljøet, eller installere Dynamics 365-apper som Dynamics 365 Sales og Field Service i miljøet. Dette alternativet kan ikke tilbakeføres. 
@@ -175,3 +176,4 @@ Som standard har den globale administratoren som opprettet miljøet, tilgang til
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

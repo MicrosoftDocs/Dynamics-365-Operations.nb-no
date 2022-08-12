@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c407b45f3df91d569c2bf043ff9f83b640837bb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e0c0e283189998473469164398fa6f43c8e8825e
+ms.sourcegitcommit: 3a882de1f1c27654a8e92ebc1999c75678cc9a53
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8899447"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9201874"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantall
 
@@ -75,7 +75,7 @@ En salgsordre som skal reserveres automatisk og leveres 4. april 2016, reservere
 
 Det finnes to alternativer relatert til reservasjoner for siden **Parametere for beholdnings- og lagerstyring**:
 -   Alternativet **Reserver bestilte varer** i fanen **Generelt** lar deg reservere varemottak som er bestilt mot vareavganger i Kunder, Prosjektstyring og regnskap og Produksjonskontroll. Hvis du ikke velger dette alternativet, kan du bare reservere varer som er fysisk mottatt. Hvis en bestemt vare er definert til å godta negativ beholdning, er ikke dette feltet relevant.
--   Alternativet **Reserver varer automatisk** i fanen **Transport** fastsetter standardinnstillingen hvis varene reserveres automatisk for overføringsordrer. Standardinnstillingen kan overstyres på individuelle overføringsordrer.
+-   Alternativet **Reserver varer automatisk** i fanen **Overføring** fastsetter standardinnstillingen hvis varene reserveres automatisk for overføringsordrer. Standardinnstillingen kan overstyres på individuelle overføringsordrer.
 
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Policyer for lagerreservasjon på siden Produksjonsparametere
 

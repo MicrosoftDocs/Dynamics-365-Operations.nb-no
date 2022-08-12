@@ -1,6 +1,6 @@
 ---
 title: Oversikt over dobbel skriving
-description: Denne artikkelen gir en oversikt over dobbel skriving, som er en integrert infrastruktur som gir interaksjon med minimal forsinkelse mellom Customer Engagement-apper og Økonomi og drift-apper.
+description: Denne artikkelen gir en oversikt over dobbel skriving, som er en integrert infrastruktur som gir interaksjon med minimal forsinkelse mellom kundeengasjementsapper og økonomi- og driftsapper.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 2ef4fb1a51bd92db440841eb2a9d9ebcce0e1b1d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 599cfdab8232cab28c59c5098094c4afd351df77
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872947"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9112402"
 ---
 # <a name="dual-write-overview"></a>Oversikt over dobbel skriving
 
@@ -26,9 +26,9 @@ ms.locfileid: "8872947"
 
 ## <a name="what-is-dual-write"></a>Hva er dobbel skriving?
 
-Dobbel skriving er en bruksklar infrastruktur som gir interaksjon med minimal forsinkelse mellom Customer Engagement-apper og Finance and Operations-apper. Når data om kunder, produkter, personer og operasjoner flyter utenfor applikasjonens grenser, kan alle avdelingene i en organisasjon være på.
+Dobbel skriving er en bruksklar infrastruktur som gir interaksjon med minimal forsinkelse mellom kundeengasjementsapper og økonomi- og driftsapper. Når data om kunder, produkter, personer og operasjoner flyter utenfor applikasjonens grenser, kan alle avdelingene i en organisasjon være på.
 
-Dobbel skriving gir tett sammenkoblet toveisintegrering mellom Finance and Operations-apper og Dataverse. Alle dataendringer i Finance and Operations-apper fører til skriving til Dataverse, og alle dataendringer i Dataverse fører til skriving til Finance and Operations-apper. Denne automatiserte dataflyten gir en integrert brukeropplevelse på tvers av appene.
+Dobbel skriving gir tett sammenkoblet toveisintegrering mellom økonomi- og driftsapper og Dataverse. Alle dataendringer i økonomi- og driftsapper fører til skriving til Dataverse, og alle dataendringer i Dataverse fører til skriving til økonomi- og driftsapper. Denne automatiserte dataflyten gir en integrert brukeropplevelse på tvers av appene.
 
 ![Datarelasjon mellom apper.](media/dual-write-overview.jpg)
 
@@ -51,7 +51,7 @@ Infrastrukturen for dobbel skriving er utvidbar og pålitelig, og inneholder fø
 
 ### <a name="application"></a>Program
 
-Ved dobbel skriving opprettes det en tilordning mellom konsepter i Finance and Operations-apper og konsepter i Customer Engagement-apper. Denne integreringen støtter følgende scenarier:
+Ved dobbel skriving opprettes det en tilordning mellom konsepter i økonomi- og driftsapper og konsepter i kundeengasjementsapper. Denne integreringen støtter følgende scenarier:
 
 + Integrert original for kunde
 + Tilgang til kundefordelskort og belønningspoeng
@@ -80,15 +80,15 @@ Dobbel skriving gir dataintegrering på tvers av Microsoft Dynamics 365-apper. D
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Hva innebærer toveis skriving av utviklere og arkitekter for Customer Engagement-apper?
 
-Dobbel skriving automatiserer dataflyten mellom Finance and Operations-apper og Customer Engagement-apper. Dobbel skriving består av to AppSource-løsninger som er installert på Dataverse. Løsningene utvider tabellskjemaet, programtilleggene og arbeidsflytene på Dataverse slik at de kan skaleres til ERP-størrelse. For å få en vellykket implementering, må utviklere og utarbeidere av Customer Engagement-apper forstå disse endringene og samarbeide med sine motparter om Finance and Operations-apper.
+Dobbel skriving automatiserer dataflyten mellom økonomi- og driftsapper og kundeengasjementsapper. Dobbel skriving består av to AppSource-løsninger som er installert på Dataverse. Løsningene utvider tabellskjemaet, programtilleggene og arbeidsflytene på Dataverse slik at de kan skaleres til ERP-størrelse. For å få en vellykket implementering, må utviklere og utarbeidere av kundeengasjementsapper forstå disse endringene og samarbeide med sine motparter om økonomi- og driftsapper.
 
-For å opprette paritet med Finance and Operations-apper gjør dobbel skriving noen viktige endringer i Dataverse-skjemaet. Hvis du forstår planen, kan du unngå noe utformings- og utviklingsarbeid er i fremtiden.
+For å opprette paritet med økonomi- og driftsapper gjør dobbel skriving noen viktige endringer i Dataverse-skjemaet. Hvis du forstår planen, kan du unngå noe utformings- og utviklingsarbeid er i fremtiden.
 
-+ Når du har installert pakken for dobbel skriving AppSource, vil Dataverse ha de nye begrepene, for eksempel firma og part. Disse konseptene hjelper apper som er bygget på Dataverse, inkludert Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service og Dynamics 365 Field Service, til å samhandle sømløst med Finance and Operations-apper.
++ Når du har installert pakken for dobbel skriving AppSource, vil Dataverse ha de nye begrepene, for eksempel firma og part. Disse konseptene hjelper apper som er bygget på Dataverse, inkludert Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service og Dynamics 365 Field Service, til å samhandle sømløst med økonomi- og driftsapper.
 
 + Aktiviteter og notater er enhetlig og utvides for å støtte både C1-ere (brukere av systemet) og C2-ere (kunder av systemet).
 
-+ Hvis du vil hindre tap av data under overføring av valuta mellom Finance and Operations-apper og Dataverse, kan du utvide antallet desimaler i valutadatatypen for Customer Engagement-apper. Funksjonen oversetter eksisterende rader automatisk til den nye utvidede tilstanden på metadatalaget. I løpet av denne prosessen blir valutaverdien oversatt til desimaldata i stedet for pengedata, og valutaverdien støtter 10 desimalplasser. Denne funksjonen er valgfri, og organisasjoner som ikke trenger mer enn fire desimaler med presisjon, trenger ikke å velge den. Hvis du vil ha mer informasjon, kan du se [Overføring av valutadatatype for dobbel skriving](currrency-decimal-places.md).
++ Hvis du vil hindre tap av data under overføring av valuta mellom økonomi- og driftsapper og Dataverse, kan du utvide antallet desimaler i valutadatatypen for kundeengasjementsapper. Funksjonen oversetter eksisterende rader automatisk til den nye utvidede tilstanden på metadatalaget. I løpet av denne prosessen blir valutaverdien oversatt til desimaldata i stedet for pengedata, og valutaverdien støtter 10 desimalplasser. Denne funksjonen er valgfri, og organisasjoner som ikke trenger mer enn fire desimaler med presisjon, trenger ikke å velge den. Hvis du vil ha mer informasjon, kan du se [Overføring av valutadatatype for dobbel skriving](currrency-decimal-places.md).
 
 + [Datoeffektivitet](../../dev-tools/date-effectivity.md) blir lagt til i Dataverse. Den vil støtte tidligere, nåværende og fremtidige data i samme tabell.
 
@@ -99,3 +99,4 @@ Hvis du vil ha mer informasjon om kommende endringer, kan du se [Nyheter eller e
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

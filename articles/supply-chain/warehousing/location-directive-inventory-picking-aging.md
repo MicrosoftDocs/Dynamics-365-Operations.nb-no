@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 34ce119ca70596f0e40797c4b44a8fba4d5b7e0e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885703"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9068678"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling for lagerplukking for lokasjonsdirektiv
 
@@ -82,7 +82,7 @@ Demonstrasjonsdataene krever oppsett- og lagerjusteringer for å støtte scenari
 
 1. Velg **OK** for å bruke innstillingene og lukke spørringsdialogboksen.
 1. Velg **Lagre** for å lagre endringene i lokasjonsdirektivet.
-1. På en mobilenhet eller i appen *Dynamics 365 for Finance and Operations – Lager* på PCen følger du denne fremgangsmåten for å fjerne et eksisterende lager fra lagerlokasjonen for å støtte scenariene:
+1. På en mobilenhet eller i appen *Dynamics 365 Supply Chain Management – Lager* på PCen følger du denne fremgangsmåten for å fjerne et eksisterende lager fra lagerlokasjonen for å støtte scenariene:
 
     1. Logg på lager *63* ved å bruke riktig bruker-ID og passord.
     1. I hovedmenyen velger du **Kvalitet**.
