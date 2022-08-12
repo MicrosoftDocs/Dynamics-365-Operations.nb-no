@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 10c5d9eb3f98887be976c2331f4d34530628702c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
+ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895283"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "9111826"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Oppgrader til parten og den globale adressebokmodellen
 
@@ -24,7 +24,7 @@ ms.locfileid: "8895283"
 
 Med [Microsoft Azure Data Factory-malene](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema) kan du oppgradere eksisterende data i dobbel skriving til partsmodellen og den globale adressebokmodellen: data i **Konto**, **Kontakt** og **Leverandør** tabellene, og postadresser og elektroniske adresser.
 
-Følgende tre Data Factory-maler tilbys. De bidrar til å avstemme dataene fra både Finance and Operations-apper og Customer Engagement-apper.
+Følgende tre Data Factory-maler tilbys. De bidrar til å avstemme dataene fra både økonomi- og driftsapper og kundeengasjementsapper.
 
 - **[Partsmal](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/arm_template.json) (Oppgrader data til dobbel skriving Part-Global adressebok-skjema/arm_template.json)** – Denne malen oppgraderer **Part** og **Kontakt** data som er knyttet til **Konto**, **Kontakt** og **Leverandør** data.
 - **[Postadressemal for part](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/Upgrade%20to%20Party%20Postal%20Address%20-%20GAB/arm_template.json) (Oppgrader til dobbel skriving Part-Global adressebok-skjema/Oppgrader til postadresse for part - Global adresseliste/arm_template.json)** – Denne malen hjelper til med å oppgradere postadressene som er knyttet til **Konto**, **Kontakt** og **Leverandør** data.
@@ -34,11 +34,11 @@ På slutten av prosessen genereres følgende kommaseparerte verdier (.csv)-filer
 
 | Filnavn | Formål |
 |---|---|
-| FONewParty.csv | Denne filen bidrar til å generere nye **Part**-oppføringer i Finance and Operations-appen. |
-| ImportFONewPostalAddressLocation.csv | Denne filen hjelper deg med å opprette nye **Postadressested**-poster i Finance and Operations-appen. |
-| ImportFONewPartyPostalAddress.csv | Denne filen hjelper deg med å opprette nye **Postadresse for part**-poster i Finance and Operations-appen. |
-| ImportFONewPostalAddress.csv | Denne filen hjelper deg med å opprette nye **Postadresse**-poster i Finance and Operations-appen. |
-| ImportFONewElectronicAddress.csv | Denne filen hjelper deg med å opprette nye **Elektronisk adresse**-poster i Finance and Operations-appen. |
+| FONewParty.csv | Denne filen bidrar til å generere nye **Part**-oppføringer i økonomi- og driftsappen. |
+| ImportFONewPostalAddressLocation.csv | Denne filen hjelper deg med å opprette nye **Postadressested**-poster i økonomi- og driftsappen. |
+| ImportFONewPartyPostalAddress.csv | Denne filen hjelper deg med å opprette nye **Postadresse for part**-poster i økonomi- og driftsappen. |
+| ImportFONewPostalAddress.csv | Denne filen hjelper deg med å opprette nye **Postadresse**-poster i økonomi- og driftsappen. |
+| ImportFONewElectronicAddress.csv | Denne filen hjelper deg med å opprette nye **Elektronisk adresse**-poster i økonomi- og driftsappen. |
 
 I denne artikkelen finner du instruksjoner om hvordan du kan bruke Data Factory-malene og oppgradere dataene. Hvis du ikke har noen tilpasninger, kan du bruke malene som de er. Hvis du har tilpasninger for **Konto**, **Kontakt** og **Leverandør**-data, må du endre malene ved å følge instruksjonene i denne artikkelen.
 
@@ -61,7 +61,7 @@ En oppgradering krever følgende forberedelse:
 + **Integrasjonsnøkler:**: Tabellene **Konto (kunde)**, **Kontakt** og **Leverandør** i Customer Engagement-apper bruker de medfølgende integrasjonsnøklene. Hvis du har tilpasset integrasjonsnøklene, må du tilpasse malen.
 + **Partsnummer:** Alle oppføringer av typen **Konto (kunde)**, **Kontakt** og **Leverandør** som skal oppgraderes, har et partsnummer. Poster som ikke har partnummer, blir ignorert. Hvis du vil oppgradere disse oppføringer, legger du til et partsnummer før du starter oppgraderingsprosessen.
 + **Systembrudd:** Under oppgraderingsprosessen må du koble fra både Finance and Operations- og Customer Engagement-miljøer.
-+ **Øyeblikksbilde:** Ta et øyeblikksbilde både av Finance and Operations- og Customer Engagement-appene. Du kan bruke øyeblikksbildene til å gjenopprette den forrige tilstanden hvis du må.
++ **Øyeblikksbilde:** Ta et øyeblikksbilde både av økonomi- og driftsappene og kundeengasjementsappene. Du kan bruke øyeblikksbildene til å gjenopprette den forrige tilstanden hvis du må.
 
 ## <a name="deployment"></a>Distribusjon
 
@@ -120,7 +120,7 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
 ### <a name="setup-to-run-the-party-postal-address-template"></a>Oppsett for å kjøre malen for partspostadresse
 
-1. Logg deg på kundeengasjementsapper, og gå til **Innstillinger** \> **Tilpasningsinnstillinger**. I kategorien **Generelt** konfigurerer du deretter tidssoneinnstillingen for systemadministratorkontoen. Tidssonen må være i UTC-tid (Coordinated Universal Time) for å oppdatere "gyldig fra"- og "gyldig til"-datoene for postadresser fra Finance and Operations-apper.
+1. Logg deg på kundeengasjementsapper, og gå til **Innstillinger** \> **Tilpasningsinnstillinger**. I kategorien **Generelt** konfigurerer du deretter tidssoneinnstillingen for systemadministratorkontoen. Tidssonen må være i UTC-tid (Coordinated Universal Time) for å oppdatere "gyldig fra"- og "gyldig til"-datoene for postadresser fra økonomi- og driftsapper.
 
     ![Tidssoneinnstillingen for kontoen for systemadministratoren.](media/ADF-1.png)
 
@@ -128,7 +128,7 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
     | Tall | Navn | Type | Verdi |
     |---|---|---|---|
-    | 1 | PostalAddressIdPrefix | streng | Denne parameteren legger til et serienummer i nyopprettede postadresser som et prefiks. Pass på at du oppgir en streng som ikke er i konflikt med postadresser i Finance and Operations-apper og Customer Engagement-apper. Bruk eksempel **ADF-PAD-**. |
+    | 1 | PostalAddressIdPrefix | streng | Denne parameteren legger til et serienummer i nyopprettede postadresser som et prefiks. Pass på at du oppgir en streng som ikke er i konflikt med postadresser i økonomi- og driftsapper og kundeengasjementsapper. Bruk eksempel **ADF-PAD-**. |
 
     ![Global parameter PostalAddressIdPrefix opprettet i kategorien Aministrer.](media/ADF-2.png)
 
@@ -142,8 +142,8 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
     | Tall | Navn | Type | Verdi |
     |---|---|---|---|
-    | 1 | IsFOSource | bool | Denne parameteren bestemmer hvilke hovedsystemadresser som erstattes ved konflikter. Hvis verdien er **sann**, vil primæradressene i Finance and Operations-apper erstatte hovedadressene i Customer Engagement-apper. Hvis verdien er **usann**, vil primæradressene i Customer Engagement-apper erstatte hovedadressene i Finance and Operations-apper . |
-    | 2 | ElectronicAddressIdPrefix | streng | Denne parameteren legger til et serienummer i nyopprettede elektroniske adresser som et prefiks. Pass på at du oppgir en streng som ikke er i konflikt med elektroniske adresser i Finance and Operations-apper og Customer Engagement-apper. Bruk eksempel **ADF-EAD-**. |
+    | 1 | IsFOSource | bool | Denne parameteren bestemmer hvilke hovedsystemadresser som erstattes ved konflikter. Hvis verdien er **sann**, vil primæradressene i økonomi- og driftsapper erstatte hovedadressene i kundeengasjementsapper. Hvis verdien er **usann**, vil primæradressene i kundeengasjementsapper erstatte hovedadressene i økonomi- og driftsapper. |
+    | 2 | ElectronicAddressIdPrefix | streng | Denne parameteren legger til et serienummer i nyopprettede elektroniske adresser som et prefiks. Pass på at du oppgir en streng som ikke er i konflikt med elektroniske adresser i økonomi- og driftsapper og kundeengasjementsapper. Bruk eksempel **ADF-EAD-**. |
 
     ![Globale parametere IsFOSource og ElectronicAddressIdPrefix opprettet i kategorien Administrer.](media/ADF-4.png)
 
@@ -167,7 +167,7 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
 2. Kontroller at tilordningene er fjernet fra **msdy_dualwriteruntimeconfig**-tabellen i Dataverse.
 3. Installer [Løsninger for part med dobbel skriving og global adressebok](https://aka.ms/dual-write-gab) fra AppSource.
-4. I Finance and Operations-appen kjører du **Innledende synkronisering** for følgende tabeller hvis de inneholder data:
+4. I økonomi- og driftsappen kjører du **Innledende synkronisering** for følgende tabeller hvis de inneholder data:
 
     + Hilsener
     + Typer personlige tegn
@@ -267,10 +267,10 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
     > [!NOTE]
     > Hvis du har tilpasninger for **Konto**, **Kontakt** og **Leverandør**, må du endre malen.
 
-8. Importer de nye **Part**-oppføringene til Finance and Operations-appen.
+8. Importer de nye **Part**-oppføringene til økonomi- og driftsappen.
 
     1. Last ned **FONewParty.csv**-filen fra Azure Blob Storage. Banen er **partybootstrapping/output/FONewParty.csv**.
-    2. Konverter **FONewParty.csv**-filen til en Excel-fil, og importer Excel-filen til Finance and Operations-appen. Hvis CSV-import fungerer for deg, kan du også importere CSV-filen direkte. Dette kan ta noen timer å fullføre denne prosessen basert på datavolumet. Hvis du vil ha mer informasjon, se [Oversikt over dataimport- og -eksportjobber](../data-import-export-job.md).
+    2. Konverter **FONewParty.csv**-filen til en Excel-fil, og importer Excel-filen til økonomi- og driftsappen. Hvis CSV-import fungerer for deg, kan du også importere CSV-filen direkte. Dette kan ta noen timer å fullføre denne prosessen basert på datavolumet. Hvis du vil ha mer informasjon, se [Oversikt over dataimport- og -eksportjobber](../data-import-export-job.md).
 
     ![Importere Dataverse partspostene.](media/data-factory-import-party.png)
 
@@ -281,7 +281,7 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
     ![Kjøre malene for postadresse for part og elektronisk adresse for part.](media/ADF-7.png)
 
-10. Hvis du vil oppdatere Finance and Operations-appen med disse dataene, må du konvertere .csv-filene til en Excel-arbeidsbok og [importere den til Finance and Operations-appen](../data-import-export-job.md). Hvis CSV-import fungerer for deg, kan du også importere CSV-filene direkte. Dette kan ta noen timer å fullføre denne prosessen basert på volumet.
+10. Hvis du vil oppdatere økonomi- og driftsappen med disse dataene, må du konvertere .csv-filene til en Excel-arbeidsbok og [importere den til økonomi- og driftsappen](../data-import-export-job.md). Hvis CSV-import fungerer for deg, kan du også importere CSV-filene direkte. Dette kan ta noen timer å fullføre denne prosessen basert på volumet.
 
     ![Vellykket importering.](media/ADF-8.png)
 
@@ -364,9 +364,9 @@ Denne delen tar deg gjennom trinnene i hver Data Factory-mal.
 ### <a name="steps-in-the-party-template"></a>Trinn i partsmalen
 
 1. Trinn 1 til og med 6 identifiserer firmaene som er aktivert for dobbel skriving, og bygger et filteruttrykk for dem.
-2. Trinn 7-1 til og med 7-9 henter data fra både Finance and Operations-appen og Customer Engagement-appen, og klargjør dataene for oppgradering.
-3. Trinn 8 til og med 9 sammenligner partsnummeret for postene for **Konto**, **Kontakt** og **Leverandør** mellom Finance and Operations-appen og Customer Engagement-appen. Eventuelle poster som ikke har partsnummer, blir ignorert.
-4. Trinn 10 genererer to .csv-filer for partspostene som må opprettes i Customer Engagement-appen og Finance and Operations-appen.
+2. Trinn 7-1 til og med 7-9 henter data fra både økonomi- og driftsappen og kundeengasjementsappen, og klargjør dataene for oppgradering.
+3. Trinn 8 til og med 9 sammenligner partsnummeret for postene for **Konto**, **Kontakt** og **Leverandør** mellom økonomi- og driftsappen og kundeengasjementsappen. Eventuelle poster som ikke har partsnummer, blir ignorert.
+4. Trinn 10 genererer to .csv-filer for partspostene som må opprettes i kundeengasjementsappen og økonomi- og driftsappen.
 
     - **FOCDSParty.csv**– Denne filen inneholder alle partsposter for begge systemer, uansett om firmaet er aktivert for dobbel skriving.
     - **FONewParty.csv** – Denne filen inneholder et delsett av partspostene som Dataverse er klar over (for eksempel kontoer av **kundeemne**-typen).
@@ -382,11 +382,11 @@ Denne delen tar deg gjennom trinnene i hver Data Factory-mal.
 
 ### <a name="steps-in-the-party-postal-address-template"></a>Trinn i malen for partspostadresse
 
-1. Trinn 1-1 til og med 1-10 henter data fra både Finance and Operations-appen og Customer Engagement-appen, og klargjør dataene for oppgradering.
-2. Trinn 2 fjerner normaliseringen av postadressedataene i Finance and Operations-appen ved å flette postadressen og partens postadresse.
+1. Trinn 1-1 til og med 1-10 henter data fra både økonomi- og driftsappen og kundeengasjementsappen, og klargjør dataene for oppgradering.
+2. Trinn 2 fjerner normaliseringen av postadressedataene i økonomi- og driftsappen ved å flette postadressen og partens postadresse.
 3. Trinn 3 dedupliserer og fletter konto-, kontakt- og leverandøradressedata fra kundeengasjementsappen.
-4. Trinn 4 oppretter .csv-filer for Finance and Operations-appen for å opprette nye adressedata som er basert på konto-, kontakt- og leverandøradresser.
-5. Trinn 5-1 oppretter .csv-filer for Customer Engagement-appen for å opprette alle adressedata basert på både Finance and Operations-appen og Customer Engagement-appen.
+4. Trinn 4 oppretter .csv-filer for økonomi- og driftsappen for å opprette nye adressedata som er basert på konto-, kontakt- og leverandøradresser.
+5. Trinn 5-1 oppretter .csv-filer for kundeengasjementsappen for å opprette alle adressedata basert på både økonomi- og driftsappen og kundeengasjementsappen.
 6. Trinn 5-2 konverterer .csv-filene til Finance and Operations-importformatet for manuell import.
 
     - ImportFONewPostalAddressLocation.csv
@@ -401,13 +401,13 @@ Denne delen tar deg gjennom trinnene i hver Data Factory-mal.
 
 ### <a name="steps-in-the-party-electronic-address-template"></a>Trinn i malen for elektronisk postadresse for part
 
-1. Trinn 1-1 til og med 1-5 henter data fra både Finance and Operations-appen og Customer Engagement-appen, og klargjør dataene for oppgradering.
+1. Trinn 1-1 til og med 1-5 henter data fra både økonomi- og driftsappen og kundeengasjementsappen, og klargjør dataene for oppgradering.
 2. Trinn 2 konsoliderer elektroniske adresser i kundeengasjementsappen fra konto-, kontakt- og leverandørenheter.
-3. Trinn 3 fletter primære elektroniske adressedata fra Customer Engagement-appen og Finance and Operations-appen.
+3. Trinn 3 fletter primære elektroniske adressedata fra kundeengasjementsappen og økonomi- og driftsappen.
 4. Trinn 4 oppretter .csv-filer.
 
-    - Opprett nye elektroniske adressedata for Finance and Operations-appen, basert på konto-, kontakt- og leverandøradresser.
-    - Opprett nye elektroniske adressedata for Customer Engagement-appen, basert på elektronisk adresse, konto, kontakt og leverandøradresser i Finance and Operations-appen.
+    - Opprett nye elektroniske adressedata for økonomi- og driftsappen, basert på konto-, kontakt- og leverandøradresser.
+    - Opprett nye elektroniske adressedata for kundeengasjementsappen, basert på elektronisk adresse, konto, kontakt og leverandøradresser i økonomi- og driftsappen.
 
 5. Trinn 5-1 importerer elektroniske adresser til kundeengasjementsappen.
 6. Trinn 5-2 oppretter .csv-filer for å oppdatere primæradresser for kontoer og kontakter i kundeengasjementsappen.
@@ -425,3 +425,4 @@ Denne delen tar deg gjennom trinnene i hver Data Factory-mal.
 ## <a name="learn-more-about-the-template"></a>Finn ut mer om malen
 
 Du finner mer informasjon om malen i [Kommentarer for Viktig-filen for Azure Data Factory-malen](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+

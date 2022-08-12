@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4e49b63bf7c88b40010967a7f8c1de571e6d7485
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a53522acb89fc2b766e5b245a5b095a038d1b282
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845265"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067156"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-finance"></a>Opplæringskatalog for salg og markedsføring for Microsoft-partnere for Dynamics 365 Finance
 
@@ -43,3 +43,4 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

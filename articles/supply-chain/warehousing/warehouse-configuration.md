@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 7643a333c269a7e1976563ff0f10b89c1fb91674
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983010"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9065195"
 ---
 # <a name="warehouse-configuration-overview"></a>Oversikt over lagerkonfigurasjon
 
@@ -31,10 +31,10 @@ ms.locfileid: "7983010"
 Denne artikkelen forklarer hvordan du konfigurerer et lager. Det inneholder informasjon om hvordan du aktiverer et oppsett for lageret og lagerprosesser.
 
 > [!NOTE]
-> Denne artikkelen gjelder funksjoner i modulen **Lagerstyring** (avanserte lageraktiviteter). Det gjelder ikke for lagerfunksjoner i modulen **Lagerstyring**.
+> Denne artikkelen gjelder funksjoner i **Lagerstyring**-modulen. Det gjelder ikke for lagerfunksjoner i modulen **Lagerstyring**.
 
 ## <a name="warehouse-layout"></a>Lageroppsett
-Lagerstyringssystemet i Supply Chain Management gir deg fleksible måter å definere lageroppsettet på for å oppfylle bedriftens ulike behov, slik at du kan oppnå optimal lagereffektivitet.
+Warehouse Management-prosesser (WMS) i Supply Chain Management gir deg fleksible måter å definere lageroppsettet på for å oppfylle bedriftens ulike behov, slik at du kan oppnå optimal lagereffektivitet.
 
 -   Du kan opprette områder for lagring med høy prioritet og lav prioritet for optimal plassering av varer.
 -   Du kan dele lageret inn i soner for å imøtekomme ulike lagringsbehov, for eksempel temperaturkrav eller ulike omsetningshastigheter for varer.
@@ -42,7 +42,7 @@ Lagerstyringssystemet i Supply Chain Management gir deg fleksible måter å defi
 -   Du kan gruppere lokasjoner ved hjelp av innstillingene for fysisk kapasitetsbegrensning.
 -   Du kan styre hvordan varer oppbevares og plukkes, basert på spørringsdefinerte regler.
 
-Hvis du vil bruke lagerstyring i Supply Chain Management, må du opprette et lager og aktivere det for mer avanserte eller spesialiserte lagerstyringsaktiviteter. På **Lagre**-siden velger du alternativet **Bruk lagerstyringsprosesser**.
+Hvis du vil bruke WMS i Supply Chain Management, må du opprette et lager og aktivere det for WMS. På **Lagre**-siden velger du alternativet **Bruk lagerstyringsprosesser**.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Sonegrupper, soner, lokasjonstyper og lokasjoner
 

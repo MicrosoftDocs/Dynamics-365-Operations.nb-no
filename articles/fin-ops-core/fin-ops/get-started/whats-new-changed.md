@@ -1,6 +1,6 @@
 ---
 title: Hva er nytt eller endret på startsiden for økonomi- og driftsapper
-description: Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de nyeste versjonen av Finance and Operations-apper.
+description: Denne siden peker til emner som gir deg informasjon om de nye funksjonene i de nyeste versjonen av økonomi- og driftsapper.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2430e75897a8ddc78a6b1b9288b23458aa44108a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0dc3b9b39fb5cb3aaae1247f0229d802410ea5f8
+ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908234"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9125124"
 ---
 # <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Hva er nytt eller endret på startsiden for økonomi- og driftsapper
 
@@ -60,3 +60,4 @@ Hvis du vil se hva som er nytt eller endret i Lifecycle Services, kan du se føl
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

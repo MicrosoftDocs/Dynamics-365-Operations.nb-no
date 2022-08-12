@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 014c34791f280ca1d3d9154cd0870a73cc43d26b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fa27e20bc0c0ff5c639dfb2d079adef8926f535f
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889156"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069355"
 ---
 # <a name="asset-leasing-home-page"></a>Startside for Aktivaleie
 
@@ -100,3 +100,4 @@ Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 You
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

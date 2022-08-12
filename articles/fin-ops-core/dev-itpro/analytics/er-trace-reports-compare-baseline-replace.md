@@ -1,6 +1,6 @@
 ---
 title: Forbedre sporing av resultater av genererte ER-rapporter for å sammenligne med grunnlinjeverdier
-description: Denne artikkelen beskriver forbedringer i ER-grunnlinjefunksjonen i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019).
+description: Denne artikkelen beskriver forbedringer i ER-grunnlinjefunksjonen i Microsoft Dynamics 365 Finance versjon 10.0.3 (juni 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 3b9ac7dcac4d020759d04fec75e17c43ed627e25
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb2e76492ac9f6feb71811d0fbfd25919b59ac4d
+ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847408"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "9109150"
 ---
 # <a name="improve-tracing-the-results-of-generated-er-reports-to-compare-with-baseline-values"></a>Forbedre sporing av resultater av genererte ER-rapporter for å sammenligne med grunnlinjeverdier
 
 [!include[banner](../includes/banner.md)]
 
-Denne artikkelen beskriver det første settet med forbedringer i grunnlinjefunksjonen i rammeverket for elektronisk rapportering (ER). Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019) og nyere.
+Denne artikkelen beskriver det første settet med forbedringer i grunnlinjefunksjonen i rammeverket for elektronisk rapportering (ER). Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 Finance versjon 10.0.3 (juni 2019) og nyere.
 
 ## <a name="automate-the-setting-of-baseline-rules"></a>Automatisere innstillingen for grunnlinjeregler
 
@@ -208,3 +208,4 @@ Hvis du vil importere grunnlinjeinnstillinger fra en XML-fil som er lagret på M
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

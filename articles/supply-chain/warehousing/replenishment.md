@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dceb8e6300d19eb9253e88debbaaef0b6987420
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 075e74845eb8e0363cdb706f1f3af0dc9cfddfaa
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893098"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9069190"
 ---
 # <a name="replenishment-overview"></a>Oversikt over etterfylling
 
@@ -70,8 +70,8 @@ I stedet for å måtte oppsummere kravet på slutten av en allokasjonsprosess og
 
 |      Forutsetning       |                                                                                                                                beskrivelse                                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Element           |                                                                                                        Varn må aktiveres for lagerstyringsprosesser.                                                                                                        |
-|        Lager        | Lageret må aktiveres for lagerstyringsprosesser. For å aktivere et lager for lagerbehandlingsprosesser, velg lageret på siden <strong>Lager</strong>, og velg deretter alternativet <strong>Bruk lagerstyringsprosesser</strong>. |
+|          Element           |                                                                                                        Varen må aktiveres for Warehouse Management-prosesser (WMS).                                                                                                        |
+|        Lager        | Lageret må aktiveres for Warehouse Management-prosesser (WMS). Hvis du vil aktivere et lager for WMS, går du til siden <strong>Lagre</strong>, velger lageret og merker deretter av for <strong>Bruk Warehouse Management-prosesser</strong>. |
 | Etterfyllingsmaler |                                                                   Minst én etterfyllingsmal må defineres for etterfylling basert på minimums- og maksimumsantall, etterfylling basert på bølgebehov eller etterfylling basert på lastbehov.                                                                   |
 |        Lokasjoner        |                                                                                                       Lokasjoner må opprettes og kobles til en lokasjonsprofil.                                                                                                       |
 |    Lokasjonsprofiler    |                                                                                                        Lokasjonsprofiler er nødvendig for å opprette lokasjoner.                                                                                                        |

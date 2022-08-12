@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2963589562e2d646670183e9db35df33255e8894
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e5816a7cddf509260511368b74655a9fd5bfc485
+ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903760"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9067889"
 ---
 # <a name="shipment-auto-updates"></a>Automatiske oppdateringer av forsendelser
 
@@ -30,7 +30,7 @@ Funksjonen for automatisk oppdatering av forsendelse oppdaterer antall automatis
 
 Når funksjonen for automatisk oppdatering av forsendelse ikke brukes, reduseres bare antallet automatisk til det opprettes et lagerarbeid. Brukere må manuelt oppdatere eller slette linjer, og de må deretter frigi linjene på nytt hvis ordreantall økes eller nye ordrelinjer blir lagt til. Ved hjelp av funksjonen for automatisk oppdatering av forsendelse kan bedrifter sømløst levere oppdateringer til lageret uten å måtte bekymre seg om at relaterte forsendelser og laster ikke gjenspeiler ordrelinjeoppdateringer.
 
-Funksjonen for automatisk oppdatering av forsendelse gjelder både for salgsordrelinjer og overføringsordrelinjer, og den er aktivert for et bestemt lager. Firmaer kan derfor bruke forskjellige forsendelsespolicyer for automatisk oppdatering på tvers av lagre, slik de har behov for. Som standard brukes forsendelsespolicyen for automatisk oppdatering for reduksjon av antall for alle lagre som bruker lager lagerstyringsprosesser. Når denne standard policyinnstillingen brukes, reduseres bare antall automatisk flyt til en forsendelse og last til det opprettes et lagerarbeids. Denne virkemåten ligner på virkemåten som ble brukt før funksjonen for automatisk oppdatering av forsendelse ble innført.
+Funksjonen for automatisk oppdatering av forsendelse gjelder både for salgsordrelinjer og overføringsordrelinjer, og den er aktivert for et bestemt lager. Firmaer kan derfor bruke forskjellige forsendelsespolicyer for automatisk oppdatering på tvers av lagre, slik de har behov for. Som standard brukes forsendelsespolicyen for automatisk oppdatering for reduksjon av antall for alle lagre som bruker lager Warehouse Management-prosesser (WMS). Når denne standard policyinnstillingen brukes, reduseres bare antall automatisk flyt til en forsendelse og last til det opprettes et lagerarbeids. Denne virkemåten ligner på virkemåten som ble brukt før funksjonen for automatisk oppdatering av forsendelse ble innført.
 
 ## <a name="main-elements-of-the-functionality"></a>Hovedelementer i funksjonaliteten
 
