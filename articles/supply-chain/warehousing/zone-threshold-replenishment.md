@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3ec1f59e0b1d202d5591bfc1525c9034f4d8f45
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 17e336fb059880e54a1cba7c0079e7452925c24d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893127"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220005"
 ---
 # <a name="zone-threshold-replenishment"></a>Etterfylling av soneterskel
 
@@ -262,7 +262,7 @@ Før du begynner å jobbe gjennom scenariet, må du aktivere eksempeldata og kon
 
 #### <a name="use-the-usmf-legal-entity"></a>Bruk den juridiske enheten USMF
 
-For å arbeide deg gjennom dette scenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom dette scenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 #### <a name="prepare-additional-sample-data"></a>Klargjøre flere eksempeldata
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f5ece3672bba352e02808248c91366539423d682
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ddc22bdd223eff513ff571501c599712ac78a7da
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854304"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219915"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -294,7 +294,9 @@ Et alternativ til å bruke parallelle operasjoner er enten å modellere parene s
 
 ### <a name="route-with-quantity-of-resources-higher-than-1"></a>Rute med flere ressurser enn 1
 
-Hvis du angir antall ressurser som kreves for en operasjon som er høyere enn én, er dette det samme som å bruke primær-/sekundæroperasjoner, fordi flere parallelle jobber sendes til motoren. I slike tilfeller finnes det imidlertid ikke et alternativ til å bruke spesifikke ressurstilordninger, fordi et antall som er større enn én, krever at mer flere enn én ressurs gjelder for operasjonen.
+Hvis du angir antall ressurser som kreves for en operasjon som er større enn én, er resultatet det samme som å bruke primær-/sekundæroperasjoner, fordi flere parallelle jobber sendes til motoren. I slike tilfeller er det ikke mulig å bruke spesifikke ressurstilordninger, fordi et antall som er større enn én, krever at mer flere enn én ressurs som gjelder operasjonen.
+
+En sekundær operasjon som har et ressursbelastningsantall som er større enn én, betyr at det angitte antallet sekundære ressurser er nødvendig for hver ressurs i den primære operasjonen. Hvis for eksempel en primæroperasjon har ressursmengden satt til to, og den sekundære operasjonen har ressursantallet satt til tre, kreves det totalt seks ressurser for den sekundære operasjonen.
 
 ### <a name="excessive-use-of-finite-capacity"></a>Ubegrenset bruk av begrenset kapasitet
 

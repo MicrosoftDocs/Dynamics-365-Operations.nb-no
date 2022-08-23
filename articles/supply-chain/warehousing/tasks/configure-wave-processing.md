@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a9fc2b9f31bc9e2f73b53a900bc9b0924410768
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9a8c088f8726573e4b1fcad1944676547391a9bf
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860355"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219636"
 ---
 # <a name="configure-wave-processing-example"></a>Eksempel på konfigurering av bølgebehandling
 
@@ -29,7 +29,7 @@ Denne artikkelen gir et eksempel på hvordan du definerer vilkår som bestemmer 
 
 ## <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-For å arbeide deg gjennom dette scenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du bruke et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom dette scenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du bruke et system der standard [demodata](../../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 ## <a name="example-scenario-configure-wave-processing"></a>Eksempelscenario: konfigurering av bølgebehandling
 

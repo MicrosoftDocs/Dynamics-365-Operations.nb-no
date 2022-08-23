@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b75907d01a029da1ed6a8224f8a7c0ca0230550
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: fc4348f8207f4f6c8a0b694bc3e57beb29449a15
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068678"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219480"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling for lagerplukking for lokasjonsdirektiv
 
@@ -34,8 +34,8 @@ Når beholdning mottas eller opprettes i lageret, oppdaterer systemet det aktuel
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i denne rekkefølgen:
 
-1. Status for lagerlokasjon
-1. Aldersfordeling for lagerplukking for lokasjonsdirektiv
+1. *Lagerlokasjonsstatus* (per versjon 10.0.29 er denne funksjonen aktivert som standard. Hvis du vil ha mer informasjon, kan du se [Lagerlokasjonsstatus](warehouse-location-status.md).)
+1. *Aldersfordeling for lagerplukking for lokasjonsdirektiv*
 
 ## <a name="feature-requirements"></a>Funksjonskrav
 
@@ -50,7 +50,7 @@ Denne delen inneholder eksempler som viser hvordan du definerer og bruker FIFO- 
 
 ### <a name="make-sample-data-available"></a>Gjøre eksempeldata tilgjengelig
 
-For å arbeide deg gjennom disse scenariene ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom disse scenariene ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 Du kan også bruke disse scenariene som en veiledning for å bruke funksjonen i et produksjonssystem. I så fall må du imidlertid bytte dine egne verdier for hver innstilling som beskrives her.
 

@@ -1,28 +1,26 @@
 ---
 title: Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 description: Denne artikkelen beskriver hvordan du tilpasser det Microsoft-leverte formatet for elektronisk rapportering (ER) som brukes til å generere et egendefinert elektronisk dokument.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30ef9a0fa9b61b1e2016f85407ec0ec8fb70a6c6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: cd3200bea07d622632dc5781638ec825c21233e4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854705"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9278954"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 
@@ -310,7 +308,7 @@ Som en bruker i rollen som funksjonsrådgiver for elektronisk rapportering, kan 
 5. I feltet **Navn** angir du **Fakturamodell (Litware)**.
 6. Velg **Opprett konfigurasjon** for å legge til den nye ER-konfigurasjonen.
 
-Nå kan du bruke ER-datamodellutformingen til å redigere versjon 50.1 av ER-konfigurasjonen **Fakturamodell (Litware)** i **Utkast** [status](general-electronic-reporting.md#component-versioning).
+Nå kan du bruke ER-datamodellutformingen til å redigere versjon 50.1 av ER-konfigurasjonen **Fakturamodell (Litware)** i **Utkast** status.
 
 ![Versjon 50.1 av ER-konfigurasjonen på Konfigurasjoner-siden.](./media/er-quick-start3-added-custom-model.png)
 
@@ -337,7 +335,7 @@ Du må endre den egendefinerte datamodellen ved å legge til et nytt felt for å
 
 #### <a name="complete-a-custom-data-model-configuration"></a>Fullføre en tilpasset datamodellkonfigurasjon
 
-Du må [fullføre](general-electronic-reporting.md#component-versioning) arbeidet med versjon 50.1 av din tilpassede ER-datamodellkonfigurasjon for å gjøre den tilgjengelig, slik at andre tilpassede ER-konfigurasjoner kan legges til.
+Du må fullføre arbeidet med versjon 50.1 av din tilpassede ER-datamodellkonfigurasjon for å gjøre den tilgjengelig, slik at andre tilpassede ER-konfigurasjoner kan legges til.
 
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
 2. På **Konfigurasjoner**-siden, i konfigurasjonstreet i venstre rute, utvider du **Fakturamodell** og velger **Fakturamodell (Litware)**.
@@ -394,7 +392,7 @@ Du må endre den egendefinerte modelltilordningen og angi hvordan det egendefine
 
 #### <a name="complete-a-custom-model-mapping-configuration"></a>Fullføre en tilpasset modelltilordningskonfigurasjon
 
-Du må [fullføre](general-electronic-reporting.md#component-versioning) arbeidet med versjon 50.19.1 av den tilpassede ER-modelltilordningskonfigurasjon for å gjøre den tilgjengelig for bruk.
+Du må fullføre arbeidet med versjon 50.19.1 av den tilpassede ER-modelltilordningskonfigurasjon for å gjøre den tilgjengelig for bruk.
 
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
 2. På **Konfigurasjoner**-siden, i konfigurasjonstreet i venstre rute, utvider du **Kundefakturamodell** \> **Modelltilordning for kundefaktura**, og velger **Fakturamodelltilordning (Litware)**.
@@ -428,7 +426,7 @@ Som en bruker i rollen som funksjonsrådgiver for elektronisk rapportering, kan 
 
 ![Legge til en tilpasset formatkonfigurasjon på konfigurasjonssiden.](./media/er-quick-start3-adding-custom-format.png)
 
-Nå kan du bruke ER-operasjonsutformingen til å redigere versjon 11.2.2.1 av ER-konfigurasjonen **Peppol-salgsfaktura (Litware)** i **Utkast** [status](general-electronic-reporting.md#component-versioning).
+Nå kan du bruke ER-operasjonsutformingen til å redigere versjon 11.2.2.1 av ER-konfigurasjonen **Peppol-salgsfaktura (Litware)** i **Utkast** status.
 
 ![Versjon 11.2.2.1 av ER-konfigurasjonen på Konfigurasjoner-siden.](./media/er-quick-start3-added-custom-format.png)
 
@@ -463,7 +461,7 @@ Du må endre det egendefinerte formatet ved å legge til et nytt format-element 
 
 #### <a name="complete-a-custom-format-configuration"></a>Fullføre en tilpasset formatkonfigurasjon
 
-Du må [fullføre](general-electronic-reporting.md#component-versioning) arbeidet med versjon 11.2.2.1 av den tilpassede ER-formatkonfigurasjon for å gjøre den tilgjengelig for bruk.
+Du må fullføre arbeidet med versjon 11.2.2.1 av den tilpassede ER-formatkonfigurasjon for å gjøre den tilgjengelig for bruk.
 
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
 2. På **Konfigurasjoner**-siden, i konfigurasjonstreet i venstre rute, utvider du **Kundefakturamodell** \> **UBL-salgsfaktura** \> **Peppol-salgsfaktura**, og velger **Peppol-salgsfaktura (Litware)**.
@@ -650,7 +648,7 @@ Statusen for versjon 32.6.7.2 endres fra **Utkast** til **Fullført**, og versjo
 3. I handlingsruten i **Dokument**-gruppen velger du **Send** \> **Opprinnelig**.
 
     > [!NOTE] 
-    > Fordi du nå har to versjoner av ER-formatkonfigurasjonen **Peppol-salgsfaktura (Litware)**, og ingen av versjonene har en [ikrafttredelsesdato](general-electronic-reporting.md#component-date-effectivity)-verdi, brukes den nyeste versjonen til å generere en e-faktura.
+    > Fordi du nå har to versjoner av ER-formatkonfigurasjonen **Peppol-salgsfaktura (Litware)**, og ingen av versjonene har en ikrafttredelsesdato-verdi, brukes den nyeste versjonen til å generere en e-faktura.
 
 4. Lukk siden **Fritekstfaktura**.
 

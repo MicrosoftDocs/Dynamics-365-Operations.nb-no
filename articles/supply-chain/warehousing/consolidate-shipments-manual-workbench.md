@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 388066b9c81ecb63ac1f81b70dc4b168f3f4a71d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a33189cdcbb66304eef80558e931209ea236f576
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888332"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218626"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidere forsendelser ved hjelp av arbeidsområdet for forsendelseskonsolidering
 
@@ -41,7 +41,7 @@ Før du kan bruke funksjonen *Manuell forsendelseskonsolidering*, må du aktiver
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Manuell forsendelseskonsolidering*
 
-Som nevnt i [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md), må du også aktivere funksjonen *Konsolider forsendelse* før du kan opprette policyer. Du bør imidlertid allerede ha fullført det trinnet.
+Du må også aktivere bruke funksjonen *Konsolider forsendelse* for du kan opprette policyer. Hvis du vil ha mer informasjon, kan du se [Konfigurer policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md).
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Opprett salgsordrene for dette 
 

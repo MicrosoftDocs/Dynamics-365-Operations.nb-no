@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f793cb71ff52e49534e1f11b06132f2e20610d7c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845931"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219540"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -61,7 +61,6 @@ Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolider
 1. I hurtigfanen **Lager** angir du verdien *Ja* for alternativet **Konsolider forsendelse ved frigivelse til lager**.
 1. Gjenta trinn 2 til og med 4 for alle andre lagre der konsolidering er nødvendig.
 1. Lukk siden.
-1. Bruk [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Policyer for forsendelseskonsolidering*. I arbeidsområdet **Funksjonsbehandling** har funksjonen navnet *Konsolider forsendelse*.
 1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**. Det kan hende at du må oppdatere nettleseren for å se de nye menyelementet **Policyer for forsendelseskonsolidering** etter at du har aktivert funksjonen.
 1. I handlingsruten velger du **Opprett standardoppsett** for å opprette følgende policyer:
 
@@ -81,7 +80,6 @@ Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolider
 
 Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolidering i et helt nytt miljø.
 
-1. Bruk [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Policyer for forsendelseskonsolidering* hvis du ikke allerede har aktivert den. I arbeidsområdet **Funksjonsbehandling** har funksjonen navnet *Konsolider forsendelse*.
 1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
 1. I handlingsruten velger du **Opprett standardoppsett** for å opprette følgende policyer:
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e5d0a93a4c628d4867161d082b0f0e177ddb95c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863744"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219816"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Utsatt behandling av manuell lagerbevegelse
 
@@ -33,7 +33,7 @@ Bakgrunnsbehandling oppnås ved å bruke funksjonen [Funksjonen Behandle lagerap
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Du må aktivere dem i denne rekkefølgen:
 
 1. *Organisasjonsomfattende arbeidsblokkering*<br>(Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)
-1. *Behandle lagerapphendelser*<br>(Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard.)
+1. *Behandle lagerapphendelser*<br>(Fra og med Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.29. Derfor er den aktivert som standard, og kan ikke deaktiveres på nytt.)
 1. *Utsatte plasseringsoperasjoner*
 1. *Utsatt behandling av manuell lagerbevegelsesoperasjon*<br>(Per Supply Chain Management versjon 10.0.25 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)
 

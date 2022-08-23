@@ -1,8 +1,7 @@
 ---
 title: Standard revisjonsfil for avgift (SAF-T) for Norge
 description: Denne artikkelen forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
-author: liza-golub
-ms.author: elgolu
+author: AdamTrukawka
 ms.date: 06/20/2022
 ms.topic: article
 ms.prod: ''
@@ -10,14 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
+ms.author: atrukawk
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1d12315a1fca4a1dca3cf9ee63c33b3dfc3500a3
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: f3b4df7051ac556b6b21fa61258195761de6e2c2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067414"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292258"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 

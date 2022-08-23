@@ -1,26 +1,26 @@
 ---
 title: Utforme et ER-format for å generere en rapport i Excel-format med innebygde bilder i topptekster og bunntekster
 description: Denne artikkelen beskriver hvordan du bruker verktøyet for elektronisk rapportering (ER) til å generere forretningsdokumenter som har innebygde bilder og figurer i topptekster og bunntekster.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1cfde60459e440c851edb97276321216b1654e40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: EROperationDesigner, ERParameters
+ms.openlocfilehash: 5b46d92094bb3f2dab67a5cb2f0e1a34b05d52f0
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854850"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281820"
 ---
 # <a name="design-an-er-format-to-generate-a-report-in-excel-format-with-embedded-images-in-page-headers-or-footers"></a>Utforme et ER-format for å generere en rapport i Excel-format med innebygde bilder i topptekster og bunntekster
 
@@ -196,7 +196,7 @@ I dette tilfellet må du som representanten for Litware, Inc., opprette (avlede)
 
 ![Opprette en konfigurasjon for et egendefinert betalingsformat i dialogboksen Opprett konfigurasjon.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Versjon 240.112.1 av ER-formatkonfigurasjonen **Tilpasset fritekstfaktura (Excel)** opprettes. Denne versjonen har [statusen](general-electronic-reporting.md#component-versioning) **Utkast** og kan redigeres. Det gjeldende innholdet i egendefinert ER-format samsvarer med innholdet i formatet som leveres av Microsoft.
+Versjon 240.112.1 av ER-formatkonfigurasjonen **Tilpasset fritekstfaktura (Excel)** opprettes. Denne versjonen har statusen **Utkast** og kan redigeres. Det gjeldende innholdet i egendefinert ER-format samsvarer med innholdet i formatet som leveres av Microsoft.
 
 ![Ny versjon av ER-formatkonfigurasjonen opprettet på Konfigurasjoner-siden.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -244,7 +244,7 @@ Konfigurer det egendefinerte formatet, slik at et firmalogobilde legges i bunnte
 
 ### <a name="mark-the-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Merke det egendefinerte formatet som kjørbart
 
-Nå som den første versjonen av det egendefinerte formatet er opprettet og har statusen **Utkast**, kan du kjøre formatet for testformål. Når du skal kjøre rapporten, behandler du en leverandørbetaling ved å bruke betalingsmåten som refererer til det egendefinerte ER-formatet. Som standard [vurderes](general-electronic-reporting.md#component-versioning) bare versjonene som har statusen **Fullført** eller **Delt** når du kaller opp et ER-format fra programmet. Denne virkemåten hjelper til med å forhindre at ER-formater som har uferdige utforminger, brukes. Testingen kjøres imidlertid ved at du kan tvinge programmet til å bruke versjonen av ER-formatet som har statusen **Utkast**. På denne måten kan du justere gjeldende formatversjon hvis det kreves endringer. Hvis du vil ha mer informasjon, kan du se [Relevans](electronic-reporting-destinations.md#applicability).
+Nå som den første versjonen av det egendefinerte formatet er opprettet og har statusen **Utkast**, kan du kjøre formatet for testformål. Når du skal kjøre rapporten, behandler du en leverandørbetaling ved å bruke betalingsmåten som refererer til det egendefinerte ER-formatet. Som standard vurderes bare versjonene som har statusen **Fullført** eller **Delt** når du kaller opp et ER-format fra programmet. Denne virkemåten hjelper til med å forhindre at ER-formater som har uferdige utforminger, brukes. Testingen kjøres imidlertid ved at du kan tvinge programmet til å bruke versjonen av ER-formatet som har statusen **Utkast**. På denne måten kan du justere gjeldende formatversjon hvis det kreves endringer. Hvis du vil ha mer informasjon, kan du se [Relevans](electronic-reporting-destinations.md#applicability).
 
 Hvis du vil bruke utkastversjonen av et ER-format, må du eksplisitt markere ER-formatet.
 

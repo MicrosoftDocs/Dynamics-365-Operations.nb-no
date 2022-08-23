@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f008c273a3088353c33ae8c4b0b3cbc6b274fbcf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 261d71e955e4cb1a4a461d59725c631248e10b17
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901154"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227905"
 ---
 # <a name="benefits-management-overview"></a>Oversikt over fordelsbehandling
 
@@ -147,6 +147,16 @@ Før du kan behandle livshendelser, må du allerede kjøre åpen registrering mi
 - [Behandle levetidshendelser](hr-benefits-process-life-events.md)
 - [Behandle endringer i levetidshendelse](hr-benefits-process-life-event-changes.md)
 - [Behandle rettighet for levetidshendelse](hr-benefits-process-life-event-eligibility.md)
+
+Når behandlingen av livshendelsen er fullført og så lenge registreringsperioden for levetidshendelsen er åpen, kan ansatte endre planalternativene som påvirkes av livshendelsen. Administratorer kan foreta endringene på vegne av ansatte. Når registreringsperioden er avsluttet og ingen ubekreftede plantyper er knyttet til livshendelsestransaksjonen, lukkes transaksjonen.
+
+Alle planene som påvirkes av livshendelsen, må enten velges eller frafalles og deretter bekreftes. Hvis en plantransaksjon ikke er valgt, ikke er frafalt og derfor ikke bekreftet for én plantransaksjon, lukkes ikke livshendelsestransaksjonen.
+
+Administratorer kan lukke en livshendelsestransaksjon manuelt etter behov ved å velge den og deretter velge **Lukk**. Hvis det er ubekreftede planer i transaksjonen og en administrator ønsker å lukke den, kan det hende at livshendelsen begrenser endringer i disse planene.
+
+Lukkede livshendelser kan ikke slettes.
+
+Administratorer kan åpne en livshendelsestransaksjon på nytt etter behov ved å velge den og deretter velge **Åpne på nytt**.
 
 ## <a name="rate-updates-optional"></a>Vurdere oppdateringer (valgfritt)
 

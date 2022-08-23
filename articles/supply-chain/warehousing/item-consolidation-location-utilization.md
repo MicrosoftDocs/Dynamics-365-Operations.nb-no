@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 63fd8b209cb73843aae7324c805c5d0eb83b4ca4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c78954659c125c919ed0debbd81023a3da02db3
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849191"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219450"
 ---
 # <a name="item-consolidation---location-utilization"></a>Varekonsolidering – lokasjonsutnyttelse
 
@@ -30,8 +30,8 @@ Denne artikkelen gir informasjon om funksjonalitet som gjør det enkelt for lage
 
 Før du kan bruke funksjonene som beskrives i denne artikkelen, må du aktivere dem i systemet. Administratorer kan bruke arbeidsområdet for [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere statusen for disse funksjonene og aktivere dem hvis nødvendig. Slå på begge disse funksjonene i den rekkefølgen de vises i. (Begge funksjonene gjelder for modulen for **Lagerstyring**.)
 
-1. Status for lagerlokasjon
-2. Bruk av lokasjon for varekonsolidering
+1. *Lagerlokasjonsstatus* (per versjon 10.0.29 er denne funksjonen aktivert som standard. Hvis du vil ha mer informasjon, kan du se [Lagerlokasjonsstatus](warehouse-location-status.md).)
+2. *Bruk av lokasjon for varekonsolidering*
 
 ## <a name="warehouse-location-status"></a>Status for lagerlokasjon
 

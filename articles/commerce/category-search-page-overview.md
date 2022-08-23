@@ -7,18 +7,18 @@ ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: v-chgri
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e61db026649df8fe331d107bfbda8246fb9d5f9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.assetid: ''
+ms.openlocfilehash: 1f2e4eb8825dd690f926f7f0bdfc39f1eb5fb83c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881858"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9276380"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversikt over standard kategorimålside og søkeresultatside
 
@@ -46,6 +46,12 @@ Følgende komponenter er grunnleggende for en kategori:
     - Produktnavn – – \[Å–A\]
     - Vurderinger – lav til høy
     - Vurderinger – høy til lav
+
+- **Avanserte sorteringsalternativer** brukes av besøkende på nettsteder til å sortere produktene ved å bruke intelligente kriterier. Ved å aktivere [Produktanbefalingene](product-recommendations.md) er følgende sorteringsalternativer tilgjengelige. Hvis du vil ha mer informasjon, kan du se artikkelen [Typer produktanbefalinger](product-recommendations.md#types-of-product-recommendations).
+
+    - Nye
+    - Bestselgere
+    - Populære
 
 - **Sidenummerering** lar besøkende på webområdet flytte fra én side med kategoriserte produktresultater til en annen side.
 - **Totalt antall** inneholder totalt antall produkter som er definert i en kategori.
@@ -78,7 +84,7 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
 
 - **Produktplasseringsfliser** viser produktene for brukerens søk. Som standard er disse flisene sortert etter skydrevet søkerelevanssum for brukersøket.
 - **Sammendrag av presiseringer og valg** er filtre som angir antall, og som kan brukes til å finjustere varer. Varehandelslederen konfigurerer dem som en del av konfigurasjonen av metadataene for "kanalkategorier og produktattributter".
-- **Sorteringsalternativer** brukes av besøkende på webområder til å sortere produktene. Som standard er følgende sorteringsalternativer tilgjengelige:
+- **Standard sorteringsalternativer** brukes av besøkende på nettsteder til å sortere produktene. Som standard er følgende sorteringsalternativer tilgjengelige:
 
     - Pris: – lav til høy
     - Pris: – høy til lav
@@ -86,7 +92,16 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
     - Produktnavn – – \[Å–A\]
     - Vurderinger – lav til høy
     - Vurderinger – høy til lav
-    - Standard
+    - Standard 
+    
+    > [!NOTE]
+    > Hvis verdiene **Visningsrekkefølge** er definert for produktene i navigasjonsarvingsarket, overholder sortering som standard på en kategoriside verdiene som er definert i **Visningsrekkefølge**. Hvis ikke utføres sorteringen etter **produktnummeret**.)
+    
+- **Avanserte sorteringsalternativer** brukes av besøkende på nettsteder til å sortere produktene ved å bruke intelligente kriterier. Ved å aktivere [Produktanbefalingene](product-recommendations.md) er følgende sorteringsalternativer tilgjengelige. Hvis du vil ha mer informasjon, kan du se artikkelen [Typer produktanbefalinger](product-recommendations.md#types-of-product-recommendations).
+
+    - Nye
+    - Bestselgere
+    - Populære
 
 - **Sidenummerering** lar besøkende på webområdet flytte fra én side med kategoriserte produktresultater til en annen side.
 - **Totalt antall** inneholder totalt antall produkter som er definert i en kategori, og som samsvarer med søkevilkårene.
@@ -94,6 +109,8 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
 >[!NOTE]
 >Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det under **Handelsparametere > Konfigurasjonsparametere** finnes en oppføring for ProductSearch. UseAzureSearch satt til true. 
 ![Konfigurasjonsparametere for skydrevet søk.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Hvis du vil bruke avanserte sorteringsalternativer som nye, bestselgere og trendy, må du også aktivere [Produktanbefalinger](product-recommendations.md) for miljøet ditt. Avanserte sorteringsalternativer er tilgjengelige med Commerce SDK, versjon 9.35+ og Commerce, versjon 10.0.20.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

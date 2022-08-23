@@ -2,7 +2,7 @@
 title: Lagrede visninger
 description: Denne artikkelen beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 14369b02f1d7553be5c732f3bdf768825267998b
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9125158"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220340"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -46,7 +46,12 @@ Når visninger har blitt gjort tilgjengelige for et miljø, vil toppen av alle s
 Visningsvelgeren har to størrelsesvariasjoner: 
 
 - **Store visningsvelgere** – Sider som tydelig viser en liste, vil ha en større visningsvelger av flere årsaker. Det viktigste er at store visningsvelgere angir sidene der visningen kan inkludere brukerdefinerte filtre og sorter. Fordi filtre og sorter er inkludert i visningene, er den større velgerstørrelsen også egnet fordi visningsnavnene ofte vil være den beste beskrivelsen av dataene som vises på skjermen, og forventningen er at brukerne vil bytte mellom visninger oftere på disse sidetypene. Gruppering i et rutenett kan også lagres i visninger på en side med store visningsvelgere. 
+    
+    [![Stor visningsvelger som støtter endringer i spørringen i visningen.](./media/views-largeViewSelector.png)](./media/views-largeViewSelector.png)
+
 - **Små visningsvelgere** – Alle andre fullskjermsider (med unntak av arbeidsområder og instrumentbordet) har en mindre visningsvelger som vises ved siden av sidetittelen. Visninger på disse sidene inkluderer bare tilpasninger, ikke brukerdefinerte filtre. På disse sidene er teksten eller posttittelen ofte den viktigste informasjonen øverst på siden. Den mindre størrelsen på visningsvelgeren gjenspeiler også en lavere forventet frekvens for visningsskifte på disse sidene. 
+    
+    [![Liten visningsvelger som ikke støtter endringer i spørringen i visningen.](./media/views-smallViewSelector.png)](./media/views-smallViewSelector.png)
  
 Hvis du velger visningsnavnet, åpnes visningsvelgeren og viser listen over tilgjengelige visninger for siden.
 
@@ -64,6 +69,8 @@ Hvis du vil bytte til en annen visning, åpner du først visningsvelgeren og vel
 I motsetning til tradisjonell tilpasning lagres ikke visninger automatisk når en bruker tilpasser siden, eller når en bruker bruker et filter på en liste eller sorterer den. Det kreves en eksplisitt handling for å lagre disse endringene i en visning. Dette kravet gir brukerne fleksibilitet til å opprette en visning før eller etter at endringene som er knyttet til denne visningen, er gjort. Det sikrer også at visningsdefinisjoner ikke endres utilsiktet av éngangsfiltre eller personlige tilpasninger. Legg merke til at vanlige sidebrukselementer (for eksempel kolonnebredder eller den utvidede eller sammenslåtte tilstanden til inndelinger) lagres automatisk i den gjeldende visningen, selv for låstse visninger.
 
 For å sikre at gjeldende status for visningen er kjent, vises det en stjerne (\*) ved siden av gjeldende visningsnavn når du begynner å endre en visning ved å tilpasse eller filtrere den. Dette symbolet angir at du ser på en ulagret, endret versjon av denne visningen.
+
+[![Ulagrede endringer på en visning.](./media/views-unsavedChanges.png)](./media/views-unsavedChanges.png)
 
 Hvis du vil lagre disse endringene, følger du disse trinnene.
 
@@ -184,7 +191,7 @@ Hvis endringene i den publiserte visningen omfatter endringer i tilpasningene el
 
 I likhet med behandling av personlige visninger gir dialogboksen **Behandle mine visninger** brukere med publiseringsrettigheter grunnleggende vedlikeholdsfunksjoner for sidens publiserte visninger (i tillegg til sine egne personlige visninger). Hvis du vil åpne denne siden, velger du visningsnavnet for å åpne rullegardinmenyen, velger **Mer** og deretter **Behandle mine visninger**.
 
-Selv om alle brukere har en **Mine visninger**-kategori som viser personlige visninger, har brukere med publiseringsrettigheter også en **Organisasjonsvisninger**-kategori, som viser alle publiserte og upubliserte visninger for siden. Fordi flere brukere kan publisere visninger, er det viktig at du kan administrere hele listen over publiserte visninger, selv om du ikke er brukeren som har publisert en gitt visning.
+Selv om alle brukere har en **Mine visninger**-fane som viser personlige visninger, har brukere med publiseringsrettigheter også en **Organisasjonsvisninger**-kategori, som viser alle publiserte og upubliserte visninger for siden. Fordi flere brukere kan publisere visninger, er det viktig at du kan administrere hele listen over publiserte visninger, selv om du ikke er brukeren som har publisert en gitt visning.
 
 Hvis du vil ha en liste over alle publiserte visninger for siden, er følgende sett med handlinger tilgjengelige. 
 
@@ -225,7 +232,7 @@ Når visninger aktiveres, blir eksisterende personlige tilpasninger for en bruke
 
 ### <a name="what-pages-support-views"></a>Hvilke sider støtter visninger? 
 
-Visninger er tilgjengelige på de fleste, men ikke alle sider. Spesifikt er visninger tilgjengelige for alle fullskjermsider, bortsett fra instrumentbord og arbeidsområder. Sider som ikke er i fullskjerm, som inkluderer dialogbokser, rullegardindialogbokser, oppslag, utvidede forhåndsvisninger, støtter for øyeblikket heller ikke visninger. Visningsstøtte for flere sidetyper, for eksempel arbeidsområder og dialogbokser, kan bli vurdert for en fremtidig oppdatering.
+Visninger er tilgjengelige på de fleste, men ikke alle sider. Spesifikt er visninger tilgjengelige for alle fullskjermsider, bortsett fra instrumentbord. Du kan få mer støtte for arbeidsområder via funksjonen **Lagrede visninger for arbeidsområder**. De fleste sider som ikke er i fullskjerm, som inkluderer rullegardinlistedialogbokser, oppslag og utvidede forhåndsvisninger, støtter for øyeblikket heller ikke visninger. Du kan få mer støtte for dialogbokser via funksjonen **Lagrede visninger for dialoger**.
 
 ### <a name="who-is-allowed-to-publish-views"></a>Hvem kan publisere visninger?
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 833d6cc131b3fb45d273b60ecf6778b2be31fc8a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 87be947c829641ba809e6850ccf41ea6d142161d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8687114"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228968"
 ---
 # <a name="plan-type-overview"></a>Oversikt over plantype
 
@@ -27,6 +27,8 @@ ms.locfileid: "8687114"
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 En plantype er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen. Plantypen **Enkelt liv** ville for eksempel ha plantypekoden **Liv** fordi den er en type livsforsikringsplan og må følge reglene som er angitt for plantypekoden **Liv**. En annen plantype kan være **Ekstra liv**. Denne plantypen vil også ha plantypkoden **Liv**.
 
@@ -67,12 +69,12 @@ En plantype kan definere dekningsalternativer. Dekningsalternativene er definert
    | --- | --- |
    | **Plantype** | Plantypen som det skal konfigureres alternativer for livshendelser for. |
    | **ID for levetidshendelsestype** | ID-en til livshendelsestypen. |
-   | **Tillat avbrudd** | Angir om en ansatt kan annullere en fordelsplan i løpet av livshendelsen. |
    | **Endre dekningsalternativ** | Angir om en ansatt kan endre dekningsalternativer i løpet av livshendelsen. |
    | **Bytt til en ny plan** | Angir om en ansatt kan endre planer i løpet av livshendelsen. |
-   | **Avbryt plan automatisk** | Angir om planen skal avbrytes automatisk i løpet av livshendelsen. |
    | **Åpne rettighetskontroll på nytt automatisk** | Angir om rettighetskontrollen for fordelsregistrering skal åpnes på nytt automatisk under levetidshendelsen. |
-   | **Rapporteringsvindu** | Angir rapporteringsvinduet (i dager) for levetidshendelsen. **Obs**! Hvis du ikke angir et beløp, antar systemet at rapporteringsvinduet er null, og livshendelsen behandles ikke. |
+   | **Levetidshendelsesregistreringsperiode** | Angir rapporteringsvinduet (i dager) for levetidshendelsen. **Obs**! Hvis du ikke angir et beløp, antar systemet at rapporteringsvinduet er null, og livshendelsen behandles ikke. |
+   | **Bare redigerbar av administrator** | Angir om administratorer kan avbryte eller redigere en plan i løpet av en levetidshendelse. Den ansatte kan ikke foreta noen endringer i arbeidsområdet **Ansattselvbetjening**. |
+   | **Avbryt plan automatisk** | Angir om planen skal avbrytes automatisk i løpet av en livshendelse. Når endringene for levetidshendelsen er behandlet, beholdes alternativet **Automatisk annullering av plan** med det valgte planalternativet. Bare statusen **Bekreftet** eller **Utsjekket** blir fjernet. Planen forblir valgt. Ansatte som ikke foretar planleggingsvalg i løpet av registreringsperioden for livshendelsen, vil derfor ikke miste planvalget. 
 
 5. Velg **Lagre**. 
 

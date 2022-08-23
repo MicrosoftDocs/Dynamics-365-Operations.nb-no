@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5241c982675d6b9a9bc9596b8ac9ed2798903287
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 66fc9e21b79d70ec14750440c74d354bb8ec0695
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066975"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219606"
 ---
 # <a name="register-items-enabled-for-warehouse-management-processes-using-an-item-arrival-journal"></a>Registrere varer aktivert for lagerstyringsprosesser ved å bruke en journal for vareankomst
 
@@ -29,7 +29,7 @@ Denne artikkelen presenterer et scenario som viser hvordan du registrerer varer 
 
 ## <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-Hvis du vil gå gjennom dette scenariet ved hjelp av eksempelpostene og verdiene som er angitt i denne artikkelen, må du bruke et system der standard demodata er installert, og du må velge den juridiske enheten *USMF* før du begynner.
+Hvis du vil gå gjennom dette scenariet ved hjelp av eksempelpostene og verdiene som er angitt i denne artikkelen, må du bruke et system der standard [demodata](../../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert, og du må velge den juridiske enheten *USMF* før du begynner.
 
 Du kan i stedet gå gjennom dette scenariet ved å erstatte verdier fra dine egne data hvis du har følgende data tilgjengelige:
 

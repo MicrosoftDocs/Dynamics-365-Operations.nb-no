@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 02ab3675db0d78efa1e4e43188d79bb1e763a713
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: 7141f9c7ae4e27013bd655ce78892fc44c181315
+ms.sourcegitcommit: e14648b01549bdc17998ffdef6cde273d4e78560
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111826"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "9242990"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Oppgrader til parten og den globale adressebokmodellen
 
@@ -274,7 +274,7 @@ Denne delen beskriver oppsettet som kreves før du kjører partspostadressen og 
 
     ![Importere Dataverse partspostene.](media/data-factory-import-party.png)
 
-9. I datafabrikken kjører du malene for postadresse for part og elektroniske adresse for part, en etter en.
+9. I datafabrikken kjører du malene for elektronisk adresse for part og deretter postadresse for part, en etter en.
 
     + Malen for partspostadresse upserter alle postadresseposter i kundeengasjementsappen, og knytter dem til tilsvarende **konto**, **kontakt** og **leverandør**-poster. Den genererer også tre .csv-filer: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv og ImportFONewPostalAddress.csv.
     + Malen for elektronisk postadresse for part upserter alle elektroniske adresser i kundeengasjementsappen, og knytter dem til tilsvarende **konto**, **kontakt** og **leverandør**-poster. Den genererer også én .csv-fil: ImportFONewElectronicAddress.csv.

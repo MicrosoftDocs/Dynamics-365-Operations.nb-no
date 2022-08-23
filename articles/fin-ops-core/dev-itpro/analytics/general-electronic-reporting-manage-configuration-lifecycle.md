@@ -1,32 +1,32 @@
 ---
 title: Administrere livssyklus til konfigurasjoner for elektronisk rapportering (ER)
 description: Denne artikkelen beskriver hvordan du administrerer livssyklusen til ER-konfigurasjoner (elektronisk rapportering) for Dynamics 365 Finance.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d6a64908a167c09089a95f1d3faa825dcc63f064
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
+ms.openlocfilehash: fe23d4cb2b293af466df2236b153974f95f636f8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109090"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9271591"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Administrere livssyklus til konfigurasjoner for elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du administrerer livssyklusen til ER-konfigurasjoner (elektronisk rapportering) for Dynamics 365 Finance.
+Denne artikkelen beskriver hvordan du administrerer livssyklusen til [ER-[konfigurasjoner](general-electronic-reporting.md#Configuration) (elektronisk rapportering)](general-electronic-reporting.md) for Dynamics 365 Finance.
 
 ## <a name="overview"></a>Oversikt
 
@@ -105,6 +105,41 @@ Noen ganger kan du kreve at systemet ignorerer de konfigurerte forutsetningene n
 
     > [!NOTE]
     > Denne parameteren er brukerspesifikk og selskapsspesifikk.
+
+## <a name="dependencies-on-other-components"></a>Avhengigheter for andre komponenter
+
+ER-konfigurasjoner kan konfigureres som [avhengige](er-download-configurations-global-repo.md#import-filtered-configurations) av andre konfigurasjoner. Du kan for eksempel [importere](er-download-configurations-global-repo.md) en ER-[datamodellkonfigurasjon](er-overview-components.md#data-model-component) fra det globale repositoriet til [Microsoft Regulatory Configuration Services (RCS)](../../../finance/localizations/rcs-overview.md) eller Dynamics 365 Finance-forekomsten, og deretter opprette en ny ER-[formatkonfigurasjon](er-overview-components.md#format-component) som er [avledet](er-quick-start2-customize-report.md#DeriveProvidedFormat) fra den importerte ER-datamodellkonfigurasjonen. Konfigurasjonen til det avledede ER-formatet vil være avhengig av basis-ER-datamodellkonfigurasjonen.
+
+![Avledet ER-formatkonfigurasjon på konfigurasjonssiden.](./media/ger-configuration-lifecycle-img1.png)
+
+Når du er ferdig med å utforme formatet, kan du endre statusen for den opprinnelige [versjonen](general-electronic-reporting.md#component-versioning) av ER-formatkonfigurasjonen fra **Utkast** til **Fullført**. Deretter kan du dele den fullførte versjonen av ER-formatkonfigurasjonen ved å [publisere](../../../finance/localizations/rcs-global-repo-upload.md) den i det globale repositoriet. Deretter får du tilgang til det globale repositoriet fra en hvilken som helst RCS- eller Finance-skyforekomst. Du kan deretter importere alle ER-konfigurasjonsversjoner som gjelder programmet, fra det globale repositoriet til programmet.
+
+![Publiserte ER-formatkonfigurasjon på Konfigurasjonsrepositorium-siden.](./media/ger-configuration-lifecycle-img2.png)
+
+Basert på konfigurasjonsavhengigheten når du velger ER-formatkonfigurasjonen i det globale repositoriet for å importere den til en nydistribuert RCS- eller Finans-forekomst, blir base-ER-datamodellkonfigurasjonen automatisk funnet i det globale repositoriet og importeres sammen med den valgte ER-formatkonfigurasjonen som basiskonfigurasjon.
+
+Du kan også eksportere ER-formatkonfigurasjonsversjonen ut av nåværende RCS- eller Finance-forekomst, og lagre den lokalt som en XML-fil.
+
+![Eksport av en ER-formatkonfigurasjonversjon som XML på Konfigurasjoner-siden.](./media/ger-configuration-lifecycle-img3.png)
+
+I versjoner av Finance **før versjon 10.0.29**, når du prøver å importere ER-formatkonfigurasjonsversjonen fra denne XML-filen eller fra et hvilket som helst annet repositorium enn det globale repositoriet til et nydistribuert RCS- eller Finance-forekomst som ennå ikke inneholder noen ER-konfigurasjoner, vil det følgende unntaket gjøres oppmerksom på å informere deg om at det ikke kan anskaffes en basiskonfigurasjon:
+
+> Uløste referanser igjen<br>
+Referanse for objektet \<imported configuration name\> til objektet Base (\<globally unique identifier of the missed base configuration\>, \<version of the missed base configuration\>) kan ikke opprettes
+
+![Importere ER-formatkonfigurasjonsversjonen på Konfigurasjonsrepositorium-siden.](./media/ger-configuration-lifecycle-img4.gif)
+
+I **versjon 10.0.29 og senere**, når du prøver å bruke den samme konfigurasjonsimporten, vil ER-rammeverket automatisk prøve å finne navnet på den manglende basiskonfigurasjonen i den globale repositoriet i hurtigbufferen for global repositorium. Deretter vil det vises navnet og den globalt unike identifikatoren (GUID) for den manglende basiskonfigurasjonen i teksten for unntaket som mangler.
+
+> Uløste referanser igjen<br>
+Referanse for objektet \<imported configuration name\> til objektet Base (\<name of the missed base configuration\> \<globally unique identifier of the missed base configuration\>, \<version of the missed base configuration\>) kan ikke opprettes
+
+![Unntak på Konfigurasjonsrepositorium-siden når basiskonfigurasjonen ikke blir funnet.](./media/ger-configuration-lifecycle-img5.png)
+
+Du kan bruke det angitte navnet til å finne basiskonfigurasjonen og deretter importere den manuelt.
+
+> [!NOTE]
+> Dette nye alternativet fungerer bare når minst én bruker allerede har logget seg på det globale repositoriet ved å bruke siden [Konfigurasjonsrepositorier](er-download-configurations-global-repo.md#open-configurations-repository) eller et av de globale [repositoriumsoppslagsfeltene](er-extended-format-lookup.md) i den gjeldende Finance-forekomsten, og når det globale repositoriumsinnholdet er hurtigbufret.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

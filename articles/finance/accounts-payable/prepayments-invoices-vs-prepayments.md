@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a420a0a366e454df14d5fe994691829bc7950306
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 901683f2176189ce2f4186b4f9b3b5c64ec9f2b1
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895203"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9227783"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
@@ -78,6 +78,8 @@ Forskuddsbetalingen kan bli fjernet fra bestillingen med mindre du allerede har 
 Hvis du vil registrere leverandørens forskuddsbetalingsfaktura, kan du gå til siden **Leverandørfaktura** ved å velge **Forskuddsbetalt faktura** på **Bestillinger**-siden (**Leverandører \> Felles \> Bestillinger \> Alle bestillinger \> Faktura-fanen \> Forskuddsbetalt faktura**). Angi informasjonen for den forskuddsbetalte fakturaen, inkludert fakturanummeret. Du kan ikke endre antallet for en forskuddsfaktura. Hvis leverandøren har fakturert et delvis beløp av forskuddsbetalingsverdien som er definert i bestillingen, kan du oppdatere enhetsprisen for å gjenspeile den delvise verdien.
 
 Når forskuddsbetalingsfakturaen posteres, blir leverandørsaldoen og forskuddsbetalingskontoen oppdatert. Verdien av **Bruk av forskuddsbetaling** i forskuddsbetalingsdefinisjonen i bestillingen blir også oppdatert. Standard finansdimensjonsoppføringer for det posterte forskuddsbetalingsbilaget tas fra hodeinformasjonen i bestillingen.
+
+Hvis funksjonen **Lås finansdimensjoner på fakturalinjer på fakturalinjer for leverandørforskuddsbetaling** på siden **Funksjonsstyring** er aktivert, kan ikke dimensjonene i forskuddsbetalingshodet eller -linjene oppdateres. 
 
 ## <a name="post-and-settle-payments-for-the-prepayment-invoice"></a>Postere og utligne betalinger for forskuddsbetalingsfakturaen
 Deretter betales forskuddsbetalingsfakturaen fra siden **Betalingsjournal**. Du kan få tilgang til betalingsjournaler ved å klikke på **Leverandører \> Journaler \> Betalinger \> Betalingsjournal**. Når du har postert utligningen av betalingen til forskuddsbetalingsfakturaen, oppdateres bestillingens verdi for **Gjenværende forskuddsbetalingsplassering**.

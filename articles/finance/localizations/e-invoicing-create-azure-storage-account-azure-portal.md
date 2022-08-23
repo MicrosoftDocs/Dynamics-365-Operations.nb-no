@@ -1,26 +1,26 @@
 ---
 title: Opprette en Azure-lagringskonto i Azure Portal
 description: Denne artikkelen forklarer hvordan du oppretter en Azure-lagringskonto for elektronisk fakturering.
-author: dkalyuzh
+author: gionoder
 ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4380261140086bcb278162f8dc70b39eaa7078fe
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.form: ''
+ms.openlocfilehash: 5eca23985c48f4e577bd4567cc2e324df5aa9690
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8898025"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9291644"
 ---
 # <a name="create-an-azure-storage-account-in-the-azure-portal"></a>Opprette en Azure-lagringskonto i Azure Portal
 

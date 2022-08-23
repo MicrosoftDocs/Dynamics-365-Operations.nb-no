@@ -5,22 +5,20 @@ author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2e2759ff15dd8d146c642fc0da90d1a38fe855d1
-ms.sourcegitcommit: 6781fc47606b266873385b901c302819ab211b82
+ms.openlocfilehash: d33fc6f4895b53f16cc6957a3a2fc6b1abe90a2f
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "9111208"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9289522"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøk problemer under førstegangsinstallasjon
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Denne artikkelen inneholder feilsøkingsinformasjon om integrasjon av dobbel skriving mellom økonomi- og driftsapper og Dataverse. Dette emnet inneholder informasjon som kan hjelpe deg med å løse problemer som kan oppstå under det første oppsettet av integrering med dobbel skriving.
 
@@ -87,6 +85,19 @@ Det er to ting som kan forårsake et problem der miljøet ikke kan oppdages:
 
 + Brukeren som brukes til pålogging, er ikke i samme leier som økonomi- og driftsforekomsten.
 + Det er noen eldre økonomi- og driftsforekomster som ble driftet av Microsoft, og som hadde et problem med oppdagelse. Du kan løse dette ved å oppdatere økonomi- og driftsforekomsten. Miljøet skal kunne oppdages etter enhver oppdatering.
+
+## <a name="403-forbidden-error-while-connections-are-being-created"></a>403-feil (forbudt) når tilkoblinger opprettes
+
+Som en del av koblingsprosessen for skrivetilgang opprettes det to Power Apps-tilkoblinger (også kalt *Apihub*) på vegne av brukeren i det koblede Dataverse-miljøet. Hvis kunden ikke har en lisens for Power Apps-miljøet, mislykkes opprettelsen av ApiHub-tilkoblingene, og det vises en 403-feil (forbudt). Her er et eksempel på feilmeldingen:
+
+> MSG=\[Kan ikke konfigurere miljø for dobbel skriving. Feildetaljer:Svarstatuskoden indikerer ikke fullført: 403 (forbudt). - Svarstatuskoden indikerer ikke fullført: 403 (forbudt).\] STACKTRACE=\[   ved Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297 --- Slutt på stakkspor fra forrige plassering der unntak ble utløst --- av System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw() ved System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task) ved Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
+
+Denne feilen oppstår på grunn av mangel på Power Apps-lisens. Tildel en passende lisens (for eksempel plan for Power Apps-prøveversjon 2) til brukeren slik at brukeren har tillatelse til å opprette tilkoblingene. Hvis du vil kontrollere lisensen, kan kunden gå til [Min konto](https://portal.office.com/account/?ref=MeControl#subscriptions)-nettstedet for å vise lisensene som er tildelt brukeren i øyeblikket.
+
+Hvis du vil ha mer informasjon om Power Apps-lisens, kan du se følgende artikler:
+
+- [Tildel lisenser til brukere](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Kjøp Power Apps for organisasjonen](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 

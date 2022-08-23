@@ -1,8 +1,7 @@
 ---
 title: MVA-oppgave for Norge
 description: Denne artikkelen forklarer hvordan du setter opp og generere MVA-oppgaven for juridiske enheter som har en primær postadresse i Norge.
-author: epodkolz
-ms.author: epodkolz
+author: EricWangChen
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
@@ -10,14 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
+ms.author: wangchen
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed78134a26030dc7bed0cea8419b039d543c2ec4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 06614aead2b46825b51bb2ab900c22012ec5dabf
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8896234"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9286638"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 

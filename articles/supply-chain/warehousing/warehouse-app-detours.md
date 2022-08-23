@@ -4,19 +4,19 @@ description: Denne artikkelen beskriver hvordan du konfigurerer omveier for meny
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form: ''
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 69090def1bba2f64ed21cca8b6d4629083aeb0c4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863599"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219012"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveier for trinn i menyelementer for mobilenheter
 
@@ -34,20 +34,8 @@ En omvei er et separat menyelement som kan åpnes fra et trinn i en hovedoppgave
 Før du kan definere omveier for trinn i menyelementer på mobilenheten, må du fullføre fremgangsmåten nedenfor for å aktivere de nødvendige funksjonene og generere de nødvendige feltnavnene i mobilappen Warehouse Management.
 
 1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
-1. I [**Funksjonsadministrering**-arbeidsområdet](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverer du funksjonen som er oppført på følgende måte:
-
-    - **Modul:** *Lagerstyring*
-    - **Funksjonsnavn:** *Trinnvise instruksjoner i lagerapp*
-
-    Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md). Denne funksjonen er en forutsetning for funksjonen *Omveier i Warehouse Management-appen*.
-
-1. Aktiver funksjonen som vises på følgende måte:
-
-    - **Modul:** *Lagerstyring*
-    - **Funksjonsnavn:** *Omveier i Warehouse Management-appen*
-
-    Denne funksjonen er funksjonen som er beskrevet i denne artikkelen.
-
+1. Kontroller at funksjonen *Trinninstruksjoner for lagerapp* er aktivert for systemet. Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md). Denne funksjonen er en forutsetning for funksjonen *Omveier i Warehouse Management-appen*.
+1. Aktiver funksjonen *Omveier i Warehouse Management-app*. Denne funksjonen er en som er beskrevet i denne artikkelen.
 1. Oppdater feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobile device \> Navn på lagerappfelt**, og velg **Opprett standardoppsett**. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gjenta det forrige trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management.
 
@@ -65,7 +53,7 @@ Dette scenariet viser hvordan du konfigurerer en lokasjonsforespørsler som en o
 
 ### <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-Hvis du vil bruke de angitte eksempelpostene og verdiene til å arbeide deg gjennom dette scenariet, må du bruke et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+Hvis du vil bruke de angitte eksempelpostene og verdiene til å arbeide deg gjennom dette scenariet, må du bruke et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-1"></a>Opprette en menyspesifikk overstyring og konfigurere omveien for scenario 1
 
@@ -118,7 +106,7 @@ Du kan erstatte lokasjonsforespørselen med en forespørsel om nummerskilt eller
 
 ### <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-Hvis du vil bruke de angitte eksempelpostene og verdiene til å arbeide deg gjennom dette scenariet, må du bruke et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+Hvis du vil bruke de angitte eksempelpostene og verdiene til å arbeide deg gjennom dette scenariet, må du bruke et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 ### <a name="create-a-menu-specific-override-and-configure-the-detour-for-scenario-2"></a>Opprette en menyspesifikk overstyring og konfigurere omveien for scenario 2
 

@@ -1,7 +1,7 @@
 ---
 title: Kontrolliste for oppsett av elektroniske meldinger for mva-returer med direkte innsending til Altinn
 description: Denne artikkelen inneholder en kontrolliste for oppsett av funksjonen Elektroniske meldinger for mva-returer for Norge.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 12/13/2021
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: f235a3190a1caf18d6682e1a53cdc545356bd292
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 76512d39900648ab3edd1f36e40fb5363331ac16
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874348"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292249"
 ---
 # <a name="checklist-for-electronic-messages-setup-for-vat-returns-with-direct-submission-to-altinn"></a>Kontrolliste for oppsett av elektroniske meldinger for mva-returer med direkte innsending til Altinn
 

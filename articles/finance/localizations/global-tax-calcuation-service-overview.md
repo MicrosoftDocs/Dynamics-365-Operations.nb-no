@@ -1,24 +1,24 @@
 ---
 title: Oversikt over avgiftsberegning
 description: Denne artikkelen forklarer det helhetlige omfanget og funksjonene i avgiftsberegning.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 817d7db5952f96fa741671166d88fffddaac84e9
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.search.form: TaxIntegrationTaxServiceParameters
+ms.openlocfilehash: c6dabb9d2aae6f1fc759c40f870c66304d7f7c8d
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166847"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9270673"
 ---
 # <a name="tax-calculation-overview"></a>Oversikt over avgiftsberegning
 
@@ -54,10 +54,15 @@ Avgiftsberegning distribueres i følgende Azure-geografier. Flere Azure-geografi
 
 - Asia/Stillehavskysten
 - Australia
+- Brasil
 - Canada
 - Europa
+- Frankrike
+- India
 - Japan
+- Sør-Afrika
 - Sveits
+- De forente arabiske emirater
 - Storbritannia
 - USA
 
@@ -149,11 +154,15 @@ Følgende transaksjoner støttes i versjon 10.0.28:
 - Leverandørbetalingsjournal
 - Kundebetalingsjournal
 
+Følgende transaksjoner støttes i versjon 10.0.29: 
+
+- Periodisk journal
+
 ## <a name="supported-countriesregions"></a>Støttede land/områder
 
-Avgiftsberegning kan aktiveres etter juridisk enhet. 
+Avgiftsberegning kan kjøres med lokaliseringsfunksjonene som støttes i følgende land/områder for en juridisk enhets primæradresse: 
 
-Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.21:
+Støttet i versjon 10.0.21:
 
 - Østerrike
 - Belgia
@@ -176,7 +185,7 @@ Følgende land/områder for primæradressen til en juridisk enhet støttes i ver
 - Storbritannia
 - USA
 
-Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.22:
+Støttet i versjon 10.0.22:
 
 - Australia
 - Bahrain
@@ -191,22 +200,24 @@ Følgende land/områder for primæradressen til en juridisk enhet støttes i ver
 - Sør-Afrika
 - De forente arabiske emirater
 
-Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.23:
+Støttet i versjon 10.0.23:
 
 - Thailand
 - Japan
 - Malaysia
 - Singapore
 
-Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.24:
+Støttet i versjon 10.0.24:
 
 - Mexico
 
-Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.26:
+Støttet i versjon 10.0.26:
 
 - Kina
 - Tsjekkia
 - Spania
+
+For land/områder som ikke er lokalisert av Microsoft, kan avgiftsberegning også aktiveres og kjøres med andre globale funksjoner.
 
 ## <a name="related-resources"></a>Relaterte ressurser
 

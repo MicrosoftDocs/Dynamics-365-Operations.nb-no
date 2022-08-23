@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 5f5f24f47d0a2376be714f9208cd383cf3aacc07
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857061"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218982"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurere forfremmede felt for trinn i mobilappen Warehouse Management
 
@@ -32,13 +32,7 @@ Denne artikkelen beskriver hvordan du forfremmer og uthever bestemt informasjon 
 Før du kan definere forfremmede felt, må du fullføre fremgangsmåten nedenfor for å aktivere de nødvendige funksjonene og generere de nødvendige feltnavnene i mobilappen Warehouse Management.
 
 1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
-1. I [**Funksjonsadministrering**-arbeidsområdet](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) aktiverer du funksjonen som er oppført på følgende måte:
-
-    - **Modul:** *Lagerstyring*
-    - **Funksjonsnavn:** *Trinnvise instruksjoner i lagerapp*
-
-    Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md). Denne funksjonen er en forutsetning for funksjonen *Forfremmede felter for lagerapp*.
-
+1. Kontroller at funksjonen *Trinninstruksjoner for lagerapp* er aktivert for systemet. Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md). Denne funksjonen er en forutsetning for funksjonen *Forfremmede felter for lagerapp*.
 1. Aktiver funksjonen som vises på følgende måte:
 
     - **Modul:** *Lagerstyring*
@@ -67,7 +61,7 @@ Bruk fremgangsmåten nedenfor for å konfigurere forfremmede felt.
 
 ### <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-Hvis du vil bruke de angitte eksempelpostene og verdiene til å arbeide deg gjennom dette scenariet, må du bruke et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+Hvis du vil bruke de angitte eksempelpostene og verdiene til å arbeide deg gjennom dette scenariet, må du bruke et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 ### <a name="configure-sales-picking-with-promoted-steps-on-the-license-plate-step"></a>Konfigurere salgsplukking med forfremmede trinn i nummerskilttrinnet
 

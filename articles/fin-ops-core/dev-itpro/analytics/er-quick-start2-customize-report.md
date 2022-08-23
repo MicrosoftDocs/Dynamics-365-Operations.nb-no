@@ -1,28 +1,26 @@
 ---
 title: Endre et ER-formatet for å generere et egendefinert elektronisk dokument
 description: Denne artikkelen beskriver hvordan du justerer et Microsoft-levert format for elektronisk rapportering (ER) slik at det genererer et egendefinert elektronisk dokument.
-author: NickSelin
+author: kfend
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
-ms.assetid: ''
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 492964d3cea0e474a50d6d83231f33d9508b9d9d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 220314,  ""intro-internal
+ms.assetid: ''
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
+ms.openlocfilehash: 8b0bcdbd011c4c04e2693a3dcb8033c3cbe2adc7
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886798"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9283566"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Endre et ER-formatet for å generere et egendefinert elektronisk dokument
 
@@ -271,7 +269,7 @@ I dette tilfellet må du som representanten for Litware, Inc., opprette (avlede)
 
 6. Velg **Opprett konfigurasjon**.
 
-Versjon 1.1.1 av ER-formatkonfigurasjonen **BBS (Storbritannia egendefinert)** er opprettet. Denne versjonen har [statusen](general-electronic-reporting.md#component-versioning) **Utkast** og kan redigeres. Det gjeldende innholdet i egendefinert ER-format samsvarer med innholdet i formatet som leveres av Microsoft.
+Versjon 1.1.1 av ER-formatkonfigurasjonen **BBS (Storbritannia egendefinert)** er opprettet. Denne versjonen har statusen **Utkast** og kan redigeres. Det gjeldende innholdet i egendefinert ER-format samsvarer med innholdet i formatet som leveres av Microsoft.
 
 ![Konfigurasjonsside med Versjon 1.1.1 av ER-formatkonfigurasjonen BBS (Storbritannia egendefinert).](./media/er-quick-start2-derived-format-configuration1.png)
 
@@ -324,7 +322,7 @@ Du må konfigurere det egendefinerte formatet slik at det overholder bankspesifi
 
 ### <a name="mark-a-custom-format-as-runnable"></a><a id="MarkFormatRunnable"></a>Merke et egendefinert format som kjørbart
 
-Nå som den første versjonen av det egendefinerte formatet er opprettet og har statusen **Utkast**, kan du kjøre det for testformål. Når du skal kjøre rapporten, må du behandle en leverandørbetaling ved å bruke betalingsmåten som refererer til det egendefinerte ER-formatet. Som standard [vurderes](general-electronic-reporting.md#component-versioning) bare versjonene som har statusen **Fullført** eller **Delt** når du kaller opp et ER-format fra programmet. Denne virkemåten hjelper til med å forhindre at ER-formater som har uferdige utforminger, brukes. Testingen kjøres imidlertid ved at du kan tvinge programmet til å bruke versjonen av ER-formatet som har statusen **Utkast**. På denne måten kan du justere gjeldende formatversjon hvis det kreves endringer. Hvis du vil ha mer informasjon, kan du se [Relevans](electronic-reporting-destinations.md#applicability).
+Nå som den første versjonen av det egendefinerte formatet er opprettet og har statusen **Utkast**, kan du kjøre det for testformål. Når du skal kjøre rapporten, må du behandle en leverandørbetaling ved å bruke betalingsmåten som refererer til det egendefinerte ER-formatet. Som standard vurderes bare versjonene som har statusen **Fullført** eller **Delt** når du kaller opp et ER-format fra programmet. Denne virkemåten hjelper til med å forhindre at ER-formater som har uferdige utforminger, brukes. Testingen kjøres imidlertid ved at du kan tvinge programmet til å bruke versjonen av ER-formatet som har statusen **Utkast**. På denne måten kan du justere gjeldende formatversjon hvis det kreves endringer. Hvis du vil ha mer informasjon, kan du se [Relevans](electronic-reporting-destinations.md#applicability).
 
 Hvis du vil bruke utkastversjonen av et ER-format, må du eksplisitt markere ER-formatet.
 

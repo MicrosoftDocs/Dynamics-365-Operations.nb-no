@@ -2,19 +2,19 @@
 title: Part og global adressebok
 description: Denne artikkelen beskriver funksjonaliteten for part og global adressebok for dobbel skriving.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 91b56d091f549838092bdefe1a6a763fde79a32c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7f06b6e69b76bf12092fdceca5b45a6750b52233
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892200"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228998"
 ---
 # <a name="party-and-global-address-book"></a>Part og global adressebok
 
@@ -119,11 +119,11 @@ Rutenettet inneholder følgende kolonner:
 
 Du kan bruke **Ny adresse**-knappen over rutenettet til å opprette så mange postadresser du vil.
 
-Feltene **Adresse 1** og **Adresse 2** på **Sammendrag**-fanen på **Konto**-siden samsvarer med henholdsvis **Levering**- og **Faktura**-adressene.
+I kundeengasjementsapper når en bruker angir adressene på fanen **Sammendrag** på siden **Kontoer** tilsvarer feltene **Adresse 1** og **Adresse 2** adressene **Levering** og **Faktura**. Når en bruker oppretter en postadresse i økonomi- og driftsapper, vil imidlertid de første to adressene til kundeposten vises i feltene **Adresse1** og **Adresse2**, og brukeren kan endre adresseformålet til **Levering** og **Faktura**.
 
 ![Sammendrag-fanen for postadresser.](media/party-gab-image5.png)
 
-Feltene **Adresse 1**, **Adresse 2** og **Adresse 3** på **Sammendrag**-fanen i **Kontakt**-siden samsvarer med henholdsvis **Forretning**-, **Levering**- og **Faktura**-adressene.
+På samme måte, feltene **Adresse 1**, **Adresse 2** og **Adresse 3** på **Sammendrag**-fanen i **Kontakt**-siden samsvarer med henholdsvis **Forretning**-, **Levering**- og **Faktura**-adressene.
 
 ## <a name="electronic-addresses"></a>Elektroniske adresser
 

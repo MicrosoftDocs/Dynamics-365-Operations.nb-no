@@ -1,8 +1,7 @@
 ---
 title: Mva-retur med direkte innsending til Altinn
 description: Denne artikkelen gir informasjon om mva-returer med direkte innsending til Altinn-funksjonen, som kan brukes til å sende mva-returer i Norge.
-author: liza-golub
-ms.author: elgolu
+author: AdamTrukawka
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
@@ -10,13 +9,14 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
+ms.author: atrukawk
 ms.search.validFrom: 2022-11-15
-ms.openlocfilehash: ef82e20980a8885975256fe365e4b1f9b3bc69cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6be08b8c337f19c8e2d7ae98f36042c72d1ed09a
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879500"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9274587"
 ---
 # <a name="vat-return-with-direct-submission-to-altinn"></a>Mva-retur med direkte innsending til Altinn
 

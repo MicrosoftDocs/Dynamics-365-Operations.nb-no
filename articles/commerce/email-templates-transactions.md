@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9a4d67d901608e210b4060a655ce39f0ea707a52
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: cc3ad01c60324d751ee52d83d93fe59593775a00
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910556"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9279575"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Opprette e-postmaler for transaksjonshendelser
 
@@ -117,7 +117,29 @@ Varslingstypen *ordre fakturert* utløses når en ordre annulleres i Commerce He
 
 ### <a name="customer-created"></a>Kunden er opprettet
 
-Varslingstypen *kunde opprettet* utløses når en ny kundeenhet opprettes i Commerce Headquarters.
+Varslingstypen *kunde opprettet* utløses når en ny kundeenhet opprettes i Commerce Headquarters. 
+
+For å aktivere kundeopprettede varsler i Commerce headquarters går du til **Retail og Commerce \> Headquarters-oppsett \> Parametere \> Commerce-parametere \> Generelt**. I rullegardinlisten **E-postvarslingsprofil** velger du en e-postvarslingsprofil som inneholder kunden som ble opprettet av en varslingstype. 
+
+Som standard lastes kundeopprettede hendelser opp til headquarters med den satsvise jobben **Synkroniser kunder og kanalforespørsler**. Hvis du vil bruke en serviceutkalling i sanntid til å sende disse hendelsene, angir du e-post-ID-en for den opprettede malen for kunde til **newCust**. Dette anbefales imidlertid ikke fordi serviceanrop i sanntid er "aktiver og glem"-samtaler, og ikke har basislogikk eller logikken for nye forsøk som satsvise jobber gir.
+
+> [!NOTE] 
+> Når du aktiverer kundeopprettede varslinger, mottar kunder som opprettes i alle kanaler i den juridiske enheten, en kundeopprettet e-post. Kundeopprettede varslinger kan for øyeblikket ikke begrenses til én enkelt kanal.  
+
+Når den satsvise jobben startes, støtter den opprettede varslingstypen for kunde følgende plassholder.
+
+| Plassholdernavn | Beskrivelse                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | For- og etternavnet til kunden som opprettet en konto. |
+
+Når et serviceanrop i sanntid startes, støtter den opprettede varslingstypen for kunde følgende plassholdere.
+
+| Plassholdernavn | Beskrivelse                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Navn             | For- og etternavnet til kunden som opprettet en konto. |
+| E-post            | E-postadressen til kunden som opprettet en konto.    |
+| Telefon            | Telefonnummeret til kunden som opprettet en konto.      |
+| URL-adresse              | Nettadressen som ble oppgitt av kunden da de opprettet kontoen. |
 
 ### <a name="b2b-prospect-approved"></a>B2B-kundeemne godkjent
 

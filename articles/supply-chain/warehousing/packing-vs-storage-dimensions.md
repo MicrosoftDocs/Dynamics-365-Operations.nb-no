@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 85e40a0768174dcdc5d0fa2647b24cddccf01bdf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8ebea86e5ea63ab4f5a844cd3d0936c0d65bbe2b
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905493"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220250"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Angi ulike dimensjoner for pakking og lagring
 
@@ -50,7 +50,7 @@ Før du kan kjøre eksempelscenarioet, må du klargjøre systemet som beskrevet 
 
 #### <a name="enable-demo-data"></a>Aktivere demonstrasjonsdata
 
-For å kunne arbeide deg gjennom dette scenariet ved å bruke de angitte demonstrasjonspostene og -verdiene som er angitt her, må du være på et system der standard [demonstrasjonsdata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installert. Du må også velge den juridiske enheten *USMF* før du begynner.
+For å kunne arbeide deg gjennom dette scenariet ved å bruke de angitte demonstrasjonspostene og -verdiene som er angitt her, må du være på et system der standard [demonstrasjonsdata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten *USMF* før du begynner.
 
 #### <a name="add-a-new-physical-dimension-to-a-product"></a>Legge en ny fysisk dimensjon til et produkt
 

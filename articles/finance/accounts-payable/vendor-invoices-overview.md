@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b88390085d86956c38c0fc167395509d0c54f860
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 565e45a1c396b9144b4a6437056a0040b2fbde1d
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894178"
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9228759"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
@@ -71,10 +71,10 @@ Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen f
 
 Nedenfor finner du flere måter du kan forhindre at en faktura sendes til en arbeidsflyt på.
 
-- **Fakturatotal og den registrerte totalen er ikke like.** Personen som sendte fakturaen, vil motta et varsel om at totalene ikke er like. Varselet gir en mulighet til å rette saldoene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturatotal og registrert fakturatotal ikke er like** på siden **Funksjonsbehandling** er slått på. 
-- **Fakturaen inneholder utildelte tillegg.** Personen som sendte fakturaen, mottar et varsel om at fakturaen har utildelte tillegg, slik at de kan rette opp fakturaen før den sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når det finnes utildelte tillegg på en leverandørfaktura** på siden **Funksjonsbehandling** er slått på.
-- **Fakturaen inneholder samme fakturanummer som en annen postert faktura.** Personen som sendte fakturaen, vil få en melding som indikerer at det ble funnet en faktura med et duplikatnummer. Duplikatnummeret kan korrigeres før du sender fakturaen til arbeidsflyten på nytt. Dette varselet vises når parameteren **Kontroller fakturanummeret som er brukt** i Leverandører er satt til **Avvis duplikat**. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturanummeret allerede finnes på en postert faktura, og systemet ikke er konfigurert til å godta dupliserte fakturanumre** på siden **Funksjonsbehandling** er slått på.
-- **Fakturaen inneholder en linje der fakturaantallet er mindre enn det samsvarte produktmottaksantallet.** Personen som sender fakturaen eller prøver å postere, vil få en melding om at antallene ikke er det samme. Denne meldingen gir en mulighet til å rette verdiene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis paramenteren **Blokker postering og innsending av leverandørfakturaer til arbeidsflyt** på siden **Funksjonsbehandling** aktiveres og parameteren **Blokker postering og innsending til arbeidsflyt** på siden **Leverandørparametere** er aktivert.
+- **Fakturatotal og den registrerte totalen er ikke like.** Brukeren som sendte fakturaen, vil motta et varsel om at totalene ikke er like. Dette varselet gir brukeren en mulighet til å rette saldoene før fakturaen sendes til arbeidsflytsystemet på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Hindre sending til arbeidsflyt når totalbeløpet på fakturaen og det registrerte totalbeløpet på fakturaen ikke samsvarer** på siden **Funksjonsbehandling** og parameteren **Alternativ for arbeidsflyt når faktura og registrert total ikke er like** på siden **Leverandørparametere** er aktivert. 
+- **Fakturaen inneholder utildelte tillegg.** Brukeren som sendte fakturaen, vil motta et varsel om at fakturaen har ikke-tildelte tillegg. På denne måten kan brukeren rette fakturaen før den sendes til arbeidsflytsystemet på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Hindre innsending til arbeidsflyt når det finnes ledige gebyrer på en leverandørfaktura** på siden **Funksjonsbehandling** og parameteren **Alternativ for arbeidsflyt når det finnes tillegg som ikke er tildelt** på siden **Leverandørparametere** er aktivert.
+- **Fakturaen inneholder samme fakturanummer som en annen postert faktura.** Brukeren som sendte fakturaen, vil få et varsel om at en faktura med et duplikatnummer er funnet. Brukeren kan rette det dupliserte nummeret før de sender fakturaen til arbeidsflytsystemet på nytt. Varselet vises hvis parameteren **Kontroller fakturanummeret som er brukt** i Leverandører er satt til **Avvis duplikat**. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturanummeret allerede finnes på en postert faktura, og systemet ikke er konfigurert til å godta dupliserte fakturanumre** på siden **Funksjonsbehandling** er slått på.
+- **Fakturaen inneholder en linje der fakturaantallet er mindre enn det samsvarte produktmottaksantallet.** Brukeren som sender fakturaen eller prøver å postere den, vil få en melding om at antallene ikke er det samme. Denne meldingen gir brukeren en mulighet til å rette verdiene før fakturaen sendes til arbeidsflytsystemet på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Blokker postering og innsending av leverandørfakturaer til arbeidsflyt** på siden **Funksjonsbehandling** aktiveres og parameteren **Blokker postering og innsending til arbeidsflyt** på siden **Leverandørparametere** er aktivert.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Samsvare leverandørfakturaer med produktkvitteringer
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ec5535013af9ccb253744e061de738155ac9ad22
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e66cda6e529a70d40e599718332152bac95b061e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889642"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220035"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Gjennomgang av funksjonen for behandling av teknisk endring
 
@@ -45,7 +45,7 @@ Før du prøver å utføre noen av øvelsene i resten av denne artikkelen, følg
 
 ### <a name="make-standard-demo-data-available"></a>Gjøre standard demodata tilgjengelig
 
-Arbeid på et system der [standard demodata er installert](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). Standard demonstrasjonsdata legger til data i flere juridiske enheter i demo (firmaer og organisasjoner). Når du arbeider gjennom øvelsene, bruker du firmavelgeren på høyre side av navigasjonsfeltet til å bytte mellom et firma (*DEMF*) som er definert som *teknisk organisasjon* og et annet firma (*USMF*) som er definert som en *driftsorganisasjon*.
+Arbeid på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Standard demonstrasjonsdata legger til data i flere juridiske enheter i demo (firmaer og organisasjoner). Når du arbeider gjennom øvelsene, bruker du firmavelgeren på høyre side av navigasjonsfeltet til å bytte mellom et firma (*DEMF*) som er definert som *teknisk organisasjon* og et annet firma (*USMF*) som er definert som en *driftsorganisasjon*.
 
 ### <a name="set-up-an-engineering-organization"></a>Definere en teknisk organisasjon
 

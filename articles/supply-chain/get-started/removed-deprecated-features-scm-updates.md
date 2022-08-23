@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 description: Denne artikkelen beskriver funksjoner som er fjernet eller som er planlagt for fjerning i Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 04/27/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7c7dd90fea79ae83d238ed51b9ec1fc42e9e36b2
-ms.sourcegitcommit: f2501d93ffc1c7bf4e0daa78e63bc37528ef2358
+ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9171523"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218811"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -33,6 +33,17 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 > [!NOTE]
 > Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10029-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Lageroverføringsordrer som har avgift på overføringsprisen
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsak til avskrivning/fjerning** | Funksjonen [Lageroverføringsordrer som har avgifter på overføringspris](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) erstattes av funksjonen [Lageroverføringsordrer for India](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Erstattet med en annen funksjon?**   | Ja, funksjonen [Lageroverføringsordrer som har avgifter på overføringspris](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) erstattes av funksjonen [Lageroverføringsordrer for India](../../finance/localizations/apac-ind-stock-transfer.md). |
+| **Berørte produktområder** | Supply Chain Management – lager |
+| **Distribusjonsalternativ** | Skyen og lokalt |
+| **Status** | <p>Blir avskrevet. Funksjonen *Lageroverføringsordrer som har avgift på overføringspris* vil ikke motta kundestøtte med feilrettinger og sikkerhetsreparasjon.</p><p>Etter april 2023 blir kunder bedt om å bruke den forbedrede funksjonaliteten *Lageroverføringsordrer for India* som standard. Etter oktober 2023 er ikke funksjonen *Lageroverføringsordrer som har avgift på overføringspris* lenger tilgjengelige, og kunder blir bedt om å flytte til den forbedrede funksjonen *Lageroverføringsordrer for India*.</p><p>Hvis du vil ha mer informasjon , kan du se [Lageroverføringsordrer for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.19
 

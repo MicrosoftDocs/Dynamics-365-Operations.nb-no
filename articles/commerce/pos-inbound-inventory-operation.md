@@ -1,27 +1,27 @@
 ---
 title: Inngående lageroperasjon i salgsstedet
 description: Denne artikkelen beskriver funksjonene til innkommende lageroperasjoner på salgsstedet (POS).
-author: hhaines
+author: hhainesms
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fbabcaafee74b4d0a1ca8ef79de94376a7764aa3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.search.industry: Retail
+ms.search.form: ''
+ms.openlocfilehash: 3099f03ba2da8a367953ad0d25ee884e41ff9deb
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858888"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9288359"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inngående lageroperasjon i salgsstedet
 
@@ -155,15 +155,13 @@ Etter behov kan du velge **Motta alle** på applinjen for raskt å oppdatere ant
 
 ### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Mottak av ikke-planlagte varer på bestillinger
 
-I Commerce versjon 10.0.14 og senere kan brukere motta et produkt som ikke opprinnelig var i bestillingen. Hvis du vil aktivere denne funksjonaliteten, aktiverer du valget for å **legge til linjer i bestillingen ved mottak til salgsstedet**.  
-
-Denne funksjonen fungerer bare for bestillingsmottak. Det er ikke mulig å motta varer mot overføringsordrer når varene ikke tidligere ble bestilt og sendt fra det utgående lageret.
+I Commerce versjon 10.0.14 og senere kan brukere motta et produkt som ikke opprinnelig var i bestillingen. Denne funksjonen fungerer bare for bestillingsmottak. Det er ikke mulig å motta varer mot overføringsordrer når varene ikke tidligere ble bestilt og sendt fra det utgående lageret.
 
 Brukere kan ikke legge til nye produkter i bestillingen under mottak til salgsstedet hvis [arbeidsflyt for endringsadministrasjon](../supply-chain/procurement/purchase-order-approval-confirmation.md) for bestillingen er aktivert i Commerce Headquarters. Hvis du vil aktivere endringsadministrasjon, må alle endringer i en bestilling først godkjennes før mottaket tillates. Fordi denne prosessen gjør det mulig for en mottaker å legge til nye linjer i bestillingen, vil mottak mislykkes hvis arbeidsflyt for endringsadministrasjon aktiveres. Hvis endringsadministrasjon aktiveres for alle bestillinger eller for leverandøren som er koblet til bestillingen som er aktiv på salgsstedet, kan ikke brukeren legge til nye produkter i bestillingen under mottak til salgsstedet.
 
 Funksjonaliteten som gjør det mulig å legge til linjer, kan ikke brukes som en midlertidig løsning for å motta flere produktvolumer som allerede finnes i bestillingen. Overmottak styres gjennom standardinnstillinger for [overmottak](#over-receiving-validations) for produktlinjen på bestillingen.
 
-Hvis valget for å **legge til linjer i bestillingen ved mottak til salgsstedet** er aktivert og en bruker mottar med **Innkommende operasjon** på salgsstedet, og hvis brukeren skanner eller taster en produktstrekkode eller et produktnummer som ikke gjenkjennes som en vare på gjeldende bestilling, men blir gjenkjent som en gyldig vare, mottar brukeren en melding om å legge til varen i bestillingen. Hvis brukeren legger til varen i bestillingen, regnes antallet som er angitt i **Mottar nå**, som det bestilte antallet for bestillingslinjen.
+Når en bruker mottar med **Innkommende operasjon** på salgsstedet, og hvis brukeren skanner eller taster en produktstrekkode eller et produktnummer som gjenkjennes som en gyldig vare, men ikke blir gjenkjent som en gyldig vare, mottar brukeren en melding som ber vedkommende om å legge til varen i bestillingen. Hvis brukeren legger til varen i bestillingen, regnes antallet som er angitt i **Mottar nå**, som det bestilte antallet for bestillingslinjen.
 
 Når bestillingsmottaket er fullført og sendt til hovedkontoret for behandling, blir de tillagte linjene opprettet i hoveddokumentet for bestillingen. På bestillingslinjen i hovedkontoret vil det være et **Lagt til av salgssted**-flagg i kategorien **Generelt** på bestillingslinjen. Flagget **Lagt til av salgssted** angir at bestillingslinjen ble lagt til av mottaksprosessen for salgssted, at det ikke var en linje som var på bestillingen før mottak.
 

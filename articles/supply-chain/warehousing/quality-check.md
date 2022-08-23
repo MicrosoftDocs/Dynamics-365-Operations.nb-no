@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: ceb01205edc269690fda306bc90f465dbccc563b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bc0e911eeccd1d4700f1f4daefd5fe1a4935cd80
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855064"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218720"
 ---
 # <a name="quality-check"></a>Kvalitetskontroll
 
@@ -49,7 +49,7 @@ Denne delen inneholder retningslinjer og et eksempel som viser hvordan du define
 
 ### <a name="make-sample-data-available"></a>Gjøre eksempeldata tilgjengelig
 
-For å arbeide deg gjennom dette [eksempelscenarioet](#example-scenario) ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom dette [eksempelscenarioet](#example-scenario) ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 ### <a name="quality-check-template"></a><a name="quality-template"></a>Mal for kvalitetskontroll
 

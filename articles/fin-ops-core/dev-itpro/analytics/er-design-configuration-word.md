@@ -1,24 +1,26 @@
 ---
 title: Utform en ny ER-konfigurasjon for å generere rapporter i Word-format
 description: Denne artikkelen forklarer hvordan brukere kan konfigurere et nytt ER-format (Elektronisk rapportering) for å generere rapporter som Microsoft Word-dokumenter.
-author: NickSelin
+author: kfend
 ms.date: 12/17/2020
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: caf87659ca4ceb7b25aa43e09893d2a0ef014884
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form:
+- ERWorkspace, ERSolutionTable, EROperationDesigner
+- LedgerJournalTable, LedgerJournalTransVendPaym
+ms.openlocfilehash: b56b328aa2a2b53dc177a02a4d453e5dbcb8340c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893019"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9273346"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Utforme en ny ER-konfigurasjon for å generere rapporter i Word-format
 
@@ -35,7 +37,7 @@ Hvis du vil bruke et Word-dokument som en mal for rapporter i Word-format, kan d
 
 ![Opprette en formatkonfigurasjon på Konfigurasjoner-siden.](./media/er-design-configuration-word-image2.gif)
 
-Er-formatkomponenten for løsningen må inneholde formatelementet **Excel\\Fil**, og dette formatelementet må være koblet til Word-dokumentet som skal brukes som mal for genererte rapporter ved kjøretid. Hvis du vil konfigurere ER-formatkomponenten, må du åpne [utkast](general-electronic-reporting.md#component-versioning)versjonen for den opprettede ER-konfigurasjonen i ER-formatutformingen. Legg deretter til elementet **Excel\\Fil**, knytt Word-malen til det redigerbare ER-formatet, og koble denne malen til elementet **Excel\\Fil** du la til.
+Er-formatkomponenten for løsningen må inneholde formatelementet **Excel\\Fil**, og dette formatelementet må være koblet til Word-dokumentet som skal brukes som mal for genererte rapporter ved kjøretid. Hvis du vil konfigurere ER-formatkomponenten, må du åpne utkastversjonen for den opprettede ER-konfigurasjonen i ER-formatutformingen. Legg deretter til elementet **Excel\\Fil**, knytt Word-malen til det redigerbare ER-formatet, og koble denne malen til elementet **Excel\\Fil** du la til.
 
 > [!NOTE]
 > Når du knytter til en mal manuelt, må du bruke en [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) som tidligere har blitt [konfigurert](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) for dette formålet, i ER-parameterne for å lagre maler i ER-formater.

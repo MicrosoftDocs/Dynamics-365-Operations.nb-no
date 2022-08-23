@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 039b4aa3f044cda29944bcd4f5c42fc35818c58b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: aae3d53c1005f096551b107c46ddafb37357f03c
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868166"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219846"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -84,7 +84,7 @@ Du kan også bruke doble lag. Hvis du velger **Dobbelt lag** for verdien **Bruk 
    | **Beskrivelse** | Verdien i **Beskrivelse**-feltet vil bli brukt fra beskrivelsen av prisoppsettposten. Dermed kan du identifisere hvilket satsoppsett lagsatsene er knyttet til. |
    | **Lagkode** | Velg en lagkode. Lagkoder defineres på **Lagkoder**-siden. Systemet vil automatisk vise beskrivelsen av lagkoden i rutenettet til venstre. |
    | **Lagtype** | Angir hvilket felt som skal brukes som et utvalgskriterium for beregningsprosessen for lagsatsen. For eksempel:</br></br><ul><li>Hvis **alder** brukes, vil systemet bruke den ansattes fødselsdato i beregningsprosessen for fordelssatsen.</li><li>Hvis **lønn** brukes, vil systemet bruke den ansattes årlige fordelslønn i beregningsprosessen for fordelssatsen.</li><li>Hvis **Jobbtype** brukes, vil systemet bruke den ansattes gjeldende aktive stillingspost til å bestemme jobbtypen etter jobbposten som er knyttet til stillingen.</li></ul></br></br>Lagtypene er **alder**, **lønn**, **fysisk**, **kjønn**, **fulltidsekvivalent**, **jobbtype**, **kompensasjonsområde** og **nivå**. | 
-   | **Nivå** | Verdien som skal brukes med lagtypen under beregningsprosessen for fordelssatsen. For eksempel:</br></br><ul><li>Hvis lagtypen er **alder**, vil dette være aldersverdien.</li><li>Hvis lagtypen er **lønn**, vil dette være lønnsbeløpet.</li><li> Hvis lagtypen er **jobbtype**, vil dette være jobbtypen.</li></ul></br></br>Når en lagtype er av typen **alder** eller **lønn**, representerer verdien i **Nivå**-feltet øvre grense for laget. Når en lagtype er **jobbtype**, brukes en nøyaktig samsvarsmetode under valg av lagsats. |
+   | **Nivå** | Verdien som skal brukes med lagtypen under beregningsprosessen for fordelssatsen. For eksempel:</br></br><ul><li>Hvis lagtypen er **alder**, vil dette være aldersverdien.</li><li>Hvis lagtypen er **lønn**, vil dette være lønnsbeløpet.</li><li> Hvis lagtypen er **jobbtype**, vil dette være jobbtypen.</li></ul></br></br>Når en lagtype er av typen **alder** eller **lønn**, representerer verdien i **Nivå**-feltet nedre grense for laget. Når en lagtype er **jobbtype**, brukes en nøyaktig samsvarsmetode under valg av lagsats. |
    | **Beregningstype** | Angir hvordan beløpet i Beregningsbeløp-feltet skal brukes, og hvilken matematisk beregning som skal utføres hvis det er nødvendig. Hvis beregningstypen er et flatt beløp, brukes beløpsfeltene som de er. Hvis beregningstypen er per beløp for lønn eller dekning, brukes beregningsbeløpet og beregningsretningen i den matematiske beregningen.</br></br>Hvis beregningstypen er per lønnsbeløp, brukes følgende matematiske formel:</br></br>Årlig fordelslønn dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>Hvis beregningstypen er per dekningsbeløp, brukes følgende matematiske formel:</br></br>Dekningsbeløp dividert med beregningsbeløp (avrundet opp eller ned) ganger beløpene for røykende eller ikke-røykende ansatt eller arbeidsgiver.</br></br>I begge beregningene brukes beregningsretningen til å avgjøre om årlig fordelslønn eller dekningsbeløp dividert på beregningsbeløp skal rundes opp eller ned. |
    | **Beregningsbeløp** | Beløpet som skal brukes under beregning av fordelssatsen. Dette beløpet vil være divisoren under den matematiske beregningen av lagsatsen. |
    | **Beregningsretning** | Retningen som skal brukes for avrunding av det beregnede resultatbeløpet. Systemet støtter tre beregningsretninger: tom (eksakt metode), **økning** og **reduksjon**.</br></br><ul><li>Hvis tom vil systemet bruke den nøyaktige beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet. Hvis denne verdien har en brøk, vil systemet bruke denne i beregningen.</li><li>Hvis **økning** vil systemet øke den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det neste heltallet, som betyr at 12,25 vil øke til 13.</li><li>Hvis **reduksjon** vil systemet redusere den matematiske beregningen av lønns-/dekningsbeløpet dividert på beregningsbeløpet til det gjeldende heltallet, som betyr at 12,25 vil reduseres til 12.</li></ul> |

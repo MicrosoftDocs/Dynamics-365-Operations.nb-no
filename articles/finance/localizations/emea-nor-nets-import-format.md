@@ -1,25 +1,25 @@
 ---
 title: Nets-importformat
 description: Denne artikkelen gir informasjon om å importere betalingsinformasjon i Nets-format.
-author: anasyash
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 262704
 ms.search.region: Norway
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e24be7533d06a6635e217800d7ac154417c87bc8
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 262704
+ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
+ms.openlocfilehash: f39945654f672aebc261e67c1d6d5fc286c5fdb5
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8868287"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280666"
 ---
 # <a name="nets-import-format"></a>Nets-importformat
 

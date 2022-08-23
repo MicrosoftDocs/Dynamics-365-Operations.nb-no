@@ -1,7 +1,7 @@
 ---
 title: Støtte for flere mva-registreringsnumre i Norges mva-retur
 description: Denne artikkelen beskriver hvordan du støtter flere mva-registreringsnumre i en mva-retur i Norge.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 01/04/2022
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-22-12
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: 5beb4c68a906b9f110b3365a2ee2347cfedd1696
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2db400f87f7c62cb213d2f2bfe6c3f380d348441
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907672"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9272113"
 ---
 # <a name="support-for-multiple-vat-registration-numbers-in-the-vat-return-of-norway"></a>Støtte for flere mva-registreringsnumre i Norges mva-retur
 

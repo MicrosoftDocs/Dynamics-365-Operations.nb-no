@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: a5ce900d7698c7d8211ce1e8b7d529ab79a28915
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d319a1130facbc2988cc074960e6cdfbe053a2d6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897262"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218952"
 ---
 # <a name="warehouse-slotting"></a>Lagersporing
 
@@ -284,7 +284,7 @@ I dette scenariet bruker du de innebygde eksempeldataene, og oppretter postene s
 
 #### <a name="use-the-usmf-sample-data"></a>Bruke USMF-eksempeldataene
 
-For å arbeide deg gjennom dette scenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom dette scenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 #### <a name="create-demand"></a>Opprette behov
 

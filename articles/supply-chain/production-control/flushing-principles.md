@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 357ce65792ceef37abda523e7693069f1bc1ab43
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 89fd38ea6d2c1635e9d8974ab99c2e4cdae4d6be
+ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065562"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9266436"
 ---
 # <a name="flushing-principles"></a>Trekkprinsipp
 
@@ -56,7 +56,10 @@ Det manuelle trekkprinsippet angir at registrering av materialforbruk er en manu
 Start-trekkprinsippet angir at materiale automatisk brukes når produksjonsordren startes. Hvor mye materiale som forbrukes er proporsjonalt med mengden som er startet. Når Start-trekkprinsippet brukes sammen med produksjonsutførelsessystemet, kan det også brukes til å trekke materialer når en operasjon eller en produksjonsjobb er startet. Dette prinsippet gjelder hvis for eksempel avviket i forbruket er lavt, materialene er lavverdimaterialer, det er ingen krav for oppfølging eller det er en kort operasjonstid på operasjoner. 
 
 ### <a name="finish"></a>Ferdig
-Ferdig-trekkprinsippet angir at materiale automatisk brukes når produksjonsordren er rapportert som fullført, eller når en operasjon som er satt opp til å bruke materialene er registrert som fullført. Hvor mye materiale som forbrukes er proporsjonalt med mengden som er rapportert som ferdig. Når Ferdig-trekkprinsippet brukes sammen med produksjonsutførelsessystemet, kan det også brukes til å trekke materialer når en operasjon eller en produksjonsjobb er fullført. Dette prinsippet er relevant i samme situasjoner som Start-prinsippet. Ferdig-prinsippet er imidlertid for operasjoner som har en lenger operasjonstid, der materialer bør ikke angis til VIA før operasjonen er fullført. 
+Ferdig-trekkprinsippet angir at materiale automatisk brukes når produksjonsordren er rapportert som fullført, eller når en operasjon som er satt opp til å bruke materialene er registrert som fullført. Hvor mye materiale som forbrukes er proporsjonalt med mengden som er rapportert som ferdig. Når Ferdig-trekkprinsippet brukes sammen med produksjonsutførelsessystemet, kan det også brukes til å trekke materialer når en operasjon eller en produksjonsjobb er fullført. Dette prinsippet er relevant i samme situasjoner som Start-prinsippet. Ferdig-prinsippet er imidlertid for operasjoner som har en lenger operasjonstid, der materialer bør ikke angis til VIA før operasjonen er fullført.
+
+> [!NOTE]
+> Du kan ikke bruke trekkprinsippet Ferdig sammen med planleggingselementer. Det anbefales at du i stedet bruker enheten Start-trekkprinsippet. Planleggingselementer har en produksjonstypen for *planleggingselement*, og bare koproduktene og biprodukter lan rapporteres som ferdige på partiordrer opprettet for planleggingselementer.
 
 ### <a name="available-at-location"></a>Tilgjengelig på lokasjon
 Tilgjengelig på lokasjon-trekkprinsippet angir at materialene automatisk brukes når de er registrert som plukket for produksjon. Materialet er registrert som plukket fra plassering når arbeidet for råvareplukking er fullført, eller når materialet er tilgjengelig på produksjonsinnleveringsstedet og materiallinjen er frigitt til lageret. Plukklisten som genereres under prosessen blir postert i en satsvis jobb. Dette prinsippet er relevant hvis du for eksempel har mange plukkaktivitetene mot én produksjonsordre. I dette tilfellet trenger du ikke å oppdatere plukklisten manuelt, og du kan få et oppdatert bilde av VIA-balansen.

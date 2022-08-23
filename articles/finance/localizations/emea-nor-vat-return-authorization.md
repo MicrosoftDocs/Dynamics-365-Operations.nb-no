@@ -1,8 +1,7 @@
 ---
 title: Autorisere samhandling med webtjenester for ID-porten og Altinn
 description: Denne artikkelen forklarer hvordan du autoriserer samhandling mellom Microsoft Dynamics 365 Finance-miljøet og nettjenestene ID-porten og Altinn.
-author: liza-golub
-ms.author: elgolu
+author: AdamTrukawka
 ms.date: 11/28/2021
 ms.topic: article
 ms.prod: ''
@@ -10,13 +9,14 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
+ms.author: atrukawk
 ms.search.validFrom: 2022-11-18
-ms.openlocfilehash: 81837669efc26c462e59f6c047dd022199b4c349
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 59b316b5b6b2ff5173458f63bb4fc2f4ba1d26ef
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8909985"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292252"
 ---
 # <a name="authorize-interoperation-with-id-porten-and-altinn-web-services"></a>Autorisere samhandling med webtjenester for ID-porten og Altinn
 

@@ -1,24 +1,24 @@
 ---
 title: Behandle flere avledede tilordninger for én modellrot
 description: Denne artikkelen beskriver hvordan du kan administrere flere avledede tilordninger som ble konfigurert for én modellrot.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 960f5962ec1ea216e35feb0c282856bed95d079a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.search.form: ERSolutionTable, ERModelMappingTable
+ms.openlocfilehash: 868d47ccfebb9a9753d93344c72b10ae4353b0e6
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892486"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277516"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Behandle flere avledede tilordninger for én modellrot
 
@@ -106,7 +106,7 @@ Denne delen beskriver hvordan du [tilpasser](er-quick-start3-customize-report.md
 3. Velg **Avled fra navn: Fakturamodelltilordning, Microsoft** i **Ny**-feltet i rullegardinboksen **Opprett konfigurasjon**.
 4. I feltet **Navn** angir du **Fakturamodelltilordning (Litware)**.
 5. Velg **Opprett konfigurasjon**.
-6. [Merk](er-quick-start2-customize-report.md#MarkFormatRunnable) [utkast](general-electronic-reporting.md#component-versioning)versjonen av den avledede tilordningen som tilgjengelig for bruk ved kjøretid:
+6. [Merk](er-quick-start2-customize-report.md#MarkFormatRunnable) [utkast](general-electronic-reporting.md)versjonen av den avledede tilordningen som tilgjengelig for bruk ved kjøretid:
 
     1. Velg **Brukerparametere** i gruppen **Avanserte innstillinger** i **Konfigurasjoner**-fanen i handlingsruten.
     2. I dialogboksen **Brukerparametere** setter du **Kjøringsinnstillinger** til **Ja**, og deretter velger du **OK**.

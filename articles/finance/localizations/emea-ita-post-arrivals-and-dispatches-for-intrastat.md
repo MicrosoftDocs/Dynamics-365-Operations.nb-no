@@ -1,20 +1,20 @@
 ---
 title: Poster ankomster og fordelinger for Intrastat
 description: Denne artikkelen inneholder et eksempel som viser hvordan du posterer ankomster og fordelinger for Intrastat.
-author: anasyash
-ms.date: 8/23/2021
+author: AdamTrukawka
+ms.date: 08/23/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: aef20f0261e103be7fe231a7efb39751ab4d1151
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b6d46efd477f526c4bec3515086e10aa8172c579
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862971"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9280695"
 ---
 # <a name="post-arrivals-and-dispatches-for-intrastat"></a>Poster ankomster og fordelinger for Intrastat
 

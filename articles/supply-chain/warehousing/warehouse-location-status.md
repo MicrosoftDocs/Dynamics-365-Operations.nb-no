@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6d04ca43895935329b711f2658360c41f611975e
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 2b3c408f5a5e4ce85a235ac83c15b648e43b5e10
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065472"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220065"
 ---
 # <a name="warehouse-location-status"></a>Status for lagerlokasjon
 
@@ -42,10 +42,7 @@ De fire feltene nedenfor på **Lokasjoner**-siden sporer informasjon om gjeldend
 
 ## <a name="turn-on-the-warehouse-location-status-feature"></a>Aktiver funksjonen Status for lagerlokasjon
 
-Før du kan bruke *Status for lagerlokasjon*-funksjonen, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Status for lagerlokasjon*
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Lagerlokasjonsstatus* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="set-up-warehouse-location-status"></a>Definere status for lagerlokasjon
 
@@ -55,7 +52,7 @@ Før du begynner å jobbe gjennom scenariet, må du aktivere eksempeldata og kon
 
 #### <a name="use-the-usmf-legal-entity"></a>Bruk den juridiske enheten USMF
 
-For å arbeide deg gjennom dette eksempelscenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom dette eksempelscenariet ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 #### <a name="set-up-location-profiles"></a>Konfigurer lokasjonsprofiler
 

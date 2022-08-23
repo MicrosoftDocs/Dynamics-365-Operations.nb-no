@@ -1,25 +1,25 @@
 ---
 title: Liste over ER-funksjoner i listekategorien
 description: Denne artikkelen inneholder informasjon om listefunksjonene som støttes i elektronisk rapportering (ER).
-author: NickSelin
+author: kfend
 ms.date: 04/01/2020
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b39da482578636d94faaa3117bd40a579f3ae636
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.openlocfilehash: 6c28445f731393857cdb0c75c1244e557b5ff4a4
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869062"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9277700"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Liste over ER-funksjoner i listekategorien
 
@@ -47,6 +47,7 @@ Listefunksjoner for elektronisk rapportering (ER) kan brukes til å trekke ut in
 | [ListOfFields](er-functions-list-listoffields.md)         | Denne funksjonen returnerer en *postliste*-verdi som opprettes basert på strukturen til det angitte argumentet for typen *Opplisting* eller *Container (post)*. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Denne funksjonen returnerer en *Postliste*-verdi som består av bare den første posten i den angitte listen.|
 | [OrderBy](er-functions-list-orderby.md)                   | Denne funksjonen returnerer den angitte listen som en *postliste*-verdi etter at den er sortert i henhold til de angitte argumentene. Disse argumentene kan defineres som uttrykk. |
+| [Gjenta](er-functions-list-repeat.md)                     | Denne funksjonen bygger en post som inneholder feltet som har en verdi som samsvarer med de angitte inndataene. Deretter returneres en ny *postliste* med en post som gjentas et bestemt antall ganger. |
 | [Tilbakefør](er-functions-list-reverse.md)                   | Denne funksjonen returnerer den angitte listen som en *postliste*-verdi i reversert sorteringsrekkefølge. |
 | [Del](er-functions-list-split.md)                       | Denne funksjonen deler den angitte inndatastrengen inn i delstrenger og returnerer resultatet som en ny *Postliste*-verdi. |
 | [SplitList](er-functions-list-splitlist.md)               | Denne funksjonen deler den angitte listen i underlister (eller grupper), der hver inneholder det angitte antallet poster. Deretter returneres resultatet som en ny *postliste*-verdi som består av partiene. |

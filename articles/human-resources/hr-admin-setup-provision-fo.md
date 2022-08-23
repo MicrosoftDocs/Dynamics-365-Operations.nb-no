@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15060d8bdd598476081c22d7280319da3db0cb31
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 2fd8176d16178ecc4ba667e5937f2cec2e0af2c3
+ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178420"
+ms.lasthandoff: 08/03/2022
+ms.locfileid: "9221602"
 ---
 # <a name="provision-human-resources-in-the-finance-and-operations-infrastructure"></a>Klargjøring av Human Resources i infrastrukturen i Finance and Operations
 
@@ -52,8 +52,8 @@ Her vises noen hensyn for valgfrie tilleggsmiljøer:
 - **Integrering** – Konfigurer og test integreringer, som kan inkludere opprinnelige integrasjoner eller egendefinerte integrasjoner, for eksempel integreringer av lønn, søkersporingssystemer eller fordelssystemer og -leverandører.
 - **Opplæring**: Du trenger kanskje et eget miljø som er konfigurert med et sett med opplæringsdata, slik at du kan lære opp de ansatte i bruken av det nye systemet. 
 - **Prosjekt med flere faser** – Du trenger kanskje et tilleggsmiljø for å støtte konfigurasjon, dataoverføring, testing eller andre aktiviteter i en prosjektfase som er planlagt etter den innledende aktiveringen av prosjektet.
-- **Utvikling** – I Finance and Operations-infrastrukturen kan du nå utvide løsningen og utvikle dine egne tilpasninger. Hver utvikler må bruke sitt eget utviklingsmiljø. For mer informasjon kan du se [Distribuere og få tilgang til utviklingsmiljøer](/fin-ops-core/dev-itpro/dev-tools/access-instances).
-- **GOLD** – For nye distribusjoner er det en vanlig praksis å bruke et eget GOLD-miljø som holdes atskilt for konfigurasjon og datamigrering. Dette miljøet kan brukes gjennom implementeringen for å oppdatere andre miljøer. Det vil bli brukt til å opprette det nye produksjonsmiljøet som har basiskonfigurasjonen og dataoverføringen. Du kan ikke distribuere et produksjonsmiljø i Finance and Operations-infrastrukturen før du har fullført klargjøringsprosessen for aktivering. Hvis du vil ha mer informasjon, kan du se [Klargjør for aktivering](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+- **Utvikling** – I Finance and Operations-infrastrukturen kan du nå utvide løsningen og utvikle dine egne tilpasninger. Hver utvikler må bruke sitt eget utviklingsmiljø. For mer informasjon kan du se [Distribuere og få tilgang til utviklingsmiljøer](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- **GOLD** – For nye distribusjoner er det en vanlig praksis å bruke et eget GOLD-miljø som holdes atskilt for konfigurasjon og datamigrering. Dette miljøet kan brukes gjennom implementeringen for å oppdatere andre miljøer. Det vil bli brukt til å opprette det nye produksjonsmiljøet som har basiskonfigurasjonen og dataoverføringen. Du kan ikke distribuere et produksjonsmiljø i Finance and Operations-infrastrukturen før du har fullført klargjøringsprosessen for aktivering. Hvis du vil ha mer informasjon, kan du se [Klargjør for aktivering](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 <!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
 
@@ -66,24 +66,24 @@ Her vises noen hensyn for valgfrie tilleggsmiljøer:
 
 ## <a name="create-an-lcs-project"></a>Opprette et LCS-prosjekt
 
-Hvis du vil bruke LCS til å administrere Human Resources-miljøene dine, må du først opprette et LCS-prosjekt. Hvis du migrerer Human Resources-miljøet til Finance and Operations-infrastrukturen, må du opprette et nytt LCS-prosjekt for økonomi- og driftsapper. For mer informasjon, se [Migrere Human Resources-miljøet](hr-admin-migrate-overview). Hvis du allerede har et LCS-prosjekt for andre økonomi- og driftsapper, kan du aktivere Human Resources-funksjoner i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon, kan du se [Oversikt over funksjonsbehandling](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Hvis du vil bruke LCS til å administrere Human Resources-miljøene dine, må du først opprette et LCS-prosjekt. Hvis du migrerer Human Resources-miljøet til Finance and Operations-infrastrukturen, må du opprette et nytt LCS-prosjekt for økonomi- og driftsapper. Hvis du allerede har et LCS-prosjekt for andre økonomi- og driftsapper, kan du aktivere Human Resources-funksjoner i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Når en ny kunde registrerer seg for Human Resources, inkluderer abonnementet et arbeidsområde for implementeringsprosjekt. Når kunden har aktivert tjenesten, må leieradministratoren logge seg på <https://lcs.dynamics.com> ved å bruke leierkontoen. Prosjektarbeidsområdet opprettes automatisk for organisasjonen. Hvis du vil ha mer informasjon, kan du se [Lifecycle Services (LCS) for kunder med økonomi- og driftsapper](/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs).
+Når en ny kunde registrerer seg for Human Resources, inkluderer abonnementet et arbeidsområde for implementeringsprosjekt. Når kunden har aktivert tjenesten, må leieradministratoren logge seg på <https://lcs.dynamics.com> ved å bruke leierkontoen. Prosjektarbeidsområdet opprettes automatisk for organisasjonen. Hvis du vil ha mer informasjon, kan du se [Lifecycle Services (LCS) for kunder med økonomi- og driftsapper](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > For å sikre en vellykket klargjøring må kontoen du bruker til klargjøring av Human Resources-miljøet, være tilordnet enten rollen **Systemadministrator** eller rollen **Systemtilpasser** i Power Apps-miljøet som er knyttet til Human Resources-miljøet. Hvis du vil ha mer informasjon om tilordning av sikkerhetsroller til brukere i Microsoft Power Platform, kan du se [Konfigurere brukersikkerhet på ressurser](/power-platform/admin/database-security).
 
-Du må fullføre pålastingsprosessen for LCS-prosjekter før du kan begynne å distribuere miljøer. Hvis du vil ha mer informasjon, kan du se [Prosjektinnføring](/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding). Hvis du vil ha mer informasjon om hvordan du bruker LCS, kan du se [Brukerveiledning for Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide).
+Du må fullføre pålastingsprosessen for LCS-prosjekter før du kan begynne å distribuere miljøer. Hvis du vil ha mer informasjon, kan du se [Prosjektinnføring](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). Hvis du vil ha mer informasjon om hvordan du bruker LCS, kan du se [Brukerveiledning for Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## <a name="deploy-human-resources-environments"></a>Distribuer Human Resources-miljøer
 
 Distribusjon av økonomi- og driftsapper, inkludert Human Resources, i skyen krever at du forstår miljøet og abonnementet du distribuerer til, hvem som kan utføre hvilke oppgaver, og hvilke data og tilpasninger du må administrere. Vi anbefaler at du bruker en tjenestekonto i stedet for en navngitt bruker når du distribuerer nye miljøer. Hvis du vil ha mer informasjon om hvordan du distribuerer miljøer i Finance and Operations-infrastrukturen, kan du se [Oversikt over skydistribusjon](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
 
-Hvis du vil distribuere et produksjonsmiljø for Human Resources i Finance and Operations-infrastrukturen, må du fullføre klargjøringsprosessen for aktivering. Hvis du vil ha mer informasjon, kan du se [Klargjør for aktivering](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live). Denne prosessen omfatter abonnementsberegneren i LCS. Hvis du vil ha mer informasjon, kan du se [Abonnementsberegner](/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator).
+Hvis du vil distribuere et produksjonsmiljø for Human Resources i Finance and Operations-infrastrukturen, må du fullføre klargjøringsprosessen for aktivering. Hvis du vil ha mer informasjon, kan du se [Klargjør for aktivering](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). Denne prosessen omfatter abonnementsberegneren i LCS. Hvis du vil ha mer informasjon, kan du se [Abonnementsberegner](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## <a name="integrate-microsoft-power-platform-with-human-resources"></a>Integrer Microsoft Power Platform med Human Resources
 
-Microsoft Power Platform inneholder en pakke med funksjoner for Dynamics 365-apper via Power Platform-administrasjonssenteret. Du kan integrere og utvide bruken av Human Resources-data ved hjelp av Microsoft Power Platform. Hvis du vil ha informasjon om hvordan du integrerer Human Resources med Microsoft Power Platform, kan du se [Microsoft Power Platform-integrering med økonomi- og driftsapper](/fin-ops-core/dev-itpro/power-platform/overview).
+Microsoft Power Platform inneholder en pakke med funksjoner for Dynamics 365-apper via Power Platform-administrasjonssenteret. Du kan integrere og utvide bruken av Human Resources-data ved hjelp av Microsoft Power Platform. Hvis du vil ha informasjon om hvordan du integrerer Human Resources med Microsoft Power Platform, kan du se [Microsoft Power Platform-integrering med økonomi- og driftsapper](../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ## <a name="supported-geographies"></a>Geografier som støttes
 
@@ -96,8 +96,8 @@ Som standard har den globale administratoren som opprettet miljøet, tilgang til
 ## <a name="additional-resources"></a>Tilleggsressurser
 Du kan lære mer om hvordan du bruker og administrerer prosjekter i LCS i Finance and Operations-infrastrukturen ved å bruke følgende ressurser:
 
-- [Ressurser for Lifecycle Services](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Brukerveiledning for Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Ressurser for Lifecycle Services](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Brukerveiledning for Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Oversikt over distribusjon av selvbetjening](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Startsiden for databaseflyttingsoperasjoner](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 

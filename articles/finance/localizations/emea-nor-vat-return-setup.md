@@ -1,7 +1,7 @@
 ---
 title: Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 description: Denne artikkelen forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: f402642fcc9e953df8581275f5c10dd6616dd00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 43808c2d10aadcc47561b05817ef3adb8cebd955
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8908947"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292243"
 ---
 # <a name="prepare-your-environment-to-interoperate-with-id-porten-and-altinn-web-services"></a>Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 

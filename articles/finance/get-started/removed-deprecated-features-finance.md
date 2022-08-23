@@ -2,7 +2,7 @@
 title: Fjernede eller avskrevne funksjoner i Dynamics 365 Finance
 description: Denne artikkelen beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Finance.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ee084e84c052366bdf34fe1a1e697a32e456914b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068930"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219576"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller avskrevne funksjoner i Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > [!NOTE]
 > Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.29
+
+### <a name="stock-transfer-orders-that-have-tax-on-the-transfer-price"></a>Lageroverføringsordrer som har avgift på overføringsprisen
+
+[Lageroverføringsordrer som har avgift på overføringsprisen](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsak til avskrivning/fjerning** | Erstattet av forbedret funksjonalitet, [Lageroverføringsordrer for India](../../finance/localizations/apac-ind-stock-transfer.md)|
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder** | Program |
+| **Distribusjonsalternativ** | Alle |
+| **Status** | Avskrevet: Etter april 2023 vil ikke funksjonen **Lageroverføringsordrer som har avgift på overføringspris** lenger motta kundestøtte med feilrettinger og sikkerhetsreparasjon. Kunder blir bedt om å bruke den forbedrede funksjonaliteten [Lageroverføringsordrer for India](../../finance/localizations/apac-ind-stock-transfer.md). Etter oktober 2023 er ikke funksjonen **Lageroverføringsordrer som har avgift på overføringspris** lenger tilgjengelige, og kunder blir bedt om å flytte til den forbedrede funksjonen. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.26
 

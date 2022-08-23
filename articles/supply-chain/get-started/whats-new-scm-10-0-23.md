@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ded645ebaea1230b68525c247ee91e3893211774
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 1b45cc2ba26f60ab444edca6c513c581e8332a2a
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124536"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219132"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10023-january-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 
@@ -55,7 +55,7 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre det i [fu
 | Lagerstyring | (Russland) Bruk oversettelser til lokalt språk i lands- eller områdespesifikke primære skjemaer i lagerstyring | For russiske lokaliseringer av Supply Chain Management gjør funksjonen det mulig å bruke russiske oversettelser for produkt-/varenavn og måleenheter i følgende russiskspesifikke lagerutskrifter: tellingsliste (INV-3),tellingsliste (INV-5), og tellingsliste (INV-6). |
 | Hovedplanlegging | Azure Machine Learning Service for behovsprognose | Ved hjelp av denne funksjonen kan Azure Machine Learning Service generere etterspørselsprognoser basert på historiske data. Hvis du vil ha mer informasjon, kan du se [Oppsett av behovsprognose](../master-planning/demand-forecasting-setup.md). |
 | Innkjøp og leverandører | Rydd opp i oppdateringshistorikk for bestilling | Ved hjelp av denne funksjonen kan du rydde opp i midlertidige historiske poster i forbindelse med bestillingsoppdateringer. Den legger til en ny knapp kalt **Opprydding av oppdateringshistorikk for innkjøp** i handlingsruten på siden **Alle bestillinger**. Denne funksjonen er aktivert som standard. |
-| Produksjonskontroll | (Forhåndsversjon) Automatisk plukking av lageraktiverte materialer for automatisk posterte plukklister | Med denne funksjonen kan du plukke og løse lagerdimensjoner for automatisk posterte, avledede/etterkalkulerte plukklistejournaler. |
+| Produksjonskontroll | Automatisk plukking av lageraktiverte materialer for automatisk posterte plukklister | Med denne funksjonen kan du plukke og løse lagerdimensjoner for automatisk posterte, avledede/etterkalkulerte plukklistejournaler. |
 | Produksjonskontroll | Valider utløp av råvarer mot dato for planlagt forbruk | Denne funksjonen endrer hvordan utløpsdatoer for partier valideres når du reserverer et parti råvarer som skal brukes under produksjonen. Når denne funksjonen er aktivert, valideres utløpsdatoen for partiet mot den planlagte forbruksdatoen (råvaredatoen), slik den er fastsatt på produksjonsstykklistelinjen eller formellinjen for partiordren. Når denne funksjonen deaktiveres, valideres utløpsdatoen for partiet mot den planlagte leveringsdatoen til produksjons- eller partiordren (som tidligere). |
 | Salg og markedsføring | Rydd opp i salgsoppdateringshistorikk basert på alder | Ved hjelp av denne funksjonen kan du angi maksimal alder for poster som skal beholdes når den periodiske oppgaven **Opprydding av salgsoppdateringshistorikk** kjøres. Eldre poster blir slettet. Dette er nyttig når du angir at oppgaven skal kjøres periodisk, fordi alderen alltid beregnes i forhold til datoen når oppgaven kjøres. Uten denne funksjonen kan du bare angi en bestemt dato for å beholde de eldste postene. Hvis du vil ha mer informasjon, kan du se [Planlegg opprydding i salgshistorikkdata](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Salg og markedsføring | Forbedre ytelsen til rapport om Topp 100-kunder | Denne funksjonen forbedrer ytelsen til **Topp 100**-kunderapporten ved alltid å kjøre rapporten på tvers av alle kunder (som er tiltenkt bruk) i stedet for å tillate egendefinerte spørringer. Når denne funksjonen er aktivert, deaktiveres alle **oppføringer som skal tas med** i dialogboksen **Topp 100**-rapport. |

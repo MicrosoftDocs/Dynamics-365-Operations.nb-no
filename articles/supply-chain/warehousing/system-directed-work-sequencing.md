@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 8dfa7d8e3bdbfd74c6f95d8b79ac1b0698f73bd6
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8849133"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219696"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrt arbeidssekvensiering
 
@@ -44,7 +44,7 @@ Før du kan bruke systemstyrt arbeidssekvensering-funksjonen, må den aktiveres 
 
 ### <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
-For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres i denne artikkelen, må du arbeide på et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF**. Scenariene bruker lager *51* fra demodataene.
+For å arbeide deg gjennom dette scenariet ved å bruke verdiene som presenteres i denne artikkelen, må du arbeide på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF**. Scenariene bruker lager *51* fra demodataene.
 
 > [!IMPORTANT]
 > Før du frigir ordrene til lageret, må du kontrollere at plukklokasjonene har nok beholdning for alle varene på ordrene.

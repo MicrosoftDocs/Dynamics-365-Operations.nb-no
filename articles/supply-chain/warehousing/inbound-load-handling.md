@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 43102cb867243a872a5d1df777d8c4102a48e235
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: c48d240b346acacf2988fbaac69308ee655dced6
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070327"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219510"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -279,7 +279,7 @@ Disse scenarioene krever funksjonen _Flere produktkviteringsposteringer per last
 
 #### <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-For å arbeide deg gjennom disse scenarioene ved å bruke de angitte eksempelpostene og -verdiene må du bruke et system der standard demodata er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom disse scenarioene ved å bruke de angitte eksempelpostene og -verdiene må du bruke et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 #### <a name="add-a-menu-item-for-receiving-load-items-when-a-mobile-device-is-used"></a>Legge til et menyelement for mottak av lastvarer når en mobilenhet brukes
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3a630a7f388e0bbb6fee96e4de753b2380d305c3
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 76aee3a736efa9ed7431d4e5127cd0abaccd659f
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863773"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9218856"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avansert lastplanlegging under en bølge
 
@@ -50,7 +50,7 @@ Før du kan bruke avansert bølgelastplanlegging, må to funksjoner være aktive
 
 ### <a name="make-sample-data-available"></a>Gjøre eksempeldata tilgjengelig
 
-For å arbeide deg gjennom denne demonstrasjonen ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
+For å arbeide deg gjennom denne demonstrasjonen ved å bruke de angitte eksempelpostene og -verdiene som er angitt her, må du være på et system der standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) er installert. Du må også velge den juridiske enheten **USMF** før du begynner.
 
 Du kan også bruke denne demonstrasjonen som en veiledning for å bruke denne funksjonen når du arbeider i et produksjonssystem. I så fall må du imidlertid erstatte dine egne verdier, og det kan hende du mangler noen typer obligatoriske oppføringer som standard demonstrasjonsdata gir.
 

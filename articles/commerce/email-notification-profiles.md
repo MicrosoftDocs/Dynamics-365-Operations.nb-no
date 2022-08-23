@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 109adcc4e8b49c665bd14ecab2b7cc56cebd2291
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: ''
+ms.assetid: ''
+ms.openlocfilehash: db6c46d471e3b54982132df3e4819236833cf4a8
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878492"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292142"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Definer en profil for e-postvarsling
 
@@ -31,17 +31,9 @@ Når du oppretter kanaler, kan du definere en e-postvarslingsprofil. Profilen fo
 
 Hvis du vil ha ytterligere informasjon om e-postkonfigurasjon, kan du se [Konfigurere og sende e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
-## <a name="create-an-email-notification-profile"></a>Opprette en profil for e-postvarsling
 
-Hvis du vil opprette en e-postvarslingsprofil, følger du disse trinnene.
 
-1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Hovedkvarteroppsett \> Handelsprofil for e-postvarsling**.
-1. I handlingsruten klikker du på **Ny**.
-1. I **E-postvarslingsprofil**-feltet angir du et navn for å identifisere profilen.
-1. I **Beskrivelse**-feltet angir du en relevant beskrivelse.
-1. Sett **Aktiv**-bryteren til **Ja**.
-
-### <a name="create-an-email-template"></a>Opprett en e-postmal
+## <a name="create-an-email-template"></a>Opprett en e-postmal
 
 Før en e-postvarslingstype kan aktiveres, må du opprette en e-postmal for organisasjonen i Commerce Headquarters for hver varslingstype du vil støtte. Denne malen definerer e-postemnet, avsenderen, standardspråket og e-postteksten for hvert støttede språk.
 
@@ -63,14 +55,24 @@ Bildet nedenfor viser noen eksempelinnstillinger for e-postmal.
 
 Hvis du vil ha mer informasjon om oppretting av e-postmaler, kan du se [Opprett e-postmaler for transaksjonshendelser](email-templates-transactions.md). 
 
-### <a name="create-an-email-event"></a>Opprette en e-posthendelse
+## <a name="create-an-email-notification-profile"></a>Opprette en profil for e-postvarsling
+
+Hvis du vil opprette en e-postvarslingsprofil headquarters, følger du disse trinnene.
+
+1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Hovedkvarteroppsett \> Handelsprofil for e-postvarsling**.
+1. I handlingsruten velger du **Ny**.
+1. I **E-postvarslingsprofil**-feltet angir du et navn for å identifisere profilen.
+1. I **Beskrivelse**-feltet angir du en relevant beskrivelse.
+1. Sett **Aktiv**-bryteren til **Ja**.
+
+## <a name="add-a-notification-type"></a>Legg til en varslingstype
 
 Hvis du vil opprette en e-posthendelse, følger du disse trinnene.
 
 1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Hovedkvarteroppsett \> Handelsprofil for e-postvarsling**.
-1. Finn og velg ønsket post i listen. 
-1. Velg e-postmalen fra **E-post-ID**-rullegardinlisten.
+1. Velg **Ny** under **Innstillinger for e-postvarsling for detaljhandel**.
 1. Velg aktuell **E-postvarslingstype** fra rullegardinlisten.
+1. Velg e-postmalen du opprettet ovenfor, fra rullegardinlisten **E-post-ID**.
 1. Merk av i **Aktiv**-avmerkingsboksen.
 1. Velg **Lagre** i handlingsruten.
 
@@ -78,14 +80,12 @@ Bildet nedenfor viser noen eksempelinnstillinger for hendelsesvarsling.
 
 ![Innstillinger for hendelsesvarsling.](media/email-notification-profile.png)
 
-> [!NOTE]
-> Den kundeopprettede varslingstypen krever at det implementeres en tilpasning før det kan sendes en e-postvarsling.
 
-### <a name="schedule-a-recurring-email-notification-process-job"></a>Planlegge en gjentakende prosessjobb for e-postvarsling
+## <a name="schedule-a-recurring-email-notification-process-job"></a>Planlegge en gjentakende prosessjobb for e-postvarsling
 
 Hvis du vil sende ut e-postvarslinger, må jobben **Behandle e-postvarsling for detaljistordre** kjøre.
 
-Følg denne fremgangsmåten for å konfigurere jobben **Behandle e-postvarsling for detaljistordre** i Commerce Headquarters hvis du ikke allerede har gjort det.
+Følg denne fremgangsmåten for å sette opp en satsvis jobb i headquarters for sending av transaksjons-e-poster.
 
 1. Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> E-post og varslinger \> Send e-postvarsling**.
 1. Velg **Regelmessighet** i dialogboksen **Behandle e-postvarsling for detaljistordre**.
@@ -94,9 +94,9 @@ Følg denne fremgangsmåten for å konfigurere jobben **Behandle e-postvarsling 
 1. Velg **OK** for å gå tilbake til dialogboksen **Behandle e-postvarsling for detaljistordre**.
 1. Velg **OK** for å fullføre ny jobbkonfigurasjonen.
 
-### <a name="next-steps"></a>Neste trinn
+## <a name="next-steps"></a>Neste trinn
 
-Før du kan sende e-post, må du konfigurere tjenesten for utgående e-post og sette opp en satsvis jobb. Hvis du vil ha mer informasjon, kan du se [Konfigurere og sende e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+Før du kan sende e-poster, må du konfigurere tjenesten for utgående e-post. Hvis du vil ha mer informasjon, kan du se [Konfigurere og sende e-post](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

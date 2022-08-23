@@ -1,24 +1,26 @@
 ---
 title: NO-00003 Betalingsformater for kunde og leverandør
 description: Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er.
-author: epodkolz
+author: EricWangChen
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
-ms.author: epodkolz
+ms.author: wangchen
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 78ff1085a40c65b7ad65d18c79a9f2cf79141481c9a17180a7786923918fc42c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.form:
+- BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup
+- CustInvoiceJournal
+ms.openlocfilehash: 521e23ea944425e43c45f4813c387f099d1f4445
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754151"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292172"
 ---
 # <a name="no-00003-customer-and-vendor-payment-formats"></a>NO-00003 Betalingsformater for kunde og leverandør
 

@@ -1,32 +1,32 @@
 ---
 title: Importere oppdaterte versjoner av ER-konfigurasjoner
 description: Denne artikkelen forklarer hvordan du importerer oppdaterte versjoner av elektroniske rapporteringskonfigurasjoner (ER) fra det globale repositoriet for konfigurasjonstjenesten.
-author: NickSelin
+author: kfend
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 105843
-ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0dac106a592a6a70aae6b245bce74d21c98cad10
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 105843
+ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
+ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
+ms.openlocfilehash: 0eef9c9a112fd58a43f6c3a85163ccf44bea3d61
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9108447"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9292654"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importere oppdaterte versjoner av ER-konfigurasjoner
 
 [!include [banner](../includes/banner.md)]
 
-[Repositorier](general-electronic-reporting.md#Repository) for elektronisk rapportering (ER) brukes til å dele [ER-konfigurasjoner](general-electronic-reporting.md#Configuration). Du kan [importere](download-electronic-reporting-configuration-lcs.md) ER-konfigurasjonene fra forskjellige repositorier til din forekomst av Microsoft Dynamics 365 Finance. Når du importerer ER-konfigurasjoner, [kan konfigurasjonsleverandører](general-electronic-reporting.md#Provider) publisere nye [versjoner](general-electronic-reporting.md#component-versioning) av repositorier, slik at de kan deles.
+[Repositorier](general-electronic-reporting.md#Repository) for elektronisk rapportering (ER) brukes til å dele [ER-konfigurasjoner](general-electronic-reporting.md#Configuration). Du kan [importere](download-electronic-reporting-configuration-lcs.md) ER-konfigurasjonene fra forskjellige repositorier til din forekomst av Microsoft Dynamics 365 Finance. Når du importerer ER-konfigurasjoner, kan [konfigurasjonsleverandører](general-electronic-reporting.md#Provider) publisere nye versjoner av repositorier, slik at de kan deles.
 
 Denne artikkelen forklarer hvordan du importerer oppdaterte versjoner av ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten. Hvis du vil ha mer informasjon, kan du se [Microsoft Dynamics 365 Finance – Regulatory Services, konfigurasjonstjeneste](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f740b68128b90fc7c9ce2f74edc4f3c06f03debd
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9167769"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9220370"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -87,29 +87,23 @@ Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som sta
 
 ### <a name="enable-registering-of-material-consumption"></a>Aktiver registrering av materialforbruk
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Noen produsenter, særlig de i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeidere kan for eksempel bruke en vekt til å veie mengden material som forbrukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere partinumrene som ble brukt til å produsere hvert produkt.
 
 Det finnes to versjoner av denne funksjonen. Den ene støtter bare varer som *ikke er* aktivert slik at den bruker Warehouse Management-prosesser (WMS). Den andre støtter varer som *er* aktivert slik at den bruker WMS. Hvis du vil bruke denne funksjonaliteten, aktiverer du den ene av eller begge følgende funksjoner i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen), avhengig av om du har varer som er aktivert for WMS:
 
 - *Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke lagerstyring)*
-- *(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)*
+- *Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)*
 
 > [!IMPORTANT]
 > Du kan velge å bruke bare ikke-WMS-funksjonen. Hvis du imidlertid bruker WMS, må du aktivere begge funksjonene.
 
 ### <a name="enable-reporting-on-catch-weight-items"></a>Aktiver rapportering for faktisk vekt-varer
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Arbeidere kan bruke grensesnittet for produksjonsutførelse til å rapportere fremdrift for partiordrer for faktisk vekt-varer. Partiordrer opprettes fra formler, som kan defineres slik at de har faktisk vekt-varer som formelvarer, koprodukter og biprodukter. En formel kan også defineres slik at den har formellinjer for ingredienser som er definert for faktisk vekt. Faktisk vekt-varer bruker to måleenheter til å spore lager: faktisk vekt-antall og lagerantall. I næringsmiddelindustrien kan for eksempel kjøtt på boks defineres som en faktisk vekt-vare, der faktisk vekt-antallet brukes til å spore antall bokser og lagerantallet brukes til å spore vekten på boksene.
 
 For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Forhåndsversjon) Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse*
+- *Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse*
 
 ### <a name="enable-the-my-day-dialog"></a>Aktiver dialogboksen Min dag
 

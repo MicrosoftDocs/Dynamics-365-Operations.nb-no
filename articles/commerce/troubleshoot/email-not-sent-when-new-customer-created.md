@@ -2,21 +2,21 @@
 title: Velkomst-e-post sendes ikke når nye kunder opprettes
 description: Denne artikkelen gir feilsøkingsveiledning som kan være til hjelp hvis en velkomst-e-postvarsling ikke sendes når en ny kunde opprettes i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/24/2022
+ms.date: 08/01/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10
-ms.openlocfilehash: 8e95b33d4b8a9af13c613ab89dd33de6b4934694
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5aa7d864555f96194500989e2d7ad200d8892121
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853689"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219411"
 ---
-# <a name="welcome-email-is-not-sent-when-new-customers-are-created"></a>Velkomst-e-post sendes ikke når nye kunder opprettes
+# <a name="welcome-email-isnt-sent-when-new-customers-are-created"></a>Velkomst-e-post sendes ikke når nye kunder opprettes
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,13 +28,15 @@ Når en ny kunde opprettes i Commerce Headquarters, sendes det ikke en velkomst-
 
 ## <a name="resolution"></a>Oppløsning
 
-### <a name="set-the-correct-email-id-value-for-the-customer-created-email-notification-type"></a>Angi riktig verdi for E-post-ID for e-postvarslingstypen Kunden er opprettet
+### <a name="associate-an-email-notification-profile-under-commerce-parameters"></a>Knytt en e-postvarslingsprofil under Commerce-parametere
 
-Følg denne fremgangsmåten for å angi riktig verdi for **E-post-ID** for e-postvarslingstypen **Kunden er opprettet** i Headquarters.
+1. Gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Commerce-parametere \> Generelt** i Commerce Headquarters.
+2. I rullegardinlisten **E-postvarslingsprofil** velger du e-postvarslingsprofilen som inneholder en tildeling mellom kunden som ble opprettet av en varslingstype, og en e-postmal som ble opprettet av kunden.  
 
-1. Gå til **Detaljhandel og handel \> Hovedkvarteroppsett \> Handelsprofil for e-postvarsling**.
-1. Velg profilen for e-postvarsling i den venstre navigasjonsruten.
-1. Angi **NewCust** i feltet **E-post-ID** for e-postvarslingstypen **Kunden er opprettet** under **Varslingsinnstillinger for detaljhandelshendelse**.
+> [!NOTE] 
+> Når du aktiverer kundeopprettede varslinger, mottar kunder som opprettes i alle kanaler i den juridiske enheten, en kundeopprettet e-post. Kundeopprettede varslinger kan for øyeblikket ikke begrenses til én enkelt kanal.
+
+Hvis du vil ha mer informasjon, kan du se [Opprette e-postmaler for transaksjonshendelser](../email-templates-transactions.md). 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3465866df0d766b2300eb4fd1989c034cedbbb22
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: d99a7a7d0261ba0afd19efbb237dff329527723d
+ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9123816"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "9219162"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.20. august 2021)
 
@@ -49,7 +49,7 @@ Denne tabellen viser funksjonsforbedringer i denne versjonen. Hvert av disse gir
 | Modul | Funksjons&nbsp;navn&nbsp; i funksjons&nbsp;behandling | Mer informasjon |
 |---|---|---|
 | Hovedplanlegging | Parallell autorisasjon av justert behovsprognose | Denne funksjonen tillater parallell autorisasjon av justert behovsprognose fra siden **Justert behovsprognose**. Hensikten med denne funksjonen er å øke ytelsen når et høyt antall prognoser godkjennes. Ved autorisasjon kan brukeren angi **Antall tråder** i den autorisasjonsdialogboksen. |
-| Hovedplanlegging | (Forhåndsversjon) Autorisasjon og konsolidering av planlagte masse- og pakkepartiordrer | Med denne funksjonen kan du bruke satsvise jobber til å autorisere og konsolidere planlagte masse- og pakkeordrer. |
+| Hovedplanlegging | Autorisasjon og konsolidering av planlagte masse- og pakkepartiordrer | Med denne funksjonen kan du bruke satsvise jobber til å autorisere og konsolidere planlagte masse- og pakkeordrer. |
 | Produksjonskontroll | Kopier generelle ruter | Denne funksjonen forbedrer kopieringsrutefunksjonen, slik at brukere kan kopiere ruter som ikke er varespesifikke. Det gjør at systemet kan oppdatere all relevant informasjon (for eksempel område, rutegruppe, ressursbehov og ulike tidspunkt) etter at kopieringsrutefunksjonen er brukt til å overskrive en rute som ennå ikke er tilordnet en vare. |
 | Produksjonskontroll | Oppdater relaterte ressursbehov når en ruteoperasjon endres | Denne funksjonen gjør det mulig for systemet å oppdatere de relaterte ressursbehovene etter at en bruker endrer operasjonen for et eksisterende rutetrinn. |
 | Behandling av produktinformasjon | Stykklisterapport før behandling for å forhindre tidsavbrudd | Denne funksjonen fører til at stykklisterapporten blir forhåndsbehandlet. Dette vil unngå tidsavbruddsproblemer når det er en stor databelastning for rapporten. |

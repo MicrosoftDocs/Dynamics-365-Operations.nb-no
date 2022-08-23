@@ -1,26 +1,26 @@
 ---
 title: Mål for elektronisk rapportering (ER)
 description: Denne artikkelen inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
-author: nselin
+author: kfend
 ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
-ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
-ms.author: mrolecki
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: bc8ef4a5299e6daba79702fadd37284f752a54a7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.custom: 97423
+ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
+ms.search.form: DocuType, ERSolutionTable
+ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851084"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9281975"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -118,7 +118,7 @@ Når du konfigurerer filmål for et valgt format, kan du konfigurere dem for hel
 
 [![Konfigurasjonskobling.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Samtidig har du kanskje flere [versjoner](general-electronic-reporting.md#component-versioning) av formatet som er importert til gjeldende Finans-forekomst. Du kan vise dem hvis du velger **Konfigurasjon**-koblingen som tilgjengeliggjøres når du velger **Referanse**-feltet.
+Samtidig har du kanskje flere versjoner av formatet som er importert til gjeldende Finans-forekomst. Du kan vise dem hvis du velger **Konfigurasjon**-koblingen som tilgjengeliggjøres når du velger **Referanse**-feltet.
 
 [![Konfigurasjonsversjoner.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
@@ -180,6 +180,16 @@ PDF-dokumentet som genereres, er begrenset til en maksimumslengde på 300 sider.
 Fra og med Finance **versjon 10.0.9** støttes bare liggende papirretning i PDF-dokumentet som genereres fra Excel-utdata. Fra og med Finance **versjon 10.0.10** kan du [angi papirretningen](#SelectPdfPageOrientation) i PDF-dokumentet som genereres fra Excel-utdata mens du konfigurerer et ER-mål.
 
 Bare de vanlige systemskriftene i Windows-operativsystemet brukes til å konvertere utdata som ikke inneholder innebygde skrifter.
+
+### <a name="resources"></a>Ressurser
+
+Før Finance-versjon 10.0.29, kunne PDF-konvertering bare gjøres utenfor den gjeldende Finance-forekomsten. En generert fil ble sendt ut av Finance til konverteringstjenesten, og tjenesten returnerte deretter det konverterte dokumentet. **I versjon 10.0.29** og nyere, i tillegg til funksjonen **Utgående dokumenter for Konverter elektronisk rapportering fra Microsoft Office-formater til PDF**, kan du aktivere funksjonen **Bruk programressurser til å utføre CBD-dokumentkonvertering fra Word til PDF-format**. Ved hjelp av denne funksjonen kan du konvertere genererte Word-dokumenter til PDF-format lokalt ved å bruke programserverressurser i den nåværende Finance-forekomsten. 
+
+Her er fordelene med lokal PDF-konvertering når funksjonen **Bruk programressurser for å utføre CBD-dokumentkonvertering fra Word til PDF-format**, er aktivert:
+
+- PDF-dokumentet som genereres, er ikke [begrenset](#limitations) til maksimalt antall sider.
+- Word-dokumentet som konverteres, kan inneholde et [stort antall innholdskontroller](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Internett-tilkobling er ikke nødvendig i lokale distribusjoner.
 
 ### <a name="use-the-pdf-conversion-option"></a>Bruke alternativet PDF-konvertering
 

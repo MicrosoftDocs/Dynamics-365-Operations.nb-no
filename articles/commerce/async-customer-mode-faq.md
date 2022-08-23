@@ -1,0 +1,49 @@
+---
+title: Vanlige spørsmål om asynkron kundeopprettingsmodus
+description: Denne artikkelen gir svar på vanlige spørsmål om asynkron kundeopprettingsmodus i Microsoft Dynamics 365 Commerce.
+author: gvrmohanreddy
+ms.date: 08/04/2022
+ms.topic: article
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: gmohanv
+ms.search.validFrom: 2021-12-17
+ms.openlocfilehash: 35c999695ed33c4fc9731a5b8dd4d679cf55fa44
+ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 08/06/2022
+ms.locfileid: "9229876"
+---
+# <a name="asynchronous-customer-creation-mode-faq"></a>Vanlige spørsmål om asynkron kundeopprettingsmodus
+
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+Denne artikkelen gir svar på vanlige spørsmål om asynkron kundeopprettingsmodus (asynk) i Microsoft Dynamics 365 Commerce.
+
+### <a name="why-cant-i-enable-the-enable-editing-customers-in-asynchronous-mode-feature"></a>Hvorfor kan jeg ikke aktivere funksjonen Aktiver redigering av kunder i asynkron modus?
+
+Du må aktivere følgende funksjoner før du aktiverer funksjonen **Aktiver redigering av kunder i asynkron modus**:
+
+- Ytelsesforbedringer for kundeordrer og kundetransaksjoner
+- Aktiver forbedret asynkron kundeopprettelse
+- Aktiver asynkron oppretting for kundeadresser
+
+### <a name="why-do-i-still-see-real-time-service-calls-made-to-commerce-headquarters-after-the-enable-editing-customers-in-asynchronous-mode-feature-is-enabled"></a>Hvorfor ser jeg fremdeles serviceanrop i sanntid som er gjort i Commerce headquarters etter at funksjonen Aktiver redigering av kunder i asynkron modus er aktivert?
+
+Dette problemet oppstår når Commerce Data Exchange-jobber (CDX) ikke har blitt kjørt for å sikre at funksjonsstatusen og andre kanalmetadata er synkronisert med kanalen. Før du prøver scenarioet på nytt, må du kontrollere at følgende CDX-jobber kjøres i Commerce headquarters:
+
+- 1110 (Global konfigurasjon)
+- 1010 (Kunder)
+- 1070 (Kanalkonfigurasjon)
+
+Data som hurtigbufres i Commerce Scale Unit (CSU), gjenspeiles kanskje ikke umiddelbart i Commerce headquarters etter at CDX-jobbene er kjørt.
+
+### <a name="why-doesnt-commerce-headquarters-show-customer-creation-or-updates-from-the-point-of-sale-pos-or-e-commerce-channel"></a>Hvorfor viser ikke Commerce headquarters kundeopprettelse eller oppdateringer fra salgsstedet eller netthandelskanalen?
+
+Kontroller at følgende handlinger er utført i den rekkefølgen de er oppført her.
+
+1. Kjør CDX P-jobben i Commerce headquarters for å sikre at asynkrone kundedata som er lagret i tabellen **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION** og **RETAILASYNCCUSTOMERATTRIBUTEV2**, er tilgjengelige i Commerce headquarters.
+1. Kjør den satsvise jobben **Synkroniser kunder og kanalforespørsler** i Commerce headquarters. Når den satsvise jobben er utført, vil alle poster som er behandlet fra tabellene ovenfor, ha feltet **OnlineOperationCompleted** satt til **1**.

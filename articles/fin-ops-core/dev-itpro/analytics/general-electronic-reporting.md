@@ -1,28 +1,26 @@
 ---
 title: Oversikt over elektronisk rapportering (ER)
 description: Denne artikkelen gir en oversikt over verktøyet for Elektronisk rapportering. Det beskriver nøkkelbegreper, scenarioer som støttes, og formater som er en del av løsningen.
-author: NickSelin
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "58941"
-- intro-internal
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f3853e0c1da0a5abb3f92171370cc4aeabbd829
-ms.sourcegitcommit: 3289478a05040910f356baf1995ce0523d347368
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
+ms.openlocfilehash: e94846dd565abb6de2c1f07532d285e28307e9a2
+ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "9109588"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "9269699"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversikt over elektronisk rapportering (ER)
 
@@ -78,7 +76,7 @@ ER-motoren har følgende funksjoner:
 
 [![ER-hoveddataflyt.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### <a name="components"></a>Komponenter
+### <a name="component"></a>Komponent
 
 ER støtter følgende typer komponenter:
 
@@ -89,32 +87,7 @@ ER støtter følgende typer komponenter:
 
 For mer informasjon, se [Komponenter i elektronisk rapportering](er-overview-components.md).
 
-
-#### <a name="component-versioning"></a>Versjonskontroll av komponenter
-
-Versjonskontroll støttes for ER-komponenter. Følgende arbeidsflyt leveres for å behandle endringer i ER-komponenter:
-
-1. Versjonen som opprinnelig opprettes, er merket som en **Utkast**-versjon. Denne versjonen kan redigeres og er tilgjengelig for testkjøringer.
-2. **Utkast**-versjonen kan konverteres til en **Fullført**-versjon. Denne versjonen kan brukes i lokale rapporteringsprosesser.
-3. **Fullført**-versjonen kan konverteres til en **Delt**-versjon. Denne versjonen er publisert på LCS og kan brukes i globale rapporteringsprosesser.
-4. **Delt**-versjonen kan konverteres til en **Avsluttet**-versjon. Denne versjonen kan deretter slettes.
-
-Versjoner som har statusen **Fullført** eller **Delt**, er tilgjengelig for annen datautveksling. Følgende handlinger kan utføres på en komponent som har disse statusene:
-
-- Komponenten kan serialiseres i XML-format og eksporteres som en fil i XML-format.
-- Komponenten kan serialiseres på nytt fra en XML-fil og importeres til programmet som en ny versjon av en ER-komponent.
-
-#### <a name="component-date-effectivity"></a>Datogyldighet for komponent
-
-ER-komponentversjoner har datogyldighet. Du kan angi **Gyldig fra**-datoen for en ER-komponent for å angi startdatoen som komponenten er gyldig fra for rapporteringsprosesser. Øktdatoen for programmet brukes for å definere om en komponent er gyldig for kjøring. Hvis flere enn én versjon er gyldig for en bestemt dato, brukes den nyeste versjonen for rapporteringsprosessen.
-
-#### <a name="component-access"></a>Komponenttilgang
-
-Tilgang til ER-formatkomponenter avhenger av innstillingen for ISO-kode for land/område. Når denne innstillingen er tom for en valgt versjon av en formatkonfigurasjon, er en formatkomponent tilgjengelig fra et firma ved kjøretid. Når denne innstillingen inneholder ISO-koder for land/område, er en formatkomponent bare tilgjengelig fra firmaene som har en primæradresse som er definert for én av ISO-kodene for land/område for formatkomponenten.
-
-Forskjellige versjoner av en dataformatkomponent kan ha ulike innstillinger for ISO-koder for land/område.
-
-#### <a name="configuration"></a><a name="Configuration"></a>Konfigurasjon
+### <a name="configuration"></a><a name="Configuration"></a>Konfigurasjon
 
 En ER-konfigurasjon ER er hylsteret til for en bestemt ER-komponent. Den komponenten kan være enten en datamodellkomponent eller en formatkomponent. En konfigurasjon kan inneholde forskjellige versjoner av en ER-komponent. Hver konfigurasjon er merket som eid av en bestemt konfigurasjonsleverandør. **Utkast**-versjonen av en komponent i en konfigurasjon kan redigeres når eieren av konfigurasjonen er valgt som en aktive leverandør i ER-innstillingene i programmet.
 
@@ -124,13 +97,13 @@ Formatkonfigurasjonen som opprettes, inneholder en formatkomponent. Datamodellko
 
 En ER-konfigurasjon er delt for firmaer i programmet.
 
-#### <a name="provider"></a><a name="Provider"></a>Leverandør
+### <a name="provider"></a><a name="Provider"></a>Leverandør
 
 ER-leverandør er parts-ID-en som brukes til å angi forfatteren (eier) av hver ER-konfigurasjon. ER lar deg administrere listen over konfigurasjonsleverandører. Formatkonfigurasjoner som leveres for elektroniske dokumenter som en del av Finance and Operations-løsningen, er merket som eid av konfigurasjonsleverandøren **Microsoft**.
 
 Hvis du vil finne ut hvordan du registrerer en ny ER-leverandør, kan du spille inn oppgaveveiledningen **ER Opprette en konfigurasjonsleverandør og merke den som aktiv** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**).
 
-#### <a name="repository"></a><a name="Repository"></a>Repositorium
+### <a name="repository"></a><a name="Repository"></a>Repositorium
 
 Et ER-repositorium lagrer ER-konfigurasjoner. Følgende typer ER-repositorier støttes: 
 
@@ -145,7 +118,7 @@ Et **LCS-delt bibliotek**-repositorium gir tilgang til listen over konfigurasjon
 
 **LCS-prosjekt**-repositoriet gir tilgang til listen over konfigurasjoner for et bestemt LCS-prosjekt (aktivabibliotek for LCS-prosjekt), som ble valgt under registrering av repositoriet. ER lar deg laste opp delte konfigurasjoner fra gjeldende forekomst til et spesifikt **LCS-prosjekt**-repositorium. Du kan også importere konfigurasjoner fra et **LCS-prosjekt**-repositorium til gjeldende forekomst av økonomi- og driftsappene dine.
 
-Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Nødvendig mappe blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende forekomst. 
+Et **Filsystem**-repositorium gir tilgang til listen over konfigurasjonene som er lagret som XML-filer i den bestemte mappen på det lokale filsystemet på maskinen som er vert for AOS-tjenesten. Den nødvendige mappen blir valgt i fasen for registrering av repositoriet. Du kan importere konfigurasjoner fra et **Filsystem**-repositorium til gjeldende forekomst. 
 
 Legg merke til at denne typen repositorium er tilgjengelig i følgende miljøer:
 
@@ -265,6 +238,7 @@ Listen over ER-konfigurasjoner for Finance oppdateres hele tiden. Åpne det [glo
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
+- [Komponenter i elektronisk rapportering](er-overview-components.md)
 - [Opprette konfigurasjoner for elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Administrere livssyklus til konfigurasjoner for elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
 
