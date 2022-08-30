@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a12649cd0604fb6acd58420fdafb5b560fcc10cf
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 36e7082a890ebec3031021a0871cddad91597447
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688239"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336962"
 ---
 # <a name="benefit-statement"></a>Fordelserklæring
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 Rapporten **Fordelserklæring** inneholder en erklæring om fordelene som en ansatt er registrert med i øyeblikket. En ansatt kan få tilgang til rapporten direkte eller av fordelsadministratoren. **Fordelserklæringen** inneholder en liste over den  ansattes innmeldingsfordeler, dekningsalternativer, kostnader og eventuelle avhengige eller mottakere som er registrert. Erklæringen kan skrives ut for én enkelt arbeider eller flere arbeidere.
 

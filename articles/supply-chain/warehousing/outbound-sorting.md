@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 95afa46140de863ecdf61b0ef54e6d9e9ece91d7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ec7bc573329a0f8a37b2fd17dcb998ec161b04e8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897320"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336343"
 ---
 # <a name="outbound-sorting"></a>Utgående sortering
 
@@ -30,7 +30,7 @@ Med denne funksjonaliteten kan du bygge paller fra containere som er pakket gjen
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Aktivere Utgående sortering-funksjonen
 
-Før du kan bruke funksjonen må den være aktivert i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Før du kan bruke funksjonen må den være aktivert for systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Utgående sortering*

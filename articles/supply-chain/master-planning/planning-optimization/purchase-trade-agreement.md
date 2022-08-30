@@ -2,7 +2,7 @@
 title: Hovedplanlegging med forretningsavtaler
 description: Denne artikkelen beskriver hvordan planleggingsoptimalisering kan finne leverandøren og/eller leveringstiden for en planlagt ordre, basert på den beste prisen eller leveringstiden som finnes i kjøpsavtaler.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 29f0f44289e44b21cb304bd1f423d63f9f58f2db
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3797ee584cdb059a97670d532cf7e1a1163cc7ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873760"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335233"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hovedplanlegging med forretningsavtaler
 
@@ -29,12 +29,9 @@ ms.locfileid: "8873760"
 
 Denne artikkelen beskriver hvordan planleggingsoptimalisering kan finne leverandøren og/eller leveringstiden for en planlagt ordre, basert på den beste prisen eller leveringstiden som finnes blant alle kjøpsavtaler som er spesifisert for et gitt produkt.
 
-## <a name="turn-on-the-purchase-trade-agreements-for-planning-optimization-feature"></a>Slå på funksjonen Kjøpsavtaler for planleggingsoptimalisering
+## <a name="turn-the-purchase-trade-agreements-for-planning-optimization-feature-on-or-off"></a>Aktiver eller deaktiver funksjonen Kjøpsavtaler for planleggingsoptimalisering
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
-
-- **Modul:** *Hovedplanlegging*
-- **Funksjonsnavn:** *Kjøpsavtaler for planleggingsoptimalisering*
+For å bruke denne funksjonen må den være aktivert for systemet. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Forretningsavtaler for innkjøp for planleggingsoptimalisering* i arbeidsområdet [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="prepare-your-system-to-evaluate-purchase-trade-agreements-during-master-planning"></a>Gjør systemet ditt klart til å evaluere kjøpsavtaler under hovedplanlegging
 

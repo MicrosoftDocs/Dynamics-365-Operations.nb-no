@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: a82a3b26f2bf7cb546383da047d18c2997569ca5
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: df20f00a639d237bf8446f24a2ad4cbbfcf36615
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065157"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334393"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Oppryddingsjobb for lagerstyringsposter
 
@@ -39,7 +39,7 @@ Hvis negativ fysisk beholdning er tillatt, kan det hende at oppryddingsjobben ik
 Oppryddingsjobben for lagerposter er tilgjengelig i **Lagerstyring \> Periodiske oppgaver \> Rydd opp \> Oppryddingsjobb for lagerstyringsposter**. Bruk standardinnstillingene for jobben til å styre omfanget av og tidsplanen for kjøring av jobben. I tillegg finnes følgende innstillinger:
 
 - **Slett hvis ikke oppdatert på dette antallet dager** – Angi det minste antallet dager som jobben skal settes på vent i før den sletter en beholdningsoppføring som har falt til null i antall. Bruk denne innstillingen for å redusere risikoen for å slette lagerbeholdninger som fortsatt brukes. Hvis du vil at oppryddingen skal skje så snart som mulig, kan du enten angi *0* (null) eller la feltet stå tomt.
-- **Maksimal utførelsestid (i timer)** – Angi den maksimale utførelsestiden for oppryddingsjobben, oppført i timer. Hvis jobben ikke blir fullført før denne tiden går ut, vil den lagre arbeidet som er fullført så langt, og deretter lukke seg. Denne funksjonen er spesielt relevant for implementeringer som er svært viktige for beholdningen. I disse tilfellene bør du planlegge at jobben skal kjøres når systembelastningen er så lav som mulig. Hvis du vil at den partivise jobben fortsatt skal kjøres til den er fullført, angir du *0* (null) eller lar feltet stå tomt. Denne innstillingen er bare tilgjengelig hvis den tilknyttede funksjonen er [aktivert i systemet](#max-execution-time).
+- **Maksimal utførelsestid (i timer)** – Angi den maksimale utførelsestiden for oppryddingsjobben, oppført i timer. Hvis jobben ikke blir fullført før denne tiden går ut, vil den lagre arbeidet som er fullført så langt, og deretter lukke seg. Denne funksjonen er spesielt relevant for implementeringer som er svært viktige for beholdningen. I disse tilfellene bør du planlegge at jobben skal kjøres når systembelastningen er så lav som mulig. Hvis du vil at den partivise jobben fortsatt skal kjøres til den er fullført, angir du *0* (null) eller lar feltet stå tomt. Denne innstillingen er bare tilgjengelig hvis den tilknyttede funksjonen er [aktivert for systemet](#max-execution-time).
 
 Selv om du kan kjøre jobben innenfor vanlig arbeidstid, anbefaler vi at du kjører den utenfor arbeidstiden. På denne måten bidrar du til å forhindre konflikter som kan oppstå hvis en bruker jobber med en post som samtidig ryddes opp.
 

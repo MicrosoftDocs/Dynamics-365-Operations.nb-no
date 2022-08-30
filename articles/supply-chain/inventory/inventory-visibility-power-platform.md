@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: db158e3b6ae76f69149db04096f99d3dc4251146
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a360b8beaad2bf6916c22765131e37f90e40282b
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8895764"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306181"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Bruk Inventory Visibility-appen
 
@@ -70,10 +70,24 @@ Hvis du vil postere en reservasjonsforespørsel, må du angi en verdi i forespø
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lagersammendrag
 
-**Lagersammendrag** er en tilpasset visning for enheten *Sum av lagerbeholdning*. Det gir et lagersammendrag for produkter sammen med alle dimensjoner. Lagersammendragsdataene synkroniseres periodisk fra Lagersynlighet hvert 15. minutt. For å se data på **Lagersammendrag**-fanen må du aktivere *OnHandMostSpecificBackgroundService*-funksjonen på **Funksjonsbehandling**-fanen og velge **Oppdater konfigurasjon**.
+Siden **Lagersammendrag** gir et lagersammendrag for produkter, sammen med alle dimensjoner. Det er en tilpasset visning for enheten *Lagerbeholdningssum*. Lagersammendragsdataene synkroniseres periodisk fra Lagersynlighet.
+
+### <a name="enable-the-inventory-summary-and-set-the-synchronization-frequency"></a>Aktivere lagersammendraget og angi synkroniseringsfrekvensen
+
+For å aktivere siden **Lagersammendraget** og angi synkroniseringsfrekvensen følger du denne fremgangsmåten:
+
+1. Åpne **Konfigurasjon**-siden.
+1. Åpne fanen **Funksjonsbehandling og -innstillinger**.
+1. Sett veksleknappen for **OnHandMostSpecificBackgroundService**-funksjonen til *Ja*.
+1. Når funksjonen er aktivert, blir **tjenestekonfigurasjonsdelen** tilgjengelig og inkluderer en rad for konfigurasjon av funksjonen **OnHandMostSpecificBackgroundService**. Med denne innstillingen kan du velge hvor ofte lagersammendragsdata skal synkroniseres. Bruk **Opp**- og **Ned**-knappene i **Verdi**-kolonnen til å endre tiden mellom synkroniseringene (som kan være så lave som 5 minutter). Velg deretter **Lagre**.
+1. Velg **Oppdater konfigurasjon** for å lagre alle endringene.
+
+![Innstillingen OnHandMostSpecificBackgroundService](media/inventory-visibility-ohms-freq.PNG "Innstillingen OnHandMostSpecificBackgroundService")
 
 > [!NOTE]
 > *OnHandMostSpecificBackgroundService*-funksjonen sporer bare endringer i lagerbeholdning som inntraff etter at du aktiverte funksjonen. Data for produkter som ikke har endret seg siden du aktiverte funksjonen, vil ikke bli synkronisert fra lagertjenestebufferen til Dataverse-miljøet. Hvis **Lagersammendrag**-siden ikke viser all lagerbeholdningsinformasjonen du forventer, kan du gå til **Lagerstyring > Periodiske oppgaver > Integrering av lagersynlighet**, deaktivere den satsvise jobben og aktivere den på nytt. Dette utfører den innledende overføringen, og alle data synkroniseres med enheten *Lagerbeholdningssum* i løpet av de neste 15 minuttene. Hvis du vil bruke denne funksjonen, anbefaler vi at du aktiverer den før du oppretter lagerbeholdningsendringer og aktiverer den satsvise jobben **Integrering av lagersynlighet**.
+
+### <a name="work-with-the-inventory-summary"></a>Arbeid med lagersammendraget
 
 Ved hjelp av det **avanserte filteret** i Dataverse kan du opprette en personlig visning som viser radene som er viktige for deg. Med de avanserte filteralternativene kan du opprette en rekke visninger, fra enkel til kompleks. I tillegg kan du legge til grupperte og nestede betingelser i filtrene. Hvis du vil lære mer om hvordan du bruker det **avanserte filteret**, kan du se [Rediger eller opprett personlige visninger ved hjelp av avanserte rutenettfiltre](/powerapps/user/grid-filters-advanced).
 

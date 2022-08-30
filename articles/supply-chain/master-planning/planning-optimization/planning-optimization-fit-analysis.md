@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: af7f4b09fd624aeda2ff002292e11cf84fd02991
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
+ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262336"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9347296"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -77,10 +77,10 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Låsningshorisont | Dekningsgrupper for vare med låsningshorisont angitt: *\#* | Dette funksjonen venter. For øyeblikket ignoreres låsningshorisontoppsettet når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
 | Låsningshorisont | Hovedplaner med låsningshorisont angitt: *\#* | Dette funksjonen venter. For øyeblikket ignoreres låsningshorisontoppsettet når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
 | Konserninternt | Hovedplaner inkludert planlagt nedstrømsetterspørsel: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Konsernintern planlegging](Intercompany-planning.md). | Støttes |
-| Kanban | Dekningsoppføringer for vare med Kanban for planlagte ordretype *\#* | Dette funksjonen venter. For øyeblikket ignoreres varedekningen som er satt til Kanban, når planleggingsoptimalisering er aktivert. Den Kanban-planlagte ordretypen vil opprette en advarsel under hovedplanleggingen, og planlagte bestillinger vil bli opprettet for å dekke det tilknyttede behovet. | 2023 eller senere |
-| Kanban | Varer med Kanban for standard ordretype: *\#* | For øyeblikket ignoreres en standard ordretype som er satt til Kanban, når planleggingsoptimalisering er aktivert. Den standard Kanban-ordretypen vil opprette en advarsel under hovedplanleggingen, og planlagte bestillinger vil bli opprettet for å dekke det tilknyttede behovet. | 2023 eller senere |
+| Kanban | Dekningsoppføringer for vare med Kanban for planlagte ordretype *\#* | Dette funksjonen venter. For øyeblikket ignoreres varedekningen som er satt til Kanban, når planleggingsoptimalisering er aktivert. Den Kanban-planlagte ordretypen vil opprette en advarsel under hovedplanleggingen, og planlagte bestillinger vil bli opprettet for å dekke det tilknyttede behovet. | Fremtidig bølge |
+| Kanban | Varer med Kanban for standard ordretype: *\#* | For øyeblikket ignoreres en standard ordretype som er satt til Kanban, når planleggingsoptimalisering er aktivert. Den standard Kanban-ordretypen vil opprette en advarsel under hovedplanleggingen, og planlagte bestillinger vil bli opprettet for å dekke det tilknyttede behovet. | Fremtidig bølge |
 | Livssyklustilstand for produkt | Livssyklustilstander for produkt ikke aktive for planlegging: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Ekskludereprodukter som har bestemte livssyklustilstander for produkt](product-lifecycle-state.md). | Støttes |
-| Produksjon | Stykklistelinjer med avrunding eller flere oppsett: *\#* | Dette funksjonen venter. Avrunding og flere oppsett ignoreres for øyeblikket på stykklistelinjer når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. | 2023 eller senere |
+| Produksjon | Stykklistelinjer med avrunding eller flere oppsett: *\#* | Dette funksjonen venter. Avrunding og flere oppsett ignoreres for øyeblikket på stykklistelinjer når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. | Fremtidig bølge|
 | Produksjon | Stykkliste/formellinjer med formelmåling: *\#* | Dette funksjonen venter. Formelmåling ignoreres for øyeblikket på stykklistelinjer og formellinjer når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
 | Produksjon | Stykklister/formellinjer med vareerstatning (plangrupper): *\#* | Dette funksjonen venter. Vareerstatning (plangrupper) ignoreres for øyeblikket på stykklistelinjer og formellinjer når planleggingsoptimalisering er aktivert, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
 | Produksjon | Stykkliste/formellinjer med negativt antall: *\#* | Dette funksjonen venter. Stykkliste- og formellinjer med negativt antall vil bli inkludert med et antall på 0 (null), og det vil bli utstedt en advarsel når planleggingsoptimalisering er aktivert. Oppdater hoveddata for å unngå advarsler. | lanseringsbølge 2 i 2022 |
@@ -93,11 +93,11 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Produksjon | Formelversjoner med ko-/biprodukter: *\#* | Dette funksjonen venter. Koprodukter og biprodukter som er knyttet til formelversjonen, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 |
 | Produksjon | Formelversjoner med avkastning: *\#* | Dette funksjonen venter. Avkastning som er knyttet til formelversjonen, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 |
 | Produksjon | Planer inkludert sekvensering: *\#* | Dette funksjonen venter. For øyeblikket ignoreres sekvensiering når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
-| Produksjon | Frigitte produksjonsordre som ikke er startet, og der planlagt start er tidligere enn i dag: *\#* | Dette funksjonen venter. For øyeblikket vil hovedplanleggingen anta at den blir fullført i dag hvis en produksjonsordre blir forsinket. Dette er relevant for frigitte produksjonsordrer der en leveringsdato er i fortiden, men ennå ikke er fullført. | 2023 eller senere |
+| Produksjon | Frigitte produksjonsordre som ikke er startet, og der planlagt start er tidligere enn i dag: *\#* | Dette funksjonen venter. For øyeblikket vil hovedplanleggingen anta at den blir fullført i dag hvis en produksjonsordre blir forsinket. Dette er relevant for frigitte produksjonsordrer der en leveringsdato er i fortiden, men ennå ikke er fullført. | Fremtidig bølge |
 | Produksjon | Ressurser som er planlagt med begrenset kapasitet: *\#* | Dette funksjonen venter. Ressurser som er planlagt med begrenset kapasitet, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. Planleggingen utføres basert på standard leveringstid fra produktet. | lanseringsbølge 2 i 2022 |
 | Produksjon | Ruter som brukes i planleggingen: *\#* | Dette funksjonen støttes. | Støttes |
-| Produksjon | Salgslinjereservasjon ved hjelp av nedbryting: *\#* | Salgslinjereservasjon som bruker nedbryting, støttes ikke når planleggingsoptimalisering er aktivert. | 2023 eller senere |
-| Produksjon | Planlegging med nedbryting av produksjonsordre: *\#* | Planlegging som bruker nedbryting av produksjonsordrer, støttes ikke når planleggingsoptimalisering er aktivert. Produksjonsordrer kan planlegges enkeltvis. | 2023 eller senere |
+| Produksjon | Salgslinjereservasjon ved hjelp av nedbryting: *\#* | Salgslinjereservasjon som bruker nedbryting, støttes ikke når planleggingsoptimalisering er aktivert. | Fremtidig bølge |
+| Produksjon | Planlegging med nedbryting av produksjonsordre: *\#* | Planlegging som bruker nedbryting av produksjonsordrer, støttes ikke når planleggingsoptimalisering er aktivert. Produksjonsordrer kan planlegges enkeltvis. | Fremtidig bølge |
 | Tilbudsforespørsler | Hovedplaner med tilbudsforespørsler aktivert: *\#* | Dette funksjonen venter. Tilbudsforespørsler vurderes for øyeblikket ikke som behov når planleggingsoptimalisering aktiveres. De vil ignoreres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
 | Rekvisisjoner | Hovedplaner med rekvisisjoner aktivert: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Innkjøpsrekvisisjoner](purchase-requisitions.md). | Støttes |
 | Sikkerhetsmarginer | Dekningsgrupper med sikkerhetsmargin: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). | Støttes |

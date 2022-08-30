@@ -2,7 +2,7 @@
 title: Konfigurere grensesnittet for produksjonsutførelse
 description: Denne artikkelen beskriver hvordan du oppretter en eller flere konfigurasjoner for grensesnittet for produksjonsutførelse. Når du åpner grensesnittet for produksjonsutførelse, laster det automatisk inn et valgt konfigurasjons- og jobbfilter som gjelder spesielt for nettleseren og enheten. I konfigurasjonen angir du policyer som må gjelde for et bestemt forbruk.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2a77924e6133158d538a3eb8365def92c9354b0e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220370"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336193"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -35,7 +35,7 @@ Denne artikkelen beskriver de ulike alternativene for konfigurasjon av et grense
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Aktiver grensesnittet for produksjonsutførelse og de relaterte valgfrie funksjonene
 
-Selve grensesnittet for produksjonsutførelse, pluss flere av de valgfrie innstillingene som beskrives i denne artikkelen, må aktiveres i systemet før du kan bruke dem. Bruk siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere noen av eller alle funksjonene som er beskrevet under følgende underavsnitt.
+Selve grensesnittet for produksjonsutførelse, pluss flere av de valgfrie innstillingene som beskrives i denne artikkelen, må aktiveres for systemet før du kan bruke dem. Bruk siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere noen av eller alle funksjonene som er beskrevet under følgende underavsnitt.
 
 ### <a name="the-production-floor-execution-interface"></a>Grensesnittet for produksjonsutførelse
 
@@ -63,29 +63,32 @@ Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som sta
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse
 
-Denne funksjonen legger til en fane for aktivastyring i grensesnittet for produksjonsutførelse. Arbeidere kan bruke denne fanen til å velge et aktivum som er koblet til en maskinressurs som er innenfor det valgte filteret for jobblisten. Arbeideren kan vise statusen og tilstanden til det valgte maskinaktivumet fra tellerverdier for opptil fire valgte tellere. Hvis du vil bruke denne funksjonen, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Denne funksjonen legger til en fane for aktivastyring i grensesnittet for produksjonsutførelse. Arbeidere kan bruke denne fanen til å velge et aktivum som er koblet til en maskinressurs som er innenfor det valgte filteret for jobblisten. Arbeideren kan vise statusen og tilstanden til det valgte maskinaktivumet fra tellerverdier for opptil fire valgte tellere.
 
-- *Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse*<br>(Denne funksjonen er aktivert som standard fra og med Supply Chain Management versjon 10.0.25.)
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-job-search"></a>Aktivere jobbsøk
+### <a name="job-search"></a>Jobbsøk
 
-Ved hjelp av denne funksjonen kan du legge til et søkefelt i jobblisten. Arbeidere kan finne en bestemt jobb ved å angi jobb-IDen eller finne alle jobber for en bestemt ordre ved å angi ordre-IDen. Arbeidere kan angi IDen ved å bruke et tastatur eller ved å skanne en strekkode. Hvis du vil bruke den, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ved hjelp av denne funksjonen kan du legge til et søkefelt i jobblisten. Arbeidere kan finne en bestemt jobb ved å angi jobb-IDen eller finne alle jobber for en bestemt ordre ved å angi ordre-IDen. Arbeidere kan angi IDen ved å bruke et tastatur eller ved å skanne en strekkode.
 
-- *Jobbsøk for grensesnittet for produksjonsutførelse*<br>(Denne funksjonen er aktivert som standard fra og med Supply Chain Management versjon 10.0.25.)
+Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Jobbsøk for grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-reporting-on-co-products-and-by-products"></a>Aktivere rapportering på koprodukter og biprodukter
+### <a name="report-on-co-products-and-by-products"></a>Rapport om koprodukter og biprodukter
 
-Denne funksjonen gjør det enkelt for ansatte å bruke grensesnittet for produksjonsgulvutførelse til å rapportere fremdrift for partiordrer. Denne rapporten inkluderer rapportering på koprodukter og biprodukter. For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Denne funksjonen gjør det enkelt for ansatte å bruke grensesnittet for produksjonsgulvutførelse til å rapportere fremdrift for partiordrer. Denne rapporten inkluderer rapportering på koprodukter og biprodukter.
 
-- *Rapport om ko- og biprodukter fra grensesnittet for produksjonsutførelse*
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.29 er funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Rapport om ko- og biprodukter fra grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-the-display-of-full-serial-batch-and-license-plate-numbers"></a>Aktivere visningen av fullstendige serie-, parti- og skiltnumre
+### <a name="display-full-serial-batch-and-license-plate-numbers"></a>Vis fullstendige serie-, parti- og skiltnumre
 
 Denne funksjonen gir en forbedret erfaring for visning av lister over serie-, parti- og skiltnumre i grensesnittet for produksjonsutførelse. Visningen endres fra en kortvisning som viser et begrenset antall tegn, til en listevisning som gir nok plass til å vise de fullstendige verdiene. Listen gir også muligheten til å søke etter bestemte numre.
 
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.25 er funksjonen aktivert som standard. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en versjon eldre enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Vis fullstendige serie-, parti- og skiltnumre i grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+
 Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Vis fullstendige serie-, parti- og skiltnumre i grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-registering-of-material-consumption"></a>Aktiver registrering av materialforbruk
+### <a name="register-material-consumption"></a>Registrer materialforbruk
 
 Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Noen produsenter, særlig de i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeidere kan for eksempel bruke en vekt til å veie mengden material som forbrukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere partinumrene som ble brukt til å produsere hvert produkt.
 
@@ -97,7 +100,7 @@ Det finnes to versjoner av denne funksjonen. Den ene støtter bare varer som *ik
 > [!IMPORTANT]
 > Du kan velge å bruke bare ikke-WMS-funksjonen. Hvis du imidlertid bruker WMS, må du aktivere begge funksjonene.
 
-### <a name="enable-reporting-on-catch-weight-items"></a>Aktiver rapportering for faktisk vekt-varer
+### <a name="report-on-catch-weight-items"></a>Rapport om faktisk vekt-varer
 
 Arbeidere kan bruke grensesnittet for produksjonsutførelse til å rapportere fremdrift for partiordrer for faktisk vekt-varer. Partiordrer opprettes fra formler, som kan defineres slik at de har faktisk vekt-varer som formelvarer, koprodukter og biprodukter. En formel kan også defineres slik at den har formellinjer for ingredienser som er definert for faktisk vekt. Faktisk vekt-varer bruker to måleenheter til å spore lager: faktisk vekt-antall og lagerantall. I næringsmiddelindustrien kan for eksempel kjøtt på boks defineres som en faktisk vekt-vare, der faktisk vekt-antallet brukes til å spore antall bokser og lagerantallet brukes til å spore vekten på boksene.
 
@@ -105,15 +108,13 @@ For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Fun
 
 - *Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse*
 
-### <a name="enable-the-my-day-dialog"></a>Aktiver dialogboksen Min dag
+### <a name="the-my-day-dialog"></a>Dialogboksen Min dag
 
 Dialogboksen **Min dag** gir arbeidere en oversikt over de daglige registreringene og gjeldende saldoer for betalt tid, betalt overtid, fravær og betalt fravær.
 
-For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.29 er funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Visningen Min dag for grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- *Visningen Min dag for grensesnittet for produksjonsutførelse*
-
-### <a name="enable-teams"></a>Aktiver Teams
+### <a name="teams"></a>Team
 
 Når flere arbeidere er tildelt samme produksjonsjobb, kan de opprette en gruppe. Gruppen kan nominere én arbeider som leder. De gjenværende arbeiderne blir deretter automatisk assistenter til lederen. For gruppen som opprettes, må bare lederen registrere jobbstatus. Tidsposter gjelder alle gruppemedlemmer.
 
@@ -121,7 +122,7 @@ For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Fun
 
 - *Produksjonsteam i grensesnittet for produksjonsutførelse*
 
-### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>Aktiver tilleggskonfigurasjon i grensesnittet for produksjonsutførelse
+### <a name="additional-configuration-in-the-production-floor-execution-interface"></a>Tilleggskonfigurasjon i grensesnittet for produksjonsutførelse
 
 Denne funksjonen legger til innstillinger for følgende funksjonalitet på siden **Konfigurer produksjonsgulvutførelse**:
 
@@ -136,7 +137,6 @@ Informasjon om hvordan du bruker innstillingene, finner du senere i denne artikk
 For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Tilleggskonfigurasjon i grensesnittet for produksjonsutførelse*
-
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeide med grensesnittet for produksjonsutførelse
 

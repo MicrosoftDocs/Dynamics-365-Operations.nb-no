@@ -2,7 +2,7 @@
 title: Oversikt over behandling av teknisk endring (inneholder video)
 description: Denne artikkelen gir en oversikt over behandling av teknisk endring, som hjelper deg med å planlegge og administrere produktversjonering og administrere produktlivssykluser og tekniske endringer.
 author: t-benebo
-ms.date: 01/11/2022
+ms.date: 08/09/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3a27548fff9728c74814fb92438da1d0c17b5e2b
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067400"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334873"
 ---
 # <a name="engineering-change-management-overview"></a>Oversikt over behandling av teknisk endring
 
@@ -76,16 +76,16 @@ Deretter aktiverer du konfigurasjonsnøklene ved å følge disse trinnene. Disse
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Aktivere ekstra funksjoner for behandling av teknisk endring for systemet
 
-Når du har aktivert de grunnleggende funksjonene for teknisk endringsbehandlingog aktivert konfigurasjonsnøklene, blir flere tilleggs- og valgfrie funksjoner for teknisk endringsbehandling lagt til i funksjonsadministrasjon. Hver av disse funksjonene er oppført under modulen **Styring av teknisk endring**. Tabellen nedenfor beskriver hver valgfrie funksjon, og inneholder koblinger til mer informasjon. I Supply Chain Management versjon 10.0.25 er alle disse funksjonene aktivert som standard, men du kan likevel velge å deaktivere dem.
+Når du har aktivert de grunnleggende funksjonene for teknisk endringsbehandlingog aktivert konfigurasjonsnøklene, blir flere tilleggs- og valgfrie funksjoner for teknisk endringsbehandling lagt til i funksjonsadministrasjon. Hver av disse funksjonene er oppført under modulen **Styring av teknisk endring**. Tabellen nedenfor beskriver hver valgfrie funksjon, og inneholder koblinger til mer informasjon.
 
 | Funksjonsnavn i funksjonsbehandling | Beskrivelse | Funksjonstilstand |
 |---|---|---|
-| Aktiver endringsstyring på eksisterende produkter | <p>Ved hjelp av denne funksjonen kan du konvertere eksisterende produkter til tekniske produkter slik at du kan begynne å administrere dem ved å bruke teknisk endringsbehandling.</p><p>Hvis du vil ha mer informasjon, kan du se [Aktiver endringsstyring på eksisterende produkter](change-management-existing-products.md).</p> |
-| Tekniske varslinger for produksjon | <p>Når et produkt endres i ingeniørvirksomhet, kan det være viktig å varsle produksjonen om disse endringene. På den måten kan produksjonsarbeidere gjøre noe, for eksempel erstatning av komponent, stykkliste eller ruteerstatning. Ved hjelp av denne funksjonen kan du varsle produksjon om endringer i produkter som produseres.</p><p>Hvis du vil ha mer informasjon, kan du se [Behandle endringer i tekniske produkter](engineering-change-management.md).</p> |
-| Forbedret attributtarv for Styring av teknisk endring | <p>Denne funksjonen forenkler administrasjon av attributter for ferdige varer eller midlertidige varer. Når denne funksjonen er aktivert, er det enklere å identifisere alle attributtene som tilhører en vare, og du kan velge attributtene som skal overføres fra denne varen til den overordnede varen. Denne funksjonen er nyttig hvis for eksempel én komponent av en ferdig vare er skjør, giftig eller brannfarlig, fordi du enkelt kan identifisere det skjøre, giftige eller brannfarlige attributtet og overføre det til ferdigvaren.</p><p>Hvis du vil ha mer informasjon, kan du se [Tekniske attributter og søk i tekniske attributter](engineering-attributes-and-search.md).</p> |
-| Produktklargjøringskontroller | <p>Med denne funksjonen kan du sette opp beredskapskontroller for standardprodukter (ikke-tekniske). Bruk produktberedskapskontroller for å sikre at hvert produkt er fullstendig definert, og at alle de nødvendige policyene konfigureres før produktet gjøres tilgjengelig og brukes i transaksjoner. Hvis du deaktiverer denne funksjonen etter at den er brukt en stund, vil alle eksisterende beredskapskontroller for standardprodukter bli slettet.</p><p>Hvis du vil ha mer informasjon, kan du se [Produktklargjøring](product-readiness.md).</p> |
-| Administrer endringer i formler og ingredienser | <p>Ved hjelp av denne funksjonen kan du spore endringer i formelingredienser, koprodukter og biprodukter.</p><p>Hvis du vil ha mer informasjon, kan du se [Behandle endringer i formler og ingrediensene](manage-formula-changes.md).</p> |
-| Variantgenerering for tekniske produkter | <p>Ved hjelp av denne funksjonen kan du generere varianter for tekniske produkter basert på tilgjengelige dimensjonsverdier.</p><p>Hvis du vil ha mer informasjon, kan du se [Generere varianter for tekniske produkter](engineering-variants.md).</p> |
+| Aktiver endringsstyring på eksisterende produkter | <p>Ved hjelp av denne funksjonen kan du konvertere eksisterende produkter til tekniske produkter slik at du kan begynne å administrere dem ved å bruke teknisk endringsbehandling.</p><p>Hvis du vil ha mer informasjon, kan du se [Aktiver endringsstyring på eksisterende produkter](change-management-existing-products.md).</p> | Aktivert som standard fra og med versjon 10.0.25. |
+| Tekniske varslinger for produksjon | <p>Når et produkt endres i ingeniørvirksomhet, kan det være viktig å varsle produksjonen om disse endringene. På den måten kan produksjonsarbeidere gjøre noe, for eksempel erstatning av komponent, stykkliste eller ruteerstatning. Ved hjelp av denne funksjonen kan du varsle produksjon om endringer i produkter som produseres.</p><p>Hvis du vil ha mer informasjon, kan du se [Behandle endringer i tekniske produkter](engineering-change-management.md).</p> |  Aktivert som standard fra og med versjon 10.0.25. |
+| Forbedret attributtarv for Styring av teknisk endring | <p>Denne funksjonen forenkler administrasjon av attributter for ferdige varer eller midlertidige varer. Når denne funksjonen er aktivert, er det enklere å identifisere alle attributtene som tilhører en vare, og du kan velge attributtene som skal overføres fra denne varen til den overordnede varen. Denne funksjonen er nyttig hvis for eksempel én komponent av en ferdig vare er skjør, giftig eller brannfarlig, fordi du enkelt kan identifisere det skjøre, giftige eller brannfarlige attributtet og overføre det til ferdigvaren.</p><p>Hvis du vil ha mer informasjon, kan du se [Tekniske attributter og søk i tekniske attributter](engineering-attributes-and-search.md).</p> |  Aktivert som standard fra og med versjon 10.0.25. |
+| Produktklargjøringskontroller | <p>Med denne funksjonen kan du sette opp beredskapskontroller for standardprodukter (ikke-tekniske). Bruk produktberedskapskontroller for å sikre at hvert produkt er fullstendig definert, og at alle de nødvendige policyene konfigureres før produktet gjøres tilgjengelig og brukes i transaksjoner. Hvis du deaktiverer denne funksjonen etter at den er brukt en stund, vil alle eksisterende beredskapskontroller for standardprodukter bli slettet.</p><p>Hvis du vil ha mer informasjon, kan du se [Produktklargjøring](product-readiness.md).</p> |  Aktivert som standard fra og med versjon 10.0.25. |
+| Administrer endringer i formler og ingredienser | <p>Ved hjelp av denne funksjonen kan du spore endringer i formelingredienser, koprodukter og biprodukter.</p><p>Hvis du vil ha mer informasjon, kan du se [Behandle endringer i formler og ingrediensene](manage-formula-changes.md).</p> |  Aktivert som standard fra og med versjon 10.0.25. |
+| Variantgenerering for tekniske produkter | <p>Ved hjelp av denne funksjonen kan du generere varianter for tekniske produkter basert på tilgjengelige dimensjonsverdier.</p><p>Hvis du vil ha mer informasjon, kan du se [Generere varianter for tekniske produkter](engineering-variants.md).</p> |  Aktivert som standard fra og med versjon 10.0.25. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

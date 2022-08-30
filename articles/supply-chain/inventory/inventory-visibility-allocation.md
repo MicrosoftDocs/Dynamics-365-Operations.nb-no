@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-05-13
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: ccc3a8c4b3d0649397b1d1f9139f7feebf39b02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f79497a24a5b4dd501bb0d13d9eaca7e98672533
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8852512"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306122"
 ---
 # <a name="inventory-visibility-inventory-allocation"></a>Lagertildeling for lagersynlighet
 
@@ -63,12 +63,11 @@ Lagertildelingsfunksjonen består av følgende komponenter:
 - Den forhåndsdefinerte, tildelingsrelaterte datakilden, fysiske mål og beregnede mål.
 - Tilpassbare tildelingsgrupper som har maksimalt åtte nivåer.
 - Et sett med fordelingsapplikasjonsgrensesnitt (APIer):
-
-    - tildel
-    - tildel på nytt
-    - ikke-tilordnet
-    - forbruk
-    - spørring
+  - tildel
+  - tildel på nytt
+  - ikke-tilordnet
+  - forbruk
+  - spørring
 
 Prosessen med å konfigurere fordelingsfunksjonen har to trinn:
 
@@ -84,23 +83,26 @@ Datakilden kalles `@iv`.
 Her er de første fysiske målene:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Her er de første beregnede målene:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### <a name="add-other-physical-measures-to-the-available-to-allocate-calculated-measure"></a>Legge til andre fysiske mål i det beregnede målet som er tilgjengelig for tildeling
 
 Hvis du vil bruke tildeling, må du definere det beregnede målet som er tilgjengelig for tildeling (`@iv.@available_to_allocate`). Du har for eksempel `fno`-datakilden og `onordered`-målet, `pos`-datakilden og `inbound`-målet, og du vil gjøre tildeling på lager for summen `fno.onordered` og `pos.inbound`. I dette tilfellet skal `@iv.@available_to_allocate` inneholde `pos.inbound` og `fno.onordered` i formelen. Her er et eksempel:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
+
+> [!NOTE]
+> Datakilden `@iv` er en forhåndsdefinert datakilde, og de fysiske målene som er definert i `@iv` med prefiks `@`, er forhåndsdefinerte mål. Disse målene er en forhåndsdefinert konfigurasjon for fordelingsfunksjonen, så ikke endre eller slett dem, ellers vil du sannsynligvis oppleve uventede feil når du bruker fordelingsfunksjonen.
+>
+> Du kan legge til nye fysiske mål i det forhåndsdefinerte beregnede målet `@iv.@available_to_allocate`, men du må ikke endre navnet.
 
 ### <a name="change-the-allocation-group-name"></a>Endre navnet på fordelingsgruppen
 
@@ -136,7 +138,7 @@ Kall API for `Allocate` for å tildele et produkt som har bestemte dimensjoner. 
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -157,7 +159,7 @@ Du vil for eksempel tildele et antall på 10 for produktet *Sykkel*, område *1*
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -192,7 +194,7 @@ Bruk API til `Reallocate` for å flytte noe tildelt antall til en annen gruppeko
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -218,7 +220,7 @@ Du kan for eksempel flytte to sykler som har dimensjonene \[område=1, lokasjon=
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -242,7 +244,7 @@ Bruk API for `Consume` til å postere forbruksantallet mot fordeling. Du kan for
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -280,7 +282,7 @@ Tre sykler blir solgt, og de tas fra tildelingspuljen. For å registrere dette t
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -326,7 +328,7 @@ Når du vil bruke et antall på 3 og reservere dette antallet direkte, kan du gj
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"

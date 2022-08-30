@@ -2,7 +2,7 @@
 title: Lagerblokkering
 description: Denne artikkelen inneholder en oversikt over lagerblokkering, som er en del av kvalitetsinspeksjonsprosessen i Supply Chain Management. Du kan bruke lagerblokkering til å forhindre at varer behandles eller forbrukes.
 author: yufeihuang
-ms.date: 03/02/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a16c41b56b30098945a6fbdb02577624b6e173
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 83b5417dc24af85f09e6713f2b12fdc358f61d54
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857815"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334693"
 ---
 # <a name="inventory-blocking"></a>Lagerblokkering
 
@@ -96,11 +96,11 @@ Når **Reserver bestilte varer** er deaktivert, kan ikke de forventede mottakene
 
 Legg merke til forskjellen i transaksjonsstatus og dimensjoner mellom de to tilfellene. Av denne grunnen anbefales det at du aktiverer alternativet **Reserver bestilte varer**.
 
-### <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory-feature"></a>Funksjonen Deaktiver forventede mottak fra kvalitetsordrer med utvalg fra blokkert beholdning
+## <a name="disable-expected-receipts-from-quality-orders-that-sample-blocked-inventory"></a>Deaktiver forventede mottak fra kvalitetsordrer som eksempler blokkert beholdning
 
 For å forenkle lagertransaksjonene i tilfeller der kvalitetsordrer med utvalg fra beholdning som er blokkert på grunn av beholdningsstatus, har systemet en funksjon som deaktiverer forventede mottak fra slike kvalitetsordrer. Siden det forventede mottaket blokkeres øyeblikkelig av blokkering av beholdningsstatus, reduseres ikke lagerbeholdning på grunn av denne endringen.
 
-Denne funksjonen deaktivert som standard. Administratorer kan aktivere eller deaktivere den ved å søke etter funksjonen *Deaktiver forventede mottak fra kvalitetsordrer med utvalg fra blokkert beholdning* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.29 er funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Deaktiver forventede mottak fra kvalitetsordrer med utvalg fra blokkert beholdning* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

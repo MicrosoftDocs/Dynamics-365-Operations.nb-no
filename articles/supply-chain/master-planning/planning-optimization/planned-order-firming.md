@@ -2,7 +2,7 @@
 title: Autoriser planlagte ordrer
 description: Denne artikkelen beskriver hvordan du autoriserer planlagte ordrer. Når planlagte bestillinger autoriseres, blir de faktiske bestillinger, overføringsordrer eller produksjonsordrer.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24b5c6cb7e97924ebace8f7131a87e9bffea22e0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857525"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335353"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -37,19 +37,21 @@ De fleste planlagte bestillingsfunksjoner er tilgjengelige i alle standardinstal
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallellisert autorisering av planlagte bestillinger
 
-Parallell autorisering gjør det raskere å autorisere prosessen ved å parallellisere den over flere tråder. Denne fremgangsmåten kan være nyttig når mange planlagte bestillinger autoriseres. Du må aktivere funksjonen *Parallell autorisering av planlagte bestillinger* for systemet for å kunne bruke denne funksjonaliteten. Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan du aktivere eller deaktivere denne funksjonaliteten ved å gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søke etter funksjonen *Parallell autorisering av planlagte bestillinger*.
+Parallell autorisering gjør det raskere å autorisere prosessen ved å parallellisere den over flere tråder. Denne fremgangsmåten kan være nyttig når mange planlagte bestillinger autoriseres. Du må aktivere funksjonen *Parallell autorisering av planlagte bestillinger* for systemet for å kunne bruke denne funksjonaliteten. 
 
-### <a name="enable-planned-order-firming-with-filtering"></a>Aktivere autorisering av planlagt bestilling med filtrering
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.25, kan du aktivere eller deaktivere denne funksjonaliteten ved å gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søke etter funksjonen *Parallell autorisering av planlagte bestillinger*.
+
+### <a name="turn-planned-order-firming-with-filtering-on-or-off"></a>Aktiver eller deaktiver autorisering av planlagt bestilling med filtrering
 
 Med autorisering av planlagt bestilling med filtrering kan du definere logiske kriterier for å velge hvilke planlagte bestillinger som skal autoriseres. Du kan også forhåndsvise hvilke planlagte bestillinger som er valgt, kjøre prosessen i bakgrunnen og/eller planlegge det som en satsvis jobb.
 
-Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Autorisering av planlagt bestilling med filtrering* i arbeidsområdet [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.25 er funksjonen aktivert som standard. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Autorisering av planlagt bestilling med filtrering* i arbeidsområdet [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### <a name="enable-auto-firming-for-planning-optimization"></a>Aktivere automatisk autorisasjon for planleggingsoptimalisering
+### <a name="turn-auto-firming-for-planning-optimization-on-or-off"></a>Aktiver eller deaktiver automatisk autorisasjon for planleggingsoptimalisering
 
 Automatisk autorisering gjør det mulig å autorisere planlagte bestillinger som en del av hovedplanlegging-prosessen under horisonten for autorisering. Automatisk autorisering støttes alltid for planleggingsmotoren som er innebygd i Supply Chain Management. Hvis du også vil bruke det med planleggingsoptimalisering, må du aktivere funksjonen.
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, kan du gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Automatisk autorisasjon med planleggingsoptimalisering*. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan du aktivere eller deaktivere denne funksjonaliteten ved å gå til [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og søke etter funksjonen *Automatisk autorisasjon for Planleggingsoptimalisering*.
 
 ## <a name="manually-firm-planned-orders"></a>Autorisere planlagte ordrer manuelt
 
@@ -67,8 +69,8 @@ Hvis du vil autorisere planlagte bestillinger manuelt, finner du og velger de pl
 
     - **Oppdater merking** – Velg lagermerkingspolicyen som skal brukes under autorisering av planlagte bestillinger.
     - **Avbryt autorisasjon ved feil** – Sett dette alternativet til *Ja* for å stoppe autorisingen av alle valgte planlagte ordrer hvis det oppstår en feil på en av dem. Du må velge *Nei* hvis alternativet **Parallelliser autorisasjon** er satt til *Ja*.
-    - **Parallelliser autorisasjon** – Dette alternativet er bare tilgjengelig hvis [*Parallell autorisering av planlagte bestillinger*-funksjonen](#enable-features) er aktivert i systemet, og hvis du har valgt to eller flere planlagte bestillinger for autorisasjon. Sett den til *Ja* for å kjøre autoriseringsprosessen parallelt. Parallell autorisering kan hjelpe deg med å forbedre ytelsen.
-    - **Antall tråder** – Dette alternativet er bare tilgjengelig hvis [*Parallell autorisering av planlagte bestillinger*-funksjonen](#enable-features) er aktivert i systemet, og hvis du har satt alternativet **Parallelliser autorisasjon** til *Ja*. Angi antallet tråder som skal brukes til å parallellisere autoriseringsprosessen. Hvis du vil ha informasjon om hvordan du bruker dette alternativet i hovedplanlegging, kan du se [Forbedre ytelsen til hovedplanlegging](../master-planning-performance.md#number-of-threads).
+    - **Parallelliser autorisasjon** – Dette alternativet er bare tilgjengelig hvis [*Parallell autorisering av planlagte bestillinger*-funksjonen](#enable-features) er aktivert for systemet, og hvis du har valgt to eller flere planlagte bestillinger for autorisasjon. Sett den til *Ja* for å kjøre autoriseringsprosessen parallelt. Parallell autorisering kan hjelpe deg med å forbedre ytelsen.
+    - **Antall tråder** – Dette alternativet er bare tilgjengelig hvis [*Parallell autorisering av planlagte bestillinger*-funksjonen](#enable-features) er aktivert for systemet, og hvis du har satt alternativet **Parallelliser autorisasjon** til *Ja*. Angi antallet tråder som skal brukes til å parallellisere autoriseringsprosessen. Hvis du vil ha informasjon om hvordan du bruker dette alternativet i hovedplanlegging, kan du se [Forbedre ytelsen til hovedplanlegging](../master-planning-performance.md#number-of-threads).
 
         > [!NOTE]
         > Hvis du angir *0* (null) for feltet **Antall tråder**, øker kjøretiden for hovedplanlegging. Derfor anbefaler vi at du alltid angir en verdi i dette feltet som er større enn 0.
@@ -97,7 +99,7 @@ Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som
 > Avledede ordrer (dvs bestillinger fra underleverandør) som er autoriserte, viser statusen *Til vurdering* hvis sporing av saksendringer er aktivert.
 
 > [!IMPORTANT]
-> Før funksjonen som er beskrevet i denne delen, kan brukes med planleggingsoptimalisering, må [*Automatisk autorisasjon med planleggingsoptimalisering*-funksjonen](#enable-features) aktiveres i systemet, som beskrevet i begynnelsen av denne artikkelen. Automatisk autorisering kan alltid brukes med den innebygde hovedplanleggingsmotoren.
+> Før funksjonen som er beskrevet i denne delen, kan brukes med planleggingsoptimalisering, må [*Automatisk autorisasjon med planleggingsoptimalisering*-funksjonen](#enable-features) aktiveres for systemet, som beskrevet i begynnelsen av denne artikkelen. Automatisk autorisering kan alltid brukes med den innebygde hovedplanleggingsmotoren.
 
 ### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatisk autorisering med planleggingsoptimalisering i forhold til den innebygde planleggingsmotoren
 
@@ -130,7 +132,7 @@ Spørringsbasert autorisering lar deg planlegge autorisering basert på kriterie
 Du kan kombinere automatisk autorisering med spørringsbasert autorising. En spørringsbasert autoriseringsjobb har for eksempel en fremoverhorisont som er lengre enn horisonten for en samsvarende automatisk autorisering av dekningskonfigurasjonen. Derfor vil den spørringsbaserte autoriseringsjobben behandle de planlagte bestillingene før automatisk autorisering utløses. Du kan dra nytte av denne virkemåten til å planlegge ordrer for bestemte leverandører på en annen måte enn ordrer for lignende produkter fra andre leverandører.
 
 > [!IMPORTANT]
-> Før funksjonen som er beskrevet i denne delen kan brukes, må [*Autorisering av planlagt bestilling med filtrering*-funksjonen](#enable-features) aktiveres i systemet, som beskrevet i begynnelsen av denne artikkelen.
+> Før funksjonen som er beskrevet i denne delen kan brukes, må [*Autorisering av planlagt bestilling med filtrering*-funksjonen](#enable-features) aktiveres for systemet, som beskrevet i begynnelsen av denne artikkelen.
 
 Følg denne fremgangsmåten for å autorisere en planlagt bestilling ved hjelp av den spørringsbaserte autoriseringsprosessen.
 

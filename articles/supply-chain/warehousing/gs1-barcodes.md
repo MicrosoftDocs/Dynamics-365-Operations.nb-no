@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 34f74c2a889b3a659831897897e2086b277256e0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: e1c1c274054ed1c14c9b3fc0595baa029bf3124d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219786"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336373"
 ---
 # <a name="gs1-bar-codes"></a>GS1-strekkoder
 
@@ -108,7 +108,7 @@ Når dataene er analysert fra strekkoden, blir de matet inn i flytkontrollene fo
 
 ## <a name="turn-on-the-gs1-feature"></a>Aktivere GS1-funksjonen
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke denne funksjonen, må den være aktivert for systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Skann GS1-strekkoder*
@@ -134,7 +134,7 @@ Gjør følgende for å konfigurere globale GS1-alternativer:
 
     - **FNC1-tegn**, **Datamatrix-tegn** og **QR-kodetegn** – Angi tegn som skal tolkes som et prefiks for hver type GS1-strekkode.
     - **Gruppeskilletegn** – Angi tegnet som erstatter ASCII-gruppeskilletegnet.
-    - **Maksimumslengde for ID** – Angi maksimalt antall tegn som er tillatt for app-ID-en. Dette feltet kreves ikke hvis funksjonen *Forbedret GS1-analyse* er aktivert i systemet.
+    - **Maksimumslengde for ID** – Angi maksimalt antall tegn som er tillatt for app-ID-en. Dette feltet kreves ikke hvis funksjonen *Forbedret GS1-analyse* er aktivert for systemet.
 
 > [!NOTE]
 > Prefikser forteller systemet at en strekkode er kodet i henhold til GS1-standarden. Opptil tre prefikser (**FNC1-tegn**, **Datamatrisetegn** og **QR-kodetegn**) kan brukes samtidig og til forskjellige formål.

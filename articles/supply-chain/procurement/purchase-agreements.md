@@ -2,7 +2,7 @@
 title: Kjøpsavtaler
 description: Denne artikkelen inneholder informasjon om kjøpsavtaler. En kjøpsavtale er en kontrakt som forplikter en organisasjon til å kjøpe et bestemt antall eller beløp ved hjelp av flere bestillinger over tid. I bytte mot denne forpliktelsen mottar kjøperen spesialpriser og -rabatter.
 author: GalynaFedorova
-ms.date: 06/20/2017
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a8e2c4fdf640f1a9a64c60afc978a4d5812182a
-ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.openlocfilehash: 188a71ec660787b0b942a3d3bf4967b747c4469f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "8669579"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335893"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
@@ -41,7 +41,7 @@ Hvis du vil hindre at kjøpsavtalen blir brukt og bekreftet, merker du avtalesta
 Du kan identifisere en primær ansvarlig arbeider og sekundær ansvarlig arbeider i kjøpsavtaleklassifiseringen. Disse verdiene vil bli arvet av den resulterende kjøpsavtalen. Du er ikke pålagt å legge til ansvarlige arbeidere i kjøpsavtalen, og de kan endres direkte på en per sak-basis i selve kjøpsavtalen. Du kan ikke angi en sekundær ansvarlig arbeider uten en primær ansvarlig arbeider, selv om du ikke trenger å ha en sekundær ansvarlig arbeider. Du kan ikke angi den samme arbeideren som både den primære og den sekundære ansvarlige arbeideren.
 
 > [!IMPORTANT]
-> Hvis du vil bruke funksjonen for den ansvarlige parten, må den være aktivert i systemet. Fra og med Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Ansvarlig part for kjøpsavtale* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> Hvis du vil bruke funksjonen for den ansvarlige parten, må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.25 er funksjonen aktivert som standard. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Ansvarlig part for kjøpsavtale* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Forpliktelsestyper
 Hver linje i en kjøpsavtale er en forpliktelse til å kjøpe noe. Du kan bruke linjer fra flere bestillinger (PO-er) til å oppfylle forpliktelsen. Det finnes fire typer forpliktelser:

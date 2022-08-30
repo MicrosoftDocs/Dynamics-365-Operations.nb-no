@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 935c2e6cb45df193e6cbf70634f3561154c6fe38
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 20a2ffb44f9b99800146e3365e6f0d6df8e9a75e
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178541"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324268"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
 
@@ -47,13 +47,14 @@ Hvis du vil kopiere en forekomst, må du tenke på følgende tips:
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Virkninger av å kopiere en Human Resources-database
 
+> [!Note]
+> Fra og med august 2022 er Dokumenter i Microsoft Azure Blob-lagring inkludert når du kopierer et produksjonsmiljø til et sandkassemiljø. Alle dokumenter og maler som er vedlagt, blir kopiert over fra kildemiljøet til målmiljøet.
+
 Følgende hendelser inntreffer når du kopierer en Human Resources-database:
 
 - Kopieringsprosessen sletter den eksisterende databasen i målmiljøet. Når kopieringsprosessen er fullført, kan du ikke gjenopprette den eksisterende databasen.
 
 - Målmiljøet vil ikke være tilgjengelig før kopieringsprosessen er fullført.
-
-- Dokumenter i Microsoft Azure Blob-lagring kopieres ikke fra ett miljø til et annet. Derfor vil ingen dokumenter og maler som er vedlagt, bli kopiert, og de forblir i kildemiljøet.
 
 - Alle brukere, bortsett fra de som har sikkerhetsrollen Systemadministrator og andre interne tjenestebrukerkontoer, vil ikke være tilgjengelige. Administratorbrukeren kan slette data før andre brukere får tilgang til systemet igjen.
 

@@ -2,7 +2,7 @@
 title: Rapport for sammenligning av lagervarepriser
 description: Lær hvordan du genererer rapport for sammenligning av lagervarepriser og deretter bla gjennom og/eller eksportere resultatet.
 author: JennySong-SH
-ms.date: 01/30/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c9e2ccbe613a4aab40a4f519bbb82a9175d46e72
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c6373679299b68413d75236ca8cc18ceba03e091
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846220"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334993"
 ---
 # <a name="compare-item-prices-storage-report"></a>Rapport for sammenligning av lagervarepriser
 
@@ -35,12 +35,9 @@ Rapportresultater lagres i dataenheten **Sammenlign varepriser**, slik at du kan
 
 Rapporten for **sammenligning av lagervarepriser** er nyttig i tilfeller der utdataene inneholder mange linjer. Utdataene vil for eksempel inneholde mange linjer hvis du har mer enn 40 000 varer som inneholder en uavsluttet varepris i kostversjonen.
 
-## <a name="enable-compare-item-prices-storage"></a>Aktivere sammenligning av lagervarepriser
+## <a name="turn-the-compare-item-prices-storage-feature-on-or-off"></a>Aktivere eller deaktivere funksjonen Sammenlign varepriser – lagring
 
-Før du kan bruke denne funksjonen, må du aktivere den i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis det er nødvendig. Her vises funksjonen som:
-
-- **Modul** - Kostnadsstyring
-- **Funksjonsnavn** – Sammenligning av lagervarepriser
+For å bruke denne funksjonen må den være aktivert for systemet. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Sammenlign varepriser – lagring* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="generate-a-compare-item-prices-storage-report"></a>Generer en rapport for sammenligning av lagervarepriser
 

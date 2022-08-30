@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: e3d709a185796152b03f8ed83088cb5c3d137bae
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d39ce6e07a789ff4d605a01b1d5053be150d2727
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219756"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336253"
 ---
 # <a name="release-to-warehouse-rule"></a>Frigi til lager-regel
 
@@ -30,14 +30,14 @@ Funksjonen *Frigi til lager-regel* gir fleksibilitet under frigivelse til lagere
 
 ### <a name="turn-on-the-feature"></a>Aktivere funksjonen
 
-Før du kan bruke funksjonen *Frigi til lager- regel*, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke funksjonen *Frigi til lager- regel*, må den aktiveres for systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Frigi til lager*
 
 ### <a name="initialize-the-feature"></a>Initialisere funksjonen
 
-Når funksjonen er aktivert i systemet, må du initialisere den for å sette regelen til riktig starttilstand for alle lagre.
+Når funksjonen er aktivert for systemet, må du initialisere den for å sette regelen til riktig starttilstand for alle lagre.
 
 - For lagre som ikke er aktivert for lagerstyring, settes regelen i utgangspunktet til **Ikke tilgjengelig**.
 - For lagre som er aktivert for lagerstyring, settes regelen i utgangspunktet til **Tillat delvis reservasjon**

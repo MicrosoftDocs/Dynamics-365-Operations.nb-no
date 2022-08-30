@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7f5691c5784b7b381ff805b0431d8adb1a25f1cb
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: d95cd9b55f473bed2e3fe69e63837040385f03ac
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266406"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334753"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10029-october-2022"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
 
@@ -74,10 +74,7 @@ Tabellen viser også funksjoner som tidligere var i forhåndsversjon, men som er
 
 | Modul | Funksjonsnavn | Ny funksjonstilstand |
 | --- | --- | --- |
-| Ressursbehandling | [Bruk regler for gruppering av arbeidsordrer når en vedlikeholdsplan kjøres](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Obligatorisk |
 | Ressursbehandling | [Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md) | Obligatorisk |
-| Ressursbehandling | [Tellerbaserte vedlikeholdsforbedringer](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Aktivert som standard |
-| Ressursbehandling | [Fakturering for arbeidsoppdrag](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Obligatorisk |
 | Kostnadsstyring | [Endre etiketten for annullering i Lukking og justering for å tilbakeføre](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Obligatorisk |
 | Kostnadsstyring | Rydd opp detaljer for stykklisteberegning | Obligatorisk |
 | Kostnadsstyring | [Sammenlign varepriser - lagring](../cost-management/compare-item-price.md) | Obligatorisk |
@@ -102,7 +99,7 @@ Tabellen viser også funksjoner som tidligere var i forhåndsversjon, men som er
 | Lagerstyring | Bruker måleenhet og enhetsantall i lagerjournaler | Obligatorisk |
 | Lagerstyring | Lås opp lagerjournal | Obligatorisk |
 | Produksjon | [Automatisk plukking av lageraktiverte materialer for automatisk posterte plukklister](whats-new-scm-10-0-23.md) | Generelt tilgjengelig |
-| Produksjon | Aktiver visning av lagerdimensjoner i materiallisten for produksjonsruteoperasjoner | Aktivert som standard |
+| Produksjon | Aktiver visning av lagerdimensjoner i materiallisten for produksjonsruteoperasjoner | Obligatorisk |
 | Produksjon | [Aktiver angivelse av parti- og serienumre under ferdigrapportering fra jobbkortenheten](../production-control/report-finished-job-device.md) | Aktivert som standard |
 | Produksjon | Forbedret plukking av et antall for faktisk vekt for produksjon | Aktivert som standard |
 | Produksjon | [Jobbsøk for grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md) | Obligatorisk |
@@ -127,20 +124,19 @@ Tabellen viser også funksjoner som tidligere var i forhåndsversjon, men som er
 | Hovedplanlegging | [Autorisering av planlagt bestilling med filtrering](../master-planning/planning-optimization/planned-order-firming.md) | Obligatorisk |
 | Hovedplanlegging | [Planlagte produksjonsordrer for planleggingsoptimalisering](../master-planning/planning-optimization/production-planning.md) | Obligatorisk |
 | Hovedplanlegging | [Forretningsavtaler for innkjøp for planleggingsoptimalisering](../master-planning/planning-optimization/purchase-trade-agreement.md) | Obligatorisk |
-| Hovedplanlegging | Ressursplanlegging med vedlikehold | Obligatorisk |
 | Hovedplanlegging | [Lagrede visninger for planlagte bestillinger](saved-views-scm.md) | Obligatorisk |
 | Innkjøp og leverandører | Beløp fra og til for tillegg i bestillinger | Obligatorisk |
 | Innkjøp og leverandører | Deaktiver tilbakestillingsknapp for distribusjon av innkjøpsrekvisisjon | Aktivert som standard |
 | Innkjøp og leverandører | [Aktiver tilbakestilling av innkjøpsrelaterte arbeidsflyter](whats-new-scm-10-0-20.md) | Aktivert som standard |
 | Innkjøp og leverandører | [Begrens antall bestillingslinjer per partioppgave](whats-new-scm-10-0-27.md) | Aktivert som standard |
 | Innkjøp og leverandører | [Slå sammen finansdimensjoner fra leverandøren med aktiv finansdimensjon for dimensjonskobling på bestillingen](whats-new-scm-10-0-25.md) | Obligatorisk |
+| Innkjøp og leverandører | [Poster registrerte antall lagerførte produkter og rester av ikke-lagerførte produkter for kvitteringer og leverandørfakturaer](whats-new-scm-10-0-26.md) | Generelt tilgjengelig |
 | Innkjøp og leverandører | [Forhindre overforbruk av generelle budsjettreservasjoner når flere innkjøpsrekvisisjoner er i arbeidsflyt](whats-new-scm-10-0-21.md) | Aktivert som standard |
 | Innkjøp og leverandører | [Ansvarlig part for kjøpsavtale](../procurement/purchase-agreements.md) | Obligatorisk |
 | Innkjøp og leverandører | [Lagrede visninger for bestillinger](saved-views-scm.md) | Obligatorisk |
 | Behandling av produktinformasjon | Forhåndsbehandling for stykklisterapport for å unngå tidsavbrudd | Obligatorisk |
 | Behandling av produktinformasjon | Separer finansdimensjoner som standard ved bruk av varemaler | Obligatorisk |
 | Behandling av produktinformasjon | Aktiver produktdimensjonsgrupper for varemaler | Obligatorisk |
-| Behandling av produktinformasjon | [Forbedret attributtarv for Styring av teknisk endring](../engineering-change-management/engineering-attributes-and-search.md) | Obligatorisk |
 | Behandling av produktinformasjon | Enhetsforbedringer for vare – strekkode | Obligatorisk |
 | Behandling av produktinformasjon | Generer navn på produktvarianter på nytt basert på terminologi | Obligatorisk |
 | Behandling av produktinformasjon | [Lagrede visninger for frigitte produkter](saved-views-scm.md) | Obligatorisk |
@@ -161,27 +157,30 @@ Tabellen viser også funksjoner som tidligere var i forhåndsversjon, men som er
 | Salg og markedsføring | [Salgsordrebekreftelse med ett klikk](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Obligatorisk |
 | Transportstyring | Tillat oppheving av samsvar for fraktbrev fra fraktfakturalinjer uten en postert leverandørfakturajournal | Aktivert som standard |
 | Transportstyring | [Aktiver oppretting av en leverandørfakturajournal når du forkaster et fraktbrev](whats-new-scm-10-0-20.md) | Aktivert som standard |
-| Transportstyring | [Forsendelse av småpakker](../warehousing/small-parcel-shipping.md) | Aktivert som standard |
+| Transportstyring | [Forsendelse av småpakker](../warehousing/small-parcel-shipping.md) | Obligatorisk |
 | Transportstyring | [USMCA-sertifisering av opprinnelig dokument](../transportation/usmca-certification-of-origin.md) | Aktivert som standard |
 | Lagerstyring | [Ekstra lokasjonssone](../warehousing/additional-location-zones.md) | Obligatorisk |
 | Lagerstyring | [Avbryt arbeid](../warehousing/cancel-warehouse-work.md) | Obligatorisk |
-| Lagerstyring | [Konsolider forsendelse](../warehousing/configure-shipment-consolidation-policies.md) | Aktivert som standard |
+| Lagerstyring | [Konsolider forsendelse](../warehousing/configure-shipment-consolidation-policies.md) | Obligatorisk |
 | Lagerstyring | [Opprett og behandle overføringsordrer fra lagerappen](../warehousing/create-transfer-order-from-warehouse-app.md) | Obligatorisk |
 | Lagerstyring | Kryssoverføringsmaler med lokasjonsdirektiver | Aktivert som standard |
-| Lagerstyring | [Koble plasseringsarbeid fra ASN-er](whats-new-scm-10-0-21.md) | Aktivert som standard |
-| Lagerstyring | [Utsatte plasseringsoperasjoner](../warehousing/deferred-processing-manual-inventory-movement.md) | Aktivert som standard |
+| Lagerstyring | [Koble plasseringsarbeid fra ASN-er](whats-new-scm-10-0-21.md) | Obligatorisk |
+| Lagerstyring | [Utsatte plasseringsoperasjoner](../warehousing/deferred-processing-manual-inventory-movement.md) | Obligatorisk |
 | Lagerstyring | Utsatt plassering – container | Aktivert som standard |
 | Lagerstyring | Behandling av utsatt plassering - aktiver for revisjonsmalfunksjon med utløserhendelse satt til Forrige | Obligatorisk |
 | Lagerstyring | [Deaktiver forventede mottak fra kvalitetsordrer som eksempler blokkert beholdning](../inventory/inventory-blocking.md) | Aktivert som standard |
 | Lagerstyring | Aktiver hurtigvalidering for lagermobilenheter | Obligatorisk |
-| Lagerstyring | [Fleksibel dimensjonsreservasjon for lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Aktivert som standard |
-| Lagerstyring | [Fleksibel, ordreforpliktet reservasjon av nummerskilt](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Aktivert som standard |
-| Lagerstyring | [Visualisering av utgående arbeidsmengde](../warehousing/outbound-workload-visualization.md) | Obligatorisk |
+| Lagerstyring | [Forbedret analyse for GS1-strekkoder](../warehousing/gs1-barcodes.md) | Generelt tilgjengelig |
+| Lagerstyring | [Fleksibel, ordreforpliktet reservasjon av nummerskilt](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatorisk |
+| Lagerstyring | [Fleksibel dimensjonsreservasjon for lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Obligatorisk |
 | Lagerstyring | [Bruk av lokasjon for varekonsolidering](../warehousing/item-consolidation-location-utilization.md) | Aktivert som standard |
 | Lagerstyring | Mottakshistorikk for nummerskilt | Aktivert som standard |
 | Lagerstyring | [Manuell forsendelseskonsolidering](../warehousing/consolidate-shipments-manual-workbench.md) | Aktivert som standard |
+| Lagerstyring | [Plukktjeneste for manuell overføringslinje for administrator eller lignende klarerte brukere](whats-new-scm-10-0-28.md) | Generelt tilgjengelig |
 | Lagerstyring | [Grensesnitt for materialhåndteringsutstyr](../warehousing/mhax.md) | Obligatorisk |
-| Lagerstyring | [Planlagt direkteoverføring](../warehousing/planned-cross-docking.md) | Aktivert som standard |
+| Lagerstyring | [Nye sider for arbeidsområde for lastplanlegging](whats-new-scm-10-0-24.md) | Generelt tilgjengelig |
+| Lagerstyring | [Visualisering av utgående arbeidsmengde](../warehousing/outbound-workload-visualization.md) | Obligatorisk |
+| Lagerstyring | [Planlagt direkteoverføring](../warehousing/planned-cross-docking.md) | Obligatorisk |
 | Lagerstyring | [Behandle lagerapphendelser](../warehousing/warehouse-app-events.md) | Obligatorisk |
 | Lagerstyring | Spørringsforbedring i arbeidsmalen for plassering av koprodukt og biprodukt | Obligatorisk |
 | Lagerstyring | [Rund antall ned til nærmeste salgsenhet ved frigivelse til lager](whats-new-scm-10-0-19.md) | Obligatorisk |
@@ -190,13 +189,14 @@ Tabellen viser også funksjoner som tidligere var i forhåndsversjon, men som er
 | Lagerstyring | [Lagret visning for bølgebehandling](saved-views-scm.md) | Obligatorisk |
 | Lagerstyring | [Lagrede visninger for lastbehandling](saved-views-scm.md) | Obligatorisk |
 | Lagerstyring | [Lagrede visninger for forsendelsesbehandling](saved-views-scm.md) | Obligatorisk |
-| Lagerstyring | Detaljer for forsendelsesbølgeetikett | Aktivert som standard |
+| Lagerstyring | [Skann GS1-strekkoder](../warehousing/gs1-barcodes.md) | Generelt tilgjengelig |
+| Lagerstyring | Detaljer for forsendelsesbølgeetikett | Obligatorisk |
 | Lagerstyring | [Blandede enheter for spor](whats-new-scm-10-0-21.md) | Obligatorisk |
 | Lagerstyring | [Bruk raskere API for containere som lukkes / åpnes på nytt på pakkestasjon](whats-new-scm-10-0-21.md) | Aktivert som standard |
 | Lagerstyring | [Valider maler som er valgt for etterfyllingsjobber](whats-new-scm-10-0-20.md) | Aktivert som standard |
-| Lagerstyring | [Forfremmede felter for lagerapp](../warehousing/warehouse-app-promoted-fields.md) | Aktivert som standard |
-| Lagerstyring | [Trinninstruksjoner for lagerapp](../warehousing/mobile-app-titles-instructions.md) | Aktivert som standard |
-| Lagerstyring | [Status for lagerlokasjon](../warehousing/warehouse-location-status.md) | Aktivert som standard |
+| Lagerstyring | [Forfremmede felter for lagerapp](../warehousing/warehouse-app-promoted-fields.md) | Obligatorisk |
+| Lagerstyring | [Trinninstruksjoner for lagerapp](../warehousing/mobile-app-titles-instructions.md) | Obligatorisk |
+| Lagerstyring | [Status for lagerlokasjon](../warehousing/warehouse-location-status.md) | Obligatorisk |
 | Lagerstyring | [Omveier i Warehouse Management-appen](../warehousing/warehouse-app-detours.md) | Aktivert som standard |
 | Lagerstyring | [Detaljer om satsvis bølgejobb](../warehousing/wave-processing.md) | Obligatorisk |
 | Lagerstyring | [Varslinger for bølgekjøring](../warehousing/wave-execution-notifications.md) | Obligatorisk |

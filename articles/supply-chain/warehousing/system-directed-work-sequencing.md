@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 88ea680b5b3e237d117b087978d703a7f6f09465
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1dab8d8bdace046f0f061713600fd1eab69e7c12
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219696"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335473"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrt arbeidssekvensiering
 
@@ -35,7 +35,7 @@ Denne funksjonaliteten gjør derfor at du kan optimalisere lagerplukkprosessene 
 
 ## <a name="turn-on-the-organization-wide-system-directed-work-sequencing-feature"></a>Aktiver Systemstyrt arbeidssekvensering i hele organisasjonen-funksjonen
 
-Før du kan bruke systemstyrt arbeidssekvensering-funksjonen, må den aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Før du kan bruke systemstyrt arbeidssekvensering-funksjonen, må den aktiveres for systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Systemstyrt arbeidssekvensering i hele organisasjonen*

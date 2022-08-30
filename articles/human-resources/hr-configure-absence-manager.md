@@ -14,17 +14,15 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40f9607fb6fc16b96373141d8d2610538e3fdec7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b752b722bf63958fc35b10a4612f7f02e2e8e717
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8886109"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337041"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurere fraværsbehandlingsrollen
 
->[!Important]
->Funksjonaliteten som er nevnt i denne artikkelen, er for øyeblikket tilgjengelig for kunder i frittstående Dynamics 365 Human Resources. Noe av eller all funksjonaliteten vil være tilgjengelig som en del av en fremtidig versjon av Finance-infrastrukturen etter Finance versjon 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +35,6 @@ I noen organisasjoner kan det hende at ledere ikke administrerer permisjonen for
 ## <a name="turn-on-the-feature"></a>Aktivere funksjonen
 
 1. I arbeidsområdet **Systemadministrasjon** velger du **Funksjonsbehandling**.
-
 2. I kategorien **Funksjonsbehandling** aktiverer du funksjonen **Fraværsbehandling for å administrere permisjon**.
 
 ## <a name="define-a-custom-hierarchy"></a>Definere et egendefinert hierarki
@@ -45,23 +42,16 @@ I noen organisasjoner kan det hende at ledere ikke administrerer permisjonen for
 Funksjonen for fraværsbehandling bruker et egendefinert hierarki som må konfigureres.
 
 1. I arbeidsområdet **Organisasjonsstyring** velger du **Stillingshierarkityper**.
-
 2. Opprett en stillingshierarkitype som kalles **Permisjon**.
-
 3. I arbeidsområdet **Permisjon og fravær**, under **Koblinger**, velger du **Permisjons- og fraværsparametere**.
-
 4. I kategorien **Generelt** i rullegardinlisten **Fraværshierarki** velger du **Permisjon**-hierarkitypen du opprettet tidligere. Denne Permisjonshierarki-tilknytningen må fullføres for hver juridiske enhet der funksjonaliteten for fraværsansvarlig skal brukes.
 
 Når hierarkitypen er definert, må stillingshierarkirapporten tilordnes til stillingen.
 
 1. I arbeidsområdet **Organisasjonsstyring** velger du **Alle stillinger**.
-
 2. Velg stillingen du vil legge til permisjonshierarkiet i.
-
 3. Velg **Legg til** i fanen **Relasjoner**.
-
 4. I **Hierarkinavn**-feltet velger du **Permisjon**.
-
 5. Velg en stilling i feltet **Rapporter til stilling**. Arbeidsnavnet fylles ut automatisk når du velger en stilling.
 
 ## <a name="assign-the-absence-manager-role-to-a-user"></a>Tilordne fraværsbehandlingsrollen til en bruker
@@ -69,13 +59,9 @@ Når hierarkitypen er definert, må stillingshierarkirapporten tilordnes til sti
 Fraværsbehandlingsrollen må tilordnes ansatte slik at de kan godkjenne eller avslå permisjonsforespørsler.
 
 1. I arbeidsområdet **Systemadministrator** velger du **Koblinger**.
-
 2. Velg **Brukere**-koblingen i **Brukere**-delen.
-
 3. Velg brukeren du vil tilordne fraværsbehandlingsrollen til, i listen over brukere.
-
 4. I kategorien **Brukerens rolle** velger du **Tilordne roller**.
-
 5. Velg rollen **Fraværsbehandling** i listen. Velg deretter **OK**.
 
     > [!IMPORTANT]
@@ -84,7 +70,6 @@ Fraværsbehandlingsrollen må tilordnes ansatte slik at de kan godkjenne eller a
 6. Når du har opprettet permisjonshierarkiet, kan du vise det ved å følge denne fremgangsmåten:
 
     1. I arbeidsområdet **Organisasjonsstyring** velger du **Stillingshierarki**.
-    
     2. I **Hierarkitype**-feltet velger du **Permisjon**.
 
 ## <a name="absence-manager-workspace"></a>Arbeidsområde for fraværsleder
@@ -115,9 +100,7 @@ Fraværsledere kan godkjenne eller avslå fraværsforespørsler for ansatte.
 > Hvis du vil ha mer informasjon om hvordan du oppretter arbeidsflyten for permisjonsforespørsel, kan du se [Opprette en permisjonsforespørsel](hr-leave-and-absence-workflow.md).
 
 1. I arbeidsområdet **Ansattselvbetjening** velger du fanen **Fraværsbehandling**.
-
 2. Velg fraværsforespørsler som du vil gjøre noe med, i fanen **Fraværsforespørsler**. Du kan velge flere poster i denne listevisningen.
-
 3. Bruk handlingsknappene øverst i rutenettet til å godkjenne, avslå eller delegere fraværsforespørselen. 
 
 Brukeren kan også bruke flisen **Fraværsforespørsler** til venstre for å navigere til listen over alle arbeidselementer for fraværsforespørsler. 
@@ -130,9 +113,7 @@ Brukere i fraværsbehandlingsrollen kan vise tidsforespørsler i kalenderen. Hvi
 > En systemadministrator må konfigurere visningsalternativene for kalenderen for fraværsansvarlig. På siden **Permisjons- og fraværsparametere** i **Kalender**-kategorien finnes det alternativer for å skjule eller vise fødselsdager, fravær uten detaljer, fravær og ventende permisjonsforespørsler. Det finnes også et alternativ for å filtrere kalendervisningsalternativet etter arbeidertype.
 
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Fraværsbehandling** og deretter **Fraværsbehandlingskalender**.
-
 2. Angi ønskede datoer i **Dato**-feltet.
-
 3. Oppdater visningsalternativene etter behov.
 
 Fraværsbehandlingskalenderen viser alle postene for de ansatte som rapporterer til fraværslederen i permisjonshierarkiet.

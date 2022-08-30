@@ -2,7 +2,7 @@
 title: Spør data med Warehouse Management-mobilappomveier
 description: Denne artikkelen beskriver hvordan du konfigurerer menyelementer for mobilenheter for dataforespørsler og bruker dem som en del av omveier.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: c3ea53379badb3cb2ed71b7f102956d71c3f047a
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220570"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336613"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Spør data med Warehouse Management-mobilappomveier
 
@@ -35,19 +35,19 @@ I den mottaksflyten for bestillingen kreves det for eksempel et bestillingsnumme
 Før du kan bruke funksjonaliteten som er beskrevet i denne artikkelen, må du fullføre fremgangsmåten nedenfor for å aktivere de nødvendige funksjonene.
 
 1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**. (Hvis du vil ha mer informasjon om hvordan du bruker arbeidsområdet **Funksjonsbehandling**, kan du se [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Aktiver funksjonen som vises på følgende måte:
+1. Hvis du kjører Supply Chain Management versjon 10.0.28 eller nyere, må du aktivere funksjonen som er oppført, på følgende måte:
 
     - **Modul:** *Lagerstyring*
     - **Funksjonsnavn:** *Trinnvise instruksjoner i lagerapp*
 
-    Denne funksjonen er en forutsetning for funksjonen *Dataforespørselsflyt for Warehouse Management-appen*. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md).
+    Denne funksjonen er en forutsetning for funksjonen *Dataforespørselsflyt for Warehouse Management-appen*. Den er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md).
 
 1. Aktiver funksjonen som vises på følgende måte:
 
     - **Modul:** *Lagerstyring*
     - **Funksjonsnavn:** *Omveier i Warehouse Management-appen*
 
-    Denne funksjonen er en forutsetning for funksjonen *Dataforespørselsflyt for Warehouse Management-appen*. Hvis du vil ha mer informasjon om *Omveier i Warehouse Management-mobilappen*, kan du se [Konfigurer omveier for trinn i menyelementer for mobilenheter](warehouse-app-detours.md).
+    Denne funksjonen er en forutsetning for funksjonen *Dataforespørselsflyt for Warehouse Management-appen*. Per Supply Chain Management versjon 10.0.29 er dette aktivert som standard. Hvis du vil ha mer informasjon om *Omveier i Warehouse Management-mobilappen*, kan du se [Konfigurer omveier for trinn i menyelementer for mobilenheter](warehouse-app-detours.md).
 
 1. Hvis funksjonen *Omveier i Warehouse Management-mobilappen* ikke allerede var slått på, oppdaterer du feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Feltnavn i lagerapp** og velger **Opprett standardoppsett**. Gjenta dette trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
 1. Aktiver funksjonen som vises på følgende måte:

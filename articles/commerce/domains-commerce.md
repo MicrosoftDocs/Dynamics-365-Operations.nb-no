@@ -2,7 +2,7 @@
 title: Domener i Dynamics 365 Commerce
 description: Denne artikkelen beskriver hvordan domener behandles i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
 ms.search.industry: retail
 ms.search.form: ''
-ms.openlocfilehash: 9bd925b7bf27748b3c17946de72a76bc0d0200d7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 08d6d52175bb7a77259cbd38b15f466deeab0846
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9288456"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336712"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -109,6 +109,10 @@ Endepunktet `<e-commerce tenant name>.dynamics365commerce.ms` støtter ikke egen
 Hvis du vil konfigurere tilpassede domener ved hjelp av Front Door Service eller CDN, har du to alternativer:
 
 - Konfigurer Front Door Service, for eksempel i Azure, til å håndtere fronttrafikk og koble til Commerce-miljøet. Dette gir bedre kontroll over behandling av domene- og sertifikatadministrasjon og mer detaljerte sikkerhetspolicyer.
+
+> [!NOTE]
+> Hvis du bruker en ekstern CDN-tjeneste eller Front Door Service, må du sørge for at forespørselen er tilknyttet Commerce-plattformen med det Commerce-leverte vertsnavnet, men med hodet X-Forwarded-Host (XFH) \<custom-domain\>. Hvis for eksempel Commerce-endepunktet er `xyz.dynamics365commerce.ms` og det egendefinerte domenet er `www.fabrikam.com`, bør vertshodet for den videresendte forespørselen være `xyz.dynamics365commerce.ms`, og XFH-hodet bør være `www.fabrikam.com`.
+
 - Bruk den Commerce-støttede forekomsten av Front Door Service i Azure. Dette krever koordineringshandling med Dynamics 365 Commerce-teamet for domenekontroll og henting av SSL-sertifikater for produksjonsdomenet.
 
 Hvis du vil ha informasjon om hvordan du setter opp en CDN-tjeneste direkte, kan du se [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md).
@@ -141,14 +145,18 @@ For eksisterende/aktive domener:
 
 ## <a name="apex-domains"></a>Apex-domener
 
-Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domener (rotdomener som ikke inneholder underdomener). Apex-domener krever at en IP-adresse løses, og den Commerce-støttede forekomsten av Azure Front Door finnes bare med virtuelle endepunkter. Hvis du vil bruke et Apex-domene, har du to alternativer:
+Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domener (rotdomener som ikke inneholder underdomener). Apex-domener krever at en IP-adresse løses, og den Commerce-støttede forekomsten av Azure Front Door finnes bare med virtuelle endepunkter. Hvis du vil bruke et Apex-domene, har du følgende alternativer:
 
 - **Alternativ 1** – Bruk DNS-leverandøren til å omadressere Apex-domenet til et www-domene. Fabrikam.com omadresserer for eksempel til `www.fabrikam.com`, der `www.fabrikam.com` er CNAME-posten som peker til den Commerce-driftede forekomsten av Azure Front Door.
 
-- **Alternativ 2** – Konfigurer en forekomst av CDN/Front Door som du kan bruke til å drifte Apex-domenet.
+- **Alternativ 2** – Hvis DNS-leverandøren støtter ALIAS-poster, kan du peke apex-domenet til Front Door-endepunktet. Dette sikrer at IP-endringen av Front Door-endepunktet blir gjenspeilet.
+  
+- **Alternativ 3** – Hvis DNS-leverandøren ikke støtter ALIAS-poster, må du konfigurere en CDN- eller Front Door-forekomst på egen hånd for å være vert for apex-domenet.
 
 > [!NOTE]
 > Hvis du bruker Azure Front Door, må du også konfigurere Azure DNS i det samme abonnementet. Apex-domenet som er driftet på Azure DNS, kan peke til din forekomst av Azure Front Door som en aliaspost. Dette er den eneste løsningen, ettersom Apex-domener alltid må peke til en IP-adresse.
+  
+Hvis du har spørsmål angående Apex-domener, kan du kontakte [Microsofts kundestøtte](https://support.microsoft.com/).
 
   ## <a name="additional-resources"></a>Tilleggsressurser
 

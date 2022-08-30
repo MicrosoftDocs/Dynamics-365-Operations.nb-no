@@ -2,7 +2,7 @@
 title: Grensesnitt for materialhåndteringsutstyr (MHAX)
 description: Denne artikkelen beskriver hvordan du konfigurerer MHAX-systemer (Material Handling Equipment Interface) slik at du kan koble til systemer for ekstern fysisk materialhåndtering (MH).
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: dc46c9fea94c3d86f9511c2bea4ea64455c936f9
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 1056c7aee3ea96ddcb012704be40bef6c363f323
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068367"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334363"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Grensesnitt for materialhåndteringsutstyr (MHAX)
 
@@ -41,12 +41,13 @@ Her er en forklaring på samhandlingen som vises i den forrige illustrasjonen:
 
 Før du kan bruke MHAX-funksjonen må du aktivere både funksjonen og konfigurasjonsnøkkelen.
 
-1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
-2. I arbeidsområdet **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** aktiverer du funksjonen som kalles *Grensesnitt for materialhåndteringsutstyr*.
-3. Sett systemet i vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-4. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**.
-5. Utvid **Handel \> Lager- og transportstyring**, og merk deretter av for **Grensesnitt for materialhåndteringsutstyr**.
-6. Deaktiver vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Hvis du kjører Supply Chain Management, versjon 10.0.28, gjør du følgende:
+    1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
+    1. I arbeidsområdet **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** aktiverer du funksjonen som kalles *Grensesnitt for materialhåndteringsutstyr*. (Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.29 og kan ikke deaktiveres.)
+1. Sett systemet i vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**.
+1. Utvid **Handel \> Lager- og transportstyring**, og merk deretter av for **Grensesnitt for materialhåndteringsutstyr**.
+1. Deaktiver vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ## <a name="set-mhax-parameters"></a>Angi MHAX-parametere
 

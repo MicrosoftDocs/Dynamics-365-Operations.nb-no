@@ -2,7 +2,7 @@
 title: Forsendelse av småpakker
 description: Denne artikkelen inneholder informasjon om funksjonen for forsendelse av småpakker. Denne funksjonen gjør at Microsoft Dynamics 365 Supply Chain Management kan sende informasjon om en pakket container til transportøren, og deretter motta en forsendelsesetikett, en forsendelsessats og et sporingsnummer tilbake fra denne transportøren.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 6ccc9c795e2da121acf9c0809aef99a5f9d5889e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: b2adde2b81ed881a3c81193a2220fbe569069c7c
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219726"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336163"
 ---
 # <a name="small-parcel-shipping"></a>Forsendelse av småpakker
 
@@ -34,12 +34,9 @@ Forsendelsessatsen som returneres, legges til i den tilknyttede salgsordren som 
 
 Før du kan begynne å bruke funksjonen for forsendelse av småpakker, må du aktivere den i Funksjonsbehandling, legge til ratemotoren og definere modulene **Transportstyring** og **Lagerstyring** for å støtte den.
 
-### <a name="turn-on-the-sps-feature"></a>Aktivere funksjonen for forsendelse av småpakker
+### <a name="turn-the-sps-feature-on-or-off"></a>Aktivere eller deaktivere SPS-funksjonen
 
-Før du kan bruke funksjonen for forsendelse av småpakker, må den være aktivert i systemet. Administratorer kan bruke arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere statusen for funksjonen og aktivere den om nødvendig. Funksjonen vises på følgende måte:
-
-- **Modul:** *Transportstyring*
-- **Funksjonsnavn:** *Forsendelse av småpakker*
+For å bruke denne funksjonen må den være aktivert for systemet. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Forsendelse av småpakker* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="deploy-and-set-up-rate-engines"></a>Distribuere og definere ratemotorer
 

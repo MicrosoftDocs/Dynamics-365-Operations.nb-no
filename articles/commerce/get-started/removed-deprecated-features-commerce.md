@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 description: Denne artikkelen beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Commerce.
 author: josaw1
-ms.date: 07/11/2022
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 541e21999884a2d51b27009d72a2f8bc9084557f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 59ffcc00d67f6538980dec8965f894eb51f7230d
+ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287630"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337603"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 
@@ -33,32 +33,49 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 > [!NOTE]
 > Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
 
+## <a name="features-removed-or-deprecated-in-the-commerce-10029-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.29
+
+### <a name="commerce-parameters-setting---allow-price-adjustments-to-increase-product-price"></a>Commerce-parameterinnstilling – Tillat prisjusteringer for å øke produktpris
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vi hadde denne innstillingen for å styre om prisjusteringsfunksjonen tillater økt produktpris. Når denne parameteren er deaktivert, kan organisasjoner for prisjusteringsfunksjonen bare angi en enhetspris for et produkt lavere enn basisprisen og salgsprisen for forretningsavtalen. Vi avskriver denne innstillingen fordi prisjusteringsfunksjonen er oppdatert slik at det støtter toveisjusteringer (økning eller reduksjon) som standard. |
+| **Erstattet med en annen funksjon?**   | Nei |
+| **Berørte produktområder**         | Priser og rabatter |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Denne innstillingen er aktivert som standard siden Commerce, versjon 10.0.29 og blir fjernet i oktober 2023. |
+
+### <a name="commerce-parameters-setting---enable-price-report-for-retail-store"></a>Commerce-parameterinnstilling – Aktiver prisrapport for detaljhandel
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vi hadde denne innstillingen til å styre om prisrapportfunksjonen er tilgjengelig for bruk i butikkonfigurasjonsskjema. Vi avskriver denne innstillingen fordi butikkonfigurasjonsskjemaet er oppdatert slik at prisrapportfunksjonen alltid leveres som standardfunksjon. |
+| **Erstattet med en annen funksjon?**   | Nei |
+| **Berørte produktområder**         | Priser og rabatter |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Denne innstillingen blir fjernet i oktober 2023. |
+
+### <a name="commerce-parameters-setting---use-todays-date-to-calculate-prices"></a>Commerce-parameterinnstilling – Bruk dagens dato til å beregne priser
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Standard prismotor for Supply Chain Management støtter prisberegningen basert på den ønsket forsendelsesdato eller ønsket mottaksdato sammen med dagens dato. Commerce-prissettingsmotoren støtter bare prissettingsberegning basert på dagens dato. For kunder som bruker både SCM- og Commerce-funksjoner, oppgir vi denne innstillingen, og anbefaler at kunder alltid setter den til **Ja** slik at de to prissettingsmotorene kan fungere sammen. Vi avskriver denne innstillingen fordi den ikke endrer beregningsvirkemåten og er overflødig. |
+| **Erstattet med en annen funksjon?**   | Nei |
+| **Berørte produktområder**         | Priser og rabatter |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Denne innstillingen er aktivert som standard siden Commerce, versjon 10.0.29 og blir fjernet i oktober 2023. |
+
 ## <a name="feature-deprecation-effective-july-2022"></a>Funksjonsavskriving gjeldende fra juli 2022
 
 ### <a name="commerce-analytics-preview"></a>Commerce-analyse (forhåndsversjon)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Dynamics 365 Commerce-teamet har analysert bruken og oppfølgingen av funksjonen for Commernce-analyse (forhåndsversjon), og det er tatt en avgjørelse om at de ikke lenger går videre for å bringe funksjonen til allmenn tilgjengelighet.   |
+| **Årsak til avskrivning/fjerning** | Dynamics 365 Commerce-teamet har analysert bruken og oppfølgingen av funksjonen for Commerce-analyse (forhåndsversjon), og det er tatt en avgjørelse om at de ikke lenger går videre for å bringe funksjonen til allmenn tilgjengelighet.   |
 | **Erstattet med en annen funksjon?**   | På dette tidspunktet vil ikke Commerce-analyse (forhåndsversjon) bli erstattet av en annen funksjon eller løsning. Eksporten av råtransaksjoner og hoveddata fra økonomi- og driftsapper til Azure Data Lake fortsetter å være tilgjengelig, noe som forklares i [Eksporter til Data Lake i økonomi- og driftsapper](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Partnere og kunder kan utnytte denne datastrømmen til å forfatte alle tiltenkte rapporter for forretningsbehovene.
 | **Berørte produktområder**         | Commerce-analyse (forhåndsversjon) |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Vi ser på deaktivering av denne funksjonen innen 30. august 2022.  Fra denne datoen og fremover vil det ikke forekomme noen oppdatering i de nåværende Power BI-rapportene som tilbys av Commerce-analyse (forhåndsversjon).     |
-
-
-## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.25
-
-### <a name="modern-point-of-sale-mpos"></a>Modern Point of Sale (MPOS)
-
-MPOS-programmet (Modern Point of Sale) blir avskrevet i Commerce, versjon 10.0.25-utgivelsen og erstattes med Store Commerce-appen.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Butikkapper er hjørnesteinene til Dynamics 365 Commerce-omnikanaltilbudet. Vi skaper stadig noe nytt for å gi moderne og intelligente butikkopplevelser, og for å ytterligere modernisere løsningen ruller vi ut nye sett med endringer som vil betydelig forbedre IT-operasjoner og brukeropplevelser med våre eksisterende butikkprogrammer i Windows. Det nye Store Commerce-programmet er en teknologioppgradering av det eksisterende MPOS-programmet. Det gir forbedret ytelse, pålitelighet og langsiktig støtte på Windows-plattformen, og eliminerer behovet for å pakke om appen med hver oppdatering. |
-| **Erstattet med en annen funksjon?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Berørte produktområder**         | Modern Point of Sale |
-| **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Ved utgivelsen av Commerce, versjon 10.0.25 fjernes MPOS-installeringsprogrammet som sendes via de virtuelle LCS-maskinene (VM-er) i oktober 2023. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.21
 
@@ -198,7 +215,7 @@ Utvikling av POS-utvidelser ved hjelp av ModernPos.sln, CloudPos.sln, POS.Extens
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Nye optimaliserte API-er er opprettet for å erstatte API-ene GetProductAvailabilities og GetAvailableInventoryNearby. |
-| **Erstattet med en annen funksjon?**   | Ja: Den erstattes av APIene GetEstimatedAvailability og GetEstimatedProductWarehouseAvailability. |
+| **Erstattet med en annen funksjon?**   | Ja: Den erstattes av API-ene GetEstimatedAvailability og GetEstimatedProductWarehouseAvailability. |
 | **Berørte produktområder**         | SDK for e-handelsprogram |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Etter versjon 10.0.7 vil det ikke lenger gjøres tekniske investeringer for GetProductAvailabilities og GetAvailableInventoryNearby. Organisasjoner som bruker disse APIene i sine e-handelsdistribusjoner, bør konvertere dem til de nye GetEstimatedAvailability og GetEstimatedProductWarehouseAvailability-APIene og aktivere [funksjonen for beregning av optimalisert produkttilgjengelighet](../calculated-inventory-retail-channels.md).  |

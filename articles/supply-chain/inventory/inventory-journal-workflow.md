@@ -2,7 +2,7 @@
 title: Godkjenningsarbeidsflyter for lagerjournal
 description: Denne artikkelen beskriver hvordan du kan sette opp og bruke godkjenningsarbeidsflyter for lagerjournal for ulike typer transaksjoner for aktuell beholdning. Lagerjournalarbeidsflyter bidrar til å sikre at bare godkjente lagerjournaler kan posteres til transaksjoner.
 author: yufeihuang
-ms.date: 07/21/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ebb12562a9f06f2efc3b5a373d7ad0f98bc3505e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3a97eaeae24850282c39196a61e3baa29307aa93
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873992"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334663"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkjenningsarbeidsflyter for lagerjournal
 
@@ -29,12 +29,9 @@ Denne artikkelen beskriver hvordan du setter opp og bruker godkjenningsarbeidsfl
 > [!NOTE]
 > Godkjenningsarbeidsflyter for lagerjurnal gjelder bare for transaksjoner som er registrert ved hjelp av Lagerstyring-modulen. De fungerer ikke med lagerjournaler utløst fra Lagerstyring-modulen.
 
-## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivere funksjonen for godkjenningsarbeidsflyter for lagerjournal
+## <a name="turn-the-inventory-journal-approval-workflows-feature-on-or-off"></a>Aktiver eller deaktiver funksjonen Godkjenningsarbeidsflyter for lagerjournal
 
-Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Administratorer kan bruke siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere eller deaktivere den hvis det er nødvendig. Her vises funksjonen som:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Godkjenningsarbeidsflyt for lagerjournal*
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.21 er funksjonen aktivert som standard. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Beholdningsjournal – godkjenn – arbeidsflyt* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Opprette godkjenningsarbeidsflyter for lagerjournal
 

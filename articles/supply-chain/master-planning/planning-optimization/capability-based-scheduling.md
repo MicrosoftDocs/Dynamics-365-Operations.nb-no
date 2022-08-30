@@ -2,7 +2,7 @@
 title: Planlegging med ressursvalg basert på kvalifikasjon
 description: Denne artikkelen beskriver ressursvalg under ubegrenset kapasitetsplanlegging når du angir kvalifikasjoner som ressursbehov for en operasjon.
 author: t-benebo
-ms.date: 9/3/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 26b2b65a2d565052b188f4d70f0cc0a773cd7b43
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847969"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335413"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planlegging med ressursvalg basert på kvalifikasjon
 
@@ -24,12 +24,9 @@ ms.locfileid: "8847969"
 
 Ved å angi ressursbehov for en operasjon av en produksjonsrute, definerer du hva som kreves for å utføre denne operasjonen. For eksempel kan en operasjon kreve en bestemt ressurs eller en ressursgruppe, eller en kombinasjon av kompetanse eller kvalifikasjoner. Denne artikkelen beskriver ressursvalg under ubegrenset kapasitetsplanlegging når du angir kvalifikasjoner som ressursbehov for en operasjon.
 
-## <a name="turn-on-the-capability-based-scheduling-feature"></a>Slå på funksjon for kvalifikasjonsbasert kapasitetsplanlegging
+## <a name="turn-the-capability-based-scheduling-feature-on-or-off"></a>Aktiver eller deaktiver funksjon for kvalifikasjonsbasert kapasitetsplanlegging
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Hovedplanlegging*
-- **Funksjonsnavn:** *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.29 er funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* i arbeidsområdet [Funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Hvis du vil ha mer informasjon om denne funksjonen, kan du se [Planlegging med ubegrenset kapasitet](infinite-capacity-planning.md).
 

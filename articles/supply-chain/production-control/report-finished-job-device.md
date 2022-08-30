@@ -2,7 +2,7 @@
 title: Ferdigmelde fra jobbkortenheten
 description: Denne artikkelen beskriver hvordan du konfigurerer systemet slik at brukere av en jobbkortenhet kan rapportere ferdige produkter fra en produksjonsordre til beholdning.
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 38372f08db0258de8b5e653b4757c9fda96c8d70
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 56d19a966d93202668c34ffaaef561d72b7669ff
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070477"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334633"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ferdigmelde fra jobbkortenheten
 
@@ -56,13 +56,12 @@ Jobbkortenheten støtter tre scenarier for rapportering av partivise varer. Diss
 - **Forhåndsdefinerte partinumre** – Arbeidere velger et partinummer fra en liste over partinumre som systemet automatisk genererer før produksjonsordren frigis til jobbkortenheten.
 - **Faste partinumre** – Arbeidere verken angir eller velger et partinummer. I stedet tilordner systemet automatisk et partinummer til produksjonsordren før den frigis.
 
-
 ### <a name="enable-the-feature-on-your-system"></a>Aktivere funksjonen i systemet
 
-Hvis du vil at jobbkortenhetene skal godta et partinummer under ferdigmelding, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere følgende funksjoner (i denne rekkefølgen):
+Hvis du vil at jobbkortenhetene skal godta et partinummer under ferdigmelding, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere følgende funksjoner:
 
-1. Forbedret brukeropplevelse for dialogboksen Rapportfremdrift i jobbkortenheten.
-1. Aktiver angivelse av parti- og serienumre under ferdigrapportering fra jobbkortenheten
+- *Forbedret brukeropplevelse for dialogboksen Rapportfremdrift i jobbkortenheten.*
+- *Aktiver angivelse av parti- og serienumre under ferdigrapportering fra jobbkortenheten*<br>(Denne funksjonen er aktivert som standard fra og med Supply Chain Management versjon 10.0.29.)
 
 ### <a name="configure-products-that-require-batch-number-reporting"></a>Konfigurere produkter som krever partinummerrapportering
 
@@ -137,10 +136,10 @@ Jobbkortenheten støtter tre scenarier for rapportering av seriekontrollerte var
 
 ### <a name="enable-the-feature-on-your-system"></a>Aktivere funksjonen i systemet
 
-Hvis du vil at jobbkortenhetene skal godta et serienummer under ferdigmelding, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere følgende funksjoner (i denne rekkefølgen):
+Hvis du vil at jobbkortenhetene skal godta et serienummer under ferdigmelding, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere følgende funksjoner:
 
-1. Forbedret brukeropplevelse for dialogboksen Rapportfremdrift i jobbkortenheten.
-1. Aktiver angivelse av parti- og serienumre under ferdigrapportering fra jobbkortenheten
+- *Forbedret brukeropplevelse for dialogboksen Rapportfremdrift i jobbkortenheten.*
+- *Aktiver angivelse av parti- og serienumre under ferdigrapportering fra jobbkortenheten*<br>(Denne funksjonen er aktivert som standard fra og med Supply Chain Management versjon 10.0.29.)
 
 ### <a name="configure-products-that-require-serial-number-reporting"></a>Konfigurere produkter som krever serienummerrapportering
 

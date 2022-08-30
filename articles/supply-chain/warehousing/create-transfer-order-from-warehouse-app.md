@@ -2,7 +2,7 @@
 title: Opprette overføringsordrer fra lagerappen
 description: Denne artikkelen beskriver hvordan du oppretter og behandler overføringsordrer fra mobilappen Lagerstyring
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b9edc2d94aa1f4850d2e7fe2b4bdd1b092be944f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 45cbf7aca431c19e58de75355579304baef3cf7d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8877457"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336463"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Opprette overføringsordrer fra lagerappen
 
@@ -26,14 +26,14 @@ ms.locfileid: "8877457"
 
 Denne funksjonen lar lagerarbeidere opprette og behandle overføringsordrer direkte fra mobilappen Lagerstyring. Arbeideren begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen for å legge til nummerskilt i overføringsordren. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene.
 
-## <a name="turn-this-feature-on-or-off"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivere eller deaktivere denne funksjonen
+## <a name="turn-on-this-feature-and-its-prerequisites"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktiver denne funksjonen for dataforespørsler og forutsetningene
 
 Før du kan bruke denne funksjonen, må den og forutsetningene være aktivert i systemet. Administratorer kan bruke siden for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis det er nødvendig.
 
 1. Aktiver følgende to funksjoner (i rekkefølge) i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Fra og med Supply Chain Management versjon 10.0.25 er begge disse funksjonene aktivert som standard.
-    1. *Behandle lagerapphendelser*
-    1. *Opprett og behandle overføringsordrer fra lagerappen*
-1. Hvis du vil automatisere behandlingen av utgående forsendelser, må du også aktivere funksjonen [Bekreft utgående forsendelser fra satsvise jobber](confirm-outbound-shipments-from-batch-jobs.md).
+    1. *Behandle lagerapphendelser*<br>(Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres.)
+    1. *Opprett og behandle overføringsordrer fra lagerappen*<br>(Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres.)
+1. Hvis du vil automatisere behandlingen av utgående forsendelser, må du også aktivere funksjonen [*Bekreft utgående forsendelser fra satsvise jobber*](confirm-outbound-shipments-from-batch-jobs.md). (Fra og med Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management 10.0.25 og kan ikke deaktiveres.)
 
 ## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Definere et menyelement for mobilenhet for å opprette overføringsordrer
 
@@ -307,11 +307,11 @@ Nei, du kan ikke legge til flere nummerskilt i en overføringsordre som har lage
 
 #### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hvordan kan jeg finne eksisterende overføringsordrer som skal brukes via knappen Velg overføringsordre i mobilappen Lagerstyring, hvis ordren ennå ikke er opprettet i serverdelsystemet?
 
-Du kan for øyeblikket ikke slå opp overføringsordrer i appen, men du kan finne numrene for overføringsordrer på siden **Lagerapphendelser**. Hvis du vil ha mer informasjon, kan du se [Spørring til lagerapphendelser](#inquire-the-warehouse-app-events).
+Du kan gjøre det mulig for arbeidere å slå opp overføringsordrenumre i mobilappen Warehouse Management ved hjelp av funksjonen for [dataforespørsler](warehouse-app-data-inquiry.md). Du kan for eksempel opprette en [omvei](warehouse-app-detours.md) for mobilenheten som spør etter dataene som vises på nettklientens **Lagerapphendelsesside** (`WHSMobileDeviceQueueMessageCollection`) som en del av trinnet *Velg ordre – MobileDeviceQueueMessageCollectionIdentifierId*. Nummeret for overføringsordren er i samsvar med verdien som vises i feltet **Identifikator**. Se også [Spørre om lagerapphendelser](#inquire-the-warehouse-app-events).
 
 #### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kan jeg velge manuelt nummeret for overføringsordre som skal brukes fra mobilappen Lagerstyring?
 
-Bare numre for overføringsordrer som genereres automatisk via nummerserier, støttes.
+Bare numre for overføringsordrer som genereres automatisk via nummerserier, støttes. Se også svaret på det forrige spørsmålet som gjelder hvordan du konfigurerer knappen **Velg overføringsordre**. Hvis du vil ha mer informasjon om hvordan du finner numre for overføringsordrer, kan du se [Spørring til lagereapphendelser](#inquire-the-warehouse-app-events).
 
 ### <a name="background-processing"></a>Bakgrunnsbehandling
 

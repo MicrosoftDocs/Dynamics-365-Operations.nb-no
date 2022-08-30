@@ -2,7 +2,7 @@
 title: Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management
 description: Denne artikkelen beskriver hvordan du oppretter og viser egendefinerte instruksjoner for hvert trinn i hver oppgaveflyt som du definerte for mobilappen Warehouse Management.
 author: Mirzaab
-ms.date: 08/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-11
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 40b2115126aae28a41feaec4d3aabd73595107cd
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: faa9bfa320823664603153601c56654170e7e23a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220157"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334484"
 ---
 # <a name="customize-step-titles-and-instructions-for-the-warehouse-management-mobile-app"></a>Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management
 
@@ -28,9 +28,9 @@ Denne artikkelen beskriver hvordan du oppretter og viser egendefinerte instruksj
 - **Få arbeidere i gang raskere ved å la dem følge enkle instruksjoner for hvert oppgavetrinn.** Hvert trinn i en flyt gir instruksjoner som gjør det mulig for frontlinjearbeidere å forstå oppgaven.
 - **Gi instruksjoner som samsvarer med dine egne prosesser.** Skriv dine egne instruksjoner som samsvarer med forretnings- og lagerprosessene. Du kan for eksempel angi at terminologien passer for fysiske plass og lokale forkortelser.
 
-## <a name="turn-on-the-warehouse-app-step-instructions-feature"></a>Slå på instruksjonsfunksjonen i lagerappen
+## <a name="turn-the-warehouse-app-step-instructions-feature-on-or-off"></a>Aktiver eller deaktiver instruksjonsfunksjonen i lagerappen
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Trinninstruksjoner for lagerapp* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Før du kan bruke denne funksjonen, må den være aktivert for systemet. Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en versjon som er eldre enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Trinninstruksjoner for lagerapp* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="step-titles-and-step-instructions-in-the-app"></a>Trinntitler og trinninstruksjoner i appen
 

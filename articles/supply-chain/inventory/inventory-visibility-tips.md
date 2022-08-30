@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9f571d353f99c91776424bc2fa3405f73b2bae0a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3bdd161815a15d5c39b3c0afc176a288c8d9055a
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885964"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306093"
 ---
 # <a name="inventory-visibility-tips"></a>Tips for lagersynlighet
 
@@ -35,5 +35,8 @@ Her er noen tips du bør vurdere når du definerer og bruker tillegget for lager
 - [Partisjonskonfigurasjonen](inventory-visibility-configuration.md#partition-configuration) består for øyeblikket av to basisdimensjoner (`SiteId` og `LocationId`) som angir hvordan dataene skal distribueres. Operasjoner under samme partisjon kan levere høyere ytelse til lavere kostnad. Løsningen inkluderer denne partisjonskonfigurasjonen som standard. Derfor *trenger du ikke å omberegne manuelt*. Ikke tilpass standard partisjonskonfigurasjon. Hvis du sletter eller endrer den, vil du sannsynligvis forårsake en uventet feil.
 - Basisdimensjoner som er definert i partisjonskonfigurasjonen, bør ikke defineres i [konfigurasjonen for produktindekshierarki](inventory-visibility-configuration.md#index-configuration).
 - [Konfigurasjonen for produktindekshierarkiet](inventory-visibility-configuration.md#index-configuration) må ha minst ett indekshierarki (som for eksempel inneholder basisdimensjonen `Empty`), ellers vil spørringene mislykkes med feilen "Ingen indekshierarki er angitt".
+- Datakilden `@iv` er en forhåndsdefinert datakilde, og de fysiske målene som er definert i `@iv` med prefiks `@`, er forhåndsdefinerte mål. Disse målene er en forhåndsdefinert konfigurasjon for fordelingsfunksjonen, så ikke endre eller slett dem, ellers vil du sannsynligvis oppleve uventede feil når du bruker fordelingsfunksjonen.
+- Du kan legge til nye fysiske mål i det forhåndsdefinerte beregnede målet `@iv.@available_to_allocate`, men du må ikke endre navnet.
+- Hvis du gjenoppretter en Supply Chain Management-database, kan den gjenopprettede databasen inneholde data som ikke lenger er konsekvent med data som tidligere er synkronisert med Lagersynlighet til Dataverse. Denne datainkonsekvensen kan forårsake systemfeil og andre problemer. Det er derfor viktig at du alltid renser alle relaterte lagersynlighetsdata fra Dataverse før du gjenoppretter en Supply Chain Management-database. Hvis du vil ha mer informasjon, kan du se [Rens lagersynlighetsdata fra Dataverse før gjenoppretting av Supply Chain Management-databasen](inventory-visibility-setup.md#restore-environment-database).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

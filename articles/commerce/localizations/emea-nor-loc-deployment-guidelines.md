@@ -1,83 +1,65 @@
 ---
-ms.openlocfilehash: b17bd56f9f3e4def341658626915adbd7f5aada6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+title: Retningslinjer for distribusjon for kassaapparater for Norge (eldre)
+description: Denne artikkelen er en distribusjonshåndbok som viser hvordan du aktiverer Microsoft Dynamics 365 Commerce-lokalisering for Norge.
+author: EvgenyPopovMBS
+ms.date: 08/23/2022
+ms.topic: article
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2018-2-28
+ms.openlocfilehash: fb597add48ac3508a88142e63d80f405b6b5f8b4
+ms.sourcegitcommit: 1dbff0b5fa1f4722a1720fac35cce94606fa4320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281545"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9346052"
 ---
 # <a name="deployment-guidelines-for-cash-registers-for-norway-legacy"></a>Retningslinjer for distribusjon for kassaapparater for Norge (eldre)
----
 
-tittel: Retningslinjer for distribusjon for kassaapparater for Norge (eldre) [!include [banner](../includes/banner.md)]
-beskrivelse: Denne artikkelen er en distribusjonshåndbok som viser hvordan du aktiverer Microsoft Dynamics 365 Commerce-lokalisering for Norge.
+[!include [banner](../includes/banner.md)]
 
-forfatter: EvgenyPopovMBS Denne artikkelen er en distribusjonshåndbok som viser hvordan du aktiverer Microsoft Dynamics 365 Commerce-lokalisering for Norge. Lokaliseringen består av flere utvidelser av Commerce-komponenter. Ved hjelp av utvidelsene kan du for eksempel skrive ut egendefinerte felter på kvitteringer, registrere flere revisjonshendelser, salgstransaksjoner og betalingstransaksjoner i salgsstedet, digitalt signere salgstransaksjoner og skrive ut X- og Y-rapporter i lokale formater. Hvis du vil ha mer informasjon om lokalisering for Norge, kan du se [Kassefunksjon for Norge](./emea-nor-cash-registers.md).
-ms.dato: 20.12.2021
+> [!WARNING]
+> Dette eksemplet på regnskapsintegreringsfunksjon benytter seg ikke av [regnskapsintegreringsrammeverket](./fiscal-integration-for-retail-channel.md) og blir avskrevet i senere oppdateringer. Du bør i stedet bruke [funksjonaliteten som er basert på regnskapsintegreringsrammeverket](./emea-nor-fi-deployment.md).
 
-ms.topic: artikkel Denne eksemplet er en del av Retail Software Development Kit (SDK). Hvis du vil ha informasjon om SDK, kan du se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
-målgruppe: Programbruker, utvikler, IT-pro
+Denne artikkelen er en distribusjonshåndbok som viser hvordan du aktiverer Microsoft Dynamics 365 Commerce-lokalisering for Norge. Lokaliseringen består av flere utvidelser av Commerce-komponenter. Ved hjelp av utvidelsene kan du for eksempel skrive ut egendefinerte felter på kvitteringer, registrere flere revisjonshendelser, salgstransaksjoner og betalingstransaksjoner i salgsstedet, digitalt signere salgstransaksjoner og skrive ut X- og Y-rapporter i lokale formater. Hvis du vil ha mer informasjon om lokalisering for Norge, kan du se [Kassefunksjon for Norge](./emea-nor-cash-registers.md).
 
-ms.reviewer: v-chgriffin Dette eksemplet består av utvidelser for Commerce Runtime (CRT), Retail Server og salgssted. Hvis du vil kjøre dette eksemplet, må du endre og bygge CRT, Retail Server og salgsstedsprosjektene. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i denne artikkelen. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Microsoft Visual Studio Online (VSO) der ingen filer er endret ennå.
-ms.search.region: Globalt
+Denne eksemplet er en del av Retail Software Development Kit (SDK). Hvis du vil ha informasjon om SDK, kan du se [Arkitektur for Retail Software Development Kit (SDK)](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-ms.author: josaw
+Dette eksemplet består av utvidelser for Commerce Runtime (CRT), Retail Server og salgssted. Hvis du vil kjøre dette eksemplet, må du endre og bygge CRT, Retail Server og salgsstedsprosjektene. Vi anbefaler at du bruker en uendret Retail SDK til å foreta endringene som er beskrevet i denne artikkelen. Vi anbefaler også at du bruker et kildekontrollsystem for eksempel Microsoft Visual Studio Online (VSO) der ingen filer er endret ennå.
+
 > [!NOTE]
-ms.search.validFrom: 2018-02-28 I Commerce 10.0.8 og nyere kalles Retail Server Commerce Scale Unit. Siden denne artikkelen gjelder for flere tidligere versjoner av appen, brukes *Retail Server* i hele artikkelen.
+> I Commerce 10.0.8 og nyere kalles Retail Server Commerce Scale Unit. Siden denne artikkelen gjelder for flere tidligere versjoner av appen, brukes *Retail Server* i hele artikkelen.
 >
----
 > Fremgangsmåtene i denne artikkelen er forskjellige, avhengig av hvilken versjon av Commerce du bruker. Hvis du vil ha mer informasjon, kan du se [Nyheter eller endringer i Dynamics 365 Retail](../get-started/whats-new.md).
 
-
-6. Oppdater konfigurasjonsfilen for Retail Server. I filen **RetailSDK\\Packages\\RetailServer\\Code\\web.config** legger du til følgende linjer i delen **extensionComposition**.
 ### <a name="using-certificate-profiles-in-commerce-channels"></a>Bruke sertifikatprofiler i Commerce-kanaler
 
-
-    ``` xml
 I Commerce-versjoner 10.0.15 og nyere kan du bruke funksjonene for de [brukerdefinerte sertifikatprofilene for detaljhandelsforretninger](./certificate-profiles-for-retail-stores.md) som støtter failover til frakoblet når Key Vault eller Commerce Headquarters ikke er tilgjengelig. Funksjonen utvider funksjonen [Administrer utvidelser for detaljhandelskanaler](../dev-itpro/manage-secrets.md).
-    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
 
-    ```
 Følg denne fremgangsmåten for å bruke denne funksjonaliteten i CRT-utvidelsen.
 
-
-7. Kjør **msbuild** for hele Retail SDK for å opprette distribuerbare pakker.
 1. Opprette et nytt CRT-utvidelsesprosjekt (prosjekttype for C#-klassebibliotek). Bruk eksempelmalene fra Retail Software Development Kit (SDK) (RetailSDK\SampleExtensions\CommerceRuntime).
-8. Ta i bruk pakkene via Microsoft Dynamics Lifecycle Services (LCS) eller manuelt. Hvis du vil ha mer informasjon, kan du se [Opprette distribuerbare pakker](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
 
 2. Legg til egendefinert behandler for CertificateSignatureServiceRequest i prosjektet SequentialSignatureRegister.
-### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Aktiver den digitale signaturen i frakoblet modus for Modern POS
-
 
 3. Hvis du vil lese en hemmelig samtale, `GetUserDefinedSecretCertificateServiceRequest` ved hjelp av en konstruktør med profileId-parameter. Det vil starte funksjonaliteten ved hjelp av innstillinger fra sertifikatprofiler. Sertifikatet hentes enten fra Azure Key Vault eller fra den lokale maskinlagringen, basert på innstillingene.
-Hvis du vil aktivere den digitale signaturen i frakoblet modus for Modern POS, må du følge disse trinnene etter at du har aktivert Modern POS på en ny enhet.
-
 
     ```csharp
-1. Sign in to POS.
     GetUserDefinedSecretCertificateServiceRequest getUserDefinedSecretCertificateServiceRequest = new GetUserDefinedSecretCertificateServiceRequest(profileId: "ProfileId", secretName: null, thumbprint: null, expirationInterval: null);
-2. On the **Database connection status** page, make sure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
     GetUserDefinedSecretCertificateServiceResponse getUserDefinedSecretCertificateServiceResponse = request.RequestContext.Execute<GetUserDefinedSecretCertificateServiceResponse>(getUserDefinedSecretCertificateServiceRequest);
-3. Sign out of POS.
 
-4. Wait a while for the offline database to be fully synchronized.
     X509Certificate2 Certificate = getUserDefinedSecretCertificateServiceResponse.Certificate;
-5. Sign in to POS.
     ```
-6. På siden **Status for databasetilkobling** må du kontrollere at den frakoblede databasen er fullstendig synkronisert. Når verdien i feltet **Ventende transaksjoner i frakoblet database** er **0** (null), synkroniseres databasen fullstendig.
 
-7. Start Modern POS på nytt.
 4. Når sertifikatet hentes, kan du fortsette med datasignering.
 
-
-
 5. Bygg CRT-utvidelsesprosjektet.
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
-6. Kopier utdataklassebiblioteket og lim det inn i ...\RetailServer\webroot\bin\Ext for manuell testing.
+6. Kopier utdataklassebiblioteket og lim det inn i ...\RetailServer\webroot\bin\Ext for manuell testing.
 
-7. Oppdater informasjon om utvidelsessammensetning i CommerceRuntime.Ext.config-filen med informasjonen om egendefinerte biblioteker.
+7. Oppdater informasjon om utvidelsessammensetning i CommerceRuntime.Ext.config-filen med informasjonen om egendefinerte biblioteker.
 
 ## <a name="development-environment"></a>Utviklingsmiljø
 
@@ -1633,3 +1615,27 @@ Følg denne fremgangsmåten for å opprette distribuerbare pakker som inneholder
     Filen heter **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config** og ligger under **Extensions.SequentialSignatureRegister\\bin\\Debug**.
 
     ---
+
+6. Oppdater konfigurasjonsfilen for Retail Server. I filen **RetailSDK\\Packages\\RetailServer\\Code\\web.config** legger du til følgende linjer i delen **extensionComposition**.
+
+    ``` xml
+    <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
+    ```
+
+7. Kjør **msbuild** for hele Retail SDK for å opprette distribuerbare pakker.
+8. Ta i bruk pakkene via Microsoft Dynamics Lifecycle Services (LCS) eller manuelt. Hvis du vil ha mer informasjon, kan du se [Opprette distribuerbare pakker](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
+### <a name="enable-the-digital-signature-in-offline-mode-for-modern-pos"></a>Aktiver den digitale signaturen i frakoblet modus for Modern POS
+
+Hvis du vil aktivere den digitale signaturen i frakoblet modus for Modern POS, må du følge disse trinnene etter at du har aktivert Modern POS på en ny enhet.
+
+1. Logg på POS.
+2. På siden **Status for databasetilkobling** må du kontrollere at den frakoblede databasen er fullstendig synkronisert. Når verdien i feltet **Ventende nedlastinger** er **0** (null), synkroniseres databasen fullstendig.
+3. Logg av salgsstedet.
+4. Vent litt til den frakoblede databasen er fullstendig synkronisert.
+5. Logg på POS.
+6. På siden **Status for databasetilkobling** må du kontrollere at den frakoblede databasen er fullstendig synkronisert. Når verdien i feltet **Ventende transaksjoner i frakoblet database** er **0** (null), synkroniseres databasen fullstendig.
+7. Start Modern POS på nytt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

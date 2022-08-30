@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f8864ac22153908492b5e7c30a03617e6dc9d05a
-ms.sourcegitcommit: 5b34b41ae74269ba639e2876bc5862ef468da1cc
+ms.openlocfilehash: 9b4b538e6d50013626739e19fee2a050b630bf7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9166883"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334813"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.24 (februar 2022)
 
@@ -48,7 +48,7 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre dette i [
 | Produksjonskontroll | Kontroll av materialtilgjengelighet etter behov for produksjonsordrer | Denne funksjonen gjør det raskere å åpne siden **Produksjonsordrer som skal frigis**, som er tilgjengelig fra arbeidsområdet **Produksjonsstyring**. Uten denne funksjonen kontrollerer systemet automatisk om materialer er tilgjengelige for alle oppførte produksjonsordrer så snart du åpner siden, noe som kan ta lang tid hvis du har et stort antall ordrer. Når denne funksjonen er aktivert, gir systemet i stedet en verktøylinjeknapp, som du kan bruke til å starte materialkontrollen bare for valgte ordrer og ved behov. |
 | Produksjonskontroll | Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke lagerstyring) | Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Denne funksjonen støtter bare varer som ikke er aktivert til å bruke Warehouse Management-prosesser (WMS). Støtte for WMS-aktiverte varer er planlagt for en fremtidig frigivelse.<p>Noen produsenter, spesielt de som finnes i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeiderne kan for eksempel bruke en vekt til å veie mengden material som brukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere hvilke partinumre som ble forbrukt under produksjonen av hvert produkt. |
 | Produksjonskontroll | Ferdigmelde arbeidsbelastning for warehouse management for sky- og kantskalaenhet | Denne funksjonen gjør at ansatte kan bruke mobilappen Warehouse Management til å ferdigmelde en produksjons- eller partiordre når appen kjører mot en Warehouse Management-arbeidsbelastning på en sky- eller kantskalaenhet. Hvis du vil ha mer informasjon, kan du se [Ferdigmeld og plasser på en skalaenhet](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Lagerstyring | Nye sider for arbeidsområde for lastplanlegging | Aktiverer to nye arbeidsområdesider for lastplanlegging: **arbeidsområde for planlegging av innkommende last** og **arbeidsområde for planlegging av utgående last**. |
+| Lagerstyring | Nye sider for arbeidsområde for lastplanlegging | Legger til to nye arbeidsområdesider for lastplanlegging: **Arbeidsområde for planlegging av innkommende last** og **Arbeidsområde for planlegging av utgående last**. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og oppdaterte dokumentasjonsressurser
 

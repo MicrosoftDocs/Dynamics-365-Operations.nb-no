@@ -2,7 +2,7 @@
 title: Planlagt direkteoverføring
 description: Denne artikkelen beskriver avansert, planlagt direkteoverføring, hvor lagerantallet som kreves for en ordre, blir dirigert rett fra mottak eller oppretting til riktig utleveringsport eller oppstillingsområde. All gjenværende beholdning fra den inngående kilden dirigeres til den riktige lagringslokasjonen via den vanlige plasseringsprosessen.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 4f379b3cdb6830f989199afde7d751842047df79
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: b530cc1403458775fd330e826a32417d3b03bf25
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9070297"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9334573"
 ---
 # <a name="planned-cross-docking"></a>Planlagt direkteoverføring
 
@@ -37,10 +37,10 @@ På tidspunktet for mottak av inngående ordre, identifiserer direkteoverføring
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivere funksjonene for planlagt direkteoverføring
 
-Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i denne artikkelen, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funksjoner i følgende rekkefølge:
+Hvis du kjører Supply Chain Management, versjon 10.0.28 eller tidligere, kan det hende at du må aktivere planlagt direkteoverføring før du kan bruke den. Gå til [Funksjonsadministrering](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktiver følgende funksjoner i følgende rekkefølge:
 
-1. *Planlagt direkteoverføring*
-1. *Kryssoverføringsmaler med lokasjonsdirektiver*
+1. *Planlagt direkteoverføring*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres.)
+1. *Kryssoverføringsmaler med lokasjonsdirektiver*<br>(Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard.)
     > [!NOTE]
     > Ved hjelp av denne funksjonen kan **Direktivkode**-feltet angis i malen for direkteoverføring, på samme måte som du oppretter etterfyllingsmaler. Hvis du aktiverer denne funksjonen, kan du legge til en direktivkode på arbeidsmallinjene for direkteoverføring for den endelige *Plasser*-linjen. Dette sikrer at den endelige plasseringslokasjonen kan bestemmes under oppretting av arbeidsprosesser før du vurderer arbeidsmaler.
 
@@ -92,7 +92,7 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 
     - **Direktivkode:** La dette feltet stå tomt
 
-        Dette alternativet aktiveres av funksjonen *Kryssoverføringsmaler med lokasjonsdirektiver*. Systemet bruker lokasjonsdirektiver til å bidra til å finne den beste lokasjonen å flytte lageret for direkteoverføring til. Du kan definere alternativet ved å tilordne en direktivkode til hver relevante direkteoverføringsmal. Hvis en direktivkode er angitt, søker systemet etter lokasjonsdirektiver per direktivkode når arbeid må genereres. På denne måten kan du begrense lokasjonsdirektiver som brukes for en bestemt direkteoverføringsmal.
+        Dette alternativet aktiveres av malen for direkteoverføring med funksjonen *Kryssoverføringsmaler med lokasjonsdirektiver* (i Supply Chain Management, versjon 10.0.29 er funksjonen aktivert som standard). Systemet bruker lokasjonsdirektiver til å bidra til å finne den beste lokasjonen å flytte lageret for direkteoverføring til. Du kan definere alternativet ved å tilordne en direktivkode til hver relevante direkteoverføringsmal. Hvis en direktivkode er angitt, søker systemet etter lokasjonsdirektiver per direktivkode når arbeid må genereres. På denne måten kan du begrense lokasjonsdirektiver som brukes for en bestemt direkteoverføringsmal.
 
     - **Validerer tidsvindu:** *Ja*
 

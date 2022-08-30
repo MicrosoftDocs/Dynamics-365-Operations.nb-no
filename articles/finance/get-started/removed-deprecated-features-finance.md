@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 4f2a1984d39713daa84f15422d7e0680b7f6c601
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
+ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219576"
+ms.lasthandoff: 08/18/2022
+ms.locfileid: "9313891"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller avskrevne funksjoner i Dynamics 365 Finance
 
@@ -46,6 +46,17 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Berørte produktområder** | Program |
 | **Distribusjonsalternativ** | Alle |
 | **Status** | Avskrevet: Etter april 2023 vil ikke funksjonen **Lageroverføringsordrer som har avgift på overføringspris** lenger motta kundestøtte med feilrettinger og sikkerhetsreparasjon. Kunder blir bedt om å bruke den forbedrede funksjonaliteten [Lageroverføringsordrer for India](../../finance/localizations/apac-ind-stock-transfer.md). Etter oktober 2023 er ikke funksjonen **Lageroverføringsordrer som har avgift på overføringspris** lenger tilgjengelige, og kunder blir bedt om å flytte til den forbedrede funksjonen. |
+
+### <a name="bank-statement-import-and-export-of-positive-pay-file"></a>Import og eksport av positiv lønnsfil for bankkontoutdrag
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsak til avskrivning/fjerning** |Erstattes av forbedret funksjonalitet, importer bankkontoutdrag og eksporter positive lønnsfiler.| 
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: XSLT-funksjonaliteten for import og eksport av filer vil ikke lenger få støtte med feilrettinger og sikkerhetsrettinger. Kundene blir bedt om å bruke den forbedrede funksjonen: [Definer positive lønnsfiler ved hjelp av elektronisk rapportering](../../finance/accounts-payable/set-up-positive-pay-er.md) og [Definer avansert bankavstemming ved hjelp av elektronisk rapportering](../../finance/accounts-payable/import-bai2-er.md). Etter september 2022 vil ikke XSLT-funksjonaliteten lenger være tilgjengelig, og kunder blir bedt om å flytte til den forbedrede funksjonaliteten.|
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.26
 

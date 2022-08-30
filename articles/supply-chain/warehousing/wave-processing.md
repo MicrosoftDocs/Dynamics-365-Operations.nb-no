@@ -2,7 +2,7 @@
 title: Bølgeoppretting og -behandling
 description: Denne artikkelen beskriver hvordan du oppretter, behandler og frigir en bølge for å opprette plukkarbeid for en last, forsendelse, produksjonsordre eller Kanban-ordre.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 60bf4ab6944bd982e022ead6431adae417ddfb43
-ms.sourcegitcommit: cfe8fbc202c3eb05d894076fdf99e46704f17365
+ms.openlocfilehash: 0466019990773ee93e063a255c15a7d64eecdf78
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "9014626"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336013"
 ---
 # <a name="wave-creation-and-processing"></a>Bølgeoppretting og -behandling
 
@@ -191,7 +191,7 @@ Bruk siden **Detaljer om satsvis jobb for bølge** til å inspisere de satsvise 
 
 ### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>Aktivere eller deaktivere siden Detaljer om satsvis jobb for bølge
 
-Fra og med Supply Chain Management versjon 10.0.25 er siden **Detaljer om satsvis jobb for bølge** aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Detaljer om satsvis jobb for bølge* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.25 er funksjonen aktivert som standard. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Detaljer om satsvis bølgejobb* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>Bruk siden Detaljer om satsvis jobb for bølge
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 0f0419f1a109f043cb1af6a575704c24420639f1
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: a48e6a81299badf4b811e1cf905beb06099e5a24
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218922"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335983"
 ---
 # <a name="wave-template-grouping"></a>Gruppering av bølgemal
 
@@ -31,7 +31,7 @@ Bølgemalgruppering gjør det mulig for systemet å bruke [bølgemaloppsett](tas
 
 ## <a name="turn-on-the-wave-template-grouping-feature"></a>Aktivere funksjonen Bølgemalgruppering
 
-Før du kan bruke *Bølgemalgruppering*-funksjonen, må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Før du kan bruke *Bølgemalgruppering*-funksjonen, må den aktiveres for systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Bølgemalgruppering*

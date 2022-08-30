@@ -2,29 +2,30 @@
 title: Eksempel på integrering av bilagsskriver for Italia
 description: Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Italia i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: e63f8d68b8b79143771c0b1c757cb78659183b67
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280275"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336744"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Eksempel på integrering av bilagsskriver for Italia
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Italia i Microsoft Dynamics 365 Commerce.
 
-Commerce-funksjonen for Italia omfatter en eksempelintegrering av salgsstedet med en bilagsskriver. Eksemplet utvider [funksjonaliteten for regnskapsintegrering](fiscal-integration-for-retail-channel.md) slik at den fungerer med [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series)-skrivere fra Epson, og det gjør det mulig å kommunisere med en bilagsskriver i nettservermodus via EpsonFPMate-nettjenesten ved hjelp av Fiscal ePOS-Print-API-en. Eksemplet støtter bare modusen Registratore Telematico (RT). Eksemplet leveres i form av kildekode og er en del av Retail Software Development Kit (SDK).
+Commerce-funksjonen for Italia omfatter en eksempelintegrering av salgsstedet med en bilagsskriver. Eksemplet utvider [funksjonaliteten for regnskapsintegrering](fiscal-integration-for-retail-channel.md) slik at den fungerer med [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series)-skrivere fra Epson, og det gjør det mulig å kommunisere med en bilagsskriver i nettservermodus via EpsonFPMate-nettjenesten ved hjelp av Fiscal ePOS-Print-API-en. Eksemplet støtter bare modusen Registratore Telematico (RT). Eksemplet leveres i form av kildekode og er en del av Commerce Software Development Kit (SDK).
 
-Microsoft frigir ikke maskinvare, programvare eller dokumentasjon fra Epson. Hvis du vil ha mer informasjon om hvordan du får tak i bilagsskriveren og bruker den, kan du kontakte [Epson Italia S.p.A](https://www.epson.it).
+Microsoft frigir ikke maskinvare, programvare eller dokumentasjon fra Epson. Hvis du vil ha mer informasjon om hvordan du får tak i bilagsskriveren og bruker den, kan du kontakte [Epson Italia S.p.A.](https://www.epson.it)
 
 ## <a name="scenarios"></a>Scenarier
 
@@ -99,12 +100,10 @@ Eksemplet på integrering av regnskapsskriver implementerer følgende regler som
 
 ## <a name="set-up-fiscal-integration-for-italy"></a>Definere regnskapsintegrering for Italia
 
-Eksemplet på integrering av bilagsskriver for Italia er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Retail SDK. Eksemplet finnes i **src\\FiscalIntegration\\EpsonFP90IIISample**-mappen i repositoriet for [løsningen for Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (for eksempel [eksemplet i release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en regnskapsdokumentleverandør, som er en utvidelse av Commerce Runtime (CRT) og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Retail SDK, kan du se [Retail SDK-arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en kompileringskontroll for uavhengig emballasje-SDK](../dev-itpro/build-pipeline.md).
+Eksemplet på integrering av bilagsskriver for Italia er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Commerce SDK. Eksemplet ligger i mappen **src\\FiscalIntegration\\EpsonFP90IIISample** i repositoriet [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en regnskapsdokumentleverandør, som er en utvidelse av Commerce Runtime (CRT) og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Commerce SDK, kan du se [Last ned Commerce SDK-eksempler og referansepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) og [Definer kompileringskontroll for SDK for uavhengig pakking](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Italia (eldre)](emea-ita-fpi-sample-sdk.md).
->
-> Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
+> [!NOTE]
+> Eksemplet på integrering av bilagsskriveren for Italia er tilgjengelig i Commerce SDK fra og med Commerce-versjon 10.0.29. I Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Italia (eldre)](emea-ita-fpi-sample-sdk.md).
 
 Fullfør fremgangsmåten for oppsett av regnskapsintegrering slik det beskrives i [Oppsett av regnskapsintegrering for Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -123,18 +122,16 @@ Hvis du vil aktivere registreringsprosessen, følger du denne fremgangsmåten fo
 1. Last ned konfigurasjonsfiler for regnskapsdokumentleverandøren og regnskapskoblingen:
 
     1. Open respositoriet for [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen (for eksempel **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen.
     1. Åpne **src \> FiscalIntegration \> EpsonFP90IIISample**.
-    1. Last ned leverandørkonfigurasjonsfilen for regnskapsdokument under **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Konfigurasjon \> DocumentProviderEpsonFP90IIISample.xml** (for eksempel [filen for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/CommerceRuntime/DocumentProvider.EpsonFP90IIISample/Configuration/DocumentProviderEpsonFP90IIISample.xml)).
-    1. Last ned konfigurasjonsfilen for regnskapskobling under **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Konfigurasjon \> ConnectorEpsonFP90IIISample.xml** (for eksempel [filen for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/EpsonFP90IIISample/HardwareStation/EpsonFP90IIIFiscalDeviceSample/Configuration/ConnectorEpsonFP90IIISample.xml).
+    1. Last ned leverandørkonfigurasjonsfilen for regnskapsdokument under **CommerceRuntime \> DocumentProvider.EpsonFP90IIISample \> Konfigurasjon \> DocumentProviderEpsonFP90IIISample.xml**.
+    1. Last ned konfigurasjonsfilen for regnskapskobling under **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Konfigurasjon \> ConnectorEpsonFP90IIISample.xml**.
 
-    > [!WARNING]
-    > På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Konfigurasjonsfilene for dette regnskapsintegreringseksemplet ligger i følgende mapper for Retail SDK på en utvikler-VM i LCS:
+    > [!NOTE]
+    > For Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Konfigurasjonsfilene for dette regnskapsintegreringseksemplet ligger i følgende mapper for Retail SDK på en utvikler-VM i LCS:
     >
     > - **Konfigurasjonsfil for regnskapsdokumentleverandør:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Konfigurasjon\\DocumentProviderEpsonFP90IIISample.xml
     > - **Konfigurasjonsfil for regnskapskobling:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Konfigurasjon\\ConnectorEpsonFP90IIISample.xml
-    > 
-    > Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
 
 1. Gå til **Detaljhandel og handel \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**. På **Generelt**-fanen angir du **Aktiver regnskapsintegrering**-alternativet til **Ja**.
 1. Gå til **Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Leverandører for regnskapsdokument**, og last inn konfigurasjonsfil for regnskapsdokumentleverandør som du lastet ned tidligere.
@@ -256,16 +253,15 @@ Følgende innstillinger er inkludert i konfigurasjonen for regnskapskoblingen so
 
 ### <a name="configure-channel-components"></a>Konfigurere kanalkomponenter
 
-> [!WARNING]
-> På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Italia (eldre)](emea-ita-fpi-sample-sdk.md).
->
-> Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
+> [!NOTE]
+> - Eksemplet på integrering av bilagsskriveren for Italia er tilgjengelig i Commerce SDK fra og med Commerce-versjon 10.0.29. I Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Italia (eldre)](emea-ita-fpi-sample-sdk.md).
+> - Commerce-eksempler som distribueres i miljøet ditt, oppdateres ikke automatisk når du bruker tjeneste- eller kvalitetsoppdateringer for Commerce-komponenter. Du må manuelt oppdatere de obligatoriske eksemplene.
 
 #### <a name="set-up-the-development-environment"></a>Definere utviklingsmiljøet
 
 Følg denne fremgangsmåten for å definere et distribusjonsmiljø slik at du kan teste og utvide eksemplet.
 
-1. Klon eller last ned repositoriet for [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen. Hvis du vil ha mer informasjon, kan du se [Last ned eksempler og referansepakker i SDK for Retail fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Klon eller last ned repositoriet for [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen. Hvis du vil ha mer informasjon, kan du se [Last ned eksempler og referansepakker i SDK for Commerce fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Åpne integreringsløsningen for bilagsskriver i **Dynamics365Commerce.Solutions\\FiscalIntegration\\EpsonFP90IIISample\\EpsonFP90IIISample.sln**, og bygg den.
 1. Installer CRT-utvidelser:
 
@@ -303,10 +299,10 @@ Følg fremgangsmåten i [Konfigurer en kompileringskontroll for et regnskapsinte
 
 ## <a name="design-of-extensions"></a>Utforming av utvidelser
 
-Eksemplet på integrering av bilagsskriver for Italia er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Retail SDK. Eksemplet finnes i **src\\FiscalIntegration\\EpsonFP90IIISample**-mappen i repositoriet for [løsningen for Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (for eksempel [eksemplet i release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/EpsonFP90IIISample)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en regnskapsdokumentleverandør, som er en utvidelse av CRT og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Retail SDK, kan du se [Retail SDK-arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en kompileringskontroll for uavhengig emballasje-SDK](../dev-itpro/build-pipeline.md).
+Eksemplet på integrering av bilagsskriver for Italia er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Commerce SDK. Eksemplet ligger i mappen **src\\FiscalIntegration\\EpsonFP90IIISample** i repositoriet [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en regnskapsdokumentleverandør, som er en utvidelse av CRT og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Commerce SDK, kan du se [Last ned Commerce SDK-eksempler og referansepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) og [Definer kompileringskontroll for SDK for uavhengig pakking](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Italia (eldre)](emea-ita-fpi-sample-sdk.md). Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
+> [!NOTE]
+> Eksemplet på integrering av bilagsskriveren for Italia er tilgjengelig i Commerce SDK fra og med Commerce-versjon 10.0.29. I Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Italia (eldre)](emea-ita-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime-utvidelsesutforming
 

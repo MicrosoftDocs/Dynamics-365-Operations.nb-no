@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 76aee3a736efa9ed7431d4e5127cd0abaccd659f
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c9d41645531fa4318289f32a564c34f0f92681df
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218856"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335863"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avansert lastplanlegging under en bølge
 
@@ -36,7 +36,7 @@ Hvis du vil bruke funksjonen, må du definere systemet på følgende måte:
 
 ## <a name="turn-on-advanced-wave-load-building-in-your-system"></a>Aktivere avansert bølgelastplanlegging i systemet
 
-Før du kan bruke avansert bølgelastplanlegging, må to funksjoner være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere statusen for disse funksjonene og aktivere dem hvis nødvendig. I **Funksjonsadministrering**-arbeidsområdet er funksjonene oppført på følgende måte:
+Før du kan bruke avansert bølgelastplanlegging, må to funksjoner være aktivert for systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere statusen for disse funksjonene og aktivere dem hvis nødvendig. I **Funksjonsadministrering**-arbeidsområdet er funksjonene oppført på følgende måte:
 
 - Funksjon for bygging av bølgelast:
 

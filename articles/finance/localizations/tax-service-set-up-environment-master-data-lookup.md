@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3642bb88d5b0570014513b64eef5fdab6d1ee9d3
-ms.sourcegitcommit: 5b721f6fc1ba4350b5bd0eae457f71d80246db42
+ms.openlocfilehash: 2f9d882340171173e5e503f8b5e3aa856e8544b0
+ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9181132"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "9306211"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Aktiver hoveddataoppslag for mva-beregningskonfigurasjon 
 
@@ -108,7 +108,7 @@ Dataverse bruker Azure AD-appen du opprettet for å kalle økonomi- og driftsapp
     - **Leverandør** – Sett dette feltet til **NonAAD**.
     - **E-post** – Angi **dataverseintegration** eller en annen verdi. (Verdien behøver ikke å være en gyldig e-postkonto.)
 
-3. Tilordne sikkerhetsrollen **Program for virtuell enhet for CDS** til brukeren.
+3. Tildel sikkerhetsrollen **Integreringsapp for virtuell enhet for Dataverse** til brukeren.
 4. Fjern alle andre roller, inkludert **Systembruker**.
 5. Gå til **Systemadministrasjon** \> **Oppsett** \> **Azure Active Directory-apper** for å registrere Dataverse. 
 6. Legg til en rad, gå til feltet **Klient-ID**, og angi verdien for **App-ID (klient)** du noterte ned tidligere.
@@ -199,17 +199,11 @@ Hvis du vil ha mer informasjon, kan du se [Aktiver Microsoft Dataverse virtuelle
 
 ## <a name="set-up-the-connected-application-for-tax-calculation"></a><a name='set-up'></a>Konfigurer den tilkoblede appen for avgiftsberegning
 
-1. Åpne arbeidsområdet **Funksjonsstyring** i RCS, og aktiver følgende funksjoner:
-
-    - Støtte for Dataverse-datakilder for elektronisk rapportering
-    - Støtte for Dataverse-datakilder for avgiftstjeneste
-    - Globaliseringsfunksjoner
-
-2. Gå til **Elektronisk rapportering**, og deretter, i delen **Relaterte koblinger**, velger du **Tilkoblede apper**.
+1. Gå til **Elektronisk rapportering**, og deretter, i delen **Relaterte koblinger**, velger du **Tilkoblede apper**.
 
     [![Tilkoblede apper.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Velg **Ny** for å legge til en oppføring, og angi følgende informasjon.
+2. Velg **Ny** for å legge til en oppføring, og angi følgende informasjon.
 
     - **Navn** – Angi et navn.
     - **Type** – Velg **Dataverse**.
@@ -217,12 +211,18 @@ Hvis du vil ha mer informasjon, kan du se [Aktiver Microsoft Dataverse virtuelle
     - **Leier** – Angi leieren din.
     - **Egendefinert URL-adresse** – Angi URL-adressen for Dataverse, og legg til **/api/data/v9.1** etter den.
 
-4. Velg **Kontroller tilkobling**. I dialogboksen som vises, velger du **Klikk her** for å koble til den eksterne appen som er valgt.
+3. Velg **Kontroller tilkobling**. I dialogboksen velger du **Klikk her** for å koble til den eksterne appen som er valgt.
 
     [![Kontroller tilkoblingen.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Pass på at du får meldingen "Vellykket!", som indikerer at tilkoblingen ble opprettet.
+4. Pass på at du får meldingen "Vellykket!", som indikerer at tilkoblingen ble opprettet.
 
     [![Vellykket-melding.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. Åpne arbeidsområdet **Funksjonsstyring** i RCS, og aktiver følgende funksjoner:
+
+    - Globaliseringsfunksjoner
+    - Støtte for Dataverse-datakilder for elektronisk rapportering
+    - Støtte for Dataverse-datakilder for avgiftstjeneste
 
 ## <a name="import-and-set-up-the-dataverse-model-mapping-configuration"></a><a name='import'></a>Importer og konfigurer Dataverse-modelltilordningskonfigurasjonen
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 62530c8ffc8be8d3bae562708872ba8eb00fa9cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0b0102bde3548ccf976234e1938114289b80fbba
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847795"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335847"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurer nummerserier for lagerflyter
 
@@ -39,7 +39,7 @@ Denne funksjonaliteten gjør det mer effektivt å støtte etiketter med kartonge
 
 ## <a name="turn-on-the-number-sequence-extensions-feature"></a>Aktivere funksjonen for nummerserieutvidelser
 
-Før du kan bruke funksjonen må den være aktivert i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Før du kan bruke funksjonen må den være aktivert for systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Nummerserieutvidelser*

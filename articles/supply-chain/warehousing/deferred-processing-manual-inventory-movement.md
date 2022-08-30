@@ -2,7 +2,7 @@
 title: Utsatt behandling av manuell lagerbevegelse
 description: Denne artikkelen beskriver hvordan du bruker utsatt behandling av manuelle lagerbevegelser i Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a8dd322446843af41214e8daa0822939d0468f0
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 9acacaddbde22d05d85ab9e11cd1d6de62337a6a
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219816"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336403"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Utsatt behandling av manuell lagerbevegelse
 
@@ -32,10 +32,10 @@ Bakgrunnsbehandling oppnås ved å bruke funksjonen [Funksjonen Behandle lagerap
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Du må aktivere dem i denne rekkefølgen:
 
-1. *Organisasjonsomfattende arbeidsblokkering*<br>(Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)
-1. *Behandle lagerapphendelser*<br>(Fra og med Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management versjon 10.0.29. Derfor er den aktivert som standard, og kan ikke deaktiveres på nytt.)
-1. *Utsatte plasseringsoperasjoner*
-1. *Utsatt behandling av manuell lagerbevegelsesoperasjon*<br>(Per Supply Chain Management versjon 10.0.25 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)
+1. *Organisasjonsomfattende arbeidsblokkering*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.21 og kan ikke deaktiveres.)
+1. *Behandle lagerapphendelser*<br>(Fra og med Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres.)
+1. *Utsatte plasseringsoperasjoner*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres.)
+1. *Utsatt behandling av manuell lagerbevegelsesoperasjon*<br>(Denne funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.25 og kan ikke deaktiveres.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurere policyer for arbeidsbehandling
 

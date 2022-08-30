@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 492bbd31cae08a93cd68e5ce120d02a62141241b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d679595a1f702c4e3ade138a87c817d245fcf79
+ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8874581"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9324337"
 ---
 # <a name="accounts-receivable-posting"></a>Kunder-postering
 
 [!include [banner](../includes/banner.md)]
 
 Den primære posteringsprofilen for **Kunder**-modulen er kundeposteringsprofilen. Denne posteringsprofilen bestemmer samlekontoen som brukes når kundesaldoer posteres til økonomimodulen. En samlekonto er en hovedkonto. Den kalles også handelskontoen for kunder.
+
+Rapporten **Kunde til kontoavstemming** kan brukes etter postering for å bidra til å avstemme saldoene for kunde- og finanskontoer. Rapporten bruker informasjonen som finnes i samlekontoen for kundeposteringsprofilen. Den bruker ikke samlekontoen fra regnskapet som er opprettet for dokumentet. Hvis du gjør endringer i kundeposteringsprofilen eller kundegruppen som er tildelt kunden etter at du har postert transaksjoner, kan rapporten vise forskjeller mellom kunde- og finanskontosaldoen. Hvis du bare vil vise linjene som har forskjeller og eventuelle linjer der kundekontoene og finanskontoen begge er null, velger du parameteren **Bare differanser** ved utskrift av rapporten.
 
 Hvis du vil ha mer informasjon, kan du se [Kundeposteringsprofiler](../accounts-receivable/customer-posting-profiles.md).
 

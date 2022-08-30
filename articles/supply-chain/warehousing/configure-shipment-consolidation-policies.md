@@ -2,7 +2,7 @@
 title: Konfigurer policyer for forsendelseskonsolidering
 description: Denne artikkelen beskriver hvordan du definerer standard og egendefinerte policyer for forsendelseskonsolidering.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: bec96131326b3162b3d1a138b896e85982ad3aa5
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219540"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336500"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -33,10 +33,7 @@ Scenarioene som presenteres i denne artikkelen, viser hvordan du definerer stand
 > [!IMPORTANT]
 > I det [første scenarioet](#scenario-1) som beskrives i denne artikkelen, må du først definere et lager slik at det bruker funksjonen for den forrige forsendelseskonsolideringen. Deretter gjør du policyene for forsendelseskonsolidering tilgjengelige. På denne måten kan du oppleve hvordan oppgraderings fungerer. Hvis du planlegger å bruke et demodatamiljø for å gå gjennom det første , må du ikke aktivere funksjonen før du gjør .
 
-Før du kan bruke funksjonen *Policyer for forsendelseskonsolidering*, må du aktivere den i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Konsolider forsendelse*
+For å bruke funksjonen *Policyer for forsendelseskonsolidering* må den aktiveres for systemet. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Policyer for forsendelseskonsolidering* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 

@@ -2,7 +2,7 @@
 title: Konfigurere omveier for trinn i menyelementer for mobilenheter
 description: Denne artikkelen beskriver hvordan du konfigurerer omveier for menyelementer, slik at arbeidere kan endre den gjeldende oppgaven, utføre en annen oppgave og deretter gå tilbake til den opprinnelige oppgaven uten å miste noe informasjon.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8106dd600e8eadbaafcaa4cbc27ec179899318f7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219012"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336133"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveier for trinn i menyelementer for mobilenheter
 
@@ -35,9 +35,8 @@ Før du kan definere omveier for trinn i menyelementer på mobilenheten, må du 
 
 1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
 1. Kontroller at funksjonen *Trinninstruksjoner for lagerapp* er aktivert for systemet. Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md). Denne funksjonen er en forutsetning for funksjonen *Omveier i Warehouse Management-appen*.
-1. Aktiver funksjonen *Omveier i Warehouse Management-app*. Denne funksjonen er en som er beskrevet i denne artikkelen.
-1. Oppdater feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobile device \> Navn på lagerappfelt**, og velg **Opprett standardoppsett**. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
-1. Gjenta det forrige trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management.
+1. Aktiver funksjonen *Omveier i Warehouse Management-app*. Denne funksjonen er en som er beskrevet i denne artikkelen. Per Supply Chain Management versjon 10.0.29 er dette aktivert som standard.
+1. Hvis funksjonen *Omveier i Warehouse Management-mobilappen* ikke allerede var slått på, oppdaterer du feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Feltnavn i lagerapp** og velger **Opprett standardoppsett**. Gjenta dette trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurere en omvei fra en menyspesifikk overstyring
 

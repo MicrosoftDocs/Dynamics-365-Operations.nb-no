@@ -2,7 +2,7 @@
 title: Konsolidere forsendelser ved hjelp av arbeidsområdet for forsendelseskonsolidering
 description: Denne artikkelen viser et scenario der flere ordrer frigis til lageret, og deretter blir de konsolidert til forsendelser senere ved hjelp av arbeidsområdet for forsendelseskonsolidering.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: a33189cdcbb66304eef80558e931209ea236f576
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: db8dc5101b223a0033284d8e6c494721871809d8
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218626"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335803"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidere forsendelser ved hjelp av arbeidsområdet for forsendelseskonsolidering
 
@@ -34,14 +34,11 @@ Scenarioet i denne artikkelen refererer til verdier og poster som er inkludert i
 
  som beskrives her, forutsetter at du allerede har aktivert funksjonen, utførte øvelsene i [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md) og opprettet policyer og andre poster som er beskrevet der. Husk å utføre øvelsene før du fortsetter med dette .
 
-## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>Aktivere funksjonen Manuell forsendelseskonsolidering
+## <a name="turn-the-manual-shipment-consolidation-feature-on-or-off"></a>Aktiver eller deaktiver funksjonen Manuell forsendelseskonsolidering
 
-Før du kan bruke funksjonen *Manuell forsendelseskonsolidering*, må du aktivere den i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+For å bruke manuell forsendelseskonsolidering må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.29 er funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Manuell forsendelseskonsolidering* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Manuell forsendelseskonsolidering*
-
-Du må også aktivere bruke funksjonen *Konsolider forsendelse* for du kan opprette policyer. Hvis du vil ha mer informasjon, kan du se [Konfigurer policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md).
+Du må også aktivere funksjonen *Konsolider forsendelse* før du kan opprette policyer (i Supply Chain Management, versjon 10.0.29 er funksjonen obligatorisk, og kan ikke deaktiveres). Hvis du vil ha mer informasjon, kan du se [Konfigurer policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md).
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Opprett salgsordrene for dette 
 

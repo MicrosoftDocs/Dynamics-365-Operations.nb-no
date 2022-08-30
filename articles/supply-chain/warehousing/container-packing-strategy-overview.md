@@ -2,7 +2,7 @@
 title: Strategier for containerpakking
 description: Denne artikkelen beskriver forskjellene mellom strategier for containerpakking og gir eksempler.
 author: GalynaFedorova
-ms.date: 06/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 46b4a007dafbd99e5f9b7231c07a148f8101d2a4
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5a9a0066abaa76294faebcb15d5091ba36e8a60d
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8862373"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9335773"
 ---
 # <a name="container-packing-strategies"></a>Strategier for containerpakking
 
@@ -77,7 +77,7 @@ Dette scenariet viser hvordan du kan redusere antall containere som blir evaluer
 
 #### <a name="turn-on-the-consolidate-shipments-feature-in-your-system"></a>Slå på funksjonen Konsolider forsendelser i systemet
 
-Dette scenariet bruker funksjonen *Konsolider forsendelser*. Hvis funksjonen ikke allerede er tilgjengelig i systemet, må du aktivere den ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Dette scenariet bruker funksjonen *Konsolider forsendelser*. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Konsolider forsendelser* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 #### <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 

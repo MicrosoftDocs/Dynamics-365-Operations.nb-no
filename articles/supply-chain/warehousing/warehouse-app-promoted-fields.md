@@ -2,7 +2,7 @@
 title: Konfigurere forfremmede felt for trinn i mobilappen Warehouse Management
 description: Denne artikkelen beskriver hvordan du forfremmer og uthever bestemt informasjon for trinn i oppgaveflytene for mobilappen Warehouse Management.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8ecca2d00b8753a405faa8d4c67c3cbb1eef6907
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 3451b1aec525cd0738af558b183f8676d20294a0
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218982"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336073"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>Konfigurere forfremmede felt for trinn i mobilappen Warehouse Management
 
@@ -29,19 +29,12 @@ Denne artikkelen beskriver hvordan du forfremmer og uthever bestemt informasjon 
 
 ## <a name="enable-promoted-fields-in-your-system"></a>Aktivere forfremmede felt i systemet
 
-Før du kan definere forfremmede felt, må du fullføre fremgangsmåten nedenfor for å aktivere de nødvendige funksjonene og generere de nødvendige feltnavnene i mobilappen Warehouse Management.
+Hvis du kjører Supply Chain Management, versjon 10.0.28 eller tidligere, må du før du kan definere forfremmede felter, fullføre fremgangsmåten nedenfor for å aktivere de nødvendige funksjonene og generere de nødvendige feltnavnene i mobilappen Warehouse Management. Hvis du kjører Supply Chain Management, versjon 10.0.29 eller nyere, er funksjonene obligatoriske og kan ikke deaktiveres, slik at du kan hoppe over denne fremgangsmåten.
 
-1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
-1. Kontroller at funksjonen *Trinninstruksjoner for lagerapp* er aktivert for systemet. Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md). Denne funksjonen er en forutsetning for funksjonen *Forfremmede felter for lagerapp*.
-1. Aktiver funksjonen som vises på følgende måte:
-
-    - **Modul:** *Lagerstyring*
-    - **Funksjonsnavn:** *Forfremmede felter for lagerapp*
-
-    Denne funksjonen er funksjonen som er beskrevet i denne artikkelen.
-
-1. Oppdater feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobile device \> Navn på lagerappfelt**, og velg **Opprett standardoppsett**. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
-1. Gjenta det forrige trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management.
+1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**. (Se [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for mer informasjon om denne siden.)
+1. Kontroller at funksjonen *Trinninstruksjoner for lagerapp* er aktivert for systemet. Denne funksjonen er en forutsetning for funksjonen *Forfremmede felter for lagerapp*. Den er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md).
+1. Kontroller at funksjonen *Promoterte felter for lagerapp* er aktivert for systemet. Dette er funksjonen som beskrives i denne artikkelen. Den er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres.
+1. Oppdater feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobile device \> Navn på lagerappfelt**, og velg **Opprett standardoppsett**. Gjenta dette trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
 
 ## <a name="configure-promoted-fields-from-a-menu-specific-override"></a>Konfigurere forfremmede felt fra en menyspesifikk overstyring
 

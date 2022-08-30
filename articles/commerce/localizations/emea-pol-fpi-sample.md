@@ -2,27 +2,28 @@
 title: Eksempel på integrering av bilagsskriver for Polen
 description: Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Polen i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2019-02-01
-ms.openlocfilehash: 1466532099820abcdf4496db80f9a34682e2ed5a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.search.validFrom: 2019-02-01.
+ms.openlocfilehash: 52710252d78d34c444de2d40e16423868b12b5c1
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274239"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336689"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Eksempel på integrering av bilagsskriver for Polen
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Polen i Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce-funksjonen for Polen omfatter en eksempelintegrering av salgsstedet med en bilagsskriver. Eksemplet utvider [integreringsfunksjonaliteten for regnskap](fiscal-integration-for-retail-channel.md) og støtter POSNET INTEGRATION 2.02-protokollen for bilagsskrivere fra [Posnet Polska S.A.](https://www.posnet.com.pl) Eksemplet aktiverer kommunikasjon med en bilagsskriver som er koblet til via en COM-port ved hjelp av en programvaredriver. Den ble implementert og testet ved hjelp av en programvareemulator som Posnet leverte for Posnet Thermal HD FV EJ-bilagsskriveren. Eksemplet leveres i form av kildekode og er en del av Retail Software Development Kit (SDK).
+Dynamics 365 Commerce-funksjonen for Polen omfatter en eksempelintegrering av salgsstedet med en bilagsskriver. Eksemplet utvider [integreringsfunksjonaliteten for regnskap](fiscal-integration-for-retail-channel.md) og støtter POSNET INTEGRATION 2.02-protokollen for bilagsskrivere fra [Posnet Polska S.A.](https://www.posnet.com.pl) Eksemplet aktiverer kommunikasjon med en bilagsskriver som er koblet til via en COM-port ved hjelp av en programvaredriver. Den ble implementert og testet ved hjelp av en programvareemulator som Posnet leverte for Posnet Thermal HD FV EJ-bilagsskriveren. Eksemplet leveres i form av kildekode og er en del av Commerce Software Development Kit (SDK).
 
 Microsoft frigir ikke maskinvare, programvare eller dokumentasjon fra Posnet. Hvis du vil ha mer informasjon om hvordan du får tak i bilagsskriveren og bruker den, kan du kontakte [Posnet Polska S.A.](https://www.posnet.com.pl)
 
@@ -97,12 +98,10 @@ Eksemplet på integrering av regnskapsskriver implementerer følgende regler som
 
 ## <a name="set-up-fiscal-integration-for-poland"></a>Definere regnskapsintegrering for Polen
 
-Eksemplet på integrering av bilagsskriver for Polen er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Retail SDK. Eksemplet finnes i **src\\FiscalIntegration\\Posnet**-mappen i repositoriet for [løsningen for Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (for eksempel [eksemplet i release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en regnskapsdokumentleverandør, som er en utvidelse av Commerce Runtime (CRT) og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Retail SDK, kan du se [Retail SDK-arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en kompileringskontroll for uavhengig emballasje-SDK](../dev-itpro/build-pipeline.md).
+Eksemplet på integrering av bilagsskriver for Polen er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Commerce SDK. Eksemplet ligger i mappen **src\\FiscalIntegration\\Posnet** i repositoriet [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en regnskapsdokumentleverandør, som er en utvidelse av Commerce Runtime (CRT) og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Commerce SDK, kan du se [Last ned Commerce SDK-eksempler og referansepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) og [Definer kompileringskontroll for SDK for uavhengig pakking](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Polen (eldre)](emea-pol-fpi-sample-sdk.md).
->
-> Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
+> [!NOTE]
+> Eksemplet på integrering av bilagsskriveren for Polen er tilgjengelig i Commerce SDK fra og med Commerce-versjon 10.0.29. I Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en virtuell utviklermaskin (VM) i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Polen (eldre)](emea-pol-fpi-sample-sdk.md).
 
 Fullfør fremgangsmåten for oppsett av regnskapsintegrering slik det beskrives i [Oppsett av regnskapsintegrering for Commerce-kanaler](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -119,18 +118,16 @@ Hvis du vil aktivere registreringsprosessen, følger du denne fremgangsmåten fo
 1. Last ned konfigurasjonsfiler for regnskapsdokumentleverandøren og regnskapskoblingen:
 
     1. Open respositoriet for [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
-    1. Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen (for eksempel **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen.
     1. Åpne **src \> FiscalIntegration \> Posnet**.
-    1. Last ned leverandørkonfigurasjonsfilen for regnskapsdokument under **CommerceRuntime \> DocumentProvider.PosnetSample \> Konfigurasjon \> DocumentProviderPosnetSample.xml** (for eksempel [filen for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/CommerceRuntime/DocumentProvider.PosnetSample/Configuration/DocumentProviderPosnetSample.xml)).
-    1. Last ned konfigurasjonsfilen for regnskapskobling under **HardwareStation \> ThermalDeviceSample \> Konfigurasjon \> ConnectorPosnetThermalFVEJ.xml** (for eksempel [filen for release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Posnet/HardwareStation/ThermalDeviceSample/Configuration/ConnectorPosnetThermalFVEJ.xml)).
+    1. Last ned leverandørkonfigurasjonsfilen for regnskapsdokument under **CommerceRuntime \> DocumentProvider.PosnetSample \> Konfigurasjon \> DocumentProviderPosnetSample.xml**.
+    1. Last ned konfigurasjonsfilen for regnskapskobling under **HardwareStation \> ThermalDeviceSample \> Konfigurasjon \> ConnectorPosnetThermalFVEJ.xml**.
 
-    > [!WARNING]
-    > På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Konfigurasjonsfilene for dette regnskapsintegreringseksemplet ligger i følgende mapper for Retail SDK på en utvikler-VM i LCS:
+    > [!NOTE]
+    > I Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Konfigurasjonsfilene for dette regnskapsintegreringseksemplet ligger i følgende mapper for Retail SDK på en utvikler-VM i LCS:
     >
     > - **Konfigurasjonsfil for regnskapsdokumentleverandør:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.PosnetSample\\Konfigurasjon\\DocumentProviderPosnetSample.xml
     > - **Konfigurasjonsfil for regnskapskobling:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.Posnet.ThermalDeviceSample\\Konfigurasjon\\ConnectorPosnetThermalFVEJ.xml
-    > 
-    > Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
 
 1. Gå til **Detaljhandel og handel \> Hovedkvarteroppsett \> Parametere \> Delte handelsparametere**. På **Generelt**-fanen angir du **Aktiver regnskapsintegrering**-alternativet til **Ja**.
 1. Gå til **Retail og Commerce \> Kanaloppsett \> Regnskapsintegrering \> Leverandører for regnskapsdokument**, og last inn konfigurasjonsfil for regnskapsdokumentleverandør som du lastet ned tidligere.
@@ -173,16 +170,15 @@ Følgende innstillinger er inkludert i konfigurasjonen for regnskapskoblingen so
 
 ### <a name="configure-channel-components"></a>Konfigurere kanalkomponenter
 
-> [!WARNING]
-> På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Polen (eldre)](emea-pol-fpi-sample-sdk.md).
->
-> Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
+> [!NOTE]
+> - Eksemplet på integrering av bilagsskriveren for Polen er tilgjengelig i Commerce SDK fra og med Commerce-versjon 10.0.29. I Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Polen (eldre)](emea-pol-fpi-sample-sdk.md).
+> - Commerce-eksempler som distribueres i miljøet ditt, oppdateres ikke automatisk når du bruker tjeneste- eller kvalitetsoppdateringer for Commerce-komponenter. Du må manuelt oppdatere de obligatoriske eksemplene.
 
 #### <a name="set-up-the-development-environment"></a>Definere utviklingsmiljøet
 
 Følg denne fremgangsmåten for å definere et distribusjonsmiljø slik at du kan teste og utvide eksemplet.
 
-1. Klon eller last ned repositoriet for [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen. Hvis du vil ha mer informasjon, kan du se [Last ned eksempler og referansepakker i SDK for Retail fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Klon eller last ned repositoriet for [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions). Velg riktig frigivelsesavdelingsversjon i henhold til SDK/programversjonen. Hvis du vil ha mer informasjon, kan du se [Last ned eksempler og referansepakker i SDK for Commerce fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md).
 1. Åpne integreringsløsningen for bilagsskriver i **Dynamics365Commerce.Solutions\\FiscalIntegration\\Posnet\\Posnet.sln**, og bygg den.
 1. Installer CRT-utvidelser:
 
@@ -220,10 +216,10 @@ Følg fremgangsmåten i [Konfigurer en kompileringskontroll for et regnskapsinte
 
 ## <a name="design-of-extensions"></a>Utforming av utvidelser
 
-Eksemplet på integrering av bilagsskriver for Polen er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Retail SDK. Eksemplet finnes i **src\\FiscalIntegration\\Posnet**-mappen i repositoriet for [løsningen for Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) (for eksempel [eksemplet i release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Posnet)). Eksemplet [består](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) av en regnskapsdokumentleverandør, som er en utvidelse av CRT og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Retail SDK, kan du se [Retail SDK-arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md) og [Konfigurere en kompileringskontroll for uavhengig emballasje-SDK](../dev-itpro/build-pipeline.md).
+Eksemplet på integrering av bilagsskriver for Polen er basert på [regnskapsintegreringsfunksjonaliteten](fiscal-integration-for-retail-channel.md) og er en del av Commerce SDK. Eksemplet ligger i mappen **src\\FiscalIntegration\\Posnet** i repositoriet [Dynamics 365 Commerce-løsninger](https://github.com/microsoft/Dynamics365Commerce.Solutions/). [Eksemplet](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) består av en regnskapsdokumentleverandør, som er en utvidelse av CRT og en regnskapskobling, som er en utvidelse av Commerce-maskinvarestasjon. Hvis du vil ha mer informasjon om hvordan du bruker Commerce SDK, kan du se [Last ned Commerce SDK-eksempler og referansepakker fra GitHub og NuGet](../dev-itpro/retail-sdk/sdk-github.md) og [Definer kompileringskontroll for SDK for uavhengig pakking](../dev-itpro/build-pipeline.md).
 
-> [!WARNING]
-> På grunn av begrensninger i den [nye uavhengige emballasje- og linjemodellen](../dev-itpro/build-pipeline.md), kan den for øyeblikket ikke brukes for dette eksemplet på regnskapsintegrering. Du må bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Polen (eldre)](emea-pol-fpi-sample-sdk.md). Støtte for den nye uavhengige emballasje- og utvidelsesmodellen for regnskapsintegreringseksempler planlegges for senere versjoner.
+> [!NOTE]
+> Eksemplet på integrering av bilagsskriveren for Polen er tilgjengelig i Commerce SDK fra og med Commerce-versjon 10.0.29. I Commerce-versjon 10.0.28 eller tidligere må du bruke den forrige versjonen av Retail SDK på en utvikler-VM i LCS. Hvis du vil ha mer informasjon, kan du se [Distribusjonsretningslinjer for eksempler på integrering av bilagsskriver for Polen (eldre)](emea-pol-fpi-sample-sdk.md).
 
 ### <a name="commerce-runtime-extension-design"></a>Commerce Runtime-utvidelsesutforming
 

@@ -2,7 +2,7 @@
 title: USMCA-sertifisering av opprinnelse
 description: Med denne funksjonen kan du skrive ut sertifiseringen av opprinnelig dokumenter som er nødvendig i henhold til avtalen USA-Mexico-Canada (USMCA).
 author: Weijiesa
-ms.date: 10/23/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 2a87e1aa27085f1b4821d27cece782dffbcd2096
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8851369"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9336553"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA-sertifisering av opprinnelse
 
@@ -33,12 +33,9 @@ Dokumentet er bare tilgjengelig når landet på primæradressen for den juridisk
 
 Dokumentet kan forhåndsfylles med data fra systemet, avhengig av dokumentutskriftsvalget. Det er mulig å endre eller legge til data i det utskrevne dokumentet ved å eksportere det utskrevne dokumentet til et redigerbart format, for eksempel Microsoft Word. Etter eksport kan du utføre alle nødvendige endringer før det gjøres en deklarasjon.
 
-## <a name="turn-on-the-usmca-feature"></a>Aktivere USMCA-funksjonen
+## <a name="turn-the-usmca-feature-on-or-off"></a>Aktiver eller deaktiver USMCA-funksjonen
 
-Før du kan bruke USMCA-funksjonen må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
-
-- **Modul:** *Transportstyring*
-- **Funksjonsnavn:** *USMCA sertifisering av opprinnelig dokument*
+For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.29 er funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *USMCA-sertifisering av opprinnelig dokument* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="document-content"></a>Dokumentinnhold
 
