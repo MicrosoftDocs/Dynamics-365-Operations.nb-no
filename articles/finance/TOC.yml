@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.29 (oktober)
+                  href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (august)
                   href: get-started/whats-new-changed-10-0-28.md
                 - name: Finance 10.0.27 (juli)
@@ -62,6 +64,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
                 - name: Bli varslet om serviceoppdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+                - name: Proaktive kvalitetsoppdateringer
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
                 - name: Automatisering av dataoppgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
                 - name: Levering av ISV-løsninger med One Version
@@ -1114,6 +1118,8 @@
                       href: general-ledger/tasks/process-ledger-allocation-journal.md
                     - name: Vis journaloppføringer eller transaksjoner
                       href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                    - name: Tillat redigeringer i interne data for økonomimodulbilag
+                      href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: Vis et relatert konserninternt bilag fra en journal
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
                     - name: Publiser journallinjer og dokumenter fra Excel
@@ -1568,14 +1574,20 @@
                           href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
                         - name: Kom i gang med elektronisk fakturering for Egypt
                           href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+                        - name: Kom i gang med elektronisk fakturering for Frankrike
+                          href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Kom i gang med elektronisk fakturering for Mexico
                           href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+                        - name: Kom i gang med elektronisk fakturering for Polen
+                          href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Kom i gang med elektronisk fakturering for Saudi-Arabia
-                          href: localizations/e-invoicing-sa-get-started.md
+                          href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: Innføring av elektronisk fakturering i Saudi-Arabia
+                          href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Konfigurer direkte integrering av italiensk FatturaPA med SDI
-                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
                         - name: Bruk den elektroniske faktureringstjenesten til å importere leverandørfakturaer
-                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: Vanlige spørsmål om elektronisk fakturering
                       href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Avgiftsberegning
@@ -1648,6 +1660,10 @@
                           items:
                             - name: Mva-deklarering
                               href: localizations/emea-nor-vat-declaration.md
+                        - name: Polsk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-pol-vat-declaration.md
                         - name: Spansk rapportering
                           items:
                             - name: 'Umiddelbar forsyning av informasjon om mva. (Suministro Inmediato de Información del IVA, SII)'
@@ -1714,9 +1730,11 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Beregn og juster merverdiavgift på en leverandørfaktura
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Juster mva. via økonomijournaler
+                      href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Aktiver forsinket avgiftsberegning i journal
                       href: general-ledger/enable-delayed-tax-calculation.md
-                    - name: Opprette en mva-betaling
+                    - name: Opprett en mva-betaling
                       href: general-ledger/tasks/create-sales-tax-payment.md
                     - name: Avrunding av avgiftsutligning basert på egendefinert antall desimaler for valuta
                       href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
@@ -1768,8 +1786,10 @@
                       items:
                         - name: Oversikt over global kildeskatt
                           href: general-ledger/global-withholding-tax-overview.md
-                        - name: Definere global kildeskatt
+                        - name: Definer global kildeskatt
                           href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Aktiver valutakurstype for global kildeskattvaluta og datotypeoppsett
+                          href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
                         - name: Kildeskatt i innkjøpstransaksjoner
                           href: general-ledger/withholding-tax-in-purchase-transactions.md
                         - name: Kildeskatt i salgstransaksjoner
@@ -1948,6 +1968,8 @@
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
                     - name: Flytt NF-e XML-filer som vedlegg
                       href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+                    - name: NT2021.004 – Oppsett- og valideringsoppdateringer i det elektroniske regnskapsdokumentet (NF-e)
+                      href: localizations/latam-bra-nfe-nt2021.004.md
                     - name: NT2020.005 – Oppsett- og valideringsoppdateringer i det elektroniske regnskapsdokumentet (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Digital plattform for mellomleddssalg for NF-e
@@ -2552,6 +2574,8 @@
                       href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: Revisjonsspor og redigeringslogger for regnskapsprogramvare
                   href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+                - name: Elektroniske fakturaer i India
+                  href: localizations/apac-ind-e-invoices.md
                 - name: Indirekte avgifter
                   items:
                     - name: India GST
@@ -3544,15 +3568,19 @@
                       items:
                         - name: Oversikt over lagerprofil
                           href: localizations/rus-inventory-profile-overview.md
-                        - name: Definere en lagerprofil
+                        - name: Definer en lagerprofil
                           href: localizations/rus-set-up-inventory-profile.md
-                        - name: Bruke en lagerprofil i dokumenter og spørringer
+                        - name: Bruk en lagerprofil i dokumenter og spørringer
                           href: localizations/rus-use-inventory-profile-documents-queries.md
+                    - name: Tollklarering
+                      items:
+                        - name: Arbeid med tollklarering
+                          href: localizations/rus-work-with-customs-clearance.md
                 - name: Rapportering
                   items:
                     - name: Finansrapportering
                       href: localizations/rus-financial-reports.md
-                    - name: Konfigurere finansrapporter i Excel
+                    - name: Konfigurer finansrapporter i Excel
                       href: localizations/rus-excel-financial-report.md
                     - name: Regnskapsrapportering i elektronisk format
                       href: localizations/rus-accounting-reporting.md
@@ -3576,11 +3604,13 @@
                       href: localizations/rus-company-divisions.md
                     - name: Russiske adresseformater og import fra FIAS
                       href: localizations/rus-russian-address-format-and-import-from-FIAS.md
-                - name: Periodiseringer
+                    - name: Importer fra statsadresseregisteret (GAR)
+                      href: localizations/rus-russian-address-format-import-gar.md
+                - name: Utsettelser
                   items:
-                    - name: Definere periodiseringer
+                    - name: Definer periodiseringer
                       href: localizations/rus-set-up-deferrals.md
-                    - name: Opprette eller generere periodiseringer
+                    - name: Opprett eller generer periodiseringer
                       href: localizations/rus-create-generate-deferrals.md
                     - name: Mottak av periodiseringer
                       href: localizations/rus-deferral-transactions.md
@@ -4069,6 +4099,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
                         - name: Split

@@ -1,24 +1,24 @@
 ---
 title: Ny tildeling av inntektsføring – scenario 2
 description: Denne artikkelen går gjennom et scenario for ny tildeling der det angis to salgsordrer, og deretter legger kunden til en vare i kontrakten etter at den første salgsordren er fakturert. Når en ny vare legges til i en kontrakt, kan den legges til i en ny salgsordre eller til den eksisterende salgsordren.
-author: kweekley
+author: bking
 ms.date: 12/21/2020
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: kweekley
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dec8dba9848b77e5c0a1007102789c8f88185fbc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5f8dac2991b309bb91faaa3107480ca3860af008
+ms.sourcegitcommit: 1909d18a74cef85aad020a6a7473281e451f58c7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904851"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "9348389"
 ---
 # <a name="revenue-recognition-reallocation--scenario-2"></a>Ny tildeling av inntektsføring – scenario 2
 

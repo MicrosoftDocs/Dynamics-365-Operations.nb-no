@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.29 (oktober 2022)
+                  href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (juli 2022)
                   href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (juli 2022)
@@ -60,6 +62,8 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
                 - name: Bli varslet om serviceoppdateringer
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+                - name: Proaktive kvalitetsoppdateringer
+                  href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
                 - name: Automatisering av dataoppgave
                   href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
                 - name: Levering av ISV-løsninger med One Version
@@ -418,10 +422,12 @@
                       href: dev-itpro/gift-card-cash-out.md
                     - name: Levere ordrer fra en annen butikk
                       href: charge-send.md
-                    - name: 'Skjule leveringsmåter som ikke er transportør, fra dialogboksen for forsendelse av salgssted'
+                    - name: 'Skjul leveringsmåter som ikke er transportør, fra dialogboksen for forsendelse av salgssted'
                       href: hide-non-carrier-modes.md
-                    - name: Oppgaveregistrering og hjelp for MPOS og Cloud POS
+                    - name: Oppgaveopptaker og hjelp for MPOS og Cloud POS
                       href: task-recorder-retail-pos.md
+                    - name: Konfigurer CPOS for å bruke en egendefinert Azure AD-app
+                      href: cpos-custom-aad.md
                     - name: Eksterne enheter for maskinvare
                       items:
                         - name: Eksterne enheter
@@ -696,10 +702,10 @@
                   href: define-channel-specific-discounts.md
                 - name: Alternativer for å hindre rabatter for detaljhandelsprodukter
                   href: prevent-discounts.md
-                - name: Betalingsmiddelbaserte rabatter
+                - name: Rabatter basert på betalingsmiddel
                   href: tender_based_discounts.md
-                - name: Oversikt over leveringsrabatt
-                  href: retail-shipping-discount.md
+                - name: Leveringsrabatt
+                  href: shipping-discount.md
                 - name: Konfigurer gave med innkjøpskampanjer
                   href: gift-with-purchase.md
                 - name: Konfigurer kuponger
@@ -710,15 +716,19 @@
                   href: price-report.md
                 - name: Opprette kanalspesifikke forretningsavtaler
                   href: tasks/base-price-trade-agreements.md
-                - name: Opprette forretningsavtaler ved hjelp av kategoriprisregler
+                - name: Opprett forretningsavtaler ved hjelp av kategoriprisregler
                   href: tasks/category-pricing-rules-trade-agreements.md
                 - name: Forsinke beregning av nøyaktig pris og rabatt
                   href: delayed-price-calculation.md
+                - name: Prisfunksjoner i salgsstedet
+                  href: pos-pricing-functions.md
+                - name: API-er for Commerce-priser
+                  href: pricing-apis.md
             - name: Anbefalinger
               items:
                 - name: Oversikt over produktanbefalinger
                   href: product-recommendations.md
-                - name: Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
+                - name: Aktiver Azure Data Lake Storage i et Dynamics 365 Commerce-miljø
                   href: enable-ADLS-environment.md
                 - name: Aktiver produktanbefalinger
                   href: enable-product-recommendations.md
@@ -872,6 +882,8 @@
               href: async-customer-mode.md
             - name: Konverter asynkrone kunder til synkrone kunder
               href: convert-async-to-sync.md
+            - name: Vanlige spørsmål om opprettingsmodus for asynkron kunde
+              href: async-customer-mode-faq.md
             - name: Kundeaktiviteter
               items:
                 - name: Oversikt over kundeaktiviteter
@@ -1252,6 +1264,10 @@
                       href: product-collection-module-overview.md
                     - name: Hurtigvisningsmodul
                       href: quick-view-module.md
+                - name: Produktsammenligningsmoduler
+                  items:
+                    - name: Produktsammenligningsmoduler
+                      href: product-comparison-modules.md
                 - name: Navigasjonsmoduler
                   items:
                     - name: Søkebanemodul
@@ -1272,6 +1288,10 @@
                   items:
                     - name: Samtykkemodul for informasjonskapsler
                       href: cookie-consent-module.md
+                - name: Nettpratmoduler
+                  items:
+                    - name: Commerce-nettpratmodul
+                      href: commerce-chat-module.md
             - name: Søk
               items:
                 - name: Oversikt over standard kategorimålside og søkeresultatside
@@ -1404,8 +1424,6 @@
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
                   href: localizations/emea-aut-fi-sample.md
-                - name: Retningslinjer for distribusjon for kassaapparater for Østerrike
-                  href: localizations/emea-aut-deployment.md
                 - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Østerrike (eldre)
                   href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasil
@@ -1462,7 +1480,7 @@
                   href: localizations/emea-fra-fi-deployment.md
                 - name: Kontroll av regnskapsarkiv og dataintegritet
                   href: localizations/emea-fra-fiscal-archive.md
-                - name: Overføring fra eldre funksjonalitet for Frankrike
+                - name: Overfør fra eldre funksjonalitet for Frankrike
                   href: localizations/emea-fra-fi-migration.md
                 - name: Retningslinjer for distribusjon for kassaapparater (gamle)
                   href: localizations/emea-fra-deployment.md
@@ -1502,6 +1520,8 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Retningslinjer for distribusjon for kassaapparater
                   href: localizations/emea-nor-fi-deployment.md
+                - name: Overfør fra eldre funksjonalitet for Norge
+                  href: localizations/emea-nor-fi-migration.md
                 - name: Retningslinjer for distribusjon for kassaapparater (gamle)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Russland
@@ -1764,6 +1784,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+                        - name: Repeat
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
                         - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
                         - name: Split
@@ -2482,7 +2504,7 @@
               items:
                 - name: Oversikt over SDK for Commerce
                   items:
-                    - name: Eksempler og referansepakker
+                    - name: Last ned eksempler på referansepakker for SDK for Commerce
                       href: dev-itpro/retail-sdk/sdk-github.md
                     - name: Overføring for eldre SDK for Retail
                       href: dev-itpro/retail-sdk/migrate-commerce-sdk.md

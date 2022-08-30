@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Nyheter eller endringer i Human Resources
               items:
+                - name: Human Resources 10.0.29 (sammenslått infrastruktur)
+                  href: ./get-started/whats-new-changed-10-0-29.md
                 - name: Human Resources 10.0.28 (sammenslått infrastruktur)
                   href: ./get-started/whats-new-changed-10.0.28.md
                 - name: Human Resources 10.0.27 (sammenslått infrastruktur)
@@ -602,11 +604,15 @@
               items:
                 - name: Konfigurere fordelsstyringsparametre per firma
                   href: hr-benefits-setup-parameters-per-company.md
-                - name: Angi fordelsstyrings- og selvbetjeningsparametre for ansatte for alle firmaer
+                - name: Angi fordelsstyrings- og selvbetjeningsparametere for ansatte for alle firmaer
                   href: hr-benefits-setup-parameters.md
-                - name: Konfigurere rettighetsregler og -alternativer
+                - name: Konfigurer administratorrettigheter for levetidshendelser
+                  href: admin-life-events.md
+                - name: Konfigurer e-postvarslinger for fordeler
+                  href: hr-email-notifications.md
+                - name: Konfigurer rettighetsregler og -alternativer
                   href: hr-benefits-setup-eligibility-rules.md
-                - name: Konfigurere alternativer for personlige kontaktrettigheter
+                - name: Konfigurer alternativer for personlige kontaktrettigheter
                   href: hr-benefits-setup-contact-eligibility-options.md
                 - name: Opprett dekningsalternativer
                   href: hr-benefits-setup-coverage-options.md
