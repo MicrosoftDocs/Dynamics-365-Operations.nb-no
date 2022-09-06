@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 25f6539616d4567249e1d1eb4297090176526fde
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8902031"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357648"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API-er for lagersynlighet
 
@@ -98,16 +98,16 @@ Hvis du vil hente et token for sikkerhetstjeneste, gjør du følgende:
 1. Logg på Azure-portalen, og bruk den til å finne `clientId`- og `clientSecret`-verdiene for Dynamics 365 Supply Chain Management-appen.
 1. Hent et Azure AD-token (`aadToken`) ved å sende en HTTP-forespørsel som har følgende egenskaper:
 
-   - **URL-adresse:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **Nettadresse:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
    - **Metode:** `GET`
    - **Meldingstekst (skjemadata):**
 
-     | Nøkkel           | Verdi                                |
-     | ------------- | ------------------------------------ |
-     | client_id     | ${aadAppId}                          |
-     | client_secret | ${aadAppSecret}                      |
-     | grant_type    | client_credentials                   |
-     | resource      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Nøkkel           | Verdi                                            |
+     | ------------- | -------------------------------------------------|
+     | client_id     | ${aadAppId}                                      |
+     | client_secret | ${aadAppSecret}                                  |
+     | grant_type    | client_credentials                               |
+     | scope         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
    Du skal motta et Azure AD-token (`aadToken`) som svar. Den skal ligne følgende eksempel.
 
@@ -116,9 +116,6 @@ Hvis du vil hente et token for sikkerhetstjeneste, gjør du følgende:
        "token_type": "Bearer",
        "expires_in": "3599",
        "ext_expires_in": "3599",
-       "expires_on": "1610466645",
-       "not_before": "1610462745",
-       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
        "access_token": "eyJ0eX...8WQ"
    }
    ```
@@ -131,7 +128,7 @@ Hvis du vil hente et token for sikkerhetstjeneste, gjør du følgende:
        "client_assertion_type": "aad_app",
        "client_assertion": "{Your_AADToken}",
        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context": "{$LCS_environment_id}",
        "context_type": "finops-env"
    }
    ```
@@ -516,7 +513,7 @@ Body:
 
 I hoveddelen av denne forespørselen er `dimensionDataSource` fremdeles en valgfri parameter. Hvis den ikke er definert, behandles `filters` som *basisdimensjoner*. Det finnes fire obligatoriske felt for `filters`: `organizationId`, `productId`, `siteId` og `locationId`.
 
-- `organizationId` bør bare inneholder én verdi, men den er fremdeles en matrise.
+- `organizationId` skal bare inneholde én verdi, men den er likevel en matrise.
 - `productId` kan inneholde én eller flere verdier. Hvis den er en tom matrise, vil alle produkter bli returnert.
 - `siteId` og `locationId` brukes for partisjonering i lagersynlighet. Du kan angi mer enn én `siteId` og `locationId` verdi i en forespørsel om *lagerbeholdning*. I den gjeldende versjonen må du angi både `siteId` og `locationId` verdier.
 
@@ -589,6 +586,6 @@ Du kan konfigurere Lagersynlighet slik at du kan planlegge fremtidige endringer 
 
 ## <a name="allocation"></a>Tilordning
 
-Tildelingsrelaterte APIer finnes i [lagersynlighetstilordning](inventory-visibility-allocation.md#using-allocation-api).
+Tildelingsrelaterte API-er finnes i [lagersynlighetstilordning](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

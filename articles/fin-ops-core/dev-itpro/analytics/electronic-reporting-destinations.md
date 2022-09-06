@@ -2,7 +2,7 @@
 title: Mål for elektronisk rapportering (ER)
 description: Denne artikkelen inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: DocuType, ERSolutionTable
-ms.openlocfilehash: 1718b9e32c1e9f34d38479b74d59af6233f82a8c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b1bf6289e80769dfe8858f307cbb9b217b42dbb4
+ms.sourcegitcommit: f2edc193003564c5bee1747f9c2b800feee342bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281975"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "9360986"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -247,6 +247,52 @@ I hurtigfanen **Generelt** i feltet **Send mappe som** velger du en av følgende
 ### <a name="limitations"></a>Begrensninger
 
 Hvis du angir **Send mappe som**-feltet til **Separate filer** for en **Mappe**-komponent som inneholder andre nestede **Mappe**-komponenter, blir ikke innstillingene brukt rekursivt på de nestede **Mappe**-komponentene.
+
+## <a name="change-page-layout-properties-of-a-template"></a><a name="change-page-layout-properties-of-a-template"></a> Endre sideoppsettegenskaper for en mal
+
+Du kan konfigurere et ER-mål for en ER-formatkomponent som er utformet for å bruke en mal i et Microsoft Office-format (Excel eller Word) til rapportgenerering. Hvis du ikke eier dette formatet og må endre sideoppsettegenskapene til malen for formatet, måtte du tidligere i Finance før versjon 10.0.29 opprette et avledet format og endre egenskapene for malen. Deretter måtte du vedlikeholde den avledede formatkonfigurasjonen. I versjon 10.0.29 og senere kan du imidlertid endre sideoppsettegenskapene til malen ved kjøretid for å slippe å opprette og vedlikeholde den avledede formatkonfigurasjonen. Du gjør dette ved å angi de ønskede egenskapene som en del av innstillingene for det konfigurerte ER-målet. Når du kjører et ER-format og et ER-mål som er konfigurert slik at det bruker bestemte sideoppsettegenskaper, brukes verdiene i sideoppsettegenskapene til det kjørte målet på malen du bruker, og disse verdiene erstatter egenskapene til den opprinnelige malen. Du kan konfigurere ulike mål for det samme formatets komponent ved å konfigurere ulike sideoppsettegenskaper for malen i bruk.
+
+Følgende egenskaper kan konfigureres i et ER-mål for en ER-formatkomponent som er utformet for å bruke en mal i et Excel- eller Word-format:
+
+- Sideretning
+    - Stående
+    - Liggende
+- Papirstørrelse
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Juridisk
+    - Bokstav
+    - Statement
+    - Tabloid
+- Sidemarger
+    - Topp
+        - Hode
+    - Bunn
+        - Bunntekst
+    - Venstre
+    - Høyre
+
+> [!NOTE]
+> Papirretningen til malen som er konfigurert på denne måten, må være den samme som [papirretningen for PDF-konvertering](#select-a-page-orientation-for-pdf-conversion) hvis PDF-konverteringen er konfigurert.
+
+Du må velge lengdeenheten for å kunne angi sidemarger:
+
+- Tommer
+- Centimeter
+- Millimeter
+
+![Konfigurer sideoppsettegenskaper på målsiden for elektronisk rapportering.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> Når en margverdi er i centimeter og angis med flere desimaler, avrundes den ved kjøretid til nærmeste verdi med én desimalplass.
+>
+> Når en margverdi er i millimeter og angis med desimaler, avrundes den ved kjøretid for Excel til nærmeste heltallsverdi uten desimaler.
+>
+> Når en margverdi er i millimeter og angis med flere desimaler, avrundes den ved kjøretid for Word til nærmeste verdi med én desimalplass.
 
 ## <a name="security-considerations"></a>Sikkerhetshensyn
 

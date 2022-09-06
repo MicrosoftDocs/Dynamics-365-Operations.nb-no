@@ -2,7 +2,7 @@
 title: Hurtigtaster
 description: Denne artikkelen gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67e1904807dfe5122de3d3ead97c2e2c11ed213d
-ms.sourcegitcommit: bd2d6a86a7fd4b4f6f86656998f7a8844f949e42
+ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
+ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9140447"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "9357598"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -135,10 +135,10 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 | Vannrett rulling                                                                                                   | Skift + musehjul             |
 | Gå til neste/forrige kolonne                                                                                       | Tab / Skift+Tab                 |
 | Gå til neste/forrige rad                                                                                          | Pil ned / Pil opp           |
-| Flytt til neste/forrige rad uten å velge<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote> | Ctrl+Pil opp / Ctrl+Pil ned |
-| Velg/tøm gjeldende rad<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote>                    | Ctrl+mellomrom / Ctrl+klikk         |
-| Legg til neste/forrige rad til det valgte settet<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote>   | Shift+Space                     |
-| Legg til en rekke rader til det valgte settet<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote>         | Skift+klikk                     |
+| Flytt til neste/forrige rad uten å velge<br><br>**Obs!** Denne snarveien gjelder bare for flervalgsscenarioer. | Ctrl+Pil opp / Ctrl+Pil ned |
+| Velg/tøm gjeldende rad<br><br>**Obs!** Denne snarveien gjelder bare for flervalgsscenarioer.                   | Ctrl+mellomrom / Ctrl+klikk         |
+| Legg til neste/forrige rad til det valgte settet<br><br>**Obs!** Denne snarveien gjelder bare for flervalgsscenarioer.  | Shift+Space                     |
+| Legg til en rekke rader til det valgte settet<br><br>**Obs!** Denne snarveien gjelder bare for flervalgsscenarioer.         | Skift+klikk                     |
 | Gå til neste/forrige side med data                                                                                   | Side opp / Side ned             |
 | Opprett en ny rad nederst i rutenettet                                                                             | Pil ned (fra den siste raden)  |
 | Gå til den første posten                                                                                               | CTRL+HOME                       |
@@ -148,7 +148,7 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 | Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                  |
 | Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                  |
 | Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                  |
-| Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
+| Utfør standardhandling i et rutenett<br><br>**Obs!** Denne snarveien aktiveres når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger. | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
 | Flytt den gjeldende kolonnen til neste/forrige posisjon (med fokus i overskriftsraden)                                   | Ctrl+Skift+Pil høyre / Ctrl+Skift+Pil venstre |
