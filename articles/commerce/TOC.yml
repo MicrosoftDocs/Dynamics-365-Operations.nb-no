@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.30 (november 2022)
+                  href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (oktober 2022)
                   href: get-started/whats-new-commerce-10-0-29.md
                 - name: Commerce 10.0.28 (juli 2022)
@@ -700,23 +702,21 @@
                   href: apply-multiple-retail-discounts.md
                 - name: Fastslå den optimale kombinasjonen av overlappende rabatter
                   href: optimal-combination-overlapping-discounts.md
-                - name: Definere kanalspesifikke rabatter
+                - name: Definer kanalspesifikke rabatter
                   href: define-channel-specific-discounts.md
-                - name: Alternativer for å hindre rabatter for detaljhandelsprodukter
-                  href: prevent-discounts.md
                 - name: Rabatter basert på betalingsmiddel
                   href: tender_based_discounts.md
                 - name: Leveringsrabatt
                   href: shipping-discount.md
                 - name: Konfigurer gave med innkjøpskampanjer
                   href: gift-with-purchase.md
-                - name: Konfigurer kuponger
-                  href: retail-coupons.md
-                - name: Vis rabatter i salgssted
-                  href: discounts-pos.md
+                - name: Kuponger
+                  href: coupons.md
+                - name: Prisinnstillinger
+                  href: price-settings.md
                 - name: Prisrapporter
                   href: price-report.md
-                - name: Opprette kanalspesifikke forretningsavtaler
+                - name: Opprett kanalspesifikke forretningsavtaler
                   href: tasks/base-price-trade-agreements.md
                 - name: Opprett forretningsavtaler ved hjelp av kategoriprisregler
                   href: tasks/category-pricing-rules-trade-agreements.md
@@ -800,6 +800,8 @@
                       href: calculated-inventory-retail-channels.md
                     - name: Lageroppslagsoperasjon i salgsstedet
                       href: pos-inventory-lookup-operation.md
+                    - name: Lagerbevisst produktoversikt
+                      href: inventory-aware-product-listing.md
                 - name: Bestillinger
                   items:
                     - name: Oversikt over bestilling
