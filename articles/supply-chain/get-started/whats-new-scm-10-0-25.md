@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 89036920cc8738e2948ec1a78aafc4b35fff87fa
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d6aa5a0cb49e5871a50a2ac5ac2c29cc09e232fc
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219102"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403717"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10025-april-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.25. (april 2022)
 
@@ -161,7 +161,7 @@ Tabellen viser også funksjoner som tidligere var i offentlig forhåndsversjon, 
 | Lagerstyring | [Nummerskiltposisjonering for lokasjon](../warehousing/location-license-plate-positioning.md) | Obligatorisk |
 | Lagerstyring | [Kombinasjon av produktdimensjoner for lokasjon](../warehousing/location-product-dimension-mixing.md) | Obligatorisk |
 | Lagerstyring | Gjør lagerstatusfeltet for den mobile enhetsbeholdningen redigerbart | Obligatorisk |
-| Lagerstyring | Plukktjeneste for manuell salgslinje for administrator eller lignende klarerte brukere | Obligatorisk |
+| Lagerstyring | [Plukktjeneste for manuell salgslinje for administrator eller lignende klarerte brukere](../warehousing/manual-order-line-picking-exception-handling.md) | Obligatorisk |
 | Lagerstyring | [Hindre at nummerskilt som er sendt med overføringsordrer, brukes i andre lagre enn mållageret](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Obligatorisk |
 | Lagerstyring | Spør om å løse tvetydige Lok./nr.skilt-navn | Obligatorisk |
 | Lagerstyring | [Kvalitetskontroll](../warehousing/quality-check.md) | Obligatorisk |

@@ -2,7 +2,7 @@
 title: Bruk lagerinnstillinger
 description: Denne artikkelen dekker beholdningsinnstillinger og beskriver hvordan du bruker dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: ''
-ms.openlocfilehash: bc55715b7c74f3b572459dd1aa7d409b7175535b
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 49310a44f8b9c636734e04d4eed9445384b55791
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287599"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405327"
 ---
 # <a name="apply-inventory-settings"></a>Bruk lagerinnstillinger
 
@@ -51,12 +51,12 @@ I Commerce defineres beholdningsinnstillinger fra **Områdeinnstillinger \> Utvi
     > [!IMPORTANT] 
     > Innstillingen **Lagernivå for flere lagre** er tilgjengelig fra og med Commerce-versjon 10.0.19-utgivelsen. Hvis du oppdaterer fra en eldre versjon av Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner, kan du se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Lagerinnstillinger for produktlistesider** – Denne innstillingen definerer hvordan produkter som ikke er på lager, vises i produktlister som gjengis av modulene for produktsamling og søkeresultater. De tilgjengelige verdiene er **Visning i ordre/bestilling med andre produkter**, **Skjul produkter som ikke er på lager fra liste** og **Skjul produkster som ikke er på lager, på slutten av listen**. Før du kan bruke denne innstillingen, må du først konfigurere noen forutsetningsinnstillinger i Commerce Headquarters. Hvis du vil ha mer informasjon, kan du se [Aktivere lagerkjennskap for søkeresultatmodulen](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+- **Lagerinnstillinger for produktlistesider** – Denne innstillingen definerer hvordan produkter som ikke er på lager, vises i produktlister som gjengis av modulene for produktsamling og søkeresultater. De tilgjengelige verdiene er **Visning i ordre/bestilling med andre produkter**, **Skjul produkter som ikke er på lager fra liste** og **Skjul produkster som ikke er på lager, på slutten av listen**. Før du kan bruke denne innstillingen, må du først konfigurere noen forutsetningsinnstillinger i Commerce Headquarters. Hvis du vil ha mer informasjon, kan du se [Beholdningsfølsom produktoversikt](inventory-aware-product-listing.md).
 
     > [!IMPORTANT] 
     > Innstillingen **Lagerinnstillinger for produktlistesider** er tilgjengelig fra og med Commerce-versjon 10.0.20-utgivelsen. Hvis du oppdaterer fra en eldre versjon av Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner, kan du se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Beholdningsområder** – denne innstillingen definerer beholdningsområdene meldingen vises for på områdemoduler. Den gjelder bare hvis enten den **Totalt tilgjengelig**-verdien eller **Fysisk tilgjengelig**-verdien er valgt for **Beholdningsnivå basert på**-innstillingen. De tilgjengelige verdiene er **Alle**, **Få eller tomt på lager** og **Tomt på lager**.
+- **Beholdningsområder** – denne innstillingen definerer beholdningsområdemeldingene vises i områdemoduler. Den gjelder bare hvis enten den **Totalt tilgjengelig**-verdien eller **Fysisk tilgjengelig**-verdien er valgt for **Beholdningsnivå basert på**-innstillingen. De tilgjengelige verdiene er **Alle**, **Få eller tomt på lager** og **Tomt på lager**.
 
     - Når **Alle** er valgt, vises meldinger for alle beholdningsområder – fra på lager ("Tilgjengelig"-melding) til tomt på lager ("Tomt på lager"-meldingen).
     - Når **Få eller tomt på lager** er valgt, vises meldinger for alle beholdningsområder bortsett fra "på lager" ("Tilgjengelig"-melding).

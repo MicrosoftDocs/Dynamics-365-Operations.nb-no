@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f80acca743ed3abc39e93b9d37f658cb9c24a88e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 56fe7fb4bb9d66f0ebb9be32be7569c31ca9ec11
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291489"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423874"
 ---
 # <a name="learning-catalog-for-commerce-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-commerce"></a>Opplæringskatalog for salg og markedsføring for Microsoft-partnere i Dynamics 365 Commerce
 
@@ -29,12 +29,9 @@ Hvis du vil ha opplæring om funksjoner som deles med andre økonomi- og driftsa
 
 ## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 
-| Innhold  | Beskrivelse  | Format  | Lengde    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/)   | Denne opplæringen tar deg med på en reise som begynner med å vise deg hvordan digitale transformasjoner og funksjonaliteten i forretningsprogrammer kan forvandle virksomheten din. Vi vil beskrive hvordan Dynamics 365 og Power Platform hjelper deg med å ta veloverveide avgjørelser basert på organisasjonens behov og mål, gjennom fire byggeblokker for digitale transformasjoner – moderne, enhetlig, intelligent og tilpassbar. | Gratis, selvbetjent elektronisk læringsforløp | 6.5 timer |
+| Innhold | Beskrivelse | Format | Lengde |
+|---------|-------------|--------|--------|
 | [Komme i gang med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/) | Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
 | [Komme i gang med Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybasert løsning som er utviklet for e-handel, fysiske butikker og omnikanal-forhandlere, for å bidra til å beskytte inntektene og ryktet ved å tilby verktøy og muligheter til å redusere svindel og misbruk, redusere driftsutgifter og øke akseptansrater, samtidig som brukerkontoer beskyttes mot svindeleksponering. | Gratis, selvbetjent elektronisk læringsforløp | 35 minutter |
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

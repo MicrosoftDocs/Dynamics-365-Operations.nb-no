@@ -13,18 +13,18 @@ ms.author: atrukawk
 ms.search.validFrom: 2021-09-23
 ms.dyn365.ops.version: 10.0.20
 ms.search.form: ''
-ms.openlocfilehash: ed07ae9784da3ca721fcb25a9c5a14c4f75f2e59
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 39cf4eb7eef1a83abeb7bd44fa7b2abefee0806e
+ms.sourcegitcommit: 8eb0cafe5ad20be2c4fff684e88d7d3f2249f820
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277378"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409671"
 ---
 # <a name="reference-original-invoices-in-credit-notes-vendor-invoices"></a>Referere til opprinnelige fakturaer i kreditnotaer (leverandørfakturaer)
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du oppretter en referanse til en opprinnelig faktura når du oppretter en kreditnota.
+I noen land og områder er det et juridisk krav at utskrevne kreditnotaer eller rapporteringsrutiner omfatter referanser til de opprinnelige fakturaene. Denne artikkelen beskriver hvordan du oppretter en referanse til en opprinnelig faktura når du oppretter en kreditnota.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -44,11 +44,17 @@ Funksjonaliteten som er beskrevet i denne artikkelen, gjelder følgende forretni
 
 ## <a name="define-a-reference-to-an-original-invoice"></a>Definere en referanse til en opprinnelig faktura
 
+Når du definerer en referanse til en opprinnelig faktura, vises følgende trinn på høyt nivå:
+1. Opprett og poster en leverandørfaktura.
+2. Opprett en leverandørkreditnota.
+3. Bruk funksjonen Krediter fakturering til å koble fakturaen til en kreditnota.
+4. Poster kreditnotaen.
+
 Bruk følgende fremgangsmåter til å definere referanser til opprinnelige fakturaer i de angitte forretningsdokumenttypene.
 
 ### <a name="vendor-credit-note-purchase-order"></a>Leverandørkreditnota (bestilling)
 
-1. Gå til **Leverandører** \> **Bestillinger** \> **Alle bestillinger**.
+1. Gå til **Leverandører** > **Bestillinger** > **Alle bestillinger**.
 2. Opprett en ny bestilling, eller bruk en eksisterende til å opprette en kreditnota.
 3. I handlingsruten, på **Faktura**-fanen i **Introduser**-gruppen, velger du **Krediter fakturering**.
 4. Angi årsaken til rettelsen og referansen til den opprinnelige fakturaen.

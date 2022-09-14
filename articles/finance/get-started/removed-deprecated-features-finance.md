@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1b5282bc1fb4834d001cd2513664996a2f4cf4f0
-ms.sourcegitcommit: 0feb5d0b06e04f99903069ff2801577be86b8555
+ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
+ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2022
-ms.locfileid: "9313891"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9410457"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller avskrevne funksjoner i Dynamics 365 Finance
 
@@ -32,6 +32,20 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > [!NOTE]
 > Detaljert informasjon om objekter i økonomi- og driftsapper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av økonomi- og driftsapper.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10030-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.30
+
+### <a name="revenue-recognition"></a>Inntektsføring
+
+[Inntektsføring](../../finance/accounts-receivable/revenue-recognition-overview.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Årsak til avskrivning/fjerning** |Erstattet av den forbedrede funksjonaliteten [Abonnementsfakturering](../../finance/accounts-receivable/subscription-billing-summary.md)
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder** | Program |
+| **Distribusjonsalternativ** | Alle |
+| **Status** | Avskrevet: Etter april 2023 blir ikke lenger funksjonen Inntektsføring i Dynamics 365 Finance støttet med feilrettinger. Kunder blir bedt om å bruke den forbedrede funksjonaliteten [Abonnementsfakturering](../../finance/accounts-receivable/subscription-billing-summary.md). I oktober 2023 slutter funksjonen Inntektsføring å være tilgjengelig. Kunder blir bedt om å gå over til den forbedrede funksjonaliteten Abonnementsfakturering.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.29
 

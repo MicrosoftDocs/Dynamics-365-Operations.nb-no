@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 23f4c52b6d1d8c1af927a2c21455d6e24b24408a
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: 14812fc201ba1038a78ea3317686dbe189ffa687
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357648"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423602"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API-er for lagersynlighet
 
@@ -41,6 +41,8 @@ Følgende tabell viser API-ene som er tilgjengelige for øyeblikket:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Poster | [Angi/overstyre lagerbeholdninger](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Poster | [Opprett én reservasjonshendelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Poster | [Opprett flere reservasjonshendelser](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Poster | [Tilbakefør én reservasjonshendelse](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Poster | [Tilbakefør flere reservasjonshendelser](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Poster | [Opprett én planlagt lagerendring](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Poster | [Opprett flere planlagte lagerendringer](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Poster | [Spør ved å bruke posteringsmetoden](#query-with-post-method) |
@@ -56,7 +58,7 @@ Følgende tabell viser API-ene som er tilgjengelige for øyeblikket:
 > 
 > Bulk-API-en kan returnere maksimalt 512 poster for hver forespørsel.
 
-Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
+Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Finn sluttpunktet i henhold til Lifecycle Services-miljøet
 
@@ -83,7 +85,7 @@ Det korte navnet på regionen kan finnes i Microsoft Dynamics Lifecycle Services
 | Brasil, sør        | sbr               |
 | USA sentralt i sør    | scus              |
 
-Øynummeret er der LCS-miljøet distribueres på Service Fabric. Det finnes for øyeblikket ingen måte å hente denne informasjonen fra brukersiden på.
+Øynummeret er der LCS-miljøet distribueres på Service Fabric. Det er for øyeblikket ingen måte å hente denne informasjonen fra brukersiden på.
 
 Microsoft har bygd et brukergrensesnitt i Power Apps, slik at du kan få det fullstendige sluttpunktet for mikrotjenesten. Hvis du ønsker mer informasjon, se [Finn endepunkt for tjeneste](inventory-visibility-configuration.md#get-service-endpoint).
 
@@ -146,7 +148,7 @@ Hvis du vil hente et token for sikkerhetstjeneste, gjør du følgende:
    - **HTTP-hode:** Inkluder API-versjonen. (Nøkkelen er `Api-Version`, og verdien er `1.0`.)
    - **Meldingstekst:** Ta med JSON-forespørselen du opprettet i forrige trinn.
 
-   Du skal motta et tilgangstoken (`access_token`) som svar. Du må bruke dette tokenet som bærertoken for å kalle opp lagersynlighets-API-en. Her er et eksempel:
+   Du skal motta et tilgangstoken (`access_token`) som svar. Du må bruke dette tokenet som bærertoken for å kalle opp lagersynlighets-API-en. Her er et eksempel.
 
    ```json
    {
@@ -168,9 +170,9 @@ Det finnes to API-er for oppretting av lagerendringshendelser:
 
 Tabellen nedenfor summerer betydningen av hvert felt i JSON-teksten.
 
-| Felt-ID | beskrivelse |
+| Felt-ID | Beskrivelse |
 |---|---|
-| `id` | En unik ID for den bestemte endringshendelsen. Denne ID-en brukes til å sikre at hvis kommunikasjon med tjenesten mislykkes under posteringen, vil samme hendelse ikke telles to ganger i systemet, hvis den sendes inn på nytt. |
+| `id` | En unik ID for den bestemte endringshendelsen. Hvis det forekommer en ny sending på grunn av en tjenestefeil, brukes denne ID-en til å sikre at samme hendelse ikke telles to ganger i systemet. |
 | `organizationId` | Identifikatoren til organisasjonen som er koblet til hendelsen. Denne verdien tilordnes til en ID for organisasjon eller dataområde i Supply Chain Management. |
 | `productId` | Identifikatoren for produktet. |
 | `quantities` | Antallet som antall på lager må endres etter. Hvis for eksempel 10 nye bøker legges til på en hylle, vil denne verdien være `quantities:{ shelf:{ received: 10 }}`. Hvis tre bøker fjernes fra hyllen eller selges, vil denne verdien være `quantities:{ shelf:{ sold: 3 }}`. |
@@ -178,7 +180,7 @@ Tabellen nedenfor summerer betydningen av hvert felt i JSON-teksten.
 | `dimensions` | Et dynamisk nøkkel/verdi-par. Verdiene er tilordnet til noen av dimensjonene i Supply Chain Management. Du kan imidlertid også legge til egendefinerte dimensjoner (for eksempel _Kilde_) for å angi om hendelsen kommer fra Supply Chain Management eller et eksternt system. |
 
 > [!NOTE]
-> Parameterne `SiteId` og `LocationId` konstruerer [partisjonskonfigurasjonen](inventory-visibility-configuration.md#partition-configuration). Derfor må du angi dem i dimensjoner når du oppretter lagerendringshendelser, angir eller overstyrer lagerbeholdninger eller oppretter reservasjonshendelser.
+> Parameterne `siteId` og `locationId` konstruerer [partisjonskonfigurasjonen](inventory-visibility-configuration.md#partition-configuration). Derfor må du angi dem i dimensjoner når du oppretter lagerendringshendelser, angir eller overstyrer lagerbeholdninger eller oppretter reservasjonshendelser.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Opprett én lagerendringshendelse
 
@@ -216,14 +218,14 @@ Følgende eksempel viser eksempeltekstinnholdet. I dette eksemplet posterer du e
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
+    "organizationId": "SCM_IV",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "PosMachineId": "0001",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "posMachineId": "0001",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -238,12 +240,12 @@ Følgende eksempel viser eksempeltekstinnholdet uten `dimensionDataSource`. I de
 ```json
 {
     "id": "123456",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red"
     },
     "quantities": {
         "pos": {
@@ -293,13 +295,13 @@ Følgende eksempel viser eksempeltekstinnholdet.
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
-        "productId": "T-shirt",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_1",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId&quot;: &quot;0001"
+            "posSiteId": "posSite1",
+            "posLocationId": "posLocation1",
+            "posMachineId&quot;: &quot;0001"
         },
         "quantities": {
             "pos": { "inbound": 1 }
@@ -307,12 +309,12 @@ Følgende eksempel viser eksempeltekstinnholdet.
     },
     {
         "id": "654321",
-        "organizationId": "usmf",
-        "productId": "Pants",
+        "organizationId": "SCM_IV",
+        "productId": "iv_postman_product_2",
         "dimensions": {
-            "SiteId": "1",
-            "LocationId": "11",
-            "ColorId&quot;: &quot;black"
+            "siteId": "iv_postman_site",
+            "locationId": "iv_postman_location",
+            "colorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -362,13 +364,13 @@ Følgende eksempel viser eksempeltekstinnholdet. Virkemåten til denne API-en er
 [
     {
         "id": "123456",
-        "organizationId": "usmf",
+        "organizationId": "SCM_IV",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-             "PosSiteId": "1",
-            "PosLocationId": "11",
-            "PosMachineId": "0001"
+            "posSiteId": "iv_postman_site",
+            "posLocationId": "iv_postman_location",
+            "posMachineId": "0001"
         },
         "quantities": {
             "pos": {
@@ -381,7 +383,7 @@ Følgende eksempel viser eksempeltekstinnholdet. Virkemåten til denne API-en er
 
 ## <a name="create-reservation-events"></a>Opprett reservasjonshendelser
 
-Hvis du vil bruke API-en *Reserver*, må du åpne reservasjonsfunksjonen og fullføre reservasjonskonfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Reservasjonskonfigurasjon (valgfritt)](inventory-visibility-configuration.md#reservation-configuration).
+Hvis du vil bruke API-en *Reserver*, må du aktivere reservasjonsfunksjonen og fullføre reservasjonskonfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Reservasjonskonfigurasjon (valgfritt)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Opprett én reservasjonshendelse
 
@@ -389,7 +391,7 @@ En reservering kan gjøres mot ulike datakildeinnstillinger. Hvis du vil konfigu
 
 Når du kaller reservasjons-API, kan du styre reservasjonsvalideringen ved å angi den boolske `ifCheckAvailForReserv` parameteren i forespørselsteksten. Verdien `True` betyr at valideringen kreves, mens en verdi å `False` betyr at valideringen ikke er nødvendig. Standardverdien er `True`.
 
-Hvis du vil avbryte en reservering eller ikke reservere angitte lagerantall, angir du antallet til en negativ verdi og angir parameteren `ifCheckAvailForReserv` til `False` for å hoppe over valideringen.
+Hvis du vil tilbakeføre en reservering eller ikke reservere angitte lagerantall, setter du antallet til en negativ verdi og setter parameteren `ifCheckAvailForReserv` til `False` for å hoppe over valideringen. Det finnes også en dedikert API for opphevelse av reservasjon som gjør det samme. Forskjellen er bare i måten de to API-ene kalles opp på. Det er enklere å tilbakeføre en bestemt reservasjonshendelse ved å bruke `reservationId` med API-en for *opphevelse av reservasjon*. Hvis du vil ha mer informasjon, kan du se delen [_Oppheve reservasjon av én reservasjonshendelse_](#reverse-reservation-events).
 
 ```txt
 Path:
@@ -427,24 +429,36 @@ Følgende eksempel viser eksempeltekstinnholdet.
 ```json
 {
     "id": "reserve-0",
-    "organizationId": "usmf",
-    "productId": "T-shirt",
+    "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "quantity": 1,
     "quantityDataSource": "iv",
-    "modifier": "softreservordered",
+    "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red",
-        "SizeId&quot;: &quot;Small"
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
+        "colorId": "red",
+        "sizeId&quot;: &quot;small"
     }
 }
 ```
 
+Følgende eksempel viser et vellykket svar.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a><a name="create-multiple-reservation-events"></a>Opprett flere reservasjonshendelser
 
-Denne API-en er en masseversjon av [API-en for enkelthendelser](#create-one-reservation-event).
+Denne API-en er en masseversjon av [API-en for enkelthendelser](#create-reservation-events).
 
 ```txt
 Path:
@@ -480,9 +494,107 @@ Body:
     ]
 ```
 
+## <a name="reverse-reservation-events"></a>Tilbakefør reservasjonshendelser
+
+API-en *Opphev reservasjon* fungerer som tilbakeføringsoperasjonen for [*Reservasjon*](#create-reservation-events)-hendelser. Det brukes til å tilbakeføre en reservasjonshendelse som er angitt av `reservationId`, eller til å redusere reserveringsantallet.
+
+### <a name="reverse-one-reservation-event"></a><a name="reverse-one-reservation-event"></a>Tilbakefør én reservasjonshendelse
+
+Når en reservasjon opprettes, blir en `reservationId` tatt med i svarteksten. Du må angi samme `reservationId` for å avbryte reservasjonen og ta med samme `organizationId` og `dimensions` som brukes for reservasjons-API-oppkallet. Til slutt angir du en `OffsetQty`-verdi som representerer antall varer som skal frigjøres fra forrige reservasjon. En reservasjon kan enten tilbakeføres fullstendig eller delvis, avhengig av angitt `OffsetQty`. Hvis for eksempel *100* enheter med varer er reservert, kan du angi `OffsetQty: 10` for å oppheve reservasjonen av *10* av den opprinnelige reserverte mengden.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+Følgende kode viser et eksempel på tekstinnhold.
+
+```json
+{
+    "id": "unreserve-0",
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId&quot;: &quot;small"
+    },
+    "OffsetQty": 1
+}
+```
+
+Følgende kode viser et eksempel på en vellykket svartekst.
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> Når `OffsetQty` er mindre enn eller lik reservasjonsmengden i svarteksten, blir `processingStatus` "*success*" og `totalInvalidOffsetQtyByReservId` *0*.
+>
+> Hvis `OffsetQty` er større enn den reserverte mengden, blir `processingStatus`"*partialSuccess*" og `totalInvalidOffsetQtyByReservId` differansen mellom `OffsetQty` og den reserverte mengden.
+>
+>Hvis reservasjonen for eksempel har et antall på *10* og `OffsetQty` har verdien *12*, blir `totalInvalidOffsetQtyByReservId` *2*.
+
+### <a name="reverse-multiple-reservation-events"></a><a name="reverse-multiple-reservation-events"></a>Tilbakefør flere reservasjonshendelser
+
+Denne API-en er en masseversjon av [API-en for enkelthendelser](#reverse-one-reservation-event).
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
+        ...
+    ]
+```
+
 ## <a name="query-on-hand"></a>Spør om beholdning
 
-Bruk API-en _Spør om beholdning_ til å hente gjeldende lagerbeholdningsdata for produktene dine. API støtter for øyeblikket spørringer på opptil 100 individuelle varer etter `ProductID`-verdi. Flere `SiteID`- og `LocationID`-verdier kan også angis i hver spørring. Maksimumsgrensen defineres som `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+Bruk API-en *Spør om beholdning* til å hente gjeldende lagerbeholdningsdata for produktene dine. API støtter for øyeblikket spørringer på opptil 5000 individuelle varer etter `productID`-verdi. Flere `siteID`- og `locationID`-verdier kan også angis i hver spørring. Maksimumsgrensen defineres av følgende ligning:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Spør ved å bruke posteringsmetoden
 
@@ -517,7 +629,7 @@ I hoveddelen av denne forespørselen er `dimensionDataSource` fremdeles en valgf
 - `productId` kan inneholde én eller flere verdier. Hvis den er en tom matrise, vil alle produkter bli returnert.
 - `siteId` og `locationId` brukes for partisjonering i lagersynlighet. Du kan angi mer enn én `siteId` og `locationId` verdi i en forespørsel om *lagerbeholdning*. I den gjeldende versjonen må du angi både `siteId` og `locationId` verdier.
 
-Parameteren `groupByValues` bør følge konfigurasjonen din for indeksering. Hvis du vil ha mer informasjon, kan du se [Konfigurasjon av produktindekshierarki](./inventory-visibility-configuration.md#index-configuration).
+Vi foreslår at du bruker parameteren `groupByValues` for å følge konfigurasjonen din for indeksering. Hvis du vil ha mer informasjon, kan du se [Konfigurasjon av produktindekshierarki](./inventory-visibility-configuration.md#index-configuration).
 
 Parameteren `returnNegative` styrer om resultatene inneholder negative oppføringer.
 
@@ -530,13 +642,13 @@ Følgende eksempel viser eksempeltekstinnholdet.
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["T-shirt"],
-        "siteId": ["1"],
-        "LocationId": ["11"],
-        "ColorId": ["Red"]
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
+        "colorId": ["red"]
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -546,12 +658,12 @@ Eksemplet nedenfor viser hvordan du spør på alle produkter på et bestemt omr�
 ```json
 {
     "filters": {
-        "organizationId": ["usmf"],
+        "organizationId": ["SCM_IV"],
         "productId": [],
-        "siteId": ["1"],
-        "LocationId": ["11"],
+        "siteId": ["iv_postman_site"],
+        "locationId": ["iv_postman_location"],
     },
-    "groupByValues": ["ColorId", "SizeId"],
+    "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
 ```
@@ -574,10 +686,10 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Her er et eksempel på henting av en URL-adresse. Denne hentforespørselen er nøyaktig den samme som posteringseksemplet som ble angitt tidligere.
+Her er et eksempel på henting av en nettadresse. Denne hentforespørselen er nøyaktig den samme som posteringseksemplet som ble angitt tidligere.
 
 ```txt
-/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
 ## <a name="available-to-promise"></a>Tilgjengelig for ordre

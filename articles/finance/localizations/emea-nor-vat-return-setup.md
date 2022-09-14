@@ -2,7 +2,7 @@
 title: Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 description: Denne artikkelen forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
 author: AdamTrukawka
-ms.date: 05/27/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: 43808c2d10aadcc47561b05817ef3adb8cebd955
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 5350041b43baab91232961c336087c685f110a12
+ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9292243"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "9295967"
 ---
 # <a name="prepare-your-environment-to-interoperate-with-id-porten-and-altinn-web-services"></a>Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 
@@ -128,29 +128,42 @@ Tabellen nedenfor viser oppslagsresultatene for **NoteForTaxCode_Lookup**.
 
 | Oppslagsresultat (Norsk) | Oppslagsresultat (Engelsk) |
 |---|---|
-| periodisering | Avsetning |
-| feil mva-kode brukt tidligere | Feil mva-kode som tidligere er brukt |
-| feil i regnskapsprogram | Feil i regnskapsprogramvaren |
-| omsetning før registrering | Omsetning før registrering |
-| omberegning/retur | Omberegning/retur | 
-| midlertidig innførsel | Midlertidig import |
-| gjeninnførsel | Ny import |
-| tolldeklarasjon på feil organisasjonsnummer | Tolldeklarering på feil organisasjonsnummer |
-| gjenutførsel | Eksporter på nytt |
-| gjenutførsel eller retur | Gjenutførsel eller retur |
-| midlertidig utførsel | Midlertidig eksport |
-| tjenesteeksport | Tjenesteeksporter |
-| butikkanskaffelser| Store innkjøp |
-| anskaffelser foretatt før mva-plikt | Innkjøp foretatt før mva-plikt |
-| forsikringsoppgjør| Forsikringsoppgjør |
-| sesongvariasjon | Sesongvariasjon |
-| kreditnota | Kreditnota |
-| Annet | Annet |
+| periodisering | Accrual |
+| feil mva-kode brukt tidligere | Incorrect VAT code previously used |
+| feil i regnskapsprogram | Errors in the accounting software |
+| omsetning før registrering | Turnover before registration |
+| omberegning/retur | Recalculation/return | 
+| midlertidig innførsel | Temporary importation |
+| gjeninnførsel | Re-importation |
+| tolldeklarasjon på feil organisasjonsnummer | Customs declaration on an incorrect organization number |
+| gjenutførsel | Re-export |
+| gjenutførsel eller retur | Re-export or return |
+| midlertidig utførsel | Temporary export |
+| tjenesteeksport | Service exports |
+| butikkanskaffelser| Large procurements |
+| anskaffelser foretatt før mva-plikt | Procurements made before VAT liability |
+| forsikringsoppgjør| Insurance settlement |
+| sesongvariasjon | Seasonal variation |
+| kreditnota | Credit note |
+| Annet | Other |
+| utenfor rekkevidde | Out of scope (innført i [699358](https://fix.lcs.dynamics.com/Issue/Details?bugId=699358&dbType=3&qc=b53d15d28a992c61827bf70302fa9b5c176337520030077a14cedb1131994315)) |
 
 > [!IMPORTANT]
-> Det er viktig at du legger til **Annet** (**Annet**), som må samle inn data fra andre tilfeller som den siste varen i listen. **Linjeverdien** må være den siste verdien i tabellen. I alle de andre kolonnene velger du **\*Ikke tom\***. Siden **Årsak** ikke er et obligatorisk felt i avgiftstransaksjoner, legger du til en linje med oppslagsresultatverdien **Annet** (**Annet**), **\*Tom\*** i **Årsak**-kolonnen, og **\*Ikke tom\*** i alle de andre kolonnene.
+> Det er viktig at du legger til **Annet** (**Other**), som må samle inn data fra andre tilfeller som den siste varen i listen. **Linjeverdien** må være den siste verdien i tabellen. I alle de andre kolonnene velger du **\*Ikke tom\***. Siden **Årsak** ikke er et obligatorisk felt i avgiftstransaksjoner, legger du til en linje med oppslagsresultatverdien **Annet** (**Other**), **\*Tom\*** i **Årsak**-kolonnen, og **\*Ikke tom\*** i alle de andre kolonnene.
+>
+> Hvis du velger en økonomisk årsakskode for et dokument som ikke er knyttet til et oppslagsresultat fra den forrige tabellen (slik at **Annet**-verdien blir brukt), kan ikke systemet rapportere denne årsaken som én av verdiene fra den ordnede listen som den norske skatteetaten krever. I dette tilfellet rapporteres årsakskoden og kommentaren i koden `<merknad/beskrivelse>` under noden `<mvaSpesifikasjonslinje>`. Kommentaren rapporteres som den er i det tilknyttede feltet **Årsakskommentar** i det opprinnelige dokumentet.
 
-Hvis du velger en økonomisk årsakskode for et dokument som ikke er tilknyttet et oppslagsresultat fra den forrige tabellen (dette betyr at **Annet**-verdi vil bli brukt), kan ikke systemet rapportere denne årsaken som én av verdiene fra listen som er listet opp, som den norske skatteetaten krever. I dette tilfellet rapporteres årsakskoden og kommentaren i `<merknad/beskrivelse>`-koden under `<mvaSpesifikasjonslinje>`-noden, og kommentaren rapporteres \"som den er\" i det relaterte **Årsakskommentar**-feltet i det opprinnelige dokumentet
+Hurtigreparasjonen [699358](https://fix.lcs.dynamics.com/Issue/Details?bugId=699358&dbType=3&qc=b53d15d28a992c61827bf70302fa9b5c176337520030077a14cedb1131994315) innfører den nye verdien **utenfor rekkevidde** for oppslagsresultatet i oppslagsfeltet **NoteForTaxCode_Lookup**. Bruk denne verdien til å tilordne alle de økonomiske årsakene som skal utelates i mva-returen. Mer bestemt kan du bruke denne verdien til å tilordne verdiene **\*Tom\*** og **\*Ikke tom\***.
+
+Illustrasjonen nedenfor viser et eksempel på oppsettet for oppslagsfeltet **NoteForTaxCode_Lookup**.
+
+![Oppsett av en «utenfor rekkevidde»-verdi for NoteForTaxCode_Lookup.](media/emea-nor-vat-return-outofscope.png)
+
+Finance vil tolke dette oppsettet på følgende måte:
+
+- Alle avgiftstransaksjoner som posteres med årsakskoden **FEIL**, blir gruppert og rapportert med verdien *feil i regnskapsprogram* i koden `<merknad/utvalgtMerknad>` under noden `<mvaSpesifikasjonslinje>`.
+- Alle avgiftstransaksjoner som posteres med årsakskoden **DIVERSE**, rapporteres med den økonomiske årsakskoden i koden `<merknad/beskrivelse>` under noden `<mvaSpesifikasjonslinje>`. Den økonomiske årsakskommentaren rapporteres som den er i det tilknyttede feltet **Årsakskommentar** i det opprinnelige dokumentet.
+- Alle andre avgiftstransaksjoner som har verdien **\*Tom\*** eller ikke verdien **\*Ikke tom\*** for årsakskoden, blir gruppert, og koden `<merknad>` under noden `<mvaSpesifikasjonslinje>` utelates.
 
 #### <a name="detailed-description-of-the-tax-transaction-classifier"></a><a id="tax-transaction-classifier"></a>Detaljert beskrivelse av klassifikatoren for mva-transaksjoner
 
@@ -188,16 +201,16 @@ Tabellen nedenfor viser oppslagsresultatene for **VATSpecification_Lookup**.
 
 | Oppslagsresultat (Norsk) | Oppslagsresultat (Engelsk) |
 |---|---|
-| justering | Justering |
-| trykk på krav | Tap på krav |
-| tilbakeføringAvInngåendeMerverdiavgift | Tilbakeføring av inngående mva |
-| uttak | Uttak |
-| varer | Varer |
-| tjenester | Tjeneste |
-| Annet | Annet |
+| justering | Adjustment |
+| trykk på krav | Losses on claims |
+| tilbakeføringAvInngåendeMerverdiavgift | Reversal of input VAT |
+| uttak | Withdrawals |
+| varer | Goods |
+| tjenester | Services |
+| Annet | Other |
 
 > [!IMPORTANT]
-> Det er viktig at du legger til **Annet** (**Annet**), som må samle inn data fra andre tilfeller som den siste varen i listen. **Linjeverdien** må være den siste verdien i tabellen. I alle de andre kolonnene velger du **\*Ikke tom\***. Fordi i noen tilfeller kan feltene for **varens mva-gruppe** og **merverdiavgiftsgruppe** være tomme i avgiftstransaksjoner, legg til en linje til med oppslagsresultatverdien **Annet** (**Annet**), **\*Tomt\*** i kolonnene **Varens mva-gruppe** og **Merverdiavgiftsgruppe** og **\*Ikke tomt\*** i alle de andre kolonnene.
+> Det er viktig at du legger til **Annet** (**Other**), som må samle inn data fra andre tilfeller som den siste varen i listen. **Linjeverdien** må være den siste verdien i tabellen. I alle de andre kolonnene velger du **\*Ikke tom\***. Fordi i noen tilfeller kan feltene for **varens mva-gruppe** og **merverdiavgiftsgruppe** være tomme i avgiftstransaksjoner, legg til en linje til med oppslagsresultatverdien **Annet** (**Other**), **\*Tomt\*** i kolonnene **Varens mva-gruppe** og **Merverdiavgiftsgruppe** og **\*Ikke tomt\*** i alle de andre kolonnene.
 >
 > Verdier fra opplistingsliste *Spesifikasjon* av verdier må bare brukes med bestemte *Standard avgiftskoder*. Sørg for at **VATSpecification_Lookup** er kompatibelt med gjeldende regler som defineres av norske skattemyndigheter som følger med i dokumentasjonen til [Informasjonsmodeller, XSD og koding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
 
@@ -214,31 +227,31 @@ Tabellen nedenfor viser oppslagsresultatene for **StandardTaxCodes_Lookup**.
 
 | Oppslagsresultater | Beskrivelse (norsk) | Beskrivelse (engelsk) |
 |---|---|---|
-| 1 | Fradragsberettiget innenlands inngående merverdiavgift, 25% | Fradragsberettiget innenlands inngående mva, 25 % |
-| 11 | Fradragsberettiget innenlands inngående merverdiavgift, 15 % | Fradragsberettiget innenlands inngående mva, 15 % |
-| 12 | Fradragsberettiget innenlands inngående merverdiavgift, 11,11% | Fradragsberettiget innenlands inngående mva, 11.11 % |
-| 13 | Fradragsberettiget innenlands inngående merverdiavgift, 12% | Fradragsberettiget innenlands inngående mva, 12 % |
-| 14 | Fradragsberettiget innførselsmerverdiavgift, 25% | Fradragsberettiget inngående mva (betalt ved import), 25 % |
-| sept. | Fradragsberettiget innførselsmerverdiavgift, 15% | Fradragsberettiget inngående mva (betalt ved import), 15 % |
-| 3 | Utgående merverdiavgift, 25 % | Utgående mva, 25 % |
-| 31 | Utgående merverdiavgift, 15 % | Utgående mva, 15 % |
-| 32 | Utgående merverdiavgift, 11,11 % | Utgående mva, 11.11 % |
-| 33 | Utgående merverdiavgift, 12 % | Utgående mva, 12 % |
-| 5 | Innenlands omsetning og uttak fritatt for merverdiavgift | Innenlands salg og uttak fritatt mva |
-| 51 | Innenlandsk omsetning med omvendt avgiftplikt | Innenlands omsetning med snudd avregning |
-| 52 | Utførsel av varer og tjenester | Eksport av varer og tjenester |
-| 6 | Omsetning utenfor merverdiavgiftsloven | Omsetning utenfor mva-loven |
-| 81 | Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 25% | Basis for import av varer med rett til fradrag av innførselsavgift, 25% |
-| 82 | Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 25% | Basis for import av varer uten rett til fradrag av innførselsavgift, 25% |
-| 83 | Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 15% | Basis for import av varer med rett til fradrag av innførselsavgift, 15% |
-| 84 | Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 15% | Basis for import av varer uten rett til fradrag av innførselsavgift, 15% |
-| 85 | Grunnlag innførsel av varer som det ikke skal beregnes merverdiavgift av | Grunnlag for import av varer som merverdiavgift ikke skal beregnes fra |
-| 86 | Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 25 % | Tjenester kjøpt fra utlandet med rett til fradrag av mva, 25 % |
-| 87 | Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 25 % | Tjenester kjøpt fra utenlandet uten rett til å trekke fra merverdiavgift, 25 % |
-| 88 | Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 12 % | Tjenester kjøpt fra utlandet med rett til fradrag av mva, 12 % |
-| 89 | Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 12 % | Tjenester kjøpt fra utenlandet uten rett til å trekke fra merverdiavgift, 12 % |
-| 91 | Kjøp av klimakvoter eller gull med fradragsrett for merverdiavgift, 25 % | Kjøp av handelsvirksomhet eller gull med rett til å trekke fra merverdiavgift, 25 % 
-| 92 | Kjøp av klimakvoter eller gull uten fradragsrett for merverdiavgift, 25 % | Kjøp av handelsvirksomhet eller gull uten rett til å trekke fra merverdiavgift, 25 % |
+| 1 | Fradragsberettiget innenlands inngående merverdiavgift, 25% | Deductible domestic input VAT, 25% |
+| 11 | Fradragsberettiget innenlands inngående merverdiavgift, 15 % | Deductible domestic input VAT, 15% |
+| 12 | Fradragsberettiget innenlands inngående merverdiavgift, 11,11% | Deductible domestic input VAT, 11.11% |
+| 13 | Fradragsberettiget innenlands inngående merverdiavgift, 12% | Deductible domestic input VAT, 12% |
+| 14 | Fradragsberettiget innførselsmerverdiavgift, 25% | Input VAT deductible (paid on import), 25% |
+| sept. | Fradragsberettiget innførselsmerverdiavgift, 15% | Input VAT deductible (paid on import), 15% |
+| 3 | Utgående merverdiavgift, 25 % | Outgoing VAT, 25% |
+| 31 | Utgående merverdiavgift, 15 % | Outgoing VAT, 15% |
+| 32 | Utgående merverdiavgift, 11,11 % | Outgoing VAT, 11.11% |
+| 33 | Utgående merverdiavgift, 12 % | Outgoing VAT, 12% |
+| 5 | Innenlands omsetning og uttak fritatt for merverdiavgift | Domestic sales and withdrawals exempt from VAT |
+| 51 | Innenlandsk omsetning med omvendt avgiftplikt | Domestic turnover with reverse charge |
+| 52 | Utførsel av varer og tjenester | Export of goods and services |
+| 6 | Omsetning utenfor merverdiavgiftsloven | Turnover outside the VAT Act |
+| 81 | Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 25% | Basis for importation of goods with a right to deduct import VAT, 25% |
+| 82 | Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 25% | Basis for importation of goods without a right to deduct import VAT, 25% |
+| 83 | Grunnlag innførsel av varer med fradragsrett for innførselsmerverdiavgift, 15% | Basis for importation of goods with a right to deduct import VAT, 15% |
+| 84 | Grunnlag innførsel av varer uten fradragsrett for innførselsmerverdiavgift, 15% | Basis for importation of goods without a right to deduct import VAT, 15% |
+| 85 | Grunnlag innførsel av varer som det ikke skal beregnes merverdiavgift av | Basis for importation of goods that VAT is not to be calculated from |
+| 86 | Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 25 % | Services purchased from abroad with a right to deduct VAT, 25% |
+| 87 | Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 25 % | Services purchased from abroad without a right to deduct VAT, 25% |
+| 88 | Tjenester kjøpt fra utlandet med fradragsrett for merverdiavgift, 12 % | Services purchased from abroad with a right to deduct VAT, 12% |
+| 89 | Tjenester kjøpt fra utlandet uten fradragsrett for merverdiavgift, 12 % | Services purchased from abroad without a right to deduct VAT, 12% |
+| 91 | Kjøp av klimakvoter eller gull med fradragsrett for merverdiavgift, 25 % | Purchase of emissions trading or gold with a right to deduct VAT, 25% 
+| 92 | Kjøp av klimakvoter eller gull uten fradragsrett for merverdiavgift, 25 % | Purchase of emissions trading or gold without a right to deduct VAT, 25% |
 
 > [!IMPORTANT]
 > Det er viktig at du definerer betingelser for alle mva-koder som brukes i avgiftstransaksjoner i løpet av rapporteringsperioden. Hvis det ikke er definert et passende oppslagsresultat for en mva-kode som brukes i transaksjoner i løpet av rapporteringsperioden, stoppes genereringen av en mva-retur. 

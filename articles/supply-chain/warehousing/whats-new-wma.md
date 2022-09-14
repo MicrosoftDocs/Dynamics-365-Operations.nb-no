@@ -10,18 +10,24 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 115708ce9e71c35feb1cf370ead556847e04cbd2
-ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
+ms.openlocfilehash: a0fa081b0110682af1fcda50b0c912dc5d03fa73
+ms.sourcegitcommit: 29af4c9d9968bbfa4c19fee9de34fed309f6d38b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9324211"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9388455"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller endringer i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20320"></a>Versjon 2.0.32.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Forbedret stabilitet.
 
 ## <a name="version-20310"></a>Versjon 2.0.31.0
 

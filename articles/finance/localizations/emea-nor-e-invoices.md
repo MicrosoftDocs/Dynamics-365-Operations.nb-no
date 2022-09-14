@@ -13,12 +13,12 @@ ms.author: mrolecki
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.08
 ms.search.form: ''
-ms.openlocfilehash: 83686bf2f2d9747a7d56908edfec568361d2dc45
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 7aa320061c51928da973e3da1a9c1560d21cc490
+ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9285752"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "9337476"
 ---
 # <a name="customer-electronic-invoices-in-norway"></a>Elektroniske fakturaer for kunde i Norge
 
@@ -93,7 +93,7 @@ Hvis du vil ha mer informasjon om hvordan du importerer ER-konfigurasjoner, kan 
 
 Når du genererer elektroniske fakturaer, blir satsene for mva-koder analysert og transformert til [kategorier som samsvarer med UNCL5305](https://docs.peppol.eu/pracc/catalogue/1.0/codelist/UNCL5305/). Følgende logikk brukes:
 
-- Når det gjelder alle avgiftssatser som ikke er null, brukes **S**-kategorien.
+- Når det gjelder alle avgiftssatser som ikke er null, brukes **S**-kategorien som standardverdi. Du kan bruke **Eksterne koder** ved å gå til **Avgift** > **Mva-kode** for å angi en eksplisitt **verdi** som representerer den eksterne koden som skal brukes som kategorien for samsvar med avgiftsforskrifter.
 - Når det gjelder alle nullavgiftssatser, brukes enten kategorien **E** eller **Z**, avhengig av hvilken rapporteringskode som er konfigurert for avgiftsfritt salg.
 
 ### <a name="customer-requisition"></a>Kunderekvisisjon

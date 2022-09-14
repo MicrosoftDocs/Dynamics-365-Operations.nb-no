@@ -12,12 +12,12 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d43b9b331a8a88ac1282acc33dabe7b71bca57b7
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: 82420ad8dae12e4a47290599a5bbd0d15a7f3c29
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124304"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423861"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-supply-chain-management"></a>Opplæringskatalog for brukere av Dynamics 365 Supply Chain Management
 
@@ -25,11 +25,10 @@ Har du nettopp fått et nytt program å bruke?
 
 Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de fleste grunnleggende til de mest avanserte. Vi informerer deg hvis det finnes innhold i flere formater, slik at du kan velge opplæringsformatet som oppfyller dine behov.
 
-## <a name="get-started"></a>Komme i gang<a name="get-started"></a>
+## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 
-| Innhold | beskrivelse | Formater | Lengde |
+| Innhold | Beskrivelse | Format | Lengde |
 |---------|-------------|--------|--------|
-| [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interessert i å finne ut mer om forretningsprogrammer? Kanskje du ikke vet hvor du skal begynne med Microsoft Dynamics 365 Power Platform-programmer? Lær hvordan mulighetene til forretningsprogrammer kan bidra til å forvandle virksomheten din. | Gratis, selvbetjent elektronisk læringsforløp | 8 timer |
 | [Grunnleggende om Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper. | Gratis, selvbetjent elektronisk læringsforløp | 5.5 timer |
 | [Komme i gang med økonomi- og driftsapper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan økonomi- og driftsapper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i karrieren din med økonomi- og driftsapper er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |
 | [Komme i gang med aktivastyring for Dynamics 365 Supply Chain Management](/learn/modules/get-started-asset-management/index) | Aktivastyring er en modul for håndtering av aktiva og vedlikeholdsjobber i Dynamics 365 Supply Chain Management. Med Aktivastyring kan du effektivt administrere og utføre oppgaver knyttet til administrasjon og service av mange typer utstyr i bedriften din, for eksempel maskiner, produksjonsutstyr og kjøretøyer. Aktivastyring støtter løsninger på tvers av en rekke bransjer. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |

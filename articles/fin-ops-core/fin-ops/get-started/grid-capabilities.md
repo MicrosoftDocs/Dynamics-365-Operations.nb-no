@@ -2,7 +2,7 @@
 title: Rutenettfunksjoner
 description: Denne artikkelen beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a8968a1263dfafd67b07b4beb78c51493e95756e
-ms.sourcegitcommit: 47534a943f87a9931066e28f5d59323776e6ac65
+ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9258955"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405472"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -178,20 +178,22 @@ Funksjonen **Ny rutenettkontroll** er tilgjengelig direkte i funksjonsbehandling
 
 Denne funksjonen begynte å bli aktivert som standard i versjon 10.0.21. Den har som mål å bli obligatorisk i oktober 2022.
 
-## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvikler] Velge bort enkeltsider fra å bruke det nye rutenettet 
+## <a name="developer-topics"></a>Utviklerverktøy
+
+### <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvikler] Velge bort enkeltsider fra å bruke det nye rutenettet 
 Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det nye rut nettet, er det tilgjengelig et API for å tillate at et enkelt skjema bruker den gamle rutenettkontrollen samtidig som resten av systemet brukes til å utnytte den nye rutenettkontrollen. Hvis du vil velge bort en enkelt side fra det nye rutenettet, legger du til følgende oppkallspost `super()` i skjemaets `run()`-metode.
 
 ```this.forceLegacyGrid();```
 
 Denne API-en vil til slutt bli avskrevet for å tillate fjerning av den eldre rutenettkontrollen. Den vil imidlertid fortsatt være tilgjengelig i minst 12 måneder etter at den har blitt nedskrevet. Hvis problemer gjør at denne APIen brukes, rapporterer du dem til Microsoft.
 
-### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinge en side til å bruke det nye rutenettet etter tidligere å ha valgt bort rutenettet
+#### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinge en side til å bruke det nye rutenettet etter tidligere å ha valgt bort rutenettet
 Hvis du har valgt bort en enkeltside fra å bruke det nye rutenettet, kan det hende at du senere vil aktivere det nye rutenettet på nytt etter at de underliggende problemene ble løst. For å gjøre dette må du ganske enkelt fjerne oppkallet til `forceLegacyGrid()`. Endringen trer ikke i kraft før et av følgende skjer:
 
 - **Ny distribusjon av miljø**: Når et miljø oppdateres og distribueres på nytt, tømmes automatisk tabellen som lagrer sidene som har valgt det nye rutenettet (FormControlReactGridState).
 - **Manuell fjerning av tabellen**: I utviklingsscenarier må du bruke SQL for å fjerne FormControlReactGridState-tabellen og deretter starte AOS på nytt. Denne kombinasjonen av handlinger tilbakestiller hurtigbufring av sider som ikke er valgt for det nye rutenettet.
 
-## <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Utvikler] Velge bort rutenett fra funksjonen Skriving i forkant av systemet
+### <a name="developer-opting-individual-grids-out-of-the-typing-ahead-of-the-system-capability"></a>[Utvikler] Velge bort rutenett fra funksjonen Skriving i forkant av systemet
 Det har oppstått enkelte scenarioer som ikke fungerer bra sammen med funksjonen *Skriving i forkant av systemet* i rutenettet. (Noen typer kode som for eksempel utløses når en rad valideres, fører til at en datakildeundersøkelse utløses, og undersøkelsen kan deretter ødelegge ikke-fordelte endringer på eksisterende rader.) Hvis organisasjonen oppdager et slikt scenario, er en API tilgjengelig som gjør det mulig for en utvikler å velge bort et individuelt rutenett fra asynkron radvalidering og gå tilbake til den eldre virkemåten.
 
 Når asynkron radvalidering deaktiveres i et rutenett, kan brukere ikke opprette en ny rad eller flytte til en annen eksisterende rad i rutenettet mens det er valideringsproblemer i gjeldende rad. Som en sideeffekt av denne handlingen kan du ikke lime inn tabeller fra Excel i økonomi- og driftsrutenett.
@@ -204,13 +206,18 @@ Hvis du vil velge bort ett enkelt rutenett fra asynkron radvalidering, legger du
 > - Dette kallet bør bare aktiveres i spesielle tilfeller, og skal ikke være normen for alle rutenett.
 > - Vi anbefaler ikke at du veksler denne API-en ved kjøretid etter at skjemaet lastes.
 
-## <a name="developer-size-to-available-width-columns"></a>[Utvikler] Skaler-til-tilgjengelig-bredde-kolonner
+### <a name="developer-size-to-available-width-columns"></a>[Utvikler] Skaler-til-tilgjengelig-bredde-kolonner
 Hvis en utvikler setter egenskapen **WidthMode** til **SizeToAvailable** for kolonner i det nye rutenettet, har disse kolonnene i utgangspunktet samme bredde som de ville ha hvis egenskapen ble satt til **SizeToContent**. De kan imidlertid strekke seg for å bruke en eventuell ekstra tilgjengelig bredde i rutenettet. Hvis egenskapen er satt til **SizeToAvailable** for flere kolonner, deler alle disse kolonnene tilgjengelig ekstra bredde i rutenettet. Hvis en bruker imidlertid endrer størrelsen på en av disse kolonnene manuelt, blir kolonnen statisk. Den blir stående i denne bredden, og strekker seg ikke lenger til å bruke ekstra tilgjengelig rutenettbredde.
 
-## <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Utvikler] Angi kolonnen som skal motta det innledende fokuset når nye rader opprettes, ved å bruke pil ned
+### <a name="developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key"></a>[Utvikler] Angi kolonnen som skal motta det innledende fokuset når nye rader opprettes, ved å bruke pil ned
 Som det ble omtalt i [Forskjellene ved angivelse av data før system](#differences-when-entering-data-ahead-of-the-system)-delen, hvis funksjonen Skriv inn før systemet, og en bruker oppretter en ny rad ved hjelp av **Pil ned**, er standardvalget å sette fokuset i den første kolonnen i den nye raden. Denne opplevelsen kan være forskjellig fra erfaringen i den eldre rutenettet, eller når en **Ny**-knapp velges.
 
 Brukere og organisasjoner kan opprette lagrede visninger som er optimert for dataregistrering. (Du kan for eksempel endre rekkefølge på kolonner slik at den første kolonnen er den du vil begynne å angi data i.) I tillegg kan organisasjoner justere dette problemet ved hjelp av den valgte **selectedControlOnCreate()**-metoden fra versjon 10.0.29. Med denne moten kan en utvikler angi kolonnen som skal motta det innledende fokuset når en ny rad opprettes, ved å bruke **Pil ned**-tasten. Som inndata tar denne API kontroll-ID-en som samsvarer med kolonnen som skal motta det innledende fokuset.
+
+### <a name="developer-handling-grids-with-non-react-extensible-controls"></a>[Utvikler] Håndtere rutenett med utvidbare kontroller som ikke er basert på React
+Hvis systemet finner en utvidbar kontroll som ikke er basert på React, blir i stedet gjengivelsen av det eldre rutenettet fremtvunget av systemet. Når en bruker støter på denne situasjonen første gang, vises en melding om at siden må oppdateres. Senere blir det eldre rutenettet lastet inn automatisk på denne siden uten at brukerne blir ytterligere varslet, før neste systemoppdatering. 
+
+Forfattere av utvidbare kontroller kan løse dette problemet permanent ved å lage en React-versjon av kontrollen for bruk i rutenettet.  Når den er utviklet, kan X++-klassen for kontrollen vises med attributtet **FormReactControlAttribute** for å angi plasseringen til React-gruppen som skal lastes inn for denne kontrollen. Se klassen `SegmentedEntryControl` som et eksempel.  
 
 ## <a name="known-issues"></a>Kjente problemer
 Denne delen viser en liste over kjente problemer for den nye rutenettkontrollen.
@@ -218,9 +225,12 @@ Denne delen viser en liste over kjente problemer for den nye rutenettkontrollen.
 ### <a name="open-issues"></a>Åpne problemer
 - Når du har aktivert funksjonen **Ny rutenettkontroll**, vil noen sider fortsette å bruke den eksisterende rutenettkontrollen. Dette vil skje i følgende situasjoner:
  
-    - Det finnes en kortliste på siden som gjengis i flere kolonner.
-    - Det finnes en gruppert kortliste på siden.
-    - En rutenettkolonne med en ikke-reagerende utvidbar kontroll.
+    - [Løst] Det finnes en kortliste på siden som gjengis i flere kolonner.
+        - Denne typen kortliste støttes av **Ny rutenettkontroll** fra og med versjon 10.0.30. All bruk av forceLegacyGrid() til dette formålet kan fjernes. 
+    - [Løst] Det finnes en gruppert kortliste på siden.
+        - Grupperte kortlister støttes av **Ny rutenettkontroll** fra og med versjon 10.0.30. All bruk av forceLegacyGrid() til dette formålet kan fjernes. 
+    - [Løst] En rutenettkolonne med en utvidbar kontroll som ikke er basert på React.
+        - Utvidbare kontroller kan ha en React-versjon av kontrollen som lastes inn ved plassering i rutenettet, og justere kontrolldefinisjonen for å laste inn denne kontrollen ved bruk i rutenettet. Se den tilsvarende utviklerdelen hvis du vil ha mer informasjon. 
 
     Når en bruker først støter på én av disse situasjonene, vil det vises en melding om oppdatering av siden. Når denne meldingen vises, vil siden fortsette å bruke det eksisterende rutenettet for alle brukere til neste oppdatering av produktversjonen. Bedre behandling av disse scenariene, slik at det nye rutenettet kan brukes, vurderes for en fremtidig oppdatering.
 

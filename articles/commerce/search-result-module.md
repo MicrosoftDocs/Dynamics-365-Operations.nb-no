@@ -2,7 +2,7 @@
 title: Modul for søkeresultater
 description: Denne artikkelen dekker søkeresultatmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: d10e9ed78dfc90833ff3c09021f863f6ef0b80d9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: eeb7cd0769fcb866a3d7dcc03e8e87daf24b2c5d
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286817"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405300"
 ---
 # <a name="search-results-module"></a>Modul for søkeresultater
 
@@ -86,48 +86,16 @@ Følg denne fremgangsmåten for å legge til søkeresultatmodulen på en kategor
 1. Gå gjennom sidekonfigurasjonen under **Gjennomgang og fullfør**. Hvis du har behov for å redigere sideinformasjonen, velger du **Tilbake**. Hvis sideinformasjonen er riktig, velger du **Opprett side**.
 1. Velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 
-## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Aktivere lagerkjennskap for søkeresultatmodulen
+## <a name="inventory-aware-search-results-module"></a>Modul for beholdningsfølsomme søkeresultater
 
-Kunder forventer vanligvis at et e-handelsområde er beholdningsfølsomt gjennom hele leseropplevelsen, slik at de kan bestemme hva de skal gjøre hvis det ikke er noe lager for et produkt. Modulen for søkeresultater kan konfigureres til å inneholde lagerdata og gir følgende erfaringer:
+Modulen for søkeresultater kan konfigureres til å inneholde lagerdata og gir følgende erfaringer:
 
-- Vis en lagertilgjengelighetsetikett sammen med produktet.
+- Vis etiketter på lagernivå sammen med produkter.
 - Skjul produkter ikke på lager fra produktlisten.
 - Vis produkter som ikke er på lager, nederst i produktlisten.
-- Filtrer produkter i søkeresultater etter lagernivå.
+- Støtt lagerbasert produktfiltrering.
 
-Hvis du vil aktivere disse funksjonene, må du først aktivere **Forbedret produktoppdaging for e-handel slik at de er beholdningsfølsomme** i arbeidsområdet for **Funksjonsstyring**.
-
-> [!NOTE]
-> Funksjonen **Forbedret produktoppdaging for e-handel slik at de er beholdningsfølsomme** er tilgjengelig i Commerce versjon 10.0.20 og nyere.
-
-Beholdningsfølsomt produktsøk bruker produktattributter til å hente informasjon om lagertilgjengelighet. Det må opprettes egne produktattributter for funksjonen, lagerdata må angis for dem og de må legges til i nettkanalen. 
-
-Følg denne fremgangsmåten for å opprette egne produktattributter for å støtte den lageraktiverte søkeresultatmodulen.
-
-1. I Headquarters går du til **Retail og Commerce \> IT for detaljhandel og handel \> Produkter og beholdning**.
-1. Velg og åpne **Fyll ut produktattributter med lagernivå**.
-1. Angi følgende informasjon i dialogboksen:
-
-    1. I feltet **Produktattributt og typenavn** angir du et navn for det dedikerte produktattributtet som vil bli opprettet for å registrere lagertilgjengelighetsdata.
-    1. I feltet **Lagertilgjengelighet basert på** velger du antallstypen som lagernivåberegningen skal baseres på (for eksempel **Fysisk tilgjengelig**). 
-
-1. Klikk på jobben i bakgrunnen. Siden produktbeholdning endres konstant i et omnikanalmiljø, anbefaler vi på det sterkeste at du planlegger denne jobben som en satsvis prosess.
-
-> [!NOTE]
-> For en konsekvent beregning av lagernivå på tvers av sider og moduler på netthandelsområdet, må du huske på å velge samme antallstype for både **Lagertilgjengelighet basert på**-innstillingen i Commerce Headquarters og **Beholdningsnivå basert på**-innstillingen i Commerce-områdebygger. Hvis du vil ha informasjon om beholdningsinnstillinger i områdebygger, kan du se [Bruk beholdningsinnstillinger](inventory-settings.md).
-
-Følg denne fremgangsmåten for å konfigurere produktattributtene for en nettkanal. 
-
-1. Gå til **Detaljhandel og handel \> Kanaloppsett \> Kanalkategorier og produktattributter** i hovedkontoret.
-1. Velg en nettkanal for å aktivere beholdningsfølsomme søkeresultatmodul for.
-1. Velg og åpne en tilknyttet attributtgruppe, og legg til det nyopprettede produktattributtet.
-1. For Commerce-versjoner før 10.0.27-utgivelse velger du **Angi attributtmetadata**, velger produktattributtene som nylig er lagt til, og slår deretter på alternativene **Vis attributt i kanal**, **Kan hentes**, **Kan finjusteres** og **Kan spørres**.
-1. Gå til **Retail og Commerce \> IT for Retail og Commerce \> Distribusjonsplan**, og kjør jobben **1150 (katalog)**. Hvis du planlegger jobben **Fyll ut produktattributtene med lagernivå** som en satsvis prosess, anbefaler vi at du også planlegger 1150-jobben som en satsvis prosess som kjører samtidig.
-
-> [!NOTE]
-> For produkter som vises i søkeresultatmodulen, vises lagernivået på hovedproduktnivået i stedet for på det individuelle variantnivået. Det har bare to mulige verdier: "tilgjengelig" og "ikke på lager". Den faktiske etiketten for verdiene hentes fra definisjonen [beholdningsnivåprofil](inventory-buffers-levels.md). Et hovedprodukt betraktes som ikke på lager når alle variantene er ikke på lager.
-
-Når alle de forrige konfigurasjonstrinnene er fullført, vil finjusteringene på søkeresultatsider vise et lagerbasert filter, og søkeresultatmodulen henter lagerdata i bakgrunnen. Deretter kan du konfigurere innstillingen **Beholdningsinnstillinger for produktlistesider** i Commerce-områdebygger for å styre hvordan søkeresultatmodulen viser produkter som ikke er på lager. For mer informasjon, se [Bruke beholdningsinnstillinger](inventory-settings.md).
+Hvis du vil aktivere disse funksjonene, må du først aktivere funksjonen **Forbedret produktoppdaging for e-handel slik at de er beholdningsfølsomme** og deretter konfigurere noen innstillinger som kreves i Commerce headquarters. Hvis du vil ha mer informasjon, kan du se [Beholdningsfølsom produktoversikt](inventory-aware-product-listing.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

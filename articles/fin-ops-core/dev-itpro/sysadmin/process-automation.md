@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-06-30
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: c0015b65f1ff00cfce19139cb8aaa248512d070b
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: 1a1d152a01e0ebe6a20e2e6b31f12ed7b8deb024
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9114943"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423966"
 ---
 # <a name="process-automation"></a>Prosessautomatisering
 
@@ -30,7 +30,9 @@ Prosessautomatisering tillater enkel planlegging av prosesser som vil bli kjørt
 
 Du finner siden for sentraladministrasjon for alle prosessautomatiseringer i Systemadministrasjon-modulen på **Oppsett**-menyen. Denne siden viser en liste over alle automatiserte prosesser (serier) som er konfigurert i systemet. Du kan også legge til nye prosessautomatiseringer direkte fra denne siden. Når en serie er definert, kan du administrere hver serie fra denne listen. Du kan velge å redigere hele serien, slette den, vise alle forekomster i en liste visning eller deaktivere serien hvis du vil stanse det planlagte arbeidet i en tidsperiode. 
 
-Prosesser som deaktiveres i funksjonsbehandling, vises ikke når funksjonen er deaktivert. I tillegg vil ikke planleggingsmotoren for prosessautomatisering planlegge noen forekomster eller bakgrunnsprosesser for en deaktivert funksjon. Når du aktiverer funksjonen på nytt, blir planlagte forekomster eller bakgrunnsprosesser i fortiden kjørt umiddelbart. Planleggingsmotoren for prosessautomatisering er avhengig av systemets satsvise jobb, **Avspørringssystem for prosessautomatisering** for å kjøres. Jobben bør ikke endres på noe tidspunkt. Hvis denne satsvise jobben ikke kjører, eller hvis den har feil, velger du **Initialiser prosessautomatisering** for å tilbakestille den satsvise jobben. Denne tilbakestillingen sikrer at alle nye automatiseringer som frigis i en nyere versjon av appen, initialiseres. 
+Bruk fanen **Bakgrunnsprosesser** på denne siden til å administrere bakgrunnsprosesser som kjører i miljøet. Velg **Rediger** for å gjøre endringer i tidsplanen for alle bakgrunnsprosesser. Disse endringene kan omfatte en tidsperiode for hvilemodus som gjør at prosessen «hviler» eller stanses midlertidig i en bestemt periode hver dag. Velg **Vis de nyeste resultatene** for å vise kjøringsresultatene for hver bakgrunnsprosess.
+
+Prosesser som deaktiveres i funksjonsbehandling, vises ikke når funksjonen er deaktivert. I tillegg vil ikke planleggingsmotoren for prosessautomatisering planlegge noen forekomster eller bakgrunnsprosesser for en deaktivert funksjon. Når du aktiverer funksjonen på nytt, blir planlagte forekomster eller bakgrunnsprosesser i fortiden kjørt umiddelbart. Planleggingsmotoren for prosessautomatisering er avhengig av systemets satsvise jobb, **Avspørringssystem for prosessautomatisering** for å kjøres. Jobben bør ikke endres på noe tidspunkt. Hvis denne satsvise jobben ikke kjører eller er i en feiltilstand, velger du **Initialiser prosessautomatisering** for å tilbakestille den satsvise jobben. Denne tilbakestillingen sikrer at alle nye automatiseringer som lanseres i en nyere versjon av programmet, initialiseres. 
 
 ## <a name="calendar-view"></a>Kalendervisning
 

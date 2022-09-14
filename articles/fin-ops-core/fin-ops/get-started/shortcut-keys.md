@@ -2,7 +2,7 @@
 title: Hurtigtaster
 description: Denne artikkelen gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med økonomi- og driftsapper.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04abaeada458e05df3de045d9c7a715040b7bfa4
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
+ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357598"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9405445"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -87,6 +88,8 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 | Åpne filtreringsruten (eller skift fokus mellom filtreringsruten og hovedskjemaet hvis filtreringsruten allerede er åpen) | Alt+M,F eller Ctrl+F3       |
 | Lukk filtreringsruten (med fokus i filtreringsruten)                                                               | ESC                      |
 | Åpne avansert filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
+| Bruk hurtigfilteret (når fokus er på hurtigfilteret)                                                              | Angi                    |
+| Bruk rutenettfilteret (når fokus er på filterfeltet for kolonneoverskriften)                                             | Angi                    |
 
 ## <a name="form-shortcuts"></a>Skjemasnarveier
 
@@ -157,12 +160,13 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
 
-| Hvis du vil gjøre dette                                                                   | Trykk                          |
+| Hvis du vil gjøre dette                                                                   | Trykk                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åpne hyperkoblingen                                                           | Ctrl+Enter                    |
+| Åpne hyperkoblingen (når fokus er på en skrivebeskyttet kontroll)<br><br>**Obs!** Denne snarveien gjelder bare når funksjonen **Standardiser tastatursamhandling for kombinasjonsboks og oppslagskontroller** er aktivert                   | Angi    |
 | Angi øktdatoen i et datofelt                                       | D                             |
 | Angi gjeldende dato i et datofelt                                       | T                             |
-| Åpne oppslag, kombinasjonsboks, datovelger, rullegardinboks                         | Alt+Pil ned                |
+| Åpne oppslag, kombinasjonsboks, datovelger, rullegardinboks                         | Alt+Pil ned<br><br>Enter (når funksjonen **Standardiser tastatursamhandling for kombinasjonsboks og oppslagskontroller** er aktivert)                |
 | Lukk oppslag, kombinasjonsboks, datovelger, rullegardinboks                        | ESC                           |
 | Flytt fokus til et oppslag (når oppslaget allerede er åpent)                   | Alt+Pil ned                |
 | Åpne kontrollens forbedrede forhåndsvisning                                          | Alt+Pil opp                  |

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 576d8d5d0cad09aed40f1ceb9ce5682816c0f666
-ms.sourcegitcommit: f2175fe5e900d39f34167d671aab5074b09cc1b8
+ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9306326"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9423576"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurer Inventory Visibility
 
@@ -303,13 +303,13 @@ Løsningen inkluderer denne partisjonskonfigurasjonen som standard. Derfor *tren
 
 Som oftest vil ikke spørringen om lagerbeholdning bare være på det høyeste "total"-nivået. I stedet bør du også se resultater som samles opp basert på lagerdimensjonene.
 
-Lagersynlighet gir fleksibilitet ved å la deg definere _indeksene_. Disse indeksene er basert på en dimensjon eller en kombinasjon av dimensjoner. En indeks består av et *settnummer*, en *dimensjon* og et *hierarki*, som definert i følgende tabell.
+Lagersynlighet gir fleksibilitet ved å la deg konfigurere _indekser_ for å forbedre ytelsen til spørringene. Disse indeksene er basert på en dimensjon eller en kombinasjon av dimensjoner. En indeks består av et *settnummer*, en *dimensjon* og et *hierarki*, som definert i følgende tabell.
 
 | Navn | beskrivelse |
 |---|---|
 | Settnummer | Dimensjoner som tilhører samme sett (indeks), blir gruppert sammen, og det samme settnummeret tilordnes dem. |
 | Dimensjon | Basisdimensjoner som resultatet av spørringen samles opp på. |
-| Hierarki | Hierarkiet brukes til å definere dimensjonskombinasjonene som støttes, som det kan spørres om. Du kan for eksempel definere et dimensjonssett som har en hierarkisekvens av `(ColorId, SizeId, StyleId)`. I dette tilfellet støtter systemet spørringer for fire dimensjonskombinasjoner. Den første kombinasjonen er tom, den andre er `(ColorId)`, den tredje er `(ColorId, SizeId)` og den fjerde er `(ColorId, SizeId, StyleId)`. De andre kombinasjonene støttes ikke. Hvis du vil ha mer informasjon, kan du se eksemplet nedenfor. |
+| Hierarki | Hierarkiet lar deg øke ytelsen til bestemte dimensjonskombinasjoner når de brukes i parametere for filter og grupperingsspørringer. Hvis du for eksempel definerer et dimensjonssett med en hierarkisekvensen `(ColorId, SizeId, StyleId)`, kan systemet raskere behandle spørringer som er knyttet til fire dimensjonskombinasjoner. Den første kombinasjonen er tom, den andre er `(ColorId)`, den tredje er `(ColorId, SizeId)` og den fjerde er `(ColorId, SizeId, StyleId)`. Hastigheten økes ikke for andre kombinasjoner. Filtre er ikke begrenset av rekkefølge, men må være i disse dimensjonene hvis du vil forbedre ytelsen deres. Hvis du vil ha mer informasjon, kan du se eksemplet nedenfor. |
 
 Gjør følgende for å konfigurere produkthierarkiindeksen.
 
@@ -319,14 +319,13 @@ Gjør følgende for å konfigurere produkthierarkiindeksen.
 1. Som standard vises det en liste over indekser. Hvis du vil endre en eksisterende indeks, velger du **Rediger** eller **Legg til** i delen for den relevante indeksen. Hvis du vil opprette et nytt indekssett, velger du **Nytt indekssett**. For hver rad i hvert indekssett velger du fra listen over basisdimensjoner i **Dimensjon**-feltet. Verdier for følgende felter genereres automatisk:
 
     - **Settnummer** – Dimensjoner som tilhører samme gruppe (indeks), blir gruppert sammen, og det samme settnummeret tilordnes dem.
-    - **Hierarki** – Hierarkiet brukes til å definere dimensjonskombinasjonene som støttes, som det kan spørres om i en dimensjonsgruppe (indeks). Hvis du for eksempel definerer en dimensjonsgruppe som har hierarkisekvensen *Stil*, *Farge* og *Størrelse*, støtter systemet resultatet av tre spørringsgrupper. Den første gruppen er kun stil. Den andre gruppen er en kombinasjon av stil og farge. Og den tredje gruppen er en kombinasjon av stil, farge og størrelse. De andre kombinasjonene støttes ikke.
+    - **Hierarki** – Hierarkiet øker ytelsen til bestemte dimensjonskombinasjoner når de brukes i parametere for filter og grupperingsspørringer.
 
 > [!TIP]
 > Her er noen tips du kan tenke på når du definerer indekshierarkiet:
 >
 > - Basisdimensjoner som er definert i partisjonskonfigurasjonen, bør ikke defineres i indekskonfigurasjoner. Hvis en basisdimensjon er definert på nytt i indekskonfigurasjonen, kan du ikke utføre spørringer for denne indeksen.
 > - Hvis du bare trenger å spørre etter lager som samles opp av alle dimensjonskombinasjonene, kan du definere en enkelt indeks som inneholder basisdimensjonen `Empty`.
-> - Du må ha minst ett indekshierarki (som for eksempel inneholder basisdimensjonen `Empty`), ellers vil spørringene mislykkes med feilen "Ingen indekshierarki er angitt".
 
 ### <a name="example"></a>Eksempel
 

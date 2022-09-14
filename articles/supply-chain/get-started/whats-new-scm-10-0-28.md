@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 5cca06517fbdcbdae6e54c106b113a83851240c8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: bbbd524020690b84fce34facaaa3047853fb2641
+ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334783"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9403718"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10028-august-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.28. august 2022)
 
@@ -50,7 +50,7 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre dette i [
 | Lagerstyring | (India) For overføringsprisregler kan du ignorere lokasjon når Fra lagerkode er satt til Alle | <p>Denne funksjonen gjelder bare for Indias lokalisering. Prosessen med å definere overføringspriser for varer i lageroverføringer blir mer oversiktlig.</p><p>Du definerer overføringspriser ved å konfigurere hver vare med overføringsprissettingsregler. En måte å gjøre denne konfigurasjonen på, er å inkludere en regellinje der **Fra lagerkode**-feltet er satt til *Alle*. Denne innstillingen angir at overføringsprisen som er definert av linjen, skal gjelde uansett lageret som varen er plukket fra. Når denne funksjonen er aktivert, vil overføringsprisregler der **Fra lagerkode**-feltet er satt til *Alle*, ignorere **Sted**-innstillingen. Regelen vil derfor gjelde uansett lokasjon som er angitt i overføringsordren. Dette problemet er sannsynligvis hva som forventes, fordi lokasjonen er under lageret i lagringsdimensjonshierarkiet.</p><p>Uten denne funksjonen bruker systemet bare regler av denne typen når lokasjonen på overføringsordren samsvarer nøyaktig med lokasjonen som er angitt for regelen. (Hvis en tom lokasjon er angitt for regelen, vil systemet bare bruke regelen for overføringsordrer som også har en tom verdi for lokasjonen.)</p> |
 | Lagerstyring | Opprydding av rapportdata for lagerbeholdning | Denne funksjonen gir en måte å rydde opp i dataene som brukes til å opprette rapportene *Lagring av rapport for lagerbeholdning*. |
 | Produksjonskontroll | Tildel prosjektaktiviteter for serviceavtaler og serviceordrelinjer | Denne funksjonen legger til et felt kalt **Prosjektaktivitet** i serviceavtalen og serviceordrelinjer, slik at du kan angi en prosjektaktivitet for dem. Funksjonen forhindrer blokkeringsfeil når du posterer prosjektjournaler for servicestyring som krever at det angis en prosjektaktivitet.  |
-| Lagerstyring | Plukktjeneste for manuell overføringslinje for administrator eller lignende klarerte brukere | Ved hjelp av denne funksjonen kan administratorer plukke lagertransaksjoner som er knyttet til overføringslinjer manuelt. Disse linjene inkluderer linjer som allerede er frigitt til lageret. Administratorer bør bare gjøre denne plukkingen i spesielle tilfeller, for eksempel når systemet er ødelagt. |
+| Lagerstyring | Plukktjeneste for manuell overføringslinje for administrator eller lignende klarerte brukere | Ved hjelp av denne funksjonen kan administratorer plukke lagertransaksjoner som er knyttet til overføringslinjer manuelt. Disse linjene inkluderer linjer som allerede er frigitt til lageret. Administratorer bør bare gjøre denne plukkingen i spesielle tilfeller, for eksempel når systemet er ødelagt. Hvis du vil ha mer informasjon, kan du se [Håndtere plukkunntak for salgs- og overføringslinjer manuelt](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og oppdaterte dokumentasjonsressurser
 

@@ -1,23 +1,23 @@
 ---
 title: Opplæringskatalog for implementeringsprosjektleder som arbeider med Dynamics 365 Finance
 description: Finn alle opplæringsalternativene for personer som arbeider som implementeringsprosjektledere med Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 ms.prod: ''
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b4c0a108c581eafee45fa3ab31d532d3acc7ed2
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9f75a7f6fad3fb8a204c579083b9ffaca46e7592
+ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9067658"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424550"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Opplæringskatalog for implementeringsprosjektleder som arbeider med Dynamics 365 Finance
 
@@ -25,11 +25,10 @@ Er du ansvarlig for å sørge for at bedriftens implementering går greit?
 
 Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de fleste grunnleggende til de mest avanserte. Vi informerer deg hvis det finnes innhold i flere formater, slik at du kan velge opplæringsformatet som oppfyller dine behov.
 
-## <a name="get-started"></a>Komme i gang<a name="get-started"></a>
+## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 
-| Innhold | beskrivelse  | Formater  | Lengde    |
+| Innhold | Beskrivelse  | Format  | Lengde    |
 |-------------|-----------------|-------------|------------|
-| [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interessert i å finne ut mer om forretningsprogrammer? Kanskje du ikke vet hvor du skal begynne med Microsoft Dynamics 365 Power Platform-programmer? Lær hvordan mulighetene til forretningsprogrammer kan bidra til å forvandle virksomheten din. | Gratis, selvbetjent elektronisk læringsforløp | 7 timer |
 | [Grunnleggende om Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper. | Gratis, selvbetjent elektronisk læringsforløp | 5.5 timer |
 | [Komme i gang med økonomi- og driftsapper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan økonomi- og driftsapper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i karrieren din med økonomi- og driftsapper er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |
 | [Før du kjøper](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Ta en titt på den trinnvise veiledningen om du fortsatt vurderer Finance and Operations eller er klare til å gjøre et kjøp. | Dokumentasjon | |
@@ -58,13 +57,8 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Finance and Operations: Regression Suite Automation Tool – Bakgrunn og oppsett (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Dette er den første av en todelt serie om Regression Suite Automation Testing (RSAT). I denne økten beskriver vi hvordan du holder tritt med kontinuerlige oppdateringer ved hjelp av automatisk testing via RSAT. Opplæring og anbefalinger om oppretting av oppgaveopptak og utføring av tester ved hjelp av RSAT, blir beskrevet, sammen med en trinnvis gjennomgang av installasjonen og oppsettet. | Teknisk foredrag (opptak av webinar) | 70 minutter |
 | [Finance and Operations: Regression Suite Automation Tool – Demonstrasjon av testing av livssyklus (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Dette er den andre av en todelt serie om Regression Suite Automation Testing (RSAT). Denne økten dekker en demonstrasjon av hele syklusen for oppretting og lagring av oppgaveopptak innspillinger fra Finance and Operations i BPM-biblioteket i LCS, synkronisering av BPM-biblioteket for å opprette testtilfeller i Azure DevOps, gruppering av testtilfeller til testserier, og innlasting og utførelse av testserier i RSAT. | Teknisk foredrag (opptak av webinar) | 70 minutter |
 | [Fremgangsmåte for ytelsestesting (DYN449PAL2)](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) | Delte på dette tekniske foredraget om håndtering av til ytelsestesting. Finn ut mer om de grunnleggende, anbefalte fremgangsmåtene for testing, tilgjengelige verktøy og teknikker for å utføre tester og måle ytelse, og hvordan du bruker resultatene til optimalisering. | Teknisk foredrag (opptak av webinar) | 45 minutter |
-| [Slik oppgraderer du til 7.2 (juli 2017) fra 7.0 (RTW)/7.1 (utgivelse 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | I denne økten skal vi beskrive hvordan du oppgraderer fra Dynamics 365 Finance and Operations v7.0 (RTW) og v7.1 (1611) til v7.2 (juli 2017). Vi skiller tydelig mellom aktive kunder og pågående prosjekter (er aktive ennå). | Teknisk foredrag (opptak av webinar) | 58 minutter |
-| [Økonomi- og driftsapper: Oppgradere fra 7.x til 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Delta på vårt neste tekniske foredrag der vi beskriver prosessen for oppgradering fra 7.X til 8.X. Vi beskriver en rekke scenarier og trinn som kan utføres for oppdatering av kode og data. Vi beskriver også oppdage scenarioer for forespørsler om utvidelsesmuligheter og hvordan du registrerer dem der det er nødvendig. Del 1 av 2. | Teknisk foredrag (opptak av webinar) | 61 minutter |
-| [Oppgradering av AX2012 til Finance and Operations (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Dette tekniske foredraget gir en oversikt over hvordan du oppgraderer kode og data fra Dynamics AX 2012 til Dynamics 365 for Operations. | Teknisk foredrag (opptak av webinar) | 45 minutter |
+| [Oppgradering fra AX2012 til økonomi- og driftsapper – 3. september 2020](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | Dette tekniske foredraget gir en oversikt over hvordan du oppgraderer kode og data fra Dynamics AX 2012 til økonomi- og driftsapper. | Teknisk foredrag (opptak av webinar) | 66 minutter |
 | [Alternativer for analyse og rapportering: utskrift og dokumentrutingsagenten](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Delta på dette tekniske foredraget om to relaterte emner. Først skal vi diskutere løsningsmøntre og verktøy for analyse og rapportering for Dynamics 365 Finance, Enterprise Edition. For det andre vil vi diskutere utskriftsscenarioer og Document Routing Agent. | Teknisk foredrag (opptak av webinar) | 45 minutter |
-| [Kurs MB-300T01-A: Felles kjernefunksjoner i Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Dette kurset beskriver felles kjernefunksjoner i Microsoft Dynamics 365 Finance. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
-| [Kurs MB-300T02-A: Kjernekonfigurasjon i Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Dette kurset beskriver kjernekonfigurasjonsoppgaver for Microsoft Dynamics 365 Finance. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
-| [Kurs MB-300T03-A: Dataoverføring og klargjøring for å komme i gang med Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Dette kurset beskriver dataoverføring og klargjøring for å komme i gang med Microsoft Dynamics 365 Finance. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 | [Startside for implementeringslivssyklus](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Disse emnene beskriver programmene, verktøyene og prosessene som er tilgjengelige i forbindelse med implementeringslivssyklusen for Microsoft Dynamics 365 Finance-prosjektet. | Dokumentasjon | |
 
 ## <a name="financial-management"></a>Økonomistyring<a name="financial-management"></a>
@@ -81,13 +75,10 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Konfigurer Dynamics 365 Finance for offentlig sektor](/learn/modules/configure-public-sector-dyn365-finance/) | Dynamics 365 Finance aktiverer forretningsprosesser som er felles for offentlig og privat sektorer, for eksempel budsjettering, kjøp og leverandør- og kundeoppgaver. Bruk funksjonen Offentlig sektor til å overholde regler, forskrifter og rapporteringskrav for organisasjoner som betjener offentligheten. | Gratis selvbetjent nettbasert modul | 1 time |
 | [Finansrapportering (DYN305PAL)](https://community.dynamics.com/365/b/techtalks/posts/financial-reporting-april-25-2017) | Dette tekniske foredraget beskriver oppsett av finansrapportering og rapportlister i Dynamics 365 for Operations. Økten vil også dekke tilbakestilling av datatorg i UAT-miljø, feilsøking og søk etter hurtigreparasjon ved hjelp av LCS. | Gratis opptak av en webkonferanse | 57 minutter |
 | [Finance and Operations: Digital mva for Storbritannia – mva-deklarering i Dynamics 365 For Finance And Operations (DYN599PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) | I løpet av denne økten vil vi snakke om den nye innsendingsprosessen som er introdusert i HMRC i Storbritannia for mva-deklareringer. Vi vil forklare hvordan du konfigurerer mva-deklarering og konfigurerer elektroniske meldinger i Dynamics 365 Finance. Vi vil demonstrere innsendingsprosessen for HMRC-programmet i et sandkassemiljø. Denne økten er spesielt relevant for konsulenter som vil implementere funksjonen og gi opplæring til brukere. | Gratis opptak av en webkonferanse | 63 minutter |
-| [Kurs MB-310T01-A: Konfigurer og bruk viktige komponenter for økonomistyring i Dynamics 365 Finance](https://www.microsoft.com/learning/course.aspx?cid=MB-310T01) | Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og deretter behandle dem ved å avskrive dem og angi en kapitaliseringsterskel. Behandlingen av anleggsmidler samsvare med både internasjonale regnskapsstandarder og regnskapslovgivningen i hvert land eller område. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 2 dager |
-| [Kurs MB-310T02-A: Konfigurere og bruke leverandører, kunder og samlinger i Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-310T02) | Med Kostnadsregnskap kan du samle inn data fra forskjellige kilder, for eksempel i økonomimodulen, underfinans, budsjetter og statistisk informasjon. Deretter kan du analysere, summere og evaluere kostnadsdata, slik at ledelsen kan gjøre best mulig avgjørelsene for prisoppdateringer, budsjetter, kostnadskontroll og så videre. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
-| [Kurs MB-310T03-A: Konfigurere og bruke budsjettering, anleggsmidler og tilleggsfunksjoner i Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-310T03) | Du kan fullføre avslutningsprosedyrer for en periode eller et år. Avslutningsprosesser gjør systemet klart for en ny periode. Finn ut hvordan du klargjør, konfigurerer og utfører periodiske prosesser i Dynamics 365 Finance. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 
 ## <a name="exams"></a>Eksamener<a name="exams"></a>
 
-| Innhold | beskrivelse | Formater |
+| Innhold | Beskrivelse | Format |
 |---|---|---|
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: bruke vanlige funksjoner for implementeringsverktøy, konfigurere sikkerhet, prosesser og alternativer, utføre dataoverføring og validere og støtte løsningen. | Eksamen: kostnaden varierer etter område |
 | [Eksamen MB-310: Microsoft Dynamics 365 Finance, Financials](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: definere og konfigurere økonomistyring. behandle og bruke felles prosesser, implementere og administrere leverandør og kunder, og håndtere budsjettering og anleggsmidler. | Eksamen: kostnaden varierer etter område |
