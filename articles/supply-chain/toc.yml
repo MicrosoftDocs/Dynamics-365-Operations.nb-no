@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.30 (november 2022)
+                  href: get-started/whats-new-scm-10-0-30.md
                 - name: Supply Chain Management 10.0.29 (oktober 2022)
                   href: get-started/whats-new-scm-10-0-29.md
                 - name: Supply Chain Management 10.0.28 (august 2022)
@@ -1715,10 +1717,32 @@
                   href: inventory/inventory-visibility-allocation.md
                 - name: Endringsplan for Inventory Visibility-beholdning og tilgjengelig for ordre
                   href: inventory/inventory-visibility-available-to-promise.md
-                - name: Offentlige API-er for lagersynlighet
+                - name: Offentlige API-er for Inventory Visibility
                   href: inventory/inventory-visibility-api.md
-                - name: Tips for lagersynlighet
+                - name: Tips for Inventory Visibility
                   href: inventory/inventory-visibility-tips.md
+        - name: Sensor Data Intelligence
+          items:
+            - name: Startside for Sensor Data Intelligence
+              href: sensor-data-intelligence/sdi-home-page.md
+            - name: Aktiver Sensor Data Intelligence for systemet
+              href: sensor-data-intelligence/sdi-enable-feature.md
+            - name: Distribuer en IoT-løsning på Azure
+              href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+            - name: Parametere for Sensor Data Intelligence
+              href: sensor-data-intelligence/sdi-parameters.md
+            - name: Konfigurer en simulert sensor for testing
+              href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+            - name: Scenario for ressursnedetid
+              href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+            - name: Scenario for ressursvedlikehold
+              href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+            - name: Maskinstatusscenarioet
+              href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+            - name: Produktkvalitetsscenarioet
+              href: sensor-data-intelligence/sdi-scenario-product-quality.md
+            - name: Produksjonsforsinkelsesscenarioet
+              href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT-intelligens
           items:
             - name: Startside for IoT-intelligens
@@ -1940,7 +1964,7 @@
                 - name: Kostnadskontroll
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Reiseregning og utlegg
-                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Lagerbeholdning
                   href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Fakturagodkjenninger
@@ -1948,11 +1972,11 @@
                 - name: Mitt team
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Oversikt over mobilapper for Project
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
                 - name: Tidsoppføring for prosjekt
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/supply-chain/toc.json
                 - name: Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/supply-chain/toc.json
                 - name: Godkjenning av bestilling
                   href: procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/supply-chain
                 - name: Salgsordrer
@@ -3463,7 +3487,7 @@
                       href: warehousing/small-parcel-shipping.md
                 - name: Policyer for forsendelseskonsolidering
                   items:
-                    - name: Policyer for forsendelseskonsolidering
+                    - name: Oversikt over policyer for forsendelseskonsolidering
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Konfigurer policyer for forsendelseskonsolidering
                       href: warehousing/configure-shipment-consolidation-policies.md
