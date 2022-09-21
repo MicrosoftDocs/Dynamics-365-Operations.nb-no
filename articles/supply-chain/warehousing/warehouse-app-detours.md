@@ -2,7 +2,7 @@
 title: Konfigurere omveier for trinn i menyelementer for mobilenheter
 description: Denne artikkelen beskriver hvordan du konfigurerer omveier for menyelementer, slik at arbeidere kan endre den gjeldende oppgaven, utføre en annen oppgave og deretter gå tilbake til den opprinnelige oppgaven uten å miste noe informasjon.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 50f899cd7f28a4b7fd23db5f049de02896e8d8e9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.dyn365.ops.version: 10.0.30
+ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336133"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428070"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveier for trinn i menyelementer for mobilenheter
 
@@ -35,8 +35,11 @@ Før du kan definere omveier for trinn i menyelementer på mobilenheten, må du 
 
 1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
 1. Kontroller at funksjonen *Trinninstruksjoner for lagerapp* er aktivert for systemet. Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard. Hvis du vil ha mer informasjon om funksjonen *Trinnvise instruksjoner i lagerapp*, kan du se [Tilpass trinntitler og instruksjoner for mobilappen Warehouse Management](mobile-app-titles-instructions.md). Denne funksjonen er en forutsetning for funksjonen *Omveier i Warehouse Management-appen*.
-1. Aktiver funksjonen *Omveier i Warehouse Management-app*. Denne funksjonen er en som er beskrevet i denne artikkelen. Per Supply Chain Management versjon 10.0.29 er dette aktivert som standard.
-1. Hvis funksjonen *Omveier i Warehouse Management-mobilappen* ikke allerede var slått på, oppdaterer du feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Feltnavn i lagerapp** og velger **Opprett standardoppsett**. Gjenta dette trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
+1. Slå på følgende funksjoner, som gir funksjonaliteten som er beskrevet i denne artikkelen:
+    - *Omveier i Warehouse Management-appen*<br>(Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard.)
+    - *Omveier med flere nivåer for mobilappen Warehouse Management*
+1. Hvis funksjonene *Omveier i Warehouse Management-mobilappen* og/eller *Omveier med flere nivåer for mobilappen Warehouse Management* ikke allerede var slått på, oppdaterer du feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Feltnavn i lagerapp** og velger **Opprett standardoppsett**. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
+1. Gjenta det forrige trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management.
 
 ## <a name="configure-a-detour-from-a-menu-specific-override"></a>Konfigurere en omvei fra en menyspesifikk overstyring
 
@@ -147,3 +150,6 @@ I denne fremgangsmåten fullfører du en lokasjonsforespørsel ved hjelp av mobi
 1. Legg merke til at nummerskiltet er kopiert fra kortet du valgte. Bekreft verdien.
 1. Du kan nå følge den standard oppgaveflyten for å fullføre bevegelsen. Når arbeidet er fullført, åpner du Handlinger-menyen og velger **Avbryt**.
 1. Du returneres til **Lokasjonsforespørsel**-siden. Legg merke til at verdiene ikke oppdateres automatisk. Derfor må du manuelt oppdatere siden for å se endringene fra bevegelsesomveien.
+
+> [!NOTE]
+> Med funksjonen *Omveier med flere nivåer for mobilappen Warehouse Management* kan du definere omveier på flere nivåer (omveier i omveier), slik at ansatte kan hoppe fra en eksisterende omvei til en annen, og så gå tilbake igjen. Funksjonen støtter to medfølgende omveisnivåer, og om nødvendig kan du tilpasse systemet slik at det støtter tre eller flere omveier ved å opprette kodetillegg i `WHSWorkUserSessionState`-tabellen.

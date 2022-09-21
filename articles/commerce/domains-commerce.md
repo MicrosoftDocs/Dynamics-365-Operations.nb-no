@@ -2,19 +2,19 @@
 title: Domener i Dynamics 365 Commerce
 description: Denne artikkelen beskriver hvordan domener behandles i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/19/2022
+ms.date: 09/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: fd2fdc82fe62e56e18f54138e07b663a18802d66
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405503"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465200"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -144,9 +144,9 @@ Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domene
 
 - **Alternativ 1** – Bruk DNS-leverandøren til å omadressere Apex-domenet til et www-domene. Fabrikam.com omadresserer for eksempel til `www.fabrikam.com`, der `www.fabrikam.com` er CNAME-posten som peker til den Commerce-driftede forekomsten av Azure Front Door.
 
-- **Alternativ 2** – Hvis DNS-leverandøren støtter ALIAS-poster, kan du peke apex-domenet til Front Door-endepunktet. Dette sikrer at IP-endringen av Front Door-endepunktet blir gjenspeilet.
+- **Alternativ 2** – Hvis DNS-leverandøren støtter ALIAS-poster, kan du peke apex-domenet til Azure Front Door endpoint-endepunktet, som sikrer at IP-endringen ved sluttpunktet gjenspeiles. Du må være vert for Azure Front Door-forekomsten selv.
   
-- **Alternativ 3** – Hvis DNS-leverandøren ikke støtter ALIAS-poster, må du konfigurere en CDN- eller Front Door-forekomst på egen hånd for å være vert for apex-domenet.
+- **Alternativ 3** – Hvis DNS-leverandøren ikke støtter ALIAS-poster, må du endre DNS-leverandøren til Azure DNS og være vert både for Azure DNS og Azure Front Door-forekomsten selv.
 
 > [!NOTE]
 > Hvis du bruker Azure Front Door, må du også konfigurere Azure DNS i det samme abonnementet. Apex-domenet som er driftet på Azure DNS, kan peke til din forekomst av Azure Front Door som en aliaspost. Dette er den eneste løsningen, ettersom Apex-domener alltid må peke til en IP-adresse.

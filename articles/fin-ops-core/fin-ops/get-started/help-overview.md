@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: f9095db85e38598ac03b4c77c3fa3be9f450ec02
-ms.sourcegitcommit: 78d41eeef0a8a8e94ed502bd89778414231a31ae
+ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "9305233"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462364"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
@@ -40,18 +40,18 @@ I alle disse appene kan du få tilgang til produktspesifikk hjelp fra **Hjelp**-
 
 ![Hjelp-rute.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-docsmicrosoftcom"></a>Hjelp på docs.microsoft.com
+## <a name="help-on-microsoft-docs"></a>Hjelp på Microsoft Docs
 
-Nettstedet docs.microsoft.com ([docs.microsoft.com/dynamics365](/dynamics365/)) er standardkilden for produktdokumentasjon for de tidligere oppførte appene. Dette nettstedet tilbyr følgende funksjoner:
+([Microsoft Dynamics 365-dokumentasjonen](/dynamics365/)) på Microsoft Docs er standardkilden for produktdokumentasjon for de tidligere oppførte appene. Dette nettstedet tilbyr følgende funksjoner:
 
 - **Tilgang til det mest oppdaterte innholdet** – Området gir Microsoft en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor har du enkel tilgang til den nyeste tekniske informasjonen.
 - **Innhold som er skrevet av eksperter** – Innhold på nettstedet er åpent for bidrag av fellesskapsmedlemmer både i og utenfor Microsoft.
 
-Du kan finne innhold på docs.microsoft.com ved å bruke en hvilken som helst søkemotor. For best mulig resultater anbefaler det å bruke områdesøk, for eksempel **site:docs.microsoft.com dynamics 365 "søketerm"**.
+Du kan finne innhold på Microsoft Docs ved å bruke en hvilken som helst søkemotor. For best mulig resultater anbefaler det å bruke områdesøk, for eksempel **site:docs.microsoft.com dynamics 365 "søketerm"**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få beskjed om endringer ved hjelp av en RSS-feed
 
-Hvis du vil abonnere på en RSS-feed for alle oppdateringer som er gjort på innholdet på docs.microsoft.com i alle økonomi- og driftsapper, bruker du følgende kobling:
+Hvis du vil abonnere på en RSS-feed for alle oppdateringer som er gjort i Microsofts tekniske dokumentasjon i alle økonomi- og driftsapper, bruker du følgende kobling:
 
 [RSS-feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -87,7 +87,7 @@ Du kan bidra til og redigere i dokumentasjonen. Begynn med å velge knappen **Re
 
 Videoen [Bidra til dokumentasjonen for Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (vist ovenfor) er inkluder i Microsoft Dynamics 365-kanalen på YouTube.
 
-Hvis du vil ha mer informasjon, kan du se [veiledningen for dokumentbidragsyter](/contribute), som er publisert av teamet som laget nettstedet docs.microsoft.com.
+Hvis du vil ha mer informasjon, kan du se [veiledningen for Microsoft Docs-bidragsytere](/contribute), som publiseres av teamet som laget Microsoft Docs-nettstedet.
 
 > [!NOTE]
 > Vi godtar for øyeblikket bare bidrag til vårt engelske innhold.
@@ -166,13 +166,13 @@ Du kan opprette hjelp for brukerne ved å opprette egendefinerte oppgaveveiledni
 
 Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden av navnet, krever at du logger på med en konto som er knyttet til en serviceplan.
 
-| Site | beskrivelse |
+| Nettsted | Beskrivelse |
 |------|-------------|
-| [Docs.microsoft.com](/dynamics365/) | Dette nettstedet drifter eller kobler til all produktdokumentasjon for Dynamics 365. |
+| [Microsoft Dynamics 365-dokumentasjon](/dynamics365/) | Dette nettstedet drifter eller kobler til all produktdokumentasjon for Dynamics 365. |
 | [Microsoft Learn](/learn/) | Dette området er et gratis Microsoft eLearning-område. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Dette området er et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere prosjekter fra før salg til implementering og operasjoner. Det er nyttig i alle fasene ved implementering. |
 | [Kundestøtteblogg](https://aka.ms/AXSupportBlog) | Dette området gir tips som posteres av kundestøtteteamet. |
-| [Docs.microsoft.com/tidligere versjoner](/previous-versions/dynamics/) | Dette området har innhold fra tidligere versjoner. |
+| [Tidligere versjoner](/previous-versions/dynamics/) | Dette området har innhold fra tidligere versjoner. |
 | [Dynamics-fellesskap](https://community.dynamics.com/) | Dette området har blogger, forum og videoer. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette området formidler informasjon om evaluering og salg. |
 
@@ -180,4 +180,3 @@ Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

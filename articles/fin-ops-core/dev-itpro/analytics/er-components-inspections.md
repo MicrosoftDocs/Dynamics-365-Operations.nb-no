@@ -2,7 +2,7 @@
 title: Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 description: Denne artikkelen forklarer hvordan du undersøker de konfigurerte komponentene for elektronisk rapportering (ER) for å forhindre kjøretidsproblemer som kan oppstå.
 author: kfend
-ms.date: 01/03/2022
+ms.date: 09/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-ms.openlocfilehash: 53835bbceaa89793d890d8bc18921497c686e969
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1ca59d6c26dbcf065adb952409da30002d951f62
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277858"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476861"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 
@@ -243,6 +243,15 @@ Tabellen nedenfor gir en oversikt over inspeksjonene som ER gir. Hvis du vil ha 
 <td>
 <p>Listeuttrykket for ORDERBY-funksjonen kan ikke spørres.</p>
 <p><b>Kjøretidsfeil:</b> Sortering støttes ikke. Valider konfigurasjonen for å få flere detaljer om dette.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i19'>Foreldet appartefakt</a></td>
+<td>Dataintegritet</td>
+<td>Advarsel</td>
+<td>
+<p>Elementet &lt;bane&gt; er merket som foreldet.<br>eller<br>Elementet &lt;bane&gt; er merket som foreldet med meldingen &lt;meldingstekst&gt;.</p>
+<p><b>Eksempel på kjøretidsfeil:</b> Finner ikke klassen '&lt;bane&gt;'.</p>
 </td>
 </tr>
 </tbody>
@@ -942,6 +951,36 @@ I stedet for å legge til et nestet felt av typen **Beregnet felt** i datakilden
 #### <a name="option-2"></a>Alternativ 2
 
 Endre uttrykket for **FilteredVendors**-datakilden fra `ORDERBY("Query", Vendor, Vendor.AccountNum)` til `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Vi ikke anbefaler at du endrer uttrykket for en tabell som har et stort datavolum (transaksjonstabell), fordi alle postene vil bli hentet, og sorteringen av nødvendige poster vil bli utført i minnet. Derfor kan denne fremgangsmåten føre til dårlig ytelse.
+
+## <a name="obsolete-application-artifact"></a><a id="i19"></a>Foreldet appartefakt
+
+Når du utformer en ER-modelltilordningskomponent eller en ER-formatkomponent, kan du konfigurere et ER-uttrykk til å kalle en appartefakt i ER, for eksempel en databasetabell, en metode for en klasse osv. I Finance versjon 10.0.30 og senere kan du tvinge ER til å advare deg om at den artefakten som det refereres til, er merket i kildekoden som foreldet. Denne advarselen kan være nyttig, fordi foreldede artefakter til slutt vanligvis fjernes fra kildekoden. Hvis du blir informert om statusen til en artefakt, kan du slutte å bruke den foreldede artefakten i den redigerbare ER-komponenten før den fjernes fra kildekoden, noe som forhindrer at du kaller ikke-eksisterende programartefakter fra en ER-komponent ved kjøretid.
+
+Aktiver funksjonen **Valider foreldede elementer for datakilder for elektronisk rapportering** i **Funksjonsbehandling** for å begynne å evaluere det foreldede attributtet til appartefakter under inspeksjonen av en redigerbar ER-komponent. Det foreldede attributtet evalueres for følgende typer appartefakter:
+
+- Databasetabell
+    - Felt i en tabell
+    - Metode i en tabell
+- Appklasse
+    - Metode i en klasse
+
+> [!NOTE]
+> Det vises en advarsel under inspeksjonen av den redigerbare ER-komponenten for en datakilde som refererer til en foreldet artefakt bare når denne datakilden brukes i minst én bindende verdi av denne ER-komponenten.
+
+> [!TIP]
+> Når [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute)-klassen brukes til å varsle kompilatoren om å utstede advarselsmeldinger i stedet for feil, viser inspeksjonsvarslingen den angitte advarselen i kildekoden ved utformingstidspunktet på hurtigfanen **Detaljer** på siden **Modelltilordningsutforming** eller **Formatutforming**.
+
+Illustrasjonen nedenfor viser valideringsvarselingen som skjer når det foreldede `DEL_Email`-feltet i `CompanyInfo`-apptabellen er bundet til et datamodellfelt ved å bruke den konfigurerte `company`-datakilden.
+
+![Se gjennom valideringsadvarselene på hurtigfanen Detaljer på siden Modelltilordningsutforming.](./media/er-components-inspections-19a.png)
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Ingen alternativer for automatisk korrigering av dette problemet er tilgjengelig.
+
+### <a name="manual-resolution"></a>Manuell løsing
+
+Endre den konfigurerte modelltilordningen eller formatet ved å fjerne alle bindinger til en datakilde som refererer til en foreldet appartefakt.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

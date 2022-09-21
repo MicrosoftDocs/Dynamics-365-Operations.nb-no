@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 95c905cbcc3c057dbccf2b7d6e894b1e99ddfba5
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 68a1ba2bfe90aaf0462917c405d483fa12bf8126
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337141"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428228"
 ---
 # <a name="master-planning-for-products-with-limited-shelf-life"></a>Hovedplanlegging for produkter med begrenset holdbarhet
 
@@ -298,8 +298,6 @@ Illustrasjonen nedenfor viser hvordan tidslinjen ser ut i dette eksemplet.
 ![Eksempel 4: Enkel FEFO, periode, leveringstid avhenger av antallet.](media/fefo-example-4.png "Eksempel 4: Enkel FEFO, periode, leveringstid avhenger av antallet")
 
 ## <a name="example-5-simple-fefo-requirement-10-negative-days"></a>Eksempel 5: Enkel FEFO, behov, 10 negative dager
-
-<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe otherwise remove this example). -->
 
 Dette eksemplet viser hvordan holdbarhet fungerer når et stor antall negative dager legges til for en vare. Negative dager er hvor mange dager du er villig til å vente før du bestiller ny etterfylling av en vare som har negativ beholdning. Systemet oppretter ikke forsyning med mindre antall negative dager overskrides.
 

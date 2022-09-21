@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 7.0.0
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.form: EROperationDesigner, ERParameters
-ms.openlocfilehash: 2feadf8e196936220cf557989cae40b742447d99
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: ff44226b7deb15bc673d121d62cad44309b5d78b
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280932"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476834"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -186,6 +186,9 @@ Når en **Celle**-komponent er konfigurert til å angi en verdi i et Excel-bilde
 
 > [!NOTE]
 > Alle Excel-bilder og -figurer anses å være forankret ved øverste venstre hjørne til en bestemt Excel-celle eller -område. Hvis du vil replikere et Excel-bilde eller -figur, må du konfigurere cellen eller området som den er forankret til, som en replikert celle eller et replikert område.
+
+> [!TIP]
+> Hvis du planlegger å bruke et bilde med egendefinert skalering og aspektsgrad ved kjøretid, anbefaler vi at du angir alternativet **Respekter bildeskalering** for den overordnede [Excel-filkomponenten](#excel-file-component) til **Ja** for å bruke skaleringen og størrelsesforholdet som en plassholder for bildet i Excel-malen du bruker.
 
 Hvis du vil finne ut mer om hvordan du bygger inn bilder og figurer, kan du se [Bygge inn bilder og figurer i dokumenter du genererer ved hjelp av ER](electronic-reporting-embed-images-shapes.md).
 

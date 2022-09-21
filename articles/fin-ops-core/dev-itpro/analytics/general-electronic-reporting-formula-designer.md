@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-ms.openlocfilehash: 3620fa886fd4b609a0f1f08b2338ab725065efe7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 283c882300ece460c18ffebe572238e7629f8dee
+ms.sourcegitcommit: a1d14836b40cfc556f045c6a0d2b4cc71064a6af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287936"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "9476815"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
@@ -137,7 +137,29 @@ Illustrasjonen nedenfor viser uttrykk av denne typen. (Versjon 11.12.11 av **ISO
 > 
 > Basert på dette oppsettet vil den genererte meldingen for hver debitorbetaling, **Ustrd** XML-elementet, inneholde enten teksten for betalingsmerknader eller, når denne teksten er tom, en kommadelt liste over fakturanumre som brukes til å utligne betalingen.
 
-## <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validering av konfigurerte formler
+## <a name="assistance-in-formulas-writing"></a>Assistanse under formelskriving
+
+### <a name="data-sources-navigator"></a>Datakildenavigasjon
+
+Du kan redigere en formel som representerer et element i en strukturert datakilde. Når du har konfigurert ER-parameterne til å presentere banen til et element til en strukturert datakilde som den [relative banen](relative-path-data-bindings-er-models-format.md), blir "at"-tegnet (@) [vist](er-formula-language.md#relative-path) i formelen i stedet for i den gjenværende delen av den absolutte banen til den hierarkiske trestrukturen som brukes. Denne gjenværende delen av den absolutte banen peker til et overordnet element i det redigerbare elementet. I Finance versjon **10.0.30 og senere**, på **Formeldesigner**-siden, i **Datakilder**-ruten kan du velge alternativet **Gå til @** for å plassere markøren på datakildetreet på et element som er det overordnede elementet til det redigerbare elementet. Strukturen til alle skjulte stigende elementer utvides automatisk og rekursivt ved behov. Denne utvidelsen kan hjelpe deg med å visualisere basiselementet til det redigerbare elementet raskt, ta hensyn til søsken av det redigerbare elementet i datakildetreet og bruke hvert av dem i den redigerbare formelen hvis det er nødvendig.
+
+![Bruk alternativet "Gå til @" for å plassere markøren i datakildetreet på et element som er det overordnede elementet til det redigerbare elementet på Formeldesigner-siden.](./media/er_formula-designer-data-sources-navigator.gif)
+
+### <a name="data-sources-picker"></a>Datakildevelger
+
+På siden **Formeldesigner**, i **Datakilder**-ruten til venstre, velger du et element for en datakilde som du vil ta med i den redigerbare formelen. Velg deretter **Legg til datakilde**. Legg merke til at det valgte elementet legges til i teksten i den redigerbare formelen.
+
+> [!TIP]
+> Når du bruker alternativet **Legg til datakilde** i standard formelredigeringsprogram, legges det valgte elementet alltid til på slutten av formelteksten. Når du gjør det samme i det [avanserte formelredigeringsprogrammet](er-advanced-formula-editor.md), settes det valgte elementet inn i formelteksten på gjeldende markørposisjon.
+
+### <a name="built-in-functions-picker"></a>Innebygd funksjonsvelger
+
+På siden **Formeldesigner**, i **Funksjoner**-ruten til høyre, velger du en inebygd ER-funksjon som du vil ta med i den redigerbare formelen. Velg deretter **Legg til funksjon**. Legg merke til at den valgte funksjonen legges til i teksten i den redigerbare formelen.
+
+> [!TIP]
+> Når du bruker alternativet **Legg til funksjon** i standard formelredigeringsprogram, legges den valgte funksjonen alltid til på slutten av formelteksten. Når du gjør det samme i det [avanserte formelredigeringsprogrammet](er-advanced-formula-editor.md), settes den valgte funksjonen inn i formelteksten på gjeldende markørposisjon.
+
+### <a name="validation-of-configured-formulas"></a><a name="TestFormula"></a>Validering av konfigurerte formler
 
 På **Formeldesigner**-siden velger du **Test** for å validere hvordan den konfigurerte formelen fungerer.
 

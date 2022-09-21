@@ -2,7 +2,7 @@
 title: Eksterne enheter
 description: Denne artikkelen forklarer begrepene som er knyttet til eksterne enheter i Commerce.
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -12,12 +12,12 @@ ms.custom:
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 641b45390477c8c5e6239709f7c91887a403fbaf
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b3113626b18ad7f074c808d7631d13b09071bef2
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880087"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460001"
 ---
 # <a name="peripherals"></a>Eksterne enheter
 
@@ -141,6 +141,9 @@ Mange eksterne USB-enheter for salgssted kan kobles til, og de gjenkjennes av Wi
 Modern POS støtter UWP-kortlesere og -skannere. Når Modern POS er klart for inndata fra en av disse enhetene og en enhet som tilhører en av disse enhetsklassene er tilkoblet, kan enheten derfor brukes. Hvis en Plug and Play-strekkodeskanner for eksempel er koblet til en Windows 10-datamaskin og strekkodepålogging er konfigurert for Modern POS, blir strekkodeskanneren aktiv på påloggingssiden. Ingen tilleggskonfigurasjon kreves.
 
 Flere klasser eksterne enheter for salgssted legges til i Windows, for eksempel klasser for kassaskuffer og kvitteringsskrivere. Vi venter på støtte for disse nye enhetsklassene i Modern POS.
+
+> [!NOTE] 
+> Enkelte USB-enheter kan kanskje ikke reagere eller bli upålitelige når de administreres av en strømstyringsfunksjon i Windows 10 kalt for [Selektiv suspendering av USB](/windows-hardware/drivers/usbcon/usb-selective-suspend). Hvis en ekstern USB-enhet ikke svarer, kan det være nødvendig å deaktivere den selektive suspenderingsfunksjonen for enheten. Hvis du vil ha mer informasjon, kan du se [Aktivere selektiv suspendering](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
 
 ### <a name="keyboard-wedge"></a>Tastaturkortleser
 

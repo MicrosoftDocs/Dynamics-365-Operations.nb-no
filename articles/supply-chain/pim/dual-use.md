@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 02b154b9ea849c6b905d76edb256c4106b254acd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5147a837be91aab519c373e624acc036f9293641
+ms.sourcegitcommit: 555de844b8ba02fe095c28a2d447fc7c441ae549
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878910"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460555"
 ---
 # <a name="dual-use-goods"></a>Varer med to bruksområder
 
@@ -85,7 +85,14 @@ Følg denne fremgangsmåten for å identifisere et produkt som en flerbruksvare 
 1. På hurtigfanen **Utenrikshandel** angir du alternativet for **Flerbruksprodukter** til **Ja** for å identifisere det gjeldende produktet som en flerbruksvare.
 1. Sett feltet **Kode for flerbruk** til koden som gjelder for det gjeldende produktet. (Du definerte denne koden på siden for **Kategorier for flerbruk**.)
 
-Dette oppsettet kontrolleres når du oppretter en salgsordre.
+> [!NOTE]
+>
+> Systemet foretar følgende flerbrukskontrollerer når det genererer en salgsbekreftelse:
+>
+> 1. Tar ordren med varer som har to bruksområder?
+> 1. I så fall, må mållandet kreve sertifikater for to bruksområder?
+> 1. I så fall, finnes det et gyldig sertifikat for hver vare for to bruksområder for mållandet, og er disse sertifikatene gyldige for de bekreftede forsendelsesdatoene?
+> 1. Hvis svarene på spørsmål 1 og 2 er "Ja", og svaret på spørsmål 3 er "Nei", viser systemet en advarsel som informerer brukeren om at flerbrukssertifikater mangler for én eller flere flerbruksvarer i salgsordren. Brukeren bør sannsynligvis skaffe seg de nødvendige sertifikatene og prøve på nytt, men kan i stedet overstyre advarselen og fortsette med salgsbekreftelsen hvis de ønsker det.
 
 ## <a name="set-up-dual-use-certificates"></a>Angi sertifikater for flerbruk
 

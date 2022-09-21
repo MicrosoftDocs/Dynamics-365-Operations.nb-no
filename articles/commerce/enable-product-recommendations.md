@@ -2,7 +2,7 @@
 title: Aktiver produktanbefalinger
 description: Denne artikkelen forklarer hvordan du kan bruke produktanbefalinger som er basert på kunstig intelligens-maskinopplæring (AI-ML), tilgjengelig for Microsoft Dynamics 365 Commerce-kunder.
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dceec9e8e994a81b43cd5d1bd13970f2d246f40
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: fc1b43fa70e6652d38b1141e2d93cf323f70a756
+ms.sourcegitcommit: f88273627ba105ede27f28fe67ccec2d7f78261c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8892077"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460028"
 ---
 # <a name="enable-product-recommendations"></a>Aktiver produktanbefalinger
 
@@ -36,12 +36,19 @@ Denne artikkelen forklarer hvordan du kan bruke produktanbefalinger som er baser
 1. Kontroller at Azure AD-identitetskonfigurasjonen inneholder en oppføring for anbefalinger. Du finner mer informasjon om hvordan du utfører denne handlingen nedenfor.
 1. Kontroller at daglig oppdatering for enhetsbutikk til Azure Data Lake Storage Gen2 er planlagt. For mer informasjon, se [Kontroller at oppdateringen av enhetslageret er automatisert](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Aktiver RetailSale-målinger for enhetsbutikken. Hvis du ha mer informasjon om denne konfigureringsprosessen, kan du se [Arbeide med mål](/dynamics365/ai/customer-insights/pm-measures).
+1. Sørg for at miljøet har konfigurert regioner for betjening og matlaging i områdene som støttes for øyeblikket, på følgende måte:
+
+    - **Støttede regioner for matlaging:** EU/US/CA/AU.
+    - **Støttede regioner for servering:** US/CA/AU. Hvis serveringsregionen ikke samsvarer med en av de eksisterende støttede regionene, velger anbefalingstjenesten den nærmeste støttede regionen.
 
 Når trinnene ovenfor er fullført, er du klar til å aktivere anbefalinger.
 
+> [!NOTE]
+> Det er et kjent problem der anbefalinger ikke vises etter at de følgende trinnene er fullført. Dette problemet forårsakes av dataflytproblemer i miljøet. Hvis miljøet ditt ikke viser anbefalingsresultater, konfigurerer du de alternative dataene for anbefalingstjenesten ved å følge trinnene i [Definere en alternativ dataflyt for anbefalinger](set-up-alternate-data-flow.md). Du må ha administratorrettigheter i Azure for å fullføre disse trinnene. Hvis du trenger hjelp, kan du kontakte FastTrack-representanten din.
+
 ## <a name="azure-ad-identity-configuration"></a>Azure AD-identitetskonfigurasjon
 
-Dette trinnet er bare nødvendig for kunder som kjører en IaaS-konfigurasjon (infrastruktur som tjeneste). Azure AD Identitetskonfigurasjon er automatisk for kunder som kjører på Azure Service Fabric, men det anbefales at du kontrollerer at innstillingen er konfigurert som forventet.
+Dette trinnet er bare nødvendig for kunder som kjører en IaaS-konfigurasjon (infrastruktur som tjeneste). Azure AD-identitetskonfigurasjon er automatisk for kunder som kjører på Azure Service Fabric, men vi anbefaler at du kontrollerer at innstillingen er konfigurert som forventet.
 
 ### <a name="setup"></a>Installasjon
 
@@ -94,6 +101,8 @@ Hvis du vil finne ut mer om tilpassede anbefalinger, kan du se [Aktivere tilpass
 
 [Aktivere Azure Data Lake Storage i et Dynamics 365 Commerce-miljø](enable-adls-environment.md)
 
+[Definere alternativ dataflyt for anbefalinger](set-up-alternate-data-flow.md)
+
 [Aktivere personlige anbefalinger](personalized-recommendations.md)
 
 [Aktivere Kjøp lignende utseender-anbefalinger](shop-similar-looks.md)
@@ -111,6 +120,7 @@ Hvis du vil finne ut mer om tilpassede anbefalinger, kan du se [Aktivere tilpass
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
 
 
 

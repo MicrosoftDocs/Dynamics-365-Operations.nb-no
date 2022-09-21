@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: cc013e962b4da803764f16e451b1d433666e75c2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 39677ebfb9babeb7246ece4d27ab1813435ca12e
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336613"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427855"
 ---
 # <a name="query-data-using-warehouse-management-mobile-app-detours"></a>Spør data med Warehouse Management-mobilappomveier
 
@@ -268,6 +268,6 @@ Følg denne fremgangsmåten for å teste det nye mobilappoppsettet.
     ![Innkjøpsmottak med bestillingsoppslag etter leverandør, eksempel 2.](media/wma-purchase-receive-lookup-po-vendor-detours.png "Innkjøpsmottak med bestillingsoppslag etter leverandør, eksempel 2")
 
 > [!TIP]
-> I stedet for å kjøre mottaksflyten ved å gjøre et oppslag fra menyelementet **Innkjøpsmottak**, kan du starte fra en forespørselsflyt (**Hoved \> Forespørsel \> Slå opp bestillinger etter leverandør**), og starte en omvei for å kjøre den ønskede flyten ved å velge et av kortene i listen. Når du skal bruke denne fremgangsmåten, kan du definere en omvei på siden **Mobilenhetstrinn** for trinnet som har **Trinn-ID**-verdien til *GenericDataInquiryList*. Fordi denne flyten er en omvei, kan du ikke starte flere omveier fra den. Når du for eksempel kommer til registreringsskjermbildet for varenummer, er ikke oppslaget tilgjengelig på den, fordi systemet bare støtter ett nivå av omveier.
+> I stedet for å kjøre mottaksflyten ved å gjøre et oppslag fra menyelementet **Innkjøpsmottak**, kan du starte fra en forespørselsflyt (**Hoved \> Forespørsel \> Slå opp bestillinger etter leverandør**), og starte en omvei for å kjøre den ønskede flyten ved å velge et av kortene i listen. Når du skal bruke denne fremgangsmåten, kan du definere en omvei på siden **Mobilenhetstrinn** for trinnet som har **Trinn-ID**-verdien til *GenericDataInquiryList*. Forutsatt at funksjonen [*Omveier med flere nivåer for mobilappen Warehouse Management*](warehouse-app-detours.md) er aktivert for systemet, kan du også legge til en ekstra omvei om nødvendig (denne funksjonen legger til støtte for opptil to nivåer med omveier, og kan tilpasses for å støtte flere nivåer).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

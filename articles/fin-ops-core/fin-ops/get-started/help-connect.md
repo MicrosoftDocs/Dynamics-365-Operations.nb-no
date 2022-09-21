@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.form: SystemParameters
-ms.openlocfilehash: 35dc37f6669a3f47dd82917be0e84d0b8698e8f8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2c45a203303181c7ea23e20f8fa1bdce1c827aa2
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282473"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462246"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjelpeopplevelsen for økonomi- og driftsapper
 
@@ -37,7 +37,7 @@ I denne artikkelen vil du finne en oversikt over komponentene i hjelpesystemet f
 
 [![Hjelpearkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
-Hjelpesystemet i produktet trekker ut artikler fra docs.microsoft.com og andre tilkoblede nettsteder. Den henter også inn oppgaveveiledninger som er lagret i forretningsprosessmodelereren (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
+Hjelpesystemet i produktet trekker ut artikler fra Microsoft Docs og andre tilkoblede nettsteder. Den henter også inn oppgaveveiledninger som er lagret i forretningsprosessmodelereren (BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="adding-task-guides"></a>Legge til oppgaveveiledninger
 
@@ -103,4 +103,3 @@ Hvis du vil samarbeide med Microsoft om verktøy og prosesser for å tilpasse hj
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 83fa9d0a08d4d9ec171aeee685d39bba46e5687d
-ms.sourcegitcommit: 6fd44fc6e9a7bad197cab58c36ec25a555724cf1
+ms.openlocfilehash: 070c61df14db4d2538b129b01defd4b82db0b8a7
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9410457"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462308"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller avskrevne funksjoner i Dynamics 365 Finance
 
@@ -45,7 +45,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Erstattet med en annen funksjon?**   | Ja |
 | **Berørte produktområder** | Program |
 | **Distribusjonsalternativ** | Alle |
-| **Status** | Avskrevet: Etter april 2023 blir ikke lenger funksjonen Inntektsføring i Dynamics 365 Finance støttet med feilrettinger. Kunder blir bedt om å bruke den forbedrede funksjonaliteten [Abonnementsfakturering](../../finance/accounts-receivable/subscription-billing-summary.md). I oktober 2023 slutter funksjonen Inntektsføring å være tilgjengelig. Kunder blir bedt om å gå over til den forbedrede funksjonaliteten Abonnementsfakturering.|
+| **Status** | Avskrevet: Etter april 2023 blir ikke lenger funksjonen Inntektsføring i Dynamics 365 Finance støttet med feilrettinger. Kunder blir bedt om å bruke den forbedrede funksjonaliteten [Abonnementsfakturering](../../finance/accounts-receivable/subscription-billing-summary.md). I oktober 2023 slutter funksjonen Inntektsføring å være tilgjengelig. Kunder blir bedt om å gå over til den forbedrede funksjonaliteten Abonnementsfakturering. For buntfunksjonen som en del av inntektsføringe er det ikke planlagt noen erstatningsfunksjonalitet på dette tidspunktet.|
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10029-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.29
 

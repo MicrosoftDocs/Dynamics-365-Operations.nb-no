@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: dd98b22a2dfcd8cad62bdef2d31ac2880b3422f8
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: db8799aba8095c8144d878c96590e8d90276726b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334723"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428207"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10026-may-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.26. (mai) 2022
 
@@ -36,7 +36,7 @@ Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være o
 | Lager og logistikk | [Beholdningsspørring for lagersynlighet for å støtte varer i avansert lagerstyring](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Inventory Visibility-støtte for WMS-varer](../inventory/inventory-visibility-whs-support.md) | Funksjonsbehandling:<br>*Aktiver lagervarer i lagersynlighet* |
 | Lager og logistikk | [Tilgjengelig for ordre for tilleggsprogrammet for lagersynlighet](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](../inventory/inventory-visibility-available-to-promise.md) | Aktivert av tjenestekonfigurasjon |
 | Produksjon | [Faktisk vekt-varer for grensesnittet for produksjonsutførelse](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*Rapport om faktisk vekt-varer fra grensesnittet for produksjonsutførelse* |
-| Produksjon | Fanen Mine jobber i grensesnittet for produksjonsutførelse <!-- KFM: Add link to release plan when available --> | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*Fanen Mine jobber i grensesnittet for produksjonsutførelse* |
+| Produksjon | Fanen Mine jobber i grensesnittet for produksjonsutførelse | [Hvordan arbeidere bruker grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-use.md) | Funksjonsbehandling:<br>*Fanen Mine jobber i grensesnittet for produksjonsutførelse* |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funksjonsforbedringer inkludert i denne versjonen
 

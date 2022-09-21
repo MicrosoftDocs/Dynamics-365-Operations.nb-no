@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: c3280b2e39d7af5ca99cad703cad6ecc7b307bff
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: caa38c4ed1c7fb8cf1ead3ba6534f8405a5ff57f
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8893185"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428043"
 ---
 # <a name="release-to-warehouse"></a>Frigi til lager
 
@@ -34,7 +34,7 @@ En *belastning* er en gruppe salgsordre- eller overføringsordrelinjer som grupp
 
 Lager *arbeid* er en hvilken som helst lageroperasjon som utføres av en lagerarbeider. Vanligvis består lageroperasjoner av minst to etterfølgende handlinger: en lagerarbeider plukker opp beholdning på en lokasjon og plasserer den på en annen lokasjon.
 
-Når ordrer frigis til lageret, oppretter systemet *belastningslinjer* og grupperer dem i forsendelser. Forsendelseskonsolideringsprosessen tillater automatisert forsendelseskonsolidering i løpet av frigivelsen til lagerprosessen. Hvis du vil ha mer informasjon, se [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md).
+Når ordrer frigis til lageret, oppretter systemet *belastningslinjer* og grupperer dem i forsendelser. Forsendelseskonsolideringsprosessen tillater automatisert forsendelseskonsolidering i løpet av frigivelsen til lagerprosessen. Hvis du vil ha mer informasjon, kan du se [Oversikt over policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md).
 
 Systemet bruker *bølger* til å opprette plukking av arbeid og belastninger for forsendelse. En *bølgemal* må være tilgjengelig for bølgetypen du vil opprette, og for lageret for ordrelinjen. Bølgemaler av *Forsendelse*-typen brukes for forsendelse av varer for salgsordrer og overføringsordrer.
 

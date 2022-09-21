@@ -2,7 +2,7 @@
 title: Konfigurer policyer for forsendelseskonsolidering
 description: Denne artikkelen beskriver hvordan du definerer standard og egendefinerte policyer for forsendelseskonsolidering.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 4583d523811cb41518a0a4dae0d67398d64cab44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 0312d425d2ebc5311e894030423a916b90f1881a
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336500"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427989"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -28,75 +28,49 @@ Prosessen for forsendelseskonsolidering som bruker policyer for forsendelseskons
 
 Scenarioene som presenteres i denne artikkelen, viser hvordan du definerer standard og egendefinerte policyer for forsendelseskonsolidering.
 
-## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Aktivere funksjonen Policyer for forsendelseskonsolidering
+> [!WARNING]
+> Hvis du oppgraderer et Microsoft Dynamics 365 Supply Chain Management-system der du har brukt den eldre funksjonen for forsendelseskonsolidering, kan det hende at konsolideringen slutter å fungere som forventet, med mindre du følger anbefalingene som er gitt her.
+>
+> For Supply Chain Management-installasjoner der funksjonen *Policyer for forsendelseskonsolidering* er slått av, kan du aktivere forsendelseskonsolidering ved å bruke innstillingen **Konsolider forsendelse ved frigivelse til lager** for hvert individuelle lager. Denne funksjonen er obligatorisk fra versjon 10.0.29. Når den er aktivert, blir innstillingen **Konsolider forsendelse ved frigivelse til lager** skjult, og funksjonaliteten erstattes av *policyene for forsendelseskonsolidering* som er beskrevet i denne artikkelen. Hver policy fastsetter konsolideringsregler og inkluderer en spørring for å bestemme hvor policyen gjelder. Når du slår på funksjonen for første gang, blir det ikke definert noen policyer for forsendelseskonsolidering på siden **Policyer for forsendelseskonsolidering**. Når ingen policyer er definert, bruker systemet den eldre virkemåten. Derfor fortsetter hvert eksisterende lager å overholde innstillingen **Konsolider forsendelse ved frigivelse til lager**, selv om innstillingen nå er skjult. Når du har opprettet minst én policy for forsendelseskonsolidering, vil imidlertid innstillingene under **Konsolider forsendelse ved frigivelse til lager** ikke lenger ha noen effekt, og konsolideringsfunksjonaliteten styres fullstendig av policyene.
+>
+> Når du har definert minst én policy for forsendelseskonsolidering, vil systemet kontrollere konsolideringspolicyene hver gang en ordre frigis til lageret. Systemet behandler policyene ved å bruke rangeringen som er definert av **Policysekvens**-verdien for hver policy. Det bruker den første policyen der spørringen samsvarer med den nye ordren. Hvis ingen spørringer samsvarer med ordren, genererer hver ordrelinje en egen forsendelse som har én lastlinje. Vi anbefaler derfor at du, som et tilbakefall, oppretter en standardpolicy som gjelder alle lagre og grupper etter ordrenummer. Gi denne tilbakefallspolicyen den høyeste **Policysekvens**-verdien, slik at den behandles sist.
+>
+> Hvis du vil reprodusere den gamle virkemåten, må du opprette en policy som ikke grupperer etter ordrenummer, og som har spørringskriterier som omfatter alle relevante lagre.
 
-> [!IMPORTANT]
-> I det [første scenarioet](#scenario-1) som beskrives i denne artikkelen, må du først definere et lager slik at det bruker funksjonen for den forrige forsendelseskonsolideringen. Deretter gjør du policyene for forsendelseskonsolidering tilgjengelige. På denne måten kan du oppleve hvordan oppgraderings fungerer. Hvis du planlegger å bruke et demodatamiljø for å gå gjennom det første , må du ikke aktivere funksjonen før du gjør .
+## <a name="turn-on-the-shipment-consolidation-policies-feature"></a>Aktivere funksjonen Policyer for forsendelseskonsolidering
 
 For å bruke funksjonen *Policyer for forsendelseskonsolidering* må den aktiveres for systemet. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en eldre versjon enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Policyer for forsendelseskonsolidering* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
+## <a name="set-up-your-initial-consolidation-policies"></a><a name="initial-policies"></a>Konfigurere innledende konsolideringspolicyer
 
-Hvert scenario i denne artikkelen refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.
-
-## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenario 1: Konfigurere standardpolicyer for forsendelseskonsolidering
-
-Det finnes to situasjoner der du må konfigurere minimum antall standardpolicyer etter at du har aktivert funksjonen *Policyer for forsendelseskonsolidering*:
-
-- Du oppgraderer et miljø som allerede inneholder data.
-- Du konfigurerer et helt nytt miljø.
-
-### <a name="upgrade-an-environment-where-warehouses-are-already-configured-for-cross-order-consolidation"></a>Oppgradere et miljø der lagere allerede er konfigurert for kryssordrekonsolidering
-
-Når du starter denne prosedyren, må funksjnen *Policyer for forsendelseskonsolidering* være deaktivert for å simulere et miljø der den grunnleggende funksjonen for kryssordrekonsolidering allerede var brukt. Deretter bruker du funksjonsbehandling til å aktivere funksjonen, slik at du kan lære hvordan du definerer policyer for forsendelseskonsolidering etter oppgraderingen.
-
-Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolidering i et miljø der lagre allerede er konfigurert for kryssordrekonsolidering.
-
-1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
-1. I listen finner og åpner du den ønskede lagerposten (for eksempel lager *24* i demodataene for **USMF**).
-1. I handlingsruten velger du **Rediger**.
-1. I hurtigfanen **Lager** angir du verdien *Ja* for alternativet **Konsolider forsendelse ved frigivelse til lager**.
-1. Gjenta trinn 2 til og med 4 for alle andre lagre der konsolidering er nødvendig.
-1. Lukk siden.
-1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**. Det kan hende at du må oppdatere nettleseren for å se de nye menyelementet **Policyer for forsendelseskonsolidering** etter at du har aktivert funksjonen.
-1. I handlingsruten velger du **Opprett standardoppsett** for å opprette følgende policyer:
-
-    - En **Kryssordre**-policy for policytypen *Salgsordrer* (forutsatt at du har minst ett lager som er definert til å bruke den forrige konsolideringsfunksjonen)
-    - En **Standard**-policy for policytypen *Salgsordrer*
-    - En **Standard**-policy for policytypen *Utstedelse for overføring*
-    - En **Kryssordre**-policy for policytypen *Utstedelse for overføring* (forutsatt at du har minst ett lager som er definert til å bruke den forrige konsolideringsfunksjonen)
-
-    > [!NOTE]
-    > - Begge **Kryssordre**-policyene vurderer det samme settet med felt som den forrige logikken, bortsett fra feltet for ordrenummeret. (Dette feltet brukes til å konsolidere linjer i forsendelser, basert på faktorer som lager, transportmåte for levering og adresse.)
-    > - Begge **Standard**-policyene vurderer det samme settet med felt som den forrige logikken, inkludert feltet for ordrenummeret. (Dette feltet brukes til å konsolidere linjer i forsendelser, basert på faktorer som ordrenummeret, lager, transportmåte for levering og adresse.)
-
-1. Velg policyen **Kryssordre** for policytypen *Salgsordrer*, og velg deretter **Rediger spørring** i handlingsruten.
-1. I dialogboksen for redigeringsprogrammet for spørring er lagere der alternativet **Konsolider forsendelse ved frigivelse til lager** er satt til *Ja*, oppført. De tas derfor med i spørringen.
-
-### <a name="create-default-policies-for-a-new-environment"></a>Opprette standardpolicyer for et nytt miljø
-
-Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolidering i et helt nytt miljø.
+Hvis du jobber med et nytt system eller et system der du nettopp har aktivert funksjonen *Policyer for forsendelseskonsolidering* for første gang, følger du denne fremgangsmåten for å konfigurere de første policyene for forsendelseskonsolidering.
 
 1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
 1. I handlingsruten velger du **Opprett standardoppsett** for å opprette følgende policyer:
 
-    - En **Standard**-policy for policytypen *Salgsordrer*
-    - En **Standard**-policy for policytypen *Utstedelse for overføring*
+    - En policy med navnet *Standard* for policytypen *Salgsordrer*.
+    - En policy med navnet *Standard* for policytypen *Utstedelse for overføring*.
+    - En policy med navnet *Kryssordre* for policytypen *Utstedelse for overføring*. (Denne policyen opprettes bare hvis du hadde minst ett lager der den eldre innstillingen **Konsolider forsendelse ved frigivelse til lager** var aktivert.)
+    - En policy med navnet *Kryssordre* for policytypen *Salgsordrer*. (Denne policyen opprettes bare hvis du hadde minst ett lager der den eldre innstillingen **Konsolider forsendelse ved frigivelse til lager** var aktivert.)
 
     > [!NOTE]
-    > Begge **Standard**-policyene vurderer det samme settet med felt som den forrige logikken, inkludert feltet for ordrenummeret. (Dette feltet brukes til å konsolidere linjer i forsendelser, basert på faktorer som ordrenummeret, lager, transportmåte for levering og adresse.)
+    > - Begge *Kryssordre*-policyene vurderer det samme settet med felt som den forrige logikken. De vurderer imidlertid også ordrenummerfeltet. (Dette feltet brukes til å konsolidere linjer i forsendelser, basert på faktorer som lager, transportmåte for levering og adresse.)
+    > - Begge *Standard*-policyene vurderer det samme settet med felt som den forrige logikken. De vurderer imidlertid også ordrenummerfeltet. (Dette feltet brukes til å konsolidere linjer i forsendelser, basert på faktorer som ordrenummeret, lager, transportmåte for levering og adresse.)
 
-## <a name="scenario-2-configure-custom-shipment-consolidation-policies"></a>Scenario 2: Konfigurere egendefinterte policyer for forsendelseskonsolidering
+1. Hvis systemet genererte en *Kryssordre*-policy for policytypen *Salgsordrer*, velger du den og velger deretter **Rediger spørring** i handlingsruten. I redigeringsprogrammet for spørring kan du se hvilke av lagrene som innstillingen **Konsolider forsendelse ved frigivelse til lager** tidligere var aktivert for. Derfor reproduserer denne policyen dine tidligere innstillinger for disse lagrene.
+1. Tilpass de nye standardpolicyene etter behov ved å legge til eller fjerne felt og/eller redigere spørringene. Du kan også legge til så mange nye policyer du trenger. Hvis du vil ha eksempler som viser hvordan du tilpasser og konfigurerer policyene, kan du se eksempelscenarioet senere i denne artikkelen.
 
-Dette  viser hvordan du konfigurerer egendefinerte policyer for forsendelseskonsolidering. Egendefinerte policyer kan støtte komplekse forretningskrav når forsendelseskonsolidering avhenger av flere betingelser. For hver eksempelpolicy senere i dette scenarioet er en kort beskrivelse av forretningssaken inkludert. Disse eksempelpolicyene må defineres i en rekkefølge som sikrer et pyramideaktig diagram som evaluering av spørringene. (Med andre ord må policyene som har flest betingelser, evalueres med høyest prioritet.)
+## <a name="scenario-configure-custom-shipment-consolidation-policies"></a>Scenario: Konfigurere egendefinerte policyer for forsendelseskonsolidering
 
-### <a name="turn-on-the-feature-and-prepare-master-data-for-this-scenario"></a>Aktivere funksjonen og forberede hoveddata for dette 
+Dette scenarioet gir et eksempel som viser hvordan du konfigurerer egendefinerte policyer for forsendelseskonsolidering og tester dem ved hjelp av demodata. Egendefinerte policyer kan støtte komplekse forretningskrav når forsendelseskonsolidering avhenger av flere betingelser. For hver eksempelpolicy senere i dette scenarioet er en kort beskrivelse av forretningssaken inkludert. Disse eksempelpolicyene må defineres i en rekkefølge som sikrer et pyramideaktig diagram som evaluering av spørringene. (Med andre ord må policyene som har flest betingelser, evalueres med høyest prioritet.)
 
-Før du kan gå gjennom øvelsene i dette , må du aktivere funksjonen og klargjøre hoveddataene som kreves for å utføre filtreringen, som beskrevet i følgende underinndelinger. (Disse forutsetningene gjelder også for scenarioene som er oppført i [Eksempelscenarioer for hvordan du bruker policyer for forsendelseskonsolidering](#example-scenarios).)
+### <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
-#### <a name="turn-on-the-feature-and-create-the-default-policies"></a>Aktivere funksjonen og opprette standardpolicyene
+Dette scenarioet refererer til verdier og poster som er inkludert i standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md) som leveres for Supply Chain Management. Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til *USMF* før du begynner.
 
-Bruk funksjonsbehandling til å aktivere funksjonen, hvis du ikke allerede har aktivert den, og opprette standard konsolideringspolicyer som er beskrevet i [scenario 1](#scenario-1).
+### <a name="prepare-master-data-for-this-scenario"></a>Klargjør hoveddata for dette scenarioet
+
+Før du kan gå gjennom øvelsene i dette scenarioet, må du klargjøre hoveddataene som kreves for å utføre filtreringen, som beskrevet i følgende underinndelinger. (Disse forutsetningene gjelder også for scenarioene som er oppført i delen [Eksempelscenarioer for hvordan du bruker policyer for forsendelseskonsolidering](#example-scenarios).)
 
 #### <a name="create-two-new-product-filter-codes"></a>Opprette to nye produktfilterkoder
 
@@ -300,7 +274,7 @@ I dette eksemplet skal du opprette en policy av typen *Lagere som tillater konso
 - Konsolidering med åpne forsendelser er deaktivert.
 - Konsolidering skjer på tvers av ordrer ved hjelp av feltene som velges som standard av CrossOrder-policyen (for å replikere den tidligere avmerkingsboksen **Konsolider forsendelse ved frigivelse til lager**).
 
-Denne forretningssaken kan vanligvis løses ved hjelp av standardpolicyene du opprettet i [Scenario 1](#scenario-1). Du kan imidlertid også opprette lignende policyer manuelt ved å følge disse trinnene.
+Denne forretningssaken kan vanligvis løses ved hjelp av standardpolicyene du opprettet i [Konfigurere innledende konsolideringspolicyer](#initial-policies). Du kan imidlertid også opprette lignende policyer manuelt ved å følge disse trinnene.
 
 1. Gå til **Lagerbehandling \> Oppsett \> Frigi til lager \> Policyer for forsendelseskonsolidering**.
 1. Angi verdien *Salgsordrer* for feltet **Policytype**.
@@ -345,7 +319,7 @@ Scenarioene nedenfor illustrerer hvordan du kan bruke policyene for forsendelses
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
+- [Oversikt over policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

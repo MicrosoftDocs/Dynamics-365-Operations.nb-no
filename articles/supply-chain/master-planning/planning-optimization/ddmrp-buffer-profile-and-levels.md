@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: dd72332abefd31fd391ff66931a5abae0efb08de
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 57ee6206da926d0dbf62f562197538bfcdd41148
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186695"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9428151"
 ---
 # <a name="buffer-profile-and-levels"></a>Bufferprofil og -nivåer
 
@@ -77,6 +77,14 @@ I den forrige illustrasjonen, hvis i dag er 11. juni om morgenen, er ADU for de 
 
 - **ADU (tidligere)** = (29 + 11 + 23) ÷ 3 = 21
 
+Følgende transaksjoner tas i betraktning for beregning av gjennomsnittlig daglig bruk (fortid):
+
+- Transaksjoner som reduserer antallet av varen (i `inventtrans`-tabellen der antallet er mindre enn null)
+- Transaksjoner med statusen *I ordre/bestilling*, *Reservert av bestilt*, *Fysisk reservert*, *Plukket*, *Fratrukket* eller *Solgt*
+- Transaksjoner datert i den valgte perioden bakover (gjennomsnittlig daglig bruk for forrige periode)
+- Andre transaksjoner enn lagerarbeid, karantene, salgstilbud eller kontoutdrag (`WHSWork`, `WHSQuarantine`, `SalesQuotation` eller `Statement`)
+- Andre transaksjoner enn overføringsjournaler som er innenfor samme dekningsdimensjon
+
 ### <a name="average-daily-usage-forward"></a>Gjennomsnittlig daglig bruk (senere)
 
 Det kan hende at du ikke har noen tidligere bruksdata for et nytt produkt. Derfor kan du i stedet bruke prosjektert ADU fremover (for eksempel basert på estimert behov). Illustrasjonen nedenfor viser hvordan denne fremgangsmåten fungerer når beregningen ser tre dager inn i fremtiden (inkludert i dag).
@@ -86,6 +94,11 @@ Det kan hende at du ikke har noen tidligere bruksdata for et nytt produkt. Derfo
 I den forrige illustrasjonen, hvis i dag er 11. juni om morgenen, er ADU for de neste tre dagene (11. juni, 12 og 13) lik 21,66.
 
 - **ADU (senere)** = (18 + 18 + 29) ÷ 3 = 21,66
+
+Følgende transaksjoner tas i betraktning for beregning av gjennomsnittlig daglig bruk (fremtid):
+
+- Prognosetransaksjoner for varen der prognosen er valgt i hovedplanen
+- Transaksjoner datert i den valgte perioden fremover (gjennomsnittlig daglig bruk for neste periode)
 
 ### <a name="average-daily-usage-blended"></a>Gjennomsnittlig daglig bruk (blandet)
 

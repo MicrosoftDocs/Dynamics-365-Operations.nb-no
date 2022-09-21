@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: afe438767efa3082c49cc56f58c8bab9206e46e0
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: ad5f843e3bafa54a961908d9ebe5ab64e619e1bc
+ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228576"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9475556"
 ---
 # <a name="human-resources-home-page"></a>Startside for Human Resources
 
@@ -40,7 +40,7 @@ Velg et funksjonsområde du vil finne ut mer om.
 - [Kompensasjonsstyring](hr-compensation-overview.md)
 - [Ansattutvikling](hr-develop-performance-management-overview.md)
 - [Opplæring](hr-learning-courses.md)
-- [Arbeidsflytsystem]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [Arbeidsflytsystem](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 Human Resources knytter sammen person- og driftsdata for å hjelpe deg med å optimalisere arbeidstyrke kostnader og ta vare på de ansatte.
 
@@ -51,7 +51,8 @@ Hvis du vil ha informasjon om Dynamics 365 Finance, kan du se [startsiden for Fi
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 ### <a name="elearning-courses"></a>e-læringskurs
-Gå til [Dynamics 365 Human Resources på Microsoft Learn](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365) for elektroniske kurs og opplæring.
+
+Gå til [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365) for elektroniske kurs og opplæring.
 
 ### <a name="videos"></a>Videoer
 

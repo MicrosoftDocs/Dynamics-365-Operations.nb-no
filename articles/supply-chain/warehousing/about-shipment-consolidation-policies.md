@@ -1,5 +1,5 @@
 ---
-title: Policyer for forsendelseskonsolidering
+title: Oversikt over policyer for forsendelseskonsolidering
 description: Denne artikkelen gir en oversikt over funksjonaliteten som gir fleksibel konfigurasjon av policyer for forsendelseskonsolidering.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -13,14 +13,14 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 27f5d52dac2e428655f1b16908ff796ed9d02e82
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7113fc635a7c01e4b9cc44898daa3d2617058b6b
+ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903905"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9427935"
 ---
-# <a name="shipment-consolidation-policies"></a>Policyer for forsendelseskonsolidering
+# <a name="shipment-consolidation-policies-overview"></a>Oversikt over policyer for forsendelseskonsolidering
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Før policyer for forsendelseskonsolidering ble innført, eksisterte konsolideri
 
 Spørringer brukes til å identifisere policyen for forsendelseskonsolidering som gjelder, og deretter bestemmer et redigerbart sett med felt hvordan belastningslinjene grupperes på forsendelsesnivået. (Dette mønsteret ligner på mønsteret som bølgemaler følger.) I tillegg er alternativet **Konsolider med eksisterende forsendelser** lagt til i hver policy. Når dette alternativet er aktivert, finner prosedyren *Frigi til lager* forsendelser for konsolidering ved å søke etter eksisterende forsendelser som ble opprettet basert på den samme konsolideringspolicyen. I dette tilfellet velger systemet en eksisterende forsendelse eller en som skal lastes inn, i stedet for å opprette en ny. Systemet vil imidlertid bare konsolidere med eksisterende forsendelser med statusen *Åpen*. Forsendelser som tilhører en lanseringsbølge med statusen *Frigitt* eller høyere, vurderes ikke som mål for konsolidering.
 
-Når policyer for forsendelseskonsolidering er tilgjengelige, er innstillingen **Konsolider forsendelse ved frigivelse til lager** som tidligere var tilgjengelig på oppsettssiden **Lagere**, skjult. For å hjelpe deg med å gå til den nye funksjonen for forsendelseskonsolidering, oppretter en funksjon på siden **Policyer for forsendelseskonsolidering** en standard policy som automatisk inkluderer den gamle innstillingen for eksisterende lagre. Når denne standardpolicyen er opprettet, blir ikke innstillingen **Konsolider forsendelse ved frigivelse til lager** på oppsettssiden **Lagere** lenger vurdert.
+Når funksjonen *Policyer for forsendelseskonsolidering* er aktivert for systemet, er innstillingen **Konsolider forsendelse ved frigivelse til lager** som tidligere var tilgjengelig på oppsettssiden **Lagre**, skjult. For å hjelpe deg med å gå til den nye funksjonen for forsendelseskonsolidering, kan du bruke en funksjon på siden **Policyer for forsendelseskonsolidering** til å opprette en standard policy som automatisk inkluderer den gamle innstillingen for eksisterende lagre. Når denne standardpolicyen er opprettet, blir ikke innstillingen **Konsolider forsendelse ved frigivelse til lager** på oppsettssiden **Lagere** lenger vurdert. Hvis du vil ha mer informasjon, kan du se [Konfigurer policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md).
 
 Du kan bruke siden **Frigi til lager** til å overstyre den gjeldende konsolideringspolicyen manuelt på samme måte som du kan overstyre oppfyllelsespolicyer.
 

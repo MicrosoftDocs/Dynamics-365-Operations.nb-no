@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e745ab1fb39edf69fabd147e46e1da8cc98ba6e5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5cb2c1234de03e9777921c18e4cbb81eec7feef9
+ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903514"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9462281"
 ---
 # <a name="generate-invoice-lines-when-you-import-vendor-invoices"></a>Generere fakturalinjer ved import av leverandørfakturaer
 
@@ -45,7 +45,7 @@ Følg denne fremgangsmåten for å aktivere automatisk oppretting av fakturalinj
 For å støtte funksjonaliteten som er beskrevet i denne artikkelen, er dataenheten for **Leverandørfakturahode** forbedret. Tre felt er lagt til:
 
 - **HeaderOnlyImport** – Dette feltet må være satt til **Ja** for at linjer skal genereres for fakturahoder.
-- **PurchIdRange** – Listen over bestillingsnumre. Fakturanumrene kan være et område, for eksempel **INV0001.. INV0009** (der to punkter skiller starten og slutten av området) eller diskrete verdier, for eksempel **INV0001, INV0003, INV0006**. Alle bestillinger må tilhøre samme leverandørkonto i fakturahodet. Ellers får du følgende feilmelding: "Kan ikke generere fakturalinjer. Bestillinger har ulike leverandørkontoer."
+- **PurchIdRange** – Listen over bestillingsnumre. Fakturanumrene kan være et område, for eksempel **INV0001..INV0009** (der to punkter skiller starten og slutten av området) eller diskrete verdier, for eksempel **INV0001, INV0003, INV0006**. Alle bestillinger må tilhøre samme leverandørkonto i fakturahodet. Ellers får du følgende feilmelding: "Kan ikke generere fakturalinjer. Bestillinger har ulike leverandørkontoer."
 - **PackingslipRange** – Listen over produktmottaksnumre. Leverandørfakturalinjer kan opprettes fra produktmottak. Produktkvitteringsnumre inkluderes imidlertid vanligvis ikke på leverandørfakturaer. Du må bare angi produktmottaksnumrene i dette feltet hvis du tydelig kan identifisere hvilke produktmottak du har bestemte fakturaer for. Fakturalinjer kan genereres basert på produktmottak. Hvis dette feltet brukes, blir innstillingen i feltet **Velg standardantall for automatisk fakturalinjeoppretting** på siden **Leverandørparametere** ignorert. 
 
 **Begrensning**: Hvis du angir flere produktmottaksnumre, opprettes flere ventende leverandørfakturaer med samme fakturanummer. Du må konsolidere dem manuelt før du behandler fakturaen ytterligere. I fremtidige versjoner planlegger vi å konsolidere fakturaene automatisk, slik at begrensningen blir fjernet.

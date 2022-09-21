@@ -2,7 +2,7 @@
 title: Oversikt over avgiftsberegning
 description: Denne artikkelen forklarer det helhetlige omfanget og funksjonene i avgiftsberegning.
 author: EricWangChen
-ms.date: 03/02/2022
+ms.date: 09/08/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2765b922bcc58837c32973b7ca96e0d63eb8b9d6
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: a193db82b2b079c1e10fbfb6bfde7aa43b18bc4a
+ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9296001"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "9465173"
 ---
 # <a name="tax-calculation-overview"></a>Oversikt over avgiftsberegning
 
@@ -74,18 +74,10 @@ Vi anbefaler at du importerer og konfigurerer avgiftsberegningskonfigurasjonen m
 
 | Finance- eller Supply Chain Management-versjon | Avgiftskonfigurasjonsversjon               |
 | --------------- | --------------------------------------- |
-| 10.0.18         | Avgiftskonfigurasjon - Europa 30.12.82     |
-| 10.0.19         | Konfigurasjon 36.38.193 for avgiftsberegning |
-| 10.0.20         | Konfigurasjon 40.43.208 for avgiftsberegning |
-| 10.0.21         | Konfigurasjon 40.48.215 for avgiftsberegning |
-| 10.0.22         | Konfigurasjon 40.48.215 for avgiftsberegning |
-| 10.0.23         | Konfigurasjon 40.50.221 for avgiftsberegning |
-| 10.0.24         | Konfigurasjon 40.50.225 for avgiftsberegning |
-| 10.0.25         | Konfigurasjon 40.50.225 for avgiftsberegning |
-| 10.0.26         | Konfigurasjon 40.54.234 for avgiftsberegning |
-| 10.0.27         | Konfigurasjon 40.54.234 for avgiftsberegning |
-| 10.0.28         | Konfigurasjon 40.54.234 for avgiftsberegning |
+| 10.0.30         | Konfigurasjon 40.55.239 for avgiftsberegning |
 | 10.0.29         | Konfigurasjon 40.55.236 for avgiftsberegning |
+| 10.0.28         | Konfigurasjon 40.54.234 for avgiftsberegning |
+| 10.0.27         | Konfigurasjon 40.54.234 for avgiftsberegning |
 
 
 ## <a name="data-flow"></a>Dataflyt
@@ -104,120 +96,27 @@ Her er en oversikt over dataflytprosessen for Avgiftsberegning.
 
 Avgiftsberegning kan aktiveres via transaksjoner. 
 
-Følgende transaksjoner støttes i versjon 10.0.21: 
+Tabellen nedenfor viser transaksjonene som støttes i den tilsvarende versjonen.
 
-- Salg
-
-    - Salgstilbud
-    - Salgsordre
-    - Bekreftelse
-    - Plukkliste
-    - Følgeseddel
-    - Salgsfaktura
-    - Kreditnota
-    - Returordre
-    - Diverse tillegg for overskrift
-    - Diverse linjetillegg
-
-- Kjøp
-
-    - Bestilling
-    - Bekreftelse
-    - Tilgangsliste
-    - Produktkvittering
-    - Innkjøpsfaktura
-    - Diverse tillegg for overskrift
-    - Diverse linjetillegg
-    - Kreditnota
-    - Returordre
-    - Innkjøpsrekvisisjon
-    - Diverse tillegg på innkjøpsrekvisisjonslinje
-    - Tilbudsforespørsel
-    - Diverse tillegg på tilbudsforespørselshode
-    - Diverse tillegg på tilbudsforespørselslinje
-
-- Lager
-
-    - Overføringsordre – send
-    - Overføringsordre – motta
-
-Følgende transaksjoner støttes i versjon 10.0.23: 
-
-- Fritekstfaktura
-
-Følgende transaksjoner støttes i versjon 10.0.26: 
-
-- Økonomijournaler
-- Leverandørfakturajournal
-
-Følgende transaksjoner støttes i versjon 10.0.28: 
-
-- Leverandørbetalingsjournal
-- Kundebetalingsjournal
-
-Følgende transaksjoner støttes i versjon 10.0.29: 
-
-
-- Periodiske journaler
+| Versjon | Transaksjoner |
+|---------|--------------|
+| 10.0.29 | Periodiske journaler |
+| 10.0.28 | Leverandørbetalingsjournal<br> Kundebetalingsjournal | 
+| 10.0.26 | Økonomijournaler<br> Leverandørfakturajournal |
+| 10.0.23 | Fritekstfaktura |
+| 10.0.21| Salg<br><ul><li>Salgstilbud</li><li>Salgsordre</li><li>Bekreftelse</li><li>Plukkliste</li><li>Følgeseddel</li><li>Salgsfaktura</li><li>Kreditnota</li><li>Returordre</li><li>Diverse tillegg for overskrift</li><li>Diverse linjetillegg</li></ul>Kjøp<br><ul><li>Bestilling</li><li>Bekreftelse</li><li>Tilgangsliste</li><li>Produktkvittering</li><li>Innkjøpsfaktura</li><li>Diverse tillegg for overskrift</li><li>Diverse linjetillegg</li><li>Kreditnota</li><li>Returordre</li><li>Innkjøpsrekvisisjon</li><li>Diverse tillegg på innkjøpsrekvisisjonslinje</li><li>Tilbudsforespørsel</li><li>Diverse tillegg på tilbudsforespørselshode</li><li>Diverse tillegg på tilbudsforespørselslinje</li></ul>Lager<ul><li>Overføringsordre – send</li><li>Overføringsordre – motta</li></ul>|
 
 ## <a name="supported-countriesregions"></a>Støttede land/områder
 
-Avgiftsberegning kan kjøres med lokaliseringsfunksjonene som støttes i følgende land/områder for en juridisk enhets primæradresse: 
+Avgiftsberegning kan kjøres med lokaliseringsfunksjoner som støttes. Følgende tabell viser landene/områdene for primæradressen til en juridisk enhet.
 
-Støttet i versjon 10.0.21:
-
-- Østerrike
-- Belgia
-- Danmark
-- Estland
-- Finland
-- Frankrike
-- Tyskland
-- Ungarn
-- Island
-- Irland
-- Italia
-- Latvia
-- Litauen
-- Nederland
-- Norge
-- Polen
-- Sverige
-- Sveits
-- Storbritannia
-- USA
-
-Støttet i versjon 10.0.22:
-
-- Australia
-- Bahrain
-- Canada
-- Egypt
-- Hongkong SAR
-- Kuwait
-- New Zealand
-- Oman
-- Qatar
-- Saudi-Arabia
-- Sør-Afrika
-- De forente arabiske emirater
-
-Støttet i versjon 10.0.23:
-
-- Thailand
-- Japan
-- Malaysia
-- Singapore
-
-Støttet i versjon 10.0.24:
-
-- Mexico
-
-Støttet i versjon 10.0.26:
-
-- Kina
-- Tsjekkia
-- Spania
+| Versjon | Land/område |
+|---------|----------------|
+| 10.0.26 | - Kina <br>- Tsjekkia<br>- Spania |
+| 10.0.24 | Mexico |
+| 10.0.23 | - Thailand <br>- Japan <br>- Malaysia <br>- Singapore |
+| 10.0.22 | - Australia<br>- Bahrain <br>- Canada<br>- Egypt <br>- Hongkong SAR <br>- Kuwait <br>- New Zealand <br>- Oman <br>- Qatar <br>- Saudi-Arabia <br>- Sør-Afrika <br>- De forente arabiske emirater |
+| 10.0.21 | - Østerrike <br>- Belgia <br>- Danmark <br>- Estland <br>- Finland <br>- Frankrike <br>- Tyskland <br>- Ungarn <br>- Island <br>- Irland <br>- Italia <br>- Latvia <br>- Litauen <br>- Nederland <br>- Norge <br>- Polen <br>- Sverige <br>- Sveits <br>- Storbritannia <br>- USA |
 
 For land/områder som ikke er lokalisert av Microsoft, kan avgiftsberegning også aktiveres og kjøres med andre globale funksjoner.
 

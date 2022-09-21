@@ -2,7 +2,7 @@
 title: Oppgavebehandling
 description: Denne artikkelen forklarer oppgavebehandlingsfunksjonaliteten som er tilgjengelig i Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,14 +12,14 @@ ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c567f6d74e6ff87a72ff3b8663ca3a291dff3abb
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 29b547ff4f55b572ab774e7e70949ec8cb53ef42
+ms.sourcegitcommit: 167f73a834629752c6b79c312d744e52df7f0927
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8897871"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "9445901"
 ---
 # <a name="task-management"></a>Oppgavebehandling
 
@@ -43,7 +43,7 @@ Hver ansatt som er ansatt i USA, må utføre oppgaver som å fylle ut skattetrek
 
 **Eksempel 2**
 
-Et firma har både sesongansatte og vanlige heltidsansatte. Selv om noen oppgaver (for eksempel bekreftelse av nyansattes ankomsttid) gjelder ansatte av begge typer, gjelder noen tilleggsoppgaver bare for vanlige heltidsansatte. I dette tilfellet kan du opprette to sjekklister. Begge sjekklistene omfatter oppgaver som gjelder både sesongansatte og vanlige heltidsansatte, men bare én sjekkliste omfatter oppgaver som gjelder vanlige heltidsansatte.
+Et firma har både sesongansatte og vanlige heltidsansatte. Selv om noen oppgaver (for eksempel bekreftelse av nyansattes ankomsttid) gjelder ansatte av begge typer, gjelder noen tilleggsoppgaver bare for vanlige heltidsansatte. I dette tilfellet kan du opprette to sjekklister. Begge sjekklistene omfatter oppgaver som gjelder både sesongansatte og vanlige heltidsansatte, men bare én sjekkliste omfatter oppgavene som gjelder vanlige heltidsansatte.
 
 ## <a name="task-management-workspace"></a>Arbeidsområde for oppgavebehandling
 
@@ -69,7 +69,13 @@ I alle de tre kategoriene kan HR-assistenter og -ledere utføre følgende aktivi
 
 Du kan opprette oppgaver enkeltvis og deretter bruke dem på nytt i flere sjekklister. Hvis du vil opprette en oppgave, går du til siden **Oppsett av pålasting**, kategorien **Oppgaver** og velger **Ny**.
 
+Du kan tilordne en opprettet oppgave til flere sjekklister ved å merke oppgaven og deretter velge **Bruk på sjekklister** på menyen.
+
 Du kan også legge til oppgaver direkte i en sjekkliste. Hvis du vil legge til en oppgave i en sjekkliste, kan du gå til siden **Oppsett av pålasting** i kategorien **Sjekkliste** og enten opprette en ny sjekkliste å legge til oppgaven i, eller legge oppgaven til i en eksisterende sjekkliste.
+
+Hvis du vil redigere en oppgave i biblioteket, velger du **Rediger** på menyen for oppgavebibliotek. Hvis oppgaven er knyttet til en sjekkliste, vises disse sjekklistene på siden **Rediger oppgave**. Hvis du vil at oppgavene i kontrollistene skal oppdateres med redigeringene, velger du disse sjekklistene i delen **Bruk på sjekklister**.
+
+Hvis du vil slette oppgaver fra biblioteket, velger du **Slett**. Hvis en oppgave er knyttet til en sjekkliste, vil ikke denne handlingen slette oppgaven fra sjekklisten. Oppgaven må fjernes fra sjekklisten i en separat handling.
 
 > [!NOTE]
 > Hvis du legger til en oppgave direkte i en sjekkliste, kan du ikke bruke den på nytt i andre sjekklister.
@@ -133,7 +139,15 @@ Kompliserte oppgaver kan kreve flere trinn, eller personen som utfører oppgaven
 
 ## <a name="setting-up-checklists"></a>Definere sjekklister
 
-En sjekkliste er en gruppe oppgaver. Du kan opprette så mange sjekklister du krever, og du kan tilordne de samme oppgavene til flere sjekklister. Når du oppretter en sjekkliste, angir du en eier og en kalender.
+En sjekkliste er en gruppe oppgaver. Du kan opprette så mange sjekklister du krever, og du kan tilordne de samme oppgavene til flere sjekklister.
+
+Hvis du vil opprette en ny oppgave i en sjekkliste, velger du **Ny** på **Oppgaver**-menylinjen. Når du oppretter en ny oppgave, kan du velge å legge den til i oppgavebiblioteket, slik at den kan deles på tvers av flere sjekklister. Du kan bare legge til oppgaven i biblioteket hvis alternativet **Bruk oppgave i bibliotek** er satt til **Ja**. Hvis du legger til oppgaven i oppgavebiblioteket, kan du også legge den til i andre sjekklister samtidig ved å velge disse sjekklistene i delen **Bruk på sjekklister**. Hvis du ikke legger til oppgaven i biblioteket, vil den bare finnes i sjekklisten som du oppretter den i.
+
+Hvis du vil redigere en oppgave i sjekklisten, velger du **Rediger**. Hvis oppgaven er knyttet til en sjekkliste, vises disse sjekklistene på siden **Rediger oppgave**. Hvis du vil at oppgavene i de andre sjekklistene skal oppdateres med redigeringene, velger du disse sjekklistene i delen **Bruk på sjekklister**.
+
+Hvis du vil fjerne oppgaver fra sjekklisten, velger du **Fjern**. Denne handlingen fjerner bare oppgaver fra sjekklisten. De slettes ikke fra oppgavebiblioteket. Hvis du vil slette en oppgave fra biblioteket, kan du gå til oppgavebiblioteksiden og velge **Slett**.
+
+Når du oppretter en sjekkliste, angir du en eier og en kalender.
 
 Hvis feltet **Tilordningstype** for en oppgave er satt til **Stilling**, **Leder** eller **Gruppe**, men ingen bestemt person kan avledes av tilordningstypen, blir oppgaven tilordnet sjekklistens eier. Her er noen eksempler på situasjoner der oppgaver blir tilordnet til sjekklisteeieren:
 
