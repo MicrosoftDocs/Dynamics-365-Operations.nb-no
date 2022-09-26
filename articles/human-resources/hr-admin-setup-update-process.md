@@ -2,7 +2,7 @@
 title: Oppdatere prosess
 description: Microsoft Dynamics 365 Human Resources er ekte programvare som tjeneste (SaaS) som gir kontinuerlige, berøringsfrie serviceoppdateringer for program- og plattformendringer.
 author: twheeloc
-ms.date: 09/01/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 25889f9d4a7ffb4f155b7b7c12ec3b21a44a4710
-ms.sourcegitcommit: 1401d66b6b64c590ca1f8f339d622e922920cf15
+ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
+ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "9178451"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "9520817"
 ---
 # <a name="update-process"></a>Oppdatere prosess
 
 _**Gjelder For:** Human Resources i den frittstående infrastrukturen_ 
 
 > [!NOTE]
-> Fra og med juli 2022 kan ikke nye Human Resources-miljøer klargjøres i den frittstående Human Resources-infrastrukturen, og nye Microsoft Dynamics Lifecycle Services-prosjekter (LCS) kan ikke opprettes i den. Kunder kan distribuere Human Resources-miljøer i infrastrukturen i Finance and Operations. Hvis du vil ha mer informasjon , kan du se [Klargjøring av Human Resources i infrastrukturen i Finance and Operations](/hr-admin-setup-provision-fo.md).
+> Fra og med juli 2022 kan ikke nye Human Resources-miljøer klargjøres i den frittstående Human Resources-infrastrukturen, og nye Microsoft Dynamics Lifecycle Services-prosjekter (LCS) kan ikke opprettes i den. Kunder kan distribuere Human Resources-miljøer i infrastrukturen i Finance and Operations. Hvis du vil ha mer informasjon , kan du se [Klargjøring av Human Resources i infrastrukturen i Finance and Operations](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
 > Oppdaterings- og hurtigreparasjonsprosessen i infrastrukturen for økonomi- og driftsapper er forskjellig fra den frittstående oppdaterings- og hurtigreparasjonsprosessen i Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen, kan du se [Prosess for å flytte til den nyeste versjonen av Finance and Operations](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). Hvis du vil ha mer informasjon om hurtigreparasjoner, kan du se [Laste ned oppdateringer fra Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 

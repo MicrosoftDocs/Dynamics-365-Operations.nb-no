@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: f908caa902e4747d324480e3a5108b443d385ea7
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: aa6c80914301cc0403974a6acc5e95ff61c9c1a7
+ms.sourcegitcommit: a5a4c45bb265758c6e5c3483c8552503b1799a89
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277339"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "9524696"
 ---
 # <a name="connected-applications"></a>Tilkoblede programmer
 
@@ -35,7 +35,7 @@ Det er nyttig å ha parameterne for Finance eller Supply Chain Management tilgje
 ## <a name="create-a-connected-application"></a>Opprette et tilkoblet program
 
 1. Logg på RCS-kontoen.
-2. I arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering** i delen **Miljø**.
+2. I **Globaliseringsfunksjon**-arbeidsområdet i delen **Relaterte koblinger** velger du **Miljøoppsett**.
 3. Velg **Tilkoblede programmer** i handlingsruten på siden **Miljøoppsett**.
 4. Velg **Ny** for å opprette et tilkoblet program.
 5. I **Navn**-feltet angir du navnet på programmet som skal kobles til.

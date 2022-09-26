@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8c6c62c724ce1788ab98df04505aad801d0e9a54
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: b6915a4e0136d8a4ee461763459df741b269db49
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423890"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538817"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Opplæringskatalog for Dynamics 365 Commerce-administratorer
 
@@ -29,21 +29,21 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 | Innhold | Beskrivelse | Format | Lengde |
 |---------|-------------|--------|--------|
-| [Komme i gang med Dynamics 365 Commerce](/learn/paths/get-started-dynamics-365-commerce/)| Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
-| [Komme i gang med Dynamics 365 Fraud Protection](/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybasert løsning som er utviklet for e-handel, fysiske butikker og omnikanal-forhandlere, for å bidra til å beskytte inntektene og ryktet ved å tilby verktøy og muligheter til å redusere svindel og misbruk, redusere driftsutgifter og øke akseptansrater, samtidig som brukerkontoer beskyttes mot svindeleksponering. | Gratis, selvbetjent elektronisk læringsforløp | 35 minutter |
+| [Komme i gang med Dynamics 365 Commerce](/training/paths/get-started-dynamics-365-commerce/)| Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
+| [Komme i gang med Dynamics 365 Fraud Protection](/training/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybasert løsning som er utviklet for e-handel, fysiske butikker og omnikanal-forhandlere, for å bidra til å beskytte inntektene og ryktet ved å tilby verktøy og muligheter til å redusere svindel og misbruk, redusere driftsutgifter og øke akseptansrater, samtidig som brukerkontoer beskyttes mot svindeleksponering. | Gratis, selvbetjent elektronisk læringsforløp | 35 minutter |
 
 ## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
 | Innhold | beskrivelse | Format | Lengde |
 |---------|-------------|--------|--------|
-| [Distribuere og utvide Dynamics 365 Commerce](/learn/paths/deploy-dynamics-365-commerce/) | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer   |
-| [Konfigurere og bruke salgssted (POS) i Dynamics 365 Commerce](/learn/paths/configure-use-pos-commerce/)         | Transaksjonsdata opprettes ved salgsstedet (POS) og lastes deretter opp til Dynamics 365 Commerce Headquarters for behandling. Dette læreprogrammet beskriver hvordan du installerer og aktiverer POS, i tillegg til hvordan du oppretter daglige transaksjoner i POS. | Gratis, selvbetjent elektronisk læringsforløp | 4.5 timer |
-| [Konfigurere og arbeide med telefonsentre i Dynamics 365 Commerce](/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce er en omnikanalløsning som leverer en telefonsenterkanal med muligheter til spesifikke standardinnstillinger for ordrebehandling og data som brukes som standard i salgsordrene som opprettes av telefonsenterbrukere.                                  | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
+| [Distribuere og utvide Dynamics 365 Commerce](/training/paths/deploy-dynamics-365-commerce/) | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer   |
+| [Konfigurere og bruke salgssted (POS) i Dynamics 365 Commerce](/training/paths/configure-use-pos-commerce/)         | Transaksjonsdata opprettes ved salgsstedet (POS) og lastes deretter opp til Dynamics 365 Commerce Headquarters for behandling. Dette læreprogrammet beskriver hvordan du installerer og aktiverer POS, i tillegg til hvordan du oppretter daglige transaksjoner i POS. | Gratis, selvbetjent elektronisk læringsforløp | 4.5 timer |
+| [Konfigurere og arbeide med telefonsentre i Dynamics 365 Commerce](/training/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce er en omnikanalløsning som leverer en telefonsenterkanal med muligheter til spesifikke standardinnstillinger for ordrebehandling og data som brukes som standard i salgsordrene som opprettes av telefonsenterbrukere.                                  | Gratis, selvbetjent elektronisk læringsforløp | 2 timer   |
 
 ## <a name="e-commerce"></a>e-handel<a name="e-commerce"></a>
 
 | Innhold | beskrivelse | Formater | Lengde |
 |---------|-------------|--------|--------|
-| [Konfigurere og arbeide med e-Handel i Dynamics 365 Commerce](/learn/paths/configure-work-e-commerce/)              | Internett-kanalene og e-handelsområdet Dynamics 365 Commerce gjør det mulig for forhandlere å skape en tilstedeværelse på nettet for merket sitt. |
+| [Konfigurere og arbeide med e-Handel i Dynamics 365 Commerce](/training/paths/configure-work-e-commerce/)              | Internett-kanalene og e-handelsområdet Dynamics 365 Commerce gjør det mulig for forhandlere å skape en tilstedeværelse på nettet for merket sitt. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

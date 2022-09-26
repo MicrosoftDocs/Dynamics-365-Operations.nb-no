@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8d8fe042d7c56b86a5a7c92cc24480f573a2ea8a
-ms.sourcegitcommit: 07ed6f04dcf92a2154777333651fefe3206a817a
+ms.openlocfilehash: 61819d9c5af64b58697e07be85beebc084ae5935
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9423576"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542293"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurer Inventory Visibility
 
@@ -53,6 +53,7 @@ Tillegget for lagersynlighet legger til flere nye funksjoner i Power Apps instal
 |---|---|
 | *OnHandReservation* | Denne funksjonen lar deg opprette reserveringer, forbruke reserveringer og/eller avreservere angitte lagerantall ved hjelp av Lagersynlighet. Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Denne funksjonen gir et lagersammendrag for produkter, sammen med alle dimensjoner. Lagersammendragsdataene synkroniseres periodisk fra Lagersynlighet. Standard synkroniseringsfrekvens er én gang hvert 15. minutt og kan angis så høyt som én gang hvert 5. minutt. For mer informasjon, se [Lagersammendrag](inventory-visibility-power-platform.md#inventory-summary). |
+| *onHandIndexQueryPreloadBackgroundService* | Denne funksjonen gjør det mulig å forhåndslaste lagersynlighetsspørringer for lagerbeholdning for å sette sammen lagerbeholdningslister med forhåndsvalgte dimensjoner. Standard synkroniseringsfrekvens er én gang hvert 15. minutt. For mer informasjon, se [Lagersammendrag](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
 | *OnhandChangeSchedule* | Denne valgfrie funksjonen aktiverer endringsplanen for lagerbeholdning og er tilgjengelig ATP-funksjoner (tilgjengelig for ordre). Hvis du vil ha mer informasjon, kan du se [Tidsplan for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md). |
 | *Tilordning* | Ved hjelp av denne valgfrie funksjonen kan lagersynlighet gi mulighet for lagerbeskyttelse (ringorganisering) og oversalgskontroll. Hvis du vil ha mer informasjon, kan du se [Lagertildeling for lagersynlighet](inventory-visibility-allocation.md). |
 | *Aktiver lagervarer i lagersynlighet* | Denne valgfrie funksjonen gjør det mulig for Lagersynlighet å støtte varer som er aktivert for Warehouse Management-prosesser (WMS). Hvis du vil ha mer informasjon, kan du se [Støtte i Lagersynlighet for WMS-varer](inventory-visibility-whs-support.md). |

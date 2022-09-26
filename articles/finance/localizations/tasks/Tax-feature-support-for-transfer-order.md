@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b611abb2d68d93178d0c26ba40b22f1b8d26b191
-ms.sourcegitcommit: 6d9fcb52d723ac5022a3002e0ced8e7b56e9bc2a
+ms.openlocfilehash: c55d0891ed37d63f89ee09759965ac443db20dc6
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9203117"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542251"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Støtte for avgiftsfunksjon for overføringsordrer
 
@@ -63,7 +63,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         7. Velg **Lagre**.
         
         Opprett avgiftskoden **BE-RC+21**.
-        1. Velg **Legg til**, angi **BE-RC-21** i feltet **Mva-kode**.
+        1. Velg **Legg til**, angi **BE-RC+21** i feltet **Mva-kode**.
         2. Velg **Etter nettobeløp** i feltet **Avgiftskomponent**.
         3. Velg **Lagre**.
         4. Velg **Legg til** i **Sats**-tabellen.

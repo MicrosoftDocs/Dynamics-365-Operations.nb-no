@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1784b3c57bf1e6145085482d9068fad39ababc17
-ms.sourcegitcommit: ec15857b753ebedd86503170efd54c8007b87231
+ms.openlocfilehash: d2484b601a645694b988ac038a460a376ec912b0
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9475645"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538712"
 ---
 # <a name="administration-overview"></a>Oversikt over administrasjon
 
@@ -100,7 +100,8 @@ Denne artikkelen gir en oversikt over emnene i hjelpen og andre ressurser for ko
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 ### <a name="elearning-courses"></a>e-læringskurs
-Gå til [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) for elektroniske kurs og opplæring.
+
+For kurs og opplæring på nettet kan du sjekke ut [Dynamics 365 Human Resources-læreprogrammer](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### <a name="videos"></a>Videoer
 

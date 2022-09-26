@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 633daba553b1544c2caa788f4cec1da4c1da6960
-ms.sourcegitcommit: 7af116c60f3a94671a7a80c04097d70180754930
+ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "9347296"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542359"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -62,7 +62,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | --- | --- | --- | --- |
 | Handlinger | Dekningsgrupper med handlingsberegning aktivert: *\#* | Dette funksjonen støttes nå. | Støttes |
 | Basiskalendere | Kalendere som bruker basiskalender: *\#* | Dette funksjonen støttes nå. | Støttes | 
-| Partidisposisjonskoder | Ikke-nettbare partidisposisjonsstandarder: *\#* | Dette funksjonen venter. Partidisposisjonskoder ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 |
+| Partidisposisjonskoder | Ikke-nettbare partidisposisjonsstandarder: *\#* | Dette funksjonen venter. Partidisposisjonskoder ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
 | Leveringskapasitet | Standard ordreinnstillinger med leveringsdatokontroll satt til CTP: *\#* | I Supply Chain Management 10.0.28 og nyere gjør en prosess kalt for *CTP for planleggingsoptimalisering* bekreftede datoer for forsendelse og mottak tilgjengelig etter at den dynamiske planen er kjørt. For eldre versjoner av Supply Chain Management ignoreres den eldre CTP-innstillingen når planleggingsoptimalisering er aktivert. | Støttes |
 | Kopier statisk til dynamisk plan | Kopi av statisk til dynamisk planen er aktivert for parametere for hovedplanlegging. | Planleggingsoptimalisering kopierer ikke den statiske planen til den dynamiske planen, uavhengig av denne innstillingen. Dette konseptet er generelt mindre relevant på grunn av hastigheten og fullføringsregenereringen som gis av planleggingsoptimaliseringen. Hvis det brukes to eller flere planer, bør hovedplanlegging utløses for hver plan. | Ikke tilgjengelig |
 | Autorisasjon | Dekningsgrupper med automatisk autorisasjonshorisont angitt: *\#* | I versjon 10.0.7 og senere støttes autorisasjon som en separat satsvis jobb etter at hovedplanleggingen er fullført (forutsatt at funksjonen *Automatisk autorisasjon med planleggingsoptimalisering* er aktivert i [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Legg merke til at automatisk autorisasjon med planleggingsoptimalisering er basert på ordredatoen (startdato), ikke behovsdatoen (sluttdatoen). Denne virkemåten sikrer at planlagte bestillinger vises i forfallstiden, uten at leveringstiden i autorisasjonshorisonten må tas med. | Støttes |

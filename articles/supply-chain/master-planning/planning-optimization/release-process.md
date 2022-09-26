@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5e8b4ab74bf973a131499799efa66e9c7fe9d5be
-ms.sourcegitcommit: 0220be95c007c77ba3b73fed8ac68a3d72dc2884
+ms.openlocfilehash: 2f91c46367ee2f881476a496555f15454c9f6baa
+ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9403731"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "9542327"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesprosess for planleggingsoptimalisering og utgivelseslogg
 
@@ -30,6 +30,8 @@ Mens planleggingsoptimalisering oppdateres, kan hovedplanleggingen kjøre litt s
 Miljøer som bruker planleggingsoptimalisering, mottar automatisk den nyeste versjonen. Ingen brukerhandling er nødvendig: Tjenesten oppdateres automatisk. Ingen endringsfunksjonalitet skyves imidlertid automatisk til miljøer. Endringer som anses som brudd, deaktiveres som standard og må aktiveres eksplisitt ved hjelp av [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Derfor vises ikke disse endringene i miljøer før du velger å aktivere dem.
 
 Siden varslinger ikke vises når planleggingsoptimalisering oppdateres i miljøet ditt, kan du se gjennom produktmerknadene i tabellen nedenfor for å finne ut når endringene ble utgitt, og hvilken funksjonalitet de introduserte. Denne tabellen viser endringene som ble utgitt for planleggingsoptimalisering, om disse endringene er knyttet til en funksjon fra funksjonsbehandling og datoen for utgivelsen.
+
+<!-- KFM: Add this? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 
 
 | Endringer | Detaljer for funksjonsbehandling | Frigivelsesdatoer |
 |---|---|---|

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 16381,  ""intro-internal
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.form: SystemParameters
-ms.openlocfilehash: 19e1659a5fb91c7cb8916b1a8b6238038df29287
-ms.sourcegitcommit: 9c637bcf4e2eb8f711290a861492f038feaf1568
+ms.openlocfilehash: fa1a120fac66997658908a61469d45e96bcc4912
+ms.sourcegitcommit: d3f7a56eaf788d223ece4cedac4a319eaf5f6112
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9462364"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "9538844"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
@@ -40,14 +40,14 @@ I alle disse appene kan du få tilgang til produktspesifikk hjelp fra **Hjelp**-
 
 ![Hjelp-rute.](./media/help-pane-ops-help.png)
 
-## <a name="help-on-microsoft-docs"></a>Hjelp på Microsoft Docs
+## <a name="help-on-microsoft-learn"></a>Hjelp i Microsoft Learn
 
-([Microsoft Dynamics 365-dokumentasjonen](/dynamics365/)) på Microsoft Docs er standardkilden for produktdokumentasjon for de tidligere oppførte appene. Dette nettstedet tilbyr følgende funksjoner:
+([Microsoft Dynamics 365-dokumentasjonen](/dynamics365/)) i Microsoft Learn er standardkilden for produktdokumentasjon for de tidligere oppførte appene. Dette nettstedet tilbyr følgende funksjoner:
 
 - **Tilgang til det mest oppdaterte innholdet** – Området gir Microsoft en raskere og mer fleksibel måte å opprette, levere og oppdatere produktdokumentasjon på. Derfor har du enkel tilgang til den nyeste tekniske informasjonen.
 - **Innhold som er skrevet av eksperter** – Innhold på nettstedet er åpent for bidrag av fellesskapsmedlemmer både i og utenfor Microsoft.
 
-Du kan finne innhold på Microsoft Docs ved å bruke en hvilken som helst søkemotor. For best mulig resultater anbefaler det å bruke områdesøk, for eksempel **site:docs.microsoft.com dynamics 365 "søketerm"**.
+Du kan finne innhold på Microsoft Learn ved å bruke en hvilken som helst søkemotor. For best mulig resultater anbefaler det å bruke områdesøk, for eksempel **site:learn.microsoft.com dynamics 365 "søketerm"**.
 
 ## <a name="get-notified-about-changes-through-an-rss-feed"></a>Få beskjed om endringer ved hjelp av en RSS-feed
 
@@ -87,7 +87,7 @@ Du kan bidra til og redigere i dokumentasjonen. Begynn med å velge knappen **Re
 
 Videoen [Bidra til dokumentasjonen for Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (vist ovenfor) er inkluder i Microsoft Dynamics 365-kanalen på YouTube.
 
-Hvis du vil ha mer informasjon, kan du se [veiledningen for Microsoft Docs-bidragsytere](/contribute), som publiseres av teamet som laget Microsoft Docs-nettstedet.
+Hvis du vil ha mer informasjon, kan du se [veiledningen for Microsoft Docs-bidragsytere](/contribute), som er publisert av teamet som laget Microsoft Learn-nettstedet.
 
 > [!NOTE]
 > Vi godtar for øyeblikket bare bidrag til vårt engelske innhold.
@@ -169,14 +169,11 @@ Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden
 | Nettsted | Beskrivelse |
 |------|-------------|
 | [Microsoft Dynamics 365-dokumentasjon](/dynamics365/) | Dette nettstedet drifter eller kobler til all produktdokumentasjon for Dynamics 365. |
-| [Microsoft Learn](/learn/) | Dette området er et gratis Microsoft eLearning-område. |
+| [Microsoft Learn-kurs](/training/) | Dette området er et gratis Microsoft eLearning-område. |
 | [Microsoft DynamicsLifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Dette området er et skybasert samarbeidsområde som kunder og partnere kan bruke til å administrere prosjekter fra før salg til implementering og operasjoner. Det er nyttig i alle fasene ved implementering. |
 | [Kundestøtteblogg](https://aka.ms/AXSupportBlog) | Dette området gir tips som posteres av kundestøtteteamet. |
 | [Tidligere versjoner](/previous-versions/dynamics/) | Dette området har innhold fra tidligere versjoner. |
 | [Dynamics-fellesskap](https://community.dynamics.com/) | Dette området har blogger, forum og videoer. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette området formidler informasjon om evaluering og salg. |
-
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

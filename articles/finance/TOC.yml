@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-29.md
                 - name: Finance 10.0.28 (august)
                   href: get-started/whats-new-changed-10-0-28.md
-                - name: Finance 10.0.27 (juli)
-                  href: get-started/whats-new-changed-10-0-27.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -1448,10 +1446,12 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Legge til en sertifiseringstype for en leverandør i offentlig sektor
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
-            - name: Beregne kanadisk avstemt mva.
+            - name: Beregn kanadisk avstemt mva.
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: Globalisering
+        - name: Globalization Studio
           items:
+            - name: Oversikt over Globalization Studio
+              href: localizations/globalization-studio-overview.md?context=/dynamics365/context/finance
             - name: Globaliseringsressurser
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
             - name: Globaliseringstjenester
@@ -1734,6 +1734,8 @@
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Beregn og juster merverdiavgift på en leverandørfaktura
                       href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Løs mva-avvik
+                      href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
                     - name: Juster mva. via økonomijournaler
                       href: general-ledger/adjust-sales-tax-via-general-journals.md
                     - name: Aktiver forsinket avgiftsberegning i journal
@@ -2512,8 +2514,10 @@
                   href: localizations/emea-hun-tax-reimbursement-docs.md
                 - name: Årsavslutning
                   href: localizations/emea-cze-hun-year-end.md
-                - name: Online faktureringssystem
+                - name: Nettbasert faktureringssystem
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Mva-deklarering (Ungarn)
+                  Href: localizations/emea-hun-vat-declaration-hungary.md
                 - name: Mva-rapporter for Ungarn
                   href: localizations/emea-hun-sales-tax-reports.md
                 - name: Ungarsk Intrastat
