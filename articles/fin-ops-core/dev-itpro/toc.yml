@@ -1622,13 +1622,11 @@
                   href: sysadmin/session-idle-timeout.md
                 - name: Medfølgende sikkerhetsrapporter
                   href: sysadmin/security-reports.md
-                - name: Opprette nye brukere
+                - name: Opprett nye brukere
                   href: sysadmin/tasks/create-new-users.md
-                - name: Behandling av brukerøkt
-                  href: sysadmin/user-session-management.md
-                - name: Blokkere tilgang etter lokasjon med betinget tilgang for Azure AD
+                - name: Blokker tilgang etter lokasjon med betinget tilgang for Azure AD
                   href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-                - name: Masseimportere brukere
+                - name: Masseimporter brukere
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Definere arbeidsdeling
                   href: sysadmin/tasks/set-up-segregation-duties.md
