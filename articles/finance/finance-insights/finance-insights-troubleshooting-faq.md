@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 1ee354a1c3d9b45eb12eeb3a6a29f2a6d5e4c34c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 331c714663d212471b72f1558e6183452ef7f394
+ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846922"
+ms.lasthandoff: 09/22/2022
+ms.locfileid: "9573179"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Feilsøke konfigurasjonsproblemer for Finance Insights
 
@@ -88,10 +88,14 @@ Trinnene nedenfor bør være fullført.
 - Bekreft at en Dynamics 365 Finance eller tilsvarende lisens brukes for brukeren som installerer tillegget.
 - Kontroller at følgende Azure AD app er registrert i Azure AD: 
 
-  | Program                  | App-ID           |
-  | ---------------------------- | ---------------- |
-  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+    | Program                  | App-ID           |
+    | ---------------------------- | ---------------- |
+    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+    Hvis du vil verifisere at søknaden er registrert i Azure AD, kan du se i listen **Alle søknader**. Hvis du vil ha mer informasjon, kan du se [Vis bedriftssøknader](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    Hvis søknaden ikke er registrert i Azure AD, bør du ta kontakt med kundestøtte.
+
 ## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Symptom: Feil: "Vi fant ingen data for det valgte filterområdet. Velg et annet filterområde, og prøv på nytt." 
 
 ### <a name="resolution"></a>Oppløsning

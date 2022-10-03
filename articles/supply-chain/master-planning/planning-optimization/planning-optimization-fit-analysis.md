@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f9c85c4fbcc3c66d6cc4c65431b76c31cbb7aebf
-ms.sourcegitcommit: 20ce54cb40290dd116ab8b157c0a02d6757c13f5
+ms.openlocfilehash: 7e32b3ed6ed96de7193cc496e0630969137cd0c1
+ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "9542359"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9591857"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -94,7 +94,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Produksjon | Formelversjoner med avkastning: *\#* | Dette funksjonen venter. Avkastning som er knyttet til formelversjonen, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 |
 | Produksjon | Planer inkludert sekvensering: *\#* | Dette funksjonen venter. For øyeblikket ignoreres sekvensiering når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
 | Produksjon | Frigitte produksjonsordre som ikke er startet, og der planlagt start er tidligere enn i dag: *\#* | Dette funksjonen venter. For øyeblikket vil hovedplanleggingen anta at den blir fullført i dag hvis en produksjonsordre blir forsinket. Dette er relevant for frigitte produksjonsordrer der en leveringsdato er i fortiden, men ennå ikke er fullført. | Fremtidig bølge |
-| Produksjon | Ressurser som er planlagt med begrenset kapasitet: *\#* | Dette funksjonen venter. Ressurser som er planlagt med begrenset kapasitet, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. Planleggingen utføres basert på standard leveringstid fra produktet. | lanseringsbølge 2 i 2022 |
+| Produksjon | Ressurser som er planlagt med begrenset kapasitet: *\#* | Dette funksjonen støttes nå.| Støttes |
 | Produksjon | Ruter som brukes i planleggingen: *\#* | Dette funksjonen støttes. | Støttes |
 | Produksjon | Salgslinjereservasjon ved hjelp av nedbryting: *\#* | Salgslinjereservasjon som bruker nedbryting, støttes ikke når planleggingsoptimalisering er aktivert. | Fremtidig bølge |
 | Produksjon | Planlegging med nedbryting av produksjonsordre: *\#* | Planlegging som bruker nedbryting av produksjonsordrer, støttes ikke når planleggingsoptimalisering er aktivert. Produksjonsordrer kan planlegges enkeltvis. | Fremtidig bølge |

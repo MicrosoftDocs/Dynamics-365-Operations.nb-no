@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aa3dce4bfda7f3c9243387cd398f08e7b990b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0d5930ca2ce2bb1ae534f7e2b434836c3a4adeba
+ms.sourcegitcommit: cf27cf277b37666c838043e0695d39d52be5dcdd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8894207"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "9588960"
 ---
 # <a name="accounting-distributions"></a>Regnskapsdistribusjoner
 
@@ -51,7 +51,7 @@ Generiske funksjoner for regnskapsdistribusjon gir følgende alternativer for be
     -   Du kan vise gjeldende regnskapsstatus for dokument i **Referanse**. Statusen er for hele dokumentet og angir om dokumentet er under behandling eller fullført.
 -   **Vis distribusjoner** – Vis regnskapsdistribusjonene for alle linjene og pengebeløpene i dokumentet. Du kan ikke endre regnskapsdistribusjonene fra denne visningen.
 
-I versjon 10.0.13 er det lagt til en funksjon som validerer tabellen for regnskapsdistribusjon for å sikre at nye felt er riktig satt opp. Denne funksjonen kalles **Aktiver ytterligere validering av data for dokumenter som bruker regnskapsrammeverket for kildedokumenter**. Hvis du vil bruke funksjonen, må du aktivere den ved hjelp av arbeidsområdet for **Funksjonsbehandling**. Hvis du vil aktivere funksjonen, kan du søke etter funksjonsnavnet i **Søk**-feltet på siden **Funksjonsbehandling** og deretter velge **Aktiver nå**.
+I versjon 10.0.13 er det lagt til en funksjon som validerer tabellen for regnskapsdistribusjon for å sikre at nye felt er riktig satt opp. Denne funksjonen kalles **Aktiver ytterligere validering av data for dokumenter som bruker regnskapsrammeverket for kildedokumenter**. Denne funksjonen aktiveres som standard i versjon 10.0.29. 
 
 Se [Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) for mer informasjon.
 

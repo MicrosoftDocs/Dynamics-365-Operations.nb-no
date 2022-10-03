@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.openlocfilehash: 66a711aff90221e594f4b2a0df3735eac93d0c9b
-ms.sourcegitcommit: 09d4805aea6d148de47c8ca38d8244bbce9786ce
+ms.openlocfilehash: 426473c14cdf9e171810aafd97dbb1afd5988b2f
+ms.sourcegitcommit: 24673493d14f2045a08fe7240689bee34e099cb5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387026"
+ms.lasthandoff: 09/24/2022
+ms.locfileid: "9589096"
 ---
 # <a name="mass-deployment-of-sealed-commerce-self-service-components"></a>Massedistribusjon av forseglede Commerce-selvbetjeningskomponenter
 
@@ -47,7 +47,7 @@ Tabellen nedenfor viser skilletegnene som kan brukes i kommandolinjekjøringen.
 | -EnvironmentId | Miljø-ID-en. |
 | -HardwareStationAppInsightsInstrumentationKey | Instrumenteringsnøkkelen for AppInsights for Hardware Station. |
 | Installer | En parameter som angir om komponenten som dette installasjonsprogrammet omfatter, skal installeres. Denne parameteren er nødvendig for å kunne utføre en installasjon og har ingen innledende bindestrek. |
-| -InstallOffline | Når det gjelder Modern POS, angir denne parameteren at den frakoblede databasen også skal installeres og konfigureres. Bruk også parameteren **-SQLServerName**. Ellers prøver installasjonsprogrammet å finne en standardforekomst som oppfyller forutsetningene. |
+| -InstallOffline | Når det gjelder Modern POS, angir denne parameteren at den frakoblede databasen også skal installeres og konfigureres. Bruk også parameteren **-SQLServerName**. Ellers prøver installasjonsprogrammet å finne en standardforekomst som oppfyller forutsetningene. Når du bruker Azure Active Directory (Azure AD)-godkjenning, vil ikke POS offline fungere, fordi online-tilkobling alltid er nødvendig. |
 | -Port | Porten som skal knyttes til og brukes av den virtuelle katalogen i Retail Server. Hvis du ikke angir noen port, brukes standardporten 443. |
 | -Register | Kasse-ID-en, som vist på **Kasser**-siden i Headquarters. |
 | -RetailServerAadClientId | Azure AD-klient-ID-en som Retail Server skal bruke under kommunikasjonen med Headquarters. |

@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 985800aad3711a1b28613f0f82585b4d592cdf58
-ms.sourcegitcommit: de989037d83393bea013cd58c061159765305b4f
+ms.openlocfilehash: c2d26b7c5e110d05806c064e15a3ad2af34d0fbd
+ms.sourcegitcommit: fde2867524b6a851628185cbdeee60a6ad918d08
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473612"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "9592053"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsoppdateringer
 
@@ -57,7 +57,7 @@ Et sett med prosessendringer implementeres før aktiveringen av distribusjon av 
 - **Skjema** – Verktøy vil sikre at kvalitetsoppdateringsbuilds omfatter bare skjemaendringer som kan brukes mens tjenesten er tilkoblet. Denne fremgangsmåten vil bidra til å bevare muligheten til å bruke oppdateringen med nær null nedetid.
 - **Økt endringsgransking** – For øyeblikket er det allerede et ekstra prosesstrinn som skal godkjenne endringer for inkludering i en kvalitetsoppdatering. Granskingen i det ekstra trinnet økes for å redusere faren for regresjoner. Det å bryte endringer som ikke er tillatt i kvalitetsoppdateringer, og den økte endringsgranskingen vil bidra til å sikre at vi oppfyller dette målet.
 - **Synlighet** – Vi sender meldinger via e-post og Lifecycle Services (LCS) for kommende proaktive kvalitetsoppdateringer. I tillegg vil støttegrupper og hendelses kundeemner ha oversikt over hvor kvalitetsoppdateringer er distribuert proaktivt.
-- **Versjonstilbakefall** – Testversjonering blir brukt til å gruppere alle endringer i en proaktiv kvalitetsoppdatering. Hvis tilbakefall er nødvendig etter en proaktiv distribusjon, kan det gjøres via testversjoneringssystemet.
+- **Sikkerhet via testversjonering** - Testversjonering brukes til å verne kodeendringer der det er aktuelt i en reparasjon av kvalitetsoppdatering eller bruke den eksisterende testversjoneringen som er relevant for reparasjonen. Hvis du må tilbakefalle eller slå av en endring etter en proaktiv distribusjon, kan du gjøre det via testversjoneringen for å unngå ytterligere feil.
 - **Synkroniseringsbetegnelsen for sandkasse** – Mindre enn 20 prosent av kundene i dag har flere avmerkingsbokser, og én avmerkingsboks er distribuert der versjonen samsvarer med produksjonen, som hjelp til feilsøking. Hvis en kunde bruker en sandkasse til å teste en nyere versjon enn produksjonen, vil denne sandkassen motta kvalitetsoppdateringer for den nyere versjonen.
 
 ## <a name="what-is-the-rollout-roadmap-for-quality-updates"></a>Hva er utrullingsveikartet for kvalitetsoppdateringer?
@@ -69,7 +69,7 @@ I løpet av den neste seksmåneders perioden vil vi gradvis øke prosenten av sa
 Siden kunder regelmessig vil motta mindre nyttelaster, forventer vi at prosessen med nåværende behov blir enklere. Vi justerer frekvensen til oppdateringsdistribusjonen når vi viser muligheten til å kjøre prosessen uten avbrudd. Denne prosessen fungerer allerede effektivt for Dataverse-plattformen og programmene våre og leverer de forventede forbedringene i servicekvaliteten. Vi ønsker å ta det samme steget fremover for økonomi- og driftsapper.
 
 ## <a name="when-will-quality-updates-start-for-production-environments"></a>Når starter kvalitetsoppdateringer for produksjonsmiljøer?
-På dette tidspunktet er kvalitetsoppdateringer bare rettet mot sandkasser. Oppdateringer av produksjonsmiljøer starter etter november 2022.
+På dette tidspunktet er kvalitetsoppdateringer bare rettet mot sandkasser. Vi oppdaterer dette området med startdatoen for produksjonsmiljøer når vi har flere data og mål fra proaktive oppdateringer for avmerkingsbokser til måling av beredskap for prod.
 
 ## <a name="what-is-the-schedule-for-sandbox-quality-updates"></a>Hva er tidsplanen for kvalitetsoppdateringer for sandkassemiljøer?
 For informasjon om mørketimer for hvert område, se [Hva er tidsplanen for proaktive kvalitetsoppdateringer?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).

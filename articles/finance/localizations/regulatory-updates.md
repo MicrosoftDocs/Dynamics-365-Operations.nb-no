@@ -2,7 +2,7 @@
 title: Forskriftsmessige oppdateringer
 description: Denne artikkelen inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 04/18/2022
+ms.date: 09/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 129e4e1d44018da206d0e797dcfd389c9e6adeba
-ms.sourcegitcommit: 3c4dd125ed321af8a983e89bcb5bd6e5ed04a762
+ms.openlocfilehash: fdfc10ea5bf330c3a739f8dfe86c56f16ca2c69e
+ms.sourcegitcommit: 2290799408b7567a97601bc4158f814d5bfd844c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206204"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "9596242"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -39,19 +39,14 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 
 |Land|Frigivelsesdato|Versjon|Forskriftsmessig oppdatering|
 |--------------------|---------------|-------|-------| 
-|      Brasil         |   2022. mars    | 10.0.27        |    ICMS-DIFAL-samling i operasjoner rettet mot ikke-skattebetalere (komplementær lovnr. 190/22)  |
-|      Brasil         |   2022. mars         | 10.0.27         |    NF-e NT2021.004  v1.00 - Oppdateringer i oppsett og valideringsregler  |
-|      Brasil         |   2022. mars         | 10.0.27         |    NF-e NT2021.004  v1.00 - Oppdateringer i oppsett og valideringsregler – detaljhandel  |
-|      Brasil         |   2022. april         | 10.0.27HF, 10.0.28         |    SPED ECF - LAYOUT 8  |
-|      Øst-Europa         |   Juli 2022         | 10.0.27HF, 10.0.28HF, 10.0.29         |    Økonomimoduloppgave etter hovedkonto  |
-|      Litauen|   2022. februar | 10.0.27 | I.SAF-endringer fra 2022-01-01 i Dynamics 365 Finance  |
-|      Mexico         |   2022. mars      | 10.0.27      |   CFDI-formater, versjon 4.0 (fakturaer og betalinger)  |
-|      Mexico         |   2022. februar      | 10.0.27      |   Per 1. januar 2022 trer versjon 4.0 av CFDI i kraft, med en sameksistensperiode mellom versjon 3.3 og versjon 4.0, som går fra 1. januar til 30. juni 2022.  |
-|      Mexico         |   2022. mars      | 10.0.27      |   CFDI-formater, versjon 4.0 (kildeskatt)  |
-|      Polen          |   2022. april     | 10.0.27HF, 10.0.28     |   JPK_FA, versjon 4 fra 1. april, 2022JPK_V7M – ny skjemaversjon fra januar 2022 |
-|      Russland          |   2022. juni     | 10.0.27    |  Rapport om operasjoner med sporbare produkter (i avskrivingsomfanget for innkjøpte sporbare varer, som skjermer, kjøleskap og kontormøbler til eget bruk)|
-|      Singapore      |   Juli 2022| 10.0.27HF, 10.0.28HF, 10.0.29 | IRAS-revisjonsfil (IAF) i TXT-format|
-|      Spania      |   2022. mars| 10.0.27 | Mva-deklarering Modell 303 endres 1. januar 2022 i Dynamics 365 Finance|
+|      Brasil         |   2022. april         | 10.0.28         |    SPED ECF - LAYOUT 8  |
+|      Brasil         |   2022. juni         | 10.0.30HF         |    EFD ICMS IPI - versjon 3.0.9  |
+|      Brasil         |   August 2022         | 10.0.30         |    NF-e NT2021.004  v1.31 - Oppdateringer i oppsett og valideringsregler  |
+|      Øst-Europa         |   Juli 2022         | 10.0.28HF, 10.0.29         |    Økonomimoduloppgave etter hovedkonto  |
+|      Ungarn         |   Juli 2022         | 10.0.30         |    Mva-deklarering i XML (2065A) og forhåndsvisning i Excel. Tillegg for innkjøpsfakturaer i XML (2065M)  |
+|      Polen          |   2022. april     | 10.0.28     |   JPK_FA versjon 4 som starter fra 1. april 2022 |
+|      Russland          |   2022. juni     | 10.0.29    |  Importer adressedata fra statsadresseregisteret (GAR)|
+|      Singapore      |   Juli 2022| 10.0.28HF, 10.0.29 | IRAS-revisjonsfil (IAF) i TXT-format|
 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
