@@ -2,19 +2,19 @@
 title: Oversikt over regnskapsintegrering for Commerce-kanaler
 description: Denne artikkelen gir en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 0a56df2a463153c6c3986ce84907e25ea7d965b8
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286506"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631247"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Oversikt over regnskapsintegrering for Commerce-kanaler
 
@@ -95,16 +95,20 @@ Denne konfigurasjonen brukes når en fysisk regnskapsenhet eller regnskapstjenes
 
 Rammeverket for regnskapsintegrering har følgende alternativer for å håndtere feil under bilagsregistreringen:
 
-- **Prøv på nytt** – Operatører kan bruke dette alternativet når feilen kan løses raskt, og bilagsregistreringen kan kjøres på nytt. Dette alternativet kan for eksempel brukes når regnskapsenheten ikke er tilkoblet, bilagsskriveren er tom for papir, eller det er papirstopp i bilagsskriveren.
-- **Avbryt** – Dette alternativet lar operatører utsette bilagsregistreringen av den gjeldende transaksjonen eller hendelsen hvis den mislykkes. Når registreringen utsettes, kan operatøren fortsette å arbeide på salgsstedet, og kan utføre alle operasjoner som bilagsregistreringen ikke er nødvendig for. Når en hendelse som krever bilagsregistrering, skjer på salgsstedet (for eksempel en ny transaksjon åpnes), vises automatisk dialogboksen for feilhåndtering for å varsle operatøren at den forrige transaksjonen ikke ble riktig registrert, og for å gi alternativer for å håndtere feilen.
-- **Hopp over** – Operatører kan bruke dette alternativet når bilagsregistreringen kan utelates ved bestemte betingelser, og det kan fortsettes med vanlige operasjoner på salgsstedet. Dette alternativet kan for eksempel brukes når en salgstransaksjon som bilagsregistreringen mislyktes for, kan registreres i en bestemt papirjournal.
-- **Merk som registrert** – Operatører kan bruke dette alternativet når transaksjonen faktisk ble registrert i regnskapsenheten (for eksempel en bilagskvittering ble skrevet ut), men det oppstod en feil under lagring av regnskapssvaret i kanaldatabasen.
-- **Utsett** – Operatører kan bruke dette alternativet når transaksjonen ikke ble registrert fordi registreringstjenesten ikke var tilgjengelig. 
+- **Prøv på nytt** – Operatøren kan bruke dette alternativet når feilen kan løses raskt, og bilagsregistreringen kan kjøres på nytt. Dette alternativet kan for eksempel brukes når regnskapsenheten ikke er tilkoblet, bilagsskriveren er tom for papir, eller det er papirstopp i bilagsskriveren.
+- **Avbryt** – Dette alternativet lar operatøren utsette bilagsregistreringen av den gjeldende transaksjonen eller hendelsen hvis den mislykkes. Når registreringen utsettes, kan operatøren fortsette å arbeide på salgsstedet, og kan utføre alle operasjoner som bilagsregistreringen ikke er nødvendig for. Når en hendelse som krever bilagsregistrering, skjer på salgsstedet (for eksempel en ny transaksjon åpnes), vises automatisk dialogboksen for feilhåndtering for å varsle operatøren at den forrige transaksjonen ikke ble riktig registrert, og for å gi alternativer for å håndtere feilen.
+- **Hopp over** – Operatøren kan bruke dette alternativet når det ikke er mulig å fullføre regnskapsregistreringen for den gjeldende transaksjonen eller hendelsen, for eksempel hvis regnskapsskriveren ikke fungerer, **og** regnskapsregistreringen kan utelates ved bestemte betingelser. Dette alternativet kan for eksempel brukes når en salgstransaksjon som bilagsregistreringen mislyktes for, kan registreres i en bestemt papirjournal. Etter at du har hoppet over regnskapsregistreringen, kan vanlige operasjoner fortsette i POS-et. 
+- **Merk som registrert** – Operatøren kan bruke dette alternativet når den gjeldende transaksjonen eller hendelsen faktisk er registrert i regnskapsenheten, for eksempel en bilagskvittering er skrevet ut, men det oppstod en feil under lagring av regnskapssvaret i kanaldatabasen. Når du har merket gjeldende transaksjon eller hendelse som registrert, kan vanlige operasjoner fortsette i POS-programmet.
+- **Utsett** – Operatøren kan bruke dette alternativet når transaksjonen ikke er registrert fordi registreringsenheten eller -tjenesten ikke er tilgjengelig **og** et av følgende gjelder:
+    - Det er et backup regnskapsregistreringsalternatig , og det er mulig å fortsette regnskapsregistreringsprosessen for den gjeldende transaksjonen. En lokal [regnskapsenhet](./latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) kan for eksempel være et sikkerhetskopialternativ for en elektronisk regnskapsregistreringstjeneste når tjenesten ikke er tilgjengelig.
+    - Regnskapsregistreringen kan fullføres senere på en annen måte enn det skattemessige integreringsrammeverket. Utsatte transaksjoner kan for eksempel senere registreres skattemessig i et parti ved hjelp av en [egen funksjonalitet](./latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    
+    Når utsetting av gjeldende transaksjon eller hendelse kan vanlige operasjoner fortsette i POS-programmet.
 
-> [!NOTE]
-> Alternativene **Hopp over**, **Merk som registrert** og **Utsett** må aktiveres i bilagsregistreringsprosessen før de brukes. I tillegg må tilsvarende tillatelser gis til operatører.
+> [!WARNING]
+> Alternativene **Hopp over**, **Merk som registrert** og **Utsett** bør betraktes som nødsalternativer og brukes bare i spesielle tilfeller. Diskuter disse alternativene for feilhåndtering med juridisk rådgiver og skatterådgiver, og bruk vurder nøye før du aktiverer dem. Alternativene må aktiveres i bilagsregistreringsprosessen før de brukes. Hvis du vil sikre at operatorer ikke bruker dem regelmessig, må tilsvarende tillatelser gis til operatorer.
 
-Alternativene **Hopp over**, **Merk som registrert** og **Utsett** gjør at informasjonskoder kan hente bestemt informasjon om en feil, for eksempel årsaken til feilen eller en begrunnelse for å hoppe over bilagsregistreringen eller merke transaksjonen som registrert. Hvis du vil ha mer informasjon om hvordan du definerer parametere for feilbehandling, se [Konfigurere innstillinger for feilbehandling](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+En [regnskapstransaksjon](#storing-fiscal-response-in-fiscal-transaction) opprettes når **Hopp over**, **Merk som registrert** eller **Utsett** er valgt, men regnskapstransaksjonen ikke inneholder et regnskapssvar. Dette gjør at du kan registrere hendelsen ved feil i regnskapsregistreringen. Disse alternativene gjør det også mulig for informasjonskoder å hente bestemt informasjon om en feil, for eksempel årsaken til feilen eller en begrunnelse for å hoppe over bilagsregistreringen eller merke transaksjonen som registrert. Hvis du vil ha mer informasjon om hvordan du definerer parametere for feilbehandling, se [Konfigurere innstillinger for feilbehandling](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### <a name="optional-fiscal-registration"></a>Valgfri bilagsregistrering
 
@@ -112,11 +116,7 @@ Bilagsregistrering kan være obligatorisk for enkelte operasjoner, men valgfritt
 
 ### <a name="manually-rerun-fiscal-registration"></a>Kjøre bilagsregistrering på nytt manuelt
 
-Hvis bilagsregistrering av en transaksjon eller hendelse er utsatt etter en feil (for eksempel hvis operatoren valgte **Avbryt** i dialogboksen for feilbehandling), kan du kjøre bilagsregistreringen på nytt manuelt ved å bruke en tilsvarende operasjon. Hvis du vil ha mer informasjon, se [Aktivere manuell kjøring av utsatt bilagsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### <a name="postpone-option"></a>Utsett-alternativet
-
-Med **Utsett**-alternativet kan du fortsette med bilagsregistreringsprosessen hvis det gjeldende trinnet mislykkes. Det kan brukes når det finnes et reservealternativ for bilagsregistrering.
+Hvis bilagsregistrering av en transaksjon eller hendelse er utsatt etter en feil (for eksempel hvis operatoren valgte **Avbryt** i dialogboksen for feilbehandling), kan du kjøre bilagsregistreringen på nytt manuelt ved å bruke en tilsvarende operasjon. Hvis du vil ha mer informasjon, se [Aktivere manuell kjøring av utsatt bilagsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### <a name="fiscal-registration-health-check"></a>Tilstandskontroll for bilagsregistrering
 
@@ -138,7 +138,7 @@ Hvis tilstandskontrollen mislykkes, viser salgsstedet dialogboksen for tilstands
 
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Lagre regnskapssvar i regnskapstransaksjon
 
-Når bilagsregistrering av en transaksjon eller hendelse er vellykket, opprettes en regnskapstransaksjon i kanaldatabasen og kobles til den opprinnelige transaksjonen eller hendelsen. På samme måte, hvis alternativet **Hopp over** eller **Merk som registrert** er valgt for en mislykket bilagsregistrering, lagres denne informasjonen i en regnskapstransaksjon. En regnskapstransaksjon inneholder regnskapssvaret for regnskapsenheten eller -tjenesten. Hvis bilagsregistreringsprosessen består av flere trinn, opprettes en regnskapstransaksjon for hvert trinn i prosessen som resulterte i en vellykket eller mislykket registrering.
+Når bilagsregistrering av en transaksjon eller hendelse er vellykket, opprettes en regnskapstransaksjon i kanaldatabasen og kobles til den opprinnelige transaksjonen eller hendelsen. På samme måte, hvis alternativet **Hopp over**, **Merk som registrert** eller **Utsett** er valgt for en mislykket bilagsregistrering, lagres denne informasjonen i en regnskapstransaksjon. En regnskapstransaksjon inneholder regnskapssvaret for regnskapsenheten eller -tjenesten. Hvis bilagsregistreringsprosessen består av flere trinn, opprettes en regnskapstransaksjon for hvert trinn i prosessen som resulterte i en vellykket eller mislykket registrering.
 
 Regnskapstransaksjoner overføres til hovedkontoret av *P-jobb* sammen med transaksjoner. I hurtigfanen **Regnskapstransaksjoner** på siden **Butikktransaksjoner** kan du vise regnskapstransaksjonene som er koblet til transaksjoner.
 

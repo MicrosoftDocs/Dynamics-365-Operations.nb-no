@@ -2,19 +2,19 @@
 title: Eksempel på integrering med kontrollenheter for Sverige
 description: Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Sverige i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: 3376e6a901b692371a44b5c74c1e6b4afd0cd573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 966ba3fab780991736f0c84d7eb68356c28a4022
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9275073"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631269"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Eksempel på integrering med kontrollenheter for Sverige
 
@@ -42,7 +42,7 @@ Eksemplet på kontrollenhetsintegrering for Sverige inneholder følgende funksjo
 - Flere alternativer for feilhåndtering er tilgjengelige. Her er noen eksempler:
 
     - Avgiftsregistrering for nye forsøk hvis det er mulig å gjøre et nytt forsøk. Du kan for eksempel gjøre et nytt forsøk på regnskapsregistrering hvis kontrollenheten ikke er koblet til, ikke er klar eller ikke svarer.
-    - Utsett regnskapsregistrering.
+    - Utsett bilagsregistrering.
     - Hopp over regnskapsregistrering eller merk transaksjonen som registrert, og inkluder informasjonskoder for å registrere årsaken til feilen og tilleggsinformasjon.
     - Bekreft tilgjengeligheten av kontrollenheten før en ny salgstransaksjon åpnes eller en salgstransaksjon fullføres.
 
@@ -103,7 +103,7 @@ Fullfør fremgangsmåten for oppsett av regnskapsintegrering slik det beskrives 
 
 1. [Definer en regnskapsregistreringsprosess](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Noter deg også innstillingene for regnskapsregistreringsprosessen som er [spesifikke for dette eksemplet med integrering av kontrollenheten](#set-up-the-registration-process).
 1. [Angi innstillinger for feilbehandling](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Aktiver manuell kjøring av utsatt bilagsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktiver manuell kjøring av utsatt bilagsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Konfigurere kanalkomponenter](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>Definere registreringsprosessen

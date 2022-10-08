@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: hangwan
 ms.search.validFrom: 03/23/2022
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 2bb381939ebe32cb51caf730cdd441557d83a4c0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 38ef8c51d52de6b8f748330d0697e860d75233bf
+ms.sourcegitcommit: 43cf54d057eccd07a71bb48e2fcf858d043a9669
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887793"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "9620905"
 ---
 # <a name="enable-debug-mode-in-the-tax-calculation-service"></a>Aktiver feilsøkingsmodus i avgiftsberegningstjenesten
 
@@ -27,7 +27,7 @@ ms.locfileid: "8887793"
 Denne artikkelen beskriver hvordan du aktiverer feilsøkingsmodusen i avgiftsberegningstjenesten for å undersøke problemer.
 
 1. Legg til **&debug=vs%2CconfirmExit&** i nettadressen til Application Object Server (AOS), og oppdater siden.
-2. Når du velger **Merverdiavgift** for å beregne merverdiavgift, åpnes det en tekstfil med navnet **TaxServiceTroubleshootingLog.txt**. Filen **TaxServiceTroubleshootingLog.txt** inneholder **TaxableDocument** og beregningsparameteren. Disse resultatene returneres fra avgiftstjenesten og unntaksinformasjon for feilsøking.
+2. Når du velger **Merverdiavgift** for å beregne merverdiavgiften, registreres det en tekstfil med navnet **TaxServiceTroubleshootingLog.txt** på serveren under **C:\AXWeb_SMBShare\temporary-fil\\{%session%}\\**. Filen **TaxServiceTroubleshootingLog.txt** inneholder **TaxableDocument** og beregningsparameteren. Disse resultatene returneres fra avgiftstjenesten og unntaksinformasjon for feilsøking.
 
 ## <a name="sample"></a>Eksempel
 

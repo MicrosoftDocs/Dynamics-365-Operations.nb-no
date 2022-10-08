@@ -2,7 +2,7 @@
 title: Hva er nytt eller endret i Dynamics 365 Commerce 10.0.29 (oktober 2022)
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Commerce 10.0.29.
 author: josaw1
-ms.date: 08/17/2022
+ms.date: 09/29/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 6e457864f51159f46f45e9b8969863c9d34c5786
-ms.sourcegitcommit: 56677afde87a9176f879482a7af223e251801d5d
+ms.openlocfilehash: 0629228516d688abf4dcd4280d1ad676f8f35331
+ms.sourcegitcommit: ce4e56d798281258479432ad821287a1cc8e26bf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "9475910"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9601578"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-commerce-10029-october-2022"></a>Nyheter eller endringer i Dynamics 365 Commerce 10.0.29 (oktober 2022)
 
@@ -39,6 +39,7 @@ Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være o
 | E-handel | Støtte for produktsammenligning i netthandel | Gjør det mulig for kunder å sammenligne produkter i en rekke kategorier slik at de kan ta riktige kjøpsbeslutninger for seg selv. Denne funksjonen er tilgjengelig for både bedrift-til-kunde-områder (B2C) og B2B-områder. | Områdebygger | 
 | Gavekort | Støtte for handelsgavekorttabeller for deling av data på tvers av firmaer | Dynamics headquarters støtter muligheten til å aktivere datadeling på tvers av firmaer for bestemte tabeller i Dynamics-arkitekturen. I denne funksjonen legger Dynamics 365 Commerce til støtte for deling av data på tvers av firmaer for handelsgavekorttabeller. Derfor kan et gavekort i ett firma nå duplisere dataene til et annet firma i miljøet. Endringer som gjøres i den opprinnelige firmagavekorttabellen, vil bli delt til den dupliserte firmagavekorttabellen. | Utviklere |
 | Globalisering | [Aktiver Commerce-lokaliseringsfunksjoner for nye Commerce SDK](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-commerce-localization-features-new-commerce-sdk) | Den nye funksjonen gir muligheten til å aktivere funksjoner for Commerce-lokalisering fra Commerce headquarters ved hjelp av rammeverket eller parameterne for funksjonsadministrasjon. Regnskapsintegreringseksempler er nå inkludert i den nye Commerce SDK, og støtter uavhengig pakking. Denne funksjonen gjør det også mulig å bruke Store Commerce-appen av globale Commerce-kunder.<p><p>Denne versjonen omfatter Commerce-lokaliseringsfunksjoner og regnskapsintegreringseksempler for [Østerrike](../localizations/emea-aut-fi-sample.md), [Tsjekkia](../localizations/emea-cze-fi-sample.md), [Frankrike](../localizations/emea-fra-cash-registers.md), [Tyskland](../localizations/emea-deu-fi-sample.md), [Italia](../localizations/emea-ita-fpi-sample.md), [Norge](../localizations/emea-nor-cash-registers.md) og [Polen](../localizations/emea-pol-fpi-sample.md). | Aktivert av administratorer/utviklere |
+| Frakoblet | [Frakoblet databasekomprimering for slagssted](../dev-itpro/implementation-considerations-offline.md#important-offline-features) | Denne nye funksjonen reduserer databasestørrelser offline ved å aktivere automatisert indekskomprimering utenfor [åpningstiden](../dev-itpro/store-hours.md) for kanalen. | Funksjonsbehandling<p>*Frakoblet databasekomprimering for slagssted* |
 | Ytelse | Fjern RTS-avhengighet for scenarioer med rediger kunde | Høy tilgjengelighet og høy ytelse er standardforventninger for salgssteds- og netthandelskanaler. For å oppfylle disse forventningene trenger ikke Dynamics 365 Commerce-kanaler lenger å være avhengig av kommunikasjon i sanntid med Commerce headquarters når kundeinformasjonen redigeres. Muligheten til å redigere kundeinformasjon asynkron for asynkrone og ikke-asynkrone kunder kan bidra til å redusere samtaler i sanntid til Commerce headquarters. | Aktivert av administratorer/utviklere |
 
 ## <a name="feature-state-changes-in-this-release"></a>Endringer av funksjonstilstand i denne versjonen

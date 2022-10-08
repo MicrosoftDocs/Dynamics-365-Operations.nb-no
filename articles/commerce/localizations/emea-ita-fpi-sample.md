@@ -2,19 +2,19 @@
 title: Eksempel på integrering av bilagsskriver for Italia
 description: Denne artikkelen gir en oversikt over eksemplet på regnskapsintegrering for Italia i Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-11-01
-ms.openlocfilehash: dff555a58c31b4e3daedd56b617dd44c4a87e601
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 6ad97e87e4114a8f2250d0ba4880b7a466b3689e
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336744"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631403"
 ---
 # <a name="fiscal-printer-integration-sample-for-italy"></a>Eksempel på integrering av bilagsskriver for Italia
 
@@ -67,7 +67,7 @@ Følgende scenarioer dekkes av eksemplet på integrering av bilagsskriver for It
 - Feilhåndtering, for eksempel følgende alternativer:
 
     - Prøv regnskapsregistrering på nytt hvis det er mulig, for eksempel hvis den ikke er koblet til en bilagsskriver, den ikke er klar eller ikke svarer, skriveren er tom for papir eller det er papirstopp.
-    - Utsett regnskapsregistrering.
+    - Utsett bilagsregistrering.
     - Hopp over regnskapsregistrering eller merk transaksjonen som registrert, og inkluder informasjonskoder for å registrere årsaken til feilen og tilleggsinformasjon.
     - Kontroller tilgjengeligheten av bilagsskriveren før en ny salgstransaksjon åpnes eller en salgstransaksjon fullføres.
 
@@ -111,7 +111,7 @@ Fullfør fremgangsmåten for oppsett av regnskapsintegrering slik det beskrives 
 1. [Konfigurere bilagstekster for rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
 1. [Angi innstillinger for feilbehandling](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Konfigurer X-/Z-regnskapsrapporter fra salgsstedet](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Aktiver manuell kjøring av utsatt bilagsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Aktiver manuell kjøring av utsatt bilagsregistrering](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Definer funksjonaliteten for administrasjon av kundeinformasjon i salgssted](emea-ita-customer-information.md#setup).
 1. [Konfigurere kanalkomponenter](#configure-channel-components).
 

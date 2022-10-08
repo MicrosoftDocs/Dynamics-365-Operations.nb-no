@@ -2,19 +2,19 @@
 title: Definere økonomisk integrering for handelskanaler
 description: Denne artikkelen gir retningslinjer for hvordan du konfigurerer regnskapsintegreringsfunksjonaliteten for handelskanaler.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 9fd801395f2ba04c703734a1de7998d6a53b6462
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 28097341c7b39660b834eb81786c3f56045e1496
+ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276139"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "9631430"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Definere økonomisk integrering for handelskanaler
 
@@ -30,9 +30,10 @@ Følg denne fremgangsmåten for å aktivere funksjoner som er knyttet til funksj
 1. Finn og aktiver følgende funksjoner:
 
     - **Direkte regnskapsintegrering fra salgsstedskasser** – Denne funksjonen utvider rammeverket for regnskapsintegrering ved å legge til funksjoner for å opprette regnskapskontakter som skal kjøres i salgsstedet. Denne typen kobling kommuniserer med en regnskapsenhet eller tjeneste som gir en HTTP-API (Application Programming Interface) og krever ikke en egen fysisk maskin i butikken. Denne funksjonaliteten gjør det for eksempel mulig å integrere mobilenheter uten at det kreves felles maskinvarefeil.
-    - **Teknisk profiloverstyringer for regnskapsintegrering** – Denne funksjonen gjør at konfigurasjon av regnskapsintegrering kan utvides, og legger til funksjoner for kontroll av tilkoblingsparametere på innstillingssiden til en salgsstedskasse. Når denne funksjonen er aktivert, kan du overstyre parameterne for en teknisk profil.
+    - **Teknisk profiloverstyringer for regnskapsintegrering** – Denne funksjonen gjør at konfigurasjon av regnskapsintegrering kan utvides, og legger til funksjoner for overstyring av parametere for en teknisk profil. Det er for eksempel mulig å angi tilkoblingsstrenger for regnskapsenheter på det individuelle salgsstedskassenivået. Funksjonen gir også muligheten til å sjekke tilkoblingsparametere på **Innstillinger**-siden for en kasse på salgssted. 
     - **Regnskapsregistreringsstatus for salgsstedskasser** – Når denne funksjonen er aktivert, kan du deaktivere regnskapsregistreringsprosessen for bestemte salgsstedskasser. Hvis regnskapsregistrering er deaktivert for en salgsstedskasse, kan ikke salgstransaksjoner fullføres på den kassen.
-    - **Sikkerhetskopiering av lokal regnskapsintegrering** – Denne funksjonen utvider funksjonene for feilhåndtering i regnskapsintegreringsrammeverket. Det aktiverer også automatisk sikkerhetskopi av regnskapsregistreringsdata ved tap av data slik at dataene i lokal lagring gjenopprettes mens en enhet aktiveres.
+    - **Sikkerhetskopi av lokalt lager for regnskapsintegrering** – Denne funksjonen utvider feilbehandlingsfunksjonene i rammeverket for regnskapsintegrering ved å aktivere automatisk sikkerhetskopiering av bilagsregistreringsdata, slik at dataene i det lokale lageret kan gjenopprettes når en enhet aktiveres.
+    - **Utsatt registrering av dokumenter** - Denne funksjonen utvider funksjoner for feilhåndtering av regnskapsintegreringsrammeverket ved å aktivere alternativet for å utsette regnskapsregistreringen i tilfelle en regnskapsregistreringsfeil, og bruke et backup regnskapsregistreringsalternativ eller fullføre regnskapsregistreringen senere ved hjelp av andre metoder enn regnskapsintegreringsrammeverket.
 
 ## <a name="set-up-commerce-parameters"></a>Konfigurer handelsparametere
 
@@ -286,7 +287,7 @@ For å aktivere X-/Z-regnskapsrapporter fra salgsstedet bør du legge til nye kn
     1. Legg til en ny knapp, og angi **Skriv ut regnskapsår Z**-knappeegenskapen.
     1. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringer til kanaldatabasen.
 
-## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktivere manuell kjøring av utsatt bilagsregistrering
+## <a name="enable-manual-execution-of-deferred-fiscal-registration"></a>Aktivere manuell kjøring av utsatt bilagsregistrering
 
 For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge til en ny knapp i et POS-oppsett.
 
@@ -295,7 +296,6 @@ For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge 
     1. Velg oppsettet som skal oppdateres.
     1. Legg til en ny knapp, og angi **Fullfør bilagsregistreringsprosess**-knappeegenskapen.
     1. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringene dine til kanaldatabasen.
-
 
 ## <a name="view-connection-parameters-and-other-information-in-pos"></a>Vis tilkoblingsparametere og annen informasjon i salgssted
 

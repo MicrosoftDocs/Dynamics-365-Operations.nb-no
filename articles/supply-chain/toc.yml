@@ -1745,22 +1745,12 @@
               href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
             - name: Produktkvalitetsscenarioet
               href: sensor-data-intelligence/sdi-scenario-product-quality.md
-            - name: Produksjonsforsinkelsesscenarioet
+            - name: Scenarioet for produksjonsforsinkelser
               href: sensor-data-intelligence/sdi-scenario-production-delays.md
         - name: IoT-intelligens
           items:
-            - name: Startside for IoT-intelligens
+            - name: IoT-intelligens erstattes nå av Sensor Data Intelligence
               href: iot/iot-intelligence-home-page.md
-            - name: Konfigurer Azure-ressurser
-              href: iot/iot-azure-setup.md
-            - name: Meldingsskjemaformater for IoT-hub
-              href: iot/iot-schema-format.md
-            - name: Definer metrikk
-              href: iot/iot-metrics-setup.md
-            - name: Scenariooppsett
-              href: iot/iot-scenario-setup.md
-            - name: Overvåk og behandle
-              href: iot/iot-management.md
         - name: Hovedplanlegging
           items:
             - name: Startside for hovedplanlegging

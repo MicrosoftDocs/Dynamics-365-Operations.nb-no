@@ -1,8 +1,8 @@
 ---
-title: Startside for IoT-intelligens
-description: Denne artikkelen inneholder koblinger til informasjon om IoT-intelligens.
+title: IoT-intelligens erstattes nå av Sensor Data Intelligence
+description: Denne artikkelen forklarer at IoT-intelligens nå er erstattet av Sensor Data Intelligence
 author: johanhoffmann
-ms.date: 08/04/2022
+ms.date: 09/30/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,60 +13,21 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d8b2be25abaeff7404d7f4ef3cd825a50147fef
-ms.sourcegitcommit: e0905a3af85d8cdc24a22e0c041cb3a391c036cb
+ms.openlocfilehash: a754fc44fa780a4645b9ad457f5a1e3f0bdd6365
+ms.sourcegitcommit: 073604c07116e0a87f78ab2c76cb89ae83ebba3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/06/2022
-ms.locfileid: "9228365"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9608068"
 ---
-# <a name="iot-intelligence-home-page"></a>Startside for IoT-intelligens
+# <a name="iot-intelligence-now-replaced-by-sensor-data-intelligence"></a>IoT-intelligens erstattes nå av Sensor Data Intelligence
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
-> [!IMPORTANT]
-> Denne funksjonen er for øyeblikket bare tilgjengelig i følgende land/områder:
->
-> - USA
-> - EU (Den europeiske union)
-> - AU (Australia)
-> - CA (Canada)
-> - UK (Storbritannia)
+Funksjonen for IoT-intelligens er oppdatert til versjon 2.0 og får samtidig det nye navnet *Sensor Data Intelligence*. Den nye versjonen er for øyeblikket tilgjengelig som en forhåndsversjonsfunksjon i Supply Chain Management, versjon 10.0.30 eller nyere.
 
-IoT-intelligens er et tillegg for Microsoft Dynamics 365 Supply Chain Management. Den integrerer IoT-signaler med data i Supply Chain Management for å gi praktisk innsikt.
+Sensor Data Intelligence innfører en ny distribusjonsmodell der nødvendige Azure-komponenter distribueres på ditt eget Azure-abonnement i stedet for at det administreres av Microsoft. Denne nye modellen forbedrer muligheten til å tilpasse funksjonen og til å integrere den med tredjepartssystemer. Den nye versjonen innfører også støtte for to nye IoT-scenarioer (Tingenes Internett) for ressursbehandling.
 
-IoT Intelligenc støtter følgende scenarier:
-
-- **Produksjonsforsinkelser** – Dette scenariet sammenligner faktisk syklustid med planlagt syklustid. Supply Chain Management varsler deg når produksjon ikke er planlagt, slik at du kan gripe inn for å maksimere driftseffektivitet og unngå forsinkelser i ordren.
-- **Nedtid på utstyr** – Dette scenariet sammenligner målt oppetid med brukerdefinerte parametere. Supply Chain Management varsler deg når en avbruddsterskel blir overskredet, slik at du kan utføre handlinger, for eksempel planlegge en produksjonsordre på nytt eller opprette en vedlikeholdsarbeidsordre.
-- **Produktkvalitet** – Dette scenariet sammenligner sensoravlesninger, for eksempel fuktighet og temperatur, med brukerdefinerte kvalitetsmetrikk. Supply Chain Management varsler deg når det oppstår et avvik, slik at du kan gripe inn for å vedlikeholde kvalitetsstandarder og redusere avfall.
-
-Illustrasjonen nedenfor viser interaksjonen mellom Azure IoT Hub, IoT-intelligence og Supply Chain Management.
-
-![IoT Hub, IoT-intelligens og Supply Chain Management.](media/iot_intelligence.png)
-
-<!-- KFM: hide setup info for now
-
-## Setup
-
-You can set up and configure IoT Intelligence without writing any code. Here are the basic steps.
-
-1. [Set up Azure resources](iot-azure-setup.md) – Create an IoT hub, a Redis cache, and a key vault that can be accessed from Supply Chain Management.
-2. [Message schema formats for IoT Hub](iot-schema-format.md) – Configure your devices to send messages to IoT Hub, and define the JavaScript Object Notation (JSON) message format.
-3. In Feature Management, enable the IoT Intelligence feature flag. 
-4. [Install the IoT Intelligence add-in in Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md) – Install the add-in in LCS, and configure the Azure secrets.
-5. [Set up metrics](iot-metrics-setup.md) – Set up metrics in Supply Chain Management.
-6. [Scenario setup](iot-scenario-setup.md) – Set up the scenarios in Supply Chain Management.
-
--->
-
-## <a name="tracking-and-maintenance"></a>Sporing og vedlikehold
-
-- [Overvåkingsscenarioer i Dynamics 365 Supply Chain Management](iot-management.md#monitor-scenarios)
-- [Deaktivere et scenario](iot-scenario-setup.md#disable-a-scenario)
-- [Endre et kjørende scenario for IoT-intelligens](iot-management.md#modify-a-running-iot-intelligence-scenario)
-- [Simuleringsalternativer](iot-management.md#simulation-options)
-
+På grunn av disse endringene anbefaler ikke Microsoft å starte nye prosjekter basert på den eksisterende funksjonen for IoT-intelligens. Hvis du er interessert i å legge til IoT-funksjoner i systemet, anbefaler vi at du kommer i gang med å arbeide med forhåndsversjonen av Sensor Data Intelligence i stedet. Hvis du vil ha mer informasjon om Sensor Data Intelligence og hvordan du arbeider med den, kan du gå til [startsiden for Sensor Data Intelligence](../sensor-data-intelligence/sdi-home-page.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
