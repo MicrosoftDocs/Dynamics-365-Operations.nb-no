@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: cb60253f3cbb8c991ef2e106abdb1c685bf22171
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 64d6e21c2d8c588a64f0f4cf8b7a0bafc853bcab
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903341"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644010"
 ---
 # <a name="recurring-contract-billing-parameters"></a>Faktureringsparametere for regelmessig kontrakt
 
@@ -46,7 +46,8 @@ Bruk siden **Parametere for regelmessig kontraktfakturering** til å definere st
 8. Velg standard fakturatransaksjonstype for nye fakturaplaner i feltet **Fakturatransaksjonstype**.
 9. Angi alternativet **Juster utsettelse til fakturering** til **Ja** for å samkjøre den tilsvarende utsatte planen, slik at den bruker de samme datoene som faktureringsplanen. Sett den til **Nei** for å bruke ulike datoer.
 10. Hvis du bruker funksjonen for omsetningsdeling, setter du alternativet **Opprett inntektsdeling automatisk** til **Ja** når varer legges til i en faktureringsplan. Avmerkingsboksen **Inntektsdeling** blir automatisk merket av på faktureringsplanlinjen hvis varen er definert som en inntektsdelingsvare. Sett alternativet til **Nei** hvis du vil merke av for **Inntektsdeling** manuelt.
-11. Angi feltene for oppretting av salgsordrer:
+11. Sett alternativet **Kundedeling** til **Ja** for å tillate at en faktureringsplan faktureres ulike kunder. Når alternativet er satt til **Ja**, er alternativet **Kundedeling** tilgjengelig på fakturaplanhodet og fakturaplanlinjen. 
+12. Angi feltene for oppretting av salgsordrer:
 
     - Fakturaer kan konsolideres etter periode, kunde eller vare. En hvilken som helst kombinasjon av **Ja**- og **Nei**-verdier kan angis. Fakturaer kan også deles etter varegruppe.
     - Følgende posteringsalternativer er tilgjengelige for fakturaer:
@@ -92,6 +93,9 @@ Bruk siden **Parametere for regelmessig kontraktfakturering** til å definere st
     - **Utsted kreditt** – Opprett en kreditnota når en faktureringsplan eller faktureringsplanlinje avsluttes.
     - **Kredittjustering** – Opprett en kredittjustering for en faktureringsplan når en linje avsluttes. Kredittjusteringen vises i en fremtidig faktureringsperiode for faktureringsplanen. Kreditjusteringen oppdaterer fakturabeløpet for den neste faktureringsperioden til kreditten er ferdig brukt på faktureringsplanen.
     - **Ingen kreditt** – Ikke opprett en kreditnota når en faktureringsplan eller faktureringsplanlinje avsluttes. Dette alternativet er bare tilgjengelig når alternativet **Ingen justering** brukes til å avslutte en faktureringsplan.
+18. Når alternativet **Én gang kan avslutte med refundering** er satt til **Nei** og en fakturaplan med faktureringsfrekvensen **Én gang**, endres statusen til fakturaplanlinjen til **Avsluttet** når fakturaplanen er fakturert. Denne faktureringsplanen kan ikke avsluttes, og ingen kreditt kan utstedes. Når **Én gang kan avslutte med refundering** er satt til **Ja**, får fakturaplanlinjen med faktureringsfrekvensen **Én gang** statusen **Aktiv** etter at fakturaplanen er fakturert. Fakturaplanlinjen kan avsluttes og en refundering behandles. 
+19. Alternativet **Fordeling daglig** satt i parametere vil som standard brukes til massebehandling av avslutning og avslutningsdialogboksene for faktureringsplanhode og -linje. Det kan endres under avslutningsprosessen. Når det er satt til **Ja**, beregnes et hvilket som helst refunderingsbeløp ved hjelp av en daglig sats. Når det er satt til **Nei**, krediteres den basert på avslutningsdatoen og faktureringsfrekvensen. Hvis du for eksempel bruker månedlig frekvens og fakturabeløpet var $ 100 per måned, øker kreditbeløpet i trinn på $ 100. Hvis faktureringsfrekvensen er Én gang, er kreditbeløpet er $ 0,00. Du må ha Fordeling daglig satt til Ja for å få refundert engangsfaktureringsfrekvens. 
+20. Angi **Opprett utsatt for kredit**-alternativ til **Ja** for å opprette en ny utsettelsesplan hvis du krediterer en eksisterende utsettelsesplan. La alternativet være satt til **Nei** for å opprette kreditten på den eksisterende utsettelsesplanen.
 
 ## <a name="sequence-number-tab"></a>Fanen Serienummer
 

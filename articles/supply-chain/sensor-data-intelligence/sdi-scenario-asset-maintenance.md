@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: ff3944b987314a688a5829b05f8627479e3e79ed
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: fcd16d09b4293046c457b602857ef8950e8259c6
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428409"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644064"
 ---
 # <a name="the-asset-maintenance-scenario"></a>Scenario for vedlikehold av ressurser
 
@@ -24,6 +24,12 @@ ms.locfileid: "9428409"
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Ved hjelp av scenarioet for *vedlikehold av ressurser* kan du bruke sensordata til å opprette tellerposter. Tellerposter sporer bruken av en maskinressurs og brukes som inndata til å generere vedlikeholdsplanen for maskinressurser.
+
+## <a name="video-instructions"></a>Videoinstruksjoner
+
+Følgende video viser hvordan du konfigurerer og prøver ut vedlikeholdsscenarioet for anleggsmidler ved hjelp av standard [demodata](../../fin-ops-core/fin-ops/get-started/demo-data.md). Resten av delene i denne artikkelen inneholder de samme instruksjonene i et tekstbasert format.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58aRW]
 
 ## <a name="prepare-demo-data-for-the-asset-maintenance-scenario"></a>Klargjøre demodata for scenarioet for vedlikehold av ressurser
 

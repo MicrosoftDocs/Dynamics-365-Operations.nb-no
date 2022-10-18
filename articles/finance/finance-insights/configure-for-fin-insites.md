@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05bf5fe5a5ff86bbf52ed58ee6b1e84c15bf2c1e
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 07edea234839a477802e5cd875620509c8f92d69
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573201"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644121"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurasjon for Finance Insights
 
@@ -106,8 +106,4 @@ Når tillegget er installert, kan det ta opptil en time før du kan aktivere Fin
 > [!NOTE]
 > Hvis prosessen **Statuskontroll for klargjøring av innsikt** ikke kjører, går du til **Systemadministrasjon** > **Forespørsler** > **Satsvise jobber**. I feltet **Avspørringssystem for prosessautomatisering** endrer du verdien til **Venter** for å starte prosessen. 
 > 
-## <a name="feedback-and-support"></a>Tilbakemelding og støtte
-
-Hvis du er interessert i å gi tilbakemelding eller trenger kundestøtte, kan du sende en e-postmelding til [Finance Insights (forhåndsversjon)](mailto:fiap@microsoft.com).
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

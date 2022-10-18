@@ -1,8 +1,8 @@
 ---
 title: Finansrapporter for balanse
 description: Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også byggeblokker som er knyttet til disse rapportene.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: twheeloc
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
-ms.author: jcart
+ms.author: jiwo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64e23574f470efe1cb737236ff0b0ef37dae5064
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4aad297f401143388d682da175a6b14727a8f2f0
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8880737"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643830"
 ---
 # <a name="balance-sheet-financial-reports"></a>Finansrapporter for balanse
 
@@ -33,9 +33,9 @@ Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også 
 Det finnes to standardrapporter for balanse. På en av rapportene er delene er stablet. På den andre rapporten er delene ved siden av hverandre.
 
 | Standardrapport                       | Resultat                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------|
-| Balanse – Standard              | Gir en oversikt over organisasjonens finansiell stilling for året.                                                                 |
-| Side ved side Balanse – Standard | Gir en oversikt over organisasjonens finansiell stilling for året. Aktiva og gjeld og egenkapital for aksjeeiere er ved siden av hverandre. |
+|--------------------------------------|--------------------------------------------------------------------------------------|
+| Balanse – Standard              | Gir en oversikt over organisasjonens finansiell stilling for året.                    |
+| Balanse og resultatregnskap side ved side – Standard | Gir en oversikt over organisasjonens finansiell stilling for året side ved side. |
 
 ## <a name="building-blocks"></a>Byggeblokker
 Finansrapportene for balansen bruker byggeblokkene nedenfor.
@@ -43,7 +43,7 @@ Finansrapportene for balansen bruker byggeblokkene nedenfor.
 | Standardrapport                       | Raddefinisjon                       | Kolonnedefinisjon             |
 |--------------------------------------|--------------------------------------|-------------------------------|
 | Balanse – Standard              | Balanse – Standard              | Hittil i år og avvik – Standard    |
-| Side ved side Balanse – Standard | Side ved side Balanse – Standard | Hittil i år-kolonne – Standard |
+| Balanse og resultatregnskap side ved side – Standard | Balanse og resultatregnskap side ved side – Standard | Hittil i år-kolonne – Standard |
 
 ### <a name="row-definition"></a>Raddefinisjon
 

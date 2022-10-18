@@ -2,7 +2,7 @@
 title: Ufakturert inntekt
 description: Denne artikkelen forklarer hvordan du definerer varer og kontoer for å bruke funksjonen for ufakturert inntekt i Abonnementsfakturering.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: b3fe58fc06df3f61433c8457b337ae895283e12b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: adf6f06ee454f368fa194315a87cfdec9e5e13da
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8879689"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644175"
 ---
 # <a name="unbilled-revenue"></a>Ufakturert inntekt
 
@@ -123,15 +123,15 @@ Distribusjonene beregnes på nytt basert på tildelingstypen som er valgt (**Pro
 
 En faktureringsplan angis for tre år, og fakturaene faktureres årlig over en treårsperiode. Hele kontraktbeløpet registreres i kontoen for ufakturert inntekt som årlige fakturaer opprettes fra. Motkontoen er inntektskonto eller konto for utsatt inntekt.
 
-Legg merke til at toppfakturering og ufakturert inntekt ikke fungerer sammen fordi avstemmingsproblemer kan forekomme i økonomimodulen. På siden **Varegruppeoppsett** er for eksempel varegruppe A satt opp slik at feltet **Antall topplinjer** er satt til **2**. Tre elementer er lagt til på siden **Faktureringsplan**. Alle tre varer tilhører varegruppe A. Når den innledende journaloppføringen blir opprettet for funksjonen for ufakturert inntekt, behandles beløpet for alle tre varer til den ufakturerte kontoen. Når fakturaen for faktureringsplanen opprettes, tas bare beløpene for de to øverste varene med. Derfor stemmer ikke fakturabeløpet med beløpet som ble behandlet med kontoen for ufakturert inntekt, og avstemmingsproblemer skjer i økonomimodulen.
+Toppfakturering og ufakturert inntekt fungerer ikke sammen fordi avstemmingsproblemer kan forekomme i økonomimodulen. På siden **Varegruppeoppsett** er for eksempel varegruppe A satt opp slik at feltet **Antall topplinjer** er satt til **2**. Tre elementer er lagt til på siden **Faktureringsplan**. Alle tre varer tilhører varegruppe A. Når den innledende journaloppføringen blir opprettet for funksjonen for ufakturert inntekt, behandles beløpet for alle tre varer til den ufakturerte kontoen. Når fakturaen for faktureringsplanen opprettes, tas bare beløpene for de to øverste varene med. Derfor stemmer ikke fakturabeløpet med beløpet som ble behandlet med kontoen for ufakturert inntekt, og avstemmingsproblemer skjer i økonomimodulen.
 
 Hvis du vil bruke ufakturert inntekt, lar du siden **Varegruppeoppsett** være tom,eller definere alle varegrupper slik at feltet **Antall topplinjer** settes til **0** (null). Hvis du vil bruke toppfakturering, er ingen handlinger for ufakturert inntekt tilgjengelige.
 
 ### <a name="examples"></a>Eksempler
 
-Per versjon 10.0.27 introduseres en ny konto når ufakturert inntekt brukes. Når den innledende prosessen **Opprett journaloppføring** posteres, blir krediten utført til en ny motkonto for ufakturert inntekt. Denne kontoen brukes i stedet for inntektskontoen, fordi den samme verdien må tilbakeføres når faktureringsplanen faktureres. Hvis det forekommer valutakurser eller avrundingsdifferanser, kan beløpene som beregnes under prosessen **Generer faktura**, være forskjellige. Denne virkemåten sikrer at nettobeløpet for kontoene er 0 (null).
+Per versjon 10.0.29 blir det lagt til en ny parameter i faktureringsparametere for regelmessig kontrakt. Når den er satt til Ja, aktiverer parameteren **Bruk ufakturerte motkontoer** to nye kontoer i **Oppsett for ufakturert inntekt**. Motkontoene Oppsett for ufakturert inntekt og Motkonto for ufakturert rabatt blir tilgjengelige og brukes når fakturaplaner opprettes i en annen valuta enn regnskapsvalutaen. Bruk av motkontoene sikrer at motkontoene for ufakturert inntekt og ufakturert rabatt blir tilbakeført med de samme valutakursene som sine opprinnelige oppføringer. Den innledende prosessen **Opprett journaloppføring** er den samme med debet til ufakturert inntekt og kredit til inntekt. Hvis du bruker en rabatt, er den opprinnelige journaloppføringen den samme med en debet til Rabatt og kredit til ufakturert rabatt. 
 
-Dette eksemplet viser hvordan du bruker ufakturert inntekt til å føre hele beløpet i en kontrakt i balansen som ufakturert inntekt. Den andre siden av oppføringen er motkontoen for ufakturert inntekt. Når du fakturerer kunden, tilbakeføres både ufakturert inntekt og motkonto for ufakturert inntekt. Inntektsfæring skjer enten ved fakturering eller i henhold til den utsatte føringsplanen som ble definert.
+Dette eksemplet viser hvordan du bruker ufakturert inntekt til å føre hele beløpet i en kontrakt i balansen som ufakturert inntekt. Den andre siden av oppføringen er inntekten eller utsatt inntekt. Når du fakturerer kunden, tilbakeføres ufakturert inntekt. Inntektsfæring skjer enten ved fakturering eller i henhold til den utsatte føringsplanen som ble definert.
 
 #### <a name="assumptions"></a>Antagelser
 
@@ -151,47 +151,38 @@ Dette eksemplet viser hvordan du bruker ufakturert inntekt til å føre hele bel
 
     | Vare | Startdato | Sluttdato | Beløp | Faktureringshyppighet | Utsettelsesvare | Ufakturert inntekt | Beskrivelse |
     |---|---|---|---|---|---|---|---|
-    | Lisens | 1. januar, CY | 31. desember CY + 2 | $ 100,00 | Årlig | Nei | Ja | Kunden blir fakturert $ 100,00 hvert år. Totalen på $ 300,00 blir registrert på forhånd som ufakturert inntekt på balansen og som inntekt på resultat. Hver faktura vil redusere det ufakturerte beløpet. |
-    | Vedlikehold | 1. januar, CY | 31. desember CY + 2 | $ 30,00 | Årlig | Ja | Ja | Kunden blir fakturert $ 30,00 hvert år. Totalen på $ 90,00 blir registrert på forhånd som ufakturert inntekt og utsatt inntekt på balansen. Hver faktura vil redusere det ufakturerte beløpet. Utsatt inntekt blir gjenkjent månedlig i løpet av 36 måneder. |
+    | Lisens | 01. januar 2022 | 31. desember 2024 | $ 100,00 | Årlig | Nei | Ja | Kunden blir fakturert $ 100,00 hvert år. Totalen på $ 300,00 blir registrert på forhånd som ufakturert inntekt på balansen og som inntekt på resultat. Hver faktura vil redusere det ufakturerte beløpet. |
+    | Vedlikehold | 01. januar 2022 | 31. desember 2024 | $ 30,00 | Årlig | Ja | Ja | Kunden blir fakturert $ 30,00 hvert år. Totalen på $ 90,00 blir registrert på forhånd som ufakturert inntekt og utsatt inntekt på balansen. Hver faktura vil redusere det ufakturerte beløpet. Utsatt inntekt blir gjenkjent månedlig i løpet av 36 måneder. |
 
 6. På siden **Alle faktureringsplaner** bruker du prosessen **Opprett journaloppføring** til å postere kontraktverdien til balansen som ufakturert inntekt.
 
 Det opprettes to journaloppføringer, én for hver linje i faktureringsplanen.
 
-| Konto for ufakturert inntekt | Ikke fakturert inntektsmotkonto | Debetbeløp | Kredittbeløp |
-|---|---|---|---|
-| Konto for ufakturert inntekt | | $ 300,00 | |
-| | Ikke fakturert inntektsmotkonto | | $ 300,00 |
+| Konto | Debetbeløp | Kredittbeløp |
+|---|---|---|
+| Konto for ufakturert inntekt | $ 300,00 | |
+| Inntektskonto | | $ 300,00 |
 
-| Konto for ufakturert inntekt | Utsatt inntekt | Debetbeløp | Kredittbeløp |
-|---|---|---|---|
-| Konto for ufakturert inntekt | | $ 90,00 | |
-| |Utsatt vedlikeholdsinntekt | | $ 90,00 |
+| Konto | Debetbeløp | Kredittbeløp |
+|---|---|---|
+| Konto for ufakturert inntekt | $ 90,00 | |
+| Utsatt inntekt | | $ 90,00 |
 
-Den første journaloppføringen posteres til en motkonto for ufakturert inntekt, og den andre posteres til en utsatt inntektskonto. Hvis faktureringslinjen både har ufakturert inntekt og utsatt inntekt, brukes kontoen for utsatt inntekt, ikke motkonto for ufakturert inntekt. Kontrakten krever at fakturaen for kunden opprettes ved begynnelsen av hvert år. Bruk prosessen **Generer faktura** til å opprette fakturaen. Når fakturaen er opprettet, blir følgende journaloppføringer opprettet:
+Kontrakten krever at fakturaen for kunden opprettes ved begynnelsen av hvert år. Bruk prosessen **Generer faktura** til å opprette fakturaen. Når fakturaen opprettes, posteres følgende fakturabilag.
 
-| Hovedkonto | Konto for ufakturert inntekt | Debetbeløp | Kredittbeløp |
-|---|---|---|---|
-| Ikke fakturert inntektsmotkonto | | $ 100,00 | |
-| | Konto for ufakturert inntekt | | $ 100,00 |
-| Kundereskontro | | $ 100,00 | |
-| | Inntektskonto | | $ 100,00 |
+| Konto| Debetbeløp | Kredittbeløp |
+|---|---|---|
+| Konto for ufakturert inntekt | | $ 130,00 |
+| Kundereskontro | $ 130,00 | |
 
-| Hovedkonto | Konto for ufakturert inntekt | Debetbeløp | Kredittbeløp |
-|---|---|---|---|
-| Konto for utsatt inntekt for vedlikehold | | $ 30,00 | |
-| | Konto for ufakturert inntekt | | $ 30,00 |
-| Kundereskontro | | $ 30,00 | |
-| | Konto for utsatt inntekt for vedlikehold | | $ 30,00 |
+Den samme journaloppføringen blir opprettet med fakturaer som posteres i begynnelsen av de neste to årene. Kontoen for ufakturert inntekt reduseres årlig under prosessen **Generer faktura**. Motkontoen for ufakturert inntekt brukes til å balansere kontoen for ufakturert inntekt når forskjellige valutakurser brukes. 
 
-Den samme journaloppføringen blir opprettet med fakturaer som posteres i begynnelsen av de neste to årene. Nettobeløpet for kontoen for utsatt inntekt vil være 0 (null), fordi det ikke er noen avrundings- eller valutakursdifferanser. Utsatt inntekt må tilbakeføres nøyaktig slik den ble kreditert under prosessen **Opprett journaloppføring**. Fordi inntekt fremdeles er utsatt og blir gjenkjent senere, skjer krediten til kontoen for utsatt inntekt igjen.
+I det siste trinnet opprettes journaloppføringen for føring hver måned for å føre utsatt inntekt fra vedlikeholdsgebyret. Journaloppføringen kan opprettes ved hjelp av siden **Føringsbehandling**. Du kan også opprette den ved å velge **Føre** for linjene på sidene **Utsettelsesplan**.
 
-I det siste trinnet opprettes journaloppføringen for føring hver måned for å føre inntektene til utsatt vedlikeholdsgebyr. Journaloppføringen kan opprettes ved hjelp av siden **Føringsbehandling**. Du kan også opprette den ved å velge **Føre** for linjene på sidene **Utsettelsesplan**.
-
-| Konto for utsatt inntekt | Inntektskonto | Debetbeløp | Kredittbeløp |
-|---|---|---|---|
-| Utsatt vedlikeholdsinntekt | | $ 2,50 | |
-| | Vedlikeholdsinntekt | | $ 2,50 |
+| Hovedkonto | Debetbeløp | Kredittbeløp |
+|---|---|---|
+| Utsatt inntekt | $ 2,50 | |
+| Inntekt | | $ 2,50 |
 
 Denne journaloppføringen opprettes hver gang føringsprosessen kjøres for denne utsatte varen (totalt 36 ganger).
 
@@ -269,18 +260,18 @@ Fordi begge varene bruker ufakturert inntekt og inntektstildeling, er det totale
 
 Følgende tabell viser den innledende journaloppføringen for varene og fakturaen.
 
-| Konto for ufakturert inntekt | Konto for utsatt inntekt | Debetbeløp | Kredittbeløp |
-|---|---|---|---|
-| **Vare 1000-journaloppføring** | | | |
-| Debetkonto for ufakturert inntekt (401250) | | $ 1465,26 | |
-| | Kreditkonto for utsatt inntekt (250600) | | $ 1465,26 |
-| **Vare 0021-journaloppføring** | | | |
-| Debetkonto for ufakturert inntekt (401250) | | $ 274,74 | |
-| | Kreditkonto for utsatt inntekt (250600) | | $ 274,74 |
-| **Faktura** | | | |
-| | Kreditkonto for ufakturert inntekt | | $ 1465,26 |
-| | Kreditkonto for ufakturert inntekt | | $ 274,74 |
-| Debet AR-konto (130100) | | $ 1488,16 | |
+| Hovedkonto | Debetbeløp | Kredittbeløp |
+|---|---|---|
+| **Vare 1000-journaloppføring** | | | 
+| Konto for ufakturert inntekt (401250) | $ 1465,26 | |
+| Konto for utsatt inntekt (250600) | | $ 1465,26 |
+| **Vare 0021-journaloppføring** | | | 
+| Konto for ufakturert inntekt (401250) | $ 274,74 | |
+| Konto for utsatt inntekt (250600) | | $ 274,74 |
+| **Faktura** | | |
+| Konto for ufakturert inntekt | | $ 1465,26 |
+| Konto for ufakturert inntekt | | $ 274,74 |
+| AR-konto (130100) | $ 1488,16 | |
 
 #### <a name="changes-to-the-billing-schedule-line-billing-detail-line-or-revenue-allocation"></a>Endringer i faktureringsplanlinjen, faktureringsdetaljlinjen eller inntektstildeling
 

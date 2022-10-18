@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a03f8fd0fa05a1400c69a2da8867dee135ad06a1
-ms.sourcegitcommit: 7bcaf00a3ae7e7794d55356085e46f65a6109176
+ms.openlocfilehash: dfd06c30ae09a175862810a0c85399358a65fdb0
+ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "9357611"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671465"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -64,6 +64,9 @@ Du kan legge til spesifikke enheter for en import- eller eksportjobb eller velge
 
 ### <a name="set-the-data-format-for-the-job"></a>Sett dataformatet for jobben
 Når du velger et foretak, må du velge formatet for dataene som skal eksporteres eller importeres. Du kan definere formatet ved å bruke **Oppsett for datakilder**-flisen. Et kildedataformat er en kombinasjon av **type**, **filformat**, **radskilletegn** og **kolonneskilletegn**. Det finnes også andre attributter, men dette er de viktigste å forstå. I tabellen nedenfor finner du en oversikt over gyldige kombinasjoner.
+
+> [!NOTE]
+> Excel-filformatet er for øyeblikket ikke tilgjengelig i arbeidsområdet Dataadministrasjon for Government Community Cloud (GCC).
 
 | Filformat            | Rad-/kolonneskilletegn                       | XML-stil                 |
 |------------------------|--------------------------------------------|---------------------------|

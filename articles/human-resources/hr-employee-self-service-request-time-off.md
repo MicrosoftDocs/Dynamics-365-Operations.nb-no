@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7d06c1d40416d2644499723317c0adfd805126b5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: eea8cdfc0cd2cfe8ca4cc94cefbf5772ab24d9a4
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8882902"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643913"
 ---
 # <a name="request-time-off"></a>Be om fritid
 
@@ -63,6 +63,10 @@ Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et v
 2. Hvis du vil vise de godkjente avspaseringsforespørslene, velger du **Godkjent avspasering**. Hvis du vil vise de ventende avspaseringsforespørslene, velger du **Avspaseringsforespørsler**.
 
 ## <a name="cancel-time-off-requests"></a>Avbryt fritidsforespørsler
+
+>[!NOTE] 
+> **Annuller fridager** er tilgjengelig når funksjonen **Forbedringer for opplevelsen med arbeidsflyt for permisjonsforespørsel** er aktivert i arbeidsområdet **Funksjonsbehandling**.  
+
 
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Vis fravær** på flisen **Fravær til gode**.
 

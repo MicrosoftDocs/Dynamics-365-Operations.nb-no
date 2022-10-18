@@ -2,7 +2,7 @@
 title: Konfigurere rettighetsregler og -alternativer
 description: Denne artikkelen beskriver hvordan du angir rettighetsregler og alternativer i Fordelsbehandling i Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 09/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5540a2c39b3f9f53600e5edd5c63c99cec1fb000
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 916a9955327aef67ac768d4505bdb343862058a1
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337023"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9644091"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer 
 
@@ -175,6 +175,7 @@ Bunter er et sett med relaterte fordelsplaner. Du kan bruke fordelsbunter til å
    | **Bunt** | En unik ID for bunten. |
    | **Beskrivelse** | En beskrivelse av bunten. |
    | **Mester** | Angir om en av planene i bunten må være merket som hovedplanen. Hovedplanen må velges under åpen registrering som en del av bunten før fordelsadministratoren kan bekrefte de ansattes fordelsvalg. |
+   | **Obligatorisk**| Angir at planen må velges for å sjekke ut andre planer i bunten. Du kan merke flere planer som **nødvendig**. I så fall må alle planene som er merket som **Nødvendig**, velges for å sjekke ut noen av planene i bunten.|
    | **Gyldig fra-dato og -klokkeslett** | Datoen og klokkeslettet bunten blir aktiv. |
    | **Gyldig til** | Datoen da bunten utløper. Standardverdien er 12/31/2154, som i praksis betyr aldri. |
 

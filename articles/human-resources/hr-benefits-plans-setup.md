@@ -2,7 +2,7 @@
 title: Opprette en fordelsplan
 description: Denne artikkelen viser hvordan du definerer fordelsplaner i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 09/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5c8d4488f1782d80484a8b91f4ae7303fea0e464
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 001318be00efcda1e7ee07513e240059d3c5e135
+ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337034"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9643944"
 ---
 # <a name="create-a-benefit-plan"></a>Opprett en fordelsplan
 
@@ -42,8 +42,9 @@ Denne artikkelen viser hvordan du definerer fordelsplaner i Dynamics 365 Human R
    | **Programmet** | Angir et program du kan tilordne planen i. |
    | **Bunt** | Angir en bunt du kan tilordne planen i. |
    | **Mester** | Angir om planen er hovedplanen i bunten den er tilordnet til. |
+   | **Obligatorisk** | Angir at planen må velges for å sjekke ut andre planer i bunten. Du kan merke flere planer som **nødvendig**. I så fall må alle planene som er merket som **Nødvendig**, velges for å sjekke ut noen av planene i bunten.|
    | **Gyldig fra-dato og -klokkeslett** | Datoen og klokkeslettet når planen starter. Standardverdien er gjeldende systemdato. |
-   | **Gyldig til-dato og -klokkeslett** | Datoen og klokkeslettet når planen slutter. Standardverdien er 12/31/2154, som i praksis betyr aldri. |
+   | **Gyldig til-dato og -klokkeslett** | Datoen og klokkeslettet når planen slutter. Standardverdien er 12/31/2154, som i praksis betyr aldri.  |
 
 4. I kategorien **Konfigurasjon** angir du verdier for følgende felt, avhengig av hvilken type plan du oppretter:
 
