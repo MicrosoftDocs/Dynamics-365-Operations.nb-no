@@ -14,6 +14,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for plattformoppdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Plattformoppdateringer for versjon 10.0.31 (februar 2023)
+                  href: get-started/whats-new-platform-updates-10-0-31.md
                 - name: Plattformoppdateringer for versjon 10.0.30 (november 2022)
                   href: get-started/whats-new-platform-updates-10-0-30.md
                 - name: Plattformoppdateringer for versjon 10.0.29 (oktober 2022)
@@ -180,9 +182,11 @@
                       href: data-entities/configuration-data-packages.md
                 - name: Konfigurasjonsdatamaler
                   href: data-entities/configuration-data-templates.md
-                - name: Spore endringer i en enhet
+                - name: Spor endringer i en enhet
                   href: data-entities/entity-change-track.md
-                - name: Finne informasjon om standard dataenheter
+                - name: Tillat endringssporing av radversjon for en enhet
+                  href: data-entities/rowversion-change-track.md
+                - name: Finn informasjon om standard dataenheter
                   href: data-entities/data-entities-report.md
                 - name: Datamaler med flere regneark
                   href: data-entities/excel-template-multiple.md
@@ -1228,6 +1232,8 @@
                   href: power-platform/admin-reference.md
                 - name: Aktiver virtuelle enheter for Dataverse
                   href: power-platform/enable-virtual-entities.md
+                - name: Spor endringer for virtuelle tabeller i Dataverse
+                  href: power-platform/track-changes-fin-ops-virtual-table.md
                 - name: Power Apps-portaler med økonomi og drift
                   href: power-platform/power-portal-reference.md
                 - name: Vanlige spørsmål om virtuelle enheter for økonomi og drift
