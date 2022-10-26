@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b494e15488bed148119aed0e9d62ab1740f38add
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: a01dfd72428c75d1bb24f32c73c9c799a6c5017e
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9334873"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682513"
 ---
 # <a name="engineering-change-management-overview"></a>Oversikt over behandling av teknisk endring
 
@@ -73,6 +73,9 @@ Deretter aktiverer du konfigurasjonsnøklene ved å følge disse trinnene. Disse
 1. Databasen må synkroniseres for å sikre at konfigurasjonsnøklene er riktig oppdatert for å gjenspeile endringene. Gjør ett av følgende, avhengig av hvilken type miljø du arbeider i:
     - **For miljøer på nivå 1 (utvikling)**: Åpne prosjektet i Microsoft Visual Studio, og velg deretter **Dynamics 365 \> Synkroniser database \> Synkroniser**.
     - **For miljøer på nivå 2 (og høyere)**: Databasen synkroniseres automatisk etter at du har satt miljøet inn i og ut av vedlikeholdsmodus, så du kan hoppe over dette trinnet.
+
+> [!NOTE]
+> Hvis du vil bruke styring av teknisk endring, må både stykklistenummerserien og formelnummerserien (hvis du bruker formler) settes til *Automatisk* på **Nummerserier**-siden.
 
 ### <a name="turn-on-additional-engineering-change-management-features"></a>Aktivere ekstra funksjoner for behandling av teknisk endring for systemet
 

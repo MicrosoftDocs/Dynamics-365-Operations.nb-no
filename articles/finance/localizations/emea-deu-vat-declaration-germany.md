@@ -9,12 +9,12 @@ ms.reviewer: kfend
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 8ee288a1ec7ae950bdff9da7d373e29daef74d3c
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 04c625b554d96f8ed28ceffef9647fe9cbf7fe2f
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269412"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689467"
 ---
 # <a name="vat-declaration-germany"></a>Mva-deklarering (Tyskland)
 
@@ -198,7 +198,8 @@ Følg denne fremgangsmåten for å definere hvilke mva-koder som genererer hvilk
 
    Dette formatet blir skrevet ut når du kjører rapporten **Rapporter merverdiavgift for utligningsperiode**. Den blir også skrevet ut når du velger **Skriv ut** på siden **Mva-betalinger**.
 
-4. Velg skattemyndigheten på siden **Skattemyndigheter** og velg deretter **Standard** i feltet **Rapportoppsett**.
+4. Hvis du må rapportere rettelsene, går du til **Spesialrapport**-delen og **Inkludert rettelser** til **Ja**.
+5. Velg skattemyndigheten på siden **Skattemyndigheter** og velg deretter **Standard** i feltet **Rapportoppsett**.
 
 Følg denne fremgangsmåten hvis du konfigurerer mva-deklareringen i en juridisk enhet som har [flere mva-registreringer](emea-reporting-for-multiple-vat-registrations.md):
 

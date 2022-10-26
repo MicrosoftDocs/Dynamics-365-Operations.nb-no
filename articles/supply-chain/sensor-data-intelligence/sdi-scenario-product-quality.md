@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 8c4808ea3a0389c2a8699f0e11ea154705a6916d
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: c0f1c57251234921779f67faf61d47cdde119e64
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428424"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690055"
 ---
 # <a name="the-product-quality-scenario"></a>Scenarioet for produktkvalitet
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 I scenarioet for *produktkvalitet* settes det opp en sensor for å måle kvaliteten på et produktparti i butikken. Hvis en måling faller utenfor en definert terskel for produktet, vises det en varsling på lederens instrumentbord. Eksempel: En sensor måler fuktigheten i et matprodukt som er levert fra produksjonslinjen. Hvis målingen er utenfor den tillatte minimums- eller maksimumsverdien for fuktighet for produktet, genereres det en varsling.
 

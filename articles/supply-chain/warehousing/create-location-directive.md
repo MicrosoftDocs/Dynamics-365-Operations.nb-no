@@ -2,7 +2,7 @@
 title: Arbeide med lokasjonsdirektiver
 description: Denne artikkelen beskriver hvordan du arbeider med lokasjonsdirektiver. Lokasjonsdirektiver er brukerdefinerte regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse.
 author: Mirzaab
-ms.date: 11/13/2020
+ms.date: 09/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7705ea132521353cd6af7245df90aafaf23af885
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4ef8ec0732cd3bd50bca8d334c43d0354e9e3316
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8903702"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689673"
 ---
 # <a name="work-with-location-directives"></a>Arbeide med lokasjonsdirektiver
 
@@ -47,6 +47,20 @@ Før du kan opprette et lokasjonsdirektiv, må du følge denne fremgangsmåten f
 1. Opprett lokasjoner, lokasjonstyper, lokasjonsprofiler og lokasjonsformater. Hvis du vil ha mer informasjon, kan du se [Konfigurere lokasjoner i et WMS-aktivert lager](./tasks/configure-locations-wms-enabled-warehouse.md).
 1. Opprett steder, soner og sonegrupper. Hvis du vil ha mer informasjon, kan du se [Lageroppsett](../../commerce/channels-setup-warehouse.md) og [Konfigurere lokasjoner i et WMS-aktivert lager](./tasks/configure-locations-wms-enabled-warehouse.md).
 
+## <a name="turn-the-location-directive-scopes-feature-on-or-off"></a><a name="scopes-feature"></a>Aktiver eller deaktivere lokasjonsdirektivområdefunksjonen
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Funksjonen for *Lokasjonsdirektivområder* gir deg mer informasjon når du utformer lokasjonsdirektiver, og bidrar til å redusere overflødige konfigurasjoner. Det legger til et **område**-alternativ, som erstatter forrige **Flere SKU**-alternativ. Mens alternativet for **Flere SKU** bare kan settes til *Ja* eller *Nei*, gir **Område**-alternativet ikke bare de to innstillingene (via verdiene *Enkeltvare* og *Flere varer*), men også to til (via verdiene *Enkeltvare eller -ordre* og *Alle*). Hvis du vil ha mer informasjon om disse innstillingene, kan du se [Hurtigfane for lokasjonsdirektiver](#location-directives-tab).
+
+Når alternativet **Område** er aktivert, erstattes alternativet **Flere SKUer**, og er 100 prosent kompatibel med eksisterende konfigurasjoner.
+
+For å bruke denne funksjonen må du aktivere den i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere eller deaktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Lagerstyring*
+- **Funksjonsnavn:** *Lokasjonsdirektivområder*
+
 ## <a name="work-order-types-for-location-directives"></a>Arbeidsordretyper for lokasjonsdirektiver
 
 Mange av feltene som kan angis for lokasjonsdirektiver, er felles for alle arbeidsordretyper. Andre felter er imidlertid spesifikke for bestemte arbeidsordretyper.
@@ -68,7 +82,7 @@ Tabellen nedenfor viser en oversikt over feltene som er felles for alle arbeidso
 | Lokasjonsdirektiver | Site |
 | Lokasjonsdirektiver | Lager |
 | Lokasjonsdirektiver | Direktivkode |
-| Lokasjonsdirektiver | Flere SKUer |
+| Lokasjonsdirektiver | Område *eller* flere SKUer |
 | Linjer | Serienummer |
 | Linjer | Fra-antall |
 | Linjer | Til antall |
@@ -117,7 +131,9 @@ Handlingsruten på siden **Lokasjonsdirektiver** inneholder knapper som du kan b
 
 - **Flytt opp** – Flytt det valgte lokasjonsdirektivet opp i sekvensen. Du kan for eksempel flytte den fra sekvensnummer 4 til sekvensnummer 3.
 - **Flytt ned** – Flytt det valgte lokasjonsdirektivet ned i sekvensen. Du kan for eksempel flytte den fra sekvensnummer 4 til sekvensnummer 5.
+- **Kopier** – Åpne en dialogboks der du kan opprette en nøyaktig kopi av gjeldende lokasjonsdirektiv.
 - **Rediger spørring** – Åpne en dialogboks der du kan definere betingelsene som det valgte lokasjonsdirektivet skal behandles under. Det kan for eksempel hende at du vil at den bare skal gjelde for et bestemt lager.
+- **Godkjenningstester** – Åpne en side der du kan konfigurere automatiserte tester for å bestemme hvordan lokasjonsdirektivene skal vurderes under ulike startvilkår. På denne måten kan du raskt validere direktivene etter hvert som du oppretter og vedlikeholder dem. Hvis du vil ha mer informasjon om maler, kan du se [Test lokasjonsdirektiver med aksepttester](location-directive-acceptance-tests.md).
 
 ## <a name="location-directives-header"></a>Topptekst for lokasjonsdirektiver
 
@@ -126,7 +142,7 @@ Toppteksten for lokasjonsdirektivet inneholder følgende felter for sekvensnumme
 - **Sekvensnummer** – Dette feltet angir sekvensen som systemet prøver å bruke hvert lokasjonsdirektiv i, for den valgte arbeidsordretypen. Laveste numre brukes først. Du kan endre rekkefølgen ved å bruke knappene **Flytt opp** og **Flytt ned** i handlingsruten.
 - **Navn** – Angi et beskrivende navn for lokasjonsdirektivet. Dette navnet skal være til hjelp for å identifisere den generelle bruken av direktivet. Angi for eksempel *Salgsordreplukking på lager 24*.
 
-## <a name="location-directives-fasttab"></a>Hurtigfane for lokasjonsdirektiver
+## <a name="location-directives-fasttab"></a><a name="location-directives-tab"></a>Hurtigfane for lokasjonsdirektiver
 
 Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretypen som er valgt i feltet **Arbeidsordretype** i listeruten.
 
@@ -145,7 +161,29 @@ Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretype
     > [!TIP]
     > Hvis en direktivkode er angitt, søker ikke systemet etter lokasjonsdirektiver etter sekvensnummer når arbeid må genereres. Det vil i stedet søke etter direktivkode. På denne måten kan du være mer nøyaktig angående lokasjonsdirektivet som brukes for et spesifikt trinn i en arbeidsmal, for eksempel trinnet for oppsamling av materialer.
 
-- **Flere SKU-er** – Sett dette alternativet til *Ja* for å aktivere flere lagerenheter (SKU-er) som skal brukes på en lokasjon. Flere SKU-er må for eksempel være aktivert for rampedørplasseringen. Hvis du aktiverer flere SKU-er, blir plasseringen angitt i arbeid som forventet. Plasseringslokasjonen kan imidlertid bare håndtere en plassering for flere varer (hvis arbeid inneholder forskjellige SKU-er som må plukkes og plasseres). Det vil ikke være mulig å behandle en enkelt SKU-plassering. Hvis du setter dette alternativet til *Nei*, vil plasseringslokasjonen bare angis hvis plasseringen bare har én SKU-type.
+- **Område** – Bruk dette alternativet til å angi scenariene som lokasjonsdirektivet skal brukes på. Dette alternativet erstatter alternativet **Flere SKUer**, og er bare tilgjengelig hvis funksjonen for *Lokasjonsdirektivområder* er aktivert i systemet. (Hvis du vil ha mer informasjon, kan du se [Aktiver eller deaktivere lokasjonsdirektivområdefunksjonen](#scopes-feature).)
+
+    | Områdeinnstilling | Enkeltordre med én vare | Flere ordrer med samme vare | Enkeltordre med flere varer | Flere ordrer med flere varer |
+    |---|---|---|---|---|
+    | Enkeltvare | Ja | Ja | Nei | Nei |
+    | Flere varer | Nei | Nei | Ja | Ja |
+    | Enkeltvare eller -ordre | Ja | Ja | Ja | Nei |
+    | Alle | Ja | Ja | Ja | Ja |
+
+    Tabellen nedenfor beskriver når områder er tilgjengelige, og om de tillater funksjonen **Rediger spørring**.
+
+    | Område | Støttet arbeidstype | Støttede typer arbeidsordrer | Tillat redigering av spørring |
+    |---|---|---|---|
+    | Enkeltvare | Alle | Alle | Ja |
+    | Flere varer | Alle | Alle | Nei |
+    | Enkeltvare eller -ordre | Plasseringer | Plassering av koprodukt og biprodukt, plassering av ferdigvarer, plassering av kanban, bestillinger, kvalitetsordrer, etterfylling, returordrer, salgsordrer, overføringsavgang og overføringsmottak | Ja |
+    | Alle | Plasseringer | Alle | Nei |
+
+    > [!NOTE]
+    > - Hvis du vil legge inn både flere varer og enkeltvarer, må du kontrollere at det finnes lokasjonsdirektiver som dekker begge scenariene. Du kan for eksempel definere én eller flere lokasjonsdirektiver for *Enkeltvare eller -ordre* for å dekke scenarier som krever finjustering (for eksempel gjennom endringer i spørringen), og deretter ett eller flere *Alle*-lokasjonsdirektiver for å dekke de gjenværende scenariene.
+    > - Selv *enkeltvarer* og *flere varer* kan brukes til plasseringer, fører denne fremgangsmåten vanligvis til overflødige konfigurasjoner. Vurder å bruke områdene *Enkeltvare eller -ordre* og *Alle* i stedet, fordi denne fremgangsmåten vil gi et renere oppsett.
+
+- **Flere SKUer** – Bruk dette alternativet til å angi scenarioet som lokasjonsdirektivet skal brukes på. Denne innstillingen erstattes av innstillingen **Område** hvis funksjonen *Lokasjonsdirektivområder* er aktivert i systemet. (Hvis du vil ha mer informasjon, kan du se [Aktivere eller deaktivere lokasjonsdirektivområdefunksjonen](#scopes-feature).) Sett dette alternativet for *Ja* for å aktivere bruk av flere lagerføringsenheter (SKUs) på en lokasjon. Flere SKU-er må for eksempel være aktivert for rampedørplasseringen. Hvis du aktiverer flere SKU-er, blir plasseringen angitt i arbeid som forventet. Plasseringslokasjonen kan imidlertid bare håndtere en plassering for flere varer (hvis arbeid inneholder forskjellige SKU-er som må plukkes og plasseres). Det vil ikke være mulig å behandle en enkelt SKU-plassering. Hvis du setter dette alternativet til *Nei*, vil plasseringslokasjonen bare angis hvis plasseringen bare har én SKU-type.
 
     > [!IMPORTANT]
     > Hvis du skal kunne utføre både plasseringer med flere varer og enkelt-SKU-plasseringer, må du angi to linjer som har samme struktur og oppsett, men du må sette alternativet **Flere SKU-er** til *Ja* for en linje og *Ingen* for den andre. For plasseringsoperasjoner må du derfor ha to identiske lokasjonsdirektiver, selv om du ikke må skille mellom én eller flere SKU-er i en arbeids-ID. Hvis du ikke definerer begge disse plasseringsdirektivene, vil det komme uventede forretningsprosesslokasjoner fra lokasjonsdirektivet som er brukt. Du må bruke et lignende oppsett for lokasjonsdirektiver som har **arbeidstypen** *plukk* hvis du må behandle ordrer som omfatter flere SKU-er.
@@ -255,6 +293,5 @@ Når du har opprettet lokasjonsdirektiver, kan du knytte hver direktivkode til e
 
 - Video: [Dyp dykk i konfigurasjon av lagerstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjelpeartikkel: [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](control-warehouse-location-directives.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

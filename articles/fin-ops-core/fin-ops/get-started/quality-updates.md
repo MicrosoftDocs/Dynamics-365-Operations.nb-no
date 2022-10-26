@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 25306a8ccebb5cd01debc90cf497d4a942840ef4
-ms.sourcegitcommit: 43a0fb019bc67c00c39c2778343ba89924c3322c
+ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9671432"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689234"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsoppdateringer
 
@@ -56,7 +56,9 @@ Et sett med prosessendringer implementeres før aktiveringen av distribusjon av 
 
 - **Skjema** – Verktøy vil sikre at kvalitetsoppdateringsbuilds omfatter bare skjemaendringer som kan brukes mens tjenesten er tilkoblet. Denne fremgangsmåten vil bidra til å bevare muligheten til å bruke oppdateringen med nær null nedetid.
 - **Økt endringsgransking** – For øyeblikket er det allerede et ekstra prosesstrinn som skal godkjenne endringer for inkludering i en kvalitetsoppdatering. Granskingen i det ekstra trinnet økes for å redusere faren for regresjoner. Det å bryte endringer som ikke er tillatt i kvalitetsoppdateringer, og den økte endringsgranskingen vil bidra til å sikre at vi oppfyller dette målet.
-- **Synlighet** – Vi sender meldinger via e-post og Lifecycle Services (LCS) for kommende proaktive kvalitetsoppdateringer. I tillegg vil støttegrupper og hendelses kundeemner ha oversikt over hvor kvalitetsoppdateringer er distribuert proaktivt.
+- **Synlighet** – Vi sender meldinger via administrasjonssenteret, Lifecycle Services (LCS) og andre tilgjengelige kanaler for kommende proaktive kvalitetsoppdateringer. I tillegg vil støttegrupper og hendelses kundeemner ha oversikt over hvor kvalitetsoppdateringer er distribuert proaktivt.
+ > [!NOTE]
+ > Microsoft Communications-teamet undersøker en pågående nedgradering av e-postverktøyet som forhindrer levering av e-postvarslinger. Fortsett å overvåke Microsoft 365-meldingssenteret for pålasting og varslingsrelaterte meldinger.
 - **Sikkerhet via testversjonering** - Testversjonering brukes til å verne kodeendringer der det er aktuelt i en reparasjon av kvalitetsoppdatering eller bruke den eksisterende testversjoneringen som er relevant for reparasjonen. Hvis du må tilbakefalle eller slå av en endring etter en proaktiv distribusjon, kan du gjøre det via testversjoneringen for å unngå ytterligere feil.
 - **Synkroniseringsbetegnelsen for sandkasse** – Mindre enn 20 prosent av kundene i dag har flere avmerkingsbokser, og én avmerkingsboks er distribuert der versjonen samsvarer med produksjonen, som hjelp til feilsøking. Hvis en kunde bruker en sandkasse til å teste en nyere versjon enn produksjonen, vil denne sandkassen motta kvalitetsoppdateringer for den nyere versjonen.
 
@@ -80,10 +82,10 @@ Hvis du vil ha informasjon om mørketimer for hvert område, kan du se [Hva er d
 
 | Stasjon | Områder | Fullført tidsplan| Kommende sandkasseplan
 |---|---|---|---|
-| Stasjon 1 | Canada, sentralt; Canada, øst; Frankrike, sentralt; India, sentralt; Norge, øst; Sveits, vest | 15. til 18. september 2022 og 19. til 22. september 2022 | 7. til 10. oktober 2022 |
-| Stasjon 2 | Frankrike, sør; India, sør; Norge, vest; Sveits, nord; Sør-Afrika, nord; Australia, øst; Storbritannia, sør; De forente arabiske emirater, nord; Japan, øst; Australia, sørøst; Asia, sørøst | 25. til 28. september 2022 | 7. til 10. oktober 2022 |
-| Stasjon 3 | Øst-Asia; Storbritannia, vest; Japan, vest; Brasil, sør; Europa, vest; USA, øst; De forente arabiske emirater, sentralt | 26. til 29. september 2022 | 7. til 10. oktober 2022 |
-| Stasjon 4 | Europa, nord; USA, sentralt; USA, vest | 28. september til 1. oktober 2022 | 7. til 10. oktober 2022 |
+| Stasjon 1 | Canada, sentralt; Canada, øst; Frankrike, sentralt; India, sentralt; Norge, øst; Sveits, vest | 15. september til 18. september 2022, 19. september til 22. september 2022 og 7. oktober til 10. oktober 2022 | 25. til 28. oktober 2022 |
+| Stasjon 2 | Frankrike, sør; India, sør; Norge, vest; Sveits, nord; Sør-Afrika, nord; Australia, øst; Storbritannia, sør; De forente arabiske emirater, nord; Japan, øst; Australia, sørøst; Asia, sørøst | 25. til 28. september 2022 og 7. til 10. oktober 2022 | 25. til 28. oktober 2022 |
+| Stasjon 3 | Øst-Asia; Storbritannia, vest; Japan, vest; Brasil, sør; Europa, vest; USA, øst; De forente arabiske emirater, sentralt | 26. til 29. september 2022 og 7. til 10. oktober 2022 | 25. til 28. oktober 2022 |
+| Stasjon 4 | Europa, nord; USA, sentralt; USA, vest | 28. til 1. oktober 2022 og 7. til 10. oktober 2022 | 25. til 28. oktober 2022 |
 | Stasjon 5 | DoD, Government Community Cloud, Kina | Ikke planlagt | Ikke planlagt |
 
 ### <a name="proactive-quality-update-release-10029"></a><a name="schedule"></a> Proaktiv kvalitetsoppdateringsutgivelse: 10.0.29

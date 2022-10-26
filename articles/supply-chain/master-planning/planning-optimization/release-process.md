@@ -2,20 +2,20 @@
 title: Frigivelsesprosess for planleggingsoptimalisering og utgivelseslogg
 description: Denne artikkelen inneholder informasjon om utgivelsesprosessen og utgivelsesloggen for planleggingsoptimalisering.
 author: t-benebo
-ms.date: 09/21/2021
+ms.date: 10/14/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: da97490cb065365a0502aa82c63205d5c34da9eb
-ms.sourcegitcommit: 15b331f39d6e3ef811b9c2bf055a4f5b4572bae2
+ms.dyn365.ops.version: 10.0.31
+ms.openlocfilehash: e2437214b4a2a850f121bb86272bf7dc3d313507
+ms.sourcegitcommit: b3579ac62e1ea15664a114abcc2409cad76d4f19
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "9591884"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "9682567"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesprosess for planleggingsoptimalisering og utgivelseslogg
 
@@ -31,22 +31,21 @@ Miljøer som bruker planleggingsoptimalisering, mottar automatisk den nyeste ver
 
 Siden varslinger ikke vises når planleggingsoptimalisering oppdateres i miljøet ditt, kan du se gjennom produktmerknadene i tabellen nedenfor for å finne ut når endringene ble utgitt, og hvilken funksjonalitet de introduserte. Denne tabellen viser endringene som ble utgitt for planleggingsoptimalisering, om disse endringene er knyttet til en funksjon fra funksjonsbehandling og datoen for utgivelsen.
 
-<!-- KFM: Add this? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 
-
 | Endringer | Detaljer for funksjonsbehandling | Frigivelsesdatoer |
 |---|---|---|
-| <p> Støtte for ressursplanlegging med begrenset kapasitet. <p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Ingen funksjonsbehandling er nødvendig. | 19. til 23. september 2022 |
-| <p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Ingen funksjonsbehandling er nødvendig. | 29. august til 3. september 2022 |
-| <p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer.<p>[Sentralisert kalendervedlikehold i Planleggingsoptimalisering](../supply-chain-calendars-master-planning.md)<p>[Forslag fra Planleggingsoptimalisering for å optimalisere eksisterende forsyning](../action-messages.md)<p>[Støtte i Planleggingsoptimalisering for utsetting](../../production-control/manage-subcontract-work-production.md) | Ingen funksjonsbehandling er nødvendig. | 7. til 11. mars 2022 |
-| <p>Mer planleggingsprioritet for produksjonsordrer. | Tilgjengelig med versjon 10.0.25 som en del av funksjonen kalt for *Prioritetsdrevet MRP-støtte for planleggingsoptimalisering*. | 12. til 18. november 2021 |
-| <p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Ingen funksjonsbehandling er nødvendig. | 12. til 18. november 2021 |
-| <p>Ekstra støtte for beregningsformler for prosesstid, produksjonsrute med overlapping og operasjonsnummer for produksjon på behovstransaksjoner.</p><p>Utvidede feilmeldinger for produksjonsplanlegging relatert til tidsavbrudd, kapasitet kan ikke blir funnet og rutekort.</p><p>Forbedret konsistens ved beregning av mottaksdatoer og avgangsdatoer på både planlagte ordrer og autoriserte ordrer.</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* | 22. til 27. oktober 2021 |
-| <p>Lagt til støtte for å vurdere svinnprosent i behandlingstidsberegningen.</p><p>Lagt til støtte for bruk av operasjonsnummer og materialer under planlegging. | Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* | 5. til 7. oktober 2021 |
-| <p>Lagt til støtte for jobbtyper for produksjonsrute: **Kø før**, **Kø etter** og **Transporttid**.</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* | 25. til 30. september 2021 |
-| <p>Lagt til støtte for hovedplaner med **Planleggingsmetode** satt til *Grovplanlegging*.</p><p>På **Rutegrupper**-siden overholder du innstillingene for avmerkingsboksene **Aktivering**, **Driftstid** og **Kapasitet** for rader med **Rute-/jobbtype** *Oppsett* eller *Prosess*. </p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | <p>Grovplanlegging er tilgjengelig i funksjonsbehandling fra og med versjon 10.0.20.</p><p>Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*</p>  | 9.-17. september 2021 |
-| Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Ingen funksjonsbehandling er nødvendig. | 25.–30. august 2021 |
-| <p>La til feltet **Leveringstid** i planlagte bestillinger.</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer.</p> | Ingen funksjonsbehandling er nødvendig. | 12.–17. august 2021 |
-| <p>La til ressurstypekrav for uendelig kapasitetsplanlegging.</p><p>Forbedret ressurseffektivitet og kalendereffektivitet for uendelig kapasitetsplanlegging.</p><p>Hvis du vil ha mer informasjon, kan du se [Planlegge med uendelig kapasitet](infinite-capacity-planning.md). | <p>Tilgjengelig i funksjonsbehandling fra og med versjon 10.0.20.</p><p>Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*</p> | 6.–12. juli 2021 |
-| Generelle kvalitetsforbedringer. | Ingen funksjonsbehandling er nødvendig. | 6.–12. juli 2021 |
+| <p>[Partidisposisjonskoder](../../inventory/batch-disposition-codes.md)</p><p>Inkludere lagerbeholdning og lagertransaksjonsparametere i hovedplaner</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer</p> | Ingen funksjonsbehandling er nødvendig | 10. til 14. oktober 2022 |
+| <p>[Ressurser som er planlagt med begrenset kapasitet](finite-capacity.md)</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer</p> | Ingen funksjonsbehandling er nødvendig | 19. til 23. september 2022 |
+| Generelle ytelses-, kvalitets- og stabilitetsforbedringer | Ingen funksjonsbehandling er nødvendig | 29. august til 3. september 2022 |
+| <p>[Sentralisert kalendervedlikehold](../supply-chain-calendars-master-planning.md)</p><p>[Forslag for å optimalisere eksisterende forsyning](../action-messages.md)</p><p>[Støtte for utsetting](../../production-control/manage-subcontract-work-production.md)</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer</p> | Ingen funksjonsbehandling er nødvendig | 7. til 11. mars 2022 |
+| Støtte for planleggingsprioritet for produksjonsordrer | Tilgjengelig med versjon 10.0.25 som en del av funksjonen kalt for *Prioritetsdrevet MRP-støtte for planleggingsoptimalisering*. | 12. til 18. november 2021 |
+| Generelle ytelses-, kvalitets- og stabilitetsforbedringer | Ingen funksjonsbehandling er nødvendig | 12. til 18. november 2021 |
+| <p>Støtte for beregningsformler for prosesstid, produksjonsrute med overlapping og operasjonsnummer for produksjon på behovstransaksjoner</p><p>Utvidede feilmeldinger for produksjonsplanlegging relatert til tidsavbrudd, kapasitet kan ikke blir funnet og rutekort</p><p>Forbedret konsistens ved beregning av mottaksdatoer og avgangsdatoer på både planlagte ordrer og autoriserte ordrer</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer</p> | Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* | 22. til 27. oktober 2021 |
+| <p>Støtte for å vurdere svinnprosent i behandlingstidsberegningen</p><p>Støtte for bruk av operasjonsnummer og materialer under planlegging</p> | Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* | 5. til 7. oktober 2021 |
+| <p>Støtte for jobbtyper for produksjonsrute: **Kø før**, **Kø etter** og **Transporttid**</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer</p> | Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering* | 25. til 30. september 2021 |
+| <p>Støtte for hovedplaner med **Planleggingsmetode** satt til *Grovplanlegging*</p><p>På **Rutegrupper**-siden overholder du innstillingene for avmerkingsboksene **Aktivering**, **Driftstid** og **Kapasitet** for rader med **Rute-/jobbtype** *Oppsett* eller *Prosess* </p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer</p> | <p>Grovplanlegging er tilgjengelig i funksjonsbehandling fra og med versjon 10.0.20</p><p>Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*</p> | 9.-17. september 2021 |
+| Generelle ytelses-, kvalitets- og stabilitetsforbedringer | Ingen funksjonsbehandling er nødvendig | 25.–30. august 2021 |
+| <p>La til feltet **Leveringstid** i planlagte bestillinger.</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer.</p> | Ingen funksjonsbehandling er nødvendig | 12.–17. august 2021 |
+| <p>La til ressurstypekrav for uendelig kapasitetsplanlegging</p><p>Forbedret ressurseffektivitet og kalendereffektivitet for uendelig kapasitetsplanlegging</p><p>Hvis du vil ha mer informasjon, kan du se [Planlegge med uendelig kapasitet](infinite-capacity-planning.md)</p> | <p>Tilgjengelig i funksjonsbehandling fra og med versjon 10.0.20</p><p>Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*</p> | 6.–12. juli 2021 |
+| Generelle kvalitetsforbedringer | Ingen funksjonsbehandling er nødvendig | 6.–12. juli 2021 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

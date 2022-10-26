@@ -4,23 +4,25 @@ description: Denne artikkelen beskriver hvordan du konfigurerer omveier for meny
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: d8d3d434077fdb145291e2298055f692b78db3d6
-ms.sourcegitcommit: 3d7ae22401b376d2899840b561575e8d5c55658c
+ms.openlocfilehash: 2e387dd4e6499912f2d53dddc17ccc053f1ca699
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "9428070"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689317"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Konfigurere omveier for trinn i menyelementer for mobilenheter
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > Funksjonene som er beskrevet i denne artikkelen, gjelder bare for den nye mobilappen Warehouse Management. De påvirker ikke den gamle lagerappen, som nå er avskrevet.
@@ -38,6 +40,7 @@ Før du kan definere omveier for trinn i menyelementer på mobilenheten, må du 
 1. Slå på følgende funksjoner, som gir funksjonaliteten som er beskrevet i denne artikkelen:
     - *Omveier i Warehouse Management-appen*<br>(Per Supply Chain Management versjon 10.0.29 er denne funksjonen aktivert som standard.)
     - *Omveier med flere nivåer for mobilappen Warehouse Management*
+    - *Send automatisk inn omveistrinn for mobilappen Warehouse Management*
 1. Hvis funksjonene *Omveier i Warehouse Management-mobilappen* og/eller *Omveier med flere nivåer for mobilappen Warehouse Management* ikke allerede var slått på, oppdaterer du feltnavnene i mobilappen Warehouse Management ved å gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Feltnavn i lagerapp** og velger **Opprett standardoppsett**. For mer informasjon, se [Konfigur felter for mobilappen Lagerstyring](configure-app-field-names-priorities-warehouse.md).
 1. Gjenta det forrige trinnet for hver juridiske enhet (firma) der du bruker mobilappen Warehouse Management.
 
@@ -49,7 +52,7 @@ Bruk fremgangsmåten nedenfor til å definere en omvei fra en menyspesifikk over
 1. Finn kombinasjonen av verdier for **Trinn-ID** og **Menyelementnavn** som du ønsker å redigere, og velg deretter verdien i kolonnen **Trinn-ID**.
 1. I hurtigfanen **Tilgjengelige omveier (menyelementer)** på siden som vises, kan du angi menyelementet som skal fungere som en omvei. Du kan også velge hvilke feltverdier fra hovedoppgaven som automatisk skal kopieres til og fra omveien. Hvis du vil ha eksempler som viser hvordan du bruker disse innstillingene, kan du se scenarioene senere i denne artikkelen.
 
-## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a>Eksempelscenario 1: Salgsplukking der en lokasjonsforespørsler fungerer som en omvei
+## <a name="sample-scenario-1-sales-picking-where-a-location-inquiry-acts-as-a-detour"></a><a name="scenario-1"></a>Eksempelscenario 1: Salgsplukking der en lokasjonsforespørsler fungerer som en omvei
 
 Dette scenariet viser hvordan du konfigurerer en lokasjonsforespørsler som en omvei i en arbeiderstyrt oppgaveflyt for salgsplukking. Denne omveien vil gjøre det mulig for arbeidere å slå opp alle nummerskilt på det stedet de plukker fra, og plukke nummerskiltet som de vil bruke til å fullføre plukkingen. Denne typen omvei kan være nyttig hvis strekkoden skades og derfor ikke kan leses av skannerenheten. Alternativt kan det være nyttig hvis en arbeider må lære hva som faktisk er tilgjengelig i systemet. Legg merke til at dette scenariet bare fungerer hvis du plukker fra nummerskiltkontrollerte lokasjoner.
 
@@ -74,11 +77,13 @@ I denne fremgangsmåten konfigurerer du en omvei for menyelementet **Salgsplukki
 
     - **Kopier fra salgsplukking:** *Lokasjon*
     - **Lim inn i lokasjonsforespørsel:** *Lokasjon*
+    - **Send automatisk inn:** *Valgt* (siden oppdateres med den innlimte *Lokasjon*-verdien)
 
 1. Siden omveier i dette scenariet er konfigurert på nummerskilttrinnet, vil det være nyttig hvis arbeidere kan hente nummerskiltet fra forespørselen tilbake til hovedflyten. I delen **Hent tilbake fra lokasjonsforespørsel** velger du derfor **Legg til** på verkøylinjen for å legge til en rad eller et rutenett. Angi deretter følgende verdier for den nye raden:
 
     - **Kopier fra lokasjonsforespørsel:** *Nummerskilt*
     - **Lime inn i Salgsplukking:** *Nummerskilt*
+    - **Send automatisk:** *Avstem* (det vil ikke forekomme noen automatisk oppdatering ved retur fra omvei med en *Nummerskilt*-verdi)
 
 1. Velg **OK**.
 
@@ -131,6 +136,7 @@ I denne fremgangsmåten konfigurerer du en omvei for menyelementet **Salgsplukki
 
     - **Kopier fra lokasjonsforespørsel:** *Lokasjon*
     - **Lim inn i bevegelse:** *Loc / LP*
+    - **Send automatisk:** *Avstem* (ingen automatisk oppdatering vil finne sted)
 
     I denne omveien forventer du ikke at det skal kopieres informasjon tilbake, fordi hovedflyten var en forespørsel der det ikke kreves flere trinn.
 
@@ -153,3 +159,5 @@ I denne fremgangsmåten fullfører du en lokasjonsforespørsel ved hjelp av mobi
 
 > [!NOTE]
 > Med funksjonen *Omveier med flere nivåer for mobilappen Warehouse Management* kan du definere omveier på flere nivåer (omveier i omveier), slik at ansatte kan hoppe fra en eksisterende omvei til en annen, og så gå tilbake igjen. Funksjonen støtter to medfølgende omveisnivåer, og om nødvendig kan du tilpasse systemet slik at det støtter tre eller flere omveier ved å opprette kodetillegg i `WHSWorkUserSessionState`-tabellen.
+>
+> Funksjonen *Send automatisk inn omveistrinn for mobilappen Warehouse Management* kan gjøre det raskere og enklere for ansatte å fullføre omveisflyter i mobilappen Warehouse Management. På denne måten kan noen flyttrinn hoppes over ved å la appen fyllet ut omveisdata på serverdelen og deretter gå automatisk til neste trinn ved å sende siden automatisk, som vist i [*Eksempelscenario 1: Salgsplukking der en lokasjonsforespørsler fungerer som en omvei*](#scenario-1).

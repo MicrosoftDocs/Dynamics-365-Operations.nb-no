@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.form: LedgerTransVoucher, LedgerJournalTable
-ms.openlocfilehash: 7e3a22f43bcc312fe60b77db2fc3bc94d15950c5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 8912409ec0d2016ea4af12843319febda98663c5
+ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9284859"
+ms.lasthandoff: 10/13/2022
+ms.locfileid: "9680391"
 ---
 # <a name="reverse-journal-posting"></a>Tilbakefør journalpostering
 
@@ -37,7 +37,7 @@ Før du kan bruke en av funksjonene som beskrives i denne artikkelen, må du akt
 Du kan tilbakeføre Journallinjer enkeltvis. Med tilbakeføring av journalpostering kan du også tilbakeføre en hel finansjournal. Slik tilbakefører du en journal: 
 
 - Filtrer på de posterte journalene, og åpne **Linjer**-visningen på journalen.
-- Velg **Tilbakefør**-menyen øverst på siden.
+- Velg menyen **Tilbakefør hele journalen** øverst på siden.
 - Du vil se det totale antallet bilag og bilagslinjer i tillegg til total beløpet på linjene som blir tilbakeført.
 - Velg **Ja** hvis du vil bruke de eksisterende transaksjonsdatoene, eller **Nei** hvis du vil angi en ny. I noen tilfeller kan det hende at perioden for den opprinnelige transaksjonen er lukket, og du må angi en ny transaksjonsdato for tilbakeføringen.
 - Hvis du velger **Nei**, angir du en transaksjonsdato for tilbakeføringen. 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f53d5d4daea076cc63308a83292f8f8c1ee1d022
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8d5ded4b08d562fff9ec5fd9a3de591f944e3ee0
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8853503"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682905"
 ---
 # <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll 
 
@@ -53,7 +53,7 @@ Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering**. B
 |-------------------------------------------------------------------|-------------|
 | Kostnadsregnskapsfinans                                            | **Kostnadsregnskapsfinans** som rapporten er basert på. Verdien hentes fra feltet **Kostnadskontrollenhet**. |
 | Kostnadskontrollenhet                                                 | Verdien du velger, fastsetter kostnadsregnskapsfinansen og kostnadsobjektene som denne rapporten skal baseres på. |
-| Dimensjonshierarki for statistikk, Dimensjonshierarki for kostnadselement | En post for konfigurasjon av arbeidsområdet **Kostnadskontroll** kan rapportere ikke-monetære eller monetære verdier, men ikke i samme oppsett. Velg en verdi i feltet **Dimensjonshierarki for kostnadselement** for å rapportere monetære verdier. Velg en verdi i feltet **Dimensjonshierarki for statistikk** for å rapportere ikke-monetære verdier. Dimensjonshierarkiposten du velger, fastsetter strukturen for rapporteringen og aggregeringsnivåene.<blockquote>[!NOTE]<br>Hvis du vil vise ikke-monetære og monetære verdier ved siden av hverandre, kan du eksportere data til Microsoft Excel for innholdspakken for Microsoft Power BI.</blockquote> |
+| Dimensjonshierarki for statistikk, Dimensjonshierarki for kostnadselement | En post for konfigurasjon av arbeidsområdet **Kostnadskontroll** kan rapportere ikke-monetære eller monetære verdier, men ikke i samme oppsett. Velg en verdi i feltet **Dimensjonshierarki for kostnadselement** for å rapportere monetære verdier. Velg en verdi i feltet **Dimensjonshierarki for statistikk** for å rapportere ikke-monetære verdier. Dimensjonshierarkiposten du velger, fastsetter strukturen for rapporteringen og aggregeringsnivåene.<blockquote>**Obs:**<br>Hvis du vil vise ikke-monetære og monetære verdier ved siden av hverandre, kan du eksportere data til Microsoft Excel for innholdspakken for Microsoft Power BI.</blockquote> |
 | Dimensjonsobjekt for kostnadselement      | Velg dimensjonshierarkiet for kostnadsobjektdimensjonen som passer til formålet med rapportering du definerer. |
 | Opprinnelig budsjettversjon                                           | Velg budsjettversjons-ID-en som fungerer som det opprinnelige budsjettet i forbindelse med denne rapporten. |
 | Revidert budsjettversjon                                            | Velg budsjettversjons-ID-en som fungerer som det reviderte budsjettet i forbindelse med denne rapporten. |
@@ -64,7 +64,7 @@ Beregningen av indirekte kostnader utfører beregning av kildedataene i flere tr
 
 | Felt                  | Beskrivelse |
 |------------------------|-------------|
-| Økonomisk kalenderperiode | Velg regnskapskalenderperioden du vil tilordne en ID for beregning av indirekte kostnader til.<blockquote>[!NOTE]<br>Regnskapsperiodene som er oppført i feltet, kommer fra regnskapskalenderen som er knyttet til kostnadsregnskapsfinansen.</blockquote> |
+| Økonomisk kalenderperiode | Velg regnskapskalenderperioden du vil tilordne en ID for beregning av indirekte kostnader til.<blockquote>**Obs:**<br>Regnskapsperiodene som er oppført i feltet, kommer fra regnskapskalenderen som er knyttet til kostnadsregnskapsfinansen.</blockquote> |
 | Faktisk versjon         | Velg den aktuelle ID-en for beregning av indirekte kostnader. |
 | Budsjettversjon         | Velg den aktuelle ID-en for beregning av indirekte kostnader. |
 | Revidert budsjettversjon | Velg den aktuelle ID-en for beregning av indirekte kostnader. |
@@ -77,10 +77,10 @@ Verdiene i de merkede kolonnene multipliseres med de merkede verdiene i hurtigfa
 
 | Felt                | Beskrivelse |
 |----------------------|-------------|
-| Gjeldende periode       | Saldoen for gjeldende regnskapsperiode vises.<blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode.</blockquote> |
-| Forrige periode      | Saldoen for forrige regnskapsperiode vises. Følgende formel brukes:<br>Gjeldende regnskapsperiode – 1<blockquote>[!NOTE]<br>Forrige periode avledes som standard fra øktdatoen. Du kan velge en bestemt regnskapsperiode som gjeldende periode i arbeidsområdet **Kostnadskontroll**. **Forrige periode** blir deretter beregnet på nytt i samsvar med dette.</blockquote> |
-| Hittil i år         | Saldoen hittil i år vises. Følgende formel brukes:<br>YearToDate (gjeldende regnskapsperiode)<blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdien for **Hittil i år** oppdateres i samsvar med dette.</blockquote> |
-| Gjennomsnitt hittil i år | Gjennomsnittet hittil i år vises. Følgende formel brukes:<br>(YearToDate [gjeldende regnskapsperiode]) ÷ (antall [gjeldende regnskapsperiode])<p><strong>Eksempel</strong></p><ul><li>**Medlem av statistisk dimensjon:** heltidsansatte</li><li>**Gjeldende dato:** 21.03.2017</li><li>**Periode:** regnskapsperiode 1, regnskapsperiode 2, regnskapsperiode 3</li><li>**Størrelse:** 10, 10, 12</li></ul>I dette tilfellet er **Gjennomsnitt hittil i år** = (10 + 10 + 12) ÷ 3 = 10,67<p>Verdien for **Gjennomsnitt hittil i år** kan beregnes for medlemmer av dimensjon for kostnadselement og medlemmer av statistisk dimensjon.</p><blockquote>[!NOTE]<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdiene for **Hittil i år** og **Gjennomsnitt hittil i år** oppdateres i samsvar med dette.</blockquote> |
+| Nåværende periode       | Saldoen for gjeldende regnskapsperiode vises.<blockquote>**Obs:**<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode.</blockquote> |
+| Forrige periode      | Saldoen for forrige regnskapsperiode vises. Følgende formel brukes:<br>Gjeldende regnskapsperiode – 1<blockquote>**Obs:**<br>Forrige periode avledes som standard fra øktdatoen. Du kan velge en bestemt regnskapsperiode som gjeldende periode i arbeidsområdet **Kostnadskontroll**. **Forrige periode** blir deretter beregnet på nytt i samsvar med dette.</blockquote> |
+| Hittil i år         | Saldoen hittil i år vises. Følgende formel brukes:<br>YearToDate (gjeldende regnskapsperiode)<blockquote>**Obs:**<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdien for **Hittil i år** oppdateres i samsvar med dette.</blockquote> |
+| Gjennomsnitt hittil i år | Gjennomsnittet hittil i år vises. Følgende formel brukes:<br>(YearToDate [gjeldende regnskapsperiode]) ÷ (antall [gjeldende regnskapsperiode])<p><strong>Eksempel</strong></p><ul><li>**Medlem av statistisk dimensjon:** heltidsansatte</li><li>**Gjeldende dato:** 21.03.2017</li><li>**Periode:** regnskapsperiode 1, regnskapsperiode 2, regnskapsperiode 3</li><li>**Størrelse:** 10, 10, 12</li></ul>I dette tilfellet er **Gjennomsnitt hittil i år** = (10 + 10 + 12) ÷ 3 = 10,67<p>Verdien for **Gjennomsnitt hittil i år** kan beregnes for medlemmer av dimensjon for kostnadselement og medlemmer av statistisk dimensjon.</p><blockquote>**Obs:**<br>Gjeldende periode fastsettes som standard av øktdatoen. Du kan velge en bestemt regnskapsperiode i arbeidsområdet **Kostnadskontroll**. Den valgte verdien representerer deretter gjeldende periode, og verdiene for **Hittil i år** og **Gjennomsnitt hittil i år** oppdateres i samsvar med dette.</blockquote> |
 
 ### <a name="columns-to-display-for-costs"></a>Kolonner som skal vises for kostnader
 
@@ -88,11 +88,11 @@ I hurtigfanen **Kolonner som skal vises for kostnader** bestemmer regnskapsføre
 
 | Felt                 | Beskrivelse |
 |-----------------------|-------------|
-| Fast kostnad            | Denne kolonnetypen viser den faste kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>[!NOTE]<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
-| Variabel kostnad         | Denne kolonnetypen viser den variable kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>[!NOTE]<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
-| Fast + variabel kostnad | Denne kolonnetypen viser den faste kostnaden og variable kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>[!NOTE]<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
-| Total kostnad            | Denne kolonnetypen viser den totale kostnaden (uklassifisert kostnad, fast kostnad og variabel kostnad).<blockquote>[!NOTE]<br>Kolonnetypen viser balansen til enhver tid.</blockquote> |
-| Uklassifisert kostnad     | Denne kolonnetypen viser den uklassifiserte kostnaden.<blockquote>[!NOTE]<br>Denne kolonnen kan brukes til å validere om alle kostnader er riktig klassifisert av beregningen av indirekte kostnader, eller om du må justere reglene for kostnadsatferd.</blockquote> |
+| Fast kostnad            | Denne kolonnetypen viser den faste kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>**Obs:**<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
+| Variabel kostnad         | Denne kolonnetypen viser den variable kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>**Obs:**<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
+| Fast + variabel kostnad | Denne kolonnetypen viser den faste kostnaden og variable kostnaden, basert på den valgte ID-en for beregning av indirekte kostnader.<blockquote>**Obs:**<br>Denne kolonnetypen viser en saldo bare når en ID for beregning av indirekte kostnader blir valgt for regnskapsperioden.</blockquote> |
+| Total kostnad            | Denne kolonnetypen viser den totale kostnaden (uklassifisert kostnad, fast kostnad og variabel kostnad).<blockquote>**Obs:**<br>Kolonnetypen viser balansen til enhver tid.</blockquote> |
+| Uklassifisert kostnad     | Denne kolonnetypen viser den uklassifiserte kostnaden.<blockquote>**Obs:**<br>Denne kolonnen kan brukes til å validere om alle kostnader er riktig klassifisert av beregningen av indirekte kostnader, eller om du må justere reglene for kostnadsatferd.</blockquote> |
 
 ### <a name="columns-to-display-for-budgeted-costs"></a>Kolonner som skal vises for budsjetterte kostnader
 
@@ -103,12 +103,12 @@ I hurtigfanen **Kolonner som skal vises for budsjetterte kostnader** bestemmer r
 
 | Felt                     | Beskrivelse |
 |---------------------------|-------------|
-| Budsjett                    | Budsjettsaldoer blir vist per de merkede kolonnene.<blockquote>[!NOTE]<br>Saldoene baseres på budsjettversjonene som er valgt i hurtigfanen **Datafiltrering**.</blockquote> |
+| Budsjett                    | Budsjettsaldoer blir vist per de merkede kolonnene.<blockquote>**Obs:**<br>Saldoene baseres på budsjettversjonene som er valgt i hurtigfanen **Datafiltrering**.</blockquote> |
 | Budsjettavvik           | Beregne og vise forskjellene mellom budsjett og faktisk. Følgende formel brukes:<br>Budsjettsaldo – faktisk saldo |
 | Budsjettavvik i %      | Beregne og vise forskjellene mellom budsjett og faktisk i prosent. Følgende formel brukes:<br>(Budsjettsaldo – faktisk saldo) ÷ budsjettsaldo |
-| Terskel for avviksperiode | Angi en terskel for avviket i pengebeløp for gjeldende periode. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**.<blockquote>[!NOTE]<br>Dette feltet gjelder bare for kostnadselementer som representerer utgifter.</blockquote> |
+| Terskel for avviksperiode | Angi en terskel for avviket i pengebeløp for gjeldende periode. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**.<blockquote>**Obs:**<br>Dette feltet gjelder bare for kostnadselementer som representerer utgifter.</blockquote> |
 | Terskel for avviksår   | Angi en terskel for avviket i pengebeløp for året. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**. |
-| Avviksterskel i %      | Angi en terskel for avviket i prosent. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**.<blockquote>[!NOTE]<br>Den samme prosentterskelen gjelder for gjeldende periode og år.</blockquote> |
+| Avviksterskel i %      | Angi en terskel for avviket i prosent. Hvis terskelen overskrides, blir linjen uthevet i rødt i arbeidsområdet **Kostnadskontroll**.<blockquote>**Obs:**<br>Den samme prosentterskelen gjelder for gjeldende periode og år.</blockquote> |
 
 ## <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll
 

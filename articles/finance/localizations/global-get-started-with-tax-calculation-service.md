@@ -2,7 +2,7 @@
 title: Kom i gang med avgiftsberegning
 description: Denne artikkelen forklarer hvordan du konfigurerer avgiftsberegning.
 author: EricWangChen
-ms.date: 03/25/2022
+ms.date: 10/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.custom: intro-internal
 ms.search.form: TaxIntegrationTaxServiceParameters
-ms.openlocfilehash: 2b9af7a8bef9d479c4f2ec59ef533403a74251b1
-ms.sourcegitcommit: adadbc6e355e2ad68a1f6af26a1be1f89dc8eec6
+ms.openlocfilehash: 42898823ffc366351c6f58f1fe9b924678ab4b49
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "9573312"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690390"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
@@ -124,6 +124,10 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 7. Gå til **Avgiftsdatamodell**, utvid filtreet, og velg deretter **Avgiftskonfigurasjon**.
 8. Velg riktig [versjon av avgiftskonfigurasjonen](global-tax-calcuation-service-overview.md#versions) basert på Finance-versjonen, og velg deretter **Importer**.
 9. I arbeidsområdet **Globaliseringsfunksjoner** velger du **Funksjoner**, flisen **Avgiftsberegning** og deretter **Legg til**.
+
+    > [!NOTE]
+    > I versjon 10.0.26 og senere kan du importere en demofunksjon for den juridiske enheten i **DEMF**-demoen. Hvis du vil ha mer informasjon, kan du se [Importere demodata for funksjoner](tax-calculation-import-export-feature.md).
+
 10. Velg en av følgende funksjonstyper:
 
     - **Ny funksjon** – Opprett et funksjonsoppsett som har tomt innhold.
@@ -154,8 +158,8 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     - **Relevans for mva-registreringsnummer for leverandør** – Hvis du har flere avgiftsregistreringsnumre for én leverandør, kan Avgiftsberegning automatisk fastsette riktig avgiftsregistreringsnummer. I matrisen i denne kategorien definerer du reglene som skal brukes til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standard avgiftsregistreringsnummer på avgiftspliktige dokumenter for kjøpstransaksjoner.
     - **Relevans for listekode** – Fastslå verdien i **Listekode**-feltet automatisk ved hjelp av mer fleksible og konfigurerbare regler. I matrisen i denne kategorien definerer du reglene som skal brukes til å avgjøre. Ellers vil Finance og Supply Chain Management fortsette å bruke standardkoden på avgiftspliktige dokumenter.
 
-14. På **Avgiftskoder**-fanen velger du **Legg til** og angir deretter avgiftskoden og en beskrivelse.
-15. Velg **Avgiftskomponent**. Avgiftskomponenten er en gruppe med metoder som ble definert i den forrige versjonen av den valgte avgiftskonfigurasjonen. Følgende avgiftskomponenter er tilgjengelige:
+15. På **Avgiftskoder**-fanen velger du **Legg til** og angir deretter avgiftskoden og en beskrivelse.
+16. Velg **Avgiftskomponent**. Avgiftskomponenten er en gruppe med metoder som ble definert i den forrige versjonen av den valgte avgiftskonfigurasjonen. Følgende avgiftskomponenter er tilgjengelige:
 
     - Etter nettobeløp
     - Etter bruttobeløp
@@ -163,8 +167,8 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     - Etter margin
     - Avgift på avgift
 
-16. Velg **Lagre**. Flere felter blir tilgjengelige, basert på avgiftskomponenten du valgte.
-17. Bruk følgende alternativer til å identifisere avgiftskodens natur:
+17. Velg **Lagre**. Flere felter blir tilgjengelige, basert på avgiftskomponenten du valgte.
+18. Bruk følgende alternativer til å identifisere avgiftskodens natur:
 
     - Er fritak
     - Er bruk avgift
@@ -179,8 +183,8 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 
     Vedlikehold mva-satser og mva-beløpsgrensene for denne avgiftskoden.
 
-18. Gjenta trinn 14 til og med 17 for å legge til alle andre avgiftskoder som kreves.
-19. På fanen **Avgiftsgruppe** velger du kolonnen **Avgiftsgruppe**, legger den til i matrisen som inndatabetingelsen og legger deretter til linjer for å vedlikeholde hoveddataene for avgiftsgruppen.
+19. Gjenta trinn 15 til og med 18 for å legge til alle andre avgiftskoder som kreves.
+20. På fanen **Avgiftsgruppe** velger du kolonnen **Avgiftsgruppe**, legger den til i matrisen som inndatabetingelsen og legger deretter til linjer for å vedlikeholde hoveddataene for avgiftsgruppen.
 
     Her er et eksempel:
 
@@ -191,7 +195,7 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-20. På fanen **Vareavgiftsgruppe** velger du kolonnen **Vareavgiftsgruppe**, legger den til i matrisen som inndatabetingelsen og legger deretter til linjer for å vedlikeholde hoveddataene for vareavgiftsgruppen.
+21. På fanen **Vareavgiftsgruppe** velger du kolonnen **Vareavgiftsgruppe**, legger den til i matrisen som inndatabetingelsen og legger deretter til linjer for å vedlikeholde hoveddataene for vareavgiftsgruppen.
 
     Her er et eksempel:
 
@@ -200,7 +204,7 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     | Full           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Redusert        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-21. På fanen **Relevans for avgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftsgruppe, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Avgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes avgiftsgruppen på transaksjonslinjen.
+22. På fanen **Relevans for avgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftsgruppe, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Avgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes avgiftsgruppen på transaksjonslinjen.
 
     Her er et eksempel:
 
@@ -214,7 +218,7 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     > [!NOTE]
     > Hvis standard mva-gruppe på de avgiftspliktige dokumentlinjene er riktig, lar du denne matrisen stå tom. Hvis du vil ha mer informasjon, kan du se delen [Kjøretidsutforming](#runtime) i denne artikkelen.
 
-22. På fanen **Relevans for vareavgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftskode, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Vareavgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes vareavgiftsgruppen på transaksjonslinjen.
+23. På fanen **Relevans for vareavgiftsgruppe** velger du kolonnene som kreves for å bestemme riktig avgiftskode, og deretter velger du **Legg til**. Angi eller velg verdier for hver kolonne. Feltet **Vareavgiftsgruppe** blir utdataene fra denne matrisen. Hvis denne fanen ikke er konfigurert, brukes vareavgiftsgruppen på transaksjonslinjen.
 
     Her er et eksempel:
 
@@ -228,10 +232,10 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 
     Hvis du vil ha mer informasjon om hvordan avgiftskoder bestemmes i Avgiftsberegning, kan du se [Logikk for fastsettelse av avgiftsgruppe og vareavgiftsgruppe](global-sales-tax-group-determination.md).
 
-23. Angi relevansen for registreringsnumre for kundeavgift, leverandøravgiftsnumre og listekoder, basert på forretningsbehovene.
-24. Velg **Lagre**, og lukk deretter siden.
-25. Velg **Endre status** \> **Fullført**. Når statusen er endret til **Fullført**, kan du ikke lenger redigere versjonen.
-26. Velg **Endre status** \> **Publiser**. Denne versjonen av oppsettet av avgiftsfunksjonen blir skjøvet til det globale repositoriet, og vil være synlig for hver juridiske enhet i Finance.
+24. Angi relevansen for registreringsnumre for kundeavgift, leverandøravgiftsnumre og listekoder, basert på forretningsbehovene.
+25. Velg **Lagre**, og lukk deretter siden.
+26. Velg **Endre status** \> **Fullført**. Når statusen er endret til **Fullført**, kan du ikke lenger redigere versjonen.
+27. Velg **Endre status** \> **Publiser**. Denne versjonen av oppsettet av avgiftsfunksjonen blir skjøvet til det globale repositoriet, og vil være synlig for hver juridiske enhet i Finance.
 
 ## <a name="set-up-tax-calculation-in-dynamics-365"></a>Konfigurer avgiftsberegning i Dynamics 365
 

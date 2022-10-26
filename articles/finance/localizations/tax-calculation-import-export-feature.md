@@ -2,7 +2,7 @@
 title: Importere og eksportere avgiftsberegninger
 description: Denne artikkelen inneholder informasjon om import- og eksportfunksjonaliteten til avgiftsberegningstjenesten.
 author: Kai-Cloud
-ms.date: 11/22/2021
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-11-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 9daee683763d7cb0eb9573497eb4e20cba9b1863
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8666d4971e36279ebd2b1396de7cab37680980e6
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8855180"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690240"
 ---
 # <a name="import-and-export-tax-calculations"></a>Importere og eksportere avgiftsberegninger
 
@@ -98,3 +98,21 @@ Excel-regnearket du lastet ned, inneholder strukturen for rutenettet **Konfigure
 2. I RCS, på funksjonssiden for **Avgiftsberegning** i fanen **Relevans for avgiftsgruppe**, velger du **Legg til** for å sette inn en tom post nederst i rutenettet **Konfigurere avgiftsgrupperelevans**.
 3. Velg **Ctrl+V** for å lime inn de kopierte radene i rutenettet.
 4. Velg **Lagre**.
+
+## <a name="import-feature-demo-data"></a>Importere demodata for funksjoner
+
+Følg denne fremgangsmåten for å importere demodata for funksjoner.
+
+1. Logg på [RCS](https://marketing.configure.global.dynamics.com/).
+2. I arbeidsområdet **Globaliseringsfunksjoner** velger du **Funksjoner**, og velg deretter flisen **Avgiftsberegning**.
+3. Velg **Importer**, og deretter på siden **Importer funksjon fra globalt repositorium** velger du **Synkroniser**. 
+4. I tabellen velger du funksjonen for **avgiftsberegning-funksjon-demodata**, og deretter velger du **Importer**.
+5. Velg **Vis** for å se gjennom avgiftskodene, gruppene og reglene for bruk som er definert i den importerte funksjonen.
+6. I Finance bytter du til den juridiske enheten **DEMF**, og deretter går du til **Avgift** \> **Oppsett** \> **Avgiftskonfigurasjon** \> **Parametere for avgiftsberegning**.
+7. I **Generelt**-fanen velger du **Aktiver tjeneste for avgiftsberegning**.
+8. I feltet **Navn på funksjonsoppsett** velger du **avgiftsberegning-funksjon-demodata**.
+9. Velg en **Utligningsperiode** og **Finansposteringsgruppe** for de nye demoavgiftskodene, og velg deretter **Bekreft**.
+10. Velg **Lagre**.
+
+> [!NOTE]
+> Demofunksjonen for **avgiftsberegning-funksjon-demodata** er basert på funksjonsversjonsversjon **40.54.234** og er utformet for den juridiske enheter i **DEMF**-demoen. Kontroller at Finance og RCS oppgraderes til versjon 10.0.26 eller senere.

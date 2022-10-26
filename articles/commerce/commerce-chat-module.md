@@ -2,19 +2,19 @@
 title: Commerce-nettprat med Omnikanal for Customer Service-modul
 description: Denne artikkelen beskriver Commerce-nettprat med Omnikanal for Customer Service-modulen i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/23/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
-ms.openlocfilehash: b8eaed3eb015e96b1db6fa2297c341ea9d3ff8ad
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 99e8b9d66a04390ab70fd1deff9f95fe28bdfae3
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9473816"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690323"
 ---
 # <a name="commerce-chat-with-omnichannel-for-customer-service-module"></a>Commerce-nettprat med Omnikanal for Customer Service-modul
 
@@ -82,6 +82,9 @@ Følg denne fremgangsmåten for å legge til nettpratmodulen på nettstedets hod
 1. I dialogboksen **Velg moduler** velger du nettpratfragmentet du opprettet tidligere, og deretter velger du **OK**.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere det.
 
+> [!NOTE]
+> Hvis du vil ha en fullstendig liste over konfigurasjonsparametere, kan du se [Proaktive nettpratparametere for Commerce-nettpratmodulen](chat-proactive-chat-parameters.md).
+
 ## <a name="add-commerce-headquarters-as-an-application-tab-for-omnichannel-for-customer-service"></a>Legg til Commerce headquarters som en programfane for Omnikanal for Customer Service
 
 Du kan legge til en programfane for Commerce headquarters i Omnikanal for Customer Service. Live agenter kan deretter bruke brukergrensesnittet for Omnikanal for Customer Service-agentopplevelsen for å få enkel tilgang til Dynamics 365 Commerce Customer Service-modulen som inneholder kontekstuell informasjon for kunden sammen med salgsordreinformasjonen. I tillegg kan kundeserviceagenter legge inn nye ordrer, starte returer og kontrollere ordrestatusinformasjonen.
@@ -115,6 +118,9 @@ Følg denne fremgangsmåten for å aktivere en ny programfane for kundeagenter i
 1. Åpne arbeidsstrømmen du har opprettet for agentene, og velg deretter **Standardøkter** under **Avanserte innstillinger**.
 1. Velg **Legg til eksisterende programfane** under **Programfaner**, og legg deretter til den nye programfanen du opprettet tidligere. Dette trinnet sørger for at en programfane som laster Commerce headquarters i en iFrame-modul, vises når en agent mottar en innkommende nettpratsamtale fra netthandelsområdet.
 
+> [!NOTE]
+> Du kan ikke endre den standard samtaleøktsmalen i arbeidsstyrken. Det kan derfor hende at du vil opprette en ny mal eller duplisere den eksisterende malen for å oppdatere den. Hvis du vil ha mer informasjon, kan du se [Tilknyttede maler med arbeidsflyt](/dynamics365/app-profile-manager/associate-templates).
+
 ## <a name="add-context-variables-in-dynamics-365-omnichannel-for-customer-service"></a>Legge til kontekstvariabler i Dynamics 365 Omnikanal for Customer Service
 
 Følg denne fremgangsmåten for å legge til kontekstvariabler i Dynamics 365 Omnikanal for Customer Service.
@@ -128,3 +134,11 @@ Følg denne fremgangsmåten for å legge til kontekstvariabler i Dynamics 365 Om
 
 > [!NOTE]
 > Hvis du vil lese e-postadressene og navnene til de signerte brukerne fra en netthandelskanal, kan du legge til **e-post** og **navn** som kontekstvariabler av **teksttypen**, i tillegg til kontekstvariabelen **AccountNumber**.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+[Oversikt over Commerce-nettpratfunksjoner](commerce-chat-overview.md)
+
+[Commerce-nettprat med Power Virtual Agents-modul](chat-module-pva.md)
+
+[Proaktive nettpratparametere for Commerce-nettpratmodulen](chat-proactive-chat-parameters.md)

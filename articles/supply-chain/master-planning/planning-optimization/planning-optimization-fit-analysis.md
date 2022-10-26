@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c160a6477dd41fac0f15f57bb0f46def500f4589
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643747"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690001"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -62,7 +62,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | --- | --- | --- | --- |
 | Handlinger | Dekningsgrupper med handlingsberegning aktivert: *\#* | Dette funksjonen støttes nå. | Støttes |
 | Basiskalendere | Kalendere som bruker basiskalender: *\#* | Dette funksjonen støttes nå. | Støttes | 
-| Partidisposisjonskoder | Ikke-nettbare partidisposisjonsstandarder: *\#* | Dette funksjonen venter. Partidisposisjonskoder ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 <!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> |
+| Partidisposisjonskoder | Ikke-nettbare partidisposisjonsstandarder: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, se [Bruke partidisposisjonskoder til å merke partier som tilgjengelige eller ikke tilgjengelige](../../inventory/batch-disposition-codes.md) | Støttes |
 | Leveringskapasitet | Standard ordreinnstillinger med leveringsdatokontroll satt til CTP: *\#* | I Supply Chain Management 10.0.28 og nyere gjør en prosess kalt for *CTP for planleggingsoptimalisering* bekreftede datoer for forsendelse og mottak tilgjengelig etter at den dynamiske planen er kjørt. For eldre versjoner av Supply Chain Management ignoreres den eldre CTP-innstillingen når planleggingsoptimalisering er aktivert. | Støttes |
 | Kopier statisk til dynamisk plan | Kopi av statisk til dynamisk planen er aktivert for parametere for hovedplanlegging. | Planleggingsoptimalisering kopierer ikke den statiske planen til den dynamiske planen, uavhengig av denne innstillingen. Dette konseptet er generelt mindre relevant på grunn av hastigheten og fullføringsregenereringen som gis av planleggingsoptimaliseringen. Hvis det brukes to eller flere planer, bør hovedplanlegging utløses for hver plan. | Ikke tilgjengelig |
 | Autorisasjon | Dekningsgrupper med automatisk autorisasjonshorisont angitt: *\#* | I versjon 10.0.7 og senere støttes autorisasjon som en separat satsvis jobb etter at hovedplanleggingen er fullført (forutsatt at funksjonen *Automatisk autorisasjon med planleggingsoptimalisering* er aktivert i [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Legg merke til at automatisk autorisasjon med planleggingsoptimalisering er basert på ordredatoen (startdato), ikke behovsdatoen (sluttdatoen). Denne virkemåten sikrer at planlagte bestillinger vises i forfallstiden, uten at leveringstiden i autorisasjonshorisonten må tas med. | Støttes |
@@ -104,7 +104,7 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Sikkerhetsmarginer | Hovedplaner med sikkerhetsmargin: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). |  Støttes |
 | Fullføring av sikkerhetslager | Varedekningsposter med "Fyll opp minimum" forskjellig fra "Dagens dato + leveringstid": *\#* | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid*. Denne endringen gjøres for å forberede et forenklet planleggingsoppsett i fremtiden, og for å tilby et gjennomførbart resultat. Hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. Denne virkemåten kan føre til betydelig støy og uønskede planlagte bestillinger. Den beste fremgangsmåten er å endre innstillingen slik at *Dagens dato + leveringstid* brukes. Oppdater hoveddata for å unngå advarsler. | I/T |
 | Salgstilbud | Hovedplaner med salgstilbud aktivert: *\#* | Dette funksjonen venter. Tilbud ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 eller senere |
-| Holdbarhet | Hovedplaner med holdbarhet aktivert: *\#* | Dette funksjonen støttes nå. | Støttes |
+| Holdbarhet | Hovedplaner med holdbarhet aktivert: *\#* | Dette funksjonen venter. | lanseringsbølge 2 i 2022 |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

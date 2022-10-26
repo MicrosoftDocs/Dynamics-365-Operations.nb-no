@@ -2,19 +2,19 @@
 title: Vanlige spørsmål om asynkron kundeopprettingsmodus
 description: Denne artikkelen gir svar på vanlige spørsmål om asynkron kundeopprettingsmodus i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-12-17
-ms.openlocfilehash: bd5741aeb3278f1d40d63bb02ca57571a907dc21
-ms.sourcegitcommit: b1df4db7facb5e7094138836c41a65c4a158f01d
+ms.openlocfilehash: 64c895fb9f3e55f7680759fa72626be6660aa67c
+ms.sourcegitcommit: 40c80a617b903c2b26e44b41147e0021c5cb680d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "9474076"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9690209"
 ---
 # <a name="asynchronous-customer-creation-mode-faq"></a>Vanlige spørsmål om asynkron kundeopprettingsmodus
 
@@ -44,5 +44,10 @@ Data som hurtigbufres i Commerce Scale Unit (CSU), gjenspeiles kanskje ikke umid
 
 Kontroller at følgende handlinger er utført i den rekkefølgen de er oppført her.
 
-1. Kjør CDX P-jobben i Commerce headquarters for å sikre at asynkrone kundedata som er lagret i tabellen **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION** og **RETAILASYNCCUSTOMERATTRIBUTEV2**, er tilgjengelige i Commerce headquarters.
+1. Kjør CDX P-jobben i Commerce headquarters for å sikre at asynkrone kundedata som er lagret i tabellen **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION** og **RETAILASYNCCUSTOMERATTRIBUTEV2**.
 1. Kjør den satsvise jobben **Synkroniser kunder og kanalforespørsler** i Commerce headquarters. Når den satsvise jobben er utført, vil alle poster som er behandlet fra tabellene ovenfor, ha feltet **OnlineOperationCompleted** satt til **1**.
+
+### <a name="how-do-i-know-which-customer-management-in-asynchronous-mode-operation-has-failed-and-how-do-i-make-changes-if-they-are-required"></a>Hvordan vet jeg hvilken kundebehandling i asynkron modus som har mislyktes, og hvordan kan jeg foreta endringer hvis de er nødvendige?
+
+Hvis du vil vise alle asynkrone modusoperatsjoner og synkroniseringsstatusen, går du til Commerce headquarters og **Commerce and Retail \> Kunder \> Kundesynkroniseringsstatus**. Hvis du vil foreta endringer, redigerer du en bestemt operasjon, oppdaterer feltene, velger **Lagre** og deretter **Synkroniser** for å synkronisere endringene.
+

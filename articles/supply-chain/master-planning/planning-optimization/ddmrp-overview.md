@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: d894b83afe822e013c0c4375e5cfe5e7e8ac8d1d
-ms.sourcegitcommit: 529fc10074b06f4c4dc52f2b4dc1f159c36e8dbc
+ms.openlocfilehash: 31b45fdb92cf8a590ff77104f0c8015fb4d329d5
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186751"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689495"
 ---
 # <a name="demand-driven-material-requirements-planning-ddmrp-overview"></a>Oversikt over DDMRP (etterspørselsdrevet planlegging av materialkrav)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Firmaer har i mange år brukt planlegging av materialkrav (MRP) som et system for beregning av materialene og komponentene som kreves for å produsere et produkt. Forsyningskjedene er imidlertid nå endret. Deler har lengre leveringstider fordi de i økende grad blir hentet fra utlandet. Derfor er det mange firmaer som har rapportert om tomme lagre eller overfylte lagre, fordi de ikke vet hvor mye beholdning de skal ha på lager. Det er også større markedssvingninger (noen ganger unøyaktig prognose), og kunder etterspør produkter på kort leveringstid. Derfor er det forsyningskjedemangler over hele verden. I tillegg medfører MRP-verktøy ofte at planleggere har tusenvis av handlinger å utføre. Derfor er det vanskelig å vite hva du skal fokusere på. Ofte er løsningen på mange av disse spørsmålene å bytte til DDMRP (etterspørselsdrevet planlegging av materialkrav).
 

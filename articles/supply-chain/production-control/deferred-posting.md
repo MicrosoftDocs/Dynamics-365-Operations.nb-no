@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2022-08-02
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 7a8327552d9e6c38721fdac9ee1795e61f90f329
-ms.sourcegitcommit: 8d072505f66f507aafbaae65bedf3b530eb6cb7b
+ms.openlocfilehash: ee767a5d7c3dca2681861802ae42d7a07217c54d
+ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9266489"
+ms.lasthandoff: 10/18/2022
+ms.locfileid: "9689347"
 ---
 # <a name="make-finished-goods-physically-available-before-posting-to-journals"></a>Gjør ferdigvarer fysisk tilgjengelige før postering til journaler
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Når en arbeider rapporterer en produsert vare som ferdig, registrerer systemet den som tilgjengelig for mer fysisk behandling (for eksempel forsendelse eller puten). I løpet av denne prosessen posteres også en eller flere journaler (for eksempel rapporten som ferdigjournalen, plukklistejournalen og rutekortjournalen). Hvis du vil gjøre varene fysisk tilgjengelige før alle posteringene er behandlet, kan du konfigurere systemet til å utsette journalposteringene. Utsatte posteringer behandles deretter av en satsvis jobb som behandler posteringene som systemressurser tillater.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64290ebd47295bea5bc4bf843f7a9d9528375ce7
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b868db915385a8433845e810cf169f1bf1686e3d
+ms.sourcegitcommit: dca54dd3afc7c94795d89c63050b105df2c48e3f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8845381"
+ms.lasthandoff: 10/15/2022
+ms.locfileid: "9682885"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Opprette leverandørbetalinger ved hjelp av et betalingsforslag
 
@@ -111,7 +111,7 @@ Dimensjonskontroll lar deg kontrollere gruppering av genererte linjer etter beta
 -   **Dimensionskontroll**-feltet er aktivert uten å definere dimensjonene ytterligere. Betalingsforslaget opprettes uten å ta hensyn til dimensjoner. Den opprettede transaksjonen arver ingen dimensjoner fra den utlignede posten.
 -   **Dimensionskontroll**-feltet er aktivert og de ytterligere dimensjonene er aktivert. Nå kan du definere hvordan dimensjonene skal kopieres til journalen. For eksempel: • Merk av for **BusinessUnit** for å opprette et betalingsforslag per forretningsenhet for betalingsmåten, • merk av for **CostCenter** for å opprette et betalingsforslag per kostsenter for betalingsmåten
 
-> [[!NOTE]
+>[!NOTE]
 > Hvis du velger flere dimensjoner i det tredje alternativet, opprettes et betalingsforslag for dimensjonskombinasjonen.
 
 #### <a name="bank-account-selection"></a>Bankkontovalg
