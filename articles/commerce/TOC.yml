@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Commerce
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.31 (februar 2023)
+                  href: get-started/whats-new-commerce-10-0-31.md
                 - name: Commerce 10.0.30 (november 2022)
                   href: get-started/whats-new-commerce-10-0-30.md
                 - name: Commerce 10.0.29 (oktober 2022)
@@ -568,7 +570,9 @@
                       href: call-center-refund-payments.md
                     - name: 'Kredittkortoppsett, godkjenning og registrering'
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
-                    - name: Konfigurere kontantstørrelser for salgsstedet
+                    - name: Begrens bruk av betalingstoken
+                      href: dev-itpro/limit-token-usage.md
+                    - name: Konfigurer kontantstørrelser for salgssted
                       href: cash-denominations.md
                     - name: Konfigurer kredittkortbehandling
                       href: tasks/configure-credit-card-processing.md
@@ -1236,6 +1240,8 @@
                       href: cart-icon-module.md
                     - name: Kassemodul
                       href: add-checkout-module.md
+                    - name: Feilreferansekoder for kassemodul
+                      href: checkout-module-error-codes.md
                     - name: Betalingsmodul
                       href: payment-module.md
                     - name: Leveringsadressemodul

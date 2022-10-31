@@ -12,7 +12,7 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Supply Chain Management
                   href: get-started/whats-new-home-page.md
-                - name: Supply Chain Management 10.0.31 (februar 2022)
+                - name: Supply Chain Management 10.0.31 (februar 2023)
                   href: get-started/whats-new-scm-10-0-31.md
                 - name: Supply Chain Management 10.0.30 (november 2022)
                   href: get-started/whats-new-scm-10-0-30.md
@@ -3239,13 +3239,15 @@
               href: transportation/transportation-management-engines.md
             - name: Opprett en ny transportstyringsmotor
               href: transportation/create-new-transportation-management-engine.md
-            - name: Knytte en indeks for drivstoff til en operatør som et tilbehørsgebyr
+            - name: Knytt en indeks for drivstoff til en operatør som et tilbehørsgebyr
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
             - name: USMCA-sertifisering av opprinnelse
               href: transportation/usmca-certification-of-origin.md
-            - name: Opprette et fraktbrev
+            - name: Kommersielle fakturaer
+              href: transportation/commercial-invoice.md
+            - name: Opprett et fraktbrev
               href: transportation/create-bill-of-lading.md
-            - name: Planlegge frakttransportruter
+            - name: Planlegg frakttransportruter
               href: transportation/plan-freight-transportation-routes-multiple-stops.md
             - name: Planlegge laster ved hjelp av hubkonsolidering
               items:
@@ -3433,8 +3435,14 @@
                       href: warehousing/pack-materials-packing-material-fees.md
                     - name: Pakk beholdere for forsendelse
                       href: warehousing/packing-containers.md
+                    - name: Skriv ut containeretiketter
+                      href: warehousing/print-container-labels.md
                     - name: Pakkearbeid for pakking av utgående beholdere og behandling av forsendelser
                       href: warehousing/packing-work.md
+                    - name: Pakk containere med mobilappen Warehouse Management
+                      href: warehousing/warehouse-app-packing-containers.md
+                    - name: Eksempelscenario – Pakk containere med mobilappen Warehouse Management
+                      href: warehousing/warehouse-app-pack-containers-scenario.md
                     - name: Definer ny tildeling av vare for plukking med mangler
                       href: warehousing/tasks/set-up-short-picking-item-reallocation.md
                     - name: Systemstyrt arbeidssekvensering
@@ -3691,16 +3699,22 @@
                       href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                     - name: Systemgruppering i en åpen arbeidsliste
                       href: warehousing/system-group-on-open-work-list.md
-                    - name: Dokumentrutingsoppsett for nummerskiltetiketter
+                    - name: Etikettoppsett for dokumentruting
                       href: warehousing/document-routing-layout-for-license-plates.md
                     - name: GS1-strekkoder og QR-koder
                       href: warehousing/gs1-barcodes.md
-                    - name: Konfigurere lager for overføringsordrer
+                    - name: Konfigurer lager for overføringsordrer
                       href: warehousing/transfer-orders-warehouse.md
                 - name: Oppgradering og overføring
                   items:
                     - name: Oppgrader lagerstyringsprosesser fra Microsoft Dynamics AX 2012 til økonomi og drift
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Lagertelemetri
+              items:
+                - name: Aktiver lagertelemetri med Application Insights
+                  href: warehousing/application-insights-warehousing.md
+                - name: Overvåk mobilenhetsbruk og -ytelse
+                  href: warehousing/application-insights-wma.md
         - name: Utvikling av Supply Chain Management
           items:
             - name: Veiledning til utvikling av Gantt-kontroll
