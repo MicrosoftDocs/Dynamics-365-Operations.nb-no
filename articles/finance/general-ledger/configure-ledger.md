@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d15980b05cfac68f2e2441c86b4506c13b38b4d5
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 14d6ba013a93756f86e959756dd3073851881095
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8864346"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713896"
 ---
 # <a name="configure-ledgers"></a>Konfigurer finans
 
@@ -42,7 +42,7 @@ Hver juridiske enhet i Dynamics 365 Finance kan konfigureres slik at den bruker 
 
 Vær oppmerksom på at hvis du har flere kontostrukturer, kan du bare velge kontostrukturer som ikke har overlappende kombinasjoner av hovedkontoer og finansdimensjoner. En av kontostrukturene er for eksempel konfigurert slik at den legger til en forretningsenhet for hovedkontoer mellom 1000 og 1999. I en annen kontostruktur har du lagt til en Avdeling-finansdimensjon for hovedkontoer som begynner med 1. I dette tilfellet kan bare én av kontostrukturene legges til i samme juridiske enhet.
 
-Hvis du vil konfigurere kontostrukturer for finans, velger du **Legg til** i hurtigfanen **Kontostrukturer** på **Finans**-siden. Deretter velger du en kontostruktur i listen, og til slutt velger du **Velg**. Det kan ta noen minutter før kontostrukturene legges til og lagres. Vær oppmerksom på at kontostrukturene du velger, må være aktive. Ellers blir ikke detaljene i kontostrukturene virksomme i de juridiske enhetene der de er koblet.
+Hvis du vil konfigurere kontostrukturer for finans, velger du **Legg til** i hurtigfanen **Kontostrukturer** på **Finans**-siden. Deretter velger du en kontostruktur i listen, og til slutt velger du **Velg**. Det kan ta noen minutter før kontostrukturene legges til og lagres. Når den endrede kontostrukturen lagres i finans, starter prosessen for å synkronisere alle uposterte transaksjoner. Du må vente til endringen er fullført for gjeldende finans i den juridiske enheten der endringen utføres, før du kan foreta en kontostrukturendring for en økonomimodul i en annen juridisk enhet. Vær oppmerksom på at kontostrukturene du velger, må være aktive. Ellers blir ikke detaljene i kontostrukturene virksomme i de juridiske enhetene der de er koblet.
 
 Du kan fjerne en kontostruktur ved å velge **Fjern** i hurtigfanen **Kontostrukturer** på **Finans**-siden. Vær oppmerksom på at hvis du fjerner en kontostruktur fra finans, fjerner du ikke eventuelle transaksjoner som ble postert ved hjelp av konfigurasjonen for denne kontostrukturen.
 

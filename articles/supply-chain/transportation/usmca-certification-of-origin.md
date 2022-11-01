@@ -6,18 +6,19 @@ ms.date: 08/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-10-23
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: edf235351fc7cbffc6bf80c7e05c53159c1e8a7f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c67fd12c31b475b323bc4c7feee4cc5267da7793
+ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336553"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "9714706"
 ---
 # <a name="usmca-certification-of-origin"></a>USMCA-sertifisering av opprinnelse
 
@@ -57,7 +58,7 @@ Hvis du vil ha mer informasjon om hvert av disse elementene og hvordan du finner
 Hvis du vil skrive ut en USMCA-sertifisering av opprinnelig dokument for en forsendelse, gjør du følgende:
 
 1. Gjør ett av følgende:
-    - Gå til **Transportstyring > Forsendelser > Alle forsendelser**, og velg forsendelsen du vil skrive ut dokumentet for.
+    - Gå til **Transportstyring \> Planlegging \> Forsendelser \> Alle forsendelser**, og velg forsendelsen du vil skrive ut dokumentet for.
     - Åpne siden **Forsendelsesdetaljer** for forsendelsen du vil skrive ut dokumentet for (det finnes flere måter å komme hit på, deriblant fra siden **Alle forsendelser**).
 1. I handlingsruten åpner du fanen **Forsendelser**, og i gruppen **Skriv ut** velger du **USMCA-sertifikat av opprinnelse**.
 1. Dialogboksen **Sertifikat eller opprinnelse** åpnes. Angi innstillingene som er beskrevet i følgende underdeler, og velg deretter **OK** for å generere dokumentet.

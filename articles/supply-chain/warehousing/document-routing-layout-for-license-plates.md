@@ -1,5 +1,5 @@
 ---
-title: Dokumentrutingsoppsett for nummerskiltetiketter
+title: Etikettoppsett for dokumentruting
 description: Denne artikkelen beskriver hvordan du kan bruke formateringsmetoder til å skrive ut verdier på etiketter.
 author: perlynne
 ms.date: 04/01/2020
@@ -13,23 +13,24 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 10e63353cda93d666d7f23f59508b73e5492c3cc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a4e0c16b71c257cae832870ca58679884047ea16
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847882"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708652"
 ---
-# <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutingsoppsett for nummerskiltetiketter
+# <a name="document-routing-label-layout"></a>Etikettoppsett for dokumentruting
 
 [!include [banner](../includes/banner.md)]
 
+Denne artikkelen beskriver hvordan du oppretter oppsett for nummerskilt, container og bølgeetiketter. Der finner du også retningslinjer for bruk av ZPL (Zebra Programming Language) som brukes til å opprette oppsett.
 
-Dokumentrutingsoppsettet definerer oppsettet til nummerskiltetiketter og dataene som skrives ut på dem. Du konfigurerer utløsingspunkt for utskrift når du definerer menyelementer og arbeidsmaler for mobilenheter.
+Dokumentrutingsetikettoppsett definerer måten etiketter defineres på og dataene som skrives ut på dem. Du konfigurerer utløsingspunkt for utskrift når du definerer menyelementer og arbeidsmaler for mobilenheter.
 
-I et typisk scenario vil mottaksassistenter på lageret skrive ut nummerskiltetiketter umiddelbart etter at de har registrert innholdet på paller som ankommer mottaksområdet. De fysiske etikettene brukes på pallene. De kan deretter brukes til validering som en del av plasseringsprosessen som følger, og fremtidige utgående plukkoperasjoner.
+Informasjonen i denne artikkelen gjelder alle ruteetikettoppsett for dokumenter, inkludert oppsett for [nummerskiltetiketter](tasks/license-plate-label-printing.md), [containeretiketter](print-container-labels.md) og [bølgeetiketter](configure-wave-label-printing.md).
 
-Du kan skrive ut svært komplekse etiketter, forutsatt at utskriftsenheten kan tolke teksten som sendes til den. Et ZPL-oppsett (Zebra Programming Language) som inneholder en strekkode, kan for eksempel ligne på følgende eksempel.
+Du kan skrive ut svært komplekse etiketter, forutsatt at utskriftsenheten kan tolke teksten som sendes til den. Et ZPL-oppsett som inneholder en strekkode, kan for eksempel ligne på følgende eksempel.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -45,11 +46,9 @@ Du kan skrive ut svært komplekse etiketter, forutsatt at utskriftsenheten kan t
 ^PQ1,,,Y^XZ
 ```
 
-Som en del av etikettutskriftsprosessen vil teksten `$LicensePlateId$` i dette eksemplet erstattes med en dataverdi.
+Som en del av etikettutskriftsprosessen vil teksten `$LicensePlateId$` i dette eksemplet erstattes med en dataverdi. Flere generelt tilgjengelige verktøy for etikettgenerering kan hjelpe deg med å formatere teksten for etikettoppsettet. Mange av disse verktøyene støtter formatet `$FieldName$`. I tillegg bruker Microsoft Dynamics 365 Supply Chain Management en spesiell formateringslogikk som en del av felttilordningen for dokumentrutingsoppsettet.
 
 Hvis du vil se hvilke verdier som blir skrevet ut, går du til **Lagerstyring \> Forespørsler og rapporter \> Nummerskiltetiketter**.
-
-Flere generelt tilgjengelige verktøy for etikettgenerering kan hjelpe deg med å formatere teksten for etikettoppsettet. Mange av disse verktøyene støtter formatet `$FieldName$`. I tillegg bruker Microsoft Dynamics 365 Supply Chain Management en spesiell formateringslogikk som en del av felttilordningen for dokumentrutingsoppsettet.
 
 ## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funksjonen for systemet
 
@@ -137,7 +136,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## <a name="more-information-about-how-to-print-labels"></a>Mer informasjon om hvordan du skriver ut etiketter
 
-Hvis du vil ha mer informasjon om hvordan du definerer og skriver ut etiketter, kan du se [Aktivere utskrift av nummerskiltetikett](tasks/license-plate-label-printing.md).
+Hvis du vil ha mer informasjon om hvordan du definerer og skriver ut etiketter, kan du se følgende artikler:
 
+- [Utskrift av nummerskiltetikett](tasks/license-plate-label-printing.md)
+- [Skriv ut containeretiketter](print-container-labels.md)
+- [Bølgeetikettutskrift](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

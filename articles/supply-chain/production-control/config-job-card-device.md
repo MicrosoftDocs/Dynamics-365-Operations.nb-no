@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0f42ad593f59f716fb6cb535d73654d3549ba00e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c3024ca2e3b7eb24ac9a171def4a72cde7493a7a
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8860732"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708624"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobbkort for enheter
 
@@ -73,7 +73,7 @@ I **Generelt**-hurtigfanen kan du konfigurere hvert av de ulike alternativene so
 - **Ressursgruppe** – Velg en ressursgruppe som skal brukes som standard filterkriterium for listen over jobber som vises for hver arbeider. Bare jobber som er planlagt på ressursgrupper under den valgte ressursgruppen, vises i utgangspunktet av enheten. Hvis **Tillat at arbeidere kan angi personlige filtre** er aktivert, kan arbeidere redigere denne verdien. Hvis ikke vil dette filteret alltid gjelde når enhetskonfigurasjonen er aktiv.
 - **Ressurs** – Velg en ressurs som skal brukes som standard filterkriterium for listen over jobber som vises for hver arbeider. Bare jobber som er planlagt på den valgte ressursen, vises i utgangspunktet av enheten. Hvis **Tillat at arbeidere kan angi personlige filtre** er aktivert, kan arbeidere redigere denne verdien. Hvis ikke vil dette filteret alltid gjelde når enhetskonfigurasjonen er aktiv.
 - **Generer nummerskilt** – sett dette alternativet til **Ja** for å generere et nytt nummerskilt hver gang en arbeider bruker en jobbkortenhet for å ferdigmelde. Skiltnummeret genereres fra en nummerserie som er definert på **Parametere for lagerstyring**-siden. Når den er satt til **Nei**, må arbeiderne angi et eksisterende nummerskilt når de ferdigmelder seg.
-- **Skriv ut etikett** – sett dette alternativet til **Ja** for å skrive ut en nummerskiltetikett når en arbeider bruker jobbkortenheten til å ferdigmelde. Konfigurasjonen av etiketten defineres i dokumentruting, som beskrevet i [Dokumentrutingsoppsett for nummerskiltetiketter](../warehousing/document-routing-layout-for-license-plates.md).
+- **Skriv ut etikett** – sett dette alternativet til **Ja** for å skrive ut en nummerskiltetikett når en arbeider bruker jobbkortenheten til å ferdigmelde. Konfigurasjonen av etiketten defineres i dokumentruting, som beskrevet i [Etikettoppsett for dokumentruting](../warehousing/document-routing-layout-for-license-plates.md).
 
 <a name="assigned-users"></a>
 

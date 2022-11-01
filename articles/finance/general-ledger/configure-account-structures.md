@@ -2,7 +2,7 @@
 title: Konfigurer kontostrukturer
 description: Denne artikkelen gir informasjon om kontostrukturer og finansdimensjoner.
 author: aprilolson
-ms.date: 07/12/2022
+ms.date: 10/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f816f0fc894b902c444a3113abfd48d4146d485
-ms.sourcegitcommit: e59990780830ac8e3382fea5df851abe86fbf496
+ms.openlocfilehash: b3fbdd6e2cac61c358848a21e1126bea900e86b2
+ms.sourcegitcommit: c6c2486be2359bd30106f7f52bda788239147d8c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "9141286"
+ms.lasthandoff: 10/22/2022
+ms.locfileid: "9713950"
 ---
 # <a name="configure-account-structures"></a>Konfigurer kontostrukturer
 
@@ -28,7 +28,7 @@ ms.locfileid: "9141286"
 
 Kontostrukturer bruker hovedkontoen og finansdimensjonene for å opprette et sett med regler som bestemmer rekkefølgen og verdiene som brukes når du skriver inn kontonummeret. Du kan definere så mange kontostrukturer du trenger, for bedriften. Kontostrukturene tilordnes et firmas finansoppsett, slik at de kan deles.
 
-Når du oppretter en kontostruktur, er det maksimale antallet segmenter 11. Hvis du trenger flere segmenter enn dette, må du nøye vurdere oppsettet og kravene, fordi det påvirker brukeropplevelsen. Vurder om et segment kan hentes ut i et rapporteringsscenario med et hierarki i stedet for under dataregistrering, eller ved å bruke et brukerdefinert felt. Hvis du for eksempel vil rapportere om sted, men du kan bruke sted etter avdeling eller kostsenter, trenger du ikke sted som en finansdimensjon. Hvis etter evaluering bestemmer at mer enn 11 segmenter kreves, kan du legge til flere segmenter ved hjelp av avanserte regler.
+Når du oppretter en kontostruktur, er det maksimale antallet segmenter 11. Hvis du trenger flere enn 11 segmenter, må du nøye vurdere oppsettet og kravene, fordi det påvirker brukeropplevelsen. Vurder om et segment kan hentes ut i et rapporteringsscenario med et hierarki i stedet for under dataregistrering, eller ved å bruke et brukerdefinert felt. Hvis du for eksempel vil rapportere om sted, men du kan bruke sted etter avdeling eller kostsenter, trenger du ikke sted som en finansdimensjon. Hvis etter evaluering bestemmer at mer enn 11 segmenter kreves, kan du legge til flere segmenter ved hjelp av avanserte regler.
 
 Kontostrukturer krever hovedkontoen. Hovedkontoen behøver ikke å være det første segmentet i strukturen, men det identifiserer hvilken kontostruktur som brukes under kontonummeroppføring. Derfor kan en hovedkontoverdi bare finnes i én struktur som er tilordnet til finans, slik at de ikke overlapper. Når kontostrukturen er identifisert, filtreres listen over tillatte verdier for å veilede brukeren til å plukke bare gyldige dimensjonsverdier, og dermed redusere muligheten for en feil journaloppføring.
 
@@ -42,13 +42,13 @@ For å illustrere en anbefalt fremgangsmåte for å definere en kontostruktur, l
 
 |Hovedkonto          | Forretningsenhet    |
 |----------------------|-----------|
-|100000..399999 | *;” “|
+|100000..399999 | *;"&nbsp;"|
 
 **Resultatkontostruktur**
 
 |Hovedkonto          | Forretningsenhet    |Avdeling          | Kostsenter    | &nbsp; |
 |----------------------|------------------|--------------------|-----------|---|
-|400000..999999 | \*;” “| \*;” “| \*;” “| \*;” “|
+|400000..999999 | \*;"&nbsp;"| \*;"&nbsp;"| \*;"&nbsp;"| \*;"&nbsp;"|
 
 **Avansert regel for å legge til en kunde**
 
@@ -56,9 +56,9 @@ Vilkår: Der hovedkontoen er mellom 400000 og 499999, legg til kunde. Den kan ik
 
 |Kunde         |
 |-----------------|
-|* |
+|\* |
 
-I dette forenklede eksempelet er alle verdier og tomme tillatt, så * og “ “ brukes.
+I dette forenklede eksempelet er alle verdier og tomme tillatt, så \* og "&nbsp;" brukes.
 
 ## <a name="segments-and-allowed-values"></a>Segmenter og tillatte verdier
 **Segmenter** og **Tillatte verdidetaljer**-delen inneholder en rutenettlignende opplevelse for å angi reglene som skal følges om validering under postering. Du kan skrive direkte i cellene i rutenettet, importere det fra Excel eller bruke **Tillatte verdidetaljer**-delen for å lede deg gjennom det.
@@ -77,14 +77,17 @@ Her er et eksempel på **Resultatkontostruktur**.
 
 Når du angir en journal og velger en konto i resultatområdet, vil valg av forretningsenhet "002" gjøre at verdiene 022 og 014 er standard på kontokontrollen. Dette vil også oppstå med siden for regnskapsdistribusjon. 
 
-## <a name="more-than-7-criteria-needed"></a>Mer enn 7 kriterier er nødvendig
+## <a name="more-than-seven-criteria-needed"></a>Mer enn syv kriterier er nødvendig
 
-Hvis du har mer enn 7 vilkår som kreves, kan du fortsette å legge dem på neste linje. Du vil se når du arbeider i **Tillatte verdidetaljer**-delen at **+Legg til ny**-vilkåret ikke lenger er aktivt etter at det syvende vilkåret er angitt. Dette skyldes mange faktorer som: 
+Hvis du har mer enn syv vilkår som kreves, kan du fortsette å legge dem på neste linje. Du vil se når du arbeider i **Tillatte verdidetaljer**-delen at **+Legg til ny**-vilkåret ikke lenger er aktivt etter at det syvende vilkåret er angitt. Dette skyldes mange faktorer som: 
  - Kolonnebredde 
  - Hvordan dataene er lagret 
  - Ytelsen til **Tillatte verdidetaljer**-kontrollen
  - Brukervennlighet  
- 
+
+> [!NOTE]
+> Oppgradering fra Microsoft Dynamics AX 2012 der mer enn sju kriterier er angitt. Den må korrigeres før du fullfører oppgraderingen til finans- og operasjonsapper. 
+
 For å fortsette å legge til flere vilkår, klikk på **Duplikat i segmentet** og **Tillatte verdier-del**. Dette kopierer kriteriene til en ny linje. Du kan deretter skrive over eller endre **Tillatt verdidetaljer**-delen.
 
 ## <a name="best-practices"></a>Anbefalte fremgangsmåter
@@ -103,7 +106,7 @@ Når du definerer kontostrukturer, finnes det noen gode fremgangsmåter du kan f
 - Ikke bare sett inn en stjerne for hvert segment i kontostrukturen og bare stol på de avanserte reglene. Dette kan være vanskelig å administrere og fører ofte til brukerfeil under vedlikehold som kan gjøre at systemet ikke kan postere.
 
 ## <a name="account-structure-activation"></a>Aktivering av kontostruktur
-Når du er fornøyd med det nye oppsettet eller en endring i en kontostruktur, må du aktivere den. Hvis en kontostruktur tilordnes en finanskonto, kan denne aktiveringen være en tidkrevende prosess, fordi alle ikke-posterte transaksjoner i systemet må være synkronisert med den nye strukturen. Posterte transaksjoner påvirkes ikke av kontostrukturendringer.
+Når du er fornøyd med det nye oppsettet eller en endring i en kontostruktur, må du aktivere den. Hvis en kontostruktur tilordnes en finanskonto, kan denne aktiveringen være en tidkrevende prosess, fordi alle ikke-posterte transaksjoner i systemet må være synkronisert med den nye strukturen. Posterte transaksjoner påvirkes ikke av kontostrukturendringer. Fra og med applikasjonsversjon 10.0.31 er en ny funksjon kalt **Ytelsesforbedring for kontostrukturaktivering** tilgjengelig i funksjonsadministrasjon. Hvis du vil ha mer informasjon om denne nye funksjonen for aktivering av kontostruktur, kan du se [Ytelsesforbedring for kontostrukturaktivering](account-structure-improvement.md). 
 
 Hvis du vil ha mer informasjon, se [Planlegge kontoplanen](plan-chart-of-accounts.md), [Finansdimensjoner](financial-dimensions.md) og [Angi kombinasjoner av konto og dimensjon (segmentert oppføringskontroll)](enter-account-dimension-combinations-segmented-entry-control.md).
 

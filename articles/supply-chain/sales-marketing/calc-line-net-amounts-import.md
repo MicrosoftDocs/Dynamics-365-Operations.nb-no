@@ -1,6 +1,6 @@
 ---
-title: Beregne linjenettobeløp på nytt når du importerer salgsordrer, tilbud og returer
-description: Denne artikkelen beskriver om og hvordan systemet omberegner nettobeløp på linjer når salgsordrer, tilbud og returer importeres. Det forklarer også hvordan du kan kontrollere virkemåten i ulike versjoner av Microsoft Dynamics 365 Supply Chain Management.
+title: Beregne linjenettobeløp på nytt når du importerer salgsordrer og tilbud
+description: Denne artikkelen beskriver om og hvordan systemet omberegner nettobeløp på linjer når salgsordrer og tilbud importeres. Det forklarer også hvordan du kan kontrollere virkemåten i ulike versjoner av Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 08/05/2022
 ms.topic: article
@@ -11,25 +11,25 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2022-06-08
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 08b30044a93e46c9c83848b60d69c595bc774570
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: edda0c016130e2a273adf8f3d3e00e2d3ae9d5c6
+ms.sourcegitcommit: ce58bb883cd1b54026cbb9928f86cb2fee89f43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335563"
+ms.lasthandoff: 10/25/2022
+ms.locfileid: "9719341"
 ---
-# <a name="recalculate-line-net-amounts-when-importing-sales-orders-quotations-and-returns"></a>Beregne linjenettobeløp på nytt når du importerer salgsordrer, tilbud og returer
+# <a name="recalculate-line-net-amounts-when-importing-sales-orders-and-quotations"></a>Beregne linjenettobeløp på nytt når du importerer salgsordrer og tilbud
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver om og hvordan systemet omberegner nettobeløp på linjer når salgsordrer, tilbud og returer importeres. Det forklarer også hvordan du kan kontrollere virkemåten i ulike versjoner av Microsoft Dynamics 365 Supply Chain Management.
+Denne artikkelen beskriver om og hvordan systemet omberegner nettobeløp på linjer når salgsordrer og tilbud importeres. Det forklarer også hvordan du kan kontrollere virkemåten i ulike versjoner av Microsoft Dynamics 365 Supply Chain Management.
 
 ## <a name="how-updates-to-net-line-amounts-are-calculated-on-import"></a>Hvordan oppdateringer til nettolinjebeløp beregnes ved import
 
-Supply Chain Management-versjon 10.0.23 innført i [feilretting 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Denne feilrettingen endret betingelsene som **Nettobeløp**-feltet på en linje kan oppdateres eller beregnes på nytt under oppdateringer til eksisterende salgsordrer, returer og tilbud importeres. I versjon 10.0.29 kan du erstatte dette selskapet ved å slå på funksjonen *Beregn linjenettobeløp ved import*. Denne funksjonen har en lignende effekt, men gir en global innstilling som gjør det mulig å gå tilbake til den gamle virkemåten hvis du må det. Selv om den nye virkemåten gjør at systemet arbeider på en mer fornuftig måte, kan det føre til uventede resultater i bestemte scenarioer der alle følgende betingelser er oppfylt:
+Supply Chain Management-versjon 10.0.23 innført i [feilretting 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418). Denne feilrettingen endret betingelsene som **Nettobeløp**-feltet på en linje kan oppdateres eller beregnes på nytt under oppdateringer til eksisterende salgsordrer og tilbud importeres. I versjon 10.0.29 kan du erstatte dette selskapet ved å slå på funksjonen *Beregn linjenettobeløp ved import*. Denne funksjonen har en lignende effekt, men gir en global innstilling som gjør det mulig å gå tilbake til den gamle virkemåten hvis du må det. Selv om den nye virkemåten gjør at systemet arbeider på en mer fornuftig måte, kan det føre til uventede resultater i bestemte scenarioer der alle følgende betingelser er oppfylt:
 
 - Data som oppdaterer eksisterende poster, importeres via *Salgsordrelinjer V2*, *Salgstilbudslinjer V2* eller enheten for *returordrelinjer* ved hjelp av OData (Open Data Protocol), inkludert situasjoner der du bruker skrive- eller import-/eksport via Excel og noen integreringer fra tredjeparter.
-- [Policyer for forretningsavtaleevaluering](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) som er på plass, etablerer en endringspolicy som begrenser oppdateringer i **Nettobeløp**-feltet på salgsordrelinjer, salgstilbudslinjer eller returordrelinjer.
+- [Policyer for forretningsavtaleevaluering](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) som er på plass, etablerer en endringspolicy som begrenser oppdateringer i **Nettobeløp**-feltet på salgsordrelinjer, salgstilbudslinjer eller returordrelinjer. Legg merke til at for returordrelinjer beregnes alltid **Nettobeløp**-feltet, og det kan ikke angis manuelt.
 - De importerte dataene omfatter endringer i **Nettobeløp**-feltet på linjer, eller endringer (for eksempel enhetspris, antall eller rabatt) som fører til at verdien i **Nettobeløp**-feltet på linjer omberegnes for en eller flere eksisterende linjeposter.
 
 I disse bestemte scenarioene er virkningen av evalueringspolicyen for forretningsavtale å sette en begrensning på oppdateringene i **Nettobeløp**-feltet på linjen. Denne begrensningen kalles *endringspolicy*. På grunn av denne policyen, blir du bedt om å bekrefte om du vil gjøre endringen når du bruker brukergrensesnittet til å redigere eller omberegne feltet. Når du importerer en post, må imidlertid systemet gjøre et valg for deg. Før versjon 10.0.23 lot systemet alltid nettobeløpet stå uendret, med mindre nettobeløpet for den innkommende linjen er 0 (null). I nyere versjoner vil imidlertid systemet alltid oppdatere eller omberegne nettobeløpet etter behov, med mindre det er uttrykkelig instruert om ikke å gjøre det. Selv om den nye virkemåten er mer logisk, kan det forårsake problemer for deg hvis du allerede kjører prosesser eller integreringer som antar den eldre virkemåten. Denne artikkelen beskriver hvordan du går tilbake til den gamle virkemåten hvis du må det.

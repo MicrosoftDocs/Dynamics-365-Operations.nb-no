@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: ae574e25c5ef0c1736ec13e2ee3fcc11b323721f
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
+ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9336193"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "9708732"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -164,7 +164,7 @@ Følgende innstillinger er tilgjengelige i **Generelt**-hurtigfanen:
 - **Tillat låsing av berøringsskjermen** – Velg *Ja* for å tillate at arbeiderne kan låse berøringsskjermen for grensesnittet for produksjonsutførelse, slik at de kan rengjøre den. Når *Ja* er angitt for dette alternativet, blir knappen **Lås skjerm for rengjøring** lagt til på påloggingssiden. Når en arbeider velger denne knappen, låses berøringsskjermen midlertidig for å hindre uønskede inndata. En nedtellingstidtaker vises også. Arbeideren kan da trygt rengjøre enheten og skjermen. Når nedtellingen er fullført, låses berøringsskjermen automatisk opp igjen.
 - **Varighet for skjermlås** – Når alternativet **Tillat låsing av berøringsskjerm** er satt til *Ja*, bruker du dette alternativet til å angi antall sekunder berøringsskjermen skal være låst for rengjøring. Varigheten må være mellom 5 og 120 sekunder.
 - **Generer nummerskilt** – Sett dette alternativet til *Ja* for å generere et nytt nummerskilt hver gang en arbeider bruker et grensesnitt for produksjonsutførelse for å ferdigmelde. Skiltnummeret genereres fra en nummerserie som er definert på **Parametere for lagerstyring**-siden. Når den er satt til *Nei*, må arbeiderne angi et eksisterende nummerskilt når de ferdigmelder seg.
-- **Skriv ut etikett** – Sett dette alternativet til *Ja* for å skrive ut en nummerskiltetikett når en arbeider bruker grensesnittet for produksjonsutførelse til å ferdigmelde. Konfigurasjonen av etiketten defineres i dokumentruting, som beskrevet i [Dokumentrutingsoppsett for nummerskiltetiketter](../warehousing/document-routing-layout-for-license-plates.md).
+- **Skriv ut etikett** – Sett dette alternativet til *Ja* for å skrive ut en nummerskiltetikett når en arbeider bruker grensesnittet for produksjonsutførelse til å ferdigmelde. Konfigurasjonen av etiketten defineres i dokumentruting, som beskrevet i [Etikettoppsett for dokumentruting](../warehousing/document-routing-layout-for-license-plates.md).
 
 ### <a name="the-tab-selection-fasttab"></a>Hurtigfanen Fanevalg
 

@@ -15,12 +15,12 @@ ms.dyn365.ops.version: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 11378991a24e1a5f5e213d64f0f414db2e5c2573
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 9d4a408f2169b220fefd9ab7e9f3b37217fb3cfe
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9279908"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710842"
 ---
 # <a name="complete-publish-and-deploy-a-globalization-feature"></a>Fullføre, publisere og rulle ut en globaliseringsfunksjon
 
@@ -59,8 +59,8 @@ I RCS bruker du kommandoen **Distribuer** til å publisere en versjon av en funk
 2. I **Versjoner**-fanen til høyre på siden velger du versjonen av funksjonen for elektronisk fakturering du vil rulle ut til tjenestemiljøet eller det tilkoblede programmet. Den valgte versjonen må ha statusen **Fullført** eller **Publisert**.
 3. Velg **Distribuer**, og velg deretter ett eller begge av følgende alternativer for å definere målet for distribusjonen:
 
-    - **Tilkoblet app** – Konfigurasjonen som leveres av appoppsettet, er skrevet i forekomsten av Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidligere var tilknyttet den.
-    - **Tjenestemiljø** – Versjonen av funksjonen for elektronisk fakturering distribueres til tjenestemiljøet. Elektronisk fakturering er da klar til å motta og behandle elektroniske dokumenter som Finance eller Supply Chain Management sender.
+    - **Tilkoblet app** – Denne er valgfri, men må brukes hvis du vil at konfigurasjonen som leveres av appoppsettet, skal skrives i forekomsten av Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management som tidligere var tilknyttet den. Hvis du hopper over denne typen distribusjon, må du konfigurere parameterne som er definert i applikasjonsoppsettet for Finance eller Supply Chain Management, manuelt.
+    - **Tjenestemiljø** – Dette distribuerer den elektronisk faktureringversjonen til tjenestemiljøet. Elektronisk fakturering er da klar til å motta og behandle elektroniske dokumenter som Finance eller Supply Chain Management sender.
 
 > [!NOTE]
 > Du endrer vanligvis parameterne for ER-funksjonen (elektronisk fakturering) som må rulles ut til tjenestemiljøet. Det blir sjelden endringer av det tilkoblede programmet. Du bør bare rulle ut nye versjoner til det tilkoblede programmet når du endrer de tilsvarende parameterne for programmet.

@@ -2,7 +2,7 @@
 title: Konfigurere Regulatory Configuration Service (RCS)
 description: Denne artikkelen forklarer hvordan du konfigurerer Regulatory Configuration Service (RCS).
 author: gionoder
-ms.date: 02/09/2022
+ms.date: 10/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 10.0.12
 ms.custom: 97423,  ""intro-internal
 ms.assetid: ''
 ms.search.form: ''
-ms.openlocfilehash: 63a4f77d6e80133947dff678cef3885167ec55be
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 32ced98925ee66e02f0b073b4acbd586666ac20c
+ms.sourcegitcommit: 1ecfc1d8afb2201ab895ae6f93304ba2b120f14b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9285795"
+ms.lasthandoff: 10/21/2022
+ms.locfileid: "9710788"
 ---
 # <a name="set-up-regulatory-configuration-service-rcs"></a>Konfigurere Regulatory Configuration Service (RCS)
 
@@ -39,7 +39,16 @@ Det skal nå vises en flis for arbeidsområdet **Globaliseringsfunksjoner** på 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Konfigurere parametere for RCS-integrasjon med elektronisk fakturering
 
 1. I arbeidsområdet **Globaliseringsfunksjoner** i delen **Relaterte innstillinger** velger du koblingen **Parametere for elektronisk rapportering**.
-2. I feltet **URI for endepunkt for tjeneste** i fanen **Elektronisk fakturering** angir du riktig endepunkt for tjeneste for Microsoft Azure-geografien, som vist i følgende tabell.
+2. Første gang du definerer parameterne, blir du bedt om å koble til Life Cycle Services (LCS). Velg **Klikk her for å koble til Lifecycle Services**, og etter at tilkoblingen er fastsatt, velger du **OK**.
+
+    > [!IMPORTANT]
+    > I land eller områder der dataresidens fremtvinges, og hvis RCS ble klargjort i et annet område der LCS er klargjort, kan du få følgende tilkoblingsfeilmelding i RCS: Ingen HTTP-ressurs ble funnet som samsvarer med forespørsels-URIen. Velg **OK**. Du kan få en feilmelding i RCS: Kan ikke generere brukertokenet for Dynamics Lifecycle Services på vegne av brukeren. Kontakt systemansvarlig.
+    >  
+    > Dette skjer fordi LCS er en global tjeneste, og klargjøres i et amerikansk område. På grunn av personvernpolicyen kan ikke RCS fra gjeldende område koble seg til LCS. Under disse omstendighetene finnes det 2 mulige løsninger:
+    > - Slett RCS fra gjeldende område, og opprett det på nytt i amerikansk område.
+    > - Ignorer feilene og fortsett med oppsettet for elektronisk fakturering. Disse feilene påvirker ikke funksjonaliteten for elektronisk fakturering.
+
+3. I feltet **URI for endepunkt for tjeneste** i fanen **Elektronisk fakturering** angir du riktig endepunkt for tjeneste for Microsoft Azure-geografien, som vist i følgende tabell.
 
     | Datasenter Azure-geografi | URI for tjenestesluttpunkt |
     |----------------------------|----------------------|
@@ -55,8 +64,10 @@ Det skal nå vises en flis for arbeidsområdet **Globaliseringsfunksjoner** på 
     | Canada                     | <p>`https://gw.ca-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> <p>`https://gw.ca-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Frankrike                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | India                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Norge                     | <p>`https://gw.no-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Sør-Afrika               | <p>`https://gw.za-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. Kontroller at feltet **Program-ID** er satt til **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Denne verdien er en fast verdi. Kontroller at det bare er angitt en globalt unik identifikator (GUID), og at verdien ikke har noen andre symboler, for eksempel mellomrom, kommaer, punktum eller anførselstegn.
+3. Gå gjennom og angi den faste verdien i **Program-ID**-feltet **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Kontroller at det bare er angitt en globalt unik identifikator (GUID), og at verdien ikke har noen andre symboler, for eksempel mellomrom, kommaer, punktum eller anførselstegn.
 4. I feltet **ID for LCS-miljø** angir du ID-en for Microsoft Dynamics Lifecycle Services-miljøet (LCS). Denne verdien er referansen til Finance- eller Supply Chain Management-miljøet som du skal bruke med tjenesten for elektronisk fakturering. Du kan hente ID-en ved å logge deg på [LCS](https://lcs.dynamics.com/), åpne prosjektet og deretter se i feltet **Miljø-ID** i **Miljødetaljer**-delen i fanen **Administrer miljø**.
 
     > [!IMPORTANT]
