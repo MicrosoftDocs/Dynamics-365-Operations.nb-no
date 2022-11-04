@@ -256,8 +256,6 @@
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Modernisering av Commerce-teknologistakken i butikk (teknisk dokument)
                   href: 'https://www.microsoft.com/download/details.aspx?id=103896'
-                - name: Frakoblet implementering og feilsøking for Commerce
-                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Publiser en nettbutikkatalog
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Innhold for Retail Channel Performance Power BI
@@ -396,12 +394,16 @@
                   items:
                     - name: Store Commerce-app
                       href: dev-itpro/store-commerce.md
+                    - name: Store Commerce-appfunksjoner
+                      href: store-commerce-capabilities.md
                     - name: Store Commerce-app for mobilplattformer
                       href: dev-itpro/store-commerce-mobile.md
                     - name: Overfør Modern POS til Store Commerce
                       href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
                     - name: Implementeringsveiledning for enhetsbehandling
                       href: implementation-considerations-devices.md
+                    - name: Frakoblet implementering og feilsøking for Commerce
+                      href: dev-itpro/implementation-considerations-offline.md
                     - name: Velg mellom Store Commerce og Cloud POS
                       href: MPOS-or-CPOS.md
                     - name: Tilkoblede og frakoblede salgsstedsoperasjoner
@@ -814,7 +816,7 @@
                       href: ../supply-chain/procurement/purchase-order-overview.md?context=/dynamics365/context/commerce
                     - name: Opprett bestillinger
                       href: ../supply-chain/procurement/purchase-order-creation.md?context=/dynamics365/context/commerce
-                    - name: Mottaksseddel mot bestillinger
+                    - name: Produktkvittering mot bestillinger
                       href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?context=/dynamics365/context/commerce
                     - name: Godkjenne og bekrefte bestillinger
                       href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?context=/dynamics365/context/commerce

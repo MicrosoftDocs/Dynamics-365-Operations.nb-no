@@ -692,21 +692,15 @@
               items:
                 - name: Oppsettsprosess for avansert bankavstemming
                   href: cash-bank-management/configure-advanced-bank-reconciliation.md
-                - name: Definer prosessen for avansert bankavstemmingsimport
-                  href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
                 - name: Definer prosessen for avansert bankavstemmingsimport ved hjelp av elektronisk rapportering
                   href: accounts-payable/import-bai2-er.md
                 - name: Definer samsvarsregler for bankavstemming
                   href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
                 - name: Avstem bankkontoutdrag ved hjelp av avansert bankavstemming
                   href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-                - name: MT940-import av avansert bankavstemming – oppgradering for sammensatt dataenhet
-                  href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
                 - name: Oversikt over avansert bankavstemming
                   href: cash-bank-management/advanced-bank-reconciliation-overview.md
-                - name: Feilsøking av import av bankkontoutdragsfil
-                  href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
-                - name: Oppdatere sammensatt enhet for bankjournal
+                - name: Oppdater sammensatt enhet for bankjournal
                   href: cash-bank-management/upgrade-bank-journal-composite-entity.md
         - name: Kostnadsregnskap
           items:

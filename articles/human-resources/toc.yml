@@ -4,6 +4,18 @@
       items:
         - name: Startside for Dynamics 365 Human Resources
           href: index.md
+        - name: Human Resources-infrastruktursammenslåing
+          items:
+            - name: Oversikt over Human Resources-infrastruktursammenslåing
+              href: hr-infrastructure-merge.md
+            - name: Kundeoverføring for Human Resources-infrastruktur
+              href: hr-cust-migration.md
+            - name: Vanlige spørsmål om Human Resources-infrastruktursammenslåing
+              href: hr-infrastructure-merge-faq.md
+            - name: Vanlige spørsmål om kundeoverføring for Human Resources
+              href: customer-migration.md
+            - name: Kjente problemer for Human Resources-infrastruktursammenslåing
+              href: hr-migration-issues.md
         - name: Nyheter eller endringer
           items:
             - name: Nyheter eller endringer i økonomi- og driftsapper
@@ -242,10 +254,6 @@
                   href: hr-admin-go-live-prepare.md
                 - name: Vanlige spørsmål om aktivering
                   href: hr-admin-go-live-faq.md
-                - name: Vanlige spørsmål om Human Resources-infrastruktursammenslåing
-                  href: hr-infrastructure-merge-faq.md
-                - name: Vanlige spørsmål om kundeoverføring for Human Resources
-                  href: customer-migration.md
                 - name: Dokumentasjonsressurser
                   items:
                     - name: Hjelpesystem

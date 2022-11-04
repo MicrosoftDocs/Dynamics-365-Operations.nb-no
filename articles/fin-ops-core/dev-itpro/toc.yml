@@ -330,16 +330,20 @@
                   items:
                     - name: Oversikt over distribusjon av selvbetjening
                       href: deployment/infrastructure-stack.md
-                    - name: Distribuere et nytt miljø
+                    - name: Distribuer et nytt miljø
                       href: deployment/deployenvironment-newinfrastructure.md
                     - name: Vanlige spørsmål om distribusjon
                       href: deployment/deploymentFAQ.md
+                    - name: Overfør et miljø
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Kjente problemer med distribusjon av selvbetjening
                       href: deployment/known-issues-new-deployment-experience.md
                     - name: Vedlikeholdsoperasjoner for distribusjoner
                       href: deployment/maintenanceoperationsguide-newinfrastructure.md
-                    - name: Oppdatere et miljø
+                    - name: Oppdater et miljø
                       href: deployment/updateenvironment-newinfrastructure.md
+                    - name: Overfør et miljø
+                      href: deployment/geo-to-geo-migrations.md
                     - name: Feilsøk miljøer som distribueres gjennom distribusjon av selvbetjening
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Vanlige spørsmål om planlagt vedlikehold i selvbetjeningsmiljøer
@@ -972,9 +976,11 @@
               href: lifecycle-services/lcs-user-guide.md
             - name: Prosjektinnføring
               href: lifecycle-services/project-onboarding.md
+            - name: Prosjektoverføringsbehandling
+              href: lifecycle-services/project-migration-manager.md
             - name: Abonnementsberegner
               href: lifecycle-services/subscription-estimator.md
-            - name: Konfigurere sikkerhet
+            - name: Konfigurer sikkerhet
               href: lifecycle-services/configure-lcs-security.md
             - name: Problemsøk
               href: lifecycle-services/issue-search-lcs.md

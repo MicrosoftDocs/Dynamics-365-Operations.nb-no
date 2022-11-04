@@ -2235,13 +2235,23 @@
               items:
                 - name: Oversikt over innkjøpspolicyer
                   href: procurement/purchase-policies.md
-                - name: Opprette innkjøpspolicyer
+                - name: Opprett innkjøpspolicyer
                   href: procurement/tasks/create-purchasing-policies.md
-                - name: Definere policyer for innkjøpskategorihierarkier
+                - name: Definer policyer for innkjøpskategorihierarkier
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
-            - name: Mottakssedler og fakturering
+            - name: Forsyningsrisikovurdering
               items:
-                - name: Mottaksseddel mot bestillinger
+                - name: Oversikt over forsyningsrisikovurdering
+                  href: procurement/supply-risk-assessment-overview.md
+                - name: Konfigurer forsyningsrisikovurdering
+                  href: procurement/supply-risk-assessment-configuration.md
+                - name: Praktisk arbeidsområde for å oppdage og håndtere leverandørrisikoer
+                  href: procurement/supply-risk-assessment-workspace.md
+                - name: Power BI-rapporter for risikoanalyse og ytelsesrangering
+                  href: procurement/supply-risk-assessment-reports.md
+            - name: Produktkvitteringer og fakturering
+              items:
+                - name: Produktkvittering mot bestillinger
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Oversikt over leverandørfakturaer
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?context=/dynamics365/context/supply-chain
