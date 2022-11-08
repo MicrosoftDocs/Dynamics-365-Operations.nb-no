@@ -2,7 +2,7 @@
 title: Oversikt over maler og oppsett
 description: Denne artikkelen dekker maler og oppsett i Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: e0bf7e942339775b2e9ee15060d555be07c1cdc5
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0664dd1ae06d09557cf8b8ec58baf6d27c1198bd
+ms.sourcegitcommit: 023ae5557e1351a8329a59a41a551e8901db99a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277940"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9733391"
 ---
 # <a name="templates-and-layouts-overview"></a>Oversikt over maler og oppsett
 
@@ -66,7 +66,13 @@ Malen i dette eksemplet definerer en enkel struktur og et sett med alternativer 
 
 Et viktig utgangspunkt for område- og varemerkeadministratorer er å fastslå riktig balanse mellom begrensning og fleksibilitet for underordnede oppsett og sideforfattere. Når det brukes maler, er denne saldoen fullstendig konfigurerbar. Det påvirker om sideelementer er sentralt oppdatert (låst i malen) eller overlatt til individuelle underordnede nivåer som er lavere i sidehierarkiet.
 
-For å begynne å bruke maler, [Arbeide med maler](work-with-templates.md).
+### <a name="relationship-between-template-defaults-and-page-content"></a>Relasjon mellom malstandarder og sideinnhold
+
+Hovedfunksjonen til en mal er å effektivisere modulredigeringsopplevelsen når en side opprettes. Selv når standardinnstillingene for modulen er angitt, eller til og med låst, i en mal, er det ingen ytterligere datatilkobling mellom modulkonfigurasjonene på en side og standardinnstillingene for malen, bortsett fra når siden redigeres. Maler styrer redigeringsopplevelsen for sidestrukturen, og etter at en side er opprettet, er ikke standardinnstillingene for malen lenger koblet til det lokaliserbare innholdet på denne siden. Standardinnstillingene for modulen som er angitt i en mal, styrer med andre ord redigeringsopplevelsen for underordnede sider. De styrer ikke innholdet på disse sidene etter at sidene er opprettet og redigert.
+
+Det eneste unntaket til virkemåten som er beskrevet ovenfor, skjer når et [fragment](work-with-fragments.md) legges til i en mal. Du kan bruke fragmenter til å legge til eller redigere lokaliserbart innhold dynamisk på tvers av alle underordnede sider i en mal eller et oppsett når som helst, selv etter at mange sider er opprettet fra en gitt mal. En anbefalt fremgangsmåte er å bruke fragmenter i maler og oppsett hver gang lokaliserbart innhold skal legges til, fjernes eller redigeres dynamisk på alle underordnede sider. Fragmenter skal brukes for topptekster, bunntekster, vanlige metadata / skript eller annet innhold som må kunne redigeres sentralt og være likt på alle underordnede sider. Med fragmenter kan du bruke maler og oppsett til å styre innhold på alle underordnede sider.
+
+Du kan begynne å bruke maler ved å se [Arbeide med maler](work-with-templates.md).
 
 ## <a name="layouts"></a>Oppsett
 
@@ -96,7 +102,7 @@ Oppsett på området kan enten være *forhåndsinnstilte* eller *egendefinerte*:
 
 Forhåndsinnstilt oppsett og egendefinerte oppsett redigeres i forskjellige deler av redigeringsverktøysettet. Siden egendefinerte oppsett ikke har noen avhengigheter til andre sider, redigeres de direkte i sideredigeringsprogrammet. I dette tilfellet er utformingen for det meste synlig for brukeren, og vises bare i egenskaper på sidenivå og gjennom handlingene for oppsettalternativer. Siden endringer i forhåndsinnstilte oppsett kan påvirke mange underordnede sider, må de redigeres i redigeringsprogrammet for oppsett, der publiseringshandlinger kan vurdere den fullstendige nedstrømsvirkningen på underordnede sider.
 
-Følgende illustrasjoner viser scenarier for forhåndsinnstilte og egendefinerte oppsett.
+Følgende illustrasjon viser scenarioer for forhåndsinnstilte og egendefinerte oppsett.
 
 ![Forhåndsinnstilte og egendefinerte oppsettsscenarier.](../commerce/media/template-figure1.png)
 

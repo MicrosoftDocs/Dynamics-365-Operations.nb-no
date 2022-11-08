@@ -14,12 +14,12 @@ ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: 8c60ed0c334bf09916dd633302c6d813ea6f16b6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: a891de4a1da6641a02b8316d16ac2e9a8180fac1
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9281461"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734258"
 ---
 # <a name="order-lookup-module"></a>Ordreoppslagsmodul
 
@@ -44,6 +44,12 @@ Illustrasjonen nedenfor viser et eksempel på skjemaet som gjengis av ordreoppsl
 ## <a name="add-an-order-lookup-module-to-a-page"></a>Legge til en ordreoppslagsmodul på en side
 
 Ordreoppslagsmodulen kan legges til i hoveddelen av en hvilken som helst side på e-handelsområdet. Hvis du vil bruke ordreoppslagsmodulen til å aktivere ordreoppslag for gjestebetalinger, må du huske på å legge den til en side som ikke krever at brukeren er logget på. Hvis du vil finne **Krever pålogging?**-innstillingen for en side i trevisningen for Commerce-områdbyggeren, velger du **Standardside (obligatorisk)**-sporet, og ser nederst i høyre rute.
+
+
+> [!NOTE]
+> Hvis du vil aktivere funksjonen for ordreoppslag, må du sikre at **Tilbud**-nøkkelen er aktivert under **Lisenskonfigurasjon** > **Konfigurasjonsnøkler**.
+>
+> ![Konfigurasjon av lisensnøkkel for tilbud må være aktivert](./media/Quotations_License_Key_Configuration.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

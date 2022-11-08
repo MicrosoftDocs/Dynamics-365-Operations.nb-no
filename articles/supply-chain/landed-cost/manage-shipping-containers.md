@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 22f2512125679f160cb658923893d5f5aa739a2d
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b409017407ce1c027184bdc2292197840c61e04a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8906160"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725450"
 ---
 # <a name="manage-shipping-containers"></a>Administrere forsendelsescontainere
 
@@ -40,9 +40,9 @@ Tabellen nedenfor beskriver knappene som er tilgjengelige i handlingsruten på s
 
 | Knapp | Beskrivelser |
 |---|---|
-| Poster tilgangsliste | Poster en mottaksliste eller vis produktmottakslistene for alle bestillingslinjer i forsendelsescontaineren. Hvis det brukes flere firmaforsendelser, åpnes det en ny posteringsdialogboks for mottaksliste for hvert firma. |
-| Poster mottaksseddel | Poster en produktkvittering for alle bestillingslinjer i forsendelsescontaineren. |
-| Poster faktura | Poster en faktura for alle bestillingslinjer i forsendelsescontaineren. Hvis det brukes flere forsendelser, åpnes det en ny dialogboks for fakturapostering for hvert firma. |
+| Poster tilgangsliste | Poster en mottaksliste eller vis produktmottakslistene for alle bestillingslinjer i forsendelsescontaineren.  |
+| Poster produktkvittering | Poster en produktkvittering for alle bestillingslinjer i forsendelsescontaineren. |
+| Poster faktura | Poster en faktura for alle bestillingslinjer i forsendelsescontaineren.  |
 | Send overføringsordre | Poster en forsendelse for overføringsordre for alle overføringsordrelinjer i forsendelsescontaineren. Bare linjene i forsendelsescontaineren som er en type overføringsordre, vises i dialogboksen. |
 | Motta overføringsordre | Poster en kvittering for overføringsordre for alle overføringsordrelinjer i forsendelsescontaineren. Dialogboksen for mottak er den enkleste måten å motta varer på i en forsendelsescontainer eller forsendelse, og er ett av tre tilgjengelige alternativer. Du kan også motta via ankomstjournaler eller behandling av mobilenheter. |
 | Opprett ankomstjournal | Du kan generere en ankomstjournal for organisasjoner ved hjelp av avanserte lagerfunksjoner. Alternativen er _Initialiser antall_ (anbefales), og _Opprett fra varer i transitt_ eller _Opprett fra bestillinger_. De siste to alternativene avhenger av om behandling av varer i transitt brukes. |
@@ -56,7 +56,7 @@ Tabellen nedenfor beskriver knappene som er tilgjengelige i handlingsruten på s
 
 | Knapp | Beskrivelser |
 |---|---|
-| Tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i forsendelsescontaineren. Hvis det brukes flere sjøreiser, åpnes det en ny dialogboks for mottakslistepostering for hvert firma. |
+| Tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i forsendelsescontaineren.  |
 | Produktkvittering | Vis produktmottaksposten, hvis den brukes. Produktmottaksprosessen brukes bare hvis varene ikke bruker funksjonaliteten for varer i transitt. |
 | Vareankomst | Vis vareankomstjournalen for forsendelsescontaineren, hvis den journalen brukes. |
 | Strekninger | Etapper brukes til å identifisere atskilte deler av en reise. Leveringstiden kan knyttes til hver etappe for å få hjelp til forsendelsessporing. Hvis du vil ha mer informasjon, kan du se [Oppsett for reise med flere etapper](multi-leg-journey-setup.md). |

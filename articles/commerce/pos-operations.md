@@ -2,7 +2,7 @@
 title: Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 description: Denne artikkelen inneholder informasjon om salgsstedsoperasjoner i Dynamics 365 Commerce. Den angir hvor i programmet operasjonene kan startes, og om de er tilgjengelige i frakoblet modus.
 author: josaw1
-ms.date: 05/27/2022
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 39f827d759f37daf056ff2df6284dda3db113c7f
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
+ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9272856"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "9728283"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -101,7 +101,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 212  | Informasjon om flåtekort                                   | Denne operasjonen støttes ikke.                                                                                                                                                                                | Gjelder ikke her | Gjelder ikke her     | Gjelder ikke her | Gjelder ikke her    | Gjelder ikke her  |
 | 213  | Betal med kreditnota                                   | Godta en kreditnota (bilag) som ble utstedt av butikken.                                                                                                                                                          | Ja            | Ja                | Nei             | Nei                | Nei              |
 | 214  | Betal med gavekort                                     | Godta et gavekort som er utstedt av butikken.                                                                                                                                                                      | Ja            | Ja                | Nei             | Nei                | Nei              |
-| 215  | Løs inn gavekort i kontanter                                | Denne operasjonen støttes ikke.                                                                                                                                                                                | Ja            | Ja                | Nei             | Nei                | Nei              |
+| 215  | Løs inn gavekort i kontanter                                | Kredittransaksjon med fullstendig beløp av gjenstående gavekortsaldo hvis innenfor den konfigurerte grensen for innløsning av kontanter.                                                                                                                                                                              | Ja            | Ja                | Nei             | Nei                | Nei              |
 | 216  | Betal nøyaktig med kort                                    | Denne operasjonen støttes ikke.                                                                                                                                                                                | Gjelder ikke her | Gjelder ikke her     | Gjelder ikke her | Gjelder ikke her    | Gjelder ikke her  |
 | 217  | Betal nøyaktig med sjekk                                   | Denne operasjonen støttes ikke.                                                                                                                                                                                | Gjelder ikke her | Gjelder ikke her     | Gjelder ikke her | Gjelder ikke her    | Gjelder ikke her  |
 | 218  | Betal nøyaktig via kundekonto                        | Denne operasjonen støttes ikke.                                                                                                                                                                                | Gjelder ikke her | Gjelder ikke her     | Gjelder ikke her | Gjelder ikke her    | Gjelder ikke her  |

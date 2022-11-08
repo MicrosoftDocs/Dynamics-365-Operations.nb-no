@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 43f28a7e30dbbe15bb02d26483289f25515fcfca
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 4499eeb9cdd4efd9c4b630106c6e052378191f2a
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905870"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725488"
 ---
 # <a name="manage-voyages"></a>Administrere sjøreiser
 
@@ -29,7 +29,8 @@ En sjøreise representerer som regel et fartøy. Avhengig av praksis og fremgang
 Siden **Alle sjøreiser** formidler sjøreisedetaljer, informasjon om levering og etterkalkulering samt informasjon om varer, bestillinger og overføringsordrer. Hvis du vil åpne siden **Alle sjøreiser**, går du til **Netto innkjøpspris \> Sjøreiser \> Alle sjøreiser**. Denne siden viser en liste over alle sjøreiser. Du kan bruke knappene i handlingsruten til å opprette, slette og arbeide med sjøreiser. Velg en sjøreise i listen for å vise detaljene for den.
 
 > [!NOTE]
-> Forsendelsescontainere og folioer er koblet til en sjøreise. Innkjøpslinjer er koblet til en forsendelsescontainer. Hvis forsendelsescontainere og folioer er deaktivert, kan de også kobles direkte til en sjøreise. I tillegg godkjennes kostnader som angis her, til alle tilknyttede innkjøpslinjer.
+> Forsendelsescontainere og folioer er koblet til en sjøreise. Innkjøpslinjer er koblet til en forsendelsescontainer. I tillegg godkjennes kostnader som angis her, til alle tilknyttede innkjøpslinjer.
+> Prosjektbestilling støttes ikke i netto innkjøpspris.
 
 ## <a name="action-pane"></a>Handlingsrute
 

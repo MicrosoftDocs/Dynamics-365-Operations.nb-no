@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a6f883da07bd1d3a6b0379f1582dc8556e166ff
-ms.sourcegitcommit: 9310c943ac76896663e5604209034da9f8d6139c
+ms.openlocfilehash: 0e11d26ebe084762a8616c8aa0aa041a87306473
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151086"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734365"
 ---
 # <a name="human-resources-customer-migration"></a>Kundeoverføring i Human Resources
 
@@ -40,7 +40,7 @@ Kunder som bruker andre apper i Finance and Operations-infrastrukturen, kan slå
 Overgangen for hvert firma er avhengig av firmaets gjeldende konfigurasjon og beredskap for å flytte til Finance and Operations-infrastrukturen. Vi anbefaler at kundene samarbeider med Microsoft-partneren for å finne den beste banen fremover.
 
 - Organisasjoner som bruker **Human Resources**-modulen i Dynamics 365 Finance, kan aktivere nye funksjoner fra Dynamics 365 Human Resources som en del av den vanlige oppdateringsprosessen for én versjon. Nye funksjoner skal vanligvis være tilgjengelige fra og med januar 2022.
-- Organisasjoner som bruker Dynamics 365 Human Resources, har tilgang til verktøy som de kan bruke til å fullføre sammenslåingen av infrastrukturen. Microsoft vil samarbeide med kunder om overgangen for å forhindre avbrudd i tjenesten. Kundene får 12 til 18 måneder på seg til å foreta overgangen, fra tidspunktet da migreringsverktøyet blir tilgjengelig.
+- Organisasjoner som bruker Dynamics 365 Human Resources, har tilgang til verktøy som de kan bruke til å fullføre sammenslåingen av infrastrukturen. Microsoft vil samarbeide med kunder om overgangen for å forhindre avbrudd i tjenesten. Kundene får 12 måneder på seg til å foreta overgangen, fra tidspunktet da overføringsverktøyet blir tilgjengelig.
 - Organisasjoner som bruker både Dynamics 365 Human Resources og **Human Resources**-modulen, kan flytte sin frittstående Human Resources-infrastruktur til Finance and Operations-infrastrukturen. Et annet alternativ er å bruke sammenslåingsverktøyene til å bringe miljøer inn i et enkelt miljø. Det er ingen krav eller tidsramme for sammenslåing av de to miljøene.
 
 Hvis du vil ha oppdatert informasjon, kan du kontrollere [lanseringsplanene](/dynamics365/release-plans/) regelmessig.
@@ -166,4 +166,4 @@ Microsoft definerer fremdeles hvilke verktøy og ressurser som vil være tilgjen
 
 ## <a name="licensing-impact"></a>Lisensieringseffekt
 
-Hvis du vil ha mer informasjon om hvordan lisensiering påvirkes, kan du se [Vanlige spørsmål om sammenslåingen av Dynamics 365 Human Resources-infrastrukturen](hr-infrastructure-merge-faq.md#licensing-impact).
+Hvis du vil ha mer informasjon om hvordan lisensiering påvirkes, kan du se [Sammenslåing av Dynamics 365 Human Resources-infrastrukturen](hr-infrastructure-merge.md#licensing).

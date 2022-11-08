@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3723b40209ee1f8fb0ef77cb1ad52d123ff2a02f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0624c251646110644a8a72658a6dd6f8d319c57f
+ms.sourcegitcommit: e25fe4228add88dd37f4f38ece86979e1c621f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869468"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "9734301"
 ---
 # <a name="recall-order-operation-in-pos"></a>Tilbakekall ordre-operasjon i POS
 
@@ -65,5 +65,11 @@ Fra applinjen kan en bruker velge en operasjon. Det kan hende at bestemte operas
 ## <a name="add-notifications-to-the-recall-order-operation"></a>Legge til meldinger i operasjonen for tilbakekalling av ordre
 
 I versjon 10.0.18 og senere kan du konfigurere POS-meldinger og direkte flisvarslinger for operasjonen **Tilbakekalling av ordre** hvis dette er ønskelig. Hvis du vil ha mer informasjon, kan du se [Vise ordrevarslinger på salgsstedet](notifications-pos.md).  
+
+> [!NOTE]
+> Hvis du vil aktivere funksjonen for ordreoppslag, må du sikre at **Tilbud**-nøkkelen er aktivert under **Lisenskonfigurasjon** > **Konfigurasjonsnøkler**.
+>
+> ![Konfigurasjon av lisensnøkkel for tilbud må være aktivert](./media/Quotations_License_Key_Configuration.png)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

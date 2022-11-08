@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4cc556c47f7027f2f5d5b24c235b11ced63b3e4e
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab5729cd441246a6c04ac060d5a69f949bfe47c5
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8905899"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725501"
 ---
 # <a name="manage-folios"></a>Administrere folioer
 
@@ -48,9 +48,9 @@ Tabellen nedenfor beskriver knappene som er tilgjengelige i handlingsruten på s
 
 | Knapp | beskrivelse |
 |---|---|
-| Poster tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i folioen. Hvis det brukes flere firmaforsendelser, åpnes det en ny posteringsdialogboks for mottaksliste for hvert firma. |
-| Poster mottaksseddel | Poster en produktkvittering for alle bestillingslinjer i folioen. Hvis det brukes flere sjøreiser, åpnes det en ny dialogboks for produktkvitteringspostering for hvert firma. |
-| Poster faktura | Poster en faktura for alle bestillingslinjer i folioen. Hvis det brukes flere sjøreiser, åpnes det en ny dialogboks for fakturapostering for hvert firma. |
+| Poster tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i folioen.  |
+| Poster produktkvittering | Poster en produktkvittering for alle bestillingslinjer i folioen. |
+| Poster faktura | Poster en faktura for alle bestillingslinjer i folioen.  |
 | Send overføringsordre | Poster en overføringsordre for alle overføringsordrelinjer som er relatert til gjeldende overføringsordre i den tilknyttede forsendelsen. |
 | Motta overføringsordre | Poster en kvittering for overføringsordre for alle overføringsordrelinjer som er relatert til gjeldende overføringsordre i den tilknyttede forsendelsen. |
 | Motta varer i transitt | Motta alle ordrelinjer som er i transit i folioen. |
@@ -65,7 +65,7 @@ Tabellen nedenfor beskriver knappene som er tilgjengelige i handlingsruten på s
 
 | Knapp | beskrivelse |
 |---|---|
-| Tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i folioen. Hvis det brukes flere sjøreiser, åpnes det en ny dialogboks for mottakslistepostering for hvert firma. |
+| Tilgangsliste | Poster en mottaksliste for alle bestillingslinjer i folioen.  |
 | Produktkvittering | Vis produktmottaksposten, hvis den brukes. |
 | Vareankomst | Vis vareankomstjournalen, hvis den brukes. |
 | Forespørsel om kostnader | Åpne kostnadsforespørselssiden for å vise alle kostnadene til en sjøreise, inkludert forsendelsescontaineren, folioen og bestillingen. Du kan endre den nøyaktige visningen av siden ved hjelp av handlingen Vis. På kostnadsforespørselssiden kan du vise alle områdene, pluss vare- og kosttypekoden. Ved å fjerne disse varene kan du justere siden ved å gruppere sammen kostnader. Denne funksjonen kan være nyttig hvis du bruker størrelser og farger. Du kan endre dimensjonene som vises på siden. Siden **Kostnader** viser bare kosttypekoder der oppføringen **Dr** i fanen **Postering** er satt til *Vare*. |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 99dbe17d4e83c2c75d52ca3fd22a1772d8045355
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 609403b251338b7e792f3ab624fb37a1833c919b
+ms.sourcegitcommit: eb9a53d5cf10f1ada68757536d6a94b2cb00929d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8871985"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725528"
 ---
 # <a name="landed-cost-parameters-setup"></a>Oppsett for parametere for netto innkjøpspris
 
@@ -125,14 +125,11 @@ Innstillingene i denne fanen fastsetter standarddimensjonene for hver angitte si
 
 Fanen **Nummerserier** på siden **Parametere for netto innkjøpspris** viser hver type referansenummerserie som Netto innkjøpspris krever, men som ikke deles på tvers av juridiske enheter. For hver referanse i listen velger du en nummerseriekode.
 
-> [!NOTE]
-> I en konfigurasjon for flere firmaer må det opprettes ulike nummerserier for hvert firma (juridisk enhet).
 
 ## <a name="shared-number-sequences-tab"></a>Fanen Delte nummerserier
 
 Fanen **Delte nummerserier** på siden **Parametere for netto innkjøpspris** viser hver type referansenummerserie som er delt på tvers av juridiske enheter for Netto innkjøpspris. Det er for øyeblikket bare én nummerserie i listen. Denne nummerserien brukes for sjøreise-ID-en.
 
-Brukere kan vise alle sjøreisene på tvers av alle juridiske enheter på siden **Alle sjøreiser**. Brukere må imidlertid være i den juridiske enheten for den valgte posten for at brukerne skal kunne redigere og behandle sjøreisen.
 
 ## <a name="feature-visibility-tab"></a>Fanen Funksjonssynlighet
 

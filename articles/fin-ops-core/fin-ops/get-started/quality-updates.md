@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 60f9d84b240016671ff726fc3cca2e02cfd811ca
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: da5881a901d3ba4d01e6d4510a53ca079efd7e75
+ms.sourcegitcommit: c8b97eea28f07b6b179825f3b134c8c8704ff8fc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689234"
+ms.lasthandoff: 10/29/2022
+ms.locfileid: "9731617"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsoppdateringer
 
@@ -40,13 +40,13 @@ Det er allerede distribuert flere fremskritt som aktiverer proaktiv levering av 
 
 - **Nær null nedetid-oppdatering** – For å fremskynde hyppigere miljøer er det vesentlig at innvirkningen på tilgjengelighet av miljøet reduseres for å bevare servicenivåavtaler for Dynamics 365. Det ble opprinnelig innført nær null nedetid-oppdatering for å forbedre månedlig oppdatering av operativsystemet ved å bruke en klyngereserve til å aktivere det oppdaterte bildet med minimale forstyrrelser. Mekanismen for bruk av oppdateringer utvides slik at den blir enda mindre forstyrrende, og den dekker både oppdatering av operativsystemet og distribusjon av kvalitetsoppdateringer.
 
-    For interaktive brukere kan en aktiv økt avbrytes, og det gjøres et nytt forsøk i det nå oppdaterte miljøet. Innføringen av [prioritetsbasert satsvis planlegging](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), som nå er tilgjengelig på forespørsel, partiplanlegging og behandling av gjenoppretting og startes igjen rett etter oppdateringen. Prioritetsbasert partiplanlegging vil være på plass for kunder før de begynner å delta i proaktiv distribusjon av kvalitetsoppdateringer for produksjonsmiljøene.
+For interaktive brukere kan en aktiv økt avbrytes, og det gjøres et nytt forsøk i det nå oppdaterte miljøet. Innføringen av [prioritetsbasert satsvis planlegging](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md) gjør at satsvis planlegging og behandling gjenopprettes og startes igjen like etter oppdateringen. Prioritetsbasert partiplanlegging vil være på plass for kunder før de begynner å delta i proaktiv distribusjon av kvalitetsoppdateringer for produksjonsmiljøene.
 
 - **Mørketimer** – Mørketimer defineres for hvert Azure-område og nær null nedetid-oppdateringer skjer i mørketimeperioden.
 
 ## <a name="the-proactive-update-process"></a>Den proaktive oppdateringsprosessen
 
-Distribusjon av proaktive kvalitetsoppdateringer vil følge en sikker distribusjonsprosess (SDP). Detaljene i SDP-en vil utvikle seg, men kvalitetsoppdateringer vil i utgangspunktet bli distribuert til sandkassemiljøer. Prosessen starter med miljøer som velger tidlig distribusjon. Etter hvert som prosenten av økningene i distribusjonen av avmerkingsboksene er fullført, vil distribusjonen til produksjonsmiljøer begynne. Igjen starter prosessen med miljøer som velger tidlig distribusjon. Lyttesystemer overvåker systemtemetri og Livesite-hendelser, og vil stoppe utrullingen av en bestemt versjon hvis det oppdages en regresjon. Kundene vil fortsatt kunne hente kvalitetsoppdateringene før proaktiv distribusjon hvis de ønsker det.
+Distribusjon av proaktive kvalitetsoppdateringer vil følge en sikker distribusjonsprosess (SDP). Detaljene i SDP-en vil utvikle seg, men kvalitetsoppdateringer vil i utgangspunktet bli distribuert til sandkassemiljøer. Etter hvert som prosenten av økningene i distribusjonen av avmerkingsboksene er fullført, vil distribusjonen til produksjonsmiljøer begynne. Lyttesystemer overvåker systemtemetri og Livesite-hendelser, og vil stoppe utrullingen av en bestemt versjon hvis det oppdages en regresjon. Kundene vil fortsatt kunne hente kvalitetsoppdateringene før proaktiv distribusjon hvis de ønsker det.
 
 Nåværende frigivelsesbehandlingsdata viser at mindre enn tre prosent av regresjonene innføres i kvalitetsoppdateringer. Med økt fokus på eliminering av regresjon og utvidet SDP vil den potensielle virkningen av regresser være lavere enn kvalitetsgevinstene som oppnås ved å gjøre reparasjonene raskere for kundene generelt.
 
@@ -92,13 +92,13 @@ Hvis du vil ha informasjon om mørketimer for hvert område, kan du se [Hva er d
 **Appversjon: 10.0.1326.70**
 **Tilsvarende siste KB-artikkel: 748926**
 
-| Stasjon | Områder | Kommende sandkasseplan
-|---|---|---|
-| Stasjon 1 | Canada, sentralt; Canada, øst; Frankrike, sentralt; India, sentralt; Norge, øst; Sveits, vest | 14. til 17. oktober 2022 |
-| Stasjon 2 | Frankrike, sør; India, sør; Norge, vest; Sveits, nord; Sør-Afrika, nord; Australia, øst; Storbritannia, sør; De forente arabiske emirater, nord; Japan, øst; Australia, sørøst; Asia, sørøst | 15. til 18. oktober 2022 |
-| Stasjon 3 | Øst-Asia; Storbritannia, vest; Japan, vest; Brasil, sør; Europa, vest; USA, øst; De forente arabiske emirater, sentralt | 16. til 19. oktober 2022 |
-| Stasjon 4 | Europa, nord; USA, sentralt; USA, vest | 17. til 20. oktober 2022 |
-| Stasjon 5 | DoD, Government Community Cloud, Kina | Ikke planlagt |
+| Stasjon | Områder | Fullført tidsplan | Kommende sandkasseplan|
+|---|---|---|---|
+| Stasjon 1 | Canada, sentralt; Canada, øst; Frankrike, sentralt; India, sentralt; Norge, øst; Sveits, vest | 14. til 17. oktober 2022 | 2. november til 5. november 2022 |
+| Stasjon 2 | Frankrike, sør; India, sør; Norge, vest; Sveits, nord; Sør-Afrika, nord; Australia, øst; Storbritannia, sør; De forente arabiske emirater, nord; Japan, øst; Australia, sørøst; Asia, sørøst | 15. til 18. oktober 2022 | 2. november til 5. november 2022 |
+| Stasjon 3 | Øst-Asia; Storbritannia, vest; Japan, vest; Brasil, sør; Europa, vest; USA, øst; De forente arabiske emirater, sentralt | 16. til 19. oktober 2022 | 2. november til 5. november 2022 |
+| Stasjon 4 | Europa, nord; USA, sentralt; USA, vest | 17. til 20. oktober 2022 | 2. november til 5. november 2022 |
+| Stasjon 5 | DoD, Government Community Cloud, Kina | Ikke planlagt | Ikke planlagt |
 
 > [!IMPORTANT] 
 > Fem dager i forveien vil Microsoft oppdatere planen og sende e-postmeldinger til settet med miljøer som skal motta disse kvalitetsoppdateringene. Den forrige planen gjelder bare miljøer som har blitt varslet om en forestående oppdatering. Hvis du vil ha informasjon om mørketimer for hvert område, kan du se [Hva er de planlagte vedlikeholdsperiodene etter område?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
