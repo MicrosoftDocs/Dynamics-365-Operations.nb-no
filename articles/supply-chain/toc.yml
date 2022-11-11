@@ -384,11 +384,11 @@
                       href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
         - name: Distribuert hybridtopologi
           items:
-            - name: Funksjoner for storskalaenhet stanses midlertidig for nye kunder
+            - name: Funksjoner for storskalaenhet for Supply Chain Management stanses midlertidig
               href: cloud-edge/cloud-edge-landing-page.md
         - name: Aktivabehandling
           items:
-            - name: Oversikt over aktivabehandling
+            - name: Oversikt over ressursbehandling
               href: asset-management/index.md
               items:
                 - name: Funksjonslokasjoner og aktiva
@@ -1753,36 +1753,54 @@
           items:
             - name: Startside for hovedplanlegging
               href: master-planning/master-planning-home-page.md
-            - name: Overføring til planleggingsoptimalisering for hovedplanlegging
-              href: master-planning/new-master-planning-engine.md
-            - name: Planleggingsoptimalisering
+            - name: Kom i gang med hovedplanlegging
+              href: master-planning/planning-optimization/get-started.md
+            - name: Systemarkitektur i hovedplanlegging
+              href: master-planning/master-planning-architecture.md
+            - name: Administrasjon av hovedplanlegging
               items:
-                - name: Oversikt over planleggingsoptimalisering
-                  href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Kom i gang med planleggingsoptimalisering
-                  href: master-planning/planning-optimization/get-started.md
                 - name: Frigivelsesprosess og frigivelseslogg for planleggingsoptimalisering
                   href: master-planning/planning-optimization/release-process.md
-                - name: Analyse for tilpasning av planleggingsoptimalisering
-                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: Forskjeller mellom innebygd hovedplanlegging og planleggingsoptimalisering
-                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-                - name: Parametere som ikke brukes av planleggingsoptimalisering
-                  href: master-planning/planning-optimization/not-used-parameters.md
-                - name: Forsyningsplan
-                  href: master-planning/supply-schedule.md
-                - name: Bruk filtre på en plan
-                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Feilsøk planleggingsoptimalisering
+                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Løs planleggingsmotorfeilen Finner ikke nok kapasitet
+                  href: master-planning/not-enough-capacity-error-resolution.md
+                - name: Avbryt en planleggingsjobb
+                  href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Utvidelse av planleggingsoptimalisering
+                  href: master-planning/planning-optimization/extensibility.md
+                - name: Vis planhistorikk og planleggingslogger
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Parametere for dato og klokkeslett som ikke brukes av planleggingsoptimalisering
+                  href: master-planning/planning-optimization/date-time-used.md
+            - name: Konfigurer hovedplanlegging
+              items:
+                - name: Forsinkelser
+                  href: master-planning/delays.md
+                - name: Bruk sporing for nedbryting
+                  href: master-planning/trace-explosion.md
+                - name: Forsyningsautomatisering for produser til ordre
+                  href: master-planning/make-to-order-supply-automation.md
+                - name: Negative dager og dynamiske negative dager
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Kalendere og hovedplanlegging
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Opprett en tidsplan for et område
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Opprett en plan for et område
+                  href: master-planning/tasks/create-plan-site.md
                 - name: Hovedplanlegging med behovsprognoser
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Hovedplanlegging med forsyningsprognoser
                   href: master-planning/planning-optimization/supply-forecast.md
+                - name: Forsyningsplan
+                  href: master-planning/supply-schedule.md
+                - name: Kjør planlegging for et delsett av varer
+                  href: master-planning/planning-optimization/plan-filters.md
                 - name: Hovedplanlegging med forretningsavtaler
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Planlegg basert på tilbud og forespørsel
                   href: master-planning/planning-optimization/quotation-planning.md
-                - name: Parametere for dato og klokkeslett som ikke brukes av planleggingsoptimalisering
-                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Sikkerhetsmarginer
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Forsinkelsestoleranse (negative dager)
@@ -1799,130 +1817,82 @@
                   href: master-planning/planning-optimization/finite-capacity.md
                 - name: Planlegging med ressursvalg basert på evner
                   href: master-planning/planning-optimization/capability-based-scheduling.md
-                - name: Prioritetsbasert planlegging
-                  href: master-planning/planning-optimization/priority-based-planning.md
-                - name: DDMRP (etterspørselsdrevet planlegging av materialkrav)
-                  items:
-                    - name: Oversikt over DDMRP
-                      href: master-planning/planning-optimization/ddmrp-overview.md
-                    - name: Aktiver DDMRP-funksjonen for systemet
-                      href: master-planning/planning-optimization/ddmrp-enable.md
-                    - name: Lagerplassering
-                      href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
-                    - name: Bufferprofil og -nivåer
-                      href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
-                    - name: Etterspørselsdrevet planlegging
-                      href: master-planning/planning-optimization/ddmrp-planning.md
-                    - name: Visuell kjøring og samarbeidskjøring
-                      href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
-                - name: Lagermerking med planleggingsoptimalisering
+                - name: Lagermerking
                   href: master-planning/planning-optimization/marking.md
                 - name: Konsernintern planlegging
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Utelat produkter med bestemte livssyklusstatuser
                   href: master-planning/planning-optimization/product-lifecycle-state.md
-                - name: Etterfyllingsmetoder og antallsendring
-                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Dekningshorisonter
                   href: master-planning/planning-optimization/coverage-time-fence.md
-                - name: Nettobehov og utligningsinformasjon med planleggingsoptimalisering
+                - name: Nettobehov og utligningsinformasjon
                   href: master-planning/planning-optimization/net-requirements.md
-                - name: Godkjenn planlagte ordrer
+                - name: Planlegging med negative lagerbeholdningsantall
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Beregn salgsordreleveringsdatoer med CTP
+                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
+            - name: Definer hovedplaner
+              items:
+                - name: Oversikt over hovedplaner
+                  href: master-planning/master-plans.md
+                - name: Definer hovedplaner
+                  href: master-planning/master-planning-setup.md
+                - name: Veiviser for oppsett for hovedplanlegging
+                  href: master-planning/master-planning-setup-wizard.md
+                - name: Generer en begrenset plan
+                  href: master-planning/tasks/constrained-plan.md
+            - name: Konfigurer etterfyllingsstrategier
+              items:
+                - name: Dekningsinnstillinger
+                  href: master-planning/coverage-settings.md
+                - name: Definer dekningsregler for varer
+                  href: master-planning/tasks/define-coverage-rules-items.md
+                - name: Hent produkter og materialer fra flere leverandører
+                  href: master-planning/source-from-multiple-vendors.md
+                - name: Prioritetsbasert planlegging
+                  href: master-planning/planning-optimization/priority-based-planning.md
+                - name: Etterfyllingsmetoder og antallsendring
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+            - name: Hovedplaner og multisite-funksjonalitet
+              items:
+                - name: Oversikt over hovedplanlegging og multisite-funksjonalitet
+                  href: master-planning/master-plan-multisite-functionality.md
+                - name: 'Hovedplanlegging for områdedekning, obligatorisk lager'
+                  href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                - name: 'Hovedplanlegging for områdedekning, lager ikke obligatorisk'
+                  href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                - name: 'Hovedplanlegging for område- og lagerdekning, lager obligatorisk'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                - name: 'Hovedplanlegging for område- og lagerdekning, lager ikke obligatorisk'
+                  href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                - name: Fastslå stykklisteversjonen
+                  href: master-planning/master-plan-bom-version-determined.md
+                - name: Nedbryting av en stykklisteversjon
+                  href: master-planning/master-plan-explosion-bom-version.md
+            - name: Sikkerhetslager
+              items:
+                - name: Oppfylling av sikkerhetslager for varer
+                  href: master-planning/safety-stock-replenishment.md
+                - name: Bruk sikkerhetslagerjournalen til å oppdatere minste dekning for varer
+                  href: master-planning/safety-stock-journal.md
+            - name: Administrer planlagte ordrer
+              items:
+                - name: Vedlikehold planlagte ordrer
+                  href: master-planning/maintain-planned-orders.md
+                - name: 'Vis, behandle og godkjenn planlagte ordrer'
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Autoriser planlagte ordrer
                   href: master-planning/planning-optimization/planned-order-firming.md
                 - name: Planlagte ordrer forenklet
                   href: master-planning/planning-optimization/planned-orders-simplified.md
-                - name: Planlegging med negative lagerbeholdningsantall
-                  href: master-planning/planning-optimization/negative-on-hand.md
-                - name: Vis planhistorikk og planleggingslogger
-                  href: master-planning/planning-optimization/plan-history-logs.md
-                - name: Avbryt en planleggingsjobb
-                  href: master-planning/planning-optimization/cancel-planning-job.md
                 - name: Handlingsmeldinger
                   href: master-planning/action-messages.md
-                - name: Beregn salgsordreleveringsdatoer med CTP
-                  href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
-                - name: Feilsøk planleggingsoptimalisering
-                  href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: Utvidelse av planleggingsoptimalisering
-                  href: master-planning/planning-optimization/extensibility.md
-            - name: Hovedplaner
-              items:
-                - name: Oversikt over hovedplaner
-                  href: master-planning/master-plans.md
-                - name: Definere hovedplaner
-                  href: master-planning/master-planning-setup.md
-                - name: Veiviser for oppsett for hovedplanlegging
-                  href: master-planning/master-planning-setup-wizard.md
-                - name: Dekningsinnstillinger
-                  href: master-planning/coverage-settings.md
-                - name: Definere dekningsregler for varer
-                  href: master-planning/tasks/define-coverage-rules-items.md
-                - name: Generere en begrenset plan
-                  href: master-planning/tasks/constrained-plan.md
-                - name: Opprette en materialplan for koprodukter
-                  href: master-planning/tasks/create-material-plan-co-products.md
-                - name: Vedlikehold planlagte ordrer
-                  href: master-planning/maintain-planned-orders.md
-                - name: Fullføring av sikkerhetslager for varer
-                  href: master-planning/safety-stock-replenishment.md
-                - name: Bruk sikkerhetslagerjournalen til å oppdatere minste dekning for varer
-                  href: master-planning/safety-stock-journal.md
-                - name: Forsinkelser
-                  href: master-planning/delays.md
-                - name: Avbryt en hovedplanleggingsjobb
-                  href: master-planning/cancel-master-planning-job.md
-                - name: Bruk sporing for nedbryting
-                  href: master-planning/trace-explosion.md
-                - name: Overvåk en kjøring av hovedplanlegging
-                  href: master-planning/tasks/monitor-master-planning-run.md
-                - name: Opprett en tidsplan for et område
-                  href: master-planning/tasks/create-schedule-site.md
-                - name: Opprett en plan for et område
-                  href: master-planning/tasks/create-plan-site.md
-                - name: Kalendere og hovedplanlegging
-                  href: master-planning/supply-chain-calendars-master-planning.md
-                - name: Løse planleggingsmotorfeilen "Finner ikke nok kapasitet"
-                  href: master-planning/not-enough-capacity-error-resolution.md
-                - name: Forbedre ytelsen for hovedplanlegging
-                  href: master-planning/master-planning-performance.md
-                - name: Forbedre ytelsen til planleggingsmotoren
-                  href: master-planning/scheduling-engine-performance.md
-                - name: Hovedplaner og multisite-funksjonalitet
-                  items:
-                    - name: Oversikt over hovedplanlegging og multisite-funksjonalitet
-                      href: master-planning/master-plan-multisite-functionality.md
-                    - name: 'Hovedplanlegging for områdedekning, obligatorisk lager'
-                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
-                    - name: 'Hovedplanlegging for områdedekning, lager ikke obligatorisk'
-                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
-                    - name: 'Hovedplanlegging for område- og lagerdekning, lager obligatorisk'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
-                    - name: 'Hovedplanlegging for område- og lagerdekning, lager ikke obligatorisk'
-                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-                    - name: Fastslå stykklisteversjonen
-                      href: master-planning/master-plan-bom-version-determined.md
-                    - name: Nedbryting av en stykklisteversjon
-                      href: master-planning/master-plan-explosion-bom-version.md
-                - name: Negative dager og dynamiske negative dager
-                  href: master-planning/more-about-dynamic-negative-days.md
-                - name: Opprette en konsernintern plan
-                  href: master-planning/tasks/create-intercompany-plan.md
-                - name: Vise utgående planlagt konsernintern etterspørsel
-                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Nettobehov og utligningsinformasjon med innebygd hovedplanlegging
-                  href: master-planning/net-requirements-built-in-master-planning.md
-                - name: Forsyningsautomatisering for produser til ordre
-                  href: master-planning/make-to-order-supply-automation.md
             - name: Prognoser
               items:
-                - name: Etterspørsels- og forsyningsprognoser
-                  items:
-                    - name: Lagerprognoser
-                      href: master-planning/inventory-forecast.md
-                    - name: 'Veiledning: Endre en behovsprognose manuelt'
-                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Lagerprognoser
+                  href: master-planning/inventory-forecast.md
+                - name: 'Veiledning: Endre en behovsprognose manuelt'
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
                 - name: Behovsprognose
                   items:
                     - name: Oversikt over behovsprognose
@@ -1943,10 +1913,50 @@
                       href: master-planning/monitor-forecast-accuracy.md
                     - name: 'Veiledning: Opprett en basislinjeprognose'
                       href: master-planning/tasks/create-baseline-forecast.md
-                - name: Hovedplanlegging med prognose
-                  items:
-                    - name: Prognosereduksjonsnøkler
-                      href: master-planning/reduction-keys.md
+                - name: Prognosereduksjonsnøkler
+                  href: master-planning/reduction-keys.md
+            - name: Etterspørselsdrevet planlegging av materialkrav
+              items:
+                - name: Oversikt over etterspørselsdrevet planlegging av materialkrav
+                  href: master-planning/planning-optimization/ddmrp-overview.md
+                - name: Aktiver DDMRP-funksjonen for systemet
+                  href: master-planning/planning-optimization/ddmrp-enable.md
+                - name: Lagerplassering
+                  href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
+                - name: Bufferprofil og -nivåer
+                  href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
+                - name: Etterspørselsdrevet planlegging
+                  href: master-planning/planning-optimization/ddmrp-planning.md
+                - name: Visuell kjøring og samarbeidskjøring
+                  href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+            - name: Avskrevet planleggingsmotor
+              items:
+                - name: Oversikt over avskrevet planleggingsmotor
+                  href: master-planning/deprecated-master-planning-overview.md
+                - name: Overføring til planleggingsoptimalisering for hovedplanlegging
+                  href: master-planning/new-master-planning-engine.md
+                - name: Parametere som ikke brukes av planleggingsoptimalisering
+                  href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Forskjeller mellom planleggingsoptimalisering og den avskrevne hovedplanleggingsmotoren
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+                - name: Analyse for tilpasning av planleggingsoptimalisering
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Forbedre ytelsen for hovedplanlegging
+                  href: master-planning/master-planning-performance.md
+                - name: Forbedre ytelsen til planleggingsmotoren
+                  href: master-planning/scheduling-engine-performance.md
+                - name: Opprett en konsernintern plan
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: Vis utgående planlagt konsernintern etterspørsel
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Overvåk en kjøring av hovedplanlegging
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: Nettobehov og utligningsinformasjon med den avskrevne planleggingsmotoren
+                  href: master-planning/net-requirements-built-in-master-planning.md
+                - name: Opprett en materialplan for koprodukter
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Avbryt en jobb som ble opprettet med den avskrevne hovedplanleggingsmotoren
+                  href: master-planning/cancel-master-planning-job.md
         - name: Mobilapp
           items:
             - name: Startside for mobilapp

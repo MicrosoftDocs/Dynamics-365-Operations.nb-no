@@ -541,7 +541,11 @@
                     - name: Rekrutter jobbkandidater
                       href: hr-personnel-recruit.md
         - name: Oppgavebehandling
-          href: hr-task-mgmt.md
+          items:
+            - name: Oversikt
+              href: hr-task-mgmt.md
+            - name: Oppgradering av oppgavebehandling
+              href: hr-task-update.md
         - name: Permisjon og fravær
           items:
             - name: Oversikt
@@ -832,6 +836,10 @@
           href: hr-developer-entities.md
         - name: Tilpassede felter
           href: hr-developer-custom-fields.md
+        - name: Utvikle og tilpass
+          items:
+            - name: Basisopplisting av kjønn
+              href: enum-exten.md
         - name: Konfigurer dataintegrering
           items:
             - name: Velg en dataintegreringsteknologi
