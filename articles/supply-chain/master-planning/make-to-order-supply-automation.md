@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-27
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 9044acb472548a797ed387b08ca6892459785793
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: d376c2f4d8514a4e6122e2e94455d57a39d2babf
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220604"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740201"
 ---
 # <a name="make-to-order-supply-automation"></a>Automatisering av produksjon etter ordre
 
@@ -32,12 +32,6 @@ Funksjonen *Automatisering av produksjon etter ordre* legger til flere forbedrin
 - Forbedre konsernintern informasjonsflyt. Bestillinger oppdateres slik at de inkluderer felter for leveringsmåte, leveringsbetingelser og eksternt varenummer. Denne endringen sikrer at detaljert etterspørselsinformasjon kan flyte til det forsynende firmaet.
 
 Denne artikkelen beskriver hvordan du definerer og bruker hver utvidelse.
-
-> [!NOTE]
-> Alle forbedringene som beskrives i denne artikkelen, gjelder for systemer som bruker innebygd hovedplanlegging. Følgende to forbedringer støttes også av tillegget for planleggingsoptimalisering for Microsoft Dynamics 365 Supply Chain Management:
->
-> - Utsett toleranse på hovedplaner
-> - Styr utligningssekvensen som brukes under hovedplanlegging
 
 ## <a name="turn-on-the-make-to-order-supply-automation-feature"></a>Slå på funksjonen Automatisering av produksjon etter ordre
 
@@ -73,7 +67,7 @@ Følg denne fremgangsmåten for å åpne **Kapasitetsbelastning**-siden slik at 
 
 Disse alternativene er også tilgjengelige i **Oppdateringsmerking**-feltet i kategorien **Standardoppdatering** på siden **Hovedplanleggingsparametere**, der du definerer standardvalget for dialogboksen **Autorisering**.
 
-Hvis du vil ha mer informasjon, se [Lagermerking med planleggingsoptimalisering](planning-optimization/marking.md).
+Hvis du vil ha mer informasjon, kan du se [Lagermerking](planning-optimization/marking.md).
 
 ## <a name="set-delay-tolerance-negative-days-at-the-master-plan-level"></a>Angi forsinkelsestoleranse (negative dager) på hovedplannivå
 

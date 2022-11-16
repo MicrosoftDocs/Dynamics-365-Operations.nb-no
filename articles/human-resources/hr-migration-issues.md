@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28c2c10a9293d00e26dfcc80ab08b89a122a6135
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733478"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752697"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Kjente problemer med sammenslåing av Dynamics 365 Human Resources-infrastruktur
 
@@ -44,10 +44,3 @@ Følgende miljøtyper er nødvendige før du kan foreta overføringen:
 
 Den eksisterende Human Resources-appen i Teams flyttes for øyeblikket til en Microsoft Power Platform-løsning. For mer informasjon, se [Human Resources-app i Teams](hr-admin-teams-leave-app.md).
 
-## <a name="licensing"></a>Lisensiering
-
-Det finnes ingen endringer i lisensieringen for Dynamics 365 Human Resources i følgende områder: 
-
-- **Minstekrav til antall lisenser du kan kjøpe**
-- **Lisenser til et produksjonsmiljø og et sandkassemiljø** – Hvis du har eksisterende frittstående Human Resources-lisenser som omfatter ett produksjonsmiljø og ett sandkassemiljø, er samme antall lisenser tilgjengelige i økonomi- og driftsinfrastrukturen.
-- **Flere sandkasselisenser** – Hvis du har kjøpt flere sandkasselisenser for det frittstående Human Resources-programmet, er det samme antallet lisenser tilgjengelig for sandkassemiljøer i økonomi- og driftsinfrastrukturen. 

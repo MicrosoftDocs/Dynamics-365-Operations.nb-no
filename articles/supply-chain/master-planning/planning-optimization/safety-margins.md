@@ -1,6 +1,6 @@
 ---
 title: Sikkerhetsmarginer
-description: Denne artikkelen beskriver hvordan sikkerhetsmarginer kan brukes med tillegget for planleggingsoptimalisering for Microsoft Dynamics 365 Supply Chain Management.
+description: Denne artikkelen beskriver hvordan sikkerhetsmarginer fungerer under hovedplanlegging.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 247b48afab68651cff0ce84c8268a1df35a15c02
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 87b38276a2723374969a67c5413dde15537d04ec
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335203"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740448"
 ---
 # <a name="safety-margins"></a>Sikkerhetsmarginer
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan sikkerhetsmarginer kan brukes med tillegget for planleggingsoptimalisering for Microsoft Dynamics 365 Supply Chain Management.
+Denne artikkelen beskriver hvordan sikkerhetsmarginer fungerer under hovedplanlegging.
 
 ## <a name="safety-margins-overview"></a>Oversikt over sikkerhetsmarginer
 
@@ -165,12 +165,5 @@ Alle tre typer sikkerhetsmarginer tas med når systemet fastslår om en ordre er
 En vare har for eksempel innledende tid på én dag og en mottaksmargin på tre dager. En salgsordre for denne varen er angitt som nødvendig i dag. I dette tilfellet blir forsinkelsen beregnet som *leveringstid* + *mottaksmargin* = fire dager. Hvis i dag er 14. august, fører de fire dagene med forsinkelse til at leveringen blir 18. august. Illustrasjonen nedenfor viser dette eksemplet.
 
 ![Eksempel på forsinkelsesberegning.](media/safety-margins-delays.png)
-
-## <a name="additional-resources"></a>Tilleggsressurser
-
-[Komme i gang med planleggingsoptimalisering](get-started.md)
-
-[Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Beregn leveringsdatoer for salgsordrer ved hjelp av CTP
-description: Med leveringskapasitetsfunksjonalitet (CTP) kan du gi kunder realistiske datoer for når du kan love bestemte varer. Denne artikkelen beskriver hvordan du definerer og bruker CTP for hver planleggingsmotor (planleggingsoptimalisering og den innebygde motor).
+description: Med leveringskapasitetsfunksjonalitet (CTP) kan du gi kunder realistiske datoer for når du kan love bestemte varer. Denne artikkelen beskriver hvordan du konfigurerer og bruker CTP for hver planleggingsmotor (planleggingsoptimalisering og den avskrevne hovedplanleggingsmotoren).
 author: t-benebo
 ms.date: 07/20/2022
 ms.topic: article
@@ -11,28 +11,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 3b8e3dc9f0e7aaf019aa4d7284458206e7daadb2
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 4a3b8ba89d9fb224026cf32cad89d7f28321ee79
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714867"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741210"
 ---
-# <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Beregn leveringsdatoer for salgsordrer ved hjelp av CTP
+# <a name="calculate-sales-order-delivery-dates-using-ctp"></a>Beregn salgsordreleveringsdatoer med CTP
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+<!-- KFN: Split into two topics, one for PO and one for classic. -->
 
 Med leveringskapasitetsfunksjonalitet (CTP) kan du gi kunder realistiske datoer for når du kan love bestemte varer. For hver salgslinje kan du angi en dato som tar hensyn til eksisterende lagerbeholdning, produksjonskapasitet og transporttider.
 
 CTP utvider funksjonen [tilgjengelig for ordre](../../sales-marketing/delivery-dates-available-promise-calculations.md) (ATP) ved å vurdere kapasitetsinformasjon. Mens ATP bare vurderer materialtilgjengelighet og antar ubegrenset kapasitetsressurser, vurderer CTP tilgjengelighet for både materialer og kapasitet. Derfor gir det et mer realistisk bilde av om behovet kan oppfylles innenfor en gitt tidsramme.
 
-CTP fungerer litt annerledes, avhengig av hovedplanleggingsmotoren du bruker (planleggingsoptimalisering eller den innebygde hovedplanleggingsmotoren). Denne artikkelen beskriver hvordan du setter opp den for hver motor. CTP for planleggingsoptimalisering støtter for øyeblikket bare et delsett av CTP-scenarioene som støttes av den innebygde motoren.
+CTP fungerer litt annerledes, avhengig av hovedplanleggingsmotoren du bruker (planleggingsoptimalisering eller den avskrevne hovedplanleggingsmotoren). Denne artikkelen beskriver hvordan du setter opp den for hver motor. CTP for planleggingsoptimalisering støtter for øyeblikket bare et delsett av CTP-scenarioene som støttes av den avskrevne hovedplanleggingsmotoren.
 
 ## <a name="turn-on-ctp-for-planning-optimization"></a>Aktiver CTP for planleggingsoptimalisering
 
-CTP for den innebygde hovedplanleggingsmotoren er alltid tilgjengelig. Hvis du imidlertid vil bruke CTP for planleggingsoptimalisering, må den aktiveres for systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+CTP for den avskrevne hovedplanleggingsmotoren er alltid tilgjengelig. Hvis du imidlertid vil bruke CTP for planleggingsoptimalisering, må den aktiveres for systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Hovedplanlegging*
 - **Funksjonsnavn:** *(Forhåndsversjon) CTP for planleggingsoptimalisering*
@@ -47,9 +48,9 @@ En CTP-beregning som tar hensyn til både materialer og ressurser, kan vise et s
 
 ## <a name="how-ctp-differs-depending-on-the-master-planning-engine-that-you-use"></a>Hvordan CTP varierer avhengig av hovedplanleggingsmotoren du bruker
 
-Tabellen nedenfor summerer forskjellene mellom CTP for planleggingsoptimalisering og CTP for den innebygde hovedplanleggingsmotoren.
+Tabellen nedenfor summerer forskjellene mellom CTP for planleggingsoptimalisering og CTP for den avskrevne hovedplanleggingsmotoren.
 
-| Element | Planleggingsoptimalisering | Innebygd hovedplanleggingsmotor |
+| Element | Planleggingsoptimalisering | Avskrevet hovedplanleggingsmotor |
 |---|---|---|
 | Innstillingen for **leveringsdatokontroll** for ordrer, ordrelinjer og produkter | *CTP for planleggingsoptimalisering* | *CTP* |
 | Beregningstidspunkt | Beregningen utløses ved å kjøre en dynamisk plan som en planlagt oppgave. | Beregningen utløses umiddelbart hver gang du angir eller oppdaterer en salgsordrelinje. |
@@ -70,8 +71,8 @@ Standard kontrollmetode for leveringsdato brukes på alle nye ordrelinjer der en
     - *Salgsleveringstid* – Salgsleveringstiden er tiden mellom opprettelsen av salgsordren og leveringen av varene. Beregningen av leveringsdato er basert på et standard antall dager, og vurderer ikke lagertilgjengelighet, kjente behov eller planlagt forsyning.
     - *ATP* – ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde på en bestemt dato. ATP-beregningen inkluderer ikke igangsatt lager, leveringstider, planlagte mottak, og avganger.
     - *ATP + Avgang-margin*– Forsendelsesdatoen er lik ATP-datoen pluss antall sikkerhetsdager for varen. Sikkerhetsdager er tiden det tar å klargjøre varene for forsendelse.
-    - *CTP* – Bruk CTP-beregningen som leveres av den innebygde hovedplanleggingsmotoren. Hvis du bruker planleggingsoptimalisering, er ikke *CTP*-leveringsdatokontrollmetoden tillatt, og hvis dette er valgt, vil det forårsake en feil når beregningen kjøres.
-    - *CTP for planleggingsoptimalisering* – Bruk CTP-beregningen som tilbys ved planleggingsoptimalisering. Dette alternativet har ingen innvirkning hvis du bruker den innebygde hovedplanleggingsmotoren.
+    - *CTP* – Bruk CTP-beregningen som leveres av den avskrevne hovedplanleggingsmotoren. Hvis du bruker planleggingsoptimalisering, er ikke *CTP*-leveringsdatokontrollmetoden tillatt, og hvis dette er valgt, vil det forårsake en feil når beregningen kjøres.
+    - *CTP for planleggingsoptimalisering* – Bruk CTP-beregningen som tilbys ved planleggingsoptimalisering. Dette alternativet har ingen innvirkning hvis du bruker den avskrevne hovedplanleggingsmotoren.
 
 ### <a name="set-delivery-date-control-overrides-for-individual-products"></a>Angi overstyringer av leveringsdatokontroll for individuelle produkter
 
@@ -85,7 +86,7 @@ Du kan tildele overstyringer for bestemte produkter der du vil bruke en annen le
 
 ## <a name="schedule-ctp-for-planning-optimization-calculations"></a><a name="batch-job"></a>Planlegge CTP for beregninger av planleggingsoptimalisering
 
-Når du bruker CTP for planleggingsoptimalisering, må du kjøre en dynamisk plan for å utløse systemet til å utføre CTP-beregningene og deretter angi de bekreftede leverings- og mottaksdatoene for alle relevante ordrer. Planen må inneholde alle varer som bekreftede forsendelses- og mottaksdatoer er nødvendige for. (Når du bruker CTP for den innebygde planleggingsmotoren, utføres CTP-beregningene umiddelbart lokalt. Derfor trenger du ikke å kjøre en dynamisk plan for å se CTP-resultatene.)
+Når du bruker CTP for planleggingsoptimalisering, må du kjøre en dynamisk plan for å utløse systemet til å utføre CTP-beregningene og deretter angi de bekreftede leverings- og mottaksdatoene for alle relevante ordrer. Planen må inneholde alle varer som bekreftede forsendelses- og mottaksdatoer er nødvendige for. (Når du bruker CTP for den avskrevne hovedplanleggingsmotoren, utføres CTP-beregningene umiddelbart lokalt. Derfor trenger du ikke å kjøre en dynamisk plan for å se CTP-resultatene.)
 
 For å sikre at datoene er tilgjengelige i god tid for alle brukere, anbefaler vi at du setter opp satsvise jobber for å kjøre de relevante planene regelmessig. En satsvis jobb som er konfigurert til å kjøre en dynamisk plan hvert 30. minutt, vil for eksempel angi det bekreftede forsendelses- og mottaksdatoen hvert 30. minutt. Derfor må brukere som legger inn og importordrer, vente maksimalt 30 minutter for å hente bekreftede forsendelses- og mottaksdatoer.
 
@@ -98,17 +99,17 @@ Følg denne fremgangsmåten for å sette opp en satsvis jobb for å kjøre en dy
 1. Velg **OK** for å lagre planen.
 1. Velg **OK** for å opprette den satsvise jobben og lukke dialogboksen.
 
-## <a name="use-ctp-for-built-in-master-planning"></a>Bruk CTP for innebygd hovedplanlegging
+## <a name="use-ctp-for-the-deprecated-master-planning-engine"></a>Bruk CTP for den avskrevne hovedplanleggingsmotoren
 
-### <a name="create-a-new-order-by-using-ctp-for-built-in-master-planning"></a>Opprett en ny ordre ved å bruke CTP til innebygd hovedplanlegging
+### <a name="create-a-new-order-by-using-ctp-for-the-deprecated-master-planning-engine"></a>Opprett en ny ordre ved å bruke CTP for den avskrevne hovedplanleggingsmotoren
 
 Hver gang du legger til en ny salgsordre eller ordrelinje, tildeler systemet en standard kontrollmetode for leveringsdato til den. Ordrehodet starter alltid med den globale standardmetoden. Hvis en overstyring tildeles til en bestilt vare, bruker den nye ordrelinjen denne overstyringen. Ellers vil den nye ordrelinjen også bruke den globale standardmetoden. Derfor bør du angi standardmetodene slik at de samsvarer med leveringsdatokontroll som du vil bruke oftest. Når du har opprettet en ordre, kan du overstyre standardmetoden på ordrehode- eller ordrelinjenivået etter behov. Hvis du vil ha mer informasjon , kan du se [Angi standard kontrollmetoder forleveringsdato](#default-methods) og [Endre eksisterende salgsordrer for å bruke CTP](#change-orders).
 
-### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-built-in-master-planning"></a>Vis bekreftede leveringsdatoer når du bruker CTP for innebygd hovedplanlegging
+### <a name="view-confirmed-delivery-dates-when-you-use-ctp-for-the-deprecated-master-planning-engine"></a>Vis bekreftede leveringsdatoer når du bruker CTP for den avskrevne hovedplanleggingsmotoren
 
-Hvis du bruker den innebygde hovedplanleggingsmotoren, brukes CTP-beregninger for ordrer eller ordrelinjer der feltet **Leveringsdatokontroll** er satt til *CTP*.
+Hvis du bruker den avskrevne hovedplanleggingsmotoren, brukes CTP-beregninger for ordrer eller ordrelinjer der feltet **Leveringsdatokontroll** er satt til *CTP*.
 
-Når det gjelder salgslinjer som bruker CTP for innebygd hovedplanlegging, definerer systemet automatisk feltene **Bekreftet forsendelsesdato** og **Bekreftet mottaksdato** hver gang du lagrer en salgslinje. Hvis du senere gjør en relevant endring i en salgslinje (for eksempel ved å endre antall eller område), blir datoene omberegnet umiddelbart.
+Når det gjelder salgslinjer som bruker CTP for den avskrevne hovedplanleggingsmotoren, definerer systemet automatisk feltene **Bekreftet forsendelsesdato** og **Bekreftet mottaksdato** hver gang du lagrer en salgslinje. Hvis du senere gjør en relevant endring i en salgslinje (for eksempel ved å endre antall eller område), blir datoene omberegnet umiddelbart.
 
 - Hvis du vil vise bekreftede leveringsdatoer for en salgsordrelinje, åpner du salgsordren og velger salgslinjen. Deretter på hurtigfanen **Linjedetaljer** i fanen **Levering** ser du gjennom verdiene **Bekreftet forsendelsesdato** og **Bekreftet mottaksdato**.
 - Hvis du vil vise bekreftede leveringsdatoer for en hel ordre, åpner du salgsordren og velger visningen **Hode**. Deretter på hurtigfanen **Levering** ser du gjennom verdiene **Bekreftet forsendelsesdato** og **Bekreftet mottaksdato**.
@@ -155,8 +156,8 @@ Følg denne fremgangsmåten for å endre en ordre slik at den bruker CTP på ord
 1. Velg **Hode** for å åpne hodeinformasjonen på siden **Salgsordredetaljer**.
 1. I hurtigfanen **Levering** angir du en av følgende verdier i feltet **Leveringsdatokontroll**, avhengig av planleggingsmotoren du bruker:
 
-    - *CTP* – Bruk CTP-beregningen som leveres av den innebygde hovedplanleggingsmotoren. Hvis du bruker planleggingsoptimalisering, er ikke *CTP*-leveringsdatokontrollmetoden tillatt. Hvis du velger denne verdien, vil det derfor oppstå en feil når beregningen kjører.
-    - *CTP for planleggingsoptimalisering* – Bruk CTP-beregningen som tilbys ved planleggingsoptimalisering. Denne innstillingen har ingen innvirkning hvis du bruker den innebygde hovedplanleggingsmotoren.
+    - *CTP* – Bruk CTP-beregningen som leveres av den avskrevne hovedplanleggingsmotoren. Hvis du bruker planleggingsoptimalisering, er ikke *CTP*-leveringsdatokontrollmetoden tillatt. Hvis du velger denne verdien, vil det derfor oppstå en feil når beregningen kjører.
+    - *CTP for planleggingsoptimalisering* – Bruk CTP-beregningen som tilbys ved planleggingsoptimalisering. Denne innstillingen har ingen innvirkning hvis du bruker den avskrevne hovedplanleggingsmotoren.
 
 <!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. Velg **OK** for å bruke endringene.
@@ -165,15 +166,15 @@ Følg denne fremgangsmåten for å endre en ordre slik at den bruker CTP på ord
 
 Hvis du opprettet en ordrelinje ved hjelp av en annen leveringsdatokontrollmetode, kan du når som helst endre til CTP. Endringer som foretas på linjenivå, påvirker ingen andre linjer. De kan imidlertid føre til at de samlede ordreleveringsdatoene flyttes fremover eller bakover, avhengig av hvordan hver oppdaterte linjeberegning endres. <!-- KFM: Confirm this intro at next revision -->
 
-Følg denne fremgangsmåten for å endre en ordre slik at den bruker CTP for innebygd hovedplanlegging på linjenivå.
+Følg denne fremgangsmåten for å endre en ordre slik at den bruker CTP for den avskrevne hovedplanleggingsmotoren på linjenivå.
 
 1. Gå til **Kunde \> Ordrer \> Alle salgsordrer**.
 1. Åpne salgsordren du vil definere, eller opprett en ny.
 1. Velg salgsordrelinjen du vil definere, i fastfanen **Salgsordrelinje** på siden **Salgsordredetaljer**.
 1. På hurtigfanen **Linjedetaljer** på fanen **Levering** angir du en av følgende verdier i feltet **Leveringsdatokontroll**, avhengig av planleggingsmotoren du bruker:
 
-    - *CTP* – Bruk CTP-beregningen som leveres av den innebygde hovedplanleggingsmotoren. Hvis du bruker planleggingsoptimalisering, er ikke *CTP*-leveringsdatokontrollmetoden tillatt. Hvis du velger denne verdien, vil det derfor oppstå en feil når beregningen kjører.
-    - *CTP for planleggingsoptimalisering* – Bruk CTP-beregningen som tilbys ved planleggingsoptimalisering. Denne innstillingen har ingen innvirkning hvis du bruker den innebygde hovedplanleggingsmotoren.
+    - *CTP* – Bruk CTP-beregningen som leveres av den avskrevne hovedplanleggingsmotoren. Hvis du bruker planleggingsoptimalisering, er ikke *CTP*-leveringsdatokontrollmetoden tillatt. Hvis du velger denne verdien, vil det derfor oppstå en feil når beregningen kjører.
+    - *CTP for planleggingsoptimalisering* – Bruk CTP-beregningen som tilbys ved planleggingsoptimalisering. Denne innstillingen har ingen innvirkning hvis du bruker den avskrevne hovedplanleggingsmotoren.
 
     Dialogboksen **Tilgjengelige leverings- og mottaksdatoer** vises, og viser tilgjengelige forsendelses- og mottaksdatoer. Denne dialogboksen fungerer på samme måte for ordrelinjer som for ordrehodet, som beskrevet i forrige del.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 0d857ef31e0fed2a0d7550197209fac9251d8812
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 876ee36c75a31ca89a9351d0ee1484e66076b6aa
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9069794"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748720"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -146,9 +146,6 @@ Hvis det opprettes en partiordre fra en formelversjon der alternativet **Koprodu
 I dette tilfellet kan arbeideren angi koproduktet og antallet som skal rapporteres, ved å velge **Koproduktvariasjoner** i dialogboksen Rapportfremgang. Arbeideren kan deretter velge blant alle de frigitte produktene som er definert som koprodukter.
 
 ### <a name="reporting-catch-weight-items"></a>Rapportere faktisk vekt-varer
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
 
 Arbeidere kan bruke grensesnittet for produksjonsutførelse til å rapportere fremdrift for partiordrer som opprettes for faktisk vekt-varer. Partiordrer opprettes fra formler, som kan defineres slik at de har faktisk vekt-varer som formelvarer, koprodukter og biprodukter. En formel kan også defineres slik at den har formellinjer for ingredienser som er definert for faktisk vekt. Faktisk vekt-varer bruker to måleenheter til å spore lager: faktisk vekt-antall og lagerantall. I næringsmiddelindustrien kan for eksempel kjøtt på boks defineres som en faktisk vekt-vare, der faktisk vekt-antallet brukes til å spore antall bokser og lagerantallet brukes til å spore vekten på boksene.
 

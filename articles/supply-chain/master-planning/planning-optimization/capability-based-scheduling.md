@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 4a3c8236183b81ad015b43d7dbf869c177eafd44
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 176f40ad8cd1aa1831bbe50c0ebd91ec0cc3bc89
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335413"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739905"
 ---
 # <a name="scheduling-with-resource-selection-based-on-capability"></a>Planlegging med ressursvalg basert på kvalifikasjon
 
@@ -43,7 +43,7 @@ Hvis du vil tilordne kvalifikasjoner til en operasjonsressurs, bruker du hurtigf
 - **Effektiv** – Angi den første datoen da ressurs- eller kvalifikasjonstilordningen gjelder. Under planlegging vil ikke systemet bruke en ressurs eller kvalifikasjon som har en utløpt kvalifikasjonstilordning, selv om ressursen ellers oppfyller kravene.
 - **Utløp** – Angi den siste datoen da ressurs- eller kvalifikasjonstilordningen gjelder. Under planlegging vil ikke systemet bruke en ressurs eller kvalifikasjon som har en utløpt kvalifikasjonstilordning, selv om ressursen ellers oppfyller kravene.
 - **Nivå** – Angi kompetansenivået som ressursen må ha for kvalifikasjonen. Hvis du angir verdien **Nødvendig minimumsnivå** for ressurs- eller kvalifikasjonskravet, vil planleggingsmotoren vurdere graden av kompetanse under ressursvalg. Systemet velger bare ressurser som har den nødvendige kvalifikasjonen på et nivå som er lik eller overgår minimumsnivået som er angitt i ressursbehovet.
-- **Prioritet** – Dette feltet støttes ennå ikke av Planleggingsoptimalisering. Hvis du imidlertid bruker den innebygde planleggingsmotoren, kan du bruke **Prioritet**-feltet i ressurs- eller kvalifikasjonstilordningen til å definere ressursprioriteten. Hvis *Prioritet* deretter velges i feltet **Valg av primærressurs** på siden **Planleggingsparametere**, velger systemet først ressursen som har høyest prioritet (det vil si den laveste numeriske verdien i feltet **Prioritet**) under planlegging.
+- **Prioritet** – Dette feltet støttes ennå ikke av Planleggingsoptimalisering. Hvis du imidlertid bruker den avskrevne hovedplanleggingsmotoren, kan du bruke **Prioritet**-feltet i ressurs- eller kvalifikasjonstilordningen til å definere ressursprioriteten. Hvis *Prioritet* deretter velges i feltet **Valg av primærressurs** på siden **Planleggingsparametere**, velger systemet først ressursen som har høyest prioritet (det vil si den laveste numeriske verdien i feltet **Prioritet**) under planlegging.
 
 ## <a name="example"></a>Eksempel
 

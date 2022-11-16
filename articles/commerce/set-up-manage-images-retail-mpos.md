@@ -16,12 +16,12 @@ ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
-ms.openlocfilehash: f282c163ef5a74283231492e499201c6d4619115
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: d334701b2865a4f19365a2773641e324326b02e3
+ms.sourcegitcommit: 78cbb125f20a33df38bda0546203b8f837cbcd93
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287518"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "9751948"
 ---
 # <a name="set-up-and-manage-images-for-modern-pos-mpos"></a>Definere og administrere bilder for Modern POS (MPOS)
 
@@ -160,7 +160,7 @@ For alle enheter unntatt produkter, kan du overskrive bilde URL-adressen for en 
     [![Galleriside for katalogbilder.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> For øyeblikket i galleriet, vises ikke forhåndsvisning for bilde-URL-adresser for mediemaler. For enhetene katalog, arbeider, kunde og kategori, hvis brukeren eksplisitt angir en URL-adresse fra denne siden, anbefaler vi at du angir hvilket bilde er standardbilde, fordi Commerce Scale Unit-klienter viser bare ett bilde per katalog, kunde, arbeider og kategori. Hvis brukeren ikke angir et standardbilde, bestemmer systemet standardbildet og sender det til Commer-tjenestekalleren (MPOS eller e-handel).
+> Det er bare bilder som er offentlig og anonymt tilgjengelige, som gjengis i POS. POS støtter gjengivelse av bilder som driftes eksternt, med krav om at bildene returneres som innebygd oktettstrøm til GET-forespørsler uten hoder. Med policyer for anonym tilgang returneres et «Forbudt»-svar, særlig for SharePoint-driftede bilder som krever at forespørselshoder inneholder både verts- og brukeragenthoder. Det er derfor for øyeblikket ikke bruksklar støtte for bildebehandling med SharePoint. Gallerisiden **Katalogbilder** viser ikke forhåndsvisning for bildenettadresser for mediemaler. Siden CSU-klienter (Commerce Scale Unit) bare viser ett bilde per katalog-, kunde-, arbeider- og kategorienhet, anbefaler vi at du angir hvilket bilde som er standardbildet, hvis du eksplisitt oppgir en nettadresse via denne siden for katalog-, arbeider-, kunde- og kategorienheter. Hvis du ikke angir et standardbilde, bestemmer systemet standardbildet og sender det til Commerce-tjenestekalleren (MPOS eller e-handel).
 
 ### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Overskrive bilde-URL-en for katalogproduktbildene fra siden Forhåndsvisning
 

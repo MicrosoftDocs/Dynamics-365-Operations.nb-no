@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 0474c50157295d9ecd2341b700c07f4fbf1ed51f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: f5f1f2c8e3e43e36d837ebf989422b0dca7819d6
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8900948"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741183"
 ---
 # <a name="cancel-a-planning-job"></a>Avbryte en planleggingsjobb
 
@@ -29,8 +29,7 @@ ms.locfileid: "8900948"
 
 I Microsoft Dynamics 365 Supply Chain Management kan du avbryte en aktiv planleggingsjobb som bruker planleggingsoptimaliserings-funksjonaliteten. Når du velger **Avbryt** i dialogboksen når en planleggingsoptimaliseringsjobb utløses direkte fra brukergrensesnittet (ikke i bakgrunnen), vil ikke dette avbryte planleggingsoptimaliseringsjobben. Selv om du får en advarsel som "operasjonen er avbrutt", må du likevel bruke følgende fremgangsmåte for å avbryte en planleggingsjobb med planleggingsoptimalisering.
 
-
-Hvis du vil avbryte en aktiv planleggingsjobb, følger du disse trinnene. 
+Hvis du vil avbryte en aktiv planleggingsjobb, følger du disse trinnene.
 
 > [!NOTE]
 > Bare aktive jobber kan avbrytes.
@@ -45,18 +44,6 @@ Jobbstatusen blir **Avbryter** til planleggingsoptimaliserings-tjenesten bekreft
 
 > [!NOTE]
 > Hvis du vil vise statusendringer, må du oppdatere siden ved å velge **Oppdater**-knappen.
-
-## <a name="additional-resources"></a>Tilleggsressurser
-
-[Oversikt over planleggingsoptimalisering](planning-optimization-overview.md)
-
-[Komme i gang med planleggingsoptimalisering](get-started.md)
-
-[Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
-
-[Vise planhistorikk og planleggingslogger](plan-history-logs.md)
-
-[Bruke filtre på en plan](plan-filters.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

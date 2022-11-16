@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 421f17402a2f3b37a9ccce9d747e2c0ec865ee39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 5d7035a7034d084a9bec453557694ce7f29ad347
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854478"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740378"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.9. (april 2020)
 
@@ -73,7 +73,7 @@ Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer
 
 - [Parallellisert autorisasjon av planlagte bestillinger](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Hvis du vil ha mer informasjon, kan du se [Fast, planlagt ordre](../master-planning/planning-optimization/planned-order-firming.md) og videoen [Forbedring av MRP-ytelse og anvendelighet](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Planleggingsoptimalisering for distribusjon](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Hvis du vil ha mer informasjon, se [Oversikt over planleggingsoptimalisering](../master-planning/planning-optimization/planning-optimization-overview.md).
+- [Planleggingsoptimalisering for distribusjon](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Hvis du vil ha mer informasjon, kan du se [Startside for hovedplanlegging](../master-planning/master-planning-home-page.md).
 
 - [Forbedring av kjøpsavtaler](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Hvis du vil ha mer informasjon, kan du se [Kjøpsavtaler](../procurement/purchase-agreements.md).
 

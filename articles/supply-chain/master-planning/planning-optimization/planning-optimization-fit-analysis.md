@@ -16,20 +16,20 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 15ec53c1f13b3017fb6e829bd1c8e99fbb938ce3
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 4459a5d72fafe2596b7fc0cedf060b8f23bb43d2
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690001"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750714"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
 [!include [banner](../../includes/banner.md)]
 
-Du bør analysere resultatet fra analyse for tilpassing av planleggingsoptimalisering som en del av migreringsprosessen. Vær oppmerksom på at planleggingsoptimalisering ikke er lik gjeldende innebygde funksjon for hovedplanlegging. Det anbefales at du arbeider med partneren og leser dokumentasjonen for å klargjøre migreringen. 
+Du bør analysere resultatet fra analyse for tilpassing av planleggingsoptimalisering som en del av migreringsprosessen. Vær oppmerksom på at planleggingsoptimalisering ikke er lik funksjonen for den avskrevne hovedplanleggingsmotoren. Det anbefales at du arbeider med partneren og leser dokumentasjonen for å klargjøre migreringen.
 
-Analyse for tilpassing av planleggingsoptimalisering lar deg identifisere hvor resultatet kan variere mellom den innebygde hovedplanleggingsmotoren og planleggingsoptimaliseringen. Denne analysen utføres basert på gjeldende oppsett og data. 
+Analyse for tilpassing av planleggingsoptimalisering lar deg identifisere hvor resultatet kan variere mellom den avskrevne hovedplanleggingsmotoren og planleggingsoptimaliseringen. Denne analysen utføres basert på gjeldende oppsett og data. 
 
 Hvis du vil se resultatet for analyse for tilpassing av planleggingsoptimalisering, kan du gå til **Hovedplanlegging** \> **Oppsett** \> **Analyse for tilpassing av planleggingsoptimalisering** og deretter velge **Kjør analyse**. Hvis analysen finner noen uregelmessigheter, vises de på samme side. (Det kan ta noen minutter å kjøre analysen.)
 
@@ -64,7 +64,6 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Basiskalendere | Kalendere som bruker basiskalender: *\#* | Dette funksjonen støttes nå. | Støttes | 
 | Partidisposisjonskoder | Ikke-nettbare partidisposisjonsstandarder: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, se [Bruke partidisposisjonskoder til å merke partier som tilgjengelige eller ikke tilgjengelige](../../inventory/batch-disposition-codes.md) | Støttes |
 | Leveringskapasitet | Standard ordreinnstillinger med leveringsdatokontroll satt til CTP: *\#* | I Supply Chain Management 10.0.28 og nyere gjør en prosess kalt for *CTP for planleggingsoptimalisering* bekreftede datoer for forsendelse og mottak tilgjengelig etter at den dynamiske planen er kjørt. For eldre versjoner av Supply Chain Management ignoreres den eldre CTP-innstillingen når planleggingsoptimalisering er aktivert. | Støttes |
-| Kopier statisk til dynamisk plan | Kopi av statisk til dynamisk planen er aktivert for parametere for hovedplanlegging. | Planleggingsoptimalisering kopierer ikke den statiske planen til den dynamiske planen, uavhengig av denne innstillingen. Dette konseptet er generelt mindre relevant på grunn av hastigheten og fullføringsregenereringen som gis av planleggingsoptimaliseringen. Hvis det brukes to eller flere planer, bør hovedplanlegging utløses for hver plan. | Ikke tilgjengelig |
 | Autorisasjon | Dekningsgrupper med automatisk autorisasjonshorisont angitt: *\#* | I versjon 10.0.7 og senere støttes autorisasjon som en separat satsvis jobb etter at hovedplanleggingen er fullført (forutsatt at funksjonen *Automatisk autorisasjon med planleggingsoptimalisering* er aktivert i [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Legg merke til at automatisk autorisasjon med planleggingsoptimalisering er basert på ordredatoen (startdato), ikke behovsdatoen (sluttdatoen). Denne virkemåten sikrer at planlagte bestillinger vises i forfallstiden, uten at leveringstiden i autorisasjonshorisonten må tas med. | Støttes |
 | Autorisasjon | Dekningsoppføringer for vare med automatisk autorisasjon angitt: *\#* | I versjon 10.0.7 og senere støttes automatisk autorisasjon som en separat satsvis jobb etter at hovedplanleggingen er fullført (forutsatt at funksjonen *Automatisk autorisasjon med planleggingsoptimalisering* er aktivert i [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Legg merke til at automatisk autorisasjon med planleggingsoptimalisering er basert på ordredatoen (startdato), ikke behovsdatoen (sluttdatoen). Denne virkemåten sikrer at planlagte bestillinger vises i forfallstiden, uten at leveringstiden i autorisasjonshorisonten må tas med. | Støttes |
 | Autorisasjon | Hovedplaner med automatisk autorisasjon angitt: *\#* | I versjon 10.0.7 og senere støttes automatisk autorisasjon som en separat satsvis jobb etter at hovedplanleggingen er fullført (forutsatt at funksjonen *Automatisk autorisasjon med planleggingsoptimalisering* er aktivert i [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)). Legg merke til at automatisk autorisasjon med planleggingsoptimalisering er basert på ordredatoen (startdato), ikke behovsdatoen (sluttdatoen). Denne virkemåten sikrer at planlagte bestillinger vises i forfallstiden, uten at leveringstiden i autorisasjonshorisonten må tas med. | Støttes |
@@ -93,34 +92,27 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Produksjon | Formelversjoner med ko-/biprodukter: *\#* | Dette funksjonen venter. Koprodukter og biprodukter som er knyttet til formelversjonen, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 |
 | Produksjon | Formelversjoner med avkastning: *\#* | Dette funksjonen venter. Avkastning som er knyttet til formelversjonen, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 |
 | Produksjon | Planer inkludert sekvensering: *\#* | Dette funksjonen venter. For øyeblikket ignoreres sekvensiering når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
-| Produksjon | Frigitte produksjonsordre som ikke er startet, og der planlagt start er tidligere enn i dag: *\#* | Dette funksjonen venter. For øyeblikket vil hovedplanleggingen anta at den blir fullført i dag hvis en produksjonsordre blir forsinket. Dette er relevant for frigitte produksjonsordrer der en leveringsdato er i fortiden, men ennå ikke er fullført. | Fremtidig bølge |
+| Produksjon | Frigitte produksjonsordre som ikke er startet, og der planlagt start er tidligere enn i dag: *\#* | Dette funksjonen venter. For øyeblikket vil hovedplanleggingen anta at den blir fullført i dag hvis en produksjonsordre blir forsinket. Dette er relevant for frigitte produksjonsordrer der en leveringsdato er i fortiden, men ennå ikke er fullført. | lanseringsbølge 2 i 2022 |
 | Produksjon | Ressurser som er planlagt med begrenset kapasitet: *\#* | Dette funksjonen støttes nå.| Støttes |
 | Produksjon | Ruter som brukes i planleggingen: *\#* | Dette funksjonen støttes. | Støttes |
-| Produksjon | Salgslinjereservasjon ved hjelp av nedbryting: *\#* | Salgslinjereservasjon som bruker nedbryting, støttes ikke når planleggingsoptimalisering er aktivert. | Fremtidig bølge |
-| Produksjon | Planlegging med nedbryting av produksjonsordre: *\#* | Planlegging som bruker nedbryting av produksjonsordrer, støttes ikke når planleggingsoptimalisering er aktivert. Produksjonsordrer kan planlegges enkeltvis. | Fremtidig bølge |
+| Produksjon | Salgslinjereservasjon ved hjelp av nedbryting: *\#* | Salgslinjereservasjon som bruker nedbryting, støttes ikke når planleggingsoptimalisering er aktivert. | lanseringsbølge 2 i 2022 |
+| Produksjon | Planlegging med nedbryting av produksjonsordre: *\#* | Planlegging som bruker nedbryting av produksjonsordrer, støttes ikke når planleggingsoptimalisering er aktivert. Produksjonsordrer kan planlegges enkeltvis. | lanseringsbølge 2 i 2022 |
 | Tilbudsforespørsler | Hovedplaner med tilbudsforespørsler aktivert: *\#* | Dette funksjonen venter. Tilbudsforespørsler vurderes for øyeblikket ikke som behov når planleggingsoptimalisering aktiveres. De vil ignoreres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
 | Rekvisisjoner | Hovedplaner med rekvisisjoner aktivert: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Innkjøpsrekvisisjoner](purchase-requisitions.md). | Støttes |
 | Sikkerhetsmarginer | Dekningsgrupper med sikkerhetsmargin: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). | Støttes |
 | Sikkerhetsmarginer | Hovedplaner med sikkerhetsmargin: *\#* | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). |  Støttes |
-| Fullføring av sikkerhetslager | Varedekningsposter med "Fyll opp minimum" forskjellig fra "Dagens dato + leveringstid": *\#* | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid*. Denne endringen gjøres for å forberede et forenklet planleggingsoppsett i fremtiden, og for å tilby et gjennomførbart resultat. Hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. Denne virkemåten kan føre til betydelig støy og uønskede planlagte bestillinger. Den beste fremgangsmåten er å endre innstillingen slik at *Dagens dato + leveringstid* brukes. Oppdater hoveddata for å unngå advarsler. | I/T |
-| Salgstilbud | Hovedplaner med salgstilbud aktivert: *\#* | Dette funksjonen venter. Tilbud ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 eller senere |
-| Holdbarhet | Hovedplaner med holdbarhet aktivert: *\#* | Dette funksjonen venter. | lanseringsbølge 2 i 2022 |
+| Salgstilbud | Hovedplaner med salgstilbud aktivert: *\#* | Dette funksjonen venter. Tilbud ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | lanseringsbølge 2 i 2022 |
+| Holdbarhet | Hovedplaner med holdbarhet aktivert: *\#* | Dette funksjonen støttes nå. | Støttes |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over planleggingsoptimalisering](planning-optimization-overview.md)
-
-[Komme i gang med planleggingsoptimalisering](get-started.md)
-
-[Forskjeller mellom klassisk hovedplanlegging og planleggingsoptimalisering](planning-optimization-differences-with-built-in.md)
-
-[Parametere som ikke brukes av planleggingsoptimalisering](not-used-parameters.md)
-
-[Vis planhistorikk og planleggingslogger](plan-history-logs.md)
-
-[Bruke filtre på en plan](plan-filters.md)
-
-[Annullere en planleggingsjobb](cancel-planning-job.md)
+- [Systemarkitektur for hovedplanlegging](../master-planning-architecture.md)
+- [Kom i gang med hovedplanlegging](get-started.md)
+- [Forskjeller mellom klassisk hovedplanlegging og planleggingsoptimalisering](planning-optimization-differences-with-built-in.md)
+- [Parametere som ikke brukes av planleggingsoptimalisering](not-used-parameters.md)
+- [Vis planhistorikk og planleggingslogger](plan-history-logs.md)
+- [Kjør planlegging for et delsett med varer](plan-filters.md)
+- [Annullere en planleggingsjobb](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

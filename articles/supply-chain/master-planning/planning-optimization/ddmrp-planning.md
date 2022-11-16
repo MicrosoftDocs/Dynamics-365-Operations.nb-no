@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: f1e2cfca47d507c8de7f9323bb8e4262a0e90949
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 8ba9a6d24923b66259bc8b6cc688ec667cb000de
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689211"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740309"
 ---
 # <a name="demand-driven-planning"></a>Etterspørselsdrevet planlegging
 
@@ -55,4 +55,4 @@ Hvis du kjører hovedplanlegging nå, genererer dette en planlagt bestilling hvi
 I dette eksemplet produseres et bestillingsforslag for et antall på 130, som tilsvarer maksimumsnivået minus nettoflyten. Den planlagte bestillingen tilordnes en prioritet på 53,07, basert på prosenten av maksimalt antall. Siden disse verdiene ble funnet 20. juni, oppretter systemet en planlagt bestilling som er datert 20. juni, pluss den utkoblede leveringstiden for varen (fem virkedager i dette eksemplet). Fordi fem virkedager er én uke fra i dag, er den planlagte bestillingen datert til 27. juni.
 
 > [!NOTE]
-> Planleggingsoptimalisering beregner bare utkoblede varer ved hjelp av DDMRP. Alle andre varer beregnes ved hjelp av standard planlegging av materialbehov (MRP).
+> Hovedplanlegging beregner bare utkoblede varer ved hjelp av DDMRP. Alle andre varer beregnes ved hjelp av standard planlegging av materialbehov (MRP).

@@ -1,6 +1,6 @@
 ---
 title: Dekningshorisonter
-description: Denne artikkelen beskriver hvordan du definerer dekningshorisonter når du bruker planleggingsoptimalisering. En dekningshorisont angir planleggingshorisonten og -grensen.
+description: Denne artikkelen beskriver hvordan du konfigurerer dekningshorisonter. En dekningshorisont angir planleggingshorisonten og -grensen.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-18
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ebd59e05d2ae227f24e7dae6fae3634aab026c5a
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 987dea4c1b693fc1bb687f97d51288d5e51e7d4c
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8847940"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740120"
 ---
 # <a name="coverage-time-fences"></a>Dekningshorisonter
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du definerer *dekningshorisonter* når du bruker planleggingsoptimalisering. Planleggere kan definere planleggingshorisonten (dekningshorisonten i dager), og utelate forsyning og behov som faller utenfor denne horisonten. Dekningshorisonter kan derfor bidra til å forhindre «støy» som forårsakes av forsyningsforslag det er måneder til du må reagere på. Eksempler omfatter neste års prognose og kundeordrer som er lagt inn med en leveringstid langt utover det normale.
+Denne artikkelen beskriver hvordan du konfigurerer *dekningshorisonter*. Planleggere kan definere planleggingshorisonten (dekningshorisonten i dager), og utelate forsyning og behov som faller utenfor denne horisonten. Dekningshorisonter kan derfor bidra til å forhindre «støy» som forårsakes av forsyningsforslag det er måneder til du må reagere på. Eksempler omfatter neste års prognose og kundeordrer som er lagt inn med en leveringstid langt utover det normale.
 
 En dekningshorisont er antallet dager etter dagens dato (eller nærmere bestemt datoen du foretar planleggingskjøringen) som forsyning og behov skal utelates. For å unngå forsinkelser må du sørge for at dekningshorisonten er lengre enn den totale leveringstiden. Standardverdien i systemet er 100 dager.
 
@@ -82,9 +82,9 @@ Når du definerer dekningshorisonter, må du ta hensyn til følgende:
 - Behovstransaksjoner blir ikke generert for forsyning og behov som faller utenfor dekningshorisonten.
 - Hvis godkjent forsyning og behov faller utenfor dekningshorisonten, blir den ikke lastet inn i motoren. Den utløser derfor ikke noe etterfylling, og forsinkelser blir ikke beregnet. Denne forsyningen og dette behovet bør likevel ikke slettes fra systemet.
 - Variasjoner i sikkerhetslagerantall (fra minimumsnøkler) ignoreres hvis de faller utenfor dekningshorisonten.
-- Konserninternt behov ignoreres hvis ønsket forsendelsesdato som beregnes, ikke er innenfor dekningshorisonten. Merk at for innebygd hovedplanlegging er ikke konserninternt behov begrenset av dekningshorisonten.
-- Behovsprognoser ignoreres hvis budsjettdatoen ikke er innenfor dekningshorisonten. Merk at for innebygd hovedplanlegging er ikke behovsprognoser begrenset av dekningshorisonten.
-- Planleggingsoptimalisering er tidssonefølsom. Den tar hensyn til tidssonen ved forsynings- og behovsområdene, og tidspunktet for planleggingskjøringen. La oss for eksempel si at hovedplanlegging utløses 15. oktober kl. 11 fra et område i Danmark (tidssonen GMT+1), og det brukes en dekningshorisont på ti dager. I dette tilfellet blir forsyning og behov fra et område i Seattle (tidssonen GMT-8) tatt med frem til 25. oktober kl. 02 (= ti 24-timers dager etter at hovedplanleggingen ble utløst, minus tidssonedifferansen på ni timer). Merk at den innebygde hovedplanleggingsmotoren bare tar hensyn til datoen for horisonten. Resultatet kan derfor variere.
+- Konserninternt behov ignoreres hvis ønsket forsendelsesdato som beregnes, ikke er innenfor dekningshorisonten. Merk at for den avskrevne hovedplanleggingsmotoren er ikke konserninternt behov begrenset av dekningshorisonten.
+- Behovsprognoser ignoreres hvis budsjettdatoen ikke er innenfor dekningshorisonten. Merk at for den avskrevne hovedplanleggingsmotoren er ikke behovsprognoser begrenset av dekningshorisonten.
+- Planleggingsoptimalisering er tidssonefølsom. Den tar hensyn til tidssonen ved forsynings- og behovsområdene, og tidspunktet for planleggingskjøringen. La oss for eksempel si at hovedplanlegging utløses 15. oktober kl. 11 fra et område i Danmark (tidssonen GMT+1), og det brukes en dekningshorisont på ti dager. I dette tilfellet blir forsyning og behov fra et område i Seattle (tidssonen GMT-8) tatt med frem til 25. oktober kl. 02 (= ti 24-timers dager etter at hovedplanleggingen ble utløst, minus tidssonedifferansen på ni timer). Merk at den avskrevne hovedplanleggingsmotoren bare tar hensyn til datoen for horisonten. Resultatet kan derfor variere.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

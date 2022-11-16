@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7c8d5b7992c7955b9c5b1c7e773fdd467ccba6f9
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: c2e4294cb54e9ba41467f505e361d5ee45f1f27d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335353"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740529"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -33,7 +33,7 @@ I denne artikkelen beskrives hver metode i detalj.
 
 ## <a name="enable-the-features-that-are-described-in-this-article"></a><a name="enable-features"></a>Aktivere funksjonene som er beskrevet i denne artikkelen
 
-De fleste planlagte bestillingsfunksjoner er tilgjengelige i alle standardinstallasjoner av Microsoft Dynamics 365 Supply Chain Management som bruker Planleggingsoptimalisering. Noen av funksjonene som er beskrevet i denne artikkelen, må imidlertid aktiveres i Funksjonsadministrasjon før du kan bruke dem.
+De fleste planlagte bestillingsfunksjoner er tilgjengelige i alle standardinstallasjoner av Microsoft Dynamics 365 Supply Chain Management. Noen av funksjonene som er beskrevet i denne artikkelen, må imidlertid aktiveres i Funksjonsadministrasjon før du kan bruke dem.
 
 ### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Aktivere eller deaktivere parallellisert autorisering av planlagte bestillinger
 
@@ -91,7 +91,7 @@ Hvis du vil autorisere planlagte bestillinger manuelt, finner du og velger de pl
 
 ## <a name="auto-firm-planned-orders"></a>Autorisere planlagte ordrer automatisk
 
-Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som en del av hovedplanlegging-prosessen. Du kan definere en standard autorisasjonshorisont for dekningsgrupper, individuelle varer og kombinasjoner av varer og hovedplaner. I løpet av hovedplanleggingen vil planlagte bestillinger automatisk bli autorisert hvis ordredatoen er innenfor den angitte horisonten for autorisering. Planlagte bestillinger som genereres av Planleggingsoptimalisering og den innebygde hovedplanleggingsoperasjonen håndterer ordredatoen (det vil si startdatoen) på en annen måte.
+Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som en del av hovedplanlegging-prosessen. Du kan definere en standard autorisasjonshorisont for dekningsgrupper, individuelle varer og kombinasjoner av varer og hovedplaner. I løpet av hovedplanleggingen vil planlagte bestillinger automatisk bli autorisert hvis ordredatoen er innenfor den angitte horisonten for autorisering. Planlagte bestillinger som genereres av Planleggingsoptimalisering og den avskrevne hovedplanleggingsmotoren, håndterer ordredatoen (det vil si startdatoen) på en annen måte.
 
 > [!NOTE]
 > Automatisk autorisasjon av planlagte bestillinger kan bare skje for varer som er knyttet til en leverandør.
@@ -99,13 +99,13 @@ Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som
 > Avledede ordrer (dvs bestillinger fra underleverandør) som er autoriserte, viser statusen *Til vurdering* hvis sporing av saksendringer er aktivert.
 
 > [!IMPORTANT]
-> Før funksjonen som er beskrevet i denne delen, kan brukes med planleggingsoptimalisering, må [*Automatisk autorisasjon med planleggingsoptimalisering*-funksjonen](#enable-features) aktiveres for systemet, som beskrevet i begynnelsen av denne artikkelen. Automatisk autorisering kan alltid brukes med den innebygde hovedplanleggingsmotoren.
+> Før funksjonen som er beskrevet i denne delen, kan brukes med planleggingsoptimalisering, må [*Automatisk autorisasjon med planleggingsoptimalisering*-funksjonen](#enable-features) aktiveres for systemet, som beskrevet i begynnelsen av denne artikkelen. Automatisk autorisering kan alltid brukes med den avskrevne hovedplanleggingsmotoren.
 
-### <a name="auto-firming-with-planning-optimization-vs-the-built-in-planning-engine"></a>Automatisk autorisering med planleggingsoptimalisering i forhold til den innebygde planleggingsmotoren
+### <a name="auto-firming-with-planning-optimization-vs-the-deprecated-master-planning-engine"></a>Automatisk autorisering med planleggingsoptimalisering i forhold til den avskrevne hovedplanleggingsmotoren
 
-Både planleggingsoptimalisering og den innebygde planleggingsmotoren kan brukes til automatisk autorisering av planlagte bestillinger. Det er imidlertid noen viktige forskjeller. Mens planleggingsoptimalisering for eksempel bruker ordredatoen (det vil si startdatoen) for å bestemme hvilke planlagte bestillinger som skal autoriseres, bruker den innebygde planleggingsmotoren behovsdatoen (det vil si sluttdatoen). Følgende tabell viser en oversikt over forskjellene.
+Både planleggingsoptimalisering og den avskrevne hovedplanleggingsmotoren kan brukes til automatisk autorisering av planlagte bestillinger. Det er imidlertid noen viktige forskjeller. Mens planleggingsoptimalisering for eksempel bruker ordredatoen (det vil si startdatoen) for å bestemme hvilke planlagte bestillinger som skal autoriseres, bruker den avskrevne hovedplanleggingsmotoren behovsdatoen (det vil si sluttdatoen). Følgende tabell viser en oversikt over forskjellene.
 
-| Funksjon | Planleggingsoptimalisering | Innebygd planleggingsmotor |
+| Funksjon | Planleggingsoptimalisering | Avskrevet hovedplanleggingsmotor |
 |---|---|---|
 | **Datogrunnlag** | Automatisk autorisasjon er basert på ordredatoen (Startdato). | Automatisk autorisasjon er basert på behovsdatoen (sluttdato). |
 | **Leveringstid** | Fordi ordredatoen (Startdato) utløser autorisering, trenger du ikke å ta hensyn til leveringstiden som en del av autorisasjonshorisonten. | Hvis du vil ha hjelp til å sikre at ordrer blir autorisert til rett tid, må autorisasjonshorisonten være lenger enn leveringstiden. |

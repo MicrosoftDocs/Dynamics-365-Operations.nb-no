@@ -10,14 +10,15 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fa4d2d1506546cacf5f9a7ec936f17601c5727d2
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 78ba4236705f1a200d9fe796eb80d0241b0fa537
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335383"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740475"
 ---
 # <a name="delay-tolerance-negative-days"></a>Forsinkelsestoleranse (negative dager)
+<!-- KFM: Split topic into PO and classic -->
 
 [!include [banner](../../includes/banner.md)]
 
@@ -47,7 +48,7 @@ Systemet kobler beregningen av forsinkelsestoleranse til den *tidligste etterfyl
 Denne formelen sikrer at hovedplanlegging ikke oppretter nye forsyningsordrer når det finnes nok forsyning i løpet av leveringstiden for produktet.
 
 > [!NOTE]
-> Beregningen av forsinkelsestoleranse i Planleggingsoptimalisering bruker alltid beregning av dynamiske negative dager fra innebygd hovedplanlegging. Innstillingen **Bruk dynamiske negative dager** på siden **Hovedplanleggingsparametere** har ingen innvirkning på denne virkemåten.
+> Beregningen av forsinkelsestoleranse i Planleggingsoptimalisering bruker alltid beregning av dynamiske negative dager fra den avskrevne hovedplanleggingsmotoren. Innstillingen **Bruk dynamiske negative dager** på siden **Hovedplanleggingsparametere** har ingen innvirkning på denne virkemåten.
 
 Hvis den eksisterende forsyningen innebærer en forsinkelse i etterspørselen som er mindre enn eller lik den beregnede forsinkelsestoleransen, utligner Planleggingsoptimalisering eksisterende forsyning med behovet. I noen tilfeller er det bedre å forsinke behovet enn å ende opp med for stor forsyning.
 

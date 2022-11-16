@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 310809799a81c6709041764f7038de2a70b7f203
-ms.sourcegitcommit: 873d66c03a51ecb7082e269f30f5f980ccd9307f
+ms.openlocfilehash: b95f131a45c11748cfd4c66c47e5a51c765ed486
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9124798"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740417"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.22. (november 2021)
 
@@ -53,7 +53,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeartikler. Disse 
 |---|---|
 | Styring av teknisk endring | [Oversikt over styring av teknisk endring](../engineering-change-management/product-engineering-overview.md) viser nå alle relaterte, valgfrie funksjoner som er tilgjengelige i funksjonsadministrasjon |
 | Hovedplanlegging | [Oppsett av behovsprognose](../master-planning/demand-forecasting-setup.md) |
-| Hovedplanlegging | [Nettobehov og utligningsinformasjon med planleggingsoptimalisering](../master-planning/planning-optimization/net-requirements.md) |
+| Hovedplanlegging | [Nettobehov og utligningsinformasjon](../master-planning/planning-optimization/net-requirements.md) |
 | Lagerstyring | [Frigi til lager](../warehousing/release-to-warehouse-process.md) gir en detaljert oversikt over fullstendig frigivelse til lagerprosess |
 
 ## <a name="additional-resources"></a>Tilleggsressurser

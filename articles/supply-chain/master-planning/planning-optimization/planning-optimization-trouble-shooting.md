@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f078fda02a11eb2073738d59b45f81698b707653
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 37c38ab9cec8ae3c9d4decf8043b43ea2251083e
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889526"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739736"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Feilsøk planleggingsoptimalisering 
 
@@ -37,13 +37,13 @@ Planleggingsoptimalisering krever at et LCS-miljø (Lifecycle Services) er aktiv
 
 ## <a name="planning-of-batch-jobs-fails-when-planning-optimization-is-enabled"></a>Planlegging av satsvise jobber mislykkes når planleggingsoptimalisering aktiveres
 
-Når du aktiverer planleggingsoptimalisering, deaktiveres den innebygde hovedplanleggingsmotoren automatisk. Satsvise jobber for hovedplanlegging som ble opprettet for den innebygde planleggingsmotoren i Supply Chain Management, vil mislykkes hvis de blir utløst mens planleggingsoptimalisering er aktivert. Du kan få en feilmelding, for eksempel *Denne operasjonen utløste hovedplanlegging som ikke støttes når planleggingsoptimalisering er aktivert*.
+Når du aktiverer planleggingsoptimalisering, deaktiveres den avskrevne hovedplanleggingsmotoren automatisk. Satsvise jobber for hovedplanlegging som ble opprettet for den avskrevne hovedplanleggingsmotoren, vil mislykkes hvis de blir utløst mens planleggingsoptimalisering er aktivert. Du kan få en feilmelding, for eksempel *Denne operasjonen utløste hovedplanlegging som ikke støttes når planleggingsoptimalisering er aktivert*.
 
-**Løsning**: Avbryt alle satsvise jobber for hovedplanlegging som ble opprettet for den innebygde planleggingsmotoren for Supply Chain Management.
+**Løsning**: Avbryt alle satsvise jobber for hovedplanlegging som ble opprettet for den avskrevne hovedplanleggingsmotoren.
 
 ## <a name="planning-optimization-results-are-different-from-earlier-results"></a>Resultatene av planleggingsoptimalisering er forskjellige fra tidligere resultater
 
-Planleggingsoptimalisering er forskjellig fra den innebygde hovedplanleggingsutformingen i noen områder. Dette kan også skyldes ventende funksjoner.
+Planleggingsoptimalisering er forskjellig fra den avskrevne hovedplanleggingsmotoren på enkelte områder. Dette kan også skyldes ventende funksjoner.
 
 **Løsning**: Kjør analyse for tilpassing av planleggingsoptimalisering, og analyser deretter resultatene ved henvisning til den relaterte dokumentasjonen for å forstå virkningen. Hvis du vil ha mer informasjon, se [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md).
 
@@ -63,9 +63,8 @@ Dette er knyttet til en ventende funksjon som er planlagt som en del av støtten
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Komme i gang med planleggingsoptimalisering](get-started.md)
-
-[Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
+- [Kom i gang med hovedplanlegging](get-started.md)
+- [Analyse for tilpasning av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

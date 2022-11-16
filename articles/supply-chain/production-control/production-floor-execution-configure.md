@@ -2,7 +2,7 @@
 title: Konfigurere grensesnittet for produksjonsutførelse
 description: Denne artikkelen beskriver hvordan du oppretter en eller flere konfigurasjoner for grensesnittet for produksjonsutførelse. Når du åpner grensesnittet for produksjonsutførelse, laster det automatisk inn et valgt konfigurasjons- og jobbfilter som gjelder spesielt for nettleseren og enheten. I konfigurasjonen angir du policyer som må gjelde for et bestemt forbruk.
 author: johanhoffmann
-ms.date: 08/05/2022
+ms.date: 11/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7196306b34a72e4c53113dd644f666346f170ed7
-ms.sourcegitcommit: 9e6a9d644a34158390c6e209e80053ccbdb7d974
+ms.openlocfilehash: 641b293617df608bc07b97c077dbcd05664f8e2a
+ms.sourcegitcommit: 4abf9b375fed6885ea11a425c524958fea29c3b9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "9708732"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748693"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -85,17 +85,19 @@ Denne funksjonen gir en forbedret erfaring for visning av lister over serie-, pa
 
 For å bruke denne funksjonen må den være aktivert for systemet. Fra og med Supply Chain Management versjon 10.0.25 er funksjonen aktivert som standard. Funksjonen er obligatorisk fra og med Supply Chain Management, versjon 10.0.29 og kan ikke deaktiveres. Hvis du kjører en versjon eldre enn 10.0.29, kan administratorer aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Vis fullstendige serie-, parti- og skiltnumre i grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-
 Per Supply Chain Management versjon 10.0.25 er denne funksjonen aktivert som standard. Administratorer kan aktivere eller deaktivere denne funksjonaliteten ved å søke etter funksjonen *Vis fullstendige serie-, parti- og skiltnumre i grensesnittet for produksjonsutførelse* i arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="register-material-consumption"></a>Registrer materialforbruk
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Ved hjelp av denne funksjonen kan arbeidere bruke grensesnittet for produksjonsutførelse til å registrere materialforbruk, partinumre og serienumre. Noen produsenter, særlig de i prosessindustrien, må uttrykkelig registrere mengden material som forbrukes for hvert parti eller hver produksjonsordre. Arbeidere kan for eksempel bruke en vekt til å veie mengden material som forbrukes når de arbeider. For å sikre full materialsporing må disse organisasjonene også registrere partinumrene som ble brukt til å produsere hvert produkt.
 
 Det finnes to versjoner av denne funksjonen. Den ene støtter bare varer som *ikke er* aktivert slik at den bruker Warehouse Management-prosesser (WMS). Den andre støtter varer som *er* aktivert slik at den bruker WMS. Hvis du vil bruke denne funksjonaliteten, aktiverer du den ene av eller begge følgende funksjoner i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen), avhengig av om du har varer som er aktivert for WMS:
 
 - *Registrer materialforbruk i grensesnittet for produksjonsutførelse (ikke lagerstyring)*
-- *Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)*
+- *(Forhåndsversjon) Registrer materialforbruk i grensesnittet for produksjonsutførelse (WMS-aktivert)*
 
 > [!IMPORTANT]
 > Du kan velge å bruke bare ikke-WMS-funksjonen. Hvis du imidlertid bruker WMS, må du aktivere begge funksjonene.
@@ -138,6 +140,25 @@ For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Fun
 
 - *Tilleggskonfigurasjon i grensesnittet for produksjonsutførelse*
 
+### <a name="enable-the-my-jobs-tab"></a>Aktiver fanen Mine jobber
+
+Med fanen **Mine jobber** kan arbeidere enkelt vise alle jobber som er tilordnet spesifikt til dem og ikke er påbegynt eller ferdige. Dette er nyttig i firmaer der jobber noen ganger eller alltid er tilordnet til bestemte arbeidere (personale) i stedet for andre typer ressurser (for eksempel maskiner).
+
+For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Fanen Mine jobber i grensesnittet for produksjonsutførelse*
+
+### <a name="enable-use-of-a-numpad-on-the-sign-in-page"></a>Aktiver bruk av et numerisk tastatur på påloggingssiden
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+
+Denne siden lar administratorer legge til en numerisk tastaturkontroll på påloggingssiden for grensesnittet for produksjonsutførelse. Arbeidere kan deretter logge seg på ved å bruke det numeriske tastaturet for å angi kort-ID-en eller personalnummeret.
+
+For å kunne bruke denne funksjonaliteten aktiverer du følgende funksjon i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Aktiver bruk av et numerisk tastatur på påloggingssiden*
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeide med grensesnittet for produksjonsutførelse
 
 Du kan opprette og vedlikeholde konfigurasjoner av produksjonsutførelse ved å gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurer produksjonsutførelse**. Siden **Konfigurere produksjonsutførelse** viser en liste over eksisterende konfigurasjoner. På denne siden kan du utføre følgende handlinger:
@@ -161,6 +182,7 @@ Følgende innstillinger er tilgjengelige i **Generelt**-hurtigfanen:
 - **Lås ansatt** – Når dette alternativet er satt til *Nei*, blir arbeidere logget av umiddelbart etter at de har utført en registrering (for eksempel en ny jobb). Grensesnittet går deretter tilbake til påloggingssiden. Når *Ja* er angitt for dette alternativet, forblir arbeidere logget på grensesnittet for produksjonsutførelse. En arbeider kan imidlertid logge seg av manuelt slik at en annen arbeider kan logge seg på når grensesnittet for produksjonsutførelse fortsetter å kjøre under den samme systembrukerkontoen. Hvis du vil ha mer informasjon om disse kontotypene, kan du se [Tilordnede brukere](config-job-card-device.md#assigned-users).
 - **Bruk det faktiske registreringstidspunktet** – Velg *Ja* for å angi at tidspunktet for hver nye registrering skal være likt det nøyaktige tidspunktet da registreringen ble sendt av en arbeider. Når dette alternativet er satt til *Nei*, brukes påloggingstidspunktet i stedet. Du bør normalt velge *Ja* hvis du har satt **Lås ansatt** og/eller **Én arbeider**-alternativet til *Ja*, i tilfeller der arbeiderne ofte er logget på i lengre perioder.
 - **Én arbeider** – Velg *Ja* hvis bare én arbeider bruker hvert grensesnitt for produksjonsutførelse der denne konfigurasjonen er aktiv. Når alternativet er satt til *Ja*, er **Lås ansatt**-alternativet automatisk satt til *Ja*. I tillegg fjerner dette alternativet behovet (og muligheten) for at arbeideren kan logge på med en kort-ID (eller lignende). I stedet logger arbeideren seg på Microsoft Dynamics 365 Supply Chain Management ved hjelp av en systembrukerkonto som er koblet til en *tidsregistrert arbeider* (fra *arbeidere*-tabellen), og blir samtidig logget på grensesnittet for produksjonsutførelse som den aktuelle arbeideren.
+- **Aktiver numerisk tastatur** – Angi *Ja* for å legge til en numerisk tastatur på påloggingsskjermen, slik at ansatte kan angi kort-ID-en eller personalnummeret ved hjelp av en numerisk tastatur på berøringsskjermen. Angi *Nei* for dette alternativet hvis du vil skjule det numeriske tastaturet.
 - **Tillat låsing av berøringsskjermen** – Velg *Ja* for å tillate at arbeiderne kan låse berøringsskjermen for grensesnittet for produksjonsutførelse, slik at de kan rengjøre den. Når *Ja* er angitt for dette alternativet, blir knappen **Lås skjerm for rengjøring** lagt til på påloggingssiden. Når en arbeider velger denne knappen, låses berøringsskjermen midlertidig for å hindre uønskede inndata. En nedtellingstidtaker vises også. Arbeideren kan da trygt rengjøre enheten og skjermen. Når nedtellingen er fullført, låses berøringsskjermen automatisk opp igjen.
 - **Varighet for skjermlås** – Når alternativet **Tillat låsing av berøringsskjerm** er satt til *Ja*, bruker du dette alternativet til å angi antall sekunder berøringsskjermen skal være låst for rengjøring. Varigheten må være mellom 5 og 120 sekunder.
 - **Generer nummerskilt** – Sett dette alternativet til *Ja* for å generere et nytt nummerskilt hver gang en arbeider bruker et grensesnitt for produksjonsutførelse for å ferdigmelde. Skiltnummeret genereres fra en nummerserie som er definert på **Parametere for lagerstyring**-siden. Når den er satt til *Nei*, må arbeiderne angi et eksisterende nummerskilt når de ferdigmelder seg.

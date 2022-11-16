@@ -2,23 +2,23 @@
 title: Konfigurere oppgavebehandling
 description: Denne artikkelen beskriver hvordan du konfigurerer funksjoner for oppgavebehandling i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
-ms.openlocfilehash: ff97abab330174b41af76d22c202e8338d6d37fd
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: cc2d75f52b183559de344982c8e4208000af786e
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9282768"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746069"
 ---
 # <a name="configure-task-management"></a>Konfigurere oppgavebehandling
 
@@ -80,7 +80,11 @@ Følgende illustrasjon viser operasjonen **Oppgavebehandling** på siden **POS-o
 
 ![Operasjonen Oppgavebehandling på siden POS-operasjoner.](media/HQ-POS-Tasks-Notifications.png)
 
-Hvis du vil ha mer informasjon om hvordan du konfigurerer POS-varslinger, kan du se [Vise ordrevarslinger på salgsstedet (POS)](notifications-pos.md).
+Hvis du vil ha mer informasjon om hvordan du konfigurerer POS-varslinger, kan du se artikkelen [Vis ordrevarslinger på salgsstedet (POS)](notifications-pos.md).
+
+> [!NOTE]
+> Når du lagrer endringene, vises følgende advarselsmelding: **Operasjonsparameter aktiveres ikke i knappegruppeutforming for operasjons-ID som er lik eller mindre enn 4000. Hvis du oppretter egendefinert operasjon og vil overføre parameter fra knappegruppeutforming, bruker du operasjons-ID større enn 4000.** Velg **Lukk** for å lukke dialogboksen.
+
 
 ## <a name="configure-the-tasks-tile-on-a-pos-application-home-page"></a>Konfigurere Oppgaver-flisen på startsiden for et POS-program
 

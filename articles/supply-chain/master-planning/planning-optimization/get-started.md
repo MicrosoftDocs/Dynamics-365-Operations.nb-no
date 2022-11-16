@@ -1,6 +1,6 @@
 ---
-title: Kom i gang med planleggingsoptimalisering
-description: Denne artikkelen forklarer hvordan du begynner å bruke funksjonen for planleggingsoptimalisering.
+title: Kom i gang med hovedplanlegging
+description: Denne artikkelen forklarer hvordan du begynner å bruke funksjonen for hovedplanlegging i Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -16,27 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 629a84135434ad79f8397649ee9a4a62e49751d9
-ms.sourcegitcommit: 14a27b776befbc6793390f97e8fb0279c0ea18c1
+ms.openlocfilehash: 958de3f9ae6ead6cb6914bd3b7a4560e768013ab
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "9295937"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740336"
 ---
-# <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
+# <a name="get-started-with-master-planning"></a>Kom i gang med hovedplanlegging
 
 [!include [banner](../../includes/banner.md)]
 
-Som [tidligere annonsert](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios) skal Planleggingsoptimalisering erstatte den eksisterende innebygde planleggingsmotoren.
-
-Hvis du bruker den innebygde hovedplanleggingsmotoren, bør du begynne å planlegge migreringen til Planleggingsoptimalisering nå. Det er viktig å komme i gang med en gang fordi operasjonene ellers kan påvirkes når avskrivning blir iverksatt (selv om håndhevelse ikke er planlagt for øyeblikket). Vi oppfordrer deg på det sterkeste til å fullføre overføringen så snart planleggingsoptimalisering støtter funksjonene du krever, slik at du kan begynne å dra nytte av de mange ytelsesforbedringene og andre nye funksjoner som tilbys av den nye tjenesten.
-
-Funksjonen Planleggingsoptimalisering støtter for øyeblikket ikke alle funksjonene som er tilgjengelige i planleggingsmotoren som er innebygd i Supply Chain Management. Det er derfor viktig at du vurderer om funksjonssettet som for øyeblikket er tilgjengelig i planleggingsoptimalisering, oppfyller kravene dine. Funksjonen Planleggingsoptimalisering er for øyeblikket ikke aktivert som standard i Dynamics Lifecycle Services (LCS), slik at du kan gjennomføre evalueringen før funksjonen aktiveres.
-
-> [!NOTE]
-> Du må be om et unntak fra migreringen til Planleggingsoptimalisering hvis hovedplanleggingsprosessen ikke inkluderer produksjon (hovedplanlegging genererer planlagte produksjonsordrer), og du trenger den innebygde hovedplanleggingsmotoren etter versjon 10.0.15. Fra og med versjon 10.0.16 blir det vist en feil i miljøer ved kjøring av innebygd hovedplanlegging uten generering av planlagte produksjonsordrer. Planleggingsoptimalisering bør brukes for alle nye distribusjoner som ikke genererer planlagte produksjonsordrer under hovedplanlegging. Eiere av eksisterende miljøer som kjører den innebygde hovedplanleggingsmotoren uten generering av planlagte produksjonsordrer, vil motta en e-post med detaljer om unntaksprosessen. Det anbefales at du samarbeider med en partner for å evaluere og planlegge migreringen til Planleggingsoptimalisering.
-
-Før du slår på planleggingsoptimalisering, anbefaler vi på det sterkeste at du evaluerer resultatene i tilpassingsanalysen av planleggingsoptimalisering. Hvis du vil ha mer informasjon, se [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md).
+Hovedplanlegging i Supply Chain Management leveres av en ekstern tjeneste kalt tilleggsprogrammet for planleggingsoptimalisering for Dynamics 365 Supply Chain Management. Dette emnet forklarer hvordan du skaffer og konfigurerer denne tjenesten.
 
 ## <a name="availability"></a>Tilgjengelighet
 
@@ -108,31 +99,15 @@ Tilkoblingsstatusen angir gjeldende status for tilkoblingen mellom Supply Chain 
 Innstillingen for alternativet **Bruk planleggingsoptimalisering** bestemmer hvilken planleggingsmotor som skal brukes til hovedplanlegging:
 
 - **Ja** – planleggingsoptimalisering brukes til hovedplanlegging.
-- **Nei** – den innebygde planleggingsmotoren Supply Chain Management brukes til hovedplanlegging.
+- **Nei** – den avskrevne hovedplanleggingsmotoren brukes til hovedplanlegging.
 
-Denne innstillingen gjelder for alle juridiske enheter (firmaer). Det er ikke mulig å bruke planleggingsoptimalisering i noen juridiske enheter, og den innebygde hovedplanleggingen i andre juridiske enheter.
+Denne innstillingen gjelder for alle juridiske enheter (firmaer). Det er ikke mulig å bruke planleggingsoptimalisering i noen juridiske enheter, og den avskrevne hovedplanleggingsmotoren i andre juridiske enheter.
 
 > [!NOTE]
-> Hvis eksisterende satsvise planleggingsjobber for den innebygde planleggingsmotoren Supply Chain Management utløses når alternativet **Bruk planleggingsoptimalisering** er satt til **Ja**, vil disse jobbene mislykkes.
+> Hvis eksisterende satsvise planleggingsjobber for den avskrevne hovedplanleggingsmotoren utløses når alternativet **Bruk planleggingsoptimalisering** er satt til **Ja**, vil disse jobbene mislykkes.
 
 ### <a name="integration-with-the-setup"></a>Integrering med oppsettet
 
 Hvis Planleggingsoptimalisering er aktivert, utføres hovedplanlegging ved hjelp av tillegget for planleggingsoptimalisering. I dette tilfellet berøres resultater og funksjoner for hovedplanlegging.
 
-## <a name="additional-resources"></a>Tilleggsressurser
-
-[Vilkår for forhåndsvisningen](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Oversikt over planleggingsoptimalisering](planning-optimization-overview.md)
-
-[Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
-
-[Vise planhistorikk og planleggingslogger](plan-history-logs.md)
-
-[Bruke filtre på en plan](plan-filters.md)
-
-[Annullere en planleggingsjobb](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

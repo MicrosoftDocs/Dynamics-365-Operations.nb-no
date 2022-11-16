@@ -1,6 +1,6 @@
 ---
-title: Nettobehov og utligningsinformasjon med innebygd hovedplanlegging
-description: Denne artikkelen gir informasjon om beregnede nettobehov og utligningsinformasjon i innebygd hovedplanlegging.
+title: Nettobehov og utligningsinformasjon med den avskrevne hovedplanleggingsmotoren
+description: Denne artikkelen gir informasjon om beregnede nettobehov og utligningsinformasjon i den avskrevne hovedplanleggingsmotoren.
 author: t-benebo
 ms.date: 04/20/2022
 ms.topic: article
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 08a25af0d7ea15b4bc426dfc54b9b960762e11f0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dd11cf039704afc520cfa24185aa2e7842af9a00
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846076"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740282"
 ---
-# <a name="net-requirements-and-pegging-information-with-built-in-master-planning"></a>Nettobehov og utligningsinformasjon med innebygd hovedplanlegging
+# <a name="net-requirements-and-pegging-information-with-the-deprecated-master-planning-engine"></a>Nettobehov og utligningsinformasjon med den avskrevne hovedplanleggingsmotoren
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,8 +26,8 @@ Når du kjører hovedplanlegging, er det viktig at du forstår resultatet, hvord
 
 **Nettobehov**-siden viser nettobehov som beregnes for produktet under hovedplanleggingen. Den viser også dekningsinnstillingene som ble brukt under hovedplanleggingens kjøring, en nedbrytning av behovstotaler etter transaksjonstype og utligningsinformasjon.
 
-Siden **Nettobehov** fungerer litt annerledes basert på om du bruker planleggingsoptimalisering eller den innebygde hovedplanleggingsmotoren. Hvis du vil ha mer informasjon om denne forskjellen, kan du se [Forskjeller mellom innebygd hovedplanlegging og planleggingsoptimalisering](planning-optimization/planning-optimization-differences-with-built-in.md)
+Siden **Nettobehov** fungerer litt annerledes basert på om du bruker planleggingsoptimalisering eller den avskrevne hovedplanleggingsmotoren. Hvis du vil ha mer informasjon om denne forskjellen, kan du se [Forskjeller mellom planleggingsoptimalisering og den avskrevne hovedplanleggingsmotoren](planning-optimization/planning-optimization-differences-with-built-in.md)
 
-Hvis du vil ha mer informasjon om hvordan du arbeider med denne siden, kan du se [Nettobehov og utligningsinformasjon med planleggingsoptimalisering](planning-optimization/net-requirements.md).
+Hvis du vil ha mer informasjon om hvordan du arbeider med denne siden, kan du se [Nettobehov og utligningsinformasjon](planning-optimization/net-requirements.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

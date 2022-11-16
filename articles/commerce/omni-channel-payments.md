@@ -2,7 +2,7 @@
 title: Oversikt over betalinger for omnikanal
 description: Denne artikkelen gir en oversikt over omnikanalinnbetalinger i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: d850e532a764d22bc926f5649f4ad2907b49d1a0
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a5cc0725b383ca6657bd19b9dd25b0c60b364467
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8881715"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746133"
 ---
 # <a name="omni-channel-payments-overview"></a>Oversikt over betalinger for omnikanal
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Denne artikkelen gir en oversikt over omnikanalinnbetalinger i Dynamics 365 Commerce. Det inneholder en omfattende liste over støttede scenarioer, informasjon om funksjonalitet, oppsett og feilsøking, og beskrivelser av enkelte vanlige problemer.
 
@@ -34,7 +35,7 @@ Denne artikkelen gir en oversikt over omnikanalinnbetalinger i Dynamics 365 Comm
 
 | Semester | Beskrivelse |
 |---|---|
-| Token  | En streng med data som en betalingsprosessor gir som en referanse. Tokener kan representere betalingskortnumre, betalingsautoriseringer og tidligere betalingsregistreringer. Tokener er viktige, fordi de bidrar til å holde sensitive data utenfor salgsstedssystemet. De kalles noen ganger også for *referanser*. |
+| Token  | En streng med data som en betalingsprosessor gir som en referanse. Tokener kan representere betalingskortnumre, betalingsautoriseringer og tidligere betalingsregistreringer. Tokener er viktige, fordi de bidrar til å holde sensitive data utenfor salgsstedssystemet. De kalles av og til også *referanser*. |
 | Korttoken | Et token som en betalingsprosessor gir for lagring i POS-systemet. Et korttoken kan bare brukes av forretningsenheten som mottar det. Korttoken kalles noen ganger også for *kortreferanser*. |
 | Token for autorisasjon | En unik ID som en betalingsprosess gir som en del av svaret den sender til et POS-system etter at POS-systemet har gjort en godkjenningsforespørsel. Et autorisasjonssymbol kan brukes senere hvis prosessoren kalles for å utføre handlinger som tilbakeføring eller annullering av autorisasjonen. Det brukes imidlertid oftes til å fange opp midler når en ordre er fullført eller en transaksjon er sluttført. Autorisasjonstoken kalles noen ganger også for *autorisasjonsreferanser*. |
 | Registreringstoken | En referanse som en betalingsprosessor leverer til et POS-system når en betaling sluttføres eller registreres. Registreringssymbolet kan deretter brukes til å referere til betalingsregistreringen i etterfølgende operasjoner, for eksempel refunderingsforespørsler. | 
@@ -169,9 +170,9 @@ Følg disse trinnene for å kjøre scenarioet.
 6. I søkefeltet angir du **Seattle**, og deretter velger du **Seattle**-butikken for plukking. 
 7. Velg **OK** for å godta gjeldende dato som hentedato.
 9. Velg **Betal med kort** for å starte betalingen.
-10. Tilby kortbetalingen for beløpet som forfaller for innbetalingen. 
+10. Tilby kortbetalingen for beløpet som forfaller for innbetalingen.
 11. Fullfør innbetalingen på betalingsterminalen. 
-12. Når betalingen er utført, velger du alternativet for å bruke det samme kortet for oppfyllelsen, og vent til ordren er fullført. 
+12. Når betalingen er utført, velger du alternativet for å bruke det samme kortet for oppfyllelsen, og vent til ordren er fullført. Hvis 100 % av betalingen utføres (fra trinn 10 ovenfor), registreres midlene umiddelbart mot kortet, og et autorisasjonstoken blir ikke tilgjengelig ved fakturering, fordi midlene allerede er registrert og sporet som betalt.
 13. Start salgsstedet for Seattle-butikken.
 14. På velkomstsiden for salgsstedet velger du **Ordrer som skal plukkes**-operasjonen for å se ordrene som skal hentes i butikken. 
 15. Velg én eller flere linjer fra ordren som ble opprettet i referansebutikkfasaden, og velg deretter **Plukk**.
@@ -198,7 +199,7 @@ Følg disse trinnene for å kjøre scenarioet.
 8. Velg **Betal med kort** for å starte betalingen.
 9. Tilby kortbetalingen for beløpet som forfaller for innbetalingen. 
 10. Fullfør innbetalingen på betalingsterminalen. 
-11. Når betalingen er utført, velger du alternativet for å bruke det samme kortet for oppfyllelsen, og vent til ordren er fullført.
+11. Når betalingen er utført, velger du alternativet for å bruke det samme kortet for oppfyllelsen, og vent til ordren er fullført. Hvis 100 % av betalingen utføres (fra trinn 9 ovenfor), registreres midlene umiddelbart mot kortet, og et autorisasjonstoken blir ikke tilgjengelig ved fakturering, fordi midlene allerede er registrert og sporet som betalt.
 
 Når ordren plukkes, pakkes og faktureres i back office, vil betalingsdetaljene som gis på salgsstedet, bli brukt til å registrere midlene for varene som sendes til kunden. 
 
@@ -225,7 +226,7 @@ En kunde som kommer til butikken for ordreplukking, har muligheten til å bruke 
 
 ### <a name="invalid-authorizations"></a>Ugyldige godkjenninger
 
-Hvis kortet som ble brukt til å opprette en ordre, ikke lenger er gyldig når produktene velges for plukking, vil betalingsregistreringsforespørselen mislykkes. Salgsstedbetalingskoblingen vil deretter prøve å opprette en ny autorisasjon og registrere ved hjelp av samme kortdetaljer. Hvis den nye godkjenningen eller registreringen mislykkes, vil kassereren bli informert om at betalingen ikke kan behandles. Kassereren må deretter få en ny betaling fra kunden. 
+Hvis kortet som ble brukt til å opprette en ordre, ikke lenger er gyldig når produktene velges for plukking, vil betalingsregistreringsforespørselen mislykkes. Salgsstedbetalingskoblingen vil deretter prøve å opprette en ny autorisasjon og registrere ved hjelp av samme kortdetaljer. Hvis den nye autorisasjonen eller registreringen mislykkes, vil kassereren bli informert om at betalingen ikke kan behandles. Kassereren må deretter få en ny betaling fra kunden. 
 
 ### <a name="multiple-available-payments"></a>Flere tilgjengelige betalinger
 

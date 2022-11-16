@@ -2,7 +2,7 @@
 title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.30. (november 2022)
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.30.
 author: kamaybac
-ms.date: 09/08/2022
+ms.date: 11/07/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: 2983c113487934fd0751efcef9129e1f28d8dce8
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 20674ebd9d49b077371998f53d2b22c74f888fc6
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714805"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748471"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10030-november-2022"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.30. (november 2022)
 
@@ -33,6 +33,7 @@ Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være o
 
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
+| Lager og logistikk | [Spor ikke-forpliktende reservert antall i tildelinger](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/track-soft-reserved-quantities-within-allocations) | [Lagertildeling for lagersynlighet](../inventory/inventory-visibility-allocation.md) |  Aktivert av [tjenestekonfigurasjon](../inventory/inventory-visibility-configuration.md) |
 | Produksjon | [Overvåk utstyr med Sensordataintelligens](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Startside for sensordataintelligens](../sensor-data-intelligence/sdi-home-page.md) | Funksjonsbehandling:<br>*(Forhåndsversjon) Sensordataintelligens* |
 | Lagerstyring | [Omveier med flere nivåer for mobilappen Warehouse Management](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Konfigurere omveier for trinn i menyelementer for mobilenheter](../warehousing/warehouse-app-detours.md) | Funksjonsbehandling:<br>*Omveier med flere nivåer for mobilappen Warehouse Management* |
 

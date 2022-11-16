@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-19
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 3d116b5f7f456630415378e6cc069907e339068b
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 5f02ec58c88cfd0d663a97de4e3e4dff1cdd5e90
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689700"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740093"
 ---
 # <a name="finite-capacity-planning-and-scheduling"></a>Planlegge og tidsplanlegge med begrenset kapasitet
 
@@ -28,9 +28,8 @@ Begrenset kapasitet er en tilnærming som hjelper deg å forstå hvor mye arbeid
 
 Planlegging og tidplanlegging med begrenset kapasitet oppretter en mer realistisk plan for produksjonsprosessene enn den ubegrensete tilnærmingen. Hvis det ikke er nok kapasitet på ressursene, blir leveringsdatoen forskjøvet, og jobben blir planlagt når det er nok kapasitet.
 
-## <a name="planning-optimization-support-for-finite-capacity-planning"></a>Planleggingsoptimaliseringsstøtte for begrenset kapasitetsplanlegging
-
-Planlegging og tidsplanlegging med begrenset kapasitet fungerer på nesten samme måte, uansett om du bruker planleggingsoptimalisering eller den innebygde hovedplanleggingsmotoren. Planleggingsoptimalisering bruker imidlertid ikke horisontparameteren **flaskehalshorisont**. Når du bruker planleggingsoptimalisering, planlegges alltid flaskehalsressurser ved å bruke den samme tidshorisonten som ikke-flaskehalsressurser (som angitt av den horisonten for begrensede kapasitet).
+> [!NOTE]
+> Planlegging og tidsplanlegging med begrenset kapasitet fungerer på nesten samme måte, uansett om du bruker planleggingsoptimalisering eller den avskrevne hovedplanleggingsmotoren. Planleggingsoptimalisering bruker imidlertid ikke horisontparameteren **flaskehalshorisont**. Når du bruker planleggingsoptimalisering, planlegges alltid flaskehalsressurser ved å bruke den samme tidshorisonten som ikke-flaskehalsressurser (som angitt av den horisonten for begrensede kapasitet).
 
 ## <a name="set-up-finite-capacity-functionality"></a>Definere funksjonalitet for begrenset kapasitet
 

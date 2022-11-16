@@ -2,7 +2,7 @@
 title: Kassemodul
 description: Denne artikkelen beskriver hvordan du legger til en kassemodul på en side og angir de nødvendige egenskapene.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: ''
 ms.assetid: ''
-ms.openlocfilehash: b6f3aef08f723eff8b172db2ca5c355121e93bdc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 295b99c7012e35a40af34d454ff7082d4100c74a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280481"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746232"
 ---
 # <a name="checkout-module"></a>Kassemodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Denne artikkelen beskriver hvordan du legger til en kassemodul på en side og angir de nødvendige egenskapene.
 
@@ -104,6 +105,8 @@ Hvis du vil legge til en kassemodul på en ny side og angi de nødvendige egensk
 1. Velg **Fullfør redigering** for å sjekke inn fragmentet, og velg deretter **Publiser** for å publisere den.
 1. Opprett en mal som bruker det nye kassefragmentet.
 1. Opprett en utsjekkingsside som bruker den nye malen.
+
+> [OBS!] Når du bruker enkeltbetalingsautorisasjon som beskrevet i [Utvidede betalinger i butikkfrontkassen](./dev-itpro/enhanced-sca.md), bekrefter du at beholderen for betalingsdel er plassert sist i delen **Utsjekkingsinformasjon** på betalingssiden. Dette sikrer at all nødvendig informasjon samles inn via betalingssiden før de siste handlingene for betaling og ordrefullføring. 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

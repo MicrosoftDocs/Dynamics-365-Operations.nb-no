@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 807834bf5cd062ed24e5e3f3512d8389717a2d39
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 2ef78c73a1c7033735f9586229ff7ba21daaa5ef
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8885906"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740911"
 ---
 # <a name="date-and-time-parameters-used-by-planning-optimization"></a>Parametere for dato og klokkeslett som ikke brukes av planleggingsoptimalisering
 
@@ -23,7 +23,7 @@ ms.locfileid: "8885906"
 
 Denne artikkelen gir informasjon om dato- og klokkeslettparameterne som planleggingsoptimalisering bruker under operasjonen.
 
-Mens den innebygde hovedplanleggingsmotoren bruker transaksjonsdatoer i alle beregninger, fungerer planleggingsoptimalisering med dato- og klokkeslettverdier som konverteres til datoer. Denne forskjellen i virkemåte kan føre til situasjoner der for eksempel prognosetransaksjoner som opprettes ved midnatt på dagen når hovedplanlegging kjøres, ikke tas med, fordi planleggingsoptimalisering tar hensyn til at de ble opprettet før gjeldende dato.
+Mens den avskrevne hovedplanleggingsmotoren bruker transaksjonsdatoer i alle beregninger, fungerer planleggingsoptimalisering med dato- og klokkeslettverdier som konverteres til datoer. Denne forskjellen i virkemåte kan føre til situasjoner der for eksempel prognosetransaksjoner som opprettes ved midnatt på dagen når hovedplanlegging kjøres, ikke tas med, fordi planleggingsoptimalisering tar hensyn til at de ble opprettet før gjeldende dato.
 
 ## <a name="parameters-for-issue-and-demand-transactions"></a>Parametere for avgangs- og behovstransaksjoner
 

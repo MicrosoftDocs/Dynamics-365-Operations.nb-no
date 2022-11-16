@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-09-21
 ms.dyn365.ops.version: 10.0.30
-ms.openlocfilehash: dc83d10851958ec67166cb7e40cfd84dceae6651
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: 2bac9355bb1ac00f697ec459f494a64553e0eacc
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9690087"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740148"
 ---
 # <a name="master-planning-with-supply-forecasts"></a>Hovedplanlegging med forsyningsprognoser
 
@@ -38,7 +38,7 @@ Du kan angi om hver hovedplan skal vurdere prognoser når den kjøres. Bruk frem
     - **Metode som brukes til å redusere behovskrav** – Velg metoden som skal brukes til å redusere prognosebehovene under hovedplanlegging.
 
         - *Ingen* – Prognosekravene reduseres ikke under hovedplanlegging.
-        - *Percent - reduction key* – Forecast requirements will be reduced according to the percentages and time periods that are defined in the reduction key.
+        - *Prosent - reduksjonsnøkkel* – Prognosebehovene reduseres i henhold til prosentene og periodene som er definert av reduksjonsnøkkelen.
         - *Transaksjoner - reduksjonsnøkkel* – Prognosebehovene reduseres av transaksjonene som skjer i periodene som er definert av reduksjonsnøkkelen.
         - *Transaksjoner – dynamisk periode* – Prognosekravene reduseres av ordretransaksjonene som forekommer i løpet av perioden som er dynamisk. Den dynamiske perioden dekker gjeldende prognosedatoer og slutter når neste prognose starter. Metoden *Transaksjoner – dynamisk periode* bruker eller krever ikke en reduksjonsnøkkel, og når du bruker den, gjelder følgende betingelser:
 
@@ -168,13 +168,13 @@ Når du kjører en hovedplan som er definert til å bruke *Ingen* som reduksjons
 
 Nå redigerer du den planlagte bestillingen som ble opprettet etter siste planleggingsutkjøring, og endre antallet til *15*. Deretter godkjenner du bestillingen. Neste gang du kjører hovedplanen, opprettes det en planlagt bestilling for leverandør *US-101*, område *1*, lager *11*, et antall på *10 ea* og datoen *10/10/22*. Denne tiden reduseres antallet for å gjenspeile antallet i den eksisterende godkjente ordren fra den forrige planleggingskjøringen.
 
-## <a name="differences-between-planning-optimization-and-the-built-in-planning-engine"></a>Forskjeller mellom planleggingsoptimalisering og den innebygde planleggingsmotoren
+## <a name="differences-between-planning-optimization-and-the-deprecated-master-planning-engine"></a>Forskjeller mellom planleggingsoptimalisering og den avskrevne hovedplanleggingsmotoren
 
-Forsyningsprognose fungerer litt annerledes, avhengig av planleggingsmotoren du bruker (innebygde hovedplanlegging eller planleggingsoptimalisering). Denne delen beskriver forskjellene.
+Forsyningsprognose fungerer litt annerledes, avhengig av planleggingsmotoren du bruker (planleggingsoptimalisering eller den avskrevne hovedplanleggingsmotoren). Denne delen beskriver forskjellene.
 
 ### <a name="vendor-groups"></a>Leverandørgrupper
 
-Når du legger til en prognoselinje, kan du angi en leverandør og en leverandørgruppe. I den innebygde planleggingsmotoren grupperes planlagte bestillinger som opprettes av kombinasjonen av verdiene for leverandør- og leverandørgruppen. I planleggingsoptimalisering grupperes planlagte bestillinger etter leverandør.
+Når du legger til en prognoselinje, kan du angi en leverandør og en leverandørgruppe. I den avskrevne hovedplanleggingsmotoren grupperes planlagte bestillinger som opprettes av kombinasjonen av verdiene for leverandør- og leverandørgruppen. I planleggingsoptimalisering grupperes planlagte bestillinger etter leverandør.
 
 Følgende tabell gir noen eksempler på forsyningsprognoselinjer for en vare.
 
@@ -186,7 +186,7 @@ Følgende tabell gir noen eksempler på forsyningsprognoselinjer for en vare.
 
 Leverandør *LeverandørA* er standardleverandøren for leverandørgruppen *LeverandørgruppeA*. Det er også standardleverandøren for varen.
 
-Den innebygde planleggingsmotoren vil opprette følgende ordrer:
+Den avskrevne hovedplanleggingsmotoren vil opprette følgende ordrer:
 
 - Planlagt bestilling for leverandør *LeverandørA*, leverandørgruppe *LeverandørGruppe* og et antall på *11*
 - Planlagt bestilling for leverandør *LeverandørA*, og et antall på *7*
@@ -197,7 +197,7 @@ Planleggingsoptimalisering oppretter bare én ordre:
 
 ### <a name="reduction-of-general-forecasts-by-more-specific-forecasts"></a>Reduksjon av generelle prognoser etter mer spesifikke prognoser
 
-I den innebygde hovedplanleggingsmotoren er resultatet uforutsigbar hvis noen prognoser har en leverandør, men andre gjør det ikke.
+I den avskrevne hovedplanleggingsmotoren er resultatet uforutsigbar hvis noen prognoser har en leverandør, men andre gjør det ikke.
 
 I Planleggingsoptimalisering reduseres alltid generelle prognoser med mer spesifikke prognoser, slik eksemplet nedenfor viser.
 
@@ -218,15 +218,15 @@ Den generelle prognosen (for 15,00 stykker) reduseres med de mer spesifikke prog
 
 ### <a name="respect-for-default-order-settings-when-planned-orders-are-generated"></a>Overholde standardordreinnstillinger når planlagte bestillinger genereres
 
-Hver vare kan ha standard bestillingsinnstillinger, for eksempel minimum bestillingsantall. Den innebygde planleggingsmotoren ignorerer disse innstillingene, og oversetter derfor prognoser til planlagte ordrer som har samme antall. Planleggingsoptimalisering overholder disse innstillingene når planlagte bestillinger genereres fra forsyningsprognoser. 
+Hver vare kan ha standard bestillingsinnstillinger, for eksempel minimum bestillingsantall. Den avskrevne hovedplanleggingsmotoren ignorerer disse innstillingene og oversetter derfor prognoser til planlagte ordrer som har samme antall. Planleggingsoptimalisering overholder disse innstillingene når planlagte bestillinger genereres fra forsyningsprognoser. 
 
 ### <a name="aggregation-of-planned-orders-as-a-result-of-reduction-by-approved-orders"></a>Samling av planlagte bestillinger som resultat av reduksjon av godkjente bestillinger
 
-Den innebygde hovedplanleggingsmotoren antar at bare én ordre vil redusere den eksisterende forsyningsprognosen. Hvis flere ordrer samsvarer med en forsyningsprognoselinje, vil derfor bare den første ordren redusere den. I Planleggingsoptimalisering vil alle ordrer som samsvarer med forsyningsprognoselinjene, redusere den.
+Den avskrevne hovedplanleggingsmotoren antar at bare én ordre vil redusere den eksisterende forsyningsprognosen. Hvis flere ordrer samsvarer med en forsyningsprognoselinje, vil derfor bare den første ordren redusere den. I Planleggingsoptimalisering vil alle ordrer som samsvarer med forsyningsprognoselinjene, redusere den.
 
 ### <a name="reduction-of-forecasts-by-matching-vendors-only"></a>Reduksjon av prognoser bare ved å samsvare leverandører
 
-Når den innebygde hovedplanleggingsmotoren reduserer en prognose ved eksisterende frigitte bestillinger, sikrer den ikke at leverandøren i bestillingen samsvarer med leverandøren fra prognosen. Planleggingsoptimalisering reduserer prognoser bare etter bestillinger som har en samsvarende verdi i leverandørfeltet.
+Når den avskrevne hovedplanleggingsmotoren reduserer en prognose ved eksisterende frigitte bestillinger, sikrer den ikke at leverandøren i bestillingen samsvarer med leverandøren fra prognosen. Planleggingsoptimalisering reduserer prognoser bare etter bestillinger som har en samsvarende verdi i leverandørfeltet.
 
 For overførings- og produksjonsordrer blir leverandørfeltet alltid ignorert, fordi det ikke er relevant for disse ordretypene.
 
@@ -234,4 +234,4 @@ For overførings- og produksjonsordrer blir leverandørfeltet alltid ignorert, f
 
 Hvis standard ordretype for en vare er *Overføring*, kan prognoser bare reduseres ved hjelp av eksisterende overføringsforslag. For produksjonsordrer og bestillinger vil imidlertid bare frigitte ordrer redusere forsyningsprognosen.
 
-Den innebygde planleggingsmotoren reduserer for alle overføringsordrestatuser, mens planleggingsoptimalisering reduserer prognoser bare ved hjelp av overføringsordrer som er i *Frigitt* tilstand.
+Den avskrevne hovedplanleggingsmotoren reduserer for alle overføringsordrestatuser, mens planleggingsoptimalisering reduserer prognoser bare ved hjelp av overføringsordrer som er i *Frigitt* tilstand.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: f70d05f5663d8249b2435ad353421c278692a9ac
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 722b34e89a54715db39259549c11a78d69d2b4d3
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9218811"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739877"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -89,7 +89,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Erstattet med en annen funksjon?**   | Ja, planleggingsoptimalisering erstatter den eksisterende innebygde planleggingsmotoren Supply Chain Management. |
 | **Berørte produktområder**         | Supply Chain Management – Hovedplanlegging |
 | **Distribusjonsalternativ**              | Bare sky. Planleggingsoptimalisering ikke med lokale distribusjoner. |
-| **Status**                         | Avskrevet. Innen 1. april 2022 vil produksjonsscenarioer ikke lenger støttes for den innebygde hovedplanleggingsmotoren i Supply Chain Management. Per denne datoen vil Microsoft stoppe all aktiv utvikling på produksjonsscenarioer for den innebygde planleggingsmotoren, ikke frigi nye funksjoner og bare frigi kritiske reparasjoner. Etter denne datoen må alle firmaer som trenger støtte for produksjonsscenarioer, bruke Planleggingsoptimalisering for hovedplanleggingsberegningene. Planleggingsoptimalisering forventes å gi full støtte for produksjonsscenarioer i oktober 2022. Hvis du vil ha mer informasjon, se [dokumentasjon for planleggingsoptimalisering](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Firmaer som har lokale distribusjoner av Supply Chain Management, kan fortsette å bruke den innebygde hovedplanleggingsmotoren for produksjonsscenarioer etter april 2022. Det vil imidlertid ikke bli gitt flere funksjonsforbedringer. |
+| **Status**                         | Avskrevet. Innen 1. april 2022 vil produksjonsscenarioer ikke lenger støttes for den innebygde hovedplanleggingsmotoren i Supply Chain Management. Per denne datoen vil Microsoft stoppe all aktiv utvikling på produksjonsscenarioer for den innebygde planleggingsmotoren, ikke frigi nye funksjoner og bare frigi kritiske reparasjoner. Etter denne datoen må alle firmaer som trenger støtte for produksjonsscenarioer, bruke Planleggingsoptimalisering for hovedplanleggingsberegningene. Planleggingsoptimalisering forventes å gi full støtte for produksjonsscenarioer i oktober 2022. Hvis du vil ha mer informasjon, kan du se [Oversikt over avskrevet hovedplanlegging](../master-planning/deprecated-master-planning-overview.md).<br><br>Firmaer som har lokale distribusjoner av Supply Chain Management, kan fortsette å bruke den innebygde hovedplanleggingsmotoren for produksjonsscenarioer etter april 2022. Det vil imidlertid ikke bli gitt flere funksjonsforbedringer. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.11
 
@@ -101,7 +101,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Erstattet med en annen funksjon?**   | Ja, planleggingsoptimalisering erstatter den eksisterende innebygde planleggingsmotoren Supply Chain Management. |
 | **Berørte produktområder**         | Supply Chain Management – Hovedplanlegging |
 | **Distribusjonsalternativ**              | Bare sky. Planleggingsoptimalisering ikke med lokale distribusjoner. |
-| **Status**                         | Avskrevet. Innen 1. april 2021 vil distribusjonsscenarioer ikke lenger støttes med den innebygde Dynamics 365 Supply Chain Management-hovedplanleggingsmotoren. For distribusjonsscenarioer må kunder bruke planleggingsoptimalisering for hovedplanleggingsberegninger. Hvis du vil ha mer informasjon, se [dokumentasjon for planleggingsoptimalisering](../master-planning/planning-optimization/planning-optimization-overview.md). Kunder som har lokale distribusjoner av Dynamics 365 Supply Chain Management, kan fortsette å bruke Supply Chain Management-hovedplanleggingsmotoren for distribusjonscenarioer etter april 2021. Det vil imidlertid ikke bli gitt flere funksjonsforbedringer. |
+| **Status**                         | Avskrevet. Innen 1. april 2021 vil distribusjonsscenarioer ikke lenger støttes med den innebygde Dynamics 365 Supply Chain Management-hovedplanleggingsmotoren. For distribusjonsscenarioer må kunder bruke planleggingsoptimalisering for hovedplanleggingsberegninger. Hvis du vil ha mer informasjon, kan du se [Oversikt over avskrevet hovedplanlegging](../master-planning/deprecated-master-planning-overview.md). Kunder som har lokale distribusjoner av Dynamics 365 Supply Chain Management, kan fortsette å bruke Supply Chain Management-hovedplanleggingsmotoren for distribusjonscenarioer etter april 2021. Det vil imidlertid ikke bli gitt flere funksjonsforbedringer. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidligere kunngjøringer om fjernede eller avskrevne funksjoner
 

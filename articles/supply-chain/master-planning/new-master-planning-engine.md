@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a94b424ad1a454feecede8a7b037171b2984504f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: dbbc58f0dcd833f63e84a73ac68ada60bd0c291d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846105"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739958"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Overføring til planleggingsoptimalisering for hovedplanlegging
 
@@ -31,35 +31,35 @@ Den innebygde hovedplanleggingsmotoren er planlagt å gjøres foreldet (avskreve
 
 Planleggingsoptimalisering gjør at beregningen av hovedplanlegging skjer utenfor Supply Chain Management og den tilknyttede Azure SQL Database. Fordelene som er knyttet til planleggingsoptimalisering, omfatter forbedret ytelse og minimal virkning på SQL-databasen under kjøringer av hovedplanlegging. Siden raske planleggingskjøringer kan gjøres selv under kontortimer, kan planleggere umiddelbart reagere på behovs- eller parameterendringer.
 
-Hvis du vil ha mer informasjon om planleggingsoptimalisering, kan du se [Oversikt over planleggingsoptimalisering](planning-optimization/planning-optimization-overview.md).
+Hvis du vil ha mer informasjon om planleggingsoptimalisering, kan du se [Systemarkitektur for hovedplanlegging](master-planning-architecture.md).
 
 ## <a name="obsolescence-of-the-existing-master-planning-engine"></a>Avskriving av den eksisterende hovedplanleggingsmotoren
 
-Microsoft holder på å gjøre den innebygde planleggingsmotoren foreldet til fordel for planleggingsoptimalisering. Denne endringen påvirker alle skymiljøer. Lokale installasjoner påvirkes ikke. I versjon 10.0.16 og nyere vil du få en feilmelding hvis du kjører den innebygde hovedplanleggingen uten å generere planlagte produksjonsordrer. Kjøringen av hovedplanleggingen vil imidlertid bli fullført til tross for feilmeldingen.
+Microsoft holder på å gjøre den avskrevne hovedplanleggingsmotoren foreldet til fordel for planleggingsoptimalisering. Denne endringen påvirker alle skymiljøer. Lokale installasjoner påvirkes ikke. I versjon 10.0.16 og nyere vil du få en feilmelding hvis du kjører den avskrevne hovedplanleggingsmotoren uten å generere planlagte produksjonsordrer. Kjøringen av hovedplanleggingen vil imidlertid bli fullført til tross for feilmeldingen.
 
-Hvis du vil ha mer informasjon om avskrivningen av den innebygde planleggingsmotoren, kan du se kunngjøringer i [Funksjoner som er fjernes eller avskrevet i Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
+Hvis du vil ha mer informasjon om den avskrevne hovedplanleggingsmotoren, kan du se kunngjøringene i [Funksjoner som er fjernes eller avskrevet i Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
 ## <a name="migration-messages-and-exceptions"></a>Overføring, meldinger og unntak
 
-Eiere av eksisterende miljøer som kjører den innebygde hovedplanleggingsmotoren uten generering av planlagte produksjonsordrer, vil motta en e-post med detaljer om unntaksprosessen. Det anbefales at du samarbeider med en partner for å evaluere og planlegge migreringen til Planleggingsoptimalisering.
+Eiere av eksisterende miljøer som kjører den avskrevne hovedplanleggingsmotoren uten generering av planlagte produksjonsordrer, vil motta en e-post med detaljer om unntaksprosessen. Det anbefales at du samarbeider med en partner for å evaluere og planlegge migreringen til Planleggingsoptimalisering.
 
-som nevnt vil du få en feilmelding i versjon 10.0.16 og nyere hvis du kjører den innebygde hovedplanleggingen uten å generere planlagte produksjonsordrer. Denne feilmeldingen inneholder veiledning om overføring og instruksjoner for å be om et unntak.
+som nevnt vil du få en feilmelding i versjon 10.0.16 og nyere hvis du kjører den avskrevne hovedplanleggingsmotoren uten å generere planlagte produksjonsordrer. Denne feilmeldingen inneholder veiledning om overføring og instruksjoner for å be om et unntak.
 
 ### <a name="new-deployments"></a>Nye distribusjoner
 
-Planleggingsoptimalisering må betraktes som den standard hovedplanleggingsmotor for alle nye distribusjoner i skyen. Generelt bør planleggingsoptimalisering brukes for alle nye distribusjoner som ikke genererer planlagte produksjonsordrer under hovedplanlegging. Hvis en ny distribusjon er avhengig av funksjonaliteten som planleggingsoptimalisering ikke støtter for øyeblikket, kan du be om et unntak slik at du kan fortsette å bruke den innebygde hovedplanleggingsmotoren.
+Planleggingsoptimalisering må betraktes som den standard hovedplanleggingsmotor for alle nye distribusjoner i skyen. Generelt bør planleggingsoptimalisering brukes for alle nye distribusjoner som ikke genererer planlagte produksjonsordrer under hovedplanlegging. Hvis en ny distribusjon er avhengig av funksjonaliteten som planleggingsoptimalisering ikke støtter for øyeblikket, kan du be om et unntak slik at du kan fortsette å bruke den avskrevne hovedplanleggingsmotoren.
 
 ### <a name="existing-deployments"></a>Eksisterende distribusjoner
 
-Eiere av eksisterende skybaserte distribusjon som er avhengige av hovedplanleggingen, bør planlegge å gå over til planleggingsoptimalisering. Hvis implementeringen er avhengig av funksjonaliteten som planleggingsoptimalisering ikke støtter for øyeblikket, kan du be om et unntak slik at du kan fortsette å bruke den innebygde hovedplanleggingsmotoren.
+Eiere av eksisterende skybaserte distribusjon som er avhengige av hovedplanleggingen, bør planlegge å gå over til planleggingsoptimalisering. Hvis implementeringen er avhengig av funksjonaliteten som planleggingsoptimalisering ikke støtter for øyeblikket, kan du be om et unntak slik at du kan fortsette å bruke den avskrevne hovedplanleggingsmotoren.
 
 For miljøer som bruker hovedplanleggingsprosesser som skal avskrives, sender Microsoft en e-post til miljøadministratoren. Denne e-posten vil gi informasjon om handlingene som kreves for å overføre, eller for å be om et unntak.
 
 ## <a name="the-exception-process"></a>Unntaksprosessen
 
-Du kan be om et unntak hvis du må fortsette å bruke den innebygde hovedplanleggingsmotoren, fordi forretningsprosessene er svært avhengige av minst én funksjon som for øyeblikket ikke er implementert i planleggingsoptimaliseringen. Hvis du vil ha en liste over tilgjengelige funksjoner, kan du se [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization/planning-optimization-fit-analysis.md).
+Du kan be om et unntak hvis du må fortsette å bruke den avskrevne hovedplanleggingsmotoren, fordi forretningsprosessene er svært avhengige av minst én funksjon som for øyeblikket ikke er implementert i planleggingsoptimaliseringen. Hvis du vil ha en liste over tilgjengelige funksjoner, kan du se [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization/planning-optimization-fit-analysis.md).
 
-Unntak fra overføring til planleggingsoptimalisering er for øyeblikket bare relevante hvis hovedplanleggingsprosessen ikke inkluderer produksjon (det vil si planlagte produksjonsordrer som genereres av hovedplanlegging), og du trenger den innebygde hovedplanleggingsmotoren etter versjon 10.0.15.
+Unntak fra overføring til planleggingsoptimalisering er for øyeblikket bare relevante hvis hovedplanleggingsprosessen ikke inkluderer produksjon (det vil si planlagte produksjonsordrer som genereres av hovedplanlegging), og du trenger den avskrevne hovedplanleggingsmotoren etter versjon 10.0.15.
 
 Når de nødvendige funksjonene blir tilgjengelige, vil Microsoft angi en respittperiode helt til unntaket utløper. Miljøadministratoren blir informert når de nødvendige funksjonene har blitt tilgjengelige og respittperiode har startet.
 
@@ -74,9 +74,9 @@ Følgende flytdiagram oppsummerer informasjonen som oppgis i denne artikkelen, s
 
 ### <a name="sandbox-environments"></a><a name="faq-sandbox"></a>Sandkassemiljøer
 
-Kan jeg bruke innebygd hovedplanlegging i sandkassemiljøet mitt? Trenger jeg et unntak?
+Kan jeg bruke den avskrevne hovedplanleggingsmotoren i sandkassemiljøet mitt? Trenger jeg et unntak?
 
-**Svar:** Unntak er vanligvis ikke relevante for sandkassemiljøer fordi unntaksfeilen for planleggingsoptimalisering ikke hindrer den innebygde hovedplanleggingsmotoren i å kjøre. Hvis imidlertid feilmeldingen forstyrrer deg, kan du deaktivere den i et IaaS-sandkassemiljø (ikke Service Fabric) ved å kjøre følgende spørring i databasen:
+**Svar:** Unntak er vanligvis ikke relevante for sandkassemiljøer fordi unntaksfeilen for planleggingsoptimalisering ikke hindrer den avskrevne hovedplanleggingsmotoren i å kjøre. Hvis imidlertid feilmeldingen forstyrrer deg, kan du deaktivere den i et IaaS-sandkassemiljø (ikke Service Fabric) ved å kjøre følgende spørring i databasen:
 
 ```sql
 -- Insert or update an enabled flight:
@@ -92,13 +92,13 @@ ELSE
 
 Mitt miljø er lokalt. Trenger jeg et unntak?
 
-**Svar:** Nei. Det kreves ikke et unntak for lokale miljøer. Du kan fortsette å bruke den innebygde hovedplanleggingen. Miljøadministratoren blir informert hvis det er nødvendig å gjøre noe.
+**Svar:** Nei. Det kreves ikke et unntak for lokale miljøer. Du kan fortsette å bruke den avskrevne hovedplanleggingsmotoren. Miljøadministratoren blir informert hvis det er nødvendig å gjøre noe.
 
 ### <a name="production-scenarios"></a>Produksjonsscenarioer
 
 Vi bruker planlagte produksjonsordrer, men jeg er bekymret over hva som skjer når vi oppgraderer til versjon 10.0.16. Må jeg foreta meg noe?
 
-**Svar:** Du trenger ikke å bekymre deg. Du kan fortsette å bruke den innebygde hovedplanleggingen i versjon 10.0.16. Det anbefales imidlertid at du vurderer om overføring til planleggingsoptimalisering kan starte med gjeldende funksjonalitet. Det anbefales også at du holder deg oppdatert om ny funksjonalitet.
+**Svar:** Du trenger ikke å bekymre deg. Du kan fortsette å bruke den avskrevne hovedplanleggingsmotoren i versjon 10.0.16. Det anbefales imidlertid at du vurderer om overføring til planleggingsoptimalisering kan starte med gjeldende funksjonalitet. Det anbefales også at du holder deg oppdatert om ny funksjonalitet.
 
 ### <a name="email-from-microsoft"></a>E-post fra Microsoft
 
@@ -110,9 +110,9 @@ Vår miljøadministrator mottok en e-post fra Microsoft. Denne e-posten angir at
 
 Jeg bruker versjon 10.0.16 eller nyere, og jeg får følgende feilmelding når jeg kjører hovedplanlegging. Er hovedplanleggingen blokkert?
 
-> Du får denne feilmeldingen fordi den innebygde hovedplanleggingsmotoren ble brukt til scenarioer som støttes av planleggingsoptimalisering. Du bør overføre til planleggingsoptimalisering nå, fordi den gjeldende innebygde hovedplanleggingen vil bli avskrevet. Legg merke til at denne hovedplanleggingskjøringen ble fullført.
+> Du får denne feilmeldingen fordi den avskrevne hovedplanleggingsmotoren ble brukt til scenarioer som støttes av planleggingsoptimalisering. Du bør overføre til planleggingsoptimalisering nå, fordi den innebygde hovedplanleggingsmotoren er avskrevet. Legg merke til at denne hovedplanleggingskjøringen ble fullført.
 >
-> I tilfelle overføringen har sterke avhengigheter for ventende funksjoner, kan du be om et unntak for fortsatt bruk av den innebygde hovedplanleggingsmotoren.
+> I tilfelle overføringen har sterke avhengigheter for ventende funksjoner, kan du be om et unntak for fortsatt bruk av den avskrevne hovedplanleggingsmotoren.
 >
 > Fyll ut følgende spørreskjema for å komme i gang og hvis det er relevant for forespørselsunntak fra overføring til planleggingsoptimalisering.
 

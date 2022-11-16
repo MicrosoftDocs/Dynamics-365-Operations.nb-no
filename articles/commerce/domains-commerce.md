@@ -2,19 +2,19 @@
 title: Domener i Dynamics 365 Commerce
 description: Denne artikkelen beskriver hvordan domener behandles i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 132aec92d2b3d2765dd6bd261fb4182f8aae679a
-ms.sourcegitcommit: dbb997f252377b8884674edd95e66caf8d817816
+ms.openlocfilehash: f1a2de7984aad7d291b8a4dc68f5690d57ebe6cc
+ms.sourcegitcommit: 2b654e60e2553a5835ab5790db4ccfa58828fae7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "9465200"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "9750687"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -46,7 +46,7 @@ Når du klargjør et Dynamics 365 Commerce-e-handelsmiljø, vil Commerce generer
 
 Du kan også bruke vertsnavn for produksjonsområde i et sandkassemiljø. Dette alternativet er ideelt når du skal kopiere et område fra et sandkassemiljø til produksjon.
 
-## <a name="site-setup"></a>Weboppsett
+## <a name="site-setup"></a>Områdeoppsett
 
 Når e-handelsmiljøet er klargjort, må du sette opp området i områdebygger for Commerce for å knytte området til den fungerende URL-adressen.
 
@@ -85,7 +85,7 @@ Den følgende illustrasjonen viser siden **URL-adresser** i områdebyggeren med 
 
 ## <a name="domains-in-site-builder"></a>Domener i områdebyggeren
 
-Verdiene for de støttede vertsnavnene er tilgjengelige for å knyttes til et domene ved konfigurasjon av et område. Når du velger en vertsnavnverdi som domene, vil du se det valgte domenet som det refereres til i hele områdebyggeren. Dette domenet er bare en referanse i Commerce-miljøet. Direktetrafikk for det domenet vil ikke videresendes til Dynamics 365 Commerce ennå.
+Verdiene for de støttede vertsnavnene er tilgjengelige for å knyttes til et domene ved konfigurasjon av et område. Når du velger en vertsnavnverdi som domene, vil du se det valgte domenet som det refereres til i hele områdebyggeren. Dette domenet er bare en referanse i Commerce-miljøet. Direktetrafikk for dette domenet vil ikke videresendes til Dynamics 365 Commerce ennå.
 
 Hvis du har to områder som er konfigurert med to forskjellige domener, kan du legge til attributtet **?domain=** i den fungerende URL-adressen for å få tilgang til det publiserte områdeinnholdet i en nettleser.
 
@@ -95,17 +95,23 @@ Miljøet xyz er for eksempel klargjort, og to områder er opprettet og tilknytte
 
 Når en domenespørrestreng ikke er angitt i et miljø med flere domener som er oppgitt, bruker Commerce det første domenet du oppgav. Hvis banen Fabrikam for eksempel først ble oppgitt under konfigurasjon av området, kan URL-adressen `https://xyz.dynamics365commerce.ms` brukes til å få tilgang til det publiserte områdets innholdsområde for `www.fabrikam.com`.
 
+Du kan også legge til egendefinerte domener. Du gjør dette ved å velge **+ Legg til egendefinert domene** under underoverskriften **e-handel** på miljøsiden Handelsadministrasjon for prosjektet. Glidebryteren viser de eksisterende egendefinerte domenene og alternativet for å legge til et nytt egendefinert domene.
+
+## <a name="update-which-commerce-scale-unit-is-used"></a>Oppdater hvilken Commerce Scale Unit som brukes
+
+Commerce Scale Unit (CSU) som brukes av Commerce, velges vanligvis når et miljø opprettes for første gang. I Commerce kan du endre hvilken CSU-forekomst miljøet skal bruke, slik at du kan vedlikeholde arkitekturen bedre via selvbetjeningsfunksjonaliteten og redusere behovet for kontaktstøtte. Hvis du vil oppdatere CSU-forekomsten, kan du gå til miljøsiden Handelsadministrasjon for prosjektet og deretter velge **Oppdater Scale Unit**. Bruk glidebryteren **Ny Commerce Scale Unit** til å velge en ny CSU-forekomst fra listen over CSU-er som er tilgjengelige for miljøet.
+
 ## <a name="traffic-forwarding-in-production"></a>Viderekobling av trafikk i produksjon
 
 Du kan simulere flere domener ved hjelp av parametere for domenespørringsstreng på endepunktet commerce.dynamics.com. Men når du må gå i gang med produksjon, må du videresende trafikken for det egendefinerte domenet til endepunktet `<e-commerce tenant name>.dynamics365commerce.ms`.
 
-Endepunktet `<e-commerce tenant name>.dynamics365commerce.ms` støtter ikke egendefinerte SSL-er (Secure Sockets Layers), så du må konfigurere tilpassede domener ved hjelp av Front Door Service eller et innholdsleveringsnettverk (CDN). 
+Endepunktet `<e-commerce tenant name>.dynamics365commerce.ms` støtter ikke egendefinerte SSL-er (Secure Sockets Layers), så du må konfigurere tilpassede domener ved hjelp av en Front Door Service eller et innholdsleveringsnettverk (CDN). 
 
 Hvis du vil konfigurere tilpassede domener ved hjelp av Front Door Service eller CDN, har du to alternativer:
 
-- Konfigurer Front Door Service, for eksempel i Azure, til å håndtere fronttrafikk og koble til Commerce-miljøet. Dette gir bedre kontroll over behandling av domene- og sertifikatadministrasjon og mer detaljerte sikkerhetspolicyer.
+- Konfigurer en Front Door Service som Azure Front Door for å håndtere fronttrafikk og koble til Commerce-miljøet ditt, som gir større kontroll over domene- og sertifikatadministrasjon og mer detaljerte sikkerhetspolicyer.
 
-- Bruk den Commerce-støttede forekomsten av Front Door Service i Azure. Dette krever koordineringshandling med Dynamics 365 Commerce-teamet for domenekontroll og henting av SSL-sertifikater for produksjonsdomenet.
+- Bruk Azure Front Door-forekomsten fra Commerce, som krever koordineringshandling med Dynamics 365 Commerce-teamet for domenekontroll og henting av SSL-sertifikater for produksjonsdomenet.
 
 > [!NOTE]
 > Hvis du bruker en ekstern CDN-tjeneste eller Front Door Service, må du sørge for at forespørselen er tilknyttet Commerce-plattformen med det Commerce-leverte vertsnavnet, men med hodet X-Forwarded-Host (XFH) \<custom-domain\>. Hvis for eksempel Commerce-endepunktet er `xyz.dynamics365commerce.ms` og det egendefinerte domenet er `www.fabrikam.com`, bør vertshodet for den videresendte forespørselen være `xyz.dynamics365commerce.ms`, og XFH-hodet bør være `www.fabrikam.com`.
@@ -115,7 +121,7 @@ Hvis du vil ha informasjon om hvordan du setter opp en CDN-tjeneste direkte, kan
 Hvis du vil bruke den Commerce-støttede forekomsten av Front Door Service i Azure, må du opprette en serviceforespørsel for installasjon av CDN fra jobbintroduksjonsteamet til Commerce. 
 
 - Du må angi firmanavn, produksjonsdomene, miljø-ID og navn på e-handelsleieren for produksjonen. 
-- Du må bekrefte om dette er et eksisterende domene (brukes for et aktivt område) eller et nytt domene. 
+- Du må bekrefte om denne tjenesteforespørselen er for et eksisterende domene (brukes for et aktivt område) eller et nytt domene. 
 - For et nytt domene kan domenekontrolleren og SSL-sertifikatet oppnås i ett trinn. 
 - For et domene som betjener et eksisterende nettsted, finnes det en trinnvis prosess som kreves for å etablere domeneverifisering og SSL-sertifikatet. Denne prosessen har en servicenivåavtale på 7 virkedager før et domene blir aktivt, fordi den inneholder flere sekvensielle trinn.
 
@@ -140,7 +146,7 @@ For eksisterende/aktive domener:
 
 ## <a name="apex-domains"></a>Apex-domener
 
-Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domener (rotdomener som ikke inneholder underdomener). Apex-domener krever at en IP-adresse løses, og den Commerce-støttede forekomsten av Azure Front Door finnes bare med virtuelle endepunkter. Hvis du vil bruke et Apex-domene, har du følgende alternativer:
+Azure Front Door-forekomsten fra Commerce støtter ikke Apex-domener (rotdomener som ikke inneholder underdomener). Apex-domener krever at en IP-adresse løses, og den Commerce-støttede forekomsten av Azure Front Door finnes bare med virtuelle endepunkter. Hvis du vil bruke et Apex-domene, har du følgende alternativer:
 
 - **Alternativ 1** – Bruk DNS-leverandøren til å omadressere Apex-domenet til et www-domene. Fabrikam.com omadresserer for eksempel til `www.fabrikam.com`, der `www.fabrikam.com` er CNAME-posten som peker til den Commerce-driftede forekomsten av Azure Front Door.
 

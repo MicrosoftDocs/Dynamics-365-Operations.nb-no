@@ -2,22 +2,19 @@
 title: Konfigurer CPOS for å bruke en egendefinert Azure AD-app
 description: Denne artikkelen beskriver hvordan du konfigurerer Cloud POS (CPOS) for å bruke en egendefinert Azure Active Directory-app (Azure AD).
 author: boycez
-ms.date: 08/02/2022
+ms.date: 11/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
-ms.search.validFrom: ''
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: baa0c3da25308345037b5dd1b4c5907d6213e7f7
-ms.sourcegitcommit: bd3b55e1af28e592c97b540de1e87cd8ba9c35a8
+ms.search.validFrom: 2017-06-20
+ms.openlocfilehash: 5e4ff797410e1e94869cc37684e7622ec0d97842
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/03/2022
-ms.locfileid: "9222972"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746267"
 ---
 # <a name="configure-cpos-to-use-a-custom-azure-ad-app"></a>Konfigurer CPOS for å bruke en egendefinert Azure AD-app
 
@@ -52,6 +49,9 @@ Følg denne fremgangsmåten for å opprette og konfigurere en egendefinert Retai
 
 ## <a name="set-up-a-custom-cpos-app-in-azure-ad"></a>Definer en egendefinert CPOS-app i Azure AD
 
+> [!IMPORTANT]
+> Hvis du oppgraderer en eksisterende egendefinert CPOS Azure AD-app som ble laget før Commerce versjon 10.0.21, følger du fremgangsmåten i [Oppgrader en eksisterende egendefinert CPOS Azure AD-app laget før Commerce versjon 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+
 Følg denne fremgangsmåten for å opprette og konfigurere en egendefinert CPOS-app i Azure AD.
 
 1. Logg deg på [Azure Active Directory-administrasjonssenteret](https://aad.portal.azure.com) med en Azure AD-brukerkonto. Brukerkontoen behøver ikke å ha administratortillatelser.
@@ -68,12 +68,25 @@ Følg denne fremgangsmåten for å opprette og konfigurere en egendefinert CPOS-
 1. Sett parameterne **oauth2AllowIdTokenImplicitFlow** og **oauth2AllowImplicitFlowtil** **sann**, og velg deretter **Lagre** i delen **Manifest**.
 1. I **Tokenkonfigurasjon**-delen følger du disse trinnene for å legge til to krav:
 
-    - Velg **Legg til tilleggskrav**. Sett **Tokentype**-feltet til **ID**, og velg deretter **sid**-kravet . Velg **Legg til**.
-    - Velg **Legg til tilleggskrav**. Sett **Tokentype**-feltet til **Tilgang**, og velg deretter **sid**-kravet . Velg **Legg til**.
+    1. Velg **Legg til tilleggskrav**. Sett **Tokentype**-feltet til **ID**, og velg deretter **sid**-kravet . Velg **Legg til**.
+    1. Velg **Legg til tilleggskrav**. Sett **Tokentype**-feltet til **Tilgang**, og velg deretter **sid**-kravet . Velg **Legg til**.
 
 1. I delen **API-tillatelser** velger du **Legg til en tillatelse**.
 1. I fanen **API-er organisasjonen bruker** søker du etter Retail Server-appen som du opprettet i delen [Konfigurer en egendefinert Retail Server-app Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad). Velg deretter **Legg til tillatelser**.
 1. I **Oversikt**-delen noterer du deg verdien i feltet **App-ID (klient)**.
+
+### <a name="upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021"></a>Oppgrader en eksisterende egendefinert CPOS Azure AD-app laget før Commerce versjon 10.0.21
+
+Følg denne fremgangsmåten for å oppgradere en eksisterende egendefinert CPOS Azure AD-app laget før Commerce versjon 10.0.21. 
+
+1. Åpne den egendefinerte CPOS Azure AD-appen i Azure-portalen.
+1. Velg fanen **Godkjenning**.
+1. Kopier og lagre den opprinnelige URI-en for omdirigering fra **Nett**-typen til senere bruk, og slett den deretter.
+1. Velg **Legg til en plattform**, og velg deretter **App med én side (SPA)**.
+1. Legg til den opprinnelige URI-en for nettomdirigering du kopierte ovenfor, på SPA-plattformen.
+1. I **Tokenkonfigurasjon**-delen følger du disse trinnene for å legge til to krav:
+    1. Velg **Legg til tilleggskrav**. Sett **Tokentype**-feltet til **ID**, og velg deretter **sid**-kravet . Velg **Legg til**.
+    1. Velg **Legg til tilleggskrav**. Sett **Tokentype**-feltet til **Tilgang**, og velg deretter **sid**-kravet . Velg **Legg til**.
 
 ## <a name="update-the-cpos-configuration-file"></a>Oppdater CPOS-konfigurasjonsfilen
 
@@ -89,7 +102,7 @@ CPOS vil bruke begge parameterne når det sender forespørsler til Azure AD om �
 Deretter må du oppdatere innstillinger for identitetsleverandører i Commerce headquarters.
 
 1. I Commerce Headquarters åpner du siden **Commerce-delte parametere**.
-1. I fanen **Identitetsleverandører** i delen **Identitetsleverandører** velger du raden der **Type**-feltet er angitt til **Azure Active Directory**, og **Utsteder**-feltet peker til Azure AD-leieren. Denne innstillingen deklarerer at du vil arbeide med underordnede rutenett som inneholder dataene som er relatert til identitetsleverandøren som tilsvarer Azure AD-leieren din.
+1. I fanen **Identitetsleverandører** i delen **Identitetsleverandører** velger du raden der **Type**-feltet er angitt til **Azure Active Directory**, og **Utsteder**-feltet peker til Azure AD-leieren. Denne innstillingen deklarerer at du skal arbeide med underordnede rutenett som inneholder dataene som er relatert til identitetsleverandøren som tilsvarer Azure AD-leieren din.
 1. Velg **Legg til** for å legge til en rad i delen **Avhengige parter**.
 1. Angi følgende felter:
 

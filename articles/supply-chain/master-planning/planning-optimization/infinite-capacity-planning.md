@@ -1,6 +1,6 @@
 ---
 title: Planlegging med ubegrenset kapasitet
-description: Denne artikkelen gir informasjon om ubegrenset kapasitetsplanlegging for planleggingsoptimalisering. Den beskriver også gjeldende funksjonsbegrensninger.
+description: Denne artikkelen gir informasjon om uendelig kapasitetsplanlegging. Den beskriver også gjeldende funksjonsbegrensninger.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c6e0190899abb544b559bb5f26ba974155989c3a
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 7249734e5d2644145a36276dbc818a40b5962805
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335323"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740012"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planlegging med ubegrenset kapasitet
 
 [!include [banner](../../includes/banner.md)]
 
-Funksjonen *Ubegrenset kapasitetsplanlegging for planleggingsoptimalisering* introduserer planlegging som er basert på ruteinformasjon. Det lar deg planlegge jobber basert på en rekke ruteoppsett. Planlegging for planleggingsoptimalisering dekker ofte brukte ruteinnstillinger, inkludert ruteoperasjonsrekkefølgen eller kravene for ruteoperasjonsressurser.
+Funksjonen *Ubegrenset kapasitetsplanlegging for planleggingsoptimalisering* introduserer planlegging som er basert på ruteinformasjon. Det lar deg planlegge jobber basert på en rekke ruteoppsett. Planlegging dekker ofte brukte ruteinnstillinger, inkludert ruteoperasjonsrekkefølgen eller kravene for ruteoperasjonsressurser.
 
 ## <a name="turn-the-infinite-capacity-scheduling-feature-on-or-off"></a>Aktiver eller deaktiver funksjonen for ubegrenset kapasitetsplanlegging
 
@@ -32,7 +32,7 @@ Hvis du vil ha mer informasjon om denne funksjonen, kan du se [ Planlegging med 
 
 ## <a name="added-functionality"></a>Tillagt funksjonalitet
 
-Funksjonen *Ubegrenset kapasitetsplanlegging for planleggingsoptimalisering* aktiverer jobbplanlegging som er basert på ruteinformasjon. Derfor kan et ruteoppsett brukes til å planlegge produksjonsprosesser. Selv om denne funksjonen har noen begrensninger som den innebygde hovedplanleggingen ikke har, støtter den den vanligste funksjonaliteten som kreves for produksjonsscenarier.
+Funksjonen *Ubegrenset kapasitetsplanlegging for planleggingsoptimalisering* aktiverer jobbplanlegging som er basert på ruteinformasjon. Derfor kan et ruteoppsett brukes til å planlegge produksjonsprosesser. Selv om denne funksjonen har noen begrensninger som den avskrevne hovedplanleggingsmotoren ikke har, støtter den den vanligste funksjonaliteten som kreves for produksjonsscenarioer.
 
 Funksjonen vurderer både *enkle ruter* og *rutenettverk*. Ved å bruke **Neste**-feltet i en ruteoperasjon kan du definere komplekse ruter som har flere startpunkt og flere operasjoner som kjøres parallelt. Systemet vil vurdere komplekse rutestrukturer av denne typen under planlegging.
 
@@ -52,15 +52,13 @@ Under planleggingsprosessen vurderer systemet også *ressursbehovene* som er ang
 
 Funksjonen støtter også driftsegenskaper for **oppsettid** og **kjøretid**. Når du angir disse egenskapene for en ruteoperasjon, oppretter planleggingsprosessen det riktige oppsettet og de riktige prosessjobbene.
 
-Kort oppsummert støtter planleggingsoptimalisering de mest brukte scenariene. Du kan opprette ruten, legge til primære og sekundære operasjoner, definere neste operasjoner, legge til ressursbehov og legge til oppstillingstid og kjøretid. Systemet vil deretter vurdere denne informasjonen under planlegging.
+Kort oppsummert støtter planlegging de mest brukte scenarioene. Du kan opprette ruten, legge til primære og sekundære operasjoner, definere neste operasjoner, legge til ressursbehov og legge til oppstillingstid og kjøretid. Systemet vil deretter vurdere denne informasjonen under planlegging.
 
 ## <a name="limitations"></a>Begrensninger
 
-Følgende begrensninger gjelder når du bruker planlegging for planleggingsoptimalisering:
+Følgende begrensninger gjelder når du bruker funksjonen *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*:
 
 - Funksjonen støtter bare ubegrenset kapasitet.
 - Funksjonen støtter ikke funksjonalitet for ressursbelastning.
 - Funksjonen vurderer ikke rutesvinn.
 - Funksjonen støtter bare *Varighet* som det primære ressursvalget.
-
-Legg merke til at funksjonen *Ubegrenset kapasitetsplanlegging for planleggingsoptimalisering* er forbedret. Microsoft forventer å introdusere støtte for flere planleggingsinnstillinger i fremtidige versjoner.

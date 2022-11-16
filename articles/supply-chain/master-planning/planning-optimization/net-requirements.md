@@ -1,6 +1,6 @@
 ---
-title: Nettobehov og utligningsinformasjon med planleggingsoptimalisering
-description: Denne artikkelen gir informasjon om beregnede nettobehov og utligningsinformasjon i planleggingsoptimalisering.
+title: Nettobehov og utligningsinformasjon
+description: Denne artikkelen gir informasjon om beregnede nettobehov og utligningsinformasjon.
 author: t-benebo
 ms.date: 7/28/2021
 ms.topic: article
@@ -11,20 +11,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 259e5793a8dfac67793034d98ccb627fe1947bab
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a31ff5490b08d92f0d966388b65de02bca25b050
+ms.sourcegitcommit: 613be2f35e600ae1a1fa7ea2ae30e78984ca398a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8888535"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "9748445"
 ---
-# <a name="net-requirements-and-pegging-information-with-planning-optimization"></a>Nettobehov og utligningsinformasjon med planleggingsoptimalisering
+# <a name="net-requirements-and-pegging-information"></a>Nettobehov og utligningsinformasjon
 
 [!include [banner](../../includes/banner.md)]
 
-Når du kjører hovedplanlegging i planleggingsoptimalisering, er det viktig at du forstår resultatet, hvordan eksisterende forsyning dekker behovet og hvorfor spesifikk forsyning ble generert. Du kan bruke siden **Nettobehov** til å få en bedre forståelse av de beregnede kravene som hovedplanleggingen produserer.
+Når du kjører hovedplanlegging, er det viktig at du forstår resultatet, hvordan eksisterende forsyning dekker behovet og hvorfor spesifikk forsyning ble generert. Du kan bruke siden **Nettobehov** til å få en bedre forståelse av de beregnede kravene som hovedplanleggingen produserer.
 
-**Nettobehov**-siden viser nettobehov som planleggingsoptimaliseringen beregnes for produktet. Den viser også dekningsinnstillingene som ble brukt under hovedplanleggingens kjøring, en nedbrytning av behovstotaler etter transaksjonstype og utligningsinformasjon.
+**Nettobehov**-siden viser nettobehov som hovedplanlegging beregnet for produktet. Den viser også dekningsinnstillingene som ble brukt under hovedplanleggingens kjøring, en nedbrytning av behovstotaler etter transaksjonstype og utligningsinformasjon.
 
 ## <a name="open-the-net-requirements-page"></a>Åpne siden Nettobehov
 
@@ -64,8 +64,8 @@ Den nedre delen av siden inneholder følgende faner:
 Følgende kommandoer er tilgjengelige i handlingsruten:
 
 - **Oppdater \> Hovedplanlegging** – Kjør hovedplanlegging direkte fra siden **Nettobehov**.
-- **Oppdater \> Prognoseplanlegging** – Kjør prognoseplanlegging direkte fra siden **Nettobehov**. Planleggingsoptimalisering støtter ennå ikke denne operasjonen.
-- **Oppdater \> Kontinuitetsplanlegging** – Kjør kontinuitetsplanlegging direkte fra siden **Nettobehov**. Planleggingsoptimalisering støtter ennå ikke denne operasjonen.
+- **Oppdater \> Prognoseplanlegging** – Kjør prognoseplanlegging direkte fra siden **Nettobehov**. Planleggingsoptimalisering støtter ikke denne operasjonen.
+- **Oppdater \> Kontinuitetsplanlegging** – Kjør kontinuitetsplanlegging direkte fra siden **Nettobehov**. Planleggingsoptimalisering støtter ikke denne operasjonen.
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
@@ -133,8 +133,6 @@ Deretter åpner du siden **Nettobehov** for produkt *1000* for å gå gjennom hv
     ![Utligningsinformasjon for salgsordren](media/pegging-planned-purchase-order.png "Utligningsinformasjon for salgsordren")
 
 > [!NOTE]
-> Siden planleggingsoptimalisering ennå ikke støtter noen funksjoner, er ikke behovstypene *Sikkerhetslager* og *Utløpte satsvise* inkludert på siden **Nettobehov**. Hvis du vil ha mer informasjon, se [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md).
->
-> Hvis du bruker den innebygde hovedplanleggingsmotoren, støttes partikontrollerte produkter. For partikontrollerte produkter vises utløpte lagerbeholdning på **Nettobehov**-siden, men den trenger ikke å utlignes med behovskrav. Utløpte lagerbeholdningslinjer av denne typen vises som *Utløpt parti*-kravlinjer på siden **Nettobehov**.
+> Kravet *Sikkerhetslager* er ikke inkludert og vises ikke på siden **Nettobehov**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

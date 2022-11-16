@@ -2,24 +2,24 @@
 title: Opprette oppgavelister og legge til oppgaver
 description: Denne artikkelen beskriver hvordan du oppretter oppgavelister og legger til oppgaver i dem i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.search.industry: ''
 ms.search.form: ''
-ms.openlocfilehash: f754ee78547e785fa2386dee6c3d89371bc0de41
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: b81f27f79362516f8a25766c1f663a7691ebb42a
+ms.sourcegitcommit: 9e2e54ff7d15aa51e58309da3eb52366328e199d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9268926"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "9746166"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Opprette oppgavelister og legge til oppgaver
 
@@ -35,7 +35,7 @@ Både ledere og arbeidere kan opprette oppgavelister i Commerce Back Office, og 
 
 ## <a name="create-a-task-list"></a>Opprett en oppgaveliste
 
-Hvis du vil opprette en oppgaveliste, gjør du følgende:
+Før du begynner å opprette en oppgaveliste, må du passe på at du fullfører konfigurasjonene i artikkelen [Konfigurer oppgavebehandling](task-mgmt-configure.md). Hvis du vil opprette en oppgaveliste, gjør du følgende:
 
 1. Gå til **Retail og Commerce \> Oppgavebehandling \> Administrasjon av oppgavebehandling**.
 1. Velg **Ny**, og angi deretter verdier i feltene **Navn**, **Beskrivelse** og **Eier**.

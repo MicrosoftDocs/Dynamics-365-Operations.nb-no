@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 42010bbc0cfb9714fc2be360c817bad07e184eb3
-ms.sourcegitcommit: 435e69160dbd7f9c61b37ac4440285a5df144622
+ms.openlocfilehash: eb21dc5ca474a87fcabe2dda2a06dda7aa42ebc2
+ms.sourcegitcommit: 719600437fc0895efac374f954a895e4c951da6e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "9728283"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9736888"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -42,6 +42,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 
 > [!NOTE]
 > Operasjonene nedenfor gjelder for den nyeste versjonen av Commerce. Noen operasjoner kan ha blitt endret eller er kanskje ikke tilgjengelig i tidligere versjoner.
+> Hvis du vil ha mer informasjon om frakoblede funksjoner og konfigurasjon, kan du se artikkelen [Frakoblet implementering og feilsøking for Commerce](dev-itpro/implementation-considerations-offline.md).
 
 | ID   | Operasjon                                         | Beskrivelse                                                                                                                                                                                                    | Brukeroperasjoner    | Transaksjonskjermbilde | Velkomstskjermbilde | Tilgjengelig frakoblet? | Spesifikk for nasjonal innstilling |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
