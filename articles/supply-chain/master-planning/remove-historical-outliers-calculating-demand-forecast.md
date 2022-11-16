@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99ce8a5bb633cbe8f019299f15650e3ccd5f4314
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: d4e42e566cef774c1a25cf48ec131b74924868d0
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469035"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741101"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose
 
@@ -41,9 +41,8 @@ Du kan utelate utestående for å forbedre nøyaktighet av prognosen. Denne oppg
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over behovsprognose](introduction-demand-forecasting.md)
-
-[Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
+- [Oversikt over behovsprognose](introduction-demand-forecasting.md)
+- [Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
 
 
 

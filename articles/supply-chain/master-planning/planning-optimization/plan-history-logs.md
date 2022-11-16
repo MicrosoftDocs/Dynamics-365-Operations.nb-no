@@ -1,6 +1,6 @@
 ---
 title: Vis planhistorikk og planleggingslogger
-description: Denne artikkelen forklarer hvordan du viser loggen for planleggingsjobber som utløses av Planleggingsoptimalisering-funksjonaliteten.
+description: Denne artikkelen forklarer hvordan du viser historikken for planleggingsjobber.
 author: t-benebo
 ms.date: 06/01/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: b2c9257fc67a06b57418b2f5b035b2b540131405
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: ab469686a009364bf53cb963506fd2107075a283
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8863947"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740938"
 ---
 # <a name="view-plan-history-and-planning-logs"></a>Vis planhistorikk og planleggingslogger
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen forklarer hvordan du viser loggen for planleggingsjobber som utløses av Planleggingsoptimalisering-funksjonaliteten i Microsoft Dynamics 365 Supply Chain Management.
+Denne artikkelen forklarer hvordan du viser historikken for planleggingsjobber i Microsoft Dynamics 365 Supply Chain Management.
 
 Hvis du vil vise loggen for en plan, åpner du planen ved å gå til **Hovedplanlegging** \> **Oppsett** \> **Planer** \> **Hovedplaner** og velge **Historikk**. Loggen viser alle jobbene for den valgte planen. Listen omfatter fullførte og aktive jobber.
 
@@ -47,14 +47,6 @@ Følg denne fremgangsmåten for å vise automatisk autorisering av feil og andre
     - Hvis du bruker det eldre skjemaet: Velg **Logg** i fanen **Satsvis jobb** i handlingsruten.
 
 1. Velg **Meldingsdetaljer** for å åpne ruten **Meldingsdetaljer**, der du kan vise alle advarsler og feil som ble registrert under behandling.
-
-## <a name="related-resources"></a>Relaterte ressurser
-
-- [Oversikt over planleggingsoptimalisering](planning-optimization-overview.md)
-- [Kom i gang med planleggingsoptimalisering](get-started.md)
-- [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
-- [Bruke filtre på en plan](plan-filters.md)
-- [Annullere en planleggingsjobb](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

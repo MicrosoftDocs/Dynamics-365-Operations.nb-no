@@ -1,6 +1,6 @@
 ---
 title: Innkjøpsrekvisisjoner
-description: Denne artikkelen beskriver hvordan innkjøpsrekvisisjoner støttes i planleggingsoptimalisering.
+description: Denne artikkelen beskriver innkjøpsrekvisisjoner.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: b4dcae11e83748da3ec0368e1ddf47fedf5de23c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d9d55186307b18f4c3be78ae0828b08d3c987aad
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8867905"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740691"
 ---
 # <a name="purchase-requisitions"></a>Innkjøpsrekvisisjoner
 
@@ -59,7 +59,7 @@ Når du angir en horisont for godkjente rekvisisjoner for en individuell hovedpl
 1. Gjenta trinn 2 og 3 for hver ytterligere hovedplan der du vil angi en horisont for godkjente rekvisisjoner.
 
 > [!IMPORTANT]
-> **Kommer snart:** Horisonter for godkjente rekvisisjoner støttes ikke ennå for planleggingsoptimalisering. Før de støttes, ignoreres alle verdier du angir i feltet **Godkjente rekvisisjoner - horisont (dager)**.
+> Horisonter for godkjente rekvisisjoner støttes ikke for planleggingsoptimalisering. Før de støttes, ignoreres alle verdier du angir i feltet **Godkjente rekvisisjoner - horisont (dager)**.
 
 ## <a name="independent-supply-regardless-of-coverage-code"></a>Uavhengig forsyning, uavhengig av dekningskode
 

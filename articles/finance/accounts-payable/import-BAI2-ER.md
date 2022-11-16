@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.25
-ms.openlocfilehash: 46a50f4b00125656fc185ad569b94eeef00dc3c3
-ms.sourcegitcommit: 649f1db26da8f20602f11180fc565b7c59eaf545
+ms.openlocfilehash: d24e117b21e291dba1e41d9fa15187b84ff795cf
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9337575"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752727"
 ---
 # <a name="set-up-advanced-bank-reconciliation-import-by-using-electronic-reporting"></a>Konfigurere import av avansert bankavstemming ved hjelp av elektronisk rapportering
 
@@ -34,7 +34,7 @@ Funksjonen Avansert bankavstemming lar deg importere elektroniske bankkontoutdra
 2. Velg **Repositorier** på flisen for **Microsoft**-konfigurasjonsleverandøren.
 3. Velg **Global**, og velg deretter **Åpne**.
 4. Hvis det må opprettes en tilkobling til repositoriet, velger du den blå koblingen i dialogboksen.
-5. I konfigurasjonslisten finner du **Bankkontoutdragsmodell \> Bankkontoutdragsmodell BAI2**.
+5. I konfigurasjonslisten finner du **Avansert modell for bankavstemmingsutdrag \> ABR BAI2-format**.
 6. Velg **BAI2**-formatet.
 7. På hurtigfanen **Versjoner** velger du den nyeste versjonen, og deretter velger du **Importer**.
 

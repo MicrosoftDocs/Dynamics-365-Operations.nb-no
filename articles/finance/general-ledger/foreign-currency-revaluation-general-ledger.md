@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e90780ca2a33725130b261fcaf4cb08d30f3270
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8904535"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752810"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Revaluering av utenlandsk valuta for finans
 
@@ -64,7 +64,9 @@ Revalueringsprosessen kan kjøres for én eller flere juridiske enheter. Oppslag
 
 Revalueringen kan kjøres for én eller flere utenlandske valutaer. Oppslaget inkluderer alle valutaer som ble bokført i datoområdet som er relevant for typen hovedkontoen (balanse eller resultat) for de juridiske enhetene som er valgt for revaluering. Regnskapsvalutaen vil bli inkludert i listen, men ingenting revalueres hvis regnskapsvalutaen er valgt. 
 
-Angi **Forhåndsvis for postering** til **Ja** hvis du vil se resultatet av revaluering av økonomimodulen. Forhåndsvisningen i økonomimodulen er forskjellig fra simuleringen i AR- og AP-revalueringen av utenlandsk valuta. Simuleringen i AR og AP er en rapport, men økonomimodulen er en forhåndsvisning som kan posteres, uten å måtte kjøre revalueringen på nytt. Resultatet av forhåndsvisningen kan eksporteres til Microsoft Excel for å bevare historikken over hvordan beløpene ble beregnet. Du kan ikke bruke satsvis behandling hvis du vil forhåndsvise resultatet av revalueringen. Fra forhåndsvisningen har brukeren muligheten til å postere resultatet av alle juridiske enheter ved hjelp av **Poster**-knappen. Hvis det er et problem med resultatene for en juridisk enhet, har brukeren også mulighet til å postere et delsett av de juridiske enhetene ved hjelp av knappen **Velg juridiske enheter for postering**. 
+Angi **Forhåndsvis for postering** til **Ja** hvis du vil se resultatet av revaluering av økonomimodulen. Forhåndsvisningen i økonomimodulen er forskjellig fra simuleringen i AR- og AP-revalueringen av utenlandsk valuta. Simuleringen i AR og AP er en rapport, men økonomimodulen er en forhåndsvisning som kan posteres, uten å måtte kjøre revalueringen på nytt. Resultatet av forhåndsvisningen kan eksporteres til Microsoft Excel for å bevare historikken over hvordan beløpene ble beregnet. Du kan ikke bruke satsvis behandling hvis du vil forhåndsvise resultatet av revalueringen. Fra forhåndsvisningen har brukeren muligheten til å postere resultatet av alle juridiske enheter ved hjelp av **Poster**-knappen. Hvis det er et problem med resultatene for en juridisk enhet, har brukeren også mulighet til å postere et delsett av de juridiske enhetene ved hjelp av knappen **Velg juridiske enheter for postering**.
+
+Hvis du vil utelate justeringer som ble postert ved hjelp av **Justeringsjournal for rapporteringsvaluta** fra revalueringsprosessen, angir du **Ja** for **Ekskluder rapporteringsvalutajusteringer**. Rapporteringsvalutajusteringer er som standard inkludert i revalueringen. 
 
 Når prosessen for revaluering av utenlandsk valuta er fullført, opprettes en post for å spore loggen for hver kjøring.  En separat oppføring opprettes for hver juridiske enhet og posteringslag.
 

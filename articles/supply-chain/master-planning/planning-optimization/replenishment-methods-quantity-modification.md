@@ -1,6 +1,6 @@
 ---
 title: Etterfyllingsmetoder og antallsendring
-description: Denne artikkelen inneholder informasjon om etterfyllingsmetoder i planleggingsoptimalisering. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
+description: Denne artikkelen inneholder informasjon om etterfyllingsmetoder. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
 author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
@@ -11,26 +11,26 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3e8ef3d38f1b9bacd89304aaf3f0350050232bd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d1e0fe6c1f49bc0f6887f1b29118c1fee7a6222f
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8873702"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739764"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Etterfyllingsmetoder og antallsendring
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen inneholder informasjon om etterfyllingsmetoder i planleggingsoptimalisering. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
+Denne artikkelen inneholder informasjon om etterfyllingsmetoder. Det forklarer også hvordan flere bestillingsantall for et produkt påvirker resultatet.
 
 Etterfyllingsmetoder kalles også dekningsmetoder og metoder for justering av partistørrelse.
 
 ## <a name="coverage-codes"></a>Dekningskoder
 
-Planleggingsoptimalisering kan konfigureres til å bruke forskjellige metoder for etterfylling. Etterfyllingsmetodene er teknikker som systemet bruker til å beregne behov for et produkt. Etterfyllingsmetoder defineres av dekningskoder som du kan definere på enten dekningsgruppen eller produktet.
+Hovedplanlegging kan konfigureres til å bruke forskjellige metoder for etterfylling. Etterfyllingsmetodene er teknikker som systemet bruker til å beregne behov for et produkt. Etterfyllingsmetoder defineres av dekningskoder som du kan definere på enten dekningsgruppen eller produktet.
 
-Følgende dekningskoder kan brukes i planleggingsoptimalisering:
+Følgende dekningskoder kan brukes:
 
 - **Periode** – Etterfyllingsmetoden kombinerer alt behovet for en periode i én ordre for produktet. Ordren vil bli planlagt for den første dagen i perioden, og antallet vil oppfylle nettobehovet i den etablerte perioden. Perioden begynner med det første behovet for produktet og dekker den definerte tidslengden. Neste periode starter med de neste behovene til produktet. *Periode*-dekningskoden brukes ofte for ikke-forutsigbare lagertrekk, sesongprodukter eller produkter med høy kostnad. Illustrasjonen nedenfor viser et eksempel.
 
@@ -64,13 +64,13 @@ På siden **Standard ordreinnstillinger** for et frigitt produkt kan du angi fø
 
 ## <a name="examples-of-replenishment-that-use-the-minmax-coverage-code"></a>Eksempler på etterfylling som bruker Min/maks. dekningskode
 
-Hvis du ikke angir en verdi i **Flere**-feltet for et produkt på siden **Standard ordreinnstillinger**, og hvis du bruker etterfyllingsmetoden *Min/maks.* vil planleggingsoptimalisering etterfylle lageret opptil et bestemt nivå når det forutsagte lagerbeholdningsnivået er under en bestemt terskel.
+Hvis du ikke angir en verdi i **Flere**-feltet for et produkt på siden **Standard ordreinnstillinger**, og hvis du bruker etterfyllingsmetoden *Min/maks.* vil hovedplanlegging etterfylle lageret opptil et bestemt nivå når det forutsagte lagerbeholdningsnivået er under en bestemt terskel.
 
 Hvis du definerer et multiplumsantall for et produkt, endrer etterfyllingsmetoden *Min/maks.* virkemåten og vurderer **Flere**-verdien.
 
-Med andre ord vil planleggingsoptimaliseringen etterfylle lageret opptil det definerte maksimumsnivået når det forutsagte lagernivået er mindre enn det definerte minimumsnivået. Etterfyllingsantallet må imidlertid være et multiplumsantall av **Flere**-verdien.
+Med andre ord vil hovedplanlegging etterfylle lageret opptil det definerte maksimumsnivået når det forutsagte lagernivået er mindre enn det definerte minimumsnivået. Etterfyllingsantallet må imidlertid være et multiplumsantall av **Flere**-verdien.
 
-Hvis etterfyllingsantallet (differansen mellom det maksimale nivået og det forutsagte beholdningsnivået) ikke er et multiplumsantall av det definerte multiplumsantallet, bruker planleggingsoptimalisering den første mulige verdien som, sammen med forventet beholdningsnivå, vil være under maksimumsnivået. Hvis summen er mindre enn minimumsnivået, bruker planleggingsoptimalisering den første verdien som, sammen med forventet lagerbeholdning, vil være over maksimumsnivået.
+Hvis etterfyllingsantallet (differansen mellom det maksimale nivået og det forutsagte beholdningsnivået) ikke er et multiplumsantall av det definerte multiplumsantallet, bruker hovedplanlegging den første mulige verdien som, sammen med forventet beholdningsnivå, vil være under maksimumsnivået. Hvis summen er mindre enn minimumsnivået, bruker hovedplanlegging den første verdien som, sammen med forventet lagerbeholdning, vil være over maksimumsnivået.
 
 Følgende delseksjoner gir noen eksempler som viser hvordan multiplumsordreantallet for et produkt påvirker resultatet av *Min/maks.*- etterfyllingsmetoden.
 

@@ -1,6 +1,6 @@
 ---
 title: Hovedplanlegging med behovsprognoser
-description: Denne artikkelen forklarer hvordan du inkluderer behovsprognoser under hovedplanlegging med Planleggingsoptimalisering.
+description: Denne artikkelen forklarer hvordan du inkluderer behovsprognoser under hovedplanlegging.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 63221b5270416cad9cdfb586c697d7700f3b561b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 79a25d6fc5c809947b5b92a32cc00c9a3cc73202
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878997"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9739790"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hovedplanlegging med behovsprognoser
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan bruke en behovsprognose sammen med Planleggingsoptimalisering til å planlegge for forventet behov i hovedplanleggingen. Du kan opprette en behovsprognose manuelt, importere den eller generere den ved hjelp av funksjonen for behovsprognose i Microsoft Dynamics 365 Supply Chain Management. Hvis du vil ha mer informasjon om behovsprognose, kan du se [Oversikt over behovsprognose](../introduction-demand-forecasting.md).
+Du kan bruke en behovsprognose til å gjøre rede for forventet behov i hovedplanleggingen. Du kan opprette en behovsprognose manuelt, importere den eller generere den ved hjelp av funksjonen for behovsprognose i Microsoft Dynamics 365 Supply Chain Management. Hvis du vil ha mer informasjon om behovsprognose, kan du se [Oversikt over behovsprognose](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Egen planlegging av prognoser støttes ikke med Planleggingsoptimalisering. Derfor har innstillingen **Gjeldende prognoseplan** på siden **Hovedplanleggingsparametere** ingen virkning når du bruker Planleggingsoptimalisering.
@@ -50,7 +50,7 @@ Følg denne fremgangsmåten for å konfigurere en hovedplan slik at den innehold
     - **Tidsperiode for prognose** – Hvis du angir **Prognoseplan** til *Ja*, angir du antall dager (fra dagens dato) som behovsprognose skal brukes på.
 
     > [!IMPORTANT]
-    > Innstillingen **Prognoseplan** støttes ikke med Planleggingsoptimalisering ennå.
+    > Innstillingen **Prognoseplan** støttes ikke med Planleggingsoptimalisering.
 
 ## <a name="set-up-a-coverage-group-to-include-a-demand-forecast"></a>Definer en dekningsgruppe for å inkludere en behovsprognose
 

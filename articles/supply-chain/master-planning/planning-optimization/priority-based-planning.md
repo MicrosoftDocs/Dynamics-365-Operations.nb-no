@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: e17e45f1d4e9f7c62317eac6f3ea1be84017b562
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 1a952fe5734f01325842a8a130b9322eadc67951
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335293"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740599"
 ---
 # <a name="priority-based-planning"></a>Prioritetsbasert planlegging
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management. Funksjonen gir støtte for etterspørselsdrevet planlegging, som er ett trinn i [DDMRP (etterspørselsdrevet planlegging av materialkrav)](ddmrp-overview.md). Prioritetsbasert planlegging gjør det mulig for Planleggingsoptimalisering å generere planlagte bestillinger som drives av planleggingsprioriteter i stedet for behovsdatoer.
+Denne artikkelen beskriver funksjonen for prioritetsbasert planlegging i Microsoft Dynamics 365 Supply Chain Management. Funksjonen gir støtte for etterspørselsdrevet planlegging, som er ett trinn i [DDMRP (etterspørselsdrevet planlegging av materialkrav)](ddmrp-overview.md). Prioritetsbasert planlegging gjør at systemet kan generere planlagte bestillinger som drives av planleggingsprioriteter i stedet for behovsdatoer.
 
 Med prioritetsbasert planlegging kan du prioritere etterfyllingsordrer for å sikre at behovet prioriteres over mindre viktig etterspørsel. En etterfyllingsordre for manko blir for eksempel prioritert over en standard etterfyllingsordre for påfylling. Systemet kan automatisk dele større ordrer i separate mindre ordrer, der ordrelinjer grupperes etter prioritet. Det kan deretter behandle alle ordrer med høy prioritet først.
 
@@ -37,11 +37,11 @@ Før du kan bruke denne funksjonen, må den være aktivert for systemet. Adminis
 
 ## <a name="where-and-how-planning-priorities-are-assigned"></a>Hvor og hvordan planleggingsprioriteter tilordnes
 
-Informasjon om *planleggingsprioritet* for tilbud og etterspørsel er ryggraden i prioritetsbasert planlegging. Planleggingsprioritet definerer viktigheten av en en etterspørsels- eller forsyningslinje. Planleggingsoptimalisering bruker dette når **Dekningskode**-feltet er satt til *Prioritet*.
+Informasjon om *planleggingsprioritet* for tilbud og etterspørsel er ryggraden i prioritetsbasert planlegging. Planleggingsprioritet definerer viktigheten av en en etterspørsels- eller forsyningslinje. Hovedplanlegging bruker den når **Dekningskode**-feltet er satt til *Prioritet*.
 
 Planleggingsprioriteten er vanligvis et tall mellom 0 (null) og 100, der 0 representerer den høyeste viktigheten. Den vises og angis i **Planleggingsprioritet**-feltet. Du finner dette feltet på følgende sider: **Behovsprognoselinjer**, **Salgsordredetaljer**, **Bestillingsdetaljer**, **Overføringsordredetaljer** og **Detaljer om planlagt bestilling**.
 
-Når **Dekningskode**-feltet for den relevante varen eller dekningsgruppen er satt til *Prioritet*, balanserer Planleggingsoptimalisering forsyning med behov ved å bruke en behovsdrevet tilnærming når det beregner planleggingsprioriteten, og for hvert frigitte produkt vurderes verdiene som er angitt for feltene **Minimum**, **Gjenbestillingspunkt** og **Maksimum** på **Varedekning**-siden.
+Når **Dekningskode**-feltet for den relevante varen eller dekningsgruppen er satt til *Prioritet*, balanserer hovedplanlegging forsyning med behov ved å bruke en behovsdrevet tilnærming når det beregner planleggingsprioriteten, og for hvert frigitte produkt vurderes verdiene som er angitt for feltene **Minimum**, **Gjenbestillingspunkt** og **Maksimum** på **Varedekning**-siden.
 
 > [!NOTE]
 > *Prioritet*-verdien er bare tilgjengelig for **Dekningskode**-feltet når Planleggingsoptimalisering er aktivert.

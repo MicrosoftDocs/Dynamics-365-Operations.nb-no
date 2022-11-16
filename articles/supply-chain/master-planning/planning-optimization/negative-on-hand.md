@@ -1,6 +1,6 @@
 ---
 title: Planlegging med negative lagerbeholdningsantall
-description: Denne artikkelen forklarer hvordan negativ beholdning håndteres når du bruker planleggingsoptimalisering.
+description: Denne artikkelen forklarer hvordan negativ beholdning håndteres.
 author: t-benebo
 ms.date: 07/22/2021
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 04006bb12142be69c84bc8085dd82fc99280e90b
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: b4fc8b37fd800e3b4652513f150f9806bf1d5d67
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8856142"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741129"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Planlegging med negative lagerbeholdningsantall
 
@@ -29,7 +29,7 @@ ms.locfileid: "8856142"
 
 Hvis systemet viser et negativt antall av lagerbeholdningen, behandler planleggingsmotoren antallet som 0 (null) for å unngå overforsyning. Slik fungerer denne funksjonaliteten:
 
-1. Funksjonen for planleggingsoptimalisering samler opp beholdningsantall på det laveste nivået av dekningsdimensjoner. (Hvis *sted* for eksempel ikke er en dekningsdimensjon, samler planleggingsoptimalisering lagerbeholdningsantall på nivået *lager*.)
+1. Hovedplanlegging samler beholdningsantall på det laveste nivået av dekningsdimensjoner. (Hvis *sted* for eksempel ikke er en dekningsdimensjon, samler hovedplanlegging lagerbeholdningsantall på nivået *lager*.)
 1. Hvis det samlede lagerbeholdningsantallet på det laveste nivået av dekningsdimensjoner er negativt, forutsetter systemet at beholdningsantallet virkelig er 0 (null).
 
 > [!IMPORTANT]
@@ -88,14 +88,6 @@ Systemet konfigureres på følgende måte:
 - Det finnes en salgsordre for et antall på *10* stk. av produktet *FG*.
 - Salgsordreantallet er fysisk reservert mot eksisterende lagerbeholdning.
 
-Deretter justerer du antallet av produktet *FG*, slik at lagerbeholdningen blir 5. Fordi beholdningen for produktlageret er 5, reserveres salgsordreantallet nå mot antall som ikke er tilgjengelig i beholdningen (det vil være likt hvis beholdningen er 0. I så fall vil salgsordren reserveres mot negativt lager). Hvis du kjører en hovedplanlegging nå, blir det opprettet en planlagt ordre for antallet 5 for *FG* for å forsyne salgsordren, fordi planleggingsoptimalisering alltid vil bruke eksisterende forsyning eller opprette en ny planlagt ordre for å forsyne den fysiske reserveringen.
-
-## <a name="related-resources"></a>Relaterte ressurser
-
-- [Oversikt over planleggingsoptimalisering](planning-optimization-overview.md)
-- [Kom i gang med planleggingsoptimalisering](get-started.md)
-- [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
-- [Vise planhistorikk og planleggingslogger](plan-history-logs.md)
-- [Annullere en planleggingsjobb](cancel-planning-job.md)
+Deretter justerer du antallet av produktet *FG*, slik at lagerbeholdningen blir 5. Fordi beholdningen for produktlageret er 5, reserveres salgsordreantallet nå mot antall som ikke er tilgjengelig i beholdningen (det vil være likt hvis beholdningen er 0. I så fall vil salgsordren reserveres mot negativt lager). Hvis du kjører en hovedplanlegging nå, blir det opprettet en planlagt ordre for antallet 5 for *FG* for å forsyne salgsordren, fordi hovedplanlegging alltid vil bruke eksisterende forsyning eller opprette en ny planlagt ordre for å forsyne den fysiske reserveringen.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

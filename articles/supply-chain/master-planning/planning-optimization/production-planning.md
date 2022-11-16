@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 5c8169a8d2c3e45304142fb6b4d504e620c545a4
-ms.sourcegitcommit: 203c8bc263f4ab238cc7534d4dd902fd996d2b0f
+ms.openlocfilehash: 43da249637c44b3f56e8b5e210a0e44d9ac6cb9d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9335263"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740556"
 ---
 # <a name="production-planning"></a>Produksjonsplanlegging
 
 [!include [banner](../../includes/banner.md)]
-
-Planleggingsoptimalisering støtter flere produksjonsscenarioer. Hvis du går over fra den eksisterende, innebygde hovedplanleggingsmotoren, er det viktig å være oppmerksom på noen endrede virkemåter.
 
 Følgende video gir en kort innføring i noen av begrepene som omhandles i denne artikkelen: [Dynamics 365 Supply Chain Management: Planlegge optimaliseringsforbedringer](https://youtu.be/u1pcmZuZBTw).
 
@@ -46,10 +44,6 @@ Planlagte produksjonsordrer omfatter rute-ID-en som kreves for produksjonsplanle
 
 - **Planlagt produksjonsordre** – Leveringstiden er basert på den statiske leveringstiden fra det frigitte produktet.
 - **Autorisert produksjonsordre** – Leveringstiden er basert på planlegging som bruker ruteinformasjon og relaterte ressursbegrensninger.
-
-Hvis du vil ha mer informasjon om forventet funksjonstilgjengelighet, kan du se [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md).
-
-Hvis du er avhengig av produksjonsfunksjonalitet som ennå ikke er tilgjengelig for planleggingsoptimalisering, kan du fortsette å bruke den innebygde hovedplanleggingsmotoren. Ingen unntak er nødvendig.
 
 ## <a name="delays"></a>Forsinkelser
 
@@ -76,15 +70,15 @@ Du kan bruke **Nedbryting**-siden til å analysere behovet som er nødvendig for
 
 ## <a name="filters"></a><a name="filters"></a>Filtre
 
-For å sikre at planleggingsoptimalisering har informasjonen den trenger til å beregne riktig resultat, må du ta med alle produkter som har en hvilken som helst tilknytning til produkter i hele stykklistestrukturen for den planlagte bestillingen. Når det gjelder planleggingsscenarioer som omfatter produksjon, anbefaler vi derfor at du unngår filtrerte kjøringer av hovedplanlegging.
+For å sikre at hovedplanlegging har informasjonen den trenger til å beregne riktig resultat, må du ta med alle produkter som har en hvilken som helst tilknytning til produkter i hele stykklistestrukturen for den planlagte bestillingen. Når det gjelder planleggingsscenarioer som omfatter produksjon, anbefaler vi derfor at du unngår filtrerte kjøringer av hovedplanlegging.
 
-Selv om avhengige underordnede varer automatisk blir oppdaget og tatt med i kjøringer av hovedplanlegging når den innebygde hovedplanleggingsmotoren brukes, utfører ikke planleggingsoptimalisering denne handlingen for øyeblikket.
+Selv om avhengige underordnede varer automatisk blir oppdaget og tatt med i kjøringer av hovedplanlegging når den avskrevne hovedplanleggingsmotoren brukes, utfører ikke planleggingsoptimalisering denne handlingen for øyeblikket.
 
 Hvis for eksempel én bolt fra stykklistestrukturen for produkt A også brukes til å produsere produkt B, må alle produkter i stykklistestrukturen for produktene A og B tas med i filteret. Siden det kan bli komplekst å sikre at alle produkter er en del av filteret, anbefaler vi at du unngår filtrerte kjøringer av hovedplanlegging når produksjonsordrer er involvert. Ellers gir hovedplanlegging uønskede resultater.
 
 ### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Grunner til å unngå filtrerte kjøringer av hovedplanlegging
 
-Når du kjører filtrert hovedplanlegging for et produkt, oppdager ikke planleggingsoptimalisering (i motsetning til den innebygde hovedplanleggingsmotoren) alle delproduktene og råvarene i stykklistestrukturen til dette produktet, og tar dem derfor ikke med i kjøringen av hovedplanleggingen. Selv om planleggingsoptimalisering finner det første nivået i stykklistestrukturen til produktet, laster den ikke inn noen produktinnstillinger (for eksempel standard ordretype eller varedekning) fra databasen.
+Når du kjører filtrert hovedplanlegging for et produkt, oppdager ikke planleggingsoptimalisering (i motsetning til den avskrevne hovedplanleggingsmotoren) alle delproduktene og råvarene i stykklistestrukturen til dette produktet, og tar dem derfor ikke med i kjøringen av hovedplanleggingen. Selv om planleggingsoptimalisering finner det første nivået i stykklistestrukturen til produktet, laster den ikke inn noen produktinnstillinger (for eksempel standard ordretype eller varedekning) fra databasen.
 
 Data for kjøringen lastes inn på forhånd i planleggingsoptimalisering, og filtrene brukes. Dette betyr at hvis et delprodukt eller en råvare som er tatt med i et bestemt produkt, ikke er en del av filteret, registreres ikke informasjon om det/den for kjøringen. Hvis delproduktet eller råvaren også er inkludert i et annet produkt, fjerner en filtrert kjøring som bare omfatter det opprinnelige produktet og komponentene, eksisterende planlagt behov som er opprettet for dette andre produktet.
 

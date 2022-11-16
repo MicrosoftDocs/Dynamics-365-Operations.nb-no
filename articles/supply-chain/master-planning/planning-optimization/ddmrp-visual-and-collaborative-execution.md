@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2022-06-30
 ms.dyn365.ops.version: 10.0.28
-ms.openlocfilehash: 92e38c6ea19b60ae0a61e55f240ff52698e06933
-ms.sourcegitcommit: 3e04f7e4bc0c29c936dc177d5fa11761a58e9a02
+ms.openlocfilehash: ce32a4449da8e85f958f212f2c2dfd2841ca6887
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2022
-ms.locfileid: "9689783"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740830"
 ---
 # <a name="visual-and-collaborative-execution"></a>Visuell og samarbeidsbasert kjøring
 
@@ -34,7 +34,7 @@ I Microsoft Dynamics 365 Supply Chain Management kan du visualisere hvordan buff
 1. Velg en frigitt vare som er definert som et utkoblingspunkt. (For mer informasjon, se [Lagerplassering](ddmrp-inventory-positioning.md).)
 1. Gå til **Plan**-fanen i handlingsruten, og velg deretter **Varedekning**.
 1. Velg en varedekningspost som oppretter et utkoblingspunkt, på **Varedekning**-siden. (Denne posten vil vise navnet på en dekningsgruppe som er konfigurert til å opprette utkoblingspunkter.)
-1. Velg **Beholdning**-fanen. Denne fanen inneholder et diagram som viser hvordan lagerbeholdninger endres over tid, sammen med verdien av lagerbeholdningsnivå som ble registrert for en bestemt periode hver gang planleggingsoptimaliseringen kjøres. Fanen inneholder også en tabell som viser hvilke av følgende kategorier hver registrerte lagerbeholdning faller inn under:
+1. Velg **Beholdning**-fanen. Denne fanen inneholder et diagram som viser hvordan lagerbeholdninger endres over tid, sammen med verdien av lagerbeholdningsnivå som ble registrert for en bestemt periode hver gang hovedplanlegging kjøres. Fanen inneholder også en tabell som viser hvilke av følgende kategorier hver registrerte lagerbeholdning faller inn under:
 
     - **Kritisk lav** – Mindre enn halvparten av minimum for perioden.
     - **Lav** – Mellom halvparten av minimum og minimum.

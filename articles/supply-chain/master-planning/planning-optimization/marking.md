@@ -1,6 +1,6 @@
 ---
-title: Lagermerking med planleggingsoptimalisering
-description: Denne artikkelen inneholder informasjon om alternativene som er tilgjengelige for merking av lager i autoriserte ordrer når du bruker planleggingsoptimalisering.
+title: Lagermerking
+description: Denne artikkelen inneholder informasjon om alternativene som er tilgjengelige for merking av lager i autoriserte ordrer.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 55c83cdbc144f194fe80e8281a35ec7ff43d551e
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: c86db6a670d7d0f7bfe74b7466b9bce766e4a08d
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9219945"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9740610"
 ---
-# <a name="inventory-marking-with-planning-optimization"></a>Lagermerking med planleggingsoptimalisering
+# <a name="inventory-marking"></a>Lagermerking
 
 [!include [banner](../../includes/banner.md)]
 
-Denne artikkelen inneholder informasjon om alternativene som er tilgjengelige for merking av lager i autoriserte ordrer når du bruker planleggingsoptimalisering.
+Denne artikkelen inneholder informasjon om alternativene som er tilgjengelige for merking av lager i autoriserte ordrer.
 
 *Merking* brukes til å koble til forsyning og behov. Det ligner på *utligning*, som indikerer hvordan hovedplanleggingen forventes å dekke behov. Fra et planleggingssynspunkt er hovedforskjellen at merking er mer permanent enn utligning.
 

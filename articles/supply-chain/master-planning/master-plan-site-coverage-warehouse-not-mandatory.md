@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 327bb259cc108f1fad068c847441229dcaee7ff1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 6b03bd1970aa7a2f3276186a0a9f8c2cd2880956
+ms.sourcegitcommit: 491ab9ae2b6ed991b4eb0317e396fef542d3a21b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8859234"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9741156"
 ---
 # <a name="master-planning-for-site-coverage-warehouse-not-mandatory"></a>Hovedplanlegging for områdedekning, lager ikke obligatorisk
 
@@ -47,15 +47,11 @@ Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Oversikt over hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
-
-[Hovedplanlegging for område- og lagerdekning, lager obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
-
-[Hovedplanlegging for områdedekning, obligatorisk lager](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-
-[Hovedplanlegging for områdedekning, lager ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-
-[Fastslå stykklisteversjonen](master-plan-bom-version-determined.md)
+- [Oversikt over hovedplanlegging og multisite-funksjonalitet](master-plan-multisite-functionality.md)
+- [Hovedplanlegging for område- og lagerdekning, lager obligatorisk](master-plan-site-coverage-warehouse-mandatory.md)
+- [Hovedplanlegging for områdedekning, obligatorisk lager](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+- [Hovedplanlegging for områdedekning, lager ikke obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+- [Fastslå stykklisteversjonen](master-plan-bom-version-determined.md)
 
 
 

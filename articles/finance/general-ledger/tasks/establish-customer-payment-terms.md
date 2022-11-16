@@ -2,7 +2,7 @@
 title: Opprette kundebetalingsbetingelser
 description: Dette definerer et oppsett for kontantrabatt og forfallsdato.
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6069d28d84ab1705fd62a33cea7e0b923f0e0705
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 9b2ae5e63a2efb4bc913efa4d88c65a70133a2d9
+ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9065716"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9752783"
 ---
 # <a name="establish-customer-payment-terms"></a>Opprette kundebetalingsbetingelser
 
@@ -34,7 +34,11 @@ Dette definerer et oppsett for kontantrabatt og forfallsdato. Denne oppgaveveile
 6. Angi en dato i **Dato**-feltet. Datoen må angis som et tall, for eksempel "10", og ikke som "10.". 
 7. Klikk **Lagre**.
 8. Lukk siden.
-9. Gå til **Navigasjonsrute > Moduler > Kunder > Betalingsoppsett > Betalingsbetingelser**.
+9. Gå til **Navigasjonsrute > Moduler > Kunder > Betalingsoppsett > Betalingsbetingelser**. 
+
+>[!NOTE] 
+>Hvis **Betalingsbetingelser** er **Kontanter**, må **Kontantbetaling**-feltet på siden **Betalingsbetingelser** inneholde **Nei**.
+
 10. Klikk på **Ny**. **Betalingsbetingelsene** brukes til å definere hvordan forfallsdatoene beregnes. Dato for oppsett av kontantrabatten er definert i en egen side. 
 11. Angi en ID i **Betalingsbetingelser**-feltet.
 12. Angi en beskrivelse i **Beskrivelse**-feltet.
