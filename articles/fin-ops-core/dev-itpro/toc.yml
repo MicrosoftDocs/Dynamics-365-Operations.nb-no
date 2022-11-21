@@ -1648,11 +1648,13 @@
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Definere arbeidsdeling
                   href: sysadmin/tasks/set-up-segregation-duties.md
-                - name: Identifisere og løse konflikter i arbeidsdeling
+                - name: Identifiser og løs konflikter i arbeidsdeling
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
-                - name: Tilordne brukere til sikkerhetsroller
+                - name: Tildel brukere til sikkerhetsroller
                   href: sysadmin/tasks/assign-users-security-roles.md
-                - name: Importere eller eksportere egendefinert sikkerhetskonfigurasjon ved hjelp av dataadministrasjon
+                - name: Sikkerhetsgrupper for Active Directory
+                  href: sysadmin/active-directory-security-group.md
+                - name: Importer eller eksporter egendefinert sikkerhetskonfigurasjon ved hjelp av dataadministrasjon
                   href: sysadmin/import-export-customized-security.md
                 - name: Sikkerhetsdiagnostikk for oppgaveopptak
                   href: sysadmin/tasks/security-diagstics-task-recordings.md

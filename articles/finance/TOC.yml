@@ -1188,6 +1188,8 @@
                   href: general-ledger/ledger-settlements.md
                 - name: Forståelse av finansutligning og årsavslutning
                   href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Automatiser utligninger
+                  href: general-ledger/auto-settle.md
                 - name: Revaluering av utenlandsk valuta for økonomimodul
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Kontosaldoer i økonomimodulen

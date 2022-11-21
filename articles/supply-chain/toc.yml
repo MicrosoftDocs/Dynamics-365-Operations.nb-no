@@ -3393,8 +3393,10 @@
                   href: landed-cost\landed-cost-entities-vendor-invoices.md
         - name: Lagerstyring
           items:
-            - name: Oversikt over lagerstyring
+            - name: Oversikt over Lagerstyring
               href: warehousing/warehouse-management-overview.md
+            - name: Kom i gang med konfigurering av modulen Lagerstyring
+              href: warehousing/get-started-with-setting-up-module.md
             - name: Innkommende lageroperasjoner
               items:
                 - name: Lagerhåndtering av innkommende laster for bestillinger

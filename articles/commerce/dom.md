@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: a18441c44869e0e95cf79e35045dd7eacca7e43d
+ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8878519"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9764187"
 ---
 # <a name="distributed-order-management-dom"></a>Behandling av distribuert ordre (DOM)
 
@@ -68,9 +68,9 @@ Illustrasjonen nedenfor viser livssyklusen til en salgsordre i et DOM-system.
         > [!NOTE]
         > Den forenklede problemløseren blir formidlet slik at forhandlere kan teste DOM-funksjonen uten å måtte distribuere spesiallisensen. Organisasjoner bør ikke bruke den forenklede problemløseren i produksjonsmiljøer.
         >
-        > Produksjonsproblemløseren forbedrer ytelse (for eksempel hvor mange ordrer og ordrelinjer som kan behandles i en kjøring) og sammenfall av resultater (ettersom en bunke med ordrer kanskje ikke gir det beste resultatet i noen scenarioer). Noen regler, for eksempel regelen **Delvise ordrer** og regelen **Maksimalt antall steder** krever produksjonsproblemløseren.
+        > Produksjonsproblemløseren forbedrer ytelse (for eksempel hvor mange ordrer og ordrelinjer som kan behandles i en kjøring) og sammenfall av resultater (ettersom en bunke med ordrer kanskje ikke gir det beste resultatet i noen scenarioer). Regelen **Delvise ordrer** krever produksjonsproblemløseren.
 
-6. Gå tilbake til **Retail og Commerce \> Behandling av distribuert ordre \> Oppsett \> DOM-parametere**.
+6. Gå tilbake til **Detaljhandel og forretningsdrift \> Behandling av distribuert ordre \> Oppsett \> DOM-parametere**.
 7. I fanen **Nummerserier** tilordner du de nødvendige nummerseriene for de ulike DOM-enhetene.
 
     > [!NOTE]

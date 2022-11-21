@@ -302,13 +302,15 @@
                       href: hr-admin-troubleshooting-integration.md
             - name: Definer Human Resources
               items:
-                - name: Konfigurer parametere for Human Resources
+                - name: Konfigurer parametere for personale
                   href: hr-setup-parameters.md
-                - name: Konfigurere delte parametere for Human Resources
+                - name: Konfigurer delte parametere for personale
                   href: hr-setup-shared-parameters.md
-                - name: Konfigurere arbeidsflyter for Human Resources
+                - name: Begrens tilgang til arbeidere etter juridisk enhet
+                  href: hr-advanced-security.md
+                - name: Konfigurer arbeidsflytprosesser for personale
                   href: hr-workflow-manage-employee-information.md
-                - name: Forstå felt for dato og klokkeslett
+                - name: Forstå felter for dato og klokkeslett
                   href: hr-setup-date-time-fields.md
             - name: Konfigurere organisasjonsinnstillinger
               items:
@@ -848,6 +850,8 @@
               href: hr-admin-integration-common-data-service.md
             - name: Konfigurer virtuelle Dataverse-tabeller
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Sikkerhet for virtuelle tabellintegreringer
+              href: hr-security-config.md
             - name: Konfigurer integrering med Finance
               href: hr-admin-integration-finance.md
             - name: Opprett koblinger fra Human Resources til et annet miljø
