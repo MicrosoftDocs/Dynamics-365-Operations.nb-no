@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 ms.author: rcarlson
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a53b7834271355aaf11c13c3f1886257a97b1da8
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: 7ef93b81ce37128f7ff400eb4034ffea01756038
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9068998"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779860"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Overføring av underfinans til økonomimodul
 
@@ -35,7 +35,7 @@ Følgende alternativer er tilgjengelige for overføring av underfinansbunker:
 - **Asynkron** – Overføring regnskapspostene fra underfinans til økonomimodulen planlegges øyeblikkelig. Økonomimodulbilaget vil bli registrert så snart ressurser er ledige for å behandle forespørselen på serveren.
 - **Planlagt bunke** – Regnskapspostene fra underfinans som må overføres, legges til i behandlingskøen i økonomimodulen. Oppføringene i køen behandles i den rekkefølgen de mottas i. Hvert økonomimodulbilag oppdaterer kontoene på det planlagte tidspunktet hvis ressurser er ledige for å behandle den satsvise jobben på serveren.
 
-I versjon 10.0.8 ble det gjort forbedringer for å forbedre ytelsen til **Asynkron**-alternativet. Denne funksjonen aktiveres under funksjonsnavnet **Ytelsesoptimalisering for overføring av underfinans til økonomimodul**.
+Forbedringer ble det gjort for å forbedre ytelsen til **Asynkron**-alternativet. Denne funksjonen aktiveres under funksjonsnavnet **Ytelsesoptimalisering for overføring av underfinans til økonomimodul**.
 
 Funksjonaliteten for asynkron overføring av underfinansbunker bidrar til å forbedre overføringen av data fra underregnskapet til økonomimodulen. Ved å gruppere sett med mindre transaksjoner og overføre transaksjonene i grupper, behandler funksjonaliteten transaksjoner mer effektivt. Når transaksjoner grupperes, brukes ressursene på den satsvise serveren mer effektivt.
 

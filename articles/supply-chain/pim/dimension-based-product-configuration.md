@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8811d4a43dba05e63b270893600a622527834901
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 9ba11a561f320a7f4e787e4fe3f4e6f4fb88bbfb
+ms.sourcegitcommit: ca73177dedf40df16860eaf88b1c701c61992028
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982933"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9754117"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>Oversikt over dimensjonsbasert produktkonfigurasjon
 
@@ -74,7 +74,7 @@ Den naturlige sekvensen i utviklingen av en produktmodell for et dimensjonsbaser
 
 Teknologien for dimensjonsbasert konfigurasjon passer best for produkter med begrenset varians og kombinasjonen av de standard produktdimensjonene størrelse, farge, stil, og konfigurasjon er ikke egnet til å identifisere en bestemt produktvariant. Et eksempel kan være sykkel med rammehøyde, hjulstørrelse, bremstyper og ulike gir.
 
-### <a name="next-step"></a>Neste trinn 
+### <a name="next-step"></a><a name="sequence"></a>Neste trinn
 
 Følgende åtte oppgavelinjer er oppført i den rekkefølgen du skal fylle dem ut. 
 

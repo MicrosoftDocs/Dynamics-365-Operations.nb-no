@@ -2,49 +2,49 @@
 title: Registrere og postere en etterdatert sjekk for en kunde
 description: Du kan registrere informasjon i en etterdatert sjekk fra en kunde.
 author: kweekley
-ms.date: 10/26/2017
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 125aed2f2d43619e56e323519b3fa23a87c4edad
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7f89adfc3055da346cfe9b6951076094b133c842
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727545"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779723"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrere og postere en etterdatert sjekk for en kunde
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan registrere informasjon i en etterdatert sjekk fra en kunde. Du kan også postere den etterdaterte sjekken og generere finanstransaksjoner.   Fullfør følgende oppgaver før du registrerer og posterer en etterdatert sjekk fra en kunde:   * Definer etterdaterte sjekker på siden Kontant- og bankbehandling * Definer en betalingsmåte for etterdaterte sjekker   Rollen for denne prosedyren er Kasserer. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
+Du kan registrere informasjon i en etterdatert sjekk fra en kunde. Du kan også postere den etterdaterte sjekken og generere finanstransaksjoner. Fullfør følgende oppgaver før du registrerer og posterer en etterdatert sjekk fra en kunde:  * Definer etterdaterte sjekker på siden Kontant- og bankbehandling * Definer en betalingsmåte for etterdaterte sjekker   Rollen for denne prosedyren er Kasserer. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 
-1. Gå til Kunder > Betalinger > Betalingsjournal.
-2. Klikk Ny.
-3. Skriv inn en verdi i Navn-feltet.
-4. Klikk Linjer.
+1. Gå til **Kunder > Betalinger > Betalingsjournal**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i **Navn**-feltet.
+4. Klikk **Linjer**.
 5. Merk den valgte raden i listen.
-6. Angi de ønskede verdiene i Konto-feltet.
-7. Angi et tall i Kredit-feltet.
+6. Angi de ønskede verdiene i **Konto**-feltet.
+7. Angi et tall i **Kredit**-feltet.
     * Angi beløpet i den etterdaterte sjekken.  
-8. Klikk kategorien Betaling.
-9. Skriv inn en verdi i Betalingsmåte-feltet.
+8. Klikk på fanen **Betaling**.
+9. Skriv inn en verdi i **Betalingsmåte**-feltet.
     * Velge betalingsmåten for den etterdaterte sjekken.  
-10. Velg kategorien Etterdaterte sjekker.
-11. Angi en dato i feltet Forfallsdato.
+10. Velg kategorien **Etterdaterte sjekker**.
+11. Angi en dato i feltet **Forfallsdato**.
     * Angi datoen når den etterdaterte sjekken forfaller til betaling.  
-12. Angi en verdi i feltet Avdeling av utstedende bank.
+12. Angi en verdi i feltet **Avdeling av utstedende bank**.
     * Angi bankdetaljene for den etterdaterte sjekken.  
-13. Skriv inn en verdi i feltet for sjekknummer.
-14. Angi en verdi i feltet Navn på utstedende bank.
+13. Skriv inn en verdi i feltet for **Sjekknummer**.
+14. Angi en verdi i feltet **Navn på utstedende bank**.
     * Angi bankdetaljene for den etterdaterte sjekken.  
-15. Klikk Poster.
+15. Klikk på **Poster**.
 16. Lukk siden.
 
 

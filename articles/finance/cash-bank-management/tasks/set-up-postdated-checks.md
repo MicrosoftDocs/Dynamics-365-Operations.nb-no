@@ -2,23 +2,23 @@
 title: Definere etterdaterte sjekker
 description: Denne artikkelen forklarer hvordan du angir om du vil postere journaloppføringer for etterdaterte sjekker og hvilke posteringsjournaler som skal brukes til å slette oppføringer og leverandørbetalinger.
 author: kweekley
-ms.date: 08/29/2018
+ms.date: 11/15/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e045648230aba7965ed68fbc499f73e077caceed
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e7172dd56113de23d841fe59ed9785471e90ed1f
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8870314"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779616"
 ---
 # <a name="set-up-postdated-checks"></a>Definere etterdaterte sjekker
 
@@ -32,33 +32,33 @@ Rollen til denne prosedyren er kasserer. Denne fremgangsmåten bruker demonstras
 
 
 ## <a name="set-up-postdated-checks"></a>Definere etterdaterte sjekker
-1. Gå til Kontant- og bankbehandling > Oppsett > Parametere for bankstyring.
-2. Velg kategorien Etterdaterte sjekker.
-3. Merk av eller fjern merket i avmerkingsboksen Aktiver etterdaterte sjekker.
-4. Merk av eller fjern merket i avmerkingsboksen Poster journaloppføringer for etterdaterte sjekker.
-5. Angi ønskede verdier i feltet Avregningskonto for utstedte sjekker.
-6. Angi ønskede verdier i feltet Avregningskonto for mottatte sjekker.
-7. Skriv inn en verdi i feltet Økonomijournal for klarering av oppføringer.
-8. Skriv inn en verdi i feltet Overfør etterdaterte sjekker til denne leverandørbetalingsjournalen.
-9. Angir ønskede verdier feltet Clearingkonto for kildeskatt.
-10. Klikk Lagre.
+1. Gå til **Kontant- og bankbehandling > Oppsett > Parametere for bankstyring**.
+2. Velg kategorien **Etterdaterte sjekker**.
+3. Merk av eller fjern merket i avmerkingsboksen **Aktiver etterdaterte sjekker**.
+4. Merk av eller fjern merket i avmerkingsboksen **Poster journaloppføringer for etterdaterte sjekker**.
+5. Angi ønskede verdier i feltet **Avregningskonto for utstedte sjekker**.
+6. Angi ønskede verdier i feltet **Avregningskonto for mottatte sjekker**.
+7. Skriv inn en verdi i feltet **Økonomijournal for klarering av oppføringer**.
+8. Skriv inn en verdi i feltet **Overfør etterdaterte sjekker til denne leverandørbetalingsjournalen**.
+9. Angir ønskede verdier feltet **Clearingkonto for kildeskatt**.
+10. Klikk på **Lagre**.
 11. Lukk siden.
-12. Gå til Leverandører > Betalingsoppsett > Betalingsmåter.
-13. Klikk Ny.
-14. Skriv inn en verdi i Betalingsmåte-feltet.
-15. Velg alternativet Etterdatert sjekklareringspostering for å indikere at sjekkbeløpet posteres til en avregningskonto.
-16. Velg Bank i feltet Kontotype.
+12. Gå til **Leverandører > Betalingsoppsett > Betalingsmåter**.
+13. Klikk på **Ny**.
+14. Skriv inn en verdi i **Betalingsmåte**-feltet.
+15. Velg alternativet **Etterdatert sjekklareringspostering** for å indikere at sjekkbeløpet posteres til en avregningskonto.
+16. Velg **Bank** i feltet **Kontotype**.
     * Motkontoen for betalingsmetoden vil være en bank.  
-17. Angi ønskede verdier i feltet Betalingskonto.
+17. Angi ønskede verdier i feltet **Betalingskonto**.
     * Velg bankkontoen som brukes til å trekke fakturabeløpet.  
-18. Klikk på Lagre.
+18. Klikk på **Lagre**.
 19. Lukk siden.
 > [!NOTE]
 > Hvis du vil postere en etterdatert sjekk til en bankkonto når øktdatoen er senere enn eller lik forfallsdatoen, må du aktivere funksjonen for **Validering av modenhetsdato for postering av betalingsjournal med etterdaterte sjekker til bankkonto**. Ved hjelp av denne funksjonen kan du postere betalingsjournaler for leverandører eller kunder med etterdaterte sjekker når øktdatoen er senere enn eller lik forfallsdatoen.
 > 
 > Når du definerer **Betalingsmåte** (**Leverandør > Betalingsoppsett > Betalingsmåter**), må du ikke fylle ut **Mellomkonto**. I dette tilfellet blir motkontoen fylt ut med bankkontoen, som er definert i **Betalingsmåte**.
 >  
-> Når funksjonen er aktivert og øktdatoen er tidligere enn forfallsdatoen, vises følgende feilmelding ved postering av en betalingsjournal: "Forfallsdatoen må være tidligere eller lik øktdatoen hvis motkontotypen er Bank". Hvis funksjonen ikke er aktivert, kan du postere en betalingsjournal med en etterdatert sjekk når øktdatoen er tidligere enn modenhetsdatoen.
+> Når funksjonen er aktivert og øktdatoen er tidligere enn forfallsdatoen, vises følgende feilmelding ved postering av en betalingsjournal: **Forfallsdatoen må være tidligere eller lik øktdatoen hvis motkontotypen er Bank**. Hvis funksjonen ikke er aktivert, kan du postere en betalingsjournal med en etterdatert sjekk når øktdatoen er tidligere enn modenhetsdatoen.
 > Denne funksjonen er tilgjengelig i versjon 10.0.21 eller senere.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

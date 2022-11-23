@@ -2,24 +2,19 @@
 title: Oversikt over vurderinger og anmeldelser
 description: Denne artikkelen dekker vurderinger og omtaler i Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/01/2019
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: ''
-ms.search.industry: ''
-ms.openlocfilehash: 612a3ca480049febac352ed9215ec9de83bbecf6
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 1f0d3ed5d95ad49cb09cf1f89d0f4c8c07620b92
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9269007"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785156"
 ---
 # <a name="ratings-and-reviews-overview"></a>Oversikt over vurderinger og anmeldelser
 
@@ -42,6 +37,11 @@ Løsningen for vurderinger og omtaler i Dynamics 365 Commerce bruker Azure Cogni
 Løsningen for vurderinger og omtaler inneholder kontrollprogrammer som viser vurderingssammendrag i produktlister, i søkeresultater, på produktdetaljsiden og andre steder. Kontrollprogrammene viser fullstendige vurderingslister, og de gir også alternativer for sortering og filtrering.
 
 Løsningen for vurderinger og omtaler inneholder også en forretningsintelligensmal som inkluderer et sett med målinger for å gi innsikt i vurderinger og omtaler. Data for vurderinger og omtaler kan eksporteres for videre analyse.
+
+Følgende video gir en oversikt over vurderinger og omtaler i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wS]
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

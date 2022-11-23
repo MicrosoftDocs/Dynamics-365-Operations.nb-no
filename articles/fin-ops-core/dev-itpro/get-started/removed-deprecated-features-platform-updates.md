@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2eec4dd71baef54877b4139a331288bf37f4960
-ms.sourcegitcommit: e4b6521337dfff3515f70086b0125d4c23308c71
+ms.openlocfilehash: 7d74efe7aa4f3a30c116253d647b9d7bec3b508d
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9262306"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785106"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -51,7 +51,7 @@ Som en del av arbeidsinnsatsen [One Dynamics One Platform](/dynamics365-release-
 | Serviceforespørsler | Nei | Ja | Ja, [distribusjoner av selvbetjening](../deployment/infrastructure-stack.md) |
 | SharePoint-integrering | Ja | Ja | Nei |
 | Konfigurasjons- og databehandling | Nei | Ja | Nei |
-| Prosessdatapakker | Nei | Ja | Ja, rammeverk for dataimport/-eksport (DIXF) |
+| Prosessdatapakker | Nei | Ja | Ja: [Rammeverk for dataimport/-eksport (DIXF)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job) |
 | Miljøoppgradering | Nei | Ja | Ja, [One Version](../lifecycle-services/oneversion-overview.md)-serviceoppdateringer er tilgjengelige. |
 | Infrastrukturberegner | Ja | Nei | Nei |
 | Lisensberegner | Ja | Nei | Nei |
@@ -71,10 +71,10 @@ Som en del av arbeidsinnsatsen [One Dynamics One Platform](/dynamics365-release-
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Vi fjerner følgende liste over cipher-serier for å overholde nåværende sikkerhetsprotokoller.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Erstattet med en annen funksjon?**   | Fra og med 30. november 2022 kan kunder bare bruke standard [cipher-serier](/power-platform/admin/server-cipher-tls-requirements). Denne endringen påvirker klientene og serverne dine som kommuniserer med serverne våre, for eksempel kan det påvirke tredjepartsintegreringene dine som ikke følger standard cipher-serier. |
+| **Erstattet med en annen funksjon?**   | Fra og med 31. januar 2023 kan kunder bare bruke standard [cipher-serier](/power-platform/admin/server-cipher-tls-requirements). Denne endringen påvirker klientene og serverne dine som kommuniserer med serverne våre, for eksempel kan det påvirke tredjepartsintegreringene dine som ikke følger standard cipher-serier. |
 | **Berørte produktområder**         | Finance and Operations-apper |
 | **Distribusjonsalternativ**              | Skydistribusjoner |
-| **Status**                         | Avskrevet. Kundene må oppgradere serverne før 30. november 2022. Hvis du vil ha mer informasjon om hvordan du konfigurerer TLS Cipher Suite-ordren, kan du se [Administrer Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
+| **Status**                         | Avskrevet. Kundene må oppgradere serverne før 31. januar 2023. Hvis du vil ha mer informasjon om hvordan du konfigurerer TLS Cipher Suite-ordren, kan du se [Administrer Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
 ## <a name="feature-deprecation-effective-june-2022"></a>Funksjonsavvik gjelder fra juni 2022

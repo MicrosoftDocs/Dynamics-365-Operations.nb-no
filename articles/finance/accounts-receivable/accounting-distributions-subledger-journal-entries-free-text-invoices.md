@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e2b6d75034c06704cad4cbc800ce3311ef5330e
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: f5120c4e75e821776201d5add2d498feb94d0297
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8712293"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778418"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Regnskapsdistribusjoner og underfinansoppføringer for fritekstfakturaer
 
@@ -30,9 +30,9 @@ Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede 
 
 ## <a name="accounting-distributions"></a>Regnskapsdistribusjoner
 
-Du kan bruke følgende knapper på Fritekstfaktura-siden for å vise, og eventuelt endre, regnskapsdistribusjonene for hvert beløp i fritekstfakturaen.
+Du kan bruke følgende knapper på **Fritekstfaktura**-siden for å vise, og eventuelt endre, regnskapsdistribusjonene for hvert beløp i fritekstfakturaen.
 
--   **Fordel beløp** – Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer, for eksempel avgifter eller gebyrer. Du kan også vise og endre regnskapsdistribusjonene for den underordnede linjen direkte fra Mva-transaksjoner- eller Tilleggstransaksjoner-siden.
+-   **Fordel beløp** – Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer, for eksempel avgifter eller gebyrer. Du kan også vise og endre regnskapsdistribusjonene for den underordnede linjen direkte fra siden **Mva-transaksjoner** eller **Tilleggstransaksjoner**.
     -   Endre fritekstfakturahodebeløp, for eksempel tillegg eller avrundingsbeløp for valuta.
     -   Endre fritekstfakturalinjebeløp.
 -   **Vis distribusjoner** – Vis regnskapsdistribusjonene for alle linjer i dokumentet. Du kan ikke endre regnskapsdistribusjonene fra denne visningen.
@@ -89,7 +89,7 @@ Når du registrerer en fritekstfaktura, fordeles hvert beløp på følgende måt
 </tr>
 <tr class="odd">
 <td>Rabattbeløp for fritekstfaktura</td>
-<td>Hovedkontoen for kunderabattfelt på Kontantrabatt-siden.</td>
+<td>Hovedkontoen for Kunderabatt-felt på Kontantrabatt-siden.</td>
 <td><ol>
 <li>Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</li>
 <li>Hvis hovedkontoen ikke er en tildelingskonto, bruk standardmalen for finansdimensjon på fritekstfakturalinjen.</li>
@@ -120,7 +120,7 @@ Når du registrerer en fritekstfaktura, fordeles hvert beløp på følgende måt
 </table>
 
 ## <a name="distributing-taxes"></a>Distribusjonsavgifter
-Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet. Hvis du vil beregne merverdiavgift, må du fullføre en av de følgende oppgavene i Fritekstfaktura-skjemaet:
+Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet. Hvis du vil beregne merverdiavgift, må du fullføre en av de følgende oppgavene i **Fritekstfaktura**-siden:
 -   Vis merverdiavgiften.
 -   Vis fakturatotalen.
 -   Vis kontantstrømmen.

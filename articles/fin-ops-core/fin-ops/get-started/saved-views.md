@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 6faf71ec5d14584034f9107c33ccce1cd1d393c7
-ms.sourcegitcommit: c98d55a4a6e27239ae6b317872332f01cbe8b875
+ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "9220340"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757228"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -107,7 +107,7 @@ Når du oppretter en ny visning (ved hjelp av **Lagre som**-handling), kan du gj
 
 Dialogboksen **Behandle mine visninger** gir deg grunnleggende vedlikeholdsfunksjoner for personlige visninger og rekkefølgen på visningene i visningsvelgeren. Hvis du vil åpne denne siden, velger du visningsnavnet for å åpne rullegardinmenyen, velger **Mer** og deretter **Behandle mine visninger**.
 
-**Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser delen **Mine visninger** i dialogboksen **Behandle mine visninger** de tilgjengelige visningene for siden i deler. Alle visninger som er spesifikke for gjeldende juridiske enhet, vises i sin egen del. Delen **Globale visninger** vises alltid, slik at du kan styre visningene som er tilgjengelige for siden, i alle juridiske enheter. 
+Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser delen **Mine visninger** i dialogboksen **Behandle mine visninger** de tilgjengelige visningene for siden i deler. Alle visninger som er spesifikke for gjeldende juridiske enhet, vises i sin egen del. Delen **Globale visninger** vises alltid, slik at du kan styre visningene som er tilgjengelige for siden, i alle juridiske enheter. 
 
 Hvis du vil ha en liste over tilgjengelige visninger for denne siden, er følgende sett med handlinger tilgjengelige.
 
@@ -138,9 +138,9 @@ Hvis du vil publisere en visning, gjør du følgende:
 
 1. Opprett og lagre en personlig kopi av visningen du vil publisere. 
 2. Når den aktuelle visningen er lastet, velger du visningsnavnet for å åpne rullegardinmenyen for visningsvalg. 
-3. Velg **Mer**-knappen, og velg deretter **Publiser**. Dialogboksen Publiser åpnes.
+3. Velg **Mer**-knappen, og velg deretter **Publiser**. Dialogboksen **Publiser** åpnes.
 4. Angi et navn for visningen. Navnet du angir, er navnet som brukeren som mottar denne visningen, vil se i visningsvelgerne. Navnene på publiserte visninger for en side må være unike. Ingen like navn er tillatt, selv om listen over roller eller judiriske enheter som visningene brukes på, varierer.
-5. **Oppdatering 10.0.17 eller nyere:** Hvis funksjonen **(Forhåndsversjon) Oversettelsesstøtte for organisasjonsvisninger** er aktivert, kan du legge til oversettelser for visningsnavnet på så mange språk som organisasjonen krever, ved å velge **Oversettelser**-knappen ved siden av **Navn**-feltet. Visningsnavnet vises deretter for brukere på det gjeldende språket deres. Du kan også angi standardspråket for å angi oversettelsen som skal vises for brukere som kjører språk som det ikke er definert noen oversettelse for.
+5. Hvis funksjonen **Oversettelsesstøtte for organisasjonsvisninger** er aktivert, kan du legge til oversettelser for visningsnavnet på så mange språk som organisasjonen krever, ved å velge **Oversettelser**-knappen ved siden av **Navn**-feltet. Visningsnavnet vises deretter for brukere på det gjeldende språket deres. Du kan også angi standardspråket for å angi oversettelsen som skal vises for brukere som kjører språk som det ikke er definert noen oversettelse for.
 5. Valgfritt: Angi en beskrivelse for visningen, slik at brukere som får denne visningen, bedre kan forstå formålet med den. 
 6. Avgjør om visningen skal publiseres som standardvisning for de valgte brukerne. Når en visning blir gjort til standardvisning, ser brukerne den neste gang de åpner målsiden. Den enkle, globale standardvisningen for hver målbruker vil bli endret. Brukerne kan imidlertid fremdeles endre standardvisningen sin etter at publiseringen har skjedd.
 
@@ -150,9 +150,10 @@ Hvis du vil publisere en visning, gjør du følgende:
     > - Hvis du publiserer en visning som standardvisning for noen eller alle juridiske enheter, skjer følgende:
     >
     >    - Hvis bare basisfunksjonen **Lagrede visninger** er aktivert, endres den enkelte, globale standardvisningen for hver målbruker. 
-    >    - **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, og du publiserer visningen i et delsett av juridiske enheter, endres standardvisningen for disse juridiske enhetene for hver målbruker.
+    >    - Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, og du publiserer visningen i et delsett av juridiske enheter, endres standardvisningen for disse juridiske enhetene for hver målbruker.
     >
     > - Hvis en bruker har roller der flere visninger publiseres som standardvisningen, brukes den siste visningen som ble publisert, som brukerens standardvisning. 
+    > - Publisering vil ikke fungere for rolletilordninger som er gjort ved hjelp av AAD-grupper. 
 
 8. Legg til sikkerhetsrollene som samsvarer med brukerne som målrettes av denne visningen. 
 9. Avgjør om du vil publisere visningen til de underordnede rollene for hver sikkerhetsrolle som er valgt. Hvis du gjør dette, merker du av for **Inkluder underordnede roller** i raden for de aktuelle sikkerhetsrollene. Vær oppmerksom på at denne avmerkings boksen ikke er tilgjengelig for roller som ikke har underordnede roller.
@@ -162,7 +163,7 @@ Hvis du vil publisere en visning, gjør du følgende:
     > Vær oppmerksom på følgende atferd hvis du publiserer en visning til en spesifikk juridisk enhet, men når du ikke publiserer denne visningen som standardvisning.
     >
     > - Hvis bare basisfunksjonen **Lagrede visninger** er aktivert, viser brukerens visningsvelger for siden først visningen bare for de angitte juridiske enhetene. Når visningen er lastet inn for første gang, vil visningsvelgeren for siden alltid vise den, uavhengig av den juridiske enheten.
-    > - **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren kun visningen for de angitte juridiske enheten.
+    > - Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren kun visningen for de angitte juridiske enheten.
 
 11. Velg **Publiser**.
 
@@ -259,7 +260,7 @@ For sider med store visningsvelgere (både personlige tilpasninger og spørringe
 Hvis du publiserer en visning til en spesifikk juridisk enhet, men når du ikke publiserer denne visningen som standardvisning, inntreffer følgende atferd:
 
 - Hvis bare basisfunksjonen **Lagrede visninger** er aktivert, viser brukerens visningsvelger for siden først visningen bare for de angitte juridiske enhetene. Når visningen er lastet inn for første gang, vil visningsvelgeren for siden alltid vise den, uavhengig av den juridiske enheten. Dette skjer fordi brukere får sin egen personlige kopi av den publiserte visningen når den lastes inn, og personlige visninger er globale.
-- **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren kun visningen for de angitte juridiske enheten. Dette skjer fordi funksjonen gjør det mulig å koble visninger (inkludert personlige visninger) til bestemte juridiske enheter.
+- Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren kun visningen for de angitte juridiske enheten. Dette skjer fordi funksjonen gjør det mulig å koble visninger (inkludert personlige visninger) til bestemte juridiske enheter.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

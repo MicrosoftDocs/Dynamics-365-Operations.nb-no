@@ -2,7 +2,7 @@
 title: Lukk masseregnskapsperiode
 description: Denne artikkelen viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen.
 author: aprilolson
-ms.date: 08/16/2019
+ms.date: 11/16/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18e2418777e4f8a5f10b946d7cdc217e5e264318
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8a85d512842b27f2d74507be16a8f2819f483e0d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872448"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779833"
 ---
 # <a name="mass-financial-period-close"></a>Lukk masseregnskapsperiode
 
@@ -26,7 +26,11 @@ ms.locfileid: "8872448"
 
 Denne artikkelen viser hvordan du setter en periode på vent eller permanent lukker en periode for mer enn en juridisk enhet om gangen. I tillegg viser oppgaven hvordan du begrenser brukergruppepostering til spesifikke moduler.
 
-1. Gå til **Økonomimodul > Lukket periode > Finanskalendere** i navigasjonsruten. Vær oppmerksom på at listen over juridiske enheter som vises, er avhengig av regnskapskalenderen som er valgt på siden. Bare juridiske enheter som bruker den valgte regnskapskalenderen, vises.
+1. Gå til **Økonomimodul > Lukket periode > Finanskalendere** i navigasjonsruten. 
+
+>[!NOTE]
+> Listen over juridiske enheter som vises, er avhengig av regnskapskalenderen som er valgt på siden. Bare juridiske enheter som bruker den valgte regnskapskalenderen, vises.
+
 2. Velg **Rediger**.
 3. Velg perioden du vil endre statusen for.
 4. Velg de juridiske enhetene du vil oppdatere statusen for. Du kan raskt velge alle juridiske enheter ved merke av øverst til venstre i rutenettet.  

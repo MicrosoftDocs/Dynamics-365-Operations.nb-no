@@ -2,24 +2,24 @@
 title: Avstemme en bankkonto
 description: Denne artikkelen beskriver hvordan du avstemmer en bankkonto.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d36ff753d368bbbe6944aa5ae5010541ee92156d
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151259"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779534"
 ---
 # <a name="reconcile-a-bank-account"></a>Avstemme en bankkonto
 
@@ -29,27 +29,27 @@ Når du mottar et bankkontoutdrag, bør du periodisk avstemme juridisk enhet ban
 
 Du kan ikke avstemme et bankkontoutdrag med en bankkonto hvis noen av sjekkene eller betalingene med betalingsbilag på kontoutdraget for øyeblikket har statusen **Venter på annullering**. Etter at en kontrollør har postert eller avvist en sjekktilbakeføring eller annullert et betalingsbilag, er ikke statusen lenger **Venter på annullering**, og du kan da avstemme bankkontoen.
 
-1.  Gå til **Kontant- og bankbehandling** \> **Bankkontoer** \> **Bankkontoer**. Velg bankkontoen som skal avstemmes med bankkontoutdraget, og velg **Avstem** > **Kontoavstemming**.
+1. Gå til **Kontant- og bankbehandling** \> **Bankkontoer** \> **Bankkontoer**. Velg bankkontoen som skal avstemmes med bankkontoutdraget, og velg **Avstem** > **Kontoavstemming**.
 
-2.  Angi informasjon i feltene **Bankkontoutdragsdato** og **Bankkontoutdrag**. I feltet **Sluttsaldo** kan du angi saldoen for bankkontoen slik den vises på bankkontoutdraget.
+2. Angi informasjon i feltene **Bankkontoutdragsdato** og **Bankkontoutdrag**. I feltet **Sluttsaldo** kan du angi saldoen for bankkontoen slik den vises på bankkontoutdraget.
 
-3.  Velg **Transaksjoner** for å åpne siden **Kontoavstemming**.
+3. Velg **Transaksjoner** for å åpne siden **Kontoavstemming**.
 
-4.  For hver transaksjon som er inkludert i bankkontoutdraget, merker du av for **Avstem** hvis beløpet i Dynamics 365 Finance tilsvarer beløpet på bankkontoutdraget. Du kan også angi eller endre verdien i feltet **Banktransaksjonstype**. Denne feltverdien er viktig på grunn av banktransaksjonsstatistikken og for enkelte rapporter.
+4. For hver transaksjon som er inkludert i bankkontoutdraget, merker du av for **Avstem** hvis beløpet i Dynamics 365 Finance tilsvarer beløpet på bankkontoutdraget. Du kan også angi eller endre verdien i feltet **Banktransaksjonstype**. Denne feltverdien er viktig på grunn av banktransaksjonsstatistikken og for enkelte rapporter.
     
 
-    > [!NOTE]
-    > <P>Ikke merk av for <STRONG>Avstemt</STRONG> for transaksjoner som ikke finnes på bankkontoutdraget. Disse transaksjonene vil fortsatt vises på denne siden til de blir avstemt mot et fremtidig bankkontoutdrag.</P>
-    > <P>Avmerkingsboksen <STRONG>Avstemt</STRONG> er ikke tilgjengelig hvis transaksjonen har statusen <STRONG>Venter på annullering</STRONG>. Det kan hende at transaksjoner har denne statusen hvis Finance er konfigurert slik at det krever at tilbakeføringer eller annulleringer må sendes til gjennomgang før de posteres. Etter at en kontrollør har postert eller avvist en sjekktilbakeføring eller annullert et betalingsbilag, er ikke statusen lenger <STRONG>Venter på annullering</STRONG>, og du kan da avstemme bankkontoen med bankkontoutdraget.</P>
+>[!NOTE]
+>Ikke merk av for **Avstemt** for transaksjoner som ikke finnes på bankkontoutdraget. Disse transaksjonene vil fortsatt vises på denne siden til de blir avstemt mot et fremtidig bankkontoutdrag.
+>Avmerkingsboksen **Avstemt** er ikke tilgjengelig hvis transaksjonen har statusen **Venter på annullering**. Det kan hende at transaksjoner har denne statusen hvis Finance er konfigurert slik at det krever at tilbakeføringer eller annulleringer må sendes til gjennomgang før de posteres. Etter at en kontrollør har postert eller avvist en sjekktilbakeføring eller annullert et betalingsbilag, er ikke statusen lenger **Venter på annullering**, og du kan da avstemme bankkontoen med bankkontoutdraget.
 
-    
-    For å merke av for **Avstemt** for et intervall med kontroller som alle vises på bankkontoutdraget, velger du **Merk sjekkintervall**, og deretter angir du intervallet.
+
+For å merke av for **Avstemt** for et intervall med kontroller som alle vises på bankkontoutdraget, velger du **Merk sjekkintervall**, og deretter angir du intervallet.
 
 5.  Hvis beløpet for en bankkontotransaksjon ikke samsvarer med beløpet for transaksjonen på kontoutdraget, angir du korreksjonsbeløpet i feltet **Korreksjonsbeløp**.
     
 
-    > [!NOTE]
-    > <P>Hvis regnskapsperioden til transaksjonen som skal rettes, er avsluttet, kan ikke feltet <STRONG>Korreksjonsbeløp</STRONG> brukes. Du må i stedet opprette en linje som har en transaksjonsdato som er i en åpen regnskapsperiode. I dette tilfellet må du legge til finansdimensjonene som ble brukt på den opprinnelige transaksjonen, og også mot hovedmotkontoen.</P>
+> [!NOTE]
+> Hvis regnskapsperioden til transaksjonen som skal rettes, er avsluttet, kan ikke feltet **Korreksjonsbeløp** brukes. Du må i stedet opprette en linje som har en transaksjonsdato som er i en åpen regnskapsperiode. I dette tilfellet må du legge til finansdimensjonene som ble brukt på den opprinnelige transaksjonen, og også mot hovedmotkontoen.
 
 
 

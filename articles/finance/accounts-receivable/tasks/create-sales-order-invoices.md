@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ceda837cae563dab68969cb9f05de113079d4495
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 3ff76eac54da6621d999d9b629fac920ba8de294
+ms.sourcegitcommit: 9c4638c4bb5b5f8adc7508542a0a2c3e1de5190c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8910265"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9778391"
 ---
 # <a name="create-sales-order-invoices"></a>Opprette salgsordrefakturaer
 
@@ -32,12 +32,12 @@ Denne artikkelen beskriver hvordan du fakturerer en salgsordre, inkludert fletti
 2. Velg en salgsordre fra listen. 
 3. Klikk på **Faktura > Generer > Faktura** i **handlingsruten**. Legg merke til at denne salgsordren har flere følgesedler tilknyttet. Den viser bare ordet *flere* i stedet for følgeseddelnummeret.  
 4. Utvid seksjonen **Parametere**.
-    - Postering må settes til Ja for å postere fakturaen. Du kan også slå av postering, og du kan bare skrive ut fakturaen. Du kan imidlertid oppnå samme resultat ved å opprette en proformafaktura i stedet for en faktura.  
+    - Postering må settes til **Ja** for å postere fakturaen. Du kan også slå av postering, og du kan bare skrive ut fakturaen. Du kan imidlertid oppnå samme resultat ved å opprette en proformafaktura i stedet for en faktura.  
     - Dette alternativet brukes for satsvise jobber. Spørringen kjøres når den satsvise jobben kjøres.
-5. Velg Etter i feltet **Skriv ut**.
+5. Velg **Etter** i feltet **Skriv ut**.
 6. Velg **Ja** for **Skriv ut faktura**. Utskriftsbehandling kan skrive ut flere eksemplarer av fakturaen, og også sende fakturaen via e-post som en PDF-fil.  
-7. Velg Summer i feltet **Skriv ut tillegg**.
-8. I feltet **Kontroller kredittgrense** velger du Saldo.
+7. Velg **Summer** i feltet **Skriv ut tillegg**.
+8. I feltet **Kontroller kredittgrense** velger du **Saldo**.
 9. Klikk på **Avbryt**.
 
 ## <a name="combine-orders-into-a-single-invoice"></a>Kombinere ordrer til én enkelt faktura
@@ -46,8 +46,8 @@ Denne artikkelen beskriver hvordan du fakturerer en salgsordre, inkludert fletti
 3. Velg flere åpne salgsordrer fra samme kunde.
 4. Klikk på **Faktura > Generer > Faktura** i **handlingsruten**.
 5. Utvid seksjonen **Parametere**.
-6. Velg Alle i **Antall**-feltet. Legg merke til at det finnes to fakturaer som er oppført i oversiktsdelen. Nå skal vi slå dem sammen til én enkelt faktura.  
-7. I feltet **Samleoppdatering for** velger du Fakturakonto.
+6. Velg **Alle** i **Antall**-feltet. Legg merke til at det finnes to fakturaer som er oppført i oversiktsdelen. Nå skal vi slå dem sammen til én enkelt faktura.  
+7. I feltet **Samleoppdatering for** velger du **Fakturakonto**.
 8. Klikk på **Ordne** for å slå sammen salgsordrene til én enkelt faktura. De to ordrene er nå slått sammen til én enkelt faktura.   
 9. Klikk på **Avbryt**.
 10. Klikk **Ja**.

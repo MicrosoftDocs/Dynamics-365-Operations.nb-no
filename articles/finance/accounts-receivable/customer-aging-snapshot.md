@@ -13,12 +13,12 @@ ms.author: mrolecki
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
 ms.search.form: ''
-ms.openlocfilehash: 88145cdccfe3f1d0d3de4e31dfa519b27df6550a
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: e4ccc8ac9b5374ca0713167a17b8704727c687fd
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643692"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775248"
 ---
 # <a name="customer-aging-snapshots"></a>Øyeblikksbilder av aldersfordeling for kunde 
 
@@ -31,9 +31,10 @@ Informasjon fra øyeblikksbilde av aldersfordeling vises på listesiden **Alders
 Arbeidsområdet **Kundekreditt og innkrevinger** viser også aldersfordeling for kunder. Hvis du vil ha mer informasjon, kan du se [Power BI-innholdet Behandling av kreditt og innkrevinger](credit-collections-power-bi.md).
 
 > [!NOTE]
-> For å redusere tiden som kreves for å opprette et øyeblikksbilde av aldersfordeling, kan du slå på følgende funksjoner i arbeidsområdet **Funksjonsbehandling**: **Forbedring av aldersfordelingsytelse** 
-> **Forbedring i aldersfordeling for kunde med kundepuljer**  
-> Når begge funksjonene er aktivert, kan **kundepuljene** brukes når du oppretter øyeblikksbildet av aldersfordeling. 
+> For å redusere tiden som kreves for å opprette et øyeblikksbilde av aldersfordeling, kan du slå på følgende funksjonener arbeidsområdet for **Funksjonsbehandling**. 
+> - **Forbedring av aldersfordelingsytelse** 
+> - **Forbedring i aldersfordeling for kunde med kundepuljer**  
+>Når begge funksjonene er aktivert, kan **kundepuljene** brukes når du oppretter øyeblikksbildet av aldersfordeling. 
 
 Når du oppretter et øyeblikksbilder av aldersfordeling for kunde , bruker du følgende felt til å angi informasjon om det:
 

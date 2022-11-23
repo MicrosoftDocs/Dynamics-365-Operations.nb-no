@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ad75439bf3dfa1ed33e35fa9cfee153012e9f60
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4c441d197957674d68c4c92b454a9dca91d76ea0
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8716810"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775196"
 ---
 # <a name="key-invoice-data-in-ap-using-a-vendor-invoice"></a>Hovedfakturadata i AP ved hjelp av en leverandørfaktura
 
@@ -67,8 +67,11 @@ Denne oppgaveveiledningen hjelper deg med å opprette en leverandørfaktura fra 
 16. Velg produktkvitteringen for lagervaren du har mottatt. Linjen med produktkvitteringen ble samsvart, men det er ikke samsvar mellom antall eller pris, slik at den mislykkes.  
 17. Angi et tall i **Enhetspris**-feltet. Nå som salgsprisen samsvarer, oppdateres statusen til Bestått. Hvis policyen tillater avvik, eller hvis samsvar bare er en advarsel, kan du fortsatt postere fakturaen.  
 18. Lukk siden.
-19. Klikk **Poster**.
-20. Lukk skjemaet. Legg merke til at bestillingen ikke lenger er oppført som mottatt, men ikke fakturert.  
+19. Klikk på **Poster**.
+20. Lukk siden. 
+
+>[!Note] 
+>Bestillingen er ikke lenger oppført som mottatt, men ikke fakturert.  
 
 
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f0609e333fb16ba189b6a971f88fbb5bf900fec
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bb563008f156e1bfa6e4e9a705e9170342719ce7
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8887984"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775175"
 ---
 # <a name="set-up-and-process-bridged-payments"></a>Definer og behandle mellombetalinger
 
 [!include [banner](../includes/banner.md)]
 
-En mellombetaling er en betaling som posteres til økonomimodulen i to trinn. Denne fremgangsmåten brukes vanligvis når betalingsmåten er angitt til **Bank**, og du må postere transaksjoner til bankkontoen bare når transaksjonen har tømt banken. Du kan imidlertid også bruke det for en finanskonto. I dette tilfellet flytter systemet beløpet fra en hovedkonto til en annen hovedkonto når mellomposteringen behandles.
+En mellombetaling er en betaling som posteres til økonomimodulen i to trinn. Denne fremgangsmåten brukes vanligvis når betalingsmåten er angitt til **Bank**, og du må postere transaksjoner til bankkontoen bare når transaksjonen har tømt banken. Du kan imidlertid også bruke det for en finanskonto. I dette tilfellet flyttes beløpet fra en hovedkonto til en annen hovedkonto når mellomposteringen behandles.
 
 Du kan opprette mellombetalinger fra enten Leverandør eller fra Kunder. Selv om denne artikkelen beskriver hvordan du konfigurerer mellompostering for kunder, er trinnene for leverandørtransaksjoner ganske like.
 

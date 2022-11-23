@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04c26eec8be61d60908bef67c75958287e7e1a01
-ms.sourcegitcommit: 85141b21ac90f3db1b378c21f9c7f3d8f74e182f
+ms.openlocfilehash: a0d1221e07f6dc4a5a99aa205c4a7f6fb367f000
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "9129520"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780502"
 ---
 # <a name="create-a-customer-invoice"></a>Opprette en kundefaktura
 
@@ -31,11 +31,10 @@ En **Kundefaktura for en salgsordre** er en regning som er knyttet til et salg, 
 En **Fritekstfaktura** er ikke relatert til en salgsordre. Den inneholder ordrelinjer som omfatter finanskontoer, fritekstbeskrivelser og et salgsbeløp som du angir. Du kan ikke legge inn et varenummer i denne fakturatypen. Du må legge inn riktige mva-opplysninger. En hovedkonto for salg er angitt i hver fakturalinje, som du kan distribuere til flere finanskontoer ved å klikke **Fordel beløp** på siden **Fritekstfaktura**. I tillegg posteres kundesaldoen til samlekontoen fra posteringsprofilen som brukes for fritekstfakturaen.
 
 Hvis du vil ha mer informasjon, kan du se:
-
-[Opprette fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
-[Opprette en mal for fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
-[Tilordne mal for fritekstfaktura til en kunde](tasks/assign-free-text-invoice-template-customer.md)
-[Generere og postere gjentakende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
+ - [Opprett fritekstfakturaer](../accounts-receivable/create-free-text-invoice-new.md)
+ - [Opprette en mal for fritekstfaktura](../accounts-receivable/create-free-text-invoice-template-new.md)
+ - [Tilordne mal for fritekstfaktura til en kunde](tasks/assign-free-text-invoice-template-customer.md)
+ - [Generere og postere gjentakende fritekstfakturaer](tasks/post-recurring-free-text-invoices.md)
 
 
 En **Proformafaktura** er en faktura som er klargjort som et estimat av de faktiske fakturabeløpene før fakturaen posteres. Du kan skrive ut en **Proformafaktura** for en kundefaktura for en salgsordre eller for en fritekstfaktura. 
@@ -89,7 +88,13 @@ Du kan konfigurere delingen av salgsordrekundefakturaer etter område eller leve
  - Velg alternativet **Deling basert på leveringsinformasjon for faktura** for å opprette én faktura per leveringsadresse for salgsordrelinje ved postering. 
 
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price-and-no-cost"></a>Poster til inntektskonto for salgsordrefakturalinjer som ikke har en pris og ingen kostnad
-Du kan oppdatere **Inntekt**-kontoen i **Økonomimodul** for salgsordrelinjer som ikke har noen pris og ingen kostnad. Hvis du vil definere eller vise denne informasjonen, kan du gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris og nullkostnad** på fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris og ingen kosntad. Hvis du velger dette alternativet, vil bilaget inneholde 0,00 oppføringstypene **Kundesaldo** og **Inntekt**. En inntektskonto er definert på parametersiden **Lagerpostering** i fanen for definisjon av **Salgsordre**-kontoen. Hvis dette alternativet ikke velges, posteres ikke linjer som har pris- eller kostnadsinformasjon, til **Inntekt**-kontoen. I stedet vil bilaget inneholde en oppføring på 0,00 for posteringstypen **Kundesaldo**.
+Du kan oppdatere **Inntekt**-kontoen i **Økonomimodul** for salgsordrelinjer som ikke har noen pris og ingen kostnad. 
+
+Slik definerer eller viser du denne informasjonen:
+1. Gå til parameteren **Poster til inntektskonto for salgsordrefakturalinjer med nullpris og nullkostnad** i fanen **Finans og merverdiavgift** på siden **Kundeparametere**. (**Kunder > Oppsett > Kundeparametere**). 
+2. Velg **Ja** for å oppdatere **Inntekt**-kontoen for salgsordrefakturalinjer som ikke har noen pris og ingen kosntad. 
+ - Hvis du velger dette alternativet, vil bilaget inneholde 0,00 oppføringstypene **Kundesaldo** og **Inntekt**. En inntektskonto er definert på parametersiden **Lagerpostering** i fanen for definisjon av **Salgsordre**-kontoen. 
+ - Hvis dette alternativet ikke er valgt, posteres ikke linjer som ikke har pris- eller kostnadsinformasjon, til **Inntekt**-kontoen. I stedet vil bilaget inneholde en oppføring på 0,00 for posteringstypen **Kundesaldo**.
 
 ## <a name="line-creation-sequence-number-information"></a>Informasjon om sekvensnummer for linjeoppretting
 Når du posterer kundefakturalinjer, har du muligheten til å opprette sekvensielle linjeopprettingsserienumre. Linjeopprettingssekvensnumre tilordnes under posteringsprosessen. Ved å tillate ikke-sekvensiell nummerering kan du få hjelp til å forbedre ytelsen til kundefakturapostering. Linjeopprettingsserienumre kan brukes av tredjepartsintegrering som forventer sekvensiell bestilling. Forhør deg med IT-avdelingen om eventuelle utvidelser som kan integreres med sekvensnumre for linjeoppretting.

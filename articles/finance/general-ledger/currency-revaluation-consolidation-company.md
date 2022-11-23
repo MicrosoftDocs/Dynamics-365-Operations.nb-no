@@ -2,7 +2,7 @@
 title: Revaluering av valuta i et konsolideringsfirma
 description: Denne artikkelen beskriver hvordan å revaluere valuta i et konsolideringsselskap.
 author: aprilolson
-ms.date: 10/02/2018
+ms.date: 10/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fbbc1d0a7ae5b7e288710c99a6af362b3db3d36
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: c05ef0d4d05d5113d3b858dafe49ee9c1c7211d9
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889011"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779669"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Revaluering av valuta i et konsolideringsfirma
 
@@ -39,31 +39,31 @@ Når du konsoliderer data fra én regnskapsvaluta til en annen, du må fortsatt 
 ## <a name="original-transactions"></a>Opprinnelige transaksjoner
 ### <a name="cash-receipt-transactions-in-usmf"></a>Kontantmottakstransaksjoner i USMF
 
-| Dato       | Finanskonto               | Valuta | Beløp |
+| Dato       | Finanskonto               | Valuta. | Beløp |
 |------------|------------------------------|----------|--------|
-| 11/10/2015 | 110110 – Kontant                | USD      | 500    |
-| 11/10/2015 | 130100 – Kunder | USD      | -500   |
+| 11/10/2020 | 110110 – Kontant                | USD      | 500    |
+| 11/10/2020 | 130100 – Kunder | USD      | -500   |
 
 ## <a name="exchange-rates"></a>Valutakurser
 
 | Fra valuta | Til valuta | Startdato | Valutakurs |
 |---------------|-------------|------------|---------------|
-| EUR           | USD         | 1/10/2015  | 200           |
-| EUR           | USD         | 1/11/2015  | 150           |
-| EUR           | USD         | 1/12/2012  | 100           |
+| EUR           | USD         | 1/10/2020  | 200           |
+| EUR           | USD         | 1/11/2020  | 150           |
+| EUR           | USD         | 1/12/2017  | 100           |
 
-## <a name="perform-the-consolidation-for-october-2015"></a>Utfør konsolideringen for oktober 2015
+## <a name="perform-the-consolidation-for-october-2020"></a>Utfør konsolideringen for oktober 2020
 ### <a name="balances-in-the-consolidation-company"></a>Saldoer i konsolideringsfirmaet
 
-| Finanskonto | Valuta | Beløp | Beregning    |
+| Finanskonto | Valuta. | Beløp | Beregning    |
 |----------------|----------|--------|----------------|
 | 110110         | EUR      | 250    | 500 USD × 50 %  |
 | 130100         | EUR      | -250   | -500 USD × 50 % |
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-november-30-2015"></a>Utfør valutarevaluering for kontoene fra 1. oktober 2015 til 30. november 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-november-30-2020"></a>Utfør valutarevaluering for kontoene fra 1. oktober 2020 til 30. november 2020
 ### <a name="balances-in-the-consolidation-company"></a>Saldoer i konsolideringsfirmaet
 
-| Finanskonto | Valuta | Beløp  | Beregning                        |
+| Finanskonto | Valuta. | Beløp  | Beregning                        |
 |----------------|----------|---------|------------------------------------|
 | 110110         | EUR      | 333.33  | Opprinnelig beløp 500 × 66,6667 %  |
 | 130100         | EUR      | -333,33 | Opprinnelig beløp -500 × 66,6667 % |
@@ -72,10 +72,10 @@ Når du konsoliderer data fra én regnskapsvaluta til en annen, du må fortsatt 
 
 Du vil se tilleggstransaksjoner for rapporteringsvalutabeløpene.
 
-## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2015-through-december-31-2015"></a>Utfør valutarevaluering for kontoene fra 1. oktober 2015 til 31. desember 2015
+## <a name="perform-currency-revaluation-for-the-accounts-from-october-1-2020-through-december-31-2020"></a>Utfør valutarevaluering for kontoene fra 1. oktober 2020 til 31. desember 2020
 ### <a name="balances-in-the-consolidation-company"></a>Saldoer i konsolideringsfirmaet
 
-| Finanskonto | Valuta | Beløp  | Beregning                                          |
+| Finanskonto | Valuta. | Beløp  | Beregning                                          |
 |----------------|----------|---------|------------------------------------------------------|
 | 110110         | EUR      | 500,00  | Opprinnelig beløp 500 × 1                           |
 | 130100         | EUR      | -500,00 | Opprinnelig beløp -500 × 1                          |

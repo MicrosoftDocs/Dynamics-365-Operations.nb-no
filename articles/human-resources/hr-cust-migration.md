@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63b08a8493702cf319aa078ef6aa787e2094be87
-ms.sourcegitcommit: 088a7b5eb9a3b68710dfe012abf4c24776978750
+ms.openlocfilehash: 4df9a68ea0128378224bf77bd66423fd2e13fa55
+ms.sourcegitcommit: e5b290bac7e8f468167caa1a5607aac6eac9aaea
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "9733460"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760369"
 ---
 # <a name="dynamics-365-human-resources-customer-migration"></a>Dynamics 365 Human Resources-kundeoverføring
 
@@ -38,13 +38,12 @@ Kundeoverføring er en «løft-og-flytt-overføring» (flytting) av en kundedata
 
 ### <a name="dataverse-environment-backup-sandbox"></a>Sikkerhetskopi av Dataverse-miljø (sandkasse)
 
-1. Valgfritt, men anbefalt: Oppdater det eksisterende Human Resources-sandkassemiljøet ved å bruke en kopi av Human Resources-produksjonsmiljøet.
-2. [Opprett et nytt Dataverse-miljø](/power-platform/admin/create-environment#create-an-environment-with-a-database) ved å bruke administrasjonssenteret for Power Platform.
+ - Valgfritt, men anbefalt: Oppdater det eksisterende Human Resources-sandkassemiljøet ved å bruke en kopi av Human Resources-produksjonsmiljøet.
+ - Opprett et nytt Dataverse-miljø ved å bruke administrasjonssenteret for Power Platform.
+ - Kopier det eksisterende Dataverse-miljøet, som er koblet til den frittstående Human Resources-appen, til miljøet du opprettet i det forrige trinnet.
 
-    > [!NOTE]
-    > Når du legger til en database, sørger du for at alternativet **Aktiver Dynamics 365-apper** er satt til **Ja**.
-
-3. [Kopier det eksisterende Dataverse-miljøet](/power-platform/admin/copy-environment), som er koblet til den frittstående Human Resources-appen, til miljøet du opprettet i det forrige trinnet.
+> [!NOTE]
+> Når du legger til en database, sørger du for at alternativet **Aktiver Dynamics 365-apper** er satt til **Ja**. Hvis du vil ha detaljert informasjon , kan du se [Klargjøre et Power Platform-miljø](hr-cust-migration.md#prepare-a-power-platform-environment)
 
 ### <a name="dataverse-capacity"></a>Dataverse-kapasitet
 
@@ -89,9 +88,9 @@ Etter at et nytt Lifecycle Services-prosjekt er opprettet, og prosjektinnføring
 #### <a name="prepare-a-power-platform-environment"></a>Klargjør et Power Platform-miljø
 
 > [!NOTE]
-> Dette trinnet gjelder bare for overføring av sandkassemiljøet. Når du overfører produksjonsmiljøet, overføres det eksisterende miljøet i administrasjonssenteret for Power Platform som er knyttet til produksjonsmiljøet.
+> Dette trinnet gjelder bare for overføring av sandkassemiljøet. Når du overfører produksjonsmiljøet, overføres det eksisterende miljøet i administrasjonssenteret for Power Platform som er knyttet til produksjonsmiljøet. Når du legger til en database, sørger du for at knappen **Aktiver Dynamics 365-apper** er satt til **Ja**. 
 
-- [Opprett et Power Platform-miljø](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) i administrasjonssenteret for Power Platform som skal brukes til overføring av sandkasse, eller velg et eksisterende miljø.
+- [Opprett et miljø med en database](/power-platform/admin/create-environment#create-an-environment-with-a-database) i administrasjonssenteret for Power Platform som skal brukes til overføring av sandkasse, eller velg et eksisterende miljø.
 - [Kopier et miljø](/power-platform/admin/copy-environment) for å oppdatere Power Platform-miljøet som brukes til tilordning.
 
 #### <a name="migrate-the-sandbox-environment"></a>Overfør sandkassemiljøet

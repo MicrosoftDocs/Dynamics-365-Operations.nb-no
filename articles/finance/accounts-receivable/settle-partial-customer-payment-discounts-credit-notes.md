@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14564
 ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a5ecf69c83805834c01c03d0af9b7b8c5310920
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 44f64b9b9cd4fa65d17ba30fb87a688411becd5a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725100"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780489"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Utligne en delvis kundebetaling som har rabatter på kreditnotaer
 
@@ -33,22 +33,22 @@ Fabrikam tillater kunder å ta kontantrabatter for delvise betalinger og også k
 ## <a name="invoice-and-credit-note"></a>Faktura/kreditnota
 Kunde 4035 har en faktura for 1000,00 og en kreditnota for 100,00. Hvert dokument har 1 prosent rabatt ved betaling innen 14 dager. Magnus kan vise denne informasjonen på siden **Kundetransaksjoner**.
 
-| Bilag    | transaksjonstype | Dato      | Faktura  | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo  | Valuta |
+| Bilag    | transaksjonstype | Dato      | Faktura  | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo  | Valuta. |
 |------------|------------------|-----------|----------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10050  | Faktura          | 28/6/2015 | 10050    | 1 000,00                             |                                       | 1 000,00 | USD      |
-| CCRN-10050 | Kreditnota      | 28/6/2015 | K-10050 |                                      | 100,00                                | -100,00  | USD      |
+| FTI-10050  | Faktura          | 28/6/2020 | 10050    | 1,000.00                             |                                       | 1,000.00 | USD      |
+| CCRN-10050 | Credit note      | 28/6/2020 | K-10050 |                                      | 100.00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Utligne en kreditnota med en faktura
 Magnus åpner siden **Utlign transaksjoner** fra **Kundetransaksjoner**-siden. Han kan bruke siden **Utligne transaksjoner** til å utligne fakturaen og kreditnotaen. Som en del av utligningsprosessen ser han kontantrabattdatoene og -beløpene. Han merker de to dokumentene og klikker deretter **Poster** for å utligne transaksjonene. Det er en rabatt på -1,00 på kreditnotaen, fordi Fabrikam tillater rabatter på kreditnotaer.
 
-| Merk     | Bruk kontantrabatt | Bilag    | Konto | Dato      | Forfallsdato  | Faktura  | Beløp i transaksjonsvaluta | Valuta | Beløp som skal utlignes |
+| Merk     | Bruk kontantrabatt | Bilag    | Konto | Dato      | Forfallsdato  | Faktura  | Beløp i transaksjonsvaluta | Valuta. | Beløp som skal utlignes |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
-| Valgt | Normal            | FTI-10050  | 4035    | 28/6/2015 | 28/7/2015 | 10050    | 1 000,00                       | USD      | 990.00           |
-| Valgt | Normal            | CCRN-10050 | 4035    | 28/6/2015 | 28/7/2015 | K-10050 | -100,00                        | USD      | -99.00           |
+| Valgt | Normal            | FTI-10050  | 4035    | 28/6/2020 | 28/7/2020 | 10050    | 1,000.00                       | USD      | 990.00           |
+| Valgt | Normal            | CCRN-10050 | 4035    | 28/6/2020 | 28/7/2020 | K-10050 | -100,00                        | USD      | -99.00           |
 
 Rabattinformasjonen vises nederst på siden **Utlign transaksjoner**.
 
-- **Kontantrabattdato**: 7/12/2015 
+- **Kontantrabattdato**: 7/12/2020 
 - **Kontantrabattbeløp**: -1,00     
 - **Bruk kontantrabatt**: Normal    
 - **Kontantrabatt brukt**: 0,00      

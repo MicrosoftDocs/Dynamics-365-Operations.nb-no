@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 674adb70cc4372a8c5ca8c75ed3ef840d8ec7b79
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520871"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762707"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Bruk Inventory Visibility-appen
 
@@ -30,44 +30,73 @@ Lagersynlighet er en modelldrevet app for visualisering. Appen inneholder tre si
 - Den støtter spørringer av lagerbeholdning i sanntid for forskjellige dimensjonskombinasjoner.
 - Den har et grensesnitt for postering av reservasjonsforespørsler.
 - Den har en visning av lagerbeholdningen for produkter sammen med alle dimensjoner.
-- Den har en visning av en lagerbeholdningsliste for produkter sammen med forhåndsdefinerte dimensjoner.
-
+- Den har en visning av en lagerbeholdningsliste for produkter sammen med forhåndsdefinerte dimensjoner. Visningen av råvarelisten kan enten være et fullstendig sammendrag eller et forhåndslastet resultat fra en beholdningsspørring.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
 Før du begynner, må du installere og konfigurere tillegget Lagersynlighet som beskrevet i [Installere og definere lagersynlighet](inventory-visibility-setup.md).
 
-## <a name="open-the-inventory-visibility-app"></a>Åpne lagersynlighetsapen
+## <a name="open-and-authenticate-the-inventory-visibility-app"></a><a name="open-authenticate"></a>Åpne og godkjenne Lagersynlighet-appen
 
-Hvis du vil åpne Lagersynlighet-appen, kan du logge på Power Apps miljøet og åpne **Lagersynlighet**.
+For å åpne og godkjenne Lagersynlighet-appen følger du disse trinnene.
 
-## <a name="configuration"></a><a name="configuration"></a>Konfigurasjon
+1. Logg på Power Apps-miljøet.
+1. Åpne **Lagersynlighet**-app.
+1. Åpne siden **Driftssynlighet** fra den venstre ruten.
+1. Velg **Innstillinger**-knappen (tannhjulsymbol) øverst til høyre på siden.
+1. I dialogboksen **Innstillinger** angir du du verdiene **Klient-ID**, **Leietaker-ID** og **Klienthemmelighet** som du noterte da du [installerte og konfigurerte Lagersynlighet](inventory-visibility-setup.md).
+1. Velg **Oppdater**-knappen ved siden av **Bærertoken**-feltet. Systemet genererer et nytt bærertoken basert på informasjonen du har angitt.
 
-**Konfigurasjon**-siden i Lagersynlighet-appen deg med konfigurasjon av lagerbeholdning og konfigurasjon av ikke-forpliktende reservasjon. Når tillegget er installert, inkluderer standardkonfigurasjonen en standardverdi for Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gå gjennom standardinnstillingen. Heretter kan du, basert på forretningskravene og lagerposteringskravene i det eksterne systemet, endre konfigurasjonen for å standardisere hvordan lagerendringer kan posteres, organiseres og spørres i alle systemene.
+    ![Innstillinger for beholdningsspørring.](media/inventory-visibility-query-settings.png "Innstillinger for beholdningsspørring")
+
+1. Når du mottar et gyldig bærende token, lukker du dialogboksen. Bærertokenet utløper etter en tid. Derfor må du noen ganger oppdatere det når du må oppdatere konfigurasjonen, postere data eller spørredata.
+
+## <a name="configure-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurere Lagersynlighet-appen
+
+**Konfigurasjon**-siden i Lagersynlighet-appen lar deg konfigurere generell databehandling og funksjonskonfigurasjon. Når tillegget er installert, inkluderer standardkonfigurasjonen en standardverdi for Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gå gjennom standardinnstillingen. Deretter kan du, basert på forretningskravene og lagerposteringskravene i det eksterne systemet, endre konfigurasjonen for å standardisere hvordan lagerendringer kan posteres, organiseres og spørres i alle systemene.
 
 Hvis du vil ha fullstendig informasjon om hvordan du konfigurerer løsningen, kan du se [Konfigurere lagersynlighet](inventory-visibility-configuration.md).
 
 ## <a name="operational-visibility"></a>Driftssynlighet
 
-På siden **Driftssynlighet** vises resultatene av en lagerbeholdningsspørring i sanntid, basert på diverse dimensjonskombinasjoner. Når *OnHandReservation*-funksjonen er aktivert, kan du også postere reservasjonsforespørsler fra siden **Driftssynlighet**.
+På siden **Driftssynlighet** vises resultatene av en lagerbeholdningsspørring i sanntid, reservasjonspostering og tildeling basert på diverse dimensjonskombinasjoner. Når *OnHandReservation*-funksjonen er [aktivert](inventory-visibility-configuration.md), kan du også postere reservasjonsforespørsler fra siden **Driftssynlighet**.
 
 ### <a name="on-hand-query"></a>Beholdningsspørring
 
-Fanen **Beholdningsspørring** viser resultatene av en lagerbeholdningsspørring i sanntid.
+Fanen **Beholdningsspørring** på siden **Driftssynlighet** lar deg spørre etter lagerbeholdningsspørring i sanntid. Følg disse trinnene for å angi og kjøre en spørring.
 
-Når du åpner fanen **Beholdningsspørring** på siden **Driftssynlighet**, ber systemet deg om legitimasjon slik at det kan hente bærertokenet som kreves for å utføre en spørring i Lagersynlighet-tjenesten. Du kan bare lime inn bærertokenet i **Bærertoken**-feltet og lukke dialogboksen. Du kan deretter postere en forespørsel om lagerbeholdning.
+1. Åpne **Lagersynlighet**-app.
+1. Åpne siden **Driftssynlighet** fra den venstre ruten.
+1. I kategorien **Beholdningsspørring** angir du verdiene **Organisasjons-ID**, **Område-ID** og **Lokasjons-ID** som du vil utføre spørringer for.
+1. I **Produkt-ID**-feltet angir du én eller flere produkt-IDer for å få et nøyaktig samsvar for spørringen. Hvis du lar **Produkt-ID**-feltet stå tomt, vil resultatene inkludere alle produkter på det angitte området og lokasjonen.
+1. Hvis du vil få et mer detaljert resultat (for eksempel en visning etter dimensjonsverdier som farge og størrelse), velger du gruppert etter dimensjoner i **Grupper resultat etter**-feltet.
+1. Hvis du vil finne varer som har en bestemt dimensjonsverdi (for eksempel farge = rød), velger du dimensjonen i **Filterdimensjoner**-feltet og angir deretter en dimensjonsverdi.
+1. Velg **Spørring**. Du mottar enten en vellykket (grønn) melding eller en mislykket (rød) melding. Hvis spørringen mislykkes, må du kontrollere spørringskriteriene og kontrollere at [bærertoken](#open-authenticate) ikke er utløpt.
 
-Hvis bærertokenet ikke er gyldig, eller hvis det er utløpt, må du lime inn et nytt i **Bærertoken**-feltet. Angi riktige verdier for **Klient-ID**, **Leier-ID** og **Klienthemmelighet**, og velg deretter **Oppdater**. Systemet får automatisk et nytt, gyldig bærertoken.
-
-Hvis du vil postere en lagerbeholdningsspørring, angir du spørringen i forespørselsteksten. Bruk mønsteret som er beskrevet i [Spør ved å bruke posteringsmetoden](inventory-visibility-api.md#query-with-post-method).
-
-![Innstillinger for beholdningsspørring](media/inventory-visibility-query-settings.png "Innstillinger for beholdningsspørring")
+En annen måte å lage en lagerbeholdning-spørring på, er å sende direkte API-forespørsler. Du kan bruke `/api/environment/{environmentId}/onhand/indexquery` eller `/api/environment/{environmentId}/onhand`. Hvis du vil ha mer informasjon, kan du se [Offentlige API-er for lagersynlighet](inventory-visibility-api.md).
 
 ### <a name="reservation-posting"></a>Postering av reservasjon
 
 Bruk fanen **Postering av reservasjon** på siden **Driftssynlighet** til å postere en reservasjonsforespørsel. Før du kan postere en reservasjonsforespørsel, må du aktivere funksjonen *OnHandReservation*. Hvis du vil ha mer informasjon om denne funksjonen og hvordan du aktiverer den, kan du se [Lagersynlighetsreservasjoner](inventory-visibility-reservations.md).
 
-Hvis du vil postere en reservasjonsforespørsel, må du angi en verdi i forespørselsteksten. Bruk mønsteret som er beskrevet i [Opprett én reservasjonshendelse](inventory-visibility-api.md#create-one-reservation-event). Velg deretter **Poster**. Hvis du vil vise detaljer for forespørselssvaret, velger du **Vis detaljer**. Du kan også hente `reservationId`-verdien fra svardetaljene.
+> [!NOTE]
+> Muligheten til å foreta en ikke-forpliktende reservasjon i brukergrensesnittet er ment å la deg teste funksjonen. Hver ikke-forpliktende reserveringsforespørsel skal knyttes til en linjeendring for transaksjon (oppretting, endre, slette og så videre). Vi anbefaler derfor at du bare gjør en ikke-forpliktende reservervasjon som er koblet til en serverdelsordre. Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](inventory-visibility-reservations.md).
+
+Følg denne fremgangsmåten for å postere en ikke-forpliktende reservasjonsforespørsel ved hjelp av brukergrensesnittet.
+
+1. Åpne **Lagersynlighet**-app.
+1. Åpne siden **Driftssynlighet** fra den venstre ruten.
+1. Angi antallet du vil gjøre en ikke-forpliktende reservasjon for, i feltet **Antall** i kategorien **Postering av reservasjon**.
+1. Fjern merket i boksen **Aktiver negativt lager for å støtte oversalg** for å hindre at aksjene blir oversolgt eller overreservert.
+1. I **Operatør**-feltet velger du datakilden og det fysiske målet som skal gjelde for det mykt reserverte antallet.
+1. Angi verdiene **Organisasjons-ID**, **Område-ID**, **Lokasjons-ID** og **Produkt-ID** som du vil utføre spørringer for.
+1. Hvis du vil få et mer detaljert resultat, velger du en datakilde, dimensjoner og dimensjonsverdier.
+
+En annen måte å gjøre en ikke-forpliktende reserervasjon på, er å sende direkte API-forespørsler. Bruk mønsteret som er beskrevet i [Opprett én reservasjonshendelse](inventory-visibility-api.md#create-one-reservation-event). Velg deretter **Poster**. Hvis du vil vise detaljer for forespørselssvaret, velger du **Vis detaljer**. Du kan også hente `reservationId`-verdien fra svardetaljene.
+
+### <a name="allocation"></a>Tildeling
+
+Hvis du vil ha informasjon om hvordan du administrerer fordelinger fra brukergrensesnittet og APIer, kan du se [Lagertildeling for Inventory Visibility](inventory-visibility-allocation.md).
 
 ## <a name="inventory-summary"></a><a name="inventory-summary"></a>Lagersammendrag
 
@@ -84,19 +113,15 @@ For å aktivere siden **Lagersammendraget** og angi synkroniseringsfrekvensen f�
 
 1. Velg **Oppdater konfigurasjon** for å lagre alle endringene.
 
-
 > [!NOTE]
 > *OnHandMostSpecificBackgroundService*-funksjonen sporer bare endringer i lagerbeholdning som inntraff etter at du aktiverte funksjonen. Data for produkter som ikke har endret seg siden du aktiverte funksjonen, vil ikke bli synkronisert fra lagertjenestebufferen til Dataverse-miljøet. Hvis **Lagersammendrag**-siden ikke viser all lagerbeholdningsinformasjonen du forventer, kan du åpne Supply Chain Management, gå til **Lagerstyring > Periodiske oppgaver > Integrering av lagersynlighet**, deaktivere den satsvise jobben og aktivere den på nytt. Dette utfører den innledende overføringen, og alle data synkroniseres med enheten *Lagerbeholdningssum* i løpet av de neste 15 minuttene. Hvis du vil bruke *OnHandMostSpecificBackgroundService*-funksjonen, anbefaler vi at du aktiverer den før du oppretter lagerbeholdningsendringer og aktiverer den satsvise jobben **Integrering av lagersynlighet**.
 
-## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-the-inventory-visibility-onhand-query"></a>Forhåndslast en strømlinjeformet beholdningsspørring
+## <a name="preload-a-streamlined-on-hand-query"></a><a name="preload-streamlined-onhand-query"></a>Forhåndslast en strømlinjeformet beholdningsspørring
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 Supply Chain Management har lagret mye informasjon om den gjeldende lagerbeholdningen, og gjør den tilgjengelig for en rekke formål. Imidlertid krever mange daglige operasjoner og tredjepartsintegrering bare et lite delsett av disse detaljene, og spørringer på systemet for alle kan føre til store datasett som tar tid å sette sammen og overføre. Derfor kan lagersynlighetstjenesten regelmessig hente og lagre et strømlinjeformet sett med lagerbeholdningsdata for å gjøre denne optimaliserte informasjonen kontinuerlig tilgjengelig. De lagrede detaljene for lagerbeholdning filtreres basert på konfigurerbare driftskriterier for å sikre at bare den mest relevante informasjonen inkluderes. Fordi de filtrerte lagerbeholdningslistene lagres lokalt i lagersynlighetstjenesten og oppdateres regelmessig, støtter de rask tilgang til dataeksporter etter behov og strømlinjeformet integrasjon med eksterne systemer.
-
-> [!NOTE]
-> Den gjeldende forhåndsversjonen av denne funksjonen kan bare gi forhåndslastede resultater som inkluderer nettsted og plassering. I den endelige versjonen av funksjonen forventes det at du skal kunne velge andre dimensjoner som forhåndslastes sammen med resultatene.
 
 På siden **Forhåndslast lagersynlighetssammendraget** finner du en visning for enheten *Forhåndslast lagerindeksspørring*. I motsetning til enheten *Lagersammendrag* inneholder enheten *Forhåndslast lagerindeksspørring* en lagerbeholdningsliste for produkter sammen med valgte dimensjoner. Lagersynlighet synkroniserer de forhåndslastede sammendragsdataene hvert 15. minutt.
 

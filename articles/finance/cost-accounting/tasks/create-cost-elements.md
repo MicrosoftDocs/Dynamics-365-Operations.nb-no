@@ -2,7 +2,7 @@
 title: 'Opprette kostnadselementer  '
 description: Det finnes flere måter å opprette kostnadselementer på i kostnadsregnskap.
 author: kfend
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfiguration, CAMDimensionMember
-ms.openlocfilehash: 9ca826e54171a3dc3582dc5ceb716ac009d45674
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0254f486816e852bcda52f90fe4da65c413c7032
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280728"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779696"
 ---
 # <a name="create-cost-elements"></a>Opprette kostnadselementer   
 
@@ -28,31 +28,31 @@ Det finnes flere måter å opprette kostnadselementer på i kostnadsregnskap. De
 
 
 ## <a name="create-new-cost-elements"></a>Opprette nye kostnadselementer
-1. Gå til Kostnadsregnskap > Dimensjoner > Kostnadselementdimensjoner.
-2. Klikk Ny.
-3. Skriv inn en verdi i Navn-feltet.
-4. Angi eller velg en verdi i feltet Datakobling for dimensjonsmedlemmer.
-5. Skriv inn en verdi i feltet Beskrivelse.
-6. Klikk Lagre.
+1. Gå til **Kostnadsregnskap > Dimensjoner > Kostnadselementdimensjoner**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i **Navn**-feltet.
+4. Angi eller velg en verdi i feltet **Datakobling for dimensjonsmedlemmer**.
+5. Skriv inn en verdi i **Beskrivelse**-feltet.
+6. Klikk på **Lagre**.
 
 ## <a name="configure-the-data-connector"></a>Konfigurere datakoblingen
-1. Klikk Konfigurer dimensjonsmedlemsleverandør.
-2. Skriv inn eller velg en verdi Kontoplan-feltet.
-    * Velg Delt for å bruke den delte kontoplanen.  
-3. Klikk Ny.
+1. Klikk på **Konfigurer dimensjonsmedlemsleverandør**.
+2. Skriv inn eller velg en verdi **Kontoplan**-feltet.
+    * Velg **Delt** for å bruke den delte kontoplanen.  
+3. Klikk på **Ny**.
 4. Merk den valgte raden i listen.
     * Du kan bruke filtre på kontoer som oppfyller kriteriene dine.  
-5. Angi eller velg en verdi i feltet Fra hovedkonto.
-6. Angi eller velg en verdi i feltet Til hovedkonto.
-7. Klikk OK.
+5. Angi eller velg en verdi i feltet **Fra hovedkonto**.
+6. Angi eller velg en verdi i feltet **Til hovedkonto**.
+7. Klikk på **OK**.
 
 ## <a name="import-main-accounts"></a>Importer hovedkontoer
-1. Klikk Importer dimensjonsmedlemmer.
+1. Klikk på **Importer dimensjonsmedlemmer**.
     * Hovedkontoer blir importert til kostnadsregnskap og brukt som kostnadselementer.  
-2. Klikk OK.
+2. Klikk på **OK**.
 
 ## <a name="view-the-imported-accounts-as-cost-elements"></a>Vise de importerte kontoene som kostnadselementer
-1. Klikk Vis dimensjonsmedlemmer.
+1. Klikk på **Vis dimensjonsmedlemmer**.
     * Vis de importerte finanskontoene som kostnadselementer i bedriften som kostnader kan flyte til.  
 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c83ac47bc5e7f7ed223c772591cf8a7c1e63a40
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: b3cc07a1f0ba444250eddcf892681e2ca63e9c1a
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715504"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780516"
 ---
 # <a name="correct-a-free-text-invoice"></a>Korrigere en fritekstfaktura
 
@@ -28,7 +28,11 @@ ms.locfileid: "9715504"
 
 Denne artikkelen forklarer hvordan du kan rette en fritekstfaktura som er postert og sende den på nytt som en rettet faktura.
 
-Hvis du vil rette en fritekstfaktura som allerede er postert, kan du åpne den posterte fritekstfakturaen. På **Faktura**-siden velger du **Avbryt**, og velger deretter **Rett faktura**. Velg en årsakskode, legg til kommentarer, og velg datoen for ny, korrigert faktura. Du kan endre den rettede fakturaen og postere den. 
+Til å rette en fritekstfaktura som allerede er postert: 
+1. Åpne den posterte fritekstfakturaen. 
+2. På **Faktura**-siden velger du **Avbryt**, og velger deretter **Rett faktura**. 
+3. Velg en årsakskode, legg til kommentarer, og velg datoen for ny, korrigert faktura.
+4. Du kan endre den rettede fakturaen og postere den. 
 
 Når du posterer den rettede fakturaen, opprettes en annulleringsfaktura for et kreditbeløp som er lik det opprinnelige fakturabeløpet. Den kombinerte saldoen mellom den opprinnelige fakturaen og annulleringsfakturaen er derfor 0 (null). Annulleringsfakturaen utlignes mot den opprinnelige fakturaen. 
 

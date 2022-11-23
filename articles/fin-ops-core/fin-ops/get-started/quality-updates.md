@@ -11,12 +11,12 @@ ms.author: rashmim
 ms.search.validFrom: 2022-08-19
 ms.search.form: ''
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: ff2232c9e1010ad1e2524df0c7ed4d771b489ed1
-ms.sourcegitcommit: 05069f7e5eb7a9335c0a62031d7663f88e4821df
+ms.openlocfilehash: d417b16706ac4389e40e25ffbbddde5ebac92db3
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "9752305"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775408"
 ---
 # <a name="proactive-quality-updates"></a>Proaktive kvalitetsoppdateringer
 
@@ -112,7 +112,7 @@ Hvis du vil ha informasjon om mørketimer for hvert område, kan du se [Hva er d
 | Stasjon 1 | Canada, sentralt; Canada, øst; Frankrike, sentralt; India, sentralt; Norge, øst; Sveits, vest | 14. til 17. oktober 2022 og 2. til 5. november 2022 | 13. november til 16. november 2022 |
 | Stasjon 2 | Frankrike, sør; India, sør; Norge, vest; Sveits, nord; Sør-Afrika, nord; Australia, øst; Storbritannia, sør; De forente arabiske emirater, nord; Japan, øst; Australia, sørøst; Asia, sørøst | 15. til 18. oktober 2022 og 2. til 5. november 2022 | 13. november til 16. november 2022 |
 | Stasjon 3 | Øst-Asia; Storbritannia, vest; Japan, vest; Brasil, sør; Europa, vest; USA, øst; De forente arabiske emirater, sentralt | 16. til 19. oktober 2022 og 2. til 5. november 2022 | 13. november til 16. november 2022 |
-| Stasjon 4 | Europa, nord; USA, sentralt; USA, vest | 17. til 20. oktober 2022 og 2. til 5. november 2022 | 13. november til 16. november 2022 |
+| Stasjon 4 | Europa, nord; USA, sentralt; USA, vest | 17. til 20. oktober 2022 og 2. til 5. november 2022 | 15. november til 18. november 2022 |
 | Stasjon 5 | DoD, Government Community Cloud, Kina | Ikke planlagt | Ikke planlagt |
 
 ### <a name="proactive-quality-update-release-10030"></a><a name="schedule"></a> Proaktiv kvalitetsoppdateringsutgivelse: 10.0.30

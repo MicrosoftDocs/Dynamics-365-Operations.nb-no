@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: d12932f35b3b451577d38948f60bc3a73c10e2a0
-ms.sourcegitcommit: 86c0562ce1ecdf7937125c0f5a6771f178b459e7
+ms.openlocfilehash: 8f6ba18096cffe907c339ad525c99535bc5ee568
+ms.sourcegitcommit: 7745c4bd3ab3aace4b4cb814eaf0cfdbae4a0cbd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714840"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9784700"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10029-october-2022"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.29 (oktober 2022)
 
@@ -33,7 +33,7 @@ Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være o
 
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
-| Lager og logistikk | [Tildel og reserver WMS-varer i lagersynlighet](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Kommer snart | Aktivert som standard |
+| Lager og logistikk | [Tildel og reserver WMS-varer i lagersynlighet](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | [Inventory Visibility-støtte for WMS-varer](../inventory/inventory-visibility-whs-support.md) | Aktivert som standard |
 | Lager og logistikk | [Forhåndslast effektive lagerbeholdningslister](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Bruk Inventory Visibility-appen](../inventory/inventory-visibility-power-platform.md) | Aktivert av tjenestekonfigurasjon |
 | Forsyningsautomatisering for produser til ordre | [Automatisering av produksjon etter ordre](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Automatisering av produksjon etter ordre](../master-planning/make-to-order-supply-automation.md) | Funksjonsbehandling:<br>*Automatisering av produksjon etter ordre* |
 | Planlegging | [Vis og bruk detaljerte innsikter for etterspørselsdrevet planlegging av materialkrav](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Oversikt over etterspørselsdrevet planlegging av materialkrav](../master-planning/planning-optimization/ddmrp-overview.md) | Funksjonsbehandling:<br>*(Forhåndsversjon) DDMRP for planleggingsoptimalisering* |

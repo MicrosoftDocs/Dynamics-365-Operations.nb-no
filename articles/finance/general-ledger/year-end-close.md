@@ -2,25 +2,25 @@
 title: Årsavslutning
 description: Denne artikkelen beskriver den nødvendige konfigurasjonen og fremgangsmåten for å kjøre årsavslutningsprosessen i økonomimodulen.
 author: kweekley
-ms.date: 12/06/2021
+ms.date: 11/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 032c572ec7b29bb6b2823ddde0c4fa76e5f8fcf1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 7e1c7722b560246fb597f0b7f91a70afecf69e22
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8883220"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779750"
 ---
 # <a name="year-end-close"></a>Årsavslutning
 
@@ -62,7 +62,7 @@ På siden **Konfigurasjon av årsavslutningsmal**:
 
 ## <a name="define-year-end-close-templates"></a>Definere maler for årsavslutning
 
-Når systemet er konfigurert, kan du kjøre årsavslutningsprosessen. På siden **Konfigurasjon av årsavslutningsmal** kan en mal defineres for gruppen med juridiske enheter som årsavslutningsprosessen skal kjøres for. Malen brukes på nytt ved hver årsavslutning, men kan endres hvis organisasjonen endres.
+Når konfigurasjonen er fullført, kan du kjøre årsavslutningsprosessen. På siden **Konfigurasjon av årsavslutningsmal** kan en mal defineres for gruppen med juridiske enheter som årsavslutningsprosessen skal kjøres for. Malen brukes på nytt ved hver årsavslutning, men kan endres hvis organisasjonen endres.
 
 Definer først **Gruppenavn**-feltet for malen, og velg regnskapskalenderen. Gruppenavnet må identifisere gruppen med juridiske enheter som er inkludert. Når du bestemmer gruppene med juridiske enheter, må du huske på at juridiske enheter bare kan inkluderes i samme gruppe hvis den samme regnskapskalenderen er valgt for dem. Malene kan for eksempel være definert basert på geografi, med separate grupper opprettet for juridiske enheter for Nord-Amerika, Europa, Midtøsten og Afrika (EMEA), og juridiske enheter i Asia/Stillehavskysten (APAC).
 

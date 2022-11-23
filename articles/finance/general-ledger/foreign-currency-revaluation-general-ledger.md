@@ -2,25 +2,25 @@
 title: Revaluering av utenlandsk valuta for finans
 description: 'Denne artikkelen gir en oversikt over følgende handlinger for prosessen for revaluering av utenlandsk valuta i økonomimodulen: oppsett, kjøring av prosessen, beregning for prosessen, og tilbakeføring av revalueringstransaksjoner, om nødvendig.'
 author: kweekley
-ms.date: 06/20/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 62153
 ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e0f4184237537464998b2bc1a6ab02561d9d291
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 96ae50e339c63687a4c8114d3c965123fd5e37ab
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752810"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779995"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Revaluering av utenlandsk valuta for finans
 
@@ -38,27 +38,27 @@ Når du kjører revalueringsprosessen, blir saldoen i hver hovedkonto postert i 
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Klargjøre for kjøring av revaluering av utenlandsk valuta
 Følgende oppsett kreves før du kan kjøre revalueringprosessen.
 
--   På **Hovedkonto**-siden:
--   Hvis hovedkontoen skal revalueres i økonomimodul, velger du **Revaluering av utenlandsk valuta**. Hvis hovedkontoen ikke skal revalueres (for eksempel for AR og AP ved revaluering i underfinansene), fjerner du avmerkingen.
--   Hvis hovedkontoen er markert for revaluering, angir du **valutakurstypen**. Denne valutakurstypen skal brukes for revaluering av hovedkontoen. Et separat felt, **Valutakurstype for finansrapportering**, er tilgjengelig for finansrapportering. De to feltene holdes synkronisert, slik at ulike valutakurstyper kan brukes for revaluering og finansrapportering.
+På **Hovedkonto**-siden:
+ - Hvis hovedkontoen skal revalueres i økonomimodul, velger du **Revaluering av utenlandsk valuta**. Hvis hovedkontoen ikke skal revalueres (for eksempel for AR og AP ved revaluering i underfinansene), fjerner du avmerkingen.
+ - Hvis hovedkontoen er markert for revaluering, angir du **valutakurstypen**. Denne valutakurstypen skal brukes for revaluering av hovedkontoen. Et separat felt, **Valutakurstype for finansrapportering**, er tilgjengelig for finansrapportering. De to feltene holdes synkronisert, slik at ulike valutakurstyper kan brukes for revaluering og finansrapportering.
 
--   På **Finans**-siden:
--   Angi **valutakurstypen**. Hvis valutakurstypen ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.
--   Angi kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta. Kontoene for realisert fortjeneste og realisert tap brukes for utligning av AR- og AP-transaksjoner, og kontoene for urealisert fortjeneste og urealisert tap brukes for revaluering av åpne transaksjoner og hovedkontoene i økonomimodulen.
+På **Finans**-siden:
+ - Angi **valutakurstypen**. Hvis valutakurstypen ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.
+ - Angi kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta. Kontoene for realisert fortjeneste og realisert tap brukes for utligning av AR- og AP-transaksjoner, og kontoene for urealisert fortjeneste og urealisert tap brukes for revaluering av åpne transaksjoner og hovedkontoene i økonomimodulen.
 
--   På siden **Valutarevalueringskontoer**:
--   Velg ulike revalueringskontoer for valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans**-siden.
+På siden **Valutarevalueringskontoer**:
+ - Velg ulike revalueringskontoer for valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans**-siden.
 
 ## <a name="process-foreign-currency-revaluation"></a>Behandle en revaluering av utenlandsk valuta
 Når oppsettet er fullført, kan du bruke siden **Revaluering av utenlandsk valuta** til å revaluere saldoene fra hovedkontoene. Du kan kjøre prosessen i sanntid eller planlegge å kjøre den ved hjelp av en satsvis jobb. 
 
 Siden **Revaluering av utenlandsk valuta** viser loggen for hver revalueringsprosess, inkludert da prosessen ble kjørt, hvilke kriterier som ble definert, en kobling til bilaget som ble opprettes for revalueringen, og en post hvis en tidligere revaluering ble tilbakeført. For å kjøre revalueringsprosessen klikk knappen **Revaluering av utenlandsk valuta**. 
 
-Verdiene **Fra-dato** og **Til dato** definerer datointervallet for å beregne saldo for utenlandsk valuta som skal revalueres. Når du revaluerer resultatkontoer, revalueres summen av alle transaksjoner som forekommer i datointervallet. Når du revaluerer balansekontoer, ignoreres Fra-datoen. I stedet bestemmes saldoen som skal revalueres ved å gå fra begynnelsen av regnskapsåret til Til-datoen. 
+Verdiene **Fra-dato** og **Til dato** definerer datointervallet for å beregne saldo for utenlandsk valuta som skal revalueres. Når du revaluerer resultatkontoer, revalueres summen av alle transaksjoner som forekommer i datointervallet. Når du revaluerer balansekontoer, ignoreres **Fra-datoen**. I stedet bestemmes saldoen som skal revalueres ved å gå fra begynnelsen av regnskapsåret til **Til-datoen**. 
 
 **Kursdato** kan brukes til å definere datoen som skal brukes for valutakursen. Du kan for eksempel revaluere saldoene mellom den datointervallet fra 1. januar til 31. januar, men bruke valutakursen som er definert for 1. februar. 
 
-Velg hvilke hovedkontoer som skal revalueres: Alle, Balanse eller Resultat. Bare hovedkontoer som er merket for revaluering (på siden for hovedkonto) blir revaluert. Hvis du vil begrense området for hovedkontoer, kan du bruke kategorien **Poster som skal inkluderes** til å definere et område for hovedkontoer eller individuelle hovedkontoer. 
+Velg hvilke hovedkontoer som skal revalueres: Alle, Balanse eller Resultat. Bare hovedkontoer som er merket for revaluering (på siden for **Hovedkonto**) blir revaluert. Hvis du vil begrense området for hovedkontoer, kan du bruke kategorien **Poster som skal inkluderes** til å definere et område for hovedkontoer eller individuelle hovedkontoer. 
 
 Revalueringsprosessen kan kjøres for én eller flere juridiske enheter. Oppslaget viser bare de juridiske enhetene som du har tilgang til. Velg de juridiske enhetene som du vil kjøre revalueringsprosessen for. 
 
@@ -68,7 +68,7 @@ Angi **Forhåndsvis for postering** til **Ja** hvis du vil se resultatet av reva
 
 Hvis du vil utelate justeringer som ble postert ved hjelp av **Justeringsjournal for rapporteringsvaluta** fra revalueringsprosessen, angir du **Ja** for **Ekskluder rapporteringsvalutajusteringer**. Rapporteringsvalutajusteringer er som standard inkludert i revalueringen. 
 
-Når prosessen for revaluering av utenlandsk valuta er fullført, opprettes en post for å spore loggen for hver kjøring.  En separat oppføring opprettes for hver juridiske enhet og posteringslag.
+Når prosessen for revaluering av utenlandsk valuta er fullført, opprettes en post for å spore loggen for hver kjøring. En separat oppføring opprettes for hver juridiske enhet og posteringslag.
 
 ## <a name="calculate-unrealized-gainloss"></a>Beregne urealisert tap/fortjeneste
 Transaksjonene for urealisert tap/fortjeneste blir opprettet på en annen måte mellom revaluering av økonomimodulen og AR- og AP-revaluering. I AR og AP tilbakeføres den tidligere revalueringen fullstendig (forutsatt at transaksjonen ikke er utlignet ennå), og en ny revalueringstransaksjon opprettes for urealisert fortjeneste/tap basert på den nye valutakursen. Dette er fordi vi revaluerer hver enkelt transaksjon i AR og AP. I økonomimodulen tilbakeføres ikke den forrige revalueringen. I stedet opprettes det en transaksjon for delta mellom saldoen for hovedkontoen, inkludert eventuelle tidligere revalueringsbeløp, og den nye verdien, basert på valutakursen for kursdatoen. 
@@ -82,8 +82,8 @@ Transaksjonene for urealisert tap/fortjeneste blir opprettet på en annen måte 
 Hovedkontoen revalueres den 31. januar.  Urealisert fortjeneste/tap beregnes på følgende måte.
 
 | Gjeldende saldo i transaksjonsvaluta | Gjeldende saldo i regnskapsvaluta | Valutakursen ved revaluering | Nytt regnskapsvalutabeløp | Urealisert fortjeneste/tap    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 tap (833,33 – 1000) |
+|--------------------|---------------------------|----------------------------------|------------------------------------|-----------------------------|
+| 500 EUR            | 1000 USD                  | 166.6667                         | 833,33 USD (500 x 1,666667)        | 166,67 tap (833,33 – 1000) |
 
 Følgende regnskappost opprettes.
 
@@ -95,8 +95,8 @@ Følgende regnskappost opprettes.
 Ingen nye transaksjoner posteres for februar måned.  Hovedkontoen revalueres den 28. februar.
 
 | Gjeldende saldo i transaksjonsvaluta | Gjeldende saldo i regnskapsvaluta | Valutakursen ved revaluering | Nytt regnskapsvalutabeløp | Urealisert fortjeneste/tap    |
-|---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| 500 EUR                                     | 833,33 USD (1000 - 166,67)                 | 250.0000                         | 1250 USD (500 x 2,5)               | 416,67 fortjeneste (1250 – 833,33) |
+|---------------------------------------|-----------------------------------|-------------------------------|--------------------|-----------------------------|
+| 500 EUR                 | 833,33 USD (1000 - 166,67)       | 250.0000              | 1250 USD (500 x 2,5)               | 416,67 fortjeneste (1250 – 833,33) |
 
 Følgende regnskappost opprettes.
 

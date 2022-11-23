@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a5bf22228749a725baa66ee3094f670c60f0f39a
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 384ce8611a7dbf6adf7b8ae6ad9569e2a41c22d1
+ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405445"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "9757174"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -50,7 +50,7 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 | Luk en kategori i handlingsruten eller i en meny        | ESC                              |
 | Simuler et høyreklikk                          | Skift+F10                        |
 | Åpne kontekstmenyen    | Ctrl+F10                         |
-| Kjør standardknappen på en skjema-/dialogboks | Alt+Enter                        |
+| Kjør standardknappen på en side/dialogboks | Alt+Enter                        |
 | Klikk på en knapp eller flis                          | Enter eller Mellomrom                   |
 | Vis oppdatert informasjon for en flis for antall       | Alt+Pil opp                     |
 | Vise tilgjengelige snarveier              | Alt+Skift+K                      |
@@ -85,36 +85,36 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 |---------------------------------------------------------------------------------------------------------------------|--------------------------|
 | Åpne rutenettfiltrering for gjeldende kolonne                                                                          | Ctrl+G                   |
 | Lukk rutenettfiltrering for gjeldende kolonne                                                                         | ESC                      |
-| Åpne filtreringsruten (eller skift fokus mellom filtreringsruten og hovedskjemaet hvis filtreringsruten allerede er åpen) | Alt+M,F eller Ctrl+F3       |
+| Åpne filtreringsruten (eller skift fokus mellom filtreringsruten og hovedsiden hvis filtreringsruten allerede er åpen) | Alt+M,F eller Ctrl+F3       |
 | Lukk filtreringsruten (med fokus i filtreringsruten)                                                               | ESC                      |
 | Åpne avansert filtrering/sortering                                                                                        | Ctrl+Skift+F3            |
 | Bruk hurtigfilteret (når fokus er på hurtigfilteret)                                                              | Angi                    |
 | Bruk rutenettfilteret (når fokus er på filterfeltet for kolonneoverskriften)                                             | Angi                    |
 
-## <a name="form-shortcuts"></a>Skjemasnarveier
+## <a name="page-shortcuts"></a>Sidenarveier
 
-| Hvis du vil gjøre dette                                    | Trykk             |
+| Hvis du vil gjøre dette                                    | Trykk              |
 |-----------------------------------------------|-------------------|
 | Opprett en ny post                           | Alt+N             |
 | Slette en post                               | Alt+Del eller Alt+F9 |
 | Lagre post                                   | Alt+S eller Ctrl+S   |
 | Tilbakestill (gjenopprett)                              | Ctrl+Skift+F5     |
 | Dataoppdatering                                  | Skift+F5          |
-| Gå til det første synlige feltet på skjemaet   | Alt+Skift+F       |
+| Gå til det første synlige feltet på siden   | Alt+Skift+F       |
 | Aktiver/deaktiver redigeringsmodus                              | F2                |
-| Legge ved et dokument                             | Ctrl+Skift+A      |
+| Legg ved et dokument                             | Ctrl+Skift+A      |
 | Eksporter til Excel                               | Ctrl+Skift+E      |
 | Gå til forrige post (utenfor et rutenett)  | Ctrl+Pil opp     |
 | Gå til neste post (utenfor et rutenett)      | Ctrl+Pil ned   |
 | Gå til første post (utenfor et rutenett)     | CTRL+HOME         |
 | Gå til siste post (utenfor et rutenett)      | CTRL+END          |
-| Lukk skjemaet (klikk på Tilbake)                   | ESC               |
-| Lukk skjemaet med eksplisitt lagring             | Skift+Esc         |
-| Lukk skjemaet og forkast eventuelle ulagrede endringer | Alt+Skift+Q       |
+| Lukke siden (velg Tilbake-knappen)<br><br>**Merk:** Hvis det er et popup-vindu (verktøytips, datoplukker, rullegardinliste osv.) åpent, vil den første bruken av Esc avvise popup-vinduet.       | ESC               |
+| Lukk siden med eksplisitt lagring             | Skift+Esc         |
+| Lukk siden og forkast eventuelle ulagrede endringer | Alt+Skift+Q       |
 
-## <a name="form-navigation-shortcuts"></a>Snarveier for skjemanavigasjon
+## <a name="page-navigation-shortcuts"></a>Snarveier for sidenavigasjon
 
-| Hvis du vil gjøre dette                                          | Trykk                                        |
+| Hvis du vil gjøre dette                                          | Trykk                                         |
 |-----------------------------------------------------|----------------------------------------------|
 | Gå til neste/forrige felt                     | Tab / Skift+Tab                              |
 | Gå til neste/forrige kategori                       | Alt+Skift+Pil høyre / Alt+Skift+Pil venstre |
@@ -192,13 +192,13 @@ Brukere kan finne hurtigtaster som er tilgjengelige for øyeblikket, direkte i b
 | Åpne hjelperuten                                                            | Ctrl+?                     |
 | Åpne Trace Parser                                                         | Alt+Skift+T                |
 | Flytt til navigasjonsruten                                                   | Alt + F1                     |
-| Legg til/fjern skjema som favoritt (med fokus på et skjema i navigasjonsruten)   | Skift+F                    |
+| Legg til/fjern side som favoritt (med fokus på en side i navigasjonsruten)   | Skift+F                    |
 | Flytt til standard handlingsrute                                              | Alt+M,A eller Ctrl+F6         |
 | Flytt til filterruten (som kan omfatte å åpne den)                        | Alt+M,F eller Ctrl+F3         |
 | Flytt fokus til sidens innhold (med fokus i Filter-ruten)                | Alt+M,M eller Ctrl+F3         |
-| Flytt til navigasjonslisten på Detaljer-skjema (som kan omfatte å åpne det)    | Alt+M,S eller Ctrl+F8         |
+| Flytt til navigasjonslisten (som kan omfatte å åpne den)    | Alt+M,S eller Ctrl+F8         |
 | Flytt fokus til sidens innhold (med fokus i navigasjonslisten)            | Alt+M,M eller Ctrl+F8         |
-| Lukk navigasjonslisten i Detaljer-skjemaet (med fokus i navigasjonslisten) | ESC                        |
+| Lukk navigasjonslisten (med fokus i navigasjonslisten) | ESC                        |
 | Flytt til innholdet på hovedsiden (med fokus i en annen rute)                    | Alt+M,M                    |
 | Flytt til Faktaboks-rute (som kan omfatte å åpne den)                       | Alt+M,B eller Ctrl+F2         |
 | Flytt til neste funksjonsbildeforklaring                                              | Alt+M,C                    |
