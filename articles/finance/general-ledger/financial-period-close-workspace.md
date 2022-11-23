@@ -2,25 +2,25 @@
 title: Arbeidsområde for regnskapsperiodeavslutning
 description: Denne artikkelen gir en oversikt over arbeidsområdet for regnskapsperiodeavslutning og den tilknyttede konfigurasjonen.
 author: kweekley
-ms.date: 11/29/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.custom: 13791
 ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 531909bb8de892b012ffff347e58f23f997705ef
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 657bdd04c8b6dd36341e0bf771a978f68f13362d
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8865719"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9780049"
 ---
 # <a name="financial-period-close-workspace"></a>Arbeidsområde for regnskapsperiodeavslutning
 
@@ -28,7 +28,7 @@ ms.locfileid: "8865719"
 
 Denne artikkelen gir en oversikt over arbeidsområdet for **Regnskapsperiodeavslutning** og den tilknyttede konfigurasjonen.
 
-Arbeidsområde for regnskapsperiodeavslutning
+## <a name="financial-period-close-workspace"></a>Arbeidsområde for regnskapsperiodeavslutning
 
 I arbeidsområdet **Regnskapsperiodeavslutning** kan du spore prosessene for regnskapsavslutning på tvers av firmaer, områder og personer. Avhengig av visningen av arbeidsområdet **Regnskapsperiodeavslutning** vil du se alle oppgaver og statuser for en avslutningstidsplan eller bare oppgavene som er tilordnet til deg. 
 
@@ -101,7 +101,7 @@ Tilordne den aktuelle kalenderen til avslutningstidsplanen for å angi virkedage
 
 Du må også definere firmaene som skal knyttes til avslutningstidsplanen. Hvis maloppgaver tilordnes til flere firmaer, blir det opprettet separate oppgaver for hvert firma som er i avslutningstidsplanen, og de blir tildelt maloppgaven. 
 
-Når en avslutningstidsplan er fullført, velger du alternativet **Lukket** for den. Oppgaveloggen vil fortsatt være tilgjengelig fra listesiden **Alle oppgaver ved regnskapsperiodeavslutning**, men avslutningstidsplanen vil bli fjernet fra arbeidsområdet. Når en avslutningstidsplan er merket som **Lukket**, kan du ikke legge til oppgaver i den, redigerer oppgaver eller fjerne oppgaver fra den.
+Når en avslutningstidsplan er fullført, velger du alternativet **Lukket**. Oppgaveloggen vil fortsatt være tilgjengelig fra listesiden **Alle oppgaver ved regnskapsperiodeavslutning**, men avslutningstidsplanen vil bli fjernet fra arbeidsområdet. Når en avslutningstidsplan er merket som **Lukket**, kan du ikke legge til oppgaver i den, redigerer oppgaver eller fjerne oppgaver fra den.
 
 
 
