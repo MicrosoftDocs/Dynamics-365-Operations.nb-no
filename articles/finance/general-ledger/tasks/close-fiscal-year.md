@@ -2,7 +2,7 @@
 title: Lukke regnskapsåret
 description: Denne prosedyren går gjennom årsavslutningsprosessen som overfører saldoer til et nytt regnskapsår.
 author: aprilolson
-ms.date: 07/11/2019
+ms.date: 11/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb36cb856d191d64561060e7de4a1f9fd947882
-ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
+ms.openlocfilehash: 4d52e6789a96defaf1d0132fe97fc183a05af207
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8717481"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779819"
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskapsåret
 
@@ -40,7 +40,7 @@ Hvis **Ja** er angitt, opprettes to transaksjoner. Ett bilag opprettes i regnska
 
 5. Velg **Ja** eller **Nei** for alternativet **Sett regnskapsårsstatusen til permanent lukket**.
 
-Hvis **Ja** er angitt, settes regnskapsårsstatusen til Lukket permanent. Fordi et permanent lukket år ikke kan åpnes igjen, vil det være lurt å sette dette alternativet til **Nei**.  
+Hvis **Ja** er angitt, settes regnskapsårsstatusen til **Lukket permanent**. Fordi et permanent lukket år ikke kan åpnes igjen, vil det være lurt å sette dette alternativet til **Nei**.  
 
 6. Velg **Ja** eller **Nei** for alternativet **Bilagsnummer skal fylles ut under årsavslutningen**.
 

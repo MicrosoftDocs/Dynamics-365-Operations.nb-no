@@ -2,7 +2,7 @@
 title: Inventory Visibility-støtte for WMS-varer
 description: Denne artikkelen beskriver Lagersynlighet for varer som er aktivert for Warehouse Management-prosesser (WMS-varer).
 author: yufeihuang
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 54ce637d2d7b590988f7590eae5248276bcc4b96
-ms.sourcegitcommit: 28a726b3b0726ecac7620b5736f5457bc75a5f84
+ms.openlocfilehash: bed402ecf20c19e81b2687efd90dba600460971a
+ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9066618"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "9762761"
 ---
 # <a name="inventory-visibility-support-for-wms-items"></a>Inventory Visibility-støtte for WMS-varer
 
@@ -45,17 +45,17 @@ Når du bruker funksjonen Avansert WMS for lagersynlighet, er alle spørringsres
 
 ## <a name="when-to-use-the-feature"></a>Når funksjonen skal brukes
 
-Vi anbefaler at du bruker funksjonen Avansert WMS for lagersynlighet i scenarioer der alle følgende betingelser er oppfylt:
+Vi anbefaler at du bruker funksjonen WMS for lagersynlighet i scenarioer der alle følgende betingelser er oppfylt:
 
 - Du synkroniserer Supply Chain Management-data med lagersynlighet.
 - Du bruker WMS i Supply Chain Management.
-- Brukere foretar reservasjoner for WMS-varer på andre nivåer enn lagernivå (for eksempel fordi du bruker lagerarbeid).
+- Brukere foretar reservasjoner for WMS-varer på nivåer under lagernivå (for eksempel på nummerskiltnivå, fordi du behandler lagerarbeid).
 
 I andre scenarioer vil beholdningsspørringsresultatene være like, uansett om funksjonen Avansert WMS for lagersynlighet er aktivert. I tillegg vil ytelsen være bedre hvis du ikke aktiverer funksjonen i disse scenarioene, fordi det er færre beregninger og færre indirekte kostnader.
 
-## <a name="enable-the-advanced-wms-feature-for-inventory-visibility"></a>Aktiver funksjonen Avansert WMS for lagersynlighet
+## <a name="enable-the-wms-feature-for-inventory-visibility"></a>Aktiver funksjonen WMS for lagersynlighet
 
-For å aktivere funksjonen Avansert WMS for lagersynlighet følger du denne fremgangsmåten.
+For å aktivere funksjonen WMS for lagersynlighet følger du denne fremgangsmåten.
 
 1. Logg deg på Supply Chain Management som en administrator.
 1. Åpne arbeidsområdet [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), og aktiver følgende funksjoner i denne ordren:
@@ -65,7 +65,7 @@ For å aktivere funksjonen Avansert WMS for lagersynlighet følger du denne frem
 
 1. Gå til **Lagerstyring \> Oppsett \> Parametere for integrering av lagersynlighet**.
 1. På **Aktiver WMS-varer**-fanen angir du **Aktiver WMS-varer**-alternativet til *Ja*.
-1. Logg på Power Apps.
+1. Logg deg på Power Apps-miljøet, og åpne **Lagersynlighet**.
 1. Åpne **Konfigurasjon**-siden og aktiver funksjonen **AdvancedWHS** på fanen *Funksjonsbehandling*.
 1. I Supply Chain Management går du til **Lagerstyring \> Regelmessige oppgaver \> Integrering av lagersynlighet**.
 1. Velg **Deaktiver** i handlingsruten for å deaktivere lagersynlighet midlertidig.
@@ -82,21 +82,24 @@ Resultatene fra spørringer for WMS-varer er egentlig de samme som resultatene f
 - `ReservOrdered`
 - `ReservPhysical`
 
-Alle andre fysiske mål beregnes på samme måte som de er når funksjonen Avansert WMS for lagersynlighet er deaktivert.
+Alle andre fysiske mål beregnes på samme måte som de er når funksjonen WMS for lagersynlighet er deaktivert.
 
 Hvis du vil ha detaljert informasjon om hvordan lagerbeholdninger for WMS-varer fungerer, kan du se det tekniske dokumentet [Reservasjoner i lagerstyring](https://www.microsoft.com/download/details.aspx?id=43284).
 
-Dataenhetene som blir eksportert til Dataverse, kan ennå ikke oppdatere antallet for WMS-varer. Antallene som vises i dataenhetene, er riktige både for varer som ikke er WMS-varer og for antall som ikke berøres av WMS-logikken (det vil si mål unntatt `AvailPhysical`, `AvailOrdered`, `ReservPhysical` og `ReservOrdered` i `fno`-datakilden).
+## <a name="on-hand-list-view-and-data-entity-for-wms-items"></a>Lagerlistevisning og dataenhet for WMS-varer
 
-Det er ikke tillatt å endre WMS-vareantall som er lagret i Supply Chain Management-datakilden. På samme måte som andre funksjoner i lagersynlighet fremtvinges denne begrensningen for å forhindre konflikter.
+På siden **Forhåndslast lagersynlighetssammendraget** finner du en visning for enheten *Forhåndslast lagerindeksspørring*. I motsetning til enheten *Lagersammendrag* inneholder enheten *Forhåndslast lagerindeksspørring* en lagerbeholdningsliste for produkter sammen med valgte dimensjoner. Lagersynlighet synkroniserer de forhåndslastede sammendragsdataene hvert 15. minutt.
 
-## <a name="soft-reservations-on-wms-items-in-inventory-visibility"></a>Ikke-forpliktende reservasjoner for WMS-varer i lagersynlighet
+Hvis du bruker lagersynlighet med WMS-varer og vil vise lagerbeholdningslisten for WMS-varer, anbefaler vi at du aktiverer funksjonen *Forhåndslast sammendrag av lagersynlighet* (se også se også [Forhåndslast en strømlinjeformet spørring på lager](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). Tilsvarende dataenhet i Dataverse-butikker lagrer forhåndslastingsresultat, som oppdateres hvert 15. minutt. Navnet på dataenheten er `Onhand Index Query Preload Result`.
 
-Generelt støttes [ikke-forpliktende reservasjoner](inventory-visibility-reservations.md) på WMS-varer. Du kan inkludere WMS-relaterte fysiske mål i beregninger for ikke-forpliktende reservasjoner. 
+> [!IMPORTANT]
+> Dataverse-enheten er skrivebeskyttet. Du kan vise og eksportere dataene i lagersynlighetsenhetene, men **ikke endre dem**.
 
-I en kjent begrensning støttes ikke den *tilgjengelige for reservasjonsberegning* for WMS-varer. Hvis det er reservasjon over de nåværende dimensjonene der det forekommer en ikke-forpliktende reservasjon, er derfor *tilgjengelig for reservasjonsberegning* feil. Ikke-forpliktende reservasjoner påvirkes ikke når alternativet **ifCheckAvailForReserv** er deaktivert i [API-en for ikke-forpliktende reservasjon](inventory-visibility-api.md#create-one-reservation-event).
+Det er ikke tillatt å endre WMS-vareantall som er lagret i Supply Chain Management-datakilden (`fno`). Denne virkemåten samsvarer med virkemåten til andre funksjoner i Lagersynlighet. Denne begrensningen fremtvinges for å forhindre konflikter.
 
-Denne begrensningen gjelder også funksjoner og tilpasninger som er basert på ikke-forpliktende reservasjoner (som tildeling).
+## <a name="wms-item-compatibility-for-other-functions-in-inventory-visibility"></a>WMS-varekompatibilitet for andre funksjoner i Lagersynlighet
+
+[Ikke-forpliktende reservasjoner](inventory-visibility-reservations.md) og [lagertilordning](inventory-visibility-allocation.md) av WMS-varer støttes. Du kan inkludere WMS-relaterte fysiske mål i beregninger for ikke-forpliktende reservasjoner og tildelinger.
 
 ## <a name="calculate-available-to-promise-quantities"></a>Beregn antall for tilgjengelig for ordre
 

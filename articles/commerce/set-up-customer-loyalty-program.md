@@ -2,26 +2,22 @@
 title: Fordelsoversikt
 description: Denne artikkelen beskriver fordelsfunksjonene i Dynamics 365 Commerce og de tilhørende oppsettrinnene som hjelper forhandleren med å komme i gang med sine fordelsprogrammer.
 author: josaw1
-ms.date: 07/21/2020
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 16201,  ""intro-internal
+ms.custom: 16201, "intro-internal"
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
-ms.search.industry: Retail
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
-ms.openlocfilehash: e1b2a5ec6d1a2b925ccae07b5217fbb24a2e6a10
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 17742bb5c0091804fc6f43bb2aabb7af73229890
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9277995"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9784971"
 ---
 # <a name="loyalty-overview"></a>Fordelsoversikt
 
@@ -36,6 +32,11 @@ Du kan definere fordelsprogrammet slik at det inneholder følgende alternativer:
 - Definer opptjeningsregler for å identifisere aktivitetene som en kunde må fullføre for å oppnå fordeler. Du kan også definere innløsingsregler for å identifisere når og hvordan en kunde kan løse inn fordeler.
 - Utsted fordelskort fra en hvilken som helst kanal som deltar i fordelsprogrammet, og koble fordelskort til ett eller flere fordelsprogrammer som kunden kan delta i. Du kan også koble en kundepost til et fordelskort for å la kunden samle fordelspoeng fra flere kort og løse dem inn.
 - Juster fordelskort manuelt, eller overføre fordelssaldoen fra ett kort til et annet for å ta hensyn til eller belønner en kunde.
+
+Følgende video gir en oversikt og demo av funksjoner for fordelsfunksjonene i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5c2wW]
 
 ## <a name="setting-up-loyalty-programs"></a>Konfigurering av fordelsprogrammer
 

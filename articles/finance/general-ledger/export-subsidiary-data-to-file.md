@@ -2,23 +2,23 @@
 title: Eksportere data for et datterselskap til filer
 description: Denne artikkelen forklarer hvordan du forbereder å eksportere data fra Microsoft Dynamics 365 Finance og deretter importerer dem til en konsolidert juridisk enhet.
 author: jinniew
-ms.date: 10/09/2020
+ms.date: 11/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7c5334e206d28a5ae1c8097db5356cd1057b7180
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 30d69f9a2813621df410a29568644f264392fb49
+ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876160"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "9779968"
 ---
 # <a name="export-subsidiary-data-to-files"></a>Eksportere data for et datterselskap til filer
 
@@ -32,14 +32,14 @@ Du bruker siden **Eksport** (**Systemadministrasjon \> Arbeidsområder \> Import
 
     | Felt                             | beskrivelse |
     |-----------------------------------|-------|
-    | Hovedkonto                      | Angi kontoene som skal konsolideres. Hvis du vil inkludere alle kontoene, lar du dette feltet stå tomt. |
-    | Bruke konsolideringskonto         | Hvis du har angitt konsolideringskontoer, setter du dette alternativet til **Ja**. |
-    | Velg konsernkonto fra | Velg enten **Hovedkonto** eller **Konsolideringskontogruppe**. |
-    | Konsernkontogruppe       | Velg en konsolideringskontogruppe for konsolideringskontoen som du valgte. |
-    | Konsolideringsperiode              | Angi "fra"- og "til"-datoer for konsolideringen. |
-    | Inkluder faktiske beløp            | Sett dette alternativet til **Ja** for å inkludere faktiske beløp. |
-    | Inkluder budsjettbeløp            | Sett dette alternativet til **Ja** for å inkludere budsjettbeløp i konsolideringer. |
-    | Budsjettmodeller                     | Angi budsjettmodellen som skal tas med. |
+    | **Hovedkonto**                      | Angi kontoene som skal konsolideres. Hvis du vil inkludere alle kontoene, lar du dette feltet stå tomt. |
+    | **Bruke konsolideringskonto**         | Hvis du har angitt konsolideringskontoer, setter du dette alternativet til **Ja**. |
+    | **Velg konsernkonto fra** | Velg enten **Hovedkonto** eller **Konsolideringskontogruppe**. |
+    | **Konsernkontogruppe**       | Velg en konsolideringskontogruppe for konsolideringskontoen som du valgte. |
+    | **Konsolideringsperiode**              | Angi "fra"- og "til"-datoer for konsolideringen. |
+    | **Inkluder faktiske beløp**            | Sett dette alternativet til **Ja** for å inkludere faktiske beløp. |
+    | **Inkluder budsjettbeløp**            | Sett dette alternativet til **Ja** for å inkludere budsjettbeløp i konsolideringer. |
+    | **Budsjettmodeller**                     | Angi budsjettmodellen som skal tas med. |
 
 3. Angi detaljene for konsolideringen i kategorien **Finansdimensjoner**:
 

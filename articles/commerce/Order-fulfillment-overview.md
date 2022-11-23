@@ -1,35 +1,37 @@
 ---
 title: Butikkordreoppfyllelse
-description: Denne artikkelen gir en oversikt over butikkordreoppfyllelse.
+description: Denne artikkelen gir en oversikt over butikkordreoppfyllelse i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/16/2022
 ms.topic: overview
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailStoreTable, RetailTillLayout
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f0b6ff8ec105da04b4b2416d8f6864c70c92fc
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: bf338c6d0b6a237cad2974d36c23238029fe9b38
+ms.sourcegitcommit: 774f8f97a0b14cf1199bd1802178ccf536a25ade
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8854984"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "9785079"
 ---
 # <a name="store-order-fulfillment"></a>Butikkordreoppfyllelse
 
 [!include [banner](includes/banner.md)]
+
+Denne artikkelen gir en oversikt over butikkordreoppfyllelse i Microsoft Dynamics 365 Commerce.
 
 Mange forhandlere vil optimalisere ordreoppfyllelsen ved å la butikker oppfylle ordrer. Ordreoppfyllelse på butikknivå kan bidra til å forenkle scenarier med for store lagre for en bestemt butikk, eller det kan være nødvendig med hensyn til logistikk i tilfeller der en butikk har ekstra kapasitet eller befinner seg nærmere avstand for levering til kunden. For å løse dette behovet, er en enhetlig ordreoppfyllelsesoperasjon tilgjengelig på salgsstedet.
 
 Ordrer for oppfyllelse i en bestemt butikk har butikkens lager angitt i overskriften eller på linjene i ordren.
 
 Ordrefullføringen på salgsstedet gir et enkelt arbeidsområde på salgsstedet som kan brukes til å behandle ordrer. Dette omfatter alt fra å godta ordren, merke den som sendt eller starte butikkplukking.
+
+Følgende video gir en oversikt og demo av funksjoner for butikkinnfrielse i Dynamics 365 Commerce.
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRXE]
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Tilgang til enhetlig ordreoppfyllelse på salgsstedet
 

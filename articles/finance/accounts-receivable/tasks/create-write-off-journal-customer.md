@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustParameters, CustPosting, DefaultDashboard, CustCollectionsPoolsListPage, CustWriteOff, LedgerJournalTable, LedgerJournalTransDaily, CustCollections, CustOpenInvoicesListPage, CustTable
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7da01759fe4aaa7beb1719ede51ac0abfc3b404c
-ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
+ms.openlocfilehash: 21aaeda413e767fed1815423b0262127c6692bb6
+ms.sourcegitcommit: 9740f9b41a7dcf1821c6baccb2e05b9865ac2966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8713678"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9775306"
 ---
 # <a name="create-a-write-off-journal-for-a-customer"></a>Opprette en avskrivningsjournal for en kunde
 
@@ -48,9 +48,9 @@ Denne oppgaveveiledningen viser hvordan du definerer parameterne for avskrivning
 7. Gå til **Navigasjonsrute > Moduler > Økonomimodul > Journaloppføringer > Økonomijournaler**.
 8. Velg journalpartinummeret for journalen som inneholder avskrivningen. Det opprettes én linje for å tilbakeføre kundesaldoen. Én eller flere linjer opprettes for å postere avskrivningen til avskrivningskontoen.  
 9. Lukk siden.
-10. Lukk siden.
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Skriv av transaksjoner fra purreskjemaet.
+
+## <a name="write-off-transactions-from-the-collections-page"></a>Skriv av transaksjoner fra purresiden
 1. Gå til **Kreditt og innkreving > Innkrevinger > Aldersfordelte saldoer**.
 2. Velg navnet på kunden som har transaksjonene du vil skrive av. Velg for eksempel Cave Wholesales (US-004).
 3. Merk raden for den første transaksjonen.
@@ -63,7 +63,7 @@ Denne oppgaveveiledningen viser hvordan du definerer parameterne for avskrivning
 10. Gå til **Økonomimodul > Journaloppføringer > Økonomijournaler**.
 11. Velg journalpartinummeret for journalen som inneholder avskrivningen. Det opprettes én linje for å tilbakeføre kundesaldoen. Én eller flere linjer opprettes for å postere avskrivningen til avskrivningskontoen.  
 12. Lukk siden.
-13. Lukk siden.
+
 
 ## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Skrive av en faktura fra siden Åpne kundefakturaer
 1. Gå til **Navigasjonsrute > Moduler > Kunder > Fakturaer > Åpne fritekstfakturaer**.
