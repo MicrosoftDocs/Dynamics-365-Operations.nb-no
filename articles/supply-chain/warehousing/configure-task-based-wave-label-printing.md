@@ -2,7 +2,7 @@
 title: Planlegge bølgeetikettutskrift under bølge
 description: Denne artikkelen beskriver hvordan du definerer og bruker funksjonaliteten for oppgavebasert bølgeetikettutskrift.
 author: perlynne
-ms.date: 06/09/2021
+ms.date: 12/02/2022
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ac2bc4cce42bada43334b82301d716414cd6d654
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e788e5a9206e46ada6490d4a0196c7ea8ca6af15
+ms.sourcegitcommit: 04e42c495d018e457fb3b038cadc4fe75ecbba12
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8889464"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9822369"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planlegge bølgeetikettutskrift under bølge
 
@@ -32,7 +32,6 @@ Når du bruker funksjonen *Oppgavebasert bølgeetikettutskrift*, oppretter syste
 
 Hvis du vil bruke funksjonene som beskrives i denne artikkelen, må de være aktivert på systemet. Bruk arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonene i følgende rekkefølge:
 
-1. *Bølgeetikettutskrift* – Denne funksjonen er nødvendig for å aktivere bølgeprosessmetoden for utskrift av bølgeetiketter.
 1. *Organisasjonsomfattende arbeidsblokkering* – Denne funksjonen kreves for både manuell og automatisk konfigurasjon av planlagt arbeidsopprettelse. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)
 1. *Oppgavebasert bølgeetikettutskrift* – Denne funksjonen kreves for å dele opp utskrift av bølgeetiketter til et separat transaksjonsområde.
 

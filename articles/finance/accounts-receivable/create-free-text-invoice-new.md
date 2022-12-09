@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 4298d7114e0237072c242e83e51951a922e34e5a
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: e8f80aa4cc0a7248506e0725881b8f575a0c7ff4
+ms.sourcegitcommit: 29d9a7573bdac004726da88a9d7b2cc9c383e9ca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9780515"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9788547"
 ---
 # <a name="create-a-free-text-invoice"></a>Opprett en fritekstfaktura
 
@@ -69,6 +69,8 @@ Denne artikkelen forklarer hvordan du oppretter fritekstfakturaer. For denne fre
     * Du kan endre tidspunktet for fakturautskrifter. Velg **Gjeldende** for å skrive ut hver faktura når den oppdateres. Velg **Etter** for å skrive ut når alle fakturaene er oppdatert.
     * Hvis du vil endre hvordan kundens kredittgrense kontrolleres før fakturaen er postert, kan du endre verdien i **Kredittmaks.type**-feltet.
     * Du kan velge å stoppe postering av fritekstfaktura når det oppstår en feil på fanen **Oppdateringer** på siden **Kundeparametere** (**Kunder > Oppsett > Kundeparametere**). Velg **Ja** for parameteren **Stopp postering av fritekstfakturaer ved første feil** for å stoppe posteringen av fritekstfakturaer når det oppstår en feil. Hvis du posterer i en bunke, vil en feil stoppe posteringsprosessen og bunkestatusen settes til **Feil**. Hvis du ikke velger dette alternativet, hopper posteringsprosessen over en faktura med en posteringsfeil, og vil fortsette å postere flere fakturaer. Hvis du posterer i en bunke, vil ikke en posteringsfeil hindre at andre fakturaer posteres. Bunkestatusen vil være **Avsluttet**. En detaljert posteringsprosessrapport vil være tilgjengelig for gjennomgang i loggen for bunkejobber.
+    * I Microsoft Dynamics 365 Finance 10.0.30 vil funksjonen **Forbedring i postering av fritekstfaktura for beregning av totaler** forbedre posteringsytelsen ved å la den kjøre mer effektivt. Når denne funksjonen er aktivert, vil postering lagre de beregnede totalene i stedet for å beregne totalene på nytt flere ganger i løpet av posteringsprosessen. 
+    * I Microsoft Dynamics 365 Finance 10.0.31 vil funksjonen **Forbedring av partiposteringsprosess for fritekstfaktura** forbedre posteringsytelsen ved å la den kjøre mer effektivt. Når denne funksjonen er aktivert, bruker postering et mønster som selv styrer arbeidsmengden for satsvis postering på tvers av et fast antall tråder, i stedet for å tilordne et fast antall dokumenter over et ubegrenset antall tråder.
     * Velg **Ja** for å skrive ut fakturaen.
     * Velg **Ja** for å postere fakturaen. Du kan skrive ut fakturaen uten å postere den.
 

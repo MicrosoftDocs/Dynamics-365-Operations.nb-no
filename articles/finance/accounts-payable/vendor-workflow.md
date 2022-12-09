@@ -2,7 +2,7 @@
 title: Arbeidsflyt for leverandør
 description: Endre informasjon om leverandør og bruke arbeidsflyt til å godkjenne den.
 author: sunfzam
-ms.date: 08/24/2018
+ms.date: 11/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1801e3d90bbf80c59bb62329acc593d2c66a179c
-ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
+ms.openlocfilehash: cfc255265df48e4a47aee4f13016356fb4775aa7
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "8735674"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799471"
 ---
 # <a name="vendor-workflow"></a>Arbeidsflyt for leverandør
 
@@ -46,7 +46,7 @@ Før du kan bruke funksjonen for arbeidsflyt, må du aktivere den.
 
 ## <a name="change-vendor-information-and-submit-the-changes-to-the-workflow"></a>Endre leverandørinformasjon og sende inn endringene til arbeidsflyten
 
-Når du endrer et felt som er aktivert for arbeidsflyten, vises siden **Foreslått endringer**. Denne siden viser den opprinnelige verdien i feltet og den nye verdien du angav. Feltet du endret, tilbakestilles til opprinnelig verdi. En statusmelding informerer deg også om at endringene ikke har blitt sendt. 
+Når du endrer et felt som er aktivert for arbeidsflyten, vises siden **Foreslått endringer**. Denne siden viser den opprinnelige verdien i feltet og den nye verdien du angav. Feltet du endret, tilbakestilles til opprinnelig verdi. En statusmelding informerer deg om at endringene ikke har blitt sendt. 
 
 Hver gang du endrer et felt som er aktivert for arbeidsflyten, legges feltet til i listen på siden **Foreslåtte endringer**. Hvis du vil forkaste den foreslåtte verdien for et felt, bruker du **Forkast**-knappen ved siden av feltet i listen. Hvis du vil forkaste alle endringer, kan du bruke knappen **Forkast alle endringer** nederst på siden. Velg **OK** for å lukke siden.
 

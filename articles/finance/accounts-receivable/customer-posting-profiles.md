@@ -2,7 +2,7 @@
 title: Kundeposteringsprofiler
 description: Denne artikkelen beskriver kundeposteringsprofilser, som styrer posteringen av kundetransaksjoner til økonomimodulen.
 author: JodiChristiansen
-ms.date: 12/22/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0563040590eefab57706b183281c47a82e46076
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 04cf5b8656bccde974fb1adfdf830080e2f52436
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8891702"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799579"
 ---
 # <a name="customer-posting-profiles"></a>Kundeposteringsprofiler
 
@@ -58,15 +58,15 @@ Hvis du vil at alle kundetransaksjoner skal ha samme posteringsprofil, definerer
 </thead>
 <tbody>
 <tr>
-<td>Posteringsprofil</td>
+<td><strong>Posteringsprofil</strong></td>
 <td>Angi en kode for posteringsprofilen. Du kan for eksempel opprette to posteringsprofiler for å hente én konto for kundesaldoer i den nasjonale valutaen og en annen for kundesaldoer i en utenlandsk valuta. Du kan kalle den ene kontoen Nasjonal og den andre Utenlandsk.</td>
 </tr>
 <tr>
-<td>Beskrivelse</td>
+<td><strong>Beskrivelse</strong></td>
 <td>Angi en beskrivelse av posteringsprofilen. Dette brukes bare til å identifisere posteringsprofilen mer nøyaktig når du viser den på denne siden.</td>
 </tr>
 <tr>
-<td>Kontokode</td>
+<td><strong>Kontokode</strong></td>
 <td>Angi om posteringsprofilen gjelder en enkeltkunde, en gruppe kunder eller alle kunder:
 <ul>
 <li><b>Tabell</b> – Posteringsprofilen gjelder for en enkelt kunde. Velg kundekontoen i feltet <b>Konto/gruppenummer</b>.</li>
@@ -76,33 +76,33 @@ Hvis du vil at alle kundetransaksjoner skal ha samme posteringsprofil, definerer
 </td>
 </tr>
 <tr>
-<td>Konto/gruppenummer</td>
+<td><strong>Konto/gruppenummer</strong></td>
 <td>Hvis <b>Tabell</b> velges i feltet <b>Kontokode</b>, velger du kontonummeret til kunden som er knyttet til posteringsprofilen. Hvis <b>Gruppe</b> er valgt, velger du kundegruppen. Hvis <b>Alle</b> er valgt, lar du feltet stå tomt.</td>
 </tr>
 <tr>
-<td>Samlekonto</td>
+<td><strong>Samlekonto</strong></td>
 <td>Velg hovedkontoen som skal brukes som kundehandelskonto for kunder som er knyttet til posteringsprofilen. Denne kontoen er kontoen for posteringstypen <b>Kundesaldo</b>.</td>
 </tr>
 <tr>
-<td>Likviditetskonto for betalinger</td>
-<td>Velg likviditetsfinanskontoen som brukes for kontantstrømprognoser. Dette feltet vises bare hvis kontantstrømprognoser er aktivert.</td>
+<td><strong>Likviditetskonto for betalinger</strong></td>
+<td>Velg <strong>likviditetsfinanskontoen</strong> som brukes for kontantstrømprognoser. Dette feltet vises bare hvis kontantstrømprognoser er aktivert.</td>
 </tr>
 <tr>
-<td>Mva-forskuddsbetalinger</td>
+<td><strong>Mva-forskuddsbetalinger</strong></td>
 <td><p>Velg kontoen for merverdiavgift for forskuddsbetalte betalinger.</p>
 <p><strong>Merk:</strong> Bruk siden <b>Kundeparametere</b> for å angi posteringsprofilen som skal brukes når en betaling er merket som en forskuddsbetaling.</p>
 </td>
 </tr>
 <tr>
-<td>Konto for rabattavsetning</td>
+<td><strong>Konto for rabattavsetning</strong></td>
 <td>Velg finanskontoen for diskontoforpliktelser.</td>
 </tr>
 <tr>
-<td>Purreforløp</td>
+<td><strong>Purreforløp</strong></td>
 <td>Velg identifikatoren for purreforløpet som skal brukes for kunder som er tilordnet posteringsprofilen.</td>
 </tr>
 <tr>
-<td>Rentekode</td>
+<td><strong>Rentekode</strong></td>
 <td>Velg rentekoden som skal brukes for beregning av rente for kunder som er tilordnet posteringsprofilen.</td>
 </tr>
 </tbody>

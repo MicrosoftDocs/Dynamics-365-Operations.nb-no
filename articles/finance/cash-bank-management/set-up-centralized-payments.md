@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4843d9555b86c4ebe1edfe2da763f305357a7423
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 16548572cd70129efcc7dacf0236f3eb4b252d88
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715647"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804054"
 ---
 # <a name="set-up-centralized-payments"></a>Definere sentraliserte betalinger
 
@@ -34,7 +34,10 @@ Bruk denne fremgangsmåten til å klargjøre for behandling av betalinger i én 
 -   Definere konserninternt regnskap.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Definere et organisasjonshierarki for sentralisert betaling
-Du må definere et organisasjonshierarki for sentralisert betaling. Det samme organisasjonshierarkiet brukes til å behandle sentraliserte leverandørbetalinger og sentraliserte kundebetalinger. **Obs!**  Strukturen på hierarkiet spiller ingen rolle for sentraliserte betalinger. Alle juridiske enheter i hierarkiet kan behandle betalinger på vegne av andre juridiske enheter i hierarkiet. På siden **Organisasjonshierarkier** kan du opprette et nytt organisasjonshierarki. I **Formål**-feltet må du velge **Sentraliserte betalinger**. 
+Du må definere et organisasjonshierarki for sentralisert betaling. Det samme organisasjonshierarkiet brukes til å behandle sentraliserte leverandørbetalinger og sentraliserte kundebetalinger. 
+
+>[!Note] 
+>Strukturen på hierarkiet spiller ingen rolle for sentraliserte betalinger. Alle juridiske enheter i hierarkiet kan behandle betalinger på vegne av andre juridiske enheter i hierarkiet. På siden **Organisasjonshierarkier** kan du opprette et nytt organisasjonshierarki. I **Formål**-feltet må du velge **Sentraliserte betalinger**. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Konfigurere konserninternt regnskap for sentralisert betaling
 Når betalingstransaksjoner i gjeldende juridisk enhet utlignes mot fakturaer i andre juridiske enheter, opprettes de aktuelle inn- og utbetalingstransaksjonene for hver juridisk enhet. Du må angi den juridiske enheten hvor eventuelle kontantrabatter og realisert fortjeneste- eller tapsbeløp skal posteres. Før du begynner, må du avgjøre hvilken juridisk enhet du vil bruke til å behandle leverandør- og kundebetalinger. Hvis én juridisk enhet behandler leverandørbetalinger, men en annen juridisk enhet behandler kundebetalinger, må du bytte til hver enkelt juridiske enhet. På siden **Konserninternt regnskap** kan du velge en post for konsernintern relasjon for en juridisk enhet som du skal behandle betalinger på vegne av. 

@@ -2,7 +2,7 @@
 title: Lagrede visninger
 description: Denne artikkelen beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 03b0989d40882c3910b35744715c36babdcc3470
-ms.sourcegitcommit: e02bd317e96faf6182e70fb50b126868a94d9d06
+ms.openlocfilehash: 571a4f403da0d20256f788c791cab273827c91b5
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9757228"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799498"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
@@ -55,7 +55,7 @@ Visningsvelgeren har to størrelsesvariasjoner:
  
 Hvis du velger visningsnavnet, åpnes visningsvelgeren og viser listen over tilgjengelige visninger for siden.
 
-**Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren de tilgjengelige visningene i to deler. Den første delen viser alle visninger som gjelder for gjeldende juridiske enhet, og den andre viser visninger som er tilgjengelige for alle juridiske enheter. Den første delen er bare synlig hvis det finnes visninger for siden som er spesifikke for juridiske enheter.
+Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren de tilgjengelige visningene i to deler. Den første delen viser alle visninger som gjelder for gjeldende juridiske enhet, og den andre viser visninger som er tilgjengelige for alle juridiske enheter. Den første delen er bare synlig hvis det finnes visninger for siden som er spesifikke for juridiske enheter.
 
 - **Standardvisning** – **Standard**-visningen er standardvisningen av siden, der ingen tilpasninger er brukt.
 - **Personlige visninger** – Visningene uten hengelås representerer dine personlige visninger. Dette er visninger som enten du har opprettet, eller som en administrator har gitt deg.
@@ -81,7 +81,7 @@ Hvis du vil lagre disse endringene, følger du disse trinnene.
     1. Velg **Lagre som**. 
     2. I ruten **Lagre visning som** angir du et navn og eventuelt en beskrivelse for visningen.
     3. Hvis du vil at denne visningen skal være standardvisningen, velger du **Bruk som standard**. Hvis du vil ha mer informasjon om standardvisninger, kan du se delen [Endre standardvisningen](#changing-the-default-view) som følger. 
-    4. **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, kan du velge om du vil at denne visningen skal være tilgjengelig for alle juridiske enheter, eller bare et delsett av dem.
+    4. Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, kan du velge om du vil at denne visningen skal være tilgjengelig for alle juridiske enheter, eller bare et delsett av dem.
     5. Velg **Lagre**.
 
 ## <a name="changing-the-default-view"></a>Endre standardvisningen
@@ -90,7 +90,7 @@ Standardvisningen er visningen systemet prøver å åpne når du først åpner s
 
 > [!NOTE]
 > - I basisfunksjonen **Lagrede visninger** finnes det én enkelt, global standardvisning på tvers av juridiske enheter. Hvis du endrer standardvisningen, vil denne visningen åpnes som standard, uansett hvilken juridisk enhet du befinner deg i for øyeblikket.
-> - **Versjon 10.0.21 eller senere:** Når funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, kan hver juridiske enhet ha sin egen standardvisning per side.
+> - Når funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, kan hver juridiske enhet ha sin egen standardvisning per side.
 
 Følg disse trinnene for å endre standardvisningen for en side:
 
@@ -101,7 +101,7 @@ Følg disse trinnene for å endre standardvisningen for en side:
 Når du oppretter en ny visning (ved hjelp av **Lagre som**-handling), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.
 
 > [!WARNING]
-> I noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke kjøres første gang du åpner en side. Hvis du for eksempel åpner siden via en flis, blir flisens spørring kjørt uansett hvilken spørring som er knyttet til standardvisningen. Hvis du åpner en side som har en **Standard**-visning som allerede har en definert spørring, vil den opprinnelige spørringen kjøres i stedet for standardvisningens spørring. I dette tilfellet vil du motta en informasjonsmelding når visningen lastes inn. Hvis du bytter visning etter at siden er lastet, skal visningsspørringen kunne kjøres som forventet. I versjon 10.0.10 og senere vil informasjonsmeldingen du mottar, ha en innebygd handling som gir deg muligheten til å laste inn spørringen til standardvisningen direkte.
+> I noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke kjøres første gang du åpner en side. Hvis du for eksempel åpner siden via en flis, blir flisens spørring kjørt uansett hvilken spørring som er knyttet til standardvisningen. Hvis du åpner en side som har en **Standard**-visning som allerede har en definert spørring, vil den opprinnelige spørringen kjøres i stedet for standardvisningens spørring. I dette tilfellet vil du motten en informasjonsmeldingen når visningen lastes med en innebygd handling som gir deg muligheten til å laste inn spørringen til standardvisningen direkte. Hvis du bytter visning etter at siden er lastet, skal visningsspørringen kunne kjøres som forventet. 
 
 ## <a name="managing-personal-views"></a>Behandle personlige visninger
 

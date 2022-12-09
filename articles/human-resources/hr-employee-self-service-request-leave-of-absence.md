@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51c6cb7c5706bb4bd7080c7f7d679e49771443d1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e6c98246e94670dd5f882fcbbd1f269e57f66faf
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8869843"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805294"
 ---
 # <a name="request-a-leave-of-absence"></a>Be om permisjon
 
@@ -51,6 +51,22 @@ Du kan sende en permisjonsforespørsel og se statusen på forespørslene i Dynam
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Mer** (...) på flisen **Avspaseringssaldoer**.
 
 2. For å se permisjonsforespørslene dine velger du **Se permisjon**.
+
+## <a name="update-a-leave-of-absence-request"></a>Oppdatere en permisjonsforespørsel
+
+1. I arbeidsområdet **Ansattselvbetjening** velger du **Mer (...)** på flisen **Permisjon**.
+2. Velg fraværsforespørselen som skal oppdateres, og velg deretter **Oppdatert permisjon**.
+3. Oppdater verdien i feltet **Sluttdato** etter behov for å forlenge eller forkorte fraværet.
+4. Hvis sluttdatoen er bekreftet, setter du alternativet **Bekreft sluttdato** til **Ja**.
+5. Når alternativet **Bekreft sluttdato** er satt til **Ja**, kan du laste opp et varsel om retur til arbeid. Merk deretter av for å bekrefte at en retur til-arbeid-melding er lastet opp.
+6. Velg **Send** for å oppdatere fraværsforespørselen.
+
+## <a name="cancel-a-leave-of-absence-request"></a>Avbryte en permisjonsforespørsel
+
+1. I arbeidsområdet **Ansattselvbetjening** velger du **Mer (...)** på flisen **Permisjon**.
+2. Velg fraværsforespørselen som skal avbrytes, og velg deretter **Oppdatert permisjon**.
+3. Sett alternativet **Avbryt permisjon** til **Ja**.
+4. Velg **Send** for å avbryte fraværsforespørselen.
 
 ## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importere permisjonsforespørsler fra andre systemer eller eldre systemer
 

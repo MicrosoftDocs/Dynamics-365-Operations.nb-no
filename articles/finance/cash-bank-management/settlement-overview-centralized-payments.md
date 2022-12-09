@@ -2,7 +2,7 @@
 title: Oversikt over utligning for sentraliserte betalinger
 description: Denne artikkelen beskriver utligning for sentrale betalinger for Microsoft Dynamics 365 Finance.
 author: angelad116
-ms.date: 08/02/2018
+ms.date: 11/22/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef71520df5cdae192355e512238d03c1f21b901f
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 42c359edbe49af151ac76c9873c0d429bbe1ca12
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151183"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804233"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Oversikt over utligning for sentraliserte betalinger
 
@@ -84,11 +84,11 @@ Kontantrabatter som genereres under utligningsprosessen mellom firmaer, blir pos
 
 Toleranse for overbetalinger/underbetalinger og øredifferanse blir bestemt basert på den juridiske enheten til betalingen av overbetalingene, og på den juridiske enheten til fakturaen av underbetalingene. Posteringskontoen som brukes, avhenger av innstillingen i feltet **Håndtering av kontantrabatt** på **Kundeparametere**-siden for kunder, og feltet **Håndtering av kontantrabatt** på  **Leverandørparametere**-siden for leverandører.
 
--   Hvis innstillingen for behandling av kontantrabatt er Spesifikk, eller hvis innstillingen er Løs og gjeldende kontantrabatt blir postert i en annen juridisk enhet enn for overbetalingen, brukes den automatiske kontoen for kundekontantrabatt, leverandørkontantrabatt eller øredifferanse i regnskapsvalutaen. Du kan angi disse kontoene på siden **Kontoer for automatiske transaksjoner**.
--   Hvis innstillingen for behandling av kontantrabatt er Løs og kontantrabatten blir postert i den samme juridiske enheten som for overbetalingen (den juridiske enheten for betalingen og den juridiske enheten fakturaen er det samme), blir kontantrabattbeløpet justert. Hvis det for eksempel utlignes en faktura på 100,00, med en tilgjengelig kontantrabatt på 3,00 og en betaling på 98,00, blir kontantrabattbeløpet justert med 1,00. Nettorabattbeløpet er 2,00.
--   Hvis innstillingen for behandling av kontantrabatt er Løs, blir kontantrabatten postert i den samme juridiske enheten som for overbetalingen, og overbetalingen eller underbetalingen blir utlignet med flere fakturaer med kontantrabatter, blir kontantrabattkontoen for den siste fakturaen justert.
+-   Hvis innstillingen for behandling av kontantrabatt er **Spesifikk**, eller hvis innstillingen er **Løs** og gjeldende kontantrabatt blir postert i en annen juridisk enhet enn for overbetalingen, brukes den automatiske kontoen for kundekontantrabatt, leverandørkontantrabatt eller øredifferanse i regnskapsvalutaen. Du kan angi disse kontoene på siden **Kontoer for automatiske transaksjoner**.
+-   Hvis innstillingen for behandling av kontantrabatt er **Løs** og kontantrabatten blir postert i den samme juridiske enheten som for overbetalingen (den juridiske enheten for betalingen og den juridiske enheten fakturaen er det samme), blir kontantrabattbeløpet justert. Hvis det for eksempel utlignes en faktura på 100,00, med en tilgjengelig kontantrabatt på 3,00 og en betaling på 98,00, blir kontantrabattbeløpet justert med 1,00. Nettorabattbeløpet er 2,00.
+-   Hvis innstillingen for behandling av kontantrabatt er **Løs**, blir kontantrabatten postert i den samme juridiske enheten som for overbetalingen, og overbetalingen eller underbetalingen blir utlignet med flere fakturaer med kontantrabatter, blir kontantrabattkontoen for den siste fakturaen justert.
 
-Hvis innstillingen for behandling av kontantrabatt er Løs, gjelder reglene for uspesifisert betalingsutligning bare i følgende situasjoner:
+Hvis innstillingen for behandling av kontantrabatt er **Løs**, gjelder reglene for uspesifisert betalingsutligning bare i følgende situasjoner:
 -   Det finnes en overbetaling.
 -   Overbetalingen utlignes med en eller flere fakturaer som har kontantrabatt.
 -   Kontantrabatten posteres i den samme juridiske enheten som overbetalingen.

@@ -9,18 +9,18 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.16
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: 5936d16039927812dabf99bd770afcc0e827f1ca
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: c899bd020ec9536a906a98635a6c70fac1355789
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276723"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819276"
 ---
 # <a name="configure-sales-tax-for-online-orders"></a>Konfigurer merverdiavgift for elektroniske ordrer
 
@@ -33,6 +33,8 @@ Du kan få e-handelskanalen til å støtte alternativer som levering eller henti
 ## <a name="destination-based-taxes-for-online-orders"></a>Destinasjonsbaserte avgifter for nettordrer
 
 Vanligvis defineres avgifter for nettbestillinger som sender til kundeadresser, av destinasjonen. Hver mva-gruppe har en destinasjonsbasert mva-konfigurasjon der virksomheten kan definere måldetaljer som land eller område, fylke, region og poststed i et hierarkisk skjema.
+
+Du finner konfigurasjon for **Avgift basert på destinasjon for detaljhandel** i delen **Avgiftsmodul > Indirekte avgifter > Utgående merverdiavgift > Mva-grupper** .
 
 ### <a name="orders-delivered-to-customer-address"></a>Bestillinger levert til kundeadresse
 

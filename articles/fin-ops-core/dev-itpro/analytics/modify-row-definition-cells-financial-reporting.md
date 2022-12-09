@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6c3e9323c2011f7ca6ceb9926575d661c5269e22
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: 1c125369a5b2134759bf3650175276acf42b69e0
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135547"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802830"
 ---
 # <a name="modify-row-definition-cells"></a>Endre celler for raddefinisjon
 
@@ -30,7 +30,7 @@ Denne artikkelen beskriver informasjonen som kreves for hver celle i en raddefin
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Angi en radkode i en raddefinisjon
 
-I raddefinisjoner identifiserer tall eller etiketter **Radkode**-cellen hver linje i raddefinisjonen. Du kan angi radkoden for å referere til data i beregninger og totaler.
+I raddefinisjoner identifiserer tall eller etiketter i **Radkode**-cellen hver linje i raddefinisjonen. Du kan angi radkoden for å referere til data i beregninger og totaler.
 
 ### <a name="row-code-requirements"></a>Krav til radkode
 
@@ -51,12 +51,12 @@ Eksemplene nedenfor er gyldige rad oder:
 
 ### <a name="change-a-row-code-in-a-row-definition"></a>Endre en radkode i en raddefinisjon
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. Angi den nye verdien i cellen i **Radkode**-kolonnen i den aktuelle raden.
 
 ### <a name="reset-numeric-row-codes"></a>Tilbakestille numeriske radkoder
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. På **Rediger**-menyen klikker du **Nummerer rader**.
 3. I dialogboksen **Nummerer rader** angir du nye verdier for den første radkoden og radkodeintervallet. Du kan tilbakestille de numeriske radkodene til verdier med lik avstand. Rapportutforming nummererer imidlertid bare radkoder som begynner med tall (for eksempel 130 eller 246). Den nummerere ikke radkoder som begynner med bokstaver (for eksempel INCOME\_93 eller TP0693).
 
@@ -71,19 +71,19 @@ Beskrivelsescellen inneholder beskrivelsen av de økonomiske dataen i raden i ra
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Legge til beskrivelsen for en linje i en rapport
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. Velg **Beskrivelse**-cellen, og skriv deretter inn navnet på rapportraden.
 3. Bruke formatering.
 
 ### <a name="add-additional-text-from-a-reporting-tree-in-the-description"></a>Legge til tilleggstekst fra et rapporteringstre i beskrivelsen
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. Angi koden for tilleggsteksten og eventuell annen tekst i det aktuelle **Beskrivelse**-cellen.
 3. Bruke formatering.
 
 ### <a name="limit-the-additional-text-to-a-specific-reporting-unit"></a>Begrense tilleggsteksten til en bestemt rapporteringsenhet
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. Finn raden der resten av teksten skal opprettes, og dobbeltklikk deretter cellen i Kolonnen **Relaterte formler/rader/enheter**.
 3. I dialogboksen **Valg av rapporteringsenhet**, i **Rapporteringstre**-feltet, velger du et rapporteringstre.
 4. Vis eller skjul rapporteringstreet i feltet **Velg rapporteringsenhet for begrensning**, og velg deretter en rapporteringsenhet.
@@ -96,14 +96,14 @@ Beskrivelsescellen inneholder beskrivelsen av de økonomiske dataen i raden i ra
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Legge til en formatkode i en rapportrad
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter velger du raddefinisjonen som skal endres.
+1. I Report Designer klikker du **Raddefinisjoner**, og deretter velger du raddefinisjonen som skal endres.
 2. Dobbeltklikk **Formatkode**-cellen.
 3. Velg en formatkode i listen. Tabellen nedenfor beskriver formatkodene og handlingene.
 
     | Formatkode                   | Tolkning av formatkoden | Handling |
     |-------------------------------|-----------------------------------|--------|
     | (Ingen)                        |                                   | Tømmer **Formatkode**-cellen. |
-    | TOT                           | Sum                             | Identifiserer en rad som bruker matematiske operatorer i kolonnen **Relaterte formler/rader/enheter**. Totaler inneholder enkle operatorer, for eksempel **+** eller **-**. |
+    | TOT                           | Totalsum                             | Identifiserer en rad som bruker matematiske operatorer i kolonnen **Relaterte formler/rader/enheter**. Totaler inneholder enkle operatorer, for eksempel **+** eller **-**. |
     | CAL                           | Beregning                       | Identifiserer en rad som bruker matematiske operatorer i kolonnen **Relaterte formler/rader/enheter**. Beregninger inneholder komplekse operatorer, for eksempel **+**, **-**, **\**_, _*/** og **IF/THEN/ELSE**-setninger. |
     | DES                           | beskrivelse                       | Identifiserer en overskriftslinje eller en tom linje i en rapport. |
     | LFT RGT CEN                   | Venstre Høyre Midt                 | Justerer den radbeskrivelsen på rapportsiden uavhengig av tekstens plassering i kolonnedefinisjonen. |
@@ -149,7 +149,7 @@ Når du oppretter en radsumformel, må du bruke radkoder til å angi hvilke rade
 
 ### <a name="create-a-row-total"></a>Opprette en radsum
 
-1. Klikk **Raddefinisjoner** i Rapportutforming, og åpne deretter raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. Dobbeltklikk **Formatkode**-cellen i raddefinisjonen, og velg **TOT**.
 3. I cellen **Relaterte formler/rader/enheter** skriver du inn totalformelen.
 
@@ -162,7 +162,7 @@ I **Formatkode**-kolonnen i en raddefinisjon, angir formatkodene **DES**, **LFT*
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Knytte en formatrad til en beløpsrad
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter velger du raddefinisjonen som skal endres.
+1. I Report Designer klikker du **Raddefinisjoner**, og deretter velger du raddefinisjonen som skal endres.
 2. I formateringsraden i cellen **Relaterte formler/rader/enheter**, skriver du inn radkoden for beløpsraden som skal skjules.
 
     > [!NOTE]
@@ -192,13 +192,13 @@ I en kolonnedefinisjon indikerer kolonnetypen **BRGN** en kolonne som angir en f
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Velge basisraden i en raddefinisjon for en kolonneberegning
 
-1. I Rapportutforming klikker du **Kolonnedefinisjoner**, og deretter åpner du kolonnedefinisjonen for er resultatregnskap.
+1. I Report Designer klikker du **Kolonnedefinisjoner**, og deretter åpner du kolonnedefinisjonen for er resultatregnskap.
 2. Legg til en ny kolonne i kolonnedefinisjonen, og sett kolonnetypen til **CALC**.
 3. I **Formel**-cellen for den nye kolonnen skriver du inn formelen **X/BASEROW**, der **X** **FD**-kolonnetypen å se en prosent av.
 4. Dobbeltklikk cellen **Format/valutaoverstyring**.
-5. I dialogboksen **Overstyr format** i **Formatkategori**-listen, velger du **Prosent** og klikker deretter **OK**.
+5. I dialogboksen **Formatoverstyring** i **Formatkategori**-listen, velger du **Prosent** og klikker deretter **OK**.
 6. På **Fil**-menyen klikker du **Lagre som** for å lagre kolonnedefinisjonen med et nytt navn. Legg til **CBR** i gjeldende filnavn (for eksempel **CUR\_YTD\_CBR**). Kolonnedefinisjonen er basisraddefinisjonen for kolonnen.
-7. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres, ved å bruke basisradberegningen.
+7. I Report Designer klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres, ved å bruke basisradberegningen.
 8. Sette inn en ny rad over raden der basisradberegningen skal starte.
 9. Dobbeltklikk **Formatkode**-cellen i raddefinisjonen, og velg deretter **CBR**.
 10. I cellen **Relaterte formler/rader/enheter** skriver du inn radkodenummer for basisraden.
@@ -227,7 +227,7 @@ Sorteringskoder sorterer kontoer eller verdier, sorterer en faktisk rapport elle
 
 ### <a name="select-a-sorting-code"></a>Velge en sorteringskode
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. Dobbeltklikk **Formatkode**-cellen, og velg deretter en sorteringskode.
 3. I cellen **Relaterte formler/rader/enheter** angir du området for radkodene som skal sorteres. Hvis du vil angi et område, angir du den første radkoden, et kolon (:) og den siste radkoden. Skriv for eksempel **160:490** for å angi at område er rad 160 til rad 490.
 4. I **Kolonnebegrensning**-cellen skriver du inn bokstaven på rapportkolonnen som skal brukes for sorteringen.
@@ -239,25 +239,25 @@ Sorteringskoder sorterer kontoer eller verdier, sorterer en faktisk rapport elle
 
 I eksemplet nedenfor, vil verdiene i kolonne D for rapporten sorteres i stigende rekkefølge for radene 160 gjennom 490. I tillegg vil de absolutte verdiene i kolonne G for rapporten sorteres i synkende rekkefølge for radene 610 til 940.
 
-| Radkode | Beskrivelse                                         | Formatkode | Relaterte formler/rader/enheter | Vanlig saldo | Kolonnebegrensning | Kobling til finansdimensjoner |
-|----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
-| 100      | Sortert etter månedlige avvik i stigende rekkefølge       | DES         |                             |                |                    |                              |
-| 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
-| 160      | Salg                                               |             |                             | C              |                    | 4100                         |
-| 190      | Salgsreturer                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 490      | Renteinntekter                                     |             |                             | C              |                    | 7000                         |
-| 520      |                                                     | DES         |                             |                |                    |                              |
-| 550      | Sortert etter absolutt avvik hittil i år i synkende rekkefølge | DES         |                             |                |                    |                              |
-| 580      |                                                     | ASORTDESC   | 610:940                     |                | G                  |                              |
-| 610      | Salg                                               |             |                             | K              |                    | 4100                         |
-| 640      | Salgsreturer                                       |             |                             |                |                    | 4110                         |
-|          | ...                                                 |             |                             |                |                    |                              |
-| 940      | Renteinntekter                                     |             |                             | K              |                    | 7000                         |
+| Radkode | Beskrivelse                             | Formatkode | Relaterte formler/rader/enheter | Vanlig saldo | Kolonnebegrensning | Kobling til finansdimensjoner |
+|----------|-----------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
+| 100      | Sortert etter månedlige avvik i stigende rekkefølge       | DES         |                |                |                    |                              |
+| 130      |                                        | SORT        | 160:490                     |                | D                  |                              |
+| 160      | Salg                                   |             |                             | C              |                    | 4100                         |
+| 190      | Salgsreturer                        |             |                             |                |                    | 4110                         |
+|          | ...                             |             |                             |                |                    |                              |
+| 490      | Renteinntekter              |             |                             | C              |                    | 7000                         |
+| 520      |                                     | DES         |                             |                |                    |                              |
+| 550      | Sortert etter absolutt avvik hittil i år i synkende rekkefølge | DES         |             |                |                    |                              |
+| 580      |                              | ASORTDESC   | 610:940                     |                | G                  |                              |
+| 610      | Salg                     |             |                             | K              |                    | 4100                         |
+| 640      | Salgsreturer                |             |                             |                |                    | 4110                         |
+|          | ...                       |             |                             |                |                    |                              |
+| 940      | Renteinntekter               |             |                             | K              |                    | 7000                         |
 
 
 ## <a name="specify-a-format-override-cell"></a>Angi en celle for formatoverstyring
-**Overstyr format**-cellen angir formateringen som brukes for raden når rapporten skrives ut. Denne formateringen overstyrer formateringen som er angitt i kolonnedefinisjonen og rapportdefinisjonen. Formateringen som er angitt i disse definisjonene er som standard valutaen. Hvis én rad av rapporten viser antall aktiva, for eksempel antall bygninger, og en annen rad viser pengeverdien for disse aktivaene, kan du overstyre valutaformateringen og angi numerisk formatering for raden som angir antall bygninger. Du kan angi denne informasjonen i dialogboksen **Overstyre format**. De tilgjengelige alternativene avhenger av formatkategorien du velger. **Eksempel**-området i dialogboksen viser eksempelformater. Følgende formatkategorier er tilgjengelige:
+**Overstyr format**-cellen angir formateringen som brukes for raden når rapporten skrives ut. Denne formateringen overstyrer formateringen som er angitt i kolonnedefinisjonen og rapportdefinisjonen. Formateringen som er angitt i disse definisjonene er som standard valutaen. Hvis én rad av rapporten viser antall aktiva, for eksempel antall bygninger, og en annen rad viser pengeverdien for disse aktivaene, kan du overstyre valutaformateringen og angi numerisk formatering for raden som angir antall bygninger. Du kan angi denne informasjonen i dialogboksen **Formatoverstyring**. De tilgjengelige alternativene avhenger av formatkategorien du velger. **Eksempel**-området i dialogboksen viser eksempelformater. Følgende formatkategorier er tilgjengelige:
 
 - Valutaformatering
 - Numerisk formatering
@@ -266,9 +266,9 @@ I eksemplet nedenfor, vil verdiene i kolonne D for rapporten sorteres i stigende
 
 ### <a name="override-cell-formatting"></a>Overstyr celleformatering
 
-1. Åpne raddefinisjonen som skal endres i Rapportutforming.
-2. I raden som formatet skal overstyres for, dobbeltklikker du i cellen i **Overstyr format**-kolonnen.
-3. I dialogboksen **Overstyr format** velger du formateringsalternativet som skal brukes for denne raden i rapporten.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
+2. I raden som formatet skal overstyres for, dobbeltklikker du i cellen i **Formatoverstyring**-kolonnen.
+3. I dialogboksen **Formatoverstyring** velger du formateringsalternativet som skal brukes for denne raden i rapporten.
 4. Klikk **OK**.
 
 ### <a name="currency-formatting"></a>Valutaformatering
@@ -327,7 +327,7 @@ Typen skal representere den positive verdien og den negative verdien. Vanligvis 
 | 0.00%;(0.00%)                  | 123456.00% | (123456.00%) | 0,00 %   |
 
 ## <a name="specify-a-normal-balance-cell"></a>Angi en Normal balanse-celle
-Cellen **Normal balanse** i en raddefinisjon bestemmer fortegnet for beløpene i en rad. Hvis du vil snu fortegnet for en rad, eller hvis den normale saldoen for en konto er et kreditbeløp, kan du skrive inn en **C** i **Normal balanse**-cellen for denne raden. Rapportutformingen snur fortegnet for alle kreditbalansekontoer i denne raden. Når rapportutforming konverterer disse kontoene, fjernes debet/kreditegenskapen fra alle beløp, og gjør derfor summering enkel. Hvis du for eksempel vil beregne nettoinntekt, trekker du utgifter fra inntekt. Vanligvis påvirkes ikke totalrader og beregnede rader av en **C**-kode. **XCR**-uskriftskontrollen i kolonnedefinisjonen tilbakestiller imidlertid fortegnet for alle rader som inneholder en **C** i **Normal balanse**-kolonnen. Denne formateringen er spesielt viktig når du vil vise alle ugunstige avvik som negative beløp. Hvis en total eller beregnet beløp har feil fortegn, angir du en **C** i **Normal balanse**-cellen for raden å snu fortegnet.
+Cellen **Normal balanse** i en raddefinisjon bestemmer fortegnet for beløpene i en rad. Hvis du vil snu fortegnet for en rad, eller hvis den normale saldoen for en konto er et kreditbeløp, kan du skrive inn en **C** i **Normal balanse**-cellen for denne raden. Rapportutformingen snur fortegnet for alle kreditbalansekontoer i denne raden. Når Report Designer konverterer disse kontoene, fjernes debet/kreditegenskapen fra alle beløp, og gjør derfor summering enkel. Hvis du for eksempel vil beregne nettoinntekt, trekker du utgifter fra inntekt. Vanligvis påvirkes ikke totalrader og beregnede rader av en **C**-kode. **XCR**-uskriftskontrollen i kolonnedefinisjonen tilbakestiller imidlertid fortegnet for alle rader som inneholder en **C** i **Normal balanse**-kolonnen. Denne formateringen er spesielt viktig når du vil vise alle ugunstige avvik som negative beløp. Hvis en total eller beregnet beløp har feil fortegn, angir du en **C** i **Vanlig saldo**-cellen for raden å snu fortegnet.
 
 ## <a name="specify-a-row-modifier-cell"></a>Angi en celle for radmodifikator
 Innholdet i **Radmodifikator**-cellen i en raddefinisjon, overstyrer regnskapsårene, periodene og annen informasjon som er angitt i kolonnedefinisjon for denne raden. Den valgte modifikatoren gjelder for alle kontoer i raden. Du kan endre hver rad ved hjelp av én eller flere av følgende typer modifikatorer:
@@ -338,7 +338,7 @@ Innholdet i **Radmodifikator**-cellen i en raddefinisjon, overstyrer regnskapså
 
 ### <a name="override-a-column-definition"></a>Overstyre en kolonnedefinisjon
 
-1. Åpne raddefinisjonen som skal endres i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
 2. I raden der du vil overstyre kolonnedefinisjonen, dobbeltklikker du **Radmodifikator**-cellen.
 3. I dialogboksen **Radmodifikator** velger du et alternativ i **Kontomodifikator**-feltet. Hvis du vil se en beskrivelse av alternativene, kan du se avsnittet "Kontomodifikatorer".
 4. I **Registerkodemodifikator**-feltet velger du registerkoden som skal brukes for raden.
@@ -382,11 +382,11 @@ Du kan begrense en rad til en eksisterende registerkode. Kolonnedefinisjonen må
 
 Noen regnskapssystemer støtter kontoattributter og transaksjonsattributter i de økonomiske dataen. Disse attributtene fungerer som virtuelle kontosegmenter, og kan inneholde tilleggsinformasjon om konto eller transaksjon. Denne tilleggsinformasjonen kan være konto-ID-er, parti-ID-er, postnumre eller andre attributter. Hvis regnskapssystemet støtter attributter, kan du bruke kontoattributter eller transaksjonsattributter som radmodifikatorer i raddefinisjonen. Hvis du vil ha informasjon om hvordan du overstyrer radinformasjon, kan du se avsnittet "Overstyre en kolonnedefinisjon" tidligere i denne artikkelen.
 
-## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angi en celle for kobling til finansdimensjoner
+## <a name="specify-a-link-to-financial-dimensions-cell"></a>Angi en kobling tilfinansdimensjoner
 Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske dataene som skal tas med i hver rad i en rapport. Denne cellen inneholder dimensjonsverdier. Åpne dialogboksen **Dimensjoner**, og dobbeltklikk cellen **Kobling til finansdimensjoner**.
 
 > [!NOTE]
-> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Hvis du vil angi informasjon for en rad som allerede finnes i raddefinisjonen, legger du til informasjonen i cellen **Kobling til finansdimensjoner**. Hvis du vil legge til nye rader som er koblet til de økonomiske dataen, kan du bruke dialogboksen **Sett inn rader fra** for å opprette nye rader i rapportdefinisjonen. Kolonnetittelen endres, avhengig av hvordan kolonnen er konfigurert, som vist i tabellen nedenfor.
+> Report Designer kan imidlertid ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics 365 Finance-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Hvis du vil angi informasjon for en rad som allerede finnes i raddefinisjonen, legger du til informasjonen i cellen **Kobling til finansdimensjoner**. Hvis du vil legge til nye rader som er koblet til de økonomiske dataen, kan du bruke dialogboksen **Sett inn rader fra** for å opprette nye rader i rapportdefinisjonen. Kolonnetittelen endres, avhengig av hvordan kolonnen er konfigurert, som vist i tabellen nedenfor.
 
 | Koblingstype som er valgt       | Beskrivelsen av koblingskolonnen endres til dette |
 |----------------------------------|----------------------------------------------------|
@@ -395,7 +395,7 @@ Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske
 
 ### <a name="specify-a-dimension-or-range"></a>Angi en dimensjon eller et område
 
-1. Åpne raddefinisjonen som skal endres, i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
 2. Dobbeltklikk en celle i kolonnen **Kobling til finansdimensjoner**.
 3. Dobbeltklikk en celle under dimensjonsnavnet i dialogboksen **Dimensjoner**.
 4. I dialogboksen for dimensjonen velger du **Enkeltvis eller område**.
@@ -408,7 +408,7 @@ Rapportutforming skriver som standard ikke ut rader som ikke har en tilsvarende 
 
 ### <a name="modify-zero-balance-settings"></a>Endre innstillinger for nullsaldo
 
-1. Åpne rapportdefinisjonen som skal endres i Rapportutforming.
+1. Åpne rapportdefinisjonen som skal endres i Report Designer.
 2. I kategorien **Innstillinger** under **Annen formatering**, velger du alternativer for raddefinisjonen som skal brukes i rapportdefinisjonen.
 3. Klikk **Lagre** på **Fil**-menyen for å lagre endringene.
 
@@ -423,32 +423,32 @@ Når du angir en naturlige segmentverdi i dialogboksen **Dimensjoner**, kan du p
 Du kan angi en rekke segmentverdiene eller dimensjonsverdier. Fordelen med å angi et område er at du ikke trenger å oppdatere raddefinisjonen hver gang en ny verdi for segment- eller dimensjonsverdien legges til de økonomiske dataen. Området **+Konto=\[6100:6900\]** henter for eksempel verdiene fra kontoene 6100 til og med 6900 inn i radbeløpet. Når et område inneholder et jokertegn (?), evaluerer ikke rapportutforming området tegn for tegn. I stedet bestemmes den lave og høye enden av området, og deretter inkluderes sluttverdiene og alle verdier mellom dem.
 
 > [!NOTE]
-> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
+> Report Designer kan imidlertid ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics 365 Finance-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Flersegments- eller fleredimensjonsområder
 
 Når du angir et område ved hjelp av kombinasjoner av flere dimensjonsverdier, gjøres områdesammenligningen på en ..\\financial-dimensions\\dimension-by-dimension basis. Områdesammenligningen kan ikke utføres tegn for tegn eller for delsegment. Området **+Konto=\[5000:6000\], Avdeling=\[1000:2000\], Kostsenter=\[00\]** omfatter bare kontoer som samsvarer med hvert segment. I dette scenariet den første dimensjonen må være i området fra 5000 gjennom 6000, den andre dimensjonen må være i området fra 1000 til 2000, og den siste dimensjonen må være 00. For eksempel **+Konto=\[5100\], Avdeling=\[1100\], Kostsenter=\[01\]** er ikke inkludert i rapporten, fordi det siste segmentet er utenfor det angitte området. Hvis en segmentverdi inneholder mellomrom, setter du verdien i hakeparenteser (\[ \]). Følgende verdier er gyldige for et segment med fire tegn: **\[ 234\], \[123 \], \[1 34\]**. Dimensjonsverdier som skal stå i hakeparentes (\[ \]), og rapportutforming legger til disse parentesene for deg. Når et område med flere segmenter eller flere dimensjoner inneholder jokertegn (? eller \*), bestemmes den lave og høye enden av hele flersegmenters- eller flerdimensjonsområdet og deretter inkluderes sluttverdiene og alle verdier mellom dem. Hvis du har et stort område, for eksempel hele rekken med kontoene fra 40 000 til 99 999, må du angi en gyldig start- og sluttkonto når det er mulig.
 
 > [!NOTE] 
-> Rapportutforming kan ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
+> Report Designer kan imidlertid ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics 365 Finance-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }. Du kan legge til et &-tegn bare når du bygger raddefinisjoner automatisk ved hjelp av dialogboksen **Sett inn rader fra dimensjoner**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Legge til eller trekke fra andre kontoer i en raddefinisjon
 Hvis du vil legge til eller trekke fra pengebeløp i én konto fra pengebeløp i en annen konto, kan du bruke plusstegnet (+) og minustegnet (-) i cellen **Kobling til finansdimensjoner**. Tabellen nedenfor viser akseptable formater for å legge til og trekke fra koblinger til økonomiske data.
 
-| Operasjon                                                                               | Bruk dette formatet                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Legg til to fullstendig kvalifiserte kontoer.                                                       | +Divisjon=\[000\], Konto=\[1205\], Avdeling=\[00\]+Divisjon=\[100\], Konto=\[1205\], Avdeling=\[00\] |
-| Legg til to segmentverdier.                                                                 | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
-| Legg til segmenteverdier som inneholder jokertegn.                                    | +Konto=\[120?+Konto=\[11??\]                                                                             |
-| Legg til et område med fullstendig kvalifiserte kontoer.                                                | +Divisjon=\[000:100\], Konto=\[1205\], Avdeling=\[00\]                                                   |
-| Legg til et område med segmentverdier.                                                          | +Konto=\[1200:1205\]                                                                                       |
-| Legg til et område med segmenteverdier som inneholder jokertegn.                         | +Konto=\[120?:130\]                                                                                       |
+| Operasjon                                            | Bruk dette formatet                                                                                              |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Legg til to fullstendig kvalifiserte kontoer.      | +Divisjon=\[000\], Konto=\[1205\], Avdeling=\[00\]+Divisjon=\[100\], Konto=\[1205\], Avdeling=\[00\] |
+| Legg til to segmentverdier.                    | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
+| Legg til segmenteverdier som inneholder jokertegn.  | +Konto=\[120?+Konto=\[11??\]                                                                     |
+| Legg til et område med fullstendig kvalifiserte kontoer.              | +Divisjon=\[000:100\], Konto=\[1205\], Avdeling=\[00\]                                           |
+| Legg til et område med segmentverdier.                | +Konto=\[1200:1205\]                                                                                       |
+| Legg til et område med segmenteverdier som inneholder jokertegn.         | +Konto=\[120?:130\]                                                           |
 | Trekk én fullstendig kvalifisert konto fra en annen fullstendig kvalifisert konto.              | +Divisjon=\[000\], Konto=\[1205\], Avdeling=\[00\]-Divisjon=\[100\], Konto=\[1205\], Avdeling=\[00\] |
-| Trekk én segmentverdi fra en annen segmentverdi.                                  | +Konto=\[1205\]-Konto=\[1210\]                                                                           |
-| Trekk en segmentverdi som inneholder et jokertegn fra en annen segmentverdi. | +Konto=\[1200\]-Konto=\[11??\]                                                                           |
-| Trekk fra et område med fullstendig kvalifiserte kontoer.                                           | -Divisjon=\[000:100\], Konto=\[1200:1205\], Avdeling=\[00:01\]                                           |
-| Trekk fra et område med segmentverdier.                                                     | -Konto=\[1200:1205\]                                                                                       |
-| Trekk fra et område med segmenteverdier som inneholder jokertegn.                    | -Konto=\[120?:130?\]                                                                                       |
+| Trekk én segmentverdi fra en annen segmentverdi.          | +Konto=\[1205\]-Konto=\[1210\]                                                               |
+| Trekk en segmentverdi som inneholder et jokertegn fra en annen segmentverdi. | +Konto=\[1200\]-Konto=\[11??\]                                        |
+| Trekk fra et område med fullstendig kvalifiserte kontoer.                               | -Divisjon=\[000:100\], Konto=\[1200:1205\], Avdeling=\[00:01\]                   |
+| Trekk fra et område med segmentverdier.                   | -Konto=\[1200:1205\]                                                                                       |
+| Trekk fra et område med segmenteverdier som inneholder jokertegn.                    | -Konto=\[120?:130?\]                                               |
 
 Selv om du kan endre kontoene direkte, kan du også bruke dialogboksen **Dimensjoner** for å angi riktig formatering på koblingene for de økonomiske dataene. Alle verdiene kan inneholde jokertegn (? eller \*). Rapportutforming kan imidlertid ikke velge kontoer, dimensjoner eller felt fra Microsoft Dynamics ERP-systemet som inneholder ett av følgende reserverte tegn: &, \*, \[, \], {, eller }.
 
@@ -457,7 +457,7 @@ Selv om du kan endre kontoene direkte, kan du også bruke dialogboksen **Dimensj
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Legge til eller trekke fra kontoer fra andre kontoer
 
-1. Åpne raddefinisjonen som skal endres i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
 2. Dobbeltklikk celle i kolonnen **Kobling til finansdimensjoner** i den aktuelle raden.
 3. I den første raden i dialogboksen **Dimensjoner**, følger du denne fremgangsmåten:
 
@@ -485,7 +485,7 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 
 ### <a name="create-a-set-of-dimension-values"></a>Opprette er sett med dimensjonsverdier
 
-1. Åpne rad-, kolonne eller tredefinisjonen som skal endres i Rapportutforming.
+1. Åpne rad-, kolonne eller tredefinisjonen som skal endres i Report Designer.
 2. Klikk **Behandle dimensjonsverdisett** på **Rediger**-menyen.
 3. I dialogboksen **Behandle dimensjonsverdisett** i **Dimensjon**-feltet, velger du hvilken type dimensjonsverdisettet som skal opprettes, og deretter klikker du **Ny**.
 4. Skriv inn et navn og en beskrivelse for settet i dialogboksen **Ny**.
@@ -497,7 +497,7 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 
 ### <a name="update-a-set-of-dimension-values"></a>Oppdatere et sett med dimensjonsverdier
 
-1. Åpne rad-, kolonne- eller tredefinisjonen som skal endres, i Rapportutforming.
+1. Åpne rad-, kolonne eller tredefinisjonen som skal endres i Report Designer.
 2. Klikk **Behandle dimensjonsverdisett** på **Rediger**-menyen.
 3. Velg dimensjonstype i dialogboksen **Behandle dimensjonsverdisett** i **Dimensjon**-feltet.
 4. Velg dimensjonsverdisettet i listen som skal oppdateres, og klikk deretter **Endre**.
@@ -511,7 +511,7 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 
 ### <a name="copy-a-dimension-set"></a>Kopiere et dimensjonssett
 
-1. Åpne rad-, kolonne eller tredefinisjonen som skal endres i Rapportutforming.
+1. Åpne rad-, kolonne eller tredefinisjonen som skal endres i Report Designer.
 2. Klikk **Behandle dimensjonsverdisett** på **Rediger**-menyen.
 3. Velg dimensjonstype i dialogboksen **Behandle dimensjonsverdisett** i **Dimensjon**-feltet.
 4. Velg settet som skal kopieres i listen, og klikk deretter **Lagre som**.
@@ -519,7 +519,7 @@ Et dimensjonsverdisett er en navngitt gruppe med dimensjonsverdier. Et dimensjon
 
 ### <a name="delete-a-dimension-set"></a>Slette et dimensjonssett
 
-1. Åpne rad-, kolonne- eller tredefinisjonen som skal endres, i Rapportutforming.
+1. Åpne rad-, kolonne eller tredefinisjonen som skal endres i Report Designer.
 2. Klikk **Behandle dimensjonsverdisett** på **Rediger**-menyen.
 3. Velg dimensjonstype i dialogboksen **Behandle dimensjonsverdisett** i **Dimensjon**-feltet.
 4. Merk settet du vil slette, og klikk deretter **Slett**. Klikk **Ja** for å slette dimensjonsverdisettet permanent.

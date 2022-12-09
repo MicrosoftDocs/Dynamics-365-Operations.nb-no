@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62f828b93075c134778da280243c0875edf99300
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: 1d123a341a471dd37fcc33e0025ce5e98235a27f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715836"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804270"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
@@ -70,7 +70,8 @@ Motpostering av samlekonto for leverandører defineres i **Leverandørpostering*
 ## <a name="create-a-purchase-order-that-contains-prepayment-invoice-information"></a>Opprett en bestilling som inneholder informasjon om forskuddsbetalingsfaktura
 Når en leverandør forteller deg at de krever forskuddsbetaling for varer og tjenester i en bestilling, må du definere forskuddsbetalingsverdien for den tilknyttede bestillingen. Gå til **Leverandører \> Felles \> Bestillinger \> Alle bestillinger**, og finn leverandørens bestilling. I handlingsruten velger du kategorien **Innkjøpp** og deretter **Forskuddsbetaling**. Angi informasjon for forskuddsbetalingen, inkludert en beskrivelse, verdien av forskuddsbetalingen, om forskuddsbetalingen er et fast beløp eller en prosent, og en forskuddskategori-ID. 
 
-Legg merke til at flere definisjoner av forskuddsbetalinger på en bestilling ikke er tillatt. Hvis du må tillate flere forskuddsbetalinger på en bestilling, posterer du betalingene ved hjelp av betalingsjournalen i stedet for en forskuddsbetalingsfaktura.
+> [!Note] 
+> Flere definisjoner av forskuddsbetalinger på en bestilling er ikke tillatt. Hvis du må tillate flere forskuddsbetalinger på en bestilling, posterer du betalingene ved hjelp av betalingsjournalen i stedet for en forskuddsbetalingsfaktura.
 
 Forskuddsbetalingen kan bli fjernet fra bestillingen med mindre du allerede har utlignet en betaling mot den posterte forskuddsbetalingsfakturaen eller postert standardfakturaen. Hvis du vil fjerne informasjon om forskuddsbetaling fra bestillingen, velger du **Leverandører \> Felles \> Bestillinger \> Alle bestillinger** og finner leverandørens bestilling. I handlingsruten velger du kategorien **Innkjøp** og deretter **Fjern forskuddsbetaling**.
 

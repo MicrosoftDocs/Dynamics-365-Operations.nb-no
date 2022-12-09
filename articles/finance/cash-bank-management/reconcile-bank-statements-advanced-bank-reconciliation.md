@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e1d7fc58ad71365275d5e82a277554bee99c43a
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 8e613bc97a41b62e81ebfbcb8c08e33a60603648
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151369"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803917"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstem bankkontoutdrag ved hjelp av avansert bankavstemming
 
@@ -37,7 +37,10 @@ Du kan laste opp et bankkontoutdrag som inneholder informasjon for én enkelt ko
 -   Hvis du vil importere én enkelt bankkontoutdragsfil for én enkelt konto, kan du sette alternativet **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Nei** og velge bankkontoen som er knyttet til utdraget. Klikk **Bla gjennom** for å velge den tilknyttede bankkontoutdragsfilen, og klikk deretter **Last opp**.
 -   Hvis du vil importere én enkelt bankkontoutdragsfil for flere kontoer, setter du **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Ja**. Klikk **Bla gjennom** for å velge den tilknyttede bankkontoutdragsfilen, og klikk deretter **Last opp**.
 
-Hvis alle setninger i den elektroniske filen ikke kan knyttes til en bankkonto, eller hvis den er tilknyttet flere bankkontoer ved hjelp av de identifiserende feltene, kan de ikke importeres. Andre setninger i filen kan imidlertid likevel importeres. Brukeren får deretter en melding om at import av bankkontoutdrag mislyktes for bestemte bankkontoer. Legg merke til at brukeren som importerer bankkontoutdragsfilen, må ha tilgang til en juridisk enhet for å importere utdrag for bankkontoer for den juridiske enheten. 
+Hvis alle setninger i den elektroniske filen ikke kan knyttes til en bankkonto, eller hvis den er tilknyttet flere bankkontoer ved hjelp av de identifiserende feltene, kan de ikke importeres. Andre setninger i filen kan imidlertid likevel importeres. Brukeren får deretter en melding om at import av bankkontoutdrag mislyktes for bestemte bankkontoer. 
+
+>[!Note] 
+>Brukeren som importerer bankkontoutdragsfilen, må ha tilgang til en juridisk enhet for å importere utdrag for bankkontoer for den juridiske enheten. 
 
 Du kan bruke en ZIP-fil til å laste opp flere utdragsfiler til Finance i én enkelt prosess. Hvis du vil importere flere bankkontoutdragsfiler for flere kontoer, kan du kombinere alle bankkontoutdragsfilene i en ZIP-fil. I dialogboksen **Importer bankkontoutdrag** setter du alternativet **Importer utdrag for flere bankkontoer i alle juridiske enheter** til **Ja**. Klikk **Bla gjennom** for å velge ZIP-filen som inneholder bankkontoutdragsfilene, og klikk deretter **Last opp**. Importprosessen gjenkjenner zip-filen og laster opp hver oppgave som er inkludert i den, uavhengig av den juridiske enheten for bankkontoen.
 

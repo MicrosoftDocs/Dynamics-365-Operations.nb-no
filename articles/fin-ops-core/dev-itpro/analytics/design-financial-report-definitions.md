@@ -2,7 +2,7 @@
 title: Rapportdefinisjoner i Utforming av finansrapport
 description: Denne artikkelen gir informasjon om rapportdefinisjoner.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 59131
 ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.form: FinancialReports
-ms.openlocfilehash: e1095502e6dafbe217f51658ac65292c422a0002
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2ffef335c694af56486ccd7738818c4edda49b9e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9291806"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802559"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Rapportdefinisjoner i Utforming av finansrapport
 
@@ -37,7 +37,7 @@ En rapportdefinisjon er en rapportkomponent (eller byggeblokk) som bruker en rad
 Alt etter hvordan data er lagret i Microsoft Dynamics ERP-systemet, kan det hende at transaksjonsdetaljer ikke er tilgjengelige i rapporter.
 
 ## <a name="create-a-report-definition"></a>Opprette en rapportdefinisjon
-1. Gå til **Fil** -menyen i Rapportutforming og klikk **Ny**, og velg deretter **Rapportdefinisjon**.
+1. Gå til **Fil** -menyen i Report Designer og klikk **Ny**, og velg deretter **Rapportdefinisjon**.
 2. Angi riktig informasjon i fanene **Rapport**, **Utdata og distribusjon**, **Topptekst og bunntekst** og **Innstillinger**.
 
 ## <a name="contents-of-a-report-definition"></a>Innholdet i en rapportdefinisjon
@@ -60,7 +60,7 @@ Tabellen nedenfor beskriver fanene i en rapportdefinisjon og hvordan informasjon
 <td>Endre utdatatype og mål for rapporten.</td>
 </tr>
 <tr>
-<td>Topptekst og bunntekst</td>
+<td>Topptekster og bunntekster</td>
 <td>Definer og formater topptekst og bunntekst for rapporten. Du kan for eksempel legge til tekst eller bilder i toppteksten eller bunnteksten. Finansrapportering støtter BMP-, JPG- og PNG-filer for bilder. Du kan også legge til autotekstkoder for å sette inn tilleggsinformasjon, for eksempel et firmanavn, rapportnavn eller sidetall.</td>
 </tr>
 <tr>

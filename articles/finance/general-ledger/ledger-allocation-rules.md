@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5fbcee713625c597080d1d63ba0ffc70f088799
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0691c65e6a499f713952070811cefaa7a213af7b
+ms.sourcegitcommit: c364f50ea0ad50bac5c30724b6ce301d9574b653
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8901291"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "9787560"
 ---
 # <a name="ledger-allocation-rules"></a>Finansfordelingsregler
 
@@ -28,7 +28,7 @@ ms.locfileid: "8901291"
 
 Denne artikkelen gir generell informasjon om finanstildelingsregler. Den beskriver de ulike komponentene i disse tildelingsreglene og tildelingsmetodene som kan brukes for dem.
 
-Finansfordelingsregler brukes til automatisk å beregne og generere tildelingsjournaler og poster for fordeling av finanssaldoer eller faste beløp. Tildelingsmetoder kan være variable eller faste. Følgende tildelingsmetoder kan brukes for fordelingsregler for finans:
+Finansfordelingsregler brukes til automatisk å beregne og generere tildelingsjournaler og poster for fordeling av finanssaldoer eller faste beløp. Tildelingsmetoder kan være variable eller faste. Tildelingen er basert på transaksjonsvalutaverdien. Fremmed valutagevinst/tap-oppføringer posteres for eksempel til å justere regnskaps- og rapporteringsvalutabeløpene. Disse oppføringene er ikke underlagt tildelingsregler, fordi transaksjonsvalutaverdien er 0,00. Følgende tildelingsmetoder kan brukes for fordelingsregler for finans:
 
 -   **Basis** – denne variable metoden brukes når tildelingen er avhengig av den faktiske finanssaldoen, basert på filterkriteriene. Du kan for eksempel tildele reklameutgifter basert på salget til hver avdeling i forhold til hele avdelingssalget.
 -   **Fast prosent** og **Fast vekt** – For disse metodene defineres tildelingsprosent eller vekt direkte for regelen. Reklameutgifter kan for eksempel tildeles slik at avdeling A får 70 prosent av reklameutgiftene, og avdeling B får 30 prosent.

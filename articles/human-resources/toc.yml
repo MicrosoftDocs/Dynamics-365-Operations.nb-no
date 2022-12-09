@@ -570,9 +570,11 @@
               href: hr-leave-and-absence-suspend-leave.md
             - name: Permisjonsforespørsel
               href: hr-employee-self-service-request-leave-of-absence.md
-            - name: Administrere ansattpermisjon
+            - name: Opprett en modulær permisjon
+              href: hr-create-open-leave-absence.md
+            - name: Administrer ansattpermisjon
               href: hr-leave-and-absence-manage-employee-leave.md
-            - name: Vise analyse for permisjon og fravær
+            - name: Vis analyse for permisjon og fravær
               href: hr-leave-and-absence-analytics.md
             - name: Administrer forespørsler om permisjon og fravær
               href: hr-employee-self-service-manage-requests.md

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bfdef0cd535f47bb1df9fb7494043d3dd519c5b
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 0987ae1e9cfbb1e2d2a957a5fd1ad82257292c0a
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779887"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804108"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letters-of-guarantee"></a>Definere bankfasiliteter og posteringsprofiler for garantibrev
 
@@ -57,8 +57,8 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 9. Skriv inn en verdi i **Beskrivelse**-feltet.
 10. Klikk rullegardinknappen i feltet **Fasilitetsgruppe** for å åpne oppslaget.
 11. Finn og velg ønsket post i listen.
-12. Klikk på koblingen i den valgte raden i listen.
-13. Velg et alternativ i feltet **Fasilitetens art.
+12. Klikk koblingen i den valgte raden i listen.
+13. Velg et alternativ i feltet **Fasilitetens art**.
 14. Klikk på **Lagre**.
 15. Lukk siden.
 

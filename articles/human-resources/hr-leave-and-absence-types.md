@@ -2,7 +2,7 @@
 title: Konfigurere permisjons- og fraværstyper
 description: Definer permisjonstyper som de ansatte kan ta i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 09/09/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,14 +14,16 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 982e5afe6442e038774d59419a7edc0a9ec5444c
-ms.sourcegitcommit: 66d129874635d34a8b29c57762ecf1564e4dc233
+ms.openlocfilehash: e35c5fed886ebf9a453c22b3e04ca9ffe50b6d70
+ms.sourcegitcommit: e88ecaccd82afa3a915e41df1d4287d99da6a48a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "9323966"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9805211"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere permisjons- og fraværstyper
+
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -41,19 +43,25 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
 1. På arbeidsområdet **Permisjon og fravær** velger du **Koblinger**-fanen.
 2. Under **Oppsett** velger du **Permisjons- og fraværstyper**.
 3. Velg **Ny**.
-4. Angi et navn for permisjonstypen under **Type**, velg en arbeidsflyt fra **Arbeidsflyt-ID**, og angi en beskrivelse under **Beskrivelse**.
+4. Angi et navn for permisjonstypen under **Type**, angi en beskrivelse under **Beskrivelse**, og velg en arbeidsflyt fra **Arbeidsflyt-ID**-feltet. Velg en forespørselstype i **Forespørselstype**-feltet, basert på permisjonstypen. Velg for eksempel **Fridager** eller **Permisjon**.
 5. I **Generelt** velger du **Ingen**, **Planlagt** eller **Ikke planlagt** fra rullegardinlisten **Kategori**.
 6. Velg en inntektskode fra rullegardinlisten **Inntektskode**.
 7. Under **Årsakskode kreves** må du velge om du vil kreve en årsakskode. Hvis du vil kreve årsakskoder, kan det hende at du må legge dem til. Under **Årsakskoder** velger du **Legg til**, velger en årsakskode og merker av for **Aktivert** ved siden av den.
-8. Under **Begrens tilgang til valgte roller** velger du om du vil begrense tilgangen. Deretter velger du sikkerhetsrollene under **Sikkerhetsroller for denne permisjonstypen**. Sikkerhetsrollene er definert i arbeidsflyten du valgte under **Arbeidsflyt-ID** tidligere i denne prosedyren.
-9. Under **Kalenderfarge** velger du hvilken farge som skal vises på permisjons- og fraværskalendere for denne permisjonstypen. 
-10. Under **Suspensjonsforbindelser** velger du om du vil at denne permisjonstypen skal suspendere en annen permisjonstype eller bli deaktivert av en annen permisjonstype. Når en fraværsforespørsel sendes for permisjonstypen "avbrudd", opprettes det automatisk et permisjonstidspunkt for den avbrutte permisjonstypen. 
-11. Velg **Lagre**.
+8. Hvis forespørselstypen er **Permisjon**, utfører du følgende trinn:
+
+      1. Under **Modulær permisjon** velger du om brukere skal kunne opprette modulær permisjon.
+      2. Hvis **Modulær permisjon** er aktivert, kan du velge om arbeiderne må sende inn et retur-til-arbeid-varsel når de går tilbake fra fravær.
+      3. Hvis arbeidere må sende inn retur til arbeid-melding, kan du aktivere **Aktiver varsel om retur til arbeid**. Hvis **Aktiver varsel om retur til arbeid** er aktivert, aktiveres **Vedlegg kreves** automatisk og kan ikke deaktiveres.
+
+9. Hvis brukere skal laste opp dokumenter når de oppretter eller oppdaterer permisjonsforespørsler, kan du aktivere **Vedlegg kreves**.
+10. Under **Begrens tilgang til valgte roller** velger du om du vil begrense tilgangen. Deretter under **Sikkerhetsroller for denne permisjonstypen** velger du sikkerhetsrollene. Sikkerhetsrollene er definert i arbeidsflyten du valgte under **Arbeidsflyt-ID** tidligere i denne prosedyren.
+11. Under **Kalenderfarge** velger du fargen som skal vises på permisjons- og fraværskalendere for denne permisjonstypen.
+11. Under **Suspensjonsforbindelser** velger du om denne permisjonstypen enten skal suspendere en annen permisjonstype eller bli deaktivert av en annen permisjonstype. Når en fraværsforespørsel sendes for permisjonstypen "avbrudd", opprettes det automatisk et permisjonstidspunkt for den avbrutte permisjonstypen.
+12. Velg **Lagre**.
 
 ## <a name="configure-leave-type-rules"></a>Konfigurer regler for permisjonstyper
 
 1. Angi avrundingsalternativer for typen **Permisjon og fravær**. Alternativene omfatter **Ingen**, **Opp**, **Ned** og **Nærmest**. Du kan også angi avrundingspresisjonen for permisjonstypen.
-
 2. Angi **Helligdagskorrigering** for permisjonstypen. Når du velger dette alternativet, brukes antallet helligdager som faller på en arbeidsdag, for å bestemme hvordan det skal avsettes avspasering for permisjonstypen. Hvis for eksempel første juledag faller på en mandag, vil Human Resources trekke én dag fra permisjonstypen ved behandling av avsetninger.
 
    Du angir helligdager i arbeidstidskalenderen. Hvis du vil ha mer informasjon, kan du se [Opprette en driftstidskalender](hr-leave-and-absence-working-time-calendar.md).
@@ -69,7 +77,7 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
 
 1. På siden **Permisjon og fravær**, i kategorien **Koblinger** under **Oppsett**, velger du **Permisjons- og fraværstyper**.
 
-2. Velg en permisjons- og fraværstype i listen. I delen **Generelt** bruker du feltet **Vedlegg kreves** til å angi om et vedlegg må lastes opp når en ansatt sender en ny permisjonsforespørsel for den valgte permisjonstypen. 
+2. Velg en **Permisjons- og fraværstype** i listen. I delen **Generelt** bruker du feltet **Vedlegg kreves** til å angi om et vedlegg må lastes opp når en ansatt sender en ny permisjonsforespørsel for den valgte permisjonstypen. 
 
 Ansatte må laste opp et vedlegg når de sender en ny permisjonsforespørsel som har en permisjonstype der feltet **Vedlegg kreves**, er aktivert. Hvis du vil vise vedlegget som ble lastet opp som en del av en permisjonsforespørsel, kan godkjennere av permisjonsforespørsel bruke **Vedlegg**-alternativet for arbeidselementene som er tilordnet dem. Hvis du får tilgang til en permisjonsforespørsel ved hjelp av Human Resources-appen i Microsoft Teams kan **Vis detaljer**-alternativet for permisjonsforespørselen brukes til å vise detaljer og vedlegg.
 

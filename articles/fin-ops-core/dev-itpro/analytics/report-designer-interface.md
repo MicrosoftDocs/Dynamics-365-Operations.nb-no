@@ -1,8 +1,8 @@
 ---
 title: Grensesnitt for Rapportutforming
-description: Denne artikkelen beskriver hvordan du navigerer gjennom Rapportutforming og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov.
+description: Denne artikkelen beskriver hvordan du navigerer gjennom Report Designer og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,20 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.form: FinancialReports
-ms.openlocfilehash: 3bc3ddb9f04f7f6f2a63b2ecccfe04fbaf2eadfc
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 25d913e6f5d4c95dceda1291a2c33abe37348574
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274735"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802749"
 ---
 # <a name="report-designer-interface"></a>Grensesnitt for Rapportutforming
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du navigerer gjennom Rapportutforming og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov.
+Denne artikkelen beskriver hvordan du navigerer gjennom Report Designer og hvordan du bruker de forskjellige alternativene som oppfyller dine spesifikke behov.
 
-## <a name="report-designer-menu-commands"></a>Menykommandoer for Rapportutforming
+## <a name="report-designer-menu-commands"></a>Menykommandoer for Report Designer
 
 Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når du utformer finansrapporter. Noen menykommandoer og alternativer er bare tilgjengelige i spesielle tilfeller. Kommandoene for forfremmelse og degradering av rapporteringsenheter er for eksempel bare tilgjengelige når du endrer en rapporteringstredefinisjon.
 
@@ -67,8 +67,8 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Fjern                                  | Slett innholdet i den valgte byggeblokkcellen. |
 | Søk etter                                   | Åpne dialogboksen **Søk og erstatt** der du kan søke etter tekst i visningsruten. |
 | Erstatt                                | Åpne dialogboksen **Søk og erstatt** der du kan søke etter og erstatte tekst i visningsruten. |
-| Sette inn rader fra dimensjoner            | Åpne dialogboksen **Sett inn rader fra dimensjoner** der du kan velge dimensjonsverdier som skal tas med i raddefinisjonen. Denne kommandoen er tilgjengelig fra en raddefinisjon. |
-| Nummerer rader                          | Nummerer alle numeriske radkoder. Denne kommandoen er tilgjengelig fra en raddefinisjon. |
+| Sett inn rader fra dimensjoner            | Åpne dialogboksen **Sett inn rader fra dimensjoner** der du kan velge dimensjonsverdier som skal tas med i raddefinisjonen. Denne kommandoen er tilgjengelig fra en raddefinisjon. |
+| Nummerer rader på nytt                          | Nummerer alle numeriske radkoder. Denne kommandoen er tilgjengelig fra en raddefinisjon. |
 | Radkoblinger                              | Åpne dialogboksen **Radkoblinger** der du kan angi kildene for datakoblinger i raddefinisjoner og rapporteringstredefinisjoner. Denne kommandoen er tilgjengelig fra en raddefinisjon. |
 | Avrundingsjustering                    | Åpne dialogboksen **Avrundingsjusteringer** der du kan angi parameterne for avrunding. Denne kommandoen er tilgjengelig fra en raddefinisjon. |
 | Behandle dimensjonssett                  | Åpne dialogboksen **Dimensjonssett** der du kan opprette og endre dimensjonssett. Denne kommandoen er tilgjengelig fra en raddefinisjon eller rapporteringstredefinisjon. |
@@ -76,7 +76,7 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Slett rad                             | Slett den valgte raden fra raddefinisjonen eller den valgte overskriftsraden fra kolonnedefinisjonen. Denne kommandoen er tilgjengelig fra en rad- eller kolonnedefinisjon. |
 | Sett inn kolonne                          | Sette inn en tom kolonne i kolonnedefinisjonen. Denne kommandoen er tilgjengelig fra en kolonnedefinisjon. |
 | Slett kolonne                          | Slett den valgte kolonnen fra kolonnedefinisjonen. Denne kommandoen er tilgjengelig fra en kolonnedefinisjon. |
-| Sette inn rapporteringsenheter fra dimensjoner | Åpne dialogboksen **Rapporteringsenheter fra dimensjoner** der du kan velge dimensjonsverdier som skal tas med i rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon. |
+| Sett inn rapporteringsenheter fra dimensjoner | Åpne dialogboksen **Rapporteringsenheter fra dimensjoner** der du kan velge dimensjonsverdier som skal tas med i rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon. |
 | Importer dimensjonssetthierarki         | Åpne dialogboksen **Dimensjonssetthierarki** der du kan importere et dimensjonssetthierarki fra de økonomiske dataene. Denne kommandoen er tilgjengelig fra en ..\\financial-dimensions\\dimension-based system. |
 | Sett inn rapporteringsenhet                  | Sette inn en tom rad i rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon. |
 | Slett rapporteringsenhet                  | Slett den merkede raden for rapporteringsenhet fra rapporteringstredefinisjonen. Denne kommandoen er tilgjengelig fra en rapporteringstredefinisjon. |
@@ -89,7 +89,7 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 |-----------------|------------------------------------------------------------------------|
 | Navigasjonsruten | Vise eller skjule navigasjonsruten.                                      |
 | Verktøylinjer        | Velg verktøylinjene som vises.                                  |
-| Statuslinje      | Vis eller skjul statusinformasjonen i vinduet **Rapportutforming**. |
+| Statuslinje      | Vis eller skjul statusinformasjonen i vinduet **Report Designer**. |
 | Velkomstside    | Åpne **velkomstsiden**.                                             |
 
 ### <a name="format-menu"></a>Format-menyen
@@ -162,7 +162,7 @@ Tabellen nedenfor beskriver menykommandoer og alternativer som du kan bruke når
 | Hjelp    | Åpne artikkelsiden for hjelp for finansrapportering. |
 |         |                                                                          |
 
-## <a name="report-designer-toolbar-buttons"></a>Verktøylinjeknapper for Rapportutforming
+## <a name="report-designer-toolbar-buttons"></a>Verktøylinjeknapper for Report Designer
 Tabellen nedenfor beskriver knappene på verktøylinjen som du kan bruke når du utformer rapporter. Noen verktøylinjeknapper er bare tilgjengelige i spesielle tilfeller. Knappene for forfremmelse og degradering av rapporteringsenheter er for eksempel bare tilgjengelige når du endrer en rapporteringstredefinisjon.
 
 ### <a name="standard-toolbar"></a>Standardverktøylinjen
@@ -194,18 +194,18 @@ Standardverktøylinjen gir rask tilgang til filen og redigeringskommandoer. Denn
 
 Formateringsverktøylinjen gir enkel tilgang til kommandoer for stil. Denne verktøylinjen inneholder knappene nedenfor.
 
-| Knapp                                                                                                       | beskrivelse                                             |
-|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Skriftstil-knappen.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Bruke den valgte skriftstilen på gjeldende tekst.      |
-| [![Skrift-knappen.](./media/fonttype.png)](./media/fonttype.png)                                                 | Bruk den valgte skriften for gjeldende tekst.              |
+| Knapp                                                                                                       | beskrivelse                                           |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| [![Skriftstil-knappen.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Bruke den valgte skriftstilen på gjeldende tekst.   |
+| [![Skrift-knappen.](./media/fonttype.png)](./media/fonttype.png)                                                 | Bruk den valgte skriften for gjeldende tekst.           |
 | [![Skriftstørrelse-knappen.](./media/fontsize.png)](./media/fontsize.png)                                            | Bruk den valgte skriftstørrelsen (i punkter) for gjeldende tekst. |
-| [![Fet-knappen.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gjør gjeldende tekst fet.                             |
-| [![Kursiv-knappen.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Gjør gjeldende tekst kursiv.                           |
-| [![Understrek-knappen.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Gjør gjeldende tekst understreket.                             |
-| [![Reduser innrykk-knappen.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Reduser innrykket for gjeldende tekst.                |
-| [![Øk innrykk-knappen.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Øk innrykket for gjeldende tekst.                |
-| [![Bakgrunnsfarge-knappen.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Endre bakgrunnsfargen for gjeldende celle.        |
-| [![Skriftfarge-knappen.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Endre fargen for gjeldende tekst.                   |
+| [![Fet-knappen.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Gjør gjeldende tekst fet.                          |
+| [![Kursiv-knappen.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Gjør gjeldende tekst kursiv.                        |
+| [![Understrek-knappen.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Gjør gjeldende tekst understreket.                          |
+| [![Reduser innrykk-knappen.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Reduser innrykket for gjeldende tekst.             |
+| [![Øk innrykk-knappen.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Øk innrykket for gjeldende tekst.             |
+| [![Bakgrunnsfarge-knappen.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Endre bakgrunnsfargen for gjeldende celle.     |
+| [![Skriftfarge-knappen.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Endre fargen for gjeldende tekst.                |
 
 ### <a name="report-designer-toolbar"></a>Verktøylinje for Rapportutforming
 
@@ -213,9 +213,9 @@ Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å nav
 
 | Knapp                                                                                              | beskrivelse |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Rapportdefinisjon-knappen.](./media/reportc130389.png)](./media/reportc130389.png)                 | Vis rapportdefinisjon som vises på **Vindu**-menyen. |
-| [![Raddefinisjon-knappen.](./media/rowc130389.png)](./media/rowc130389.png)                          | Vis raddefinisjonen som er tilordnet den aktive rapportdefinisjonen. |
-| [![Kolonnedefinisjon-knappen.](./media/columnc130389.png)](./media/columnc130389.png)                 | Vis kolonnedefinisjonen som er tilordnet den aktive rapportdefinisjonen. |
+| [![Rapportdefinisjon-knappen.](./media/reportc130389.png)](./media/reportc130389.png)            | Vis rapportdefinisjon som vises på **Vindu**-menyen. |
+| [![Raddefinisjon-knappen.](./media/rowc130389.png)](./media/rowc130389.png)             | Vis raddefinisjonen som er tilordnet den aktive rapportdefinisjonen. |
+| [![Kolonnedefinisjon-knappen.](./media/columnc130389.png)](./media/columnc130389.png)  | Vis kolonnedefinisjonen som er tilordnet den aktive rapportdefinisjonen. |
 | [![Rapporteringstredefinisjon-knappen.](./media/treec130389.png)](./media/treec130389.png)             | Vis rapporteringstredefinisjonen som er tilordnet den aktive rapportdefinisjonen. |
 | [![Rapportvisning-knappen.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Start Rapportvisning, og vis den nyeste versjonen av den genererte rapporten. Denne knappen er tilgjengelig fra en rapportdefinisjon hvis du har generert minst én rapport. |
 | [![Generer rapport-knappen.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Genererer en rapport fra den aktive rapportdefinisjonen. Denne knappen er tilgjengelig fra en rapportdefinisjon. |

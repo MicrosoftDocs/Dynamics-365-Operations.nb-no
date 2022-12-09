@@ -1008,10 +1008,26 @@
                   href: associate-site-online-store.md
                 - name: Administrer robots.txt-filer
                   href: manage-robots-txt-files.md
-                - name: Laste opp masseomdirigeringer for URL-adresse
+                - name: Last opp masseomdirigeringer for nettadresse
                   href: upload-bulk-redirects.md
                 - name: Konfigurer en B2C-leier i Commerce
-                  href: set-up-B2C-tenant.md
+                  items:
+                    - name: Konfigurer en B2C-leier
+                      href: set-up-B2C-tenant.md
+                    - name: Opprett eller koble deg til en eksisterende Azure AD B2C-leier
+                      href: create-link-aad-b2c-tenant.md
+                    - name: Opprett et B2C-program
+                      href: create-b2c-app.md
+                    - name: Opprett brukerflytpolicyer
+                      href: create-user-flow-policies.md
+                    - name: Legg til leverandører av sosiale identiteter
+                      href: add-social-identity-providers.md
+                    - name: Oppdater Commerce headquarters med Azure AD B2C-informasjon
+                      href: update-hq-aad-b2c-info.md
+                    - name: Konfigurer B2C-leieren i områdebyggeren
+                      href: config-b2c-tenant-site-builder.md
+                    - name: Tilleggsinformasjon for B2C
+                      href: additional-b2c-info.md
                 - name: Definer egendefinerte sider for brukerpålogginger
                   href: custom-pages-user-logins.md
                 - name: Aktiver automatisk kobling av identitetsposter til kundekontoer
@@ -1570,6 +1586,8 @@
               items:
                 - name: Generer QR-koder og skriv dem ut på kvitteringer for Saudi-Arabia
                   href: localizations/emea-sau-qr-code.md
+                - name: Generer og send forenklede elektroniske fakturaer for Saudi-Arabia
+                  href: localizations/emea-sau-simplified-e-invoices.md
             - name: Sverige
               items:
                 - name: Kassefunksjonalitet
@@ -2988,7 +3006,7 @@
                   href: troubleshoot/payment-type-credit-card-error.md
                 - name: Avgifter på elektroniske ordrer beregnes feil
                   href: troubleshoot/tax-miscalculated-online-order.md
-                - name: Ordresynkroniseringsfeil relatert til standard betalingstjeneste
+                - name: Synkroniseringsproblemer for asynkron ordre
                   href: troubleshoot/synchronization-error.md
             - name: Behandling av betalinger
               items:

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b07831ab789b570963ff5f425f149ba5a564a38
-ms.sourcegitcommit: e700528679a821237e644b3e21058c36ae1323c3
+ms.openlocfilehash: adfa2c1164550e32b07da25de0d96aa82430b980
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2022
-ms.locfileid: "9680365"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799633"
 ---
 # <a name="financial-dimensions"></a>Finansdimensjoner
 
@@ -137,7 +137,13 @@ Du kan definere avledede dimensjonssegmenter og -verdier ved hjelp av enheter.
 
 Når du bruker en enhet til å importere data, hvis denne enheten importerer dimensjoner, brukes reglene for avledet dimensjon under importen, med mindre enheten spesifikt overstyrer disse dimensjonene.
 
-Hvis du vil ha mer informasjon, se følgende emner:
+## <a name="financial-dimension-service"></a>Finansdimensjonstjeneste
+
+Tillegget for finansdimensjonstjenesten er tilgjengelig i Microsoft Dynamics Lifecycle Services-miljøet. Det gir forbedret ytelse når du bruker Rammeverk for datastyring til å importere en journal som har et stort antall linjer. Hvis du vil bruke tjenesten, må du aktivere den på siden **Parametere for finansdimensjonstjeneste** . For øyeblikket fungerer tjenesten bare på importerte journaler som har 500 linjer eller mer. I tillegg kan den i øyeblikket bare behandle økonomijournaler der **finans**-kontotypen er definert på journallinjene. Andre kontotyper på journallinjer, for eksempel **Kunde**, **Leverandør**  og **Bank**, støttes ikke for øyeblikket. Denne tjenesten startes ikke når avledede dimensjoner er definert i systemet.
+
+Finansdimensjonstjenesten gir forbedret ytelse når journaler importeres ved hjelp av en ny tjeneste som kjøres parallelt med dataimporten. Den kjøres bare på hovedkonto- og finansdimensjonsdataene i journalen, og den genererer dimensjonskombinasjonene som er angitt i feltet for finanskontostreng på journallinjene. Behandlingen konverterer denne strengen til den strukturerte datalagringen som finansdimensjonsrammeverket bruker i hele resten av produktet for validering, sammendragsrapportering og forespørsler. Hvis du vil ha mer informasjon om samlerapportering av finansdimensjonsdata, kan du se [Finansdimensjonssett](financial-dimension-sets.md).
+
+Hvis du vil ha mer informasjon, kan du se følgende emner:
 
 - [Definere finansdimensjoner](tasks/define-financial-dimensions.md)
 - [Vedlikeholde standardmaler for finansdimensjon](tasks/maintain-financial-dimension-default-templates.md)

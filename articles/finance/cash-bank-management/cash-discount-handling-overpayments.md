@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1afc8aec18c61b1ce488472adf540e47540eaa17
-ms.sourcegitcommit: 0d5c07ba91a9ceb2eeb11db032fd28037216789d
+ms.openlocfilehash: d7c4e98481bc3607d3dce68a6b6cb0478524442f
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2022
-ms.locfileid: "9715531"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804162"
 ---
 # <a name="cash-discounts-for-overpayments"></a>Kontantrabatter for overbetalinger
 
@@ -53,7 +53,9 @@ Kunden sender en betaling for 95,00 innenfor kontantrabattperioden. Betalingen u
 | Betaling       | -95,00 | 0,00    |
 | Kontantrabatt | -10,50 | 0,00    |
 
-Følgende regnskapsoppføringer genereres for betalingen og utligningen. **Betaling**
+Følgende regnskapsoppføringer genereres for betalingen og utligningen.
+
+**Betaling**
 
 | Konto             | Debetbeløp | Kreditbeløp |
 |---------------------|--------------|---------------|
@@ -85,7 +87,9 @@ Kunden sender en betaling for 95,00 innenfor kontantrabattperioden. Betalingen u
 | Betaling       | -95,00 | -0,50   |
 | Kontantrabatt | -10,50 | 0,00    |
 
-Overbetalingsbeløpet på 0,50 blir igjen som en åpen saldo på betalingen, og kan utlignes mot en annen faktura. Følgende regnskapsoppføringer genereres for betalingen og utligningen. **Betaling**
+Overbetalingsbeløpet på 0,50 blir igjen som en åpen saldo på betalingen, og kan utlignes mot en annen faktura. Følgende regnskapsoppføringer genereres for betalingen og utligningen. 
+
+**Betaling**
 
 | Konto             | Debetbeløp | Kreditbeløp |
 |---------------------|--------------|---------------|
@@ -118,7 +122,9 @@ Kunden sender en betaling for 95,00 innenfor kontantrabattdatoen. Betalingen utl
 | Betaling       | -95,00 | -0,00   |
 | Kontantrabatt | -10,00 | 0,00    |
 
-Kontantrabattbeløpet reduseres fra 10,50 til 10,00. Betalingen og fakturaen betraktes som utlignet. **Betaling**
+Kontantrabattbeløpet reduseres fra 10,50 til 10,00. Betalingen og fakturaen betraktes som utlignet. 
+
+**Betaling**
 
 | Konto             | Debetbeløp | Kreditbeløp |
 |---------------------|--------------|---------------|

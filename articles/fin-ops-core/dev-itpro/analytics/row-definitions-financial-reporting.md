@@ -2,7 +2,7 @@
 title: Raddefinisjoner i Utforming av finansrapport
 description: En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.form: FinancialReports
-ms.openlocfilehash: 1481d95bc7a02294b499e07308df2d26a3ab0e3a
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 3325f76f991ea6d2a1b6131f299460e529d63d38
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9274701"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802452"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Raddefinisjoner i Utforming av finansrapport
 
@@ -30,18 +30,18 @@ En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i h
 
 ## <a name="create-a-row-definition"></a>Opprette en raddefinisjon
 
-1. I navigasjonsruten i Rapportutforming klikker du **Raddefinisjoner**.
+1. I navigasjonsruten i Report Designer klikker du **Raddefinisjoner**.
 2. Klikk **Ny** på **Fil**-menyen, og klikk deretter **Raddefinisjon**. Hvis du vil ha mer informasjon om innholdet i hver celle, kan du se [Endre celler for raddefinisjon](modify-row-definition-cells-financial-reporting.md).
 
 ## <a name="open-a-row-definition"></a>Åpne en raddefinisjon
-1. I navigasjonsruten i Rapportutforming klikker du **Raddefinisjoner**.
+1. I navigasjonsruten i Report Designer klikker du **Raddefinisjoner**.
 2. Dobbeltklikk navnet på raddefinisjonen du vil åpne.
 3. Hvis du vil vise alle byggeblokker som er knyttet til raddefinisjonen, høyreklikker du raddefinisjonen og velger deretter **Tilknytninger**.
 
 ## <a name="contents-of-a-row-definition"></a> Innholdet i en raddefinisjon
 En raddefinisjon kan inneholde opptil 20 000 finansdimensjonsrader og kan inneholder følgende informasjon:
 
-- Beskrivende tekst som gir mening i rapporten ved å opprette inndelingsoverskrifter, linjer og mellomrom, for eksempel **Kontanter** eller **Totalomsetning**
+- Beskrivende tekst som gir mening i rapporten ved å opprette inndelingsoverskrifter, linjer og mellomrom, for eksempel **Kontanter** eller **Totalinntekt**
 - Koblinger til økonomiske data, som kan inkludere dimensjonsverdier i Microsoft Dynamics 365 Finance
 
     > [!NOTE]
@@ -71,7 +71,7 @@ En dimensjon er en overlapping av data og verdier. Du kan gruppere data og verdi
 
 Følg fremgangsmåten nedenfor for å legge til dimensjoner i en raddefinisjon.
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. På **Rediger**-menyen klikker du **Sett inn rader fra dimensjoner**.
 3. I dialogboksen **Sett inn rader fra dimensjoner**, i **Dimensjoner**-raden, velger du cellen for dimensjonen som skal overføres til raddefinisjonen, og deretter klikker du **Bare &&&**.
 4. Hvis du vil begrense raddefinisjonen for et bestemt områder dimensjonsverdier, angir du startverdien for dimensjonen i cellen **Start på dimensjonsområde**, og deretter angir du sluttverdien for dimensjonen i cellen **Slutt på dimensjonsområde**. Hvis du vil inkludere alle verdier for den valgte dimensjonen, lar du disse cellene stå tomme.
@@ -94,7 +94,7 @@ Hvis du har en balanse der beløpene er avrundet, kan det hende totalene ikke er
 
 Følg fremgangsmåten nedenfor hvis du vil justere avrunding i en balanse.
 
-1. I Rapportutforming klikker du **Raddefinisjoner**, og deretter åpner du raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Report Designer, og åpne deretter raddefinisjonen som skal endres.
 2. Klikk **Avrundingsjustering** på **Rediger**-menyen.
 3. Skriv inn følgende verdier i dialogboksen **Avrundingsjusteringer**:
 
@@ -124,7 +124,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 <td><strong>Opprette en skriftstil</strong></td>
 <td>
 <ol>
-<li>På <strong>Format</strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
+<li>På <strong>Format</strong>-menyen i Report Designer klikker du <strong>Stiler og formatering</strong>.</li>
 <li>Klikk på <strong>Ny</strong> i dialogboksen <strong>Stiler og formatering</strong>, og skriv deretter inn et unikt navn for den nye stilen.</li>
 <li>Velg skrifter, og klikk deretter <strong>OK</strong>.</li>
 </ol>
@@ -134,7 +134,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 <td><strong>Endre en skriftstil</strong></td>
 <td>
 <ol>
-<li>På <strong>Format</strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
+<li>På <strong>Format</strong>-menyen i Report Designer klikker du <strong>Stiler og formatering</strong>.</li>
 <li>Velg en stil du vil endre i dialogboksen <strong>Stiler og formatering</strong>, og klikk deretter <strong>Endre</strong>.</li>
 <li>Velg skrifter, og klikk deretter <strong>OK</strong>.</li>
 </ol>
@@ -144,7 +144,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 <td><strong>Bruke en skriftstil</strong></td>
 <td>
 <ol>
-<li>I en definisjon eller kolonnedefinisjon, eller i topptekst og bunntekst, velger du én eller flere celler i Rapportutforming.</li>
+<li>I en definisjon eller kolonnedefinisjon, eller i topptekst og bunntekst, velger du én eller flere celler i Report Designer.</li>
 <li>Velg en skriftstil i <strong>Stil</strong>-listen på verktøylinjen.</li>
 </ol>
 </td>
@@ -156,7 +156,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 
 Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er angitt i kolonnedefinisjonen og rapportdefinisjonen. Du kan endre tekstformatet ved hjelp av kontrollene på formateringsverktøylinjen. Disse kontrollene er standard Microsoft Windows-kontroller.
 
-1. Åpne raddefinisjonen som skal endres, i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
 2. Velg cellene som skal formateres. Hvis du vil velge flere celler, holder du nede CTRL-tasten når du velger cellen.
 3. Klikk på verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter **Øk innrykk** ![Øk innrykk.](media/indent.gif "Øk innrykk") på verktøylinjen.
 
@@ -166,19 +166,19 @@ Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefini
 
 ### <a name="change-the-width-of-a-column-in-the-view-pane"></a>Endre bredden på en kolonne i visningruten
 
-1. Åpne raddefinisjonen som skal endres i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
 2. Velg **Kolonnebredde** på **Format**-menyen.
 3. Angi en verdi, og klikk deretter **OK** i dialogboksen **Kolonnebredde**. Du kan også dra den høyre kanten av en kolonneoverskriftscelle for å endre bredden på kolonnen.
 
 ### <a name="hide-columns-in-the-view-pane"></a>Skjule kolonner i visningsruten
 
-1. Åpne raddefinisjonen som skal endres i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
 2. Merk kolonnen eller kolonnene som skal minimeres.
 3. Høyreklikk og klikk deretter **Skjul**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Vise alle skjulte kolonner i visningsruten
 
-1. Åpne raddefinisjonen som skal endres i Rapportutforming.
+1. Åpne raddefinisjonen som skal endres, i Report Designer.
 2. Høyreklikk den minimerte kolonnen som skal vises, og klikk deretter **Vis**.
 
 

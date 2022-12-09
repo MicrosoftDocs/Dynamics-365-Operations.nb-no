@@ -14,12 +14,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 576dcd320600f4741a43bfeee53198637bffce15
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 12de50f26127c54c2f82ace43487de10e7125aea
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779534"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9804243"
 ---
 # <a name="reconcile-a-bank-account"></a>Avstemme en bankkonto
 
@@ -63,7 +63,7 @@ For å merke av for **Avstemt** for et intervall med kontroller som alle vises p
 
 ## <a name="cancel-bank-statement-reconciliation"></a>Avbryt avstemming av bankkontoutdrag 
 
-Med funksjonen Avbryt avstemming av bankkontoutdrag kan du avbryte avstemming av bankkontoutdrag. Hvis du vil bruke denne funksjonen, aktiverer du funksjonen **Avbryt avstemming av bankkontoutdrag** i arbeidsområdet **Funksjonsbehandling**. Du må også aktivere parameteren **Tillat redigering av bankkontoutdrag**. Dette gjør du ved å gå til **Kontant- og bankbehandling > Oppsett > Parametere for kontant- og bankbehandling > Bankavstemming**.
+Med funksjonen **Avbryt avstemming av bankkontoutdrag** kan du avbryte avstemming av bankkontoutdrag. Hvis du vil bruke denne funksjonen, aktiverer du funksjonen **Avbryt avstemming av bankkontoutdrag** i arbeidsområdet **Funksjonsbehandling**. Du må også aktivere parameteren **Tillat redigering av bankkontoutdrag**. Dette gjør du ved å gå til **Kontant- og bankbehandling > Oppsett > Parametere for kontant- og bankbehandling > Bankavstemming**.
  
 Avstemminger av bankkontoutdrag kan bare avbrytes i den kronologiske rekkefølgen de ble angitt. Når en avstemming av et bankkontoutdrag avbrytes, tilbakeføres nye transaksjoner og rettelser, og alle andre transaksjoner merkes som ikke avstemt.
  

@@ -2,7 +2,7 @@
 title: Oppdatere prosess
 description: Microsoft Dynamics 365 Human Resources er ekte programvare som tjeneste (SaaS) som gir kontinuerlige, berøringsfrie serviceoppdateringer for program- og plattformendringer.
 author: twheeloc
-ms.date: 09/01/2022
+ms.date: 12/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 71815866ef9674f317b7f08ecf2a65b465ddfff3
-ms.sourcegitcommit: d2046cad5de570e6302a4390b41881a7ecb12e26
+ms.openlocfilehash: 197b3c5717494ab3c80a57cda337a9021293bf73
+ms.sourcegitcommit: 68efa7b89273d04484566cbe14d3533a8fd4ee53
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "9520817"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "9819303"
 ---
 # <a name="update-process"></a>Oppdatere prosess
 
@@ -41,7 +41,7 @@ Oppdateringer utgis regelmessig for alle miljøer. Human Resources støttes i he
 
 Human Resources-oppdateringer brukes for alle miljøer automatisk. Human Resources har to typer lanseringer:
 
-- **Serviceoppdateringer**: Oppdateringer skjer annenhver uke som inneholder feilrettinger og nye funksjoner. Serviceoppdateringer omfatter også aktuelle plattformoppdateringer når de frigis. Hvis du vil ha mer informasjon om plattformversjoner, kan du se [Hva er nytt eller endret i plattformoppdateringer](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Oppdateringer har en trinnvis, global distribusjon på tvers av områder. Hvis du vil ha mer informasjon om oppdateringer, kan du se [Hva er nytt eller endret i Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Serviceoppdateringer**: Serviceoppdateringer omfatter også aktuelle plattformoppdateringer når de frigis. I tillegg til unntaksbaserte oppdateringer forekommer regelmessige serviceoppdateringer etter allmenn tilgjengelighet for Dynamics 365 Finance-oppdateringer. Hvis du vil ha mer informasjon om plattformversjoner, kan du se [Hva er nytt eller endret i plattformoppdateringer](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Oppdateringer har en trinnvis, global distribusjon på tvers av områder. Hvis du vil ha mer informasjon om oppdateringer, kan du se [Hva er nytt eller endret i Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
 - **Dataverse-løsningsoppdateringer**: Disse oppdateringene inntreffer omtrent hver sjette uke etter behov. De inneholder nye enheter og endringer i eksisterende enheter i Dataverse. Disse oppdateringene utgis i de samme regionene som oppdateringene annenhver uke, og de tar omtrent seks uker på å replisere gjennom alle datasentre. Løsningsoppdateringer kan være rettet inn mot serviceoppdateringer annenhver uke.
 
@@ -56,16 +56,7 @@ Når det er nødvendig, tilbyr Human Resources følgende typer korrigeringer:
 
 Versjoner er gjennomgått, testet og godkjent i et internt miljø. Etter at buildene er godkjent, distribueres de deretter til produksjon.
 
-## <a name="release-cadence-exceptions-in-2021"></a>Unntak fra lanseringsfrekvens i 2021
-
-Hvis du vil ha en konto for helligdager, er utgivelsesplanen for november og desember 2021 som følger:
-
-- Novemberutgivelse: 1–14. november
-- Desemberutgivelse: 29. november til 12. desember
- 
-Lanseringsfrekvensen på to uker vil fortsette som vanlig den 10. januar 2022.
-
-## <a name="communications"></a>Kommunikasjoner
+## <a name="communications"></a>Kommunikasjon
 
 Du kan finne ut hva vi arbeider med for Human Resources, og hva vi har utgitt på følgende steder:
 

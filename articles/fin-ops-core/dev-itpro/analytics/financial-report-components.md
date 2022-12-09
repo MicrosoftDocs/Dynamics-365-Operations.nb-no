@@ -2,7 +2,7 @@
 title: Komponenter for finansrapport
 description: Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering.
 author: aprilolson
-ms.date: 10/27/2017
+ms.date: 10/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: af5cd63c2dbd531b4c8097b6149d7e67fe112259
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9280039"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802722"
 ---
 # <a name="financial-report-components"></a>Komponenter for finansrapport
 
@@ -28,7 +28,7 @@ ms.locfileid: "9280039"
 
 Denne artikkelen beskriver hvordan komponenter eller byggeblokker i rapportdefinisjoner brukes i finansrapportering. Disse byggeblokkene inkluderer raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner. Denne artikkelen forklarer hvordan du ordner og låse byggesteiner.
 
-Utformingsfilosofien bak Utforming av finansrapport er å dele informasjonen inn i de minste komponenten eller byggeblokkene, og deretter blande og samsvare komponentene som kreves. Derfor er rapportformateringen atskilt fra dine økonomiske data, og du kan endre utformingen av en rapport uten å endre de økonomiske dataene i Microsoft Dynamics ERP-systemet. Ved å bruke denne fremgangsmåten for byggeblokken, kan du kombinere tekst, beløp og beregninger for å lage rapportene du trenger. Denne fleksibiliteten fremmer kreativiteten ved å gjøre det enkelt for deg å vise operasjoner på forskjellige måter. De individuelle byggeblokkene i en rapportdefinisjon ligner på et tredimensjonalt regneark, men de har flere muligheter. En rapportdefinisjon angir raddefinisjon, kolonnedefinisjon og valgfri rapporteringstredefinisjon som skal brukes for rapporten. Den inneholder også informasjon om hvor den genererte rapporten skal lagres og hvordan den skal formateres.
+Utformingsfilosofien bak Utforming av finansrapport er å dele informasjonen inn i de minste komponenten eller byggeblokkene, og deretter blande og samsvare komponentene som kreves. Derfor er rapportformateringen atskilt fra dine økonomiske data, og du kan endre utformingen av en rapport uten å endre de økonomiske dataene i Microsoft Dynamics 365 Finance. Ved å bruke denne fremgangsmåten for byggeblokken, kan du kombinere tekst, beløp og beregninger for å lage rapportene du trenger. Denne fleksibiliteten fremmer kreativiteten ved å gjøre det enkelt for deg å vise operasjoner på forskjellige måter. De individuelle byggeblokkene i en rapportdefinisjon ligner på et tredimensjonalt regneark, men de har flere muligheter. En rapportdefinisjon angir raddefinisjon, kolonnedefinisjon og valgfri rapporteringstredefinisjon som skal brukes for rapporten. Den inneholder også informasjon om hvor den genererte rapporten skal lagres og hvordan den skal formateres.
 
 ## <a name="building-blocks-of-a-report"></a>Byggeblokker i en rapport
 
@@ -42,22 +42,22 @@ Utformingsfilosofien bak Utforming av finansrapport er å dele informasjonen inn
 Hvis du ikke har erfaring med å utforme rapporter, kan det hende du vil bruke rapportveiviseren for raskt å opprette en rapportdefinisjon som du kan tilpasse senere. Hvis du har erfaring med å utforme rapporter og vil ha større fleksibilitet for rapportutformingen, kan du kombinere nye eller eksisterende byggeblokker for å opprette en ny rapportdefinisjon. Du trenger ikke forstår fullt ut alle de tilgjengelige alternativene for rapportdefinisjon for å lage kvalitetsrapporter. Når du blir vant med å utforme rapporter, kan du utvide rapportdefinisjonene for å dra nytte av mer avanserte funksjoner. Når du har opprettet en grunnleggende rapport, kan du tilpasse rapportdefinisjonen og eventuelle byggeblokker i rapportdefinisjonen.
 
 ## <a name="organize-the-building-blocks"></a>Organisere byggeblokkene
-Bruke mapper til å organisere byggeblokkene i Rapportutforming. Alle mappene er spesifikke for typen byggeblokk som de inneholder. Alle mapper som for eksempel inneholder raddefinisjoner, finnes i ruten **Raddefinisjoner** i Rapportutforming.
+Bruke mapper til å organisere byggeblokkene i Rapportutforming. Alle mappene er spesifikke for typen byggeblokk som de inneholder. Alle mapper som for eksempel inneholder raddefinisjoner, finnes i ruten **Raddefinisjoner** i Report Designer.
 
 ### <a name="create-a-folder"></a>Opprette en mappe
 
-1. I Rapportutforming velger du type byggeblokk å organisere i navigasjonsruten. Hvis du for eksempel vil sortere en raddefinisjon, klikker du **Raddefinisjoner**.
+1. I Report Designer velger du type byggeblokk å organisere i navigasjonsruten. Hvis du for eksempel vil sortere en raddefinisjon, klikker du **Raddefinisjoner**.
 2. I navigasjonsruten velger du den eksisterende mappen som den nye mappen skal opprettes under, og deretter følger du én av disse trinnene:
 
     - Høyreklikk den overordnede mappen, og klikk deretter **Ny mappe**.
-    - Velg den overordnede mappen, klikk **Fil**, og klikk deretter **Ny mappe**..
+    - Velg den overordnede mappen, klikk **Fil**, og klikk deretter **Ny mappe**.
 
-3. Når den nye mappen vises, angir du deretter navnet på den nye mappen og trykker Enter.
+3. Når den nye mappen vises, angir du deretter navnet på den nye mappen og trykker **Enter**.
 
 ## <a name="lock-a-building-block"></a> Låse en byggeblokk
 Du kan opprette et passord for å låse og bidra til å beskytte en byggeblokk. På denne måten kan du legge til et sikkerhetsnivå i en rapportkomponent uten å sikre hele systemet. Et passord kan bidra til å beskytte byggeblokkinformasjon som er viktig for rapporteringsprosessen for månedsavslutning. En bruker i en hvilken som helst rolle kan låse en byggeblokk. Andre brukere har imidlertid alltid skrivebeskyttet tilgang til en låst komponent. Brukere kan åpne, endre og lagre den låste komponenten med et nytt navn. En bruker som har rollen administrator har alltid få tilgang til og kan endre en låst byggeblokk.
 
-1. Åpne rapportkomponenten som skal låses i Rapportutforming, for eksempel en raddefinisjon, kolonnedefinisjon, rapportdefinisjon eller rapporteringstredefinisjon.
+1. Åpne rapportkomponenten som skal låses i Report Designer, for eksempel en raddefinisjon, kolonnedefinisjon, rapportdefinisjon eller rapporteringstredefinisjon.
 2. På **Verktøy**-menyen klikker du **Aktiver/deaktiver beskyttelse** > . Du kan også klikke ikonet for **Aktiver/deaktiver beskyttelse** (låseikonet) på verktøylinjen.
 3. Angi og bekreft et passord, og klikk deretter **OK** i dialogboksen **Beskytt**. Låseikonet på verktøylinjen utheves når en åpen byggeblokk er låst.
 
@@ -71,7 +71,7 @@ Byggeblokker er raddefinisjoner, kolonnedefinisjoner rapporteringstredefinisjone
 
 Du kan vise alle byggeblokker som er tilordnet til en byggeblokkgruppe. Du kan også eksportere eller importere en byggeblokkgruppe.
 
-1. Klikk **Byggeblokkgrupper** på **Firma**-menyen i Rapportutforming.
+1. Klikk **Byggeblokkgrupper** på **Firma**-menyen i Report Designer.
 2. I dialogboksen **Byggeblokkgrupper** velger du byggeblokken som skal vises.
 3. Klikk på **Vis** for å åpne dialogboksen **Vis byggeblokkgruppe**, der du kan vise innholdet i byggeblokkgruppen.
 4. Klikk på **Lukk** for å lukke dialogboksene.
@@ -80,7 +80,7 @@ Du kan vise alle byggeblokker som er tilordnet til en byggeblokkgruppe. Du kan o
 
 Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
 
-1. På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
+1. Klikk **Byggeblokkgrupper** på **Firma**-menyen i Report Designer.
 2. Velg byggeblokkgruppen som skal eksporteres, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Eksporter**.
 3. I dialogboksen **Eksporter** velger rapportdefinisjonene som skal eksporteres:
 
@@ -99,7 +99,7 @@ Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en by
 
 Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe. Alle importerte byggeblokkgrupper beholder sin opprinnelige skriftstiler og referanser for firmaet, og inkluderer de relevante dimensjonssettene.
 
-1. På **Firma**-menyen i Rapportutforming klikker du **Byggeblokkgrupper**.
+1. Klikk **Byggeblokkgrupper** på **Firma**-menyen i Report Designer.
 2. Velg byggeblokken som en byggeblokkgruppe skal importeres til, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Importer**.
 3. Velg byggeblokkgruppen som skal importeres, i dialogboksen **Åpne**, og klikk deretter **Åpne**.
 4. I dialogboksen **Importer** velger rapportdefinisjonene som skal importers:
@@ -116,7 +116,7 @@ Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til bygg
 > [!NOTE]
 > Du må ha rollen som administrator for å kunne sjekke inn byggeblokker fra dialogboksen **Utsjekkede elementer**.
 
-1. På **Verktøy**-menyen i Rapportutforming klikker du **Utsjekkede elementer**.
+1. På **Verktøy**-menyen i Report Designer klikker du **Utsjekkede elementer**.
 2. Velg **Vis elementer fra alle brukere** i dialogboksen **Utsjekkede elementer**. Listen oppdateres for å vise alle byggeblokker som er sjekket ut, og brukerne som har sjekket dem ut.
 3. Merk en byggeblokk, og klikk deretter **Angre utsjekking**.
 4. Klikk på **Ja** for å sjekke inn byggeblokken.

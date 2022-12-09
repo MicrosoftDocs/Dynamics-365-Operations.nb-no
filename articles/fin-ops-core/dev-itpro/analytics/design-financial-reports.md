@@ -2,7 +2,7 @@
 title: Vise og utforme finansrapporter
 description: Denne artikkelen inneholder øvelser som forklarer hvordan du viser og opprette finansrapporter for Microsoft Dynamics 365 Finance.
 author: jcart1106
-ms.date: 10/02/2019
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.form: FinancialReportingSetup
-ms.openlocfilehash: b6709f90065c91c55a489f101da430db33355a75
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 92474e7b99af7d83b2089b6652558630c60824c1
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9273433"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799525"
 ---
 # <a name="view-and-design-financial-reports"></a>Vis og utform finansrapporter
 
@@ -51,30 +51,30 @@ I denne øvelsen skal du generere og utforske en eksisterende standardrapport. D
     > [!NOTE]
     > Du blir bedt om å laste ned ettklikks rapportutforming og om å logge på. Bruk legitimasjonen til å logge på.
 
-7. Endre basisåret til 2012, og velg **Generer**. Når en rapport genereres fra rapportdesigneren, åpnes den i en ny nettleserfane. Du kan enten utforske rapporten i den nye nettleserfanen, eller gå til den opprinnelige nettleserfanen din og åpne rapporten derfra ved å velge den fra listen over **Finansrapporter**.
+7. Endre basisåret til 2021, og velg **Generer**. Når en rapport genereres fra rapportdesigneren, åpnes den i en ny nettleserfane. Du kan enten utforske rapporten i den nye nettleserfanen, eller gå til den opprinnelige nettleserfanen din og åpne rapporten derfra ved å velge den fra listen over **Finansrapporter**.
 8. I den åpnede rapporten velger du ett av beløpene for å drille ned i kontodetaljen for rapporten.
 9. Når du er i kontodetalj, velger du en konto med data og **driller ned til transaksjonsnivå i rapporten**. På transaksjonsnivået i rapporten kan du se egenskapene (attributtene) som er inkludert i rapportutformingen. Avhengig av transaksjonen og kontoen kan noen eller alle attributtene vises.
 10. Lukk transaksjonsnivået i rapporten.
-11. Velg samme eller en annen konto, og **åpne bilagstransaksjoner**. Bilagstransaksjoner filtreres etter kombinasjonen av periode, år og konto + dimensjon for den valgte kontoen. Fra bilagstransaksjoner kan du utforske tilleggsinformasjon om transaksjonen.
-12. Lukk bilagstransaksjoner. I en finansrapport kan du vise dataene enten for en annen periode og et annet år eller med andre attributter og dimensjoner brukt på dem. Du kan gjøre dette ved hjelp av **Rapportalternativer**.
+11. Velg samme eller en annen konto, og **åpne bilagstransaksjoner**. Bilagstransaksjoner filtreres etter kombinasjonen av periode, år og konto + dimensjon for den valgte kontoen. Fra **Bilag-transaksjoner** kan du utforske tilleggsinformasjon om transaksjonen.
+12. Lukk **Bilag-transaksjoner**. I en finansrapport kan du vise dataene enten for en annen periode og et annet år eller med andre attributter og dimensjoner brukt på dem. Du kan gjøre dette ved hjelp av **Rapportalternativer**.
 13. Velg **Rapportalternativer**.
 14. Velg **Legg til et dimensjonsfilter**, og velg **Forretningsenhet**.
-15. Skriv inn 001 i feltet, og velg **OK**. Rapporten viser nå bare dataene for forretningsenhet 001. Dette er en tilpasset visning av rapporten, og visningen er ikke tilgjengelig for andre.
+15. Skriv inn **001** i feltet, og velg **OK**. Rapporten viser nå bare dataene for forretningsenhet 001. Dette er en tilpasset visning av rapporten, og visningen er ikke tilgjengelig for andre.
 16. Lukk den filtrerte rapporten. Finansrapporter kan vises i en hvilken som helst valuta som er lagt til i programmet.
 17. Velg **Valuta**, og velg deretter **EUR**. Rapporten vises nå i euro. Valutakoder eller valutasymboler som er inkludert i rapportutformingen, vises nå i valutaen som er brukt. Hvis ingen valutasymbol er definert for en valuta, vises ikke valutasymbolet.
 18. Lukk rapporten **FIN-detalj**.
 19. Lukk **Rapportutforming**.
 
 ## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Øvelse 2: Legge til ytterligere kontoegenskaper i en rapportutforming
-I denne øvelsen skal du endre en eksisterende standardrapport. Du skal oppdatere begge raddefinisjonene slik at de omfatter alle kontoene, og du skal oppdatere kolonnedefinisjonen slik at den inneholder kontoattributter. Når oppdateringene er fullført, skal du generere den nyopprettede rapporten og utforske den. Vi begynner i Finansrapporter-listen.
+I denne øvelsen skal du endre en eksisterende standardrapport. Du skal oppdatere begge raddefinisjonene slik at de omfatter alle kontoene, og du skal oppdatere kolonnedefinisjonen slik at den inneholder kontoattributter. Når oppdateringene er fullført, skal du generere den nyopprettede rapporten og utforske den. Vi begynner i **Finansrapporter**-listen.
 
-1. Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
+1. Gå til **Finansrapporter** under **Forespørsler og rapporter** i økonomimodulen.
 2. Velg raden for rapporten kalt **Råbalansesammendrag – standard**.
 3. Velg **Rediger**. **Råbalansesammendrag – standard** åpnes i Rapportutforming.
-4. Velg **Fil**, **Lagre som**, og gi rapporten navnet Detaljert råbalanse med attributter.
+4. Velg **Fil**, **Lagre som**, og gi rapporten navnet **Detaljert råbalanse med attributter**.
 
     > [!NOTE]
-    > Hver gang det opprettes en ny rapport i Rapportutforming, oppdateres finansrapportene.
+    > Hver gang det opprettes en ny rapport i Report Designer, oppdateres **Finansrapporter**.
 
 5. Fra rapportdefinisjonen velger du ikonet for raddefinisjon for å åpne **Råbalanse – standard raddefinisjon**.
 6. Lagre raddefinisjonen som **Detaljert råbalanse med attributter**.
@@ -107,7 +107,7 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal oppdater
 26. Lukk **Rapportutforming**.
 
 ## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Øvelse 3: Opprette en flerdimensjonal rapport ved hjelp av et rapporteringstre
-I denne øvelsen skal du endre en eksisterende standardrapport. Du skal opprette et rapporteringstre og legge til en rapportdefinisjon for å produsere et resultatregnskap for kostsenter/avdeling. Når oppdateringene er fullført, skal du generere resultatregnskapet for kostsenter/avdeling og utforske rapporten ved å bruke rapporteringstreet. Vi begynner i Finansrapporter-listen.
+I denne øvelsen skal du endre en eksisterende standardrapport. Du skal opprette et rapporteringstre og legge til en rapportdefinisjon for å produsere et **resultatregnskap for kostsenter/avdeling**. Når oppdateringene er fullført, skal du generere **resultatregnskapet for kostsenter/avdeling** og utforske rapporten ved å bruke rapporteringstreet. Vi begynner i **Finansrapporter**-listen.
 
 1. Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
 2. Velg raden for rapporten kalt **Resultatregnskap – standard**.
@@ -117,7 +117,7 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal opprette
 6. Fjern merket for alle dimensjoner unntatt **Kostsenter**.
 7. Klikk **Fra dimensjon**-feltet for kostsenterdimensjonen, skriv inn **007**, og trykk deretter Tab. I **Til dimensjon**-feltet skriver du inn **018**.
 8. **Lagre** det resulterende treet med navnet **Kostsentre etter avdeling**. Nå som rapporteringstreet er opprettet, skal du endre rapporteringstreet slik at det inneholder tre nye opprullede enheter: Markedsføring, Operasjoner og Detaljhandel.
-9. På **Vindu**-menyen klikker du **Kostsentre etter avdeling**. (Hvis rapporteringstreet er lukket, velger du det fra Definisjoner av rapporteringstre i navigasjonsruten.)
+9. På **Vindu**-menyen klikker du **Kostsentre etter avdeling**. (Hvis rapporteringstreet er lukket, velger du det fra **Definisjoner av rapporteringstre** i navigasjonsruten.)
 10. Velg enhet nummer to, **Varemesser**, og klikk ikonet **Sett inn rapportenhet**.
 11. Dobbeltklikk enhetskolonnen i den tomme raden, og velg **USMF**.
 12. Skriv inn **Markedsføring** i kolonne B og C.
@@ -131,13 +131,13 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal opprette
 20. Velg **Senk rapportenhet**. Legg merke til at enheten nå vises som underordnet **Markedsføring**.
 21. Klikk enhet fire, **Markedsføringskampanje**, og høyreklikk.
 22. Velg **Senk rapportenhet**.
-23. Klikk **Serviceoperasjoner** i den grafiske visningen. Trykk og hold nede venstre museknapp mens du drar enheten opp til **Operasjoner**. Slipp venstre museknapp for å slippe enheten i operasjonens opprulling. Gjenta dette for **Produksjon, Kvalitetskontroll, Logistikk, Innkjøp og Administrasjon**.
+23. Klikk **Serviceoperasjoner** i den grafiske visningen. Trykk og hold nede venstre museknapp mens du drar enheten opp til **Operasjoner**. Slipp venstre museknapp for å slippe enheten i operasjonens opprulling. Gjenta dette for **Produksjon**, **Kvalitetskontroll**, **Logistikk**, **Innkjøp** og **Administrasjon**.
 24. Gjør **Utsalgssted**, **Super**, **Kjøpesenter** og **Nett** til underordnede for **Detaljhandel** ved å senke dem eller dra og slippe dem.
 25. Lagre den resulterende omorganiseringen. Nå som vi har rapporteringstreet opprettet og organisert, kan det legges til i rapportdefinisjonen.
 26. På **Vindu**-menyen velger du **Resultatregnskap – standard** for å åpne rapportdefinisjonen.
 27. Klikk rullegardinlisten **Tretype**, og velg **Rapporteringstre**.
 28. Klikk rullegardinlisten Tre, og velg **Kostsentre etter avdeling**.
-29. Endre basisåret til **2012**, **lagre** endringene, og **generer** rapporten. Når rapporten er generert og åpnes, kan du utforske den.
+29. Endre basisåret til **2021**, **lagre** endringene, og **generer** rapporten. Når rapporten er generert og åpnes, kan du utforske den.
 30. Velg rullegardinlisten **Rapporteringstre** for å vise rapporteringsenhetene. Du kan også drille ned i en rad i rapporten for å se alle saldoene for alle enheter i rapporteringstreet.
 31. Lukk **Resultatregnskap – standard**.
 32. Lukk **Rapportutforming**.
@@ -145,11 +145,11 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal opprette
 ## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Øvelse 4: Opprette en konsolidert rapport ved hjelp av et organisasjonshierarki
 I denne øvelsen skal du endre en eksisterende standardrapport. Du skal legge til et organisasjonshierarki i rapportdefinisjonen for å produsere et konsolidert resultatregnskap og balanse. Når oppdateringene er fullført, skal du generere den konsoliderte rapporten og utforske den ved å bruke rapporteringstreet. Vi begynner i Finansrapporter-listen.
 
-1. Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
+1. Gå til **Finansrapporter** under **Forespørsler og rapporter** i økonomimodulen.
 2. Velg raden for rapporten kalt **Balanse og resultatregnskap side ved side – standard**.
 3. Velg **Rediger**. **Balanse og resultatregnskap side ved side – standard** åpnes i Rapportutforming.
 4. Velg **Fil** &gt; **Lagre som**, og gi rapporten navnet **Konsolidert balanse og resultatregnskap side ved side**.
-5. Endre basisåret til 2012.
+5. Endre basisåret til 2021.
 6. Klikk rullegardinlisten Tretype, og velg **Organisasjonshierarkier**.
 7. Klikk rullegardinlisten Tre, og velg **Contoso Holdings**.
 8. Lagre endringene, og generer rapporten. Velg alle rapportenheter hvis du blir spurt. Når rapporten er generert og åpnes, kan du utforske den.
@@ -162,16 +162,16 @@ I denne øvelsen skal du endre en eksisterende standardrapport. Du skal legge ti
 15. Lukk **Rapportutforming**.
 
 ## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Øvelse 5: Opprette en side-ved-side-rapport for avdeling
-I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-rapport med resultatregnskap for avdeling. Du skal bruke en eksisterende raddefinisjon, men opprette en ny rapportdefinisjon og en ny kolonnedefinisjon som bruker dimensjonsfiltre. Vi begynner i Finansrapporter-listen.
+I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-rapport med resultatregnskap for avdeling. Du skal bruke en eksisterende raddefinisjon, men opprette en ny rapportdefinisjon og en ny kolonnedefinisjon som bruker dimensjonsfiltre. Vi begynner i **Finansrapporter**-listen.
 
-1. Gå til **Finansrapporter** under Forespørsler og rapporter i økonomimodulen.
+1. Gå til **Finansrapporter** under **Forespørsler og rapporter** i økonomimodulen.
 2. Velg **Ny**. Rapportutforming åpnes med en tom rapportdefinisjon åpen. Først skal du opprette kolonnedefinisjonen.
 3. Opprett en ny kolonnedefinisjon ved å klikke **Fil**, **Ny** og deretter **Kolonnedefinisjon**.
 4. I **Kolonne A** velger du **DESC** for kolonnetypen.
 5. I **Kolonne B** velger du **FD** for kolonnetypen.
 6. Dobbeltklikk i **Dimensjonsfilter**-feltet.
 7. I **Dimensjon**-vinduet dobbeltklikker du **Avdeling**-kolonnen.
-8. I delen for enkeltvis eller område i dialogboksen klikker du **ellipsen** for **Fra**-feltet for å vise en liste over avdelinger.
+8. I delen for **Enkeltvis eller område** i dialogboksen klikker du **ellipsen** for **Fra**-feltet for å vise en liste over avdelinger.
 9. Velg avdeling **022**, **Salg og markedsføring**, og klikk deretter **OK**.
 10. Gjenta trinn 5 til 8 for avdeling 23–25.
 11. I raden **Topptekst 2** for hver FD-kolonne skriver du inn følgende avdelingsbeskrivelser:
@@ -185,7 +185,7 @@ I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-r
 13. På **Vindu**-menyen velger du **Ny rapportdefinisjon** for å åpne rapportdefinisjonen.
 14. Velg **Resultatregnskap – standard** som raddefinisjonen og **Avdelinger side ved side** som kolonnedefinisjonen.
 15. Lagre rapportdefinisjonen som **Resultatregnskap for avdeling side ved side**.
-16. Endre basisåret til **2012**.
+16. Endre basisåret til **2021**.
 17. Endre detaljnivået til **Økonomisk, Konto og Transaksjon**.
 18. **Lagre** endringene, og **generer**. Når rapporten er generert og åpnes, kan du utforske den.
 

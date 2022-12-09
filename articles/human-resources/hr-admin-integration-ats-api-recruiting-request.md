@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58e509a819e5cda650fddab8dd0c4d55d5148db1
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: d89d3e77d096f5908207ac53f4e9022f686ac5f3
+ms.sourcegitcommit: 5f8f042f3f7c3aee1a7303652ea66e40d34216e3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8872275"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "9806382"
 ---
 # <a name="recruiting-request"></a>Rekrutteringsforespørsel
 
@@ -68,7 +68,7 @@ Beskriver en forespørsel om å rekruttere for en jobb.
     "_mshr_fk_jobtype_id_value": "Guid",
     "_mshr_fk_compensationlevel_id_value": "Guid",
     "mshr_hcmrecruitingrequestentityid": "Guid",
-    "_mshr_fk_recruitingrequestlocation_id_value": “Guid”
+    "_mshr_fk_recruitingrequestlocation_id_value": "Guid"
 }
 ```
 
@@ -87,7 +87,7 @@ Beskriver en forespørsel om å rekruttere for en jobb.
 | **Status**<br>mshr_status<br>Alternativsett for *RecruitingRequestStatus* | Lese/skrive<br>Obligatorisk<br> | Viser statusen for rekrutteringsforespørselen. |
 | **Beskrivelse**<br>mshr_description<br>*Streng* | Lese/skrive<br>Obligatorisk | Beskriver forespørselen. |
 | **ID for rekrutteringsforespørselssted**<br>mshr_recruitingrequestlocationid<br>*Streng* | Lese/skrive<br>Valgfri | Den brukerlesbare unike identifikatoren for jobblokasjonen som er knyttet til denne forespørselen. |
-| **Verdi for rekrutteringslokasjons-ID**<br>_mshr_fk_recruitinglocation_id_value<br>*GUID* | Skrivebeskyttet<br>Valgfri<br>Sekundærnøkkel: mshr_hcmrecruitingrequestlocationentityid i mshr_hcmrecruitingrequestlocationentity-enhet | Systemgenerert GUID-verdi for å identifisere rekrutteringsforespørselslokasjonen som er valgt for rekruttereren. |
+| **Verdi for rekrutteringslokasjons-ID**<br>_mshr_fk_recruitingrequestlocation_id_value<br>*GUID* | Skrivebeskyttet<br>Valgfri<br>Sekundærnøkkel: mshr_hcmrecruitingrequestlocationentityid i mshr_hcmrecruitingrequestlocationentity-enhet | Systemgenerert GUID-verdi for å identifisere rekrutteringsforespørselslokasjonen som er valgt for rekruttereren. |
 | **Kommentarer**<br>mshr_comments<br>*Streng* | Lese/skrive<br>Valgfri | Kommentarer om forespørselen som brukes av ansettelsesansvarlige og rekrutteringsansvarlige. |
 | **Jobb-ID**<br>mshr_jobid<br>*Streng* | Skriv én gang<br>Obligatorisk |   Den brukerlesbare unike identifikatoren for jobben som deles av alle posisjoner som er knyttet til denne forespørselen. |
 | **Verdi for jobb-ID**<br>_mshr_fk_job_id_value<br>*GUID* | Skrivebeskyttet<br>Obligatorisk<br>Sekundærnøkkel: mshr_hcmjobentityid i mshr_hcmjobentity-enhet | Den systemgenererte unike identifikatoren for jobben som deles av alle posisjoner som er knyttet til rekrutteringsforespørselen. |

@@ -2,7 +2,7 @@
 title: Organisere rapportkomponenter i rapportutforming
 description: Denne artikkelen beskriver hvordan du organiserer eksisterende rapporter, byggeblokker og objekter i rapportutforming.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a6abad01232d05e94321d0d568d2e801d92875ae
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: a94a88114072792243026e441e6c5a62ee80fc56
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135887"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802695"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i rapportutforming
 
@@ -28,16 +28,16 @@ ms.locfileid: "9135887"
 
 Når du har utformet byggeblokker og genererte rapporter, er det nyttig å organisere disse objektene slik at de blir enklere for brukerne å finne. Denne artikkelen beskriver hvordan du organiserer eksisterende rapporter, byggeblokker og objekter i rapportutforming.
 
-Du kan gi nytt navn til mapper, rapporter, byggeblokker og andre objekter i rapportutforming, for å bidra til å organisere filene dine. Avhengig av hvilken type objekt du gir nytt navn, må du kanskje oppdatere tilknytninger til dette objektet.
+Du kan gi nytt navn til mapper, rapporter, byggeblokker og andre objekter i Report Designer, for å bidra til å organisere filene dine. Avhengig av hvilken type objekt du gir nytt navn, må du kanskje oppdatere tilknytninger til dette objektet.
 
-## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
-I Rapportutforming kan du gi nytt navn til mapper, rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner.
+## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Report Designer
+I Report Designer kan du gi nytt navn til mapper, rapportdefinisjoner, raddefinisjoner, kolonnedefinisjoner og rapporteringstredefinisjoner.
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Rapportutforming
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Gi nytt navn til en mappe eller byggeblokk i Report Designer
 
-1. Bruk navigasjonsruten i Rapportutforming til å finne mappen eller objektet som skal gis nytt navn.
+1. Bruk navigasjonsruten i Report Designer til å finne mappen eller objektet som skal gis nytt navn.
 2. Høyreklikk mappen eller objektet, og klikk deretter **Gi nytt navn**. **Navn**-feltet i navigasjonsruten blir tilgjengelig.
-3. Skriv inn et nytt navn, og trykk deretter Enter.
+3. Skriv inn et nytt navn, og trykk deretter **Enter**.
 4. Hvis byggeblokken er en raddefinisjon, kolonnedefinisjon eller rapporteringstredefinisjon, må du oppdatere andre byggeblokker som er knyttet til det. Høyreklikk byggeblokken du ga nytt navn i trinn 3, velg **Tilknytninger** og velg deretter et element i listen for å oppdatere det.
 5. Gjenta trinn 4 til alle tilknyttede elementer er oppdaterte.
 
@@ -46,8 +46,8 @@ Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hv
 
 ### <a name="create-a-report-group"></a>Opprette en rapportgruppe
 
-1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
-2. På **Fil**-menhyen klikker du **Ny** &gt; **Rapportgruppedefinisjon** for å åpne en ny rapportgruppe i visningsvinduet. Du kan også klikke **Rapportgruppe**-knappen ![Rapportgruppe.](media/report-group.gif "Rapportgruppe") på verktøylinjen.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Report Designer.
+2. På **Fil**-menyen klikker du **Ny** &gt; **Rapportgruppedefinisjon** for å åpne en ny rapportgruppe i visningsvinduet. Du kan også klikke **Rapportgruppe**-knappen ![Rapportgruppe.](media/report-group.gif "Rapportgruppe") på verktøylinjen.
 3. Klikk på fanen **Rapportgruppe**. For å overstyre informasjonen om de enkelte rapportdefinisjonene for genereringen av denne rapporten, merker du av for **Overstyr selskap, detalj og datoinnstillinger fra de enkelte rapportdefinisjonene**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
 4. Hvis du vil generere flere rapporter som viser rapporteringsvalutaene, merker du av for **Inkluder alle rapporteringsvalutaer**. Du kan deretter gå til flere visninger ved å klikke **Valuta** i webvisningen når du viser rapporten.
 5. I feltet **Rapporter i gruppen** klikker du **Legg til** for å velge rapportene som skal tas med i rapportgruppen. Hvis du vil velge flere rapporter i dialogboksen **Legg til**, holder du nede CTRL-tasten mens du merker rapporter. Når du er ferdig med å velge rapporter, klikker du **OK**.
@@ -55,22 +55,22 @@ Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hv
 
 ### <a name="modify-a-report-group"></a>Endre en rapportgruppe
 
-1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Report Designer.
 2. Dobbeltklikk rapportgruppen du vil endre.
 3. I fanen **Rapportgruppe** gjør du de ønskede endringene.
 4. På **Fil**-menyen klikker du **Lagre** for å lagre den endrede rapportgruppen, eller du kan alternativt klikke **Lagre**-knappen ![Lagre.](media/save.gif "Lagre") på verktøylinjen.
 
-> [OBS!] Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
+> [NOTE] Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapport for en rapportgruppe
 
-1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Report Designer.
 2. Åpne rapportgruppen som skal genereres.
 3. Klikk på **Generer rapport**-knappen ![Generer rapport.](media/generate-report.gif "Generer rapport") for å generere rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
-1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Report Designer.
 2. Høyreklikk rapportgruppen som skal slettes, og velg deretter **Slett**.
 3. Når det vises en bekreftelsesmelding, klikker du **Ja**.
 
@@ -80,13 +80,13 @@ Tabellen nedenfor beskriver kontrollene i fanen **Rapportgruppe**.
 <table>
 <thead>
 <tr>
-<th>Styring</th>
+<th>Ctrl</th>
 <th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Overstyre firma, detaljer og datoinnstillinger fra individuelle rapportdefinisjoner</td>
+<td>Overstyr firma-, detalj- og datoinnstillinger fra enkeltstående rapportdefinisjoner</td>
 <td>Merk av for dette alternativet for å overstyre individuelle rapportdefinisjoner av rapportene i denne rapportgruppen for generering av bare disse rapportene.</td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ Tabellen nedenfor beskriver kontrollene i fanen **Rapportgruppe**.
 </tr>
 <tr>
 <td>Ta med alle rapporteringsvalutaer</td>
-<td>Alle tilleggsrapporteringsvalutaer som er konfigurert i Microsoft Dynamics ERP-systemet, vises her. Merk av for dette alternativet for å generere tilleggsrapporter i valutaene som er angitt. For å vise rapportene i nettvisningsprogrammet ved å klikke <strong>Valuta</strong>-knappen og velge en valuta.</td>
+<td>Alle tilleggsrapporteringsvalutaer som er konfigurert i Microsoft Dynamics 365 Finance-systemet, vises her. Merk av for dette alternativet for å generere tilleggsrapporter i valutaene som er angitt. For å vise rapportene i nettvisningsprogrammet ved å klikke <strong>Valuta</strong>-knappen og velge en valuta.</td>
 </tr>
 <tr>
 <td>Datoinformasjon ikke lagret med rapportdefinisjon</td>

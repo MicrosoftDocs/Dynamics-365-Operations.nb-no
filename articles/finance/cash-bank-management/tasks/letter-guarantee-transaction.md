@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30e21c11b067f6def127f3eab026d7255ab1ca29
-ms.sourcegitcommit: cf6b764824bd1cf2c0dde6d37ddd0a7abab87ff0
+ms.openlocfilehash: 786aecf69bae3d07ac80a55b4dc835dd8129bd59
+ms.sourcegitcommit: 81bb8e51951395be3f18f45212e47e6c41656f6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2022
-ms.locfileid: "9779941"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9803971"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Garantibrevtransaksjon
 
@@ -43,7 +43,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 1. Gå til **Kunder > Ordrer > Alle salgsordrer**.
 2. Klikk på **Ny**.
 3. Angi eller velg en verdi i **Kundekonto**-feltet.
-4. Utvid delen Generelt.
+4. Utvid delen **Generelt**.
 5. Angi eller velg en verdi i **Område**-feltet.
 6. Klikk koblingen i den valgte raden i listen.
 7. Angi eller velg en verdi i feltet **Lager**.
@@ -52,9 +52,12 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 10. Klikk på **OK**.
 11. Angi eller velg en verdi i **Varenummer**-feltet.
 12. Angi et tall i **Enhetspris**-feltet.
-13. Vis seksjonen Linjedetaljer.
-14. Velg kategorien Levering.
-    * Obs!  Velg Leveringsdatokontroll = Ingen  
+13. Vis delen **Linjedetaljer**.
+14. Velg kategorien **Levering**.
+
+>[!Note] 
+>Velg **Leveringsdatokontroll** = **Ingen**  
+
 15. Angi en dato i feltet **Ønsket forsendelsesdato**.
 16. Angi en dato i **Bekreftet forsendelsesdato**-feltet.
 
@@ -83,7 +86,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 2. Skriv inn en verdi i feltet **Banknummer**.
     * Kontroller verdiene som er beregnet, i feltene **Margin** og **Utgift**.  
 3. Klikk på **OK**.
-4. Utvid Handlinger-delen.
+4. Utvid **Handlinger**-delen.
     * Kontroller posten Motta fra bank.  
 5. Klikk for å følge koblingen i feltet **Journalpartinummer**.
 6. Klikk **Linjer**.
@@ -102,7 +105,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 9. Finn og velg ønsket post i listen.
 10. Klikk **Gi til mottaker** for å åpne nedtrekksdialogen.
 11. Klikk på **OK**.
-12. Utvid Handlinger-delen.
+12. Utvid **Handlinger**-delen.
     * Valider posten Gi til mottaker.  
 
 ## <a name="process-letter-of-guarantee_increase-value"></a>Behandle garantibrev_Øk verdi
@@ -118,7 +121,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 10. Finn og velg ønsket post i listen.
 11. Klikk **Øk verdi** for å åpne nedtrekksdialogen.
 12. Klikk på **OK**.
-13. Utvid Handlinger-delen.
+13. Utvid **Handlinger**-delen.
     * Kontroller posten Øk verdi.  
 14. Finn og velg ønsket post i listen.
 15. Klikk for å følge koblingen i feltet **Journalpartinummer**.
@@ -137,7 +140,7 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 9. Finn og velg ønsket post i listen.
 10. Klikk **Avvikle** for å åpne nedtrekksdialogen.
 11. Klikk på **OK**.
-12. Utvid Handlinger-delen.
+12. Utvid **Handlinger**-delen.
     * Kontroller posten Avvikle.  
 13. Finn og velg ønsket post i listen.
 14. Klikk for å følge koblingen i feltet **Journalpartinummer**.

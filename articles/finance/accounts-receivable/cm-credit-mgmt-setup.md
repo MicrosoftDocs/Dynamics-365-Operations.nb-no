@@ -2,7 +2,7 @@
 title: Oppsett av parametere for kredittbehandling
 description: Denne artikkelen beskriver alternativene du kan bruke til å konfigurere kredittbehandling for å dekke bedriftens behov.
 author: JodiChristiansen
-ms.date: 12/10/2021
+ms.date: 11/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ac5e0ba8c9279fc5f04a80d4444b11850e72d3c
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 8955518e7b5c0200d3827c1c22b7d150a09be244
+ms.sourcegitcommit: fb9b6969218f2b82f0a4c72bfad75387fe00395c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8876361"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "9799552"
 ---
 # <a name="credit-management-parameters-setup"></a>Oppsett av parametere for kredittbehandling
 
@@ -46,7 +46,7 @@ Det finnes fire hurtigfaner i **Kreditt**-delen der du kan endre parameterne som
 
 Du kan angi tidspunkt som skal brukes til å kontrollere salgsordrer for kredittproblemer. Hurtigfanen **Kontrollpunkt for kredittbehandling** identifiserer dokumentposteringsprosessene som omfatter behandling av kredittstyringsregler. Du kan også kontrollere kredittreglene mens du enten gjør en proformapostering eller en fullstendig postering av salgsordren. Merk av i avmerkingsboksene for å definere posteringsprosessene som skal sette en ordre på vent hvis det blir funnet et problem etter at blokkeringsreglene for kredittbehandling er behandlet.
 
-Du kan også definere antall løpedager før kredittreglene kontrolleres på nytt. Selv om du kan angi at kredittbehandlingsreglene skal kontrolleres ved postering, blir ikke reglene kontrollert for det angitte antallet løpedager. Du bekrefter for eksempel en salgsordre på dag 1, og du angir to løpedager for bekreftelsestrinnet. I dette tilfellet blir ikke kredittreglene kontrollert ved neste posteringstrinn (for eksempel opprettelse av en følgeseddel eller fakturering av ordren) frem til dag 4. På eller etter dag 4 vil reglene bli kontrollert på nytt når posteringer skjer, og antall løpedager vil bli endret til verdien som er angitt for neste posteringskontrollpunkt.
+Du kan også definere antall løpedager før kredittreglene kontrolleres på nytt. Selv om du kan angi at kredittbehandlingsreglene skal kontrolleres ved postering, blir ikke reglene kontrollert for det angitte antallet løpedager. Du bekrefter for eksempel en salgsordre på dag én, og du angir to løpedager for bekreftelsestrinnet. I dette tilfellet blir ikke kredittreglene kontrollert ved neste posteringstrinn (for eksempel opprettelse av en følgeseddel eller fakturering av ordren) frem til dag fire. På eller etter dag fire vil reglene bli kontrollert på nytt når posteringer skjer, og antall løpedager vil bli endret til verdien som er angitt for neste posteringskontrollpunkt.
 
 Hvis du ikke angir antall løpedager, blir kredittreglene kontrollert på hvert posteringstrinn som er definert for å kjøre kredittbehandlingsregler. Hvis du frigir salgsordren uten å postere og deretter kjører samme ordrebehandlingstrinn på nytt, blir kredittreglene kontrollert på nytt. En ordre settes for eksempel på vent etter en bekreftelse, og du frigir den enten med eller uten postering. I dette tilfellet vil ordren settes på vent igjen hvis du bekrefter den på nytt. Bruk løpedager hvis ordren skal gå videre til neste behandlingstrinn uten å settes på vent igjen.
 
@@ -73,7 +73,7 @@ Flere kredittbehandlingsstatistikker er inkludert i faktaboksen **Statistikk for
 
 - I kredittbehandling vises kundekredittgrensen i kundens valuta. Du må definere valutakurstypen for kredittgrensen i kundens valuta. I feltet **Valutakurstype for kredittgrense** velger du valutakurstypen som skal brukes til å konvertere den primære kredittgrensen til kundens kredittgrense.
 - Sett alternativet **Tillat manuell redigering av kredittgrenser** til **Nei** for å hindre brukere i å redigere kredittgrenser på **Kunde**-siden. Hvis dette alternativet settes til **Nei**, kan endringer i kundens kredittgrense bare gjøres ved å postere justeringstransaksjoner for kredittgrense.
-- Sett alternativet **Omgå lagerreserveringer** til **Ja** for å ignorere lagerreserveringer når blokkeringsregler for kredittstyring er kontrollert. I dette tilfellet kontrollerer systemet fullstendig linjeantall og aktiverer respittperioder for sjekkpunkt, uansett lagerreserveringsantall.
+- Sett alternativet **Omgå lagerreserveringer** til **Ja** for å ignorere lagerreserveringer når blokkeringsregler for kredittstyring er kontrollert. I dette tilfellet kontrollerer systemet antall og aktiverer respittperioder for sjekkpunkt, uansett lagerreserveringsantall.
 - Når Kredittstyring er aktivert, brukes innstillingen for **Meldingen ved kredittgrenseoverskridelse** bare til behandling av fritekstfakturaer. Selv om meldinger fremdeles legges til i salgsordrer når kunder har overskredet kredittgrensen, vil ikke tilstedeværelsen av disse meldingene blokkere bekreftelse, utskrift av plukklister og følgesedler eller postering av fakturaer.
 
     Kredittstyring er aktivert som standard, men du kan deaktivere den. Hvis den er aktivert, bruker du blokkeringsregler og kontrollpunkt for kredittstyring til å identifisere når kunder har overskredet kredittgrensen. Hvis den er deaktivert, kan meldingene som legges til i salgsordrer basert på innstillingen for feltet **Meldingen ved kredittgrenseoverskridelse**, hjelpe deg med å identifisere når kunder har overskredet kredittgrensen.

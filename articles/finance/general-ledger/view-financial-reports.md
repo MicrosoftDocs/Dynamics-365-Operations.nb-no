@@ -2,7 +2,7 @@
 title: Vis finansrapporter
 description: Denne artikkelen beskriver hvordan du kan vise og utforske finansrapporter i Microsoft Dynamics 365 Finance. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
 author: kweekley
-ms.date: 03/25/2019
+ms.date: 11/22/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2d4b28add4406b2248a2ce842072e577ecd760cd
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 0f932bbef2543e4894c65b9a04c1ef66f1b3ab8e
+ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8907899"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "9802398"
 ---
 # <a name="view-financial-reports"></a>Vis finansrapporter
 
@@ -31,7 +31,7 @@ Denne artikkelen beskriver hvordan du kan vise og utforske finansrapporter. Den 
 ## <a name="financial-reporting-overview"></a>Oversikt over finansrapportering
 
 ## <a name="open-a-financial-report"></a>Åpne en finansrapport
-Hvis du vil åpne en rapport, velger du rapportnavnet. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du for eksempel åpner en rapport for første gang i august 2015, genereres rapporten for 31. juli 2015. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
+Hvis du vil åpne en rapport, velger du rapportnavnet. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du for eksempel åpner en rapport for første gang i august 2020, genereres rapporten for 31. juli 2020. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
 
 ## <a name="drill-down-on-a-financial-report"></a>Vise detaljer for en finansrapport
 Finansrapporter kan inneholde flere ulike detaljnivåer. Finansnivået er det første nivået som vises når du åpner en finansrapport. Velg dataene du vil vise detaljer for, for å gå til kontonivået. Hvis du for eksempel vil vise kontodetaljer for salg, kan du velge salgsdataene du vil utforske. Fra kontonivået kan du drille ned for å vise transaksjonene som utgjør kontosaldoen. Du kan vise transaksjoner på to måter: rapporttransaksjoner og bilagstransaksjoner.
@@ -46,12 +46,12 @@ Du kan bruke attributt- og dimensjonsfiltre eller endre budsjettscenariet i rapp
 
 -   Hvis du vil bruke attributtfiltre på en rapport, velger du **Legg til et attributtfilter**. Velg attributtet, skriv inn attributtverdien, og klikk deretter **OK**. Hvis du for eksempel velger attributtet **Kontokategori**, angir du **SALG** som attributtverdi. Hvis du vil fjerne et attributtfilter, klikker du **Fjern**.
 -   Hvis du vil bruke dimensjonsfiltre på en rapport, velger du **Legg til et dimensjonsfilter**. Velg dimensjon, og skriv deretter inn dimensjons-ID eller velg dimensjon i listen. Hvis du vil fjerne et dimensjonsfilter, klikker du **Fjern**.
--   Hvis du vil endre scenariet i rapporten **Faktisk kontra budsjett**, velger du et nytt scenario og klikker deretter **OK**. Hvis det valgte scenarioet er for et annet regnskapsår, blir ingen resultater returnert. Hvis for eksempel en rapport blir generert for FY2015 og gjeldende scenario er for FY2015, og det nye scenarioet som er valgt, er for FY2016, returneres ingen resultater. Hvis et nytt scenario for et annet regnskapsår kreves, genereres en ny versjon av rapporten for regnskapsåret som er knyttet til scenarioet.
+-   Hvis du vil endre scenariet i rapporten **Faktisk kontra budsjett**, velger du et nytt scenario og klikker deretter **OK**. Hvis det valgte scenarioet er for et annet regnskapsår, blir ingen resultater returnert. Hvis for eksempel en rapport blir generert for FY2015 og gjeldende scenario er for FY2020, og det nye scenarioet som er valgt, er for FY2016, returneres ingen resultater. Hvis et nytt scenario for et annet regnskapsår kreves, genereres en ny versjon av rapporten for regnskapsåret som er knyttet til scenarioet.
 
 Når du klikker **OK**, brukes alle alternativene du har valgt, på rapporten. Hvis du bestemmer deg for at du ikke vil bruke de valgte alternativene, velger du **Avbryt**.
 
 ## <a name="update-a-financial-report"></a>Oppdatere en finansrapport
-Du kan oppdatere en finansrapport slik at den viser de nyeste dataene for perioden og året som rapporten ble generert for. Hvis du for eksempel oppdaterer en finansrapport som ble generert for oktober 2015, gjenspeiler rapporten alle nye transaksjoner som er postert for oktober 2015. Klikk **Oppdater** i handlingsruten for å oppdatere en finansrapport.. En oppdatert rapport er bare tilgjengelig for personen som oppdaterte den. Rapporten må publiseres før andre kan se de samme dataene.
+Du kan oppdatere en finansrapport slik at den viser de nyeste dataene for perioden og året som rapporten ble generert for. Hvis du for eksempel oppdaterer en finansrapport som ble generert for oktober 2020, gjenspeiler rapporten alle nye transaksjoner som er postert for oktober 2020. Klikk **Oppdater** i handlingsruten for å oppdatere en finansrapport.. En oppdatert rapport er bare tilgjengelig for personen som oppdaterte den. Rapporten må publiseres før andre kan se de samme dataene.
 
 ## <a name="publish-a-financial-report"></a>Publisere en finansrapport
 Når du har oppdatert en finansrapport, kan du publisere den. Andre personer i organisasjonen kan deretter vise den. Klikk **Publiser** i handlingsruten for å publisere en rapport.
