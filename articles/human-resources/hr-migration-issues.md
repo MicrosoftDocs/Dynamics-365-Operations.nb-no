@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f5981801317ad9647f57a0f68f9b67b592256ab
-ms.sourcegitcommit: f96e5dec5a808d9819d2a23b8e15ce00aeff475b
+ms.openlocfilehash: 3fe21df8be010ace3070ad08ed95f3d3efc7b01d
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "9752697"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838562"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-known-issues"></a>Kjente problemer med sammenslåing av Dynamics 365 Human Resources-infrastruktur
 
@@ -43,4 +43,8 @@ Følgende miljøtyper er nødvendige før du kan foreta overføringen:
 ## <a name="teams-integration"></a>Teams-integrering
 
 Den eksisterende Human Resources-appen i Teams flyttes for øyeblikket til en Microsoft Power Platform-løsning. For mer informasjon, se [Human Resources-app i Teams](hr-admin-teams-leave-app.md).
+
+## <a name="dual-write-integration"></a>Integrering med dobbel skriving
+
+Dobbel skriving er en bruksklar infrastruktur som gir samhandling med minimal forsinkelse mellom kundeengasjementsapper og økonomi- og driftsapper. Hvis organisasjonen bruker skrivetilgang for integreringer, kan det påvirkes av noen av problemene som ble funnet. Hvis du vil ha mer informasjon om Dataverse-tabeller og -problemer, kan du se [Dataverse-tabeller](hr-developer-entities.md).
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 56e445dcf471fd20695824d5e47cd15f39c022ce
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 1b2f5f56e757e89339c12fd41c59848b4c987a2f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8846864"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831840"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversikt over finanskonsolideringer og valutaomveksling
 
@@ -64,7 +64,7 @@ Her er noen av konsolideringsscenariene som Konsolider på nettet støtter:
 - Konsolideringer som omfatter flere rapporteringsvalutaer
 
 ## <a name="legal-entity-setup"></a>Oppsett av juridisk enhet
-Før du utfører en konsolidering, må du definere den juridiske enheten. Du kan kjøre konsolideringen så mange ganger du trenger, og alle data vil bli oversatt fra kildefirmaets regnskapsvaluta til valutaen som er definert for det konsoliderte selskapet. For følgende organisasjonsstruktur, hvis du må regne om alle firmaer i Nord-Amerika først til amerikanske dollar (USD) og deretter til euro (EUR), valutaen for moderselskapet, må du derfor ha minst to konsolideringsfirmaer.
+Før du utfører en konsolidering, må du definere den juridiske enheten. Du kan kjøre konsolideringen så mange ganger du trenger, og alle data blir oversatt fra kildefirmaets regnskapsvaluta eller rapporteringsvaluta til valutaen som er definert for det konsoliderte selskapet. For følgende organisasjonsstruktur, hvis du må regne om alle firmaer i Nord-Amerika først til amerikanske dollar (USD) og deretter til euro (EUR), valutaen for moderselskapet, må du derfor ha minst to konsolideringsfirmaer.
 
 ![Organisasjonsstruktur.](./media/organizational-structure.png "Organisasjonsstruktur")
 

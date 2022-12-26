@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 096f441d39dde0f322ed117ab35a6a4641a38a93
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: 6d14bba13dbf701a8c27c10ac2d318b071092bc1
+ms.sourcegitcommit: 77ffeccffff28fbb6ff576864d7abddd412cdab6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405472"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "9852386"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -225,6 +225,7 @@ Denne delen viser en liste over kjente problemer for den nye rutenettkontrollen.
 ### <a name="open-issues"></a>Åpne problemer
 - Når du har aktivert funksjonen **Ny rutenettkontroll**, vil noen sider fortsette å bruke den eksisterende rutenettkontrollen. Dette vil skje i følgende situasjoner:
  
+    - [Løst] Problem 762533: Uventet klientfeil ved valg av en rad i en kortliste.
     - [Løst] Det finnes en kortliste på siden som gjengis i flere kolonner.
         - Denne typen kortliste støttes av **Ny rutenettkontroll** fra og med versjon 10.0.30. All bruk av forceLegacyGrid() til dette formålet kan fjernes. 
     - [Løst] Det finnes en gruppert kortliste på siden.

@@ -1,20 +1,20 @@
 ---
 title: Fransk Intrastat
 description: Denne artikkelen inneholder informasjon om Intrastat-deklarering i Frankrike.
-author: AdamTrukawka
-ms.date: 07/09/2021
+author: anasyash
+ms.date: 11/30/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: atrukawk
 ms.search.validFrom: ''
-ms.openlocfilehash: 83af3cf304772085c5a6f0943ab5196fcc0208c9
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 2076649c7fff9f47b9c1fda62a103168b19bb973
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9287025"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831812"
 ---
 # <a name="french-intrastat"></a>Fransk Intrastat
 
@@ -24,64 +24,71 @@ Firmaer i Frankrike som er registrert for merverdiavgift, og som handler med and
 
 Du kan generere DEB-rapporten i ett av to elektroniske tekstfilformater: SAISUNIC 330- eller INTRACOM-formatet.
 
-Følgende tabell viser feltene som er inkludert i den franske Intrastat-deklareringen i SAISUNIC 330-format. Tabellen angir også rapportnivået for feltet. Feltet kan være **4** (forenklet), **1** (fullstendig) eller begge deler.
+Følgende tabell viser feltene som er inkludert i den franske Intrastat-deklareringen i SAISUNIC 330-format. Tabellen angir også rapportnivåene for hvert felt. Et felt kan ha følgende rapportnivåer:
 
-| **Felt**                   | **Rapportnivå** |
-|-----------------------------|------------------|
-| Referanseperiode         | 4, 1              | 
-| Antall deklarasjoner       | 4, 1              |
-| Linjenummer                 | 4, 1              |
-| ISO-kode for land (FR)       | 4, 1              | 
-| Tilleggskode          | 4, 1              | 
-| Siren-nummer                | 4, 1              | 
-| Mva-kode for kunde        | 4, 1              | 
-| Retningskode              | 4, 1              |
-| Transaksjonstype            | 4, 1              | 
-| Forpliktelsesnivå            | 4, 1              |
-| Artikkelkode              | 1                | 
-| Nasjonal NGP                | 1                | 
-| Kommune (avdeling)         | 1                |
-| Transaksjonstype       | 1                | 
-| Opprinnelsesland      | 1                | 
-| Opprinnelsesland - import | 1                | 
-| Endelig mål - eksport | 1                | 
-| Fakturaverdi               | 4, 1              | 
-| Statistisk verdi           | 1                |
-| Nettovekt                  | 1                | 
-| Tilleggsenheter            | 1                |
-| Transportkode              | 1                | 
+- **4** – Avgiftsdeklarering.
+- **1** – Statistisk svar.
+- **5** – Statistisk svar på forsendelse og avgiftsdeklarering og samlet utfylling.
 
-Følgende tabell viser feltene som er inkludert i den franske Intrastat-deklareringen i INTRACOM-format.
-Tabellen angir også rapportnivået for feltet. Feltet kan være **4** (forenklet), **1** (fullstendig) eller begge deler.
+| Felt                       | Rapportnivåer |
+|-----------------------------|---------------|
+| Referanseperiode         | 4, 1, 5       |
+| Antall deklarasjoner       | 4, 1, 5       |
+| Linjenummer                 | 4, 1, 5       |
+| ISO-kode for land (FR)       | 4, 1, 5       |
+| Tilleggskode          | 4, 1, 5       |
+| Siren-nummer                | 4, 1, 5       |
+| Mva-kode for kunde        | 4, 1, 5       |
+| Retningskode              | 4, 1, 5       |
+| Transaksjonstype            | 4, 1, 5       |
+| Forpliktelsesnivå            | 4, 1, 5       |
+| Artikkelkode              | 1, 5          |
+| Nasjonal NGP                | 1, 5          |
+| Kommune (avdeling)         | 1, 5          |
+| Transaksjonstype       | 1, 5          |
+| Opprinnelsesland      | 1, 5          |
+| Opprinnelsesland - import | 1, 5          |
+| Endelig mål - eksport | 1, 5          |
+| Fakturaverdi               | 4, 1, 5       |
+| Statistisk verdi           | 1, 5          |
+| Nettovekt                  | 1, 5          |
+| Tilleggsenheter            | 1, 5          |
+| Transportkode              | 1, 5          |
 
-| **Felt**                   | **Rapportnivå**   | 
-|-----------------------------|--------------------|
-| Kode                        | 4, 1               | 
-| Antall deklarasjoner       | 4, 1               |
-| Linjenummer              | 4, 1               | 
-| Siren                       | 4, 1               |
-| Kommune (avdeling)         | 1                  |          
-| Transportkode              | 1                  |          
-| Opprinnelsesland           | 1                  |            
-| Transaksjonstype       | 1                  |             
-| Fakturaverdi               | 4, 1               |             
-| Leveringsmåter           | 1                  |           
-| Transaksjonstype            | 4, 1               |            
-| Forpliktelsesnivå            | 4, 1               |           
-| Artikkelkode              | 1                  |            
-| Nasjonal NGP                | 1                  |            
-| Nettovekt                  | 1                  |            
-| Statistisk verdi           | 1                  |            
-| Tilleggsenheter            | 1                  |            
-| Opprinnelsesland - import | 1                  |            
-| Endelig mål - eksport | 1                  |            
-| Mva-kode for kunde        | 4, 1               |            
-| Tilleggskode          | 4, 1               |           
-| Referanseperiode         | 4, 1               |         
+Følgende tabell viser feltene som er inkludert i den franske Intrastat-deklareringen i INTRACOM-format. Tabellen angir også rapportnivåene for hvert felt. Et felt kan ha følgende rapportnivåer:
 
-### <a name="set-up-intrastat"></a>Definere Intrastat
+- **4** – Avgiftsdeklarering.
+- **1** – Statistisk svar.
+- **5** – Statistisk svar på forsendelse og avgiftsdeklarering og samlet utfylling.
 
-1.  I [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), i biblioteket over delt aktiva, laster du ned de nyeste versjonene av følgende ER-konfigurasjoner for Intrastat-erklæringen:
+| Felt                       | Rapportnivåer |
+|-----------------------------|---------------|
+| Retningskode              | 4, 1, 5       |
+| Antall deklarasjoner       | 4, 1, 5       |
+| Linjenummer              | 4, 1, 5       |
+| Siren                       | 4, 1, 5       |
+| Kommune (avdeling)         | 1, 5          |
+| Transportkode              | 1, 5          |
+| Opprinnelsesland           | 1, 5          |
+| Transaksjonstype       | 1, 5          |
+| Fakturaverdi               | 4, 1, 5       |
+| Leveringsmåter           | 1, 5          |
+| Transaksjonstype            | 4, 1, 5       |
+| Forpliktelsesnivå            | 4, 1, 5       |
+| Artikkelkode              | 1, 5          |
+| Nasjonal NGP                | 1, 5          |
+| Nettovekt                  | 1, 5          |
+| Statistisk verdi           | 1, 5          |
+| Tilleggsenheter            | 1, 5          |
+| Opprinnelsesland - import | 1, 5          |
+| Endelig mål - eksport | 1, 5          |
+| Mva-kode for kunde        | 4, 1, 5       |
+| Tilleggskode          | 4, 1, 5       |
+| Referanseperiode         | 4, 1, 5       |
+
+## <a name="set-up-intrastat"></a>Definere Intrastat
+
+- I [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/Logon/Index), i biblioteket over delt aktiva, laster du ned de nyeste versjonene av følgende ER-konfigurasjoner for Intrastat-erklæringen:
 
     - Intrastat modell
     - Intrastat-rapport
@@ -90,88 +97,144 @@ Tabellen angir også rapportnivået for feltet. Feltet kan være **4** (forenkle
 
     Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-2.  I Dynamics 365 Finance går du til **Avgift** > **Oppsett** >  **Utenrikshandel** > **Utenrikshandelsparametere** og følger disse trinnene:
+### <a name="set-up-vat-ids"></a>Definer mva-ID-er
 
-    1. I kategorien **Intrastat**, i hurtigfanen **Elektronisk rapportering** i feltet **Rapportformatkartlegging** velger du **Intrastat INTRACOM (FR)** eller **Intrastat SAISUNIC (FR)**.
-    2. I feltet **Rapportformatkartlegging** velger du **Intrastat-rapport**.
-    3. I hurtigfanen **Artikkelkodehierarki** i feltet **Kategorihierarki** velger du **Intrastat**.
-    4. Velg koden som brukes til overføringer av varer, i **Transaksjonskode**-feltet i kategorien **Generelt**.
-    5. Velg koden som brukes til retur av varer, i **Kreditnota**-feltet.
-    6. I feltet **Forpliktelsesnivå for eksport** angir du detaljnivået for eksportrapporten. Nivået du velger, påvirker linjene som vises i rapporten. Hvis du vil ha mer informasjon, kan du se tabellene i begynnelsen av denne artikkelen.
+#### <a name="set-up-vat-codes-for-your-company"></a>Definer mva-koder for selskapet
 
-3. Gå til **Organisasjonsstyring** > **Organisasjoner** > **Juridiske enheter**, velg firmaet, og følg denne fremgangsmåten:
+1. Gå til **Avgift** \> **Oppsett** \> **Merverdiavgift** \> **Numre for avgiftsfritak**.
+2. Velg **Ny** i handlingsruten.
+3. I feltet **Land/område** velger du **FRA**.
+4. I feltet **Avgiftsfritaksnummer** skriver du inn firmaets mva-nummernøkkel.
+5. Gå til **Organisasjonsstyring** \> **Organisasjoner** \> **Juridiske enheter**, og velg firmaet ditt.
+6. I hurtigfanen **Utenrikshandel og logistikk**, i **Intrastat**-delen, angir du feltene **Eksport av VAT exempt number** og **Import av VAT exempt number** til koden du opprettet i trinn 4..
+7. I feltet **Mva-nummer** i hurtigfanen **Avgiftsregistrering** angir du mva-nummeret for firmaet ditt.
 
-    1. Angi NAF-koden i hurtigfanen **Registreringsnumre** i **NAF-kode**-feltet. Hvis du vil ha mer informasjon, kan du se [FR-00003 NAF-koder og Siret-numre](tasks/fr-00003-naf-codes-siret-numbers.md).
-    2. I hurtigfanen **Utenrikshandel og logistikk**, i **Intrastat**-delen, angir du feltene **Eksport av VAT exempt number** og **Import av VAT exempt number**.
-    3. I feltet **Mva-nummer** i hurtigfanen **Avgiftsregistrering** angir du mva-nummeret for firmaet ditt.
+#### <a name="set-up-the-vat-ids-for-trading-partners"></a>Definer mva-ID-er for handelspartnere
 
-4. Hvis du vil angi NAF-koder og mva-organisasjonsnumre for kunder, kan du gå til **Kunder** > **Kunder** > **Alle kunder**, og følge disse trinnene:
+##### <a name="create-a-registration-type-for-the-company-code"></a>Opprett en registreringstype for firmakoden
 
-    1. Velg en kunde.
-    2. Angi kundens avgiftsfritaksnummer i hurtigfanen **Faktura og levering**, i **Merverdiavgift**-delen i feltet **Avgiftsfritaksnummer**.
-    3. Angi firmaets Siret-nummer i hurtigfanen **Salgsdemografi** i feltet **Fransk Siret**.
-    4. Angi firmaets NAF-kode i **NAF-kode**-feltet.
-    5. Gjenta denne fremgangsmåten for andre kunder.
+Du må opprette mva-registreringstyper for alle land eller områder som firmaet gjør forretninger med.
 
-5. Hvis du vil angi NAF-koder og mva-organisasjonsnumre for leverandører, kan du gå til **Leverandører** > **Leverandører** > **Alle leverandører**, og følge disse trinnene:
+1. Gå til **Organisasjonsstyring** \> **Global adressebok** \> **Registreringstyper** \> **Registreringstyper**.
+2. Velg **Ny** i handlingsruten for å opprette en registreringstype for MVA-ID-en.
+3. I dialogboksen **Angi detaljer for registreringstypen** skriver du inn et navn på den nye registreringstypen i **Navn**-feltet. Skriv for eksempel inn **mva-ID**.
+4. I feltet **Land/område** velger du handelspartnerens land eller område.
+5. Velg **Opprett**.
 
-    1. Velg en leverandør.
-    2. Angi leverandørens avgiftsfritaksnummer i hurtigfanen **Faktura og levering**, i **Merverdiavgift**-delen i feltet **Avgiftsfritaksnummer**.
-    3. Angi firmaets Siret-nummer i hurtigfanen **Innkjøpsdemografi** i feltet **Fransk Siret**.
-    4. Angi firmaets NAF-kode i **NAF-kode**-feltet.
-    5. Gjenta denne fremgangsmåten for andre leverandører.
+##### <a name="match-the-registration-type-with-a-registration-category"></a>Samsvar registreringstypen med en registreringskategori
 
-6. Gå til **Avgift** > **Oppsett** > **Utenrikshandel** > **Komprimering av Intrastat**, og velg feltene som skal sammenlignes når Intrastat-informasjon summeres. For fransk Intrastat velger du **Statistikkprosedyre**, **Opprinnelsesstat**, **Opprinnelsesland/-område**, **Leveringsbetingelser**, **Transport**, **Korrigering**, **Land/område**, **Opprinnelsesregion/-mål**, **Retning**, **Land/område til avsender**, **Delstat til avsender**, **Delstat**, **Transaksjonskode** og **Artikkel**.
+1. Gå til **Organisasjonsstyring** \> **Global adressebok** \> **Registreringstyper** \> **Registreringskategorier**.
+2. Velg **Ny** i handlingsruten for å opprette en kobling mellom en registreringstype og en registreringskategori.
+3. For registreringstypen for mva-ID-en velger du registreringskategorien **Mva-ID**.
+4. Gjenta trinn 2 og 3 for de andre registreringstypene du opprettet for landene eller områdene som firmaet gjør forretninger med.
 
-7. Gå til **Lagerstyring** > **Oppsett** > **Lager** > **Lagre**, velg et lager, og følg denne fremgangsmåten:
+##### <a name="set-up-the-vat-number-of-a-trading-partner"></a>Definer mva-nummeret til en handelspartner
 
-    1. På hurtigfanen **Adresser** velger du **Legg til** eller **Rediger**.
-    2. I **Poststed**-feltet dialogboksen velger du poststed for lageret. Delstaten til byen brukes som en region i DEB-rapporten.
+1. Gå til **Kunder** \> **Kunder** \> **Alle kunder**.
+2. Velg en kunde i rutenettet.
+3. I gruppen **Registrering** i fanen **Kunde** i handlingsruten velger du **Registrerings-ID-er**.
+4. Velg **Legg til** for å opprette en registrerings-ID i hurtigfanen **Registrerings-ID**.
+5. I feltet **Registreringstype** velger du registreringstypen du opprettet for firmakoden.
+6. Angi firmaets mva-nummer i **Registreringsnummer**-feltet.
+7. Velg **Lagre** i handlingsruten og lukk siden.
+
+Hvis du vil ha mer informasjon, kan du se [Registrerings-ID-er](emea-registration-ids.md).
+
+### <a name="set-up-foreign-trade-parameters"></a>Angi utenrikshandelsparametere
+
+1. Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **Utenrikshandelsparametere**.
+2. I kategorien **Intrastat**, i hurtigfanen **Elektronisk rapportering** i feltet **Rapportformatkartlegging** velger du **Intrastat INTRACOM (FR)** eller **Intrastat SAISUNIC (FR)**.
+3. I feltet **Rapportformatkartlegging** velger du **Intrastat-rapport**.
+4. I hurtigfanen **Artikkelkodehierarki** i feltet **Kategorihierarki** velger du **Intrastat**.
+5. Velg koden som brukes til overføringer av varer, i **Transaksjonskode**-feltet i kategorien **Generelt**.
+6. Velg koden som brukes til retur av varer, i **Kreditnota**-feltet.
+7. I **Arbeider**-feltet velger du navnet på kontaktpersonen.
+8. I fanen **Kontakt** legger du til informasjon om kontaktpersonen:
+
+    - I **Telefon**-feltet angir du telefonnummeret til kontaktpersonen.
+    - I **Faks**-feltet angir du faksnummeret til kontaktpersonen.
+
+9. I fanen **Land-/områdeegenskaper** i feltet **Land/område** viser du alle landene eller områdene som firmaet gjør forretninger med. For hvert land som er en del av EU, velger du **EU** i feltet **Type land/område**, slik at landet vises i Intrastat-rapporten. For Frankrike velger du **Innenlands** i feltet **Land-/områdetype**.
+
+### <a name="set-up-compression-of-intrastat"></a>Definer komprimering av Intrastat
+
+- Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **Komprimering av Intrastat**, og velg feltene som skal sammenlignes når Intrastat-informasjon summeres. For fransk Intrastat velger du følgende felter:
+ 
+    - Statistikkprosedyre
+    - Opprinnelsesland/-område
+    - Transport
+    - Korrigert melding
+    - Land/område
+    - Opprinnelsesregion/-mål
+    - Retning
+    - Land/område for avsender
+    - Transaksjonskode
+    - Artikkelkode
+
+### <a name="set-up-product-parameters-for-the-intrastat-declaration"></a>Definer produktparametere for Intrastat-deklarering
+
+1. Gå til **Administrering av produktinformasjon** \> **Produkter** \> **Frigitte produkter**.
+2. Velg et produkt i rutenettet.
+3. Velg artikkelkoden på hurtigfanen **Utenrikshandel** i **Intrastat**-delen i **Artikkel**-feltet. Navnet på artikkelen blir skrevet ut i feltet **Beskrivelse av artikler** i Intrastat-rapporten.
+4. I **Opprinnelse**-delen, i feltet **Lang/område**, velger du produktets opprinnelsesland eller -område.
+5. Angi produktets vekt i kilogram i **Nettovekt**-feltet på hurtigfanen **Behandle lager**.
 
 ### <a name="ngp-codes"></a>NGP-koder
 
 I DEB-rapporten består kodingen av produkter av følgende elementer:
 
-  - Den åttesifrede CN8-koden som representerer tariffen og den statistiske nomenklaturen til EU.
-  - Hvis det er aktuelt, skal den ettsifrede nasjonale artikkelkoden Nomenclature Générale des Produits (NGP) brukes.
+- Den åttesifrede CN8-koden som representerer tariffen og den statistiske nomenklaturen til EU.
+- Hvis det er aktuelt, skal den ettsifrede nasjonale artikkelkoden Nomenclature Générale des Produits (NGP) brukes.
 
-I 2021 gjelder NGP bare tre typer produkter:
+I 2022 gjelder NGP bare tre typer produkter:
 
-  - Noen produkter fra kuer, får og geiter
-  - Militært utstyr
-  - Franske viner
+- Noen produkter fra kuer, får og geiter
+- Militært utstyr
+- Franske viner
 
- Du må definere NGP-kodene og tilordne dem til relaterte produkter. **NGP-feltet** angis deretter automatisk på siden **Intrastat-journal**.
+Du må definere NGP-kodene og tilordne dem til relaterte produkter. **NGP-feltet** angis deretter automatisk på siden **Intrastat-journal**.
 
 #### <a name="set-up-an-ngp-code"></a>Definere en NGP-kode
 
-1. Gå til **Avgift** > **Oppsett** > **Utenrikshandel** > **NGP-koder**.
-2. I handlingsruten velger du **Ny** for å opprette en NGP-kode.
+1. Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **NGP-koder**.
+2. Velg **Ny** i handlingsruten.
 3. I **NGP**-feltet skriver du inn en ensifret kode.
 4. Skriv inn en beskrivelse for koden i feltet **Beskrivelse**.
 
 #### <a name="assign-an-ngp-code-to-a-product"></a>Tilordne en NGP-kode til et produkt
 
-1. Gå til **Behandling av produktinformasjon** > **Produkter** > **Frigitte produkter**.
+1. Gå til **Administrering av produktinformasjon** \> **Produkter** \> **Frigitte produkter**.
 2. Velg et produkt i rutenettet.
 3. Velg riktig NGP-kode i hurtigfanen **Utenrikshandel** i **Intrastat**-delen i **NGP**-feltet.
 
-## <a name="intrastat-journal"></a>Intrastat-journal
+### <a name="set-up-warehouse-parameters-for-the-intrastat-declaration"></a>Definer lagerparametere for Intrastat-deklarering
 
-Gå til **Avgift** > **Deklareringer** > **Utenriks** **handel** > **Intrastat** for å administrere transaksjonene som gjelder utenrikshandel med EU-land. Hvis du vil ha mer informasjon, kan du se [Intrastat-oversikt](emea-intrastat.md).
+1. Gå til **Lagerstyring** \> **Oppsett** \> **Lager** \> **Lagre**.
+2. Velg et lager, og i hurtigfanen **Adresser** velger du **Legg til** eller **Rediger**.
+3. I **Poststed**-feltet dialogboksen velger du poststed for lageret. Delstaten til byen eller provinsen brukes som en region i DEB-rapporten.
 
-**NGP**-kolonnen er spesifikk for Frankrike. Den viser NGP-koden for produktet. Hvis NGP-en ikke gjelder et produkt, vises **0** (null). Du kan justere NGP-koden. Velg transaksjonen, og velg deretter den nødvendige NGP-koden i **Generelt**-fanen i **Koder**-delen i **NGP**-feltet.
+### <a name="set-up-the-transport-method"></a>Definer transportmetoden
 
-### <a name="intrastat-transfer"></a>Intrastat-overføring
+1. Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **Transportmetode**.
+2. Velg **Ny** i handlingsruten.
+3. Angi en unik kode i **Transport**-feltet. Firmaer i Frankrike bruker ensifrede transportkoder.
+
+### <a name="intrastat-journal"></a>Intrastat-journal
+
+Gå til **Avgift** \> **Deklareringer** \> **Utenriks handel** \> **Intrastat** for å administrere transaksjonene som gjelder utenrikshandel med EU-land. Hvis du vil ha mer informasjon, kan du se [Intrastat-oversikt](emea-intrastat.md).
+
+**NGP**-kolonnen er spesifikk for Frankrike og viser NGP-koden for produktet. Hvis NGP-en ikke gjelder et produkt, vises **0** (null). Hvis du vil justere NGP-koden, velger du transaksjonen og deretter den nødvendige NGP-koden i **Generelt**-fanen i **Koder**-delen i **NGP**-feltet.
+
+#### <a name="intrastat-transfer"></a>Intrastat-overføring
 
 I handlingsruten på **Intrastat**-siden kan du velge **Overfør** for å overføre informasjonen om fellesskapshandel automatisk fra salgsordrene, fritekstfakturaer, bestillinger, leverandørfakturaer, leverandørproduktmottak, prosjektfakturaer og overføringsordrer. Bare dokumenter som har et EU-land som destinasjonsland eller målområde (for fordelinger) eller forsendelse (for ankomster) blir overført.
 
 Fordi DEB-rapporten er en kombinasjon av EU-salgslisten og Intrastat-rapporten, omfatter den også *triangulære* transaksjoner, der direkte levering gjøres fra ett EU-land (part A) til et annet EU-land (parti C), og en fransk juridisk enhet (parti B) står midt i den triangulære avtalen.
 
-### <a name="generate-a-deb-intrastat-report"></a>Generere en DEB-rapport (Intrastat)
+#### <a name="generate-a-deb-intrastat-report"></a>Generere en DEB-rapport (Intrastat)
 
-1. Gå til **Avgift** > **Deklareringer** > **Utenrikshandel** > **Intrastat**.
-2. Velg **Utlevering** > **Rapport** i handlingsruten.
+1. Gå til **Avgift** \> **Deklareringer** \> **Utenrikshandel** \> **Intrastat**.
+2. Velg **Utlevering** \> **Rapport** i handlingsruten.
 3. I **Intrastat-rapport**-dialogboksen angir du følgende felt.
 
     | Felt            | beskrivelse                                                                                                                         |
@@ -185,80 +248,179 @@ Fordi DEB-rapporten er en kombinasjon av EU-salgslisten og Intrastat-rapporten, 
     | Bare rettelser | Sett dette alternativet til **Ja** for bare å rapportere korrigeringer. Sett den til **Nei** for å rapportere både vanlige transaksjoner og rettelser.         |
     | Retning        | Velg **Ankomster** for en rapport om fellesskapsankomster. Velg **Fordelinger** for en rapport om fellesskapsfordelinger. |
 
+4. Velg **OK** for å lukke dialogboksen **Intrastat-rapport**.
+5. Velg rapportnivået i **Rapportnivå**-feltet i dialogboksen **Parametere for elektronisk rapportering** på hurtigfanen **Parametere**. Rapportnivået kan være **1 – statistisk svar**, **4 – avgiftsdeklarering** eller **5 – statistisk svar på forsendelse og avgiftsdeklarering**.
+
 ## <a name="example"></a>Eksempel
 
 Følgende eksempel viser hvordan du definerer fransk Intrastat og oppretter DEB-rapporten. Den bruker den juridiske enheten **DEMF**.
 
-1. I [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index), i biblioteket over delt aktiva, laster du ned de nyeste versjonene av følgende ER-konfigurasjoner for formatet i Intrastat-erklæringen:
+### <a name="preliminary-setup"></a>Foreløpig oppsett
+
+1. I [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/Logon/Index), i biblioteket over delt aktiva, laster du ned de nyeste versjonene av følgende ER-konfigurasjoner for formatet i Intrastat-erklæringen:
 
     - Intrastat modell
     - Intrastat-rapport
     - Intrastat-INTRACOM (FR)
 
-2. Definer en transaksjonskode i Finance:
+2. Definer et produkthierarki:
 
-    1. Gå til **Avgift** > **Oppsett** > **Utenrikshandel** > **Transaksjonskoder**.
-    2. Velg **Ny** i handlingsruten.
-    3. I **Transaksjonskode**-feltet skriver du inn **11**.
-    4. I **Navn**-feltet angir du **Kjøp eller salg**.
-    5. Velg **Lagre** i handlingsruten.
+    1. Gå til **Behandling av produktinformasjon** \> **Oppsett** \> **Kategorier og attributter** \> **Kategorihierarkier**.
+    2. Velg **Intrastat** i rutenettet.
+    3. I handlingsruten, i fanen **Kategorihierarki**, i **Oppretthold**-gruppen, velger du **Rediger**.
+    4. I handlingsruten velger du **Ny kategorinode**.
+    5. I **Navn**-feltet angir du **Autres Libournais**.
+    6. I **Kode**-feltet skriver du inn **2204 21 42**.
+    7. Velg **Lagre** i handlingsruten.
 
-3.  Definer et produkthierarki:
+### <a name="set-up-vat-ids"></a>Definer mva-ID-er
 
-    1. Gå til **Behandling av produktinformasjon** > **Oppsett** > **Kategorier og attributter** > **Kategorihierarkier**.
-    2. Velg **Intrastat** i rutenettet. I handlingsruten, i kategorien **Kategorihierarki**, i **Oppretthold**-gruppen, velger du **Rediger**.
-    3. I handlingsruten velger du **Ny kategorinode**.
-    4. I **Navn**-feltet angir du **Autres Libournais**.
-    5. I **Kode**-feltet skriver du inn **2204 21 42**.
-    6. Velg **Lagre** i handlingsruten.
+#### <a name="set-up-vat-codes-for-your-company"></a>Definer mva-koder for selskapet
 
-4. Gå til **Avgift** > **Oppsett** > **Utenrikshandel** > **Utenrikshandelsparametere**, og følger disse trinnene:
+1. Gå til **Avgift** \> **Oppsett** \> **Merverdiavgift** \> **Numre for avgiftsfritak**.
+2. Velg **Ny** i handlingsruten.
+3. I feltet **Land/område** velger du **FRA**.
+4. Velg **MS123456** i feltet **Avgiftsfritaksnummer**.
+5. Gå til **Organisasjonsstyring** \> **Organisasjoner** \> **Juridiske enheter** og velg **DEMF**.
+6. I hurtigfanen **Utenrikshandel og logistikk**, i **Intrastat**-delen, angir du feltene **Eksport av VAT exempt number** og **Import av VAT exempt number** til koden du opprettet i trinn 4..
+7. Angi **123456789** i feltet **Avgiftsregistreringsnummer** i hurtigfanen **Avgiftsregistrering**.
 
-    1. I **Intrastat**-fanen i hurtigfanen **Generelt** i **Transaksjonskode**-feltet velger du **11**.
-    2. I hurtigfanen **Elektronisk rapportering** i feltet **Rapportformatkartlegging** velger du **Intrastat INTRACOM (FR)**.
-    3. I feltet **Rapportformatkartlegging** velger du **Intrastat-rapport**.
-    4. I hurtigfanen **Artikkelkodehierarki** i feltet **Kategorihierarki** velger du **Intrastat**.
+#### <a name="set-up-the-vat-ids-for-trading-partners"></a>Definer mva-ID-er for handelspartnere
 
-5. Definere en NGP-kode:
+##### <a name="create-a-registration-type-for-the-company-code"></a>Opprett en registreringstype for firmakoden
 
-    1. Gå til **Avgift** > **Oppsett** > **Utenrikshandel** > **NGP-koder**.
-    2. Velg **Ny** i handlingsruten.
-    3. I feltet **NGP** angir du **8**.
-    4. If eltet **Beskrivelsesnavn** angir du **NGP 8**.
-    5. Velg **Lagre** i handlingsruten.
+1. Gå til **Organisasjonsstyring** \> **Global adressebok** \> **Registreringstyper** \> **Registreringstyper**.
+2. Velg **Ny** i handlingsruten for å opprette en registreringstype for MVA-ID-en.
+3. I dialogboksen **Angi detaljer for registreringstypen**, **Navn**-feltet, angir du **Mva-ID**.
+4. I feltet **Land/område** velger du **DEU**.
+5. Velg **Opprett**.
 
-6. Tilordne NGP-koden til et produkt:
+##### <a name="match-the-registration-type-with-a-registration-category"></a>Samsvar registreringstypen med en registreringskategori
 
-    1. Gå til **Behandling av produktinformasjon** > **Produkter** > **Frigitte produkter**.
-    2. Velg **0001** i rutenettet.
-    3. På hurtigfanen **Utenrikshandel**, i **NGP**-feltet, velger du **8**.
-    4. I **Artikkel**-feltet velger du **2204 21 42**.
-    5. Velg **Lagre** i handlingsruten.
+1. Gå til **Organisasjonsstyring** \> **Global adressebok** \> **Registreringstyper** \> **Registreringskategorier**.
+2. Velg **Ny** i handlingsruten for å opprette en kobling mellom registreringstypen og registreringskategorien.
+3. For registreringstypen **Mva-ID** for **DEU**-landet velger du registreringskategorien **Mva-ID**.
 
-7. Opprett en salgsordre som inneholder det nye produktet:
+##### <a name="set-up-the-customers-vat-registration-number"></a>Definer kundens mva-registreringsnummer
 
-    1. Gå til **Kunder** > **Ordrer** > **Alle salgsordrer**.
-    2. Velg **Ny** i handlingsruten.
-    3. I dialogboksen **Opprett** **salgs** **ordre**, i **Kunde**-delen i feltet **Kunde** **konto** velger du **100001**.
-    4. I **Adresse**-delen i **Leveringsadresse**-feltet velger du plusstegnet (**+**) for å opprette en adresse
-    5. I dialogboksen **Ny adresse** i feltet **Navn på beskrivelse** angir du **Tyskland**.
-    6. I feltet **Land/område** velger du **DEU**.
-    7. Velg **OK**.
-    8. I dialogboksen **Opprett salgsordre** velger du **OK**.
-    9. I hurtigfanen **Salgs** **ordrelinjer** i **Varenummer**-feltet velger du **0001**.
-    10. Velg **Lagre** i handlingsruten.
-    11. I handlingsruten, på **Faktura**-fanen i **Generer**-gruppen, velger du **Faktura**.
-    12. I dialogboksen **Postering av faktura** i hurtigfanen **Parametere** i **Parameter**-delen i **Antall**-feltet velger du **Alle**. Velg deretter **OK** for å publisere fakturaen.
+1. Gå til **Kunder** \> **Kunder** \> **Alle kunder**.
+2. Velg **DE-016** i rutenettet.
+3. I gruppen **Registrering** i fanen **Kunde** i handlingsruten velger du **Registrerings-ID-er**.
+4. Velg **Legg til** for å opprette en registrerings-ID i hurtigfanen **Registrerings-ID**.
+5. Velg **Mva-ID** i **Registreringstype**-feltet.
+6. Angi **DE9012** i feltet **Registreringsnummer**.
+7. Velg **Lagre** i handlingsruten og lukk siden.
+8. I hurtigfanen **Faktura og levering**, i **Merverdiavgift**-delen i feltet **Avgiftsfritaksnummer**, velger du **DE9012**.
 
-8.  Opprette DEB-rapporten:
+### <a name="set-up-foreign-trade-parameters"></a>Angi utenrikshandelsparametere
 
-    1. Gå til **Avgift** > **Deklareringer** > **Utenrikshandel** > **Intrastat**:
-    2. I handlingsruten velger du **Overfør**.
-    3. I dialogboksen **Intrastat (overføring)** i **Parametere**-delen angir du **Kundefaktura**-alternativet til **Ja**. Velg deretter **OK**.
-    4. Sorter transaksjoner etter **Dato**-feltet. Den øverste transaksjonen er resultattransaksjonen. **NGP**-feltet angis automatisk.
-    5. Velg **Utlevering** &gt; **Rapport** i handlingsruten.
-    6. I dialogboksen **Intrastat-rapport** velger du måneden for salgsordren du opprettet, i hurtigfanen **Parametere** i **Dato**-delen.
-    7. I delen **Eksportalternativer** angir du alternativet **Generer fil** til **Ja**.
-    8. I **Filnavn**-feltet angir du det obligatoriske navnet.
-    9. Velg **OK**, og se gjennom rapporten.
+1. Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **Utenrikshandelsparametere**.
+2. I **Intrastat**-fanen i hurtigfanen **Generelt** i **Transaksjonskode**-feltet velger du **11**.
+3. I hurtigfanen **Elektronisk rapportering** i feltet **Rapportformatkartlegging** velger du **Intrastat INTRACOM (FR)**.
+4. I feltet **Rapportformatkartlegging** velger du **Intrastat-rapport**.
+5. I hurtigfanen **Artikkelkodehierarki** i feltet **Kategorihierarki** velger du **Intrastat**.
+6. Velg en post i **Arbeider**-feltet.
+7. I fanen **Kontakt** i **Telefon**-feltet angir du kontaktens telefonnummer
+8. I **Faks**-feltet angir du kontaktens faksnummer.
 
+### <a name="create-ngp-code"></a>Opprett NGP-kode
+
+1. Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **NGP-koder**.
+2. Velg **Ny** i handlingsruten.
+3. I feltet **NGP** angir du **8**.
+4. If eltet **Beskrivelsesnavn** angir du **NGP 8**.
+5. Velg **Lagre** i handlingsruten.
+
+### <a name="set-up-product-information"></a>Definer produktinformasjon
+
+1. Gå til **Administrering av produktinformasjon** \> **Produkter** \> **Frigitte produkter**.
+2. Velg **D0001** i rutenettet.
+3. På hurtigfanen **Utenrikshandel**, i **Intrastat**-delen, i **NGP**-feltet velger du **8**.
+4. I **Artikkel**-feltet velger du **2204 21 42**.
+5. I delen **Opprinnelse** i feltet **Land/område**-felt velger du **FRA**.
+6. Angi **2** i **Nettovekt**-feltet i hurtigfanen **Behandle lager** i delen **Vektmålinger**.
+7. Velg **Lagre** i handlingsruten og lukk siden.
+8. Velg **D0003** i rutenettet.
+9. Velg **100 200 30** i hurtigfanen **Utenrikshandel** i **Intrastat**-delen i feltet **Artikkel**.
+10. I delen **Opprinnelse** i feltet **Land/område**-felt velger du **DEU**.
+11. Angi **5** i **Nettovekt**-feltet i hurtigfanen **Behandle lager** i delen **Vektmålinger**.
+12. Velg **Lagre** i handlingsruten.
+
+### <a name="set-up-regime-codes"></a>Definer regimekoder
+
+1. Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **Statstikkprosedyre**.
+2. Velg **Ny** i handlingsruten.
+3. Angi **21** i **Statistikkprosedyre**-feltet.
+4. I **Tekst 1**-feltet angir du **Regimekode 21**.
+
+### <a name="change-the-site-address"></a>Endre områdeadressen
+
+1. Gå til **Lagerstyring** \> **Oppsett** \> **Lager** \> **Steder**.
+2. Velg **1** i rutenettet.
+3. Velg **Rediger** på hurtigfanen **Adresser**.
+4. I dialogboksen **Rediger adresse**, i feltet **Land/område**, velger du **FRA**.
+5. Velg **OK**.
+6. Gå til **Lagerstyring** \> **Oppsett** \> **Lager** \> **Lagre**, velg et lager, og velg et lager.
+7. Velg **Legg til** på hurtigfanen **Adresser**.
+8. I dialogboksen **Ny adresse**, i feltet **Land/område**, velger du **FRA**.
+9. I feltet **By** velger du **Bordeaux**.
+10. Velg **OK** for å lukke dialogboksen.
+
+### <a name="set-up-a-transport-method"></a>Definer en transportmetode
+
+1. Gå til **Avgift** \> **Oppsett** \> **Utenrikshandel** \> **Transportmetode**.
+2. Velg **Ny** i handlingsruten.
+3. Angi **3** i **Transport**-feltet.
+4. I **Beskrivelse**-feltet angir du **Veitransport**.
+
+### <a name="assign-a-transport-mode-to-a-mode-of-delivery"></a>Tildel en transportmodus til en leveringsmåte
+
+1. Gå til **Innkjøp og leverandører** \> **Oppsett** \> **Distribusjon** \> **Leveringsmåter**.
+2. Velg **50** i rutenettet.
+3. På hurtigfanen **Utenrikshandel**, i **Transport**-feltet, velger du **3**.
+
+### <a name="create-a-sales-order-with-an-eu-customer-that-includes-the-new-product"></a>Opprett en salgsordre med en EU-kunde som inneholder det nye produktet
+
+1. Gå til **Kunder** \> **Ordrer** \> **Alle salgsordrer**.
+2. Velg **Ny** i handlingsruten.
+3. I dialogboksen **Opprett salgs ordre**, i **Kunde**-delen i feltet **Kundekonto** velger du **DE-016**.
+4. I **Adresse**-delen i **Leveringsadresse**-feltet velger du plusstegnet (**+**) for å opprette en adresse
+5. I dialogboksen **Ny adresse** i feltet **Navn på beskrivelse** angir du **Tyskland**.
+6. I feltet **Land/område** velger du **DEU**.
+7. Velg **OK**.
+8. I dialogboksen **Opprett salgsordre** velger du **OK**.
+9. I hurtigfanen **Salgsordrelinjer** i **Varenummer**-feltet velger du **0001**.
+10. I **Utenlandshandel**-fanen i hurtigfanen **Linjedetaljer** i **Statstikkprosedyre**-feltet velger du **21**.
+11. I feltet **Opprinnelsesdelstat** velger du **AL**.
+12. Velg **Lagre** i handlingsruten.
+13. Kontroller at **50** er valgt i fanen **Hode** på hurtigfanen **Levering**, i feltet **Leveringsmåte**.
+14. I handlingsruten, på **Faktura**-fanen i **Generer**-gruppen, velger du **Faktura**.
+15. I dialogboksen **Postering av faktura** i hurtigfanen **Parametere** i **Parameter**-delen i **Antall**-feltet velger du **Alle**. Velg deretter **OK** for å publisere fakturaen.
+
+### <a name="transfer-the-transaction-to-the-intrastat-journal-and-review-the-result"></a>Overfør transaksjonen til Intrastat-journalen, og gå gjennom resultatet
+
+1. Gå til **Avgift** \> **Deklareringer** \> **Utenrikshandel** \> **Intrastat**.
+2. I handlingsruten velger du **Overfør**.
+3. I dialogboksen **Intrastat (overføring)** i **Parametere**-delen angir du **Kundefaktura**-alternativet til **Ja**. Velg deretter **OK**.
+4. Sorter transaksjoner etter **Dato**-feltet. Den øverste transaksjonen er resultattransaksjonen.
+
+    ![Linjen som representerer salgsordre på Intrastat-siden.](media/intrastat_fr_1.png)
+
+5. Velg transaksjonslinjen, og velg deretter fanen **Generelt** for å vise flere detaljer.
+
+    ![Salgsordredetaljer i fanen Generelt på Intrastat-siden.](media/intrastat_fr_2.png)
+
+6. Velg **Utlevering** \> **Rapport** i handlingsruten.
+7. I dialogboksen **Intrastat-rapport** velger du måneden for salgsordren du opprettet, i hurtigfanen **Parametere** i **Dato**-delen.
+8. I delen **Eksportalternativer** angir du alternativet **Generer fil** til **Ja**.
+9. I **Filnavn**-feltet angir du det obligatoriske navnet.
+10. Velg **OK** for å lukke dialogboksen **Intrastat-rapport**.
+11. I dialogboksen **Parametere for elektronisk rapport**, på hurtigfanen **Parametere**, i feltet **Rapportnivå** velger du elektronisk rapportparametere velger du **5 – statistisk svar på forsendelse og avgiftsdeklarering** og går gjennom rapporten.
+
+    ![Intrastat Intracom-rapport ved fordelinger.](media/intrastat_fr_3.png)
+
+12. Gå gjennom den genererte Excel-rapporten.
+
+    ![Intrastat-rapport ved fordelinger.](media/intrastat_fr_4.png)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

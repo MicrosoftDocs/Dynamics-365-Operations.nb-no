@@ -2,7 +2,7 @@
 title: Konfigurere handlingsavhengige ER-mål
 description: Denne artikkelen forklarer hvordan du konfigurerer handlingsavhengige mål for et ER-format (Elektronisk rapportering) som er konfigurert til å generere utgående dokumenter.
 author: kfend
-ms.date: 02/09/2021
+ms.date: 12/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.dyn365.ops.version: 10.0.17
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
-ms.openlocfilehash: babd123e4c8007e3adc545bb92a2dc83bab93f4e
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 80a432a431891c02e4bf5c71cfe2bd9642c41c75
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9286255"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843804"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsavhengige ER-mål
 
@@ -32,7 +32,7 @@ I Microsoft Dynamics 365 Finance **versjon 10.0.17 og nyere** kan et ER-format k
 
 ## <a name="make-action-dependent-er-destinations-available"></a>Gjøre handlingsavhengige ER-mål tilgjengelige
 
-Hvis du vil konfigurere handlingsavhengige ER-mål i gjeldende Finance-forekomst og aktivere den [nye](er-apis-app10-0-17.md) ER-API-en, åpner du arbeidsområdet [Funksjonsbehandling](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) og aktiverer funksjonen **Konfigurer bestemte ER-mål slik at de kan brukes for ulike PM-handlinger**. Hvis du vil bruke konfigurerte ER-mål for [bestemte](#reports-list-wave1) rapporter ved kjøretid, aktiverer du funksjonen **Rut utdata fra PM-rapporter basert på ER-mål som er spesifikke for brukerhandlinger (bølge 1)**.
+Hvis du vil konfigurere handlingsavhengige ER-mål i gjeldende Finance-forekomst og aktivere den [nye](er-apis-app10-0-17.md) ER-API-en, åpner du arbeidsområdet [Funksjonsbehandling](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) og aktiverer funksjonen **Konfigurer bestemte ER-mål slik at de kan brukes for ulike PM-handlinger**. Hvis du vil bruke konfigurerte ER-mål for rapporter ved kjøretid, aktiverer du funksjonen **Rut utdata fra PM-rapporter basert på ER-mål som er spesifikke for brukerhandlinger (bølge 1)**.
 
 ## <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsavhengige ER-mål
 
@@ -89,6 +89,51 @@ Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronis
 > [!NOTE]
 > Hvis du har konfigurert ER-mål for flere komponenter i det kjørende ER-formatet, vises et eget alternativ for hver konfigurerte komponent i ER-formatet.
 
+Hvis flere ER-formater gjelder som rapportmaler for det valgte dokumentet, vises alle ER-mål for alle aktuelle ER-rapportmaler i dialogboksen og er tilgjengelige for manuell justering ved kjøretid.
+
+Hvis ingen [SSRS-rapportmaler (SQL Server Reporting Services)](SSRS-report.md) gjelder for det valgte dokumentet, er standardvalget Utskriftsbehandlingsmål dynamisk skjult.
+
+Fra og med Finance-versjon **10.0.31** kan du manuelt endre de tildelte ER-målene ved kjøretid for følgende forretningsdokumenter:
+
+- Kontoutskrift for kunde
+- Rentenota
+- Purrenota
+- Betalingsmelding for kunde
+- Betalingsmelding for leverandør
+
+Hvis du vil aktivere muligheten til å endre ER-mål ved kjøretid, aktiverer du funksjonen **Tillat ER-måljustering ved kjøretid** i arbeidsområdet [Funksjonsbehandling](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace).
+
+> [!IMPORTANT]
+> I rapportene **Betalingsmelding for kunde** og **Betalingsmelding for leverandør** er muligheten til å endre ER-mål manuelt bare tilgjengelig hvis **ForcePrintJobSettings**-testversjonen er aktivert.
+
+[![Justering av ER-mål ved kjøretid.](./media/ERdestinaiotnChangeUI.jpg)](./media/ERdestinaiotnChangeUI.jpg)
+
+> [!NOTE]
+> Når alternativet **Bruk utskriftsbehandlingsmål** er satt til **Ja**, bruker systemet standard ER-mål som er konfigurert for bestemte ER-rapporter. Alle manuelle endringer som gjøres i dialogboksen, ignoreres. Angi alternativet **Bruk utskriftsbehandlingsmål** til **Nei** for å behandle dokumenter til ER-målene som er definert i dialogboksen rett før du kjører rapportene.
+
+Følgende forretningsdokumenter forutsetter ikke eksplisitt brukervalg av en handling når de kjøres:
+
+- Kontoutskrift for kunde
+- Rentenota
+- Purrenota
+- Betalingsmelding for kunde
+- Betalingsmelding for leverandør
+
+Følgende logikk brukes til å avgjøre hvilken handling som skal brukes mens de foregående rapportene behandles:
+
+- Hvis **ForcePrintJobSettings**-testversjon er aktivert:
+
+    - Hvis alternativet **Bruk utskriftsbehandlingsmål** er satt til **Ja**, brukes **Skriv ut**-handlingen.
+    - Hvis alternativet **Bruk utskriftsbehandlingsmål** er satt til **Nei**, brukes **Vis**-handlingen.
+
+- Hvis **ForcePrintJobSettings**-testversjon ikke er aktivert:
+
+    - Hvis alternativet **Bruk utskriftsbehandlingsmål** er satt til **Ja**, brukes **Skriv ut**-handlingen for rapportene **Betalingsmelding for kunde** og **Betalingsmelding for leverandør**.
+    - Hvis alternativet **Bruk utskriftsbehandlingsmål** er satt til **Nei**, brukes alltid standard SSRS-rapportmal for rapportene **Betalingsmelding for kunde** og **Betalingsmelding for leverandør**, uansett eventuelle ER-innstillinger som er konfigurert.
+    - **Skriv ut**-handlingen brukes alltid for rapportene **Kontoutskrift for kunde**, **Rentenota** og **Purrenota**.
+
+For den forrige logikken kan handlingene **Skriv ut** eller **Vis** brukes til å konfigurere handlingsavhengige ER-rapportmål. Ved kjøretid filtreres bare ER-mål som er konfigurert for en bestemt handling, i dialogboksen.
+
 ## <a name="verify-the-provided-user-action"></a>Kontrollere den angitte brukerhandlingen
 
 Du kan kontrollere hvilken brukerhandling som eventuelt angis for det kjørende ER-formatet, når du utfører en bestemt brukerhandling. Denne kontrollen er viktig når du må konfigurere handlingsavhengige ER-mål, men du er usikker på hvilken brukerhandlingskode som eventuelt angis. Når du for eksempel begynner å postere en fritekstfaktura og angir **Ja** for alternativet **Skriv ut faktura** i dialogboksen **Poster fritekstfaktura**, kan du angi **Ja** eller **Nei** for alternativet **Bruk utskriftsbehandlingsmål**.
@@ -104,20 +149,6 @@ Følg denne fremgangsmåten for å kontrollere brukerhandlingskoden som angis.
 7. Se gjennom loggoppføringene som må inneholde posten som viser den angitte brukerhandlingskoden, hvis det er angitt en handling for ER-formatkjøringen.
 
     ![Siden Kjøringslogger for elektronisk rapportering, som inneholder informasjon om brukerhandlingskoden som er angitt for den filtrerte kjøringen av et ER-format.](./media/er-destination-action-dependent-03.png)
-
-## <a name=""></a><a name="reports-list-wave1">Liste over forretningsdokumenter (bølge 1)</a>
-
-Følgende liste over forretningsdokumenter styres av funksjonen **Rut utdata fra PM-rapporter basert på ER-mål som er spesifikke for brukerhandlinger (bølge 1)**:
-
-- Kundefaktura (fritekstfaktura)
-- Kundefaktura (salgsfaktura)
-- Bestilling
-- Innkjøpsforespørsel for bestilling
-- Salgsordrebekreftelse
-- Purrenota
-- Rentenota
-- Betalingsmelding for leverandør
-- Tilbudsforespørsel
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

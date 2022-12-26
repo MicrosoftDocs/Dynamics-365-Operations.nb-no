@@ -2,7 +2,7 @@
 title: Aktiver flere henteleveringsmåter for kundeordrer
 description: Denne artikkelen forklarer funksjonaliteten i Microsoft Dynamics 365 Commerce som lar deg opprette kundeordrer for henting i en butikk.
 author: hhainesms
-ms.date: 06/07/2021
+ms.date: 12/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,29 +12,29 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 555ae3900bd7f9c66366f19a6eb2f12503898c93
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: e4d8883b3dc1c4a0e12bcb00b6441f76d73da92e
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8858914"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831591"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktiver flere henteleveringsmåter for kundeordrer
 
 [!include [banner](includes/banner.md)]
 
 
-I Microsoft Dynamics 365 Commerce, versjon 10.0.16 og nyere kan organisasjoner definere flere leveringsmåter som kunder eller selgere kan velge mellom når de oppretter en ordre som skal hentes i en butikk. På denne måten kan organisasjoner tilby flere hentealternativer til kundene sine. Mange forhandlere tilbyr for eksempel kunder alternativet om å hente i butikk eller hente utenfor butikk i ordrene deres. Commerce støtter konfigurering av disse forskjellige henteleveringsmåtene. Brukere kan dra nytte av dem når de oppretter kundeordrer i en hvilken som helst støtte Commerce-kanal som støttes (e-handel, kundesenter eller butikk).
+I Microsoft Dynamics 365 Commerce kan organisasjoner definere flere leveringsmåter som kunder eller selgere kan velge mellom når de oppretter en ordre som skal hentes i en butikk. På denne måten kan organisasjoner tilby flere hentealternativer til kundene sine. Mange forhandlere tilbyr for eksempel kunder alternativet om å hente i butikk eller hente utenfor butikk i ordrene deres. Commerce støtter konfigurering av disse forskjellige henteleveringsmåtene. Brukere kan dra nytte av dem når de oppretter kundeordrer i en hvilken som helst støtte Commerce-kanal som støttes (e-handel, kundesenter eller butikk).
 
 ## <a name="enable-and-configure-pickup-delivery-modes"></a>Aktiver og konfigurer henteleveringsmåter
 
-Hvis du vil bruke denne funksjonaliteten, aktiverer du funksjonen **Støtte for flere henteleveringsmåter** i arbeidsområdet **Funksjonsbehandling** i Commerce Headquarters. Når du har aktivert funksjonen, kreves ytterligere konfigurasjon.
+Funksjonen **Støtte for flere henteleveringsmåter** i arbeidsområdet **Funksjonsbehandling** i Commerce headquarters er gjort obligatorisk og må være aktivert i miljøet.
 
-I Commerce, versjon 10.0.15 og tidligere kan organisasjoner bare definere én leveringsmåte som den utpekte henteleveringsmåten. Denne definisjonen gjøres på siden **Commerce-parametere**. Når du aktiverer funksjonen **Støtte for flere henteleveringsmåter** i versjon 10.0.16 og nyere, kopieres leveringsmåten som tidligere ble definert som henteleveringsmåten på siden **Commerce-parametere**, automatisk til den nye konfigurasjonen for henteleveringsmåter.
+Hvis du tidligere har definert en henteleveringsmodus på siden **Commerce-parametere**, vises denne modusen i den gjeldende konfigurasjonen for henteleveringsmoduser.
 
 ![Henteleveringsmåter på siden Commerce-parametere.](media/multiplepickupparameter.png)
 
-Når du har aktivert funksjonen **Støtte for flere henteleveringsmåter**, kan du definere flere leveringsmåter i rutenettet **Henteleveringsmåte** i hurtigfanen **Leveringsmåter** i fanen **Kundeordrer** på siden **Commerce-parametere**.
+Du kan definere flere henteleveringsmåter i **Henteleveringsmåte**-rutenettet i fanen **Commerce-parametere** > **Kundeordrer** > **Leveringsmåter**-hurtigfanen.  
 
 Feltene **Utbæringsleveringsmåte** og **Elektronisk leveringsmåte**, og alternativet **Vis bare transportøralternativer for forsendelsesordrer**, er omplassert til denne hurtigfanen.
 
@@ -47,8 +47,6 @@ Når du har definert ekstra henteleveringsmåter, legger du dem til i rutenettet
 > [!NOTE]
 > Bortsett fra den eksisterende henteleveringsmåten som kopieres til **Henteleveringsmåte**-rutenettet når du aktiverer funksjonen **Støtte for flere henteleveringsmåter**, bør du konfigurere nye henteleveringsmåter for hver ekstra leveringsmåtekonfigurasjon. Når du legger til leveringsmåter i **Henteleveringsmåte**-rutenettet, validerer Commerce om noen aktive åpne salgslinjer allerede bruker dem. Hvis det finnes åpne salgslinjer, får du en feilmelding. Leveringsmåter betraktes ikke som henteleveringsmåter før alle åpne salgslinjer som bruker dem, har blitt lukket (enten fakturert eller avbrutt).
 
-> [!IMPORTANT]
-> Når du har definert mer enn én henteleveringsmåte på siden **Commerce-parametere**, blir funksjonen **Støtte for flere henteleveringsmåter** obligatorisk og kan ikke lenger være deaktivert. Hvis du må deaktivere denne funksjonen, fjerner du alle henteleveringsmåtene unntatt én fra **Henteleveringsmåte**-rutenettet. Når bare én henteleveringsmåte er definert, blir ikke funksjonen lenger ansett som obligatorisk, og den kan deaktiveres.
 
 ### <a name="e-commerce-site-configurations"></a>E-handelsområdekonfigurasjoner
 

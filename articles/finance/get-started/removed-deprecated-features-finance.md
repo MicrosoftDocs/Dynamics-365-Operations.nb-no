@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 516b2b6091fa620b21eebba25f56ff55aa282ffc
-ms.sourcegitcommit: c5f2cba3c2b0758e536eeaaa40506659a53085e1
+ms.openlocfilehash: 25d13aa26565e5753b87c843b43cf46f8276b642
+ms.sourcegitcommit: 6c05bcd27e6ee72f01cb66e2cfd1e929e0365830
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9643801"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "9854086"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Fjernede eller avskrevne funksjoner i Dynamics 365 Finance
 
@@ -124,11 +124,10 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatet **Mva-deklarering (AT)** under **MVA-deklarasjonsmodell**. Nye formater for **MVA-deklarering XML (AT)** og **MVA-deklarering Excel (AT)** introduseres under **Avgiftsdeklarering**-modellen. |
 
-### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-deklarering for Tyskland (design basert på rapporteringskoder)
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes-electronic-tax-declaration-log-menu-item-and-page-electronic-tax-declaration-setup-menu-item-and-page-german-report-layout-taxreport_de-ssrs-format"></a>ELSTER-deklarering for Tyskland (utforming basert på rapporteringskoder), \"Logg for elektronisk avgiftsdeklarering\"-menyelement og side, \"Oppsett for elektronisk avgiftsdeklarering\"-menyelement og side, tysk rapportoppsett (TaxReport_DE) SSRS-format
 
 [Mva-oppgave](../localizations/emea-de-vat-declaration.md)</br>
 [Oppsett for elektronisk avgiftsdeklarering for Tyskland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
-[Elektronisk overføring av mva-deklarering (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -136,9 +135,9 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Erstattet med en annen funksjon?**   | Ja |
 | **Berørte produktområder**         | Program |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatet **Elster (DE)** og **Elster-modell**. Nye formater for **MVA-deklarering XML (DE)** og **MVA-deklarering Excel (DE)** introduseres under **Avgiftsdeklarering**-modellen. |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 vil vi ikke lenger støtte det elektroniske rapporteringsformatet (ER) **Elster (DE)** og **Elster-modell**. Nye ER-formater for **MVA-deklarering XML (DE)** og **MVA-deklarering Excel (DE)** introduseres under **Avgiftsdeklarering**-modellen. Vi støtter heller ikke lenger menyelement og side **Avgift** \> **Deklareringer** \> **Merverdiavgift** \> **Logg for elektronisk avgiftsdeklarering**, menyelement og side **Avgift** \> **Oppsett** \> **Merverdiavgift** \> **Oppsett for elektronisk avgiftsdeklarering**, menyelement og side **Avgift** \> **Oppsett** \> **Merverdiavgift** \> **Elektroniske avgiftssertifikater** og det tyske rapportoppsettet (TaxReport\_DE) SQL Server Reporting Services-formatet (SSRS). Prosessen med mva-rapportering i Tyskland støttes i funksjonaliteten [Elektroniske meldinger](../general-ledger/electronic-messaging.md). Hvis du vil ha mer informasjon, kan du se [Mva-deklarering for Tyskland](../localizations/emea-deu-vat-declaration-germany.md). |
 
-### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-deklarering for Nederland (design basert på rapporteringskoder)
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes-electronic-ob-declaration-menu-item-and-page-dutch-report-layout-taxreport_nl-ssrs-format"></a>OB-deklarering for Nederland (utforming basert på rapporteringskoder), menyelement og side \"Elektronisk OB-deklarering\", nederlandsk rapportoppsett (TaxReport_NL) SSRS-format
 
 [OB-deklarering](../localizations/emea-nl-vat-declaration.md)
 
@@ -148,7 +147,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Erstattet med en annen funksjon?**   | Ja |
 | **Berørte produktområder**         | Program |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatene **OB-deklarering (NL)** og **OB-deklareringsmodell**. Nye formater for **MVA-deklarering XML (NL)** og **MVA-deklarering Excel (NL)** introduseres under **Avgiftsdeklarering**-modellen. |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 vil vi ikke lenger å støtte ER-formatene (elektronisk rapportering) **OB-deklarering (NL)** og **OB-deklareringsmodell**. Nye ER-formater for **MVA-deklarering XML (NL)** og **MVA-deklarering Excel (NL)** introduseres under **Avgiftsdeklarering**-modellen. Vi støtter heller ikke lenger menyelement og side **Avgift** \> **Deklarering** \> **Merverdiavgift** \> **Elektronisk OB-deklarering** , og det nederlandske rapportoppsettet (TaxReport_NL) SSRS-format. Prosessen med mva-rapportering i Nederland støttes i funksjonaliteten [Elektroniske meldinger](../general-ledger/electronic-messaging.md). Hvis du vil ha mer informasjon, kan du se [Mva-deklarering for Nederland](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.20
 

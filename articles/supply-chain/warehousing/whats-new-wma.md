@@ -10,18 +10,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 21abbffe6b16217a0d2e20f662faa080420da12e
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 61d3ebc85d3c3d20bb17acd7364adc04cd2f3f94
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9764246"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843687"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nyheter eller endringer i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Denne artikkelen inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20390"></a>Versjon 2.0.39.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+- Forbedret stabilitet. 
+- Feltene på siden **Egendefinert** blir ikke lenger sortert automatisk basert på innstillingene for prioritet og underprioritet.  
+- Appen bruker nå innstillingene for prioritet og underprioritet for hvert felt til å identifisere primærfeltet for en side. Primærfeltet vises i trinnhodet. 
+- Reparer et problem der det myke tastaturet ikke skjules på Android.
+- Rettet et problem der antallslederen viste en feil korrekt verdi ved åpning i *bevegelsesflyten*. 
+- Løste et problem der skrivebeskyttet antall-spinnerverdien ikke er sentrert på riktig måte. 
+- Løste et problem der nettsider ikke ble åpnet fra **Om**-siden. 
+- *Automatisk*-fargetemaet tar nå standardutseende (lyst eller mørkt) basert på det globale temasettet i mobilenhetens operativsystem.
 
 ## <a name="version-20370"></a>Versjon 2.0.37.0
 

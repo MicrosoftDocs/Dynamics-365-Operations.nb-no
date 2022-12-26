@@ -1418,10 +1418,12 @@
               href: assess-customer-product-profitability.md
             - name: Analyser butikkytelse
               href: store-performance-information.md
-            - name: 'Definer RFM-analyse (Nyheter, Hyppighet og Økonomisk)'
+            - name: 'Definer RFM-analyse (nyheter, hyppighet og økonomisk)'
               href: set-up-rfm-analysis.md
             - name: Konfigurer Microsoft Clarity i Dynamics 365 Commerce
               href: set-up-clarity.md
+            - name: Konfigurer Operational Insights
+              href: dev-itpro/operational-insights.md
         - name: Globalization Studio
           items:
             - name: Oversikt over Globalization Studio
@@ -3054,8 +3056,14 @@
                   href: troubleshoot/email-not-sent-when-new-customer-created.md
             - name: Feilsøking av SDK
               items:
-                - name: Konfigurer et utviklingsmiljø for e-handel for feilsøking mot Retail Server VM på Lag 1
+                - name: Konfigurer et utviklingsmiljø for netthandel for feilsøking mot Retail Server VM på Lag 1
                   href: troubleshoot/set-up-dev-environment-debugging.md
+            - name: Butikkfinans
+              items:
+                - name: Problemer med dataavstemming av en Z-rapport
+                  href: troubleshoot/z-report-issues.md
+                - name: Utdragsposteringsfeil på grunn av utilgjengelig lager eller oppdateringskonflikter
+                  href: troubleshoot/inventory-errors-posting.md
     - name: Utvikling og administrasjon for økonomi- og driftsapper
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance

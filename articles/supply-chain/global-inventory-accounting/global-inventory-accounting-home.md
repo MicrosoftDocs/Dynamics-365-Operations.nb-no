@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e7f919b28f6d0c8cd830ecfab4608be50b684c8e
-ms.sourcegitcommit: 6b209919de39c15e0ebe4abc9cbcd30618f2af0b
+ms.openlocfilehash: fd9877365977694ca29f4d9116bcae45360306d5
+ms.sourcegitcommit: e9000d0716f7fa45175b03477c533a9df2bfe96d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "9135465"
+ms.lasthandoff: 12/13/2022
+ms.locfileid: "9843633"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Startside for Globalt lagerregnskap
 
@@ -40,11 +40,17 @@ En konvensjon er en samling regnskapspolicyer for beholdning som kan knyttes til
 
 Globalt lagerregnskap er for øyeblikket tilgjengelig i følgende geografiske Azure-områder:
 
-- USA
-- Europa
-- Storbritannia
 - Australia
 - Canada
+- Kina
+- Europa
+- Frankrike
+- Norge
+- Sør-Afrika
+- Sveits
+- De forente arabiske emirater
+- Storbritannia
+- USA
 
 Hvis du prøver å installere tillegget fra et annet geografisk område, vil Microsoft Dynamics Lifecycle Services (LCS) vise en melding om at det geografiske området ikke støttes. Globalt lagerregnskap støtter ikke lokale distribusjoner av Supply Chain Management.
 

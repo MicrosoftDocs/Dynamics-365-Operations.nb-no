@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: weijiesa
 ms.search.validFrom: 2021-04-05
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 9ab05e1bc5d0ae2c8b5d98dda32660d2436676e9
-ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
+ms.openlocfilehash: 9c1c7233b637b84ec901d7f83ae00f8a04895edb
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8857206"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838425"
 ---
 # <a name="less-than-truckload-ltl-classes"></a>Mindre enn vognlastklasser
 
@@ -54,7 +54,7 @@ Hvis du vil opprette en LTL-klasse, følger du disse trinnene.
 
 Følgende eksempel viser hvordan du konfigurerer to ulike LTL-klasser som du kan bruke med forskjellige typer produkter.
 
-1. Gå til **Lagerstyring \> Oppsett \> Lager \> LTL-klasser**.
+1. Gå til **Lagerstyring \> Oppsett \> Lager \> LTL-klasser** eller **Transportstyring \> Oppsett \> Transportstandarder \> LTL-klasser**.
 1. Velg **Ny** i handlingsruten.
 1. På den nye linjen angir du følgende verdier:
 

@@ -1809,6 +1809,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Produksjonsplanlegging
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Konfigurer svinn for å beregne råvarebehov
+                  href: master-planning/scrap-calculations.md
                 - name: Hovedplanlegging for produkter med begrenset holdbarhet
                   href: master-planning/planning-optimization/shelf-life.md
                 - name: Planlegging med ubegrenset kapasitet
@@ -2355,11 +2357,11 @@
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Opprett et frigitt produkt for ett firma
                   href: pim/tasks/create-released-product-single-company.md
-                - name: Bruke dataenheter
+                - name: Produktdataenheter
                   href: pim/data-entities.md
-                - name: Livssyklustilstand for produkt
+                - name: Produktstatus
                   items:
-                    - name: Oversikt over tilstand for produktlivssyklus
+                    - name: Oversikt over produktstatus
                       href: pim/product-lifecycle.md
                     - name: Opprette en ny livssyklustilstand for produkt
                       href: pim/tasks/new-product-lifecycle-state.md

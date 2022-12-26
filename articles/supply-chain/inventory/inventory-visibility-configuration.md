@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 915382c14cc9ba89b9d543cfd668a94cecbc0a55
-ms.sourcegitcommit: 4f987aad3ff65fe021057ac9d7d6922fb74f980e
+ms.openlocfilehash: 2a368535c9644e174d1a2460ac0891c9dc1b1b3f
+ms.sourcegitcommit: 44f0b4ef8d74c86b5c5040be37981e32eb43e1a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9765712"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "9850030"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurer Inventory Visibility
 
@@ -32,15 +32,16 @@ Før du begynner å arbeide med Lagersynlighet, må du fullføre følgende konfi
 - [Partisjonskonfigurasjon](#partition-configuration)
 - [Konfigurasjon av produktindekshierarki](#index-configuration)
 - [Reservasjonskonfigurasjon (valgfritt)](#reservation-configuration)
+- [Forhåndslastingskonfigurasjon for spørring (valgfritt)](#query-preload-configuration)
 - [Eksempel på standard konfigurasjon](#default-configuration-sample)
 
-## <a name="prerequisites"></a>Forutsetninger
+## <a name="prerequisites"></a>Nødvendig programvare
 
 Før du begynner, må du installere og konfigurere tillegget Lagersynlighet som beskrevet i [Installere og definere lagersynlighet](inventory-visibility-setup.md).
 
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurasjonssiden for Lagersynlighet-appen
 
-I Power Apps hjelper **Konfigurasjon** siden i [Lagersynlighet-appen](inventory-visibility-power-platform.md) deg med konfigurasjon av lagerbeholdning og konfigurasjon av ikke-forpliktende reservasjon. Når tillegget er installert, inkluderer standardkonfigurasjonen verdien fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gå gjennom standardinnstillingene. I tillegg kan du, basert på forretningskravene og lagerposteringskravene i det eksterne systemet, endre konfigurasjonen for å standardisere hvordan lagerendringer kan posteres, organiseres og spørres i alle systemene. Resten av delene i denne artikkelen forklarer hvordan du bruker hver del av **Konfigurasjon**-siden.
+I Power Apps hjelper **Konfigurasjon** siden i [Lagersynlighet-appen](inventory-visibility-power-platform.md) deg med konfigurasjon av lagerbeholdning og konfigurasjon av ikke-forpliktende reservasjon. Når tillegget er installert, inkluderer standardkonfigurasjonen verdien fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gå gjennom standardinnstillingene. I tillegg kan du, basert på forretningskravene og lagerposteringskravene i det eksterne systemet, endre konfigurasjonen for å standardisere hvordan lagerendringer kan posteres, organiseres og spørres i alle systemene. Resten av delene i artikkelen forklarer hvordan du bruker hver del av **Konfigurasjon**-siden.
 
 Når konfigurasjonen er fullført, velger du **Oppdater konfigurasjon** i appen.
 
@@ -52,10 +53,13 @@ Tillegget for lagersynlighet legger til flere nye funksjoner i Power Apps instal
 |---|---|
 | *OnHandReservation* | Denne funksjonen lar deg opprette reserveringer, forbruke reserveringer og/eller avreservere angitte lagerantall ved hjelp av Lagersynlighet. Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | Denne funksjonen gir et lagersammendrag for produkter, sammen med alle dimensjoner. Lagersammendragsdataene synkroniseres periodisk fra Lagersynlighet. Standard synkroniseringsfrekvens er én gang hvert 15. minutt og kan angis så høyt som én gang hvert 5. minutt. For mer informasjon, se [Lagersammendrag](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | Denne funksjonen gjør det mulig å forhåndslaste lagersynlighetsspørringer for lagerbeholdning for å sette sammen lagerbeholdningslister med forhåndsvalgte dimensjoner. Standard synkroniseringsfrekvens er én gang hvert 15. minutt. Hvis du vil ha mer informasjon , kan du se [Forhåndslast en strømlinjeformet beholdningsspørring](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | Denne funksjonen henter og lagrer regelmessig et sett med samledata for lagerbeholdning basert på de forhåndskonfigurerte dimensjonene. Det gir et lagersammendrag som bare omfatter de dimensjonene som er relevante for den daglige forretningen, og som er kompatible med varer som er aktivert for lagerstyringsprosesser (WMS). Hvis du vil ha mer informasjon, kan du se [Slå på og konfigurer forhåndslastede spørringer for lagerbeholdning](#query-preload-configuration) og [Forhåndslast en strømlinjeformet spørring for lagerbeholdning](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | Denne valgfrie funksjonen aktiverer endringsplanen for lagerbeholdning og er tilgjengelig ATP-funksjoner (tilgjengelig for ordre). Hvis du vil ha mer informasjon, kan du se [Tidsplan for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md). |
 | *Tilordning* | Ved hjelp av denne valgfrie funksjonen kan lagersynlighet gi mulighet for lagerbeskyttelse (ringorganisering) og oversalgskontroll. Hvis du vil ha mer informasjon, kan du se [Lagertildeling for lagersynlighet](inventory-visibility-allocation.md). |
 | *Aktiver lagervarer i lagersynlighet* | Denne valgfrie funksjonen gjør det mulig for Lagersynlighet å støtte varer som er aktivert for Warehouse Management-prosesser (WMS). Hvis du vil ha mer informasjon, kan du se [Støtte i Lagersynlighet for WMS-varer](inventory-visibility-whs-support.md). |
+
+> [!IMPORTANT]
+> Det anbefales at du bruker enten *OnHandIndexQueryPreloadBackgroundService*-funksjonen eller *OnHandMostSpecificBackgroundService*-funksjonen, ikke begge. Hvis du aktiverer begge funksjonene, påvirker det ytelsen.
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finn endepunkt for tjeneste
 
@@ -178,6 +182,15 @@ Hvis datakilden er Supply Chain Management, trenger du ikke å opprette standard
 1. Logg deg på Power Apps-miljøet, og åpne **Lagersynlighet**.
 1. Åpne **Konfigurasjon**-siden.
 1. I kategorien **Datakilde** velger du datakilden du vil legge til fysiske mål i (for eksempel `ecommerce`-datakilden). Deretter, i delen **Fysiske målinger**, velber du **Legg til** og angir målnavnet (for eksempel `Returned` hvis du vil registrere returnerte antall i denne datakilden til Lagersynlighet). Lagre endringene.
+
+### <a name="extended-dimensions"></a>Utvidede dimensjoner
+
+Kunder som vil bruke eksterne datakilder i datakilden, kan ta dra nytte av utvidelsen som Dynamics 365 tilbyr, ved å opprette [klasseutvidelser](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) for `InventOnHandChangeEventDimensionSet`- og `InventInventoryDataServiceBatchJobTask`-klassene.
+
+Pass på at du synkroniserer med databasen etter at du har opprettet tilleggene, slik at de egendefinerte feltene kan legges til i `InventSum`-tabellen. Deretter kan du se Dimensjoner-delen tidligere i denne artikkelen for å tildele egendefinerte dimensjoner til hvilken som helst av de åtte utvidede dimensjonene i `BaseDimensions` i Lager.
+
+> [!NOTE] 
+> Hvis du vil ha mer informasjon om å opprette utvidelser, kan du se [Startside for utvidbarhet](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### <a name="calculated-measures"></a>Beregnede mål
 
@@ -496,6 +509,30 @@ En gyldig dimensjonssekvens skal følge reservasjonshierarkiet, dimensjonen for 
 ## <a name="available-to-promise-configuration-optional"></a>Konfigurasjon av tilgjengelig for ordre (valgfritt)
 
 Du kan konfigurere Lagersynlighet slik at du kan planlegge fremtidige endringer i lagerbeholdningen og beregne ATP-antall (tilgjengelig for ordre). ATP er antallet av en vare som er tilgjengelig og kan loves til en kunde i løpet av den neste perioden. Bruk av denne beregningen kan øke kapasiteten for innfrielse av bestillinger betydelig. Hvis du vil bruke denne funksjonen, må du aktivere den på fanen **Funksjonsbehandling** og deretter konfigurere den på fanen **ATP-innstilling**. Hvis du vil ha mer informasjon, kan du se [Tidsplaner for lagerendringer i Lagersynlighet og leveringskapasitet](inventory-visibility-available-to-promise.md).
+
+## <a name="turn-on-and-configure-preloaded-on-hand-queries-optional"></a><a name="query-preload-configuration"></a>Slå på og konfigurer forhåndslastede lagerbeholdningsspørringer (valgfritt)
+
+Lagersynlighet kan regelmessig hente og lagre et sett med samledata for lagerbeholdning basert på de forhåndskonfigurerte dimensjonene. Dette gir følgende fordeler:
+
+- En renere visning som lagrer et lagersammendrag som bare omfatter de dimensjonene som er relevante for den daglige virksomheten.
+- Et lagersammendrag som er kompatibelt med varer aktivert for lagerstyringsprosesser (WMS).
+
+Se [Forhåndslast en strømlinjeformet lagerbeholdningsspørring](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) for mer informasjon om hvordan du arbeider med denne funksjonen etter at du har konfigurert den.
+
+> [!IMPORTANT]
+> Det anbefales at du bruker enten *OnHandIndexQueryPreloadBackgroundService*-funksjonen eller *OnHandMostSpecificBackgroundService*-funksjonen, ikke begge. Hvis du aktiverer begge funksjonene, påvirker det ytelsen.
+
+Gjør følgende for å konfigurere funksjonen:
+
+1. Logg deg på PowerApp for lagersynlighet.
+1. Gå til **Konfigurasjon \> Funksjonsbehandling og innstillinger**.
+1. Hvis funksjonen *OnHandIndexQueryPreloadBackgroundService* allerede er aktivert, anbefaler vi at du deaktiverer den nå fordi oppryddingsprosessen kan ta svært lang tid å fullføre. Du må slå den på igjen senere i denne prosedyren.
+1. Åpne fanen **Innstillinger for forhåndslasting**.
+1. I delen **Trinn 1: Rydd opp i forhåndslastingslager** velger du **Rydd** for å rydde opp i databasen og gjøre den klar til å godta de nye innstillingene for gruppe.
+1. I delen **Trinn 2: Konfigurer grupper etter verdier** i feltet **Grupper resultat etter** angir du en kommadelt liste over feltnavn som spørringsresultatene skal grupperes etter. Når du har data i lagringsdatabasen for forhåndslasting, kan du ikke endre denne innstillingen før du rydder i databasen, som beskrevet i forrige trinn.
+1. Gå til **Konfigurasjon \> Funksjonsbehandling og innstillinger**.
+1. Slå på funksjonen *OnHandIndexQueryPreloadBackgroundService*.
+1. Velg **Oppdater konfigurasjon** øverst til høyre på **Konfigurasjon**-siden for å ta i bruk endringene.
 
 ## <a name="complete-and-update-the-configuration"></a>Fullfør og oppdater konfigurasjonen
 

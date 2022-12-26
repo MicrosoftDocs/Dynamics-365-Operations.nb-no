@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: ''
 ms.assetid: ''
 ms.search.industry: Retail
-ms.openlocfilehash: bbb5f3d4c61907243bed404f3ab7bea05c78b1c0
-ms.sourcegitcommit: 87e727005399c82cbb6509f5ce9fb33d18928d30
+ms.openlocfilehash: 0e1092c0c5c49c6a99dd441c75f545fc831c0b03
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "9276461"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831564"
 ---
 # <a name="choose-between-store-commerce-and-cloud-pos"></a>Velg mellom Store Commerce og Cloud POS
 
@@ -71,7 +71,7 @@ I tillegg til plattform og formfaktor må forhandlerne også velge et alternativ
 |----------------------------|---------------------|-------------------|-------------------|
 | Store Commerce for Windows | Cloud eller RSSU       | Ja               | Ja               |
 | Store Commerce for Android | Cloud eller RSSU       | Nei                | Ja               |
-| Store Commerce for iOS     | Cloud eller RSSU       | Nei                | Nei                |
+| Store Commerce for iOS     | Cloud eller RSSU       | Nei                | Ja               |
 | Cloud POS                  | Cloud eller RSSU       | Nei                | Nei                |
 
 #### <a name="commerce-scale-unit"></a>Commerce Scale Unit
@@ -90,7 +90,7 @@ Forhandlere må også vurdere hvordan salgsstedet får tilgang til enheter og ti
 |----------------------------|----------------|---------------------|--------------------|
 | Store Commerce for Windows | Ja            | Ja                 | Ja                |
 | Store Commerce for Android | Nei             | Ja                 | Ja                |
-| Store Commerce for iOS     | Nei             | Nei                  | Ja                |
+| Store Commerce for iOS     | Nei             | Ja                 | Ja                |
 | Cloud POS                  | Nei             | Nei                  | Ja                |
 
 Hvis du vil ha mer informasjon om maskinvarestasjoner, kan du se [Konfigurere og installere Retail-maskinvarestasjon](retail-hardware-station-configuration-installation.md).

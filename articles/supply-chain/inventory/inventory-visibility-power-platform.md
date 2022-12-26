@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9886ddbf0b072283cffd73d4bfdc20835ccb3b7c
-ms.sourcegitcommit: 49f8973f0e121eac563876d50bfff00c55344360
+ms.openlocfilehash: 0a4e436cc1af6b71049f75fb66bdfb89ca38df9f
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "9762707"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831781"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Bruk Inventory Visibility-appen
 
@@ -106,7 +106,7 @@ For å aktivere siden **Lagersammendraget** og angi synkroniseringsfrekvensen f�
 
 1. Åpne **Konfigurasjon**-siden.
 1. Åpne fanen **Funksjonsbehandling og -innstillinger**.
-1. Sett veksleknappen for **OnHandMostSpecificBackgroundService**-funksjonen til *Ja*.
+1. Sett veksleknappen for *OnHandMostSpecificBackgroundService*-funksjonen til *Ja*.
 1. Når funksjonen er aktivert, blir **tjenestekonfigurasjonsdelen** tilgjengelig og inkluderer en rad for konfigurasjon av funksjonen **OnHandMostSpecificBackgroundService**. Med denne innstillingen kan du velge hvor ofte lagersammendragsdata skal synkroniseres. Bruk **Opp**- og **Ned**-knappene i **Verdi**-kolonnen til å endre tiden mellom synkroniseringene (som kan være så lave som 5 minutter). Velg deretter **Lagre**.
 
     ![Innstillingen OnHandMostSpecificBackgroundService](media/inventory-visibility-ohms-freq.png "Innstillingen OnHandMostSpecificBackgroundService")
@@ -125,10 +125,10 @@ Supply Chain Management har lagret mye informasjon om den gjeldende lagerbeholdn
 
 På siden **Forhåndslast lagersynlighetssammendraget** finner du en visning for enheten *Forhåndslast lagerindeksspørring*. I motsetning til enheten *Lagersammendrag* inneholder enheten *Forhåndslast lagerindeksspørring* en lagerbeholdningsliste for produkter sammen med valgte dimensjoner. Lagersynlighet synkroniserer de forhåndslastede sammendragsdataene hvert 15. minutt.
 
-Hvis du vil vise data på fanen **Forhåndslast lagersynlighetssammendraget**, må du aktivere funksjonen *OnHandIndexQueryPreloadBackgroundService* på **Funksjonsbehandling**-fanen på **Konfigurasjon**-siden og deretter velge **Oppdater konfigurasjon** (se også [Konfigurer lagersynlighet](inventory-visibility-configuration.md)).
+Hvis du vil vise data på fanen **Forhåndslast sammendraget for lagersynlighet**, må du slå på og konfigurere funksjonen *OnHandIndexQueryPreloadBackgroundService*. Se [Slå på og konfigurer forhåndslastede lagerbeholdningsspørringer](inventory-visibility-configuration.md#query-preload-configuration) for instruksjoner.
 
 > [!NOTE]
-> Som med funksjonen *OnhandMostSpecificBackgroudService* sporer funksjonen *OnHandIndexQueryPreloadBackgroundService* kun endringer i lagerbeholdningen som oppstod etter at du aktiverte funksjonen. Data for produkter som ikke har endret seg siden du aktiverte funksjonen, vil ikke bli synkronisert fra lagertjenestebufferen til Dataverse-miljøet. Hvis **Lagersammendrag**-siden ikke viser all lagerbeholdningsinformasjonen du forventer, kan du gå til **Lagerstyring > Periodiske oppgaver > Integrering av lagersynlighet**, deaktivere den satsvise jobben og aktivere den på nytt. Dette utfører den innledende overføringen, og alle data synkroniseres med enheten *Forhåndslast lagerindeksspørring* i løpet av de neste 15 minuttene. Hvis du vil bruke denne funksjonen, anbefaler vi at du aktiverer den før du oppretter lagerbeholdningsendringer og aktiverer den satsvise jobben **Integrering av lagersynlighet**.
+> Som med funksjonen *OnHandMostSpecificBackgroundService* sporer funksjonen *OnHandIndexQueryPreloadBackgroundService* kun endringer i lagerbeholdningen som oppstod etter at du aktiverte funksjonen. Data for produkter som ikke har endret seg siden du aktiverte funksjonen, vil ikke bli synkronisert fra lagertjenestebufferen til Dataverse-miljøet. Hvis **Lagersammendrag**-siden ikke viser all lagerbeholdningsinformasjonen du forventer, kan du gå til **Lagerstyring > Periodiske oppgaver > Integrering av lagersynlighet**, deaktivere den satsvise jobben og aktivere den på nytt. Dette utfører den innledende overføringen, og alle data synkroniseres med enheten *Forhåndslast lagerindeksspørring* i løpet av de neste 15 minuttene. Hvis du vil bruke denne funksjonen, anbefaler vi at du aktiverer den før du oppretter lagerbeholdningsendringer og aktiverer den satsvise jobben **Integrering av lagersynlighet**.
 
 ## <a name="filter-and-browse-the-inventory-summaries"></a><a name="additional-tip-for-viewing-data"></a>Filtrer og bla gjennom lagersammendragene
 

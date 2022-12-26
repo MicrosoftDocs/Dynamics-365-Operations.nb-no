@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.form: FinancialReports
-ms.openlocfilehash: 66430f81bd3d1efe126dfb29fa9c6a093716f90e
-ms.sourcegitcommit: d27fef61593c6d1e9e26d5c9fad21411bc52fabc
+ms.openlocfilehash: 180b3c64b9eb506f162071a67b1fa9b728a569ce
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "9802722"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831617"
 ---
 # <a name="financial-report-components"></a>Komponenter for finansrapport
 
@@ -58,14 +58,14 @@ Bruke mapper til å organisere byggeblokkene i Rapportutforming. Alle mappene er
 Du kan opprette et passord for å låse og bidra til å beskytte en byggeblokk. På denne måten kan du legge til et sikkerhetsnivå i en rapportkomponent uten å sikre hele systemet. Et passord kan bidra til å beskytte byggeblokkinformasjon som er viktig for rapporteringsprosessen for månedsavslutning. En bruker i en hvilken som helst rolle kan låse en byggeblokk. Andre brukere har imidlertid alltid skrivebeskyttet tilgang til en låst komponent. Brukere kan åpne, endre og lagre den låste komponenten med et nytt navn. En bruker som har rollen administrator har alltid få tilgang til og kan endre en låst byggeblokk.
 
 1. Åpne rapportkomponenten som skal låses i Report Designer, for eksempel en raddefinisjon, kolonnedefinisjon, rapportdefinisjon eller rapporteringstredefinisjon.
-2. På **Verktøy**-menyen klikker du **Aktiver/deaktiver beskyttelse** > . Du kan også klikke ikonet for **Aktiver/deaktiver beskyttelse** (låseikonet) på verktøylinjen.
+2. På **Verktøy**-menyen klikker du **Aktiver/deaktiver beskyttelse**. Du kan også klikke ikonet for **Aktiver/deaktiver beskyttelse** (låseikonet) på verktøylinjen.
 3. Angi og bekreft et passord, og klikk deretter **OK** i dialogboksen **Beskytt**. Låseikonet på verktøylinjen utheves når en åpen byggeblokk er låst.
 
-Hvis du vil åpne en låst byggeblokk, åpner du byggeblokken og klikker deretter **Aktiver/deaktiver beskyttelse** på verktøylinjen. Du kan også gå til **Verktøy**-menyen og klikke **Deaktiver beskyttelse** > .
+Hvis du vil åpne en låst byggeblokk, åpner du byggeblokken og klikker deretter **Aktiver/deaktiver beskyttelse** på verktøylinjen. Du kan også gå til **Verktøy**-menyen og klikke **Deaktiver beskyttelse**.
 
 ## <a name="building-block-groups"></a>Byggeblokkgrupper
 
-Byggeblokker er raddefinisjoner, kolonnedefinisjoner rapporteringstredefinisjoner og rapportdefinisjoner som du oppretter for en rapport. Byggeblokkgrupper er samlinger av definisjonene og dimensjonssettene
+Byggeblokker er raddefinisjoner, kolonnedefinisjoner rapporteringstredefinisjoner og rapportdefinisjoner som du oppretter for en rapport. Byggeblokkgrupper er samlinger av definisjonene og dimensjonsverdisettene
 
 ### <a name="view-a-building-block-group"></a>Vise en byggeblokkgruppe
 
@@ -78,17 +78,17 @@ Du kan vise alle byggeblokker som er tilordnet til en byggeblokkgruppe. Du kan o
 
 ### <a name="export-a-building-block-group"></a>Eksportere en byggeblokkgruppe
 
-Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom installasjoner. Rapportutforming inneholder refererte skriftstiler og dimensjonssett sammen med byggeblokkgruppen.
+Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en byggeblokkgruppe. Du kan bruke den eksporterte byggeblokkgruppen som en sikkerhetskopi. Du kan også kopiere de eksporterte dataene mellom installasjoner. Report Designer inneholder refererte skriftstiler og dimensjonsverdisett sammen med byggeblokkgruppen.
 
 1. Klikk **Byggeblokkgrupper** på **Firma**-menyen i Report Designer.
 2. Velg byggeblokkgruppen som skal eksporteres, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Eksporter**.
 3. I dialogboksen **Eksporter** velger rapportdefinisjonene som skal eksporteres:
 
     - Hvis du vil eksportere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
-    - Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, klikker du deretter den aktuelle fanen og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten.
+    - Hvis du vil eksportere bestemte rapporter, rader, kolonner, trær eller dimensjonsverdisett, klikker du deretter den aktuelle fanen og velger elementene som skal eksporteres. Hvis du vil velge flere elementer i en kategori, trykker du og holder nede CTRL-tasten.
 
     > [!NOTE]
-    > Når du velger rapporter som skal eksporteres, velges de tilknyttede radene, kolonnene, trærne og dimensjonssettene.
+    > Når du velger rapporter som skal eksporteres, velges de tilknyttede radene, kolonnene, trærne og dimensjonsverdisettene.
 
 4. Når du er ferdig med å velge elementene som skal eksporteres, velger **Eksporter**.
 5. I dialogboksen **Lagre som** velger du plasseringen byggeblokkgruppen skal eksporteres til.
@@ -97,7 +97,7 @@ Du kan eksportere en byggeblokkgruppe eller bestemte rapportbyggeblokker i en by
 
 ### <a name="import-a-building-block-group"></a> Importere en byggeblokkgruppe
 
-Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe. Alle importerte byggeblokkgrupper beholder sin opprinnelige skriftstiler og referanser for firmaet, og inkluderer de relevante dimensjonssettene.
+Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe. Alle importerte byggeblokkgrupper beholder sin opprinnelige skriftstiler og referanser for firmaet, og inkluderer de relevante dimensjonsverdisettene.
 
 1. Klikk **Byggeblokkgrupper** på **Firma**-menyen i Report Designer.
 2. Velg byggeblokken som en byggeblokkgruppe skal importeres til, i dialogboksen **Byggeblokkgrupper**, og klikk deretter **Importer**.
@@ -105,7 +105,7 @@ Du kan importere en byggeblokkgruppe til en eksisterende byggeblokkgruppe. Alle 
 4. I dialogboksen **Importer** velger rapportdefinisjonene som skal importers:
 
     - Hvis du vil importere alle rapportdefinisjonene og de tilknyttede byggeblokkene, klikker du **Velg alle**.
-    - Hvis du vil importere bestemte rapporter, rader, kolonner, trær eller dimensjonssett, velger du rapporter, rader, kolonner, trær eller dimensjonssett som skal importeres.
+    - Hvis du vil importere bestemte rapporter, rader, kolonner, trær eller dimensjonsverdisett, velger du rapporter, rader, kolonner, trær eller dimensjonsverdisett som skal importeres.
 
 5. Når du er ferdig med å velge elementene som skal importeres, velger **Importer**.
 

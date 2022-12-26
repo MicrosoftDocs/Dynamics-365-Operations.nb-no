@@ -9,12 +9,12 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c3f049946c66fcd8560f7c08a4cb2beab0dcd5b2
-ms.sourcegitcommit: 3d2c0a39c4f987e9ac71df2f2fa6df0f64f10b2b
+ms.openlocfilehash: cdf950fc7b3720543d93e108d4e3c3c2ab254e09
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9115033"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838398"
 ---
 # <a name="configure-google-pay-with-adyen"></a>Konfigurer Google Pay med Adyen
 
@@ -90,11 +90,6 @@ Følg denne fremgangsmåten for å konfigurere en Commerce-nettbutikk til å bru
 
 1. Når du er ferdig med å angi koblingsegenskapene, kjører du distribusjonsplanjobben **1070 (Kanalkonfigurasjon**).
 
-## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurer salgssted i Commerce for Google Pay
-
-Salgsstedskonfigurasjonen bruker innstillingen for feltet **EFT-tjeneste** i maskinvareprofilen for Dynamics 365 Payment Connector for Adyen. Hvis du vil ha informasjon om hvordan du konfigurerer tjenesten for elektronisk pengeoverføring (EFT) for Dynamics 365 Payment Connector for Adyen i Commerce headquarters, kan du se [delen Konfigurere en maskinvareprofil for salgssted i Dynamics 365](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
-
-Prosessortilordningen for Adyen-koblingen registrerer lommebokkorttypene som Google Pay bruker på salgsstedsterminalen.
 
 ### <a name="use-the-payment-express-module-with-google-pay"></a>Bruk betalingsekspressmodulen med Google Pay
 
@@ -223,6 +218,12 @@ Visningsrekkefølgen for leveringsmåtene i betalingsekspressmodulen konfigurere
 Betalingsmodulen bruker også modulen for leveringsalternativer når leveringsmåter gjengis under betalingen. Hvis du vil ha mer informasjon, kan du se [Modul for leveringsalternativer](../delivery-options-module.md).
 
 Leveringsmåter vises etter hvert som de legges til i listen **Leveringsmåter** i nettbutikken.
+
+## <a name="configure-commerce-pos-for-google-pay"></a>Konfigurer salgssted i Commerce for Google Pay
+
+Salgsstedskonfigurasjonen bruker innstillingen for feltet **EFT-tjeneste** i maskinvareprofilen for Dynamics 365 Payment Connector for Adyen. Hvis du vil ha informasjon om hvordan du konfigurerer tjenesten for elektronisk pengeoverføring (EFT) for Dynamics 365 Payment Connector for Adyen i Commerce headquarters, kan du se [Konfigurer en maskinvareprofil for salgssted i Dynamics 365](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+
+Prosessortilordningen for Adyen-koblingen registrerer lommebokkorttypene som Google Pay bruker på salgsstedsterminalen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

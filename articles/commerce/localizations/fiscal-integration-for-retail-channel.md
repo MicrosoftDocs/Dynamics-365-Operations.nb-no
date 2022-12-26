@@ -2,19 +2,19 @@
 title: Oversikt over regnskapsintegrering for Commerce-kanaler
 description: Denne artikkelen gir en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 10/04/2022
+ms.date: 12/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 1812405db3c1e58eaf7cd1df3896f786e7bf026f
-ms.sourcegitcommit: 2bc6680dc6b12d20532d383a0edb84d180885b62
+ms.openlocfilehash: 3f1b555a016a56cc41ab397e3708f20482f25f09
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "9631247"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831866"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Oversikt over regnskapsintegrering for Commerce-kanaler
 
@@ -172,19 +172,17 @@ Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i 
 - [Eksempel på integrering med kontrollenheter for Sverige](./emea-swe-fi-sample.md)
 - [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tyskland](./emea-deu-fi-sample.md)
 - [Eksempel på integrering av bilagsskriver for Russland](./rus-fpi-sample.md)
+- [Eksempel på digital signatur for Norge](./emea-nor-cash-registers.md)
 
 Følgende regnskapsintegreringsfunksjonalitet implementeres også ved hjelp av rammeverket for regnskapsintegrering, men er tilgjengelig ut av boksen og innhold som ikke er inkludert i Commerce SDK:
 
 - [Avgiftsregistrering for Brasil](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digital signatur for Frankrike](./emea-fra-cash-registers.md)
 
-Følgende funksjon for regnskapsintegrering er også tilgjengelig i SDK for Commerce, men drar for øyeblikket ikke nytte av regnskapsintegreringsrammeverket. Overføring av denne funksjonaliteten til rammeverket for regnskapsintegrering er planlagt i senere oppdateringer.
-
-- [Digital signatur for Norge](./emea-nor-cash-registers.md)
-
 Følgende eldre funksjonalitet for økonomisk integrasjon som er tilgjengelig i SDK for Commerce bruker ikke rammeverket for økonomisk integrasjon og vil bli avskrevet i senere oppdateringer:
 
 - [Eksempel på integrering med kontrollenheter for Sverige (eldre)](./retail-sdk-control-unit-sample.md)
 - [Digital signatur for Frankrike (eldre)](./emea-fra-deployment.md)
+- [Digital signatur for Norge (eldre)](./emea-nor-loc-deployment-guidelines.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

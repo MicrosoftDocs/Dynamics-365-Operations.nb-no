@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 940a3c1d60347c365575f29b853b83a028acad53
-ms.sourcegitcommit: 229ea085cf35579a2631ea1e5fc2c602fa47e3f3
+ms.openlocfilehash: 1333881f80c735794784831d4042bfe7d070b796
+ms.sourcegitcommit: bdee5e642d417a13abdb778c14ec5f2dbbf8dee7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "9714769"
+ms.lasthandoff: 12/09/2022
+ms.locfileid: "9838479"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installer og koble til mobilappen Warehouse Management
 
@@ -58,10 +58,10 @@ Den enkleste måten å installere appen på én enhet på, er å installere den 
 
 Som et alternativ til å installere fra en appbutikk, kan du i stedet laste ned appen fra Microsoft App Center. App Center inneholder installerbare pakker du kan legge ved siden av. I tillegg til den gjeldende versjonen kan du også laste ned tidligere versjoner, og du kan få forhåndsvisningsversjoner med kommende funksjoner som du kan prøve ut. Hvis du vil laste ned gjeldende, tidligere eller forhåndsvise versjoner av lagerstyringsappen fra Microsoft App Center, bruker du én av følgende koblinger:
 
-- **Windows (UWP):** [Lagerstyring (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+- **Windows (UWP):** [Lagerstyring (Windows)](https://aka.ms/wma-windows-official-release)  
     Hvis du vil ha instruksjoner om hvordan du installerer en nedlastet pakke på en Windows-enhet og deretter konfigurerer de nødvendige sertifikatene, kan du se [Installere en build fra App Center](/appcenter/distribution/installation).
 
-- **Android:** [Lagerstyring (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+- **Android:** [Lagerstyring (Android)](https://aka.ms/wma-android-official-release)  
     Hvis du laster ned en forhåndsversjon, må du gå gjennom noen ekstra trinn for å installere den. Hvis du vil ha mer informasjon, kan du se [Teste Android-apper](/appcenter/distribution/testers/testing-android).
 
 Hvis du vil ha informasjon om hvordan du installerer en build som er lastet ned fra App Center, kan du se [Installere en build](/appcenter/distribution/installation).

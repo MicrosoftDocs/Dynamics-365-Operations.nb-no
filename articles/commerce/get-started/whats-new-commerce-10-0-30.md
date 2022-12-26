@@ -2,7 +2,7 @@
 title: Forhåndsversjon av Dynamics 365 Commerce 10.0.30 (november 2022)
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Commerce 10.0.30.
 author: josaw1
-ms.date: 08/31/2022
+ms.date: 12/07/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-09-01
 ms.dyn365.ops.version: 10.0.29
-ms.openlocfilehash: 0149c9671e8baeb26965b4f136ed91d09e2d039b
-ms.sourcegitcommit: 1d5cebea3e05b6d758cd01225ae7f566e05698d2
+ms.openlocfilehash: a449c7eff21c059555f9659ea932705858d26275
+ms.sourcegitcommit: 0c927fcb3afd34d870391f05b5393a4673d916e5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9405561"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "9831754"
 ---
 # <a name="preview-of-dynamics-365-commerce-10030-november-2022"></a>Forhåndsversjon av Dynamics 365 Commerce 10.0.30 (november 2022)
 
@@ -35,7 +35,7 @@ Denne tabellen viser funksjonene i denne versjonen. Denne artikkelen kan være o
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---------|------------------|----------------|--------------| 
 | Kundestøtte   | Chat på et e-handelsområde ved hjelp av en Power Virtual Agents-robot. | Denne funksjonen gjør at brukere på et e-handelsområde kan velge om de vil bruke en Power Virtual Agents-chatrobot til støtteforespørsler. | Aktiveres av administratorer/utviklere for sluttbrukere |
-| Innsikt  |  Strøm driftsinnsiktshendelser for salgssted til Application Insights-kontoen. | [Få tilgang til logger i Application Insights](../dev-itpro/retail-component-events-diagnostics-troubleshooting.md#enable-diagnostic-events-in-application-insights)   |  Valg for IT-ekspert/utvikler   |
+| Innsikt  |  Strøm driftsinnsiktshendelser for salgssted til Application Insights-kontoen. | [Få tilgang til logger i Application Insights](../dev-itpro/operational-insights.md#enable-diagnostic-events-in-application-insights)   |  Valg for IT-ekspert/utvikler   |
 |  Betalinger  | PayPal-ordrestøtte utover 29-dagers autorisasjonsperiode. | Den maksimale autorisasjonsperioden for PayPal er 29 dager, og deretter må en ny autorisasjon og ordre-ID genereres. PayPal tilbyr et alternativ til dette der det kan henvises til en PayPal-ordre som en generell ordre, som tillater flere autorisasjoner og registreringer mot samme ordre-ID, i stedet for at det genereres en ny autorisasjon og ordre-ID etter 29 dager). | Når du konfigurerer PayPal-betalingskoblingen i Commerce headquarters, er feltet **OrderIntent** lagt til, og det kan inneholde to verdier:<p><p>- **Autoriser** – Denne konfigurasjonen er standard (hvis feltet er tomt, fungerer **Autoriser** som standard). Hvis du konfigurerer **OrderIntent** til **Autoriser**, korrelerer dette med PayPal-verdien **NO_INSTRUCTION** for **processing_instruction**. Ordren autoriseres med PayPal, og autorisasjonen kan ikke endres når denne verdien brukes.<p>- **Lagre** – Når **OrderIntent**-verdien er satt til **Lagre**, korrelerer dette med PayPal-verdien **ORDER_SAVED_EXPLICITLY** for **processing_instruction**. Ordrereferanser lagres i PayPal-tjenesten når denne verdien brukes.  |
 | Pålogging på salgssted  | [Aktiver funksjoner for selvbetjent diagnose for pålogging på salgssted](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-self-serve-diagnosis-capabilities-pos-sign-in)  |  Denne funksjonen gir funksjoner for selvbetjent diagnose på salgsstedet og i Commerce headquarters, slik at butikkansatte og -sjefer raskt kan identifisere og rette de underliggende årsakene til påloggingsproblemer på salgsstedet.<p><p>- Feilmeldingene som vises på påloggingsskjermen på salgsstedet ble forbedret for å gi konkret informasjon om den underliggende årsaken, slik at det blir enklere for butikkansatte å gjør det som trengs for å løse problemet.<p>- Funksjonen **Test pålogging** er tilgjengelig på **Arbeidere**-siden i Commerce headquarters, slik at butikksjefer som konfigurerer salgsstedsenheter, kan simulere salgsstedspålogging. Hvis det oppstår en påloggingsfeil, omfatter denne funksjonen gjennomførbare feilsøkingsveiledninger, slik at sjefer kan kontrollere relevante konfigurasjoner, løse problemer og validere rettelsene.  | Aktivert som standard |
 

@@ -2,23 +2,23 @@
 title: Bankrevaluering av utenlandsk valuta
 description: Denne artikkelen gir en oversikt over prosessen for bankrevaluering av utenlandsk valuta. Det inneholder informasjon om oppsettet, kjøring av prosessen, beregning av prosessen og tilbakeføring av revalueringstransaksjoner.
 author: angelad116
-ms.date: 05/16/2019
+ms.date: 12/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8efec304e745332c332030b33363403869870532
-ms.sourcegitcommit: 0b7a034e644f4d93fe55c7baca5a3f89dbe56898
+ms.openlocfilehash: 2d5e8a36d3b4d44c9ad0454db94164adebf80997
+ms.sourcegitcommit: 69d7dd6a2d0dc7f2661c7d1f61e8874c7bde1448
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "9151439"
+ms.lasthandoff: 12/19/2022
+ms.locfileid: "9887267"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bankrevaluering av utenlandsk valuta
 
@@ -39,17 +39,8 @@ Følgende oppsett kreves før du kan kjøre revalueringprosessen.
 - Angi valutakurs på **Finans**-siden. Hvis en valutakurstype ikke er definert for hovedkontoen, brukes denne valutakurstypen under revaluering av utenlandsk valuta.
 - På **Finans**-siden angir du kontoene for realisert fortjeneste, realisert tap, urealisert fortjeneste og urealisert tap, for revaluering av valuta. Realisert fortjeneste- og realisert tap-kontoer brukes når kunde- og leverandørtransaksjoner utlignes. Urealisert fortjeneste- og urealisert tap-kontoer brukes til å revaluere åpne transaksjoner og hovedkontoer for økonomimodul.
 - På siden **Kontoer for revaluering av valuta** velger du andre kontoer for revaluering av valuta for hver valuta og firma. Hvis ingen kontoer er definert, brukes kontoene fra **Finans**-siden.
+- I fanen **Nummerserier** på siden **Parametere for kontant- og bankbehandling** legger du til en nummerserie for revaluering av utenlandsk valuta.
 
-## <a name="enable-foreign-currency-revaluation"></a>Aktivere revaluering av utenlandsk valuta
-
-Du må aktivere funksjonen for bankrevaluering av utenlandsk valuta før du kan behandle revaluering av utenlandsk valuta.
-
-1. Gå til **Kontant- og bankbehandling \> Oppsett \> Parametere for kontant- og bankbehandling**.
-2. På **Generelt**-fanen under **Revaluering av utenlandsk valuta** setter du **Aktiver bankrevaluering**-alternativet til **Ja** for å aktivere funksjonen for gjeldende juridiske enhet. 
-3. I kategorien **Nummerserier** legger du til en nummerserie for revaluering av utenlandsk valuta.
-4. Oppdater leseren for å se **Revaluering av utenlandsk valuta** i **Periodiske oppgaver**-delen på områdesiden.
-
-Du må aktivere funksjonen for hver juridiske enhet som bruker revaluering av utenlandsk valuta. Hvis du er tilordnet rollen som systemansvarlig eller funksjonsleder, kan du eliminere dette trinnet ved å aktivere funksjonen med navnet **Aktiver bankrevaluering uten en parameter** i arbeidsområdet **Funksjonsbehandling**.
 
 > [!NOTE]
 > Hvis den juridiske enheten bruker en russisk, polsk eller ungarsk lands-/områdekode, kan du allerede gjøre bankrevalueringen av utenlandsk valuta. Du kan ikke bruke revaluering av utenlandsk valuta som brukes av andre land eller regioner.
